@@ -68,3 +68,24 @@ function Plan.Resolve(rows, pick)
 	e.missing = { id = id, bonus = bonus }
 	return e
 end
+
+Plan.KIND_LABEL = { quest = "Quests", dungeon = "Dungeons", crafted = "Crafting", vendor = "Vendor", world = "BoE / World" }
+
+-- Why a pick (not among the slot's shown rows) is unavailable: looked up in the whole model.
+function Plan.Why(model, key, pick, ahead, filters)
+	local function find(list)
+		for _, r in ipairs(list or {}) do
+			if ns.Browser.KeyOf(r.c.inst) == pick then return r end
+		end
+	end
+	local r = find(model.now[key]) or find((model.coming or {})[key])
+	if not r then return "not available now (quest done, retired, or no longer an upgrade)" end
+	if r.at and r.at > model.level + (ahead or 0) then
+		return string.format("needs level %d (look ahead +%d)", r.at, r.at - model.level)
+	end
+	local off = {}
+	for _, k in ipairs(ns.Browser.KINDS) do
+		if r.c.kinds[k] and not (filters and filters[k]) then off[#off + 1] = Plan.KIND_LABEL[k] end
+	end
+	return "its sources are off: " .. table.concat(off, ", ")
+end
