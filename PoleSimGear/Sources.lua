@@ -214,9 +214,8 @@ function Sources.RepNote(it, codex)
 	return " (needs " .. name .. ": " .. (Sources.STANDINGS[r[2] + 1] or ("standing " .. r[2])) .. ")"
 end
 
--- The website's rule for an item with no required level (quest rewards, the Virtuous set Mokvar sells
--- for 100g): from a source with no level of its own (a vendor, a container in a dungeon) its item level
--- stands in (leveling items sit about 5 above their level): not yet when it is above lim + 5.
+-- Sources with no level of their own (a vendor, a container in a dungeon): an item with no required
+-- level from one follows the item-level rule (ns.LevelLessGate, shared with the AH scan).
 local LEVEL_LESS = { vendor = true, object = true }
 
 -- Whether an item is a generic world drop: green or lower (the shipped quality, else the Codex's) with a
@@ -261,9 +260,8 @@ function Sources.For(id, codex, player, lim, it)
 		if not ok then
 			Sources.lastError = v
 		elseif v then
-			if it and v.ok and LEVEL_LESS[src.type] and (it.rl or 0) == 0 and (it.il or 0) > lim + 5 then
-				v.ok, v.why = false, "item level " .. it.il
-			end
+			local gate = v.ok and LEVEL_LESS[src.type] and ns.LevelLessGate(it, lim)
+			if gate then v.ok, v.why = false, gate end
 			if it and it.rep and v.kind == "vendor" then v.text = v.text .. Sources.RepNote(it, codex) end
 			out[#out + 1] = v
 		end

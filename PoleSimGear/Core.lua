@@ -18,6 +18,15 @@ function ns.Fire(msg, ...)
 	end
 end
 
+-- The website's rule for an item with no required level (quest rewards, the Virtuous set Mokvar sells,
+-- an AH listing of either): its item level stands in (leveling items sit about 5 above their level).
+-- it: the shipped item (rl, il); lim: the highest level looked at (level + look ahead). -> "item level N"
+-- when it is above lim + 5 (not yet), else nil (also with no item record or a required level).
+function ns.LevelLessGate(it, lim)
+	if it and (it.rl or 0) == 0 and (it.il or 0) > lim + 5 then return "item level " .. it.il end
+	return nil
+end
+
 -- Report an error to the client's handler once per key (an item link) per session: glue that runs on
 -- every redraw must not flood the handler with the same error. At most REPORT_KEYS keys are kept: past
 -- that, errors under new keys are neither stored nor reported for the rest of the session (the first

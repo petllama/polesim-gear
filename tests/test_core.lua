@@ -1,5 +1,17 @@
 local T = require("t")
 return {
+	-- The item-level rule for an item with no required level (quest rewards, vendor sets, AH listings):
+	-- its item level stands in (leveling items sit about 5 above their level): above lim + 5 = not yet,
+	-- said as "item level N". Sources (vendor/container) and the AH scan share it.
+	level_less_gate = function()
+		local ns = T.addon({ "Core.lua" })
+		T.eq(ns.LevelLessGate({ rl = 0, il = 62 }, 21), "item level 62")
+		T.eq(ns.LevelLessGate({ rl = 0, il = 26 }, 21), nil, "il 26 at 21: lim + 5")
+		T.eq(ns.LevelLessGate({ rl = 0, il = 27 }, 21), "item level 27")
+		T.eq(ns.LevelLessGate({ rl = 10, il = 62 }, 21), nil, "a required level: the level gate decides")
+		T.eq(ns.LevelLessGate({ il = 62 }, 21), "item level 62", "no rl = 0")
+		T.eq(ns.LevelLessGate(nil, 21), nil, "no item record: no rule")
+	end,
 	bus = function()
 		local ns = T.addon({ "Core.lua" })
 		local got

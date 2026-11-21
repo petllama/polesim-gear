@@ -7,8 +7,8 @@ local A = require("ahstub")
 
 local function fire(ns, e, ...) ns._frame.scripts.OnEvent(ns._frame, e, ...) end
 
-local function setup(results)
-	local fx = F.load()
+local function setup(results, opts)
+	local fx = F.load(opts)
 	local api, log = A.stub(results, 50)
 	_G.C_AuctionHouse = api
 	fx.api, fx.log = api, log
@@ -24,13 +24,14 @@ local function setup(results)
 	return fx
 end
 
--- the Gear Plan's first row with a plan item (a fresh fixture, window open)
+-- the Gear Plan's first row with a plan item the AH scan scores (a fresh fixture, window open; the
+-- hand-made Codex's craft/drop sources keep level-less items of any item level in the plan)
 local function firstPlan()
 	local fx = F.load()
 	fx.open()
 	for _, e in ipairs(fx.ns.TabPlan.Entries()) do
 		local r = fx.ns.TabPlan.PlanRow(e)
-		if r then
+		if r and not fx.ns.LevelLessGate(fx.ns.Items.Get(r.c.inst.id), 20) then
 			local inst = r.c.inst
 			fx.done()
 			return e.def, inst, r.gain
@@ -62,7 +63,9 @@ return {
 		fx.cleanup()
 	end,
 	-- An AH upgrade bigger than a slot's plan (a BoE/world item, a kind the default source filters leave
-	-- out of the plan): that slot's strip tooltip names it with its gain and price.
+	-- out of the plan): that slot's strip tooltip names it with its gain and price. The plan is the
+	-- player's pick of the slot's weakest row (the hand-made Codex's craft/drop sources put level-less
+	-- items of any item level at the top of the suggestions, which the AH rightly leaves out).
 	strip_tooltip_names_a_better_ah_item = function()
 		local fx0 = F.load()
 		local ns0 = fx0.ns
@@ -70,14 +73,16 @@ return {
 		local ctx = ns0.Context.Get()
 		local pick
 		for _, e in ipairs(ns0.TabPlan.Entries()) do
-			local r = ns0.TabPlan.PlanRow(e)
-			if r and e.def.invs and e.def.key ~= "finger" and e.def.key ~= "trinket" then
+			local low = e.rows and e.rows[#e.rows]
+			if low and e.def.invs and e.def.key ~= "finger" and e.def.key ~= "trinket" then
 				for _, inv in ipairs(e.def.invs) do
 					for _, id in ipairs(ns0.Items.ByInv()[inv] or {}) do
 						local it = ns0.Items.Get(id)
-						if id % 5 == 4 and it.rl <= 20 and #it.sfx == 0 and ns0.Equip.CanUse(it, "priest", 20) then
+						if id % 5 == 4 and it.rl <= 20 and not ns0.LevelLessGate(it, 20) and #it.sfx == 0 and ns0.Equip.CanUse(it, "priest", 20) then
 							local g = ns0.Score.Score(ns0.Score.Instance(it), ctx.w, "priest", "gear") - (e.worn and e.worn.score or 0)
-							if g > r.gain + 0.5 and (not pick or g - r.gain > pick[3]) then pick = { id, g, g - r.gain, e.def.slot } end
+							if g > low.gain + 0.5 and (not pick or g - low.gain > pick[3]) then
+								pick = { id, g, g - low.gain, e.def.slot, e.def.key, ns0.Browser.KeyOf(low.c.inst) }
+							end
 						end
 					end
 				end
@@ -85,7 +90,7 @@ return {
 		end
 		fx0.done()
 		T.ok(pick, "a world drop better than a slot's plan")
-		local fx = setup({ A.result(pick[1], 4200) })
+		local fx = setup({ A.result(pick[1], 4200) }, { char = { plan = { shadow = { [pick[5]] = pick[6] } } } })
 		local ns, U = fx.ns, fx.U
 		local f = fx.open()
 		fx.scan()

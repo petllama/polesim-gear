@@ -203,6 +203,31 @@ return {
 		rows = ns.AH.Build(found, ns.Context.Get(), 0)
 		T.eq(rows[1].c.inst.bonus, 12720, "of the Owl, from the name"); T.eq(rows[1].anySuffix, nil)
 	end,
+	-- Items with no required level (Stormrager il 62, Wand of Biting Cold il 63, Woestave il 52: rl 0)
+	-- follow the item-level rule the browser's sources use (Core LevelLessGate): above level + ahead + 5
+	-- they are not upgrades yet; a level-less item of the player's item level stays.
+	build_level_less_items = function()
+		local ns = addon(21)
+		_G.C_AuctionHouse = stubAH({})
+		for _, id in ipairs({ 16997, 19108, 20082 }) do
+			local it = ns.Items.Get(id)
+			T.eq(it.rl, 0, it.name); T.ok(it.il > 31, it.name)
+		end
+		local found = {}
+		local function add(id, price) local r = result(id, price) found[id .. ":0:0"] = { itemKey = r.itemKey, minPrice = price, result = r } end
+		add(16997, 1000); add(19108, 1000); add(20082, 1000)
+		for ahead = 0, 5 do
+			local rows = ns.AH.Build(found, ns.Context.Get(), ahead)
+			T.eq(#rows, 0, "item levels 52-63 at 21 + " .. ahead)
+		end
+		-- a level-less item at the player's item level stays: High Robe of the Adjudicator (rl 0, il 24)
+		local keep = 3461
+		T.eq(ns.Items.Get(keep).rl, 0); T.eq(ns.Items.Get(keep).il, 24)
+		found = {}
+		add(keep, 1000)
+		local rows = ns.AH.Build(found, ns.Context.Get(), 0)
+		T.eq(#rows, 1, "rl 0 il 24 at 21: kept"); T.eq(rows[1].c.id, keep)
+	end,
 	-- Look ahead: an item up to level + ahead is kept, marked with its level and scored with that
 	-- level's band (as the window's coming rows); past the look ahead: left out.
 	build_look_ahead = function()

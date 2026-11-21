@@ -390,7 +390,8 @@ for li, L in ipairs(levels) do
 		local kbVisit = kb()
 
 		-- 6. the auction house pass: a fake browse server over the real shipped items the character can
-		-- wear up to level + 2 (look ahead 2), one result per item (suffix items: every other one with a
+		-- wear up to level + 2 (look ahead 2) that an auction can hold (not bind on pickup or quest
+		-- items: shipped `bd` 1/4) and the scan's query asks for (common..epic: no Poor), one result per item (suffix items: every other one with a
 		-- suffix of its own in the key, the rest without: the row stands for every suffix), a price from
 		-- the item level and quality; pages of 50. The panel, a scan, its list (sorts, hovers, a click),
 		-- the Gear Plan with prices, then the auction house closes.
@@ -405,7 +406,7 @@ for li, L in ipairs(levels) do
 			for _, ids in pairs(ns.Items.ByInv()) do
 				for _, id in ipairs(ids) do
 					local it = ns.Items.Peek(id)
-					if it and (it.c == 2 or it.c == 4) and it.rl <= top and ns.Equip.CanUse(it, c.cls, math.max(L, it.rl)) then
+					if it and (it.c == 2 or it.c == 4) and it.bd ~= 1 and it.bd ~= 4 and it.q >= 1 and it.q <= 4 and it.rl <= top and ns.Equip.CanUse(it, c.cls, math.max(L, it.rl)) then
 						local suffix = (#it.sfx > 0 and id % 2 == 0) and it.sfx[1 + id % #it.sfx] or 0
 						local price = math.floor((it.il * it.il * 25 + (id % 97) * 100) * (it.q + 1))
 						pool[#pool + 1] = { c = it.c, sc = it.sc, inv = it.inv, rl = it.rl,

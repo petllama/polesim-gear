@@ -118,6 +118,7 @@ local function candidate(f, ctx, top, bandAt)
 	if not rec then return nil, "unknown" end
 	if not (rec.c == 2 or rec.c == 4) then return nil, "not gear" end
 	if rec.rl > top or not ns.Equip.CanUse(rec, ctx.cls, math.max(ctx.level, rec.rl)) then return nil, "unusable" end
+	if ns.LevelLessGate(rec, top) then return nil, "item level" end -- no required level: as the sources
 	local def = slotDef(rec.inv)
 	if not def then return nil, "not gear" end
 	local L = math.max(ctx.level, rec.rl)
