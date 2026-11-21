@@ -124,13 +124,21 @@ Arrows.OnRedraw(function()
 end)
 
 -- Bagnon (BagBrother 12.1.12: Poncho classes, methods looked up at call time; ContainerItem:Update
--- calls Item:Update through Super, which sets self.info).
+-- calls Item:Update through Super, which sets self.info). A cached view (Item:IsCached(): the frame's
+-- owner is offline, i.e. another character's bags; Frame:IsCached = GetOwner().offline) gets no arrows:
+-- its items are not this character's.
+local function cachedView(item)
+	if type(item.IsCached) ~= "function" then return false end
+	local ok, cached = pcall(item.IsCached, item)
+	return ok and cached and true or false
+end
 local function hookBagnon()
 	local B = _G.BagBrother
 	local Item = type(B) == "table" and B.Item
 	if hooked.bagnon or not (type(Item) == "table" and type(Item.Update) == "function") then return end
 	hooksecurefunc(Item, "Update", function(self)
-		Arrows.Paint(self, type(self.info) == "table" and self.info.hyperlink or nil)
+		local link = not cachedView(self) and type(self.info) == "table" and self.info.hyperlink
+		Arrows.Paint(self, link or nil)
 	end)
 	hooked.bagnon = true
 end
