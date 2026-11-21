@@ -1,12 +1,13 @@
 -- Full-load run (local only, not part of the suite): the whole addon (every TOC file, in order) with
 -- the test client and widget stub, the REAL Polestar Codex read from the installed Polestar, a level L
--- Shadow priest. Fires login, opens the window from the minimap button, waits for the build over
--- frames, then visits everything: every tab, show mode, look ahead 0-5, Sources filter, slot (and its
--- Show all), Sources kind and place (with waypoints), weights band and spec, setting; sets and clears a
+-- character (Shadow priest unless the argument names a class/spec). Fires login, opens the window from
+-- the minimap button, waits for the build over frames, then visits everything: every tab, show mode,
+-- look ahead 0-5, Sources filter, slot (and its Show all), Sources kind and place (with waypoints), weights band and spec, setting; sets and clears a
 -- pick, stars and unstars an item; closes. Lists are walked through a window of 12 frames (U.scroll:
 -- every row's initializer runs, as scrolling does).
 --
---   luajit|lua5.1 tools/fullload.lua [level ...]          (default 10 30 60)
+--   luajit|lua5.1 tools/fullload.lua [level[:class[/spec]] ...]   (default 10 30 60, Shadow priest)
+--     e.g. 18:mage/frost 30:mage/fire 60:mage/arcane; TOP=5 prints the Gear Plan's first rows with sources
 --   POLESTAR_ADDONS=<AddOns folder with Polestar and Polestar_Codex>   (default: the Forever one)
 --
 -- One line per level: build ms (open -> model shown), the longest frame during the build, KB before
@@ -17,9 +18,15 @@ local AD = os.getenv("POLESTAR_ADDONS") or "/mnt/games/BattleNet/World of Warcra
 if AD:sub(-1) ~= "/" then AD = AD .. "/" end
 local clock = os.clock
 local format = string.format
-local levels = {}
-for _, a in ipairs(arg) do levels[#levels + 1] = assert(tonumber(a), "level: a number") end
+local levels, runs = {}, {}
+for _, a in ipairs(arg) do
+	local lv, cls, spec = a:match("^(%d+):?(%a*)/?(%a*)$")
+	assert(lv, "level[:class[/spec]]: " .. a)
+	levels[#levels + 1] = tonumber(lv)
+	runs[#levels] = { cls = cls ~= "" and cls or nil, spec = spec ~= "" and spec or nil }
+end
 if #levels == 0 then levels = { 10, 30, 60 } end
+local TOP = tonumber(os.getenv("TOP") or "")
 local VISIBLE = 12 -- rows a list shows at once
 
 -- 1. Polestar's Codex standalone (Lookup/Codex.lua + the Polestar_Codex pack), loaded once
@@ -48,12 +55,13 @@ local failures = 0
 
 local function kb() collectgarbage("collect") return collectgarbage("count") end
 
-for _, L in ipairs(levels) do
+for li, L in ipairs(levels) do
+	local run = runs[li] or {}
 	_G.Polestar = P
 	local errors = {}
 	local function note(where, e) errors[#errors + 1] = where .. ": " .. tostring(e) end
 	-- 2. the addon with the window fixture, the real Codex kept, level L, the client's Minimap
-	local okLoad, fx = pcall(F.load, { codex = false, level = L, minimap = true })
+	local okLoad, fx = pcall(F.load, { codex = false, level = L, minimap = true, cls = run.cls, spec = run.spec })
 	if not okLoad then
 		note("load", fx)
 		print(format("level %d: the addon did not load", L))
@@ -96,6 +104,21 @@ for _, L in ipairs(levels) do
 		local buildMs, buildFrames, buildMax = (clock() - t0) * 1000, frames, maxFrame
 		if not Win.state.model then note("open", "no model after the build: " .. tostring(Win.state.why)) end
 		local kbOpen = kb()
+		if TOP then
+			local c = ns.Context.Get()
+			print(format("Gear Plan, level %d %s/%s (points of %s):", L, c.cls, c.spec, c.ref))
+			local shown = 0
+			for _, e in ipairs(ns.TabPlan.Entries()) do
+				local r = ns.TabPlan.PlanRow(e)
+				if r and shown < TOP then
+					shown = shown + 1
+					local src = {}
+					for i = 1, math.min(2, #r.c.sources) do src[i] = r.c.sources[i].text or r.c.sources[i].kind end
+					print(format("  %d. %-10s %-38s %+6.1f (score %.1f)  %s", shown, e.def.label, r.c.inst.name or r.c.id,
+						r.gain, r.c.score, table.concat(src, "; ")))
+				end
+			end
+		end
 		step("close", function() _G.PoleSimGearFrame.close:Click() end)
 		local kbClosed = kb()
 
@@ -232,7 +255,7 @@ for _, L in ipairs(levels) do
 		step("weights", Win.SetTab, "weights")
 		local wp = Win.Panel("weights")
 		step("bands", function()
-			local n = #ns.View.Bands("priest", ns.Context.Get().spec)
+			local n = #ns.View.Bands(ns.Context.Get().cls, ns.Context.Get().spec)
 			for _ = 1, n do ns.TabWeights.Step(1) scroll(wp.list) end
 			for _ = 1, n do ns.TabWeights.Step(-1) scroll(wp.list) end
 			assert(not wp.prev:IsEnabled(), "first band: < disabled")

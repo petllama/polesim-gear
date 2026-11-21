@@ -54,7 +54,8 @@ function W.install()
 	end
 	_G.SlashCmdList = {}
 	_G.UnitLevel = function() return W.level end
-	_G.UnitClass = function() return "Priest", "PRIEST", 5 end
+	W.class = { "Priest", "PRIEST", 5 } -- a test sets require("wow").class = { "Mage", "MAGE", 8 } for another
+	_G.UnitClass = function() return W.class[1], W.class[2], W.class[3] end
 	_G.UnitRace = function() return "Undead", "Scourge", 5 end
 	_G.UnitFactionGroup = function() return "Horde", "Horde" end
 	_G.C_AddOns = { GetAddOnMetadata = function() return "test" end }

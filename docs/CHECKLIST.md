@@ -1,4 +1,8 @@
-# In-game checklist (one session, on a priest) — PoleSim Gear 0.2.3
+# In-game checklist (one session, on a priest; section M on a mage) — PoleSim Gear 0.3.0
+
+**0.3.0 over 0.2.3** (no new files: `tools/install.sh` then `/reload` is enough on an existing install;
+a first install needs the game restarted): Mage support (Frost, Fire, Arcane: weights, spec detection,
+swords and mage-only items in the lists). Other classes get one chat line and nothing else. Checks: M1-M4.
 
 **0.2.3 over 0.2.2** (no new files: `tools/install.sh` then `/reload` is enough): hovering an item in
 the window shows the game's own item tooltip (stats, with the row's "of the ..." suffix), then
@@ -447,6 +451,33 @@ in open bags, vendor and mail update (no `/reload`); opening a bag or the vendor
 
 **L3.** Group loot roll (H3) and auction house (I2), if skipped above.
 
+## M. On a mage (0.3.0)
+
+Log in on a mage (any level; the first tester is a Frost mage).
+
+**M1. Spec auto-detect.**
+
+```
+/psg spec
+/run local c=PoleSimGear.Context.Get() print(c.cls,c.spec,c.specSource,c.level,c.band.upTo,c.ref,c.classBit)
+```
+
+Expected: `spec frost (talents)` with the talent points per column Arcane/Fire/Frost (e.g. `0/0/11`;
+no points yet: `frost (default)`); the second line `mage frost talents <level> <band end> spFrost 128`.
+
+**M2. Weights tab.** `/psg`, tab Weights: the header says Frost, the radios are Automatic, Arcane,
+Fire, Frost only (no priest specs); the reference line says `in points of Frost spell damage.`;
+choosing Fire switches the reference to Fire spell damage; back to Automatic.
+
+**M3. Tooltip.** Hover a cloth item with Frost (or plain spell) damage: the second PoleSim line reads
+`Frost, levels X-Y: points of Frost spell damage`. A one-hand sword or a dagger shows a score; a mace,
+a shield and a priest-only item show nothing.
+
+**M4. Gear Plan sane.** Gear Plan tab: the top rows carry Frost/spell damage, Stamina and (below 30)
+a wand high up (wand DPS weighs a lot at low level); Intellect and Spirit weigh little. No mace,
+shield or priest-only item anywhere; swords appear in Main hand. Report the first five rows (item,
+gain, source).
+
 ## Probe results (B1, fill in)
 
 | Question | Answer |
@@ -510,6 +541,10 @@ in open bags, vendor and mail update (no `/reload`); opening a bag or the vendor
 | K21 | item tooltips in the window (suffix stats, one score block, Shift compare, current item) | |
 | L1 | arrows follow changes | |
 | L2 | other character not asked | |
+| M1 | mage: spec auto-detect, context | |
+| M2 | mage: Weights tab (Frost, mage specs only) | |
+| M3 | mage: tooltip (Frost spell damage; swords yes, maces no) | |
+| M4 | mage: Gear Plan sane (first five rows) | |
 
 ## Known limits (tell me if they bother you)
 
@@ -521,7 +556,9 @@ in open bags, vendor and mail update (no `/reload`); opening a bag or the vendor
   leaves the off hand empty, while the window pairs it with the best off hand (R9).
 - With the Quests / Dungeons / Crafted filters on, a one-hander's paired off hand is still the best
   from all sources (the website recomputes per filter).
-- No dual wield yet (no priest can); added with the melee classes.
+- No dual wield yet (no priest or mage can); added with the melee classes.
+- Classes other than Priest and Mage: one chat line ("<class> isn't supported yet"), no window, no
+  minimap button, no scores.
 - If the client leaves an item's equip bonuses out of its stats, the tooltip fills that whole group
   from PoleSim's item table (Shift shows "(item table)" on those lines).
 - Tooltip (live stats) and window (shipped table) can differ when Forever changes an item before the

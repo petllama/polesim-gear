@@ -24,9 +24,10 @@ local function frame(kind, name, parent)
 end
 
 -- Core + Minimap loaded, the client's Minimap (198 px, centre at 500,400, scale 1) and saved variables.
-local function load(db)
+local function load(db, context)
 	local ns = T.addon({ "Core.lua" })
 	ns.Print = function() end
+	ns.Context = context
 	_G.CreateFrame = frame
 	_G.Minimap = frame("Minimap")
 	_G.Minimap.GetWidth = function() return 198 end
@@ -42,6 +43,13 @@ local function load(db)
 end
 
 return {
+	-- A class with no weights (Context.Unsupported says so): no button at all.
+	no_button_for_an_unsupported_class = function()
+		local ns = load({}, { Unsupported = function() return "Warlock isn't supported yet" end })
+		T.eq(ns.Minimap.button, nil)
+		local ok = load({}, { Unsupported = function() return nil end })
+		T.ok(ok.Minimap.button, "a supported class has one")
+	end,
 	-- Round: the angle around the centre at half the width + 5 (on the minimap's rim).
 	offset_round = function()
 		local ns = load({})

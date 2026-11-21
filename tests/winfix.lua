@@ -37,7 +37,8 @@ function F.codex()
 	}
 end
 
--- opts: { db, char, done = { [questId] = true }, worn, spec, level (default 20), codex = false (keep
+-- opts: { db, char, done = { [questId] = true }, worn, cls ("priest" | "mage"), spec (default: the class's),
+-- level (default 20), codex = false (keep
 -- the caller's _G.Polestar, e.g. the real one), minimap = true (a client Minimap: the button is made) }
 -- -> fixture
 function F.load(opts)
@@ -60,15 +61,19 @@ function F.load(opts)
 	_G.PoleSimGearDB, _G.PoleSimGearCharDB = opts.db or {}, opts.char or {}
 	ns._frame.scripts.OnEvent(ns._frame, "ADDON_LOADED", "PoleSimGear")
 	ns.Print = function() end
-	local band, lo, sd = ns.Bands.For("priest", "shadow", L)
+	local cls = opts.cls or "priest"
+	W.class = ({ priest = { "Priest", "PRIEST", 5 }, mage = { "Mage", "MAGE", 8 } })[cls]
+	local spec = opts.spec or ns.Spec.DEFAULT[cls]
+	local band, lo, sd = ns.Bands.For(cls, spec, L)
 	local worn = opts.worn or { [1] = { inst = { id = 999001, name = "Old Hat", quality = 1, icon = "inv_helmet_01", inv = 1, stats = {} }, score = 1 } }
 	ns.Context = {
-		ClassKey = function() return "priest" end,
+		ClassKey = function() return cls end,
+		Unsupported = function() return nil end,
 		Get = function()
-			return { cls = "priest", spec = opts.spec or "shadow", specSource = "talents", level = L, lo = lo, band = band,
-				ref = sd.ref, w = band.w, worn = worn, faction = "H", classBit = 16, raceBit = 16 }
+			return { cls = cls, spec = spec, specSource = "talents", level = L, lo = lo, band = band,
+				ref = sd.ref, w = band.w, worn = worn, faction = "H", classBit = ns.DATA.proficiency[cls].bit, raceBit = 16 }
 		end,
-		At = function(L) local b, l = ns.Bands.For("priest", "shadow", L) return { band = b, lo = l, w = b.w, worn = worn } end,
+		At = function(L) local b, l = ns.Bands.For(cls, spec, L) return { band = b, lo = l, w = b.w, worn = worn } end,
 	}
 	local fx = { ns = ns, W = W, U = U, worn = worn }
 	function fx.settle()

@@ -53,6 +53,56 @@ local function grid(ranks, withGroups)
 end
 
 return {
+	-- Mage: Forever's columns are Arcane, Fire, Frost (Polestar's class table); no points = Frost
+	-- (armory.DEFAULT_BUILD, the website's import default).
+	mage_pick = function()
+		local ns = T.addon(FILES)
+		local S = ns.Spec
+		T.eq(S.Pick({ 5, 0, 20 }, { "Arcane", "Fire", "Frost" }, "mage"), "frost")
+		T.eq(S.Pick({ 0, 12, 3 }, nil, "mage"), "fire")
+		T.eq(S.Pick({ 21, 0, 0 }, nil, "mage"), "arcane")
+		T.eq(S.Pick({ 0, 0, 0 }, nil, "mage"), nil)
+		ns.char = { spec = "auto" }
+		local key, source = S.Current("mage")
+		T.eq(key, "frost"); T.eq(source, "default")
+		T.eq(table.concat(S.Keys("mage"), ","), "arcane,fire,frost")
+	end,
+	-- A tie between columns goes as on the website (armory.guess_build: the larger (points, name)), so
+	-- both name the same spec: Fire over Arcane, Frost over both, Shadow over Holy.
+	tie_like_the_website = function()
+		local S = T.addon(FILES).Spec
+		T.eq(S.Pick({ 10, 10, 0 }, nil, "mage"), "fire")
+		T.eq(S.Pick({ 7, 7, 7 }, nil, "mage"), "frost")
+		T.eq(S.Pick({ 0, 5, 5 }, nil, "priest"), "shadow")
+		T.eq(S.Pick({ 5, 5, 0 }, { "Disziplin", "Heilig", "Schatten" }, "priest"), "holy")
+	end,
+	default_from_the_data = function()
+		local ns = T.addon(FILES)
+		T.eq(ns.Spec.DEFAULT.mage, ns.DATA.defaultSpec.mage)
+		T.eq(ns.Spec.DEFAULT.priest, "shadow")
+	end,
+	slash_spec_unsupported = function()
+		local ns = T.addon(FILES)
+		ns.Context = { ClassKey = function() return nil end, Unsupported = function() return "Warlock isn't supported yet" end }
+		local said
+		ns.Print = function(...) said = table.concat({ ... }, " ") end
+		SlashCmdList.POLESIMGEAR("spec fire")
+		T.eq(said, "Warlock isn't supported yet")
+	end,
+	slash_spec_mage = function()
+		local ns = T.addon(FILES)
+		require("wow").class = { "Mage", "MAGE", 8 }
+		ns.Context = { ClassKey = function() return "mage" end }
+		ns.char = { spec = "auto" }
+		local said
+		ns.Print = function(...) said = table.concat({ ... }, " ") end
+		SlashCmdList.POLESIMGEAR("spec fire")
+		T.eq(ns.char.spec, "fire")
+		T.ok(said:find("spec fire %(chosen%)"), said)
+		T.ok(said:find("auto|arcane|fire|frost", 1, true), said)
+		SlashCmdList.POLESIMGEAR("spec shadow") -- not a mage spec: ignored
+		T.eq(ns.char.spec, "fire")
+	end,
 	pick = function()
 		local S = T.addon(FILES).Spec
 		T.eq(S.Pick({ 0, 5, 31 }, { "Discipline", "Holy", "Shadow" }, "priest"), "shadow")
@@ -111,21 +161,21 @@ return {
 		local key, source = ns.Spec.Current("priest")
 		T.eq(key, "shadow"); T.eq(source, "default")
 	end,
-	ties_go_left_most = function()
+	ties_go_to_the_larger_key = function() -- as the website's import (armory.guess_build)
 		local S = T.addon(FILES).Spec
 		talents(grid({ {}, { 5 }, { 5 } }, true), GROUPS)
+		T.eq((S.Detect("priest")), "shadow")
+		talents(grid({ { 5 }, { 5 }, {} }, true), GROUPS)
 		T.eq((S.Detect("priest")), "holy")
-		talents(grid({ { 5 }, {}, { 5 } }, true), GROUPS)
-		T.eq((S.Detect("priest")), "discipline")
 	end,
 	class_without_column_order = function()
 		local ns = T.addon(FILES)
-		ns.DATA.specs.mage = { frost = ns.DATA.specs.priest.shadow, fire = ns.DATA.specs.priest.shadow }
+		ns.DATA.specs.warlock = { frost = ns.DATA.specs.priest.shadow, fire = ns.DATA.specs.priest.shadow }
 		ns.char = { spec = "auto" }
-		ns.Context = { ClassKey = function() return "mage" end }
+		ns.Context = { ClassKey = function() return "warlock" end }
 		talents(grid({ { 5 } }, true), GROUPS)
-		T.eq((ns.Spec.Detect("mage")), nil)
-		local key, source = ns.Spec.Current("mage")
+		T.eq((ns.Spec.Detect("warlock")), nil)
+		local key, source = ns.Spec.Current("warlock")
 		T.eq(key, "fire", "first spec by name when there is no default"); T.eq(source, "default")
 		local said
 		ns.Print = function(...) said = table.concat({ ... }, " ") end

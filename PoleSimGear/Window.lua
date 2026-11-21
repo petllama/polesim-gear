@@ -774,7 +774,7 @@ function Win.PlanAction(d)
 end
 
 function Win.Toggle()
-	if not ns.Context.ClassKey() then return ns.Print("no weights for this class yet (Priest only for now)") end
+	if not ns.Context.ClassKey() then return ns.Print(ns.Context.Unsupported() or "no weights for this class yet") end
 	if not frame then create() end
 	frame:SetShown(not frame:IsShown())
 end

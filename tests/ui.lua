@@ -264,7 +264,7 @@ function U.install()
 		_G.ITEM_QUALITY_COLORS[q] = { hex = "|cff" .. hex, r = tonumber(hex:sub(1, 2), 16) / 255,
 			g = tonumber(hex:sub(3, 4), 16) / 255, b = tonumber(hex:sub(5, 6), 16) / 255 }
 	end
-	_G.CLASS_ICON_TCOORDS = { PRIEST = { 0.49609375, 0.7421875, 0.25, 0.5 } }
+	_G.CLASS_ICON_TCOORDS = { PRIEST = { 0.49609375, 0.7421875, 0.25, 0.5 }, MAGE = { 0.25, 0.49609375, 0, 0.25 } }
 	U.equipped = {}
 	_G.GetInventoryItemLink = function(_, slot) return U.equipped[slot] end
 	_G.GetInventoryItemTexture = function(_, slot) return U.equipped[slot] and 134400 or nil end

@@ -5,25 +5,26 @@ local Spec = {}
 ns.Spec = Spec
 
 -- Talent columns left to right on Forever's class tree (Polestar's class table has the same order).
-Spec.ORDER = { priest = { "discipline", "holy", "shadow" } }
-Spec.DEFAULT = { priest = "shadow" } -- armory.DEFAULT_BUILD
+Spec.ORDER = { priest = { "discipline", "holy", "shadow" }, mage = { "arcane", "fire", "frost" } }
+-- The spec with no talent points: armory.DEFAULT_BUILD, shipped in Data/Weights.lua.
+Spec.DEFAULT = (ns.DATA and ns.DATA.defaultSpec) or {}
 
 -- points[column], names[column] (the client's column headers, any language) -> spec key | nil.
--- A tie goes to the left-most column.
+-- A column is named by its header when that is a spec key, else by its position. Most points wins;
+-- a tie goes to the larger key, as the website's import (armory.guess_build: max of (points, build)).
 function Spec.Pick(points, names, cls)
 	local order = Spec.ORDER[cls]
 	if not order then return nil end
+	local isKey = {}
+	for _, key in ipairs(order) do isKey[key] = true end
 	local best, most = nil, 0
 	for i = 1, #order do
 		local p = points[i] or 0
-		if p > most then best, most = i, p end
+		local name = names and names[i] and names[i]:lower()
+		local key = isKey[name] and name or order[i]
+		if p > 0 and (p > most or (p == most and key > best)) then best, most = key, p end
 	end
-	if not best then return nil end
-	local name = names and names[best] and names[best]:lower()
-	for _, key in ipairs(order) do
-		if name == key then return key end
-	end
-	return order[best]
+	return best
 end
 
 -- A node's column from its x position: the n columns stand apart, so the n - 1 widest gaps split them.
@@ -115,7 +116,7 @@ end
 
 ns.Slash("spec", function(arg)
 	local cls = ns.Context and ns.Context.ClassKey()
-	if not cls then return ns.Print("no weights for this class yet") end
+	if not cls then return ns.Print(ns.Context and ns.Context.Unsupported and ns.Context.Unsupported() or "no weights for this class yet") end
 	arg = (arg or ""):lower()
 	if arg == "auto" or ns.DATA.specs[cls][arg] then
 		ns.char.spec = arg

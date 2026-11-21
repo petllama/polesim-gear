@@ -4,6 +4,35 @@ local function ctx()
 	return { cls = "priest", spec = "shadow", level = 20, faction = "H", classBit = 16, raceBit = 16 }
 end
 return {
+	-- A level 18 Frost mage (the fixture's cls option): its weights, Frost spell damage, the mage's class bit;
+	-- the window builds and the Weights tab lists the mage's specs only.
+	mage_window = function()
+		local fx = F.load({ cls = "mage", level = 18 })
+		local ns = fx.ns
+		local ctx = ns.Context.Get()
+		T.eq(ctx.cls, "mage"); T.eq(ctx.spec, "frost"); T.eq(ctx.ref, "spFrost"); T.eq(ctx.classBit, 128)
+		T.eq(select(2, UnitClass("player")), "MAGE")
+		local f = fx.open()
+		T.ok(f and f:IsShown()); T.ok(ns.Window.state.model, "built")
+		ns.Window.SetTab("weights")
+		local specs = {}
+		for _, b in ipairs(ns.Window.Panel("weights").radios) do specs[#specs + 1] = b.spec end
+		T.eq(table.concat(specs, ","), "auto,arcane,fire,frost")
+		fx.done()
+	end,
+	-- A class with no weights: /psg says so (the Unsupported line) and builds no window.
+	unsupported_class_no_window = function()
+		local fx = F.load()
+		local ns = fx.ns
+		local said
+		ns.Print = function(...) said = table.concat({ ... }, " ") end
+		ns.Context.ClassKey = function() return nil end
+		ns.Context.Unsupported = function() return "Warlock isn't supported yet" end
+		SlashCmdList.POLESIMGEAR("")
+		T.eq(said, "Warlock isn't supported yet")
+		T.eq(_G.PoleSimGearFrame, nil, "no window")
+		fx.done()
+	end,
 	env_needs_the_codex = function()
 		local fx = F.load()
 		local ns = fx.ns

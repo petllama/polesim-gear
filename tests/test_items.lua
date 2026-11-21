@@ -14,7 +14,8 @@ return {
 		T.ok(it.b > 0)
 		T.eq(ns.Items.Get(6540), it, "cached")
 		T.eq(ns.Items.Get(1), nil)
-		T.eq(ns.Items.Get(14152), nil, "mage robe not shipped")
+		T.eq(ns.Items.Get(14152).name, "Robe of the Archmage", "mage-only items are shipped (mage support)")
+		T.eq(ns.Items.Get(1219).sc, 7, "one-hand swords are shipped (mage weapon)")
 	end,
 	-- Gates other than the level: a reputation (faction, standing 0..7) is shipped (the vendor's note);
 	-- PvP-rank items are not shipped at all (never upgrades, as on the website).

@@ -125,6 +125,8 @@ end
 
 ns.On("DB_READY", function()
 	settings()
+	-- a class with no weights gets no button (Context says so once at login)
+	if ns.Context and ns.Context.Unsupported and ns.Context.Unsupported() then return end
 	if Minimap and not M.button then create() end
 end)
 

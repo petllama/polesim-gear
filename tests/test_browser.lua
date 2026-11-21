@@ -42,6 +42,31 @@ local function env()
 end
 
 return {
+	-- A mage: priest-only items and quests are hidden, mage-only ones shown (item class mask cm, quest
+	-- classes mask), as on the website.
+	collect_mage = function()
+		local B = T.addon(FILES).Browser
+		local saved = { ITEMS[1], ITEMS[4], QUESTS[100], ITEMS[6], SOURCES[6] }
+		ITEMS[1] = rec(1, 1, 5, 10, { cm = 16 })   -- a priest-only quest reward
+		ITEMS[4] = rec(4, 1, 4, 12, { cm = 128 })  -- a mage-only drop
+		ITEMS[6] = rec(6, 1, 30, 10)               -- a reward of a mage-only quest
+		SOURCES[6] = { { type = "quest", quest = 700 } }
+		QUESTS[700] = { id = 700, title = "Mage Quest", level = 12, classes = 128 }
+		local ok, err = pcall(function()
+			local e = env()
+			e.cls, e.player.classBit = "mage", 128
+			local ids = {}
+			for _, c in ipairs(B.Collect(e, 20, 0, 20, 20).head) do ids[#ids + 1] = c.id end
+			T.eq(table.concat(ids, ","), "6,4", "1 priest only, 6 the mage quest's reward, 4 mage only")
+			e.cls, e.player.classBit = "priest", 16
+			ids = {}
+			for _, c in ipairs(B.Collect(e, 20, 0, 20, 20).head) do ids[#ids + 1] = c.id end
+			T.eq(table.concat(ids, ","), "1", "a priest: not the mage's item or quest")
+		end)
+		ITEMS[1], ITEMS[4], QUESTS[100], ITEMS[6], SOURCES[6] = saved[1], saved[2], saved[3], saved[4], saved[5]
+		QUESTS[700] = nil
+		assert(ok, err)
+	end,
 	collect_now = function()
 		local B = T.addon(FILES).Browser
 		local cands = B.Collect(env(), 20, 0, 20, 20)

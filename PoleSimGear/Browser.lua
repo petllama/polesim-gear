@@ -17,7 +17,7 @@ Browser.SLOTS = {
 }
 
 -- The weapons PoleSim gives the spec at that band (armory: mh_invs / oh_invs by weapon style; casters
--- "any"). Dual wield is left out: no Priest can (later classes add it with their data).
+-- "any"). Dual wield is left out: no Priest or Mage can (later classes add it with their data).
 local MH = { ["2h"] = { 17 }, dw = { 13, 21 }, shield = { 13, 21 }, ["1h"] = { 13, 21 }, any = { 13, 17, 21 } }
 local OH = { ["2h"] = {}, shield = { 14 }, ["1h"] = { 14, 23 }, any = { 14, 23 } }
 function Browser.Invs(def, style)

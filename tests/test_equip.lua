@@ -18,6 +18,22 @@ return {
 		T.ok(E.CanUse(fake({ cm = 16 }), "priest", 60), "priest only")
 		T.ok(not E.CanUse(fake({ c = 15 }), "priest", 60), "not gear")
 	end,
+	-- Mage (armory.PROFICIENCY): cloth, staves, one-hand swords, daggers, wands; no maces or shields;
+	-- class-restricted items follow the class mask. Real shipped items.
+	can_use_mage = function()
+		local ns = T.addon(FILES)
+		local E, I = ns.Equip, ns.Items
+		T.ok(E.CanUse(I.Get(14152), "mage", 60), "Robe of the Archmage")
+		T.ok(not E.CanUse(I.Get(14152), "priest", 60), "Robe of the Archmage: not a priest's")
+		T.ok(E.CanUse(I.Get(1219), "mage", 11), "Redridge Machete (sword)")
+		T.ok(not E.CanUse(I.Get(1219), "priest", 11), "no swords for priests")
+		T.ok(not E.CanUse(I.Get(7736), "mage", 34), "Fight Club (mace)")
+		T.ok(not E.CanUse(I.Get(2919), "mage", 60), "Relic of the Ancients: priests only")
+		T.ok(E.CanUse(I.Get(15945), "mage", 60), "Runic Stave (held in off hand)")
+		T.ok(E.CanUse(I.Get(11288), "mage", 60), "Greater Magic Wand")
+		T.ok(not E.CanUse(fake({ c = 4, sc = 6, inv = 14 }), "mage", 60), "shield")
+		T.eq(ns.DATA.proficiency.mage.dw, nil, "no dual wield")
+	end,
 	compare = function()
 		local E = T.addon(FILES).Equip
 		local w = { int = 1, dps = 1, rdps = 1 }

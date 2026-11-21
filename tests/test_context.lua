@@ -3,6 +3,40 @@ local FILES = { "Core.lua", "Data/Weights.lua", "Data/Suffixes.lua", "Data/Items
 	"Spec.lua", "Equip.lua", "Context.lua" }
 -- Context is client glue (checked in game); offline only its shape with nothing worn.
 return {
+	mage = function()
+		local ns = T.addon(FILES)
+		require("wow").class = { "Mage", "MAGE", 8 }
+		_G.GetInventoryItemLink = function() return nil end
+		ns.char = { spec = "auto" }
+		local ctx = ns.Context.Get()
+		T.eq(ctx.cls, "mage"); T.eq(ctx.spec, "frost"); T.eq(ctx.specSource, "default")
+		T.eq(ctx.ref, "spFrost"); T.eq(ctx.classBit, 128)
+		ns.char.spec = "arcane"
+		ns.Fire("STATE", "SPEC")
+		T.eq(ns.Context.Get().ref, "spArcane")
+	end,
+	-- A class with no shipped weights: one chat line at login, then nothing (no context, no errors).
+	unsupported_class = function()
+		local ns = T.addon(FILES)
+		require("wow").class = { "Warlock", "WARLOCK", 9 }
+		local said = {}
+		ns.Print = function(...) said[#said + 1] = table.concat({ ... }, " ") end
+		T.eq(ns.Context.ClassKey(), nil)
+		T.eq(ns.Context.Get(), nil)
+		ns._frame.scripts.OnEvent(ns._frame, "PLAYER_LOGIN")
+		ns._frame.scripts.OnEvent(ns._frame, "PLAYER_LOGIN")
+		T.eq(#said, 1)
+		T.eq(said[1], "Warlock isn't supported yet")
+		T.eq(ns.Context.Unsupported(), "Warlock isn't supported yet")
+	end,
+	supported_class_says_nothing = function()
+		local ns = T.addon(FILES)
+		local said = 0
+		ns.Print = function() said = said + 1 end
+		ns._frame.scripts.OnEvent(ns._frame, "PLAYER_LOGIN")
+		T.eq(said, 0)
+		T.eq(ns.Context.Unsupported(), nil)
+	end,
 	-- No weights or no band for this class/spec/level: the outcome is kept until STATE too.
 	no_band_cached = function()
 		local ns = T.addon(FILES)

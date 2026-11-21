@@ -37,6 +37,23 @@ function Context.ClassKey()
 	return key and ns.DATA.specs[key] and key or nil
 end
 
+-- A class with no shipped weights -> "<Class> isn't supported yet" (said once at login; the window and
+-- /psg say it again on demand), else nil.
+function Context.Unsupported()
+	if Context.ClassKey() then return nil end
+	local name, file = UnitClass("player")
+	if not (name or file) then return nil end
+	return (name or file) .. " isn't supported yet"
+end
+local toldUnsupported = false
+ns.RegisterEvent("PLAYER_LOGIN", function()
+	local msg = not toldUnsupported and Context.Unsupported()
+	if msg then
+		toldUnsupported = true
+		ns.Print(msg)
+	end
+end)
+
 function Context.Level()
 	return ns.level or UnitLevel("player") or 1
 end
