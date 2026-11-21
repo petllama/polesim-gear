@@ -59,19 +59,22 @@ local CACHE_MAX = 500
 local cache, cached = {}, 0
 ns.On("SCORES_CHANGED", function() cache, cached = {}, 0 end)
 
+-- link, ctx -> { inst, cmp } | false, waiting (true: the client has not got the item, or its stats, yet).
+-- Shared with the upgrade arrows and the reward pick (one read and one comparison per link).
 local function lookup(link, ctx)
 	local hit = cache[link]
 	if hit ~= nil then return hit end
 	local inst, pending = ns.Live.Instance(link)
-	if pending then return false end
+	if pending then return false, true end
 	local cmp = inst and ns.Equip.CanUse(inst, ctx.cls, ctx.level) and (inst.rl or 0) <= ctx.level + AHEAD
 		and ns.Equip.Compare(inst, ctx.w, ctx.cls, ctx.worn, false)
 	hit = cmp and { inst, cmp } or false
-	if inst and inst.fromTable then return hit end -- the client's stats may come by the next hover
+	if inst and inst.fromTable then return hit, true end -- the client's stats may come by the next read
 	if cached >= CACHE_MAX then cache, cached = {}, 0 end
 	cache[link], cached = hit, cached + 1
 	return hit
 end
+Tooltip.Lookup = lookup
 
 function Tooltip.Add(tooltip, link)
 	local ctx = ns.Context.Get()
