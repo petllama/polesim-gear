@@ -268,4 +268,23 @@ return {
 		T.eq(builds, 2, "unstarring and clearing: redraw only")
 		fx.done()
 	end,
+	frames_made_once = function()
+		local fx = F.load()
+		local ns, U = fx.ns, fx.U
+		local made = 0
+		local cf = CreateFrame
+		_G.CreateFrame = function(...) made = made + 1 return cf(...) end
+		local f = fx.open()
+		for _, t in ipairs(ns.Window.TABS) do ns.Window.SetTab(t.key) end
+		ns.Window.SetTab("plan")
+		local first = made
+		T.ok(first > 0)
+		for _ = 1, 3 do
+			f:Hide(); fx.open()
+			for _, t in ipairs(ns.Window.TABS) do ns.Window.SetTab(t.key) end
+		end
+		T.eq(made, first, "reopening and revisiting tabs makes no frame")
+		_G.CreateFrame = cf
+		fx.done()
+	end,
 }
