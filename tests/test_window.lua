@@ -101,6 +101,25 @@ return {
 		f.points = { { "TOPLEFT", UIParent, "TOPLEFT", 100, -50 } }
 		f.bar.scripts.OnDragStop(f.bar)
 		T.eq(PoleSimGearDB.window.point, "TOPLEFT"); T.eq(PoleSimGearDB.window.x, 100)
+		-- StopMovingOrSizing may anchor to another point of UIParent: the relative point is kept too
+		f.points = { { "TOPLEFT", UIParent, "BOTTOMLEFT", 120, 600 } }
+		f.bar.scripts.OnDragStop(f.bar)
+		local w = PoleSimGearDB.window
+		T.eq(w.point, "TOPLEFT"); T.eq(w.relPoint, "BOTTOMLEFT"); T.eq(w.x, 120); T.eq(w.y, 600)
+		fx.done()
+	end,
+	position_restored = function()
+		local fx = F.load({ db = { window = { point = "TOPLEFT", relPoint = "BOTTOMLEFT", x = 120, y = 600 } } })
+		local f = fx.open()
+		local p = f.points[1]
+		T.eq(p[1], "TOPLEFT"); T.eq(p[2], UIParent); T.eq(p[3], "BOTTOMLEFT"); T.eq(p[4], 120); T.eq(p[5], 600)
+		fx.done()
+		-- the older form (point, x, y): relative to the same point
+		fx = F.load({ db = { window = { point = "TOP", x = 5, y = -40 } } })
+		f = fx.open()
+		p = f.points[1]
+		T.eq(p[1], "TOP"); T.eq(p[3], "TOP"); T.eq(p[4], 5); T.eq(p[5], -40)
+		T.eq(PoleSimGearDB.window.relPoint, "TOP", "migrated")
 		fx.done()
 	end,
 	header = function()

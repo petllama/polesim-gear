@@ -126,8 +126,14 @@ end
 local function create()
 	frame = CreateFrame("Frame", "PoleSimGearFrame", UIParent)
 	frame:SetSize(S.W, S.H)
+	-- saved { point, relPoint, x, y } (an older save has no relPoint: relative to the same point)
 	local pos = ns.db and type(ns.db.window) == "table" and ns.db.window
-	if pos and pos.point then frame:SetPoint(pos.point, UIParent, pos.point, pos.x or 0, pos.y or 0) else frame:SetPoint("CENTER") end
+	if pos and type(pos.point) == "string" then
+		if type(pos.relPoint) ~= "string" then pos.relPoint = pos.point end
+		frame:SetPoint(pos.point, UIParent, pos.relPoint, pos.x or 0, pos.y or 0)
+	else
+		frame:SetPoint("CENTER")
+	end
 	frame:SetFrameStrata("HIGH")
 	frame:SetToplevel(true)
 	frame:EnableMouse(true)
@@ -143,8 +149,8 @@ local function create()
 	bar:SetScript("OnDragStart", function() frame:StartMoving() end)
 	bar:SetScript("OnDragStop", function()
 		frame:StopMovingOrSizing()
-		local p, _, _, x, y = frame:GetPoint(1)
-		if ns.db and p then ns.db.window = { point = p, x = x, y = y } end
+		local p, _, rel, x, y = frame:GetPoint(1)
+		if ns.db and p then ns.db.window = { point = p, relPoint = rel or p, x = x, y = y } end
 	end)
 	local icon = bar:CreateTexture(nil, "ARTWORK")
 	icon:SetSize(36, 36)
