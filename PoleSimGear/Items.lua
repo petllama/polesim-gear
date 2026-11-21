@@ -54,27 +54,38 @@ end
 
 -- Decoded only as asked: Peek decodes an item without keeping it (an item Get kept is shared). The
 -- browser walks thousands of items per build; keeping them all decoded cost ~8 MB for the session.
+-- With the index built (ByInv) the line is read at its recorded offset, without searching the blob.
+local lineOf -- id -> offset * 128 + required level (one number per item: the index stays as small)
+local function line(blob, id)
+	local v = lineOf and lineOf[id]
+	local _, e
+	if v then
+		e = math.floor(v / 128) - 1 -- the tab before the fields
+	else
+		_, e = find(blob, "\n" .. id .. "\t", 1, true)
+		if not e then return nil end
+	end
+	local stop = find(blob, "\n", e + 1, true)
+	return sub(blob, e + 1, (stop or #blob + 1) - 1)
+end
+
 function Items.Peek(id)
 	id = tonumber(id)
 	if not id then return nil end
 	local hit = cache[id]
 	if hit ~= nil then return hit or nil end
-	local blob = ns.DATA.items
-	local _, e = find(blob, "\n" .. id .. "\t", 1, true)
-	if not e then return nil end
-	local stop = find(blob, "\n", e + 1, true)
-	return decode(id, sub(blob, e + 1, (stop or #blob + 1) - 1))
+	local l = line(ns.DATA.items, id)
+	return l and decode(id, l)
 end
 
--- inventory type -> { id, ... } in id order, and each item's required level (Items.Rl), read off the
--- lines without decoding them. Kept until ReleaseIndex (the browser's window closing).
-local rlOf
+-- inventory type -> { id, ... } in id order, and each item's required level (Items.Rl) and line offset,
+-- read off the lines without decoding them. Kept until ReleaseIndex (the browser's window closing).
 function Items.ByInv()
 	if byInv then return byInv end
-	byInv, rlOf = {}, {}
-	for id, rl, inv in gmatch(ns.DATA.items, "\n(%d+)\t[^\t\n]*\t[^\t\n]*\t[^\t\n]*\t(%d*)\t(%d*)\t") do
+	byInv, lineOf = {}, {}
+	for id, pos, rl, inv in gmatch(ns.DATA.items, "\n(%d+)\t()[^\t\n]*\t[^\t\n]*\t[^\t\n]*\t(%d*)\t(%d*)\t") do
 		id, inv = tonumber(id), tonumber(inv)
-		rlOf[id] = tonumber(rl) or 0
+		lineOf[id] = pos * 128 + (tonumber(rl) or 0)
 		if inv then
 			local list = byInv[inv]
 			if not list then
@@ -88,11 +99,12 @@ function Items.ByInv()
 end
 
 function Items.Rl(id)
-	if not rlOf then Items.ByInv() end
-	return rlOf[id]
+	if not lineOf then Items.ByInv() end
+	local v = lineOf[id]
+	return v and v % 128
 end
 
-function Items.ReleaseIndex() byInv, rlOf = nil, nil end
+function Items.ReleaseIndex() byInv, lineOf = nil, nil end
 
 function Items._cached()
 	local n = 0

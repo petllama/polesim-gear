@@ -48,4 +48,39 @@ return {
 		T.ok(ns.Items.ByInv() ~= by, "built again after a release")
 		T.eq(ns.Items.Rl(6540), it.rl)
 	end,
+	-- With the index built, Peek reads the line at its recorded offset: no search of the blob for the
+	-- id; the same record as Get's for every indexed item.
+	peek_reads_at_the_offset = function()
+		local find, searches = string.find, 0
+		string.find = function(s, p, ...)
+			if type(p) == "string" and p:match("^\n%d+	$") then searches = searches + 1 end
+			return find(s, p, ...)
+		end
+		local ok, err = pcall(function()
+			local ns = T.addon(FILES)
+			local by = ns.Items.ByInv()
+			searches = 0
+			local n = 0
+			for _, list in pairs(by) do
+				for _, id in ipairs(list) do
+					local p = ns.Items.Peek(id)
+					T.eq(p.id, id); T.eq(p.rl, ns.Items.Rl(id))
+					n = n + 1
+				end
+			end
+			T.eq(searches, 0, "no search for the id")
+			T.ok(n > 1000, "items " .. n)
+			local fresh = T.addon(FILES)
+			for _, id in ipairs({ 6540, 11288, by[26][#by[26]], by[1][1] }) do
+				local a, b = ns.Items.Peek(id), fresh.Items.Get(id)
+				for k, v in pairs(b) do
+					if type(v) ~= "table" then T.eq(a[k], v, id .. "." .. k) end
+				end
+				T.eq(table.concat(a.sfx, ","), table.concat(b.sfx, ","))
+			end
+			T.eq(ns.Items.Peek(1), nil)
+		end)
+		string.find = find
+		assert(ok, err)
+	end,
 }
