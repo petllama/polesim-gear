@@ -38,4 +38,46 @@ return {
 		T.eq(p.list.provided[1].empty, "No upgrades from the ticked sources.")
 		fx.done()
 	end,
+	picks = function()
+		local fx = F.load()
+		local ns, U = fx.ns, fx.U
+		fx.open()
+		local rows = rowsOf(fx)
+		local r = rows[1]
+		local key = r.e.def.key
+		-- choose the slot's last listed upgrade, as Slot Upgrades' "Set as plan" does
+		local list = ns.Browser.SlotRows(ns.Window.state.model, key, 0, ns.Options.View().filters)
+		T.ok(#list >= 2, "the top slot has several upgrades")
+		local second = list[#list]
+		ns.Plan.Set("shadow", key, second.c.inst)
+		rows = rowsOf(fx)
+		local picked
+		for _, x in ipairs(rows) do if x.e.def.key == key then picked = x end end
+		T.eq(picked.e.entry.plan.c.id, second.c.id)
+		T.ok(picked.plan.sub.text:find("Your pick", 1, true), picked.plan.sub.text)
+		if list[1].gain - second.gain > 1e-6 then T.ok(picked.plan.sub.text:find("best: ", 1, true), "the suggestion is better") end
+		picked.scripts.OnClick(picked, "RightButton")
+		local labels = {}
+		for _, it in ipairs(U.contextMenu) do labels[#labels + 1] = it.text end
+		local all = table.concat(labels, "|")
+		T.ok(all:find("Back to suggestion", 1, true), all); T.ok(all:find("Choose another upgrade", 1, true))
+		for _, it in ipairs(U.contextMenu) do if it.text == "Back to suggestion" then it.fn() end end
+		T.eq(ns.Plan.Get("shadow", key), nil)
+		-- left click and Choose open Slot Upgrades on that slot
+		rows = rowsOf(fx)
+		rows[1].scripts.OnClick(rows[1], "LeftButton")
+		T.eq(ns.Options.View().tab, "slot"); T.eq(ns.Window.state.slot, rows[1].e.def.key)
+		fx.done()
+	end,
+	missing_pick_greyed_last = function()
+		local fx = F.load({ char = { plan = { shadow = { neck = "424242:0" } } } })
+		local ns = fx.ns
+		fx.open()
+		local rows = rowsOf(fx)
+		local last = rows[#rows]
+		T.eq(last.e.def.key, "neck"); T.eq(last.badge.shown, false, "no priority number")
+		T.ok(last.plan.sub.text:find("not available now", 1, true), last.plan.sub.text)
+		T.eq(last.delta.text, "")
+		fx.done()
+	end,
 }
