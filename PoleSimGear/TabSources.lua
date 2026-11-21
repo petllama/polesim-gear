@@ -100,6 +100,23 @@ local function placeLines(d)
 	return out
 end
 
+-- a quest header's title and tags (elite, on your route, needs: X first), coloured
+local function questTitle(q) return format("[%d] %s", q.level or 0, q.title or "?") end
+local function questTags(q)
+	local tags = {}
+	if q.elite then tags[#tags + 1] = S.Colour(C.orange) .. "elite|r" end
+	if q.route then tags[#tags + 1] = S.Colour(C.blue) .. "on your route|r" end
+	if q.needs then tags[#tags + 1] = S.Colour(C.orange) .. "needs: " .. q.needs .. " first|r" end
+	return tags
+end
+function Tab.QuestTooltip(owner, q)
+	GameTooltip:SetOwner(owner, "ANCHOR_RIGHT")
+	GameTooltip:AddLine(questTitle(q), 1, 0.82, 0, true)
+	for _, t in ipairs(questTags(q)) do GameTooltip:AddLine(t, 1, 1, 1, true) end
+	GameTooltip:AddLine("Its rewards that are upgrades are listed below.", 0.6, 0.6, 0.6, true)
+	GameTooltip:Show()
+end
+
 local function makeDetail(row)
 	row.made = true
 	row.star = S.Star(row, function() if row.d and row.d.c then ns.Wishlist.Toggle(row.d.c.inst) end end)
@@ -107,8 +124,10 @@ local function makeDetail(row)
 	row.item = S.ItemCell(row, 22, 160)
 	row.item:SetPoint("LEFT", 22, 0)
 	row.title = S.Text(row, 12, C.pick)
-	row.title:SetPoint("LEFT", 8, 0)
-	row.title:SetWidth(320)
+	row.title:SetWidth(316) -- one line, cut at the Waypoint button (the hover has it whole)
+	row.tags = S.Text(row, 10, C.label)
+	row.tags:SetPoint("TOPLEFT", 8, -17)
+	row.tags:SetWidth(316)
 	row.delta = S.Text(row, 12, C.green)
 	row.delta:SetPoint("LEFT", 210, 0)
 	row.delta:SetWidth(40)
@@ -123,6 +142,7 @@ local function makeDetail(row)
 	row:SetScript("OnEnter", function(self)
 		S.Hover(self, true)
 		if self.d and self.d.c then ns.Window.RowTooltip(self, self.d, "Set as plan: make it this slot's plan item.", placeLines(self.d)) end
+		if self.d and self.d.quest then Tab.QuestTooltip(self, self.d.quest) end
 	end)
 	row:SetScript("OnLeave", function(self) S.Hover(self, false) GameTooltip_Hide() end)
 end
@@ -140,13 +160,13 @@ local function initDetail(row, d)
 	local spot = spotFor(d)
 	row.way.spot = spot
 	row.way:SetShown(spot ~= nil)
+	local tags = d.quest and questTags(d.quest) or {}
+	row.title:ClearAllPoints()
+	if #tags > 0 then row.title:SetPoint("TOPLEFT", 8, -3) else row.title:SetPoint("LEFT", 8, 0) end
+	row.tags:SetShown(#tags > 0)
+	row.tags:SetText(table.concat(tags, "  "))
 	if d.quest then
-		local q = d.quest
-		local tags = {}
-		if q.elite then tags[#tags + 1] = S.Colour(C.orange) .. "elite|r" end
-		if q.route then tags[#tags + 1] = S.Colour(C.blue) .. "on your route|r" end
-		if q.needs then tags[#tags + 1] = S.Colour(C.orange) .. "needs: " .. q.needs .. " first|r" end
-		row.title:SetText(format("[%d] %s", q.level or 0, q.title or "?") .. (#tags > 0 and ("  " .. table.concat(tags, "  ")) or ""))
+		row.title:SetText(questTitle(d.quest))
 		return
 	end
 	if d.dungeon then

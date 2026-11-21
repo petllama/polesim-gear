@@ -104,6 +104,38 @@ return {
 		T.ok(tip:find("under 1%", 1, true), tip); T.ok(tip:find("Also here: Second Boss (boss), 0.3%", 1, true), tip)
 		fx.done()
 	end,
+	-- a quest header: the title on its own (cut by its width), the tags on a second line, both in the
+	-- 30 px row; the hover has the full title and the tags
+	quest_header_tags_and_hover = function()
+		local fx = F.load()
+		local ns, U = fx.ns, fx.U
+		fx.open()
+		ns.Window.SetTab("sources")
+		local p = ns.Window.Panel("sources")
+		ns.TabSources.view.kind, ns.TabSources.view.group = "quest", nil
+		ns.Window.Refresh()
+		local rows = U.rows(p.detail)
+		local h = rows[1]
+		T.ok(h.d.quest); T.ok(h.title.text:match("^%[18%] Quest 10%d$"), h.title.text)
+		T.eq(h.tags.shown, false, "no tags: no second line")
+		T.ok(h.title.w > 0 and h.title.w <= 320, "a width: long titles are cut")
+		local q = p.detail.provided[1].quest
+		q.title = string.rep("A very long quest title ", 4)
+		q.elite, q.route, q.needs = true, 12, "The First Step"
+		h = U.rows(p.detail)[1]
+		T.eq(h.title.text, "[18] " .. q.title, "the title alone on its line")
+		T.eq(h.tags.shown, true)
+		for _, t in ipairs({ "elite", "on your route", "needs: The First Step first" }) do T.ok(h.tags.text:find(t, 1, true), h.tags.text) end
+		local y1, y2 = h.title.points[1][3], h.tags.points[1][3] -- TOPLEFT, x, y
+		T.ok(y1 > y2 and y2 > -30 + 10, "two lines inside the row")
+		h.scripts.OnEnter(h)
+		local tip = table.concat(U.tip.lines, "\n")
+		T.ok(tip:find("[18] " .. q.title, 1, true), tip); T.ok(tip:find("needs: The First Step first", 1, true), tip)
+		T.ok(tip:find("on your route", 1, true), tip)
+		local item = U.rows(p.detail)[2]
+		T.ok(item.d.c); T.eq(item.tags.shown, false, "item rows: no tag line")
+		fx.done()
+	end,
 	waypoint = function()
 		local fx = F.load()
 		local ns, U = fx.ns, fx.U
