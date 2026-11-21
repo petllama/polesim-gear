@@ -104,4 +104,34 @@ return {
 		T.ok(tip:find("under 1%", 1, true), tip); T.ok(tip:find("Also here: Second Boss (boss), 0.3%", 1, true), tip)
 		fx.done()
 	end,
+	waypoint = function()
+		local fx = F.load()
+		local ns, U = fx.ns, fx.U
+		fx.open()
+		ns.Window.SetTab("sources")
+		local p = ns.Window.Panel("sources")
+		ns.TabSources.view.kind, ns.TabSources.view.group = "quest", nil
+		ns.Window.Refresh()
+		local rows = U.rows(p.detail)
+		T.eq(rows[1].way.shown, false, "no Nav API: no button")
+		local got
+		_G.Polestar.Nav = { API = { version = 1, Navigate = function(_, map, x, y, title) got = { map, x, y, title } return true end } }
+		rows = U.rows(p.detail)
+		T.eq(rows[1].way.shown, true)
+		T.eq(rows[2].way.shown, false, "a quest's reward rows: the header has it")
+		rows[1].way:Click()
+		T.eq(got[1], 1436); T.near(got[2], 0.56); T.ok(got[4]:find("Giver", 1, true))
+		ns.TabSources.view.kind, ns.TabSources.view.group = "dungeon", nil
+		ns.Window.Refresh()
+		rows = U.rows(p.detail)
+		T.ok(rows[1].d.dungeon); T.eq(rows[1].way.shown, true, "the dungeon's entrance")
+		rows[1].way:Click()
+		T.near(got[2], 0.419); T.eq(got[4], "The Deadmines")
+		local said
+		ns.Print = function(m) said = m end
+		_G.Polestar.Nav.API.Navigate = function() return false end
+		rows[1].way:Click()
+		T.eq(said, "Polestar could not set the waypoint")
+		fx.done()
+	end,
 }

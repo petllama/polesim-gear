@@ -79,8 +79,16 @@ local function srcLine(s)
 end
 Tab.SrcLine = srcLine
 
--- Task 6.4 finds the places
-local function spotFor() return nil end
+-- The place a detail row's Waypoint leads to (a quest's giver, a dungeon's entrance, a vendor, a
+-- world drop's mob) | nil: no button. Polestar's Nav API is read at call time (it may load later).
+local function spotFor(d)
+	if not ns.Waypoint.Available() then return nil end
+	local codex = ns.Window.state.codex or {}
+	if d.quest then return ns.Waypoint.SpotOf({ kind = "quest", questId = d.quest.questId, title = d.quest.title }, codex) end
+	if d.dungeon then return ns.Waypoint.SpotOf({ kind = "dungeon", instanceKey = d.dungeon.key }, codex) end
+	if d.c and d.src and (d.src.kind == "vendor" or d.src.kind == "world") then return ns.Waypoint.SpotOf(d.src, codex) end
+	return nil
+end
 
 -- the hover's lines about this place: its other sources of the item, and a low chance
 local function placeLines(d)
