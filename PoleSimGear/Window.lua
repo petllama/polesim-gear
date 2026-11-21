@@ -207,9 +207,7 @@ end
 -- shown and visible (Alt+Z hides UIParent: no work then; OnShow builds again)
 local function visible() return frame ~= nil and frame:IsVisible() end
 
-function Win.Refresh()
-	if not visible() then return end
-	pass = {}
+local function redrawAll()
 	local ctx = ns.Context.Get()
 	if Win.UpdateHeader then Win.UpdateHeader(frame, ctx) end
 	if Win.UpdateLeft then Win.UpdateLeft(frame) end
@@ -217,7 +215,14 @@ function Win.Refresh()
 	local key = ns.Options.View().tab
 	local p, def = panels[key], tabDefs[key]
 	if p and def and def.refresh then def.refresh(p) end
+end
+-- One redraw; the plan pass lives only during it (dropped even when a part errors; the error goes on).
+function Win.Refresh()
+	if not visible() then return end
+	pass = {}
+	local ok, err = pcall(redrawAll)
 	pass = nil
+	if not ok then error(err, 0) end
 end
 
 -- Build/ShowAll: the 0.1.0 browser window's Build and ShowAll (Build also drops the Sources grouping).

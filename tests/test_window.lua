@@ -284,6 +284,23 @@ return {
 		T.ok(ns.Window.state.model); T.eq(ns.Window.state.stale, false)
 		fx.done()
 	end,
+	-- a tab whose refresh errors: the error still reaches the client, the redraw's plan pass is dropped
+	pass_cleared_when_a_tab_errors = function()
+		local fx = F.load()
+		local ns = fx.ns
+		fx.open()
+		ns.Window.RegisterTab("settings", { create = function(parent) return CreateFrame("Frame", nil, parent) end,
+			refresh = function() error("tab broke") end })
+		local ok, err = pcall(ns.Window.SetTab, "settings")
+		T.eq(ok, false); T.ok(tostring(err):find("tab broke", 1, true), tostring(err))
+		local calls = 0
+		local pe = ns.View.PlanEntries
+		ns.View.PlanEntries = function(...) calls = calls + 1 return pe(...) end
+		ns.Window.PlanEntries("upgrades"); ns.Window.PlanEntries("upgrades")
+		T.eq(calls, 2, "no stale pass outside a redraw")
+		ns.View.PlanEntries = pe
+		fx.done()
+	end,
 	frames_made_once = function()
 		local fx = F.load()
 		local ns, U = fx.ns, fx.U
