@@ -96,6 +96,18 @@ return {
 		row.scripts.OnClick(row)
 		T.eq(provided[1].header, first.slot.label .. ": every upgrade")
 		for _, d in ipairs(provided) do view.init(row, d) end
+		-- hover: the score sum, the gain, every source with "needs ... first"
+		local lines = {}
+		_G.GameTooltip = setmetatable({
+			AddLine = function(_, t) lines[#lines + 1] = t end,
+			AddDoubleLine = function(_, a, b) lines[#lines + 1] = a .. " = " .. b end,
+		}, { __index = function(_, k) if k:match("^%u") then return function() end end end })
+		view.init(row, provided[2])
+		row.scripts.OnEnter(row)
+		local text = table.concat(lines, "\n")
+		T.ok(text:find("Score = ", 1, true), text)
+		T.ok(text:find("Gain over what you wear = +", 1, true), text)
+		T.ok(text:find("Quest: Wanted (10)", 1, true), text)
 		local released = 0
 		local rel = ns.Items.ReleaseIndex
 		ns.Items.ReleaseIndex = function() released = released + 1 rel() end

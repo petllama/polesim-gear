@@ -98,7 +98,33 @@ local function listData()
 	return out
 end
 
-local function showRowTooltip(row) end -- Task 44
+local function showRowTooltip(row)
+	local r = row.data
+	if not (r and r.c) then return end
+	local ctx = ns.Context.Get()
+	if not ctx then return end
+	local band = r.at and ns.Context.At(r.at) or ctx
+	local inst = r.c.inst
+	GameTooltip:SetOwner(row, "ANCHOR_RIGHT")
+	GameTooltip:AddLine(itemText(inst))
+	if inst.suffix then GameTooltip:AddLine("scored with its best suffix for this spec: " .. inst.suffix, 0.6, 0.6, 0.6) end
+	GameTooltip:AddDoubleLine("Score", format("%.2f", r.c.score), 1, 0.82, 0, 1, 1, 1)
+	local role = inst.inv == 17 and "mh" or (ns.Equip.ROLE_OF_SLOT[r.slot.slot] or "gear")
+	for _, p in ipairs(ns.Score.Parts(inst, band.w, ctx.cls, role)) do
+		local name = (ns.DATA.statLabels[p[1]] or p[1]) .. (p[1] ~= p[3] and (" as " .. (ns.DATA.statLabels[p[3]] or p[3])) or "")
+		GameTooltip:AddDoubleLine(format("  %s %g x %g", name, p[2], p[4]), format("%.2f", p[5]), 0.7, 0.7, 0.7, 0.7, 0.7, 0.7)
+	end
+	GameTooltip:AddDoubleLine("Gain over what you wear", format("%+.2f", r.gain), 1, 1, 1, 0.3, 1, 0.3)
+	if r.at then GameTooltip:AddLine(format("level %d item: scored with the weights of levels %d-%d", r.at, band.lo, band.band.upTo), 0.6, 0.6, 0.6, true) end
+	if r.note then GameTooltip:AddLine(r.note, 0.6, 0.6, 0.6, true) end
+	GameTooltip:AddLine(" ")
+	for _, s in ipairs(r.c.sources) do
+		GameTooltip:AddLine(s.text .. (s.where and (", " .. s.where) or ""), 1, 1, 1, true)
+		if s.needs then GameTooltip:AddLine("  needs: " .. s.needs .. " first", 1, 0.5, 0.3, true) end
+		if s.route then GameTooltip:AddLine(format("  on your route (Polestar guide step %d)", s.route), 0.3, 0.8, 1, true) end
+	end
+	GameTooltip:Show()
+end
 
 local function initRow(row, data)
 	row.data = data
