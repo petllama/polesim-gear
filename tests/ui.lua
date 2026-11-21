@@ -76,14 +76,22 @@ function M:Click(button) if self.scripts.OnClick then self.scripts.OnClick(self,
 function M:GetParent() return self.parent end
 function M:GetName() return self.name end
 -- WowScrollBoxList: frames past the new data's end are released (the view's resetter runs on them, as
--- ScrollBoxListViewMixin:Release does); U.rows acquires frames.
-function M:SetDataProvider(dp)
+-- ScrollBoxListViewMixin:Release does) into the list's pool, hidden; U.rows acquires frames.
+local function releaseFrom(box, n)
 	local keep = {}
-	for i, f in ipairs(self.frames or {}) do
-		if i <= #(dp or {}) then keep[#keep + 1] = f
-		elseif self.view and self.view.resetter then self.view.resetter(f, f.d or f.e) end
+	box.pool = box.pool or {}
+	for i, f in ipairs(box.frames or {}) do
+		if i <= n then keep[#keep + 1] = f
+		else
+			if box.view and box.view.resetter then box.view.resetter(f, f.d or f.e) end
+			f:Hide()
+			box.pool[#box.pool + 1] = f
+		end
 	end
-	self.frames = keep
+	box.frames = keep
+end
+function M:SetDataProvider(dp)
+	releaseFrom(self, #(dp or {}))
 	self.provided = dp
 end
 function M:SetupMenu(gen) self.menu = gen end -- WowStyle1DropdownTemplate
@@ -128,12 +136,16 @@ U.ownText = ownText
 function U.button(root, text)
 	return U.find(root, function(w) return w.scripts.OnClick and w:IsVisible() and ownText(w) == text end)
 end
--- run a ScrollBox's element initializer over its data: -> fresh rows (one per element)
+-- run a ScrollBox's element initializer over its data: -> its rows (one per element). Frames are
+-- reused as the client's ScrollBox does (shown ones first, then released ones, new ones last), so
+-- reused-row paths run and a long session makes no more frames than its longest list.
 function U.rows(box)
 	local out = {}
-	box.frames = {}
-	for i, d in ipairs(box.provided or {}) do
-		local row = new("Button", box)
+	local data = box.provided or {}
+	releaseFrom(box, #data)
+	for i, d in ipairs(data) do
+		local row = box.frames[i] or table.remove(box.pool) or new("Button", box)
+		row:Show()
 		box.view.init(row, d)
 		out[i] = row
 		box.frames[i] = row

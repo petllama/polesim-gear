@@ -23,4 +23,31 @@ return {
 		T.eq(U.menu(dd)[1].text, "Now")
 		_G.PSGTestFrame = nil
 	end,
+	-- U.rows reuses a list's frames as a ScrollBox does: no new frame for the same or a shorter list,
+	-- frames past the data are released (resetter, hidden) and acquired again later
+	rows_reuse_frames = function()
+		require("wow").install()
+		local U = require("ui")
+		U.install()
+		local f = CreateFrame("Frame", nil, UIParent)
+		local view = CreateScrollBoxListLinearView()
+		local inits, resets = 0, 0
+		view:SetElementInitializer("Button", function(row, d) inits = inits + 1 row.d = d end)
+		view:SetElementResetter(function() resets = resets + 1 end)
+		local box = CreateFrame("Frame", nil, f)
+		ScrollUtil.InitScrollBoxListWithScrollBar(box, nil, view)
+		box:SetDataProvider({ 1, 2, 3 })
+		local a = U.rows(box)
+		T.eq(#a, 3); T.eq(#box.children, 3)
+		local b = U.rows(box)
+		T.eq(b[1], a[1], "the same frames"); T.eq(#box.children, 3, "no new frame"); T.eq(inits, 6)
+		box:SetDataProvider({ 9 })
+		T.eq(resets, 2); T.eq(a[2].shown, false, "released frames hidden")
+		local c = U.rows(box)
+		T.eq(#c, 1); T.eq(c[1].d, 9)
+		box:SetDataProvider({ 1, 2, 3, 4 })
+		local d = U.rows(box)
+		T.eq(#d, 4); T.eq(#box.children, 4, "released frames acquired again, one new")
+		T.eq(d[2].shown, true)
+	end,
 }
