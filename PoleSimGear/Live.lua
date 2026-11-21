@@ -1,6 +1,6 @@
 -- The actual item from the client (tooltips, arrows, reward pick): C_Item.GetItemStats with our stat
--- keys, ratings to % (10 hit, 14 crit ... rating per 1%, the client's CombatRatings), random suffixes and
--- any server-side change included. Equip bonuses the client may leave out are filled per family from
+-- keys, ratings to % (ns.DATA.rating: 10 hit, 14 crit ... rating per 1%; 2 decimals like a suffix),
+-- random suffixes and any server-side change included. Equip bonuses the client may leave out are filled per family from
 -- the shipped table, and the instance lists them (inst.filled) so the tooltip can say so. Enchants are
 -- not read (the website ignores them too).
 local ADDON, ns = ...
@@ -27,13 +27,14 @@ local PLAIN = {
 	RESISTANCE1_NAME = "resHoly", RESISTANCE2_NAME = "resFire", RESISTANCE3_NAME = "resNature",
 	RESISTANCE4_NAME = "resFrost", RESISTANCE5_NAME = "resShadow", RESISTANCE6_NAME = "resArcane",
 }
+-- Ratings: our stat key and the ns.DATA.rating divisor (rating per 1%) it uses.
 local RATED = {
-	ITEM_MOD_HIT_RATING_SHORT = { "hit", 10 }, ITEM_MOD_CRIT_RATING_SHORT = { "crit", 14 },
-	ITEM_MOD_HIT_MELEE_RATING_SHORT = { "mhit", 10 }, ITEM_MOD_HIT_RANGED_RATING_SHORT = { "mhit", 10 },
-	ITEM_MOD_CRIT_MELEE_RATING_SHORT = { "mcrit", 14 }, ITEM_MOD_CRIT_RANGED_RATING_SHORT = { "mcrit", 14 },
-	ITEM_MOD_HIT_SPELL_RATING_SHORT = { "spellHit", 10 }, ITEM_MOD_CRIT_SPELL_RATING_SHORT = { "spellCrit", 14 },
-	ITEM_MOD_DODGE_RATING_SHORT = { "dodge", 12 }, ITEM_MOD_PARRY_RATING_SHORT = { "parry", 15 },
-	ITEM_MOD_BLOCK_RATING_SHORT = { "block", 5 }, ITEM_MOD_HASTE_RATING_SHORT = { "haste", 10 },
+	ITEM_MOD_HIT_RATING_SHORT = { "hit", "hit" }, ITEM_MOD_CRIT_RATING_SHORT = { "crit", "crit" },
+	ITEM_MOD_HIT_MELEE_RATING_SHORT = { "mhit", "hit" }, ITEM_MOD_HIT_RANGED_RATING_SHORT = { "mhit", "hit" },
+	ITEM_MOD_CRIT_MELEE_RATING_SHORT = { "mcrit", "crit" }, ITEM_MOD_CRIT_RANGED_RATING_SHORT = { "mcrit", "crit" },
+	ITEM_MOD_HIT_SPELL_RATING_SHORT = { "spellHit", "hit" }, ITEM_MOD_CRIT_SPELL_RATING_SHORT = { "spellCrit", "crit" },
+	ITEM_MOD_DODGE_RATING_SHORT = { "dodge", "dodge" }, ITEM_MOD_PARRY_RATING_SHORT = { "parry", "parry" },
+	ITEM_MOD_BLOCK_RATING_SHORT = { "block", "block" }, ITEM_MOD_HASTE_RATING_SHORT = { "haste", "haste" },
 }
 -- Equip-bonus families: a family the client reports is taken whole from the client; one it does not
 -- report comes from the shipped table (no double count of e.g. "sp" vs "spDmg").
@@ -57,8 +58,8 @@ function Live.Stats(t, rec)
 				dps = v
 			elseif key then
 				out[key] = (out[key] or 0) + v
-			elseif r then
-				out[r[1]] = (out[r[1]] or 0) + v / r[2]
+			elseif r then -- to %, rounded like a suffix's rating (Score.SuffixStats)
+				out[r[1]] = (out[r[1]] or 0) + ns.Score.Round(v / ns.DATA.rating[r[2]], 2)
 			end
 		end
 	end

@@ -9,6 +9,14 @@ return {
 		T.eq(s.int, 7); T.near(s.crit, 1); T.eq(s.sp, 12); T.eq(s.spDmg, 3); T.near(s.spellHit, 1)
 		T.eq(armor, 40); T.eq(dps, 12.5); T.eq(s.armor, nil)
 	end,
+	-- Ratings to % with the shipped divisors (ns.DATA.rating), rounded to 2 decimals like a suffix's.
+	rating_rounding = function()
+		local ns = T.addon(FILES)
+		local s = ns.Live.Stats({ ITEM_MOD_CRIT_RATING_SHORT = 10, ITEM_MOD_HIT_MELEE_RATING_SHORT = 7 }, nil)
+		T.eq(s.crit, 0.71); T.eq(s.mhit, 0.7)
+		ns.DATA.rating.crit = 7
+		T.eq(ns.Live.Stats({ ITEM_MOD_CRIT_SPELL_RATING_SHORT = 14 }, nil).spellCrit, 2, "divisor from the data")
+	end,
 	fills_missing_equip_families = function()
 		local L = T.addon(FILES).Live
 		local rec = { s = { int = 5, sp = 8, mp5 = 2 } }
