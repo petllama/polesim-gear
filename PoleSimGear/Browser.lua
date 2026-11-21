@@ -13,7 +13,7 @@ Browser.SLOTS = {
 	{ key = "legs", label = "Legs", slot = 7, invs = { 7 } }, { key = "feet", label = "Feet", slot = 8, invs = { 8 } },
 	{ key = "finger", label = "Rings", slot = 11, invs = { 11 } }, { key = "trinket", label = "Trinkets", slot = 13, invs = { 12 } },
 	{ key = "mainhand", label = "Main hand", slot = 16 }, { key = "offhand", label = "Off hand", slot = 17 },
-	{ key = "ranged", label = "Ranged / wand", slot = 18, invs = { 15, 25, 26, 28 } },
+	{ key = "ranged", label = "Ranged / wand", short = "Ranged", slot = 18, invs = { 15, 25, 26, 28 } },
 }
 
 -- The weapons PoleSim gives the spec at that band (armory: mh_invs / oh_invs by weapon style; casters

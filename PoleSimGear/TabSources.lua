@@ -117,27 +117,43 @@ function Tab.QuestTooltip(owner, q)
 	GameTooltip:Show()
 end
 
+-- the detail list's columns for its row width w (right-aligned: Waypoint, Set as plan, gain)
+function Tab.DetailCols(w)
+	local c = { way = w - 4 - 64 }
+	c.action = c.way - 4 - 70
+	c.delta, c.deltaW = c.action - 4 - 48, 48
+	c.nameW = c.delta - 4 - (22 + 26)
+	c.titleW = c.way - 4 - 8 -- one line, cut at the Waypoint button (the hover has it whole)
+	return c
+end
+local DCOL = Tab.DetailCols(S.CONTENT.w - 218 - 10)
+
+local function placeDetail(row)
+	if row.cols == DCOL then return end
+	row.cols = DCOL
+	row.item:SetNameWidth(DCOL.nameW)
+	row.title:SetWidth(DCOL.titleW)
+	row.tags:SetWidth(DCOL.titleW)
+	S.Place(row.delta, "LEFT", DCOL.delta, 0, DCOL.deltaW)
+	S.Place(row.action, "LEFT", DCOL.action, 0)
+	S.Place(row.way, "LEFT", DCOL.way, 0)
+end
+
 local function makeDetail(row)
 	row.made = true
 	row.star = S.Star(row, function() if row.d and row.d.c then ns.Wishlist.Toggle(row.d.c.inst) end end)
 	row.star:SetPoint("LEFT", 4, 0)
-	row.item = S.ItemCell(row, 22, 160)
+	row.item = S.ItemCell(row, 22, DCOL.nameW)
 	row.item:SetPoint("LEFT", 22, 0)
 	row.title = S.Text(row, 12, C.pick)
-	row.title:SetWidth(316) -- one line, cut at the Waypoint button (the hover has it whole)
 	row.tags = S.Text(row, 10, C.label)
 	row.tags:SetPoint("TOPLEFT", 8, -17)
-	row.tags:SetWidth(316)
 	row.delta = S.Text(row, 12, C.green)
-	row.delta:SetPoint("LEFT", 210, 0)
-	row.delta:SetWidth(40)
 	row.delta:SetJustifyH("RIGHT")
 	row.action = S.Button(row, "", 70, 18, function() ns.Window.PlanAction(row.d) end, S.ACTION)
-	row.action:SetPoint("LEFT", 254, 0)
 	row.way = S.Button(row, "Waypoint", 64, 18, function(self)
 		if not ns.Waypoint.Go(self.spot) then ns.Print("Polestar could not set the waypoint") end
 	end, S.ACTION)
-	row.way:SetPoint("LEFT", 328, 0)
 	row.way.tip = "Polestar's arrow to this place"
 	row:SetScript("OnEnter", function(self)
 		S.Hover(self, true)
@@ -149,6 +165,7 @@ end
 
 local function initDetail(row, d)
 	if not row.made then makeDetail(row) end
+	placeDetail(row)
 	row.d = d
 	S.RowBg(row, d.index)
 	local item = d.c ~= nil
@@ -247,12 +264,21 @@ function Tab.Create(parent)
 		p.pills[i] = b
 	end
 	p.groups = S.List(p, 0, -30, 210, S.CONTENT.h - 30, 34, initGroup)
-	local split = p:CreateTexture(nil, "BORDER")
-	split:SetColorTexture(C.cardBorder[1], C.cardBorder[2], C.cardBorder[3], 1)
-	split:SetPoint("TOPLEFT", 212, -30)
-	split:SetSize(1, S.CONTENT.h - 30)
-	p.detail = S.List(p, 218, -30, 408, S.CONTENT.h - 30, S.ROW_H, initDetail)
+	p.split = p:CreateTexture(nil, "BORDER")
+	p.split:SetColorTexture(C.cardBorder[1], C.cardBorder[2], C.cardBorder[3], 1)
+	p.split:SetPoint("TOPLEFT", 212, -30)
+	p.detail = S.List(p, 218, -30, S.CONTENT.w - 218, S.CONTENT.h - 30, S.ROW_H, initDetail)
+	Tab.Layout(p, S.CONTENT.w, S.CONTENT.h)
 	return p
+end
+
+-- the places list keeps its width; the detail list takes the rest; both stretch down
+function Tab.Layout(p, w, h)
+	S.PlaceList(p.groups, 0, -30, 210, h - 30)
+	p.split:SetSize(1, h - 30)
+	S.PlaceList(p.detail, 218, -30, w - 218, h - 30)
+	DCOL = Tab.DetailCols(w - 218 - 10)
+	S.EachRow(p.detail, function(row) if row.made then placeDetail(row) end end)
 end
 
 function Tab.RefreshLists(p, g)
@@ -297,4 +323,4 @@ function Tab.Release(p)
 	if Tab.ReleaseLists then Tab.ReleaseLists(p) end
 end
 
-ns.Window.RegisterTab("sources", { create = Tab.Create, refresh = Tab.Refresh, release = Tab.Release })
+ns.Window.RegisterTab("sources", { create = Tab.Create, refresh = Tab.Refresh, release = Tab.Release, layout = Tab.Layout })

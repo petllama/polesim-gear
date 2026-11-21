@@ -118,7 +118,7 @@ return {
 		local h = rows[1]
 		T.ok(h.d.quest); T.ok(h.title.text:match("^%[18%] Quest 10%d$"), h.title.text)
 		T.eq(h.tags.shown, false, "no tags: no second line")
-		T.ok(h.title.w > 0 and h.title.w <= 320, "a width: long titles are cut")
+		T.ok(h.title.w > 0 and h.title.w <= p.detail.w - 64, "a width: long titles are cut (at the Waypoint button)")
 		local q = p.detail.provided[1].quest
 		q.title = string.rep("A very long quest title ", 4)
 		q.elite, q.route, q.needs = true, 12, "The First Step"

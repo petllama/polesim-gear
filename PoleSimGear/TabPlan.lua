@@ -4,15 +4,34 @@ local ADDON, ns = ...
 local Tab = {}
 ns.TabPlan = Tab
 local S = ns.Style
-local C, COL = S.C, S.COLS
+local C = S.C
 local format = string.format
+-- the columns for the list's width (Tab.Layout); rows take them when made, drawn or resized
+local COL = S.PlanCols(S.CONTENT.w - 10)
 
-local function text(parent, size, colour, x, w, justify)
+local function text(parent, size, colour, justify)
 	local t = S.Text(parent, size, colour)
-	t:SetPoint("LEFT", x, 0)
-	if w then t:SetWidth(w) end
 	if justify then t:SetJustifyH(justify) end
 	return t
+end
+
+-- a row's cells at the current columns
+local function place(row)
+	if row.cols == COL then return end
+	row.cols = COL
+	S.Place(row.star, "LEFT", COL.star, 0)
+	S.Place(row.badge, "LEFT", COL.prio, 0)
+	S.Place(row.slotText, "LEFT", COL.slot, 0, COL.slotW)
+	S.Place(row.cur, "LEFT", COL.curIcon, 0)
+	row.cur:SetNameWidth(COL.curNameW)
+	S.Place(row.curScore, "LEFT", COL.curScore, 0, COL.curScoreW)
+	S.Place(row.plan, "LEFT", COL.planIcon, 0)
+	row.plan:SetNameWidth(COL.planNameW)
+	S.Place(row.delta, "LEFT", COL.delta, 0, COL.deltaW)
+	S.Place(row.pct, "LEFT", COL.pct, 0, COL.pctW)
+	S.Place(row.srcIcon, "LEFT", COL.srcIcon, 0)
+	S.Place(row.kind, "LEFT", COL.kind, 0, COL.kindW)
+	S.Place(row.choose, "LEFT", COL.action, 0)
 end
 
 local function make(row)
@@ -23,27 +42,23 @@ local function make(row)
 	row.star:SetPoint("LEFT", COL.star, 0)
 	row.badge = S.Badge(row)
 	row.badge:SetPoint("LEFT", COL.prio, 0)
-	row.slotText = text(row, 12, C.text, COL.slot, 56)
+	row.slotText = text(row, 12, C.text)
 	row.cur = S.ItemCell(row, 22, COL.curNameW)
-	row.cur:SetPoint("LEFT", COL.curIcon, 0)
-	row.curScore = text(row, 11, C.dim, COL.curScore, 30, "RIGHT")
+	row.curScore = text(row, 11, C.dim, "RIGHT")
 	row.plan = S.ItemCell(row, 22, COL.planNameW)
-	row.plan:SetPoint("LEFT", COL.planIcon, 0)
-	row.delta = text(row, 12, C.green, COL.delta, 46, "RIGHT")
-	row.pct = text(row, 12, C.green, COL.pct, 44, "RIGHT")
+	row.delta = text(row, 12, C.green, "RIGHT")
+	row.pct = text(row, 12, C.green, "RIGHT")
 	row.srcIcon = row:CreateTexture(nil, "ARTWORK")
 	row.srcIcon:SetSize(16, 16)
-	row.srcIcon:SetPoint("LEFT", COL.srcIcon, 0)
 	row.route = S.Dot(row, 8, C.blue) -- on the source icon's corner: an item on the Polestar route
 	row.route:SetPoint("CENTER", row.srcIcon, "TOPRIGHT", -1, -1)
-	row.kind = text(row, 12, C.white, COL.kind, 54)
-	row.choose = S.Button(row, "Choose", 40, 18, function()
+	row.kind = text(row, 12, C.white)
+	row.choose = S.Button(row, "Choose", COL.actionW, 18, function()
 		local e = row.e
 		if not e then return end
 		if e.row then return ns.Window.PlanAction({ c = e.row.c, slot = e.def }) end -- a wishlist row: set as plan
 		ns.Window.OpenSlot(e.def.key)
 	end, S.ACTION)
-	row.choose:SetPoint("LEFT", COL.action, 0)
 	row.choose.tip = "Pick another upgrade for this slot"
 	row:SetScript("OnEnter", function(self) S.Hover(self, true) Tab.Tooltip(self) end)
 	row:SetScript("OnLeave", function(self) S.Hover(self, false) GameTooltip_Hide() end)
@@ -64,7 +79,7 @@ local function fill(row, e)
 	S.RowBg(row, e.index)
 	local def = e.def
 	row.badge:Set(e.priority)
-	row.slotText:SetText(def and def.label or "")
+	row.slotText:SetText(def and (def.short or def.label) or "")
 	local w = e.worn
 	row.cur:Set(w and w.inst, nil)
 	row.curScore:SetText(w and format("%.1f", w.score) or "")
@@ -128,6 +143,7 @@ end
 
 local function init(row, e)
 	if not row.made then make(row) end
+	place(row)
 	row.e = e
 	if e.empty then return emptyRow(row, e.empty) end
 	fill(row, e)
@@ -140,15 +156,34 @@ function Tab.Create(parent)
 	p.header:SetPoint("TOPRIGHT")
 	p.header:SetHeight(20)
 	S.Fill(p.header, C.head)
-	for _, h in ipairs({ { "Priority", COL.prio - 4 }, { "Slot", COL.slot }, { "Current item", COL.curIcon }, { "Plan", COL.planIcon },
-		{ "Gain", COL.delta, 46, "RIGHT" }, { "Gain %", COL.pct, 44, "RIGHT" }, { "Source", COL.srcIcon } }) do
+	p.heads = {}
+	for _, h in ipairs({ { "prio", "#", "CENTER" }, { "slot", "Slot" }, { "cur", "Current item" }, { "plan", "Plan" },
+		{ "delta", "Gain", "RIGHT" }, { "pct", "Gain %", "RIGHT" }, { "src", "Source" } }) do
 		local t = S.Text(p.header, 11, C.headText)
-		t:SetPoint("LEFT", h[2], 0)
-		if h[3] then t:SetWidth(h[3]) t:SetJustifyH(h[4]) end
-		t:SetText(h[1])
+		if h[3] then t:SetJustifyH(h[3]) end
+		t:SetText(h[2])
+		p.heads[h[1]] = t
 	end
 	p.list = S.List(p, 0, -20, S.CONTENT.w, S.CONTENT.h - 20, S.ROW_H, init)
+	Tab.Layout(p, S.CONTENT.w, S.CONTENT.h)
 	return p
+end
+
+-- the tab at the content's size (w x h): the list stretches, the columns reflow (rows in view too)
+function Tab.Layout(p, w, h)
+	S.PlaceList(p.list, 0, -20, w, h - 20)
+	COL = S.PlanCols(w - 10)
+	local hd = p.heads
+	S.Place(hd.prio, "LEFT", COL.prio, 0, COL.prioW)
+	S.Place(hd.slot, "LEFT", COL.slot, 0, COL.slotW)
+	-- "Current item" over the icon, name and score; "Current" when only the icon and score show
+	hd.cur:SetText(COL.curNameW > 0 and "Current item" or "Current")
+	S.Place(hd.cur, "LEFT", COL.curIcon, 0, COL.curScore + COL.curScoreW - COL.curIcon)
+	S.Place(hd.plan, "LEFT", COL.planIcon, 0, COL.planNameW + 26)
+	S.Place(hd.delta, "LEFT", COL.delta, 0, COL.deltaW)
+	S.Place(hd.pct, "LEFT", COL.pct, 0, COL.pctW)
+	S.Place(hd.src, "LEFT", COL.srcIcon, 0, COL.kind + COL.kindW - COL.srcIcon)
+	S.EachRow(p.list, function(row) if row.made then place(row) end end)
 end
 
 function Tab.Entries()
@@ -223,4 +258,4 @@ function Tab.Click(row, button)
 	end)
 end
 
-ns.Window.RegisterTab("plan", { create = Tab.Create, refresh = Tab.Refresh, release = Tab.Release })
+ns.Window.RegisterTab("plan", { create = Tab.Create, refresh = Tab.Refresh, release = Tab.Release, layout = Tab.Layout })

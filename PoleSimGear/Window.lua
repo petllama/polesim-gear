@@ -95,6 +95,8 @@ local function showTab(key)
 		-- a tab whose file is not there yet (a later phase) gets an empty panel
 		panels[key] = tabDefs[key] and tabDefs[key].create(frame.content) or CreateFrame("Frame", nil, frame.content)
 		panels[key]:SetAllPoints(frame.content)
+		local def = tabDefs[key]
+		if def and def.layout then def.layout(panels[key], frame.content:GetWidth(), frame.content:GetHeight()) end
 	end
 	for k, p in pairs(panels) do p:SetShown(k == key) end
 	return true
@@ -129,11 +131,36 @@ function Win.DropAll()
 	state.all, state.allBuilding, state.allWhy = nil, nil, nil
 end
 
+-- The largest size: the screen (UIParent), when the client says it.
+function Win.MaxSize()
+	local w, h = UIParent:GetWidth(), UIParent:GetHeight()
+	if not (type(w) == "number" and w > 0 and type(h) == "number" and h > 0) then return nil, nil end
+	return math.max(S.MIN_W, math.floor(w)), math.max(S.MIN_H, math.floor(h))
+end
+-- a size within the bounds (the saved one may come from a larger screen or an older save)
+function Win.ClampSize(w, h)
+	local mw, mh = Win.MaxSize()
+	w = math.max(S.MIN_W, tonumber(w) or S.W)
+	h = math.max(S.MIN_H, tonumber(h) or S.H)
+	if mw then w, h = math.min(w, mw), math.min(h, mh) end
+	return math.floor(w + 0.5), math.floor(h + 0.5)
+end
+-- Save the window's place and size per account: { point, relPoint, x, y, w, h }.
+function Win.SavePlace()
+	if not (ns.db and frame) then return end
+	local p, _, rel, x, y = frame:GetPoint(1)
+	local old = type(ns.db.window) == "table" and ns.db.window or {}
+	local w, h = frame:GetWidth(), frame:GetHeight()
+	ns.db.window = { point = p or old.point, relPoint = rel or p or old.relPoint, x = p and x or old.x, y = p and y or old.y,
+		w = (w and w > 0) and math.floor(w + 0.5) or old.w, h = (h and h > 0) and math.floor(h + 0.5) or old.h }
+end
+
 local function create()
 	frame = CreateFrame("Frame", "PoleSimGearFrame", UIParent)
-	frame:SetSize(S.W, S.H)
-	-- saved { point, relPoint, x, y } (an older save has no relPoint: relative to the same point)
+	-- saved { point, relPoint, x, y, w, h } (an older save has no relPoint: relative to the same point;
+	-- no size: the default)
 	local pos = ns.db and type(ns.db.window) == "table" and ns.db.window
+	frame:SetSize(Win.ClampSize(pos and pos.w or S.W, pos and pos.h or S.H))
 	if pos and type(pos.point) == "string" then
 		if type(pos.relPoint) ~= "string" then pos.relPoint = pos.point end
 		frame:SetPoint(pos.point, UIParent, pos.relPoint, pos.x or 0, pos.y or 0)
@@ -144,6 +171,8 @@ local function create()
 	frame:SetToplevel(true)
 	frame:EnableMouse(true)
 	frame:SetMovable(true)
+	frame:SetResizable(true)
+	frame:SetResizeBounds(S.MIN_W, S.MIN_H, Win.MaxSize())
 	frame:SetClampedToScreen(true)
 	tinsert(UISpecialFrames, "PoleSimGearFrame")
 	S.Fill(frame, C.body, 0.97)
@@ -155,8 +184,7 @@ local function create()
 	bar:SetScript("OnDragStart", function() frame:StartMoving() end)
 	bar:SetScript("OnDragStop", function()
 		frame:StopMovingOrSizing()
-		local p, _, rel, x, y = frame:GetPoint(1)
-		if ns.db and p then ns.db.window = { point = p, relPoint = rel or p, x = x, y = y } end
+		Win.SavePlace()
 	end)
 	local icon = bar:CreateTexture(nil, "ARTWORK")
 	icon:SetSize(36, 36)
@@ -182,6 +210,23 @@ local function create()
 	if Win.CreateHeader then Win.CreateHeader(frame) end -- Task 3.4
 	if Win.CreateLeft then Win.CreateLeft(frame) end -- Task 3.5
 	if Win.CreateBottom then Win.CreateBottom(frame) end -- Task 3.6
+	-- the resize grip (the chat frame's size grabber), bottom right
+	local grip = CreateFrame("Button", nil, frame)
+	grip:SetSize(16, 16)
+	grip:SetPoint("BOTTOMRIGHT", -2, 2)
+	grip:SetNormalTexture("Interface\\ChatFrame\\UI-ChatIM-SizeGrabber-Up")
+	grip:SetHighlightTexture("Interface\\ChatFrame\\UI-ChatIM-SizeGrabber-Highlight")
+	grip:SetPushedTexture("Interface\\ChatFrame\\UI-ChatIM-SizeGrabber-Down")
+	grip:SetScript("OnMouseDown", function(_, button)
+		if button == "LeftButton" then frame:StartSizing("BOTTOMRIGHT") end
+	end)
+	grip:SetScript("OnMouseUp", function()
+		frame:StopMovingOrSizing()
+		Win.SavePlace()
+	end)
+	frame.grip = grip
+	frame:SetScript("OnSizeChanged", function(_, w, h) Win.Layout(w, h) end)
+	Win.Layout(frame:GetWidth(), frame:GetHeight())
 	frame:Hide() -- a new frame is shown: hidden first, so the first toggle shows it (and OnShow runs)
 	frame:SetScript("OnShow", function()
 		showTab(ns.Options.View().tab) -- one redraw: Build's (or Refresh's)
@@ -304,6 +349,46 @@ function Win.AheadList()
 	return out
 end
 
+-- Everything at the window's size W x H (on create and OnSizeChanged): the title bar, the header
+-- cards (the progress card takes the width), the content area and its tabs, the bottom strip (the
+-- equipped icons grow with it, the weights card keeps the right edge).
+function Win.Layout(W, H)
+	local f = frame
+	if not (f and W and H and W > 0 and H > 0) then return end
+	f.bar:SetWidth(W)
+	local h = f.header
+	if h then
+		local w3 = W - 544
+		h.c3:SetWidth(w3)
+		h.trackW = w3 - 112
+		h.track:SetWidth(h.trackW)
+		S.Place(h.progress, "TOPLEFT", 10 + h.trackW + 8, -31, w3 - (10 + h.trackW + 8) - 6)
+		S.Place(h.c4, "TOPLEFT", W - 176, -52)
+		if h.fill:IsShown() and h.done then h.fill:SetWidth(math.max(1, h.trackW * h.done)) end
+	end
+	local A = S.Content(W, H)
+	S.Place(f.content, "TOPLEFT", A.x, A.y)
+	f.content:SetSize(A.w, A.h)
+	for key, p in pairs(panels) do
+		local def = tabDefs[key]
+		if def and def.layout then def.layout(p, A.w, A.h) end
+	end
+	if f.eq then
+		local y = -(H - 100)
+		local eqW = W - 24 - 8 - Win.WEIGHTS_W
+		S.Place(f.eq, "TOPLEFT", 12, y)
+		f.eq:SetSize(eqW, 88)
+		S.Place(f.wc, "TOPLEFT", W - 12 - Win.WEIGHTS_W, y)
+		f.wc:SetSize(Win.WEIGHTS_W, 88)
+		local step = math.floor((eqW - 16) / #f.slots)
+		local size = math.min(32, step - 2)
+		for i, b in ipairs(f.slots) do
+			S.Place(b, "TOPLEFT", 8 + (i - 1) * step, -26)
+			b:SetSize(size, size)
+		end
+	end
+end
+
 function Win.CreateHeader(f)
 	local h = {}
 	f.header = h
@@ -335,6 +420,7 @@ function Win.CreateHeader(f)
 	end)
 	c2:SetScript("OnLeave", GameTooltip_Hide)
 	local c3 = S.Panel(f, 360, -52, 236, 62)
+	h.c3 = c3
 	local l3 = S.Text(c3, 11, C.label)
 	l3:SetPoint("TOPLEFT", 8, -6)
 	l3:SetText("Gear plan progress")
@@ -347,8 +433,8 @@ function Win.CreateHeader(f)
 	h.fill:SetPoint("TOPLEFT")
 	h.fill:SetHeight(14)
 	h.fill:SetColorTexture(C.barFill[1], C.barFill[2], C.barFill[3], 1)
-	h.progress = S.Text(c3, 12, C.white)
-	h.progress:SetPoint("TOPLEFT", 168, -31)
+	h.progress = S.Text(c3, 11, C.white)
+	h.trackW = 150
 	c3:EnableMouse(true)
 	c3:SetScript("OnEnter", function(self)
 		GameTooltip:SetOwner(self, "ANCHOR_BOTTOM")
@@ -358,6 +444,7 @@ function Win.CreateHeader(f)
 	end)
 	c3:SetScript("OnLeave", GameTooltip_Hide)
 	local c4 = S.Panel(f, 604, -52, 164, 62)
+	h.c4 = c4
 	local l4 = S.Text(c4, 11, C.label)
 	l4:SetPoint("TOPLEFT", 8, -6)
 	l4:SetText("Look ahead")
@@ -380,7 +467,8 @@ function Win.UpdateHeader(f, ctx)
 	if state.model then
 		local done, total = ns.View.Progress(state.model, ctx.worn, Win.St())
 		h.fill:SetShown(done > 0)
-		h.fill:SetWidth(math.max(1, 150 * done / total))
+		h.done = done / total
+		h.fill:SetWidth(math.max(1, h.trackW * h.done))
 		h.progress:SetText(format("%d / %d (%d%%)", done, total, math.floor(100 * done / total + 0.5)))
 	else
 		h.fill:Hide()
@@ -428,15 +516,17 @@ function Win.UpdateLeft(f)
 end
 
 Win.EQUIP_SLOTS = { 1, 2, 3, 15, 5, 9, 10, 6, 7, 8, 11, 12, 13, 14, 16, 17, 18 }
+Win.WEIGHTS_W = 320 -- the weights card (two values a line); the equipped strip takes the rest
 function Win.CreateBottom(f)
 	local eq = S.Panel(f, 12, -400, 470, 88)
+	f.eq = eq
 	f.eqTitle = S.Text(eq, 12, C.white)
 	f.eqTitle:SetPoint("TOPLEFT", 8, -6)
 	f.slots = {}
 	for i, slot in ipairs(Win.EQUIP_SLOTS) do
 		local b = CreateFrame("Button", nil, eq)
 		b:SetSize(24, 24)
-		b:SetPoint("TOPLEFT", 8 + (i - 1) * 26, -28)
+		b:SetPoint("TOPLEFT", 8 + (i - 1) * 26, -26)
 		b.slot = slot
 		b.icon = b:CreateTexture(nil, "ARTWORK")
 		b.icon:SetAllPoints()
@@ -451,15 +541,28 @@ function Win.CreateBottom(f)
 		b:SetScript("OnLeave", GameTooltip_Hide)
 		f.slots[i] = b
 	end
-	local wc = S.Panel(f, 490, -400, 278, 88)
+	local wc = S.Panel(f, 490, -400, Win.WEIGHTS_W, 88)
+	f.wc = wc
 	f.wTitle = S.Text(wc, 12, C.white)
 	f.wTitle:SetPoint("TOPLEFT", 8, -6)
-	f.wLine = S.Text(wc, 12, C.white)
-	f.wLine:SetPoint("TOPLEFT", 8, -32)
-	f.wLine:SetWidth(262)
+	-- the top four weights, two a line: name (short) and value
+	f.wCells = {}
+	local cw = (Win.WEIGHTS_W - 24) / 2
+	for i = 1, 4 do
+		local col, line = (i - 1) % 2, math.floor((i - 1) / 2)
+		local cx, cy = 8 + col * (cw + 8), -28 - line * 17
+		local name = S.Text(wc, 11, C.white)
+		name:SetPoint("TOPLEFT", cx, cy)
+		name:SetWidth(cw - 40)
+		local value = S.Text(wc, 11, C.green)
+		value:SetPoint("TOPLEFT", cx + cw - 38, cy)
+		value:SetWidth(38)
+		value:SetJustifyH("RIGHT")
+		f.wCells[i] = { name = name, value = value }
+	end
 	f.wSub = S.Text(wc, 10, C.label)
-	f.wSub:SetPoint("TOPLEFT", 8, -54)
-	f.wSub:SetWidth(262)
+	f.wSub:SetPoint("TOPLEFT", 8, -66)
+	f.wSub:SetWidth(Win.WEIGHTS_W - 16)
 	f.pencil = S.Button(wc, "", 20, 20, function() Win.SetTab("weights") end, S.ACTION)
 	f.pencil:SetPoint("TOPRIGHT", -6, -6)
 	f.pencil.tip = "Weights and spec"
@@ -480,7 +583,7 @@ function Win.UpdateBottom(f, ctx)
 	for _, b in ipairs(f.slots) do
 		local link = GetInventoryItemLink("player", b.slot)
 		if link then n = n + 1 end
-		b.icon:SetTexture(GetInventoryItemTexture("player", b.slot) or "Interface\\PaperDoll\\UI-Backpack-EmptySlot")
+		b.icon:SetTexture(link and GetInventoryItemTexture("player", b.slot) or "Interface\\PaperDoll\\UI-Backpack-EmptySlot")
 		local q = link and ITEM_QUALITY_COLORS and ITEM_QUALITY_COLORS[GetInventoryItemQuality("player", b.slot) or 1]
 		S.SetBorder(b.border, q and q.r and { q.r, q.g, q.b } or C.cardBorder)
 		local kind = badges[b.slot]
@@ -489,14 +592,16 @@ function Win.UpdateBottom(f, ctx)
 		b.badge:SetShown(kind ~= nil)
 	end
 	f.eqTitle:SetText(format("Equipped gear (%d)", n))
+	for _, cell in ipairs(f.wCells) do cell.name:SetText(""); cell.value:SetText("") end
 	if not ctx then
-		f.wTitle:SetText("Stat weights"); f.wLine:SetText(""); f.wSub:SetText("")
+		f.wTitle:SetText("Stat weights"); f.wSub:SetText("")
 		return
 	end
 	f.wTitle:SetText("Stat weights (" .. S.Title(ctx.spec) .. ")")
-	local parts = {}
-	for _, w in ipairs(ns.View.WeightRows(ctx.w, 4)) do parts[#parts + 1] = w.label .. " " .. S.Colour(C.green) .. format("%.2f", w.value) .. "|r" end
-	f.wLine:SetText(table.concat(parts, "   "))
+	for i, w in ipairs(ns.View.WeightRows(ctx.w, 4)) do
+		f.wCells[i].name:SetText(S.STAT_SHORT[w.key] or w.label)
+		f.wCells[i].value:SetText(format("%.2f", w.value))
+	end
 	f.wSub:SetText(format("levels %d-%d, points of %s", ctx.lo, ctx.band.upTo, ns.DATA.statLabels[ctx.ref] or ctx.ref))
 end
 

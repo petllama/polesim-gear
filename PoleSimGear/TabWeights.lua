@@ -9,6 +9,7 @@ local format = string.format
 
 local view = { band = nil } -- shown band index; nil = the character's
 Tab.view = view
+local BAR = 120 -- the longest bar (the top weight), Tab.Layout's
 
 local function bandsNow()
 	local ctx = ns.Context.Get()
@@ -18,6 +19,7 @@ local function bandsNow()
 end
 
 local function initRow(row, d)
+	row.d = d
 	if not row.made then
 		row.made = true
 		row.stat = S.Text(row, 12, C.text)
@@ -35,7 +37,7 @@ local function initRow(row, d)
 	S.RowBg(row, d.index)
 	row.stat:SetText(d.label)
 	row.value:SetText(format("%.3f", d.value))
-	row.bar:SetWidth(math.max(1, 120 * math.max(0, d.value) / d.max))
+	row.bar:SetWidth(math.max(1, BAR * math.max(0, d.value) / d.max))
 end
 
 function Tab.Create(parent)
@@ -54,14 +56,31 @@ function Tab.Create(parent)
 	p.how = S.Text(p, 11, C.label)
 	p.how:SetPoint("TOPLEFT", 8, -36)
 	p.how:SetWidth(390)
-	p.list = S.List(p, 0, -56, 410, S.CONTENT.h - 56, 22, initRow)
-	local t = S.Text(p, 13, C.white)
-	t:SetPoint("TOPLEFT", 420, -8)
-	t:SetText("Spec")
+	p.how2 = S.Text(p, 11, C.label) -- the reference stat on a line of its own (it may be long)
+	p.how2:SetPoint("TOPLEFT", 8, -50)
+	p.how2:SetWidth(390)
+	p.list = S.List(p, 0, -66, 410, S.CONTENT.h - 66, 22, initRow)
+	p.specTitle = S.Text(p, 13, C.white)
+	p.specTitle:SetText("Spec")
 	p.radios = {}
 	p.specSub = S.Text(p, 10, C.label)
 	p.specSub:SetWidth(196)
+	Tab.Layout(p, S.CONTENT.w, S.CONTENT.h)
 	return p
+end
+
+-- the list stretches down and (past 410 px) right with the bars; the spec column stays at its right
+function Tab.Layout(p, w, h)
+	local lw = math.max(410, w - 216)
+	S.PlaceList(p.list, 0, -66, lw, h - 66)
+	p.how:SetWidth(lw - 16)
+	p.how2:SetWidth(lw - 16)
+	BAR = lw - 290
+	p.specX = lw + 10
+	S.Place(p.specTitle, "TOPLEFT", p.specX, -8)
+	for i, b in ipairs(p.radios) do S.Place(b, "TOPLEFT", p.specX - 4, -30 - (i - 1) * 22) end
+	S.Place(p.specSub, "TOPLEFT", p.specX, -34 - #p.radios * 22)
+	S.EachRow(p.list, function(row, d) if row.made and d then initRow(row, d) end end)
 end
 
 -- the radios are made on the first refresh (the class's specs are known then)
@@ -78,11 +97,11 @@ local function radios(p, ctx)
 			ns.Window.Refresh()
 		end)
 		b:SetSize(190, 20)
-		b:SetPoint("TOPLEFT", 416, -30 - (i - 1) * 22)
+		b:SetPoint("TOPLEFT", p.specX - 4, -30 - (i - 1) * 22)
 		b.spec = k[1]
 		p.radios[i] = b
 	end
-	p.specSub:SetPoint("TOPLEFT", 420, -34 - #keys * 22)
+	S.Place(p.specSub, "TOPLEFT", p.specX, -34 - #keys * 22)
 end
 
 function Tab.Step(d)
@@ -97,6 +116,7 @@ function Tab.Refresh(p)
 	if not (ctx and bands and #bands > 0) then
 		p.band:SetText("")
 		p.how:SetText("")
+		p.how2:SetText("")
 		return S.SetList(p.list, {})
 	end
 	radios(p, ctx)
@@ -109,7 +129,8 @@ function Tab.Refresh(p)
 	p.band:SetText(format("Levels %d-%d", b.lo, b.upTo) .. (i == mine and " (your band)" or ""))
 	S.SetEnabled(p.prev, i > 1)
 	S.SetEnabled(p.next, i < #bands)
-	p.how:SetText(format("An item's score = its stats x these weights, in points of %s.", ns.DATA.statLabels[ctx.ref] or ctx.ref))
+	p.how:SetText("An item's score = its stats x these weights,")
+	p.how2:SetText(format("in points of %s.", ns.DATA.statLabels[ctx.ref] or ctx.ref))
 	local rows = ns.View.WeightRows(b.w)
 	local max = rows[1] and rows[1].value or 1
 	for k, r in ipairs(rows) do
@@ -123,4 +144,4 @@ function Tab.Release(p)
 	S.SetList(p.list, {})
 end
 
-ns.Window.RegisterTab("weights", { create = Tab.Create, refresh = Tab.Refresh, release = Tab.Release })
+ns.Window.RegisterTab("weights", { create = Tab.Create, refresh = Tab.Refresh, release = Tab.Release, layout = Tab.Layout })

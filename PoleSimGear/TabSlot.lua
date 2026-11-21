@@ -6,6 +6,7 @@ ns.TabSlot = Tab
 local S = ns.Style
 local C = S.C
 local format = string.format
+local COL = S.SlotCols(S.CONTENT.w - 10) -- Tab.Layout's
 
 function Tab.Rows()
 	local st = ns.Window.state
@@ -47,7 +48,29 @@ function Tab.Create(parent)
 	p.count:SetPoint("LEFT", 176, 0)
 	p.count:SetWidth(440)
 	p.list = S.List(p, 0, -30, S.CONTENT.w, S.CONTENT.h - 30, S.ROW_H, function(row, d) Tab.Init(row, d) end)
+	Tab.Layout(p, S.CONTENT.w, S.CONTENT.h)
 	return p
+end
+
+local function place(row)
+	if row.cols == COL then return end
+	row.cols = COL
+	S.Place(row.star, "LEFT", COL.star, 0)
+	S.Place(row.item, "LEFT", COL.item, 0)
+	row.item:SetNameWidth(COL.nameW)
+	S.Place(row.level, "LEFT", COL.level, 0, COL.levelW)
+	S.Place(row.delta, "LEFT", COL.delta, 0, COL.deltaW)
+	S.Place(row.pct, "LEFT", COL.pct, 0, COL.pctW)
+	S.Place(row.srcIcon, "LEFT", COL.srcIcon, 0)
+	S.Place(row.kind, "LEFT", COL.kind, 0, COL.kindW)
+	S.Place(row.action, "LEFT", COL.action, 0)
+end
+
+function Tab.Layout(p, w, h)
+	S.PlaceList(p.list, 0, -30, w, h - 30)
+	p.count:SetWidth(w - 176 - 8)
+	COL = S.SlotCols(w - 10)
+	S.EachRow(p.list, function(row) if row.made then place(row) end end)
 end
 
 function Tab.Refresh(p)
@@ -68,28 +91,16 @@ local function make(row)
 	row.star = S.Star(row, function()
 		if row.d and row.d.c then ns.Wishlist.Toggle(row.d.c.inst) end
 	end)
-	row.star:SetPoint("LEFT", 4, 0)
-	row.item = S.ItemCell(row, 22, 250)
-	row.item:SetPoint("LEFT", 24, 0)
+	row.item = S.ItemCell(row, 22, COL.nameW)
 	row.level = S.Text(row, 11, C.dim)
-	row.level:SetPoint("LEFT", 300, 0)
-	row.level:SetWidth(40)
 	row.delta = S.Text(row, 12, C.green)
-	row.delta:SetPoint("LEFT", 350, 0)
-	row.delta:SetWidth(50)
 	row.delta:SetJustifyH("RIGHT")
 	row.pct = S.Text(row, 12, C.green)
-	row.pct:SetPoint("LEFT", 404, 0)
-	row.pct:SetWidth(46)
 	row.pct:SetJustifyH("RIGHT")
 	row.srcIcon = row:CreateTexture(nil, "ARTWORK")
 	row.srcIcon:SetSize(16, 16)
-	row.srcIcon:SetPoint("LEFT", 460, 0)
 	row.kind = S.Text(row, 12, C.white)
-	row.kind:SetPoint("LEFT", 478, 0)
-	row.kind:SetWidth(60)
-	row.action = S.Button(row, "", 72, 18, function() ns.Window.PlanAction(row.d) end, S.ACTION)
-	row.action:SetPoint("LEFT", 540, 0)
+	row.action = S.Button(row, "", COL.actionW, 18, function() ns.Window.PlanAction(row.d) end, S.ACTION)
 	row:SetScript("OnEnter", function(self)
 		S.Hover(self, true)
 		if self.d and self.d.c then ns.Window.RowTooltip(self, self.d, "Set as plan: make it this slot's plan item.") end
@@ -100,6 +111,7 @@ end
 
 function Tab.Init(row, d)
 	if not row.made then make(row) end
+	place(row)
 	row.d = d
 	S.RowBg(row, d.index)
 	local header = d.empty or d.header
@@ -148,4 +160,4 @@ function Tab.List(rows)
 	return out
 end
 
-ns.Window.RegisterTab("slot", { create = Tab.Create, refresh = Tab.Refresh, release = Tab.Release })
+ns.Window.RegisterTab("slot", { create = Tab.Create, refresh = Tab.Refresh, release = Tab.Release, layout = Tab.Layout })

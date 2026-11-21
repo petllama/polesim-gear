@@ -24,21 +24,65 @@ local C = {
 	badgeGrey = hex("242e31"), badgeGreyBorder = hex("3a464a"), badgeGreyText = hex("cfd5d7"),
 }
 Style.C = C
-Style.W, Style.H, Style.ROW_H = 780, 500, 30
+-- The window: default and least size (resizable, the size saved per account); the content area
+-- (the tabs' table) and the Gear Plan columns follow the size.
+Style.W, Style.H, Style.ROW_H = 980, 600, 30
+Style.MIN_W, Style.MIN_H = 780, 500
 Style.FONT = STANDARD_TEXT_FONT or "Fonts\\FRIZQT__.TTF"
--- Where things sit (TOPLEFT offsets in the window); the table/content area is shared by every tab.
-Style.CONTENT = { x = 142, y = -122, w = 626, h = 270 }
--- Gear Plan columns (x from the table's left edge). Column words: "Gain"/"Gain %" (the mockup's "Δ"
--- is not in every client font).
-Style.COLS = { star = 4, prio = 22, slot = 48, curIcon = 106, curName = 130, curNameW = 100, curScore = 232,
-	planIcon = 268, planName = 292, planNameW = 104, delta = 400, pct = 450, srcIcon = 500, kind = 518, action = 574 }
+-- Where the tabs draw (TOPLEFT offsets in the window) for a window size; shared by every tab.
+function Style.Content(W, H) return { x = 142, y = -122, w = W - 154, h = H - 230 } end
+Style.CONTENT = Style.Content(Style.W, Style.H)
+-- An item name column's least width ("Magician's Mantle", "Abomination Skirt" at 12 px).
+Style.NAME_MIN = 120
+-- Gear Plan columns for a row w px wide (x from the row's left edge). Numbers and words get the
+-- width of their longest text ("+139.5", "+1177%", "130.4", "Dungeon", "Main hand"); the two item
+-- names share the rest. Narrower than two names: the current item shows its icon and score only
+-- (its name is in the slot's tooltip).
+function Style.PlanCols(w)
+	local c = { star = 4, prio = 22, prioW = 22, slot = 50, slotW = 70, curIcon = 124, curScoreW = 36,
+		deltaW = 48, pctW = 54, kindW = 60, actionW = 52 }
+	c.action = w - 4 - c.actionW
+	c.kind = c.action - 4 - c.kindW
+	c.srcIcon = c.kind - 18
+	c.pct = c.srcIcon - 6 - c.pctW
+	c.delta = c.pct - 4 - c.deltaW
+	local flex = c.delta - 4 - (c.curIcon + 26) - 4 - c.curScoreW - 6 - 26
+	if flex >= 2 * Style.NAME_MIN then
+		c.curNameW = math.floor(flex / 2)
+		c.curScore = c.curIcon + 26 + c.curNameW + 4
+	else
+		c.curNameW = 0
+		c.curScore = c.curIcon + 26
+	end
+	c.planIcon = c.curScore + c.curScoreW + 6
+	c.planNameW = c.delta - 4 - (c.planIcon + 26)
+	return c
+end
+-- Slot Upgrades columns for a row w px wide.
+function Style.SlotCols(w)
+	local c = { star = 4, item = 24, levelW = 40, deltaW = 48, pctW = 54, kindW = 60, actionW = 72 }
+	c.action = w - 4 - c.actionW
+	c.kind = c.action - 4 - c.kindW
+	c.srcIcon = c.kind - 18
+	c.pct = c.srcIcon - 6 - c.pctW
+	c.delta = c.pct - 4 - c.deltaW
+	c.level = c.delta - 4 - c.levelW
+	c.nameW = c.level - 4 - (c.item + 26)
+	return c
+end
+-- Short stat names for the weights card (two values a line); the Weights tab has the long ones.
+Style.STAT_SHORT = { sp = "Spell damage", spShadow = "Shadow damage", spHoly = "Holy damage", spFrost = "Frost damage",
+	spArcane = "Arcane damage", spFire = "Fire damage", spNature = "Nature damage", rdps = "Wand DPS", rap = "Ranged AP",
+	apFeral = "Feral AP", mcrit = "Phys. crit %", mhit = "Phys. hit %", hit = "Hit %", crit = "Crit %", other = "Other",
+	resFrost = "Frost res.", resNature = "Nature res.", resArcane = "Arcane res.", resShadow = "Shadow res.",
+	resFire = "Fire res.", resHoly = "Holy res.", spellPen = "Spell pen." }
 Style.KIND_ICON = {
 	quest = "Interface\\GossipFrame\\AvailableQuestIcon", dungeon = "Interface\\Icons\\INV_Misc_Bone_HumanSkull_01",
 	crafted = "Interface\\Icons\\Trade_BlackSmithing", vendor = "Interface\\Icons\\INV_Misc_Coin_01",
 	world = "Interface\\Icons\\INV_Misc_Bag_10",
 }
 Style.KIND_LABEL = { quest = "Quest", dungeon = "Dungeon", crafted = "Crafting", vendor = "Vendor", world = "BoE / World" }
--- the narrow Source columns (Gear Plan, Slot Upgrades): a word that fits 54 px at 12 px
+-- the Source columns (Gear Plan, Slot Upgrades): a word that fits 60 px at 12 px
 Style.KIND_SHORT = { quest = "Quest", dungeon = "Dungeon", crafted = "Craft", vendor = "Vendor", world = "World" }
 Style.TAB = { C.tab, C.tabBorder, C.tabText, C.tabHover }
 Style.TAB_ON = { C.tabOn, C.tabOnBorder, C.tabOnText, C.tabOn }
@@ -50,7 +94,7 @@ function Style.Signed(x, suffix) return format("%+.1f", x) .. (suffix or "") end
 function Style.Pct(gain, base)
 	if not base or base <= 0.01 then return "" end
 	local pct = 100 * gain / base
-	if pct >= 99.95 or pct <= -99.95 then return format("%+.0f%%", pct) end -- fits the 44 px column
+	if pct >= 99.95 or pct <= -99.95 then return format("%+.0f%%", pct) end -- fits the 54 px column
 	return format("%+.1f%%", pct)
 end
 function Style.Thousands(x)
@@ -79,6 +123,12 @@ end
 function Style.Title(s) return ((s or ""):gsub("^%l", string.upper)) end
 
 -- widgets -------------------------------------------------------------------------------------------
+-- (re)anchor a region by one point: Place(region, point, x, y[, w])
+function Style.Place(r, point, x, y, w)
+	r:ClearAllPoints()
+	r:SetPoint(point, x, y)
+	if w then r:SetWidth(w) end
+end
 function Style.Fill(f, c, a, layer)
 	local t = f:CreateTexture(nil, layer or "BACKGROUND")
 	t:SetAllPoints()
@@ -287,6 +337,14 @@ function Style.ItemCell(parent, iconSize, nameW)
 	c.sub = Style.Text(c, 10, C.label)
 	c.sub:SetPoint("TOPLEFT", iconSize + 4, -14)
 	c.sub:SetWidth(nameW)
+	-- the name's width (0: icon only, the name and second line hidden)
+	function c:SetNameWidth(w)
+		self:SetSize(iconSize + 4 + w, iconSize)
+		self.name:SetWidth(math.max(w, 1))
+		self.sub:SetWidth(math.max(w, 1))
+		self.name:SetShown(w > 0)
+		self.sub:SetShown(w > 0)
+	end
 	-- faded and grey (a pick not available now); every Set undims
 	function c:SetDim(on)
 		local a = on and 0.5 or 1
@@ -359,6 +417,17 @@ function Style.List(parent, x, y, w, h, extent, init)
 	ScrollUtil.InitScrollBoxListWithScrollBar(box, bar, view)
 	box.bar = bar
 	return box
+end
+-- place and size a Style.List (w includes its scroll bar)
+function Style.PlaceList(box, x, y, w, h)
+	box:ClearAllPoints()
+	box:SetPoint("TOPLEFT", x, y)
+	box:SetSize(w - 10, h)
+end
+-- every row frame in view (the client's ScrollBox:ForEachFrame, once its view is made) -> fn(row, data)
+function Style.EachRow(box, fn)
+	if box.GetView and not box:GetView() then return end
+	if box.ForEachFrame then box:ForEachFrame(fn) end
 end
 function Style.SetList(box, list)
 	box:SetDataProvider(CreateDataProvider(list), ScrollBoxConstants and ScrollBoxConstants.RetainScrollPosition)

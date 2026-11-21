@@ -14,7 +14,7 @@ return {
 		local rows = U.rows(p.list)
 		T.eq(#rows, #ns.View.WeightRows(bands[i].w))
 		T.ok(rows[1].value.text:match("^%d"), rows[1].value.text)
-		T.eq(rows[1].bar.w, 120, "the largest weight fills the bar")
+		T.eq(rows[1].bar.w, p.list.w + 10 - 290, "the largest weight fills the bar (as wide as the list allows)")
 		T.ok(bands[i + 1], "the fixture's band has a next one")
 		U.button(p, ">"):Click()
 		T.ok(U.texts(p):find(string.format("Levels %d%%-%d", bands[i + 1].lo, bands[i + 1].upTo)))

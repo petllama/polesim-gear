@@ -90,6 +90,17 @@ local function releaseFrom(box, n)
 	end
 	box.frames = keep
 end
+function M:SetFont(file, size, flags) self.font, self.fontSize = file, size end
+function M:SetResizable(v) self.resizable = v end
+function M:SetResizeBounds(a, b, c, d) self.bounds = { a, b, c, d } end
+function M:StartSizing(point) self.sizing = point or "BOTTOMRIGHT" end
+function M:StopMovingOrSizing() self.sizing = nil end
+function M:SetNormalTexture(v) self.normalTexture = v end
+function M:SetHighlightTexture(v) self.highlightTexture = v end
+function M:SetPushedTexture(v) self.pushedTexture = v end
+-- ScrollBox: the frames in view with their data (the client's ScrollBoxListMixin:ForEachFrame)
+function M:GetView() return self.view end
+function M:ForEachFrame(fn) for _, f in ipairs(self.frames or {}) do fn(f, f.e or f.d) end end
 function M:SetDataProvider(dp)
 	releaseFrom(self, #(dp or {}))
 	self.provided = dp
@@ -171,6 +182,38 @@ function U.scroll(box, n)
 		end
 	end
 	return count
+end
+
+-- A FontString's drawn width, estimated for FRIZQT__ (the client's font), in em per character:
+-- narrow 0.33, r 0.45, wide (m w M W %) 0.95, other capitals 0.75, the rest (lower case, digits: all
+-- digits are one width) 0.66.
+-- Calibrated on the 0.2.0 screenshot: every cut text there ("Range...", "Main h...", "130...",
+-- "+30....", "Dunge...") is over its width by this estimate. Colour codes and atlases do not count.
+function U.textWidth(text, size)
+	local s = tostring(text or ""):gsub("|c%x%x%x%x%x%x%x%x", ""):gsub("|r", ""):gsub("|A.-|a", "")
+	local w = 0
+	for ch in s:gmatch(".") do
+		local e
+		if ch:match("[ilIj%.,:;'!|t f%(%)/%[%]]") then e = 0.33
+		elseif ch == "r" then e = 0.45
+		elseif ch:match("[mwMW%%]") then e = 0.95
+		elseif ch:match("%u") then e = 0.75
+		else e = 0.66 end
+		w = w + e
+	end
+	return w * (size or 12)
+end
+-- Every visible FontString under root with a set width whose text is wider than it:
+-- -> { "text (needs N, has W)", ... }
+function U.overflows(root)
+	local out = {}
+	U.walk(root, function(w)
+		if w.kind == "FontString" and w:IsVisible() and type(w.text) == "string" and w.text ~= "" and (w.w or 0) > 0 then
+			local need = U.textWidth(w.text, w.fontSize)
+			if need > w.w then out[#out + 1] = string.format("%q (needs %.0f, has %d)", w.text, need, w.w) end
+		end
+	end)
+	return out
 end
 
 function U.install()

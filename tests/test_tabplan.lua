@@ -9,7 +9,7 @@ return {
 		local p = ns.Window.Panel("plan")
 		T.ok(p:IsShown(), "the default tab")
 		local head = U.texts(p.header)
-		for _, h in ipairs({ "Priority", "Slot", "Current item", "Plan", "Gain", "Gain %", "Source" }) do T.ok(head:find(h, 1, true), h) end
+		for _, h in ipairs({ "#", "Slot", "Current item", "Plan", "Gain", "Gain %", "Source" }) do T.ok(head:find(h, 1, true), h) end
 		local rows = rowsOf(fx)
 		T.ok(#rows >= 10, "most slots have an upgrade at 20 with only a hat worn: " .. #rows)
 		local r1 = rows[1]
