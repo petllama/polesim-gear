@@ -72,8 +72,10 @@ local function call(codex, name, arg)
 	return fn(arg)
 end
 
--- One Codex source -> { kind = "quest"|"dungeon"|"crafted", ok, why, text, where, questId, needs } | nil
--- (dungeon: a drop or a container in a dungeon)
+-- One Codex source -> { kind = "quest"|"dungeon"|"crafted"|"vendor"|"world", ok, why, text, where,
+-- + the kind's grouping fields (quest: questId, title, level, zoneId, elite, needs; dungeon: instanceKey,
+-- npcName, boss, container, chance, levels; crafted: profession, skill, skillLine; vendor: npcId,
+-- npcName, cost, zoneId, spot) } | nil   (dungeon: a drop or a container in a dungeon)
 function Sources.View(src, codex, player, lim)
 	if src.type == "quest" then
 		local q = codex.Quest(src.quest)
@@ -121,6 +123,19 @@ function Sources.View(src, codex, player, lim)
 			kind = "crafted", ok = need <= lim, why = need > lim and ("skill " .. src.skill .. " (about level " .. need .. ")") or nil,
 			profession = src.profession, skill = src.skill, skillLine = src.skillLine,
 			text = "Crafted: " .. (src.profession or "a profession") .. (src.skill and (" " .. src.skill) or ""),
+		}
+	elseif src.type == "vendor" then
+		-- A vendor of the other side only is not one the character can buy from; "AH" and unknown are.
+		local npc = call(codex, "Npc", src.npc)
+		local fac = npc and npc.faction
+		if type(fac) == "string" and fac ~= "" and not fac:find(player.faction, 1, true) then return nil end
+		local sp = npc and type(npc.spawns) == "table" and npc.spawns[1] or nil
+		local zone = sp and call(codex, "Zone", sp.map)
+		return {
+			kind = "vendor", ok = true, npcId = src.npc, npcName = npc and npc.name or nil, cost = src.cost,
+			zoneId = sp and sp.map or nil, where = zone and zone.name or nil,
+			spot = sp and { map = sp.map, x = sp.x, y = sp.y } or nil,
+			text = "Vendor: " .. (npc and npc.name or "?"),
 		}
 	end
 	return nil

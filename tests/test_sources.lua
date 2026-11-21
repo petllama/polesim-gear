@@ -85,11 +85,12 @@ return {
 		}
 		T.eq(S.For(1, codex, player, 20), nil, "retired")
 		local v = S.For(2, codex, player, 20)
-		T.eq(#v, 3)
+		T.eq(#v, 4)
 		T.eq(v[1].kind, "quest"); T.ok(v[1].ok); T.eq(v[1].text, "Quest: Wanted (22), a choice"); T.eq(v[1].where, "Westfall")
 		T.eq(v[2].kind, "dungeon"); T.eq(v[2].text, "Drop: Boss (boss), 12.5%"); T.eq(v[2].where, "The Deadmines"); T.ok(v[2].ok)
 		T.eq(v[3].kind, "crafted"); T.ok(not v[3].ok); T.eq(v[3].why, "skill 150 (about level 30)")
 		T.eq(v[3].text, "Crafted: Tailoring 150")
+		T.eq(v[4].kind, "vendor"); T.eq(v[4].text, "Vendor: Mob")
 	end,
 	-- A container (Codex `object` source) inside a dungeon counts as a dungeon source, as on the website
 	-- (armory: in-instance containers); one in the open world or in a raid is not one of the kinds.
@@ -162,5 +163,24 @@ return {
 		T.eq(o.instanceKey, "DM"); T.eq(o.container, "Chest"); T.eq(o.chance, 3)
 		local c = S.View({ type = "craft", skill = 75, skillLine = 197, profession = "Tailoring" }, codex, player, 20)
 		T.eq(c.profession, "Tailoring"); T.eq(c.skill, 75); T.eq(c.skillLine, 197)
+	end,
+	vendors = function()
+		local S = T.addon(FILES).Sources
+		local NPCS = {
+			[1] = { name = "Huklah", faction = "H", spawns = { { map = 1411, x = 40.6, y = 67.9 } } },
+			[2] = { name = "Smith", faction = "A", spawns = { { map = 1429, x = 41, y = 65 } } },
+			[3] = { name = "Goblin", faction = "AH", spawns = { { map = 1434, x = 27, y = 77 } } },
+			[4] = { name = "Nobody" }, -- no faction known, no spawn
+		}
+		local codex = { Npc = function(id) return NPCS[id] end, Zone = function(id) return id == 1411 and { name = "Durotar" } or nil end }
+		local v = S.View({ type = "vendor", npc = 1, cost = 12345 }, codex, player, 20)
+		T.eq(v.kind, "vendor"); T.ok(v.ok); T.eq(v.npcId, 1); T.eq(v.npcName, "Huklah"); T.eq(v.cost, 12345)
+		T.eq(v.zoneId, 1411); T.eq(v.where, "Durotar"); T.eq(v.text, "Vendor: Huklah")
+		T.eq(v.spot.map, 1411); T.near(v.spot.x, 40.6)
+		T.eq(S.View({ type = "vendor", npc = 2 }, codex, player, 20), nil, "Alliance vendor: hidden for the Horde")
+		T.eq(S.View({ type = "vendor", npc = 3 }, codex, player, 20).kind, "vendor", "both sides")
+		local n = S.View({ type = "vendor", npc = 4 }, codex, player, 20)
+		T.eq(n.kind, "vendor", "faction unknown: shown"); T.eq(n.where, nil); T.eq(n.spot, nil)
+		T.eq(S.View({ type = "vendor", npc = 99 }, codex, player, 20).npcName, nil, "npc unknown: still a vendor")
 	end,
 }
