@@ -33,5 +33,6 @@ Wishlist.lua
 View.lua
 Groups.lua
 Waypoint.lua
+Style.lua
 BrowserUI.lua
 Minimap.lua
