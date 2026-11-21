@@ -103,4 +103,20 @@ return {
 		T.eq(PoleSimGearDB.window.point, "TOPLEFT"); T.eq(PoleSimGearDB.window.x, 100)
 		fx.done()
 	end,
+	header = function()
+		local fx = F.load({ worn = { [1] = { inst = { id = 1, name = "Hat", quality = 1 }, score = 1200.5 }, [5] = { inst = { id = 2, name = "Robe", quality = 2 }, score = 454.3 } } })
+		local ns, U = fx.ns, fx.U
+		T.eq(ns.Window.AheadText(0, 20), "Now"); T.eq(ns.Window.AheadText(1, 20), "+1 level (21)")
+		T.eq(ns.Window.AheadText(5, 58), "+5 levels (60)", "capped at 60")
+		local f = fx.open()
+		local text = U.texts(f)
+		T.ok(text:find("Level 20 Priest", 1, true), text); T.ok(text:find("Shadow (auto)", 1, true))
+		T.ok(text:find("1,654.8", 1, true), "gear score"); T.ok(text:find("Gear plan progress", 1, true))
+		T.ok(text:match("%d+ / 15 %(%d+%%%)"), "progress text")
+		local items = U.menu(f.header.ahead)
+		T.eq(#items, 6); T.eq(items[1].text, "Now"); T.ok(items[1].isSelected())
+		items[4].select()
+		T.eq(ns.Options.View().ahead, 3); T.ok(items[4].isSelected())
+		fx.done()
+	end,
 }

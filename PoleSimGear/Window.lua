@@ -246,6 +246,101 @@ function Win.SetAhead(a)
 	Win.Refresh()
 end
 
+function Win.AheadText(a, level)
+	if a == 0 then return "Now" end
+	return format("+%d level%s (%d)", a, a == 1 and "" or "s", math.min(60, level + a))
+end
+function Win.AheadList()
+	local ctx = ns.Context.Get()
+	local out = {}
+	for a = 0, ns.Options.AHEAD_MAX do out[#out + 1] = { value = a, text = Win.AheadText(a, ctx and ctx.level or 1) } end
+	return out
+end
+
+function Win.CreateHeader(f)
+	local h = {}
+	f.header = h
+	local c1 = S.Panel(f, 12, -52, 220, 62)
+	h.classIcon = c1:CreateTexture(nil, "ARTWORK")
+	h.classIcon:SetSize(44, 44)
+	h.classIcon:SetPoint("TOPLEFT", 8, -9)
+	h.classIcon:SetTexture("Interface\\TargetingFrame\\UI-Classes-Circles")
+	h.who = S.Text(c1, 15, C.white)
+	h.who:SetPoint("TOPLEFT", 60, -14)
+	h.spec = S.Text(c1, 13, C.sub)
+	h.spec:SetPoint("TOPLEFT", 60, -34)
+	local c2 = S.Panel(f, 240, -52, 112, 62)
+	local l2 = S.Text(c2, 11, C.label)
+	l2:SetPoint("TOP", 0, -6)
+	l2:SetText("Gear score")
+	h.score = S.Text(c2, 20, C.green)
+	h.score:SetPoint("TOP", 0, -26)
+	c2:EnableMouse(true)
+	c2:SetScript("OnEnter", function(self)
+		local ctx = ns.Context.Get()
+		if not ctx then return end
+		GameTooltip:SetOwner(self, "ANCHOR_BOTTOM")
+		GameTooltip:AddLine("Gear score", 1, 1, 1)
+		GameTooltip:AddLine(format("The sum of what you wear, in points of %s (weights of levels %d-%d).",
+			ns.DATA.statLabels[ctx.ref] or ctx.ref, ctx.lo, ctx.band.upTo), 0.8, 0.8, 0.8, true)
+		GameTooltip:Show()
+	end)
+	c2:SetScript("OnLeave", GameTooltip_Hide)
+	local c3 = S.Panel(f, 360, -52, 236, 62)
+	local l3 = S.Text(c3, 11, C.label)
+	l3:SetPoint("TOPLEFT", 8, -6)
+	l3:SetText("Gear plan progress")
+	h.track = CreateFrame("Frame", nil, c3)
+	h.track:SetPoint("TOPLEFT", 10, -30)
+	h.track:SetSize(150, 14)
+	S.Fill(h.track, C.barTrack)
+	S.Border(h.track, C.inner)
+	h.fill = h.track:CreateTexture(nil, "ARTWORK")
+	h.fill:SetPoint("TOPLEFT")
+	h.fill:SetHeight(14)
+	h.fill:SetColorTexture(C.barFill[1], C.barFill[2], C.barFill[3], 1)
+	h.progress = S.Text(c3, 12, C.white)
+	h.progress:SetPoint("TOPLEFT", 168, -31)
+	c3:EnableMouse(true)
+	c3:SetScript("OnEnter", function(self)
+		GameTooltip:SetOwner(self, "ANCHOR_BOTTOM")
+		GameTooltip:AddLine("Gear plan progress", 1, 1, 1)
+		GameTooltip:AddLine("A slot is done when you wear its plan item or nothing from the ticked sources is better now.", 0.8, 0.8, 0.8, true)
+		GameTooltip:Show()
+	end)
+	c3:SetScript("OnLeave", GameTooltip_Hide)
+	local c4 = S.Panel(f, 604, -52, 164, 62)
+	local l4 = S.Text(c4, 11, C.label)
+	l4:SetPoint("TOPLEFT", 8, -6)
+	l4:SetText("Look ahead")
+	h.ahead = S.Dropdown(c4, 146, 24, Win.AheadList, function(a) return ns.Options.View().ahead == a end, Win.SetAhead)
+	h.ahead:SetPoint("TOPLEFT", 8, -28)
+end
+
+function Win.UpdateHeader(f, ctx)
+	local h = f.header
+	if not ctx then
+		h.who:SetText(""); h.spec:SetText(""); h.score:SetText(""); h.progress:SetText(""); h.fill:Hide()
+		return
+	end
+	local className, file = UnitClass("player")
+	local tc = CLASS_ICON_TCOORDS and CLASS_ICON_TCOORDS[file or ""]
+	if tc then h.classIcon:SetTexCoord(tc[1], tc[2], tc[3], tc[4]) end
+	h.who:SetText(format("Level %d %s", ctx.level, className or ""))
+	h.spec:SetText(S.Title(ctx.spec) .. (ctx.specSource == "chosen" and "" or " (auto)"))
+	h.score:SetText(S.Thousands(ns.Browser.GearScore(ctx.worn)))
+	if state.model then
+		local done, total = ns.View.Progress(state.model, ctx.worn, Win.St())
+		h.fill:SetShown(done > 0)
+		h.fill:SetWidth(math.max(1, 150 * done / total))
+		h.progress:SetText(format("%d / %d (%d%%)", done, total, math.floor(100 * done / total + 0.5)))
+	else
+		h.fill:Hide()
+		h.progress:SetText(state.building and "scoring..." or "")
+	end
+	h.ahead:Update()
+end
+
 function Win.Toggle()
 	if not ns.Context.ClassKey() then return ns.Print("no weights for this class yet (Priest only for now)") end
 	if not frame then create() end
