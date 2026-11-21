@@ -219,21 +219,26 @@ return {
 		T.eq(updates, 1, "a redraw asks Bagnon to update its frames")
 		_G.BagBrother = nil
 	end,
-	-- Bagnon showing another character's bags (BagBrother Item:IsCached(): the owner is offline): its
-	-- items are not this character's, so no arrows there (and none left from the player's view).
-	bagnon_skips_cached_views = function()
+	-- Bagnon showing another character's bags (BagBrother: the frame's owner, Item:GetOwner(), is
+	-- offline): its items are not this character's, so no arrows there (and none left from the player's
+	-- view). The player's own bank or vault viewed away from the banker is cached too (Item:IsCached()),
+	-- but its owner is the player: those keep their arrows.
+	bagnon_skips_other_characters = function()
 		local Item = {}
 		function Item:Update(info) self.info = info end
 		_G.BagBrother = { Item = Item, Frames = { Update = function() end } }
 		local ns = live({ up = head(6) })
 		ns._frame.scripts.OnEvent(ns._frame, "ADDON_LOADED", "BagBrother")
-		local cached = false
-		local b = button({ IsCached = function() return cached end })
+		local owner = { offline = false }
+		local b = button({ GetOwner = function() return owner end, IsCached = function() return true end })
 		Item.Update(b, { hyperlink = "up" })
-		T.eq(arrow(b), true, "the player's own bags")
-		cached = true
+		T.eq(arrow(b), true, "the player's own bank, viewed away from the banker")
+		owner = { offline = true }
 		Item.Update(b, { hyperlink = "up" })
 		T.eq(arrow(b), false, "an alt's bags: no arrow")
+		b.GetOwner = function() error("no frame") end
+		Item.Update(b, { hyperlink = "up" })
+		T.eq(arrow(b), true, "an owner that cannot be read counts as the player's")
 		_G.BagBrother = nil
 	end,
 	-- Loot rolls: each GroupLootFrame<i> shows one rollID; its icon gets the arrow when shown.

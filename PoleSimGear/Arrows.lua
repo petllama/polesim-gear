@@ -124,20 +124,22 @@ Arrows.OnRedraw(function()
 end)
 
 -- Bagnon (BagBrother 12.1.12: Poncho classes, methods looked up at call time; ContainerItem:Update
--- calls Item:Update through Super, which sets self.info). A cached view (Item:IsCached(): the frame's
--- owner is offline, i.e. another character's bags; Frame:IsCached = GetOwner().offline) gets no arrows:
--- its items are not this character's.
-local function cachedView(item)
-	if type(item.IsCached) ~= "function" then return false end
-	local ok, cached = pcall(item.IsCached, item)
-	return ok and cached and true or false
+-- calls Item:Update through Super, which sets self.info). Another character's view gets no arrows: its
+-- items are not this character's. That is the owner's `offline` flag (Item:GetOwner() is the frame's
+-- owner, through Parented; core/api/owners.lua: offline = not the player and not the guild). Not
+-- Item:IsCached(): it is also true for the player's own bank and vault viewed away from the banker
+-- (frames/bank/bank.lua, frames/vault/vault.lua), whose items keep their arrows.
+local function otherCharacter(item)
+	if type(item.GetOwner) ~= "function" then return false end
+	local ok, owner = pcall(item.GetOwner, item)
+	return ok and type(owner) == "table" and owner.offline and true or false
 end
 local function hookBagnon()
 	local B = _G.BagBrother
 	local Item = type(B) == "table" and B.Item
 	if hooked.bagnon or not (type(Item) == "table" and type(Item.Update) == "function") then return end
 	hooksecurefunc(Item, "Update", function(self)
-		local link = not cachedView(self) and type(self.info) == "table" and self.info.hyperlink
+		local link = not otherCharacter(self) and type(self.info) == "table" and self.info.hyperlink
 		Arrows.Paint(self, link or nil)
 	end)
 	hooked.bagnon = true

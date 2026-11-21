@@ -43,8 +43,9 @@ For one item: `/run print(PoleSimGear.Arrows.Verdict(X))` (`true` = arrow).
 If Bagnon shows no arrows at all while the line above lists upgrades, report it with the output of
 the first `/run` line (Risk R6).
 
-6. Bagnon's character selector: view an alt's bags (a cached view): no arrows there (those items are
-   not this character's). Back to your own bags: arrows return.
+6. Bagnon's character selector: view an alt's bags: no arrows there (those items are not this
+   character's). Back to your own bags: arrows return. Your own bank viewed away from the banker
+   (Bagnon's bank button while not at the bank: a cached view of your own items) keeps its arrows.
 7. An error in one item's verdict no longer stops the other buttons: if BugSack/scriptErrors shows a
    PoleSim error, it appears once per item per session (not on every bag update); report it with the
    item.
