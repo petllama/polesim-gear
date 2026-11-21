@@ -101,7 +101,7 @@ local function listData()
 	local ctx = ns.Context.Get()
 	if ctx and ctx.level < 60 then
 		out[#out + 1] = { header = format("Coming up (levels %d-%d)", ctx.level + 1, math.min(60, ctx.level + ns.Browser.AHEAD)) }
-		local coming = ns.Browser.Rows(m.coming, state.filter)
+		local coming = ns.Browser.Rows(ns.Browser.Flat(m.coming), state.filter)
 		for i = 1, math.min(10, #coming) do out[#out + 1] = coming[i] end
 	end
 	if ns.Sources.lastError then

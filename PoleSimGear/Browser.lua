@@ -220,15 +220,19 @@ local function counts(rows)
 	return out
 end
 
--- -> { now = { [slotKey] = rows (trimmed) }, counts = { [slotKey] = counts before the trim }, coming = rows }
+-- -> { now = { [slotKey] = rows (trimmed) }, counts = { [slotKey] = counts before the trim },
+-- coming = { [slotKey] = rows with `at` (trimmed) }, level }. env.keep (optional): { [KeyOf] = true }
+-- items kept through both trims (picks, wishlist).
 function Browser.Build(env, yield)
+	local keep = env.keep
 	local now = Browser.Gains(Browser.Collect(env, env.level, 0, env.level, env.level, yield))
 	local n = {}
 	for key, rows in pairs(now) do
 		n[key] = counts(rows)
-		now[key] = Browser.Trim(rows, Browser.KEEP)
+		now[key] = Browser.Trim(rows, Browser.KEEP, keep)
 	end
 	local coming = {}
+	for _, def in ipairs(Browser.SLOTS) do coming[def.key] = {} end
 	local lim = env.level + (env.ahead or Browser.AHEAD)
 	local last = math.min(60, lim)
 	-- Under a worn two-hander a level L one-hander pairs with the best off hand available by L (and the
@@ -259,15 +263,29 @@ function Browser.Build(env, yield)
 		local cands, band = Browser.Collect(env, L, L, L, lim, yield)
 		local mh, pair = band.worn[16], nil
 		if mh and mh.inst and mh.inst.inv == 17 then pair = pairAt(L, band) end
-		for _, rows in pairs(Browser.Gains(cands, band, pair)) do
+		for key, rows in pairs(Browser.Gains(cands, band, pair)) do
+			local list = coming[key]
 			for _, r in ipairs(rows) do
 				r.at = L
-				coming[#coming + 1] = r
+				list[#list + 1] = r
 			end
 		end
 	end
-	table.sort(coming, byGain)
-	return { now = now, counts = n, coming = Browser.Trim(coming, Browser.KEEP) }
+	for key, list in pairs(coming) do
+		table.sort(list, byGain)
+		coming[key] = Browser.Trim(list, Browser.KEEP, keep)
+	end
+	return { now = now, counts = n, coming = coming, level = env.level }
+end
+
+-- { [slotKey] = rows } -> one list, biggest gain first (the old flat "coming up").
+function Browser.Flat(bySlot)
+	local out = {}
+	for _, def in ipairs(Browser.SLOTS) do
+		for _, r in ipairs(bySlot[def.key] or {}) do out[#out + 1] = r end
+	end
+	table.sort(out, byGain)
+	return out
 end
 
 -- How many upgrades a slot has under a source filter (before the model's trim).

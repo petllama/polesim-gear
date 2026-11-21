@@ -156,8 +156,9 @@ return {
 		T.eq(#best, 1); T.eq(best[1].c.id, 1); T.near(best[1].gain, 3)
 		T.eq(B.Best(m.now, "dungeon")[1].c.id, 4)
 		T.eq(#B.Best(m.now, "crafted"), 0)
-		T.eq(m.coming[1].c.id, 5); T.eq(m.coming[1].at, 22); T.near(m.coming[1].gain, 38, 1e-9, "int 20 x 2 - worn 2")
-		T.eq(#B.Rows(m.coming, "quest"), 0)
+		local flat = B.Flat(m.coming)
+		T.eq(flat[1].c.id, 5); T.eq(flat[1].at, 22); T.near(flat[1].gain, 38, 1e-9, "int 20 x 2 - worn 2")
+		T.eq(#B.Rows(flat, "quest"), 0)
 	end,
 	-- Coming up under a worn two-hander: a level 21 one-hander is paired with the best off hand available
 	-- by level 21 (here a level 10 one, from no "coming" level), as the website picks the pair from every
@@ -177,7 +178,7 @@ return {
 		local function coming(byInv)
 			e.items = { Get = function(id) return items[id] end, ByInv = function() return byInv end }
 			local by = {}
-			for _, r in ipairs(B.Build(e).coming) do by[r.c.id] = r end
+			for _, r in ipairs(B.Flat(B.Build(e).coming)) do by[r.c.id] = r end
 			return by
 		end
 		local by = coming({ [23] = { 31 }, [13] = { 32 } })
@@ -236,7 +237,7 @@ return {
 		local got
 		_G.C_Timer = { After = function(_, fn) fn() end }
 		B.Start(env(), function(model) got = model end)
-		T.eq(got.coming[1].c.id, 5)
+		T.eq(B.Flat(got.coming)[1].c.id, 5)
 	end,
 	-- Over frames: each frame resumes the build until its time budget is spent (debugprofilestop, ms),
 	-- then waits for the next frame; without the clock, one step per frame.
@@ -258,7 +259,7 @@ return {
 		T.eq(done, nil, "not all in the first frame")
 		T.eq(yields, 2, "two steps fit the budget")
 		while #frames > 0 do table.remove(frames, 1)() end
-		T.ok(done and done.coming[1], "finished on later frames")
+		T.ok(done and B.Flat(done.coming)[1], "finished on later frames")
 		_G.debugprofilestop = nil
 	end,
 	-- A build the window no longer wants (closed, scores changed): Cancel stops it before its next step
@@ -307,5 +308,20 @@ return {
 		for _, r in ipairs(t) do ids[#ids + 1] = r.c.id end
 		T.eq(table.concat(ids, ","), "1,2,5,7", "2 vendors, kept 5, the world one")
 		T.eq(B.KeyOf({ id = 7, bonus = 5 }), "7:5"); T.eq(B.KeyOf({ id = 9 }), "9:0")
+	end,
+	coming_per_slot = function()
+		local B = T.addon(FILES).Browser
+		local e = env()
+		local m = B.Build(e)
+		T.eq(m.level, 20)
+		T.eq(m.coming.head[1].c.id, 5); T.eq(m.coming.head[1].at, 22)
+		T.eq(#m.coming.neck, 0)
+		local flat = B.Flat(m.coming)
+		T.eq(flat[1].c.id, 5, "Flat: every slot's coming rows, biggest gain first")
+		B.KEEP = 0
+		e.keep = { ["5:0"] = true }
+		m = B.Build(e)
+		T.eq(m.coming.head[1].c.id, 5, "kept although KEEP is 0")
+		T.eq(#m.now.head, 0)
 	end,
 }
