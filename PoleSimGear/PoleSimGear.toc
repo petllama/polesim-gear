@@ -25,3 +25,4 @@ Rewards.lua
 Coexist.lua
 Sources.lua
 Route.lua
+Browser.lua
