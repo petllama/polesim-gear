@@ -62,6 +62,21 @@ return {
 		T.eq(calls.up, 2, "read again after scores changed")
 		T.eq(ns.Arrows.Verdict(nil), false)
 	end,
+	-- Stats from the shipped table (the client had none yet): the verdict is given, and the item is
+	-- waited for, so its data arriving redraws the arrows with the client's stats.
+	verdict_from_table_waits = function()
+		local W = require("wow")
+		local t = head(6); t.fromTable = true
+		local ns, calls = live({ ["item:7:0"] = t })
+		local n = 0
+		ns.Arrows.OnRedraw(function() n = n + 1 end)
+		T.eq(ns.Arrows.Verdict("item:7:0"), true)
+		ns._frame.scripts.OnEvent(ns._frame, "GET_ITEM_INFO_RECEIVED", 7, true)
+		W.flush()
+		T.eq(n, 1, "waited for item 7: one redraw")
+		ns.Arrows.Verdict("item:7:0")
+		T.eq(calls["item:7:0"], 2, "not kept: read again")
+	end,
 	verdict_pending_read_again = function()
 		local ns, calls = live({ wait = "pending" })
 		T.eq(ns.Arrows.Verdict("wait"), false)
@@ -332,6 +347,10 @@ return {
 		r1.arrow.shown = false
 		ns.Arrows.Redraw()
 		T.eq(arrow(r1), true, "a redraw repaints the shown rows")
+		buy.ScrollBox.init(b2, 1) -- the row scrolled to another auction, not an upgrade
+		T.eq(arrow(b2), false, "a reused row loses its arrow")
+		browse.ScrollBox.init(r1, 2)
+		T.eq(arrow(r1), false, "a reused browse row on a random-suffix item loses its arrow")
 		_G.AuctionHouseFrame, _G.ScrollUtil = nil, nil
 	end,
 }
