@@ -92,6 +92,10 @@ function Tooltip.Add(tooltip, link)
 			tooltip:AddLine(l[1], a[1], a[2], a[3], true)
 		end
 	end
+	local id = tonumber(link:match("item:(%d+)"))
+	if ns.Wishlist and id and ns.Wishlist.HasId(id) then
+		tooltip:AddLine("|A:auctionhouse-icon-favorite:12:12|a On your PoleSim wishlist", 1, 0.82, 0)
+	end
 	drawn[tooltip] = link
 end
 

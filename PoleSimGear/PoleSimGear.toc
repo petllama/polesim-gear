@@ -29,5 +29,6 @@ Sources.lua
 Route.lua
 Browser.lua
 Plan.lua
+Wishlist.lua
 BrowserUI.lua
 Minimap.lua

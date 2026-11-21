@@ -1,5 +1,6 @@
 local T = require("t")
-local FILES = { "Core.lua", "Options.lua", "Data/Weights.lua", "Data/Suffixes.lua", "Data/Items.lua", "Items.lua", "Score.lua", "Equip.lua", "Tooltip.lua" }
+local FILES = { "Core.lua", "Options.lua", "Data/Weights.lua", "Data/Suffixes.lua", "Data/Items.lua", "Items.lua", "Score.lua", "Equip.lua",
+	"Sources.lua", "Browser.lua", "Wishlist.lua", "Tooltip.lua" }
 local ctx = { cls = "priest", spec = "shadow", ref = "spShadow", lo = 30, band = { upTo = 39 }, level = 34,
 	w = { int = 0.5, spShadow = 1 } }
 local inst = { id = 1, inv = 1, stats = { int = 10, spShadow = 3 }, armor = 0, dps = 0, weapon = false, rl = 30 }
@@ -36,7 +37,7 @@ local function client()
 	for _, f in ipairs(FILES) do assert(loadfile("PoleSimGear/" .. f))("PoleSimGear", ns) end
 	ns.Context = { Get = function() return { cls = "priest", spec = "shadow", ref = "spShadow", lo = 30,
 		band = { upTo = 39 }, level = 34, w = { int = 0.5, spShadow = 1 }, worn = {} } end }
-	ns.Live = { Instance = function(link) if link == "cloth" then return USABLE end end }
+	ns.Live = { Instance = function(link) if link == "cloth" or link == "item:1:cloth" then return USABLE end end }
 	local function key(k) ns._frame.scripts.OnEvent(ns._frame, "MODIFIER_STATE_CHANGED", k, 1) end
 	local function show(t, link) t.link, t.kind, t.shown, t.lines = link, 0, true, {} post(t) end
 	return ns, GT, REF, show, key
@@ -264,6 +265,16 @@ return {
 		ns.Options.Set("tooltip", true)
 		ns.Tooltip.Add(GT, "cloth")
 		T.ok(#GT.lines > 0)
+		unclient()
+	end,
+	wishlist_star = function()
+		local ns, GT = client()
+		_G.PoleSimGearDB, _G.PoleSimGearCharDB = {}, { wish = { ["1:0"] = true } }
+		ns._frame.scripts.OnEvent(ns._frame, "ADDON_LOADED", "PoleSimGear")
+		GT.lines = {}
+		ns.Tooltip.Add(GT, "item:1:cloth") -- USABLE has id 1
+		local text = table.concat(GT.lines, "\n")
+		T.ok(text:find("On your PoleSim wishlist", 1, true), text)
 		unclient()
 	end,
 }
