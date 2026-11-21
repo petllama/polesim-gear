@@ -1,0 +1,11 @@
+## Interface: 16001
+## Title: PoleSim Gear
+## Notes: PoleSim's level-band gear weights: item scores, upgrade arrows, quest reward picks and an upgrade browser. Needs Polestar.
+## Author: petllama
+## Version: 0.1.0
+## X-License: GPL-3.0-only
+## Dependencies: Polestar
+## SavedVariables: PoleSimGearDB
+## SavedVariablesPerCharacter: PoleSimGearCharDB
+
+Core.lua
