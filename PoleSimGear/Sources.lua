@@ -57,6 +57,15 @@ function Sources.Needs(q, codex, completed)
 	return p and p.title or ("quest " .. any[1])
 end
 
+-- Whether a quest sends the character against hostile elites (an objective's Codex `elites` for the
+-- character's side): the "elite" tag. The Codex has no group flag; this is the closest it gives.
+function Sources.Elite(q, faction)
+	for _, o in ipairs(type(q.objectives) == "table" and q.objectives or {}) do
+		if type(o) == "table" and type(o.elites) == "table" and o.elites[faction] then return true end
+	end
+	return false
+end
+
 local function call(codex, name, arg)
 	local fn = codex[name]
 	if type(fn) ~= "function" or arg == nil then return nil end
@@ -73,6 +82,7 @@ function Sources.View(src, codex, player, lim)
 		local zone = call(codex, "Zone", q.zone)
 		return {
 			kind = "quest", ok = ok, why = why, questId = q.id, where = zone and zone.name or nil,
+			title = q.title, level = q.level, zoneId = q.zone, elite = Sources.Elite(q, player.faction),
 			text = "Quest: " .. (q.title or "?") .. (q.level and (" (" .. q.level .. ")") or "") .. (src.choice and ", a choice" or ""),
 			needs = ok and Sources.Needs(q, codex, player.completed) or nil,
 		}
@@ -86,6 +96,8 @@ function Sources.View(src, codex, player, lim)
 		if npc and npc.level and npc.level > lim + 5 then ok, why = false, "boss level " .. npc.level end
 		return {
 			kind = "dungeon", ok = ok, why = why, where = inst and inst.name or key,
+			instanceKey = key, npcName = npc and npc.name, boss = npc and npc.boss or false, chance = src.chance,
+			levels = inst and inst.levels,
 			text = "Drop: " .. (npc and npc.name or "?") .. ((npc and npc.boss) and " (boss)" or "")
 				.. (src.chance and string.format(", %g%%", src.chance) or ""),
 		}
@@ -99,6 +111,7 @@ function Sources.View(src, codex, player, lim)
 		if inst and inst.kind == "raid" then return nil end
 		return {
 			kind = "dungeon", ok = true, where = inst and inst.name or key,
+			instanceKey = key, container = obj.name, chance = src.chance, levels = inst and inst.levels,
 			text = "Container: " .. (obj.name or "?") .. (src.chance and string.format(", %g%%", src.chance) or ""),
 		}
 	elseif src.type == "craft" then
@@ -106,6 +119,7 @@ function Sources.View(src, codex, player, lim)
 		local need = math.floor((src.skill or 0) / 5)
 		return {
 			kind = "crafted", ok = need <= lim, why = need > lim and ("skill " .. src.skill .. " (about level " .. need .. ")") or nil,
+			profession = src.profession, skill = src.skill, skillLine = src.skillLine,
 			text = "Crafted: " .. (src.profession or "a profession") .. (src.skill and (" " .. src.skill) or ""),
 		}
 	end

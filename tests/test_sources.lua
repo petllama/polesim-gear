@@ -138,4 +138,29 @@ return {
 		T.eq(S.Needs(q({ preAny = { 700, 500 } }), codex, player.completed), nil)
 		T.eq(S.Needs(q({ preAny = { 700, 800 } }), codex, player.completed), "First 700")
 	end,
+	-- The fields the Sources tab groups and labels by.
+	grouping_fields = function()
+		local S = T.addon(FILES).Sources
+		local codex = {
+			Quest = function(id) return { id = id, title = "Wanted", level = 22, zone = 40,
+				objectives = { { type = "kill", elites = { H = { rank = 1, lvl = 24 } } } } } end,
+			Zone = function(id) return id == 40 and { name = "Westfall" } or nil end,
+			Npc = function(id) return { name = "Boss", level = 24, boss = true, instance = "DM" } end,
+			Object = function(id) return { id = id, name = "Chest", instance = "DM" } end,
+			Instance = function(key) return { name = "The Deadmines", kind = "dungeon", levels = { 10, 16, 21 } } end,
+		}
+		local v = S.View({ type = "quest", quest = 100 }, codex, player, 20)
+		T.eq(v.questId, 100); T.eq(v.title, "Wanted"); T.eq(v.level, 22); T.eq(v.zoneId, 40); T.eq(v.where, "Westfall")
+		T.eq(v.elite, true, "hostile elites at an objective for the Horde")
+		local a = S.View({ type = "quest", quest = 100 }, codex, { faction = "A", classBit = 16, raceBit = 1,
+			completed = player.completed }, 20)
+		T.eq(a.elite, false, "none for the Alliance")
+		local d = S.View({ type = "drop", npc = 7, chance = 12.5 }, codex, player, 20)
+		T.eq(d.instanceKey, "DM"); T.eq(d.npcName, "Boss"); T.eq(d.boss, true); T.eq(d.chance, 12.5)
+		T.eq(d.levels[2], 16)
+		local o = S.View({ type = "object", object = 5, chance = 3 }, codex, player, 20)
+		T.eq(o.instanceKey, "DM"); T.eq(o.container, "Chest"); T.eq(o.chance, 3)
+		local c = S.View({ type = "craft", skill = 75, skillLine = 197, profession = "Tailoring" }, codex, player, 20)
+		T.eq(c.profession, "Tailoring"); T.eq(c.skill, 75); T.eq(c.skillLine, 197)
+	end,
 }
