@@ -216,12 +216,14 @@ end
 
 -- Build over several frames (no stutter opening the window); done(model) at the end. Each frame
 -- resumes the build until FRAME_MS milliseconds are spent (debugprofilestop), then waits for the next
--- frame (one step per frame without the clock).
+-- frame (one step per frame without the clock). -> a handle; handle:Cancel() stops the build.
 Browser.FRAME_MS = 8
 function Browser.Start(env, done)
 	local co = coroutine.create(function() return Browser.Build(env, coroutine.yield) end)
 	local clock = type(debugprofilestop) == "function" and debugprofilestop or nil
+	local handle = { Cancel = function(self) self.cancelled = true end }
 	local function step()
+		if handle.cancelled then return end
 		local t0 = clock and clock()
 		while true do
 			local ok, res = coroutine.resume(co)
@@ -232,4 +234,5 @@ function Browser.Start(env, done)
 		C_Timer.After(0, step)
 	end
 	step()
+	return handle
 end

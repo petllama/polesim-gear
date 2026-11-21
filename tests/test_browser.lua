@@ -144,6 +144,20 @@ return {
 		T.ok(done and done.coming[1], "finished on later frames")
 		_G.debugprofilestop = nil
 	end,
+	-- A build the window no longer wants (closed, scores changed): Cancel stops it before its next step
+	-- and done is never called.
+	start_cancel = function()
+		local B = T.addon(FILES).Browser
+		local frames = {}
+		_G.C_Timer = { After = function(_, fn) frames[#frames + 1] = fn end }
+		local called, steps = false, 0
+		B.Build = function(_, yield) for _ = 1, 5 do steps = steps + 1 yield() end return {} end
+		local h = B.Start(env(), function() called = true end)
+		T.eq(steps, 1)
+		h:Cancel()
+		while #frames > 0 do table.remove(frames, 1)() end
+		T.eq(steps, 1, "no further step"); T.ok(not called)
+	end,
 	start_reports_errors = function()
 		local B = T.addon(FILES).Browser
 		local got, called
