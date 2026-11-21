@@ -50,7 +50,8 @@ With `X` set as above:
 ```
 
 Expected: the item ID, its suffix id for a random-suffix green (e.g. `12720` for some "of the Owl"),
-then one line per stat. A stat marked `TABLE` is an equip bonus the client did not report, filled
+then one line per stat. The suffix is read from the link's bonus-ID list (the count is the 13th
+field after `item:`); if an "of the ..." item prints `nil` there, report the printed link. A stat marked `TABLE` is an equip bonus the client did not report, filled
 from PoleSim's item table (the whole family, e.g. all spell damage, comes either from the client or
 from the table, never both). If equip effects are missing from `GetItemStats` (above), those stats
 should show `TABLE`; if the client reports them, nothing should say `TABLE`.
@@ -102,10 +103,14 @@ Expected on items a priest can wear (up to 5 levels above yours):
 - `Score x.x` and, on the right, `+y.y (+z%)` (green for a gain, red for a loss);
 - `Shadow, levels 30-39: points of Shadow spell damage` (your spec and band);
 - `requires level N` when the item is above your level; a note for rings/trinkets
-  (`against your weaker one`) and two-handers (`replaces main and off hand`);
+  (`against your weaker one`); a two-hander says `replaces main and off hand` only when you wear an
+  off hand and your main hand is not a two-hander (otherwise no note);
 - `Shift: how?`. Holding Shift (while the tooltip is shown) redraws it with one line per stat
   (`Intellect 10 x 0.5   5.00`; a stat filled from the item table ends in `(item table)`), then
-  `minus worn` and `gain`;
+  `minus worn` and `gain`. Shift is also Blizzard's compare key, so the comparison tooltips of what
+  you wear open beside it (they show no PoleSim lines). The clicked chat link (ItemRefTooltip) redraws
+  on Shift too. Not in combat: there Shift does nothing until you hover again; unit and spell
+  tooltips are never redrawn;
 - worn items say `equipped` on the right;
 - plate/mail/other-class items show nothing; the shopping comparison tooltips show nothing.
 - an item missing from PoleSim's item table (e.g. new on Forever) is judged by armor/weapon type only:
