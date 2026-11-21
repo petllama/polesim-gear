@@ -1,4 +1,11 @@
-# In-game checklist (one session, on a priest; section M on a mage) — PoleSim Gear 0.4.0
+# In-game checklist (one session, on a priest; section M on a mage) — PoleSim Gear 0.4.1
+
+**0.4.1 over 0.4.0:** two fixes to the auction house upgrades. Developer and placeholder items are no
+longer in the item data (QATest +1000 Spell Dmg Ring, which topped the list at +1200, the 72
+"[PH] ... Dawn" items and 29 more test, "(DNT)"/"(DND)"/"(OLD)" and monster items; the website dropped
+them too). Items with no required level now follow the same item-level rule as the Gear Plan's sources:
+above your level + the look ahead + 5 they are not upgrades yet (Stormrager, Wand of Biting Cold and
+Woestave no longer show at 21). Check: at level ~21 a scan's top rows are items of about your level.
 
 **0.4.0 over 0.3.7:** auction house upgrades. At the auction house a "PoleSim upgrades" button (right
 of the auction house's top-right corner) shows a panel docked to its right; **Scan for upgrades** runs
