@@ -1,4 +1,4 @@
--- Offline tests: luajit tests/run.lua [file-name-part]   (LuaJIT = Lua 5.1 + bit, like the client)
+-- Offline tests: luajit tests/run.lua [file-name-part]   (LuaJIT = Lua 5.1 + bit, like the client; plain lua5.1 works too)
 package.path = "./tests/?.lua;" .. package.path
 local T = require("t")
 local want = arg[1] or ""

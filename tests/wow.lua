@@ -2,6 +2,28 @@
 -- player. Pure modules are tested through their functions; client glue is checked in game.
 local W = { level = 20 }
 
+-- The client's `bit` (LuaBitOp): LuaJIT has it; plain lua5.1 uses an installed bit library, else this
+-- small stand-in (band/bor/lshift for the non-negative masks the addon uses).
+local function bitlib()
+	local ok, lib = pcall(require, "bit")
+	if ok then return lib end
+	local function op(a, b, f)
+		local r, p = 0, 1
+		a, b = a % 4294967296, b % 4294967296
+		while a > 0 or b > 0 do
+			if f(a % 2, b % 2) then r = r + p end
+			a, b, p = math.floor(a / 2), math.floor(b / 2), p * 2
+		end
+		return r
+	end
+	return {
+		band = function(a, b) return op(a, b, function(x, y) return x == 1 and y == 1 end) end,
+		bor = function(a, b) return op(a, b, function(x, y) return x == 1 or y == 1 end) end,
+		lshift = function(a, n) return (a * 2 ^ n) % 4294967296 end,
+	}
+end
+_G.bit = _G.bit or bitlib()
+
 local function frame()
 	local f = { events = {}, scripts = {} }
 	function f:RegisterEvent(e) self.events[e] = true end
