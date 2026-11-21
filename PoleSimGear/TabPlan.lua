@@ -34,6 +34,8 @@ local function make(row)
 	row.srcIcon = row:CreateTexture(nil, "ARTWORK")
 	row.srcIcon:SetSize(16, 16)
 	row.srcIcon:SetPoint("LEFT", COL.srcIcon, 0)
+	row.route = S.Dot(row, 8, C.blue) -- on the source icon's corner: an item on the Polestar route
+	row.route:SetPoint("CENTER", row.srcIcon, "TOPRIGHT", -1, -1)
 	row.kind = text(row, 12, C.white, COL.kind, 54)
 	row.choose = S.Button(row, "Choose", 40, 18, function()
 		local e = row.e
@@ -87,19 +89,20 @@ local function fill(row, e)
 		row.srcIcon:SetShown(k ~= nil)
 		local route = false
 		for _, s in ipairs(r.c.sources) do route = route or s.route ~= nil end
-		row.kind:SetText((k and S.KIND_LABEL[k] or "") .. (route and (" " .. S.Colour(C.blue) .. "(route)|r") or ""))
+		row.kind:SetText(k and S.KIND_SHORT[k] or "")
+		row.route:SetShown(route)
 		row.star:Show()
 		row.star:Set(ns.Wishlist.Has(r.c.inst))
 	elseif e.missing or entry.missing then
 		local m = e.missing or entry.missing
 		row.plan:Set(ns.View.Inst(m.id, m.bonus), S.Colour(C.orange) .. (e.why or "") .. "|r")
 		row.plan:SetDim(true)
-		row.delta:SetText(""); row.pct:SetText(""); row.srcIcon:Hide(); row.kind:SetText("")
+		row.delta:SetText(""); row.pct:SetText(""); row.srcIcon:Hide(); row.route:Hide(); row.kind:SetText("")
 		row.star:Show()
 		row.star:Set(ns.Wishlist.Has(ns.View.Inst(m.id, m.bonus)))
 	else
 		row.plan:Set(nil, S.Colour(C.label) .. "nothing better now|r")
-		row.delta:SetText(""); row.pct:SetText(""); row.srcIcon:Hide(); row.kind:SetText("")
+		row.delta:SetText(""); row.pct:SetText(""); row.srcIcon:Hide(); row.route:Hide(); row.kind:SetText("")
 		row.star:Hide()
 	end
 	row.choose:SetShown(def ~= nil and (e.entry ~= nil or e.row ~= nil))
@@ -119,7 +122,7 @@ local function emptyRow(row, msg)
 	S.RowBg(row, 1)
 	row.badge:Set(nil); row.slotText:SetText(""); row.cur:Set(nil); row.curScore:SetText("")
 	row.plan:Set(nil, ""); row.plan.name:SetText(S.Colour(C.label) .. msg .. "|r")
-	row.delta:SetText(""); row.pct:SetText(""); row.srcIcon:Hide(); row.kind:SetText("")
+	row.delta:SetText(""); row.pct:SetText(""); row.srcIcon:Hide(); row.route:Hide(); row.kind:SetText("")
 	row.star:Hide(); row.choose:Hide()
 end
 

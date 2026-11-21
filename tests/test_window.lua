@@ -131,6 +131,12 @@ return {
 		local text = U.texts(f)
 		T.ok(text:find("Level 20 Priest", 1, true), text); T.ok(text:find("Shadow (auto)", 1, true))
 		T.ok(text:find("1,654.8", 1, true), "gear score"); T.ok(text:find("Gear plan progress", 1, true))
+		-- 1 px gold frames around the addon icon and the class icon
+		local gold = ns.Style.C.gold
+		T.ok(f.iconFrame, "addon icon framed"); T.ok(f.header.classFrame, "class icon framed")
+		for _, fr in ipairs({ f.iconFrame, f.header.classFrame }) do
+			T.near(fr.border[1].color[1], gold[1]); T.near(fr.border[1].color[3], gold[3])
+		end
 		T.ok(text:match("%d+ / 15 %(%d+%%%)"), "progress text")
 		local items = U.menu(f.header.ahead)
 		T.eq(#items, 6); T.eq(items[1].text, "Now"); T.ok(items[1].isSelected())
@@ -169,6 +175,7 @@ return {
 		head.scripts.OnEnter(head)
 		T.eq(U.tip.inventory, 1, "the item's own tooltip")
 		T.eq(head.badge.shown, true, "the head has a plan (an upgrade exists at level 20)")
+		T.eq(head.badge.w, 10); T.eq(head.badge.h, 10); T.ok(head.badge.mask, "a round dot")
 		f.pencil:Click()
 		T.eq(ns.Options.View().tab, "weights")
 		fx.done()

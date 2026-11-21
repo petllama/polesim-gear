@@ -38,6 +38,8 @@ Style.KIND_ICON = {
 	world = "Interface\\Icons\\INV_Misc_Bag_10",
 }
 Style.KIND_LABEL = { quest = "Quest", dungeon = "Dungeon", crafted = "Crafting", vendor = "Vendor", world = "BoE / World" }
+-- the narrow Source columns (Gear Plan, Slot Upgrades): a word that fits 54 px at 12 px
+Style.KIND_SHORT = { quest = "Quest", dungeon = "Dungeon", crafted = "Craft", vendor = "Vendor", world = "World" }
 Style.TAB = { C.tab, C.tabBorder, C.tabText, C.tabHover }
 Style.TAB_ON = { C.tabOn, C.tabOnBorder, C.tabOnText, C.tabOn }
 Style.CLOSE = { C.close, C.closeBorder, C.white, C.closeHover }
@@ -99,6 +101,27 @@ function Style.Text(parent, size, c, layer)
 	t:SetTextColor(c[1], c[2], c[3])
 	t:SetJustifyH("LEFT")
 	t:SetWordWrap(false)
+	return t
+end
+-- A 1 px frame (colour c) just outside a texture: -> the frame (fr.border = its lines)
+function Style.Frame(parent, tex, c)
+	local fr = CreateFrame("Frame", nil, parent)
+	fr:SetPoint("TOPLEFT", tex, "TOPLEFT", -1, 1)
+	fr:SetPoint("BOTTOMRIGHT", tex, "BOTTOMRIGHT", 1, -1)
+	fr.border = Style.Border(fr, c)
+	return fr
+end
+-- A round dot (size px, a circle mask over a plain texture): dot:SetVertexColor colours it.
+Style.DOT_MASK = "Interface\\CHARACTERFRAME\\TempPortraitAlphaMask"
+function Style.Dot(parent, size, c)
+	local t = parent:CreateTexture(nil, "OVERLAY")
+	t:SetTexture("Interface\\Buttons\\WHITE8X8")
+	t:SetSize(size, size)
+	local m = parent:CreateMaskTexture()
+	m:SetTexture(Style.DOT_MASK, "CLAMPTOBLACKADDITIVE", "CLAMPTOBLACKADDITIVE")
+	m:SetAllPoints(t)
+	t:AddMaskTexture(m)
+	if c then t:SetVertexColor(c[1], c[2], c[3], 1) end
 	return t
 end
 function Style.Panel(parent, x, y, w, h, bg, border)

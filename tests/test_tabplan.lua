@@ -179,4 +179,21 @@ return {
 		T.eq(row.plan.name.alpha, 1); T.eq(row.plan.icon.shown, false); T.ok(row.plan.sub.text:find("nothing better", 1, true))
 		fx.done()
 	end,
+	kind_column = function()
+		local fx = F.load()
+		local ns, U = fx.ns, fx.U
+		fx.open()
+		local box = ns.Window.Panel("plan").list
+		local e = box.provided[1]
+		local s1 = e.entry.plan.c.sources[1]
+		local row = U.new("Button", box)
+		box.view.init(row, e)
+		T.eq(row.kind.text, ns.Style.KIND_SHORT[s1.kind], "a short word: the column is narrow")
+		T.eq(row.route.shown, false)
+		s1.route = 3
+		box.view.init(row, e)
+		T.eq(row.kind.text, ns.Style.KIND_SHORT[s1.kind], "no \"(route)\" text"); T.eq(row.route.shown, true, "a route marker on the icon")
+		T.eq(ns.Style.KIND_SHORT.world, "World"); T.eq(ns.Style.KIND_SHORT.dungeon, "Dungeon")
+		fx.done()
+	end,
 }
