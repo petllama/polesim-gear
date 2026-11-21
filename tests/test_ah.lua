@@ -269,6 +269,26 @@ return {
 		ns.Context.Get = function() local c = ns.Context.At(21) c.worn[16].score = 1000 return c end
 		T.eq(#ns.AH.Build({ ["4838:0:0"] = found["4838:0:0"] }, ns.Context.Get(), 0), 0)
 	end,
+	-- Under a worn two-hander, off hands are not listed one by one (each would ride on the best AH
+	-- one-hander and flood the list): only the best set's off hand, next to its one-hander.
+	under_staff_one_off_hand = function()
+		local ns = addon(21, { [16] = 1405 }) -- Foamspittle Staff
+		_G.C_AuctionHouse = stubAH({})
+		local found = {}
+		local function add(id, price) local r = result(id, price) found[id .. ":0:0"] = { itemKey = r.itemKey, minPrice = price, result = r } end
+		add(789, 4000) -- Stout Battlehammer (main hand)
+		add(4838, 1000) -- Orb of Power (held in off hand)
+		add(2879, 900) -- Antipodean Rod (held in off hand)
+		add(1172, 300) -- Grayson's Torch (held in off hand)
+		local rows = ns.AH.Build(found, ns.Context.Get(), 0)
+		local offs, mace = {}, nil
+		for _, r in ipairs(rows) do
+			if r.c.inst.inv == 23 or r.c.inst.inv == 14 or r.c.inst.inv == 22 then offs[#offs + 1] = r end
+			if r.c.id == 789 then mace = r end
+		end
+		T.eq(#offs, 1, "one off hand: the best set's")
+		T.ok(mace and mace.partner == offs[1], "next to its one-hander")
+	end,
 	-- Sort: Gain (default, biggest first), Value (gain per gold), Price (cheapest first).
 	sort_orders = function()
 		local ns = addon(20)

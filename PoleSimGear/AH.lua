@@ -202,7 +202,12 @@ function AH.Build(found, ctx, ahead, yield)
 		local under2h = worn16 and worn16.inst and worn16.inst.inv == 17
 		local inv = c.c.inst.inv
 		local gain, base, note, partner = c.cmp.gain, c.cmp.base, c.cmp.note, nil
-		if under2h and (inv == 13 or inv == 21 or OFF_INV[inv]) then
+		-- under a two-hander an off hand only counts as the best one-hander's partner: every other one
+		-- would ride on that one-hander's score (and flood the list with frills)
+		local skip = under2h and OFF_INV[inv] and c ~= best.oh
+		if skip then
+			gain = 0
+		elseif under2h and (inv == 13 or inv == 21 or OFF_INV[inv]) then
 			partner = (inv == 13 or inv == 21) and best.oh or best.mh
 			base = worn16.score
 			gain = c.c.score + (partner and partner.c.score or 0) - base

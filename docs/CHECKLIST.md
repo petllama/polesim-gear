@@ -1,4 +1,9 @@
-# In-game checklist (one session, on a priest; section M on a mage) — PoleSim Gear 0.4.1
+# In-game checklist (one session, on a priest; section M on a mage) — PoleSim Gear 0.4.2
+
+**0.4.2 over 0.4.1:** AH upgrades while you wear a two-hander: off hands are no longer listed one by one
+(each rode on the best one-hander's score and flooded the list); only the best one-hander + off hand set
+is shown, as its two rows ("with <item> (AH) over your two-hander"). One-handers still pair with that
+off hand. `/reload` is enough.
 
 **0.4.1 over 0.4.0:** two fixes to the auction house upgrades. Developer and placeholder items are no
 longer in the item data (QATest +1000 Spell Dmg Ring, which topped the list at +1200, the 72
