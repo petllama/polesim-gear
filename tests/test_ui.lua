@@ -50,4 +50,25 @@ return {
 		T.eq(#d, 4); T.eq(#box.children, 4, "released frames acquired again, one new")
 		T.eq(d[2].shown, true)
 	end,
+	-- U.scroll runs the initializer on every element through a window of n frames (as scrolling a
+	-- ScrollBox does): a long list makes only n frames
+	scroll_reuses_a_window = function()
+		require("wow").install()
+		local U = require("ui")
+		U.install()
+		local view = CreateScrollBoxListLinearView()
+		local seen = {}
+		view:SetElementInitializer("Button", function(row, d) seen[#seen + 1] = d row.d = d end)
+		view:SetElementResetter(function(row) row.d = nil end)
+		local box = CreateFrame("Frame", nil, UIParent)
+		ScrollUtil.InitScrollBoxListWithScrollBar(box, nil, view)
+		local data = {}
+		for i = 1, 25 do data[i] = i end
+		box:SetDataProvider(data)
+		T.eq(U.scroll(box, 10), 25)
+		T.eq(#seen, 25); T.eq(seen[25], 25)
+		T.eq(#box.children, 10, "one window of frames")
+		box:SetDataProvider({})
+		for _, f in ipairs(box.children) do T.eq(f.d, nil, "released") end
+	end,
 }

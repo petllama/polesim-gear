@@ -152,6 +152,24 @@ function U.rows(box)
 	end
 	return out
 end
+-- Scroll a list from top to bottom through a window of n frames (n visible rows): every element's
+-- initializer runs, frames leaving the view are released (resetter) and reused -> elements shown
+function U.scroll(box, n)
+	local data = box.provided or {}
+	releaseFrom(box, 0)
+	local count = 0
+	for first = 1, #data, n do
+		releaseFrom(box, 0)
+		for i = first, math.min(#data, first + n - 1) do
+			local row = table.remove(box.pool) or new("Button", box)
+			row:Show()
+			box.view.init(row, data[i])
+			box.frames[#box.frames + 1] = row
+			count = count + 1
+		end
+	end
+	return count
+end
 
 function U.install()
 	_G.CreateFrame = function(kind, name, parent, template) return new(kind, parent, name, template) end
