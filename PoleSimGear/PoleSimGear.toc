@@ -37,4 +37,5 @@ Style.lua
 Window.lua
 TabPlan.lua
 TabSlot.lua
+TabSources.lua
 Minimap.lua
