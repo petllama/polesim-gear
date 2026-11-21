@@ -17,4 +17,5 @@ Score.lua
 Bands.lua
 Spec.lua
 Equip.lua
+Live.lua
 Context.lua
