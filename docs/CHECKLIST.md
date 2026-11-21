@@ -1,4 +1,16 @@
-# In-game checklist (one session, on a priest; section M on a mage) — PoleSim Gear 0.3.7
+# In-game checklist (one session, on a priest; section M on a mage) — PoleSim Gear 0.4.0
+
+**0.4.0 over 0.3.7:** auction house upgrades. At the auction house a "PoleSim upgrades" button (right
+of the auction house's top-right corner) shows a panel docked to its right; **Scan for upgrades** runs
+a few browse searches (6 on a priest or mage: cloth; neck, rings, trinkets, off hands and cloaks; one per
+weapon type; usable, common to epic, up to your level + the look ahead), one at a time as the auction
+house allows (Cancel stops it), and lists the upgrades for sale: name with suffix, slot, "lvl N" for
+items above your level, gain, cheapest price and gain per gold, sorted by Gain, Value or Price. Weapons
+count as a set (under a staff, a one-hander with the best off hand for sale); rings and trinkets against
+the weaker one. Hover: the item's tooltip with PoleSim's lines; click: its listings in the auction house,
+cheapest first. Buying stays yours (nothing is bought). While the auction house is open, the Gear Plan
+shows "AH: <price>" on plan items for sale and the equipped strip's tooltip names a scanned item that
+beats the plan. Two new files: **restart the game** (a `/reload` does not load new files). Check: N1-N8.
 
 **0.3.7 over 0.3.6:** Bagnon bags get arrows and gains: Bagnon keeps its own copy of BagBrother's
 classes (`Bagnon.Item`), which is now hooked (0.3.6 and earlier only looked at `BagBrother.Item`, absent
@@ -583,6 +595,59 @@ a wand high up (wand DPS weighs a lot at low level); Intellect and Spirit weigh 
 shield or priest-only item anywhere; swords appear in Main hand. Report the first five rows (item,
 gain, source).
 
+## N. Auction house upgrades (0.4.0)
+
+At an auctioneer, on a priest (and once on a mage). Report the numbers and anything that reads wrong.
+
+**N1. Open the auction house.** A "PoleSim upgrades" button sits just right of the auction house's
+top-right corner, the panel below it (title, Scan for upgrades, "Gear you can wear up to level N",
+Gain / Value / Price, an empty list). Clicking the button hides the panel; close and reopen the auction
+house: it stays hidden; click again to show it. Report if it covers your bags or another window.
+
+**N2. Scan.** Click **Scan for upgrades**: it turns into Cancel and the line says "Scanning 1/6...",
+"2/6"... then "Scoring N results..." and "Done: N upgrades in M results" (", K not scored" for items
+PoleSim has no data for). Time it (about 6 searches, each a few pages). No error, no
+"too many requests" message. Run it a second time: same counts.
+
+```
+/run print(PoleSimGear.AH.Status(), #PoleSimGear.AH.Rows())
+```
+
+**N3. Rows.** Each row: icon, name in its quality colour (with "of the ..." when the auction has one),
+the slot below, "lvl N" in gold for an item above your level (set Look ahead to 2-3 in the window
+first), "any suffix" when the browse list gives one row for every suffix, the gain in green, the price
+in gold/silver/copper and the gain per gold. Nothing you wear, nothing worse than what you wear, no
+item another class needs. A star lights for wishlist items, "plan" in gold for your Gear Plan item.
+
+**N4. Sort.** Gain (biggest first), Value (most gain per gold first), Price (cheapest first): the list
+reorders at once.
+
+**N5. Hover.** The game's item tooltip (with the row's suffix), PoleSim's score lines, "Auction house:
+<price> (cheapest)", "Gain per gold", for a weapon under your staff "Weapon set with <off hand>", for an
+"any suffix" row which suffix scored it, and "Click: its listings in the auction house". Shift compares.
+
+**N6. Click and buy manually.** Click a row: the auction house shows that item's listings, cheapest
+first (the item buy view). Click another row while there: its listings replace them. Buy one yourself
+with Blizzard's Buyout button: it must work as usual (report any "blocked" or "interface action failed"
+message). Equip it: the row leaves the list. If a click says "the item's data is not loaded yet", click
+again.
+
+**N7. Gear Plan while the auction house is open.** `/psg`: a Gear Plan row whose item is for sale says
+"AH: <price>" in its second line; hover the equipped strip's slots: a slot where the scan found a bigger
+upgrade than the plan ends with "AH: <item> +N (<price>)". Close the auction house: both are gone.
+
+**N8. Cancel and closing.** Start a scan and click Cancel: "Cancelled (n/6 searched)" and what it had
+found is listed. Start another and close the auction house mid-scan: no error; reopen: the panel is
+empty ("Gear you can wear..."). Search for something yourself mid-scan: "Stopped: another search
+started".
+
+If the browse rows of "of the ..." items never show their suffix (every such row "any suffix"), paste
+this after a normal search for e.g. "of the Owl" and report the lines:
+
+```
+/run local r=C_AuctionHouse.GetBrowseResults() for i=1,math.min(8,#r) do local k=r[i].itemKey local n=C_AuctionHouse.GetItemKeyInfo(k) print(k.itemID,k.itemSuffix,k.itemLevel,n and n.itemName) end
+```
+
 ## Probe results (B1, fill in)
 
 | Question | Answer |
@@ -652,6 +717,14 @@ gain, source).
 | M2 | mage: Weights tab (Frost, mage specs only) | |
 | M3 | mage: tooltip (Frost spell damage; swords yes, maces no) | |
 | M4 | mage: Gear Plan sane (first five rows) | |
+| N1 | AH: button, panel, hide kept | |
+| N2 | AH: scan, progress, counts, time | |
+| N3 | AH: rows (suffix, slot, lvl N, gain, price, gain/g) | |
+| N4 | AH: sorts | |
+| N5 | AH: hover tooltip | |
+| N6 | AH: click -> listings; manual buy works | |
+| N7 | AH: Gear Plan "AH:" price and strip line | |
+| N8 | AH: cancel, close mid-scan, own search | |
 
 ## Known limits (tell me if they bother you)
 
@@ -682,3 +755,8 @@ gain, source).
   group-quest flag).
 - Columns say "Gain" (the mockup's "Δ" may not be in the game font).
 - The Look ahead dropdown uses Blizzard's dropdown art.
+- Auction house: the scan sees what the browse list shows (one row per item, its cheapest price); a
+  browse row that stands for every suffix is scored with its best suffix ("any suffix"). Under a staff a
+  one-hander is paired with the best off hand for sale (not with a Gear Plan item). After a scan the
+  auction house's own list shows the scan's last search. Prices are not kept after the auction house
+  closes.

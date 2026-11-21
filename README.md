@@ -1,6 +1,6 @@
 # PoleSim Gear
 
-Version 0.3.7. WoW: Forever addon: PoleSim's simulated, level-banded gear weights in game. Item scores with a
+Version 0.4.0. WoW: Forever addon: PoleSim's simulated, level-banded gear weights in game. Item scores with a
 "how?" breakdown, upgrade arrows, the best quest reward, and a gear planner window with where to get
 each upgrade. In testing.
 
@@ -50,6 +50,27 @@ upgrade, gold: your pick; hover a slot for the item and its gain), and the stat 
 - **Settings:** minimap button, tooltip score line, upgrade arrows, the quest reward mark, preferring upcoming guide quests, the look
   ahead a new character starts with, and Polestar's gear-score question.
 
+## Auction house upgrades
+
+At the auction house a **PoleSim upgrades** button sits just right of the auction house's top-right
+corner; it shows or hides the panel below it (kept between sessions). **Scan for upgrades** runs a few
+browse searches, one at a time and as fast as the auction house allows (a priest or mage: 6, cloth,
+neck/rings/trinkets/off hands and cloaks, then one per weapon type; usable items, common to epic, up to
+your level + the window's look ahead); **Cancel** stops it. Each item found is scored like the window
+(against what you wear, rings and trinkets against the weaker one, weapons as one set: under a staff a
+one-hander counts with the best off hand for sale) and listed when it is an upgrade: icon, name with its
+suffix, slot, **lvl N** in gold for an item above your level (scored with that level's weights), gain,
+the cheapest price, and gain per gold. Sort by **Gain**, **Value** (gain per gold) or **Price**. Hover a
+row for the game's tooltip with PoleSim's lines and the price; **click it to see its listings** in the
+auction house, cheapest first. Buying is yours: PoleSim Gear never bids or buys.
+
+While the auction house is open after a scan, the Gear Plan says **AH: <price>** on a plan item for
+sale, and an equipped slot's tooltip names a scanned item that beats the plan (**AH: <item> +N
+(<price>)**). Prices are for the session only: they go when the auction house closes. The auction
+house's own list shows the scan's last search afterwards (search again as usual). If the browse list
+gives one row for every suffix of an item ("... of the Owl", "of the Bear"), the row is scored with its
+best suffix and says "any suffix"; its listings show each one's suffix (with the upgrade arrow).
+
 ## Commands
 
 - `/psg`: open or close the window.
@@ -65,7 +86,9 @@ upgrade, gold: your pick; hover a slot for the item and its gain), and the stat 
 - Tests: `luajit tests/run.lua` and `lua5.1 tests/run.lua` (LuaJIT = Lua 5.1 + bit, as in the client).
 - Full load against the installed Polestar's real Codex (local only): `luajit tools/fullload.lua
   [level[:class[/spec]] ...]` (e.g. `18:mage/frost`; `TOP=5` prints the Gear Plan's first rows) opens
-  every tab, list and action and reports errors, build time and memory.
+  every tab, list and action and reports errors, build time and memory; its auction house pass runs a
+  scan against a fake browse server built from the shipped items and prints the top 5 by gain and by
+  value.
 - Install into the game: `tools/install.sh`. Package: `tools/package.sh`.
 - In-game checks: `docs/CHECKLIST.md`.
 
