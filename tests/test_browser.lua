@@ -324,4 +324,19 @@ return {
 		T.eq(m.coming.head[1].c.id, 5, "kept although KEEP is 0")
 		T.eq(#m.now.head, 0)
 	end,
+	slot_rows = function()
+		local B = T.addon(FILES).Browser
+		local function r(id, gain, kinds, at) return { c = { id = id, inst = { id = id }, kinds = kinds }, gain = gain, at = at } end
+		local m = { level = 20,
+			now = { head = { r(1, 3, { quest = true }), r(4, 1, { dungeon = true }) } },
+			coming = { head = { r(5, 38, { crafted = true }, 22), r(6, 2, { quest = true }, 21) } } }
+		local function ids(rows) local t = {} for _, x in ipairs(rows) do t[#t + 1] = x.c.id end return table.concat(t, ",") end
+		T.eq(ids(B.SlotRows(m, "head", 0)), "1,4", "now only")
+		T.eq(ids(B.SlotRows(m, "head", 1)), "1,6,4", "+1: level 21 rows")
+		T.eq(ids(B.SlotRows(m, "head", 5)), "5,1,6,4")
+		T.eq(ids(B.SlotRows(m, "head", 5, { quest = true })), "1,6", "only quest kinds")
+		T.eq(ids(B.SlotRows(m, "neck", 5)), "", "no rows")
+		T.ok(B.Pass(r(1, 1, { vendor = true, quest = true }), { quest = true }), "any enabled kind passes")
+		T.ok(not B.Pass(r(1, 1, { world = true }), { quest = true, world = false }))
+	end,
 }

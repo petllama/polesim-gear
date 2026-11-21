@@ -288,6 +288,31 @@ function Browser.Flat(bySlot)
 	return out
 end
 
+-- Whether a row passes a kinds filter ({ [kind] = true }; nil = every kind): any of its kinds on.
+function Browser.Pass(r, filters)
+	if not filters then return true end
+	for k in pairs(r.c.kinds) do
+		if filters[k] then return true end
+	end
+	return false
+end
+
+-- A slot's upgrade rows for the window: now, plus coming rows up to level + ahead (each scored with
+-- its own band, Build's rule), passing the filter; biggest gain first. A new list (the model's lists
+-- are not changed).
+function Browser.SlotRows(model, key, ahead, filters)
+	local out = {}
+	for _, r in ipairs(model.now[key] or {}) do
+		if Browser.Pass(r, filters) then out[#out + 1] = r end
+	end
+	local top = (model.level or 0) + (ahead or 0)
+	for _, r in ipairs((model.coming or {})[key] or {}) do
+		if r.at <= top and Browser.Pass(r, filters) then out[#out + 1] = r end
+	end
+	table.sort(out, byGain)
+	return out
+end
+
 -- How many upgrades a slot has under a source filter (before the model's trim).
 function Browser.Count(model, key, filter)
 	local c = model.counts and model.counts[key]
