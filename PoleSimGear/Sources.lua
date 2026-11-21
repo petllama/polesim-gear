@@ -13,14 +13,26 @@ function Sources.Codex()
 	return nil
 end
 
+-- Whether a race mask lets a race in. Codex masks are doubles above 32 bits (Skyborne: 2^32 Alliance,
+-- 2^33 Horde; whole-side masks 2^32 + 77, 2^33 + 178), past bit.band: tested with arithmetic, exact up
+-- to 2^53. A mask with no bit above 2^32 is a Classic mask, not a Skyborne lock; nil/0/-1 = anyone;
+-- raceBit nil (a race with no known bit) is never excluded.
+local HIGH = 2 ^ 32
+function Sources.RaceOk(mask, raceBit)
+	if type(mask) ~= "number" or mask <= 0 or not raceBit then return true end
+	if raceBit >= HIGH then
+		if mask < HIGH then return true end
+		return math.floor(mask / raceBit) % 2 == 1
+	end
+	return math.floor((mask % HIGH) / raceBit) % 2 == 1
+end
+
 -- q: a Codex quest; player: { faction "A"|"H", classBit, raceBit, completed(questId) }; lim: the highest
 -- level the list is for. -> ok, why
 function Sources.QuestOk(q, player, lim)
 	if q.faction and q.faction ~= player.faction then return false, "other faction" end
 	if (q.classes or 0) ~= 0 and bit.band(q.classes, player.classBit) == 0 then return false, "other classes" end
-	if (q.races or 0) ~= 0 and bit.band(q.races, 0xFF) ~= 0xFF and bit.band(q.races, player.raceBit) == 0 then
-		return false, "other races"
-	end
+	if not Sources.RaceOk(q.races, player.raceBit) then return false, "other races" end
 	if player.completed(q.id) then return false, "done" end
 	local from = q.minLevel or ((q.level or 0) - 5)
 	if from > lim then return false, "quest from level " .. from end

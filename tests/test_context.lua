@@ -34,6 +34,20 @@ return {
 		T.eq(ns.Context.At(60).band.upTo, 60)
 		T.eq(ns.Context.At(nil), nil)
 	end,
+	-- Skyborne (ChrRaces 95 High Order, Alliance; 96 Windshaper, Horde) has the Codex's race-mask bits
+	-- 2^32 / 2^33, not 1 << (id - 1) (which overflows); a race with no known bit gets none (never excluded).
+	race_bits = function()
+		local ns = T.addon(FILES)
+		_G.GetInventoryItemLink = function() return nil end
+		ns.char = { spec = "auto" }
+		local R = ns.Context.RaceBit
+		T.eq(R(5, "Scourge", "Horde"), 16); T.eq(R(1, "Human", "Alliance"), 1); T.eq(R(8, "Troll", "Horde"), 128)
+		T.eq(R(95, "Skyborne", "Alliance"), 2 ^ 32); T.eq(R(96, "Skyborne", "Horde"), 2 ^ 33)
+		T.eq(R(nil, "Skyborne", "Horde"), 2 ^ 33, "by the race file and faction")
+		T.eq(R(70, "Dracthyr", "Alliance"), nil, "unknown race: no bit")
+		_G.UnitRace = function() return "Windshaper Skyborne", "Skyborne", 96 end
+		T.eq(ns.Context.Get().raceBit, 2 ^ 33)
+	end,
 	-- GET_ITEM_INFO_RECEIVED fires for every item the client loads: only a worn item that was not
 	-- loaded yet scores again.
 	item_info_for_pending_items_only = function()

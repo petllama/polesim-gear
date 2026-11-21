@@ -59,6 +59,20 @@ tab; each step's goals with `t == "turnin"` give quest -> step. It is rebuilt wh
    and worn gear (macro import), the same item has the same score and the same best suffix.
 10. Equip an upgrade from the list while the window is open: the list scores again by itself.
 
+## Skyborne
+
+Skyborne's race bits in quest and item race masks are 2^32 (High Order, Alliance, ChrRaces 95) and
+2^33 (Windshaper, Horde, 96), as Polestar's Codex stores them (the whole-side masks are 2^32 + 77
+and 2^33 + 178). The addon tests them with arithmetic, not `bit.band` (32 bits). On a Skyborne:
+
+```
+/run local c=PoleSimGear.Context.Get() print(c.raceBit, PoleSimGear.Sources.RaceOk(2^33+178, c.raceBit))
+```
+
+Expected: `4294967296 false` (High Order) or `8589934592 true` (Windshaper). The window then lists
+your side's quest rewards and the Skyborne-only quests' rewards. A mask with no bit above 2^32 (a
+Classic mask) never locks Skyborne out; a race with no known bit is never excluded (Polestar's rule).
+
 ## Time and memory
 
 The build's total time when done in one go (this one hitches once, on purpose):

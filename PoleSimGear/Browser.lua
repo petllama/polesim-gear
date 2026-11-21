@@ -32,7 +32,7 @@ function Browser.Candidate(id, env, lim, w, role)
 	local it = env.items.Get(id)
 	if not it or it.rl > lim then return nil end
 	if not ns.Equip.CanUse(it, env.cls, math.max(env.level, it.rl)) then return nil end
-	if (it.rm or 0) ~= 0 and bit.band(it.rm, env.player.raceBit) == 0 then return nil end
+	if not ns.Sources.RaceOk(it.rm, env.player.raceBit) then return nil end
 	local srcs = ns.Sources.For(id, env.codex, env.player, lim)
 	if not srcs then return nil end
 	local ok, kinds = {}, {}

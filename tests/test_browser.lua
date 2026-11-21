@@ -53,6 +53,29 @@ return {
 		T.eq(one.sources[1].route, 7); T.eq(one.sources[1].needs, "First Steps")
 		T.ok(cands.head[2].kinds.dungeon)
 	end,
+	-- Item race masks use the same check: a Skyborne-only item (2^33) for a Windshaper, not for Undead.
+	collect_item_race_masks = function()
+		local B = T.addon(FILES).Browser
+		local e = env()
+		local saved = ITEMS[1]
+		ITEMS[1] = rec(1, 1, 5, 10, { rm = 2 ^ 33 })
+		local function ids()
+			local out = {}
+			for _, c in ipairs(B.Collect(e, 20, 0, 20, 20).head) do out[#out + 1] = c.id end
+			return table.concat(out, ",")
+		end
+		local ok, err = pcall(function()
+			T.eq(ids(), "4", "Undead: not a Skyborne item")
+			e.player.raceBit = 2 ^ 33
+			T.eq(ids(), "1,4", "Windshaper Skyborne")
+			ITEMS[1].rm = 2 ^ 33 + 178
+			T.eq(ids(), "1,4", "a Horde-side mask with the Skyborne bit")
+			e.player.raceBit = 16
+			T.eq(ids(), "1,4", "Undead too")
+		end)
+		ITEMS[1] = saved
+		assert(ok, err)
+	end,
 	-- With the real item index's Rl, items outside the level window are never decoded; scores are not kept.
 	collect_decodes_only_the_window = function()
 		local ns = T.addon(FILES)

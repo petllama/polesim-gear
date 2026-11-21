@@ -76,6 +76,17 @@ function Context.RetrySpec(cls)
 	end)
 end
 
+-- A race's bit in the Codex's race masks (numbers, not 32-bit ints): Era races 1 << (ChrRaces id - 1);
+-- Skyborne 2^32 (High Order, Alliance, id 95) and 2^33 (Windshaper, Horde, id 96), as Polestar reads
+-- them (QuestDB raceHigh). nil for a race with no known bit: a mask never excludes it (Polestar's rule).
+local SKYBORNE = { [95] = 2 ^ 32, [96] = 2 ^ 33, Alliance = 2 ^ 32, Horde = 2 ^ 33 }
+function Context.RaceBit(raceID, raceFile, faction)
+	if raceID and raceID >= 1 and raceID <= 8 then return 2 ^ (raceID - 1) end
+	if raceID and SKYBORNE[raceID] then return SKYBORNE[raceID] end
+	if raceFile == "Skyborne" and faction then return SKYBORNE[faction] end
+	return nil
+end
+
 -- -> { cls, spec, specSource, level, band, lo, ref, w, worn, faction, classBit, raceBit } | nil (no weights)
 function Context.Get()
 	if current then return current end
@@ -90,11 +101,12 @@ function Context.Get()
 	local key, source = spec[1], spec[2]
 	local band, lo, sd = ns.Bands.For(cls, key, level)
 	if not band then none = true return nil end
-	local _, _, raceID = UnitRace("player")
+	local _, raceFile, raceID = UnitRace("player")
+	local factionName = UnitFactionGroup("player")
 	current = {
 		cls = cls, spec = key, specSource = source, level = level, band = band, lo = lo, ref = sd.ref, w = band.w,
-		faction = ({ Alliance = "A", Horde = "H" })[UnitFactionGroup("player") or ""],
-		classBit = ns.DATA.proficiency[cls].bit, raceBit = raceID and bit.lshift(1, raceID - 1) or 0,
+		faction = ({ Alliance = "A", Horde = "H" })[factionName or ""],
+		classBit = ns.DATA.proficiency[cls].bit, raceBit = Context.RaceBit(raceID, raceFile, factionName),
 	}
 	current.worn = Context.WornAt(cls, band)
 	return current

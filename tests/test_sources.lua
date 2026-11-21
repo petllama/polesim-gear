@@ -26,10 +26,40 @@ return {
 	end,
 	-- The Codex's race masks carry bits above 32 (Elwynn quests: 4294967373 = 2^32 + 0x4D): the client's
 	-- bit library works on the low 32 bits, so an Alliance-races quest is still other races for Undead.
-	quest_races_high_bits = function()
+	quest_races_high_bits = function() -- (Era races still correct)
 		local S = T.addon(FILES).Sources
 		T.eq(select(2, S.QuestOk(q({ races = 4294967373 }), player, 20)), "other races")
 		T.ok(S.QuestOk(q({ races = 4294967373 }), { faction = "A", classBit = 16, raceBit = 1, completed = player.completed }, 20))
+	end,
+	-- Codex race masks are doubles: Era races in the low bits, Skyborne at 2^32 (Alliance) / 2^33 (Horde).
+	-- A mask with no bit above 2^32 is a Classic mask, not a Skyborne lock; a race with no bit (nil)
+	-- is never excluded.
+	race_ok = function()
+		local S = T.addon(FILES).Sources
+		local A_SIDE, H_SIDE = 2 ^ 32 + 77, 2 ^ 33 + 178 -- the whole-side masks of 3,467 quests
+		local SKY_A, SKY_H = 2 ^ 32, 2 ^ 33
+		T.ok(S.RaceOk(A_SIDE, SKY_A)); T.ok(not S.RaceOk(A_SIDE, SKY_H))
+		T.ok(S.RaceOk(H_SIDE, SKY_H)); T.ok(not S.RaceOk(H_SIDE, SKY_A))
+		T.ok(S.RaceOk(SKY_A, SKY_A), "Skyborne-only (Alliance)"); T.ok(not S.RaceOk(SKY_A, 1), "not for Humans")
+		T.ok(S.RaceOk(SKY_H, SKY_H)); T.ok(not S.RaceOk(SKY_H, 16))
+		T.ok(S.RaceOk(SKY_A + SKY_H, SKY_H), "both Skyborne"); T.ok(not S.RaceOk(SKY_A + SKY_H, 2))
+		T.ok(S.RaceOk(77, SKY_A), "a Classic mask does not lock Skyborne out")
+		T.ok(S.RaceOk(16, SKY_H))
+		T.ok(S.RaceOk(A_SIDE, 1)); T.ok(S.RaceOk(A_SIDE, 64)); T.ok(not S.RaceOk(A_SIDE, 16))
+		T.ok(S.RaceOk(H_SIDE, 16)); T.ok(not S.RaceOk(H_SIDE, 8))
+		T.ok(S.RaceOk(5, 4)); T.ok(not S.RaceOk(5, 2)); T.ok(S.RaceOk(255, 128))
+		T.ok(S.RaceOk(0, 1)); T.ok(S.RaceOk(nil, 1)); T.ok(S.RaceOk(-1, SKY_A), "-1: every race")
+		T.ok(S.RaceOk(1, nil), "no known bit: never excluded")
+	end,
+	quest_races_skyborne = function()
+		local S = T.addon(FILES).Sources
+		local skyA = { faction = "A", classBit = 16, raceBit = 2 ^ 32, completed = player.completed }
+		local skyH = { faction = "H", classBit = 16, raceBit = 2 ^ 33, completed = player.completed }
+		T.ok(S.QuestOk(q({ races = 4294967373 }), skyA, 20), "Alliance side mask")
+		T.ok(S.QuestOk(q({ races = 8589934770 }), skyH, 20), "Horde side mask")
+		T.ok(S.QuestOk(q({ races = 2 ^ 33 }), skyH, 20), "Skyborne-only")
+		T.eq(select(2, S.QuestOk(q({ races = 2 ^ 33 }), player, 20)), "other races", "Undead: Skyborne-only quest")
+		T.eq(select(2, S.QuestOk(q({ races = 4294967373 }), skyH, 20)), "other races")
 	end,
 	views = function()
 		local S = T.addon(FILES).Sources
