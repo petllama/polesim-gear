@@ -13,3 +13,4 @@ Data\Weights.lua
 Data\Suffixes.lua
 Data\Items.lua
 Items.lua
+Score.lua

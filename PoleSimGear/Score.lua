@@ -1,0 +1,62 @@
+-- Scoring, a port of forever/web/armory.py (score, score_parts, suffix_stats, instance, best_suffix):
+-- score = sum of an item's stats x the band's weights, in points of the spec's reference stat.
+-- The website and the addon must give the same number for the same item, spec and level
+-- (tests/test_parity.lua checks it against armory.py's own output).
+local ADDON, ns = ...
+local Score = {}
+ns.Score = Score
+
+Score.TWO_HAND, Score.ONE_HAND, Score.MAIN_HAND_ONLY, Score.OFF_HAND_ONLY = 17, 13, 21, 22
+Score.SHIELD, Score.HELD, Score.RELIC = 14, 23, 28
+local ONE_HAND, OFF_HAND_ONLY = 13, 22
+
+-- Item stat keys that feed several weight keys (armory.EXPAND): Forever's hit/crit count for melee
+-- and spells, its attack power for melee and ranged.
+local EXPAND = { hit = { "hit", "spellHit" }, crit = { "crit", "spellCrit" }, mhit = { "hit" }, mcrit = { "crit" },
+	spDmg = { "sp" }, ap = { "ap", "rap" } }
+Score.EXPAND = EXPAND
+
+local function sortedKeys(t)
+	local out = {}
+	for k in pairs(t) do out[#out + 1] = k end
+	table.sort(out)
+	return out
+end
+Score.SortedKeys = sortedKeys
+
+local function round(x, n)
+	local m = 10 ^ n
+	return math.floor(x * m + 0.5) / m
+end
+Score.Round = round
+
+function Score.StatScore(stats, w, cls)
+	local total = 0
+	for _, k in ipairs(sortedKeys(stats)) do
+		local v = stats[k]
+		if k == "apFeral" then
+			if cls == "druid" then total = total + v * (w.ap or 0) end
+		else
+			for _, wk in ipairs(EXPAND[k] or { k }) do total = total + v * (w[wk] or 0) end
+		end
+	end
+	return total
+end
+
+-- role: "mh" (main hand or two-hander), "oh" (off-hand weapon: half its DPS), "ranged" (wands, bows:
+-- rdps), else "gear".
+function Score.Score(inst, w, cls, role)
+	if not inst then return 0 end
+	local s = Score.StatScore(inst.stats, w, cls) + (inst.armor or 0) * (w.armor or 0)
+	local dps = inst.dps or 0
+	if dps ~= 0 and inst.weapon then
+		if role == "mh" then
+			s = s + dps * (w.dps or 0)
+		elseif role == "oh" and (inst.inv == ONE_HAND or inst.inv == OFF_HAND_ONLY) then
+			s = s + 0.5 * dps * (w.dps or 0)
+		elseif role == "ranged" then
+			s = s + dps * (w.rdps or 0)
+		end
+	end
+	return s
+end
