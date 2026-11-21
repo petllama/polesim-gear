@@ -76,3 +76,78 @@ function Browser.Collect(env, at, rlFrom, rlTo, lim, yield)
 	end
 	return cands, band
 end
+
+local function byGain(a, b)
+	if a.gain ~= b.gain then return a.gain > b.gain end
+	return a.c.id < b.c.id
+end
+Browser.ByGain = byGain
+
+-- worn: the same item with the same suffix (armory._same)
+local function same(a, b) return a and b and a.id == b.id and (a.bonus or 0) == (b.bonus or 0) end
+
+-- cands (Collect), band ({ worn }) -> { [slotKey] = { { c, gain, note, slot }, ... } } with gain > 0, best first.
+function Browser.Gains(cands, band)
+	local worn = band.worn
+	local function at(slot)
+		local e = worn[slot]
+		return e and e.score or 0, e and e.inst
+	end
+	local mhS, mh = at(16)
+	local ohS, oh = at(17)
+	local mh2h = mh and mh.inv == 17
+	local best1h
+	for _, c in ipairs(cands.mainhand or {}) do
+		if c.inst.inv ~= 17 then best1h = c break end
+	end
+	local bestOh = (cands.offhand or {})[1]
+	local out = {}
+	for _, def in ipairs(Browser.SLOTS) do
+		local rows = {}
+		for _, c in ipairs(cands[def.key] or {}) do
+			local gain, note
+			if def.key == "finger" or def.key == "trinket" then
+				local sa, ia = at(def.slot)
+				local sb, ib = at(def.slot + 1)
+				if not (same(ia, c.inst) or same(ib, c.inst)) then
+					-- unique-equipped and worn with another suffix: it can only replace that one
+					if c.inst.unique and ia and ia.id == c.id then
+						gain, note = c.score - sa, "unique: replaces the one you wear"
+					elseif c.inst.unique and ib and ib.id == c.id then
+						gain, note = c.score - sb, "unique: replaces the one you wear"
+					else
+						gain = c.score - math.min(sa, sb)
+					end
+				end
+			elseif def.key == "mainhand" then
+				if not same(mh, c.inst) then
+					if c.inst.inv == 17 then
+						gain = c.score - mhS - (mh2h and 0 or ohS)
+						note = (oh and not mh2h) and "replaces your main and off hand" or nil
+					elseif mh2h then
+						gain = c.score + (bestOh and bestOh.score or 0) - mhS
+						note = bestOh and ("with " .. bestOh.inst.name .. " in the off hand") or "leaves the off hand empty"
+					else
+						gain = c.score - mhS
+					end
+				end
+			elseif def.key == "offhand" then
+				if not same(oh, c.inst) then
+					if mh2h then
+						gain = c.score + (best1h and best1h.score or 0) - mhS
+						note = best1h and ("with " .. best1h.inst.name .. " in the main hand") or "needs a one-hander"
+					else
+						gain = c.score - ohS
+					end
+				end
+			else
+				local s, i = at(def.slot)
+				if not same(i, c.inst) then gain = c.score - s end
+			end
+			if gain and gain > 1e-6 then rows[#rows + 1] = { c = c, gain = gain, note = note, slot = def } end
+		end
+		table.sort(rows, byGain)
+		out[def.key] = rows
+	end
+	return out
+end
