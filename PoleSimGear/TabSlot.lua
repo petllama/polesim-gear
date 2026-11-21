@@ -63,8 +63,76 @@ function Tab.Refresh(p)
 end
 function Tab.Release(p) S.SetList(p.list, {}) end
 
--- 5.2 / 5.3
-function Tab.List(rows) return rows end
-function Tab.Init(row, d) end
+local function make(row)
+	row.made = true
+	row.star = S.Star(row, function()
+		if row.d and row.d.c then ns.Wishlist.Toggle(row.d.c.inst) end
+	end)
+	row.star:SetPoint("LEFT", 4, 0)
+	row.item = S.ItemCell(row, 22, 250)
+	row.item:SetPoint("LEFT", 24, 0)
+	row.level = S.Text(row, 11, C.dim)
+	row.level:SetPoint("LEFT", 300, 0)
+	row.level:SetWidth(40)
+	row.delta = S.Text(row, 12, C.green)
+	row.delta:SetPoint("LEFT", 350, 0)
+	row.delta:SetWidth(50)
+	row.delta:SetJustifyH("RIGHT")
+	row.pct = S.Text(row, 12, C.green)
+	row.pct:SetPoint("LEFT", 404, 0)
+	row.pct:SetWidth(46)
+	row.pct:SetJustifyH("RIGHT")
+	row.srcIcon = row:CreateTexture(nil, "ARTWORK")
+	row.srcIcon:SetSize(16, 16)
+	row.srcIcon:SetPoint("LEFT", 460, 0)
+	row.kind = S.Text(row, 12, C.white)
+	row.kind:SetPoint("LEFT", 478, 0)
+	row.kind:SetWidth(60)
+	row.action = S.Button(row, "", 72, 18, function() ns.Window.PlanAction(row.d) end, S.ACTION)
+	row.action:SetPoint("LEFT", 540, 0)
+	row:SetScript("OnEnter", function(self)
+		S.Hover(self, true)
+		if self.d and self.d.c then ns.Window.RowTooltip(self, self.d, "Set as plan: make it this slot's plan item.") end
+	end)
+	row:SetScript("OnLeave", function(self) S.Hover(self, false) GameTooltip_Hide() end)
+	row:SetScript("OnClick", function(self) if self.d and self.d.showAll then ns.Window.ShowAll(ns.Window.state.slot) end end)
+end
+
+function Tab.Init(row, d)
+	if not row.made then make(row) end
+	row.d = d
+	S.RowBg(row, d.index)
+	local header = d.empty or d.header
+	row.star:SetShown(not header)
+	row.action:SetShown(not header)
+	row.srcIcon:SetShown(not header)
+	if header then
+		row.item:Set(nil, "")
+		row.item.name:SetText(S.Colour(d.showAll and C.blue or C.label) .. header .. "|r")
+		row.level:SetText(""); row.delta:SetText(""); row.pct:SetText(""); row.kind:SetText("")
+		return
+	end
+	local s = d.c.sources[1]
+	local sub = s and s.text or ""
+	if s and s.route then sub = sub .. " " .. S.Colour(C.blue) .. "(route)|r" end
+	if s and s.needs then sub = sub .. " " .. S.Colour(C.orange) .. "needs: " .. s.needs .. " first|r" end
+	row.item:Set(d.c.inst, sub)
+	row.level:SetText("lvl " .. (d.at or d.c.rl or 0))
+	row.delta:SetText(S.Signed(d.gain))
+	local ctx = ns.Context.Get()
+	local w = ctx and ns.Browser.WornFor(d.slot, ctx.worn)
+	row.pct:SetText(S.Pct(d.gain, w and w.score))
+	row.srcIcon:SetTexture(s and S.KIND_ICON[s.kind])
+	row.kind:SetText(s and S.KIND_SHORT[s.kind] or "")
+	row.star:Set(ns.Wishlist.Has(d.c.inst))
+	ns.Window.PlanLabel(row.action, d, d.index == 1)
+end
+
+function Tab.List(rows)
+	local out = {}
+	for i, r in ipairs(rows) do out[i] = { c = r.c, gain = r.gain, at = r.at, note = r.note, slot = r.slot, index = i } end
+	if #out == 0 then out[1] = { empty = "No upgrade for this slot from the ticked sources." } end
+	return out
+end
 
 ns.Window.RegisterTab("slot", { create = Tab.Create, refresh = Tab.Refresh, release = Tab.Release })

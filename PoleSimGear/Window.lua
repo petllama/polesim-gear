@@ -534,8 +534,24 @@ function Win.RowTooltip(owner, r, hint, extra)
 	GameTooltip:Show()
 end
 
+-- The "Set as plan" button of an upgrade row d ({ c, slot }) in Slot Upgrades and Sources: its label
+-- (the pick's own row says "Your pick", the suggestion "Suggested" when first) and its click.
+function Win.PlanLabel(btn, d, first)
+	local ctx = ns.Context.Get()
+	local pick = ctx and ns.Plan.Get(ctx.spec, d.slot.key)
+	if pick and pick == ns.Browser.KeyOf(d.c.inst) then
+		btn.label:SetText(S.Colour(C.pick) .. "Your pick|r")
+		btn.tip = "Click: back to the suggestion"
+	elseif not pick and first then
+		btn.label:SetText("Suggested")
+		btn.tip = "The best upgrade: the plan unless you pick another"
+	else
+		btn.label:SetText("Set as plan")
+		btn.tip = nil
+	end
+end
 -- Set an upgrade row d ({ c, slot }) as the slot's plan, or back to the suggestion when it already is
--- (Gear Plan's wishlist rows; Slot Upgrades and Sources use it from Task 5.2).
+-- (Gear Plan's wishlist rows, Slot Upgrades, Sources).
 function Win.PlanAction(d)
 	local ctx = ns.Context.Get()
 	if not (d and d.c and ctx) then return end
