@@ -124,6 +124,8 @@ return {
 		n = 0
 		while #W.timers > 0 and n < 100 do W.flush() n = n + 1 end
 		T.ok(provided[#provided].header ~= "Scoring every upgrade...", provided[#provided].header)
+		local last = provided[#provided].header
+		T.ok(last:find("could not be scored (error reported)", 1, true), last)
 		_G.Polestar = nil
 	end,
 	-- Closing the window forgets the route map too (Route.Reset): reopening reads the active guide again.

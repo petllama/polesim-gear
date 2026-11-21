@@ -308,6 +308,7 @@ function UI.ShowAll(key)
 		ended = true
 		if state.allBuilding ~= handle then return end
 		state.allBuilding = nil -- "Show all (N)" again: the error went to the client's handler
+		state.allWhy = "could not be scored (error reported)"
 		UI.Refresh()
 	end)
 	if not ended then state.allBuilding = handle end
