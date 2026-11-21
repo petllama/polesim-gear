@@ -71,7 +71,7 @@ return {
 		local tr = { [13] = { inst = ring(5, 300, 2, false, 12), score = 2 } }
 		c = E.Compare(ring(5, 301, 3, false, 12), w, "priest", tr, false)
 		T.ok(not c.equipped); T.eq(c.slot, 14); T.near(c.gain, 3)
-		end,
+	end,
 	nil_instance = function()
 		T.eq(T.addon(FILES).Equip.Compare(nil, {}, "priest", {}, false), nil)
 	end,
