@@ -38,8 +38,16 @@ function Equip.Compare(inst, w, cls, worn, canDw)
 		local s = S.Score(inst, w, cls, "gear")
 		local sa, ea = at(a)
 		local sb, eb = at(b)
-		if (ea and ea.inst.id == inst.id) or (eb and eb.inst.id == inst.id) then
-			return { score = s, gain = 0, base = s, slot = a, equipped = true }
+		if same(ea and ea.inst, inst) then return { score = s, gain = 0, base = s, slot = a, equipped = true } end
+		if same(eb and eb.inst, inst) then return { score = s, gain = 0, base = s, slot = b, equipped = true } end
+		-- unique-equipped and worn with another suffix: it can only replace that one
+		if inst.unique then
+			for _, k in ipairs({ a, b }) do
+				local sk, ek = at(k)
+				if ek and ek.inst.id == inst.id then
+					return { score = s, gain = s - sk, base = sk, slot = k, note = "unique: replaces the one you wear" }
+				end
+			end
 		end
 		local weak, base = a, sa
 		if sb < sa then weak, base = b, sb end

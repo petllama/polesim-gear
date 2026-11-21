@@ -48,4 +48,28 @@ return {
 		c = E.Compare(item(16, 7, 3), w, "priest", worn, false)
 		T.near(c.gain, 3); T.eq(c.base, 0)
 	end,
+	-- A ring/trinket worn with another suffix: not "equipped"; against the weaker one, or (unique)
+	-- against the slot that holds it.
+	ring_suffixes = function()
+		local E = T.addon(FILES).Equip
+		local w = { int = 1 }
+		local function ring(id, bonus, int, unique, inv)
+			return { id = id, bonus = bonus, inv = inv or 11, unique = unique, stats = { int = int }, armor = 0, dps = 0 }
+		end
+		local worn = { [11] = { inst = ring(2, 100, 8), score = 8 }, [12] = { inst = ring(3, 200, 4), score = 4 } }
+		local c = E.Compare(ring(2, 101, 9), w, "priest", worn, false)
+		T.ok(not c.equipped, "another suffix is not the worn one"); T.eq(c.slot, 12); T.near(c.gain, 5)
+		c = E.Compare(ring(3, 200, 4), w, "priest", worn, false)
+		T.ok(c.equipped); T.eq(c.slot, 12)
+		c = E.Compare(ring(2, nil, 6), w, "priest", worn, false)
+		T.ok(not c.equipped); T.eq(c.slot, 12); T.near(c.gain, 2)
+		worn[11].inst.unique = true
+		c = E.Compare(ring(2, 101, 9, true), w, "priest", worn, false)
+		T.ok(not c.equipped); T.eq(c.slot, 11); T.near(c.gain, 1); T.near(c.base, 8)
+		c = E.Compare(ring(2, 102, 7, true), w, "priest", worn, false)
+		T.eq(c.slot, 11); T.near(c.gain, -1)
+		local tr = { [13] = { inst = ring(5, 300, 2, false, 12), score = 2 } }
+		c = E.Compare(ring(5, 301, 3, false, 12), w, "priest", tr, false)
+		T.ok(not c.equipped); T.eq(c.slot, 14); T.near(c.gain, 3)
+		end,
 }
