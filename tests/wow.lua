@@ -42,7 +42,16 @@ function W.install()
 	_G.CreateFrame = function() return frame() end
 	W.timers = {}
 	_G.C_Timer = { After = function(_, fn) W.timers[#W.timers + 1] = fn end }
-	_G.hooksecurefunc = function() end
+	-- As the client's: the hook runs after the original, on a table's method or a global function.
+	_G.hooksecurefunc = function(t, name, fn)
+		if type(t) == "string" then t, name, fn = _G, t, name end
+		local orig = t[name]
+		t[name] = function(...)
+			local r = { orig(...) }
+			fn(...)
+			return unpack(r)
+		end
+	end
 	_G.SlashCmdList = {}
 	_G.UnitLevel = function() return W.level end
 	_G.UnitClass = function() return "Priest", "PRIEST", 5 end

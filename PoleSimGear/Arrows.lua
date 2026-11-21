@@ -75,3 +75,60 @@ ns.RegisterEvent("GET_ITEM_INFO_RECEIVED", function(itemID)
 		schedule()
 	end
 end)
+
+-- The client's bags (Blizzard_UIPanels_Game Mainline ContainerFrame.lua, which Forever loads): each
+-- frame of ContainerFrameContainer.ContainerFrames and ContainerFrameCombinedBags carries
+-- ContainerFrameMixin's functions (XML mixin), and Update -> AddItemsForRefresh calls self:UpdateItems()
+-- on every bag change: hook UpdateItems on the frames.
+local hooked = {}
+local function paintContainer(frame)
+	for _, button in frame:EnumerateValidItems() do
+		local link = C_Container.GetContainerItemLink(button:GetBagID(), button:GetID())
+		Arrows.Mark(button, link and Arrows.Verdict(link))
+	end
+end
+local function containerFrames()
+	local out = {}
+	local list = ContainerFrameContainer and ContainerFrameContainer.ContainerFrames
+	for _, f in ipairs(type(list) == "table" and list or {}) do out[#out + 1] = f end
+	if ContainerFrameCombinedBags then out[#out + 1] = ContainerFrameCombinedBags end
+	return out
+end
+local function hookBags()
+	for _, f in ipairs(containerFrames()) do
+		if not hooked[f] and type(f.UpdateItems) == "function" then
+			hooksecurefunc(f, "UpdateItems", paintContainer)
+			hooked[f] = true
+		end
+	end
+end
+Arrows.OnRedraw(function()
+	for _, f in ipairs(containerFrames()) do
+		if hooked[f] and f:IsShown() then paintContainer(f) end
+	end
+end)
+
+-- Bagnon (BagBrother 12.1.12: Poncho classes, methods looked up at call time; ContainerItem:Update
+-- calls Item:Update through Super, which sets self.info).
+local function hookBagnon()
+	local B = _G.BagBrother
+	local Item = type(B) == "table" and B.Item
+	if hooked.bagnon or not (type(Item) == "table" and type(Item.Update) == "function") then return end
+	hooksecurefunc(Item, "Update", function(self)
+		local link = type(self.info) == "table" and self.info.hyperlink
+		Arrows.Mark(self, link and Arrows.Verdict(link))
+	end)
+	hooked.bagnon = true
+end
+Arrows.OnRedraw(function()
+	local B = _G.BagBrother
+	if hooked.bagnon and type(B.Frames) == "table" and B.Frames.Update then B.Frames:Update() end
+end)
+
+ns.RegisterEvent("PLAYER_LOGIN", function()
+	hookBags()
+	hookBagnon()
+end)
+ns.RegisterEvent("ADDON_LOADED", function(name)
+	if name == "BagBrother" or name == "Bagnon" then hookBagnon() end
+end)

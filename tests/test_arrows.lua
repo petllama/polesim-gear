@@ -19,6 +19,23 @@ local function live(items)
 	return ns, calls
 end
 
+-- An item button the arrows can mark: -> button (button.arrow: our texture once made)
+local function button(fields)
+	local b = fields or {}
+	b.CreateTexture = function(self)
+		local t = { shown = false }
+		function t:SetAtlas() end
+		function t:SetPoint() end
+		function t:SetShown(v) self.shown = v end
+		self.arrow = t
+		return t
+	end
+	b.IsShown = b.IsShown or function() return true end
+	return b
+end
+local function arrow(b) return b.arrow ~= nil and b.arrow.shown end
+local function login(ns) ns._frame.scripts.OnEvent(ns._frame, "PLAYER_LOGIN") end
+
 return {
 	is_upgrade = function()
 		local A = T.addon(FILES).Arrows
@@ -95,5 +112,59 @@ return {
 		info(7); info(7)
 		W.flush()
 		T.eq(n, 2, "item 7 was pending: one redraw")
+	end,
+	-- The client's bags: every container frame's UpdateItems paints its buttons (no scan of our own).
+	client_bags = function()
+		local links = { [0] = { [1] = "up", [2] = "down" }, [1] = { [1] = "up" } }
+		_G.C_Container = { GetContainerItemLink = function(bag, slot) return links[bag] and links[bag][slot] end }
+		local function container(bag, n)
+			local f = { items = {}, shown = true }
+			for i = 1, n do
+				f.items[i] = button({ GetBagID = function() return bag end, GetID = function() return i end })
+			end
+			function f:EnumerateValidItems() return ipairs(self.items) end
+			function f:UpdateItems() end
+			function f:IsShown() return self.shown end
+			return f
+		end
+		local bag0, bag1, combined = container(0, 3), container(1, 1), container(0, 2)
+		_G.ContainerFrameContainer = { ContainerFrames = { bag0, bag1 } }
+		_G.ContainerFrameCombinedBags = combined
+		local ns = live({ up = head(6), down = head(4) })
+		login(ns)
+		bag0:UpdateItems(); combined:UpdateItems()
+		T.eq(arrow(bag0.items[1]), true); T.eq(arrow(bag0.items[2]), false); T.eq(arrow(bag0.items[3]), false)
+		T.eq(arrow(combined.items[1]), true)
+		T.eq(bag1.items[1].arrow, nil, "not painted before its update")
+		links[0][1] = "down" -- the item moved: the next update clears the arrow
+		bag0:UpdateItems()
+		T.eq(arrow(bag0.items[1]), false)
+		bag1.shown = false
+		links[0][1] = "up"
+		ns.Arrows.Redraw()
+		T.eq(arrow(bag0.items[1]), true, "a redraw paints the shown bags")
+		T.eq(bag1.items[1].arrow, nil, "and not the hidden ones")
+		_G.ContainerFrameContainer, _G.ContainerFrameCombinedBags, _G.C_Container = nil, nil, nil
+	end,
+	-- Bagnon (BagBrother): Item:Update(info) sets self.info; our hook paints after it.
+	bagnon = function()
+		local updates = 0
+		local Item = {}
+		function Item:Update(info) self.info = info end
+		_G.BagBrother = { Item = Item, Frames = { Update = function() updates = updates + 1 end } }
+		local ns = live({ up = head(6), down = head(4) })
+		ns._frame.scripts.OnEvent(ns._frame, "ADDON_LOADED", "BagBrother")
+		local b = button()
+		Item.Update(b, { hyperlink = "up" })
+		T.eq(arrow(b), true)
+		Item.Update(b, { hyperlink = "down" })
+		T.eq(arrow(b), false)
+		Item.Update(b, {})
+		T.eq(arrow(b), false, "empty slot")
+		login(ns) -- hooked once only
+		Item.Update(b, { hyperlink = "up" })
+		ns.Arrows.Redraw()
+		T.eq(updates, 1, "a redraw asks Bagnon to update its frames")
+		_G.BagBrother = nil
 	end,
 }
