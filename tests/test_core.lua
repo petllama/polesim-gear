@@ -35,6 +35,19 @@ return {
 		ns.ReportOnce("b", "other")
 		T.eq(#errors, 2); T.eq(errors[1], "boom"); T.eq(errors[2], "other")
 	end,
+	-- A session with many different bad items keeps at most REPORT_KEYS keys: after that new keys are
+	-- neither stored nor reported (a bounded table, a bounded flood); known keys stay silent.
+	report_once_capped = function()
+		local ns = T.addon({ "Core.lua" })
+		local errors = {}
+		_G.geterrorhandler = function() return function(e) errors[#errors + 1] = e end end
+		for i = 1, ns.REPORT_KEYS + 10 do ns.ReportOnce("k" .. i, "e" .. i) end
+		T.eq(ns.REPORT_KEYS, 50)
+		T.eq(#errors, 50, "new keys past the cap are not reported")
+		ns.ReportOnce("k1", "again")
+		T.eq(#errors, 50)
+		T.eq(ns._reportedCount(), 50, "and not stored")
+	end,
 	equipment_changes_coalesce = function()
 		local ns = T.addon({ "Core.lua" })
 		local W = require("wow")

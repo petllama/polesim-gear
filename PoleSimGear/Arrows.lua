@@ -61,12 +61,13 @@ function Arrows.Paint(button, link, verdict)
 	ns.ReportOnce(link or "?", err)
 end
 
+-- A redraw error is reported once per session for each distinct message (ns.ReportOnce).
 local redraws = {}
 function Arrows.OnRedraw(fn) redraws[#redraws + 1] = fn end
 function Arrows.Redraw()
 	for _, fn in ipairs(redraws) do
 		local ok, err = pcall(fn)
-		if not ok then geterrorhandler()(err) end
+		if not ok then ns.ReportOnce("redraw:" .. tostring(err), err) end
 	end
 end
 

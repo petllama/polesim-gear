@@ -197,6 +197,8 @@ return {
 		ns.Arrows.Redraw()
 		T.ok(ran); T.eq(#errors, 1)
 		T.ok(tostring(errors[1]):find("redraw boom", 1, true))
+		ns.Arrows.Redraw()
+		T.eq(#errors, 1, "the same redraw error is reported once per session")
 	end,
 	-- Bagnon (BagBrother): Item:Update(info) sets self.info; our hook paints after it.
 	bagnon = function()

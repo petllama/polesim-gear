@@ -19,13 +19,18 @@ function ns.Fire(msg, ...)
 end
 
 -- Report an error to the client's handler once per key (an item link) per session: glue that runs on
--- every redraw must not flood the handler with the same error.
-local reported = {}
+-- every redraw must not flood the handler with the same error. At most REPORT_KEYS keys are kept: past
+-- that, errors under new keys are neither stored nor reported for the rest of the session (the first
+-- ones are what a report needs; the table stays bounded however many bad items a session sees).
+ns.REPORT_KEYS = 50
+local reported, reportedCount = {}, 0
 function ns.ReportOnce(key, err)
-	if reported[key] then return end
+	if reported[key] or reportedCount >= ns.REPORT_KEYS then return end
 	reported[key] = true
+	reportedCount = reportedCount + 1
 	geterrorhandler()(err)
 end
+function ns._reportedCount() return reportedCount end
 
 local frame = CreateFrame("Frame")
 ns._frame = frame

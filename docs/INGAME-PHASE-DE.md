@@ -47,7 +47,8 @@ the first `/run` line (Risk R6).
    character's). Back to your own bags: arrows return. Your own bank viewed away from the banker
    (Bagnon's bank button while not at the bank: a cached view of your own items) keeps its arrows.
 7. An error in one item's verdict no longer stops the other buttons: if BugSack/scriptErrors shows a
-   PoleSim error, it appears once per item per session (not on every bag update); report it with the
+   PoleSim error, it appears once per item per session (not on every bag update; at most 50 distinct
+   errors per session, then new ones are dropped); report it with the
    item.
 
 ## Task 31: merchant and loot rolls
