@@ -33,6 +33,7 @@ Wishlist.lua
 View.lua
 Groups.lua
 Waypoint.lua
+AH.lua
 Style.lua
 Window.lua
 TabPlan.lua
