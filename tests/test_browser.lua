@@ -19,6 +19,7 @@ local SOURCES = {
 local QUESTS = { [100] = { id = 100, title = "Wanted", level = 12, pre = { 600 } }, [500] = { id = 500, title = "Done", level = 12 },
 	[300] = { id = 300, title = "Alliance", level = 12, faction = "A" }, [600] = { id = 600, title = "First Steps", level = 10 } }
 
+local W1, W2 = { int = 1 }, { int = 2 }
 local function env()
 	return {
 		cls = "priest", level = 20, ahead = 5,
@@ -35,7 +36,7 @@ local function env()
 		player = { faction = "H", classBit = 16, raceBit = 16, completed = function(q) return q == 500 end },
 		routeStep = function(q) return q == 100 and 7 or nil end,
 		at = function(level)
-			return { w = { int = level > 20 and 2 or 1 }, style = "any", worn = { [1] = { inst = { id = 99, inv = 1 }, score = 2 } } }
+			return { w = level > 20 and W2 or W1, style = "any", worn = { [1] = { inst = { id = 99, inv = 1 }, score = 2 } } }
 		end,
 	}
 end
@@ -51,6 +52,18 @@ return {
 		T.near(one.score, 5); T.ok(one.kinds.quest)
 		T.eq(one.sources[1].route, 7); T.eq(one.sources[1].needs, "First Steps")
 		T.ok(cands.head[2].kinds.dungeon)
+	end,
+	-- With the real item index's Rl, items outside the level window are never decoded; scores are not kept.
+	collect_decodes_only_the_window = function()
+		local ns = T.addon(FILES)
+		local e, got = env(), {}
+		e.items.Rl = function(id) return ITEMS[id].rl end
+		local get = e.items.Get
+		e.items.Get = function(id) got[id] = (got[id] or 0) + 1 return get(id) end
+		local cands = ns.Browser.Collect(e, 20, 22, 22, 25)
+		T.eq(cands.head[1].id, 5)
+		T.eq(got[1], nil, "rl 10: not decoded"); T.eq(got[5], 1, "once")
+		T.ok(ns.Score.BestSuffix(ITEMS[5], W1, "priest", "gear") ~= cands.head[1].inst, "not kept by Score")
 	end,
 	gains = function()
 		local B = T.addon(FILES).Browser
@@ -86,6 +99,20 @@ return {
 		T.eq(#B.Best(m.now, "crafted"), 0)
 		T.eq(m.coming[1].c.id, 5); T.eq(m.coming[1].at, 22); T.near(m.coming[1].gain, 38, 1e-9, "int 20 x 2 - worn 2")
 		T.eq(#B.Rows(m.coming, "quest"), 0)
+	end,
+	-- The model keeps per slot (and for "coming up") the best KEEP rows of each source kind: every filter
+	-- still finds its own top rows, and a long tail of small upgrades is not held while the window is open.
+	trim_keeps_the_top_of_each_kind = function()
+		local B = T.addon(FILES).Browser
+		local rows = {}
+		for i = 1, 10 do rows[i] = { c = { id = i, kinds = { quest = true } }, gain = 100 - i } end
+		rows[11] = { c = { id = 11, kinds = { crafted = true } }, gain = 1 }
+		rows[12] = { c = { id = 12, kinds = { crafted = true, quest = true } }, gain = 0.5 }
+		local t = B.Trim(rows, 3)
+		local ids = {}
+		for _, r in ipairs(t) do ids[#ids + 1] = r.c.id end
+		T.eq(table.concat(ids, ","), "1,2,3,11,12", "3 quests (and 12, among the 3 crafted)")
+		T.eq(#B.Trim(rows, 50), 12)
 	end,
 	runs_in_steps = function()
 		local B = T.addon(FILES).Browser

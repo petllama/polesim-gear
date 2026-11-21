@@ -52,20 +52,50 @@ function Items.Get(id)
 	return rec or nil
 end
 
--- inventory type -> { id, ... } in id order; decodes every item once (the browser's first open).
+-- Decoded only as asked: Peek decodes an item without keeping it (an item Get kept is shared). The
+-- browser walks thousands of items per build; keeping them all decoded cost ~8 MB for the session.
+function Items.Peek(id)
+	id = tonumber(id)
+	if not id then return nil end
+	local hit = cache[id]
+	if hit ~= nil then return hit or nil end
+	local blob = ns.DATA.items
+	local _, e = find(blob, "\n" .. id .. "\t", 1, true)
+	if not e then return nil end
+	local stop = find(blob, "\n", e + 1, true)
+	return decode(id, sub(blob, e + 1, (stop or #blob + 1) - 1))
+end
+
+-- inventory type -> { id, ... } in id order, and each item's required level (Items.Rl), read off the
+-- lines without decoding them. Kept until ReleaseIndex (the browser's window closing).
+local rlOf
 function Items.ByInv()
 	if byInv then return byInv end
-	byInv = {}
-	for id, line in gmatch(ns.DATA.items, "\n(%d+)\t([^\n]*)") do
-		id = tonumber(id)
-		local rec = cache[id] or decode(id, line)
-		cache[id] = rec
-		local list = byInv[rec.inv]
-		if not list then
-			list = {}
-			byInv[rec.inv] = list
+	byInv, rlOf = {}, {}
+	for id, rl, inv in gmatch(ns.DATA.items, "\n(%d+)\t[^\t\n]*\t[^\t\n]*\t[^\t\n]*\t(%d*)\t(%d*)\t") do
+		id, inv = tonumber(id), tonumber(inv)
+		rlOf[id] = tonumber(rl) or 0
+		if inv then
+			local list = byInv[inv]
+			if not list then
+				list = {}
+				byInv[inv] = list
+			end
+			list[#list + 1] = id
 		end
-		list[#list + 1] = id
 	end
 	return byInv
+end
+
+function Items.Rl(id)
+	if not rlOf then Items.ByInv() end
+	return rlOf[id]
+end
+
+function Items.ReleaseIndex() byInv, rlOf = nil, nil end
+
+function Items._cached()
+	local n = 0
+	for _ in pairs(cache) do n = n + 1 end
+	return n
 end

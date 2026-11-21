@@ -63,6 +63,18 @@ return {
 		local plain, ps = ns.Score.BestSuffix(ns.Items.Get(11288), w, "priest", "ranged")
 		T.eq(plain.bonus, nil); T.ok(ps > 0)
 	end,
+	-- keep == false (the browser: each item once per build): the same answer, nothing kept.
+	best_suffix_not_kept = function()
+		local ns = T.addon(FILES)
+		local w = ns.DATA.specs.priest.shadow.bands[1].w
+		local it = ns.Items.Get(6540)
+		local a, sa = ns.Score.BestSuffix(it, w, "priest", "gear", false)
+		local b, sb = ns.Score.BestSuffix(it, w, "priest", "gear", false)
+		T.ok(a ~= b, "not kept"); T.eq(a.name, b.name); T.near(sa, sb)
+		local c, sc = ns.Score.BestSuffix(it, w, "priest", "gear")
+		T.ok(c ~= a); T.eq(c.name, a.name); T.near(sc, sa)
+		T.eq(ns.Score.BestSuffix(it, w, "priest", "gear", false), c, "a kept answer is still used")
+	end,
 	nil_item = function()
 		T.eq(T.addon(FILES).Score.Score(nil, W, "priest", "gear"), 0)
 		T.eq(T.addon(FILES).Score.BestSuffix(nil, W, "priest", "gear"), nil)

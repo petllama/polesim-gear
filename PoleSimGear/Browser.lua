@@ -44,7 +44,7 @@ function Browser.Candidate(id, env, lim, w, role)
 		end
 	end
 	if #ok == 0 then return nil end
-	local inst, score = ns.Score.BestSuffix(it, w, env.cls, role)
+	local inst, score = ns.Score.BestSuffix(it, w, env.cls, role, false) -- once per build: not kept
 	return { id = id, inst = inst, score = score, sources = ok, kinds = kinds, rl = it.rl }
 end
 
@@ -59,8 +59,13 @@ function Browser.Collect(env, at, rlFrom, rlTo, lim, yield)
 		local list = {}
 		for _, inv in ipairs(Browser.Invs(def, band.style)) do
 			for _, id in ipairs(byInv[inv] or {}) do
-				local it = env.items.Get(id)
-				if it and it.rl >= rlFrom and it.rl <= rlTo then
+				-- the index's required level when it has one (nothing decoded outside the window)
+				local rl = env.items.Rl and env.items.Rl(id)
+				if rl == nil then
+					local it = env.items.Get(id)
+					rl = it and it.rl
+				end
+				if rl and rl >= rlFrom and rl <= rlTo then
 					local c = Browser.Candidate(id, env, lim, band.w, inv == 17 and "mh" or role)
 					if c then list[#list + 1] = c end
 					n = n + 1
@@ -153,9 +158,29 @@ function Browser.Gains(cands, band)
 end
 
 Browser.AHEAD = 5 -- "coming up": the next levels (the website's look-ahead default)
+Browser.KEEP = 25 -- rows kept per slot and source kind (and for "coming up")
+
+local KINDS = { "quest", "dungeon", "crafted" }
+-- rows (best first) -> the rows among the best `n` of at least one source kind, in the same order:
+-- each filter still lists its own best n.
+function Browser.Trim(rows, n)
+	local seen, out = {}, {}
+	for _, r in ipairs(rows) do
+		local keep = false
+		for _, k in ipairs(KINDS) do
+			if r.c.kinds[k] then
+				seen[k] = (seen[k] or 0) + 1
+				if seen[k] <= n then keep = true end
+			end
+		end
+		if keep then out[#out + 1] = r end
+	end
+	return out
+end
 
 function Browser.Build(env, yield)
 	local now = Browser.Gains(Browser.Collect(env, env.level, 0, env.level, env.level, yield))
+	for key, rows in pairs(now) do now[key] = Browser.Trim(rows, Browser.KEEP) end
 	local coming = {}
 	for L = env.level + 1, math.min(60, env.level + (env.ahead or Browser.AHEAD)) do
 		for _, rows in pairs(Browser.Gains(Browser.Collect(env, L, L, L, env.level + (env.ahead or Browser.AHEAD), yield))) do
@@ -166,7 +191,7 @@ function Browser.Build(env, yield)
 		end
 	end
 	table.sort(coming, byGain)
-	return { now = now, coming = coming }
+	return { now = now, coming = Browser.Trim(coming, Browser.KEEP) }
 end
 
 -- rows passing a source filter ("all", "quest", "dungeon", "crafted")
