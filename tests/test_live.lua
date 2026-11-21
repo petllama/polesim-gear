@@ -25,10 +25,24 @@ return {
 	bonus_from_link = function()
 		local ns = T.addon(FILES)
 		local rec = ns.Items.Get(6540)
-		T.eq(ns.Live.Bonus("|cff1eff00|Hitem:6540::::::::18:::::1:12720:::|h[x]|h|r", rec), 12720)
+		T.eq(ns.Live.Bonus("|cff1eff00|Hitem:6540::::::::18::::1:12720::::|h[x]|h|r", rec), 12720)
 		T.eq(ns.Live.Bonus("item:6540::::::::18::::::::", rec), nil)
-		T.eq(ns.Live.Bonus("item:6540::::::::18:::::1:99999:::", rec), nil, "not one of its suffixes")
+		T.eq(ns.Live.Bonus("item:6540::::::::18::::1:99999::::", rec), nil, "not one of its suffixes")
 		T.eq(ns.Live.Bonus("item:6540:12720", nil), nil, "unknown item")
+	end,
+	-- Only the bonus-ID list counts (numBonusIDs is the 13th field after "item:", the layout of the
+	-- client's item strings), plus the classic suffixID field (7th) when it is one of the item's
+	-- suffixes: a uniqueID, link level or modifier value equal to a suffix id is not a suffix.
+	bonus_list_only = function()
+		local ns = T.addon(FILES)
+		local rec = ns.Items.Get(6540)
+		T.eq(ns.Live.Bonus("item:6540::::::::18::::2:5:12720::::", rec), 12720, "second of two bonus ids")
+		T.eq(ns.Live.Bonus("item:6540:::::::12720:18::::::::", rec), nil, "uniqueID")
+		T.eq(ns.Live.Bonus("item:6540::::::::12720::::::::", rec), nil, "link level")
+		T.eq(ns.Live.Bonus("item:6540::::::::18::::0:1:9:12720:::", rec), nil, "a modifier value")
+		T.eq(ns.Live.Bonus("item:6540::::::::18::::1:5:1:9:12720:::", rec), nil, "modifier after a non-suffix bonus")
+		T.eq(ns.Live.Bonus("item:6540::::::12720::18::::::::", rec), 12720, "classic suffixID field")
+		T.eq(ns.Live.Bonus("item:6540::::::-12720::18::::::::", rec), nil, "negative suffixID")
 	end,
 	instance = function()
 		local ns = T.addon(FILES)
@@ -36,7 +50,7 @@ return {
 			Info = function() return "INVTYPE_LEGS", 14, 4, 1, 2 end,
 			Stats = function() return { ITEM_MOD_INTELLECT_SHORT = 3, ITEM_MOD_SPIRIT_SHORT = 3, RESISTANCE0_NAME = 28 } end,
 		}
-		local i = ns.Live.Instance("|cff1eff00|Hitem:6540::::::::18:::::1:12720:::|h[Willow Pants of the Owl]|h|r", client)
+		local i = ns.Live.Instance("|cff1eff00|Hitem:6540::::::::18::::1:12720::::|h[Willow Pants of the Owl]|h|r", client)
 		T.eq(i.id, 6540); T.eq(i.inv, 7); T.eq(i.rl, 14); T.eq(i.armor, 28); T.eq(i.stats.int, 3); T.eq(i.c, 4)
 		T.eq(i.bonus, 12720, "the suffix, so Equip tells copies apart")
 		local w = ns.DATA.specs.priest.shadow.bands[1].w
@@ -64,7 +78,7 @@ return {
 	instance_from_table_when_no_stats = function()
 		local ns = T.addon(FILES)
 		local client = { Info = function() return "INVTYPE_LEGS", 13, 4, 1, 2 end, Stats = function() return nil end }
-		local i = ns.Live.Instance("item:6540::::::::18:::::1:12720:::", client)
+		local i = ns.Live.Instance("item:6540::::::::18::::1:12720::::", client)
 		T.eq(i.bonus, 12720); T.eq(i.stats.int, ns.Score.Instance(ns.Items.Get(6540), 12720).stats.int)
 		T.ok(i.stats.int and i.stats.int > 0)
 	end,

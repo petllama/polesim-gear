@@ -74,20 +74,29 @@ function Live.Stats(t, rec)
 	return out, armor, dps, filled
 end
 
--- The link's random suffix: the field that is one of the item's known suffixes (armory.item_from_link;
--- modern links carry it in the bonus list). -> bonus id | nil
+-- The link's random suffix: a bonus id in the link's bonus-ID list that is one of the item's known
+-- suffixes, else the classic suffixID field when positive and known. Item string fields after
+-- "item:": 1 itemID, 2 enchant, 3-6 gems, 7 suffixID, 8 uniqueID, 9 linkLevel, 10 specID,
+-- 11 modifiersMask, 12 itemContext, 13 numBonusIDs, then the bonus ids, then the modifiers (Blizzard's
+-- PTR reporter, Blizzard_Reports.lua). Other fields (uniqueID, modifier values) are never read as a
+-- suffix. -> bonus id | nil
 function Live.Bonus(link, rec)
 	if not (rec and rec.sfx and #rec.sfx > 0) or type(link) ~= "string" then return nil end
 	local fields = link:match("item:([%d:%-]+)")
 	if not fields then return nil end
 	local known = {}
 	for _, b in ipairs(rec.sfx) do known[b] = true end
-	local i = 0
-	for f in (fields .. ":"):gmatch("([^:]*):") do
+	local f, i = {}, 0
+	for x in (fields .. ":"):gmatch("([^:]*):") do
 		i = i + 1
-		local n = i > 2 and tonumber(f)
-		if n and known[n] then return n end
+		f[i] = tonumber(x) -- nil for an empty field
 	end
+	local n = f[13] or 0
+	for k = 14, 13 + n do
+		if f[k] and known[f[k]] then return f[k] end
+	end
+	local sfx = f[7]
+	if sfx and sfx > 0 and known[sfx] then return sfx end
 	return nil
 end
 
