@@ -173,6 +173,44 @@ return {
 		T.ok(text:find(" x ", 1, true), "with a band: the how? " .. text)
 		_G.Polestar = nil
 	end,
+	-- A pooled row reused for another entry resets its icon, texts, tag and gain; plain header rows get no
+	-- hover highlight ("Show all", which can be clicked, and item rows do).
+	reused_row_resets = function()
+		local win = window(function() end)
+		local ns = win.ns
+		SlashCmdList.POLESIMGEAR("")
+		local row = win.frame()
+		local hl = { alpha = 1, SetAlpha = function(self, a) self.alpha = a end }
+		row.SetHighlightTexture = function(self) self.hl = hl end
+		row.GetHighlightTexture = function(self) return self.hl end
+		local icon
+		row.CreateTexture = function()
+			icon = { shown = true, Show = function(s) s.shown = true end, Hide = function(s) s.shown = false end,
+				SetTexture = function(s, t) s.tex = t end, SetSize = function() end, SetPoint = function() end }
+			return icon
+		end
+		local inst = { id = 9, name = "Robe", inv = 5, stats = {}, quality = 2, icon = "INV_Chest_Cloth_01" }
+		local item = { c = { id = 9, inst = inst, score = 5, sources = { { text = "Quest: X", route = 3 } }, kinds = { quest = true }, rl = 18 },
+			gain = 2, slot = ns.Browser.SLOTS[5] }
+		win.view.init(row, item)
+		T.ok(icon.shown); T.ok(icon.tex:find("INV_Chest_Cloth_01", 1, true))
+		T.eq(row.slotText.text, "Chest"); T.ok(row.tag.text:find("Quest", 1, true)); T.ok(row.gain.text:find("+2.0", 1, true))
+		T.eq(hl.alpha, 1)
+		win.view.init(row, { header = "Coming up" })
+		T.ok(not icon.shown, "icon hidden"); T.eq(row.slotText.text, ""); T.eq(row.tag.text, ""); T.eq(row.gain.text, "")
+		T.ok(row.name.text:find("Coming up", 1, true))
+		T.eq(hl.alpha, 0, "no highlight on a header")
+		win.view.init(row, { header = "Show all (9)", showAll = true })
+		T.eq(hl.alpha, 1, "Show all can be clicked")
+		inst.icon = nil
+		item.c.sources[1].route = nil
+		item.gain = 1
+		win.view.init(row, item)
+		T.ok(icon.shown); T.ok(icon.tex:find("QuestionMark", 1, true), "no icon: the question mark")
+		T.ok(not row.tag.text:find("route", 1, true), "route tag gone"); T.ok(row.gain.text:find("+1.0", 1, true))
+		T.eq(hl.alpha, 1)
+		_G.Polestar = nil
+	end,
 	-- The window opens,
 	-- builds over frames, lists rows, drills into a slot, closes and lets go of the model and the index.
 	window_smoke = function()

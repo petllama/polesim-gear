@@ -170,6 +170,9 @@ local function initRow(row, data)
 			end
 		end)
 	end
+	-- hover highlight only on rows that do something (items; "Show all"), not on plain headers
+	local hl = row:GetHighlightTexture()
+	if hl then hl:SetAlpha((data.header and not data.showAll) and 0 or 1) end
 	if data.header then
 		row.icon:Hide()
 		row.slotText:SetText("")
