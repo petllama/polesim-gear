@@ -219,6 +219,9 @@ return {
 			end
 		end
 		_G.C_PaperDollInfo = nil
+		-- closed: the strip lets go of the plan entries (they hold the model)
+		f:Hide()
+		T.eq(ns.Window.badges, nil, "no model kept after close")
 		fx.done()
 	end,
 	row_tooltip = function()

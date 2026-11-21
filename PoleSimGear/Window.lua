@@ -118,6 +118,7 @@ local function release()
 	if state.building then state.building:Cancel() end
 	Win.DropAll()
 	state.building, state.model, state.stale, state.groups, state.codex, state.keep, state.pending = nil, nil, true, nil, nil, nil, nil
+	Win.badges = nil -- the strip's plan entries (they hold the model)
 	for key, p in pairs(panels) do
 		local def = tabDefs[key]
 		if def and def.release then def.release(p) end
