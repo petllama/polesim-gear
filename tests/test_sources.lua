@@ -85,12 +85,13 @@ return {
 		}
 		T.eq(S.For(1, codex, player, 20), nil, "retired")
 		local v = S.For(2, codex, player, 20)
-		T.eq(#v, 4)
+		T.eq(#v, 5)
 		T.eq(v[1].kind, "quest"); T.ok(v[1].ok); T.eq(v[1].text, "Quest: Wanted (22), a choice"); T.eq(v[1].where, "Westfall")
 		T.eq(v[2].kind, "dungeon"); T.eq(v[2].text, "Drop: Boss (boss), 12.5%"); T.eq(v[2].where, "The Deadmines"); T.ok(v[2].ok)
 		T.eq(v[3].kind, "crafted"); T.ok(not v[3].ok); T.eq(v[3].why, "skill 150 (about level 30)")
 		T.eq(v[3].text, "Crafted: Tailoring 150")
 		T.eq(v[4].kind, "vendor"); T.eq(v[4].text, "Vendor: Mob")
+		T.eq(v[5].kind, "world", "the open-world drop: kept drops go after the other sources"); T.eq(v[5].text, "Drop: Mob (20)")
 	end,
 	-- A container (Codex `object` source) inside a dungeon counts as a dungeon source, as on the website
 	-- (armory: in-instance containers); one in the open world or in a raid is not one of the kinds.
@@ -182,5 +183,31 @@ return {
 		local n = S.View({ type = "vendor", npc = 4 }, codex, player, 20)
 		T.eq(n.kind, "vendor", "faction unknown: shown"); T.eq(n.where, nil); T.eq(n.spot, nil)
 		T.eq(S.View({ type = "vendor", npc = 99 }, codex, player, 20).npcName, nil, "npc unknown: still a vendor")
+	end,
+	world = function()
+		local S = T.addon(FILES).Sources
+		local NPCS = { [8] = { name = "Ogre", level = 21, spawns = { { map = 1431, x = 50, y = 50 } } },
+			[9] = { name = "Dragon", level = 40 } }
+		local codex = {
+			Item = function() return { sources = {
+				{ type = "world", minLevel = 15, maxLevel = 25 },
+				{ type = "drop", npc = 8, chance = 0.5 }, { type = "drop", npc = 8, chance = 4 },
+				{ type = "drop", npc = 8, chance = 2 }, { type = "drop", npc = 8, chance = 1 },
+				{ type = "drop", npc = 9, chance = 9 },
+			} } end,
+			Npc = function(id) return NPCS[id] end,
+		}
+		local w = S.View({ type = "world", minLevel = 15, maxLevel = 25 }, codex, player, 20)
+		T.eq(w.kind, "world"); T.ok(w.ok); T.eq(w.text, "World drop, levels 15-25"); T.eq(w.minLevel, 15)
+		local d = S.View({ type = "drop", npc = 8, chance = 4 }, codex, player, 20)
+		T.eq(d.kind, "world"); T.ok(d.ok); T.eq(d.npcId, 8); T.eq(d.npcName, "Ogre"); T.eq(d.chance, 4)
+		T.eq(d.text, "Drop: Ogre (21), 4%"); T.eq(d.zoneId, 1431); T.eq(d.where, nil, "zone name read later (Groups)")
+		local far = S.View({ type = "drop", npc = 9, chance = 9 }, codex, player, 20)
+		T.ok(not far.ok); T.eq(far.why, "mob level 40")
+		local all = S.For(1, codex, player, 20)
+		local drops = {}
+		for _, v in ipairs(all) do if v.npcId then drops[#drops + 1] = v.chance end end
+		T.eq(table.concat(drops, ","), "9,4,2", "the best WORLD_KEEP (3) open-world drops, by chance")
+		T.eq(all[1].text, "World drop, levels 15-25", "other sources keep their order, first")
 	end,
 }

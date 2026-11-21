@@ -1,6 +1,6 @@
 -- Where an upgrade comes from, read at runtime from Polestar's Codex (never copied into this addon:
--- it holds QuestieDB-derived facts). The browser shows three kinds: quest rewards, dungeon drops and
--- crafted items, with the website's gates.
+-- it holds QuestieDB-derived facts). Five kinds: quest rewards, dungeon drops, crafted items (with the
+-- website's gates), vendors (faction-gated) and BoE / World (world drops by level, open-world mob drops).
 local ADDON, ns = ...
 local Sources = {}
 ns.Sources = Sources
@@ -91,7 +91,22 @@ function Sources.View(src, codex, player, lim)
 	elseif src.type == "drop" then
 		local npc = call(codex, "Npc", src.npc)
 		local key = src.instance or (npc and npc.instance)
-		if not key then return nil end -- an open-world drop: not one of the browser's kinds
+		if not key then
+			-- An open-world drop: the BoE / World kind. The zone's name is read only where it is shown
+			-- (Groups, the tooltip): a world item can have dozens of these. An unknown mob: nothing to
+			-- show (and a Codex without Npc, changed upstream, gives no source: test `views_guarded`).
+			if not npc then return nil end
+			local ok, why = true, nil
+			if npc.level and npc.level > lim + 5 then ok, why = false, "mob level " .. npc.level end
+			local sp = type(npc.spawns) == "table" and npc.spawns[1] or nil
+			return {
+				kind = "world", ok = ok, why = why, npcId = src.npc, npcName = npc.name, npcLevel = npc.level,
+				chance = src.chance, zoneId = sp and sp.map or nil,
+				spot = sp and { map = sp.map, x = sp.x, y = sp.y } or nil,
+				text = "Drop: " .. (npc.name or "?") .. (npc.level and (" (" .. npc.level .. ")") or "")
+					.. (src.chance and string.format(", %g%%", src.chance) or ""),
+			}
+		end
 		local inst = call(codex, "Instance", key)
 		if inst and inst.kind == "raid" then return nil end -- raids: a non-goal
 		local ok, why = true, nil
@@ -124,6 +139,12 @@ function Sources.View(src, codex, player, lim)
 			profession = src.profession, skill = src.skill, skillLine = src.skillLine,
 			text = "Crafted: " .. (src.profession or "a profession") .. (src.skill and (" " .. src.skill) or ""),
 		}
+	elseif src.type == "world" then
+		-- Drops anywhere from mobs of these levels (the Codex's world-drop table): luck, not a place.
+		return {
+			kind = "world", ok = true, minLevel = src.minLevel, maxLevel = src.maxLevel,
+			text = "World drop" .. (src.minLevel and string.format(", levels %d-%d", src.minLevel, src.maxLevel or src.minLevel) or ""),
+		}
 	elseif src.type == "vendor" then
 		-- A vendor of the other side only is not one the character can buy from; "AH" and unknown are.
 		local npc = call(codex, "Npc", src.npc)
@@ -139,6 +160,25 @@ function Sources.View(src, codex, player, lim)
 		}
 	end
 	return nil
+end
+
+Sources.WORLD_KEEP = 3 -- open-world drops kept per item (the best chances): the rest is noise
+-- views (in source order) -> the same, with only the WORLD_KEEP likeliest open-world drops (stable)
+local function keepBestDrops(views)
+	local drops = {}
+	for i, v in ipairs(views) do
+		if v.kind == "world" and v.npcId then drops[#drops + 1] = { v = v, i = i } end
+	end
+	table.sort(drops, function(a, b)
+		if (a.v.chance or 0) ~= (b.v.chance or 0) then return (a.v.chance or 0) > (b.v.chance or 0) end
+		return a.i < b.i
+	end)
+	local out = {}
+	for _, v in ipairs(views) do
+		if not (v.kind == "world" and v.npcId) then out[#out + 1] = v end
+	end
+	for k = 1, math.min(#drops, Sources.WORLD_KEEP) do out[#out + 1] = drops[k].v end
+	return out
 end
 
 -- An item's browser sources; nil when Polestar marks it retired (hidden). Codex reads are Polestar
@@ -161,5 +201,5 @@ function Sources.For(id, codex, player, lim)
 			out[#out + 1] = v
 		end
 	end
-	return out
+	return keepBestDrops(out)
 end
