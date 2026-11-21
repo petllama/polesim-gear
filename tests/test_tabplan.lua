@@ -80,4 +80,16 @@ return {
 		T.eq(last.delta.text, "")
 		fx.done()
 	end,
+	star = function()
+		local fx = F.load()
+		local ns = fx.ns
+		fx.open()
+		local r = rowsOf(fx)[1]
+		r.star:Click()
+		T.ok(ns.Wishlist.Has(r.e.entry.plan.c.inst), "starred")
+		T.eq(rowsOf(fx)[1].star.on, true, "redrawn starred")
+		rowsOf(fx)[1].star:Click()
+		T.eq(ns.Wishlist.Has(r.e.entry.plan.c.inst), false)
+		fx.done()
+	end,
 }

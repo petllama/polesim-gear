@@ -171,8 +171,14 @@ end
 function Tab.Refresh(p) S.SetList(p.list, Tab.Entries()) end
 function Tab.Release(p) S.SetList(p.list, {}) end
 
--- Tasks 4.3-4.5 fill these in.
-function Tab.Star(row) end
+-- Task 4.5 fills this in.
+function Tab.Star(row)
+	local e = row.e
+	local r = e and planRow(e)
+	local m = e and (e.missing or (e.entry and e.entry.missing))
+	local inst = r and r.c.inst or (m and { id = m.id, bonus = m.bonus })
+	if inst then ns.Wishlist.Toggle(inst) end -- WISHLIST_CHANGED redraws the window
+end
 function Tab.Tooltip(row) end
 
 function Tab.Click(row, button)
