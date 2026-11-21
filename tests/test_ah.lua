@@ -40,9 +40,10 @@ end
 local function drain(ns, log) local n = 0 while answer(ns, log) do n = n + 1 end return n end
 
 return {
-	-- Priest: cloth, then neck/rings/trinkets/held in off hand (+ cloaks), then one query per weapon
-	-- subclass (maces, staves, daggers, wands); usable only, common..epic, levels 1..level + ahead,
-	-- cheapest first.
+	-- Priest: cloth, then the miscellaneous armor (neck, rings, trinkets, held in off hand, ...) with
+	-- every cloak, then one query per weapon subclass (maces, staves, daggers, wands); usable only,
+	-- common..epic, required level up to level + ahead (no lower bound: 0, the AH's own default, keeps
+	-- items with no required level), cheapest first.
 	queries_priest = function()
 		local ns = addon(20)
 		local qs = ns.AH.Queries("priest", 20, 3)
@@ -50,7 +51,7 @@ return {
 		for i, q in ipairs(qs) do labels[i] = q.label end
 		T.eq(table.concat(labels, ","), "Cloth,Neck rings trinkets off hands,Maces,Staves,Daggers,Wands")
 		local q = qs[1]
-		T.eq(q.query.minLevel, 1); T.eq(q.query.maxLevel, 23); T.eq(q.query.searchString, "")
+		T.eq(q.query.minLevel, 0); T.eq(q.query.maxLevel, 23); T.eq(q.query.searchString, "")
 		T.eq(q.query.sorts[1].sortOrder, 0, "price"); T.eq(q.query.sorts[1].reverseSort, false)
 		local f = {}
 		for _, v in ipairs(q.query.filters) do f[v] = true end
@@ -58,8 +59,8 @@ return {
 		T.eq(q.query.itemClassFilters[1].classID, 4); T.eq(q.query.itemClassFilters[1].subClassID, 1)
 		local j = qs[2].query.itemClassFilters
 		local invs = {}
-		for _, c in ipairs(j) do invs[#invs + 1] = c.classID .. "/" .. c.subClassID .. "/" .. c.inventoryType end
-		T.eq(table.concat(invs, ","), "4/0/2,4/0/11,4/0/12,4/0/23")
+		for _, c in ipairs(j) do invs[#invs + 1] = c.classID .. "/" .. tostring(c.subClassID) .. "/" .. tostring(c.inventoryType) end
+		T.eq(table.concat(invs, ","), "4/0/nil,4/nil/16", "misc armor; cloaks of any armor type")
 		T.eq(qs[4].query.itemClassFilters[1].classID, 2); T.eq(qs[4].query.itemClassFilters[1].subClassID, 10)
 		T.eq(#ns.AH.Queries("mage", 20, 0), 6, "mage: cloth, jewelry, swords, staves, daggers, wands")
 		T.eq(ns.AH.Queries("mage", 60, 5)[1].query.maxLevel, 60, "not past 60")
@@ -305,5 +306,32 @@ return {
 		end
 		ns.Fire("SCORES_CHANGED")
 		T.eq(#ns.AH.Rows(), 0, "worn now")
+	end,
+	-- Many results are scored over frames (Browser.Start's slices, AH.YIELD_EVERY items a step):
+	-- "Scoring n results..." meanwhile, Cancel stops it; no long frame at the end of a scan.
+	scoring_spreads_over_frames = function()
+		local ns = addon(20)
+		local W = require("wow")
+		local list = {}
+		for i = 1, 3 * ns.AH.YIELD_EVERY do list[i] = result(2292, 1000 + i, i) end -- distinct keys (suffix field)
+		local api, log = stubAH(list, #list)
+		_G.C_AuctionHouse = api
+		ns.AH.Scan()
+		for _ = 1, 10 do answer(ns, log) end
+		T.eq(ns.AH.Scanning(), true, "still scoring")
+		T.eq(ns.AH.Status(), "Scoring " .. #list .. " results...")
+		T.eq(#ns.AH.Rows(), 0)
+		local frames = 0
+		while ns.AH.Scanning() and frames < 100 do W.flush() frames = frames + 1 end
+		T.ok(frames >= 2, "over frames: " .. frames)
+		T.eq(#ns.AH.Rows(), #list, "every key an upgrade (same item)")
+		-- cancel while scoring
+		ns.AH.Clear()
+		ns.AH.Scan()
+		for _ = 1, 10 do answer(ns, log) end
+		ns.AH.Cancel()
+		T.eq(ns.AH.Scanning(), false)
+		for _ = 1, 20 do W.flush() end
+		T.eq(#ns.AH.Rows(), 0, "nothing scored after cancel")
 	end,
 }

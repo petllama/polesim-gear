@@ -389,6 +389,117 @@ for li, L in ipairs(levels) do
 		if frame:IsShown() then note("close", "still shown") end
 		local kbVisit = kb()
 
+		-- 6. the auction house pass: a fake browse server over the real shipped items the character can
+		-- wear up to level + 2 (look ahead 2), one result per item (suffix items: every other one with a
+		-- suffix of its own in the key, the rest without: the row stands for every suffix), a price from
+		-- the item level and quality; pages of 50. The panel, a scan, its list (sorts, hovers, a click),
+		-- the Gear Plan with prices, then the auction house closes.
+		local ahInfo, ahTop = "not run", {}
+		do
+			local A = require("ahstub")
+			local ahead = 2
+			ns.Options.View().ahead = ahead
+			local c = ns.Context.Get()
+			local top = math.min(60, L + ahead)
+			local pool = {}
+			for _, ids in pairs(ns.Items.ByInv()) do
+				for _, id in ipairs(ids) do
+					local it = ns.Items.Peek(id)
+					if it and (it.c == 2 or it.c == 4) and it.rl <= top and ns.Equip.CanUse(it, c.cls, math.max(L, it.rl)) then
+						local suffix = (#it.sfx > 0 and id % 2 == 0) and it.sfx[1 + id % #it.sfx] or 0
+						local price = math.floor((it.il * it.il * 25 + (id % 97) * 100) * (it.q + 1))
+						pool[#pool + 1] = { c = it.c, sc = it.sc, inv = it.inv, rl = it.rl,
+							r = { itemKey = { itemID = id, itemLevel = 0, itemSuffix = suffix, battlePetSpeciesID = 0 }, minPrice = price,
+								totalQuantity = 1 + id % 3, containsOwnerItem = false } }
+					end
+				end
+			end
+			-- items the shipped table does not have (the client lists them too): not scored
+			for i = 1, 5 do pool[#pool + 1] = { c = 4, sc = 1, inv = 5, rl = 1, r = A.result(990000 + i, 100) } end
+			local function server(q)
+				local out = {}
+				for _, p in ipairs(pool) do
+					local ok = p.rl >= (q.minLevel or 0) and p.rl <= (q.maxLevel or 60)
+					local cls = false
+					for _, f in ipairs(q.itemClassFilters or {}) do
+						if f.classID == p.c and (f.subClassID == nil or f.subClassID == p.sc) and (f.inventoryType == nil or f.inventoryType == p.inv) then cls = true end
+					end
+					if ok and cls then out[#out + 1] = p.r end
+				end
+				table.sort(out, function(a, b) return a.minPrice < b.minPrice end)
+				return out
+			end
+			local api, log = A.stub(server, 50)
+			_G.C_AuctionHouse = api
+			_G.AuctionHouseFrameDisplayMode = { Buy = { "BrowseResultsFrame" }, ItemBuy = { "ItemBuyFrame" } }
+			_G.AuctionHouseSearchContext = { BuyItems = 9 }
+			local ahf = U.new("Frame", _G.UIParent, "AuctionHouseFrame")
+			ahf:SetSize(800, 540)
+			ahf.BrowseResultsFrame, ahf.ItemBuyFrame = false, false
+			function ahf:GetDisplayMode() return self.mode end
+			function ahf:SelectBrowseResult(r) self.selected = r end
+			-- the window built once and closed (as after the AH pass) before the baseline
+			step("AH baseline", function() SlashCmdList.POLESIMGEAR("") frame.close:Click() end)
+			local kbA = kb()
+			local P = ns.AHPanel
+			local t0 = clock()
+			local ms, served
+			step("AH load", ev, ns._frame, "ADDON_LOADED", "Blizzard_AuctionHouseUI")
+			-- each answer is one client frame; then the scoring's frames (settle)
+			frames, maxFrame = 0, 0
+			step("AH scan", function()
+				U.button(P.frame, "Scan for upgrades"):Click()
+				for _ = 1, 10000 do
+					local p = log.pending
+					if not p then break end
+					log.pending = nil
+					local t = clock()
+					ev(ns._frame, p == "updated" and "AUCTION_HOUSE_BROWSE_RESULTS_UPDATED" or "AUCTION_HOUSE_BROWSE_RESULTS_ADDED")
+					maxFrame = math.max(maxFrame, (clock() - t) * 1000)
+				end
+			end)
+			ms = (clock() - t0) * 1000
+			local scoreFrames, longest = frames, maxFrame
+			if ns.AH.Scanning() then note("AH scan", "not finished: " .. tostring(ns.AH.Status())) end
+			local kbScan = kb()
+			step("AH list", function()
+				for _, s in ipairs(P.SORTS) do
+					U.button(P.frame, s[2]):Click()
+					scroll(P.list)
+					hover(P.list, 5)
+				end
+				U.button(P.frame, "Gain"):Click()
+				local first = U.rows(P.list, 1)[1]
+				if first then first:Click("LeftButton") assert(ahf.selected == first.d.result, "click selects the row's result") end
+			end)
+			step("AH plan", function()
+				SlashCmdList.POLESIMGEAR("")
+				Win.SetTab("plan")
+				scroll(Win.Panel("plan").list)
+				for _, b in ipairs(frame.slots) do b.scripts.OnEnter(b) b.scripts.OnLeave(b) end
+				frame.close:Click()
+			end)
+			local function line(r)
+				return format("%-38s %-8s %+6.1f  %8s  %+6.2f/g%s%s", (r.c.inst.name or "?"):sub(1, 38), r.slot.short or r.slot.label, r.gain,
+					format("%.2fg", r.price / 10000), r.value, r.at and ("  lvl " .. r.at) or "", r.anySuffix and "  (any suffix)" or "")
+			end
+			do -- (no reference to the rows outlives this block: the closed measure is the addon's own)
+				local byGain, byValue = ns.AH.Sort(ns.AH.Rows(), "gain"), ns.AH.Sort(ns.AH.Rows(), "value")
+				ahTop[#ahTop + 1] = "  AH top 5 by gain:"
+				for i = 1, math.min(5, #byGain) do ahTop[#ahTop + 1] = "    " .. line(byGain[i]) end
+				ahTop[#ahTop + 1] = "  AH top 5 by value (gain per gold):"
+				for i = 1, math.min(5, #byValue) do ahTop[#ahTop + 1] = "    " .. line(byValue[i]) end
+			end
+			local st = ns.AH.Status()
+			step("AH close", ev, ns._frame, "AUCTION_HOUSE_CLOSED")
+			if #ns.AH.Rows() ~= 0 or next(ns.AH.Found()) then note("AH close", "results kept after close") end
+			local kbAClosed = kb()
+			served = #pool
+			ahInfo = format("%d queries, %d more-pages, %d items served; %s; scan+score %.0f ms (scoring over %d frames, longest frame %.1f ms); KB before %.0f, with results %.0f (%+.0f), closed %.0f (%+.0f); bought %d",
+				#log.sent, log.more, served, tostring(st), ms or -1, scoreFrames, longest, kbA, kbScan, kbScan - kbA, kbAClosed, kbAClosed - kbA, log.bought)
+			_G.C_AuctionHouse, _G.AuctionHouseFrame, _G.AuctionHouseFrameDisplayMode, _G.AuctionHouseSearchContext = nil, nil, nil, nil
+		end
+
 		local function n(k) return counts[k] or 0 end
 		local bad = 0
 		for _, w in ipairs(navs) do
@@ -402,6 +513,8 @@ for li, L in ipairs(levels) do
 			n("places crafted"), n("places vendor"), n("rows dungeon"), n("rows quest"), n("rows crafted"), n("rows vendor"), n("rows world"),
 			tostring(counts.picked)))
 		print("  route: " .. routeInfo)
+		print("  AH: " .. ahInfo)
+		for _, l in ipairs(ahTop) do print(l) end
 		for i = 1, math.min(10, #errors) do print("  " .. errors[i]) end
 		if #errors > 0 then failures = failures + 1 end
 		for i = #navs, 1, -1 do navs[i] = nil end

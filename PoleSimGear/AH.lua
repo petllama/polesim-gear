@@ -20,14 +20,16 @@ local function enum(group, name, value)
 end
 local QUALITIES = { { "CommonQuality", 7 }, { "UncommonQuality", 8 }, { "RareQuality", 9 }, { "EpicQuality", 10 } }
 
--- Item classes (Enum.ItemClass Armor 4, Weapon 2) and inventory types (Enum.InventoryType: neck 2,
--- finger 11, trinket 12, holdable 23), as Blizzard_AuctionData's categories filter them.
+-- Item classes (Enum.ItemClass Armor 4, Weapon 2), armor subclass Generic 0 (neck, rings, trinkets,
+-- held in off hand, some heads and robes) and the cloak slot (Enum.InventoryType 16, cloth or not), as
+-- Blizzard_AuctionData's categories filter them ({ classID, subClassID, inventoryType }, each optional
+-- but the class).
 local ARMOR, WEAPON = 4, 2
 local ARMOR_NAMES = { [1] = "Cloth", [2] = "Leather", [3] = "Mail", [4] = "Plate", [6] = "Shields" }
 local WEAPON_NAMES = { [0] = "One-handed axes", [1] = "Two-handed axes", [2] = "Bows", [3] = "Guns", [4] = "Maces",
 	[5] = "Two-handed maces", [6] = "Polearms", [7] = "Swords", [8] = "Two-handed swords", [10] = "Staves",
 	[13] = "Fist weapons", [15] = "Daggers", [16] = "Thrown", [18] = "Crossbows", [19] = "Wands" }
-local JEWELRY = { 2, 11, 12, 23 }
+local CLOAK = 16
 
 local function sortedKeys(t)
 	local out = {}
@@ -36,8 +38,9 @@ local function sortedKeys(t)
 	return out
 end
 
--- The scan's browse queries for a class at level + ahead: one per armor type it can wear by then (cloth
--- includes cloaks), one for neck, rings, trinkets and held-in-off-hand items, one per weapon subclass.
+-- The scan's browse queries for a class at level + ahead: one per armor type it can wear by then, one
+-- for the miscellaneous armor (neck, rings, trinkets, held in off hand) and every cloak, one per weapon
+-- subclass. Required level 0 (no lower bound, the AH's own default) to level + ahead.
 -- -> { { label, query = AuctionHouseBrowseQuery }, ... }
 function AH.Queries(cls, level, ahead)
 	local p = ns.DATA.proficiency[cls]
@@ -46,7 +49,7 @@ function AH.Queries(cls, level, ahead)
 	local filters = { enum("AuctionHouseFilter", "UsableOnly", 2) }
 	for _, q in ipairs(QUALITIES) do filters[#filters + 1] = enum("AuctionHouseFilter", q[1], q[2]) end
 	local function query(label, classFilters)
-		return { label = label, query = { searchString = "", minLevel = 1, maxLevel = top, filters = filters,
+		return { label = label, query = { searchString = "", minLevel = 0, maxLevel = top, filters = filters,
 			sorts = { { sortOrder = enum("AuctionHouseSortOrder", "Price", 0), reverseSort = false } },
 			itemClassFilters = classFilters } }
 	end
@@ -56,9 +59,7 @@ function AH.Queries(cls, level, ahead)
 			out[#out + 1] = query(ARMOR_NAMES[sc], { { classID = ARMOR, subClassID = sc } })
 		end
 	end
-	local j = {}
-	for _, inv in ipairs(JEWELRY) do j[#j + 1] = { classID = ARMOR, subClassID = 0, inventoryType = inv } end
-	out[#out + 1] = query("Neck rings trinkets off hands", j)
+	out[#out + 1] = query("Neck rings trinkets off hands", { { classID = ARMOR, subClassID = 0 }, { classID = ARMOR, inventoryType = CLOAK } })
 	for _, sc in ipairs(sortedKeys(p.weapons)) do
 		if p.weapons[sc] then out[#out + 1] = query(WEAPON_NAMES[sc] or ("Weapons " .. sc), { { classID = WEAPON, subClassID = sc } }) end
 	end
@@ -151,12 +152,14 @@ end
 
 local function perGold(gain, price) return gain / (math.max(price or 0, 1) / 10000) end
 
--- found (the scan's), ctx (Context.Get), ahead -> rows (upgrades: { key, c = { id, inst, score,
+-- found (the scan's), ctx (Context.Get), ahead, yield (optional: called every YIELD_EVERY results, for
+-- Browser.Start's frame slices) -> rows (upgrades: { key, c = { id, inst, score,
 -- sources, kinds }, gain, base, slot, note, at, price, setPrice, value, partner, anySuffix, result,
 -- itemKey }), counts { results, notScored, scored }.
 -- Weapons follow the weapon set rule: under a worn two-hander a one-hander pairs with the best AH off
 -- hand (and the reverse), and the pair must beat the two-hander (its value counts both prices).
-function AH.Build(found, ctx, ahead)
+AH.YIELD_EVERY = 50
+function AH.Build(found, ctx, ahead, yield)
 	local counts = { results = 0, notScored = 0, scored = 0 }
 	local out = {}
 	-- the cheapest price of every scored item, upgrade or not: exact ("id:bonus") and any-suffix (id)
@@ -172,6 +175,7 @@ function AH.Build(found, ctx, ahead)
 	local cands = {}
 	for _, f in pairs(found) do
 		counts.results = counts.results + 1
+		if yield and counts.results % AH.YIELD_EVERY == 0 then yield() end
 		local ok, c, why = pcall(candidate, f, ctx, top, bandAt)
 		if not ok then
 			ns.ReportOnce("ah:" .. tostring(f.itemKey and f.itemKey.itemID), c)
@@ -255,7 +259,7 @@ end
 -- query with no answer for AH.STALL seconds (one timer per send; a stale one does nothing) or a
 -- BROWSE_FAILURE counts as failed and the scan goes on. MAX_PAGES bounds the pages of one query.
 AH.STALL = 20
-AH.MAX_PAGES = 25
+AH.MAX_PAGES = 40
 
 -- scan = { queries, i, pages, waiting ("ready" | "results"), token, failed, done, stopped (why) }
 -- found: "itemID:suffix:itemLevel" -> { itemKey, minPrice, totalQuantity, result }; rows: the upgrades
@@ -287,7 +291,7 @@ function AH.BestFor(slotKey)
 	return best
 end
 function AH.Rows() return rows end
-function AH.Scanning() return scan ~= nil and not scan.done end
+function AH.Scanning() return scan ~= nil and (not scan.done or scan.scoring ~= nil) end
 
 function AH.Status()
 	if not scan then return nil end
@@ -295,6 +299,11 @@ function AH.Status()
 	if scan.stopped then return scan.stopped end
 	if scan.cancelled then return string.format("Cancelled (%d/%d searched)", scan.searched, n) end
 	if not scan.done then return string.format("Scanning %d/%d...", math.min(scan.i, n), n) end
+	if scan.scoring then
+		local k = 0
+		for _ in pairs(found) do k = k + 1 end
+		return string.format("Scoring %d results...", k)
+	end
 	local c = counts or {}
 	local s = string.format("Done: %d upgrade%s in %d results", #rows, #rows == 1 and "" or "s", c.results or 0)
 	if (c.notScored or 0) > 0 then s = s .. string.format(", %d not scored", c.notScored) end
@@ -320,11 +329,30 @@ local function collect()
 	end
 end
 
+-- Score what the scan found, over frames (Browser.Start: FRAME_MS per frame): a few thousand results
+-- cost ~60-170 ms under lua5.1, too long for one frame. A later scoring (scores changed) replaces it.
+local function score(s)
+	if s.scoring and s.scoring ~= true then s.scoring:Cancel() end
+	s.scoreToken = (s.scoreToken or 0) + 1
+	local tok, ctx, f = s.scoreToken, ns.Context.Get(), found
+	local function current() return scan == s and s.scoreToken == tok end
+	s.scoring = true
+	local h = ns.Browser.Start(nil, function(res)
+		if not current() then return end
+		s.scoring = nil
+		rows, counts, prices = res[1], res[2], res[3]
+		changed()
+	end, function(_, y) return { AH.Build(f, ctx, s.ahead, y) } end, function()
+		if current() then s.scoring = nil changed() end
+	end)
+	if current() and s.scoring == true then s.scoring = h end
+end
+
 local advance
 local function finish()
 	scan.done = true
 	scan.waiting = nil
-	rows, counts, prices = AH.Build(found, ns.Context.Get(), scan.ahead)
+	score(scan)
 	changed()
 end
 
@@ -368,12 +396,16 @@ advance = function()
 	trySend()
 end
 
+-- Stop: while searching, what was found so far is scored; while scoring, nothing more is.
 local function stop(why)
 	if not AH.Scanning() then return end
+	local wasScoring = scan.done
+	if scan.scoring and scan.scoring ~= true then scan.scoring:Cancel() end
+	scan.scoring = nil
 	scan.done = true
 	scan.waiting = nil
 	if why then scan.stopped = why else scan.cancelled = true end
-	rows, counts, prices = AH.Build(found, ns.Context.Get(), scan.ahead)
+	if not wasScoring then score(scan) end
 	changed()
 end
 
@@ -430,6 +462,7 @@ end)
 
 -- Session only: the auction house closing stops a scan and lets go of every result.
 function AH.Clear()
+	if scan and scan.scoring and scan.scoring ~= true then scan.scoring:Cancel() end
 	scan, found, rows, counts, prices = nil, {}, {}, nil, nil
 	changed()
 end
@@ -438,7 +471,7 @@ ns.RegisterEvent("AUCTION_HOUSE_CLOSED", AH.Clear)
 -- Scores changed (an item bought and equipped, a level, talents): the results are scored again.
 ns.On("SCORES_CHANGED", function()
 	if not (scan and scan.done and next(found)) then return end
-	rows, counts, prices = AH.Build(found, ns.Context.Get(), scan.ahead)
+	score(scan)
 	changed()
 end)
 
