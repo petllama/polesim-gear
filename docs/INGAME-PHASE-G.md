@@ -47,7 +47,9 @@ tab; each step's goals with `t == "turnin"` give quest -> step. It is rebuilt wh
    returns to the list.
 6. "Coming up (levels L+1 to L+5)": up to 10 upgrades whose required level is in the next five
    levels, "level N" in the slot column; hover says "level N item: scored with the weights of levels
-   A-B" (the band it would be worn in). Not shown at 60.
+   A-B" (the band it would be worn in). Not shown at 60. Wearing a two-hander, a coming one-hander
+   says "with <off hand> in the off hand", the best off hand you can have by that level (any level up
+   to it, as on the website), and the reverse for an off hand ("with <one-hander> in the main hand").
 7. Gating, check each:
    - no Alliance-only quest rewards on a Horde priest (and the reverse);
    - no rewards of quests you already turned in: note a Quest row, turn that quest in, close and

@@ -123,6 +123,46 @@ return {
 		T.eq(m.coming[1].c.id, 5); T.eq(m.coming[1].at, 22); T.near(m.coming[1].gain, 38, 1e-9, "int 20 x 2 - worn 2")
 		T.eq(#B.Rows(m.coming, "quest"), 0)
 	end,
+	-- Coming up under a worn two-hander: a level 21 one-hander is paired with the best off hand available
+	-- by level 21 (here a level 10 one, from no "coming" level), as the website picks the pair from every
+	-- candidate up to that level; and the reverse for an off hand.
+	coming_pairs_across_levels = function()
+		local B = T.addon(FILES).Browser
+		local e = env()
+		e.ahead = 1
+		local items = {
+			[31] = rec(31, 23, 4, 10, { c = 4, sc = 0 }), [32] = rec(32, 13, 5, 21, { c = 2, sc = 4 }),
+			[33] = rec(33, 13, 3, 12, { c = 2, sc = 4 }), [34] = rec(34, 23, 6, 21, { c = 4, sc = 0 }),
+		}
+		e.codex.Item = function() return { sources = { { type = "quest", quest = 100 } } } end
+		e.at = function(level)
+			return { w = level > 20 and W2 or W1, style = "any", worn = { [16] = { inst = { id = 99, inv = 17 }, score = 3 } } }
+		end
+		local function coming(byInv)
+			e.items = { Get = function(id) return items[id] end, ByInv = function() return byInv end }
+			local by = {}
+			for _, r in ipairs(B.Build(e).coming) do by[r.c.id] = r end
+			return by
+		end
+		local by = coming({ [23] = { 31 }, [13] = { 32 } })
+		T.ok(by[32], "the level 21 one-hander is coming up")
+		T.eq(by[32].note, "with Item 31 in the off hand"); T.near(by[32].gain, 10 + 8 - 3, 1e-9)
+		-- a better off hand of level 22 is not available at 21 (the weapons are collected once per band)
+		e.ahead = 2
+		items[35] = rec(35, 23, 9, 22, { c = 4, sc = 0 })
+		by = coming({ [23] = { 31, 35 }, [13] = { 32 } })
+		T.eq(by[32].note, "with Item 31 in the off hand", "at 21")
+		local get, gets = e.items.Get, 0
+		e.items.Get = function(id) if id == 31 then gets = gets + 1 end return get(id) end
+		B.Build(e)
+		-- now: rl + candidate; each coming level's own window: rl; the band's pairing pool, once: rl + candidate
+		T.eq(gets, 2 + 2 + 2, "the pairing weapons are collected once per band, not per level")
+		T.eq(by[35].note, "with Item 32 in the main hand"); T.near(by[35].gain, 18 + 10 - 3, 1e-9)
+		e.ahead = 1
+		by = coming({ [23] = { 34 }, [13] = { 33 } })
+		T.ok(by[34], "the level 21 off hand is coming up")
+		T.eq(by[34].note, "with Item 33 in the main hand"); T.near(by[34].gain, 12 + 6 - 3, 1e-9)
+	end,
 	-- The model keeps per slot (and for "coming up") the best KEEP rows of each source kind: every filter
 	-- still finds its own top rows, and a long tail of small upgrades is not held while the window is open.
 	trim_keeps_the_top_of_each_kind = function()
