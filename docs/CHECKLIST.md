@@ -317,15 +317,7 @@ follows.
 
 **K11.** Equip an upgrade from the list with the window open: the list scores again by itself.
 
-**K12. Time** (this one hitches once, on purpose):
-
-```
-/run local t=debugprofilestop() PoleSimGear.Browser.Build(PoleSimGear.BrowserUI.Env()) print(format("build %.0f ms",debugprofilestop()-t))
-```
-
-Offline it took ~200 ms at level 20, 360 ms at 40, 610 ms at 60 (the window spreads it over frames).
-
-**K13. Memory**, window closed, then open (wait for the list), then closed again:
+**K12. Memory**, window closed, then open (wait for the list), then closed again:
 
 ```
 /run collectgarbage() UpdateAddOnMemoryUsage() print(format("PoleSim Gear %.0f KB",GetAddOnMemoryUsage("PoleSimGear")))
@@ -333,6 +325,17 @@ Offline it took ~200 ms at level 20, 360 ms at 40, 610 ms at 60 (the window spre
 
 Expected: open adds a few MB at most, closing gives it back. (Polestar's own number grows ~7 MB the
 first time any addon reads its Codex: Polestar's, once per session.)
+
+**K13. Time** (this one hitches once, on purpose):
+
+```
+/run local t=debugprofilestop() PoleSimGear.Browser.Build(PoleSimGear.BrowserUI.Env()) print(format("build %.0f ms",debugprofilestop()-t))
+```
+
+Offline it took ~200 ms at level 20, 360 ms at 40, 610 ms at 60 (the window spreads it over frames).
+
+After K13, close and reopen the window once: K13 builds the item index outside the window, and
+only a window close releases it.
 
 **K14. Skyborne only.**
 
@@ -413,6 +416,14 @@ in open bags, vendor and mail update (no `/reload`); opening a bag or the vendor
 - Crafted items are gated by "about level = skill / 5" (the website's rule), not by your profession.
 - The tooltip compares one item with what you wear: a one-hander under a worn two-hander says it
   leaves the off hand empty, while the browser pairs it with the best off hand (R9).
+- With the Quests / Dungeons / Crafted filters on, a one-hander's paired off hand is still the best
+  from all sources (the website recomputes per filter).
+- No dual wield yet (no priest can); added with the melee classes.
+- If the client leaves an item's equip bonuses out of its stats, the tooltip fills that whole group
+  from PoleSim's item table (Shift shows "(item table)" on those lines).
+- Tooltip (live stats) and browser (shipped table) can differ when Forever changes an item before the
+  table is regenerated; table weapon DPS is rounded to 2 decimals.
+- Polestar's own reward highlight (vendor value, the coin) stays on even after answering Yes.
 - If Polestar changes its internals, a part turns off instead of erroring: no route tags (guide),
   "Polestar's Codex is not available" (Codex), no question (settings), or an orange "some sources
   could not be read" line.
