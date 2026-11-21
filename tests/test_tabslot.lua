@@ -29,6 +29,8 @@ return {
 		T.ok(rows[1].item.sub.text ~= "", "first source shown")
 		T.ok(rows[1].level.text:match("^lvl %d+"), rows[1].level.text)
 		T.eq(rows[1].kind.text, ns.Style.KIND_SHORT[rows[1].d.c.sources[1].kind])
+		T.ok(rows[1].pct.text:find("%%"), "Gain % shown: " .. tostring(rows[1].pct.text))
+		T.eq(rows[1].pct.text, ns.Style.Pct(rows[1].d.gain, rows[1].d.base))
 		rows[2].action:Click()
 		T.eq(ns.Plan.Get("shadow", "head"), ns.Browser.KeyOf(rows[2].d.c.inst))
 		rows = U.rows(p.list)

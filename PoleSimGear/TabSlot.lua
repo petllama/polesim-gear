@@ -133,7 +133,7 @@ function Tab.List(rows)
 	local key, v = st.slot, ns.Options.View()
 	local out, now = {}, 0
 	for i, r in ipairs(rows) do
-		out[i] = { c = r.c, gain = r.gain, at = r.at, note = r.note, slot = r.slot, index = i }
+		out[i] = { c = r.c, gain = r.gain, base = r.base, at = r.at, note = r.note, slot = r.slot, index = i }
 		if not r.at then now = now + 1 end
 	end
 	if #out == 0 then out[1] = { empty = "No upgrade for this slot from the ticked sources.", index = 1 } end

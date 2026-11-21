@@ -49,7 +49,9 @@ Style.ACTION = { C.dd, C.ddBorder, C.text, C.tabHover }
 function Style.Signed(x, suffix) return format("%+.1f", x) .. (suffix or "") end
 function Style.Pct(gain, base)
 	if not base or base <= 0.01 then return "" end
-	return format("%+.1f%%", 100 * gain / base)
+	local pct = 100 * gain / base
+	if pct >= 99.95 or pct <= -99.95 then return format("%+.0f%%", pct) end -- fits the 44 px column
+	return format("%+.1f%%", pct)
 end
 function Style.Thousands(x)
 	local s = format("%.1f", x)
