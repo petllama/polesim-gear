@@ -1,6 +1,6 @@
 # PoleSim Gear
 
-Version 0.3.5. WoW: Forever addon: PoleSim's simulated, level-banded gear weights in game. Item scores with a
+Version 0.3.6. WoW: Forever addon: PoleSim's simulated, level-banded gear weights in game. Item scores with a
 "how?" breakdown, upgrade arrows, the best quest reward, and a gear planner window with where to get
 each upgrade. Private, while it is being tested.
 

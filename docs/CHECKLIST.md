@@ -1,4 +1,8 @@
-# In-game checklist (one session, on a priest; section M on a mage) — PoleSim Gear 0.3.5
+# In-game checklist (one session, on a priest; section M on a mage) — PoleSim Gear 0.3.6
+
+**0.3.6 over 0.3.5:** bag (and Bagnon, loot roll, merchant, mail) item buttons that are upgrades show
+their gain in green at the icon's bottom ("+1.0"), as on quest rewards; nothing for non-upgrades (no
+minus numbers); auction house rows keep the arrow only. `/reload` is enough.
 
 **0.3.5 over 0.3.4** (no new files: `tools/install.sh` then `/reload` is enough): main hand and off hand
 are **one decision, the weapon set**: a two-hander alone, or a one-hander + an off hand. The Gear Plan

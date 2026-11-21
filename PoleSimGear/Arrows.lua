@@ -7,11 +7,13 @@ local ADDON, ns = ...
 local Arrows = {}
 ns.Arrows = Arrows
 
--- inst, ctx, cmp (Equip.Compare, optional) -> true when it is an upgrade the character can wear now
+-- inst, ctx, cmp (Equip.Compare, optional) -> true, gain when it is an upgrade the character can wear
+-- now; else false
 function Arrows.IsUpgrade(inst, ctx, cmp)
 	if not ns.Equip.CanUse(inst, ctx.cls, ctx.level) or (inst.rl or 0) > ctx.level then return false end
 	cmp = cmp or ns.Equip.Compare(inst, ctx.w, ctx.cls, ctx.worn, false)
-	return cmp ~= nil and not cmp.equipped and cmp.gain > 1e-6
+	if cmp ~= nil and not cmp.equipped and cmp.gain > 1e-6 then return true, cmp.gain end
+	return false
 end
 
 local waiting = {} -- item id -> true: a verdict waited for the client's item data
@@ -36,8 +38,11 @@ function Arrows.VerdictByID(id)
 end
 
 local marks = setmetatable({}, { __mode = "k" })
+local gains = setmetatable({}, { __mode = "k" })
 -- Our arrow sits top-right (Polestar's own sits top-left, so both stay readable if the player keeps both).
-function Arrows.Mark(button, show)
+-- gain (optional): an upgrade's gain, in green at the icon's bottom as on quest rewards (no text for a
+-- non-upgrade: no minus numbers).
+function Arrows.Mark(button, show, gain)
 	local t = marks[button]
 	if show and not t then
 		t = button:CreateTexture(nil, "OVERLAY", nil, 4)
@@ -46,13 +51,26 @@ function Arrows.Mark(button, show)
 		marks[button] = t
 	end
 	if t then t:SetShown(show and true or false) end
+	local fs = gains[button]
+	local text = show and type(gain) == "number" and gain > 0
+	if text and not fs and button.CreateFontString then
+		fs = button:CreateFontString(nil, "OVERLAY", "NumberFontNormalSmall")
+		fs:SetPoint("BOTTOM", button, "BOTTOM", 0, 2)
+		gains[button] = fs
+	end
+	if fs then
+		if text then fs:SetText(string.format("|cff4cff4c%+.1f|r", gain)) end
+		fs:SetShown(text and true or false)
+	end
 end
 
 -- Paint one button for one link (verdict: Arrows.Verdict, or another function of the link). An error
 -- is trapped per button, so the other buttons still paint; it is reported once per link per session
 -- (shared with the tooltip's reporter), and the button keeps no arrow.
 local function paint(button, link, verdict)
-	Arrows.Mark(button, link and (verdict or Arrows.Verdict)(link))
+	if not link then return Arrows.Mark(button, false) end
+	local show, gain = (verdict or Arrows.Verdict)(link)
+	Arrows.Mark(button, show, gain)
 end
 function Arrows.Paint(button, link, verdict)
 	if ns.Options and ns.Options.Get("arrows") == false then pcall(Arrows.Mark, button, false) return end
@@ -254,7 +272,8 @@ local AH_LISTS = {
 local function paintRow(list, item, row, data)
 	local d = type(data) == "number" and type(list.getEntry) == "function" and list.getEntry(data) or row.rowData
 	local key, verdict = item(d)
-	Arrows.Paint(row, key or nil, verdict)
+	-- a wide row: the arrow only (a gain under a row's middle would sit over its text)
+	Arrows.Paint(row, key or nil, function(k) return (verdict(k)) end)
 end
 local function hookAuctionHouse()
 	local AH = AuctionHouseFrame

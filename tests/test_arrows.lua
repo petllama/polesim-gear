@@ -109,6 +109,34 @@ return {
 		A.Mark(button, false)
 		T.eq(tex.shown, false)
 	end,
+	-- An upgrade also shows its gain in green at the icon's bottom, as on quest rewards; no gain, no text.
+	mark_gain = function()
+		local A = T.addon(FILES).Arrows
+		local function tex() local t = { shown = false } function t:SetAtlas() end function t:SetPoint() end
+			function t:SetShown(v) self.shown = v end return t end
+		local fs = { shown = false, text = "" }
+		function fs:SetPoint() end
+		function fs:SetText(v) self.text = v end
+		function fs:SetShown(v) self.shown = v end
+		local made = 0
+		local button = { CreateTexture = function() return tex() end,
+			CreateFontString = function() made = made + 1 return fs end }
+		A.Mark(button, true, 1.04)
+		T.eq(fs.text, "|cff4cff4c+1.0|r"); T.eq(fs.shown, true)
+		A.Mark(button, true, 12.35)
+		T.eq(fs.text, "|cff4cff4c+12.3|r"); T.eq(made, 1, "made once")
+		A.Mark(button, true)
+		T.eq(fs.shown, false, "an arrow without a gain: no text")
+		A.Mark(button, false, 3)
+		T.eq(fs.shown, false, "not an upgrade: no text (no minus numbers)")
+	end,
+	verdict_gives_gain = function()
+		local ns = live({ up = head(6), down = head(4) })
+		local ok, gain = ns.Arrows.Verdict("up")
+		T.eq(ok, true); T.near(gain, 1, 1e-6, "6 int over 5")
+		local no, g2 = ns.Arrows.Verdict("down")
+		T.eq(no, false); T.eq(g2, nil)
+	end,
 	-- New scores redraw the shown buttons once (not per event); item data redraws only when an arrow
 	-- waited for that item.
 	redraw_debounced = function()
