@@ -31,6 +31,50 @@ return {
 		T.eq(select(2, S.QuestOk(q({ races = 4294967373 }), player, 20)), "other races")
 		T.ok(S.QuestOk(q({ races = 4294967373 }), { faction = "A", classBit = 16, raceBit = 1, completed = player.completed }, 20))
 	end,
+	views = function()
+		local S = T.addon(FILES).Sources
+		local codex = {
+			Item = function(id)
+				if id == 1 then return { status = "retired", sources = {} } end
+				return { sources = {
+					{ type = "quest", quest = 100, choice = true },
+					{ type = "drop", npc = 7, chance = 12.5 },
+					{ type = "drop", npc = 8 }, -- open world
+					{ type = "drop", npc = 9, instance = "MC" }, -- raid
+					{ type = "craft", skill = 150, profession = "Tailoring" },
+					{ type = "vendor", npc = 3 },
+				} }
+			end,
+			Quest = function(id) return { id = id, title = "Wanted", level = 22, zone = 40 } end,
+			Zone = function() return { name = "Westfall" } end,
+			Npc = function(id)
+				if id == 7 then return { name = "Boss", level = 24, boss = true, instance = "DM" } end
+				return { name = "Mob", level = 20 }
+			end,
+			Instance = function(key) return { name = key == "DM" and "The Deadmines" or "Molten Core", kind = key == "DM" and "dungeon" or "raid" } end,
+		}
+		T.eq(S.For(1, codex, player, 20), nil, "retired")
+		local v = S.For(2, codex, player, 20)
+		T.eq(#v, 3)
+		T.eq(v[1].kind, "quest"); T.ok(v[1].ok); T.eq(v[1].text, "Quest: Wanted (22), a choice"); T.eq(v[1].where, "Westfall")
+		T.eq(v[2].kind, "dungeon"); T.eq(v[2].text, "Drop: Boss (boss), 12.5%"); T.eq(v[2].where, "The Deadmines"); T.ok(v[2].ok)
+		T.eq(v[3].kind, "crafted"); T.ok(not v[3].ok); T.eq(v[3].why, "skill 150 (about level 30)")
+		T.eq(v[3].text, "Crafted: Tailoring 150")
+	end,
+	-- A Codex that changed upstream (a function gone, a read that errors) costs the item its sources, never
+	-- an error in the browser.
+	views_guarded = function()
+		local S = T.addon(FILES).Sources
+		local codex = {
+			Item = function() return { sources = { { type = "drop", npc = 7 }, { type = "quest", quest = 1 } } } end,
+			Quest = function() error("changed upstream") end,
+		}
+		local v = S.For(2, codex, player, 20)
+		T.eq(type(v), "table"); T.eq(#v, 0)
+		codex.Item = function() error("changed upstream") end
+		T.eq(#S.For(2, codex, player, 20), 0)
+		T.ok(S.lastError, "kept for the window to mention")
+	end,
 	needs = function()
 		local S = T.addon(FILES).Sources
 		local codex = { Quest = function(id) return { id = id, title = "First " .. id } end }
