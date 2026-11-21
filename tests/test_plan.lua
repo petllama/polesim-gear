@@ -25,6 +25,8 @@ return {
 		ns.On("PLAN_CHANGED", function() fired = fired + 1 end)
 		P.Set("shadow", "neck", { id = 2 }); P.Clear("shadow", "neck")
 		T.eq(fired, 2)
+		P.Clear("shadow", "neck"); P.Clear("holy", "head")
+		T.eq(fired, 2, "nothing to clear: no PLAN_CHANGED")
 	end,
 	bad_saved_value = function()
 		local ns = load({ plan = { shadow = "x" } })

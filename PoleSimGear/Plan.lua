@@ -32,11 +32,11 @@ function Plan.Set(spec, key, inst)
 	ns.Fire("PLAN_CHANGED", spec, key)
 end
 
+-- Fires PLAN_CHANGED only when there was a pick to clear.
 function Plan.Clear(spec, key)
 	local t = bySpec(spec)
-	if t and t[key] ~= nil then
-		t[key] = nil
-	end
+	if not (t and t[key] ~= nil) then return end
+	t[key] = nil
 	ns.Fire("PLAN_CHANGED", spec, key)
 end
 
