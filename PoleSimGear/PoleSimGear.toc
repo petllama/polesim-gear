@@ -15,4 +15,5 @@ Data\Items.lua
 Items.lua
 Score.lua
 Bands.lua
+Spec.lua
 Equip.lua
