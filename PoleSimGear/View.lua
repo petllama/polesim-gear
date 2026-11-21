@@ -13,7 +13,8 @@ function View.Inst(id, bonus)
 	return ns.Score.Instance(it, bonus)
 end
 
--- model, worn (Context), st = { spec, filters, ahead, show } -> entries:
+-- model, worn (Context), st = { spec, filters, ahead, show, preferQuest } -> entries (preferQuest: a
+-- slot's suggestion is its best upgrade from an upcoming guide quest within 2 levels of model.level):
 --  upgrades/all: { def, worn, rows, entry (Plan.Resolve), why (missing pick), priority (1..) }
 --  wishlist:     { def|nil, row|nil, missing|nil, why|nil, key }
 function View.PlanEntries(model, worn, st)
@@ -22,7 +23,7 @@ function View.PlanEntries(model, worn, st)
 	for _, def in ipairs(B.SLOTS) do
 		local rows = B.SlotRows(model, def.key, st.ahead, st.filters)
 		local pick = ns.Plan.Get(st.spec, def.key)
-		local entry = ns.Plan.Resolve(rows, pick)
+		local entry = ns.Plan.Resolve(rows, pick, st.preferQuest and model.level or nil)
 		local e = { def = def, worn = B.WornFor(def, worn), rows = rows, entry = entry }
 		if entry.missing then e.why = ns.Plan.Why(model, def.key, pick, st.ahead, st.filters) end
 		if entry.plan or entry.missing then withPlan[#withPlan + 1] = e else rest[#rest + 1] = e end

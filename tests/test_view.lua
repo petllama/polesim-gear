@@ -65,6 +65,27 @@ return {
 		st.ahead = 5
 		T.eq((ns.View.Progress(m, worn, st)), total - 1, "progress counts upgrades available NOW")
 	end,
+	-- st.preferQuest: the suggestion is the best upgrade from an upcoming guide quest within 2 levels of
+	-- the model's level (the player's, not the look ahead); off -> the best overall.
+	near_quest_suggestion = function()
+		local ns = load()
+		local m = model()
+		local q = r(6, 2, { quest = true })
+		q.c.sources = { { kind = "quest", ok = true, questId = 600, level = 21, route = { ahead = 4, guide = "G" } } }
+		m.now.head[3] = q
+		local st = { spec = "shadow", filters = ALL, ahead = 0, show = "upgrades", preferQuest = true }
+		local function head(es) for _, e in ipairs(es) do if e.def.key == "head" then return e end end end
+		local e = head(ns.View.PlanEntries(m, worn, st))
+		T.eq(e.entry.plan.c.id, 6); T.eq(e.entry.best.c.id, 1); T.eq(e.entry.near, true)
+		st.preferQuest = false
+		e = head(ns.View.PlanEntries(m, worn, st))
+		T.eq(e.entry.plan.c.id, 1, "setting off: BiS as before")
+		-- a pick wins
+		local ns2 = load({ plan = { shadow = { head = "2:0" } } })
+		st.preferQuest = true
+		e = head(ns2.View.PlanEntries(m, worn, st))
+		T.eq(e.entry.plan.c.id, 2)
+	end,
 	weights = function()
 		local ns = load()
 		local rows = ns.View.WeightRows({ int = 0.4, spShadow = 1, sta = 0.1, armor = 0 }, nil)

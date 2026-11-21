@@ -18,6 +18,8 @@ Tab.SWITCHES = {
 	{ "Upgrade arrows on bags, merchants, mail and the auction house", function() return ns.Options.Get("arrows") end,
 		function(on) ns.Options.Set("arrows", on) end },
 	{ "Mark the best quest reward", function() return ns.Options.Get("rewardMark") end, function(on) ns.Options.Set("rewardMark", on) end },
+	{ "Prefer upgrades from upcoming guide quests (within 2 levels)", function() return ns.Options.Get("preferQuest") end,
+		function(on) ns.Options.Set("preferQuest", on) end },
 }
 
 function Tab.Create(parent)

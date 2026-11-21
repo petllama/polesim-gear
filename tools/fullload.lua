@@ -126,6 +126,34 @@ for li, L in ipairs(levels) do
 						r.gain, r.c.score, table.concat(src, "; ")))
 				end
 			end
+			-- the suggestions a near quest (upcoming guide quest within 2 levels) would change if every
+			-- available quest were on the route (the fake guide has none yet): an upper bound
+			local m, put = Win.state.model, {}
+			for _, def in ipairs(ns.Browser.SLOTS) do
+				for _, list in ipairs({ m.now[def.key] or {}, m.coming[def.key] or {} }) do
+					for _, r in ipairs(list) do
+						for _, s in ipairs(r.c.sources) do
+							if s.questId and not s.route then s.route = { ahead = 1, guide = "all" }; put[#put + 1] = s end
+						end
+					end
+				end
+			end
+			local st = Win.St()
+			st.show, st.preferQuest = "upgrades", true
+			print(format("Near quests (level <= %d) over BiS, if their quests were on your route (look ahead %d):", L + 2, st.ahead))
+			local any
+			for _, e in ipairs(ns.View.PlanEntries(m, c.worn, st)) do
+				local en = e.entry
+				if en.near and en.best and en.best ~= en.plan then
+					any = true
+					local q
+					for _, s in ipairs(en.plan.c.sources) do if s.kind == "quest" then q = s break end end
+					print(format("  %-10s %-34s %+6.1f (%s)  vs BiS %-30s %+6.1f", e.def.label, en.plan.c.inst.name, en.plan.gain,
+						q and q.text or "?", en.best.c.inst.name, en.best.gain))
+				end
+			end
+			if not any then print("  none") end
+			for _, s in ipairs(put) do s.route = nil end
 		end
 		step("close", function() _G.PoleSimGearFrame.close:Click() end)
 		local kbClosed = kb()

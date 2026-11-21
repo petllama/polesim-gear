@@ -135,7 +135,7 @@ function Tab.Init(row, d)
 	row.srcIcon:SetTexture(s and S.KIND_ICON[s.kind])
 	row.kind:SetText(s and S.KIND_SHORT[s.kind] or "")
 	row.star:Set(ns.Wishlist.Has(d.c.inst))
-	ns.Window.PlanLabel(row.action, d, d.index == 1)
+	ns.Window.PlanLabel(row.action, d, true)
 end
 
 -- The rows' list data; the model keeps the best KEEP per kind, so when more upgrades now pass the

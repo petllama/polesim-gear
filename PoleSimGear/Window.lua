@@ -80,7 +80,8 @@ end
 function Win.St()
 	local ctx = ns.Context.Get()
 	local v = ns.Options.View()
-	return { spec = ctx and ctx.spec, filters = v.filters, ahead = v.ahead, show = v.show }
+	return { spec = ctx and ctx.spec, filters = v.filters, ahead = v.ahead, show = v.show,
+		preferQuest = ns.Options.Get("preferQuest") }
 end
 
 function Win.Panel(key) return panels[key] end
@@ -760,17 +761,36 @@ function Win.RowLines(r, ctx, band, hint, extra)
 	if hint then GameTooltip:AddLine(hint, 0.6, 0.6, 0.6, true) end
 end
 
+-- The Gear Plan's suggestion for a slot ("id:bonus") | nil (no model, nothing better)
+-- (one slot only: Slot Upgrades rows ask it as they scroll in), and whether it is a near quest
+function Win.SuggestedKey(key)
+	local m = state.model
+	if not m then return nil end
+	local st = Win.St()
+	local e = ns.Plan.Resolve(ns.Browser.SlotRows(m, key, st.ahead, st.filters), nil, st.preferQuest and m.level or nil)
+	return e.suggestion and ns.Browser.KeyOf(e.suggestion.c.inst) or nil, e.near
+end
+
 -- The "Set as plan" button of an upgrade row d ({ c, slot }) in Slot Upgrades and Sources: its label
--- (the pick's own row says "Your pick", the suggestion "Suggested" when first) and its click.
-function Win.PlanLabel(btn, d, first)
+-- (the pick's own row says "Your pick", the Gear Plan's suggestion "Suggested") and its click.
+-- slotList: Slot Upgrades (marks the suggestion; its first row when there is no plan pass); Sources: no mark.
+function Win.PlanLabel(btn, d, slotList)
 	local ctx = ns.Context.Get()
 	local pick = ctx and ns.Plan.Get(ctx.spec, d.slot.key)
-	if pick and pick == ns.Browser.KeyOf(d.c.inst) then
+	local key = ns.Browser.KeyOf(d.c.inst)
+	local suggested, near = false, nil
+	if slotList and not pick then
+		local sk
+		sk, near = Win.SuggestedKey(d.slot.key)
+		if sk then suggested = sk == key else suggested = d.index == 1 end
+	end
+	if pick and pick == key then
 		btn.label:SetText(S.Colour(C.pick) .. "Your pick|r")
 		btn.tip = "Click: back to the suggestion"
-	elseif not pick and first then
+	elseif not pick and suggested then
 		btn.label:SetText("Suggested")
-		btn.tip = "The best upgrade: the plan unless you pick another"
+		btn.tip = near and "An upgrade from an upcoming guide quest within 2 levels: the plan unless you pick another"
+			or "The best upgrade: the plan unless you pick another"
 	else
 		btn.label:SetText("Set as plan")
 		btn.tip = nil

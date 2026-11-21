@@ -1,6 +1,6 @@
 # PoleSim Gear
 
-Version 0.3.3. WoW: Forever addon: PoleSim's simulated, level-banded gear weights in game. Item scores with a
+Version 0.3.4. WoW: Forever addon: PoleSim's simulated, level-banded gear weights in game. Item scores with a
 "how?" breakdown, upgrade arrows, the best quest reward, and a gear planner window with where to get
 each upgrade. Private, while it is being tested.
 
@@ -26,7 +26,9 @@ seen in a dungeon, Dungeons keep boss drops and blue+ items) and what to show (A
 Wishlist). At the bottom: your equipped gear, with a dot on each slot that has a plan (green: a suggested
 upgrade, gold: your pick; hover a slot for the item and its gain), and the stat weights in use.
 
-- **Gear Plan:** one row per slot: your pick, else the best upgrade, with its gain and source. Click a
+- **Gear Plan:** one row per slot: your pick, else the suggestion: the best upgrade from an upcoming
+  quest of your Polestar guide within 2 levels ("near quest", with the best overall's "BiS +N"; Settings
+  can turn this off), else the best upgrade, with its gain and source. Click a
   row for that slot's upgrades; right-click: back to the suggestion, wishlist. Hover: the game's item tooltip (with
   its random suffix), then the "how?"; Shift compares with what you wear.
 - **Slot Upgrades:** every upgrade of one slot, with its level, source, "in 12 steps" for a quest one
@@ -37,7 +39,7 @@ upgrade, gold: your pick; hover a slot for the item and its gain), and the stat 
   upgrades; **Waypoint** sets Polestar's arrow to a quest giver, a dungeon entrance or a vendor
   (through Polestar's Nav API).
 - **Weights:** your band's weights (step through the other bands) and the spec switch.
-- **Settings:** minimap button, tooltip score line, upgrade arrows, the quest reward mark, the look
+- **Settings:** minimap button, tooltip score line, upgrade arrows, the quest reward mark, preferring upcoming guide quests, the look
   ahead a new character starts with, and Polestar's gear-score question.
 
 ## Commands

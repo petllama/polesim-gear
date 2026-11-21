@@ -84,13 +84,13 @@ return {
 		T.eq(picked.e.entry.plan.c.id, second.c.id)
 		T.ok(picked.plan.sub.text:find("Your pick", 1, true), picked.plan.sub.text)
 		if list[1].gain - second.gain > 1e-6 then
-			-- the row: "best +N" only (a name would be cut); the tooltip names the better item
+			-- the row: "BiS +N" only (a name would be cut); the tooltip names the better item
 			local sub = picked.plan.sub.text
-			T.ok(sub:find("best " .. ns.Style.Colour(ns.Style.C.green) .. "+", 1, true), sub)
+			T.ok(sub:find("BiS " .. ns.Style.Colour(ns.Style.C.green) .. "+", 1, true), sub)
 			T.ok(not sub:find(list[1].c.inst.name, 1, true), "no name on the row: " .. sub)
 			picked.scripts.OnEnter(picked)
 			local tip = table.concat(U.tip.lines, "\n")
-			T.ok(tip:find("Better: " .. list[1].c.inst.name .. " " .. ns.Style.Signed(list[1].gain), 1, true), tip)
+			T.ok(tip:find("Best overall: " .. list[1].c.inst.name .. " " .. ns.Style.Signed(list[1].gain), 1, true), tip)
 		end
 		picked.scripts.OnClick(picked, "RightButton")
 		local labels = {}
@@ -103,6 +103,63 @@ return {
 		rows = rowsOf(fx)
 		rows[1].scripts.OnClick(rows[1], "LeftButton")
 		T.eq(ns.Options.View().tab, "slot"); T.eq(ns.Window.state.slot, rows[1].e.def.key)
+		fx.done()
+	end,
+	-- An upgrade from an upcoming guide quest within 2 levels is the suggestion over the BiS: the row says
+	-- "near quest" and "BiS +N", the tooltip "Best overall: <item> +N (<source>)", the strip's tooltip
+	-- and Slot Upgrades name it; the setting off brings the BiS back.
+	near_quest_suggestion = function()
+		local fx = F.load()
+		local ns, U = fx.ns, fx.U
+		local f = fx.open()
+		T.eq(ns.Options.Get("preferQuest"), true)
+		local key, list, q
+		for _, def in ipairs(ns.Browser.SLOTS) do
+			local rows = ns.Browser.SlotRows(ns.Window.state.model, def.key, 0, ns.Options.View().filters)
+			for i = 2, #rows do
+				local s = rows[i].c.sources[1]
+				if s.kind == "quest" and rows[1].gain - rows[i].gain > 0.1 and not rows[1].c.kinds.quest then key, list, q = def.key, rows, rows[i] break end
+			end
+			if key then break end
+		end
+		T.ok(key, "a slot whose BiS is not a quest and that has a quest upgrade")
+		local function row()
+			for _, x in ipairs(rowsOf(fx)) do if x.e.def.key == key then return x end end
+		end
+		-- not on the route: BiS stays
+		ns.Window.Refresh()
+		T.eq(row().e.entry.plan, list[1], "a quest not on the guide never replaces BiS")
+		q.c.sources[1].route = { guide = "Westfall", step = 40, ahead = 6, active = true }
+		ns.Window.Refresh()
+		local x = row()
+		T.eq(x.e.entry.plan, q); T.eq(x.e.entry.near, true)
+		local sub = x.plan.sub.text
+		T.ok(sub:find("near quest", 1, true), sub)
+		T.ok(sub:find("BiS " .. ns.Style.Colour(ns.Style.C.green) .. ns.Style.Signed(list[1].gain), 1, true), sub)
+		T.eq(x.delta.text, ns.Style.Signed(q.gain), "the row is the quest's")
+		x.scripts.OnEnter(x)
+		local tip = table.concat(U.tip.lines, "\n")
+		T.ok(tip:find("Best overall: " .. list[1].c.inst.name .. " " .. ns.Style.Signed(list[1].gain) .. " (" .. list[1].c.sources[1].text, 1, true), tip)
+		-- the strip's tooltip names the suggestion
+		local slot = x.e.def.slot
+		if key == "finger" or key == "trinket" then
+			for s, e in pairs(ns.Window.badges or {}) do if e == x.e then slot = s end end
+		end
+		local line = ns.Window.SlotPlanLine(slot)
+		T.ok(line and line:find("Suggested upgrade: " .. q.c.inst.name, 1, true), tostring(line))
+		-- Slot Upgrades: the quest says "Suggested", the BiS row stays listed
+		ns.Window.OpenSlot(key)
+		local srows = U.rows(ns.Window.Panel("slot").list)
+		local labels = {}
+		for _, r in ipairs(srows) do
+			if r.d and r.d.c then labels[r.d.c.id] = U.ownText(r.action) end
+		end
+		T.eq(labels[q.c.id], "Suggested"); T.eq(labels[list[1].c.id], "Set as plan")
+		-- the setting off: BiS as before
+		ns.Options.Set("preferQuest", false)
+		ns.Window.SetTab("plan")
+		T.eq(row().e.entry.plan, list[1])
+		T.ok(not row().plan.sub.text:find("near quest", 1, true))
 		fx.done()
 	end,
 	-- A worn item from the client (Live.Instance) shows its link name and icon in "Current item".

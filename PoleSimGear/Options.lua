@@ -5,7 +5,7 @@ local ADDON, ns = ...
 local Options = {}
 ns.Options = Options
 
-Options.DEFAULTS = { tooltip = true, arrows = true, rewardMark = true, ahead = 0 }
+Options.DEFAULTS = { tooltip = true, arrows = true, rewardMark = true, ahead = 0, preferQuest = true }
 Options.KINDS = { "quest", "dungeon", "crafted", "vendor", "world" } -- Browser.KINDS (Browser loads later)
 Options.FILTER_DEFAULTS = { quest = true, dungeon = true, crafted = true, vendor = true, world = false }
 Options.SHOWS = { all = true, upgrades = true, wishlist = true }

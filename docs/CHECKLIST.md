@@ -1,4 +1,12 @@
-# In-game checklist (one session, on a priest; section M on a mage) — PoleSim Gear 0.3.3
+# In-game checklist (one session, on a priest; section M on a mage) — PoleSim Gear 0.3.4
+
+**0.3.4 over 0.3.3** (no new files: `tools/install.sh` then `/reload` is enough): when a slot has no
+pick of yours, the Gear Plan suggests an upgrade from an **upcoming quest of your Polestar guide** (a
+turn-in ahead on the active guide, another open tab or the next guide; quest level and the item's level
+at most your level + 2) over the best overall (a dungeon drop, a craft); the row says "near quest" and
+"BiS +N", the tooltip "Best overall: <item> +N (<source>)". Quests not on your guide never replace the
+best. Settings: "Prefer upgrades from upcoming guide quests (within 2 levels)" (on) turns it off. Check:
+K23.
 
 **0.3.3 over 0.3.2** (no new files: `tools/install.sh` then `/reload` is enough): a quest reward that one
 of your open Polestar guides turns in **ahead of you** says how far: "in 12 steps" (active guide),
@@ -357,8 +365,8 @@ slot's upgrades. Right-click: back to suggestion, wishlist.". Click a row: Slot 
 slot. (The item tooltip above those lines: K21.)
 
 **K8. Picks.** Slot Upgrades on a slot with two or more rows: **Set as plan** on the 2nd row. Gear Plan:
-that slot shows the item with "Your pick" and "best +N" (the suggestion's gain; hover: "Better: <item>
-+N"). Right-click the row -> **Back to suggestion**: the suggestion is back. Pick again, then switch
+that slot shows the item with "Your pick" and "BiS +N" (the best overall's gain; hover: "Best overall:
+<item> +N (<source>)"). Right-click the row -> **Back to suggestion**: the suggestion is back. Pick again, then switch
 spec on the Weights tab (Holy): no pick on that slot; back to **Automatic (talents)**: the pick is back
 (picks are per spec).
 
@@ -381,7 +389,8 @@ now" with what you wear. Back to **Upgrades only**.
 
 **K13. Slot Upgrades.** The slot picker lists every slot; the count line ("N upgrades: Quests 3, Vendors
 2, ..."); rows with "lvl N", the source, "in N steps" in blue on rewards of your guide's turn-ins (K22), "needs:
-<quest> first" in orange; the first row's button says "Suggested". On a crowded slot (chest at 30+),
+<quest> first" in orange; the Gear Plan's suggestion's button says "Suggested" (the first row, or
+a near guide quest: K23). On a crowded slot (chest at 30+),
 where the list was trimmed (25 kept per source kind), the last row says "Show all (N)": click it,
 "Scoring every upgrade..." briefly, then all N.
 
@@ -402,7 +411,7 @@ switches scoring (the header, the bottom weights card and the lists follow; "Now
 **Automatic (talents)** goes back.
 
 **K16. Settings.** Each switch works at once, no `/reload`: minimap button (hidden/shown), the score line
-in item tooltips, the upgrade arrows (bags, merchant), the best quest reward mark. "Look ahead for a new
+in item tooltips, the upgrade arrows (bags, merchant), the best quest reward mark, "Prefer upgrades from upcoming guide quests (within 2 levels)" (K23). "Look ahead for a new
 character" sets the default for a character that never chose one. **Ask again** shows the Polestar
 question (wording pending, see A4) when Polestar's scores are on; the line under it says what you
 answered.
@@ -479,6 +488,24 @@ Expected: `live 75` (your step) and lines like `1234 in 3 steps`. Then:
 - High Robe of the Adjudicator (Assault on Fenris Isle): tagged only if one of your open tabs, or the
   guide your active one hands off to, turns that quest in ahead of where that tab is; then it names the
   guide ("<guide>, in N steps" / "next guide: <guide>"). Nothing on any guide: no tag (as before).
+
+**K23. Upcoming guide quests over BiS (0.3.4).** Polestar's guide on a stretch with quest turn-ins
+ahead (K22), window open (Gear Plan). The slots whose suggestion is a near guide quest:
+
+```
+/run local W=PoleSimGear.Window for _,s in ipairs(PoleSimGear.Browser.SLOTS) do local k,n=W.SuggestedKey(s.key) if n then print(s.key,k,"near quest") end end
+```
+
+Expected: a line per such slot (`legs 1234:0 near quest`), or none when no reward of a turn-in ahead
+beats what you wear. Then:
+- the Gear Plan row of that slot shows the quest's item, gold "near quest", blue "in N steps" and "BiS
+  +N" (the best overall's gain); hover: "Best overall: <item> +N (<source>)";
+- the equipped strip's tooltip of that slot: "Suggested upgrade: <the quest's item> +N";
+- Slot Upgrades on that slot: the quest's row says "Suggested", the BiS row is still listed ("Set as
+  plan"); Set as plan on the BiS row -> Gear Plan: "Your pick" (a pick always wins);
+- a reward of a quest NOT on your guide (or above your level + 2) is never suggested over the best;
+- Settings: untick "Prefer upgrades from upcoming guide quests (within 2 levels)": the Gear Plan shows
+  the best overall again (no "near quest"); tick it again.
 
 ## L. Later in the session (or another session)
 
@@ -578,6 +605,7 @@ gain, source).
 | K20 | turn-in rebuild | |
 | K21 | item tooltips in the window (suffix stats, one score block, Shift compare, current item) | |
 | K22 | Polestar route: "in N steps", count drops after a step, other tab / next guide | |
+| K23 | upcoming guide quests over BiS: "near quest", "BiS +N", Suggested, setting off | |
 | L1 | arrows follow changes | |
 | L2 | other character not asked | |
 | M1 | mage: spec auto-detect, context | |

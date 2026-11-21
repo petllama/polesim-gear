@@ -72,6 +72,14 @@ end
 
 -- the row's plan row (pick or suggestion) | nil
 local function planRow(e) return e.row or (e.entry and e.entry.plan) end
+
+-- The best overall upgrade when the plan row is not it (a pick that gains less, or a near quest
+-- suggested over it) | nil
+function Tab.BisOver(entry)
+	if not (entry and entry.plan and entry.best) or entry.best == entry.plan then return nil end
+	if entry.isPick then return entry.betterBy and entry.best or nil end
+	return entry.near and entry.best or nil
+end
 Tab.PlanRow = planRow
 
 local function primaryKind(r)
@@ -92,14 +100,19 @@ local function fill(row, e)
 	local entry = e.entry or {}
 	if r then
 		local sub
+		local bis = Tab.BisOver(entry)
 		if entry.isPick then
 			sub = S.Colour(C.pick) .. "Your pick|r"
-			if entry.betterBy then
-				-- the name would be cut here: the row tooltip says which item ("Better: ...")
-				sub = sub .. "  best " .. S.Colour(C.green) .. S.Signed(entry.suggestion.gain) .. "|r"
-			end
+		elseif entry.near and bis then
+			-- an upgrade from an upcoming guide quest within 2 levels, suggested over the best overall
+			sub = S.Colour(C.gold) .. "near quest|r"
+			if r.at then sub = sub .. "  level " .. r.at end
 		elseif r.at then
 			sub = "level " .. r.at
+		end
+		if bis then
+			-- the name would be cut here: the row tooltip says which item ("Best overall: ...")
+			sub = sub .. "  BiS " .. S.Colour(C.green) .. S.Signed(bis.gain) .. "|r"
 		end
 		local route
 		for _, s in ipairs(r.c.sources) do route = route or s.route end
@@ -233,8 +246,10 @@ function Tab.Tooltip(row)
 	local r = planRow(e)
 	if r then
 		local entry = e.entry
-		local better = entry and entry.isPick and entry.betterBy and entry.suggestion
-			and format("Better: %s %s", entry.suggestion.c.inst.name or "?", S.Signed(entry.suggestion.gain)) or nil
+		local bis = Tab.BisOver(entry)
+		local src = bis and bis.c.sources[1]
+		local better = bis and format("Best overall: %s %s%s", bis.c.inst.name or "?", S.Signed(bis.gain),
+			src and src.text and (" (" .. src.text .. ")") or "") or nil
 		return ns.Window.RowTooltip(row, r, entry and "Click: this slot's upgrades. Right-click: back to suggestion, wishlist."
 			or "Click: this slot's upgrades.", better)
 	end

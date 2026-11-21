@@ -11,6 +11,7 @@ return {
 		local ns = load({}, {})
 		local O = ns.Options
 		T.eq(O.Get("tooltip"), true); T.eq(O.Get("arrows"), true); T.eq(O.Get("rewardMark"), true); T.eq(O.Get("ahead"), 0)
+		T.eq(O.Get("preferQuest"), true, "prefer upcoming guide quests: on by default")
 		local v = O.View()
 		T.eq(v.show, "upgrades"); T.eq(v.ahead, 0); T.eq(v.tab, "plan")
 		T.eq(v.filters.quest, true); T.eq(v.filters.vendor, true); T.eq(v.filters.world, false, "BoE / World off by default")

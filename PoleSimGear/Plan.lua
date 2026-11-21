@@ -48,13 +48,52 @@ function Plan.Parse(k)
 	return tonumber(id), bonus ~= 0 and bonus or nil
 end
 
+Plan.NEAR_LEVELS = 2 -- "within 2 levels": quest level and wear level <= the player's level + 2
+Plan.NEAR_TIE = 0.05 -- near quests whose gains differ less than this: the fewest steps ahead wins
+
+-- A row's quest source that makes it a "near quest" at this level: available (ok: not done, class,
+-- faction), on the player's Polestar route (s.route: an upcoming turn-in), quest level (else the
+-- item's required level) <= level + 2; the row itself worn by level + 2. -> the source | nil
+function Plan.NearSource(r, level)
+	if r.at and r.at > level + Plan.NEAR_LEVELS then return nil end
+	local best
+	for _, s in ipairs(r.c.sources or {}) do
+		if s.kind == "quest" and s.ok ~= false and s.route and (s.level or r.c.rl or 0) <= level + Plan.NEAR_LEVELS then
+			if not best or (s.route.ahead or math.huge) < (best.route.ahead or math.huge) then best = s end
+		end
+	end
+	return best
+end
+
+-- rows (best first), level -> the best-gain near-quest row (ties within NEAR_TIE: fewest steps ahead) | nil
+function Plan.NearQuest(rows, level)
+	local top, topGain
+	for _, r in ipairs(rows) do
+		local s = Plan.NearSource(r, level)
+		if s then
+			if not top then
+				top, topGain = r, r.gain
+			elseif topGain - r.gain < Plan.NEAR_TIE then
+				local a = Plan.NearSource(top, level).route.ahead or math.huge
+				if (s.route.ahead or math.huge) < a then top = r end
+			else
+				break -- rows are best first: the rest gain less
+			end
+		end
+	end
+	return top
+end
+
 -- rows: the slot's upgrade rows as shown (Browser.SlotRows: filters + look ahead), best first;
--- pick: Plan.Get's "id:bonus" | nil. -> { suggestion = row|nil, plan = row|nil, isPick,
--- betterBy = suggestion gain - pick gain (when > 0), missing = { id, bonus } (a pick not in rows) }
-function Plan.Resolve(rows, pick)
-	local e = { suggestion = rows[1], isPick = pick ~= nil }
+-- pick: Plan.Get's "id:bonus" | nil; level (optional): the player's level, to prefer an upgrade from an
+-- upcoming guide quest within 2 levels (Plan.NearQuest) as the suggestion; nil = the best overall.
+-- -> { suggestion = row|nil, best = rows[1], near (the suggestion is a near quest), plan = row|nil,
+-- isPick, betterBy = best gain - pick gain (when > 0), missing = { id, bonus } (a pick not in rows) }
+function Plan.Resolve(rows, pick, level)
+	local near = level and Plan.NearQuest(rows, level)
+	local e = { suggestion = near or rows[1], best = rows[1], near = near and true or nil, isPick = pick ~= nil }
 	if not pick then
-		e.plan = rows[1]
+		e.plan = e.suggestion
 		return e
 	end
 	for _, r in ipairs(rows) do

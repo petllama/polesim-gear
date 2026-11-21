@@ -11,6 +11,8 @@ return {
 		T.eq(tip.on, true)
 		tip:Click()
 		T.eq(ns.Options.Get("tooltip"), false); T.eq(U.button(p, "Score line in item tooltips").on, false)
+		local pq = U.button(p, "Prefer upgrades from upcoming guide quests (within 2 levels)")
+		T.eq(pq.on, true); pq:Click(); T.eq(ns.Options.Get("preferQuest"), false)
 		for _, l in ipairs({ "Minimap button", "Upgrade arrows on bags, merchants, mail and the auction house", "Mark the best quest reward" }) do
 			T.eq(U.button(p, l).on, true, l)
 		end
