@@ -16,8 +16,9 @@ function Win.RegisterTab(key, def) tabDefs[key] = def end
 
 -- model: Browser.Build's; groups: Groups.Build's (Sources tab, made on demand); slot: Slot Upgrades'
 -- slot; all: { key, rows } every upgrade of that slot (Show all)
+-- keep: the items the model was built to keep (Win.Keep at build time, plus kept rows found in it)
 local state = { model = nil, building = nil, stale = true, why = nil, groups = nil, slot = "head", all = nil,
-	allBuilding = nil, allWhy = nil, codex = nil }
+	allBuilding = nil, allWhy = nil, codex = nil, keep = nil }
 Win.state = state
 local frame
 
@@ -113,7 +114,7 @@ end
 local function release()
 	if state.building then state.building:Cancel() end
 	Win.DropAll()
-	state.building, state.model, state.stale, state.groups, state.codex = nil, nil, true, nil, nil
+	state.building, state.model, state.stale, state.groups, state.codex, state.keep = nil, nil, true, nil, nil, nil
 	for key, p in pairs(panels) do
 		local def = tabDefs[key]
 		if def and def.release then def.release(p) end
@@ -202,8 +203,11 @@ function Win.PlanEntries(show)
 	return es
 end
 
+-- shown and visible (Alt+Z hides UIParent: no work then; OnShow builds again)
+local function visible() return frame ~= nil and frame:IsVisible() end
+
 function Win.Refresh()
-	if not (frame and frame:IsShown()) then return end
+	if not visible() then return end
 	pass = {}
 	local ctx = ns.Context.Get()
 	if Win.UpdateHeader then Win.UpdateHeader(frame, ctx) end
@@ -217,19 +221,27 @@ end
 
 -- Build/ShowAll: the 0.1.0 browser window's Build and ShowAll (Build also drops the Sources grouping).
 -- ShowAll(key) is used by Slot Upgrades.
-function Win.Build()
+-- soft: the scores did not change (a pick or star the model lacks): the old model, its grouping and
+-- Show all stay shown until the new model is there.
+function Win.Build(soft)
 	if state.building then state.building:Cancel() end
-	Win.DropAll()
-	state.building, state.model, state.groups = nil, nil, nil
+	if not soft then
+		Win.DropAll()
+		state.model, state.groups = nil, nil
+	end
+	state.building = nil
 	ns.Sources.lastError = nil
 	local env, why = Win.Env()
 	state.why = why
-	if not env then return Win.Refresh() end
+	if not env then
+		state.model, state.groups = nil, nil
+		return Win.Refresh()
+	end
 	local handle, ended -- ended: done or failed (perhaps at once, inside Start)
 	handle = ns.Browser.Start(env, function(model)
 		ended = true
 		if state.building ~= handle then return end
-		state.model, state.building, state.stale = model, nil, false
+		state.model, state.building, state.stale, state.groups, state.keep = model, nil, false, nil, env.keep
 		Win.Refresh()
 	end, nil, function()
 		ended = true
@@ -542,13 +554,45 @@ end
 
 local function rebuild()
 	state.stale = true
-	if frame and frame:IsShown() then Win.Build() end
+	if visible() then Win.Build() end
 end
 ns.On("SCORES_CHANGED", rebuild)
 ns.On("ROUTE_CHANGED", rebuild)
 local function redraw() Win.Refresh() end
-ns.On("PLAN_CHANGED", redraw)
-ns.On("WISHLIST_CHANGED", redraw)
+
+-- Whether the model holds item key k (any slot, now or coming).
+local function modelHas(k)
+	local m = state.model
+	for _, def in ipairs(ns.Browser.SLOTS) do
+		for _, list in ipairs({ m.now[def.key] or {}, (m.coming or {})[def.key] or {} }) do
+			for _, r in ipairs(list) do
+				if ns.Browser.KeyOf(r.c.inst) == k then return true end
+			end
+		end
+	end
+	return false
+end
+-- A pick or star the model was not built to keep: in it anyway (redraw), else build again keeping it
+-- (a Show all row the trim left out would show as "not available").
+local function kept(k)
+	if not (k and state.model and state.keep) or state.keep[k] then return redraw() end
+	if modelHas(k) then
+		state.keep[k] = true
+		return redraw()
+	end
+	state.stale = true
+	if visible() then Win.Build(true) end
+end
+ns.On("PLAN_CHANGED", function(spec, key)
+	local ctx = ns.Context.Get()
+	if spec and key and ctx and spec == ctx.spec then return kept(ns.Plan.Get(spec, key)) end
+	redraw()
+end)
+ns.On("WISHLIST_CHANGED", function(k)
+	local id, bonus = ns.Plan.Parse(k)
+	if id and ns.Wishlist.Has({ id = id, bonus = bonus }) then return kept(k) end
+	redraw()
+end)
 ns.On("OPTIONS", redraw)
 -- A quest turned in (QUEST_TURNED_IN, QuestLogDocumentation in the Forever 1.60.1 UI source) takes its
 -- rewards off the list: one rebuild a moment later for a burst of turn-ins (the completion flag is set
@@ -556,11 +600,11 @@ ns.On("OPTIONS", redraw)
 Win.TURNIN_DELAY = 1
 local turninQueued = false
 ns.RegisterEvent("QUEST_TURNED_IN", function()
-	if turninQueued or not (frame and frame:IsShown()) then return end
+	if turninQueued or not visible() then return end
 	turninQueued = true
 	C_Timer.After(Win.TURNIN_DELAY, function()
 		turninQueued = false
-		if frame and frame:IsShown() then Win.Build() end
+		if visible() then Win.Build() else state.stale = true end
 	end)
 end)
 ns.Slash("", Win.Toggle)

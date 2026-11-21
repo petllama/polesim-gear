@@ -227,4 +227,45 @@ return {
 		T.eq(refreshes, 2, "and once more when built")
 		fx.done()
 	end,
+	no_build_while_the_ui_is_hidden = function()
+		local fx = F.load()
+		local ns, W = fx.ns, fx.W
+		fx.open()
+		local builds = 0
+		local build = ns.Browser.Build
+		ns.Browser.Build = function(...) builds = builds + 1 return build(...) end
+		UIParent:Hide() -- Alt+Z: the window is shown but not visible
+		ns.Fire("SCORES_CHANGED"); ns.Fire("ROUTE_CHANGED")
+		ns._frame.scripts.OnEvent(ns._frame, "QUEST_TURNED_IN", 100, 50, 0)
+		fx.settle()
+		T.eq(builds, 0, "nothing built while hidden"); T.eq(ns.Window.state.stale, true, "built when shown again")
+		T.eq(#W.timers, 0)
+		UIParent:Show()
+		fx.done()
+	end,
+	pick_outside_the_model_rebuilds = function()
+		local fx = F.load()
+		local ns = fx.ns
+		fx.open()
+		local builds, keep = 0, nil
+		local build = ns.Browser.Build
+		ns.Browser.Build = function(env, ...) builds = builds + 1 keep = env.keep return build(env, ...) end
+		local inModel = ns.Window.state.model.now.head[#ns.Window.state.model.now.head]
+		ns.Plan.Set("shadow", "head", inModel.c.inst)
+		ns.Wishlist.Toggle(inModel.c.inst)
+		fx.settle()
+		T.eq(builds, 0, "picked or starred from the model: redraw only")
+		ns.Plan.Set("shadow", "neck", { id = 424242, bonus = 0 }) -- e.g. a Show all row the trim left out
+		T.ok(ns.Window.state.model, "the old model stays shown while scoring again")
+		fx.settle()
+		T.eq(builds, 1, "a pick the model may not hold: built again"); T.ok(keep["424242:0"], "kept")
+		ns.Wishlist.Toggle({ id = 424243, bonus = 0 })
+		fx.settle()
+		T.eq(builds, 2, "a star the model may not hold")
+		ns.Wishlist.Toggle({ id = 424243, bonus = 0 })
+		ns.Plan.Clear("shadow", "neck")
+		fx.settle()
+		T.eq(builds, 2, "unstarring and clearing: redraw only")
+		fx.done()
+	end,
 }
