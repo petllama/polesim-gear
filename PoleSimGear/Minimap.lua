@@ -1,5 +1,5 @@
 -- The minimap button: a plain Button on the Minimap's rim (no library, no secure template). Left-click
--- toggles the upgrade browser (as /psg); drag moves it around the rim. Saved account-wide in
+-- opens or closes the window (as /psg); drag moves it around the rim. Saved account-wide in
 -- PoleSimGearDB.minimap = { angle = degrees, hide = bool }; `/psg minimap` hides/shows it.
 local ADDON, ns = ...
 local M = {}
@@ -105,7 +105,7 @@ local function create()
 	b:SetScript("OnEnter", function(self)
 		GameTooltip:SetOwner(self, "ANCHOR_LEFT")
 		GameTooltip:SetText("PoleSim Gear")
-		GameTooltip:AddLine("Left-click: upgrade browser", 1, 1, 1)
+		GameTooltip:AddLine("Left-click: open or close the window", 1, 1, 1)
 		GameTooltip:AddLine("Drag: move", 1, 1, 1)
 		GameTooltip:Show()
 	end)

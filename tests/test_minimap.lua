@@ -136,7 +136,7 @@ return {
 		_G.GameTooltip.SetText = function(_, s) lines[#lines + 1] = s end
 		local b = ns.Minimap.button
 		b.scripts.OnEnter(b)
-		T.eq(table.concat(lines, "|"), "PoleSim Gear|Left-click: upgrade browser|Drag: move")
+		T.eq(table.concat(lines, "|"), "PoleSim Gear|Left-click: open or close the window|Drag: move")
 	end,
 	-- /psg minimap hides and shows it, saved.
 	slash_toggles = function()
