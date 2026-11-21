@@ -301,6 +301,19 @@ return {
 		ns.View.PlanEntries = pe
 		fx.done()
 	end,
+	-- the fixture's options for tools/fullload.lua: a level, the caller's Polestar, the minimap button
+	fixture_options = function()
+		local mine = { Codex = F.codex(), Compat = { IsQuestCompleted = function() return false end } }
+		_G.Polestar = mine
+		local fx = F.load({ codex = false, level = 34, minimap = true })
+		local ns, U = fx.ns, fx.U
+		T.eq(_G.Polestar, mine, "kept"); T.eq(ns.Context.Get().level, 34); T.eq(UnitLevel("player"), 34)
+		T.ok(ns.Minimap.button, "the minimap button")
+		ns.Minimap.button:Click("LeftButton"); fx.settle()
+		T.ok(_G.PoleSimGearFrame:IsShown(), "opened from the minimap button")
+		T.ok(U.texts(_G.PoleSimGearFrame):find("Level 34 Priest", 1, true))
+		fx.done(); _G.Minimap = nil; require("wow").level = 20
+	end,
 	frames_made_once = function()
 		local fx = F.load()
 		local ns, U = fx.ns, fx.U

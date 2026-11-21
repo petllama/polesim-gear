@@ -117,7 +117,7 @@ end
 -- every visible text under root, in creation order, one per line
 function U.texts(root)
 	local out = {}
-	U.walk(root, function(w) if w.text and w:IsVisible() then out[#out + 1] = w.text end end)
+	U.walk(root, function(w) if type(w.text) == "string" and w:IsVisible() then out[#out + 1] = w.text end end)
 	return table.concat(out, "\n")
 end
 function U.find(root, pred)
@@ -139,11 +139,13 @@ end
 -- run a ScrollBox's element initializer over its data: -> its rows (one per element). Frames are
 -- reused as the client's ScrollBox does (shown ones first, then released ones, new ones last), so
 -- reused-row paths run and a long session makes no more frames than its longest list.
-function U.rows(box)
+function U.rows(box, max)
 	local out = {}
 	local data = box.provided or {}
-	releaseFrom(box, #data)
-	for i, d in ipairs(data) do
+	local n = math.min(#data, max or #data) -- max: only the first max rows (the ones in view)
+	releaseFrom(box, n)
+	for i = 1, n do
+		local d = data[i]
 		local row = box.frames[i] or table.remove(box.pool) or new("Button", box)
 		row:Show()
 		box.view.init(row, d)

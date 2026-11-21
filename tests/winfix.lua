@@ -37,23 +37,35 @@ function F.codex()
 	}
 end
 
--- opts: { db, char, done = { [questId] = true }, worn, spec } -> fixture
+-- opts: { db, char, done = { [questId] = true }, worn, spec, level (default 20), codex = false (keep
+-- the caller's _G.Polestar, e.g. the real one), minimap = true (a client Minimap: the button is made) }
+-- -> fixture
 function F.load(opts)
 	opts = opts or {}
-	_G.Polestar = { Codex = F.codex(), Compat = { IsQuestCompleted = function(q) return (opts.done or {})[q] == true end } }
+	local L = opts.level or 20
+	if opts.codex ~= false then
+		_G.Polestar = { Codex = F.codex(), Compat = { IsQuestCompleted = function(q) return (opts.done or {})[q] == true end } }
+	end
 	local ns = T.addon(F.files())
 	local W = require("wow")
+	W.level = L
 	U.install()
 	_G.Minimap = nil -- another test file's minimap stub (test_minimap leaves one): no button here
+	if opts.minimap then
+		_G.Minimap = U.new("Frame", _G.UIParent, "Minimap")
+		_G.Minimap:SetSize(198, 198)
+		_G.Minimap.GetCenter = function() return 500, 400 end
+		_G.Minimap.GetEffectiveScale = function() return 1 end
+	end
 	_G.PoleSimGearDB, _G.PoleSimGearCharDB = opts.db or {}, opts.char or {}
 	ns._frame.scripts.OnEvent(ns._frame, "ADDON_LOADED", "PoleSimGear")
 	ns.Print = function() end
-	local band, lo, sd = ns.Bands.For("priest", "shadow", 20)
+	local band, lo, sd = ns.Bands.For("priest", "shadow", L)
 	local worn = opts.worn or { [1] = { inst = { id = 999001, name = "Old Hat", quality = 1, icon = "inv_helmet_01", inv = 1, stats = {} }, score = 1 } }
 	ns.Context = {
 		ClassKey = function() return "priest" end,
 		Get = function()
-			return { cls = "priest", spec = opts.spec or "shadow", specSource = "talents", level = 20, lo = lo, band = band,
+			return { cls = "priest", spec = opts.spec or "shadow", specSource = "talents", level = L, lo = lo, band = band,
 				ref = sd.ref, w = band.w, worn = worn, faction = "H", classBit = 16, raceBit = 16 }
 		end,
 		At = function(L) local b, l = ns.Bands.For("priest", "shadow", L) return { band = b, lo = l, w = b.w, worn = worn } end,

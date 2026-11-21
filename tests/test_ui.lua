@@ -49,6 +49,8 @@ return {
 		local d = U.rows(box)
 		T.eq(#d, 4); T.eq(#box.children, 4, "released frames acquired again, one new")
 		T.eq(d[2].shown, true)
+		local e = U.rows(box, 2)
+		T.eq(#e, 2, "only the first 2"); T.eq(d[3].shown, false, "the rest released")
 	end,
 	-- U.scroll runs the initializer on every element through a window of n frames (as scrolling a
 	-- ScrollBox does): a long list makes only n frames
