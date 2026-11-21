@@ -222,4 +222,62 @@ return {
 		_G.MerchantFrame, _G.MerchantFrame_UpdateMerchantInfo, _G.MerchantFrame_UpdateBuybackInfo = nil, nil, nil
 		_G.GetMerchantItemLink, _G.MERCHANT_ITEMS_PER_PAGE = nil, nil
 	end,
+	-- Mail: the inbox rows' first item (GetInboxHeaderInfo's 15th value) and the open letter's attachments.
+	mail = function()
+		_G.INBOXITEMS_TO_DISPLAY, _G.ATTACHMENTS_MAX_RECEIVE = 7, 16
+		local first = { [8] = "up", [9] = "down" }
+		_G.GetInboxHeaderInfo = function(i) return nil, nil, nil, nil, 0, 0, 1, 1, false, nil, nil, nil, nil, 1, first[i] end
+		_G.GetInboxItemLink = function(mail, i) return mail == 8 and ({ "down", "up" })[i] or nil end
+		for i = 1, 7 do _G["MailItem" .. i .. "Button"] = button() end
+		for i = 1, 16 do _G["OpenMailAttachmentButton" .. i] = button({ IsShown = function() return i <= 2 end }) end
+		_G.InboxFrame = { pageNum = 2, openMailID = 8, IsShown = function() return true end, Update = function() end }
+		_G.OpenMailFrame = { IsShown = function() return true end, Update = function() end }
+		local ns = live({ up = head(6), down = head(4) })
+		ns._frame.scripts.OnEvent(ns._frame, "ADDON_LOADED", "Blizzard_MailFrame")
+		InboxFrame:Update()
+		T.eq(arrow(MailItem1Button), true, "page 2, first row = mail 8")
+		T.eq(arrow(MailItem2Button), false)
+		OpenMailFrame:Update()
+		T.eq(arrow(OpenMailAttachmentButton1), false)
+		T.eq(arrow(OpenMailAttachmentButton2), true)
+		T.eq(OpenMailAttachmentButton3.arrow, nil)
+		login(ns) -- hooked once only
+		InboxFrame.pageNum = 1
+		InboxFrame:Update()
+		T.eq(arrow(MailItem1Button), false)
+		for i = 1, 7 do _G["MailItem" .. i .. "Button"] = nil end
+		for i = 1, 16 do _G["OpenMailAttachmentButton" .. i] = nil end
+		_G.InboxFrame, _G.OpenMailFrame, _G.GetInboxHeaderInfo, _G.GetInboxItemLink = nil, nil, nil, nil
+	end,
+	-- Auction house: list rows are ScrollBox frames whose element data is an index into the list's
+	-- getEntry (row.rowData may still be the previous entry when our callback runs).
+	auction_house = function()
+		local function list(entries)
+			local box = { frames = {} }
+			function box:GetView() return true end
+			function box:ForEachFrame(fn) for _, f in ipairs(self.frames) do fn(f, f.index) end end
+			return { ScrollBox = box, getEntry = function(i) return entries[i] end }
+		end
+		local browse = list({ { itemKey = { itemID = 11288 } }, { itemKey = { itemID = 6540 } } })
+		local buy = list({ { itemLink = "down" }, { itemLink = "up" } })
+		_G.AuctionHouseFrame = { BrowseResultsFrame = { ItemList = browse }, ItemBuyFrame = { ItemList = buy },
+			IsShown = function() return true end }
+		_G.ScrollUtil = { AddInitializedFrameCallback = function(box, fn, owner, existing)
+			T.ok(not existing, "no iterateExisting: the view may not exist yet")
+			box.init = function(row, data) row.index = data box.frames[#box.frames + 1] = row fn(owner, row, data) end
+		end }
+		local ns = live({ up = head(6), down = head(4), ["item:11288"] = head(6), ["item:6540"] = head(9) })
+		ns._frame.scripts.OnEvent(ns._frame, "ADDON_LOADED", "Blizzard_AuctionHouseUI")
+		local r1, r2 = button({ rowData = { itemKey = { itemID = 6540 } } }), button()
+		browse.ScrollBox.init(r1, 1); browse.ScrollBox.init(r2, 2)
+		T.eq(arrow(r1), true, "Greater Magic Wand row (stale rowData ignored)")
+		T.eq(r2.arrow, nil, "random-suffix item: no arrow on the browse row")
+		local b1, b2 = button(), button()
+		buy.ScrollBox.init(b1, 1); buy.ScrollBox.init(b2, 2)
+		T.eq(b1.arrow, nil); T.eq(arrow(b2), true)
+		r1.arrow.shown = false
+		ns.Arrows.Redraw()
+		T.eq(arrow(r1), true, "a redraw repaints the shown rows")
+		_G.AuctionHouseFrame, _G.ScrollUtil = nil, nil
+	end,
 }

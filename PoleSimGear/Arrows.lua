@@ -173,3 +173,91 @@ end
 if MerchantFrame_UpdateMerchantInfo then hooksecurefunc("MerchantFrame_UpdateMerchantInfo", paintMerchant) end
 if MerchantFrame_UpdateBuybackInfo then hooksecurefunc("MerchantFrame_UpdateBuybackInfo", paintMerchant) end
 Arrows.OnRedraw(paintMerchant)
+
+-- Mail (Blizzard_MailFrame, loaded at startup): the open letter's attachments
+-- (OpenMailAttachmentButton<i>, GetInboxItemLink), and each inbox row's first item (MailItem<i>Button,
+-- the 15th value of GetInboxHeaderInfo). OpenMailFrame:Update() and InboxFrame:Update() are
+-- OpenMailMixin/InboxMixin methods on the frames.
+local function paintOpenMail()
+	if not (OpenMailFrame and InboxFrame) then return end
+	local id = OpenMailFrame:IsShown() and InboxFrame.openMailID
+	if id == 0 then id = nil end
+	for i = 1, ATTACHMENTS_MAX_RECEIVE or 16 do
+		local b = _G["OpenMailAttachmentButton" .. i]
+		if b then
+			local link = id and b:IsShown() and GetInboxItemLink(id, i)
+			Arrows.Mark(b, link and Arrows.Verdict(link))
+		end
+	end
+end
+local function paintInbox()
+	if not (InboxFrame and InboxFrame:IsShown()) then return end
+	local per = INBOXITEMS_TO_DISPLAY or 7
+	for i = 1, per do
+		local b = _G["MailItem" .. i .. "Button"]
+		if b then
+			local index = ((InboxFrame.pageNum or 1) - 1) * per + i
+			local link = b:IsShown() and select(15, GetInboxHeaderInfo(index))
+			Arrows.Mark(b, link and Arrows.Verdict(link))
+		end
+	end
+end
+local function hookMail()
+	if hooked.mail or not (OpenMailFrame and InboxFrame and OpenMailFrame.Update and InboxFrame.Update) then return end
+	hooksecurefunc(OpenMailFrame, "Update", paintOpenMail)
+	hooksecurefunc(InboxFrame, "Update", paintInbox)
+	hooked.mail = true
+end
+Arrows.OnRedraw(function()
+	if not hooked.mail then return end
+	paintOpenMail()
+	paintInbox()
+end)
+
+-- Auction house (Blizzard_AuctionHouseUI, load on demand): rows are ScrollBox frames whose element data
+-- is an index into the list's getEntry (AuctionHouseItemListMixin: CreateIndexRangeDataProvider; the
+-- table builder sets row.rowData from it in its own callback, which may run after ours). Browse rows
+-- carry an itemKey, the item buy list one auction (with its link) per row.
+local AH_LISTS = {
+	{ "BrowseResultsFrame", function(d)
+		local key = type(d) == "table" and d.itemKey
+		return key and key.itemID and Arrows.VerdictByID(key.itemID)
+	end },
+	{ "ItemBuyFrame", function(d) return type(d) == "table" and d.itemLink and Arrows.Verdict(d.itemLink) end },
+}
+local function paintRow(list, verdict, row, data)
+	local d = type(data) == "number" and type(list.getEntry) == "function" and list.getEntry(data) or row.rowData
+	Arrows.Mark(row, verdict(d))
+end
+local function hookAuctionHouse()
+	local AH = AuctionHouseFrame
+	if hooked.ah or not (AH and AH.BrowseResultsFrame and AH.ItemBuyFrame and ScrollUtil) then return end
+	for _, l in ipairs(AH_LISTS) do
+		local list, verdict = AH[l[1]].ItemList, l[2]
+		-- No iterateExisting: it calls ScrollBox:ForEachFrame, which needs the view the list makes on Init.
+		ScrollUtil.AddInitializedFrameCallback(list.ScrollBox, function(_, row, data)
+			paintRow(list, verdict, row, data)
+		end, Arrows)
+	end
+	hooked.ah = true
+end
+Arrows.OnRedraw(function()
+	local AH = AuctionHouseFrame
+	if not (hooked.ah and AH:IsShown()) then return end
+	for _, l in ipairs(AH_LISTS) do
+		local list, verdict = AH[l[1]].ItemList, l[2]
+		local box = list.ScrollBox
+		if box:GetView() then
+			box:ForEachFrame(function(row, data) paintRow(list, verdict, row, data) end)
+		end
+	end
+end)
+
+ns.RegisterEvent("PLAYER_LOGIN", function()
+	hookMail()
+	hookAuctionHouse()
+end)
+ns.RegisterEvent("ADDON_LOADED", function(name)
+	if name == "Blizzard_MailFrame" then hookMail() end
+	if name == "Blizzard_AuctionHouseUI" then hookAuctionHouse() end
+end)
