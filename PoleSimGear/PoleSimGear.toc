@@ -31,5 +31,6 @@ Browser.lua
 Plan.lua
 Wishlist.lua
 View.lua
+Groups.lua
 BrowserUI.lua
 Minimap.lua
