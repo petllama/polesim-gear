@@ -30,5 +30,6 @@ Route.lua
 Browser.lua
 Plan.lua
 Wishlist.lua
+View.lua
 BrowserUI.lua
 Minimap.lua
