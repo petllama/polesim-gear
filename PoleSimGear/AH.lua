@@ -65,6 +65,183 @@ function AH.Queries(cls, level, ahead)
 	return out
 end
 
+-- Scoring --------------------------------------------------------------------------------------------
+-- An inventory type -> its Browser.SLOTS entry (the weapons by hand).
+local MAIN_INV = { [13] = true, [17] = true, [21] = true }
+local OFF_INV = { [14] = true, [22] = true, [23] = true }
+local function slotDef(inv)
+	for _, def in ipairs(ns.Browser.SLOTS) do
+		if (def.key == "mainhand" and MAIN_INV[inv]) or (def.key == "offhand" and OFF_INV[inv]) then return def end
+		for _, i in ipairs(def.invs or {}) do
+			if i == inv then return def end
+		end
+	end
+end
+
+local function itemKeyName(itemKey)
+	local api = _G.C_AuctionHouse
+	if not (api and api.GetItemKeyInfo) then return nil end
+	local ok, info = pcall(api.GetItemKeyInfo, itemKey)
+	return ok and type(info) == "table" and info.itemName or nil
+end
+
+-- The suffix (bonus list id) of a browse result's item: the key's itemSuffix when it is one of the
+-- item's bonus lists, else the suffix whose name ends the client's name for the key (Forever's item
+-- key may carry another suffix id), else nil (the browse row stands for every suffix).
+function AH.Suffix(rec, itemKey)
+	if #rec.sfx == 0 then return nil end
+	local s = itemKey.itemSuffix
+	for _, b in ipairs(rec.sfx) do
+		if b == s and ns.DATA.suffixes[b] then return b end
+	end
+	local name = itemKeyName(itemKey)
+	if type(name) ~= "string" then return nil end
+	for _, b in ipairs(rec.sfx) do
+		local sfx = ns.DATA.suffixes[b]
+		if sfx and name:sub(-#sfx.n - 1) == " " .. sfx.n then return b end
+	end
+	return nil
+end
+
+local function roleOf(inv)
+	if MAIN_INV[inv] then return "mh" end
+	if OFF_INV[inv] then return "oh" end
+	if inv == 15 or inv == 25 or inv == 26 or inv == 28 then return "ranged" end
+	return "gear"
+end
+
+-- One found entry -> a candidate { key, c, cmp, def, at, price, anySuffix, band } | nil, why
+local function candidate(f, ctx, top, bandAt)
+	local id = f.itemKey.itemID
+	local rec = ns.Items.Peek(id)
+	if not rec then return nil, "unknown" end
+	if not (rec.c == 2 or rec.c == 4) then return nil, "not gear" end
+	if rec.rl > top or not ns.Equip.CanUse(rec, ctx.cls, math.max(ctx.level, rec.rl)) then return nil, "unusable" end
+	local def = slotDef(rec.inv)
+	if not def then return nil, "not gear" end
+	local L = math.max(ctx.level, rec.rl)
+	local band = bandAt(L)
+	if not band then return nil, "no weights" end
+	local role = roleOf(rec.inv)
+	local inst, anySuffix
+	if #rec.sfx > 0 then
+		local b = AH.Suffix(rec, f.itemKey)
+		if b then
+			inst = ns.Score.Instance(rec, b)
+		else
+			-- every suffix: the best one scores the row, the weakest is said in the tooltip
+			local worst, worstScore, bestScore
+			for _, bl in ipairs(rec.sfx) do
+				local i = ns.Score.Instance(rec, bl)
+				local s = ns.Score.Score(i, band.w, ctx.cls, role)
+				if not inst or s > bestScore + 1e-9 then inst, bestScore = i, s end
+				if not worst or s < worstScore - 1e-9 then worst, worstScore = i, s end
+			end
+			anySuffix = { best = inst.suffix, worstName = worst.suffix, worstScore = worstScore }
+		end
+	else
+		inst = ns.Score.Instance(rec)
+	end
+	local cmp = ns.Equip.Compare(inst, band.w, ctx.cls, band.worn, false)
+	if not cmp or cmp.equipped then return nil, "worn" end
+	return { key = ns.Browser.KeyOf(inst), c = { id = id, inst = inst, score = cmp.score, sources = {}, kinds = {} },
+		cmp = cmp, def = def, at = L > ctx.level and L or nil, price = f.minPrice or 0, quantity = f.totalQuantity,
+		result = f.result, itemKey = f.itemKey, anySuffix = anySuffix, band = band }
+end
+
+local function perGold(gain, price) return gain / (math.max(price or 0, 1) / 10000) end
+
+-- found (the scan's), ctx (Context.Get), ahead -> rows (upgrades: { key, c = { id, inst, score,
+-- sources, kinds }, gain, base, slot, note, at, price, setPrice, value, partner, anySuffix, result,
+-- itemKey }), counts { results, notScored, scored }.
+-- Weapons follow the weapon set rule: under a worn two-hander a one-hander pairs with the best AH off
+-- hand (and the reverse), and the pair must beat the two-hander (its value counts both prices).
+function AH.Build(found, ctx, ahead)
+	local counts = { results = 0, notScored = 0, scored = 0 }
+	local out = {}
+	if not ctx then return out, counts end
+	local top = math.min(60, ctx.level + (ahead or 0))
+	local bands = {}
+	local function bandAt(L)
+		if L == ctx.level then return ctx end
+		if bands[L] == nil then bands[L] = ns.Context.At(L) or false end
+		return bands[L] or nil
+	end
+	local cands = {}
+	for _, f in pairs(found) do
+		counts.results = counts.results + 1
+		local ok, c, why = pcall(candidate, f, ctx, top, bandAt)
+		if not ok then
+			ns.ReportOnce("ah:" .. tostring(f.itemKey and f.itemKey.itemID), c)
+		elseif c then
+			counts.scored = counts.scored + 1
+			cands[#cands + 1] = c
+		elseif why == "unknown" then
+			counts.notScored = counts.notScored + 1
+		end
+	end
+	-- the best one-hander and off hand by their own score (the partners under a worn two-hander)
+	local best = {}
+	for _, c in ipairs(cands) do
+		local hand = (c.c.inst.inv == 13 or c.c.inst.inv == 21) and "mh" or (OFF_INV[c.c.inst.inv] and "oh") or nil
+		if hand and (not best[hand] or c.c.score > best[hand].c.score) then best[hand] = c end
+	end
+	local rowOf = {}
+	for _, c in ipairs(cands) do
+		local worn16 = c.band.worn[16]
+		local under2h = worn16 and worn16.inst and worn16.inst.inv == 17
+		local inv = c.c.inst.inv
+		local gain, base, note, partner = c.cmp.gain, c.cmp.base, c.cmp.note, nil
+		if under2h and (inv == 13 or inv == 21 or OFF_INV[inv]) then
+			partner = (inv == 13 or inv == 21) and best.oh or best.mh
+			base = worn16.score
+			gain = c.c.score + (partner and partner.c.score or 0) - base
+			note = partner and ("with " .. (partner.c.inst.name or "?") .. " (AH) over your two-hander")
+				or (OFF_INV[inv] and "needs a one-hander" or "leaves the off hand empty")
+		end
+		if gain > 1e-6 then
+			local r = { key = c.key, c = c.c, gain = gain, base = base, slot = c.def, note = note, at = c.at,
+				price = c.price, quantity = c.quantity, result = c.result, itemKey = c.itemKey, anySuffix = c.anySuffix }
+			if c.anySuffix then c.anySuffix.worst = gain - (c.c.score - c.anySuffix.worstScore) end
+			r.setPrice = partner and (c.price + partner.price) or nil
+			r.value = perGold(gain, r.setPrice or c.price)
+			r.partnerCand = partner
+			rowOf[c] = r
+			out[#out + 1] = r
+		end
+	end
+	for _, r in ipairs(out) do
+		r.partner = r.partnerCand and rowOf[r.partnerCand] or nil
+		r.partnerCand = nil
+	end
+	return AH.Sort(out, "gain"), counts
+end
+
+-- rows -> a new list in the order: "gain" (default: biggest first), "value" (gain per gold), "price"
+-- (cheapest first); ties: cheaper, then the item key.
+function AH.Sort(list, by)
+	local out = {}
+	for i, r in ipairs(list) do out[i] = r end
+	local function tie(a, b)
+		if (a.price or 0) ~= (b.price or 0) then return (a.price or 0) < (b.price or 0) end
+		return tostring(a.key) < tostring(b.key)
+	end
+	local cmp
+	if by == "value" then
+		cmp = function(a, b) if a.value ~= b.value then return a.value > b.value end return tie(a, b) end
+	elseif by == "price" then
+		cmp = function(a, b)
+			if (a.price or 0) ~= (b.price or 0) then return (a.price or 0) < (b.price or 0) end
+			if a.gain ~= b.gain then return a.gain > b.gain end
+			return tostring(a.key) < tostring(b.key)
+		end
+	else
+		cmp = function(a, b) if a.gain ~= b.gain then return a.gain > b.gain end return tie(a, b) end
+	end
+	table.sort(out, cmp)
+	return out
+end
+
 -- The scan ---------------------------------------------------------------------------------------------
 -- One query at a time: send it when the throttled message system is ready (else wait for
 -- AUCTION_HOUSE_THROTTLED_SYSTEM_READY), read the results on each BROWSE_RESULTS_UPDATED/ADDED, ask for
@@ -121,7 +298,7 @@ local advance
 local function finish()
 	scan.done = true
 	scan.waiting = nil
-	if AH.Build then rows, counts = AH.Build(found) end
+	rows, counts = AH.Build(found, ns.Context.Get(), scan.ahead)
 	changed()
 end
 
@@ -170,7 +347,7 @@ local function stop(why)
 	scan.done = true
 	scan.waiting = nil
 	if why then scan.stopped = why else scan.cancelled = true end
-	if AH.Build then rows, counts = AH.Build(found) end
+	rows, counts = AH.Build(found, ns.Context.Get(), scan.ahead)
 	changed()
 end
 
