@@ -63,4 +63,19 @@ return {
 		T.eq(P.Why(m, "head", "2:0", 2, { quest = true }), "needs level 24 (look ahead +4)")
 		T.eq(P.Why(m, "head", "3:0", 5, { quest = true }), "not available now (quest done, retired, or no longer an upgrade)")
 	end,
+	clear_worn = function()
+		local char = { plan = { shadow = { head = "10:3", finger = "20:0", neck = "30:0" }, holy = { head = "10:3" } } }
+		local ns = load(char)
+		local worn = { [1] = { inst = { id = 10, bonus = 3 } }, [12] = { inst = { id = 20 } }, [2] = { inst = { id = 30, bonus = 1 } } }
+		local n = ns.Plan.ClearWorn(worn)
+		T.eq(n, 3)
+		T.eq(char.plan.shadow.head, nil); T.eq(char.plan.holy.head, nil, "every spec")
+		T.eq(char.plan.shadow.finger, nil, "the second ring slot counts")
+		T.eq(char.plan.shadow.neck, "30:0", "another suffix: not the picked one")
+		-- wired: SCORES_CHANGED reads Context's worn items
+		char.plan.shadow.head = "10:3"
+		ns.Context = { Get = function() return { worn = worn } end }
+		ns.Fire("SCORES_CHANGED")
+		T.eq(char.plan.shadow.head, nil)
+	end,
 }

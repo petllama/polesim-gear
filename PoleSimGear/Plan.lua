@@ -89,3 +89,37 @@ function Plan.Why(model, key, pick, ahead, filters)
 	end
 	return "its sources are off: " .. table.concat(off, ", ")
 end
+
+local WORN_SLOTS = {} -- slotKey -> inventory slots it covers
+for _, def in ipairs(ns.Browser.SLOTS) do
+	WORN_SLOTS[def.key] = (def.key == "finger" or def.key == "trinket") and { def.slot, def.slot + 1 } or { def.slot }
+end
+
+-- worn: Context's slot -> { inst }. Clears every spec's pick that is worn in its slot -> how many.
+function Plan.ClearWorn(worn)
+	local char = ns.char
+	if not (char and type(char.plan) == "table") then return 0 end
+	local n = 0
+	for _, picks in pairs(char.plan) do
+		if type(picks) == "table" then
+			for key, pick in pairs(picks) do
+				for _, slot in ipairs(WORN_SLOTS[key] or {}) do
+					local e = worn[slot]
+					if e and e.inst and ns.Browser.KeyOf(e.inst) == pick then
+						picks[key] = nil -- clearing an existing field during pairs() is allowed
+						n = n + 1
+						break
+					end
+				end
+			end
+		end
+	end
+	if n > 0 then ns.Fire("PLAN_CHANGED") end
+	return n
+end
+
+-- Equipping a picked item (any score change: Context fires SCORES_CHANGED after STATE) clears its pick.
+ns.On("SCORES_CHANGED", function()
+	local ctx = ns.Context and ns.Context.Get()
+	if ctx and ctx.worn then Plan.ClearWorn(ctx.worn) end
+end)
