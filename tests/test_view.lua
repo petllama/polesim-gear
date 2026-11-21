@@ -65,4 +65,16 @@ return {
 		st.ahead = 5
 		T.eq((ns.View.Progress(m, worn, st)), total - 1, "progress counts upgrades available NOW")
 	end,
+	weights = function()
+		local ns = load()
+		local rows = ns.View.WeightRows({ int = 0.4, spShadow = 1, sta = 0.1, armor = 0 }, nil)
+		local t = {}
+		for _, w in ipairs(rows) do t[#t + 1] = w.key .. "=" .. w.value end
+		T.eq(table.concat(t, ","), "spShadow=1,int=0.4,sta=0.1", "zero weights left out, biggest first")
+		T.eq(rows[1].label, ns.DATA.statLabels.spShadow or "spShadow")
+		T.eq(#ns.View.WeightRows({ a = 3, b = 2, c = 1 }, 2), 2, "top N")
+		local bands = ns.View.Bands("priest", "shadow")
+		T.ok(#bands >= 2); T.eq(bands[1].lo, 1); T.eq(bands[2].lo, bands[1].upTo + 1)
+		T.eq(ns.View.BandIndex(bands, bands[2].lo), 2)
+	end,
 }

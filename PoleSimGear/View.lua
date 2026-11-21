@@ -82,3 +82,36 @@ function View.Progress(model, worn, st)
 	end
 	return done, #B.SLOTS
 end
+
+-- A band's weights, biggest first (ties by key), zero weights left out; n (optional) = top n.
+function View.WeightRows(w, n)
+	local out = {}
+	for k, v in pairs(w) do
+		if type(v) == "number" and v ~= 0 then out[#out + 1] = { key = k, value = v, label = ns.DATA.statLabels[k] or k } end
+	end
+	table.sort(out, function(a, b)
+		if a.value ~= b.value then return a.value > b.value end
+		return a.key < b.key
+	end)
+	if n then for i = #out, n + 1, -1 do out[i] = nil end end
+	return out
+end
+
+-- The spec's bands: { { lo, upTo, w, band }, ... } in level order.
+function View.Bands(cls, spec)
+	local sd = ns.DATA.specs[cls] and ns.DATA.specs[cls][spec]
+	local out, lo = {}, 1
+	for _, b in ipairs(sd and sd.bands or {}) do
+		out[#out + 1] = { lo = lo, upTo = b.upTo, w = b.w, band = b }
+		lo = b.upTo + 1
+	end
+	return out
+end
+
+-- The index of the band a level falls in (the last band past its end).
+function View.BandIndex(bands, level)
+	for i, b in ipairs(bands) do
+		if level <= b.upTo then return i end
+	end
+	return #bands
+end
