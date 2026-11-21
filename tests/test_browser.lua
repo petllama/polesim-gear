@@ -88,6 +88,26 @@ return {
 		T.eq(got[1], nil, "rl 10: not decoded"); T.eq(got[5], 1, "once")
 		T.ok(ns.Score.BestSuffix(ITEMS[5], W1, "priest", "gear") ~= cands.head[1].inst, "not kept by Score")
 	end,
+	-- One item that throws (bad data, a Codex change) is skipped and reported once under its id; the
+	-- rest of the build goes on.
+	collect_isolates_an_item_error = function()
+		local ns = T.addon(FILES)
+		local reported = {}
+		_G.geterrorhandler = function() return function(e) reported[#reported + 1] = e end end
+		local e = env()
+		local get = e.items.Get
+		e.items.Get = function(id) if id == 4 then error("bad item 4") end return get(id) end
+		local ids = {}
+		for _, c in ipairs(ns.Browser.Collect(e, 20, 0, 20, 20).head) do ids[#ids + 1] = c.id end
+		T.eq(table.concat(ids, ","), "1", "item 4 skipped, the others scored")
+		T.eq(#reported, 1); T.ok(reported[1]:find("bad item 4", 1, true), reported[1])
+		ns.Browser.Collect(e, 20, 0, 20, 20)
+		T.eq(#reported, 1, "once per id per session")
+		local m
+		_G.C_Timer = { After = function(_, fn) fn() end }
+		ns.Browser.Start(e, function(model) m = model end)
+		T.ok(m and m.now.head[1].c.id == 1, "the build completes with the others")
+	end,
 	gains = function()
 		local B = T.addon(FILES).Browser
 		local function c(id, inv, score) return { id = id, score = score, inst = { id = id, inv = inv, name = "I" .. id }, kinds = { quest = true } } end

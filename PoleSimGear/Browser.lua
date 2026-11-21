@@ -48,9 +48,22 @@ function Browser.Candidate(id, env, lim, w, role)
 	return { id = id, inst = inst, score = score, sources = ok, kinds = kinds, rl = it.rl }
 end
 
+-- One indexed id: its candidate if its required level is in the window. -> in (window), candidate
+local function consider(id, env, rlFrom, rlTo, lim, w, role)
+	-- the index's required level when it has one (nothing decoded outside the window)
+	local rl = env.items.Rl and env.items.Rl(id)
+	if rl == nil then
+		local it = env.items.Get(id)
+		rl = it and it.rl
+	end
+	if not (rl and rl >= rlFrom and rl <= rlTo) then return false end
+	return true, Browser.Candidate(id, env, lim, w, role)
+end
+
 -- Candidates per slot for items with rlFrom <= required level <= rlTo, scored with the band of `at`.
 -- yield (optional) is called every 50 items so the window can spread the work over frames; only
--- (optional) = { [slotKey] = true } limits it to those slots.
+-- (optional) = { [slotKey] = true } limits it to those slots. An item that throws is skipped and
+-- reported once per session (ns.ReportOnce): one bad record does not end the build.
 function Browser.Collect(env, at, rlFrom, rlTo, lim, yield, only)
 	local band = env.at(at)
 	local byInv = env.items.ByInv()
@@ -61,15 +74,14 @@ function Browser.Collect(env, at, rlFrom, rlTo, lim, yield, only)
 			local role = ns.Equip.ROLE_OF_SLOT[def.slot] or "gear"
 			local list = {}
 			for _, inv in ipairs(Browser.Invs(def, band.style)) do
+				local r = inv == 17 and "mh" or role
 				for _, id in ipairs(byInv[inv] or {}) do
-					-- the index's required level when it has one (nothing decoded outside the window)
-					local rl = env.items.Rl and env.items.Rl(id)
-					if rl == nil then
-						local it = env.items.Get(id)
-						rl = it and it.rl
+					local ok, inWindow, c = pcall(consider, id, env, rlFrom, rlTo, lim, band.w, r)
+					if not ok then
+						ns.ReportOnce("browser:" .. id, inWindow)
+						inWindow = true
 					end
-					if rl and rl >= rlFrom and rl <= rlTo then
-						local c = Browser.Candidate(id, env, lim, band.w, inv == 17 and "mh" or role)
+					if inWindow then
 						if c then list[#list + 1] = c end
 						n = n + 1
 						if yield and n % 50 == 0 then yield() end
