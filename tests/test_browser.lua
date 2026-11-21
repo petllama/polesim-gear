@@ -177,6 +177,24 @@ return {
 		T.eq(table.concat(ids, ","), "1,2,3,11,12", "3 quests (and 12, among the 3 crafted)")
 		T.eq(#B.Trim(rows, 50), 12)
 	end,
+	-- The model keeps the best KEEP rows per kind but counts every upgrade of a slot (per source filter),
+	-- and SlotAll scores that one slot again for the drill-down's "Show all (N)".
+	show_all = function()
+		local B = T.addon(FILES).Browser
+		B.KEEP = 0
+		local m = B.Build(env())
+		T.eq(#m.now.head, 0, "trimmed")
+		T.eq(m.counts.head.all, 2); T.eq(m.counts.head.quest, 1); T.eq(m.counts.head.dungeon, 1)
+		T.eq(m.counts.head.crafted, 0)
+		T.eq(B.Count(m, "head", "all"), 2); T.eq(B.Count(m, "neck", "quest"), 0)
+		local all = B.SlotAll(env(), "head")
+		T.eq(#all, 2); T.eq(all[1].c.id, 1); T.near(all[1].gain, 3); T.eq(all[2].c.id, 4)
+		T.eq(#B.Rows(all, "dungeon"), 1)
+		local got
+		_G.C_Timer = { After = function(_, fn) fn() end }
+		B.Start(env(), function(rows) got = rows end, function(en, y) return B.SlotAll(en, "head", y) end)
+		T.eq(#got, 2, "over frames too")
+	end,
 	runs_in_steps = function()
 		local B = T.addon(FILES).Browser
 		local got

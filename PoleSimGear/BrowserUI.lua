@@ -5,7 +5,8 @@ ns.BrowserUI = UI
 
 local FILTERS = { { "all", "All" }, { "quest", "Quests" }, { "dungeon", "Dungeons" }, { "crafted", "Crafted" } }
 local KIND_TAG = { quest = "Quest", dungeon = "Dungeon", crafted = "Crafted" }
-local state = { filter = "all", slot = nil, model = nil, building = nil, stale = true, why = nil }
+-- all: { key, rows } every upgrade of the drilled-into slot ("Show all"), allBuilding its build
+local state = { filter = "all", slot = nil, model = nil, building = nil, stale = true, why = nil, all = nil, allBuilding = nil }
 local frame
 local format = string.format
 
@@ -76,11 +77,20 @@ local function listData()
 	end
 	local out = {}
 	if state.slot then
+		local key = state.slot.key
+		local all = state.all and state.all.key == key and state.all.rows
 		out[1] = { header = state.slot.label .. ": every upgrade" }
-		for _, r in ipairs(ns.Browser.Rows(m.now[state.slot.key] or {}, state.filter)) do
+		local rows = ns.Browser.Rows(all or m.now[key] or {}, state.filter)
+		for _, r in ipairs(rows) do
 			out[#out + 1] = { c = r.c, gain = r.gain, note = r.note, slot = r.slot, detail = true }
 		end
 		if #out == 1 then out[2] = { header = "no upgrade from these sources" } end
+		-- the model keeps the best KEEP of each kind: the rest on demand
+		local total = ns.Browser.Count(m, key, state.filter)
+		if not all and total > #rows then
+			out[#out + 1] = state.allBuilding and { header = "Scoring every upgrade..." }
+				or { header = format("Show all (%d)", total), showAll = true }
+		end
 		return out
 	end
 	out[1] = { header = "Best per slot right now" }
@@ -150,7 +160,9 @@ local function initRow(row, data)
 		row:SetScript("OnLeave", GameTooltip_Hide)
 		row:SetScript("OnClick", function(self)
 			local d = self.data
-			if d and d.c and not d.at and not state.slot then
+			if d and d.showAll and state.slot then
+				UI.ShowAll(state.slot.key)
+			elseif d and d.c and not d.at and not state.slot then
 				state.slot = d.slot
 				UI.Refresh()
 			end
@@ -173,9 +185,15 @@ local function initRow(row, data)
 	row.gain:SetText(format("|cff4cff4c%+.1f|r", data.gain))
 end
 
+local function dropAll()
+	if state.allBuilding then state.allBuilding:Cancel() end
+	state.all, state.allBuilding = nil, nil
+end
+
 -- Closing the window lets go of what the build used: the model, the item index; reopening builds again.
 local function release()
 	if state.building then state.building:Cancel() end
+	dropAll()
 	state.building, state.model, state.stale = nil, nil, true
 	ns.Items.ReleaseIndex()
 end
@@ -226,6 +244,7 @@ local function create()
 	frame.back:SetText("Back")
 	frame.back:SetScript("OnClick", function()
 		state.slot = nil
+		dropAll()
 		UI.Refresh()
 	end)
 	frame.box = CreateFrame("Frame", nil, frame, "WowScrollBoxList")
@@ -259,9 +278,25 @@ function UI.Refresh()
 	frame.box:SetDataProvider(CreateDataProvider(listData()), ScrollBoxConstants and ScrollBoxConstants.RetainScrollPosition)
 end
 
+-- Every upgrade of one slot (the drill-down's "Show all"), scored over frames like the model.
+function UI.ShowAll(key)
+	dropAll()
+	local env = UI.Env()
+	if not env then return end
+	local handle
+	handle = ns.Browser.Start(env, function(rows)
+		if state.allBuilding ~= handle then return end
+		state.all, state.allBuilding = { key = key, rows = rows }, nil
+		UI.Refresh()
+	end, function(e, yield) return ns.Browser.SlotAll(e, key, yield) end)
+	if not state.all then state.allBuilding = handle end -- not finished at once
+	UI.Refresh()
+end
+
 -- (Re)build the model over frames; a build already running is dropped (its scores are stale).
 function UI.Build()
 	if state.building then state.building:Cancel() end
+	dropAll()
 	state.building, state.model = nil, nil
 	ns.Sources.lastError = nil
 	local env, why = UI.Env()

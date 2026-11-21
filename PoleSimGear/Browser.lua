@@ -185,9 +185,26 @@ function Browser.Trim(rows, n)
 	return out
 end
 
+-- rows -> { all = n, quest = n, dungeon = n, crafted = n }
+local function counts(rows)
+	local out = { all = #rows }
+	for _, k in ipairs(KINDS) do out[k] = 0 end
+	for _, r in ipairs(rows) do
+		for _, k in ipairs(KINDS) do
+			if r.c.kinds[k] then out[k] = out[k] + 1 end
+		end
+	end
+	return out
+end
+
+-- -> { now = { [slotKey] = rows (trimmed) }, counts = { [slotKey] = counts before the trim }, coming = rows }
 function Browser.Build(env, yield)
 	local now = Browser.Gains(Browser.Collect(env, env.level, 0, env.level, env.level, yield))
-	for key, rows in pairs(now) do now[key] = Browser.Trim(rows, Browser.KEEP) end
+	local n = {}
+	for key, rows in pairs(now) do
+		n[key] = counts(rows)
+		now[key] = Browser.Trim(rows, Browser.KEEP)
+	end
 	local coming = {}
 	local lim = env.level + (env.ahead or Browser.AHEAD)
 	local last = math.min(60, lim)
@@ -227,7 +244,22 @@ function Browser.Build(env, yield)
 		end
 	end
 	table.sort(coming, byGain)
-	return { now = now, coming = Browser.Trim(coming, Browser.KEEP) }
+	return { now = now, counts = n, coming = Browser.Trim(coming, Browser.KEEP) }
+end
+
+-- How many upgrades a slot has under a source filter (before the model's trim).
+function Browser.Count(model, key, filter)
+	local c = model.counts and model.counts[key]
+	return c and c[filter] or 0
+end
+
+-- Every upgrade of one slot now (the drill-down's "Show all"): that slot scored again, untrimmed (the
+-- weapons together: a two-hander is weighed against the pair).
+function Browser.SlotAll(env, key, yield)
+	local only = { [key] = true }
+	if key == "mainhand" or key == "offhand" then only.mainhand, only.offhand = true, true end
+	local cands, band = Browser.Collect(env, env.level, 0, env.level, env.level, yield, only)
+	return Browser.Gains(cands, band)[key] or {}
 end
 
 -- rows passing a source filter ("all", "quest", "dungeon", "crafted")
@@ -253,9 +285,10 @@ end
 -- Build over several frames (no stutter opening the window); done(model) at the end. Each frame
 -- resumes the build until FRAME_MS milliseconds are spent (debugprofilestop), then waits for the next
 -- frame (one step per frame without the clock). -> a handle; handle:Cancel() stops the build.
+-- work(env, yield) (optional) replaces Build (SlotAll for "Show all").
 Browser.FRAME_MS = 8
-function Browser.Start(env, done)
-	local co = coroutine.create(function() return Browser.Build(env, coroutine.yield) end)
+function Browser.Start(env, done, work)
+	local co = coroutine.create(function() return (work or Browser.Build)(env, coroutine.yield) end)
 	local clock = type(debugprofilestop) == "function" and debugprofilestop or nil
 	local handle = { Cancel = function(self) self.cancelled = true end }
 	local function step()

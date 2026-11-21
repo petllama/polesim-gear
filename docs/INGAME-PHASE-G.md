@@ -37,8 +37,10 @@ tab; each step's goals with `t == "turnin"` give quest -> step. It is rebuilt wh
    Quest / Dungeon / Crafted; "(route)" in blue on rewards of quests the open Polestar guide turns in.
    Names include the best random suffix for the spec ("... of the Owl").
 4. Chips: Quests / Dungeons / Crafted change the list to that kind; All brings it back.
-5. Click a row: that slot's every upgrade (up to 25 of each kind), each with "level N" (its required
-   level) and its first source. Hover a row: the item, "scored with its best suffix" (suffix items),
+5. Click a row: that slot's upgrades (the best 25 of each kind), each with "level N" (its required
+   level) and its first source. When the slot has more, the last row says "Show all (N)" (N for the
+   chosen filter): click it, "Scoring every upgrade..." shows briefly, then all N are listed (that slot
+   is scored again; Back or a rescore goes back to the best 25). Hover a row: the item, "scored with its best suffix" (suffix items),
    Score and its terms (the same terms as the item tooltip's Shift "how?"), "Gain over what you wear",
    a note for weapons/rings when it applies, then every source: quest (zone), dungeon drop (dungeon,
    boss, drop chance), a container inside a dungeon ("Container: Food Crate, 2%", the dungeon; as on

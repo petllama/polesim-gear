@@ -82,6 +82,7 @@ return {
 				faction = "H", classBit = 16, raceBit = 16 } end,
 			At = function(L) local b, l = ns.Bands.For("priest", "shadow", L) return { band = b, lo = l, w = b.w, worn = {} } end,
 		}
+		ns.Browser.KEEP = 1 -- a short list per kind: the drill-down offers "Show all (N)"
 		SlashCmdList.POLESIMGEAR("")
 		T.eq(provided[1].header, "Scoring items...")
 		local n = 0
@@ -95,6 +96,19 @@ return {
 		view.init(row, first)
 		row.scripts.OnClick(row)
 		T.eq(provided[1].header, first.slot.label .. ": every upgrade")
+		for _, d in ipairs(provided) do view.init(row, d) end
+		local more = provided[#provided]
+		local total = 0
+		local all = ns.Browser.SlotAll(ns.BrowserUI.Env(), first.slot.key)
+		total = #all
+		T.ok(total > #provided - 2, "more upgrades than kept: " .. total)
+		T.ok(more.showAll, "the last row offers the rest"); T.eq(more.header, string.format("Show all (%d)", total))
+		view.init(row, more)
+		row.scripts.OnClick(row)
+		n = 0
+		while #W.timers > 0 and n < 10000 do W.flush() n = n + 1 end
+		T.eq(#provided, total + 1, "every upgrade listed"); T.ok(not provided[#provided].showAll)
+		T.eq(provided[2].c.id, all[1].c.id)
 		for _, d in ipairs(provided) do view.init(row, d) end
 		-- hover: the score sum, the gain, every source with "needs ... first"
 		local lines = {}
