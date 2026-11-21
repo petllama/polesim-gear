@@ -9,3 +9,6 @@
 ## SavedVariablesPerCharacter: PoleSimGearCharDB
 
 Core.lua
+Data\Weights.lua
+Data\Suffixes.lua
+Data\Items.lua
