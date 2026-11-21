@@ -96,11 +96,28 @@ local function forbidden(tooltip)
 end
 
 local reported = {} -- link -> true: its error was reported
-local function onItem(tooltip)
+local function str(x) return type(x) == "string" and not secret(x) and x ~= "" and x or nil end
+
+-- The item link from the post-call's tooltip data (the GUID of a bag/worn item, or its hyperlink, read
+-- as TooltipUtil.GetDisplayedItem reads them), else the tooltip's displayed item.
+local function linkOf(tooltip, data)
+	if type(data) == "table" then
+		local ok, link = pcall(function()
+			local guid = str(data.guid) -- the GUID first, as GetDisplayedItem (Shift compares with it)
+			if guid then return C_Item and C_Item.GetItemLinkByGUID and C_Item.GetItemLinkByGUID(guid) end
+			return data.hyperlink
+		end)
+		if ok and str(link) then return link end
+	end
+	local ok, _, link = pcall(TooltipUtil.GetDisplayedItem, tooltip)
+	return ok and str(link) or nil
+end
+
+local function onItem(tooltip, data)
 	if tooltip ~= GameTooltip and tooltip ~= ItemRefTooltip then return end -- not the comparison tooltips
 	if forbidden(tooltip) then return end
-	local ok, _, link = pcall(TooltipUtil.GetDisplayedItem, tooltip)
-	if not ok or type(link) ~= "string" or secret(link) then return end
+	local link = linkOf(tooltip, data)
+	if not link then return end
 	local ok2, err = pcall(Tooltip.Add, tooltip, link)
 	if not ok2 and not reported[link] then -- once per link per session, not on every redraw
 		reported[link] = true

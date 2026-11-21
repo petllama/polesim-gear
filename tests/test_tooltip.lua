@@ -27,7 +27,7 @@ local function client()
 	local GT, REF = tip(), tip()
 	require("wow").install()
 	_G.Enum = { TooltipDataType = { Item = 0, Unit = 2 } }
-	_G.TooltipDataProcessor = { AddTooltipPostCall = function(kind, fn) if kind == 0 then post = fn end end }
+	_G.TooltipDataProcessor = { AddTooltipPostCall = function(kind, fn) if kind == 0 then post = fn _G.TooltipDataProcessor.post = fn end end }
 	_G.TooltipUtil = { GetDisplayedItem = function(t) if t.kind == 0 then return "x", t.link end end }
 	_G.GameTooltip, _G.ItemRefTooltip = GT, REF
 	_G.IsShiftKeyDown = function() return false end
@@ -138,6 +138,23 @@ return {
 		T.eq(reported, 2)
 		unclient()
 	end,
+	-- The post-call's own tooltip data gives the link (hyperlink, or the GUID of a bag/worn item);
+	-- the displayed item only when the data has neither.
+	link_from_tooltip_data = function()
+		local ns, GT = client()
+		local seen = {}
+		ns.Tooltip.Add = function(_, link) seen[#seen + 1] = link end
+		_G.C_Item = { GetItemLinkByGUID = function(g) return g == "G1" and "fromguid" or nil end }
+		local post = _G.TooltipDataProcessor.post
+		GT.link = "displayed"
+		post(GT, { hyperlink = "fromdata" })
+		post(GT, { guid = "G1" })
+		post(GT, { hyperlink = "" })
+		post(GT, nil)
+		T.eq(table.concat(seen, ","), "fromdata,fromguid,displayed,displayed")
+		_G.C_Item = nil
+		unclient()
+	end,
 	short = function()
 		local L = T.addon(FILES).Tooltip.Lines({ score = 8, gain = 2, base = 6 }, inst, ctx, false, false)
 		T.eq(L[1][1], "Score 8.0"); T.eq(L[1][2], "+2.0 (+33%)")
@@ -206,7 +223,7 @@ return {
 		local GT, REF, CMP = {}, {}, {}
 		local function setup()
 			_G.Enum = { TooltipDataType = { Item = 0 } }
-			_G.TooltipDataProcessor = { AddTooltipPostCall = function(kind, fn) if kind == 0 then post = fn end end }
+			_G.TooltipDataProcessor = { AddTooltipPostCall = function(kind, fn) if kind == 0 then post = fn _G.TooltipDataProcessor.post = fn end end }
 			_G.TooltipUtil = { GetDisplayedItem = function(t) return "x", t.link end }
 			_G.GameTooltip, _G.ItemRefTooltip = GT, REF
 		end
