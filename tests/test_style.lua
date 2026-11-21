@@ -9,6 +9,7 @@ return {
 	numbers = function()
 		local S = load().Style
 		T.eq(S.Signed(31.06), "+31.1"); T.eq(S.Signed(-2), "-2.0")
+		T.eq(S.Signed(1200), "+1200", "1000 and over: no decimal, so it fits the 48 px Gain column"); T.eq(S.Signed(999.94), "+999.9")
 		T.eq(S.Pct(3, 12), "+25.0%"); T.eq(S.Pct(3, 0), "")
 		T.eq(S.Pct(28.1, 2.388), "+1177%", "100% and over: no decimal, so it fits the 54 px column")
 		T.eq(S.Pct(-1, 2), "-50.0%"); T.eq(S.Pct(99.94, 100), "+99.9%")

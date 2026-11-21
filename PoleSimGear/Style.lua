@@ -90,7 +90,7 @@ Style.CLOSE = { C.close, C.closeBorder, C.white, C.closeHover }
 Style.ACTION = { C.dd, C.ddBorder, C.text, C.tabHover }
 
 -- numbers -------------------------------------------------------------------------------------------
-function Style.Signed(x, suffix) return format("%+.1f", x) .. (suffix or "") end
+function Style.Signed(x, suffix) return format(math.abs(x) >= 999.95 and "%+.0f" or "%+.1f", x) .. (suffix or "") end
 function Style.Pct(gain, base)
 	if not base or base <= 0.01 then return "" end
 	local pct = 100 * gain / base
