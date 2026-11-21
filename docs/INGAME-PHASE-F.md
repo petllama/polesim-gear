@@ -22,6 +22,17 @@ changes Polestar's setting only on **Yes** (`Polestar.Set("gear.enabled", false)
 applies at once: no `/reload`). The answer is remembered for the whole account; Escape counts as No.
 In combat the question waits until combat ends.
 
+Account-wide answer, per-profile setting: our answer is kept once for the account
+(`PoleSimGearDB`), but `Polestar.Set` writes only the Polestar settings profile active on the
+character that clicked Yes (`PolestarDB.settings`; Polestar keeps its other profiles in
+`PolestarDB.profiles`). A character on another Polestar profile (its own, its class's) can still
+have Polestar's Gear on and is not asked again: turn it off there in Polestar options: Questing >
+Rewards & gear > Gear advice, or `/psg polestar` on that character.
+
+If Yes cannot change the setting, chat says so instead: "... set off, but Polestar reported an
+error applying it: /reload if they still show." (stored, a Polestar listener failed) or "Could not
+turn off Polestar's gear scores: turn them off in Polestar options: ..." (not stored).
+
 To ask again (for these checks, or to change your mind): `/psg polestar` (forgets the answer and asks
 now), or `/run PoleSimGearDB.askedPolestarGear=nil` then `/reload`.
 
@@ -33,7 +44,7 @@ now), or `/run PoleSimGearDB.askedPolestarGear=nil` then `/reload`.
    top-left, ours top-right.
 3. `/reload`: no question (the answer is remembered). `/run print(PoleSimGearDB.askedPolestarGear)`
    prints `no`.
-4. `/psg polestar`: the question again. Click **Yes**. Chat: "Polestar's gear scores are off ...".
+4. `/psg polestar`: the question again. Click **Yes**. Chat: "Polestar's gear scores are off (Polestar options: Questing > Rewards & gear > Gear advice to turn them back on)".
    At once (no `/reload`): Polestar's tooltip line and its bag arrows are gone; ours stays and says
    **Score** (no "PoleSim" label). Check:
 
