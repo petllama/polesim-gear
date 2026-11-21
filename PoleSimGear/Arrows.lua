@@ -132,3 +132,44 @@ end)
 ns.RegisterEvent("ADDON_LOADED", function(name)
 	if name == "BagBrother" or name == "Bagnon" then hookBagnon() end
 end)
+
+-- Group loot rolls (Mainline GroupLootFrame.lua/.xml, GroupLootFrame1..4): GroupLootContainer_OpenNewFrame
+-- sets frame.rollID, then shows the frame; the item icon is the frame's IconFrame button.
+local function paintRoll(frame)
+	local link = frame.rollID and GetLootRollItemLink(frame.rollID)
+	if frame.IconFrame then Arrows.Mark(frame.IconFrame, link and Arrows.Verdict(link)) end
+end
+ns.RegisterEvent("PLAYER_LOGIN", function()
+	if hooked.rolls then return end
+	for i = 1, 4 do
+		local f = _G["GroupLootFrame" .. i]
+		if f and f.HookScript then f:HookScript("OnShow", paintRoll) end
+	end
+	hooked.rolls = true
+end)
+Arrows.OnRedraw(function()
+	if not hooked.rolls then return end
+	for i = 1, 4 do
+		local f = _G["GroupLootFrame" .. i]
+		if f and f:IsShown() then paintRoll(f) end
+	end
+end)
+
+-- The merchant (Mainline MerchantFrame.lua): MerchantItem<i>ItemButton for the shown page
+-- (MERCHANT_ITEMS_PER_PAGE). The buyback tab (selectedTab 2, MerchantFrame_UpdateBuybackInfo) reuses
+-- the same buttons: no arrows there.
+local function paintMerchant()
+	if not (MerchantFrame and MerchantFrame:IsShown()) then return end
+	local per = MERCHANT_ITEMS_PER_PAGE or 10
+	for i = 1, per do
+		local b = _G["MerchantItem" .. i .. "ItemButton"]
+		if b then
+			local index = ((MerchantFrame.page or 1) - 1) * per + i
+			local link = MerchantFrame.selectedTab == 1 and b:IsShown() and GetMerchantItemLink(index)
+			Arrows.Mark(b, link and Arrows.Verdict(link))
+		end
+	end
+end
+if MerchantFrame_UpdateMerchantInfo then hooksecurefunc("MerchantFrame_UpdateMerchantInfo", paintMerchant) end
+if MerchantFrame_UpdateBuybackInfo then hooksecurefunc("MerchantFrame_UpdateBuybackInfo", paintMerchant) end
+Arrows.OnRedraw(paintMerchant)

@@ -167,4 +167,59 @@ return {
 		T.eq(updates, 1, "a redraw asks Bagnon to update its frames")
 		_G.BagBrother = nil
 	end,
+	-- Loot rolls: each GroupLootFrame<i> shows one rollID; its icon gets the arrow when shown.
+	loot_roll = function()
+		local links = { [11] = "up", [12] = "down" }
+		_G.GetLootRollItemLink = function(id) return links[id] end
+		local frames = {}
+		for i = 1, 4 do
+			local f = { IconFrame = button(), shown = false }
+			function f:HookScript(k, fn) self[k] = fn end
+			function f:IsShown() return self.shown end
+			frames[i] = f
+			_G["GroupLootFrame" .. i] = f
+		end
+		local ns = live({ up = head(6), down = head(4) })
+		login(ns)
+		frames[1].rollID, frames[1].shown = 11, true
+		frames[1]:OnShow()
+		T.eq(arrow(frames[1].IconFrame), true)
+		frames[2].rollID, frames[2].shown = 12, true
+		frames[2]:OnShow()
+		T.eq(arrow(frames[2].IconFrame), false)
+		frames[1].rollID = 12 -- reused for another roll
+		frames[1]:OnShow()
+		T.eq(arrow(frames[1].IconFrame), false)
+		frames[1].rollID = 11
+		ns.Arrows.Redraw()
+		T.eq(arrow(frames[1].IconFrame), true, "a redraw paints the shown roll frames")
+		for i = 1, 4 do _G["GroupLootFrame" .. i] = nil end
+		_G.GetLootRollItemLink = nil
+	end,
+	-- The merchant: the shown page's buttons; none on the buyback tab.
+	merchant = function()
+		_G.MERCHANT_ITEMS_PER_PAGE = 10
+		local links = { [1] = "down", [12] = "up" }
+		_G.GetMerchantItemLink = function(i) return links[i] end
+		_G.MerchantFrame = { page = 2, selectedTab = 1, IsShown = function() return true end }
+		for i = 1, 12 do _G["MerchantItem" .. i .. "ItemButton"] = button() end
+		_G.MerchantFrame_UpdateMerchantInfo = function() end
+		_G.MerchantFrame_UpdateBuybackInfo = function() end
+		local ns = live({ up = head(6), down = head(4) })
+		local b2 = _G.MerchantItem2ItemButton
+		MerchantFrame_UpdateMerchantInfo()
+		T.eq(arrow(b2), true, "page 2, second item = index 12")
+		MerchantFrame.page = 1
+		MerchantFrame_UpdateMerchantInfo()
+		T.eq(arrow(b2), false)
+		MerchantFrame.page = 2
+		ns.Arrows.Redraw()
+		T.eq(arrow(b2), true)
+		MerchantFrame.selectedTab = 2
+		MerchantFrame_UpdateBuybackInfo()
+		T.eq(arrow(b2), false, "buyback tab")
+		for i = 1, 12 do _G["MerchantItem" .. i .. "ItemButton"] = nil end
+		_G.MerchantFrame, _G.MerchantFrame_UpdateMerchantInfo, _G.MerchantFrame_UpdateBuybackInfo = nil, nil, nil
+		_G.GetMerchantItemLink, _G.MERCHANT_ITEMS_PER_PAGE = nil, nil
+	end,
 }
