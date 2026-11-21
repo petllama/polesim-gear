@@ -1,4 +1,8 @@
-# In-game checklist (one session, on a priest)
+# In-game checklist (one session, on a priest) — PoleSim Gear 0.2.1
+
+**0.2.1 over 0.2.0** (no new files: `tools/install.sh` then `/reload` is enough): the window is larger
+(980x600) and resizable, nothing in it is cut, worn items show their icon and name, the equipped strip
+explains its dots. Checks: K3, K7, K10.
 
 One ordered pass over everything that can only be checked in the game (plan Tasks 24, 26, 28, 30,
 31, 32, 34, 36 and 45, and the window v2 plan's Phase 8). Work top to bottom; a check that needs a
@@ -295,6 +299,13 @@ tabs right of the title (Gear Plan, Slot Upgrades, Sources, Weights, Settings), 
 red X; four header cards; the Sources / Show panel on the left; the equipped strip and the stat
 weights card at the bottom. Every kind icon (quest, dungeon skull, crafting hammer, vendor coin, world
 bag) and the weights card's pencil render: a green square instead of an icon is a missing texture: name which one.
+**Size (0.2.1):** the window opens at about 980x600 (a first open, or after `/run PoleSimGearDB.window=nil`
+and `/reload`) and **no text is cut** ("..."): the Gear Plan's `#` column, slot names (Ranged, Main
+hand, Off hand, Trinkets), the current item's score ("130.4"), Gain, Gain % ("+1177%"), the source kind
+("Dungeon"), item names, and the weights card (two values a line). **Resize** by the grip at the bottom
+right corner (the chat frame's grabber): it stops at 780x500 and at the screen; the tables stretch and
+their columns move with it (rows already shown too); at 780 wide the current item shows its icon and
+score only. `/reload` and reopen: the same size and place.
 
 **K4. Header.** "Level N Priest" with the class icon; spec "Shadow (auto)" (no "(auto)" once you choose
 a spec in K15); Gear score = the sum of the "PoleSim score" lines of what you wear (check that two worn
@@ -309,7 +320,8 @@ lists; untick **Quests**: quest rows go; nothing rebuilds. `/reload` and reopen:
 character). Tick Quests again.
 
 **K7. Gear Plan.** One row per slot with an upgrade: priority 1-3 in gold badges (then grey), the slot,
-what you wear and its score, the plan item, Gain and Gain %, the source icon and kind. Hover a row: the
+what you wear (**its own icon and name**, with an "of the Owl" style suffix if it has one; no red
+question mark, no "?") and its score, the plan item, Gain and Gain %, the source icon and kind. Hover a row: the
 "how?" (as D2: Score, its terms, "Gain over what you wear", the sources) and at the bottom "Click: this
 slot's upgrades. Right-click: back to suggestion, wishlist.". Click a row: Slot Upgrades opens on that
 slot.
@@ -324,8 +336,11 @@ spec on the Weights tab (Holy): no pick on that slot; back to **Automatic (talen
 the Gear Plan row stays, greyed, "its sources are off: Quests". Tick Quests again: normal.
 
 **K10. Equip a pick.** Equip the picked item (or any plan item) from your bags: the slot's pick clears,
-the row shows the next suggestion (or goes), progress goes up, and that slot's badge in the equipped
-strip turns green or goes.
+the row shows the next suggestion (or goes), progress goes up, and that slot's dot in the equipped
+strip turns green or goes. **The strip (0.2.1):** under the icons a legend: a green dot "suggested
+upgrade", a gold dot "your pick". Hover a slot: its item's tooltip, then one line: "Suggested upgrade:
+<item> +N" (green), "Your pick: <item> +N" (gold) or "No upgrade from the ticked sources" (grey). An
+empty slot shows that slot's own empty art (the character frame's), not one shared picture.
 
 **K11. Wishlist.** Star two rows (the star at the row's left, any tab). Show -> **Wishlist** lists both
 with their gains. The item's own tooltip (bag or a chat link) shows "On your PoleSim wishlist".
@@ -444,14 +459,14 @@ in open bags, vendor and mail update (no `/reload`); opening a bag or the vendor
 | J1-J7 | quest reward pick | |
 | K1 | parts: codex, Nav API, route | |
 | K2 | open/close (/psg, compartment, minimap button), positions kept | |
-| K3 | look, kind icons | |
+| K3 | look, kind icons, default size, nothing cut, resize grip, size kept | |
 | K4 | header | |
 | K5 | look ahead | |
 | K6 | Sources checkboxes, kept per character | |
-| K7 | Gear Plan rows, hover, click | |
+| K7 | Gear Plan rows (worn icons and names), hover, click | |
 | K8 | picks, back to suggestion, per spec | |
 | K9 | a pick whose sources are off | |
-| K10 | equipping a pick | |
+| K10 | equipping a pick, strip legend and dot tooltips, empty-slot art | |
 | K11 | wishlist | |
 | K12 | All gear | |
 | K13 | Slot Upgrades, Show all | |
