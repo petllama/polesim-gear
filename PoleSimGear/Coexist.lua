@@ -33,3 +33,63 @@ end
 function Coexist.Label()
 	return Coexist.PolestarGearOn()
 end
+
+-- The one-time question. The answer ("yes"/"no") is kept account-wide in PoleSimGearDB.askedPolestarGear;
+-- `/psg polestar` forgets it and asks again. A dialog the client could not show (OnCancel without a
+-- dialog) or that another dialog replaced ("override") is no answer: the next login asks again.
+local KEY = "POLESIMGEAR_POLESTAR_GEAR"
+local askedThisSession, waitingForCombat = false, false
+
+local function answer(a)
+	if ns.db then ns.db.askedPolestarGear = a end
+end
+
+if type(StaticPopupDialogs) == "table" then
+	StaticPopupDialogs[KEY] = {
+		text = "Polestar's gear scores are on. Turn them off so you see one score?",
+		button1 = YES or "Yes",
+		button2 = NO or "No",
+		OnAccept = function()
+			answer("yes")
+			if Coexist.TurnOff() then ns.Print("Polestar's gear scores are off (Polestar options: Gear to turn them back on).") end
+			ns.Fire("STATE", "COEXIST")
+		end,
+		OnCancel = function(dialog, _, reason)
+			if not dialog or reason ~= "clicked" then return end -- not shown, or replaced: no answer
+			answer("no")
+			ns.Print("Both score items: ours is the line that says PoleSim.")
+		end,
+		timeout = 0,
+		whileDead = true,
+		hideOnEscape = true,
+	}
+end
+
+-- Ask now if it is due: saved variables loaded, a class we score, Polestar's Gear on, no answer yet,
+-- not asked already this session. In combat it waits for PLAYER_REGEN_ENABLED.
+function Coexist.MaybeAsk()
+	if askedThisSession or not (ns.db and ns.Context and ns.Context.ClassKey()) then return end
+	if not Coexist.ShouldAsk(Coexist.PolestarGearOn(), ns.db.askedPolestarGear) then return end
+	if InCombatLockdown() then
+		waitingForCombat = true
+		return
+	end
+	waitingForCombat = false
+	if not (StaticPopupDialogs and StaticPopupDialogs[KEY] and StaticPopup_Show) then return end
+	askedThisSession = true
+	StaticPopup_Show(KEY)
+end
+
+ns.RegisterEvent("PLAYER_LOGIN", function()
+	C_Timer.After(5, Coexist.MaybeAsk)
+end)
+ns.RegisterEvent("PLAYER_REGEN_ENABLED", function()
+	if waitingForCombat then Coexist.MaybeAsk() end
+end)
+
+ns.Slash("polestar", function()
+	if ns.db then ns.db.askedPolestarGear = nil end
+	askedThisSession = false
+	if not Coexist.PolestarGearOn() then ns.Print("Polestar's gear scores are off: nothing to ask.") end
+	Coexist.MaybeAsk()
+end)

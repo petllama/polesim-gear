@@ -60,6 +60,9 @@ function W.install()
 	_G.C_AddOns = { GetAddOnMetadata = function() return "test" end }
 	_G.geterrorhandler = function() return function(e) error(e, 0) end end
 	_G.C_Traits, _G.C_ClassTalents = nil, nil -- a test that needs talents installs them
+	_G.StaticPopupDialogs = {}
+	_G.YES, _G.NO = "Yes", "No"
+	_G.InCombatLockdown = function() return false end
 end
 
 return W
