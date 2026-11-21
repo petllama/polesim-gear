@@ -158,7 +158,7 @@ function Tab.Entries()
 		return { { empty = st.building and "Scoring items..." or (st.why or "Nothing to show") } }
 	end
 	if not ctx then return { { empty = "No weights for this character." } } end
-	local es = ns.View.PlanEntries(st.model, ctx.worn, ns.Window.St())
+	local es = ns.Window.PlanEntries(ns.Options.View().show)
 	if #es == 0 then
 		local show = ns.Options.View().show
 		return { { empty = show == "wishlist" and "Your wishlist is empty: star an item in any list."

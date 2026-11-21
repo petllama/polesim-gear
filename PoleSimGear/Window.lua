@@ -83,10 +83,11 @@ end
 
 function Win.Panel(key) return panels[key] end
 
-function Win.SetTab(key)
-	if not Win.TABS_BY[key] then return end
+-- the tab's buttons and panel (made on its first show), no redraw
+local function showTab(key)
+	if not Win.TABS_BY[key] then return false end
 	ns.Options.View().tab = key
-	if not frame then return end
+	if not frame then return false end
 	for k, b in pairs(frame.tabs) do S.SetColours(b, k == key and S.TAB_ON or S.TAB) end
 	if not panels[key] then
 		-- a tab whose file is not there yet (a later phase) gets an empty panel
@@ -94,7 +95,10 @@ function Win.SetTab(key)
 		panels[key]:SetAllPoints(frame.content)
 	end
 	for k, p in pairs(panels) do p:SetShown(k == key) end
-	Win.Refresh()
+	return true
+end
+function Win.SetTab(key)
+	if showTab(key) then Win.Refresh() end
 end
 Win.TABS_BY = {}
 for _, t in ipairs(Win.TABS) do Win.TABS_BY[t.key] = t end
@@ -178,15 +182,29 @@ local function create()
 	if Win.CreateBottom then Win.CreateBottom(frame) end -- Task 3.6
 	frame:Hide() -- a new frame is shown: hidden first, so the first toggle shows it (and OnShow runs)
 	frame:SetScript("OnShow", function()
-		Win.SetTab(ns.Options.View().tab)
+		showTab(ns.Options.View().tab) -- one redraw: Build's (or Refresh's)
 		if state.stale then Win.Build() else Win.Refresh() end
 	end)
 	frame:SetScript("OnHide", release)
 	Win.frame = frame
 end
 
+-- This redraw's View.PlanEntries by show mode (the strip and the Gear Plan tab share one pass).
+local pass
+function Win.PlanEntries(show)
+	local ctx = ns.Context.Get()
+	if not (ctx and state.model) then return nil end
+	if pass and pass[show] then return pass[show] end
+	local st = Win.St()
+	st.show = show
+	local es = ns.View.PlanEntries(state.model, ctx.worn, st)
+	if pass then pass[show] = es end
+	return es
+end
+
 function Win.Refresh()
 	if not (frame and frame:IsShown()) then return end
+	pass = {}
 	local ctx = ns.Context.Get()
 	if Win.UpdateHeader then Win.UpdateHeader(frame, ctx) end
 	if Win.UpdateLeft then Win.UpdateLeft(frame) end
@@ -194,6 +212,7 @@ function Win.Refresh()
 	local key = ns.Options.View().tab
 	local p, def = panels[key], tabDefs[key]
 	if p and def and def.refresh then def.refresh(p) end
+	pass = nil
 end
 
 -- Build/ShowAll: the 0.1.0 browser window's Build and ShowAll (Build also drops the Sources grouping).
@@ -219,7 +238,8 @@ function Win.Build()
 		state.why = "The upgrade list could not be built (the error was reported); close and reopen to try again."
 		Win.Refresh()
 	end)
-	if not ended then state.building = handle end
+	if ended then return end -- done or failed at once: already redrawn
+	state.building = handle
 	Win.Refresh()
 end
 
@@ -434,9 +454,9 @@ function Win.UpdateBottom(f, ctx)
 	local n = 0
 	local badges = {}
 	if ctx and state.model then
-		local st = Win.St()
-		st.show = "upgrades"
-		badges = ns.View.BadgeSlots(ns.View.PlanEntries(state.model, ctx.worn, st), ctx.worn)
+		-- the Gear Plan's own pass (All gear adds only slots without a plan); Wishlist lists stars
+		local show = ns.Options.View().show
+		badges = ns.View.BadgeSlots(Win.PlanEntries(show == "all" and "all" or "upgrades"), ctx.worn)
 	end
 	for _, b in ipairs(f.slots) do
 		local link = GetInventoryItemLink("player", b.slot)

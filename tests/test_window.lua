@@ -203,4 +203,28 @@ return {
 		T.ok(not text:find(" x ", 1, true), "no band: no how?"); T.ok(not text:find("weights of levels", 1, true))
 		fx.done()
 	end,
+	one_plan_pass_per_refresh = function()
+		local fx = F.load()
+		local ns = fx.ns
+		fx.open()
+		local calls = 0
+		local pe = ns.View.PlanEntries
+		ns.View.PlanEntries = function(...) calls = calls + 1 return pe(...) end
+		ns.Window.Refresh()
+		T.eq(calls, 1, "the strip and the Gear Plan tab share one pass")
+		fx.done()
+	end,
+	open_refreshes_once = function()
+		local fx = F.load()
+		local ns = fx.ns
+		local refreshes = 0
+		local tabRefresh = ns.TabPlan.Refresh
+		ns.Window.RegisterTab("plan", { create = ns.TabPlan.Create, refresh = function(p) refreshes = refreshes + 1 tabRefresh(p) end,
+			release = ns.TabPlan.Release })
+		SlashCmdList.POLESIMGEAR("")
+		T.eq(refreshes, 1, "opening draws once (\"Scoring items...\")")
+		fx.settle()
+		T.eq(refreshes, 2, "and once more when built")
+		fx.done()
+	end,
 }
