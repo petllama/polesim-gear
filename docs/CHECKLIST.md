@@ -1,4 +1,8 @@
-# In-game checklist (one session, on a priest; section M on a mage) — PoleSim Gear 0.3.6
+# In-game checklist (one session, on a priest; section M on a mage) — PoleSim Gear 0.3.7
+
+**0.3.7 over 0.3.6:** Bagnon bags get arrows and gains: Bagnon keeps its own copy of BagBrother's
+classes (`Bagnon.Item`), which is now hooked (0.3.6 and earlier only looked at `BagBrother.Item`, absent
+there). Check: an upgrade in Bagnon shows the arrow top-right and "+N" in green. `/reload` is enough.
 
 **0.3.6 over 0.3.5:** bag (and Bagnon, loot roll, merchant, mail) item buttons that are upgrades show
 their gain in green at the icon's bottom ("+1.0"), as on quest rewards; nothing for non-upgrades (no

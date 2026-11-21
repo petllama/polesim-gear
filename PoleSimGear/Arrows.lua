@@ -156,19 +156,30 @@ local function otherCharacter(item)
 	local ok, owner = pcall(item.GetOwner, item)
 	return ok and type(owner) == "table" and owner.offline and true or false
 end
+-- Bagnon builds its own copy of BagBrother's classes in its own namespace (Bagnon/src/main.xml includes
+-- BagBrother's core: _G.Bagnon.Item), and BagBrother's namespace may have none: hook every namespace
+-- that has an Item class, once each.
+local BAG_ADDONS = { "Bagnon", "BagBrother", "Bagnonium" }
 local function hookBagnon()
-	local B = _G.BagBrother
-	local Item = type(B) == "table" and B.Item
-	if hooked.bagnon or not (type(Item) == "table" and type(Item.Update) == "function") then return end
-	hooksecurefunc(Item, "Update", function(self)
-		local link = not otherCharacter(self) and type(self.info) == "table" and self.info.hyperlink
-		Arrows.Paint(self, link or nil)
-	end)
-	hooked.bagnon = true
+	hooked.bagnonNS = hooked.bagnonNS or {}
+	for _, name in ipairs(BAG_ADDONS) do
+		local B = _G[name]
+		local Item = type(B) == "table" and B.Item
+		if not hooked.bagnonNS[name] and type(Item) == "table" and type(Item.Update) == "function" then
+			hooksecurefunc(Item, "Update", function(self)
+				local link = not otherCharacter(self) and type(self.info) == "table" and self.info.hyperlink
+				Arrows.Paint(self, link or nil)
+			end)
+			hooked.bagnonNS[name] = true
+			hooked.bagnon = true
+		end
+	end
 end
 Arrows.OnRedraw(function()
-	local B = _G.BagBrother
-	if hooked.bagnon and type(B.Frames) == "table" and B.Frames.Update then B.Frames:Update() end
+	for name in pairs(hooked.bagnonNS or {}) do
+		local B = _G[name]
+		if type(B) == "table" and type(B.Frames) == "table" and B.Frames.Update then B.Frames:Update() end
+	end
 end)
 
 ns.RegisterEvent("PLAYER_LOGIN", function()
@@ -176,7 +187,7 @@ ns.RegisterEvent("PLAYER_LOGIN", function()
 	hookBagnon()
 end)
 ns.RegisterEvent("ADDON_LOADED", function(name)
-	if name == "BagBrother" or name == "Bagnon" then hookBagnon() end
+	if name == "BagBrother" or name == "Bagnon" or name == "Bagnonium" then hookBagnon() end
 end)
 
 -- Group loot rolls (Mainline GroupLootFrame.lua/.xml, GroupLootFrame1..4): GroupLootContainer_OpenNewFrame

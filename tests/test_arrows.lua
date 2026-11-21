@@ -261,6 +261,24 @@ return {
 		T.eq(updates, 1, "a redraw asks Bagnon to update its frames")
 		_G.BagBrother = nil
 	end,
+	-- The real Bagnon builds its own copy of BagBrother's classes in its own namespace (_G.Bagnon.Item,
+	-- Bagnon/src/main.xml includes BagBrother's core): _G.BagBrother has no Item class there. Hooked
+	-- from Bagnon's namespace, gain shown.
+	bagnon_namespace = function()
+		local updates = 0
+		local Item = {}
+		function Item:Update(info) self.info = info end
+		_G.BagBrother = {}
+		_G.Bagnon = { Item = Item, Frames = { Update = function() updates = updates + 1 end } }
+		local ns = live({ up = head(6) })
+		ns._frame.scripts.OnEvent(ns._frame, "ADDON_LOADED", "Bagnon")
+		local b = button()
+		Item.Update(b, { hyperlink = "up" })
+		T.eq(arrow(b), true, "Bagnon's own Item class is hooked")
+		ns.Arrows.Redraw()
+		T.eq(updates, 1)
+		_G.BagBrother, _G.Bagnon = nil, nil
+	end,
 	-- Bagnon showing another character's bags (BagBrother: the frame's owner, Item:GetOwner(), is
 	-- offline): its items are not this character's, so no arrows there (and none left from the player's
 	-- view). The player's own bank or vault viewed away from the banker is cached too (Item:IsCached()),
