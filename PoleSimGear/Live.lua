@@ -83,9 +83,9 @@ end
 -- The link's random suffix: a bonus id in the link's bonus-ID list that is one of the item's known
 -- suffixes, else the classic suffixID field when positive and known. Item string fields after
 -- "item:": 1 itemID, 2 enchant, 3-6 gems, 7 suffixID, 8 uniqueID, 9 linkLevel, 10 specID,
--- 11 modifiersMask, 12 itemContext, 13 numBonusIDs, then the bonus ids, then the modifiers (Blizzard's
--- PTR reporter, Blizzard_Reports.lua). Other fields (uniqueID, modifier values) are never read as a
--- suffix. -> bonus id | nil
+-- 11 upgradeTypeID, 12 instanceDifficultyID, 13 numBonusIDs, then the bonus ids, then the upgrade
+-- values (the field names of Blizzard's PTR reporter, Blizzard_PTRFeedback/Blizzard_Reports.lua).
+-- Other fields (uniqueID, upgrade values) are never read as a suffix. -> bonus id | nil
 function Live.Bonus(link, rec)
 	if not (rec and rec.sfx and #rec.sfx > 0) or type(link) ~= "string" then return nil end
 	local fields = link:match("item:([%d:%-]+)")
