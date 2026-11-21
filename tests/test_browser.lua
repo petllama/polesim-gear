@@ -379,6 +379,82 @@ return {
 		T.ok(B.Pass(r(1, 1, { vendor = true, quest = true }), { quest = true }), "any enabled kind passes")
 		T.ok(not B.Pass(r(1, 1, { world = true }), { quest = true, world = false }))
 	end,
+	-- Weapons as one set under a worn two-hander: Gains flags the one-handers and off hands it scored as a
+	-- pair (vs2h) and returns, besides the upgrades, the ones whose pair does not beat the staff.
+	gains_keep_pairs_under_a_two_hander = function()
+		local B = T.addon(FILES).Browser
+		local function c(id, inv, score) return { id = id, score = score, inst = { id = id, inv = inv, name = "I" .. id }, kinds = { quest = true } } end
+		local band = { worn = { [16] = { inst = { id = 50, inv = 17 }, score = 18.3 } } }
+		local g, low = B.Gains({ mainhand = { c(1, 17, 48.7), c(2, 21, 15.9), c(3, 13, 5) }, offhand = { c(4, 23, 6.5), c(5, 23, 1) } }, band)
+		T.eq(#g.mainhand, 2, "the staff and the 15.9 one-hander with the 6.5 off hand")
+		T.ok(not g.mainhand[1].vs2h, "a two-hander is not paired"); T.ok(g.mainhand[2].vs2h)
+		T.eq(#g.offhand, 1); T.ok(g.offhand[1].vs2h)
+		T.eq(#low.mainhand, 1); T.eq(low.mainhand[1].c.id, 3); T.ok(low.mainhand[1].vs2h); T.near(low.mainhand[1].base, 18.3)
+		T.eq(#low.offhand, 1, "1 + 15.9 does not beat the staff"); T.near(low.offhand[1].gain, 1 + 15.9 - 18.3, 1e-9)
+		-- not under a two-hander: nothing paired, nothing kept
+		local g2, low2 = B.Gains({ mainhand = { c(2, 21, 15.9) }, offhand = { c(4, 23, 6.5) } }, { worn = { [16] = { inst = { id = 51, inv = 21 }, score = 5 } } })
+		T.ok(not g2.mainhand[1].vs2h); T.eq(#low2.mainhand, 0); T.eq(#low2.offhand, 0)
+	end,
+	-- Under a worn two-hander the window pairs each one-hander with the best off hand that passes the
+	-- ticked sources and look ahead (or the player's off-hand pick), and the reverse; a pair that does not
+	-- beat the staff is no upgrade (listed with its negative gain only with all = true).
+	slot_rows_pair_weapons_as_one_set = function()
+		local B = T.addon(FILES).Browser
+		local function r(id, inv, score, kinds, at)
+			local key = (inv == 23) and "offhand" or "mainhand"
+			return { c = { id = id, score = score, inst = { id = id, inv = inv, name = "I" .. id }, kinds = kinds },
+				gain = 99, base = 18.3, vs2h = inv ~= 17 or nil, at = at, slot = { key = key } }
+		end
+		local Q, D = { quest = true }, { dungeon = true }
+		local blessed = r(1, 17, 48.7, D)
+		blessed.gain, blessed.vs2h = 30.4, nil
+		local m = { level = 21,
+			now = { mainhand = { blessed, r(2, 21, 38.1, D), r(3, 21, 15.9, Q) }, offhand = { r(4, 23, 6.5, D), r(5, 23, 4.1, Q) } },
+			coming = { offhand = { r(6, 23, 5, Q, 22) } },
+			under2h = { mainhand = { r(7, 21, 2, Q) }, offhand = {} } }
+		local function ids(rows)
+			local t = {}
+			for _, x in ipairs(rows) do t[#t + 1] = x.c.id .. "=" .. string.format("%.1f", x.gain) end
+			return table.concat(t, ",")
+		end
+		T.eq(ids(B.SlotRows(m, "offhand", 0, { quest = true, dungeon = true })), "4=26.3,5=23.9", "with Evocator (38.1)")
+		local mh = B.SlotRows(m, "mainhand", 0, { quest = true })
+		T.eq(ids(mh), "3=1.7", "quests only: the 15.9 one-hander with the 4.1 quest off hand")
+		T.eq(mh[1].note, "with I5 in the off hand"); T.eq(mh[1].pairWith.c.id, 5)
+		T.eq(m.now.mainhand[3].gain, 99, "the model's rows are not changed")
+		T.eq(ids(B.SlotRows(m, "mainhand", 1, { quest = true })), "3=2.6", "look ahead 1: the level 22 off hand")
+		T.eq(ids(B.SlotRows(m, "offhand", 0, { quest = true })), "5=1.7")
+		T.eq(ids(B.SlotRows(m, "mainhand", 0, { quest = true }, { all = true })), "3=1.7,7=-12.2", "all: the pair that loses too")
+		-- the player's off-hand pick is the partner
+		T.eq(ids(B.SlotRows(m, "mainhand", 0, { quest = true, dungeon = true }, { partner = "5:0" })), "1=30.4,2=23.9,3=1.7")
+		-- dungeons only: the dungeon off hand is the partner
+		T.eq(ids(B.SlotRows(m, "mainhand", 0, { dungeon = true }, { all = true })), "1=30.4,2=26.3")
+		-- no off hand at all: a one-hander alone against the staff (not an upgrade here)
+		m.now.offhand, m.coming.offhand = {}, {}
+		local alone = B.SlotRows(m, "mainhand", 0, { quest = true }, { all = true })
+		T.eq(ids(alone), "3=-2.4,7=-16.3"); T.eq(alone[1].note, "leaves the off hand empty")
+		T.eq(#B.SlotRows(m, "mainhand", 0, { quest = true }), 0)
+	end,
+	-- The model keeps the weapons whose pair loses to the worn two-hander (now and coming, trimmed like
+	-- the upgrades): another filter or the player's pick may pair them into a winning set.
+	build_keeps_losing_pairs_under_a_two_hander = function()
+		local B = T.addon(FILES).Browser
+		local e = env()
+		e.ahead = 1
+		local items = { [41] = rec(41, 13, 1, 10, { c = 2, sc = 4 }), [42] = rec(42, 23, 1, 10, { c = 4, sc = 0 }),
+			[43] = rec(43, 13, 0.5, 21, { c = 2, sc = 4 }) }
+		e.codex.Item = function() return { sources = { { type = "quest", quest = 100 } } } end
+		e.items = { Get = function(id) return items[id] end, ByInv = function() return { [13] = { 41, 43 }, [23] = { 42 } } end }
+		e.at = function(level)
+			return { w = level > 20 and W2 or W1, style = "any", worn = { [16] = { inst = { id = 99, inv = 17 }, score = 3 } } }
+		end
+		local m = B.Build(e)
+		T.eq(#m.now.mainhand, 0); T.eq(#m.now.offhand, 0)
+		local ids = {}
+		for _, r in ipairs(m.under2h.mainhand) do ids[#ids + 1] = r.c.id .. "@" .. (r.at or "now") end
+		T.eq(table.concat(ids, ","), "43@21,41@now")
+		T.eq(m.under2h.offhand[1].c.id, 42)
+	end,
 	worn_for_and_gear_score = function()
 		local B = T.addon(FILES).Browser
 		local function e(id, s) return { inst = { id = id }, score = s } end

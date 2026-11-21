@@ -16,6 +16,25 @@ local function model()
 		coming = { feet = { r(5, 7, { quest = true }, 22) } } }
 end
 local worn = { [1] = { inst = { id = 90 }, score = 10 }, [5] = { inst = { id = 91 }, score = 4 } }
+-- The screenshot's weapons under a worn Wind Rider Staff (18.3) at 21: Staff of the Blessed Seer (2H
+-- 48.7, dungeon), Evocator's Blade (1H 38.1, dungeon), The Stitcher (1H 15.9, an upcoming guide quest),
+-- Skum's Bucket (off hand 6.5, dungeon), a vendor off hand (1.0). Rows as Browser.Gains makes them.
+local function weaponModel()
+	local W = 18.3
+	local function row(id, inv, score, name, kinds, src)
+		return { c = { id = id, score = score, inst = { id = id, inv = inv, name = name }, kinds = kinds, sources = src or {} },
+			gain = inv == 17 and score - W or 99, base = W, vs2h = inv ~= 17 or nil,
+			slot = { key = inv == 23 and "offhand" or "mainhand", label = inv == 23 and "Off hand" or "Main hand" } }
+	end
+	local D, Q = { dungeon = true }, { quest = true }
+	local near = { { kind = "quest", ok = true, questId = 700, level = 21, route = { ahead = 3, guide = "G" } } }
+	local m = { level = 21,
+		now = { mainhand = { row(1, 17, 48.7, "Staff of the Blessed Seer", D), row(2, 21, 38.1, "Evocator's Blade", D) },
+			offhand = { row(4, 23, 6.5, "Skum's Bucket", D) } },
+		coming = {},
+		under2h = { mainhand = { row(3, 21, 15.9, "The Stitcher", Q, near) }, offhand = { row(5, 23, 1.0, "Vendor Orb", { vendor = true }) } } }
+	return m, { [16] = { inst = { id = 5306, inv = 17, name = "Wind Rider Staff" }, score = W } }
+end
 local ALL = { quest = true, dungeon = true, crafted = true, vendor = true, world = false }
 return {
 	upgrades_mode = function()
@@ -58,7 +77,7 @@ return {
 		local m = model()
 		local st = { spec = "shadow", filters = ALL, ahead = 0, show = "upgrades" }
 		local done, total = ns.View.Progress(m, worn, st)
-		T.eq(total, #ns.Browser.SLOTS); T.eq(done, total - 2, "head and neck have upgrades now")
+		T.eq(total, #ns.Browser.SLOTS - 1, "main + off hand count once"); T.eq(done, total - 2, "head and neck have upgrades now")
 		st.filters = { quest = true }
 		done = ns.View.Progress(m, worn, st)
 		T.eq(done, total - 1, "vendor off: the neck counts as done")
@@ -97,6 +116,104 @@ return {
 		local bands = ns.View.Bands("priest", "shadow")
 		T.ok(#bands >= 2); T.eq(bands[1].lo, 1); T.eq(bands[2].lo, bands[1].upTo + 1)
 		T.eq(ns.View.BandIndex(bands, bands[2].lo), 2)
+	end,
+	-- Weapons are ONE decision (the user's level 21 Shadow priest wearing Wind Rider Staff, 18.3): the
+	-- Gear Plan suggests the best weapon set; an off hand only with a one-hander that is available or
+	-- planned, and only when the pair beats the staff; under a two-hander plan the Off hand row "uses the
+	-- two-hander". Row gains split so they sum to the set's gain.
+	weapon_set_screenshot = function()
+		local ns = load()
+		local m, worn = weaponModel()
+		local st = { spec = "shadow", filters = { quest = true }, ahead = 0, show = "all" }
+		-- quests only: The Stitcher alone (15.9) loses to the staff: nothing to plan, no off hand
+		local mh, oh = ns.View.Weapons(m, worn, st, 0)
+		T.eq(mh.plan, nil, "no main hand"); T.eq(oh.plan, nil, "no off hand over a better staff"); T.ok(oh.twoHander)
+		-- quests + dungeons: the best set is the two-hander Staff of the Blessed Seer (48.7) over
+		-- Evocator's Blade + Skum's Bucket (44.6)
+		st.filters = { quest = true, dungeon = true }
+		mh, oh = ns.View.Weapons(m, worn, st, 0)
+		T.eq(mh.plan.c.id, 1); T.near(mh.plan.gain, 30.4, 1e-9); T.ok(oh.twoHander); T.eq(oh.plan, nil)
+		-- without the two-hander: Evocator's Blade + Skum's Bucket, gains split (19.8 + 6.5 = 26.3)
+		table.remove(m.now.mainhand, 1)
+		mh, oh = ns.View.Weapons(m, worn, st, 0)
+		T.eq(mh.plan.c.id, 2); T.near(mh.plan.gain, 38.1 - 18.3, 1e-9); T.near(mh.plan.setGain, 26.3, 1e-9)
+		T.eq(oh.plan.c.id, 4); T.near(oh.plan.gain, 6.5, 1e-9); T.near(oh.plan.setGain, 26.3, 1e-9)
+		T.eq(oh.plan.note, "with Evocator's Blade (also planned)")
+		T.eq(mh.plan.note, "with Skum's Bucket (also planned)")
+		T.eq(oh.plan.setText, "Weapon set: +26.3 over Wind Rider Staff")
+		T.ok(not oh.twoHander)
+	end,
+	-- The near-quest rule per item: The Stitcher from an upcoming guide quest is the main hand (its set
+	-- with the best off hand, Skum's Bucket, still beats the staff: +4.1), BiS the two-hander (+30.4).
+	weapon_set_near_quest = function()
+		local ns = load()
+		local m, worn = weaponModel()
+		local st = { spec = "shadow", filters = { quest = true, dungeon = true }, ahead = 0, show = "all", preferQuest = true }
+		local mh, oh = ns.View.Weapons(m, worn, st, 0)
+		T.eq(mh.plan.c.id, 3); T.eq(mh.near, true); T.eq(mh.best.c.id, 1); T.near(mh.best.gain, 30.4, 1e-9)
+		T.near(mh.plan.gain, 15.9 - 18.3, 1e-9); T.near(mh.plan.setGain, 15.9 + 6.5 - 18.3, 1e-9)
+		T.eq(oh.plan.c.id, 4); T.eq(oh.plan.note, "with The Stitcher (also planned)")
+	end,
+	-- Picks fix their part of the set: an off-hand pick takes the best one-hander (no two-hander); a
+	-- two-hander pick leaves the off hand to it; a one-hander pick takes the best off hand.
+	weapon_set_picks = function()
+		local m, worn = weaponModel()
+		local st = { spec = "shadow", filters = { quest = true, dungeon = true, vendor = true }, ahead = 0, show = "all" }
+		local ns = load({ plan = { shadow = { offhand = "5:0" } } })
+		local mh, oh = ns.View.Weapons(m, worn, st, 0)
+		T.eq(oh.plan.c.id, 5); T.ok(oh.isPick); T.eq(mh.plan.c.id, 2, "Evocator's Blade, not the staff")
+		T.near(mh.plan.setGain, 38.1 + 1 - 18.3, 1e-9)
+		ns = load({ plan = { shadow = { mainhand = "1:0", offhand = "5:0" } } })
+		mh, oh = ns.View.Weapons(m, worn, st, 0)
+		T.eq(mh.plan.c.id, 1); T.ok(oh.twoHander); T.eq(oh.plan, nil)
+		ns = load({ plan = { shadow = { mainhand = "3:0" } } })
+		mh, oh = ns.View.Weapons(m, worn, st, 0)
+		T.eq(mh.plan.c.id, 3); T.ok(mh.isPick); T.eq(oh.plan.c.id, 4); T.eq(oh.plan.note, "with The Stitcher (also planned)")
+		-- an off-hand pick whose pair loses to the staff is still the plan, with the best one-hander
+		st.filters = { quest = true, vendor = true }
+		ns = load({ plan = { shadow = { offhand = "5:0" } } })
+		mh, oh = ns.View.Weapons(m, worn, st, 0)
+		T.eq(oh.plan.c.id, 5); T.eq(mh.plan.c.id, 3); T.near(mh.plan.setGain, 15.9 + 1 - 18.3, 1e-9)
+	end,
+	-- Worn one-hander + off hand: a better off hand alone; a two-hander only when it beats the best pair.
+	weapon_set_worn_pair = function()
+		local ns = load()
+		local function row(id, inv, score, gain, base, name)
+			return { c = { id = id, score = score, inst = { id = id, inv = inv, name = name or ("I" .. id) }, kinds = { quest = true }, sources = {} },
+				gain = gain, base = base, slot = { key = inv == 23 and "offhand" or "mainhand" } }
+		end
+		local worn = { [16] = { inst = { id = 90, inv = 21, name = "Shiv" }, score = 101 }, [17] = { inst = { id = 91, inv = 23, name = "Runic" }, score = 3.2 } }
+		local st = { spec = "shadow", filters = { quest = true }, ahead = 0, show = "all" }
+		local m = { level = 21, now = { mainhand = {}, offhand = { row(4, 23, 7.2, 4.0, 3.2, "Shimmering") } }, coming = {} }
+		local mh, oh = ns.View.Weapons(m, worn, st, 0)
+		T.eq(mh.plan, nil); T.eq(oh.plan.c.id, 4); T.near(oh.plan.gain, 4.0, 1e-9); T.eq(oh.plan.note, nil)
+		worn[16] = { inst = { id = 90, inv = 21, name = "Knife" }, score = 5 }
+		worn[17] = { inst = { id = 91, inv = 23, name = "Runic" }, score = 3 }
+		m.now.mainhand = { row(1, 17, 48.7, 40.7, 8), row(2, 21, 38.1, 33.1, 5) }
+		m.now.offhand = { row(4, 23, 6.5, 3.5, 3) }
+		mh, oh = ns.View.Weapons(m, worn, st, 0)
+		T.eq(mh.plan.c.id, 1, "40.7 over 33.1 + 3.5"); T.ok(oh.twoHander)
+		m.now.mainhand[2] = row(2, 21, 45, 40, 5)
+		mh, oh = ns.View.Weapons(m, worn, st, 0)
+		T.eq(mh.plan.c.id, 2, "40 + 3.5 over 40.7"); T.near(mh.plan.gain, 40, 1e-9); T.near(mh.plan.setGain, 43.5, 1e-9)
+		T.eq(oh.plan.c.id, 4); T.near(oh.plan.gain, 3.5, 1e-9); T.eq(oh.plan.setText, "Weapon set: +43.5 over Knife + Runic")
+	end,
+	-- The Gear Plan rows and the progress count the weapon set once (the "uses the two-hander" off hand
+	-- is not a slot to finish).
+	weapon_set_entries_and_progress = function()
+		local ns = load()
+		local m, worn = weaponModel()
+		local st = { spec = "shadow", filters = { quest = true, dungeon = true }, ahead = 0, show = "all" }
+		local by = {}
+		for _, e in ipairs(ns.View.PlanEntries(m, worn, st)) do by[e.def.key] = e end
+		T.eq(by.mainhand.entry.plan.c.id, 1); T.ok(by.offhand.entry.twoHander); T.eq(by.offhand.priority, nil)
+		st.show = "upgrades"
+		for _, e in ipairs(ns.View.PlanEntries(m, worn, st)) do T.ok(e.def.key ~= "offhand", "no off-hand row") end
+		local done, total = ns.View.Progress(m, worn, st)
+		T.eq(total, #ns.Browser.SLOTS - 1, "main and off hand: one weapon set"); T.eq(done, total - 1)
+		st.filters = { quest = true }
+		done = ns.View.Progress(m, worn, st)
+		T.eq(done, total, "the staff is the best set from quests")
 	end,
 	badge_slots = function()
 		local ns = load({ plan = { shadow = { neck = "3:0" } } })

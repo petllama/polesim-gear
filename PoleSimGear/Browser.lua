@@ -134,11 +134,11 @@ function Browser.Gains(cands, band, pair)
 		if c.inst.inv ~= 17 then best1h = c break end
 	end
 	local bestOh = (pair.offhand or {})[1]
-	local out = {}
+	local out, low = {}, { mainhand = {}, offhand = {} }
 	for _, def in ipairs(Browser.SLOTS) do
 		local rows = {}
 		for _, c in ipairs(cands[def.key] or {}) do
-			local gain, note, base
+			local gain, note, base, vs2h
 			if def.key == "finger" or def.key == "trinket" then
 				local sa, ia = at(def.slot)
 				local sb, ib = at(def.slot + 1)
@@ -160,7 +160,7 @@ function Browser.Gains(cands, band, pair)
 						gain = c.score - base
 						note = (oh and not mh2h) and "replaces your main and off hand" or nil
 					elseif mh2h then
-						base = mhS
+						base, vs2h = mhS, true
 						gain = c.score + (bestOh and bestOh.score or 0) - mhS
 						note = bestOh and ("with " .. bestOh.inst.name .. " in the off hand") or "leaves the off hand empty"
 					else
@@ -171,7 +171,7 @@ function Browser.Gains(cands, band, pair)
 			elseif def.key == "offhand" then
 				if not same(oh, c.inst) then
 					if mh2h then
-						base = mhS
+						base, vs2h = mhS, true
 						gain = c.score + (best1h and best1h.score or 0) - mhS
 						note = best1h and ("with " .. best1h.inst.name .. " in the main hand") or "needs a one-hander"
 					else
@@ -183,12 +183,21 @@ function Browser.Gains(cands, band, pair)
 				local s, i = at(def.slot)
 				if not same(i, c.inst) then gain, base = c.score - s, s end
 			end
-			if gain and gain > 1e-6 then rows[#rows + 1] = { c = c, gain = gain, base = base, note = note, slot = def } end
+			if gain then
+				local r = { c = c, gain = gain, base = base, note = note, slot = def, vs2h = vs2h }
+				if gain > 1e-6 then
+					rows[#rows + 1] = r
+				elseif vs2h then -- under a worn two-hander: a pair from other sources may still win (SlotRows)
+					low[def.key][#low[def.key] + 1] = r
+				end
+			end
 		end
 		table.sort(rows, byGain)
 		out[def.key] = rows
 	end
-	return out
+	table.sort(low.mainhand, byGain)
+	table.sort(low.offhand, byGain)
+	return out, low
 end
 
 Browser.AHEAD = 5 -- "coming up": the next levels (the website's look-ahead default)
@@ -245,12 +254,13 @@ end
 -- items kept through both trims (picks, wishlist).
 function Browser.Build(env, yield)
 	local keep = env.keep
-	local now = Browser.Gains(Browser.Collect(env, env.level, 0, env.level, env.level, yield))
+	local now, low = Browser.Gains(Browser.Collect(env, env.level, 0, env.level, env.level, yield))
 	local n = {}
 	for key, rows in pairs(now) do
 		n[key] = counts(rows)
 		now[key] = Browser.Trim(rows, Browser.KEEP, keep)
 	end
+	local under2h = { mainhand = low.mainhand, offhand = low.offhand }
 	local coming = {}
 	for _, def in ipairs(Browser.SLOTS) do coming[def.key] = {} end
 	local lim = env.level + (env.ahead or Browser.AHEAD)
@@ -283,11 +293,18 @@ function Browser.Build(env, yield)
 		local cands, band = Browser.Collect(env, L, L, L, lim, yield)
 		local mh, pair = band.worn[16], nil
 		if mh and mh.inst and mh.inst.inv == 17 then pair = pairAt(L, band) end
-		for key, rows in pairs(Browser.Gains(cands, band, pair)) do
+		local gains, lowL = Browser.Gains(cands, band, pair)
+		for key, rows in pairs(gains) do
 			local list = coming[key]
 			for _, r in ipairs(rows) do
 				r.at = L
 				list[#list + 1] = r
+			end
+		end
+		for key, rows in pairs(lowL) do
+			for _, r in ipairs(rows) do
+				r.at = L
+				under2h[key][#under2h[key] + 1] = r
 			end
 		end
 	end
@@ -295,7 +312,11 @@ function Browser.Build(env, yield)
 		table.sort(list, byGain)
 		coming[key] = Browser.Trim(list, Browser.KEEP, keep)
 	end
-	return { now = now, counts = n, coming = coming, level = env.level }
+	for key, list in pairs(under2h) do
+		table.sort(list, byGain)
+		under2h[key] = Browser.Trim(list, Browser.KEEP, keep)
+	end
+	return { now = now, counts = n, coming = coming, under2h = under2h, level = env.level }
 end
 
 -- { [slotKey] = rows } -> one list, biggest gain first (the old flat "coming up").
@@ -320,14 +341,60 @@ end
 -- A slot's upgrade rows for the window: now, plus coming rows up to level + ahead (each scored with
 -- its own band, Build's rule), passing the filter; biggest gain first. A new list (the model's lists
 -- are not changed).
-function Browser.SlotRows(model, key, ahead, filters)
+-- Weapons are one set: under a worn two-hander (rows flagged vs2h) each one-hander is paired again
+-- with the best off hand that passes the same filters and look ahead, and each off hand with the best
+-- one-hander (opts.partner: the player's pick for the other hand, "id:bonus", is the partner when it
+-- passes); a pair that does not beat the two-hander is not an upgrade (kept with opts.all, negative).
+local function passing(model, key, ahead, filters)
 	local out = {}
-	for _, r in ipairs(model.now[key] or {}) do
-		if Browser.Pass(r, filters) then out[#out + 1] = r end
-	end
 	local top = (model.level or 0) + (ahead or 0)
-	for _, r in ipairs((model.coming or {})[key] or {}) do
-		if r.at <= top and Browser.Pass(r, filters) then out[#out + 1] = r end
+	local function add(list)
+		for _, r in ipairs(list or {}) do
+			if (not r.at or r.at <= top) and Browser.Pass(r, filters) then out[#out + 1] = r end
+		end
+	end
+	add((model.now or {})[key])
+	add((model.coming or {})[key])
+	add((model.under2h or {})[key])
+	return out
+end
+
+-- the partner for the other hand's rows: the pick when it passes, else the best by its own score
+local function partnerOf(pool, pick)
+	local best
+	for _, r in ipairs(pool) do
+		if pick and Browser.KeyOf(r.c.inst) == pick then return r end
+		if not best or r.c.score > best.c.score or (r.c.score == best.c.score and r.c.id < best.c.id) then best = r end
+	end
+	return best
+end
+
+function Browser.SlotRows(model, key, ahead, filters, opts)
+	opts = opts or {}
+	local out = {}
+	local rows = passing(model, key, ahead, filters)
+	local weapon = key == "mainhand" or key == "offhand"
+	local partner
+	if weapon then
+		local pool = {}
+		for _, r in ipairs(passing(model, key == "mainhand" and "offhand" or "mainhand", ahead, filters)) do
+			if r.c.inst.inv ~= 17 then pool[#pool + 1] = r end
+		end
+		partner = partnerOf(pool, opts.partner)
+	end
+	for _, r in ipairs(rows) do
+		if weapon and r.vs2h then
+			local p = partner
+			local note
+			if key == "mainhand" then
+				note = p and ("with " .. (p.c.inst.name or "?") .. " in the off hand") or "leaves the off hand empty"
+			else
+				note = p and ("with " .. (p.c.inst.name or "?") .. " in the main hand") or "needs a one-hander"
+			end
+			r = { c = r.c, gain = r.c.score + (p and p.c.score or 0) - (r.base or 0), base = r.base, at = r.at,
+				slot = r.slot, vs2h = true, note = note, pairWith = p }
+		end
+		if opts.all or r.gain > 1e-6 then out[#out + 1] = r end
 	end
 	table.sort(out, byGain)
 	return out

@@ -13,22 +13,32 @@ function Tab.Rows()
 	local m = st.model
 	if not m then return nil end
 	local key, v = st.slot, ns.Options.View()
+	-- weapons pair with the other hand's pick when there is one; All gear also lists the pairs that do
+	-- not beat a worn two-hander (negative)
+	local ctx = ns.Context.Get()
+	local other = key == "mainhand" and "offhand" or key == "offhand" and "mainhand" or nil
+	local opts = { partner = other and ctx and ns.Plan.Get(ctx.spec, other) or nil, all = v.show == "all" }
 	if st.all and st.all.key == key then
-		return ns.Browser.SlotRows({ level = m.level, now = { [key] = st.all.rows }, coming = m.coming }, key, v.ahead, v.filters)
+		local now = { [key] = st.all.rows }
+		if other then now[other] = m.now[other] end
+		return ns.Browser.SlotRows({ level = m.level, now = now, coming = m.coming, under2h = m.under2h }, key, v.ahead, v.filters, opts)
 	end
-	return ns.Browser.SlotRows(m, key, v.ahead, v.filters)
+	return ns.Browser.SlotRows(m, key, v.ahead, v.filters, opts)
 end
 
 function Tab.CountText(rows)
-	local n = {}
+	local n, ups = {}, 0
 	for _, r in ipairs(rows) do
-		for k in pairs(r.c.kinds) do n[k] = (n[k] or 0) + 1 end
+		if r.gain > 1e-6 then -- (All gear lists weapon pairs that lose to a worn two-hander too)
+			ups = ups + 1
+			for k in pairs(r.c.kinds) do n[k] = (n[k] or 0) + 1 end
+		end
 	end
 	local parts = {}
 	for _, k in ipairs(ns.Browser.KINDS) do
 		if n[k] then parts[#parts + 1] = format("%s %d", ns.Plan.KIND_LABEL[k], n[k]) end
 	end
-	return format("%d upgrade%s", #rows, #rows == 1 and "" or "s") .. (#parts > 0 and (": " .. table.concat(parts, ", ")) or "")
+	return format("%d upgrade%s", ups, ups == 1 and "" or "s") .. (#parts > 0 and (": " .. table.concat(parts, ", ")) or "")
 end
 
 function Tab.Create(parent)

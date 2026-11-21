@@ -77,6 +77,17 @@ for li, L in ipairs(levels) do
 		failures = failures + 1
 	else
 		local ns, U, W = fx.ns, fx.U, fx.W
+		-- WORN="16:5306,17:..." wears those items (scored with the level's band) instead of the Old Hat
+		if os.getenv("WORN") then
+			for k in pairs(fx.worn) do fx.worn[k] = nil end
+			local c = ns.Context.Get()
+			for slot, id in os.getenv("WORN"):gmatch("(%d+):(%d+)") do
+				slot, id = tonumber(slot), tonumber(id)
+				local inst = ns.Score.Instance(ns.Items.Get(id))
+				local role = slot == 17 and "oh" or (slot == 16 and "mh" or (ns.Equip.ROLE_OF_SLOT[slot] or "gear"))
+				fx.worn[slot] = { inst = inst, score = ns.Score.Score(inst, c.w, c.cls, role) }
+			end
+		end
 		-- 3. errors reported to the client's handler
 		_G.geterrorhandler = function() return function(e) note("handler", e) end end
 		-- frames: each W.flush is one client frame (C_Timer.After(0) runs on the next)
@@ -122,18 +133,33 @@ for li, L in ipairs(levels) do
 					shown = shown + 1
 					local src = {}
 					for i = 1, math.min(2, #r.c.sources) do src[i] = r.c.sources[i].text or r.c.sources[i].kind end
-					print(format("  %d. %-10s %-38s %+6.1f (score %.1f)  %s", shown, e.def.label, r.c.inst.name or r.c.id,
-						r.gain, r.c.score, table.concat(src, "; ")))
+					print(format("  %d. %-10s %-38s %+6.1f (score %.1f)  %s%s", shown, e.def.label, r.c.inst.name or r.c.id,
+						r.gain, r.c.score, table.concat(src, "; "), r.note and ("  [" .. r.note .. "]") or ""))
+				end
+			end
+			-- the weapon rows whatever their rank (worn, plan, gain, note)
+			for _, e in ipairs(ns.View.PlanEntries(Win.state.model, c.worn, (function() local s = Win.St() s.show = "all" return s end)())) do
+				if e.def and (e.def.key == "mainhand" or e.def.key == "offhand") then
+					local r = ns.TabPlan.PlanRow(e)
+					print(format("  weapons: %-9s worn %-22s %5.1f -> %s", e.def.label, e.worn and e.worn.inst.name or "-",
+						e.worn and e.worn.score or 0, r and format("%s %+.1f (score %.1f)%s", r.c.inst.name, r.gain, r.c.score,
+						r.note and ("  [" .. r.note .. "]") or "") or (e.entry and e.entry.twoHander and "uses the two-hander" or "nothing")))
 				end
 			end
 			-- the suggestions a near quest (upcoming guide quest within 2 levels) would change if every
 			-- available quest were on the route (the fake guide has none yet): an upper bound
+			-- NEAR="279874,..." tags only those items' quests (the player's guide, e.g. The Stitcher)
+			local only
+			if os.getenv("NEAR") then
+				only = {}
+				for id in os.getenv("NEAR"):gmatch("%d+") do only[tonumber(id)] = true end
+			end
 			local m, put = Win.state.model, {}
 			for _, def in ipairs(ns.Browser.SLOTS) do
-				for _, list in ipairs({ m.now[def.key] or {}, m.coming[def.key] or {} }) do
+				for _, list in ipairs({ m.now[def.key] or {}, m.coming[def.key] or {}, (m.under2h or {})[def.key] or {} }) do
 					for _, r in ipairs(list) do
 						for _, s in ipairs(r.c.sources) do
-							if s.questId and not s.route then s.route = { ahead = 1, guide = "all" }; put[#put + 1] = s end
+							if s.questId and not s.route and (not only or only[r.c.id]) then s.route = { ahead = 1, guide = "all" }; put[#put + 1] = s end
 						end
 					end
 				end
@@ -153,6 +179,14 @@ for li, L in ipairs(levels) do
 				end
 			end
 			if not any then print("  none") end
+			for _, e in ipairs(ns.View.PlanEntries(m, c.worn, (function() local s2 = Win.St() s2.show, s2.preferQuest = "all", true return s2 end)())) do
+				if e.def and (e.def.key == "mainhand" or e.def.key == "offhand") then
+					local r = ns.TabPlan.PlanRow(e)
+					print(format("  weapons (near quests): %-9s -> %s", e.def.label, r and format("%s %+.1f (score %.1f)%s%s", r.c.inst.name, r.gain,
+						r.c.score, r.note and ("  [" .. r.note .. "]") or "", r.setText and ("  [" .. r.setText .. "]") or "")
+						or (e.entry.twoHander and "uses the two-hander" or "nothing")))
+				end
+			end
 			for _, s in ipairs(put) do s.route = nil end
 		end
 		step("close", function() _G.PoleSimGearFrame.close:Click() end)

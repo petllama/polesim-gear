@@ -4,7 +4,7 @@ local FILES = { "Core.lua", "Data/Weights.lua", "Data/Suffixes.lua", "Data/Items
 
 local function fixture()
 	local text = assert(loadfile("tests/fixtures/parity.lua"))()
-	local rows, best, gains, world = {}, {}, {}, {}
+	local rows, best, gains, world, sets = {}, {}, {}, {}, {}
 	for line in text:gmatch("[^\n]+") do
 		local f = {}
 		for x in (line .. "\t"):gmatch("([^\t]*)\t") do f[#f + 1] = x end
@@ -15,6 +15,14 @@ local function fixture()
 			gains[#gains + 1] = { spec = f[2], level = tonumber(f[3]), gear = f[4], slot = f[5], id = tonumber(f[6]),
 				bonus = tonumber(f[7]), pair = tonumber(f[8]), pairBonus = tonumber(f[9]), delta = tonumber(f[10]),
 				pct = tonumber(f[11]) }
+		elseif f[1] == "S" then
+			local function ib(x) local id, b = x:match("^(%d+):(%d+)$") return tonumber(id), tonumber(b) end
+			local e = { spec = f[2], level = tonumber(f[3]), gear = f[4], set = f[5], setGain = tonumber(f[6]), cands = {},
+				mhGain = tonumber(f[11]), ohGain = tonumber(f[13]), twoHander = f[14] == "1" }
+			for i = 7, 9 do local id, b = ib(f[i]) e.cands[#e.cands + 1] = { id = id, bonus = b } end
+			e.mh, e.mhBonus = ib(f[10])
+			e.oh, e.ohBonus = ib(f[12])
+			sets[#sets + 1] = e
 		elseif f[1] == "W" then
 			world[#world + 1] = { id = tonumber(f[2]), world = f[3] == "1", generic = f[4] == "1" }
 		elseif f[1] == "B" then
@@ -22,7 +30,7 @@ local function fixture()
 				bonus = tonumber(f[6]), score = tonumber(f[7]) }
 		end
 	end
-	return rows, best, gains, world
+	return rows, best, gains, world, sets
 end
 
 local function weights(ns, specKey, level)
@@ -90,6 +98,51 @@ return {
 			if c.inst.inv == 17 and worn[17] then seen2h = true end
 		end
 		T.ok(seen2h, "a two-hander against main + off hand")
+	end,
+	-- The best weapon set (armory summary, PoleSim Gear's View.Weapons): from the same candidates (the
+	-- website's best one-hander, off hand and two-hander) the addon plans the same hands with the same
+	-- split gains, and "uses the two-hander" where the website does. S rows: worn staff whose pair loses or
+	-- wins, nothing beats the worn staff, worn MH + OH against a two-hander, a better worn one-hander kept.
+	weapon_sets_equal_the_website = function()
+		local files = { unpack(FILES) }
+		for _, f in ipairs({ "Plan.lua", "Wishlist.lua", "View.lua" }) do files[#files + 1] = f end
+		local ns = T.addon(files)
+		local _, _, _, _, sets = fixture()
+		T.ok(#sets >= 8, "fixture S rows " .. #sets)
+		local kinds = {}
+		for _, s in ipairs(sets) do
+			kinds[s.set] = true
+			local w, cls = weights(ns, s.spec, s.level)
+			local function cand(id, bonus, role)
+				local inst = ns.Score.Instance(ns.Items.Get(id), bonus ~= 0 and bonus or nil)
+				return { id = id, inst = inst, score = ns.Score.Score(inst, w, cls, role), kinds = { quest = true }, sources = {} }
+			end
+			local worn = {}
+			for slot, id, bonus in s.gear:gmatch("(%a+):(%d+)%.?(%d*)") do
+				local c = cand(tonumber(id), tonumber(bonus) or 0, slot == "offhand" and "oh" or "mh")
+				worn[slot == "offhand" and 17 or 16] = { inst = c.inst, score = c.score }
+			end
+			local mhC, ohC = {}, {}
+			for i, x in ipairs(s.cands) do
+				if x.id ~= 0 then
+					if i == 2 then ohC[#ohC + 1] = cand(x.id, x.bonus, "oh") else mhC[#mhC + 1] = cand(x.id, x.bonus, "mh") end
+				end
+			end
+			table.sort(mhC, function(a, b) return a.score > b.score end)
+			local now, low = ns.Browser.Gains({ mainhand = mhC, offhand = ohC }, { worn = worn })
+			local model = { level = s.level, now = now, coming = {}, under2h = low }
+			local mh, oh = ns.View.Weapons(model, worn, { spec = "x" }, 0)
+			local where = s.spec .. " " .. s.level .. " " .. s.gear
+			T.eq(mh.plan and mh.plan.c.id or 0, s.mh, where .. " main hand")
+			T.eq(oh.plan and oh.plan.c.id or 0, s.oh, where .. " off hand")
+			if mh.plan then T.near(mh.plan.gain, s.mhGain, 0.006, where .. " main-hand gain") end
+			if oh.plan then T.near(oh.plan.gain, s.ohGain, 0.006, where .. " off-hand gain") end
+			T.eq(oh.twoHander or false, s.twoHander, where .. " uses the two-hander")
+			local total = (mh.plan and (mh.plan.setGain or mh.plan.gain) or 0)
+			if not mh.plan and oh.plan then total = oh.plan.gain end
+			T.near(total, s.setGain, 0.006, where .. " set gain")
+		end
+		T.ok(kinds["2h"] and kinds.pair and kinds.current, "two-hander, pair and current sets")
 	end,
 	best_suffix_equals_the_website = function()
 		local ns = T.addon(FILES)

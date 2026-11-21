@@ -167,7 +167,7 @@ return {
 		for _, fr in ipairs({ f.iconFrame, f.header.classFrame }) do
 			T.near(fr.border[1].color[1], gold[1]); T.near(fr.border[1].color[3], gold[3])
 		end
-		T.ok(text:match("%d+ / 15 %(%d+%%%)"), "progress text")
+		T.ok(text:match("%d+ / 14 %(%d+%%%)"), "progress text: main + off hand are one weapon set")
 		local items = U.menu(f.header.ahead)
 		T.eq(#items, 6); T.eq(items[1].text, "Now"); T.ok(items[1].isSelected())
 		items[4].select()

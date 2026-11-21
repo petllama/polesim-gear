@@ -544,10 +544,16 @@ end
 function Win.SlotPlanLine(slot)
 	local info = Win.badges and Win.badges[slot]
 	if not Win.badges then return nil end
+	if not info and slot == 17 and state.model then
+		local ctx = ns.Context.Get()
+		local st = Win.St()
+		local _, oh = ns.View.Weapons(state.model, ctx and ctx.worn or {}, st, st.ahead)
+		if oh.twoHander then return "Uses the two-hander: nothing to plan for the off hand", 0.6, 0.6, 0.6 end
+	end
 	if not info then return "No upgrade from the ticked sources", 0.6, 0.6, 0.6 end
 	local entry = info.entry
 	local r = entry.plan
-	local what = r and (r.c.inst.name or "?") .. " " .. S.Signed(r.gain)
+	local what = r and (r.c.inst.name or "?") .. " " .. S.Signed(r.gain) .. (r.setGain and format(" (weapon set %s)", S.Signed(r.setGain)) or "")
 		or ((entry.missing and ns.View.Inst(entry.missing.id, entry.missing.bonus).name or "?") .. " (not available now)")
 	if entry.isPick then return "Your pick: " .. what, C.pick[1], C.pick[2], C.pick[3] end
 	return "Suggested upgrade: " .. what, C.green[1], C.green[2], C.green[3]
@@ -767,7 +773,16 @@ function Win.SuggestedKey(key)
 	local m = state.model
 	if not m then return nil end
 	local st = Win.St()
-	local e = ns.Plan.Resolve(ns.Browser.SlotRows(m, key, st.ahead, st.filters), nil, st.preferQuest and m.level or nil)
+	local e
+	if key == "mainhand" or key == "offhand" then
+		-- the weapon set's hand (an off hand under a two-hander set: none)
+		local ctx = ns.Context.Get()
+		local mh, oh = ns.View.Weapons(m, ctx and ctx.worn or {}, st, st.ahead)
+		e = key == "mainhand" and mh or oh
+		local r = e.isPick and e.suggestion or e.plan
+		return r and ns.Browser.KeyOf(r.c.inst) or nil, e.near
+	end
+	e = ns.Plan.Resolve(ns.Browser.SlotRows(m, key, st.ahead, st.filters), nil, st.preferQuest and m.level or nil)
 	return e.suggestion and ns.Browser.KeyOf(e.suggestion.c.inst) or nil, e.near
 end
 
@@ -782,7 +797,11 @@ function Win.PlanLabel(btn, d, slotList)
 	if slotList and not pick then
 		local sk
 		sk, near = Win.SuggestedKey(d.slot.key)
-		if sk then suggested = sk == key else suggested = d.index == 1 end
+		if sk then
+			suggested = sk == key
+		elseif d.slot.key ~= "mainhand" and d.slot.key ~= "offhand" then
+			suggested = d.index == 1 -- (weapons: no planned hand, nothing suggested)
+		end
 	end
 	if pick and pick == key then
 		btn.label:SetText(S.Colour(C.pick) .. "Your pick|r")
@@ -839,6 +858,7 @@ local function reroute()
 	for _, def in ipairs(ns.Browser.SLOTS) do
 		each(m.now and m.now[def.key])
 		each(m.coming and m.coming[def.key])
+		each(m.under2h and m.under2h[def.key]) -- weapons paired under a worn two-hander (View.Weapons)
 	end
 	each(state.all and state.all.rows)
 	state.groups = nil -- the Sources tab's quest headers copy the route
@@ -851,7 +871,7 @@ local function redraw() Win.Refresh() end
 local function modelHas(k)
 	local m = state.model
 	for _, def in ipairs(ns.Browser.SLOTS) do
-		for _, list in ipairs({ m.now[def.key] or {}, (m.coming or {})[def.key] or {} }) do
+		for _, list in ipairs({ m.now[def.key] or {}, (m.coming or {})[def.key] or {}, (m.under2h or {})[def.key] or {} }) do
 			for _, r in ipairs(list) do
 				if ns.Browser.KeyOf(r.c.inst) == k then return true end
 			end

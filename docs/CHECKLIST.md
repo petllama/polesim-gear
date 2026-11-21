@@ -1,4 +1,16 @@
-# In-game checklist (one session, on a priest; section M on a mage) — PoleSim Gear 0.3.4
+# In-game checklist (one session, on a priest; section M on a mage) — PoleSim Gear 0.3.5
+
+**0.3.5 over 0.3.4** (no new files: `tools/install.sh` then `/reload` is enough): main hand and off hand
+are **one decision, the weapon set**: a two-hander alone, or a one-hander + an off hand. The Gear Plan
+suggests the best set (your picks and the near-quest rule apply per item); an off hand is suggested only
+together with a one-hander that is available from the ticked sources or planned ("with <item> (also
+planned)"), and only when the pair beats what you wear. Wearing a staff that the best pair does not beat
+(or with a two-hander as the plan), the Off hand row says "Uses the two-hander" (All gear only, no gain).
+Gains split so the two rows add up: a one-hander replacing a staff shows its score minus the staff's, the
+off hand its own score; the tooltip says "Weapon set: +X over <staff>". Slot Upgrades pairs each
+one-hander/off hand with the best other hand from the ticked sources (or your pick); under All gear the
+pairs that lose to the staff are listed with their negative gain. Progress counts the weapons once
+(14 slots). Check: K24.
 
 **0.3.4 over 0.3.3** (no new files: `tools/install.sh` then `/reload` is enough): when a slot has no
 pick of yours, the Gear Plan suggests an upgrade from an **upcoming quest of your Polestar guide** (a
@@ -507,6 +519,26 @@ beats what you wear. Then:
 - Settings: untick "Prefer upgrades from upcoming guide quests (within 2 levels)": the Gear Plan shows
   the best overall again (no "near quest"); tick it again.
 
+**K24. Weapon set (0.3.5).** Wearing a staff (e.g. Wind Rider Staff), window open (Gear Plan, All gear):
+
+```
+/run local W,P=PoleSimGear.Window,PoleSimGear local m,o=P.View.Weapons(W.state.model,P.Context.Get().worn,W.St(),W.St().ahead) print(m.plan and m.plan.c.inst.name,m.plan and m.plan.gain,o.twoHander,o.plan and o.plan.c.inst.name)
+```
+
+Expected: one line: the main-hand plan and its gain, then `true nil` when the best set is a two-hander
+(or the staff you wear), else `nil <off hand>`. Then:
+- best set a two-hander: Main hand row = it (gain over the staff); Off hand row greyed "Uses the
+  two-hander", no gain, no number; hover: "Off hand: uses the two-hander"; Upgrades only: no Off hand row;
+- best set a one-hander + off hand: both rows planned, each tooltip "with <other> (also planned)" and
+  "Weapon set: +X over <staff>"; the two Gain cells add up to X (the main hand may be negative);
+- Sources: untick Dungeons: the off hand never pairs with a dungeon one-hander; if no pair beats the
+  staff any more, the Off hand row "uses the two-hander";
+- Slot Upgrades > Off hand: every row "with <one-hander> in the main hand" (from the ticked sources);
+  Set as plan on a one-hander (Main hand list): the off hands now pair with it; Show: All gear also lists
+  the off hands whose pair loses (negative gain); the count line counts only upgrades;
+- Choose an off hand as your pick: the Main hand row becomes the best one-hander (no staff);
+- header progress: "N / 14".
+
 ## L. Later in the session (or another session)
 
 **L1. Arrows follow changes.** Level up, change talents or equip something: within a moment the arrows
@@ -621,8 +653,8 @@ gain, source).
 - Crafted items are gated by "about level = skill / 5" (the website's rule), not by your profession.
 - The tooltip compares one item with what you wear: a one-hander under a worn two-hander says it
   leaves the off hand empty, while the window pairs it with the best off hand (R9).
-- With the Quests / Dungeons / Crafted filters on, a one-hander's paired off hand is still the best
-  from all sources (the website recomputes per filter).
+- Weapon sets mix bands with look ahead: a level-23 off hand paired with a one-hander you can wear now
+  is scored with the weights of its own level, like every "coming up" row.
 - No dual wield yet (no priest or mage can); added with the melee classes.
 - Classes other than Priest and Mage: one chat line ("<class> isn't supported yet"), no window, no
   minimap button, no scores.

@@ -17,8 +17,8 @@ return {
 		T.eq(rows[4].badge.text.text, "4"); T.near(rows[4].badge.bg.color[1], ns.Style.C.badgeGrey[1])
 		T.ok(r1.delta.text:match("^%+%d"), r1.delta.text)
 		local gains = {}
-		for i, r in ipairs(rows) do gains[i] = r.e.entry.plan.gain end
-		for i = 2, #gains do T.ok(gains[i - 1] >= gains[i], "sorted by gain") end
+		for i, r in ipairs(rows) do gains[i] = r.e.entry.plan.setGain or r.e.entry.plan.gain end
+		for i = 2, #gains do T.ok(gains[i - 1] >= gains[i], "sorted by gain (weapons by their set's)") end
 		local headRow
 		for _, r in ipairs(rows) do if r.e.def.key == "head" then headRow = r end end
 		T.ok(headRow.cur.name.text:find("Old Hat", 1, true)); T.eq(headRow.curScore.text, "1.0")
@@ -42,16 +42,25 @@ return {
 		local row
 		for _, r in ipairs(rowsOf(fx)) do if r.e.def.key == "mainhand" then row = r end end
 		local plan = row.e.entry.plan
-		T.eq(plan.c.inst.inv, 17, "a staff is the plan")
 		local pair = worn[16].score + worn[17].score
-		T.near(plan.base, pair, 1e-9)
-		T.eq(row.pct.text, ns.Style.Pct(plan.gain, pair))
-		T.ok(row.pct.text ~= ns.Style.Pct(plan.gain, worn[16].score), "not over the main hand alone")
-		-- Slot Upgrades: the same base on every row
+		-- the weapon set decides (here a one-hander + off hand beat every staff): a one-hander's % is over
+		-- the main hand it replaces, a staff's over main + off hand
+		T.near(plan.base, plan.c.inst.inv == 17 and pair or worn[16].score, 1e-9)
+		T.eq(row.pct.text, ns.Style.Pct(plan.gain, plan.base))
+		-- Slot Upgrades: the same base on every row; a staff's is the pair
 		ns.Window.OpenSlot("mainhand")
+		local staff
 		for _, r in ipairs(fx.U.rows(ns.Window.Panel("slot").list)) do
-			if r.d and r.d.c then T.eq(r.pct.text, ns.Style.Pct(r.d.gain, r.d.base), r.d.c.inst.name) end
+			if r.d and r.d.c then
+				T.eq(r.pct.text, ns.Style.Pct(r.d.gain, r.d.base), r.d.c.inst.name)
+				if r.d.c.inst.inv == 17 then
+					staff = true
+					T.near(r.d.base, pair, 1e-9)
+					T.ok(r.pct.text ~= ns.Style.Pct(r.d.gain, worn[16].score), "not over the main hand alone")
+				end
+			end
 		end
+		T.ok(staff, "a staff in the list")
 		fx.done()
 	end,
 	empty_states = function()
@@ -224,6 +233,53 @@ return {
 		rows[1].choose:Click()
 		T.eq(ns.Plan.Get("shadow", "head"), ns.Browser.KeyOf(first.c.inst), "Set as plan from the wishlist")
 		T.ok(fx.U.ownText(rowsOf(fx)[1].choose):find("Picked", 1, true))
+		fx.done()
+	end,
+	-- The weapon set in the window (a Shadow priest at 21 wearing Wind Rider Staff): the main and off
+	-- hand rows name each other "(also planned)" and the tooltip gives the set's gain; with a two-hander
+	-- as the plan the Off hand row "uses the two-hander" (greyed, no gain, no number), and the equipped
+	-- strip's off-hand slot says so.
+	weapon_set_rows = function()
+		local worn = {}
+		local fx = F.load({ worn = worn, level = 21 })
+		local ns, U = fx.ns, fx.U
+		local w = ns.Bands.For("priest", "shadow", 21).w
+		local inst = ns.Score.Instance(ns.Items.Get(5306))
+		worn[16] = { inst = inst, score = ns.Score.Score(inst, w, "priest", "mh") }
+		fx.open()
+		local function rows()
+			local by = {}
+			for _, r in ipairs(rowsOf(fx)) do if r.e.def then by[r.e.def.key] = r end end
+			return by
+		end
+		local by = rows()
+		local mh, oh = by.mainhand.e.entry.plan, by.offhand.e.entry.plan
+		T.ok(mh and mh.c.inst.inv ~= 17 and oh, "this fixture's best set: a one-hander + an off hand")
+		T.eq(oh.note, "with " .. mh.c.inst.name .. " (also planned)")
+		T.near(mh.gain + oh.gain, mh.setGain, 1e-9, "the rows add up to the set")
+		T.near(mh.gain, mh.c.score - worn[16].score, 1e-9)
+		T.eq(by.mainhand.delta.text, ns.Style.Signed(mh.gain))
+		by.offhand.scripts.OnEnter(by.offhand)
+		local tip = table.concat(U.tip.lines, "\n")
+		T.ok(tip:find("Weapon set: " .. ns.Style.Signed(mh.setGain) .. " over Wind Rider Staff", 1, true), tip)
+		T.ok(tip:find("(also planned)", 1, true), tip)
+		-- a two-hander picked as the plan
+		local staff
+		for _, r in ipairs(by.mainhand.e.entry.rows) do if r.c.inst.inv == 17 then staff = r break end end
+		ns.Plan.Set("shadow", "mainhand", staff.c.inst)
+		ns.Window.Refresh()
+		by = rows()
+		T.eq(by.offhand, nil, "Upgrades only: no off-hand row")
+		ns.Options.View().show = "all"
+		ns.Window.Refresh()
+		by = rows()
+		T.eq(by.mainhand.e.entry.plan.c.id, staff.c.id)
+		local off = by.offhand
+		T.ok(off.e.entry.twoHander)
+		T.ok(off.plan.name.text:find("Uses the two-hander", 1, true), off.plan.name.text)
+		T.eq(off.delta.text, ""); T.eq(off.pct.text, ""); T.ok(not off.badge:IsShown(), "no priority")
+		local line = ns.Window.SlotPlanLine(17)
+		T.ok(line and line:find("two-hander", 1, true), tostring(line))
 		fx.done()
 	end,
 	hover = function()

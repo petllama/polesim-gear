@@ -117,7 +117,7 @@ function Plan.Why(model, key, pick, ahead, filters)
 			if ns.Browser.KeyOf(r.c.inst) == pick then return r end
 		end
 	end
-	local r = find(model.now[key]) or find((model.coming or {})[key])
+	local r = find(model.now[key]) or find((model.coming or {})[key]) or find((model.under2h or {})[key])
 	if not r then return "not available now (quest done, retired, or no longer an upgrade)" end
 	if r.at and r.at > model.level + (ahead or 0) then
 		return string.format("needs level %d (look ahead +%d)", r.at, r.at - model.level)

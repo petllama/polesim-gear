@@ -1,6 +1,70 @@
 local T = require("t")
 local F = require("winfix")
 return {
+	-- Under a worn two-hander (Wind Rider Staff at 21) the off hands are listed as part of the best
+	-- set with each: paired with the best one-hander passing the ticked sources, or the player's
+	-- main-hand pick; pairs that lose to the staff only under All gear, with their negative gain; the
+	-- "Suggested" mark follows the Gear Plan's weapon set.
+	weapon_set_lists = function()
+		local worn = {}
+		local fx = F.load({ worn = worn, level = 21 })
+		local ns, U = fx.ns, fx.U
+		local w = ns.Bands.For("priest", "shadow", 21).w
+		local inst = ns.Score.Instance(ns.Items.Get(5306))
+		worn[16] = { inst = inst, score = ns.Score.Score(inst, w, "priest", "mh") }
+		fx.open()
+		ns.Window.OpenSlot("offhand")
+		local p = ns.Window.Panel("slot")
+		local rows = U.rows(p.list, 50)
+		T.ok(#rows >= 2)
+		for _, r in ipairs(rows) do
+			if r.d and r.d.c then
+				T.ok(r.d.gain > 0, "Upgrades only: pairs that beat the staff")
+				T.ok(r.d.note:find("in the main hand", 1, true), r.d.note)
+			end
+		end
+		local _, oh = ns.View.Weapons(ns.Window.state.model, worn, ns.Window.St(), ns.Window.St().ahead)
+		T.eq(U.ownText(rows[1].action), oh.plan and ns.Browser.KeyOf(oh.plan.c.inst) == ns.Browser.KeyOf(rows[1].d.c.inst)
+			and "Suggested" or "Set as plan")
+		-- a weak one-hander picked for the main hand: the off hands pair with it
+		local weak
+		for _, r in ipairs(ns.Window.state.model.now.mainhand) do if r.c.inst.inv ~= 17 then weak = r end end
+		T.ok(weak, "a one-hander")
+		ns.Plan.Set("shadow", "mainhand", weak.c.inst)
+		ns.Window.Refresh()
+		rows = U.rows(p.list, 50)
+		for _, r in ipairs(rows) do
+			if r.d and r.d.c then T.ok(r.d.note:find("with " .. weak.c.inst.name, 1, true), r.d.note) end
+		end
+		-- a stronger two-hander worn (Soul Harvester): All gear lists the losing pairs too, negative;
+		-- the count line counts upgrades only
+		ns.Plan.Clear("shadow", "mainhand")
+		inst = ns.Score.Instance(ns.Items.Get(20536))
+		worn[16] = { inst = inst, score = ns.Score.Score(inst, w, "priest", "mh") }
+		ns.Window.Build()
+		fx.settle()
+		ns.Options.View().show = "all"
+		ns.Window.OpenSlot("offhand")
+		rows = U.rows(p.list, 400)
+		local neg, pos = 0, 0
+		for _, r in ipairs(rows) do
+			if r.d and r.d.c then if r.d.gain > 0 then pos = pos + 1 else neg = neg + 1 end end
+		end
+		T.ok(neg > 0 and pos > 0, "losing pairs listed under All gear: " .. neg .. " / " .. pos)
+		T.ok(p.count.text:match("^" .. pos .. " upgrade"), p.count.text .. " / " .. pos)
+		ns.Options.View().show = "upgrades"
+		ns.Window.Refresh()
+		T.eq(#U.rows(p.list, 400), pos + (p.list.provided[pos + 1] and 1 or 0), "Upgrades only: the winning pairs")
+		-- a two-hander picked: no off hand is "Suggested"
+		local staff
+		for _, r in ipairs(ns.Window.state.model.now.mainhand) do if r.c.inst.inv == 17 then staff = r break end end
+		if staff then
+			ns.Plan.Set("shadow", "mainhand", staff.c.inst)
+			ns.Window.Refresh()
+			T.eq(U.ownText(U.rows(p.list, 1)[1].action), "Set as plan")
+		end
+		fx.done()
+	end,
 	picker_and_count = function()
 		local fx = F.load()
 		local ns, U = fx.ns, fx.U

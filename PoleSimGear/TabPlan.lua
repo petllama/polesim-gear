@@ -137,6 +137,12 @@ local function fill(row, e)
 		row.delta:SetText(""); row.pct:SetText(""); row.srcIcon:Hide(); row.route:Hide(); row.kind:SetText("")
 		row.star:Show()
 		row.star:Set(ns.Wishlist.Has(ns.View.Inst(m.id, m.bonus)))
+	elseif entry.twoHander then
+		-- the best weapon set is a two-hander (planned or worn): nothing to plan for the off hand
+		row.plan:Set(nil, S.Colour(C.label) .. "nothing to plan|r")
+		row.plan.name:SetText(S.Colour(C.label) .. "Uses the two-hander|r")
+		row.delta:SetText(""); row.pct:SetText(""); row.srcIcon:Hide(); row.route:Hide(); row.kind:SetText("")
+		row.star:Hide()
 	else
 		row.plan:Set(nil, S.Colour(C.label) .. "nothing better now|r")
 		row.delta:SetText(""); row.pct:SetText(""); row.srcIcon:Hide(); row.route:Hide(); row.kind:SetText("")
@@ -250,8 +256,19 @@ function Tab.Tooltip(row)
 		local src = bis and bis.c.sources[1]
 		local better = bis and format("Best overall: %s %s%s", bis.c.inst.name or "?", S.Signed(bis.gain),
 			src and src.text and (" (" .. src.text .. ")") or "") or nil
+		-- a weapon of a planned set: the set's whole gain (the other hand is planned with it)
+		local extra = r.setText and { r.setText } or {}
+		if better then extra[#extra + 1] = better end
 		return ns.Window.RowTooltip(row, r, entry and "Click: this slot's upgrades. Right-click: back to suggestion, wishlist."
-			or "Click: this slot's upgrades.", better)
+			or "Click: this slot's upgrades.", extra)
+	end
+	if e.entry and e.entry.twoHander then
+		GameTooltip:SetOwner(row, "ANCHOR_RIGHT")
+		GameTooltip:AddLine("Off hand: uses the two-hander", 1, 1, 1)
+		GameTooltip:AddLine("The best weapon set is a two-hander (planned or worn): an off hand would replace it with a weaker pair. Nothing to plan here.", 0.6, 0.6, 0.6, true)
+		GameTooltip:AddLine("Click: off-hand upgrades.", 0.6, 0.6, 0.6, true)
+		GameTooltip:Show()
+		return
 	end
 	local m = e.missing or (e.entry and e.entry.missing)
 	if not m then return end
