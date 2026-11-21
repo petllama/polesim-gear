@@ -5,39 +5,8 @@ local T = require("t")
 local FILES = { "Core.lua", "Options.lua", "Data/Weights.lua", "Data/Suffixes.lua", "Data/Items.lua", "Items.lua", "Score.lua",
 	"Bands.lua", "Equip.lua", "Browser.lua", "Plan.lua", "Wishlist.lua", "AH.lua" }
 
--- A stub C_AuctionHouse: the browse system with pages and a throttle. -> api, log
--- server: list of browse results returned for every query (pages of `page` results), or a function
--- (query) -> list. ready(): IsThrottledMessageSystemReady. Purchase functions error when called.
-local function stubAH(server, page)
-	page = page or 2
-	local log = { sent = {}, more = 0, bought = 0 }
-	local api = { ready = true }
-	local all, shown = {}, 0
-	local function list() local out = {} for i = 1, shown do out[i] = all[i] end return out end
-	function api.IsThrottledMessageSystemReady() return api.ready end
-	function api.SendBrowseQuery(q)
-		assert(api.ready, "sent while throttled")
-		log.sent[#log.sent + 1] = q
-		all = type(server) == "function" and server(q) or server
-		shown = math.min(page, #all)
-		log.pending = "updated"
-	end
-	function api.RequestMoreBrowseResults()
-		assert(api.ready, "asked for more while throttled")
-		log.more = log.more + 1
-		shown = math.min(shown + page, #all)
-		log.pending = "added"
-	end
-	function api.GetBrowseResults() return list() end
-	function api.HasFullBrowseResults() return shown >= #all end
-	function api.GetItemKeyInfo(key) return { itemID = key.itemID, itemName = api.names and api.names[key.itemID] or "x", quality = 2, isCommodity = false } end
-	for _, f in ipairs({ "PlaceBid", "StartCommoditiesPurchase", "ConfirmCommoditiesPurchase" }) do
-		api[f] = function() log.bought = log.bought + 1 error("bought") end
-	end
-	return api, log
-end
-
-local function result(id, price, suffix) return { itemKey = { itemID = id, itemLevel = 0, itemSuffix = suffix or 0, battlePetSpeciesID = 0 }, minPrice = price, totalQuantity = 1, containsOwnerItem = false } end
+local A = require("ahstub")
+local stubAH, result = A.stub, A.result
 
 -- The addon with a level L priest (shadow), worn items { [slot] = item id } scored at their bands.
 local function addon(L, wornIds, cls)
@@ -289,5 +258,52 @@ return {
 		T.eq(ids("price"), "4,2,1,3")
 		T.eq(ids(nil), "3,1,4,2", "default gain")
 		T.eq(rows[1].c.id, 1, "a new list")
+	end,
+	-- A row's click selects its browse result in the AH frame the Blizzard way (SelectBrowseResult: the
+	-- item's listings, cheapest buyout first); from the item buy view the listing is asked again
+	-- (RefreshSearchResults). Nothing is bought; no item data yet: nothing happens, saying why.
+	select_opens_listing_never_buys = function()
+		local ns = addon(20)
+		local api, log = stubAH({})
+		_G.C_AuctionHouse = api
+		local calls = {}
+		_G.AuctionHouseFrameDisplayMode = { Buy = { "BrowseResultsFrame" }, ItemBuy = { "ItemBuyFrame" } }
+		_G.AuctionHouseSearchContext = { BuyItems = 9 }
+		local mode = AuctionHouseFrameDisplayMode.Buy
+		_G.AuctionHouseFrame = {
+			IsShown = function() return true end,
+			GetDisplayMode = function() return mode end,
+			SelectBrowseResult = function(_, r) calls[#calls + 1] = { "select", r } mode = AuctionHouseFrameDisplayMode.ItemBuy end,
+			RefreshSearchResults = function(_, ctx, key) calls[#calls + 1] = { "refresh", ctx, key } end,
+		}
+		local r1, r2 = result(2292, 100), result(2585, 50)
+		T.ok(ns.AH.Select({ result = r1, itemKey = r1.itemKey }))
+		T.eq(#calls, 1); T.eq(calls[1][1], "select"); T.eq(calls[1][2], r1)
+		T.ok(ns.AH.Select({ result = r2, itemKey = r2.itemKey }))
+		T.eq(calls[2][2], r2); T.eq(calls[3][1], "refresh"); T.eq(calls[3][2], 9); T.eq(calls[3][3], r2.itemKey)
+		api.GetItemKeyInfo = function() return nil end
+		local ok, why = ns.AH.Select({ result = r1, itemKey = r1.itemKey })
+		T.eq(ok, false); T.ok(why:find("not loaded"), why); T.eq(#calls, 3)
+		T.eq(log.bought, 0)
+		_G.AuctionHouseFrame, _G.AuctionHouseFrameDisplayMode, _G.AuctionHouseSearchContext = nil, nil, nil
+	end,
+	-- A change of scores (equipping a bought item, a level) scores the results again: the item worn
+	-- now leaves the list.
+	rescore_on_scores_changed = function()
+		local ns = addon(20)
+		local api, log = stubAH({ result(2292, 100) }, 5)
+		_G.C_AuctionHouse = api
+		ns.AH.Scan()
+		for _ = 1, 10 do answer(ns, log) end
+		T.eq(#ns.AH.Rows(), 1)
+		local worn = ns.Context.Get
+		ns.Context.Get = function()
+			local c = worn()
+			local inst = ns.Score.Instance(ns.Items.Get(2292))
+			c.worn[5] = { inst = inst, score = ns.Score.Score(inst, c.w, "priest", "gear") }
+			return c
+		end
+		ns.Fire("SCORES_CHANGED")
+		T.eq(#ns.AH.Rows(), 0, "worn now")
 	end,
 }

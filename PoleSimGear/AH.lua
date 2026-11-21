@@ -408,3 +408,34 @@ function AH.Clear()
 	changed()
 end
 ns.RegisterEvent("AUCTION_HOUSE_CLOSED", AH.Clear)
+
+-- Scores changed (an item bought and equipped, a level, talents): the results are scored again.
+ns.On("SCORES_CHANGED", function()
+	if not (scan and scan.done and next(found)) then return end
+	rows, counts = AH.Build(found, ns.Context.Get(), scan.ahead)
+	changed()
+end)
+
+-- Show a row's item in the auction house: AuctionHouseFrame:SelectBrowseResult (Shared
+-- Blizzard_AuctionHouseFrame.lua: the item buy view, whose list asks for the item's listings on show,
+-- sorted by buyout, cheapest first). Already in the item buy view, the list is not shown again, so its
+-- listings are asked for with RefreshSearchResults(BuyItems, itemKey), as its refresh button does.
+-- Buying stays the player's: no bid, buyout or purchase call here. -> true | false, why
+function AH.Select(r)
+	local f = _G.AuctionHouseFrame
+	if not (r and r.result and r.itemKey) then return false, "no auction for this row" end
+	if not (f and f.SelectBrowseResult and f:IsShown()) then return false, "the auction house is not open" end
+	local api = _G.C_AuctionHouse
+	-- SelectBrowseResult reads GetItemKeyInfo(itemKey).isCommodity: nil until the client has the item
+	if not (api and api.GetItemKeyInfo and api.GetItemKeyInfo(r.itemKey)) then
+		return false, "the item's data is not loaded yet: click again in a moment"
+	end
+	local modes = _G.AuctionHouseFrameDisplayMode
+	local inItemBuy = modes and f.GetDisplayMode and f:GetDisplayMode() == modes.ItemBuy
+	f:SelectBrowseResult(r.result)
+	local ctxs = _G.AuctionHouseSearchContext
+	if inItemBuy and f.RefreshSearchResults and ctxs and ctxs.BuyItems then
+		f:RefreshSearchResults(ctxs.BuyItems, r.itemKey)
+	end
+	return true
+end
