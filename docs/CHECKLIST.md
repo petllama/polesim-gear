@@ -1,4 +1,4 @@
-# In-game checklist (one session, on a priest; section M on a mage) — PoleSim Gear 0.3.2
+# In-game checklist (one session, on a priest; section M on a mage) — PoleSim Gear 0.3.3
 
 **0.3.3 over 0.3.2** (no new files: `tools/install.sh` then `/reload` is enough): a quest reward that one
 of your open Polestar guides turns in **ahead of you** says how far: "in 12 steps" (active guide),
