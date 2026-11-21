@@ -183,6 +183,10 @@ return {
 		local n = S.View({ type = "vendor", npc = 4 }, codex, player, 20)
 		T.eq(n.kind, "vendor", "faction unknown: shown"); T.eq(n.where, nil); T.eq(n.spot, nil)
 		T.eq(S.View({ type = "vendor", npc = 99 }, codex, player, 20).npcName, nil, "npc unknown: still a vendor")
+		-- No faction known for the character (Context: Neutral/unknown): every vendor is shown, no error.
+		local nofac = { classBit = 16, raceBit = 16, completed = player.completed }
+		T.eq(S.View({ type = "vendor", npc = 2 }, codex, nofac, 20).npcName, "Smith", "faction nil: Alliance vendor shown")
+		T.eq(S.View({ type = "vendor", npc = 1 }, codex, nofac, 20).npcName, "Huklah", "faction nil: Horde vendor shown")
 	end,
 	world = function()
 		local S = T.addon(FILES).Sources
@@ -207,7 +211,10 @@ return {
 		local all = S.For(1, codex, player, 20)
 		local drops = {}
 		for _, v in ipairs(all) do if v.npcId then drops[#drops + 1] = v.chance end end
-		T.eq(table.concat(drops, ","), "9,4,2", "the best WORLD_KEEP (3) open-world drops, by chance")
+		T.eq(table.concat(drops, ","), "4,2,1", "the best WORLD_KEEP (3) open-world drops: usable first, then by chance")
+		drops = {}
+		for _, v in ipairs(S.For(1, codex, player, 40)) do if v.npcId then drops[#drops + 1] = v.chance end end
+		T.eq(table.concat(drops, ","), "9,4,2", "all usable: by chance")
 		T.eq(all[1].text, "World drop, levels 15-25", "other sources keep their order, first")
 	end,
 }

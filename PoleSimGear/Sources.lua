@@ -146,10 +146,11 @@ function Sources.View(src, codex, player, lim)
 			text = "World drop" .. (src.minLevel and string.format(", levels %d-%d", src.minLevel, src.maxLevel or src.minLevel) or ""),
 		}
 	elseif src.type == "vendor" then
-		-- A vendor of the other side only is not one the character can buy from; "AH" and unknown are.
+		-- A vendor of the other side only is not one the character can buy from; "AH" and unknown are (and
+		-- every vendor when the character's side is unknown: Context gives nil for Neutral).
 		local npc = call(codex, "Npc", src.npc)
 		local fac = npc and npc.faction
-		if type(fac) == "string" and fac ~= "" and not fac:find(player.faction, 1, true) then return nil end
+		if player.faction and type(fac) == "string" and fac ~= "" and not fac:find(player.faction, 1, true) then return nil end
 		local sp = npc and type(npc.spawns) == "table" and npc.spawns[1] or nil
 		local zone = sp and call(codex, "Zone", sp.map)
 		return {
@@ -162,14 +163,16 @@ function Sources.View(src, codex, player, lim)
 	return nil
 end
 
-Sources.WORLD_KEEP = 3 -- open-world drops kept per item (the best chances): the rest is noise
--- views (in source order) -> the same, with only the WORLD_KEEP likeliest open-world drops (stable)
+Sources.WORLD_KEEP = 3 -- open-world drops kept per item (usable ones first, then the best chances): the rest is noise
+-- views (in source order) -> the same, with only WORLD_KEEP open-world drops: the usable ones (mob level
+-- within the limit) first, then by chance (stable), so a likelier too-high mob never hides usable drops.
 local function keepBestDrops(views)
 	local drops = {}
 	for i, v in ipairs(views) do
 		if v.kind == "world" and v.npcId then drops[#drops + 1] = { v = v, i = i } end
 	end
 	table.sort(drops, function(a, b)
+		if a.v.ok ~= b.v.ok then return a.v.ok end
 		if (a.v.chance or 0) ~= (b.v.chance or 0) then return (a.v.chance or 0) > (b.v.chance or 0) end
 		return a.i < b.i
 	end)
