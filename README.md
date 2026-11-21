@@ -11,7 +11,9 @@ Scores equal the PoleSim website's armory for the same item, spec and level
 - Tests: `luajit tests/run.lua` (LuaJIT = Lua 5.1 + bit, as in the client).
 - Install into the game: `tools/install.sh`. Package: `tools/package.sh`.
 - In-game checks: `docs/CHECKLIST.md`.
-- `/psg` (or the addon compartment button): the upgrade browser.
+- `/psg` (or the addon compartment button, or the minimap button): the upgrade browser. Drag the
+  minimap button to move it around the minimap's edge.
+- `/psg minimap`: hide/show the minimap button (saved for the account).
 - `/psg polestar`: ask again whether to turn off Polestar's own gear scores (forgets the earlier answer).
 
 Licence: GPL-3.0-only (see LICENSE and NOTICE.md).

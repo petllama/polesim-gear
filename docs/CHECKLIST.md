@@ -282,6 +282,13 @@ open guide's number of turn-ins.
 items..." shows briefly (about a second at most) **with no stutter**, then the list. `/psg` again,
 Escape or the X closes it.
 
+**K2b. Minimap button** (a new file: restart the game once after installing, /reload is not enough).
+A round button with a cloth-chest icon sits on the minimap's edge (bottom-left at first). Hover:
+"PoleSim Gear", "Left-click: upgrade browser", "Drag: move". Left-click opens the browser, again
+closes it; right-click does nothing. Drag it around the edge, `/reload`: it stays where it was left.
+`/psg minimap` hides it (chat says so), `/reload`: still hidden; `/psg minimap` again shows it.
+`/run print(PoleSimGearDB.minimap.angle, PoleSimGearDB.minimap.hide)` prints the saved angle and flag.
+
 **K3. Header.** Spec, level, the band's levels ("weights of levels 20-29"), "Gains in points of Shadow
 spell damage" (Shadow) or "Spell damage and healing" (Holy/Discipline).
 
@@ -397,6 +404,7 @@ in open bags, vendor and mail update (no `/reload`); opening a bag or the vendor
 | J1-J7 | quest reward pick | |
 | K1 | codex / guide / route | |
 | K2-K5 | window, header, list, chips | |
+| K2b | minimap button: click, drag + /reload, /psg minimap | |
 | K6 | drill-down, Show all, row tooltip | |
 | K7 | coming up | |
 | K8 | gating | |

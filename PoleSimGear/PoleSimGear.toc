@@ -28,3 +28,4 @@ Sources.lua
 Route.lua
 Browser.lua
 BrowserUI.lua
+Minimap.lua
