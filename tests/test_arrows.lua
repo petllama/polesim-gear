@@ -187,6 +187,18 @@ return {
 		T.eq(#errors, 1, "reported once per session")
 		_G.ContainerFrameContainer, _G.C_Container = nil, nil
 	end,
+	-- A button that had an arrow loses it when its verdict later throws (no stale arrow left behind).
+	paint_error_clears_existing_arrow = function()
+		local ns = live({ up = head(6) })
+		local errors = {}
+		_G.geterrorhandler = function() return function(e) errors[#errors + 1] = e end end
+		local b = button()
+		ns.Arrows.Paint(b, "up")
+		T.eq(arrow(b), true)
+		ns.Arrows.Paint(b, "up", function() error("verdict boom") end)
+		T.eq(arrow(b), false, "cleared")
+		T.eq(#errors, 1)
+	end,
 	-- A redraw that throws goes to the error handler (not swallowed); the other redraws still run.
 	redraw_errors_reported = function()
 		local ns = live({})

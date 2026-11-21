@@ -98,8 +98,8 @@ Turn in a quest with two or more reward choices (e.g. one with a cloth item and 
 4. Only the quest giver's turn-in panel is marked: the quest log and the quest's accept panel show
    no marks (tooltips only).
 5. A choice that needs a level above yours (up to 5 levels) can still be the pick (you keep the
-   reward until you can use it): its mark has **no arrow**, the gain in **gold**, and `lvl N` at the
-   top of the icon.
+   reward until you can use it): its mark has **no arrow**, the gain in **gold** when it will be an
+   upgrade (grey when it is not), and `lvl N` at the top of the icon.
 6. With Polestar's reward marks on, theirs (an arrow top-left, a coin top-right, a ring around the
    icon) and ours do not overlap.
 7. Close the panel and open another quest's turn-in: no leftover mark, not even for a frame (the

@@ -29,7 +29,8 @@ end
 -- ours keeps clear of all three.
 local marks = {}
 local GREEN, GREY, GOLD = "|cff4cff4c", "|cffcccccc", "|cffffd100"
--- rl: the level the choice needs when above the character's (then no arrow, gold gain, "lvl N" on top)
+-- rl: the level the choice needs when above the character's (then no arrow and a "lvl N" note; the
+-- gain in gold when it will be an upgrade, grey otherwise)
 local function mark(button, gain, upgrade, rl)
 	local m = marks[button]
 	if not m then
@@ -47,7 +48,7 @@ local function mark(button, gain, upgrade, rl)
 		marks[button] = m
 	end
 	m.arrow:SetShown(upgrade and not rl)
-	m.text:SetText((rl and GOLD or upgrade and GREEN or GREY) .. string.format("%+.1f", gain) .. "|r")
+	m.text:SetText((not upgrade and GREY or rl and GOLD or GREEN) .. string.format("%+.1f", gain) .. "|r")
 	m.note:SetText(rl and (GOLD .. "lvl " .. rl .. "|r") or "")
 	m.note:SetShown(rl and true or false)
 	m:Show()
