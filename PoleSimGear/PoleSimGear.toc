@@ -20,6 +20,7 @@ Spec.lua
 Equip.lua
 Live.lua
 Context.lua
+Options.lua
 Tooltip.lua
 Arrows.lua
 Rewards.lua
