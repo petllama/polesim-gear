@@ -1,5 +1,5 @@
 local T = require("t")
-local FILES = { "Core.lua", "Data/Weights.lua", "Data/Suffixes.lua", "Data/Items.lua", "Items.lua", "Score.lua", "Equip.lua", "Tooltip.lua" }
+local FILES = { "Core.lua", "Options.lua", "Data/Weights.lua", "Data/Suffixes.lua", "Data/Items.lua", "Items.lua", "Score.lua", "Equip.lua", "Tooltip.lua" }
 local ctx = { cls = "priest", spec = "shadow", ref = "spShadow", lo = 30, band = { upTo = 39 }, level = 34,
 	w = { int = 0.5, spShadow = 1 } }
 local inst = { id = 1, inv = 1, stats = { int = 10, spShadow = 3 }, armor = 0, dps = 0, weapon = false, rl = 30 }
@@ -254,5 +254,16 @@ return {
 		post(GT)
 		T.eq(#seen, 2, "forbidden")
 		_G.TooltipDataProcessor, _G.TooltipUtil, _G.Enum, _G.GameTooltip, _G.ItemRefTooltip = nil, nil, nil, nil, nil
+	end,
+	switch_off_no_line = function()
+		local ns, GT = client()
+		ns.Options.Set("tooltip", false)
+		GT.lines = {}
+		ns.Tooltip.Add(GT, "cloth")
+		T.eq(#GT.lines, 0, "tooltip line off")
+		ns.Options.Set("tooltip", true)
+		ns.Tooltip.Add(GT, "cloth")
+		T.ok(#GT.lines > 0)
+		unclient()
 	end,
 }

@@ -97,6 +97,7 @@ local RETRIES, RETRY_DELAY = 3, 0.3
 local tries = 0
 function Rewards.Mark()
 	hideMarks()
+	if ns.Options and ns.Options.Get("rewardMark") == false then return end
 	local frame = rewardPanel()
 	local ctx = frame and ns.Context.Get()
 	if not ctx then return end
@@ -138,3 +139,4 @@ ns.RegisterEvent("QUEST_COMPLETE", function() tries = 0 end)
 ns.RegisterEvent("QUEST_FINISHED", hideMarks)
 ns.RegisterEvent("GET_ITEM_INFO_RECEIVED", function() if rewardPanel() then schedule() end end)
 ns.On("SCORES_CHANGED", function() if rewardPanel() then schedule() end end)
+ns.On("OPTIONS", function(k) if k == "rewardMark" and rewardPanel() then schedule() end end)

@@ -55,6 +55,7 @@ local function paint(button, link, verdict)
 	Arrows.Mark(button, link and (verdict or Arrows.Verdict)(link))
 end
 function Arrows.Paint(button, link, verdict)
+	if ns.Options and ns.Options.Get("arrows") == false then pcall(Arrows.Mark, button, false) return end
 	local ok, err = pcall(paint, button, link, verdict)
 	if ok then return end
 	pcall(Arrows.Mark, button, false)
@@ -86,6 +87,8 @@ ns.On("SCORES_CHANGED", function()
 	waiting = {}
 	schedule()
 end)
+-- The Settings switch: arrows cleared (off) or painted again (on) at once.
+ns.On("OPTIONS", function(k) if k == "arrows" then Arrows.Redraw() end end)
 ns.RegisterEvent("GET_ITEM_INFO_RECEIVED", function(itemID)
 	if itemID and waiting[itemID] then
 		waiting[itemID] = nil

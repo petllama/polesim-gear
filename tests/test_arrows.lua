@@ -1,6 +1,6 @@
 local T = require("t")
-local FILES = { "Core.lua", "Data/Weights.lua", "Data/Suffixes.lua", "Data/Items.lua", "Items.lua", "Score.lua", "Equip.lua", "Arrows.lua" }
-local WITH_TOOLTIP = { "Core.lua", "Data/Weights.lua", "Data/Suffixes.lua", "Data/Items.lua", "Items.lua", "Score.lua", "Equip.lua",
+local FILES = { "Core.lua", "Options.lua", "Data/Weights.lua", "Data/Suffixes.lua", "Data/Items.lua", "Items.lua", "Score.lua", "Equip.lua", "Arrows.lua" }
+local WITH_TOOLTIP = { "Core.lua", "Options.lua", "Data/Weights.lua", "Data/Suffixes.lua", "Data/Items.lua", "Items.lua", "Score.lua", "Equip.lua",
 	"Tooltip.lua", "Arrows.lua" }
 local ctx = { cls = "priest", level = 20, w = { int = 1 }, worn = { [1] = { inst = { id = 9, inv = 1 }, score = 5 } } }
 local function head(int, rl) return { id = 1, inv = 1, c = 4, sc = 1, cm = 0, rl = rl or 10, stats = { int = int }, armor = 0, dps = 0 } end
@@ -371,5 +371,14 @@ return {
 		browse.ScrollBox.init(r1, 2)
 		T.eq(arrow(r1), false, "a reused browse row on a random-suffix item loses its arrow")
 		_G.AuctionHouseFrame, _G.ScrollUtil = nil, nil
+	end,
+	switch_off_clears = function()
+		local ns = live({ up = head(9) })
+		local b = button()
+		ns.Arrows.Paint(b, "up")
+		T.eq(arrow(b), true)
+		ns.Options.Set("arrows", false)
+		ns.Arrows.Paint(b, "up")
+		T.eq(arrow(b), false, "off: no arrow painted")
 	end,
 }

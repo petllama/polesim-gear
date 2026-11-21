@@ -1,6 +1,6 @@
 local T = require("t")
-local FILES = { "Core.lua", "Rewards.lua" }
-local ALL = { "Core.lua", "Data/Weights.lua", "Data/Suffixes.lua", "Data/Items.lua", "Items.lua", "Score.lua", "Equip.lua",
+local FILES = { "Core.lua", "Options.lua", "Rewards.lua" }
+local ALL = { "Core.lua", "Options.lua", "Data/Weights.lua", "Data/Suffixes.lua", "Data/Items.lua", "Items.lua", "Score.lua", "Equip.lua",
 	"Tooltip.lua", "Rewards.lua" }
 local ctx = { cls = "priest", level = 20, w = { int = 1 }, worn = { [1] = { inst = { id = 9, inv = 1 }, score = 5 } } }
 local function head(int, sc, rl) return { id = 1, inv = 1, c = 4, sc = sc or 1, cm = 0, rl = rl or 10, stats = { int = int }, armor = 0, dps = 0 } end
@@ -211,6 +211,16 @@ return {
 		T.ok(m and not m.arrow, "redrawn with the new scores")
 		ctx.worn[1].score = 5
 		_G.QuestInfo_Display = nil
+		unpanel()
+	end,
+	switch_off_no_mark = function()
+		local ns, B = panel({ "down", "up" }, { down = head(4), up = head(7) })
+		ns.Options.Set("rewardMark", false)
+		ns.Rewards.Mark()
+		T.eq(markOf(ns, B[2]), nil, "reward mark off")
+		ns.Options.Set("rewardMark", true)
+		ns.Rewards.Mark()
+		T.ok(markOf(ns, B[2]), "back on")
 		unpanel()
 	end,
 }

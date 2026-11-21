@@ -77,6 +77,7 @@ end
 Tooltip.Lookup = lookup
 
 function Tooltip.Add(tooltip, link)
+	if ns.Options and ns.Options.Get("tooltip") == false then return end
 	local ctx = ns.Context.Get()
 	if not (ctx and link) then return end
 	local hit = lookup(link, ctx)
