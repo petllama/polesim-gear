@@ -45,3 +45,52 @@ function Tooltip.Lines(cmp, inst, ctx, shift, labelled)
 	end
 	return lines
 end
+
+-- The live hook: every item tooltip (GameTooltip, ItemRefTooltip) gets the lines for items the character
+-- can use, up to AHEAD levels above; Shift redraws it with the breakdown.
+local AHEAD = 5 -- items up to this many levels above the character still get a line
+local secret = issecretvalue or function() return false end
+
+function Tooltip.Add(tooltip, link)
+	local ctx = ns.Context.Get()
+	if not (ctx and link) then return end
+	local inst = ns.Live.Instance(link)
+	if not inst or not ns.Equip.CanUse(inst, ctx.cls, ctx.level) or (inst.rl or 0) > ctx.level + AHEAD then return end
+	local cmp = ns.Equip.Compare(inst, ctx.w, ctx.cls, ctx.worn, false)
+	if not cmp then return end
+	local labelled = ns.Coexist and ns.Coexist.Label() or false
+	for _, l in ipairs(Tooltip.Lines(cmp, inst, ctx, IsShiftKeyDown(), labelled)) do
+		local a, b = l[3] or GREY, l[4] or GREY
+		if l[2] then
+			tooltip:AddDoubleLine(l[1], l[2], a[1], a[2], a[3], b[1], b[2], b[3])
+		else
+			tooltip:AddLine(l[1], a[1], a[2], a[3], true)
+		end
+	end
+end
+
+local function forbidden(tooltip)
+	if not tooltip.IsForbidden then return false end
+	local ok, f = pcall(tooltip.IsForbidden, tooltip)
+	return not ok or secret(f) or f
+end
+
+local function onItem(tooltip)
+	if tooltip ~= GameTooltip and tooltip ~= ItemRefTooltip then return end -- not the comparison tooltips
+	if forbidden(tooltip) then return end
+	local ok, _, link = pcall(TooltipUtil.GetDisplayedItem, tooltip)
+	if not ok or type(link) ~= "string" or secret(link) then return end
+	local ok2, err = pcall(Tooltip.Add, tooltip, link)
+	if not ok2 then geterrorhandler()(err) end
+end
+
+if TooltipDataProcessor and TooltipDataProcessor.AddTooltipPostCall and TooltipUtil and TooltipUtil.GetDisplayedItem
+	and Enum and Enum.TooltipDataType then
+	TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item, onItem)
+end
+
+ns.RegisterEvent("MODIFIER_STATE_CHANGED", function(key)
+	if (key == "LSHIFT" or key == "RSHIFT") and GameTooltip and GameTooltip:IsShown() and GameTooltip.RefreshData then
+		GameTooltip:RefreshData()
+	end
+end)
