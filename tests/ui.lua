@@ -232,15 +232,33 @@ function U.install()
 	_G.CreateDataProvider = function(t) return t or {} end
 	_G.ScrollBoxConstants = { RetainScrollPosition = 1 }
 	U.tip = { lines = {} }
+	U.postCall = nil
+	_G.IsModifiedClick = function() return false end
+	_G.GameTooltip_ShowCompareItem = nil
 	local tipM = {
 		SetOwner = function(t, owner) t.owner, t.lines = owner, {} end,
 		AddLine = function(t, s) t.lines[#t.lines + 1] = s end,
 		AddDoubleLine = function(t, a, b) t.lines[#t.lines + 1] = a .. " = " .. b end,
 		SetInventoryItem = function(t, _, slot) t.inventory = slot end,
-		Show = function(t) t.shown = true end, Hide = function(t) t.shown = false end,
+		-- the client's item tooltip: its lines replace the tooltip's, then the item post-calls run
+		-- (U.postCall: a test's capture of the addon's TooltipDataProcessor hook)
+		SetHyperlink = function(t, link)
+			t.link, t.lines = link, { "<item " .. link .. ">" }
+			t.hyperlinks = (t.hyperlinks or 0) + 1
+			if U.postCall then U.postCall(t, { hyperlink = link }) end
+		end,
+		GetOwner = function(t) return t.owner end,
+		Show = function(t) t.shown = true end,
+		Hide = function(t)
+			t.shown = false
+			for _, fn in ipairs(t.onHide or {}) do fn(t) end
+		end,
+		HookScript = function(t, k, fn)
+			if k == "OnHide" then t.onHide = t.onHide or {} t.onHide[#t.onHide + 1] = fn end
+		end,
 	}
 	_G.GameTooltip = setmetatable(U.tip, { __index = function(_, k) return tipM[k] or (k:match("^%u") and function() end) or nil end })
-	_G.GameTooltip_Hide = function() U.tip.shown = false end
+	_G.GameTooltip_Hide = function() U.tip:Hide() end
 	_G.ITEM_QUALITY_COLORS = {}
 	for q, hex in pairs({ [0] = "9d9d9d", [1] = "ffffff", [2] = "1eff00", [3] = "0070dd", [4] = "a335ee", [5] = "ff8000" }) do
 		_G.ITEM_QUALITY_COLORS[q] = { hex = "|cff" .. hex, r = tonumber(hex:sub(1, 2), 16) / 255,

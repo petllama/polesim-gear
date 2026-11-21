@@ -183,6 +183,32 @@ return {
 		T.ok(text:find("not available now", 1, true), text)
 		fx.done()
 	end,
+	-- The current item: the worn item's own tooltip (SetInventoryItem) and the slot's plan; a click on
+	-- it still opens the slot. A missing pick shows the game's item tooltip and why.
+	current_item_and_missing_tooltips = function()
+		local fx = F.load({ char = { plan = { shadow = { neck = "424242:0" } } } })
+		local ns, U = fx.ns, fx.U
+		fx.open()
+		local rows = rowsOf(fx)
+		local headRow
+		for _, r in ipairs(rows) do if r.e.def.key == "head" then headRow = r end end
+		headRow.cur.scripts.OnEnter(headRow.cur)
+		T.eq(U.tip.inventory, 1, "the worn item's own tooltip"); T.eq(U.tip.owner, headRow.cur)
+		local tip = table.concat(U.tip.lines, "\n")
+		T.ok(tip:find("Suggested upgrade: " .. headRow.e.entry.plan.c.inst.name, 1, true), tip)
+		T.eq(U.tip.shown, true)
+		headRow.cur.scripts.OnMouseUp(headRow.cur, "LeftButton")
+		T.eq(ns.Options.View().tab, "slot", "the click opens the slot"); T.eq(ns.Window.state.slot, "head")
+		ns.Window.SetTab("plan")
+		rows = rowsOf(fx)
+		local last = rows[#rows]
+		T.eq(last.e.def.key, "neck")
+		last.scripts.OnEnter(last)
+		T.eq(U.tip.link, "item:424242", "the game's tooltip for the missing pick")
+		tip = table.concat(U.tip.lines, "\n")
+		T.ok(tip:find("not available now", 1, true), tip)
+		fx.done()
+	end,
 	close_releases_row_references = function()
 		local fx = F.load()
 		local ns = fx.ns

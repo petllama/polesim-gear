@@ -119,6 +119,7 @@ local function release()
 	Win.DropAll()
 	state.building, state.model, state.stale, state.groups, state.codex, state.keep, state.pending = nil, nil, true, nil, nil, nil, nil
 	Win.badges = nil -- the strip's plan entries (they hold the model)
+	Win.ReleaseItemTip() -- a row tooltip's redraw (it holds the row's data)
 	for key, p in pairs(panels) do
 		local def = tabDefs[key]
 		if def and def.release then def.release(p) end
@@ -645,6 +646,58 @@ function Win.UpdateBottom(f, ctx)
 	f.wSub:SetText(format("levels %d-%d, points of %s", ctx.lo, ctx.band.upTo, ns.DATA.statLabels[ctx.ref] or ctx.ref))
 end
 
+-- The link the game's tooltip shows for an item row's instance: a worn item's own link, else the item
+-- with its random suffix. Forever's suffixes are item bonus lists (ItemBonusListID, armory data), so the
+-- suffix goes in the link's bonus-ID list: count (field 13 after "item:") 1, then the id (Live.Bonus).
+function Win.ItemLink(inst)
+	if type(inst.link) == "string" and inst.link ~= "" then return inst.link end
+	if inst.bonus then return "item:" .. inst.id .. string.rep(":", 12) .. "1:" .. inst.bonus end
+	return "item:" .. inst.id
+end
+
+-- Shift (COMPAREITEMS) held: the client's comparison tooltips, as on its own item tooltips.
+local function comparing() return IsModifiedClick and IsModifiedClick("COMPAREITEMS") and true or false end
+
+-- An item tooltip owned by a window row: the game's tooltip for the item, then draw() adds the
+-- window's lines. How to draw it again is kept while it shows (tip; let go when the tooltip hides or
+-- the window closes, as it holds the row's model data): when the item's data arrives
+-- (GET_ITEM_INFO_RECEIVED) and when Shift changes (the client calls owner:UpdateTooltip while shown;
+-- having one also keeps the client from rebuilding the tooltip without our lines). owner.psgItemTip
+-- tells the item post-call hook (Tooltip.lua) not to add its own score lines.
+local tip, hookedTip = nil, nil
+function Win.ReleaseItemTip() tip = nil end
+local function drawTip(t)
+	t.compare = comparing()
+	GameTooltip:SetOwner(t.owner, "ANCHOR_RIGHT")
+	tip = t -- after SetOwner (it may hide the tooltip)
+	GameTooltip:SetHyperlink(t.link)
+	GameTooltip:AddLine(" ")
+	t.draw()
+	GameTooltip:Show()
+	if t.compare and GameTooltip_ShowCompareItem then GameTooltip_ShowCompareItem(GameTooltip) end
+end
+function Win.ItemTip(owner, inst, draw)
+	if hookedTip ~= GameTooltip and GameTooltip.HookScript then
+		hookedTip = GameTooltip
+		GameTooltip:HookScript("OnHide", Win.ReleaseItemTip)
+	end
+	owner.psgItemTip = true
+	owner.UpdateTooltip = Win.UpdateItemTip
+	drawTip({ owner = owner, id = inst.id, link = Win.ItemLink(inst), draw = draw })
+end
+-- the kept tooltip when the owner still shows it
+local function shown(owner)
+	if tip and owner ~= nil and tip.owner == owner and GameTooltip.GetOwner and GameTooltip:GetOwner() == owner then return tip end
+end
+function Win.UpdateItemTip(owner)
+	local t = shown(owner)
+	if t and t.compare ~= comparing() then drawTip(t) end
+end
+ns.RegisterEvent("GET_ITEM_INFO_RECEIVED", function(id)
+	local t = shown(GameTooltip and GameTooltip.GetOwner and GameTooltip:GetOwner())
+	if t and t.id == id then drawTip(t) end
+end)
+
 -- extra (optional): a line or a list of lines in gold above the hint (Gear Plan: "Better: <item> +N"
 -- on a pick; Sources: the place's other sources)
 function Win.RowTooltip(owner, r, hint, extra)
@@ -655,8 +708,12 @@ function Win.RowTooltip(owner, r, hint, extra)
 	local band
 	if r.at then band = ns.Context.At(r.at) else band = ctx end
 	local inst = r.c.inst
-	GameTooltip:SetOwner(owner, "ANCHOR_RIGHT")
-	GameTooltip:AddLine(ns.Style.ItemText(inst))
+	Win.ItemTip(owner, inst, function() Win.RowLines(r, ctx, band, hint, extra) end)
+end
+
+-- The window's lines of an item row's tooltip (below the game's item tooltip).
+function Win.RowLines(r, ctx, band, hint, extra)
+	local inst = r.c.inst
 	if inst.suffix then GameTooltip:AddLine("scored with its best suffix for this spec: " .. inst.suffix, 0.6, 0.6, 0.6) end
 	GameTooltip:AddDoubleLine("Score", format("%.2f", r.c.score), 1, 0.82, 0, 1, 1, 1)
 	local role = inst.inv == 17 and "mh" or (ns.Equip.ROLE_OF_SLOT[r.slot.slot] or "gear")
@@ -686,7 +743,6 @@ function Win.RowTooltip(owner, r, hint, extra)
 	if type(extra) == "string" then extra = { extra } end
 	for _, line in ipairs(extra or {}) do GameTooltip:AddLine(line, 1, 0.82, 0, true) end
 	if hint then GameTooltip:AddLine(hint, 0.6, 0.6, 0.6, true) end
-	GameTooltip:Show()
 end
 
 -- The "Set as plan" button of an upgrade row d ({ c, slot }) in Slot Upgrades and Sources: its label

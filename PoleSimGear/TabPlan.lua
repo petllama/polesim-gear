@@ -44,6 +44,11 @@ local function make(row)
 	row.badge:SetPoint("LEFT", COL.prio, 0)
 	row.slotText = text(row, 12, C.text)
 	row.cur = S.ItemCell(row, 22, COL.curNameW)
+	-- the worn item's own tooltip and the slot's plan; a click is the row's
+	row.cur:EnableMouse(true)
+	row.cur:SetScript("OnEnter", function(self) S.Hover(row, true) Tab.CurrentTooltip(row, self) end)
+	row.cur:SetScript("OnLeave", function() S.Hover(row, false) GameTooltip_Hide() end)
+	row.cur:SetScript("OnMouseUp", function(_, button) Tab.Click(row, button) end)
 	row.curScore = text(row, 11, C.dim, "RIGHT")
 	row.plan = S.ItemCell(row, 22, COL.planNameW)
 	row.delta = text(row, 12, C.green, "RIGHT")
@@ -231,9 +236,22 @@ function Tab.Tooltip(row)
 	end
 	local m = e.missing or (e.entry and e.entry.missing)
 	if not m then return end
-	GameTooltip:SetOwner(row, "ANCHOR_RIGHT")
-	GameTooltip:AddLine(S.ItemText(ns.View.Inst(m.id, m.bonus)))
-	GameTooltip:AddLine(e.why or "", 1, 0.6, 0.25, true)
+	local inst = ns.View.Inst(m.id, m.bonus)
+	ns.Window.ItemTip(row, inst, function() GameTooltip:AddLine(e.why or "", 1, 0.6, 0.25, true) end)
+end
+
+-- The current item cell: the worn item's own tooltip (its inventory slot: for rings and trinkets the
+-- one the row shows), then the slot's plan line.
+function Tab.CurrentTooltip(row, cell)
+	local e = row.e
+	if not (e and e.def and e.worn) then return end
+	local ctx = ns.Context.Get()
+	local slot = e.def.slot
+	if ctx and ctx.worn[slot] ~= e.worn and ctx.worn[slot + 1] == e.worn then slot = slot + 1 end
+	GameTooltip:SetOwner(cell, "ANCHOR_RIGHT")
+	GameTooltip:SetInventoryItem("player", slot)
+	local line, r, g, b = ns.Window.SlotPlanLine(slot)
+	if line then GameTooltip:AddLine(line, r, g, b, true) end
 	GameTooltip:Show()
 end
 

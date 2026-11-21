@@ -1,6 +1,6 @@
 # PoleSim Gear
 
-Version 0.2.2. WoW: Forever addon: PoleSim's simulated, level-banded gear weights in game. Item scores with a
+Version 0.2.3. WoW: Forever addon: PoleSim's simulated, level-banded gear weights in game. Item scores with a
 "how?" breakdown, upgrade arrows, the best quest reward, and a gear planner window with where to get
 each upgrade. Requires Polestar. Private, Priest only, while it is being tested.
 
@@ -21,7 +21,8 @@ Wishlist). At the bottom: your equipped gear, with a dot on each slot that has a
 upgrade, gold: your pick; hover a slot for the item and its gain), and the stat weights in use.
 
 - **Gear Plan:** one row per slot: your pick, else the best upgrade, with its gain and source. Click a
-  row for that slot's upgrades; right-click: back to the suggestion, wishlist. Hover: the "how?".
+  row for that slot's upgrades; right-click: back to the suggestion, wishlist. Hover: the game's item tooltip (with
+  its random suffix), then the "how?"; Shift compares with what you wear.
 - **Slot Upgrades:** every upgrade of one slot, with its level, source, "(route)" for your guide's
   turn-ins and "needs: X first"; **Set as plan** makes one the slot's pick (per spec); "Show all (N)"
   when the list was trimmed. The star adds an item to your wishlist (in every list).

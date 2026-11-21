@@ -129,9 +129,16 @@ local function linkOf(tooltip, data)
 	return ok and str(link) or nil
 end
 
+-- A window row's item tooltip (Window.ItemTip) draws its own score lines: the hook adds none there.
+local function windowRow(tooltip)
+	if not tooltip.GetOwner then return false end
+	local ok, owner = pcall(tooltip.GetOwner, tooltip)
+	return ok and type(owner) == "table" and owner.psgItemTip == true
+end
+
 local function onItem(tooltip, data)
 	if tooltip ~= GameTooltip and tooltip ~= ItemRefTooltip then return end -- not the comparison tooltips
-	if forbidden(tooltip) then return end
+	if forbidden(tooltip) or windowRow(tooltip) then return end
 	local link = linkOf(tooltip, data)
 	if not link then return end
 	local ok2, err = pcall(Tooltip.Add, tooltip, link)

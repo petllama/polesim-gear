@@ -247,6 +247,123 @@ return {
 		T.ok(not text:find(" x ", 1, true), "no band: no how?"); T.ok(not text:find("weights of levels", 1, true))
 		fx.done()
 	end,
+	-- A row's tooltip is the game's own item tooltip (stats, with the row's random suffix in the link's
+	-- bonus-ID list), then the window's lines below a blank line.
+	row_tooltip_is_the_item_tooltip = function()
+		local fx = F.load()
+		local ns, U = fx.ns, fx.U
+		fx.open()
+		local inst = ns.Score.Instance(ns.Items.Get(6540), 12720)
+		T.eq(inst.bonus, 12720)
+		local r = { c = { id = 6540, inst = inst, score = 5, sources = { { kind = "quest", text = "Quest: X" } } },
+			gain = 2, slot = ns.Browser.SLOTS[7] }
+		local owner = U.new("Button")
+		ns.Window.RowTooltip(owner, r, "Click: this slot's upgrades")
+		T.eq(U.tip.link, "item:6540::::::::::::1:12720", "a link carrying the suffix")
+		T.eq(ns.Live.Bonus(U.tip.link, ns.Items.Get(6540)), 12720, "read back as the suffix")
+		T.eq(U.tip.lines[1], "<item item:6540::::::::::::1:12720>", "the item tooltip first")
+		T.eq(U.tip.lines[2], " ", "then a blank line")
+		local text = table.concat(U.tip.lines, "\n")
+		for _, want in ipairs({ "Score = 5.00", "Gain over what you wear = +2.00", "Quest: X", "Click: this slot's upgrades" }) do
+			T.ok(text:find(want, 1, true), want .. " in\n" .. text)
+		end
+		T.eq(U.tip.shown, true)
+		-- no suffix: the plain item; a worn item from the client: its own link
+		r.c.inst = ns.Score.Instance(ns.Items.Get(6540))
+		ns.Window.RowTooltip(owner, r)
+		T.eq(U.tip.link, "item:6540")
+		r.c.inst = { id = 6540, link = "|cff1eff00|Hitem:6540::::::::20::::1:12720::::|h[x]|h|r", name = "x", stats = {} }
+		ns.Window.RowTooltip(owner, r)
+		T.eq(U.tip.link, r.c.inst.link)
+		fx.done()
+	end,
+	-- The item post-call hook adds no second score (nor star) line to a window row's tooltip; it still
+	-- adds them to any other item tooltip.
+	row_tooltip_no_duplicate_score = function()
+		local post
+		_G.Enum = { TooltipDataType = { Item = 0 } }
+		_G.TooltipDataProcessor = { AddTooltipPostCall = function(kind, fn) if kind == 0 then post = fn end end }
+		_G.TooltipUtil = { GetDisplayedItem = function(t) return "x", t.link end }
+		local fx = F.load({ char = { wish = { ["6540:12720"] = true } } })
+		local ns, U = fx.ns, fx.U
+		fx.open()
+		U.postCall = post
+		local inst = ns.Score.Instance(ns.Items.Get(6540), 12720)
+		inst.c, inst.sc, inst.cm = 4, 1, 0
+		ns.Live.Instance = function() return inst end
+		local r = { c = { id = 6540, inst = inst, score = 5, sources = {} }, gain = 2, slot = ns.Browser.SLOTS[7] }
+		local owner = U.new("Button")
+		ns.Window.RowTooltip(owner, r)
+		local scores, stars = 0, 0
+		for _, l in ipairs(U.tip.lines) do
+			if l:find("^Score") or l:find("PoleSim score", 1, true) then scores = scores + 1 end
+			if l:find("wishlist", 1, true) then stars = stars + 1 end
+		end
+		T.eq(scores, 1, table.concat(U.tip.lines, "\n"))
+		T.eq(stars, 1, "one star line")
+		-- another owner (a bag item): the hook's lines
+		U.tip:SetOwner(U.new("Button"))
+		U.tip:SetHyperlink("item:6540::::::::::::1:12720")
+		T.ok(table.concat(U.tip.lines, "\n"):find("Score ", 1, true), "the hook still draws elsewhere")
+		_G.Enum, _G.TooltipDataProcessor, _G.TooltipUtil = nil, nil, nil
+		fx.done()
+	end,
+	-- Item data not cached yet: the client redraws the item part when it arrives; the row tooltip is
+	-- drawn again so the window's lines are not lost. Only while that row still owns the tooltip.
+	row_tooltip_redrawn_on_item_info = function()
+		local fx = F.load()
+		local ns, U = fx.ns, fx.U
+		fx.open()
+		local r = { c = { id = 6540, inst = ns.Score.Instance(ns.Items.Get(6540)), score = 5, sources = {} }, gain = 2,
+			slot = ns.Browser.SLOTS[7] }
+		local owner = U.new("Button")
+		ns.Window.RowTooltip(owner, r)
+		local function event(...) ns._frame.scripts.OnEvent(ns._frame, "GET_ITEM_INFO_RECEIVED", ...) end
+		U.tip.lines = { "Retrieving item information" }
+		event(1234, true)
+		T.eq(U.tip.hyperlinks, 1, "another item: not redrawn")
+		event(6540, true)
+		T.eq(U.tip.hyperlinks, 2, "drawn again")
+		T.ok(table.concat(U.tip.lines, "\n"):find("Score = 5.00", 1, true), "the window's lines are back")
+		U.tip:SetOwner(U.new("Button"))
+		event(6540, true)
+		T.eq(U.tip.hyperlinks, 2, "another owner now: left alone")
+		-- the window closed (the tooltip not hidden): nothing of the row is kept
+		ns.Window.RowTooltip(owner, r)
+		_G.PoleSimGearFrame:Hide()
+		event(6540, true)
+		T.eq(U.tip.hyperlinks, 3, "let go on close")
+		fx.done()
+	end,
+	-- Shift (COMPAREITEMS): the game's comparison tooltips, also when pressed while hovering (the client
+	-- calls the owner's UpdateTooltip a few times a second).
+	row_tooltip_compares_with_shift = function()
+		local fx = F.load()
+		local ns, U = fx.ns, fx.U
+		fx.open()
+		local compared = 0
+		_G.GameTooltip_ShowCompareItem = function(t) if t == _G.GameTooltip then compared = compared + 1 end end
+		local r = { c = { id = 6540, inst = ns.Score.Instance(ns.Items.Get(6540)), score = 5, sources = {} }, gain = 2,
+			slot = ns.Browser.SLOTS[7] }
+		local owner = U.new("Button")
+		ns.Window.RowTooltip(owner, r)
+		T.eq(compared, 0, "no Shift")
+		owner:UpdateTooltip()
+		T.eq(U.tip.hyperlinks, 1, "no change: not redrawn")
+		_G.IsModifiedClick = function(k) return k == "COMPAREITEMS" end
+		owner:UpdateTooltip()
+		T.eq(U.tip.hyperlinks, 2, "Shift pressed: drawn again"); T.eq(compared, 1, "compared with what you wear")
+		owner:UpdateTooltip()
+		T.eq(U.tip.hyperlinks, 2, "held: not redrawn")
+		-- hidden, then the same frame owns another (non-item) tooltip: Shift leaves it alone
+		GameTooltip_Hide()
+		U.tip:SetOwner(owner); U.tip:AddLine("Quest 100")
+		_G.IsModifiedClick = function() return false end
+		owner:UpdateTooltip()
+		ns._frame.scripts.OnEvent(ns._frame, "GET_ITEM_INFO_RECEIVED", 6540, true)
+		T.eq(U.tip.hyperlinks, 2, "not drawn over another tooltip"); T.eq(U.tip.lines[1], "Quest 100")
+		fx.done()
+	end,
 	one_plan_pass_per_refresh = function()
 		local fx = F.load()
 		local ns = fx.ns

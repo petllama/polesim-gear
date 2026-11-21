@@ -1,4 +1,9 @@
-# In-game checklist (one session, on a priest) — PoleSim Gear 0.2.2
+# In-game checklist (one session, on a priest) — PoleSim Gear 0.2.3
+
+**0.2.3 over 0.2.2** (no new files: `tools/install.sh` then `/reload` is enough): hovering an item in
+the window shows the game's own item tooltip (stats, with the row's "of the ..." suffix), then
+PoleSim's lines below it; Shift compares with what you wear. The Gear Plan's current item has its own
+tooltip. Check: K21.
 
 **0.2.2 over 0.2.1** (no new files: `tools/install.sh` then `/reload` is enough): green world drops
 ("... of Magic", "... of the Whale": any mob of their levels drops them) are no longer dungeon loot;
@@ -328,7 +333,7 @@ what you wear (**its own icon and name**, with an "of the Owl" style suffix if i
 question mark, no "?") and its score, the plan item, Gain and Gain %, the source icon and kind. Hover a row: the
 "how?" (as D2: Score, its terms, "Gain over what you wear", the sources) and at the bottom "Click: this
 slot's upgrades. Right-click: back to suggestion, wishlist.". Click a row: Slot Upgrades opens on that
-slot.
+slot. (The item tooltip above those lines: K21.)
 
 **K8. Picks.** Slot Upgrades on a slot with two or more rows: **Set as plan** on the 2nd row. Gear Plan:
 that slot shows the item with "Your pick" and "best +N" (the suggestion's gain; hover: "Better: <item>
@@ -415,6 +420,24 @@ side's and the Skyborne-only quests' rewards.
 **K20. Turn-in rebuild.** Note a Quest row (Gear Plan or Slot Upgrades), turn that quest in with the
 window open: about a second later "scoring..." and the row is gone.
 
+**K21. Item tooltips in the window.** Hover a plan item in the Gear Plan, then a row in Slot Upgrades,
+Sources (an item row) and the Wishlist, and a greyed "not available now" pick:
+- the top is the game's own item tooltip: name in quality colour, binding, slot, armor, the stats
+  (green "Equip:" lines too). For an "of the Owl" style row the name and the stats are that suffix's
+  (the same suffix as the row's name);
+- below a blank line, PoleSim's lines: Score and its terms, "Gain over what you wear", your pick /
+  wishlist marks, the sources (zone, cost, needs, route), the hint at the bottom. **Only one** score
+  block: no second "Score"/"PoleSim score" line and no "Shift: how?" line from the bag tooltip;
+- an item you have never seen this session may show "Retrieving item information" for a moment: then
+  the stats fill in and PoleSim's lines are still there;
+- hold **Shift** while hovering: the game's comparison tooltip(s) with what you wear open beside it
+  (release: they close); PoleSim's lines stay.
+Hover the **current item** (icon or name in the "Current item" column): the worn item's own tooltip
+(as the equipped strip's) with the slot's plan line ("Suggested upgrade: ..." or "Your pick: ...");
+a click there still opens Slot Upgrades. Hover a bag item afterwards: its usual PoleSim score line is
+back. Report: a row whose stats or suffix differ from the row's name, a missing or doubled score block,
+lines lost after "Retrieving item information", any Lua error.
+
 ## L. Later in the session (or another session)
 
 **L1. Arrows follow changes.** Level up, change talents or equip something: within a moment the arrows
@@ -484,6 +507,7 @@ in open bags, vendor and mail update (no `/reload`); opening a bag or the vendor
 | K18 | time | |
 | K19 | Skyborne | |
 | K20 | turn-in rebuild | |
+| K21 | item tooltips in the window (suffix stats, one score block, Shift compare, current item) | |
 | L1 | arrows follow changes | |
 | L2 | other character not asked | |
 

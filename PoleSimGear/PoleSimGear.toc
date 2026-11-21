@@ -2,7 +2,7 @@
 ## Title: PoleSim Gear
 ## Notes: PoleSim's level-band gear weights: item scores, upgrade arrows, quest reward picks and a gear planner. Needs Polestar.
 ## Author: petllama
-## Version: 0.2.2
+## Version: 0.2.3
 ## X-License: GPL-3.0-only
 ## Dependencies: Polestar
 ## SavedVariables: PoleSimGearDB
