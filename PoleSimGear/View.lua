@@ -118,8 +118,9 @@ end
 
 -- Inventory slots that get a plan badge: { [invSlot] = "pick" | "suggestion" }. Rings and trinkets
 -- badge the slot the plan replaces (the weaker or the empty one, Browser.WornFor's choice).
+-- -> slot -> "pick" | "suggestion", and slot -> the entry ({ def, entry, ... }) the dot is for
 function View.BadgeSlots(entries, worn)
-	local out = {}
+	local out, of = {}, {}
 	for _, e in ipairs(entries) do
 		if e.entry and (e.entry.plan or e.entry.missing) then
 			local def, slot = e.def, e.def.slot
@@ -128,7 +129,8 @@ function View.BadgeSlots(entries, worn)
 				if a and (not b or b.score < a.score) then slot = def.slot + 1 end
 			end
 			out[slot] = e.entry.isPick and "pick" or "suggestion"
+			of[slot] = e
 		end
 	end
-	return out
+	return out, of
 end

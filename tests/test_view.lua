@@ -84,7 +84,9 @@ return {
 		for _, d in ipairs(B.SLOTS) do def[d.key] = d end
 		local function e(key, isPick) return { def = def[key], entry = { plan = {}, isPick = isPick } } end
 		local worn = { [11] = { score = 5 }, [12] = { score = 3 }, [13] = { score = 2 } }
-		local b = ns.View.BadgeSlots({ e("neck", true), e("finger"), e("trinket"), { def = def.head, entry = {} } }, worn)
+		local neck = e("neck", true)
+		local b, of = ns.View.BadgeSlots({ neck, e("finger"), e("trinket"), { def = def.head, entry = {} } }, worn)
+		T.eq(of[2], neck, "the entry behind the dot (the slot tooltip names its item)"); T.eq(of[1], nil)
 		T.eq(b[2], "pick"); T.eq(b[12], "suggestion", "the weaker ring"); T.eq(b[14], "suggestion", "the empty trinket slot")
 		T.eq(b[1], nil, "no plan")
 	end,

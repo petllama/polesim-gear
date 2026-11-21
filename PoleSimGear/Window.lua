@@ -517,11 +517,45 @@ end
 
 Win.EQUIP_SLOTS = { 1, 2, 3, 15, 5, 9, 10, 6, 7, 8, 11, 12, 13, 14, 16, 17, 18 }
 Win.WEIGHTS_W = 320 -- the weights card (two values a line); the equipped strip takes the rest
+-- An empty slot's own art (C_PaperDollInfo.GetInventorySlotInfoForInvSlot's slotTexture, a fileID),
+-- else the backpack's empty slot.
+function Win.EmptySlotArt(slot)
+	local P = C_PaperDollInfo
+	if P and P.GetInventorySlotInfoForInvSlot then
+		local ok, _, tex = pcall(P.GetInventorySlotInfoForInvSlot, slot)
+		if ok and tex then return tex end
+	end
+	return "Interface\\PaperDoll\\UI-Backpack-EmptySlot"
+end
+-- The equipped-slot tooltip's plan line: -> text, r, g, b | nil (no model yet)
+function Win.SlotPlanLine(slot)
+	local info = Win.badges and Win.badges[slot]
+	if not Win.badges then return nil end
+	if not info then return "No upgrade from the ticked sources", 0.6, 0.6, 0.6 end
+	local entry = info.entry
+	local r = entry.plan
+	local what = r and (r.c.inst.name or "?") .. " " .. S.Signed(r.gain)
+		or ((entry.missing and ns.View.Inst(entry.missing.id, entry.missing.bonus).name or "?") .. " (not available now)")
+	if entry.isPick then return "Your pick: " .. what, C.pick[1], C.pick[2], C.pick[3] end
+	return "Suggested upgrade: " .. what, C.green[1], C.green[2], C.green[3]
+end
 function Win.CreateBottom(f)
 	local eq = S.Panel(f, 12, -400, 470, 88)
 	f.eq = eq
 	f.eqTitle = S.Text(eq, 12, C.white)
 	f.eqTitle:SetPoint("TOPLEFT", 8, -6)
+	-- the legend of the dots on the icons (textures: the client font may not have a round dot)
+	f.legend = {}
+	local x = 8
+	for _, l in ipairs({ { C.green, "suggested upgrade" }, { C.pick, "your pick" } }) do
+		local dot = S.Dot(eq, 8, l[1])
+		dot:SetPoint("TOPLEFT", x, -70)
+		local t = S.Text(eq, 10, C.label)
+		t:SetPoint("TOPLEFT", x + 11, -68)
+		t:SetText(l[2])
+		f.legend[#f.legend + 1] = t
+		x = x + 11 + (l[2] == "your pick" and 60 or 104) + 10
+	end
 	f.slots = {}
 	for i, slot in ipairs(Win.EQUIP_SLOTS) do
 		local b = CreateFrame("Button", nil, eq)
@@ -536,6 +570,8 @@ function Win.CreateBottom(f)
 		b:SetScript("OnEnter", function(self)
 			GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
 			GameTooltip:SetInventoryItem("player", self.slot)
+			local line, r, g, bl = Win.SlotPlanLine(self.slot)
+			if line then GameTooltip:AddLine(line, r, g, bl, true) end
 			GameTooltip:Show()
 		end)
 		b:SetScript("OnLeave", GameTooltip_Hide)
@@ -575,15 +611,18 @@ end
 function Win.UpdateBottom(f, ctx)
 	local n = 0
 	local badges = {}
+	Win.badges = nil
 	if ctx and state.model then
 		-- the Gear Plan's own pass (All gear adds only slots without a plan); Wishlist lists stars
 		local show = ns.Options.View().show
-		badges = ns.View.BadgeSlots(Win.PlanEntries(show == "all" and "all" or "upgrades"), ctx.worn)
+		local entries
+		badges, entries = ns.View.BadgeSlots(Win.PlanEntries(show == "all" and "all" or "upgrades"), ctx.worn)
+		Win.badges = entries
 	end
 	for _, b in ipairs(f.slots) do
 		local link = GetInventoryItemLink("player", b.slot)
 		if link then n = n + 1 end
-		b.icon:SetTexture(link and GetInventoryItemTexture("player", b.slot) or "Interface\\PaperDoll\\UI-Backpack-EmptySlot")
+		b.icon:SetTexture(link and GetInventoryItemTexture("player", b.slot) or Win.EmptySlotArt(b.slot))
 		local q = link and ITEM_QUALITY_COLORS and ITEM_QUALITY_COLORS[GetInventoryItemQuality("player", b.slot) or 1]
 		S.SetBorder(b.border, q and q.r and { q.r, q.g, q.b } or C.cardBorder)
 		local kind = badges[b.slot]

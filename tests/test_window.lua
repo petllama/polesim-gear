@@ -180,6 +180,47 @@ return {
 		T.eq(ns.Options.View().tab, "weights")
 		fx.done()
 	end,
+	-- The dots explained: a legend under the icons, and the slot's tooltip names the plan item.
+	strip_dots_explained = function()
+		local fx = F.load()
+		local ns, U = fx.ns, fx.U
+		_G.C_PaperDollInfo = { GetInventorySlotInfoForInvSlot = function(slot) return slot, 136500 + slot, false, "SLOT" end }
+		U.equipped[1] = "item:999001"
+		local f = fx.open()
+		local text = U.texts(f)
+		T.ok(text:find("suggested upgrade", 1, true), "legend"); T.ok(text:find("your pick", 1, true), "legend")
+		local dots = 0
+		U.walk(f.eq, function(w) if w.mask and w.vertex and w.parent == f.eq then dots = dots + 1 end end)
+		T.eq(dots, 2, "two coloured dots (textures)")
+		-- empty slots: their own art
+		T.eq(f.slots[2].icon.texture, 136502, "the neck's empty-slot art")
+		local head = f.slots[1]
+		head.scripts.OnEnter(head)
+		local tip = table.concat(U.tip.lines, "\n")
+		local plan
+		for _, e in ipairs(ns.Window.PlanEntries("upgrades") or {}) do if e.def.key == "head" then plan = e.entry.plan end end
+		if not plan then
+			ns.Window.Refresh()
+			local es = ns.View.PlanEntries(ns.Window.state.model, fx.worn, ns.Window.St())
+			for _, e in ipairs(es) do if e.def.key == "head" then plan = e.entry.plan end end
+		end
+		T.ok(tip:find("Suggested upgrade: " .. plan.c.inst.name .. " " .. ns.Style.Signed(plan.gain), 1, true), tip)
+		ns.Plan.Set("shadow", "head", plan.c.inst)
+		head.scripts.OnEnter(head)
+		tip = table.concat(U.tip.lines, "\n")
+		T.ok(tip:find("Your pick: " .. plan.c.inst.name, 1, true), tip)
+		-- a slot without a dot
+		for _, b in ipairs(f.slots) do
+			if not b.badge.shown then
+				b.scripts.OnEnter(b)
+				tip = table.concat(U.tip.lines, "\n")
+				T.ok(tip:find("No upgrade from the ticked sources", 1, true), tip)
+				break
+			end
+		end
+		_G.C_PaperDollInfo = nil
+		fx.done()
+	end,
 	row_tooltip = function()
 		local fx = F.load({ char = { wish = { ["9:0"] = true }, plan = { shadow = { chest = "9:0" } } } })
 		local ns, U = fx.ns, fx.U
