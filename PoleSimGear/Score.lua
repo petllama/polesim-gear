@@ -129,6 +129,7 @@ end
 
 -- (instance, score) of an item with its best random suffix for these weights.
 function Score.BestSuffix(it, w, cls, role)
+	if not it then return nil end
 	local best, bestScore
 	local list = #it.sfx > 0 and it.sfx or { false }
 	for _, bl in ipairs(list) do

@@ -72,4 +72,7 @@ return {
 		c = E.Compare(ring(5, 301, 3, false, 12), w, "priest", tr, false)
 		T.ok(not c.equipped); T.eq(c.slot, 14); T.near(c.gain, 3)
 		end,
+	nil_instance = function()
+		T.eq(T.addon(FILES).Equip.Compare(nil, {}, "priest", {}, false), nil)
+	end,
 }

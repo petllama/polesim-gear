@@ -65,5 +65,6 @@ return {
 	end,
 	nil_item = function()
 		T.eq(T.addon(FILES).Score.Score(nil, W, "priest", "gear"), 0)
+		T.eq(T.addon(FILES).Score.BestSuffix(nil, W, "priest", "gear"), nil)
 	end,
 }

@@ -30,6 +30,7 @@ local function same(a, b) return a and b and a.id == b.id and (a.bonus or 0) == 
 
 -- -> { score, gain, base, slot, note, equipped }
 function Equip.Compare(inst, w, cls, worn, canDw)
+	if not inst then return nil end
 	local S = ns.Score
 	local function at(slot) local e = worn[slot] return e and e.score or 0, e end
 	local inv = inst.inv
