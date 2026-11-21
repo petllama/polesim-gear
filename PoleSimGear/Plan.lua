@@ -69,7 +69,7 @@ function Plan.Resolve(rows, pick)
 	return e
 end
 
-Plan.KIND_LABEL = { quest = "Quests", dungeon = "Dungeons", crafted = "Crafting", vendor = "Vendor", world = "BoE / World" }
+Plan.KIND_LABEL = { quest = "Quests", dungeon = "Dungeons", crafted = "Crafting", vendor = "Vendors", world = "BoE / World" }
 
 -- Why a pick (not among the slot's shown rows) is unavailable: looked up in the whole model.
 function Plan.Why(model, key, pick, ahead, filters)

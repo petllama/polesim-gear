@@ -14,6 +14,7 @@ return {
 		T.eq(ns.Window.state.slot, "head")
 		T.ok(p.count.text:match("^%d+ upgrades?"), p.count.text)
 		T.ok(p.count.text:find("Quests", 1, true), p.count.text)
+		T.eq(ns.Plan.KIND_LABEL.vendor, "Vendors", "the count line says \"Vendors 3\"")
 		fx.done()
 	end,
 	set_as_plan = function()

@@ -61,7 +61,7 @@ return {
 		local P = ns.Plan
 		local function r(id, kinds, at) return { c = { id = id, inst = { id = id }, kinds = kinds }, gain = 1, at = at } end
 		local m = { level = 20, now = { head = { r(1, { vendor = true, world = true }) } }, coming = { head = { r(2, { quest = true }, 24) } } }
-		T.eq(P.Why(m, "head", "1:0", 0, { quest = true }), "its sources are off: Vendor, BoE / World")
+		T.eq(P.Why(m, "head", "1:0", 0, { quest = true }), "its sources are off: Vendors, BoE / World")
 		T.eq(P.Why(m, "head", "2:0", 2, { quest = true }), "needs level 24 (look ahead +4)")
 		T.eq(P.Why(m, "head", "3:0", 5, { quest = true }), "not available now (quest done, retired, or no longer an upgrade)")
 	end,
