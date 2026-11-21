@@ -493,7 +493,8 @@ function Win.UpdateBottom(f, ctx)
 	f.wSub:SetText(format("levels %d-%d, points of %s", ctx.lo, ctx.band.upTo, ns.DATA.statLabels[ctx.ref] or ctx.ref))
 end
 
--- extra (optional): a line in gold above the hint (Gear Plan: "Better: <item> +N" on a pick)
+-- extra (optional): a line or a list of lines in gold above the hint (Gear Plan: "Better: <item> +N"
+-- on a pick; Sources: the place's other sources)
 function Win.RowTooltip(owner, r, hint, extra)
 	if not (r and r.c) then return end
 	local ctx = ns.Context.Get()
@@ -529,7 +530,8 @@ function Win.RowTooltip(owner, r, hint, extra)
 		if s.needs then GameTooltip:AddLine("  needs: " .. s.needs .. " first", 1, 0.5, 0.3, true) end
 		if s.route then GameTooltip:AddLine(format("  on your route (Polestar guide step %d)", s.route), 0.3, 0.8, 1, true) end
 	end
-	if extra then GameTooltip:AddLine(extra, 1, 0.82, 0, true) end
+	if type(extra) == "string" then extra = { extra } end
+	for _, line in ipairs(extra or {}) do GameTooltip:AddLine(line, 1, 0.82, 0, true) end
 	if hint then GameTooltip:AddLine(hint, 0.6, 0.6, 0.6, true) end
 	GameTooltip:Show()
 end
