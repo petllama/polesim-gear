@@ -12,8 +12,10 @@ Options.SHOWS = { all = true, upgrades = true, wishlist = true }
 Options.TABS = { plan = true, slot = true, sources = true, weights = true, settings = true }
 Options.AHEAD_MAX = 5
 
--- Before ADDON_LOADED (or in a test without it) the settings live in spare tables for the session.
+-- Before ADDON_LOADED (or in a test without it) the settings live in spare tables for the session; a
+-- switch Set then is queued and saved at load (the player's latest word wins over the saved value).
 local spareDb, spareChar = {}, {}
+local queued = {}
 local function opts()
 	local db = ns.db or spareDb
 	if type(db.options) ~= "table" then db.options = {} end
@@ -28,10 +30,17 @@ function Options.Get(key) return opts()[key] end
 
 function Options.Set(key, value)
 	if Options.DEFAULTS[key] == nil or type(value) ~= type(Options.DEFAULTS[key]) then return false end
+	if not ns.db then queued[key] = value end
 	opts()[key] = value
 	ns.Fire("OPTIONS", key, value)
 	return true
 end
+
+ns.On("DB_READY", function()
+	local q = queued
+	queued = {}
+	for key, value in pairs(q) do Options.Set(key, value) end
+end)
 
 local function clampAhead(a)
 	if type(a) ~= "number" then return nil end
