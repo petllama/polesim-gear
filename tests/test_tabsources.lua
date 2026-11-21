@@ -21,4 +21,22 @@ return {
 		T.eq(ns.Window.state.groups, nil, "dropped on close")
 		fx.done()
 	end,
+	groups_list = function()
+		local fx = F.load()
+		local ns, U = fx.ns, fx.U
+		fx.open()
+		ns.Window.SetTab("sources")
+		local p = ns.Window.Panel("sources")
+		local rows = U.rows(p.groups)
+		T.eq(#rows, 1, "the fixture has one dungeon"); T.ok(U.texts(rows[1]):find("The Deadmines", 1, true))
+		T.ok(U.texts(rows[1]):find("levels 16%-21"), U.texts(rows[1]))
+		T.ok(rows[1].d.selected, "the first place is chosen")
+		ns.TabSources.view.kind = "quest"; ns.TabSources.view.group = nil; ns.Window.Refresh()
+		rows = U.rows(p.groups)
+		T.ok(U.texts(rows[1]):find("Westfall", 1, true)); T.ok(U.texts(rows[1]):find("%d+ quests?"))
+		U.button(p, "BoE / World " .. #ns.Window.state.groups.world):Click()
+		rows = U.rows(p.groups)
+		T.eq(#rows, 1); T.ok(U.texts(rows[1]):find("no place", 1, true))
+		fx.done()
+	end,
 }
