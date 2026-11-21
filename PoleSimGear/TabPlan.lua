@@ -68,7 +68,6 @@ local function fill(row, e)
 	row.curScore:SetText(w and format("%.1f", w.score) or "")
 	local r = planRow(e)
 	local entry = e.entry or {}
-	row.plan.name:SetAlpha(1)
 	if r then
 		local sub
 		if entry.isPick then
@@ -94,7 +93,7 @@ local function fill(row, e)
 	elseif e.missing or entry.missing then
 		local m = e.missing or entry.missing
 		row.plan:Set(ns.View.Inst(m.id, m.bonus), S.Colour(C.orange) .. (e.why or "") .. "|r")
-		row.plan.name:SetAlpha(0.5)
+		row.plan:SetDim(true)
 		row.delta:SetText(""); row.pct:SetText(""); row.srcIcon:Hide(); row.kind:SetText("")
 		row.star:Show()
 		row.star:Set(ns.Wishlist.Has(ns.View.Inst(m.id, m.bonus)))

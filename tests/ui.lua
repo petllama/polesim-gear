@@ -55,6 +55,9 @@ function M:SetColorTexture(r, g, b, a) self.color = { r, g, b, a } end
 function M:SetVertexColor(r, g, b, a) self.vertex = { r, g, b, a } end
 function M:SetTextColor(r, g, b) self.textColor = { r, g, b } end
 function M:SetTexCoord(...) self.texCoord = { ... } end
+function M:SetDesaturated(v) self.desaturated = v and true or false end
+function M:CreateMaskTexture(name) return new("MaskTexture", self, name) end
+function M:AddMaskTexture(m) self.mask = m end
 function M:SetPoint(...) self.points[#self.points + 1] = { ... } end
 function M:GetPoint(i) local p = self.points[i or 1] if p then return unpack(p) end end
 function M:ClearAllPoints() self.points = {} end

@@ -150,4 +150,33 @@ return {
 		for _, r in ipairs(rows) do T.eq(r.e, nil, "released on close") end
 		fx.done()
 	end,
+	row_reused_across_modes = function()
+		local fx = F.load({ char = { plan = { shadow = { neck = "424242:0" } }, wish = { ["424242:0"] = true } } })
+		local ns, U = fx.ns, fx.U
+		local f = fx.open()
+		local box = ns.Window.Panel("plan").list
+		local row = U.new("Button", box) -- one pooled row given every kind of entry in turn
+		local function last() local es = box.provided return es[#es] end
+		box.view.init(row, last()) -- the greyed missing pick (Upgrades only)
+		T.eq(row.plan.name.alpha, 0.5); T.eq(row.plan.icon.desaturated, true); T.eq(row.plan.iconFrame.alpha, 0.5)
+		box.view.init(row, box.provided[1]) -- an upgrade
+		T.eq(row.plan.name.alpha, 1); T.eq(row.plan.icon.desaturated, false); T.eq(row.badge.shown, true)
+		U.button(f, "Wishlist"):Click()
+		box.view.init(row, box.provided[1]) -- the missing wish
+		T.eq(row.plan.icon.alpha, 0.5)
+		ns.Wishlist.Toggle({ id = 424242, bonus = 0 })
+		box.view.init(row, box.provided[1]) -- the empty wishlist message
+		T.ok(row.e.empty); T.eq(row.plan.name.alpha, 1); T.eq(row.plan.icon.shown, false); T.eq(row.plan.iconFrame.shown, false)
+		T.eq(row.cur.icon.shown, false); T.eq(row.star.shown, false); T.eq(row.choose.shown, false)
+		for _, k in ipairs(ns.Browser.KINDS) do ns.Options.View().filters[k] = false end
+		U.button(f, "All gear"):Click()
+		local plain
+		for _, e in ipairs(box.provided) do if not e.entry.plan and not e.entry.missing then plain = e end end
+		T.ok(box.provided[1].entry.missing, "the missing pick first: no upgrades at all")
+		box.view.init(row, box.provided[1]) -- the missing pick again
+		T.eq(row.plan.icon.alpha, 0.5)
+		box.view.init(row, plain) -- a slot with nothing better
+		T.eq(row.plan.name.alpha, 1); T.eq(row.plan.icon.shown, false); T.ok(row.plan.sub.text:find("nothing better", 1, true))
+		fx.done()
+	end,
 }

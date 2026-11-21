@@ -249,17 +249,28 @@ function Style.ItemCell(parent, iconSize, nameW)
 	c.sub = Style.Text(c, 10, C.label)
 	c.sub:SetPoint("TOPLEFT", iconSize + 4, -14)
 	c.sub:SetWidth(nameW)
+	-- faded and grey (a pick not available now); every Set undims
+	function c:SetDim(on)
+		local a = on and 0.5 or 1
+		self.name:SetAlpha(a)
+		self.icon:SetAlpha(a)
+		self.iconFrame:SetAlpha(a)
+		self.icon:SetDesaturated(on and true or false)
+	end
 	function c:Set(inst, sub, subColour)
+		self:SetDim(false)
 		if not inst then
 			self.icon:Hide()
+			self.iconFrame:Hide()
 			self.name:SetText("")
 			self.sub:SetText(sub or "")
 			return
 		end
 		self.icon:Show()
+		self.iconFrame:Show()
 		self.icon:SetTexture(inst.icon and ("Interface\\Icons\\" .. inst.icon) or "Interface\\Icons\\INV_Misc_QuestionMark")
 		local q = ITEM_QUALITY_COLORS and ITEM_QUALITY_COLORS[inst.quality or 1]
-		if q and q.r then Style.SetBorder(self.frame, { q.r, q.g, q.b }) end
+		Style.SetBorder(self.frame, q and q.r and { q.r, q.g, q.b } or C.cardBorder)
 		self.name:SetText(Style.ItemText(inst))
 		local s = subColour or C.label
 		self.sub:SetTextColor(s[1], s[2], s[3])

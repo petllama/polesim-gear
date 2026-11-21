@@ -37,7 +37,13 @@ return {
 		local cell = S.ItemCell(parent, 22, 100)
 		cell:Set({ name = "Robe", quality = 3, icon = "inv_chest_cloth_01" }, "Your pick")
 		T.eq(cell.name.text, "|cff0070ddRobe|r"); T.ok(cell.icon.texture:find("inv_chest_cloth_01", 1, true)); T.eq(cell.sub.text, "Your pick")
-		cell:Set(nil); T.eq(cell.name.text, ""); T.eq(cell.icon.shown, false)
+		cell:Set(nil); T.eq(cell.name.text, ""); T.eq(cell.icon.shown, false); T.eq(cell.iconFrame.shown, false, "no quality border")
+		-- dimmed (a pick not available): name, icon and border faded, icon grey; the next Set undims
+		cell:Set({ name = "Robe", quality = 3 }, "x"); T.eq(cell.iconFrame.shown, true)
+		cell:SetDim(true)
+		T.eq(cell.name.alpha, 0.5); T.eq(cell.icon.alpha, 0.5); T.eq(cell.iconFrame.alpha, 0.5); T.eq(cell.icon.desaturated, true)
+		cell:Set({ name = "Robe", quality = 3 }, "x")
+		T.eq(cell.name.alpha, 1); T.eq(cell.icon.alpha, 1); T.eq(cell.iconFrame.alpha, 1); T.eq(cell.icon.desaturated, false)
 		local picked
 		local dd = S.Dropdown(parent, 146, 24, function() return { { text = "Now", value = 0 }, { text = "+1", value = 1 } } end,
 			function(v) return v == 0 end, function(v) picked = v end)
