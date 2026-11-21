@@ -126,6 +126,23 @@ return {
 		T.ok(provided[#provided].header ~= "Scoring every upgrade...", provided[#provided].header)
 		_G.Polestar = nil
 	end,
+	-- Closing the window forgets the route map too (Route.Reset): reopening reads the active guide again.
+	close_resets_the_route = function()
+		local provided
+		local win = window(function(dp) provided = dp end)
+		local ns, W = win.ns, win.W
+		local reads = 0
+		_G.Polestar.Engine = { GetGuide = function() reads = reads + 1 return { steps = {} } end }
+		local function settle() local n = 0 while #W.timers > 0 and n < 10000 do W.flush() n = n + 1 end end
+		SlashCmdList.POLESIMGEAR("")
+		settle()
+		T.eq(reads, 1)
+		SlashCmdList.POLESIMGEAR("") -- close
+		SlashCmdList.POLESIMGEAR("")
+		settle()
+		T.eq(reads, 2, "read again after closing")
+		_G.Polestar = nil
+	end,
 	-- The window opens,
 	-- builds over frames, lists rows, drills into a slot, closes and lets go of the model and the index.
 	window_smoke = function()

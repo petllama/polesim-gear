@@ -190,12 +190,14 @@ local function dropAll()
 	state.all, state.allBuilding = nil, nil
 end
 
--- Closing the window lets go of what the build used: the model, the item index; reopening builds again.
+-- Closing the window lets go of what the build used: the model, the item index, the route map;
+-- reopening builds again.
 local function release()
 	if state.building then state.building:Cancel() end
 	dropAll()
 	state.building, state.model, state.stale = nil, nil, true
 	ns.Items.ReleaseIndex()
+	ns.Route.Reset()
 end
 
 local function create()
