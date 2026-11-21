@@ -39,6 +39,7 @@ return {
 		local cell = S.ItemCell(parent, 22, 100)
 		cell:Set({ name = "Robe", quality = 3, icon = "inv_chest_cloth_01" }, "Your pick")
 		T.eq(cell.name.text, "|cff0070ddRobe|r"); T.ok(cell.icon.texture:find("inv_chest_cloth_01", 1, true)); T.eq(cell.sub.text, "Your pick")
+		cell:Set({ name = "Worn", quality = 2, icon = 132656 }); T.eq(cell.icon.texture, 132656, "a client fileID as is")
 		cell:Set(nil); T.eq(cell.name.text, ""); T.eq(cell.icon.shown, false); T.eq(cell.iconFrame.shown, false, "no quality border")
 		-- dimmed (a pick not available): name, icon and border faded, icon grey; the next Set undims
 		cell:Set({ name = "Robe", quality = 3 }, "x"); T.eq(cell.iconFrame.shown, true)

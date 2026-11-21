@@ -105,6 +105,21 @@ return {
 		T.eq(ns.Options.View().tab, "slot"); T.eq(ns.Window.state.slot, rows[1].e.def.key)
 		fx.done()
 	end,
+	-- A worn item from the client (Live.Instance) shows its link name and icon in "Current item".
+	worn_from_client_named = function()
+		local worn = {}
+		local fx = F.load({ worn = worn })
+		local ns = fx.ns
+		local inst = ns.Live.Instance("|cff1eff00|Hitem:999999::::::::20::::::::|h[Odd Robe of the Eagle]|h|r",
+			{ Info = function() return "INVTYPE_ROBE", 10, 4, 1, 2, 132656 end, Stats = function() return { ITEM_MOD_STAMINA_SHORT = 1 } end })
+		worn[5] = { inst = inst, score = 0.5 }
+		fx.open()
+		local row
+		for _, r in ipairs(rowsOf(fx)) do if r.e.def.key == "chest" then row = r end end
+		T.ok(row.cur.name.text:find("Odd Robe of the Eagle", 1, true), row.cur.name.text)
+		T.eq(row.cur.icon.texture, 132656)
+		fx.done()
+	end,
 	missing_pick_greyed_last = function()
 		local fx = F.load({ char = { plan = { shadow = { neck = "424242:0" } } } })
 		local ns = fx.ns

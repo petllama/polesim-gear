@@ -70,6 +70,12 @@ function Style.ItemText(inst)
 	local q = ITEM_QUALITY_COLORS and ITEM_QUALITY_COLORS[inst.quality or 1]
 	return (q and q.hex or "|cffffffff") .. (inst.name or "?") .. "|r"
 end
+-- an item's icon: a client fileID as is, a shipped file name under Interface\Icons, else the question mark
+function Style.IconPath(icon)
+	if type(icon) == "number" then return icon end
+	if type(icon) == "string" and icon ~= "" then return "Interface\\Icons\\" .. icon end
+	return "Interface\\Icons\\INV_Misc_QuestionMark"
+end
 function Style.Title(s) return ((s or ""):gsub("^%l", string.upper)) end
 
 -- widgets -------------------------------------------------------------------------------------------
@@ -300,7 +306,7 @@ function Style.ItemCell(parent, iconSize, nameW)
 		end
 		self.icon:Show()
 		self.iconFrame:Show()
-		self.icon:SetTexture(inst.icon and ("Interface\\Icons\\" .. inst.icon) or "Interface\\Icons\\INV_Misc_QuestionMark")
+		self.icon:SetTexture(Style.IconPath(inst.icon))
 		local q = ITEM_QUALITY_COLORS and ITEM_QUALITY_COLORS[inst.quality or 1]
 		Style.SetBorder(self.frame, q and q.r and { q.r, q.g, q.b } or C.cardBorder)
 		self.name:SetText(Style.ItemText(inst))

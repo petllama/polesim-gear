@@ -107,11 +107,11 @@ function Live.Bonus(link, rec)
 end
 
 Live.Client = {
-	-- -> equipLoc, minLevel, classID, subclassID, quality (nil: not cached yet)
+	-- -> equipLoc, minLevel, classID, subclassID, quality, icon (fileID), name (nil: not cached yet)
 	Info = function(link)
 		if not (C_Item and C_Item.GetItemInfo) then return nil end
-		local ok, name, _, quality, _, minLevel, _, _, _, equipLoc, _, _, classID, subclassID = pcall(C_Item.GetItemInfo, link)
-		if ok and name and not secret(equipLoc) then return equipLoc, minLevel, classID, subclassID, quality end
+		local ok, name, _, quality, _, minLevel, _, _, _, equipLoc, icon, _, classID, subclassID = pcall(C_Item.GetItemInfo, link)
+		if ok and name and not secret(equipLoc) then return equipLoc, minLevel, classID, subclassID, quality, icon, name end
 		return nil
 	end,
 	Stats = function(link)
@@ -122,13 +122,37 @@ Live.Client = {
 	end,
 }
 
+-- The shown name: the link's text (with its random suffix, "of the Owl"), else the client's, else the
+-- shipped table's.
+function Live.Name(link, clientName, rec)
+	local t = type(link) == "string" and link:match("|h%[(.-)%]|h")
+	if t and t ~= "" then return t end
+	if type(clientName) ~= "string" and C_Item and C_Item.GetItemInfo then
+		local ok, n = pcall(C_Item.GetItemInfo, link)
+		clientName = ok and n or nil
+	end
+	if type(clientName) == "string" and not secret(clientName) then return clientName end
+	return rec and rec.name or nil
+end
+-- The icon: the shipped one (an Interface\Icons file name), else the client's fileID (Info's, else
+-- C_Item.GetItemIconByID).
+function Live.Icon(id, rec, clientIcon)
+	if rec and rec.icon then return rec.icon end
+	if clientIcon and not secret(clientIcon) then return clientIcon end
+	if C_Item and C_Item.GetItemIconByID then
+		local ok, icon = pcall(C_Item.GetItemIconByID, id)
+		if ok and icon and not secret(icon) then return icon end
+	end
+	return nil
+end
+
 -- link -> instance | nil, "pending" (the client has not got the item yet). inst.fromTable: the client
 -- knew the item but gave no stats, so the stats are the shipped table's (not to be cached).
 function Live.Instance(link, client)
 	client = client or Live.Client
 	local id = type(link) == "string" and tonumber(link:match("item:(%d+)"))
 	if not id then return nil end
-	local equipLoc, minLevel, classID, subclassID, quality = client.Info(link)
+	local equipLoc, minLevel, classID, subclassID, quality, icon, cname = client.Info(link)
 	if not equipLoc then return nil, "pending" end
 	local inv = Live.EQUIP_LOC[equipLoc]
 	if not inv then return nil end
@@ -146,7 +170,7 @@ function Live.Instance(link, client)
 		fromTable = true -- callers do not keep it: the client's stats may come on the next read
 	end
 	return {
-		id = id, link = link, bonus = bonus, inv = inv, rl = minLevel or (rec and rec.rl) or 0, c = classID or (rec and rec.c),
+		id = id, link = link, bonus = bonus, name = Live.Name(link, cname, rec), icon = Live.Icon(id, rec, icon), inv = inv, rl = minLevel or (rec and rec.rl) or 0, c = classID or (rec and rec.c),
 		sc = subclassID or (rec and rec.sc), cm = rec and rec.cm or 0, unique = rec and rec.u or false,
 		quality = quality, stats = stats, armor = armor, dps = dps, weapon = dps > 0, filled = filled,
 		fromTable = fromTable,

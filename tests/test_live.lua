@@ -119,4 +119,36 @@ return {
 			{ Info = client.Info, Stats = function() return { ITEM_MOD_INTELLECT_SHORT = 3 } end })
 		T.eq(live.fromTable, nil, "client stats: not tagged")
 	end,
+	-- A worn item shows its name and icon (the Gear Plan's "Current item" showed "?" and the question
+	-- mark): the name is the link's text (random suffix kept), the icon the shipped one, else the
+	-- client's (a fileID: C_Item.GetItemInfo's itemTexture, else C_Item.GetItemIconByID).
+	instance_name_and_icon = function()
+		local ns = T.addon(FILES)
+		local client = {
+			Info = function() return "INVTYPE_LEGS", 14, 4, 1, 2, 135000 end,
+			Stats = function() return { ITEM_MOD_INTELLECT_SHORT = 3 } end,
+		}
+		local i = ns.Live.Instance("|cff1eff00|Hitem:6540::::::::18::::1:12720::::|h[Willow Pants of the Owl]|h|r", client)
+		T.eq(i.name, "Willow Pants of the Owl", "the link's text, suffix kept")
+		T.eq(i.icon, ns.Items.Get(6540).icon, "the shipped icon")
+		T.eq(i.quality, 2)
+		-- not in the shipped table: the client's icon (fileID)
+		local u = ns.Live.Instance("|cff1eff00|Hitem:999999::::::::18::::::::|h[Odd Robe of the Eagle]|h|r",
+			{ Info = function() return "INVTYPE_ROBE", 10, 4, 1, 2, 132656 end, Stats = client.Stats })
+		T.eq(u.name, "Odd Robe of the Eagle"); T.eq(u.icon, 132656)
+		-- no texture from Info: C_Item.GetItemIconByID; a bare item string: the client's name
+		_G.C_Item = { GetItemIconByID = function(id) return id == 999999 and 132657 or nil end,
+			GetItemInfo = function() return "Odd Robe" end }
+		local b = ns.Live.Instance("item:999999", { Info = function() return "INVTYPE_ROBE", 10, 4, 1, 2 end, Stats = client.Stats })
+		T.eq(b.icon, 132657); T.eq(b.name, "Odd Robe")
+		_G.C_Item = nil
+	end,
+	-- The client reader returns the texture too (C_Item.GetItemInfo's 10th return, itemTexture).
+	client_info_returns_texture = function()
+		local ns = T.addon(FILES)
+		_G.C_Item = { GetItemInfo = function() return "Odd Robe", "link", 3, 20, 15, "Armor", "Cloth", 1, "INVTYPE_ROBE", 132656, 100, 4, 1 end }
+		local loc, rl, c, sc, q, icon = ns.Live.Client.Info("item:999999")
+		T.eq(loc, "INVTYPE_ROBE"); T.eq(rl, 15); T.eq(c, 4); T.eq(sc, 1); T.eq(q, 3); T.eq(icon, 132656)
+		_G.C_Item = nil
+	end,
 }
