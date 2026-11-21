@@ -1,4 +1,4 @@
-# In-game checklist (one session, on a priest; section M on a mage) — PoleSim Gear 0.3.1
+# In-game checklist (one session, on a priest; section M on a mage) — PoleSim Gear 0.3.2
 
 **0.3.3 over 0.3.2** (no new files: `tools/install.sh` then `/reload` is enough): a quest reward that one
 of your open Polestar guides turns in **ahead of you** says how far: "in 12 steps" (active guide),
@@ -6,6 +6,13 @@ of your open Polestar guides turns in **ahead of you** says how far: "in 12 step
 off to), in blue on Slot Upgrades and Gear Plan rows and on the Sources tab's quest headers; the row
 tooltip says "On your Polestar route: <guide>, step 87 (12 steps ahead)"; the game's item tooltip gets
 "Polestar: in 12 steps (<quest>)". Passed or turned-in quests show nothing. Check: K22.
+
+**0.3.2 over 0.3.1** (data only, no new files: `tools/install.sh` then `/reload` is enough): caster
+weapons (210 caster staves, maces and daggers) carry the spell power the game gives them in the window
+and on the website, not only in the live tooltip. Living Root shows "healing 45, spell damage 15" (23.2
+for Shadow at 20, the same as its tooltip score) and is listed in Slot Upgrades > Main hand; caster
+weapons' damage matches the game (Living Root 34-51). Check: Slot Upgrades > Main hand at 18-24 on a
+priest, hover Living Root: window score = tooltip score.
 
 **0.3.1 over 0.3.0:** clicking an icon in the equipped strip opens Slot Upgrades on that slot (both rings: Rings;
 both trinkets: Trinkets); the slot's tooltip ends with "Click: this slot's upgrades". `/reload` is enough.

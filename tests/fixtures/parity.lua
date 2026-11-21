@@ -6,7 +6,7 @@ R	priest/shadow	12	1156	0	gear	2.2800000000000002	int:6:int:0.38:2.28
 R	priest/shadow	12	1764	0	gear	1.349	armor:19:armor:0.071:1.349
 R	priest/shadow	12	2158	0	gear	1.7039999999999997	armor:24:armor:0.071:1.704
 R	priest/shadow	12	2612	0	gear	1.065	armor:15:armor:0.071:1.065
-R	priest/shadow	12	3227	0	mh	0.0	
+R	priest/shadow	12	3227	0	mh	19.8	sp:18:sp:1.1:19.8
 R	priest/shadow	12	3593	0	gear	1.8459999999999999	armor:26:armor:0.071:1.846
 R	priest/shadow	12	4041	0	gear	9.482	sta:10:sta:0.27:2.7,int:10:int:0.38:3.8,armor:42:armor:0.071:2.982
 R	priest/shadow	12	4668	0	gear	0.568	armor:8:armor:0.071:0.568
@@ -71,7 +71,7 @@ R	priest/shadow	12	7426	12753	gear	1.08	sta:4:sta:0.27:1.08
 R	priest/shadow	12	7426	12754	gear	3.2800000000000002	sp:2:sp:1.1:2.2,sta:4:sta:0.27:1.08
 R	priest/shadow	12	7426	12755	gear	3.2800000000000002	sp:2:sp:1.1:2.2,sta:4:sta:0.27:1.08
 R	priest/shadow	12	7888	0	gear	16.28	int:1:int:0.38:0.38,sp:12:sp:1.1:13.2,sta:10:sta:0.27:2.7
-R	priest/shadow	12	9452	0	mh	0.0	
+R	priest/shadow	12	9452	0	mh	39.6	sp:36:sp:1.1:39.6
 R	priest/shadow	12	9822	0	gear	1.4909999999999999	armor:21:armor:0.071:1.491
 R	priest/shadow	12	9822	12718	gear	4.091	int:4:int:0.38:1.52,sta:4:sta:0.27:1.08,armor:21:armor:0.071:1.491
 R	priest/shadow	12	9822	12719	gear	4.531	spi:4:spi:0.49:1.96,sta:4:sta:0.27:1.08,armor:21:armor:0.071:1.491
@@ -275,7 +275,7 @@ R	priest/shadow	12	271207	0	gear	3.835	sta:5:sta:0.27:1.35,armor:35:armor:0.071:
 R	priest/shadow	12	272091	0	mh	3.5100000000000002	sta:13:sta:0.27:3.51
 R	priest/shadow	12	272812	0	gear	22.253	int:12:int:0.38:4.56,sta:19:sta:0.27:5.13,sp:8:sp:1.1:8.8,armor:53:armor:0.071:3.763
 R	priest/shadow	12	273926	0	gear	31.67	sta:15:sta:0.27:4.05,int:11:int:0.38:4.18,spi:13:spi:0.49:6.37,spDmg:11:sp:1.1:12.1,armor:70:armor:0.071:4.97
-R	priest/shadow	12	275648	0	mh	10.23	crit:1:spellCrit:0.92:0.92,spi:19:spi:0.49:9.31
+R	priest/shadow	12	275648	0	mh	67.43	crit:1:spellCrit:0.92:0.92,spi:19:spi:0.49:9.31,sp:52:sp:1.1:57.2
 R	priest/shadow	12	277102	0	gear	1.5619999999999998	armor:22:armor:0.071:1.562
 R	priest/shadow	12	279891	0	gear	3.707	sta:4:sta:0.27:1.08,armor:37:armor:0.071:2.627
 R	priest/shadow	12	281689	0	gear	0.142	armor:2:armor:0.071:0.142
@@ -305,7 +305,7 @@ R	priest/shadow	25	1156	0	gear	3.84	int:6:int:0.64:3.84
 R	priest/shadow	25	1764	0	gear	1.045	armor:19:armor:0.055:1.045
 R	priest/shadow	25	2158	0	gear	1.32	armor:24:armor:0.055:1.32
 R	priest/shadow	25	2612	0	gear	0.825	armor:15:armor:0.055:0.825
-R	priest/shadow	25	3227	0	mh	0.0	
+R	priest/shadow	25	3227	0	mh	21.599999999999998	sp:18:sp:1.2:21.6
 R	priest/shadow	25	3593	0	gear	1.43	armor:26:armor:0.055:1.43
 R	priest/shadow	25	4041	0	gear	18.31	sta:10:sta:0.96:9.6,int:10:int:0.64:6.4,armor:42:armor:0.055:2.31
 R	priest/shadow	25	4668	0	gear	0.44	armor:8:armor:0.055:0.44
@@ -370,7 +370,7 @@ R	priest/shadow	25	7426	12753	gear	3.84	sta:4:sta:0.96:3.84
 R	priest/shadow	25	7426	12754	gear	6.24	sp:2:sp:1.2:2.4,sta:4:sta:0.96:3.84
 R	priest/shadow	25	7426	12755	gear	6.24	sp:2:sp:1.2:2.4,sta:4:sta:0.96:3.84
 R	priest/shadow	25	7888	0	gear	24.64	int:1:int:0.64:0.64,sp:12:sp:1.2:14.4,sta:10:sta:0.96:9.6
-R	priest/shadow	25	9452	0	mh	0.0	
+R	priest/shadow	25	9452	0	mh	43.199999999999996	sp:36:sp:1.2:43.2
 R	priest/shadow	25	9822	0	gear	1.155	armor:21:armor:0.055:1.155
 R	priest/shadow	25	9822	12718	gear	7.555000000000001	int:4:int:0.64:2.56,sta:4:sta:0.96:3.84,armor:21:armor:0.055:1.155
 R	priest/shadow	25	9822	12719	gear	7.595	spi:4:spi:0.65:2.6,sta:4:sta:0.96:3.84,armor:21:armor:0.055:1.155
@@ -574,7 +574,7 @@ R	priest/shadow	25	271207	0	gear	9.005	mp5:4:mp5:0.57:2.28,sta:5:sta:0.96:4.8,ar
 R	priest/shadow	25	272091	0	mh	12.48	sta:13:sta:0.96:12.48
 R	priest/shadow	25	272812	0	gear	38.434999999999995	int:12:int:0.64:7.68,sta:19:sta:0.96:18.24,sp:8:sp:1.2:9.6,armor:53:armor:0.055:2.915
 R	priest/shadow	25	273926	0	gear	46.940000000000005	sta:15:sta:0.96:14.4,int:11:int:0.64:7.04,spi:13:spi:0.65:8.45,spDmg:11:sp:1.2:13.2,armor:70:armor:0.055:3.85
-R	priest/shadow	25	275648	0	mh	13.95	crit:1:spellCrit:1.6:1.6,spi:19:spi:0.65:12.35
+R	priest/shadow	25	275648	0	mh	76.35	crit:1:spellCrit:1.6:1.6,spi:19:spi:0.65:12.35,sp:52:sp:1.2:62.4
 R	priest/shadow	25	277102	0	gear	1.21	armor:22:armor:0.055:1.21
 R	priest/shadow	25	279891	0	gear	5.875	sta:4:sta:0.96:3.84,armor:37:armor:0.055:2.035
 R	priest/shadow	25	281689	0	gear	0.11	armor:2:armor:0.055:0.11
@@ -604,7 +604,7 @@ R	priest/shadow	34	1156	0	gear	3.7199999999999998	int:6:int:0.62:3.72
 R	priest/shadow	34	1764	0	gear	0.798	armor:19:armor:0.042:0.798
 R	priest/shadow	34	2158	0	gear	1.008	armor:24:armor:0.042:1.008
 R	priest/shadow	34	2612	0	gear	0.63	armor:15:armor:0.042:0.63
-R	priest/shadow	34	3227	0	mh	0.0	
+R	priest/shadow	34	3227	0	mh	19.8	sp:18:sp:1.1:19.8
 R	priest/shadow	34	3593	0	gear	1.092	armor:26:armor:0.042:1.092
 R	priest/shadow	34	4041	0	gear	15.364	sta:10:sta:0.74:7.4,int:10:int:0.62:6.2,armor:42:armor:0.042:1.764
 R	priest/shadow	34	4668	0	gear	0.336	armor:8:armor:0.042:0.336
@@ -669,7 +669,7 @@ R	priest/shadow	34	7426	12753	gear	2.96	sta:4:sta:0.74:2.96
 R	priest/shadow	34	7426	12754	gear	5.16	sp:2:sp:1.1:2.2,sta:4:sta:0.74:2.96
 R	priest/shadow	34	7426	12755	gear	5.16	sp:2:sp:1.1:2.2,sta:4:sta:0.74:2.96
 R	priest/shadow	34	7888	0	gear	21.22	int:1:int:0.62:0.62,sp:12:sp:1.1:13.2,sta:10:sta:0.74:7.4
-R	priest/shadow	34	9452	0	mh	0.0	
+R	priest/shadow	34	9452	0	mh	39.6	sp:36:sp:1.1:39.6
 R	priest/shadow	34	9822	0	gear	0.882	armor:21:armor:0.042:0.882
 R	priest/shadow	34	9822	12718	gear	6.321999999999999	int:4:int:0.62:2.48,sta:4:sta:0.74:2.96,armor:21:armor:0.042:0.882
 R	priest/shadow	34	9822	12719	gear	6.042	spi:4:spi:0.55:2.2,sta:4:sta:0.74:2.96,armor:21:armor:0.042:0.882
@@ -873,7 +873,7 @@ R	priest/shadow	34	271207	0	gear	11.17	mp5:4:mp5:1.5:6,sta:5:sta:0.74:3.7,armor:
 R	priest/shadow	34	272091	0	mh	9.62	sta:13:sta:0.74:9.62
 R	priest/shadow	34	272812	0	gear	32.526	int:12:int:0.62:7.44,sta:19:sta:0.74:14.06,sp:8:sp:1.1:8.8,armor:53:armor:0.042:2.226
 R	priest/shadow	34	273926	0	gear	40.11	sta:15:sta:0.74:11.1,int:11:int:0.62:6.82,spi:13:spi:0.55:7.15,spDmg:11:sp:1.1:12.1,armor:70:armor:0.042:2.94
-R	priest/shadow	34	275648	0	mh	13.450000000000001	crit:1:spellCrit:3:3,spi:19:spi:0.55:10.45
+R	priest/shadow	34	275648	0	mh	70.65	crit:1:spellCrit:3:3,spi:19:spi:0.55:10.45,sp:52:sp:1.1:57.2
 R	priest/shadow	34	277102	0	gear	0.924	armor:22:armor:0.042:0.924
 R	priest/shadow	34	279891	0	gear	4.514	sta:4:sta:0.74:2.96,armor:37:armor:0.042:1.554
 R	priest/shadow	34	281689	0	gear	0.084	armor:2:armor:0.042:0.084
@@ -903,7 +903,7 @@ R	priest/shadow	45	1156	0	gear	4.68	int:6:int:0.78:4.68
 R	priest/shadow	45	1764	0	gear	0.456	armor:19:armor:0.024:0.456
 R	priest/shadow	45	2158	0	gear	0.5760000000000001	armor:24:armor:0.024:0.576
 R	priest/shadow	45	2612	0	gear	0.36	armor:15:armor:0.024:0.36
-R	priest/shadow	45	3227	0	mh	0.0	
+R	priest/shadow	45	3227	0	mh	18.0	sp:18:sp:1:18
 R	priest/shadow	45	3593	0	gear	0.624	armor:26:armor:0.024:0.624
 R	priest/shadow	45	4041	0	gear	10.408000000000001	sta:10:sta:0.16:1.6,int:10:int:0.78:7.8,armor:42:armor:0.024:1.008
 R	priest/shadow	45	4668	0	gear	0.192	armor:8:armor:0.024:0.192
@@ -968,7 +968,7 @@ R	priest/shadow	45	7426	12753	gear	0.64	sta:4:sta:0.16:0.64
 R	priest/shadow	45	7426	12754	gear	2.64	sp:2:sp:1:2,sta:4:sta:0.16:0.64
 R	priest/shadow	45	7426	12755	gear	2.64	sp:2:sp:1:2,sta:4:sta:0.16:0.64
 R	priest/shadow	45	7888	0	gear	14.379999999999999	int:1:int:0.78:0.78,sp:12:sp:1:12,sta:10:sta:0.16:1.6
-R	priest/shadow	45	9452	0	mh	0.0	
+R	priest/shadow	45	9452	0	mh	36.0	sp:36:sp:1:36
 R	priest/shadow	45	9822	0	gear	0.504	armor:21:armor:0.024:0.504
 R	priest/shadow	45	9822	12718	gear	4.264	int:4:int:0.78:3.12,sta:4:sta:0.16:0.64,armor:21:armor:0.024:0.504
 R	priest/shadow	45	9822	12719	gear	3.544	spi:4:spi:0.6:2.4,sta:4:sta:0.16:0.64,armor:21:armor:0.024:0.504
@@ -1172,7 +1172,7 @@ R	priest/shadow	45	271207	0	gear	4.28	mp5:4:mp5:0.66:2.64,sta:5:sta:0.16:0.8,arm
 R	priest/shadow	45	272091	0	mh	2.08	sta:13:sta:0.16:2.08
 R	priest/shadow	45	272812	0	gear	21.671999999999997	int:12:int:0.78:9.36,sta:19:sta:0.16:3.04,sp:8:sp:1:8,armor:53:armor:0.024:1.272
 R	priest/shadow	45	273926	0	gear	31.46	sta:15:sta:0.16:2.4,int:11:int:0.78:8.58,spi:13:spi:0.6:7.8,spDmg:11:sp:1:11,armor:70:armor:0.024:1.68
-R	priest/shadow	45	275648	0	mh	15.5	crit:1:spellCrit:4.1:4.1,spi:19:spi:0.6:11.4
+R	priest/shadow	45	275648	0	mh	67.5	crit:1:spellCrit:4.1:4.1,spi:19:spi:0.6:11.4,sp:52:sp:1:52
 R	priest/shadow	45	277102	0	gear	0.528	armor:22:armor:0.024:0.528
 R	priest/shadow	45	279891	0	gear	1.528	sta:4:sta:0.16:0.64,armor:37:armor:0.024:0.888
 R	priest/shadow	45	281689	0	gear	0.048	armor:2:armor:0.024:0.048
@@ -1202,7 +1202,7 @@ R	priest/shadow	55	1156	0	gear	3.3000000000000003	int:6:int:0.55:3.3
 R	priest/shadow	55	1764	0	gear	0.1615	armor:19:armor:0.0085:0.162
 R	priest/shadow	55	2158	0	gear	0.20400000000000001	armor:24:armor:0.0085:0.204
 R	priest/shadow	55	2612	0	gear	0.1275	armor:15:armor:0.0085:0.128
-R	priest/shadow	55	3227	0	mh	0.0	
+R	priest/shadow	55	3227	0	mh	18.0	sp:18:sp:1:18
 R	priest/shadow	55	3593	0	gear	0.22100000000000003	armor:26:armor:0.0085:0.221
 R	priest/shadow	55	4041	0	gear	6.957	sta:10:sta:0.11:1.1,int:10:int:0.55:5.5,armor:42:armor:0.0085:0.357
 R	priest/shadow	55	4668	0	gear	0.068	armor:8:armor:0.0085:0.068
@@ -1267,7 +1267,7 @@ R	priest/shadow	55	7426	12753	gear	0.44	sta:4:sta:0.11:0.44
 R	priest/shadow	55	7426	12754	gear	2.44	sp:2:sp:1:2,sta:4:sta:0.11:0.44
 R	priest/shadow	55	7426	12755	gear	2.44	sp:2:sp:1:2,sta:4:sta:0.11:0.44
 R	priest/shadow	55	7888	0	gear	13.65	int:1:int:0.55:0.55,sp:12:sp:1:12,sta:10:sta:0.11:1.1
-R	priest/shadow	55	9452	0	mh	0.0	
+R	priest/shadow	55	9452	0	mh	36.0	sp:36:sp:1:36
 R	priest/shadow	55	9822	0	gear	0.17850000000000002	armor:21:armor:0.0085:0.179
 R	priest/shadow	55	9822	12718	gear	2.8185000000000002	int:4:int:0.55:2.2,sta:4:sta:0.11:0.44,armor:21:armor:0.0085:0.179
 R	priest/shadow	55	9822	12719	gear	3.2585	spi:4:spi:0.66:2.64,sta:4:sta:0.11:0.44,armor:21:armor:0.0085:0.179
@@ -1471,7 +1471,7 @@ R	priest/shadow	55	271207	0	gear	4.2475000000000005	mp5:4:mp5:0.85:3.4,sta:5:sta
 R	priest/shadow	55	272091	0	mh	1.43	sta:13:sta:0.11:1.43
 R	priest/shadow	55	272812	0	gear	17.140500000000003	int:12:int:0.55:6.6,sta:19:sta:0.11:2.09,sp:8:sp:1:8,armor:53:armor:0.0085:0.451
 R	priest/shadow	55	273926	0	gear	27.875	sta:15:sta:0.11:1.65,int:11:int:0.55:6.05,spi:13:spi:0.66:8.58,spDmg:11:sp:1:11,armor:70:armor:0.0085:0.595
-R	priest/shadow	55	275648	0	mh	18.240000000000002	crit:1:spellCrit:5.7:5.7,spi:19:spi:0.66:12.54
+R	priest/shadow	55	275648	0	mh	70.24000000000001	crit:1:spellCrit:5.7:5.7,spi:19:spi:0.66:12.54,sp:52:sp:1:52
 R	priest/shadow	55	277102	0	gear	0.187	armor:22:armor:0.0085:0.187
 R	priest/shadow	55	279891	0	gear	0.7545	sta:4:sta:0.11:0.44,armor:37:armor:0.0085:0.315
 R	priest/shadow	55	281689	0	gear	0.017	armor:2:armor:0.0085:0.017
@@ -1501,7 +1501,7 @@ R	priest/shadow	60	1156	0	gear	2.4000000000000004	int:6:int:0.4:2.4
 R	priest/shadow	60	1764	0	gear	0.722	armor:19:armor:0.038:0.722
 R	priest/shadow	60	2158	0	gear	0.9119999999999999	armor:24:armor:0.038:0.912
 R	priest/shadow	60	2612	0	gear	0.57	armor:15:armor:0.038:0.57
-R	priest/shadow	60	3227	0	mh	0.0	
+R	priest/shadow	60	3227	0	mh	18.0	sp:18:sp:1:18
 R	priest/shadow	60	3593	0	gear	0.988	armor:26:armor:0.038:0.988
 R	priest/shadow	60	4041	0	gear	8.396	sta:10:sta:0.28:2.8,int:10:int:0.4:4,armor:42:armor:0.038:1.596
 R	priest/shadow	60	4668	0	gear	0.304	armor:8:armor:0.038:0.304
@@ -1566,7 +1566,7 @@ R	priest/shadow	60	7426	12753	gear	1.12	sta:4:sta:0.28:1.12
 R	priest/shadow	60	7426	12754	gear	3.12	sp:2:sp:1:2,sta:4:sta:0.28:1.12
 R	priest/shadow	60	7426	12755	gear	3.12	sp:2:sp:1:2,sta:4:sta:0.28:1.12
 R	priest/shadow	60	7888	0	gear	15.200000000000001	int:1:int:0.4:0.4,sp:12:sp:1:12,sta:10:sta:0.28:2.8
-R	priest/shadow	60	9452	0	mh	0.0	
+R	priest/shadow	60	9452	0	mh	36.0	sp:36:sp:1:36
 R	priest/shadow	60	9822	0	gear	0.7979999999999999	armor:21:armor:0.038:0.798
 R	priest/shadow	60	9822	12718	gear	3.5180000000000002	int:4:int:0.4:1.6,sta:4:sta:0.28:1.12,armor:21:armor:0.038:0.798
 R	priest/shadow	60	9822	12719	gear	5.918	spi:4:spi:1:4,sta:4:sta:0.28:1.12,armor:21:armor:0.038:0.798
@@ -1770,7 +1770,7 @@ R	priest/shadow	60	271207	0	gear	5.25	mp5:4:mp5:0.63:2.52,sta:5:sta:0.28:1.4,arm
 R	priest/shadow	60	272091	0	mh	3.6400000000000006	sta:13:sta:0.28:3.64
 R	priest/shadow	60	272812	0	gear	20.134	int:12:int:0.4:4.8,sta:19:sta:0.28:5.32,sp:8:sp:1:8,armor:53:armor:0.038:2.014
 R	priest/shadow	60	273926	0	gear	35.260000000000005	sta:15:sta:0.28:4.2,int:11:int:0.4:4.4,spi:13:spi:1:13,spDmg:11:sp:1:11,armor:70:armor:0.038:2.66
-R	priest/shadow	60	275648	0	mh	27.0	crit:1:spellCrit:8:8,spi:19:spi:1:19
+R	priest/shadow	60	275648	0	mh	79.0	crit:1:spellCrit:8:8,spi:19:spi:1:19,sp:52:sp:1:52
 R	priest/shadow	60	277102	0	gear	0.836	armor:22:armor:0.038:0.836
 R	priest/shadow	60	279891	0	gear	2.526	sta:4:sta:0.28:1.12,armor:37:armor:0.038:1.406
 R	priest/shadow	60	281689	0	gear	0.076	armor:2:armor:0.038:0.076
@@ -1800,7 +1800,7 @@ R	priest/holy	12	1156	0	gear	2.34	int:6:int:0.39:2.34
 R	priest/holy	12	1764	0	gear	0.798	armor:19:armor:0.042:0.798
 R	priest/holy	12	2158	0	gear	1.008	armor:24:armor:0.042:1.008
 R	priest/holy	12	2612	0	gear	0.63	armor:15:armor:0.042:0.63
-R	priest/holy	12	3227	0	mh	0.0	
+R	priest/holy	12	3227	0	mh	18.0	sp:18:sp:1:18
 R	priest/holy	12	3593	0	gear	1.092	armor:26:armor:0.042:1.092
 R	priest/holy	12	4041	0	gear	13.164	sta:10:sta:0.75:7.5,int:10:int:0.39:3.9,armor:42:armor:0.042:1.764
 R	priest/holy	12	4668	0	gear	0.336	armor:8:armor:0.042:0.336
@@ -1865,7 +1865,7 @@ R	priest/holy	12	7426	12753	gear	3.0	sta:4:sta:0.75:3
 R	priest/holy	12	7426	12754	gear	5.0	sp:2:sp:1:2,sta:4:sta:0.75:3
 R	priest/holy	12	7426	12755	gear	5.0	sp:2:sp:1:2,sta:4:sta:0.75:3
 R	priest/holy	12	7888	0	gear	19.89	int:1:int:0.39:0.39,sp:12:sp:1:12,sta:10:sta:0.75:7.5
-R	priest/holy	12	9452	0	mh	0.0	
+R	priest/holy	12	9452	0	mh	36.0	sp:36:sp:1:36
 R	priest/holy	12	9822	0	gear	0.882	armor:21:armor:0.042:0.882
 R	priest/holy	12	9822	12718	gear	5.442	int:4:int:0.39:1.56,sta:4:sta:0.75:3,armor:21:armor:0.042:0.882
 R	priest/holy	12	9822	12719	gear	4.322	spi:4:spi:0.11:0.44,sta:4:sta:0.75:3,armor:21:armor:0.042:0.882
@@ -2069,7 +2069,7 @@ R	priest/holy	12	271207	0	gear	6.9399999999999995	mp5:4:mp5:0.43:1.72,sta:5:sta:
 R	priest/holy	12	272091	0	mh	9.75	sta:13:sta:0.75:9.75
 R	priest/holy	12	272812	0	gear	29.156	int:12:int:0.39:4.68,sta:19:sta:0.75:14.25,sp:8:sp:1:8,armor:53:armor:0.042:2.226
 R	priest/holy	12	273926	0	gear	30.91	sta:15:sta:0.75:11.25,int:11:int:0.39:4.29,spi:13:spi:0.11:1.43,spDmg:11:sp:1:11,armor:70:armor:0.042:2.94
-R	priest/holy	12	275648	0	mh	2.8499999999999996	crit:1:spellCrit:0.76:0.76,spi:19:spi:0.11:2.09
+R	priest/holy	12	275648	0	mh	54.85	crit:1:spellCrit:0.76:0.76,spi:19:spi:0.11:2.09,sp:52:sp:1:52
 R	priest/holy	12	277102	0	gear	0.924	armor:22:armor:0.042:0.924
 R	priest/holy	12	279891	0	gear	4.554	sta:4:sta:0.75:3,armor:37:armor:0.042:1.554
 R	priest/holy	12	281689	0	gear	0.084	armor:2:armor:0.042:0.084
@@ -2099,7 +2099,7 @@ R	priest/holy	25	1156	0	gear	6.0	int:6:int:1:6
 R	priest/holy	25	1764	0	gear	0.0	
 R	priest/holy	25	2158	0	gear	0.0	
 R	priest/holy	25	2612	0	gear	0.0	
-R	priest/holy	25	3227	0	mh	0.0	
+R	priest/holy	25	3227	0	mh	18.0	sp:18:sp:1:18
 R	priest/holy	25	3593	0	gear	0.0	
 R	priest/holy	25	4041	0	gear	27.0	sta:10:sta:1.7:17,int:10:int:1:10
 R	priest/holy	25	4668	0	gear	0.0	
@@ -2164,7 +2164,7 @@ R	priest/holy	25	7426	12753	gear	6.8	sta:4:sta:1.7:6.8
 R	priest/holy	25	7426	12754	gear	8.8	sp:2:sp:1:2,sta:4:sta:1.7:6.8
 R	priest/holy	25	7426	12755	gear	8.8	sp:2:sp:1:2,sta:4:sta:1.7:6.8
 R	priest/holy	25	7888	0	gear	30.0	int:1:int:1:1,sp:12:sp:1:12,sta:10:sta:1.7:17
-R	priest/holy	25	9452	0	mh	0.0	
+R	priest/holy	25	9452	0	mh	36.0	sp:36:sp:1:36
 R	priest/holy	25	9822	0	gear	0.0	
 R	priest/holy	25	9822	12718	gear	10.8	int:4:int:1:4,sta:4:sta:1.7:6.8
 R	priest/holy	25	9822	12719	gear	9.2	spi:4:spi:0.6:2.4,sta:4:sta:1.7:6.8
@@ -2368,7 +2368,7 @@ R	priest/holy	25	271207	0	gear	12.9	mp5:4:mp5:1.1:4.4,sta:5:sta:1.7:8.5
 R	priest/holy	25	272091	0	mh	22.099999999999998	sta:13:sta:1.7:22.1
 R	priest/holy	25	272812	0	gear	52.3	int:12:int:1:12,sta:19:sta:1.7:32.3,sp:8:sp:1:8
 R	priest/holy	25	273926	0	gear	55.3	sta:15:sta:1.7:25.5,int:11:int:1:11,spi:13:spi:0.6:7.8,spDmg:11:sp:1:11
-R	priest/holy	25	275648	0	mh	13.0	crit:1:spellCrit:1.6:1.6,spi:19:spi:0.6:11.4
+R	priest/holy	25	275648	0	mh	65.0	crit:1:spellCrit:1.6:1.6,spi:19:spi:0.6:11.4,sp:52:sp:1:52
 R	priest/holy	25	277102	0	gear	0.0	
 R	priest/holy	25	279891	0	gear	6.8	sta:4:sta:1.7:6.8
 R	priest/holy	25	281689	0	gear	0.0	
@@ -2398,7 +2398,7 @@ R	priest/holy	34	1156	0	gear	4.86	int:6:int:0.81:4.86
 R	priest/holy	34	1764	0	gear	1.159	armor:19:armor:0.061:1.159
 R	priest/holy	34	2158	0	gear	1.464	armor:24:armor:0.061:1.464
 R	priest/holy	34	2612	0	gear	0.915	armor:15:armor:0.061:0.915
-R	priest/holy	34	3227	0	mh	0.0	
+R	priest/holy	34	3227	0	mh	18.0	sp:18:sp:1:18
 R	priest/holy	34	3593	0	gear	1.5859999999999999	armor:26:armor:0.061:1.586
 R	priest/holy	34	4041	0	gear	22.662000000000003	sta:10:sta:1.2:12,int:10:int:0.81:8.1,armor:42:armor:0.061:2.562
 R	priest/holy	34	4668	0	gear	0.488	armor:8:armor:0.061:0.488
@@ -2463,7 +2463,7 @@ R	priest/holy	34	7426	12753	gear	4.8	sta:4:sta:1.2:4.8
 R	priest/holy	34	7426	12754	gear	6.8	sp:2:sp:1:2,sta:4:sta:1.2:4.8
 R	priest/holy	34	7426	12755	gear	6.8	sp:2:sp:1:2,sta:4:sta:1.2:4.8
 R	priest/holy	34	7888	0	gear	24.810000000000002	int:1:int:0.81:0.81,sp:12:sp:1:12,sta:10:sta:1.2:12
-R	priest/holy	34	9452	0	mh	0.0	
+R	priest/holy	34	9452	0	mh	36.0	sp:36:sp:1:36
 R	priest/holy	34	9822	0	gear	1.281	armor:21:armor:0.061:1.281
 R	priest/holy	34	9822	12718	gear	9.321	int:4:int:0.81:3.24,sta:4:sta:1.2:4.8,armor:21:armor:0.061:1.281
 R	priest/holy	34	9822	12719	gear	9.601	spi:4:spi:0.88:3.52,sta:4:sta:1.2:4.8,armor:21:armor:0.061:1.281
@@ -2667,7 +2667,7 @@ R	priest/holy	34	271207	0	gear	13.334999999999999	mp5:4:mp5:1.3:5.2,sta:5:sta:1.
 R	priest/holy	34	272091	0	mh	15.6	sta:13:sta:1.2:15.6
 R	priest/holy	34	272812	0	gear	43.753	int:12:int:0.81:9.72,sta:19:sta:1.2:22.8,sp:8:sp:1:8,armor:53:armor:0.061:3.233
 R	priest/holy	34	273926	0	gear	53.620000000000005	sta:15:sta:1.2:18,int:11:int:0.81:8.91,spi:13:spi:0.88:11.44,spDmg:11:sp:1:11,armor:70:armor:0.061:4.27
-R	priest/holy	34	275648	0	mh	19.32	crit:1:spellCrit:2.6:2.6,spi:19:spi:0.88:16.72
+R	priest/holy	34	275648	0	mh	71.32	crit:1:spellCrit:2.6:2.6,spi:19:spi:0.88:16.72,sp:52:sp:1:52
 R	priest/holy	34	277102	0	gear	1.342	armor:22:armor:0.061:1.342
 R	priest/holy	34	279891	0	gear	7.057	sta:4:sta:1.2:4.8,armor:37:armor:0.061:2.257
 R	priest/holy	34	281689	0	gear	0.122	armor:2:armor:0.061:0.122
@@ -2697,7 +2697,7 @@ R	priest/holy	45	1156	0	gear	6.6000000000000005	int:6:int:1.1:6.6
 R	priest/holy	45	1764	0	gear	1.349	armor:19:armor:0.071:1.349
 R	priest/holy	45	2158	0	gear	1.7039999999999997	armor:24:armor:0.071:1.704
 R	priest/holy	45	2612	0	gear	1.065	armor:15:armor:0.071:1.065
-R	priest/holy	45	3227	0	mh	0.0	
+R	priest/holy	45	3227	0	mh	18.0	sp:18:sp:1:18
 R	priest/holy	45	3593	0	gear	1.8459999999999999	armor:26:armor:0.071:1.846
 R	priest/holy	45	4041	0	gear	22.682	sta:10:sta:0.87:8.7,int:10:int:1.1:11,armor:42:armor:0.071:2.982
 R	priest/holy	45	4668	0	gear	0.568	armor:8:armor:0.071:0.568
@@ -2762,7 +2762,7 @@ R	priest/holy	45	7426	12753	gear	3.48	sta:4:sta:0.87:3.48
 R	priest/holy	45	7426	12754	gear	5.48	sp:2:sp:1:2,sta:4:sta:0.87:3.48
 R	priest/holy	45	7426	12755	gear	5.48	sp:2:sp:1:2,sta:4:sta:0.87:3.48
 R	priest/holy	45	7888	0	gear	21.799999999999997	int:1:int:1.1:1.1,sp:12:sp:1:12,sta:10:sta:0.87:8.7
-R	priest/holy	45	9452	0	mh	0.0	
+R	priest/holy	45	9452	0	mh	36.0	sp:36:sp:1:36
 R	priest/holy	45	9822	0	gear	1.4909999999999999	armor:21:armor:0.071:1.491
 R	priest/holy	45	9822	12718	gear	9.371	int:4:int:1.1:4.4,sta:4:sta:0.87:3.48,armor:21:armor:0.071:1.491
 R	priest/holy	45	9822	12719	gear	8.931	spi:4:spi:0.99:3.96,sta:4:sta:0.87:3.48,armor:21:armor:0.071:1.491
@@ -2966,7 +2966,7 @@ R	priest/holy	45	271207	0	gear	14.434999999999999	mp5:4:mp5:1.9:7.6,sta:5:sta:0.
 R	priest/holy	45	272091	0	mh	11.31	sta:13:sta:0.87:11.31
 R	priest/holy	45	272812	0	gear	41.493	int:12:int:1.1:13.2,sta:19:sta:0.87:16.53,sp:8:sp:1:8,armor:53:armor:0.071:3.763
 R	priest/holy	45	273926	0	gear	53.99	sta:15:sta:0.87:13.05,int:11:int:1.1:12.1,spi:13:spi:0.99:12.87,spDmg:11:sp:1:11,armor:70:armor:0.071:4.97
-R	priest/holy	45	275648	0	mh	22.009999999999998	crit:1:spellCrit:3.2:3.2,spi:19:spi:0.99:18.81
+R	priest/holy	45	275648	0	mh	74.00999999999999	crit:1:spellCrit:3.2:3.2,spi:19:spi:0.99:18.81,sp:52:sp:1:52
 R	priest/holy	45	277102	0	gear	1.5619999999999998	armor:22:armor:0.071:1.562
 R	priest/holy	45	279891	0	gear	6.106999999999999	sta:4:sta:0.87:3.48,armor:37:armor:0.071:2.627
 R	priest/holy	45	281689	0	gear	0.142	armor:2:armor:0.071:0.142
@@ -2996,7 +2996,7 @@ R	priest/holy	55	1156	0	gear	7.800000000000001	int:6:int:1.3:7.8
 R	priest/holy	55	1764	0	gear	1.9000000000000001	armor:19:armor:0.1:1.9
 R	priest/holy	55	2158	0	gear	2.4000000000000004	armor:24:armor:0.1:2.4
 R	priest/holy	55	2612	0	gear	1.5	armor:15:armor:0.1:1.5
-R	priest/holy	55	3227	0	mh	0.0	
+R	priest/holy	55	3227	0	mh	18.0	sp:18:sp:1:18
 R	priest/holy	55	3593	0	gear	2.6	armor:26:armor:0.1:2.6
 R	priest/holy	55	4041	0	gear	27.2	sta:10:sta:1:10,int:10:int:1.3:13,armor:42:armor:0.1:4.2
 R	priest/holy	55	4668	0	gear	0.8	armor:8:armor:0.1:0.8
@@ -3061,7 +3061,7 @@ R	priest/holy	55	7426	12753	gear	4.0	sta:4:sta:1:4
 R	priest/holy	55	7426	12754	gear	6.0	sp:2:sp:1:2,sta:4:sta:1:4
 R	priest/holy	55	7426	12755	gear	6.0	sp:2:sp:1:2,sta:4:sta:1:4
 R	priest/holy	55	7888	0	gear	23.3	int:1:int:1.3:1.3,sp:12:sp:1:12,sta:10:sta:1:10
-R	priest/holy	55	9452	0	mh	0.0	
+R	priest/holy	55	9452	0	mh	36.0	sp:36:sp:1:36
 R	priest/holy	55	9822	0	gear	2.1	armor:21:armor:0.1:2.1
 R	priest/holy	55	9822	12718	gear	11.299999999999999	int:4:int:1.3:5.2,sta:4:sta:1:4,armor:21:armor:0.1:2.1
 R	priest/holy	55	9822	12719	gear	10.5	spi:4:spi:1.1:4.4,sta:4:sta:1:4,armor:21:armor:0.1:2.1
@@ -3265,7 +3265,7 @@ R	priest/holy	55	271207	0	gear	14.9	mp5:4:mp5:1.6:6.4,sta:5:sta:1:5,armor:35:arm
 R	priest/holy	55	272091	0	mh	13.0	sta:13:sta:1:13
 R	priest/holy	55	272812	0	gear	47.900000000000006	int:12:int:1.3:15.6,sta:19:sta:1:19,sp:8:sp:1:8,armor:53:armor:0.1:5.3
 R	priest/holy	55	273926	0	gear	61.6	sta:15:sta:1:15,int:11:int:1.3:14.3,spi:13:spi:1.1:14.3,spDmg:11:sp:1:11,armor:70:armor:0.1:7
-R	priest/holy	55	275648	0	mh	28.0	crit:1:spellCrit:7.1:7.1,spi:19:spi:1.1:20.9
+R	priest/holy	55	275648	0	mh	80.0	crit:1:spellCrit:7.1:7.1,spi:19:spi:1.1:20.9,sp:52:sp:1:52
 R	priest/holy	55	277102	0	gear	2.2	armor:22:armor:0.1:2.2
 R	priest/holy	55	279891	0	gear	7.7	sta:4:sta:1:4,armor:37:armor:0.1:3.7
 R	priest/holy	55	281689	0	gear	0.2	armor:2:armor:0.1:0.2
@@ -3295,7 +3295,7 @@ R	priest/holy	60	1156	0	gear	7.199999999999999	int:6:int:1.2:7.2
 R	priest/holy	60	1764	0	gear	1.235	armor:19:armor:0.065:1.235
 R	priest/holy	60	2158	0	gear	1.56	armor:24:armor:0.065:1.56
 R	priest/holy	60	2612	0	gear	0.9750000000000001	armor:15:armor:0.065:0.975
-R	priest/holy	60	3227	0	mh	0.0	
+R	priest/holy	60	3227	0	mh	18.0	sp:18:sp:1:18
 R	priest/holy	60	3593	0	gear	1.69	armor:26:armor:0.065:1.69
 R	priest/holy	60	4041	0	gear	20.03	sta:10:sta:0.53:5.3,int:10:int:1.2:12,armor:42:armor:0.065:2.73
 R	priest/holy	60	4668	0	gear	0.52	armor:8:armor:0.065:0.52
@@ -3360,7 +3360,7 @@ R	priest/holy	60	7426	12753	gear	2.12	sta:4:sta:0.53:2.12
 R	priest/holy	60	7426	12754	gear	4.12	sp:2:sp:1:2,sta:4:sta:0.53:2.12
 R	priest/holy	60	7426	12755	gear	4.12	sp:2:sp:1:2,sta:4:sta:0.53:2.12
 R	priest/holy	60	7888	0	gear	18.5	int:1:int:1.2:1.2,sp:12:sp:1:12,sta:10:sta:0.53:5.3
-R	priest/holy	60	9452	0	mh	0.0	
+R	priest/holy	60	9452	0	mh	36.0	sp:36:sp:1:36
 R	priest/holy	60	9822	0	gear	1.365	armor:21:armor:0.065:1.365
 R	priest/holy	60	9822	12718	gear	8.285	int:4:int:1.2:4.8,sta:4:sta:0.53:2.12,armor:21:armor:0.065:1.365
 R	priest/holy	60	9822	12719	gear	8.685	spi:4:spi:1.3:5.2,sta:4:sta:0.53:2.12,armor:21:armor:0.065:1.365
@@ -3564,7 +3564,7 @@ R	priest/holy	60	271207	0	gear	16.525	mp5:4:mp5:2.9:11.6,sta:5:sta:0.53:2.65,arm
 R	priest/holy	60	272091	0	mh	6.890000000000001	sta:13:sta:0.53:6.89
 R	priest/holy	60	272812	0	gear	35.915	int:12:int:1.2:14.4,sta:19:sta:0.53:10.07,sp:8:sp:1:8,armor:53:armor:0.065:3.445
 R	priest/holy	60	273926	0	gear	53.599999999999994	sta:15:sta:0.53:7.95,int:11:int:1.2:13.2,spi:13:spi:1.3:16.9,spDmg:11:sp:1:11,armor:70:armor:0.065:4.55
-R	priest/holy	60	275648	0	mh	30.9	crit:1:spellCrit:6.2:6.2,spi:19:spi:1.3:24.7
+R	priest/holy	60	275648	0	mh	82.9	crit:1:spellCrit:6.2:6.2,spi:19:spi:1.3:24.7,sp:52:sp:1:52
 R	priest/holy	60	277102	0	gear	1.4300000000000002	armor:22:armor:0.065:1.43
 R	priest/holy	60	279891	0	gear	4.525	sta:4:sta:0.53:2.12,armor:37:armor:0.065:2.405
 R	priest/holy	60	281689	0	gear	0.13	armor:2:armor:0.065:0.13
@@ -3594,7 +3594,7 @@ R	priest/discipline	12	1156	0	gear	2.4000000000000004	int:6:int:0.4:2.4
 R	priest/discipline	12	1764	0	gear	0.874	armor:19:armor:0.046:0.874
 R	priest/discipline	12	2158	0	gear	1.104	armor:24:armor:0.046:1.104
 R	priest/discipline	12	2612	0	gear	0.69	armor:15:armor:0.046:0.69
-R	priest/discipline	12	3227	0	mh	0.0	
+R	priest/discipline	12	3227	0	mh	18.0	sp:18:sp:1:18
 R	priest/discipline	12	3593	0	gear	1.196	armor:26:armor:0.046:1.196
 R	priest/discipline	12	4041	0	gear	12.132	sta:10:sta:0.62:6.2,int:10:int:0.4:4,armor:42:armor:0.046:1.932
 R	priest/discipline	12	4668	0	gear	0.368	armor:8:armor:0.046:0.368
@@ -3659,7 +3659,7 @@ R	priest/discipline	12	7426	12753	gear	2.48	sta:4:sta:0.62:2.48
 R	priest/discipline	12	7426	12754	gear	4.48	sp:2:sp:1:2,sta:4:sta:0.62:2.48
 R	priest/discipline	12	7426	12755	gear	4.48	sp:2:sp:1:2,sta:4:sta:0.62:2.48
 R	priest/discipline	12	7888	0	gear	18.6	int:1:int:0.4:0.4,sp:12:sp:1:12,sta:10:sta:0.62:6.2
-R	priest/discipline	12	9452	0	mh	0.0	
+R	priest/discipline	12	9452	0	mh	36.0	sp:36:sp:1:36
 R	priest/discipline	12	9822	0	gear	0.966	armor:21:armor:0.046:0.966
 R	priest/discipline	12	9822	12718	gear	5.046	int:4:int:0.4:1.6,sta:4:sta:0.62:2.48,armor:21:armor:0.046:0.966
 R	priest/discipline	12	9822	12719	gear	4.446	spi:4:spi:0.25:1,sta:4:sta:0.62:2.48,armor:21:armor:0.046:0.966
@@ -3863,7 +3863,7 @@ R	priest/discipline	12	271207	0	gear	5.789999999999999	mp5:4:mp5:0.27:1.08,sta:5
 R	priest/discipline	12	272091	0	mh	8.06	sta:13:sta:0.62:8.06
 R	priest/discipline	12	272812	0	gear	27.017999999999997	int:12:int:0.4:4.8,sta:19:sta:0.62:11.78,sp:8:sp:1:8,armor:53:armor:0.046:2.438
 R	priest/discipline	12	273926	0	gear	31.17	sta:15:sta:0.62:9.3,int:11:int:0.4:4.4,spi:13:spi:0.25:3.25,spDmg:11:sp:1:11,armor:70:armor:0.046:3.22
-R	priest/discipline	12	275648	0	mh	5.4399999999999995	crit:1:spellCrit:0.69:0.69,spi:19:spi:0.25:4.75
+R	priest/discipline	12	275648	0	mh	57.44	crit:1:spellCrit:0.69:0.69,spi:19:spi:0.25:4.75,sp:52:sp:1:52
 R	priest/discipline	12	277102	0	gear	1.012	armor:22:armor:0.046:1.012
 R	priest/discipline	12	279891	0	gear	4.182	sta:4:sta:0.62:2.48,armor:37:armor:0.046:1.702
 R	priest/discipline	12	281689	0	gear	0.092	armor:2:armor:0.046:0.092
@@ -3893,7 +3893,7 @@ R	priest/discipline	25	1156	0	gear	6.6000000000000005	int:6:int:1.1:6.6
 R	priest/discipline	25	1764	0	gear	0.931	armor:19:armor:0.049:0.931
 R	priest/discipline	25	2158	0	gear	1.1760000000000002	armor:24:armor:0.049:1.176
 R	priest/discipline	25	2612	0	gear	0.735	armor:15:armor:0.049:0.735
-R	priest/discipline	25	3227	0	mh	0.0	
+R	priest/discipline	25	3227	0	mh	18.0	sp:18:sp:1:18
 R	priest/discipline	25	3593	0	gear	1.274	armor:26:armor:0.049:1.274
 R	priest/discipline	25	4041	0	gear	21.758	sta:10:sta:0.87:8.7,int:10:int:1.1:11,armor:42:armor:0.049:2.058
 R	priest/discipline	25	4668	0	gear	0.392	armor:8:armor:0.049:0.392
@@ -3958,7 +3958,7 @@ R	priest/discipline	25	7426	12753	gear	3.48	sta:4:sta:0.87:3.48
 R	priest/discipline	25	7426	12754	gear	5.48	sp:2:sp:1:2,sta:4:sta:0.87:3.48
 R	priest/discipline	25	7426	12755	gear	5.48	sp:2:sp:1:2,sta:4:sta:0.87:3.48
 R	priest/discipline	25	7888	0	gear	21.799999999999997	int:1:int:1.1:1.1,sp:12:sp:1:12,sta:10:sta:0.87:8.7
-R	priest/discipline	25	9452	0	mh	0.0	
+R	priest/discipline	25	9452	0	mh	36.0	sp:36:sp:1:36
 R	priest/discipline	25	9822	0	gear	1.0290000000000001	armor:21:armor:0.049:1.029
 R	priest/discipline	25	9822	12718	gear	8.909	int:4:int:1.1:4.4,sta:4:sta:0.87:3.48,armor:21:armor:0.049:1.029
 R	priest/discipline	25	9822	12719	gear	7.6690000000000005	spi:4:spi:0.79:3.16,sta:4:sta:0.87:3.48,armor:21:armor:0.049:1.029
@@ -4162,7 +4162,7 @@ R	priest/discipline	25	271207	0	gear	10.864999999999998	mp5:4:mp5:1.2:4.8,sta:5:
 R	priest/discipline	25	272091	0	mh	11.31	sta:13:sta:0.87:11.31
 R	priest/discipline	25	272812	0	gear	40.327000000000005	int:12:int:1.1:13.2,sta:19:sta:0.87:16.53,sp:8:sp:1:8,armor:53:armor:0.049:2.597
 R	priest/discipline	25	273926	0	gear	49.85	sta:15:sta:0.87:13.05,int:11:int:1.1:12.1,spi:13:spi:0.79:10.27,spDmg:11:sp:1:11,armor:70:armor:0.049:3.43
-R	priest/discipline	25	275648	0	mh	16.41	crit:1:spellCrit:1.4:1.4,spi:19:spi:0.79:15.01
+R	priest/discipline	25	275648	0	mh	68.41	crit:1:spellCrit:1.4:1.4,spi:19:spi:0.79:15.01,sp:52:sp:1:52
 R	priest/discipline	25	277102	0	gear	1.078	armor:22:armor:0.049:1.078
 R	priest/discipline	25	279891	0	gear	5.293	sta:4:sta:0.87:3.48,armor:37:armor:0.049:1.813
 R	priest/discipline	25	281689	0	gear	0.098	armor:2:armor:0.049:0.098
@@ -4192,7 +4192,7 @@ R	priest/discipline	34	1156	0	gear	3.42	int:6:int:0.57:3.42
 R	priest/discipline	34	1764	0	gear	0.589	armor:19:armor:0.031:0.589
 R	priest/discipline	34	2158	0	gear	0.744	armor:24:armor:0.031:0.744
 R	priest/discipline	34	2612	0	gear	0.46499999999999997	armor:15:armor:0.031:0.465
-R	priest/discipline	34	3227	0	mh	0.0	
+R	priest/discipline	34	3227	0	mh	18.0	sp:18:sp:1:18
 R	priest/discipline	34	3593	0	gear	0.806	armor:26:armor:0.031:0.806
 R	priest/discipline	34	4041	0	gear	10.501999999999999	sta:10:sta:0.35:3.5,int:10:int:0.57:5.7,armor:42:armor:0.031:1.302
 R	priest/discipline	34	4668	0	gear	0.248	armor:8:armor:0.031:0.248
@@ -4257,7 +4257,7 @@ R	priest/discipline	34	7426	12753	gear	1.4	sta:4:sta:0.35:1.4
 R	priest/discipline	34	7426	12754	gear	3.4	sp:2:sp:1:2,sta:4:sta:0.35:1.4
 R	priest/discipline	34	7426	12755	gear	3.4	sp:2:sp:1:2,sta:4:sta:0.35:1.4
 R	priest/discipline	34	7888	0	gear	16.07	int:1:int:0.57:0.57,sp:12:sp:1:12,sta:10:sta:0.35:3.5
-R	priest/discipline	34	9452	0	mh	0.0	
+R	priest/discipline	34	9452	0	mh	36.0	sp:36:sp:1:36
 R	priest/discipline	34	9822	0	gear	0.651	armor:21:armor:0.031:0.651
 R	priest/discipline	34	9822	12718	gear	4.3309999999999995	int:4:int:0.57:2.28,sta:4:sta:0.35:1.4,armor:21:armor:0.031:0.651
 R	priest/discipline	34	9822	12719	gear	6.4510000000000005	spi:4:spi:1.1:4.4,sta:4:sta:0.35:1.4,armor:21:armor:0.031:0.651
@@ -4461,7 +4461,7 @@ R	priest/discipline	34	271207	0	gear	7.235	mp5:4:mp5:1.1:4.4,sta:5:sta:0.35:1.75
 R	priest/discipline	34	272091	0	mh	4.55	sta:13:sta:0.35:4.55
 R	priest/discipline	34	272812	0	gear	23.133	int:12:int:0.57:6.84,sta:19:sta:0.35:6.65,sp:8:sp:1:8,armor:53:armor:0.031:1.643
 R	priest/discipline	34	273926	0	gear	38.99	sta:15:sta:0.35:5.25,int:11:int:0.57:6.27,spi:13:spi:1.1:14.3,spDmg:11:sp:1:11,armor:70:armor:0.031:2.17
-R	priest/discipline	34	275648	0	mh	23.3	crit:1:spellCrit:2.4:2.4,spi:19:spi:1.1:20.9
+R	priest/discipline	34	275648	0	mh	75.3	crit:1:spellCrit:2.4:2.4,spi:19:spi:1.1:20.9,sp:52:sp:1:52
 R	priest/discipline	34	277102	0	gear	0.6819999999999999	armor:22:armor:0.031:0.682
 R	priest/discipline	34	279891	0	gear	2.5469999999999997	sta:4:sta:0.35:1.4,armor:37:armor:0.031:1.147
 R	priest/discipline	34	281689	0	gear	0.062	armor:2:armor:0.031:0.062
@@ -4491,7 +4491,7 @@ R	priest/discipline	45	1156	0	gear	6.6000000000000005	int:6:int:1.1:6.6
 R	priest/discipline	45	1764	0	gear	2.28	armor:19:armor:0.12:2.28
 R	priest/discipline	45	2158	0	gear	2.88	armor:24:armor:0.12:2.88
 R	priest/discipline	45	2612	0	gear	1.7999999999999998	armor:15:armor:0.12:1.8
-R	priest/discipline	45	3227	0	mh	0.0	
+R	priest/discipline	45	3227	0	mh	18.0	sp:18:sp:1:18
 R	priest/discipline	45	3593	0	gear	3.12	armor:26:armor:0.12:3.12
 R	priest/discipline	45	4041	0	gear	36.04	sta:10:sta:2:20,int:10:int:1.1:11,armor:42:armor:0.12:5.04
 R	priest/discipline	45	4668	0	gear	0.96	armor:8:armor:0.12:0.96
@@ -4556,7 +4556,7 @@ R	priest/discipline	45	7426	12753	gear	8.0	sta:4:sta:2:8
 R	priest/discipline	45	7426	12754	gear	10.0	sp:2:sp:1:2,sta:4:sta:2:8
 R	priest/discipline	45	7426	12755	gear	10.0	sp:2:sp:1:2,sta:4:sta:2:8
 R	priest/discipline	45	7888	0	gear	33.1	int:1:int:1.1:1.1,sp:12:sp:1:12,sta:10:sta:2:20
-R	priest/discipline	45	9452	0	mh	0.0	
+R	priest/discipline	45	9452	0	mh	36.0	sp:36:sp:1:36
 R	priest/discipline	45	9822	0	gear	2.52	armor:21:armor:0.12:2.52
 R	priest/discipline	45	9822	12718	gear	14.92	int:4:int:1.1:4.4,sta:4:sta:2:8,armor:21:armor:0.12:2.52
 R	priest/discipline	45	9822	12719	gear	11.52	spi:4:spi:0.25:1,sta:4:sta:2:8,armor:21:armor:0.12:2.52
@@ -4760,7 +4760,7 @@ R	priest/discipline	45	271207	0	gear	17.8	mp5:4:mp5:0.9:3.6,sta:5:sta:2:10,armor
 R	priest/discipline	45	272091	0	mh	26.0	sta:13:sta:2:26
 R	priest/discipline	45	272812	0	gear	65.56	int:12:int:1.1:13.2,sta:19:sta:2:38,sp:8:sp:1:8,armor:53:armor:0.12:6.36
 R	priest/discipline	45	273926	0	gear	64.75	sta:15:sta:2:30,int:11:int:1.1:12.1,spi:13:spi:0.25:3.25,spDmg:11:sp:1:11,armor:70:armor:0.12:8.4
-R	priest/discipline	45	275648	0	mh	8.35	crit:1:spellCrit:3.6:3.6,spi:19:spi:0.25:4.75
+R	priest/discipline	45	275648	0	mh	60.35	crit:1:spellCrit:3.6:3.6,spi:19:spi:0.25:4.75,sp:52:sp:1:52
 R	priest/discipline	45	277102	0	gear	2.6399999999999997	armor:22:armor:0.12:2.64
 R	priest/discipline	45	279891	0	gear	12.44	sta:4:sta:2:8,armor:37:armor:0.12:4.44
 R	priest/discipline	45	281689	0	gear	0.24	armor:2:armor:0.12:0.24
@@ -4790,7 +4790,7 @@ R	priest/discipline	55	1156	0	gear	5.699999999999999	int:6:int:0.95:5.7
 R	priest/discipline	55	1764	0	gear	0.874	armor:19:armor:0.046:0.874
 R	priest/discipline	55	2158	0	gear	1.104	armor:24:armor:0.046:1.104
 R	priest/discipline	55	2612	0	gear	0.69	armor:15:armor:0.046:0.69
-R	priest/discipline	55	3227	0	mh	0.0	
+R	priest/discipline	55	3227	0	mh	18.0	sp:18:sp:1:18
 R	priest/discipline	55	3593	0	gear	1.196	armor:26:armor:0.046:1.196
 R	priest/discipline	55	4041	0	gear	21.432	sta:10:sta:1:10,int:10:int:0.95:9.5,armor:42:armor:0.046:1.932
 R	priest/discipline	55	4668	0	gear	0.368	armor:8:armor:0.046:0.368
@@ -4855,7 +4855,7 @@ R	priest/discipline	55	7426	12753	gear	4.0	sta:4:sta:1:4
 R	priest/discipline	55	7426	12754	gear	6.0	sp:2:sp:1:2,sta:4:sta:1:4
 R	priest/discipline	55	7426	12755	gear	6.0	sp:2:sp:1:2,sta:4:sta:1:4
 R	priest/discipline	55	7888	0	gear	22.95	int:1:int:0.95:0.95,sp:12:sp:1:12,sta:10:sta:1:10
-R	priest/discipline	55	9452	0	mh	0.0	
+R	priest/discipline	55	9452	0	mh	36.0	sp:36:sp:1:36
 R	priest/discipline	55	9822	0	gear	0.966	armor:21:armor:0.046:0.966
 R	priest/discipline	55	9822	12718	gear	8.766	int:4:int:0.95:3.8,sta:4:sta:1:4,armor:21:armor:0.046:0.966
 R	priest/discipline	55	9822	12719	gear	8.766	spi:4:spi:0.95:3.8,sta:4:sta:1:4,armor:21:armor:0.046:0.966
@@ -5059,7 +5059,7 @@ R	priest/discipline	55	271207	0	gear	14.209999999999999	mp5:4:mp5:1.9:7.6,sta:5:
 R	priest/discipline	55	272091	0	mh	13.0	sta:13:sta:1:13
 R	priest/discipline	55	272812	0	gear	40.838	int:12:int:0.95:11.4,sta:19:sta:1:19,sp:8:sp:1:8,armor:53:armor:0.046:2.438
 R	priest/discipline	55	273926	0	gear	52.019999999999996	sta:15:sta:1:15,int:11:int:0.95:10.45,spi:13:spi:0.95:12.35,spDmg:11:sp:1:11,armor:70:armor:0.046:3.22
-R	priest/discipline	55	275648	0	mh	22.15	crit:1:spellCrit:4.1:4.1,spi:19:spi:0.95:18.05
+R	priest/discipline	55	275648	0	mh	74.15	crit:1:spellCrit:4.1:4.1,spi:19:spi:0.95:18.05,sp:52:sp:1:52
 R	priest/discipline	55	277102	0	gear	1.012	armor:22:armor:0.046:1.012
 R	priest/discipline	55	279891	0	gear	5.702	sta:4:sta:1:4,armor:37:armor:0.046:1.702
 R	priest/discipline	55	281689	0	gear	0.092	armor:2:armor:0.046:0.092
@@ -5089,7 +5089,7 @@ R	priest/discipline	60	1156	0	gear	2.7	int:6:int:0.45:2.7
 R	priest/discipline	60	1764	0	gear	0.399	armor:19:armor:0.021:0.399
 R	priest/discipline	60	2158	0	gear	0.504	armor:24:armor:0.021:0.504
 R	priest/discipline	60	2612	0	gear	0.315	armor:15:armor:0.021:0.315
-R	priest/discipline	60	3227	0	mh	0.0	
+R	priest/discipline	60	3227	0	mh	18.0	sp:18:sp:1:18
 R	priest/discipline	60	3593	0	gear	0.546	armor:26:armor:0.021:0.546
 R	priest/discipline	60	4041	0	gear	7.382	sta:10:sta:0.2:2,int:10:int:0.45:4.5,armor:42:armor:0.021:0.882
 R	priest/discipline	60	4668	0	gear	0.168	armor:8:armor:0.021:0.168
@@ -5154,7 +5154,7 @@ R	priest/discipline	60	7426	12753	gear	0.8	sta:4:sta:0.2:0.8
 R	priest/discipline	60	7426	12754	gear	2.8	sp:2:sp:1:2,sta:4:sta:0.2:0.8
 R	priest/discipline	60	7426	12755	gear	2.8	sp:2:sp:1:2,sta:4:sta:0.2:0.8
 R	priest/discipline	60	7888	0	gear	14.45	int:1:int:0.45:0.45,sp:12:sp:1:12,sta:10:sta:0.2:2
-R	priest/discipline	60	9452	0	mh	0.0	
+R	priest/discipline	60	9452	0	mh	36.0	sp:36:sp:1:36
 R	priest/discipline	60	9822	0	gear	0.441	armor:21:armor:0.021:0.441
 R	priest/discipline	60	9822	12718	gear	3.041	int:4:int:0.45:1.8,sta:4:sta:0.2:0.8,armor:21:armor:0.021:0.441
 R	priest/discipline	60	9822	12719	gear	5.641	spi:4:spi:1.1:4.4,sta:4:sta:0.2:0.8,armor:21:armor:0.021:0.441
@@ -5358,7 +5358,7 @@ R	priest/discipline	60	271207	0	gear	9.735	mp5:4:mp5:2:8,sta:5:sta:0.2:1,armor:3
 R	priest/discipline	60	272091	0	mh	2.6	sta:13:sta:0.2:2.6
 R	priest/discipline	60	272812	0	gear	18.313000000000002	int:12:int:0.45:5.4,sta:19:sta:0.2:3.8,sp:8:sp:1:8,armor:53:armor:0.021:1.113
 R	priest/discipline	60	273926	0	gear	34.72	sta:15:sta:0.2:3,int:11:int:0.45:4.95,spi:13:spi:1.1:14.3,spDmg:11:sp:1:11,armor:70:armor:0.021:1.47
-R	priest/discipline	60	275648	0	mh	27.0	crit:1:spellCrit:6.1:6.1,spi:19:spi:1.1:20.9
+R	priest/discipline	60	275648	0	mh	79.0	crit:1:spellCrit:6.1:6.1,spi:19:spi:1.1:20.9,sp:52:sp:1:52
 R	priest/discipline	60	277102	0	gear	0.462	armor:22:armor:0.021:0.462
 R	priest/discipline	60	279891	0	gear	1.577	sta:4:sta:0.2:0.8,armor:37:armor:0.021:0.777
 R	priest/discipline	60	281689	0	gear	0.042	armor:2:armor:0.021:0.042
@@ -5388,7 +5388,7 @@ R	mage/frost	12	1156	0	gear	0.36	int:6:int:0.06:0.36
 R	mage/frost	12	1764	0	gear	0.1805	armor:19:armor:0.0095:0.18
 R	mage/frost	12	2158	0	gear	0.22799999999999998	armor:24:armor:0.0095:0.228
 R	mage/frost	12	2612	0	gear	0.1425	armor:15:armor:0.0095:0.142
-R	mage/frost	12	3227	0	mh	0.0	
+R	mage/frost	12	3227	0	mh	19.8	sp:18:sp:1.1:19.8
 R	mage/frost	12	3593	0	gear	0.247	armor:26:armor:0.0095:0.247
 R	mage/frost	12	4041	0	gear	7.199	sta:10:sta:0.62:6.2,int:10:int:0.06:0.6,armor:42:armor:0.0095:0.399
 R	mage/frost	12	4668	0	gear	0.076	armor:8:armor:0.0095:0.076
@@ -5453,7 +5453,7 @@ R	mage/frost	12	7426	12753	gear	2.48	sta:4:sta:0.62:2.48
 R	mage/frost	12	7426	12754	gear	4.68	sp:2:sp:1.1:2.2,sta:4:sta:0.62:2.48
 R	mage/frost	12	7426	12755	gear	4.68	sp:2:sp:1.1:2.2,sta:4:sta:0.62:2.48
 R	mage/frost	12	7888	0	gear	19.46	int:1:int:0.06:0.06,sp:12:sp:1.1:13.2,sta:10:sta:0.62:6.2
-R	mage/frost	12	9452	0	mh	0.0	
+R	mage/frost	12	9452	0	mh	39.6	sp:36:sp:1.1:39.6
 R	mage/frost	12	9822	0	gear	0.19949999999999998	armor:21:armor:0.0095:0.199
 R	mage/frost	12	9822	12718	gear	2.9194999999999998	int:4:int:0.06:0.24,sta:4:sta:0.62:2.48,armor:21:armor:0.0095:0.199
 R	mage/frost	12	9822	12719	gear	3.3195	spi:4:spi:0.16:0.64,sta:4:sta:0.62:2.48,armor:21:armor:0.0095:0.199
@@ -5657,7 +5657,7 @@ R	mage/frost	12	271207	0	gear	3.6485000000000003	mp5:4:mp5:0.054:0.216,sta:5:sta
 R	mage/frost	12	272091	0	mh	8.06	sta:13:sta:0.62:8.06
 R	mage/frost	12	272812	0	gear	21.8035	int:12:int:0.06:0.72,sta:19:sta:0.62:11.78,sp:8:sp:1.1:8.8,armor:53:armor:0.0095:0.503
 R	mage/frost	12	273926	0	gear	24.805	sta:15:sta:0.62:9.3,int:11:int:0.06:0.66,spi:13:spi:0.16:2.08,spDmg:11:sp:1.1:12.1,armor:70:armor:0.0095:0.665
-R	mage/frost	12	275648	0	mh	3.49	crit:1:spellCrit:0.45:0.45,spi:19:spi:0.16:3.04
+R	mage/frost	12	275648	0	mh	60.690000000000005	crit:1:spellCrit:0.45:0.45,spi:19:spi:0.16:3.04,sp:52:sp:1.1:57.2
 R	mage/frost	12	277102	0	gear	0.209	armor:22:armor:0.0095:0.209
 R	mage/frost	12	279891	0	gear	2.8315	sta:4:sta:0.62:2.48,armor:37:armor:0.0095:0.351
 R	mage/frost	12	281689	0	gear	0.019	armor:2:armor:0.0095:0.019
@@ -5687,7 +5687,7 @@ R	mage/frost	25	1156	0	gear	1.32	int:6:int:0.22:1.32
 R	mage/frost	25	1764	0	gear	0.19	armor:19:armor:0.01:0.19
 R	mage/frost	25	2158	0	gear	0.24	armor:24:armor:0.01:0.24
 R	mage/frost	25	2612	0	gear	0.15	armor:15:armor:0.01:0.15
-R	mage/frost	25	3227	0	mh	0.0	
+R	mage/frost	25	3227	0	mh	19.8	sp:18:sp:1.1:19.8
 R	mage/frost	25	3593	0	gear	0.26	armor:26:armor:0.01:0.26
 R	mage/frost	25	4041	0	gear	9.62	sta:10:sta:0.7:7,int:10:int:0.22:2.2,armor:42:armor:0.01:0.42
 R	mage/frost	25	4668	0	gear	0.08	armor:8:armor:0.01:0.08
@@ -5752,7 +5752,7 @@ R	mage/frost	25	7426	12753	gear	2.8	sta:4:sta:0.7:2.8
 R	mage/frost	25	7426	12754	gear	5.0	sp:2:sp:1.1:2.2,sta:4:sta:0.7:2.8
 R	mage/frost	25	7426	12755	gear	5.0	sp:2:sp:1.1:2.2,sta:4:sta:0.7:2.8
 R	mage/frost	25	7888	0	gear	20.42	int:1:int:0.22:0.22,sp:12:sp:1.1:13.2,sta:10:sta:0.7:7
-R	mage/frost	25	9452	0	mh	0.0	
+R	mage/frost	25	9452	0	mh	39.6	sp:36:sp:1.1:39.6
 R	mage/frost	25	9822	0	gear	0.21	armor:21:armor:0.01:0.21
 R	mage/frost	25	9822	12718	gear	3.8899999999999997	int:4:int:0.22:0.88,sta:4:sta:0.7:2.8,armor:21:armor:0.01:0.21
 R	mage/frost	25	9822	12719	gear	3.8899999999999997	spi:4:spi:0.22:0.88,sta:4:sta:0.7:2.8,armor:21:armor:0.01:0.21
@@ -5956,7 +5956,7 @@ R	mage/frost	25	271207	0	gear	4.7299999999999995	mp5:4:mp5:0.22:0.88,sta:5:sta:0
 R	mage/frost	25	272091	0	mh	9.1	sta:13:sta:0.7:9.1
 R	mage/frost	25	272812	0	gear	25.270000000000003	int:12:int:0.22:2.64,sta:19:sta:0.7:13.3,sp:8:sp:1.1:8.8,armor:53:armor:0.01:0.53
 R	mage/frost	25	273926	0	gear	28.580000000000002	sta:15:sta:0.7:10.5,int:11:int:0.22:2.42,spi:13:spi:0.22:2.86,spDmg:11:sp:1.1:12.1,armor:70:armor:0.01:0.7
-R	mage/frost	25	275648	0	mh	5.38	crit:1:spellCrit:1.2:1.2,spi:19:spi:0.22:4.18
+R	mage/frost	25	275648	0	mh	62.580000000000005	crit:1:spellCrit:1.2:1.2,spi:19:spi:0.22:4.18,sp:52:sp:1.1:57.2
 R	mage/frost	25	277102	0	gear	0.22	armor:22:armor:0.01:0.22
 R	mage/frost	25	279891	0	gear	3.17	sta:4:sta:0.7:2.8,armor:37:armor:0.01:0.37
 R	mage/frost	25	281689	0	gear	0.02	armor:2:armor:0.01:0.02
@@ -5986,7 +5986,7 @@ R	mage/frost	34	1156	0	gear	1.92	int:6:int:0.32:1.92
 R	mage/frost	34	1764	0	gear	0.266	armor:19:armor:0.014:0.266
 R	mage/frost	34	2158	0	gear	0.336	armor:24:armor:0.014:0.336
 R	mage/frost	34	2612	0	gear	0.21	armor:15:armor:0.014:0.21
-R	mage/frost	34	3227	0	mh	0.0	
+R	mage/frost	34	3227	0	mh	19.8	sp:18:sp:1.1:19.8
 R	mage/frost	34	3593	0	gear	0.364	armor:26:armor:0.014:0.364
 R	mage/frost	34	4041	0	gear	9.888	sta:10:sta:0.61:6.1,int:10:int:0.32:3.2,armor:42:armor:0.014:0.588
 R	mage/frost	34	4668	0	gear	0.112	armor:8:armor:0.014:0.112
@@ -6051,7 +6051,7 @@ R	mage/frost	34	7426	12753	gear	2.44	sta:4:sta:0.61:2.44
 R	mage/frost	34	7426	12754	gear	4.640000000000001	sp:2:sp:1.1:2.2,sta:4:sta:0.61:2.44
 R	mage/frost	34	7426	12755	gear	4.640000000000001	sp:2:sp:1.1:2.2,sta:4:sta:0.61:2.44
 R	mage/frost	34	7888	0	gear	19.62	int:1:int:0.32:0.32,sp:12:sp:1.1:13.2,sta:10:sta:0.61:6.1
-R	mage/frost	34	9452	0	mh	0.0	
+R	mage/frost	34	9452	0	mh	39.6	sp:36:sp:1.1:39.6
 R	mage/frost	34	9822	0	gear	0.294	armor:21:armor:0.014:0.294
 R	mage/frost	34	9822	12718	gear	4.013999999999999	int:4:int:0.32:1.28,sta:4:sta:0.61:2.44,armor:21:armor:0.014:0.294
 R	mage/frost	34	9822	12719	gear	3.8939999999999997	spi:4:spi:0.29:1.16,sta:4:sta:0.61:2.44,armor:21:armor:0.014:0.294
@@ -6255,7 +6255,7 @@ R	mage/frost	34	271207	0	gear	5.18	mp5:4:mp5:0.41:1.64,sta:5:sta:0.61:3.05,armor
 R	mage/frost	34	272091	0	mh	7.93	sta:13:sta:0.61:7.93
 R	mage/frost	34	272812	0	gear	24.972	int:12:int:0.32:3.84,sta:19:sta:0.61:11.59,sp:8:sp:1.1:8.8,armor:53:armor:0.014:0.742
 R	mage/frost	34	273926	0	gear	29.52	sta:15:sta:0.61:9.15,int:11:int:0.32:3.52,spi:13:spi:0.29:3.77,spDmg:11:sp:1.1:12.1,armor:70:armor:0.014:0.98
-R	mage/frost	34	275648	0	mh	7.51	crit:1:spellCrit:2:2,spi:19:spi:0.29:5.51
+R	mage/frost	34	275648	0	mh	64.71000000000001	crit:1:spellCrit:2:2,spi:19:spi:0.29:5.51,sp:52:sp:1.1:57.2
 R	mage/frost	34	277102	0	gear	0.308	armor:22:armor:0.014:0.308
 R	mage/frost	34	279891	0	gear	2.958	sta:4:sta:0.61:2.44,armor:37:armor:0.014:0.518
 R	mage/frost	34	281689	0	gear	0.028	armor:2:armor:0.014:0.028
@@ -6285,7 +6285,7 @@ R	mage/frost	45	1156	0	gear	4.0200000000000005	int:6:int:0.67:4.02
 R	mage/frost	45	1764	0	gear	0.266	armor:19:armor:0.014:0.266
 R	mage/frost	45	2158	0	gear	0.336	armor:24:armor:0.014:0.336
 R	mage/frost	45	2612	0	gear	0.21	armor:15:armor:0.014:0.21
-R	mage/frost	45	3227	0	mh	0.0	
+R	mage/frost	45	3227	0	mh	19.8	sp:18:sp:1.1:19.8
 R	mage/frost	45	3593	0	gear	0.364	armor:26:armor:0.014:0.364
 R	mage/frost	45	4041	0	gear	10.488	sta:10:sta:0.32:3.2,int:10:int:0.67:6.7,armor:42:armor:0.014:0.588
 R	mage/frost	45	4668	0	gear	0.112	armor:8:armor:0.014:0.112
@@ -6350,7 +6350,7 @@ R	mage/frost	45	7426	12753	gear	1.28	sta:4:sta:0.32:1.28
 R	mage/frost	45	7426	12754	gear	3.4800000000000004	sp:2:sp:1.1:2.2,sta:4:sta:0.32:1.28
 R	mage/frost	45	7426	12755	gear	3.4800000000000004	sp:2:sp:1.1:2.2,sta:4:sta:0.32:1.28
 R	mage/frost	45	7888	0	gear	17.07	int:1:int:0.67:0.67,sp:12:sp:1.1:13.2,sta:10:sta:0.32:3.2
-R	mage/frost	45	9452	0	mh	0.0	
+R	mage/frost	45	9452	0	mh	39.6	sp:36:sp:1.1:39.6
 R	mage/frost	45	9822	0	gear	0.294	armor:21:armor:0.014:0.294
 R	mage/frost	45	9822	12718	gear	4.254	int:4:int:0.67:2.68,sta:4:sta:0.32:1.28,armor:21:armor:0.014:0.294
 R	mage/frost	45	9822	12719	gear	4.2139999999999995	spi:4:spi:0.66:2.64,sta:4:sta:0.32:1.28,armor:21:armor:0.014:0.294
@@ -6554,7 +6554,7 @@ R	mage/frost	45	271207	0	gear	6.050000000000001	mp5:4:mp5:0.99:3.96,sta:5:sta:0.
 R	mage/frost	45	272091	0	mh	4.16	sta:13:sta:0.32:4.16
 R	mage/frost	45	272812	0	gear	23.662000000000003	int:12:int:0.67:8.04,sta:19:sta:0.32:6.08,sp:8:sp:1.1:8.8,armor:53:armor:0.014:0.742
 R	mage/frost	45	273926	0	gear	33.83	sta:15:sta:0.32:4.8,int:11:int:0.67:7.37,spi:13:spi:0.66:8.58,spDmg:11:sp:1.1:12.1,armor:70:armor:0.014:0.98
-R	mage/frost	45	275648	0	mh	16.14	crit:1:spellCrit:3.6:3.6,spi:19:spi:0.66:12.54
+R	mage/frost	45	275648	0	mh	73.34	crit:1:spellCrit:3.6:3.6,spi:19:spi:0.66:12.54,sp:52:sp:1.1:57.2
 R	mage/frost	45	277102	0	gear	0.308	armor:22:armor:0.014:0.308
 R	mage/frost	45	279891	0	gear	1.798	sta:4:sta:0.32:1.28,armor:37:armor:0.014:0.518
 R	mage/frost	45	281689	0	gear	0.028	armor:2:armor:0.014:0.028
@@ -6584,7 +6584,7 @@ R	mage/frost	55	1156	0	gear	4.32	int:6:int:0.72:4.32
 R	mage/frost	55	1764	0	gear	0.285	armor:19:armor:0.015:0.285
 R	mage/frost	55	2158	0	gear	0.36	armor:24:armor:0.015:0.36
 R	mage/frost	55	2612	0	gear	0.22499999999999998	armor:15:armor:0.015:0.225
-R	mage/frost	55	3227	0	mh	0.0	
+R	mage/frost	55	3227	0	mh	19.8	sp:18:sp:1.1:19.8
 R	mage/frost	55	3593	0	gear	0.39	armor:26:armor:0.015:0.39
 R	mage/frost	55	4041	0	gear	11.23	sta:10:sta:0.34:3.4,int:10:int:0.72:7.2,armor:42:armor:0.015:0.63
 R	mage/frost	55	4668	0	gear	0.12	armor:8:armor:0.015:0.12
@@ -6649,7 +6649,7 @@ R	mage/frost	55	7426	12753	gear	1.36	sta:4:sta:0.34:1.36
 R	mage/frost	55	7426	12754	gear	3.5600000000000005	sp:2:sp:1.1:2.2,sta:4:sta:0.34:1.36
 R	mage/frost	55	7426	12755	gear	3.5600000000000005	sp:2:sp:1.1:2.2,sta:4:sta:0.34:1.36
 R	mage/frost	55	7888	0	gear	17.32	int:1:int:0.72:0.72,sp:12:sp:1.1:13.2,sta:10:sta:0.34:3.4
-R	mage/frost	55	9452	0	mh	0.0	
+R	mage/frost	55	9452	0	mh	39.6	sp:36:sp:1.1:39.6
 R	mage/frost	55	9822	0	gear	0.315	armor:21:armor:0.015:0.315
 R	mage/frost	55	9822	12718	gear	4.555000000000001	int:4:int:0.72:2.88,sta:4:sta:0.34:1.36,armor:21:armor:0.015:0.315
 R	mage/frost	55	9822	12719	gear	4.355	spi:4:spi:0.67:2.68,sta:4:sta:0.34:1.36,armor:21:armor:0.015:0.315
@@ -6853,7 +6853,7 @@ R	mage/frost	55	271207	0	gear	6.2250000000000005	mp5:4:mp5:1:4,sta:5:sta:0.34:1.
 R	mage/frost	55	272091	0	mh	4.42	sta:13:sta:0.34:4.42
 R	mage/frost	55	272812	0	gear	24.695	int:12:int:0.72:8.64,sta:19:sta:0.34:6.46,sp:8:sp:1.1:8.8,armor:53:armor:0.015:0.795
 R	mage/frost	55	273926	0	gear	34.879999999999995	sta:15:sta:0.34:5.1,int:11:int:0.72:7.92,spi:13:spi:0.67:8.71,spDmg:11:sp:1.1:12.1,armor:70:armor:0.015:1.05
-R	mage/frost	55	275648	0	mh	17.93	crit:1:spellCrit:5.2:5.2,spi:19:spi:0.67:12.73
+R	mage/frost	55	275648	0	mh	75.13	crit:1:spellCrit:5.2:5.2,spi:19:spi:0.67:12.73,sp:52:sp:1.1:57.2
 R	mage/frost	55	277102	0	gear	0.32999999999999996	armor:22:armor:0.015:0.33
 R	mage/frost	55	279891	0	gear	1.915	sta:4:sta:0.34:1.36,armor:37:armor:0.015:0.555
 R	mage/frost	55	281689	0	gear	0.03	armor:2:armor:0.015:0.03
@@ -6883,7 +6883,7 @@ R	mage/frost	60	1156	0	gear	2.82	int:6:int:0.47:2.82
 R	mage/frost	60	1764	0	gear	0.247	armor:19:armor:0.013:0.247
 R	mage/frost	60	2158	0	gear	0.312	armor:24:armor:0.013:0.312
 R	mage/frost	60	2612	0	gear	0.19499999999999998	armor:15:armor:0.013:0.195
-R	mage/frost	60	3227	0	mh	0.0	
+R	mage/frost	60	3227	0	mh	18.0	sp:18:sp:1:18
 R	mage/frost	60	3593	0	gear	0.33799999999999997	armor:26:armor:0.013:0.338
 R	mage/frost	60	4041	0	gear	7.646	sta:10:sta:0.24:2.4,int:10:int:0.47:4.7,armor:42:armor:0.013:0.546
 R	mage/frost	60	4668	0	gear	0.104	armor:8:armor:0.013:0.104
@@ -6948,7 +6948,7 @@ R	mage/frost	60	7426	12753	gear	0.96	sta:4:sta:0.24:0.96
 R	mage/frost	60	7426	12754	gear	2.96	sp:2:sp:1:2,sta:4:sta:0.24:0.96
 R	mage/frost	60	7426	12755	gear	2.96	sp:2:sp:1:2,sta:4:sta:0.24:0.96
 R	mage/frost	60	7888	0	gear	14.870000000000001	int:1:int:0.47:0.47,sp:12:sp:1:12,sta:10:sta:0.24:2.4
-R	mage/frost	60	9452	0	mh	0.0	
+R	mage/frost	60	9452	0	mh	36.0	sp:36:sp:1:36
 R	mage/frost	60	9822	0	gear	0.27299999999999996	armor:21:armor:0.013:0.273
 R	mage/frost	60	9822	12718	gear	3.113	int:4:int:0.47:1.88,sta:4:sta:0.24:0.96,armor:21:armor:0.013:0.273
 R	mage/frost	60	9822	12719	gear	4.632999999999999	spi:4:spi:0.85:3.4,sta:4:sta:0.24:0.96,armor:21:armor:0.013:0.273
@@ -7152,7 +7152,7 @@ R	mage/frost	60	271207	0	gear	6.855	mp5:4:mp5:1.3:5.2,sta:5:sta:0.24:1.2,armor:3
 R	mage/frost	60	272091	0	mh	3.12	sta:13:sta:0.24:3.12
 R	mage/frost	60	272812	0	gear	18.889	int:12:int:0.47:5.64,sta:19:sta:0.24:4.56,sp:8:sp:1:8,armor:53:armor:0.013:0.689
 R	mage/frost	60	273926	0	gear	31.73	sta:15:sta:0.24:3.6,int:11:int:0.47:5.17,spi:13:spi:0.85:11.05,spDmg:11:sp:1:11,armor:70:armor:0.013:0.91
-R	mage/frost	60	275648	0	mh	21.65	crit:1:spellCrit:5.5:5.5,spi:19:spi:0.85:16.15
+R	mage/frost	60	275648	0	mh	73.65	crit:1:spellCrit:5.5:5.5,spi:19:spi:0.85:16.15,sp:52:sp:1:52
 R	mage/frost	60	277102	0	gear	0.286	armor:22:armor:0.013:0.286
 R	mage/frost	60	279891	0	gear	1.4409999999999998	sta:4:sta:0.24:0.96,armor:37:armor:0.013:0.481
 R	mage/frost	60	281689	0	gear	0.026	armor:2:armor:0.013:0.026
@@ -7182,7 +7182,7 @@ R	mage/fire	12	1156	0	gear	1.32	int:6:int:0.22:1.32
 R	mage/fire	12	1764	0	gear	0.19	armor:19:armor:0.01:0.19
 R	mage/fire	12	2158	0	gear	0.24	armor:24:armor:0.01:0.24
 R	mage/fire	12	2612	0	gear	0.15	armor:15:armor:0.01:0.15
-R	mage/fire	12	3227	0	mh	0.0	
+R	mage/fire	12	3227	0	mh	18.0	sp:18:sp:1:18
 R	mage/fire	12	3593	0	gear	0.26	armor:26:armor:0.01:0.26
 R	mage/fire	12	4041	0	gear	10.42	sta:10:sta:0.78:7.8,int:10:int:0.22:2.2,armor:42:armor:0.01:0.42
 R	mage/fire	12	4668	0	gear	0.08	armor:8:armor:0.01:0.08
@@ -7247,7 +7247,7 @@ R	mage/fire	12	7426	12753	gear	3.12	sta:4:sta:0.78:3.12
 R	mage/fire	12	7426	12754	gear	5.12	sp:2:sp:1:2,sta:4:sta:0.78:3.12
 R	mage/fire	12	7426	12755	gear	5.12	sp:2:sp:1:2,sta:4:sta:0.78:3.12
 R	mage/fire	12	7888	0	gear	20.020000000000003	int:1:int:0.22:0.22,sp:12:sp:1:12,sta:10:sta:0.78:7.8
-R	mage/fire	12	9452	0	mh	0.0	
+R	mage/fire	12	9452	0	mh	36.0	sp:36:sp:1:36
 R	mage/fire	12	9822	0	gear	0.21	armor:21:armor:0.01:0.21
 R	mage/fire	12	9822	12718	gear	4.21	int:4:int:0.22:0.88,sta:4:sta:0.78:3.12,armor:21:armor:0.01:0.21
 R	mage/fire	12	9822	12719	gear	4.17	spi:4:spi:0.21:0.84,sta:4:sta:0.78:3.12,armor:21:armor:0.01:0.21
@@ -7451,7 +7451,7 @@ R	mage/fire	12	271207	0	gear	4.8100000000000005	mp5:4:mp5:0.14:0.56,sta:5:sta:0.
 R	mage/fire	12	272091	0	mh	10.14	sta:13:sta:0.78:10.14
 R	mage/fire	12	272812	0	gear	25.990000000000002	int:12:int:0.22:2.64,sta:19:sta:0.78:14.82,sp:8:sp:1:8,armor:53:armor:0.01:0.53
 R	mage/fire	12	273926	0	gear	28.55	sta:15:sta:0.78:11.7,int:11:int:0.22:2.42,spi:13:spi:0.21:2.73,spDmg:11:sp:1:11,armor:70:armor:0.01:0.7
-R	mage/fire	12	275648	0	mh	4.4799999999999995	crit:1:spellCrit:0.49:0.49,spi:19:spi:0.21:3.99
+R	mage/fire	12	275648	0	mh	56.48	crit:1:spellCrit:0.49:0.49,spi:19:spi:0.21:3.99,sp:52:sp:1:52
 R	mage/fire	12	277102	0	gear	0.22	armor:22:armor:0.01:0.22
 R	mage/fire	12	279891	0	gear	3.49	sta:4:sta:0.78:3.12,armor:37:armor:0.01:0.37
 R	mage/fire	12	281689	0	gear	0.02	armor:2:armor:0.01:0.02
@@ -7481,7 +7481,7 @@ R	mage/fire	25	1156	0	gear	1.7399999999999998	int:6:int:0.29:1.74
 R	mage/fire	25	1764	0	gear	0.57	armor:19:armor:0.03:0.57
 R	mage/fire	25	2158	0	gear	0.72	armor:24:armor:0.03:0.72
 R	mage/fire	25	2612	0	gear	0.44999999999999996	armor:15:armor:0.03:0.45
-R	mage/fire	25	3227	0	mh	0.0	
+R	mage/fire	25	3227	0	mh	18.0	sp:18:sp:1:18
 R	mage/fire	25	3593	0	gear	0.78	armor:26:armor:0.03:0.78
 R	mage/fire	25	4041	0	gear	16.16	sta:10:sta:1.2:12,int:10:int:0.29:2.9,armor:42:armor:0.03:1.26
 R	mage/fire	25	4668	0	gear	0.24	armor:8:armor:0.03:0.24
@@ -7546,7 +7546,7 @@ R	mage/fire	25	7426	12753	gear	4.8	sta:4:sta:1.2:4.8
 R	mage/fire	25	7426	12754	gear	6.8	sp:2:sp:1:2,sta:4:sta:1.2:4.8
 R	mage/fire	25	7426	12755	gear	6.8	sp:2:sp:1:2,sta:4:sta:1.2:4.8
 R	mage/fire	25	7888	0	gear	24.29	int:1:int:0.29:0.29,sp:12:sp:1:12,sta:10:sta:1.2:12
-R	mage/fire	25	9452	0	mh	0.0	
+R	mage/fire	25	9452	0	mh	36.0	sp:36:sp:1:36
 R	mage/fire	25	9822	0	gear	0.63	armor:21:armor:0.03:0.63
 R	mage/fire	25	9822	12718	gear	6.59	int:4:int:0.29:1.16,sta:4:sta:1.2:4.8,armor:21:armor:0.03:0.63
 R	mage/fire	25	9822	12719	gear	6.069999999999999	spi:4:spi:0.16:0.64,sta:4:sta:1.2:4.8,armor:21:armor:0.03:0.63
@@ -7750,7 +7750,7 @@ R	mage/fire	25	271207	0	gear	7.6899999999999995	mp5:4:mp5:0.16:0.64,sta:5:sta:1.
 R	mage/fire	25	272091	0	mh	15.6	sta:13:sta:1.2:15.6
 R	mage/fire	25	272812	0	gear	35.870000000000005	int:12:int:0.29:3.48,sta:19:sta:1.2:22.8,sp:8:sp:1:8,armor:53:armor:0.03:1.59
 R	mage/fire	25	273926	0	gear	36.370000000000005	sta:15:sta:1.2:18,int:11:int:0.29:3.19,spi:13:spi:0.16:2.08,spDmg:11:sp:1:11,armor:70:armor:0.03:2.1
-R	mage/fire	25	275648	0	mh	4.24	crit:1:spellCrit:1.2:1.2,spi:19:spi:0.16:3.04
+R	mage/fire	25	275648	0	mh	56.24	crit:1:spellCrit:1.2:1.2,spi:19:spi:0.16:3.04,sp:52:sp:1:52
 R	mage/fire	25	277102	0	gear	0.6599999999999999	armor:22:armor:0.03:0.66
 R	mage/fire	25	279891	0	gear	5.91	sta:4:sta:1.2:4.8,armor:37:armor:0.03:1.11
 R	mage/fire	25	281689	0	gear	0.06	armor:2:armor:0.03:0.06
@@ -7780,7 +7780,7 @@ R	mage/fire	34	1156	0	gear	3.4799999999999995	int:6:int:0.58:3.48
 R	mage/fire	34	1764	0	gear	0.722	armor:19:armor:0.038:0.722
 R	mage/fire	34	2158	0	gear	0.9119999999999999	armor:24:armor:0.038:0.912
 R	mage/fire	34	2612	0	gear	0.57	armor:15:armor:0.038:0.57
-R	mage/fire	34	3227	0	mh	0.0	
+R	mage/fire	34	3227	0	mh	18.0	sp:18:sp:1:18
 R	mage/fire	34	3593	0	gear	0.988	armor:26:armor:0.038:0.988
 R	mage/fire	34	4041	0	gear	21.396	sta:10:sta:1.4:14,int:10:int:0.58:5.8,armor:42:armor:0.038:1.596
 R	mage/fire	34	4668	0	gear	0.304	armor:8:armor:0.038:0.304
@@ -7845,7 +7845,7 @@ R	mage/fire	34	7426	12753	gear	5.6	sta:4:sta:1.4:5.6
 R	mage/fire	34	7426	12754	gear	7.6	sp:2:sp:1:2,sta:4:sta:1.4:5.6
 R	mage/fire	34	7426	12755	gear	7.6	sp:2:sp:1:2,sta:4:sta:1.4:5.6
 R	mage/fire	34	7888	0	gear	26.58	int:1:int:0.58:0.58,sp:12:sp:1:12,sta:10:sta:1.4:14
-R	mage/fire	34	9452	0	mh	0.0	
+R	mage/fire	34	9452	0	mh	36.0	sp:36:sp:1:36
 R	mage/fire	34	9822	0	gear	0.7979999999999999	armor:21:armor:0.038:0.798
 R	mage/fire	34	9822	12718	gear	8.718	int:4:int:0.58:2.32,sta:4:sta:1.4:5.6,armor:21:armor:0.038:0.798
 R	mage/fire	34	9822	12719	gear	7.398	spi:4:spi:0.25:1,sta:4:sta:1.4:5.6,armor:21:armor:0.038:0.798
@@ -8049,7 +8049,7 @@ R	mage/fire	34	271207	0	gear	10.13	mp5:4:mp5:0.45:1.8,sta:5:sta:1.4:7,armor:35:a
 R	mage/fire	34	272091	0	mh	18.2	sta:13:sta:1.4:18.2
 R	mage/fire	34	272812	0	gear	43.574	int:12:int:0.58:6.96,sta:19:sta:1.4:26.6,sp:8:sp:1:8,armor:53:armor:0.038:2.014
 R	mage/fire	34	273926	0	gear	44.28999999999999	sta:15:sta:1.4:21,int:11:int:0.58:6.38,spi:13:spi:0.25:3.25,spDmg:11:sp:1:11,armor:70:armor:0.038:2.66
-R	mage/fire	34	275648	0	mh	7.45	crit:1:spellCrit:2.7:2.7,spi:19:spi:0.25:4.75
+R	mage/fire	34	275648	0	mh	59.45	crit:1:spellCrit:2.7:2.7,spi:19:spi:0.25:4.75,sp:52:sp:1:52
 R	mage/fire	34	277102	0	gear	0.836	armor:22:armor:0.038:0.836
 R	mage/fire	34	279891	0	gear	7.005999999999999	sta:4:sta:1.4:5.6,armor:37:armor:0.038:1.406
 R	mage/fire	34	281689	0	gear	0.076	armor:2:armor:0.038:0.076
@@ -8079,7 +8079,7 @@ R	mage/fire	45	1156	0	gear	4.26	int:6:int:0.71:4.26
 R	mage/fire	45	1764	0	gear	0.665	armor:19:armor:0.035:0.665
 R	mage/fire	45	2158	0	gear	0.8400000000000001	armor:24:armor:0.035:0.84
 R	mage/fire	45	2612	0	gear	0.525	armor:15:armor:0.035:0.525
-R	mage/fire	45	3227	0	mh	0.0	
+R	mage/fire	45	3227	0	mh	19.8	sp:18:sp:1.1:19.8
 R	mage/fire	45	3593	0	gear	0.9100000000000001	armor:26:armor:0.035:0.91
 R	mage/fire	45	4041	0	gear	20.57	sta:10:sta:1.2:12,int:10:int:0.71:7.1,armor:42:armor:0.035:1.47
 R	mage/fire	45	4668	0	gear	0.28	armor:8:armor:0.035:0.28
@@ -8144,7 +8144,7 @@ R	mage/fire	45	7426	12753	gear	4.8	sta:4:sta:1.2:4.8
 R	mage/fire	45	7426	12754	gear	7.0	sp:2:sp:1.1:2.2,sta:4:sta:1.2:4.8
 R	mage/fire	45	7426	12755	gear	7.0	sp:2:sp:1.1:2.2,sta:4:sta:1.2:4.8
 R	mage/fire	45	7888	0	gear	25.91	int:1:int:0.71:0.71,sp:12:sp:1.1:13.2,sta:10:sta:1.2:12
-R	mage/fire	45	9452	0	mh	0.0	
+R	mage/fire	45	9452	0	mh	39.6	sp:36:sp:1.1:39.6
 R	mage/fire	45	9822	0	gear	0.7350000000000001	armor:21:armor:0.035:0.735
 R	mage/fire	45	9822	12718	gear	8.375	int:4:int:0.71:2.84,sta:4:sta:1.2:4.8,armor:21:armor:0.035:0.735
 R	mage/fire	45	9822	12719	gear	6.935	spi:4:spi:0.35:1.4,sta:4:sta:1.2:4.8,armor:21:armor:0.035:0.735
@@ -8348,7 +8348,7 @@ R	mage/fire	45	271207	0	gear	9.905	mp5:4:mp5:0.67:2.68,sta:5:sta:1.2:6,armor:35:
 R	mage/fire	45	272091	0	mh	15.6	sta:13:sta:1.2:15.6
 R	mage/fire	45	272812	0	gear	41.975	int:12:int:0.71:8.52,sta:19:sta:1.2:22.8,sp:8:sp:1.1:8.8,armor:53:armor:0.035:1.855
 R	mage/fire	45	273926	0	gear	44.910000000000004	sta:15:sta:1.2:18,int:11:int:0.71:7.81,spi:13:spi:0.35:4.55,spDmg:11:sp:1.1:12.1,armor:70:armor:0.035:2.45
-R	mage/fire	45	275648	0	mh	10.35	crit:1:spellCrit:3.7:3.7,spi:19:spi:0.35:6.65
+R	mage/fire	45	275648	0	mh	67.55	crit:1:spellCrit:3.7:3.7,spi:19:spi:0.35:6.65,sp:52:sp:1.1:57.2
 R	mage/fire	45	277102	0	gear	0.77	armor:22:armor:0.035:0.77
 R	mage/fire	45	279891	0	gear	6.095	sta:4:sta:1.2:4.8,armor:37:armor:0.035:1.295
 R	mage/fire	45	281689	0	gear	0.07	armor:2:armor:0.035:0.07
@@ -8378,7 +8378,7 @@ R	mage/fire	55	1156	0	gear	5.16	int:6:int:0.86:5.16
 R	mage/fire	55	1764	0	gear	0.703	armor:19:armor:0.037:0.703
 R	mage/fire	55	2158	0	gear	0.8879999999999999	armor:24:armor:0.037:0.888
 R	mage/fire	55	2612	0	gear	0.5549999999999999	armor:15:armor:0.037:0.555
-R	mage/fire	55	3227	0	mh	0.0	
+R	mage/fire	55	3227	0	mh	19.8	sp:18:sp:1.1:19.8
 R	mage/fire	55	3593	0	gear	0.962	armor:26:armor:0.037:0.962
 R	mage/fire	55	4041	0	gear	22.154	sta:10:sta:1.2:12,int:10:int:0.86:8.6,armor:42:armor:0.037:1.554
 R	mage/fire	55	4668	0	gear	0.296	armor:8:armor:0.037:0.296
@@ -8443,7 +8443,7 @@ R	mage/fire	55	7426	12753	gear	4.8	sta:4:sta:1.2:4.8
 R	mage/fire	55	7426	12754	gear	7.0	sp:2:sp:1.1:2.2,sta:4:sta:1.2:4.8
 R	mage/fire	55	7426	12755	gear	7.0	sp:2:sp:1.1:2.2,sta:4:sta:1.2:4.8
 R	mage/fire	55	7888	0	gear	26.060000000000002	int:1:int:0.86:0.86,sp:12:sp:1.1:13.2,sta:10:sta:1.2:12
-R	mage/fire	55	9452	0	mh	0.0	
+R	mage/fire	55	9452	0	mh	39.6	sp:36:sp:1.1:39.6
 R	mage/fire	55	9822	0	gear	0.7769999999999999	armor:21:armor:0.037:0.777
 R	mage/fire	55	9822	12718	gear	9.017	int:4:int:0.86:3.44,sta:4:sta:1.2:4.8,armor:21:armor:0.037:0.777
 R	mage/fire	55	9822	12719	gear	6.976999999999999	spi:4:spi:0.35:1.4,sta:4:sta:1.2:4.8,armor:21:armor:0.037:0.777
@@ -8647,7 +8647,7 @@ R	mage/fire	55	271207	0	gear	10.135	mp5:4:mp5:0.71:2.84,sta:5:sta:1.2:6,armor:35
 R	mage/fire	55	272091	0	mh	15.6	sta:13:sta:1.2:15.6
 R	mage/fire	55	272812	0	gear	43.881	int:12:int:0.86:10.32,sta:19:sta:1.2:22.8,sp:8:sp:1.1:8.8,armor:53:armor:0.037:1.961
 R	mage/fire	55	273926	0	gear	46.7	sta:15:sta:1.2:18,int:11:int:0.86:9.46,spi:13:spi:0.35:4.55,spDmg:11:sp:1.1:12.1,armor:70:armor:0.037:2.59
-R	mage/fire	55	275648	0	mh	11.05	crit:1:spellCrit:4.4:4.4,spi:19:spi:0.35:6.65
+R	mage/fire	55	275648	0	mh	68.25	crit:1:spellCrit:4.4:4.4,spi:19:spi:0.35:6.65,sp:52:sp:1.1:57.2
 R	mage/fire	55	277102	0	gear	0.814	armor:22:armor:0.037:0.814
 R	mage/fire	55	279891	0	gear	6.169	sta:4:sta:1.2:4.8,armor:37:armor:0.037:1.369
 R	mage/fire	55	281689	0	gear	0.074	armor:2:armor:0.037:0.074
@@ -8677,7 +8677,7 @@ R	mage/fire	60	1156	0	gear	4.5	int:6:int:0.75:4.5
 R	mage/fire	60	1764	0	gear	0.722	armor:19:armor:0.038:0.722
 R	mage/fire	60	2158	0	gear	0.9119999999999999	armor:24:armor:0.038:0.912
 R	mage/fire	60	2612	0	gear	0.57	armor:15:armor:0.038:0.57
-R	mage/fire	60	3227	0	mh	0.0	
+R	mage/fire	60	3227	0	mh	19.8	sp:18:sp:1.1:19.8
 R	mage/fire	60	3593	0	gear	0.988	armor:26:armor:0.038:0.988
 R	mage/fire	60	4041	0	gear	21.096	sta:10:sta:1.2:12,int:10:int:0.75:7.5,armor:42:armor:0.038:1.596
 R	mage/fire	60	4668	0	gear	0.304	armor:8:armor:0.038:0.304
@@ -8742,7 +8742,7 @@ R	mage/fire	60	7426	12753	gear	4.8	sta:4:sta:1.2:4.8
 R	mage/fire	60	7426	12754	gear	7.0	sp:2:sp:1.1:2.2,sta:4:sta:1.2:4.8
 R	mage/fire	60	7426	12755	gear	7.0	sp:2:sp:1.1:2.2,sta:4:sta:1.2:4.8
 R	mage/fire	60	7888	0	gear	25.950000000000003	int:1:int:0.75:0.75,sp:12:sp:1.1:13.2,sta:10:sta:1.2:12
-R	mage/fire	60	9452	0	mh	0.0	
+R	mage/fire	60	9452	0	mh	39.6	sp:36:sp:1.1:39.6
 R	mage/fire	60	9822	0	gear	0.7979999999999999	armor:21:armor:0.038:0.798
 R	mage/fire	60	9822	12718	gear	8.597999999999999	int:4:int:0.75:3,sta:4:sta:1.2:4.8,armor:21:armor:0.038:0.798
 R	mage/fire	60	9822	12719	gear	7.758	spi:4:spi:0.54:2.16,sta:4:sta:1.2:4.8,armor:21:armor:0.038:0.798
@@ -8946,7 +8946,7 @@ R	mage/fire	60	271207	0	gear	11.33	mp5:4:mp5:1:4,sta:5:sta:1.2:6,armor:35:armor:
 R	mage/fire	60	272091	0	mh	15.6	sta:13:sta:1.2:15.6
 R	mage/fire	60	272812	0	gear	42.614000000000004	int:12:int:0.75:9,sta:19:sta:1.2:22.8,sp:8:sp:1.1:8.8,armor:53:armor:0.038:2.014
 R	mage/fire	60	273926	0	gear	48.03	sta:15:sta:1.2:18,int:11:int:0.75:8.25,spi:13:spi:0.54:7.02,spDmg:11:sp:1.1:12.1,armor:70:armor:0.038:2.66
-R	mage/fire	60	275648	0	mh	15.660000000000002	crit:1:spellCrit:5.4:5.4,spi:19:spi:0.54:10.26
+R	mage/fire	60	275648	0	mh	72.86	crit:1:spellCrit:5.4:5.4,spi:19:spi:0.54:10.26,sp:52:sp:1.1:57.2
 R	mage/fire	60	277102	0	gear	0.836	armor:22:armor:0.038:0.836
 R	mage/fire	60	279891	0	gear	6.2059999999999995	sta:4:sta:1.2:4.8,armor:37:armor:0.038:1.406
 R	mage/fire	60	281689	0	gear	0.076	armor:2:armor:0.038:0.076
@@ -8976,7 +8976,7 @@ R	mage/arcane	12	1156	0	gear	1.26	int:6:int:0.21:1.26
 R	mage/arcane	12	1764	0	gear	0.152	armor:19:armor:0.008:0.152
 R	mage/arcane	12	2158	0	gear	0.192	armor:24:armor:0.008:0.192
 R	mage/arcane	12	2612	0	gear	0.12	armor:15:armor:0.008:0.12
-R	mage/arcane	12	3227	0	mh	0.0	
+R	mage/arcane	12	3227	0	mh	25.2	sp:18:sp:1.4:25.2
 R	mage/arcane	12	3593	0	gear	0.20800000000000002	armor:26:armor:0.008:0.208
 R	mage/arcane	12	4041	0	gear	7.836	sta:10:sta:0.54:5.4,int:10:int:0.21:2.1,armor:42:armor:0.008:0.336
 R	mage/arcane	12	4668	0	gear	0.064	armor:8:armor:0.008:0.064
@@ -9041,7 +9041,7 @@ R	mage/arcane	12	7426	12753	gear	2.16	sta:4:sta:0.54:2.16
 R	mage/arcane	12	7426	12754	gear	4.96	sp:2:sp:1.4:2.8,sta:4:sta:0.54:2.16
 R	mage/arcane	12	7426	12755	gear	4.96	sp:2:sp:1.4:2.8,sta:4:sta:0.54:2.16
 R	mage/arcane	12	7888	0	gear	22.409999999999997	int:1:int:0.21:0.21,sp:12:sp:1.4:16.8,sta:10:sta:0.54:5.4
-R	mage/arcane	12	9452	0	mh	0.0	
+R	mage/arcane	12	9452	0	mh	50.4	sp:36:sp:1.4:50.4
 R	mage/arcane	12	9822	0	gear	0.168	armor:21:armor:0.008:0.168
 R	mage/arcane	12	9822	12718	gear	3.168	int:4:int:0.21:0.84,sta:4:sta:0.54:2.16,armor:21:armor:0.008:0.168
 R	mage/arcane	12	9822	12719	gear	3.8880000000000003	spi:4:spi:0.39:1.56,sta:4:sta:0.54:2.16,armor:21:armor:0.008:0.168
@@ -9245,7 +9245,7 @@ R	mage/arcane	12	271207	0	gear	4.0600000000000005	mp5:4:mp5:0.27:1.08,sta:5:sta:
 R	mage/arcane	12	272091	0	mh	7.0200000000000005	sta:13:sta:0.54:7.02
 R	mage/arcane	12	272812	0	gear	24.404	int:12:int:0.21:2.52,sta:19:sta:0.54:10.26,sp:8:sp:1.4:11.2,armor:53:armor:0.008:0.424
 R	mage/arcane	12	273926	0	gear	31.44	sta:15:sta:0.54:8.1,int:11:int:0.21:2.31,spi:13:spi:0.39:5.07,spDmg:11:sp:1.4:15.4,armor:70:armor:0.008:0.56
-R	mage/arcane	12	275648	0	mh	8.120000000000001	crit:1:spellCrit:0.71:0.71,spi:19:spi:0.39:7.41
+R	mage/arcane	12	275648	0	mh	80.92	crit:1:spellCrit:0.71:0.71,spi:19:spi:0.39:7.41,sp:52:sp:1.4:72.8
 R	mage/arcane	12	277102	0	gear	0.176	armor:22:armor:0.008:0.176
 R	mage/arcane	12	279891	0	gear	2.456	sta:4:sta:0.54:2.16,armor:37:armor:0.008:0.296
 R	mage/arcane	12	281689	0	gear	0.016	armor:2:armor:0.008:0.016
@@ -9275,7 +9275,7 @@ R	mage/arcane	25	1156	0	gear	3.0	int:6:int:0.5:3
 R	mage/arcane	25	1764	0	gear	0.57	armor:19:armor:0.03:0.57
 R	mage/arcane	25	2158	0	gear	0.72	armor:24:armor:0.03:0.72
 R	mage/arcane	25	2612	0	gear	0.44999999999999996	armor:15:armor:0.03:0.45
-R	mage/arcane	25	3227	0	mh	0.0	
+R	mage/arcane	25	3227	0	mh	19.8	sp:18:sp:1.1:19.8
 R	mage/arcane	25	3593	0	gear	0.78	armor:26:armor:0.03:0.78
 R	mage/arcane	25	4041	0	gear	20.26	sta:10:sta:1.4:14,int:10:int:0.5:5,armor:42:armor:0.03:1.26
 R	mage/arcane	25	4668	0	gear	0.24	armor:8:armor:0.03:0.24
@@ -9340,7 +9340,7 @@ R	mage/arcane	25	7426	12753	gear	5.6	sta:4:sta:1.4:5.6
 R	mage/arcane	25	7426	12754	gear	7.8	sp:2:sp:1.1:2.2,sta:4:sta:1.4:5.6
 R	mage/arcane	25	7426	12755	gear	7.8	sp:2:sp:1.1:2.2,sta:4:sta:1.4:5.6
 R	mage/arcane	25	7888	0	gear	27.700000000000003	int:1:int:0.5:0.5,sp:12:sp:1.1:13.2,sta:10:sta:1.4:14
-R	mage/arcane	25	9452	0	mh	0.0	
+R	mage/arcane	25	9452	0	mh	39.6	sp:36:sp:1.1:39.6
 R	mage/arcane	25	9822	0	gear	0.63	armor:21:armor:0.03:0.63
 R	mage/arcane	25	9822	12718	gear	8.23	int:4:int:0.5:2,sta:4:sta:1.4:5.6,armor:21:armor:0.03:0.63
 R	mage/arcane	25	9822	12719	gear	7.069999999999999	spi:4:spi:0.21:0.84,sta:4:sta:1.4:5.6,armor:21:armor:0.03:0.63
@@ -9544,7 +9544,7 @@ R	mage/arcane	25	271207	0	gear	9.05	mp5:4:mp5:0.25:1,sta:5:sta:1.4:7,armor:35:ar
 R	mage/arcane	25	272091	0	mh	18.2	sta:13:sta:1.4:18.2
 R	mage/arcane	25	272812	0	gear	42.989999999999995	int:12:int:0.5:6,sta:19:sta:1.4:26.6,sp:8:sp:1.1:8.8,armor:53:armor:0.03:1.59
 R	mage/arcane	25	273926	0	gear	43.43	sta:15:sta:1.4:21,int:11:int:0.5:5.5,spi:13:spi:0.21:2.73,spDmg:11:sp:1.1:12.1,armor:70:armor:0.03:2.1
-R	mage/arcane	25	275648	0	mh	4.9399999999999995	crit:1:spellCrit:0.95:0.95,spi:19:spi:0.21:3.99
+R	mage/arcane	25	275648	0	mh	62.14	crit:1:spellCrit:0.95:0.95,spi:19:spi:0.21:3.99,sp:52:sp:1.1:57.2
 R	mage/arcane	25	277102	0	gear	0.6599999999999999	armor:22:armor:0.03:0.66
 R	mage/arcane	25	279891	0	gear	6.709999999999999	sta:4:sta:1.4:5.6,armor:37:armor:0.03:1.11
 R	mage/arcane	25	281689	0	gear	0.06	armor:2:armor:0.03:0.06
@@ -9574,7 +9574,7 @@ R	mage/arcane	34	1156	0	gear	4.14	int:6:int:0.69:4.14
 R	mage/arcane	34	1764	0	gear	0.418	armor:19:armor:0.022:0.418
 R	mage/arcane	34	2158	0	gear	0.528	armor:24:armor:0.022:0.528
 R	mage/arcane	34	2612	0	gear	0.32999999999999996	armor:15:armor:0.022:0.33
-R	mage/arcane	34	3227	0	mh	0.0	
+R	mage/arcane	34	3227	0	mh	18.0	sp:18:sp:1:18
 R	mage/arcane	34	3593	0	gear	0.572	armor:26:armor:0.022:0.572
 R	mage/arcane	34	4041	0	gear	17.024	sta:10:sta:0.92:9.2,int:10:int:0.69:6.9,armor:42:armor:0.022:0.924
 R	mage/arcane	34	4668	0	gear	0.176	armor:8:armor:0.022:0.176
@@ -9639,7 +9639,7 @@ R	mage/arcane	34	7426	12753	gear	3.68	sta:4:sta:0.92:3.68
 R	mage/arcane	34	7426	12754	gear	5.68	sp:2:sp:1:2,sta:4:sta:0.92:3.68
 R	mage/arcane	34	7426	12755	gear	5.68	sp:2:sp:1:2,sta:4:sta:0.92:3.68
 R	mage/arcane	34	7888	0	gear	21.89	int:1:int:0.69:0.69,sp:12:sp:1:12,sta:10:sta:0.92:9.2
-R	mage/arcane	34	9452	0	mh	0.0	
+R	mage/arcane	34	9452	0	mh	36.0	sp:36:sp:1:36
 R	mage/arcane	34	9822	0	gear	0.46199999999999997	armor:21:armor:0.022:0.462
 R	mage/arcane	34	9822	12718	gear	6.901999999999999	int:4:int:0.69:2.76,sta:4:sta:0.92:3.68,armor:21:armor:0.022:0.462
 R	mage/arcane	34	9822	12719	gear	5.622	spi:4:spi:0.37:1.48,sta:4:sta:0.92:3.68,armor:21:armor:0.022:0.462
@@ -9843,7 +9843,7 @@ R	mage/arcane	34	271207	0	gear	7.13	mp5:4:mp5:0.44:1.76,sta:5:sta:0.92:4.6,armor
 R	mage/arcane	34	272091	0	mh	11.96	sta:13:sta:0.92:11.96
 R	mage/arcane	34	272812	0	gear	34.925999999999995	int:12:int:0.69:8.28,sta:19:sta:0.92:17.48,sp:8:sp:1:8,armor:53:armor:0.022:1.166
 R	mage/arcane	34	273926	0	gear	38.74	sta:15:sta:0.92:13.8,int:11:int:0.69:7.59,spi:13:spi:0.37:4.81,spDmg:11:sp:1:11,armor:70:armor:0.022:1.54
-R	mage/arcane	34	275648	0	mh	8.73	crit:1:spellCrit:1.7:1.7,spi:19:spi:0.37:7.03
+R	mage/arcane	34	275648	0	mh	60.730000000000004	crit:1:spellCrit:1.7:1.7,spi:19:spi:0.37:7.03,sp:52:sp:1:52
 R	mage/arcane	34	277102	0	gear	0.484	armor:22:armor:0.022:0.484
 R	mage/arcane	34	279891	0	gear	4.494	sta:4:sta:0.92:3.68,armor:37:armor:0.022:0.814
 R	mage/arcane	34	281689	0	gear	0.044	armor:2:armor:0.022:0.044
@@ -9873,7 +9873,7 @@ R	mage/arcane	45	1156	0	gear	4.26	int:6:int:0.71:4.26
 R	mage/arcane	45	1764	0	gear	0.551	armor:19:armor:0.029:0.551
 R	mage/arcane	45	2158	0	gear	0.6960000000000001	armor:24:armor:0.029:0.696
 R	mage/arcane	45	2612	0	gear	0.435	armor:15:armor:0.029:0.435
-R	mage/arcane	45	3227	0	mh	0.0	
+R	mage/arcane	45	3227	0	mh	18.0	sp:18:sp:1:18
 R	mage/arcane	45	3593	0	gear	0.754	armor:26:armor:0.029:0.754
 R	mage/arcane	45	4041	0	gear	19.318	sta:10:sta:1.1:11,int:10:int:0.71:7.1,armor:42:armor:0.029:1.218
 R	mage/arcane	45	4668	0	gear	0.232	armor:8:armor:0.029:0.232
@@ -9938,7 +9938,7 @@ R	mage/arcane	45	7426	12753	gear	4.4	sta:4:sta:1.1:4.4
 R	mage/arcane	45	7426	12754	gear	6.4	sp:2:sp:1:2,sta:4:sta:1.1:4.4
 R	mage/arcane	45	7426	12755	gear	6.4	sp:2:sp:1:2,sta:4:sta:1.1:4.4
 R	mage/arcane	45	7888	0	gear	23.71	int:1:int:0.71:0.71,sp:12:sp:1:12,sta:10:sta:1.1:11
-R	mage/arcane	45	9452	0	mh	0.0	
+R	mage/arcane	45	9452	0	mh	36.0	sp:36:sp:1:36
 R	mage/arcane	45	9822	0	gear	0.609	armor:21:armor:0.029:0.609
 R	mage/arcane	45	9822	12718	gear	7.849	int:4:int:0.71:2.84,sta:4:sta:1.1:4.4,armor:21:armor:0.029:0.609
 R	mage/arcane	45	9822	12719	gear	6.049	spi:4:spi:0.26:1.04,sta:4:sta:1.1:4.4,armor:21:armor:0.029:0.609
@@ -10142,7 +10142,7 @@ R	mage/arcane	45	271207	0	gear	7.635	mp5:4:mp5:0.28:1.12,sta:5:sta:1.1:5.5,armor
 R	mage/arcane	45	272091	0	mh	14.3	sta:13:sta:1.1:14.3
 R	mage/arcane	45	272812	0	gear	38.957	int:12:int:0.71:8.52,sta:19:sta:1.1:20.9,sp:8:sp:1:8,armor:53:armor:0.029:1.537
 R	mage/arcane	45	273926	0	gear	40.72	sta:15:sta:1.1:16.5,int:11:int:0.71:7.81,spi:13:spi:0.26:3.38,spDmg:11:sp:1:11,armor:70:armor:0.029:2.03
-R	mage/arcane	45	275648	0	mh	8.34	crit:1:spellCrit:3.4:3.4,spi:19:spi:0.26:4.94
+R	mage/arcane	45	275648	0	mh	60.34	crit:1:spellCrit:3.4:3.4,spi:19:spi:0.26:4.94,sp:52:sp:1:52
 R	mage/arcane	45	277102	0	gear	0.638	armor:22:armor:0.029:0.638
 R	mage/arcane	45	279891	0	gear	5.473000000000001	sta:4:sta:1.1:4.4,armor:37:armor:0.029:1.073
 R	mage/arcane	45	281689	0	gear	0.058	armor:2:armor:0.029:0.058
@@ -10172,7 +10172,7 @@ R	mage/arcane	55	1156	0	gear	5.9399999999999995	int:6:int:0.99:5.94
 R	mage/arcane	55	1764	0	gear	0.589	armor:19:armor:0.031:0.589
 R	mage/arcane	55	2158	0	gear	0.744	armor:24:armor:0.031:0.744
 R	mage/arcane	55	2612	0	gear	0.46499999999999997	armor:15:armor:0.031:0.465
-R	mage/arcane	55	3227	0	mh	0.0	
+R	mage/arcane	55	3227	0	mh	18.0	sp:18:sp:1:18
 R	mage/arcane	55	3593	0	gear	0.806	armor:26:armor:0.031:0.806
 R	mage/arcane	55	4041	0	gear	22.201999999999998	sta:10:sta:1.1:11,int:10:int:0.99:9.9,armor:42:armor:0.031:1.302
 R	mage/arcane	55	4668	0	gear	0.248	armor:8:armor:0.031:0.248
@@ -10237,7 +10237,7 @@ R	mage/arcane	55	7426	12753	gear	4.4	sta:4:sta:1.1:4.4
 R	mage/arcane	55	7426	12754	gear	6.4	sp:2:sp:1:2,sta:4:sta:1.1:4.4
 R	mage/arcane	55	7426	12755	gear	6.4	sp:2:sp:1:2,sta:4:sta:1.1:4.4
 R	mage/arcane	55	7888	0	gear	23.990000000000002	int:1:int:0.99:0.99,sp:12:sp:1:12,sta:10:sta:1.1:11
-R	mage/arcane	55	9452	0	mh	0.0	
+R	mage/arcane	55	9452	0	mh	36.0	sp:36:sp:1:36
 R	mage/arcane	55	9822	0	gear	0.651	armor:21:armor:0.031:0.651
 R	mage/arcane	55	9822	12718	gear	9.011	int:4:int:0.99:3.96,sta:4:sta:1.1:4.4,armor:21:armor:0.031:0.651
 R	mage/arcane	55	9822	12719	gear	6.851	spi:4:spi:0.45:1.8,sta:4:sta:1.1:4.4,armor:21:armor:0.031:0.651
@@ -10441,7 +10441,7 @@ R	mage/arcane	55	271207	0	gear	9.265	mp5:4:mp5:0.67:2.68,sta:5:sta:1.1:5.5,armor
 R	mage/arcane	55	272091	0	mh	14.3	sta:13:sta:1.1:14.3
 R	mage/arcane	55	272812	0	gear	42.423	int:12:int:0.99:11.88,sta:19:sta:1.1:20.9,sp:8:sp:1:8,armor:53:armor:0.031:1.643
 R	mage/arcane	55	273926	0	gear	46.410000000000004	sta:15:sta:1.1:16.5,int:11:int:0.99:10.89,spi:13:spi:0.45:5.85,spDmg:11:sp:1:11,armor:70:armor:0.031:2.17
-R	mage/arcane	55	275648	0	mh	13.55	crit:1:spellCrit:5:5,spi:19:spi:0.45:8.55
+R	mage/arcane	55	275648	0	mh	65.55	crit:1:spellCrit:5:5,spi:19:spi:0.45:8.55,sp:52:sp:1:52
 R	mage/arcane	55	277102	0	gear	0.6819999999999999	armor:22:armor:0.031:0.682
 R	mage/arcane	55	279891	0	gear	5.547000000000001	sta:4:sta:1.1:4.4,armor:37:armor:0.031:1.147
 R	mage/arcane	55	281689	0	gear	0.062	armor:2:armor:0.031:0.062
@@ -10471,7 +10471,7 @@ R	mage/arcane	60	1156	0	gear	6.0	int:6:int:1:6
 R	mage/arcane	60	1764	0	gear	0.608	armor:19:armor:0.032:0.608
 R	mage/arcane	60	2158	0	gear	0.768	armor:24:armor:0.032:0.768
 R	mage/arcane	60	2612	0	gear	0.48	armor:15:armor:0.032:0.48
-R	mage/arcane	60	3227	0	mh	0.0	
+R	mage/arcane	60	3227	0	mh	18.0	sp:18:sp:1:18
 R	mage/arcane	60	3593	0	gear	0.8320000000000001	armor:26:armor:0.032:0.832
 R	mage/arcane	60	4041	0	gear	22.344	sta:10:sta:1.1:11,int:10:int:1:10,armor:42:armor:0.032:1.344
 R	mage/arcane	60	4668	0	gear	0.256	armor:8:armor:0.032:0.256
@@ -10536,7 +10536,7 @@ R	mage/arcane	60	7426	12753	gear	4.4	sta:4:sta:1.1:4.4
 R	mage/arcane	60	7426	12754	gear	6.4	sp:2:sp:1:2,sta:4:sta:1.1:4.4
 R	mage/arcane	60	7426	12755	gear	6.4	sp:2:sp:1:2,sta:4:sta:1.1:4.4
 R	mage/arcane	60	7888	0	gear	24.0	int:1:int:1:1,sp:12:sp:1:12,sta:10:sta:1.1:11
-R	mage/arcane	60	9452	0	mh	0.0	
+R	mage/arcane	60	9452	0	mh	36.0	sp:36:sp:1:36
 R	mage/arcane	60	9822	0	gear	0.672	armor:21:armor:0.032:0.672
 R	mage/arcane	60	9822	12718	gear	9.072000000000001	int:4:int:1:4,sta:4:sta:1.1:4.4,armor:21:armor:0.032:0.672
 R	mage/arcane	60	9822	12719	gear	7.272	spi:4:spi:0.55:2.2,sta:4:sta:1.1:4.4,armor:21:armor:0.032:0.672
@@ -10740,7 +10740,7 @@ R	mage/arcane	60	271207	0	gear	9.66	mp5:4:mp5:0.76:3.04,sta:5:sta:1.1:5.5,armor:
 R	mage/arcane	60	272091	0	mh	14.3	sta:13:sta:1.1:14.3
 R	mage/arcane	60	272812	0	gear	42.596000000000004	int:12:int:1:12,sta:19:sta:1.1:20.9,sp:8:sp:1:8,armor:53:armor:0.032:1.696
 R	mage/arcane	60	273926	0	gear	47.89	sta:15:sta:1.1:16.5,int:11:int:1:11,spi:13:spi:0.55:7.15,spDmg:11:sp:1:11,armor:70:armor:0.032:2.24
-R	mage/arcane	60	275648	0	mh	16.75	crit:1:spellCrit:6.3:6.3,spi:19:spi:0.55:10.45
+R	mage/arcane	60	275648	0	mh	68.75	crit:1:spellCrit:6.3:6.3,spi:19:spi:0.55:10.45,sp:52:sp:1:52
 R	mage/arcane	60	277102	0	gear	0.704	armor:22:armor:0.032:0.704
 R	mage/arcane	60	279891	0	gear	5.5840000000000005	sta:4:sta:1.1:4.4,armor:37:armor:0.032:1.184
 R	mage/arcane	60	281689	0	gear	0.064	armor:2:armor:0.032:0.064
@@ -10770,7 +10770,7 @@ B	priest/shadow	12	1156	gear	0	2.2800000000000002
 B	priest/shadow	12	1764	gear	0	1.349
 B	priest/shadow	12	2158	gear	0	1.7039999999999997
 B	priest/shadow	12	2612	gear	0	1.065
-B	priest/shadow	12	3227	mh	0	0.0
+B	priest/shadow	12	3227	mh	0	19.8
 B	priest/shadow	12	3593	gear	0	1.8459999999999999
 B	priest/shadow	12	4041	gear	0	9.482
 B	priest/shadow	12	4668	gear	0	0.568
@@ -10781,7 +10781,7 @@ B	priest/shadow	12	6540	gear	12761	8.988
 B	priest/shadow	12	6729	ranged	0	197.74
 B	priest/shadow	12	7426	gear	12746	4.7
 B	priest/shadow	12	7888	gear	0	16.28
-B	priest/shadow	12	9452	mh	0	0.0
+B	priest/shadow	12	9452	mh	0	39.6
 B	priest/shadow	12	9822	gear	12761	10.491
 B	priest/shadow	12	10053	gear	0	0.0
 B	priest/shadow	12	10549	gear	0	3.01
@@ -10831,7 +10831,7 @@ B	priest/shadow	12	271207	gear	0	3.835
 B	priest/shadow	12	272091	mh	0	3.5100000000000002
 B	priest/shadow	12	272812	gear	0	22.253
 B	priest/shadow	12	273926	gear	0	31.67
-B	priest/shadow	12	275648	mh	0	10.23
+B	priest/shadow	12	275648	mh	0	67.43
 B	priest/shadow	12	277102	gear	0	1.5619999999999998
 B	priest/shadow	12	279891	gear	0	3.707
 B	priest/shadow	12	281689	gear	12720	1.012
@@ -10842,7 +10842,7 @@ B	priest/shadow	25	1156	gear	0	3.84
 B	priest/shadow	25	1764	gear	0	1.045
 B	priest/shadow	25	2158	gear	0	1.32
 B	priest/shadow	25	2612	gear	0	0.825
-B	priest/shadow	25	3227	mh	0	0.0
+B	priest/shadow	25	3227	mh	0	21.599999999999998
 B	priest/shadow	25	3593	gear	0	1.43
 B	priest/shadow	25	4041	gear	0	18.31
 B	priest/shadow	25	4668	gear	0	0.44
@@ -10853,7 +10853,7 @@ B	priest/shadow	25	6540	gear	12734	8.739999999999998
 B	priest/shadow	25	6729	ranged	0	233.01999999999998
 B	priest/shadow	25	7426	gear	12747	7.539999999999999
 B	priest/shadow	25	7888	gear	0	24.64
-B	priest/shadow	25	9452	mh	0	0.0
+B	priest/shadow	25	9452	mh	0	43.199999999999996
 B	priest/shadow	25	9822	gear	12761	10.155
 B	priest/shadow	25	10053	gear	0	0.0
 B	priest/shadow	25	10549	gear	0	2.95
@@ -10903,7 +10903,7 @@ B	priest/shadow	25	271207	gear	0	9.005
 B	priest/shadow	25	272091	mh	0	12.48
 B	priest/shadow	25	272812	gear	0	38.434999999999995
 B	priest/shadow	25	273926	gear	0	46.940000000000005
-B	priest/shadow	25	275648	mh	0	13.95
+B	priest/shadow	25	275648	mh	0	76.35
 B	priest/shadow	25	277102	gear	0	1.21
 B	priest/shadow	25	279891	gear	0	5.875
 B	priest/shadow	25	281689	gear	12719	1.72
@@ -10914,7 +10914,7 @@ B	priest/shadow	34	1156	gear	0	3.7199999999999998
 B	priest/shadow	34	1764	gear	0	0.798
 B	priest/shadow	34	2158	gear	0	1.008
 B	priest/shadow	34	2612	gear	0	0.63
-B	priest/shadow	34	3227	mh	0	0.0
+B	priest/shadow	34	3227	mh	0	19.8
 B	priest/shadow	34	3593	gear	0	1.092
 B	priest/shadow	34	4041	gear	0	15.364
 B	priest/shadow	34	4668	gear	0	0.336
@@ -10925,7 +10925,7 @@ B	priest/shadow	34	6540	gear	12761	8.176
 B	priest/shadow	34	6729	ranged	0	232.55999999999997
 B	priest/shadow	34	7426	gear	12747	6.260000000000001
 B	priest/shadow	34	7888	gear	0	21.22
-B	priest/shadow	34	9452	mh	0	0.0
+B	priest/shadow	34	9452	mh	0	39.6
 B	priest/shadow	34	9822	gear	12761	9.882
 B	priest/shadow	34	10053	gear	0	0.0
 B	priest/shadow	34	10549	gear	0	2.49
@@ -10975,7 +10975,7 @@ B	priest/shadow	34	271207	gear	0	11.17
 B	priest/shadow	34	272091	mh	0	9.62
 B	priest/shadow	34	272812	gear	0	32.526
 B	priest/shadow	34	273926	gear	0	40.11
-B	priest/shadow	34	275648	mh	0	13.450000000000001
+B	priest/shadow	34	275648	mh	0	70.65
 B	priest/shadow	34	277102	gear	0	0.924
 B	priest/shadow	34	279891	gear	0	4.514
 B	priest/shadow	34	281689	gear	12718	1.444
@@ -10986,7 +10986,7 @@ B	priest/shadow	45	1156	gear	0	4.68
 B	priest/shadow	45	1764	gear	0	0.456
 B	priest/shadow	45	2158	gear	0	0.5760000000000001
 B	priest/shadow	45	2612	gear	0	0.36
-B	priest/shadow	45	3227	mh	0	0.0
+B	priest/shadow	45	3227	mh	0	18.0
 B	priest/shadow	45	3593	gear	0	0.624
 B	priest/shadow	45	4041	gear	0	10.408000000000001
 B	priest/shadow	45	4668	gear	0	0.192
@@ -10997,7 +10997,7 @@ B	priest/shadow	45	6540	gear	12761	7.672
 B	priest/shadow	45	6729	ranged	0	26.490000000000002
 B	priest/shadow	45	7426	gear	12746	6.32
 B	priest/shadow	45	7888	gear	0	14.379999999999999
-B	priest/shadow	45	9452	mh	0	0.0
+B	priest/shadow	45	9452	mh	0	36.0
 B	priest/shadow	45	9822	gear	12761	9.504
 B	priest/shadow	45	10053	gear	0	0.0
 B	priest/shadow	45	10549	gear	0	2.08
@@ -11047,7 +11047,7 @@ B	priest/shadow	45	271207	gear	0	4.28
 B	priest/shadow	45	272091	mh	0	2.08
 B	priest/shadow	45	272812	gear	0	21.671999999999997
 B	priest/shadow	45	273926	gear	0	31.46
-B	priest/shadow	45	275648	mh	0	15.5
+B	priest/shadow	45	275648	mh	0	67.5
 B	priest/shadow	45	277102	gear	0	0.528
 B	priest/shadow	45	279891	gear	0	1.528
 B	priest/shadow	45	281689	gear	12720	1.428
@@ -11058,7 +11058,7 @@ B	priest/shadow	55	1156	gear	0	3.3000000000000003
 B	priest/shadow	55	1764	gear	0	0.1615
 B	priest/shadow	55	2158	gear	0	0.20400000000000001
 B	priest/shadow	55	2612	gear	0	0.1275
-B	priest/shadow	55	3227	mh	0	0.0
+B	priest/shadow	55	3227	mh	0	18.0
 B	priest/shadow	55	3593	gear	0	0.22100000000000003
 B	priest/shadow	55	4041	gear	0	6.957
 B	priest/shadow	55	4668	gear	0	0.068
@@ -11069,7 +11069,7 @@ B	priest/shadow	55	6540	gear	12761	7.238
 B	priest/shadow	55	6729	ranged	0	20.53
 B	priest/shadow	55	7426	gear	12746	5.5200000000000005
 B	priest/shadow	55	7888	gear	0	13.65
-B	priest/shadow	55	9452	mh	0	0.0
+B	priest/shadow	55	9452	mh	0	36.0
 B	priest/shadow	55	9822	gear	12761	9.1785
 B	priest/shadow	55	10053	gear	0	0.0
 B	priest/shadow	55	10549	gear	0	1.83
@@ -11119,7 +11119,7 @@ B	priest/shadow	55	271207	gear	0	4.2475000000000005
 B	priest/shadow	55	272091	mh	0	1.43
 B	priest/shadow	55	272812	gear	0	17.140500000000003
 B	priest/shadow	55	273926	gear	0	27.875
-B	priest/shadow	55	275648	mh	0	18.240000000000002
+B	priest/shadow	55	275648	mh	0	70.24000000000001
 B	priest/shadow	55	277102	gear	0	0.187
 B	priest/shadow	55	279891	gear	0	0.7545
 B	priest/shadow	55	281689	gear	12720	1.2269999999999999
@@ -11130,7 +11130,7 @@ B	priest/shadow	60	1156	gear	0	2.4000000000000004
 B	priest/shadow	60	1764	gear	0	0.722
 B	priest/shadow	60	2158	gear	0	0.9119999999999999
 B	priest/shadow	60	2612	gear	0	0.57
-B	priest/shadow	60	3227	mh	0	0.0
+B	priest/shadow	60	3227	mh	0	18.0
 B	priest/shadow	60	3593	gear	0	0.988
 B	priest/shadow	60	4041	gear	0	8.396
 B	priest/shadow	60	4668	gear	0	0.304
@@ -11141,7 +11141,7 @@ B	priest/shadow	60	6540	gear	12761	8.064
 B	priest/shadow	60	6729	ranged	0	9.23
 B	priest/shadow	60	7426	gear	12730	6.0
 B	priest/shadow	60	7888	gear	0	15.200000000000001
-B	priest/shadow	60	9452	mh	0	0.0
+B	priest/shadow	60	9452	mh	0	36.0
 B	priest/shadow	60	9822	gear	12761	9.798
 B	priest/shadow	60	10053	gear	0	0.0
 B	priest/shadow	60	10549	gear	0	2.76
@@ -11191,7 +11191,7 @@ B	priest/shadow	60	271207	gear	0	5.25
 B	priest/shadow	60	272091	mh	0	3.6400000000000006
 B	priest/shadow	60	272812	gear	0	20.134
 B	priest/shadow	60	273926	gear	0	35.260000000000005
-B	priest/shadow	60	275648	mh	0	27.0
+B	priest/shadow	60	275648	mh	0	79.0
 B	priest/shadow	60	277102	gear	0	0.836
 B	priest/shadow	60	279891	gear	0	2.526
 B	priest/shadow	60	281689	gear	12720	1.476
@@ -11202,7 +11202,7 @@ B	priest/holy	12	1156	gear	0	2.34
 B	priest/holy	12	1764	gear	0	0.798
 B	priest/holy	12	2158	gear	0	1.008
 B	priest/holy	12	2612	gear	0	0.63
-B	priest/holy	12	3227	mh	0	0.0
+B	priest/holy	12	3227	mh	0	18.0
 B	priest/holy	12	3593	gear	0	1.092
 B	priest/holy	12	4041	gear	0	13.164
 B	priest/holy	12	4668	gear	0	0.336
@@ -11213,7 +11213,7 @@ B	priest/holy	12	6540	gear	12761	7.196
 B	priest/holy	12	6729	ranged	0	153.96999999999997
 B	priest/holy	12	7426	gear	12747	5.220000000000001
 B	priest/holy	12	7888	gear	0	19.89
-B	priest/holy	12	9452	mh	0	0.0
+B	priest/holy	12	9452	mh	0	36.0
 B	priest/holy	12	9822	gear	12761	8.622
 B	priest/holy	12	10053	gear	0	0.0
 B	priest/holy	12	10549	gear	0	1.9500000000000002
@@ -11263,7 +11263,7 @@ B	priest/holy	12	271207	gear	0	6.9399999999999995
 B	priest/holy	12	272091	mh	0	9.75
 B	priest/holy	12	272812	gear	0	29.156
 B	priest/holy	12	273926	gear	0	30.91
-B	priest/holy	12	275648	mh	0	2.8499999999999996
+B	priest/holy	12	275648	mh	0	54.85
 B	priest/holy	12	277102	gear	0	0.924
 B	priest/holy	12	279891	gear	0	4.554
 B	priest/holy	12	281689	gear	12718	1.2240000000000002
@@ -11274,7 +11274,7 @@ B	priest/holy	25	1156	gear	0	6.0
 B	priest/holy	25	1764	gear	0	0.0
 B	priest/holy	25	2158	gear	0	0.0
 B	priest/holy	25	2612	gear	0	0.0
-B	priest/holy	25	3227	mh	0	0.0
+B	priest/holy	25	3227	mh	0	18.0
 B	priest/holy	25	3593	gear	0	0.0
 B	priest/holy	25	4041	gear	0	27.0
 B	priest/holy	25	4668	gear	0	0.0
@@ -11285,7 +11285,7 @@ B	priest/holy	25	6540	gear	12745	9.4
 B	priest/holy	25	6729	ranged	0	202.29999999999998
 B	priest/holy	25	7426	gear	12718	10.8
 B	priest/holy	25	7888	gear	0	30.0
-B	priest/holy	25	9452	mh	0	0.0
+B	priest/holy	25	9452	mh	0	36.0
 B	priest/holy	25	9822	gear	12718	10.8
 B	priest/holy	25	10053	gear	0	0.0
 B	priest/holy	25	10549	gear	0	1.6
@@ -11335,7 +11335,7 @@ B	priest/holy	25	271207	gear	0	12.9
 B	priest/holy	25	272091	mh	0	22.099999999999998
 B	priest/holy	25	272812	gear	0	52.3
 B	priest/holy	25	273926	gear	0	55.3
-B	priest/holy	25	275648	mh	0	13.0
+B	priest/holy	25	275648	mh	0	65.0
 B	priest/holy	25	277102	gear	0	0.0
 B	priest/holy	25	279891	gear	0	6.8
 B	priest/holy	25	281689	gear	12718	2.7
@@ -11346,7 +11346,7 @@ B	priest/holy	34	1156	gear	0	4.86
 B	priest/holy	34	1764	gear	0	1.159
 B	priest/holy	34	2158	gear	0	1.464
 B	priest/holy	34	2612	gear	0	0.915
-B	priest/holy	34	3227	mh	0	0.0
+B	priest/holy	34	3227	mh	0	18.0
 B	priest/holy	34	3593	gear	0	1.5859999999999999
 B	priest/holy	34	4041	gear	0	22.662000000000003
 B	priest/holy	34	4668	gear	0	0.488
@@ -11357,7 +11357,7 @@ B	priest/holy	34	6540	gear	12745	9.348
 B	priest/holy	34	6729	ranged	0	263.73
 B	priest/holy	34	7426	gear	12747	8.559999999999999
 B	priest/holy	34	7888	gear	0	24.810000000000002
-B	priest/holy	34	9452	mh	0	0.0
+B	priest/holy	34	9452	mh	0	36.0
 B	priest/holy	34	9822	gear	12747	9.841
 B	priest/holy	34	10053	gear	0	0.0
 B	priest/holy	34	10549	gear	0	3.0999999999999996
@@ -11407,7 +11407,7 @@ B	priest/holy	34	271207	gear	0	13.334999999999999
 B	priest/holy	34	272091	mh	0	15.6
 B	priest/holy	34	272812	gear	0	43.753
 B	priest/holy	34	273926	gear	0	53.620000000000005
-B	priest/holy	34	275648	mh	0	19.32
+B	priest/holy	34	275648	mh	0	71.32
 B	priest/holy	34	277102	gear	0	1.342
 B	priest/holy	34	279891	gear	0	7.057
 B	priest/holy	34	281689	gear	12719	2.202
@@ -11418,7 +11418,7 @@ B	priest/holy	45	1156	gear	0	6.6000000000000005
 B	priest/holy	45	1764	gear	0	1.349
 B	priest/holy	45	2158	gear	0	1.7039999999999997
 B	priest/holy	45	2612	gear	0	1.065
-B	priest/holy	45	3227	mh	0	0.0
+B	priest/holy	45	3227	mh	0	18.0
 B	priest/holy	45	3593	gear	0	1.8459999999999999
 B	priest/holy	45	4041	gear	0	22.682
 B	priest/holy	45	4668	gear	0	0.568
@@ -11429,7 +11429,7 @@ B	priest/holy	45	6540	gear	12745	10.128
 B	priest/holy	45	6729	ranged	0	218.1
 B	priest/holy	45	7426	gear	12746	8.38
 B	priest/holy	45	7888	gear	0	21.799999999999997
-B	priest/holy	45	9452	mh	0	0.0
+B	priest/holy	45	9452	mh	0	36.0
 B	priest/holy	45	9822	gear	12746	9.871
 B	priest/holy	45	10053	gear	0	0.0
 B	priest/holy	45	10549	gear	0	3.41
@@ -11479,7 +11479,7 @@ B	priest/holy	45	271207	gear	0	14.434999999999999
 B	priest/holy	45	272091	mh	0	11.31
 B	priest/holy	45	272812	gear	0	41.493
 B	priest/holy	45	273926	gear	0	53.99
-B	priest/holy	45	275648	mh	0	22.009999999999998
+B	priest/holy	45	275648	mh	0	74.00999999999999
 B	priest/holy	45	277102	gear	0	1.5619999999999998
 B	priest/holy	45	279891	gear	0	6.106999999999999
 B	priest/holy	45	281689	gear	12720	2.2319999999999998
@@ -11490,7 +11490,7 @@ B	priest/holy	55	1156	gear	0	7.800000000000001
 B	priest/holy	55	1764	gear	0	1.9000000000000001
 B	priest/holy	55	2158	gear	0	2.4000000000000004
 B	priest/holy	55	2612	gear	0	1.5
-B	priest/holy	55	3227	mh	0	0.0
+B	priest/holy	55	3227	mh	0	18.0
 B	priest/holy	55	3593	gear	0	2.6
 B	priest/holy	55	4041	gear	0	27.2
 B	priest/holy	55	4668	gear	0	0.8
@@ -11501,7 +11501,7 @@ B	priest/holy	55	6540	gear	12745	12.0
 B	priest/holy	55	6729	ranged	0	228.0
 B	priest/holy	55	7426	gear	12720	9.600000000000001
 B	priest/holy	55	7888	gear	0	23.3
-B	priest/holy	55	9452	mh	0	0.0
+B	priest/holy	55	9452	mh	0	36.0
 B	priest/holy	55	9822	gear	12720	11.700000000000001
 B	priest/holy	55	10053	gear	0	0.0
 B	priest/holy	55	10549	gear	0	4.1
@@ -11551,7 +11551,7 @@ B	priest/holy	55	271207	gear	0	14.9
 B	priest/holy	55	272091	mh	0	13.0
 B	priest/holy	55	272812	gear	0	47.900000000000006
 B	priest/holy	55	273926	gear	0	61.6
-B	priest/holy	55	275648	mh	0	28.0
+B	priest/holy	55	275648	mh	0	80.0
 B	priest/holy	55	277102	gear	0	2.2
 B	priest/holy	55	279891	gear	0	7.7
 B	priest/holy	55	281689	gear	12720	2.6000000000000005
@@ -11562,7 +11562,7 @@ B	priest/holy	60	1156	gear	0	7.199999999999999
 B	priest/holy	60	1764	gear	0	1.235
 B	priest/holy	60	2158	gear	0	1.56
 B	priest/holy	60	2612	gear	0	0.9750000000000001
-B	priest/holy	60	3227	mh	0	0.0
+B	priest/holy	60	3227	mh	0	18.0
 B	priest/holy	60	3593	gear	0	1.69
 B	priest/holy	60	4041	gear	0	20.03
 B	priest/holy	60	4668	gear	0	0.52
@@ -11573,7 +11573,7 @@ B	priest/holy	60	6540	gear	12745	9.68
 B	priest/holy	60	6729	ranged	0	292.8
 B	priest/holy	60	7426	gear	12720	10.0
 B	priest/holy	60	7888	gear	0	18.5
-B	priest/holy	60	9452	mh	0	0.0
+B	priest/holy	60	9452	mh	0	36.0
 B	priest/holy	60	9822	gear	12720	11.365
 B	priest/holy	60	10053	gear	0	0.0
 B	priest/holy	60	10549	gear	0	3.5999999999999996
@@ -11623,7 +11623,7 @@ B	priest/holy	60	271207	gear	0	16.525
 B	priest/holy	60	272091	mh	0	6.890000000000001
 B	priest/holy	60	272812	gear	0	35.915
 B	priest/holy	60	273926	gear	0	53.599999999999994
-B	priest/holy	60	275648	mh	0	30.9
+B	priest/holy	60	275648	mh	0	82.9
 B	priest/holy	60	277102	gear	0	1.4300000000000002
 B	priest/holy	60	279891	gear	0	4.525
 B	priest/holy	60	281689	gear	12720	2.63
@@ -11634,7 +11634,7 @@ B	priest/discipline	12	1156	gear	0	2.4000000000000004
 B	priest/discipline	12	1764	gear	0	0.874
 B	priest/discipline	12	2158	gear	0	1.104
 B	priest/discipline	12	2612	gear	0	0.69
-B	priest/discipline	12	3227	mh	0	0.0
+B	priest/discipline	12	3227	mh	0	18.0
 B	priest/discipline	12	3593	gear	0	1.196
 B	priest/discipline	12	4041	gear	0	12.132
 B	priest/discipline	12	4668	gear	0	0.368
@@ -11645,7 +11645,7 @@ B	priest/discipline	12	6540	gear	12761	7.378
 B	priest/discipline	12	6729	ranged	0	163.29999999999998
 B	priest/discipline	12	7426	gear	12747	4.98
 B	priest/discipline	12	7888	gear	0	18.6
-B	priest/discipline	12	9452	mh	0	0.0
+B	priest/discipline	12	9452	mh	0	36.0
 B	priest/discipline	12	9822	gear	12761	8.796
 B	priest/discipline	12	10053	gear	0	0.0
 B	priest/discipline	12	10549	gear	0	2.17
@@ -11695,7 +11695,7 @@ B	priest/discipline	12	271207	gear	0	5.789999999999999
 B	priest/discipline	12	272091	mh	0	8.06
 B	priest/discipline	12	272812	gear	0	27.017999999999997
 B	priest/discipline	12	273926	gear	0	31.17
-B	priest/discipline	12	275648	mh	0	5.4399999999999995
+B	priest/discipline	12	275648	mh	0	57.44
 B	priest/discipline	12	277102	gear	0	1.012
 B	priest/discipline	12	279891	gear	0	4.182
 B	priest/discipline	12	281689	gear	12718	1.112
@@ -11706,7 +11706,7 @@ B	priest/discipline	25	1156	gear	0	6.6000000000000005
 B	priest/discipline	25	1764	gear	0	0.931
 B	priest/discipline	25	2158	gear	0	1.1760000000000002
 B	priest/discipline	25	2612	gear	0	0.735
-B	priest/discipline	25	3227	mh	0	0.0
+B	priest/discipline	25	3227	mh	0	18.0
 B	priest/discipline	25	3593	gear	0	1.274
 B	priest/discipline	25	4041	gear	0	21.758
 B	priest/discipline	25	4668	gear	0	0.392
@@ -11717,7 +11717,7 @@ B	priest/discipline	25	6540	gear	12745	9.512
 B	priest/discipline	25	6729	ranged	0	180.9
 B	priest/discipline	25	7426	gear	12745	8.14
 B	priest/discipline	25	7888	gear	0	21.799999999999997
-B	priest/discipline	25	9452	mh	0	0.0
+B	priest/discipline	25	9452	mh	0	36.0
 B	priest/discipline	25	9822	gear	12745	9.169
 B	priest/discipline	25	10053	gear	0	0.0
 B	priest/discipline	25	10549	gear	0	2.77
@@ -11767,7 +11767,7 @@ B	priest/discipline	25	271207	gear	0	10.864999999999998
 B	priest/discipline	25	272091	mh	0	11.31
 B	priest/discipline	25	272812	gear	0	40.327000000000005
 B	priest/discipline	25	273926	gear	0	49.85
-B	priest/discipline	25	275648	mh	0	16.41
+B	priest/discipline	25	275648	mh	0	68.41
 B	priest/discipline	25	277102	gear	0	1.078
 B	priest/discipline	25	279891	gear	0	5.293
 B	priest/discipline	25	281689	gear	12718	2.068
@@ -11778,7 +11778,7 @@ B	priest/discipline	34	1156	gear	0	3.42
 B	priest/discipline	34	1764	gear	0	0.589
 B	priest/discipline	34	2158	gear	0	0.744
 B	priest/discipline	34	2612	gear	0	0.46499999999999997
-B	priest/discipline	34	3227	mh	0	0.0
+B	priest/discipline	34	3227	mh	0	18.0
 B	priest/discipline	34	3593	gear	0	0.806
 B	priest/discipline	34	4041	gear	0	10.501999999999999
 B	priest/discipline	34	4668	gear	0	0.248
@@ -11789,7 +11789,7 @@ B	priest/discipline	34	6540	gear	12734	6.868
 B	priest/discipline	34	6729	ranged	0	225.81
 B	priest/discipline	34	7426	gear	12720	6.68
 B	priest/discipline	34	7888	gear	0	16.07
-B	priest/discipline	34	9452	mh	0	0.0
+B	priest/discipline	34	9452	mh	0	36.0
 B	priest/discipline	34	9822	gear	12761	8.121
 B	priest/discipline	34	10053	gear	0	0.0
 B	priest/discipline	34	10549	gear	0	2.72
@@ -11839,7 +11839,7 @@ B	priest/discipline	34	271207	gear	0	7.235
 B	priest/discipline	34	272091	mh	0	4.55
 B	priest/discipline	34	272812	gear	0	23.133
 B	priest/discipline	34	273926	gear	0	38.99
-B	priest/discipline	34	275648	mh	0	23.3
+B	priest/discipline	34	275648	mh	0	75.3
 B	priest/discipline	34	277102	gear	0	0.6819999999999999
 B	priest/discipline	34	279891	gear	0	2.5469999999999997
 B	priest/discipline	34	281689	gear	12720	1.732
@@ -11850,7 +11850,7 @@ B	priest/discipline	45	1156	gear	0	6.6000000000000005
 B	priest/discipline	45	1764	gear	0	2.28
 B	priest/discipline	45	2158	gear	0	2.88
 B	priest/discipline	45	2612	gear	0	1.7999999999999998
-B	priest/discipline	45	3227	mh	0	0.0
+B	priest/discipline	45	3227	mh	0	18.0
 B	priest/discipline	45	3593	gear	0	3.12
 B	priest/discipline	45	4041	gear	0	36.04
 B	priest/discipline	45	4668	gear	0	0.96
@@ -11861,7 +11861,7 @@ B	priest/discipline	45	6540	gear	12745	13.76
 B	priest/discipline	45	6729	ranged	0	348.3
 B	priest/discipline	45	7426	gear	12718	12.4
 B	priest/discipline	45	7888	gear	0	33.1
-B	priest/discipline	45	9452	mh	0	0.0
+B	priest/discipline	45	9452	mh	0	36.0
 B	priest/discipline	45	9822	gear	12718	14.92
 B	priest/discipline	45	10053	gear	0	0.0
 B	priest/discipline	45	10549	gear	0	3.65
@@ -11911,7 +11911,7 @@ B	priest/discipline	45	271207	gear	0	17.8
 B	priest/discipline	45	272091	mh	0	26.0
 B	priest/discipline	45	272812	gear	0	65.56
 B	priest/discipline	45	273926	gear	0	64.75
-B	priest/discipline	45	275648	mh	0	8.35
+B	priest/discipline	45	275648	mh	0	60.35
 B	priest/discipline	45	277102	gear	0	2.6399999999999997
 B	priest/discipline	45	279891	gear	0	12.44
 B	priest/discipline	45	281689	gear	12718	3.34
@@ -11922,7 +11922,7 @@ B	priest/discipline	55	1156	gear	0	5.699999999999999
 B	priest/discipline	55	1764	gear	0	0.874
 B	priest/discipline	55	2158	gear	0	1.104
 B	priest/discipline	55	2612	gear	0	0.69
-B	priest/discipline	55	3227	mh	0	0.0
+B	priest/discipline	55	3227	mh	0	18.0
 B	priest/discipline	55	3593	gear	0	1.196
 B	priest/discipline	55	4041	gear	0	21.432
 B	priest/discipline	55	4668	gear	0	0.368
@@ -11933,7 +11933,7 @@ B	priest/discipline	55	6540	gear	12745	9.088
 B	priest/discipline	55	6729	ranged	0	267.25000000000006
 B	priest/discipline	55	7426	gear	12747	7.9
 B	priest/discipline	55	7888	gear	0	22.95
-B	priest/discipline	55	9452	mh	0	0.0
+B	priest/discipline	55	9452	mh	0	36.0
 B	priest/discipline	55	9822	gear	12747	8.866
 B	priest/discipline	55	10053	gear	0	0.0
 B	priest/discipline	55	10549	gear	0	2.87
@@ -11983,7 +11983,7 @@ B	priest/discipline	55	271207	gear	0	14.209999999999999
 B	priest/discipline	55	272091	mh	0	13.0
 B	priest/discipline	55	272812	gear	0	40.838
 B	priest/discipline	55	273926	gear	0	52.019999999999996
-B	priest/discipline	55	275648	mh	0	22.15
+B	priest/discipline	55	275648	mh	0	74.15
 B	priest/discipline	55	277102	gear	0	1.012
 B	priest/discipline	55	279891	gear	0	5.702
 B	priest/discipline	55	281689	gear	12718	2.042
@@ -11994,7 +11994,7 @@ B	priest/discipline	60	1156	gear	0	2.7
 B	priest/discipline	60	1764	gear	0	0.399
 B	priest/discipline	60	2158	gear	0	0.504
 B	priest/discipline	60	2612	gear	0	0.315
-B	priest/discipline	60	3227	mh	0	0.0
+B	priest/discipline	60	3227	mh	0	18.0
 B	priest/discipline	60	3593	gear	0	0.546
 B	priest/discipline	60	4041	gear	0	7.382
 B	priest/discipline	60	4668	gear	0	0.168
@@ -12005,7 +12005,7 @@ B	priest/discipline	60	6540	gear	12734	6.588
 B	priest/discipline	60	6729	ranged	0	253.35
 B	priest/discipline	60	7426	gear	12730	6.6000000000000005
 B	priest/discipline	60	7888	gear	0	14.45
-B	priest/discipline	60	9452	mh	0	0.0
+B	priest/discipline	60	9452	mh	0	36.0
 B	priest/discipline	60	9822	gear	12734	7.441
 B	priest/discipline	60	10053	gear	0	0.0
 B	priest/discipline	60	10549	gear	0	2.52
@@ -12055,7 +12055,7 @@ B	priest/discipline	60	271207	gear	0	9.735
 B	priest/discipline	60	272091	mh	0	2.6
 B	priest/discipline	60	272812	gear	0	18.313000000000002
 B	priest/discipline	60	273926	gear	0	34.72
-B	priest/discipline	60	275648	mh	0	27.0
+B	priest/discipline	60	275648	mh	0	79.0
 B	priest/discipline	60	277102	gear	0	0.462
 B	priest/discipline	60	279891	gear	0	1.577
 B	priest/discipline	60	281689	gear	12720	1.592
@@ -12066,7 +12066,7 @@ B	mage/frost	12	1156	gear	0	0.36
 B	mage/frost	12	1764	gear	0	0.1805
 B	mage/frost	12	2158	gear	0	0.22799999999999998
 B	mage/frost	12	2612	gear	0	0.1425
-B	mage/frost	12	3227	mh	0	0.0
+B	mage/frost	12	3227	mh	0	19.8
 B	mage/frost	12	3593	gear	0	0.247
 B	mage/frost	12	4041	gear	0	7.199
 B	mage/frost	12	4668	gear	0	0.076
@@ -12077,7 +12077,7 @@ B	mage/frost	12	6540	gear	12758	7.266
 B	mage/frost	12	6729	ranged	0	44.88
 B	mage/frost	12	7426	gear	12747	5.0
 B	mage/frost	12	7888	gear	0	19.46
-B	mage/frost	12	9452	mh	0	0.0
+B	mage/frost	12	9452	mh	0	39.6
 B	mage/frost	12	9822	gear	12758	9.1995
 B	mage/frost	12	10053	gear	0	0.0
 B	mage/frost	12	10549	gear	0	1.45
@@ -12127,7 +12127,7 @@ B	mage/frost	12	271207	gear	0	3.6485000000000003
 B	mage/frost	12	272091	mh	0	8.06
 B	mage/frost	12	272812	gear	0	21.8035
 B	mage/frost	12	273926	gear	0	24.805
-B	mage/frost	12	275648	mh	0	3.49
+B	mage/frost	12	275648	mh	0	60.690000000000005
 B	mage/frost	12	277102	gear	0	0.209
 B	mage/frost	12	279891	gear	0	2.8315
 B	mage/frost	12	281689	gear	12719	0.799
@@ -12138,7 +12138,7 @@ B	mage/frost	25	1156	gear	0	1.32
 B	mage/frost	25	1764	gear	0	0.19
 B	mage/frost	25	2158	gear	0	0.24
 B	mage/frost	25	2612	gear	0	0.15
-B	mage/frost	25	3227	mh	0	0.0
+B	mage/frost	25	3227	mh	0	19.8
 B	mage/frost	25	3593	gear	0	0.26
 B	mage/frost	25	4041	gear	0	9.62
 B	mage/frost	25	4668	gear	0	0.08
@@ -12149,7 +12149,7 @@ B	mage/frost	25	6540	gear	12758	7.28
 B	mage/frost	25	6729	ranged	0	45.36000000000001
 B	mage/frost	25	7426	gear	12747	5.4399999999999995
 B	mage/frost	25	7888	gear	0	20.42
-B	mage/frost	25	9452	mh	0	0.0
+B	mage/frost	25	9452	mh	0	39.6
 B	mage/frost	25	9822	gear	12758	9.21
 B	mage/frost	25	10053	gear	0	0.0
 B	mage/frost	25	10549	gear	0	1.52
@@ -12199,7 +12199,7 @@ B	mage/frost	25	271207	gear	0	4.7299999999999995
 B	mage/frost	25	272091	mh	0	9.1
 B	mage/frost	25	272812	gear	0	25.270000000000003
 B	mage/frost	25	273926	gear	0	28.580000000000002
-B	mage/frost	25	275648	mh	0	5.38
+B	mage/frost	25	275648	mh	0	62.580000000000005
 B	mage/frost	25	277102	gear	0	0.22
 B	mage/frost	25	279891	gear	0	3.17
 B	mage/frost	25	281689	gear	12718	0.94
@@ -12210,7 +12210,7 @@ B	mage/frost	34	1156	gear	0	1.92
 B	mage/frost	34	1764	gear	0	0.266
 B	mage/frost	34	2158	gear	0	0.336
 B	mage/frost	34	2612	gear	0	0.21
-B	mage/frost	34	3227	mh	0	0.0
+B	mage/frost	34	3227	mh	0	19.8
 B	mage/frost	34	3593	gear	0	0.364
 B	mage/frost	34	4041	gear	0	9.888
 B	mage/frost	34	4668	gear	0	0.112
@@ -12221,7 +12221,7 @@ B	mage/frost	34	6540	gear	12758	7.392
 B	mage/frost	34	6729	ranged	0	39.46
 B	mage/frost	34	7426	gear	12747	5.220000000000001
 B	mage/frost	34	7888	gear	0	19.62
-B	mage/frost	34	9452	mh	0	0.0
+B	mage/frost	34	9452	mh	0	39.6
 B	mage/frost	34	9822	gear	12758	9.294
 B	mage/frost	34	10053	gear	0	0.0
 B	mage/frost	34	10549	gear	0	1.6700000000000002
@@ -12271,7 +12271,7 @@ B	mage/frost	34	271207	gear	0	5.18
 B	mage/frost	34	272091	mh	0	7.93
 B	mage/frost	34	272812	gear	0	24.972
 B	mage/frost	34	273926	gear	0	29.52
-B	mage/frost	34	275648	mh	0	7.51
+B	mage/frost	34	275648	mh	0	64.71000000000001
 B	mage/frost	34	277102	gear	0	0.308
 B	mage/frost	34	279891	gear	0	2.958
 B	mage/frost	34	281689	gear	12718	0.958
@@ -12282,7 +12282,7 @@ B	mage/frost	45	1156	gear	0	4.0200000000000005
 B	mage/frost	45	1764	gear	0	0.266
 B	mage/frost	45	2158	gear	0	0.336
 B	mage/frost	45	2612	gear	0	0.21
-B	mage/frost	45	3227	mh	0	0.0
+B	mage/frost	45	3227	mh	0	19.8
 B	mage/frost	45	3593	gear	0	0.364
 B	mage/frost	45	4041	gear	0	10.488
 B	mage/frost	45	4668	gear	0	0.112
@@ -12293,7 +12293,7 @@ B	mage/frost	45	6540	gear	12758	7.392
 B	mage/frost	45	6729	ranged	0	56.010000000000005
 B	mage/frost	45	7426	gear	12746	6.2
 B	mage/frost	45	7888	gear	0	17.07
-B	mage/frost	45	9452	mh	0	0.0
+B	mage/frost	45	9452	mh	0	39.6
 B	mage/frost	45	9822	gear	12758	9.294
 B	mage/frost	45	10053	gear	0	0.0
 B	mage/frost	45	10549	gear	0	2.04
@@ -12343,7 +12343,7 @@ B	mage/frost	45	271207	gear	0	6.050000000000001
 B	mage/frost	45	272091	mh	0	4.16
 B	mage/frost	45	272812	gear	0	23.662000000000003
 B	mage/frost	45	273926	gear	0	33.83
-B	mage/frost	45	275648	mh	0	16.14
+B	mage/frost	45	275648	mh	0	73.34
 B	mage/frost	45	277102	gear	0	0.308
 B	mage/frost	45	279891	gear	0	1.798
 B	mage/frost	45	281689	gear	12720	1.358
@@ -12354,7 +12354,7 @@ B	mage/frost	55	1156	gear	0	4.32
 B	mage/frost	55	1764	gear	0	0.285
 B	mage/frost	55	2158	gear	0	0.36
 B	mage/frost	55	2612	gear	0	0.22499999999999998
-B	mage/frost	55	3227	mh	0	0.0
+B	mage/frost	55	3227	mh	0	19.8
 B	mage/frost	55	3593	gear	0	0.39
 B	mage/frost	55	4041	gear	0	11.23
 B	mage/frost	55	4668	gear	0	0.12
@@ -12365,7 +12365,7 @@ B	mage/frost	55	6540	gear	12758	7.42
 B	mage/frost	55	6729	ranged	0	49.96
 B	mage/frost	55	7426	gear	12746	6.42
 B	mage/frost	55	7888	gear	0	17.32
-B	mage/frost	55	9452	mh	0	0.0
+B	mage/frost	55	9452	mh	0	39.6
 B	mage/frost	55	9822	gear	12758	9.315
 B	mage/frost	55	10053	gear	0	0.0
 B	mage/frost	55	10549	gear	0	2.07
@@ -12415,7 +12415,7 @@ B	mage/frost	55	271207	gear	0	6.2250000000000005
 B	mage/frost	55	272091	mh	0	4.42
 B	mage/frost	55	272812	gear	0	24.695
 B	mage/frost	55	273926	gear	0	34.879999999999995
-B	mage/frost	55	275648	mh	0	17.93
+B	mage/frost	55	275648	mh	0	75.13
 B	mage/frost	55	277102	gear	0	0.32999999999999996
 B	mage/frost	55	279891	gear	0	1.915
 B	mage/frost	55	281689	gear	12720	1.4200000000000002
@@ -12426,7 +12426,7 @@ B	mage/frost	60	1156	gear	0	2.82
 B	mage/frost	60	1764	gear	0	0.247
 B	mage/frost	60	2158	gear	0	0.312
 B	mage/frost	60	2612	gear	0	0.19499999999999998
-B	mage/frost	60	3227	mh	0	0.0
+B	mage/frost	60	3227	mh	0	18.0
 B	mage/frost	60	3593	gear	0	0.33799999999999997
 B	mage/frost	60	4041	gear	0	7.646
 B	mage/frost	60	4668	gear	0	0.104
@@ -12437,7 +12437,7 @@ B	mage/frost	60	6540	gear	12758	7.364
 B	mage/frost	60	6729	ranged	0	25.87
 B	mage/frost	60	7426	gear	12746	5.58
 B	mage/frost	60	7888	gear	0	14.870000000000001
-B	mage/frost	60	9452	mh	0	0.0
+B	mage/frost	60	9452	mh	0	36.0
 B	mage/frost	60	9822	gear	12758	9.273
 B	mage/frost	60	10053	gear	0	0.0
 B	mage/frost	60	10549	gear	0	2.1100000000000003
@@ -12487,7 +12487,7 @@ B	mage/frost	60	271207	gear	0	6.855
 B	mage/frost	60	272091	mh	0	3.12
 B	mage/frost	60	272812	gear	0	18.889
 B	mage/frost	60	273926	gear	0	31.73
-B	mage/frost	60	275648	mh	0	21.65
+B	mage/frost	60	275648	mh	0	73.65
 B	mage/frost	60	277102	gear	0	0.286
 B	mage/frost	60	279891	gear	0	1.4409999999999998
 B	mage/frost	60	281689	gear	12720	1.3459999999999999
@@ -12498,7 +12498,7 @@ B	mage/fire	12	1156	gear	0	1.32
 B	mage/fire	12	1764	gear	0	0.19
 B	mage/fire	12	2158	gear	0	0.24
 B	mage/fire	12	2612	gear	0	0.15
-B	mage/fire	12	3227	mh	0	0.0
+B	mage/fire	12	3227	mh	0	18.0
 B	mage/fire	12	3593	gear	0	0.26
 B	mage/fire	12	4041	gear	0	10.42
 B	mage/fire	12	4668	gear	0	0.08
@@ -12509,7 +12509,7 @@ B	mage/fire	12	6540	gear	12757	7.28
 B	mage/fire	12	6729	ranged	0	38.760000000000005
 B	mage/fire	12	7426	gear	12747	5.54
 B	mage/fire	12	7888	gear	0	20.020000000000003
-B	mage/fire	12	9452	mh	0	0.0
+B	mage/fire	12	9452	mh	0	36.0
 B	mage/fire	12	9822	gear	12757	9.21
 B	mage/fire	12	10053	gear	0	0.0
 B	mage/fire	12	10549	gear	0	1.41
@@ -12559,7 +12559,7 @@ B	mage/fire	12	271207	gear	0	4.8100000000000005
 B	mage/fire	12	272091	mh	0	10.14
 B	mage/fire	12	272812	gear	0	25.990000000000002
 B	mage/fire	12	273926	gear	0	28.55
-B	mage/fire	12	275648	mh	0	4.4799999999999995
+B	mage/fire	12	275648	mh	0	56.48
 B	mage/fire	12	277102	gear	0	0.22
 B	mage/fire	12	279891	gear	0	3.49
 B	mage/fire	12	281689	gear	12718	1.02
@@ -12570,7 +12570,7 @@ B	mage/fire	25	1156	gear	0	1.7399999999999998
 B	mage/fire	25	1764	gear	0	0.57
 B	mage/fire	25	2158	gear	0	0.72
 B	mage/fire	25	2612	gear	0	0.44999999999999996
-B	mage/fire	25	3227	mh	0	0.0
+B	mage/fire	25	3227	mh	0	18.0
 B	mage/fire	25	3593	gear	0	0.78
 B	mage/fire	25	4041	gear	0	16.16
 B	mage/fire	25	4668	gear	0	0.24
@@ -12581,7 +12581,7 @@ B	mage/fire	25	6540	gear	12757	7.84
 B	mage/fire	25	6729	ranged	0	45.17
 B	mage/fire	25	7426	gear	12731	7.199999999999999
 B	mage/fire	25	7888	gear	0	24.29
-B	mage/fire	25	9452	mh	0	0.0
+B	mage/fire	25	9452	mh	0	36.0
 B	mage/fire	25	9822	gear	12757	9.63
 B	mage/fire	25	10053	gear	0	0.0
 B	mage/fire	25	10549	gear	0	1.7599999999999998
@@ -12631,7 +12631,7 @@ B	mage/fire	25	271207	gear	0	7.6899999999999995
 B	mage/fire	25	272091	mh	0	15.6
 B	mage/fire	25	272812	gear	0	35.870000000000005
 B	mage/fire	25	273926	gear	0	36.370000000000005
-B	mage/fire	25	275648	mh	0	4.24
+B	mage/fire	25	275648	mh	0	56.24
 B	mage/fire	25	277102	gear	0	0.6599999999999999
 B	mage/fire	25	279891	gear	0	5.91
 B	mage/fire	25	281689	gear	12718	1.55
@@ -12642,7 +12642,7 @@ B	mage/fire	34	1156	gear	0	3.4799999999999995
 B	mage/fire	34	1764	gear	0	0.722
 B	mage/fire	34	2158	gear	0	0.9119999999999999
 B	mage/fire	34	2612	gear	0	0.57
-B	mage/fire	34	3227	mh	0	0.0
+B	mage/fire	34	3227	mh	0	18.0
 B	mage/fire	34	3593	gear	0	0.988
 B	mage/fire	34	4041	gear	0	21.396
 B	mage/fire	34	4668	gear	0	0.304
@@ -12653,7 +12653,7 @@ B	mage/fire	34	6540	gear	12745	8.184
 B	mage/fire	34	6729	ranged	0	58.44
 B	mage/fire	34	7426	gear	12731	8.399999999999999
 B	mage/fire	34	7888	gear	0	26.58
-B	mage/fire	34	9452	mh	0	0.0
+B	mage/fire	34	9452	mh	0	36.0
 B	mage/fire	34	9822	gear	12757	9.798
 B	mage/fire	34	10053	gear	0	0.0
 B	mage/fire	34	10549	gear	0	2.01
@@ -12703,7 +12703,7 @@ B	mage/fire	34	271207	gear	0	10.13
 B	mage/fire	34	272091	mh	0	18.2
 B	mage/fire	34	272812	gear	0	43.574
 B	mage/fire	34	273926	gear	0	44.28999999999999
-B	mage/fire	34	275648	mh	0	7.45
+B	mage/fire	34	275648	mh	0	59.45
 B	mage/fire	34	277102	gear	0	0.836
 B	mage/fire	34	279891	gear	0	7.005999999999999
 B	mage/fire	34	281689	gear	12718	2.056
@@ -12714,7 +12714,7 @@ B	mage/fire	45	1156	gear	0	4.26
 B	mage/fire	45	1764	gear	0	0.665
 B	mage/fire	45	2158	gear	0	0.8400000000000001
 B	mage/fire	45	2612	gear	0	0.525
-B	mage/fire	45	3227	mh	0	0.0
+B	mage/fire	45	3227	mh	0	19.8
 B	mage/fire	45	3593	gear	0	0.9100000000000001
 B	mage/fire	45	4041	gear	0	20.57
 B	mage/fire	45	4668	gear	0	0.28
@@ -12725,7 +12725,7 @@ B	mage/fire	45	6540	gear	12745	8.42
 B	mage/fire	45	6729	ranged	0	37.53
 B	mage/fire	45	7426	gear	12747	7.7
 B	mage/fire	45	7888	gear	0	25.91
-B	mage/fire	45	9452	mh	0	0.0
+B	mage/fire	45	9452	mh	0	39.6
 B	mage/fire	45	9822	gear	12757	9.735
 B	mage/fire	45	10053	gear	0	0.0
 B	mage/fire	45	10549	gear	0	2.1500000000000004
@@ -12775,7 +12775,7 @@ B	mage/fire	45	271207	gear	0	9.905
 B	mage/fire	45	272091	mh	0	15.6
 B	mage/fire	45	272812	gear	0	41.975
 B	mage/fire	45	273926	gear	0	44.910000000000004
-B	mage/fire	45	275648	mh	0	10.35
+B	mage/fire	45	275648	mh	0	67.55
 B	mage/fire	45	277102	gear	0	0.77
 B	mage/fire	45	279891	gear	0	6.095
 B	mage/fire	45	281689	gear	12718	1.98
@@ -12786,7 +12786,7 @@ B	mage/fire	55	1156	gear	0	5.16
 B	mage/fire	55	1764	gear	0	0.703
 B	mage/fire	55	2158	gear	0	0.8879999999999999
 B	mage/fire	55	2612	gear	0	0.5549999999999999
-B	mage/fire	55	3227	mh	0	0.0
+B	mage/fire	55	3227	mh	0	19.8
 B	mage/fire	55	3593	gear	0	0.962
 B	mage/fire	55	4041	gear	0	22.154
 B	mage/fire	55	4668	gear	0	0.296
@@ -12797,7 +12797,7 @@ B	mage/fire	55	6540	gear	12745	9.075999999999999
 B	mage/fire	55	6729	ranged	0	37.980000000000004
 B	mage/fire	55	7426	gear	12718	8.24
 B	mage/fire	55	7888	gear	0	26.060000000000002
-B	mage/fire	55	9452	mh	0	0.0
+B	mage/fire	55	9452	mh	0	39.6
 B	mage/fire	55	9822	gear	12757	9.777
 B	mage/fire	55	10053	gear	0	0.0
 B	mage/fire	55	10549	gear	0	2.1900000000000004
@@ -12847,7 +12847,7 @@ B	mage/fire	55	271207	gear	0	10.135
 B	mage/fire	55	272091	mh	0	15.6
 B	mage/fire	55	272812	gear	0	43.881
 B	mage/fire	55	273926	gear	0	46.7
-B	mage/fire	55	275648	mh	0	11.05
+B	mage/fire	55	275648	mh	0	68.25
 B	mage/fire	55	277102	gear	0	0.814
 B	mage/fire	55	279891	gear	0	6.169
 B	mage/fire	55	281689	gear	12718	2.134
@@ -12858,7 +12858,7 @@ B	mage/fire	60	1156	gear	0	4.5
 B	mage/fire	60	1764	gear	0	0.722
 B	mage/fire	60	2158	gear	0	0.9119999999999999
 B	mage/fire	60	2612	gear	0	0.57
-B	mage/fire	60	3227	mh	0	0.0
+B	mage/fire	60	3227	mh	0	19.8
 B	mage/fire	60	3593	gear	0	0.988
 B	mage/fire	60	4041	gear	0	21.096
 B	mage/fire	60	4668	gear	0	0.304
@@ -12869,7 +12869,7 @@ B	mage/fire	60	6540	gear	12745	8.664000000000001
 B	mage/fire	60	6729	ranged	0	27.730000000000004
 B	mage/fire	60	7426	gear	12747	8.08
 B	mage/fire	60	7888	gear	0	25.950000000000003
-B	mage/fire	60	9452	mh	0	0.0
+B	mage/fire	60	9452	mh	0	39.6
 B	mage/fire	60	9822	gear	12757	9.798
 B	mage/fire	60	10053	gear	0	0.0
 B	mage/fire	60	10549	gear	0	2.4000000000000004
@@ -12919,7 +12919,7 @@ B	mage/fire	60	271207	gear	0	11.33
 B	mage/fire	60	272091	mh	0	15.6
 B	mage/fire	60	272812	gear	0	42.614000000000004
 B	mage/fire	60	273926	gear	0	48.03
-B	mage/fire	60	275648	mh	0	15.660000000000002
+B	mage/fire	60	275648	mh	0	72.86
 B	mage/fire	60	277102	gear	0	0.836
 B	mage/fire	60	279891	gear	0	6.2059999999999995
 B	mage/fire	60	281689	gear	12718	2.026
@@ -12930,7 +12930,7 @@ B	mage/arcane	12	1156	gear	0	1.26
 B	mage/arcane	12	1764	gear	0	0.152
 B	mage/arcane	12	2158	gear	0	0.192
 B	mage/arcane	12	2612	gear	0	0.12
-B	mage/arcane	12	3227	mh	0	0.0
+B	mage/arcane	12	3227	mh	0	25.2
 B	mage/arcane	12	3593	gear	0	0.20800000000000002
 B	mage/arcane	12	4041	gear	0	7.836
 B	mage/arcane	12	4668	gear	0	0.064
@@ -12941,7 +12941,7 @@ B	mage/arcane	12	6540	gear	12734	8.623999999999999
 B	mage/arcane	12	6729	ranged	0	46.53
 B	mage/arcane	12	7426	gear	12747	5.74
 B	mage/arcane	12	7888	gear	0	22.409999999999997
-B	mage/arcane	12	9452	mh	0	0.0
+B	mage/arcane	12	9452	mh	0	50.4
 B	mage/arcane	12	9822	gear	12734	9.967999999999998
 B	mage/arcane	12	10053	gear	0	0.0
 B	mage/arcane	12	10549	gear	0	1.95
@@ -12991,7 +12991,7 @@ B	mage/arcane	12	271207	gear	0	4.0600000000000005
 B	mage/arcane	12	272091	mh	0	7.0200000000000005
 B	mage/arcane	12	272812	gear	0	24.404
 B	mage/arcane	12	273926	gear	0	31.44
-B	mage/arcane	12	275648	mh	0	8.120000000000001
+B	mage/arcane	12	275648	mh	0	80.92
 B	mage/arcane	12	277102	gear	0	0.176
 B	mage/arcane	12	279891	gear	0	2.456
 B	mage/arcane	12	281689	gear	12719	0.9460000000000001
@@ -13002,7 +13002,7 @@ B	mage/arcane	25	1156	gear	0	3.0
 B	mage/arcane	25	1764	gear	0	0.57
 B	mage/arcane	25	2158	gear	0	0.72
 B	mage/arcane	25	2612	gear	0	0.44999999999999996
-B	mage/arcane	25	3227	mh	0	0.0
+B	mage/arcane	25	3227	mh	0	19.8
 B	mage/arcane	25	3593	gear	0	0.78
 B	mage/arcane	25	4041	gear	0	20.26
 B	mage/arcane	25	4668	gear	0	0.24
@@ -13013,7 +13013,7 @@ B	mage/arcane	25	6540	gear	12731	7.84
 B	mage/arcane	25	6729	ranged	0	46.2
 B	mage/arcane	25	7426	gear	12731	8.399999999999999
 B	mage/arcane	25	7888	gear	0	27.700000000000003
-B	mage/arcane	25	9452	mh	0	0.0
+B	mage/arcane	25	9452	mh	0	39.6
 B	mage/arcane	25	9822	gear	12756	9.63
 B	mage/arcane	25	10053	gear	0	0.0
 B	mage/arcane	25	10549	gear	0	1.9100000000000001
@@ -13063,7 +13063,7 @@ B	mage/arcane	25	271207	gear	0	9.05
 B	mage/arcane	25	272091	mh	0	18.2
 B	mage/arcane	25	272812	gear	0	42.989999999999995
 B	mage/arcane	25	273926	gear	0	43.43
-B	mage/arcane	25	275648	mh	0	4.9399999999999995
+B	mage/arcane	25	275648	mh	0	62.14
 B	mage/arcane	25	277102	gear	0	0.6599999999999999
 B	mage/arcane	25	279891	gear	0	6.709999999999999
 B	mage/arcane	25	281689	gear	12718	1.96
@@ -13074,7 +13074,7 @@ B	mage/arcane	34	1156	gear	0	4.14
 B	mage/arcane	34	1764	gear	0	0.418
 B	mage/arcane	34	2158	gear	0	0.528
 B	mage/arcane	34	2612	gear	0	0.32999999999999996
-B	mage/arcane	34	3227	mh	0	0.0
+B	mage/arcane	34	3227	mh	0	18.0
 B	mage/arcane	34	3593	gear	0	0.572
 B	mage/arcane	34	4041	gear	0	17.024
 B	mage/arcane	34	4668	gear	0	0.176
@@ -13085,7 +13085,7 @@ B	mage/arcane	34	6540	gear	12756	7.616
 B	mage/arcane	34	6729	ranged	0	17.23
 B	mage/arcane	34	7426	gear	12745	6.6
 B	mage/arcane	34	7888	gear	0	21.89
-B	mage/arcane	34	9452	mh	0	0.0
+B	mage/arcane	34	9452	mh	0	36.0
 B	mage/arcane	34	9822	gear	12756	9.462
 B	mage/arcane	34	10053	gear	0	0.0
 B	mage/arcane	34	10549	gear	0	1.81
@@ -13135,7 +13135,7 @@ B	mage/arcane	34	271207	gear	0	7.13
 B	mage/arcane	34	272091	mh	0	11.96
 B	mage/arcane	34	272812	gear	0	34.925999999999995
 B	mage/arcane	34	273926	gear	0	38.74
-B	mage/arcane	34	275648	mh	0	8.73
+B	mage/arcane	34	275648	mh	0	60.730000000000004
 B	mage/arcane	34	277102	gear	0	0.484
 B	mage/arcane	34	279891	gear	0	4.494
 B	mage/arcane	34	281689	gear	12718	1.654
@@ -13146,7 +13146,7 @@ B	mage/arcane	45	1156	gear	0	4.26
 B	mage/arcane	45	1764	gear	0	0.551
 B	mage/arcane	45	2158	gear	0	0.6960000000000001
 B	mage/arcane	45	2612	gear	0	0.435
-B	mage/arcane	45	3227	mh	0	0.0
+B	mage/arcane	45	3227	mh	0	18.0
 B	mage/arcane	45	3593	gear	0	0.754
 B	mage/arcane	45	4041	gear	0	19.318
 B	mage/arcane	45	4668	gear	0	0.232
@@ -13157,7 +13157,7 @@ B	mage/arcane	45	6540	gear	12745	7.852
 B	mage/arcane	45	6729	ranged	0	13.879999999999999
 B	mage/arcane	45	7426	gear	12718	7.24
 B	mage/arcane	45	7888	gear	0	23.71
-B	mage/arcane	45	9452	mh	0	0.0
+B	mage/arcane	45	9452	mh	0	36.0
 B	mage/arcane	45	9822	gear	12756	9.609
 B	mage/arcane	45	10053	gear	0	0.0
 B	mage/arcane	45	10549	gear	0	1.84
@@ -13207,7 +13207,7 @@ B	mage/arcane	45	271207	gear	0	7.635
 B	mage/arcane	45	272091	mh	0	14.3
 B	mage/arcane	45	272812	gear	0	38.957
 B	mage/arcane	45	273926	gear	0	40.72
-B	mage/arcane	45	275648	mh	0	8.34
+B	mage/arcane	45	275648	mh	0	60.34
 B	mage/arcane	45	277102	gear	0	0.638
 B	mage/arcane	45	279891	gear	0	5.473000000000001
 B	mage/arcane	45	281689	gear	12718	1.868
@@ -13218,7 +13218,7 @@ B	mage/arcane	55	1156	gear	0	5.9399999999999995
 B	mage/arcane	55	1764	gear	0	0.589
 B	mage/arcane	55	2158	gear	0	0.744
 B	mage/arcane	55	2612	gear	0	0.46499999999999997
-B	mage/arcane	55	3227	mh	0	0.0
+B	mage/arcane	55	3227	mh	0	18.0
 B	mage/arcane	55	3593	gear	0	0.806
 B	mage/arcane	55	4041	gear	0	22.201999999999998
 B	mage/arcane	55	4668	gear	0	0.248
@@ -13229,7 +13229,7 @@ B	mage/arcane	55	6540	gear	12745	9.028
 B	mage/arcane	55	6729	ranged	0	20.92
 B	mage/arcane	55	7426	gear	12718	8.36
 B	mage/arcane	55	7888	gear	0	23.990000000000002
-B	mage/arcane	55	9452	mh	0	0.0
+B	mage/arcane	55	9452	mh	0	36.0
 B	mage/arcane	55	9822	gear	12756	9.651
 B	mage/arcane	55	10053	gear	0	0.0
 B	mage/arcane	55	10549	gear	0	2.07
@@ -13279,7 +13279,7 @@ B	mage/arcane	55	271207	gear	0	9.265
 B	mage/arcane	55	272091	mh	0	14.3
 B	mage/arcane	55	272812	gear	0	42.423
 B	mage/arcane	55	273926	gear	0	46.410000000000004
-B	mage/arcane	55	275648	mh	0	13.55
+B	mage/arcane	55	275648	mh	0	65.55
 B	mage/arcane	55	277102	gear	0	0.6819999999999999
 B	mage/arcane	55	279891	gear	0	5.547000000000001
 B	mage/arcane	55	281689	gear	12718	2.1519999999999997
@@ -13290,7 +13290,7 @@ B	mage/arcane	60	1156	gear	0	6.0
 B	mage/arcane	60	1764	gear	0	0.608
 B	mage/arcane	60	2158	gear	0	0.768
 B	mage/arcane	60	2612	gear	0	0.48
-B	mage/arcane	60	3227	mh	0	0.0
+B	mage/arcane	60	3227	mh	0	18.0
 B	mage/arcane	60	3593	gear	0	0.8320000000000001
 B	mage/arcane	60	4041	gear	0	22.344
 B	mage/arcane	60	4668	gear	0	0.256
@@ -13301,7 +13301,7 @@ B	mage/arcane	60	6540	gear	12745	9.096
 B	mage/arcane	60	6729	ranged	0	24.05
 B	mage/arcane	60	7426	gear	12718	8.4
 B	mage/arcane	60	7888	gear	0	24.0
-B	mage/arcane	60	9452	mh	0	0.0
+B	mage/arcane	60	9452	mh	0	36.0
 B	mage/arcane	60	9822	gear	12756	9.672
 B	mage/arcane	60	10053	gear	0	0.0
 B	mage/arcane	60	10549	gear	0	2.19
@@ -13351,24 +13351,24 @@ B	mage/arcane	60	271207	gear	0	9.66
 B	mage/arcane	60	272091	mh	0	14.3
 B	mage/arcane	60	272812	gear	0	42.596000000000004
 B	mage/arcane	60	273926	gear	0	47.89
-B	mage/arcane	60	275648	mh	0	16.75
+B	mage/arcane	60	275648	mh	0	68.75
 B	mage/arcane	60	277102	gear	0	0.704
 B	mage/arcane	60	279891	gear	0	5.5840000000000005
 B	mage/arcane	60	281689	gear	12718	2.164
 B	mage/arcane	60	284699	gear	0	4.4
 B	mage/arcane	60	287035	gear	0	24.0
-G	priest/shadow	18	mainhand:277247,offhand:15945	mainhand	1484	0	0	0	28.13	1177.0
-G	priest/shadow	18	mainhand:277247,offhand:15945	mainhand	789	12917	0	0	15.67	1801.1
-G	priest/shadow	18	mainhand:277247,offhand:15945	mainhand	3184	12917	0	0	15.67	1801.1
-G	priest/shadow	18	mainhand:277247,offhand:15945	mainhand	4575	12918	0	0	13.09	547.7
-G	priest/shadow	18	mainhand:277247,offhand:15945	mainhand	2079	12917	0	0	10.89	1251.7
-G	priest/shadow	18	mainhand:277247,offhand:15945	mainhand	4571	12917	0	0	10.89	1251.7
-G	priest/shadow	18	mainhand:277247,offhand:15945	mainhand	15222	12917	0	0	10.89	1251.7
-G	priest/shadow	18	mainhand:277247,offhand:15945	mainhand	4566	12918	0	0	5.35	223.8
-G	priest/shadow	18	mainhand:277247,offhand:15945	mainhand	2075	12917	0	0	5.01	575.9
-G	priest/shadow	18	mainhand:277247,offhand:15945	mainhand	2140	12917	0	0	5.01	575.9
-G	priest/shadow	18	mainhand:277247,offhand:15945	mainhand	2632	12917	0	0	5.01	575.9
-G	priest/shadow	18	mainhand:277247,offhand:15945	mainhand	4569	12917	0	0	5.01	575.9
+G	priest/shadow	18	mainhand:277247,offhand:15945	mainhand	251534	0	0	0	26.71	393.4
+G	priest/shadow	18	mainhand:277247,offhand:15945	mainhand	6505	0	0	0	26.36	388.2
+G	priest/shadow	18	mainhand:277247,offhand:15945	mainhand	1484	0	0	0	23.73	349.5
+G	priest/shadow	18	mainhand:277247,offhand:15945	mainhand	5201	0	0	0	21.77	320.6
+G	priest/shadow	18	mainhand:277247,offhand:15945	mainhand	271216	0	0	0	21.13	400.9
+G	priest/shadow	18	mainhand:277247,offhand:15945	mainhand	2169	0	0	0	18.93	359.2
+G	priest/shadow	18	mainhand:277247,offhand:15945	mainhand	271095	0	0	0	16.05	304.6
+G	priest/shadow	18	mainhand:277247,offhand:15945	mainhand	15444	0	0	0	15.29	225.2
+G	priest/shadow	18	mainhand:277247,offhand:15945	mainhand	276888	0	0	0	14.07	267.0
+G	priest/shadow	18	mainhand:277247,offhand:15945	mainhand	270228	0	0	0	13.01	191.6
+G	priest/shadow	18	mainhand:277247,offhand:15945	mainhand	6631	0	0	0	12.7	187.0
+G	priest/shadow	18	mainhand:277247,offhand:15945	mainhand	16894	0	0	0	11.59	170.7
 G	priest/shadow	18	mainhand:277247,offhand:15945	offhand	15912	12761	0	0	4.48	294.7
 G	priest/shadow	18	mainhand:277247,offhand:15945	offhand	7554	12734	0	0	2.88	189.5
 G	priest/shadow	18	mainhand:277247,offhand:15945	offhand	273137	0	0	0	2.59	170.4
@@ -13376,39 +13376,42 @@ G	priest/shadow	18	mainhand:277247,offhand:15945	offhand	15933	12761	0	0	1.48	97
 G	priest/shadow	18	mainhand:277247,offhand:15945	offhand	15970	12761	0	0	1.48	97.4
 G	priest/shadow	18	mainhand:277247,offhand:15945	offhand	1172	0	0	0	0.44	28.9
 G	priest/shadow	18	mainhand:277247,offhand:15945	offhand	7608	0	0	0	0.11	7.2
+G	priest/shadow	30	mainhand:1484	mainhand	6691	0	273027	0	30.34	87.8
+G	priest/shadow	30	mainhand:1484	mainhand	273053	0	273027	0	23.0	66.6
+G	priest/shadow	30	mainhand:1484	mainhand	3414	0	273027	0	20.58	59.6
+G	priest/shadow	30	mainhand:1484	mainhand	274158	0	0	0	18.5	53.6
+G	priest/shadow	30	mainhand:1484	mainhand	249392	0	0	0	17.82	51.6
+G	priest/shadow	30	mainhand:1484	mainhand	249393	0	0	0	17.05	49.4
+G	priest/shadow	30	mainhand:1484	mainhand	273040	0	0	0	15.42	44.6
+G	priest/shadow	30	mainhand:1484	mainhand	2567	0	273027	0	14.49	42.0
 G	priest/shadow	30	mainhand:1484	mainhand	2549	0	0	0	13.56	39.3
+G	priest/shadow	30	mainhand:1484	mainhand	9457	0	273027	0	13.27	38.4
 G	priest/shadow	30	mainhand:1484	mainhand	865	12906	273027	0	10.8	31.3
 G	priest/shadow	30	mainhand:1484	mainhand	15225	12906	273027	0	10.8	31.3
-G	priest/shadow	30	mainhand:1484	mainhand	15242	12906	273027	0	10.8	31.3
-G	priest/shadow	30	mainhand:1484	mainhand	2816	0	273027	0	7.7	22.3
-G	priest/shadow	30	mainhand:1484	mainhand	3185	12905	0	0	5.44	15.7
-G	priest/shadow	30	mainhand:1484	mainhand	2819	12906	273027	0	3.94	11.4
-G	priest/shadow	30	mainhand:1484	mainhand	15241	12906	273027	0	3.94	11.4
-G	priest/shadow	30	mainhand:1484	mainhand	15224	12917	273027	0	3.08	8.9
-G	priest/shadow	30	mainhand:1484	offhand	273027	0	865	12906	10.8	31.3
-G	priest/shadow	30	mainhand:1484	offhand	249394	0	865	12906	7.98	23.1
-G	priest/shadow	30	mainhand:1484	offhand	7609	12761	865	12906	7.56	21.9
-G	priest/shadow	30	mainhand:1484	offhand	273052	0	865	12906	6.6	19.1
-G	priest/shadow	30	mainhand:1484	offhand	15934	12761	865	12906	6.56	19.0
-G	priest/shadow	30	mainhand:1484	offhand	15935	12761	865	12906	6.56	19.0
-G	priest/shadow	30	mainhand:1484	offhand	9800	12761	865	12906	5.56	16.1
-G	priest/shadow	30	mainhand:1484	offhand	13031	0	865	12906	4.76	13.8
-G	priest/shadow	30	mainhand:1484	offhand	16887	0	865	12906	4.48	13.0
-G	priest/shadow	30	mainhand:1484	offhand	249395	0	865	12906	4.26	12.3
-G	priest/shadow	30	mainhand:1484	offhand	7558	12761	865	12906	3.56	10.3
-G	priest/shadow	30	mainhand:1484	offhand	15912	12761	865	12906	2.56	7.4
+G	priest/shadow	30	mainhand:1484	offhand	273027	0	6691	0	30.34	87.8
+G	priest/shadow	30	mainhand:1484	offhand	249394	0	6691	0	27.52	79.7
+G	priest/shadow	30	mainhand:1484	offhand	7609	12761	6691	0	27.1	78.5
+G	priest/shadow	30	mainhand:1484	offhand	273052	0	6691	0	26.14	75.7
+G	priest/shadow	30	mainhand:1484	offhand	15934	12761	6691	0	26.1	75.6
+G	priest/shadow	30	mainhand:1484	offhand	15935	12761	6691	0	26.1	75.6
+G	priest/shadow	30	mainhand:1484	offhand	9800	12761	6691	0	25.1	72.7
+G	priest/shadow	30	mainhand:1484	offhand	13031	0	6691	0	24.3	70.4
+G	priest/shadow	30	mainhand:1484	offhand	16887	0	6691	0	24.02	69.5
+G	priest/shadow	30	mainhand:1484	offhand	249395	0	6691	0	23.8	68.9
+G	priest/shadow	30	mainhand:1484	offhand	7558	12761	6691	0	23.1	66.9
+G	priest/shadow	30	mainhand:1484	offhand	15912	12761	6691	0	22.1	64.0
+G	priest/holy	34	mainhand:7736,offhand:15945	mainhand	7713	0	0	0	60.66	677.0
+G	priest/holy	34	mainhand:7736,offhand:15945	mainhand	7714	0	0	0	48.32	1006.7
+G	priest/holy	34	mainhand:7736,offhand:15945	mainhand	249393	0	0	0	47.92	534.8
+G	priest/holy	34	mainhand:7736,offhand:15945	mainhand	249392	0	0	0	47.15	526.2
+G	priest/holy	34	mainhand:7736,offhand:15945	mainhand	6691	0	0	0	45.92	956.7
+G	priest/holy	34	mainhand:7736,offhand:15945	mainhand	274158	0	0	0	44.74	499.3
+G	priest/holy	34	mainhand:7736,offhand:15945	mainhand	273040	0	0	0	43.84	489.3
 G	priest/holy	34	mainhand:7736,offhand:15945	mainhand	2549	0	0	0	40.49	451.9
+G	priest/holy	34	mainhand:7736,offhand:15945	mainhand	2271	0	0	0	38.64	431.2
+G	priest/holy	34	mainhand:7736,offhand:15945	mainhand	285350	0	0	0	37.76	421.4
 G	priest/holy	34	mainhand:7736,offhand:15945	mainhand	1207	12910	0	0	37.72	785.8
-G	priest/holy	34	mainhand:7736,offhand:15945	mainhand	3185	12909	0	0	35.2	392.9
-G	priest/holy	34	mainhand:7736,offhand:15945	mainhand	15226	12910	0	0	32.84	684.2
-G	priest/holy	34	mainhand:7736,offhand:15945	mainhand	15243	12910	0	0	32.84	684.2
-G	priest/holy	34	mainhand:7736,offhand:15945	mainhand	2077	12909	0	0	27.92	311.6
-G	priest/holy	34	mainhand:7736,offhand:15945	mainhand	865	12910	0	0	26.64	555.0
-G	priest/holy	34	mainhand:7736,offhand:15945	mainhand	15225	12910	0	0	26.64	555.0
-G	priest/holy	34	mainhand:7736,offhand:15945	mainhand	15242	12910	0	0	26.64	555.0
-G	priest/holy	34	mainhand:7736,offhand:15945	mainhand	1484	0	0	0	25.24	281.7
-G	priest/holy	34	mainhand:7736,offhand:15945	mainhand	2072	12909	0	0	25.04	279.5
-G	priest/holy	34	mainhand:7736,offhand:15945	mainhand	2819	12910	0	0	19.56	407.5
+G	priest/holy	34	mainhand:7736,offhand:15945	mainhand	273053	0	0	0	37.2	775.0
 G	priest/holy	34	mainhand:7736,offhand:15945	offhand	273027	0	0	0	11.88	285.6
 G	priest/holy	34	mainhand:7736,offhand:15945	offhand	7685	0	0	0	9.84	236.5
 G	priest/holy	34	mainhand:7736,offhand:15945	offhand	7609	12747	0	0	8.68	208.7
@@ -13421,18 +13424,18 @@ G	priest/holy	34	mainhand:7736,offhand:15945	offhand	9393	0	0	0	7.36	176.9
 G	priest/holy	34	mainhand:7736,offhand:15945	offhand	16887	0	0	0	7.12	171.2
 G	priest/holy	34	mainhand:7736,offhand:15945	offhand	15929	0	0	0	5.74	138.0
 G	priest/holy	34	mainhand:7736,offhand:15945	offhand	1992	0	0	0	5.19	124.8
+G	priest/discipline	34	mainhand:7736	mainhand	7713	0	0	0	59.62	4258.6
+G	priest/discipline	34	mainhand:7736	mainhand	7714	0	0	0	50.46	3604.3
+G	priest/discipline	34	mainhand:7736	mainhand	249393	0	0	0	48.55	3467.9
+G	priest/discipline	34	mainhand:7736	mainhand	6691	0	0	0	45.1	3221.4
+G	priest/discipline	34	mainhand:7736	mainhand	249392	0	0	0	42.72	3051.4
+G	priest/discipline	34	mainhand:7736	mainhand	1155	0	0	0	42.7	3050.0
+G	priest/discipline	34	mainhand:7736	mainhand	274158	0	0	0	41.95	2996.4
+G	priest/discipline	34	mainhand:7736	mainhand	6689	0	0	0	41.3	2950.0
+G	priest/discipline	34	mainhand:7736	mainhand	2271	0	0	0	40.75	2910.7
+G	priest/discipline	34	mainhand:7736	mainhand	285350	0	0	0	39.65	2832.1
+G	priest/discipline	34	mainhand:7736	mainhand	273040	0	0	0	39.5	2821.4
 G	priest/discipline	34	mainhand:7736	mainhand	1207	12908	0	0	38.85	2775.0
-G	priest/discipline	34	mainhand:7736	mainhand	3185	12907	0	0	38.0	2714.3
-G	priest/discipline	34	mainhand:7736	mainhand	2549	0	0	0	34.56	2468.6
-G	priest/discipline	34	mainhand:7736	mainhand	15226	12908	0	0	33.75	2410.7
-G	priest/discipline	34	mainhand:7736	mainhand	15243	12908	0	0	33.75	2410.7
-G	priest/discipline	34	mainhand:7736	mainhand	2077	12907	0	0	31.76	2268.6
-G	priest/discipline	34	mainhand:7736	mainhand	2072	12907	0	0	28.66	2047.1
-G	priest/discipline	34	mainhand:7736	mainhand	865	12908	0	0	28.18	2012.9
-G	priest/discipline	34	mainhand:7736	mainhand	15225	12908	0	0	28.18	2012.9
-G	priest/discipline	34	mainhand:7736	mainhand	15242	12908	0	0	28.18	2012.9
-G	priest/discipline	34	mainhand:7736	mainhand	1484	0	0	0	25.96	1854.3
-G	priest/discipline	34	mainhand:7736	mainhand	2816	0	0	0	21.84	1560.0
 G	priest/discipline	34	mainhand:7736	offhand	7685	0	0	0	14.0	
 G	priest/discipline	34	mainhand:7736	offhand	273052	0	0	0	13.94	
 G	priest/discipline	34	mainhand:7736	offhand	9393	0	0	0	12.4	
@@ -13445,18 +13448,18 @@ G	priest/discipline	34	mainhand:7736	offhand	13031	0	0	0	9.38
 G	priest/discipline	34	mainhand:7736	offhand	15934	12746	0	0	9.15	
 G	priest/discipline	34	mainhand:7736	offhand	15935	12746	0	0	9.15	
 G	priest/discipline	34	mainhand:7736	offhand	1992	0	0	0	9.13	
+G	mage/frost	18	mainhand:1219,offhand:7554	mainhand	6505	0	0	0	32.12	2590.3
+G	mage/frost	18	mainhand:1219,offhand:7554	mainhand	5201	0	0	0	30.12	2429.0
+G	mage/frost	18	mainhand:1219,offhand:7554	mainhand	251534	0	0	0	28.96	2335.5
+G	mage/frost	18	mainhand:1219,offhand:7554	mainhand	2169	0	0	0	22.96	1851.6
+G	mage/frost	18	mainhand:1219,offhand:7554	mainhand	15444	0	0	0	18.92	1525.8
+G	mage/frost	18	mainhand:1219,offhand:7554	mainhand	271095	0	0	0	18.8	1516.1
+G	mage/frost	18	mainhand:1219,offhand:7554	mainhand	270228	0	0	0	18.56	1496.8
+G	mage/frost	18	mainhand:1219,offhand:7554	mainhand	3452	0	0	0	18.5	1491.9
+G	mage/frost	18	mainhand:1219,offhand:7554	mainhand	6631	0	0	0	17.3	1395.2
+G	mage/frost	18	mainhand:1219,offhand:7554	mainhand	16894	0	0	0	16.94	1366.1
+G	mage/frost	18	mainhand:1219,offhand:7554	mainhand	276888	0	0	0	16.8	1354.8
 G	mage/frost	18	mainhand:1219,offhand:7554	mainhand	3184	12917	0	0	14.34	1156.5
-G	mage/frost	18	mainhand:1219,offhand:7554	mainhand	15211	12917	0	0	14.34	1156.5
-G	mage/frost	18	mainhand:1219,offhand:7554	mainhand	4575	12918	0	0	12.32	993.5
-G	mage/frost	18	mainhand:1219,offhand:7554	mainhand	2078	12917	0	0	9.88	796.8
-G	mage/frost	18	mainhand:1219,offhand:7554	mainhand	4571	12917	0	0	9.88	796.8
-G	mage/frost	18	mainhand:1219,offhand:7554	mainhand	15210	12917	0	0	9.88	796.8
-G	mage/frost	18	mainhand:1219,offhand:7554	mainhand	4566	12918	0	0	5.54	446.8
-G	mage/frost	18	mainhand:1219,offhand:7554	mainhand	727	12917	0	0	4.32	348.4
-G	mage/frost	18	mainhand:1219,offhand:7554	mainhand	2140	12917	0	0	4.32	348.4
-G	mage/frost	18	mainhand:1219,offhand:7554	mainhand	2632	12917	0	0	4.32	348.4
-G	mage/frost	18	mainhand:1219,offhand:7554	mainhand	20425	0	0	0	4.12	332.4
-G	mage/frost	18	mainhand:1219,offhand:7554	mainhand	20434	0	0	0	4.12	332.4
 G	mage/frost	18	mainhand:1219,offhand:7554	offhand	2879	0	0	0	6.0	
 G	mage/frost	18	mainhand:1219,offhand:7554	offhand	15912	12758	0	0	6.0	
 G	mage/frost	18	mainhand:1219,offhand:7554	offhand	273137	0	0	0	5.16	
@@ -13469,42 +13472,42 @@ G	mage/frost	18	mainhand:1219,offhand:7554	offhand	15932	12734	0	0	1.1
 G	mage/frost	18	mainhand:1219,offhand:7554	offhand	15969	12734	0	0	1.1	
 G	mage/frost	18	mainhand:1219,offhand:7554	offhand	1172	0	0	0	0.64	
 G	mage/frost	18	mainhand:1219,offhand:7554	offhand	15925	0	0	0	0.62	
+G	mage/frost	25	mainhand:1484	mainhand	2567	0	9800	12758	36.04	680.0
+G	mage/frost	25	mainhand:1484	mainhand	273637	0	9800	12758	34.5	650.9
+G	mage/frost	25	mainhand:1484	mainhand	2271	0	0	0	34.0	641.5
+G	mage/frost	25	mainhand:1484	mainhand	285350	0	0	0	33.78	637.4
 G	mage/frost	25	mainhand:1484	mainhand	3186	12910	9800	12758	33.56	633.2
 G	mage/frost	25	mainhand:1484	mainhand	15242	12910	9800	12758	33.56	633.2
+G	mage/frost	25	mainhand:1484	mainhand	1155	0	0	0	32.32	609.8
+G	mage/frost	25	mainhand:1484	mainhand	2280	0	0	0	30.56	576.6
+G	mage/frost	25	mainhand:1484	mainhand	6505	0	0	0	29.74	561.1
+G	mage/frost	25	mainhand:1484	mainhand	2169	0	9800	12758	27.9	526.4
 G	mage/frost	25	mainhand:1484	mainhand	2819	12910	9800	12758	27.14	512.1
 G	mage/frost	25	mainhand:1484	mainhand	15212	12910	9800	12758	27.14	512.1
-G	mage/frost	25	mainhand:1484	mainhand	15241	12910	9800	12758	27.14	512.1
-G	mage/frost	25	mainhand:1484	mainhand	271215	0	0	0	26.7	503.8
-G	mage/frost	25	mainhand:1484	mainhand	2077	12909	0	0	25.82	487.2
-G	mage/frost	25	mainhand:1484	mainhand	2072	12909	0	0	23.4	441.5
-G	mage/frost	25	mainhand:1484	mainhand	3184	12917	9800	12758	19.76	372.8
-G	mage/frost	25	mainhand:1484	mainhand	3740	12917	9800	12758	19.76	372.8
-G	mage/frost	25	mainhand:1484	mainhand	15211	12917	9800	12758	19.76	372.8
-G	mage/frost	25	mainhand:1484	mainhand	2078	12917	9800	12758	15.14	285.7
-G	mage/frost	25	mainhand:1484	offhand	9800	12758	3186	12910	33.56	633.2
-G	mage/frost	25	mainhand:1484	offhand	7558	12758	3186	12910	31.56	595.5
-G	mage/frost	25	mainhand:1484	offhand	2879	0	3186	12910	30.56	576.6
-G	mage/frost	25	mainhand:1484	offhand	15912	12758	3186	12910	30.56	576.6
-G	mage/frost	25	mainhand:1484	offhand	273137	0	3186	12910	29.96	565.3
-G	mage/frost	25	mainhand:1484	offhand	16887	0	3186	12910	29.12	549.4
-G	mage/frost	25	mainhand:1484	offhand	7554	12734	3186	12910	28.96	546.4
-G	mage/frost	25	mainhand:1484	offhand	285348	0	3186	12910	28.96	546.4
-G	mage/frost	25	mainhand:1484	offhand	15933	12758	3186	12910	27.56	520.0
-G	mage/frost	25	mainhand:1484	offhand	15970	12758	3186	12910	27.56	520.0
-G	mage/frost	25	mainhand:1484	offhand	286541	0	3186	12910	27.54	519.6
-G	mage/frost	25	mainhand:1484	offhand	6341	0	3186	12910	27.36	516.2
+G	mage/frost	25	mainhand:1484	offhand	9800	12758	2567	0	36.04	680.0
+G	mage/frost	25	mainhand:1484	offhand	7558	12758	2567	0	34.04	642.3
+G	mage/frost	25	mainhand:1484	offhand	2879	0	2567	0	33.04	623.4
+G	mage/frost	25	mainhand:1484	offhand	15912	12758	2567	0	33.04	623.4
+G	mage/frost	25	mainhand:1484	offhand	273137	0	2567	0	32.44	612.1
+G	mage/frost	25	mainhand:1484	offhand	16887	0	2567	0	31.6	596.2
+G	mage/frost	25	mainhand:1484	offhand	7554	12734	2567	0	31.44	593.2
+G	mage/frost	25	mainhand:1484	offhand	285348	0	2567	0	31.44	593.2
+G	mage/frost	25	mainhand:1484	offhand	15933	12758	2567	0	30.04	566.8
+G	mage/frost	25	mainhand:1484	offhand	15970	12758	2567	0	30.04	566.8
+G	mage/frost	25	mainhand:1484	offhand	286541	0	2567	0	30.02	566.4
+G	mage/frost	25	mainhand:1484	offhand	6341	0	2567	0	29.84	563.0
+G	mage/fire	30	mainhand:3413,offhand:4837	mainhand	249392	0	0	0	50.08	878.6
+G	mage/fire	30	mainhand:3413,offhand:4837	mainhand	273040	0	0	0	49.9	875.4
+G	mage/fire	30	mainhand:3413,offhand:4837	mainhand	249393	0	0	0	46.45	814.9
+G	mage/fire	30	mainhand:3413,offhand:4837	mainhand	274158	0	0	0	45.95	806.1
+G	mage/fire	30	mainhand:3413,offhand:4837	mainhand	6691	0	0	0	45.2	1076.2
+G	mage/fire	30	mainhand:3413,offhand:4837	mainhand	273053	0	0	0	38.8	923.8
+G	mage/fire	30	mainhand:3413,offhand:4837	mainhand	2271	0	0	0	37.4	656.1
+G	mage/fire	30	mainhand:3413,offhand:4837	mainhand	285350	0	0	0	37.15	651.8
 G	mage/fire	30	mainhand:3413,offhand:4837	mainhand	3185	12909	0	0	36.05	632.5
-G	mage/fire	30	mainhand:3413,offhand:4837	mainhand	2077	12905	0	0	29.34	514.7
-G	mage/fire	30	mainhand:3413,offhand:4837	mainhand	2072	12909	0	0	26.75	469.3
-G	mage/fire	30	mainhand:3413,offhand:4837	mainhand	3186	12906	0	0	26.32	626.7
-G	mage/fire	30	mainhand:3413,offhand:4837	mainhand	15242	12906	0	0	26.32	626.7
-G	mage/fire	30	mainhand:3413,offhand:4837	mainhand	2819	12910	0	0	19.5	464.3
-G	mage/fire	30	mainhand:3413,offhand:4837	mainhand	15212	12910	0	0	19.5	464.3
-G	mage/fire	30	mainhand:3413,offhand:4837	mainhand	15241	12910	0	0	19.5	464.3
-G	mage/fire	30	mainhand:3413,offhand:4837	mainhand	249392	0	0	0	16.08	282.1
-G	mage/fire	30	mainhand:3413,offhand:4837	mainhand	19569	0	0	0	15.56	273.0
-G	mage/fire	30	mainhand:3413,offhand:4837	mainhand	19573	0	0	0	15.56	273.0
-G	mage/fire	30	mainhand:3413,offhand:4837	mainhand	2549	0	0	0	15.3	268.4
+G	mage/fire	30	mainhand:3413,offhand:4837	mainhand	271767	0	0	0	35.35	620.2
+G	mage/fire	30	mainhand:3413,offhand:4837	mainhand	6505	0	0	0	34.16	599.3
+G	mage/fire	30	mainhand:3413,offhand:4837	mainhand	9452	0	0	0	30.3	531.6
 G	mage/fire	30	mainhand:3413,offhand:4837	offhand	273027	0	0	0	14.42	961.3
 G	mage/fire	30	mainhand:3413,offhand:4837	offhand	2565	0	0	0	11.5	766.7
 G	mage/fire	30	mainhand:3413,offhand:4837	offhand	7609	12747	0	0	10.65	710.0
@@ -13517,18 +13520,18 @@ G	mage/fire	30	mainhand:3413,offhand:4837	offhand	9800	12757	0	0	7.5	500.0
 G	mage/fire	30	mainhand:3413,offhand:4837	offhand	273137	0	0	0	5.7	380.0
 G	mage/fire	30	mainhand:3413,offhand:4837	offhand	273052	0	0	0	5.66	377.3
 G	mage/fire	30	mainhand:3413,offhand:4837	offhand	7558	12731	0	0	5.5	366.7
+G	mage/arcane	40	mainhand:864,offhand:7555	mainhand	873	0	0	0	79.65	
+G	mage/arcane	40	mainhand:864,offhand:7555	mainhand	271803	0	0	0	75.68	
+G	mage/arcane	40	mainhand:864,offhand:7555	mainhand	274606	0	0	0	70.13	
 G	mage/arcane	40	mainhand:864,offhand:7555	mainhand	7757	0	0	0	69.7	
+G	mage/arcane	40	mainhand:864,offhand:7555	mainhand	274998	0	0	0	65.45	
+G	mage/arcane	40	mainhand:864,offhand:7555	mainhand	7713	0	0	0	64.48	
+G	mage/arcane	40	mainhand:864,offhand:7555	mainhand	271930	0	0	0	59.96	
+G	mage/arcane	40	mainhand:864,offhand:7555	mainhand	272085	0	0	0	59.96	
+G	mage/arcane	40	mainhand:864,offhand:7555	mainhand	279886	0	0	0	58.1	
 G	mage/arcane	40	mainhand:864,offhand:7555	mainhand	1613	12905	0	0	55.84	
+G	mage/arcane	40	mainhand:864,offhand:7555	mainhand	249392	0	0	0	53.91	
 G	mage/arcane	40	mainhand:864,offhand:7555	mainhand	866	12905	0	0	53.13	
-G	mage/arcane	40	mainhand:864,offhand:7555	mainhand	3187	12906	0	0	46.66	
-G	mage/arcane	40	mainhand:864,offhand:7555	mainhand	15215	12906	0	0	46.66	
-G	mage/arcane	40	mainhand:864,offhand:7555	mainhand	8196	12906	0	0	40.95	
-G	mage/arcane	40	mainhand:864,offhand:7555	mainhand	15214	12906	0	0	40.95	
-G	mage/arcane	40	mainhand:864,offhand:7555	mainhand	15244	12906	0	0	40.95	
-G	mage/arcane	40	mainhand:864,offhand:7555	mainhand	3185	12905	0	0	40.8	
-G	mage/arcane	40	mainhand:864,offhand:7555	mainhand	864	12906	0	0	35.85	
-G	mage/arcane	40	mainhand:864,offhand:7555	mainhand	15213	12906	0	0	35.85	
-G	mage/arcane	40	mainhand:864,offhand:7555	mainhand	15243	12906	0	0	35.85	
 G	mage/arcane	40	mainhand:864,offhand:7555	offhand	282706	0	0	0	21.2	
 G	mage/arcane	40	mainhand:864,offhand:7555	offhand	271934	0	0	0	20.75	
 G	mage/arcane	40	mainhand:864,offhand:7555	offhand	272089	0	0	0	20.75	

@@ -113,4 +113,22 @@ return {
 			T.eq(ns.Sources.GenericWorld({ quality = 0, sources = srcs }, ns.Items.Get(r.id)), r.generic, "item " .. r.id)
 		end
 	end,
+	-- Caster weapons' spell power is computed by the client (no stat code, equip spell or API stat): the
+	-- shipped table must carry it, so the window scores Living Root like the live tooltip does
+	-- (C_Item.GetItemStats: healing 45, spell damage 15; 23.2 for Shadow at 20, not 5.2).
+	caster_weapon_shipped_equals_live = function()
+		local files = { unpack(FILES) }
+		files[#files + 1] = "Live.lua"
+		local ns = T.addon(files)
+		local w = weights(ns, "priest/shadow", 20)
+		local shipped = ns.Score.Instance(ns.Items.Get(6631))
+		local live = ns.Live.Instance("item:6631", {
+			Info = function() return "INVTYPE_2HWEAPON", 18, 2, 10, 3, nil, "Living Root" end,
+			Stats = function() return { ITEM_MOD_SPELL_HEALING_DONE_SHORT = 45, ITEM_MOD_SPELL_DAMAGE_DONE_SHORT = 15,
+				ITEM_MOD_SPIRIT_SHORT = 5, ITEM_MOD_STAMINA_SHORT = 2, RESISTANCE3_NAME = 9,
+				ITEM_MOD_DAMAGE_PER_SECOND_SHORT = 14.66 } end })
+		T.eq(shipped.stats.heal, 45); T.eq(shipped.stats.spDmg, 15); T.near(shipped.dps, 14.66, 1e-9)
+		local a, b = ns.Score.Score(shipped, w, "priest", "mh"), ns.Score.Score(live, w, "priest", "mh")
+		T.near(a, b, 1e-9); T.ok(a > 20, "Living Root scores " .. a)
+	end,
 }
