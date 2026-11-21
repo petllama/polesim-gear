@@ -558,6 +558,19 @@ function Win.SlotPlanLine(slot)
 	if entry.isPick then return "Your pick: " .. what, C.pick[1], C.pick[2], C.pick[3] end
 	return "Suggested upgrade: " .. what, C.green[1], C.green[2], C.green[3]
 end
+-- While the auction house is open with scan results (AH.lua, session only): the scan's best upgrade
+-- for the equipped slot's plan slot when it gains more than the plan -> "AH: <item> +N (<price>)" | nil
+function Win.AHLine(slot)
+	local AH = ns.AH
+	local key = Win.SlotKeyOf(slot)
+	local r = AH and key and AH.BestFor(key)
+	if not r then return nil end
+	local info = Win.badges and Win.badges[slot]
+	local plan = info and info.entry and info.entry.plan
+	local planGain = plan and (plan.setGain or plan.gain) or 0
+	if r.gain <= planGain + 1e-6 then return nil end
+	return format("AH: %s %s (%s)", r.c.inst.name or "?", S.Signed(r.gain), S.Money(r.price))
+end
 function Win.CreateBottom(f)
 	local eq = S.Panel(f, 12, -400, 470, 88)
 	f.eq = eq
@@ -591,6 +604,8 @@ function Win.CreateBottom(f)
 			GameTooltip:SetInventoryItem("player", self.slot)
 			local line, r, g, bl = Win.SlotPlanLine(self.slot)
 			if line then GameTooltip:AddLine(line, r, g, bl, true) end
+			local ah = Win.AHLine(self.slot)
+			if ah then GameTooltip:AddLine(ah, C.gold[1], C.gold[2], C.gold[3], true) end
 			GameTooltip:AddLine("Click: this slot's upgrades", 0.6, 0.6, 0.6)
 			GameTooltip:Show()
 		end)
@@ -928,6 +943,8 @@ ns.On("WISHLIST_CHANGED", function(k)
 	redraw()
 end)
 ns.On("OPTIONS", redraw)
+-- an auction house scan's prices and upgrades show on the Gear Plan (session only; gone on close)
+ns.On("AH_CHANGED", function() if visible() then redraw() end end)
 -- A quest turned in (QUEST_TURNED_IN, QuestLogDocumentation in the Forever 1.60.1 UI source) takes its
 -- rewards off the list: one rebuild a moment later for a burst of turn-ins (the completion flag is set
 -- by then), only while the window is shown (closed, it builds again when opened).

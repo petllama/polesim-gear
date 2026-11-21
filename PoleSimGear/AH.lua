@@ -159,7 +159,9 @@ local function perGold(gain, price) return gain / (math.max(price or 0, 1) / 100
 function AH.Build(found, ctx, ahead)
 	local counts = { results = 0, notScored = 0, scored = 0 }
 	local out = {}
-	if not ctx then return out, counts end
+	-- the cheapest price of every scored item, upgrade or not: exact ("id:bonus") and any-suffix (id)
+	local prices = { exact = {}, any = {} }
+	if not ctx then return out, counts, prices end
 	local top = math.min(60, ctx.level + (ahead or 0))
 	local bands = {}
 	local function bandAt(L)
@@ -176,6 +178,9 @@ function AH.Build(found, ctx, ahead)
 		elseif c then
 			counts.scored = counts.scored + 1
 			cands[#cands + 1] = c
+			local t, k = prices.exact, c.key
+			if c.anySuffix then t, k = prices.any, c.c.id end
+			if not t[k] or c.price < t[k] then t[k] = c.price end
 		elseif why == "unknown" then
 			counts.notScored = counts.notScored + 1
 		end
@@ -215,7 +220,7 @@ function AH.Build(found, ctx, ahead)
 		r.partner = r.partnerCand and rowOf[r.partnerCand] or nil
 		r.partnerCand = nil
 	end
-	return AH.Sort(out, "gain"), counts
+	return AH.Sort(out, "gain"), counts, prices
 end
 
 -- rows -> a new list in the order: "gain" (default: biggest first), "value" (gain per gold), "price"
@@ -254,13 +259,33 @@ AH.MAX_PAGES = 25
 
 -- scan = { queries, i, pages, waiting ("ready" | "results"), token, failed, done, stopped (why) }
 -- found: "itemID:suffix:itemLevel" -> { itemKey, minPrice, totalQuantity, result }; rows: the upgrades
-local scan, found, rows, counts = nil, {}, {}, nil
+local scan, found, rows, counts, prices = nil, {}, {}, nil, nil
 local sending = false -- our own SendBrowseQuery (the hook below tells it from another search)
 local hookedApi = nil
 
 local function changed() ns.Fire("AH_CHANGED") end
 
 function AH.Found() return found end
+
+-- The cheapest price of an item (an instance: id, bonus) in the last scan: price, anySuffix (the browse
+-- row stands for every suffix of it) | nil (not scanned, not for sale, the AH closed).
+function AH.PriceOf(inst)
+	if not (prices and inst and inst.id) then return nil end
+	local p = prices.exact[inst.id .. ":" .. (inst.bonus or 0)]
+	if p then return p, false end
+	p = prices.any[inst.id]
+	if p then return p, true end
+	return nil
+end
+
+-- The scan's biggest upgrade for a slot (Browser.SLOTS key) | nil
+function AH.BestFor(slotKey)
+	local best
+	for _, r in ipairs(rows) do
+		if r.slot and r.slot.key == slotKey and (not best or r.gain > best.gain) then best = r end
+	end
+	return best
+end
 function AH.Rows() return rows end
 function AH.Scanning() return scan ~= nil and not scan.done end
 
@@ -299,7 +324,7 @@ local advance
 local function finish()
 	scan.done = true
 	scan.waiting = nil
-	rows, counts = AH.Build(found, ns.Context.Get(), scan.ahead)
+	rows, counts, prices = AH.Build(found, ns.Context.Get(), scan.ahead)
 	changed()
 end
 
@@ -348,7 +373,7 @@ local function stop(why)
 	scan.done = true
 	scan.waiting = nil
 	if why then scan.stopped = why else scan.cancelled = true end
-	rows, counts = AH.Build(found, ns.Context.Get(), scan.ahead)
+	rows, counts, prices = AH.Build(found, ns.Context.Get(), scan.ahead)
 	changed()
 end
 
@@ -373,7 +398,7 @@ function AH.Scan()
 	local queries = AH.Queries(ctx.cls, ctx.level, ahead)
 	if #queries == 0 then return false, "nothing to search for" end
 	hook(api)
-	found, rows, counts = {}, {}, nil
+	found, rows, counts, prices = {}, {}, nil, nil
 	scan = { queries = queries, i = 0, pages = 0, failed = 0, searched = 0, level = ctx.level, ahead = ahead }
 	advance()
 	return true
@@ -405,7 +430,7 @@ end)
 
 -- Session only: the auction house closing stops a scan and lets go of every result.
 function AH.Clear()
-	scan, found, rows, counts = nil, {}, {}, nil
+	scan, found, rows, counts, prices = nil, {}, {}, nil, nil
 	changed()
 end
 ns.RegisterEvent("AUCTION_HOUSE_CLOSED", AH.Clear)
@@ -413,7 +438,7 @@ ns.RegisterEvent("AUCTION_HOUSE_CLOSED", AH.Clear)
 -- Scores changed (an item bought and equipped, a level, talents): the results are scored again.
 ns.On("SCORES_CHANGED", function()
 	if not (scan and scan.done and next(found)) then return end
-	rows, counts = AH.Build(found, ns.Context.Get(), scan.ahead)
+	rows, counts, prices = AH.Build(found, ns.Context.Get(), scan.ahead)
 	changed()
 end)
 

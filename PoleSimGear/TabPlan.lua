@@ -120,6 +120,12 @@ local function fill(row, e)
 			local tag = S.Colour(C.blue) .. ns.Route.Tag(route) .. "|r"
 			sub = sub and (sub .. "  " .. tag) or tag
 		end
+		-- for sale in the auction house (the last scan while it is open)
+		local price = ns.AH and ns.AH.PriceOf(r.c.inst)
+		if price then
+			local tag = S.Colour(C.gold) .. "AH: " .. S.Money(price) .. "|r"
+			sub = sub and (sub .. "  " .. tag) or tag
+		end
 		row.plan:Set(r.c.inst, sub)
 		row.delta:SetText(S.Signed(r.gain))
 		row.pct:SetText(S.Pct(r.gain, r.base)) -- over everything it replaces (main + off hand for a staff)
@@ -288,6 +294,8 @@ function Tab.CurrentTooltip(row, cell)
 	GameTooltip:SetInventoryItem("player", slot)
 	local line, r, g, b = ns.Window.SlotPlanLine(slot)
 	if line then GameTooltip:AddLine(line, r, g, b, true) end
+	local ah = ns.Window.AHLine(slot)
+	if ah then GameTooltip:AddLine(ah, C.gold[1], C.gold[2], C.gold[3], true) end
 	GameTooltip:Show()
 end
 
