@@ -16,6 +16,17 @@ return {
 		T.eq(ns.Items.Get(1), nil)
 		T.eq(ns.Items.Get(14152), nil, "mage robe not shipped")
 	end,
+	-- Gates other than the level: a reputation (faction, standing 0..7) is shipped (the vendor's note);
+	-- PvP-rank items are not shipped at all (never upgrades, as on the website).
+	gates = function()
+		local ns = T.addon(FILES)
+		T.eq(ns.Items.Get(16315), nil, "Sergeant Major's Cape: a PvP rank")
+		T.eq(ns.Items.Get(6540).rep, nil)
+		local id, f, s = ns.DATA.items:match("\n(%d+)\t([^\n]*\t)(%d+:%d+)\n")
+		T.ok(id, "a shipped item with a reputation gate")
+		local it = ns.Items.Get(tonumber(id))
+		T.eq(it.rep[1] .. ":" .. it.rep[2], s)
+	end,
 	wand = function()
 		local ns = T.addon(FILES)
 		local w = ns.Items.Get(11288)

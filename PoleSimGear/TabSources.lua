@@ -195,7 +195,7 @@ end
 local function item(r, i)
 	local rare = r.rare
 	if rare == nil then rare = r.src ~= nil and ns.Groups.Rare(r.src) end
-	return { c = r.c, gain = r.gain, at = r.at, slot = r.slot, note = r.note, src = r.src, others = r.others,
+	return { c = r.c, gain = r.gain, base = r.base, at = r.at, slot = r.slot, note = r.note, src = r.src, others = r.others,
 		otherCount = r.otherCount, rare = rare, index = i }
 end
 -- rows (by gain) -> the likely ones first, then the rare ones (each still by gain)

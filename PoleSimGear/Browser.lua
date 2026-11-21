@@ -33,7 +33,7 @@ function Browser.Candidate(id, env, lim, w, role)
 	if not it or it.rl > lim then return nil end
 	if not ns.Equip.CanUse(it, env.cls, math.max(env.level, it.rl)) then return nil end
 	if not ns.Sources.RaceOk(it.rm, env.player.raceBit) then return nil end
-	local srcs = ns.Sources.For(id, env.codex, env.player, lim)
+	local srcs = ns.Sources.For(id, env.codex, env.player, lim, it)
 	if not srcs then return nil end
 	local ok, kinds = {}, {}
 	for _, s in ipairs(srcs) do
@@ -113,7 +113,10 @@ Browser.ByGain = byGain
 -- worn: the same item with the same suffix (armory._same)
 local function same(a, b) return a and b and a.id == b.id and (a.bonus or 0) == (b.bonus or 0) end
 
--- cands (Collect), band ({ worn }) -> { [slotKey] = { { c, gain, note, slot }, ... } } with gain > 0, best first.
+-- cands (Collect), band ({ worn }) -> { [slotKey] = { { c, gain, base, note, slot }, ... } } with gain > 0, best
+-- first. base = the score of everything the item replaces (Gain % = gain / base, as the tooltip's
+-- Equip.Compare and the website): main + off hand for a two-hander, the worn two-hander for a one-hander
+-- or off hand paired under it, the weaker ring/trinket (or the unique one worn), else the slot's item.
 -- pair (optional, Collect's shape): where the one-hander / off hand to pair with under a worn two-hander
 -- comes from (default cands); the website picks them from every candidate up to the level.
 function Browser.Gains(cands, band, pair)
@@ -135,46 +138,52 @@ function Browser.Gains(cands, band, pair)
 	for _, def in ipairs(Browser.SLOTS) do
 		local rows = {}
 		for _, c in ipairs(cands[def.key] or {}) do
-			local gain, note
+			local gain, note, base
 			if def.key == "finger" or def.key == "trinket" then
 				local sa, ia = at(def.slot)
 				local sb, ib = at(def.slot + 1)
 				if not (same(ia, c.inst) or same(ib, c.inst)) then
 					-- unique-equipped and worn with another suffix: it can only replace that one
 					if c.inst.unique and ia and ia.id == c.id then
-						gain, note = c.score - sa, "unique: replaces the one you wear"
+						gain, note, base = c.score - sa, "unique: replaces the one you wear", sa
 					elseif c.inst.unique and ib and ib.id == c.id then
-						gain, note = c.score - sb, "unique: replaces the one you wear"
+						gain, note, base = c.score - sb, "unique: replaces the one you wear", sb
 					else
-						gain = c.score - math.min(sa, sb)
+						base = math.min(sa, sb)
+						gain = c.score - base
 					end
 				end
 			elseif def.key == "mainhand" then
 				if not same(mh, c.inst) then
 					if c.inst.inv == 17 then
-						gain = c.score - mhS - (mh2h and 0 or ohS)
+						base = mhS + (mh2h and 0 or ohS)
+						gain = c.score - base
 						note = (oh and not mh2h) and "replaces your main and off hand" or nil
 					elseif mh2h then
+						base = mhS
 						gain = c.score + (bestOh and bestOh.score or 0) - mhS
 						note = bestOh and ("with " .. bestOh.inst.name .. " in the off hand") or "leaves the off hand empty"
 					else
+						base = mhS
 						gain = c.score - mhS
 					end
 				end
 			elseif def.key == "offhand" then
 				if not same(oh, c.inst) then
 					if mh2h then
+						base = mhS
 						gain = c.score + (best1h and best1h.score or 0) - mhS
 						note = best1h and ("with " .. best1h.inst.name .. " in the main hand") or "needs a one-hander"
 					else
+						base = ohS
 						gain = c.score - ohS
 					end
 				end
 			else
 				local s, i = at(def.slot)
-				if not same(i, c.inst) then gain = c.score - s end
+				if not same(i, c.inst) then gain, base = c.score - s, s end
 			end
-			if gain and gain > 1e-6 then rows[#rows + 1] = { c = c, gain = gain, note = note, slot = def } end
+			if gain and gain > 1e-6 then rows[#rows + 1] = { c = c, gain = gain, base = base, note = note, slot = def } end
 		end
 		table.sort(rows, byGain)
 		out[def.key] = rows

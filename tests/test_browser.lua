@@ -134,6 +134,21 @@ return {
 		T.near(g.mainhand[2].gain, 2); T.eq(g.mainhand[2].note, "with I3 in the off hand")
 		T.near(g.offhand[1].gain, 2); T.eq(g.offhand[1].note, "with I2 in the main hand")
 		T.eq(#g.finger, 1, "the worn ring is not an upgrade"); T.near(g.finger[1].gain, 1)
+		-- base: the score of everything the row replaces (Gain % = gain / base): the staff for the paired
+		-- one-hander and off hand, the weaker ring
+		T.near(g.mainhand[1].base, 10); T.near(g.mainhand[2].base, 10); T.near(g.offhand[1].base, 10)
+		T.near(g.finger[1].base, 4)
+	end,
+	-- A two-hander replaces main AND off hand: gain and base both count the pair (Witching Stave against
+	-- Mug + Runic Stave: +28.1 over 2.39, not over the Mug's 0.9).
+	gains_two_hander_base = function()
+		local B = T.addon(FILES).Browser
+		local function c(id, inv, score) return { id = id, score = score, inst = { id = id, inv = inv, name = "I" .. id }, kinds = { quest = true } } end
+		local band = { worn = { [16] = { inst = { id = 50, inv = 21 }, score = 0.9 }, [17] = { inst = { id = 51, inv = 23 }, score = 1.49 } } }
+		local g = B.Gains({ mainhand = { c(1, 17, 30.52), c(2, 21, 3) }, offhand = { c(3, 23, 2) } }, band)
+		T.eq(g.mainhand[1].c.id, 1); T.near(g.mainhand[1].gain, 30.52 - 2.39, 1e-9); T.near(g.mainhand[1].base, 2.39, 1e-9)
+		T.eq(g.mainhand[1].note, "replaces your main and off hand")
+		T.near(g.mainhand[2].base, 0.9, 1e-9, "a one-hander replaces the main hand"); T.near(g.offhand[1].base, 1.49, 1e-9)
 	end,
 	-- As armory._upgrades: "worn" is the same item with the same suffix; a unique ring worn with another
 	-- suffix can only replace that one.

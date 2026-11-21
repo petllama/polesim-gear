@@ -83,7 +83,7 @@ local function fill(row, e)
 		end
 		row.plan:Set(r.c.inst, sub)
 		row.delta:SetText(S.Signed(r.gain))
-		row.pct:SetText(S.Pct(r.gain, w and w.score))
+		row.pct:SetText(S.Pct(r.gain, r.base)) -- over everything it replaces (main + off hand for a staff)
 		local k = primaryKind(r)
 		row.srcIcon:SetTexture(k and S.KIND_ICON[k])
 		row.srcIcon:SetShown(k ~= nil)

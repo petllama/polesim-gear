@@ -33,11 +33,11 @@ end
 local function rowOf(rows, items, r, src)
 	local e = items[r.c.id]
 	if not e then
-		e = { c = r.c, gain = r.gain, at = r.at, note = r.note, slot = r.slot, srcs = {}, sseen = {} }
+		e = { c = r.c, gain = r.gain, base = r.base, at = r.at, note = r.note, slot = r.slot, srcs = {}, sseen = {} }
 		items[r.c.id] = e
 		rows[#rows + 1] = e
 	elseif r.gain > e.gain then
-		e.c, e.gain, e.at, e.note, e.slot = r.c, r.gain, r.at, r.note, r.slot
+		e.c, e.gain, e.base, e.at, e.note, e.slot = r.c, r.gain, r.base, r.at, r.note, r.slot
 	end
 	local k = srcKey(src)
 	if not e.sseen[k] then
@@ -133,7 +133,7 @@ function Groups.Build(model, ahead, codex)
 					add(bucket(out.vendor, idx.vendor, zkey, s.where or zoneName(codex, s.zoneId) or "Unknown zone"), r, s, r.c.id)
 				elseif s.kind == "world" and not worldDone then
 					worldDone = true
-					out.world[#out.world + 1] = { c = r.c, gain = r.gain, at = r.at, note = r.note, slot = r.slot, src = s }
+					out.world[#out.world + 1] = { c = r.c, gain = r.gain, base = r.base, at = r.at, note = r.note, slot = r.slot, src = s }
 				end
 			end
 		end

@@ -184,10 +184,28 @@ local function keepBestDrops(views)
 	return out
 end
 
--- An item's browser sources; nil when Polestar marks it retired (hidden). Codex reads are Polestar
+Sources.STANDINGS = { "Hated", "Hostile", "Unfriendly", "Neutral", "Friendly", "Honored", "Revered", "Exalted" }
+
+-- " (needs <Faction>: <Standing>)" for an item with a reputation gate (the shipped `rep`: faction id,
+-- standing 0 Hated .. 7 Exalted; armory._rep_note), else "". The faction's name from the Codex.
+function Sources.RepNote(it, codex)
+	local r = it and it.rep
+	if not r then return "" end
+	local ok, f = pcall(call, codex, "Faction", r[1])
+	local name = ok and type(f) == "table" and f.name or ("faction " .. r[1])
+	return " (needs " .. name .. ": " .. (Sources.STANDINGS[r[2] + 1] or ("standing " .. r[2])) .. ")"
+end
+
+-- The website's rule for an item with no required level (quest rewards, the Virtuous set Mokvar sells
+-- for 100g): from a source with no level of its own (a vendor, a container in a dungeon) its item level
+-- stands in (leveling items sit about 5 above their level): not yet when it is above lim + 5.
+local LEVEL_LESS = { vendor = true, object = true }
+
+-- An item's browser sources; nil when Polestar marks it retired (hidden). it (optional): the shipped
+-- item (rl, il, rep) for the item-level rule and the reputation note. Codex reads are Polestar
 -- internals: one that errors (Polestar changed) drops that source, or all of the item's, and is kept in
 -- Sources.lastError for the window; it never stops the browser.
-function Sources.For(id, codex, player, lim)
+function Sources.For(id, codex, player, lim, it)
 	local okRec, rec = pcall(codex.Item, id)
 	if not okRec then
 		Sources.lastError = rec
@@ -201,6 +219,10 @@ function Sources.For(id, codex, player, lim)
 		if not ok then
 			Sources.lastError = v
 		elseif v then
+			if it and v.ok and LEVEL_LESS[src.type] and (it.rl or 0) == 0 and (it.il or 0) > lim + 5 then
+				v.ok, v.why = false, "item level " .. it.il
+			end
+			if it and it.rep and v.kind == "vendor" then v.text = v.text .. Sources.RepNote(it, codex) end
 			out[#out + 1] = v
 		end
 	end

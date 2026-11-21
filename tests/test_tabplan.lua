@@ -26,6 +26,34 @@ return {
 		T.ok(headRow.kind.text ~= "", "source kind")
 		fx.done()
 	end,
+	-- Gain % = gain / the score of everything the plan item replaces: a staff against main + off hand
+	-- (the Gear Plan showed +3233% against the main hand alone while the gain was over both).
+	pct_two_hander = function()
+		local worn = {}
+		local fx = F.load({ worn = worn, level = 18 })
+		local ns = fx.ns
+		local w = ns.Bands.For("priest", "shadow", 18).w
+		local function wear(slot, id, role)
+			local inst = ns.Score.Instance(ns.Items.Get(id))
+			worn[slot] = { inst = inst, score = ns.Score.Score(inst, w, "priest", role) }
+		end
+		wear(16, 277247, "mh"); wear(17, 15945, "oh") -- Mug of Muddled Memories, Runic Stave
+		fx.open()
+		local row
+		for _, r in ipairs(rowsOf(fx)) do if r.e.def.key == "mainhand" then row = r end end
+		local plan = row.e.entry.plan
+		T.eq(plan.c.inst.inv, 17, "a staff is the plan")
+		local pair = worn[16].score + worn[17].score
+		T.near(plan.base, pair, 1e-9)
+		T.eq(row.pct.text, ns.Style.Pct(plan.gain, pair))
+		T.ok(row.pct.text ~= ns.Style.Pct(plan.gain, worn[16].score), "not over the main hand alone")
+		-- Slot Upgrades: the same base on every row
+		ns.Window.OpenSlot("mainhand")
+		for _, r in ipairs(fx.U.rows(ns.Window.Panel("slot").list)) do
+			if r.d and r.d.c then T.eq(r.pct.text, ns.Style.Pct(r.d.gain, r.d.base), r.d.c.inst.name) end
+		end
+		fx.done()
+	end,
 	empty_states = function()
 		local fx = F.load()
 		local ns = fx.ns

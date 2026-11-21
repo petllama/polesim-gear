@@ -132,6 +132,38 @@ return {
 		T.eq(#S.For(2, codex, player, 20), 0)
 		T.ok(S.lastError, "kept for the window to mention")
 	end,
+	-- An item with no required level (quest rewards, the Virtuous set sold by Mokvar for 100g) from a
+	-- source with no level of its own (vendor, dungeon container): its item level stands in, as on the
+	-- website (armory.source_views: item level > the level + 5 is not yet).
+	level_less_items = function()
+		local S = T.addon(FILES).Sources
+		local codex = {
+			Item = function() return { sources = { { type = "vendor", npc = 3 }, { type = "object", object = 10 } } } end,
+			Npc = function() return { name = "Mokvar" } end,
+			Object = function() return { name = "Chest", instance = "DM" } end,
+			Instance = function() return { name = "The Deadmines", kind = "dungeon" } end,
+		}
+		local v = S.For(2, codex, player, 18, { rl = 0, il = 66 })
+		T.eq(#v, 2)
+		for _, x in ipairs(v) do T.ok(not x.ok, x.kind); T.eq(x.why, "item level 66") end
+		for _, x in ipairs(S.For(2, codex, player, 18, { rl = 0, il = 23 })) do T.ok(x.ok, "item level 23 at 18") end
+		for _, x in ipairs(S.For(2, codex, player, 18, { rl = 10, il = 66 })) do T.ok(x.ok, "a required level: the level gate") end
+		for _, x in ipairs(S.For(2, codex, player, 18)) do T.ok(x.ok, "no item record: no rule") end
+	end,
+	-- A reputation requirement (Items `rep`: faction, standing 0 Hated .. 7 Exalted) stays an upgrade with
+	-- the standing on the vendor, as on the website.
+	reputation_note = function()
+		local S = T.addon(FILES).Sources
+		local codex = {
+			Item = function() return { sources = { { type = "vendor", npc = 3 } } } end,
+			Npc = function() return { name = "Quartermaster" } end,
+			Faction = function(id) return id == 509 and { name = "The League of Arathor" } or nil end,
+		}
+		local v = S.For(2, codex, player, 30, { rl = 28, il = 33, rep = { 509, 5 } })
+		T.ok(v[1].ok); T.eq(v[1].text, "Vendor: Quartermaster (needs The League of Arathor: Honored)")
+		v = S.For(2, codex, player, 30, { rl = 28, il = 33, rep = { 77, 7 } })
+		T.eq(v[1].text, "Vendor: Quartermaster (needs faction 77: Exalted)")
+	end,
 	needs = function()
 		local S = T.addon(FILES).Sources
 		local codex = { Quest = function(id) return { id = id, title = "First " .. id } end }
