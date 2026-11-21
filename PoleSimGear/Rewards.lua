@@ -1,5 +1,7 @@
 -- Quest reward pick: at turn-in, mark the choice that is best for the character (our arrow and the
--- gain on the icon). Choices it cannot use are never picked.
+-- gain on the icon). Choices it cannot use are never picked. A choice up to 5 levels above the
+-- character (the tooltip's range) can be picked (the reward is kept until usable), but its mark shows
+-- "lvl N" and no arrow: it is not an upgrade now.
 local ADDON, ns = ...
 local Rewards = {}
 ns.Rewards = Rewards
@@ -26,7 +28,9 @@ end
 -- marks use the icon's corners (its arrow top-left, its coin top-right) and a ring around the icon;
 -- ours keeps clear of all three.
 local marks = {}
-local function mark(button, gain, upgrade)
+local GREEN, GREY, GOLD = "|cff4cff4c", "|cffcccccc", "|cffffd100"
+-- rl: the level the choice needs when above the character's (then no arrow, gold gain, "lvl N" on top)
+local function mark(button, gain, upgrade, rl)
 	local m = marks[button]
 	if not m then
 		local icon = button.Icon or button
@@ -38,10 +42,14 @@ local function mark(button, gain, upgrade)
 		m.arrow:SetPoint("RIGHT", m, "LEFT", 6, 0)
 		m.text = m:CreateFontString(nil, "OVERLAY", "NumberFontNormalSmall")
 		m.text:SetPoint("BOTTOM", m, "BOTTOM", 0, 1)
+		m.note = m:CreateFontString(nil, "OVERLAY", "NumberFontNormalSmall")
+		m.note:SetPoint("TOP", m, "TOP", 0, -1)
 		marks[button] = m
 	end
-	m.arrow:SetShown(upgrade)
-	m.text:SetText((upgrade and "|cff4cff4c" or "|cffcccccc") .. string.format("%+.1f", gain) .. "|r")
+	m.arrow:SetShown(upgrade and not rl)
+	m.text:SetText((rl and GOLD or upgrade and GREEN or GREY) .. string.format("%+.1f", gain) .. "|r")
+	m.note:SetText(rl and (GOLD .. "lvl " .. rl .. "|r") or "")
+	m.note:SetShown(rl and true or false)
 	m:Show()
 end
 function Rewards.MarkOf(button) return marks[button] end
@@ -76,6 +84,7 @@ function Rewards.Choices(ctx)
 			if hit then
 				local cmp = hit[2]
 				c.usable, c.gain, c.score = true, cmp.equipped and 0 or cmp.gain, cmp.score
+				if (hit[1].rl or 0) > ctx.level then c.rl = hit[1].rl end
 			end
 		end
 		choices[i] = c
@@ -92,21 +101,21 @@ function Rewards.Mark()
 	if not ctx then return end
 	local choices = Rewards.Choices(ctx)
 	if #choices < 2 then return end
-	local best, upgrade = Rewards.Pick(choices)
-	if not best then
-		for _, c in ipairs(choices) do
-			if c.pending and tries < RETRIES then -- item data on its way (GET_ITEM_INFO_RECEIVED redraws too)
-				tries = tries + 1
-				C_Timer.After(RETRY_DELAY, Rewards.Mark)
-				break
-			end
-		end
+	local pending = false
+	for _, c in ipairs(choices) do pending = pending or c.pending and true end
+	if pending and tries < RETRIES then -- item data on its way (GET_ITEM_INFO_RECEIVED redraws too)
+		tries = tries + 1
+		C_Timer.After(RETRY_DELAY, Rewards.Mark)
 		return
 	end
-	tries = 0
+	-- Still pending after the retries: those choices count as unusable, so the others get marked.
+	for _, c in ipairs(choices) do c.pending = nil end
+	if not pending then tries = 0 end
+	local best, upgrade = Rewards.Pick(choices)
+	if not best then return end
 	for _, b in pairs(frame.RewardButtons) do
 		if b.type == "choice" and b.objectType == "item" and b:IsShown() and b:GetID() == best then
-			mark(b, choices[best].gain, upgrade)
+			mark(b, choices[best].gain, upgrade, choices[best].rl)
 		end
 	end
 end
@@ -122,7 +131,8 @@ local function schedule()
 	end)
 end
 
-if QuestInfo_Display then hooksecurefunc("QuestInfo_Display", schedule) end
+-- The panel's layout clears our marks at once (no stale mark for a frame), then redraws them.
+if QuestInfo_Display then hooksecurefunc("QuestInfo_Display", function() hideMarks() schedule() end) end
 ns.RegisterEvent("QUEST_COMPLETE", function() tries = 0 end)
 ns.RegisterEvent("QUEST_FINISHED", hideMarks)
 ns.RegisterEvent("GET_ITEM_INFO_RECEIVED", function() if rewardPanel() then schedule() end end)

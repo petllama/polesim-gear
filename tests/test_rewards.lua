@@ -3,7 +3,7 @@ local FILES = { "Core.lua", "Rewards.lua" }
 local ALL = { "Core.lua", "Data/Weights.lua", "Data/Suffixes.lua", "Data/Items.lua", "Items.lua", "Score.lua", "Equip.lua",
 	"Tooltip.lua", "Rewards.lua" }
 local ctx = { cls = "priest", level = 20, w = { int = 1 }, worn = { [1] = { inst = { id = 9, inv = 1 }, score = 5 } } }
-local function head(int, sc) return { id = 1, inv = 1, c = 4, sc = sc or 1, cm = 0, rl = 10, stats = { int = int }, armor = 0, dps = 0 } end
+local function head(int, sc, rl) return { id = 1, inv = 1, c = 4, sc = sc or 1, cm = 0, rl = rl or 10, stats = { int = int }, armor = 0, dps = 0 } end
 
 -- A widget for the marks: textures, font strings, frames (shown state and text kept).
 local function widget()
@@ -61,7 +61,7 @@ end
 local function markOf(ns, b)
 	local m = ns.Rewards.MarkOf(b)
 	if not (m and m.shown) then return nil end
-	return { arrow = m.arrow.shown, text = m.text.text }
+	return { arrow = m.arrow.shown, text = m.text.text, note = m.note and m.note.shown and m.note.text or nil }
 end
 return {
 	pick = function()
@@ -121,6 +121,55 @@ return {
 		event("GET_ITEM_INFO_RECEIVED", 1, true)
 		W.flush()
 		T.ok(markOf(ns, B[2]), "marked once the data came")
+		unpanel()
+	end,
+	-- The best choice needs a level above the character's (the tooltip allows up to 5): still picked
+	-- (the reward is kept until usable), but the mark does not claim an upgrade now: no arrow, the gain
+	-- in gold, and a "lvl N" note.
+	mark_above_level = function()
+		local ns, B = panel({ "a", "later" }, { a = head(6), later = head(9, 1, 23) })
+		ns.Rewards.Mark()
+		local m = markOf(ns, B[2])
+		T.ok(m, "still picked")
+		T.ok(not m.arrow, "no 'upgrade now' arrow")
+		T.ok(m.note and m.note:find("lvl 23", 1, true), tostring(m.note))
+		T.ok(m.text:find("+4.0", 1, true) and not m.text:find("4cff4c", 1, true), m.text)
+		T.eq(markOf(ns, B[1]), nil)
+		unpanel()
+		ns, B = panel({ "a", "b" }, { a = head(6), b = head(4) })
+		ns.Rewards.Mark()
+		m = markOf(ns, B[1])
+		T.ok(m and m.arrow and m.note == nil, "no note at the character's level")
+		unpanel()
+	end,
+	-- A choice whose item data never comes (still pending after the retries) counts as unusable, so the
+	-- others are marked.
+	mark_gives_up_on_pending = function()
+		local W = require("wow")
+		local ns, B = panel({ "a", "never", "b" }, { a = head(6), b = head(4), never = "pending" })
+		ns.Rewards.Mark()
+		T.eq(markOf(ns, B[1]), nil, "waits first")
+		for _ = 1, 5 do W.flush() end
+		T.ok(markOf(ns, B[1]), "marked after the retries")
+		T.eq(markOf(ns, B[2]), nil)
+		T.eq(#W.timers, 0, "no more retries")
+		unpanel()
+	end,
+	-- The client laying out the panel again (another quest, or the same panel refreshed) clears our
+	-- marks at once, so no stale mark shows for a frame before the redraw.
+	display_clears_marks_at_once = function()
+		local W = require("wow")
+		_G.QuestInfo_Display = function() end
+		local ns, B, set = panel({ "a", "up" }, { a = head(2), up = head(7), low = head(1) })
+		QuestInfo_Display()
+		W.flush()
+		T.ok(markOf(ns, B[2]))
+		set(2, "low") -- now the first choice is the best
+		QuestInfo_Display()
+		T.eq(markOf(ns, B[2]), nil, "the old mark is gone before the next frame")
+		W.flush()
+		T.ok(markOf(ns, B[1]), "the new best marked")
+		_G.QuestInfo_Display = nil
 		unpanel()
 	end,
 	-- Only the quest giver's reward panel: not the detail panel or the quest log; hidden when it closes.
