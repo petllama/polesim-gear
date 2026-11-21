@@ -352,4 +352,14 @@ return {
 		T.near(B.GearScore(worn), 27)
 		T.near(B.GearScore({}), 0)
 	end,
+	count_passing = function()
+		local B = T.addon(FILES).Browser
+		B.KEEP = 0
+		local m = B.Build(env())
+		T.eq(B.CountPassing(m, "head", nil), 2, "every kind")
+		T.eq(B.CountPassing(m, "head", { quest = true }), 1)
+		T.eq(B.CountPassing(m, "head", { quest = true, dungeon = true }), 2)
+		T.eq(B.CountPassing(m, "head", { crafted = true }), 0)
+		T.eq(B.CountPassing(m, "neck", nil), 0)
+	end,
 }

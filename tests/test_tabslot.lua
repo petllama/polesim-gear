@@ -42,4 +42,31 @@ return {
 		T.ok(table.concat(U.tip.lines, "\n"):find("Gain over what you wear", 1, true), "the shared row tooltip")
 		fx.done()
 	end,
+	show_all = function()
+		local fx = F.load()
+		local ns, U = fx.ns, fx.U
+		ns.Browser.KEEP = 1
+		fx.open()
+		ns.Window.OpenSlot("chest")
+		local p = ns.Window.Panel("slot")
+		local rows = U.rows(p.list)
+		local last = rows[#rows]
+		T.ok(last.d.showAll, "offers the rest")
+		local total = ns.Browser.CountPassing(ns.Window.state.model, "chest", ns.Options.View().filters)
+		T.ok(last.item.name.text:find(string.format("Show all (%d)", total), 1, true), last.item.name.text)
+		last.scripts.OnClick(last)
+		T.ok(U.rows(p.list)[#U.rows(p.list)].d.header == "Scoring every upgrade...")
+		fx.settle()
+		rows = U.rows(p.list)
+		T.eq(#rows, total, "every upgrade listed (look ahead 0)"); T.ok(not rows[#rows].d.showAll)
+		_G.Polestar.Codex.Load = function() return false end
+		ns.Window.OpenSlot("legs")
+		rows = U.rows(p.list)
+		last = rows[#rows]
+		if last.d.showAll then
+			last.scripts.OnClick(last)
+			T.ok(U.rows(p.list)[#U.rows(p.list)].d.header:find("could not be loaded", 1, true))
+		end
+		fx.done()
+	end,
 }

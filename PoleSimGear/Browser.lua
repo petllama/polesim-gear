@@ -210,14 +210,23 @@ function Browser.Trim(rows, n, keep)
 	return out
 end
 
--- rows -> { all = n, quest = n, dungeon = n, crafted = n, vendor = n, world = n }
+-- A row's kinds as a number (bit i-1 = KINDS[i]; arithmetic, no `bit`).
+local function maskOf(kinds)
+	local m = 0
+	for i, k in ipairs(KINDS) do if kinds[k] then m = m + 2 ^ (i - 1) end end
+	return m
+end
+
+-- rows -> { all = n, quest = n, dungeon = n, crafted = n, vendor = n, world = n, masks = { [mask] = n } }
 local function counts(rows)
-	local out = { all = #rows }
+	local out = { all = #rows, masks = {} }
 	for _, k in ipairs(KINDS) do out[k] = 0 end
 	for _, r in ipairs(rows) do
 		for _, k in ipairs(KINDS) do
 			if r.c.kinds[k] then out[k] = out[k] + 1 end
 		end
+		local mk = maskOf(r.c.kinds)
+		out.masks[mk] = (out.masks[mk] or 0) + 1
 	end
 	return out
 end
@@ -337,6 +346,23 @@ end
 function Browser.Count(model, key, filter)
 	local c = model.counts and model.counts[key]
 	return c and c[filter] or 0
+end
+
+-- How many of a slot's upgrades now pass a kinds filter (nil = every kind), before the model's trim.
+function Browser.CountPassing(model, key, filters)
+	local c = model.counts and model.counts[key]
+	if not c then return 0 end
+	if not filters then return c.all end
+	local n = 0
+	for mk, cnt in pairs(c.masks or {}) do
+		for i, k in ipairs(KINDS) do
+			if filters[k] and math.floor(mk / 2 ^ (i - 1)) % 2 == 1 then
+				n = n + cnt
+				break
+			end
+		end
+	end
+	return n
 end
 
 -- Every upgrade of one slot now (the drill-down's "Show all"): that slot scored again, untrimmed (the

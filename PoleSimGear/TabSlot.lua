@@ -128,10 +128,25 @@ function Tab.Init(row, d)
 	ns.Window.PlanLabel(row.action, d, d.index == 1)
 end
 
+-- The rows' list data; the model keeps the best KEEP per kind, so when more upgrades now pass the
+-- ticked sources the last row offers "Show all (N)" (scored again over frames, Window.ShowAll).
 function Tab.List(rows)
-	local out = {}
-	for i, r in ipairs(rows) do out[i] = { c = r.c, gain = r.gain, at = r.at, note = r.note, slot = r.slot, index = i } end
-	if #out == 0 then out[1] = { empty = "No upgrade for this slot from the ticked sources." } end
+	local st = ns.Window.state
+	local key, v = st.slot, ns.Options.View()
+	local out, now = {}, 0
+	for i, r in ipairs(rows) do
+		out[i] = { c = r.c, gain = r.gain, at = r.at, note = r.note, slot = r.slot, index = i }
+		if not r.at then now = now + 1 end
+	end
+	if #out == 0 then out[1] = { empty = "No upgrade for this slot from the ticked sources.", index = 1 } end
+	if not (st.all and st.all.key == key) then
+		local total = ns.Browser.CountPassing(st.model, key, v.filters)
+		if st.allBuilding then
+			out[#out + 1] = { header = "Scoring every upgrade...", index = #out + 1 }
+		elseif total > now then
+			out[#out + 1] = { header = format("Show all (%d)", total) .. (st.allWhy and (": " .. st.allWhy) or ""), showAll = true, index = #out + 1 }
+		end
+	end
 	return out
 end
 
