@@ -31,7 +31,7 @@ How to use it:
 **A2. Modules loaded.**
 
 ```
-/run local P=PoleSimGear print(P.Arrows and "arrows ok", P.Rewards and "rewards ok", P.Coexist and "coexist ok", P.BrowserUI and "ui ok", BagBrother and BagBrother.Item and BagBrother.Item.Update)
+/run local P=PoleSimGear print(P.Arrows and "arrows ok", P.Rewards and "rewards ok", P.Coexist and "coexist ok", P.Window and "ui ok", BagBrother and BagBrother.Item and BagBrother.Item.Update)
 ```
 
 Expected: `arrows ok rewards ok coexist ok ui ok function: ...` (the last value is Bagnon's item
@@ -271,7 +271,7 @@ others is marked; redrawn if its data comes later).
 **K1. Parts the browser reads** (a Polestar guide open):
 
 ```
-/run local P=PoleSimGear print(P.BrowserUI and "ui ok", P.Sources.Codex() and "codex ok", Polestar.Engine and Polestar.Engine.GetGuide() and "guide ok")
+/run local P=PoleSimGear print(P.Window and "ui ok", P.Sources.Codex() and "codex ok", Polestar.Engine and Polestar.Engine.GetGuide() and "guide ok")
 /run local n=0 for _ in pairs(PoleSimGear.Route.Build(Polestar.Engine.GetGuide())) do n=n+1 end print("route turn-ins",n)
 ```
 
@@ -336,7 +336,7 @@ first time any addon reads its Codex: Polestar's, once per session.)
 **K13. Time** (this one hitches once, on purpose):
 
 ```
-/run local t=debugprofilestop() PoleSimGear.Browser.Build(PoleSimGear.BrowserUI.Env()) print(format("build %.0f ms",debugprofilestop()-t))
+/run local t=debugprofilestop() PoleSimGear.Browser.Build(PoleSimGear.Window.Env()) print(format("build %.0f ms",debugprofilestop()-t))
 ```
 
 Offline it took ~200 ms at level 20, 360 ms at 40, 610 ms at 60 (the window spreads it over frames).

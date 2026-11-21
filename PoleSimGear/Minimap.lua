@@ -100,7 +100,7 @@ local function create()
 	b.icon = icon
 
 	b:SetScript("OnClick", function(_, button)
-		if button == "LeftButton" then ns.BrowserUI.Toggle() end
+		if button == "LeftButton" then ns.Window.Toggle() end
 	end)
 	b:SetScript("OnEnter", function(self)
 		GameTooltip:SetOwner(self, "ANCHOR_LEFT")

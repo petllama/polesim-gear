@@ -34,5 +34,5 @@ View.lua
 Groups.lua
 Waypoint.lua
 Style.lua
-BrowserUI.lua
+Window.lua
 Minimap.lua

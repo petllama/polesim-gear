@@ -122,7 +122,7 @@ return {
 	click_toggles_browser = function()
 		local ns = load({})
 		local n = 0
-		ns.BrowserUI = { Toggle = function() n = n + 1 end }
+		ns.Window = { Toggle = function() n = n + 1 end }
 		local b = ns.Minimap.button
 		b.scripts.OnClick(b, "LeftButton")
 		T.eq(n, 1)
@@ -161,10 +161,10 @@ return {
 		_G.SlashCmdList.POLESIMGEAR("minimap")
 		T.eq(_G.PoleSimGearDB.minimap.hide, true)
 	end,
-	in_toc_after_browserui = function()
+	in_toc_before_the_end = function()
 		local f = assert(io.open("PoleSimGear/PoleSimGear.toc"))
 		local toc = f:read("*a")
 		f:close()
-		T.ok(toc:find("BrowserUI.lua\r?\nMinimap.lua"), "Minimap.lua right after BrowserUI.lua")
+		T.ok(toc:find("Window.lua\r?\nMinimap.lua"), "Minimap.lua right after the window files")
 	end,
 }

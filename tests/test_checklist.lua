@@ -18,7 +18,7 @@ local function sources()
 end
 
 local function defined(src, mod, fn)
-	local alias = src:match("\nns%." .. mod .. " = (%a%w*)\n") -- e.g. ns.BrowserUI = UI
+	local alias = src:match("\nns%." .. mod .. " = (%a%w*)\n") -- e.g. ns.Window = Win
 	if not fn then return alias ~= nil end
 	return alias ~= nil and (src:find("function " .. alias .. "%." .. fn .. "%(") ~= nil
 		or src:find("\n" .. alias .. "%." .. fn .. " = ") ~= nil)

@@ -1,4 +1,4 @@
--- The upgrade browser's model (pure: the window in BrowserUI.lua only draws it). Layout "B": best
+-- The upgrade browser's model (pure: the window in Window.lua and the Tab*.lua files draws it). Layout "B": best
 -- per slot right now, every upgrade of a slot, and "coming up" (the next levels, each scored with the
 -- weights of the band it would be worn in).
 local ADDON, ns = ...
