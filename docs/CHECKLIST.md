@@ -1,8 +1,9 @@
 # In-game checklist (one session, on a priest)
 
 One ordered pass over everything that can only be checked in the game (plan Tasks 24, 26, 28, 30,
-31, 32, 34, 36 and 45). Work top to bottom; a check that needs a place you are not at (a group, the
-auction house) can be skipped and done later; mark it so in the results table at the end.
+31, 32, 34, 36 and 45, and the window v2 plan's Phase 8). Work top to bottom; a check that needs a
+place you are not at (a group, the auction house) can be skipped and done later; mark it so in the
+results table at the end.
 
 How to use it:
 
@@ -266,85 +267,119 @@ yours), `index nil` for others, then the picked index and `true` when it is an u
 pending after a second or two: report the quest (after ~1 s it counts as unusable and the best of the
 others is marked; redrawn if its data comes later).
 
-## K. The upgrade browser (Task 45, Risk R1, R5)
+## K. The PoleSim Gear window (v2)
 
-**K1. Parts the browser reads** (a Polestar guide open):
+New files since 0.1.x: **restart the game once** after installing (`/reload` is not enough). A Polestar
+guide open in its window, for the route tags.
+
+**K1. Parts the window reads.**
 
 ```
-/run local P=PoleSimGear print(P.Window and "ui ok", P.Sources.Codex() and "codex ok", Polestar.Engine and Polestar.Engine.GetGuide() and "guide ok")
+/run local P=PoleSimGear print(P.Window and "ui ok", P.Sources.Codex() and "codex ok", Polestar.Nav and Polestar.Nav.API and Polestar.Nav.API.version)
 /run local n=0 for _ in pairs(PoleSimGear.Route.Build(Polestar.Engine.GetGuide())) do n=n+1 end print("route turn-ins",n)
 ```
 
-Expected: `ui ok codex ok guide ok` (`nil` for the guide when none is open: then no route tags), and the
+Expected: `ui ok codex ok 1` (`nil` or another number instead of 1: no Waypoint buttons in K14), and the
 open guide's number of turn-ins.
 
-**K2. Open/close.** `/psg` (or the addon compartment button: "PoleSim Gear") opens it. "Scoring
-items..." shows briefly (about a second at most) **with no stutter**, then the list. `/psg` again,
-Escape or the X closes it.
+**K2. Open and close, no stutter.** Each of these opens the window and a second press closes it:
+`/psg`; the addon compartment button ("PoleSim Gear"); the **minimap button** (round, cloth-chest icon
+on the minimap's edge; hover: "PoleSim Gear", "Left-click: open or close the window", "Drag: move";
+right-click does nothing). Escape and the red X close it too. While it scores, the progress card says
+"scoring..." (a second at most) **with no stutter**. Drag the window by its title bar and the minimap
+button around the edge, `/reload`: both stay where they were left. `/psg minimap` hides the button
+(chat says so), `/reload`: still hidden; `/psg minimap` shows it again.
 
-**K2b. Minimap button** (a new file: restart the game once after installing, /reload is not enough).
-A round button with a cloth-chest icon sits on the minimap's edge (bottom-left at first). Hover:
-"PoleSim Gear", "Left-click: upgrade browser", "Drag: move". Left-click opens the browser, again
-closes it; right-click does nothing. Drag it around the edge, `/reload`: it stays where it was left.
-`/psg minimap` hides it (chat says so), `/reload`: still hidden; `/psg minimap` again shows it.
-`/run print(PoleSimGearDB.minimap.angle, PoleSimGearDB.minimap.hide)` prints the saved angle and flag.
+**K3. Look.** Against the template: dark body; white title "PoleSim Gear" with a gold-framed icon; five
+tabs right of the title (Gear Plan, Slot Upgrades, Sources, Weights, Settings), the active one teal; a
+red X; four header cards; the Sources / Show panel on the left; the equipped strip and the stat
+weights card at the bottom. Every kind icon (quest, dungeon skull, crafting hammer, vendor coin, world
+bag) renders: a green square instead of an icon is a missing texture: name which one.
 
-**K3. Header.** Spec, level, the band's levels ("weights of levels 20-29"), "Gains in points of Shadow
-spell damage" (Shadow) or "Spell damage and healing" (Holy/Discipline).
+**K4. Header.** "Level N Priest" with the class icon; spec "Shadow (auto)" (no "(auto)" once you choose
+a spec in K15); Gear score = the sum of the "PoleSim score" lines of what you wear (check that two worn
+items' tooltip scores are part of it; hover the card: the band's levels and the stat it counts in);
+"Gear plan progress" with a bar and "d / 15 (p%)".
 
-**K4. Best per slot right now.** One row per slot with an upgrade, biggest gain first; tag Quest /
-Dungeon / Crafted; "(route)" in blue on rewards of quests the open guide turns in; names include the
-best random suffix ("... of the Owl").
+**K5. Look ahead.** Header dropdown Now -> "+3 levels (N)": Gear Plan and Slot Upgrades show rows with
+"level N" (items you can wear soon); no "scoring..." (it does not rebuild). Back to Now.
 
-**K5. Chips.** Quests / Dungeons / Crafted change the list to that kind; All brings it back.
+**K6. Sources checkboxes.** By default all ticked but **BoE / World**. Tick it: world drops appear in the
+lists; untick **Quests**: quest rows go; nothing rebuilds. `/reload` and reopen: the ticks are kept (per
+character). Tick Quests again.
 
-**K6. Drill-down.** Click a row: that slot's upgrades (best 25 of each kind), each with "level N" and
-its first source. With more, the last row says "Show all (N)": click it, "Scoring every upgrade..."
-briefly, then all N (Back or a rescore returns to the best 25). If it cannot, the row says why (e.g.
-"Show all (N): could not be scored (error reported)"). Hover a row: the item, "scored with its best
-suffix" (suffix items), Score and its terms (as D2), "Gain over what you wear", a weapon/ring note when
-it applies, then every source: quest (zone), dungeon drop (dungeon, boss, chance), a container in a
-dungeon ("Container: Food Crate, 2%"), crafted (profession and skill); "needs: <quest> first" in
-orange for an unfinished earlier quest of the chain; "on your route (Polestar guide step N)" in blue.
-**Back** returns.
+**K7. Gear Plan.** One row per slot with an upgrade: priority 1-3 in gold badges (then grey), the slot,
+what you wear and its score, the plan item, Gain and Gain %, the source icon and kind. Hover a row: the
+"how?" (as D2: Score, its terms, "Gain over what you wear", the sources) and at the bottom "Click: this
+slot's upgrades. Right-click: back to suggestion, wishlist.". Click a row: Slot Upgrades opens on that
+slot.
 
-**K7. Coming up (levels L+1 to L+5).** Up to 10 upgrades with "level N" in the slot column; hover says
-"level N item: scored with the weights of levels A-B". Not shown at 60. Under a worn two-hander a coming
-one-hander says "with <off hand> in the off hand" (and the reverse for an off hand).
+**K8. Picks.** Slot Upgrades on a slot with two or more rows: **Set as plan** on the 2nd row. Gear Plan:
+that slot shows the item with "Your pick" and "best +N" (the suggestion's gain; hover: "Better: <item>
++N"). Right-click the row -> **Back to suggestion**: the suggestion is back. Pick again, then switch
+spec on the Weights tab (Holy): no pick on that slot; back to **Automatic (talents)**: the pick is back
+(picks are per spec).
 
-**K8. Gating.** No other side's quest rewards; no raid drops, leather, mail or other classes' quests; no
-items Polestar marks retired. Note a Quest row, turn that quest in with the window open: about a
-second later "Scoring items..." and the row is gone.
+**K9. A pick that goes away.** Pick a quest reward (Slot Upgrades, "Quest" kind), then untick **Quests**:
+the Gear Plan row stays, greyed, "its sources are off: Quests". Tick Quests again: normal.
 
-**K9. Spec button** cycles auto / discipline / holy / shadow; the list scores again and the header
-follows.
+**K10. Equip a pick.** Equip the picked item (or any plan item) from your bags: the slot's pick clears,
+the row shows the next suggestion (or goes), progress goes up, and that slot's badge in the equipped
+strip turns green or goes.
 
-**K10. Website.** One "now" row: on polesim.petllama.com/#armory with the same spec, level and worn gear
-(macro import), the same item has the same score and best suffix.
+**K11. Wishlist.** Star two rows (the star at the row's left, any tab). Show -> **Wishlist** lists both
+with their gains. The item's own tooltip (bag or a chat link) shows "On your PoleSim wishlist".
+`/reload`: still starred. Unstar one: it leaves the list.
 
-**K11.** Equip an upgrade from the list with the window open: the list scores again by itself.
+**K12. All gear.** Show -> **All gear**: every slot listed; a slot without an upgrade says "nothing better
+now" with what you wear. Back to **Upgrades only**.
 
-**K12. Memory**, window closed, then open (wait for the list), then closed again:
+**K13. Slot Upgrades.** The slot picker lists every slot; the count line ("N upgrades: Quests 3, Vendors
+2, ..."); rows with "lvl N", the source, "(route)" in blue on rewards of your guide's turn-ins, "needs:
+<quest> first" in orange; the first row's button says "Suggested". On a crowded slot (chest at 30+),
+where the list was trimmed (25 kept per source kind), the last row says "Show all (N)": click it,
+"Scoring every upgrade..." briefly, then all N.
+
+**K14. Sources.** Pills with counts: Dungeons, Quests, Crafting, Vendors, BoE / World. Dungeons: places
+with level ranges; a dungeon's rows show the boss (or mob) and the chance; drops under 1% are faded and
+last (hover: "luck, not a plan"). Quests: a zone's quests as "[level] title" headers (tags elite / on
+your route / needs: X first on a second line; hover: the full title); their rewards below. Crafting;
+Vendors with prices; BoE / World. **Waypoint** on a quest header: Polestar's arrow points at the quest
+giver; on a dungeon header: at the entrance; on a vendor row: at the vendor. Set as plan and the star
+work here too.
+
+**K15. Weights.** "Levels A-B (your band)" with the weights and bars. ">" steps to the next band, "<"
+back; at the first band "<" is faded and does nothing, at the last ">" is. The spec radios: Holy
+switches scoring (the header, the bottom weights card and the lists follow; "Now: Holy, your choice");
+**Automatic (talents)** goes back.
+
+**K16. Settings.** Each switch works at once, no `/reload`: minimap button (hidden/shown), the score line
+in item tooltips, the upgrade arrows (bags, merchant), the best quest reward mark. "Look ahead for a new
+character" sets the default for a character that never chose one. **Ask again** shows the Polestar
+question (wording pending, see A4) when Polestar's scores are on; the line under it says what you
+answered.
+
+**K17. Memory**, window closed, then open (wait for the list), then closed again:
 
 ```
 /run collectgarbage() UpdateAddOnMemoryUsage() print(format("PoleSim Gear %.0f KB",GetAddOnMemoryUsage("PoleSimGear")))
 ```
 
 Expected: open adds a few MB at most, closing gives it back. (Polestar's own number grows ~7 MB the
-first time any addon reads its Codex: Polestar's, once per session.)
+first time any addon reads its Codex: Polestar's, once per session.) Offline (tools/fullload.lua, real
+Codex, lua5.1) closing left +0.5 to +0.9 MB at levels 10, 30, 60.
 
-**K13. Time** (this one hitches once, on purpose):
+**K18. Time** (this one hitches once, on purpose):
 
 ```
 /run local t=debugprofilestop() PoleSimGear.Browser.Build(PoleSimGear.Window.Env()) print(format("build %.0f ms",debugprofilestop()-t))
 ```
 
-Offline it took ~200 ms at level 20, 360 ms at 40, 610 ms at 60 (the window spreads it over frames).
+Offline (tools/fullload.lua, lua5.1) the window's build took 109 ms at level 10, 219 ms at 30, 429 ms at
+60, spread over frames of at most 11-14 ms. After K18, close and reopen the window once: K18 builds the
+item index outside the window, and only a window close releases it.
 
-After K13, close and reopen the window once: K13 builds the item index outside the window, and
-only a window close releases it.
-
-**K14. Skyborne only.**
+**K19. Skyborne only.**
 
 ```
 /run local c=PoleSimGear.Context.Get() print(c.raceBit, PoleSimGear.Sources.RaceOk(2^33+178, c.raceBit))
@@ -352,6 +387,9 @@ only a window close releases it.
 
 Expected: `4294967296 false` (High Order) or `8589934592 true` (Windshaper); the window lists your
 side's and the Skyborne-only quests' rewards.
+
+**K20. Turn-in rebuild.** Note a Quest row (Gear Plan or Slot Upgrades), turn that quest in with the
+window open: about a second later "scoring..." and the row is gone.
 
 ## L. Later in the session (or another session)
 
@@ -402,17 +440,26 @@ in open bags, vendor and mail update (no `/reload`); opening a bag or the vendor
 | I1 | mail | |
 | I2 | auction house | |
 | J1-J7 | quest reward pick | |
-| K1 | codex / guide / route | |
-| K2-K5 | window, header, list, chips | |
-| K2b | minimap button: click, drag + /reload, /psg minimap | |
-| K6 | drill-down, Show all, row tooltip | |
-| K7 | coming up | |
-| K8 | gating | |
-| K9 | spec button | |
-| K10 | browser = website | |
-| K11 | rescore on equip | |
-| K12-K13 | time, memory | |
-| K14 | Skyborne | |
+| K1 | parts: codex, Nav API, route | |
+| K2 | open/close (/psg, compartment, minimap button), positions kept | |
+| K3 | look, kind icons | |
+| K4 | header | |
+| K5 | look ahead | |
+| K6 | Sources checkboxes, kept per character | |
+| K7 | Gear Plan rows, hover, click | |
+| K8 | picks, back to suggestion, per spec | |
+| K9 | a pick whose sources are off | |
+| K10 | equipping a pick | |
+| K11 | wishlist | |
+| K12 | All gear | |
+| K13 | Slot Upgrades, Show all | |
+| K14 | Sources tab, waypoints | |
+| K15 | Weights: bands, stepper, spec switch | |
+| K16 | Settings switches, Ask again | |
+| K17 | memory | |
+| K18 | time | |
+| K19 | Skyborne | |
+| K20 | turn-in rebuild | |
 | L1 | arrows follow changes | |
 | L2 | other character not asked | |
 
@@ -420,18 +467,26 @@ in open bags, vendor and mail update (no `/reload`); opening a bag or the vendor
 
 - A drop of dungeon trash counts as "Dungeon" (as on the website), so some BoE greens show as dungeon
   drops with a small chance.
-- Vendors, world drops, reputation and raids are not goals of the browser.
+- Reputation, PvP, raid and "opened from an item" (container) sources are not listed.
 - Crafted items are gated by "about level = skill / 5" (the website's rule), not by your profession.
 - The tooltip compares one item with what you wear: a one-hander under a worn two-hander says it
-  leaves the off hand empty, while the browser pairs it with the best off hand (R9).
+  leaves the off hand empty, while the window pairs it with the best off hand (R9).
 - With the Quests / Dungeons / Crafted filters on, a one-hander's paired off hand is still the best
   from all sources (the website recomputes per filter).
 - No dual wield yet (no priest can); added with the melee classes.
 - If the client leaves an item's equip bonuses out of its stats, the tooltip fills that whole group
   from PoleSim's item table (Shift shows "(item table)" on those lines).
-- Tooltip (live stats) and browser (shipped table) can differ when Forever changes an item before the
+- Tooltip (live stats) and window (shipped table) can differ when Forever changes an item before the
   table is regenerated; table weapon DPS is rounded to 2 decimals.
 - Polestar's own reward highlight (vendor value, the coin) stays on even after answering Yes.
 - If Polestar changes its internals, a part turns off instead of erroring: no route tags (guide),
   "Polestar's Codex is not available" (Codex), no question (settings), or an orange "some sources
   could not be read" line.
+- One pick per ring and trinket pair: a pick replaces the weaker (or empty) one of the two.
+- Progress counts upgrades available now (look ahead is ignored).
+- The Sources tab ignores the Sources checkboxes (it has its own kind pills).
+- At most 3 open-world drops per item (the likeliest).
+- "elite" on a quest = the Codex lists hostile elites at one of its objectives for your side (it has no
+  group-quest flag).
+- Columns say "Gain" (the mockup's "Δ" may not be in the game font).
+- The Look ahead dropdown uses Blizzard's dropdown art.
