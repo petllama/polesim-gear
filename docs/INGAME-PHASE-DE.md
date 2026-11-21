@@ -43,6 +43,12 @@ For one item: `/run print(PoleSimGear.Arrows.Verdict(X))` (`true` = arrow).
 If Bagnon shows no arrows at all while the line above lists upgrades, report it with the output of
 the first `/run` line (Risk R6).
 
+6. Bagnon's character selector: view an alt's bags (a cached view): no arrows there (those items are
+   not this character's). Back to your own bags: arrows return.
+7. An error in one item's verdict no longer stops the other buttons: if BugSack/scriptErrors shows a
+   PoleSim error, it appears once per item per session (not on every bag update); report it with the
+   item.
+
 ## Task 31: merchant and loot rolls
 
 1. A vendor selling a cloth item, staff, dagger, mace or wand that is an upgrade: the arrow top-right
@@ -60,7 +66,12 @@ the first `/run` line (Risk R6).
 2. Auction house: search "Robe" / "Staff". Usable upgrades without a random suffix get an arrow at the
    top-right of their row in the result list. Items "of the ..." (random suffix) get none in that list;
    click one: in its auctions list each auction's row shows the arrow when that auction's suffix is an
-   upgrade. Scroll the lists: arrows stay with their rows.
+   upgrade. Scroll the lists: arrows stay with their rows, and a row scrolled onto a non-upgrade loses
+   its arrow.
+   The arrow sits top-right of the **row** (not on the item icon): the browse list's icon is a texture
+   in a pooled name cell (`row.cells`, reassigned on every row update), and the auctions list has no
+   icon column at all, so there is no stable icon to anchor to. Check it reads clearly next to the
+   favourite star (browse) and the time-left column (auctions); report if it overlaps or is unclear.
 3. Report if rows show no arrow at all (Risk R7) with:
 
 ```
@@ -84,16 +95,22 @@ Turn in a quest with two or more reward choices (e.g. one with a cloth item and 
 3. A choice the priest cannot wear (mail, plate, a shield) or a currency choice is never marked.
 4. Only the quest giver's turn-in panel is marked: the quest log and the quest's accept panel show
    no marks (tooltips only).
-5. With Polestar's reward marks on, theirs (an arrow top-left, a coin top-right, a ring around the
+5. A choice that needs a level above yours (up to 5 levels) can still be the pick (you keep the
+   reward until you can use it): its mark has **no arrow**, the gain in **gold**, and `lvl N` at the
+   top of the icon.
+6. With Polestar's reward marks on, theirs (an arrow top-left, a coin top-right, a ring around the
    icon) and ours do not overlap.
-6. Close the panel and open another quest's turn-in: no leftover mark.
+7. Close the panel and open another quest's turn-in: no leftover mark, not even for a frame (the
+   client's layout clears our marks at once, then we redraw).
 
 On the turn-in panel, what PoleSim read (one line per choice, then the pick):
 
 ```
-/run local R=PoleSimGear.Rewards for _,c in ipairs(R.Choices(PoleSimGear.Context.Get())) do print(c.index,c.usable,c.gain,c.score,c.pending) end print(R.Pick(R.Choices(PoleSimGear.Context.Get())))
+/run local R=PoleSimGear.Rewards for _,c in ipairs(R.Choices(PoleSimGear.Context.Get())) do print(c.index,c.usable,c.gain,c.score,c.pending,c.rl) end print(R.Pick(R.Choices(PoleSimGear.Context.Get())))
 ```
 
-Expected: `index true gain score nil` for wearable items, `index nil` for others, then the picked
-index and `true` when it is an upgrade. A choice still `true` in the last column (pending) after a
-second or two means its item data never came: report the quest.
+Expected: `index true gain score nil nil` for wearable items (the last value is the level needed when
+above yours), `index nil` for others, then the picked index and `true` when it is an upgrade. A
+choice still `true` in the pending column after a second or two means its item data never came:
+report the quest. The panel no longer waits for it: after about a second (3 retries) that choice
+counts as unusable and the best of the others is marked; if its data comes later the mark is redrawn.
