@@ -50,6 +50,7 @@ end
 -- can use, up to AHEAD levels above; Shift redraws it with the breakdown.
 local AHEAD = 5 -- items up to this many levels above the character still get a line
 local secret = issecretvalue or function() return false end
+local drawn = setmetatable({}, { __mode = "k" }) -- tooltip -> the item link our lines were drawn for
 
 function Tooltip.Add(tooltip, link)
 	local ctx = ns.Context.Get()
@@ -67,6 +68,7 @@ function Tooltip.Add(tooltip, link)
 			tooltip:AddLine(l[1], a[1], a[2], a[3], true)
 		end
 	end
+	drawn[tooltip] = link
 end
 
 local function forbidden(tooltip)
@@ -89,8 +91,32 @@ if TooltipDataProcessor and TooltipDataProcessor.AddTooltipPostCall and TooltipU
 	TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item, onItem)
 end
 
-ns.RegisterEvent("MODIFIER_STATE_CHANGED", function(key)
-	if (key == "LSHIFT" or key == "RSHIFT") and GameTooltip and GameTooltip:IsShown() and GameTooltip.RefreshData then
-		GameTooltip:RefreshData()
+-- Shift redraws a tooltip only while it still shows the item we drew lines for (drawn[tooltip] =
+-- link, set by Add, cleared on hide), never a unit/spell tooltip, and not in combat (the redraw runs
+-- from an insecure event).
+local function shownItem(tooltip)
+	if forbidden(tooltip) or not (tooltip.IsShown and tooltip:IsShown() and tooltip.RefreshData) then return nil end
+	if not tooltip.IsTooltipType then return nil end
+	local ok, isItem = pcall(tooltip.IsTooltipType, tooltip, Enum.TooltipDataType.Item)
+	if not ok or secret(isItem) or not isItem then return nil end
+	local ok2, _, link = pcall(TooltipUtil.GetDisplayedItem, tooltip)
+	if ok2 and type(link) == "string" and not secret(link) then return link end
+	return nil
+end
+
+function Tooltip.OnModifier(key)
+	if key ~= "LSHIFT" and key ~= "RSHIFT" then return end
+	if InCombatLockdown and InCombatLockdown() then return end
+	if not (Enum and Enum.TooltipDataType and TooltipUtil and TooltipUtil.GetDisplayedItem) then return end
+	for _, tooltip in ipairs({ GameTooltip or false, ItemRefTooltip or false }) do
+		local link = tooltip and drawn[tooltip]
+		if link and shownItem(tooltip) == link then tooltip:RefreshData() end
 	end
-end)
+end
+ns.RegisterEvent("MODIFIER_STATE_CHANGED", Tooltip.OnModifier)
+
+for _, tooltip in ipairs({ GameTooltip or false, ItemRefTooltip or false }) do
+	if tooltip and tooltip.HookScript then
+		tooltip:HookScript("OnHide", function(self) drawn[self] = nil end)
+	end
+end

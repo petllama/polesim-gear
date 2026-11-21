@@ -8,7 +8,101 @@ local function text(L)
 	for _, l in ipairs(L) do out[#out + 1] = l[1] .. "|" .. (l[2] or "") end
 	return table.concat(out, "\n")
 end
+-- A client with GameTooltip and ItemRefTooltip modelled (shown item tooltips, Shift redraw), the
+-- addon loaded, Context/Live stubbed: -> ns, GT, REF, show(tooltip, link) (runs the item post-call), key(name) (fires
+-- MODIFIER_STATE_CHANGED)
+local USABLE = { id = 1, inv = 1, c = 4, sc = 1, cm = 0, stats = { int = 10 }, armor = 0, dps = 0, rl = 30 }
+local function client()
+	local post
+	local function tip()
+		local t = { shown = true, kind = 0, refreshed = 0, lines = {}, hooks = {} }
+		function t:IsShown() return self.shown end
+		function t:RefreshData() self.refreshed = self.refreshed + 1 end
+		function t:IsTooltipType(k) return self.kind == k end
+		function t:HookScript(s, fn) self.hooks[s] = fn end
+		function t:AddLine(s) self.lines[#self.lines + 1] = s end
+		function t:AddDoubleLine(a, b) self.lines[#self.lines + 1] = a .. "|" .. b end
+		return t
+	end
+	local GT, REF = tip(), tip()
+	require("wow").install()
+	_G.Enum = { TooltipDataType = { Item = 0, Unit = 2 } }
+	_G.TooltipDataProcessor = { AddTooltipPostCall = function(kind, fn) if kind == 0 then post = fn end end }
+	_G.TooltipUtil = { GetDisplayedItem = function(t) if t.kind == 0 then return "x", t.link end end }
+	_G.GameTooltip, _G.ItemRefTooltip = GT, REF
+	_G.IsShiftKeyDown = function() return false end
+	_G.InCombatLockdown = function() return false end
+	local ns = {}
+	for _, f in ipairs(FILES) do assert(loadfile("PoleSimGear/" .. f))("PoleSimGear", ns) end
+	ns.Context = { Get = function() return { cls = "priest", spec = "shadow", ref = "spShadow", lo = 30,
+		band = { upTo = 39 }, level = 34, w = { int = 0.5, spShadow = 1 }, worn = {} } end }
+	ns.Live = { Instance = function(link) if link == "cloth" then return USABLE end end }
+	local function key(k) ns._frame.scripts.OnEvent(ns._frame, "MODIFIER_STATE_CHANGED", k, 1) end
+	local function show(t, link) t.link, t.kind, t.shown, t.lines = link, 0, true, {} post(t) end
+	return ns, GT, REF, show, key
+end
+local function unclient()
+	_G.TooltipDataProcessor, _G.TooltipUtil, _G.Enum, _G.GameTooltip, _G.ItemRefTooltip = nil, nil, nil, nil, nil
+	_G.InCombatLockdown = nil
+end
+
 return {
+	-- Shift redraws only a shown item tooltip that carries our lines for the item it still shows.
+	shift_redraws_our_item_tooltip = function()
+		local _, GT, _, show, key = client()
+		show(GT, "cloth")
+		T.ok(#GT.lines > 0, "drawn")
+		key("LSHIFT"); key("RSHIFT")
+		T.eq(GT.refreshed, 2)
+		unclient()
+	end,
+	shift_skips_non_item_or_other_tooltips = function()
+		local _, GT, _, show, key = client()
+		key("LSHIFT")
+		T.eq(GT.refreshed, 0, "shown but never drawn by us")
+		show(GT, "cloth")
+		GT.kind = 2 -- now a unit tooltip
+		key("LSHIFT")
+		T.eq(GT.refreshed, 0, "unit tooltip")
+		show(GT, "plate") -- an item we add nothing to
+		key("LSHIFT")
+		T.eq(GT.refreshed, 0, "another item, not ours")
+		show(GT, "cloth"); GT.shown = false
+		key("LSHIFT")
+		T.eq(GT.refreshed, 0, "hidden")
+		unclient()
+	end,
+	shift_cleared_on_hide = function()
+		local _, GT, _, show, key = client()
+		show(GT, "cloth")
+		T.ok(GT.hooks.OnHide, "OnHide hooked")
+		GT.hooks.OnHide(GT)
+		key("LSHIFT")
+		T.eq(GT.refreshed, 0)
+		unclient()
+	end,
+	other_keys_ignored = function()
+		local _, GT, _, show, key = client()
+		show(GT, "cloth")
+		key("LCTRL"); key("LALT")
+		T.eq(GT.refreshed, 0)
+		unclient()
+	end,
+	shift_skipped_in_combat = function()
+		local _, GT, _, show, key = client()
+		show(GT, "cloth")
+		_G.InCombatLockdown = function() return true end
+		key("LSHIFT")
+		T.eq(GT.refreshed, 0)
+		unclient()
+	end,
+	shift_redraws_item_ref_tooltip = function()
+		local _, GT, REF, show, key = client()
+		show(REF, "cloth")
+		key("LSHIFT")
+		T.eq(REF.refreshed, 1); T.eq(GT.refreshed, 0)
+		unclient()
+	end,
 	short = function()
 		local L = T.addon(FILES).Tooltip.Lines({ score = 8, gain = 2, base = 6 }, inst, ctx, false, false)
 		T.eq(L[1][1], "Score 8.0"); T.eq(L[1][2], "+2.0 (+33%)")
