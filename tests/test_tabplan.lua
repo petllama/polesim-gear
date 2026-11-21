@@ -118,4 +118,18 @@ return {
 		T.ok(fx.U.ownText(rowsOf(fx)[1].choose):find("Picked", 1, true))
 		fx.done()
 	end,
+	hover = function()
+		local fx = F.load({ char = { plan = { shadow = { neck = "424242:0" } } } })
+		local ns, U = fx.ns, fx.U
+		fx.open()
+		local rows = rowsOf(fx)
+		rows[1].scripts.OnEnter(rows[1])
+		local text = table.concat(U.tip.lines, "\n")
+		T.ok(text:find("Gain over what you wear", 1, true), text); T.ok(text:find("Right-click", 1, true))
+		local last = rows[#rows]
+		last.scripts.OnEnter(last)
+		text = table.concat(U.tip.lines, "\n")
+		T.ok(text:find("not available now", 1, true), text)
+		fx.done()
+	end,
 }

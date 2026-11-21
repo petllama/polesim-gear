@@ -171,7 +171,6 @@ end
 function Tab.Refresh(p) S.SetList(p.list, Tab.Entries()) end
 function Tab.Release(p) S.SetList(p.list, {}) end
 
--- Task 4.5 fills this in.
 function Tab.Star(row)
 	local e = row.e
 	local r = e and planRow(e)
@@ -179,7 +178,22 @@ function Tab.Star(row)
 	local inst = r and r.c.inst or (m and { id = m.id, bonus = m.bonus })
 	if inst then ns.Wishlist.Toggle(inst) end -- WISHLIST_CHANGED redraws the window
 end
-function Tab.Tooltip(row) end
+
+function Tab.Tooltip(row)
+	local e = row.e
+	if not (e and not e.empty) then return end
+	local r = planRow(e)
+	if r then
+		return ns.Window.RowTooltip(row, r, e.entry and "Click: this slot's upgrades. Right-click: back to suggestion, wishlist."
+			or "Click: this slot's upgrades.")
+	end
+	local m = e.missing or (e.entry and e.entry.missing)
+	if not m then return end
+	GameTooltip:SetOwner(row, "ANCHOR_RIGHT")
+	GameTooltip:AddLine(S.ItemText(ns.View.Inst(m.id, m.bonus)))
+	GameTooltip:AddLine(e.why or "", 1, 0.6, 0.25, true)
+	GameTooltip:Show()
+end
 
 function Tab.Click(row, button)
 	local e = row.e
