@@ -126,6 +126,18 @@ return {
 		T.eq(calls, 2)
 		unclient()
 	end,
+	-- A Lua error while drawing an item is reported once per link per session, not on every redraw.
+	error_reported_once_per_link = function()
+		local ns, GT, _, show = client()
+		local reported = 0
+		_G.geterrorhandler = function() return function() reported = reported + 1 end end
+		ns.Live.Instance = function() error("boom") end
+		show(GT, "cloth"); show(GT, "cloth")
+		T.eq(reported, 1)
+		show(GT, "other")
+		T.eq(reported, 2)
+		unclient()
+	end,
 	short = function()
 		local L = T.addon(FILES).Tooltip.Lines({ score = 8, gain = 2, base = 6 }, inst, ctx, false, false)
 		T.eq(L[1][1], "Score 8.0"); T.eq(L[1][2], "+2.0 (+33%)")

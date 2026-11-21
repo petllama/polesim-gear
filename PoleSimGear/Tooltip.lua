@@ -95,13 +95,17 @@ local function forbidden(tooltip)
 	return not ok or secret(f) or f
 end
 
+local reported = {} -- link -> true: its error was reported
 local function onItem(tooltip)
 	if tooltip ~= GameTooltip and tooltip ~= ItemRefTooltip then return end -- not the comparison tooltips
 	if forbidden(tooltip) then return end
 	local ok, _, link = pcall(TooltipUtil.GetDisplayedItem, tooltip)
 	if not ok or type(link) ~= "string" or secret(link) then return end
 	local ok2, err = pcall(Tooltip.Add, tooltip, link)
-	if not ok2 then geterrorhandler()(err) end
+	if not ok2 and not reported[link] then -- once per link per session, not on every redraw
+		reported[link] = true
+		geterrorhandler()(err)
+	end
 end
 
 if TooltipDataProcessor and TooltipDataProcessor.AddTooltipPostCall and TooltipUtil and TooltipUtil.GetDisplayedItem
