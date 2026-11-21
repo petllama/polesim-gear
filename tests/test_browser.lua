@@ -108,6 +108,22 @@ return {
 		ns.Browser.Start(e, function(model) m = model end)
 		T.ok(m and m.now.head[1].c.id == 1, "the build completes with the others")
 	end,
+	-- Frame budget: Collect yields after building the index, every YIELD_EVERY items in the window and
+	-- after each slot's sort (no slice longer than ~8 ms with the real data under lua5.1).
+	collect_yields_often = function()
+		local ns = T.addon(FILES)
+		local e = env()
+		local list = {}
+		for i = 1, 31 do ITEMS[1000 + i] = rec(1000 + i, 1, i, 10) list[i] = 1000 + i end
+		list[32] = 5 -- rl 22: outside the window, not counted
+		e.items.ByInv = function() return { [1] = list } end
+		e.codex.Item = function() return { sources = { { type = "quest", quest = 500 } } } end
+		local yields = 0
+		ns.Browser.Collect(e, 20, 0, 20, 20, function() yields = yields + 1 end, { head = true })
+		for i = 1, 31 do ITEMS[1000 + i] = nil end
+		T.eq(ns.Browser.YIELD_EVERY, 15)
+		T.eq(yields, 1 + 2 + 1, "index, items 15 and 30, the sort")
+	end,
 	gains = function()
 		local B = T.addon(FILES).Browser
 		local function c(id, inv, score) return { id = id, score = score, inst = { id = id, inv = inv, name = "I" .. id }, kinds = { quest = true } } end

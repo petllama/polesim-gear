@@ -61,12 +61,15 @@ local function consider(id, env, rlFrom, rlTo, lim, w, role)
 end
 
 -- Candidates per slot for items with rlFrom <= required level <= rlTo, scored with the band of `at`.
--- yield (optional) is called every 50 items so the window can spread the work over frames; only
--- (optional) = { [slotKey] = true } limits it to those slots. An item that throws is skipped and
+-- yield (optional) is called after the index, every YIELD_EVERY items in the window and after each
+-- slot's sort, so the window can spread the work over frames (no step over ~8 ms under lua5.1 with the
+-- real data); only (optional) = { [slotKey] = true } limits it to those slots. An item that throws is skipped and
 -- reported once per session (ns.ReportOnce): one bad record does not end the build.
+Browser.YIELD_EVERY = 15
 function Browser.Collect(env, at, rlFrom, rlTo, lim, yield, only)
 	local band = env.at(at)
 	local byInv = env.items.ByInv()
+	if yield then yield() end
 	local cands, n = {}, 0
 	for _, def in ipairs(Browser.SLOTS) do
 		cands[def.key] = {}
@@ -84,7 +87,7 @@ function Browser.Collect(env, at, rlFrom, rlTo, lim, yield, only)
 					if inWindow then
 						if c then list[#list + 1] = c end
 						n = n + 1
-						if yield and n % 50 == 0 then yield() end
+						if yield and n % Browser.YIELD_EVERY == 0 then yield() end
 					end
 				end
 			end
@@ -93,6 +96,7 @@ function Browser.Collect(env, at, rlFrom, rlTo, lim, yield, only)
 				return a.id < b.id
 			end)
 			cands[def.key] = list
+			if yield then yield() end
 		end
 	end
 	return cands, band
