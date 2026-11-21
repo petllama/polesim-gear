@@ -8,7 +8,7 @@ R	priest/shadow	12	2364	0	gear	1.2779999999999998	armor:18:armor:0.071:1.278
 R	priest/shadow	12	2955	0	gear	10.923000000000002	sta:11:sta:0.27:2.97,spi:10:spi:0.49:4.9,armor:43:armor:0.071:3.053
 R	priest/shadow	12	3423	0	oh	0.0	
 R	priest/shadow	12	3947	0	gear	2.13	armor:30:armor:0.071:2.13
-R	priest/shadow	12	4454	0	mh	0.98	spi:2:spi:0.49:0.98
+R	priest/shadow	12	4454	0	mh	1.47	spi:3:spi:0.49:1.47
 R	priest/shadow	12	4947	0	mh	0.0	
 R	priest/shadow	12	5393	0	mh	0.0	
 R	priest/shadow	12	6333	0	mh	0.54	sta:2:sta:0.27:0.54
@@ -58,8 +58,8 @@ R	priest/shadow	12	7355	12757	gear	1.349	armor:19:armor:0.071:1.349
 R	priest/shadow	12	7355	12758	gear	1.349	armor:19:armor:0.071:1.349
 R	priest/shadow	12	7355	12759	gear	1.349	armor:19:armor:0.071:1.349
 R	priest/shadow	12	7355	12761	gear	10.349	spShadow:9:spShadow:1:9,armor:19:armor:0.071:1.349
-R	priest/shadow	12	7757	0	mh	7.59	sta:7:sta:0.27:1.89,int:15:int:0.38:5.7
-R	priest/shadow	12	9491	0	gear	9.041	sta:5:sta:0.27:1.35,int:8:int:0.38:3.04,spi:5:spi:0.49:2.45,armor:31:armor:0.071:2.201
+R	priest/shadow	12	7757	0	mh	4.59	sta:17:sta:0.27:4.59
+R	priest/shadow	12	9491	0	gear	9.041	int:8:int:0.38:3.04,spi:5:spi:0.49:2.45,sta:5:sta:0.27:1.35,armor:31:armor:0.071:2.201
 R	priest/shadow	12	9875	0	gear	2.0589999999999997	armor:29:armor:0.071:2.059
 R	priest/shadow	12	9875	12718	gear	7.259	int:8:int:0.38:3.04,sta:8:sta:0.27:2.16,armor:29:armor:0.071:2.059
 R	priest/shadow	12	9875	12719	gear	8.139	spi:8:spi:0.49:3.92,sta:8:sta:0.27:2.16,armor:29:armor:0.071:2.059
@@ -112,174 +112,196 @@ R	priest/shadow	12	10102	12759	gear	5.396	armor:76:armor:0.071:5.396
 R	priest/shadow	12	10102	12761	gear	42.396	spShadow:37:spShadow:1:37,armor:76:armor:0.071:5.396
 R	priest/shadow	12	10645	0	gear	0.0	
 R	priest/shadow	12	11288	0	ranged	110.7	sp:2:sp:1.1:2.2,rdps:17.5:rdps:6.2:108.5
-R	priest/shadow	12	11808	0	gear	10.654	sta:20:sta:0.27:5.4,armor:74:armor:0.071:5.254
-R	priest/shadow	12	12015	0	gear	0.0	
-R	priest/shadow	12	12015	12718	gear	5.85	int:9:int:0.38:3.42,sta:9:sta:0.27:2.43
-R	priest/shadow	12	12015	12719	gear	6.84	spi:9:spi:0.49:4.41,sta:9:sta:0.27:2.43
-R	priest/shadow	12	12015	12720	gear	7.83	int:9:int:0.38:3.42,spi:9:spi:0.49:4.41
-R	priest/shadow	12	12015	12721	gear	2.43	sta:9:sta:0.27:2.43
-R	priest/shadow	12	12015	12722	gear	2.43	sta:9:sta:0.27:2.43
-R	priest/shadow	12	12015	12723	gear	3.42	int:9:int:0.38:3.42
-R	priest/shadow	12	12015	12724	gear	3.42	int:9:int:0.38:3.42
-R	priest/shadow	12	12015	12725	gear	4.41	spi:9:spi:0.49:4.41
-R	priest/shadow	12	12015	12726	gear	4.41	spi:9:spi:0.49:4.41
-R	priest/shadow	12	12015	12727	gear	0.0	
-R	priest/shadow	12	12015	12728	gear	0.0	
-R	priest/shadow	12	12015	12729	gear	5.32	int:14:int:0.38:5.32
-R	priest/shadow	12	12015	12730	gear	6.859999999999999	spi:14:spi:0.49:6.86
-R	priest/shadow	12	12015	12731	gear	3.7800000000000002	sta:14:sta:0.27:3.78
-R	priest/shadow	12	12015	12732	gear	0.0	
-R	priest/shadow	12	12015	12733	gear	0.0	
-R	priest/shadow	12	12015	12737	gear	0.0	
-R	priest/shadow	12	12015	12738	gear	0.0	
-R	priest/shadow	12	12015	12739	gear	0.0	
-R	priest/shadow	12	12015	12740	gear	2.43	sta:9:sta:0.27:2.43
-R	priest/shadow	12	12015	12741	gear	2.43	sta:9:sta:0.27:2.43
-R	priest/shadow	12	12015	12742	gear	2.43	sta:9:sta:0.27:2.43
-R	priest/shadow	12	12015	12743	gear	2.43	sta:9:sta:0.27:2.43
-R	priest/shadow	12	12015	12744	gear	2.43	sta:9:sta:0.27:2.43
-R	priest/shadow	12	12015	12745	gear	10.92	int:10:int:0.38:3.8,sta:6:sta:0.27:1.62,sp:5:sp:1.1:5.5
-R	priest/shadow	12	12015	12746	gear	12.24	int:10:int:0.38:3.8,spi:6:spi:0.49:2.94,sp:5:sp:1.1:5.5
-R	priest/shadow	12	12015	12747	gear	11.14	spi:6:spi:0.49:2.94,sta:10:sta:0.27:2.7,sp:5:sp:1.1:5.5
-R	priest/shadow	12	12015	12748	gear	8.280000000000001	int:6:int:0.38:2.28,sta:10:sta:0.27:2.7,spDmg:3:sp:1.1:3.3
-R	priest/shadow	12	12015	12749	gear	10.040000000000001	int:10:int:0.38:3.8,spi:6:spi:0.49:2.94,spDmg:3:sp:1.1:3.3
-R	priest/shadow	12	12015	12750	gear	8.940000000000001	spi:6:spi:0.49:2.94,sta:10:sta:0.27:2.7,spDmg:3:sp:1.1:3.3
-R	priest/shadow	12	12015	12751	gear	2.7	sta:10:sta:0.27:2.7
-R	priest/shadow	12	12015	12752	gear	2.7	sta:10:sta:0.27:2.7
-R	priest/shadow	12	12015	12753	gear	2.7	sta:10:sta:0.27:2.7
-R	priest/shadow	12	12015	12754	gear	8.2	sp:5:sp:1.1:5.5,sta:10:sta:0.27:2.7
-R	priest/shadow	12	12015	12755	gear	8.2	sp:5:sp:1.1:5.5,sta:10:sta:0.27:2.7
-R	priest/shadow	12	12805	0	gear	0.0	
-R	priest/shadow	12	13360	0	mh	8.09	sta:5:sta:0.27:1.35,int:10:int:0.38:3.8,spi:6:spi:0.49:2.94
-R	priest/shadow	12	14108	0	gear	9.501	spi:12:spi:0.49:5.88,armor:51:armor:0.071:3.621
-R	priest/shadow	12	14213	0	gear	3.4789999999999996	armor:49:armor:0.071:3.479
-R	priest/shadow	12	14213	12718	gear	9.979	int:10:int:0.38:3.8,sta:10:sta:0.27:2.7,armor:49:armor:0.071:3.479
-R	priest/shadow	12	14213	12719	gear	11.079	spi:10:spi:0.49:4.9,sta:10:sta:0.27:2.7,armor:49:armor:0.071:3.479
-R	priest/shadow	12	14213	12720	gear	12.178999999999998	int:10:int:0.38:3.8,spi:10:spi:0.49:4.9,armor:49:armor:0.071:3.479
-R	priest/shadow	12	14213	12729	gear	9.179	int:15:int:0.38:5.7,armor:49:armor:0.071:3.479
-R	priest/shadow	12	14213	12730	gear	10.828999999999999	spi:15:spi:0.49:7.35,armor:49:armor:0.071:3.479
-R	priest/shadow	12	14213	12731	gear	7.529	sta:15:sta:0.27:4.05,armor:49:armor:0.071:3.479
-R	priest/shadow	12	14213	12734	gear	23.279	sp:18:sp:1.1:19.8,armor:49:armor:0.071:3.479
-R	priest/shadow	12	14213	12735	gear	15.579	spDmg:11:sp:1.1:12.1,armor:49:armor:0.071:3.479
-R	priest/shadow	12	14213	12740	gear	6.179	sta:10:sta:0.27:2.7,armor:49:armor:0.071:3.479
-R	priest/shadow	12	14213	12741	gear	6.179	sta:10:sta:0.27:2.7,armor:49:armor:0.071:3.479
-R	priest/shadow	12	14213	12742	gear	6.179	sta:10:sta:0.27:2.7,armor:49:armor:0.071:3.479
-R	priest/shadow	12	14213	12743	gear	6.179	sta:10:sta:0.27:2.7,armor:49:armor:0.071:3.479
-R	priest/shadow	12	14213	12744	gear	6.179	sta:10:sta:0.27:2.7,armor:49:armor:0.071:3.479
-R	priest/shadow	12	14213	12745	gear	15.879	int:11:int:0.38:4.18,sta:6:sta:0.27:1.62,sp:6:sp:1.1:6.6,armor:49:armor:0.071:3.479
-R	priest/shadow	12	14213	12746	gear	17.198999999999998	int:11:int:0.38:4.18,spi:6:spi:0.49:2.94,sp:6:sp:1.1:6.6,armor:49:armor:0.071:3.479
-R	priest/shadow	12	14213	12747	gear	15.989	spi:6:spi:0.49:2.94,sta:11:sta:0.27:2.97,sp:6:sp:1.1:6.6,armor:49:armor:0.071:3.479
-R	priest/shadow	12	14213	12748	gear	13.129	int:6:int:0.38:2.28,sta:11:sta:0.27:2.97,spDmg:4:sp:1.1:4.4,armor:49:armor:0.071:3.479
-R	priest/shadow	12	14213	12749	gear	14.998999999999999	int:11:int:0.38:4.18,spi:6:spi:0.49:2.94,spDmg:4:sp:1.1:4.4,armor:49:armor:0.071:3.479
-R	priest/shadow	12	14213	12750	gear	13.789	spi:6:spi:0.49:2.94,sta:11:sta:0.27:2.97,spDmg:4:sp:1.1:4.4,armor:49:armor:0.071:3.479
-R	priest/shadow	12	14213	12756	gear	3.4789999999999996	armor:49:armor:0.071:3.479
-R	priest/shadow	12	14213	12757	gear	3.4789999999999996	armor:49:armor:0.071:3.479
-R	priest/shadow	12	14213	12758	gear	3.4789999999999996	armor:49:armor:0.071:3.479
-R	priest/shadow	12	14213	12759	gear	3.4789999999999996	armor:49:armor:0.071:3.479
-R	priest/shadow	12	14213	12761	gear	24.479	spShadow:21:spShadow:1:21,armor:49:armor:0.071:3.479
-R	priest/shadow	12	14312	0	gear	4.544	armor:64:armor:0.071:4.544
-R	priest/shadow	12	14312	12718	gear	16.244	int:18:int:0.38:6.84,sta:18:sta:0.27:4.86,armor:64:armor:0.071:4.544
-R	priest/shadow	12	14312	12719	gear	18.224	spi:18:spi:0.49:8.82,sta:18:sta:0.27:4.86,armor:64:armor:0.071:4.544
-R	priest/shadow	12	14312	12720	gear	20.204	int:18:int:0.38:6.84,spi:18:spi:0.49:8.82,armor:64:armor:0.071:4.544
-R	priest/shadow	12	14312	12729	gear	14.803999999999998	int:27:int:0.38:10.26,armor:64:armor:0.071:4.544
-R	priest/shadow	12	14312	12730	gear	17.774	spi:27:spi:0.49:13.23,armor:64:armor:0.071:4.544
-R	priest/shadow	12	14312	12731	gear	11.834	sta:27:sta:0.27:7.29,armor:64:armor:0.071:4.544
-R	priest/shadow	12	14312	12734	gear	39.744	sp:32:sp:1.1:35.2,armor:64:armor:0.071:4.544
-R	priest/shadow	12	14312	12735	gear	26.544	spDmg:20:sp:1.1:22,armor:64:armor:0.071:4.544
-R	priest/shadow	12	14312	12740	gear	9.404	sta:18:sta:0.27:4.86,armor:64:armor:0.071:4.544
-R	priest/shadow	12	14312	12741	gear	9.404	sta:18:sta:0.27:4.86,armor:64:armor:0.071:4.544
-R	priest/shadow	12	14312	12742	gear	9.404	sta:18:sta:0.27:4.86,armor:64:armor:0.071:4.544
-R	priest/shadow	12	14312	12743	gear	9.404	sta:18:sta:0.27:4.86,armor:64:armor:0.071:4.544
-R	priest/shadow	12	14312	12744	gear	9.404	sta:18:sta:0.27:4.86,armor:64:armor:0.071:4.544
-R	priest/shadow	12	14312	12745	gear	26.114	int:20:int:0.38:7.6,sta:11:sta:0.27:2.97,sp:10:sp:1.1:11,armor:64:armor:0.071:4.544
-R	priest/shadow	12	14312	12746	gear	28.534	int:20:int:0.38:7.6,spi:11:spi:0.49:5.39,sp:10:sp:1.1:11,armor:64:armor:0.071:4.544
-R	priest/shadow	12	14312	12747	gear	26.334	spi:11:spi:0.49:5.39,sta:20:sta:0.27:5.4,sp:10:sp:1.1:11,armor:64:armor:0.071:4.544
-R	priest/shadow	12	14312	12748	gear	20.724	int:11:int:0.38:4.18,sta:20:sta:0.27:5.4,spDmg:6:sp:1.1:6.6,armor:64:armor:0.071:4.544
-R	priest/shadow	12	14312	12749	gear	24.134	int:20:int:0.38:7.6,spi:11:spi:0.49:5.39,spDmg:6:sp:1.1:6.6,armor:64:armor:0.071:4.544
-R	priest/shadow	12	14312	12750	gear	21.934	spi:11:spi:0.49:5.39,sta:20:sta:0.27:5.4,spDmg:6:sp:1.1:6.6,armor:64:armor:0.071:4.544
-R	priest/shadow	12	14312	12756	gear	4.544	armor:64:armor:0.071:4.544
-R	priest/shadow	12	14312	12757	gear	4.544	armor:64:armor:0.071:4.544
-R	priest/shadow	12	14312	12758	gear	4.544	armor:64:armor:0.071:4.544
-R	priest/shadow	12	14312	12759	gear	4.544	armor:64:armor:0.071:4.544
-R	priest/shadow	12	14312	12761	gear	43.544	spShadow:39:spShadow:1:39,armor:64:armor:0.071:4.544
-R	priest/shadow	12	14440	0	gear	6.69	sta:6:sta:0.27:1.62,spi:6:spi:0.49:2.94,armor:30:armor:0.071:2.13
-R	priest/shadow	12	15299	0	gear	0.6389999999999999	armor:9:armor:0.071:0.639
-R	priest/shadow	12	15939	0	oh	0.0	
-R	priest/shadow	12	15939	12718	oh	5.85	int:9:int:0.38:3.42,sta:9:sta:0.27:2.43
-R	priest/shadow	12	15939	12719	oh	6.84	spi:9:spi:0.49:4.41,sta:9:sta:0.27:2.43
-R	priest/shadow	12	15939	12720	oh	7.83	int:9:int:0.38:3.42,spi:9:spi:0.49:4.41
-R	priest/shadow	12	15939	12721	oh	2.43	sta:9:sta:0.27:2.43
-R	priest/shadow	12	15939	12722	oh	2.43	sta:9:sta:0.27:2.43
-R	priest/shadow	12	15939	12723	oh	3.42	int:9:int:0.38:3.42
-R	priest/shadow	12	15939	12724	oh	3.42	int:9:int:0.38:3.42
-R	priest/shadow	12	15939	12725	oh	4.41	spi:9:spi:0.49:4.41
-R	priest/shadow	12	15939	12726	oh	4.41	spi:9:spi:0.49:4.41
-R	priest/shadow	12	15939	12727	oh	0.0	
-R	priest/shadow	12	15939	12728	oh	0.0	
-R	priest/shadow	12	15939	12729	oh	5.32	int:14:int:0.38:5.32
-R	priest/shadow	12	15939	12730	oh	6.859999999999999	spi:14:spi:0.49:6.86
-R	priest/shadow	12	15939	12731	oh	3.7800000000000002	sta:14:sta:0.27:3.78
-R	priest/shadow	12	15939	12732	oh	0.0	
-R	priest/shadow	12	15939	12733	oh	0.0	
-R	priest/shadow	12	15939	12734	oh	17.6	sp:16:sp:1.1:17.6
-R	priest/shadow	12	15939	12735	oh	11.0	spDmg:10:sp:1.1:11
-R	priest/shadow	12	15939	12740	oh	2.43	sta:9:sta:0.27:2.43
-R	priest/shadow	12	15939	12741	oh	2.43	sta:9:sta:0.27:2.43
-R	priest/shadow	12	15939	12742	oh	2.43	sta:9:sta:0.27:2.43
-R	priest/shadow	12	15939	12743	oh	2.43	sta:9:sta:0.27:2.43
-R	priest/shadow	12	15939	12744	oh	2.43	sta:9:sta:0.27:2.43
-R	priest/shadow	12	15939	12745	oh	10.92	int:10:int:0.38:3.8,sta:6:sta:0.27:1.62,sp:5:sp:1.1:5.5
-R	priest/shadow	12	15939	12746	oh	12.24	int:10:int:0.38:3.8,spi:6:spi:0.49:2.94,sp:5:sp:1.1:5.5
-R	priest/shadow	12	15939	12747	oh	11.14	spi:6:spi:0.49:2.94,sta:10:sta:0.27:2.7,sp:5:sp:1.1:5.5
-R	priest/shadow	12	15939	12748	oh	8.280000000000001	int:6:int:0.38:2.28,sta:10:sta:0.27:2.7,spDmg:3:sp:1.1:3.3
-R	priest/shadow	12	15939	12749	oh	10.040000000000001	int:10:int:0.38:3.8,spi:6:spi:0.49:2.94,spDmg:3:sp:1.1:3.3
-R	priest/shadow	12	15939	12750	oh	8.940000000000001	spi:6:spi:0.49:2.94,sta:10:sta:0.27:2.7,spDmg:3:sp:1.1:3.3
-R	priest/shadow	12	15939	12756	oh	0.0	
-R	priest/shadow	12	15939	12757	oh	0.0	
-R	priest/shadow	12	15939	12758	oh	0.0	
-R	priest/shadow	12	15939	12759	oh	0.0	
-R	priest/shadow	12	15939	12760	oh	0.0	
-R	priest/shadow	12	15939	12761	oh	20.0	spShadow:20:spShadow:1:20
+R	priest/shadow	12	11807	0	gear	14.666	spi:10:spi:0.49:4.9,sta:10:sta:0.27:2.7,int:10:int:0.38:3.8,armor:46:armor:0.071:3.266
+R	priest/shadow	12	12014	0	gear	0.0	
+R	priest/shadow	12	12014	12718	gear	5.85	int:9:int:0.38:3.42,sta:9:sta:0.27:2.43
+R	priest/shadow	12	12014	12719	gear	6.84	spi:9:spi:0.49:4.41,sta:9:sta:0.27:2.43
+R	priest/shadow	12	12014	12720	gear	7.83	int:9:int:0.38:3.42,spi:9:spi:0.49:4.41
+R	priest/shadow	12	12014	12721	gear	2.43	sta:9:sta:0.27:2.43
+R	priest/shadow	12	12014	12722	gear	2.43	sta:9:sta:0.27:2.43
+R	priest/shadow	12	12014	12723	gear	3.42	int:9:int:0.38:3.42
+R	priest/shadow	12	12014	12724	gear	3.42	int:9:int:0.38:3.42
+R	priest/shadow	12	12014	12725	gear	4.41	spi:9:spi:0.49:4.41
+R	priest/shadow	12	12014	12726	gear	4.41	spi:9:spi:0.49:4.41
+R	priest/shadow	12	12014	12727	gear	0.0	
+R	priest/shadow	12	12014	12728	gear	0.0	
+R	priest/shadow	12	12014	12729	gear	4.94	int:13:int:0.38:4.94
+R	priest/shadow	12	12014	12730	gear	6.37	spi:13:spi:0.49:6.37
+R	priest/shadow	12	12014	12731	gear	3.5100000000000002	sta:13:sta:0.27:3.51
+R	priest/shadow	12	12014	12732	gear	0.0	
+R	priest/shadow	12	12014	12733	gear	0.0	
+R	priest/shadow	12	12014	12737	gear	0.0	
+R	priest/shadow	12	12014	12738	gear	0.0	
+R	priest/shadow	12	12014	12739	gear	0.0	
+R	priest/shadow	12	12014	12740	gear	2.43	sta:9:sta:0.27:2.43
+R	priest/shadow	12	12014	12741	gear	2.43	sta:9:sta:0.27:2.43
+R	priest/shadow	12	12014	12742	gear	2.43	sta:9:sta:0.27:2.43
+R	priest/shadow	12	12014	12743	gear	2.43	sta:9:sta:0.27:2.43
+R	priest/shadow	12	12014	12744	gear	2.43	sta:9:sta:0.27:2.43
+R	priest/shadow	12	12014	12745	gear	10.27	int:9:int:0.38:3.42,sta:5:sta:0.27:1.35,sp:5:sp:1.1:5.5
+R	priest/shadow	12	12014	12746	gear	11.370000000000001	int:9:int:0.38:3.42,spi:5:spi:0.49:2.45,sp:5:sp:1.1:5.5
+R	priest/shadow	12	12014	12747	gear	10.38	spi:5:spi:0.49:2.45,sta:9:sta:0.27:2.43,sp:5:sp:1.1:5.5
+R	priest/shadow	12	12014	12748	gear	7.630000000000001	int:5:int:0.38:1.9,sta:9:sta:0.27:2.43,spDmg:3:sp:1.1:3.3
+R	priest/shadow	12	12014	12749	gear	9.17	int:9:int:0.38:3.42,spi:5:spi:0.49:2.45,spDmg:3:sp:1.1:3.3
+R	priest/shadow	12	12014	12750	gear	8.180000000000001	spi:5:spi:0.49:2.45,sta:9:sta:0.27:2.43,spDmg:3:sp:1.1:3.3
+R	priest/shadow	12	12014	12751	gear	2.43	sta:9:sta:0.27:2.43
+R	priest/shadow	12	12014	12752	gear	2.43	sta:9:sta:0.27:2.43
+R	priest/shadow	12	12014	12753	gear	2.43	sta:9:sta:0.27:2.43
+R	priest/shadow	12	12014	12754	gear	7.93	sp:5:sp:1.1:5.5,sta:9:sta:0.27:2.43
+R	priest/shadow	12	12014	12755	gear	8.2	sp:5:sp:1.1:5.5,sta:10:sta:0.27:2.7
+R	priest/shadow	12	12794	0	mh	0.0	
+R	priest/shadow	12	13353	0	oh	28.76	spi:10:spi:0.49:4.9,int:15:int:0.38:5.7,sta:8:sta:0.27:2.16,spShadow:16:spShadow:1:16
+R	priest/shadow	12	14107	0	gear	34.962	int:12:int:0.38:4.56,spShadow:26:spShadow:1:26,armor:62:armor:0.071:4.402
+R	priest/shadow	12	14212	0	gear	2.485	armor:35:armor:0.071:2.485
+R	priest/shadow	12	14212	12718	gear	7.035	int:7:int:0.38:2.66,sta:7:sta:0.27:1.89,armor:35:armor:0.071:2.485
+R	priest/shadow	12	14212	12719	gear	7.805	spi:7:spi:0.49:3.43,sta:7:sta:0.27:1.89,armor:35:armor:0.071:2.485
+R	priest/shadow	12	14212	12720	gear	8.575	int:7:int:0.38:2.66,spi:7:spi:0.49:3.43,armor:35:armor:0.071:2.485
+R	priest/shadow	12	14212	12729	gear	6.285	int:10:int:0.38:3.8,armor:35:armor:0.071:2.485
+R	priest/shadow	12	14212	12730	gear	7.385	spi:10:spi:0.49:4.9,armor:35:armor:0.071:2.485
+R	priest/shadow	12	14212	12731	gear	5.1850000000000005	sta:10:sta:0.27:2.7,armor:35:armor:0.071:2.485
+R	priest/shadow	12	14212	12734	gear	15.685	sp:12:sp:1.1:13.2,armor:35:armor:0.071:2.485
+R	priest/shadow	12	14212	12735	gear	10.185	spDmg:7:sp:1.1:7.7,armor:35:armor:0.071:2.485
+R	priest/shadow	12	14212	12740	gear	4.375	sta:7:sta:0.27:1.89,armor:35:armor:0.071:2.485
+R	priest/shadow	12	14212	12741	gear	4.375	sta:7:sta:0.27:1.89,armor:35:armor:0.071:2.485
+R	priest/shadow	12	14212	12742	gear	4.375	sta:7:sta:0.27:1.89,armor:35:armor:0.071:2.485
+R	priest/shadow	12	14212	12743	gear	4.375	sta:7:sta:0.27:1.89,armor:35:armor:0.071:2.485
+R	priest/shadow	12	14212	12744	gear	4.375	sta:7:sta:0.27:1.89,armor:35:armor:0.071:2.485
+R	priest/shadow	12	14212	12745	gear	10.625	int:7:int:0.38:2.66,sta:4:sta:0.27:1.08,sp:4:sp:1.1:4.4,armor:35:armor:0.071:2.485
+R	priest/shadow	12	14212	12746	gear	11.504999999999999	int:7:int:0.38:2.66,spi:4:spi:0.49:1.96,sp:4:sp:1.1:4.4,armor:35:armor:0.071:2.485
+R	priest/shadow	12	14212	12747	gear	10.735	spi:4:spi:0.49:1.96,sta:7:sta:0.27:1.89,sp:4:sp:1.1:4.4,armor:35:armor:0.071:2.485
+R	priest/shadow	12	14212	12748	gear	8.095	int:4:int:0.38:1.52,sta:7:sta:0.27:1.89,spDmg:2:sp:1.1:2.2,armor:35:armor:0.071:2.485
+R	priest/shadow	12	14212	12749	gear	9.305	int:7:int:0.38:2.66,spi:4:spi:0.49:1.96,spDmg:2:sp:1.1:2.2,armor:35:armor:0.071:2.485
+R	priest/shadow	12	14212	12750	gear	8.535	spi:4:spi:0.49:1.96,sta:7:sta:0.27:1.89,spDmg:2:sp:1.1:2.2,armor:35:armor:0.071:2.485
+R	priest/shadow	12	14212	12756	gear	2.485	armor:35:armor:0.071:2.485
+R	priest/shadow	12	14212	12757	gear	2.485	armor:35:armor:0.071:2.485
+R	priest/shadow	12	14212	12758	gear	2.485	armor:35:armor:0.071:2.485
+R	priest/shadow	12	14212	12759	gear	2.485	armor:35:armor:0.071:2.485
+R	priest/shadow	12	14212	12761	gear	16.485	spShadow:14:spShadow:1:14,armor:35:armor:0.071:2.485
+R	priest/shadow	12	14311	0	gear	2.2009999999999996	armor:31:armor:0.071:2.201
+R	priest/shadow	12	14311	12718	gear	8.050999999999998	int:9:int:0.38:3.42,sta:9:sta:0.27:2.43,armor:31:armor:0.071:2.201
+R	priest/shadow	12	14311	12719	gear	9.041	spi:9:spi:0.49:4.41,sta:9:sta:0.27:2.43,armor:31:armor:0.071:2.201
+R	priest/shadow	12	14311	12720	gear	10.030999999999999	int:9:int:0.38:3.42,spi:9:spi:0.49:4.41,armor:31:armor:0.071:2.201
+R	priest/shadow	12	14311	12729	gear	7.141	int:13:int:0.38:4.94,armor:31:armor:0.071:2.201
+R	priest/shadow	12	14311	12730	gear	8.571	spi:13:spi:0.49:6.37,armor:31:armor:0.071:2.201
+R	priest/shadow	12	14311	12731	gear	5.711	sta:13:sta:0.27:3.51,armor:31:armor:0.071:2.201
+R	priest/shadow	12	14311	12734	gear	18.701	sp:15:sp:1.1:16.5,armor:31:armor:0.071:2.201
+R	priest/shadow	12	14311	12735	gear	13.201	spDmg:10:sp:1.1:11,armor:31:armor:0.071:2.201
+R	priest/shadow	12	14311	12740	gear	4.631	sta:9:sta:0.27:2.43,armor:31:armor:0.071:2.201
+R	priest/shadow	12	14311	12741	gear	4.631	sta:9:sta:0.27:2.43,armor:31:armor:0.071:2.201
+R	priest/shadow	12	14311	12742	gear	4.631	sta:9:sta:0.27:2.43,armor:31:armor:0.071:2.201
+R	priest/shadow	12	14311	12743	gear	4.631	sta:9:sta:0.27:2.43,armor:31:armor:0.071:2.201
+R	priest/shadow	12	14311	12744	gear	4.631	sta:9:sta:0.27:2.43,armor:31:armor:0.071:2.201
+R	priest/shadow	12	14311	12745	gear	12.471	int:9:int:0.38:3.42,sta:5:sta:0.27:1.35,sp:5:sp:1.1:5.5,armor:31:armor:0.071:2.201
+R	priest/shadow	12	14311	12746	gear	13.571000000000002	int:9:int:0.38:3.42,spi:5:spi:0.49:2.45,sp:5:sp:1.1:5.5,armor:31:armor:0.071:2.201
+R	priest/shadow	12	14311	12747	gear	12.581	spi:5:spi:0.49:2.45,sta:9:sta:0.27:2.43,sp:5:sp:1.1:5.5,armor:31:armor:0.071:2.201
+R	priest/shadow	12	14311	12748	gear	9.831	int:5:int:0.38:1.9,sta:9:sta:0.27:2.43,spDmg:3:sp:1.1:3.3,armor:31:armor:0.071:2.201
+R	priest/shadow	12	14311	12749	gear	11.370999999999999	int:9:int:0.38:3.42,spi:5:spi:0.49:2.45,spDmg:3:sp:1.1:3.3,armor:31:armor:0.071:2.201
+R	priest/shadow	12	14311	12750	gear	10.381	spi:5:spi:0.49:2.45,sta:9:sta:0.27:2.43,spDmg:3:sp:1.1:3.3,armor:31:armor:0.071:2.201
+R	priest/shadow	12	14311	12756	gear	2.2009999999999996	armor:31:armor:0.071:2.201
+R	priest/shadow	12	14311	12757	gear	2.2009999999999996	armor:31:armor:0.071:2.201
+R	priest/shadow	12	14311	12758	gear	2.2009999999999996	armor:31:armor:0.071:2.201
+R	priest/shadow	12	14311	12759	gear	2.2009999999999996	armor:31:armor:0.071:2.201
+R	priest/shadow	12	14311	12761	gear	21.201	spShadow:19:spShadow:1:19,armor:31:armor:0.071:2.201
+R	priest/shadow	12	14439	0	gear	7.356999999999999	spi:8:spi:0.49:3.92,int:4:int:0.38:1.52,armor:27:armor:0.071:1.917
+R	priest/shadow	12	15283	0	ranged	351.912	rdps:56.76:rdps:6.2:351.912
+R	priest/shadow	12	15283	12718	ranged	355.81199999999995	int:6:int:0.38:2.28,sta:6:sta:0.27:1.62,rdps:56.76:rdps:6.2:351.912
+R	priest/shadow	12	15283	12719	ranged	356.472	spi:6:spi:0.49:2.94,sta:6:sta:0.27:1.62,rdps:56.76:rdps:6.2:351.912
+R	priest/shadow	12	15283	12720	ranged	357.132	int:6:int:0.38:2.28,spi:6:spi:0.49:2.94,rdps:56.76:rdps:6.2:351.912
+R	priest/shadow	12	15283	12729	ranged	355.332	int:9:int:0.38:3.42,rdps:56.76:rdps:6.2:351.912
+R	priest/shadow	12	15283	12730	ranged	356.322	spi:9:spi:0.49:4.41,rdps:56.76:rdps:6.2:351.912
+R	priest/shadow	12	15283	12731	ranged	354.342	sta:9:sta:0.27:2.43,rdps:56.76:rdps:6.2:351.912
+R	priest/shadow	12	15283	12734	ranged	364.012	sp:11:sp:1.1:12.1,rdps:56.76:rdps:6.2:351.912
+R	priest/shadow	12	15283	12735	ranged	359.61199999999997	spDmg:7:sp:1.1:7.7,rdps:56.76:rdps:6.2:351.912
+R	priest/shadow	12	15283	12740	ranged	353.532	sta:6:sta:0.27:1.62,rdps:56.76:rdps:6.2:351.912
+R	priest/shadow	12	15283	12741	ranged	353.532	sta:6:sta:0.27:1.62,rdps:56.76:rdps:6.2:351.912
+R	priest/shadow	12	15283	12742	ranged	353.532	sta:6:sta:0.27:1.62,rdps:56.76:rdps:6.2:351.912
+R	priest/shadow	12	15283	12743	ranged	353.532	sta:6:sta:0.27:1.62,rdps:56.76:rdps:6.2:351.912
+R	priest/shadow	12	15283	12744	ranged	353.532	sta:6:sta:0.27:1.62,rdps:56.76:rdps:6.2:351.912
+R	priest/shadow	12	15283	12745	ranged	358.952	int:7:int:0.38:2.66,sta:4:sta:0.27:1.08,sp:3:sp:1.1:3.3,rdps:56.76:rdps:6.2:351.912
+R	priest/shadow	12	15283	12746	ranged	359.832	int:7:int:0.38:2.66,spi:4:spi:0.49:1.96,sp:3:sp:1.1:3.3,rdps:56.76:rdps:6.2:351.912
+R	priest/shadow	12	15283	12747	ranged	359.06199999999995	spi:4:spi:0.49:1.96,sta:7:sta:0.27:1.89,sp:3:sp:1.1:3.3,rdps:56.76:rdps:6.2:351.912
+R	priest/shadow	12	15283	12748	ranged	357.522	int:4:int:0.38:1.52,sta:7:sta:0.27:1.89,spDmg:2:sp:1.1:2.2,rdps:56.76:rdps:6.2:351.912
+R	priest/shadow	12	15283	12749	ranged	358.73199999999997	int:7:int:0.38:2.66,spi:4:spi:0.49:1.96,spDmg:2:sp:1.1:2.2,rdps:56.76:rdps:6.2:351.912
+R	priest/shadow	12	15283	12750	ranged	357.962	spi:4:spi:0.49:1.96,sta:7:sta:0.27:1.89,spDmg:2:sp:1.1:2.2,rdps:56.76:rdps:6.2:351.912
+R	priest/shadow	12	15283	12756	ranged	351.912	rdps:56.76:rdps:6.2:351.912
+R	priest/shadow	12	15283	12757	ranged	351.912	rdps:56.76:rdps:6.2:351.912
+R	priest/shadow	12	15283	12758	ranged	351.912	rdps:56.76:rdps:6.2:351.912
+R	priest/shadow	12	15283	12759	ranged	351.912	rdps:56.76:rdps:6.2:351.912
+R	priest/shadow	12	15283	12761	ranged	364.912	spShadow:13:spShadow:1:13,rdps:56.76:rdps:6.2:351.912
+R	priest/shadow	12	15938	0	oh	0.0	
+R	priest/shadow	12	15938	12718	oh	5.85	int:9:int:0.38:3.42,sta:9:sta:0.27:2.43
+R	priest/shadow	12	15938	12719	oh	6.84	spi:9:spi:0.49:4.41,sta:9:sta:0.27:2.43
+R	priest/shadow	12	15938	12720	oh	7.83	int:9:int:0.38:3.42,spi:9:spi:0.49:4.41
+R	priest/shadow	12	15938	12721	oh	2.43	sta:9:sta:0.27:2.43
+R	priest/shadow	12	15938	12722	oh	2.43	sta:9:sta:0.27:2.43
+R	priest/shadow	12	15938	12723	oh	3.42	int:9:int:0.38:3.42
+R	priest/shadow	12	15938	12724	oh	3.42	int:9:int:0.38:3.42
+R	priest/shadow	12	15938	12725	oh	4.41	spi:9:spi:0.49:4.41
+R	priest/shadow	12	15938	12726	oh	4.41	spi:9:spi:0.49:4.41
+R	priest/shadow	12	15938	12727	oh	0.0	
+R	priest/shadow	12	15938	12728	oh	0.0	
+R	priest/shadow	12	15938	12729	oh	5.32	int:14:int:0.38:5.32
+R	priest/shadow	12	15938	12730	oh	6.859999999999999	spi:14:spi:0.49:6.86
+R	priest/shadow	12	15938	12731	oh	3.7800000000000002	sta:14:sta:0.27:3.78
+R	priest/shadow	12	15938	12732	oh	0.0	
+R	priest/shadow	12	15938	12733	oh	0.0	
+R	priest/shadow	12	15938	12734	oh	17.6	sp:16:sp:1.1:17.6
+R	priest/shadow	12	15938	12735	oh	11.0	spDmg:10:sp:1.1:11
+R	priest/shadow	12	15938	12740	oh	2.43	sta:9:sta:0.27:2.43
+R	priest/shadow	12	15938	12741	oh	2.43	sta:9:sta:0.27:2.43
+R	priest/shadow	12	15938	12742	oh	2.43	sta:9:sta:0.27:2.43
+R	priest/shadow	12	15938	12743	oh	2.43	sta:9:sta:0.27:2.43
+R	priest/shadow	12	15938	12744	oh	2.43	sta:9:sta:0.27:2.43
+R	priest/shadow	12	15938	12745	oh	10.92	int:10:int:0.38:3.8,sta:6:sta:0.27:1.62,sp:5:sp:1.1:5.5
+R	priest/shadow	12	15938	12746	oh	12.24	int:10:int:0.38:3.8,spi:6:spi:0.49:2.94,sp:5:sp:1.1:5.5
+R	priest/shadow	12	15938	12747	oh	11.14	spi:6:spi:0.49:2.94,sta:10:sta:0.27:2.7,sp:5:sp:1.1:5.5
+R	priest/shadow	12	15938	12748	oh	8.280000000000001	int:6:int:0.38:2.28,sta:10:sta:0.27:2.7,spDmg:3:sp:1.1:3.3
+R	priest/shadow	12	15938	12749	oh	10.040000000000001	int:10:int:0.38:3.8,spi:6:spi:0.49:2.94,spDmg:3:sp:1.1:3.3
+R	priest/shadow	12	15938	12750	oh	8.940000000000001	spi:6:spi:0.49:2.94,sta:10:sta:0.27:2.7,spDmg:3:sp:1.1:3.3
+R	priest/shadow	12	15938	12756	oh	0.0	
+R	priest/shadow	12	15938	12757	oh	0.0	
+R	priest/shadow	12	15938	12758	oh	0.0	
+R	priest/shadow	12	15938	12759	oh	0.0	
+R	priest/shadow	12	15938	12760	oh	0.0	
+R	priest/shadow	12	15938	12761	oh	20.0	spShadow:20:spShadow:1:20
 R	priest/shadow	12	15945	0	oh	1.52	sta:2:sta:0.27:0.54,spi:2:spi:0.49:0.98
-R	priest/shadow	12	16819	0	gear	15.504000000000001	sta:8:sta:0.27:2.16,int:14:int:0.38:5.32,spi:10:spi:0.49:4.9,armor:44:armor:0.071:3.124
-R	priest/shadow	12	17739	0	gear	5.867	sta:12:sta:0.27:3.24,armor:37:armor:0.071:2.627
-R	priest/shadow	12	18440	0	gear	7.116	sta:9:sta:0.27:2.43,armor:66:armor:0.071:4.686
-R	priest/shadow	12	18879	0	gear	13.21	sta:20:sta:0.27:5.4,armor:110:armor:0.071:7.81
-R	priest/shadow	12	19395	0	gear	0.0	
-R	priest/shadow	12	19893	0	gear	20.700000000000003	sta:10:sta:0.27:2.7,int:10:int:0.38:3.8,spellHit:1:spellHit:2.1:2.1,sp:11:sp:1.1:12.1
-R	priest/shadow	12	20330	0	gear	26.981	int:27:int:0.38:10.26,spi:11:spi:0.49:5.39,sta:12:sta:0.27:3.24,crit:1:spellCrit:0.92:0.92,armor:101:armor:0.071:7.171
-R	priest/shadow	12	20652	0	gear	3.7629999999999995	armor:53:armor:0.071:3.763
-R	priest/shadow	12	20652	12745	gear	19.323	int:15:int:0.38:5.7,sta:8:sta:0.27:2.16,sp:7:sp:1.1:7.7,armor:53:armor:0.071:3.763
-R	priest/shadow	12	20652	12746	gear	21.083	int:15:int:0.38:5.7,spi:8:spi:0.49:3.92,sp:7:sp:1.1:7.7,armor:53:armor:0.071:3.763
-R	priest/shadow	12	20652	12747	gear	19.433	spi:8:spi:0.49:3.92,sta:15:sta:0.27:4.05,sp:7:sp:1.1:7.7,armor:53:armor:0.071:3.763
-R	priest/shadow	12	20652	12748	gear	16.352999999999998	int:8:int:0.38:3.04,sta:15:sta:0.27:4.05,spDmg:5:sp:1.1:5.5,armor:53:armor:0.071:3.763
-R	priest/shadow	12	20652	12749	gear	18.883	int:15:int:0.38:5.7,spi:8:spi:0.49:3.92,spDmg:5:sp:1.1:5.5,armor:53:armor:0.071:3.763
-R	priest/shadow	12	20652	12750	gear	17.233	spi:8:spi:0.49:3.92,sta:15:sta:0.27:4.05,spDmg:5:sp:1.1:5.5,armor:53:armor:0.071:3.763
-R	priest/shadow	12	21500	0	gear	13.456	sta:14:sta:0.27:3.78,int:15:int:0.38:5.7,armor:56:armor:0.071:3.976
-R	priest/shadow	12	22085	0	gear	38.061	int:14:int:0.38:5.32,sta:13:sta:0.27:3.51,sp:16:sp:1.1:17.6,spi:12:spi:0.49:5.88,armor:81:armor:0.071:5.751
-R	priest/shadow	12	22678	0	gear	0.0	
-R	priest/shadow	12	23177	0	ranged	246.096	spShadow:10:spShadow:1:10,rdps:38.08:rdps:6.2:236.096
-R	priest/shadow	12	212583	0	mh	0.81	sta:3:sta:0.27:0.81
-R	priest/shadow	12	217296	0	gear	7.93	sta:9:sta:0.27:2.43,sp:5:sp:1.1:5.5
-R	priest/shadow	12	220907	0	gear	31.064	sta:13:sta:0.27:3.51,int:12:int:0.38:4.56,crit:1:spellCrit:0.92:0.92,sp:14:sp:1.1:15.4,armor:94:armor:0.071:6.674
-R	priest/shadow	12	226731	0	gear	32.862	sta:7:sta:0.27:1.89,int:11:int:0.38:4.18,sp:21:sp:1.1:23.1,armor:52:armor:0.071:3.692
-R	priest/shadow	12	227967	0	gear	0.0	
-R	priest/shadow	12	228282	0	gear	48.230999999999995	sta:20:sta:0.27:5.4,sp:35:sp:1.1:38.5,armor:61:armor:0.071:4.331
-R	priest/shadow	12	228757	0	mh	0.0	
-R	priest/shadow	12	231168	0	gear	69.741	sta:15:sta:0.27:4.05,int:20:int:0.38:7.6,crit:1:spellCrit:0.92:0.92,spShadow:50:spShadow:1:50,armor:101:armor:0.071:7.171
-R	priest/shadow	12	233395	0	gear	84.903	sta:14:sta:0.27:3.78,int:18:int:0.38:6.84,crit:2:spellCrit:0.92:1.84,spShadow:63:spShadow:1:63,armor:133:armor:0.071:9.443
-R	priest/shadow	12	233994	0	gear	33.06	int:18:int:0.38:6.84,crit:1:spellCrit:0.92:0.92,spDmg:23:sp:1.1:25.3
-R	priest/shadow	12	234576	0	mh	65.73	sta:21:sta:0.27:5.67,int:8:int:0.38:3.04,crit:1:spellCrit:0.92:0.92,spDmg:51:sp:1.1:56.1
-R	priest/shadow	12	236277	0	gear	22.090000000000003	sta:8:sta:0.27:2.16,int:9:int:0.38:3.42,spi:9:spi:0.49:4.41,spDmg:11:sp:1.1:12.1
-R	priest/shadow	12	239565	0	gear	98.716	sta:15:sta:0.27:4.05,int:17:int:0.38:6.46,crit:2:spellCrit:0.92:1.84,spShadow:76:spShadow:1:76,armor:146:armor:0.071:10.366
-R	priest/shadow	12	247789	0	ranged	24.8	rdps:4:rdps:6.2:24.8
-R	priest/shadow	12	254029	0	gear	7.645999999999999	int:7:int:0.38:2.66,sta:9:sta:0.27:2.43,armor:36:armor:0.071:2.556
-R	priest/shadow	12	260829	0	gear	3.1239999999999997	armor:44:armor:0.071:3.124
-R	priest/shadow	12	271909	0	gear	3.7800000000000002	sta:14:sta:0.27:3.78
-R	priest/shadow	12	272847	0	mh	1.46	sta:2:sta:0.27:0.54,crit:1:spellCrit:0.92:0.92
-R	priest/shadow	12	275831	0	gear	1.9	int:5:int:0.38:1.9
-R	priest/shadow	12	278019	0	gear	6.0200000000000005	sta:6:sta:0.27:1.62,sp:4:sp:1.1:4.4
-R	priest/shadow	12	288931	0	gear	17.6	sp:16:sp:1.1:17.6
+R	priest/shadow	12	16817	0	gear	29.907	sta:10:sta:0.27:2.7,int:22:int:0.38:8.36,spi:10:spi:0.49:4.9,sp:9:sp:1.1:9.9,armor:57:armor:0.071:4.047
+R	priest/shadow	12	17737	0	oh	4.720000000000001	hit:0.8:spellHit:2.1:1.68,int:8:int:0.38:3.04
+R	priest/shadow	12	18438	0	gear	0.0	
+R	priest/shadow	12	18878	0	mh	30.62	sta:8:sta:0.27:2.16,int:17:int:0.38:6.46,sp:20:sp:1.1:22
+R	priest/shadow	12	19391	0	gear	15.721	sta:13:sta:0.27:3.51,int:17:int:0.38:6.46,armor:81:armor:0.071:5.751
+R	priest/shadow	12	19891	0	oh	28.240000000000002	sta:8:sta:0.27:2.16,int:11:int:0.38:4.18,sp:18:sp:1.1:19.8,spellHit:1:spellHit:2.1:2.1
+R	priest/shadow	12	20333	0	gear	13.95	int:20:int:0.38:7.6,spi:8:spi:0.49:3.92,sta:9:sta:0.27:2.43
+R	priest/shadow	12	20672	0	ranged	395.36600000000004	int:9:int:0.38:3.42,sp:5:sp:1.1:5.5,rdps:62.33:rdps:6.2:386.446
+R	priest/shadow	12	21522	0	mh	3.7800000000000002	sta:14:sta:0.27:3.78
+R	priest/shadow	12	22231	0	gear	20.57	int:18:int:0.38:6.84,sta:11:sta:0.27:2.97,hit:1:spellHit:2.1:2.1,sp:4:sp:1.1:4.4,armor:60:armor:0.071:4.26
+R	priest/shadow	12	22711	0	gear	32.608000000000004	sta:6:sta:0.27:1.62,int:6:int:0.38:2.28,sp:23:sp:1.1:25.3,armor:48:armor:0.071:3.408
+R	priest/shadow	12	23237	0	gear	4.72	int:10:int:0.38:3.8,crit:1:spellCrit:0.92:0.92
+R	priest/shadow	12	213088	0	gear	6.264	sta:4:sta:0.27:1.08,int:4:int:0.38:1.52,spi:4:spi:0.49:1.96,armor:24:armor:0.071:1.704
+R	priest/shadow	12	217301	0	gear	4.550000000000001	sta:7:sta:0.27:1.89,int:7:int:0.38:2.66
+R	priest/shadow	12	221025	0	gear	30.657	sta:7:sta:0.27:1.89,int:8:int:0.38:3.04,sp:21:sp:1.1:23.1,armor:37:armor:0.071:2.627
+R	priest/shadow	12	226744	0	gear	14.936	sta:11:sta:0.27:2.97,int:10:int:0.38:3.8,spi:10:spi:0.49:4.9,armor:46:armor:0.071:3.266
+R	priest/shadow	12	227980	0	gear	44.35900000000001	sta:12:sta:0.27:3.24,int:15:int:0.38:5.7,spi:10:spi:0.49:4.9,sp:22:sp:1.1:24.2,armor:89:armor:0.071:6.319
+R	priest/shadow	12	228292	0	gear	14.659	sta:23:sta:0.27:6.21,armor:119:armor:0.071:8.449
+R	priest/shadow	12	229374	0	mh	2.7	sta:10:sta:0.27:2.7
+R	priest/shadow	12	231271	0	gear	28.6	sp:26:sp:1.1:28.6
+R	priest/shadow	12	233502	0	gear	5.07	sta:11:sta:0.27:2.97,hit:1:spellHit:2.1:2.1
+R	priest/shadow	12	234020	0	gear	31.230000000000004	sta:7:sta:0.27:1.89,int:8:int:0.38:3.04,hit:1:spellHit:2.1:2.1,sp:22:sp:1.1:24.2
+R	priest/shadow	12	234614	0	gear	0.0	
+R	priest/shadow	12	236284	0	mh	144.26000000000002	sta:20:sta:0.27:5.4,int:20:int:0.38:7.6,hit:2:spellHit:2.1:4.2,crit:3:spellCrit:0.92:2.76,sp:113:sp:1.1:124.3
+R	priest/shadow	12	239581	0	gear	68.86	sta:17:sta:0.27:4.59,int:17:int:0.38:6.46,spShadow:50:spShadow:1:50,armor:110:armor:0.071:7.81
+R	priest/shadow	12	249234	0	ranged	250.554	sp:7:sp:1.1:7.7,rdps:39.17:rdps:6.2:242.854
+R	priest/shadow	12	254033	0	gear	13.36	spDmg:6:sp:1.1:6.6,spi:8:spi:0.49:3.92,armor:40:armor:0.071:2.84
+R	priest/shadow	12	260820	0	gear	0.0	
+R	priest/shadow	12	271661	0	gear	0.142	armor:2:armor:0.071:0.142
+R	priest/shadow	12	272406	0	gear	17.32	int:14:int:0.38:5.32,hit:1:spellHit:2.1:2.1,sp:9:sp:1.1:9.9
+R	priest/shadow	12	273423	0	gear	30.944999999999997	int:10:int:0.38:3.8,sta:26:sta:0.27:7.02,spDmg:9:sp:1.1:9.9,spi:10:spi:0.49:4.9,armor:75:armor:0.071:5.325
+R	priest/shadow	12	274919	0	ranged	210.05	spShadow:7:spShadow:1:7,rdps:32.75:rdps:6.2:203.05
+R	priest/shadow	12	276888	0	mh	1.74	int:2:int:0.38:0.76,spi:2:spi:0.49:0.98
+R	priest/shadow	12	279826	0	gear	27.951999999999998	sta:13:sta:0.27:3.51,spi:10:spi:0.49:4.9,int:8:int:0.38:3.04,sp:11:sp:1.1:12.1,armor:62:armor:0.071:4.402
+R	priest/shadow	12	281315	0	gear	2.418	int:3:int:0.38:1.14,armor:18:armor:0.071:1.278
+R	priest/shadow	12	284197	0	gear	4.574	sta:8:sta:0.27:2.16,armor:34:armor:0.071:2.414
+R	priest/shadow	12	286997	0	gear	22.950999999999997	spi:17:spi:0.49:8.33,sp:10:sp:1.1:11,armor:51:armor:0.071:3.621
 R	priest/shadow	25	35	0	mh	0.0	
 R	priest/shadow	25	1299	0	gear	6.890000000000001	sta:4:sta:0.96:3.84,spi:3:spi:0.65:1.95,armor:20:armor:0.055:1.1
 R	priest/shadow	25	1831	0	mh	0.0	
@@ -287,7 +309,7 @@ R	priest/shadow	25	2364	0	gear	0.99	armor:18:armor:0.055:0.99
 R	priest/shadow	25	2955	0	gear	19.424999999999997	sta:11:sta:0.96:10.56,spi:10:spi:0.65:6.5,armor:43:armor:0.055:2.365
 R	priest/shadow	25	3423	0	oh	0.0	
 R	priest/shadow	25	3947	0	gear	1.65	armor:30:armor:0.055:1.65
-R	priest/shadow	25	4454	0	mh	1.3	spi:2:spi:0.65:1.3
+R	priest/shadow	25	4454	0	mh	1.9500000000000002	spi:3:spi:0.65:1.95
 R	priest/shadow	25	4947	0	mh	0.0	
 R	priest/shadow	25	5393	0	mh	0.0	
 R	priest/shadow	25	6333	0	mh	1.92	sta:2:sta:0.96:1.92
@@ -337,8 +359,8 @@ R	priest/shadow	25	7355	12757	gear	1.045	armor:19:armor:0.055:1.045
 R	priest/shadow	25	7355	12758	gear	1.045	armor:19:armor:0.055:1.045
 R	priest/shadow	25	7355	12759	gear	1.045	armor:19:armor:0.055:1.045
 R	priest/shadow	25	7355	12761	gear	10.045	spShadow:9:spShadow:1:9,armor:19:armor:0.055:1.045
-R	priest/shadow	25	7757	0	mh	16.32	sta:7:sta:0.96:6.72,int:15:int:0.64:9.6
-R	priest/shadow	25	9491	0	gear	14.875	sta:5:sta:0.96:4.8,int:8:int:0.64:5.12,spi:5:spi:0.65:3.25,armor:31:armor:0.055:1.705
+R	priest/shadow	25	7757	0	mh	16.32	sta:17:sta:0.96:16.32
+R	priest/shadow	25	9491	0	gear	14.875000000000002	int:8:int:0.64:5.12,spi:5:spi:0.65:3.25,sta:5:sta:0.96:4.8,armor:31:armor:0.055:1.705
 R	priest/shadow	25	9875	0	gear	1.595	armor:29:armor:0.055:1.595
 R	priest/shadow	25	9875	12718	gear	14.395000000000001	int:8:int:0.64:5.12,sta:8:sta:0.96:7.68,armor:29:armor:0.055:1.595
 R	priest/shadow	25	9875	12719	gear	14.475	spi:8:spi:0.65:5.2,sta:8:sta:0.96:7.68,armor:29:armor:0.055:1.595
@@ -391,174 +413,196 @@ R	priest/shadow	25	10102	12759	gear	4.18	armor:76:armor:0.055:4.18
 R	priest/shadow	25	10102	12761	gear	41.18	spShadow:37:spShadow:1:37,armor:76:armor:0.055:4.18
 R	priest/shadow	25	10645	0	gear	0.0	
 R	priest/shadow	25	11288	0	ranged	130.15	sp:2:sp:1.2:2.4,rdps:17.5:rdps:7.3:127.75
-R	priest/shadow	25	11808	0	gear	23.27	sta:20:sta:0.96:19.2,armor:74:armor:0.055:4.07
-R	priest/shadow	25	12015	0	gear	0.0	
-R	priest/shadow	25	12015	12718	gear	14.4	int:9:int:0.64:5.76,sta:9:sta:0.96:8.64
-R	priest/shadow	25	12015	12719	gear	14.490000000000002	spi:9:spi:0.65:5.85,sta:9:sta:0.96:8.64
-R	priest/shadow	25	12015	12720	gear	11.61	int:9:int:0.64:5.76,spi:9:spi:0.65:5.85
-R	priest/shadow	25	12015	12721	gear	8.64	sta:9:sta:0.96:8.64
-R	priest/shadow	25	12015	12722	gear	8.64	sta:9:sta:0.96:8.64
-R	priest/shadow	25	12015	12723	gear	5.76	int:9:int:0.64:5.76
-R	priest/shadow	25	12015	12724	gear	5.76	int:9:int:0.64:5.76
-R	priest/shadow	25	12015	12725	gear	5.8500000000000005	spi:9:spi:0.65:5.85
-R	priest/shadow	25	12015	12726	gear	5.8500000000000005	spi:9:spi:0.65:5.85
-R	priest/shadow	25	12015	12727	gear	0.0	
-R	priest/shadow	25	12015	12728	gear	0.0	
-R	priest/shadow	25	12015	12729	gear	8.96	int:14:int:0.64:8.96
-R	priest/shadow	25	12015	12730	gear	9.1	spi:14:spi:0.65:9.1
-R	priest/shadow	25	12015	12731	gear	13.44	sta:14:sta:0.96:13.44
-R	priest/shadow	25	12015	12732	gear	0.0	
-R	priest/shadow	25	12015	12733	gear	0.0	
-R	priest/shadow	25	12015	12737	gear	0.0	
-R	priest/shadow	25	12015	12738	gear	3.42	mp5:6:mp5:0.57:3.42
-R	priest/shadow	25	12015	12739	gear	0.0	
-R	priest/shadow	25	12015	12740	gear	8.64	sta:9:sta:0.96:8.64
-R	priest/shadow	25	12015	12741	gear	8.64	sta:9:sta:0.96:8.64
-R	priest/shadow	25	12015	12742	gear	8.64	sta:9:sta:0.96:8.64
-R	priest/shadow	25	12015	12743	gear	8.64	sta:9:sta:0.96:8.64
-R	priest/shadow	25	12015	12744	gear	8.64	sta:9:sta:0.96:8.64
-R	priest/shadow	25	12015	12745	gear	18.16	int:10:int:0.64:6.4,sta:6:sta:0.96:5.76,sp:5:sp:1.2:6
-R	priest/shadow	25	12015	12746	gear	16.3	int:10:int:0.64:6.4,spi:6:spi:0.65:3.9,sp:5:sp:1.2:6
-R	priest/shadow	25	12015	12747	gear	19.5	spi:6:spi:0.65:3.9,sta:10:sta:0.96:9.6,sp:5:sp:1.2:6
-R	priest/shadow	25	12015	12748	gear	17.04	int:6:int:0.64:3.84,sta:10:sta:0.96:9.6,spDmg:3:sp:1.2:3.6
-R	priest/shadow	25	12015	12749	gear	13.9	int:10:int:0.64:6.4,spi:6:spi:0.65:3.9,spDmg:3:sp:1.2:3.6
-R	priest/shadow	25	12015	12750	gear	17.1	spi:6:spi:0.65:3.9,sta:10:sta:0.96:9.6,spDmg:3:sp:1.2:3.6
-R	priest/shadow	25	12015	12751	gear	9.6	sta:10:sta:0.96:9.6
-R	priest/shadow	25	12015	12752	gear	9.6	sta:10:sta:0.96:9.6
-R	priest/shadow	25	12015	12753	gear	9.6	sta:10:sta:0.96:9.6
-R	priest/shadow	25	12015	12754	gear	15.6	sp:5:sp:1.2:6,sta:10:sta:0.96:9.6
-R	priest/shadow	25	12015	12755	gear	15.6	sp:5:sp:1.2:6,sta:10:sta:0.96:9.6
-R	priest/shadow	25	12805	0	gear	0.0	
-R	priest/shadow	25	13360	0	mh	15.1	sta:5:sta:0.96:4.8,int:10:int:0.64:6.4,spi:6:spi:0.65:3.9
-R	priest/shadow	25	14108	0	gear	10.605	spi:12:spi:0.65:7.8,armor:51:armor:0.055:2.805
-R	priest/shadow	25	14213	0	gear	2.695	armor:49:armor:0.055:2.695
-R	priest/shadow	25	14213	12718	gear	18.695	int:10:int:0.64:6.4,sta:10:sta:0.96:9.6,armor:49:armor:0.055:2.695
-R	priest/shadow	25	14213	12719	gear	18.795	spi:10:spi:0.65:6.5,sta:10:sta:0.96:9.6,armor:49:armor:0.055:2.695
-R	priest/shadow	25	14213	12720	gear	15.595	int:10:int:0.64:6.4,spi:10:spi:0.65:6.5,armor:49:armor:0.055:2.695
-R	priest/shadow	25	14213	12729	gear	12.295	int:15:int:0.64:9.6,armor:49:armor:0.055:2.695
-R	priest/shadow	25	14213	12730	gear	12.445	spi:15:spi:0.65:9.75,armor:49:armor:0.055:2.695
-R	priest/shadow	25	14213	12731	gear	17.095	sta:15:sta:0.96:14.4,armor:49:armor:0.055:2.695
-R	priest/shadow	25	14213	12734	gear	24.294999999999998	sp:18:sp:1.2:21.6,armor:49:armor:0.055:2.695
-R	priest/shadow	25	14213	12735	gear	15.895	spDmg:11:sp:1.2:13.2,armor:49:armor:0.055:2.695
-R	priest/shadow	25	14213	12740	gear	12.295	sta:10:sta:0.96:9.6,armor:49:armor:0.055:2.695
-R	priest/shadow	25	14213	12741	gear	12.295	sta:10:sta:0.96:9.6,armor:49:armor:0.055:2.695
-R	priest/shadow	25	14213	12742	gear	12.295	sta:10:sta:0.96:9.6,armor:49:armor:0.055:2.695
-R	priest/shadow	25	14213	12743	gear	12.295	sta:10:sta:0.96:9.6,armor:49:armor:0.055:2.695
-R	priest/shadow	25	14213	12744	gear	12.295	sta:10:sta:0.96:9.6,armor:49:armor:0.055:2.695
-R	priest/shadow	25	14213	12745	gear	22.695	int:11:int:0.64:7.04,sta:6:sta:0.96:5.76,sp:6:sp:1.2:7.2,armor:49:armor:0.055:2.695
-R	priest/shadow	25	14213	12746	gear	20.835	int:11:int:0.64:7.04,spi:6:spi:0.65:3.9,sp:6:sp:1.2:7.2,armor:49:armor:0.055:2.695
-R	priest/shadow	25	14213	12747	gear	24.354999999999997	spi:6:spi:0.65:3.9,sta:11:sta:0.96:10.56,sp:6:sp:1.2:7.2,armor:49:armor:0.055:2.695
-R	priest/shadow	25	14213	12748	gear	21.895	int:6:int:0.64:3.84,sta:11:sta:0.96:10.56,spDmg:4:sp:1.2:4.8,armor:49:armor:0.055:2.695
-R	priest/shadow	25	14213	12749	gear	18.435000000000002	int:11:int:0.64:7.04,spi:6:spi:0.65:3.9,spDmg:4:sp:1.2:4.8,armor:49:armor:0.055:2.695
-R	priest/shadow	25	14213	12750	gear	21.955	spi:6:spi:0.65:3.9,sta:11:sta:0.96:10.56,spDmg:4:sp:1.2:4.8,armor:49:armor:0.055:2.695
-R	priest/shadow	25	14213	12756	gear	2.695	armor:49:armor:0.055:2.695
-R	priest/shadow	25	14213	12757	gear	2.695	armor:49:armor:0.055:2.695
-R	priest/shadow	25	14213	12758	gear	2.695	armor:49:armor:0.055:2.695
-R	priest/shadow	25	14213	12759	gear	2.695	armor:49:armor:0.055:2.695
-R	priest/shadow	25	14213	12761	gear	23.695	spShadow:21:spShadow:1:21,armor:49:armor:0.055:2.695
-R	priest/shadow	25	14312	0	gear	3.52	armor:64:armor:0.055:3.52
-R	priest/shadow	25	14312	12718	gear	32.32	int:18:int:0.64:11.52,sta:18:sta:0.96:17.28,armor:64:armor:0.055:3.52
-R	priest/shadow	25	14312	12719	gear	32.50000000000001	spi:18:spi:0.65:11.7,sta:18:sta:0.96:17.28,armor:64:armor:0.055:3.52
-R	priest/shadow	25	14312	12720	gear	26.74	int:18:int:0.64:11.52,spi:18:spi:0.65:11.7,armor:64:armor:0.055:3.52
-R	priest/shadow	25	14312	12729	gear	20.8	int:27:int:0.64:17.28,armor:64:armor:0.055:3.52
-R	priest/shadow	25	14312	12730	gear	21.07	spi:27:spi:0.65:17.55,armor:64:armor:0.055:3.52
-R	priest/shadow	25	14312	12731	gear	29.439999999999998	sta:27:sta:0.96:25.92,armor:64:armor:0.055:3.52
-R	priest/shadow	25	14312	12734	gear	41.92	sp:32:sp:1.2:38.4,armor:64:armor:0.055:3.52
-R	priest/shadow	25	14312	12735	gear	27.52	spDmg:20:sp:1.2:24,armor:64:armor:0.055:3.52
-R	priest/shadow	25	14312	12740	gear	20.8	sta:18:sta:0.96:17.28,armor:64:armor:0.055:3.52
-R	priest/shadow	25	14312	12741	gear	20.8	sta:18:sta:0.96:17.28,armor:64:armor:0.055:3.52
-R	priest/shadow	25	14312	12742	gear	20.8	sta:18:sta:0.96:17.28,armor:64:armor:0.055:3.52
-R	priest/shadow	25	14312	12743	gear	20.8	sta:18:sta:0.96:17.28,armor:64:armor:0.055:3.52
-R	priest/shadow	25	14312	12744	gear	20.8	sta:18:sta:0.96:17.28,armor:64:armor:0.055:3.52
-R	priest/shadow	25	14312	12745	gear	38.88	int:20:int:0.64:12.8,sta:11:sta:0.96:10.56,sp:10:sp:1.2:12,armor:64:armor:0.055:3.52
-R	priest/shadow	25	14312	12746	gear	35.470000000000006	int:20:int:0.64:12.8,spi:11:spi:0.65:7.15,sp:10:sp:1.2:12,armor:64:armor:0.055:3.52
-R	priest/shadow	25	14312	12747	gear	41.870000000000005	spi:11:spi:0.65:7.15,sta:20:sta:0.96:19.2,sp:10:sp:1.2:12,armor:64:armor:0.055:3.52
-R	priest/shadow	25	14312	12748	gear	36.96	int:11:int:0.64:7.04,sta:20:sta:0.96:19.2,spDmg:6:sp:1.2:7.2,armor:64:armor:0.055:3.52
-R	priest/shadow	25	14312	12749	gear	30.67	int:20:int:0.64:12.8,spi:11:spi:0.65:7.15,spDmg:6:sp:1.2:7.2,armor:64:armor:0.055:3.52
-R	priest/shadow	25	14312	12750	gear	37.07	spi:11:spi:0.65:7.15,sta:20:sta:0.96:19.2,spDmg:6:sp:1.2:7.2,armor:64:armor:0.055:3.52
-R	priest/shadow	25	14312	12756	gear	3.52	armor:64:armor:0.055:3.52
-R	priest/shadow	25	14312	12757	gear	3.52	armor:64:armor:0.055:3.52
-R	priest/shadow	25	14312	12758	gear	3.52	armor:64:armor:0.055:3.52
-R	priest/shadow	25	14312	12759	gear	3.52	armor:64:armor:0.055:3.52
-R	priest/shadow	25	14312	12761	gear	42.52	spShadow:39:spShadow:1:39,armor:64:armor:0.055:3.52
-R	priest/shadow	25	14440	0	gear	11.31	sta:6:sta:0.96:5.76,spi:6:spi:0.65:3.9,armor:30:armor:0.055:1.65
-R	priest/shadow	25	15299	0	gear	0.495	armor:9:armor:0.055:0.495
-R	priest/shadow	25	15939	0	oh	0.0	
-R	priest/shadow	25	15939	12718	oh	14.4	int:9:int:0.64:5.76,sta:9:sta:0.96:8.64
-R	priest/shadow	25	15939	12719	oh	14.490000000000002	spi:9:spi:0.65:5.85,sta:9:sta:0.96:8.64
-R	priest/shadow	25	15939	12720	oh	11.61	int:9:int:0.64:5.76,spi:9:spi:0.65:5.85
-R	priest/shadow	25	15939	12721	oh	8.64	sta:9:sta:0.96:8.64
-R	priest/shadow	25	15939	12722	oh	8.64	sta:9:sta:0.96:8.64
-R	priest/shadow	25	15939	12723	oh	5.76	int:9:int:0.64:5.76
-R	priest/shadow	25	15939	12724	oh	5.76	int:9:int:0.64:5.76
-R	priest/shadow	25	15939	12725	oh	5.8500000000000005	spi:9:spi:0.65:5.85
-R	priest/shadow	25	15939	12726	oh	5.8500000000000005	spi:9:spi:0.65:5.85
-R	priest/shadow	25	15939	12727	oh	0.0	
-R	priest/shadow	25	15939	12728	oh	0.0	
-R	priest/shadow	25	15939	12729	oh	8.96	int:14:int:0.64:8.96
-R	priest/shadow	25	15939	12730	oh	9.1	spi:14:spi:0.65:9.1
-R	priest/shadow	25	15939	12731	oh	13.44	sta:14:sta:0.96:13.44
-R	priest/shadow	25	15939	12732	oh	0.0	
-R	priest/shadow	25	15939	12733	oh	0.0	
-R	priest/shadow	25	15939	12734	oh	19.2	sp:16:sp:1.2:19.2
-R	priest/shadow	25	15939	12735	oh	12.0	spDmg:10:sp:1.2:12
-R	priest/shadow	25	15939	12740	oh	8.64	sta:9:sta:0.96:8.64
-R	priest/shadow	25	15939	12741	oh	8.64	sta:9:sta:0.96:8.64
-R	priest/shadow	25	15939	12742	oh	8.64	sta:9:sta:0.96:8.64
-R	priest/shadow	25	15939	12743	oh	8.64	sta:9:sta:0.96:8.64
-R	priest/shadow	25	15939	12744	oh	8.64	sta:9:sta:0.96:8.64
-R	priest/shadow	25	15939	12745	oh	18.16	int:10:int:0.64:6.4,sta:6:sta:0.96:5.76,sp:5:sp:1.2:6
-R	priest/shadow	25	15939	12746	oh	16.3	int:10:int:0.64:6.4,spi:6:spi:0.65:3.9,sp:5:sp:1.2:6
-R	priest/shadow	25	15939	12747	oh	19.5	spi:6:spi:0.65:3.9,sta:10:sta:0.96:9.6,sp:5:sp:1.2:6
-R	priest/shadow	25	15939	12748	oh	17.04	int:6:int:0.64:3.84,sta:10:sta:0.96:9.6,spDmg:3:sp:1.2:3.6
-R	priest/shadow	25	15939	12749	oh	13.9	int:10:int:0.64:6.4,spi:6:spi:0.65:3.9,spDmg:3:sp:1.2:3.6
-R	priest/shadow	25	15939	12750	oh	17.1	spi:6:spi:0.65:3.9,sta:10:sta:0.96:9.6,spDmg:3:sp:1.2:3.6
-R	priest/shadow	25	15939	12756	oh	0.0	
-R	priest/shadow	25	15939	12757	oh	0.0	
-R	priest/shadow	25	15939	12758	oh	0.0	
-R	priest/shadow	25	15939	12759	oh	0.0	
-R	priest/shadow	25	15939	12760	oh	0.0	
-R	priest/shadow	25	15939	12761	oh	20.0	spShadow:20:spShadow:1:20
+R	priest/shadow	25	11807	0	gear	25.03	spi:10:spi:0.65:6.5,sta:10:sta:0.96:9.6,int:10:int:0.64:6.4,armor:46:armor:0.055:2.53
+R	priest/shadow	25	12014	0	gear	0.0	
+R	priest/shadow	25	12014	12718	gear	14.4	int:9:int:0.64:5.76,sta:9:sta:0.96:8.64
+R	priest/shadow	25	12014	12719	gear	14.490000000000002	spi:9:spi:0.65:5.85,sta:9:sta:0.96:8.64
+R	priest/shadow	25	12014	12720	gear	11.61	int:9:int:0.64:5.76,spi:9:spi:0.65:5.85
+R	priest/shadow	25	12014	12721	gear	8.64	sta:9:sta:0.96:8.64
+R	priest/shadow	25	12014	12722	gear	8.64	sta:9:sta:0.96:8.64
+R	priest/shadow	25	12014	12723	gear	5.76	int:9:int:0.64:5.76
+R	priest/shadow	25	12014	12724	gear	5.76	int:9:int:0.64:5.76
+R	priest/shadow	25	12014	12725	gear	5.8500000000000005	spi:9:spi:0.65:5.85
+R	priest/shadow	25	12014	12726	gear	5.8500000000000005	spi:9:spi:0.65:5.85
+R	priest/shadow	25	12014	12727	gear	0.0	
+R	priest/shadow	25	12014	12728	gear	0.0	
+R	priest/shadow	25	12014	12729	gear	8.32	int:13:int:0.64:8.32
+R	priest/shadow	25	12014	12730	gear	8.450000000000001	spi:13:spi:0.65:8.45
+R	priest/shadow	25	12014	12731	gear	12.48	sta:13:sta:0.96:12.48
+R	priest/shadow	25	12014	12732	gear	0.0	
+R	priest/shadow	25	12014	12733	gear	0.0	
+R	priest/shadow	25	12014	12737	gear	0.0	
+R	priest/shadow	25	12014	12738	gear	2.8499999999999996	mp5:5:mp5:0.57:2.85
+R	priest/shadow	25	12014	12739	gear	0.0	
+R	priest/shadow	25	12014	12740	gear	8.64	sta:9:sta:0.96:8.64
+R	priest/shadow	25	12014	12741	gear	8.64	sta:9:sta:0.96:8.64
+R	priest/shadow	25	12014	12742	gear	8.64	sta:9:sta:0.96:8.64
+R	priest/shadow	25	12014	12743	gear	8.64	sta:9:sta:0.96:8.64
+R	priest/shadow	25	12014	12744	gear	8.64	sta:9:sta:0.96:8.64
+R	priest/shadow	25	12014	12745	gear	16.56	int:9:int:0.64:5.76,sta:5:sta:0.96:4.8,sp:5:sp:1.2:6
+R	priest/shadow	25	12014	12746	gear	15.01	int:9:int:0.64:5.76,spi:5:spi:0.65:3.25,sp:5:sp:1.2:6
+R	priest/shadow	25	12014	12747	gear	17.89	spi:5:spi:0.65:3.25,sta:9:sta:0.96:8.64,sp:5:sp:1.2:6
+R	priest/shadow	25	12014	12748	gear	15.44	int:5:int:0.64:3.2,sta:9:sta:0.96:8.64,spDmg:3:sp:1.2:3.6
+R	priest/shadow	25	12014	12749	gear	12.61	int:9:int:0.64:5.76,spi:5:spi:0.65:3.25,spDmg:3:sp:1.2:3.6
+R	priest/shadow	25	12014	12750	gear	15.49	spi:5:spi:0.65:3.25,sta:9:sta:0.96:8.64,spDmg:3:sp:1.2:3.6
+R	priest/shadow	25	12014	12751	gear	8.64	sta:9:sta:0.96:8.64
+R	priest/shadow	25	12014	12752	gear	8.64	sta:9:sta:0.96:8.64
+R	priest/shadow	25	12014	12753	gear	8.64	sta:9:sta:0.96:8.64
+R	priest/shadow	25	12014	12754	gear	14.64	sp:5:sp:1.2:6,sta:9:sta:0.96:8.64
+R	priest/shadow	25	12014	12755	gear	15.6	sp:5:sp:1.2:6,sta:10:sta:0.96:9.6
+R	priest/shadow	25	12794	0	mh	0.0	
+R	priest/shadow	25	13353	0	oh	39.78	spi:10:spi:0.65:6.5,int:15:int:0.64:9.6,sta:8:sta:0.96:7.68,spShadow:16:spShadow:1:16
+R	priest/shadow	25	14107	0	gear	37.09	int:12:int:0.64:7.68,spShadow:26:spShadow:1:26,armor:62:armor:0.055:3.41
+R	priest/shadow	25	14212	0	gear	1.925	armor:35:armor:0.055:1.925
+R	priest/shadow	25	14212	12718	gear	13.125	int:7:int:0.64:4.48,sta:7:sta:0.96:6.72,armor:35:armor:0.055:1.925
+R	priest/shadow	25	14212	12719	gear	13.195	spi:7:spi:0.65:4.55,sta:7:sta:0.96:6.72,armor:35:armor:0.055:1.925
+R	priest/shadow	25	14212	12720	gear	10.955000000000002	int:7:int:0.64:4.48,spi:7:spi:0.65:4.55,armor:35:armor:0.055:1.925
+R	priest/shadow	25	14212	12729	gear	8.325000000000001	int:10:int:0.64:6.4,armor:35:armor:0.055:1.925
+R	priest/shadow	25	14212	12730	gear	8.425	spi:10:spi:0.65:6.5,armor:35:armor:0.055:1.925
+R	priest/shadow	25	14212	12731	gear	11.525	sta:10:sta:0.96:9.6,armor:35:armor:0.055:1.925
+R	priest/shadow	25	14212	12734	gear	16.325	sp:12:sp:1.2:14.4,armor:35:armor:0.055:1.925
+R	priest/shadow	25	14212	12735	gear	10.325000000000001	spDmg:7:sp:1.2:8.4,armor:35:armor:0.055:1.925
+R	priest/shadow	25	14212	12740	gear	8.645	sta:7:sta:0.96:6.72,armor:35:armor:0.055:1.925
+R	priest/shadow	25	14212	12741	gear	8.645	sta:7:sta:0.96:6.72,armor:35:armor:0.055:1.925
+R	priest/shadow	25	14212	12742	gear	8.645	sta:7:sta:0.96:6.72,armor:35:armor:0.055:1.925
+R	priest/shadow	25	14212	12743	gear	8.645	sta:7:sta:0.96:6.72,armor:35:armor:0.055:1.925
+R	priest/shadow	25	14212	12744	gear	8.645	sta:7:sta:0.96:6.72,armor:35:armor:0.055:1.925
+R	priest/shadow	25	14212	12745	gear	15.045000000000002	int:7:int:0.64:4.48,sta:4:sta:0.96:3.84,sp:4:sp:1.2:4.8,armor:35:armor:0.055:1.925
+R	priest/shadow	25	14212	12746	gear	13.805	int:7:int:0.64:4.48,spi:4:spi:0.65:2.6,sp:4:sp:1.2:4.8,armor:35:armor:0.055:1.925
+R	priest/shadow	25	14212	12747	gear	16.045	spi:4:spi:0.65:2.6,sta:7:sta:0.96:6.72,sp:4:sp:1.2:4.8,armor:35:armor:0.055:1.925
+R	priest/shadow	25	14212	12748	gear	13.605	int:4:int:0.64:2.56,sta:7:sta:0.96:6.72,spDmg:2:sp:1.2:2.4,armor:35:armor:0.055:1.925
+R	priest/shadow	25	14212	12749	gear	11.405000000000001	int:7:int:0.64:4.48,spi:4:spi:0.65:2.6,spDmg:2:sp:1.2:2.4,armor:35:armor:0.055:1.925
+R	priest/shadow	25	14212	12750	gear	13.645000000000001	spi:4:spi:0.65:2.6,sta:7:sta:0.96:6.72,spDmg:2:sp:1.2:2.4,armor:35:armor:0.055:1.925
+R	priest/shadow	25	14212	12756	gear	1.925	armor:35:armor:0.055:1.925
+R	priest/shadow	25	14212	12757	gear	1.925	armor:35:armor:0.055:1.925
+R	priest/shadow	25	14212	12758	gear	1.925	armor:35:armor:0.055:1.925
+R	priest/shadow	25	14212	12759	gear	1.925	armor:35:armor:0.055:1.925
+R	priest/shadow	25	14212	12761	gear	15.925	spShadow:14:spShadow:1:14,armor:35:armor:0.055:1.925
+R	priest/shadow	25	14311	0	gear	1.705	armor:31:armor:0.055:1.705
+R	priest/shadow	25	14311	12718	gear	16.105	int:9:int:0.64:5.76,sta:9:sta:0.96:8.64,armor:31:armor:0.055:1.705
+R	priest/shadow	25	14311	12719	gear	16.195	spi:9:spi:0.65:5.85,sta:9:sta:0.96:8.64,armor:31:armor:0.055:1.705
+R	priest/shadow	25	14311	12720	gear	13.315	int:9:int:0.64:5.76,spi:9:spi:0.65:5.85,armor:31:armor:0.055:1.705
+R	priest/shadow	25	14311	12729	gear	10.025	int:13:int:0.64:8.32,armor:31:armor:0.055:1.705
+R	priest/shadow	25	14311	12730	gear	10.155000000000001	spi:13:spi:0.65:8.45,armor:31:armor:0.055:1.705
+R	priest/shadow	25	14311	12731	gear	14.185	sta:13:sta:0.96:12.48,armor:31:armor:0.055:1.705
+R	priest/shadow	25	14311	12734	gear	19.705	sp:15:sp:1.2:18,armor:31:armor:0.055:1.705
+R	priest/shadow	25	14311	12735	gear	13.705	spDmg:10:sp:1.2:12,armor:31:armor:0.055:1.705
+R	priest/shadow	25	14311	12740	gear	10.345	sta:9:sta:0.96:8.64,armor:31:armor:0.055:1.705
+R	priest/shadow	25	14311	12741	gear	10.345	sta:9:sta:0.96:8.64,armor:31:armor:0.055:1.705
+R	priest/shadow	25	14311	12742	gear	10.345	sta:9:sta:0.96:8.64,armor:31:armor:0.055:1.705
+R	priest/shadow	25	14311	12743	gear	10.345	sta:9:sta:0.96:8.64,armor:31:armor:0.055:1.705
+R	priest/shadow	25	14311	12744	gear	10.345	sta:9:sta:0.96:8.64,armor:31:armor:0.055:1.705
+R	priest/shadow	25	14311	12745	gear	18.265	int:9:int:0.64:5.76,sta:5:sta:0.96:4.8,sp:5:sp:1.2:6,armor:31:armor:0.055:1.705
+R	priest/shadow	25	14311	12746	gear	16.715	int:9:int:0.64:5.76,spi:5:spi:0.65:3.25,sp:5:sp:1.2:6,armor:31:armor:0.055:1.705
+R	priest/shadow	25	14311	12747	gear	19.595	spi:5:spi:0.65:3.25,sta:9:sta:0.96:8.64,sp:5:sp:1.2:6,armor:31:armor:0.055:1.705
+R	priest/shadow	25	14311	12748	gear	17.145	int:5:int:0.64:3.2,sta:9:sta:0.96:8.64,spDmg:3:sp:1.2:3.6,armor:31:armor:0.055:1.705
+R	priest/shadow	25	14311	12749	gear	14.315	int:9:int:0.64:5.76,spi:5:spi:0.65:3.25,spDmg:3:sp:1.2:3.6,armor:31:armor:0.055:1.705
+R	priest/shadow	25	14311	12750	gear	17.195	spi:5:spi:0.65:3.25,sta:9:sta:0.96:8.64,spDmg:3:sp:1.2:3.6,armor:31:armor:0.055:1.705
+R	priest/shadow	25	14311	12756	gear	1.705	armor:31:armor:0.055:1.705
+R	priest/shadow	25	14311	12757	gear	1.705	armor:31:armor:0.055:1.705
+R	priest/shadow	25	14311	12758	gear	1.705	armor:31:armor:0.055:1.705
+R	priest/shadow	25	14311	12759	gear	1.705	armor:31:armor:0.055:1.705
+R	priest/shadow	25	14311	12761	gear	20.705	spShadow:19:spShadow:1:19,armor:31:armor:0.055:1.705
+R	priest/shadow	25	14439	0	gear	9.245	spi:8:spi:0.65:5.2,int:4:int:0.64:2.56,armor:27:armor:0.055:1.485
+R	priest/shadow	25	15283	0	ranged	414.34799999999996	rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	25	15283	12718	ranged	423.948	int:6:int:0.64:3.84,sta:6:sta:0.96:5.76,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	25	15283	12719	ranged	424.008	spi:6:spi:0.65:3.9,sta:6:sta:0.96:5.76,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	25	15283	12720	ranged	422.08799999999997	int:6:int:0.64:3.84,spi:6:spi:0.65:3.9,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	25	15283	12729	ranged	420.10799999999995	int:9:int:0.64:5.76,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	25	15283	12730	ranged	420.198	spi:9:spi:0.65:5.85,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	25	15283	12731	ranged	422.98799999999994	sta:9:sta:0.96:8.64,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	25	15283	12734	ranged	427.54799999999994	sp:11:sp:1.2:13.2,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	25	15283	12735	ranged	422.74799999999993	spDmg:7:sp:1.2:8.4,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	25	15283	12740	ranged	420.10799999999995	sta:6:sta:0.96:5.76,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	25	15283	12741	ranged	420.10799999999995	sta:6:sta:0.96:5.76,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	25	15283	12742	ranged	420.10799999999995	sta:6:sta:0.96:5.76,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	25	15283	12743	ranged	420.10799999999995	sta:6:sta:0.96:5.76,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	25	15283	12744	ranged	420.10799999999995	sta:6:sta:0.96:5.76,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	25	15283	12745	ranged	426.268	int:7:int:0.64:4.48,sta:4:sta:0.96:3.84,sp:3:sp:1.2:3.6,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	25	15283	12746	ranged	425.02799999999996	int:7:int:0.64:4.48,spi:4:spi:0.65:2.6,sp:3:sp:1.2:3.6,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	25	15283	12747	ranged	427.268	spi:4:spi:0.65:2.6,sta:7:sta:0.96:6.72,sp:3:sp:1.2:3.6,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	25	15283	12748	ranged	426.02799999999996	int:4:int:0.64:2.56,sta:7:sta:0.96:6.72,spDmg:2:sp:1.2:2.4,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	25	15283	12749	ranged	423.828	int:7:int:0.64:4.48,spi:4:spi:0.65:2.6,spDmg:2:sp:1.2:2.4,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	25	15283	12750	ranged	426.068	spi:4:spi:0.65:2.6,sta:7:sta:0.96:6.72,spDmg:2:sp:1.2:2.4,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	25	15283	12756	ranged	414.34799999999996	rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	25	15283	12757	ranged	414.34799999999996	rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	25	15283	12758	ranged	414.34799999999996	rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	25	15283	12759	ranged	414.34799999999996	rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	25	15283	12761	ranged	427.34799999999996	spShadow:13:spShadow:1:13,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	25	15938	0	oh	0.0	
+R	priest/shadow	25	15938	12718	oh	14.4	int:9:int:0.64:5.76,sta:9:sta:0.96:8.64
+R	priest/shadow	25	15938	12719	oh	14.490000000000002	spi:9:spi:0.65:5.85,sta:9:sta:0.96:8.64
+R	priest/shadow	25	15938	12720	oh	11.61	int:9:int:0.64:5.76,spi:9:spi:0.65:5.85
+R	priest/shadow	25	15938	12721	oh	8.64	sta:9:sta:0.96:8.64
+R	priest/shadow	25	15938	12722	oh	8.64	sta:9:sta:0.96:8.64
+R	priest/shadow	25	15938	12723	oh	5.76	int:9:int:0.64:5.76
+R	priest/shadow	25	15938	12724	oh	5.76	int:9:int:0.64:5.76
+R	priest/shadow	25	15938	12725	oh	5.8500000000000005	spi:9:spi:0.65:5.85
+R	priest/shadow	25	15938	12726	oh	5.8500000000000005	spi:9:spi:0.65:5.85
+R	priest/shadow	25	15938	12727	oh	0.0	
+R	priest/shadow	25	15938	12728	oh	0.0	
+R	priest/shadow	25	15938	12729	oh	8.96	int:14:int:0.64:8.96
+R	priest/shadow	25	15938	12730	oh	9.1	spi:14:spi:0.65:9.1
+R	priest/shadow	25	15938	12731	oh	13.44	sta:14:sta:0.96:13.44
+R	priest/shadow	25	15938	12732	oh	0.0	
+R	priest/shadow	25	15938	12733	oh	0.0	
+R	priest/shadow	25	15938	12734	oh	19.2	sp:16:sp:1.2:19.2
+R	priest/shadow	25	15938	12735	oh	12.0	spDmg:10:sp:1.2:12
+R	priest/shadow	25	15938	12740	oh	8.64	sta:9:sta:0.96:8.64
+R	priest/shadow	25	15938	12741	oh	8.64	sta:9:sta:0.96:8.64
+R	priest/shadow	25	15938	12742	oh	8.64	sta:9:sta:0.96:8.64
+R	priest/shadow	25	15938	12743	oh	8.64	sta:9:sta:0.96:8.64
+R	priest/shadow	25	15938	12744	oh	8.64	sta:9:sta:0.96:8.64
+R	priest/shadow	25	15938	12745	oh	18.16	int:10:int:0.64:6.4,sta:6:sta:0.96:5.76,sp:5:sp:1.2:6
+R	priest/shadow	25	15938	12746	oh	16.3	int:10:int:0.64:6.4,spi:6:spi:0.65:3.9,sp:5:sp:1.2:6
+R	priest/shadow	25	15938	12747	oh	19.5	spi:6:spi:0.65:3.9,sta:10:sta:0.96:9.6,sp:5:sp:1.2:6
+R	priest/shadow	25	15938	12748	oh	17.04	int:6:int:0.64:3.84,sta:10:sta:0.96:9.6,spDmg:3:sp:1.2:3.6
+R	priest/shadow	25	15938	12749	oh	13.9	int:10:int:0.64:6.4,spi:6:spi:0.65:3.9,spDmg:3:sp:1.2:3.6
+R	priest/shadow	25	15938	12750	oh	17.1	spi:6:spi:0.65:3.9,sta:10:sta:0.96:9.6,spDmg:3:sp:1.2:3.6
+R	priest/shadow	25	15938	12756	oh	0.0	
+R	priest/shadow	25	15938	12757	oh	0.0	
+R	priest/shadow	25	15938	12758	oh	0.0	
+R	priest/shadow	25	15938	12759	oh	0.0	
+R	priest/shadow	25	15938	12760	oh	0.0	
+R	priest/shadow	25	15938	12761	oh	20.0	spShadow:20:spShadow:1:20
 R	priest/shadow	25	15945	0	oh	3.2199999999999998	sta:2:sta:0.96:1.92,spi:2:spi:0.65:1.3
-R	priest/shadow	25	16819	0	gear	26.700000000000003	sta:8:sta:0.96:7.68,int:14:int:0.64:8.96,spi:10:spi:0.65:6.5,mp5:2:mp5:0.57:1.14,armor:44:armor:0.055:2.42
-R	priest/shadow	25	17739	0	gear	13.555	sta:12:sta:0.96:11.52,armor:37:armor:0.055:2.035
-R	priest/shadow	25	18440	0	gear	12.27	sta:9:sta:0.96:8.64,armor:66:armor:0.055:3.63
-R	priest/shadow	25	18879	0	gear	25.25	sta:20:sta:0.96:19.2,armor:110:armor:0.055:6.05
-R	priest/shadow	25	19395	0	gear	5.13	mp5:9:mp5:0.57:5.13
-R	priest/shadow	25	19893	0	gear	32.599999999999994	sta:10:sta:0.96:9.6,int:10:int:0.64:6.4,spellHit:1:spellHit:3.4:3.4,sp:11:sp:1.2:13.2
-R	priest/shadow	25	20330	0	gear	43.105000000000004	int:27:int:0.64:17.28,spi:11:spi:0.65:7.15,sta:12:sta:0.96:11.52,crit:1:spellCrit:1.6:1.6,armor:101:armor:0.055:5.555
-R	priest/shadow	25	20652	0	gear	2.915	armor:53:armor:0.055:2.915
-R	priest/shadow	25	20652	12745	gear	28.595	int:15:int:0.64:9.6,sta:8:sta:0.96:7.68,sp:7:sp:1.2:8.4,armor:53:armor:0.055:2.915
-R	priest/shadow	25	20652	12746	gear	26.115000000000002	int:15:int:0.64:9.6,spi:8:spi:0.65:5.2,sp:7:sp:1.2:8.4,armor:53:armor:0.055:2.915
-R	priest/shadow	25	20652	12747	gear	30.915	spi:8:spi:0.65:5.2,sta:15:sta:0.96:14.4,sp:7:sp:1.2:8.4,armor:53:armor:0.055:2.915
-R	priest/shadow	25	20652	12748	gear	28.435	int:8:int:0.64:5.12,sta:15:sta:0.96:14.4,spDmg:5:sp:1.2:6,armor:53:armor:0.055:2.915
-R	priest/shadow	25	20652	12749	gear	23.715	int:15:int:0.64:9.6,spi:8:spi:0.65:5.2,spDmg:5:sp:1.2:6,armor:53:armor:0.055:2.915
-R	priest/shadow	25	20652	12750	gear	28.514999999999997	spi:8:spi:0.65:5.2,sta:15:sta:0.96:14.4,spDmg:5:sp:1.2:6,armor:53:armor:0.055:2.915
-R	priest/shadow	25	21500	0	gear	28.4	sta:14:sta:0.96:13.44,int:15:int:0.64:9.6,mp5:4:mp5:0.57:2.28,armor:56:armor:0.055:3.08
-R	priest/shadow	25	22085	0	gear	56.315	int:14:int:0.64:8.96,sta:13:sta:0.96:12.48,mp5:6:mp5:0.57:3.42,sp:16:sp:1.2:19.2,spi:12:spi:0.65:7.8,armor:81:armor:0.055:4.455
-R	priest/shadow	25	22678	0	gear	0.0	
-R	priest/shadow	25	23177	0	ranged	287.984	spShadow:10:spShadow:1:10,rdps:38.08:rdps:7.3:277.984
-R	priest/shadow	25	212583	0	mh	2.88	sta:3:sta:0.96:2.88
-R	priest/shadow	25	217296	0	gear	14.64	sta:9:sta:0.96:8.64,sp:5:sp:1.2:6
-R	priest/shadow	25	220907	0	gear	43.730000000000004	sta:13:sta:0.96:12.48,int:12:int:0.64:7.68,crit:1:spellCrit:1.6:1.6,sp:14:sp:1.2:16.8,armor:94:armor:0.055:5.17
-R	priest/shadow	25	226731	0	gear	41.82	sta:7:sta:0.96:6.72,int:11:int:0.64:7.04,sp:21:sp:1.2:25.2,armor:52:armor:0.055:2.86
-R	priest/shadow	25	227967	0	gear	0.0	
-R	priest/shadow	25	228282	0	gear	64.555	sta:20:sta:0.96:19.2,sp:35:sp:1.2:42,armor:61:armor:0.055:3.355
-R	priest/shadow	25	228757	0	mh	0.0	
-R	priest/shadow	25	231168	0	gear	84.35499999999999	sta:15:sta:0.96:14.4,int:20:int:0.64:12.8,crit:1:spellCrit:1.6:1.6,spShadow:50:spShadow:1:50,armor:101:armor:0.055:5.555
-R	priest/shadow	25	233395	0	gear	98.475	sta:14:sta:0.96:13.44,int:18:int:0.64:11.52,crit:2:spellCrit:1.6:3.2,spShadow:63:spShadow:1:63,armor:133:armor:0.055:7.315
-R	priest/shadow	25	233994	0	gear	40.72	int:18:int:0.64:11.52,crit:1:spellCrit:1.6:1.6,spDmg:23:sp:1.2:27.6
-R	priest/shadow	25	234576	0	mh	88.08	sta:21:sta:0.96:20.16,int:8:int:0.64:5.12,crit:1:spellCrit:1.6:1.6,spDmg:51:sp:1.2:61.2
-R	priest/shadow	25	236277	0	gear	32.489999999999995	sta:8:sta:0.96:7.68,int:9:int:0.64:5.76,spi:9:spi:0.65:5.85,spDmg:11:sp:1.2:13.2
-R	priest/shadow	25	239565	0	gear	112.51	sta:15:sta:0.96:14.4,int:17:int:0.64:10.88,crit:2:spellCrit:1.6:3.2,spShadow:76:spShadow:1:76,armor:146:armor:0.055:8.03
-R	priest/shadow	25	247789	0	ranged	29.2	rdps:4:rdps:7.3:29.2
-R	priest/shadow	25	254029	0	gear	15.100000000000001	int:7:int:0.64:4.48,sta:9:sta:0.96:8.64,armor:36:armor:0.055:1.98
-R	priest/shadow	25	260829	0	gear	2.42	armor:44:armor:0.055:2.42
-R	priest/shadow	25	271909	0	gear	13.44	sta:14:sta:0.96:13.44
-R	priest/shadow	25	272847	0	mh	3.52	sta:2:sta:0.96:1.92,crit:1:spellCrit:1.6:1.6
-R	priest/shadow	25	275831	0	gear	3.2	int:5:int:0.64:3.2
-R	priest/shadow	25	278019	0	gear	10.559999999999999	sta:6:sta:0.96:5.76,sp:4:sp:1.2:4.8
-R	priest/shadow	25	288931	0	gear	19.2	sp:16:sp:1.2:19.2
+R	priest/shadow	25	16817	0	gear	46.394999999999996	sta:10:sta:0.96:9.6,int:22:int:0.64:14.08,spi:10:spi:0.65:6.5,mp5:4:mp5:0.57:2.28,sp:9:sp:1.2:10.8,armor:57:armor:0.055:3.135
+R	priest/shadow	25	17737	0	oh	7.84	hit:0.8:spellHit:3.4:2.72,int:8:int:0.64:5.12
+R	priest/shadow	25	18438	0	gear	0.0	
+R	priest/shadow	25	18878	0	mh	42.56	sta:8:sta:0.96:7.68,int:17:int:0.64:10.88,sp:20:sp:1.2:24
+R	priest/shadow	25	19391	0	gear	34.655	sta:13:sta:0.96:12.48,int:17:int:0.64:10.88,mp5:12:mp5:0.57:6.84,armor:81:armor:0.055:4.455
+R	priest/shadow	25	19891	0	oh	39.71999999999999	sta:8:sta:0.96:7.68,int:11:int:0.64:7.04,sp:18:sp:1.2:21.6,spellHit:1:spellHit:3.4:3.4
+R	priest/shadow	25	20333	0	gear	28.92	int:20:int:0.64:12.8,spi:8:spi:0.65:5.2,sta:9:sta:0.96:8.64,mp5:4:mp5:0.57:2.28
+R	priest/shadow	25	20672	0	ranged	466.76899999999995	int:9:int:0.64:5.76,sp:5:sp:1.2:6,rdps:62.33:rdps:7.3:455.009
+R	priest/shadow	25	21522	0	mh	13.44	sta:14:sta:0.96:13.44
+R	priest/shadow	25	22231	0	gear	33.58	int:18:int:0.64:11.52,sta:11:sta:0.96:10.56,hit:1:spellHit:3.4:3.4,sp:4:sp:1.2:4.8,armor:60:armor:0.055:3.3
+R	priest/shadow	25	22711	0	gear	39.839999999999996	sta:6:sta:0.96:5.76,int:6:int:0.64:3.84,sp:23:sp:1.2:27.6,armor:48:armor:0.055:2.64
+R	priest/shadow	25	23237	0	gear	8.0	int:10:int:0.64:6.4,crit:1:spellCrit:1.6:1.6
+R	priest/shadow	25	213088	0	gear	10.32	sta:4:sta:0.96:3.84,int:4:int:0.64:2.56,spi:4:spi:0.65:2.6,armor:24:armor:0.055:1.32
+R	priest/shadow	25	217301	0	gear	11.2	sta:7:sta:0.96:6.72,int:7:int:0.64:4.48
+R	priest/shadow	25	221025	0	gear	39.075	sta:7:sta:0.96:6.72,int:8:int:0.64:5.12,sp:21:sp:1.2:25.2,armor:37:armor:0.055:2.035
+R	priest/shadow	25	226744	0	gear	25.990000000000002	sta:11:sta:0.96:10.56,int:10:int:0.64:6.4,spi:10:spi:0.65:6.5,armor:46:armor:0.055:2.53
+R	priest/shadow	25	227980	0	gear	58.915	sta:12:sta:0.96:11.52,int:15:int:0.64:9.6,spi:10:spi:0.65:6.5,sp:22:sp:1.2:26.4,armor:89:armor:0.055:4.895
+R	priest/shadow	25	228292	0	gear	28.625	sta:23:sta:0.96:22.08,armor:119:armor:0.055:6.545
+R	priest/shadow	25	229374	0	mh	9.6	sta:10:sta:0.96:9.6
+R	priest/shadow	25	231271	0	gear	31.2	sp:26:sp:1.2:31.2
+R	priest/shadow	25	233502	0	gear	13.959999999999999	sta:11:sta:0.96:10.56,hit:1:spellHit:3.4:3.4
+R	priest/shadow	25	234020	0	gear	41.64	sta:7:sta:0.96:6.72,int:8:int:0.64:5.12,hit:1:spellHit:3.4:3.4,sp:22:sp:1.2:26.4
+R	priest/shadow	25	234614	0	gear	0.0	
+R	priest/shadow	25	236284	0	mh	179.2	sta:20:sta:0.96:19.2,int:20:int:0.64:12.8,hit:2:spellHit:3.4:6.8,crit:3:spellCrit:1.6:4.8,sp:113:sp:1.2:135.6
+R	priest/shadow	25	239581	0	gear	83.25	sta:17:sta:0.96:16.32,int:17:int:0.64:10.88,spShadow:50:spShadow:1:50,armor:110:armor:0.055:6.05
+R	priest/shadow	25	249234	0	ranged	294.341	sp:7:sp:1.2:8.4,rdps:39.17:rdps:7.3:285.941
+R	priest/shadow	25	254033	0	gear	14.599999999999998	spDmg:6:sp:1.2:7.2,spi:8:spi:0.65:5.2,armor:40:armor:0.055:2.2
+R	priest/shadow	25	260820	0	gear	0.0	
+R	priest/shadow	25	271661	0	gear	0.11	armor:2:armor:0.055:0.11
+R	priest/shadow	25	272406	0	gear	23.16	int:14:int:0.64:8.96,hit:1:spellHit:3.4:3.4,sp:9:sp:1.2:10.8
+R	priest/shadow	25	273423	0	gear	52.785	int:10:int:0.64:6.4,sta:26:sta:0.96:24.96,spDmg:9:sp:1.2:10.8,spi:10:spi:0.65:6.5,armor:75:armor:0.055:4.125
+R	priest/shadow	25	274919	0	ranged	246.075	spShadow:7:spShadow:1:7,rdps:32.75:rdps:7.3:239.075
+R	priest/shadow	25	276888	0	mh	2.58	int:2:int:0.64:1.28,spi:2:spi:0.65:1.3
+R	priest/shadow	25	279826	0	gear	40.709999999999994	sta:13:sta:0.96:12.48,spi:10:spi:0.65:6.5,int:8:int:0.64:5.12,sp:11:sp:1.2:13.2,armor:62:armor:0.055:3.41
+R	priest/shadow	25	281315	0	gear	2.91	int:3:int:0.64:1.92,armor:18:armor:0.055:0.99
+R	priest/shadow	25	284197	0	gear	9.55	sta:8:sta:0.96:7.68,armor:34:armor:0.055:1.87
+R	priest/shadow	25	286997	0	gear	25.855	spi:17:spi:0.65:11.05,sp:10:sp:1.2:12,armor:51:armor:0.055:2.805
 R	priest/shadow	34	35	0	mh	0.0	
 R	priest/shadow	34	1299	0	gear	5.45	sta:4:sta:0.74:2.96,spi:3:spi:0.55:1.65,armor:20:armor:0.042:0.84
 R	priest/shadow	34	1831	0	mh	0.0	
@@ -566,7 +610,7 @@ R	priest/shadow	34	2364	0	gear	0.756	armor:18:armor:0.042:0.756
 R	priest/shadow	34	2955	0	gear	15.446000000000002	sta:11:sta:0.74:8.14,spi:10:spi:0.55:5.5,armor:43:armor:0.042:1.806
 R	priest/shadow	34	3423	0	oh	0.0	
 R	priest/shadow	34	3947	0	gear	1.26	armor:30:armor:0.042:1.26
-R	priest/shadow	34	4454	0	mh	1.1	spi:2:spi:0.55:1.1
+R	priest/shadow	34	4454	0	mh	1.6500000000000001	spi:3:spi:0.55:1.65
 R	priest/shadow	34	4947	0	mh	0.0	
 R	priest/shadow	34	5393	0	mh	0.0	
 R	priest/shadow	34	6333	0	mh	1.48	sta:2:sta:0.74:1.48
@@ -616,8 +660,8 @@ R	priest/shadow	34	7355	12757	gear	0.798	armor:19:armor:0.042:0.798
 R	priest/shadow	34	7355	12758	gear	0.798	armor:19:armor:0.042:0.798
 R	priest/shadow	34	7355	12759	gear	0.798	armor:19:armor:0.042:0.798
 R	priest/shadow	34	7355	12761	gear	9.798	spShadow:9:spShadow:1:9,armor:19:armor:0.042:0.798
-R	priest/shadow	34	7757	0	mh	14.48	sta:7:sta:0.74:5.18,int:15:int:0.62:9.3
-R	priest/shadow	34	9491	0	gear	12.712	sta:5:sta:0.74:3.7,int:8:int:0.62:4.96,spi:5:spi:0.55:2.75,armor:31:armor:0.042:1.302
+R	priest/shadow	34	7757	0	mh	12.58	sta:17:sta:0.74:12.58
+R	priest/shadow	34	9491	0	gear	12.712	int:8:int:0.62:4.96,spi:5:spi:0.55:2.75,sta:5:sta:0.74:3.7,armor:31:armor:0.042:1.302
 R	priest/shadow	34	9875	0	gear	1.218	armor:29:armor:0.042:1.218
 R	priest/shadow	34	9875	12718	gear	12.097999999999999	int:8:int:0.62:4.96,sta:8:sta:0.74:5.92,armor:29:armor:0.042:1.218
 R	priest/shadow	34	9875	12719	gear	11.538	spi:8:spi:0.55:4.4,sta:8:sta:0.74:5.92,armor:29:armor:0.042:1.218
@@ -670,174 +714,196 @@ R	priest/shadow	34	10102	12759	gear	3.192	armor:76:armor:0.042:3.192
 R	priest/shadow	34	10102	12761	gear	40.192	spShadow:37:spShadow:1:37,armor:76:armor:0.042:3.192
 R	priest/shadow	34	10645	0	gear	0.0	
 R	priest/shadow	34	11288	0	ranged	129.95	sp:2:sp:1.1:2.2,rdps:17.5:rdps:7.3:127.75
-R	priest/shadow	34	11808	0	gear	17.908	sta:20:sta:0.74:14.8,armor:74:armor:0.042:3.108
-R	priest/shadow	34	12015	0	gear	0.0	
-R	priest/shadow	34	12015	12718	gear	12.24	int:9:int:0.62:5.58,sta:9:sta:0.74:6.66
-R	priest/shadow	34	12015	12719	gear	11.61	spi:9:spi:0.55:4.95,sta:9:sta:0.74:6.66
-R	priest/shadow	34	12015	12720	gear	10.530000000000001	int:9:int:0.62:5.58,spi:9:spi:0.55:4.95
-R	priest/shadow	34	12015	12721	gear	6.66	sta:9:sta:0.74:6.66
-R	priest/shadow	34	12015	12722	gear	6.66	sta:9:sta:0.74:6.66
-R	priest/shadow	34	12015	12723	gear	5.58	int:9:int:0.62:5.58
-R	priest/shadow	34	12015	12724	gear	5.58	int:9:int:0.62:5.58
-R	priest/shadow	34	12015	12725	gear	4.95	spi:9:spi:0.55:4.95
-R	priest/shadow	34	12015	12726	gear	4.95	spi:9:spi:0.55:4.95
-R	priest/shadow	34	12015	12727	gear	0.0	
-R	priest/shadow	34	12015	12728	gear	0.0	
-R	priest/shadow	34	12015	12729	gear	8.68	int:14:int:0.62:8.68
-R	priest/shadow	34	12015	12730	gear	7.700000000000001	spi:14:spi:0.55:7.7
-R	priest/shadow	34	12015	12731	gear	10.36	sta:14:sta:0.74:10.36
-R	priest/shadow	34	12015	12732	gear	0.0	
-R	priest/shadow	34	12015	12733	gear	0.0	
-R	priest/shadow	34	12015	12737	gear	0.0	
-R	priest/shadow	34	12015	12738	gear	9.0	mp5:6:mp5:1.5:9
-R	priest/shadow	34	12015	12739	gear	0.0	
-R	priest/shadow	34	12015	12740	gear	6.66	sta:9:sta:0.74:6.66
-R	priest/shadow	34	12015	12741	gear	6.66	sta:9:sta:0.74:6.66
-R	priest/shadow	34	12015	12742	gear	6.66	sta:9:sta:0.74:6.66
-R	priest/shadow	34	12015	12743	gear	6.66	sta:9:sta:0.74:6.66
-R	priest/shadow	34	12015	12744	gear	6.66	sta:9:sta:0.74:6.66
-R	priest/shadow	34	12015	12745	gear	16.14	int:10:int:0.62:6.2,sta:6:sta:0.74:4.44,sp:5:sp:1.1:5.5
-R	priest/shadow	34	12015	12746	gear	15.0	int:10:int:0.62:6.2,spi:6:spi:0.55:3.3,sp:5:sp:1.1:5.5
-R	priest/shadow	34	12015	12747	gear	16.200000000000003	spi:6:spi:0.55:3.3,sta:10:sta:0.74:7.4,sp:5:sp:1.1:5.5
-R	priest/shadow	34	12015	12748	gear	14.420000000000002	int:6:int:0.62:3.72,sta:10:sta:0.74:7.4,spDmg:3:sp:1.1:3.3
-R	priest/shadow	34	12015	12749	gear	12.8	int:10:int:0.62:6.2,spi:6:spi:0.55:3.3,spDmg:3:sp:1.1:3.3
-R	priest/shadow	34	12015	12750	gear	14.000000000000002	spi:6:spi:0.55:3.3,sta:10:sta:0.74:7.4,spDmg:3:sp:1.1:3.3
-R	priest/shadow	34	12015	12751	gear	7.4	sta:10:sta:0.74:7.4
-R	priest/shadow	34	12015	12752	gear	7.4	sta:10:sta:0.74:7.4
-R	priest/shadow	34	12015	12753	gear	7.4	sta:10:sta:0.74:7.4
-R	priest/shadow	34	12015	12754	gear	12.9	sp:5:sp:1.1:5.5,sta:10:sta:0.74:7.4
-R	priest/shadow	34	12015	12755	gear	12.9	sp:5:sp:1.1:5.5,sta:10:sta:0.74:7.4
-R	priest/shadow	34	12805	0	gear	0.0	
-R	priest/shadow	34	13360	0	mh	13.200000000000001	sta:5:sta:0.74:3.7,int:10:int:0.62:6.2,spi:6:spi:0.55:3.3
-R	priest/shadow	34	14108	0	gear	8.742	spi:12:spi:0.55:6.6,armor:51:armor:0.042:2.142
-R	priest/shadow	34	14213	0	gear	2.0580000000000003	armor:49:armor:0.042:2.058
-R	priest/shadow	34	14213	12718	gear	15.658000000000001	int:10:int:0.62:6.2,sta:10:sta:0.74:7.4,armor:49:armor:0.042:2.058
-R	priest/shadow	34	14213	12719	gear	14.958	spi:10:spi:0.55:5.5,sta:10:sta:0.74:7.4,armor:49:armor:0.042:2.058
-R	priest/shadow	34	14213	12720	gear	13.758	int:10:int:0.62:6.2,spi:10:spi:0.55:5.5,armor:49:armor:0.042:2.058
-R	priest/shadow	34	14213	12729	gear	11.358	int:15:int:0.62:9.3,armor:49:armor:0.042:2.058
-R	priest/shadow	34	14213	12730	gear	10.308	spi:15:spi:0.55:8.25,armor:49:armor:0.042:2.058
-R	priest/shadow	34	14213	12731	gear	13.158	sta:15:sta:0.74:11.1,armor:49:armor:0.042:2.058
-R	priest/shadow	34	14213	12734	gear	21.858	sp:18:sp:1.1:19.8,armor:49:armor:0.042:2.058
-R	priest/shadow	34	14213	12735	gear	14.158000000000001	spDmg:11:sp:1.1:12.1,armor:49:armor:0.042:2.058
-R	priest/shadow	34	14213	12740	gear	9.458	sta:10:sta:0.74:7.4,armor:49:armor:0.042:2.058
-R	priest/shadow	34	14213	12741	gear	9.458	sta:10:sta:0.74:7.4,armor:49:armor:0.042:2.058
-R	priest/shadow	34	14213	12742	gear	9.458	sta:10:sta:0.74:7.4,armor:49:armor:0.042:2.058
-R	priest/shadow	34	14213	12743	gear	9.458	sta:10:sta:0.74:7.4,armor:49:armor:0.042:2.058
-R	priest/shadow	34	14213	12744	gear	9.458	sta:10:sta:0.74:7.4,armor:49:armor:0.042:2.058
-R	priest/shadow	34	14213	12745	gear	19.918	int:11:int:0.62:6.82,sta:6:sta:0.74:4.44,sp:6:sp:1.1:6.6,armor:49:armor:0.042:2.058
-R	priest/shadow	34	14213	12746	gear	18.778000000000002	int:11:int:0.62:6.82,spi:6:spi:0.55:3.3,sp:6:sp:1.1:6.6,armor:49:armor:0.042:2.058
-R	priest/shadow	34	14213	12747	gear	20.098000000000003	spi:6:spi:0.55:3.3,sta:11:sta:0.74:8.14,sp:6:sp:1.1:6.6,armor:49:armor:0.042:2.058
-R	priest/shadow	34	14213	12748	gear	18.317999999999998	int:6:int:0.62:3.72,sta:11:sta:0.74:8.14,spDmg:4:sp:1.1:4.4,armor:49:armor:0.042:2.058
-R	priest/shadow	34	14213	12749	gear	16.578000000000003	int:11:int:0.62:6.82,spi:6:spi:0.55:3.3,spDmg:4:sp:1.1:4.4,armor:49:armor:0.042:2.058
-R	priest/shadow	34	14213	12750	gear	17.898000000000003	spi:6:spi:0.55:3.3,sta:11:sta:0.74:8.14,spDmg:4:sp:1.1:4.4,armor:49:armor:0.042:2.058
-R	priest/shadow	34	14213	12756	gear	2.0580000000000003	armor:49:armor:0.042:2.058
-R	priest/shadow	34	14213	12757	gear	2.0580000000000003	armor:49:armor:0.042:2.058
-R	priest/shadow	34	14213	12758	gear	2.0580000000000003	armor:49:armor:0.042:2.058
-R	priest/shadow	34	14213	12759	gear	2.0580000000000003	armor:49:armor:0.042:2.058
-R	priest/shadow	34	14213	12761	gear	23.058	spShadow:21:spShadow:1:21,armor:49:armor:0.042:2.058
-R	priest/shadow	34	14312	0	gear	2.688	armor:64:armor:0.042:2.688
-R	priest/shadow	34	14312	12718	gear	27.168	int:18:int:0.62:11.16,sta:18:sta:0.74:13.32,armor:64:armor:0.042:2.688
-R	priest/shadow	34	14312	12719	gear	25.907999999999998	spi:18:spi:0.55:9.9,sta:18:sta:0.74:13.32,armor:64:armor:0.042:2.688
-R	priest/shadow	34	14312	12720	gear	23.748	int:18:int:0.62:11.16,spi:18:spi:0.55:9.9,armor:64:armor:0.042:2.688
-R	priest/shadow	34	14312	12729	gear	19.427999999999997	int:27:int:0.62:16.74,armor:64:armor:0.042:2.688
-R	priest/shadow	34	14312	12730	gear	17.538	spi:27:spi:0.55:14.85,armor:64:armor:0.042:2.688
-R	priest/shadow	34	14312	12731	gear	22.668	sta:27:sta:0.74:19.98,armor:64:armor:0.042:2.688
-R	priest/shadow	34	14312	12734	gear	37.888000000000005	sp:32:sp:1.1:35.2,armor:64:armor:0.042:2.688
-R	priest/shadow	34	14312	12735	gear	24.688	spDmg:20:sp:1.1:22,armor:64:armor:0.042:2.688
-R	priest/shadow	34	14312	12740	gear	16.008	sta:18:sta:0.74:13.32,armor:64:armor:0.042:2.688
-R	priest/shadow	34	14312	12741	gear	16.008	sta:18:sta:0.74:13.32,armor:64:armor:0.042:2.688
-R	priest/shadow	34	14312	12742	gear	16.008	sta:18:sta:0.74:13.32,armor:64:armor:0.042:2.688
-R	priest/shadow	34	14312	12743	gear	16.008	sta:18:sta:0.74:13.32,armor:64:armor:0.042:2.688
-R	priest/shadow	34	14312	12744	gear	16.008	sta:18:sta:0.74:13.32,armor:64:armor:0.042:2.688
-R	priest/shadow	34	14312	12745	gear	34.228	int:20:int:0.62:12.4,sta:11:sta:0.74:8.14,sp:10:sp:1.1:11,armor:64:armor:0.042:2.688
-R	priest/shadow	34	14312	12746	gear	32.138000000000005	int:20:int:0.62:12.4,spi:11:spi:0.55:6.05,sp:10:sp:1.1:11,armor:64:armor:0.042:2.688
-R	priest/shadow	34	14312	12747	gear	34.538000000000004	spi:11:spi:0.55:6.05,sta:20:sta:0.74:14.8,sp:10:sp:1.1:11,armor:64:armor:0.042:2.688
-R	priest/shadow	34	14312	12748	gear	30.908	int:11:int:0.62:6.82,sta:20:sta:0.74:14.8,spDmg:6:sp:1.1:6.6,armor:64:armor:0.042:2.688
-R	priest/shadow	34	14312	12749	gear	27.738000000000003	int:20:int:0.62:12.4,spi:11:spi:0.55:6.05,spDmg:6:sp:1.1:6.6,armor:64:armor:0.042:2.688
-R	priest/shadow	34	14312	12750	gear	30.138	spi:11:spi:0.55:6.05,sta:20:sta:0.74:14.8,spDmg:6:sp:1.1:6.6,armor:64:armor:0.042:2.688
-R	priest/shadow	34	14312	12756	gear	2.688	armor:64:armor:0.042:2.688
-R	priest/shadow	34	14312	12757	gear	2.688	armor:64:armor:0.042:2.688
-R	priest/shadow	34	14312	12758	gear	2.688	armor:64:armor:0.042:2.688
-R	priest/shadow	34	14312	12759	gear	2.688	armor:64:armor:0.042:2.688
-R	priest/shadow	34	14312	12761	gear	41.688	spShadow:39:spShadow:1:39,armor:64:armor:0.042:2.688
-R	priest/shadow	34	14440	0	gear	9.0	sta:6:sta:0.74:4.44,spi:6:spi:0.55:3.3,armor:30:armor:0.042:1.26
-R	priest/shadow	34	15299	0	gear	0.378	armor:9:armor:0.042:0.378
-R	priest/shadow	34	15939	0	oh	0.0	
-R	priest/shadow	34	15939	12718	oh	12.24	int:9:int:0.62:5.58,sta:9:sta:0.74:6.66
-R	priest/shadow	34	15939	12719	oh	11.61	spi:9:spi:0.55:4.95,sta:9:sta:0.74:6.66
-R	priest/shadow	34	15939	12720	oh	10.530000000000001	int:9:int:0.62:5.58,spi:9:spi:0.55:4.95
-R	priest/shadow	34	15939	12721	oh	6.66	sta:9:sta:0.74:6.66
-R	priest/shadow	34	15939	12722	oh	6.66	sta:9:sta:0.74:6.66
-R	priest/shadow	34	15939	12723	oh	5.58	int:9:int:0.62:5.58
-R	priest/shadow	34	15939	12724	oh	5.58	int:9:int:0.62:5.58
-R	priest/shadow	34	15939	12725	oh	4.95	spi:9:spi:0.55:4.95
-R	priest/shadow	34	15939	12726	oh	4.95	spi:9:spi:0.55:4.95
-R	priest/shadow	34	15939	12727	oh	0.0	
-R	priest/shadow	34	15939	12728	oh	0.0	
-R	priest/shadow	34	15939	12729	oh	8.68	int:14:int:0.62:8.68
-R	priest/shadow	34	15939	12730	oh	7.700000000000001	spi:14:spi:0.55:7.7
-R	priest/shadow	34	15939	12731	oh	10.36	sta:14:sta:0.74:10.36
-R	priest/shadow	34	15939	12732	oh	0.0	
-R	priest/shadow	34	15939	12733	oh	0.0	
-R	priest/shadow	34	15939	12734	oh	17.6	sp:16:sp:1.1:17.6
-R	priest/shadow	34	15939	12735	oh	11.0	spDmg:10:sp:1.1:11
-R	priest/shadow	34	15939	12740	oh	6.66	sta:9:sta:0.74:6.66
-R	priest/shadow	34	15939	12741	oh	6.66	sta:9:sta:0.74:6.66
-R	priest/shadow	34	15939	12742	oh	6.66	sta:9:sta:0.74:6.66
-R	priest/shadow	34	15939	12743	oh	6.66	sta:9:sta:0.74:6.66
-R	priest/shadow	34	15939	12744	oh	6.66	sta:9:sta:0.74:6.66
-R	priest/shadow	34	15939	12745	oh	16.14	int:10:int:0.62:6.2,sta:6:sta:0.74:4.44,sp:5:sp:1.1:5.5
-R	priest/shadow	34	15939	12746	oh	15.0	int:10:int:0.62:6.2,spi:6:spi:0.55:3.3,sp:5:sp:1.1:5.5
-R	priest/shadow	34	15939	12747	oh	16.200000000000003	spi:6:spi:0.55:3.3,sta:10:sta:0.74:7.4,sp:5:sp:1.1:5.5
-R	priest/shadow	34	15939	12748	oh	14.420000000000002	int:6:int:0.62:3.72,sta:10:sta:0.74:7.4,spDmg:3:sp:1.1:3.3
-R	priest/shadow	34	15939	12749	oh	12.8	int:10:int:0.62:6.2,spi:6:spi:0.55:3.3,spDmg:3:sp:1.1:3.3
-R	priest/shadow	34	15939	12750	oh	14.000000000000002	spi:6:spi:0.55:3.3,sta:10:sta:0.74:7.4,spDmg:3:sp:1.1:3.3
-R	priest/shadow	34	15939	12756	oh	0.0	
-R	priest/shadow	34	15939	12757	oh	0.0	
-R	priest/shadow	34	15939	12758	oh	0.0	
-R	priest/shadow	34	15939	12759	oh	0.0	
-R	priest/shadow	34	15939	12760	oh	0.0	
-R	priest/shadow	34	15939	12761	oh	20.0	spShadow:20:spShadow:1:20
+R	priest/shadow	34	11807	0	gear	21.032	spi:10:spi:0.55:5.5,sta:10:sta:0.74:7.4,int:10:int:0.62:6.2,armor:46:armor:0.042:1.932
+R	priest/shadow	34	12014	0	gear	0.0	
+R	priest/shadow	34	12014	12718	gear	12.24	int:9:int:0.62:5.58,sta:9:sta:0.74:6.66
+R	priest/shadow	34	12014	12719	gear	11.61	spi:9:spi:0.55:4.95,sta:9:sta:0.74:6.66
+R	priest/shadow	34	12014	12720	gear	10.530000000000001	int:9:int:0.62:5.58,spi:9:spi:0.55:4.95
+R	priest/shadow	34	12014	12721	gear	6.66	sta:9:sta:0.74:6.66
+R	priest/shadow	34	12014	12722	gear	6.66	sta:9:sta:0.74:6.66
+R	priest/shadow	34	12014	12723	gear	5.58	int:9:int:0.62:5.58
+R	priest/shadow	34	12014	12724	gear	5.58	int:9:int:0.62:5.58
+R	priest/shadow	34	12014	12725	gear	4.95	spi:9:spi:0.55:4.95
+R	priest/shadow	34	12014	12726	gear	4.95	spi:9:spi:0.55:4.95
+R	priest/shadow	34	12014	12727	gear	0.0	
+R	priest/shadow	34	12014	12728	gear	0.0	
+R	priest/shadow	34	12014	12729	gear	8.06	int:13:int:0.62:8.06
+R	priest/shadow	34	12014	12730	gear	7.15	spi:13:spi:0.55:7.15
+R	priest/shadow	34	12014	12731	gear	9.62	sta:13:sta:0.74:9.62
+R	priest/shadow	34	12014	12732	gear	0.0	
+R	priest/shadow	34	12014	12733	gear	0.0	
+R	priest/shadow	34	12014	12737	gear	0.0	
+R	priest/shadow	34	12014	12738	gear	7.5	mp5:5:mp5:1.5:7.5
+R	priest/shadow	34	12014	12739	gear	0.0	
+R	priest/shadow	34	12014	12740	gear	6.66	sta:9:sta:0.74:6.66
+R	priest/shadow	34	12014	12741	gear	6.66	sta:9:sta:0.74:6.66
+R	priest/shadow	34	12014	12742	gear	6.66	sta:9:sta:0.74:6.66
+R	priest/shadow	34	12014	12743	gear	6.66	sta:9:sta:0.74:6.66
+R	priest/shadow	34	12014	12744	gear	6.66	sta:9:sta:0.74:6.66
+R	priest/shadow	34	12014	12745	gear	14.780000000000001	int:9:int:0.62:5.58,sta:5:sta:0.74:3.7,sp:5:sp:1.1:5.5
+R	priest/shadow	34	12014	12746	gear	13.83	int:9:int:0.62:5.58,spi:5:spi:0.55:2.75,sp:5:sp:1.1:5.5
+R	priest/shadow	34	12014	12747	gear	14.91	spi:5:spi:0.55:2.75,sta:9:sta:0.74:6.66,sp:5:sp:1.1:5.5
+R	priest/shadow	34	12014	12748	gear	13.06	int:5:int:0.62:3.1,sta:9:sta:0.74:6.66,spDmg:3:sp:1.1:3.3
+R	priest/shadow	34	12014	12749	gear	11.63	int:9:int:0.62:5.58,spi:5:spi:0.55:2.75,spDmg:3:sp:1.1:3.3
+R	priest/shadow	34	12014	12750	gear	12.71	spi:5:spi:0.55:2.75,sta:9:sta:0.74:6.66,spDmg:3:sp:1.1:3.3
+R	priest/shadow	34	12014	12751	gear	6.66	sta:9:sta:0.74:6.66
+R	priest/shadow	34	12014	12752	gear	6.66	sta:9:sta:0.74:6.66
+R	priest/shadow	34	12014	12753	gear	6.66	sta:9:sta:0.74:6.66
+R	priest/shadow	34	12014	12754	gear	12.16	sp:5:sp:1.1:5.5,sta:9:sta:0.74:6.66
+R	priest/shadow	34	12014	12755	gear	12.9	sp:5:sp:1.1:5.5,sta:10:sta:0.74:7.4
+R	priest/shadow	34	12794	0	mh	0.0	
+R	priest/shadow	34	13353	0	oh	36.72	spi:10:spi:0.55:5.5,int:15:int:0.62:9.3,sta:8:sta:0.74:5.92,spShadow:16:spShadow:1:16
+R	priest/shadow	34	14107	0	gear	36.044	int:12:int:0.62:7.44,spShadow:26:spShadow:1:26,armor:62:armor:0.042:2.604
+R	priest/shadow	34	14212	0	gear	1.4700000000000002	armor:35:armor:0.042:1.47
+R	priest/shadow	34	14212	12718	gear	10.99	int:7:int:0.62:4.34,sta:7:sta:0.74:5.18,armor:35:armor:0.042:1.47
+R	priest/shadow	34	14212	12719	gear	10.500000000000002	spi:7:spi:0.55:3.85,sta:7:sta:0.74:5.18,armor:35:armor:0.042:1.47
+R	priest/shadow	34	14212	12720	gear	9.660000000000002	int:7:int:0.62:4.34,spi:7:spi:0.55:3.85,armor:35:armor:0.042:1.47
+R	priest/shadow	34	14212	12729	gear	7.67	int:10:int:0.62:6.2,armor:35:armor:0.042:1.47
+R	priest/shadow	34	14212	12730	gear	6.970000000000001	spi:10:spi:0.55:5.5,armor:35:armor:0.042:1.47
+R	priest/shadow	34	14212	12731	gear	8.870000000000001	sta:10:sta:0.74:7.4,armor:35:armor:0.042:1.47
+R	priest/shadow	34	14212	12734	gear	14.670000000000002	sp:12:sp:1.1:13.2,armor:35:armor:0.042:1.47
+R	priest/shadow	34	14212	12735	gear	9.170000000000002	spDmg:7:sp:1.1:7.7,armor:35:armor:0.042:1.47
+R	priest/shadow	34	14212	12740	gear	6.65	sta:7:sta:0.74:5.18,armor:35:armor:0.042:1.47
+R	priest/shadow	34	14212	12741	gear	6.65	sta:7:sta:0.74:5.18,armor:35:armor:0.042:1.47
+R	priest/shadow	34	14212	12742	gear	6.65	sta:7:sta:0.74:5.18,armor:35:armor:0.042:1.47
+R	priest/shadow	34	14212	12743	gear	6.65	sta:7:sta:0.74:5.18,armor:35:armor:0.042:1.47
+R	priest/shadow	34	14212	12744	gear	6.65	sta:7:sta:0.74:5.18,armor:35:armor:0.042:1.47
+R	priest/shadow	34	14212	12745	gear	13.17	int:7:int:0.62:4.34,sta:4:sta:0.74:2.96,sp:4:sp:1.1:4.4,armor:35:armor:0.042:1.47
+R	priest/shadow	34	14212	12746	gear	12.410000000000002	int:7:int:0.62:4.34,spi:4:spi:0.55:2.2,sp:4:sp:1.1:4.4,armor:35:armor:0.042:1.47
+R	priest/shadow	34	14212	12747	gear	13.250000000000002	spi:4:spi:0.55:2.2,sta:7:sta:0.74:5.18,sp:4:sp:1.1:4.4,armor:35:armor:0.042:1.47
+R	priest/shadow	34	14212	12748	gear	11.33	int:4:int:0.62:2.48,sta:7:sta:0.74:5.18,spDmg:2:sp:1.1:2.2,armor:35:armor:0.042:1.47
+R	priest/shadow	34	14212	12749	gear	10.21	int:7:int:0.62:4.34,spi:4:spi:0.55:2.2,spDmg:2:sp:1.1:2.2,armor:35:armor:0.042:1.47
+R	priest/shadow	34	14212	12750	gear	11.05	spi:4:spi:0.55:2.2,sta:7:sta:0.74:5.18,spDmg:2:sp:1.1:2.2,armor:35:armor:0.042:1.47
+R	priest/shadow	34	14212	12756	gear	1.4700000000000002	armor:35:armor:0.042:1.47
+R	priest/shadow	34	14212	12757	gear	1.4700000000000002	armor:35:armor:0.042:1.47
+R	priest/shadow	34	14212	12758	gear	1.4700000000000002	armor:35:armor:0.042:1.47
+R	priest/shadow	34	14212	12759	gear	1.4700000000000002	armor:35:armor:0.042:1.47
+R	priest/shadow	34	14212	12761	gear	15.47	spShadow:14:spShadow:1:14,armor:35:armor:0.042:1.47
+R	priest/shadow	34	14311	0	gear	1.302	armor:31:armor:0.042:1.302
+R	priest/shadow	34	14311	12718	gear	13.542	int:9:int:0.62:5.58,sta:9:sta:0.74:6.66,armor:31:armor:0.042:1.302
+R	priest/shadow	34	14311	12719	gear	12.911999999999999	spi:9:spi:0.55:4.95,sta:9:sta:0.74:6.66,armor:31:armor:0.042:1.302
+R	priest/shadow	34	14311	12720	gear	11.832	int:9:int:0.62:5.58,spi:9:spi:0.55:4.95,armor:31:armor:0.042:1.302
+R	priest/shadow	34	14311	12729	gear	9.362	int:13:int:0.62:8.06,armor:31:armor:0.042:1.302
+R	priest/shadow	34	14311	12730	gear	8.452	spi:13:spi:0.55:7.15,armor:31:armor:0.042:1.302
+R	priest/shadow	34	14311	12731	gear	10.921999999999999	sta:13:sta:0.74:9.62,armor:31:armor:0.042:1.302
+R	priest/shadow	34	14311	12734	gear	17.802	sp:15:sp:1.1:16.5,armor:31:armor:0.042:1.302
+R	priest/shadow	34	14311	12735	gear	12.302	spDmg:10:sp:1.1:11,armor:31:armor:0.042:1.302
+R	priest/shadow	34	14311	12740	gear	7.962	sta:9:sta:0.74:6.66,armor:31:armor:0.042:1.302
+R	priest/shadow	34	14311	12741	gear	7.962	sta:9:sta:0.74:6.66,armor:31:armor:0.042:1.302
+R	priest/shadow	34	14311	12742	gear	7.962	sta:9:sta:0.74:6.66,armor:31:armor:0.042:1.302
+R	priest/shadow	34	14311	12743	gear	7.962	sta:9:sta:0.74:6.66,armor:31:armor:0.042:1.302
+R	priest/shadow	34	14311	12744	gear	7.962	sta:9:sta:0.74:6.66,armor:31:armor:0.042:1.302
+R	priest/shadow	34	14311	12745	gear	16.082	int:9:int:0.62:5.58,sta:5:sta:0.74:3.7,sp:5:sp:1.1:5.5,armor:31:armor:0.042:1.302
+R	priest/shadow	34	14311	12746	gear	15.132	int:9:int:0.62:5.58,spi:5:spi:0.55:2.75,sp:5:sp:1.1:5.5,armor:31:armor:0.042:1.302
+R	priest/shadow	34	14311	12747	gear	16.212	spi:5:spi:0.55:2.75,sta:9:sta:0.74:6.66,sp:5:sp:1.1:5.5,armor:31:armor:0.042:1.302
+R	priest/shadow	34	14311	12748	gear	14.362	int:5:int:0.62:3.1,sta:9:sta:0.74:6.66,spDmg:3:sp:1.1:3.3,armor:31:armor:0.042:1.302
+R	priest/shadow	34	14311	12749	gear	12.932	int:9:int:0.62:5.58,spi:5:spi:0.55:2.75,spDmg:3:sp:1.1:3.3,armor:31:armor:0.042:1.302
+R	priest/shadow	34	14311	12750	gear	14.012	spi:5:spi:0.55:2.75,sta:9:sta:0.74:6.66,spDmg:3:sp:1.1:3.3,armor:31:armor:0.042:1.302
+R	priest/shadow	34	14311	12756	gear	1.302	armor:31:armor:0.042:1.302
+R	priest/shadow	34	14311	12757	gear	1.302	armor:31:armor:0.042:1.302
+R	priest/shadow	34	14311	12758	gear	1.302	armor:31:armor:0.042:1.302
+R	priest/shadow	34	14311	12759	gear	1.302	armor:31:armor:0.042:1.302
+R	priest/shadow	34	14311	12761	gear	20.302	spShadow:19:spShadow:1:19,armor:31:armor:0.042:1.302
+R	priest/shadow	34	14439	0	gear	8.014000000000001	spi:8:spi:0.55:4.4,int:4:int:0.62:2.48,armor:27:armor:0.042:1.134
+R	priest/shadow	34	15283	0	ranged	414.34799999999996	rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	34	15283	12718	ranged	422.508	int:6:int:0.62:3.72,sta:6:sta:0.74:4.44,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	34	15283	12719	ranged	422.08799999999997	spi:6:spi:0.55:3.3,sta:6:sta:0.74:4.44,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	34	15283	12720	ranged	421.36799999999994	int:6:int:0.62:3.72,spi:6:spi:0.55:3.3,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	34	15283	12729	ranged	419.92799999999994	int:9:int:0.62:5.58,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	34	15283	12730	ranged	419.29799999999994	spi:9:spi:0.55:4.95,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	34	15283	12731	ranged	421.008	sta:9:sta:0.74:6.66,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	34	15283	12734	ranged	426.448	sp:11:sp:1.1:12.1,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	34	15283	12735	ranged	422.04799999999994	spDmg:7:sp:1.1:7.7,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	34	15283	12740	ranged	418.78799999999995	sta:6:sta:0.74:4.44,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	34	15283	12741	ranged	418.78799999999995	sta:6:sta:0.74:4.44,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	34	15283	12742	ranged	418.78799999999995	sta:6:sta:0.74:4.44,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	34	15283	12743	ranged	418.78799999999995	sta:6:sta:0.74:4.44,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	34	15283	12744	ranged	418.78799999999995	sta:6:sta:0.74:4.44,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	34	15283	12745	ranged	424.948	int:7:int:0.62:4.34,sta:4:sta:0.74:2.96,sp:3:sp:1.1:3.3,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	34	15283	12746	ranged	424.18799999999993	int:7:int:0.62:4.34,spi:4:spi:0.55:2.2,sp:3:sp:1.1:3.3,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	34	15283	12747	ranged	425.02799999999996	spi:4:spi:0.55:2.2,sta:7:sta:0.74:5.18,sp:3:sp:1.1:3.3,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	34	15283	12748	ranged	424.20799999999997	int:4:int:0.62:2.48,sta:7:sta:0.74:5.18,spDmg:2:sp:1.1:2.2,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	34	15283	12749	ranged	423.08799999999997	int:7:int:0.62:4.34,spi:4:spi:0.55:2.2,spDmg:2:sp:1.1:2.2,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	34	15283	12750	ranged	423.92799999999994	spi:4:spi:0.55:2.2,sta:7:sta:0.74:5.18,spDmg:2:sp:1.1:2.2,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	34	15283	12756	ranged	414.34799999999996	rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	34	15283	12757	ranged	414.34799999999996	rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	34	15283	12758	ranged	414.34799999999996	rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	34	15283	12759	ranged	414.34799999999996	rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	34	15283	12761	ranged	427.34799999999996	spShadow:13:spShadow:1:13,rdps:56.76:rdps:7.3:414.348
+R	priest/shadow	34	15938	0	oh	0.0	
+R	priest/shadow	34	15938	12718	oh	12.24	int:9:int:0.62:5.58,sta:9:sta:0.74:6.66
+R	priest/shadow	34	15938	12719	oh	11.61	spi:9:spi:0.55:4.95,sta:9:sta:0.74:6.66
+R	priest/shadow	34	15938	12720	oh	10.530000000000001	int:9:int:0.62:5.58,spi:9:spi:0.55:4.95
+R	priest/shadow	34	15938	12721	oh	6.66	sta:9:sta:0.74:6.66
+R	priest/shadow	34	15938	12722	oh	6.66	sta:9:sta:0.74:6.66
+R	priest/shadow	34	15938	12723	oh	5.58	int:9:int:0.62:5.58
+R	priest/shadow	34	15938	12724	oh	5.58	int:9:int:0.62:5.58
+R	priest/shadow	34	15938	12725	oh	4.95	spi:9:spi:0.55:4.95
+R	priest/shadow	34	15938	12726	oh	4.95	spi:9:spi:0.55:4.95
+R	priest/shadow	34	15938	12727	oh	0.0	
+R	priest/shadow	34	15938	12728	oh	0.0	
+R	priest/shadow	34	15938	12729	oh	8.68	int:14:int:0.62:8.68
+R	priest/shadow	34	15938	12730	oh	7.700000000000001	spi:14:spi:0.55:7.7
+R	priest/shadow	34	15938	12731	oh	10.36	sta:14:sta:0.74:10.36
+R	priest/shadow	34	15938	12732	oh	0.0	
+R	priest/shadow	34	15938	12733	oh	0.0	
+R	priest/shadow	34	15938	12734	oh	17.6	sp:16:sp:1.1:17.6
+R	priest/shadow	34	15938	12735	oh	11.0	spDmg:10:sp:1.1:11
+R	priest/shadow	34	15938	12740	oh	6.66	sta:9:sta:0.74:6.66
+R	priest/shadow	34	15938	12741	oh	6.66	sta:9:sta:0.74:6.66
+R	priest/shadow	34	15938	12742	oh	6.66	sta:9:sta:0.74:6.66
+R	priest/shadow	34	15938	12743	oh	6.66	sta:9:sta:0.74:6.66
+R	priest/shadow	34	15938	12744	oh	6.66	sta:9:sta:0.74:6.66
+R	priest/shadow	34	15938	12745	oh	16.14	int:10:int:0.62:6.2,sta:6:sta:0.74:4.44,sp:5:sp:1.1:5.5
+R	priest/shadow	34	15938	12746	oh	15.0	int:10:int:0.62:6.2,spi:6:spi:0.55:3.3,sp:5:sp:1.1:5.5
+R	priest/shadow	34	15938	12747	oh	16.200000000000003	spi:6:spi:0.55:3.3,sta:10:sta:0.74:7.4,sp:5:sp:1.1:5.5
+R	priest/shadow	34	15938	12748	oh	14.420000000000002	int:6:int:0.62:3.72,sta:10:sta:0.74:7.4,spDmg:3:sp:1.1:3.3
+R	priest/shadow	34	15938	12749	oh	12.8	int:10:int:0.62:6.2,spi:6:spi:0.55:3.3,spDmg:3:sp:1.1:3.3
+R	priest/shadow	34	15938	12750	oh	14.000000000000002	spi:6:spi:0.55:3.3,sta:10:sta:0.74:7.4,spDmg:3:sp:1.1:3.3
+R	priest/shadow	34	15938	12756	oh	0.0	
+R	priest/shadow	34	15938	12757	oh	0.0	
+R	priest/shadow	34	15938	12758	oh	0.0	
+R	priest/shadow	34	15938	12759	oh	0.0	
+R	priest/shadow	34	15938	12760	oh	0.0	
+R	priest/shadow	34	15938	12761	oh	20.0	spShadow:20:spShadow:1:20
 R	priest/shadow	34	15945	0	oh	2.58	sta:2:sta:0.74:1.48,spi:2:spi:0.55:1.1
-R	priest/shadow	34	16819	0	gear	24.948	sta:8:sta:0.74:5.92,int:14:int:0.62:8.68,spi:10:spi:0.55:5.5,mp5:2:mp5:1.5:3,armor:44:armor:0.042:1.848
-R	priest/shadow	34	17739	0	gear	10.434	sta:12:sta:0.74:8.88,armor:37:armor:0.042:1.554
-R	priest/shadow	34	18440	0	gear	9.432	sta:9:sta:0.74:6.66,armor:66:armor:0.042:2.772
-R	priest/shadow	34	18879	0	gear	19.42	sta:20:sta:0.74:14.8,armor:110:armor:0.042:4.62
-R	priest/shadow	34	19395	0	gear	13.5	mp5:9:mp5:1.5:13.5
-R	priest/shadow	34	19893	0	gear	30.900000000000002	sta:10:sta:0.74:7.4,int:10:int:0.62:6.2,spellHit:1:spellHit:5.2:5.2,sp:11:sp:1.1:12.1
-R	priest/shadow	34	20330	0	gear	38.912	int:27:int:0.62:16.74,spi:11:spi:0.55:6.05,sta:12:sta:0.74:8.88,crit:1:spellCrit:3:3,armor:101:armor:0.042:4.242
-R	priest/shadow	34	20652	0	gear	2.226	armor:53:armor:0.042:2.226
-R	priest/shadow	34	20652	12745	gear	25.146	int:15:int:0.62:9.3,sta:8:sta:0.74:5.92,sp:7:sp:1.1:7.7,armor:53:armor:0.042:2.226
-R	priest/shadow	34	20652	12746	gear	23.626	int:15:int:0.62:9.3,spi:8:spi:0.55:4.4,sp:7:sp:1.1:7.7,armor:53:armor:0.042:2.226
-R	priest/shadow	34	20652	12747	gear	25.426000000000002	spi:8:spi:0.55:4.4,sta:15:sta:0.74:11.1,sp:7:sp:1.1:7.7,armor:53:armor:0.042:2.226
-R	priest/shadow	34	20652	12748	gear	23.785999999999998	int:8:int:0.62:4.96,sta:15:sta:0.74:11.1,spDmg:5:sp:1.1:5.5,armor:53:armor:0.042:2.226
-R	priest/shadow	34	20652	12749	gear	21.426000000000002	int:15:int:0.62:9.3,spi:8:spi:0.55:4.4,spDmg:5:sp:1.1:5.5,armor:53:armor:0.042:2.226
-R	priest/shadow	34	20652	12750	gear	23.226	spi:8:spi:0.55:4.4,sta:15:sta:0.74:11.1,spDmg:5:sp:1.1:5.5,armor:53:armor:0.042:2.226
-R	priest/shadow	34	21500	0	gear	28.012	sta:14:sta:0.74:10.36,int:15:int:0.62:9.3,mp5:4:mp5:1.5:6,armor:56:armor:0.042:2.352
-R	priest/shadow	34	22085	0	gear	54.902	int:14:int:0.62:8.68,sta:13:sta:0.74:9.62,mp5:6:mp5:1.5:9,sp:16:sp:1.1:17.6,spi:12:spi:0.55:6.6,armor:81:armor:0.042:3.402
-R	priest/shadow	34	22678	0	gear	0.0	
-R	priest/shadow	34	23177	0	ranged	287.984	spShadow:10:spShadow:1:10,rdps:38.08:rdps:7.3:277.984
-R	priest/shadow	34	212583	0	mh	2.2199999999999998	sta:3:sta:0.74:2.22
-R	priest/shadow	34	217296	0	gear	12.16	sta:9:sta:0.74:6.66,sp:5:sp:1.1:5.5
-R	priest/shadow	34	220907	0	gear	39.408	sta:13:sta:0.74:9.62,int:12:int:0.62:7.44,crit:1:spellCrit:3:3,sp:14:sp:1.1:15.4,armor:94:armor:0.042:3.948
-R	priest/shadow	34	226731	0	gear	37.284	sta:7:sta:0.74:5.18,int:11:int:0.62:6.82,sp:21:sp:1.1:23.1,armor:52:armor:0.042:2.184
-R	priest/shadow	34	227967	0	gear	0.0	
-R	priest/shadow	34	228282	0	gear	55.861999999999995	sta:20:sta:0.74:14.8,sp:35:sp:1.1:38.5,armor:61:armor:0.042:2.562
-R	priest/shadow	34	228757	0	mh	0.0	
-R	priest/shadow	34	231168	0	gear	80.742	sta:15:sta:0.74:11.1,int:20:int:0.62:12.4,crit:1:spellCrit:3:3,spShadow:50:spShadow:1:50,armor:101:armor:0.042:4.242
-R	priest/shadow	34	233395	0	gear	96.106	sta:14:sta:0.74:10.36,int:18:int:0.62:11.16,crit:2:spellCrit:3:6,spShadow:63:spShadow:1:63,armor:133:armor:0.042:5.586
-R	priest/shadow	34	233994	0	gear	39.46	int:18:int:0.62:11.16,crit:1:spellCrit:3:3,spDmg:23:sp:1.1:25.3
-R	priest/shadow	34	234576	0	mh	79.6	sta:21:sta:0.74:15.54,int:8:int:0.62:4.96,crit:1:spellCrit:3:3,spDmg:51:sp:1.1:56.1
-R	priest/shadow	34	236277	0	gear	28.55	sta:8:sta:0.74:5.92,int:9:int:0.62:5.58,spi:9:spi:0.55:4.95,spDmg:11:sp:1.1:12.1
-R	priest/shadow	34	239565	0	gear	109.772	sta:15:sta:0.74:11.1,int:17:int:0.62:10.54,crit:2:spellCrit:3:6,spShadow:76:spShadow:1:76,armor:146:armor:0.042:6.132
-R	priest/shadow	34	247789	0	ranged	29.2	rdps:4:rdps:7.3:29.2
-R	priest/shadow	34	254029	0	gear	12.512	int:7:int:0.62:4.34,sta:9:sta:0.74:6.66,armor:36:armor:0.042:1.512
-R	priest/shadow	34	260829	0	gear	1.848	armor:44:armor:0.042:1.848
-R	priest/shadow	34	271909	0	gear	10.36	sta:14:sta:0.74:10.36
-R	priest/shadow	34	272847	0	mh	4.48	sta:2:sta:0.74:1.48,crit:1:spellCrit:3:3
-R	priest/shadow	34	275831	0	gear	3.1	int:5:int:0.62:3.1
-R	priest/shadow	34	278019	0	gear	8.84	sta:6:sta:0.74:4.44,sp:4:sp:1.1:4.4
-R	priest/shadow	34	288931	0	gear	17.6	sp:16:sp:1.1:17.6
+R	priest/shadow	34	16817	0	gear	44.833999999999996	sta:10:sta:0.74:7.4,int:22:int:0.62:13.64,spi:10:spi:0.55:5.5,mp5:4:mp5:1.5:6,sp:9:sp:1.1:9.9,armor:57:armor:0.042:2.394
+R	priest/shadow	34	17737	0	oh	9.120000000000001	hit:0.8:spellHit:5.2:4.16,int:8:int:0.62:4.96
+R	priest/shadow	34	18438	0	gear	0.0	
+R	priest/shadow	34	18878	0	mh	38.46	sta:8:sta:0.74:5.92,int:17:int:0.62:10.54,sp:20:sp:1.1:22
+R	priest/shadow	34	19391	0	gear	41.562	sta:13:sta:0.74:9.62,int:17:int:0.62:10.54,mp5:12:mp5:1.5:18,armor:81:armor:0.042:3.402
+R	priest/shadow	34	19891	0	oh	37.74	sta:8:sta:0.74:5.92,int:11:int:0.62:6.82,sp:18:sp:1.1:19.8,spellHit:1:spellHit:5.2:5.2
+R	priest/shadow	34	20333	0	gear	29.46	int:20:int:0.62:12.4,spi:8:spi:0.55:4.4,sta:9:sta:0.74:6.66,mp5:4:mp5:1.5:6
+R	priest/shadow	34	20672	0	ranged	466.08899999999994	int:9:int:0.62:5.58,sp:5:sp:1.1:5.5,rdps:62.33:rdps:7.3:455.009
+R	priest/shadow	34	21522	0	mh	10.36	sta:14:sta:0.74:10.36
+R	priest/shadow	34	22231	0	gear	31.419999999999998	int:18:int:0.62:11.16,sta:11:sta:0.74:8.14,hit:1:spellHit:5.2:5.2,sp:4:sp:1.1:4.4,armor:60:armor:0.042:2.52
+R	priest/shadow	34	22711	0	gear	35.476	sta:6:sta:0.74:4.44,int:6:int:0.62:3.72,sp:23:sp:1.1:25.3,armor:48:armor:0.042:2.016
+R	priest/shadow	34	23237	0	gear	9.2	int:10:int:0.62:6.2,crit:1:spellCrit:3:3
+R	priest/shadow	34	213088	0	gear	8.648	sta:4:sta:0.74:2.96,int:4:int:0.62:2.48,spi:4:spi:0.55:2.2,armor:24:armor:0.042:1.008
+R	priest/shadow	34	217301	0	gear	9.52	sta:7:sta:0.74:5.18,int:7:int:0.62:4.34
+R	priest/shadow	34	221025	0	gear	34.794000000000004	sta:7:sta:0.74:5.18,int:8:int:0.62:4.96,sp:21:sp:1.1:23.1,armor:37:armor:0.042:1.554
+R	priest/shadow	34	226744	0	gear	21.772	sta:11:sta:0.74:8.14,int:10:int:0.62:6.2,spi:10:spi:0.55:5.5,armor:46:armor:0.042:1.932
+R	priest/shadow	34	227980	0	gear	51.618	sta:12:sta:0.74:8.88,int:15:int:0.62:9.3,spi:10:spi:0.55:5.5,sp:22:sp:1.1:24.2,armor:89:armor:0.042:3.738
+R	priest/shadow	34	228292	0	gear	22.018	sta:23:sta:0.74:17.02,armor:119:armor:0.042:4.998
+R	priest/shadow	34	229374	0	mh	7.4	sta:10:sta:0.74:7.4
+R	priest/shadow	34	231271	0	gear	28.6	sp:26:sp:1.1:28.6
+R	priest/shadow	34	233502	0	gear	13.34	sta:11:sta:0.74:8.14,hit:1:spellHit:5.2:5.2
+R	priest/shadow	34	234020	0	gear	39.540000000000006	sta:7:sta:0.74:5.18,int:8:int:0.62:4.96,hit:1:spellHit:5.2:5.2,sp:22:sp:1.1:24.2
+R	priest/shadow	34	234614	0	gear	0.0	
+R	priest/shadow	34	236284	0	mh	170.9	sta:20:sta:0.74:14.8,int:20:int:0.62:12.4,hit:2:spellHit:5.2:10.4,crit:3:spellCrit:3:9,sp:113:sp:1.1:124.3
+R	priest/shadow	34	239581	0	gear	77.74000000000001	sta:17:sta:0.74:12.58,int:17:int:0.62:10.54,spShadow:50:spShadow:1:50,armor:110:armor:0.042:4.62
+R	priest/shadow	34	249234	0	ranged	293.641	sp:7:sp:1.1:7.7,rdps:39.17:rdps:7.3:285.941
+R	priest/shadow	34	254033	0	gear	12.68	spDmg:6:sp:1.1:6.6,spi:8:spi:0.55:4.4,armor:40:armor:0.042:1.68
+R	priest/shadow	34	260820	0	gear	0.0	
+R	priest/shadow	34	271661	0	gear	0.084	armor:2:armor:0.042:0.084
+R	priest/shadow	34	272406	0	gear	23.78	int:14:int:0.62:8.68,hit:1:spellHit:5.2:5.2,sp:9:sp:1.1:9.9
+R	priest/shadow	34	273423	0	gear	43.989999999999995	int:10:int:0.62:6.2,sta:26:sta:0.74:19.24,spDmg:9:sp:1.1:9.9,spi:10:spi:0.55:5.5,armor:75:armor:0.042:3.15
+R	priest/shadow	34	274919	0	ranged	246.075	spShadow:7:spShadow:1:7,rdps:32.75:rdps:7.3:239.075
+R	priest/shadow	34	276888	0	mh	2.34	int:2:int:0.62:1.24,spi:2:spi:0.55:1.1
+R	priest/shadow	34	279826	0	gear	34.784	sta:13:sta:0.74:9.62,spi:10:spi:0.55:5.5,int:8:int:0.62:4.96,sp:11:sp:1.1:12.1,armor:62:armor:0.042:2.604
+R	priest/shadow	34	281315	0	gear	2.6159999999999997	int:3:int:0.62:1.86,armor:18:armor:0.042:0.756
+R	priest/shadow	34	284197	0	gear	7.348	sta:8:sta:0.74:5.92,armor:34:armor:0.042:1.428
+R	priest/shadow	34	286997	0	gear	22.492	spi:17:spi:0.55:9.35,sp:10:sp:1.1:11,armor:51:armor:0.042:2.142
 R	priest/shadow	45	35	0	mh	0.0	
 R	priest/shadow	45	1299	0	gear	2.92	sta:4:sta:0.16:0.64,spi:3:spi:0.6:1.8,armor:20:armor:0.024:0.48
 R	priest/shadow	45	1831	0	mh	0.0	
@@ -845,7 +911,7 @@ R	priest/shadow	45	2364	0	gear	0.432	armor:18:armor:0.024:0.432
 R	priest/shadow	45	2955	0	gear	8.792	sta:11:sta:0.16:1.76,spi:10:spi:0.6:6,armor:43:armor:0.024:1.032
 R	priest/shadow	45	3423	0	oh	0.0	
 R	priest/shadow	45	3947	0	gear	0.72	armor:30:armor:0.024:0.72
-R	priest/shadow	45	4454	0	mh	1.2	spi:2:spi:0.6:1.2
+R	priest/shadow	45	4454	0	mh	1.7999999999999998	spi:3:spi:0.6:1.8
 R	priest/shadow	45	4947	0	mh	0.0	
 R	priest/shadow	45	5393	0	mh	0.0	
 R	priest/shadow	45	6333	0	mh	0.32	sta:2:sta:0.16:0.32
@@ -895,8 +961,8 @@ R	priest/shadow	45	7355	12757	gear	0.456	armor:19:armor:0.024:0.456
 R	priest/shadow	45	7355	12758	gear	0.456	armor:19:armor:0.024:0.456
 R	priest/shadow	45	7355	12759	gear	0.456	armor:19:armor:0.024:0.456
 R	priest/shadow	45	7355	12761	gear	9.456	spShadow:9:spShadow:1:9,armor:19:armor:0.024:0.456
-R	priest/shadow	45	7757	0	mh	12.82	sta:7:sta:0.16:1.12,int:15:int:0.78:11.7
-R	priest/shadow	45	9491	0	gear	10.783999999999999	sta:5:sta:0.16:0.8,int:8:int:0.78:6.24,spi:5:spi:0.6:3,armor:31:armor:0.024:0.744
+R	priest/shadow	45	7757	0	mh	2.72	sta:17:sta:0.16:2.72
+R	priest/shadow	45	9491	0	gear	10.784	int:8:int:0.78:6.24,spi:5:spi:0.6:3,sta:5:sta:0.16:0.8,armor:31:armor:0.024:0.744
 R	priest/shadow	45	9875	0	gear	0.6960000000000001	armor:29:armor:0.024:0.696
 R	priest/shadow	45	9875	12718	gear	8.216000000000001	int:8:int:0.78:6.24,sta:8:sta:0.16:1.28,armor:29:armor:0.024:0.696
 R	priest/shadow	45	9875	12719	gear	6.776	spi:8:spi:0.6:4.8,sta:8:sta:0.16:1.28,armor:29:armor:0.024:0.696
@@ -949,174 +1015,196 @@ R	priest/shadow	45	10102	12759	gear	1.824	armor:76:armor:0.024:1.824
 R	priest/shadow	45	10102	12761	gear	38.824	spShadow:37:spShadow:1:37,armor:76:armor:0.024:1.824
 R	priest/shadow	45	10645	0	gear	0.0	
 R	priest/shadow	45	11288	0	ranged	13.375	sp:2:sp:1:2,rdps:17.5:rdps:0.65:11.375
-R	priest/shadow	45	11808	0	gear	4.976	sta:20:sta:0.16:3.2,armor:74:armor:0.024:1.776
-R	priest/shadow	45	12015	0	gear	0.0	
-R	priest/shadow	45	12015	12718	gear	8.46	int:9:int:0.78:7.02,sta:9:sta:0.16:1.44
-R	priest/shadow	45	12015	12719	gear	6.84	spi:9:spi:0.6:5.4,sta:9:sta:0.16:1.44
-R	priest/shadow	45	12015	12720	gear	12.42	int:9:int:0.78:7.02,spi:9:spi:0.6:5.4
-R	priest/shadow	45	12015	12721	gear	1.44	sta:9:sta:0.16:1.44
-R	priest/shadow	45	12015	12722	gear	1.44	sta:9:sta:0.16:1.44
-R	priest/shadow	45	12015	12723	gear	7.0200000000000005	int:9:int:0.78:7.02
-R	priest/shadow	45	12015	12724	gear	7.0200000000000005	int:9:int:0.78:7.02
-R	priest/shadow	45	12015	12725	gear	5.3999999999999995	spi:9:spi:0.6:5.4
-R	priest/shadow	45	12015	12726	gear	5.3999999999999995	spi:9:spi:0.6:5.4
-R	priest/shadow	45	12015	12727	gear	0.0	
-R	priest/shadow	45	12015	12728	gear	0.0	
-R	priest/shadow	45	12015	12729	gear	10.92	int:14:int:0.78:10.92
-R	priest/shadow	45	12015	12730	gear	8.4	spi:14:spi:0.6:8.4
-R	priest/shadow	45	12015	12731	gear	2.24	sta:14:sta:0.16:2.24
-R	priest/shadow	45	12015	12732	gear	0.0	
-R	priest/shadow	45	12015	12733	gear	0.0	
-R	priest/shadow	45	12015	12737	gear	0.0	
-R	priest/shadow	45	12015	12738	gear	3.96	mp5:6:mp5:0.66:3.96
-R	priest/shadow	45	12015	12739	gear	0.0	
-R	priest/shadow	45	12015	12740	gear	1.44	sta:9:sta:0.16:1.44
-R	priest/shadow	45	12015	12741	gear	1.44	sta:9:sta:0.16:1.44
-R	priest/shadow	45	12015	12742	gear	1.44	sta:9:sta:0.16:1.44
-R	priest/shadow	45	12015	12743	gear	1.44	sta:9:sta:0.16:1.44
-R	priest/shadow	45	12015	12744	gear	1.44	sta:9:sta:0.16:1.44
-R	priest/shadow	45	12015	12745	gear	13.760000000000002	int:10:int:0.78:7.8,sta:6:sta:0.16:0.96,sp:5:sp:1:5
-R	priest/shadow	45	12015	12746	gear	16.4	int:10:int:0.78:7.8,spi:6:spi:0.6:3.6,sp:5:sp:1:5
-R	priest/shadow	45	12015	12747	gear	10.2	spi:6:spi:0.6:3.6,sta:10:sta:0.16:1.6,sp:5:sp:1:5
-R	priest/shadow	45	12015	12748	gear	9.28	int:6:int:0.78:4.68,sta:10:sta:0.16:1.6,spDmg:3:sp:1:3
-R	priest/shadow	45	12015	12749	gear	14.4	int:10:int:0.78:7.8,spi:6:spi:0.6:3.6,spDmg:3:sp:1:3
-R	priest/shadow	45	12015	12750	gear	8.2	spi:6:spi:0.6:3.6,sta:10:sta:0.16:1.6,spDmg:3:sp:1:3
-R	priest/shadow	45	12015	12751	gear	1.6	sta:10:sta:0.16:1.6
-R	priest/shadow	45	12015	12752	gear	1.6	sta:10:sta:0.16:1.6
-R	priest/shadow	45	12015	12753	gear	1.6	sta:10:sta:0.16:1.6
-R	priest/shadow	45	12015	12754	gear	6.6	sp:5:sp:1:5,sta:10:sta:0.16:1.6
-R	priest/shadow	45	12015	12755	gear	6.6	sp:5:sp:1:5,sta:10:sta:0.16:1.6
-R	priest/shadow	45	12805	0	gear	0.0	
-R	priest/shadow	45	13360	0	mh	12.200000000000001	sta:5:sta:0.16:0.8,int:10:int:0.78:7.8,spi:6:spi:0.6:3.6
-R	priest/shadow	45	14108	0	gear	8.424	spi:12:spi:0.6:7.2,armor:51:armor:0.024:1.224
-R	priest/shadow	45	14213	0	gear	1.176	armor:49:armor:0.024:1.176
-R	priest/shadow	45	14213	12718	gear	10.576	int:10:int:0.78:7.8,sta:10:sta:0.16:1.6,armor:49:armor:0.024:1.176
-R	priest/shadow	45	14213	12719	gear	8.776	spi:10:spi:0.6:6,sta:10:sta:0.16:1.6,armor:49:armor:0.024:1.176
-R	priest/shadow	45	14213	12720	gear	14.976	int:10:int:0.78:7.8,spi:10:spi:0.6:6,armor:49:armor:0.024:1.176
-R	priest/shadow	45	14213	12729	gear	12.876000000000001	int:15:int:0.78:11.7,armor:49:armor:0.024:1.176
-R	priest/shadow	45	14213	12730	gear	10.176	spi:15:spi:0.6:9,armor:49:armor:0.024:1.176
-R	priest/shadow	45	14213	12731	gear	3.5759999999999996	sta:15:sta:0.16:2.4,armor:49:armor:0.024:1.176
-R	priest/shadow	45	14213	12734	gear	19.176	sp:18:sp:1:18,armor:49:armor:0.024:1.176
-R	priest/shadow	45	14213	12735	gear	12.176	spDmg:11:sp:1:11,armor:49:armor:0.024:1.176
-R	priest/shadow	45	14213	12740	gear	2.776	sta:10:sta:0.16:1.6,armor:49:armor:0.024:1.176
-R	priest/shadow	45	14213	12741	gear	2.776	sta:10:sta:0.16:1.6,armor:49:armor:0.024:1.176
-R	priest/shadow	45	14213	12742	gear	2.776	sta:10:sta:0.16:1.6,armor:49:armor:0.024:1.176
-R	priest/shadow	45	14213	12743	gear	2.776	sta:10:sta:0.16:1.6,armor:49:armor:0.024:1.176
-R	priest/shadow	45	14213	12744	gear	2.776	sta:10:sta:0.16:1.6,armor:49:armor:0.024:1.176
-R	priest/shadow	45	14213	12745	gear	16.715999999999998	int:11:int:0.78:8.58,sta:6:sta:0.16:0.96,sp:6:sp:1:6,armor:49:armor:0.024:1.176
-R	priest/shadow	45	14213	12746	gear	19.355999999999998	int:11:int:0.78:8.58,spi:6:spi:0.6:3.6,sp:6:sp:1:6,armor:49:armor:0.024:1.176
-R	priest/shadow	45	14213	12747	gear	12.536	spi:6:spi:0.6:3.6,sta:11:sta:0.16:1.76,sp:6:sp:1:6,armor:49:armor:0.024:1.176
-R	priest/shadow	45	14213	12748	gear	11.616	int:6:int:0.78:4.68,sta:11:sta:0.16:1.76,spDmg:4:sp:1:4,armor:49:armor:0.024:1.176
-R	priest/shadow	45	14213	12749	gear	17.355999999999998	int:11:int:0.78:8.58,spi:6:spi:0.6:3.6,spDmg:4:sp:1:4,armor:49:armor:0.024:1.176
-R	priest/shadow	45	14213	12750	gear	10.536	spi:6:spi:0.6:3.6,sta:11:sta:0.16:1.76,spDmg:4:sp:1:4,armor:49:armor:0.024:1.176
-R	priest/shadow	45	14213	12756	gear	1.176	armor:49:armor:0.024:1.176
-R	priest/shadow	45	14213	12757	gear	1.176	armor:49:armor:0.024:1.176
-R	priest/shadow	45	14213	12758	gear	1.176	armor:49:armor:0.024:1.176
-R	priest/shadow	45	14213	12759	gear	1.176	armor:49:armor:0.024:1.176
-R	priest/shadow	45	14213	12761	gear	22.176	spShadow:21:spShadow:1:21,armor:49:armor:0.024:1.176
-R	priest/shadow	45	14312	0	gear	1.536	armor:64:armor:0.024:1.536
-R	priest/shadow	45	14312	12718	gear	18.456000000000003	int:18:int:0.78:14.04,sta:18:sta:0.16:2.88,armor:64:armor:0.024:1.536
-R	priest/shadow	45	14312	12719	gear	15.216	spi:18:spi:0.6:10.8,sta:18:sta:0.16:2.88,armor:64:armor:0.024:1.536
-R	priest/shadow	45	14312	12720	gear	26.376	int:18:int:0.78:14.04,spi:18:spi:0.6:10.8,armor:64:armor:0.024:1.536
-R	priest/shadow	45	14312	12729	gear	22.596000000000004	int:27:int:0.78:21.06,armor:64:armor:0.024:1.536
-R	priest/shadow	45	14312	12730	gear	17.736	spi:27:spi:0.6:16.2,armor:64:armor:0.024:1.536
-R	priest/shadow	45	14312	12731	gear	5.856	sta:27:sta:0.16:4.32,armor:64:armor:0.024:1.536
-R	priest/shadow	45	14312	12734	gear	33.536	sp:32:sp:1:32,armor:64:armor:0.024:1.536
-R	priest/shadow	45	14312	12735	gear	21.536	spDmg:20:sp:1:20,armor:64:armor:0.024:1.536
-R	priest/shadow	45	14312	12740	gear	4.416	sta:18:sta:0.16:2.88,armor:64:armor:0.024:1.536
-R	priest/shadow	45	14312	12741	gear	4.416	sta:18:sta:0.16:2.88,armor:64:armor:0.024:1.536
-R	priest/shadow	45	14312	12742	gear	4.416	sta:18:sta:0.16:2.88,armor:64:armor:0.024:1.536
-R	priest/shadow	45	14312	12743	gear	4.416	sta:18:sta:0.16:2.88,armor:64:armor:0.024:1.536
-R	priest/shadow	45	14312	12744	gear	4.416	sta:18:sta:0.16:2.88,armor:64:armor:0.024:1.536
-R	priest/shadow	45	14312	12745	gear	28.896000000000004	int:20:int:0.78:15.6,sta:11:sta:0.16:1.76,sp:10:sp:1:10,armor:64:armor:0.024:1.536
-R	priest/shadow	45	14312	12746	gear	33.736000000000004	int:20:int:0.78:15.6,spi:11:spi:0.6:6.6,sp:10:sp:1:10,armor:64:armor:0.024:1.536
-R	priest/shadow	45	14312	12747	gear	21.336000000000002	spi:11:spi:0.6:6.6,sta:20:sta:0.16:3.2,sp:10:sp:1:10,armor:64:armor:0.024:1.536
-R	priest/shadow	45	14312	12748	gear	19.316000000000003	int:11:int:0.78:8.58,sta:20:sta:0.16:3.2,spDmg:6:sp:1:6,armor:64:armor:0.024:1.536
-R	priest/shadow	45	14312	12749	gear	29.736000000000004	int:20:int:0.78:15.6,spi:11:spi:0.6:6.6,spDmg:6:sp:1:6,armor:64:armor:0.024:1.536
-R	priest/shadow	45	14312	12750	gear	17.336000000000002	spi:11:spi:0.6:6.6,sta:20:sta:0.16:3.2,spDmg:6:sp:1:6,armor:64:armor:0.024:1.536
-R	priest/shadow	45	14312	12756	gear	1.536	armor:64:armor:0.024:1.536
-R	priest/shadow	45	14312	12757	gear	1.536	armor:64:armor:0.024:1.536
-R	priest/shadow	45	14312	12758	gear	1.536	armor:64:armor:0.024:1.536
-R	priest/shadow	45	14312	12759	gear	1.536	armor:64:armor:0.024:1.536
-R	priest/shadow	45	14312	12761	gear	40.536	spShadow:39:spShadow:1:39,armor:64:armor:0.024:1.536
-R	priest/shadow	45	14440	0	gear	5.279999999999999	sta:6:sta:0.16:0.96,spi:6:spi:0.6:3.6,armor:30:armor:0.024:0.72
-R	priest/shadow	45	15299	0	gear	0.216	armor:9:armor:0.024:0.216
-R	priest/shadow	45	15939	0	oh	0.0	
-R	priest/shadow	45	15939	12718	oh	8.46	int:9:int:0.78:7.02,sta:9:sta:0.16:1.44
-R	priest/shadow	45	15939	12719	oh	6.84	spi:9:spi:0.6:5.4,sta:9:sta:0.16:1.44
-R	priest/shadow	45	15939	12720	oh	12.42	int:9:int:0.78:7.02,spi:9:spi:0.6:5.4
-R	priest/shadow	45	15939	12721	oh	1.44	sta:9:sta:0.16:1.44
-R	priest/shadow	45	15939	12722	oh	1.44	sta:9:sta:0.16:1.44
-R	priest/shadow	45	15939	12723	oh	7.0200000000000005	int:9:int:0.78:7.02
-R	priest/shadow	45	15939	12724	oh	7.0200000000000005	int:9:int:0.78:7.02
-R	priest/shadow	45	15939	12725	oh	5.3999999999999995	spi:9:spi:0.6:5.4
-R	priest/shadow	45	15939	12726	oh	5.3999999999999995	spi:9:spi:0.6:5.4
-R	priest/shadow	45	15939	12727	oh	0.0	
-R	priest/shadow	45	15939	12728	oh	0.0	
-R	priest/shadow	45	15939	12729	oh	10.92	int:14:int:0.78:10.92
-R	priest/shadow	45	15939	12730	oh	8.4	spi:14:spi:0.6:8.4
-R	priest/shadow	45	15939	12731	oh	2.24	sta:14:sta:0.16:2.24
-R	priest/shadow	45	15939	12732	oh	0.0	
-R	priest/shadow	45	15939	12733	oh	0.0	
-R	priest/shadow	45	15939	12734	oh	16.0	sp:16:sp:1:16
-R	priest/shadow	45	15939	12735	oh	10.0	spDmg:10:sp:1:10
-R	priest/shadow	45	15939	12740	oh	1.44	sta:9:sta:0.16:1.44
-R	priest/shadow	45	15939	12741	oh	1.44	sta:9:sta:0.16:1.44
-R	priest/shadow	45	15939	12742	oh	1.44	sta:9:sta:0.16:1.44
-R	priest/shadow	45	15939	12743	oh	1.44	sta:9:sta:0.16:1.44
-R	priest/shadow	45	15939	12744	oh	1.44	sta:9:sta:0.16:1.44
-R	priest/shadow	45	15939	12745	oh	13.760000000000002	int:10:int:0.78:7.8,sta:6:sta:0.16:0.96,sp:5:sp:1:5
-R	priest/shadow	45	15939	12746	oh	16.4	int:10:int:0.78:7.8,spi:6:spi:0.6:3.6,sp:5:sp:1:5
-R	priest/shadow	45	15939	12747	oh	10.2	spi:6:spi:0.6:3.6,sta:10:sta:0.16:1.6,sp:5:sp:1:5
-R	priest/shadow	45	15939	12748	oh	9.28	int:6:int:0.78:4.68,sta:10:sta:0.16:1.6,spDmg:3:sp:1:3
-R	priest/shadow	45	15939	12749	oh	14.4	int:10:int:0.78:7.8,spi:6:spi:0.6:3.6,spDmg:3:sp:1:3
-R	priest/shadow	45	15939	12750	oh	8.2	spi:6:spi:0.6:3.6,sta:10:sta:0.16:1.6,spDmg:3:sp:1:3
-R	priest/shadow	45	15939	12756	oh	0.0	
-R	priest/shadow	45	15939	12757	oh	0.0	
-R	priest/shadow	45	15939	12758	oh	0.0	
-R	priest/shadow	45	15939	12759	oh	0.0	
-R	priest/shadow	45	15939	12760	oh	0.0	
-R	priest/shadow	45	15939	12761	oh	20.0	spShadow:20:spShadow:1:20
+R	priest/shadow	45	11807	0	gear	16.504	spi:10:spi:0.6:6,sta:10:sta:0.16:1.6,int:10:int:0.78:7.8,armor:46:armor:0.024:1.104
+R	priest/shadow	45	12014	0	gear	0.0	
+R	priest/shadow	45	12014	12718	gear	8.46	int:9:int:0.78:7.02,sta:9:sta:0.16:1.44
+R	priest/shadow	45	12014	12719	gear	6.84	spi:9:spi:0.6:5.4,sta:9:sta:0.16:1.44
+R	priest/shadow	45	12014	12720	gear	12.42	int:9:int:0.78:7.02,spi:9:spi:0.6:5.4
+R	priest/shadow	45	12014	12721	gear	1.44	sta:9:sta:0.16:1.44
+R	priest/shadow	45	12014	12722	gear	1.44	sta:9:sta:0.16:1.44
+R	priest/shadow	45	12014	12723	gear	7.0200000000000005	int:9:int:0.78:7.02
+R	priest/shadow	45	12014	12724	gear	7.0200000000000005	int:9:int:0.78:7.02
+R	priest/shadow	45	12014	12725	gear	5.3999999999999995	spi:9:spi:0.6:5.4
+R	priest/shadow	45	12014	12726	gear	5.3999999999999995	spi:9:spi:0.6:5.4
+R	priest/shadow	45	12014	12727	gear	0.0	
+R	priest/shadow	45	12014	12728	gear	0.0	
+R	priest/shadow	45	12014	12729	gear	10.14	int:13:int:0.78:10.14
+R	priest/shadow	45	12014	12730	gear	7.8	spi:13:spi:0.6:7.8
+R	priest/shadow	45	12014	12731	gear	2.08	sta:13:sta:0.16:2.08
+R	priest/shadow	45	12014	12732	gear	0.0	
+R	priest/shadow	45	12014	12733	gear	0.0	
+R	priest/shadow	45	12014	12737	gear	0.0	
+R	priest/shadow	45	12014	12738	gear	3.3000000000000003	mp5:5:mp5:0.66:3.3
+R	priest/shadow	45	12014	12739	gear	0.0	
+R	priest/shadow	45	12014	12740	gear	1.44	sta:9:sta:0.16:1.44
+R	priest/shadow	45	12014	12741	gear	1.44	sta:9:sta:0.16:1.44
+R	priest/shadow	45	12014	12742	gear	1.44	sta:9:sta:0.16:1.44
+R	priest/shadow	45	12014	12743	gear	1.44	sta:9:sta:0.16:1.44
+R	priest/shadow	45	12014	12744	gear	1.44	sta:9:sta:0.16:1.44
+R	priest/shadow	45	12014	12745	gear	12.82	int:9:int:0.78:7.02,sta:5:sta:0.16:0.8,sp:5:sp:1:5
+R	priest/shadow	45	12014	12746	gear	15.02	int:9:int:0.78:7.02,spi:5:spi:0.6:3,sp:5:sp:1:5
+R	priest/shadow	45	12014	12747	gear	9.44	spi:5:spi:0.6:3,sta:9:sta:0.16:1.44,sp:5:sp:1:5
+R	priest/shadow	45	12014	12748	gear	8.34	int:5:int:0.78:3.9,sta:9:sta:0.16:1.44,spDmg:3:sp:1:3
+R	priest/shadow	45	12014	12749	gear	13.02	int:9:int:0.78:7.02,spi:5:spi:0.6:3,spDmg:3:sp:1:3
+R	priest/shadow	45	12014	12750	gear	7.4399999999999995	spi:5:spi:0.6:3,sta:9:sta:0.16:1.44,spDmg:3:sp:1:3
+R	priest/shadow	45	12014	12751	gear	1.44	sta:9:sta:0.16:1.44
+R	priest/shadow	45	12014	12752	gear	1.44	sta:9:sta:0.16:1.44
+R	priest/shadow	45	12014	12753	gear	1.44	sta:9:sta:0.16:1.44
+R	priest/shadow	45	12014	12754	gear	6.4399999999999995	sp:5:sp:1:5,sta:9:sta:0.16:1.44
+R	priest/shadow	45	12014	12755	gear	6.6	sp:5:sp:1:5,sta:10:sta:0.16:1.6
+R	priest/shadow	45	12794	0	mh	0.0	
+R	priest/shadow	45	13353	0	oh	34.980000000000004	spi:10:spi:0.6:6,int:15:int:0.78:11.7,sta:8:sta:0.16:1.28,spShadow:16:spShadow:1:16
+R	priest/shadow	45	14107	0	gear	36.848	int:12:int:0.78:9.36,spShadow:26:spShadow:1:26,armor:62:armor:0.024:1.488
+R	priest/shadow	45	14212	0	gear	0.84	armor:35:armor:0.024:0.84
+R	priest/shadow	45	14212	12718	gear	7.42	int:7:int:0.78:5.46,sta:7:sta:0.16:1.12,armor:35:armor:0.024:0.84
+R	priest/shadow	45	14212	12719	gear	6.16	spi:7:spi:0.6:4.2,sta:7:sta:0.16:1.12,armor:35:armor:0.024:0.84
+R	priest/shadow	45	14212	12720	gear	10.5	int:7:int:0.78:5.46,spi:7:spi:0.6:4.2,armor:35:armor:0.024:0.84
+R	priest/shadow	45	14212	12729	gear	8.64	int:10:int:0.78:7.8,armor:35:armor:0.024:0.84
+R	priest/shadow	45	14212	12730	gear	6.84	spi:10:spi:0.6:6,armor:35:armor:0.024:0.84
+R	priest/shadow	45	14212	12731	gear	2.44	sta:10:sta:0.16:1.6,armor:35:armor:0.024:0.84
+R	priest/shadow	45	14212	12734	gear	12.84	sp:12:sp:1:12,armor:35:armor:0.024:0.84
+R	priest/shadow	45	14212	12735	gear	7.84	spDmg:7:sp:1:7,armor:35:armor:0.024:0.84
+R	priest/shadow	45	14212	12740	gear	1.96	sta:7:sta:0.16:1.12,armor:35:armor:0.024:0.84
+R	priest/shadow	45	14212	12741	gear	1.96	sta:7:sta:0.16:1.12,armor:35:armor:0.024:0.84
+R	priest/shadow	45	14212	12742	gear	1.96	sta:7:sta:0.16:1.12,armor:35:armor:0.024:0.84
+R	priest/shadow	45	14212	12743	gear	1.96	sta:7:sta:0.16:1.12,armor:35:armor:0.024:0.84
+R	priest/shadow	45	14212	12744	gear	1.96	sta:7:sta:0.16:1.12,armor:35:armor:0.024:0.84
+R	priest/shadow	45	14212	12745	gear	10.94	int:7:int:0.78:5.46,sta:4:sta:0.16:0.64,sp:4:sp:1:4,armor:35:armor:0.024:0.84
+R	priest/shadow	45	14212	12746	gear	12.7	int:7:int:0.78:5.46,spi:4:spi:0.6:2.4,sp:4:sp:1:4,armor:35:armor:0.024:0.84
+R	priest/shadow	45	14212	12747	gear	8.36	spi:4:spi:0.6:2.4,sta:7:sta:0.16:1.12,sp:4:sp:1:4,armor:35:armor:0.024:0.84
+R	priest/shadow	45	14212	12748	gear	7.08	int:4:int:0.78:3.12,sta:7:sta:0.16:1.12,spDmg:2:sp:1:2,armor:35:armor:0.024:0.84
+R	priest/shadow	45	14212	12749	gear	10.7	int:7:int:0.78:5.46,spi:4:spi:0.6:2.4,spDmg:2:sp:1:2,armor:35:armor:0.024:0.84
+R	priest/shadow	45	14212	12750	gear	6.359999999999999	spi:4:spi:0.6:2.4,sta:7:sta:0.16:1.12,spDmg:2:sp:1:2,armor:35:armor:0.024:0.84
+R	priest/shadow	45	14212	12756	gear	0.84	armor:35:armor:0.024:0.84
+R	priest/shadow	45	14212	12757	gear	0.84	armor:35:armor:0.024:0.84
+R	priest/shadow	45	14212	12758	gear	0.84	armor:35:armor:0.024:0.84
+R	priest/shadow	45	14212	12759	gear	0.84	armor:35:armor:0.024:0.84
+R	priest/shadow	45	14212	12761	gear	14.84	spShadow:14:spShadow:1:14,armor:35:armor:0.024:0.84
+R	priest/shadow	45	14311	0	gear	0.744	armor:31:armor:0.024:0.744
+R	priest/shadow	45	14311	12718	gear	9.204	int:9:int:0.78:7.02,sta:9:sta:0.16:1.44,armor:31:armor:0.024:0.744
+R	priest/shadow	45	14311	12719	gear	7.584	spi:9:spi:0.6:5.4,sta:9:sta:0.16:1.44,armor:31:armor:0.024:0.744
+R	priest/shadow	45	14311	12720	gear	13.164	int:9:int:0.78:7.02,spi:9:spi:0.6:5.4,armor:31:armor:0.024:0.744
+R	priest/shadow	45	14311	12729	gear	10.884	int:13:int:0.78:10.14,armor:31:armor:0.024:0.744
+R	priest/shadow	45	14311	12730	gear	8.544	spi:13:spi:0.6:7.8,armor:31:armor:0.024:0.744
+R	priest/shadow	45	14311	12731	gear	2.824	sta:13:sta:0.16:2.08,armor:31:armor:0.024:0.744
+R	priest/shadow	45	14311	12734	gear	15.744	sp:15:sp:1:15,armor:31:armor:0.024:0.744
+R	priest/shadow	45	14311	12735	gear	10.744	spDmg:10:sp:1:10,armor:31:armor:0.024:0.744
+R	priest/shadow	45	14311	12740	gear	2.184	sta:9:sta:0.16:1.44,armor:31:armor:0.024:0.744
+R	priest/shadow	45	14311	12741	gear	2.184	sta:9:sta:0.16:1.44,armor:31:armor:0.024:0.744
+R	priest/shadow	45	14311	12742	gear	2.184	sta:9:sta:0.16:1.44,armor:31:armor:0.024:0.744
+R	priest/shadow	45	14311	12743	gear	2.184	sta:9:sta:0.16:1.44,armor:31:armor:0.024:0.744
+R	priest/shadow	45	14311	12744	gear	2.184	sta:9:sta:0.16:1.44,armor:31:armor:0.024:0.744
+R	priest/shadow	45	14311	12745	gear	13.564	int:9:int:0.78:7.02,sta:5:sta:0.16:0.8,sp:5:sp:1:5,armor:31:armor:0.024:0.744
+R	priest/shadow	45	14311	12746	gear	15.764	int:9:int:0.78:7.02,spi:5:spi:0.6:3,sp:5:sp:1:5,armor:31:armor:0.024:0.744
+R	priest/shadow	45	14311	12747	gear	10.184	spi:5:spi:0.6:3,sta:9:sta:0.16:1.44,sp:5:sp:1:5,armor:31:armor:0.024:0.744
+R	priest/shadow	45	14311	12748	gear	9.084	int:5:int:0.78:3.9,sta:9:sta:0.16:1.44,spDmg:3:sp:1:3,armor:31:armor:0.024:0.744
+R	priest/shadow	45	14311	12749	gear	13.764	int:9:int:0.78:7.02,spi:5:spi:0.6:3,spDmg:3:sp:1:3,armor:31:armor:0.024:0.744
+R	priest/shadow	45	14311	12750	gear	8.184	spi:5:spi:0.6:3,sta:9:sta:0.16:1.44,spDmg:3:sp:1:3,armor:31:armor:0.024:0.744
+R	priest/shadow	45	14311	12756	gear	0.744	armor:31:armor:0.024:0.744
+R	priest/shadow	45	14311	12757	gear	0.744	armor:31:armor:0.024:0.744
+R	priest/shadow	45	14311	12758	gear	0.744	armor:31:armor:0.024:0.744
+R	priest/shadow	45	14311	12759	gear	0.744	armor:31:armor:0.024:0.744
+R	priest/shadow	45	14311	12761	gear	19.744	spShadow:19:spShadow:1:19,armor:31:armor:0.024:0.744
+R	priest/shadow	45	14439	0	gear	8.568	spi:8:spi:0.6:4.8,int:4:int:0.78:3.12,armor:27:armor:0.024:0.648
+R	priest/shadow	45	15283	0	ranged	36.894	rdps:56.76:rdps:0.65:36.894
+R	priest/shadow	45	15283	12718	ranged	42.534	int:6:int:0.78:4.68,sta:6:sta:0.16:0.96,rdps:56.76:rdps:0.65:36.894
+R	priest/shadow	45	15283	12719	ranged	41.454	spi:6:spi:0.6:3.6,sta:6:sta:0.16:0.96,rdps:56.76:rdps:0.65:36.894
+R	priest/shadow	45	15283	12720	ranged	45.174	int:6:int:0.78:4.68,spi:6:spi:0.6:3.6,rdps:56.76:rdps:0.65:36.894
+R	priest/shadow	45	15283	12729	ranged	43.914	int:9:int:0.78:7.02,rdps:56.76:rdps:0.65:36.894
+R	priest/shadow	45	15283	12730	ranged	42.294	spi:9:spi:0.6:5.4,rdps:56.76:rdps:0.65:36.894
+R	priest/shadow	45	15283	12731	ranged	38.333999999999996	sta:9:sta:0.16:1.44,rdps:56.76:rdps:0.65:36.894
+R	priest/shadow	45	15283	12734	ranged	47.894	sp:11:sp:1:11,rdps:56.76:rdps:0.65:36.894
+R	priest/shadow	45	15283	12735	ranged	43.894	spDmg:7:sp:1:7,rdps:56.76:rdps:0.65:36.894
+R	priest/shadow	45	15283	12740	ranged	37.854	sta:6:sta:0.16:0.96,rdps:56.76:rdps:0.65:36.894
+R	priest/shadow	45	15283	12741	ranged	37.854	sta:6:sta:0.16:0.96,rdps:56.76:rdps:0.65:36.894
+R	priest/shadow	45	15283	12742	ranged	37.854	sta:6:sta:0.16:0.96,rdps:56.76:rdps:0.65:36.894
+R	priest/shadow	45	15283	12743	ranged	37.854	sta:6:sta:0.16:0.96,rdps:56.76:rdps:0.65:36.894
+R	priest/shadow	45	15283	12744	ranged	37.854	sta:6:sta:0.16:0.96,rdps:56.76:rdps:0.65:36.894
+R	priest/shadow	45	15283	12745	ranged	45.994	int:7:int:0.78:5.46,sta:4:sta:0.16:0.64,sp:3:sp:1:3,rdps:56.76:rdps:0.65:36.894
+R	priest/shadow	45	15283	12746	ranged	47.754	int:7:int:0.78:5.46,spi:4:spi:0.6:2.4,sp:3:sp:1:3,rdps:56.76:rdps:0.65:36.894
+R	priest/shadow	45	15283	12747	ranged	43.414	spi:4:spi:0.6:2.4,sta:7:sta:0.16:1.12,sp:3:sp:1:3,rdps:56.76:rdps:0.65:36.894
+R	priest/shadow	45	15283	12748	ranged	43.134	int:4:int:0.78:3.12,sta:7:sta:0.16:1.12,spDmg:2:sp:1:2,rdps:56.76:rdps:0.65:36.894
+R	priest/shadow	45	15283	12749	ranged	46.754	int:7:int:0.78:5.46,spi:4:spi:0.6:2.4,spDmg:2:sp:1:2,rdps:56.76:rdps:0.65:36.894
+R	priest/shadow	45	15283	12750	ranged	42.414	spi:4:spi:0.6:2.4,sta:7:sta:0.16:1.12,spDmg:2:sp:1:2,rdps:56.76:rdps:0.65:36.894
+R	priest/shadow	45	15283	12756	ranged	36.894	rdps:56.76:rdps:0.65:36.894
+R	priest/shadow	45	15283	12757	ranged	36.894	rdps:56.76:rdps:0.65:36.894
+R	priest/shadow	45	15283	12758	ranged	36.894	rdps:56.76:rdps:0.65:36.894
+R	priest/shadow	45	15283	12759	ranged	36.894	rdps:56.76:rdps:0.65:36.894
+R	priest/shadow	45	15283	12761	ranged	49.894	spShadow:13:spShadow:1:13,rdps:56.76:rdps:0.65:36.894
+R	priest/shadow	45	15938	0	oh	0.0	
+R	priest/shadow	45	15938	12718	oh	8.46	int:9:int:0.78:7.02,sta:9:sta:0.16:1.44
+R	priest/shadow	45	15938	12719	oh	6.84	spi:9:spi:0.6:5.4,sta:9:sta:0.16:1.44
+R	priest/shadow	45	15938	12720	oh	12.42	int:9:int:0.78:7.02,spi:9:spi:0.6:5.4
+R	priest/shadow	45	15938	12721	oh	1.44	sta:9:sta:0.16:1.44
+R	priest/shadow	45	15938	12722	oh	1.44	sta:9:sta:0.16:1.44
+R	priest/shadow	45	15938	12723	oh	7.0200000000000005	int:9:int:0.78:7.02
+R	priest/shadow	45	15938	12724	oh	7.0200000000000005	int:9:int:0.78:7.02
+R	priest/shadow	45	15938	12725	oh	5.3999999999999995	spi:9:spi:0.6:5.4
+R	priest/shadow	45	15938	12726	oh	5.3999999999999995	spi:9:spi:0.6:5.4
+R	priest/shadow	45	15938	12727	oh	0.0	
+R	priest/shadow	45	15938	12728	oh	0.0	
+R	priest/shadow	45	15938	12729	oh	10.92	int:14:int:0.78:10.92
+R	priest/shadow	45	15938	12730	oh	8.4	spi:14:spi:0.6:8.4
+R	priest/shadow	45	15938	12731	oh	2.24	sta:14:sta:0.16:2.24
+R	priest/shadow	45	15938	12732	oh	0.0	
+R	priest/shadow	45	15938	12733	oh	0.0	
+R	priest/shadow	45	15938	12734	oh	16.0	sp:16:sp:1:16
+R	priest/shadow	45	15938	12735	oh	10.0	spDmg:10:sp:1:10
+R	priest/shadow	45	15938	12740	oh	1.44	sta:9:sta:0.16:1.44
+R	priest/shadow	45	15938	12741	oh	1.44	sta:9:sta:0.16:1.44
+R	priest/shadow	45	15938	12742	oh	1.44	sta:9:sta:0.16:1.44
+R	priest/shadow	45	15938	12743	oh	1.44	sta:9:sta:0.16:1.44
+R	priest/shadow	45	15938	12744	oh	1.44	sta:9:sta:0.16:1.44
+R	priest/shadow	45	15938	12745	oh	13.760000000000002	int:10:int:0.78:7.8,sta:6:sta:0.16:0.96,sp:5:sp:1:5
+R	priest/shadow	45	15938	12746	oh	16.4	int:10:int:0.78:7.8,spi:6:spi:0.6:3.6,sp:5:sp:1:5
+R	priest/shadow	45	15938	12747	oh	10.2	spi:6:spi:0.6:3.6,sta:10:sta:0.16:1.6,sp:5:sp:1:5
+R	priest/shadow	45	15938	12748	oh	9.28	int:6:int:0.78:4.68,sta:10:sta:0.16:1.6,spDmg:3:sp:1:3
+R	priest/shadow	45	15938	12749	oh	14.4	int:10:int:0.78:7.8,spi:6:spi:0.6:3.6,spDmg:3:sp:1:3
+R	priest/shadow	45	15938	12750	oh	8.2	spi:6:spi:0.6:3.6,sta:10:sta:0.16:1.6,spDmg:3:sp:1:3
+R	priest/shadow	45	15938	12756	oh	0.0	
+R	priest/shadow	45	15938	12757	oh	0.0	
+R	priest/shadow	45	15938	12758	oh	0.0	
+R	priest/shadow	45	15938	12759	oh	0.0	
+R	priest/shadow	45	15938	12760	oh	0.0	
+R	priest/shadow	45	15938	12761	oh	20.0	spShadow:20:spShadow:1:20
 R	priest/shadow	45	15945	0	oh	1.52	sta:2:sta:0.16:0.32,spi:2:spi:0.6:1.2
-R	priest/shadow	45	16819	0	gear	20.576	sta:8:sta:0.16:1.28,int:14:int:0.78:10.92,spi:10:spi:0.6:6,mp5:2:mp5:0.66:1.32,armor:44:armor:0.024:1.056
-R	priest/shadow	45	17739	0	gear	2.808	sta:12:sta:0.16:1.92,armor:37:armor:0.024:0.888
-R	priest/shadow	45	18440	0	gear	3.024	sta:9:sta:0.16:1.44,armor:66:armor:0.024:1.584
-R	priest/shadow	45	18879	0	gear	5.84	sta:20:sta:0.16:3.2,armor:110:armor:0.024:2.64
-R	priest/shadow	45	19395	0	gear	5.94	mp5:9:mp5:0.66:5.94
-R	priest/shadow	45	19893	0	gear	22.9	sta:10:sta:0.16:1.6,int:10:int:0.78:7.8,spellHit:1:spellHit:2.5:2.5,sp:11:sp:1:11
-R	priest/shadow	45	20330	0	gear	36.104000000000006	int:27:int:0.78:21.06,spi:11:spi:0.6:6.6,sta:12:sta:0.16:1.92,crit:1:spellCrit:4.1:4.1,armor:101:armor:0.024:2.424
-R	priest/shadow	45	20652	0	gear	1.272	armor:53:armor:0.024:1.272
-R	priest/shadow	45	20652	12745	gear	21.252	int:15:int:0.78:11.7,sta:8:sta:0.16:1.28,sp:7:sp:1:7,armor:53:armor:0.024:1.272
-R	priest/shadow	45	20652	12746	gear	24.772	int:15:int:0.78:11.7,spi:8:spi:0.6:4.8,sp:7:sp:1:7,armor:53:armor:0.024:1.272
-R	priest/shadow	45	20652	12747	gear	15.472	spi:8:spi:0.6:4.8,sta:15:sta:0.16:2.4,sp:7:sp:1:7,armor:53:armor:0.024:1.272
-R	priest/shadow	45	20652	12748	gear	14.912	int:8:int:0.78:6.24,sta:15:sta:0.16:2.4,spDmg:5:sp:1:5,armor:53:armor:0.024:1.272
-R	priest/shadow	45	20652	12749	gear	22.772	int:15:int:0.78:11.7,spi:8:spi:0.6:4.8,spDmg:5:sp:1:5,armor:53:armor:0.024:1.272
-R	priest/shadow	45	20652	12750	gear	13.472	spi:8:spi:0.6:4.8,sta:15:sta:0.16:2.4,spDmg:5:sp:1:5,armor:53:armor:0.024:1.272
-R	priest/shadow	45	21500	0	gear	17.924000000000003	sta:14:sta:0.16:2.24,int:15:int:0.78:11.7,mp5:4:mp5:0.66:2.64,armor:56:armor:0.024:1.344
-R	priest/shadow	45	22085	0	gear	42.104	int:14:int:0.78:10.92,sta:13:sta:0.16:2.08,mp5:6:mp5:0.66:3.96,sp:16:sp:1:16,spi:12:spi:0.6:7.2,armor:81:armor:0.024:1.944
-R	priest/shadow	45	22678	0	gear	0.0	
-R	priest/shadow	45	23177	0	ranged	34.751999999999995	spShadow:10:spShadow:1:10,rdps:38.08:rdps:0.65:24.752
-R	priest/shadow	45	212583	0	mh	0.48	sta:3:sta:0.16:0.48
-R	priest/shadow	45	217296	0	gear	6.4399999999999995	sta:9:sta:0.16:1.44,sp:5:sp:1:5
-R	priest/shadow	45	220907	0	gear	31.796	sta:13:sta:0.16:2.08,int:12:int:0.78:9.36,crit:1:spellCrit:4.1:4.1,sp:14:sp:1:14,armor:94:armor:0.024:2.256
-R	priest/shadow	45	226731	0	gear	31.948	sta:7:sta:0.16:1.12,int:11:int:0.78:8.58,sp:21:sp:1:21,armor:52:armor:0.024:1.248
-R	priest/shadow	45	227967	0	gear	0.0	
-R	priest/shadow	45	228282	0	gear	39.664	sta:20:sta:0.16:3.2,sp:35:sp:1:35,armor:61:armor:0.024:1.464
-R	priest/shadow	45	228757	0	mh	0.0	
-R	priest/shadow	45	231168	0	gear	74.524	sta:15:sta:0.16:2.4,int:20:int:0.78:15.6,crit:1:spellCrit:4.1:4.1,spShadow:50:spShadow:1:50,armor:101:armor:0.024:2.424
-R	priest/shadow	45	233395	0	gear	90.672	sta:14:sta:0.16:2.24,int:18:int:0.78:14.04,crit:2:spellCrit:4.1:8.2,spShadow:63:spShadow:1:63,armor:133:armor:0.024:3.192
-R	priest/shadow	45	233994	0	gear	41.14	int:18:int:0.78:14.04,crit:1:spellCrit:4.1:4.1,spDmg:23:sp:1:23
-R	priest/shadow	45	234576	0	mh	64.7	sta:21:sta:0.16:3.36,int:8:int:0.78:6.24,crit:1:spellCrit:4.1:4.1,spDmg:51:sp:1:51
-R	priest/shadow	45	236277	0	gear	24.7	sta:8:sta:0.16:1.28,int:9:int:0.78:7.02,spi:9:spi:0.6:5.4,spDmg:11:sp:1:11
-R	priest/shadow	45	239565	0	gear	103.364	sta:15:sta:0.16:2.4,int:17:int:0.78:13.26,crit:2:spellCrit:4.1:8.2,spShadow:76:spShadow:1:76,armor:146:armor:0.024:3.504
-R	priest/shadow	45	247789	0	ranged	2.6	rdps:4:rdps:0.65:2.6
-R	priest/shadow	45	254029	0	gear	7.764	int:7:int:0.78:5.46,sta:9:sta:0.16:1.44,armor:36:armor:0.024:0.864
-R	priest/shadow	45	260829	0	gear	1.056	armor:44:armor:0.024:1.056
-R	priest/shadow	45	271909	0	gear	2.24	sta:14:sta:0.16:2.24
-R	priest/shadow	45	272847	0	mh	4.42	sta:2:sta:0.16:0.32,crit:1:spellCrit:4.1:4.1
-R	priest/shadow	45	275831	0	gear	3.9000000000000004	int:5:int:0.78:3.9
-R	priest/shadow	45	278019	0	gear	4.96	sta:6:sta:0.16:0.96,sp:4:sp:1:4
-R	priest/shadow	45	288931	0	gear	16.0	sp:16:sp:1:16
+R	priest/shadow	45	16817	0	gear	37.76800000000001	sta:10:sta:0.16:1.6,int:22:int:0.78:17.16,spi:10:spi:0.6:6,mp5:4:mp5:0.66:2.64,sp:9:sp:1:9,armor:57:armor:0.024:1.368
+R	priest/shadow	45	17737	0	oh	8.24	hit:0.8:spellHit:2.5:2,int:8:int:0.78:6.24
+R	priest/shadow	45	18438	0	gear	0.0	
+R	priest/shadow	45	18878	0	mh	34.54	sta:8:sta:0.16:1.28,int:17:int:0.78:13.26,sp:20:sp:1:20
+R	priest/shadow	45	19391	0	gear	25.203999999999997	sta:13:sta:0.16:2.08,int:17:int:0.78:13.26,mp5:12:mp5:0.66:7.92,armor:81:armor:0.024:1.944
+R	priest/shadow	45	19891	0	oh	30.36	sta:8:sta:0.16:1.28,int:11:int:0.78:8.58,sp:18:sp:1:18,spellHit:1:spellHit:2.5:2.5
+R	priest/shadow	45	20333	0	gear	24.480000000000004	int:20:int:0.78:15.6,spi:8:spi:0.6:4.8,sta:9:sta:0.16:1.44,mp5:4:mp5:0.66:2.64
+R	priest/shadow	45	20672	0	ranged	52.534499999999994	int:9:int:0.78:7.02,sp:5:sp:1:5,rdps:62.33:rdps:0.65:40.514
+R	priest/shadow	45	21522	0	mh	2.24	sta:14:sta:0.16:2.24
+R	priest/shadow	45	22231	0	gear	23.740000000000002	int:18:int:0.78:14.04,sta:11:sta:0.16:1.76,hit:1:spellHit:2.5:2.5,sp:4:sp:1:4,armor:60:armor:0.024:1.44
+R	priest/shadow	45	22711	0	gear	29.792	sta:6:sta:0.16:0.96,int:6:int:0.78:4.68,sp:23:sp:1:23,armor:48:armor:0.024:1.152
+R	priest/shadow	45	23237	0	gear	11.9	int:10:int:0.78:7.8,crit:1:spellCrit:4.1:4.1
+R	priest/shadow	45	213088	0	gear	6.736000000000001	sta:4:sta:0.16:0.64,int:4:int:0.78:3.12,spi:4:spi:0.6:2.4,armor:24:armor:0.024:0.576
+R	priest/shadow	45	217301	0	gear	6.58	sta:7:sta:0.16:1.12,int:7:int:0.78:5.46
+R	priest/shadow	45	221025	0	gear	29.248	sta:7:sta:0.16:1.12,int:8:int:0.78:6.24,sp:21:sp:1:21,armor:37:armor:0.024:0.888
+R	priest/shadow	45	226744	0	gear	16.664	sta:11:sta:0.16:1.76,int:10:int:0.78:7.8,spi:10:spi:0.6:6,armor:46:armor:0.024:1.104
+R	priest/shadow	45	227980	0	gear	43.75600000000001	sta:12:sta:0.16:1.92,int:15:int:0.78:11.7,spi:10:spi:0.6:6,sp:22:sp:1:22,armor:89:armor:0.024:2.136
+R	priest/shadow	45	228292	0	gear	6.536	sta:23:sta:0.16:3.68,armor:119:armor:0.024:2.856
+R	priest/shadow	45	229374	0	mh	1.6	sta:10:sta:0.16:1.6
+R	priest/shadow	45	231271	0	gear	26.0	sp:26:sp:1:26
+R	priest/shadow	45	233502	0	gear	4.26	sta:11:sta:0.16:1.76,hit:1:spellHit:2.5:2.5
+R	priest/shadow	45	234020	0	gear	31.86	sta:7:sta:0.16:1.12,int:8:int:0.78:6.24,hit:1:spellHit:2.5:2.5,sp:22:sp:1:22
+R	priest/shadow	45	234614	0	gear	0.0	
+R	priest/shadow	45	236284	0	mh	149.1	sta:20:sta:0.16:3.2,int:20:int:0.78:15.6,hit:2:spellHit:2.5:5,crit:3:spellCrit:4.1:12.3,sp:113:sp:1:113
+R	priest/shadow	45	239581	0	gear	68.62	sta:17:sta:0.16:2.72,int:17:int:0.78:13.26,spShadow:50:spShadow:1:50,armor:110:armor:0.024:2.64
+R	priest/shadow	45	249234	0	ranged	32.4605	sp:7:sp:1:7,rdps:39.17:rdps:0.65:25.461
+R	priest/shadow	45	254033	0	gear	11.760000000000002	spDmg:6:sp:1:6,spi:8:spi:0.6:4.8,armor:40:armor:0.024:0.96
+R	priest/shadow	45	260820	0	gear	0.0	
+R	priest/shadow	45	271661	0	gear	0.048	armor:2:armor:0.024:0.048
+R	priest/shadow	45	272406	0	gear	22.42	int:14:int:0.78:10.92,hit:1:spellHit:2.5:2.5,sp:9:sp:1:9
+R	priest/shadow	45	273423	0	gear	28.76	int:10:int:0.78:7.8,sta:26:sta:0.16:4.16,spDmg:9:sp:1:9,spi:10:spi:0.6:6,armor:75:armor:0.024:1.8
+R	priest/shadow	45	274919	0	ranged	28.2875	spShadow:7:spShadow:1:7,rdps:32.75:rdps:0.65:21.288
+R	priest/shadow	45	276888	0	mh	2.76	int:2:int:0.78:1.56,spi:2:spi:0.6:1.2
+R	priest/shadow	45	279826	0	gear	26.808	sta:13:sta:0.16:2.08,spi:10:spi:0.6:6,int:8:int:0.78:6.24,sp:11:sp:1:11,armor:62:armor:0.024:1.488
+R	priest/shadow	45	281315	0	gear	2.772	int:3:int:0.78:2.34,armor:18:armor:0.024:0.432
+R	priest/shadow	45	284197	0	gear	2.096	sta:8:sta:0.16:1.28,armor:34:armor:0.024:0.816
+R	priest/shadow	45	286997	0	gear	21.424	spi:17:spi:0.6:10.2,sp:10:sp:1:10,armor:51:armor:0.024:1.224
 R	priest/shadow	55	35	0	mh	0.0	
 R	priest/shadow	55	1299	0	gear	2.59	sta:4:sta:0.11:0.44,spi:3:spi:0.66:1.98,armor:20:armor:0.0085:0.17
 R	priest/shadow	55	1831	0	mh	0.0	
@@ -1124,7 +1212,7 @@ R	priest/shadow	55	2364	0	gear	0.15300000000000002	armor:18:armor:0.0085:0.153
 R	priest/shadow	55	2955	0	gear	8.175500000000001	sta:11:sta:0.11:1.21,spi:10:spi:0.66:6.6,armor:43:armor:0.0085:0.366
 R	priest/shadow	55	3423	0	oh	0.0	
 R	priest/shadow	55	3947	0	gear	0.255	armor:30:armor:0.0085:0.255
-R	priest/shadow	55	4454	0	mh	1.32	spi:2:spi:0.66:1.32
+R	priest/shadow	55	4454	0	mh	1.98	spi:3:spi:0.66:1.98
 R	priest/shadow	55	4947	0	mh	0.0	
 R	priest/shadow	55	5393	0	mh	0.0	
 R	priest/shadow	55	6333	0	mh	0.22	sta:2:sta:0.11:0.22
@@ -1174,8 +1262,8 @@ R	priest/shadow	55	7355	12757	gear	0.1615	armor:19:armor:0.0085:0.162
 R	priest/shadow	55	7355	12758	gear	0.1615	armor:19:armor:0.0085:0.162
 R	priest/shadow	55	7355	12759	gear	0.1615	armor:19:armor:0.0085:0.162
 R	priest/shadow	55	7355	12761	gear	9.1615	spShadow:9:spShadow:1:9,armor:19:armor:0.0085:0.162
-R	priest/shadow	55	7757	0	mh	9.02	sta:7:sta:0.11:0.77,int:15:int:0.55:8.25
-R	priest/shadow	55	9491	0	gear	8.5135	sta:5:sta:0.11:0.55,int:8:int:0.55:4.4,spi:5:spi:0.66:3.3,armor:31:armor:0.0085:0.264
+R	priest/shadow	55	7757	0	mh	1.87	sta:17:sta:0.11:1.87
+R	priest/shadow	55	9491	0	gear	8.513500000000002	int:8:int:0.55:4.4,spi:5:spi:0.66:3.3,sta:5:sta:0.11:0.55,armor:31:armor:0.0085:0.264
 R	priest/shadow	55	9875	0	gear	0.24650000000000002	armor:29:armor:0.0085:0.247
 R	priest/shadow	55	9875	12718	gear	5.5265	int:8:int:0.55:4.4,sta:8:sta:0.11:0.88,armor:29:armor:0.0085:0.247
 R	priest/shadow	55	9875	12719	gear	6.4065	spi:8:spi:0.66:5.28,sta:8:sta:0.11:0.88,armor:29:armor:0.0085:0.247
@@ -1228,174 +1316,196 @@ R	priest/shadow	55	10102	12759	gear	0.646	armor:76:armor:0.0085:0.646
 R	priest/shadow	55	10102	12761	gear	37.646	spShadow:37:spShadow:1:37,armor:76:armor:0.0085:0.646
 R	priest/shadow	55	10645	0	gear	0.0	
 R	priest/shadow	55	11288	0	ranged	10.4	sp:2:sp:1:2,rdps:17.5:rdps:0.48:8.4
-R	priest/shadow	55	11808	0	gear	2.829	sta:20:sta:0.11:2.2,armor:74:armor:0.0085:0.629
-R	priest/shadow	55	12015	0	gear	0.0	
-R	priest/shadow	55	12015	12718	gear	5.94	int:9:int:0.55:4.95,sta:9:sta:0.11:0.99
-R	priest/shadow	55	12015	12719	gear	6.930000000000001	spi:9:spi:0.66:5.94,sta:9:sta:0.11:0.99
-R	priest/shadow	55	12015	12720	gear	10.89	int:9:int:0.55:4.95,spi:9:spi:0.66:5.94
-R	priest/shadow	55	12015	12721	gear	0.99	sta:9:sta:0.11:0.99
-R	priest/shadow	55	12015	12722	gear	0.99	sta:9:sta:0.11:0.99
-R	priest/shadow	55	12015	12723	gear	4.95	int:9:int:0.55:4.95
-R	priest/shadow	55	12015	12724	gear	4.95	int:9:int:0.55:4.95
-R	priest/shadow	55	12015	12725	gear	5.94	spi:9:spi:0.66:5.94
-R	priest/shadow	55	12015	12726	gear	5.94	spi:9:spi:0.66:5.94
-R	priest/shadow	55	12015	12727	gear	0.0	
-R	priest/shadow	55	12015	12728	gear	0.0	
-R	priest/shadow	55	12015	12729	gear	7.700000000000001	int:14:int:0.55:7.7
-R	priest/shadow	55	12015	12730	gear	9.24	spi:14:spi:0.66:9.24
-R	priest/shadow	55	12015	12731	gear	1.54	sta:14:sta:0.11:1.54
-R	priest/shadow	55	12015	12732	gear	0.0	
-R	priest/shadow	55	12015	12733	gear	0.0	
-R	priest/shadow	55	12015	12737	gear	0.0	
-R	priest/shadow	55	12015	12738	gear	5.1	mp5:6:mp5:0.85:5.1
-R	priest/shadow	55	12015	12739	gear	0.0	
-R	priest/shadow	55	12015	12740	gear	0.99	sta:9:sta:0.11:0.99
-R	priest/shadow	55	12015	12741	gear	0.99	sta:9:sta:0.11:0.99
-R	priest/shadow	55	12015	12742	gear	0.99	sta:9:sta:0.11:0.99
-R	priest/shadow	55	12015	12743	gear	0.99	sta:9:sta:0.11:0.99
-R	priest/shadow	55	12015	12744	gear	0.99	sta:9:sta:0.11:0.99
-R	priest/shadow	55	12015	12745	gear	11.16	int:10:int:0.55:5.5,sta:6:sta:0.11:0.66,sp:5:sp:1:5
-R	priest/shadow	55	12015	12746	gear	14.46	int:10:int:0.55:5.5,spi:6:spi:0.66:3.96,sp:5:sp:1:5
-R	priest/shadow	55	12015	12747	gear	10.06	spi:6:spi:0.66:3.96,sta:10:sta:0.11:1.1,sp:5:sp:1:5
-R	priest/shadow	55	12015	12748	gear	7.4	int:6:int:0.55:3.3,sta:10:sta:0.11:1.1,spDmg:3:sp:1:3
-R	priest/shadow	55	12015	12749	gear	12.46	int:10:int:0.55:5.5,spi:6:spi:0.66:3.96,spDmg:3:sp:1:3
-R	priest/shadow	55	12015	12750	gear	8.06	spi:6:spi:0.66:3.96,sta:10:sta:0.11:1.1,spDmg:3:sp:1:3
-R	priest/shadow	55	12015	12751	gear	1.1	sta:10:sta:0.11:1.1
-R	priest/shadow	55	12015	12752	gear	1.1	sta:10:sta:0.11:1.1
-R	priest/shadow	55	12015	12753	gear	1.1	sta:10:sta:0.11:1.1
-R	priest/shadow	55	12015	12754	gear	6.1	sp:5:sp:1:5,sta:10:sta:0.11:1.1
-R	priest/shadow	55	12015	12755	gear	6.1	sp:5:sp:1:5,sta:10:sta:0.11:1.1
-R	priest/shadow	55	12805	0	gear	0.0	
-R	priest/shadow	55	13360	0	mh	10.01	sta:5:sta:0.11:0.55,int:10:int:0.55:5.5,spi:6:spi:0.66:3.96
-R	priest/shadow	55	14108	0	gear	8.3535	spi:12:spi:0.66:7.92,armor:51:armor:0.0085:0.434
-R	priest/shadow	55	14213	0	gear	0.41650000000000004	armor:49:armor:0.0085:0.417
-R	priest/shadow	55	14213	12718	gear	7.0165	int:10:int:0.55:5.5,sta:10:sta:0.11:1.1,armor:49:armor:0.0085:0.417
-R	priest/shadow	55	14213	12719	gear	8.1165	spi:10:spi:0.66:6.6,sta:10:sta:0.11:1.1,armor:49:armor:0.0085:0.417
-R	priest/shadow	55	14213	12720	gear	12.5165	int:10:int:0.55:5.5,spi:10:spi:0.66:6.6,armor:49:armor:0.0085:0.417
-R	priest/shadow	55	14213	12729	gear	8.6665	int:15:int:0.55:8.25,armor:49:armor:0.0085:0.417
-R	priest/shadow	55	14213	12730	gear	10.3165	spi:15:spi:0.66:9.9,armor:49:armor:0.0085:0.417
-R	priest/shadow	55	14213	12731	gear	2.0665	sta:15:sta:0.11:1.65,armor:49:armor:0.0085:0.417
-R	priest/shadow	55	14213	12734	gear	18.4165	sp:18:sp:1:18,armor:49:armor:0.0085:0.417
-R	priest/shadow	55	14213	12735	gear	11.4165	spDmg:11:sp:1:11,armor:49:armor:0.0085:0.417
-R	priest/shadow	55	14213	12740	gear	1.5165000000000002	sta:10:sta:0.11:1.1,armor:49:armor:0.0085:0.417
-R	priest/shadow	55	14213	12741	gear	1.5165000000000002	sta:10:sta:0.11:1.1,armor:49:armor:0.0085:0.417
-R	priest/shadow	55	14213	12742	gear	1.5165000000000002	sta:10:sta:0.11:1.1,armor:49:armor:0.0085:0.417
-R	priest/shadow	55	14213	12743	gear	1.5165000000000002	sta:10:sta:0.11:1.1,armor:49:armor:0.0085:0.417
-R	priest/shadow	55	14213	12744	gear	1.5165000000000002	sta:10:sta:0.11:1.1,armor:49:armor:0.0085:0.417
-R	priest/shadow	55	14213	12745	gear	13.1265	int:11:int:0.55:6.05,sta:6:sta:0.11:0.66,sp:6:sp:1:6,armor:49:armor:0.0085:0.417
-R	priest/shadow	55	14213	12746	gear	16.4265	int:11:int:0.55:6.05,spi:6:spi:0.66:3.96,sp:6:sp:1:6,armor:49:armor:0.0085:0.417
-R	priest/shadow	55	14213	12747	gear	11.5865	spi:6:spi:0.66:3.96,sta:11:sta:0.11:1.21,sp:6:sp:1:6,armor:49:armor:0.0085:0.417
-R	priest/shadow	55	14213	12748	gear	8.926499999999999	int:6:int:0.55:3.3,sta:11:sta:0.11:1.21,spDmg:4:sp:1:4,armor:49:armor:0.0085:0.417
-R	priest/shadow	55	14213	12749	gear	14.4265	int:11:int:0.55:6.05,spi:6:spi:0.66:3.96,spDmg:4:sp:1:4,armor:49:armor:0.0085:0.417
-R	priest/shadow	55	14213	12750	gear	9.5865	spi:6:spi:0.66:3.96,sta:11:sta:0.11:1.21,spDmg:4:sp:1:4,armor:49:armor:0.0085:0.417
-R	priest/shadow	55	14213	12756	gear	0.41650000000000004	armor:49:armor:0.0085:0.417
-R	priest/shadow	55	14213	12757	gear	0.41650000000000004	armor:49:armor:0.0085:0.417
-R	priest/shadow	55	14213	12758	gear	0.41650000000000004	armor:49:armor:0.0085:0.417
-R	priest/shadow	55	14213	12759	gear	0.41650000000000004	armor:49:armor:0.0085:0.417
-R	priest/shadow	55	14213	12761	gear	21.4165	spShadow:21:spShadow:1:21,armor:49:armor:0.0085:0.417
-R	priest/shadow	55	14312	0	gear	0.544	armor:64:armor:0.0085:0.544
-R	priest/shadow	55	14312	12718	gear	12.424000000000001	int:18:int:0.55:9.9,sta:18:sta:0.11:1.98,armor:64:armor:0.0085:0.544
-R	priest/shadow	55	14312	12719	gear	14.404000000000002	spi:18:spi:0.66:11.88,sta:18:sta:0.11:1.98,armor:64:armor:0.0085:0.544
-R	priest/shadow	55	14312	12720	gear	22.324	int:18:int:0.55:9.9,spi:18:spi:0.66:11.88,armor:64:armor:0.0085:0.544
-R	priest/shadow	55	14312	12729	gear	15.394000000000002	int:27:int:0.55:14.85,armor:64:armor:0.0085:0.544
-R	priest/shadow	55	14312	12730	gear	18.364	spi:27:spi:0.66:17.82,armor:64:armor:0.0085:0.544
-R	priest/shadow	55	14312	12731	gear	3.5140000000000002	sta:27:sta:0.11:2.97,armor:64:armor:0.0085:0.544
-R	priest/shadow	55	14312	12734	gear	32.544	sp:32:sp:1:32,armor:64:armor:0.0085:0.544
-R	priest/shadow	55	14312	12735	gear	20.544	spDmg:20:sp:1:20,armor:64:armor:0.0085:0.544
-R	priest/shadow	55	14312	12740	gear	2.524	sta:18:sta:0.11:1.98,armor:64:armor:0.0085:0.544
-R	priest/shadow	55	14312	12741	gear	2.524	sta:18:sta:0.11:1.98,armor:64:armor:0.0085:0.544
-R	priest/shadow	55	14312	12742	gear	2.524	sta:18:sta:0.11:1.98,armor:64:armor:0.0085:0.544
-R	priest/shadow	55	14312	12743	gear	2.524	sta:18:sta:0.11:1.98,armor:64:armor:0.0085:0.544
-R	priest/shadow	55	14312	12744	gear	2.524	sta:18:sta:0.11:1.98,armor:64:armor:0.0085:0.544
-R	priest/shadow	55	14312	12745	gear	22.754	int:20:int:0.55:11,sta:11:sta:0.11:1.21,sp:10:sp:1:10,armor:64:armor:0.0085:0.544
-R	priest/shadow	55	14312	12746	gear	28.804000000000002	int:20:int:0.55:11,spi:11:spi:0.66:7.26,sp:10:sp:1:10,armor:64:armor:0.0085:0.544
-R	priest/shadow	55	14312	12747	gear	20.004	spi:11:spi:0.66:7.26,sta:20:sta:0.11:2.2,sp:10:sp:1:10,armor:64:armor:0.0085:0.544
-R	priest/shadow	55	14312	12748	gear	14.794	int:11:int:0.55:6.05,sta:20:sta:0.11:2.2,spDmg:6:sp:1:6,armor:64:armor:0.0085:0.544
-R	priest/shadow	55	14312	12749	gear	24.804000000000002	int:20:int:0.55:11,spi:11:spi:0.66:7.26,spDmg:6:sp:1:6,armor:64:armor:0.0085:0.544
-R	priest/shadow	55	14312	12750	gear	16.004	spi:11:spi:0.66:7.26,sta:20:sta:0.11:2.2,spDmg:6:sp:1:6,armor:64:armor:0.0085:0.544
-R	priest/shadow	55	14312	12756	gear	0.544	armor:64:armor:0.0085:0.544
-R	priest/shadow	55	14312	12757	gear	0.544	armor:64:armor:0.0085:0.544
-R	priest/shadow	55	14312	12758	gear	0.544	armor:64:armor:0.0085:0.544
-R	priest/shadow	55	14312	12759	gear	0.544	armor:64:armor:0.0085:0.544
-R	priest/shadow	55	14312	12761	gear	39.544	spShadow:39:spShadow:1:39,armor:64:armor:0.0085:0.544
-R	priest/shadow	55	14440	0	gear	4.875	sta:6:sta:0.11:0.66,spi:6:spi:0.66:3.96,armor:30:armor:0.0085:0.255
-R	priest/shadow	55	15299	0	gear	0.07650000000000001	armor:9:armor:0.0085:0.077
-R	priest/shadow	55	15939	0	oh	0.0	
-R	priest/shadow	55	15939	12718	oh	5.94	int:9:int:0.55:4.95,sta:9:sta:0.11:0.99
-R	priest/shadow	55	15939	12719	oh	6.930000000000001	spi:9:spi:0.66:5.94,sta:9:sta:0.11:0.99
-R	priest/shadow	55	15939	12720	oh	10.89	int:9:int:0.55:4.95,spi:9:spi:0.66:5.94
-R	priest/shadow	55	15939	12721	oh	0.99	sta:9:sta:0.11:0.99
-R	priest/shadow	55	15939	12722	oh	0.99	sta:9:sta:0.11:0.99
-R	priest/shadow	55	15939	12723	oh	4.95	int:9:int:0.55:4.95
-R	priest/shadow	55	15939	12724	oh	4.95	int:9:int:0.55:4.95
-R	priest/shadow	55	15939	12725	oh	5.94	spi:9:spi:0.66:5.94
-R	priest/shadow	55	15939	12726	oh	5.94	spi:9:spi:0.66:5.94
-R	priest/shadow	55	15939	12727	oh	0.0	
-R	priest/shadow	55	15939	12728	oh	0.0	
-R	priest/shadow	55	15939	12729	oh	7.700000000000001	int:14:int:0.55:7.7
-R	priest/shadow	55	15939	12730	oh	9.24	spi:14:spi:0.66:9.24
-R	priest/shadow	55	15939	12731	oh	1.54	sta:14:sta:0.11:1.54
-R	priest/shadow	55	15939	12732	oh	0.0	
-R	priest/shadow	55	15939	12733	oh	0.0	
-R	priest/shadow	55	15939	12734	oh	16.0	sp:16:sp:1:16
-R	priest/shadow	55	15939	12735	oh	10.0	spDmg:10:sp:1:10
-R	priest/shadow	55	15939	12740	oh	0.99	sta:9:sta:0.11:0.99
-R	priest/shadow	55	15939	12741	oh	0.99	sta:9:sta:0.11:0.99
-R	priest/shadow	55	15939	12742	oh	0.99	sta:9:sta:0.11:0.99
-R	priest/shadow	55	15939	12743	oh	0.99	sta:9:sta:0.11:0.99
-R	priest/shadow	55	15939	12744	oh	0.99	sta:9:sta:0.11:0.99
-R	priest/shadow	55	15939	12745	oh	11.16	int:10:int:0.55:5.5,sta:6:sta:0.11:0.66,sp:5:sp:1:5
-R	priest/shadow	55	15939	12746	oh	14.46	int:10:int:0.55:5.5,spi:6:spi:0.66:3.96,sp:5:sp:1:5
-R	priest/shadow	55	15939	12747	oh	10.06	spi:6:spi:0.66:3.96,sta:10:sta:0.11:1.1,sp:5:sp:1:5
-R	priest/shadow	55	15939	12748	oh	7.4	int:6:int:0.55:3.3,sta:10:sta:0.11:1.1,spDmg:3:sp:1:3
-R	priest/shadow	55	15939	12749	oh	12.46	int:10:int:0.55:5.5,spi:6:spi:0.66:3.96,spDmg:3:sp:1:3
-R	priest/shadow	55	15939	12750	oh	8.06	spi:6:spi:0.66:3.96,sta:10:sta:0.11:1.1,spDmg:3:sp:1:3
-R	priest/shadow	55	15939	12756	oh	0.0	
-R	priest/shadow	55	15939	12757	oh	0.0	
-R	priest/shadow	55	15939	12758	oh	0.0	
-R	priest/shadow	55	15939	12759	oh	0.0	
-R	priest/shadow	55	15939	12760	oh	0.0	
-R	priest/shadow	55	15939	12761	oh	20.0	spShadow:20:spShadow:1:20
+R	priest/shadow	55	11807	0	gear	13.591000000000001	spi:10:spi:0.66:6.6,sta:10:sta:0.11:1.1,int:10:int:0.55:5.5,armor:46:armor:0.0085:0.391
+R	priest/shadow	55	12014	0	gear	0.0	
+R	priest/shadow	55	12014	12718	gear	5.94	int:9:int:0.55:4.95,sta:9:sta:0.11:0.99
+R	priest/shadow	55	12014	12719	gear	6.930000000000001	spi:9:spi:0.66:5.94,sta:9:sta:0.11:0.99
+R	priest/shadow	55	12014	12720	gear	10.89	int:9:int:0.55:4.95,spi:9:spi:0.66:5.94
+R	priest/shadow	55	12014	12721	gear	0.99	sta:9:sta:0.11:0.99
+R	priest/shadow	55	12014	12722	gear	0.99	sta:9:sta:0.11:0.99
+R	priest/shadow	55	12014	12723	gear	4.95	int:9:int:0.55:4.95
+R	priest/shadow	55	12014	12724	gear	4.95	int:9:int:0.55:4.95
+R	priest/shadow	55	12014	12725	gear	5.94	spi:9:spi:0.66:5.94
+R	priest/shadow	55	12014	12726	gear	5.94	spi:9:spi:0.66:5.94
+R	priest/shadow	55	12014	12727	gear	0.0	
+R	priest/shadow	55	12014	12728	gear	0.0	
+R	priest/shadow	55	12014	12729	gear	7.15	int:13:int:0.55:7.15
+R	priest/shadow	55	12014	12730	gear	8.58	spi:13:spi:0.66:8.58
+R	priest/shadow	55	12014	12731	gear	1.43	sta:13:sta:0.11:1.43
+R	priest/shadow	55	12014	12732	gear	0.0	
+R	priest/shadow	55	12014	12733	gear	0.0	
+R	priest/shadow	55	12014	12737	gear	0.0	
+R	priest/shadow	55	12014	12738	gear	4.25	mp5:5:mp5:0.85:4.25
+R	priest/shadow	55	12014	12739	gear	0.0	
+R	priest/shadow	55	12014	12740	gear	0.99	sta:9:sta:0.11:0.99
+R	priest/shadow	55	12014	12741	gear	0.99	sta:9:sta:0.11:0.99
+R	priest/shadow	55	12014	12742	gear	0.99	sta:9:sta:0.11:0.99
+R	priest/shadow	55	12014	12743	gear	0.99	sta:9:sta:0.11:0.99
+R	priest/shadow	55	12014	12744	gear	0.99	sta:9:sta:0.11:0.99
+R	priest/shadow	55	12014	12745	gear	10.5	int:9:int:0.55:4.95,sta:5:sta:0.11:0.55,sp:5:sp:1:5
+R	priest/shadow	55	12014	12746	gear	13.25	int:9:int:0.55:4.95,spi:5:spi:0.66:3.3,sp:5:sp:1:5
+R	priest/shadow	55	12014	12747	gear	9.29	spi:5:spi:0.66:3.3,sta:9:sta:0.11:0.99,sp:5:sp:1:5
+R	priest/shadow	55	12014	12748	gear	6.74	int:5:int:0.55:2.75,sta:9:sta:0.11:0.99,spDmg:3:sp:1:3
+R	priest/shadow	55	12014	12749	gear	11.25	int:9:int:0.55:4.95,spi:5:spi:0.66:3.3,spDmg:3:sp:1:3
+R	priest/shadow	55	12014	12750	gear	7.29	spi:5:spi:0.66:3.3,sta:9:sta:0.11:0.99,spDmg:3:sp:1:3
+R	priest/shadow	55	12014	12751	gear	0.99	sta:9:sta:0.11:0.99
+R	priest/shadow	55	12014	12752	gear	0.99	sta:9:sta:0.11:0.99
+R	priest/shadow	55	12014	12753	gear	0.99	sta:9:sta:0.11:0.99
+R	priest/shadow	55	12014	12754	gear	5.99	sp:5:sp:1:5,sta:9:sta:0.11:0.99
+R	priest/shadow	55	12014	12755	gear	6.1	sp:5:sp:1:5,sta:10:sta:0.11:1.1
+R	priest/shadow	55	12794	0	mh	0.0	
+R	priest/shadow	55	13353	0	oh	31.730000000000004	spi:10:spi:0.66:6.6,int:15:int:0.55:8.25,sta:8:sta:0.11:0.88,spShadow:16:spShadow:1:16
+R	priest/shadow	55	14107	0	gear	33.127	int:12:int:0.55:6.6,spShadow:26:spShadow:1:26,armor:62:armor:0.0085:0.527
+R	priest/shadow	55	14212	0	gear	0.29750000000000004	armor:35:armor:0.0085:0.298
+R	priest/shadow	55	14212	12718	gear	4.917500000000001	int:7:int:0.55:3.85,sta:7:sta:0.11:0.77,armor:35:armor:0.0085:0.298
+R	priest/shadow	55	14212	12719	gear	5.687500000000001	spi:7:spi:0.66:4.62,sta:7:sta:0.11:0.77,armor:35:armor:0.0085:0.298
+R	priest/shadow	55	14212	12720	gear	8.7675	int:7:int:0.55:3.85,spi:7:spi:0.66:4.62,armor:35:armor:0.0085:0.298
+R	priest/shadow	55	14212	12729	gear	5.7975	int:10:int:0.55:5.5,armor:35:armor:0.0085:0.298
+R	priest/shadow	55	14212	12730	gear	6.897500000000001	spi:10:spi:0.66:6.6,armor:35:armor:0.0085:0.298
+R	priest/shadow	55	14212	12731	gear	1.3975000000000002	sta:10:sta:0.11:1.1,armor:35:armor:0.0085:0.298
+R	priest/shadow	55	14212	12734	gear	12.2975	sp:12:sp:1:12,armor:35:armor:0.0085:0.298
+R	priest/shadow	55	14212	12735	gear	7.2975	spDmg:7:sp:1:7,armor:35:armor:0.0085:0.298
+R	priest/shadow	55	14212	12740	gear	1.0675000000000001	sta:7:sta:0.11:0.77,armor:35:armor:0.0085:0.298
+R	priest/shadow	55	14212	12741	gear	1.0675000000000001	sta:7:sta:0.11:0.77,armor:35:armor:0.0085:0.298
+R	priest/shadow	55	14212	12742	gear	1.0675000000000001	sta:7:sta:0.11:0.77,armor:35:armor:0.0085:0.298
+R	priest/shadow	55	14212	12743	gear	1.0675000000000001	sta:7:sta:0.11:0.77,armor:35:armor:0.0085:0.298
+R	priest/shadow	55	14212	12744	gear	1.0675000000000001	sta:7:sta:0.11:0.77,armor:35:armor:0.0085:0.298
+R	priest/shadow	55	14212	12745	gear	8.5875	int:7:int:0.55:3.85,sta:4:sta:0.11:0.44,sp:4:sp:1:4,armor:35:armor:0.0085:0.298
+R	priest/shadow	55	14212	12746	gear	10.7875	int:7:int:0.55:3.85,spi:4:spi:0.66:2.64,sp:4:sp:1:4,armor:35:armor:0.0085:0.298
+R	priest/shadow	55	14212	12747	gear	7.7075000000000005	spi:4:spi:0.66:2.64,sta:7:sta:0.11:0.77,sp:4:sp:1:4,armor:35:armor:0.0085:0.298
+R	priest/shadow	55	14212	12748	gear	5.267500000000001	int:4:int:0.55:2.2,sta:7:sta:0.11:0.77,spDmg:2:sp:1:2,armor:35:armor:0.0085:0.298
+R	priest/shadow	55	14212	12749	gear	8.7875	int:7:int:0.55:3.85,spi:4:spi:0.66:2.64,spDmg:2:sp:1:2,armor:35:armor:0.0085:0.298
+R	priest/shadow	55	14212	12750	gear	5.7075000000000005	spi:4:spi:0.66:2.64,sta:7:sta:0.11:0.77,spDmg:2:sp:1:2,armor:35:armor:0.0085:0.298
+R	priest/shadow	55	14212	12756	gear	0.29750000000000004	armor:35:armor:0.0085:0.298
+R	priest/shadow	55	14212	12757	gear	0.29750000000000004	armor:35:armor:0.0085:0.298
+R	priest/shadow	55	14212	12758	gear	0.29750000000000004	armor:35:armor:0.0085:0.298
+R	priest/shadow	55	14212	12759	gear	0.29750000000000004	armor:35:armor:0.0085:0.298
+R	priest/shadow	55	14212	12761	gear	14.2975	spShadow:14:spShadow:1:14,armor:35:armor:0.0085:0.298
+R	priest/shadow	55	14311	0	gear	0.2635	armor:31:armor:0.0085:0.264
+R	priest/shadow	55	14311	12718	gear	6.2035	int:9:int:0.55:4.95,sta:9:sta:0.11:0.99,armor:31:armor:0.0085:0.264
+R	priest/shadow	55	14311	12719	gear	7.1935	spi:9:spi:0.66:5.94,sta:9:sta:0.11:0.99,armor:31:armor:0.0085:0.264
+R	priest/shadow	55	14311	12720	gear	11.153500000000001	int:9:int:0.55:4.95,spi:9:spi:0.66:5.94,armor:31:armor:0.0085:0.264
+R	priest/shadow	55	14311	12729	gear	7.4135	int:13:int:0.55:7.15,armor:31:armor:0.0085:0.264
+R	priest/shadow	55	14311	12730	gear	8.8435	spi:13:spi:0.66:8.58,armor:31:armor:0.0085:0.264
+R	priest/shadow	55	14311	12731	gear	1.6935	sta:13:sta:0.11:1.43,armor:31:armor:0.0085:0.264
+R	priest/shadow	55	14311	12734	gear	15.2635	sp:15:sp:1:15,armor:31:armor:0.0085:0.264
+R	priest/shadow	55	14311	12735	gear	10.2635	spDmg:10:sp:1:10,armor:31:armor:0.0085:0.264
+R	priest/shadow	55	14311	12740	gear	1.2535	sta:9:sta:0.11:0.99,armor:31:armor:0.0085:0.264
+R	priest/shadow	55	14311	12741	gear	1.2535	sta:9:sta:0.11:0.99,armor:31:armor:0.0085:0.264
+R	priest/shadow	55	14311	12742	gear	1.2535	sta:9:sta:0.11:0.99,armor:31:armor:0.0085:0.264
+R	priest/shadow	55	14311	12743	gear	1.2535	sta:9:sta:0.11:0.99,armor:31:armor:0.0085:0.264
+R	priest/shadow	55	14311	12744	gear	1.2535	sta:9:sta:0.11:0.99,armor:31:armor:0.0085:0.264
+R	priest/shadow	55	14311	12745	gear	10.7635	int:9:int:0.55:4.95,sta:5:sta:0.11:0.55,sp:5:sp:1:5,armor:31:armor:0.0085:0.264
+R	priest/shadow	55	14311	12746	gear	13.5135	int:9:int:0.55:4.95,spi:5:spi:0.66:3.3,sp:5:sp:1:5,armor:31:armor:0.0085:0.264
+R	priest/shadow	55	14311	12747	gear	9.5535	spi:5:spi:0.66:3.3,sta:9:sta:0.11:0.99,sp:5:sp:1:5,armor:31:armor:0.0085:0.264
+R	priest/shadow	55	14311	12748	gear	7.0035	int:5:int:0.55:2.75,sta:9:sta:0.11:0.99,spDmg:3:sp:1:3,armor:31:armor:0.0085:0.264
+R	priest/shadow	55	14311	12749	gear	11.5135	int:9:int:0.55:4.95,spi:5:spi:0.66:3.3,spDmg:3:sp:1:3,armor:31:armor:0.0085:0.264
+R	priest/shadow	55	14311	12750	gear	7.5535	spi:5:spi:0.66:3.3,sta:9:sta:0.11:0.99,spDmg:3:sp:1:3,armor:31:armor:0.0085:0.264
+R	priest/shadow	55	14311	12756	gear	0.2635	armor:31:armor:0.0085:0.264
+R	priest/shadow	55	14311	12757	gear	0.2635	armor:31:armor:0.0085:0.264
+R	priest/shadow	55	14311	12758	gear	0.2635	armor:31:armor:0.0085:0.264
+R	priest/shadow	55	14311	12759	gear	0.2635	armor:31:armor:0.0085:0.264
+R	priest/shadow	55	14311	12761	gear	19.2635	spShadow:19:spShadow:1:19,armor:31:armor:0.0085:0.264
+R	priest/shadow	55	14439	0	gear	7.7095	spi:8:spi:0.66:5.28,int:4:int:0.55:2.2,armor:27:armor:0.0085:0.23
+R	priest/shadow	55	15283	0	ranged	27.244799999999998	rdps:56.76:rdps:0.48:27.245
+R	priest/shadow	55	15283	12718	ranged	31.2048	int:6:int:0.55:3.3,sta:6:sta:0.11:0.66,rdps:56.76:rdps:0.48:27.245
+R	priest/shadow	55	15283	12719	ranged	31.8648	spi:6:spi:0.66:3.96,sta:6:sta:0.11:0.66,rdps:56.76:rdps:0.48:27.245
+R	priest/shadow	55	15283	12720	ranged	34.504799999999996	int:6:int:0.55:3.3,spi:6:spi:0.66:3.96,rdps:56.76:rdps:0.48:27.245
+R	priest/shadow	55	15283	12729	ranged	32.1948	int:9:int:0.55:4.95,rdps:56.76:rdps:0.48:27.245
+R	priest/shadow	55	15283	12730	ranged	33.184799999999996	spi:9:spi:0.66:5.94,rdps:56.76:rdps:0.48:27.245
+R	priest/shadow	55	15283	12731	ranged	28.234799999999996	sta:9:sta:0.11:0.99,rdps:56.76:rdps:0.48:27.245
+R	priest/shadow	55	15283	12734	ranged	38.2448	sp:11:sp:1:11,rdps:56.76:rdps:0.48:27.245
+R	priest/shadow	55	15283	12735	ranged	34.2448	spDmg:7:sp:1:7,rdps:56.76:rdps:0.48:27.245
+R	priest/shadow	55	15283	12740	ranged	27.904799999999998	sta:6:sta:0.11:0.66,rdps:56.76:rdps:0.48:27.245
+R	priest/shadow	55	15283	12741	ranged	27.904799999999998	sta:6:sta:0.11:0.66,rdps:56.76:rdps:0.48:27.245
+R	priest/shadow	55	15283	12742	ranged	27.904799999999998	sta:6:sta:0.11:0.66,rdps:56.76:rdps:0.48:27.245
+R	priest/shadow	55	15283	12743	ranged	27.904799999999998	sta:6:sta:0.11:0.66,rdps:56.76:rdps:0.48:27.245
+R	priest/shadow	55	15283	12744	ranged	27.904799999999998	sta:6:sta:0.11:0.66,rdps:56.76:rdps:0.48:27.245
+R	priest/shadow	55	15283	12745	ranged	34.5348	int:7:int:0.55:3.85,sta:4:sta:0.11:0.44,sp:3:sp:1:3,rdps:56.76:rdps:0.48:27.245
+R	priest/shadow	55	15283	12746	ranged	36.7348	int:7:int:0.55:3.85,spi:4:spi:0.66:2.64,sp:3:sp:1:3,rdps:56.76:rdps:0.48:27.245
+R	priest/shadow	55	15283	12747	ranged	33.654799999999994	spi:4:spi:0.66:2.64,sta:7:sta:0.11:0.77,sp:3:sp:1:3,rdps:56.76:rdps:0.48:27.245
+R	priest/shadow	55	15283	12748	ranged	32.2148	int:4:int:0.55:2.2,sta:7:sta:0.11:0.77,spDmg:2:sp:1:2,rdps:56.76:rdps:0.48:27.245
+R	priest/shadow	55	15283	12749	ranged	35.7348	int:7:int:0.55:3.85,spi:4:spi:0.66:2.64,spDmg:2:sp:1:2,rdps:56.76:rdps:0.48:27.245
+R	priest/shadow	55	15283	12750	ranged	32.654799999999994	spi:4:spi:0.66:2.64,sta:7:sta:0.11:0.77,spDmg:2:sp:1:2,rdps:56.76:rdps:0.48:27.245
+R	priest/shadow	55	15283	12756	ranged	27.244799999999998	rdps:56.76:rdps:0.48:27.245
+R	priest/shadow	55	15283	12757	ranged	27.244799999999998	rdps:56.76:rdps:0.48:27.245
+R	priest/shadow	55	15283	12758	ranged	27.244799999999998	rdps:56.76:rdps:0.48:27.245
+R	priest/shadow	55	15283	12759	ranged	27.244799999999998	rdps:56.76:rdps:0.48:27.245
+R	priest/shadow	55	15283	12761	ranged	40.2448	spShadow:13:spShadow:1:13,rdps:56.76:rdps:0.48:27.245
+R	priest/shadow	55	15938	0	oh	0.0	
+R	priest/shadow	55	15938	12718	oh	5.94	int:9:int:0.55:4.95,sta:9:sta:0.11:0.99
+R	priest/shadow	55	15938	12719	oh	6.930000000000001	spi:9:spi:0.66:5.94,sta:9:sta:0.11:0.99
+R	priest/shadow	55	15938	12720	oh	10.89	int:9:int:0.55:4.95,spi:9:spi:0.66:5.94
+R	priest/shadow	55	15938	12721	oh	0.99	sta:9:sta:0.11:0.99
+R	priest/shadow	55	15938	12722	oh	0.99	sta:9:sta:0.11:0.99
+R	priest/shadow	55	15938	12723	oh	4.95	int:9:int:0.55:4.95
+R	priest/shadow	55	15938	12724	oh	4.95	int:9:int:0.55:4.95
+R	priest/shadow	55	15938	12725	oh	5.94	spi:9:spi:0.66:5.94
+R	priest/shadow	55	15938	12726	oh	5.94	spi:9:spi:0.66:5.94
+R	priest/shadow	55	15938	12727	oh	0.0	
+R	priest/shadow	55	15938	12728	oh	0.0	
+R	priest/shadow	55	15938	12729	oh	7.700000000000001	int:14:int:0.55:7.7
+R	priest/shadow	55	15938	12730	oh	9.24	spi:14:spi:0.66:9.24
+R	priest/shadow	55	15938	12731	oh	1.54	sta:14:sta:0.11:1.54
+R	priest/shadow	55	15938	12732	oh	0.0	
+R	priest/shadow	55	15938	12733	oh	0.0	
+R	priest/shadow	55	15938	12734	oh	16.0	sp:16:sp:1:16
+R	priest/shadow	55	15938	12735	oh	10.0	spDmg:10:sp:1:10
+R	priest/shadow	55	15938	12740	oh	0.99	sta:9:sta:0.11:0.99
+R	priest/shadow	55	15938	12741	oh	0.99	sta:9:sta:0.11:0.99
+R	priest/shadow	55	15938	12742	oh	0.99	sta:9:sta:0.11:0.99
+R	priest/shadow	55	15938	12743	oh	0.99	sta:9:sta:0.11:0.99
+R	priest/shadow	55	15938	12744	oh	0.99	sta:9:sta:0.11:0.99
+R	priest/shadow	55	15938	12745	oh	11.16	int:10:int:0.55:5.5,sta:6:sta:0.11:0.66,sp:5:sp:1:5
+R	priest/shadow	55	15938	12746	oh	14.46	int:10:int:0.55:5.5,spi:6:spi:0.66:3.96,sp:5:sp:1:5
+R	priest/shadow	55	15938	12747	oh	10.06	spi:6:spi:0.66:3.96,sta:10:sta:0.11:1.1,sp:5:sp:1:5
+R	priest/shadow	55	15938	12748	oh	7.4	int:6:int:0.55:3.3,sta:10:sta:0.11:1.1,spDmg:3:sp:1:3
+R	priest/shadow	55	15938	12749	oh	12.46	int:10:int:0.55:5.5,spi:6:spi:0.66:3.96,spDmg:3:sp:1:3
+R	priest/shadow	55	15938	12750	oh	8.06	spi:6:spi:0.66:3.96,sta:10:sta:0.11:1.1,spDmg:3:sp:1:3
+R	priest/shadow	55	15938	12756	oh	0.0	
+R	priest/shadow	55	15938	12757	oh	0.0	
+R	priest/shadow	55	15938	12758	oh	0.0	
+R	priest/shadow	55	15938	12759	oh	0.0	
+R	priest/shadow	55	15938	12760	oh	0.0	
+R	priest/shadow	55	15938	12761	oh	20.0	spShadow:20:spShadow:1:20
 R	priest/shadow	55	15945	0	oh	1.54	sta:2:sta:0.11:0.22,spi:2:spi:0.66:1.32
-R	priest/shadow	55	16819	0	gear	17.254	sta:8:sta:0.11:0.88,int:14:int:0.55:7.7,spi:10:spi:0.66:6.6,mp5:2:mp5:0.85:1.7,armor:44:armor:0.0085:0.374
-R	priest/shadow	55	17739	0	gear	1.6345	sta:12:sta:0.11:1.32,armor:37:armor:0.0085:0.315
-R	priest/shadow	55	18440	0	gear	1.5510000000000002	sta:9:sta:0.11:0.99,armor:66:armor:0.0085:0.561
-R	priest/shadow	55	18879	0	gear	3.1350000000000002	sta:20:sta:0.11:2.2,armor:110:armor:0.0085:0.935
-R	priest/shadow	55	19395	0	gear	7.6499999999999995	mp5:9:mp5:0.85:7.65
-R	priest/shadow	55	19893	0	gear	20.3	sta:10:sta:0.11:1.1,int:10:int:0.55:5.5,spellHit:1:spellHit:2.7:2.7,sp:11:sp:1:11
-R	priest/shadow	55	20330	0	gear	29.988500000000002	int:27:int:0.55:14.85,spi:11:spi:0.66:7.26,sta:12:sta:0.11:1.32,crit:1:spellCrit:5.7:5.7,armor:101:armor:0.0085:0.859
-R	priest/shadow	55	20652	0	gear	0.4505	armor:53:armor:0.0085:0.451
-R	priest/shadow	55	20652	12745	gear	16.580500000000004	int:15:int:0.55:8.25,sta:8:sta:0.11:0.88,sp:7:sp:1:7,armor:53:armor:0.0085:0.451
-R	priest/shadow	55	20652	12746	gear	20.980500000000003	int:15:int:0.55:8.25,spi:8:spi:0.66:5.28,sp:7:sp:1:7,armor:53:armor:0.0085:0.451
-R	priest/shadow	55	20652	12747	gear	14.3805	spi:8:spi:0.66:5.28,sta:15:sta:0.11:1.65,sp:7:sp:1:7,armor:53:armor:0.0085:0.451
-R	priest/shadow	55	20652	12748	gear	11.5005	int:8:int:0.55:4.4,sta:15:sta:0.11:1.65,spDmg:5:sp:1:5,armor:53:armor:0.0085:0.451
-R	priest/shadow	55	20652	12749	gear	18.980500000000003	int:15:int:0.55:8.25,spi:8:spi:0.66:5.28,spDmg:5:sp:1:5,armor:53:armor:0.0085:0.451
-R	priest/shadow	55	20652	12750	gear	12.3805	spi:8:spi:0.66:5.28,sta:15:sta:0.11:1.65,spDmg:5:sp:1:5,armor:53:armor:0.0085:0.451
-R	priest/shadow	55	21500	0	gear	13.666	sta:14:sta:0.11:1.54,int:15:int:0.55:8.25,mp5:4:mp5:0.85:3.4,armor:56:armor:0.0085:0.476
-R	priest/shadow	55	22085	0	gear	38.838499999999996	int:14:int:0.55:7.7,sta:13:sta:0.11:1.43,mp5:6:mp5:0.85:5.1,sp:16:sp:1:16,spi:12:spi:0.66:7.92,armor:81:armor:0.0085:0.689
-R	priest/shadow	55	22678	0	gear	0.0	
-R	priest/shadow	55	23177	0	ranged	28.278399999999998	spShadow:10:spShadow:1:10,rdps:38.08:rdps:0.48:18.278
-R	priest/shadow	55	212583	0	mh	0.33	sta:3:sta:0.11:0.33
-R	priest/shadow	55	217296	0	gear	5.99	sta:9:sta:0.11:0.99,sp:5:sp:1:5
-R	priest/shadow	55	220907	0	gear	28.529	sta:13:sta:0.11:1.43,int:12:int:0.55:6.6,crit:1:spellCrit:5.7:5.7,sp:14:sp:1:14,armor:94:armor:0.0085:0.799
-R	priest/shadow	55	226731	0	gear	28.262	sta:7:sta:0.11:0.77,int:11:int:0.55:6.05,sp:21:sp:1:21,armor:52:armor:0.0085:0.442
-R	priest/shadow	55	227967	0	gear	0.0	
-R	priest/shadow	55	228282	0	gear	37.718500000000006	sta:20:sta:0.11:2.2,sp:35:sp:1:35,armor:61:armor:0.0085:0.519
-R	priest/shadow	55	228757	0	mh	0.0	
-R	priest/shadow	55	231168	0	gear	69.2085	sta:15:sta:0.11:1.65,int:20:int:0.55:11,crit:1:spellCrit:5.7:5.7,spShadow:50:spShadow:1:50,armor:101:armor:0.0085:0.859
-R	priest/shadow	55	233395	0	gear	86.9705	sta:14:sta:0.11:1.54,int:18:int:0.55:9.9,crit:2:spellCrit:5.7:11.4,spShadow:63:spShadow:1:63,armor:133:armor:0.0085:1.131
-R	priest/shadow	55	233994	0	gear	38.6	int:18:int:0.55:9.9,crit:1:spellCrit:5.7:5.7,spDmg:23:sp:1:23
-R	priest/shadow	55	234576	0	mh	63.41	sta:21:sta:0.11:2.31,int:8:int:0.55:4.4,crit:1:spellCrit:5.7:5.7,spDmg:51:sp:1:51
-R	priest/shadow	55	236277	0	gear	22.77	sta:8:sta:0.11:0.88,int:9:int:0.55:4.95,spi:9:spi:0.66:5.94,spDmg:11:sp:1:11
-R	priest/shadow	55	239565	0	gear	99.641	sta:15:sta:0.11:1.65,int:17:int:0.55:9.35,crit:2:spellCrit:5.7:11.4,spShadow:76:spShadow:1:76,armor:146:armor:0.0085:1.241
-R	priest/shadow	55	247789	0	ranged	1.92	rdps:4:rdps:0.48:1.92
-R	priest/shadow	55	254029	0	gear	5.146000000000001	int:7:int:0.55:3.85,sta:9:sta:0.11:0.99,armor:36:armor:0.0085:0.306
-R	priest/shadow	55	260829	0	gear	0.374	armor:44:armor:0.0085:0.374
-R	priest/shadow	55	271909	0	gear	1.54	sta:14:sta:0.11:1.54
-R	priest/shadow	55	272847	0	mh	5.92	sta:2:sta:0.11:0.22,crit:1:spellCrit:5.7:5.7
-R	priest/shadow	55	275831	0	gear	2.75	int:5:int:0.55:2.75
-R	priest/shadow	55	278019	0	gear	4.66	sta:6:sta:0.11:0.66,sp:4:sp:1:4
-R	priest/shadow	55	288931	0	gear	16.0	sp:16:sp:1:16
+R	priest/shadow	55	16817	0	gear	32.6845	sta:10:sta:0.11:1.1,int:22:int:0.55:12.1,spi:10:spi:0.66:6.6,mp5:4:mp5:0.85:3.4,sp:9:sp:1:9,armor:57:armor:0.0085:0.485
+R	priest/shadow	55	17737	0	oh	6.5600000000000005	hit:0.8:spellHit:2.7:2.16,int:8:int:0.55:4.4
+R	priest/shadow	55	18438	0	gear	0.0	
+R	priest/shadow	55	18878	0	mh	30.230000000000004	sta:8:sta:0.11:0.88,int:17:int:0.55:9.35,sp:20:sp:1:20
+R	priest/shadow	55	19391	0	gear	21.6685	sta:13:sta:0.11:1.43,int:17:int:0.55:9.35,mp5:12:mp5:0.85:10.2,armor:81:armor:0.0085:0.689
+R	priest/shadow	55	19891	0	oh	27.63	sta:8:sta:0.11:0.88,int:11:int:0.55:6.05,sp:18:sp:1:18,spellHit:1:spellHit:2.7:2.7
+R	priest/shadow	55	20333	0	gear	20.669999999999998	int:20:int:0.55:11,spi:8:spi:0.66:5.28,sta:9:sta:0.11:0.99,mp5:4:mp5:0.85:3.4
+R	priest/shadow	55	20672	0	ranged	39.868399999999994	int:9:int:0.55:4.95,sp:5:sp:1:5,rdps:62.33:rdps:0.48:29.918
+R	priest/shadow	55	21522	0	mh	1.54	sta:14:sta:0.11:1.54
+R	priest/shadow	55	22231	0	gear	18.32	int:18:int:0.55:9.9,sta:11:sta:0.11:1.21,hit:1:spellHit:2.7:2.7,sp:4:sp:1:4,armor:60:armor:0.0085:0.51
+R	priest/shadow	55	22711	0	gear	27.368000000000002	sta:6:sta:0.11:0.66,int:6:int:0.55:3.3,sp:23:sp:1:23,armor:48:armor:0.0085:0.408
+R	priest/shadow	55	23237	0	gear	11.2	int:10:int:0.55:5.5,crit:1:spellCrit:5.7:5.7
+R	priest/shadow	55	213088	0	gear	5.484	sta:4:sta:0.11:0.44,int:4:int:0.55:2.2,spi:4:spi:0.66:2.64,armor:24:armor:0.0085:0.204
+R	priest/shadow	55	217301	0	gear	4.620000000000001	sta:7:sta:0.11:0.77,int:7:int:0.55:3.85
+R	priest/shadow	55	221025	0	gear	26.4845	sta:7:sta:0.11:0.77,int:8:int:0.55:4.4,sp:21:sp:1:21,armor:37:armor:0.0085:0.315
+R	priest/shadow	55	226744	0	gear	13.701	sta:11:sta:0.11:1.21,int:10:int:0.55:5.5,spi:10:spi:0.66:6.6,armor:46:armor:0.0085:0.391
+R	priest/shadow	55	227980	0	gear	38.926500000000004	sta:12:sta:0.11:1.32,int:15:int:0.55:8.25,spi:10:spi:0.66:6.6,sp:22:sp:1:22,armor:89:armor:0.0085:0.757
+R	priest/shadow	55	228292	0	gear	3.5415	sta:23:sta:0.11:2.53,armor:119:armor:0.0085:1.012
+R	priest/shadow	55	229374	0	mh	1.1	sta:10:sta:0.11:1.1
+R	priest/shadow	55	231271	0	gear	26.0	sp:26:sp:1:26
+R	priest/shadow	55	233502	0	gear	3.91	sta:11:sta:0.11:1.21,hit:1:spellHit:2.7:2.7
+R	priest/shadow	55	234020	0	gear	29.87	sta:7:sta:0.11:0.77,int:8:int:0.55:4.4,hit:1:spellHit:2.7:2.7,sp:22:sp:1:22
+R	priest/shadow	55	234614	0	gear	0.0	
+R	priest/shadow	55	236284	0	mh	148.7	sta:20:sta:0.11:2.2,int:20:int:0.55:11,hit:2:spellHit:2.7:5.4,crit:3:spellCrit:5.7:17.1,sp:113:sp:1:113
+R	priest/shadow	55	239581	0	gear	62.155	sta:17:sta:0.11:1.87,int:17:int:0.55:9.35,spShadow:50:spShadow:1:50,armor:110:armor:0.0085:0.935
+R	priest/shadow	55	249234	0	ranged	25.8016	sp:7:sp:1:7,rdps:39.17:rdps:0.48:18.802
+R	priest/shadow	55	254033	0	gear	11.620000000000001	spDmg:6:sp:1:6,spi:8:spi:0.66:5.28,armor:40:armor:0.0085:0.34
+R	priest/shadow	55	260820	0	gear	0.0	
+R	priest/shadow	55	271661	0	gear	0.017	armor:2:armor:0.0085:0.017
+R	priest/shadow	55	272406	0	gear	19.400000000000002	int:14:int:0.55:7.7,hit:1:spellHit:2.7:2.7,sp:9:sp:1:9
+R	priest/shadow	55	273423	0	gear	24.5975	int:10:int:0.55:5.5,sta:26:sta:0.11:2.86,spDmg:9:sp:1:9,spi:10:spi:0.66:6.6,armor:75:armor:0.0085:0.638
+R	priest/shadow	55	274919	0	ranged	22.72	spShadow:7:spShadow:1:7,rdps:32.75:rdps:0.48:15.72
+R	priest/shadow	55	276888	0	mh	2.42	int:2:int:0.55:1.1,spi:2:spi:0.66:1.32
+R	priest/shadow	55	279826	0	gear	23.957	sta:13:sta:0.11:1.43,spi:10:spi:0.66:6.6,int:8:int:0.55:4.4,sp:11:sp:1:11,armor:62:armor:0.0085:0.527
+R	priest/shadow	55	281315	0	gear	1.8030000000000002	int:3:int:0.55:1.65,armor:18:armor:0.0085:0.153
+R	priest/shadow	55	284197	0	gear	1.169	sta:8:sta:0.11:0.88,armor:34:armor:0.0085:0.289
+R	priest/shadow	55	286997	0	gear	21.653499999999998	spi:17:spi:0.66:11.22,sp:10:sp:1:10,armor:51:armor:0.0085:0.434
 R	priest/shadow	60	35	0	mh	0.0	
 R	priest/shadow	60	1299	0	gear	4.88	sta:4:sta:0.28:1.12,spi:3:spi:1:3,armor:20:armor:0.038:0.76
 R	priest/shadow	60	1831	0	mh	0.0	
@@ -1403,7 +1513,7 @@ R	priest/shadow	60	2364	0	gear	0.6839999999999999	armor:18:armor:0.038:0.684
 R	priest/shadow	60	2955	0	gear	14.714	sta:11:sta:0.28:3.08,spi:10:spi:1:10,armor:43:armor:0.038:1.634
 R	priest/shadow	60	3423	0	oh	0.0	
 R	priest/shadow	60	3947	0	gear	1.14	armor:30:armor:0.038:1.14
-R	priest/shadow	60	4454	0	mh	2.0	spi:2:spi:1:2
+R	priest/shadow	60	4454	0	mh	3.0	spi:3:spi:1:3
 R	priest/shadow	60	4947	0	mh	0.0	
 R	priest/shadow	60	5393	0	mh	0.0	
 R	priest/shadow	60	6333	0	mh	0.56	sta:2:sta:0.28:0.56
@@ -1453,8 +1563,8 @@ R	priest/shadow	60	7355	12757	gear	0.722	armor:19:armor:0.038:0.722
 R	priest/shadow	60	7355	12758	gear	0.722	armor:19:armor:0.038:0.722
 R	priest/shadow	60	7355	12759	gear	0.722	armor:19:armor:0.038:0.722
 R	priest/shadow	60	7355	12761	gear	9.722	spShadow:9:spShadow:1:9,armor:19:armor:0.038:0.722
-R	priest/shadow	60	7757	0	mh	7.96	sta:7:sta:0.28:1.96,int:15:int:0.4:6
-R	priest/shadow	60	9491	0	gear	10.778000000000002	sta:5:sta:0.28:1.4,int:8:int:0.4:3.2,spi:5:spi:1:5,armor:31:armor:0.038:1.178
+R	priest/shadow	60	7757	0	mh	4.760000000000001	sta:17:sta:0.28:4.76
+R	priest/shadow	60	9491	0	gear	10.777999999999999	int:8:int:0.4:3.2,spi:5:spi:1:5,sta:5:sta:0.28:1.4,armor:31:armor:0.038:1.178
 R	priest/shadow	60	9875	0	gear	1.1019999999999999	armor:29:armor:0.038:1.102
 R	priest/shadow	60	9875	12718	gear	6.542	int:8:int:0.4:3.2,sta:8:sta:0.28:2.24,armor:29:armor:0.038:1.102
 R	priest/shadow	60	9875	12719	gear	11.342	spi:8:spi:1:8,sta:8:sta:0.28:2.24,armor:29:armor:0.038:1.102
@@ -1507,174 +1617,196 @@ R	priest/shadow	60	10102	12759	gear	2.888	armor:76:armor:0.038:2.888
 R	priest/shadow	60	10102	12761	gear	39.888	spShadow:37:spShadow:1:37,armor:76:armor:0.038:2.888
 R	priest/shadow	60	10645	0	gear	0.0	
 R	priest/shadow	60	11288	0	ranged	4.275	sp:2:sp:1:2,rdps:17.5:rdps:0.13:2.275
-R	priest/shadow	60	11808	0	gear	8.412	sta:20:sta:0.28:5.6,armor:74:armor:0.038:2.812
-R	priest/shadow	60	12015	0	gear	0.0	
-R	priest/shadow	60	12015	12718	gear	6.120000000000001	int:9:int:0.4:3.6,sta:9:sta:0.28:2.52
-R	priest/shadow	60	12015	12719	gear	11.52	spi:9:spi:1:9,sta:9:sta:0.28:2.52
-R	priest/shadow	60	12015	12720	gear	12.6	int:9:int:0.4:3.6,spi:9:spi:1:9
-R	priest/shadow	60	12015	12721	gear	2.5200000000000005	sta:9:sta:0.28:2.52
-R	priest/shadow	60	12015	12722	gear	2.5200000000000005	sta:9:sta:0.28:2.52
-R	priest/shadow	60	12015	12723	gear	3.6	int:9:int:0.4:3.6
-R	priest/shadow	60	12015	12724	gear	3.6	int:9:int:0.4:3.6
-R	priest/shadow	60	12015	12725	gear	9.0	spi:9:spi:1:9
-R	priest/shadow	60	12015	12726	gear	9.0	spi:9:spi:1:9
-R	priest/shadow	60	12015	12727	gear	0.0	
-R	priest/shadow	60	12015	12728	gear	0.0	
-R	priest/shadow	60	12015	12729	gear	5.6000000000000005	int:14:int:0.4:5.6
-R	priest/shadow	60	12015	12730	gear	14.0	spi:14:spi:1:14
-R	priest/shadow	60	12015	12731	gear	3.9200000000000004	sta:14:sta:0.28:3.92
-R	priest/shadow	60	12015	12732	gear	0.0	
-R	priest/shadow	60	12015	12733	gear	0.0	
-R	priest/shadow	60	12015	12737	gear	0.0	
-R	priest/shadow	60	12015	12738	gear	3.7800000000000002	mp5:6:mp5:0.63:3.78
-R	priest/shadow	60	12015	12739	gear	0.0	
-R	priest/shadow	60	12015	12740	gear	2.5200000000000005	sta:9:sta:0.28:2.52
-R	priest/shadow	60	12015	12741	gear	2.5200000000000005	sta:9:sta:0.28:2.52
-R	priest/shadow	60	12015	12742	gear	2.5200000000000005	sta:9:sta:0.28:2.52
-R	priest/shadow	60	12015	12743	gear	2.5200000000000005	sta:9:sta:0.28:2.52
-R	priest/shadow	60	12015	12744	gear	2.5200000000000005	sta:9:sta:0.28:2.52
-R	priest/shadow	60	12015	12745	gear	10.68	int:10:int:0.4:4,sta:6:sta:0.28:1.68,sp:5:sp:1:5
-R	priest/shadow	60	12015	12746	gear	15.0	int:10:int:0.4:4,spi:6:spi:1:6,sp:5:sp:1:5
-R	priest/shadow	60	12015	12747	gear	13.8	spi:6:spi:1:6,sta:10:sta:0.28:2.8,sp:5:sp:1:5
-R	priest/shadow	60	12015	12748	gear	8.200000000000001	int:6:int:0.4:2.4,sta:10:sta:0.28:2.8,spDmg:3:sp:1:3
-R	priest/shadow	60	12015	12749	gear	13.0	int:10:int:0.4:4,spi:6:spi:1:6,spDmg:3:sp:1:3
-R	priest/shadow	60	12015	12750	gear	11.8	spi:6:spi:1:6,sta:10:sta:0.28:2.8,spDmg:3:sp:1:3
-R	priest/shadow	60	12015	12751	gear	2.8000000000000003	sta:10:sta:0.28:2.8
-R	priest/shadow	60	12015	12752	gear	2.8000000000000003	sta:10:sta:0.28:2.8
-R	priest/shadow	60	12015	12753	gear	2.8000000000000003	sta:10:sta:0.28:2.8
-R	priest/shadow	60	12015	12754	gear	7.800000000000001	sp:5:sp:1:5,sta:10:sta:0.28:2.8
-R	priest/shadow	60	12015	12755	gear	7.800000000000001	sp:5:sp:1:5,sta:10:sta:0.28:2.8
-R	priest/shadow	60	12805	0	gear	0.0	
-R	priest/shadow	60	13360	0	mh	11.4	sta:5:sta:0.28:1.4,int:10:int:0.4:4,spi:6:spi:1:6
-R	priest/shadow	60	14108	0	gear	13.938	spi:12:spi:1:12,armor:51:armor:0.038:1.938
-R	priest/shadow	60	14213	0	gear	1.8619999999999999	armor:49:armor:0.038:1.862
-R	priest/shadow	60	14213	12718	gear	8.662	int:10:int:0.4:4,sta:10:sta:0.28:2.8,armor:49:armor:0.038:1.862
-R	priest/shadow	60	14213	12719	gear	14.662	spi:10:spi:1:10,sta:10:sta:0.28:2.8,armor:49:armor:0.038:1.862
-R	priest/shadow	60	14213	12720	gear	15.862	int:10:int:0.4:4,spi:10:spi:1:10,armor:49:armor:0.038:1.862
-R	priest/shadow	60	14213	12729	gear	7.862	int:15:int:0.4:6,armor:49:armor:0.038:1.862
-R	priest/shadow	60	14213	12730	gear	16.862	spi:15:spi:1:15,armor:49:armor:0.038:1.862
-R	priest/shadow	60	14213	12731	gear	6.062	sta:15:sta:0.28:4.2,armor:49:armor:0.038:1.862
-R	priest/shadow	60	14213	12734	gear	19.862	sp:18:sp:1:18,armor:49:armor:0.038:1.862
-R	priest/shadow	60	14213	12735	gear	12.862	spDmg:11:sp:1:11,armor:49:armor:0.038:1.862
-R	priest/shadow	60	14213	12740	gear	4.662	sta:10:sta:0.28:2.8,armor:49:armor:0.038:1.862
-R	priest/shadow	60	14213	12741	gear	4.662	sta:10:sta:0.28:2.8,armor:49:armor:0.038:1.862
-R	priest/shadow	60	14213	12742	gear	4.662	sta:10:sta:0.28:2.8,armor:49:armor:0.038:1.862
-R	priest/shadow	60	14213	12743	gear	4.662	sta:10:sta:0.28:2.8,armor:49:armor:0.038:1.862
-R	priest/shadow	60	14213	12744	gear	4.662	sta:10:sta:0.28:2.8,armor:49:armor:0.038:1.862
-R	priest/shadow	60	14213	12745	gear	13.942	int:11:int:0.4:4.4,sta:6:sta:0.28:1.68,sp:6:sp:1:6,armor:49:armor:0.038:1.862
-R	priest/shadow	60	14213	12746	gear	18.261999999999997	int:11:int:0.4:4.4,spi:6:spi:1:6,sp:6:sp:1:6,armor:49:armor:0.038:1.862
-R	priest/shadow	60	14213	12747	gear	16.942	spi:6:spi:1:6,sta:11:sta:0.28:3.08,sp:6:sp:1:6,armor:49:armor:0.038:1.862
-R	priest/shadow	60	14213	12748	gear	11.342	int:6:int:0.4:2.4,sta:11:sta:0.28:3.08,spDmg:4:sp:1:4,armor:49:armor:0.038:1.862
-R	priest/shadow	60	14213	12749	gear	16.262	int:11:int:0.4:4.4,spi:6:spi:1:6,spDmg:4:sp:1:4,armor:49:armor:0.038:1.862
-R	priest/shadow	60	14213	12750	gear	14.942	spi:6:spi:1:6,sta:11:sta:0.28:3.08,spDmg:4:sp:1:4,armor:49:armor:0.038:1.862
-R	priest/shadow	60	14213	12756	gear	1.8619999999999999	armor:49:armor:0.038:1.862
-R	priest/shadow	60	14213	12757	gear	1.8619999999999999	armor:49:armor:0.038:1.862
-R	priest/shadow	60	14213	12758	gear	1.8619999999999999	armor:49:armor:0.038:1.862
-R	priest/shadow	60	14213	12759	gear	1.8619999999999999	armor:49:armor:0.038:1.862
-R	priest/shadow	60	14213	12761	gear	22.862	spShadow:21:spShadow:1:21,armor:49:armor:0.038:1.862
-R	priest/shadow	60	14312	0	gear	2.432	armor:64:armor:0.038:2.432
-R	priest/shadow	60	14312	12718	gear	14.672000000000002	int:18:int:0.4:7.2,sta:18:sta:0.28:5.04,armor:64:armor:0.038:2.432
-R	priest/shadow	60	14312	12719	gear	25.471999999999998	spi:18:spi:1:18,sta:18:sta:0.28:5.04,armor:64:armor:0.038:2.432
-R	priest/shadow	60	14312	12720	gear	27.631999999999998	int:18:int:0.4:7.2,spi:18:spi:1:18,armor:64:armor:0.038:2.432
-R	priest/shadow	60	14312	12729	gear	13.232000000000001	int:27:int:0.4:10.8,armor:64:armor:0.038:2.432
-R	priest/shadow	60	14312	12730	gear	29.432	spi:27:spi:1:27,armor:64:armor:0.038:2.432
-R	priest/shadow	60	14312	12731	gear	9.992	sta:27:sta:0.28:7.56,armor:64:armor:0.038:2.432
-R	priest/shadow	60	14312	12734	gear	34.432	sp:32:sp:1:32,armor:64:armor:0.038:2.432
-R	priest/shadow	60	14312	12735	gear	22.432	spDmg:20:sp:1:20,armor:64:armor:0.038:2.432
-R	priest/shadow	60	14312	12740	gear	7.472000000000001	sta:18:sta:0.28:5.04,armor:64:armor:0.038:2.432
-R	priest/shadow	60	14312	12741	gear	7.472000000000001	sta:18:sta:0.28:5.04,armor:64:armor:0.038:2.432
-R	priest/shadow	60	14312	12742	gear	7.472000000000001	sta:18:sta:0.28:5.04,armor:64:armor:0.038:2.432
-R	priest/shadow	60	14312	12743	gear	7.472000000000001	sta:18:sta:0.28:5.04,armor:64:armor:0.038:2.432
-R	priest/shadow	60	14312	12744	gear	7.472000000000001	sta:18:sta:0.28:5.04,armor:64:armor:0.038:2.432
-R	priest/shadow	60	14312	12745	gear	23.511999999999997	int:20:int:0.4:8,sta:11:sta:0.28:3.08,sp:10:sp:1:10,armor:64:armor:0.038:2.432
-R	priest/shadow	60	14312	12746	gear	31.432	int:20:int:0.4:8,spi:11:spi:1:11,sp:10:sp:1:10,armor:64:armor:0.038:2.432
-R	priest/shadow	60	14312	12747	gear	29.032	spi:11:spi:1:11,sta:20:sta:0.28:5.6,sp:10:sp:1:10,armor:64:armor:0.038:2.432
-R	priest/shadow	60	14312	12748	gear	18.432	int:11:int:0.4:4.4,sta:20:sta:0.28:5.6,spDmg:6:sp:1:6,armor:64:armor:0.038:2.432
-R	priest/shadow	60	14312	12749	gear	27.432	int:20:int:0.4:8,spi:11:spi:1:11,spDmg:6:sp:1:6,armor:64:armor:0.038:2.432
-R	priest/shadow	60	14312	12750	gear	25.032	spi:11:spi:1:11,sta:20:sta:0.28:5.6,spDmg:6:sp:1:6,armor:64:armor:0.038:2.432
-R	priest/shadow	60	14312	12756	gear	2.432	armor:64:armor:0.038:2.432
-R	priest/shadow	60	14312	12757	gear	2.432	armor:64:armor:0.038:2.432
-R	priest/shadow	60	14312	12758	gear	2.432	armor:64:armor:0.038:2.432
-R	priest/shadow	60	14312	12759	gear	2.432	armor:64:armor:0.038:2.432
-R	priest/shadow	60	14312	12761	gear	41.432	spShadow:39:spShadow:1:39,armor:64:armor:0.038:2.432
-R	priest/shadow	60	14440	0	gear	8.82	sta:6:sta:0.28:1.68,spi:6:spi:1:6,armor:30:armor:0.038:1.14
-R	priest/shadow	60	15299	0	gear	0.34199999999999997	armor:9:armor:0.038:0.342
-R	priest/shadow	60	15939	0	oh	0.0	
-R	priest/shadow	60	15939	12718	oh	6.120000000000001	int:9:int:0.4:3.6,sta:9:sta:0.28:2.52
-R	priest/shadow	60	15939	12719	oh	11.52	spi:9:spi:1:9,sta:9:sta:0.28:2.52
-R	priest/shadow	60	15939	12720	oh	12.6	int:9:int:0.4:3.6,spi:9:spi:1:9
-R	priest/shadow	60	15939	12721	oh	2.5200000000000005	sta:9:sta:0.28:2.52
-R	priest/shadow	60	15939	12722	oh	2.5200000000000005	sta:9:sta:0.28:2.52
-R	priest/shadow	60	15939	12723	oh	3.6	int:9:int:0.4:3.6
-R	priest/shadow	60	15939	12724	oh	3.6	int:9:int:0.4:3.6
-R	priest/shadow	60	15939	12725	oh	9.0	spi:9:spi:1:9
-R	priest/shadow	60	15939	12726	oh	9.0	spi:9:spi:1:9
-R	priest/shadow	60	15939	12727	oh	0.0	
-R	priest/shadow	60	15939	12728	oh	0.0	
-R	priest/shadow	60	15939	12729	oh	5.6000000000000005	int:14:int:0.4:5.6
-R	priest/shadow	60	15939	12730	oh	14.0	spi:14:spi:1:14
-R	priest/shadow	60	15939	12731	oh	3.9200000000000004	sta:14:sta:0.28:3.92
-R	priest/shadow	60	15939	12732	oh	0.0	
-R	priest/shadow	60	15939	12733	oh	0.0	
-R	priest/shadow	60	15939	12734	oh	16.0	sp:16:sp:1:16
-R	priest/shadow	60	15939	12735	oh	10.0	spDmg:10:sp:1:10
-R	priest/shadow	60	15939	12740	oh	2.5200000000000005	sta:9:sta:0.28:2.52
-R	priest/shadow	60	15939	12741	oh	2.5200000000000005	sta:9:sta:0.28:2.52
-R	priest/shadow	60	15939	12742	oh	2.5200000000000005	sta:9:sta:0.28:2.52
-R	priest/shadow	60	15939	12743	oh	2.5200000000000005	sta:9:sta:0.28:2.52
-R	priest/shadow	60	15939	12744	oh	2.5200000000000005	sta:9:sta:0.28:2.52
-R	priest/shadow	60	15939	12745	oh	10.68	int:10:int:0.4:4,sta:6:sta:0.28:1.68,sp:5:sp:1:5
-R	priest/shadow	60	15939	12746	oh	15.0	int:10:int:0.4:4,spi:6:spi:1:6,sp:5:sp:1:5
-R	priest/shadow	60	15939	12747	oh	13.8	spi:6:spi:1:6,sta:10:sta:0.28:2.8,sp:5:sp:1:5
-R	priest/shadow	60	15939	12748	oh	8.200000000000001	int:6:int:0.4:2.4,sta:10:sta:0.28:2.8,spDmg:3:sp:1:3
-R	priest/shadow	60	15939	12749	oh	13.0	int:10:int:0.4:4,spi:6:spi:1:6,spDmg:3:sp:1:3
-R	priest/shadow	60	15939	12750	oh	11.8	spi:6:spi:1:6,sta:10:sta:0.28:2.8,spDmg:3:sp:1:3
-R	priest/shadow	60	15939	12756	oh	0.0	
-R	priest/shadow	60	15939	12757	oh	0.0	
-R	priest/shadow	60	15939	12758	oh	0.0	
-R	priest/shadow	60	15939	12759	oh	0.0	
-R	priest/shadow	60	15939	12760	oh	0.0	
-R	priest/shadow	60	15939	12761	oh	20.0	spShadow:20:spShadow:1:20
+R	priest/shadow	60	11807	0	gear	18.548000000000002	spi:10:spi:1:10,sta:10:sta:0.28:2.8,int:10:int:0.4:4,armor:46:armor:0.038:1.748
+R	priest/shadow	60	12014	0	gear	0.0	
+R	priest/shadow	60	12014	12718	gear	6.120000000000001	int:9:int:0.4:3.6,sta:9:sta:0.28:2.52
+R	priest/shadow	60	12014	12719	gear	11.52	spi:9:spi:1:9,sta:9:sta:0.28:2.52
+R	priest/shadow	60	12014	12720	gear	12.6	int:9:int:0.4:3.6,spi:9:spi:1:9
+R	priest/shadow	60	12014	12721	gear	2.5200000000000005	sta:9:sta:0.28:2.52
+R	priest/shadow	60	12014	12722	gear	2.5200000000000005	sta:9:sta:0.28:2.52
+R	priest/shadow	60	12014	12723	gear	3.6	int:9:int:0.4:3.6
+R	priest/shadow	60	12014	12724	gear	3.6	int:9:int:0.4:3.6
+R	priest/shadow	60	12014	12725	gear	9.0	spi:9:spi:1:9
+R	priest/shadow	60	12014	12726	gear	9.0	spi:9:spi:1:9
+R	priest/shadow	60	12014	12727	gear	0.0	
+R	priest/shadow	60	12014	12728	gear	0.0	
+R	priest/shadow	60	12014	12729	gear	5.2	int:13:int:0.4:5.2
+R	priest/shadow	60	12014	12730	gear	13.0	spi:13:spi:1:13
+R	priest/shadow	60	12014	12731	gear	3.6400000000000006	sta:13:sta:0.28:3.64
+R	priest/shadow	60	12014	12732	gear	0.0	
+R	priest/shadow	60	12014	12733	gear	0.0	
+R	priest/shadow	60	12014	12737	gear	0.0	
+R	priest/shadow	60	12014	12738	gear	3.15	mp5:5:mp5:0.63:3.15
+R	priest/shadow	60	12014	12739	gear	0.0	
+R	priest/shadow	60	12014	12740	gear	2.5200000000000005	sta:9:sta:0.28:2.52
+R	priest/shadow	60	12014	12741	gear	2.5200000000000005	sta:9:sta:0.28:2.52
+R	priest/shadow	60	12014	12742	gear	2.5200000000000005	sta:9:sta:0.28:2.52
+R	priest/shadow	60	12014	12743	gear	2.5200000000000005	sta:9:sta:0.28:2.52
+R	priest/shadow	60	12014	12744	gear	2.5200000000000005	sta:9:sta:0.28:2.52
+R	priest/shadow	60	12014	12745	gear	10.0	int:9:int:0.4:3.6,sta:5:sta:0.28:1.4,sp:5:sp:1:5
+R	priest/shadow	60	12014	12746	gear	13.6	int:9:int:0.4:3.6,spi:5:spi:1:5,sp:5:sp:1:5
+R	priest/shadow	60	12014	12747	gear	12.52	spi:5:spi:1:5,sta:9:sta:0.28:2.52,sp:5:sp:1:5
+R	priest/shadow	60	12014	12748	gear	7.5200000000000005	int:5:int:0.4:2,sta:9:sta:0.28:2.52,spDmg:3:sp:1:3
+R	priest/shadow	60	12014	12749	gear	11.6	int:9:int:0.4:3.6,spi:5:spi:1:5,spDmg:3:sp:1:3
+R	priest/shadow	60	12014	12750	gear	10.52	spi:5:spi:1:5,sta:9:sta:0.28:2.52,spDmg:3:sp:1:3
+R	priest/shadow	60	12014	12751	gear	2.5200000000000005	sta:9:sta:0.28:2.52
+R	priest/shadow	60	12014	12752	gear	2.5200000000000005	sta:9:sta:0.28:2.52
+R	priest/shadow	60	12014	12753	gear	2.5200000000000005	sta:9:sta:0.28:2.52
+R	priest/shadow	60	12014	12754	gear	7.5200000000000005	sp:5:sp:1:5,sta:9:sta:0.28:2.52
+R	priest/shadow	60	12014	12755	gear	7.800000000000001	sp:5:sp:1:5,sta:10:sta:0.28:2.8
+R	priest/shadow	60	12794	0	mh	0.0	
+R	priest/shadow	60	13353	0	oh	34.24	spi:10:spi:1:10,int:15:int:0.4:6,sta:8:sta:0.28:2.24,spShadow:16:spShadow:1:16
+R	priest/shadow	60	14107	0	gear	33.156	int:12:int:0.4:4.8,spShadow:26:spShadow:1:26,armor:62:armor:0.038:2.356
+R	priest/shadow	60	14212	0	gear	1.33	armor:35:armor:0.038:1.33
+R	priest/shadow	60	14212	12718	gear	6.090000000000001	int:7:int:0.4:2.8,sta:7:sta:0.28:1.96,armor:35:armor:0.038:1.33
+R	priest/shadow	60	14212	12719	gear	10.290000000000001	spi:7:spi:1:7,sta:7:sta:0.28:1.96,armor:35:armor:0.038:1.33
+R	priest/shadow	60	14212	12720	gear	11.13	int:7:int:0.4:2.8,spi:7:spi:1:7,armor:35:armor:0.038:1.33
+R	priest/shadow	60	14212	12729	gear	5.33	int:10:int:0.4:4,armor:35:armor:0.038:1.33
+R	priest/shadow	60	14212	12730	gear	11.33	spi:10:spi:1:10,armor:35:armor:0.038:1.33
+R	priest/shadow	60	14212	12731	gear	4.130000000000001	sta:10:sta:0.28:2.8,armor:35:armor:0.038:1.33
+R	priest/shadow	60	14212	12734	gear	13.33	sp:12:sp:1:12,armor:35:armor:0.038:1.33
+R	priest/shadow	60	14212	12735	gear	8.33	spDmg:7:sp:1:7,armor:35:armor:0.038:1.33
+R	priest/shadow	60	14212	12740	gear	3.29	sta:7:sta:0.28:1.96,armor:35:armor:0.038:1.33
+R	priest/shadow	60	14212	12741	gear	3.29	sta:7:sta:0.28:1.96,armor:35:armor:0.038:1.33
+R	priest/shadow	60	14212	12742	gear	3.29	sta:7:sta:0.28:1.96,armor:35:armor:0.038:1.33
+R	priest/shadow	60	14212	12743	gear	3.29	sta:7:sta:0.28:1.96,armor:35:armor:0.038:1.33
+R	priest/shadow	60	14212	12744	gear	3.29	sta:7:sta:0.28:1.96,armor:35:armor:0.038:1.33
+R	priest/shadow	60	14212	12745	gear	9.25	int:7:int:0.4:2.8,sta:4:sta:0.28:1.12,sp:4:sp:1:4,armor:35:armor:0.038:1.33
+R	priest/shadow	60	14212	12746	gear	12.13	int:7:int:0.4:2.8,spi:4:spi:1:4,sp:4:sp:1:4,armor:35:armor:0.038:1.33
+R	priest/shadow	60	14212	12747	gear	11.290000000000001	spi:4:spi:1:4,sta:7:sta:0.28:1.96,sp:4:sp:1:4,armor:35:armor:0.038:1.33
+R	priest/shadow	60	14212	12748	gear	6.890000000000001	int:4:int:0.4:1.6,sta:7:sta:0.28:1.96,spDmg:2:sp:1:2,armor:35:armor:0.038:1.33
+R	priest/shadow	60	14212	12749	gear	10.13	int:7:int:0.4:2.8,spi:4:spi:1:4,spDmg:2:sp:1:2,armor:35:armor:0.038:1.33
+R	priest/shadow	60	14212	12750	gear	9.29	spi:4:spi:1:4,sta:7:sta:0.28:1.96,spDmg:2:sp:1:2,armor:35:armor:0.038:1.33
+R	priest/shadow	60	14212	12756	gear	1.33	armor:35:armor:0.038:1.33
+R	priest/shadow	60	14212	12757	gear	1.33	armor:35:armor:0.038:1.33
+R	priest/shadow	60	14212	12758	gear	1.33	armor:35:armor:0.038:1.33
+R	priest/shadow	60	14212	12759	gear	1.33	armor:35:armor:0.038:1.33
+R	priest/shadow	60	14212	12761	gear	15.33	spShadow:14:spShadow:1:14,armor:35:armor:0.038:1.33
+R	priest/shadow	60	14311	0	gear	1.178	armor:31:armor:0.038:1.178
+R	priest/shadow	60	14311	12718	gear	7.298000000000001	int:9:int:0.4:3.6,sta:9:sta:0.28:2.52,armor:31:armor:0.038:1.178
+R	priest/shadow	60	14311	12719	gear	12.698	spi:9:spi:1:9,sta:9:sta:0.28:2.52,armor:31:armor:0.038:1.178
+R	priest/shadow	60	14311	12720	gear	13.777999999999999	int:9:int:0.4:3.6,spi:9:spi:1:9,armor:31:armor:0.038:1.178
+R	priest/shadow	60	14311	12729	gear	6.378	int:13:int:0.4:5.2,armor:31:armor:0.038:1.178
+R	priest/shadow	60	14311	12730	gear	14.178	spi:13:spi:1:13,armor:31:armor:0.038:1.178
+R	priest/shadow	60	14311	12731	gear	4.8180000000000005	sta:13:sta:0.28:3.64,armor:31:armor:0.038:1.178
+R	priest/shadow	60	14311	12734	gear	16.178	sp:15:sp:1:15,armor:31:armor:0.038:1.178
+R	priest/shadow	60	14311	12735	gear	11.178	spDmg:10:sp:1:10,armor:31:armor:0.038:1.178
+R	priest/shadow	60	14311	12740	gear	3.6980000000000004	sta:9:sta:0.28:2.52,armor:31:armor:0.038:1.178
+R	priest/shadow	60	14311	12741	gear	3.6980000000000004	sta:9:sta:0.28:2.52,armor:31:armor:0.038:1.178
+R	priest/shadow	60	14311	12742	gear	3.6980000000000004	sta:9:sta:0.28:2.52,armor:31:armor:0.038:1.178
+R	priest/shadow	60	14311	12743	gear	3.6980000000000004	sta:9:sta:0.28:2.52,armor:31:armor:0.038:1.178
+R	priest/shadow	60	14311	12744	gear	3.6980000000000004	sta:9:sta:0.28:2.52,armor:31:armor:0.038:1.178
+R	priest/shadow	60	14311	12745	gear	11.178	int:9:int:0.4:3.6,sta:5:sta:0.28:1.4,sp:5:sp:1:5,armor:31:armor:0.038:1.178
+R	priest/shadow	60	14311	12746	gear	14.777999999999999	int:9:int:0.4:3.6,spi:5:spi:1:5,sp:5:sp:1:5,armor:31:armor:0.038:1.178
+R	priest/shadow	60	14311	12747	gear	13.698	spi:5:spi:1:5,sta:9:sta:0.28:2.52,sp:5:sp:1:5,armor:31:armor:0.038:1.178
+R	priest/shadow	60	14311	12748	gear	8.698	int:5:int:0.4:2,sta:9:sta:0.28:2.52,spDmg:3:sp:1:3,armor:31:armor:0.038:1.178
+R	priest/shadow	60	14311	12749	gear	12.777999999999999	int:9:int:0.4:3.6,spi:5:spi:1:5,spDmg:3:sp:1:3,armor:31:armor:0.038:1.178
+R	priest/shadow	60	14311	12750	gear	11.698	spi:5:spi:1:5,sta:9:sta:0.28:2.52,spDmg:3:sp:1:3,armor:31:armor:0.038:1.178
+R	priest/shadow	60	14311	12756	gear	1.178	armor:31:armor:0.038:1.178
+R	priest/shadow	60	14311	12757	gear	1.178	armor:31:armor:0.038:1.178
+R	priest/shadow	60	14311	12758	gear	1.178	armor:31:armor:0.038:1.178
+R	priest/shadow	60	14311	12759	gear	1.178	armor:31:armor:0.038:1.178
+R	priest/shadow	60	14311	12761	gear	20.178	spShadow:19:spShadow:1:19,armor:31:armor:0.038:1.178
+R	priest/shadow	60	14439	0	gear	10.626	spi:8:spi:1:8,int:4:int:0.4:1.6,armor:27:armor:0.038:1.026
+R	priest/shadow	60	15283	0	ranged	7.3788	rdps:56.76:rdps:0.13:7.379
+R	priest/shadow	60	15283	12718	ranged	11.4588	int:6:int:0.4:2.4,sta:6:sta:0.28:1.68,rdps:56.76:rdps:0.13:7.379
+R	priest/shadow	60	15283	12719	ranged	15.0588	spi:6:spi:1:6,sta:6:sta:0.28:1.68,rdps:56.76:rdps:0.13:7.379
+R	priest/shadow	60	15283	12720	ranged	15.7788	int:6:int:0.4:2.4,spi:6:spi:1:6,rdps:56.76:rdps:0.13:7.379
+R	priest/shadow	60	15283	12729	ranged	10.9788	int:9:int:0.4:3.6,rdps:56.76:rdps:0.13:7.379
+R	priest/shadow	60	15283	12730	ranged	16.3788	spi:9:spi:1:9,rdps:56.76:rdps:0.13:7.379
+R	priest/shadow	60	15283	12731	ranged	9.898800000000001	sta:9:sta:0.28:2.52,rdps:56.76:rdps:0.13:7.379
+R	priest/shadow	60	15283	12734	ranged	18.3788	sp:11:sp:1:11,rdps:56.76:rdps:0.13:7.379
+R	priest/shadow	60	15283	12735	ranged	14.3788	spDmg:7:sp:1:7,rdps:56.76:rdps:0.13:7.379
+R	priest/shadow	60	15283	12740	ranged	9.0588	sta:6:sta:0.28:1.68,rdps:56.76:rdps:0.13:7.379
+R	priest/shadow	60	15283	12741	ranged	9.0588	sta:6:sta:0.28:1.68,rdps:56.76:rdps:0.13:7.379
+R	priest/shadow	60	15283	12742	ranged	9.0588	sta:6:sta:0.28:1.68,rdps:56.76:rdps:0.13:7.379
+R	priest/shadow	60	15283	12743	ranged	9.0588	sta:6:sta:0.28:1.68,rdps:56.76:rdps:0.13:7.379
+R	priest/shadow	60	15283	12744	ranged	9.0588	sta:6:sta:0.28:1.68,rdps:56.76:rdps:0.13:7.379
+R	priest/shadow	60	15283	12745	ranged	14.2988	int:7:int:0.4:2.8,sta:4:sta:0.28:1.12,sp:3:sp:1:3,rdps:56.76:rdps:0.13:7.379
+R	priest/shadow	60	15283	12746	ranged	17.178800000000003	int:7:int:0.4:2.8,spi:4:spi:1:4,sp:3:sp:1:3,rdps:56.76:rdps:0.13:7.379
+R	priest/shadow	60	15283	12747	ranged	16.3388	spi:4:spi:1:4,sta:7:sta:0.28:1.96,sp:3:sp:1:3,rdps:56.76:rdps:0.13:7.379
+R	priest/shadow	60	15283	12748	ranged	12.9388	int:4:int:0.4:1.6,sta:7:sta:0.28:1.96,spDmg:2:sp:1:2,rdps:56.76:rdps:0.13:7.379
+R	priest/shadow	60	15283	12749	ranged	16.178800000000003	int:7:int:0.4:2.8,spi:4:spi:1:4,spDmg:2:sp:1:2,rdps:56.76:rdps:0.13:7.379
+R	priest/shadow	60	15283	12750	ranged	15.338799999999999	spi:4:spi:1:4,sta:7:sta:0.28:1.96,spDmg:2:sp:1:2,rdps:56.76:rdps:0.13:7.379
+R	priest/shadow	60	15283	12756	ranged	7.3788	rdps:56.76:rdps:0.13:7.379
+R	priest/shadow	60	15283	12757	ranged	7.3788	rdps:56.76:rdps:0.13:7.379
+R	priest/shadow	60	15283	12758	ranged	7.3788	rdps:56.76:rdps:0.13:7.379
+R	priest/shadow	60	15283	12759	ranged	7.3788	rdps:56.76:rdps:0.13:7.379
+R	priest/shadow	60	15283	12761	ranged	20.3788	spShadow:13:spShadow:1:13,rdps:56.76:rdps:0.13:7.379
+R	priest/shadow	60	15938	0	oh	0.0	
+R	priest/shadow	60	15938	12718	oh	6.120000000000001	int:9:int:0.4:3.6,sta:9:sta:0.28:2.52
+R	priest/shadow	60	15938	12719	oh	11.52	spi:9:spi:1:9,sta:9:sta:0.28:2.52
+R	priest/shadow	60	15938	12720	oh	12.6	int:9:int:0.4:3.6,spi:9:spi:1:9
+R	priest/shadow	60	15938	12721	oh	2.5200000000000005	sta:9:sta:0.28:2.52
+R	priest/shadow	60	15938	12722	oh	2.5200000000000005	sta:9:sta:0.28:2.52
+R	priest/shadow	60	15938	12723	oh	3.6	int:9:int:0.4:3.6
+R	priest/shadow	60	15938	12724	oh	3.6	int:9:int:0.4:3.6
+R	priest/shadow	60	15938	12725	oh	9.0	spi:9:spi:1:9
+R	priest/shadow	60	15938	12726	oh	9.0	spi:9:spi:1:9
+R	priest/shadow	60	15938	12727	oh	0.0	
+R	priest/shadow	60	15938	12728	oh	0.0	
+R	priest/shadow	60	15938	12729	oh	5.6000000000000005	int:14:int:0.4:5.6
+R	priest/shadow	60	15938	12730	oh	14.0	spi:14:spi:1:14
+R	priest/shadow	60	15938	12731	oh	3.9200000000000004	sta:14:sta:0.28:3.92
+R	priest/shadow	60	15938	12732	oh	0.0	
+R	priest/shadow	60	15938	12733	oh	0.0	
+R	priest/shadow	60	15938	12734	oh	16.0	sp:16:sp:1:16
+R	priest/shadow	60	15938	12735	oh	10.0	spDmg:10:sp:1:10
+R	priest/shadow	60	15938	12740	oh	2.5200000000000005	sta:9:sta:0.28:2.52
+R	priest/shadow	60	15938	12741	oh	2.5200000000000005	sta:9:sta:0.28:2.52
+R	priest/shadow	60	15938	12742	oh	2.5200000000000005	sta:9:sta:0.28:2.52
+R	priest/shadow	60	15938	12743	oh	2.5200000000000005	sta:9:sta:0.28:2.52
+R	priest/shadow	60	15938	12744	oh	2.5200000000000005	sta:9:sta:0.28:2.52
+R	priest/shadow	60	15938	12745	oh	10.68	int:10:int:0.4:4,sta:6:sta:0.28:1.68,sp:5:sp:1:5
+R	priest/shadow	60	15938	12746	oh	15.0	int:10:int:0.4:4,spi:6:spi:1:6,sp:5:sp:1:5
+R	priest/shadow	60	15938	12747	oh	13.8	spi:6:spi:1:6,sta:10:sta:0.28:2.8,sp:5:sp:1:5
+R	priest/shadow	60	15938	12748	oh	8.200000000000001	int:6:int:0.4:2.4,sta:10:sta:0.28:2.8,spDmg:3:sp:1:3
+R	priest/shadow	60	15938	12749	oh	13.0	int:10:int:0.4:4,spi:6:spi:1:6,spDmg:3:sp:1:3
+R	priest/shadow	60	15938	12750	oh	11.8	spi:6:spi:1:6,sta:10:sta:0.28:2.8,spDmg:3:sp:1:3
+R	priest/shadow	60	15938	12756	oh	0.0	
+R	priest/shadow	60	15938	12757	oh	0.0	
+R	priest/shadow	60	15938	12758	oh	0.0	
+R	priest/shadow	60	15938	12759	oh	0.0	
+R	priest/shadow	60	15938	12760	oh	0.0	
+R	priest/shadow	60	15938	12761	oh	20.0	spShadow:20:spShadow:1:20
 R	priest/shadow	60	15945	0	oh	2.56	sta:2:sta:0.28:0.56,spi:2:spi:1:2
-R	priest/shadow	60	16819	0	gear	20.772000000000002	sta:8:sta:0.28:2.24,int:14:int:0.4:5.6,spi:10:spi:1:10,mp5:2:mp5:0.63:1.26,armor:44:armor:0.038:1.672
-R	priest/shadow	60	17739	0	gear	4.766	sta:12:sta:0.28:3.36,armor:37:armor:0.038:1.406
-R	priest/shadow	60	18440	0	gear	5.0280000000000005	sta:9:sta:0.28:2.52,armor:66:armor:0.038:2.508
-R	priest/shadow	60	18879	0	gear	9.780000000000001	sta:20:sta:0.28:5.6,armor:110:armor:0.038:4.18
-R	priest/shadow	60	19395	0	gear	5.67	mp5:9:mp5:0.63:5.67
-R	priest/shadow	60	19893	0	gear	20.6	sta:10:sta:0.28:2.8,int:10:int:0.4:4,spellHit:1:spellHit:2.8:2.8,sp:11:sp:1:11
-R	priest/shadow	60	20330	0	gear	36.998	int:27:int:0.4:10.8,spi:11:spi:1:11,sta:12:sta:0.28:3.36,crit:1:spellCrit:8:8,armor:101:armor:0.038:3.838
-R	priest/shadow	60	20652	0	gear	2.014	armor:53:armor:0.038:2.014
-R	priest/shadow	60	20652	12745	gear	17.254	int:15:int:0.4:6,sta:8:sta:0.28:2.24,sp:7:sp:1:7,armor:53:armor:0.038:2.014
-R	priest/shadow	60	20652	12746	gear	23.014	int:15:int:0.4:6,spi:8:spi:1:8,sp:7:sp:1:7,armor:53:armor:0.038:2.014
-R	priest/shadow	60	20652	12747	gear	21.214	spi:8:spi:1:8,sta:15:sta:0.28:4.2,sp:7:sp:1:7,armor:53:armor:0.038:2.014
-R	priest/shadow	60	20652	12748	gear	14.414	int:8:int:0.4:3.2,sta:15:sta:0.28:4.2,spDmg:5:sp:1:5,armor:53:armor:0.038:2.014
-R	priest/shadow	60	20652	12749	gear	21.014	int:15:int:0.4:6,spi:8:spi:1:8,spDmg:5:sp:1:5,armor:53:armor:0.038:2.014
-R	priest/shadow	60	20652	12750	gear	19.214	spi:8:spi:1:8,sta:15:sta:0.28:4.2,spDmg:5:sp:1:5,armor:53:armor:0.038:2.014
-R	priest/shadow	60	21500	0	gear	14.568	sta:14:sta:0.28:3.92,int:15:int:0.4:6,mp5:4:mp5:0.63:2.52,armor:56:armor:0.038:2.128
-R	priest/shadow	60	22085	0	gear	44.098000000000006	int:14:int:0.4:5.6,sta:13:sta:0.28:3.64,mp5:6:mp5:0.63:3.78,sp:16:sp:1:16,spi:12:spi:1:12,armor:81:armor:0.038:3.078
-R	priest/shadow	60	22678	0	gear	0.0	
-R	priest/shadow	60	23177	0	ranged	14.9504	spShadow:10:spShadow:1:10,rdps:38.08:rdps:0.13:4.95
-R	priest/shadow	60	212583	0	mh	0.8400000000000001	sta:3:sta:0.28:0.84
-R	priest/shadow	60	217296	0	gear	7.5200000000000005	sta:9:sta:0.28:2.52,sp:5:sp:1:5
-R	priest/shadow	60	220907	0	gear	34.012	sta:13:sta:0.28:3.64,int:12:int:0.4:4.8,crit:1:spellCrit:8:8,sp:14:sp:1:14,armor:94:armor:0.038:3.572
-R	priest/shadow	60	226731	0	gear	29.336	sta:7:sta:0.28:1.96,int:11:int:0.4:4.4,sp:21:sp:1:21,armor:52:armor:0.038:1.976
-R	priest/shadow	60	227967	0	gear	0.0	
-R	priest/shadow	60	228282	0	gear	42.918	sta:20:sta:0.28:5.6,sp:35:sp:1:35,armor:61:armor:0.038:2.318
-R	priest/shadow	60	228757	0	mh	0.0	
-R	priest/shadow	60	231168	0	gear	74.038	sta:15:sta:0.28:4.2,int:20:int:0.4:8,crit:1:spellCrit:8:8,spShadow:50:spShadow:1:50,armor:101:armor:0.038:3.838
-R	priest/shadow	60	233395	0	gear	95.174	sta:14:sta:0.28:3.92,int:18:int:0.4:7.2,crit:2:spellCrit:8:16,spShadow:63:spShadow:1:63,armor:133:armor:0.038:5.054
-R	priest/shadow	60	233994	0	gear	38.2	int:18:int:0.4:7.2,crit:1:spellCrit:8:8,spDmg:23:sp:1:23
-R	priest/shadow	60	234576	0	mh	68.08	sta:21:sta:0.28:5.88,int:8:int:0.4:3.2,crit:1:spellCrit:8:8,spDmg:51:sp:1:51
-R	priest/shadow	60	236277	0	gear	25.84	sta:8:sta:0.28:2.24,int:9:int:0.4:3.6,spi:9:spi:1:9,spDmg:11:sp:1:11
-R	priest/shadow	60	239565	0	gear	108.548	sta:15:sta:0.28:4.2,int:17:int:0.4:6.8,crit:2:spellCrit:8:16,spShadow:76:spShadow:1:76,armor:146:armor:0.038:5.548
-R	priest/shadow	60	247789	0	ranged	0.52	rdps:4:rdps:0.13:0.52
-R	priest/shadow	60	254029	0	gear	6.688000000000001	int:7:int:0.4:2.8,sta:9:sta:0.28:2.52,armor:36:armor:0.038:1.368
-R	priest/shadow	60	260829	0	gear	1.672	armor:44:armor:0.038:1.672
-R	priest/shadow	60	271909	0	gear	3.9200000000000004	sta:14:sta:0.28:3.92
-R	priest/shadow	60	272847	0	mh	8.56	sta:2:sta:0.28:0.56,crit:1:spellCrit:8:8
-R	priest/shadow	60	275831	0	gear	2.0	int:5:int:0.4:2
-R	priest/shadow	60	278019	0	gear	5.68	sta:6:sta:0.28:1.68,sp:4:sp:1:4
-R	priest/shadow	60	288931	0	gear	16.0	sp:16:sp:1:16
+R	priest/shadow	60	16817	0	gear	35.286	sta:10:sta:0.28:2.8,int:22:int:0.4:8.8,spi:10:spi:1:10,mp5:4:mp5:0.63:2.52,sp:9:sp:1:9,armor:57:armor:0.038:2.166
+R	priest/shadow	60	17737	0	oh	5.4399999999999995	hit:0.8:spellHit:2.8:2.24,int:8:int:0.4:3.2
+R	priest/shadow	60	18438	0	gear	0.0	
+R	priest/shadow	60	18878	0	mh	29.04	sta:8:sta:0.28:2.24,int:17:int:0.4:6.8,sp:20:sp:1:20
+R	priest/shadow	60	19391	0	gear	21.078	sta:13:sta:0.28:3.64,int:17:int:0.4:6.8,mp5:12:mp5:0.63:7.56,armor:81:armor:0.038:3.078
+R	priest/shadow	60	19891	0	oh	27.44	sta:8:sta:0.28:2.24,int:11:int:0.4:4.4,sp:18:sp:1:18,spellHit:1:spellHit:2.8:2.8
+R	priest/shadow	60	20333	0	gear	21.04	int:20:int:0.4:8,spi:8:spi:1:8,sta:9:sta:0.28:2.52,mp5:4:mp5:0.63:2.52
+R	priest/shadow	60	20672	0	ranged	16.7029	int:9:int:0.4:3.6,sp:5:sp:1:5,rdps:62.33:rdps:0.13:8.103
+R	priest/shadow	60	21522	0	mh	3.9200000000000004	sta:14:sta:0.28:3.92
+R	priest/shadow	60	22231	0	gear	19.360000000000003	int:18:int:0.4:7.2,sta:11:sta:0.28:3.08,hit:1:spellHit:2.8:2.8,sp:4:sp:1:4,armor:60:armor:0.038:2.28
+R	priest/shadow	60	22711	0	gear	28.903999999999996	sta:6:sta:0.28:1.68,int:6:int:0.4:2.4,sp:23:sp:1:23,armor:48:armor:0.038:1.824
+R	priest/shadow	60	23237	0	gear	12.0	int:10:int:0.4:4,crit:1:spellCrit:8:8
+R	priest/shadow	60	213088	0	gear	7.632000000000001	sta:4:sta:0.28:1.12,int:4:int:0.4:1.6,spi:4:spi:1:4,armor:24:armor:0.038:0.912
+R	priest/shadow	60	217301	0	gear	4.760000000000001	sta:7:sta:0.28:1.96,int:7:int:0.4:2.8
+R	priest/shadow	60	221025	0	gear	27.566	sta:7:sta:0.28:1.96,int:8:int:0.4:3.2,sp:21:sp:1:21,armor:37:armor:0.038:1.406
+R	priest/shadow	60	226744	0	gear	18.828	sta:11:sta:0.28:3.08,int:10:int:0.4:4,spi:10:spi:1:10,armor:46:armor:0.038:1.748
+R	priest/shadow	60	227980	0	gear	44.742	sta:12:sta:0.28:3.36,int:15:int:0.4:6,spi:10:spi:1:10,sp:22:sp:1:22,armor:89:armor:0.038:3.382
+R	priest/shadow	60	228292	0	gear	10.962	sta:23:sta:0.28:6.44,armor:119:armor:0.038:4.522
+R	priest/shadow	60	229374	0	mh	2.8000000000000003	sta:10:sta:0.28:2.8
+R	priest/shadow	60	231271	0	gear	26.0	sp:26:sp:1:26
+R	priest/shadow	60	233502	0	gear	5.88	sta:11:sta:0.28:3.08,hit:1:spellHit:2.8:2.8
+R	priest/shadow	60	234020	0	gear	29.96	sta:7:sta:0.28:1.96,int:8:int:0.4:3.2,hit:1:spellHit:2.8:2.8,sp:22:sp:1:22
+R	priest/shadow	60	234614	0	gear	0.0	
+R	priest/shadow	60	236284	0	mh	156.2	sta:20:sta:0.28:5.6,int:20:int:0.4:8,hit:2:spellHit:2.8:5.6,crit:3:spellCrit:8:24,sp:113:sp:1:113
+R	priest/shadow	60	239581	0	gear	65.74000000000001	sta:17:sta:0.28:4.76,int:17:int:0.4:6.8,spShadow:50:spShadow:1:50,armor:110:armor:0.038:4.18
+R	priest/shadow	60	249234	0	ranged	12.0921	sp:7:sp:1:7,rdps:39.17:rdps:0.13:5.092
+R	priest/shadow	60	254033	0	gear	15.52	spDmg:6:sp:1:6,spi:8:spi:1:8,armor:40:armor:0.038:1.52
+R	priest/shadow	60	260820	0	gear	0.0	
+R	priest/shadow	60	271661	0	gear	0.076	armor:2:armor:0.038:0.076
+R	priest/shadow	60	272406	0	gear	17.4	int:14:int:0.4:5.6,hit:1:spellHit:2.8:2.8,sp:9:sp:1:9
+R	priest/shadow	60	273423	0	gear	33.13	int:10:int:0.4:4,sta:26:sta:0.28:7.28,spDmg:9:sp:1:9,spi:10:spi:1:10,armor:75:armor:0.038:2.85
+R	priest/shadow	60	274919	0	ranged	11.2575	spShadow:7:spShadow:1:7,rdps:32.75:rdps:0.13:4.258
+R	priest/shadow	60	276888	0	mh	2.8	int:2:int:0.4:0.8,spi:2:spi:1:2
+R	priest/shadow	60	279826	0	gear	30.195999999999998	sta:13:sta:0.28:3.64,spi:10:spi:1:10,int:8:int:0.4:3.2,sp:11:sp:1:11,armor:62:armor:0.038:2.356
+R	priest/shadow	60	281315	0	gear	1.8840000000000001	int:3:int:0.4:1.2,armor:18:armor:0.038:0.684
+R	priest/shadow	60	284197	0	gear	3.532	sta:8:sta:0.28:2.24,armor:34:armor:0.038:1.292
+R	priest/shadow	60	286997	0	gear	28.938	spi:17:spi:1:17,sp:10:sp:1:10,armor:51:armor:0.038:1.938
 R	priest/holy	12	35	0	mh	0.0	
 R	priest/holy	12	1299	0	gear	4.17	sta:4:sta:0.75:3,spi:3:spi:0.11:0.33,armor:20:armor:0.042:0.84
 R	priest/holy	12	1831	0	mh	0.0	
@@ -1682,7 +1814,7 @@ R	priest/holy	12	2364	0	gear	0.756	armor:18:armor:0.042:0.756
 R	priest/holy	12	2955	0	gear	11.155999999999999	sta:11:sta:0.75:8.25,spi:10:spi:0.11:1.1,armor:43:armor:0.042:1.806
 R	priest/holy	12	3423	0	oh	0.0	
 R	priest/holy	12	3947	0	gear	1.26	armor:30:armor:0.042:1.26
-R	priest/holy	12	4454	0	mh	0.22	spi:2:spi:0.11:0.22
+R	priest/holy	12	4454	0	mh	0.33	spi:3:spi:0.11:0.33
 R	priest/holy	12	4947	0	mh	0.0	
 R	priest/holy	12	5393	0	mh	0.0	
 R	priest/holy	12	6333	0	mh	1.5	sta:2:sta:0.75:1.5
@@ -1732,8 +1864,8 @@ R	priest/holy	12	7355	12757	gear	0.798	armor:19:armor:0.042:0.798
 R	priest/holy	12	7355	12758	gear	0.798	armor:19:armor:0.042:0.798
 R	priest/holy	12	7355	12759	gear	0.798	armor:19:armor:0.042:0.798
 R	priest/holy	12	7355	12761	gear	8.538	spShadow:9:spShadow:0.86:7.74,armor:19:armor:0.042:0.798
-R	priest/holy	12	7757	0	mh	11.100000000000001	sta:7:sta:0.75:5.25,int:15:int:0.39:5.85
-R	priest/holy	12	9491	0	gear	8.722	sta:5:sta:0.75:3.75,int:8:int:0.39:3.12,spi:5:spi:0.11:0.55,armor:31:armor:0.042:1.302
+R	priest/holy	12	7757	0	mh	12.75	sta:17:sta:0.75:12.75
+R	priest/holy	12	9491	0	gear	8.722	int:8:int:0.39:3.12,spi:5:spi:0.11:0.55,sta:5:sta:0.75:3.75,armor:31:armor:0.042:1.302
 R	priest/holy	12	9875	0	gear	1.218	armor:29:armor:0.042:1.218
 R	priest/holy	12	9875	12718	gear	10.338000000000001	int:8:int:0.39:3.12,sta:8:sta:0.75:6,armor:29:armor:0.042:1.218
 R	priest/holy	12	9875	12719	gear	8.097999999999999	spi:8:spi:0.11:0.88,sta:8:sta:0.75:6,armor:29:armor:0.042:1.218
@@ -1786,174 +1918,196 @@ R	priest/holy	12	10102	12759	gear	3.192	armor:76:armor:0.042:3.192
 R	priest/holy	12	10102	12761	gear	35.012	spShadow:37:spShadow:0.86:31.82,armor:76:armor:0.042:3.192
 R	priest/holy	12	10645	0	gear	0.0	
 R	priest/holy	12	11288	0	ranged	86.0	sp:2:sp:1:2,rdps:17.5:rdps:4.8:84
-R	priest/holy	12	11808	0	gear	18.108	sta:20:sta:0.75:15,armor:74:armor:0.042:3.108
-R	priest/holy	12	12015	0	gear	0.0	
-R	priest/holy	12	12015	12718	gear	10.26	int:9:int:0.39:3.51,sta:9:sta:0.75:6.75
-R	priest/holy	12	12015	12719	gear	7.74	spi:9:spi:0.11:0.99,sta:9:sta:0.75:6.75
-R	priest/holy	12	12015	12720	gear	4.5	int:9:int:0.39:3.51,spi:9:spi:0.11:0.99
-R	priest/holy	12	12015	12721	gear	6.75	sta:9:sta:0.75:6.75
-R	priest/holy	12	12015	12722	gear	6.75	sta:9:sta:0.75:6.75
-R	priest/holy	12	12015	12723	gear	3.5100000000000002	int:9:int:0.39:3.51
-R	priest/holy	12	12015	12724	gear	3.5100000000000002	int:9:int:0.39:3.51
-R	priest/holy	12	12015	12725	gear	0.99	spi:9:spi:0.11:0.99
-R	priest/holy	12	12015	12726	gear	0.99	spi:9:spi:0.11:0.99
-R	priest/holy	12	12015	12727	gear	0.0	
-R	priest/holy	12	12015	12728	gear	0.0	
-R	priest/holy	12	12015	12729	gear	5.46	int:14:int:0.39:5.46
-R	priest/holy	12	12015	12730	gear	1.54	spi:14:spi:0.11:1.54
-R	priest/holy	12	12015	12731	gear	10.5	sta:14:sta:0.75:10.5
-R	priest/holy	12	12015	12732	gear	0.0	
-R	priest/holy	12	12015	12733	gear	0.0	
-R	priest/holy	12	12015	12737	gear	0.0	
-R	priest/holy	12	12015	12738	gear	2.58	mp5:6:mp5:0.43:2.58
-R	priest/holy	12	12015	12739	gear	0.0	
-R	priest/holy	12	12015	12740	gear	6.75	sta:9:sta:0.75:6.75
-R	priest/holy	12	12015	12741	gear	6.75	sta:9:sta:0.75:6.75
-R	priest/holy	12	12015	12742	gear	6.75	sta:9:sta:0.75:6.75
-R	priest/holy	12	12015	12743	gear	6.75	sta:9:sta:0.75:6.75
-R	priest/holy	12	12015	12744	gear	6.75	sta:9:sta:0.75:6.75
-R	priest/holy	12	12015	12745	gear	13.4	int:10:int:0.39:3.9,sta:6:sta:0.75:4.5,sp:5:sp:1:5
-R	priest/holy	12	12015	12746	gear	9.56	int:10:int:0.39:3.9,spi:6:spi:0.11:0.66,sp:5:sp:1:5
-R	priest/holy	12	12015	12747	gear	13.16	spi:6:spi:0.11:0.66,sta:10:sta:0.75:7.5,sp:5:sp:1:5
-R	priest/holy	12	12015	12748	gear	12.84	int:6:int:0.39:2.34,sta:10:sta:0.75:7.5,spDmg:3:sp:1:3
-R	priest/holy	12	12015	12749	gear	7.5600000000000005	int:10:int:0.39:3.9,spi:6:spi:0.11:0.66,spDmg:3:sp:1:3
-R	priest/holy	12	12015	12750	gear	11.16	spi:6:spi:0.11:0.66,sta:10:sta:0.75:7.5,spDmg:3:sp:1:3
-R	priest/holy	12	12015	12751	gear	7.5	sta:10:sta:0.75:7.5
-R	priest/holy	12	12015	12752	gear	7.5	sta:10:sta:0.75:7.5
-R	priest/holy	12	12015	12753	gear	7.5	sta:10:sta:0.75:7.5
-R	priest/holy	12	12015	12754	gear	12.5	sp:5:sp:1:5,sta:10:sta:0.75:7.5
-R	priest/holy	12	12015	12755	gear	12.5	sp:5:sp:1:5,sta:10:sta:0.75:7.5
-R	priest/holy	12	12805	0	gear	0.0	
-R	priest/holy	12	13360	0	mh	8.31	sta:5:sta:0.75:3.75,int:10:int:0.39:3.9,spi:6:spi:0.11:0.66
-R	priest/holy	12	14108	0	gear	3.4620000000000006	spi:12:spi:0.11:1.32,armor:51:armor:0.042:2.142
-R	priest/holy	12	14213	0	gear	2.0580000000000003	armor:49:armor:0.042:2.058
-R	priest/holy	12	14213	12718	gear	13.458	int:10:int:0.39:3.9,sta:10:sta:0.75:7.5,armor:49:armor:0.042:2.058
-R	priest/holy	12	14213	12719	gear	10.658	spi:10:spi:0.11:1.1,sta:10:sta:0.75:7.5,armor:49:armor:0.042:2.058
-R	priest/holy	12	14213	12720	gear	7.058	int:10:int:0.39:3.9,spi:10:spi:0.11:1.1,armor:49:armor:0.042:2.058
-R	priest/holy	12	14213	12729	gear	7.908000000000001	int:15:int:0.39:5.85,armor:49:armor:0.042:2.058
-R	priest/holy	12	14213	12730	gear	3.708	spi:15:spi:0.11:1.65,armor:49:armor:0.042:2.058
-R	priest/holy	12	14213	12731	gear	13.308	sta:15:sta:0.75:11.25,armor:49:armor:0.042:2.058
-R	priest/holy	12	14213	12734	gear	20.058	sp:18:sp:1:18,armor:49:armor:0.042:2.058
-R	priest/holy	12	14213	12735	gear	13.058	spDmg:11:sp:1:11,armor:49:armor:0.042:2.058
-R	priest/holy	12	14213	12740	gear	9.558	sta:10:sta:0.75:7.5,armor:49:armor:0.042:2.058
-R	priest/holy	12	14213	12741	gear	9.558	sta:10:sta:0.75:7.5,armor:49:armor:0.042:2.058
-R	priest/holy	12	14213	12742	gear	9.558	sta:10:sta:0.75:7.5,armor:49:armor:0.042:2.058
-R	priest/holy	12	14213	12743	gear	9.558	sta:10:sta:0.75:7.5,armor:49:armor:0.042:2.058
-R	priest/holy	12	14213	12744	gear	9.558	sta:10:sta:0.75:7.5,armor:49:armor:0.042:2.058
-R	priest/holy	12	14213	12745	gear	16.848	int:11:int:0.39:4.29,sta:6:sta:0.75:4.5,sp:6:sp:1:6,armor:49:armor:0.042:2.058
-R	priest/holy	12	14213	12746	gear	13.008	int:11:int:0.39:4.29,spi:6:spi:0.11:0.66,sp:6:sp:1:6,armor:49:armor:0.042:2.058
-R	priest/holy	12	14213	12747	gear	16.968	spi:6:spi:0.11:0.66,sta:11:sta:0.75:8.25,sp:6:sp:1:6,armor:49:armor:0.042:2.058
-R	priest/holy	12	14213	12748	gear	16.648	int:6:int:0.39:2.34,sta:11:sta:0.75:8.25,spDmg:4:sp:1:4,armor:49:armor:0.042:2.058
-R	priest/holy	12	14213	12749	gear	11.008	int:11:int:0.39:4.29,spi:6:spi:0.11:0.66,spDmg:4:sp:1:4,armor:49:armor:0.042:2.058
-R	priest/holy	12	14213	12750	gear	14.968	spi:6:spi:0.11:0.66,sta:11:sta:0.75:8.25,spDmg:4:sp:1:4,armor:49:armor:0.042:2.058
-R	priest/holy	12	14213	12756	gear	2.0580000000000003	armor:49:armor:0.042:2.058
-R	priest/holy	12	14213	12757	gear	2.0580000000000003	armor:49:armor:0.042:2.058
-R	priest/holy	12	14213	12758	gear	2.0580000000000003	armor:49:armor:0.042:2.058
-R	priest/holy	12	14213	12759	gear	2.0580000000000003	armor:49:armor:0.042:2.058
-R	priest/holy	12	14213	12761	gear	20.118	spShadow:21:spShadow:0.86:18.06,armor:49:armor:0.042:2.058
-R	priest/holy	12	14312	0	gear	2.688	armor:64:armor:0.042:2.688
-R	priest/holy	12	14312	12718	gear	23.208	int:18:int:0.39:7.02,sta:18:sta:0.75:13.5,armor:64:armor:0.042:2.688
-R	priest/holy	12	14312	12719	gear	18.168	spi:18:spi:0.11:1.98,sta:18:sta:0.75:13.5,armor:64:armor:0.042:2.688
-R	priest/holy	12	14312	12720	gear	11.688	int:18:int:0.39:7.02,spi:18:spi:0.11:1.98,armor:64:armor:0.042:2.688
-R	priest/holy	12	14312	12729	gear	13.218000000000002	int:27:int:0.39:10.53,armor:64:armor:0.042:2.688
-R	priest/holy	12	14312	12730	gear	5.658	spi:27:spi:0.11:2.97,armor:64:armor:0.042:2.688
-R	priest/holy	12	14312	12731	gear	22.938	sta:27:sta:0.75:20.25,armor:64:armor:0.042:2.688
-R	priest/holy	12	14312	12734	gear	34.688	sp:32:sp:1:32,armor:64:armor:0.042:2.688
-R	priest/holy	12	14312	12735	gear	22.688	spDmg:20:sp:1:20,armor:64:armor:0.042:2.688
-R	priest/holy	12	14312	12740	gear	16.188	sta:18:sta:0.75:13.5,armor:64:armor:0.042:2.688
-R	priest/holy	12	14312	12741	gear	16.188	sta:18:sta:0.75:13.5,armor:64:armor:0.042:2.688
-R	priest/holy	12	14312	12742	gear	16.188	sta:18:sta:0.75:13.5,armor:64:armor:0.042:2.688
-R	priest/holy	12	14312	12743	gear	16.188	sta:18:sta:0.75:13.5,armor:64:armor:0.042:2.688
-R	priest/holy	12	14312	12744	gear	16.188	sta:18:sta:0.75:13.5,armor:64:armor:0.042:2.688
-R	priest/holy	12	14312	12745	gear	28.738	int:20:int:0.39:7.8,sta:11:sta:0.75:8.25,sp:10:sp:1:10,armor:64:armor:0.042:2.688
-R	priest/holy	12	14312	12746	gear	21.698	int:20:int:0.39:7.8,spi:11:spi:0.11:1.21,sp:10:sp:1:10,armor:64:armor:0.042:2.688
-R	priest/holy	12	14312	12747	gear	28.898	spi:11:spi:0.11:1.21,sta:20:sta:0.75:15,sp:10:sp:1:10,armor:64:armor:0.042:2.688
-R	priest/holy	12	14312	12748	gear	27.977999999999998	int:11:int:0.39:4.29,sta:20:sta:0.75:15,spDmg:6:sp:1:6,armor:64:armor:0.042:2.688
-R	priest/holy	12	14312	12749	gear	17.698	int:20:int:0.39:7.8,spi:11:spi:0.11:1.21,spDmg:6:sp:1:6,armor:64:armor:0.042:2.688
-R	priest/holy	12	14312	12750	gear	24.898	spi:11:spi:0.11:1.21,sta:20:sta:0.75:15,spDmg:6:sp:1:6,armor:64:armor:0.042:2.688
-R	priest/holy	12	14312	12756	gear	2.688	armor:64:armor:0.042:2.688
-R	priest/holy	12	14312	12757	gear	2.688	armor:64:armor:0.042:2.688
-R	priest/holy	12	14312	12758	gear	2.688	armor:64:armor:0.042:2.688
-R	priest/holy	12	14312	12759	gear	2.688	armor:64:armor:0.042:2.688
-R	priest/holy	12	14312	12761	gear	36.228	spShadow:39:spShadow:0.86:33.54,armor:64:armor:0.042:2.688
-R	priest/holy	12	14440	0	gear	6.42	sta:6:sta:0.75:4.5,spi:6:spi:0.11:0.66,armor:30:armor:0.042:1.26
-R	priest/holy	12	15299	0	gear	0.378	armor:9:armor:0.042:0.378
-R	priest/holy	12	15939	0	oh	0.0	
-R	priest/holy	12	15939	12718	oh	10.26	int:9:int:0.39:3.51,sta:9:sta:0.75:6.75
-R	priest/holy	12	15939	12719	oh	7.74	spi:9:spi:0.11:0.99,sta:9:sta:0.75:6.75
-R	priest/holy	12	15939	12720	oh	4.5	int:9:int:0.39:3.51,spi:9:spi:0.11:0.99
-R	priest/holy	12	15939	12721	oh	6.75	sta:9:sta:0.75:6.75
-R	priest/holy	12	15939	12722	oh	6.75	sta:9:sta:0.75:6.75
-R	priest/holy	12	15939	12723	oh	3.5100000000000002	int:9:int:0.39:3.51
-R	priest/holy	12	15939	12724	oh	3.5100000000000002	int:9:int:0.39:3.51
-R	priest/holy	12	15939	12725	oh	0.99	spi:9:spi:0.11:0.99
-R	priest/holy	12	15939	12726	oh	0.99	spi:9:spi:0.11:0.99
-R	priest/holy	12	15939	12727	oh	0.0	
-R	priest/holy	12	15939	12728	oh	0.0	
-R	priest/holy	12	15939	12729	oh	5.46	int:14:int:0.39:5.46
-R	priest/holy	12	15939	12730	oh	1.54	spi:14:spi:0.11:1.54
-R	priest/holy	12	15939	12731	oh	10.5	sta:14:sta:0.75:10.5
-R	priest/holy	12	15939	12732	oh	0.0	
-R	priest/holy	12	15939	12733	oh	0.0	
-R	priest/holy	12	15939	12734	oh	16.0	sp:16:sp:1:16
-R	priest/holy	12	15939	12735	oh	10.0	spDmg:10:sp:1:10
-R	priest/holy	12	15939	12740	oh	6.75	sta:9:sta:0.75:6.75
-R	priest/holy	12	15939	12741	oh	6.75	sta:9:sta:0.75:6.75
-R	priest/holy	12	15939	12742	oh	6.75	sta:9:sta:0.75:6.75
-R	priest/holy	12	15939	12743	oh	6.75	sta:9:sta:0.75:6.75
-R	priest/holy	12	15939	12744	oh	6.75	sta:9:sta:0.75:6.75
-R	priest/holy	12	15939	12745	oh	13.4	int:10:int:0.39:3.9,sta:6:sta:0.75:4.5,sp:5:sp:1:5
-R	priest/holy	12	15939	12746	oh	9.56	int:10:int:0.39:3.9,spi:6:spi:0.11:0.66,sp:5:sp:1:5
-R	priest/holy	12	15939	12747	oh	13.16	spi:6:spi:0.11:0.66,sta:10:sta:0.75:7.5,sp:5:sp:1:5
-R	priest/holy	12	15939	12748	oh	12.84	int:6:int:0.39:2.34,sta:10:sta:0.75:7.5,spDmg:3:sp:1:3
-R	priest/holy	12	15939	12749	oh	7.5600000000000005	int:10:int:0.39:3.9,spi:6:spi:0.11:0.66,spDmg:3:sp:1:3
-R	priest/holy	12	15939	12750	oh	11.16	spi:6:spi:0.11:0.66,sta:10:sta:0.75:7.5,spDmg:3:sp:1:3
-R	priest/holy	12	15939	12756	oh	0.0	
-R	priest/holy	12	15939	12757	oh	0.0	
-R	priest/holy	12	15939	12758	oh	0.0	
-R	priest/holy	12	15939	12759	oh	0.0	
-R	priest/holy	12	15939	12760	oh	0.0	
-R	priest/holy	12	15939	12761	oh	17.2	spShadow:20:spShadow:0.86:17.2
+R	priest/holy	12	11807	0	gear	14.432	spi:10:spi:0.11:1.1,sta:10:sta:0.75:7.5,int:10:int:0.39:3.9,armor:46:armor:0.042:1.932
+R	priest/holy	12	12014	0	gear	0.0	
+R	priest/holy	12	12014	12718	gear	10.26	int:9:int:0.39:3.51,sta:9:sta:0.75:6.75
+R	priest/holy	12	12014	12719	gear	7.74	spi:9:spi:0.11:0.99,sta:9:sta:0.75:6.75
+R	priest/holy	12	12014	12720	gear	4.5	int:9:int:0.39:3.51,spi:9:spi:0.11:0.99
+R	priest/holy	12	12014	12721	gear	6.75	sta:9:sta:0.75:6.75
+R	priest/holy	12	12014	12722	gear	6.75	sta:9:sta:0.75:6.75
+R	priest/holy	12	12014	12723	gear	3.5100000000000002	int:9:int:0.39:3.51
+R	priest/holy	12	12014	12724	gear	3.5100000000000002	int:9:int:0.39:3.51
+R	priest/holy	12	12014	12725	gear	0.99	spi:9:spi:0.11:0.99
+R	priest/holy	12	12014	12726	gear	0.99	spi:9:spi:0.11:0.99
+R	priest/holy	12	12014	12727	gear	0.0	
+R	priest/holy	12	12014	12728	gear	0.0	
+R	priest/holy	12	12014	12729	gear	5.07	int:13:int:0.39:5.07
+R	priest/holy	12	12014	12730	gear	1.43	spi:13:spi:0.11:1.43
+R	priest/holy	12	12014	12731	gear	9.75	sta:13:sta:0.75:9.75
+R	priest/holy	12	12014	12732	gear	0.0	
+R	priest/holy	12	12014	12733	gear	0.0	
+R	priest/holy	12	12014	12737	gear	0.0	
+R	priest/holy	12	12014	12738	gear	2.15	mp5:5:mp5:0.43:2.15
+R	priest/holy	12	12014	12739	gear	0.0	
+R	priest/holy	12	12014	12740	gear	6.75	sta:9:sta:0.75:6.75
+R	priest/holy	12	12014	12741	gear	6.75	sta:9:sta:0.75:6.75
+R	priest/holy	12	12014	12742	gear	6.75	sta:9:sta:0.75:6.75
+R	priest/holy	12	12014	12743	gear	6.75	sta:9:sta:0.75:6.75
+R	priest/holy	12	12014	12744	gear	6.75	sta:9:sta:0.75:6.75
+R	priest/holy	12	12014	12745	gear	12.26	int:9:int:0.39:3.51,sta:5:sta:0.75:3.75,sp:5:sp:1:5
+R	priest/holy	12	12014	12746	gear	9.06	int:9:int:0.39:3.51,spi:5:spi:0.11:0.55,sp:5:sp:1:5
+R	priest/holy	12	12014	12747	gear	12.3	spi:5:spi:0.11:0.55,sta:9:sta:0.75:6.75,sp:5:sp:1:5
+R	priest/holy	12	12014	12748	gear	11.7	int:5:int:0.39:1.95,sta:9:sta:0.75:6.75,spDmg:3:sp:1:3
+R	priest/holy	12	12014	12749	gear	7.0600000000000005	int:9:int:0.39:3.51,spi:5:spi:0.11:0.55,spDmg:3:sp:1:3
+R	priest/holy	12	12014	12750	gear	10.3	spi:5:spi:0.11:0.55,sta:9:sta:0.75:6.75,spDmg:3:sp:1:3
+R	priest/holy	12	12014	12751	gear	6.75	sta:9:sta:0.75:6.75
+R	priest/holy	12	12014	12752	gear	6.75	sta:9:sta:0.75:6.75
+R	priest/holy	12	12014	12753	gear	6.75	sta:9:sta:0.75:6.75
+R	priest/holy	12	12014	12754	gear	11.75	sp:5:sp:1:5,sta:9:sta:0.75:6.75
+R	priest/holy	12	12014	12755	gear	12.5	sp:5:sp:1:5,sta:10:sta:0.75:7.5
+R	priest/holy	12	12794	0	mh	0.0	
+R	priest/holy	12	13353	0	oh	26.71	spi:10:spi:0.11:1.1,int:15:int:0.39:5.85,sta:8:sta:0.75:6,spShadow:16:spShadow:0.86:13.76
+R	priest/holy	12	14107	0	gear	29.644	int:12:int:0.39:4.68,spShadow:26:spShadow:0.86:22.36,armor:62:armor:0.042:2.604
+R	priest/holy	12	14212	0	gear	1.4700000000000002	armor:35:armor:0.042:1.47
+R	priest/holy	12	14212	12718	gear	9.450000000000001	int:7:int:0.39:2.73,sta:7:sta:0.75:5.25,armor:35:armor:0.042:1.47
+R	priest/holy	12	14212	12719	gear	7.49	spi:7:spi:0.11:0.77,sta:7:sta:0.75:5.25,armor:35:armor:0.042:1.47
+R	priest/holy	12	14212	12720	gear	4.970000000000001	int:7:int:0.39:2.73,spi:7:spi:0.11:0.77,armor:35:armor:0.042:1.47
+R	priest/holy	12	14212	12729	gear	5.370000000000001	int:10:int:0.39:3.9,armor:35:armor:0.042:1.47
+R	priest/holy	12	14212	12730	gear	2.5700000000000003	spi:10:spi:0.11:1.1,armor:35:armor:0.042:1.47
+R	priest/holy	12	14212	12731	gear	8.97	sta:10:sta:0.75:7.5,armor:35:armor:0.042:1.47
+R	priest/holy	12	14212	12734	gear	13.47	sp:12:sp:1:12,armor:35:armor:0.042:1.47
+R	priest/holy	12	14212	12735	gear	8.47	spDmg:7:sp:1:7,armor:35:armor:0.042:1.47
+R	priest/holy	12	14212	12740	gear	6.720000000000001	sta:7:sta:0.75:5.25,armor:35:armor:0.042:1.47
+R	priest/holy	12	14212	12741	gear	6.720000000000001	sta:7:sta:0.75:5.25,armor:35:armor:0.042:1.47
+R	priest/holy	12	14212	12742	gear	6.720000000000001	sta:7:sta:0.75:5.25,armor:35:armor:0.042:1.47
+R	priest/holy	12	14212	12743	gear	6.720000000000001	sta:7:sta:0.75:5.25,armor:35:armor:0.042:1.47
+R	priest/holy	12	14212	12744	gear	6.720000000000001	sta:7:sta:0.75:5.25,armor:35:armor:0.042:1.47
+R	priest/holy	12	14212	12745	gear	11.200000000000001	int:7:int:0.39:2.73,sta:4:sta:0.75:3,sp:4:sp:1:4,armor:35:armor:0.042:1.47
+R	priest/holy	12	14212	12746	gear	8.64	int:7:int:0.39:2.73,spi:4:spi:0.11:0.44,sp:4:sp:1:4,armor:35:armor:0.042:1.47
+R	priest/holy	12	14212	12747	gear	11.160000000000002	spi:4:spi:0.11:0.44,sta:7:sta:0.75:5.25,sp:4:sp:1:4,armor:35:armor:0.042:1.47
+R	priest/holy	12	14212	12748	gear	10.280000000000001	int:4:int:0.39:1.56,sta:7:sta:0.75:5.25,spDmg:2:sp:1:2,armor:35:armor:0.042:1.47
+R	priest/holy	12	14212	12749	gear	6.640000000000001	int:7:int:0.39:2.73,spi:4:spi:0.11:0.44,spDmg:2:sp:1:2,armor:35:armor:0.042:1.47
+R	priest/holy	12	14212	12750	gear	9.16	spi:4:spi:0.11:0.44,sta:7:sta:0.75:5.25,spDmg:2:sp:1:2,armor:35:armor:0.042:1.47
+R	priest/holy	12	14212	12756	gear	1.4700000000000002	armor:35:armor:0.042:1.47
+R	priest/holy	12	14212	12757	gear	1.4700000000000002	armor:35:armor:0.042:1.47
+R	priest/holy	12	14212	12758	gear	1.4700000000000002	armor:35:armor:0.042:1.47
+R	priest/holy	12	14212	12759	gear	1.4700000000000002	armor:35:armor:0.042:1.47
+R	priest/holy	12	14212	12761	gear	13.51	spShadow:14:spShadow:0.86:12.04,armor:35:armor:0.042:1.47
+R	priest/holy	12	14311	0	gear	1.302	armor:31:armor:0.042:1.302
+R	priest/holy	12	14311	12718	gear	11.562	int:9:int:0.39:3.51,sta:9:sta:0.75:6.75,armor:31:armor:0.042:1.302
+R	priest/holy	12	14311	12719	gear	9.042	spi:9:spi:0.11:0.99,sta:9:sta:0.75:6.75,armor:31:armor:0.042:1.302
+R	priest/holy	12	14311	12720	gear	5.802	int:9:int:0.39:3.51,spi:9:spi:0.11:0.99,armor:31:armor:0.042:1.302
+R	priest/holy	12	14311	12729	gear	6.372	int:13:int:0.39:5.07,armor:31:armor:0.042:1.302
+R	priest/holy	12	14311	12730	gear	2.732	spi:13:spi:0.11:1.43,armor:31:armor:0.042:1.302
+R	priest/holy	12	14311	12731	gear	11.052	sta:13:sta:0.75:9.75,armor:31:armor:0.042:1.302
+R	priest/holy	12	14311	12734	gear	16.302	sp:15:sp:1:15,armor:31:armor:0.042:1.302
+R	priest/holy	12	14311	12735	gear	11.302	spDmg:10:sp:1:10,armor:31:armor:0.042:1.302
+R	priest/holy	12	14311	12740	gear	8.052	sta:9:sta:0.75:6.75,armor:31:armor:0.042:1.302
+R	priest/holy	12	14311	12741	gear	8.052	sta:9:sta:0.75:6.75,armor:31:armor:0.042:1.302
+R	priest/holy	12	14311	12742	gear	8.052	sta:9:sta:0.75:6.75,armor:31:armor:0.042:1.302
+R	priest/holy	12	14311	12743	gear	8.052	sta:9:sta:0.75:6.75,armor:31:armor:0.042:1.302
+R	priest/holy	12	14311	12744	gear	8.052	sta:9:sta:0.75:6.75,armor:31:armor:0.042:1.302
+R	priest/holy	12	14311	12745	gear	13.562	int:9:int:0.39:3.51,sta:5:sta:0.75:3.75,sp:5:sp:1:5,armor:31:armor:0.042:1.302
+R	priest/holy	12	14311	12746	gear	10.362	int:9:int:0.39:3.51,spi:5:spi:0.11:0.55,sp:5:sp:1:5,armor:31:armor:0.042:1.302
+R	priest/holy	12	14311	12747	gear	13.602	spi:5:spi:0.11:0.55,sta:9:sta:0.75:6.75,sp:5:sp:1:5,armor:31:armor:0.042:1.302
+R	priest/holy	12	14311	12748	gear	13.001999999999999	int:5:int:0.39:1.95,sta:9:sta:0.75:6.75,spDmg:3:sp:1:3,armor:31:armor:0.042:1.302
+R	priest/holy	12	14311	12749	gear	8.362	int:9:int:0.39:3.51,spi:5:spi:0.11:0.55,spDmg:3:sp:1:3,armor:31:armor:0.042:1.302
+R	priest/holy	12	14311	12750	gear	11.602	spi:5:spi:0.11:0.55,sta:9:sta:0.75:6.75,spDmg:3:sp:1:3,armor:31:armor:0.042:1.302
+R	priest/holy	12	14311	12756	gear	1.302	armor:31:armor:0.042:1.302
+R	priest/holy	12	14311	12757	gear	1.302	armor:31:armor:0.042:1.302
+R	priest/holy	12	14311	12758	gear	1.302	armor:31:armor:0.042:1.302
+R	priest/holy	12	14311	12759	gear	1.302	armor:31:armor:0.042:1.302
+R	priest/holy	12	14311	12761	gear	17.642	spShadow:19:spShadow:0.86:16.34,armor:31:armor:0.042:1.302
+R	priest/holy	12	14439	0	gear	3.574	spi:8:spi:0.11:0.88,int:4:int:0.39:1.56,armor:27:armor:0.042:1.134
+R	priest/holy	12	15283	0	ranged	272.448	rdps:56.76:rdps:4.8:272.448
+R	priest/holy	12	15283	12718	ranged	279.28799999999995	int:6:int:0.39:2.34,sta:6:sta:0.75:4.5,rdps:56.76:rdps:4.8:272.448
+R	priest/holy	12	15283	12719	ranged	277.608	spi:6:spi:0.11:0.66,sta:6:sta:0.75:4.5,rdps:56.76:rdps:4.8:272.448
+R	priest/holy	12	15283	12720	ranged	275.448	int:6:int:0.39:2.34,spi:6:spi:0.11:0.66,rdps:56.76:rdps:4.8:272.448
+R	priest/holy	12	15283	12729	ranged	275.95799999999997	int:9:int:0.39:3.51,rdps:56.76:rdps:4.8:272.448
+R	priest/holy	12	15283	12730	ranged	273.438	spi:9:spi:0.11:0.99,rdps:56.76:rdps:4.8:272.448
+R	priest/holy	12	15283	12731	ranged	279.198	sta:9:sta:0.75:6.75,rdps:56.76:rdps:4.8:272.448
+R	priest/holy	12	15283	12734	ranged	283.448	sp:11:sp:1:11,rdps:56.76:rdps:4.8:272.448
+R	priest/holy	12	15283	12735	ranged	279.448	spDmg:7:sp:1:7,rdps:56.76:rdps:4.8:272.448
+R	priest/holy	12	15283	12740	ranged	276.948	sta:6:sta:0.75:4.5,rdps:56.76:rdps:4.8:272.448
+R	priest/holy	12	15283	12741	ranged	276.948	sta:6:sta:0.75:4.5,rdps:56.76:rdps:4.8:272.448
+R	priest/holy	12	15283	12742	ranged	276.948	sta:6:sta:0.75:4.5,rdps:56.76:rdps:4.8:272.448
+R	priest/holy	12	15283	12743	ranged	276.948	sta:6:sta:0.75:4.5,rdps:56.76:rdps:4.8:272.448
+R	priest/holy	12	15283	12744	ranged	276.948	sta:6:sta:0.75:4.5,rdps:56.76:rdps:4.8:272.448
+R	priest/holy	12	15283	12745	ranged	281.178	int:7:int:0.39:2.73,sta:4:sta:0.75:3,sp:3:sp:1:3,rdps:56.76:rdps:4.8:272.448
+R	priest/holy	12	15283	12746	ranged	278.618	int:7:int:0.39:2.73,spi:4:spi:0.11:0.44,sp:3:sp:1:3,rdps:56.76:rdps:4.8:272.448
+R	priest/holy	12	15283	12747	ranged	281.138	spi:4:spi:0.11:0.44,sta:7:sta:0.75:5.25,sp:3:sp:1:3,rdps:56.76:rdps:4.8:272.448
+R	priest/holy	12	15283	12748	ranged	281.258	int:4:int:0.39:1.56,sta:7:sta:0.75:5.25,spDmg:2:sp:1:2,rdps:56.76:rdps:4.8:272.448
+R	priest/holy	12	15283	12749	ranged	277.618	int:7:int:0.39:2.73,spi:4:spi:0.11:0.44,spDmg:2:sp:1:2,rdps:56.76:rdps:4.8:272.448
+R	priest/holy	12	15283	12750	ranged	280.138	spi:4:spi:0.11:0.44,sta:7:sta:0.75:5.25,spDmg:2:sp:1:2,rdps:56.76:rdps:4.8:272.448
+R	priest/holy	12	15283	12756	ranged	272.448	rdps:56.76:rdps:4.8:272.448
+R	priest/holy	12	15283	12757	ranged	272.448	rdps:56.76:rdps:4.8:272.448
+R	priest/holy	12	15283	12758	ranged	272.448	rdps:56.76:rdps:4.8:272.448
+R	priest/holy	12	15283	12759	ranged	272.448	rdps:56.76:rdps:4.8:272.448
+R	priest/holy	12	15283	12761	ranged	283.628	spShadow:13:spShadow:0.86:11.18,rdps:56.76:rdps:4.8:272.448
+R	priest/holy	12	15938	0	oh	0.0	
+R	priest/holy	12	15938	12718	oh	10.26	int:9:int:0.39:3.51,sta:9:sta:0.75:6.75
+R	priest/holy	12	15938	12719	oh	7.74	spi:9:spi:0.11:0.99,sta:9:sta:0.75:6.75
+R	priest/holy	12	15938	12720	oh	4.5	int:9:int:0.39:3.51,spi:9:spi:0.11:0.99
+R	priest/holy	12	15938	12721	oh	6.75	sta:9:sta:0.75:6.75
+R	priest/holy	12	15938	12722	oh	6.75	sta:9:sta:0.75:6.75
+R	priest/holy	12	15938	12723	oh	3.5100000000000002	int:9:int:0.39:3.51
+R	priest/holy	12	15938	12724	oh	3.5100000000000002	int:9:int:0.39:3.51
+R	priest/holy	12	15938	12725	oh	0.99	spi:9:spi:0.11:0.99
+R	priest/holy	12	15938	12726	oh	0.99	spi:9:spi:0.11:0.99
+R	priest/holy	12	15938	12727	oh	0.0	
+R	priest/holy	12	15938	12728	oh	0.0	
+R	priest/holy	12	15938	12729	oh	5.46	int:14:int:0.39:5.46
+R	priest/holy	12	15938	12730	oh	1.54	spi:14:spi:0.11:1.54
+R	priest/holy	12	15938	12731	oh	10.5	sta:14:sta:0.75:10.5
+R	priest/holy	12	15938	12732	oh	0.0	
+R	priest/holy	12	15938	12733	oh	0.0	
+R	priest/holy	12	15938	12734	oh	16.0	sp:16:sp:1:16
+R	priest/holy	12	15938	12735	oh	10.0	spDmg:10:sp:1:10
+R	priest/holy	12	15938	12740	oh	6.75	sta:9:sta:0.75:6.75
+R	priest/holy	12	15938	12741	oh	6.75	sta:9:sta:0.75:6.75
+R	priest/holy	12	15938	12742	oh	6.75	sta:9:sta:0.75:6.75
+R	priest/holy	12	15938	12743	oh	6.75	sta:9:sta:0.75:6.75
+R	priest/holy	12	15938	12744	oh	6.75	sta:9:sta:0.75:6.75
+R	priest/holy	12	15938	12745	oh	13.4	int:10:int:0.39:3.9,sta:6:sta:0.75:4.5,sp:5:sp:1:5
+R	priest/holy	12	15938	12746	oh	9.56	int:10:int:0.39:3.9,spi:6:spi:0.11:0.66,sp:5:sp:1:5
+R	priest/holy	12	15938	12747	oh	13.16	spi:6:spi:0.11:0.66,sta:10:sta:0.75:7.5,sp:5:sp:1:5
+R	priest/holy	12	15938	12748	oh	12.84	int:6:int:0.39:2.34,sta:10:sta:0.75:7.5,spDmg:3:sp:1:3
+R	priest/holy	12	15938	12749	oh	7.5600000000000005	int:10:int:0.39:3.9,spi:6:spi:0.11:0.66,spDmg:3:sp:1:3
+R	priest/holy	12	15938	12750	oh	11.16	spi:6:spi:0.11:0.66,sta:10:sta:0.75:7.5,spDmg:3:sp:1:3
+R	priest/holy	12	15938	12756	oh	0.0	
+R	priest/holy	12	15938	12757	oh	0.0	
+R	priest/holy	12	15938	12758	oh	0.0	
+R	priest/holy	12	15938	12759	oh	0.0	
+R	priest/holy	12	15938	12760	oh	0.0	
+R	priest/holy	12	15938	12761	oh	17.2	spShadow:20:spShadow:0.86:17.2
 R	priest/holy	12	15945	0	oh	1.72	sta:2:sta:0.75:1.5,spi:2:spi:0.11:0.22
-R	priest/holy	12	16819	0	gear	15.268	sta:8:sta:0.75:6,int:14:int:0.39:5.46,spi:10:spi:0.11:1.1,mp5:2:mp5:0.43:0.86,armor:44:armor:0.042:1.848
-R	priest/holy	12	17739	0	gear	10.554	sta:12:sta:0.75:9,armor:37:armor:0.042:1.554
-R	priest/holy	12	18440	0	gear	9.522	sta:9:sta:0.75:6.75,armor:66:armor:0.042:2.772
-R	priest/holy	12	18879	0	gear	19.62	sta:20:sta:0.75:15,armor:110:armor:0.042:4.62
-R	priest/holy	12	19395	0	gear	3.87	mp5:9:mp5:0.43:3.87
-R	priest/holy	12	19893	0	gear	24.1	sta:10:sta:0.75:7.5,int:10:int:0.39:3.9,spellHit:1:spellHit:1.7:1.7,sp:11:sp:1:11
-R	priest/holy	12	20330	0	gear	25.742000000000004	int:27:int:0.39:10.53,spi:11:spi:0.11:1.21,sta:12:sta:0.75:9,crit:1:spellCrit:0.76:0.76,armor:101:armor:0.042:4.242
-R	priest/holy	12	20652	0	gear	2.226	armor:53:armor:0.042:2.226
-R	priest/holy	12	20652	12745	gear	21.076	int:15:int:0.39:5.85,sta:8:sta:0.75:6,sp:7:sp:1:7,armor:53:armor:0.042:2.226
-R	priest/holy	12	20652	12746	gear	15.956	int:15:int:0.39:5.85,spi:8:spi:0.11:0.88,sp:7:sp:1:7,armor:53:armor:0.042:2.226
-R	priest/holy	12	20652	12747	gear	21.356	spi:8:spi:0.11:0.88,sta:15:sta:0.75:11.25,sp:7:sp:1:7,armor:53:armor:0.042:2.226
-R	priest/holy	12	20652	12748	gear	21.596	int:8:int:0.39:3.12,sta:15:sta:0.75:11.25,spDmg:5:sp:1:5,armor:53:armor:0.042:2.226
-R	priest/holy	12	20652	12749	gear	13.956	int:15:int:0.39:5.85,spi:8:spi:0.11:0.88,spDmg:5:sp:1:5,armor:53:armor:0.042:2.226
-R	priest/holy	12	20652	12750	gear	19.356	spi:8:spi:0.11:0.88,sta:15:sta:0.75:11.25,spDmg:5:sp:1:5,armor:53:armor:0.042:2.226
-R	priest/holy	12	21500	0	gear	20.422	sta:14:sta:0.75:10.5,int:15:int:0.39:5.85,mp5:4:mp5:0.43:1.72,armor:56:armor:0.042:2.352
-R	priest/holy	12	22085	0	gear	38.512	int:14:int:0.39:5.46,sta:13:sta:0.75:9.75,mp5:6:mp5:0.43:2.58,sp:16:sp:1:16,spi:12:spi:0.11:1.32,armor:81:armor:0.042:3.402
-R	priest/holy	12	22678	0	gear	0.0	
-R	priest/holy	12	23177	0	ranged	191.384	spShadow:10:spShadow:0.86:8.6,rdps:38.08:rdps:4.8:182.784
-R	priest/holy	12	212583	0	mh	2.25	sta:3:sta:0.75:2.25
-R	priest/holy	12	217296	0	gear	11.75	sta:9:sta:0.75:6.75,sp:5:sp:1:5
-R	priest/holy	12	220907	0	gear	33.138	sta:13:sta:0.75:9.75,int:12:int:0.39:4.68,crit:1:spellCrit:0.76:0.76,sp:14:sp:1:14,armor:94:armor:0.042:3.948
-R	priest/holy	12	226731	0	gear	32.724	sta:7:sta:0.75:5.25,int:11:int:0.39:4.29,sp:21:sp:1:21,armor:52:armor:0.042:2.184
-R	priest/holy	12	227967	0	gear	0.0	
-R	priest/holy	12	228282	0	gear	52.562	sta:20:sta:0.75:15,sp:35:sp:1:35,armor:61:armor:0.042:2.562
-R	priest/holy	12	228757	0	mh	0.0	
-R	priest/holy	12	231168	0	gear	67.052	sta:15:sta:0.75:11.25,int:20:int:0.39:7.8,crit:1:spellCrit:0.76:0.76,spShadow:50:spShadow:0.86:43,armor:101:armor:0.042:4.242
-R	priest/holy	12	233395	0	gear	78.806	sta:14:sta:0.75:10.5,int:18:int:0.39:7.02,crit:2:spellCrit:0.76:1.52,spShadow:63:spShadow:0.86:54.18,armor:133:armor:0.042:5.586
-R	priest/holy	12	233994	0	gear	30.78	int:18:int:0.39:7.02,crit:1:spellCrit:0.76:0.76,spDmg:23:sp:1:23
-R	priest/holy	12	234576	0	mh	70.63	sta:21:sta:0.75:15.75,int:8:int:0.39:3.12,crit:1:spellCrit:0.76:0.76,spDmg:51:sp:1:51
-R	priest/holy	12	236277	0	gear	21.5	sta:8:sta:0.75:6,int:9:int:0.39:3.51,spi:9:spi:0.11:0.99,spDmg:11:sp:1:11
-R	priest/holy	12	239565	0	gear	90.892	sta:15:sta:0.75:11.25,int:17:int:0.39:6.63,crit:2:spellCrit:0.76:1.52,spShadow:76:spShadow:0.86:65.36,armor:146:armor:0.042:6.132
-R	priest/holy	12	247789	0	ranged	19.2	rdps:4:rdps:4.8:19.2
-R	priest/holy	12	254029	0	gear	10.992	int:7:int:0.39:2.73,sta:9:sta:0.75:6.75,armor:36:armor:0.042:1.512
-R	priest/holy	12	260829	0	gear	1.848	armor:44:armor:0.042:1.848
-R	priest/holy	12	271909	0	gear	10.5	sta:14:sta:0.75:10.5
-R	priest/holy	12	272847	0	mh	2.26	sta:2:sta:0.75:1.5,crit:1:spellCrit:0.76:0.76
-R	priest/holy	12	275831	0	gear	1.9500000000000002	int:5:int:0.39:1.95
-R	priest/holy	12	278019	0	gear	8.5	sta:6:sta:0.75:4.5,sp:4:sp:1:4
-R	priest/holy	12	288931	0	gear	16.0	sp:16:sp:1:16
+R	priest/holy	12	16817	0	gear	30.293999999999997	sta:10:sta:0.75:7.5,int:22:int:0.39:8.58,spi:10:spi:0.11:1.1,mp5:4:mp5:0.43:1.72,sp:9:sp:1:9,armor:57:armor:0.042:2.394
+R	priest/holy	12	17737	0	oh	4.48	hit:0.8:spellHit:1.7:1.36,int:8:int:0.39:3.12
+R	priest/holy	12	18438	0	gear	0.0	
+R	priest/holy	12	18878	0	mh	32.629999999999995	sta:8:sta:0.75:6,int:17:int:0.39:6.63,sp:20:sp:1:20
+R	priest/holy	12	19391	0	gear	24.942	sta:13:sta:0.75:9.75,int:17:int:0.39:6.63,mp5:12:mp5:0.43:5.16,armor:81:armor:0.042:3.402
+R	priest/holy	12	19891	0	oh	29.99	sta:8:sta:0.75:6,int:11:int:0.39:4.29,sp:18:sp:1:18,spellHit:1:spellHit:1.7:1.7
+R	priest/holy	12	20333	0	gear	17.150000000000002	int:20:int:0.39:7.8,spi:8:spi:0.11:0.88,sta:9:sta:0.75:6.75,mp5:4:mp5:0.43:1.72
+R	priest/holy	12	20672	0	ranged	307.69399999999996	int:9:int:0.39:3.51,sp:5:sp:1:5,rdps:62.33:rdps:4.8:299.184
+R	priest/holy	12	21522	0	mh	10.5	sta:14:sta:0.75:10.5
+R	priest/holy	12	22231	0	gear	23.49	int:18:int:0.39:7.02,sta:11:sta:0.75:8.25,hit:1:spellHit:1.7:1.7,sp:4:sp:1:4,armor:60:armor:0.042:2.52
+R	priest/holy	12	22711	0	gear	31.856	sta:6:sta:0.75:4.5,int:6:int:0.39:2.34,sp:23:sp:1:23,armor:48:armor:0.042:2.016
+R	priest/holy	12	23237	0	gear	4.66	int:10:int:0.39:3.9,crit:1:spellCrit:0.76:0.76
+R	priest/holy	12	213088	0	gear	6.008000000000001	sta:4:sta:0.75:3,int:4:int:0.39:1.56,spi:4:spi:0.11:0.44,armor:24:armor:0.042:1.008
+R	priest/holy	12	217301	0	gear	7.98	sta:7:sta:0.75:5.25,int:7:int:0.39:2.73
+R	priest/holy	12	221025	0	gear	30.924	sta:7:sta:0.75:5.25,int:8:int:0.39:3.12,sp:21:sp:1:21,armor:37:armor:0.042:1.554
+R	priest/holy	12	226744	0	gear	15.182	sta:11:sta:0.75:8.25,int:10:int:0.39:3.9,spi:10:spi:0.11:1.1,armor:46:armor:0.042:1.932
+R	priest/holy	12	227980	0	gear	41.688	sta:12:sta:0.75:9,int:15:int:0.39:5.85,spi:10:spi:0.11:1.1,sp:22:sp:1:22,armor:89:armor:0.042:3.738
+R	priest/holy	12	228292	0	gear	22.248	sta:23:sta:0.75:17.25,armor:119:armor:0.042:4.998
+R	priest/holy	12	229374	0	mh	7.5	sta:10:sta:0.75:7.5
+R	priest/holy	12	231271	0	gear	26.0	sp:26:sp:1:26
+R	priest/holy	12	233502	0	gear	9.95	sta:11:sta:0.75:8.25,hit:1:spellHit:1.7:1.7
+R	priest/holy	12	234020	0	gear	32.07	sta:7:sta:0.75:5.25,int:8:int:0.39:3.12,hit:1:spellHit:1.7:1.7,sp:22:sp:1:22
+R	priest/holy	12	234614	0	gear	0.0	
+R	priest/holy	12	236284	0	mh	141.48	sta:20:sta:0.75:15,int:20:int:0.39:7.8,hit:2:spellHit:1.7:3.4,crit:3:spellCrit:0.76:2.28,sp:113:sp:1:113
+R	priest/holy	12	239581	0	gear	67.0	sta:17:sta:0.75:12.75,int:17:int:0.39:6.63,spShadow:50:spShadow:0.86:43,armor:110:armor:0.042:4.62
+R	priest/holy	12	249234	0	ranged	195.016	sp:7:sp:1:7,rdps:39.17:rdps:4.8:188.016
+R	priest/holy	12	254033	0	gear	8.56	spDmg:6:sp:1:6,spi:8:spi:0.11:0.88,armor:40:armor:0.042:1.68
+R	priest/holy	12	260820	0	gear	0.0	
+R	priest/holy	12	271661	0	gear	0.084	armor:2:armor:0.042:0.084
+R	priest/holy	12	272406	0	gear	16.16	int:14:int:0.39:5.46,hit:1:spellHit:1.7:1.7,sp:9:sp:1:9
+R	priest/holy	12	273423	0	gear	36.65	int:10:int:0.39:3.9,sta:26:sta:0.75:19.5,spDmg:9:sp:1:9,spi:10:spi:0.11:1.1,armor:75:armor:0.042:3.15
+R	priest/holy	12	274919	0	ranged	163.22	spShadow:7:spShadow:0.86:6.02,rdps:32.75:rdps:4.8:157.2
+R	priest/holy	12	276888	0	mh	1.0	int:2:int:0.39:0.78,spi:2:spi:0.11:0.22
+R	priest/holy	12	279826	0	gear	27.573999999999998	sta:13:sta:0.75:9.75,spi:10:spi:0.11:1.1,int:8:int:0.39:3.12,sp:11:sp:1:11,armor:62:armor:0.042:2.604
+R	priest/holy	12	281315	0	gear	1.926	int:3:int:0.39:1.17,armor:18:armor:0.042:0.756
+R	priest/holy	12	284197	0	gear	7.428	sta:8:sta:0.75:6,armor:34:armor:0.042:1.428
+R	priest/holy	12	286997	0	gear	14.012	spi:17:spi:0.11:1.87,sp:10:sp:1:10,armor:51:armor:0.042:2.142
 R	priest/holy	25	35	0	mh	0.0	
 R	priest/holy	25	1299	0	gear	8.6	sta:4:sta:1.7:6.8,spi:3:spi:0.6:1.8
 R	priest/holy	25	1831	0	mh	0.0	
@@ -1961,7 +2115,7 @@ R	priest/holy	25	2364	0	gear	0.0
 R	priest/holy	25	2955	0	gear	24.7	sta:11:sta:1.7:18.7,spi:10:spi:0.6:6
 R	priest/holy	25	3423	0	oh	0.0	
 R	priest/holy	25	3947	0	gear	0.0	
-R	priest/holy	25	4454	0	mh	1.2	spi:2:spi:0.6:1.2
+R	priest/holy	25	4454	0	mh	1.7999999999999998	spi:3:spi:0.6:1.8
 R	priest/holy	25	4947	0	mh	0.0	
 R	priest/holy	25	5393	0	mh	0.0	
 R	priest/holy	25	6333	0	mh	3.4	sta:2:sta:1.7:3.4
@@ -2011,8 +2165,8 @@ R	priest/holy	25	7355	12757	gear	0.0
 R	priest/holy	25	7355	12758	gear	0.0	
 R	priest/holy	25	7355	12759	gear	0.0	
 R	priest/holy	25	7355	12761	gear	7.92	spShadow:9:spShadow:0.88:7.92
-R	priest/holy	25	7757	0	mh	26.9	sta:7:sta:1.7:11.9,int:15:int:1:15
-R	priest/holy	25	9491	0	gear	19.5	sta:5:sta:1.7:8.5,int:8:int:1:8,spi:5:spi:0.6:3
+R	priest/holy	25	7757	0	mh	28.9	sta:17:sta:1.7:28.9
+R	priest/holy	25	9491	0	gear	19.5	int:8:int:1:8,spi:5:spi:0.6:3,sta:5:sta:1.7:8.5
 R	priest/holy	25	9875	0	gear	0.0	
 R	priest/holy	25	9875	12718	gear	21.6	int:8:int:1:8,sta:8:sta:1.7:13.6
 R	priest/holy	25	9875	12719	gear	18.4	spi:8:spi:0.6:4.8,sta:8:sta:1.7:13.6
@@ -2065,174 +2219,196 @@ R	priest/holy	25	10102	12759	gear	0.0
 R	priest/holy	25	10102	12761	gear	32.56	spShadow:37:spShadow:0.88:32.56
 R	priest/holy	25	10645	0	gear	0.0	
 R	priest/holy	25	11288	0	ranged	112.25	sp:2:sp:1:2,rdps:17.5:rdps:6.3:110.25
-R	priest/holy	25	11808	0	gear	34.0	sta:20:sta:1.7:34
-R	priest/holy	25	12015	0	gear	0.0	
-R	priest/holy	25	12015	12718	gear	24.299999999999997	int:9:int:1:9,sta:9:sta:1.7:15.3
-R	priest/holy	25	12015	12719	gear	20.7	spi:9:spi:0.6:5.4,sta:9:sta:1.7:15.3
-R	priest/holy	25	12015	12720	gear	14.399999999999999	int:9:int:1:9,spi:9:spi:0.6:5.4
-R	priest/holy	25	12015	12721	gear	15.299999999999999	sta:9:sta:1.7:15.3
-R	priest/holy	25	12015	12722	gear	15.299999999999999	sta:9:sta:1.7:15.3
-R	priest/holy	25	12015	12723	gear	9.0	int:9:int:1:9
-R	priest/holy	25	12015	12724	gear	9.0	int:9:int:1:9
-R	priest/holy	25	12015	12725	gear	5.3999999999999995	spi:9:spi:0.6:5.4
-R	priest/holy	25	12015	12726	gear	5.3999999999999995	spi:9:spi:0.6:5.4
-R	priest/holy	25	12015	12727	gear	0.0	
-R	priest/holy	25	12015	12728	gear	0.0	
-R	priest/holy	25	12015	12729	gear	14.0	int:14:int:1:14
-R	priest/holy	25	12015	12730	gear	8.4	spi:14:spi:0.6:8.4
-R	priest/holy	25	12015	12731	gear	23.8	sta:14:sta:1.7:23.8
-R	priest/holy	25	12015	12732	gear	0.0	
-R	priest/holy	25	12015	12733	gear	0.0	
-R	priest/holy	25	12015	12737	gear	0.0	
-R	priest/holy	25	12015	12738	gear	6.6000000000000005	mp5:6:mp5:1.1:6.6
-R	priest/holy	25	12015	12739	gear	0.0	
-R	priest/holy	25	12015	12740	gear	15.299999999999999	sta:9:sta:1.7:15.3
-R	priest/holy	25	12015	12741	gear	15.299999999999999	sta:9:sta:1.7:15.3
-R	priest/holy	25	12015	12742	gear	15.299999999999999	sta:9:sta:1.7:15.3
-R	priest/holy	25	12015	12743	gear	15.299999999999999	sta:9:sta:1.7:15.3
-R	priest/holy	25	12015	12744	gear	15.299999999999999	sta:9:sta:1.7:15.3
-R	priest/holy	25	12015	12745	gear	25.2	int:10:int:1:10,sta:6:sta:1.7:10.2,sp:5:sp:1:5
-R	priest/holy	25	12015	12746	gear	18.6	int:10:int:1:10,spi:6:spi:0.6:3.6,sp:5:sp:1:5
-R	priest/holy	25	12015	12747	gear	25.6	spi:6:spi:0.6:3.6,sta:10:sta:1.7:17,sp:5:sp:1:5
-R	priest/holy	25	12015	12748	gear	26.0	int:6:int:1:6,sta:10:sta:1.7:17,spDmg:3:sp:1:3
-R	priest/holy	25	12015	12749	gear	16.6	int:10:int:1:10,spi:6:spi:0.6:3.6,spDmg:3:sp:1:3
-R	priest/holy	25	12015	12750	gear	23.6	spi:6:spi:0.6:3.6,sta:10:sta:1.7:17,spDmg:3:sp:1:3
-R	priest/holy	25	12015	12751	gear	17.0	sta:10:sta:1.7:17
-R	priest/holy	25	12015	12752	gear	17.0	sta:10:sta:1.7:17
-R	priest/holy	25	12015	12753	gear	17.0	sta:10:sta:1.7:17
-R	priest/holy	25	12015	12754	gear	22.0	sp:5:sp:1:5,sta:10:sta:1.7:17
-R	priest/holy	25	12015	12755	gear	22.0	sp:5:sp:1:5,sta:10:sta:1.7:17
-R	priest/holy	25	12805	0	gear	0.0	
-R	priest/holy	25	13360	0	mh	22.1	sta:5:sta:1.7:8.5,int:10:int:1:10,spi:6:spi:0.6:3.6
-R	priest/holy	25	14108	0	gear	7.199999999999999	spi:12:spi:0.6:7.2
-R	priest/holy	25	14213	0	gear	0.0	
-R	priest/holy	25	14213	12718	gear	27.0	int:10:int:1:10,sta:10:sta:1.7:17
-R	priest/holy	25	14213	12719	gear	23.0	spi:10:spi:0.6:6,sta:10:sta:1.7:17
-R	priest/holy	25	14213	12720	gear	16.0	int:10:int:1:10,spi:10:spi:0.6:6
-R	priest/holy	25	14213	12729	gear	15.0	int:15:int:1:15
-R	priest/holy	25	14213	12730	gear	9.0	spi:15:spi:0.6:9
-R	priest/holy	25	14213	12731	gear	25.5	sta:15:sta:1.7:25.5
-R	priest/holy	25	14213	12734	gear	18.0	sp:18:sp:1:18
-R	priest/holy	25	14213	12735	gear	11.0	spDmg:11:sp:1:11
-R	priest/holy	25	14213	12740	gear	17.0	sta:10:sta:1.7:17
-R	priest/holy	25	14213	12741	gear	17.0	sta:10:sta:1.7:17
-R	priest/holy	25	14213	12742	gear	17.0	sta:10:sta:1.7:17
-R	priest/holy	25	14213	12743	gear	17.0	sta:10:sta:1.7:17
-R	priest/holy	25	14213	12744	gear	17.0	sta:10:sta:1.7:17
-R	priest/holy	25	14213	12745	gear	27.2	int:11:int:1:11,sta:6:sta:1.7:10.2,sp:6:sp:1:6
-R	priest/holy	25	14213	12746	gear	20.6	int:11:int:1:11,spi:6:spi:0.6:3.6,sp:6:sp:1:6
-R	priest/holy	25	14213	12747	gear	28.299999999999997	spi:6:spi:0.6:3.6,sta:11:sta:1.7:18.7,sp:6:sp:1:6
-R	priest/holy	25	14213	12748	gear	28.7	int:6:int:1:6,sta:11:sta:1.7:18.7,spDmg:4:sp:1:4
-R	priest/holy	25	14213	12749	gear	18.6	int:11:int:1:11,spi:6:spi:0.6:3.6,spDmg:4:sp:1:4
-R	priest/holy	25	14213	12750	gear	26.299999999999997	spi:6:spi:0.6:3.6,sta:11:sta:1.7:18.7,spDmg:4:sp:1:4
-R	priest/holy	25	14213	12756	gear	0.0	
-R	priest/holy	25	14213	12757	gear	0.0	
-R	priest/holy	25	14213	12758	gear	0.0	
-R	priest/holy	25	14213	12759	gear	0.0	
-R	priest/holy	25	14213	12761	gear	18.48	spShadow:21:spShadow:0.88:18.48
-R	priest/holy	25	14312	0	gear	0.0	
-R	priest/holy	25	14312	12718	gear	48.599999999999994	int:18:int:1:18,sta:18:sta:1.7:30.6
-R	priest/holy	25	14312	12719	gear	41.4	spi:18:spi:0.6:10.8,sta:18:sta:1.7:30.6
-R	priest/holy	25	14312	12720	gear	28.799999999999997	int:18:int:1:18,spi:18:spi:0.6:10.8
-R	priest/holy	25	14312	12729	gear	27.0	int:27:int:1:27
-R	priest/holy	25	14312	12730	gear	16.2	spi:27:spi:0.6:16.2
-R	priest/holy	25	14312	12731	gear	45.9	sta:27:sta:1.7:45.9
-R	priest/holy	25	14312	12734	gear	32.0	sp:32:sp:1:32
-R	priest/holy	25	14312	12735	gear	20.0	spDmg:20:sp:1:20
-R	priest/holy	25	14312	12740	gear	30.599999999999998	sta:18:sta:1.7:30.6
-R	priest/holy	25	14312	12741	gear	30.599999999999998	sta:18:sta:1.7:30.6
-R	priest/holy	25	14312	12742	gear	30.599999999999998	sta:18:sta:1.7:30.6
-R	priest/holy	25	14312	12743	gear	30.599999999999998	sta:18:sta:1.7:30.6
-R	priest/holy	25	14312	12744	gear	30.599999999999998	sta:18:sta:1.7:30.6
-R	priest/holy	25	14312	12745	gear	48.7	int:20:int:1:20,sta:11:sta:1.7:18.7,sp:10:sp:1:10
-R	priest/holy	25	14312	12746	gear	36.6	int:20:int:1:20,spi:11:spi:0.6:6.6,sp:10:sp:1:10
-R	priest/holy	25	14312	12747	gear	50.6	spi:11:spi:0.6:6.6,sta:20:sta:1.7:34,sp:10:sp:1:10
-R	priest/holy	25	14312	12748	gear	51.0	int:11:int:1:11,sta:20:sta:1.7:34,spDmg:6:sp:1:6
-R	priest/holy	25	14312	12749	gear	32.6	int:20:int:1:20,spi:11:spi:0.6:6.6,spDmg:6:sp:1:6
-R	priest/holy	25	14312	12750	gear	46.6	spi:11:spi:0.6:6.6,sta:20:sta:1.7:34,spDmg:6:sp:1:6
-R	priest/holy	25	14312	12756	gear	0.0	
-R	priest/holy	25	14312	12757	gear	0.0	
-R	priest/holy	25	14312	12758	gear	0.0	
-R	priest/holy	25	14312	12759	gear	0.0	
-R	priest/holy	25	14312	12761	gear	34.32	spShadow:39:spShadow:0.88:34.32
-R	priest/holy	25	14440	0	gear	13.799999999999999	sta:6:sta:1.7:10.2,spi:6:spi:0.6:3.6
-R	priest/holy	25	15299	0	gear	0.0	
-R	priest/holy	25	15939	0	oh	0.0	
-R	priest/holy	25	15939	12718	oh	24.299999999999997	int:9:int:1:9,sta:9:sta:1.7:15.3
-R	priest/holy	25	15939	12719	oh	20.7	spi:9:spi:0.6:5.4,sta:9:sta:1.7:15.3
-R	priest/holy	25	15939	12720	oh	14.399999999999999	int:9:int:1:9,spi:9:spi:0.6:5.4
-R	priest/holy	25	15939	12721	oh	15.299999999999999	sta:9:sta:1.7:15.3
-R	priest/holy	25	15939	12722	oh	15.299999999999999	sta:9:sta:1.7:15.3
-R	priest/holy	25	15939	12723	oh	9.0	int:9:int:1:9
-R	priest/holy	25	15939	12724	oh	9.0	int:9:int:1:9
-R	priest/holy	25	15939	12725	oh	5.3999999999999995	spi:9:spi:0.6:5.4
-R	priest/holy	25	15939	12726	oh	5.3999999999999995	spi:9:spi:0.6:5.4
-R	priest/holy	25	15939	12727	oh	0.0	
-R	priest/holy	25	15939	12728	oh	0.0	
-R	priest/holy	25	15939	12729	oh	14.0	int:14:int:1:14
-R	priest/holy	25	15939	12730	oh	8.4	spi:14:spi:0.6:8.4
-R	priest/holy	25	15939	12731	oh	23.8	sta:14:sta:1.7:23.8
-R	priest/holy	25	15939	12732	oh	0.0	
-R	priest/holy	25	15939	12733	oh	0.0	
-R	priest/holy	25	15939	12734	oh	16.0	sp:16:sp:1:16
-R	priest/holy	25	15939	12735	oh	10.0	spDmg:10:sp:1:10
-R	priest/holy	25	15939	12740	oh	15.299999999999999	sta:9:sta:1.7:15.3
-R	priest/holy	25	15939	12741	oh	15.299999999999999	sta:9:sta:1.7:15.3
-R	priest/holy	25	15939	12742	oh	15.299999999999999	sta:9:sta:1.7:15.3
-R	priest/holy	25	15939	12743	oh	15.299999999999999	sta:9:sta:1.7:15.3
-R	priest/holy	25	15939	12744	oh	15.299999999999999	sta:9:sta:1.7:15.3
-R	priest/holy	25	15939	12745	oh	25.2	int:10:int:1:10,sta:6:sta:1.7:10.2,sp:5:sp:1:5
-R	priest/holy	25	15939	12746	oh	18.6	int:10:int:1:10,spi:6:spi:0.6:3.6,sp:5:sp:1:5
-R	priest/holy	25	15939	12747	oh	25.6	spi:6:spi:0.6:3.6,sta:10:sta:1.7:17,sp:5:sp:1:5
-R	priest/holy	25	15939	12748	oh	26.0	int:6:int:1:6,sta:10:sta:1.7:17,spDmg:3:sp:1:3
-R	priest/holy	25	15939	12749	oh	16.6	int:10:int:1:10,spi:6:spi:0.6:3.6,spDmg:3:sp:1:3
-R	priest/holy	25	15939	12750	oh	23.6	spi:6:spi:0.6:3.6,sta:10:sta:1.7:17,spDmg:3:sp:1:3
-R	priest/holy	25	15939	12756	oh	0.0	
-R	priest/holy	25	15939	12757	oh	0.0	
-R	priest/holy	25	15939	12758	oh	0.0	
-R	priest/holy	25	15939	12759	oh	0.0	
-R	priest/holy	25	15939	12760	oh	0.0	
-R	priest/holy	25	15939	12761	oh	17.6	spShadow:20:spShadow:0.88:17.6
+R	priest/holy	25	11807	0	gear	33.0	spi:10:spi:0.6:6,sta:10:sta:1.7:17,int:10:int:1:10
+R	priest/holy	25	12014	0	gear	0.0	
+R	priest/holy	25	12014	12718	gear	24.299999999999997	int:9:int:1:9,sta:9:sta:1.7:15.3
+R	priest/holy	25	12014	12719	gear	20.7	spi:9:spi:0.6:5.4,sta:9:sta:1.7:15.3
+R	priest/holy	25	12014	12720	gear	14.399999999999999	int:9:int:1:9,spi:9:spi:0.6:5.4
+R	priest/holy	25	12014	12721	gear	15.299999999999999	sta:9:sta:1.7:15.3
+R	priest/holy	25	12014	12722	gear	15.299999999999999	sta:9:sta:1.7:15.3
+R	priest/holy	25	12014	12723	gear	9.0	int:9:int:1:9
+R	priest/holy	25	12014	12724	gear	9.0	int:9:int:1:9
+R	priest/holy	25	12014	12725	gear	5.3999999999999995	spi:9:spi:0.6:5.4
+R	priest/holy	25	12014	12726	gear	5.3999999999999995	spi:9:spi:0.6:5.4
+R	priest/holy	25	12014	12727	gear	0.0	
+R	priest/holy	25	12014	12728	gear	0.0	
+R	priest/holy	25	12014	12729	gear	13.0	int:13:int:1:13
+R	priest/holy	25	12014	12730	gear	7.8	spi:13:spi:0.6:7.8
+R	priest/holy	25	12014	12731	gear	22.099999999999998	sta:13:sta:1.7:22.1
+R	priest/holy	25	12014	12732	gear	0.0	
+R	priest/holy	25	12014	12733	gear	0.0	
+R	priest/holy	25	12014	12737	gear	0.0	
+R	priest/holy	25	12014	12738	gear	5.5	mp5:5:mp5:1.1:5.5
+R	priest/holy	25	12014	12739	gear	0.0	
+R	priest/holy	25	12014	12740	gear	15.299999999999999	sta:9:sta:1.7:15.3
+R	priest/holy	25	12014	12741	gear	15.299999999999999	sta:9:sta:1.7:15.3
+R	priest/holy	25	12014	12742	gear	15.299999999999999	sta:9:sta:1.7:15.3
+R	priest/holy	25	12014	12743	gear	15.299999999999999	sta:9:sta:1.7:15.3
+R	priest/holy	25	12014	12744	gear	15.299999999999999	sta:9:sta:1.7:15.3
+R	priest/holy	25	12014	12745	gear	22.5	int:9:int:1:9,sta:5:sta:1.7:8.5,sp:5:sp:1:5
+R	priest/holy	25	12014	12746	gear	17.0	int:9:int:1:9,spi:5:spi:0.6:3,sp:5:sp:1:5
+R	priest/holy	25	12014	12747	gear	23.299999999999997	spi:5:spi:0.6:3,sta:9:sta:1.7:15.3,sp:5:sp:1:5
+R	priest/holy	25	12014	12748	gear	23.299999999999997	int:5:int:1:5,sta:9:sta:1.7:15.3,spDmg:3:sp:1:3
+R	priest/holy	25	12014	12749	gear	15.0	int:9:int:1:9,spi:5:spi:0.6:3,spDmg:3:sp:1:3
+R	priest/holy	25	12014	12750	gear	21.299999999999997	spi:5:spi:0.6:3,sta:9:sta:1.7:15.3,spDmg:3:sp:1:3
+R	priest/holy	25	12014	12751	gear	15.299999999999999	sta:9:sta:1.7:15.3
+R	priest/holy	25	12014	12752	gear	15.299999999999999	sta:9:sta:1.7:15.3
+R	priest/holy	25	12014	12753	gear	15.299999999999999	sta:9:sta:1.7:15.3
+R	priest/holy	25	12014	12754	gear	20.299999999999997	sp:5:sp:1:5,sta:9:sta:1.7:15.3
+R	priest/holy	25	12014	12755	gear	22.0	sp:5:sp:1:5,sta:10:sta:1.7:17
+R	priest/holy	25	12794	0	mh	0.0	
+R	priest/holy	25	13353	0	oh	48.68	spi:10:spi:0.6:6,int:15:int:1:15,sta:8:sta:1.7:13.6,spShadow:16:spShadow:0.88:14.08
+R	priest/holy	25	14107	0	gear	34.879999999999995	int:12:int:1:12,spShadow:26:spShadow:0.88:22.88
+R	priest/holy	25	14212	0	gear	0.0	
+R	priest/holy	25	14212	12718	gear	18.9	int:7:int:1:7,sta:7:sta:1.7:11.9
+R	priest/holy	25	14212	12719	gear	16.1	spi:7:spi:0.6:4.2,sta:7:sta:1.7:11.9
+R	priest/holy	25	14212	12720	gear	11.2	int:7:int:1:7,spi:7:spi:0.6:4.2
+R	priest/holy	25	14212	12729	gear	10.0	int:10:int:1:10
+R	priest/holy	25	14212	12730	gear	6.0	spi:10:spi:0.6:6
+R	priest/holy	25	14212	12731	gear	17.0	sta:10:sta:1.7:17
+R	priest/holy	25	14212	12734	gear	12.0	sp:12:sp:1:12
+R	priest/holy	25	14212	12735	gear	7.0	spDmg:7:sp:1:7
+R	priest/holy	25	14212	12740	gear	11.9	sta:7:sta:1.7:11.9
+R	priest/holy	25	14212	12741	gear	11.9	sta:7:sta:1.7:11.9
+R	priest/holy	25	14212	12742	gear	11.9	sta:7:sta:1.7:11.9
+R	priest/holy	25	14212	12743	gear	11.9	sta:7:sta:1.7:11.9
+R	priest/holy	25	14212	12744	gear	11.9	sta:7:sta:1.7:11.9
+R	priest/holy	25	14212	12745	gear	17.8	int:7:int:1:7,sta:4:sta:1.7:6.8,sp:4:sp:1:4
+R	priest/holy	25	14212	12746	gear	13.4	int:7:int:1:7,spi:4:spi:0.6:2.4,sp:4:sp:1:4
+R	priest/holy	25	14212	12747	gear	18.3	spi:4:spi:0.6:2.4,sta:7:sta:1.7:11.9,sp:4:sp:1:4
+R	priest/holy	25	14212	12748	gear	17.9	int:4:int:1:4,sta:7:sta:1.7:11.9,spDmg:2:sp:1:2
+R	priest/holy	25	14212	12749	gear	11.4	int:7:int:1:7,spi:4:spi:0.6:2.4,spDmg:2:sp:1:2
+R	priest/holy	25	14212	12750	gear	16.3	spi:4:spi:0.6:2.4,sta:7:sta:1.7:11.9,spDmg:2:sp:1:2
+R	priest/holy	25	14212	12756	gear	0.0	
+R	priest/holy	25	14212	12757	gear	0.0	
+R	priest/holy	25	14212	12758	gear	0.0	
+R	priest/holy	25	14212	12759	gear	0.0	
+R	priest/holy	25	14212	12761	gear	12.32	spShadow:14:spShadow:0.88:12.32
+R	priest/holy	25	14311	0	gear	0.0	
+R	priest/holy	25	14311	12718	gear	24.299999999999997	int:9:int:1:9,sta:9:sta:1.7:15.3
+R	priest/holy	25	14311	12719	gear	20.7	spi:9:spi:0.6:5.4,sta:9:sta:1.7:15.3
+R	priest/holy	25	14311	12720	gear	14.399999999999999	int:9:int:1:9,spi:9:spi:0.6:5.4
+R	priest/holy	25	14311	12729	gear	13.0	int:13:int:1:13
+R	priest/holy	25	14311	12730	gear	7.8	spi:13:spi:0.6:7.8
+R	priest/holy	25	14311	12731	gear	22.099999999999998	sta:13:sta:1.7:22.1
+R	priest/holy	25	14311	12734	gear	15.0	sp:15:sp:1:15
+R	priest/holy	25	14311	12735	gear	10.0	spDmg:10:sp:1:10
+R	priest/holy	25	14311	12740	gear	15.299999999999999	sta:9:sta:1.7:15.3
+R	priest/holy	25	14311	12741	gear	15.299999999999999	sta:9:sta:1.7:15.3
+R	priest/holy	25	14311	12742	gear	15.299999999999999	sta:9:sta:1.7:15.3
+R	priest/holy	25	14311	12743	gear	15.299999999999999	sta:9:sta:1.7:15.3
+R	priest/holy	25	14311	12744	gear	15.299999999999999	sta:9:sta:1.7:15.3
+R	priest/holy	25	14311	12745	gear	22.5	int:9:int:1:9,sta:5:sta:1.7:8.5,sp:5:sp:1:5
+R	priest/holy	25	14311	12746	gear	17.0	int:9:int:1:9,spi:5:spi:0.6:3,sp:5:sp:1:5
+R	priest/holy	25	14311	12747	gear	23.299999999999997	spi:5:spi:0.6:3,sta:9:sta:1.7:15.3,sp:5:sp:1:5
+R	priest/holy	25	14311	12748	gear	23.299999999999997	int:5:int:1:5,sta:9:sta:1.7:15.3,spDmg:3:sp:1:3
+R	priest/holy	25	14311	12749	gear	15.0	int:9:int:1:9,spi:5:spi:0.6:3,spDmg:3:sp:1:3
+R	priest/holy	25	14311	12750	gear	21.299999999999997	spi:5:spi:0.6:3,sta:9:sta:1.7:15.3,spDmg:3:sp:1:3
+R	priest/holy	25	14311	12756	gear	0.0	
+R	priest/holy	25	14311	12757	gear	0.0	
+R	priest/holy	25	14311	12758	gear	0.0	
+R	priest/holy	25	14311	12759	gear	0.0	
+R	priest/holy	25	14311	12761	gear	16.72	spShadow:19:spShadow:0.88:16.72
+R	priest/holy	25	14439	0	gear	8.8	spi:8:spi:0.6:4.8,int:4:int:1:4
+R	priest/holy	25	15283	0	ranged	357.58799999999997	rdps:56.76:rdps:6.3:357.588
+R	priest/holy	25	15283	12718	ranged	373.78799999999995	int:6:int:1:6,sta:6:sta:1.7:10.2,rdps:56.76:rdps:6.3:357.588
+R	priest/holy	25	15283	12719	ranged	371.388	spi:6:spi:0.6:3.6,sta:6:sta:1.7:10.2,rdps:56.76:rdps:6.3:357.588
+R	priest/holy	25	15283	12720	ranged	367.188	int:6:int:1:6,spi:6:spi:0.6:3.6,rdps:56.76:rdps:6.3:357.588
+R	priest/holy	25	15283	12729	ranged	366.58799999999997	int:9:int:1:9,rdps:56.76:rdps:6.3:357.588
+R	priest/holy	25	15283	12730	ranged	362.98799999999994	spi:9:spi:0.6:5.4,rdps:56.76:rdps:6.3:357.588
+R	priest/holy	25	15283	12731	ranged	372.888	sta:9:sta:1.7:15.3,rdps:56.76:rdps:6.3:357.588
+R	priest/holy	25	15283	12734	ranged	368.58799999999997	sp:11:sp:1:11,rdps:56.76:rdps:6.3:357.588
+R	priest/holy	25	15283	12735	ranged	364.58799999999997	spDmg:7:sp:1:7,rdps:56.76:rdps:6.3:357.588
+R	priest/holy	25	15283	12740	ranged	367.78799999999995	sta:6:sta:1.7:10.2,rdps:56.76:rdps:6.3:357.588
+R	priest/holy	25	15283	12741	ranged	367.78799999999995	sta:6:sta:1.7:10.2,rdps:56.76:rdps:6.3:357.588
+R	priest/holy	25	15283	12742	ranged	367.78799999999995	sta:6:sta:1.7:10.2,rdps:56.76:rdps:6.3:357.588
+R	priest/holy	25	15283	12743	ranged	367.78799999999995	sta:6:sta:1.7:10.2,rdps:56.76:rdps:6.3:357.588
+R	priest/holy	25	15283	12744	ranged	367.78799999999995	sta:6:sta:1.7:10.2,rdps:56.76:rdps:6.3:357.588
+R	priest/holy	25	15283	12745	ranged	374.388	int:7:int:1:7,sta:4:sta:1.7:6.8,sp:3:sp:1:3,rdps:56.76:rdps:6.3:357.588
+R	priest/holy	25	15283	12746	ranged	369.98799999999994	int:7:int:1:7,spi:4:spi:0.6:2.4,sp:3:sp:1:3,rdps:56.76:rdps:6.3:357.588
+R	priest/holy	25	15283	12747	ranged	374.888	spi:4:spi:0.6:2.4,sta:7:sta:1.7:11.9,sp:3:sp:1:3,rdps:56.76:rdps:6.3:357.588
+R	priest/holy	25	15283	12748	ranged	375.48799999999994	int:4:int:1:4,sta:7:sta:1.7:11.9,spDmg:2:sp:1:2,rdps:56.76:rdps:6.3:357.588
+R	priest/holy	25	15283	12749	ranged	368.98799999999994	int:7:int:1:7,spi:4:spi:0.6:2.4,spDmg:2:sp:1:2,rdps:56.76:rdps:6.3:357.588
+R	priest/holy	25	15283	12750	ranged	373.888	spi:4:spi:0.6:2.4,sta:7:sta:1.7:11.9,spDmg:2:sp:1:2,rdps:56.76:rdps:6.3:357.588
+R	priest/holy	25	15283	12756	ranged	357.58799999999997	rdps:56.76:rdps:6.3:357.588
+R	priest/holy	25	15283	12757	ranged	357.58799999999997	rdps:56.76:rdps:6.3:357.588
+R	priest/holy	25	15283	12758	ranged	357.58799999999997	rdps:56.76:rdps:6.3:357.588
+R	priest/holy	25	15283	12759	ranged	357.58799999999997	rdps:56.76:rdps:6.3:357.588
+R	priest/holy	25	15283	12761	ranged	369.02799999999996	spShadow:13:spShadow:0.88:11.44,rdps:56.76:rdps:6.3:357.588
+R	priest/holy	25	15938	0	oh	0.0	
+R	priest/holy	25	15938	12718	oh	24.299999999999997	int:9:int:1:9,sta:9:sta:1.7:15.3
+R	priest/holy	25	15938	12719	oh	20.7	spi:9:spi:0.6:5.4,sta:9:sta:1.7:15.3
+R	priest/holy	25	15938	12720	oh	14.399999999999999	int:9:int:1:9,spi:9:spi:0.6:5.4
+R	priest/holy	25	15938	12721	oh	15.299999999999999	sta:9:sta:1.7:15.3
+R	priest/holy	25	15938	12722	oh	15.299999999999999	sta:9:sta:1.7:15.3
+R	priest/holy	25	15938	12723	oh	9.0	int:9:int:1:9
+R	priest/holy	25	15938	12724	oh	9.0	int:9:int:1:9
+R	priest/holy	25	15938	12725	oh	5.3999999999999995	spi:9:spi:0.6:5.4
+R	priest/holy	25	15938	12726	oh	5.3999999999999995	spi:9:spi:0.6:5.4
+R	priest/holy	25	15938	12727	oh	0.0	
+R	priest/holy	25	15938	12728	oh	0.0	
+R	priest/holy	25	15938	12729	oh	14.0	int:14:int:1:14
+R	priest/holy	25	15938	12730	oh	8.4	spi:14:spi:0.6:8.4
+R	priest/holy	25	15938	12731	oh	23.8	sta:14:sta:1.7:23.8
+R	priest/holy	25	15938	12732	oh	0.0	
+R	priest/holy	25	15938	12733	oh	0.0	
+R	priest/holy	25	15938	12734	oh	16.0	sp:16:sp:1:16
+R	priest/holy	25	15938	12735	oh	10.0	spDmg:10:sp:1:10
+R	priest/holy	25	15938	12740	oh	15.299999999999999	sta:9:sta:1.7:15.3
+R	priest/holy	25	15938	12741	oh	15.299999999999999	sta:9:sta:1.7:15.3
+R	priest/holy	25	15938	12742	oh	15.299999999999999	sta:9:sta:1.7:15.3
+R	priest/holy	25	15938	12743	oh	15.299999999999999	sta:9:sta:1.7:15.3
+R	priest/holy	25	15938	12744	oh	15.299999999999999	sta:9:sta:1.7:15.3
+R	priest/holy	25	15938	12745	oh	25.2	int:10:int:1:10,sta:6:sta:1.7:10.2,sp:5:sp:1:5
+R	priest/holy	25	15938	12746	oh	18.6	int:10:int:1:10,spi:6:spi:0.6:3.6,sp:5:sp:1:5
+R	priest/holy	25	15938	12747	oh	25.6	spi:6:spi:0.6:3.6,sta:10:sta:1.7:17,sp:5:sp:1:5
+R	priest/holy	25	15938	12748	oh	26.0	int:6:int:1:6,sta:10:sta:1.7:17,spDmg:3:sp:1:3
+R	priest/holy	25	15938	12749	oh	16.6	int:10:int:1:10,spi:6:spi:0.6:3.6,spDmg:3:sp:1:3
+R	priest/holy	25	15938	12750	oh	23.6	spi:6:spi:0.6:3.6,sta:10:sta:1.7:17,spDmg:3:sp:1:3
+R	priest/holy	25	15938	12756	oh	0.0	
+R	priest/holy	25	15938	12757	oh	0.0	
+R	priest/holy	25	15938	12758	oh	0.0	
+R	priest/holy	25	15938	12759	oh	0.0	
+R	priest/holy	25	15938	12760	oh	0.0	
+R	priest/holy	25	15938	12761	oh	17.6	spShadow:20:spShadow:0.88:17.6
 R	priest/holy	25	15945	0	oh	4.6	sta:2:sta:1.7:3.4,spi:2:spi:0.6:1.2
-R	priest/holy	25	16819	0	gear	35.800000000000004	sta:8:sta:1.7:13.6,int:14:int:1:14,spi:10:spi:0.6:6,mp5:2:mp5:1.1:2.2
-R	priest/holy	25	17739	0	gear	20.4	sta:12:sta:1.7:20.4
-R	priest/holy	25	18440	0	gear	15.299999999999999	sta:9:sta:1.7:15.3
-R	priest/holy	25	18879	0	gear	34.0	sta:20:sta:1.7:34
-R	priest/holy	25	19395	0	gear	9.9	mp5:9:mp5:1.1:9.9
-R	priest/holy	25	19893	0	gear	41.8	sta:10:sta:1.7:17,int:10:int:1:10,spellHit:1:spellHit:3.8:3.8,sp:11:sp:1:11
-R	priest/holy	25	20330	0	gear	55.6	int:27:int:1:27,spi:11:spi:0.6:6.6,sta:12:sta:1.7:20.4,crit:1:spellCrit:1.6:1.6
-R	priest/holy	25	20652	0	gear	0.0	
-R	priest/holy	25	20652	12745	gear	35.6	int:15:int:1:15,sta:8:sta:1.7:13.6,sp:7:sp:1:7
-R	priest/holy	25	20652	12746	gear	26.8	int:15:int:1:15,spi:8:spi:0.6:4.8,sp:7:sp:1:7
-R	priest/holy	25	20652	12747	gear	37.3	spi:8:spi:0.6:4.8,sta:15:sta:1.7:25.5,sp:7:sp:1:7
-R	priest/holy	25	20652	12748	gear	38.5	int:8:int:1:8,sta:15:sta:1.7:25.5,spDmg:5:sp:1:5
-R	priest/holy	25	20652	12749	gear	24.8	int:15:int:1:15,spi:8:spi:0.6:4.8,spDmg:5:sp:1:5
-R	priest/holy	25	20652	12750	gear	35.3	spi:8:spi:0.6:4.8,sta:15:sta:1.7:25.5,spDmg:5:sp:1:5
-R	priest/holy	25	21500	0	gear	43.199999999999996	sta:14:sta:1.7:23.8,int:15:int:1:15,mp5:4:mp5:1.1:4.4
-R	priest/holy	25	22085	0	gear	65.89999999999999	int:14:int:1:14,sta:13:sta:1.7:22.1,mp5:6:mp5:1.1:6.6,sp:16:sp:1:16,spi:12:spi:0.6:7.2
-R	priest/holy	25	22678	0	gear	0.0	
-R	priest/holy	25	23177	0	ranged	248.704	spShadow:10:spShadow:0.88:8.8,rdps:38.08:rdps:6.3:239.904
-R	priest/holy	25	212583	0	mh	5.1	sta:3:sta:1.7:5.1
-R	priest/holy	25	217296	0	gear	20.299999999999997	sta:9:sta:1.7:15.3,sp:5:sp:1:5
-R	priest/holy	25	220907	0	gear	49.699999999999996	sta:13:sta:1.7:22.1,int:12:int:1:12,crit:1:spellCrit:1.6:1.6,sp:14:sp:1:14
-R	priest/holy	25	226731	0	gear	43.9	sta:7:sta:1.7:11.9,int:11:int:1:11,sp:21:sp:1:21
-R	priest/holy	25	227967	0	gear	0.0	
-R	priest/holy	25	228282	0	gear	69.0	sta:20:sta:1.7:34,sp:35:sp:1:35
-R	priest/holy	25	228757	0	mh	0.0	
-R	priest/holy	25	231168	0	gear	91.1	sta:15:sta:1.7:25.5,int:20:int:1:20,crit:1:spellCrit:1.6:1.6,spShadow:50:spShadow:0.88:44
-R	priest/holy	25	233395	0	gear	100.44	sta:14:sta:1.7:23.8,int:18:int:1:18,crit:2:spellCrit:1.6:3.2,spShadow:63:spShadow:0.88:55.44
-R	priest/holy	25	233994	0	gear	42.6	int:18:int:1:18,crit:1:spellCrit:1.6:1.6,spDmg:23:sp:1:23
-R	priest/holy	25	234576	0	mh	96.3	sta:21:sta:1.7:35.7,int:8:int:1:8,crit:1:spellCrit:1.6:1.6,spDmg:51:sp:1:51
-R	priest/holy	25	236277	0	gear	39.0	sta:8:sta:1.7:13.6,int:9:int:1:9,spi:9:spi:0.6:5.4,spDmg:11:sp:1:11
-R	priest/holy	25	239565	0	gear	112.58	sta:15:sta:1.7:25.5,int:17:int:1:17,crit:2:spellCrit:1.6:3.2,spShadow:76:spShadow:0.88:66.88
-R	priest/holy	25	247789	0	ranged	25.2	rdps:4:rdps:6.3:25.2
-R	priest/holy	25	254029	0	gear	22.299999999999997	int:7:int:1:7,sta:9:sta:1.7:15.3
-R	priest/holy	25	260829	0	gear	0.0	
-R	priest/holy	25	271909	0	gear	23.8	sta:14:sta:1.7:23.8
-R	priest/holy	25	272847	0	mh	5.0	sta:2:sta:1.7:3.4,crit:1:spellCrit:1.6:1.6
-R	priest/holy	25	275831	0	gear	5.0	int:5:int:1:5
-R	priest/holy	25	278019	0	gear	14.2	sta:6:sta:1.7:10.2,sp:4:sp:1:4
-R	priest/holy	25	288931	0	gear	16.0	sp:16:sp:1:16
+R	priest/holy	25	16817	0	gear	58.4	sta:10:sta:1.7:17,int:22:int:1:22,spi:10:spi:0.6:6,mp5:4:mp5:1.1:4.4,sp:9:sp:1:9
+R	priest/holy	25	17737	0	oh	11.04	hit:0.8:spellHit:3.8:3.04,int:8:int:1:8
+R	priest/holy	25	18438	0	gear	0.0	
+R	priest/holy	25	18878	0	mh	50.6	sta:8:sta:1.7:13.6,int:17:int:1:17,sp:20:sp:1:20
+R	priest/holy	25	19391	0	gear	52.3	sta:13:sta:1.7:22.1,int:17:int:1:17,mp5:12:mp5:1.1:13.2
+R	priest/holy	25	19891	0	oh	46.4	sta:8:sta:1.7:13.6,int:11:int:1:11,sp:18:sp:1:18,spellHit:1:spellHit:3.8:3.8
+R	priest/holy	25	20333	0	gear	44.5	int:20:int:1:20,spi:8:spi:0.6:4.8,sta:9:sta:1.7:15.3,mp5:4:mp5:1.1:4.4
+R	priest/holy	25	20672	0	ranged	406.679	int:9:int:1:9,sp:5:sp:1:5,rdps:62.33:rdps:6.3:392.679
+R	priest/holy	25	21522	0	mh	23.8	sta:14:sta:1.7:23.8
+R	priest/holy	25	22231	0	gear	44.5	int:18:int:1:18,sta:11:sta:1.7:18.7,hit:1:spellHit:3.8:3.8,sp:4:sp:1:4
+R	priest/holy	25	22711	0	gear	39.2	sta:6:sta:1.7:10.2,int:6:int:1:6,sp:23:sp:1:23
+R	priest/holy	25	23237	0	gear	11.6	int:10:int:1:10,crit:1:spellCrit:1.6:1.6
+R	priest/holy	25	213088	0	gear	13.200000000000001	sta:4:sta:1.7:6.8,int:4:int:1:4,spi:4:spi:0.6:2.4
+R	priest/holy	25	217301	0	gear	18.9	sta:7:sta:1.7:11.9,int:7:int:1:7
+R	priest/holy	25	221025	0	gear	40.9	sta:7:sta:1.7:11.9,int:8:int:1:8,sp:21:sp:1:21
+R	priest/holy	25	226744	0	gear	34.7	sta:11:sta:1.7:18.7,int:10:int:1:10,spi:10:spi:0.6:6
+R	priest/holy	25	227980	0	gear	63.4	sta:12:sta:1.7:20.4,int:15:int:1:15,spi:10:spi:0.6:6,sp:22:sp:1:22
+R	priest/holy	25	228292	0	gear	39.1	sta:23:sta:1.7:39.1
+R	priest/holy	25	229374	0	mh	17.0	sta:10:sta:1.7:17
+R	priest/holy	25	231271	0	gear	26.0	sp:26:sp:1:26
+R	priest/holy	25	233502	0	gear	22.5	sta:11:sta:1.7:18.7,hit:1:spellHit:3.8:3.8
+R	priest/holy	25	234020	0	gear	45.7	sta:7:sta:1.7:11.9,int:8:int:1:8,hit:1:spellHit:3.8:3.8,sp:22:sp:1:22
+R	priest/holy	25	234614	0	gear	0.0	
+R	priest/holy	25	236284	0	mh	179.4	sta:20:sta:1.7:34,int:20:int:1:20,hit:2:spellHit:3.8:7.6,crit:3:spellCrit:1.6:4.8,sp:113:sp:1:113
+R	priest/holy	25	239581	0	gear	89.9	sta:17:sta:1.7:28.9,int:17:int:1:17,spShadow:50:spShadow:0.88:44
+R	priest/holy	25	249234	0	ranged	253.77100000000002	sp:7:sp:1:7,rdps:39.17:rdps:6.3:246.771
+R	priest/holy	25	254033	0	gear	10.8	spDmg:6:sp:1:6,spi:8:spi:0.6:4.8
+R	priest/holy	25	260820	0	gear	0.0	
+R	priest/holy	25	271661	0	gear	0.0	
+R	priest/holy	25	272406	0	gear	26.8	int:14:int:1:14,hit:1:spellHit:3.8:3.8,sp:9:sp:1:9
+R	priest/holy	25	273423	0	gear	69.19999999999999	int:10:int:1:10,sta:26:sta:1.7:44.2,spDmg:9:sp:1:9,spi:10:spi:0.6:6
+R	priest/holy	25	274919	0	ranged	212.48499999999999	spShadow:7:spShadow:0.88:6.16,rdps:32.75:rdps:6.3:206.325
+R	priest/holy	25	276888	0	mh	3.2	int:2:int:1:2,spi:2:spi:0.6:1.2
+R	priest/holy	25	279826	0	gear	47.099999999999994	sta:13:sta:1.7:22.1,spi:10:spi:0.6:6,int:8:int:1:8,sp:11:sp:1:11
+R	priest/holy	25	281315	0	gear	3.0	int:3:int:1:3
+R	priest/holy	25	284197	0	gear	13.6	sta:8:sta:1.7:13.6
+R	priest/holy	25	286997	0	gear	20.2	spi:17:spi:0.6:10.2,sp:10:sp:1:10
 R	priest/holy	34	35	0	mh	0.0	
 R	priest/holy	34	1299	0	gear	8.66	sta:4:sta:1.2:4.8,spi:3:spi:0.88:2.64,armor:20:armor:0.061:1.22
 R	priest/holy	34	1831	0	mh	0.0	
@@ -2240,7 +2416,7 @@ R	priest/holy	34	2364	0	gear	1.0979999999999999	armor:18:armor:0.061:1.098
 R	priest/holy	34	2955	0	gear	24.623	sta:11:sta:1.2:13.2,spi:10:spi:0.88:8.8,armor:43:armor:0.061:2.623
 R	priest/holy	34	3423	0	oh	0.0	
 R	priest/holy	34	3947	0	gear	1.83	armor:30:armor:0.061:1.83
-R	priest/holy	34	4454	0	mh	1.76	spi:2:spi:0.88:1.76
+R	priest/holy	34	4454	0	mh	2.64	spi:3:spi:0.88:2.64
 R	priest/holy	34	4947	0	mh	0.0	
 R	priest/holy	34	5393	0	mh	0.0	
 R	priest/holy	34	6333	0	mh	2.4	sta:2:sta:1.2:2.4
@@ -2290,8 +2466,8 @@ R	priest/holy	34	7355	12757	gear	1.159	armor:19:armor:0.061:1.159
 R	priest/holy	34	7355	12758	gear	1.159	armor:19:armor:0.061:1.159
 R	priest/holy	34	7355	12759	gear	1.159	armor:19:armor:0.061:1.159
 R	priest/holy	34	7355	12761	gear	8.809	spShadow:9:spShadow:0.85:7.65,armor:19:armor:0.061:1.159
-R	priest/holy	34	7757	0	mh	20.55	sta:7:sta:1.2:8.4,int:15:int:0.81:12.15
-R	priest/holy	34	9491	0	gear	18.771	sta:5:sta:1.2:6,int:8:int:0.81:6.48,spi:5:spi:0.88:4.4,armor:31:armor:0.061:1.891
+R	priest/holy	34	7757	0	mh	20.4	sta:17:sta:1.2:20.4
+R	priest/holy	34	9491	0	gear	18.771	int:8:int:0.81:6.48,spi:5:spi:0.88:4.4,sta:5:sta:1.2:6,armor:31:armor:0.061:1.891
 R	priest/holy	34	9875	0	gear	1.769	armor:29:armor:0.061:1.769
 R	priest/holy	34	9875	12718	gear	17.848999999999997	int:8:int:0.81:6.48,sta:8:sta:1.2:9.6,armor:29:armor:0.061:1.769
 R	priest/holy	34	9875	12719	gear	18.409	spi:8:spi:0.88:7.04,sta:8:sta:1.2:9.6,armor:29:armor:0.061:1.769
@@ -2344,174 +2520,196 @@ R	priest/holy	34	10102	12759	gear	4.636	armor:76:armor:0.061:4.636
 R	priest/holy	34	10102	12761	gear	36.086	spShadow:37:spShadow:0.85:31.45,armor:76:armor:0.061:4.636
 R	priest/holy	34	10645	0	gear	0.0	
 R	priest/holy	34	11288	0	ranged	147.25	sp:2:sp:1:2,rdps:17.5:rdps:8.3:145.25
-R	priest/holy	34	11808	0	gear	28.514	sta:20:sta:1.2:24,armor:74:armor:0.061:4.514
-R	priest/holy	34	12015	0	gear	0.0	
-R	priest/holy	34	12015	12718	gear	18.09	int:9:int:0.81:7.29,sta:9:sta:1.2:10.8
-R	priest/holy	34	12015	12719	gear	18.72	spi:9:spi:0.88:7.92,sta:9:sta:1.2:10.8
-R	priest/holy	34	12015	12720	gear	15.21	int:9:int:0.81:7.29,spi:9:spi:0.88:7.92
-R	priest/holy	34	12015	12721	gear	10.799999999999999	sta:9:sta:1.2:10.8
-R	priest/holy	34	12015	12722	gear	10.799999999999999	sta:9:sta:1.2:10.8
-R	priest/holy	34	12015	12723	gear	7.290000000000001	int:9:int:0.81:7.29
-R	priest/holy	34	12015	12724	gear	7.290000000000001	int:9:int:0.81:7.29
-R	priest/holy	34	12015	12725	gear	7.92	spi:9:spi:0.88:7.92
-R	priest/holy	34	12015	12726	gear	7.92	spi:9:spi:0.88:7.92
-R	priest/holy	34	12015	12727	gear	0.0	
-R	priest/holy	34	12015	12728	gear	0.0	
-R	priest/holy	34	12015	12729	gear	11.34	int:14:int:0.81:11.34
-R	priest/holy	34	12015	12730	gear	12.32	spi:14:spi:0.88:12.32
-R	priest/holy	34	12015	12731	gear	16.8	sta:14:sta:1.2:16.8
-R	priest/holy	34	12015	12732	gear	0.0	
-R	priest/holy	34	12015	12733	gear	0.0	
-R	priest/holy	34	12015	12737	gear	0.0	
-R	priest/holy	34	12015	12738	gear	7.800000000000001	mp5:6:mp5:1.3:7.8
-R	priest/holy	34	12015	12739	gear	0.0	
-R	priest/holy	34	12015	12740	gear	10.799999999999999	sta:9:sta:1.2:10.8
-R	priest/holy	34	12015	12741	gear	10.799999999999999	sta:9:sta:1.2:10.8
-R	priest/holy	34	12015	12742	gear	10.799999999999999	sta:9:sta:1.2:10.8
-R	priest/holy	34	12015	12743	gear	10.799999999999999	sta:9:sta:1.2:10.8
-R	priest/holy	34	12015	12744	gear	10.799999999999999	sta:9:sta:1.2:10.8
-R	priest/holy	34	12015	12745	gear	20.3	int:10:int:0.81:8.1,sta:6:sta:1.2:7.2,sp:5:sp:1:5
-R	priest/holy	34	12015	12746	gear	18.380000000000003	int:10:int:0.81:8.1,spi:6:spi:0.88:5.28,sp:5:sp:1:5
-R	priest/holy	34	12015	12747	gear	22.28	spi:6:spi:0.88:5.28,sta:10:sta:1.2:12,sp:5:sp:1:5
-R	priest/holy	34	12015	12748	gear	19.86	int:6:int:0.81:4.86,sta:10:sta:1.2:12,spDmg:3:sp:1:3
-R	priest/holy	34	12015	12749	gear	16.380000000000003	int:10:int:0.81:8.1,spi:6:spi:0.88:5.28,spDmg:3:sp:1:3
-R	priest/holy	34	12015	12750	gear	20.28	spi:6:spi:0.88:5.28,sta:10:sta:1.2:12,spDmg:3:sp:1:3
-R	priest/holy	34	12015	12751	gear	12.0	sta:10:sta:1.2:12
-R	priest/holy	34	12015	12752	gear	12.0	sta:10:sta:1.2:12
-R	priest/holy	34	12015	12753	gear	12.0	sta:10:sta:1.2:12
-R	priest/holy	34	12015	12754	gear	17.0	sp:5:sp:1:5,sta:10:sta:1.2:12
-R	priest/holy	34	12015	12755	gear	17.0	sp:5:sp:1:5,sta:10:sta:1.2:12
-R	priest/holy	34	12805	0	gear	0.0	
-R	priest/holy	34	13360	0	mh	19.380000000000003	sta:5:sta:1.2:6,int:10:int:0.81:8.1,spi:6:spi:0.88:5.28
-R	priest/holy	34	14108	0	gear	13.671	spi:12:spi:0.88:10.56,armor:51:armor:0.061:3.111
-R	priest/holy	34	14213	0	gear	2.989	armor:49:armor:0.061:2.989
-R	priest/holy	34	14213	12718	gear	23.089000000000002	int:10:int:0.81:8.1,sta:10:sta:1.2:12,armor:49:armor:0.061:2.989
-R	priest/holy	34	14213	12719	gear	23.789	spi:10:spi:0.88:8.8,sta:10:sta:1.2:12,armor:49:armor:0.061:2.989
-R	priest/holy	34	14213	12720	gear	19.889000000000003	int:10:int:0.81:8.1,spi:10:spi:0.88:8.8,armor:49:armor:0.061:2.989
-R	priest/holy	34	14213	12729	gear	15.139	int:15:int:0.81:12.15,armor:49:armor:0.061:2.989
-R	priest/holy	34	14213	12730	gear	16.189	spi:15:spi:0.88:13.2,armor:49:armor:0.061:2.989
-R	priest/holy	34	14213	12731	gear	20.989	sta:15:sta:1.2:18,armor:49:armor:0.061:2.989
-R	priest/holy	34	14213	12734	gear	20.989	sp:18:sp:1:18,armor:49:armor:0.061:2.989
-R	priest/holy	34	14213	12735	gear	13.989	spDmg:11:sp:1:11,armor:49:armor:0.061:2.989
-R	priest/holy	34	14213	12740	gear	14.989	sta:10:sta:1.2:12,armor:49:armor:0.061:2.989
-R	priest/holy	34	14213	12741	gear	14.989	sta:10:sta:1.2:12,armor:49:armor:0.061:2.989
-R	priest/holy	34	14213	12742	gear	14.989	sta:10:sta:1.2:12,armor:49:armor:0.061:2.989
-R	priest/holy	34	14213	12743	gear	14.989	sta:10:sta:1.2:12,armor:49:armor:0.061:2.989
-R	priest/holy	34	14213	12744	gear	14.989	sta:10:sta:1.2:12,armor:49:armor:0.061:2.989
-R	priest/holy	34	14213	12745	gear	25.099	int:11:int:0.81:8.91,sta:6:sta:1.2:7.2,sp:6:sp:1:6,armor:49:armor:0.061:2.989
-R	priest/holy	34	14213	12746	gear	23.179000000000002	int:11:int:0.81:8.91,spi:6:spi:0.88:5.28,sp:6:sp:1:6,armor:49:armor:0.061:2.989
-R	priest/holy	34	14213	12747	gear	27.469	spi:6:spi:0.88:5.28,sta:11:sta:1.2:13.2,sp:6:sp:1:6,armor:49:armor:0.061:2.989
-R	priest/holy	34	14213	12748	gear	25.049	int:6:int:0.81:4.86,sta:11:sta:1.2:13.2,spDmg:4:sp:1:4,armor:49:armor:0.061:2.989
-R	priest/holy	34	14213	12749	gear	21.179000000000002	int:11:int:0.81:8.91,spi:6:spi:0.88:5.28,spDmg:4:sp:1:4,armor:49:armor:0.061:2.989
-R	priest/holy	34	14213	12750	gear	25.469	spi:6:spi:0.88:5.28,sta:11:sta:1.2:13.2,spDmg:4:sp:1:4,armor:49:armor:0.061:2.989
-R	priest/holy	34	14213	12756	gear	2.989	armor:49:armor:0.061:2.989
-R	priest/holy	34	14213	12757	gear	2.989	armor:49:armor:0.061:2.989
-R	priest/holy	34	14213	12758	gear	2.989	armor:49:armor:0.061:2.989
-R	priest/holy	34	14213	12759	gear	2.989	armor:49:armor:0.061:2.989
-R	priest/holy	34	14213	12761	gear	20.839	spShadow:21:spShadow:0.85:17.85,armor:49:armor:0.061:2.989
-R	priest/holy	34	14312	0	gear	3.904	armor:64:armor:0.061:3.904
-R	priest/holy	34	14312	12718	gear	40.084	int:18:int:0.81:14.58,sta:18:sta:1.2:21.6,armor:64:armor:0.061:3.904
-R	priest/holy	34	14312	12719	gear	41.343999999999994	spi:18:spi:0.88:15.84,sta:18:sta:1.2:21.6,armor:64:armor:0.061:3.904
-R	priest/holy	34	14312	12720	gear	34.324	int:18:int:0.81:14.58,spi:18:spi:0.88:15.84,armor:64:armor:0.061:3.904
-R	priest/holy	34	14312	12729	gear	25.774	int:27:int:0.81:21.87,armor:64:armor:0.061:3.904
-R	priest/holy	34	14312	12730	gear	27.664	spi:27:spi:0.88:23.76,armor:64:armor:0.061:3.904
-R	priest/holy	34	14312	12731	gear	36.304	sta:27:sta:1.2:32.4,armor:64:armor:0.061:3.904
-R	priest/holy	34	14312	12734	gear	35.903999999999996	sp:32:sp:1:32,armor:64:armor:0.061:3.904
-R	priest/holy	34	14312	12735	gear	23.904	spDmg:20:sp:1:20,armor:64:armor:0.061:3.904
-R	priest/holy	34	14312	12740	gear	25.503999999999998	sta:18:sta:1.2:21.6,armor:64:armor:0.061:3.904
-R	priest/holy	34	14312	12741	gear	25.503999999999998	sta:18:sta:1.2:21.6,armor:64:armor:0.061:3.904
-R	priest/holy	34	14312	12742	gear	25.503999999999998	sta:18:sta:1.2:21.6,armor:64:armor:0.061:3.904
-R	priest/holy	34	14312	12743	gear	25.503999999999998	sta:18:sta:1.2:21.6,armor:64:armor:0.061:3.904
-R	priest/holy	34	14312	12744	gear	25.503999999999998	sta:18:sta:1.2:21.6,armor:64:armor:0.061:3.904
-R	priest/holy	34	14312	12745	gear	43.304	int:20:int:0.81:16.2,sta:11:sta:1.2:13.2,sp:10:sp:1:10,armor:64:armor:0.061:3.904
-R	priest/holy	34	14312	12746	gear	39.784000000000006	int:20:int:0.81:16.2,spi:11:spi:0.88:9.68,sp:10:sp:1:10,armor:64:armor:0.061:3.904
-R	priest/holy	34	14312	12747	gear	47.584	spi:11:spi:0.88:9.68,sta:20:sta:1.2:24,sp:10:sp:1:10,armor:64:armor:0.061:3.904
-R	priest/holy	34	14312	12748	gear	42.81399999999999	int:11:int:0.81:8.91,sta:20:sta:1.2:24,spDmg:6:sp:1:6,armor:64:armor:0.061:3.904
-R	priest/holy	34	14312	12749	gear	35.784000000000006	int:20:int:0.81:16.2,spi:11:spi:0.88:9.68,spDmg:6:sp:1:6,armor:64:armor:0.061:3.904
-R	priest/holy	34	14312	12750	gear	43.584	spi:11:spi:0.88:9.68,sta:20:sta:1.2:24,spDmg:6:sp:1:6,armor:64:armor:0.061:3.904
-R	priest/holy	34	14312	12756	gear	3.904	armor:64:armor:0.061:3.904
-R	priest/holy	34	14312	12757	gear	3.904	armor:64:armor:0.061:3.904
-R	priest/holy	34	14312	12758	gear	3.904	armor:64:armor:0.061:3.904
-R	priest/holy	34	14312	12759	gear	3.904	armor:64:armor:0.061:3.904
-R	priest/holy	34	14312	12761	gear	37.054	spShadow:39:spShadow:0.85:33.15,armor:64:armor:0.061:3.904
-R	priest/holy	34	14440	0	gear	14.31	sta:6:sta:1.2:7.2,spi:6:spi:0.88:5.28,armor:30:armor:0.061:1.83
-R	priest/holy	34	15299	0	gear	0.5489999999999999	armor:9:armor:0.061:0.549
-R	priest/holy	34	15939	0	oh	0.0	
-R	priest/holy	34	15939	12718	oh	18.09	int:9:int:0.81:7.29,sta:9:sta:1.2:10.8
-R	priest/holy	34	15939	12719	oh	18.72	spi:9:spi:0.88:7.92,sta:9:sta:1.2:10.8
-R	priest/holy	34	15939	12720	oh	15.21	int:9:int:0.81:7.29,spi:9:spi:0.88:7.92
-R	priest/holy	34	15939	12721	oh	10.799999999999999	sta:9:sta:1.2:10.8
-R	priest/holy	34	15939	12722	oh	10.799999999999999	sta:9:sta:1.2:10.8
-R	priest/holy	34	15939	12723	oh	7.290000000000001	int:9:int:0.81:7.29
-R	priest/holy	34	15939	12724	oh	7.290000000000001	int:9:int:0.81:7.29
-R	priest/holy	34	15939	12725	oh	7.92	spi:9:spi:0.88:7.92
-R	priest/holy	34	15939	12726	oh	7.92	spi:9:spi:0.88:7.92
-R	priest/holy	34	15939	12727	oh	0.0	
-R	priest/holy	34	15939	12728	oh	0.0	
-R	priest/holy	34	15939	12729	oh	11.34	int:14:int:0.81:11.34
-R	priest/holy	34	15939	12730	oh	12.32	spi:14:spi:0.88:12.32
-R	priest/holy	34	15939	12731	oh	16.8	sta:14:sta:1.2:16.8
-R	priest/holy	34	15939	12732	oh	0.0	
-R	priest/holy	34	15939	12733	oh	0.0	
-R	priest/holy	34	15939	12734	oh	16.0	sp:16:sp:1:16
-R	priest/holy	34	15939	12735	oh	10.0	spDmg:10:sp:1:10
-R	priest/holy	34	15939	12740	oh	10.799999999999999	sta:9:sta:1.2:10.8
-R	priest/holy	34	15939	12741	oh	10.799999999999999	sta:9:sta:1.2:10.8
-R	priest/holy	34	15939	12742	oh	10.799999999999999	sta:9:sta:1.2:10.8
-R	priest/holy	34	15939	12743	oh	10.799999999999999	sta:9:sta:1.2:10.8
-R	priest/holy	34	15939	12744	oh	10.799999999999999	sta:9:sta:1.2:10.8
-R	priest/holy	34	15939	12745	oh	20.3	int:10:int:0.81:8.1,sta:6:sta:1.2:7.2,sp:5:sp:1:5
-R	priest/holy	34	15939	12746	oh	18.380000000000003	int:10:int:0.81:8.1,spi:6:spi:0.88:5.28,sp:5:sp:1:5
-R	priest/holy	34	15939	12747	oh	22.28	spi:6:spi:0.88:5.28,sta:10:sta:1.2:12,sp:5:sp:1:5
-R	priest/holy	34	15939	12748	oh	19.86	int:6:int:0.81:4.86,sta:10:sta:1.2:12,spDmg:3:sp:1:3
-R	priest/holy	34	15939	12749	oh	16.380000000000003	int:10:int:0.81:8.1,spi:6:spi:0.88:5.28,spDmg:3:sp:1:3
-R	priest/holy	34	15939	12750	oh	20.28	spi:6:spi:0.88:5.28,sta:10:sta:1.2:12,spDmg:3:sp:1:3
-R	priest/holy	34	15939	12756	oh	0.0	
-R	priest/holy	34	15939	12757	oh	0.0	
-R	priest/holy	34	15939	12758	oh	0.0	
-R	priest/holy	34	15939	12759	oh	0.0	
-R	priest/holy	34	15939	12760	oh	0.0	
-R	priest/holy	34	15939	12761	oh	17.0	spShadow:20:spShadow:0.85:17
+R	priest/holy	34	11807	0	gear	31.706000000000003	spi:10:spi:0.88:8.8,sta:10:sta:1.2:12,int:10:int:0.81:8.1,armor:46:armor:0.061:2.806
+R	priest/holy	34	12014	0	gear	0.0	
+R	priest/holy	34	12014	12718	gear	18.09	int:9:int:0.81:7.29,sta:9:sta:1.2:10.8
+R	priest/holy	34	12014	12719	gear	18.72	spi:9:spi:0.88:7.92,sta:9:sta:1.2:10.8
+R	priest/holy	34	12014	12720	gear	15.21	int:9:int:0.81:7.29,spi:9:spi:0.88:7.92
+R	priest/holy	34	12014	12721	gear	10.799999999999999	sta:9:sta:1.2:10.8
+R	priest/holy	34	12014	12722	gear	10.799999999999999	sta:9:sta:1.2:10.8
+R	priest/holy	34	12014	12723	gear	7.290000000000001	int:9:int:0.81:7.29
+R	priest/holy	34	12014	12724	gear	7.290000000000001	int:9:int:0.81:7.29
+R	priest/holy	34	12014	12725	gear	7.92	spi:9:spi:0.88:7.92
+R	priest/holy	34	12014	12726	gear	7.92	spi:9:spi:0.88:7.92
+R	priest/holy	34	12014	12727	gear	0.0	
+R	priest/holy	34	12014	12728	gear	0.0	
+R	priest/holy	34	12014	12729	gear	10.530000000000001	int:13:int:0.81:10.53
+R	priest/holy	34	12014	12730	gear	11.44	spi:13:spi:0.88:11.44
+R	priest/holy	34	12014	12731	gear	15.6	sta:13:sta:1.2:15.6
+R	priest/holy	34	12014	12732	gear	0.0	
+R	priest/holy	34	12014	12733	gear	0.0	
+R	priest/holy	34	12014	12737	gear	0.0	
+R	priest/holy	34	12014	12738	gear	6.5	mp5:5:mp5:1.3:6.5
+R	priest/holy	34	12014	12739	gear	0.0	
+R	priest/holy	34	12014	12740	gear	10.799999999999999	sta:9:sta:1.2:10.8
+R	priest/holy	34	12014	12741	gear	10.799999999999999	sta:9:sta:1.2:10.8
+R	priest/holy	34	12014	12742	gear	10.799999999999999	sta:9:sta:1.2:10.8
+R	priest/holy	34	12014	12743	gear	10.799999999999999	sta:9:sta:1.2:10.8
+R	priest/holy	34	12014	12744	gear	10.799999999999999	sta:9:sta:1.2:10.8
+R	priest/holy	34	12014	12745	gear	18.29	int:9:int:0.81:7.29,sta:5:sta:1.2:6,sp:5:sp:1:5
+R	priest/holy	34	12014	12746	gear	16.69	int:9:int:0.81:7.29,spi:5:spi:0.88:4.4,sp:5:sp:1:5
+R	priest/holy	34	12014	12747	gear	20.2	spi:5:spi:0.88:4.4,sta:9:sta:1.2:10.8,sp:5:sp:1:5
+R	priest/holy	34	12014	12748	gear	17.85	int:5:int:0.81:4.05,sta:9:sta:1.2:10.8,spDmg:3:sp:1:3
+R	priest/holy	34	12014	12749	gear	14.690000000000001	int:9:int:0.81:7.29,spi:5:spi:0.88:4.4,spDmg:3:sp:1:3
+R	priest/holy	34	12014	12750	gear	18.2	spi:5:spi:0.88:4.4,sta:9:sta:1.2:10.8,spDmg:3:sp:1:3
+R	priest/holy	34	12014	12751	gear	10.799999999999999	sta:9:sta:1.2:10.8
+R	priest/holy	34	12014	12752	gear	10.799999999999999	sta:9:sta:1.2:10.8
+R	priest/holy	34	12014	12753	gear	10.799999999999999	sta:9:sta:1.2:10.8
+R	priest/holy	34	12014	12754	gear	15.799999999999999	sp:5:sp:1:5,sta:9:sta:1.2:10.8
+R	priest/holy	34	12014	12755	gear	17.0	sp:5:sp:1:5,sta:10:sta:1.2:12
+R	priest/holy	34	12794	0	mh	0.0	
+R	priest/holy	34	13353	0	oh	44.150000000000006	spi:10:spi:0.88:8.8,int:15:int:0.81:12.15,sta:8:sta:1.2:9.6,spShadow:16:spShadow:0.85:13.6
+R	priest/holy	34	14107	0	gear	35.602000000000004	int:12:int:0.81:9.72,spShadow:26:spShadow:0.85:22.1,armor:62:armor:0.061:3.782
+R	priest/holy	34	14212	0	gear	2.135	armor:35:armor:0.061:2.135
+R	priest/holy	34	14212	12718	gear	16.205	int:7:int:0.81:5.67,sta:7:sta:1.2:8.4,armor:35:armor:0.061:2.135
+R	priest/holy	34	14212	12719	gear	16.695	spi:7:spi:0.88:6.16,sta:7:sta:1.2:8.4,armor:35:armor:0.061:2.135
+R	priest/holy	34	14212	12720	gear	13.965	int:7:int:0.81:5.67,spi:7:spi:0.88:6.16,armor:35:armor:0.061:2.135
+R	priest/holy	34	14212	12729	gear	10.235000000000001	int:10:int:0.81:8.1,armor:35:armor:0.061:2.135
+R	priest/holy	34	14212	12730	gear	10.935	spi:10:spi:0.88:8.8,armor:35:armor:0.061:2.135
+R	priest/holy	34	14212	12731	gear	14.135	sta:10:sta:1.2:12,armor:35:armor:0.061:2.135
+R	priest/holy	34	14212	12734	gear	14.135	sp:12:sp:1:12,armor:35:armor:0.061:2.135
+R	priest/holy	34	14212	12735	gear	9.135	spDmg:7:sp:1:7,armor:35:armor:0.061:2.135
+R	priest/holy	34	14212	12740	gear	10.535	sta:7:sta:1.2:8.4,armor:35:armor:0.061:2.135
+R	priest/holy	34	14212	12741	gear	10.535	sta:7:sta:1.2:8.4,armor:35:armor:0.061:2.135
+R	priest/holy	34	14212	12742	gear	10.535	sta:7:sta:1.2:8.4,armor:35:armor:0.061:2.135
+R	priest/holy	34	14212	12743	gear	10.535	sta:7:sta:1.2:8.4,armor:35:armor:0.061:2.135
+R	priest/holy	34	14212	12744	gear	10.535	sta:7:sta:1.2:8.4,armor:35:armor:0.061:2.135
+R	priest/holy	34	14212	12745	gear	16.604999999999997	int:7:int:0.81:5.67,sta:4:sta:1.2:4.8,sp:4:sp:1:4,armor:35:armor:0.061:2.135
+R	priest/holy	34	14212	12746	gear	15.325	int:7:int:0.81:5.67,spi:4:spi:0.88:3.52,sp:4:sp:1:4,armor:35:armor:0.061:2.135
+R	priest/holy	34	14212	12747	gear	18.055	spi:4:spi:0.88:3.52,sta:7:sta:1.2:8.4,sp:4:sp:1:4,armor:35:armor:0.061:2.135
+R	priest/holy	34	14212	12748	gear	15.775	int:4:int:0.81:3.24,sta:7:sta:1.2:8.4,spDmg:2:sp:1:2,armor:35:armor:0.061:2.135
+R	priest/holy	34	14212	12749	gear	13.325	int:7:int:0.81:5.67,spi:4:spi:0.88:3.52,spDmg:2:sp:1:2,armor:35:armor:0.061:2.135
+R	priest/holy	34	14212	12750	gear	16.055	spi:4:spi:0.88:3.52,sta:7:sta:1.2:8.4,spDmg:2:sp:1:2,armor:35:armor:0.061:2.135
+R	priest/holy	34	14212	12756	gear	2.135	armor:35:armor:0.061:2.135
+R	priest/holy	34	14212	12757	gear	2.135	armor:35:armor:0.061:2.135
+R	priest/holy	34	14212	12758	gear	2.135	armor:35:armor:0.061:2.135
+R	priest/holy	34	14212	12759	gear	2.135	armor:35:armor:0.061:2.135
+R	priest/holy	34	14212	12761	gear	14.035	spShadow:14:spShadow:0.85:11.9,armor:35:armor:0.061:2.135
+R	priest/holy	34	14311	0	gear	1.891	armor:31:armor:0.061:1.891
+R	priest/holy	34	14311	12718	gear	19.981	int:9:int:0.81:7.29,sta:9:sta:1.2:10.8,armor:31:armor:0.061:1.891
+R	priest/holy	34	14311	12719	gear	20.610999999999997	spi:9:spi:0.88:7.92,sta:9:sta:1.2:10.8,armor:31:armor:0.061:1.891
+R	priest/holy	34	14311	12720	gear	17.101	int:9:int:0.81:7.29,spi:9:spi:0.88:7.92,armor:31:armor:0.061:1.891
+R	priest/holy	34	14311	12729	gear	12.421000000000001	int:13:int:0.81:10.53,armor:31:armor:0.061:1.891
+R	priest/holy	34	14311	12730	gear	13.331	spi:13:spi:0.88:11.44,armor:31:armor:0.061:1.891
+R	priest/holy	34	14311	12731	gear	17.491	sta:13:sta:1.2:15.6,armor:31:armor:0.061:1.891
+R	priest/holy	34	14311	12734	gear	16.891	sp:15:sp:1:15,armor:31:armor:0.061:1.891
+R	priest/holy	34	14311	12735	gear	11.891	spDmg:10:sp:1:10,armor:31:armor:0.061:1.891
+R	priest/holy	34	14311	12740	gear	12.690999999999999	sta:9:sta:1.2:10.8,armor:31:armor:0.061:1.891
+R	priest/holy	34	14311	12741	gear	12.690999999999999	sta:9:sta:1.2:10.8,armor:31:armor:0.061:1.891
+R	priest/holy	34	14311	12742	gear	12.690999999999999	sta:9:sta:1.2:10.8,armor:31:armor:0.061:1.891
+R	priest/holy	34	14311	12743	gear	12.690999999999999	sta:9:sta:1.2:10.8,armor:31:armor:0.061:1.891
+R	priest/holy	34	14311	12744	gear	12.690999999999999	sta:9:sta:1.2:10.8,armor:31:armor:0.061:1.891
+R	priest/holy	34	14311	12745	gear	20.180999999999997	int:9:int:0.81:7.29,sta:5:sta:1.2:6,sp:5:sp:1:5,armor:31:armor:0.061:1.891
+R	priest/holy	34	14311	12746	gear	18.581000000000003	int:9:int:0.81:7.29,spi:5:spi:0.88:4.4,sp:5:sp:1:5,armor:31:armor:0.061:1.891
+R	priest/holy	34	14311	12747	gear	22.091	spi:5:spi:0.88:4.4,sta:9:sta:1.2:10.8,sp:5:sp:1:5,armor:31:armor:0.061:1.891
+R	priest/holy	34	14311	12748	gear	19.741	int:5:int:0.81:4.05,sta:9:sta:1.2:10.8,spDmg:3:sp:1:3,armor:31:armor:0.061:1.891
+R	priest/holy	34	14311	12749	gear	16.581000000000003	int:9:int:0.81:7.29,spi:5:spi:0.88:4.4,spDmg:3:sp:1:3,armor:31:armor:0.061:1.891
+R	priest/holy	34	14311	12750	gear	20.091	spi:5:spi:0.88:4.4,sta:9:sta:1.2:10.8,spDmg:3:sp:1:3,armor:31:armor:0.061:1.891
+R	priest/holy	34	14311	12756	gear	1.891	armor:31:armor:0.061:1.891
+R	priest/holy	34	14311	12757	gear	1.891	armor:31:armor:0.061:1.891
+R	priest/holy	34	14311	12758	gear	1.891	armor:31:armor:0.061:1.891
+R	priest/holy	34	14311	12759	gear	1.891	armor:31:armor:0.061:1.891
+R	priest/holy	34	14311	12761	gear	18.040999999999997	spShadow:19:spShadow:0.85:16.15,armor:31:armor:0.061:1.891
+R	priest/holy	34	14439	0	gear	11.927000000000001	spi:8:spi:0.88:7.04,int:4:int:0.81:3.24,armor:27:armor:0.061:1.647
+R	priest/holy	34	15283	0	ranged	471.108	rdps:56.76:rdps:8.3:471.108
+R	priest/holy	34	15283	12718	ranged	483.168	int:6:int:0.81:4.86,sta:6:sta:1.2:7.2,rdps:56.76:rdps:8.3:471.108
+R	priest/holy	34	15283	12719	ranged	483.588	spi:6:spi:0.88:5.28,sta:6:sta:1.2:7.2,rdps:56.76:rdps:8.3:471.108
+R	priest/holy	34	15283	12720	ranged	481.248	int:6:int:0.81:4.86,spi:6:spi:0.88:5.28,rdps:56.76:rdps:8.3:471.108
+R	priest/holy	34	15283	12729	ranged	478.398	int:9:int:0.81:7.29,rdps:56.76:rdps:8.3:471.108
+R	priest/holy	34	15283	12730	ranged	479.028	spi:9:spi:0.88:7.92,rdps:56.76:rdps:8.3:471.108
+R	priest/holy	34	15283	12731	ranged	481.908	sta:9:sta:1.2:10.8,rdps:56.76:rdps:8.3:471.108
+R	priest/holy	34	15283	12734	ranged	482.108	sp:11:sp:1:11,rdps:56.76:rdps:8.3:471.108
+R	priest/holy	34	15283	12735	ranged	478.108	spDmg:7:sp:1:7,rdps:56.76:rdps:8.3:471.108
+R	priest/holy	34	15283	12740	ranged	478.308	sta:6:sta:1.2:7.2,rdps:56.76:rdps:8.3:471.108
+R	priest/holy	34	15283	12741	ranged	478.308	sta:6:sta:1.2:7.2,rdps:56.76:rdps:8.3:471.108
+R	priest/holy	34	15283	12742	ranged	478.308	sta:6:sta:1.2:7.2,rdps:56.76:rdps:8.3:471.108
+R	priest/holy	34	15283	12743	ranged	478.308	sta:6:sta:1.2:7.2,rdps:56.76:rdps:8.3:471.108
+R	priest/holy	34	15283	12744	ranged	478.308	sta:6:sta:1.2:7.2,rdps:56.76:rdps:8.3:471.108
+R	priest/holy	34	15283	12745	ranged	484.578	int:7:int:0.81:5.67,sta:4:sta:1.2:4.8,sp:3:sp:1:3,rdps:56.76:rdps:8.3:471.108
+R	priest/holy	34	15283	12746	ranged	483.298	int:7:int:0.81:5.67,spi:4:spi:0.88:3.52,sp:3:sp:1:3,rdps:56.76:rdps:8.3:471.108
+R	priest/holy	34	15283	12747	ranged	486.028	spi:4:spi:0.88:3.52,sta:7:sta:1.2:8.4,sp:3:sp:1:3,rdps:56.76:rdps:8.3:471.108
+R	priest/holy	34	15283	12748	ranged	484.748	int:4:int:0.81:3.24,sta:7:sta:1.2:8.4,spDmg:2:sp:1:2,rdps:56.76:rdps:8.3:471.108
+R	priest/holy	34	15283	12749	ranged	482.298	int:7:int:0.81:5.67,spi:4:spi:0.88:3.52,spDmg:2:sp:1:2,rdps:56.76:rdps:8.3:471.108
+R	priest/holy	34	15283	12750	ranged	485.028	spi:4:spi:0.88:3.52,sta:7:sta:1.2:8.4,spDmg:2:sp:1:2,rdps:56.76:rdps:8.3:471.108
+R	priest/holy	34	15283	12756	ranged	471.108	rdps:56.76:rdps:8.3:471.108
+R	priest/holy	34	15283	12757	ranged	471.108	rdps:56.76:rdps:8.3:471.108
+R	priest/holy	34	15283	12758	ranged	471.108	rdps:56.76:rdps:8.3:471.108
+R	priest/holy	34	15283	12759	ranged	471.108	rdps:56.76:rdps:8.3:471.108
+R	priest/holy	34	15283	12761	ranged	482.158	spShadow:13:spShadow:0.85:11.05,rdps:56.76:rdps:8.3:471.108
+R	priest/holy	34	15938	0	oh	0.0	
+R	priest/holy	34	15938	12718	oh	18.09	int:9:int:0.81:7.29,sta:9:sta:1.2:10.8
+R	priest/holy	34	15938	12719	oh	18.72	spi:9:spi:0.88:7.92,sta:9:sta:1.2:10.8
+R	priest/holy	34	15938	12720	oh	15.21	int:9:int:0.81:7.29,spi:9:spi:0.88:7.92
+R	priest/holy	34	15938	12721	oh	10.799999999999999	sta:9:sta:1.2:10.8
+R	priest/holy	34	15938	12722	oh	10.799999999999999	sta:9:sta:1.2:10.8
+R	priest/holy	34	15938	12723	oh	7.290000000000001	int:9:int:0.81:7.29
+R	priest/holy	34	15938	12724	oh	7.290000000000001	int:9:int:0.81:7.29
+R	priest/holy	34	15938	12725	oh	7.92	spi:9:spi:0.88:7.92
+R	priest/holy	34	15938	12726	oh	7.92	spi:9:spi:0.88:7.92
+R	priest/holy	34	15938	12727	oh	0.0	
+R	priest/holy	34	15938	12728	oh	0.0	
+R	priest/holy	34	15938	12729	oh	11.34	int:14:int:0.81:11.34
+R	priest/holy	34	15938	12730	oh	12.32	spi:14:spi:0.88:12.32
+R	priest/holy	34	15938	12731	oh	16.8	sta:14:sta:1.2:16.8
+R	priest/holy	34	15938	12732	oh	0.0	
+R	priest/holy	34	15938	12733	oh	0.0	
+R	priest/holy	34	15938	12734	oh	16.0	sp:16:sp:1:16
+R	priest/holy	34	15938	12735	oh	10.0	spDmg:10:sp:1:10
+R	priest/holy	34	15938	12740	oh	10.799999999999999	sta:9:sta:1.2:10.8
+R	priest/holy	34	15938	12741	oh	10.799999999999999	sta:9:sta:1.2:10.8
+R	priest/holy	34	15938	12742	oh	10.799999999999999	sta:9:sta:1.2:10.8
+R	priest/holy	34	15938	12743	oh	10.799999999999999	sta:9:sta:1.2:10.8
+R	priest/holy	34	15938	12744	oh	10.799999999999999	sta:9:sta:1.2:10.8
+R	priest/holy	34	15938	12745	oh	20.3	int:10:int:0.81:8.1,sta:6:sta:1.2:7.2,sp:5:sp:1:5
+R	priest/holy	34	15938	12746	oh	18.380000000000003	int:10:int:0.81:8.1,spi:6:spi:0.88:5.28,sp:5:sp:1:5
+R	priest/holy	34	15938	12747	oh	22.28	spi:6:spi:0.88:5.28,sta:10:sta:1.2:12,sp:5:sp:1:5
+R	priest/holy	34	15938	12748	oh	19.86	int:6:int:0.81:4.86,sta:10:sta:1.2:12,spDmg:3:sp:1:3
+R	priest/holy	34	15938	12749	oh	16.380000000000003	int:10:int:0.81:8.1,spi:6:spi:0.88:5.28,spDmg:3:sp:1:3
+R	priest/holy	34	15938	12750	oh	20.28	spi:6:spi:0.88:5.28,sta:10:sta:1.2:12,spDmg:3:sp:1:3
+R	priest/holy	34	15938	12756	oh	0.0	
+R	priest/holy	34	15938	12757	oh	0.0	
+R	priest/holy	34	15938	12758	oh	0.0	
+R	priest/holy	34	15938	12759	oh	0.0	
+R	priest/holy	34	15938	12760	oh	0.0	
+R	priest/holy	34	15938	12761	oh	17.0	spShadow:20:spShadow:0.85:17
 R	priest/holy	34	15945	0	oh	4.16	sta:2:sta:1.2:2.4,spi:2:spi:0.88:1.76
-R	priest/holy	34	16819	0	gear	35.023999999999994	sta:8:sta:1.2:9.6,int:14:int:0.81:11.34,spi:10:spi:0.88:8.8,mp5:2:mp5:1.3:2.6,armor:44:armor:0.061:2.684
-R	priest/holy	34	17739	0	gear	16.657	sta:12:sta:1.2:14.4,armor:37:armor:0.061:2.257
-R	priest/holy	34	18440	0	gear	14.825999999999999	sta:9:sta:1.2:10.8,armor:66:armor:0.061:4.026
-R	priest/holy	34	18879	0	gear	30.71	sta:20:sta:1.2:24,armor:110:armor:0.061:6.71
-R	priest/holy	34	19395	0	gear	11.700000000000001	mp5:9:mp5:1.3:11.7
-R	priest/holy	34	19893	0	gear	36.8	sta:10:sta:1.2:12,int:10:int:0.81:8.1,spellHit:1:spellHit:5.7:5.7,sp:11:sp:1:11
-R	priest/holy	34	20330	0	gear	54.711000000000006	int:27:int:0.81:21.87,spi:11:spi:0.88:9.68,sta:12:sta:1.2:14.4,crit:1:spellCrit:2.6:2.6,armor:101:armor:0.061:6.161
-R	priest/holy	34	20652	0	gear	3.233	armor:53:armor:0.061:3.233
-R	priest/holy	34	20652	12745	gear	31.983	int:15:int:0.81:12.15,sta:8:sta:1.2:9.6,sp:7:sp:1:7,armor:53:armor:0.061:3.233
-R	priest/holy	34	20652	12746	gear	29.423000000000002	int:15:int:0.81:12.15,spi:8:spi:0.88:7.04,sp:7:sp:1:7,armor:53:armor:0.061:3.233
-R	priest/holy	34	20652	12747	gear	35.272999999999996	spi:8:spi:0.88:7.04,sta:15:sta:1.2:18,sp:7:sp:1:7,armor:53:armor:0.061:3.233
-R	priest/holy	34	20652	12748	gear	32.713	int:8:int:0.81:6.48,sta:15:sta:1.2:18,spDmg:5:sp:1:5,armor:53:armor:0.061:3.233
-R	priest/holy	34	20652	12749	gear	27.423000000000002	int:15:int:0.81:12.15,spi:8:spi:0.88:7.04,spDmg:5:sp:1:5,armor:53:armor:0.061:3.233
-R	priest/holy	34	20652	12750	gear	33.272999999999996	spi:8:spi:0.88:7.04,sta:15:sta:1.2:18,spDmg:5:sp:1:5,armor:53:armor:0.061:3.233
-R	priest/holy	34	21500	0	gear	37.566	sta:14:sta:1.2:16.8,int:15:int:0.81:12.15,mp5:4:mp5:1.3:5.2,armor:56:armor:0.061:3.416
-R	priest/holy	34	22085	0	gear	66.241	int:14:int:0.81:11.34,sta:13:sta:1.2:15.6,mp5:6:mp5:1.3:7.8,sp:16:sp:1:16,spi:12:spi:0.88:10.56,armor:81:armor:0.061:4.941
-R	priest/holy	34	22678	0	gear	0.0	
-R	priest/holy	34	23177	0	ranged	324.564	spShadow:10:spShadow:0.85:8.5,rdps:38.08:rdps:8.3:316.064
-R	priest/holy	34	212583	0	mh	3.5999999999999996	sta:3:sta:1.2:3.6
-R	priest/holy	34	217296	0	gear	15.799999999999999	sta:9:sta:1.2:10.8,sp:5:sp:1:5
-R	priest/holy	34	220907	0	gear	47.654	sta:13:sta:1.2:15.6,int:12:int:0.81:9.72,crit:1:spellCrit:2.6:2.6,sp:14:sp:1:14,armor:94:armor:0.061:5.734
-R	priest/holy	34	226731	0	gear	41.482	sta:7:sta:1.2:8.4,int:11:int:0.81:8.91,sp:21:sp:1:21,armor:52:armor:0.061:3.172
-R	priest/holy	34	227967	0	gear	0.0	
-R	priest/holy	34	228282	0	gear	62.721000000000004	sta:20:sta:1.2:24,sp:35:sp:1:35,armor:61:armor:0.061:3.721
-R	priest/holy	34	228757	0	mh	0.0	
-R	priest/holy	34	231168	0	gear	85.46100000000001	sta:15:sta:1.2:18,int:20:int:0.81:16.2,crit:1:spellCrit:2.6:2.6,spShadow:50:spShadow:0.85:42.5,armor:101:armor:0.061:6.161
-R	priest/holy	34	233395	0	gear	98.243	sta:14:sta:1.2:16.8,int:18:int:0.81:14.58,crit:2:spellCrit:2.6:5.2,spShadow:63:spShadow:0.85:53.55,armor:133:armor:0.061:8.113
-R	priest/holy	34	233994	0	gear	40.18000000000001	int:18:int:0.81:14.58,crit:1:spellCrit:2.6:2.6,spDmg:23:sp:1:23
-R	priest/holy	34	234576	0	mh	85.28	sta:21:sta:1.2:25.2,int:8:int:0.81:6.48,crit:1:spellCrit:2.6:2.6,spDmg:51:sp:1:51
-R	priest/holy	34	236277	0	gear	35.81	sta:8:sta:1.2:9.6,int:9:int:0.81:7.29,spi:9:spi:0.88:7.92,spDmg:11:sp:1:11
-R	priest/holy	34	239565	0	gear	110.476	sta:15:sta:1.2:18,int:17:int:0.81:13.77,crit:2:spellCrit:2.6:5.2,spShadow:76:spShadow:0.85:64.6,armor:146:armor:0.061:8.906
-R	priest/holy	34	247789	0	ranged	33.2	rdps:4:rdps:8.3:33.2
-R	priest/holy	34	254029	0	gear	18.665999999999997	int:7:int:0.81:5.67,sta:9:sta:1.2:10.8,armor:36:armor:0.061:2.196
-R	priest/holy	34	260829	0	gear	2.684	armor:44:armor:0.061:2.684
-R	priest/holy	34	271909	0	gear	16.8	sta:14:sta:1.2:16.8
-R	priest/holy	34	272847	0	mh	5.0	sta:2:sta:1.2:2.4,crit:1:spellCrit:2.6:2.6
-R	priest/holy	34	275831	0	gear	4.050000000000001	int:5:int:0.81:4.05
-R	priest/holy	34	278019	0	gear	11.2	sta:6:sta:1.2:7.2,sp:4:sp:1:4
-R	priest/holy	34	288931	0	gear	16.0	sp:16:sp:1:16
+R	priest/holy	34	16817	0	gear	56.297000000000004	sta:10:sta:1.2:12,int:22:int:0.81:17.82,spi:10:spi:0.88:8.8,mp5:4:mp5:1.3:5.2,sp:9:sp:1:9,armor:57:armor:0.061:3.477
+R	priest/holy	34	17737	0	oh	11.040000000000001	hit:0.8:spellHit:5.7:4.56,int:8:int:0.81:6.48
+R	priest/holy	34	18438	0	gear	0.0	
+R	priest/holy	34	18878	0	mh	43.370000000000005	sta:8:sta:1.2:9.6,int:17:int:0.81:13.77,sp:20:sp:1:20
+R	priest/holy	34	19391	0	gear	49.911	sta:13:sta:1.2:15.6,int:17:int:0.81:13.77,mp5:12:mp5:1.3:15.6,armor:81:armor:0.061:4.941
+R	priest/holy	34	19891	0	oh	42.21	sta:8:sta:1.2:9.6,int:11:int:0.81:8.91,sp:18:sp:1:18,spellHit:1:spellHit:5.7:5.7
+R	priest/holy	34	20333	0	gear	39.24	int:20:int:0.81:16.2,spi:8:spi:0.88:7.04,sta:9:sta:1.2:10.8,mp5:4:mp5:1.3:5.2
+R	priest/holy	34	20672	0	ranged	529.629	int:9:int:0.81:7.29,sp:5:sp:1:5,rdps:62.33:rdps:8.3:517.339
+R	priest/holy	34	21522	0	mh	16.8	sta:14:sta:1.2:16.8
+R	priest/holy	34	22231	0	gear	41.14	int:18:int:0.81:14.58,sta:11:sta:1.2:13.2,hit:1:spellHit:5.7:5.7,sp:4:sp:1:4,armor:60:armor:0.061:3.66
+R	priest/holy	34	22711	0	gear	37.988	sta:6:sta:1.2:7.2,int:6:int:0.81:4.86,sp:23:sp:1:23,armor:48:armor:0.061:2.928
+R	priest/holy	34	23237	0	gear	10.700000000000001	int:10:int:0.81:8.1,crit:1:spellCrit:2.6:2.6
+R	priest/holy	34	213088	0	gear	13.024	sta:4:sta:1.2:4.8,int:4:int:0.81:3.24,spi:4:spi:0.88:3.52,armor:24:armor:0.061:1.464
+R	priest/holy	34	217301	0	gear	14.07	sta:7:sta:1.2:8.4,int:7:int:0.81:5.67
+R	priest/holy	34	221025	0	gear	38.137	sta:7:sta:1.2:8.4,int:8:int:0.81:6.48,sp:21:sp:1:21,armor:37:armor:0.061:2.257
+R	priest/holy	34	226744	0	gear	32.906	sta:11:sta:1.2:13.2,int:10:int:0.81:8.1,spi:10:spi:0.88:8.8,armor:46:armor:0.061:2.806
+R	priest/holy	34	227980	0	gear	62.778999999999996	sta:12:sta:1.2:14.4,int:15:int:0.81:12.15,spi:10:spi:0.88:8.8,sp:22:sp:1:22,armor:89:armor:0.061:5.429
+R	priest/holy	34	228292	0	gear	34.858999999999995	sta:23:sta:1.2:27.6,armor:119:armor:0.061:7.259
+R	priest/holy	34	229374	0	mh	12.0	sta:10:sta:1.2:12
+R	priest/holy	34	231271	0	gear	26.0	sp:26:sp:1:26
+R	priest/holy	34	233502	0	gear	18.9	sta:11:sta:1.2:13.2,hit:1:spellHit:5.7:5.7
+R	priest/holy	34	234020	0	gear	42.58	sta:7:sta:1.2:8.4,int:8:int:0.81:6.48,hit:1:spellHit:5.7:5.7,sp:22:sp:1:22
+R	priest/holy	34	234614	0	gear	0.0	
+R	priest/holy	34	236284	0	mh	172.4	sta:20:sta:1.2:24,int:20:int:0.81:16.2,hit:2:spellHit:5.7:11.4,crit:3:spellCrit:2.6:7.8,sp:113:sp:1:113
+R	priest/holy	34	239581	0	gear	83.38	sta:17:sta:1.2:20.4,int:17:int:0.81:13.77,spShadow:50:spShadow:0.85:42.5,armor:110:armor:0.061:6.71
+R	priest/holy	34	249234	0	ranged	332.11100000000005	sp:7:sp:1:7,rdps:39.17:rdps:8.3:325.111
+R	priest/holy	34	254033	0	gear	15.479999999999999	spDmg:6:sp:1:6,spi:8:spi:0.88:7.04,armor:40:armor:0.061:2.44
+R	priest/holy	34	260820	0	gear	0.0	
+R	priest/holy	34	271661	0	gear	0.122	armor:2:armor:0.061:0.122
+R	priest/holy	34	272406	0	gear	26.04	int:14:int:0.81:11.34,hit:1:spellHit:5.7:5.7,sp:9:sp:1:9
+R	priest/holy	34	273423	0	gear	61.675	int:10:int:0.81:8.1,sta:26:sta:1.2:31.2,spDmg:9:sp:1:9,spi:10:spi:0.88:8.8,armor:75:armor:0.061:4.575
+R	priest/holy	34	274919	0	ranged	277.77500000000003	spShadow:7:spShadow:0.85:5.95,rdps:32.75:rdps:8.3:271.825
+R	priest/holy	34	276888	0	mh	3.38	int:2:int:0.81:1.62,spi:2:spi:0.88:1.76
+R	priest/holy	34	279826	0	gear	45.66199999999999	sta:13:sta:1.2:15.6,spi:10:spi:0.88:8.8,int:8:int:0.81:6.48,sp:11:sp:1:11,armor:62:armor:0.061:3.782
+R	priest/holy	34	281315	0	gear	3.528	int:3:int:0.81:2.43,armor:18:armor:0.061:1.098
+R	priest/holy	34	284197	0	gear	11.674	sta:8:sta:1.2:9.6,armor:34:armor:0.061:2.074
+R	priest/holy	34	286997	0	gear	28.071	spi:17:spi:0.88:14.96,sp:10:sp:1:10,armor:51:armor:0.061:3.111
 R	priest/holy	45	35	0	mh	0.0	
 R	priest/holy	45	1299	0	gear	7.869999999999999	sta:4:sta:0.87:3.48,spi:3:spi:0.99:2.97,armor:20:armor:0.071:1.42
 R	priest/holy	45	1831	0	mh	0.0	
@@ -2519,7 +2717,7 @@ R	priest/holy	45	2364	0	gear	1.2779999999999998	armor:18:armor:0.071:1.278
 R	priest/holy	45	2955	0	gear	22.523	sta:11:sta:0.87:9.57,spi:10:spi:0.99:9.9,armor:43:armor:0.071:3.053
 R	priest/holy	45	3423	0	oh	0.0	
 R	priest/holy	45	3947	0	gear	2.13	armor:30:armor:0.071:2.13
-R	priest/holy	45	4454	0	mh	1.98	spi:2:spi:0.99:1.98
+R	priest/holy	45	4454	0	mh	2.9699999999999998	spi:3:spi:0.99:2.97
 R	priest/holy	45	4947	0	mh	0.0	
 R	priest/holy	45	5393	0	mh	0.0	
 R	priest/holy	45	6333	0	mh	1.74	sta:2:sta:0.87:1.74
@@ -2569,8 +2767,8 @@ R	priest/holy	45	7355	12757	gear	1.349	armor:19:armor:0.071:1.349
 R	priest/holy	45	7355	12758	gear	1.349	armor:19:armor:0.071:1.349
 R	priest/holy	45	7355	12759	gear	1.349	armor:19:armor:0.071:1.349
 R	priest/holy	45	7355	12761	gear	8.549	spShadow:9:spShadow:0.8:7.2,armor:19:armor:0.071:1.349
-R	priest/holy	45	7757	0	mh	22.59	sta:7:sta:0.87:6.09,int:15:int:1.1:16.5
-R	priest/holy	45	9491	0	gear	20.301000000000002	sta:5:sta:0.87:4.35,int:8:int:1.1:8.8,spi:5:spi:0.99:4.95,armor:31:armor:0.071:2.201
+R	priest/holy	45	7757	0	mh	14.79	sta:17:sta:0.87:14.79
+R	priest/holy	45	9491	0	gear	20.301000000000002	int:8:int:1.1:8.8,spi:5:spi:0.99:4.95,sta:5:sta:0.87:4.35,armor:31:armor:0.071:2.201
 R	priest/holy	45	9875	0	gear	2.0589999999999997	armor:29:armor:0.071:2.059
 R	priest/holy	45	9875	12718	gear	17.819000000000003	int:8:int:1.1:8.8,sta:8:sta:0.87:6.96,armor:29:armor:0.071:2.059
 R	priest/holy	45	9875	12719	gear	16.939	spi:8:spi:0.99:7.92,sta:8:sta:0.87:6.96,armor:29:armor:0.071:2.059
@@ -2623,174 +2821,196 @@ R	priest/holy	45	10102	12759	gear	5.396	armor:76:armor:0.071:5.396
 R	priest/holy	45	10102	12761	gear	34.996	spShadow:37:spShadow:0.8:29.6,armor:76:armor:0.071:5.396
 R	priest/holy	45	10645	0	gear	0.0	
 R	priest/holy	45	11288	0	ranged	121.0	sp:2:sp:1:2,rdps:17.5:rdps:6.8:119
-R	priest/holy	45	11808	0	gear	22.653999999999996	sta:20:sta:0.87:17.4,armor:74:armor:0.071:5.254
-R	priest/holy	45	12015	0	gear	0.0	
-R	priest/holy	45	12015	12718	gear	17.73	int:9:int:1.1:9.9,sta:9:sta:0.87:7.83
-R	priest/holy	45	12015	12719	gear	16.740000000000002	spi:9:spi:0.99:8.91,sta:9:sta:0.87:7.83
-R	priest/holy	45	12015	12720	gear	18.810000000000002	int:9:int:1.1:9.9,spi:9:spi:0.99:8.91
-R	priest/holy	45	12015	12721	gear	7.83	sta:9:sta:0.87:7.83
-R	priest/holy	45	12015	12722	gear	7.83	sta:9:sta:0.87:7.83
-R	priest/holy	45	12015	12723	gear	9.9	int:9:int:1.1:9.9
-R	priest/holy	45	12015	12724	gear	9.9	int:9:int:1.1:9.9
-R	priest/holy	45	12015	12725	gear	8.91	spi:9:spi:0.99:8.91
-R	priest/holy	45	12015	12726	gear	8.91	spi:9:spi:0.99:8.91
-R	priest/holy	45	12015	12727	gear	0.0	
-R	priest/holy	45	12015	12728	gear	0.0	
-R	priest/holy	45	12015	12729	gear	15.400000000000002	int:14:int:1.1:15.4
-R	priest/holy	45	12015	12730	gear	13.86	spi:14:spi:0.99:13.86
-R	priest/holy	45	12015	12731	gear	12.18	sta:14:sta:0.87:12.18
-R	priest/holy	45	12015	12732	gear	0.0	
-R	priest/holy	45	12015	12733	gear	0.0	
-R	priest/holy	45	12015	12737	gear	0.0	
-R	priest/holy	45	12015	12738	gear	11.399999999999999	mp5:6:mp5:1.9:11.4
-R	priest/holy	45	12015	12739	gear	0.0	
-R	priest/holy	45	12015	12740	gear	7.83	sta:9:sta:0.87:7.83
-R	priest/holy	45	12015	12741	gear	7.83	sta:9:sta:0.87:7.83
-R	priest/holy	45	12015	12742	gear	7.83	sta:9:sta:0.87:7.83
-R	priest/holy	45	12015	12743	gear	7.83	sta:9:sta:0.87:7.83
-R	priest/holy	45	12015	12744	gear	7.83	sta:9:sta:0.87:7.83
-R	priest/holy	45	12015	12745	gear	21.22	int:10:int:1.1:11,sta:6:sta:0.87:5.22,sp:5:sp:1:5
-R	priest/holy	45	12015	12746	gear	21.939999999999998	int:10:int:1.1:11,spi:6:spi:0.99:5.94,sp:5:sp:1:5
-R	priest/holy	45	12015	12747	gear	19.64	spi:6:spi:0.99:5.94,sta:10:sta:0.87:8.7,sp:5:sp:1:5
-R	priest/holy	45	12015	12748	gear	18.3	int:6:int:1.1:6.6,sta:10:sta:0.87:8.7,spDmg:3:sp:1:3
-R	priest/holy	45	12015	12749	gear	19.939999999999998	int:10:int:1.1:11,spi:6:spi:0.99:5.94,spDmg:3:sp:1:3
-R	priest/holy	45	12015	12750	gear	17.64	spi:6:spi:0.99:5.94,sta:10:sta:0.87:8.7,spDmg:3:sp:1:3
-R	priest/holy	45	12015	12751	gear	8.7	sta:10:sta:0.87:8.7
-R	priest/holy	45	12015	12752	gear	8.7	sta:10:sta:0.87:8.7
-R	priest/holy	45	12015	12753	gear	8.7	sta:10:sta:0.87:8.7
-R	priest/holy	45	12015	12754	gear	13.7	sp:5:sp:1:5,sta:10:sta:0.87:8.7
-R	priest/holy	45	12015	12755	gear	13.7	sp:5:sp:1:5,sta:10:sta:0.87:8.7
-R	priest/holy	45	12805	0	gear	0.0	
-R	priest/holy	45	13360	0	mh	21.29	sta:5:sta:0.87:4.35,int:10:int:1.1:11,spi:6:spi:0.99:5.94
-R	priest/holy	45	14108	0	gear	15.500999999999998	spi:12:spi:0.99:11.88,armor:51:armor:0.071:3.621
-R	priest/holy	45	14213	0	gear	3.4789999999999996	armor:49:armor:0.071:3.479
-R	priest/holy	45	14213	12718	gear	23.179	int:10:int:1.1:11,sta:10:sta:0.87:8.7,armor:49:armor:0.071:3.479
-R	priest/holy	45	14213	12719	gear	22.079	spi:10:spi:0.99:9.9,sta:10:sta:0.87:8.7,armor:49:armor:0.071:3.479
-R	priest/holy	45	14213	12720	gear	24.378999999999998	int:10:int:1.1:11,spi:10:spi:0.99:9.9,armor:49:armor:0.071:3.479
-R	priest/holy	45	14213	12729	gear	19.979	int:15:int:1.1:16.5,armor:49:armor:0.071:3.479
-R	priest/holy	45	14213	12730	gear	18.329	spi:15:spi:0.99:14.85,armor:49:armor:0.071:3.479
-R	priest/holy	45	14213	12731	gear	16.529	sta:15:sta:0.87:13.05,armor:49:armor:0.071:3.479
-R	priest/holy	45	14213	12734	gear	21.479	sp:18:sp:1:18,armor:49:armor:0.071:3.479
-R	priest/holy	45	14213	12735	gear	14.479	spDmg:11:sp:1:11,armor:49:armor:0.071:3.479
-R	priest/holy	45	14213	12740	gear	12.178999999999998	sta:10:sta:0.87:8.7,armor:49:armor:0.071:3.479
-R	priest/holy	45	14213	12741	gear	12.178999999999998	sta:10:sta:0.87:8.7,armor:49:armor:0.071:3.479
-R	priest/holy	45	14213	12742	gear	12.178999999999998	sta:10:sta:0.87:8.7,armor:49:armor:0.071:3.479
-R	priest/holy	45	14213	12743	gear	12.178999999999998	sta:10:sta:0.87:8.7,armor:49:armor:0.071:3.479
-R	priest/holy	45	14213	12744	gear	12.178999999999998	sta:10:sta:0.87:8.7,armor:49:armor:0.071:3.479
-R	priest/holy	45	14213	12745	gear	26.799	int:11:int:1.1:12.1,sta:6:sta:0.87:5.22,sp:6:sp:1:6,armor:49:armor:0.071:3.479
-R	priest/holy	45	14213	12746	gear	27.519	int:11:int:1.1:12.1,spi:6:spi:0.99:5.94,sp:6:sp:1:6,armor:49:armor:0.071:3.479
-R	priest/holy	45	14213	12747	gear	24.988999999999997	spi:6:spi:0.99:5.94,sta:11:sta:0.87:9.57,sp:6:sp:1:6,armor:49:armor:0.071:3.479
-R	priest/holy	45	14213	12748	gear	23.649	int:6:int:1.1:6.6,sta:11:sta:0.87:9.57,spDmg:4:sp:1:4,armor:49:armor:0.071:3.479
-R	priest/holy	45	14213	12749	gear	25.519	int:11:int:1.1:12.1,spi:6:spi:0.99:5.94,spDmg:4:sp:1:4,armor:49:armor:0.071:3.479
-R	priest/holy	45	14213	12750	gear	22.988999999999997	spi:6:spi:0.99:5.94,sta:11:sta:0.87:9.57,spDmg:4:sp:1:4,armor:49:armor:0.071:3.479
-R	priest/holy	45	14213	12756	gear	3.4789999999999996	armor:49:armor:0.071:3.479
-R	priest/holy	45	14213	12757	gear	3.4789999999999996	armor:49:armor:0.071:3.479
-R	priest/holy	45	14213	12758	gear	3.4789999999999996	armor:49:armor:0.071:3.479
-R	priest/holy	45	14213	12759	gear	3.4789999999999996	armor:49:armor:0.071:3.479
-R	priest/holy	45	14213	12761	gear	20.279	spShadow:21:spShadow:0.8:16.8,armor:49:armor:0.071:3.479
-R	priest/holy	45	14312	0	gear	4.544	armor:64:armor:0.071:4.544
-R	priest/holy	45	14312	12718	gear	40.004	int:18:int:1.1:19.8,sta:18:sta:0.87:15.66,armor:64:armor:0.071:4.544
-R	priest/holy	45	14312	12719	gear	38.024	spi:18:spi:0.99:17.82,sta:18:sta:0.87:15.66,armor:64:armor:0.071:4.544
-R	priest/holy	45	14312	12720	gear	42.164	int:18:int:1.1:19.8,spi:18:spi:0.99:17.82,armor:64:armor:0.071:4.544
-R	priest/holy	45	14312	12729	gear	34.244	int:27:int:1.1:29.7,armor:64:armor:0.071:4.544
-R	priest/holy	45	14312	12730	gear	31.274	spi:27:spi:0.99:26.73,armor:64:armor:0.071:4.544
-R	priest/holy	45	14312	12731	gear	28.034	sta:27:sta:0.87:23.49,armor:64:armor:0.071:4.544
-R	priest/holy	45	14312	12734	gear	36.544	sp:32:sp:1:32,armor:64:armor:0.071:4.544
-R	priest/holy	45	14312	12735	gear	24.544	spDmg:20:sp:1:20,armor:64:armor:0.071:4.544
-R	priest/holy	45	14312	12740	gear	20.204	sta:18:sta:0.87:15.66,armor:64:armor:0.071:4.544
-R	priest/holy	45	14312	12741	gear	20.204	sta:18:sta:0.87:15.66,armor:64:armor:0.071:4.544
-R	priest/holy	45	14312	12742	gear	20.204	sta:18:sta:0.87:15.66,armor:64:armor:0.071:4.544
-R	priest/holy	45	14312	12743	gear	20.204	sta:18:sta:0.87:15.66,armor:64:armor:0.071:4.544
-R	priest/holy	45	14312	12744	gear	20.204	sta:18:sta:0.87:15.66,armor:64:armor:0.071:4.544
-R	priest/holy	45	14312	12745	gear	46.114	int:20:int:1.1:22,sta:11:sta:0.87:9.57,sp:10:sp:1:10,armor:64:armor:0.071:4.544
-R	priest/holy	45	14312	12746	gear	47.434	int:20:int:1.1:22,spi:11:spi:0.99:10.89,sp:10:sp:1:10,armor:64:armor:0.071:4.544
-R	priest/holy	45	14312	12747	gear	42.833999999999996	spi:11:spi:0.99:10.89,sta:20:sta:0.87:17.4,sp:10:sp:1:10,armor:64:armor:0.071:4.544
-R	priest/holy	45	14312	12748	gear	40.044	int:11:int:1.1:12.1,sta:20:sta:0.87:17.4,spDmg:6:sp:1:6,armor:64:armor:0.071:4.544
-R	priest/holy	45	14312	12749	gear	43.434	int:20:int:1.1:22,spi:11:spi:0.99:10.89,spDmg:6:sp:1:6,armor:64:armor:0.071:4.544
-R	priest/holy	45	14312	12750	gear	38.833999999999996	spi:11:spi:0.99:10.89,sta:20:sta:0.87:17.4,spDmg:6:sp:1:6,armor:64:armor:0.071:4.544
-R	priest/holy	45	14312	12756	gear	4.544	armor:64:armor:0.071:4.544
-R	priest/holy	45	14312	12757	gear	4.544	armor:64:armor:0.071:4.544
-R	priest/holy	45	14312	12758	gear	4.544	armor:64:armor:0.071:4.544
-R	priest/holy	45	14312	12759	gear	4.544	armor:64:armor:0.071:4.544
-R	priest/holy	45	14312	12761	gear	35.744	spShadow:39:spShadow:0.8:31.2,armor:64:armor:0.071:4.544
-R	priest/holy	45	14440	0	gear	13.29	sta:6:sta:0.87:5.22,spi:6:spi:0.99:5.94,armor:30:armor:0.071:2.13
-R	priest/holy	45	15299	0	gear	0.6389999999999999	armor:9:armor:0.071:0.639
-R	priest/holy	45	15939	0	oh	0.0	
-R	priest/holy	45	15939	12718	oh	17.73	int:9:int:1.1:9.9,sta:9:sta:0.87:7.83
-R	priest/holy	45	15939	12719	oh	16.740000000000002	spi:9:spi:0.99:8.91,sta:9:sta:0.87:7.83
-R	priest/holy	45	15939	12720	oh	18.810000000000002	int:9:int:1.1:9.9,spi:9:spi:0.99:8.91
-R	priest/holy	45	15939	12721	oh	7.83	sta:9:sta:0.87:7.83
-R	priest/holy	45	15939	12722	oh	7.83	sta:9:sta:0.87:7.83
-R	priest/holy	45	15939	12723	oh	9.9	int:9:int:1.1:9.9
-R	priest/holy	45	15939	12724	oh	9.9	int:9:int:1.1:9.9
-R	priest/holy	45	15939	12725	oh	8.91	spi:9:spi:0.99:8.91
-R	priest/holy	45	15939	12726	oh	8.91	spi:9:spi:0.99:8.91
-R	priest/holy	45	15939	12727	oh	0.0	
-R	priest/holy	45	15939	12728	oh	0.0	
-R	priest/holy	45	15939	12729	oh	15.400000000000002	int:14:int:1.1:15.4
-R	priest/holy	45	15939	12730	oh	13.86	spi:14:spi:0.99:13.86
-R	priest/holy	45	15939	12731	oh	12.18	sta:14:sta:0.87:12.18
-R	priest/holy	45	15939	12732	oh	0.0	
-R	priest/holy	45	15939	12733	oh	0.0	
-R	priest/holy	45	15939	12734	oh	16.0	sp:16:sp:1:16
-R	priest/holy	45	15939	12735	oh	10.0	spDmg:10:sp:1:10
-R	priest/holy	45	15939	12740	oh	7.83	sta:9:sta:0.87:7.83
-R	priest/holy	45	15939	12741	oh	7.83	sta:9:sta:0.87:7.83
-R	priest/holy	45	15939	12742	oh	7.83	sta:9:sta:0.87:7.83
-R	priest/holy	45	15939	12743	oh	7.83	sta:9:sta:0.87:7.83
-R	priest/holy	45	15939	12744	oh	7.83	sta:9:sta:0.87:7.83
-R	priest/holy	45	15939	12745	oh	21.22	int:10:int:1.1:11,sta:6:sta:0.87:5.22,sp:5:sp:1:5
-R	priest/holy	45	15939	12746	oh	21.939999999999998	int:10:int:1.1:11,spi:6:spi:0.99:5.94,sp:5:sp:1:5
-R	priest/holy	45	15939	12747	oh	19.64	spi:6:spi:0.99:5.94,sta:10:sta:0.87:8.7,sp:5:sp:1:5
-R	priest/holy	45	15939	12748	oh	18.3	int:6:int:1.1:6.6,sta:10:sta:0.87:8.7,spDmg:3:sp:1:3
-R	priest/holy	45	15939	12749	oh	19.939999999999998	int:10:int:1.1:11,spi:6:spi:0.99:5.94,spDmg:3:sp:1:3
-R	priest/holy	45	15939	12750	oh	17.64	spi:6:spi:0.99:5.94,sta:10:sta:0.87:8.7,spDmg:3:sp:1:3
-R	priest/holy	45	15939	12756	oh	0.0	
-R	priest/holy	45	15939	12757	oh	0.0	
-R	priest/holy	45	15939	12758	oh	0.0	
-R	priest/holy	45	15939	12759	oh	0.0	
-R	priest/holy	45	15939	12760	oh	0.0	
-R	priest/holy	45	15939	12761	oh	16.0	spShadow:20:spShadow:0.8:16
+R	priest/holy	45	11807	0	gear	32.866	spi:10:spi:0.99:9.9,sta:10:sta:0.87:8.7,int:10:int:1.1:11,armor:46:armor:0.071:3.266
+R	priest/holy	45	12014	0	gear	0.0	
+R	priest/holy	45	12014	12718	gear	17.73	int:9:int:1.1:9.9,sta:9:sta:0.87:7.83
+R	priest/holy	45	12014	12719	gear	16.740000000000002	spi:9:spi:0.99:8.91,sta:9:sta:0.87:7.83
+R	priest/holy	45	12014	12720	gear	18.810000000000002	int:9:int:1.1:9.9,spi:9:spi:0.99:8.91
+R	priest/holy	45	12014	12721	gear	7.83	sta:9:sta:0.87:7.83
+R	priest/holy	45	12014	12722	gear	7.83	sta:9:sta:0.87:7.83
+R	priest/holy	45	12014	12723	gear	9.9	int:9:int:1.1:9.9
+R	priest/holy	45	12014	12724	gear	9.9	int:9:int:1.1:9.9
+R	priest/holy	45	12014	12725	gear	8.91	spi:9:spi:0.99:8.91
+R	priest/holy	45	12014	12726	gear	8.91	spi:9:spi:0.99:8.91
+R	priest/holy	45	12014	12727	gear	0.0	
+R	priest/holy	45	12014	12728	gear	0.0	
+R	priest/holy	45	12014	12729	gear	14.3	int:13:int:1.1:14.3
+R	priest/holy	45	12014	12730	gear	12.87	spi:13:spi:0.99:12.87
+R	priest/holy	45	12014	12731	gear	11.31	sta:13:sta:0.87:11.31
+R	priest/holy	45	12014	12732	gear	0.0	
+R	priest/holy	45	12014	12733	gear	0.0	
+R	priest/holy	45	12014	12737	gear	0.0	
+R	priest/holy	45	12014	12738	gear	9.5	mp5:5:mp5:1.9:9.5
+R	priest/holy	45	12014	12739	gear	0.0	
+R	priest/holy	45	12014	12740	gear	7.83	sta:9:sta:0.87:7.83
+R	priest/holy	45	12014	12741	gear	7.83	sta:9:sta:0.87:7.83
+R	priest/holy	45	12014	12742	gear	7.83	sta:9:sta:0.87:7.83
+R	priest/holy	45	12014	12743	gear	7.83	sta:9:sta:0.87:7.83
+R	priest/holy	45	12014	12744	gear	7.83	sta:9:sta:0.87:7.83
+R	priest/holy	45	12014	12745	gear	19.25	int:9:int:1.1:9.9,sta:5:sta:0.87:4.35,sp:5:sp:1:5
+R	priest/holy	45	12014	12746	gear	19.85	int:9:int:1.1:9.9,spi:5:spi:0.99:4.95,sp:5:sp:1:5
+R	priest/holy	45	12014	12747	gear	17.78	spi:5:spi:0.99:4.95,sta:9:sta:0.87:7.83,sp:5:sp:1:5
+R	priest/holy	45	12014	12748	gear	16.33	int:5:int:1.1:5.5,sta:9:sta:0.87:7.83,spDmg:3:sp:1:3
+R	priest/holy	45	12014	12749	gear	17.85	int:9:int:1.1:9.9,spi:5:spi:0.99:4.95,spDmg:3:sp:1:3
+R	priest/holy	45	12014	12750	gear	15.780000000000001	spi:5:spi:0.99:4.95,sta:9:sta:0.87:7.83,spDmg:3:sp:1:3
+R	priest/holy	45	12014	12751	gear	7.83	sta:9:sta:0.87:7.83
+R	priest/holy	45	12014	12752	gear	7.83	sta:9:sta:0.87:7.83
+R	priest/holy	45	12014	12753	gear	7.83	sta:9:sta:0.87:7.83
+R	priest/holy	45	12014	12754	gear	12.83	sp:5:sp:1:5,sta:9:sta:0.87:7.83
+R	priest/holy	45	12014	12755	gear	13.7	sp:5:sp:1:5,sta:10:sta:0.87:8.7
+R	priest/holy	45	12794	0	mh	0.0	
+R	priest/holy	45	13353	0	oh	46.16	spi:10:spi:0.99:9.9,int:15:int:1.1:16.5,sta:8:sta:0.87:6.96,spShadow:16:spShadow:0.8:12.8
+R	priest/holy	45	14107	0	gear	38.402	int:12:int:1.1:13.2,spShadow:26:spShadow:0.8:20.8,armor:62:armor:0.071:4.402
+R	priest/holy	45	14212	0	gear	2.485	armor:35:armor:0.071:2.485
+R	priest/holy	45	14212	12718	gear	16.275000000000002	int:7:int:1.1:7.7,sta:7:sta:0.87:6.09,armor:35:armor:0.071:2.485
+R	priest/holy	45	14212	12719	gear	15.504999999999999	spi:7:spi:0.99:6.93,sta:7:sta:0.87:6.09,armor:35:armor:0.071:2.485
+R	priest/holy	45	14212	12720	gear	17.115000000000002	int:7:int:1.1:7.7,spi:7:spi:0.99:6.93,armor:35:armor:0.071:2.485
+R	priest/holy	45	14212	12729	gear	13.485	int:10:int:1.1:11,armor:35:armor:0.071:2.485
+R	priest/holy	45	14212	12730	gear	12.385	spi:10:spi:0.99:9.9,armor:35:armor:0.071:2.485
+R	priest/holy	45	14212	12731	gear	11.184999999999999	sta:10:sta:0.87:8.7,armor:35:armor:0.071:2.485
+R	priest/holy	45	14212	12734	gear	14.485	sp:12:sp:1:12,armor:35:armor:0.071:2.485
+R	priest/holy	45	14212	12735	gear	9.485	spDmg:7:sp:1:7,armor:35:armor:0.071:2.485
+R	priest/holy	45	14212	12740	gear	8.575	sta:7:sta:0.87:6.09,armor:35:armor:0.071:2.485
+R	priest/holy	45	14212	12741	gear	8.575	sta:7:sta:0.87:6.09,armor:35:armor:0.071:2.485
+R	priest/holy	45	14212	12742	gear	8.575	sta:7:sta:0.87:6.09,armor:35:armor:0.071:2.485
+R	priest/holy	45	14212	12743	gear	8.575	sta:7:sta:0.87:6.09,armor:35:armor:0.071:2.485
+R	priest/holy	45	14212	12744	gear	8.575	sta:7:sta:0.87:6.09,armor:35:armor:0.071:2.485
+R	priest/holy	45	14212	12745	gear	17.665000000000003	int:7:int:1.1:7.7,sta:4:sta:0.87:3.48,sp:4:sp:1:4,armor:35:armor:0.071:2.485
+R	priest/holy	45	14212	12746	gear	18.145	int:7:int:1.1:7.7,spi:4:spi:0.99:3.96,sp:4:sp:1:4,armor:35:armor:0.071:2.485
+R	priest/holy	45	14212	12747	gear	16.535	spi:4:spi:0.99:3.96,sta:7:sta:0.87:6.09,sp:4:sp:1:4,armor:35:armor:0.071:2.485
+R	priest/holy	45	14212	12748	gear	14.975	int:4:int:1.1:4.4,sta:7:sta:0.87:6.09,spDmg:2:sp:1:2,armor:35:armor:0.071:2.485
+R	priest/holy	45	14212	12749	gear	16.145	int:7:int:1.1:7.7,spi:4:spi:0.99:3.96,spDmg:2:sp:1:2,armor:35:armor:0.071:2.485
+R	priest/holy	45	14212	12750	gear	14.535	spi:4:spi:0.99:3.96,sta:7:sta:0.87:6.09,spDmg:2:sp:1:2,armor:35:armor:0.071:2.485
+R	priest/holy	45	14212	12756	gear	2.485	armor:35:armor:0.071:2.485
+R	priest/holy	45	14212	12757	gear	2.485	armor:35:armor:0.071:2.485
+R	priest/holy	45	14212	12758	gear	2.485	armor:35:armor:0.071:2.485
+R	priest/holy	45	14212	12759	gear	2.485	armor:35:armor:0.071:2.485
+R	priest/holy	45	14212	12761	gear	13.685	spShadow:14:spShadow:0.8:11.2,armor:35:armor:0.071:2.485
+R	priest/holy	45	14311	0	gear	2.2009999999999996	armor:31:armor:0.071:2.201
+R	priest/holy	45	14311	12718	gear	19.931	int:9:int:1.1:9.9,sta:9:sta:0.87:7.83,armor:31:armor:0.071:2.201
+R	priest/holy	45	14311	12719	gear	18.941000000000003	spi:9:spi:0.99:8.91,sta:9:sta:0.87:7.83,armor:31:armor:0.071:2.201
+R	priest/holy	45	14311	12720	gear	21.011000000000003	int:9:int:1.1:9.9,spi:9:spi:0.99:8.91,armor:31:armor:0.071:2.201
+R	priest/holy	45	14311	12729	gear	16.501	int:13:int:1.1:14.3,armor:31:armor:0.071:2.201
+R	priest/holy	45	14311	12730	gear	15.070999999999998	spi:13:spi:0.99:12.87,armor:31:armor:0.071:2.201
+R	priest/holy	45	14311	12731	gear	13.511	sta:13:sta:0.87:11.31,armor:31:armor:0.071:2.201
+R	priest/holy	45	14311	12734	gear	17.201	sp:15:sp:1:15,armor:31:armor:0.071:2.201
+R	priest/holy	45	14311	12735	gear	12.201	spDmg:10:sp:1:10,armor:31:armor:0.071:2.201
+R	priest/holy	45	14311	12740	gear	10.030999999999999	sta:9:sta:0.87:7.83,armor:31:armor:0.071:2.201
+R	priest/holy	45	14311	12741	gear	10.030999999999999	sta:9:sta:0.87:7.83,armor:31:armor:0.071:2.201
+R	priest/holy	45	14311	12742	gear	10.030999999999999	sta:9:sta:0.87:7.83,armor:31:armor:0.071:2.201
+R	priest/holy	45	14311	12743	gear	10.030999999999999	sta:9:sta:0.87:7.83,armor:31:armor:0.071:2.201
+R	priest/holy	45	14311	12744	gear	10.030999999999999	sta:9:sta:0.87:7.83,armor:31:armor:0.071:2.201
+R	priest/holy	45	14311	12745	gear	21.451	int:9:int:1.1:9.9,sta:5:sta:0.87:4.35,sp:5:sp:1:5,armor:31:armor:0.071:2.201
+R	priest/holy	45	14311	12746	gear	22.051000000000002	int:9:int:1.1:9.9,spi:5:spi:0.99:4.95,sp:5:sp:1:5,armor:31:armor:0.071:2.201
+R	priest/holy	45	14311	12747	gear	19.981	spi:5:spi:0.99:4.95,sta:9:sta:0.87:7.83,sp:5:sp:1:5,armor:31:armor:0.071:2.201
+R	priest/holy	45	14311	12748	gear	18.531	int:5:int:1.1:5.5,sta:9:sta:0.87:7.83,spDmg:3:sp:1:3,armor:31:armor:0.071:2.201
+R	priest/holy	45	14311	12749	gear	20.051000000000002	int:9:int:1.1:9.9,spi:5:spi:0.99:4.95,spDmg:3:sp:1:3,armor:31:armor:0.071:2.201
+R	priest/holy	45	14311	12750	gear	17.981	spi:5:spi:0.99:4.95,sta:9:sta:0.87:7.83,spDmg:3:sp:1:3,armor:31:armor:0.071:2.201
+R	priest/holy	45	14311	12756	gear	2.2009999999999996	armor:31:armor:0.071:2.201
+R	priest/holy	45	14311	12757	gear	2.2009999999999996	armor:31:armor:0.071:2.201
+R	priest/holy	45	14311	12758	gear	2.2009999999999996	armor:31:armor:0.071:2.201
+R	priest/holy	45	14311	12759	gear	2.2009999999999996	armor:31:armor:0.071:2.201
+R	priest/holy	45	14311	12761	gear	17.401	spShadow:19:spShadow:0.8:15.2,armor:31:armor:0.071:2.201
+R	priest/holy	45	14439	0	gear	14.237	spi:8:spi:0.99:7.92,int:4:int:1.1:4.4,armor:27:armor:0.071:1.917
+R	priest/holy	45	15283	0	ranged	385.96799999999996	rdps:56.76:rdps:6.8:385.968
+R	priest/holy	45	15283	12718	ranged	397.78799999999995	int:6:int:1.1:6.6,sta:6:sta:0.87:5.22,rdps:56.76:rdps:6.8:385.968
+R	priest/holy	45	15283	12719	ranged	397.128	spi:6:spi:0.99:5.94,sta:6:sta:0.87:5.22,rdps:56.76:rdps:6.8:385.968
+R	priest/holy	45	15283	12720	ranged	398.508	int:6:int:1.1:6.6,spi:6:spi:0.99:5.94,rdps:56.76:rdps:6.8:385.968
+R	priest/holy	45	15283	12729	ranged	395.86799999999994	int:9:int:1.1:9.9,rdps:56.76:rdps:6.8:385.968
+R	priest/holy	45	15283	12730	ranged	394.878	spi:9:spi:0.99:8.91,rdps:56.76:rdps:6.8:385.968
+R	priest/holy	45	15283	12731	ranged	393.79799999999994	sta:9:sta:0.87:7.83,rdps:56.76:rdps:6.8:385.968
+R	priest/holy	45	15283	12734	ranged	396.96799999999996	sp:11:sp:1:11,rdps:56.76:rdps:6.8:385.968
+R	priest/holy	45	15283	12735	ranged	392.96799999999996	spDmg:7:sp:1:7,rdps:56.76:rdps:6.8:385.968
+R	priest/holy	45	15283	12740	ranged	391.188	sta:6:sta:0.87:5.22,rdps:56.76:rdps:6.8:385.968
+R	priest/holy	45	15283	12741	ranged	391.188	sta:6:sta:0.87:5.22,rdps:56.76:rdps:6.8:385.968
+R	priest/holy	45	15283	12742	ranged	391.188	sta:6:sta:0.87:5.22,rdps:56.76:rdps:6.8:385.968
+R	priest/holy	45	15283	12743	ranged	391.188	sta:6:sta:0.87:5.22,rdps:56.76:rdps:6.8:385.968
+R	priest/holy	45	15283	12744	ranged	391.188	sta:6:sta:0.87:5.22,rdps:56.76:rdps:6.8:385.968
+R	priest/holy	45	15283	12745	ranged	400.14799999999997	int:7:int:1.1:7.7,sta:4:sta:0.87:3.48,sp:3:sp:1:3,rdps:56.76:rdps:6.8:385.968
+R	priest/holy	45	15283	12746	ranged	400.628	int:7:int:1.1:7.7,spi:4:spi:0.99:3.96,sp:3:sp:1:3,rdps:56.76:rdps:6.8:385.968
+R	priest/holy	45	15283	12747	ranged	399.018	spi:4:spi:0.99:3.96,sta:7:sta:0.87:6.09,sp:3:sp:1:3,rdps:56.76:rdps:6.8:385.968
+R	priest/holy	45	15283	12748	ranged	398.45799999999997	int:4:int:1.1:4.4,sta:7:sta:0.87:6.09,spDmg:2:sp:1:2,rdps:56.76:rdps:6.8:385.968
+R	priest/holy	45	15283	12749	ranged	399.628	int:7:int:1.1:7.7,spi:4:spi:0.99:3.96,spDmg:2:sp:1:2,rdps:56.76:rdps:6.8:385.968
+R	priest/holy	45	15283	12750	ranged	398.018	spi:4:spi:0.99:3.96,sta:7:sta:0.87:6.09,spDmg:2:sp:1:2,rdps:56.76:rdps:6.8:385.968
+R	priest/holy	45	15283	12756	ranged	385.96799999999996	rdps:56.76:rdps:6.8:385.968
+R	priest/holy	45	15283	12757	ranged	385.96799999999996	rdps:56.76:rdps:6.8:385.968
+R	priest/holy	45	15283	12758	ranged	385.96799999999996	rdps:56.76:rdps:6.8:385.968
+R	priest/holy	45	15283	12759	ranged	385.96799999999996	rdps:56.76:rdps:6.8:385.968
+R	priest/holy	45	15283	12761	ranged	396.36799999999994	spShadow:13:spShadow:0.8:10.4,rdps:56.76:rdps:6.8:385.968
+R	priest/holy	45	15938	0	oh	0.0	
+R	priest/holy	45	15938	12718	oh	17.73	int:9:int:1.1:9.9,sta:9:sta:0.87:7.83
+R	priest/holy	45	15938	12719	oh	16.740000000000002	spi:9:spi:0.99:8.91,sta:9:sta:0.87:7.83
+R	priest/holy	45	15938	12720	oh	18.810000000000002	int:9:int:1.1:9.9,spi:9:spi:0.99:8.91
+R	priest/holy	45	15938	12721	oh	7.83	sta:9:sta:0.87:7.83
+R	priest/holy	45	15938	12722	oh	7.83	sta:9:sta:0.87:7.83
+R	priest/holy	45	15938	12723	oh	9.9	int:9:int:1.1:9.9
+R	priest/holy	45	15938	12724	oh	9.9	int:9:int:1.1:9.9
+R	priest/holy	45	15938	12725	oh	8.91	spi:9:spi:0.99:8.91
+R	priest/holy	45	15938	12726	oh	8.91	spi:9:spi:0.99:8.91
+R	priest/holy	45	15938	12727	oh	0.0	
+R	priest/holy	45	15938	12728	oh	0.0	
+R	priest/holy	45	15938	12729	oh	15.400000000000002	int:14:int:1.1:15.4
+R	priest/holy	45	15938	12730	oh	13.86	spi:14:spi:0.99:13.86
+R	priest/holy	45	15938	12731	oh	12.18	sta:14:sta:0.87:12.18
+R	priest/holy	45	15938	12732	oh	0.0	
+R	priest/holy	45	15938	12733	oh	0.0	
+R	priest/holy	45	15938	12734	oh	16.0	sp:16:sp:1:16
+R	priest/holy	45	15938	12735	oh	10.0	spDmg:10:sp:1:10
+R	priest/holy	45	15938	12740	oh	7.83	sta:9:sta:0.87:7.83
+R	priest/holy	45	15938	12741	oh	7.83	sta:9:sta:0.87:7.83
+R	priest/holy	45	15938	12742	oh	7.83	sta:9:sta:0.87:7.83
+R	priest/holy	45	15938	12743	oh	7.83	sta:9:sta:0.87:7.83
+R	priest/holy	45	15938	12744	oh	7.83	sta:9:sta:0.87:7.83
+R	priest/holy	45	15938	12745	oh	21.22	int:10:int:1.1:11,sta:6:sta:0.87:5.22,sp:5:sp:1:5
+R	priest/holy	45	15938	12746	oh	21.939999999999998	int:10:int:1.1:11,spi:6:spi:0.99:5.94,sp:5:sp:1:5
+R	priest/holy	45	15938	12747	oh	19.64	spi:6:spi:0.99:5.94,sta:10:sta:0.87:8.7,sp:5:sp:1:5
+R	priest/holy	45	15938	12748	oh	18.3	int:6:int:1.1:6.6,sta:10:sta:0.87:8.7,spDmg:3:sp:1:3
+R	priest/holy	45	15938	12749	oh	19.939999999999998	int:10:int:1.1:11,spi:6:spi:0.99:5.94,spDmg:3:sp:1:3
+R	priest/holy	45	15938	12750	oh	17.64	spi:6:spi:0.99:5.94,sta:10:sta:0.87:8.7,spDmg:3:sp:1:3
+R	priest/holy	45	15938	12756	oh	0.0	
+R	priest/holy	45	15938	12757	oh	0.0	
+R	priest/holy	45	15938	12758	oh	0.0	
+R	priest/holy	45	15938	12759	oh	0.0	
+R	priest/holy	45	15938	12760	oh	0.0	
+R	priest/holy	45	15938	12761	oh	16.0	spShadow:20:spShadow:0.8:16
 R	priest/holy	45	15945	0	oh	3.7199999999999998	sta:2:sta:0.87:1.74,spi:2:spi:0.99:1.98
-R	priest/holy	45	16819	0	gear	39.184000000000005	sta:8:sta:0.87:6.96,int:14:int:1.1:15.4,spi:10:spi:0.99:9.9,mp5:2:mp5:1.9:3.8,armor:44:armor:0.071:3.124
-R	priest/holy	45	17739	0	gear	13.067	sta:12:sta:0.87:10.44,armor:37:armor:0.071:2.627
-R	priest/holy	45	18440	0	gear	12.516	sta:9:sta:0.87:7.83,armor:66:armor:0.071:4.686
-R	priest/holy	45	18879	0	gear	25.209999999999997	sta:20:sta:0.87:17.4,armor:110:armor:0.071:7.81
-R	priest/holy	45	19395	0	gear	17.099999999999998	mp5:9:mp5:1.9:17.1
-R	priest/holy	45	19893	0	gear	36.3	sta:10:sta:0.87:8.7,int:10:int:1.1:11,spellHit:1:spellHit:5.6:5.6,sp:11:sp:1:11
-R	priest/holy	45	20330	0	gear	61.401	int:27:int:1.1:29.7,spi:11:spi:0.99:10.89,sta:12:sta:0.87:10.44,crit:1:spellCrit:3.2:3.2,armor:101:armor:0.071:7.171
-R	priest/holy	45	20652	0	gear	3.7629999999999995	armor:53:armor:0.071:3.763
-R	priest/holy	45	20652	12745	gear	34.223	int:15:int:1.1:16.5,sta:8:sta:0.87:6.96,sp:7:sp:1:7,armor:53:armor:0.071:3.763
-R	priest/holy	45	20652	12746	gear	35.183	int:15:int:1.1:16.5,spi:8:spi:0.99:7.92,sp:7:sp:1:7,armor:53:armor:0.071:3.763
-R	priest/holy	45	20652	12747	gear	31.732999999999997	spi:8:spi:0.99:7.92,sta:15:sta:0.87:13.05,sp:7:sp:1:7,armor:53:armor:0.071:3.763
-R	priest/holy	45	20652	12748	gear	30.613	int:8:int:1.1:8.8,sta:15:sta:0.87:13.05,spDmg:5:sp:1:5,armor:53:armor:0.071:3.763
-R	priest/holy	45	20652	12749	gear	33.183	int:15:int:1.1:16.5,spi:8:spi:0.99:7.92,spDmg:5:sp:1:5,armor:53:armor:0.071:3.763
-R	priest/holy	45	20652	12750	gear	29.732999999999997	spi:8:spi:0.99:7.92,sta:15:sta:0.87:13.05,spDmg:5:sp:1:5,armor:53:armor:0.071:3.763
-R	priest/holy	45	21500	0	gear	40.256	sta:14:sta:0.87:12.18,int:15:int:1.1:16.5,mp5:4:mp5:1.9:7.6,armor:56:armor:0.071:3.976
-R	priest/holy	45	22085	0	gear	71.741	int:14:int:1.1:15.4,sta:13:sta:0.87:11.31,mp5:6:mp5:1.9:11.4,sp:16:sp:1:16,spi:12:spi:0.99:11.88,armor:81:armor:0.071:5.751
-R	priest/holy	45	22678	0	gear	0.0	
-R	priest/holy	45	23177	0	ranged	266.94399999999996	spShadow:10:spShadow:0.8:8,rdps:38.08:rdps:6.8:258.944
-R	priest/holy	45	212583	0	mh	2.61	sta:3:sta:0.87:2.61
-R	priest/holy	45	217296	0	gear	12.83	sta:9:sta:0.87:7.83,sp:5:sp:1:5
-R	priest/holy	45	220907	0	gear	48.384	sta:13:sta:0.87:11.31,int:12:int:1.1:13.2,crit:1:spellCrit:3.2:3.2,sp:14:sp:1:14,armor:94:armor:0.071:6.674
-R	priest/holy	45	226731	0	gear	42.882	sta:7:sta:0.87:6.09,int:11:int:1.1:12.1,sp:21:sp:1:21,armor:52:armor:0.071:3.692
-R	priest/holy	45	227967	0	gear	0.0	
-R	priest/holy	45	228282	0	gear	56.730999999999995	sta:20:sta:0.87:17.4,sp:35:sp:1:35,armor:61:armor:0.071:4.331
-R	priest/holy	45	228757	0	mh	0.0	
-R	priest/holy	45	231168	0	gear	85.42099999999999	sta:15:sta:0.87:13.05,int:20:int:1.1:22,crit:1:spellCrit:3.2:3.2,spShadow:50:spShadow:0.8:40,armor:101:armor:0.071:7.171
-R	priest/holy	45	233395	0	gear	98.223	sta:14:sta:0.87:12.18,int:18:int:1.1:19.8,crit:2:spellCrit:3.2:6.4,spShadow:63:spShadow:0.8:50.4,armor:133:armor:0.071:9.443
-R	priest/holy	45	233994	0	gear	46.0	int:18:int:1.1:19.8,crit:1:spellCrit:3.2:3.2,spDmg:23:sp:1:23
-R	priest/holy	45	234576	0	mh	81.27	sta:21:sta:0.87:18.27,int:8:int:1.1:8.8,crit:1:spellCrit:3.2:3.2,spDmg:51:sp:1:51
-R	priest/holy	45	236277	0	gear	36.769999999999996	sta:8:sta:0.87:6.96,int:9:int:1.1:9.9,spi:9:spi:0.99:8.91,spDmg:11:sp:1:11
-R	priest/holy	45	239565	0	gear	109.31600000000002	sta:15:sta:0.87:13.05,int:17:int:1.1:18.7,crit:2:spellCrit:3.2:6.4,spShadow:76:spShadow:0.8:60.8,armor:146:armor:0.071:10.366
-R	priest/holy	45	247789	0	ranged	27.2	rdps:4:rdps:6.8:27.2
-R	priest/holy	45	254029	0	gear	18.086000000000002	int:7:int:1.1:7.7,sta:9:sta:0.87:7.83,armor:36:armor:0.071:2.556
-R	priest/holy	45	260829	0	gear	3.1239999999999997	armor:44:armor:0.071:3.124
-R	priest/holy	45	271909	0	gear	12.18	sta:14:sta:0.87:12.18
-R	priest/holy	45	272847	0	mh	4.94	sta:2:sta:0.87:1.74,crit:1:spellCrit:3.2:3.2
-R	priest/holy	45	275831	0	gear	5.5	int:5:int:1.1:5.5
-R	priest/holy	45	278019	0	gear	9.219999999999999	sta:6:sta:0.87:5.22,sp:4:sp:1:4
-R	priest/holy	45	288931	0	gear	16.0	sp:16:sp:1:16
+R	priest/holy	45	16817	0	gear	63.447	sta:10:sta:0.87:8.7,int:22:int:1.1:24.2,spi:10:spi:0.99:9.9,mp5:4:mp5:1.9:7.6,sp:9:sp:1:9,armor:57:armor:0.071:4.047
+R	priest/holy	45	17737	0	oh	13.280000000000001	hit:0.8:spellHit:5.6:4.48,int:8:int:1.1:8.8
+R	priest/holy	45	18438	0	gear	0.0	
+R	priest/holy	45	18878	0	mh	45.660000000000004	sta:8:sta:0.87:6.96,int:17:int:1.1:18.7,sp:20:sp:1:20
+R	priest/holy	45	19391	0	gear	58.561	sta:13:sta:0.87:11.31,int:17:int:1.1:18.7,mp5:12:mp5:1.9:22.8,armor:81:armor:0.071:5.751
+R	priest/holy	45	19891	0	oh	42.660000000000004	sta:8:sta:0.87:6.96,int:11:int:1.1:12.1,sp:18:sp:1:18,spellHit:1:spellHit:5.6:5.6
+R	priest/holy	45	20333	0	gear	45.35	int:20:int:1.1:22,spi:8:spi:0.99:7.92,sta:9:sta:0.87:7.83,mp5:4:mp5:1.9:7.6
+R	priest/holy	45	20672	0	ranged	438.74399999999997	int:9:int:1.1:9.9,sp:5:sp:1:5,rdps:62.33:rdps:6.8:423.844
+R	priest/holy	45	21522	0	mh	12.18	sta:14:sta:0.87:12.18
+R	priest/holy	45	22231	0	gear	43.23	int:18:int:1.1:19.8,sta:11:sta:0.87:9.57,hit:1:spellHit:5.6:5.6,sp:4:sp:1:4,armor:60:armor:0.071:4.26
+R	priest/holy	45	22711	0	gear	38.228	sta:6:sta:0.87:5.22,int:6:int:1.1:6.6,sp:23:sp:1:23,armor:48:armor:0.071:3.408
+R	priest/holy	45	23237	0	gear	14.2	int:10:int:1.1:11,crit:1:spellCrit:3.2:3.2
+R	priest/holy	45	213088	0	gear	13.544	sta:4:sta:0.87:3.48,int:4:int:1.1:4.4,spi:4:spi:0.99:3.96,armor:24:armor:0.071:1.704
+R	priest/holy	45	217301	0	gear	13.790000000000001	sta:7:sta:0.87:6.09,int:7:int:1.1:7.7
+R	priest/holy	45	221025	0	gear	38.517	sta:7:sta:0.87:6.09,int:8:int:1.1:8.8,sp:21:sp:1:21,armor:37:armor:0.071:2.627
+R	priest/holy	45	226744	0	gear	33.736	sta:11:sta:0.87:9.57,int:10:int:1.1:11,spi:10:spi:0.99:9.9,armor:46:armor:0.071:3.266
+R	priest/holy	45	227980	0	gear	65.15899999999999	sta:12:sta:0.87:10.44,int:15:int:1.1:16.5,spi:10:spi:0.99:9.9,sp:22:sp:1:22,armor:89:armor:0.071:6.319
+R	priest/holy	45	228292	0	gear	28.459000000000003	sta:23:sta:0.87:20.01,armor:119:armor:0.071:8.449
+R	priest/holy	45	229374	0	mh	8.7	sta:10:sta:0.87:8.7
+R	priest/holy	45	231271	0	gear	26.0	sp:26:sp:1:26
+R	priest/holy	45	233502	0	gear	15.17	sta:11:sta:0.87:9.57,hit:1:spellHit:5.6:5.6
+R	priest/holy	45	234020	0	gear	42.49	sta:7:sta:0.87:6.09,int:8:int:1.1:8.8,hit:1:spellHit:5.6:5.6,sp:22:sp:1:22
+R	priest/holy	45	234614	0	gear	0.0	
+R	priest/holy	45	236284	0	mh	173.2	sta:20:sta:0.87:17.4,int:20:int:1.1:22,hit:2:spellHit:5.6:11.2,crit:3:spellCrit:3.2:9.6,sp:113:sp:1:113
+R	priest/holy	45	239581	0	gear	81.30000000000001	sta:17:sta:0.87:14.79,int:17:int:1.1:18.7,spShadow:50:spShadow:0.8:40,armor:110:armor:0.071:7.81
+R	priest/holy	45	249234	0	ranged	273.356	sp:7:sp:1:7,rdps:39.17:rdps:6.8:266.356
+R	priest/holy	45	254033	0	gear	16.759999999999998	spDmg:6:sp:1:6,spi:8:spi:0.99:7.92,armor:40:armor:0.071:2.84
+R	priest/holy	45	260820	0	gear	0.0	
+R	priest/holy	45	271661	0	gear	0.142	armor:2:armor:0.071:0.142
+R	priest/holy	45	272406	0	gear	30.0	int:14:int:1.1:15.4,hit:1:spellHit:5.6:5.6,sp:9:sp:1:9
+R	priest/holy	45	273423	0	gear	57.845	int:10:int:1.1:11,sta:26:sta:0.87:22.62,spDmg:9:sp:1:9,spi:10:spi:0.99:9.9,armor:75:armor:0.071:5.325
+R	priest/holy	45	274919	0	ranged	228.29999999999998	spShadow:7:spShadow:0.8:5.6,rdps:32.75:rdps:6.8:222.7
+R	priest/holy	45	276888	0	mh	4.18	int:2:int:1.1:2.2,spi:2:spi:0.99:1.98
+R	priest/holy	45	279826	0	gear	45.412000000000006	sta:13:sta:0.87:11.31,spi:10:spi:0.99:9.9,int:8:int:1.1:8.8,sp:11:sp:1:11,armor:62:armor:0.071:4.402
+R	priest/holy	45	281315	0	gear	4.578	int:3:int:1.1:3.3,armor:18:armor:0.071:1.278
+R	priest/holy	45	284197	0	gear	9.373999999999999	sta:8:sta:0.87:6.96,armor:34:armor:0.071:2.414
+R	priest/holy	45	286997	0	gear	30.450999999999997	spi:17:spi:0.99:16.83,sp:10:sp:1:10,armor:51:armor:0.071:3.621
 R	priest/holy	55	35	0	mh	0.0	
 R	priest/holy	55	1299	0	gear	9.3	sta:4:sta:1:4,spi:3:spi:1.1:3.3,armor:20:armor:0.1:2
 R	priest/holy	55	1831	0	mh	0.0	
@@ -2798,7 +3018,7 @@ R	priest/holy	55	2364	0	gear	1.8	armor:18:armor:0.1:1.8
 R	priest/holy	55	2955	0	gear	26.3	sta:11:sta:1:11,spi:10:spi:1.1:11,armor:43:armor:0.1:4.3
 R	priest/holy	55	3423	0	oh	0.0	
 R	priest/holy	55	3947	0	gear	3.0	armor:30:armor:0.1:3
-R	priest/holy	55	4454	0	mh	2.2	spi:2:spi:1.1:2.2
+R	priest/holy	55	4454	0	mh	3.3000000000000003	spi:3:spi:1.1:3.3
 R	priest/holy	55	4947	0	mh	0.0	
 R	priest/holy	55	5393	0	mh	0.0	
 R	priest/holy	55	6333	0	mh	2.0	sta:2:sta:1:2
@@ -2848,8 +3068,8 @@ R	priest/holy	55	7355	12757	gear	1.9000000000000001	armor:19:armor:0.1:1.9
 R	priest/holy	55	7355	12758	gear	1.9000000000000001	armor:19:armor:0.1:1.9
 R	priest/holy	55	7355	12759	gear	1.9000000000000001	armor:19:armor:0.1:1.9
 R	priest/holy	55	7355	12761	gear	9.73	spShadow:9:spShadow:0.87:7.83,armor:19:armor:0.1:1.9
-R	priest/holy	55	7757	0	mh	26.5	sta:7:sta:1:7,int:15:int:1.3:19.5
-R	priest/holy	55	9491	0	gear	24.0	sta:5:sta:1:5,int:8:int:1.3:10.4,spi:5:spi:1.1:5.5,armor:31:armor:0.1:3.1
+R	priest/holy	55	7757	0	mh	17.0	sta:17:sta:1:17
+R	priest/holy	55	9491	0	gear	24.0	int:8:int:1.3:10.4,spi:5:spi:1.1:5.5,sta:5:sta:1:5,armor:31:armor:0.1:3.1
 R	priest/holy	55	9875	0	gear	2.9000000000000004	armor:29:armor:0.1:2.9
 R	priest/holy	55	9875	12718	gear	21.299999999999997	int:8:int:1.3:10.4,sta:8:sta:1:8,armor:29:armor:0.1:2.9
 R	priest/holy	55	9875	12719	gear	19.700000000000003	spi:8:spi:1.1:8.8,sta:8:sta:1:8,armor:29:armor:0.1:2.9
@@ -2902,174 +3122,196 @@ R	priest/holy	55	10102	12759	gear	7.6000000000000005	armor:76:armor:0.1:7.6
 R	priest/holy	55	10102	12761	gear	39.79	spShadow:37:spShadow:0.87:32.19,armor:76:armor:0.1:7.6
 R	priest/holy	55	10645	0	gear	0.0	
 R	priest/holy	55	11288	0	ranged	126.25	sp:2:sp:1:2,rdps:17.5:rdps:7.1:124.25
-R	priest/holy	55	11808	0	gear	27.4	sta:20:sta:1:20,armor:74:armor:0.1:7.4
-R	priest/holy	55	12015	0	gear	0.0	
-R	priest/holy	55	12015	12718	gear	20.700000000000003	int:9:int:1.3:11.7,sta:9:sta:1:9
-R	priest/holy	55	12015	12719	gear	18.9	spi:9:spi:1.1:9.9,sta:9:sta:1:9
-R	priest/holy	55	12015	12720	gear	21.6	int:9:int:1.3:11.7,spi:9:spi:1.1:9.9
-R	priest/holy	55	12015	12721	gear	9.0	sta:9:sta:1:9
-R	priest/holy	55	12015	12722	gear	9.0	sta:9:sta:1:9
-R	priest/holy	55	12015	12723	gear	11.700000000000001	int:9:int:1.3:11.7
-R	priest/holy	55	12015	12724	gear	11.700000000000001	int:9:int:1.3:11.7
-R	priest/holy	55	12015	12725	gear	9.9	spi:9:spi:1.1:9.9
-R	priest/holy	55	12015	12726	gear	9.9	spi:9:spi:1.1:9.9
-R	priest/holy	55	12015	12727	gear	0.0	
-R	priest/holy	55	12015	12728	gear	0.0	
-R	priest/holy	55	12015	12729	gear	18.2	int:14:int:1.3:18.2
-R	priest/holy	55	12015	12730	gear	15.400000000000002	spi:14:spi:1.1:15.4
-R	priest/holy	55	12015	12731	gear	14.0	sta:14:sta:1:14
-R	priest/holy	55	12015	12732	gear	0.0	
-R	priest/holy	55	12015	12733	gear	0.0	
-R	priest/holy	55	12015	12737	gear	0.0	
-R	priest/holy	55	12015	12738	gear	9.600000000000001	mp5:6:mp5:1.6:9.6
-R	priest/holy	55	12015	12739	gear	0.0	
-R	priest/holy	55	12015	12740	gear	9.0	sta:9:sta:1:9
-R	priest/holy	55	12015	12741	gear	9.0	sta:9:sta:1:9
-R	priest/holy	55	12015	12742	gear	9.0	sta:9:sta:1:9
-R	priest/holy	55	12015	12743	gear	9.0	sta:9:sta:1:9
-R	priest/holy	55	12015	12744	gear	9.0	sta:9:sta:1:9
-R	priest/holy	55	12015	12745	gear	24.0	int:10:int:1.3:13,sta:6:sta:1:6,sp:5:sp:1:5
-R	priest/holy	55	12015	12746	gear	24.6	int:10:int:1.3:13,spi:6:spi:1.1:6.6,sp:5:sp:1:5
-R	priest/holy	55	12015	12747	gear	21.6	spi:6:spi:1.1:6.6,sta:10:sta:1:10,sp:5:sp:1:5
-R	priest/holy	55	12015	12748	gear	20.8	int:6:int:1.3:7.8,sta:10:sta:1:10,spDmg:3:sp:1:3
-R	priest/holy	55	12015	12749	gear	22.6	int:10:int:1.3:13,spi:6:spi:1.1:6.6,spDmg:3:sp:1:3
-R	priest/holy	55	12015	12750	gear	19.6	spi:6:spi:1.1:6.6,sta:10:sta:1:10,spDmg:3:sp:1:3
-R	priest/holy	55	12015	12751	gear	10.0	sta:10:sta:1:10
-R	priest/holy	55	12015	12752	gear	10.0	sta:10:sta:1:10
-R	priest/holy	55	12015	12753	gear	10.0	sta:10:sta:1:10
-R	priest/holy	55	12015	12754	gear	15.0	sp:5:sp:1:5,sta:10:sta:1:10
-R	priest/holy	55	12015	12755	gear	15.0	sp:5:sp:1:5,sta:10:sta:1:10
-R	priest/holy	55	12805	0	gear	0.0	
-R	priest/holy	55	13360	0	mh	24.6	sta:5:sta:1:5,int:10:int:1.3:13,spi:6:spi:1.1:6.6
-R	priest/holy	55	14108	0	gear	18.3	spi:12:spi:1.1:13.2,armor:51:armor:0.1:5.1
-R	priest/holy	55	14213	0	gear	4.9	armor:49:armor:0.1:4.9
-R	priest/holy	55	14213	12718	gear	27.9	int:10:int:1.3:13,sta:10:sta:1:10,armor:49:armor:0.1:4.9
-R	priest/holy	55	14213	12719	gear	25.9	spi:10:spi:1.1:11,sta:10:sta:1:10,armor:49:armor:0.1:4.9
-R	priest/holy	55	14213	12720	gear	28.9	int:10:int:1.3:13,spi:10:spi:1.1:11,armor:49:armor:0.1:4.9
-R	priest/holy	55	14213	12729	gear	24.4	int:15:int:1.3:19.5,armor:49:armor:0.1:4.9
-R	priest/holy	55	14213	12730	gear	21.4	spi:15:spi:1.1:16.5,armor:49:armor:0.1:4.9
-R	priest/holy	55	14213	12731	gear	19.9	sta:15:sta:1:15,armor:49:armor:0.1:4.9
-R	priest/holy	55	14213	12734	gear	22.9	sp:18:sp:1:18,armor:49:armor:0.1:4.9
-R	priest/holy	55	14213	12735	gear	15.9	spDmg:11:sp:1:11,armor:49:armor:0.1:4.9
-R	priest/holy	55	14213	12740	gear	14.9	sta:10:sta:1:10,armor:49:armor:0.1:4.9
-R	priest/holy	55	14213	12741	gear	14.9	sta:10:sta:1:10,armor:49:armor:0.1:4.9
-R	priest/holy	55	14213	12742	gear	14.9	sta:10:sta:1:10,armor:49:armor:0.1:4.9
-R	priest/holy	55	14213	12743	gear	14.9	sta:10:sta:1:10,armor:49:armor:0.1:4.9
-R	priest/holy	55	14213	12744	gear	14.9	sta:10:sta:1:10,armor:49:armor:0.1:4.9
-R	priest/holy	55	14213	12745	gear	31.200000000000003	int:11:int:1.3:14.3,sta:6:sta:1:6,sp:6:sp:1:6,armor:49:armor:0.1:4.9
-R	priest/holy	55	14213	12746	gear	31.800000000000004	int:11:int:1.3:14.3,spi:6:spi:1.1:6.6,sp:6:sp:1:6,armor:49:armor:0.1:4.9
-R	priest/holy	55	14213	12747	gear	28.5	spi:6:spi:1.1:6.6,sta:11:sta:1:11,sp:6:sp:1:6,armor:49:armor:0.1:4.9
-R	priest/holy	55	14213	12748	gear	27.700000000000003	int:6:int:1.3:7.8,sta:11:sta:1:11,spDmg:4:sp:1:4,armor:49:armor:0.1:4.9
-R	priest/holy	55	14213	12749	gear	29.800000000000004	int:11:int:1.3:14.3,spi:6:spi:1.1:6.6,spDmg:4:sp:1:4,armor:49:armor:0.1:4.9
-R	priest/holy	55	14213	12750	gear	26.5	spi:6:spi:1.1:6.6,sta:11:sta:1:11,spDmg:4:sp:1:4,armor:49:armor:0.1:4.9
-R	priest/holy	55	14213	12756	gear	4.9	armor:49:armor:0.1:4.9
-R	priest/holy	55	14213	12757	gear	4.9	armor:49:armor:0.1:4.9
-R	priest/holy	55	14213	12758	gear	4.9	armor:49:armor:0.1:4.9
-R	priest/holy	55	14213	12759	gear	4.9	armor:49:armor:0.1:4.9
-R	priest/holy	55	14213	12761	gear	23.17	spShadow:21:spShadow:0.87:18.27,armor:49:armor:0.1:4.9
-R	priest/holy	55	14312	0	gear	6.4	armor:64:armor:0.1:6.4
-R	priest/holy	55	14312	12718	gear	47.800000000000004	int:18:int:1.3:23.4,sta:18:sta:1:18,armor:64:armor:0.1:6.4
-R	priest/holy	55	14312	12719	gear	44.199999999999996	spi:18:spi:1.1:19.8,sta:18:sta:1:18,armor:64:armor:0.1:6.4
-R	priest/holy	55	14312	12720	gear	49.6	int:18:int:1.3:23.4,spi:18:spi:1.1:19.8,armor:64:armor:0.1:6.4
-R	priest/holy	55	14312	12729	gear	41.5	int:27:int:1.3:35.1,armor:64:armor:0.1:6.4
-R	priest/holy	55	14312	12730	gear	36.1	spi:27:spi:1.1:29.7,armor:64:armor:0.1:6.4
-R	priest/holy	55	14312	12731	gear	33.4	sta:27:sta:1:27,armor:64:armor:0.1:6.4
-R	priest/holy	55	14312	12734	gear	38.4	sp:32:sp:1:32,armor:64:armor:0.1:6.4
-R	priest/holy	55	14312	12735	gear	26.4	spDmg:20:sp:1:20,armor:64:armor:0.1:6.4
-R	priest/holy	55	14312	12740	gear	24.4	sta:18:sta:1:18,armor:64:armor:0.1:6.4
-R	priest/holy	55	14312	12741	gear	24.4	sta:18:sta:1:18,armor:64:armor:0.1:6.4
-R	priest/holy	55	14312	12742	gear	24.4	sta:18:sta:1:18,armor:64:armor:0.1:6.4
-R	priest/holy	55	14312	12743	gear	24.4	sta:18:sta:1:18,armor:64:armor:0.1:6.4
-R	priest/holy	55	14312	12744	gear	24.4	sta:18:sta:1:18,armor:64:armor:0.1:6.4
-R	priest/holy	55	14312	12745	gear	53.4	int:20:int:1.3:26,sta:11:sta:1:11,sp:10:sp:1:10,armor:64:armor:0.1:6.4
-R	priest/holy	55	14312	12746	gear	54.5	int:20:int:1.3:26,spi:11:spi:1.1:12.1,sp:10:sp:1:10,armor:64:armor:0.1:6.4
-R	priest/holy	55	14312	12747	gear	48.5	spi:11:spi:1.1:12.1,sta:20:sta:1:20,sp:10:sp:1:10,armor:64:armor:0.1:6.4
-R	priest/holy	55	14312	12748	gear	46.699999999999996	int:11:int:1.3:14.3,sta:20:sta:1:20,spDmg:6:sp:1:6,armor:64:armor:0.1:6.4
-R	priest/holy	55	14312	12749	gear	50.5	int:20:int:1.3:26,spi:11:spi:1.1:12.1,spDmg:6:sp:1:6,armor:64:armor:0.1:6.4
-R	priest/holy	55	14312	12750	gear	44.5	spi:11:spi:1.1:12.1,sta:20:sta:1:20,spDmg:6:sp:1:6,armor:64:armor:0.1:6.4
-R	priest/holy	55	14312	12756	gear	6.4	armor:64:armor:0.1:6.4
-R	priest/holy	55	14312	12757	gear	6.4	armor:64:armor:0.1:6.4
-R	priest/holy	55	14312	12758	gear	6.4	armor:64:armor:0.1:6.4
-R	priest/holy	55	14312	12759	gear	6.4	armor:64:armor:0.1:6.4
-R	priest/holy	55	14312	12761	gear	40.33	spShadow:39:spShadow:0.87:33.93,armor:64:armor:0.1:6.4
-R	priest/holy	55	14440	0	gear	15.600000000000001	sta:6:sta:1:6,spi:6:spi:1.1:6.6,armor:30:armor:0.1:3
-R	priest/holy	55	15299	0	gear	0.9	armor:9:armor:0.1:0.9
-R	priest/holy	55	15939	0	oh	0.0	
-R	priest/holy	55	15939	12718	oh	20.700000000000003	int:9:int:1.3:11.7,sta:9:sta:1:9
-R	priest/holy	55	15939	12719	oh	18.9	spi:9:spi:1.1:9.9,sta:9:sta:1:9
-R	priest/holy	55	15939	12720	oh	21.6	int:9:int:1.3:11.7,spi:9:spi:1.1:9.9
-R	priest/holy	55	15939	12721	oh	9.0	sta:9:sta:1:9
-R	priest/holy	55	15939	12722	oh	9.0	sta:9:sta:1:9
-R	priest/holy	55	15939	12723	oh	11.700000000000001	int:9:int:1.3:11.7
-R	priest/holy	55	15939	12724	oh	11.700000000000001	int:9:int:1.3:11.7
-R	priest/holy	55	15939	12725	oh	9.9	spi:9:spi:1.1:9.9
-R	priest/holy	55	15939	12726	oh	9.9	spi:9:spi:1.1:9.9
-R	priest/holy	55	15939	12727	oh	0.0	
-R	priest/holy	55	15939	12728	oh	0.0	
-R	priest/holy	55	15939	12729	oh	18.2	int:14:int:1.3:18.2
-R	priest/holy	55	15939	12730	oh	15.400000000000002	spi:14:spi:1.1:15.4
-R	priest/holy	55	15939	12731	oh	14.0	sta:14:sta:1:14
-R	priest/holy	55	15939	12732	oh	0.0	
-R	priest/holy	55	15939	12733	oh	0.0	
-R	priest/holy	55	15939	12734	oh	16.0	sp:16:sp:1:16
-R	priest/holy	55	15939	12735	oh	10.0	spDmg:10:sp:1:10
-R	priest/holy	55	15939	12740	oh	9.0	sta:9:sta:1:9
-R	priest/holy	55	15939	12741	oh	9.0	sta:9:sta:1:9
-R	priest/holy	55	15939	12742	oh	9.0	sta:9:sta:1:9
-R	priest/holy	55	15939	12743	oh	9.0	sta:9:sta:1:9
-R	priest/holy	55	15939	12744	oh	9.0	sta:9:sta:1:9
-R	priest/holy	55	15939	12745	oh	24.0	int:10:int:1.3:13,sta:6:sta:1:6,sp:5:sp:1:5
-R	priest/holy	55	15939	12746	oh	24.6	int:10:int:1.3:13,spi:6:spi:1.1:6.6,sp:5:sp:1:5
-R	priest/holy	55	15939	12747	oh	21.6	spi:6:spi:1.1:6.6,sta:10:sta:1:10,sp:5:sp:1:5
-R	priest/holy	55	15939	12748	oh	20.8	int:6:int:1.3:7.8,sta:10:sta:1:10,spDmg:3:sp:1:3
-R	priest/holy	55	15939	12749	oh	22.6	int:10:int:1.3:13,spi:6:spi:1.1:6.6,spDmg:3:sp:1:3
-R	priest/holy	55	15939	12750	oh	19.6	spi:6:spi:1.1:6.6,sta:10:sta:1:10,spDmg:3:sp:1:3
-R	priest/holy	55	15939	12756	oh	0.0	
-R	priest/holy	55	15939	12757	oh	0.0	
-R	priest/holy	55	15939	12758	oh	0.0	
-R	priest/holy	55	15939	12759	oh	0.0	
-R	priest/holy	55	15939	12760	oh	0.0	
-R	priest/holy	55	15939	12761	oh	17.4	spShadow:20:spShadow:0.87:17.4
+R	priest/holy	55	11807	0	gear	38.6	spi:10:spi:1.1:11,sta:10:sta:1:10,int:10:int:1.3:13,armor:46:armor:0.1:4.6
+R	priest/holy	55	12014	0	gear	0.0	
+R	priest/holy	55	12014	12718	gear	20.700000000000003	int:9:int:1.3:11.7,sta:9:sta:1:9
+R	priest/holy	55	12014	12719	gear	18.9	spi:9:spi:1.1:9.9,sta:9:sta:1:9
+R	priest/holy	55	12014	12720	gear	21.6	int:9:int:1.3:11.7,spi:9:spi:1.1:9.9
+R	priest/holy	55	12014	12721	gear	9.0	sta:9:sta:1:9
+R	priest/holy	55	12014	12722	gear	9.0	sta:9:sta:1:9
+R	priest/holy	55	12014	12723	gear	11.700000000000001	int:9:int:1.3:11.7
+R	priest/holy	55	12014	12724	gear	11.700000000000001	int:9:int:1.3:11.7
+R	priest/holy	55	12014	12725	gear	9.9	spi:9:spi:1.1:9.9
+R	priest/holy	55	12014	12726	gear	9.9	spi:9:spi:1.1:9.9
+R	priest/holy	55	12014	12727	gear	0.0	
+R	priest/holy	55	12014	12728	gear	0.0	
+R	priest/holy	55	12014	12729	gear	16.900000000000002	int:13:int:1.3:16.9
+R	priest/holy	55	12014	12730	gear	14.3	spi:13:spi:1.1:14.3
+R	priest/holy	55	12014	12731	gear	13.0	sta:13:sta:1:13
+R	priest/holy	55	12014	12732	gear	0.0	
+R	priest/holy	55	12014	12733	gear	0.0	
+R	priest/holy	55	12014	12737	gear	0.0	
+R	priest/holy	55	12014	12738	gear	8.0	mp5:5:mp5:1.6:8
+R	priest/holy	55	12014	12739	gear	0.0	
+R	priest/holy	55	12014	12740	gear	9.0	sta:9:sta:1:9
+R	priest/holy	55	12014	12741	gear	9.0	sta:9:sta:1:9
+R	priest/holy	55	12014	12742	gear	9.0	sta:9:sta:1:9
+R	priest/holy	55	12014	12743	gear	9.0	sta:9:sta:1:9
+R	priest/holy	55	12014	12744	gear	9.0	sta:9:sta:1:9
+R	priest/holy	55	12014	12745	gear	21.700000000000003	int:9:int:1.3:11.7,sta:5:sta:1:5,sp:5:sp:1:5
+R	priest/holy	55	12014	12746	gear	22.200000000000003	int:9:int:1.3:11.7,spi:5:spi:1.1:5.5,sp:5:sp:1:5
+R	priest/holy	55	12014	12747	gear	19.5	spi:5:spi:1.1:5.5,sta:9:sta:1:9,sp:5:sp:1:5
+R	priest/holy	55	12014	12748	gear	18.5	int:5:int:1.3:6.5,sta:9:sta:1:9,spDmg:3:sp:1:3
+R	priest/holy	55	12014	12749	gear	20.200000000000003	int:9:int:1.3:11.7,spi:5:spi:1.1:5.5,spDmg:3:sp:1:3
+R	priest/holy	55	12014	12750	gear	17.5	spi:5:spi:1.1:5.5,sta:9:sta:1:9,spDmg:3:sp:1:3
+R	priest/holy	55	12014	12751	gear	9.0	sta:9:sta:1:9
+R	priest/holy	55	12014	12752	gear	9.0	sta:9:sta:1:9
+R	priest/holy	55	12014	12753	gear	9.0	sta:9:sta:1:9
+R	priest/holy	55	12014	12754	gear	14.0	sp:5:sp:1:5,sta:9:sta:1:9
+R	priest/holy	55	12014	12755	gear	15.0	sp:5:sp:1:5,sta:10:sta:1:10
+R	priest/holy	55	12794	0	mh	0.0	
+R	priest/holy	55	13353	0	oh	52.42	spi:10:spi:1.1:11,int:15:int:1.3:19.5,sta:8:sta:1:8,spShadow:16:spShadow:0.87:13.92
+R	priest/holy	55	14107	0	gear	44.42	int:12:int:1.3:15.6,spShadow:26:spShadow:0.87:22.62,armor:62:armor:0.1:6.2
+R	priest/holy	55	14212	0	gear	3.5	armor:35:armor:0.1:3.5
+R	priest/holy	55	14212	12718	gear	19.6	int:7:int:1.3:9.1,sta:7:sta:1:7,armor:35:armor:0.1:3.5
+R	priest/holy	55	14212	12719	gear	18.200000000000003	spi:7:spi:1.1:7.7,sta:7:sta:1:7,armor:35:armor:0.1:3.5
+R	priest/holy	55	14212	12720	gear	20.3	int:7:int:1.3:9.1,spi:7:spi:1.1:7.7,armor:35:armor:0.1:3.5
+R	priest/holy	55	14212	12729	gear	16.5	int:10:int:1.3:13,armor:35:armor:0.1:3.5
+R	priest/holy	55	14212	12730	gear	14.5	spi:10:spi:1.1:11,armor:35:armor:0.1:3.5
+R	priest/holy	55	14212	12731	gear	13.5	sta:10:sta:1:10,armor:35:armor:0.1:3.5
+R	priest/holy	55	14212	12734	gear	15.5	sp:12:sp:1:12,armor:35:armor:0.1:3.5
+R	priest/holy	55	14212	12735	gear	10.5	spDmg:7:sp:1:7,armor:35:armor:0.1:3.5
+R	priest/holy	55	14212	12740	gear	10.5	sta:7:sta:1:7,armor:35:armor:0.1:3.5
+R	priest/holy	55	14212	12741	gear	10.5	sta:7:sta:1:7,armor:35:armor:0.1:3.5
+R	priest/holy	55	14212	12742	gear	10.5	sta:7:sta:1:7,armor:35:armor:0.1:3.5
+R	priest/holy	55	14212	12743	gear	10.5	sta:7:sta:1:7,armor:35:armor:0.1:3.5
+R	priest/holy	55	14212	12744	gear	10.5	sta:7:sta:1:7,armor:35:armor:0.1:3.5
+R	priest/holy	55	14212	12745	gear	20.6	int:7:int:1.3:9.1,sta:4:sta:1:4,sp:4:sp:1:4,armor:35:armor:0.1:3.5
+R	priest/holy	55	14212	12746	gear	21.0	int:7:int:1.3:9.1,spi:4:spi:1.1:4.4,sp:4:sp:1:4,armor:35:armor:0.1:3.5
+R	priest/holy	55	14212	12747	gear	18.9	spi:4:spi:1.1:4.4,sta:7:sta:1:7,sp:4:sp:1:4,armor:35:armor:0.1:3.5
+R	priest/holy	55	14212	12748	gear	17.7	int:4:int:1.3:5.2,sta:7:sta:1:7,spDmg:2:sp:1:2,armor:35:armor:0.1:3.5
+R	priest/holy	55	14212	12749	gear	19.0	int:7:int:1.3:9.1,spi:4:spi:1.1:4.4,spDmg:2:sp:1:2,armor:35:armor:0.1:3.5
+R	priest/holy	55	14212	12750	gear	16.9	spi:4:spi:1.1:4.4,sta:7:sta:1:7,spDmg:2:sp:1:2,armor:35:armor:0.1:3.5
+R	priest/holy	55	14212	12756	gear	3.5	armor:35:armor:0.1:3.5
+R	priest/holy	55	14212	12757	gear	3.5	armor:35:armor:0.1:3.5
+R	priest/holy	55	14212	12758	gear	3.5	armor:35:armor:0.1:3.5
+R	priest/holy	55	14212	12759	gear	3.5	armor:35:armor:0.1:3.5
+R	priest/holy	55	14212	12761	gear	15.68	spShadow:14:spShadow:0.87:12.18,armor:35:armor:0.1:3.5
+R	priest/holy	55	14311	0	gear	3.1	armor:31:armor:0.1:3.1
+R	priest/holy	55	14311	12718	gear	23.800000000000004	int:9:int:1.3:11.7,sta:9:sta:1:9,armor:31:armor:0.1:3.1
+R	priest/holy	55	14311	12719	gear	22.0	spi:9:spi:1.1:9.9,sta:9:sta:1:9,armor:31:armor:0.1:3.1
+R	priest/holy	55	14311	12720	gear	24.700000000000003	int:9:int:1.3:11.7,spi:9:spi:1.1:9.9,armor:31:armor:0.1:3.1
+R	priest/holy	55	14311	12729	gear	20.000000000000004	int:13:int:1.3:16.9,armor:31:armor:0.1:3.1
+R	priest/holy	55	14311	12730	gear	17.400000000000002	spi:13:spi:1.1:14.3,armor:31:armor:0.1:3.1
+R	priest/holy	55	14311	12731	gear	16.1	sta:13:sta:1:13,armor:31:armor:0.1:3.1
+R	priest/holy	55	14311	12734	gear	18.1	sp:15:sp:1:15,armor:31:armor:0.1:3.1
+R	priest/holy	55	14311	12735	gear	13.1	spDmg:10:sp:1:10,armor:31:armor:0.1:3.1
+R	priest/holy	55	14311	12740	gear	12.1	sta:9:sta:1:9,armor:31:armor:0.1:3.1
+R	priest/holy	55	14311	12741	gear	12.1	sta:9:sta:1:9,armor:31:armor:0.1:3.1
+R	priest/holy	55	14311	12742	gear	12.1	sta:9:sta:1:9,armor:31:armor:0.1:3.1
+R	priest/holy	55	14311	12743	gear	12.1	sta:9:sta:1:9,armor:31:armor:0.1:3.1
+R	priest/holy	55	14311	12744	gear	12.1	sta:9:sta:1:9,armor:31:armor:0.1:3.1
+R	priest/holy	55	14311	12745	gear	24.800000000000004	int:9:int:1.3:11.7,sta:5:sta:1:5,sp:5:sp:1:5,armor:31:armor:0.1:3.1
+R	priest/holy	55	14311	12746	gear	25.300000000000004	int:9:int:1.3:11.7,spi:5:spi:1.1:5.5,sp:5:sp:1:5,armor:31:armor:0.1:3.1
+R	priest/holy	55	14311	12747	gear	22.6	spi:5:spi:1.1:5.5,sta:9:sta:1:9,sp:5:sp:1:5,armor:31:armor:0.1:3.1
+R	priest/holy	55	14311	12748	gear	21.6	int:5:int:1.3:6.5,sta:9:sta:1:9,spDmg:3:sp:1:3,armor:31:armor:0.1:3.1
+R	priest/holy	55	14311	12749	gear	23.300000000000004	int:9:int:1.3:11.7,spi:5:spi:1.1:5.5,spDmg:3:sp:1:3,armor:31:armor:0.1:3.1
+R	priest/holy	55	14311	12750	gear	20.6	spi:5:spi:1.1:5.5,sta:9:sta:1:9,spDmg:3:sp:1:3,armor:31:armor:0.1:3.1
+R	priest/holy	55	14311	12756	gear	3.1	armor:31:armor:0.1:3.1
+R	priest/holy	55	14311	12757	gear	3.1	armor:31:armor:0.1:3.1
+R	priest/holy	55	14311	12758	gear	3.1	armor:31:armor:0.1:3.1
+R	priest/holy	55	14311	12759	gear	3.1	armor:31:armor:0.1:3.1
+R	priest/holy	55	14311	12761	gear	19.630000000000003	spShadow:19:spShadow:0.87:16.53,armor:31:armor:0.1:3.1
+R	priest/holy	55	14439	0	gear	16.7	spi:8:spi:1.1:8.8,int:4:int:1.3:5.2,armor:27:armor:0.1:2.7
+R	priest/holy	55	15283	0	ranged	402.996	rdps:56.76:rdps:7.1:402.996
+R	priest/holy	55	15283	12718	ranged	416.796	int:6:int:1.3:7.8,sta:6:sta:1:6,rdps:56.76:rdps:7.1:402.996
+R	priest/holy	55	15283	12719	ranged	415.596	spi:6:spi:1.1:6.6,sta:6:sta:1:6,rdps:56.76:rdps:7.1:402.996
+R	priest/holy	55	15283	12720	ranged	417.39599999999996	int:6:int:1.3:7.8,spi:6:spi:1.1:6.6,rdps:56.76:rdps:7.1:402.996
+R	priest/holy	55	15283	12729	ranged	414.69599999999997	int:9:int:1.3:11.7,rdps:56.76:rdps:7.1:402.996
+R	priest/holy	55	15283	12730	ranged	412.89599999999996	spi:9:spi:1.1:9.9,rdps:56.76:rdps:7.1:402.996
+R	priest/holy	55	15283	12731	ranged	411.996	sta:9:sta:1:9,rdps:56.76:rdps:7.1:402.996
+R	priest/holy	55	15283	12734	ranged	413.996	sp:11:sp:1:11,rdps:56.76:rdps:7.1:402.996
+R	priest/holy	55	15283	12735	ranged	409.996	spDmg:7:sp:1:7,rdps:56.76:rdps:7.1:402.996
+R	priest/holy	55	15283	12740	ranged	408.996	sta:6:sta:1:6,rdps:56.76:rdps:7.1:402.996
+R	priest/holy	55	15283	12741	ranged	408.996	sta:6:sta:1:6,rdps:56.76:rdps:7.1:402.996
+R	priest/holy	55	15283	12742	ranged	408.996	sta:6:sta:1:6,rdps:56.76:rdps:7.1:402.996
+R	priest/holy	55	15283	12743	ranged	408.996	sta:6:sta:1:6,rdps:56.76:rdps:7.1:402.996
+R	priest/holy	55	15283	12744	ranged	408.996	sta:6:sta:1:6,rdps:56.76:rdps:7.1:402.996
+R	priest/holy	55	15283	12745	ranged	419.096	int:7:int:1.3:9.1,sta:4:sta:1:4,sp:3:sp:1:3,rdps:56.76:rdps:7.1:402.996
+R	priest/holy	55	15283	12746	ranged	419.496	int:7:int:1.3:9.1,spi:4:spi:1.1:4.4,sp:3:sp:1:3,rdps:56.76:rdps:7.1:402.996
+R	priest/holy	55	15283	12747	ranged	417.39599999999996	spi:4:spi:1.1:4.4,sta:7:sta:1:7,sp:3:sp:1:3,rdps:56.76:rdps:7.1:402.996
+R	priest/holy	55	15283	12748	ranged	417.19599999999997	int:4:int:1.3:5.2,sta:7:sta:1:7,spDmg:2:sp:1:2,rdps:56.76:rdps:7.1:402.996
+R	priest/holy	55	15283	12749	ranged	418.496	int:7:int:1.3:9.1,spi:4:spi:1.1:4.4,spDmg:2:sp:1:2,rdps:56.76:rdps:7.1:402.996
+R	priest/holy	55	15283	12750	ranged	416.39599999999996	spi:4:spi:1.1:4.4,sta:7:sta:1:7,spDmg:2:sp:1:2,rdps:56.76:rdps:7.1:402.996
+R	priest/holy	55	15283	12756	ranged	402.996	rdps:56.76:rdps:7.1:402.996
+R	priest/holy	55	15283	12757	ranged	402.996	rdps:56.76:rdps:7.1:402.996
+R	priest/holy	55	15283	12758	ranged	402.996	rdps:56.76:rdps:7.1:402.996
+R	priest/holy	55	15283	12759	ranged	402.996	rdps:56.76:rdps:7.1:402.996
+R	priest/holy	55	15283	12761	ranged	414.306	spShadow:13:spShadow:0.87:11.31,rdps:56.76:rdps:7.1:402.996
+R	priest/holy	55	15938	0	oh	0.0	
+R	priest/holy	55	15938	12718	oh	20.700000000000003	int:9:int:1.3:11.7,sta:9:sta:1:9
+R	priest/holy	55	15938	12719	oh	18.9	spi:9:spi:1.1:9.9,sta:9:sta:1:9
+R	priest/holy	55	15938	12720	oh	21.6	int:9:int:1.3:11.7,spi:9:spi:1.1:9.9
+R	priest/holy	55	15938	12721	oh	9.0	sta:9:sta:1:9
+R	priest/holy	55	15938	12722	oh	9.0	sta:9:sta:1:9
+R	priest/holy	55	15938	12723	oh	11.700000000000001	int:9:int:1.3:11.7
+R	priest/holy	55	15938	12724	oh	11.700000000000001	int:9:int:1.3:11.7
+R	priest/holy	55	15938	12725	oh	9.9	spi:9:spi:1.1:9.9
+R	priest/holy	55	15938	12726	oh	9.9	spi:9:spi:1.1:9.9
+R	priest/holy	55	15938	12727	oh	0.0	
+R	priest/holy	55	15938	12728	oh	0.0	
+R	priest/holy	55	15938	12729	oh	18.2	int:14:int:1.3:18.2
+R	priest/holy	55	15938	12730	oh	15.400000000000002	spi:14:spi:1.1:15.4
+R	priest/holy	55	15938	12731	oh	14.0	sta:14:sta:1:14
+R	priest/holy	55	15938	12732	oh	0.0	
+R	priest/holy	55	15938	12733	oh	0.0	
+R	priest/holy	55	15938	12734	oh	16.0	sp:16:sp:1:16
+R	priest/holy	55	15938	12735	oh	10.0	spDmg:10:sp:1:10
+R	priest/holy	55	15938	12740	oh	9.0	sta:9:sta:1:9
+R	priest/holy	55	15938	12741	oh	9.0	sta:9:sta:1:9
+R	priest/holy	55	15938	12742	oh	9.0	sta:9:sta:1:9
+R	priest/holy	55	15938	12743	oh	9.0	sta:9:sta:1:9
+R	priest/holy	55	15938	12744	oh	9.0	sta:9:sta:1:9
+R	priest/holy	55	15938	12745	oh	24.0	int:10:int:1.3:13,sta:6:sta:1:6,sp:5:sp:1:5
+R	priest/holy	55	15938	12746	oh	24.6	int:10:int:1.3:13,spi:6:spi:1.1:6.6,sp:5:sp:1:5
+R	priest/holy	55	15938	12747	oh	21.6	spi:6:spi:1.1:6.6,sta:10:sta:1:10,sp:5:sp:1:5
+R	priest/holy	55	15938	12748	oh	20.8	int:6:int:1.3:7.8,sta:10:sta:1:10,spDmg:3:sp:1:3
+R	priest/holy	55	15938	12749	oh	22.6	int:10:int:1.3:13,spi:6:spi:1.1:6.6,spDmg:3:sp:1:3
+R	priest/holy	55	15938	12750	oh	19.6	spi:6:spi:1.1:6.6,sta:10:sta:1:10,spDmg:3:sp:1:3
+R	priest/holy	55	15938	12756	oh	0.0	
+R	priest/holy	55	15938	12757	oh	0.0	
+R	priest/holy	55	15938	12758	oh	0.0	
+R	priest/holy	55	15938	12759	oh	0.0	
+R	priest/holy	55	15938	12760	oh	0.0	
+R	priest/holy	55	15938	12761	oh	17.4	spShadow:20:spShadow:0.87:17.4
 R	priest/holy	55	15945	0	oh	4.2	sta:2:sta:1:2,spi:2:spi:1.1:2.2
-R	priest/holy	55	16819	0	gear	44.800000000000004	sta:8:sta:1:8,int:14:int:1.3:18.2,spi:10:spi:1.1:11,mp5:2:mp5:1.6:3.2,armor:44:armor:0.1:4.4
-R	priest/holy	55	17739	0	gear	15.7	sta:12:sta:1:12,armor:37:armor:0.1:3.7
-R	priest/holy	55	18440	0	gear	15.600000000000001	sta:9:sta:1:9,armor:66:armor:0.1:6.6
-R	priest/holy	55	18879	0	gear	31.0	sta:20:sta:1:20,armor:110:armor:0.1:11
-R	priest/holy	55	19395	0	gear	14.4	mp5:9:mp5:1.6:14.4
-R	priest/holy	55	19893	0	gear	41.4	sta:10:sta:1:10,int:10:int:1.3:13,spellHit:1:spellHit:7.4:7.4,sp:11:sp:1:11
-R	priest/holy	55	20330	0	gear	76.4	int:27:int:1.3:35.1,spi:11:spi:1.1:12.1,sta:12:sta:1:12,crit:1:spellCrit:7.1:7.1,armor:101:armor:0.1:10.1
-R	priest/holy	55	20652	0	gear	5.300000000000001	armor:53:armor:0.1:5.3
-R	priest/holy	55	20652	12745	gear	39.8	int:15:int:1.3:19.5,sta:8:sta:1:8,sp:7:sp:1:7,armor:53:armor:0.1:5.3
-R	priest/holy	55	20652	12746	gear	40.599999999999994	int:15:int:1.3:19.5,spi:8:spi:1.1:8.8,sp:7:sp:1:7,armor:53:armor:0.1:5.3
-R	priest/holy	55	20652	12747	gear	36.1	spi:8:spi:1.1:8.8,sta:15:sta:1:15,sp:7:sp:1:7,armor:53:armor:0.1:5.3
-R	priest/holy	55	20652	12748	gear	35.7	int:8:int:1.3:10.4,sta:15:sta:1:15,spDmg:5:sp:1:5,armor:53:armor:0.1:5.3
-R	priest/holy	55	20652	12749	gear	38.599999999999994	int:15:int:1.3:19.5,spi:8:spi:1.1:8.8,spDmg:5:sp:1:5,armor:53:armor:0.1:5.3
-R	priest/holy	55	20652	12750	gear	34.1	spi:8:spi:1.1:8.8,sta:15:sta:1:15,spDmg:5:sp:1:5,armor:53:armor:0.1:5.3
-R	priest/holy	55	21500	0	gear	45.5	sta:14:sta:1:14,int:15:int:1.3:19.5,mp5:4:mp5:1.6:6.4,armor:56:armor:0.1:5.6
-R	priest/holy	55	22085	0	gear	78.1	int:14:int:1.3:18.2,sta:13:sta:1:13,mp5:6:mp5:1.6:9.6,sp:16:sp:1:16,spi:12:spi:1.1:13.2,armor:81:armor:0.1:8.1
-R	priest/holy	55	22678	0	gear	0.0	
-R	priest/holy	55	23177	0	ranged	279.068	spShadow:10:spShadow:0.87:8.7,rdps:38.08:rdps:7.1:270.368
-R	priest/holy	55	212583	0	mh	3.0	sta:3:sta:1:3
-R	priest/holy	55	217296	0	gear	14.0	sta:9:sta:1:9,sp:5:sp:1:5
-R	priest/holy	55	220907	0	gear	59.1	sta:13:sta:1:13,int:12:int:1.3:15.6,crit:1:spellCrit:7.1:7.1,sp:14:sp:1:14,armor:94:armor:0.1:9.4
-R	priest/holy	55	226731	0	gear	47.5	sta:7:sta:1:7,int:11:int:1.3:14.3,sp:21:sp:1:21,armor:52:armor:0.1:5.2
-R	priest/holy	55	227967	0	gear	0.0	
-R	priest/holy	55	228282	0	gear	61.1	sta:20:sta:1:20,sp:35:sp:1:35,armor:61:armor:0.1:6.1
-R	priest/holy	55	228757	0	mh	0.0	
-R	priest/holy	55	231168	0	gear	101.69999999999999	sta:15:sta:1:15,int:20:int:1.3:26,crit:1:spellCrit:7.1:7.1,spShadow:50:spShadow:0.87:43.5,armor:101:armor:0.1:10.1
-R	priest/holy	55	233395	0	gear	119.71000000000001	sta:14:sta:1:14,int:18:int:1.3:23.4,crit:2:spellCrit:7.1:14.2,spShadow:63:spShadow:0.87:54.81,armor:133:armor:0.1:13.3
-R	priest/holy	55	233994	0	gear	53.5	int:18:int:1.3:23.4,crit:1:spellCrit:7.1:7.1,spDmg:23:sp:1:23
-R	priest/holy	55	234576	0	mh	89.5	sta:21:sta:1:21,int:8:int:1.3:10.4,crit:1:spellCrit:7.1:7.1,spDmg:51:sp:1:51
-R	priest/holy	55	236277	0	gear	40.6	sta:8:sta:1:8,int:9:int:1.3:11.7,spi:9:spi:1.1:9.9,spDmg:11:sp:1:11
-R	priest/holy	55	239565	0	gear	132.02	sta:15:sta:1:15,int:17:int:1.3:22.1,crit:2:spellCrit:7.1:14.2,spShadow:76:spShadow:0.87:66.12,armor:146:armor:0.1:14.6
-R	priest/holy	55	247789	0	ranged	28.4	rdps:4:rdps:7.1:28.4
-R	priest/holy	55	254029	0	gear	21.700000000000003	int:7:int:1.3:9.1,sta:9:sta:1:9,armor:36:armor:0.1:3.6
-R	priest/holy	55	260829	0	gear	4.4	armor:44:armor:0.1:4.4
-R	priest/holy	55	271909	0	gear	14.0	sta:14:sta:1:14
-R	priest/holy	55	272847	0	mh	9.1	sta:2:sta:1:2,crit:1:spellCrit:7.1:7.1
-R	priest/holy	55	275831	0	gear	6.5	int:5:int:1.3:6.5
-R	priest/holy	55	278019	0	gear	10.0	sta:6:sta:1:6,sp:4:sp:1:4
-R	priest/holy	55	288931	0	gear	16.0	sp:16:sp:1:16
+R	priest/holy	55	16817	0	gear	70.7	sta:10:sta:1:10,int:22:int:1.3:28.6,spi:10:spi:1.1:11,mp5:4:mp5:1.6:6.4,sp:9:sp:1:9,armor:57:armor:0.1:5.7
+R	priest/holy	55	17737	0	oh	16.32	hit:0.8:spellHit:7.4:5.92,int:8:int:1.3:10.4
+R	priest/holy	55	18438	0	gear	0.0	
+R	priest/holy	55	18878	0	mh	50.1	sta:8:sta:1:8,int:17:int:1.3:22.1,sp:20:sp:1:20
+R	priest/holy	55	19391	0	gear	62.400000000000006	sta:13:sta:1:13,int:17:int:1.3:22.1,mp5:12:mp5:1.6:19.2,armor:81:armor:0.1:8.1
+R	priest/holy	55	19891	0	oh	47.699999999999996	sta:8:sta:1:8,int:11:int:1.3:14.3,sp:18:sp:1:18,spellHit:1:spellHit:7.4:7.4
+R	priest/holy	55	20333	0	gear	50.199999999999996	int:20:int:1.3:26,spi:8:spi:1.1:8.8,sta:9:sta:1:9,mp5:4:mp5:1.6:6.4
+R	priest/holy	55	20672	0	ranged	459.24299999999994	int:9:int:1.3:11.7,sp:5:sp:1:5,rdps:62.33:rdps:7.1:442.543
+R	priest/holy	55	21522	0	mh	14.0	sta:14:sta:1:14
+R	priest/holy	55	22231	0	gear	51.800000000000004	int:18:int:1.3:23.4,sta:11:sta:1:11,hit:1:spellHit:7.4:7.4,sp:4:sp:1:4,armor:60:armor:0.1:6
+R	priest/holy	55	22711	0	gear	41.599999999999994	sta:6:sta:1:6,int:6:int:1.3:7.8,sp:23:sp:1:23,armor:48:armor:0.1:4.8
+R	priest/holy	55	23237	0	gear	20.1	int:10:int:1.3:13,crit:1:spellCrit:7.1:7.1
+R	priest/holy	55	213088	0	gear	16.0	sta:4:sta:1:4,int:4:int:1.3:5.2,spi:4:spi:1.1:4.4,armor:24:armor:0.1:2.4
+R	priest/holy	55	217301	0	gear	16.1	sta:7:sta:1:7,int:7:int:1.3:9.1
+R	priest/holy	55	221025	0	gear	42.1	sta:7:sta:1:7,int:8:int:1.3:10.4,sp:21:sp:1:21,armor:37:armor:0.1:3.7
+R	priest/holy	55	226744	0	gear	39.6	sta:11:sta:1:11,int:10:int:1.3:13,spi:10:spi:1.1:11,armor:46:armor:0.1:4.6
+R	priest/holy	55	227980	0	gear	73.4	sta:12:sta:1:12,int:15:int:1.3:19.5,spi:10:spi:1.1:11,sp:22:sp:1:22,armor:89:armor:0.1:8.9
+R	priest/holy	55	228292	0	gear	34.9	sta:23:sta:1:23,armor:119:armor:0.1:11.9
+R	priest/holy	55	229374	0	mh	10.0	sta:10:sta:1:10
+R	priest/holy	55	231271	0	gear	26.0	sp:26:sp:1:26
+R	priest/holy	55	233502	0	gear	18.4	sta:11:sta:1:11,hit:1:spellHit:7.4:7.4
+R	priest/holy	55	234020	0	gear	46.8	sta:7:sta:1:7,int:8:int:1.3:10.4,hit:1:spellHit:7.4:7.4,sp:22:sp:1:22
+R	priest/holy	55	234614	0	gear	0.0	
+R	priest/holy	55	236284	0	mh	195.1	sta:20:sta:1:20,int:20:int:1.3:26,hit:2:spellHit:7.4:14.8,crit:3:spellCrit:7.1:21.3,sp:113:sp:1:113
+R	priest/holy	55	239581	0	gear	93.6	sta:17:sta:1:17,int:17:int:1.3:22.1,spShadow:50:spShadow:0.87:43.5,armor:110:armor:0.1:11
+R	priest/holy	55	249234	0	ranged	285.10699999999997	sp:7:sp:1:7,rdps:39.17:rdps:7.1:278.107
+R	priest/holy	55	254033	0	gear	18.8	spDmg:6:sp:1:6,spi:8:spi:1.1:8.8,armor:40:armor:0.1:4
+R	priest/holy	55	260820	0	gear	0.0	
+R	priest/holy	55	271661	0	gear	0.2	armor:2:armor:0.1:0.2
+R	priest/holy	55	272406	0	gear	34.6	int:14:int:1.3:18.2,hit:1:spellHit:7.4:7.4,sp:9:sp:1:9
+R	priest/holy	55	273423	0	gear	66.5	int:10:int:1.3:13,sta:26:sta:1:26,spDmg:9:sp:1:9,spi:10:spi:1.1:11,armor:75:armor:0.1:7.5
+R	priest/holy	55	274919	0	ranged	238.61499999999998	spShadow:7:spShadow:0.87:6.09,rdps:32.75:rdps:7.1:232.525
+R	priest/holy	55	276888	0	mh	4.800000000000001	int:2:int:1.3:2.6,spi:2:spi:1.1:2.2
+R	priest/holy	55	279826	0	gear	51.6	sta:13:sta:1:13,spi:10:spi:1.1:11,int:8:int:1.3:10.4,sp:11:sp:1:11,armor:62:armor:0.1:6.2
+R	priest/holy	55	281315	0	gear	5.7	int:3:int:1.3:3.9,armor:18:armor:0.1:1.8
+R	priest/holy	55	284197	0	gear	11.4	sta:8:sta:1:8,armor:34:armor:0.1:3.4
+R	priest/holy	55	286997	0	gear	33.800000000000004	spi:17:spi:1.1:18.7,sp:10:sp:1:10,armor:51:armor:0.1:5.1
 R	priest/holy	60	35	0	mh	0.0	
 R	priest/holy	60	1299	0	gear	7.32	sta:4:sta:0.53:2.12,spi:3:spi:1.3:3.9,armor:20:armor:0.065:1.3
 R	priest/holy	60	1831	0	mh	0.0	
@@ -3077,7 +3319,7 @@ R	priest/holy	60	2364	0	gear	1.17	armor:18:armor:0.065:1.17
 R	priest/holy	60	2955	0	gear	21.625	sta:11:sta:0.53:5.83,spi:10:spi:1.3:13,armor:43:armor:0.065:2.795
 R	priest/holy	60	3423	0	oh	0.0	
 R	priest/holy	60	3947	0	gear	1.9500000000000002	armor:30:armor:0.065:1.95
-R	priest/holy	60	4454	0	mh	2.6	spi:2:spi:1.3:2.6
+R	priest/holy	60	4454	0	mh	3.9000000000000004	spi:3:spi:1.3:3.9
 R	priest/holy	60	4947	0	mh	0.0	
 R	priest/holy	60	5393	0	mh	0.0	
 R	priest/holy	60	6333	0	mh	1.06	sta:2:sta:0.53:1.06
@@ -3127,8 +3369,8 @@ R	priest/holy	60	7355	12757	gear	1.235	armor:19:armor:0.065:1.235
 R	priest/holy	60	7355	12758	gear	1.235	armor:19:armor:0.065:1.235
 R	priest/holy	60	7355	12759	gear	1.235	armor:19:armor:0.065:1.235
 R	priest/holy	60	7355	12761	gear	8.615	spShadow:9:spShadow:0.82:7.38,armor:19:armor:0.065:1.235
-R	priest/holy	60	7757	0	mh	21.71	sta:7:sta:0.53:3.71,int:15:int:1.2:18
-R	priest/holy	60	9491	0	gear	20.765	sta:5:sta:0.53:2.65,int:8:int:1.2:9.6,spi:5:spi:1.3:6.5,armor:31:armor:0.065:2.015
+R	priest/holy	60	7757	0	mh	9.01	sta:17:sta:0.53:9.01
+R	priest/holy	60	9491	0	gear	20.765	int:8:int:1.2:9.6,spi:5:spi:1.3:6.5,sta:5:sta:0.53:2.65,armor:31:armor:0.065:2.015
 R	priest/holy	60	9875	0	gear	1.885	armor:29:armor:0.065:1.885
 R	priest/holy	60	9875	12718	gear	15.725	int:8:int:1.2:9.6,sta:8:sta:0.53:4.24,armor:29:armor:0.065:1.885
 R	priest/holy	60	9875	12719	gear	16.525000000000002	spi:8:spi:1.3:10.4,sta:8:sta:0.53:4.24,armor:29:armor:0.065:1.885
@@ -3181,174 +3423,196 @@ R	priest/holy	60	10102	12759	gear	4.94	armor:76:armor:0.065:4.94
 R	priest/holy	60	10102	12761	gear	35.28	spShadow:37:spShadow:0.82:30.34,armor:76:armor:0.065:4.94
 R	priest/holy	60	10645	0	gear	0.0	
 R	priest/holy	60	11288	0	ranged	163.0	sp:2:sp:1:2,rdps:17.5:rdps:9.2:161
-R	priest/holy	60	11808	0	gear	15.410000000000002	sta:20:sta:0.53:10.6,armor:74:armor:0.065:4.81
-R	priest/holy	60	12015	0	gear	0.0	
-R	priest/holy	60	12015	12718	gear	15.57	int:9:int:1.2:10.8,sta:9:sta:0.53:4.77
-R	priest/holy	60	12015	12719	gear	16.470000000000002	spi:9:spi:1.3:11.7,sta:9:sta:0.53:4.77
-R	priest/holy	60	12015	12720	gear	22.5	int:9:int:1.2:10.8,spi:9:spi:1.3:11.7
-R	priest/holy	60	12015	12721	gear	4.7700000000000005	sta:9:sta:0.53:4.77
-R	priest/holy	60	12015	12722	gear	4.7700000000000005	sta:9:sta:0.53:4.77
-R	priest/holy	60	12015	12723	gear	10.799999999999999	int:9:int:1.2:10.8
-R	priest/holy	60	12015	12724	gear	10.799999999999999	int:9:int:1.2:10.8
-R	priest/holy	60	12015	12725	gear	11.700000000000001	spi:9:spi:1.3:11.7
-R	priest/holy	60	12015	12726	gear	11.700000000000001	spi:9:spi:1.3:11.7
-R	priest/holy	60	12015	12727	gear	0.0	
-R	priest/holy	60	12015	12728	gear	0.0	
-R	priest/holy	60	12015	12729	gear	16.8	int:14:int:1.2:16.8
-R	priest/holy	60	12015	12730	gear	18.2	spi:14:spi:1.3:18.2
-R	priest/holy	60	12015	12731	gear	7.42	sta:14:sta:0.53:7.42
-R	priest/holy	60	12015	12732	gear	0.0	
-R	priest/holy	60	12015	12733	gear	0.0	
-R	priest/holy	60	12015	12737	gear	0.0	
-R	priest/holy	60	12015	12738	gear	17.4	mp5:6:mp5:2.9:17.4
-R	priest/holy	60	12015	12739	gear	0.0	
-R	priest/holy	60	12015	12740	gear	4.7700000000000005	sta:9:sta:0.53:4.77
-R	priest/holy	60	12015	12741	gear	4.7700000000000005	sta:9:sta:0.53:4.77
-R	priest/holy	60	12015	12742	gear	4.7700000000000005	sta:9:sta:0.53:4.77
-R	priest/holy	60	12015	12743	gear	4.7700000000000005	sta:9:sta:0.53:4.77
-R	priest/holy	60	12015	12744	gear	4.7700000000000005	sta:9:sta:0.53:4.77
-R	priest/holy	60	12015	12745	gear	20.18	int:10:int:1.2:12,sta:6:sta:0.53:3.18,sp:5:sp:1:5
-R	priest/holy	60	12015	12746	gear	24.8	int:10:int:1.2:12,spi:6:spi:1.3:7.8,sp:5:sp:1:5
-R	priest/holy	60	12015	12747	gear	18.1	spi:6:spi:1.3:7.8,sta:10:sta:0.53:5.3,sp:5:sp:1:5
-R	priest/holy	60	12015	12748	gear	15.5	int:6:int:1.2:7.2,sta:10:sta:0.53:5.3,spDmg:3:sp:1:3
-R	priest/holy	60	12015	12749	gear	22.8	int:10:int:1.2:12,spi:6:spi:1.3:7.8,spDmg:3:sp:1:3
-R	priest/holy	60	12015	12750	gear	16.1	spi:6:spi:1.3:7.8,sta:10:sta:0.53:5.3,spDmg:3:sp:1:3
-R	priest/holy	60	12015	12751	gear	5.300000000000001	sta:10:sta:0.53:5.3
-R	priest/holy	60	12015	12752	gear	5.300000000000001	sta:10:sta:0.53:5.3
-R	priest/holy	60	12015	12753	gear	5.300000000000001	sta:10:sta:0.53:5.3
-R	priest/holy	60	12015	12754	gear	10.3	sp:5:sp:1:5,sta:10:sta:0.53:5.3
-R	priest/holy	60	12015	12755	gear	10.3	sp:5:sp:1:5,sta:10:sta:0.53:5.3
-R	priest/holy	60	12805	0	gear	0.0	
-R	priest/holy	60	13360	0	mh	22.450000000000003	sta:5:sta:0.53:2.65,int:10:int:1.2:12,spi:6:spi:1.3:7.8
-R	priest/holy	60	14108	0	gear	18.915000000000003	spi:12:spi:1.3:15.6,armor:51:armor:0.065:3.315
-R	priest/holy	60	14213	0	gear	3.185	armor:49:armor:0.065:3.185
-R	priest/holy	60	14213	12718	gear	20.485	int:10:int:1.2:12,sta:10:sta:0.53:5.3,armor:49:armor:0.065:3.185
-R	priest/holy	60	14213	12719	gear	21.485	spi:10:spi:1.3:13,sta:10:sta:0.53:5.3,armor:49:armor:0.065:3.185
-R	priest/holy	60	14213	12720	gear	28.185	int:10:int:1.2:12,spi:10:spi:1.3:13,armor:49:armor:0.065:3.185
-R	priest/holy	60	14213	12729	gear	21.185	int:15:int:1.2:18,armor:49:armor:0.065:3.185
-R	priest/holy	60	14213	12730	gear	22.685	spi:15:spi:1.3:19.5,armor:49:armor:0.065:3.185
-R	priest/holy	60	14213	12731	gear	11.135	sta:15:sta:0.53:7.95,armor:49:armor:0.065:3.185
-R	priest/holy	60	14213	12734	gear	21.185	sp:18:sp:1:18,armor:49:armor:0.065:3.185
-R	priest/holy	60	14213	12735	gear	14.185	spDmg:11:sp:1:11,armor:49:armor:0.065:3.185
-R	priest/holy	60	14213	12740	gear	8.485000000000001	sta:10:sta:0.53:5.3,armor:49:armor:0.065:3.185
-R	priest/holy	60	14213	12741	gear	8.485000000000001	sta:10:sta:0.53:5.3,armor:49:armor:0.065:3.185
-R	priest/holy	60	14213	12742	gear	8.485000000000001	sta:10:sta:0.53:5.3,armor:49:armor:0.065:3.185
-R	priest/holy	60	14213	12743	gear	8.485000000000001	sta:10:sta:0.53:5.3,armor:49:armor:0.065:3.185
-R	priest/holy	60	14213	12744	gear	8.485000000000001	sta:10:sta:0.53:5.3,armor:49:armor:0.065:3.185
-R	priest/holy	60	14213	12745	gear	25.564999999999998	int:11:int:1.2:13.2,sta:6:sta:0.53:3.18,sp:6:sp:1:6,armor:49:armor:0.065:3.185
-R	priest/holy	60	14213	12746	gear	30.185	int:11:int:1.2:13.2,spi:6:spi:1.3:7.8,sp:6:sp:1:6,armor:49:armor:0.065:3.185
-R	priest/holy	60	14213	12747	gear	22.815	spi:6:spi:1.3:7.8,sta:11:sta:0.53:5.83,sp:6:sp:1:6,armor:49:armor:0.065:3.185
-R	priest/holy	60	14213	12748	gear	20.215	int:6:int:1.2:7.2,sta:11:sta:0.53:5.83,spDmg:4:sp:1:4,armor:49:armor:0.065:3.185
-R	priest/holy	60	14213	12749	gear	28.185	int:11:int:1.2:13.2,spi:6:spi:1.3:7.8,spDmg:4:sp:1:4,armor:49:armor:0.065:3.185
-R	priest/holy	60	14213	12750	gear	20.815	spi:6:spi:1.3:7.8,sta:11:sta:0.53:5.83,spDmg:4:sp:1:4,armor:49:armor:0.065:3.185
-R	priest/holy	60	14213	12756	gear	3.185	armor:49:armor:0.065:3.185
-R	priest/holy	60	14213	12757	gear	3.185	armor:49:armor:0.065:3.185
-R	priest/holy	60	14213	12758	gear	3.185	armor:49:armor:0.065:3.185
-R	priest/holy	60	14213	12759	gear	3.185	armor:49:armor:0.065:3.185
-R	priest/holy	60	14213	12761	gear	20.404999999999998	spShadow:21:spShadow:0.82:17.22,armor:49:armor:0.065:3.185
-R	priest/holy	60	14312	0	gear	4.16	armor:64:armor:0.065:4.16
-R	priest/holy	60	14312	12718	gear	35.3	int:18:int:1.2:21.6,sta:18:sta:0.53:9.54,armor:64:armor:0.065:4.16
-R	priest/holy	60	14312	12719	gear	37.10000000000001	spi:18:spi:1.3:23.4,sta:18:sta:0.53:9.54,armor:64:armor:0.065:4.16
-R	priest/holy	60	14312	12720	gear	49.16	int:18:int:1.2:21.6,spi:18:spi:1.3:23.4,armor:64:armor:0.065:4.16
-R	priest/holy	60	14312	12729	gear	36.56	int:27:int:1.2:32.4,armor:64:armor:0.065:4.16
-R	priest/holy	60	14312	12730	gear	39.260000000000005	spi:27:spi:1.3:35.1,armor:64:armor:0.065:4.16
-R	priest/holy	60	14312	12731	gear	18.47	sta:27:sta:0.53:14.31,armor:64:armor:0.065:4.16
-R	priest/holy	60	14312	12734	gear	36.16	sp:32:sp:1:32,armor:64:armor:0.065:4.16
-R	priest/holy	60	14312	12735	gear	24.16	spDmg:20:sp:1:20,armor:64:armor:0.065:4.16
-R	priest/holy	60	14312	12740	gear	13.700000000000001	sta:18:sta:0.53:9.54,armor:64:armor:0.065:4.16
-R	priest/holy	60	14312	12741	gear	13.700000000000001	sta:18:sta:0.53:9.54,armor:64:armor:0.065:4.16
-R	priest/holy	60	14312	12742	gear	13.700000000000001	sta:18:sta:0.53:9.54,armor:64:armor:0.065:4.16
-R	priest/holy	60	14312	12743	gear	13.700000000000001	sta:18:sta:0.53:9.54,armor:64:armor:0.065:4.16
-R	priest/holy	60	14312	12744	gear	13.700000000000001	sta:18:sta:0.53:9.54,armor:64:armor:0.065:4.16
-R	priest/holy	60	14312	12745	gear	43.989999999999995	int:20:int:1.2:24,sta:11:sta:0.53:5.83,sp:10:sp:1:10,armor:64:armor:0.065:4.16
-R	priest/holy	60	14312	12746	gear	52.459999999999994	int:20:int:1.2:24,spi:11:spi:1.3:14.3,sp:10:sp:1:10,armor:64:armor:0.065:4.16
-R	priest/holy	60	14312	12747	gear	39.06	spi:11:spi:1.3:14.3,sta:20:sta:0.53:10.6,sp:10:sp:1:10,armor:64:armor:0.065:4.16
-R	priest/holy	60	14312	12748	gear	33.96	int:11:int:1.2:13.2,sta:20:sta:0.53:10.6,spDmg:6:sp:1:6,armor:64:armor:0.065:4.16
-R	priest/holy	60	14312	12749	gear	48.459999999999994	int:20:int:1.2:24,spi:11:spi:1.3:14.3,spDmg:6:sp:1:6,armor:64:armor:0.065:4.16
-R	priest/holy	60	14312	12750	gear	35.06	spi:11:spi:1.3:14.3,sta:20:sta:0.53:10.6,spDmg:6:sp:1:6,armor:64:armor:0.065:4.16
-R	priest/holy	60	14312	12756	gear	4.16	armor:64:armor:0.065:4.16
-R	priest/holy	60	14312	12757	gear	4.16	armor:64:armor:0.065:4.16
-R	priest/holy	60	14312	12758	gear	4.16	armor:64:armor:0.065:4.16
-R	priest/holy	60	14312	12759	gear	4.16	armor:64:armor:0.065:4.16
-R	priest/holy	60	14312	12761	gear	36.14	spShadow:39:spShadow:0.82:31.98,armor:64:armor:0.065:4.16
-R	priest/holy	60	14440	0	gear	12.93	sta:6:sta:0.53:3.18,spi:6:spi:1.3:7.8,armor:30:armor:0.065:1.95
-R	priest/holy	60	15299	0	gear	0.585	armor:9:armor:0.065:0.585
-R	priest/holy	60	15939	0	oh	0.0	
-R	priest/holy	60	15939	12718	oh	15.57	int:9:int:1.2:10.8,sta:9:sta:0.53:4.77
-R	priest/holy	60	15939	12719	oh	16.470000000000002	spi:9:spi:1.3:11.7,sta:9:sta:0.53:4.77
-R	priest/holy	60	15939	12720	oh	22.5	int:9:int:1.2:10.8,spi:9:spi:1.3:11.7
-R	priest/holy	60	15939	12721	oh	4.7700000000000005	sta:9:sta:0.53:4.77
-R	priest/holy	60	15939	12722	oh	4.7700000000000005	sta:9:sta:0.53:4.77
-R	priest/holy	60	15939	12723	oh	10.799999999999999	int:9:int:1.2:10.8
-R	priest/holy	60	15939	12724	oh	10.799999999999999	int:9:int:1.2:10.8
-R	priest/holy	60	15939	12725	oh	11.700000000000001	spi:9:spi:1.3:11.7
-R	priest/holy	60	15939	12726	oh	11.700000000000001	spi:9:spi:1.3:11.7
-R	priest/holy	60	15939	12727	oh	0.0	
-R	priest/holy	60	15939	12728	oh	0.0	
-R	priest/holy	60	15939	12729	oh	16.8	int:14:int:1.2:16.8
-R	priest/holy	60	15939	12730	oh	18.2	spi:14:spi:1.3:18.2
-R	priest/holy	60	15939	12731	oh	7.42	sta:14:sta:0.53:7.42
-R	priest/holy	60	15939	12732	oh	0.0	
-R	priest/holy	60	15939	12733	oh	0.0	
-R	priest/holy	60	15939	12734	oh	16.0	sp:16:sp:1:16
-R	priest/holy	60	15939	12735	oh	10.0	spDmg:10:sp:1:10
-R	priest/holy	60	15939	12740	oh	4.7700000000000005	sta:9:sta:0.53:4.77
-R	priest/holy	60	15939	12741	oh	4.7700000000000005	sta:9:sta:0.53:4.77
-R	priest/holy	60	15939	12742	oh	4.7700000000000005	sta:9:sta:0.53:4.77
-R	priest/holy	60	15939	12743	oh	4.7700000000000005	sta:9:sta:0.53:4.77
-R	priest/holy	60	15939	12744	oh	4.7700000000000005	sta:9:sta:0.53:4.77
-R	priest/holy	60	15939	12745	oh	20.18	int:10:int:1.2:12,sta:6:sta:0.53:3.18,sp:5:sp:1:5
-R	priest/holy	60	15939	12746	oh	24.8	int:10:int:1.2:12,spi:6:spi:1.3:7.8,sp:5:sp:1:5
-R	priest/holy	60	15939	12747	oh	18.1	spi:6:spi:1.3:7.8,sta:10:sta:0.53:5.3,sp:5:sp:1:5
-R	priest/holy	60	15939	12748	oh	15.5	int:6:int:1.2:7.2,sta:10:sta:0.53:5.3,spDmg:3:sp:1:3
-R	priest/holy	60	15939	12749	oh	22.8	int:10:int:1.2:12,spi:6:spi:1.3:7.8,spDmg:3:sp:1:3
-R	priest/holy	60	15939	12750	oh	16.1	spi:6:spi:1.3:7.8,sta:10:sta:0.53:5.3,spDmg:3:sp:1:3
-R	priest/holy	60	15939	12756	oh	0.0	
-R	priest/holy	60	15939	12757	oh	0.0	
-R	priest/holy	60	15939	12758	oh	0.0	
-R	priest/holy	60	15939	12759	oh	0.0	
-R	priest/holy	60	15939	12760	oh	0.0	
-R	priest/holy	60	15939	12761	oh	16.4	spShadow:20:spShadow:0.82:16.4
+R	priest/holy	60	11807	0	gear	33.29	spi:10:spi:1.3:13,sta:10:sta:0.53:5.3,int:10:int:1.2:12,armor:46:armor:0.065:2.99
+R	priest/holy	60	12014	0	gear	0.0	
+R	priest/holy	60	12014	12718	gear	15.57	int:9:int:1.2:10.8,sta:9:sta:0.53:4.77
+R	priest/holy	60	12014	12719	gear	16.470000000000002	spi:9:spi:1.3:11.7,sta:9:sta:0.53:4.77
+R	priest/holy	60	12014	12720	gear	22.5	int:9:int:1.2:10.8,spi:9:spi:1.3:11.7
+R	priest/holy	60	12014	12721	gear	4.7700000000000005	sta:9:sta:0.53:4.77
+R	priest/holy	60	12014	12722	gear	4.7700000000000005	sta:9:sta:0.53:4.77
+R	priest/holy	60	12014	12723	gear	10.799999999999999	int:9:int:1.2:10.8
+R	priest/holy	60	12014	12724	gear	10.799999999999999	int:9:int:1.2:10.8
+R	priest/holy	60	12014	12725	gear	11.700000000000001	spi:9:spi:1.3:11.7
+R	priest/holy	60	12014	12726	gear	11.700000000000001	spi:9:spi:1.3:11.7
+R	priest/holy	60	12014	12727	gear	0.0	
+R	priest/holy	60	12014	12728	gear	0.0	
+R	priest/holy	60	12014	12729	gear	15.6	int:13:int:1.2:15.6
+R	priest/holy	60	12014	12730	gear	16.900000000000002	spi:13:spi:1.3:16.9
+R	priest/holy	60	12014	12731	gear	6.890000000000001	sta:13:sta:0.53:6.89
+R	priest/holy	60	12014	12732	gear	0.0	
+R	priest/holy	60	12014	12733	gear	0.0	
+R	priest/holy	60	12014	12737	gear	0.0	
+R	priest/holy	60	12014	12738	gear	14.5	mp5:5:mp5:2.9:14.5
+R	priest/holy	60	12014	12739	gear	0.0	
+R	priest/holy	60	12014	12740	gear	4.7700000000000005	sta:9:sta:0.53:4.77
+R	priest/holy	60	12014	12741	gear	4.7700000000000005	sta:9:sta:0.53:4.77
+R	priest/holy	60	12014	12742	gear	4.7700000000000005	sta:9:sta:0.53:4.77
+R	priest/holy	60	12014	12743	gear	4.7700000000000005	sta:9:sta:0.53:4.77
+R	priest/holy	60	12014	12744	gear	4.7700000000000005	sta:9:sta:0.53:4.77
+R	priest/holy	60	12014	12745	gear	18.45	int:9:int:1.2:10.8,sta:5:sta:0.53:2.65,sp:5:sp:1:5
+R	priest/holy	60	12014	12746	gear	22.299999999999997	int:9:int:1.2:10.8,spi:5:spi:1.3:6.5,sp:5:sp:1:5
+R	priest/holy	60	12014	12747	gear	16.27	spi:5:spi:1.3:6.5,sta:9:sta:0.53:4.77,sp:5:sp:1:5
+R	priest/holy	60	12014	12748	gear	13.77	int:5:int:1.2:6,sta:9:sta:0.53:4.77,spDmg:3:sp:1:3
+R	priest/holy	60	12014	12749	gear	20.299999999999997	int:9:int:1.2:10.8,spi:5:spi:1.3:6.5,spDmg:3:sp:1:3
+R	priest/holy	60	12014	12750	gear	14.27	spi:5:spi:1.3:6.5,sta:9:sta:0.53:4.77,spDmg:3:sp:1:3
+R	priest/holy	60	12014	12751	gear	4.7700000000000005	sta:9:sta:0.53:4.77
+R	priest/holy	60	12014	12752	gear	4.7700000000000005	sta:9:sta:0.53:4.77
+R	priest/holy	60	12014	12753	gear	4.7700000000000005	sta:9:sta:0.53:4.77
+R	priest/holy	60	12014	12754	gear	9.77	sp:5:sp:1:5,sta:9:sta:0.53:4.77
+R	priest/holy	60	12014	12755	gear	10.3	sp:5:sp:1:5,sta:10:sta:0.53:5.3
+R	priest/holy	60	12794	0	mh	0.0	
+R	priest/holy	60	13353	0	oh	48.36	spi:10:spi:1.3:13,int:15:int:1.2:18,sta:8:sta:0.53:4.24,spShadow:16:spShadow:0.82:13.12
+R	priest/holy	60	14107	0	gear	39.75	int:12:int:1.2:14.4,spShadow:26:spShadow:0.82:21.32,armor:62:armor:0.065:4.03
+R	priest/holy	60	14212	0	gear	2.275	armor:35:armor:0.065:2.275
+R	priest/holy	60	14212	12718	gear	14.385	int:7:int:1.2:8.4,sta:7:sta:0.53:3.71,armor:35:armor:0.065:2.275
+R	priest/holy	60	14212	12719	gear	15.084999999999999	spi:7:spi:1.3:9.1,sta:7:sta:0.53:3.71,armor:35:armor:0.065:2.275
+R	priest/holy	60	14212	12720	gear	19.775	int:7:int:1.2:8.4,spi:7:spi:1.3:9.1,armor:35:armor:0.065:2.275
+R	priest/holy	60	14212	12729	gear	14.275	int:10:int:1.2:12,armor:35:armor:0.065:2.275
+R	priest/holy	60	14212	12730	gear	15.275	spi:10:spi:1.3:13,armor:35:armor:0.065:2.275
+R	priest/holy	60	14212	12731	gear	7.575000000000001	sta:10:sta:0.53:5.3,armor:35:armor:0.065:2.275
+R	priest/holy	60	14212	12734	gear	14.275	sp:12:sp:1:12,armor:35:armor:0.065:2.275
+R	priest/holy	60	14212	12735	gear	9.275	spDmg:7:sp:1:7,armor:35:armor:0.065:2.275
+R	priest/holy	60	14212	12740	gear	5.984999999999999	sta:7:sta:0.53:3.71,armor:35:armor:0.065:2.275
+R	priest/holy	60	14212	12741	gear	5.984999999999999	sta:7:sta:0.53:3.71,armor:35:armor:0.065:2.275
+R	priest/holy	60	14212	12742	gear	5.984999999999999	sta:7:sta:0.53:3.71,armor:35:armor:0.065:2.275
+R	priest/holy	60	14212	12743	gear	5.984999999999999	sta:7:sta:0.53:3.71,armor:35:armor:0.065:2.275
+R	priest/holy	60	14212	12744	gear	5.984999999999999	sta:7:sta:0.53:3.71,armor:35:armor:0.065:2.275
+R	priest/holy	60	14212	12745	gear	16.794999999999998	int:7:int:1.2:8.4,sta:4:sta:0.53:2.12,sp:4:sp:1:4,armor:35:armor:0.065:2.275
+R	priest/holy	60	14212	12746	gear	19.875	int:7:int:1.2:8.4,spi:4:spi:1.3:5.2,sp:4:sp:1:4,armor:35:armor:0.065:2.275
+R	priest/holy	60	14212	12747	gear	15.185	spi:4:spi:1.3:5.2,sta:7:sta:0.53:3.71,sp:4:sp:1:4,armor:35:armor:0.065:2.275
+R	priest/holy	60	14212	12748	gear	12.785	int:4:int:1.2:4.8,sta:7:sta:0.53:3.71,spDmg:2:sp:1:2,armor:35:armor:0.065:2.275
+R	priest/holy	60	14212	12749	gear	17.875	int:7:int:1.2:8.4,spi:4:spi:1.3:5.2,spDmg:2:sp:1:2,armor:35:armor:0.065:2.275
+R	priest/holy	60	14212	12750	gear	13.185	spi:4:spi:1.3:5.2,sta:7:sta:0.53:3.71,spDmg:2:sp:1:2,armor:35:armor:0.065:2.275
+R	priest/holy	60	14212	12756	gear	2.275	armor:35:armor:0.065:2.275
+R	priest/holy	60	14212	12757	gear	2.275	armor:35:armor:0.065:2.275
+R	priest/holy	60	14212	12758	gear	2.275	armor:35:armor:0.065:2.275
+R	priest/holy	60	14212	12759	gear	2.275	armor:35:armor:0.065:2.275
+R	priest/holy	60	14212	12761	gear	13.754999999999999	spShadow:14:spShadow:0.82:11.48,armor:35:armor:0.065:2.275
+R	priest/holy	60	14311	0	gear	2.015	armor:31:armor:0.065:2.015
+R	priest/holy	60	14311	12718	gear	17.585	int:9:int:1.2:10.8,sta:9:sta:0.53:4.77,armor:31:armor:0.065:2.015
+R	priest/holy	60	14311	12719	gear	18.485000000000003	spi:9:spi:1.3:11.7,sta:9:sta:0.53:4.77,armor:31:armor:0.065:2.015
+R	priest/holy	60	14311	12720	gear	24.515	int:9:int:1.2:10.8,spi:9:spi:1.3:11.7,armor:31:armor:0.065:2.015
+R	priest/holy	60	14311	12729	gear	17.615	int:13:int:1.2:15.6,armor:31:armor:0.065:2.015
+R	priest/holy	60	14311	12730	gear	18.915000000000003	spi:13:spi:1.3:16.9,armor:31:armor:0.065:2.015
+R	priest/holy	60	14311	12731	gear	8.905000000000001	sta:13:sta:0.53:6.89,armor:31:armor:0.065:2.015
+R	priest/holy	60	14311	12734	gear	17.015	sp:15:sp:1:15,armor:31:armor:0.065:2.015
+R	priest/holy	60	14311	12735	gear	12.015	spDmg:10:sp:1:10,armor:31:armor:0.065:2.015
+R	priest/holy	60	14311	12740	gear	6.785	sta:9:sta:0.53:4.77,armor:31:armor:0.065:2.015
+R	priest/holy	60	14311	12741	gear	6.785	sta:9:sta:0.53:4.77,armor:31:armor:0.065:2.015
+R	priest/holy	60	14311	12742	gear	6.785	sta:9:sta:0.53:4.77,armor:31:armor:0.065:2.015
+R	priest/holy	60	14311	12743	gear	6.785	sta:9:sta:0.53:4.77,armor:31:armor:0.065:2.015
+R	priest/holy	60	14311	12744	gear	6.785	sta:9:sta:0.53:4.77,armor:31:armor:0.065:2.015
+R	priest/holy	60	14311	12745	gear	20.465	int:9:int:1.2:10.8,sta:5:sta:0.53:2.65,sp:5:sp:1:5,armor:31:armor:0.065:2.015
+R	priest/holy	60	14311	12746	gear	24.314999999999998	int:9:int:1.2:10.8,spi:5:spi:1.3:6.5,sp:5:sp:1:5,armor:31:armor:0.065:2.015
+R	priest/holy	60	14311	12747	gear	18.285	spi:5:spi:1.3:6.5,sta:9:sta:0.53:4.77,sp:5:sp:1:5,armor:31:armor:0.065:2.015
+R	priest/holy	60	14311	12748	gear	15.785	int:5:int:1.2:6,sta:9:sta:0.53:4.77,spDmg:3:sp:1:3,armor:31:armor:0.065:2.015
+R	priest/holy	60	14311	12749	gear	22.314999999999998	int:9:int:1.2:10.8,spi:5:spi:1.3:6.5,spDmg:3:sp:1:3,armor:31:armor:0.065:2.015
+R	priest/holy	60	14311	12750	gear	16.285	spi:5:spi:1.3:6.5,sta:9:sta:0.53:4.77,spDmg:3:sp:1:3,armor:31:armor:0.065:2.015
+R	priest/holy	60	14311	12756	gear	2.015	armor:31:armor:0.065:2.015
+R	priest/holy	60	14311	12757	gear	2.015	armor:31:armor:0.065:2.015
+R	priest/holy	60	14311	12758	gear	2.015	armor:31:armor:0.065:2.015
+R	priest/holy	60	14311	12759	gear	2.015	armor:31:armor:0.065:2.015
+R	priest/holy	60	14311	12761	gear	17.595	spShadow:19:spShadow:0.82:15.58,armor:31:armor:0.065:2.015
+R	priest/holy	60	14439	0	gear	16.955	spi:8:spi:1.3:10.4,int:4:int:1.2:4.8,armor:27:armor:0.065:1.755
+R	priest/holy	60	15283	0	ranged	522.1919999999999	rdps:56.76:rdps:9.2:522.192
+R	priest/holy	60	15283	12718	ranged	532.5719999999999	int:6:int:1.2:7.2,sta:6:sta:0.53:3.18,rdps:56.76:rdps:9.2:522.192
+R	priest/holy	60	15283	12719	ranged	533.1719999999999	spi:6:spi:1.3:7.8,sta:6:sta:0.53:3.18,rdps:56.76:rdps:9.2:522.192
+R	priest/holy	60	15283	12720	ranged	537.1919999999999	int:6:int:1.2:7.2,spi:6:spi:1.3:7.8,rdps:56.76:rdps:9.2:522.192
+R	priest/holy	60	15283	12729	ranged	532.9919999999998	int:9:int:1.2:10.8,rdps:56.76:rdps:9.2:522.192
+R	priest/holy	60	15283	12730	ranged	533.8919999999999	spi:9:spi:1.3:11.7,rdps:56.76:rdps:9.2:522.192
+R	priest/holy	60	15283	12731	ranged	526.9619999999999	sta:9:sta:0.53:4.77,rdps:56.76:rdps:9.2:522.192
+R	priest/holy	60	15283	12734	ranged	533.1919999999999	sp:11:sp:1:11,rdps:56.76:rdps:9.2:522.192
+R	priest/holy	60	15283	12735	ranged	529.1919999999999	spDmg:7:sp:1:7,rdps:56.76:rdps:9.2:522.192
+R	priest/holy	60	15283	12740	ranged	525.3719999999998	sta:6:sta:0.53:3.18,rdps:56.76:rdps:9.2:522.192
+R	priest/holy	60	15283	12741	ranged	525.3719999999998	sta:6:sta:0.53:3.18,rdps:56.76:rdps:9.2:522.192
+R	priest/holy	60	15283	12742	ranged	525.3719999999998	sta:6:sta:0.53:3.18,rdps:56.76:rdps:9.2:522.192
+R	priest/holy	60	15283	12743	ranged	525.3719999999998	sta:6:sta:0.53:3.18,rdps:56.76:rdps:9.2:522.192
+R	priest/holy	60	15283	12744	ranged	525.3719999999998	sta:6:sta:0.53:3.18,rdps:56.76:rdps:9.2:522.192
+R	priest/holy	60	15283	12745	ranged	535.7119999999999	int:7:int:1.2:8.4,sta:4:sta:0.53:2.12,sp:3:sp:1:3,rdps:56.76:rdps:9.2:522.192
+R	priest/holy	60	15283	12746	ranged	538.7919999999999	int:7:int:1.2:8.4,spi:4:spi:1.3:5.2,sp:3:sp:1:3,rdps:56.76:rdps:9.2:522.192
+R	priest/holy	60	15283	12747	ranged	534.1019999999999	spi:4:spi:1.3:5.2,sta:7:sta:0.53:3.71,sp:3:sp:1:3,rdps:56.76:rdps:9.2:522.192
+R	priest/holy	60	15283	12748	ranged	532.7019999999999	int:4:int:1.2:4.8,sta:7:sta:0.53:3.71,spDmg:2:sp:1:2,rdps:56.76:rdps:9.2:522.192
+R	priest/holy	60	15283	12749	ranged	537.7919999999999	int:7:int:1.2:8.4,spi:4:spi:1.3:5.2,spDmg:2:sp:1:2,rdps:56.76:rdps:9.2:522.192
+R	priest/holy	60	15283	12750	ranged	533.1019999999999	spi:4:spi:1.3:5.2,sta:7:sta:0.53:3.71,spDmg:2:sp:1:2,rdps:56.76:rdps:9.2:522.192
+R	priest/holy	60	15283	12756	ranged	522.1919999999999	rdps:56.76:rdps:9.2:522.192
+R	priest/holy	60	15283	12757	ranged	522.1919999999999	rdps:56.76:rdps:9.2:522.192
+R	priest/holy	60	15283	12758	ranged	522.1919999999999	rdps:56.76:rdps:9.2:522.192
+R	priest/holy	60	15283	12759	ranged	522.1919999999999	rdps:56.76:rdps:9.2:522.192
+R	priest/holy	60	15283	12761	ranged	532.8519999999999	spShadow:13:spShadow:0.82:10.66,rdps:56.76:rdps:9.2:522.192
+R	priest/holy	60	15938	0	oh	0.0	
+R	priest/holy	60	15938	12718	oh	15.57	int:9:int:1.2:10.8,sta:9:sta:0.53:4.77
+R	priest/holy	60	15938	12719	oh	16.470000000000002	spi:9:spi:1.3:11.7,sta:9:sta:0.53:4.77
+R	priest/holy	60	15938	12720	oh	22.5	int:9:int:1.2:10.8,spi:9:spi:1.3:11.7
+R	priest/holy	60	15938	12721	oh	4.7700000000000005	sta:9:sta:0.53:4.77
+R	priest/holy	60	15938	12722	oh	4.7700000000000005	sta:9:sta:0.53:4.77
+R	priest/holy	60	15938	12723	oh	10.799999999999999	int:9:int:1.2:10.8
+R	priest/holy	60	15938	12724	oh	10.799999999999999	int:9:int:1.2:10.8
+R	priest/holy	60	15938	12725	oh	11.700000000000001	spi:9:spi:1.3:11.7
+R	priest/holy	60	15938	12726	oh	11.700000000000001	spi:9:spi:1.3:11.7
+R	priest/holy	60	15938	12727	oh	0.0	
+R	priest/holy	60	15938	12728	oh	0.0	
+R	priest/holy	60	15938	12729	oh	16.8	int:14:int:1.2:16.8
+R	priest/holy	60	15938	12730	oh	18.2	spi:14:spi:1.3:18.2
+R	priest/holy	60	15938	12731	oh	7.42	sta:14:sta:0.53:7.42
+R	priest/holy	60	15938	12732	oh	0.0	
+R	priest/holy	60	15938	12733	oh	0.0	
+R	priest/holy	60	15938	12734	oh	16.0	sp:16:sp:1:16
+R	priest/holy	60	15938	12735	oh	10.0	spDmg:10:sp:1:10
+R	priest/holy	60	15938	12740	oh	4.7700000000000005	sta:9:sta:0.53:4.77
+R	priest/holy	60	15938	12741	oh	4.7700000000000005	sta:9:sta:0.53:4.77
+R	priest/holy	60	15938	12742	oh	4.7700000000000005	sta:9:sta:0.53:4.77
+R	priest/holy	60	15938	12743	oh	4.7700000000000005	sta:9:sta:0.53:4.77
+R	priest/holy	60	15938	12744	oh	4.7700000000000005	sta:9:sta:0.53:4.77
+R	priest/holy	60	15938	12745	oh	20.18	int:10:int:1.2:12,sta:6:sta:0.53:3.18,sp:5:sp:1:5
+R	priest/holy	60	15938	12746	oh	24.8	int:10:int:1.2:12,spi:6:spi:1.3:7.8,sp:5:sp:1:5
+R	priest/holy	60	15938	12747	oh	18.1	spi:6:spi:1.3:7.8,sta:10:sta:0.53:5.3,sp:5:sp:1:5
+R	priest/holy	60	15938	12748	oh	15.5	int:6:int:1.2:7.2,sta:10:sta:0.53:5.3,spDmg:3:sp:1:3
+R	priest/holy	60	15938	12749	oh	22.8	int:10:int:1.2:12,spi:6:spi:1.3:7.8,spDmg:3:sp:1:3
+R	priest/holy	60	15938	12750	oh	16.1	spi:6:spi:1.3:7.8,sta:10:sta:0.53:5.3,spDmg:3:sp:1:3
+R	priest/holy	60	15938	12756	oh	0.0	
+R	priest/holy	60	15938	12757	oh	0.0	
+R	priest/holy	60	15938	12758	oh	0.0	
+R	priest/holy	60	15938	12759	oh	0.0	
+R	priest/holy	60	15938	12760	oh	0.0	
+R	priest/holy	60	15938	12761	oh	16.4	spShadow:20:spShadow:0.82:16.4
 R	priest/holy	60	15945	0	oh	3.66	sta:2:sta:0.53:1.06,spi:2:spi:1.3:2.6
-R	priest/holy	60	16819	0	gear	42.699999999999996	sta:8:sta:0.53:4.24,int:14:int:1.2:16.8,spi:10:spi:1.3:13,mp5:2:mp5:2.9:5.8,armor:44:armor:0.065:2.86
-R	priest/holy	60	17739	0	gear	8.765	sta:12:sta:0.53:6.36,armor:37:armor:0.065:2.405
-R	priest/holy	60	18440	0	gear	9.06	sta:9:sta:0.53:4.77,armor:66:armor:0.065:4.29
-R	priest/holy	60	18879	0	gear	17.75	sta:20:sta:0.53:10.6,armor:110:armor:0.065:7.15
-R	priest/holy	60	19395	0	gear	26.099999999999998	mp5:9:mp5:2.9:26.1
-R	priest/holy	60	19893	0	gear	41.3	sta:10:sta:0.53:5.3,int:10:int:1.2:12,spellHit:1:spellHit:13:13,sp:11:sp:1:11
-R	priest/holy	60	20330	0	gear	65.825	int:27:int:1.2:32.4,spi:11:spi:1.3:14.3,sta:12:sta:0.53:6.36,crit:1:spellCrit:6.2:6.2,armor:101:armor:0.065:6.565
-R	priest/holy	60	20652	0	gear	3.4450000000000003	armor:53:armor:0.065:3.445
-R	priest/holy	60	20652	12745	gear	32.685	int:15:int:1.2:18,sta:8:sta:0.53:4.24,sp:7:sp:1:7,armor:53:armor:0.065:3.445
-R	priest/holy	60	20652	12746	gear	38.845	int:15:int:1.2:18,spi:8:spi:1.3:10.4,sp:7:sp:1:7,armor:53:armor:0.065:3.445
-R	priest/holy	60	20652	12747	gear	28.795	spi:8:spi:1.3:10.4,sta:15:sta:0.53:7.95,sp:7:sp:1:7,armor:53:armor:0.065:3.445
-R	priest/holy	60	20652	12748	gear	25.995	int:8:int:1.2:9.6,sta:15:sta:0.53:7.95,spDmg:5:sp:1:5,armor:53:armor:0.065:3.445
-R	priest/holy	60	20652	12749	gear	36.845	int:15:int:1.2:18,spi:8:spi:1.3:10.4,spDmg:5:sp:1:5,armor:53:armor:0.065:3.445
-R	priest/holy	60	20652	12750	gear	26.795	spi:8:spi:1.3:10.4,sta:15:sta:0.53:7.95,spDmg:5:sp:1:5,armor:53:armor:0.065:3.445
-R	priest/holy	60	21500	0	gear	40.660000000000004	sta:14:sta:0.53:7.42,int:15:int:1.2:18,mp5:4:mp5:2.9:11.6,armor:56:armor:0.065:3.64
-R	priest/holy	60	22085	0	gear	77.955	int:14:int:1.2:16.8,sta:13:sta:0.53:6.89,mp5:6:mp5:2.9:17.4,sp:16:sp:1:16,spi:12:spi:1.3:15.6,armor:81:armor:0.065:5.265
-R	priest/holy	60	22678	0	gear	0.0	
-R	priest/holy	60	23177	0	ranged	358.53599999999994	spShadow:10:spShadow:0.82:8.2,rdps:38.08:rdps:9.2:350.336
-R	priest/holy	60	212583	0	mh	1.59	sta:3:sta:0.53:1.59
-R	priest/holy	60	217296	0	gear	9.77	sta:9:sta:0.53:4.77,sp:5:sp:1:5
-R	priest/holy	60	220907	0	gear	47.599999999999994	sta:13:sta:0.53:6.89,int:12:int:1.2:14.4,crit:1:spellCrit:6.2:6.2,sp:14:sp:1:14,armor:94:armor:0.065:6.11
-R	priest/holy	60	226731	0	gear	41.29	sta:7:sta:0.53:3.71,int:11:int:1.2:13.2,sp:21:sp:1:21,armor:52:armor:0.065:3.38
-R	priest/holy	60	227967	0	gear	0.0	
-R	priest/holy	60	228282	0	gear	49.565000000000005	sta:20:sta:0.53:10.6,sp:35:sp:1:35,armor:61:armor:0.065:3.965
-R	priest/holy	60	228757	0	mh	0.0	
-R	priest/holy	60	231168	0	gear	85.715	sta:15:sta:0.53:7.95,int:20:int:1.2:24,crit:1:spellCrit:6.2:6.2,spShadow:50:spShadow:0.82:41,armor:101:armor:0.065:6.565
-R	priest/holy	60	233395	0	gear	101.72499999999998	sta:14:sta:0.53:7.42,int:18:int:1.2:21.6,crit:2:spellCrit:6.2:12.4,spShadow:63:spShadow:0.82:51.66,armor:133:armor:0.065:8.645
-R	priest/holy	60	233994	0	gear	50.8	int:18:int:1.2:21.6,crit:1:spellCrit:6.2:6.2,spDmg:23:sp:1:23
-R	priest/holy	60	234576	0	mh	77.93	sta:21:sta:0.53:11.13,int:8:int:1.2:9.6,crit:1:spellCrit:6.2:6.2,spDmg:51:sp:1:51
-R	priest/holy	60	236277	0	gear	37.74	sta:8:sta:0.53:4.24,int:9:int:1.2:10.8,spi:9:spi:1.3:11.7,spDmg:11:sp:1:11
-R	priest/holy	60	239565	0	gear	112.55999999999999	sta:15:sta:0.53:7.95,int:17:int:1.2:20.4,crit:2:spellCrit:6.2:12.4,spShadow:76:spShadow:0.82:62.32,armor:146:armor:0.065:9.49
-R	priest/holy	60	247789	0	ranged	36.8	rdps:4:rdps:9.2:36.8
-R	priest/holy	60	254029	0	gear	15.510000000000002	int:7:int:1.2:8.4,sta:9:sta:0.53:4.77,armor:36:armor:0.065:2.34
-R	priest/holy	60	260829	0	gear	2.8600000000000003	armor:44:armor:0.065:2.86
-R	priest/holy	60	271909	0	gear	7.42	sta:14:sta:0.53:7.42
-R	priest/holy	60	272847	0	mh	7.26	sta:2:sta:0.53:1.06,crit:1:spellCrit:6.2:6.2
-R	priest/holy	60	275831	0	gear	6.0	int:5:int:1.2:6
-R	priest/holy	60	278019	0	gear	7.18	sta:6:sta:0.53:3.18,sp:4:sp:1:4
-R	priest/holy	60	288931	0	gear	16.0	sp:16:sp:1:16
+R	priest/holy	60	16817	0	gear	69.00500000000001	sta:10:sta:0.53:5.3,int:22:int:1.2:26.4,spi:10:spi:1.3:13,mp5:4:mp5:2.9:11.6,sp:9:sp:1:9,armor:57:armor:0.065:3.705
+R	priest/holy	60	17737	0	oh	20.0	hit:0.8:spellHit:13:10.4,int:8:int:1.2:9.6
+R	priest/holy	60	18438	0	gear	0.0	
+R	priest/holy	60	18878	0	mh	44.64	sta:8:sta:0.53:4.24,int:17:int:1.2:20.4,sp:20:sp:1:20
+R	priest/holy	60	19391	0	gear	67.35499999999999	sta:13:sta:0.53:6.89,int:17:int:1.2:20.4,mp5:12:mp5:2.9:34.8,armor:81:armor:0.065:5.265
+R	priest/holy	60	19891	0	oh	48.44	sta:8:sta:0.53:4.24,int:11:int:1.2:13.2,sp:18:sp:1:18,spellHit:1:spellHit:13:13
+R	priest/holy	60	20333	0	gear	50.77	int:20:int:1.2:24,spi:8:spi:1.3:10.4,sta:9:sta:0.53:4.77,mp5:4:mp5:2.9:11.6
+R	priest/holy	60	20672	0	ranged	589.2359999999999	int:9:int:1.2:10.8,sp:5:sp:1:5,rdps:62.33:rdps:9.2:573.436
+R	priest/holy	60	21522	0	mh	7.42	sta:14:sta:0.53:7.42
+R	priest/holy	60	22231	0	gear	48.33	int:18:int:1.2:21.6,sta:11:sta:0.53:5.83,hit:1:spellHit:13:13,sp:4:sp:1:4,armor:60:armor:0.065:3.9
+R	priest/holy	60	22711	0	gear	36.49999999999999	sta:6:sta:0.53:3.18,int:6:int:1.2:7.2,sp:23:sp:1:23,armor:48:armor:0.065:3.12
+R	priest/holy	60	23237	0	gear	18.2	int:10:int:1.2:12,crit:1:spellCrit:6.2:6.2
+R	priest/holy	60	213088	0	gear	13.680000000000001	sta:4:sta:0.53:2.12,int:4:int:1.2:4.8,spi:4:spi:1.3:5.2,armor:24:armor:0.065:1.56
+R	priest/holy	60	217301	0	gear	12.11	sta:7:sta:0.53:3.71,int:7:int:1.2:8.4
+R	priest/holy	60	221025	0	gear	36.715	sta:7:sta:0.53:3.71,int:8:int:1.2:9.6,sp:21:sp:1:21,armor:37:armor:0.065:2.405
+R	priest/holy	60	226744	0	gear	33.82	sta:11:sta:0.53:5.83,int:10:int:1.2:12,spi:10:spi:1.3:13,armor:46:armor:0.065:2.99
+R	priest/holy	60	227980	0	gear	65.145	sta:12:sta:0.53:6.36,int:15:int:1.2:18,spi:10:spi:1.3:13,sp:22:sp:1:22,armor:89:armor:0.065:5.785
+R	priest/holy	60	228292	0	gear	19.925	sta:23:sta:0.53:12.19,armor:119:armor:0.065:7.735
+R	priest/holy	60	229374	0	mh	5.300000000000001	sta:10:sta:0.53:5.3
+R	priest/holy	60	231271	0	gear	26.0	sp:26:sp:1:26
+R	priest/holy	60	233502	0	gear	18.83	sta:11:sta:0.53:5.83,hit:1:spellHit:13:13
+R	priest/holy	60	234020	0	gear	48.31	sta:7:sta:0.53:3.71,int:8:int:1.2:9.6,hit:1:spellHit:13:13,sp:22:sp:1:22
+R	priest/holy	60	234614	0	gear	0.0	
+R	priest/holy	60	236284	0	mh	192.2	sta:20:sta:0.53:10.6,int:20:int:1.2:24,hit:2:spellHit:13:26,crit:3:spellCrit:6.2:18.6,sp:113:sp:1:113
+R	priest/holy	60	239581	0	gear	77.56	sta:17:sta:0.53:9.01,int:17:int:1.2:20.4,spShadow:50:spShadow:0.82:41,armor:110:armor:0.065:7.15
+R	priest/holy	60	249234	0	ranged	367.364	sp:7:sp:1:7,rdps:39.17:rdps:9.2:360.364
+R	priest/holy	60	254033	0	gear	19.0	spDmg:6:sp:1:6,spi:8:spi:1.3:10.4,armor:40:armor:0.065:2.6
+R	priest/holy	60	260820	0	gear	0.0	
+R	priest/holy	60	271661	0	gear	0.13	armor:2:armor:0.065:0.13
+R	priest/holy	60	272406	0	gear	38.8	int:14:int:1.2:16.8,hit:1:spellHit:13:13,sp:9:sp:1:9
+R	priest/holy	60	273423	0	gear	52.655	int:10:int:1.2:12,sta:26:sta:0.53:13.78,spDmg:9:sp:1:9,spi:10:spi:1.3:13,armor:75:armor:0.065:4.875
+R	priest/holy	60	274919	0	ranged	307.03999999999996	spShadow:7:spShadow:0.82:5.74,rdps:32.75:rdps:9.2:301.3
+R	priest/holy	60	276888	0	mh	5.0	int:2:int:1.2:2.4,spi:2:spi:1.3:2.6
+R	priest/holy	60	279826	0	gear	44.52	sta:13:sta:0.53:6.89,spi:10:spi:1.3:13,int:8:int:1.2:9.6,sp:11:sp:1:11,armor:62:armor:0.065:4.03
+R	priest/holy	60	281315	0	gear	4.77	int:3:int:1.2:3.6,armor:18:armor:0.065:1.17
+R	priest/holy	60	284197	0	gear	6.45	sta:8:sta:0.53:4.24,armor:34:armor:0.065:2.21
+R	priest/holy	60	286997	0	gear	35.415	spi:17:spi:1.3:22.1,sp:10:sp:1:10,armor:51:armor:0.065:3.315
 R	priest/discipline	12	35	0	mh	0.0	
 R	priest/discipline	12	1299	0	gear	4.15	sta:4:sta:0.62:2.48,spi:3:spi:0.25:0.75,armor:20:armor:0.046:0.92
 R	priest/discipline	12	1831	0	mh	0.0	
@@ -3356,7 +3620,7 @@ R	priest/discipline	12	2364	0	gear	0.828	armor:18:armor:0.046:0.828
 R	priest/discipline	12	2955	0	gear	11.298	sta:11:sta:0.62:6.82,spi:10:spi:0.25:2.5,armor:43:armor:0.046:1.978
 R	priest/discipline	12	3423	0	oh	0.0	
 R	priest/discipline	12	3947	0	gear	1.38	armor:30:armor:0.046:1.38
-R	priest/discipline	12	4454	0	mh	0.5	spi:2:spi:0.25:0.5
+R	priest/discipline	12	4454	0	mh	0.75	spi:3:spi:0.25:0.75
 R	priest/discipline	12	4947	0	mh	0.0	
 R	priest/discipline	12	5393	0	mh	0.0	
 R	priest/discipline	12	6333	0	mh	1.24	sta:2:sta:0.62:1.24
@@ -3406,8 +3670,8 @@ R	priest/discipline	12	7355	12757	gear	0.874	armor:19:armor:0.046:0.874
 R	priest/discipline	12	7355	12758	gear	0.874	armor:19:armor:0.046:0.874
 R	priest/discipline	12	7355	12759	gear	0.874	armor:19:armor:0.046:0.874
 R	priest/discipline	12	7355	12761	gear	8.704	spShadow:9:spShadow:0.87:7.83,armor:19:armor:0.046:0.874
-R	priest/discipline	12	7757	0	mh	10.34	sta:7:sta:0.62:4.34,int:15:int:0.4:6
-R	priest/discipline	12	9491	0	gear	8.976	sta:5:sta:0.62:3.1,int:8:int:0.4:3.2,spi:5:spi:0.25:1.25,armor:31:armor:0.046:1.426
+R	priest/discipline	12	7757	0	mh	10.54	sta:17:sta:0.62:10.54
+R	priest/discipline	12	9491	0	gear	8.976	int:8:int:0.4:3.2,spi:5:spi:0.25:1.25,sta:5:sta:0.62:3.1,armor:31:armor:0.046:1.426
 R	priest/discipline	12	9875	0	gear	1.334	armor:29:armor:0.046:1.334
 R	priest/discipline	12	9875	12718	gear	9.494	int:8:int:0.4:3.2,sta:8:sta:0.62:4.96,armor:29:armor:0.046:1.334
 R	priest/discipline	12	9875	12719	gear	8.294	spi:8:spi:0.25:2,sta:8:sta:0.62:4.96,armor:29:armor:0.046:1.334
@@ -3460,174 +3724,196 @@ R	priest/discipline	12	10102	12759	gear	3.496	armor:76:armor:0.046:3.496
 R	priest/discipline	12	10102	12761	gear	35.686	spShadow:37:spShadow:0.87:32.19,armor:76:armor:0.046:3.496
 R	priest/discipline	12	10645	0	gear	0.0	
 R	priest/discipline	12	11288	0	ranged	91.25	sp:2:sp:1:2,rdps:17.5:rdps:5.1:89.25
-R	priest/discipline	12	11808	0	gear	15.804	sta:20:sta:0.62:12.4,armor:74:armor:0.046:3.404
-R	priest/discipline	12	12015	0	gear	0.0	
-R	priest/discipline	12	12015	12718	gear	9.18	int:9:int:0.4:3.6,sta:9:sta:0.62:5.58
-R	priest/discipline	12	12015	12719	gear	7.83	spi:9:spi:0.25:2.25,sta:9:sta:0.62:5.58
-R	priest/discipline	12	12015	12720	gear	5.85	int:9:int:0.4:3.6,spi:9:spi:0.25:2.25
-R	priest/discipline	12	12015	12721	gear	5.58	sta:9:sta:0.62:5.58
-R	priest/discipline	12	12015	12722	gear	5.58	sta:9:sta:0.62:5.58
-R	priest/discipline	12	12015	12723	gear	3.6	int:9:int:0.4:3.6
-R	priest/discipline	12	12015	12724	gear	3.6	int:9:int:0.4:3.6
-R	priest/discipline	12	12015	12725	gear	2.25	spi:9:spi:0.25:2.25
-R	priest/discipline	12	12015	12726	gear	2.25	spi:9:spi:0.25:2.25
-R	priest/discipline	12	12015	12727	gear	0.0	
-R	priest/discipline	12	12015	12728	gear	0.0	
-R	priest/discipline	12	12015	12729	gear	5.6000000000000005	int:14:int:0.4:5.6
-R	priest/discipline	12	12015	12730	gear	3.5	spi:14:spi:0.25:3.5
-R	priest/discipline	12	12015	12731	gear	8.68	sta:14:sta:0.62:8.68
-R	priest/discipline	12	12015	12732	gear	0.0	
-R	priest/discipline	12	12015	12733	gear	0.0	
-R	priest/discipline	12	12015	12737	gear	0.0	
-R	priest/discipline	12	12015	12738	gear	1.62	mp5:6:mp5:0.27:1.62
-R	priest/discipline	12	12015	12739	gear	0.0	
-R	priest/discipline	12	12015	12740	gear	5.58	sta:9:sta:0.62:5.58
-R	priest/discipline	12	12015	12741	gear	5.58	sta:9:sta:0.62:5.58
-R	priest/discipline	12	12015	12742	gear	5.58	sta:9:sta:0.62:5.58
-R	priest/discipline	12	12015	12743	gear	5.58	sta:9:sta:0.62:5.58
-R	priest/discipline	12	12015	12744	gear	5.58	sta:9:sta:0.62:5.58
-R	priest/discipline	12	12015	12745	gear	12.719999999999999	int:10:int:0.4:4,sta:6:sta:0.62:3.72,sp:5:sp:1:5
-R	priest/discipline	12	12015	12746	gear	10.5	int:10:int:0.4:4,spi:6:spi:0.25:1.5,sp:5:sp:1:5
-R	priest/discipline	12	12015	12747	gear	12.7	spi:6:spi:0.25:1.5,sta:10:sta:0.62:6.2,sp:5:sp:1:5
-R	priest/discipline	12	12015	12748	gear	11.600000000000001	int:6:int:0.4:2.4,sta:10:sta:0.62:6.2,spDmg:3:sp:1:3
-R	priest/discipline	12	12015	12749	gear	8.5	int:10:int:0.4:4,spi:6:spi:0.25:1.5,spDmg:3:sp:1:3
-R	priest/discipline	12	12015	12750	gear	10.7	spi:6:spi:0.25:1.5,sta:10:sta:0.62:6.2,spDmg:3:sp:1:3
-R	priest/discipline	12	12015	12751	gear	6.2	sta:10:sta:0.62:6.2
-R	priest/discipline	12	12015	12752	gear	6.2	sta:10:sta:0.62:6.2
-R	priest/discipline	12	12015	12753	gear	6.2	sta:10:sta:0.62:6.2
-R	priest/discipline	12	12015	12754	gear	11.2	sp:5:sp:1:5,sta:10:sta:0.62:6.2
-R	priest/discipline	12	12015	12755	gear	11.2	sp:5:sp:1:5,sta:10:sta:0.62:6.2
-R	priest/discipline	12	12805	0	gear	0.0	
-R	priest/discipline	12	13360	0	mh	8.6	sta:5:sta:0.62:3.1,int:10:int:0.4:4,spi:6:spi:0.25:1.5
-R	priest/discipline	12	14108	0	gear	5.346	spi:12:spi:0.25:3,armor:51:armor:0.046:2.346
-R	priest/discipline	12	14213	0	gear	2.254	armor:49:armor:0.046:2.254
-R	priest/discipline	12	14213	12718	gear	12.453999999999999	int:10:int:0.4:4,sta:10:sta:0.62:6.2,armor:49:armor:0.046:2.254
-R	priest/discipline	12	14213	12719	gear	10.953999999999999	spi:10:spi:0.25:2.5,sta:10:sta:0.62:6.2,armor:49:armor:0.046:2.254
-R	priest/discipline	12	14213	12720	gear	8.754	int:10:int:0.4:4,spi:10:spi:0.25:2.5,armor:49:armor:0.046:2.254
-R	priest/discipline	12	14213	12729	gear	8.254	int:15:int:0.4:6,armor:49:armor:0.046:2.254
-R	priest/discipline	12	14213	12730	gear	6.004	spi:15:spi:0.25:3.75,armor:49:armor:0.046:2.254
-R	priest/discipline	12	14213	12731	gear	11.554	sta:15:sta:0.62:9.3,armor:49:armor:0.046:2.254
-R	priest/discipline	12	14213	12734	gear	20.254	sp:18:sp:1:18,armor:49:armor:0.046:2.254
-R	priest/discipline	12	14213	12735	gear	13.254	spDmg:11:sp:1:11,armor:49:armor:0.046:2.254
-R	priest/discipline	12	14213	12740	gear	8.454	sta:10:sta:0.62:6.2,armor:49:armor:0.046:2.254
-R	priest/discipline	12	14213	12741	gear	8.454	sta:10:sta:0.62:6.2,armor:49:armor:0.046:2.254
-R	priest/discipline	12	14213	12742	gear	8.454	sta:10:sta:0.62:6.2,armor:49:armor:0.046:2.254
-R	priest/discipline	12	14213	12743	gear	8.454	sta:10:sta:0.62:6.2,armor:49:armor:0.046:2.254
-R	priest/discipline	12	14213	12744	gear	8.454	sta:10:sta:0.62:6.2,armor:49:armor:0.046:2.254
-R	priest/discipline	12	14213	12745	gear	16.374000000000002	int:11:int:0.4:4.4,sta:6:sta:0.62:3.72,sp:6:sp:1:6,armor:49:armor:0.046:2.254
-R	priest/discipline	12	14213	12746	gear	14.154	int:11:int:0.4:4.4,spi:6:spi:0.25:1.5,sp:6:sp:1:6,armor:49:armor:0.046:2.254
-R	priest/discipline	12	14213	12747	gear	16.574	spi:6:spi:0.25:1.5,sta:11:sta:0.62:6.82,sp:6:sp:1:6,armor:49:armor:0.046:2.254
-R	priest/discipline	12	14213	12748	gear	15.474	int:6:int:0.4:2.4,sta:11:sta:0.62:6.82,spDmg:4:sp:1:4,armor:49:armor:0.046:2.254
-R	priest/discipline	12	14213	12749	gear	12.154	int:11:int:0.4:4.4,spi:6:spi:0.25:1.5,spDmg:4:sp:1:4,armor:49:armor:0.046:2.254
-R	priest/discipline	12	14213	12750	gear	14.574	spi:6:spi:0.25:1.5,sta:11:sta:0.62:6.82,spDmg:4:sp:1:4,armor:49:armor:0.046:2.254
-R	priest/discipline	12	14213	12756	gear	2.254	armor:49:armor:0.046:2.254
-R	priest/discipline	12	14213	12757	gear	2.254	armor:49:armor:0.046:2.254
-R	priest/discipline	12	14213	12758	gear	2.254	armor:49:armor:0.046:2.254
-R	priest/discipline	12	14213	12759	gear	2.254	armor:49:armor:0.046:2.254
-R	priest/discipline	12	14213	12761	gear	20.524	spShadow:21:spShadow:0.87:18.27,armor:49:armor:0.046:2.254
-R	priest/discipline	12	14312	0	gear	2.944	armor:64:armor:0.046:2.944
-R	priest/discipline	12	14312	12718	gear	21.304	int:18:int:0.4:7.2,sta:18:sta:0.62:11.16,armor:64:armor:0.046:2.944
-R	priest/discipline	12	14312	12719	gear	18.604	spi:18:spi:0.25:4.5,sta:18:sta:0.62:11.16,armor:64:armor:0.046:2.944
-R	priest/discipline	12	14312	12720	gear	14.643999999999998	int:18:int:0.4:7.2,spi:18:spi:0.25:4.5,armor:64:armor:0.046:2.944
-R	priest/discipline	12	14312	12729	gear	13.744	int:27:int:0.4:10.8,armor:64:armor:0.046:2.944
-R	priest/discipline	12	14312	12730	gear	9.693999999999999	spi:27:spi:0.25:6.75,armor:64:armor:0.046:2.944
-R	priest/discipline	12	14312	12731	gear	19.683999999999997	sta:27:sta:0.62:16.74,armor:64:armor:0.046:2.944
-R	priest/discipline	12	14312	12734	gear	34.944	sp:32:sp:1:32,armor:64:armor:0.046:2.944
-R	priest/discipline	12	14312	12735	gear	22.944	spDmg:20:sp:1:20,armor:64:armor:0.046:2.944
-R	priest/discipline	12	14312	12740	gear	14.104	sta:18:sta:0.62:11.16,armor:64:armor:0.046:2.944
-R	priest/discipline	12	14312	12741	gear	14.104	sta:18:sta:0.62:11.16,armor:64:armor:0.046:2.944
-R	priest/discipline	12	14312	12742	gear	14.104	sta:18:sta:0.62:11.16,armor:64:armor:0.046:2.944
-R	priest/discipline	12	14312	12743	gear	14.104	sta:18:sta:0.62:11.16,armor:64:armor:0.046:2.944
-R	priest/discipline	12	14312	12744	gear	14.104	sta:18:sta:0.62:11.16,armor:64:armor:0.046:2.944
-R	priest/discipline	12	14312	12745	gear	27.764	int:20:int:0.4:8,sta:11:sta:0.62:6.82,sp:10:sp:1:10,armor:64:armor:0.046:2.944
-R	priest/discipline	12	14312	12746	gear	23.694	int:20:int:0.4:8,spi:11:spi:0.25:2.75,sp:10:sp:1:10,armor:64:armor:0.046:2.944
-R	priest/discipline	12	14312	12747	gear	28.093999999999998	spi:11:spi:0.25:2.75,sta:20:sta:0.62:12.4,sp:10:sp:1:10,armor:64:armor:0.046:2.944
-R	priest/discipline	12	14312	12748	gear	25.744	int:11:int:0.4:4.4,sta:20:sta:0.62:12.4,spDmg:6:sp:1:6,armor:64:armor:0.046:2.944
-R	priest/discipline	12	14312	12749	gear	19.694	int:20:int:0.4:8,spi:11:spi:0.25:2.75,spDmg:6:sp:1:6,armor:64:armor:0.046:2.944
-R	priest/discipline	12	14312	12750	gear	24.093999999999998	spi:11:spi:0.25:2.75,sta:20:sta:0.62:12.4,spDmg:6:sp:1:6,armor:64:armor:0.046:2.944
-R	priest/discipline	12	14312	12756	gear	2.944	armor:64:armor:0.046:2.944
-R	priest/discipline	12	14312	12757	gear	2.944	armor:64:armor:0.046:2.944
-R	priest/discipline	12	14312	12758	gear	2.944	armor:64:armor:0.046:2.944
-R	priest/discipline	12	14312	12759	gear	2.944	armor:64:armor:0.046:2.944
-R	priest/discipline	12	14312	12761	gear	36.874	spShadow:39:spShadow:0.87:33.93,armor:64:armor:0.046:2.944
-R	priest/discipline	12	14440	0	gear	6.6	sta:6:sta:0.62:3.72,spi:6:spi:0.25:1.5,armor:30:armor:0.046:1.38
-R	priest/discipline	12	15299	0	gear	0.414	armor:9:armor:0.046:0.414
-R	priest/discipline	12	15939	0	oh	0.0	
-R	priest/discipline	12	15939	12718	oh	9.18	int:9:int:0.4:3.6,sta:9:sta:0.62:5.58
-R	priest/discipline	12	15939	12719	oh	7.83	spi:9:spi:0.25:2.25,sta:9:sta:0.62:5.58
-R	priest/discipline	12	15939	12720	oh	5.85	int:9:int:0.4:3.6,spi:9:spi:0.25:2.25
-R	priest/discipline	12	15939	12721	oh	5.58	sta:9:sta:0.62:5.58
-R	priest/discipline	12	15939	12722	oh	5.58	sta:9:sta:0.62:5.58
-R	priest/discipline	12	15939	12723	oh	3.6	int:9:int:0.4:3.6
-R	priest/discipline	12	15939	12724	oh	3.6	int:9:int:0.4:3.6
-R	priest/discipline	12	15939	12725	oh	2.25	spi:9:spi:0.25:2.25
-R	priest/discipline	12	15939	12726	oh	2.25	spi:9:spi:0.25:2.25
-R	priest/discipline	12	15939	12727	oh	0.0	
-R	priest/discipline	12	15939	12728	oh	0.0	
-R	priest/discipline	12	15939	12729	oh	5.6000000000000005	int:14:int:0.4:5.6
-R	priest/discipline	12	15939	12730	oh	3.5	spi:14:spi:0.25:3.5
-R	priest/discipline	12	15939	12731	oh	8.68	sta:14:sta:0.62:8.68
-R	priest/discipline	12	15939	12732	oh	0.0	
-R	priest/discipline	12	15939	12733	oh	0.0	
-R	priest/discipline	12	15939	12734	oh	16.0	sp:16:sp:1:16
-R	priest/discipline	12	15939	12735	oh	10.0	spDmg:10:sp:1:10
-R	priest/discipline	12	15939	12740	oh	5.58	sta:9:sta:0.62:5.58
-R	priest/discipline	12	15939	12741	oh	5.58	sta:9:sta:0.62:5.58
-R	priest/discipline	12	15939	12742	oh	5.58	sta:9:sta:0.62:5.58
-R	priest/discipline	12	15939	12743	oh	5.58	sta:9:sta:0.62:5.58
-R	priest/discipline	12	15939	12744	oh	5.58	sta:9:sta:0.62:5.58
-R	priest/discipline	12	15939	12745	oh	12.719999999999999	int:10:int:0.4:4,sta:6:sta:0.62:3.72,sp:5:sp:1:5
-R	priest/discipline	12	15939	12746	oh	10.5	int:10:int:0.4:4,spi:6:spi:0.25:1.5,sp:5:sp:1:5
-R	priest/discipline	12	15939	12747	oh	12.7	spi:6:spi:0.25:1.5,sta:10:sta:0.62:6.2,sp:5:sp:1:5
-R	priest/discipline	12	15939	12748	oh	11.600000000000001	int:6:int:0.4:2.4,sta:10:sta:0.62:6.2,spDmg:3:sp:1:3
-R	priest/discipline	12	15939	12749	oh	8.5	int:10:int:0.4:4,spi:6:spi:0.25:1.5,spDmg:3:sp:1:3
-R	priest/discipline	12	15939	12750	oh	10.7	spi:6:spi:0.25:1.5,sta:10:sta:0.62:6.2,spDmg:3:sp:1:3
-R	priest/discipline	12	15939	12756	oh	0.0	
-R	priest/discipline	12	15939	12757	oh	0.0	
-R	priest/discipline	12	15939	12758	oh	0.0	
-R	priest/discipline	12	15939	12759	oh	0.0	
-R	priest/discipline	12	15939	12760	oh	0.0	
-R	priest/discipline	12	15939	12761	oh	17.4	spShadow:20:spShadow:0.87:17.4
+R	priest/discipline	12	11807	0	gear	14.815999999999999	spi:10:spi:0.25:2.5,sta:10:sta:0.62:6.2,int:10:int:0.4:4,armor:46:armor:0.046:2.116
+R	priest/discipline	12	12014	0	gear	0.0	
+R	priest/discipline	12	12014	12718	gear	9.18	int:9:int:0.4:3.6,sta:9:sta:0.62:5.58
+R	priest/discipline	12	12014	12719	gear	7.83	spi:9:spi:0.25:2.25,sta:9:sta:0.62:5.58
+R	priest/discipline	12	12014	12720	gear	5.85	int:9:int:0.4:3.6,spi:9:spi:0.25:2.25
+R	priest/discipline	12	12014	12721	gear	5.58	sta:9:sta:0.62:5.58
+R	priest/discipline	12	12014	12722	gear	5.58	sta:9:sta:0.62:5.58
+R	priest/discipline	12	12014	12723	gear	3.6	int:9:int:0.4:3.6
+R	priest/discipline	12	12014	12724	gear	3.6	int:9:int:0.4:3.6
+R	priest/discipline	12	12014	12725	gear	2.25	spi:9:spi:0.25:2.25
+R	priest/discipline	12	12014	12726	gear	2.25	spi:9:spi:0.25:2.25
+R	priest/discipline	12	12014	12727	gear	0.0	
+R	priest/discipline	12	12014	12728	gear	0.0	
+R	priest/discipline	12	12014	12729	gear	5.2	int:13:int:0.4:5.2
+R	priest/discipline	12	12014	12730	gear	3.25	spi:13:spi:0.25:3.25
+R	priest/discipline	12	12014	12731	gear	8.06	sta:13:sta:0.62:8.06
+R	priest/discipline	12	12014	12732	gear	0.0	
+R	priest/discipline	12	12014	12733	gear	0.0	
+R	priest/discipline	12	12014	12737	gear	0.0	
+R	priest/discipline	12	12014	12738	gear	1.35	mp5:5:mp5:0.27:1.35
+R	priest/discipline	12	12014	12739	gear	0.0	
+R	priest/discipline	12	12014	12740	gear	5.58	sta:9:sta:0.62:5.58
+R	priest/discipline	12	12014	12741	gear	5.58	sta:9:sta:0.62:5.58
+R	priest/discipline	12	12014	12742	gear	5.58	sta:9:sta:0.62:5.58
+R	priest/discipline	12	12014	12743	gear	5.58	sta:9:sta:0.62:5.58
+R	priest/discipline	12	12014	12744	gear	5.58	sta:9:sta:0.62:5.58
+R	priest/discipline	12	12014	12745	gear	11.7	int:9:int:0.4:3.6,sta:5:sta:0.62:3.1,sp:5:sp:1:5
+R	priest/discipline	12	12014	12746	gear	9.85	int:9:int:0.4:3.6,spi:5:spi:0.25:1.25,sp:5:sp:1:5
+R	priest/discipline	12	12014	12747	gear	11.83	spi:5:spi:0.25:1.25,sta:9:sta:0.62:5.58,sp:5:sp:1:5
+R	priest/discipline	12	12014	12748	gear	10.58	int:5:int:0.4:2,sta:9:sta:0.62:5.58,spDmg:3:sp:1:3
+R	priest/discipline	12	12014	12749	gear	7.85	int:9:int:0.4:3.6,spi:5:spi:0.25:1.25,spDmg:3:sp:1:3
+R	priest/discipline	12	12014	12750	gear	9.83	spi:5:spi:0.25:1.25,sta:9:sta:0.62:5.58,spDmg:3:sp:1:3
+R	priest/discipline	12	12014	12751	gear	5.58	sta:9:sta:0.62:5.58
+R	priest/discipline	12	12014	12752	gear	5.58	sta:9:sta:0.62:5.58
+R	priest/discipline	12	12014	12753	gear	5.58	sta:9:sta:0.62:5.58
+R	priest/discipline	12	12014	12754	gear	10.58	sp:5:sp:1:5,sta:9:sta:0.62:5.58
+R	priest/discipline	12	12014	12755	gear	11.2	sp:5:sp:1:5,sta:10:sta:0.62:6.2
+R	priest/discipline	12	12794	0	mh	0.0	
+R	priest/discipline	12	13353	0	oh	27.380000000000003	spi:10:spi:0.25:2.5,int:15:int:0.4:6,sta:8:sta:0.62:4.96,spShadow:16:spShadow:0.87:13.92
+R	priest/discipline	12	14107	0	gear	30.272000000000002	int:12:int:0.4:4.8,spShadow:26:spShadow:0.87:22.62,armor:62:armor:0.046:2.852
+R	priest/discipline	12	14212	0	gear	1.6099999999999999	armor:35:armor:0.046:1.61
+R	priest/discipline	12	14212	12718	gear	8.75	int:7:int:0.4:2.8,sta:7:sta:0.62:4.34,armor:35:armor:0.046:1.61
+R	priest/discipline	12	14212	12719	gear	7.699999999999999	spi:7:spi:0.25:1.75,sta:7:sta:0.62:4.34,armor:35:armor:0.046:1.61
+R	priest/discipline	12	14212	12720	gear	6.16	int:7:int:0.4:2.8,spi:7:spi:0.25:1.75,armor:35:armor:0.046:1.61
+R	priest/discipline	12	14212	12729	gear	5.609999999999999	int:10:int:0.4:4,armor:35:armor:0.046:1.61
+R	priest/discipline	12	14212	12730	gear	4.109999999999999	spi:10:spi:0.25:2.5,armor:35:armor:0.046:1.61
+R	priest/discipline	12	14212	12731	gear	7.8100000000000005	sta:10:sta:0.62:6.2,armor:35:armor:0.046:1.61
+R	priest/discipline	12	14212	12734	gear	13.61	sp:12:sp:1:12,armor:35:armor:0.046:1.61
+R	priest/discipline	12	14212	12735	gear	8.61	spDmg:7:sp:1:7,armor:35:armor:0.046:1.61
+R	priest/discipline	12	14212	12740	gear	5.949999999999999	sta:7:sta:0.62:4.34,armor:35:armor:0.046:1.61
+R	priest/discipline	12	14212	12741	gear	5.949999999999999	sta:7:sta:0.62:4.34,armor:35:armor:0.046:1.61
+R	priest/discipline	12	14212	12742	gear	5.949999999999999	sta:7:sta:0.62:4.34,armor:35:armor:0.046:1.61
+R	priest/discipline	12	14212	12743	gear	5.949999999999999	sta:7:sta:0.62:4.34,armor:35:armor:0.046:1.61
+R	priest/discipline	12	14212	12744	gear	5.949999999999999	sta:7:sta:0.62:4.34,armor:35:armor:0.046:1.61
+R	priest/discipline	12	14212	12745	gear	10.89	int:7:int:0.4:2.8,sta:4:sta:0.62:2.48,sp:4:sp:1:4,armor:35:armor:0.046:1.61
+R	priest/discipline	12	14212	12746	gear	9.41	int:7:int:0.4:2.8,spi:4:spi:0.25:1,sp:4:sp:1:4,armor:35:armor:0.046:1.61
+R	priest/discipline	12	14212	12747	gear	10.95	spi:4:spi:0.25:1,sta:7:sta:0.62:4.34,sp:4:sp:1:4,armor:35:armor:0.046:1.61
+R	priest/discipline	12	14212	12748	gear	9.549999999999999	int:4:int:0.4:1.6,sta:7:sta:0.62:4.34,spDmg:2:sp:1:2,armor:35:armor:0.046:1.61
+R	priest/discipline	12	14212	12749	gear	7.41	int:7:int:0.4:2.8,spi:4:spi:0.25:1,spDmg:2:sp:1:2,armor:35:armor:0.046:1.61
+R	priest/discipline	12	14212	12750	gear	8.95	spi:4:spi:0.25:1,sta:7:sta:0.62:4.34,spDmg:2:sp:1:2,armor:35:armor:0.046:1.61
+R	priest/discipline	12	14212	12756	gear	1.6099999999999999	armor:35:armor:0.046:1.61
+R	priest/discipline	12	14212	12757	gear	1.6099999999999999	armor:35:armor:0.046:1.61
+R	priest/discipline	12	14212	12758	gear	1.6099999999999999	armor:35:armor:0.046:1.61
+R	priest/discipline	12	14212	12759	gear	1.6099999999999999	armor:35:armor:0.046:1.61
+R	priest/discipline	12	14212	12761	gear	13.79	spShadow:14:spShadow:0.87:12.18,armor:35:armor:0.046:1.61
+R	priest/discipline	12	14311	0	gear	1.426	armor:31:armor:0.046:1.426
+R	priest/discipline	12	14311	12718	gear	10.606	int:9:int:0.4:3.6,sta:9:sta:0.62:5.58,armor:31:armor:0.046:1.426
+R	priest/discipline	12	14311	12719	gear	9.256	spi:9:spi:0.25:2.25,sta:9:sta:0.62:5.58,armor:31:armor:0.046:1.426
+R	priest/discipline	12	14311	12720	gear	7.276	int:9:int:0.4:3.6,spi:9:spi:0.25:2.25,armor:31:armor:0.046:1.426
+R	priest/discipline	12	14311	12729	gear	6.626	int:13:int:0.4:5.2,armor:31:armor:0.046:1.426
+R	priest/discipline	12	14311	12730	gear	4.676	spi:13:spi:0.25:3.25,armor:31:armor:0.046:1.426
+R	priest/discipline	12	14311	12731	gear	9.486	sta:13:sta:0.62:8.06,armor:31:armor:0.046:1.426
+R	priest/discipline	12	14311	12734	gear	16.426	sp:15:sp:1:15,armor:31:armor:0.046:1.426
+R	priest/discipline	12	14311	12735	gear	11.426	spDmg:10:sp:1:10,armor:31:armor:0.046:1.426
+R	priest/discipline	12	14311	12740	gear	7.006	sta:9:sta:0.62:5.58,armor:31:armor:0.046:1.426
+R	priest/discipline	12	14311	12741	gear	7.006	sta:9:sta:0.62:5.58,armor:31:armor:0.046:1.426
+R	priest/discipline	12	14311	12742	gear	7.006	sta:9:sta:0.62:5.58,armor:31:armor:0.046:1.426
+R	priest/discipline	12	14311	12743	gear	7.006	sta:9:sta:0.62:5.58,armor:31:armor:0.046:1.426
+R	priest/discipline	12	14311	12744	gear	7.006	sta:9:sta:0.62:5.58,armor:31:armor:0.046:1.426
+R	priest/discipline	12	14311	12745	gear	13.126	int:9:int:0.4:3.6,sta:5:sta:0.62:3.1,sp:5:sp:1:5,armor:31:armor:0.046:1.426
+R	priest/discipline	12	14311	12746	gear	11.276	int:9:int:0.4:3.6,spi:5:spi:0.25:1.25,sp:5:sp:1:5,armor:31:armor:0.046:1.426
+R	priest/discipline	12	14311	12747	gear	13.256	spi:5:spi:0.25:1.25,sta:9:sta:0.62:5.58,sp:5:sp:1:5,armor:31:armor:0.046:1.426
+R	priest/discipline	12	14311	12748	gear	12.006	int:5:int:0.4:2,sta:9:sta:0.62:5.58,spDmg:3:sp:1:3,armor:31:armor:0.046:1.426
+R	priest/discipline	12	14311	12749	gear	9.276	int:9:int:0.4:3.6,spi:5:spi:0.25:1.25,spDmg:3:sp:1:3,armor:31:armor:0.046:1.426
+R	priest/discipline	12	14311	12750	gear	11.256	spi:5:spi:0.25:1.25,sta:9:sta:0.62:5.58,spDmg:3:sp:1:3,armor:31:armor:0.046:1.426
+R	priest/discipline	12	14311	12756	gear	1.426	armor:31:armor:0.046:1.426
+R	priest/discipline	12	14311	12757	gear	1.426	armor:31:armor:0.046:1.426
+R	priest/discipline	12	14311	12758	gear	1.426	armor:31:armor:0.046:1.426
+R	priest/discipline	12	14311	12759	gear	1.426	armor:31:armor:0.046:1.426
+R	priest/discipline	12	14311	12761	gear	17.956	spShadow:19:spShadow:0.87:16.53,armor:31:armor:0.046:1.426
+R	priest/discipline	12	14439	0	gear	4.8420000000000005	spi:8:spi:0.25:2,int:4:int:0.4:1.6,armor:27:armor:0.046:1.242
+R	priest/discipline	12	15283	0	ranged	289.47599999999994	rdps:56.76:rdps:5.1:289.476
+R	priest/discipline	12	15283	12718	ranged	295.59599999999995	int:6:int:0.4:2.4,sta:6:sta:0.62:3.72,rdps:56.76:rdps:5.1:289.476
+R	priest/discipline	12	15283	12719	ranged	294.69599999999997	spi:6:spi:0.25:1.5,sta:6:sta:0.62:3.72,rdps:56.76:rdps:5.1:289.476
+R	priest/discipline	12	15283	12720	ranged	293.3759999999999	int:6:int:0.4:2.4,spi:6:spi:0.25:1.5,rdps:56.76:rdps:5.1:289.476
+R	priest/discipline	12	15283	12729	ranged	293.07599999999996	int:9:int:0.4:3.6,rdps:56.76:rdps:5.1:289.476
+R	priest/discipline	12	15283	12730	ranged	291.72599999999994	spi:9:spi:0.25:2.25,rdps:56.76:rdps:5.1:289.476
+R	priest/discipline	12	15283	12731	ranged	295.0559999999999	sta:9:sta:0.62:5.58,rdps:56.76:rdps:5.1:289.476
+R	priest/discipline	12	15283	12734	ranged	300.47599999999994	sp:11:sp:1:11,rdps:56.76:rdps:5.1:289.476
+R	priest/discipline	12	15283	12735	ranged	296.47599999999994	spDmg:7:sp:1:7,rdps:56.76:rdps:5.1:289.476
+R	priest/discipline	12	15283	12740	ranged	293.19599999999997	sta:6:sta:0.62:3.72,rdps:56.76:rdps:5.1:289.476
+R	priest/discipline	12	15283	12741	ranged	293.19599999999997	sta:6:sta:0.62:3.72,rdps:56.76:rdps:5.1:289.476
+R	priest/discipline	12	15283	12742	ranged	293.19599999999997	sta:6:sta:0.62:3.72,rdps:56.76:rdps:5.1:289.476
+R	priest/discipline	12	15283	12743	ranged	293.19599999999997	sta:6:sta:0.62:3.72,rdps:56.76:rdps:5.1:289.476
+R	priest/discipline	12	15283	12744	ranged	293.19599999999997	sta:6:sta:0.62:3.72,rdps:56.76:rdps:5.1:289.476
+R	priest/discipline	12	15283	12745	ranged	297.756	int:7:int:0.4:2.8,sta:4:sta:0.62:2.48,sp:3:sp:1:3,rdps:56.76:rdps:5.1:289.476
+R	priest/discipline	12	15283	12746	ranged	296.27599999999995	int:7:int:0.4:2.8,spi:4:spi:0.25:1,sp:3:sp:1:3,rdps:56.76:rdps:5.1:289.476
+R	priest/discipline	12	15283	12747	ranged	297.8159999999999	spi:4:spi:0.25:1,sta:7:sta:0.62:4.34,sp:3:sp:1:3,rdps:56.76:rdps:5.1:289.476
+R	priest/discipline	12	15283	12748	ranged	297.41599999999994	int:4:int:0.4:1.6,sta:7:sta:0.62:4.34,spDmg:2:sp:1:2,rdps:56.76:rdps:5.1:289.476
+R	priest/discipline	12	15283	12749	ranged	295.27599999999995	int:7:int:0.4:2.8,spi:4:spi:0.25:1,spDmg:2:sp:1:2,rdps:56.76:rdps:5.1:289.476
+R	priest/discipline	12	15283	12750	ranged	296.8159999999999	spi:4:spi:0.25:1,sta:7:sta:0.62:4.34,spDmg:2:sp:1:2,rdps:56.76:rdps:5.1:289.476
+R	priest/discipline	12	15283	12756	ranged	289.47599999999994	rdps:56.76:rdps:5.1:289.476
+R	priest/discipline	12	15283	12757	ranged	289.47599999999994	rdps:56.76:rdps:5.1:289.476
+R	priest/discipline	12	15283	12758	ranged	289.47599999999994	rdps:56.76:rdps:5.1:289.476
+R	priest/discipline	12	15283	12759	ranged	289.47599999999994	rdps:56.76:rdps:5.1:289.476
+R	priest/discipline	12	15283	12761	ranged	300.78599999999994	spShadow:13:spShadow:0.87:11.31,rdps:56.76:rdps:5.1:289.476
+R	priest/discipline	12	15938	0	oh	0.0	
+R	priest/discipline	12	15938	12718	oh	9.18	int:9:int:0.4:3.6,sta:9:sta:0.62:5.58
+R	priest/discipline	12	15938	12719	oh	7.83	spi:9:spi:0.25:2.25,sta:9:sta:0.62:5.58
+R	priest/discipline	12	15938	12720	oh	5.85	int:9:int:0.4:3.6,spi:9:spi:0.25:2.25
+R	priest/discipline	12	15938	12721	oh	5.58	sta:9:sta:0.62:5.58
+R	priest/discipline	12	15938	12722	oh	5.58	sta:9:sta:0.62:5.58
+R	priest/discipline	12	15938	12723	oh	3.6	int:9:int:0.4:3.6
+R	priest/discipline	12	15938	12724	oh	3.6	int:9:int:0.4:3.6
+R	priest/discipline	12	15938	12725	oh	2.25	spi:9:spi:0.25:2.25
+R	priest/discipline	12	15938	12726	oh	2.25	spi:9:spi:0.25:2.25
+R	priest/discipline	12	15938	12727	oh	0.0	
+R	priest/discipline	12	15938	12728	oh	0.0	
+R	priest/discipline	12	15938	12729	oh	5.6000000000000005	int:14:int:0.4:5.6
+R	priest/discipline	12	15938	12730	oh	3.5	spi:14:spi:0.25:3.5
+R	priest/discipline	12	15938	12731	oh	8.68	sta:14:sta:0.62:8.68
+R	priest/discipline	12	15938	12732	oh	0.0	
+R	priest/discipline	12	15938	12733	oh	0.0	
+R	priest/discipline	12	15938	12734	oh	16.0	sp:16:sp:1:16
+R	priest/discipline	12	15938	12735	oh	10.0	spDmg:10:sp:1:10
+R	priest/discipline	12	15938	12740	oh	5.58	sta:9:sta:0.62:5.58
+R	priest/discipline	12	15938	12741	oh	5.58	sta:9:sta:0.62:5.58
+R	priest/discipline	12	15938	12742	oh	5.58	sta:9:sta:0.62:5.58
+R	priest/discipline	12	15938	12743	oh	5.58	sta:9:sta:0.62:5.58
+R	priest/discipline	12	15938	12744	oh	5.58	sta:9:sta:0.62:5.58
+R	priest/discipline	12	15938	12745	oh	12.719999999999999	int:10:int:0.4:4,sta:6:sta:0.62:3.72,sp:5:sp:1:5
+R	priest/discipline	12	15938	12746	oh	10.5	int:10:int:0.4:4,spi:6:spi:0.25:1.5,sp:5:sp:1:5
+R	priest/discipline	12	15938	12747	oh	12.7	spi:6:spi:0.25:1.5,sta:10:sta:0.62:6.2,sp:5:sp:1:5
+R	priest/discipline	12	15938	12748	oh	11.600000000000001	int:6:int:0.4:2.4,sta:10:sta:0.62:6.2,spDmg:3:sp:1:3
+R	priest/discipline	12	15938	12749	oh	8.5	int:10:int:0.4:4,spi:6:spi:0.25:1.5,spDmg:3:sp:1:3
+R	priest/discipline	12	15938	12750	oh	10.7	spi:6:spi:0.25:1.5,sta:10:sta:0.62:6.2,spDmg:3:sp:1:3
+R	priest/discipline	12	15938	12756	oh	0.0	
+R	priest/discipline	12	15938	12757	oh	0.0	
+R	priest/discipline	12	15938	12758	oh	0.0	
+R	priest/discipline	12	15938	12759	oh	0.0	
+R	priest/discipline	12	15938	12760	oh	0.0	
+R	priest/discipline	12	15938	12761	oh	17.4	spShadow:20:spShadow:0.87:17.4
 R	priest/discipline	12	15945	0	oh	1.74	sta:2:sta:0.62:1.24,spi:2:spi:0.25:0.5
-R	priest/discipline	12	16819	0	gear	15.624000000000002	sta:8:sta:0.62:4.96,int:14:int:0.4:5.6,spi:10:spi:0.25:2.5,mp5:2:mp5:0.27:0.54,armor:44:armor:0.046:2.024
-R	priest/discipline	12	17739	0	gear	9.142	sta:12:sta:0.62:7.44,armor:37:armor:0.046:1.702
-R	priest/discipline	12	18440	0	gear	8.616	sta:9:sta:0.62:5.58,armor:66:armor:0.046:3.036
-R	priest/discipline	12	18879	0	gear	17.46	sta:20:sta:0.62:12.4,armor:110:armor:0.046:5.06
-R	priest/discipline	12	19395	0	gear	2.43	mp5:9:mp5:0.27:2.43
-R	priest/discipline	12	19893	0	gear	23.0	sta:10:sta:0.62:6.2,int:10:int:0.4:4,spellHit:1:spellHit:1.8:1.8,sp:11:sp:1:11
-R	priest/discipline	12	20330	0	gear	26.326000000000004	int:27:int:0.4:10.8,spi:11:spi:0.25:2.75,sta:12:sta:0.62:7.44,crit:1:spellCrit:0.69:0.69,armor:101:armor:0.046:4.646
-R	priest/discipline	12	20652	0	gear	2.438	armor:53:armor:0.046:2.438
-R	priest/discipline	12	20652	12745	gear	20.398	int:15:int:0.4:6,sta:8:sta:0.62:4.96,sp:7:sp:1:7,armor:53:armor:0.046:2.438
-R	priest/discipline	12	20652	12746	gear	17.438	int:15:int:0.4:6,spi:8:spi:0.25:2,sp:7:sp:1:7,armor:53:armor:0.046:2.438
-R	priest/discipline	12	20652	12747	gear	20.738	spi:8:spi:0.25:2,sta:15:sta:0.62:9.3,sp:7:sp:1:7,armor:53:armor:0.046:2.438
-R	priest/discipline	12	20652	12748	gear	19.938	int:8:int:0.4:3.2,sta:15:sta:0.62:9.3,spDmg:5:sp:1:5,armor:53:armor:0.046:2.438
-R	priest/discipline	12	20652	12749	gear	15.438	int:15:int:0.4:6,spi:8:spi:0.25:2,spDmg:5:sp:1:5,armor:53:armor:0.046:2.438
-R	priest/discipline	12	20652	12750	gear	18.738	spi:8:spi:0.25:2,sta:15:sta:0.62:9.3,spDmg:5:sp:1:5,armor:53:armor:0.046:2.438
-R	priest/discipline	12	21500	0	gear	18.336	sta:14:sta:0.62:8.68,int:15:int:0.4:6,mp5:4:mp5:0.27:1.08,armor:56:armor:0.046:2.576
-R	priest/discipline	12	22085	0	gear	38.006	int:14:int:0.4:5.6,sta:13:sta:0.62:8.06,mp5:6:mp5:0.27:1.62,sp:16:sp:1:16,spi:12:spi:0.25:3,armor:81:armor:0.046:3.726
-R	priest/discipline	12	22678	0	gear	0.0	
-R	priest/discipline	12	23177	0	ranged	202.90799999999996	spShadow:10:spShadow:0.87:8.7,rdps:38.08:rdps:5.1:194.208
-R	priest/discipline	12	212583	0	mh	1.8599999999999999	sta:3:sta:0.62:1.86
-R	priest/discipline	12	217296	0	gear	10.58	sta:9:sta:0.62:5.58,sp:5:sp:1:5
-R	priest/discipline	12	220907	0	gear	31.874000000000002	sta:13:sta:0.62:8.06,int:12:int:0.4:4.8,crit:1:spellCrit:0.69:0.69,sp:14:sp:1:14,armor:94:armor:0.046:4.324
-R	priest/discipline	12	226731	0	gear	32.132000000000005	sta:7:sta:0.62:4.34,int:11:int:0.4:4.4,sp:21:sp:1:21,armor:52:armor:0.046:2.392
-R	priest/discipline	12	227967	0	gear	0.0	
-R	priest/discipline	12	228282	0	gear	50.205999999999996	sta:20:sta:0.62:12.4,sp:35:sp:1:35,armor:61:armor:0.046:2.806
-R	priest/discipline	12	228757	0	mh	0.0	
-R	priest/discipline	12	231168	0	gear	66.136	sta:15:sta:0.62:9.3,int:20:int:0.4:8,crit:1:spellCrit:0.69:0.69,spShadow:50:spShadow:0.87:43.5,armor:101:armor:0.046:4.646
-R	priest/discipline	12	233395	0	gear	78.18799999999999	sta:14:sta:0.62:8.68,int:18:int:0.4:7.2,crit:2:spellCrit:0.69:1.38,spShadow:63:spShadow:0.87:54.81,armor:133:armor:0.046:6.118
-R	priest/discipline	12	233994	0	gear	30.89	int:18:int:0.4:7.2,crit:1:spellCrit:0.69:0.69,spDmg:23:sp:1:23
-R	priest/discipline	12	234576	0	mh	67.91	sta:21:sta:0.62:13.02,int:8:int:0.4:3.2,crit:1:spellCrit:0.69:0.69,spDmg:51:sp:1:51
-R	priest/discipline	12	236277	0	gear	21.810000000000002	sta:8:sta:0.62:4.96,int:9:int:0.4:3.6,spi:9:spi:0.25:2.25,spDmg:11:sp:1:11
-R	priest/discipline	12	239565	0	gear	90.316	sta:15:sta:0.62:9.3,int:17:int:0.4:6.8,crit:2:spellCrit:0.69:1.38,spShadow:76:spShadow:0.87:66.12,armor:146:armor:0.046:6.716
-R	priest/discipline	12	247789	0	ranged	20.4	rdps:4:rdps:5.1:20.4
-R	priest/discipline	12	254029	0	gear	10.036000000000001	int:7:int:0.4:2.8,sta:9:sta:0.62:5.58,armor:36:armor:0.046:1.656
-R	priest/discipline	12	260829	0	gear	2.024	armor:44:armor:0.046:2.024
-R	priest/discipline	12	271909	0	gear	8.68	sta:14:sta:0.62:8.68
-R	priest/discipline	12	272847	0	mh	1.93	sta:2:sta:0.62:1.24,crit:1:spellCrit:0.69:0.69
-R	priest/discipline	12	275831	0	gear	2.0	int:5:int:0.4:2
-R	priest/discipline	12	278019	0	gear	7.72	sta:6:sta:0.62:3.72,sp:4:sp:1:4
-R	priest/discipline	12	288931	0	gear	16.0	sp:16:sp:1:16
+R	priest/discipline	12	16817	0	gear	30.201999999999998	sta:10:sta:0.62:6.2,int:22:int:0.4:8.8,spi:10:spi:0.25:2.5,mp5:4:mp5:0.27:1.08,sp:9:sp:1:9,armor:57:armor:0.046:2.622
+R	priest/discipline	12	17737	0	oh	4.640000000000001	hit:0.8:spellHit:1.8:1.44,int:8:int:0.4:3.2
+R	priest/discipline	12	18438	0	gear	0.0	
+R	priest/discipline	12	18878	0	mh	31.76	sta:8:sta:0.62:4.96,int:17:int:0.4:6.8,sp:20:sp:1:20
+R	priest/discipline	12	19391	0	gear	21.826	sta:13:sta:0.62:8.06,int:17:int:0.4:6.8,mp5:12:mp5:0.27:3.24,armor:81:armor:0.046:3.726
+R	priest/discipline	12	19891	0	oh	29.16	sta:8:sta:0.62:4.96,int:11:int:0.4:4.4,sp:18:sp:1:18,spellHit:1:spellHit:1.8:1.8
+R	priest/discipline	12	20333	0	gear	16.66	int:20:int:0.4:8,spi:8:spi:0.25:2,sta:9:sta:0.62:5.58,mp5:4:mp5:0.27:1.08
+R	priest/discipline	12	20672	0	ranged	326.483	int:9:int:0.4:3.6,sp:5:sp:1:5,rdps:62.33:rdps:5.1:317.883
+R	priest/discipline	12	21522	0	mh	8.68	sta:14:sta:0.62:8.68
+R	priest/discipline	12	22231	0	gear	22.58	int:18:int:0.4:7.2,sta:11:sta:0.62:6.82,hit:1:spellHit:1.8:1.8,sp:4:sp:1:4,armor:60:armor:0.046:2.76
+R	priest/discipline	12	22711	0	gear	31.328000000000003	sta:6:sta:0.62:3.72,int:6:int:0.4:2.4,sp:23:sp:1:23,armor:48:armor:0.046:2.208
+R	priest/discipline	12	23237	0	gear	4.6899999999999995	int:10:int:0.4:4,crit:1:spellCrit:0.69:0.69
+R	priest/discipline	12	213088	0	gear	6.184	sta:4:sta:0.62:2.48,int:4:int:0.4:1.6,spi:4:spi:0.25:1,armor:24:armor:0.046:1.104
+R	priest/discipline	12	217301	0	gear	7.140000000000001	sta:7:sta:0.62:4.34,int:7:int:0.4:2.8
+R	priest/discipline	12	221025	0	gear	30.241999999999997	sta:7:sta:0.62:4.34,int:8:int:0.4:3.2,sp:21:sp:1:21,armor:37:armor:0.046:1.702
+R	priest/discipline	12	226744	0	gear	15.436	sta:11:sta:0.62:6.82,int:10:int:0.4:4,spi:10:spi:0.25:2.5,armor:46:armor:0.046:2.116
+R	priest/discipline	12	227980	0	gear	42.034	sta:12:sta:0.62:7.44,int:15:int:0.4:6,spi:10:spi:0.25:2.5,sp:22:sp:1:22,armor:89:armor:0.046:4.094
+R	priest/discipline	12	228292	0	gear	19.734	sta:23:sta:0.62:14.26,armor:119:armor:0.046:5.474
+R	priest/discipline	12	229374	0	mh	6.2	sta:10:sta:0.62:6.2
+R	priest/discipline	12	231271	0	gear	26.0	sp:26:sp:1:26
+R	priest/discipline	12	233502	0	gear	8.620000000000001	sta:11:sta:0.62:6.82,hit:1:spellHit:1.8:1.8
+R	priest/discipline	12	234020	0	gear	31.34	sta:7:sta:0.62:4.34,int:8:int:0.4:3.2,hit:1:spellHit:1.8:1.8,sp:22:sp:1:22
+R	priest/discipline	12	234614	0	gear	0.0	
+R	priest/discipline	12	236284	0	mh	139.07	sta:20:sta:0.62:12.4,int:20:int:0.4:8,hit:2:spellHit:1.8:3.6,crit:3:spellCrit:0.69:2.07,sp:113:sp:1:113
+R	priest/discipline	12	239581	0	gear	65.9	sta:17:sta:0.62:10.54,int:17:int:0.4:6.8,spShadow:50:spShadow:0.87:43.5,armor:110:armor:0.046:5.06
+R	priest/discipline	12	249234	0	ranged	206.767	sp:7:sp:1:7,rdps:39.17:rdps:5.1:199.767
+R	priest/discipline	12	254033	0	gear	9.84	spDmg:6:sp:1:6,spi:8:spi:0.25:2,armor:40:armor:0.046:1.84
+R	priest/discipline	12	260820	0	gear	0.0	
+R	priest/discipline	12	271661	0	gear	0.092	armor:2:armor:0.046:0.092
+R	priest/discipline	12	272406	0	gear	16.4	int:14:int:0.4:5.6,hit:1:spellHit:1.8:1.8,sp:9:sp:1:9
+R	priest/discipline	12	273423	0	gear	35.07	int:10:int:0.4:4,sta:26:sta:0.62:16.12,spDmg:9:sp:1:9,spi:10:spi:0.25:2.5,armor:75:armor:0.046:3.45
+R	priest/discipline	12	274919	0	ranged	173.11499999999998	spShadow:7:spShadow:0.87:6.09,rdps:32.75:rdps:5.1:167.025
+R	priest/discipline	12	276888	0	mh	1.3	int:2:int:0.4:0.8,spi:2:spi:0.25:0.5
+R	priest/discipline	12	279826	0	gear	27.612000000000002	sta:13:sta:0.62:8.06,spi:10:spi:0.25:2.5,int:8:int:0.4:3.2,sp:11:sp:1:11,armor:62:armor:0.046:2.852
+R	priest/discipline	12	281315	0	gear	2.028	int:3:int:0.4:1.2,armor:18:armor:0.046:0.828
+R	priest/discipline	12	284197	0	gear	6.524	sta:8:sta:0.62:4.96,armor:34:armor:0.046:1.564
+R	priest/discipline	12	286997	0	gear	16.596	spi:17:spi:0.25:4.25,sp:10:sp:1:10,armor:51:armor:0.046:2.346
 R	priest/discipline	25	35	0	mh	0.0	
 R	priest/discipline	25	1299	0	gear	6.83	sta:4:sta:0.87:3.48,spi:3:spi:0.79:2.37,armor:20:armor:0.049:0.98
 R	priest/discipline	25	1831	0	mh	0.0	
@@ -3635,7 +3921,7 @@ R	priest/discipline	25	2364	0	gear	0.882	armor:18:armor:0.049:0.882
 R	priest/discipline	25	2955	0	gear	19.576999999999998	sta:11:sta:0.87:9.57,spi:10:spi:0.79:7.9,armor:43:armor:0.049:2.107
 R	priest/discipline	25	3423	0	oh	0.0	
 R	priest/discipline	25	3947	0	gear	1.47	armor:30:armor:0.049:1.47
-R	priest/discipline	25	4454	0	mh	1.58	spi:2:spi:0.79:1.58
+R	priest/discipline	25	4454	0	mh	2.37	spi:3:spi:0.79:2.37
 R	priest/discipline	25	4947	0	mh	0.0	
 R	priest/discipline	25	5393	0	mh	0.0	
 R	priest/discipline	25	6333	0	mh	1.74	sta:2:sta:0.87:1.74
@@ -3685,8 +3971,8 @@ R	priest/discipline	25	7355	12757	gear	0.931	armor:19:armor:0.049:0.931
 R	priest/discipline	25	7355	12758	gear	0.931	armor:19:armor:0.049:0.931
 R	priest/discipline	25	7355	12759	gear	0.931	armor:19:armor:0.049:0.931
 R	priest/discipline	25	7355	12761	gear	7.591	spShadow:9:spShadow:0.74:6.66,armor:19:armor:0.049:0.931
-R	priest/discipline	25	7757	0	mh	22.59	sta:7:sta:0.87:6.09,int:15:int:1.1:16.5
-R	priest/discipline	25	9491	0	gear	18.619	sta:5:sta:0.87:4.35,int:8:int:1.1:8.8,spi:5:spi:0.79:3.95,armor:31:armor:0.049:1.519
+R	priest/discipline	25	7757	0	mh	14.79	sta:17:sta:0.87:14.79
+R	priest/discipline	25	9491	0	gear	18.619	int:8:int:1.1:8.8,spi:5:spi:0.79:3.95,sta:5:sta:0.87:4.35,armor:31:armor:0.049:1.519
 R	priest/discipline	25	9875	0	gear	1.421	armor:29:armor:0.049:1.421
 R	priest/discipline	25	9875	12718	gear	17.181	int:8:int:1.1:8.8,sta:8:sta:0.87:6.96,armor:29:armor:0.049:1.421
 R	priest/discipline	25	9875	12719	gear	14.701	spi:8:spi:0.79:6.32,sta:8:sta:0.87:6.96,armor:29:armor:0.049:1.421
@@ -3739,174 +4025,196 @@ R	priest/discipline	25	10102	12759	gear	3.724	armor:76:armor:0.049:3.724
 R	priest/discipline	25	10102	12761	gear	31.104	spShadow:37:spShadow:0.74:27.38,armor:76:armor:0.049:3.724
 R	priest/discipline	25	10645	0	gear	0.0	
 R	priest/discipline	25	11288	0	ranged	100.0	sp:2:sp:1:2,rdps:17.5:rdps:5.6:98
-R	priest/discipline	25	11808	0	gear	21.026	sta:20:sta:0.87:17.4,armor:74:armor:0.049:3.626
-R	priest/discipline	25	12015	0	gear	0.0	
-R	priest/discipline	25	12015	12718	gear	17.73	int:9:int:1.1:9.9,sta:9:sta:0.87:7.83
-R	priest/discipline	25	12015	12719	gear	14.940000000000001	spi:9:spi:0.79:7.11,sta:9:sta:0.87:7.83
-R	priest/discipline	25	12015	12720	gear	17.01	int:9:int:1.1:9.9,spi:9:spi:0.79:7.11
-R	priest/discipline	25	12015	12721	gear	7.83	sta:9:sta:0.87:7.83
-R	priest/discipline	25	12015	12722	gear	7.83	sta:9:sta:0.87:7.83
-R	priest/discipline	25	12015	12723	gear	9.9	int:9:int:1.1:9.9
-R	priest/discipline	25	12015	12724	gear	9.9	int:9:int:1.1:9.9
-R	priest/discipline	25	12015	12725	gear	7.11	spi:9:spi:0.79:7.11
-R	priest/discipline	25	12015	12726	gear	7.11	spi:9:spi:0.79:7.11
-R	priest/discipline	25	12015	12727	gear	0.0	
-R	priest/discipline	25	12015	12728	gear	0.0	
-R	priest/discipline	25	12015	12729	gear	15.400000000000002	int:14:int:1.1:15.4
-R	priest/discipline	25	12015	12730	gear	11.06	spi:14:spi:0.79:11.06
-R	priest/discipline	25	12015	12731	gear	12.18	sta:14:sta:0.87:12.18
-R	priest/discipline	25	12015	12732	gear	0.0	
-R	priest/discipline	25	12015	12733	gear	0.0	
-R	priest/discipline	25	12015	12737	gear	0.0	
-R	priest/discipline	25	12015	12738	gear	7.199999999999999	mp5:6:mp5:1.2:7.2
-R	priest/discipline	25	12015	12739	gear	0.0	
-R	priest/discipline	25	12015	12740	gear	7.83	sta:9:sta:0.87:7.83
-R	priest/discipline	25	12015	12741	gear	7.83	sta:9:sta:0.87:7.83
-R	priest/discipline	25	12015	12742	gear	7.83	sta:9:sta:0.87:7.83
-R	priest/discipline	25	12015	12743	gear	7.83	sta:9:sta:0.87:7.83
-R	priest/discipline	25	12015	12744	gear	7.83	sta:9:sta:0.87:7.83
-R	priest/discipline	25	12015	12745	gear	21.22	int:10:int:1.1:11,sta:6:sta:0.87:5.22,sp:5:sp:1:5
-R	priest/discipline	25	12015	12746	gear	20.740000000000002	int:10:int:1.1:11,spi:6:spi:0.79:4.74,sp:5:sp:1:5
-R	priest/discipline	25	12015	12747	gear	18.439999999999998	spi:6:spi:0.79:4.74,sta:10:sta:0.87:8.7,sp:5:sp:1:5
-R	priest/discipline	25	12015	12748	gear	18.3	int:6:int:1.1:6.6,sta:10:sta:0.87:8.7,spDmg:3:sp:1:3
-R	priest/discipline	25	12015	12749	gear	18.740000000000002	int:10:int:1.1:11,spi:6:spi:0.79:4.74,spDmg:3:sp:1:3
-R	priest/discipline	25	12015	12750	gear	16.439999999999998	spi:6:spi:0.79:4.74,sta:10:sta:0.87:8.7,spDmg:3:sp:1:3
-R	priest/discipline	25	12015	12751	gear	8.7	sta:10:sta:0.87:8.7
-R	priest/discipline	25	12015	12752	gear	8.7	sta:10:sta:0.87:8.7
-R	priest/discipline	25	12015	12753	gear	8.7	sta:10:sta:0.87:8.7
-R	priest/discipline	25	12015	12754	gear	13.7	sp:5:sp:1:5,sta:10:sta:0.87:8.7
-R	priest/discipline	25	12015	12755	gear	13.7	sp:5:sp:1:5,sta:10:sta:0.87:8.7
-R	priest/discipline	25	12805	0	gear	0.0	
-R	priest/discipline	25	13360	0	mh	20.09	sta:5:sta:0.87:4.35,int:10:int:1.1:11,spi:6:spi:0.79:4.74
-R	priest/discipline	25	14108	0	gear	11.979000000000001	spi:12:spi:0.79:9.48,armor:51:armor:0.049:2.499
-R	priest/discipline	25	14213	0	gear	2.4010000000000002	armor:49:armor:0.049:2.401
-R	priest/discipline	25	14213	12718	gear	22.101	int:10:int:1.1:11,sta:10:sta:0.87:8.7,armor:49:armor:0.049:2.401
-R	priest/discipline	25	14213	12719	gear	19.001	spi:10:spi:0.79:7.9,sta:10:sta:0.87:8.7,armor:49:armor:0.049:2.401
-R	priest/discipline	25	14213	12720	gear	21.301	int:10:int:1.1:11,spi:10:spi:0.79:7.9,armor:49:armor:0.049:2.401
-R	priest/discipline	25	14213	12729	gear	18.901	int:15:int:1.1:16.5,armor:49:armor:0.049:2.401
-R	priest/discipline	25	14213	12730	gear	14.251000000000001	spi:15:spi:0.79:11.85,armor:49:armor:0.049:2.401
-R	priest/discipline	25	14213	12731	gear	15.451	sta:15:sta:0.87:13.05,armor:49:armor:0.049:2.401
-R	priest/discipline	25	14213	12734	gear	20.401	sp:18:sp:1:18,armor:49:armor:0.049:2.401
-R	priest/discipline	25	14213	12735	gear	13.401	spDmg:11:sp:1:11,armor:49:armor:0.049:2.401
-R	priest/discipline	25	14213	12740	gear	11.100999999999999	sta:10:sta:0.87:8.7,armor:49:armor:0.049:2.401
-R	priest/discipline	25	14213	12741	gear	11.100999999999999	sta:10:sta:0.87:8.7,armor:49:armor:0.049:2.401
-R	priest/discipline	25	14213	12742	gear	11.100999999999999	sta:10:sta:0.87:8.7,armor:49:armor:0.049:2.401
-R	priest/discipline	25	14213	12743	gear	11.100999999999999	sta:10:sta:0.87:8.7,armor:49:armor:0.049:2.401
-R	priest/discipline	25	14213	12744	gear	11.100999999999999	sta:10:sta:0.87:8.7,armor:49:armor:0.049:2.401
-R	priest/discipline	25	14213	12745	gear	25.721	int:11:int:1.1:12.1,sta:6:sta:0.87:5.22,sp:6:sp:1:6,armor:49:armor:0.049:2.401
-R	priest/discipline	25	14213	12746	gear	25.241000000000003	int:11:int:1.1:12.1,spi:6:spi:0.79:4.74,sp:6:sp:1:6,armor:49:armor:0.049:2.401
-R	priest/discipline	25	14213	12747	gear	22.711000000000002	spi:6:spi:0.79:4.74,sta:11:sta:0.87:9.57,sp:6:sp:1:6,armor:49:armor:0.049:2.401
-R	priest/discipline	25	14213	12748	gear	22.571	int:6:int:1.1:6.6,sta:11:sta:0.87:9.57,spDmg:4:sp:1:4,armor:49:armor:0.049:2.401
-R	priest/discipline	25	14213	12749	gear	23.241000000000003	int:11:int:1.1:12.1,spi:6:spi:0.79:4.74,spDmg:4:sp:1:4,armor:49:armor:0.049:2.401
-R	priest/discipline	25	14213	12750	gear	20.711000000000002	spi:6:spi:0.79:4.74,sta:11:sta:0.87:9.57,spDmg:4:sp:1:4,armor:49:armor:0.049:2.401
-R	priest/discipline	25	14213	12756	gear	2.4010000000000002	armor:49:armor:0.049:2.401
-R	priest/discipline	25	14213	12757	gear	2.4010000000000002	armor:49:armor:0.049:2.401
-R	priest/discipline	25	14213	12758	gear	2.4010000000000002	armor:49:armor:0.049:2.401
-R	priest/discipline	25	14213	12759	gear	2.4010000000000002	armor:49:armor:0.049:2.401
-R	priest/discipline	25	14213	12761	gear	17.941	spShadow:21:spShadow:0.74:15.54,armor:49:armor:0.049:2.401
-R	priest/discipline	25	14312	0	gear	3.136	armor:64:armor:0.049:3.136
-R	priest/discipline	25	14312	12718	gear	38.596000000000004	int:18:int:1.1:19.8,sta:18:sta:0.87:15.66,armor:64:armor:0.049:3.136
-R	priest/discipline	25	14312	12719	gear	33.016000000000005	spi:18:spi:0.79:14.22,sta:18:sta:0.87:15.66,armor:64:armor:0.049:3.136
-R	priest/discipline	25	14312	12720	gear	37.156000000000006	int:18:int:1.1:19.8,spi:18:spi:0.79:14.22,armor:64:armor:0.049:3.136
-R	priest/discipline	25	14312	12729	gear	32.836000000000006	int:27:int:1.1:29.7,armor:64:armor:0.049:3.136
-R	priest/discipline	25	14312	12730	gear	24.466	spi:27:spi:0.79:21.33,armor:64:armor:0.049:3.136
-R	priest/discipline	25	14312	12731	gear	26.625999999999998	sta:27:sta:0.87:23.49,armor:64:armor:0.049:3.136
-R	priest/discipline	25	14312	12734	gear	35.136	sp:32:sp:1:32,armor:64:armor:0.049:3.136
-R	priest/discipline	25	14312	12735	gear	23.136	spDmg:20:sp:1:20,armor:64:armor:0.049:3.136
-R	priest/discipline	25	14312	12740	gear	18.796	sta:18:sta:0.87:15.66,armor:64:armor:0.049:3.136
-R	priest/discipline	25	14312	12741	gear	18.796	sta:18:sta:0.87:15.66,armor:64:armor:0.049:3.136
-R	priest/discipline	25	14312	12742	gear	18.796	sta:18:sta:0.87:15.66,armor:64:armor:0.049:3.136
-R	priest/discipline	25	14312	12743	gear	18.796	sta:18:sta:0.87:15.66,armor:64:armor:0.049:3.136
-R	priest/discipline	25	14312	12744	gear	18.796	sta:18:sta:0.87:15.66,armor:64:armor:0.049:3.136
-R	priest/discipline	25	14312	12745	gear	44.706	int:20:int:1.1:22,sta:11:sta:0.87:9.57,sp:10:sp:1:10,armor:64:armor:0.049:3.136
-R	priest/discipline	25	14312	12746	gear	43.826	int:20:int:1.1:22,spi:11:spi:0.79:8.69,sp:10:sp:1:10,armor:64:armor:0.049:3.136
-R	priest/discipline	25	14312	12747	gear	39.226000000000006	spi:11:spi:0.79:8.69,sta:20:sta:0.87:17.4,sp:10:sp:1:10,armor:64:armor:0.049:3.136
-R	priest/discipline	25	14312	12748	gear	38.636	int:11:int:1.1:12.1,sta:20:sta:0.87:17.4,spDmg:6:sp:1:6,armor:64:armor:0.049:3.136
-R	priest/discipline	25	14312	12749	gear	39.826	int:20:int:1.1:22,spi:11:spi:0.79:8.69,spDmg:6:sp:1:6,armor:64:armor:0.049:3.136
-R	priest/discipline	25	14312	12750	gear	35.226000000000006	spi:11:spi:0.79:8.69,sta:20:sta:0.87:17.4,spDmg:6:sp:1:6,armor:64:armor:0.049:3.136
-R	priest/discipline	25	14312	12756	gear	3.136	armor:64:armor:0.049:3.136
-R	priest/discipline	25	14312	12757	gear	3.136	armor:64:armor:0.049:3.136
-R	priest/discipline	25	14312	12758	gear	3.136	armor:64:armor:0.049:3.136
-R	priest/discipline	25	14312	12759	gear	3.136	armor:64:armor:0.049:3.136
-R	priest/discipline	25	14312	12761	gear	31.996	spShadow:39:spShadow:0.74:28.86,armor:64:armor:0.049:3.136
-R	priest/discipline	25	14440	0	gear	11.430000000000001	sta:6:sta:0.87:5.22,spi:6:spi:0.79:4.74,armor:30:armor:0.049:1.47
-R	priest/discipline	25	15299	0	gear	0.441	armor:9:armor:0.049:0.441
-R	priest/discipline	25	15939	0	oh	0.0	
-R	priest/discipline	25	15939	12718	oh	17.73	int:9:int:1.1:9.9,sta:9:sta:0.87:7.83
-R	priest/discipline	25	15939	12719	oh	14.940000000000001	spi:9:spi:0.79:7.11,sta:9:sta:0.87:7.83
-R	priest/discipline	25	15939	12720	oh	17.01	int:9:int:1.1:9.9,spi:9:spi:0.79:7.11
-R	priest/discipline	25	15939	12721	oh	7.83	sta:9:sta:0.87:7.83
-R	priest/discipline	25	15939	12722	oh	7.83	sta:9:sta:0.87:7.83
-R	priest/discipline	25	15939	12723	oh	9.9	int:9:int:1.1:9.9
-R	priest/discipline	25	15939	12724	oh	9.9	int:9:int:1.1:9.9
-R	priest/discipline	25	15939	12725	oh	7.11	spi:9:spi:0.79:7.11
-R	priest/discipline	25	15939	12726	oh	7.11	spi:9:spi:0.79:7.11
-R	priest/discipline	25	15939	12727	oh	0.0	
-R	priest/discipline	25	15939	12728	oh	0.0	
-R	priest/discipline	25	15939	12729	oh	15.400000000000002	int:14:int:1.1:15.4
-R	priest/discipline	25	15939	12730	oh	11.06	spi:14:spi:0.79:11.06
-R	priest/discipline	25	15939	12731	oh	12.18	sta:14:sta:0.87:12.18
-R	priest/discipline	25	15939	12732	oh	0.0	
-R	priest/discipline	25	15939	12733	oh	0.0	
-R	priest/discipline	25	15939	12734	oh	16.0	sp:16:sp:1:16
-R	priest/discipline	25	15939	12735	oh	10.0	spDmg:10:sp:1:10
-R	priest/discipline	25	15939	12740	oh	7.83	sta:9:sta:0.87:7.83
-R	priest/discipline	25	15939	12741	oh	7.83	sta:9:sta:0.87:7.83
-R	priest/discipline	25	15939	12742	oh	7.83	sta:9:sta:0.87:7.83
-R	priest/discipline	25	15939	12743	oh	7.83	sta:9:sta:0.87:7.83
-R	priest/discipline	25	15939	12744	oh	7.83	sta:9:sta:0.87:7.83
-R	priest/discipline	25	15939	12745	oh	21.22	int:10:int:1.1:11,sta:6:sta:0.87:5.22,sp:5:sp:1:5
-R	priest/discipline	25	15939	12746	oh	20.740000000000002	int:10:int:1.1:11,spi:6:spi:0.79:4.74,sp:5:sp:1:5
-R	priest/discipline	25	15939	12747	oh	18.439999999999998	spi:6:spi:0.79:4.74,sta:10:sta:0.87:8.7,sp:5:sp:1:5
-R	priest/discipline	25	15939	12748	oh	18.3	int:6:int:1.1:6.6,sta:10:sta:0.87:8.7,spDmg:3:sp:1:3
-R	priest/discipline	25	15939	12749	oh	18.740000000000002	int:10:int:1.1:11,spi:6:spi:0.79:4.74,spDmg:3:sp:1:3
-R	priest/discipline	25	15939	12750	oh	16.439999999999998	spi:6:spi:0.79:4.74,sta:10:sta:0.87:8.7,spDmg:3:sp:1:3
-R	priest/discipline	25	15939	12756	oh	0.0	
-R	priest/discipline	25	15939	12757	oh	0.0	
-R	priest/discipline	25	15939	12758	oh	0.0	
-R	priest/discipline	25	15939	12759	oh	0.0	
-R	priest/discipline	25	15939	12760	oh	0.0	
-R	priest/discipline	25	15939	12761	oh	14.8	spShadow:20:spShadow:0.74:14.8
+R	priest/discipline	25	11807	0	gear	29.854000000000003	spi:10:spi:0.79:7.9,sta:10:sta:0.87:8.7,int:10:int:1.1:11,armor:46:armor:0.049:2.254
+R	priest/discipline	25	12014	0	gear	0.0	
+R	priest/discipline	25	12014	12718	gear	17.73	int:9:int:1.1:9.9,sta:9:sta:0.87:7.83
+R	priest/discipline	25	12014	12719	gear	14.940000000000001	spi:9:spi:0.79:7.11,sta:9:sta:0.87:7.83
+R	priest/discipline	25	12014	12720	gear	17.01	int:9:int:1.1:9.9,spi:9:spi:0.79:7.11
+R	priest/discipline	25	12014	12721	gear	7.83	sta:9:sta:0.87:7.83
+R	priest/discipline	25	12014	12722	gear	7.83	sta:9:sta:0.87:7.83
+R	priest/discipline	25	12014	12723	gear	9.9	int:9:int:1.1:9.9
+R	priest/discipline	25	12014	12724	gear	9.9	int:9:int:1.1:9.9
+R	priest/discipline	25	12014	12725	gear	7.11	spi:9:spi:0.79:7.11
+R	priest/discipline	25	12014	12726	gear	7.11	spi:9:spi:0.79:7.11
+R	priest/discipline	25	12014	12727	gear	0.0	
+R	priest/discipline	25	12014	12728	gear	0.0	
+R	priest/discipline	25	12014	12729	gear	14.3	int:13:int:1.1:14.3
+R	priest/discipline	25	12014	12730	gear	10.27	spi:13:spi:0.79:10.27
+R	priest/discipline	25	12014	12731	gear	11.31	sta:13:sta:0.87:11.31
+R	priest/discipline	25	12014	12732	gear	0.0	
+R	priest/discipline	25	12014	12733	gear	0.0	
+R	priest/discipline	25	12014	12737	gear	0.0	
+R	priest/discipline	25	12014	12738	gear	6.0	mp5:5:mp5:1.2:6
+R	priest/discipline	25	12014	12739	gear	0.0	
+R	priest/discipline	25	12014	12740	gear	7.83	sta:9:sta:0.87:7.83
+R	priest/discipline	25	12014	12741	gear	7.83	sta:9:sta:0.87:7.83
+R	priest/discipline	25	12014	12742	gear	7.83	sta:9:sta:0.87:7.83
+R	priest/discipline	25	12014	12743	gear	7.83	sta:9:sta:0.87:7.83
+R	priest/discipline	25	12014	12744	gear	7.83	sta:9:sta:0.87:7.83
+R	priest/discipline	25	12014	12745	gear	19.25	int:9:int:1.1:9.9,sta:5:sta:0.87:4.35,sp:5:sp:1:5
+R	priest/discipline	25	12014	12746	gear	18.85	int:9:int:1.1:9.9,spi:5:spi:0.79:3.95,sp:5:sp:1:5
+R	priest/discipline	25	12014	12747	gear	16.78	spi:5:spi:0.79:3.95,sta:9:sta:0.87:7.83,sp:5:sp:1:5
+R	priest/discipline	25	12014	12748	gear	16.33	int:5:int:1.1:5.5,sta:9:sta:0.87:7.83,spDmg:3:sp:1:3
+R	priest/discipline	25	12014	12749	gear	16.85	int:9:int:1.1:9.9,spi:5:spi:0.79:3.95,spDmg:3:sp:1:3
+R	priest/discipline	25	12014	12750	gear	14.780000000000001	spi:5:spi:0.79:3.95,sta:9:sta:0.87:7.83,spDmg:3:sp:1:3
+R	priest/discipline	25	12014	12751	gear	7.83	sta:9:sta:0.87:7.83
+R	priest/discipline	25	12014	12752	gear	7.83	sta:9:sta:0.87:7.83
+R	priest/discipline	25	12014	12753	gear	7.83	sta:9:sta:0.87:7.83
+R	priest/discipline	25	12014	12754	gear	12.83	sp:5:sp:1:5,sta:9:sta:0.87:7.83
+R	priest/discipline	25	12014	12755	gear	13.7	sp:5:sp:1:5,sta:10:sta:0.87:8.7
+R	priest/discipline	25	12794	0	mh	0.0	
+R	priest/discipline	25	13353	0	oh	43.2	spi:10:spi:0.79:7.9,int:15:int:1.1:16.5,sta:8:sta:0.87:6.96,spShadow:16:spShadow:0.74:11.84
+R	priest/discipline	25	14107	0	gear	35.477999999999994	int:12:int:1.1:13.2,spShadow:26:spShadow:0.74:19.24,armor:62:armor:0.049:3.038
+R	priest/discipline	25	14212	0	gear	1.715	armor:35:armor:0.049:1.715
+R	priest/discipline	25	14212	12718	gear	15.505	int:7:int:1.1:7.7,sta:7:sta:0.87:6.09,armor:35:armor:0.049:1.715
+R	priest/discipline	25	14212	12719	gear	13.335	spi:7:spi:0.79:5.53,sta:7:sta:0.87:6.09,armor:35:armor:0.049:1.715
+R	priest/discipline	25	14212	12720	gear	14.945	int:7:int:1.1:7.7,spi:7:spi:0.79:5.53,armor:35:armor:0.049:1.715
+R	priest/discipline	25	14212	12729	gear	12.715	int:10:int:1.1:11,armor:35:armor:0.049:1.715
+R	priest/discipline	25	14212	12730	gear	9.615	spi:10:spi:0.79:7.9,armor:35:armor:0.049:1.715
+R	priest/discipline	25	14212	12731	gear	10.415	sta:10:sta:0.87:8.7,armor:35:armor:0.049:1.715
+R	priest/discipline	25	14212	12734	gear	13.715	sp:12:sp:1:12,armor:35:armor:0.049:1.715
+R	priest/discipline	25	14212	12735	gear	8.715	spDmg:7:sp:1:7,armor:35:armor:0.049:1.715
+R	priest/discipline	25	14212	12740	gear	7.805	sta:7:sta:0.87:6.09,armor:35:armor:0.049:1.715
+R	priest/discipline	25	14212	12741	gear	7.805	sta:7:sta:0.87:6.09,armor:35:armor:0.049:1.715
+R	priest/discipline	25	14212	12742	gear	7.805	sta:7:sta:0.87:6.09,armor:35:armor:0.049:1.715
+R	priest/discipline	25	14212	12743	gear	7.805	sta:7:sta:0.87:6.09,armor:35:armor:0.049:1.715
+R	priest/discipline	25	14212	12744	gear	7.805	sta:7:sta:0.87:6.09,armor:35:armor:0.049:1.715
+R	priest/discipline	25	14212	12745	gear	16.895000000000003	int:7:int:1.1:7.7,sta:4:sta:0.87:3.48,sp:4:sp:1:4,armor:35:armor:0.049:1.715
+R	priest/discipline	25	14212	12746	gear	16.575000000000003	int:7:int:1.1:7.7,spi:4:spi:0.79:3.16,sp:4:sp:1:4,armor:35:armor:0.049:1.715
+R	priest/discipline	25	14212	12747	gear	14.965	spi:4:spi:0.79:3.16,sta:7:sta:0.87:6.09,sp:4:sp:1:4,armor:35:armor:0.049:1.715
+R	priest/discipline	25	14212	12748	gear	14.205	int:4:int:1.1:4.4,sta:7:sta:0.87:6.09,spDmg:2:sp:1:2,armor:35:armor:0.049:1.715
+R	priest/discipline	25	14212	12749	gear	14.575000000000001	int:7:int:1.1:7.7,spi:4:spi:0.79:3.16,spDmg:2:sp:1:2,armor:35:armor:0.049:1.715
+R	priest/discipline	25	14212	12750	gear	12.965	spi:4:spi:0.79:3.16,sta:7:sta:0.87:6.09,spDmg:2:sp:1:2,armor:35:armor:0.049:1.715
+R	priest/discipline	25	14212	12756	gear	1.715	armor:35:armor:0.049:1.715
+R	priest/discipline	25	14212	12757	gear	1.715	armor:35:armor:0.049:1.715
+R	priest/discipline	25	14212	12758	gear	1.715	armor:35:armor:0.049:1.715
+R	priest/discipline	25	14212	12759	gear	1.715	armor:35:armor:0.049:1.715
+R	priest/discipline	25	14212	12761	gear	12.075	spShadow:14:spShadow:0.74:10.36,armor:35:armor:0.049:1.715
+R	priest/discipline	25	14311	0	gear	1.5190000000000001	armor:31:armor:0.049:1.519
+R	priest/discipline	25	14311	12718	gear	19.249000000000002	int:9:int:1.1:9.9,sta:9:sta:0.87:7.83,armor:31:armor:0.049:1.519
+R	priest/discipline	25	14311	12719	gear	16.459000000000003	spi:9:spi:0.79:7.11,sta:9:sta:0.87:7.83,armor:31:armor:0.049:1.519
+R	priest/discipline	25	14311	12720	gear	18.529000000000003	int:9:int:1.1:9.9,spi:9:spi:0.79:7.11,armor:31:armor:0.049:1.519
+R	priest/discipline	25	14311	12729	gear	15.819	int:13:int:1.1:14.3,armor:31:armor:0.049:1.519
+R	priest/discipline	25	14311	12730	gear	11.789	spi:13:spi:0.79:10.27,armor:31:armor:0.049:1.519
+R	priest/discipline	25	14311	12731	gear	12.829	sta:13:sta:0.87:11.31,armor:31:armor:0.049:1.519
+R	priest/discipline	25	14311	12734	gear	16.519	sp:15:sp:1:15,armor:31:armor:0.049:1.519
+R	priest/discipline	25	14311	12735	gear	11.519	spDmg:10:sp:1:10,armor:31:armor:0.049:1.519
+R	priest/discipline	25	14311	12740	gear	9.349	sta:9:sta:0.87:7.83,armor:31:armor:0.049:1.519
+R	priest/discipline	25	14311	12741	gear	9.349	sta:9:sta:0.87:7.83,armor:31:armor:0.049:1.519
+R	priest/discipline	25	14311	12742	gear	9.349	sta:9:sta:0.87:7.83,armor:31:armor:0.049:1.519
+R	priest/discipline	25	14311	12743	gear	9.349	sta:9:sta:0.87:7.83,armor:31:armor:0.049:1.519
+R	priest/discipline	25	14311	12744	gear	9.349	sta:9:sta:0.87:7.83,armor:31:armor:0.049:1.519
+R	priest/discipline	25	14311	12745	gear	20.769	int:9:int:1.1:9.9,sta:5:sta:0.87:4.35,sp:5:sp:1:5,armor:31:armor:0.049:1.519
+R	priest/discipline	25	14311	12746	gear	20.369	int:9:int:1.1:9.9,spi:5:spi:0.79:3.95,sp:5:sp:1:5,armor:31:armor:0.049:1.519
+R	priest/discipline	25	14311	12747	gear	18.299	spi:5:spi:0.79:3.95,sta:9:sta:0.87:7.83,sp:5:sp:1:5,armor:31:armor:0.049:1.519
+R	priest/discipline	25	14311	12748	gear	17.848999999999997	int:5:int:1.1:5.5,sta:9:sta:0.87:7.83,spDmg:3:sp:1:3,armor:31:armor:0.049:1.519
+R	priest/discipline	25	14311	12749	gear	18.369	int:9:int:1.1:9.9,spi:5:spi:0.79:3.95,spDmg:3:sp:1:3,armor:31:armor:0.049:1.519
+R	priest/discipline	25	14311	12750	gear	16.299	spi:5:spi:0.79:3.95,sta:9:sta:0.87:7.83,spDmg:3:sp:1:3,armor:31:armor:0.049:1.519
+R	priest/discipline	25	14311	12756	gear	1.5190000000000001	armor:31:armor:0.049:1.519
+R	priest/discipline	25	14311	12757	gear	1.5190000000000001	armor:31:armor:0.049:1.519
+R	priest/discipline	25	14311	12758	gear	1.5190000000000001	armor:31:armor:0.049:1.519
+R	priest/discipline	25	14311	12759	gear	1.5190000000000001	armor:31:armor:0.049:1.519
+R	priest/discipline	25	14311	12761	gear	15.579	spShadow:19:spShadow:0.74:14.06,armor:31:armor:0.049:1.519
+R	priest/discipline	25	14439	0	gear	12.043000000000001	spi:8:spi:0.79:6.32,int:4:int:1.1:4.4,armor:27:armor:0.049:1.323
+R	priest/discipline	25	15283	0	ranged	317.856	rdps:56.76:rdps:5.6:317.856
+R	priest/discipline	25	15283	12718	ranged	329.676	int:6:int:1.1:6.6,sta:6:sta:0.87:5.22,rdps:56.76:rdps:5.6:317.856
+R	priest/discipline	25	15283	12719	ranged	327.816	spi:6:spi:0.79:4.74,sta:6:sta:0.87:5.22,rdps:56.76:rdps:5.6:317.856
+R	priest/discipline	25	15283	12720	ranged	329.19599999999997	int:6:int:1.1:6.6,spi:6:spi:0.79:4.74,rdps:56.76:rdps:5.6:317.856
+R	priest/discipline	25	15283	12729	ranged	327.756	int:9:int:1.1:9.9,rdps:56.76:rdps:5.6:317.856
+R	priest/discipline	25	15283	12730	ranged	324.966	spi:9:spi:0.79:7.11,rdps:56.76:rdps:5.6:317.856
+R	priest/discipline	25	15283	12731	ranged	325.686	sta:9:sta:0.87:7.83,rdps:56.76:rdps:5.6:317.856
+R	priest/discipline	25	15283	12734	ranged	328.856	sp:11:sp:1:11,rdps:56.76:rdps:5.6:317.856
+R	priest/discipline	25	15283	12735	ranged	324.856	spDmg:7:sp:1:7,rdps:56.76:rdps:5.6:317.856
+R	priest/discipline	25	15283	12740	ranged	323.076	sta:6:sta:0.87:5.22,rdps:56.76:rdps:5.6:317.856
+R	priest/discipline	25	15283	12741	ranged	323.076	sta:6:sta:0.87:5.22,rdps:56.76:rdps:5.6:317.856
+R	priest/discipline	25	15283	12742	ranged	323.076	sta:6:sta:0.87:5.22,rdps:56.76:rdps:5.6:317.856
+R	priest/discipline	25	15283	12743	ranged	323.076	sta:6:sta:0.87:5.22,rdps:56.76:rdps:5.6:317.856
+R	priest/discipline	25	15283	12744	ranged	323.076	sta:6:sta:0.87:5.22,rdps:56.76:rdps:5.6:317.856
+R	priest/discipline	25	15283	12745	ranged	332.036	int:7:int:1.1:7.7,sta:4:sta:0.87:3.48,sp:3:sp:1:3,rdps:56.76:rdps:5.6:317.856
+R	priest/discipline	25	15283	12746	ranged	331.716	int:7:int:1.1:7.7,spi:4:spi:0.79:3.16,sp:3:sp:1:3,rdps:56.76:rdps:5.6:317.856
+R	priest/discipline	25	15283	12747	ranged	330.106	spi:4:spi:0.79:3.16,sta:7:sta:0.87:6.09,sp:3:sp:1:3,rdps:56.76:rdps:5.6:317.856
+R	priest/discipline	25	15283	12748	ranged	330.346	int:4:int:1.1:4.4,sta:7:sta:0.87:6.09,spDmg:2:sp:1:2,rdps:56.76:rdps:5.6:317.856
+R	priest/discipline	25	15283	12749	ranged	330.716	int:7:int:1.1:7.7,spi:4:spi:0.79:3.16,spDmg:2:sp:1:2,rdps:56.76:rdps:5.6:317.856
+R	priest/discipline	25	15283	12750	ranged	329.106	spi:4:spi:0.79:3.16,sta:7:sta:0.87:6.09,spDmg:2:sp:1:2,rdps:56.76:rdps:5.6:317.856
+R	priest/discipline	25	15283	12756	ranged	317.856	rdps:56.76:rdps:5.6:317.856
+R	priest/discipline	25	15283	12757	ranged	317.856	rdps:56.76:rdps:5.6:317.856
+R	priest/discipline	25	15283	12758	ranged	317.856	rdps:56.76:rdps:5.6:317.856
+R	priest/discipline	25	15283	12759	ranged	317.856	rdps:56.76:rdps:5.6:317.856
+R	priest/discipline	25	15283	12761	ranged	327.476	spShadow:13:spShadow:0.74:9.62,rdps:56.76:rdps:5.6:317.856
+R	priest/discipline	25	15938	0	oh	0.0	
+R	priest/discipline	25	15938	12718	oh	17.73	int:9:int:1.1:9.9,sta:9:sta:0.87:7.83
+R	priest/discipline	25	15938	12719	oh	14.940000000000001	spi:9:spi:0.79:7.11,sta:9:sta:0.87:7.83
+R	priest/discipline	25	15938	12720	oh	17.01	int:9:int:1.1:9.9,spi:9:spi:0.79:7.11
+R	priest/discipline	25	15938	12721	oh	7.83	sta:9:sta:0.87:7.83
+R	priest/discipline	25	15938	12722	oh	7.83	sta:9:sta:0.87:7.83
+R	priest/discipline	25	15938	12723	oh	9.9	int:9:int:1.1:9.9
+R	priest/discipline	25	15938	12724	oh	9.9	int:9:int:1.1:9.9
+R	priest/discipline	25	15938	12725	oh	7.11	spi:9:spi:0.79:7.11
+R	priest/discipline	25	15938	12726	oh	7.11	spi:9:spi:0.79:7.11
+R	priest/discipline	25	15938	12727	oh	0.0	
+R	priest/discipline	25	15938	12728	oh	0.0	
+R	priest/discipline	25	15938	12729	oh	15.400000000000002	int:14:int:1.1:15.4
+R	priest/discipline	25	15938	12730	oh	11.06	spi:14:spi:0.79:11.06
+R	priest/discipline	25	15938	12731	oh	12.18	sta:14:sta:0.87:12.18
+R	priest/discipline	25	15938	12732	oh	0.0	
+R	priest/discipline	25	15938	12733	oh	0.0	
+R	priest/discipline	25	15938	12734	oh	16.0	sp:16:sp:1:16
+R	priest/discipline	25	15938	12735	oh	10.0	spDmg:10:sp:1:10
+R	priest/discipline	25	15938	12740	oh	7.83	sta:9:sta:0.87:7.83
+R	priest/discipline	25	15938	12741	oh	7.83	sta:9:sta:0.87:7.83
+R	priest/discipline	25	15938	12742	oh	7.83	sta:9:sta:0.87:7.83
+R	priest/discipline	25	15938	12743	oh	7.83	sta:9:sta:0.87:7.83
+R	priest/discipline	25	15938	12744	oh	7.83	sta:9:sta:0.87:7.83
+R	priest/discipline	25	15938	12745	oh	21.22	int:10:int:1.1:11,sta:6:sta:0.87:5.22,sp:5:sp:1:5
+R	priest/discipline	25	15938	12746	oh	20.740000000000002	int:10:int:1.1:11,spi:6:spi:0.79:4.74,sp:5:sp:1:5
+R	priest/discipline	25	15938	12747	oh	18.439999999999998	spi:6:spi:0.79:4.74,sta:10:sta:0.87:8.7,sp:5:sp:1:5
+R	priest/discipline	25	15938	12748	oh	18.3	int:6:int:1.1:6.6,sta:10:sta:0.87:8.7,spDmg:3:sp:1:3
+R	priest/discipline	25	15938	12749	oh	18.740000000000002	int:10:int:1.1:11,spi:6:spi:0.79:4.74,spDmg:3:sp:1:3
+R	priest/discipline	25	15938	12750	oh	16.439999999999998	spi:6:spi:0.79:4.74,sta:10:sta:0.87:8.7,spDmg:3:sp:1:3
+R	priest/discipline	25	15938	12756	oh	0.0	
+R	priest/discipline	25	15938	12757	oh	0.0	
+R	priest/discipline	25	15938	12758	oh	0.0	
+R	priest/discipline	25	15938	12759	oh	0.0	
+R	priest/discipline	25	15938	12760	oh	0.0	
+R	priest/discipline	25	15938	12761	oh	14.8	spShadow:20:spShadow:0.74:14.8
 R	priest/discipline	25	15945	0	oh	3.3200000000000003	sta:2:sta:0.87:1.74,spi:2:spi:0.79:1.58
-R	priest/discipline	25	16819	0	gear	34.816	sta:8:sta:0.87:6.96,int:14:int:1.1:15.4,spi:10:spi:0.79:7.9,mp5:2:mp5:1.2:2.4,armor:44:armor:0.049:2.156
-R	priest/discipline	25	17739	0	gear	12.253	sta:12:sta:0.87:10.44,armor:37:armor:0.049:1.813
-R	priest/discipline	25	18440	0	gear	11.064	sta:9:sta:0.87:7.83,armor:66:armor:0.049:3.234
-R	priest/discipline	25	18879	0	gear	22.79	sta:20:sta:0.87:17.4,armor:110:armor:0.049:5.39
-R	priest/discipline	25	19395	0	gear	10.799999999999999	mp5:9:mp5:1.2:10.8
-R	priest/discipline	25	19893	0	gear	33.5	sta:10:sta:0.87:8.7,int:10:int:1.1:11,spellHit:1:spellHit:2.8:2.8,sp:11:sp:1:11
-R	priest/discipline	25	20330	0	gear	55.178999999999995	int:27:int:1.1:29.7,spi:11:spi:0.79:8.69,sta:12:sta:0.87:10.44,crit:1:spellCrit:1.4:1.4,armor:101:armor:0.049:4.949
-R	priest/discipline	25	20652	0	gear	2.597	armor:53:armor:0.049:2.597
-R	priest/discipline	25	20652	12745	gear	33.057	int:15:int:1.1:16.5,sta:8:sta:0.87:6.96,sp:7:sp:1:7,armor:53:armor:0.049:2.597
-R	priest/discipline	25	20652	12746	gear	32.417	int:15:int:1.1:16.5,spi:8:spi:0.79:6.32,sp:7:sp:1:7,armor:53:armor:0.049:2.597
-R	priest/discipline	25	20652	12747	gear	28.967000000000002	spi:8:spi:0.79:6.32,sta:15:sta:0.87:13.05,sp:7:sp:1:7,armor:53:armor:0.049:2.597
-R	priest/discipline	25	20652	12748	gear	29.447000000000003	int:8:int:1.1:8.8,sta:15:sta:0.87:13.05,spDmg:5:sp:1:5,armor:53:armor:0.049:2.597
-R	priest/discipline	25	20652	12749	gear	30.417	int:15:int:1.1:16.5,spi:8:spi:0.79:6.32,spDmg:5:sp:1:5,armor:53:armor:0.049:2.597
-R	priest/discipline	25	20652	12750	gear	26.967000000000002	spi:8:spi:0.79:6.32,sta:15:sta:0.87:13.05,spDmg:5:sp:1:5,armor:53:armor:0.049:2.597
-R	priest/discipline	25	21500	0	gear	36.224	sta:14:sta:0.87:12.18,int:15:int:1.1:16.5,mp5:4:mp5:1.2:4.8,armor:56:armor:0.049:2.744
-R	priest/discipline	25	22085	0	gear	63.359	int:14:int:1.1:15.4,sta:13:sta:0.87:11.31,mp5:6:mp5:1.2:7.2,sp:16:sp:1:16,spi:12:spi:0.79:9.48,armor:81:armor:0.049:3.969
-R	priest/discipline	25	22678	0	gear	0.0	
-R	priest/discipline	25	23177	0	ranged	220.648	spShadow:10:spShadow:0.74:7.4,rdps:38.08:rdps:5.6:213.248
-R	priest/discipline	25	212583	0	mh	2.61	sta:3:sta:0.87:2.61
-R	priest/discipline	25	217296	0	gear	12.83	sta:9:sta:0.87:7.83,sp:5:sp:1:5
-R	priest/discipline	25	220907	0	gear	44.516	sta:13:sta:0.87:11.31,int:12:int:1.1:13.2,crit:1:spellCrit:1.4:1.4,sp:14:sp:1:14,armor:94:armor:0.049:4.606
-R	priest/discipline	25	226731	0	gear	41.738	sta:7:sta:0.87:6.09,int:11:int:1.1:12.1,sp:21:sp:1:21,armor:52:armor:0.049:2.548
-R	priest/discipline	25	227967	0	gear	0.0	
-R	priest/discipline	25	228282	0	gear	55.388999999999996	sta:20:sta:0.87:17.4,sp:35:sp:1:35,armor:61:armor:0.049:2.989
-R	priest/discipline	25	228757	0	mh	0.0	
-R	priest/discipline	25	231168	0	gear	78.39899999999999	sta:15:sta:0.87:13.05,int:20:int:1.1:22,crit:1:spellCrit:1.4:1.4,spShadow:50:spShadow:0.74:37,armor:101:armor:0.049:4.949
-R	priest/discipline	25	233395	0	gear	87.917	sta:14:sta:0.87:12.18,int:18:int:1.1:19.8,crit:2:spellCrit:1.4:2.8,spShadow:63:spShadow:0.74:46.62,armor:133:armor:0.049:6.517
-R	priest/discipline	25	233994	0	gear	44.2	int:18:int:1.1:19.8,crit:1:spellCrit:1.4:1.4,spDmg:23:sp:1:23
-R	priest/discipline	25	234576	0	mh	79.47	sta:21:sta:0.87:18.27,int:8:int:1.1:8.8,crit:1:spellCrit:1.4:1.4,spDmg:51:sp:1:51
-R	priest/discipline	25	236277	0	gear	34.97	sta:8:sta:0.87:6.96,int:9:int:1.1:9.9,spi:9:spi:0.79:7.11,spDmg:11:sp:1:11
-R	priest/discipline	25	239565	0	gear	97.944	sta:15:sta:0.87:13.05,int:17:int:1.1:18.7,crit:2:spellCrit:1.4:2.8,spShadow:76:spShadow:0.74:56.24,armor:146:armor:0.049:7.154
-R	priest/discipline	25	247789	0	ranged	22.4	rdps:4:rdps:5.6:22.4
-R	priest/discipline	25	254029	0	gear	17.294	int:7:int:1.1:7.7,sta:9:sta:0.87:7.83,armor:36:armor:0.049:1.764
-R	priest/discipline	25	260829	0	gear	2.156	armor:44:armor:0.049:2.156
-R	priest/discipline	25	271909	0	gear	12.18	sta:14:sta:0.87:12.18
-R	priest/discipline	25	272847	0	mh	3.1399999999999997	sta:2:sta:0.87:1.74,crit:1:spellCrit:1.4:1.4
-R	priest/discipline	25	275831	0	gear	5.5	int:5:int:1.1:5.5
-R	priest/discipline	25	278019	0	gear	9.219999999999999	sta:6:sta:0.87:5.22,sp:4:sp:1:4
-R	priest/discipline	25	288931	0	gear	16.0	sp:16:sp:1:16
+R	priest/discipline	25	16817	0	gear	57.393	sta:10:sta:0.87:8.7,int:22:int:1.1:24.2,spi:10:spi:0.79:7.9,mp5:4:mp5:1.2:4.8,sp:9:sp:1:9,armor:57:armor:0.049:2.793
+R	priest/discipline	25	17737	0	oh	11.040000000000001	hit:0.8:spellHit:2.8:2.24,int:8:int:1.1:8.8
+R	priest/discipline	25	18438	0	gear	0.0	
+R	priest/discipline	25	18878	0	mh	45.660000000000004	sta:8:sta:0.87:6.96,int:17:int:1.1:18.7,sp:20:sp:1:20
+R	priest/discipline	25	19391	0	gear	48.379000000000005	sta:13:sta:0.87:11.31,int:17:int:1.1:18.7,mp5:12:mp5:1.2:14.4,armor:81:armor:0.049:3.969
+R	priest/discipline	25	19891	0	oh	39.86	sta:8:sta:0.87:6.96,int:11:int:1.1:12.1,sp:18:sp:1:18,spellHit:1:spellHit:2.8:2.8
+R	priest/discipline	25	20333	0	gear	40.949999999999996	int:20:int:1.1:22,spi:8:spi:0.79:6.32,sta:9:sta:0.87:7.83,mp5:4:mp5:1.2:4.8
+R	priest/discipline	25	20672	0	ranged	363.9479999999999	int:9:int:1.1:9.9,sp:5:sp:1:5,rdps:62.33:rdps:5.6:349.048
+R	priest/discipline	25	21522	0	mh	12.18	sta:14:sta:0.87:12.18
+R	priest/discipline	25	22231	0	gear	39.11	int:18:int:1.1:19.8,sta:11:sta:0.87:9.57,hit:1:spellHit:2.8:2.8,sp:4:sp:1:4,armor:60:armor:0.049:2.94
+R	priest/discipline	25	22711	0	gear	37.172	sta:6:sta:0.87:5.22,int:6:int:1.1:6.6,sp:23:sp:1:23,armor:48:armor:0.049:2.352
+R	priest/discipline	25	23237	0	gear	12.4	int:10:int:1.1:11,crit:1:spellCrit:1.4:1.4
+R	priest/discipline	25	213088	0	gear	12.216000000000001	sta:4:sta:0.87:3.48,int:4:int:1.1:4.4,spi:4:spi:0.79:3.16,armor:24:armor:0.049:1.176
+R	priest/discipline	25	217301	0	gear	13.790000000000001	sta:7:sta:0.87:6.09,int:7:int:1.1:7.7
+R	priest/discipline	25	221025	0	gear	37.703	sta:7:sta:0.87:6.09,int:8:int:1.1:8.8,sp:21:sp:1:21,armor:37:armor:0.049:1.813
+R	priest/discipline	25	226744	0	gear	30.724	sta:11:sta:0.87:9.57,int:10:int:1.1:11,spi:10:spi:0.79:7.9,armor:46:armor:0.049:2.254
+R	priest/discipline	25	227980	0	gear	61.20099999999999	sta:12:sta:0.87:10.44,int:15:int:1.1:16.5,spi:10:spi:0.79:7.9,sp:22:sp:1:22,armor:89:armor:0.049:4.361
+R	priest/discipline	25	228292	0	gear	25.841	sta:23:sta:0.87:20.01,armor:119:armor:0.049:5.831
+R	priest/discipline	25	229374	0	mh	8.7	sta:10:sta:0.87:8.7
+R	priest/discipline	25	231271	0	gear	26.0	sp:26:sp:1:26
+R	priest/discipline	25	233502	0	gear	12.370000000000001	sta:11:sta:0.87:9.57,hit:1:spellHit:2.8:2.8
+R	priest/discipline	25	234020	0	gear	39.69	sta:7:sta:0.87:6.09,int:8:int:1.1:8.8,hit:1:spellHit:2.8:2.8,sp:22:sp:1:22
+R	priest/discipline	25	234614	0	gear	0.0	
+R	priest/discipline	25	236284	0	mh	162.2	sta:20:sta:0.87:17.4,int:20:int:1.1:22,hit:2:spellHit:2.8:5.6,crit:3:spellCrit:1.4:4.2,sp:113:sp:1:113
+R	priest/discipline	25	239581	0	gear	75.88000000000001	sta:17:sta:0.87:14.79,int:17:int:1.1:18.7,spShadow:50:spShadow:0.74:37,armor:110:armor:0.049:5.39
+R	priest/discipline	25	249234	0	ranged	226.352	sp:7:sp:1:7,rdps:39.17:rdps:5.6:219.352
+R	priest/discipline	25	254033	0	gear	14.280000000000001	spDmg:6:sp:1:6,spi:8:spi:0.79:6.32,armor:40:armor:0.049:1.96
+R	priest/discipline	25	260820	0	gear	0.0	
+R	priest/discipline	25	271661	0	gear	0.098	armor:2:armor:0.049:0.098
+R	priest/discipline	25	272406	0	gear	27.200000000000003	int:14:int:1.1:15.4,hit:1:spellHit:2.8:2.8,sp:9:sp:1:9
+R	priest/discipline	25	273423	0	gear	54.195	int:10:int:1.1:11,sta:26:sta:0.87:22.62,spDmg:9:sp:1:9,spi:10:spi:0.79:7.9,armor:75:armor:0.049:3.675
+R	priest/discipline	25	274919	0	ranged	188.57999999999998	spShadow:7:spShadow:0.74:5.18,rdps:32.75:rdps:5.6:183.4
+R	priest/discipline	25	276888	0	mh	3.7800000000000002	int:2:int:1.1:2.2,spi:2:spi:0.79:1.58
+R	priest/discipline	25	279826	0	gear	42.048	sta:13:sta:0.87:11.31,spi:10:spi:0.79:7.9,int:8:int:1.1:8.8,sp:11:sp:1:11,armor:62:armor:0.049:3.038
+R	priest/discipline	25	281315	0	gear	4.182	int:3:int:1.1:3.3,armor:18:armor:0.049:0.882
+R	priest/discipline	25	284197	0	gear	8.626	sta:8:sta:0.87:6.96,armor:34:armor:0.049:1.666
+R	priest/discipline	25	286997	0	gear	25.929	spi:17:spi:0.79:13.43,sp:10:sp:1:10,armor:51:armor:0.049:2.499
 R	priest/discipline	34	35	0	mh	0.0	
 R	priest/discipline	34	1299	0	gear	5.32	sta:4:sta:0.35:1.4,spi:3:spi:1.1:3.3,armor:20:armor:0.031:0.62
 R	priest/discipline	34	1831	0	mh	0.0	
@@ -3914,7 +4222,7 @@ R	priest/discipline	34	2364	0	gear	0.558	armor:18:armor:0.031:0.558
 R	priest/discipline	34	2955	0	gear	16.183	sta:11:sta:0.35:3.85,spi:10:spi:1.1:11,armor:43:armor:0.031:1.333
 R	priest/discipline	34	3423	0	oh	0.0	
 R	priest/discipline	34	3947	0	gear	0.9299999999999999	armor:30:armor:0.031:0.93
-R	priest/discipline	34	4454	0	mh	2.2	spi:2:spi:1.1:2.2
+R	priest/discipline	34	4454	0	mh	3.3000000000000003	spi:3:spi:1.1:3.3
 R	priest/discipline	34	4947	0	mh	0.0	
 R	priest/discipline	34	5393	0	mh	0.0	
 R	priest/discipline	34	6333	0	mh	0.7	sta:2:sta:0.35:0.7
@@ -3964,8 +4272,8 @@ R	priest/discipline	34	7355	12757	gear	0.589	armor:19:armor:0.031:0.589
 R	priest/discipline	34	7355	12758	gear	0.589	armor:19:armor:0.031:0.589
 R	priest/discipline	34	7355	12759	gear	0.589	armor:19:armor:0.031:0.589
 R	priest/discipline	34	7355	12761	gear	8.059	spShadow:9:spShadow:0.83:7.47,armor:19:armor:0.031:0.589
-R	priest/discipline	34	7757	0	mh	10.999999999999998	sta:7:sta:0.35:2.45,int:15:int:0.57:8.55
-R	priest/discipline	34	9491	0	gear	12.770999999999999	sta:5:sta:0.35:1.75,int:8:int:0.57:4.56,spi:5:spi:1.1:5.5,armor:31:armor:0.031:0.961
+R	priest/discipline	34	7757	0	mh	5.949999999999999	sta:17:sta:0.35:5.95
+R	priest/discipline	34	9491	0	gear	12.770999999999999	int:8:int:0.57:4.56,spi:5:spi:1.1:5.5,sta:5:sta:0.35:1.75,armor:31:armor:0.031:0.961
 R	priest/discipline	34	9875	0	gear	0.899	armor:29:armor:0.031:0.899
 R	priest/discipline	34	9875	12718	gear	8.259	int:8:int:0.57:4.56,sta:8:sta:0.35:2.8,armor:29:armor:0.031:0.899
 R	priest/discipline	34	9875	12719	gear	12.499000000000002	spi:8:spi:1.1:8.8,sta:8:sta:0.35:2.8,armor:29:armor:0.031:0.899
@@ -4018,174 +4326,196 @@ R	priest/discipline	34	10102	12759	gear	2.356	armor:76:armor:0.031:2.356
 R	priest/discipline	34	10102	12761	gear	33.065999999999995	spShadow:37:spShadow:0.83:30.71,armor:76:armor:0.031:2.356
 R	priest/discipline	34	10645	0	gear	0.0	
 R	priest/discipline	34	11288	0	ranged	126.25	sp:2:sp:1:2,rdps:17.5:rdps:7.1:124.25
-R	priest/discipline	34	11808	0	gear	9.294	sta:20:sta:0.35:7,armor:74:armor:0.031:2.294
-R	priest/discipline	34	12015	0	gear	0.0	
-R	priest/discipline	34	12015	12718	gear	8.28	int:9:int:0.57:5.13,sta:9:sta:0.35:3.15
-R	priest/discipline	34	12015	12719	gear	13.05	spi:9:spi:1.1:9.9,sta:9:sta:0.35:3.15
-R	priest/discipline	34	12015	12720	gear	15.030000000000001	int:9:int:0.57:5.13,spi:9:spi:1.1:9.9
-R	priest/discipline	34	12015	12721	gear	3.15	sta:9:sta:0.35:3.15
-R	priest/discipline	34	12015	12722	gear	3.15	sta:9:sta:0.35:3.15
-R	priest/discipline	34	12015	12723	gear	5.13	int:9:int:0.57:5.13
-R	priest/discipline	34	12015	12724	gear	5.13	int:9:int:0.57:5.13
-R	priest/discipline	34	12015	12725	gear	9.9	spi:9:spi:1.1:9.9
-R	priest/discipline	34	12015	12726	gear	9.9	spi:9:spi:1.1:9.9
-R	priest/discipline	34	12015	12727	gear	0.0	
-R	priest/discipline	34	12015	12728	gear	0.0	
-R	priest/discipline	34	12015	12729	gear	7.9799999999999995	int:14:int:0.57:7.98
-R	priest/discipline	34	12015	12730	gear	15.400000000000002	spi:14:spi:1.1:15.4
-R	priest/discipline	34	12015	12731	gear	4.8999999999999995	sta:14:sta:0.35:4.9
-R	priest/discipline	34	12015	12732	gear	0.0	
-R	priest/discipline	34	12015	12733	gear	0.0	
-R	priest/discipline	34	12015	12737	gear	0.0	
-R	priest/discipline	34	12015	12738	gear	6.6000000000000005	mp5:6:mp5:1.1:6.6
-R	priest/discipline	34	12015	12739	gear	0.0	
-R	priest/discipline	34	12015	12740	gear	3.15	sta:9:sta:0.35:3.15
-R	priest/discipline	34	12015	12741	gear	3.15	sta:9:sta:0.35:3.15
-R	priest/discipline	34	12015	12742	gear	3.15	sta:9:sta:0.35:3.15
-R	priest/discipline	34	12015	12743	gear	3.15	sta:9:sta:0.35:3.15
-R	priest/discipline	34	12015	12744	gear	3.15	sta:9:sta:0.35:3.15
-R	priest/discipline	34	12015	12745	gear	12.799999999999999	int:10:int:0.57:5.7,sta:6:sta:0.35:2.1,sp:5:sp:1:5
-R	priest/discipline	34	12015	12746	gear	17.3	int:10:int:0.57:5.7,spi:6:spi:1.1:6.6,sp:5:sp:1:5
-R	priest/discipline	34	12015	12747	gear	15.100000000000001	spi:6:spi:1.1:6.6,sta:10:sta:0.35:3.5,sp:5:sp:1:5
-R	priest/discipline	34	12015	12748	gear	9.92	int:6:int:0.57:3.42,sta:10:sta:0.35:3.5,spDmg:3:sp:1:3
-R	priest/discipline	34	12015	12749	gear	15.3	int:10:int:0.57:5.7,spi:6:spi:1.1:6.6,spDmg:3:sp:1:3
-R	priest/discipline	34	12015	12750	gear	13.100000000000001	spi:6:spi:1.1:6.6,sta:10:sta:0.35:3.5,spDmg:3:sp:1:3
-R	priest/discipline	34	12015	12751	gear	3.5	sta:10:sta:0.35:3.5
-R	priest/discipline	34	12015	12752	gear	3.5	sta:10:sta:0.35:3.5
-R	priest/discipline	34	12015	12753	gear	3.5	sta:10:sta:0.35:3.5
-R	priest/discipline	34	12015	12754	gear	8.5	sp:5:sp:1:5,sta:10:sta:0.35:3.5
-R	priest/discipline	34	12015	12755	gear	8.5	sp:5:sp:1:5,sta:10:sta:0.35:3.5
-R	priest/discipline	34	12805	0	gear	0.0	
-R	priest/discipline	34	13360	0	mh	14.05	sta:5:sta:0.35:1.75,int:10:int:0.57:5.7,spi:6:spi:1.1:6.6
-R	priest/discipline	34	14108	0	gear	14.781	spi:12:spi:1.1:13.2,armor:51:armor:0.031:1.581
-R	priest/discipline	34	14213	0	gear	1.519	armor:49:armor:0.031:1.519
-R	priest/discipline	34	14213	12718	gear	10.719	int:10:int:0.57:5.7,sta:10:sta:0.35:3.5,armor:49:armor:0.031:1.519
-R	priest/discipline	34	14213	12719	gear	16.019	spi:10:spi:1.1:11,sta:10:sta:0.35:3.5,armor:49:armor:0.031:1.519
-R	priest/discipline	34	14213	12720	gear	18.218999999999998	int:10:int:0.57:5.7,spi:10:spi:1.1:11,armor:49:armor:0.031:1.519
-R	priest/discipline	34	14213	12729	gear	10.068999999999999	int:15:int:0.57:8.55,armor:49:armor:0.031:1.519
-R	priest/discipline	34	14213	12730	gear	18.019	spi:15:spi:1.1:16.5,armor:49:armor:0.031:1.519
-R	priest/discipline	34	14213	12731	gear	6.769	sta:15:sta:0.35:5.25,armor:49:armor:0.031:1.519
-R	priest/discipline	34	14213	12734	gear	19.519	sp:18:sp:1:18,armor:49:armor:0.031:1.519
-R	priest/discipline	34	14213	12735	gear	12.519	spDmg:11:sp:1:11,armor:49:armor:0.031:1.519
-R	priest/discipline	34	14213	12740	gear	5.019	sta:10:sta:0.35:3.5,armor:49:armor:0.031:1.519
-R	priest/discipline	34	14213	12741	gear	5.019	sta:10:sta:0.35:3.5,armor:49:armor:0.031:1.519
-R	priest/discipline	34	14213	12742	gear	5.019	sta:10:sta:0.35:3.5,armor:49:armor:0.031:1.519
-R	priest/discipline	34	14213	12743	gear	5.019	sta:10:sta:0.35:3.5,armor:49:armor:0.031:1.519
-R	priest/discipline	34	14213	12744	gear	5.019	sta:10:sta:0.35:3.5,armor:49:armor:0.031:1.519
-R	priest/discipline	34	14213	12745	gear	15.889	int:11:int:0.57:6.27,sta:6:sta:0.35:2.1,sp:6:sp:1:6,armor:49:armor:0.031:1.519
-R	priest/discipline	34	14213	12746	gear	20.389	int:11:int:0.57:6.27,spi:6:spi:1.1:6.6,sp:6:sp:1:6,armor:49:armor:0.031:1.519
-R	priest/discipline	34	14213	12747	gear	17.968999999999998	spi:6:spi:1.1:6.6,sta:11:sta:0.35:3.85,sp:6:sp:1:6,armor:49:armor:0.031:1.519
-R	priest/discipline	34	14213	12748	gear	12.789	int:6:int:0.57:3.42,sta:11:sta:0.35:3.85,spDmg:4:sp:1:4,armor:49:armor:0.031:1.519
-R	priest/discipline	34	14213	12749	gear	18.389	int:11:int:0.57:6.27,spi:6:spi:1.1:6.6,spDmg:4:sp:1:4,armor:49:armor:0.031:1.519
-R	priest/discipline	34	14213	12750	gear	15.969	spi:6:spi:1.1:6.6,sta:11:sta:0.35:3.85,spDmg:4:sp:1:4,armor:49:armor:0.031:1.519
-R	priest/discipline	34	14213	12756	gear	1.519	armor:49:armor:0.031:1.519
-R	priest/discipline	34	14213	12757	gear	1.519	armor:49:armor:0.031:1.519
-R	priest/discipline	34	14213	12758	gear	1.519	armor:49:armor:0.031:1.519
-R	priest/discipline	34	14213	12759	gear	1.519	armor:49:armor:0.031:1.519
-R	priest/discipline	34	14213	12761	gear	18.948999999999998	spShadow:21:spShadow:0.83:17.43,armor:49:armor:0.031:1.519
-R	priest/discipline	34	14312	0	gear	1.984	armor:64:armor:0.031:1.984
-R	priest/discipline	34	14312	12718	gear	18.543999999999997	int:18:int:0.57:10.26,sta:18:sta:0.35:6.3,armor:64:armor:0.031:1.984
-R	priest/discipline	34	14312	12719	gear	28.084000000000003	spi:18:spi:1.1:19.8,sta:18:sta:0.35:6.3,armor:64:armor:0.031:1.984
-R	priest/discipline	34	14312	12720	gear	32.044000000000004	int:18:int:0.57:10.26,spi:18:spi:1.1:19.8,armor:64:armor:0.031:1.984
-R	priest/discipline	34	14312	12729	gear	17.374	int:27:int:0.57:15.39,armor:64:armor:0.031:1.984
-R	priest/discipline	34	14312	12730	gear	31.684000000000005	spi:27:spi:1.1:29.7,armor:64:armor:0.031:1.984
-R	priest/discipline	34	14312	12731	gear	11.434	sta:27:sta:0.35:9.45,armor:64:armor:0.031:1.984
-R	priest/discipline	34	14312	12734	gear	33.984	sp:32:sp:1:32,armor:64:armor:0.031:1.984
-R	priest/discipline	34	14312	12735	gear	21.984	spDmg:20:sp:1:20,armor:64:armor:0.031:1.984
-R	priest/discipline	34	14312	12740	gear	8.283999999999999	sta:18:sta:0.35:6.3,armor:64:armor:0.031:1.984
-R	priest/discipline	34	14312	12741	gear	8.283999999999999	sta:18:sta:0.35:6.3,armor:64:armor:0.031:1.984
-R	priest/discipline	34	14312	12742	gear	8.283999999999999	sta:18:sta:0.35:6.3,armor:64:armor:0.031:1.984
-R	priest/discipline	34	14312	12743	gear	8.283999999999999	sta:18:sta:0.35:6.3,armor:64:armor:0.031:1.984
-R	priest/discipline	34	14312	12744	gear	8.283999999999999	sta:18:sta:0.35:6.3,armor:64:armor:0.031:1.984
-R	priest/discipline	34	14312	12745	gear	27.234	int:20:int:0.57:11.4,sta:11:sta:0.35:3.85,sp:10:sp:1:10,armor:64:armor:0.031:1.984
-R	priest/discipline	34	14312	12746	gear	35.484	int:20:int:0.57:11.4,spi:11:spi:1.1:12.1,sp:10:sp:1:10,armor:64:armor:0.031:1.984
-R	priest/discipline	34	14312	12747	gear	31.084000000000003	spi:11:spi:1.1:12.1,sta:20:sta:0.35:7,sp:10:sp:1:10,armor:64:armor:0.031:1.984
-R	priest/discipline	34	14312	12748	gear	21.253999999999998	int:11:int:0.57:6.27,sta:20:sta:0.35:7,spDmg:6:sp:1:6,armor:64:armor:0.031:1.984
-R	priest/discipline	34	14312	12749	gear	31.484	int:20:int:0.57:11.4,spi:11:spi:1.1:12.1,spDmg:6:sp:1:6,armor:64:armor:0.031:1.984
-R	priest/discipline	34	14312	12750	gear	27.084000000000003	spi:11:spi:1.1:12.1,sta:20:sta:0.35:7,spDmg:6:sp:1:6,armor:64:armor:0.031:1.984
-R	priest/discipline	34	14312	12756	gear	1.984	armor:64:armor:0.031:1.984
-R	priest/discipline	34	14312	12757	gear	1.984	armor:64:armor:0.031:1.984
-R	priest/discipline	34	14312	12758	gear	1.984	armor:64:armor:0.031:1.984
-R	priest/discipline	34	14312	12759	gear	1.984	armor:64:armor:0.031:1.984
-R	priest/discipline	34	14312	12761	gear	34.354	spShadow:39:spShadow:0.83:32.37,armor:64:armor:0.031:1.984
-R	priest/discipline	34	14440	0	gear	9.629999999999999	sta:6:sta:0.35:2.1,spi:6:spi:1.1:6.6,armor:30:armor:0.031:0.93
-R	priest/discipline	34	15299	0	gear	0.279	armor:9:armor:0.031:0.279
-R	priest/discipline	34	15939	0	oh	0.0	
-R	priest/discipline	34	15939	12718	oh	8.28	int:9:int:0.57:5.13,sta:9:sta:0.35:3.15
-R	priest/discipline	34	15939	12719	oh	13.05	spi:9:spi:1.1:9.9,sta:9:sta:0.35:3.15
-R	priest/discipline	34	15939	12720	oh	15.030000000000001	int:9:int:0.57:5.13,spi:9:spi:1.1:9.9
-R	priest/discipline	34	15939	12721	oh	3.15	sta:9:sta:0.35:3.15
-R	priest/discipline	34	15939	12722	oh	3.15	sta:9:sta:0.35:3.15
-R	priest/discipline	34	15939	12723	oh	5.13	int:9:int:0.57:5.13
-R	priest/discipline	34	15939	12724	oh	5.13	int:9:int:0.57:5.13
-R	priest/discipline	34	15939	12725	oh	9.9	spi:9:spi:1.1:9.9
-R	priest/discipline	34	15939	12726	oh	9.9	spi:9:spi:1.1:9.9
-R	priest/discipline	34	15939	12727	oh	0.0	
-R	priest/discipline	34	15939	12728	oh	0.0	
-R	priest/discipline	34	15939	12729	oh	7.9799999999999995	int:14:int:0.57:7.98
-R	priest/discipline	34	15939	12730	oh	15.400000000000002	spi:14:spi:1.1:15.4
-R	priest/discipline	34	15939	12731	oh	4.8999999999999995	sta:14:sta:0.35:4.9
-R	priest/discipline	34	15939	12732	oh	0.0	
-R	priest/discipline	34	15939	12733	oh	0.0	
-R	priest/discipline	34	15939	12734	oh	16.0	sp:16:sp:1:16
-R	priest/discipline	34	15939	12735	oh	10.0	spDmg:10:sp:1:10
-R	priest/discipline	34	15939	12740	oh	3.15	sta:9:sta:0.35:3.15
-R	priest/discipline	34	15939	12741	oh	3.15	sta:9:sta:0.35:3.15
-R	priest/discipline	34	15939	12742	oh	3.15	sta:9:sta:0.35:3.15
-R	priest/discipline	34	15939	12743	oh	3.15	sta:9:sta:0.35:3.15
-R	priest/discipline	34	15939	12744	oh	3.15	sta:9:sta:0.35:3.15
-R	priest/discipline	34	15939	12745	oh	12.799999999999999	int:10:int:0.57:5.7,sta:6:sta:0.35:2.1,sp:5:sp:1:5
-R	priest/discipline	34	15939	12746	oh	17.3	int:10:int:0.57:5.7,spi:6:spi:1.1:6.6,sp:5:sp:1:5
-R	priest/discipline	34	15939	12747	oh	15.100000000000001	spi:6:spi:1.1:6.6,sta:10:sta:0.35:3.5,sp:5:sp:1:5
-R	priest/discipline	34	15939	12748	oh	9.92	int:6:int:0.57:3.42,sta:10:sta:0.35:3.5,spDmg:3:sp:1:3
-R	priest/discipline	34	15939	12749	oh	15.3	int:10:int:0.57:5.7,spi:6:spi:1.1:6.6,spDmg:3:sp:1:3
-R	priest/discipline	34	15939	12750	oh	13.100000000000001	spi:6:spi:1.1:6.6,sta:10:sta:0.35:3.5,spDmg:3:sp:1:3
-R	priest/discipline	34	15939	12756	oh	0.0	
-R	priest/discipline	34	15939	12757	oh	0.0	
-R	priest/discipline	34	15939	12758	oh	0.0	
-R	priest/discipline	34	15939	12759	oh	0.0	
-R	priest/discipline	34	15939	12760	oh	0.0	
-R	priest/discipline	34	15939	12761	oh	16.599999999999998	spShadow:20:spShadow:0.83:16.6
+R	priest/discipline	34	11807	0	gear	21.625999999999998	spi:10:spi:1.1:11,sta:10:sta:0.35:3.5,int:10:int:0.57:5.7,armor:46:armor:0.031:1.426
+R	priest/discipline	34	12014	0	gear	0.0	
+R	priest/discipline	34	12014	12718	gear	8.28	int:9:int:0.57:5.13,sta:9:sta:0.35:3.15
+R	priest/discipline	34	12014	12719	gear	13.05	spi:9:spi:1.1:9.9,sta:9:sta:0.35:3.15
+R	priest/discipline	34	12014	12720	gear	15.030000000000001	int:9:int:0.57:5.13,spi:9:spi:1.1:9.9
+R	priest/discipline	34	12014	12721	gear	3.15	sta:9:sta:0.35:3.15
+R	priest/discipline	34	12014	12722	gear	3.15	sta:9:sta:0.35:3.15
+R	priest/discipline	34	12014	12723	gear	5.13	int:9:int:0.57:5.13
+R	priest/discipline	34	12014	12724	gear	5.13	int:9:int:0.57:5.13
+R	priest/discipline	34	12014	12725	gear	9.9	spi:9:spi:1.1:9.9
+R	priest/discipline	34	12014	12726	gear	9.9	spi:9:spi:1.1:9.9
+R	priest/discipline	34	12014	12727	gear	0.0	
+R	priest/discipline	34	12014	12728	gear	0.0	
+R	priest/discipline	34	12014	12729	gear	7.409999999999999	int:13:int:0.57:7.41
+R	priest/discipline	34	12014	12730	gear	14.3	spi:13:spi:1.1:14.3
+R	priest/discipline	34	12014	12731	gear	4.55	sta:13:sta:0.35:4.55
+R	priest/discipline	34	12014	12732	gear	0.0	
+R	priest/discipline	34	12014	12733	gear	0.0	
+R	priest/discipline	34	12014	12737	gear	0.0	
+R	priest/discipline	34	12014	12738	gear	5.5	mp5:5:mp5:1.1:5.5
+R	priest/discipline	34	12014	12739	gear	0.0	
+R	priest/discipline	34	12014	12740	gear	3.15	sta:9:sta:0.35:3.15
+R	priest/discipline	34	12014	12741	gear	3.15	sta:9:sta:0.35:3.15
+R	priest/discipline	34	12014	12742	gear	3.15	sta:9:sta:0.35:3.15
+R	priest/discipline	34	12014	12743	gear	3.15	sta:9:sta:0.35:3.15
+R	priest/discipline	34	12014	12744	gear	3.15	sta:9:sta:0.35:3.15
+R	priest/discipline	34	12014	12745	gear	11.879999999999999	int:9:int:0.57:5.13,sta:5:sta:0.35:1.75,sp:5:sp:1:5
+R	priest/discipline	34	12014	12746	gear	15.629999999999999	int:9:int:0.57:5.13,spi:5:spi:1.1:5.5,sp:5:sp:1:5
+R	priest/discipline	34	12014	12747	gear	13.65	spi:5:spi:1.1:5.5,sta:9:sta:0.35:3.15,sp:5:sp:1:5
+R	priest/discipline	34	12014	12748	gear	9.0	int:5:int:0.57:2.85,sta:9:sta:0.35:3.15,spDmg:3:sp:1:3
+R	priest/discipline	34	12014	12749	gear	13.629999999999999	int:9:int:0.57:5.13,spi:5:spi:1.1:5.5,spDmg:3:sp:1:3
+R	priest/discipline	34	12014	12750	gear	11.65	spi:5:spi:1.1:5.5,sta:9:sta:0.35:3.15,spDmg:3:sp:1:3
+R	priest/discipline	34	12014	12751	gear	3.15	sta:9:sta:0.35:3.15
+R	priest/discipline	34	12014	12752	gear	3.15	sta:9:sta:0.35:3.15
+R	priest/discipline	34	12014	12753	gear	3.15	sta:9:sta:0.35:3.15
+R	priest/discipline	34	12014	12754	gear	8.15	sp:5:sp:1:5,sta:9:sta:0.35:3.15
+R	priest/discipline	34	12014	12755	gear	8.5	sp:5:sp:1:5,sta:10:sta:0.35:3.5
+R	priest/discipline	34	12794	0	mh	0.0	
+R	priest/discipline	34	13353	0	oh	35.629999999999995	spi:10:spi:1.1:11,int:15:int:0.57:8.55,sta:8:sta:0.35:2.8,spShadow:16:spShadow:0.83:13.28
+R	priest/discipline	34	14107	0	gear	30.342	int:12:int:0.57:6.84,spShadow:26:spShadow:0.83:21.58,armor:62:armor:0.031:1.922
+R	priest/discipline	34	14212	0	gear	1.085	armor:35:armor:0.031:1.085
+R	priest/discipline	34	14212	12718	gear	7.5249999999999995	int:7:int:0.57:3.99,sta:7:sta:0.35:2.45,armor:35:armor:0.031:1.085
+R	priest/discipline	34	14212	12719	gear	11.235	spi:7:spi:1.1:7.7,sta:7:sta:0.35:2.45,armor:35:armor:0.031:1.085
+R	priest/discipline	34	14212	12720	gear	12.775000000000002	int:7:int:0.57:3.99,spi:7:spi:1.1:7.7,armor:35:armor:0.031:1.085
+R	priest/discipline	34	14212	12729	gear	6.784999999999999	int:10:int:0.57:5.7,armor:35:armor:0.031:1.085
+R	priest/discipline	34	14212	12730	gear	12.085	spi:10:spi:1.1:11,armor:35:armor:0.031:1.085
+R	priest/discipline	34	14212	12731	gear	4.585	sta:10:sta:0.35:3.5,armor:35:armor:0.031:1.085
+R	priest/discipline	34	14212	12734	gear	13.085	sp:12:sp:1:12,armor:35:armor:0.031:1.085
+R	priest/discipline	34	14212	12735	gear	8.085	spDmg:7:sp:1:7,armor:35:armor:0.031:1.085
+R	priest/discipline	34	14212	12740	gear	3.5349999999999997	sta:7:sta:0.35:2.45,armor:35:armor:0.031:1.085
+R	priest/discipline	34	14212	12741	gear	3.5349999999999997	sta:7:sta:0.35:2.45,armor:35:armor:0.031:1.085
+R	priest/discipline	34	14212	12742	gear	3.5349999999999997	sta:7:sta:0.35:2.45,armor:35:armor:0.031:1.085
+R	priest/discipline	34	14212	12743	gear	3.5349999999999997	sta:7:sta:0.35:2.45,armor:35:armor:0.031:1.085
+R	priest/discipline	34	14212	12744	gear	3.5349999999999997	sta:7:sta:0.35:2.45,armor:35:armor:0.031:1.085
+R	priest/discipline	34	14212	12745	gear	10.475000000000001	int:7:int:0.57:3.99,sta:4:sta:0.35:1.4,sp:4:sp:1:4,armor:35:armor:0.031:1.085
+R	priest/discipline	34	14212	12746	gear	13.475000000000001	int:7:int:0.57:3.99,spi:4:spi:1.1:4.4,sp:4:sp:1:4,armor:35:armor:0.031:1.085
+R	priest/discipline	34	14212	12747	gear	11.934999999999999	spi:4:spi:1.1:4.4,sta:7:sta:0.35:2.45,sp:4:sp:1:4,armor:35:armor:0.031:1.085
+R	priest/discipline	34	14212	12748	gear	7.8149999999999995	int:4:int:0.57:2.28,sta:7:sta:0.35:2.45,spDmg:2:sp:1:2,armor:35:armor:0.031:1.085
+R	priest/discipline	34	14212	12749	gear	11.475000000000001	int:7:int:0.57:3.99,spi:4:spi:1.1:4.4,spDmg:2:sp:1:2,armor:35:armor:0.031:1.085
+R	priest/discipline	34	14212	12750	gear	9.934999999999999	spi:4:spi:1.1:4.4,sta:7:sta:0.35:2.45,spDmg:2:sp:1:2,armor:35:armor:0.031:1.085
+R	priest/discipline	34	14212	12756	gear	1.085	armor:35:armor:0.031:1.085
+R	priest/discipline	34	14212	12757	gear	1.085	armor:35:armor:0.031:1.085
+R	priest/discipline	34	14212	12758	gear	1.085	armor:35:armor:0.031:1.085
+R	priest/discipline	34	14212	12759	gear	1.085	armor:35:armor:0.031:1.085
+R	priest/discipline	34	14212	12761	gear	12.704999999999998	spShadow:14:spShadow:0.83:11.62,armor:35:armor:0.031:1.085
+R	priest/discipline	34	14311	0	gear	0.961	armor:31:armor:0.031:0.961
+R	priest/discipline	34	14311	12718	gear	9.241	int:9:int:0.57:5.13,sta:9:sta:0.35:3.15,armor:31:armor:0.031:0.961
+R	priest/discipline	34	14311	12719	gear	14.011000000000001	spi:9:spi:1.1:9.9,sta:9:sta:0.35:3.15,armor:31:armor:0.031:0.961
+R	priest/discipline	34	14311	12720	gear	15.991000000000001	int:9:int:0.57:5.13,spi:9:spi:1.1:9.9,armor:31:armor:0.031:0.961
+R	priest/discipline	34	14311	12729	gear	8.370999999999999	int:13:int:0.57:7.41,armor:31:armor:0.031:0.961
+R	priest/discipline	34	14311	12730	gear	15.261000000000001	spi:13:spi:1.1:14.3,armor:31:armor:0.031:0.961
+R	priest/discipline	34	14311	12731	gear	5.511	sta:13:sta:0.35:4.55,armor:31:armor:0.031:0.961
+R	priest/discipline	34	14311	12734	gear	15.961	sp:15:sp:1:15,armor:31:armor:0.031:0.961
+R	priest/discipline	34	14311	12735	gear	10.961	spDmg:10:sp:1:10,armor:31:armor:0.031:0.961
+R	priest/discipline	34	14311	12740	gear	4.111	sta:9:sta:0.35:3.15,armor:31:armor:0.031:0.961
+R	priest/discipline	34	14311	12741	gear	4.111	sta:9:sta:0.35:3.15,armor:31:armor:0.031:0.961
+R	priest/discipline	34	14311	12742	gear	4.111	sta:9:sta:0.35:3.15,armor:31:armor:0.031:0.961
+R	priest/discipline	34	14311	12743	gear	4.111	sta:9:sta:0.35:3.15,armor:31:armor:0.031:0.961
+R	priest/discipline	34	14311	12744	gear	4.111	sta:9:sta:0.35:3.15,armor:31:armor:0.031:0.961
+R	priest/discipline	34	14311	12745	gear	12.841	int:9:int:0.57:5.13,sta:5:sta:0.35:1.75,sp:5:sp:1:5,armor:31:armor:0.031:0.961
+R	priest/discipline	34	14311	12746	gear	16.590999999999998	int:9:int:0.57:5.13,spi:5:spi:1.1:5.5,sp:5:sp:1:5,armor:31:armor:0.031:0.961
+R	priest/discipline	34	14311	12747	gear	14.611	spi:5:spi:1.1:5.5,sta:9:sta:0.35:3.15,sp:5:sp:1:5,armor:31:armor:0.031:0.961
+R	priest/discipline	34	14311	12748	gear	9.961	int:5:int:0.57:2.85,sta:9:sta:0.35:3.15,spDmg:3:sp:1:3,armor:31:armor:0.031:0.961
+R	priest/discipline	34	14311	12749	gear	14.591	int:9:int:0.57:5.13,spi:5:spi:1.1:5.5,spDmg:3:sp:1:3,armor:31:armor:0.031:0.961
+R	priest/discipline	34	14311	12750	gear	12.611	spi:5:spi:1.1:5.5,sta:9:sta:0.35:3.15,spDmg:3:sp:1:3,armor:31:armor:0.031:0.961
+R	priest/discipline	34	14311	12756	gear	0.961	armor:31:armor:0.031:0.961
+R	priest/discipline	34	14311	12757	gear	0.961	armor:31:armor:0.031:0.961
+R	priest/discipline	34	14311	12758	gear	0.961	armor:31:armor:0.031:0.961
+R	priest/discipline	34	14311	12759	gear	0.961	armor:31:armor:0.031:0.961
+R	priest/discipline	34	14311	12761	gear	16.730999999999998	spShadow:19:spShadow:0.83:15.77,armor:31:armor:0.031:0.961
+R	priest/discipline	34	14439	0	gear	11.917	spi:8:spi:1.1:8.8,int:4:int:0.57:2.28,armor:27:armor:0.031:0.837
+R	priest/discipline	34	15283	0	ranged	402.996	rdps:56.76:rdps:7.1:402.996
+R	priest/discipline	34	15283	12718	ranged	408.51599999999996	int:6:int:0.57:3.42,sta:6:sta:0.35:2.1,rdps:56.76:rdps:7.1:402.996
+R	priest/discipline	34	15283	12719	ranged	411.69599999999997	spi:6:spi:1.1:6.6,sta:6:sta:0.35:2.1,rdps:56.76:rdps:7.1:402.996
+R	priest/discipline	34	15283	12720	ranged	413.01599999999996	int:6:int:0.57:3.42,spi:6:spi:1.1:6.6,rdps:56.76:rdps:7.1:402.996
+R	priest/discipline	34	15283	12729	ranged	408.126	int:9:int:0.57:5.13,rdps:56.76:rdps:7.1:402.996
+R	priest/discipline	34	15283	12730	ranged	412.89599999999996	spi:9:spi:1.1:9.9,rdps:56.76:rdps:7.1:402.996
+R	priest/discipline	34	15283	12731	ranged	406.14599999999996	sta:9:sta:0.35:3.15,rdps:56.76:rdps:7.1:402.996
+R	priest/discipline	34	15283	12734	ranged	413.996	sp:11:sp:1:11,rdps:56.76:rdps:7.1:402.996
+R	priest/discipline	34	15283	12735	ranged	409.996	spDmg:7:sp:1:7,rdps:56.76:rdps:7.1:402.996
+R	priest/discipline	34	15283	12740	ranged	405.096	sta:6:sta:0.35:2.1,rdps:56.76:rdps:7.1:402.996
+R	priest/discipline	34	15283	12741	ranged	405.096	sta:6:sta:0.35:2.1,rdps:56.76:rdps:7.1:402.996
+R	priest/discipline	34	15283	12742	ranged	405.096	sta:6:sta:0.35:2.1,rdps:56.76:rdps:7.1:402.996
+R	priest/discipline	34	15283	12743	ranged	405.096	sta:6:sta:0.35:2.1,rdps:56.76:rdps:7.1:402.996
+R	priest/discipline	34	15283	12744	ranged	405.096	sta:6:sta:0.35:2.1,rdps:56.76:rdps:7.1:402.996
+R	priest/discipline	34	15283	12745	ranged	411.38599999999997	int:7:int:0.57:3.99,sta:4:sta:0.35:1.4,sp:3:sp:1:3,rdps:56.76:rdps:7.1:402.996
+R	priest/discipline	34	15283	12746	ranged	414.38599999999997	int:7:int:0.57:3.99,spi:4:spi:1.1:4.4,sp:3:sp:1:3,rdps:56.76:rdps:7.1:402.996
+R	priest/discipline	34	15283	12747	ranged	412.846	spi:4:spi:1.1:4.4,sta:7:sta:0.35:2.45,sp:3:sp:1:3,rdps:56.76:rdps:7.1:402.996
+R	priest/discipline	34	15283	12748	ranged	409.726	int:4:int:0.57:2.28,sta:7:sta:0.35:2.45,spDmg:2:sp:1:2,rdps:56.76:rdps:7.1:402.996
+R	priest/discipline	34	15283	12749	ranged	413.38599999999997	int:7:int:0.57:3.99,spi:4:spi:1.1:4.4,spDmg:2:sp:1:2,rdps:56.76:rdps:7.1:402.996
+R	priest/discipline	34	15283	12750	ranged	411.846	spi:4:spi:1.1:4.4,sta:7:sta:0.35:2.45,spDmg:2:sp:1:2,rdps:56.76:rdps:7.1:402.996
+R	priest/discipline	34	15283	12756	ranged	402.996	rdps:56.76:rdps:7.1:402.996
+R	priest/discipline	34	15283	12757	ranged	402.996	rdps:56.76:rdps:7.1:402.996
+R	priest/discipline	34	15283	12758	ranged	402.996	rdps:56.76:rdps:7.1:402.996
+R	priest/discipline	34	15283	12759	ranged	402.996	rdps:56.76:rdps:7.1:402.996
+R	priest/discipline	34	15283	12761	ranged	413.786	spShadow:13:spShadow:0.83:10.79,rdps:56.76:rdps:7.1:402.996
+R	priest/discipline	34	15938	0	oh	0.0	
+R	priest/discipline	34	15938	12718	oh	8.28	int:9:int:0.57:5.13,sta:9:sta:0.35:3.15
+R	priest/discipline	34	15938	12719	oh	13.05	spi:9:spi:1.1:9.9,sta:9:sta:0.35:3.15
+R	priest/discipline	34	15938	12720	oh	15.030000000000001	int:9:int:0.57:5.13,spi:9:spi:1.1:9.9
+R	priest/discipline	34	15938	12721	oh	3.15	sta:9:sta:0.35:3.15
+R	priest/discipline	34	15938	12722	oh	3.15	sta:9:sta:0.35:3.15
+R	priest/discipline	34	15938	12723	oh	5.13	int:9:int:0.57:5.13
+R	priest/discipline	34	15938	12724	oh	5.13	int:9:int:0.57:5.13
+R	priest/discipline	34	15938	12725	oh	9.9	spi:9:spi:1.1:9.9
+R	priest/discipline	34	15938	12726	oh	9.9	spi:9:spi:1.1:9.9
+R	priest/discipline	34	15938	12727	oh	0.0	
+R	priest/discipline	34	15938	12728	oh	0.0	
+R	priest/discipline	34	15938	12729	oh	7.9799999999999995	int:14:int:0.57:7.98
+R	priest/discipline	34	15938	12730	oh	15.400000000000002	spi:14:spi:1.1:15.4
+R	priest/discipline	34	15938	12731	oh	4.8999999999999995	sta:14:sta:0.35:4.9
+R	priest/discipline	34	15938	12732	oh	0.0	
+R	priest/discipline	34	15938	12733	oh	0.0	
+R	priest/discipline	34	15938	12734	oh	16.0	sp:16:sp:1:16
+R	priest/discipline	34	15938	12735	oh	10.0	spDmg:10:sp:1:10
+R	priest/discipline	34	15938	12740	oh	3.15	sta:9:sta:0.35:3.15
+R	priest/discipline	34	15938	12741	oh	3.15	sta:9:sta:0.35:3.15
+R	priest/discipline	34	15938	12742	oh	3.15	sta:9:sta:0.35:3.15
+R	priest/discipline	34	15938	12743	oh	3.15	sta:9:sta:0.35:3.15
+R	priest/discipline	34	15938	12744	oh	3.15	sta:9:sta:0.35:3.15
+R	priest/discipline	34	15938	12745	oh	12.799999999999999	int:10:int:0.57:5.7,sta:6:sta:0.35:2.1,sp:5:sp:1:5
+R	priest/discipline	34	15938	12746	oh	17.3	int:10:int:0.57:5.7,spi:6:spi:1.1:6.6,sp:5:sp:1:5
+R	priest/discipline	34	15938	12747	oh	15.100000000000001	spi:6:spi:1.1:6.6,sta:10:sta:0.35:3.5,sp:5:sp:1:5
+R	priest/discipline	34	15938	12748	oh	9.92	int:6:int:0.57:3.42,sta:10:sta:0.35:3.5,spDmg:3:sp:1:3
+R	priest/discipline	34	15938	12749	oh	15.3	int:10:int:0.57:5.7,spi:6:spi:1.1:6.6,spDmg:3:sp:1:3
+R	priest/discipline	34	15938	12750	oh	13.100000000000001	spi:6:spi:1.1:6.6,sta:10:sta:0.35:3.5,spDmg:3:sp:1:3
+R	priest/discipline	34	15938	12756	oh	0.0	
+R	priest/discipline	34	15938	12757	oh	0.0	
+R	priest/discipline	34	15938	12758	oh	0.0	
+R	priest/discipline	34	15938	12759	oh	0.0	
+R	priest/discipline	34	15938	12760	oh	0.0	
+R	priest/discipline	34	15938	12761	oh	16.599999999999998	spShadow:20:spShadow:0.83:16.6
 R	priest/discipline	34	15945	0	oh	2.9000000000000004	sta:2:sta:0.35:0.7,spi:2:spi:1.1:2.2
-R	priest/discipline	34	16819	0	gear	25.344	sta:8:sta:0.35:2.8,int:14:int:0.57:7.98,spi:10:spi:1.1:11,mp5:2:mp5:1.1:2.2,armor:44:armor:0.031:1.364
-R	priest/discipline	34	17739	0	gear	5.3469999999999995	sta:12:sta:0.35:4.2,armor:37:armor:0.031:1.147
-R	priest/discipline	34	18440	0	gear	5.196	sta:9:sta:0.35:3.15,armor:66:armor:0.031:2.046
-R	priest/discipline	34	18879	0	gear	10.41	sta:20:sta:0.35:7,armor:110:armor:0.031:3.41
-R	priest/discipline	34	19395	0	gear	9.9	mp5:9:mp5:1.1:9.9
-R	priest/discipline	34	19893	0	gear	25.2	sta:10:sta:0.35:3.5,int:10:int:0.57:5.7,spellHit:1:spellHit:5:5,sp:11:sp:1:11
-R	priest/discipline	34	20330	0	gear	37.221000000000004	int:27:int:0.57:15.39,spi:11:spi:1.1:12.1,sta:12:sta:0.35:4.2,crit:1:spellCrit:2.4:2.4,armor:101:armor:0.031:3.131
-R	priest/discipline	34	20652	0	gear	1.643	armor:53:armor:0.031:1.643
-R	priest/discipline	34	20652	12745	gear	19.993	int:15:int:0.57:8.55,sta:8:sta:0.35:2.8,sp:7:sp:1:7,armor:53:armor:0.031:1.643
-R	priest/discipline	34	20652	12746	gear	25.993000000000002	int:15:int:0.57:8.55,spi:8:spi:1.1:8.8,sp:7:sp:1:7,armor:53:armor:0.031:1.643
-R	priest/discipline	34	20652	12747	gear	22.693	spi:8:spi:1.1:8.8,sta:15:sta:0.35:5.25,sp:7:sp:1:7,armor:53:armor:0.031:1.643
-R	priest/discipline	34	20652	12748	gear	16.453	int:8:int:0.57:4.56,sta:15:sta:0.35:5.25,spDmg:5:sp:1:5,armor:53:armor:0.031:1.643
-R	priest/discipline	34	20652	12749	gear	23.993000000000002	int:15:int:0.57:8.55,spi:8:spi:1.1:8.8,spDmg:5:sp:1:5,armor:53:armor:0.031:1.643
-R	priest/discipline	34	20652	12750	gear	20.693	spi:8:spi:1.1:8.8,sta:15:sta:0.35:5.25,spDmg:5:sp:1:5,armor:53:armor:0.031:1.643
-R	priest/discipline	34	21500	0	gear	19.586000000000002	sta:14:sta:0.35:4.9,int:15:int:0.57:8.55,mp5:4:mp5:1.1:4.4,armor:56:armor:0.031:1.736
-R	priest/discipline	34	22085	0	gear	50.841	int:14:int:0.57:7.98,sta:13:sta:0.35:4.55,mp5:6:mp5:1.1:6.6,sp:16:sp:1:16,spi:12:spi:1.1:13.2,armor:81:armor:0.031:2.511
-R	priest/discipline	34	22678	0	gear	0.0	
-R	priest/discipline	34	23177	0	ranged	278.668	spShadow:10:spShadow:0.83:8.3,rdps:38.08:rdps:7.1:270.368
-R	priest/discipline	34	212583	0	mh	1.0499999999999998	sta:3:sta:0.35:1.05
-R	priest/discipline	34	217296	0	gear	8.15	sta:9:sta:0.35:3.15,sp:5:sp:1:5
-R	priest/discipline	34	220907	0	gear	30.704	sta:13:sta:0.35:4.55,int:12:int:0.57:6.84,crit:1:spellCrit:2.4:2.4,sp:14:sp:1:14,armor:94:armor:0.031:2.914
-R	priest/discipline	34	226731	0	gear	31.332	sta:7:sta:0.35:2.45,int:11:int:0.57:6.27,sp:21:sp:1:21,armor:52:armor:0.031:1.612
-R	priest/discipline	34	227967	0	gear	0.0	
-R	priest/discipline	34	228282	0	gear	43.891	sta:20:sta:0.35:7,sp:35:sp:1:35,armor:61:armor:0.031:1.891
-R	priest/discipline	34	228757	0	mh	0.0	
-R	priest/discipline	34	231168	0	gear	63.681	sta:15:sta:0.35:5.25,int:20:int:0.57:11.4,crit:1:spellCrit:2.4:2.4,spShadow:50:spShadow:0.83:41.5,armor:101:armor:0.031:3.131
-R	priest/discipline	34	233395	0	gear	76.373	sta:14:sta:0.35:4.9,int:18:int:0.57:10.26,crit:2:spellCrit:2.4:4.8,spShadow:63:spShadow:0.83:52.29,armor:133:armor:0.031:4.123
-R	priest/discipline	34	233994	0	gear	35.66	int:18:int:0.57:10.26,crit:1:spellCrit:2.4:2.4,spDmg:23:sp:1:23
-R	priest/discipline	34	234576	0	mh	65.31	sta:21:sta:0.35:7.35,int:8:int:0.57:4.56,crit:1:spellCrit:2.4:2.4,spDmg:51:sp:1:51
-R	priest/discipline	34	236277	0	gear	28.83	sta:8:sta:0.35:2.8,int:9:int:0.57:5.13,spi:9:spi:1.1:9.9,spDmg:11:sp:1:11
-R	priest/discipline	34	239565	0	gear	87.34599999999999	sta:15:sta:0.35:5.25,int:17:int:0.57:9.69,crit:2:spellCrit:2.4:4.8,spShadow:76:spShadow:0.83:63.08,armor:146:armor:0.031:4.526
-R	priest/discipline	34	247789	0	ranged	28.4	rdps:4:rdps:7.1:28.4
-R	priest/discipline	34	254029	0	gear	8.256	int:7:int:0.57:3.99,sta:9:sta:0.35:3.15,armor:36:armor:0.031:1.116
-R	priest/discipline	34	260829	0	gear	1.3639999999999999	armor:44:armor:0.031:1.364
-R	priest/discipline	34	271909	0	gear	4.8999999999999995	sta:14:sta:0.35:4.9
-R	priest/discipline	34	272847	0	mh	3.0999999999999996	sta:2:sta:0.35:0.7,crit:1:spellCrit:2.4:2.4
-R	priest/discipline	34	275831	0	gear	2.8499999999999996	int:5:int:0.57:2.85
-R	priest/discipline	34	278019	0	gear	6.1	sta:6:sta:0.35:2.1,sp:4:sp:1:4
-R	priest/discipline	34	288931	0	gear	16.0	sp:16:sp:1:16
+R	priest/discipline	34	16817	0	gear	42.207	sta:10:sta:0.35:3.5,int:22:int:0.57:12.54,spi:10:spi:1.1:11,mp5:4:mp5:1.1:4.4,sp:9:sp:1:9,armor:57:armor:0.031:1.767
+R	priest/discipline	34	17737	0	oh	8.559999999999999	hit:0.8:spellHit:5:4,int:8:int:0.57:4.56
+R	priest/discipline	34	18438	0	gear	0.0	
+R	priest/discipline	34	18878	0	mh	32.489999999999995	sta:8:sta:0.35:2.8,int:17:int:0.57:9.69,sp:20:sp:1:20
+R	priest/discipline	34	19391	0	gear	29.950999999999997	sta:13:sta:0.35:4.55,int:17:int:0.57:9.69,mp5:12:mp5:1.1:13.2,armor:81:armor:0.031:2.511
+R	priest/discipline	34	19891	0	oh	32.07	sta:8:sta:0.35:2.8,int:11:int:0.57:6.27,sp:18:sp:1:18,spellHit:1:spellHit:5:5
+R	priest/discipline	34	20333	0	gear	27.75	int:20:int:0.57:11.4,spi:8:spi:1.1:8.8,sta:9:sta:0.35:3.15,mp5:4:mp5:1.1:4.4
+R	priest/discipline	34	20672	0	ranged	452.67299999999994	int:9:int:0.57:5.13,sp:5:sp:1:5,rdps:62.33:rdps:7.1:442.543
+R	priest/discipline	34	21522	0	mh	4.8999999999999995	sta:14:sta:0.35:4.9
+R	priest/discipline	34	22231	0	gear	24.97	int:18:int:0.57:10.26,sta:11:sta:0.35:3.85,hit:1:spellHit:5:5,sp:4:sp:1:4,armor:60:armor:0.031:1.86
+R	priest/discipline	34	22711	0	gear	30.008	sta:6:sta:0.35:2.1,int:6:int:0.57:3.42,sp:23:sp:1:23,armor:48:armor:0.031:1.488
+R	priest/discipline	34	23237	0	gear	8.1	int:10:int:0.57:5.7,crit:1:spellCrit:2.4:2.4
+R	priest/discipline	34	213088	0	gear	8.824	sta:4:sta:0.35:1.4,int:4:int:0.57:2.28,spi:4:spi:1.1:4.4,armor:24:armor:0.031:0.744
+R	priest/discipline	34	217301	0	gear	6.4399999999999995	sta:7:sta:0.35:2.45,int:7:int:0.57:3.99
+R	priest/discipline	34	221025	0	gear	29.156999999999996	sta:7:sta:0.35:2.45,int:8:int:0.57:4.56,sp:21:sp:1:21,armor:37:armor:0.031:1.147
+R	priest/discipline	34	226744	0	gear	21.975999999999996	sta:11:sta:0.35:3.85,int:10:int:0.57:5.7,spi:10:spi:1.1:11,armor:46:armor:0.031:1.426
+R	priest/discipline	34	227980	0	gear	48.509	sta:12:sta:0.35:4.2,int:15:int:0.57:8.55,spi:10:spi:1.1:11,sp:22:sp:1:22,armor:89:armor:0.031:2.759
+R	priest/discipline	34	228292	0	gear	11.738999999999999	sta:23:sta:0.35:8.05,armor:119:armor:0.031:3.689
+R	priest/discipline	34	229374	0	mh	3.5	sta:10:sta:0.35:3.5
+R	priest/discipline	34	231271	0	gear	26.0	sp:26:sp:1:26
+R	priest/discipline	34	233502	0	gear	8.85	sta:11:sta:0.35:3.85,hit:1:spellHit:5:5
+R	priest/discipline	34	234020	0	gear	34.01	sta:7:sta:0.35:2.45,int:8:int:0.57:4.56,hit:1:spellHit:5:5,sp:22:sp:1:22
+R	priest/discipline	34	234614	0	gear	0.0	
+R	priest/discipline	34	236284	0	mh	148.6	sta:20:sta:0.35:7,int:20:int:0.57:11.4,hit:2:spellHit:5:10,crit:3:spellCrit:2.4:7.2,sp:113:sp:1:113
+R	priest/discipline	34	239581	0	gear	60.55	sta:17:sta:0.35:5.95,int:17:int:0.57:9.69,spShadow:50:spShadow:0.83:41.5,armor:110:armor:0.031:3.41
+R	priest/discipline	34	249234	0	ranged	285.10699999999997	sp:7:sp:1:7,rdps:39.17:rdps:7.1:278.107
+R	priest/discipline	34	254033	0	gear	16.04	spDmg:6:sp:1:6,spi:8:spi:1.1:8.8,armor:40:armor:0.031:1.24
+R	priest/discipline	34	260820	0	gear	0.0	
+R	priest/discipline	34	271661	0	gear	0.062	armor:2:armor:0.031:0.062
+R	priest/discipline	34	272406	0	gear	21.98	int:14:int:0.57:7.98,hit:1:spellHit:5:5,sp:9:sp:1:9
+R	priest/discipline	34	273423	0	gear	37.125	int:10:int:0.57:5.7,sta:26:sta:0.35:9.1,spDmg:9:sp:1:9,spi:10:spi:1.1:11,armor:75:armor:0.031:2.325
+R	priest/discipline	34	274919	0	ranged	238.33499999999998	spShadow:7:spShadow:0.83:5.81,rdps:32.75:rdps:7.1:232.525
+R	priest/discipline	34	276888	0	mh	3.34	int:2:int:0.57:1.14,spi:2:spi:1.1:2.2
+R	priest/discipline	34	279826	0	gear	33.032	sta:13:sta:0.35:4.55,spi:10:spi:1.1:11,int:8:int:0.57:4.56,sp:11:sp:1:11,armor:62:armor:0.031:1.922
+R	priest/discipline	34	281315	0	gear	2.268	int:3:int:0.57:1.71,armor:18:armor:0.031:0.558
+R	priest/discipline	34	284197	0	gear	3.854	sta:8:sta:0.35:2.8,armor:34:armor:0.031:1.054
+R	priest/discipline	34	286997	0	gear	30.281000000000002	spi:17:spi:1.1:18.7,sp:10:sp:1:10,armor:51:armor:0.031:1.581
 R	priest/discipline	45	35	0	mh	0.0	
 R	priest/discipline	45	1299	0	gear	11.15	sta:4:sta:2:8,spi:3:spi:0.25:0.75,armor:20:armor:0.12:2.4
 R	priest/discipline	45	1831	0	mh	0.0	
@@ -4193,7 +4523,7 @@ R	priest/discipline	45	2364	0	gear	2.16	armor:18:armor:0.12:2.16
 R	priest/discipline	45	2955	0	gear	29.66	sta:11:sta:2:22,spi:10:spi:0.25:2.5,armor:43:armor:0.12:5.16
 R	priest/discipline	45	3423	0	oh	0.0	
 R	priest/discipline	45	3947	0	gear	3.5999999999999996	armor:30:armor:0.12:3.6
-R	priest/discipline	45	4454	0	mh	0.5	spi:2:spi:0.25:0.5
+R	priest/discipline	45	4454	0	mh	0.75	spi:3:spi:0.25:0.75
 R	priest/discipline	45	4947	0	mh	0.0	
 R	priest/discipline	45	5393	0	mh	0.0	
 R	priest/discipline	45	6333	0	mh	4.0	sta:2:sta:2:4
@@ -4243,8 +4573,8 @@ R	priest/discipline	45	7355	12757	gear	2.28	armor:19:armor:0.12:2.28
 R	priest/discipline	45	7355	12758	gear	2.28	armor:19:armor:0.12:2.28
 R	priest/discipline	45	7355	12759	gear	2.28	armor:19:armor:0.12:2.28
 R	priest/discipline	45	7355	12761	gear	10.56	spShadow:9:spShadow:0.92:8.28,armor:19:armor:0.12:2.28
-R	priest/discipline	45	7757	0	mh	30.5	sta:7:sta:2:14,int:15:int:1.1:16.5
-R	priest/discipline	45	9491	0	gear	23.77	sta:5:sta:2:10,int:8:int:1.1:8.8,spi:5:spi:0.25:1.25,armor:31:armor:0.12:3.72
+R	priest/discipline	45	7757	0	mh	34.0	sta:17:sta:2:34
+R	priest/discipline	45	9491	0	gear	23.77	int:8:int:1.1:8.8,spi:5:spi:0.25:1.25,sta:5:sta:2:10,armor:31:armor:0.12:3.72
 R	priest/discipline	45	9875	0	gear	3.48	armor:29:armor:0.12:3.48
 R	priest/discipline	45	9875	12718	gear	28.28	int:8:int:1.1:8.8,sta:8:sta:2:16,armor:29:armor:0.12:3.48
 R	priest/discipline	45	9875	12719	gear	21.48	spi:8:spi:0.25:2,sta:8:sta:2:16,armor:29:armor:0.12:3.48
@@ -4297,174 +4627,196 @@ R	priest/discipline	45	10102	12759	gear	9.12	armor:76:armor:0.12:9.12
 R	priest/discipline	45	10102	12761	gear	43.16	spShadow:37:spShadow:0.92:34.04,armor:76:armor:0.12:9.12
 R	priest/discipline	45	10645	0	gear	0.0	
 R	priest/discipline	45	11288	0	ranged	194.5	sp:2:sp:1:2,rdps:17.5:rdps:11:192.5
-R	priest/discipline	45	11808	0	gear	48.879999999999995	sta:20:sta:2:40,armor:74:armor:0.12:8.88
-R	priest/discipline	45	12015	0	gear	0.0	
-R	priest/discipline	45	12015	12718	gear	27.9	int:9:int:1.1:9.9,sta:9:sta:2:18
-R	priest/discipline	45	12015	12719	gear	20.25	spi:9:spi:0.25:2.25,sta:9:sta:2:18
-R	priest/discipline	45	12015	12720	gear	12.15	int:9:int:1.1:9.9,spi:9:spi:0.25:2.25
-R	priest/discipline	45	12015	12721	gear	18.0	sta:9:sta:2:18
-R	priest/discipline	45	12015	12722	gear	18.0	sta:9:sta:2:18
-R	priest/discipline	45	12015	12723	gear	9.9	int:9:int:1.1:9.9
-R	priest/discipline	45	12015	12724	gear	9.9	int:9:int:1.1:9.9
-R	priest/discipline	45	12015	12725	gear	2.25	spi:9:spi:0.25:2.25
-R	priest/discipline	45	12015	12726	gear	2.25	spi:9:spi:0.25:2.25
-R	priest/discipline	45	12015	12727	gear	0.0	
-R	priest/discipline	45	12015	12728	gear	0.0	
-R	priest/discipline	45	12015	12729	gear	15.400000000000002	int:14:int:1.1:15.4
-R	priest/discipline	45	12015	12730	gear	3.5	spi:14:spi:0.25:3.5
-R	priest/discipline	45	12015	12731	gear	28.0	sta:14:sta:2:28
-R	priest/discipline	45	12015	12732	gear	0.0	
-R	priest/discipline	45	12015	12733	gear	0.0	
-R	priest/discipline	45	12015	12737	gear	0.0	
-R	priest/discipline	45	12015	12738	gear	5.4	mp5:6:mp5:0.9:5.4
-R	priest/discipline	45	12015	12739	gear	0.0	
-R	priest/discipline	45	12015	12740	gear	18.0	sta:9:sta:2:18
-R	priest/discipline	45	12015	12741	gear	18.0	sta:9:sta:2:18
-R	priest/discipline	45	12015	12742	gear	18.0	sta:9:sta:2:18
-R	priest/discipline	45	12015	12743	gear	18.0	sta:9:sta:2:18
-R	priest/discipline	45	12015	12744	gear	18.0	sta:9:sta:2:18
-R	priest/discipline	45	12015	12745	gear	28.0	int:10:int:1.1:11,sta:6:sta:2:12,sp:5:sp:1:5
-R	priest/discipline	45	12015	12746	gear	17.5	int:10:int:1.1:11,spi:6:spi:0.25:1.5,sp:5:sp:1:5
-R	priest/discipline	45	12015	12747	gear	26.5	spi:6:spi:0.25:1.5,sta:10:sta:2:20,sp:5:sp:1:5
-R	priest/discipline	45	12015	12748	gear	29.6	int:6:int:1.1:6.6,sta:10:sta:2:20,spDmg:3:sp:1:3
-R	priest/discipline	45	12015	12749	gear	15.5	int:10:int:1.1:11,spi:6:spi:0.25:1.5,spDmg:3:sp:1:3
-R	priest/discipline	45	12015	12750	gear	24.5	spi:6:spi:0.25:1.5,sta:10:sta:2:20,spDmg:3:sp:1:3
-R	priest/discipline	45	12015	12751	gear	20.0	sta:10:sta:2:20
-R	priest/discipline	45	12015	12752	gear	20.0	sta:10:sta:2:20
-R	priest/discipline	45	12015	12753	gear	20.0	sta:10:sta:2:20
-R	priest/discipline	45	12015	12754	gear	25.0	sp:5:sp:1:5,sta:10:sta:2:20
-R	priest/discipline	45	12015	12755	gear	25.0	sp:5:sp:1:5,sta:10:sta:2:20
-R	priest/discipline	45	12805	0	gear	0.0	
-R	priest/discipline	45	13360	0	mh	22.5	sta:5:sta:2:10,int:10:int:1.1:11,spi:6:spi:0.25:1.5
-R	priest/discipline	45	14108	0	gear	9.120000000000001	spi:12:spi:0.25:3,armor:51:armor:0.12:6.12
-R	priest/discipline	45	14213	0	gear	5.88	armor:49:armor:0.12:5.88
-R	priest/discipline	45	14213	12718	gear	36.88	int:10:int:1.1:11,sta:10:sta:2:20,armor:49:armor:0.12:5.88
-R	priest/discipline	45	14213	12719	gear	28.38	spi:10:spi:0.25:2.5,sta:10:sta:2:20,armor:49:armor:0.12:5.88
-R	priest/discipline	45	14213	12720	gear	19.38	int:10:int:1.1:11,spi:10:spi:0.25:2.5,armor:49:armor:0.12:5.88
-R	priest/discipline	45	14213	12729	gear	22.38	int:15:int:1.1:16.5,armor:49:armor:0.12:5.88
-R	priest/discipline	45	14213	12730	gear	9.629999999999999	spi:15:spi:0.25:3.75,armor:49:armor:0.12:5.88
-R	priest/discipline	45	14213	12731	gear	35.88	sta:15:sta:2:30,armor:49:armor:0.12:5.88
-R	priest/discipline	45	14213	12734	gear	23.88	sp:18:sp:1:18,armor:49:armor:0.12:5.88
-R	priest/discipline	45	14213	12735	gear	16.88	spDmg:11:sp:1:11,armor:49:armor:0.12:5.88
-R	priest/discipline	45	14213	12740	gear	25.88	sta:10:sta:2:20,armor:49:armor:0.12:5.88
-R	priest/discipline	45	14213	12741	gear	25.88	sta:10:sta:2:20,armor:49:armor:0.12:5.88
-R	priest/discipline	45	14213	12742	gear	25.88	sta:10:sta:2:20,armor:49:armor:0.12:5.88
-R	priest/discipline	45	14213	12743	gear	25.88	sta:10:sta:2:20,armor:49:armor:0.12:5.88
-R	priest/discipline	45	14213	12744	gear	25.88	sta:10:sta:2:20,armor:49:armor:0.12:5.88
-R	priest/discipline	45	14213	12745	gear	35.980000000000004	int:11:int:1.1:12.1,sta:6:sta:2:12,sp:6:sp:1:6,armor:49:armor:0.12:5.88
-R	priest/discipline	45	14213	12746	gear	25.48	int:11:int:1.1:12.1,spi:6:spi:0.25:1.5,sp:6:sp:1:6,armor:49:armor:0.12:5.88
-R	priest/discipline	45	14213	12747	gear	35.38	spi:6:spi:0.25:1.5,sta:11:sta:2:22,sp:6:sp:1:6,armor:49:armor:0.12:5.88
-R	priest/discipline	45	14213	12748	gear	38.480000000000004	int:6:int:1.1:6.6,sta:11:sta:2:22,spDmg:4:sp:1:4,armor:49:armor:0.12:5.88
-R	priest/discipline	45	14213	12749	gear	23.48	int:11:int:1.1:12.1,spi:6:spi:0.25:1.5,spDmg:4:sp:1:4,armor:49:armor:0.12:5.88
-R	priest/discipline	45	14213	12750	gear	33.38	spi:6:spi:0.25:1.5,sta:11:sta:2:22,spDmg:4:sp:1:4,armor:49:armor:0.12:5.88
-R	priest/discipline	45	14213	12756	gear	5.88	armor:49:armor:0.12:5.88
-R	priest/discipline	45	14213	12757	gear	5.88	armor:49:armor:0.12:5.88
-R	priest/discipline	45	14213	12758	gear	5.88	armor:49:armor:0.12:5.88
-R	priest/discipline	45	14213	12759	gear	5.88	armor:49:armor:0.12:5.88
-R	priest/discipline	45	14213	12761	gear	25.2	spShadow:21:spShadow:0.92:19.32,armor:49:armor:0.12:5.88
-R	priest/discipline	45	14312	0	gear	7.68	armor:64:armor:0.12:7.68
-R	priest/discipline	45	14312	12718	gear	63.48	int:18:int:1.1:19.8,sta:18:sta:2:36,armor:64:armor:0.12:7.68
-R	priest/discipline	45	14312	12719	gear	48.18	spi:18:spi:0.25:4.5,sta:18:sta:2:36,armor:64:armor:0.12:7.68
-R	priest/discipline	45	14312	12720	gear	31.98	int:18:int:1.1:19.8,spi:18:spi:0.25:4.5,armor:64:armor:0.12:7.68
-R	priest/discipline	45	14312	12729	gear	37.38	int:27:int:1.1:29.7,armor:64:armor:0.12:7.68
-R	priest/discipline	45	14312	12730	gear	14.43	spi:27:spi:0.25:6.75,armor:64:armor:0.12:7.68
-R	priest/discipline	45	14312	12731	gear	61.68	sta:27:sta:2:54,armor:64:armor:0.12:7.68
-R	priest/discipline	45	14312	12734	gear	39.68	sp:32:sp:1:32,armor:64:armor:0.12:7.68
-R	priest/discipline	45	14312	12735	gear	27.68	spDmg:20:sp:1:20,armor:64:armor:0.12:7.68
-R	priest/discipline	45	14312	12740	gear	43.68	sta:18:sta:2:36,armor:64:armor:0.12:7.68
-R	priest/discipline	45	14312	12741	gear	43.68	sta:18:sta:2:36,armor:64:armor:0.12:7.68
-R	priest/discipline	45	14312	12742	gear	43.68	sta:18:sta:2:36,armor:64:armor:0.12:7.68
-R	priest/discipline	45	14312	12743	gear	43.68	sta:18:sta:2:36,armor:64:armor:0.12:7.68
-R	priest/discipline	45	14312	12744	gear	43.68	sta:18:sta:2:36,armor:64:armor:0.12:7.68
-R	priest/discipline	45	14312	12745	gear	61.68	int:20:int:1.1:22,sta:11:sta:2:22,sp:10:sp:1:10,armor:64:armor:0.12:7.68
-R	priest/discipline	45	14312	12746	gear	42.43	int:20:int:1.1:22,spi:11:spi:0.25:2.75,sp:10:sp:1:10,armor:64:armor:0.12:7.68
-R	priest/discipline	45	14312	12747	gear	60.43	spi:11:spi:0.25:2.75,sta:20:sta:2:40,sp:10:sp:1:10,armor:64:armor:0.12:7.68
-R	priest/discipline	45	14312	12748	gear	65.78	int:11:int:1.1:12.1,sta:20:sta:2:40,spDmg:6:sp:1:6,armor:64:armor:0.12:7.68
-R	priest/discipline	45	14312	12749	gear	38.43	int:20:int:1.1:22,spi:11:spi:0.25:2.75,spDmg:6:sp:1:6,armor:64:armor:0.12:7.68
-R	priest/discipline	45	14312	12750	gear	56.43	spi:11:spi:0.25:2.75,sta:20:sta:2:40,spDmg:6:sp:1:6,armor:64:armor:0.12:7.68
-R	priest/discipline	45	14312	12756	gear	7.68	armor:64:armor:0.12:7.68
-R	priest/discipline	45	14312	12757	gear	7.68	armor:64:armor:0.12:7.68
-R	priest/discipline	45	14312	12758	gear	7.68	armor:64:armor:0.12:7.68
-R	priest/discipline	45	14312	12759	gear	7.68	armor:64:armor:0.12:7.68
-R	priest/discipline	45	14312	12761	gear	43.56	spShadow:39:spShadow:0.92:35.88,armor:64:armor:0.12:7.68
-R	priest/discipline	45	14440	0	gear	17.1	sta:6:sta:2:12,spi:6:spi:0.25:1.5,armor:30:armor:0.12:3.6
-R	priest/discipline	45	15299	0	gear	1.08	armor:9:armor:0.12:1.08
-R	priest/discipline	45	15939	0	oh	0.0	
-R	priest/discipline	45	15939	12718	oh	27.9	int:9:int:1.1:9.9,sta:9:sta:2:18
-R	priest/discipline	45	15939	12719	oh	20.25	spi:9:spi:0.25:2.25,sta:9:sta:2:18
-R	priest/discipline	45	15939	12720	oh	12.15	int:9:int:1.1:9.9,spi:9:spi:0.25:2.25
-R	priest/discipline	45	15939	12721	oh	18.0	sta:9:sta:2:18
-R	priest/discipline	45	15939	12722	oh	18.0	sta:9:sta:2:18
-R	priest/discipline	45	15939	12723	oh	9.9	int:9:int:1.1:9.9
-R	priest/discipline	45	15939	12724	oh	9.9	int:9:int:1.1:9.9
-R	priest/discipline	45	15939	12725	oh	2.25	spi:9:spi:0.25:2.25
-R	priest/discipline	45	15939	12726	oh	2.25	spi:9:spi:0.25:2.25
-R	priest/discipline	45	15939	12727	oh	0.0	
-R	priest/discipline	45	15939	12728	oh	0.0	
-R	priest/discipline	45	15939	12729	oh	15.400000000000002	int:14:int:1.1:15.4
-R	priest/discipline	45	15939	12730	oh	3.5	spi:14:spi:0.25:3.5
-R	priest/discipline	45	15939	12731	oh	28.0	sta:14:sta:2:28
-R	priest/discipline	45	15939	12732	oh	0.0	
-R	priest/discipline	45	15939	12733	oh	0.0	
-R	priest/discipline	45	15939	12734	oh	16.0	sp:16:sp:1:16
-R	priest/discipline	45	15939	12735	oh	10.0	spDmg:10:sp:1:10
-R	priest/discipline	45	15939	12740	oh	18.0	sta:9:sta:2:18
-R	priest/discipline	45	15939	12741	oh	18.0	sta:9:sta:2:18
-R	priest/discipline	45	15939	12742	oh	18.0	sta:9:sta:2:18
-R	priest/discipline	45	15939	12743	oh	18.0	sta:9:sta:2:18
-R	priest/discipline	45	15939	12744	oh	18.0	sta:9:sta:2:18
-R	priest/discipline	45	15939	12745	oh	28.0	int:10:int:1.1:11,sta:6:sta:2:12,sp:5:sp:1:5
-R	priest/discipline	45	15939	12746	oh	17.5	int:10:int:1.1:11,spi:6:spi:0.25:1.5,sp:5:sp:1:5
-R	priest/discipline	45	15939	12747	oh	26.5	spi:6:spi:0.25:1.5,sta:10:sta:2:20,sp:5:sp:1:5
-R	priest/discipline	45	15939	12748	oh	29.6	int:6:int:1.1:6.6,sta:10:sta:2:20,spDmg:3:sp:1:3
-R	priest/discipline	45	15939	12749	oh	15.5	int:10:int:1.1:11,spi:6:spi:0.25:1.5,spDmg:3:sp:1:3
-R	priest/discipline	45	15939	12750	oh	24.5	spi:6:spi:0.25:1.5,sta:10:sta:2:20,spDmg:3:sp:1:3
-R	priest/discipline	45	15939	12756	oh	0.0	
-R	priest/discipline	45	15939	12757	oh	0.0	
-R	priest/discipline	45	15939	12758	oh	0.0	
-R	priest/discipline	45	15939	12759	oh	0.0	
-R	priest/discipline	45	15939	12760	oh	0.0	
-R	priest/discipline	45	15939	12761	oh	18.400000000000002	spShadow:20:spShadow:0.92:18.4
+R	priest/discipline	45	11807	0	gear	39.019999999999996	spi:10:spi:0.25:2.5,sta:10:sta:2:20,int:10:int:1.1:11,armor:46:armor:0.12:5.52
+R	priest/discipline	45	12014	0	gear	0.0	
+R	priest/discipline	45	12014	12718	gear	27.9	int:9:int:1.1:9.9,sta:9:sta:2:18
+R	priest/discipline	45	12014	12719	gear	20.25	spi:9:spi:0.25:2.25,sta:9:sta:2:18
+R	priest/discipline	45	12014	12720	gear	12.15	int:9:int:1.1:9.9,spi:9:spi:0.25:2.25
+R	priest/discipline	45	12014	12721	gear	18.0	sta:9:sta:2:18
+R	priest/discipline	45	12014	12722	gear	18.0	sta:9:sta:2:18
+R	priest/discipline	45	12014	12723	gear	9.9	int:9:int:1.1:9.9
+R	priest/discipline	45	12014	12724	gear	9.9	int:9:int:1.1:9.9
+R	priest/discipline	45	12014	12725	gear	2.25	spi:9:spi:0.25:2.25
+R	priest/discipline	45	12014	12726	gear	2.25	spi:9:spi:0.25:2.25
+R	priest/discipline	45	12014	12727	gear	0.0	
+R	priest/discipline	45	12014	12728	gear	0.0	
+R	priest/discipline	45	12014	12729	gear	14.3	int:13:int:1.1:14.3
+R	priest/discipline	45	12014	12730	gear	3.25	spi:13:spi:0.25:3.25
+R	priest/discipline	45	12014	12731	gear	26.0	sta:13:sta:2:26
+R	priest/discipline	45	12014	12732	gear	0.0	
+R	priest/discipline	45	12014	12733	gear	0.0	
+R	priest/discipline	45	12014	12737	gear	0.0	
+R	priest/discipline	45	12014	12738	gear	4.5	mp5:5:mp5:0.9:4.5
+R	priest/discipline	45	12014	12739	gear	0.0	
+R	priest/discipline	45	12014	12740	gear	18.0	sta:9:sta:2:18
+R	priest/discipline	45	12014	12741	gear	18.0	sta:9:sta:2:18
+R	priest/discipline	45	12014	12742	gear	18.0	sta:9:sta:2:18
+R	priest/discipline	45	12014	12743	gear	18.0	sta:9:sta:2:18
+R	priest/discipline	45	12014	12744	gear	18.0	sta:9:sta:2:18
+R	priest/discipline	45	12014	12745	gear	24.9	int:9:int:1.1:9.9,sta:5:sta:2:10,sp:5:sp:1:5
+R	priest/discipline	45	12014	12746	gear	16.15	int:9:int:1.1:9.9,spi:5:spi:0.25:1.25,sp:5:sp:1:5
+R	priest/discipline	45	12014	12747	gear	24.25	spi:5:spi:0.25:1.25,sta:9:sta:2:18,sp:5:sp:1:5
+R	priest/discipline	45	12014	12748	gear	26.5	int:5:int:1.1:5.5,sta:9:sta:2:18,spDmg:3:sp:1:3
+R	priest/discipline	45	12014	12749	gear	14.15	int:9:int:1.1:9.9,spi:5:spi:0.25:1.25,spDmg:3:sp:1:3
+R	priest/discipline	45	12014	12750	gear	22.25	spi:5:spi:0.25:1.25,sta:9:sta:2:18,spDmg:3:sp:1:3
+R	priest/discipline	45	12014	12751	gear	18.0	sta:9:sta:2:18
+R	priest/discipline	45	12014	12752	gear	18.0	sta:9:sta:2:18
+R	priest/discipline	45	12014	12753	gear	18.0	sta:9:sta:2:18
+R	priest/discipline	45	12014	12754	gear	23.0	sp:5:sp:1:5,sta:9:sta:2:18
+R	priest/discipline	45	12014	12755	gear	25.0	sp:5:sp:1:5,sta:10:sta:2:20
+R	priest/discipline	45	12794	0	mh	0.0	
+R	priest/discipline	45	13353	0	oh	49.72	spi:10:spi:0.25:2.5,int:15:int:1.1:16.5,sta:8:sta:2:16,spShadow:16:spShadow:0.92:14.72
+R	priest/discipline	45	14107	0	gear	44.56	int:12:int:1.1:13.2,spShadow:26:spShadow:0.92:23.92,armor:62:armor:0.12:7.44
+R	priest/discipline	45	14212	0	gear	4.2	armor:35:armor:0.12:4.2
+R	priest/discipline	45	14212	12718	gear	25.900000000000002	int:7:int:1.1:7.7,sta:7:sta:2:14,armor:35:armor:0.12:4.2
+R	priest/discipline	45	14212	12719	gear	19.95	spi:7:spi:0.25:1.75,sta:7:sta:2:14,armor:35:armor:0.12:4.2
+R	priest/discipline	45	14212	12720	gear	13.650000000000002	int:7:int:1.1:7.7,spi:7:spi:0.25:1.75,armor:35:armor:0.12:4.2
+R	priest/discipline	45	14212	12729	gear	15.2	int:10:int:1.1:11,armor:35:armor:0.12:4.2
+R	priest/discipline	45	14212	12730	gear	6.7	spi:10:spi:0.25:2.5,armor:35:armor:0.12:4.2
+R	priest/discipline	45	14212	12731	gear	24.2	sta:10:sta:2:20,armor:35:armor:0.12:4.2
+R	priest/discipline	45	14212	12734	gear	16.2	sp:12:sp:1:12,armor:35:armor:0.12:4.2
+R	priest/discipline	45	14212	12735	gear	11.2	spDmg:7:sp:1:7,armor:35:armor:0.12:4.2
+R	priest/discipline	45	14212	12740	gear	18.2	sta:7:sta:2:14,armor:35:armor:0.12:4.2
+R	priest/discipline	45	14212	12741	gear	18.2	sta:7:sta:2:14,armor:35:armor:0.12:4.2
+R	priest/discipline	45	14212	12742	gear	18.2	sta:7:sta:2:14,armor:35:armor:0.12:4.2
+R	priest/discipline	45	14212	12743	gear	18.2	sta:7:sta:2:14,armor:35:armor:0.12:4.2
+R	priest/discipline	45	14212	12744	gear	18.2	sta:7:sta:2:14,armor:35:armor:0.12:4.2
+R	priest/discipline	45	14212	12745	gear	23.900000000000002	int:7:int:1.1:7.7,sta:4:sta:2:8,sp:4:sp:1:4,armor:35:armor:0.12:4.2
+R	priest/discipline	45	14212	12746	gear	16.900000000000002	int:7:int:1.1:7.7,spi:4:spi:0.25:1,sp:4:sp:1:4,armor:35:armor:0.12:4.2
+R	priest/discipline	45	14212	12747	gear	23.2	spi:4:spi:0.25:1,sta:7:sta:2:14,sp:4:sp:1:4,armor:35:armor:0.12:4.2
+R	priest/discipline	45	14212	12748	gear	24.599999999999998	int:4:int:1.1:4.4,sta:7:sta:2:14,spDmg:2:sp:1:2,armor:35:armor:0.12:4.2
+R	priest/discipline	45	14212	12749	gear	14.900000000000002	int:7:int:1.1:7.7,spi:4:spi:0.25:1,spDmg:2:sp:1:2,armor:35:armor:0.12:4.2
+R	priest/discipline	45	14212	12750	gear	21.2	spi:4:spi:0.25:1,sta:7:sta:2:14,spDmg:2:sp:1:2,armor:35:armor:0.12:4.2
+R	priest/discipline	45	14212	12756	gear	4.2	armor:35:armor:0.12:4.2
+R	priest/discipline	45	14212	12757	gear	4.2	armor:35:armor:0.12:4.2
+R	priest/discipline	45	14212	12758	gear	4.2	armor:35:armor:0.12:4.2
+R	priest/discipline	45	14212	12759	gear	4.2	armor:35:armor:0.12:4.2
+R	priest/discipline	45	14212	12761	gear	17.080000000000002	spShadow:14:spShadow:0.92:12.88,armor:35:armor:0.12:4.2
+R	priest/discipline	45	14311	0	gear	3.7199999999999998	armor:31:armor:0.12:3.72
+R	priest/discipline	45	14311	12718	gear	31.619999999999997	int:9:int:1.1:9.9,sta:9:sta:2:18,armor:31:armor:0.12:3.72
+R	priest/discipline	45	14311	12719	gear	23.97	spi:9:spi:0.25:2.25,sta:9:sta:2:18,armor:31:armor:0.12:3.72
+R	priest/discipline	45	14311	12720	gear	15.870000000000001	int:9:int:1.1:9.9,spi:9:spi:0.25:2.25,armor:31:armor:0.12:3.72
+R	priest/discipline	45	14311	12729	gear	18.02	int:13:int:1.1:14.3,armor:31:armor:0.12:3.72
+R	priest/discipline	45	14311	12730	gear	6.97	spi:13:spi:0.25:3.25,armor:31:armor:0.12:3.72
+R	priest/discipline	45	14311	12731	gear	29.72	sta:13:sta:2:26,armor:31:armor:0.12:3.72
+R	priest/discipline	45	14311	12734	gear	18.72	sp:15:sp:1:15,armor:31:armor:0.12:3.72
+R	priest/discipline	45	14311	12735	gear	13.719999999999999	spDmg:10:sp:1:10,armor:31:armor:0.12:3.72
+R	priest/discipline	45	14311	12740	gear	21.72	sta:9:sta:2:18,armor:31:armor:0.12:3.72
+R	priest/discipline	45	14311	12741	gear	21.72	sta:9:sta:2:18,armor:31:armor:0.12:3.72
+R	priest/discipline	45	14311	12742	gear	21.72	sta:9:sta:2:18,armor:31:armor:0.12:3.72
+R	priest/discipline	45	14311	12743	gear	21.72	sta:9:sta:2:18,armor:31:armor:0.12:3.72
+R	priest/discipline	45	14311	12744	gear	21.72	sta:9:sta:2:18,armor:31:armor:0.12:3.72
+R	priest/discipline	45	14311	12745	gear	28.619999999999997	int:9:int:1.1:9.9,sta:5:sta:2:10,sp:5:sp:1:5,armor:31:armor:0.12:3.72
+R	priest/discipline	45	14311	12746	gear	19.869999999999997	int:9:int:1.1:9.9,spi:5:spi:0.25:1.25,sp:5:sp:1:5,armor:31:armor:0.12:3.72
+R	priest/discipline	45	14311	12747	gear	27.97	spi:5:spi:0.25:1.25,sta:9:sta:2:18,sp:5:sp:1:5,armor:31:armor:0.12:3.72
+R	priest/discipline	45	14311	12748	gear	30.22	int:5:int:1.1:5.5,sta:9:sta:2:18,spDmg:3:sp:1:3,armor:31:armor:0.12:3.72
+R	priest/discipline	45	14311	12749	gear	17.87	int:9:int:1.1:9.9,spi:5:spi:0.25:1.25,spDmg:3:sp:1:3,armor:31:armor:0.12:3.72
+R	priest/discipline	45	14311	12750	gear	25.97	spi:5:spi:0.25:1.25,sta:9:sta:2:18,spDmg:3:sp:1:3,armor:31:armor:0.12:3.72
+R	priest/discipline	45	14311	12756	gear	3.7199999999999998	armor:31:armor:0.12:3.72
+R	priest/discipline	45	14311	12757	gear	3.7199999999999998	armor:31:armor:0.12:3.72
+R	priest/discipline	45	14311	12758	gear	3.7199999999999998	armor:31:armor:0.12:3.72
+R	priest/discipline	45	14311	12759	gear	3.7199999999999998	armor:31:armor:0.12:3.72
+R	priest/discipline	45	14311	12761	gear	21.2	spShadow:19:spShadow:0.92:17.48,armor:31:armor:0.12:3.72
+R	priest/discipline	45	14439	0	gear	9.64	spi:8:spi:0.25:2,int:4:int:1.1:4.4,armor:27:armor:0.12:3.24
+R	priest/discipline	45	15283	0	ranged	624.36	rdps:56.76:rdps:11:624.36
+R	priest/discipline	45	15283	12718	ranged	642.96	int:6:int:1.1:6.6,sta:6:sta:2:12,rdps:56.76:rdps:11:624.36
+R	priest/discipline	45	15283	12719	ranged	637.86	spi:6:spi:0.25:1.5,sta:6:sta:2:12,rdps:56.76:rdps:11:624.36
+R	priest/discipline	45	15283	12720	ranged	632.46	int:6:int:1.1:6.6,spi:6:spi:0.25:1.5,rdps:56.76:rdps:11:624.36
+R	priest/discipline	45	15283	12729	ranged	634.26	int:9:int:1.1:9.9,rdps:56.76:rdps:11:624.36
+R	priest/discipline	45	15283	12730	ranged	626.61	spi:9:spi:0.25:2.25,rdps:56.76:rdps:11:624.36
+R	priest/discipline	45	15283	12731	ranged	642.36	sta:9:sta:2:18,rdps:56.76:rdps:11:624.36
+R	priest/discipline	45	15283	12734	ranged	635.36	sp:11:sp:1:11,rdps:56.76:rdps:11:624.36
+R	priest/discipline	45	15283	12735	ranged	631.36	spDmg:7:sp:1:7,rdps:56.76:rdps:11:624.36
+R	priest/discipline	45	15283	12740	ranged	636.36	sta:6:sta:2:12,rdps:56.76:rdps:11:624.36
+R	priest/discipline	45	15283	12741	ranged	636.36	sta:6:sta:2:12,rdps:56.76:rdps:11:624.36
+R	priest/discipline	45	15283	12742	ranged	636.36	sta:6:sta:2:12,rdps:56.76:rdps:11:624.36
+R	priest/discipline	45	15283	12743	ranged	636.36	sta:6:sta:2:12,rdps:56.76:rdps:11:624.36
+R	priest/discipline	45	15283	12744	ranged	636.36	sta:6:sta:2:12,rdps:56.76:rdps:11:624.36
+R	priest/discipline	45	15283	12745	ranged	643.0600000000001	int:7:int:1.1:7.7,sta:4:sta:2:8,sp:3:sp:1:3,rdps:56.76:rdps:11:624.36
+R	priest/discipline	45	15283	12746	ranged	636.0600000000001	int:7:int:1.1:7.7,spi:4:spi:0.25:1,sp:3:sp:1:3,rdps:56.76:rdps:11:624.36
+R	priest/discipline	45	15283	12747	ranged	642.36	spi:4:spi:0.25:1,sta:7:sta:2:14,sp:3:sp:1:3,rdps:56.76:rdps:11:624.36
+R	priest/discipline	45	15283	12748	ranged	644.76	int:4:int:1.1:4.4,sta:7:sta:2:14,spDmg:2:sp:1:2,rdps:56.76:rdps:11:624.36
+R	priest/discipline	45	15283	12749	ranged	635.0600000000001	int:7:int:1.1:7.7,spi:4:spi:0.25:1,spDmg:2:sp:1:2,rdps:56.76:rdps:11:624.36
+R	priest/discipline	45	15283	12750	ranged	641.36	spi:4:spi:0.25:1,sta:7:sta:2:14,spDmg:2:sp:1:2,rdps:56.76:rdps:11:624.36
+R	priest/discipline	45	15283	12756	ranged	624.36	rdps:56.76:rdps:11:624.36
+R	priest/discipline	45	15283	12757	ranged	624.36	rdps:56.76:rdps:11:624.36
+R	priest/discipline	45	15283	12758	ranged	624.36	rdps:56.76:rdps:11:624.36
+R	priest/discipline	45	15283	12759	ranged	624.36	rdps:56.76:rdps:11:624.36
+R	priest/discipline	45	15283	12761	ranged	636.32	spShadow:13:spShadow:0.92:11.96,rdps:56.76:rdps:11:624.36
+R	priest/discipline	45	15938	0	oh	0.0	
+R	priest/discipline	45	15938	12718	oh	27.9	int:9:int:1.1:9.9,sta:9:sta:2:18
+R	priest/discipline	45	15938	12719	oh	20.25	spi:9:spi:0.25:2.25,sta:9:sta:2:18
+R	priest/discipline	45	15938	12720	oh	12.15	int:9:int:1.1:9.9,spi:9:spi:0.25:2.25
+R	priest/discipline	45	15938	12721	oh	18.0	sta:9:sta:2:18
+R	priest/discipline	45	15938	12722	oh	18.0	sta:9:sta:2:18
+R	priest/discipline	45	15938	12723	oh	9.9	int:9:int:1.1:9.9
+R	priest/discipline	45	15938	12724	oh	9.9	int:9:int:1.1:9.9
+R	priest/discipline	45	15938	12725	oh	2.25	spi:9:spi:0.25:2.25
+R	priest/discipline	45	15938	12726	oh	2.25	spi:9:spi:0.25:2.25
+R	priest/discipline	45	15938	12727	oh	0.0	
+R	priest/discipline	45	15938	12728	oh	0.0	
+R	priest/discipline	45	15938	12729	oh	15.400000000000002	int:14:int:1.1:15.4
+R	priest/discipline	45	15938	12730	oh	3.5	spi:14:spi:0.25:3.5
+R	priest/discipline	45	15938	12731	oh	28.0	sta:14:sta:2:28
+R	priest/discipline	45	15938	12732	oh	0.0	
+R	priest/discipline	45	15938	12733	oh	0.0	
+R	priest/discipline	45	15938	12734	oh	16.0	sp:16:sp:1:16
+R	priest/discipline	45	15938	12735	oh	10.0	spDmg:10:sp:1:10
+R	priest/discipline	45	15938	12740	oh	18.0	sta:9:sta:2:18
+R	priest/discipline	45	15938	12741	oh	18.0	sta:9:sta:2:18
+R	priest/discipline	45	15938	12742	oh	18.0	sta:9:sta:2:18
+R	priest/discipline	45	15938	12743	oh	18.0	sta:9:sta:2:18
+R	priest/discipline	45	15938	12744	oh	18.0	sta:9:sta:2:18
+R	priest/discipline	45	15938	12745	oh	28.0	int:10:int:1.1:11,sta:6:sta:2:12,sp:5:sp:1:5
+R	priest/discipline	45	15938	12746	oh	17.5	int:10:int:1.1:11,spi:6:spi:0.25:1.5,sp:5:sp:1:5
+R	priest/discipline	45	15938	12747	oh	26.5	spi:6:spi:0.25:1.5,sta:10:sta:2:20,sp:5:sp:1:5
+R	priest/discipline	45	15938	12748	oh	29.6	int:6:int:1.1:6.6,sta:10:sta:2:20,spDmg:3:sp:1:3
+R	priest/discipline	45	15938	12749	oh	15.5	int:10:int:1.1:11,spi:6:spi:0.25:1.5,spDmg:3:sp:1:3
+R	priest/discipline	45	15938	12750	oh	24.5	spi:6:spi:0.25:1.5,sta:10:sta:2:20,spDmg:3:sp:1:3
+R	priest/discipline	45	15938	12756	oh	0.0	
+R	priest/discipline	45	15938	12757	oh	0.0	
+R	priest/discipline	45	15938	12758	oh	0.0	
+R	priest/discipline	45	15938	12759	oh	0.0	
+R	priest/discipline	45	15938	12760	oh	0.0	
+R	priest/discipline	45	15938	12761	oh	18.400000000000002	spShadow:20:spShadow:0.92:18.4
 R	priest/discipline	45	15945	0	oh	4.5	sta:2:sta:2:4,spi:2:spi:0.25:0.5
-R	priest/discipline	45	16819	0	gear	40.980000000000004	sta:8:sta:2:16,int:14:int:1.1:15.4,spi:10:spi:0.25:2.5,mp5:2:mp5:0.9:1.8,armor:44:armor:0.12:5.28
-R	priest/discipline	45	17739	0	gear	28.439999999999998	sta:12:sta:2:24,armor:37:armor:0.12:4.44
-R	priest/discipline	45	18440	0	gear	25.92	sta:9:sta:2:18,armor:66:armor:0.12:7.92
-R	priest/discipline	45	18879	0	gear	53.2	sta:20:sta:2:40,armor:110:armor:0.12:13.2
-R	priest/discipline	45	19395	0	gear	8.1	mp5:9:mp5:0.9:8.1
-R	priest/discipline	45	19893	0	gear	50.1	sta:10:sta:2:20,int:10:int:1.1:11,spellHit:1:spellHit:8.1:8.1,sp:11:sp:1:11
-R	priest/discipline	45	20330	0	gear	72.17	int:27:int:1.1:29.7,spi:11:spi:0.25:2.75,sta:12:sta:2:24,crit:1:spellCrit:3.6:3.6,armor:101:armor:0.12:12.12
-R	priest/discipline	45	20652	0	gear	6.359999999999999	armor:53:armor:0.12:6.36
-R	priest/discipline	45	20652	12745	gear	45.86	int:15:int:1.1:16.5,sta:8:sta:2:16,sp:7:sp:1:7,armor:53:armor:0.12:6.36
-R	priest/discipline	45	20652	12746	gear	31.86	int:15:int:1.1:16.5,spi:8:spi:0.25:2,sp:7:sp:1:7,armor:53:armor:0.12:6.36
-R	priest/discipline	45	20652	12747	gear	45.36	spi:8:spi:0.25:2,sta:15:sta:2:30,sp:7:sp:1:7,armor:53:armor:0.12:6.36
-R	priest/discipline	45	20652	12748	gear	50.16	int:8:int:1.1:8.8,sta:15:sta:2:30,spDmg:5:sp:1:5,armor:53:armor:0.12:6.36
-R	priest/discipline	45	20652	12749	gear	29.86	int:15:int:1.1:16.5,spi:8:spi:0.25:2,spDmg:5:sp:1:5,armor:53:armor:0.12:6.36
-R	priest/discipline	45	20652	12750	gear	43.36	spi:8:spi:0.25:2,sta:15:sta:2:30,spDmg:5:sp:1:5,armor:53:armor:0.12:6.36
-R	priest/discipline	45	21500	0	gear	54.82	sta:14:sta:2:28,int:15:int:1.1:16.5,mp5:4:mp5:0.9:3.6,armor:56:armor:0.12:6.72
-R	priest/discipline	45	22085	0	gear	75.52000000000001	int:14:int:1.1:15.4,sta:13:sta:2:26,mp5:6:mp5:0.9:5.4,sp:16:sp:1:16,spi:12:spi:0.25:3,armor:81:armor:0.12:9.72
-R	priest/discipline	45	22678	0	gear	0.0	
-R	priest/discipline	45	23177	0	ranged	428.08	spShadow:10:spShadow:0.92:9.2,rdps:38.08:rdps:11:418.88
-R	priest/discipline	45	212583	0	mh	6.0	sta:3:sta:2:6
-R	priest/discipline	45	217296	0	gear	23.0	sta:9:sta:2:18,sp:5:sp:1:5
-R	priest/discipline	45	220907	0	gear	68.08	sta:13:sta:2:26,int:12:int:1.1:13.2,crit:1:spellCrit:3.6:3.6,sp:14:sp:1:14,armor:94:armor:0.12:11.28
-R	priest/discipline	45	226731	0	gear	53.34	sta:7:sta:2:14,int:11:int:1.1:12.1,sp:21:sp:1:21,armor:52:armor:0.12:6.24
-R	priest/discipline	45	227967	0	gear	0.0	
-R	priest/discipline	45	228282	0	gear	82.32	sta:20:sta:2:40,sp:35:sp:1:35,armor:61:armor:0.12:7.32
-R	priest/discipline	45	228757	0	mh	0.0	
-R	priest/discipline	45	231168	0	gear	113.72	sta:15:sta:2:30,int:20:int:1.1:22,crit:1:spellCrit:3.6:3.6,spShadow:50:spShadow:0.92:46,armor:101:armor:0.12:12.12
-R	priest/discipline	45	233395	0	gear	128.92000000000002	sta:14:sta:2:28,int:18:int:1.1:19.8,crit:2:spellCrit:3.6:7.2,spShadow:63:spShadow:0.92:57.96,armor:133:armor:0.12:15.96
-R	priest/discipline	45	233994	0	gear	46.400000000000006	int:18:int:1.1:19.8,crit:1:spellCrit:3.6:3.6,spDmg:23:sp:1:23
-R	priest/discipline	45	234576	0	mh	105.4	sta:21:sta:2:42,int:8:int:1.1:8.8,crit:1:spellCrit:3.6:3.6,spDmg:51:sp:1:51
-R	priest/discipline	45	236277	0	gear	39.15	sta:8:sta:2:16,int:9:int:1.1:9.9,spi:9:spi:0.25:2.25,spDmg:11:sp:1:11
-R	priest/discipline	45	239565	0	gear	143.34	sta:15:sta:2:30,int:17:int:1.1:18.7,crit:2:spellCrit:3.6:7.2,spShadow:76:spShadow:0.92:69.92,armor:146:armor:0.12:17.52
-R	priest/discipline	45	247789	0	ranged	44.0	rdps:4:rdps:11:44
-R	priest/discipline	45	254029	0	gear	30.020000000000003	int:7:int:1.1:7.7,sta:9:sta:2:18,armor:36:armor:0.12:4.32
-R	priest/discipline	45	260829	0	gear	5.279999999999999	armor:44:armor:0.12:5.28
-R	priest/discipline	45	271909	0	gear	28.0	sta:14:sta:2:28
-R	priest/discipline	45	272847	0	mh	7.6	sta:2:sta:2:4,crit:1:spellCrit:3.6:3.6
-R	priest/discipline	45	275831	0	gear	5.5	int:5:int:1.1:5.5
-R	priest/discipline	45	278019	0	gear	16.0	sta:6:sta:2:12,sp:4:sp:1:4
-R	priest/discipline	45	288931	0	gear	16.0	sp:16:sp:1:16
+R	priest/discipline	45	16817	0	gear	66.14	sta:10:sta:2:20,int:22:int:1.1:24.2,spi:10:spi:0.25:2.5,mp5:4:mp5:0.9:3.6,sp:9:sp:1:9,armor:57:armor:0.12:6.84
+R	priest/discipline	45	17737	0	oh	15.280000000000001	hit:0.8:spellHit:8.1:6.48,int:8:int:1.1:8.8
+R	priest/discipline	45	18438	0	gear	0.0	
+R	priest/discipline	45	18878	0	mh	54.7	sta:8:sta:2:16,int:17:int:1.1:18.7,sp:20:sp:1:20
+R	priest/discipline	45	19391	0	gear	65.22	sta:13:sta:2:26,int:17:int:1.1:18.7,mp5:12:mp5:0.9:10.8,armor:81:armor:0.12:9.72
+R	priest/discipline	45	19891	0	oh	54.2	sta:8:sta:2:16,int:11:int:1.1:12.1,sp:18:sp:1:18,spellHit:1:spellHit:8.1:8.1
+R	priest/discipline	45	20333	0	gear	45.6	int:20:int:1.1:22,spi:8:spi:0.25:2,sta:9:sta:2:18,mp5:4:mp5:0.9:3.6
+R	priest/discipline	45	20672	0	ranged	700.53	int:9:int:1.1:9.9,sp:5:sp:1:5,rdps:62.33:rdps:11:685.63
+R	priest/discipline	45	21522	0	mh	28.0	sta:14:sta:2:28
+R	priest/discipline	45	22231	0	gear	61.099999999999994	int:18:int:1.1:19.8,sta:11:sta:2:22,hit:1:spellHit:8.1:8.1,sp:4:sp:1:4,armor:60:armor:0.12:7.2
+R	priest/discipline	45	22711	0	gear	47.36	sta:6:sta:2:12,int:6:int:1.1:6.6,sp:23:sp:1:23,armor:48:armor:0.12:5.76
+R	priest/discipline	45	23237	0	gear	14.6	int:10:int:1.1:11,crit:1:spellCrit:3.6:3.6
+R	priest/discipline	45	213088	0	gear	16.28	sta:4:sta:2:8,int:4:int:1.1:4.4,spi:4:spi:0.25:1,armor:24:armor:0.12:2.88
+R	priest/discipline	45	217301	0	gear	21.700000000000003	sta:7:sta:2:14,int:7:int:1.1:7.7
+R	priest/discipline	45	221025	0	gear	48.239999999999995	sta:7:sta:2:14,int:8:int:1.1:8.8,sp:21:sp:1:21,armor:37:armor:0.12:4.44
+R	priest/discipline	45	226744	0	gear	41.019999999999996	sta:11:sta:2:22,int:10:int:1.1:11,spi:10:spi:0.25:2.5,armor:46:armor:0.12:5.52
+R	priest/discipline	45	227980	0	gear	75.68	sta:12:sta:2:24,int:15:int:1.1:16.5,spi:10:spi:0.25:2.5,sp:22:sp:1:22,armor:89:armor:0.12:10.68
+R	priest/discipline	45	228292	0	gear	60.28	sta:23:sta:2:46,armor:119:armor:0.12:14.28
+R	priest/discipline	45	229374	0	mh	20.0	sta:10:sta:2:20
+R	priest/discipline	45	231271	0	gear	26.0	sp:26:sp:1:26
+R	priest/discipline	45	233502	0	gear	30.1	sta:11:sta:2:22,hit:1:spellHit:8.1:8.1
+R	priest/discipline	45	234020	0	gear	52.9	sta:7:sta:2:14,int:8:int:1.1:8.8,hit:1:spellHit:8.1:8.1,sp:22:sp:1:22
+R	priest/discipline	45	234614	0	gear	0.0	
+R	priest/discipline	45	236284	0	mh	202.0	sta:20:sta:2:40,int:20:int:1.1:22,hit:2:spellHit:8.1:16.2,crit:3:spellCrit:3.6:10.8,sp:113:sp:1:113
+R	priest/discipline	45	239581	0	gear	111.9	sta:17:sta:2:34,int:17:int:1.1:18.7,spShadow:50:spShadow:0.92:46,armor:110:armor:0.12:13.2
+R	priest/discipline	45	249234	0	ranged	437.87	sp:7:sp:1:7,rdps:39.17:rdps:11:430.87
+R	priest/discipline	45	254033	0	gear	12.8	spDmg:6:sp:1:6,spi:8:spi:0.25:2,armor:40:armor:0.12:4.8
+R	priest/discipline	45	260820	0	gear	0.0	
+R	priest/discipline	45	271661	0	gear	0.24	armor:2:armor:0.12:0.24
+R	priest/discipline	45	272406	0	gear	32.5	int:14:int:1.1:15.4,hit:1:spellHit:8.1:8.1,sp:9:sp:1:9
+R	priest/discipline	45	273423	0	gear	83.5	int:10:int:1.1:11,sta:26:sta:2:52,spDmg:9:sp:1:9,spi:10:spi:0.25:2.5,armor:75:armor:0.12:9
+R	priest/discipline	45	274919	0	ranged	366.69	spShadow:7:spShadow:0.92:6.44,rdps:32.75:rdps:11:360.25
+R	priest/discipline	45	276888	0	mh	2.7	int:2:int:1.1:2.2,spi:2:spi:0.25:0.5
+R	priest/discipline	45	279826	0	gear	55.739999999999995	sta:13:sta:2:26,spi:10:spi:0.25:2.5,int:8:int:1.1:8.8,sp:11:sp:1:11,armor:62:armor:0.12:7.44
+R	priest/discipline	45	281315	0	gear	5.460000000000001	int:3:int:1.1:3.3,armor:18:armor:0.12:2.16
+R	priest/discipline	45	284197	0	gear	20.08	sta:8:sta:2:16,armor:34:armor:0.12:4.08
+R	priest/discipline	45	286997	0	gear	20.37	spi:17:spi:0.25:4.25,sp:10:sp:1:10,armor:51:armor:0.12:6.12
 R	priest/discipline	55	35	0	mh	0.0	
 R	priest/discipline	55	1299	0	gear	7.77	sta:4:sta:1:4,spi:3:spi:0.95:2.85,armor:20:armor:0.046:0.92
 R	priest/discipline	55	1831	0	mh	0.0	
@@ -4472,7 +4824,7 @@ R	priest/discipline	55	2364	0	gear	0.828	armor:18:armor:0.046:0.828
 R	priest/discipline	55	2955	0	gear	22.478	sta:11:sta:1:11,spi:10:spi:0.95:9.5,armor:43:armor:0.046:1.978
 R	priest/discipline	55	3423	0	oh	0.0	
 R	priest/discipline	55	3947	0	gear	1.38	armor:30:armor:0.046:1.38
-R	priest/discipline	55	4454	0	mh	1.9	spi:2:spi:0.95:1.9
+R	priest/discipline	55	4454	0	mh	2.8499999999999996	spi:3:spi:0.95:2.85
 R	priest/discipline	55	4947	0	mh	0.0	
 R	priest/discipline	55	5393	0	mh	0.0	
 R	priest/discipline	55	6333	0	mh	2.0	sta:2:sta:1:2
@@ -4522,8 +4874,8 @@ R	priest/discipline	55	7355	12757	gear	0.874	armor:19:armor:0.046:0.874
 R	priest/discipline	55	7355	12758	gear	0.874	armor:19:armor:0.046:0.874
 R	priest/discipline	55	7355	12759	gear	2.2239999999999998	spHoly:9:spHoly:0.15:1.35,armor:19:armor:0.046:0.874
 R	priest/discipline	55	7355	12761	gear	7.7139999999999995	spShadow:9:spShadow:0.76:6.84,armor:19:armor:0.046:0.874
-R	priest/discipline	55	7757	0	mh	21.25	sta:7:sta:1:7,int:15:int:0.95:14.25
-R	priest/discipline	55	9491	0	gear	18.776	sta:5:sta:1:5,int:8:int:0.95:7.6,spi:5:spi:0.95:4.75,armor:31:armor:0.046:1.426
+R	priest/discipline	55	7757	0	mh	17.0	sta:17:sta:1:17
+R	priest/discipline	55	9491	0	gear	18.776	int:8:int:0.95:7.6,spi:5:spi:0.95:4.75,sta:5:sta:1:5,armor:31:armor:0.046:1.426
 R	priest/discipline	55	9875	0	gear	1.334	armor:29:armor:0.046:1.334
 R	priest/discipline	55	9875	12718	gear	16.934	int:8:int:0.95:7.6,sta:8:sta:1:8,armor:29:armor:0.046:1.334
 R	priest/discipline	55	9875	12719	gear	16.934	spi:8:spi:0.95:7.6,sta:8:sta:1:8,armor:29:armor:0.046:1.334
@@ -4576,174 +4928,196 @@ R	priest/discipline	55	10102	12759	gear	9.046	spHoly:37:spHoly:0.15:5.55,armor:7
 R	priest/discipline	55	10102	12761	gear	31.616	spShadow:37:spShadow:0.76:28.12,armor:76:armor:0.046:3.496
 R	priest/discipline	55	10645	0	gear	0.0	
 R	priest/discipline	55	11288	0	ranged	149.0	sp:2:sp:1:2,rdps:17.5:rdps:8.4:147
-R	priest/discipline	55	11808	0	gear	23.404	sta:20:sta:1:20,armor:74:armor:0.046:3.404
-R	priest/discipline	55	12015	0	gear	0.0	
-R	priest/discipline	55	12015	12718	gear	17.549999999999997	int:9:int:0.95:8.55,sta:9:sta:1:9
-R	priest/discipline	55	12015	12719	gear	17.549999999999997	spi:9:spi:0.95:8.55,sta:9:sta:1:9
-R	priest/discipline	55	12015	12720	gear	17.099999999999998	int:9:int:0.95:8.55,spi:9:spi:0.95:8.55
-R	priest/discipline	55	12015	12721	gear	9.0	sta:9:sta:1:9
-R	priest/discipline	55	12015	12722	gear	9.0	sta:9:sta:1:9
-R	priest/discipline	55	12015	12723	gear	8.549999999999999	int:9:int:0.95:8.55
-R	priest/discipline	55	12015	12724	gear	8.549999999999999	int:9:int:0.95:8.55
-R	priest/discipline	55	12015	12725	gear	8.549999999999999	spi:9:spi:0.95:8.55
-R	priest/discipline	55	12015	12726	gear	8.549999999999999	spi:9:spi:0.95:8.55
-R	priest/discipline	55	12015	12727	gear	0.0	
-R	priest/discipline	55	12015	12728	gear	0.0	
-R	priest/discipline	55	12015	12729	gear	13.299999999999999	int:14:int:0.95:13.3
-R	priest/discipline	55	12015	12730	gear	13.299999999999999	spi:14:spi:0.95:13.3
-R	priest/discipline	55	12015	12731	gear	14.0	sta:14:sta:1:14
-R	priest/discipline	55	12015	12732	gear	0.0	
-R	priest/discipline	55	12015	12733	gear	0.0	
-R	priest/discipline	55	12015	12737	gear	0.0	
-R	priest/discipline	55	12015	12738	gear	11.399999999999999	mp5:6:mp5:1.9:11.4
-R	priest/discipline	55	12015	12739	gear	0.0	
-R	priest/discipline	55	12015	12740	gear	9.0	sta:9:sta:1:9
-R	priest/discipline	55	12015	12741	gear	9.0	sta:9:sta:1:9
-R	priest/discipline	55	12015	12742	gear	9.0	sta:9:sta:1:9
-R	priest/discipline	55	12015	12743	gear	9.0	sta:9:sta:1:9
-R	priest/discipline	55	12015	12744	gear	9.0	sta:9:sta:1:9
-R	priest/discipline	55	12015	12745	gear	20.5	int:10:int:0.95:9.5,sta:6:sta:1:6,sp:5:sp:1:5
-R	priest/discipline	55	12015	12746	gear	20.2	int:10:int:0.95:9.5,spi:6:spi:0.95:5.7,sp:5:sp:1:5
-R	priest/discipline	55	12015	12747	gear	20.7	spi:6:spi:0.95:5.7,sta:10:sta:1:10,sp:5:sp:1:5
-R	priest/discipline	55	12015	12748	gear	18.7	int:6:int:0.95:5.7,sta:10:sta:1:10,spDmg:3:sp:1:3
-R	priest/discipline	55	12015	12749	gear	18.2	int:10:int:0.95:9.5,spi:6:spi:0.95:5.7,spDmg:3:sp:1:3
-R	priest/discipline	55	12015	12750	gear	18.7	spi:6:spi:0.95:5.7,sta:10:sta:1:10,spDmg:3:sp:1:3
-R	priest/discipline	55	12015	12751	gear	10.0	sta:10:sta:1:10
-R	priest/discipline	55	12015	12752	gear	10.0	sta:10:sta:1:10
-R	priest/discipline	55	12015	12753	gear	10.0	sta:10:sta:1:10
-R	priest/discipline	55	12015	12754	gear	15.0	sp:5:sp:1:5,sta:10:sta:1:10
-R	priest/discipline	55	12015	12755	gear	15.0	sp:5:sp:1:5,sta:10:sta:1:10
-R	priest/discipline	55	12805	0	gear	0.0	
-R	priest/discipline	55	13360	0	mh	20.2	sta:5:sta:1:5,int:10:int:0.95:9.5,spi:6:spi:0.95:5.7
-R	priest/discipline	55	14108	0	gear	13.745999999999999	spi:12:spi:0.95:11.4,armor:51:armor:0.046:2.346
-R	priest/discipline	55	14213	0	gear	2.254	armor:49:armor:0.046:2.254
-R	priest/discipline	55	14213	12718	gear	21.754	int:10:int:0.95:9.5,sta:10:sta:1:10,armor:49:armor:0.046:2.254
-R	priest/discipline	55	14213	12719	gear	21.754	spi:10:spi:0.95:9.5,sta:10:sta:1:10,armor:49:armor:0.046:2.254
-R	priest/discipline	55	14213	12720	gear	21.254	int:10:int:0.95:9.5,spi:10:spi:0.95:9.5,armor:49:armor:0.046:2.254
-R	priest/discipline	55	14213	12729	gear	16.504	int:15:int:0.95:14.25,armor:49:armor:0.046:2.254
-R	priest/discipline	55	14213	12730	gear	16.504	spi:15:spi:0.95:14.25,armor:49:armor:0.046:2.254
-R	priest/discipline	55	14213	12731	gear	17.254	sta:15:sta:1:15,armor:49:armor:0.046:2.254
-R	priest/discipline	55	14213	12734	gear	20.254	sp:18:sp:1:18,armor:49:armor:0.046:2.254
-R	priest/discipline	55	14213	12735	gear	13.254	spDmg:11:sp:1:11,armor:49:armor:0.046:2.254
-R	priest/discipline	55	14213	12740	gear	12.254	sta:10:sta:1:10,armor:49:armor:0.046:2.254
-R	priest/discipline	55	14213	12741	gear	12.254	sta:10:sta:1:10,armor:49:armor:0.046:2.254
-R	priest/discipline	55	14213	12742	gear	12.254	sta:10:sta:1:10,armor:49:armor:0.046:2.254
-R	priest/discipline	55	14213	12743	gear	12.254	sta:10:sta:1:10,armor:49:armor:0.046:2.254
-R	priest/discipline	55	14213	12744	gear	12.254	sta:10:sta:1:10,armor:49:armor:0.046:2.254
-R	priest/discipline	55	14213	12745	gear	24.704	int:11:int:0.95:10.45,sta:6:sta:1:6,sp:6:sp:1:6,armor:49:armor:0.046:2.254
-R	priest/discipline	55	14213	12746	gear	24.404	int:11:int:0.95:10.45,spi:6:spi:0.95:5.7,sp:6:sp:1:6,armor:49:armor:0.046:2.254
-R	priest/discipline	55	14213	12747	gear	24.954	spi:6:spi:0.95:5.7,sta:11:sta:1:11,sp:6:sp:1:6,armor:49:armor:0.046:2.254
-R	priest/discipline	55	14213	12748	gear	22.954	int:6:int:0.95:5.7,sta:11:sta:1:11,spDmg:4:sp:1:4,armor:49:armor:0.046:2.254
-R	priest/discipline	55	14213	12749	gear	22.404	int:11:int:0.95:10.45,spi:6:spi:0.95:5.7,spDmg:4:sp:1:4,armor:49:armor:0.046:2.254
-R	priest/discipline	55	14213	12750	gear	22.954	spi:6:spi:0.95:5.7,sta:11:sta:1:11,spDmg:4:sp:1:4,armor:49:armor:0.046:2.254
-R	priest/discipline	55	14213	12756	gear	2.254	armor:49:armor:0.046:2.254
-R	priest/discipline	55	14213	12757	gear	2.254	armor:49:armor:0.046:2.254
-R	priest/discipline	55	14213	12758	gear	2.254	armor:49:armor:0.046:2.254
-R	priest/discipline	55	14213	12759	gear	5.404	spHoly:21:spHoly:0.15:3.15,armor:49:armor:0.046:2.254
-R	priest/discipline	55	14213	12761	gear	18.214000000000002	spShadow:21:spShadow:0.76:15.96,armor:49:armor:0.046:2.254
-R	priest/discipline	55	14312	0	gear	2.944	armor:64:armor:0.046:2.944
-R	priest/discipline	55	14312	12718	gear	38.044	int:18:int:0.95:17.1,sta:18:sta:1:18,armor:64:armor:0.046:2.944
-R	priest/discipline	55	14312	12719	gear	38.044	spi:18:spi:0.95:17.1,sta:18:sta:1:18,armor:64:armor:0.046:2.944
-R	priest/discipline	55	14312	12720	gear	37.144	int:18:int:0.95:17.1,spi:18:spi:0.95:17.1,armor:64:armor:0.046:2.944
-R	priest/discipline	55	14312	12729	gear	28.593999999999998	int:27:int:0.95:25.65,armor:64:armor:0.046:2.944
-R	priest/discipline	55	14312	12730	gear	28.593999999999998	spi:27:spi:0.95:25.65,armor:64:armor:0.046:2.944
-R	priest/discipline	55	14312	12731	gear	29.944	sta:27:sta:1:27,armor:64:armor:0.046:2.944
-R	priest/discipline	55	14312	12734	gear	34.944	sp:32:sp:1:32,armor:64:armor:0.046:2.944
-R	priest/discipline	55	14312	12735	gear	22.944	spDmg:20:sp:1:20,armor:64:armor:0.046:2.944
-R	priest/discipline	55	14312	12740	gear	20.944	sta:18:sta:1:18,armor:64:armor:0.046:2.944
-R	priest/discipline	55	14312	12741	gear	20.944	sta:18:sta:1:18,armor:64:armor:0.046:2.944
-R	priest/discipline	55	14312	12742	gear	20.944	sta:18:sta:1:18,armor:64:armor:0.046:2.944
-R	priest/discipline	55	14312	12743	gear	20.944	sta:18:sta:1:18,armor:64:armor:0.046:2.944
-R	priest/discipline	55	14312	12744	gear	20.944	sta:18:sta:1:18,armor:64:armor:0.046:2.944
-R	priest/discipline	55	14312	12745	gear	42.944	int:20:int:0.95:19,sta:11:sta:1:11,sp:10:sp:1:10,armor:64:armor:0.046:2.944
-R	priest/discipline	55	14312	12746	gear	42.394000000000005	int:20:int:0.95:19,spi:11:spi:0.95:10.45,sp:10:sp:1:10,armor:64:armor:0.046:2.944
-R	priest/discipline	55	14312	12747	gear	43.394000000000005	spi:11:spi:0.95:10.45,sta:20:sta:1:20,sp:10:sp:1:10,armor:64:armor:0.046:2.944
-R	priest/discipline	55	14312	12748	gear	39.394000000000005	int:11:int:0.95:10.45,sta:20:sta:1:20,spDmg:6:sp:1:6,armor:64:armor:0.046:2.944
-R	priest/discipline	55	14312	12749	gear	38.394000000000005	int:20:int:0.95:19,spi:11:spi:0.95:10.45,spDmg:6:sp:1:6,armor:64:armor:0.046:2.944
-R	priest/discipline	55	14312	12750	gear	39.394000000000005	spi:11:spi:0.95:10.45,sta:20:sta:1:20,spDmg:6:sp:1:6,armor:64:armor:0.046:2.944
-R	priest/discipline	55	14312	12756	gear	2.944	armor:64:armor:0.046:2.944
-R	priest/discipline	55	14312	12757	gear	2.944	armor:64:armor:0.046:2.944
-R	priest/discipline	55	14312	12758	gear	2.944	armor:64:armor:0.046:2.944
-R	priest/discipline	55	14312	12759	gear	8.794	spHoly:39:spHoly:0.15:5.85,armor:64:armor:0.046:2.944
-R	priest/discipline	55	14312	12761	gear	32.584	spShadow:39:spShadow:0.76:29.64,armor:64:armor:0.046:2.944
-R	priest/discipline	55	14440	0	gear	13.079999999999998	sta:6:sta:1:6,spi:6:spi:0.95:5.7,armor:30:armor:0.046:1.38
-R	priest/discipline	55	15299	0	gear	0.414	armor:9:armor:0.046:0.414
-R	priest/discipline	55	15939	0	oh	0.0	
-R	priest/discipline	55	15939	12718	oh	17.549999999999997	int:9:int:0.95:8.55,sta:9:sta:1:9
-R	priest/discipline	55	15939	12719	oh	17.549999999999997	spi:9:spi:0.95:8.55,sta:9:sta:1:9
-R	priest/discipline	55	15939	12720	oh	17.099999999999998	int:9:int:0.95:8.55,spi:9:spi:0.95:8.55
-R	priest/discipline	55	15939	12721	oh	9.0	sta:9:sta:1:9
-R	priest/discipline	55	15939	12722	oh	9.0	sta:9:sta:1:9
-R	priest/discipline	55	15939	12723	oh	8.549999999999999	int:9:int:0.95:8.55
-R	priest/discipline	55	15939	12724	oh	8.549999999999999	int:9:int:0.95:8.55
-R	priest/discipline	55	15939	12725	oh	8.549999999999999	spi:9:spi:0.95:8.55
-R	priest/discipline	55	15939	12726	oh	8.549999999999999	spi:9:spi:0.95:8.55
-R	priest/discipline	55	15939	12727	oh	0.0	
-R	priest/discipline	55	15939	12728	oh	0.0	
-R	priest/discipline	55	15939	12729	oh	13.299999999999999	int:14:int:0.95:13.3
-R	priest/discipline	55	15939	12730	oh	13.299999999999999	spi:14:spi:0.95:13.3
-R	priest/discipline	55	15939	12731	oh	14.0	sta:14:sta:1:14
-R	priest/discipline	55	15939	12732	oh	0.0	
-R	priest/discipline	55	15939	12733	oh	0.0	
-R	priest/discipline	55	15939	12734	oh	16.0	sp:16:sp:1:16
-R	priest/discipline	55	15939	12735	oh	10.0	spDmg:10:sp:1:10
-R	priest/discipline	55	15939	12740	oh	9.0	sta:9:sta:1:9
-R	priest/discipline	55	15939	12741	oh	9.0	sta:9:sta:1:9
-R	priest/discipline	55	15939	12742	oh	9.0	sta:9:sta:1:9
-R	priest/discipline	55	15939	12743	oh	9.0	sta:9:sta:1:9
-R	priest/discipline	55	15939	12744	oh	9.0	sta:9:sta:1:9
-R	priest/discipline	55	15939	12745	oh	20.5	int:10:int:0.95:9.5,sta:6:sta:1:6,sp:5:sp:1:5
-R	priest/discipline	55	15939	12746	oh	20.2	int:10:int:0.95:9.5,spi:6:spi:0.95:5.7,sp:5:sp:1:5
-R	priest/discipline	55	15939	12747	oh	20.7	spi:6:spi:0.95:5.7,sta:10:sta:1:10,sp:5:sp:1:5
-R	priest/discipline	55	15939	12748	oh	18.7	int:6:int:0.95:5.7,sta:10:sta:1:10,spDmg:3:sp:1:3
-R	priest/discipline	55	15939	12749	oh	18.2	int:10:int:0.95:9.5,spi:6:spi:0.95:5.7,spDmg:3:sp:1:3
-R	priest/discipline	55	15939	12750	oh	18.7	spi:6:spi:0.95:5.7,sta:10:sta:1:10,spDmg:3:sp:1:3
-R	priest/discipline	55	15939	12756	oh	0.0	
-R	priest/discipline	55	15939	12757	oh	0.0	
-R	priest/discipline	55	15939	12758	oh	0.0	
-R	priest/discipline	55	15939	12759	oh	3.0	spHoly:20:spHoly:0.15:3
-R	priest/discipline	55	15939	12760	oh	0.0	
-R	priest/discipline	55	15939	12761	oh	15.2	spShadow:20:spShadow:0.76:15.2
+R	priest/discipline	55	11807	0	gear	31.116	spi:10:spi:0.95:9.5,sta:10:sta:1:10,int:10:int:0.95:9.5,armor:46:armor:0.046:2.116
+R	priest/discipline	55	12014	0	gear	0.0	
+R	priest/discipline	55	12014	12718	gear	17.549999999999997	int:9:int:0.95:8.55,sta:9:sta:1:9
+R	priest/discipline	55	12014	12719	gear	17.549999999999997	spi:9:spi:0.95:8.55,sta:9:sta:1:9
+R	priest/discipline	55	12014	12720	gear	17.099999999999998	int:9:int:0.95:8.55,spi:9:spi:0.95:8.55
+R	priest/discipline	55	12014	12721	gear	9.0	sta:9:sta:1:9
+R	priest/discipline	55	12014	12722	gear	9.0	sta:9:sta:1:9
+R	priest/discipline	55	12014	12723	gear	8.549999999999999	int:9:int:0.95:8.55
+R	priest/discipline	55	12014	12724	gear	8.549999999999999	int:9:int:0.95:8.55
+R	priest/discipline	55	12014	12725	gear	8.549999999999999	spi:9:spi:0.95:8.55
+R	priest/discipline	55	12014	12726	gear	8.549999999999999	spi:9:spi:0.95:8.55
+R	priest/discipline	55	12014	12727	gear	0.0	
+R	priest/discipline	55	12014	12728	gear	0.0	
+R	priest/discipline	55	12014	12729	gear	12.35	int:13:int:0.95:12.35
+R	priest/discipline	55	12014	12730	gear	12.35	spi:13:spi:0.95:12.35
+R	priest/discipline	55	12014	12731	gear	13.0	sta:13:sta:1:13
+R	priest/discipline	55	12014	12732	gear	0.0	
+R	priest/discipline	55	12014	12733	gear	0.0	
+R	priest/discipline	55	12014	12737	gear	0.0	
+R	priest/discipline	55	12014	12738	gear	9.5	mp5:5:mp5:1.9:9.5
+R	priest/discipline	55	12014	12739	gear	0.0	
+R	priest/discipline	55	12014	12740	gear	9.0	sta:9:sta:1:9
+R	priest/discipline	55	12014	12741	gear	9.0	sta:9:sta:1:9
+R	priest/discipline	55	12014	12742	gear	9.0	sta:9:sta:1:9
+R	priest/discipline	55	12014	12743	gear	9.0	sta:9:sta:1:9
+R	priest/discipline	55	12014	12744	gear	9.0	sta:9:sta:1:9
+R	priest/discipline	55	12014	12745	gear	18.549999999999997	int:9:int:0.95:8.55,sta:5:sta:1:5,sp:5:sp:1:5
+R	priest/discipline	55	12014	12746	gear	18.299999999999997	int:9:int:0.95:8.55,spi:5:spi:0.95:4.75,sp:5:sp:1:5
+R	priest/discipline	55	12014	12747	gear	18.75	spi:5:spi:0.95:4.75,sta:9:sta:1:9,sp:5:sp:1:5
+R	priest/discipline	55	12014	12748	gear	16.75	int:5:int:0.95:4.75,sta:9:sta:1:9,spDmg:3:sp:1:3
+R	priest/discipline	55	12014	12749	gear	16.299999999999997	int:9:int:0.95:8.55,spi:5:spi:0.95:4.75,spDmg:3:sp:1:3
+R	priest/discipline	55	12014	12750	gear	16.75	spi:5:spi:0.95:4.75,sta:9:sta:1:9,spDmg:3:sp:1:3
+R	priest/discipline	55	12014	12751	gear	9.0	sta:9:sta:1:9
+R	priest/discipline	55	12014	12752	gear	9.0	sta:9:sta:1:9
+R	priest/discipline	55	12014	12753	gear	9.0	sta:9:sta:1:9
+R	priest/discipline	55	12014	12754	gear	14.0	sp:5:sp:1:5,sta:9:sta:1:9
+R	priest/discipline	55	12014	12755	gear	15.0	sp:5:sp:1:5,sta:10:sta:1:10
+R	priest/discipline	55	12794	0	mh	0.0	
+R	priest/discipline	55	13353	0	oh	43.91	spi:10:spi:0.95:9.5,int:15:int:0.95:14.25,sta:8:sta:1:8,spShadow:16:spShadow:0.76:12.16
+R	priest/discipline	55	14107	0	gear	34.012	int:12:int:0.95:11.4,spShadow:26:spShadow:0.76:19.76,armor:62:armor:0.046:2.852
+R	priest/discipline	55	14212	0	gear	1.6099999999999999	armor:35:armor:0.046:1.61
+R	priest/discipline	55	14212	12718	gear	15.259999999999998	int:7:int:0.95:6.65,sta:7:sta:1:7,armor:35:armor:0.046:1.61
+R	priest/discipline	55	14212	12719	gear	15.259999999999998	spi:7:spi:0.95:6.65,sta:7:sta:1:7,armor:35:armor:0.046:1.61
+R	priest/discipline	55	14212	12720	gear	14.909999999999998	int:7:int:0.95:6.65,spi:7:spi:0.95:6.65,armor:35:armor:0.046:1.61
+R	priest/discipline	55	14212	12729	gear	11.11	int:10:int:0.95:9.5,armor:35:armor:0.046:1.61
+R	priest/discipline	55	14212	12730	gear	11.11	spi:10:spi:0.95:9.5,armor:35:armor:0.046:1.61
+R	priest/discipline	55	14212	12731	gear	11.61	sta:10:sta:1:10,armor:35:armor:0.046:1.61
+R	priest/discipline	55	14212	12734	gear	13.61	sp:12:sp:1:12,armor:35:armor:0.046:1.61
+R	priest/discipline	55	14212	12735	gear	8.61	spDmg:7:sp:1:7,armor:35:armor:0.046:1.61
+R	priest/discipline	55	14212	12740	gear	8.61	sta:7:sta:1:7,armor:35:armor:0.046:1.61
+R	priest/discipline	55	14212	12741	gear	8.61	sta:7:sta:1:7,armor:35:armor:0.046:1.61
+R	priest/discipline	55	14212	12742	gear	8.61	sta:7:sta:1:7,armor:35:armor:0.046:1.61
+R	priest/discipline	55	14212	12743	gear	8.61	sta:7:sta:1:7,armor:35:armor:0.046:1.61
+R	priest/discipline	55	14212	12744	gear	8.61	sta:7:sta:1:7,armor:35:armor:0.046:1.61
+R	priest/discipline	55	14212	12745	gear	16.259999999999998	int:7:int:0.95:6.65,sta:4:sta:1:4,sp:4:sp:1:4,armor:35:armor:0.046:1.61
+R	priest/discipline	55	14212	12746	gear	16.06	int:7:int:0.95:6.65,spi:4:spi:0.95:3.8,sp:4:sp:1:4,armor:35:armor:0.046:1.61
+R	priest/discipline	55	14212	12747	gear	16.41	spi:4:spi:0.95:3.8,sta:7:sta:1:7,sp:4:sp:1:4,armor:35:armor:0.046:1.61
+R	priest/discipline	55	14212	12748	gear	14.41	int:4:int:0.95:3.8,sta:7:sta:1:7,spDmg:2:sp:1:2,armor:35:armor:0.046:1.61
+R	priest/discipline	55	14212	12749	gear	14.059999999999999	int:7:int:0.95:6.65,spi:4:spi:0.95:3.8,spDmg:2:sp:1:2,armor:35:armor:0.046:1.61
+R	priest/discipline	55	14212	12750	gear	14.41	spi:4:spi:0.95:3.8,sta:7:sta:1:7,spDmg:2:sp:1:2,armor:35:armor:0.046:1.61
+R	priest/discipline	55	14212	12756	gear	1.6099999999999999	armor:35:armor:0.046:1.61
+R	priest/discipline	55	14212	12757	gear	1.6099999999999999	armor:35:armor:0.046:1.61
+R	priest/discipline	55	14212	12758	gear	1.6099999999999999	armor:35:armor:0.046:1.61
+R	priest/discipline	55	14212	12759	gear	3.71	spHoly:14:spHoly:0.15:2.1,armor:35:armor:0.046:1.61
+R	priest/discipline	55	14212	12761	gear	12.25	spShadow:14:spShadow:0.76:10.64,armor:35:armor:0.046:1.61
+R	priest/discipline	55	14311	0	gear	1.426	armor:31:armor:0.046:1.426
+R	priest/discipline	55	14311	12718	gear	18.975999999999996	int:9:int:0.95:8.55,sta:9:sta:1:9,armor:31:armor:0.046:1.426
+R	priest/discipline	55	14311	12719	gear	18.975999999999996	spi:9:spi:0.95:8.55,sta:9:sta:1:9,armor:31:armor:0.046:1.426
+R	priest/discipline	55	14311	12720	gear	18.525999999999996	int:9:int:0.95:8.55,spi:9:spi:0.95:8.55,armor:31:armor:0.046:1.426
+R	priest/discipline	55	14311	12729	gear	13.776	int:13:int:0.95:12.35,armor:31:armor:0.046:1.426
+R	priest/discipline	55	14311	12730	gear	13.776	spi:13:spi:0.95:12.35,armor:31:armor:0.046:1.426
+R	priest/discipline	55	14311	12731	gear	14.426	sta:13:sta:1:13,armor:31:armor:0.046:1.426
+R	priest/discipline	55	14311	12734	gear	16.426	sp:15:sp:1:15,armor:31:armor:0.046:1.426
+R	priest/discipline	55	14311	12735	gear	11.426	spDmg:10:sp:1:10,armor:31:armor:0.046:1.426
+R	priest/discipline	55	14311	12740	gear	10.426	sta:9:sta:1:9,armor:31:armor:0.046:1.426
+R	priest/discipline	55	14311	12741	gear	10.426	sta:9:sta:1:9,armor:31:armor:0.046:1.426
+R	priest/discipline	55	14311	12742	gear	10.426	sta:9:sta:1:9,armor:31:armor:0.046:1.426
+R	priest/discipline	55	14311	12743	gear	10.426	sta:9:sta:1:9,armor:31:armor:0.046:1.426
+R	priest/discipline	55	14311	12744	gear	10.426	sta:9:sta:1:9,armor:31:armor:0.046:1.426
+R	priest/discipline	55	14311	12745	gear	19.975999999999996	int:9:int:0.95:8.55,sta:5:sta:1:5,sp:5:sp:1:5,armor:31:armor:0.046:1.426
+R	priest/discipline	55	14311	12746	gear	19.725999999999996	int:9:int:0.95:8.55,spi:5:spi:0.95:4.75,sp:5:sp:1:5,armor:31:armor:0.046:1.426
+R	priest/discipline	55	14311	12747	gear	20.176	spi:5:spi:0.95:4.75,sta:9:sta:1:9,sp:5:sp:1:5,armor:31:armor:0.046:1.426
+R	priest/discipline	55	14311	12748	gear	18.176	int:5:int:0.95:4.75,sta:9:sta:1:9,spDmg:3:sp:1:3,armor:31:armor:0.046:1.426
+R	priest/discipline	55	14311	12749	gear	17.725999999999996	int:9:int:0.95:8.55,spi:5:spi:0.95:4.75,spDmg:3:sp:1:3,armor:31:armor:0.046:1.426
+R	priest/discipline	55	14311	12750	gear	18.176	spi:5:spi:0.95:4.75,sta:9:sta:1:9,spDmg:3:sp:1:3,armor:31:armor:0.046:1.426
+R	priest/discipline	55	14311	12756	gear	1.426	armor:31:armor:0.046:1.426
+R	priest/discipline	55	14311	12757	gear	1.426	armor:31:armor:0.046:1.426
+R	priest/discipline	55	14311	12758	gear	1.426	armor:31:armor:0.046:1.426
+R	priest/discipline	55	14311	12759	gear	4.276	spHoly:19:spHoly:0.15:2.85,armor:31:armor:0.046:1.426
+R	priest/discipline	55	14311	12761	gear	15.866	spShadow:19:spShadow:0.76:14.44,armor:31:armor:0.046:1.426
+R	priest/discipline	55	14439	0	gear	12.642	spi:8:spi:0.95:7.6,int:4:int:0.95:3.8,armor:27:armor:0.046:1.242
+R	priest/discipline	55	15283	0	ranged	476.784	rdps:56.76:rdps:8.4:476.784
+R	priest/discipline	55	15283	12718	ranged	488.484	int:6:int:0.95:5.7,sta:6:sta:1:6,rdps:56.76:rdps:8.4:476.784
+R	priest/discipline	55	15283	12719	ranged	488.484	spi:6:spi:0.95:5.7,sta:6:sta:1:6,rdps:56.76:rdps:8.4:476.784
+R	priest/discipline	55	15283	12720	ranged	488.18399999999997	int:6:int:0.95:5.7,spi:6:spi:0.95:5.7,rdps:56.76:rdps:8.4:476.784
+R	priest/discipline	55	15283	12729	ranged	485.334	int:9:int:0.95:8.55,rdps:56.76:rdps:8.4:476.784
+R	priest/discipline	55	15283	12730	ranged	485.334	spi:9:spi:0.95:8.55,rdps:56.76:rdps:8.4:476.784
+R	priest/discipline	55	15283	12731	ranged	485.784	sta:9:sta:1:9,rdps:56.76:rdps:8.4:476.784
+R	priest/discipline	55	15283	12734	ranged	487.784	sp:11:sp:1:11,rdps:56.76:rdps:8.4:476.784
+R	priest/discipline	55	15283	12735	ranged	483.784	spDmg:7:sp:1:7,rdps:56.76:rdps:8.4:476.784
+R	priest/discipline	55	15283	12740	ranged	482.784	sta:6:sta:1:6,rdps:56.76:rdps:8.4:476.784
+R	priest/discipline	55	15283	12741	ranged	482.784	sta:6:sta:1:6,rdps:56.76:rdps:8.4:476.784
+R	priest/discipline	55	15283	12742	ranged	482.784	sta:6:sta:1:6,rdps:56.76:rdps:8.4:476.784
+R	priest/discipline	55	15283	12743	ranged	482.784	sta:6:sta:1:6,rdps:56.76:rdps:8.4:476.784
+R	priest/discipline	55	15283	12744	ranged	482.784	sta:6:sta:1:6,rdps:56.76:rdps:8.4:476.784
+R	priest/discipline	55	15283	12745	ranged	490.43399999999997	int:7:int:0.95:6.65,sta:4:sta:1:4,sp:3:sp:1:3,rdps:56.76:rdps:8.4:476.784
+R	priest/discipline	55	15283	12746	ranged	490.234	int:7:int:0.95:6.65,spi:4:spi:0.95:3.8,sp:3:sp:1:3,rdps:56.76:rdps:8.4:476.784
+R	priest/discipline	55	15283	12747	ranged	490.584	spi:4:spi:0.95:3.8,sta:7:sta:1:7,sp:3:sp:1:3,rdps:56.76:rdps:8.4:476.784
+R	priest/discipline	55	15283	12748	ranged	489.584	int:4:int:0.95:3.8,sta:7:sta:1:7,spDmg:2:sp:1:2,rdps:56.76:rdps:8.4:476.784
+R	priest/discipline	55	15283	12749	ranged	489.234	int:7:int:0.95:6.65,spi:4:spi:0.95:3.8,spDmg:2:sp:1:2,rdps:56.76:rdps:8.4:476.784
+R	priest/discipline	55	15283	12750	ranged	489.584	spi:4:spi:0.95:3.8,sta:7:sta:1:7,spDmg:2:sp:1:2,rdps:56.76:rdps:8.4:476.784
+R	priest/discipline	55	15283	12756	ranged	476.784	rdps:56.76:rdps:8.4:476.784
+R	priest/discipline	55	15283	12757	ranged	476.784	rdps:56.76:rdps:8.4:476.784
+R	priest/discipline	55	15283	12758	ranged	476.784	rdps:56.76:rdps:8.4:476.784
+R	priest/discipline	55	15283	12759	ranged	478.734	spHoly:13:spHoly:0.15:1.95,rdps:56.76:rdps:8.4:476.784
+R	priest/discipline	55	15283	12761	ranged	486.664	spShadow:13:spShadow:0.76:9.88,rdps:56.76:rdps:8.4:476.784
+R	priest/discipline	55	15938	0	oh	0.0	
+R	priest/discipline	55	15938	12718	oh	17.549999999999997	int:9:int:0.95:8.55,sta:9:sta:1:9
+R	priest/discipline	55	15938	12719	oh	17.549999999999997	spi:9:spi:0.95:8.55,sta:9:sta:1:9
+R	priest/discipline	55	15938	12720	oh	17.099999999999998	int:9:int:0.95:8.55,spi:9:spi:0.95:8.55
+R	priest/discipline	55	15938	12721	oh	9.0	sta:9:sta:1:9
+R	priest/discipline	55	15938	12722	oh	9.0	sta:9:sta:1:9
+R	priest/discipline	55	15938	12723	oh	8.549999999999999	int:9:int:0.95:8.55
+R	priest/discipline	55	15938	12724	oh	8.549999999999999	int:9:int:0.95:8.55
+R	priest/discipline	55	15938	12725	oh	8.549999999999999	spi:9:spi:0.95:8.55
+R	priest/discipline	55	15938	12726	oh	8.549999999999999	spi:9:spi:0.95:8.55
+R	priest/discipline	55	15938	12727	oh	0.0	
+R	priest/discipline	55	15938	12728	oh	0.0	
+R	priest/discipline	55	15938	12729	oh	13.299999999999999	int:14:int:0.95:13.3
+R	priest/discipline	55	15938	12730	oh	13.299999999999999	spi:14:spi:0.95:13.3
+R	priest/discipline	55	15938	12731	oh	14.0	sta:14:sta:1:14
+R	priest/discipline	55	15938	12732	oh	0.0	
+R	priest/discipline	55	15938	12733	oh	0.0	
+R	priest/discipline	55	15938	12734	oh	16.0	sp:16:sp:1:16
+R	priest/discipline	55	15938	12735	oh	10.0	spDmg:10:sp:1:10
+R	priest/discipline	55	15938	12740	oh	9.0	sta:9:sta:1:9
+R	priest/discipline	55	15938	12741	oh	9.0	sta:9:sta:1:9
+R	priest/discipline	55	15938	12742	oh	9.0	sta:9:sta:1:9
+R	priest/discipline	55	15938	12743	oh	9.0	sta:9:sta:1:9
+R	priest/discipline	55	15938	12744	oh	9.0	sta:9:sta:1:9
+R	priest/discipline	55	15938	12745	oh	20.5	int:10:int:0.95:9.5,sta:6:sta:1:6,sp:5:sp:1:5
+R	priest/discipline	55	15938	12746	oh	20.2	int:10:int:0.95:9.5,spi:6:spi:0.95:5.7,sp:5:sp:1:5
+R	priest/discipline	55	15938	12747	oh	20.7	spi:6:spi:0.95:5.7,sta:10:sta:1:10,sp:5:sp:1:5
+R	priest/discipline	55	15938	12748	oh	18.7	int:6:int:0.95:5.7,sta:10:sta:1:10,spDmg:3:sp:1:3
+R	priest/discipline	55	15938	12749	oh	18.2	int:10:int:0.95:9.5,spi:6:spi:0.95:5.7,spDmg:3:sp:1:3
+R	priest/discipline	55	15938	12750	oh	18.7	spi:6:spi:0.95:5.7,sta:10:sta:1:10,spDmg:3:sp:1:3
+R	priest/discipline	55	15938	12756	oh	0.0	
+R	priest/discipline	55	15938	12757	oh	0.0	
+R	priest/discipline	55	15938	12758	oh	0.0	
+R	priest/discipline	55	15938	12759	oh	3.0	spHoly:20:spHoly:0.15:3
+R	priest/discipline	55	15938	12760	oh	0.0	
+R	priest/discipline	55	15938	12761	oh	15.2	spShadow:20:spShadow:0.76:15.2
 R	priest/discipline	55	15945	0	oh	3.9	sta:2:sta:1:2,spi:2:spi:0.95:1.9
-R	priest/discipline	55	16819	0	gear	36.623999999999995	sta:8:sta:1:8,int:14:int:0.95:13.3,spi:10:spi:0.95:9.5,mp5:2:mp5:1.9:3.8,armor:44:armor:0.046:2.024
-R	priest/discipline	55	17739	0	gear	13.702	sta:12:sta:1:12,armor:37:armor:0.046:1.702
-R	priest/discipline	55	18440	0	gear	12.036	sta:9:sta:1:9,armor:66:armor:0.046:3.036
-R	priest/discipline	55	18879	0	gear	25.06	sta:20:sta:1:20,armor:110:armor:0.046:5.06
-R	priest/discipline	55	19395	0	gear	17.099999999999998	mp5:9:mp5:1.9:17.1
-R	priest/discipline	55	19893	0	gear	40.1	sta:10:sta:1:10,int:10:int:0.95:9.5,spellHit:1:spellHit:9.6:9.6,sp:11:sp:1:11
-R	priest/discipline	55	20330	0	gear	56.846	int:27:int:0.95:25.65,spi:11:spi:0.95:10.45,sta:12:sta:1:12,crit:1:spellCrit:4.1:4.1,armor:101:armor:0.046:4.646
-R	priest/discipline	55	20652	0	gear	2.438	armor:53:armor:0.046:2.438
-R	priest/discipline	55	20652	12745	gear	31.688	int:15:int:0.95:14.25,sta:8:sta:1:8,sp:7:sp:1:7,armor:53:armor:0.046:2.438
-R	priest/discipline	55	20652	12746	gear	31.288	int:15:int:0.95:14.25,spi:8:spi:0.95:7.6,sp:7:sp:1:7,armor:53:armor:0.046:2.438
-R	priest/discipline	55	20652	12747	gear	32.038000000000004	spi:8:spi:0.95:7.6,sta:15:sta:1:15,sp:7:sp:1:7,armor:53:armor:0.046:2.438
-R	priest/discipline	55	20652	12748	gear	30.038	int:8:int:0.95:7.6,sta:15:sta:1:15,spDmg:5:sp:1:5,armor:53:armor:0.046:2.438
-R	priest/discipline	55	20652	12749	gear	29.288	int:15:int:0.95:14.25,spi:8:spi:0.95:7.6,spDmg:5:sp:1:5,armor:53:armor:0.046:2.438
-R	priest/discipline	55	20652	12750	gear	30.038	spi:8:spi:0.95:7.6,sta:15:sta:1:15,spDmg:5:sp:1:5,armor:53:armor:0.046:2.438
-R	priest/discipline	55	21500	0	gear	38.426	sta:14:sta:1:14,int:15:int:0.95:14.25,mp5:4:mp5:1.9:7.6,armor:56:armor:0.046:2.576
-R	priest/discipline	55	22085	0	gear	68.826	int:14:int:0.95:13.3,sta:13:sta:1:13,mp5:6:mp5:1.9:11.4,sp:16:sp:1:16,spi:12:spi:0.95:11.4,armor:81:armor:0.046:3.726
-R	priest/discipline	55	22678	0	gear	0.0	
-R	priest/discipline	55	23177	0	ranged	327.47200000000004	spShadow:10:spShadow:0.76:7.6,rdps:38.08:rdps:8.4:319.872
-R	priest/discipline	55	212583	0	mh	3.0	sta:3:sta:1:3
-R	priest/discipline	55	217296	0	gear	14.0	sta:9:sta:1:9,sp:5:sp:1:5
-R	priest/discipline	55	220907	0	gear	46.824	sta:13:sta:1:13,int:12:int:0.95:11.4,crit:1:spellCrit:4.1:4.1,sp:14:sp:1:14,armor:94:armor:0.046:4.324
-R	priest/discipline	55	226731	0	gear	40.842000000000006	sta:7:sta:1:7,int:11:int:0.95:10.45,sp:21:sp:1:21,armor:52:armor:0.046:2.392
-R	priest/discipline	55	227967	0	gear	0.0	
-R	priest/discipline	55	228282	0	gear	57.806	sta:20:sta:1:20,sp:35:sp:1:35,armor:61:armor:0.046:2.806
-R	priest/discipline	55	228757	0	mh	0.0	
-R	priest/discipline	55	231168	0	gear	80.746	sta:15:sta:1:15,int:20:int:0.95:19,crit:1:spellCrit:4.1:4.1,spShadow:50:spShadow:0.76:38,armor:101:armor:0.046:4.646
-R	priest/discipline	55	233395	0	gear	93.298	sta:14:sta:1:14,int:18:int:0.95:17.1,crit:2:spellCrit:4.1:8.2,spShadow:63:spShadow:0.76:47.88,armor:133:armor:0.046:6.118
-R	priest/discipline	55	233994	0	gear	44.199999999999996	int:18:int:0.95:17.1,crit:1:spellCrit:4.1:4.1,spDmg:23:sp:1:23
-R	priest/discipline	55	234576	0	mh	83.7	sta:21:sta:1:21,int:8:int:0.95:7.6,crit:1:spellCrit:4.1:4.1,spDmg:51:sp:1:51
-R	priest/discipline	55	236277	0	gear	36.099999999999994	sta:8:sta:1:8,int:9:int:0.95:8.55,spi:9:spi:0.95:8.55,spDmg:11:sp:1:11
-R	priest/discipline	55	239565	0	gear	103.82599999999998	sta:15:sta:1:15,int:17:int:0.95:16.15,crit:2:spellCrit:4.1:8.2,spShadow:76:spShadow:0.76:57.76,armor:146:armor:0.046:6.716
-R	priest/discipline	55	247789	0	ranged	33.6	rdps:4:rdps:8.4:33.6
-R	priest/discipline	55	254029	0	gear	17.305999999999997	int:7:int:0.95:6.65,sta:9:sta:1:9,armor:36:armor:0.046:1.656
-R	priest/discipline	55	260829	0	gear	2.024	armor:44:armor:0.046:2.024
-R	priest/discipline	55	271909	0	gear	14.0	sta:14:sta:1:14
-R	priest/discipline	55	272847	0	mh	6.1	sta:2:sta:1:2,crit:1:spellCrit:4.1:4.1
-R	priest/discipline	55	275831	0	gear	4.75	int:5:int:0.95:4.75
-R	priest/discipline	55	278019	0	gear	10.0	sta:6:sta:1:6,sp:4:sp:1:4
-R	priest/discipline	55	288931	0	gear	16.0	sp:16:sp:1:16
+R	priest/discipline	55	16817	0	gear	59.622	sta:10:sta:1:10,int:22:int:0.95:20.9,spi:10:spi:0.95:9.5,mp5:4:mp5:1.9:7.6,sp:9:sp:1:9,armor:57:armor:0.046:2.622
+R	priest/discipline	55	17737	0	oh	15.28	hit:0.8:spellHit:9.6:7.68,int:8:int:0.95:7.6
+R	priest/discipline	55	18438	0	gear	0.0	
+R	priest/discipline	55	18878	0	mh	44.15	sta:8:sta:1:8,int:17:int:0.95:16.15,sp:20:sp:1:20
+R	priest/discipline	55	19391	0	gear	55.675999999999995	sta:13:sta:1:13,int:17:int:0.95:16.15,mp5:12:mp5:1.9:22.8,armor:81:armor:0.046:3.726
+R	priest/discipline	55	19891	0	oh	46.050000000000004	sta:8:sta:1:8,int:11:int:0.95:10.45,sp:18:sp:1:18,spellHit:1:spellHit:9.6:9.6
+R	priest/discipline	55	20333	0	gear	43.2	int:20:int:0.95:19,spi:8:spi:0.95:7.6,sta:9:sta:1:9,mp5:4:mp5:1.9:7.6
+R	priest/discipline	55	20672	0	ranged	537.122	int:9:int:0.95:8.55,sp:5:sp:1:5,rdps:62.33:rdps:8.4:523.572
+R	priest/discipline	55	21522	0	mh	14.0	sta:14:sta:1:14
+R	priest/discipline	55	22231	0	gear	44.459999999999994	int:18:int:0.95:17.1,sta:11:sta:1:11,hit:1:spellHit:9.6:9.6,sp:4:sp:1:4,armor:60:armor:0.046:2.76
+R	priest/discipline	55	22711	0	gear	36.908	sta:6:sta:1:6,int:6:int:0.95:5.7,sp:23:sp:1:23,armor:48:armor:0.046:2.208
+R	priest/discipline	55	23237	0	gear	13.6	int:10:int:0.95:9.5,crit:1:spellCrit:4.1:4.1
+R	priest/discipline	55	213088	0	gear	12.704	sta:4:sta:1:4,int:4:int:0.95:3.8,spi:4:spi:0.95:3.8,armor:24:armor:0.046:1.104
+R	priest/discipline	55	217301	0	gear	13.649999999999999	sta:7:sta:1:7,int:7:int:0.95:6.65
+R	priest/discipline	55	221025	0	gear	37.302	sta:7:sta:1:7,int:8:int:0.95:7.6,sp:21:sp:1:21,armor:37:armor:0.046:1.702
+R	priest/discipline	55	226744	0	gear	32.116	sta:11:sta:1:11,int:10:int:0.95:9.5,spi:10:spi:0.95:9.5,armor:46:armor:0.046:2.116
+R	priest/discipline	55	227980	0	gear	61.844	sta:12:sta:1:12,int:15:int:0.95:14.25,spi:10:spi:0.95:9.5,sp:22:sp:1:22,armor:89:armor:0.046:4.094
+R	priest/discipline	55	228292	0	gear	28.474	sta:23:sta:1:23,armor:119:armor:0.046:5.474
+R	priest/discipline	55	229374	0	mh	10.0	sta:10:sta:1:10
+R	priest/discipline	55	231271	0	gear	26.0	sp:26:sp:1:26
+R	priest/discipline	55	233502	0	gear	20.6	sta:11:sta:1:11,hit:1:spellHit:9.6:9.6
+R	priest/discipline	55	234020	0	gear	46.2	sta:7:sta:1:7,int:8:int:0.95:7.6,hit:1:spellHit:9.6:9.6,sp:22:sp:1:22
+R	priest/discipline	55	234614	0	gear	0.0	
+R	priest/discipline	55	236284	0	mh	183.5	sta:20:sta:1:20,int:20:int:0.95:19,hit:2:spellHit:9.6:19.2,crit:3:spellCrit:4.1:12.3,sp:113:sp:1:113
+R	priest/discipline	55	239581	0	gear	76.21000000000001	sta:17:sta:1:17,int:17:int:0.95:16.15,spShadow:50:spShadow:0.76:38,armor:110:armor:0.046:5.06
+R	priest/discipline	55	249234	0	ranged	336.028	sp:7:sp:1:7,rdps:39.17:rdps:8.4:329.028
+R	priest/discipline	55	254033	0	gear	15.44	spDmg:6:sp:1:6,spi:8:spi:0.95:7.6,armor:40:armor:0.046:1.84
+R	priest/discipline	55	260820	0	gear	0.0	
+R	priest/discipline	55	271661	0	gear	0.092	armor:2:armor:0.046:0.092
+R	priest/discipline	55	272406	0	gear	31.9	int:14:int:0.95:13.3,hit:1:spellHit:9.6:9.6,sp:9:sp:1:9
+R	priest/discipline	55	273423	0	gear	57.45	int:10:int:0.95:9.5,sta:26:sta:1:26,spDmg:9:sp:1:9,spi:10:spi:0.95:9.5,armor:75:armor:0.046:3.45
+R	priest/discipline	55	274919	0	ranged	280.42	spShadow:7:spShadow:0.76:5.32,rdps:32.75:rdps:8.4:275.1
+R	priest/discipline	55	276888	0	mh	3.8	int:2:int:0.95:1.9,spi:2:spi:0.95:1.9
+R	priest/discipline	55	279826	0	gear	43.952	sta:13:sta:1:13,spi:10:spi:0.95:9.5,int:8:int:0.95:7.6,sp:11:sp:1:11,armor:62:armor:0.046:2.852
+R	priest/discipline	55	281315	0	gear	3.6779999999999995	int:3:int:0.95:2.85,armor:18:armor:0.046:0.828
+R	priest/discipline	55	284197	0	gear	9.564	sta:8:sta:1:8,armor:34:armor:0.046:1.564
+R	priest/discipline	55	286997	0	gear	28.496	spi:17:spi:0.95:16.15,sp:10:sp:1:10,armor:51:armor:0.046:2.346
 R	priest/discipline	60	35	0	mh	0.0	
 R	priest/discipline	60	1299	0	gear	4.5200000000000005	sta:4:sta:0.2:0.8,spi:3:spi:1.1:3.3,armor:20:armor:0.021:0.42
 R	priest/discipline	60	1831	0	mh	0.0	
@@ -4751,7 +5125,7 @@ R	priest/discipline	60	2364	0	gear	0.378	armor:18:armor:0.021:0.378
 R	priest/discipline	60	2955	0	gear	14.103	sta:11:sta:0.2:2.2,spi:10:spi:1.1:11,armor:43:armor:0.021:0.903
 R	priest/discipline	60	3423	0	oh	0.0	
 R	priest/discipline	60	3947	0	gear	0.63	armor:30:armor:0.021:0.63
-R	priest/discipline	60	4454	0	mh	2.2	spi:2:spi:1.1:2.2
+R	priest/discipline	60	4454	0	mh	3.3000000000000003	spi:3:spi:1.1:3.3
 R	priest/discipline	60	4947	0	mh	0.0	
 R	priest/discipline	60	5393	0	mh	0.0	
 R	priest/discipline	60	6333	0	mh	0.4	sta:2:sta:0.2:0.4
@@ -4801,8 +5175,8 @@ R	priest/discipline	60	7355	12757	gear	0.399	armor:19:armor:0.021:0.399
 R	priest/discipline	60	7355	12758	gear	0.399	armor:19:armor:0.021:0.399
 R	priest/discipline	60	7355	12759	gear	3.0989999999999998	spHoly:9:spHoly:0.3:2.7,armor:19:armor:0.021:0.399
 R	priest/discipline	60	7355	12761	gear	7.239	spShadow:9:spShadow:0.76:6.84,armor:19:armor:0.021:0.399
-R	priest/discipline	60	7757	0	mh	8.15	sta:7:sta:0.2:1.4,int:15:int:0.45:6.75
-R	priest/discipline	60	9491	0	gear	10.751	sta:5:sta:0.2:1,int:8:int:0.45:3.6,spi:5:spi:1.1:5.5,armor:31:armor:0.021:0.651
+R	priest/discipline	60	7757	0	mh	3.4000000000000004	sta:17:sta:0.2:3.4
+R	priest/discipline	60	9491	0	gear	10.751	int:8:int:0.45:3.6,spi:5:spi:1.1:5.5,sta:5:sta:0.2:1,armor:31:armor:0.021:0.651
 R	priest/discipline	60	9875	0	gear	0.609	armor:29:armor:0.021:0.609
 R	priest/discipline	60	9875	12718	gear	5.809	int:8:int:0.45:3.6,sta:8:sta:0.2:1.6,armor:29:armor:0.021:0.609
 R	priest/discipline	60	9875	12719	gear	11.009	spi:8:spi:1.1:8.8,sta:8:sta:0.2:1.6,armor:29:armor:0.021:0.609
@@ -4855,174 +5229,196 @@ R	priest/discipline	60	10102	12759	gear	12.696	spHoly:37:spHoly:0.3:11.1,armor:7
 R	priest/discipline	60	10102	12761	gear	29.716	spShadow:37:spShadow:0.76:28.12,armor:76:armor:0.021:1.596
 R	priest/discipline	60	10645	0	gear	0.0	
 R	priest/discipline	60	11288	0	ranged	142.0	sp:2:sp:1:2,rdps:17.5:rdps:8:140
-R	priest/discipline	60	11808	0	gear	5.554	sta:20:sta:0.2:4,armor:74:armor:0.021:1.554
-R	priest/discipline	60	12015	0	gear	0.0	
-R	priest/discipline	60	12015	12718	gear	5.85	int:9:int:0.45:4.05,sta:9:sta:0.2:1.8
-R	priest/discipline	60	12015	12719	gear	11.700000000000001	spi:9:spi:1.1:9.9,sta:9:sta:0.2:1.8
-R	priest/discipline	60	12015	12720	gear	13.95	int:9:int:0.45:4.05,spi:9:spi:1.1:9.9
-R	priest/discipline	60	12015	12721	gear	1.8	sta:9:sta:0.2:1.8
-R	priest/discipline	60	12015	12722	gear	1.8	sta:9:sta:0.2:1.8
-R	priest/discipline	60	12015	12723	gear	4.05	int:9:int:0.45:4.05
-R	priest/discipline	60	12015	12724	gear	4.05	int:9:int:0.45:4.05
-R	priest/discipline	60	12015	12725	gear	9.9	spi:9:spi:1.1:9.9
-R	priest/discipline	60	12015	12726	gear	9.9	spi:9:spi:1.1:9.9
-R	priest/discipline	60	12015	12727	gear	0.0	
-R	priest/discipline	60	12015	12728	gear	0.0	
-R	priest/discipline	60	12015	12729	gear	6.3	int:14:int:0.45:6.3
-R	priest/discipline	60	12015	12730	gear	15.400000000000002	spi:14:spi:1.1:15.4
-R	priest/discipline	60	12015	12731	gear	2.8000000000000003	sta:14:sta:0.2:2.8
-R	priest/discipline	60	12015	12732	gear	0.0	
-R	priest/discipline	60	12015	12733	gear	0.0	
-R	priest/discipline	60	12015	12737	gear	0.0	
-R	priest/discipline	60	12015	12738	gear	12.0	mp5:6:mp5:2:12
-R	priest/discipline	60	12015	12739	gear	0.0	
-R	priest/discipline	60	12015	12740	gear	1.8	sta:9:sta:0.2:1.8
-R	priest/discipline	60	12015	12741	gear	1.8	sta:9:sta:0.2:1.8
-R	priest/discipline	60	12015	12742	gear	1.8	sta:9:sta:0.2:1.8
-R	priest/discipline	60	12015	12743	gear	1.8	sta:9:sta:0.2:1.8
-R	priest/discipline	60	12015	12744	gear	1.8	sta:9:sta:0.2:1.8
-R	priest/discipline	60	12015	12745	gear	10.7	int:10:int:0.45:4.5,sta:6:sta:0.2:1.2,sp:5:sp:1:5
-R	priest/discipline	60	12015	12746	gear	16.1	int:10:int:0.45:4.5,spi:6:spi:1.1:6.6,sp:5:sp:1:5
-R	priest/discipline	60	12015	12747	gear	13.600000000000001	spi:6:spi:1.1:6.6,sta:10:sta:0.2:2,sp:5:sp:1:5
-R	priest/discipline	60	12015	12748	gear	7.7	int:6:int:0.45:2.7,sta:10:sta:0.2:2,spDmg:3:sp:1:3
-R	priest/discipline	60	12015	12749	gear	14.100000000000001	int:10:int:0.45:4.5,spi:6:spi:1.1:6.6,spDmg:3:sp:1:3
-R	priest/discipline	60	12015	12750	gear	11.600000000000001	spi:6:spi:1.1:6.6,sta:10:sta:0.2:2,spDmg:3:sp:1:3
-R	priest/discipline	60	12015	12751	gear	2.0	sta:10:sta:0.2:2
-R	priest/discipline	60	12015	12752	gear	2.0	sta:10:sta:0.2:2
-R	priest/discipline	60	12015	12753	gear	2.0	sta:10:sta:0.2:2
-R	priest/discipline	60	12015	12754	gear	7.0	sp:5:sp:1:5,sta:10:sta:0.2:2
-R	priest/discipline	60	12015	12755	gear	7.0	sp:5:sp:1:5,sta:10:sta:0.2:2
-R	priest/discipline	60	12805	0	gear	0.0	
-R	priest/discipline	60	13360	0	mh	12.100000000000001	sta:5:sta:0.2:1,int:10:int:0.45:4.5,spi:6:spi:1.1:6.6
-R	priest/discipline	60	14108	0	gear	14.271	spi:12:spi:1.1:13.2,armor:51:armor:0.021:1.071
-R	priest/discipline	60	14213	0	gear	1.0290000000000001	armor:49:armor:0.021:1.029
-R	priest/discipline	60	14213	12718	gear	7.529	int:10:int:0.45:4.5,sta:10:sta:0.2:2,armor:49:armor:0.021:1.029
-R	priest/discipline	60	14213	12719	gear	14.029	spi:10:spi:1.1:11,sta:10:sta:0.2:2,armor:49:armor:0.021:1.029
-R	priest/discipline	60	14213	12720	gear	16.529	int:10:int:0.45:4.5,spi:10:spi:1.1:11,armor:49:armor:0.021:1.029
-R	priest/discipline	60	14213	12729	gear	7.779	int:15:int:0.45:6.75,armor:49:armor:0.021:1.029
-R	priest/discipline	60	14213	12730	gear	17.529	spi:15:spi:1.1:16.5,armor:49:armor:0.021:1.029
-R	priest/discipline	60	14213	12731	gear	4.029	sta:15:sta:0.2:3,armor:49:armor:0.021:1.029
-R	priest/discipline	60	14213	12734	gear	19.029	sp:18:sp:1:18,armor:49:armor:0.021:1.029
-R	priest/discipline	60	14213	12735	gear	12.029	spDmg:11:sp:1:11,armor:49:armor:0.021:1.029
-R	priest/discipline	60	14213	12740	gear	3.029	sta:10:sta:0.2:2,armor:49:armor:0.021:1.029
-R	priest/discipline	60	14213	12741	gear	3.029	sta:10:sta:0.2:2,armor:49:armor:0.021:1.029
-R	priest/discipline	60	14213	12742	gear	3.029	sta:10:sta:0.2:2,armor:49:armor:0.021:1.029
-R	priest/discipline	60	14213	12743	gear	3.029	sta:10:sta:0.2:2,armor:49:armor:0.021:1.029
-R	priest/discipline	60	14213	12744	gear	3.029	sta:10:sta:0.2:2,armor:49:armor:0.021:1.029
-R	priest/discipline	60	14213	12745	gear	13.179	int:11:int:0.45:4.95,sta:6:sta:0.2:1.2,sp:6:sp:1:6,armor:49:armor:0.021:1.029
-R	priest/discipline	60	14213	12746	gear	18.579	int:11:int:0.45:4.95,spi:6:spi:1.1:6.6,sp:6:sp:1:6,armor:49:armor:0.021:1.029
-R	priest/discipline	60	14213	12747	gear	15.829	spi:6:spi:1.1:6.6,sta:11:sta:0.2:2.2,sp:6:sp:1:6,armor:49:armor:0.021:1.029
-R	priest/discipline	60	14213	12748	gear	9.929	int:6:int:0.45:2.7,sta:11:sta:0.2:2.2,spDmg:4:sp:1:4,armor:49:armor:0.021:1.029
-R	priest/discipline	60	14213	12749	gear	16.579	int:11:int:0.45:4.95,spi:6:spi:1.1:6.6,spDmg:4:sp:1:4,armor:49:armor:0.021:1.029
-R	priest/discipline	60	14213	12750	gear	13.829	spi:6:spi:1.1:6.6,sta:11:sta:0.2:2.2,spDmg:4:sp:1:4,armor:49:armor:0.021:1.029
-R	priest/discipline	60	14213	12756	gear	1.0290000000000001	armor:49:armor:0.021:1.029
-R	priest/discipline	60	14213	12757	gear	1.0290000000000001	armor:49:armor:0.021:1.029
-R	priest/discipline	60	14213	12758	gear	1.0290000000000001	armor:49:armor:0.021:1.029
-R	priest/discipline	60	14213	12759	gear	7.329	spHoly:21:spHoly:0.3:6.3,armor:49:armor:0.021:1.029
-R	priest/discipline	60	14213	12761	gear	16.989	spShadow:21:spShadow:0.76:15.96,armor:49:armor:0.021:1.029
-R	priest/discipline	60	14312	0	gear	1.344	armor:64:armor:0.021:1.344
-R	priest/discipline	60	14312	12718	gear	13.043999999999999	int:18:int:0.45:8.1,sta:18:sta:0.2:3.6,armor:64:armor:0.021:1.344
-R	priest/discipline	60	14312	12719	gear	24.744000000000003	spi:18:spi:1.1:19.8,sta:18:sta:0.2:3.6,armor:64:armor:0.021:1.344
-R	priest/discipline	60	14312	12720	gear	29.244	int:18:int:0.45:8.1,spi:18:spi:1.1:19.8,armor:64:armor:0.021:1.344
-R	priest/discipline	60	14312	12729	gear	13.494	int:27:int:0.45:12.15,armor:64:armor:0.021:1.344
-R	priest/discipline	60	14312	12730	gear	31.044000000000004	spi:27:spi:1.1:29.7,armor:64:armor:0.021:1.344
-R	priest/discipline	60	14312	12731	gear	6.744000000000001	sta:27:sta:0.2:5.4,armor:64:armor:0.021:1.344
-R	priest/discipline	60	14312	12734	gear	33.344	sp:32:sp:1:32,armor:64:armor:0.021:1.344
-R	priest/discipline	60	14312	12735	gear	21.344	spDmg:20:sp:1:20,armor:64:armor:0.021:1.344
-R	priest/discipline	60	14312	12740	gear	4.944	sta:18:sta:0.2:3.6,armor:64:armor:0.021:1.344
-R	priest/discipline	60	14312	12741	gear	4.944	sta:18:sta:0.2:3.6,armor:64:armor:0.021:1.344
-R	priest/discipline	60	14312	12742	gear	4.944	sta:18:sta:0.2:3.6,armor:64:armor:0.021:1.344
-R	priest/discipline	60	14312	12743	gear	4.944	sta:18:sta:0.2:3.6,armor:64:armor:0.021:1.344
-R	priest/discipline	60	14312	12744	gear	4.944	sta:18:sta:0.2:3.6,armor:64:armor:0.021:1.344
-R	priest/discipline	60	14312	12745	gear	22.544	int:20:int:0.45:9,sta:11:sta:0.2:2.2,sp:10:sp:1:10,armor:64:armor:0.021:1.344
-R	priest/discipline	60	14312	12746	gear	32.444	int:20:int:0.45:9,spi:11:spi:1.1:12.1,sp:10:sp:1:10,armor:64:armor:0.021:1.344
-R	priest/discipline	60	14312	12747	gear	27.444000000000003	spi:11:spi:1.1:12.1,sta:20:sta:0.2:4,sp:10:sp:1:10,armor:64:armor:0.021:1.344
-R	priest/discipline	60	14312	12748	gear	16.294	int:11:int:0.45:4.95,sta:20:sta:0.2:4,spDmg:6:sp:1:6,armor:64:armor:0.021:1.344
-R	priest/discipline	60	14312	12749	gear	28.444000000000003	int:20:int:0.45:9,spi:11:spi:1.1:12.1,spDmg:6:sp:1:6,armor:64:armor:0.021:1.344
-R	priest/discipline	60	14312	12750	gear	23.444000000000003	spi:11:spi:1.1:12.1,sta:20:sta:0.2:4,spDmg:6:sp:1:6,armor:64:armor:0.021:1.344
-R	priest/discipline	60	14312	12756	gear	1.344	armor:64:armor:0.021:1.344
-R	priest/discipline	60	14312	12757	gear	1.344	armor:64:armor:0.021:1.344
-R	priest/discipline	60	14312	12758	gear	1.344	armor:64:armor:0.021:1.344
-R	priest/discipline	60	14312	12759	gear	13.043999999999999	spHoly:39:spHoly:0.3:11.7,armor:64:armor:0.021:1.344
-R	priest/discipline	60	14312	12761	gear	30.984	spShadow:39:spShadow:0.76:29.64,armor:64:armor:0.021:1.344
-R	priest/discipline	60	14440	0	gear	8.430000000000001	sta:6:sta:0.2:1.2,spi:6:spi:1.1:6.6,armor:30:armor:0.021:0.63
-R	priest/discipline	60	15299	0	gear	0.189	armor:9:armor:0.021:0.189
-R	priest/discipline	60	15939	0	oh	0.0	
-R	priest/discipline	60	15939	12718	oh	5.85	int:9:int:0.45:4.05,sta:9:sta:0.2:1.8
-R	priest/discipline	60	15939	12719	oh	11.700000000000001	spi:9:spi:1.1:9.9,sta:9:sta:0.2:1.8
-R	priest/discipline	60	15939	12720	oh	13.95	int:9:int:0.45:4.05,spi:9:spi:1.1:9.9
-R	priest/discipline	60	15939	12721	oh	1.8	sta:9:sta:0.2:1.8
-R	priest/discipline	60	15939	12722	oh	1.8	sta:9:sta:0.2:1.8
-R	priest/discipline	60	15939	12723	oh	4.05	int:9:int:0.45:4.05
-R	priest/discipline	60	15939	12724	oh	4.05	int:9:int:0.45:4.05
-R	priest/discipline	60	15939	12725	oh	9.9	spi:9:spi:1.1:9.9
-R	priest/discipline	60	15939	12726	oh	9.9	spi:9:spi:1.1:9.9
-R	priest/discipline	60	15939	12727	oh	0.0	
-R	priest/discipline	60	15939	12728	oh	0.0	
-R	priest/discipline	60	15939	12729	oh	6.3	int:14:int:0.45:6.3
-R	priest/discipline	60	15939	12730	oh	15.400000000000002	spi:14:spi:1.1:15.4
-R	priest/discipline	60	15939	12731	oh	2.8000000000000003	sta:14:sta:0.2:2.8
-R	priest/discipline	60	15939	12732	oh	0.0	
-R	priest/discipline	60	15939	12733	oh	0.0	
-R	priest/discipline	60	15939	12734	oh	16.0	sp:16:sp:1:16
-R	priest/discipline	60	15939	12735	oh	10.0	spDmg:10:sp:1:10
-R	priest/discipline	60	15939	12740	oh	1.8	sta:9:sta:0.2:1.8
-R	priest/discipline	60	15939	12741	oh	1.8	sta:9:sta:0.2:1.8
-R	priest/discipline	60	15939	12742	oh	1.8	sta:9:sta:0.2:1.8
-R	priest/discipline	60	15939	12743	oh	1.8	sta:9:sta:0.2:1.8
-R	priest/discipline	60	15939	12744	oh	1.8	sta:9:sta:0.2:1.8
-R	priest/discipline	60	15939	12745	oh	10.7	int:10:int:0.45:4.5,sta:6:sta:0.2:1.2,sp:5:sp:1:5
-R	priest/discipline	60	15939	12746	oh	16.1	int:10:int:0.45:4.5,spi:6:spi:1.1:6.6,sp:5:sp:1:5
-R	priest/discipline	60	15939	12747	oh	13.600000000000001	spi:6:spi:1.1:6.6,sta:10:sta:0.2:2,sp:5:sp:1:5
-R	priest/discipline	60	15939	12748	oh	7.7	int:6:int:0.45:2.7,sta:10:sta:0.2:2,spDmg:3:sp:1:3
-R	priest/discipline	60	15939	12749	oh	14.100000000000001	int:10:int:0.45:4.5,spi:6:spi:1.1:6.6,spDmg:3:sp:1:3
-R	priest/discipline	60	15939	12750	oh	11.600000000000001	spi:6:spi:1.1:6.6,sta:10:sta:0.2:2,spDmg:3:sp:1:3
-R	priest/discipline	60	15939	12756	oh	0.0	
-R	priest/discipline	60	15939	12757	oh	0.0	
-R	priest/discipline	60	15939	12758	oh	0.0	
-R	priest/discipline	60	15939	12759	oh	6.0	spHoly:20:spHoly:0.3:6
-R	priest/discipline	60	15939	12760	oh	0.0	
-R	priest/discipline	60	15939	12761	oh	15.2	spShadow:20:spShadow:0.76:15.2
+R	priest/discipline	60	11807	0	gear	18.466	spi:10:spi:1.1:11,sta:10:sta:0.2:2,int:10:int:0.45:4.5,armor:46:armor:0.021:0.966
+R	priest/discipline	60	12014	0	gear	0.0	
+R	priest/discipline	60	12014	12718	gear	5.85	int:9:int:0.45:4.05,sta:9:sta:0.2:1.8
+R	priest/discipline	60	12014	12719	gear	11.700000000000001	spi:9:spi:1.1:9.9,sta:9:sta:0.2:1.8
+R	priest/discipline	60	12014	12720	gear	13.95	int:9:int:0.45:4.05,spi:9:spi:1.1:9.9
+R	priest/discipline	60	12014	12721	gear	1.8	sta:9:sta:0.2:1.8
+R	priest/discipline	60	12014	12722	gear	1.8	sta:9:sta:0.2:1.8
+R	priest/discipline	60	12014	12723	gear	4.05	int:9:int:0.45:4.05
+R	priest/discipline	60	12014	12724	gear	4.05	int:9:int:0.45:4.05
+R	priest/discipline	60	12014	12725	gear	9.9	spi:9:spi:1.1:9.9
+R	priest/discipline	60	12014	12726	gear	9.9	spi:9:spi:1.1:9.9
+R	priest/discipline	60	12014	12727	gear	0.0	
+R	priest/discipline	60	12014	12728	gear	0.0	
+R	priest/discipline	60	12014	12729	gear	5.8500000000000005	int:13:int:0.45:5.85
+R	priest/discipline	60	12014	12730	gear	14.3	spi:13:spi:1.1:14.3
+R	priest/discipline	60	12014	12731	gear	2.6	sta:13:sta:0.2:2.6
+R	priest/discipline	60	12014	12732	gear	0.0	
+R	priest/discipline	60	12014	12733	gear	0.0	
+R	priest/discipline	60	12014	12737	gear	0.0	
+R	priest/discipline	60	12014	12738	gear	10.0	mp5:5:mp5:2:10
+R	priest/discipline	60	12014	12739	gear	0.0	
+R	priest/discipline	60	12014	12740	gear	1.8	sta:9:sta:0.2:1.8
+R	priest/discipline	60	12014	12741	gear	1.8	sta:9:sta:0.2:1.8
+R	priest/discipline	60	12014	12742	gear	1.8	sta:9:sta:0.2:1.8
+R	priest/discipline	60	12014	12743	gear	1.8	sta:9:sta:0.2:1.8
+R	priest/discipline	60	12014	12744	gear	1.8	sta:9:sta:0.2:1.8
+R	priest/discipline	60	12014	12745	gear	10.05	int:9:int:0.45:4.05,sta:5:sta:0.2:1,sp:5:sp:1:5
+R	priest/discipline	60	12014	12746	gear	14.55	int:9:int:0.45:4.05,spi:5:spi:1.1:5.5,sp:5:sp:1:5
+R	priest/discipline	60	12014	12747	gear	12.3	spi:5:spi:1.1:5.5,sta:9:sta:0.2:1.8,sp:5:sp:1:5
+R	priest/discipline	60	12014	12748	gear	7.05	int:5:int:0.45:2.25,sta:9:sta:0.2:1.8,spDmg:3:sp:1:3
+R	priest/discipline	60	12014	12749	gear	12.55	int:9:int:0.45:4.05,spi:5:spi:1.1:5.5,spDmg:3:sp:1:3
+R	priest/discipline	60	12014	12750	gear	10.3	spi:5:spi:1.1:5.5,sta:9:sta:0.2:1.8,spDmg:3:sp:1:3
+R	priest/discipline	60	12014	12751	gear	1.8	sta:9:sta:0.2:1.8
+R	priest/discipline	60	12014	12752	gear	1.8	sta:9:sta:0.2:1.8
+R	priest/discipline	60	12014	12753	gear	1.8	sta:9:sta:0.2:1.8
+R	priest/discipline	60	12014	12754	gear	6.8	sp:5:sp:1:5,sta:9:sta:0.2:1.8
+R	priest/discipline	60	12014	12755	gear	7.0	sp:5:sp:1:5,sta:10:sta:0.2:2
+R	priest/discipline	60	12794	0	mh	0.0	
+R	priest/discipline	60	13353	0	oh	31.51	spi:10:spi:1.1:11,int:15:int:0.45:6.75,sta:8:sta:0.2:1.6,spShadow:16:spShadow:0.76:12.16
+R	priest/discipline	60	14107	0	gear	26.462000000000003	int:12:int:0.45:5.4,spShadow:26:spShadow:0.76:19.76,armor:62:armor:0.021:1.302
+R	priest/discipline	60	14212	0	gear	0.7350000000000001	armor:35:armor:0.021:0.735
+R	priest/discipline	60	14212	12718	gear	5.285	int:7:int:0.45:3.15,sta:7:sta:0.2:1.4,armor:35:armor:0.021:0.735
+R	priest/discipline	60	14212	12719	gear	9.835	spi:7:spi:1.1:7.7,sta:7:sta:0.2:1.4,armor:35:armor:0.021:0.735
+R	priest/discipline	60	14212	12720	gear	11.585	int:7:int:0.45:3.15,spi:7:spi:1.1:7.7,armor:35:armor:0.021:0.735
+R	priest/discipline	60	14212	12729	gear	5.235	int:10:int:0.45:4.5,armor:35:armor:0.021:0.735
+R	priest/discipline	60	14212	12730	gear	11.735	spi:10:spi:1.1:11,armor:35:armor:0.021:0.735
+R	priest/discipline	60	14212	12731	gear	2.7350000000000003	sta:10:sta:0.2:2,armor:35:armor:0.021:0.735
+R	priest/discipline	60	14212	12734	gear	12.735	sp:12:sp:1:12,armor:35:armor:0.021:0.735
+R	priest/discipline	60	14212	12735	gear	7.735	spDmg:7:sp:1:7,armor:35:armor:0.021:0.735
+R	priest/discipline	60	14212	12740	gear	2.1350000000000002	sta:7:sta:0.2:1.4,armor:35:armor:0.021:0.735
+R	priest/discipline	60	14212	12741	gear	2.1350000000000002	sta:7:sta:0.2:1.4,armor:35:armor:0.021:0.735
+R	priest/discipline	60	14212	12742	gear	2.1350000000000002	sta:7:sta:0.2:1.4,armor:35:armor:0.021:0.735
+R	priest/discipline	60	14212	12743	gear	2.1350000000000002	sta:7:sta:0.2:1.4,armor:35:armor:0.021:0.735
+R	priest/discipline	60	14212	12744	gear	2.1350000000000002	sta:7:sta:0.2:1.4,armor:35:armor:0.021:0.735
+R	priest/discipline	60	14212	12745	gear	8.685	int:7:int:0.45:3.15,sta:4:sta:0.2:0.8,sp:4:sp:1:4,armor:35:armor:0.021:0.735
+R	priest/discipline	60	14212	12746	gear	12.285	int:7:int:0.45:3.15,spi:4:spi:1.1:4.4,sp:4:sp:1:4,armor:35:armor:0.021:0.735
+R	priest/discipline	60	14212	12747	gear	10.535	spi:4:spi:1.1:4.4,sta:7:sta:0.2:1.4,sp:4:sp:1:4,armor:35:armor:0.021:0.735
+R	priest/discipline	60	14212	12748	gear	5.9350000000000005	int:4:int:0.45:1.8,sta:7:sta:0.2:1.4,spDmg:2:sp:1:2,armor:35:armor:0.021:0.735
+R	priest/discipline	60	14212	12749	gear	10.285	int:7:int:0.45:3.15,spi:4:spi:1.1:4.4,spDmg:2:sp:1:2,armor:35:armor:0.021:0.735
+R	priest/discipline	60	14212	12750	gear	8.535	spi:4:spi:1.1:4.4,sta:7:sta:0.2:1.4,spDmg:2:sp:1:2,armor:35:armor:0.021:0.735
+R	priest/discipline	60	14212	12756	gear	0.7350000000000001	armor:35:armor:0.021:0.735
+R	priest/discipline	60	14212	12757	gear	0.7350000000000001	armor:35:armor:0.021:0.735
+R	priest/discipline	60	14212	12758	gear	0.7350000000000001	armor:35:armor:0.021:0.735
+R	priest/discipline	60	14212	12759	gear	4.9350000000000005	spHoly:14:spHoly:0.3:4.2,armor:35:armor:0.021:0.735
+R	priest/discipline	60	14212	12761	gear	11.375	spShadow:14:spShadow:0.76:10.64,armor:35:armor:0.021:0.735
+R	priest/discipline	60	14311	0	gear	0.651	armor:31:armor:0.021:0.651
+R	priest/discipline	60	14311	12718	gear	6.5009999999999994	int:9:int:0.45:4.05,sta:9:sta:0.2:1.8,armor:31:armor:0.021:0.651
+R	priest/discipline	60	14311	12719	gear	12.351	spi:9:spi:1.1:9.9,sta:9:sta:0.2:1.8,armor:31:armor:0.021:0.651
+R	priest/discipline	60	14311	12720	gear	14.600999999999999	int:9:int:0.45:4.05,spi:9:spi:1.1:9.9,armor:31:armor:0.021:0.651
+R	priest/discipline	60	14311	12729	gear	6.501	int:13:int:0.45:5.85,armor:31:armor:0.021:0.651
+R	priest/discipline	60	14311	12730	gear	14.951	spi:13:spi:1.1:14.3,armor:31:armor:0.021:0.651
+R	priest/discipline	60	14311	12731	gear	3.2510000000000003	sta:13:sta:0.2:2.6,armor:31:armor:0.021:0.651
+R	priest/discipline	60	14311	12734	gear	15.651	sp:15:sp:1:15,armor:31:armor:0.021:0.651
+R	priest/discipline	60	14311	12735	gear	10.651	spDmg:10:sp:1:10,armor:31:armor:0.021:0.651
+R	priest/discipline	60	14311	12740	gear	2.451	sta:9:sta:0.2:1.8,armor:31:armor:0.021:0.651
+R	priest/discipline	60	14311	12741	gear	2.451	sta:9:sta:0.2:1.8,armor:31:armor:0.021:0.651
+R	priest/discipline	60	14311	12742	gear	2.451	sta:9:sta:0.2:1.8,armor:31:armor:0.021:0.651
+R	priest/discipline	60	14311	12743	gear	2.451	sta:9:sta:0.2:1.8,armor:31:armor:0.021:0.651
+R	priest/discipline	60	14311	12744	gear	2.451	sta:9:sta:0.2:1.8,armor:31:armor:0.021:0.651
+R	priest/discipline	60	14311	12745	gear	10.701	int:9:int:0.45:4.05,sta:5:sta:0.2:1,sp:5:sp:1:5,armor:31:armor:0.021:0.651
+R	priest/discipline	60	14311	12746	gear	15.201	int:9:int:0.45:4.05,spi:5:spi:1.1:5.5,sp:5:sp:1:5,armor:31:armor:0.021:0.651
+R	priest/discipline	60	14311	12747	gear	12.951	spi:5:spi:1.1:5.5,sta:9:sta:0.2:1.8,sp:5:sp:1:5,armor:31:armor:0.021:0.651
+R	priest/discipline	60	14311	12748	gear	7.701	int:5:int:0.45:2.25,sta:9:sta:0.2:1.8,spDmg:3:sp:1:3,armor:31:armor:0.021:0.651
+R	priest/discipline	60	14311	12749	gear	13.201	int:9:int:0.45:4.05,spi:5:spi:1.1:5.5,spDmg:3:sp:1:3,armor:31:armor:0.021:0.651
+R	priest/discipline	60	14311	12750	gear	10.951	spi:5:spi:1.1:5.5,sta:9:sta:0.2:1.8,spDmg:3:sp:1:3,armor:31:armor:0.021:0.651
+R	priest/discipline	60	14311	12756	gear	0.651	armor:31:armor:0.021:0.651
+R	priest/discipline	60	14311	12757	gear	0.651	armor:31:armor:0.021:0.651
+R	priest/discipline	60	14311	12758	gear	0.651	armor:31:armor:0.021:0.651
+R	priest/discipline	60	14311	12759	gear	6.351	spHoly:19:spHoly:0.3:5.7,armor:31:armor:0.021:0.651
+R	priest/discipline	60	14311	12761	gear	15.091	spShadow:19:spShadow:0.76:14.44,armor:31:armor:0.021:0.651
+R	priest/discipline	60	14439	0	gear	11.167000000000002	spi:8:spi:1.1:8.8,int:4:int:0.45:1.8,armor:27:armor:0.021:0.567
+R	priest/discipline	60	15283	0	ranged	454.08	rdps:56.76:rdps:8:454.08
+R	priest/discipline	60	15283	12718	ranged	457.97999999999996	int:6:int:0.45:2.7,sta:6:sta:0.2:1.2,rdps:56.76:rdps:8:454.08
+R	priest/discipline	60	15283	12719	ranged	461.88	spi:6:spi:1.1:6.6,sta:6:sta:0.2:1.2,rdps:56.76:rdps:8:454.08
+R	priest/discipline	60	15283	12720	ranged	463.38	int:6:int:0.45:2.7,spi:6:spi:1.1:6.6,rdps:56.76:rdps:8:454.08
+R	priest/discipline	60	15283	12729	ranged	458.13	int:9:int:0.45:4.05,rdps:56.76:rdps:8:454.08
+R	priest/discipline	60	15283	12730	ranged	463.97999999999996	spi:9:spi:1.1:9.9,rdps:56.76:rdps:8:454.08
+R	priest/discipline	60	15283	12731	ranged	455.88	sta:9:sta:0.2:1.8,rdps:56.76:rdps:8:454.08
+R	priest/discipline	60	15283	12734	ranged	465.08	sp:11:sp:1:11,rdps:56.76:rdps:8:454.08
+R	priest/discipline	60	15283	12735	ranged	461.08	spDmg:7:sp:1:7,rdps:56.76:rdps:8:454.08
+R	priest/discipline	60	15283	12740	ranged	455.28	sta:6:sta:0.2:1.2,rdps:56.76:rdps:8:454.08
+R	priest/discipline	60	15283	12741	ranged	455.28	sta:6:sta:0.2:1.2,rdps:56.76:rdps:8:454.08
+R	priest/discipline	60	15283	12742	ranged	455.28	sta:6:sta:0.2:1.2,rdps:56.76:rdps:8:454.08
+R	priest/discipline	60	15283	12743	ranged	455.28	sta:6:sta:0.2:1.2,rdps:56.76:rdps:8:454.08
+R	priest/discipline	60	15283	12744	ranged	455.28	sta:6:sta:0.2:1.2,rdps:56.76:rdps:8:454.08
+R	priest/discipline	60	15283	12745	ranged	461.03	int:7:int:0.45:3.15,sta:4:sta:0.2:0.8,sp:3:sp:1:3,rdps:56.76:rdps:8:454.08
+R	priest/discipline	60	15283	12746	ranged	464.63	int:7:int:0.45:3.15,spi:4:spi:1.1:4.4,sp:3:sp:1:3,rdps:56.76:rdps:8:454.08
+R	priest/discipline	60	15283	12747	ranged	462.88	spi:4:spi:1.1:4.4,sta:7:sta:0.2:1.4,sp:3:sp:1:3,rdps:56.76:rdps:8:454.08
+R	priest/discipline	60	15283	12748	ranged	459.28	int:4:int:0.45:1.8,sta:7:sta:0.2:1.4,spDmg:2:sp:1:2,rdps:56.76:rdps:8:454.08
+R	priest/discipline	60	15283	12749	ranged	463.63	int:7:int:0.45:3.15,spi:4:spi:1.1:4.4,spDmg:2:sp:1:2,rdps:56.76:rdps:8:454.08
+R	priest/discipline	60	15283	12750	ranged	461.88	spi:4:spi:1.1:4.4,sta:7:sta:0.2:1.4,spDmg:2:sp:1:2,rdps:56.76:rdps:8:454.08
+R	priest/discipline	60	15283	12756	ranged	454.08	rdps:56.76:rdps:8:454.08
+R	priest/discipline	60	15283	12757	ranged	454.08	rdps:56.76:rdps:8:454.08
+R	priest/discipline	60	15283	12758	ranged	454.08	rdps:56.76:rdps:8:454.08
+R	priest/discipline	60	15283	12759	ranged	457.97999999999996	spHoly:13:spHoly:0.3:3.9,rdps:56.76:rdps:8:454.08
+R	priest/discipline	60	15283	12761	ranged	463.96	spShadow:13:spShadow:0.76:9.88,rdps:56.76:rdps:8:454.08
+R	priest/discipline	60	15938	0	oh	0.0	
+R	priest/discipline	60	15938	12718	oh	5.85	int:9:int:0.45:4.05,sta:9:sta:0.2:1.8
+R	priest/discipline	60	15938	12719	oh	11.700000000000001	spi:9:spi:1.1:9.9,sta:9:sta:0.2:1.8
+R	priest/discipline	60	15938	12720	oh	13.95	int:9:int:0.45:4.05,spi:9:spi:1.1:9.9
+R	priest/discipline	60	15938	12721	oh	1.8	sta:9:sta:0.2:1.8
+R	priest/discipline	60	15938	12722	oh	1.8	sta:9:sta:0.2:1.8
+R	priest/discipline	60	15938	12723	oh	4.05	int:9:int:0.45:4.05
+R	priest/discipline	60	15938	12724	oh	4.05	int:9:int:0.45:4.05
+R	priest/discipline	60	15938	12725	oh	9.9	spi:9:spi:1.1:9.9
+R	priest/discipline	60	15938	12726	oh	9.9	spi:9:spi:1.1:9.9
+R	priest/discipline	60	15938	12727	oh	0.0	
+R	priest/discipline	60	15938	12728	oh	0.0	
+R	priest/discipline	60	15938	12729	oh	6.3	int:14:int:0.45:6.3
+R	priest/discipline	60	15938	12730	oh	15.400000000000002	spi:14:spi:1.1:15.4
+R	priest/discipline	60	15938	12731	oh	2.8000000000000003	sta:14:sta:0.2:2.8
+R	priest/discipline	60	15938	12732	oh	0.0	
+R	priest/discipline	60	15938	12733	oh	0.0	
+R	priest/discipline	60	15938	12734	oh	16.0	sp:16:sp:1:16
+R	priest/discipline	60	15938	12735	oh	10.0	spDmg:10:sp:1:10
+R	priest/discipline	60	15938	12740	oh	1.8	sta:9:sta:0.2:1.8
+R	priest/discipline	60	15938	12741	oh	1.8	sta:9:sta:0.2:1.8
+R	priest/discipline	60	15938	12742	oh	1.8	sta:9:sta:0.2:1.8
+R	priest/discipline	60	15938	12743	oh	1.8	sta:9:sta:0.2:1.8
+R	priest/discipline	60	15938	12744	oh	1.8	sta:9:sta:0.2:1.8
+R	priest/discipline	60	15938	12745	oh	10.7	int:10:int:0.45:4.5,sta:6:sta:0.2:1.2,sp:5:sp:1:5
+R	priest/discipline	60	15938	12746	oh	16.1	int:10:int:0.45:4.5,spi:6:spi:1.1:6.6,sp:5:sp:1:5
+R	priest/discipline	60	15938	12747	oh	13.600000000000001	spi:6:spi:1.1:6.6,sta:10:sta:0.2:2,sp:5:sp:1:5
+R	priest/discipline	60	15938	12748	oh	7.7	int:6:int:0.45:2.7,sta:10:sta:0.2:2,spDmg:3:sp:1:3
+R	priest/discipline	60	15938	12749	oh	14.100000000000001	int:10:int:0.45:4.5,spi:6:spi:1.1:6.6,spDmg:3:sp:1:3
+R	priest/discipline	60	15938	12750	oh	11.600000000000001	spi:6:spi:1.1:6.6,sta:10:sta:0.2:2,spDmg:3:sp:1:3
+R	priest/discipline	60	15938	12756	oh	0.0	
+R	priest/discipline	60	15938	12757	oh	0.0	
+R	priest/discipline	60	15938	12758	oh	0.0	
+R	priest/discipline	60	15938	12759	oh	6.0	spHoly:20:spHoly:0.3:6
+R	priest/discipline	60	15938	12760	oh	0.0	
+R	priest/discipline	60	15938	12761	oh	15.2	spShadow:20:spShadow:0.76:15.2
 R	priest/discipline	60	15945	0	oh	2.6	sta:2:sta:0.2:0.4,spi:2:spi:1.1:2.2
-R	priest/discipline	60	16819	0	gear	23.823999999999998	sta:8:sta:0.2:1.6,int:14:int:0.45:6.3,spi:10:spi:1.1:11,mp5:2:mp5:2:4,armor:44:armor:0.021:0.924
-R	priest/discipline	60	17739	0	gear	3.1770000000000005	sta:12:sta:0.2:2.4,armor:37:armor:0.021:0.777
-R	priest/discipline	60	18440	0	gear	3.186	sta:9:sta:0.2:1.8,armor:66:armor:0.021:1.386
-R	priest/discipline	60	18879	0	gear	6.3100000000000005	sta:20:sta:0.2:4,armor:110:armor:0.021:2.31
-R	priest/discipline	60	19395	0	gear	18.0	mp5:9:mp5:2:18
-R	priest/discipline	60	19893	0	gear	26.1	sta:10:sta:0.2:2,int:10:int:0.45:4.5,spellHit:1:spellHit:8.6:8.6,sp:11:sp:1:11
-R	priest/discipline	60	20330	0	gear	34.871	int:27:int:0.45:12.15,spi:11:spi:1.1:12.1,sta:12:sta:0.2:2.4,crit:1:spellCrit:6.1:6.1,armor:101:armor:0.021:2.121
-R	priest/discipline	60	20652	0	gear	1.113	armor:53:armor:0.021:1.113
-R	priest/discipline	60	20652	12745	gear	16.463	int:15:int:0.45:6.75,sta:8:sta:0.2:1.6,sp:7:sp:1:7,armor:53:armor:0.021:1.113
-R	priest/discipline	60	20652	12746	gear	23.663	int:15:int:0.45:6.75,spi:8:spi:1.1:8.8,sp:7:sp:1:7,armor:53:armor:0.021:1.113
-R	priest/discipline	60	20652	12747	gear	19.913	spi:8:spi:1.1:8.8,sta:15:sta:0.2:3,sp:7:sp:1:7,armor:53:armor:0.021:1.113
-R	priest/discipline	60	20652	12748	gear	12.713	int:8:int:0.45:3.6,sta:15:sta:0.2:3,spDmg:5:sp:1:5,armor:53:armor:0.021:1.113
-R	priest/discipline	60	20652	12749	gear	21.663	int:15:int:0.45:6.75,spi:8:spi:1.1:8.8,spDmg:5:sp:1:5,armor:53:armor:0.021:1.113
-R	priest/discipline	60	20652	12750	gear	17.913	spi:8:spi:1.1:8.8,sta:15:sta:0.2:3,spDmg:5:sp:1:5,armor:53:armor:0.021:1.113
-R	priest/discipline	60	21500	0	gear	18.726	sta:14:sta:0.2:2.8,int:15:int:0.45:6.75,mp5:4:mp5:2:8,armor:56:armor:0.021:1.176
-R	priest/discipline	60	22085	0	gear	51.801	int:14:int:0.45:6.3,sta:13:sta:0.2:2.6,mp5:6:mp5:2:12,sp:16:sp:1:16,spi:12:spi:1.1:13.2,armor:81:armor:0.021:1.701
-R	priest/discipline	60	22678	0	gear	0.0	
-R	priest/discipline	60	23177	0	ranged	312.24	spShadow:10:spShadow:0.76:7.6,rdps:38.08:rdps:8:304.64
-R	priest/discipline	60	212583	0	mh	0.6000000000000001	sta:3:sta:0.2:0.6
-R	priest/discipline	60	217296	0	gear	6.8	sta:9:sta:0.2:1.8,sp:5:sp:1:5
-R	priest/discipline	60	220907	0	gear	30.074	sta:13:sta:0.2:2.6,int:12:int:0.45:5.4,crit:1:spellCrit:6.1:6.1,sp:14:sp:1:14,armor:94:armor:0.021:1.974
-R	priest/discipline	60	226731	0	gear	28.442	sta:7:sta:0.2:1.4,int:11:int:0.45:4.95,sp:21:sp:1:21,armor:52:armor:0.021:1.092
-R	priest/discipline	60	227967	0	gear	0.0	
-R	priest/discipline	60	228282	0	gear	40.281	sta:20:sta:0.2:4,sp:35:sp:1:35,armor:61:armor:0.021:1.281
-R	priest/discipline	60	228757	0	mh	0.0	
-R	priest/discipline	60	231168	0	gear	58.221000000000004	sta:15:sta:0.2:3,int:20:int:0.45:9,crit:1:spellCrit:6.1:6.1,spShadow:50:spShadow:0.76:38,armor:101:armor:0.021:2.121
-R	priest/discipline	60	233395	0	gear	73.77300000000001	sta:14:sta:0.2:2.8,int:18:int:0.45:8.1,crit:2:spellCrit:6.1:12.2,spShadow:63:spShadow:0.76:47.88,armor:133:armor:0.021:2.793
-R	priest/discipline	60	233994	0	gear	37.2	int:18:int:0.45:8.1,crit:1:spellCrit:6.1:6.1,spDmg:23:sp:1:23
-R	priest/discipline	60	234576	0	mh	64.9	sta:21:sta:0.2:4.2,int:8:int:0.45:3.6,crit:1:spellCrit:6.1:6.1,spDmg:51:sp:1:51
-R	priest/discipline	60	236277	0	gear	26.55	sta:8:sta:0.2:1.6,int:9:int:0.45:4.05,spi:9:spi:1.1:9.9,spDmg:11:sp:1:11
-R	priest/discipline	60	239565	0	gear	83.676	sta:15:sta:0.2:3,int:17:int:0.45:7.65,crit:2:spellCrit:6.1:12.2,spShadow:76:spShadow:0.76:57.76,armor:146:armor:0.021:3.066
-R	priest/discipline	60	247789	0	ranged	32.0	rdps:4:rdps:8:32
-R	priest/discipline	60	254029	0	gear	5.706	int:7:int:0.45:3.15,sta:9:sta:0.2:1.8,armor:36:armor:0.021:0.756
-R	priest/discipline	60	260829	0	gear	0.924	armor:44:armor:0.021:0.924
-R	priest/discipline	60	271909	0	gear	2.8000000000000003	sta:14:sta:0.2:2.8
-R	priest/discipline	60	272847	0	mh	6.5	sta:2:sta:0.2:0.4,crit:1:spellCrit:6.1:6.1
-R	priest/discipline	60	275831	0	gear	2.25	int:5:int:0.45:2.25
-R	priest/discipline	60	278019	0	gear	5.2	sta:6:sta:0.2:1.2,sp:4:sp:1:4
-R	priest/discipline	60	288931	0	gear	16.0	sp:16:sp:1:16
+R	priest/discipline	60	16817	0	gear	41.097	sta:10:sta:0.2:2,int:22:int:0.45:9.9,spi:10:spi:1.1:11,mp5:4:mp5:2:8,sp:9:sp:1:9,armor:57:armor:0.021:1.197
+R	priest/discipline	60	17737	0	oh	10.48	hit:0.8:spellHit:8.6:6.88,int:8:int:0.45:3.6
+R	priest/discipline	60	18438	0	gear	0.0	
+R	priest/discipline	60	18878	0	mh	29.25	sta:8:sta:0.2:1.6,int:17:int:0.45:7.65,sp:20:sp:1:20
+R	priest/discipline	60	19391	0	gear	35.951	sta:13:sta:0.2:2.6,int:17:int:0.45:7.65,mp5:12:mp5:2:24,armor:81:armor:0.021:1.701
+R	priest/discipline	60	19891	0	oh	33.15	sta:8:sta:0.2:1.6,int:11:int:0.45:4.95,sp:18:sp:1:18,spellHit:1:spellHit:8.6:8.6
+R	priest/discipline	60	20333	0	gear	27.6	int:20:int:0.45:9,spi:8:spi:1.1:8.8,sta:9:sta:0.2:1.8,mp5:4:mp5:2:8
+R	priest/discipline	60	20672	0	ranged	507.69	int:9:int:0.45:4.05,sp:5:sp:1:5,rdps:62.33:rdps:8:498.64
+R	priest/discipline	60	21522	0	mh	2.8000000000000003	sta:14:sta:0.2:2.8
+R	priest/discipline	60	22231	0	gear	24.16	int:18:int:0.45:8.1,sta:11:sta:0.2:2.2,hit:1:spellHit:8.6:8.6,sp:4:sp:1:4,armor:60:armor:0.021:1.26
+R	priest/discipline	60	22711	0	gear	27.907999999999998	sta:6:sta:0.2:1.2,int:6:int:0.45:2.7,sp:23:sp:1:23,armor:48:armor:0.021:1.008
+R	priest/discipline	60	23237	0	gear	10.6	int:10:int:0.45:4.5,crit:1:spellCrit:6.1:6.1
+R	priest/discipline	60	213088	0	gear	7.504	sta:4:sta:0.2:0.8,int:4:int:0.45:1.8,spi:4:spi:1.1:4.4,armor:24:armor:0.021:0.504
+R	priest/discipline	60	217301	0	gear	4.55	sta:7:sta:0.2:1.4,int:7:int:0.45:3.15
+R	priest/discipline	60	221025	0	gear	26.777	sta:7:sta:0.2:1.4,int:8:int:0.45:3.6,sp:21:sp:1:21,armor:37:armor:0.021:0.777
+R	priest/discipline	60	226744	0	gear	18.666	sta:11:sta:0.2:2.2,int:10:int:0.45:4.5,spi:10:spi:1.1:11,armor:46:armor:0.021:0.966
+R	priest/discipline	60	227980	0	gear	44.019	sta:12:sta:0.2:2.4,int:15:int:0.45:6.75,spi:10:spi:1.1:11,sp:22:sp:1:22,armor:89:armor:0.021:1.869
+R	priest/discipline	60	228292	0	gear	7.099	sta:23:sta:0.2:4.6,armor:119:armor:0.021:2.499
+R	priest/discipline	60	229374	0	mh	2.0	sta:10:sta:0.2:2
+R	priest/discipline	60	231271	0	gear	26.0	sp:26:sp:1:26
+R	priest/discipline	60	233502	0	gear	10.8	sta:11:sta:0.2:2.2,hit:1:spellHit:8.6:8.6
+R	priest/discipline	60	234020	0	gear	35.6	sta:7:sta:0.2:1.4,int:8:int:0.45:3.6,hit:1:spellHit:8.6:8.6,sp:22:sp:1:22
+R	priest/discipline	60	234614	0	gear	0.0	
+R	priest/discipline	60	236284	0	mh	161.5	sta:20:sta:0.2:4,int:20:int:0.45:9,hit:2:spellHit:8.6:17.2,crit:3:spellCrit:6.1:18.3,sp:113:sp:1:113
+R	priest/discipline	60	239581	0	gear	51.36	sta:17:sta:0.2:3.4,int:17:int:0.45:7.65,spShadow:50:spShadow:0.76:38,armor:110:armor:0.021:2.31
+R	priest/discipline	60	249234	0	ranged	320.36	sp:7:sp:1:7,rdps:39.17:rdps:8:313.36
+R	priest/discipline	60	254033	0	gear	15.64	spDmg:6:sp:1:6,spi:8:spi:1.1:8.8,armor:40:armor:0.021:0.84
+R	priest/discipline	60	260820	0	gear	0.0	
+R	priest/discipline	60	271661	0	gear	0.042	armor:2:armor:0.021:0.042
+R	priest/discipline	60	272406	0	gear	23.9	int:14:int:0.45:6.3,hit:1:spellHit:8.6:8.6,sp:9:sp:1:9
+R	priest/discipline	60	273423	0	gear	31.275	int:10:int:0.45:4.5,sta:26:sta:0.2:5.2,spDmg:9:sp:1:9,spi:10:spi:1.1:11,armor:75:armor:0.021:1.575
+R	priest/discipline	60	274919	0	ranged	267.32	spShadow:7:spShadow:0.76:5.32,rdps:32.75:rdps:8:262
+R	priest/discipline	60	276888	0	mh	3.1	int:2:int:0.45:0.9,spi:2:spi:1.1:2.2
+R	priest/discipline	60	279826	0	gear	29.502	sta:13:sta:0.2:2.6,spi:10:spi:1.1:11,int:8:int:0.45:3.6,sp:11:sp:1:11,armor:62:armor:0.021:1.302
+R	priest/discipline	60	281315	0	gear	1.7280000000000002	int:3:int:0.45:1.35,armor:18:armor:0.021:0.378
+R	priest/discipline	60	284197	0	gear	2.314	sta:8:sta:0.2:1.6,armor:34:armor:0.021:0.714
+R	priest/discipline	60	286997	0	gear	29.771000000000004	spi:17:spi:1.1:18.7,sp:10:sp:1:10,armor:51:armor:0.021:1.071
 B	priest/shadow	12	35	mh	0	0.0
 B	priest/shadow	12	1299	gear	0	3.9699999999999998
 B	priest/shadow	12	1831	mh	0	0.0
@@ -5030,63 +5426,67 @@ B	priest/shadow	12	2364	gear	0	1.2779999999999998
 B	priest/shadow	12	2955	gear	0	10.923000000000002
 B	priest/shadow	12	3423	oh	0	0.0
 B	priest/shadow	12	3947	gear	0	2.13
-B	priest/shadow	12	4454	mh	0	0.98
+B	priest/shadow	12	4454	mh	0	1.47
 B	priest/shadow	12	4947	mh	0	0.0
 B	priest/shadow	12	5393	mh	0	0.0
 B	priest/shadow	12	6333	mh	0	0.54
 B	priest/shadow	12	6540	gear	12761	8.988
 B	priest/shadow	12	6691	mh	0	3.58
 B	priest/shadow	12	7355	gear	12761	10.349
-B	priest/shadow	12	7757	mh	0	7.59
+B	priest/shadow	12	7757	mh	0	4.59
 B	priest/shadow	12	9491	gear	0	9.041
 B	priest/shadow	12	9875	gear	12761	19.059
 B	priest/shadow	12	10102	gear	12761	42.396
 B	priest/shadow	12	10645	gear	0	0.0
 B	priest/shadow	12	11288	ranged	0	110.7
-B	priest/shadow	12	11808	gear	0	10.654
-B	priest/shadow	12	12015	gear	12746	12.24
-B	priest/shadow	12	12805	gear	0	0.0
-B	priest/shadow	12	13360	mh	0	8.09
-B	priest/shadow	12	14108	gear	0	9.501
-B	priest/shadow	12	14213	gear	12761	24.479
-B	priest/shadow	12	14312	gear	12761	43.544
-B	priest/shadow	12	14440	gear	0	6.69
-B	priest/shadow	12	15299	gear	0	0.6389999999999999
-B	priest/shadow	12	15939	oh	12761	20.0
+B	priest/shadow	12	11807	gear	0	14.666
+B	priest/shadow	12	12014	gear	12746	11.370000000000001
+B	priest/shadow	12	12794	mh	0	0.0
+B	priest/shadow	12	13353	oh	0	28.76
+B	priest/shadow	12	14107	gear	0	34.962
+B	priest/shadow	12	14212	gear	12761	16.485
+B	priest/shadow	12	14311	gear	12761	21.201
+B	priest/shadow	12	14439	gear	0	7.356999999999999
+B	priest/shadow	12	15283	ranged	12761	364.912
+B	priest/shadow	12	15938	oh	12761	20.0
 B	priest/shadow	12	15945	oh	0	1.52
-B	priest/shadow	12	16819	gear	0	15.504000000000001
-B	priest/shadow	12	17739	gear	0	5.867
-B	priest/shadow	12	18440	gear	0	7.116
-B	priest/shadow	12	18879	gear	0	13.21
-B	priest/shadow	12	19395	gear	0	0.0
-B	priest/shadow	12	19893	gear	0	20.700000000000003
-B	priest/shadow	12	20330	gear	0	26.981
-B	priest/shadow	12	20652	gear	12746	21.083
-B	priest/shadow	12	21500	gear	0	13.456
-B	priest/shadow	12	22085	gear	0	38.061
-B	priest/shadow	12	22678	gear	0	0.0
-B	priest/shadow	12	23177	ranged	0	246.096
-B	priest/shadow	12	212583	mh	0	0.81
-B	priest/shadow	12	217296	gear	0	7.93
-B	priest/shadow	12	220907	gear	0	31.064
-B	priest/shadow	12	226731	gear	0	32.862
-B	priest/shadow	12	227967	gear	0	0.0
-B	priest/shadow	12	228282	gear	0	48.230999999999995
-B	priest/shadow	12	228757	mh	0	0.0
-B	priest/shadow	12	231168	gear	0	69.741
-B	priest/shadow	12	233395	gear	0	84.903
-B	priest/shadow	12	233994	gear	0	33.06
-B	priest/shadow	12	234576	mh	0	65.73
-B	priest/shadow	12	236277	gear	0	22.090000000000003
-B	priest/shadow	12	239565	gear	0	98.716
-B	priest/shadow	12	247789	ranged	0	24.8
-B	priest/shadow	12	254029	gear	0	7.645999999999999
-B	priest/shadow	12	260829	gear	0	3.1239999999999997
-B	priest/shadow	12	271909	gear	0	3.7800000000000002
-B	priest/shadow	12	272847	mh	0	1.46
-B	priest/shadow	12	275831	gear	0	1.9
-B	priest/shadow	12	278019	gear	0	6.0200000000000005
-B	priest/shadow	12	288931	gear	0	17.6
+B	priest/shadow	12	16817	gear	0	29.907
+B	priest/shadow	12	17737	oh	0	4.720000000000001
+B	priest/shadow	12	18438	gear	0	0.0
+B	priest/shadow	12	18878	mh	0	30.62
+B	priest/shadow	12	19391	gear	0	15.721
+B	priest/shadow	12	19891	oh	0	28.240000000000002
+B	priest/shadow	12	20333	gear	0	13.95
+B	priest/shadow	12	20672	ranged	0	395.36600000000004
+B	priest/shadow	12	21522	mh	0	3.7800000000000002
+B	priest/shadow	12	22231	gear	0	20.57
+B	priest/shadow	12	22711	gear	0	32.608000000000004
+B	priest/shadow	12	23237	gear	0	4.72
+B	priest/shadow	12	213088	gear	0	6.264
+B	priest/shadow	12	217301	gear	0	4.550000000000001
+B	priest/shadow	12	221025	gear	0	30.657
+B	priest/shadow	12	226744	gear	0	14.936
+B	priest/shadow	12	227980	gear	0	44.35900000000001
+B	priest/shadow	12	228292	gear	0	14.659
+B	priest/shadow	12	229374	mh	0	2.7
+B	priest/shadow	12	231271	gear	0	28.6
+B	priest/shadow	12	233502	gear	0	5.07
+B	priest/shadow	12	234020	gear	0	31.230000000000004
+B	priest/shadow	12	234614	gear	0	0.0
+B	priest/shadow	12	236284	mh	0	144.26000000000002
+B	priest/shadow	12	239581	gear	0	68.86
+B	priest/shadow	12	249234	ranged	0	250.554
+B	priest/shadow	12	254033	gear	0	13.36
+B	priest/shadow	12	260820	gear	0	0.0
+B	priest/shadow	12	271661	gear	0	0.142
+B	priest/shadow	12	272406	gear	0	17.32
+B	priest/shadow	12	273423	gear	0	30.944999999999997
+B	priest/shadow	12	274919	ranged	0	210.05
+B	priest/shadow	12	276888	mh	0	1.74
+B	priest/shadow	12	279826	gear	0	27.951999999999998
+B	priest/shadow	12	281315	gear	0	2.418
+B	priest/shadow	12	284197	gear	0	4.574
+B	priest/shadow	12	286997	gear	0	22.950999999999997
 B	priest/shadow	25	35	mh	0	0.0
 B	priest/shadow	25	1299	gear	0	6.890000000000001
 B	priest/shadow	25	1831	mh	0	0.0
@@ -5094,7 +5494,7 @@ B	priest/shadow	25	2364	gear	0	0.99
 B	priest/shadow	25	2955	gear	0	19.424999999999997
 B	priest/shadow	25	3423	oh	0	0.0
 B	priest/shadow	25	3947	gear	0	1.65
-B	priest/shadow	25	4454	mh	0	1.3
+B	priest/shadow	25	4454	mh	0	1.9500000000000002
 B	priest/shadow	25	4947	mh	0	0.0
 B	priest/shadow	25	5393	mh	0	0.0
 B	priest/shadow	25	6333	mh	0	1.92
@@ -5102,55 +5502,59 @@ B	priest/shadow	25	6540	gear	12734	8.739999999999998
 B	priest/shadow	25	6691	mh	0	8.36
 B	priest/shadow	25	7355	gear	12761	10.045
 B	priest/shadow	25	7757	mh	0	16.32
-B	priest/shadow	25	9491	gear	0	14.875
+B	priest/shadow	25	9491	gear	0	14.875000000000002
 B	priest/shadow	25	9875	gear	12761	18.595
 B	priest/shadow	25	10102	gear	12747	41.57
 B	priest/shadow	25	10645	gear	0	0.0
 B	priest/shadow	25	11288	ranged	0	130.15
-B	priest/shadow	25	11808	gear	0	23.27
-B	priest/shadow	25	12015	gear	12747	19.5
-B	priest/shadow	25	12805	gear	0	0.0
-B	priest/shadow	25	13360	mh	0	15.1
-B	priest/shadow	25	14108	gear	0	10.605
-B	priest/shadow	25	14213	gear	12747	24.354999999999997
-B	priest/shadow	25	14312	gear	12761	42.52
-B	priest/shadow	25	14440	gear	0	11.31
-B	priest/shadow	25	15299	gear	0	0.495
-B	priest/shadow	25	15939	oh	12761	20.0
+B	priest/shadow	25	11807	gear	0	25.03
+B	priest/shadow	25	12014	gear	12747	17.89
+B	priest/shadow	25	12794	mh	0	0.0
+B	priest/shadow	25	13353	oh	0	39.78
+B	priest/shadow	25	14107	gear	0	37.09
+B	priest/shadow	25	14212	gear	12734	16.325
+B	priest/shadow	25	14311	gear	12761	20.705
+B	priest/shadow	25	14439	gear	0	9.245
+B	priest/shadow	25	15283	ranged	12734	427.54799999999994
+B	priest/shadow	25	15938	oh	12761	20.0
 B	priest/shadow	25	15945	oh	0	3.2199999999999998
-B	priest/shadow	25	16819	gear	0	26.700000000000003
-B	priest/shadow	25	17739	gear	0	13.555
-B	priest/shadow	25	18440	gear	0	12.27
-B	priest/shadow	25	18879	gear	0	25.25
-B	priest/shadow	25	19395	gear	0	5.13
-B	priest/shadow	25	19893	gear	0	32.599999999999994
-B	priest/shadow	25	20330	gear	0	43.105000000000004
-B	priest/shadow	25	20652	gear	12747	30.915
-B	priest/shadow	25	21500	gear	0	28.4
-B	priest/shadow	25	22085	gear	0	56.315
-B	priest/shadow	25	22678	gear	0	0.0
-B	priest/shadow	25	23177	ranged	0	287.984
-B	priest/shadow	25	212583	mh	0	2.88
-B	priest/shadow	25	217296	gear	0	14.64
-B	priest/shadow	25	220907	gear	0	43.730000000000004
-B	priest/shadow	25	226731	gear	0	41.82
-B	priest/shadow	25	227967	gear	0	0.0
-B	priest/shadow	25	228282	gear	0	64.555
-B	priest/shadow	25	228757	mh	0	0.0
-B	priest/shadow	25	231168	gear	0	84.35499999999999
-B	priest/shadow	25	233395	gear	0	98.475
-B	priest/shadow	25	233994	gear	0	40.72
-B	priest/shadow	25	234576	mh	0	88.08
-B	priest/shadow	25	236277	gear	0	32.489999999999995
-B	priest/shadow	25	239565	gear	0	112.51
-B	priest/shadow	25	247789	ranged	0	29.2
-B	priest/shadow	25	254029	gear	0	15.100000000000001
-B	priest/shadow	25	260829	gear	0	2.42
-B	priest/shadow	25	271909	gear	0	13.44
-B	priest/shadow	25	272847	mh	0	3.52
-B	priest/shadow	25	275831	gear	0	3.2
-B	priest/shadow	25	278019	gear	0	10.559999999999999
-B	priest/shadow	25	288931	gear	0	19.2
+B	priest/shadow	25	16817	gear	0	46.394999999999996
+B	priest/shadow	25	17737	oh	0	7.84
+B	priest/shadow	25	18438	gear	0	0.0
+B	priest/shadow	25	18878	mh	0	42.56
+B	priest/shadow	25	19391	gear	0	34.655
+B	priest/shadow	25	19891	oh	0	39.71999999999999
+B	priest/shadow	25	20333	gear	0	28.92
+B	priest/shadow	25	20672	ranged	0	466.76899999999995
+B	priest/shadow	25	21522	mh	0	13.44
+B	priest/shadow	25	22231	gear	0	33.58
+B	priest/shadow	25	22711	gear	0	39.839999999999996
+B	priest/shadow	25	23237	gear	0	8.0
+B	priest/shadow	25	213088	gear	0	10.32
+B	priest/shadow	25	217301	gear	0	11.2
+B	priest/shadow	25	221025	gear	0	39.075
+B	priest/shadow	25	226744	gear	0	25.990000000000002
+B	priest/shadow	25	227980	gear	0	58.915
+B	priest/shadow	25	228292	gear	0	28.625
+B	priest/shadow	25	229374	mh	0	9.6
+B	priest/shadow	25	231271	gear	0	31.2
+B	priest/shadow	25	233502	gear	0	13.959999999999999
+B	priest/shadow	25	234020	gear	0	41.64
+B	priest/shadow	25	234614	gear	0	0.0
+B	priest/shadow	25	236284	mh	0	179.2
+B	priest/shadow	25	239581	gear	0	83.25
+B	priest/shadow	25	249234	ranged	0	294.341
+B	priest/shadow	25	254033	gear	0	14.599999999999998
+B	priest/shadow	25	260820	gear	0	0.0
+B	priest/shadow	25	271661	gear	0	0.11
+B	priest/shadow	25	272406	gear	0	23.16
+B	priest/shadow	25	273423	gear	0	52.785
+B	priest/shadow	25	274919	ranged	0	246.075
+B	priest/shadow	25	276888	mh	0	2.58
+B	priest/shadow	25	279826	gear	0	40.709999999999994
+B	priest/shadow	25	281315	gear	0	2.91
+B	priest/shadow	25	284197	gear	0	9.55
+B	priest/shadow	25	286997	gear	0	25.855
 B	priest/shadow	34	35	mh	0	0.0
 B	priest/shadow	34	1299	gear	0	5.45
 B	priest/shadow	34	1831	mh	0	0.0
@@ -5158,63 +5562,67 @@ B	priest/shadow	34	2364	gear	0	0.756
 B	priest/shadow	34	2955	gear	0	15.446000000000002
 B	priest/shadow	34	3423	oh	0	0.0
 B	priest/shadow	34	3947	gear	0	1.26
-B	priest/shadow	34	4454	mh	0	1.1
+B	priest/shadow	34	4454	mh	0	1.6500000000000001
 B	priest/shadow	34	4947	mh	0	0.0
 B	priest/shadow	34	5393	mh	0	0.0
 B	priest/shadow	34	6333	mh	0	1.48
 B	priest/shadow	34	6540	gear	12761	8.176
 B	priest/shadow	34	6691	mh	0	6.64
 B	priest/shadow	34	7355	gear	12761	9.798
-B	priest/shadow	34	7757	mh	0	14.48
+B	priest/shadow	34	7757	mh	0	12.58
 B	priest/shadow	34	9491	gear	0	12.712
 B	priest/shadow	34	9875	gear	12761	18.218
 B	priest/shadow	34	10102	gear	12761	40.192
 B	priest/shadow	34	10645	gear	0	0.0
 B	priest/shadow	34	11288	ranged	0	129.95
-B	priest/shadow	34	11808	gear	0	17.908
-B	priest/shadow	34	12015	gear	12747	16.200000000000003
-B	priest/shadow	34	12805	gear	0	0.0
-B	priest/shadow	34	13360	mh	0	13.200000000000001
-B	priest/shadow	34	14108	gear	0	8.742
-B	priest/shadow	34	14213	gear	12761	23.058
-B	priest/shadow	34	14312	gear	12761	41.688
-B	priest/shadow	34	14440	gear	0	9.0
-B	priest/shadow	34	15299	gear	0	0.378
-B	priest/shadow	34	15939	oh	12761	20.0
+B	priest/shadow	34	11807	gear	0	21.032
+B	priest/shadow	34	12014	gear	12747	14.91
+B	priest/shadow	34	12794	mh	0	0.0
+B	priest/shadow	34	13353	oh	0	36.72
+B	priest/shadow	34	14107	gear	0	36.044
+B	priest/shadow	34	14212	gear	12761	15.47
+B	priest/shadow	34	14311	gear	12761	20.302
+B	priest/shadow	34	14439	gear	0	8.014000000000001
+B	priest/shadow	34	15283	ranged	12761	427.34799999999996
+B	priest/shadow	34	15938	oh	12761	20.0
 B	priest/shadow	34	15945	oh	0	2.58
-B	priest/shadow	34	16819	gear	0	24.948
-B	priest/shadow	34	17739	gear	0	10.434
-B	priest/shadow	34	18440	gear	0	9.432
-B	priest/shadow	34	18879	gear	0	19.42
-B	priest/shadow	34	19395	gear	0	13.5
-B	priest/shadow	34	19893	gear	0	30.900000000000002
-B	priest/shadow	34	20330	gear	0	38.912
-B	priest/shadow	34	20652	gear	12747	25.426000000000002
-B	priest/shadow	34	21500	gear	0	28.012
-B	priest/shadow	34	22085	gear	0	54.902
-B	priest/shadow	34	22678	gear	0	0.0
-B	priest/shadow	34	23177	ranged	0	287.984
-B	priest/shadow	34	212583	mh	0	2.2199999999999998
-B	priest/shadow	34	217296	gear	0	12.16
-B	priest/shadow	34	220907	gear	0	39.408
-B	priest/shadow	34	226731	gear	0	37.284
-B	priest/shadow	34	227967	gear	0	0.0
-B	priest/shadow	34	228282	gear	0	55.861999999999995
-B	priest/shadow	34	228757	mh	0	0.0
-B	priest/shadow	34	231168	gear	0	80.742
-B	priest/shadow	34	233395	gear	0	96.106
-B	priest/shadow	34	233994	gear	0	39.46
-B	priest/shadow	34	234576	mh	0	79.6
-B	priest/shadow	34	236277	gear	0	28.55
-B	priest/shadow	34	239565	gear	0	109.772
-B	priest/shadow	34	247789	ranged	0	29.2
-B	priest/shadow	34	254029	gear	0	12.512
-B	priest/shadow	34	260829	gear	0	1.848
-B	priest/shadow	34	271909	gear	0	10.36
-B	priest/shadow	34	272847	mh	0	4.48
-B	priest/shadow	34	275831	gear	0	3.1
-B	priest/shadow	34	278019	gear	0	8.84
-B	priest/shadow	34	288931	gear	0	17.6
+B	priest/shadow	34	16817	gear	0	44.833999999999996
+B	priest/shadow	34	17737	oh	0	9.120000000000001
+B	priest/shadow	34	18438	gear	0	0.0
+B	priest/shadow	34	18878	mh	0	38.46
+B	priest/shadow	34	19391	gear	0	41.562
+B	priest/shadow	34	19891	oh	0	37.74
+B	priest/shadow	34	20333	gear	0	29.46
+B	priest/shadow	34	20672	ranged	0	466.08899999999994
+B	priest/shadow	34	21522	mh	0	10.36
+B	priest/shadow	34	22231	gear	0	31.419999999999998
+B	priest/shadow	34	22711	gear	0	35.476
+B	priest/shadow	34	23237	gear	0	9.2
+B	priest/shadow	34	213088	gear	0	8.648
+B	priest/shadow	34	217301	gear	0	9.52
+B	priest/shadow	34	221025	gear	0	34.794000000000004
+B	priest/shadow	34	226744	gear	0	21.772
+B	priest/shadow	34	227980	gear	0	51.618
+B	priest/shadow	34	228292	gear	0	22.018
+B	priest/shadow	34	229374	mh	0	7.4
+B	priest/shadow	34	231271	gear	0	28.6
+B	priest/shadow	34	233502	gear	0	13.34
+B	priest/shadow	34	234020	gear	0	39.540000000000006
+B	priest/shadow	34	234614	gear	0	0.0
+B	priest/shadow	34	236284	mh	0	170.9
+B	priest/shadow	34	239581	gear	0	77.74000000000001
+B	priest/shadow	34	249234	ranged	0	293.641
+B	priest/shadow	34	254033	gear	0	12.68
+B	priest/shadow	34	260820	gear	0	0.0
+B	priest/shadow	34	271661	gear	0	0.084
+B	priest/shadow	34	272406	gear	0	23.78
+B	priest/shadow	34	273423	gear	0	43.989999999999995
+B	priest/shadow	34	274919	ranged	0	246.075
+B	priest/shadow	34	276888	mh	0	2.34
+B	priest/shadow	34	279826	gear	0	34.784
+B	priest/shadow	34	281315	gear	0	2.6159999999999997
+B	priest/shadow	34	284197	gear	0	7.348
+B	priest/shadow	34	286997	gear	0	22.492
 B	priest/shadow	45	35	mh	0	0.0
 B	priest/shadow	45	1299	gear	0	2.92
 B	priest/shadow	45	1831	mh	0	0.0
@@ -5222,63 +5630,67 @@ B	priest/shadow	45	2364	gear	0	0.432
 B	priest/shadow	45	2955	gear	0	8.792
 B	priest/shadow	45	3423	oh	0	0.0
 B	priest/shadow	45	3947	gear	0	0.72
-B	priest/shadow	45	4454	mh	0	1.2
+B	priest/shadow	45	4454	mh	0	1.7999999999999998
 B	priest/shadow	45	4947	mh	0	0.0
 B	priest/shadow	45	5393	mh	0	0.0
 B	priest/shadow	45	6333	mh	0	0.32
 B	priest/shadow	45	6540	gear	12761	7.672
 B	priest/shadow	45	6691	mh	0	3.36
 B	priest/shadow	45	7355	gear	12761	9.456
-B	priest/shadow	45	7757	mh	0	12.82
-B	priest/shadow	45	9491	gear	0	10.783999999999999
+B	priest/shadow	45	7757	mh	0	2.72
+B	priest/shadow	45	9491	gear	0	10.784
 B	priest/shadow	45	9875	gear	12761	17.696
 B	priest/shadow	45	10102	gear	12761	38.824
 B	priest/shadow	45	10645	gear	0	0.0
 B	priest/shadow	45	11288	ranged	0	13.375
-B	priest/shadow	45	11808	gear	0	4.976
-B	priest/shadow	45	12015	gear	12746	16.4
-B	priest/shadow	45	12805	gear	0	0.0
-B	priest/shadow	45	13360	mh	0	12.200000000000001
-B	priest/shadow	45	14108	gear	0	8.424
-B	priest/shadow	45	14213	gear	12761	22.176
-B	priest/shadow	45	14312	gear	12761	40.536
-B	priest/shadow	45	14440	gear	0	5.279999999999999
-B	priest/shadow	45	15299	gear	0	0.216
-B	priest/shadow	45	15939	oh	12761	20.0
+B	priest/shadow	45	11807	gear	0	16.504
+B	priest/shadow	45	12014	gear	12746	15.02
+B	priest/shadow	45	12794	mh	0	0.0
+B	priest/shadow	45	13353	oh	0	34.980000000000004
+B	priest/shadow	45	14107	gear	0	36.848
+B	priest/shadow	45	14212	gear	12761	14.84
+B	priest/shadow	45	14311	gear	12761	19.744
+B	priest/shadow	45	14439	gear	0	8.568
+B	priest/shadow	45	15283	ranged	12761	49.894
+B	priest/shadow	45	15938	oh	12761	20.0
 B	priest/shadow	45	15945	oh	0	1.52
-B	priest/shadow	45	16819	gear	0	20.576
-B	priest/shadow	45	17739	gear	0	2.808
-B	priest/shadow	45	18440	gear	0	3.024
-B	priest/shadow	45	18879	gear	0	5.84
-B	priest/shadow	45	19395	gear	0	5.94
-B	priest/shadow	45	19893	gear	0	22.9
-B	priest/shadow	45	20330	gear	0	36.104000000000006
-B	priest/shadow	45	20652	gear	12746	24.772
-B	priest/shadow	45	21500	gear	0	17.924000000000003
-B	priest/shadow	45	22085	gear	0	42.104
-B	priest/shadow	45	22678	gear	0	0.0
-B	priest/shadow	45	23177	ranged	0	34.751999999999995
-B	priest/shadow	45	212583	mh	0	0.48
-B	priest/shadow	45	217296	gear	0	6.4399999999999995
-B	priest/shadow	45	220907	gear	0	31.796
-B	priest/shadow	45	226731	gear	0	31.948
-B	priest/shadow	45	227967	gear	0	0.0
-B	priest/shadow	45	228282	gear	0	39.664
-B	priest/shadow	45	228757	mh	0	0.0
-B	priest/shadow	45	231168	gear	0	74.524
-B	priest/shadow	45	233395	gear	0	90.672
-B	priest/shadow	45	233994	gear	0	41.14
-B	priest/shadow	45	234576	mh	0	64.7
-B	priest/shadow	45	236277	gear	0	24.7
-B	priest/shadow	45	239565	gear	0	103.364
-B	priest/shadow	45	247789	ranged	0	2.6
-B	priest/shadow	45	254029	gear	0	7.764
-B	priest/shadow	45	260829	gear	0	1.056
-B	priest/shadow	45	271909	gear	0	2.24
-B	priest/shadow	45	272847	mh	0	4.42
-B	priest/shadow	45	275831	gear	0	3.9000000000000004
-B	priest/shadow	45	278019	gear	0	4.96
-B	priest/shadow	45	288931	gear	0	16.0
+B	priest/shadow	45	16817	gear	0	37.76800000000001
+B	priest/shadow	45	17737	oh	0	8.24
+B	priest/shadow	45	18438	gear	0	0.0
+B	priest/shadow	45	18878	mh	0	34.54
+B	priest/shadow	45	19391	gear	0	25.203999999999997
+B	priest/shadow	45	19891	oh	0	30.36
+B	priest/shadow	45	20333	gear	0	24.480000000000004
+B	priest/shadow	45	20672	ranged	0	52.534499999999994
+B	priest/shadow	45	21522	mh	0	2.24
+B	priest/shadow	45	22231	gear	0	23.740000000000002
+B	priest/shadow	45	22711	gear	0	29.792
+B	priest/shadow	45	23237	gear	0	11.9
+B	priest/shadow	45	213088	gear	0	6.736000000000001
+B	priest/shadow	45	217301	gear	0	6.58
+B	priest/shadow	45	221025	gear	0	29.248
+B	priest/shadow	45	226744	gear	0	16.664
+B	priest/shadow	45	227980	gear	0	43.75600000000001
+B	priest/shadow	45	228292	gear	0	6.536
+B	priest/shadow	45	229374	mh	0	1.6
+B	priest/shadow	45	231271	gear	0	26.0
+B	priest/shadow	45	233502	gear	0	4.26
+B	priest/shadow	45	234020	gear	0	31.86
+B	priest/shadow	45	234614	gear	0	0.0
+B	priest/shadow	45	236284	mh	0	149.1
+B	priest/shadow	45	239581	gear	0	68.62
+B	priest/shadow	45	249234	ranged	0	32.4605
+B	priest/shadow	45	254033	gear	0	11.760000000000002
+B	priest/shadow	45	260820	gear	0	0.0
+B	priest/shadow	45	271661	gear	0	0.048
+B	priest/shadow	45	272406	gear	0	22.42
+B	priest/shadow	45	273423	gear	0	28.76
+B	priest/shadow	45	274919	ranged	0	28.2875
+B	priest/shadow	45	276888	mh	0	2.76
+B	priest/shadow	45	279826	gear	0	26.808
+B	priest/shadow	45	281315	gear	0	2.772
+B	priest/shadow	45	284197	gear	0	2.096
+B	priest/shadow	45	286997	gear	0	21.424
 B	priest/shadow	55	35	mh	0	0.0
 B	priest/shadow	55	1299	gear	0	2.59
 B	priest/shadow	55	1831	mh	0	0.0
@@ -5286,63 +5698,67 @@ B	priest/shadow	55	2364	gear	0	0.15300000000000002
 B	priest/shadow	55	2955	gear	0	8.175500000000001
 B	priest/shadow	55	3423	oh	0	0.0
 B	priest/shadow	55	3947	gear	0	0.255
-B	priest/shadow	55	4454	mh	0	1.32
+B	priest/shadow	55	4454	mh	0	1.98
 B	priest/shadow	55	4947	mh	0	0.0
 B	priest/shadow	55	5393	mh	0	0.0
 B	priest/shadow	55	6333	mh	0	0.22
 B	priest/shadow	55	6540	gear	12761	7.238
 B	priest/shadow	55	6691	mh	0	3.3000000000000003
 B	priest/shadow	55	7355	gear	12761	9.1615
-B	priest/shadow	55	7757	mh	0	9.02
-B	priest/shadow	55	9491	gear	0	8.5135
+B	priest/shadow	55	7757	mh	0	1.87
+B	priest/shadow	55	9491	gear	0	8.513500000000002
 B	priest/shadow	55	9875	gear	12761	17.2465
 B	priest/shadow	55	10102	gear	12761	37.646
 B	priest/shadow	55	10645	gear	0	0.0
 B	priest/shadow	55	11288	ranged	0	10.4
-B	priest/shadow	55	11808	gear	0	2.829
-B	priest/shadow	55	12015	gear	12746	14.46
-B	priest/shadow	55	12805	gear	0	0.0
-B	priest/shadow	55	13360	mh	0	10.01
-B	priest/shadow	55	14108	gear	0	8.3535
-B	priest/shadow	55	14213	gear	12761	21.4165
-B	priest/shadow	55	14312	gear	12761	39.544
-B	priest/shadow	55	14440	gear	0	4.875
-B	priest/shadow	55	15299	gear	0	0.07650000000000001
-B	priest/shadow	55	15939	oh	12761	20.0
+B	priest/shadow	55	11807	gear	0	13.591000000000001
+B	priest/shadow	55	12014	gear	12746	13.25
+B	priest/shadow	55	12794	mh	0	0.0
+B	priest/shadow	55	13353	oh	0	31.730000000000004
+B	priest/shadow	55	14107	gear	0	33.127
+B	priest/shadow	55	14212	gear	12761	14.2975
+B	priest/shadow	55	14311	gear	12761	19.2635
+B	priest/shadow	55	14439	gear	0	7.7095
+B	priest/shadow	55	15283	ranged	12761	40.2448
+B	priest/shadow	55	15938	oh	12761	20.0
 B	priest/shadow	55	15945	oh	0	1.54
-B	priest/shadow	55	16819	gear	0	17.254
-B	priest/shadow	55	17739	gear	0	1.6345
-B	priest/shadow	55	18440	gear	0	1.5510000000000002
-B	priest/shadow	55	18879	gear	0	3.1350000000000002
-B	priest/shadow	55	19395	gear	0	7.6499999999999995
-B	priest/shadow	55	19893	gear	0	20.3
-B	priest/shadow	55	20330	gear	0	29.988500000000002
-B	priest/shadow	55	20652	gear	12746	20.980500000000003
-B	priest/shadow	55	21500	gear	0	13.666
-B	priest/shadow	55	22085	gear	0	38.838499999999996
-B	priest/shadow	55	22678	gear	0	0.0
-B	priest/shadow	55	23177	ranged	0	28.278399999999998
-B	priest/shadow	55	212583	mh	0	0.33
-B	priest/shadow	55	217296	gear	0	5.99
-B	priest/shadow	55	220907	gear	0	28.529
-B	priest/shadow	55	226731	gear	0	28.262
-B	priest/shadow	55	227967	gear	0	0.0
-B	priest/shadow	55	228282	gear	0	37.718500000000006
-B	priest/shadow	55	228757	mh	0	0.0
-B	priest/shadow	55	231168	gear	0	69.2085
-B	priest/shadow	55	233395	gear	0	86.9705
-B	priest/shadow	55	233994	gear	0	38.6
-B	priest/shadow	55	234576	mh	0	63.41
-B	priest/shadow	55	236277	gear	0	22.77
-B	priest/shadow	55	239565	gear	0	99.641
-B	priest/shadow	55	247789	ranged	0	1.92
-B	priest/shadow	55	254029	gear	0	5.146000000000001
-B	priest/shadow	55	260829	gear	0	0.374
-B	priest/shadow	55	271909	gear	0	1.54
-B	priest/shadow	55	272847	mh	0	5.92
-B	priest/shadow	55	275831	gear	0	2.75
-B	priest/shadow	55	278019	gear	0	4.66
-B	priest/shadow	55	288931	gear	0	16.0
+B	priest/shadow	55	16817	gear	0	32.6845
+B	priest/shadow	55	17737	oh	0	6.5600000000000005
+B	priest/shadow	55	18438	gear	0	0.0
+B	priest/shadow	55	18878	mh	0	30.230000000000004
+B	priest/shadow	55	19391	gear	0	21.6685
+B	priest/shadow	55	19891	oh	0	27.63
+B	priest/shadow	55	20333	gear	0	20.669999999999998
+B	priest/shadow	55	20672	ranged	0	39.868399999999994
+B	priest/shadow	55	21522	mh	0	1.54
+B	priest/shadow	55	22231	gear	0	18.32
+B	priest/shadow	55	22711	gear	0	27.368000000000002
+B	priest/shadow	55	23237	gear	0	11.2
+B	priest/shadow	55	213088	gear	0	5.484
+B	priest/shadow	55	217301	gear	0	4.620000000000001
+B	priest/shadow	55	221025	gear	0	26.4845
+B	priest/shadow	55	226744	gear	0	13.701
+B	priest/shadow	55	227980	gear	0	38.926500000000004
+B	priest/shadow	55	228292	gear	0	3.5415
+B	priest/shadow	55	229374	mh	0	1.1
+B	priest/shadow	55	231271	gear	0	26.0
+B	priest/shadow	55	233502	gear	0	3.91
+B	priest/shadow	55	234020	gear	0	29.87
+B	priest/shadow	55	234614	gear	0	0.0
+B	priest/shadow	55	236284	mh	0	148.7
+B	priest/shadow	55	239581	gear	0	62.155
+B	priest/shadow	55	249234	ranged	0	25.8016
+B	priest/shadow	55	254033	gear	0	11.620000000000001
+B	priest/shadow	55	260820	gear	0	0.0
+B	priest/shadow	55	271661	gear	0	0.017
+B	priest/shadow	55	272406	gear	0	19.400000000000002
+B	priest/shadow	55	273423	gear	0	24.5975
+B	priest/shadow	55	274919	ranged	0	22.72
+B	priest/shadow	55	276888	mh	0	2.42
+B	priest/shadow	55	279826	gear	0	23.957
+B	priest/shadow	55	281315	gear	0	1.8030000000000002
+B	priest/shadow	55	284197	gear	0	1.169
+B	priest/shadow	55	286997	gear	0	21.653499999999998
 B	priest/shadow	60	35	mh	0	0.0
 B	priest/shadow	60	1299	gear	0	4.88
 B	priest/shadow	60	1831	mh	0	0.0
@@ -5350,63 +5766,67 @@ B	priest/shadow	60	2364	gear	0	0.6839999999999999
 B	priest/shadow	60	2955	gear	0	14.714
 B	priest/shadow	60	3423	oh	0	0.0
 B	priest/shadow	60	3947	gear	0	1.14
-B	priest/shadow	60	4454	mh	0	2.0
+B	priest/shadow	60	4454	mh	0	3.0
 B	priest/shadow	60	4947	mh	0	0.0
 B	priest/shadow	60	5393	mh	0	0.0
 B	priest/shadow	60	6333	mh	0	0.56
 B	priest/shadow	60	6540	gear	12761	8.064
 B	priest/shadow	60	6691	mh	0	5.68
 B	priest/shadow	60	7355	gear	12761	9.722
-B	priest/shadow	60	7757	mh	0	7.96
-B	priest/shadow	60	9491	gear	0	10.778000000000002
+B	priest/shadow	60	7757	mh	0	4.760000000000001
+B	priest/shadow	60	9491	gear	0	10.777999999999999
 B	priest/shadow	60	9875	gear	12761	18.102
 B	priest/shadow	60	10102	gear	12761	39.888
 B	priest/shadow	60	10645	gear	0	0.0
 B	priest/shadow	60	11288	ranged	0	4.275
-B	priest/shadow	60	11808	gear	0	8.412
-B	priest/shadow	60	12015	gear	12746	15.0
-B	priest/shadow	60	12805	gear	0	0.0
-B	priest/shadow	60	13360	mh	0	11.4
-B	priest/shadow	60	14108	gear	0	13.938
-B	priest/shadow	60	14213	gear	12761	22.862
-B	priest/shadow	60	14312	gear	12761	41.432
-B	priest/shadow	60	14440	gear	0	8.82
-B	priest/shadow	60	15299	gear	0	0.34199999999999997
-B	priest/shadow	60	15939	oh	12761	20.0
+B	priest/shadow	60	11807	gear	0	18.548000000000002
+B	priest/shadow	60	12014	gear	12746	13.6
+B	priest/shadow	60	12794	mh	0	0.0
+B	priest/shadow	60	13353	oh	0	34.24
+B	priest/shadow	60	14107	gear	0	33.156
+B	priest/shadow	60	14212	gear	12761	15.33
+B	priest/shadow	60	14311	gear	12761	20.178
+B	priest/shadow	60	14439	gear	0	10.626
+B	priest/shadow	60	15283	ranged	12761	20.3788
+B	priest/shadow	60	15938	oh	12761	20.0
 B	priest/shadow	60	15945	oh	0	2.56
-B	priest/shadow	60	16819	gear	0	20.772000000000002
-B	priest/shadow	60	17739	gear	0	4.766
-B	priest/shadow	60	18440	gear	0	5.0280000000000005
-B	priest/shadow	60	18879	gear	0	9.780000000000001
-B	priest/shadow	60	19395	gear	0	5.67
-B	priest/shadow	60	19893	gear	0	20.6
-B	priest/shadow	60	20330	gear	0	36.998
-B	priest/shadow	60	20652	gear	12746	23.014
-B	priest/shadow	60	21500	gear	0	14.568
-B	priest/shadow	60	22085	gear	0	44.098000000000006
-B	priest/shadow	60	22678	gear	0	0.0
-B	priest/shadow	60	23177	ranged	0	14.9504
-B	priest/shadow	60	212583	mh	0	0.8400000000000001
-B	priest/shadow	60	217296	gear	0	7.5200000000000005
-B	priest/shadow	60	220907	gear	0	34.012
-B	priest/shadow	60	226731	gear	0	29.336
-B	priest/shadow	60	227967	gear	0	0.0
-B	priest/shadow	60	228282	gear	0	42.918
-B	priest/shadow	60	228757	mh	0	0.0
-B	priest/shadow	60	231168	gear	0	74.038
-B	priest/shadow	60	233395	gear	0	95.174
-B	priest/shadow	60	233994	gear	0	38.2
-B	priest/shadow	60	234576	mh	0	68.08
-B	priest/shadow	60	236277	gear	0	25.84
-B	priest/shadow	60	239565	gear	0	108.548
-B	priest/shadow	60	247789	ranged	0	0.52
-B	priest/shadow	60	254029	gear	0	6.688000000000001
-B	priest/shadow	60	260829	gear	0	1.672
-B	priest/shadow	60	271909	gear	0	3.9200000000000004
-B	priest/shadow	60	272847	mh	0	8.56
-B	priest/shadow	60	275831	gear	0	2.0
-B	priest/shadow	60	278019	gear	0	5.68
-B	priest/shadow	60	288931	gear	0	16.0
+B	priest/shadow	60	16817	gear	0	35.286
+B	priest/shadow	60	17737	oh	0	5.4399999999999995
+B	priest/shadow	60	18438	gear	0	0.0
+B	priest/shadow	60	18878	mh	0	29.04
+B	priest/shadow	60	19391	gear	0	21.078
+B	priest/shadow	60	19891	oh	0	27.44
+B	priest/shadow	60	20333	gear	0	21.04
+B	priest/shadow	60	20672	ranged	0	16.7029
+B	priest/shadow	60	21522	mh	0	3.9200000000000004
+B	priest/shadow	60	22231	gear	0	19.360000000000003
+B	priest/shadow	60	22711	gear	0	28.903999999999996
+B	priest/shadow	60	23237	gear	0	12.0
+B	priest/shadow	60	213088	gear	0	7.632000000000001
+B	priest/shadow	60	217301	gear	0	4.760000000000001
+B	priest/shadow	60	221025	gear	0	27.566
+B	priest/shadow	60	226744	gear	0	18.828
+B	priest/shadow	60	227980	gear	0	44.742
+B	priest/shadow	60	228292	gear	0	10.962
+B	priest/shadow	60	229374	mh	0	2.8000000000000003
+B	priest/shadow	60	231271	gear	0	26.0
+B	priest/shadow	60	233502	gear	0	5.88
+B	priest/shadow	60	234020	gear	0	29.96
+B	priest/shadow	60	234614	gear	0	0.0
+B	priest/shadow	60	236284	mh	0	156.2
+B	priest/shadow	60	239581	gear	0	65.74000000000001
+B	priest/shadow	60	249234	ranged	0	12.0921
+B	priest/shadow	60	254033	gear	0	15.52
+B	priest/shadow	60	260820	gear	0	0.0
+B	priest/shadow	60	271661	gear	0	0.076
+B	priest/shadow	60	272406	gear	0	17.4
+B	priest/shadow	60	273423	gear	0	33.13
+B	priest/shadow	60	274919	ranged	0	11.2575
+B	priest/shadow	60	276888	mh	0	2.8
+B	priest/shadow	60	279826	gear	0	30.195999999999998
+B	priest/shadow	60	281315	gear	0	1.8840000000000001
+B	priest/shadow	60	284197	gear	0	3.532
+B	priest/shadow	60	286997	gear	0	28.938
 B	priest/holy	12	35	mh	0	0.0
 B	priest/holy	12	1299	gear	0	4.17
 B	priest/holy	12	1831	mh	0	0.0
@@ -5414,63 +5834,67 @@ B	priest/holy	12	2364	gear	0	0.756
 B	priest/holy	12	2955	gear	0	11.155999999999999
 B	priest/holy	12	3423	oh	0	0.0
 B	priest/holy	12	3947	gear	0	1.26
-B	priest/holy	12	4454	mh	0	0.22
+B	priest/holy	12	4454	mh	0	0.33
 B	priest/holy	12	4947	mh	0	0.0
 B	priest/holy	12	5393	mh	0	0.0
 B	priest/holy	12	6333	mh	0	1.5
 B	priest/holy	12	6540	gear	12761	7.196
 B	priest/holy	12	6691	mh	0	4.94
 B	priest/holy	12	7355	gear	12761	8.538
-B	priest/holy	12	7757	mh	0	11.100000000000001
+B	priest/holy	12	7757	mh	0	12.75
 B	priest/holy	12	9491	gear	0	8.722
 B	priest/holy	12	9875	gear	12761	15.838
 B	priest/holy	12	10102	gear	12761	35.012
 B	priest/holy	12	10645	gear	0	0.0
 B	priest/holy	12	11288	ranged	0	86.0
-B	priest/holy	12	11808	gear	0	18.108
-B	priest/holy	12	12015	gear	12745	13.4
-B	priest/holy	12	12805	gear	0	0.0
-B	priest/holy	12	13360	mh	0	8.31
-B	priest/holy	12	14108	gear	0	3.4620000000000006
-B	priest/holy	12	14213	gear	12761	20.118
-B	priest/holy	12	14312	gear	12761	36.228
-B	priest/holy	12	14440	gear	0	6.42
-B	priest/holy	12	15299	gear	0	0.378
-B	priest/holy	12	15939	oh	12761	17.2
+B	priest/holy	12	11807	gear	0	14.432
+B	priest/holy	12	12014	gear	12755	12.5
+B	priest/holy	12	12794	mh	0	0.0
+B	priest/holy	12	13353	oh	0	26.71
+B	priest/holy	12	14107	gear	0	29.644
+B	priest/holy	12	14212	gear	12761	13.51
+B	priest/holy	12	14311	gear	12761	17.642
+B	priest/holy	12	14439	gear	0	3.574
+B	priest/holy	12	15283	ranged	12761	283.628
+B	priest/holy	12	15938	oh	12761	17.2
 B	priest/holy	12	15945	oh	0	1.72
-B	priest/holy	12	16819	gear	0	15.268
-B	priest/holy	12	17739	gear	0	10.554
-B	priest/holy	12	18440	gear	0	9.522
-B	priest/holy	12	18879	gear	0	19.62
-B	priest/holy	12	19395	gear	0	3.87
-B	priest/holy	12	19893	gear	0	24.1
-B	priest/holy	12	20330	gear	0	25.742000000000004
-B	priest/holy	12	20652	gear	12748	21.596
-B	priest/holy	12	21500	gear	0	20.422
-B	priest/holy	12	22085	gear	0	38.512
-B	priest/holy	12	22678	gear	0	0.0
-B	priest/holy	12	23177	ranged	0	191.384
-B	priest/holy	12	212583	mh	0	2.25
-B	priest/holy	12	217296	gear	0	11.75
-B	priest/holy	12	220907	gear	0	33.138
-B	priest/holy	12	226731	gear	0	32.724
-B	priest/holy	12	227967	gear	0	0.0
-B	priest/holy	12	228282	gear	0	52.562
-B	priest/holy	12	228757	mh	0	0.0
-B	priest/holy	12	231168	gear	0	67.052
-B	priest/holy	12	233395	gear	0	78.806
-B	priest/holy	12	233994	gear	0	30.78
-B	priest/holy	12	234576	mh	0	70.63
-B	priest/holy	12	236277	gear	0	21.5
-B	priest/holy	12	239565	gear	0	90.892
-B	priest/holy	12	247789	ranged	0	19.2
-B	priest/holy	12	254029	gear	0	10.992
-B	priest/holy	12	260829	gear	0	1.848
-B	priest/holy	12	271909	gear	0	10.5
-B	priest/holy	12	272847	mh	0	2.26
-B	priest/holy	12	275831	gear	0	1.9500000000000002
-B	priest/holy	12	278019	gear	0	8.5
-B	priest/holy	12	288931	gear	0	16.0
+B	priest/holy	12	16817	gear	0	30.293999999999997
+B	priest/holy	12	17737	oh	0	4.48
+B	priest/holy	12	18438	gear	0	0.0
+B	priest/holy	12	18878	mh	0	32.629999999999995
+B	priest/holy	12	19391	gear	0	24.942
+B	priest/holy	12	19891	oh	0	29.99
+B	priest/holy	12	20333	gear	0	17.150000000000002
+B	priest/holy	12	20672	ranged	0	307.69399999999996
+B	priest/holy	12	21522	mh	0	10.5
+B	priest/holy	12	22231	gear	0	23.49
+B	priest/holy	12	22711	gear	0	31.856
+B	priest/holy	12	23237	gear	0	4.66
+B	priest/holy	12	213088	gear	0	6.008000000000001
+B	priest/holy	12	217301	gear	0	7.98
+B	priest/holy	12	221025	gear	0	30.924
+B	priest/holy	12	226744	gear	0	15.182
+B	priest/holy	12	227980	gear	0	41.688
+B	priest/holy	12	228292	gear	0	22.248
+B	priest/holy	12	229374	mh	0	7.5
+B	priest/holy	12	231271	gear	0	26.0
+B	priest/holy	12	233502	gear	0	9.95
+B	priest/holy	12	234020	gear	0	32.07
+B	priest/holy	12	234614	gear	0	0.0
+B	priest/holy	12	236284	mh	0	141.48
+B	priest/holy	12	239581	gear	0	67.0
+B	priest/holy	12	249234	ranged	0	195.016
+B	priest/holy	12	254033	gear	0	8.56
+B	priest/holy	12	260820	gear	0	0.0
+B	priest/holy	12	271661	gear	0	0.084
+B	priest/holy	12	272406	gear	0	16.16
+B	priest/holy	12	273423	gear	0	36.65
+B	priest/holy	12	274919	ranged	0	163.22
+B	priest/holy	12	276888	mh	0	1.0
+B	priest/holy	12	279826	gear	0	27.573999999999998
+B	priest/holy	12	281315	gear	0	1.926
+B	priest/holy	12	284197	gear	0	7.428
+B	priest/holy	12	286997	gear	0	14.012
 B	priest/holy	25	35	mh	0	0.0
 B	priest/holy	25	1299	gear	0	8.6
 B	priest/holy	25	1831	mh	0	0.0
@@ -5478,63 +5902,67 @@ B	priest/holy	25	2364	gear	0	0.0
 B	priest/holy	25	2955	gear	0	24.7
 B	priest/holy	25	3423	oh	0	0.0
 B	priest/holy	25	3947	gear	0	0.0
-B	priest/holy	25	4454	mh	0	1.2
+B	priest/holy	25	4454	mh	0	1.7999999999999998
 B	priest/holy	25	4947	mh	0	0.0
 B	priest/holy	25	5393	mh	0	0.0
 B	priest/holy	25	6333	mh	0	3.4
 B	priest/holy	25	6540	gear	12745	9.4
 B	priest/holy	25	6691	mh	0	12.6
 B	priest/holy	25	7355	gear	12718	10.8
-B	priest/holy	25	7757	mh	0	26.9
+B	priest/holy	25	7757	mh	0	28.9
 B	priest/holy	25	9491	gear	0	19.5
 B	priest/holy	25	9875	gear	12748	23.299999999999997
 B	priest/holy	25	10102	gear	12748	49.3
 B	priest/holy	25	10645	gear	0	0.0
 B	priest/holy	25	11288	ranged	0	112.25
-B	priest/holy	25	11808	gear	0	34.0
-B	priest/holy	25	12015	gear	12748	26.0
-B	priest/holy	25	12805	gear	0	0.0
-B	priest/holy	25	13360	mh	0	22.1
-B	priest/holy	25	14108	gear	0	7.199999999999999
-B	priest/holy	25	14213	gear	12748	28.7
-B	priest/holy	25	14312	gear	12748	51.0
-B	priest/holy	25	14440	gear	0	13.799999999999999
-B	priest/holy	25	15299	gear	0	0.0
-B	priest/holy	25	15939	oh	12748	26.0
+B	priest/holy	25	11807	gear	0	33.0
+B	priest/holy	25	12014	gear	12718	24.299999999999997
+B	priest/holy	25	12794	mh	0	0.0
+B	priest/holy	25	13353	oh	0	48.68
+B	priest/holy	25	14107	gear	0	34.879999999999995
+B	priest/holy	25	14212	gear	12718	18.9
+B	priest/holy	25	14311	gear	12718	24.299999999999997
+B	priest/holy	25	14439	gear	0	8.8
+B	priest/holy	25	15283	ranged	12748	375.48799999999994
+B	priest/holy	25	15938	oh	12748	26.0
 B	priest/holy	25	15945	oh	0	4.6
-B	priest/holy	25	16819	gear	0	35.800000000000004
-B	priest/holy	25	17739	gear	0	20.4
-B	priest/holy	25	18440	gear	0	15.299999999999999
-B	priest/holy	25	18879	gear	0	34.0
-B	priest/holy	25	19395	gear	0	9.9
-B	priest/holy	25	19893	gear	0	41.8
-B	priest/holy	25	20330	gear	0	55.6
-B	priest/holy	25	20652	gear	12748	38.5
-B	priest/holy	25	21500	gear	0	43.199999999999996
-B	priest/holy	25	22085	gear	0	65.89999999999999
-B	priest/holy	25	22678	gear	0	0.0
-B	priest/holy	25	23177	ranged	0	248.704
-B	priest/holy	25	212583	mh	0	5.1
-B	priest/holy	25	217296	gear	0	20.299999999999997
-B	priest/holy	25	220907	gear	0	49.699999999999996
-B	priest/holy	25	226731	gear	0	43.9
-B	priest/holy	25	227967	gear	0	0.0
-B	priest/holy	25	228282	gear	0	69.0
-B	priest/holy	25	228757	mh	0	0.0
-B	priest/holy	25	231168	gear	0	91.1
-B	priest/holy	25	233395	gear	0	100.44
-B	priest/holy	25	233994	gear	0	42.6
-B	priest/holy	25	234576	mh	0	96.3
-B	priest/holy	25	236277	gear	0	39.0
-B	priest/holy	25	239565	gear	0	112.58
-B	priest/holy	25	247789	ranged	0	25.2
-B	priest/holy	25	254029	gear	0	22.299999999999997
-B	priest/holy	25	260829	gear	0	0.0
-B	priest/holy	25	271909	gear	0	23.8
-B	priest/holy	25	272847	mh	0	5.0
-B	priest/holy	25	275831	gear	0	5.0
-B	priest/holy	25	278019	gear	0	14.2
-B	priest/holy	25	288931	gear	0	16.0
+B	priest/holy	25	16817	gear	0	58.4
+B	priest/holy	25	17737	oh	0	11.04
+B	priest/holy	25	18438	gear	0	0.0
+B	priest/holy	25	18878	mh	0	50.6
+B	priest/holy	25	19391	gear	0	52.3
+B	priest/holy	25	19891	oh	0	46.4
+B	priest/holy	25	20333	gear	0	44.5
+B	priest/holy	25	20672	ranged	0	406.679
+B	priest/holy	25	21522	mh	0	23.8
+B	priest/holy	25	22231	gear	0	44.5
+B	priest/holy	25	22711	gear	0	39.2
+B	priest/holy	25	23237	gear	0	11.6
+B	priest/holy	25	213088	gear	0	13.200000000000001
+B	priest/holy	25	217301	gear	0	18.9
+B	priest/holy	25	221025	gear	0	40.9
+B	priest/holy	25	226744	gear	0	34.7
+B	priest/holy	25	227980	gear	0	63.4
+B	priest/holy	25	228292	gear	0	39.1
+B	priest/holy	25	229374	mh	0	17.0
+B	priest/holy	25	231271	gear	0	26.0
+B	priest/holy	25	233502	gear	0	22.5
+B	priest/holy	25	234020	gear	0	45.7
+B	priest/holy	25	234614	gear	0	0.0
+B	priest/holy	25	236284	mh	0	179.4
+B	priest/holy	25	239581	gear	0	89.9
+B	priest/holy	25	249234	ranged	0	253.77100000000002
+B	priest/holy	25	254033	gear	0	10.8
+B	priest/holy	25	260820	gear	0	0.0
+B	priest/holy	25	271661	gear	0	0.0
+B	priest/holy	25	272406	gear	0	26.8
+B	priest/holy	25	273423	gear	0	69.19999999999999
+B	priest/holy	25	274919	ranged	0	212.48499999999999
+B	priest/holy	25	276888	mh	0	3.2
+B	priest/holy	25	279826	gear	0	47.099999999999994
+B	priest/holy	25	281315	gear	0	3.0
+B	priest/holy	25	284197	gear	0	13.6
+B	priest/holy	25	286997	gear	0	20.2
 B	priest/holy	34	35	mh	0	0.0
 B	priest/holy	34	1299	gear	0	8.66
 B	priest/holy	34	1831	mh	0	0.0
@@ -5542,63 +5970,67 @@ B	priest/holy	34	2364	gear	0	1.0979999999999999
 B	priest/holy	34	2955	gear	0	24.623
 B	priest/holy	34	3423	oh	0	0.0
 B	priest/holy	34	3947	gear	0	1.83
-B	priest/holy	34	4454	mh	0	1.76
+B	priest/holy	34	4454	mh	0	2.64
 B	priest/holy	34	4947	mh	0	0.0
 B	priest/holy	34	5393	mh	0	0.0
 B	priest/holy	34	6333	mh	0	2.4
 B	priest/holy	34	6540	gear	12745	9.348
 B	priest/holy	34	6691	mh	0	10.719999999999999
 B	priest/holy	34	7355	gear	12747	9.719
-B	priest/holy	34	7757	mh	0	20.55
+B	priest/holy	34	7757	mh	0	20.4
 B	priest/holy	34	9491	gear	0	18.771
 B	priest/holy	34	9875	gear	12747	20.968999999999998
 B	priest/holy	34	10102	gear	12747	47.11600000000001
 B	priest/holy	34	10645	gear	0	0.0
 B	priest/holy	34	11288	ranged	0	147.25
-B	priest/holy	34	11808	gear	0	28.514
-B	priest/holy	34	12015	gear	12747	22.28
-B	priest/holy	34	12805	gear	0	0.0
-B	priest/holy	34	13360	mh	0	19.380000000000003
-B	priest/holy	34	14108	gear	0	13.671
-B	priest/holy	34	14213	gear	12747	27.469
-B	priest/holy	34	14312	gear	12747	47.584
-B	priest/holy	34	14440	gear	0	14.31
-B	priest/holy	34	15299	gear	0	0.5489999999999999
-B	priest/holy	34	15939	oh	12747	22.28
+B	priest/holy	34	11807	gear	0	31.706000000000003
+B	priest/holy	34	12014	gear	12747	20.2
+B	priest/holy	34	12794	mh	0	0.0
+B	priest/holy	34	13353	oh	0	44.150000000000006
+B	priest/holy	34	14107	gear	0	35.602000000000004
+B	priest/holy	34	14212	gear	12747	18.055
+B	priest/holy	34	14311	gear	12747	22.091
+B	priest/holy	34	14439	gear	0	11.927000000000001
+B	priest/holy	34	15283	ranged	12747	486.028
+B	priest/holy	34	15938	oh	12747	22.28
 B	priest/holy	34	15945	oh	0	4.16
-B	priest/holy	34	16819	gear	0	35.023999999999994
-B	priest/holy	34	17739	gear	0	16.657
-B	priest/holy	34	18440	gear	0	14.825999999999999
-B	priest/holy	34	18879	gear	0	30.71
-B	priest/holy	34	19395	gear	0	11.700000000000001
-B	priest/holy	34	19893	gear	0	36.8
-B	priest/holy	34	20330	gear	0	54.711000000000006
-B	priest/holy	34	20652	gear	12747	35.272999999999996
-B	priest/holy	34	21500	gear	0	37.566
-B	priest/holy	34	22085	gear	0	66.241
-B	priest/holy	34	22678	gear	0	0.0
-B	priest/holy	34	23177	ranged	0	324.564
-B	priest/holy	34	212583	mh	0	3.5999999999999996
-B	priest/holy	34	217296	gear	0	15.799999999999999
-B	priest/holy	34	220907	gear	0	47.654
-B	priest/holy	34	226731	gear	0	41.482
-B	priest/holy	34	227967	gear	0	0.0
-B	priest/holy	34	228282	gear	0	62.721000000000004
-B	priest/holy	34	228757	mh	0	0.0
-B	priest/holy	34	231168	gear	0	85.46100000000001
-B	priest/holy	34	233395	gear	0	98.243
-B	priest/holy	34	233994	gear	0	40.18000000000001
-B	priest/holy	34	234576	mh	0	85.28
-B	priest/holy	34	236277	gear	0	35.81
-B	priest/holy	34	239565	gear	0	110.476
-B	priest/holy	34	247789	ranged	0	33.2
-B	priest/holy	34	254029	gear	0	18.665999999999997
-B	priest/holy	34	260829	gear	0	2.684
-B	priest/holy	34	271909	gear	0	16.8
-B	priest/holy	34	272847	mh	0	5.0
-B	priest/holy	34	275831	gear	0	4.050000000000001
-B	priest/holy	34	278019	gear	0	11.2
-B	priest/holy	34	288931	gear	0	16.0
+B	priest/holy	34	16817	gear	0	56.297000000000004
+B	priest/holy	34	17737	oh	0	11.040000000000001
+B	priest/holy	34	18438	gear	0	0.0
+B	priest/holy	34	18878	mh	0	43.370000000000005
+B	priest/holy	34	19391	gear	0	49.911
+B	priest/holy	34	19891	oh	0	42.21
+B	priest/holy	34	20333	gear	0	39.24
+B	priest/holy	34	20672	ranged	0	529.629
+B	priest/holy	34	21522	mh	0	16.8
+B	priest/holy	34	22231	gear	0	41.14
+B	priest/holy	34	22711	gear	0	37.988
+B	priest/holy	34	23237	gear	0	10.700000000000001
+B	priest/holy	34	213088	gear	0	13.024
+B	priest/holy	34	217301	gear	0	14.07
+B	priest/holy	34	221025	gear	0	38.137
+B	priest/holy	34	226744	gear	0	32.906
+B	priest/holy	34	227980	gear	0	62.778999999999996
+B	priest/holy	34	228292	gear	0	34.858999999999995
+B	priest/holy	34	229374	mh	0	12.0
+B	priest/holy	34	231271	gear	0	26.0
+B	priest/holy	34	233502	gear	0	18.9
+B	priest/holy	34	234020	gear	0	42.58
+B	priest/holy	34	234614	gear	0	0.0
+B	priest/holy	34	236284	mh	0	172.4
+B	priest/holy	34	239581	gear	0	83.38
+B	priest/holy	34	249234	ranged	0	332.11100000000005
+B	priest/holy	34	254033	gear	0	15.479999999999999
+B	priest/holy	34	260820	gear	0	0.0
+B	priest/holy	34	271661	gear	0	0.122
+B	priest/holy	34	272406	gear	0	26.04
+B	priest/holy	34	273423	gear	0	61.675
+B	priest/holy	34	274919	ranged	0	277.77500000000003
+B	priest/holy	34	276888	mh	0	3.38
+B	priest/holy	34	279826	gear	0	45.66199999999999
+B	priest/holy	34	281315	gear	0	3.528
+B	priest/holy	34	284197	gear	0	11.674
+B	priest/holy	34	286997	gear	0	28.071
 B	priest/holy	45	35	mh	0	0.0
 B	priest/holy	45	1299	gear	0	7.869999999999999
 B	priest/holy	45	1831	mh	0	0.0
@@ -5606,63 +6038,67 @@ B	priest/holy	45	2364	gear	0	1.2779999999999998
 B	priest/holy	45	2955	gear	0	22.523
 B	priest/holy	45	3423	oh	0	0.0
 B	priest/holy	45	3947	gear	0	2.13
-B	priest/holy	45	4454	mh	0	1.98
+B	priest/holy	45	4454	mh	0	2.9699999999999998
 B	priest/holy	45	4947	mh	0	0.0
 B	priest/holy	45	5393	mh	0	0.0
 B	priest/holy	45	6333	mh	0	1.74
 B	priest/holy	45	6540	gear	12745	10.128
 B	priest/holy	45	6691	mh	0	9.18
 B	priest/holy	45	7355	gear	12746	9.729000000000001
-B	priest/holy	45	7757	mh	0	22.59
+B	priest/holy	45	7757	mh	0	14.79
 B	priest/holy	45	9491	gear	0	20.301000000000002
 B	priest/holy	45	9875	gear	12746	20.909000000000002
 B	priest/holy	45	10102	gear	12746	47.18600000000001
 B	priest/holy	45	10645	gear	0	0.0
 B	priest/holy	45	11288	ranged	0	121.0
-B	priest/holy	45	11808	gear	0	22.653999999999996
-B	priest/holy	45	12015	gear	12746	21.939999999999998
-B	priest/holy	45	12805	gear	0	0.0
-B	priest/holy	45	13360	mh	0	21.29
-B	priest/holy	45	14108	gear	0	15.500999999999998
-B	priest/holy	45	14213	gear	12746	27.519
-B	priest/holy	45	14312	gear	12746	47.434
-B	priest/holy	45	14440	gear	0	13.29
-B	priest/holy	45	15299	gear	0	0.6389999999999999
-B	priest/holy	45	15939	oh	12746	21.939999999999998
+B	priest/holy	45	11807	gear	0	32.866
+B	priest/holy	45	12014	gear	12746	19.85
+B	priest/holy	45	12794	mh	0	0.0
+B	priest/holy	45	13353	oh	0	46.16
+B	priest/holy	45	14107	gear	0	38.402
+B	priest/holy	45	14212	gear	12746	18.145
+B	priest/holy	45	14311	gear	12746	22.051000000000002
+B	priest/holy	45	14439	gear	0	14.237
+B	priest/holy	45	15283	ranged	12746	400.628
+B	priest/holy	45	15938	oh	12746	21.939999999999998
 B	priest/holy	45	15945	oh	0	3.7199999999999998
-B	priest/holy	45	16819	gear	0	39.184000000000005
-B	priest/holy	45	17739	gear	0	13.067
-B	priest/holy	45	18440	gear	0	12.516
-B	priest/holy	45	18879	gear	0	25.209999999999997
-B	priest/holy	45	19395	gear	0	17.099999999999998
-B	priest/holy	45	19893	gear	0	36.3
-B	priest/holy	45	20330	gear	0	61.401
-B	priest/holy	45	20652	gear	12746	35.183
-B	priest/holy	45	21500	gear	0	40.256
-B	priest/holy	45	22085	gear	0	71.741
-B	priest/holy	45	22678	gear	0	0.0
-B	priest/holy	45	23177	ranged	0	266.94399999999996
-B	priest/holy	45	212583	mh	0	2.61
-B	priest/holy	45	217296	gear	0	12.83
-B	priest/holy	45	220907	gear	0	48.384
-B	priest/holy	45	226731	gear	0	42.882
-B	priest/holy	45	227967	gear	0	0.0
-B	priest/holy	45	228282	gear	0	56.730999999999995
-B	priest/holy	45	228757	mh	0	0.0
-B	priest/holy	45	231168	gear	0	85.42099999999999
-B	priest/holy	45	233395	gear	0	98.223
-B	priest/holy	45	233994	gear	0	46.0
-B	priest/holy	45	234576	mh	0	81.27
-B	priest/holy	45	236277	gear	0	36.769999999999996
-B	priest/holy	45	239565	gear	0	109.31600000000002
-B	priest/holy	45	247789	ranged	0	27.2
-B	priest/holy	45	254029	gear	0	18.086000000000002
-B	priest/holy	45	260829	gear	0	3.1239999999999997
-B	priest/holy	45	271909	gear	0	12.18
-B	priest/holy	45	272847	mh	0	4.94
-B	priest/holy	45	275831	gear	0	5.5
-B	priest/holy	45	278019	gear	0	9.219999999999999
-B	priest/holy	45	288931	gear	0	16.0
+B	priest/holy	45	16817	gear	0	63.447
+B	priest/holy	45	17737	oh	0	13.280000000000001
+B	priest/holy	45	18438	gear	0	0.0
+B	priest/holy	45	18878	mh	0	45.660000000000004
+B	priest/holy	45	19391	gear	0	58.561
+B	priest/holy	45	19891	oh	0	42.660000000000004
+B	priest/holy	45	20333	gear	0	45.35
+B	priest/holy	45	20672	ranged	0	438.74399999999997
+B	priest/holy	45	21522	mh	0	12.18
+B	priest/holy	45	22231	gear	0	43.23
+B	priest/holy	45	22711	gear	0	38.228
+B	priest/holy	45	23237	gear	0	14.2
+B	priest/holy	45	213088	gear	0	13.544
+B	priest/holy	45	217301	gear	0	13.790000000000001
+B	priest/holy	45	221025	gear	0	38.517
+B	priest/holy	45	226744	gear	0	33.736
+B	priest/holy	45	227980	gear	0	65.15899999999999
+B	priest/holy	45	228292	gear	0	28.459000000000003
+B	priest/holy	45	229374	mh	0	8.7
+B	priest/holy	45	231271	gear	0	26.0
+B	priest/holy	45	233502	gear	0	15.17
+B	priest/holy	45	234020	gear	0	42.49
+B	priest/holy	45	234614	gear	0	0.0
+B	priest/holy	45	236284	mh	0	173.2
+B	priest/holy	45	239581	gear	0	81.30000000000001
+B	priest/holy	45	249234	ranged	0	273.356
+B	priest/holy	45	254033	gear	0	16.759999999999998
+B	priest/holy	45	260820	gear	0	0.0
+B	priest/holy	45	271661	gear	0	0.142
+B	priest/holy	45	272406	gear	0	30.0
+B	priest/holy	45	273423	gear	0	57.845
+B	priest/holy	45	274919	ranged	0	228.29999999999998
+B	priest/holy	45	276888	mh	0	4.18
+B	priest/holy	45	279826	gear	0	45.412000000000006
+B	priest/holy	45	281315	gear	0	4.578
+B	priest/holy	45	284197	gear	0	9.373999999999999
+B	priest/holy	45	286997	gear	0	30.450999999999997
 B	priest/holy	55	35	mh	0	0.0
 B	priest/holy	55	1299	gear	0	9.3
 B	priest/holy	55	1831	mh	0	0.0
@@ -5670,63 +6106,67 @@ B	priest/holy	55	2364	gear	0	1.8
 B	priest/holy	55	2955	gear	0	26.3
 B	priest/holy	55	3423	oh	0	0.0
 B	priest/holy	55	3947	gear	0	3.0
-B	priest/holy	55	4454	mh	0	2.2
+B	priest/holy	55	4454	mh	0	3.3000000000000003
 B	priest/holy	55	4947	mh	0	0.0
 B	priest/holy	55	5393	mh	0	0.0
 B	priest/holy	55	6333	mh	0	2.0
 B	priest/holy	55	6540	gear	12745	12.0
 B	priest/holy	55	6691	mh	0	10.4
 B	priest/holy	55	7355	gear	12720	11.500000000000002
-B	priest/holy	55	7757	mh	0	26.5
+B	priest/holy	55	7757	mh	0	17.0
 B	priest/holy	55	9491	gear	0	24.0
 B	priest/holy	55	9875	gear	12746	24.1
 B	priest/holy	55	10102	gear	12746	54.4
 B	priest/holy	55	10645	gear	0	0.0
 B	priest/holy	55	11288	ranged	0	126.25
-B	priest/holy	55	11808	gear	0	27.4
-B	priest/holy	55	12015	gear	12746	24.6
-B	priest/holy	55	12805	gear	0	0.0
-B	priest/holy	55	13360	mh	0	24.6
-B	priest/holy	55	14108	gear	0	18.3
-B	priest/holy	55	14213	gear	12746	31.800000000000004
-B	priest/holy	55	14312	gear	12746	54.5
-B	priest/holy	55	14440	gear	0	15.600000000000001
-B	priest/holy	55	15299	gear	0	0.9
-B	priest/holy	55	15939	oh	12746	24.6
+B	priest/holy	55	11807	gear	0	38.6
+B	priest/holy	55	12014	gear	12746	22.200000000000003
+B	priest/holy	55	12794	mh	0	0.0
+B	priest/holy	55	13353	oh	0	52.42
+B	priest/holy	55	14107	gear	0	44.42
+B	priest/holy	55	14212	gear	12746	21.0
+B	priest/holy	55	14311	gear	12746	25.300000000000004
+B	priest/holy	55	14439	gear	0	16.7
+B	priest/holy	55	15283	ranged	12746	419.496
+B	priest/holy	55	15938	oh	12746	24.6
 B	priest/holy	55	15945	oh	0	4.2
-B	priest/holy	55	16819	gear	0	44.800000000000004
-B	priest/holy	55	17739	gear	0	15.7
-B	priest/holy	55	18440	gear	0	15.600000000000001
-B	priest/holy	55	18879	gear	0	31.0
-B	priest/holy	55	19395	gear	0	14.4
-B	priest/holy	55	19893	gear	0	41.4
-B	priest/holy	55	20330	gear	0	76.4
-B	priest/holy	55	20652	gear	12746	40.599999999999994
-B	priest/holy	55	21500	gear	0	45.5
-B	priest/holy	55	22085	gear	0	78.1
-B	priest/holy	55	22678	gear	0	0.0
-B	priest/holy	55	23177	ranged	0	279.068
-B	priest/holy	55	212583	mh	0	3.0
-B	priest/holy	55	217296	gear	0	14.0
-B	priest/holy	55	220907	gear	0	59.1
-B	priest/holy	55	226731	gear	0	47.5
-B	priest/holy	55	227967	gear	0	0.0
-B	priest/holy	55	228282	gear	0	61.1
-B	priest/holy	55	228757	mh	0	0.0
-B	priest/holy	55	231168	gear	0	101.69999999999999
-B	priest/holy	55	233395	gear	0	119.71000000000001
-B	priest/holy	55	233994	gear	0	53.5
-B	priest/holy	55	234576	mh	0	89.5
-B	priest/holy	55	236277	gear	0	40.6
-B	priest/holy	55	239565	gear	0	132.02
-B	priest/holy	55	247789	ranged	0	28.4
-B	priest/holy	55	254029	gear	0	21.700000000000003
-B	priest/holy	55	260829	gear	0	4.4
-B	priest/holy	55	271909	gear	0	14.0
-B	priest/holy	55	272847	mh	0	9.1
-B	priest/holy	55	275831	gear	0	6.5
-B	priest/holy	55	278019	gear	0	10.0
-B	priest/holy	55	288931	gear	0	16.0
+B	priest/holy	55	16817	gear	0	70.7
+B	priest/holy	55	17737	oh	0	16.32
+B	priest/holy	55	18438	gear	0	0.0
+B	priest/holy	55	18878	mh	0	50.1
+B	priest/holy	55	19391	gear	0	62.400000000000006
+B	priest/holy	55	19891	oh	0	47.699999999999996
+B	priest/holy	55	20333	gear	0	50.199999999999996
+B	priest/holy	55	20672	ranged	0	459.24299999999994
+B	priest/holy	55	21522	mh	0	14.0
+B	priest/holy	55	22231	gear	0	51.800000000000004
+B	priest/holy	55	22711	gear	0	41.599999999999994
+B	priest/holy	55	23237	gear	0	20.1
+B	priest/holy	55	213088	gear	0	16.0
+B	priest/holy	55	217301	gear	0	16.1
+B	priest/holy	55	221025	gear	0	42.1
+B	priest/holy	55	226744	gear	0	39.6
+B	priest/holy	55	227980	gear	0	73.4
+B	priest/holy	55	228292	gear	0	34.9
+B	priest/holy	55	229374	mh	0	10.0
+B	priest/holy	55	231271	gear	0	26.0
+B	priest/holy	55	233502	gear	0	18.4
+B	priest/holy	55	234020	gear	0	46.8
+B	priest/holy	55	234614	gear	0	0.0
+B	priest/holy	55	236284	mh	0	195.1
+B	priest/holy	55	239581	gear	0	93.6
+B	priest/holy	55	249234	ranged	0	285.10699999999997
+B	priest/holy	55	254033	gear	0	18.8
+B	priest/holy	55	260820	gear	0	0.0
+B	priest/holy	55	271661	gear	0	0.2
+B	priest/holy	55	272406	gear	0	34.6
+B	priest/holy	55	273423	gear	0	66.5
+B	priest/holy	55	274919	ranged	0	238.61499999999998
+B	priest/holy	55	276888	mh	0	4.800000000000001
+B	priest/holy	55	279826	gear	0	51.6
+B	priest/holy	55	281315	gear	0	5.7
+B	priest/holy	55	284197	gear	0	11.4
+B	priest/holy	55	286997	gear	0	33.800000000000004
 B	priest/holy	60	35	mh	0	0.0
 B	priest/holy	60	1299	gear	0	7.32
 B	priest/holy	60	1831	mh	0	0.0
@@ -5734,63 +6174,67 @@ B	priest/holy	60	2364	gear	0	1.17
 B	priest/holy	60	2955	gear	0	21.625
 B	priest/holy	60	3423	oh	0	0.0
 B	priest/holy	60	3947	gear	0	1.9500000000000002
-B	priest/holy	60	4454	mh	0	2.6
+B	priest/holy	60	4454	mh	0	3.9000000000000004
 B	priest/holy	60	4947	mh	0	0.0
 B	priest/holy	60	5393	mh	0	0.0
 B	priest/holy	60	6333	mh	0	1.06
 B	priest/holy	60	6540	gear	12745	9.68
 B	priest/holy	60	6691	mh	0	8.38
 B	priest/holy	60	7355	gear	12720	11.235
-B	priest/holy	60	7757	mh	0	21.71
+B	priest/holy	60	7757	mh	0	9.01
 B	priest/holy	60	9491	gear	0	20.765
 B	priest/holy	60	9875	gear	12746	23.185
 B	priest/holy	60	10102	gear	12746	52.04
 B	priest/holy	60	10645	gear	0	0.0
 B	priest/holy	60	11288	ranged	0	163.0
-B	priest/holy	60	11808	gear	0	15.410000000000002
-B	priest/holy	60	12015	gear	12746	24.8
-B	priest/holy	60	12805	gear	0	0.0
-B	priest/holy	60	13360	mh	0	22.450000000000003
-B	priest/holy	60	14108	gear	0	18.915000000000003
-B	priest/holy	60	14213	gear	12746	30.185
-B	priest/holy	60	14312	gear	12746	52.459999999999994
-B	priest/holy	60	14440	gear	0	12.93
-B	priest/holy	60	15299	gear	0	0.585
-B	priest/holy	60	15939	oh	12746	24.8
+B	priest/holy	60	11807	gear	0	33.29
+B	priest/holy	60	12014	gear	12720	22.5
+B	priest/holy	60	12794	mh	0	0.0
+B	priest/holy	60	13353	oh	0	48.36
+B	priest/holy	60	14107	gear	0	39.75
+B	priest/holy	60	14212	gear	12746	19.875
+B	priest/holy	60	14311	gear	12720	24.515
+B	priest/holy	60	14439	gear	0	16.955
+B	priest/holy	60	15283	ranged	12746	538.7919999999999
+B	priest/holy	60	15938	oh	12746	24.8
 B	priest/holy	60	15945	oh	0	3.66
-B	priest/holy	60	16819	gear	0	42.699999999999996
-B	priest/holy	60	17739	gear	0	8.765
-B	priest/holy	60	18440	gear	0	9.06
-B	priest/holy	60	18879	gear	0	17.75
-B	priest/holy	60	19395	gear	0	26.099999999999998
-B	priest/holy	60	19893	gear	0	41.3
-B	priest/holy	60	20330	gear	0	65.825
-B	priest/holy	60	20652	gear	12746	38.845
-B	priest/holy	60	21500	gear	0	40.660000000000004
-B	priest/holy	60	22085	gear	0	77.955
-B	priest/holy	60	22678	gear	0	0.0
-B	priest/holy	60	23177	ranged	0	358.53599999999994
-B	priest/holy	60	212583	mh	0	1.59
-B	priest/holy	60	217296	gear	0	9.77
-B	priest/holy	60	220907	gear	0	47.599999999999994
-B	priest/holy	60	226731	gear	0	41.29
-B	priest/holy	60	227967	gear	0	0.0
-B	priest/holy	60	228282	gear	0	49.565000000000005
-B	priest/holy	60	228757	mh	0	0.0
-B	priest/holy	60	231168	gear	0	85.715
-B	priest/holy	60	233395	gear	0	101.72499999999998
-B	priest/holy	60	233994	gear	0	50.8
-B	priest/holy	60	234576	mh	0	77.93
-B	priest/holy	60	236277	gear	0	37.74
-B	priest/holy	60	239565	gear	0	112.55999999999999
-B	priest/holy	60	247789	ranged	0	36.8
-B	priest/holy	60	254029	gear	0	15.510000000000002
-B	priest/holy	60	260829	gear	0	2.8600000000000003
-B	priest/holy	60	271909	gear	0	7.42
-B	priest/holy	60	272847	mh	0	7.26
-B	priest/holy	60	275831	gear	0	6.0
-B	priest/holy	60	278019	gear	0	7.18
-B	priest/holy	60	288931	gear	0	16.0
+B	priest/holy	60	16817	gear	0	69.00500000000001
+B	priest/holy	60	17737	oh	0	20.0
+B	priest/holy	60	18438	gear	0	0.0
+B	priest/holy	60	18878	mh	0	44.64
+B	priest/holy	60	19391	gear	0	67.35499999999999
+B	priest/holy	60	19891	oh	0	48.44
+B	priest/holy	60	20333	gear	0	50.77
+B	priest/holy	60	20672	ranged	0	589.2359999999999
+B	priest/holy	60	21522	mh	0	7.42
+B	priest/holy	60	22231	gear	0	48.33
+B	priest/holy	60	22711	gear	0	36.49999999999999
+B	priest/holy	60	23237	gear	0	18.2
+B	priest/holy	60	213088	gear	0	13.680000000000001
+B	priest/holy	60	217301	gear	0	12.11
+B	priest/holy	60	221025	gear	0	36.715
+B	priest/holy	60	226744	gear	0	33.82
+B	priest/holy	60	227980	gear	0	65.145
+B	priest/holy	60	228292	gear	0	19.925
+B	priest/holy	60	229374	mh	0	5.300000000000001
+B	priest/holy	60	231271	gear	0	26.0
+B	priest/holy	60	233502	gear	0	18.83
+B	priest/holy	60	234020	gear	0	48.31
+B	priest/holy	60	234614	gear	0	0.0
+B	priest/holy	60	236284	mh	0	192.2
+B	priest/holy	60	239581	gear	0	77.56
+B	priest/holy	60	249234	ranged	0	367.364
+B	priest/holy	60	254033	gear	0	19.0
+B	priest/holy	60	260820	gear	0	0.0
+B	priest/holy	60	271661	gear	0	0.13
+B	priest/holy	60	272406	gear	0	38.8
+B	priest/holy	60	273423	gear	0	52.655
+B	priest/holy	60	274919	ranged	0	307.03999999999996
+B	priest/holy	60	276888	mh	0	5.0
+B	priest/holy	60	279826	gear	0	44.52
+B	priest/holy	60	281315	gear	0	4.77
+B	priest/holy	60	284197	gear	0	6.45
+B	priest/holy	60	286997	gear	0	35.415
 B	priest/discipline	12	35	mh	0	0.0
 B	priest/discipline	12	1299	gear	0	4.15
 B	priest/discipline	12	1831	mh	0	0.0
@@ -5798,63 +6242,67 @@ B	priest/discipline	12	2364	gear	0	0.828
 B	priest/discipline	12	2955	gear	0	11.298
 B	priest/discipline	12	3423	oh	0	0.0
 B	priest/discipline	12	3947	gear	0	1.38
-B	priest/discipline	12	4454	mh	0	0.5
+B	priest/discipline	12	4454	mh	0	0.75
 B	priest/discipline	12	4947	mh	0	0.0
 B	priest/discipline	12	5393	mh	0	0.0
 B	priest/discipline	12	6333	mh	0	1.24
 B	priest/discipline	12	6540	gear	12761	7.378
 B	priest/discipline	12	6691	mh	0	4.72
 B	priest/discipline	12	7355	gear	12761	8.704
-B	priest/discipline	12	7757	mh	0	10.34
+B	priest/discipline	12	7757	mh	0	10.54
 B	priest/discipline	12	9491	gear	0	8.976
 B	priest/discipline	12	9875	gear	12761	16.124
 B	priest/discipline	12	10102	gear	12761	35.686
 B	priest/discipline	12	10645	gear	0	0.0
 B	priest/discipline	12	11288	ranged	0	91.25
-B	priest/discipline	12	11808	gear	0	15.804
-B	priest/discipline	12	12015	gear	12745	12.719999999999999
-B	priest/discipline	12	12805	gear	0	0.0
-B	priest/discipline	12	13360	mh	0	8.6
-B	priest/discipline	12	14108	gear	0	5.346
-B	priest/discipline	12	14213	gear	12761	20.524
-B	priest/discipline	12	14312	gear	12761	36.874
-B	priest/discipline	12	14440	gear	0	6.6
-B	priest/discipline	12	15299	gear	0	0.414
-B	priest/discipline	12	15939	oh	12761	17.4
+B	priest/discipline	12	11807	gear	0	14.815999999999999
+B	priest/discipline	12	12014	gear	12747	11.83
+B	priest/discipline	12	12794	mh	0	0.0
+B	priest/discipline	12	13353	oh	0	27.380000000000003
+B	priest/discipline	12	14107	gear	0	30.272000000000002
+B	priest/discipline	12	14212	gear	12761	13.79
+B	priest/discipline	12	14311	gear	12761	17.956
+B	priest/discipline	12	14439	gear	0	4.8420000000000005
+B	priest/discipline	12	15283	ranged	12761	300.78599999999994
+B	priest/discipline	12	15938	oh	12761	17.4
 B	priest/discipline	12	15945	oh	0	1.74
-B	priest/discipline	12	16819	gear	0	15.624000000000002
-B	priest/discipline	12	17739	gear	0	9.142
-B	priest/discipline	12	18440	gear	0	8.616
-B	priest/discipline	12	18879	gear	0	17.46
-B	priest/discipline	12	19395	gear	0	2.43
-B	priest/discipline	12	19893	gear	0	23.0
-B	priest/discipline	12	20330	gear	0	26.326000000000004
-B	priest/discipline	12	20652	gear	12747	20.738
-B	priest/discipline	12	21500	gear	0	18.336
-B	priest/discipline	12	22085	gear	0	38.006
-B	priest/discipline	12	22678	gear	0	0.0
-B	priest/discipline	12	23177	ranged	0	202.90799999999996
-B	priest/discipline	12	212583	mh	0	1.8599999999999999
-B	priest/discipline	12	217296	gear	0	10.58
-B	priest/discipline	12	220907	gear	0	31.874000000000002
-B	priest/discipline	12	226731	gear	0	32.132000000000005
-B	priest/discipline	12	227967	gear	0	0.0
-B	priest/discipline	12	228282	gear	0	50.205999999999996
-B	priest/discipline	12	228757	mh	0	0.0
-B	priest/discipline	12	231168	gear	0	66.136
-B	priest/discipline	12	233395	gear	0	78.18799999999999
-B	priest/discipline	12	233994	gear	0	30.89
-B	priest/discipline	12	234576	mh	0	67.91
-B	priest/discipline	12	236277	gear	0	21.810000000000002
-B	priest/discipline	12	239565	gear	0	90.316
-B	priest/discipline	12	247789	ranged	0	20.4
-B	priest/discipline	12	254029	gear	0	10.036000000000001
-B	priest/discipline	12	260829	gear	0	2.024
-B	priest/discipline	12	271909	gear	0	8.68
-B	priest/discipline	12	272847	mh	0	1.93
-B	priest/discipline	12	275831	gear	0	2.0
-B	priest/discipline	12	278019	gear	0	7.72
-B	priest/discipline	12	288931	gear	0	16.0
+B	priest/discipline	12	16817	gear	0	30.201999999999998
+B	priest/discipline	12	17737	oh	0	4.640000000000001
+B	priest/discipline	12	18438	gear	0	0.0
+B	priest/discipline	12	18878	mh	0	31.76
+B	priest/discipline	12	19391	gear	0	21.826
+B	priest/discipline	12	19891	oh	0	29.16
+B	priest/discipline	12	20333	gear	0	16.66
+B	priest/discipline	12	20672	ranged	0	326.483
+B	priest/discipline	12	21522	mh	0	8.68
+B	priest/discipline	12	22231	gear	0	22.58
+B	priest/discipline	12	22711	gear	0	31.328000000000003
+B	priest/discipline	12	23237	gear	0	4.6899999999999995
+B	priest/discipline	12	213088	gear	0	6.184
+B	priest/discipline	12	217301	gear	0	7.140000000000001
+B	priest/discipline	12	221025	gear	0	30.241999999999997
+B	priest/discipline	12	226744	gear	0	15.436
+B	priest/discipline	12	227980	gear	0	42.034
+B	priest/discipline	12	228292	gear	0	19.734
+B	priest/discipline	12	229374	mh	0	6.2
+B	priest/discipline	12	231271	gear	0	26.0
+B	priest/discipline	12	233502	gear	0	8.620000000000001
+B	priest/discipline	12	234020	gear	0	31.34
+B	priest/discipline	12	234614	gear	0	0.0
+B	priest/discipline	12	236284	mh	0	139.07
+B	priest/discipline	12	239581	gear	0	65.9
+B	priest/discipline	12	249234	ranged	0	206.767
+B	priest/discipline	12	254033	gear	0	9.84
+B	priest/discipline	12	260820	gear	0	0.0
+B	priest/discipline	12	271661	gear	0	0.092
+B	priest/discipline	12	272406	gear	0	16.4
+B	priest/discipline	12	273423	gear	0	35.07
+B	priest/discipline	12	274919	ranged	0	173.11499999999998
+B	priest/discipline	12	276888	mh	0	1.3
+B	priest/discipline	12	279826	gear	0	27.612000000000002
+B	priest/discipline	12	281315	gear	0	2.028
+B	priest/discipline	12	284197	gear	0	6.524
+B	priest/discipline	12	286997	gear	0	16.596
 B	priest/discipline	25	35	mh	0	0.0
 B	priest/discipline	25	1299	gear	0	6.83
 B	priest/discipline	25	1831	mh	0	0.0
@@ -5862,63 +6310,67 @@ B	priest/discipline	25	2364	gear	0	0.882
 B	priest/discipline	25	2955	gear	0	19.576999999999998
 B	priest/discipline	25	3423	oh	0	0.0
 B	priest/discipline	25	3947	gear	0	1.47
-B	priest/discipline	25	4454	mh	0	1.58
+B	priest/discipline	25	4454	mh	0	2.37
 B	priest/discipline	25	4947	mh	0	0.0
 B	priest/discipline	25	5393	mh	0	0.0
 B	priest/discipline	25	6333	mh	0	1.74
 B	priest/discipline	25	6540	gear	12745	9.512
 B	priest/discipline	25	6691	mh	0	8.379999999999999
 B	priest/discipline	25	7355	gear	12745	9.071000000000002
-B	priest/discipline	25	7757	mh	0	22.59
+B	priest/discipline	25	7757	mh	0	14.79
 B	priest/discipline	25	9491	gear	0	18.619
 B	priest/discipline	25	9875	gear	12745	19.671
 B	priest/discipline	25	10102	gear	12745	44.194
 B	priest/discipline	25	10645	gear	0	0.0
 B	priest/discipline	25	11288	ranged	0	100.0
-B	priest/discipline	25	11808	gear	0	21.026
-B	priest/discipline	25	12015	gear	12745	21.22
-B	priest/discipline	25	12805	gear	0	0.0
-B	priest/discipline	25	13360	mh	0	20.09
-B	priest/discipline	25	14108	gear	0	11.979000000000001
-B	priest/discipline	25	14213	gear	12745	25.721
-B	priest/discipline	25	14312	gear	12745	44.706
-B	priest/discipline	25	14440	gear	0	11.430000000000001
-B	priest/discipline	25	15299	gear	0	0.441
-B	priest/discipline	25	15939	oh	12745	21.22
+B	priest/discipline	25	11807	gear	0	29.854000000000003
+B	priest/discipline	25	12014	gear	12745	19.25
+B	priest/discipline	25	12794	mh	0	0.0
+B	priest/discipline	25	13353	oh	0	43.2
+B	priest/discipline	25	14107	gear	0	35.477999999999994
+B	priest/discipline	25	14212	gear	12745	16.895000000000003
+B	priest/discipline	25	14311	gear	12745	20.769
+B	priest/discipline	25	14439	gear	0	12.043000000000001
+B	priest/discipline	25	15283	ranged	12745	332.036
+B	priest/discipline	25	15938	oh	12745	21.22
 B	priest/discipline	25	15945	oh	0	3.3200000000000003
-B	priest/discipline	25	16819	gear	0	34.816
-B	priest/discipline	25	17739	gear	0	12.253
-B	priest/discipline	25	18440	gear	0	11.064
-B	priest/discipline	25	18879	gear	0	22.79
-B	priest/discipline	25	19395	gear	0	10.799999999999999
-B	priest/discipline	25	19893	gear	0	33.5
-B	priest/discipline	25	20330	gear	0	55.178999999999995
-B	priest/discipline	25	20652	gear	12745	33.057
-B	priest/discipline	25	21500	gear	0	36.224
-B	priest/discipline	25	22085	gear	0	63.359
-B	priest/discipline	25	22678	gear	0	0.0
-B	priest/discipline	25	23177	ranged	0	220.648
-B	priest/discipline	25	212583	mh	0	2.61
-B	priest/discipline	25	217296	gear	0	12.83
-B	priest/discipline	25	220907	gear	0	44.516
-B	priest/discipline	25	226731	gear	0	41.738
-B	priest/discipline	25	227967	gear	0	0.0
-B	priest/discipline	25	228282	gear	0	55.388999999999996
-B	priest/discipline	25	228757	mh	0	0.0
-B	priest/discipline	25	231168	gear	0	78.39899999999999
-B	priest/discipline	25	233395	gear	0	87.917
-B	priest/discipline	25	233994	gear	0	44.2
-B	priest/discipline	25	234576	mh	0	79.47
-B	priest/discipline	25	236277	gear	0	34.97
-B	priest/discipline	25	239565	gear	0	97.944
-B	priest/discipline	25	247789	ranged	0	22.4
-B	priest/discipline	25	254029	gear	0	17.294
-B	priest/discipline	25	260829	gear	0	2.156
-B	priest/discipline	25	271909	gear	0	12.18
-B	priest/discipline	25	272847	mh	0	3.1399999999999997
-B	priest/discipline	25	275831	gear	0	5.5
-B	priest/discipline	25	278019	gear	0	9.219999999999999
-B	priest/discipline	25	288931	gear	0	16.0
+B	priest/discipline	25	16817	gear	0	57.393
+B	priest/discipline	25	17737	oh	0	11.040000000000001
+B	priest/discipline	25	18438	gear	0	0.0
+B	priest/discipline	25	18878	mh	0	45.660000000000004
+B	priest/discipline	25	19391	gear	0	48.379000000000005
+B	priest/discipline	25	19891	oh	0	39.86
+B	priest/discipline	25	20333	gear	0	40.949999999999996
+B	priest/discipline	25	20672	ranged	0	363.9479999999999
+B	priest/discipline	25	21522	mh	0	12.18
+B	priest/discipline	25	22231	gear	0	39.11
+B	priest/discipline	25	22711	gear	0	37.172
+B	priest/discipline	25	23237	gear	0	12.4
+B	priest/discipline	25	213088	gear	0	12.216000000000001
+B	priest/discipline	25	217301	gear	0	13.790000000000001
+B	priest/discipline	25	221025	gear	0	37.703
+B	priest/discipline	25	226744	gear	0	30.724
+B	priest/discipline	25	227980	gear	0	61.20099999999999
+B	priest/discipline	25	228292	gear	0	25.841
+B	priest/discipline	25	229374	mh	0	8.7
+B	priest/discipline	25	231271	gear	0	26.0
+B	priest/discipline	25	233502	gear	0	12.370000000000001
+B	priest/discipline	25	234020	gear	0	39.69
+B	priest/discipline	25	234614	gear	0	0.0
+B	priest/discipline	25	236284	mh	0	162.2
+B	priest/discipline	25	239581	gear	0	75.88000000000001
+B	priest/discipline	25	249234	ranged	0	226.352
+B	priest/discipline	25	254033	gear	0	14.280000000000001
+B	priest/discipline	25	260820	gear	0	0.0
+B	priest/discipline	25	271661	gear	0	0.098
+B	priest/discipline	25	272406	gear	0	27.200000000000003
+B	priest/discipline	25	273423	gear	0	54.195
+B	priest/discipline	25	274919	ranged	0	188.57999999999998
+B	priest/discipline	25	276888	mh	0	3.7800000000000002
+B	priest/discipline	25	279826	gear	0	42.048
+B	priest/discipline	25	281315	gear	0	4.182
+B	priest/discipline	25	284197	gear	0	8.626
+B	priest/discipline	25	286997	gear	0	25.929
 B	priest/discipline	34	35	mh	0	0.0
 B	priest/discipline	34	1299	gear	0	5.32
 B	priest/discipline	34	1831	mh	0	0.0
@@ -5926,63 +6378,67 @@ B	priest/discipline	34	2364	gear	0	0.558
 B	priest/discipline	34	2955	gear	0	16.183
 B	priest/discipline	34	3423	oh	0	0.0
 B	priest/discipline	34	3947	gear	0	0.9299999999999999
-B	priest/discipline	34	4454	mh	0	2.2
+B	priest/discipline	34	4454	mh	0	3.3000000000000003
 B	priest/discipline	34	4947	mh	0	0.0
 B	priest/discipline	34	5393	mh	0	0.0
 B	priest/discipline	34	6333	mh	0	0.7
 B	priest/discipline	34	6540	gear	12734	6.868
 B	priest/discipline	34	6691	mh	0	6.5
 B	priest/discipline	34	7355	gear	12761	8.059
-B	priest/discipline	34	7757	mh	0	10.999999999999998
+B	priest/discipline	34	7757	mh	0	5.949999999999999
 B	priest/discipline	34	9491	gear	0	12.770999999999999
 B	priest/discipline	34	9875	gear	12746	15.529
 B	priest/discipline	34	10102	gear	12746	35.286
 B	priest/discipline	34	10645	gear	0	0.0
 B	priest/discipline	34	11288	ranged	0	126.25
-B	priest/discipline	34	11808	gear	0	9.294
-B	priest/discipline	34	12015	gear	12746	17.3
-B	priest/discipline	34	12805	gear	0	0.0
-B	priest/discipline	34	13360	mh	0	14.05
-B	priest/discipline	34	14108	gear	0	14.781
-B	priest/discipline	34	14213	gear	12746	20.389
-B	priest/discipline	34	14312	gear	12746	35.484
-B	priest/discipline	34	14440	gear	0	9.629999999999999
-B	priest/discipline	34	15299	gear	0	0.279
-B	priest/discipline	34	15939	oh	12746	17.3
+B	priest/discipline	34	11807	gear	0	21.625999999999998
+B	priest/discipline	34	12014	gear	12746	15.629999999999999
+B	priest/discipline	34	12794	mh	0	0.0
+B	priest/discipline	34	13353	oh	0	35.629999999999995
+B	priest/discipline	34	14107	gear	0	30.342
+B	priest/discipline	34	14212	gear	12746	13.475000000000001
+B	priest/discipline	34	14311	gear	12761	16.730999999999998
+B	priest/discipline	34	14439	gear	0	11.917
+B	priest/discipline	34	15283	ranged	12746	414.38599999999997
+B	priest/discipline	34	15938	oh	12746	17.3
 B	priest/discipline	34	15945	oh	0	2.9000000000000004
-B	priest/discipline	34	16819	gear	0	25.344
-B	priest/discipline	34	17739	gear	0	5.3469999999999995
-B	priest/discipline	34	18440	gear	0	5.196
-B	priest/discipline	34	18879	gear	0	10.41
-B	priest/discipline	34	19395	gear	0	9.9
-B	priest/discipline	34	19893	gear	0	25.2
-B	priest/discipline	34	20330	gear	0	37.221000000000004
-B	priest/discipline	34	20652	gear	12746	25.993000000000002
-B	priest/discipline	34	21500	gear	0	19.586000000000002
-B	priest/discipline	34	22085	gear	0	50.841
-B	priest/discipline	34	22678	gear	0	0.0
-B	priest/discipline	34	23177	ranged	0	278.668
-B	priest/discipline	34	212583	mh	0	1.0499999999999998
-B	priest/discipline	34	217296	gear	0	8.15
-B	priest/discipline	34	220907	gear	0	30.704
-B	priest/discipline	34	226731	gear	0	31.332
-B	priest/discipline	34	227967	gear	0	0.0
-B	priest/discipline	34	228282	gear	0	43.891
-B	priest/discipline	34	228757	mh	0	0.0
-B	priest/discipline	34	231168	gear	0	63.681
-B	priest/discipline	34	233395	gear	0	76.373
-B	priest/discipline	34	233994	gear	0	35.66
-B	priest/discipline	34	234576	mh	0	65.31
-B	priest/discipline	34	236277	gear	0	28.83
-B	priest/discipline	34	239565	gear	0	87.34599999999999
-B	priest/discipline	34	247789	ranged	0	28.4
-B	priest/discipline	34	254029	gear	0	8.256
-B	priest/discipline	34	260829	gear	0	1.3639999999999999
-B	priest/discipline	34	271909	gear	0	4.8999999999999995
-B	priest/discipline	34	272847	mh	0	3.0999999999999996
-B	priest/discipline	34	275831	gear	0	2.8499999999999996
-B	priest/discipline	34	278019	gear	0	6.1
-B	priest/discipline	34	288931	gear	0	16.0
+B	priest/discipline	34	16817	gear	0	42.207
+B	priest/discipline	34	17737	oh	0	8.559999999999999
+B	priest/discipline	34	18438	gear	0	0.0
+B	priest/discipline	34	18878	mh	0	32.489999999999995
+B	priest/discipline	34	19391	gear	0	29.950999999999997
+B	priest/discipline	34	19891	oh	0	32.07
+B	priest/discipline	34	20333	gear	0	27.75
+B	priest/discipline	34	20672	ranged	0	452.67299999999994
+B	priest/discipline	34	21522	mh	0	4.8999999999999995
+B	priest/discipline	34	22231	gear	0	24.97
+B	priest/discipline	34	22711	gear	0	30.008
+B	priest/discipline	34	23237	gear	0	8.1
+B	priest/discipline	34	213088	gear	0	8.824
+B	priest/discipline	34	217301	gear	0	6.4399999999999995
+B	priest/discipline	34	221025	gear	0	29.156999999999996
+B	priest/discipline	34	226744	gear	0	21.975999999999996
+B	priest/discipline	34	227980	gear	0	48.509
+B	priest/discipline	34	228292	gear	0	11.738999999999999
+B	priest/discipline	34	229374	mh	0	3.5
+B	priest/discipline	34	231271	gear	0	26.0
+B	priest/discipline	34	233502	gear	0	8.85
+B	priest/discipline	34	234020	gear	0	34.01
+B	priest/discipline	34	234614	gear	0	0.0
+B	priest/discipline	34	236284	mh	0	148.6
+B	priest/discipline	34	239581	gear	0	60.55
+B	priest/discipline	34	249234	ranged	0	285.10699999999997
+B	priest/discipline	34	254033	gear	0	16.04
+B	priest/discipline	34	260820	gear	0	0.0
+B	priest/discipline	34	271661	gear	0	0.062
+B	priest/discipline	34	272406	gear	0	21.98
+B	priest/discipline	34	273423	gear	0	37.125
+B	priest/discipline	34	274919	ranged	0	238.33499999999998
+B	priest/discipline	34	276888	mh	0	3.34
+B	priest/discipline	34	279826	gear	0	33.032
+B	priest/discipline	34	281315	gear	0	2.268
+B	priest/discipline	34	284197	gear	0	3.854
+B	priest/discipline	34	286997	gear	0	30.281000000000002
 B	priest/discipline	45	35	mh	0	0.0
 B	priest/discipline	45	1299	gear	0	11.15
 B	priest/discipline	45	1831	mh	0	0.0
@@ -5990,63 +6446,67 @@ B	priest/discipline	45	2364	gear	0	2.16
 B	priest/discipline	45	2955	gear	0	29.66
 B	priest/discipline	45	3423	oh	0	0.0
 B	priest/discipline	45	3947	gear	0	3.5999999999999996
-B	priest/discipline	45	4454	mh	0	0.5
+B	priest/discipline	45	4454	mh	0	0.75
 B	priest/discipline	45	4947	mh	0	0.0
 B	priest/discipline	45	5393	mh	0	0.0
 B	priest/discipline	45	6333	mh	0	4.0
 B	priest/discipline	45	6540	gear	12745	13.76
 B	priest/discipline	45	6691	mh	0	13.0
 B	priest/discipline	45	7355	gear	12718	14.68
-B	priest/discipline	45	7757	mh	0	30.5
+B	priest/discipline	45	7757	mh	0	34.0
 B	priest/discipline	45	9491	gear	0	23.77
 B	priest/discipline	45	9875	gear	12748	29.98
 B	priest/discipline	45	10102	gear	12748	65.22
 B	priest/discipline	45	10645	gear	0	0.0
 B	priest/discipline	45	11288	ranged	0	194.5
-B	priest/discipline	45	11808	gear	0	48.879999999999995
-B	priest/discipline	45	12015	gear	12748	29.6
-B	priest/discipline	45	12805	gear	0	0.0
-B	priest/discipline	45	13360	mh	0	22.5
-B	priest/discipline	45	14108	gear	0	9.120000000000001
-B	priest/discipline	45	14213	gear	12748	38.480000000000004
-B	priest/discipline	45	14312	gear	12748	65.78
-B	priest/discipline	45	14440	gear	0	17.1
-B	priest/discipline	45	15299	gear	0	1.08
-B	priest/discipline	45	15939	oh	12748	29.6
+B	priest/discipline	45	11807	gear	0	39.019999999999996
+B	priest/discipline	45	12014	gear	12718	27.9
+B	priest/discipline	45	12794	mh	0	0.0
+B	priest/discipline	45	13353	oh	0	49.72
+B	priest/discipline	45	14107	gear	0	44.56
+B	priest/discipline	45	14212	gear	12718	25.900000000000002
+B	priest/discipline	45	14311	gear	12718	31.619999999999997
+B	priest/discipline	45	14439	gear	0	9.64
+B	priest/discipline	45	15283	ranged	12748	644.76
+B	priest/discipline	45	15938	oh	12748	29.6
 B	priest/discipline	45	15945	oh	0	4.5
-B	priest/discipline	45	16819	gear	0	40.980000000000004
-B	priest/discipline	45	17739	gear	0	28.439999999999998
-B	priest/discipline	45	18440	gear	0	25.92
-B	priest/discipline	45	18879	gear	0	53.2
-B	priest/discipline	45	19395	gear	0	8.1
-B	priest/discipline	45	19893	gear	0	50.1
-B	priest/discipline	45	20330	gear	0	72.17
-B	priest/discipline	45	20652	gear	12748	50.16
-B	priest/discipline	45	21500	gear	0	54.82
-B	priest/discipline	45	22085	gear	0	75.52000000000001
-B	priest/discipline	45	22678	gear	0	0.0
-B	priest/discipline	45	23177	ranged	0	428.08
-B	priest/discipline	45	212583	mh	0	6.0
-B	priest/discipline	45	217296	gear	0	23.0
-B	priest/discipline	45	220907	gear	0	68.08
-B	priest/discipline	45	226731	gear	0	53.34
-B	priest/discipline	45	227967	gear	0	0.0
-B	priest/discipline	45	228282	gear	0	82.32
-B	priest/discipline	45	228757	mh	0	0.0
-B	priest/discipline	45	231168	gear	0	113.72
-B	priest/discipline	45	233395	gear	0	128.92000000000002
-B	priest/discipline	45	233994	gear	0	46.400000000000006
-B	priest/discipline	45	234576	mh	0	105.4
-B	priest/discipline	45	236277	gear	0	39.15
-B	priest/discipline	45	239565	gear	0	143.34
-B	priest/discipline	45	247789	ranged	0	44.0
-B	priest/discipline	45	254029	gear	0	30.020000000000003
-B	priest/discipline	45	260829	gear	0	5.279999999999999
-B	priest/discipline	45	271909	gear	0	28.0
-B	priest/discipline	45	272847	mh	0	7.6
-B	priest/discipline	45	275831	gear	0	5.5
-B	priest/discipline	45	278019	gear	0	16.0
-B	priest/discipline	45	288931	gear	0	16.0
+B	priest/discipline	45	16817	gear	0	66.14
+B	priest/discipline	45	17737	oh	0	15.280000000000001
+B	priest/discipline	45	18438	gear	0	0.0
+B	priest/discipline	45	18878	mh	0	54.7
+B	priest/discipline	45	19391	gear	0	65.22
+B	priest/discipline	45	19891	oh	0	54.2
+B	priest/discipline	45	20333	gear	0	45.6
+B	priest/discipline	45	20672	ranged	0	700.53
+B	priest/discipline	45	21522	mh	0	28.0
+B	priest/discipline	45	22231	gear	0	61.099999999999994
+B	priest/discipline	45	22711	gear	0	47.36
+B	priest/discipline	45	23237	gear	0	14.6
+B	priest/discipline	45	213088	gear	0	16.28
+B	priest/discipline	45	217301	gear	0	21.700000000000003
+B	priest/discipline	45	221025	gear	0	48.239999999999995
+B	priest/discipline	45	226744	gear	0	41.019999999999996
+B	priest/discipline	45	227980	gear	0	75.68
+B	priest/discipline	45	228292	gear	0	60.28
+B	priest/discipline	45	229374	mh	0	20.0
+B	priest/discipline	45	231271	gear	0	26.0
+B	priest/discipline	45	233502	gear	0	30.1
+B	priest/discipline	45	234020	gear	0	52.9
+B	priest/discipline	45	234614	gear	0	0.0
+B	priest/discipline	45	236284	mh	0	202.0
+B	priest/discipline	45	239581	gear	0	111.9
+B	priest/discipline	45	249234	ranged	0	437.87
+B	priest/discipline	45	254033	gear	0	12.8
+B	priest/discipline	45	260820	gear	0	0.0
+B	priest/discipline	45	271661	gear	0	0.24
+B	priest/discipline	45	272406	gear	0	32.5
+B	priest/discipline	45	273423	gear	0	83.5
+B	priest/discipline	45	274919	ranged	0	366.69
+B	priest/discipline	45	276888	mh	0	2.7
+B	priest/discipline	45	279826	gear	0	55.739999999999995
+B	priest/discipline	45	281315	gear	0	5.460000000000001
+B	priest/discipline	45	284197	gear	0	20.08
+B	priest/discipline	45	286997	gear	0	20.37
 B	priest/discipline	55	35	mh	0	0.0
 B	priest/discipline	55	1299	gear	0	7.77
 B	priest/discipline	55	1831	mh	0	0.0
@@ -6054,63 +6514,67 @@ B	priest/discipline	55	2364	gear	0	0.828
 B	priest/discipline	55	2955	gear	0	22.478
 B	priest/discipline	55	3423	oh	0	0.0
 B	priest/discipline	55	3947	gear	0	1.38
-B	priest/discipline	55	4454	mh	0	1.9
+B	priest/discipline	55	4454	mh	0	2.8499999999999996
 B	priest/discipline	55	4947	mh	0	0.0
 B	priest/discipline	55	5393	mh	0	0.0
 B	priest/discipline	55	6333	mh	0	2.0
 B	priest/discipline	55	6540	gear	12745	9.088
 B	priest/discipline	55	6691	mh	0	9.8
 B	priest/discipline	55	7355	gear	12747	8.774000000000001
-B	priest/discipline	55	7757	mh	0	21.25
+B	priest/discipline	55	7757	mh	0	17.0
 B	priest/discipline	55	9491	gear	0	18.776
 B	priest/discipline	55	9875	gear	12747	19.084
 B	priest/discipline	55	10102	gear	12747	42.946000000000005
 B	priest/discipline	55	10645	gear	0	0.0
 B	priest/discipline	55	11288	ranged	0	149.0
-B	priest/discipline	55	11808	gear	0	23.404
-B	priest/discipline	55	12015	gear	12747	20.7
-B	priest/discipline	55	12805	gear	0	0.0
-B	priest/discipline	55	13360	mh	0	20.2
-B	priest/discipline	55	14108	gear	0	13.745999999999999
-B	priest/discipline	55	14213	gear	12747	24.954
-B	priest/discipline	55	14312	gear	12747	43.394000000000005
-B	priest/discipline	55	14440	gear	0	13.079999999999998
-B	priest/discipline	55	15299	gear	0	0.414
-B	priest/discipline	55	15939	oh	12747	20.7
+B	priest/discipline	55	11807	gear	0	31.116
+B	priest/discipline	55	12014	gear	12747	18.75
+B	priest/discipline	55	12794	mh	0	0.0
+B	priest/discipline	55	13353	oh	0	43.91
+B	priest/discipline	55	14107	gear	0	34.012
+B	priest/discipline	55	14212	gear	12747	16.41
+B	priest/discipline	55	14311	gear	12747	20.176
+B	priest/discipline	55	14439	gear	0	12.642
+B	priest/discipline	55	15283	ranged	12747	490.584
+B	priest/discipline	55	15938	oh	12747	20.7
 B	priest/discipline	55	15945	oh	0	3.9
-B	priest/discipline	55	16819	gear	0	36.623999999999995
-B	priest/discipline	55	17739	gear	0	13.702
-B	priest/discipline	55	18440	gear	0	12.036
-B	priest/discipline	55	18879	gear	0	25.06
-B	priest/discipline	55	19395	gear	0	17.099999999999998
-B	priest/discipline	55	19893	gear	0	40.1
-B	priest/discipline	55	20330	gear	0	56.846
-B	priest/discipline	55	20652	gear	12747	32.038000000000004
-B	priest/discipline	55	21500	gear	0	38.426
-B	priest/discipline	55	22085	gear	0	68.826
-B	priest/discipline	55	22678	gear	0	0.0
-B	priest/discipline	55	23177	ranged	0	327.47200000000004
-B	priest/discipline	55	212583	mh	0	3.0
-B	priest/discipline	55	217296	gear	0	14.0
-B	priest/discipline	55	220907	gear	0	46.824
-B	priest/discipline	55	226731	gear	0	40.842000000000006
-B	priest/discipline	55	227967	gear	0	0.0
-B	priest/discipline	55	228282	gear	0	57.806
-B	priest/discipline	55	228757	mh	0	0.0
-B	priest/discipline	55	231168	gear	0	80.746
-B	priest/discipline	55	233395	gear	0	93.298
-B	priest/discipline	55	233994	gear	0	44.199999999999996
-B	priest/discipline	55	234576	mh	0	83.7
-B	priest/discipline	55	236277	gear	0	36.099999999999994
-B	priest/discipline	55	239565	gear	0	103.82599999999998
-B	priest/discipline	55	247789	ranged	0	33.6
-B	priest/discipline	55	254029	gear	0	17.305999999999997
-B	priest/discipline	55	260829	gear	0	2.024
-B	priest/discipline	55	271909	gear	0	14.0
-B	priest/discipline	55	272847	mh	0	6.1
-B	priest/discipline	55	275831	gear	0	4.75
-B	priest/discipline	55	278019	gear	0	10.0
-B	priest/discipline	55	288931	gear	0	16.0
+B	priest/discipline	55	16817	gear	0	59.622
+B	priest/discipline	55	17737	oh	0	15.28
+B	priest/discipline	55	18438	gear	0	0.0
+B	priest/discipline	55	18878	mh	0	44.15
+B	priest/discipline	55	19391	gear	0	55.675999999999995
+B	priest/discipline	55	19891	oh	0	46.050000000000004
+B	priest/discipline	55	20333	gear	0	43.2
+B	priest/discipline	55	20672	ranged	0	537.122
+B	priest/discipline	55	21522	mh	0	14.0
+B	priest/discipline	55	22231	gear	0	44.459999999999994
+B	priest/discipline	55	22711	gear	0	36.908
+B	priest/discipline	55	23237	gear	0	13.6
+B	priest/discipline	55	213088	gear	0	12.704
+B	priest/discipline	55	217301	gear	0	13.649999999999999
+B	priest/discipline	55	221025	gear	0	37.302
+B	priest/discipline	55	226744	gear	0	32.116
+B	priest/discipline	55	227980	gear	0	61.844
+B	priest/discipline	55	228292	gear	0	28.474
+B	priest/discipline	55	229374	mh	0	10.0
+B	priest/discipline	55	231271	gear	0	26.0
+B	priest/discipline	55	233502	gear	0	20.6
+B	priest/discipline	55	234020	gear	0	46.2
+B	priest/discipline	55	234614	gear	0	0.0
+B	priest/discipline	55	236284	mh	0	183.5
+B	priest/discipline	55	239581	gear	0	76.21000000000001
+B	priest/discipline	55	249234	ranged	0	336.028
+B	priest/discipline	55	254033	gear	0	15.44
+B	priest/discipline	55	260820	gear	0	0.0
+B	priest/discipline	55	271661	gear	0	0.092
+B	priest/discipline	55	272406	gear	0	31.9
+B	priest/discipline	55	273423	gear	0	57.45
+B	priest/discipline	55	274919	ranged	0	280.42
+B	priest/discipline	55	276888	mh	0	3.8
+B	priest/discipline	55	279826	gear	0	43.952
+B	priest/discipline	55	281315	gear	0	3.6779999999999995
+B	priest/discipline	55	284197	gear	0	9.564
+B	priest/discipline	55	286997	gear	0	28.496
 B	priest/discipline	60	35	mh	0	0.0
 B	priest/discipline	60	1299	gear	0	4.5200000000000005
 B	priest/discipline	60	1831	mh	0	0.0
@@ -6118,61 +6582,65 @@ B	priest/discipline	60	2364	gear	0	0.378
 B	priest/discipline	60	2955	gear	0	14.103
 B	priest/discipline	60	3423	oh	0	0.0
 B	priest/discipline	60	3947	gear	0	0.63
-B	priest/discipline	60	4454	mh	0	2.2
+B	priest/discipline	60	4454	mh	0	3.3000000000000003
 B	priest/discipline	60	4947	mh	0	0.0
 B	priest/discipline	60	5393	mh	0	0.0
 B	priest/discipline	60	6333	mh	0	0.4
 B	priest/discipline	60	6540	gear	12734	6.588
 B	priest/discipline	60	6691	mh	0	5.6000000000000005
 B	priest/discipline	60	7355	gear	12734	7.399
-B	priest/discipline	60	7757	mh	0	8.15
+B	priest/discipline	60	7757	mh	0	3.4000000000000004
 B	priest/discipline	60	9491	gear	0	10.751
 B	priest/discipline	60	9875	gear	12734	14.609
 B	priest/discipline	60	10102	gear	12746	32.246
 B	priest/discipline	60	10645	gear	0	0.0
 B	priest/discipline	60	11288	ranged	0	142.0
-B	priest/discipline	60	11808	gear	0	5.554
-B	priest/discipline	60	12015	gear	12746	16.1
-B	priest/discipline	60	12805	gear	0	0.0
-B	priest/discipline	60	13360	mh	0	12.100000000000001
-B	priest/discipline	60	14108	gear	0	14.271
-B	priest/discipline	60	14213	gear	12734	19.029
-B	priest/discipline	60	14312	gear	12734	33.344
-B	priest/discipline	60	14440	gear	0	8.430000000000001
-B	priest/discipline	60	15299	gear	0	0.189
-B	priest/discipline	60	15939	oh	12746	16.1
+B	priest/discipline	60	11807	gear	0	18.466
+B	priest/discipline	60	12014	gear	12746	14.55
+B	priest/discipline	60	12794	mh	0	0.0
+B	priest/discipline	60	13353	oh	0	31.51
+B	priest/discipline	60	14107	gear	0	26.462000000000003
+B	priest/discipline	60	14212	gear	12734	12.735
+B	priest/discipline	60	14311	gear	12734	15.651
+B	priest/discipline	60	14439	gear	0	11.167000000000002
+B	priest/discipline	60	15283	ranged	12734	465.08
+B	priest/discipline	60	15938	oh	12746	16.1
 B	priest/discipline	60	15945	oh	0	2.6
-B	priest/discipline	60	16819	gear	0	23.823999999999998
-B	priest/discipline	60	17739	gear	0	3.1770000000000005
-B	priest/discipline	60	18440	gear	0	3.186
-B	priest/discipline	60	18879	gear	0	6.3100000000000005
-B	priest/discipline	60	19395	gear	0	18.0
-B	priest/discipline	60	19893	gear	0	26.1
-B	priest/discipline	60	20330	gear	0	34.871
-B	priest/discipline	60	20652	gear	12746	23.663
-B	priest/discipline	60	21500	gear	0	18.726
-B	priest/discipline	60	22085	gear	0	51.801
-B	priest/discipline	60	22678	gear	0	0.0
-B	priest/discipline	60	23177	ranged	0	312.24
-B	priest/discipline	60	212583	mh	0	0.6000000000000001
-B	priest/discipline	60	217296	gear	0	6.8
-B	priest/discipline	60	220907	gear	0	30.074
-B	priest/discipline	60	226731	gear	0	28.442
-B	priest/discipline	60	227967	gear	0	0.0
-B	priest/discipline	60	228282	gear	0	40.281
-B	priest/discipline	60	228757	mh	0	0.0
-B	priest/discipline	60	231168	gear	0	58.221000000000004
-B	priest/discipline	60	233395	gear	0	73.77300000000001
-B	priest/discipline	60	233994	gear	0	37.2
-B	priest/discipline	60	234576	mh	0	64.9
-B	priest/discipline	60	236277	gear	0	26.55
-B	priest/discipline	60	239565	gear	0	83.676
-B	priest/discipline	60	247789	ranged	0	32.0
-B	priest/discipline	60	254029	gear	0	5.706
-B	priest/discipline	60	260829	gear	0	0.924
-B	priest/discipline	60	271909	gear	0	2.8000000000000003
-B	priest/discipline	60	272847	mh	0	6.5
-B	priest/discipline	60	275831	gear	0	2.25
-B	priest/discipline	60	278019	gear	0	5.2
-B	priest/discipline	60	288931	gear	0	16.0
+B	priest/discipline	60	16817	gear	0	41.097
+B	priest/discipline	60	17737	oh	0	10.48
+B	priest/discipline	60	18438	gear	0	0.0
+B	priest/discipline	60	18878	mh	0	29.25
+B	priest/discipline	60	19391	gear	0	35.951
+B	priest/discipline	60	19891	oh	0	33.15
+B	priest/discipline	60	20333	gear	0	27.6
+B	priest/discipline	60	20672	ranged	0	507.69
+B	priest/discipline	60	21522	mh	0	2.8000000000000003
+B	priest/discipline	60	22231	gear	0	24.16
+B	priest/discipline	60	22711	gear	0	27.907999999999998
+B	priest/discipline	60	23237	gear	0	10.6
+B	priest/discipline	60	213088	gear	0	7.504
+B	priest/discipline	60	217301	gear	0	4.55
+B	priest/discipline	60	221025	gear	0	26.777
+B	priest/discipline	60	226744	gear	0	18.666
+B	priest/discipline	60	227980	gear	0	44.019
+B	priest/discipline	60	228292	gear	0	7.099
+B	priest/discipline	60	229374	mh	0	2.0
+B	priest/discipline	60	231271	gear	0	26.0
+B	priest/discipline	60	233502	gear	0	10.8
+B	priest/discipline	60	234020	gear	0	35.6
+B	priest/discipline	60	234614	gear	0	0.0
+B	priest/discipline	60	236284	mh	0	161.5
+B	priest/discipline	60	239581	gear	0	51.36
+B	priest/discipline	60	249234	ranged	0	320.36
+B	priest/discipline	60	254033	gear	0	15.64
+B	priest/discipline	60	260820	gear	0	0.0
+B	priest/discipline	60	271661	gear	0	0.042
+B	priest/discipline	60	272406	gear	0	23.9
+B	priest/discipline	60	273423	gear	0	31.275
+B	priest/discipline	60	274919	ranged	0	267.32
+B	priest/discipline	60	276888	mh	0	3.1
+B	priest/discipline	60	279826	gear	0	29.502
+B	priest/discipline	60	281315	gear	0	1.7280000000000002
+B	priest/discipline	60	284197	gear	0	2.314
+B	priest/discipline	60	286997	gear	0	29.771000000000004
 ]===]
