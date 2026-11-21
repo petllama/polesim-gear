@@ -165,6 +165,6 @@ return {
 		local f = assert(io.open("PoleSimGear/PoleSimGear.toc"))
 		local toc = f:read("*a")
 		f:close()
-		T.ok(toc:find("TabSources.lua\r?\nMinimap.lua"), "Minimap.lua right after the window files")
+		T.ok(toc:find("TabWeights.lua\r?\nMinimap.lua"), "Minimap.lua right after the window files")
 	end,
 }

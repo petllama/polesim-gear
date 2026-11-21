@@ -1,0 +1,28 @@
+local T = require("t")
+local F = require("winfix")
+return {
+	bands = function()
+		local fx = F.load()
+		local ns, U = fx.ns, fx.U
+		fx.open()
+		ns.Window.SetTab("weights")
+		local p = ns.Window.Panel("weights")
+		local bands = ns.View.Bands("priest", "shadow")
+		local i = ns.View.BandIndex(bands, 20)
+		T.ok(U.texts(p):find(string.format("Levels %d%%-%d %%(your band%%)", bands[i].lo, bands[i].upTo)), U.texts(p))
+		T.ok(U.texts(p):find("An item's score = its stats x these weights", 1, true))
+		local rows = U.rows(p.list)
+		T.eq(#rows, #ns.View.WeightRows(bands[i].w))
+		T.ok(rows[1].value.text:match("^%d"), rows[1].value.text)
+		T.eq(rows[1].bar.w, 120, "the largest weight fills the bar")
+		T.ok(bands[i + 1], "the fixture's band has a next one")
+		U.button(p, ">"):Click()
+		T.ok(U.texts(p):find(string.format("Levels %d%%-%d", bands[i + 1].lo, bands[i + 1].upTo)))
+		T.ok(not U.texts(p):find("your band", 1, true))
+		U.button(p, "<"):Click()
+		T.ok(U.texts(p):find("your band", 1, true))
+		SlashCmdList.POLESIMGEAR(""); fx.open()
+		T.ok(U.texts(ns.Window.Panel("weights")):find("your band", 1, true), "back on your band after closing")
+		fx.done()
+	end,
+}
