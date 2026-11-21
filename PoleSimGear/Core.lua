@@ -18,6 +18,15 @@ function ns.Fire(msg, ...)
 	end
 end
 
+-- Report an error to the client's handler once per key (an item link) per session: glue that runs on
+-- every redraw must not flood the handler with the same error.
+local reported = {}
+function ns.ReportOnce(key, err)
+	if reported[key] then return end
+	reported[key] = true
+	geterrorhandler()(err)
+end
+
 local frame = CreateFrame("Frame")
 ns._frame = frame
 local handlers = {}

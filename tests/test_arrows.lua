@@ -146,6 +146,43 @@ return {
 		T.eq(bag1.items[1].arrow, nil, "and not the hidden ones")
 		_G.ContainerFrameContainer, _G.ContainerFrameCombinedBags, _G.C_Container = nil, nil, nil
 	end,
+	-- One link that throws: the other buttons still paint, and its error is reported once per session
+	-- (not on every bag update).
+	paint_error_isolated_per_button = function()
+		local links = { [0] = { "up", "boom", "up" } }
+		_G.C_Container = { GetContainerItemLink = function(bag, slot) return links[bag][slot] end }
+		local f = { items = {} }
+		for i = 1, 3 do f.items[i] = button({ GetBagID = function() return 0 end, GetID = function() return i end }) end
+		function f:EnumerateValidItems() return ipairs(self.items) end
+		function f:UpdateItems() end
+		function f:IsShown() return true end
+		_G.ContainerFrameContainer = { ContainerFrames = { f } }
+		local ns = live({ up = head(6) })
+		local inst = ns.Live.Instance
+		ns.Live.Instance = function(link) if link == "boom" then error("bad item") end return inst(link) end
+		local errors = {}
+		_G.geterrorhandler = function() return function(e) errors[#errors + 1] = e end end
+		login(ns)
+		f:UpdateItems()
+		T.eq(arrow(f.items[1]), true); T.eq(arrow(f.items[3]), true, "painted after the throwing button")
+		T.eq(arrow(f.items[2]), false)
+		T.eq(#errors, 1)
+		T.ok(tostring(errors[1]):find("bad item", 1, true), tostring(errors[1]))
+		f:UpdateItems(); ns.Arrows.Redraw()
+		T.eq(#errors, 1, "reported once per session")
+		_G.ContainerFrameContainer, _G.C_Container = nil, nil
+	end,
+	-- A redraw that throws goes to the error handler (not swallowed); the other redraws still run.
+	redraw_errors_reported = function()
+		local ns = live({})
+		local errors, ran = {}, false
+		_G.geterrorhandler = function() return function(e) errors[#errors + 1] = e end end
+		ns.Arrows.OnRedraw(function() error("redraw boom") end)
+		ns.Arrows.OnRedraw(function() ran = true end)
+		ns.Arrows.Redraw()
+		T.ok(ran); T.eq(#errors, 1)
+		T.ok(tostring(errors[1]):find("redraw boom", 1, true))
+	end,
 	-- Bagnon (BagBrother): Item:Update(info) sets self.info; our hook paints after it.
 	bagnon = function()
 		local updates = 0

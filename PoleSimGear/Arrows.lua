@@ -48,10 +48,26 @@ function Arrows.Mark(button, show)
 	if t then t:SetShown(show and true or false) end
 end
 
+-- Paint one button for one link (verdict: Arrows.Verdict, or another function of the link). An error
+-- is trapped per button, so the other buttons still paint; it is reported once per link per session
+-- (shared with the tooltip's reporter), and the button keeps no arrow.
+local function paint(button, link, verdict)
+	Arrows.Mark(button, link and (verdict or Arrows.Verdict)(link))
+end
+function Arrows.Paint(button, link, verdict)
+	local ok, err = pcall(paint, button, link, verdict)
+	if ok then return end
+	pcall(Arrows.Mark, button, false)
+	ns.ReportOnce(link or "?", err)
+end
+
 local redraws = {}
 function Arrows.OnRedraw(fn) redraws[#redraws + 1] = fn end
 function Arrows.Redraw()
-	for _, fn in ipairs(redraws) do pcall(fn) end
+	for _, fn in ipairs(redraws) do
+		local ok, err = pcall(fn)
+		if not ok then geterrorhandler()(err) end
+	end
 end
 
 -- One redraw shortly after a burst of changes.
@@ -83,8 +99,7 @@ end)
 local hooked = {}
 local function paintContainer(frame)
 	for _, button in frame:EnumerateValidItems() do
-		local link = C_Container.GetContainerItemLink(button:GetBagID(), button:GetID())
-		Arrows.Mark(button, link and Arrows.Verdict(link))
+		Arrows.Paint(button, C_Container.GetContainerItemLink(button:GetBagID(), button:GetID()))
 	end
 end
 local function containerFrames()
@@ -115,8 +130,7 @@ local function hookBagnon()
 	local Item = type(B) == "table" and B.Item
 	if hooked.bagnon or not (type(Item) == "table" and type(Item.Update) == "function") then return end
 	hooksecurefunc(Item, "Update", function(self)
-		local link = type(self.info) == "table" and self.info.hyperlink
-		Arrows.Mark(self, link and Arrows.Verdict(link))
+		Arrows.Paint(self, type(self.info) == "table" and self.info.hyperlink or nil)
 	end)
 	hooked.bagnon = true
 end
@@ -137,7 +151,7 @@ end)
 -- sets frame.rollID, then shows the frame; the item icon is the frame's IconFrame button.
 local function paintRoll(frame)
 	local link = frame.rollID and GetLootRollItemLink(frame.rollID)
-	if frame.IconFrame then Arrows.Mark(frame.IconFrame, link and Arrows.Verdict(link)) end
+	if frame.IconFrame then Arrows.Paint(frame.IconFrame, link or nil) end
 end
 ns.RegisterEvent("PLAYER_LOGIN", function()
 	if hooked.rolls then return end
@@ -165,8 +179,7 @@ local function paintMerchant()
 		local b = _G["MerchantItem" .. i .. "ItemButton"]
 		if b then
 			local index = ((MerchantFrame.page or 1) - 1) * per + i
-			local link = MerchantFrame.selectedTab == 1 and b:IsShown() and GetMerchantItemLink(index)
-			Arrows.Mark(b, link and Arrows.Verdict(link))
+			Arrows.Paint(b, MerchantFrame.selectedTab == 1 and b:IsShown() and GetMerchantItemLink(index) or nil)
 		end
 	end
 end
@@ -185,8 +198,7 @@ local function paintOpenMail()
 	for i = 1, ATTACHMENTS_MAX_RECEIVE or 16 do
 		local b = _G["OpenMailAttachmentButton" .. i]
 		if b then
-			local link = id and b:IsShown() and GetInboxItemLink(id, i)
-			Arrows.Mark(b, link and Arrows.Verdict(link))
+			Arrows.Paint(b, id and b:IsShown() and GetInboxItemLink(id, i) or nil)
 		end
 	end
 end
@@ -197,8 +209,7 @@ local function paintInbox()
 		local b = _G["MailItem" .. i .. "Button"]
 		if b then
 			local index = ((InboxFrame.pageNum or 1) - 1) * per + i
-			local link = b:IsShown() and select(15, GetInboxHeaderInfo(index))
-			Arrows.Mark(b, link and Arrows.Verdict(link))
+			Arrows.Paint(b, b:IsShown() and select(15, GetInboxHeaderInfo(index)) or nil)
 		end
 	end
 end
@@ -218,25 +229,27 @@ end)
 -- is an index into the list's getEntry (AuctionHouseItemListMixin: CreateIndexRangeDataProvider; the
 -- table builder sets row.rowData from it in its own callback, which may run after ours). Browse rows
 -- carry an itemKey, the item buy list one auction (with its link) per row.
+-- Each list: its frame, and entry -> the item (id or link) and the verdict for it.
 local AH_LISTS = {
 	{ "BrowseResultsFrame", function(d)
 		local key = type(d) == "table" and d.itemKey
-		return key and key.itemID and Arrows.VerdictByID(key.itemID)
+		return key and key.itemID, Arrows.VerdictByID
 	end },
-	{ "ItemBuyFrame", function(d) return type(d) == "table" and d.itemLink and Arrows.Verdict(d.itemLink) end },
+	{ "ItemBuyFrame", function(d) return type(d) == "table" and d.itemLink, Arrows.Verdict end },
 }
-local function paintRow(list, verdict, row, data)
+local function paintRow(list, item, row, data)
 	local d = type(data) == "number" and type(list.getEntry) == "function" and list.getEntry(data) or row.rowData
-	Arrows.Mark(row, verdict(d))
+	local key, verdict = item(d)
+	Arrows.Paint(row, key or nil, verdict)
 end
 local function hookAuctionHouse()
 	local AH = AuctionHouseFrame
 	if hooked.ah or not (AH and AH.BrowseResultsFrame and AH.ItemBuyFrame and ScrollUtil) then return end
 	for _, l in ipairs(AH_LISTS) do
-		local list, verdict = AH[l[1]].ItemList, l[2]
+		local list, item = AH[l[1]].ItemList, l[2]
 		-- No iterateExisting: it calls ScrollBox:ForEachFrame, which needs the view the list makes on Init.
 		ScrollUtil.AddInitializedFrameCallback(list.ScrollBox, function(_, row, data)
-			paintRow(list, verdict, row, data)
+			paintRow(list, item, row, data)
 		end, Arrows)
 	end
 	hooked.ah = true
@@ -245,10 +258,10 @@ Arrows.OnRedraw(function()
 	local AH = AuctionHouseFrame
 	if not (hooked.ah and AH:IsShown()) then return end
 	for _, l in ipairs(AH_LISTS) do
-		local list, verdict = AH[l[1]].ItemList, l[2]
+		local list, item = AH[l[1]].ItemList, l[2]
 		local box = list.ScrollBox
 		if box:GetView() then
-			box:ForEachFrame(function(row, data) paintRow(list, verdict, row, data) end)
+			box:ForEachFrame(function(row, data) paintRow(list, item, row, data) end)
 		end
 	end
 end)

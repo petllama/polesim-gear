@@ -100,7 +100,6 @@ local function forbidden(tooltip)
 	return not ok or secret(f) or f
 end
 
-local reported = {} -- link -> true: its error was reported
 local function str(x) return type(x) == "string" and not secret(x) and x ~= "" and x or nil end
 
 -- The item link from the post-call's tooltip data (the GUID of a bag/worn item, or its hyperlink, read
@@ -124,10 +123,7 @@ local function onItem(tooltip, data)
 	local link = linkOf(tooltip, data)
 	if not link then return end
 	local ok2, err = pcall(Tooltip.Add, tooltip, link)
-	if not ok2 and not reported[link] then -- once per link per session, not on every redraw
-		reported[link] = true
-		geterrorhandler()(err)
-	end
+	if not ok2 then ns.ReportOnce(link, err) end -- once per link per session, not on every redraw
 end
 
 if TooltipDataProcessor and TooltipDataProcessor.AddTooltipPostCall and TooltipUtil and TooltipUtil.GetDisplayedItem

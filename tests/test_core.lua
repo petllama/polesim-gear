@@ -26,6 +26,15 @@ return {
 		ns._frame.scripts.OnEvent(ns._frame, "BAG_UPDATE")
 		T.ok(ran, "the next handler still runs"); T.eq(#errors, 1)
 	end,
+	-- One error per key per session (a link redrawn on every bag update must not flood the handler).
+	report_once = function()
+		local ns = T.addon({ "Core.lua" })
+		local errors = {}
+		_G.geterrorhandler = function() return function(e) errors[#errors + 1] = e end end
+		ns.ReportOnce("a", "boom"); ns.ReportOnce("a", "boom again")
+		ns.ReportOnce("b", "other")
+		T.eq(#errors, 2); T.eq(errors[1], "boom"); T.eq(errors[2], "other")
+	end,
 	equipment_changes_coalesce = function()
 		local ns = T.addon({ "Core.lua" })
 		local W = require("wow")
