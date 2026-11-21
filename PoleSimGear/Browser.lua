@@ -313,6 +313,24 @@ function Browser.SlotRows(model, key, ahead, filters)
 	return out
 end
 
+-- The worn entry ({ inst, score } | nil) an upgrade of this slot replaces: rings and trinkets the
+-- weaker of the two (an empty one first: it is "replaced" by nothing), else the slot's own.
+function Browser.WornFor(def, worn)
+	if def.key == "finger" or def.key == "trinket" then
+		local a, b = worn[def.slot], worn[def.slot + 1]
+		if not a or not b then return nil end
+		return (b.score < a.score) and b or a
+	end
+	return worn[def.slot]
+end
+
+-- Gear score: the sum of the worn items' scores (points of the spec's reference stat).
+function Browser.GearScore(worn)
+	local s = 0
+	for _, e in pairs(worn) do s = s + (e.score or 0) end
+	return s
+end
+
 -- How many upgrades a slot has under a source filter (before the model's trim).
 function Browser.Count(model, key, filter)
 	local c = model.counts and model.counts[key]

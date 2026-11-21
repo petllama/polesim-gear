@@ -339,4 +339,17 @@ return {
 		T.ok(B.Pass(r(1, 1, { vendor = true, quest = true }), { quest = true }), "any enabled kind passes")
 		T.ok(not B.Pass(r(1, 1, { world = true }), { quest = true, world = false }))
 	end,
+	worn_for_and_gear_score = function()
+		local B = T.addon(FILES).Browser
+		local function e(id, s) return { inst = { id = id }, score = s } end
+		local worn = { [1] = e(1, 5), [11] = e(2, 4), [12] = e(3, 6), [13] = e(4, 2), [16] = e(5, 10) }
+		local def = {}
+		for _, d in ipairs(B.SLOTS) do def[d.key] = d end
+		T.eq(B.WornFor(def.head, worn).inst.id, 1)
+		T.eq(B.WornFor(def.finger, worn).inst.id, 2, "the weaker ring")
+		T.eq(B.WornFor(def.trinket, worn), nil, "one trinket slot empty: the empty one")
+		T.eq(B.WornFor(def.neck, worn), nil)
+		T.near(B.GearScore(worn), 27)
+		T.near(B.GearScore({}), 0)
+	end,
 }
