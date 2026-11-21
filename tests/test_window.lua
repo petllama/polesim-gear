@@ -209,6 +209,23 @@ return {
 		T.eq(ns.Options.View().tab, "weights")
 		fx.done()
 	end,
+	-- Clicking an equipped slot opens Slot Upgrades on that slot (rings and trinkets: both icons).
+	strip_click_opens_slot = function()
+		local fx = F.load()
+		local ns = fx.ns
+		local f = fx.open()
+		local want = { [1] = "head", [2] = "neck", [3] = "shoulder", [15] = "back", [5] = "chest", [9] = "wrist",
+			[10] = "hands", [6] = "waist", [7] = "legs", [8] = "feet", [11] = "finger", [12] = "finger",
+			[13] = "trinket", [14] = "trinket", [16] = "mainhand", [17] = "offhand", [18] = "ranged" }
+		for _, b in ipairs(f.slots) do
+			T.eq(ns.Window.SlotKeyOf(b.slot), want[b.slot], "slot " .. b.slot)
+		end
+		f.slots[5]:Click()
+		T.eq(ns.Options.View().tab, "slot"); T.eq(ns.Window.state.slot, "chest")
+		f.slots[12]:Click()
+		T.eq(ns.Window.state.slot, "finger")
+		fx.done()
+	end,
 	-- The dots explained: a legend under the icons, and the slot's tooltip names the plan item.
 	strip_dots_explained = function()
 		local fx = F.load()

@@ -1,4 +1,7 @@
-# In-game checklist (one session, on a priest; section M on a mage) — PoleSim Gear 0.3.0
+# In-game checklist (one session, on a priest; section M on a mage) — PoleSim Gear 0.3.1
+
+**0.3.1 over 0.3.0:** clicking an icon in the equipped strip opens Slot Upgrades on that slot (both rings: Rings;
+both trinkets: Trinkets); the slot's tooltip ends with "Click: this slot's upgrades". `/reload` is enough.
 
 **0.3.0 over 0.2.3** (no new files: `tools/install.sh` then `/reload` is enough on an existing install;
 a first install needs the game restarted): Mage support (Frost, Fire, Arcane: weights, spec detection,

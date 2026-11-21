@@ -108,6 +108,16 @@ Win.TABS_BY = {}
 for _, t in ipairs(Win.TABS) do Win.TABS_BY[t.key] = t end
 
 -- Slot Upgrades on one slot (a Gear Plan row, a "Choose").
+-- An equipped slot (inventory id) -> its Slot Upgrades key (both rings: "finger"; both trinkets: "trinket")
+local PAIR = { [12] = 11, [14] = 13 }
+function Win.SlotKeyOf(inv)
+	inv = PAIR[inv] or inv
+	for _, def in ipairs(ns.Browser.SLOTS) do
+		if def.slot == inv then return def.key end
+	end
+	return nil
+end
+
 function Win.OpenSlot(key)
 	if state.slot ~= key then Win.DropAll() end
 	state.slot = key
@@ -574,9 +584,14 @@ function Win.CreateBottom(f)
 			GameTooltip:SetInventoryItem("player", self.slot)
 			local line, r, g, bl = Win.SlotPlanLine(self.slot)
 			if line then GameTooltip:AddLine(line, r, g, bl, true) end
+			GameTooltip:AddLine("Click: this slot's upgrades", 0.6, 0.6, 0.6)
 			GameTooltip:Show()
 		end)
 		b:SetScript("OnLeave", GameTooltip_Hide)
+		b:SetScript("OnClick", function(self)
+			local key = Win.SlotKeyOf(self.slot)
+			if key then Win.OpenSlot(key) end
+		end)
 		f.slots[i] = b
 	end
 	local wc = S.Panel(f, 490, -400, Win.WEIGHTS_W, 88)
