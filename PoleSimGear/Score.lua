@@ -127,9 +127,24 @@ function Score.Instance(it, bonus)
 	}
 end
 
--- (instance, score) of an item with its best random suffix for these weights.
+-- (instance, score) of an item with its best random suffix for these weights, kept per weights table
+-- (a band), class, role and item until ClearCache (Context clears it whenever scores change). The
+-- instance is shared: read it, do not change it.
+local bestCache = setmetatable({}, { __mode = "k" })
+function Score.ClearCache()
+	bestCache = setmetatable({}, { __mode = "k" })
+end
+
 function Score.BestSuffix(it, w, cls, role)
 	if not it then return nil end
+	local byW = bestCache[w]
+	if not byW then
+		byW = {}
+		bestCache[w] = byW
+	end
+	local key = (cls or "") .. ":" .. (role or "") .. ":" .. it.id
+	local hit = byW[key]
+	if hit then return hit[1], hit[2] end
 	local best, bestScore
 	local list = #it.sfx > 0 and it.sfx or { false }
 	for _, bl in ipairs(list) do
@@ -137,5 +152,6 @@ function Score.BestSuffix(it, w, cls, role)
 		local s = Score.Score(inst, w, cls, role)
 		if not best or s > bestScore + 1e-9 then best, bestScore = inst, s end
 	end
+	byW[key] = { best, bestScore }
 	return best, bestScore
 end
