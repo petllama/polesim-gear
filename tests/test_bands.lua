@@ -10,4 +10,14 @@ return {
 		T.eq(top.upTo, 60); T.eq(tlo, 60)
 		T.eq(B.For("mage", "frost", 30), nil)
 	end,
+	above_the_last_band = function()
+		local B = T.addon(FILES).Bands
+		local sd = select(3, B.For("priest", "shadow", 1))
+		local last, prev = sd.bands[#sd.bands], sd.bands[#sd.bands - 1]
+		local b, lo = B.For("priest", "shadow", last.upTo + 5)
+		T.eq(b, last); T.eq(lo, prev.upTo + 1, "the last band's own first level")
+	end,
+	nil_level = function()
+		T.eq(T.addon(FILES).Bands.For("priest", "shadow", nil), nil)
+	end,
 }
