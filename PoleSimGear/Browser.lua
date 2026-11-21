@@ -65,7 +65,9 @@ end
 -- slot's sort, so the window can spread the work over frames (no step over ~8 ms under lua5.1 with the
 -- real data); only (optional) = { [slotKey] = true } limits it to those slots. An item that throws is skipped and
 -- reported once per session (ns.ReportOnce): one bad record does not end the build.
-Browser.YIELD_EVERY = 15
+-- 10, not 15: with the GC running, level 60's worst frame (Start) was 27.8 ms at 15, 18-21 ms at 10
+-- (lua5.1, real data); the rest of a long frame is GC steps, which no item count bounds.
+Browser.YIELD_EVERY = 10
 function Browser.Collect(env, at, rlFrom, rlTo, lim, yield, only)
 	local band = env.at(at)
 	local byInv = env.items.ByInv()

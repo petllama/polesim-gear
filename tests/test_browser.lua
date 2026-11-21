@@ -121,8 +121,8 @@ return {
 		local yields = 0
 		ns.Browser.Collect(e, 20, 0, 20, 20, function() yields = yields + 1 end, { head = true })
 		for i = 1, 31 do ITEMS[1000 + i] = nil end
-		T.eq(ns.Browser.YIELD_EVERY, 15)
-		T.eq(yields, 1 + 2 + 1, "index, items 15 and 30, the sort")
+		T.eq(ns.Browser.YIELD_EVERY, 10, "15 gave a 27.8 ms frame at level 60 with the GC running")
+		T.eq(yields, 1 + 3 + 1, "index, items 10, 20 and 30, the sort")
 	end,
 	gains = function()
 		local B = T.addon(FILES).Browser
