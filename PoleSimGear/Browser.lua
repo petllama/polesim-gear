@@ -151,3 +151,60 @@ function Browser.Gains(cands, band)
 	end
 	return out
 end
+
+Browser.AHEAD = 5 -- "coming up": the next levels (the website's look-ahead default)
+
+function Browser.Build(env, yield)
+	local now = Browser.Gains(Browser.Collect(env, env.level, 0, env.level, env.level, yield))
+	local coming = {}
+	for L = env.level + 1, math.min(60, env.level + (env.ahead or Browser.AHEAD)) do
+		for _, rows in pairs(Browser.Gains(Browser.Collect(env, L, L, L, env.level + (env.ahead or Browser.AHEAD), yield))) do
+			for _, r in ipairs(rows) do
+				r.at = L
+				coming[#coming + 1] = r
+			end
+		end
+	end
+	table.sort(coming, byGain)
+	return { now = now, coming = coming }
+end
+
+-- rows passing a source filter ("all", "quest", "dungeon", "crafted")
+function Browser.Rows(rows, filter)
+	local out = {}
+	for _, r in ipairs(rows) do
+		if filter == "all" or r.c.kinds[filter] then out[#out + 1] = r end
+	end
+	return out
+end
+
+-- Best per slot right now: the top upgrade of every slot, biggest gain first.
+function Browser.Best(now, filter)
+	local out = {}
+	for _, def in ipairs(Browser.SLOTS) do
+		local r = Browser.Rows(now[def.key] or {}, filter)[1]
+		if r then out[#out + 1] = r end
+	end
+	table.sort(out, byGain)
+	return out
+end
+
+-- Build over several frames (no stutter opening the window); done(model) at the end. Each frame
+-- resumes the build until FRAME_MS milliseconds are spent (debugprofilestop), then waits for the next
+-- frame (one step per frame without the clock).
+Browser.FRAME_MS = 8
+function Browser.Start(env, done)
+	local co = coroutine.create(function() return Browser.Build(env, coroutine.yield) end)
+	local clock = type(debugprofilestop) == "function" and debugprofilestop or nil
+	local function step()
+		local t0 = clock and clock()
+		while true do
+			local ok, res = coroutine.resume(co)
+			if not ok then return geterrorhandler()(res) end
+			if coroutine.status(co) == "dead" then return done(res) end
+			if not clock or clock() - t0 >= Browser.FRAME_MS then break end
+		end
+		C_Timer.After(0, step)
+	end
+	step()
+end

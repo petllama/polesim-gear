@@ -77,4 +77,53 @@ return {
 		T.eq(g.finger[2].c.id, 61); T.near(g.finger[2].gain, 2, 1e-9, "unique: against the one worn")
 		T.eq(g.finger[2].note, "unique: replaces the one you wear")
 	end,
+	build = function()
+		local B = T.addon(FILES).Browser
+		local m = B.Build(env())
+		local best = B.Best(m.now, "all")
+		T.eq(#best, 1); T.eq(best[1].c.id, 1); T.near(best[1].gain, 3)
+		T.eq(B.Best(m.now, "dungeon")[1].c.id, 4)
+		T.eq(#B.Best(m.now, "crafted"), 0)
+		T.eq(m.coming[1].c.id, 5); T.eq(m.coming[1].at, 22); T.near(m.coming[1].gain, 38, 1e-9, "int 20 x 2 - worn 2")
+		T.eq(#B.Rows(m.coming, "quest"), 0)
+	end,
+	runs_in_steps = function()
+		local B = T.addon(FILES).Browser
+		local got
+		_G.C_Timer = { After = function(_, fn) fn() end }
+		B.Start(env(), function(model) got = model end)
+		T.eq(got.coming[1].c.id, 5)
+	end,
+	-- Over frames: each frame resumes the build until its time budget is spent (debugprofilestop, ms),
+	-- then waits for the next frame; without the clock, one step per frame.
+	runs_within_a_frame_budget = function()
+		local B = T.addon(FILES).Browser
+		local frames, clock = {}, 0
+		_G.C_Timer = { After = function(_, fn) frames[#frames + 1] = fn end }
+		_G.debugprofilestop = function() clock = clock + B.FRAME_MS / 2 + 0.1 return clock end
+		local e, yields = env(), 0
+		local get = e.items.Get
+		e.items.Get = function(id) return get(id) end
+		local done
+		local orig = B.Build
+		B.Build = function(en, yield)
+			for _ = 1, 4 do yields = yields + 1 yield() end
+			return orig(en)
+		end
+		B.Start(e, function(model) done = model end)
+		T.eq(done, nil, "not all in the first frame")
+		T.eq(yields, 2, "two steps fit the budget")
+		while #frames > 0 do table.remove(frames, 1)() end
+		T.ok(done and done.coming[1], "finished on later frames")
+		_G.debugprofilestop = nil
+	end,
+	start_reports_errors = function()
+		local B = T.addon(FILES).Browser
+		local got, called
+		_G.C_Timer = { After = function(_, fn) fn() end }
+		_G.geterrorhandler = function() return function(e) got = e end end
+		B.Build = function() error("boom") end
+		B.Start(env(), function() called = true end)
+		T.ok(got and got:find("boom"), tostring(got)); T.ok(not called)
+	end,
 }
