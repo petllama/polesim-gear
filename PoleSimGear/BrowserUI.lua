@@ -209,6 +209,7 @@ end
 
 local function create()
 	frame = CreateFrame("Frame", "PoleSimGearFrame", UIParent, "BasicFrameTemplateWithInset")
+	frame:Hide() -- a new frame starts shown; Toggle must open it on the first /psg
 	frame:SetSize(580, 500)
 	frame:SetPoint("CENTER")
 	frame:SetFrameStrata("HIGH")
