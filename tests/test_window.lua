@@ -119,4 +119,21 @@ return {
 		T.eq(ns.Options.View().ahead, 3); T.ok(items[4].isSelected())
 		fx.done()
 	end,
+	left_panel = function()
+		local fx = F.load()
+		local ns, U, W = fx.ns, fx.U, fx.W
+		local f = fx.open()
+		local text = U.texts(f)
+		for _, l in ipairs({ "Sources", "Quests", "Dungeons", "Crafting", "Vendor", "BoE / World", "Show", "All gear", "Upgrades only", "Wishlist" }) do
+			T.ok(text:find(l, 1, true), l)
+		end
+		local world = U.button(f, "BoE / World")
+		T.eq(world.on, false, "off by default")
+		world:Click()
+		T.eq(ns.Options.View().filters.world, true); T.eq(world.on, true, "redrawn")
+		T.eq(#W.timers, 0, "no rebuild")
+		U.button(f, "All gear"):Click()
+		T.eq(ns.Options.View().show, "all"); T.eq(U.button(f, "All gear").on, true); T.eq(U.button(f, "Upgrades only").on, false)
+		fx.done()
+	end,
 }

@@ -341,6 +341,44 @@ function Win.UpdateHeader(f, ctx)
 	h.ahead:Update()
 end
 
+Win.KIND_ROWS = { { "quest", "Quests" }, { "dungeon", "Dungeons" }, { "crafted", "Crafting" }, { "vendor", "Vendor" }, { "world", "BoE / World" } }
+Win.SHOW_ROWS = { { "all", "All gear" }, { "upgrades", "Upgrades only" }, { "wishlist", "Wishlist" } }
+function Win.CreateLeft(f)
+	local box = S.Panel(f, 12, -122, 122, 160)
+	local t = S.Text(box, 13, C.white)
+	t:SetPoint("TOPLEFT", 8, -8)
+	t:SetText("Sources")
+	f.checks = {}
+	for i, k in ipairs(Win.KIND_ROWS) do
+		local b = S.Check(box, k[2], function(on)
+			ns.Options.View().filters[k[1]] = on
+			Win.Refresh()
+		end)
+		b:SetPoint("TOPLEFT", 8, -30 - (i - 1) * 24)
+		b.kind = k[1]
+		f.checks[i] = b
+	end
+	local box2 = S.Panel(f, 12, -290, 122, 100)
+	local t2 = S.Text(box2, 13, C.white)
+	t2:SetPoint("TOPLEFT", 8, -8)
+	t2:SetText("Show")
+	f.radios = {}
+	for i, k in ipairs(Win.SHOW_ROWS) do
+		local b = S.Radio(box2, k[2], function()
+			ns.Options.View().show = k[1]
+			Win.Refresh()
+		end)
+		b:SetPoint("TOPLEFT", 4, -28 - (i - 1) * 22)
+		b.show = k[1]
+		f.radios[i] = b
+	end
+end
+function Win.UpdateLeft(f)
+	local v = ns.Options.View()
+	for _, b in ipairs(f.checks) do b:Set(v.filters[b.kind]) end
+	for _, b in ipairs(f.radios) do b:Set(v.show == b.show) end
+end
+
 function Win.Toggle()
 	if not ns.Context.ClassKey() then return ns.Print("no weights for this class yet (Priest only for now)") end
 	if not frame then create() end
