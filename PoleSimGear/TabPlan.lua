@@ -74,7 +74,8 @@ local function fill(row, e)
 		if entry.isPick then
 			sub = S.Colour(C.pick) .. "Your pick|r"
 			if entry.betterBy then
-				sub = sub .. "  " .. format("best: %s %s", entry.suggestion.c.inst.name, S.Signed(entry.suggestion.gain))
+				-- the name would be cut here: the row tooltip says which item ("Better: ...")
+				sub = sub .. "  best " .. S.Colour(C.green) .. S.Signed(entry.suggestion.gain) .. "|r"
 			end
 		elseif r.at then
 			sub = "level " .. r.at
@@ -185,8 +186,11 @@ function Tab.Tooltip(row)
 	if not (e and not e.empty) then return end
 	local r = planRow(e)
 	if r then
-		return ns.Window.RowTooltip(row, r, e.entry and "Click: this slot's upgrades. Right-click: back to suggestion, wishlist."
-			or "Click: this slot's upgrades.")
+		local entry = e.entry
+		local better = entry and entry.isPick and entry.betterBy and entry.suggestion
+			and format("Better: %s %s", entry.suggestion.c.inst.name or "?", S.Signed(entry.suggestion.gain)) or nil
+		return ns.Window.RowTooltip(row, r, entry and "Click: this slot's upgrades. Right-click: back to suggestion, wishlist."
+			or "Click: this slot's upgrades.", better)
 	end
 	local m = e.missing or (e.entry and e.entry.missing)
 	if not m then return end

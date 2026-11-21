@@ -55,7 +55,15 @@ return {
 		for _, x in ipairs(rows) do if x.e.def.key == key then picked = x end end
 		T.eq(picked.e.entry.plan.c.id, second.c.id)
 		T.ok(picked.plan.sub.text:find("Your pick", 1, true), picked.plan.sub.text)
-		if list[1].gain - second.gain > 1e-6 then T.ok(picked.plan.sub.text:find("best: ", 1, true), "the suggestion is better") end
+		if list[1].gain - second.gain > 1e-6 then
+			-- the row: "best +N" only (a name would be cut); the tooltip names the better item
+			local sub = picked.plan.sub.text
+			T.ok(sub:find("best " .. ns.Style.Colour(ns.Style.C.green) .. "+", 1, true), sub)
+			T.ok(not sub:find(list[1].c.inst.name, 1, true), "no name on the row: " .. sub)
+			picked.scripts.OnEnter(picked)
+			local tip = table.concat(U.tip.lines, "\n")
+			T.ok(tip:find("Better: " .. list[1].c.inst.name .. " " .. ns.Style.Signed(list[1].gain), 1, true), tip)
+		end
 		picked.scripts.OnClick(picked, "RightButton")
 		local labels = {}
 		for _, it in ipairs(U.contextMenu) do labels[#labels + 1] = it.text end
