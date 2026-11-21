@@ -103,6 +103,29 @@ return {
 		T.eq(REF.refreshed, 1); T.eq(GT.refreshed, 0)
 		unclient()
 	end,
+	-- The hover path: an item's instance and comparison are kept until scores change.
+	hover_cached_until_scores_change = function()
+		local ns, GT, _, show = client()
+		local calls, live = 0, ns.Live.Instance
+		ns.Live.Instance = function(link) calls = calls + 1 return live(link) end
+		show(GT, "cloth"); show(GT, "cloth")
+		T.eq(calls, 1)
+		T.ok(#GT.lines > 0, "drawn from the cache")
+		show(GT, "plate"); show(GT, "plate")
+		T.eq(calls, 2, "an item we add nothing to is kept too")
+		ns.Fire("SCORES_CHANGED")
+		show(GT, "cloth")
+		T.eq(calls, 3)
+		unclient()
+	end,
+	hover_pending_not_cached = function()
+		local ns, GT, _, show = client()
+		local calls = 0
+		ns.Live.Instance = function() calls = calls + 1 return nil, "pending" end
+		show(GT, "cloth"); show(GT, "cloth")
+		T.eq(calls, 2)
+		unclient()
+	end,
 	short = function()
 		local L = T.addon(FILES).Tooltip.Lines({ score = 8, gain = 2, base = 6 }, inst, ctx, false, false)
 		T.eq(L[1][1], "Score 8.0"); T.eq(L[1][2], "+2.0 (+33%)")

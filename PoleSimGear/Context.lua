@@ -7,6 +7,7 @@ ns.Context = Context
 local SLOTS = { 1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 }
 -- The spec (key, source) is kept apart: only talents, entering the world or the player's choice change it.
 local current, worn, spec, pendingItems = nil, {}, nil, {}
+local none = false -- Get found no weights or no band: kept like current (until STATE)
 local SPEC_EVENTS = { TRAIT_CONFIG_UPDATED = true, CHARACTER_POINTS_CHANGED = true, PLAYER_TALENT_UPDATE = true,
 	PLAYER_ENTERING_WORLD = true, SPEC = true }
 -- Right after login the talents may not be readable yet (Detect finds no points): the default spec is
@@ -18,11 +19,11 @@ ns.On("STATE", function(event, arg)
 	if event == "PLAYER_LEVEL_UP" then ns.level = arg end
 	if event == "PLAYER_ENTERING_WORLD" then ns.level, retries = nil, 0 end
 	if SPEC_EVENTS[event] then spec = nil end
-	current, worn, pendingItems = nil, {}, {}
+	current, worn, pendingItems, none = nil, {}, {}, false
 	ns.Score.ClearCache()
 	ns.Fire("SCORES_CHANGED")
 end)
-ns.On("DB_READY", function() spec, current = nil, nil end) -- the saved spec choice is known now
+ns.On("DB_READY", function() spec, current, none = nil, nil, false end) -- the saved spec choice is known now
 
 -- A worn item the client had not loaded yet: score again once it has (this event fires for every
 -- item the client loads, so only for those).
@@ -78,8 +79,9 @@ end
 -- -> { cls, spec, specSource, level, band, lo, ref, w, worn, faction, classBit, raceBit } | nil (no weights)
 function Context.Get()
 	if current then return current end
+	if none then return nil end
 	local cls = Context.ClassKey()
-	if not cls then return nil end
+	if not cls then none = true return nil end
 	local level = Context.Level()
 	if not spec then
 		spec = { ns.Spec.Current(cls) }
@@ -87,7 +89,7 @@ function Context.Get()
 	end
 	local key, source = spec[1], spec[2]
 	local band, lo, sd = ns.Bands.For(cls, key, level)
-	if not band then return nil end
+	if not band then none = true return nil end
 	local _, _, raceID = UnitRace("player")
 	current = {
 		cls = cls, spec = key, specSource = source, level = level, band = band, lo = lo, ref = sd.ref, w = band.w,

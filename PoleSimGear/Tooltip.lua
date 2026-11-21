@@ -52,13 +52,31 @@ local AHEAD = 5 -- items up to this many levels above the character still get a 
 local secret = issecretvalue or function() return false end
 local drawn = setmetatable({}, { __mode = "k" }) -- tooltip -> the item link our lines were drawn for
 
+-- The hover path's results per link ({ inst, cmp }, or false: nothing to show), kept until scores
+-- change; a pending item is not kept. Bounded: emptied when it reaches CACHE_MAX links.
+local CACHE_MAX = 500
+local cache, cached = {}, 0
+ns.On("SCORES_CHANGED", function() cache, cached = {}, 0 end)
+
+local function lookup(link, ctx)
+	local hit = cache[link]
+	if hit ~= nil then return hit end
+	local inst, pending = ns.Live.Instance(link)
+	if pending then return false end
+	local cmp = inst and ns.Equip.CanUse(inst, ctx.cls, ctx.level) and (inst.rl or 0) <= ctx.level + AHEAD
+		and ns.Equip.Compare(inst, ctx.w, ctx.cls, ctx.worn, false)
+	hit = cmp and { inst, cmp } or false
+	if cached >= CACHE_MAX then cache, cached = {}, 0 end
+	cache[link], cached = hit, cached + 1
+	return hit
+end
+
 function Tooltip.Add(tooltip, link)
 	local ctx = ns.Context.Get()
 	if not (ctx and link) then return end
-	local inst = ns.Live.Instance(link)
-	if not inst or not ns.Equip.CanUse(inst, ctx.cls, ctx.level) or (inst.rl or 0) > ctx.level + AHEAD then return end
-	local cmp = ns.Equip.Compare(inst, ctx.w, ctx.cls, ctx.worn, false)
-	if not cmp then return end
+	local hit = lookup(link, ctx)
+	if not hit then return end
+	local inst, cmp = hit[1], hit[2]
 	local labelled = ns.Coexist and ns.Coexist.Label() or false
 	for _, l in ipairs(Tooltip.Lines(cmp, inst, ctx, IsShiftKeyDown(), labelled)) do
 		local a, b = l[3] or GREY, l[4] or GREY

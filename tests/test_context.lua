@@ -3,6 +3,19 @@ local FILES = { "Core.lua", "Data/Weights.lua", "Data/Suffixes.lua", "Data/Items
 	"Spec.lua", "Equip.lua", "Context.lua" }
 -- Context is client glue (checked in game); offline only its shape with nothing worn.
 return {
+	-- No weights or no band for this class/spec/level: the outcome is kept until STATE too.
+	no_band_cached = function()
+		local ns = T.addon(FILES)
+		_G.GetInventoryItemLink = function() return nil end
+		ns.char = { spec = "auto" }
+		local calls = 0
+		ns.Bands.For = function() calls = calls + 1 return nil end
+		T.eq(ns.Context.Get(), nil); T.eq(ns.Context.Get(), nil)
+		T.eq(calls, 1)
+		ns.Fire("STATE", "PLAYER_LEVEL_UP", 21)
+		T.eq(ns.Context.Get(), nil)
+		T.eq(calls, 2)
+	end,
 	get = function()
 		local ns = T.addon(FILES)
 		_G.GetInventoryItemLink = function() return nil end
