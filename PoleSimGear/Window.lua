@@ -189,7 +189,8 @@ function Win.Refresh()
 	if p and def and def.refresh then def.refresh(p) end
 end
 
--- Build/ShowAll: the 0.1.0 browser window's Build and ShowAll (Build also drops the Sources grouping). ShowAll(key) is used by Slot Upgrades.
+-- Build/ShowAll: the 0.1.0 browser window's Build and ShowAll (Build also drops the Sources grouping).
+-- ShowAll(key) is used by Slot Upgrades.
 function Win.Build()
 	if state.building then state.building:Cancel() end
 	Win.DropAll()
@@ -451,6 +452,45 @@ function Win.UpdateBottom(f, ctx)
 	for _, w in ipairs(ns.View.WeightRows(ctx.w, 4)) do parts[#parts + 1] = w.label .. " " .. S.Colour(C.green) .. format("%.2f", w.value) .. "|r" end
 	f.wLine:SetText(table.concat(parts, "   "))
 	f.wSub:SetText(format("levels %d-%d, points of %s", ctx.lo, ctx.band.upTo, ns.DATA.statLabels[ctx.ref] or ctx.ref))
+end
+
+function Win.RowTooltip(owner, r, hint)
+	if not (r and r.c) then return end
+	local ctx = ns.Context.Get()
+	if not ctx then return end
+	-- a coming level's band; none (no weights there): no "how?" rather than another band's weights
+	local band
+	if r.at then band = ns.Context.At(r.at) else band = ctx end
+	local inst = r.c.inst
+	GameTooltip:SetOwner(owner, "ANCHOR_RIGHT")
+	GameTooltip:AddLine(ns.Style.ItemText(inst))
+	if inst.suffix then GameTooltip:AddLine("scored with its best suffix for this spec: " .. inst.suffix, 0.6, 0.6, 0.6) end
+	GameTooltip:AddDoubleLine("Score", format("%.2f", r.c.score), 1, 0.82, 0, 1, 1, 1)
+	local role = inst.inv == 17 and "mh" or (ns.Equip.ROLE_OF_SLOT[r.slot.slot] or "gear")
+	for _, p in ipairs(band and ns.Score.Parts(inst, band.w, ctx.cls, role) or {}) do
+		local name = (ns.DATA.statLabels[p[1]] or p[1]) .. (p[1] ~= p[3] and (" as " .. (ns.DATA.statLabels[p[3]] or p[3])) or "")
+		GameTooltip:AddDoubleLine(format("  %s %g x %g", name, p[2], p[4]), format("%.2f", p[5]), 0.7, 0.7, 0.7, 0.7, 0.7, 0.7)
+	end
+	GameTooltip:AddDoubleLine("Gain over what you wear", format("%+.2f", r.gain), 1, 1, 1, 0.3, 1, 0.3)
+	if r.at and band then GameTooltip:AddLine(format("level %d item: scored with the weights of levels %d-%d", r.at, band.lo, band.band.upTo), 0.6, 0.6, 0.6, true) end
+	if r.note then GameTooltip:AddLine(r.note, 0.6, 0.6, 0.6, true) end
+	local pick = ns.Plan.Get(ctx.spec, r.slot.key)
+	if pick and pick == ns.Browser.KeyOf(r.c.inst) then GameTooltip:AddLine("Your pick for " .. r.slot.label, 1, 0.82, 0) end
+	if ns.Wishlist.Has(r.c.inst) then GameTooltip:AddLine("|A:auctionhouse-icon-favorite:12:12|a On your wishlist", 1, 0.82, 0) end
+	GameTooltip:AddLine(" ")
+	for _, s in ipairs(r.c.sources) do
+		local where = s.where
+		if not where and s.zoneId and state.codex and type(state.codex.Zone) == "function" then
+			local ok, z = pcall(state.codex.Zone, s.zoneId)
+			where = ok and type(z) == "table" and z.name or nil
+		end
+		GameTooltip:AddLine(s.text .. (where and (", " .. where) or ""), 1, 1, 1, true)
+		if s.cost then GameTooltip:AddLine("  " .. ns.Style.Money(s.cost), 0.8, 0.8, 0.8) end
+		if s.needs then GameTooltip:AddLine("  needs: " .. s.needs .. " first", 1, 0.5, 0.3, true) end
+		if s.route then GameTooltip:AddLine(format("  on your route (Polestar guide step %d)", s.route), 0.3, 0.8, 1, true) end
+	end
+	if hint then GameTooltip:AddLine(hint, 0.6, 0.6, 0.6, true) end
+	GameTooltip:Show()
 end
 
 function Win.Toggle()

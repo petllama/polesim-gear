@@ -154,4 +154,27 @@ return {
 		T.eq(ns.Options.View().tab, "weights")
 		fx.done()
 	end,
+	row_tooltip = function()
+		local fx = F.load({ char = { wish = { ["9:0"] = true }, plan = { shadow = { chest = "9:0" } } } })
+		local ns, U = fx.ns, fx.U
+		fx.open()
+		local inst = { id = 9, name = "Robe", inv = 5, stats = { int = 5 }, quality = 2 }
+		local r = { c = { id = 9, inst = inst, score = 5, sources = {
+			{ kind = "quest", text = "Quest: X", where = "Westfall", needs = "First", route = 3 },
+			{ kind = "world", text = "Drop: Ogre (18), 2%", zoneId = 1431 } }, kinds = { quest = true, world = true }, rl = 21 },
+			gain = 2, at = 21, slot = ns.Browser.SLOTS[5] }
+		local owner = U.new("Button")
+		ns.Window.RowTooltip(owner, r, "Click: this slot's upgrades")
+		local text = table.concat(U.tip.lines, "\n")
+		for _, want in ipairs({ "Score = 5.00", "Gain over what you wear = +2.00", "Quest: X, Westfall", "needs: First first",
+			"on your route (Polestar guide step 3)", "Drop: Ogre (18), 2%, Duskwood", "Your pick", "On your wishlist",
+			"Click: this slot's upgrades", "weights of levels" }) do
+			T.ok(text:find(want, 1, true), want .. " in\n" .. text)
+		end
+		ns.Context.At = function() return nil end
+		ns.Window.RowTooltip(owner, r)
+		text = table.concat(U.tip.lines, "\n")
+		T.ok(not text:find(" x ", 1, true), "no band: no how?"); T.ok(not text:find("weights of levels", 1, true))
+		fx.done()
+	end,
 }
