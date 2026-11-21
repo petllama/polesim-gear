@@ -35,4 +35,5 @@ Groups.lua
 Waypoint.lua
 Style.lua
 Window.lua
+TabPlan.lua
 Minimap.lua
