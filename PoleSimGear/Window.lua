@@ -736,7 +736,8 @@ end
 -- The window's lines of an item row's tooltip (below the game's item tooltip).
 function Win.RowLines(r, ctx, band, hint, extra)
 	local inst = r.c.inst
-	if inst.suffix then GameTooltip:AddLine("scored with its best suffix for this spec: " .. inst.suffix, 0.6, 0.6, 0.6) end
+	-- (an auction row whose suffix is known is the auction's own: r.suffixKnown)
+	if inst.suffix and not r.suffixKnown then GameTooltip:AddLine("scored with its best suffix for this spec: " .. inst.suffix, 0.6, 0.6, 0.6) end
 	GameTooltip:AddDoubleLine("Score", format("%.2f", r.c.score), 1, 0.82, 0, 1, 1, 1)
 	local role = inst.inv == 17 and "mh" or (ns.Equip.ROLE_OF_SLOT[r.slot.slot] or "gear")
 	for _, p in ipairs(band and ns.Score.Parts(inst, band.w, ctx.cls, role) or {}) do

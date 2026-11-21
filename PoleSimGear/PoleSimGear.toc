@@ -42,3 +42,4 @@ TabSources.lua
 TabWeights.lua
 TabSettings.lua
 Minimap.lua
+AHPanel.lua

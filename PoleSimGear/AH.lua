@@ -201,7 +201,8 @@ function AH.Build(found, ctx, ahead)
 		end
 		if gain > 1e-6 then
 			local r = { key = c.key, c = c.c, gain = gain, base = base, slot = c.def, note = note, at = c.at,
-				price = c.price, quantity = c.quantity, result = c.result, itemKey = c.itemKey, anySuffix = c.anySuffix }
+				price = c.price, quantity = c.quantity, result = c.result, itemKey = c.itemKey, anySuffix = c.anySuffix,
+				suffixKnown = c.c.inst.suffix ~= nil and not c.anySuffix }
 			if c.anySuffix then c.anySuffix.worst = gain - (c.c.score - c.anySuffix.worstScore) end
 			r.setPrice = partner and (c.price + partner.price) or nil
 			r.value = perGold(gain, r.setPrice or c.price)
