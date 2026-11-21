@@ -19,3 +19,4 @@ Spec.lua
 Equip.lua
 Live.lua
 Context.lua
+Tooltip.lua
