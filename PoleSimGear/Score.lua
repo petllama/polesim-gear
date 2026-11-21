@@ -60,3 +60,32 @@ function Score.Score(inst, w, cls, role)
 	end
 	return s
 end
+
+-- Score() term by term: { item stat key, amount, weight key, weight, points } (rounded like
+-- armory.score_parts: amount 3, weight 4, points 3 decimals). One item stat can count with two weights.
+function Score.Parts(inst, w, cls, role)
+	local out = {}
+	local function add(k, amount, wk, mult)
+		local wt = (w[wk] or 0) * (mult or 1)
+		if amount ~= 0 and wt ~= 0 then out[#out + 1] = { k, round(amount, 3), wk, round(wt, 4), round(amount * wt, 3) } end
+	end
+	local stats = inst.stats or {}
+	for _, k in ipairs(sortedKeys(stats)) do
+		if k == "apFeral" then
+			if cls == "druid" then add(k, stats[k], "ap") end
+		else
+			for _, wk in ipairs(EXPAND[k] or { k }) do add(k, stats[k], wk) end
+		end
+	end
+	add("armor", inst.armor or 0, "armor")
+	if (inst.dps or 0) ~= 0 and inst.weapon then
+		if role == "mh" then
+			add("dps", inst.dps, "dps")
+		elseif role == "oh" and (inst.inv == ONE_HAND or inst.inv == OFF_HAND_ONLY) then
+			add("dps", inst.dps, "dps", 0.5)
+		elseif role == "ranged" then
+			add("rdps", inst.dps, "rdps")
+		end
+	end
+	return out
+end

@@ -27,6 +27,22 @@ return {
 		T.near(S.StatScore({ apFeral = 10 }, w, "priest"), 0)
 		T.near(S.StatScore({ apFeral = 10 }, w, "druid"), 5)
 	end,
+	parts_sum_to_score = function()
+		local S = T.addon(FILES).Score
+		local i = inst({ hit = 1, int = 10 })
+		for _, role in ipairs({ "gear", "mh", "oh", "ranged" }) do
+			local sum = 0
+			for _, p in ipairs(S.Parts(i, W, "rogue", role)) do sum = sum + p[5] end
+			T.near(sum, S.Score(i, W, "rogue", role), 1e-3, role)
+		end
+		local p = S.Parts(i, W, "rogue", "gear")
+		T.eq(p[1][1], "hit"); T.eq(p[1][3], "hit"); T.eq(p[2][3], "spellHit"); T.near(p[2][5], 3)
+		T.eq(p[#p][1], "armor")
+	end,
+	parts_off_hand_half = function()
+		local p = T.addon(FILES).Score.Parts(inst({}), W, "rogue", "oh")
+		T.eq(p[#p][1], "dps"); T.near(p[#p][4], 2)
+	end,
 	nil_item = function()
 		T.eq(T.addon(FILES).Score.Score(nil, W, "priest", "gear"), 0)
 	end,
