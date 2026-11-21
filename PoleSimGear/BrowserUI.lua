@@ -5,8 +5,10 @@ ns.BrowserUI = UI
 
 local FILTERS = { { "all", "All" }, { "quest", "Quests" }, { "dungeon", "Dungeons" }, { "crafted", "Crafted" } }
 local KIND_TAG = { quest = "Quest", dungeon = "Dungeon", crafted = "Crafted" }
--- all: { key, rows } every upgrade of the drilled-into slot ("Show all"), allBuilding its build
-local state = { filter = "all", slot = nil, model = nil, building = nil, stale = true, why = nil, all = nil, allBuilding = nil }
+-- all: { key, rows } every upgrade of the drilled-into slot ("Show all"), allBuilding its build, allWhy
+-- why it could not start
+local state = { filter = "all", slot = nil, model = nil, building = nil, stale = true, why = nil, all = nil, allBuilding = nil,
+	allWhy = nil }
 local frame
 local format = string.format
 
@@ -89,7 +91,7 @@ local function listData()
 		local total = ns.Browser.Count(m, key, state.filter)
 		if not all and total > #rows then
 			out[#out + 1] = state.allBuilding and { header = "Scoring every upgrade..." }
-				or { header = format("Show all (%d)", total), showAll = true }
+				or { header = format("Show all (%d)", total) .. (state.allWhy and (": " .. state.allWhy) or ""), showAll = true }
 		end
 		return out
 	end
@@ -192,7 +194,7 @@ end
 
 local function dropAll()
 	if state.allBuilding then state.allBuilding:Cancel() end
-	state.all, state.allBuilding = nil, nil
+	state.all, state.allBuilding, state.allWhy = nil, nil, nil
 end
 
 -- Closing the window lets go of what the build used: the model, the item index, the route map;
@@ -277,6 +279,9 @@ function UI.Refresh()
 		frame.info:SetText(format("%s, level %d (weights of levels %d-%d). Gains in points of %s.", title(ctx.spec), ctx.level,
 			ctx.lo, ctx.band.upTo, ns.DATA.statLabels[ctx.ref] or ctx.ref))
 		frame.spec:SetText("Spec: " .. (ns.char.spec == "auto" and ("auto (" .. ctx.spec .. ")") or ns.char.spec))
+	else
+		frame.info:SetText("")
+		frame.spec:SetText("")
 	end
 	for i, b in ipairs(frame.chips) do
 		if FILTERS[i][1] == state.filter then b:LockHighlight() else b:UnlockHighlight() end
@@ -288,8 +293,11 @@ end
 -- Every upgrade of one slot (the drill-down's "Show all"), scored over frames like the model.
 function UI.ShowAll(key)
 	dropAll()
-	local env = UI.Env()
-	if not env then return end
+	local env, why = UI.Env()
+	if not env then
+		state.allWhy = why
+		return UI.Refresh()
+	end
 	local handle, ended -- ended: done or failed (perhaps at once, inside Start)
 	handle = ns.Browser.Start(env, function(rows)
 		ended = true

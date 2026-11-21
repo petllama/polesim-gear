@@ -211,6 +211,49 @@ return {
 		T.eq(hl.alpha, 1)
 		_G.Polestar = nil
 	end,
+	-- No context any more (Context.Get nil): the info line and the spec button are cleared, not left
+	-- with the last character's text.
+	no_context_clears_info = function()
+		local win = window(function() end)
+		local ns = win.ns
+		local made = {}
+		local create = _G.CreateFrame
+		_G.CreateFrame = function(kind, name, ...)
+			local f = create(kind, name, ...)
+			f.SetText = function(self, v) self.text = v end
+			made[#made + 1] = f
+			if name then made[name] = f end
+			return f
+		end
+		SlashCmdList.POLESIMGEAR("")
+		local f = made.PoleSimGearFrame
+		local spec = made[2]
+		T.ok(f.info.text and f.info.text:find("level 20", 1, true), tostring(f.info.text))
+		T.ok(spec.text and spec.text:find("Spec", 1, true), tostring(spec.text))
+		ns.Context.Get = function() return nil end
+		ns.BrowserUI.Refresh()
+		T.eq(f.info.text, ""); T.eq(spec.text, "")
+		_G.Polestar = nil
+	end,
+	-- "Show all" when the browser's data is not available (Env fails): the row says why.
+	show_all_says_why = function()
+		local provided
+		local win = window(function(dp) provided = dp end)
+		local ns, W = win.ns, win.W
+		ns.Browser.KEEP = 1
+		SlashCmdList.POLESIMGEAR("")
+		local n = 0
+		while #W.timers > 0 and n < 10000 do W.flush() n = n + 1 end
+		local row = win.frame()
+		local key = provided[2].slot.key
+		win.view.init(row, provided[2])
+		row.scripts.OnClick(row)
+		_G.Polestar.Codex.Load = function() return false end
+		ns.BrowserUI.ShowAll(key)
+		local last = provided[#provided].header
+		T.ok(last and last:find("could not be loaded", 1, true), tostring(last))
+		_G.Polestar = nil
+	end,
 	-- The window opens,
 	-- builds over frames, lists rows, drills into a slot, closes and lets go of the model and the index.
 	window_smoke = function()
