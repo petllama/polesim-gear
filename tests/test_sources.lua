@@ -249,4 +249,38 @@ return {
 		T.eq(table.concat(drops, ","), "9,4,2", "all usable: by chance")
 		T.eq(all[1].text, "World drop, levels 15-25", "other sources keep their order, first")
 	end,
+	-- A green (quality <= 2) item with a world source drops from every mob of those levels: its drops
+	-- in a dungeon (Fel Steed 0.3% in Shadowfang Keep) are luck, not the dungeon's loot (the user's
+	-- Deadmines screenshot). They go to BoE / World, the world source first; boss loot (no world
+	-- source) and blue+ items stay dungeon items (armory.generic_world_drop).
+	generic_world_drops = function()
+		local S = T.addon(FILES).Sources
+		local function codex(srcs, quality)
+			return {
+				Item = function() return { quality = quality, sources = srcs } end,
+				Npc = function() return { name = "Fel Steed", level = 18, instance = "SFK" } end,
+				Object = function() return { name = "Chest", instance = "SFK" } end,
+				Instance = function() return { name = "Shadowfang Keep", kind = "dungeon" } end,
+			}
+		end
+		local W = { { type = "drop", npc = 7, chance = 0.3 }, { type = "object", object = 5, chance = 1.2 },
+			{ type = "world", minLevel = 12, maxLevel = 60 } }
+		local green = codex(W, 2)
+		T.ok(S.GenericWorld(green.Item(), { q = 2 }))
+		T.ok(not S.GenericWorld(green.Item(), { q = 3 }), "blue: a dungeon item")
+		T.ok(S.GenericWorld(green.Item()), "no shipped item: the Codex quality")
+		T.ok(not S.GenericWorld({ quality = 2, sources = { W[1] } }, { q = 2 }), "no world source: boss loot")
+		local v = S.For(1, green, player, 20, { q = 2, rl = 14, il = 19 })
+		T.eq(#v, 3)
+		T.eq(v[1].text, "World drop, levels 12-60", "the world source first")
+		for _, x in ipairs(v) do T.eq(x.kind, "world", x.text) end
+		local drop
+		for _, x in ipairs(v) do if x.npcId then drop = x end end
+		T.eq(drop.where, "Shadowfang Keep", "says where it was seen"); T.eq(drop.text, "Drop: Fel Steed, 0.3%")
+		T.eq(drop.instanceKey, nil, "no dungeon group")
+		local blue = S.For(1, codex(W, 3), player, 20, { q = 3, rl = 14, il = 19 })
+		T.eq(blue[1].kind, "dungeon"); T.eq(blue[2].kind, "dungeon"); T.eq(blue[3].kind, "world")
+		local boss = S.For(1, codex({ W[1] }, 2), player, 20, { q = 2, rl = 14, il = 19 })
+		T.eq(boss[1].kind, "dungeon", "green boss loot")
+	end,
 }

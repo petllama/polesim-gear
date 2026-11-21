@@ -76,7 +76,9 @@ end
 -- + the kind's grouping fields (quest: questId, title, level, zoneId, elite, needs; dungeon: instanceKey,
 -- npcName, boss, container, chance, levels; crafted: profession, skill, skillLine; vendor: npcId,
 -- npcName, cost, zoneId, spot) } | nil   (dungeon: a drop or a container in a dungeon)
-function Sources.View(src, codex, player, lim)
+-- generic: the item is a generic world drop (Sources.GenericWorld): its in-instance drops and containers
+-- are BoE / World views (with `where`), never dungeon ones.
+function Sources.View(src, codex, player, lim, generic)
 	if src.type == "quest" then
 		local q = codex.Quest(src.quest)
 		if not q then return nil end
@@ -108,6 +110,16 @@ function Sources.View(src, codex, player, lim)
 			}
 		end
 		local inst = call(codex, "Instance", key)
+		if generic then
+			-- A generic world drop seen in an instance: BoE / World, saying where it was seen.
+			local ok, why = true, nil
+			if npc and npc.level and npc.level > lim + 5 then ok, why = false, "mob level " .. npc.level end
+			return {
+				kind = "world", ok = ok, why = why, npcId = src.npc, npcName = npc and npc.name, npcLevel = npc and npc.level,
+				chance = src.chance, where = inst and inst.name or key,
+				text = "Drop: " .. (npc and npc.name or "?") .. (src.chance and string.format(", %g%%", src.chance) or ""),
+			}
+		end
 		if inst and inst.kind == "raid" then return nil end -- raids: a non-goal
 		local ok, why = true, nil
 		if npc and npc.level and npc.level > lim + 5 then ok, why = false, "boss level " .. npc.level end
@@ -125,6 +137,12 @@ function Sources.View(src, codex, player, lim)
 		local key = obj and obj.instance
 		if not key then return nil end
 		local inst = call(codex, "Instance", key)
+		if generic then
+			return {
+				kind = "world", ok = true, where = inst and inst.name or key, chance = src.chance,
+				text = "Container: " .. (obj.name or "?") .. (src.chance and string.format(", %g%%", src.chance) or ""),
+			}
+		end
 		if inst and inst.kind == "raid" then return nil end
 		return {
 			kind = "dungeon", ok = true, where = inst and inst.name or key,
@@ -201,6 +219,19 @@ end
 -- stands in (leveling items sit about 5 above their level): not yet when it is above lim + 5.
 local LEVEL_LESS = { vendor = true, object = true }
 
+-- Whether an item is a generic world drop: green or lower (the shipped quality, else the Codex's) with a
+-- world (level-range) source. Every mob of those levels can drop it, so a drop inside a dungeon is luck,
+-- not that dungeon's loot: BoE / World only. Boss loot (no world source) and blue+ items found in a
+-- dungeon stay dungeon items. The website's armory.generic_world_drop (parity fixture `W` rows).
+function Sources.GenericWorld(rec, it)
+	local q = it and it.q or rec and rec.quality
+	if type(q) ~= "number" or q > 2 or type(rec) ~= "table" or type(rec.sources) ~= "table" then return false end
+	for _, src in ipairs(rec.sources) do
+		if type(src) == "table" and src.type == "world" then return true end
+	end
+	return false
+end
+
 -- An item's browser sources; nil when Polestar marks it retired (hidden). it (optional): the shipped
 -- item (rl, il, rep) for the item-level rule and the reputation note. Codex reads are Polestar
 -- internals: one that errors (Polestar changed) drops that source, or all of the item's, and is kept in
@@ -214,8 +245,19 @@ function Sources.For(id, codex, player, lim, it)
 	if type(rec) ~= "table" then return {} end
 	if rec.status == "retired" then return nil end
 	local out = {}
-	for _, src in ipairs(type(rec.sources) == "table" and rec.sources or {}) do
-		local ok, v = pcall(Sources.View, src, codex, player, lim)
+	local srcs = type(rec.sources) == "table" and rec.sources or {}
+	local generic = Sources.GenericWorld(rec, it)
+	if generic then -- the world source first (the tooltip's first line)
+		local first, rest = {}, {}
+		for _, src in ipairs(srcs) do
+			local t = type(src) == "table" and src.type == "world" and first or rest
+			t[#t + 1] = src
+		end
+		for _, src in ipairs(rest) do first[#first + 1] = src end
+		srcs = first
+	end
+	for _, src in ipairs(srcs) do
+		local ok, v = pcall(Sources.View, src, codex, player, lim, generic)
 		if not ok then
 			Sources.lastError = v
 		elseif v then

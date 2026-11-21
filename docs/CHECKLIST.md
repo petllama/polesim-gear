@@ -1,4 +1,8 @@
-# In-game checklist (one session, on a priest) — PoleSim Gear 0.2.1
+# In-game checklist (one session, on a priest) — PoleSim Gear 0.2.2
+
+**0.2.2 over 0.2.1** (no new files: `tools/install.sh` then `/reload` is enough): green world drops
+("... of Magic", "... of the Whale": any mob of their levels drops them) are no longer dungeon loot;
+they are under BoE / World only. Dungeons keep boss/dungeon drops and blue+ items. Check: K14.
 
 **0.2.1 over 0.2.0** (no new files: `tools/install.sh` then `/reload` is enough): the window is larger
 (980x600) and resizable, nothing in it is cut, worn items show their icon and name, the equipped strip
@@ -361,7 +365,10 @@ last (hover: "luck, not a plan"). Quests: a zone's quests as "[level] title" hea
 your route / needs: X first on a second line; hover: the full title); their rewards below. Crafting;
 Vendors with prices; BoE / World. **Waypoint** on a quest header: Polestar's arrow points at the quest
 giver; on a dungeon header: at the entrance; on a vendor row: at the vendor. Set as plan and the star
-work here too.
+work here too. **0.2.2:** a dungeon lists no green "of Magic / of the Whale" items (e.g. Medicine Staff,
+Buccaneer's Vest, Zircon Band); tick BoE / World and they are there, their hover starting with "World drop,
+levels A-B" and a dungeon drop saying where ("Drop: Gilnid, 1.25%, Deadmines"). Boss loot (Cookie's
+Tenderizer, Bloody Apron) and blue BoEs (Skycaller, Witching Stave) stay under Dungeons.
 
 **K15. Weights.** "Levels A-B (your band)" with the weights and bars. ">" steps to the next band, "<"
 back; at the first band "<" is faded and does nothing, at the last ">" is. The spec radios: Holy

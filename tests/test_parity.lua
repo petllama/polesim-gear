@@ -4,7 +4,7 @@ local FILES = { "Core.lua", "Data/Weights.lua", "Data/Suffixes.lua", "Data/Items
 
 local function fixture()
 	local text = assert(loadfile("tests/fixtures/parity.lua"))()
-	local rows, best, gains = {}, {}, {}
+	local rows, best, gains, world = {}, {}, {}, {}
 	for line in text:gmatch("[^\n]+") do
 		local f = {}
 		for x in (line .. "\t"):gmatch("([^\t]*)\t") do f[#f + 1] = x end
@@ -15,12 +15,14 @@ local function fixture()
 			gains[#gains + 1] = { spec = f[2], level = tonumber(f[3]), gear = f[4], slot = f[5], id = tonumber(f[6]),
 				bonus = tonumber(f[7]), pair = tonumber(f[8]), pairBonus = tonumber(f[9]), delta = tonumber(f[10]),
 				pct = tonumber(f[11]) }
+		elseif f[1] == "W" then
+			world[#world + 1] = { id = tonumber(f[2]), world = f[3] == "1", generic = f[4] == "1" }
 		elseif f[1] == "B" then
 			best[#best + 1] = { spec = f[2], level = tonumber(f[3]), id = tonumber(f[4]), role = f[5],
 				bonus = tonumber(f[6]), score = tonumber(f[7]) }
 		end
 	end
-	return rows, best, gains
+	return rows, best, gains, world
 end
 
 local function weights(ns, specKey, level)
@@ -97,6 +99,18 @@ return {
 			local inst, s = ns.Score.BestSuffix(ns.Items.Get(b.id), w, cls, b.role)
 			T.eq(inst.bonus or 0, b.bonus, b.spec .. " " .. b.level .. " " .. b.id)
 			T.near(s, b.score, 1e-6)
+		end
+	end,
+	-- The generic-world-drop rule (armory.generic_world_drop): from the shipped quality and whether the
+	-- Codex has a world source, Sources.GenericWorld agrees with the website for every fixture item.
+	world_drops_equal_the_website = function()
+		local ns = T.addon(FILES)
+		local _, _, _, world = fixture()
+		T.ok(#world >= 10, "fixture W rows")
+		for _, r in ipairs(world) do
+			local srcs = { { type = "drop", npc = 1 } }
+			if r.world then srcs[2] = { type = "world", minLevel = 10, maxLevel = 30 } end
+			T.eq(ns.Sources.GenericWorld({ quality = 0, sources = srcs }, ns.Items.Get(r.id)), r.generic, "item " .. r.id)
 		end
 	end,
 }

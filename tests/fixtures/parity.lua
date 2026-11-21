@@ -6153,11 +6153,9 @@ G	priest/shadow	18	mainhand:277247,offhand:15945	mainhand	2632	12917	0	0	5.01	57
 G	priest/shadow	18	mainhand:277247,offhand:15945	mainhand	4569	12917	0	0	5.01	575.9
 G	priest/shadow	18	mainhand:277247,offhand:15945	offhand	15912	12761	0	0	4.48	294.7
 G	priest/shadow	18	mainhand:277247,offhand:15945	offhand	7554	12734	0	0	2.88	189.5
-G	priest/shadow	18	mainhand:277247,offhand:15945	offhand	15971	12734	0	0	2.88	189.5
 G	priest/shadow	18	mainhand:277247,offhand:15945	offhand	273137	0	0	0	2.59	170.4
 G	priest/shadow	18	mainhand:277247,offhand:15945	offhand	15933	12761	0	0	1.48	97.4
 G	priest/shadow	18	mainhand:277247,offhand:15945	offhand	15970	12761	0	0	1.48	97.4
-G	priest/shadow	18	mainhand:277247,offhand:15945	offhand	15946	0	0	0	0.49	32.2
 G	priest/shadow	18	mainhand:277247,offhand:15945	offhand	1172	0	0	0	0.44	28.9
 G	priest/shadow	18	mainhand:277247,offhand:15945	offhand	7608	0	0	0	0.11	7.2
 G	priest/shadow	30	mainhand:1484	mainhand	2549	0	0	0	13.56	39.3
@@ -6176,11 +6174,11 @@ G	priest/shadow	30	mainhand:1484	offhand	273052	0	865	12906	6.6	19.1
 G	priest/shadow	30	mainhand:1484	offhand	15934	12761	865	12906	6.56	19.0
 G	priest/shadow	30	mainhand:1484	offhand	15935	12761	865	12906	6.56	19.0
 G	priest/shadow	30	mainhand:1484	offhand	9800	12761	865	12906	5.56	16.1
-G	priest/shadow	30	mainhand:1484	offhand	15973	12761	865	12906	5.56	16.1
-G	priest/shadow	30	mainhand:1484	offhand	15975	12761	865	12906	5.56	16.1
 G	priest/shadow	30	mainhand:1484	offhand	13031	0	865	12906	4.76	13.8
 G	priest/shadow	30	mainhand:1484	offhand	16887	0	865	12906	4.48	13.0
 G	priest/shadow	30	mainhand:1484	offhand	249395	0	865	12906	4.26	12.3
+G	priest/shadow	30	mainhand:1484	offhand	7558	12761	865	12906	3.56	10.3
+G	priest/shadow	30	mainhand:1484	offhand	15912	12761	865	12906	2.56	7.4
 G	priest/holy	34	mainhand:7736,offhand:15945	mainhand	2549	0	0	0	40.49	451.9
 G	priest/holy	34	mainhand:7736,offhand:15945	mainhand	1207	12910	0	0	37.72	785.8
 G	priest/holy	34	mainhand:7736,offhand:15945	mainhand	3185	12909	0	0	35.2	392.9
@@ -6197,14 +6195,14 @@ G	priest/holy	34	mainhand:7736,offhand:15945	offhand	273027	0	0	0	11.88	285.6
 G	priest/holy	34	mainhand:7736,offhand:15945	offhand	7685	0	0	0	9.84	236.5
 G	priest/holy	34	mainhand:7736,offhand:15945	offhand	7609	12747	0	0	8.68	208.7
 G	priest/holy	34	mainhand:7736,offhand:15945	offhand	15918	12747	0	0	8.68	208.7
-G	priest/holy	34	mainhand:7736,offhand:15945	offhand	15976	12747	0	0	8.68	208.7
-G	priest/holy	34	mainhand:7736,offhand:15945	offhand	15977	12747	0	0	8.68	208.7
 G	priest/holy	34	mainhand:7736,offhand:15945	offhand	273052	0	0	0	8.5	204.3
 G	priest/holy	34	mainhand:7736,offhand:15945	offhand	249394	0	0	0	7.7	185.1
 G	priest/holy	34	mainhand:7736,offhand:15945	offhand	15934	12747	0	0	7.48	179.8
 G	priest/holy	34	mainhand:7736,offhand:15945	offhand	15935	12747	0	0	7.48	179.8
 G	priest/holy	34	mainhand:7736,offhand:15945	offhand	9393	0	0	0	7.36	176.9
 G	priest/holy	34	mainhand:7736,offhand:15945	offhand	16887	0	0	0	7.12	171.2
+G	priest/holy	34	mainhand:7736,offhand:15945	offhand	15929	0	0	0	5.74	138.0
+G	priest/holy	34	mainhand:7736,offhand:15945	offhand	1992	0	0	0	5.19	124.8
 G	priest/discipline	34	mainhand:7736	mainhand	1207	12908	0	0	38.85	2775.0
 G	priest/discipline	34	mainhand:7736	mainhand	3185	12907	0	0	38.0	2714.3
 G	priest/discipline	34	mainhand:7736	mainhand	2549	0	0	0	34.56	2468.6
@@ -6225,8 +6223,20 @@ G	priest/discipline	34	mainhand:7736	offhand	249395	0	0	0	10.6
 G	priest/discipline	34	mainhand:7736	offhand	249394	0	0	0	10.42	
 G	priest/discipline	34	mainhand:7736	offhand	7609	12746	0	0	9.72	
 G	priest/discipline	34	mainhand:7736	offhand	15918	12746	0	0	9.72	
-G	priest/discipline	34	mainhand:7736	offhand	15976	12746	0	0	9.72	
-G	priest/discipline	34	mainhand:7736	offhand	15977	12746	0	0	9.72	
 G	priest/discipline	34	mainhand:7736	offhand	13031	0	0	0	9.38	
 G	priest/discipline	34	mainhand:7736	offhand	15934	12746	0	0	9.15	
+G	priest/discipline	34	mainhand:7736	offhand	15935	12746	0	0	9.15	
+G	priest/discipline	34	mainhand:7736	offhand	1992	0	0	0	9.13	
+W	4575	1	1
+W	14175	1	1
+W	9792	1	1
+W	11967	1	1
+W	5197	0	0
+W	6321	0	0
+W	6392	0	0
+W	6324	0	0
+W	890	1	0
+W	776	1	0
+W	791	1	0
+W	873	1	0
 ]===]
