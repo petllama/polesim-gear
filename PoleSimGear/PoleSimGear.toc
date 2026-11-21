@@ -21,3 +21,4 @@ Live.lua
 Context.lua
 Tooltip.lua
 Arrows.lua
+Rewards.lua
