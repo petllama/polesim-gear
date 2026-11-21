@@ -17,8 +17,9 @@ function Win.RegisterTab(key, def) tabDefs[key] = def end
 -- model: Browser.Build's; groups: Groups.Build's (Sources tab, made on demand); slot: Slot Upgrades'
 -- slot; all: { key, rows } every upgrade of that slot (Show all)
 -- keep: the items the model was built to keep (Win.Keep at build time, plus kept rows found in it)
+-- pending: picks/stars made while the first model was building (its keep lacks them): checked when it ends
 local state = { model = nil, building = nil, stale = true, why = nil, groups = nil, slot = "head", all = nil,
-	allBuilding = nil, allWhy = nil, codex = nil, keep = nil }
+	allBuilding = nil, allWhy = nil, codex = nil, keep = nil, pending = nil }
 Win.state = state
 local frame
 
@@ -114,7 +115,7 @@ end
 local function release()
 	if state.building then state.building:Cancel() end
 	Win.DropAll()
-	state.building, state.model, state.stale, state.groups, state.codex, state.keep = nil, nil, true, nil, nil, nil
+	state.building, state.model, state.stale, state.groups, state.codex, state.keep, state.pending = nil, nil, true, nil, nil, nil, nil
 	for key, p in pairs(panels) do
 		local def = tabDefs[key]
 		if def and def.release then def.release(p) end
@@ -229,7 +230,7 @@ function Win.Build(soft)
 		Win.DropAll()
 		state.model, state.groups = nil, nil
 	end
-	state.building = nil
+	state.building, state.pending = nil, nil -- (this build's keep has every pick and star made so far)
 	ns.Sources.lastError = nil
 	local env, why = Win.Env()
 	state.why = why
@@ -242,6 +243,7 @@ function Win.Build(soft)
 		ended = true
 		if state.building ~= handle then return end
 		state.model, state.building, state.stale, state.groups, state.keep = model, nil, false, nil, env.keep
+		if Win.KeepPending() then return end
 		Win.Refresh()
 	end, nil, function()
 		ended = true
@@ -593,6 +595,12 @@ end
 -- A pick or star the model was not built to keep: in it anyway (redraw), else build again keeping it
 -- (a Show all row the trim left out would show as "not available").
 local function kept(k)
+	if k and state.building and not state.model then
+		-- the first build started without it: checked when that build ends (Win.KeepPending)
+		state.pending = state.pending or {}
+		state.pending[k] = true
+		return redraw()
+	end
 	if not (k and state.model and state.keep) or state.keep[k] then return redraw() end
 	if modelHas(k) then
 		state.keep[k] = true
@@ -600,6 +608,26 @@ local function kept(k)
 	end
 	state.stale = true
 	if visible() then Win.Build(true) end
+end
+-- After a build: a pick or star made during it that is still wanted and not in the model marks the
+-- model stale and builds again (the new model stays shown meanwhile) -> true when building again.
+function Win.KeepPending()
+	local pending = state.pending
+	state.pending = nil
+	if not (pending and state.model) then return false end
+	local ctx = ns.Context.Get()
+	local want = ctx and Win.Keep(ctx.spec) or {}
+	for k in pairs(pending) do
+		if want[k] and not state.keep[k] then
+			if not modelHas(k) then
+				state.stale = true
+				Win.Build(true)
+				return true
+			end
+			state.keep[k] = true
+		end
+	end
+	return false
 end
 ns.On("PLAN_CHANGED", function(spec, key)
 	local ctx = ns.Context.Get()

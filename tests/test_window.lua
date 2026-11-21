@@ -268,6 +268,22 @@ return {
 		T.eq(builds, 2, "unstarring and clearing: redraw only")
 		fx.done()
 	end,
+	-- the first build (no model yet) was started without the pick: built again when it ends
+	pick_during_the_first_build_rebuilds_after = function()
+		local fx = F.load()
+		local ns = fx.ns
+		local builds, keep = 0, nil
+		local build = ns.Browser.Build
+		ns.Browser.Build = function(env, ...) builds = builds + 1 keep = env.keep return build(env, ...) end
+		SlashCmdList.POLESIMGEAR("")
+		T.ok(ns.Window.state.building and not ns.Window.state.model, "building the first model")
+		ns.Plan.Set("shadow", "neck", { id = 424242, bonus = 0 })
+		ns.Wishlist.Toggle({ id = 424243, bonus = 0 })
+		fx.settle()
+		T.eq(builds, 2, "built once more after the first build"); T.ok(keep["424242:0"]); T.ok(keep["424243:0"])
+		T.ok(ns.Window.state.model); T.eq(ns.Window.state.stale, false)
+		fx.done()
+	end,
 	frames_made_once = function()
 		local fx = F.load()
 		local ns, U = fx.ns, fx.U
