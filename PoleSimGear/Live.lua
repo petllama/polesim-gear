@@ -2,7 +2,9 @@
 -- keys, ratings to % (ns.DATA.rating: 10 hit, 14 crit ... rating per 1%; 2 decimals like a suffix),
 -- random suffixes and any server-side change included. Equip bonuses the client may leave out are filled per family from
 -- the shipped table, and the instance lists them (inst.filled) so the tooltip can say so. Enchants are
--- not read (the website ignores them too).
+-- not read (the website ignores them too). An item not in the shipped table has no class mask (cm 0):
+-- it gets a score only when the class can use it by armor/weapon proficiency (Equip.CanUse); a class
+-- restriction ("Classes: ...") on such an item is not known.
 local ADDON, ns = ...
 local Live = {}
 ns.Live = Live

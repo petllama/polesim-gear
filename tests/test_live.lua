@@ -27,6 +27,21 @@ return {
 			ITEM_MOD_CRIT_MELEE_RATING_SHORT = 14, ITEM_MOD_CRIT_RANGED_RATING_SHORT = 28 }, nil)
 		T.eq(s.mp5, 4); T.eq(s.hp5, 3); T.eq(s.mhit, 1); T.eq(s.mcrit, 2)
 	end,
+	-- An item not in the shipped table has no class mask: it scores only when the class can use it by
+	-- armor/weapon proficiency (Equip.CanUse); a class restriction on such an item is not known.
+	unlisted_item_by_proficiency = function()
+		local ns = T.addon(FILES)
+		T.eq(ns.Items.Get(999999), nil)
+		local function at(c, sc, loc)
+			return ns.Live.Instance("item:999999", { Info = function() return loc or "INVTYPE_CHEST", 10, c, sc, 2 end,
+				Stats = function() return { ITEM_MOD_INTELLECT_SHORT = 5 } end })
+		end
+		local cloth, plate, sword = at(4, 1), at(4, 4), at(2, 7, "INVTYPE_WEAPON")
+		T.eq(cloth.cm, 0)
+		T.ok(ns.Equip.CanUse(cloth, "priest", 20), "cloth")
+		T.ok(not ns.Equip.CanUse(plate, "priest", 60), "plate")
+		T.ok(not ns.Equip.CanUse(sword, "priest", 60), "sword")
+	end,
 	fills_missing_equip_families = function()
 		local L = T.addon(FILES).Live
 		local rec = { s = { int = 5, sp = 8, mp5 = 2 } }

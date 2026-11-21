@@ -108,6 +108,8 @@ Expected on items a priest can wear (up to 5 levels above yours):
   `minus worn` and `gain`;
 - worn items say `equipped` on the right;
 - plate/mail/other-class items show nothing; the shopping comparison tooltips show nothing.
+- an item missing from PoleSim's item table (e.g. new on Forever) is judged by armor/weapon type only:
+  a class-restricted item of another class can still show a score; report one if you see it.
 - With Polestar's Gear scores also on, both show (the "PoleSim score" label comes with Phase F's
   coexist prompt).
 
