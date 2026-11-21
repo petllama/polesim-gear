@@ -33,10 +33,18 @@ end
 
 function W.install()
 	_G.CreateFrame = function() return frame() end
-	_G.C_Timer = { After = function(_, fn) fn() end }
+	W.timers = {}
+	_G.C_Timer = { After = function(_, fn) W.timers[#W.timers + 1] = fn end }
 	_G.hooksecurefunc = function() end
 	_G.SlashCmdList = {}
-	_G.UnitLevel = function() return W.level end
+	_G.UnitLevel = function() -- Run the timers due (C_Timer.After(0, ...) runs on the next frame).
+function W.flush()
+	local due = W.timers
+	W.timers = {}
+	for _, fn in ipairs(due) do fn() end
+end
+
+return W.level end
 	_G.UnitClass = function() return "Priest", "PRIEST", 5 end
 	_G.UnitRace = function() return "Undead", "Scourge", 5 end
 	_G.UnitFactionGroup = function() return "Horde", "Horde" end

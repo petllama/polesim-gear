@@ -29,7 +29,10 @@ function ns.RegisterEvent(event, fn)
 	table.insert(handlers[event], fn)
 end
 frame:SetScript("OnEvent", function(_, event, ...)
-	for _, fn in ipairs(handlers[event] or {}) do fn(...) end
+	for _, fn in ipairs(handlers[event] or {}) do
+		local ok, err = pcall(fn, ...)
+		if not ok then geterrorhandler()(err) end
+	end
 end)
 
 ns.RegisterEvent("ADDON_LOADED", function(name)
@@ -42,10 +45,20 @@ ns.RegisterEvent("ADDON_LOADED", function(name)
 end)
 
 -- Everything that changes scores: level, talents, equipment, entering the world. Context listens.
-for _, e in ipairs({ "PLAYER_LEVEL_UP", "PLAYER_EQUIPMENT_CHANGED", "TRAIT_CONFIG_UPDATED", "PLAYER_TALENT_UPDATE",
+for _, e in ipairs({ "PLAYER_LEVEL_UP", "TRAIT_CONFIG_UPDATED", "CHARACTER_POINTS_CHANGED", "PLAYER_TALENT_UPDATE",
 	"PLAYER_ENTERING_WORLD" }) do
 	ns.RegisterEvent(e, function(...) ns.Fire("STATE", e, ...) end)
 end
+-- A gear swap changes several slots at once: one STATE on the next frame.
+local equipQueued = false
+ns.RegisterEvent("PLAYER_EQUIPMENT_CHANGED", function()
+	if equipQueued then return end
+	equipQueued = true
+	C_Timer.After(0, function()
+		equipQueued = false
+		ns.Fire("STATE", "PLAYER_EQUIPMENT_CHANGED")
+	end)
+end)
 
 function ns.Print(...)
 	print("|cff66ccffPoleSim Gear|r:", ...)
@@ -56,6 +69,12 @@ function ns.Slash(name, fn) commands[name] = fn end
 SLASH_POLESIMGEAR1 = "/psg"
 SlashCmdList.POLESIMGEAR = function(msg)
 	local cmd, rest = (msg or ""):match("^%s*(%S*)%s*(.-)%s*$")
-	local fn = commands[cmd:lower()] or commands[""]
-	if fn then fn(rest) end
+	local fn = commands[cmd:lower()]
+	if fn then return fn(rest) end
+	local names = {}
+	for name in pairs(commands) do
+		if name ~= "" then names[#names + 1] = "/psg " .. name end
+	end
+	table.sort(names)
+	ns.Print("usage: " .. (#names > 0 and table.concat(names, ", ") or "/psg"))
 end
