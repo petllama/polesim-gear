@@ -753,7 +753,7 @@ function Win.RowLines(r, ctx, band, hint, extra)
 		GameTooltip:AddLine(s.text .. (where and (", " .. where) or ""), 1, 1, 1, true)
 		if s.cost then GameTooltip:AddLine("  " .. ns.Style.Money(s.cost), 0.8, 0.8, 0.8) end
 		if s.needs then GameTooltip:AddLine("  needs: " .. s.needs .. " first", 1, 0.5, 0.3, true) end
-		if s.route then GameTooltip:AddLine(format("  on your route (Polestar guide step %d)", s.route), 0.3, 0.8, 1, true) end
+		if s.route then GameTooltip:AddLine("  " .. ns.Route.Line(s.route), 0.3, 0.8, 1, true) end
 	end
 	if type(extra) == "string" then extra = { extra } end
 	for _, line in ipairs(extra or {}) do GameTooltip:AddLine(line, 1, 0.82, 0, true) end
@@ -799,7 +799,32 @@ local function rebuild()
 	if visible() then Win.Build() end
 end
 ns.On("SCORES_CHANGED", rebuild)
-ns.On("ROUTE_CHANGED", rebuild)
+-- Polestar moved on (a step, a tab, a guide): each quest source's route is read again in place
+-- (Route.Upcoming, cached per quest) and the rows redrawn; the scores did not change, so no rebuild.
+local function reroute()
+	local m = state.model
+	if not (visible() and m and not state.building) then return rebuild() end
+	local seen = {}
+	local function each(rows)
+		for _, r in ipairs(rows or {}) do
+			local c = r.c
+			if c and not seen[c] then
+				seen[c] = true
+				for _, s in ipairs(c.sources or {}) do
+					if s.questId then s.route = ns.Route.Upcoming(s.questId) end
+				end
+			end
+		end
+	end
+	for _, def in ipairs(ns.Browser.SLOTS) do
+		each(m.now and m.now[def.key])
+		each(m.coming and m.coming[def.key])
+	end
+	each(state.all and state.all.rows)
+	state.groups = nil -- the Sources tab's quest headers copy the route
+	Win.Refresh()
+end
+ns.On("ROUTE_CHANGED", reroute)
 local function redraw() Win.Refresh() end
 
 -- Whether the model holds item key k (any slot, now or coming).

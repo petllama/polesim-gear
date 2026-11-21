@@ -101,6 +101,9 @@ function Tooltip.Add(tooltip, link)
 	if not link then return end
 	scoreLines(tooltip, link)
 	local id = tonumber(link:match("item:(%d+)"))
+	-- an upcoming quest reward on the Polestar route: "Polestar: in 12 steps (Assault on Fenris Isle)"
+	local route = id and ns.Route and ns.Route.ItemLine(id)
+	if route then tooltip:AddLine(route, 0.3, 0.8, 1, true) end
 	if ns.Wishlist and id and ns.Wishlist.HasId(id) then
 		tooltip:AddLine("|A:auctionhouse-icon-favorite:12:12|a On your PoleSim wishlist", 1, 0.82, 0)
 	end

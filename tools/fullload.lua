@@ -49,6 +49,14 @@ P.Nav = { API = { version = 1, Navigate = function(owner, map, x, y, title)
 	return type(map) == "number" and x >= 0 and x <= 1 and y >= 0 and y <= 1
 end } }
 
+-- Polestar's guide engine as a fake: one active guide (100 steps) whose turn-ins are filled from the
+-- model's quest sources in the visiting pass; the bus (Polestar.On) records handlers to fire STEP_CHANGED.
+local bus, route = {}, { guide = { id = "fake/guide", title = "Fake Guide", steps = {} }, live = 75 }
+P.On = function(msg, fn) bus[msg] = bus[msg] or {}; table.insert(bus[msg], fn) end
+local function fire(msg, ...) for _, fn in ipairs(bus[msg] or {}) do fn(...) end end
+P.Engine = { GetGuide = function() return route.guide end, GetLiveStep = function() return route.live end,
+	TabLiveSteps = function() return { { guide = route.guide, live = route.live } } end }
+
 local F = require("winfix")
 _G.debugprofilestop = function() return clock() * 1000 end
 local failures = 0
@@ -223,6 +231,48 @@ for li, L in ipairs(levels) do
 			error("no slot with two upgrades")
 		end)
 		-- Sources: every kind, every place, hovers and waypoints
+		-- the Polestar route: quests of the model turned in at steps 76.. of the fake guide, live step 75;
+		-- a step change (STEP_CHANGED) moves every count down by one, in place (no rebuild)
+		local routeInfo = "none"
+		step("route", function()
+			local qs, seen = {}, {}
+			for _, def in ipairs(ns.Browser.SLOTS) do
+				for _, r in ipairs(Win.state.model.now[def.key] or {}) do
+					for _, s in ipairs(r.c.sources) do
+						if s.questId and not seen[s.questId] and #qs < 24 then seen[s.questId] = r.c.id; qs[#qs + 1] = s.questId end
+					end
+				end
+			end
+			local steps = {}
+			for i = 1, 100 do steps[i] = { goals = {} } end
+			for k, q in ipairs(qs) do steps[75 + k].goals[1] = { t = "turnin", quest = q } end
+			route.guide.steps, route.live = steps, 75
+			fire("GUIDE_CHANGED", route.guide.id)
+			settle()
+			local function count()
+				local n, sample = 0, nil
+				for _, def in ipairs(ns.Browser.SLOTS) do
+					for _, r in ipairs(Win.state.model.now[def.key] or {}) do
+						for _, s in ipairs(r.c.sources) do
+							if s.route then n = n + 1; sample = sample or s end
+						end
+					end
+				end
+				return n, sample
+			end
+			local n, s = count()
+			if #qs > 0 and n == 0 then error("no source on the route") end
+			if not s then return end
+			local ahead, line = s.route.ahead, ns.Route.ItemLine(seen[s.questId])
+			if not line then error("no tooltip line for item " .. tostring(seen[s.questId])) end
+			route.live = 76
+			fire("STEP_CHANGED", 76)
+			local n2, s2 = count()
+			local after = s.route and s.route.ahead
+			if s.route and after ~= ahead - 1 then error(("ahead %s -> %s"):format(ahead, tostring(after))) end
+			routeInfo = ("%d quests, %d sources tagged; %q -> %q; tooltip %q"):format(#qs, n, ns.Route.Tag({ active = true, ahead = ahead }),
+				s.route and ns.Route.Tag(s.route) or "passed", line)
+		end)
 		step("sources", Win.SetTab, "sources")
 		local src = Win.Panel("sources")
 		local TS = ns.TabSources
@@ -289,6 +339,7 @@ for li, L in ipairs(levels) do
 			n("plan upgrades +0"), n("plan upgrades +5"), n("plan all +0"), n("plan wishlist +0"), n("places dungeon"), n("places quest"),
 			n("places crafted"), n("places vendor"), n("rows dungeon"), n("rows quest"), n("rows crafted"), n("rows vendor"), n("rows world"),
 			tostring(counts.picked)))
+		print("  route: " .. routeInfo)
 		for i = 1, math.min(10, #errors) do print("  " .. errors[i]) end
 		if #errors > 0 then failures = failures + 1 end
 		for i = #navs, 1, -1 do navs[i] = nil end

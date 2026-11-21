@@ -100,12 +100,12 @@ local function placeLines(d)
 	return out
 end
 
--- a quest header's title and tags (elite, on your route, needs: X first), coloured
+-- a quest header's title and tags (elite, steps ahead on the Polestar route, needs: X first), coloured
 local function questTitle(q) return format("[%d] %s", q.level or 0, q.title or "?") end
 local function questTags(q)
 	local tags = {}
 	if q.elite then tags[#tags + 1] = S.Colour(C.orange) .. "elite|r" end
-	if q.route then tags[#tags + 1] = S.Colour(C.blue) .. "on your route|r" end
+	if q.route then tags[#tags + 1] = S.Colour(C.blue) .. ns.Route.Tag(q.route) .. "|r" end -- "in 12 steps"
 	if q.needs then tags[#tags + 1] = S.Colour(C.orange) .. "needs: " .. q.needs .. " first|r" end
 	return tags
 end
@@ -113,6 +113,7 @@ function Tab.QuestTooltip(owner, q)
 	GameTooltip:SetOwner(owner, "ANCHOR_RIGHT")
 	GameTooltip:AddLine(questTitle(q), 1, 0.82, 0, true)
 	for _, t in ipairs(questTags(q)) do GameTooltip:AddLine(t, 1, 1, 1, true) end
+	if q.route then GameTooltip:AddLine(ns.Route.Line(q.route), 0.3, 0.8, 1, true) end
 	GameTooltip:AddLine("Its rewards that are upgrades are listed below.", 0.6, 0.6, 0.6, true)
 	GameTooltip:Show()
 end

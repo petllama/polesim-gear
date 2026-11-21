@@ -259,9 +259,10 @@ return {
 		box.view.init(row, e)
 		T.eq(row.kind.text, ns.Style.KIND_SHORT[s1.kind], "a short word: the column is narrow")
 		T.eq(row.route.shown, false)
-		s1.route = 3
+		s1.route = { guide = "Silverpine Forest", step = 87, ahead = 3, active = true }
 		box.view.init(row, e)
 		T.eq(row.kind.text, ns.Style.KIND_SHORT[s1.kind], "no \"(route)\" text"); T.eq(row.route.shown, true, "a route marker on the icon")
+		T.ok(row.plan.sub.text:find("in 3 steps", 1, true), "the steps ahead under the name: " .. row.plan.sub.text)
 		T.eq(ns.Style.KIND_SHORT.world, "World"); T.eq(ns.Style.KIND_SHORT.dungeon, "Dungeon")
 		fx.done()
 	end,

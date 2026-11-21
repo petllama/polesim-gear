@@ -126,7 +126,7 @@ function Tab.Init(row, d)
 	end
 	local s = d.c.sources[1]
 	local sub = s and s.text or ""
-	if s and s.route then sub = sub .. " " .. S.Colour(C.blue) .. "(route)|r" end
+	if s and s.route then sub = sub .. " " .. S.Colour(C.blue) .. ns.Route.Tag(s.route) .. "|r" end -- "in 12 steps"
 	if s and s.needs then sub = sub .. " " .. S.Colour(C.orange) .. "needs: " .. s.needs .. " first|r" end
 	row.item:Set(d.c.inst, sub)
 	row.level:SetText("lvl " .. (d.at or d.c.rl or 0))

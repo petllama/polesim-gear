@@ -27,6 +27,11 @@ return {
 		T.ok(#rows >= 2)
 		T.eq(U.ownText(rows[1].action), "Suggested"); T.eq(U.ownText(rows[2].action), "Set as plan")
 		T.ok(rows[1].item.sub.text ~= "", "first source shown")
+		rows[1].d.c.sources[1].route = { guide = "Silverpine Forest", step = 87, ahead = 12, active = true }
+		rows = U.rows(p.list)
+		T.ok(rows[1].item.sub.text:find("in 12 steps", 1, true), rows[1].item.sub.text)
+		T.ok(not rows[1].item.sub.text:find("(route)", 1, true), rows[1].item.sub.text)
+		rows[1].d.c.sources[1].route = nil
 		T.ok(rows[1].level.text:match("^lvl %d+"), rows[1].level.text)
 		T.eq(rows[1].kind.text, ns.Style.KIND_SHORT[rows[1].d.c.sources[1].kind])
 		T.ok(rows[1].pct.text:find("%%"), "Gain % shown: " .. tostring(rows[1].pct.text))

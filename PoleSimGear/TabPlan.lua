@@ -101,16 +101,20 @@ local function fill(row, e)
 		elseif r.at then
 			sub = "level " .. r.at
 		end
+		local route
+		for _, s in ipairs(r.c.sources) do route = route or s.route end
+		if route then -- "in 12 steps": the first source on the Polestar route
+			local tag = S.Colour(C.blue) .. ns.Route.Tag(route) .. "|r"
+			sub = sub and (sub .. "  " .. tag) or tag
+		end
 		row.plan:Set(r.c.inst, sub)
 		row.delta:SetText(S.Signed(r.gain))
 		row.pct:SetText(S.Pct(r.gain, r.base)) -- over everything it replaces (main + off hand for a staff)
 		local k = primaryKind(r)
 		row.srcIcon:SetTexture(k and S.KIND_ICON[k])
 		row.srcIcon:SetShown(k ~= nil)
-		local route = false
-		for _, s in ipairs(r.c.sources) do route = route or s.route ~= nil end
 		row.kind:SetText(k and S.KIND_SHORT[k] or "")
-		row.route:SetShown(route)
+		row.route:SetShown(route ~= nil)
 		row.star:Show()
 		row.star:Set(ns.Wishlist.Has(r.c.inst))
 	elseif e.missing or entry.missing then

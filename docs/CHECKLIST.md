@@ -1,5 +1,12 @@
 # In-game checklist (one session, on a priest; section M on a mage) — PoleSim Gear 0.3.1
 
+**0.3.3 over 0.3.2** (no new files: `tools/install.sh` then `/reload` is enough): a quest reward that one
+of your open Polestar guides turns in **ahead of you** says how far: "in 12 steps" (active guide),
+"(this step)", "The Barrens, in 30 steps" (another open tab), "next guide: <name>" (the guide yours hands
+off to), in blue on Slot Upgrades and Gear Plan rows and on the Sources tab's quest headers; the row
+tooltip says "On your Polestar route: <guide>, step 87 (12 steps ahead)"; the game's item tooltip gets
+"Polestar: in 12 steps (<quest>)". Passed or turned-in quests show nothing. Check: K22.
+
 **0.3.1 over 0.3.0:** clicking an icon in the equipped strip opens Slot Upgrades on that slot (both rings: Rings;
 both trinkets: Trinkets); the slot's tooltip ends with "Click: this slot's upgrades". `/reload` is enough.
 
@@ -366,15 +373,15 @@ with their gains. The item's own tooltip (bag or a chat link) shows "On your Pol
 now" with what you wear. Back to **Upgrades only**.
 
 **K13. Slot Upgrades.** The slot picker lists every slot; the count line ("N upgrades: Quests 3, Vendors
-2, ..."); rows with "lvl N", the source, "(route)" in blue on rewards of your guide's turn-ins, "needs:
+2, ..."); rows with "lvl N", the source, "in N steps" in blue on rewards of your guide's turn-ins (K22), "needs:
 <quest> first" in orange; the first row's button says "Suggested". On a crowded slot (chest at 30+),
 where the list was trimmed (25 kept per source kind), the last row says "Show all (N)": click it,
 "Scoring every upgrade..." briefly, then all N.
 
 **K14. Sources.** Pills with counts: Dungeons, Quests, Crafting, Vendors, BoE / World. Dungeons: places
 with level ranges; a dungeon's rows show the boss (or mob) and the chance; drops under 1% are faded and
-last (hover: "luck, not a plan"). Quests: a zone's quests as "[level] title" headers (tags elite / on
-your route / needs: X first on a second line; hover: the full title); their rewards below. Crafting;
+last (hover: "luck, not a plan"). Quests: a zone's quests as "[level] title" headers (tags elite / in N
+steps / needs: X first on a second line; hover: the full title); their rewards below. Crafting;
 Vendors with prices; BoE / World. **Waypoint** on a quest header: Polestar's arrow points at the quest
 giver; on a dungeon header: at the entrance; on a vendor row: at the vendor. Set as plan and the star
 work here too. **0.2.2:** a dungeon lists no green "of Magic / of the Whale" items (e.g. Medicine Staff,
@@ -444,6 +451,27 @@ Hover the **current item** (icon or name in the "Current item" column): the worn
 a click there still opens Slot Upgrades. Hover a bag item afterwards: its usual PoleSim score line is
 back. Report: a row whose stats or suffix differ from the row's name, a missing or doubled score block,
 lines lost after "Retrieving item information", any Lua error.
+
+**K22. Steps ahead on your Polestar route (0.3.3).** Polestar's guide window open, on a guide with quest
+turn-ins ahead. First the turn-ins of the active guide within 15 steps (quest id, then the tag):
+
+```
+/run local R,E=PoleSimGear.Route,Polestar.Engine print("live",E.GetLiveStep()) for q in pairs(R.Build(E.GetGuide())) do local r=R.Upcoming(q) if r and r.ahead and r.ahead<15 then print(q,R.Tag(r)) end end
+```
+
+Expected: `live 75` (your step) and lines like `1234 in 3 steps`. Then:
+- open the window; on Slot Upgrades (the slot of such a reward) its row says "Quest: ... in 3 steps" in
+  blue; the Gear Plan row (if it is the plan) has the blue dot and "in 3 steps" under the name; Sources
+  -> Quests: the quest's header tags say "in 3 steps"; hover a row: "On your Polestar route: <guide>,
+  step N (3 steps ahead)";
+- hover the reward anywhere else (quest log, chat link): the item tooltip's last lines include a blue
+  "Polestar: in 3 steps (<quest>)" (only once the window has been opened this session: it reads
+  Polestar's quest data only while it is loaded);
+- finish (or Skip) the current step: with the window open, the counts drop by one without a rebuild
+  (no "Scoring items..."); the tooltip line too;
+- High Robe of the Adjudicator (Assault on Fenris Isle): tagged only if one of your open tabs, or the
+  guide your active one hands off to, turns that quest in ahead of where that tab is; then it names the
+  guide ("<guide>, in N steps" / "next guide: <guide>"). Nothing on any guide: no tag (as before).
 
 ## L. Later in the session (or another session)
 
@@ -542,6 +570,7 @@ gain, source).
 | K19 | Skyborne | |
 | K20 | turn-in rebuild | |
 | K21 | item tooltips in the window (suffix stats, one score block, Shift compare, current item) | |
+| K22 | Polestar route: "in N steps", count drops after a step, other tab / next guide | |
 | L1 | arrows follow changes | |
 | L2 | other character not asked | |
 | M1 | mage: spec auto-detect, context | |

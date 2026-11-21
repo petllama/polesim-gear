@@ -29,8 +29,9 @@ upgrade, gold: your pick; hover a slot for the item and its gain), and the stat 
 - **Gear Plan:** one row per slot: your pick, else the best upgrade, with its gain and source. Click a
   row for that slot's upgrades; right-click: back to the suggestion, wishlist. Hover: the game's item tooltip (with
   its random suffix), then the "how?"; Shift compares with what you wear.
-- **Slot Upgrades:** every upgrade of one slot, with its level, source, "(route)" for your guide's
-  turn-ins and "needs: X first"; **Set as plan** makes one the slot's pick (per spec); "Show all (N)"
+- **Slot Upgrades:** every upgrade of one slot, with its level, source, "in 12 steps" for a quest one
+  of your open Polestar guides turns in ahead of you ("The Barrens, in 30 steps" for another tab,
+  "next guide: X" for the guide yours goes on to; the item's tooltip says it too) and "needs: X first"; **Set as plan** makes one the slot's pick (per spec); "Show all (N)"
   when the list was trimmed. The star adds an item to your wishlist (in every list).
 - **Sources:** where to go: dungeons, quest zones, professions, vendors and world drops, each with its
   upgrades; **Waypoint** sets Polestar's arrow to a quest giver, a dungeon entrance or a vendor

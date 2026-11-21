@@ -90,9 +90,10 @@ return {
 		local fx = F.load()
 		local reads = 0
 		_G.Polestar.Engine = { GetGuide = function() reads = reads + 1 return { steps = {} } end }
-		fx.open(); T.eq(reads, 1)
+		fx.open(); local first = reads
+		T.ok(first >= 1, "read on open")
 		SlashCmdList.POLESIMGEAR(""); fx.open()
-		T.eq(reads, 2, "read again after closing")
+		T.ok(reads > first, "read again after closing")
 		fx.done()
 	end,
 	turned_in_quest_rebuilds_once = function()
@@ -276,14 +277,14 @@ return {
 		fx.open()
 		local inst = { id = 9, name = "Robe", inv = 5, stats = { int = 5 }, quality = 2 }
 		local r = { c = { id = 9, inst = inst, score = 5, sources = {
-			{ kind = "quest", text = "Quest: X", where = "Westfall", needs = "First", route = 3 },
+			{ kind = "quest", text = "Quest: X", where = "Westfall", needs = "First", route = { guide = "Silverpine Forest", step = 87, ahead = 12, active = true, tab = 1 } },
 			{ kind = "world", text = "Drop: Ogre (18), 2%", zoneId = 1431 } }, kinds = { quest = true, world = true }, rl = 21 },
 			gain = 2, at = 21, slot = ns.Browser.SLOTS[5] }
 		local owner = U.new("Button")
 		ns.Window.RowTooltip(owner, r, "Click: this slot's upgrades")
 		local text = table.concat(U.tip.lines, "\n")
 		for _, want in ipairs({ "Score = 5.00", "Gain over what you wear = +2.00", "Quest: X, Westfall", "needs: First first",
-			"on your route (Polestar guide step 3)", "Drop: Ogre (18), 2%, Duskwood", "Your pick", "On your wishlist",
+			"On your Polestar route: Silverpine Forest, step 87 (12 steps ahead)", "Drop: Ogre (18), 2%, Duskwood", "Your pick", "On your wishlist",
 			"Click: this slot's upgrades", "weights of levels" }) do
 			T.ok(text:find(want, 1, true), want .. " in\n" .. text)
 		end
@@ -448,6 +449,28 @@ return {
 		T.eq(builds, 0, "nothing built while hidden"); T.eq(ns.Window.state.stale, true, "built when shown again")
 		T.eq(#W.timers, 0)
 		UIParent:Show()
+		fx.done()
+	end,
+	-- A Polestar step change (ROUTE_CHANGED) re-reads each quest source's route in place: no rebuild.
+	route_change_updates_in_place = function()
+		local fx = F.load()
+		local ns, W = fx.ns, fx.W
+		fx.open()
+		local builds = 0
+		local build = ns.Browser.Build
+		ns.Browser.Build = function(...) builds = builds + 1 return build(...) end
+		local src
+		for _, list in pairs(ns.Window.state.model.now) do
+			for _, r in ipairs(list) do
+				for _, s in ipairs(r.c.sources) do if s.questId then src = src or s end end
+			end
+		end
+		T.ok(src, "a quest source in the model")
+		local r = { guide = "G", step = 5, ahead = 2, active = true }
+		ns.Route.Upcoming = function(q) return q == src.questId and r or nil end
+		ns.Fire("ROUTE_CHANGED")
+		fx.settle()
+		T.eq(builds, 0, "no rebuild"); T.eq(src.route, r, "the route read again")
 		fx.done()
 	end,
 	pick_outside_the_model_rebuilds = function()

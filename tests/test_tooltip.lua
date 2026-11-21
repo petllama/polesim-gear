@@ -231,6 +231,19 @@ return {
 		ns.Context = { Get = function() return nil end }
 		t = tip(); ns.Tooltip.Add(t, "cloth"); T.eq(#t.lines, 0, "no weights for this class")
 	end,
+	-- An upcoming quest reward on the Polestar route: one blue line (Route.ItemLine), score or not.
+	route_line = function()
+		local ns = T.addon(FILES)
+		ns.Context = { Get = function() return nil end }
+		ns.Route = { ItemLine = function(id) return id == 77 and "Polestar: in 12 steps (Assault on Fenris Isle)" or nil end }
+		local t = { lines = {} }
+		function t:AddLine(s, r, g, b) self.lines[#self.lines + 1] = s; self.blue = b end
+		ns.Tooltip.Add(t, "|cff1eff00|Hitem:77::::|h[Robe]|h|r")
+		T.eq(t.lines[1], "Polestar: in 12 steps (Assault on Fenris Isle)"); T.eq(t.blue, 1)
+		t.lines = {}
+		ns.Tooltip.Add(t, "|cff1eff00|Hitem:78::::|h[Robe]|h|r")
+		T.eq(#t.lines, 0)
+	end,
 	-- The client hook: GameTooltip and ItemRefTooltip only, forbidden tooltips skipped.
 	hook = function()
 		local post

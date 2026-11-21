@@ -121,17 +121,17 @@ return {
 		T.ok(h.title.w > 0 and h.title.w <= p.detail.w - 64, "a width: long titles are cut (at the Waypoint button)")
 		local q = p.detail.provided[1].quest
 		q.title = string.rep("A very long quest title ", 4)
-		q.elite, q.route, q.needs = true, 12, "The First Step"
+		q.elite, q.route, q.needs = true, { guide = "Silverpine Forest", step = 87, ahead = 12, active = true, tab = 1 }, "The First Step"
 		h = U.rows(p.detail)[1]
 		T.eq(h.title.text, "[18] " .. q.title, "the title alone on its line")
 		T.eq(h.tags.shown, true)
-		for _, t in ipairs({ "elite", "on your route", "needs: The First Step first" }) do T.ok(h.tags.text:find(t, 1, true), h.tags.text) end
+		for _, t in ipairs({ "elite", "in 12 steps", "needs: The First Step first" }) do T.ok(h.tags.text:find(t, 1, true), h.tags.text) end
 		local y1, y2 = h.title.points[1][3], h.tags.points[1][3] -- TOPLEFT, x, y
 		T.ok(y1 > y2 and y2 > -30 + 10, "two lines inside the row")
 		h.scripts.OnEnter(h)
 		local tip = table.concat(U.tip.lines, "\n")
 		T.ok(tip:find("[18] " .. q.title, 1, true), tip); T.ok(tip:find("needs: The First Step first", 1, true), tip)
-		T.ok(tip:find("on your route", 1, true), tip)
+		T.ok(tip:find("On your Polestar route: Silverpine Forest, step 87 (12 steps ahead)", 1, true), tip)
 		local item = U.rows(p.detail)[2]
 		T.ok(item.d.c); T.eq(item.tags.shown, false, "item rows: no tag line")
 		fx.done()
