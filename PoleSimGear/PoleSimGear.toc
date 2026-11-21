@@ -28,5 +28,6 @@ Coexist.lua
 Sources.lua
 Route.lua
 Browser.lua
+Plan.lua
 BrowserUI.lua
 Minimap.lua
