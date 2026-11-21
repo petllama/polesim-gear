@@ -1,0 +1,58 @@
+# Tests on every push and pull request. On main, when the TOC's version has no release yet, build the
+# zip (tools/package.sh: luac, both test runners, git archive) and publish GitHub release v<version>
+# with it. So a release is: bump "## Version" in PoleSimGear.toc (+ its "**X over Y:**" notes in
+# docs/CHECKLIST.md), push to main.
+name: test and release
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Lua 5.1 and LuaJIT
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq lua5.1 luajit
+
+      - name: Version
+        id: v
+        run: |
+          v=$(sed -n 's/^## Version: //p' PoleSimGear/PoleSimGear.toc | tr -d '\r')
+          [ -n "$v" ] || { echo "no ## Version in the TOC" >&2; exit 1; }
+          echo "version=$v" >> "$GITHUB_OUTPUT"
+          if git rev-parse -q --verify "refs/tags/v$v" >/dev/null; then
+            echo "released=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "released=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Test and package
+        env:
+          PSG_DIST: ${{ runner.temp }}/dist
+        run: tools/package.sh
+
+      - name: Keep the zip
+        uses: actions/upload-artifact@v4
+        with:
+          name: PoleSimGear-${{ steps.v.outputs.version }}
+          path: ${{ runner.temp }}/dist/PoleSimGear-${{ steps.v.outputs.version }}.zip
+
+      - name: Release
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && steps.v.outputs.released == 'false'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          V: ${{ steps.v.outputs.version }}
+        run: |
+          tools/release-notes.sh "$V" > "$RUNNER_TEMP/notes.md"
+          gh release create "v$V" "$RUNNER_TEMP/dist/PoleSimGear-$V.zip" \
+            --title "PoleSim Gear $V" --notes-file "$RUNNER_TEMP/notes.md" --target "$GITHUB_SHA"
