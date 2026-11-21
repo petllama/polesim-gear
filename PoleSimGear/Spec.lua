@@ -8,7 +8,8 @@ ns.Spec = Spec
 Spec.ORDER = { priest = { "discipline", "holy", "shadow" } }
 Spec.DEFAULT = { priest = "shadow" } -- armory.DEFAULT_BUILD
 
--- points[column], names[column] (the client's column headers, any language) -> spec key | nil
+-- points[column], names[column] (the client's column headers, any language) -> spec key | nil.
+-- A tie goes to the left-most column.
 function Spec.Pick(points, names, cls)
 	local order = Spec.ORDER[cls]
 	if not order then return nil end
@@ -48,6 +49,7 @@ end
 
 -- -> spec key | nil, points per column (for /psg spec)
 function Spec.Detect(cls)
+	if not Spec.ORDER[cls] then return nil end -- columns of this class unknown: the default
 	local CT, Tr = C_ClassTalents, C_Traits
 	if not (CT and CT.GetActiveConfigID and Tr and Tr.GetConfigInfo and Tr.GetTreeNodes and Tr.GetNodeInfo) then return nil end
 	local ok, cfg = pcall(CT.GetActiveConfigID)
@@ -84,7 +86,7 @@ function Spec.Detect(cls)
 		end
 	end
 	if #loose > 0 and #xs > 0 then
-		local colAt = Spec.ColumnsByX(xs, #(Spec.ORDER[cls] or {}))
+		local colAt = Spec.ColumnsByX(xs, #Spec.ORDER[cls])
 		for _, l in ipairs(loose) do
 			local c = colAt(l.x)
 			points[c] = (points[c] or 0) + l.rank
@@ -93,13 +95,22 @@ function Spec.Detect(cls)
 	return Spec.Pick(points, #names > 0 and names or nil, cls), points
 end
 
+-- The class's specs: its talent columns in order, else its weight files by name.
+function Spec.Keys(cls)
+	if Spec.ORDER[cls] then return Spec.ORDER[cls] end
+	local out = {}
+	for k in pairs(ns.DATA.specs[cls] or {}) do out[#out + 1] = k end
+	table.sort(out)
+	return out
+end
+
 -- -> spec key, "chosen" | "talents" | "default"
 function Spec.Current(cls)
 	local o = ns.char and ns.char.spec
 	if o and o ~= "auto" and ns.DATA.specs[cls] and ns.DATA.specs[cls][o] then return o, "chosen" end
 	local key = Spec.Detect(cls)
 	if key then return key, "talents" end
-	return Spec.DEFAULT[cls], "default"
+	return Spec.DEFAULT[cls] or Spec.Keys(cls)[1], "default"
 end
 
 ns.Slash("spec", function(arg)
@@ -112,8 +123,9 @@ ns.Slash("spec", function(arg)
 	end
 	local key, source = Spec.Current(cls)
 	local _, points = Spec.Detect(cls)
-	local shown = {}
-	for i = 1, #Spec.ORDER[cls] do shown[i] = (points and points[i]) or 0 end -- columns without points: 0
-	ns.Print("spec " .. key .. " (" .. source .. "); talent points " .. table.concat(shown, "/") ..
-		". /psg spec auto|" .. table.concat(Spec.ORDER[cls], "|"))
+	local keys, shown = Spec.Keys(cls), {}
+	for i = 1, #(Spec.ORDER[cls] or {}) do shown[i] = (points and points[i]) or 0 end -- columns without points: 0
+	ns.Print("spec " .. tostring(key) .. " (" .. source .. ")" ..
+		(#shown > 0 and ("; talent points " .. table.concat(shown, "/")) or "") ..
+		". /psg spec auto|" .. table.concat(keys, "|"))
 end)

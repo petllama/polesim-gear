@@ -20,6 +20,7 @@ function W.install()
 	_G.UnitFactionGroup = function() return "Horde", "Horde" end
 	_G.C_AddOns = { GetAddOnMetadata = function() return "test" end }
 	_G.geterrorhandler = function() return function(e) error(e, 0) end end
+	_G.C_Traits, _G.C_ClassTalents = nil, nil -- a test that needs talents installs them
 end
 
 return W
