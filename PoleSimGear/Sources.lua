@@ -64,6 +64,7 @@ local function call(codex, name, arg)
 end
 
 -- One Codex source -> { kind = "quest"|"dungeon"|"crafted", ok, why, text, where, questId, needs } | nil
+-- (dungeon: a drop or a container in a dungeon)
 function Sources.View(src, codex, player, lim)
 	if src.type == "quest" then
 		local q = codex.Quest(src.quest)
@@ -87,6 +88,18 @@ function Sources.View(src, codex, player, lim)
 			kind = "dungeon", ok = ok, why = why, where = inst and inst.name or key,
 			text = "Drop: " .. (npc and npc.name or "?") .. ((npc and npc.boss) and " (boss)" or "")
 				.. (src.chance and string.format(", %g%%", src.chance) or ""),
+		}
+	elseif src.type == "object" then
+		-- A container inside a dungeon (chests, Rookery Eggs) is a dungeon source (the website's rule);
+		-- open-world containers and raids are not the browser's kinds.
+		local obj = call(codex, "Object", src.object)
+		local key = obj and obj.instance
+		if not key then return nil end
+		local inst = call(codex, "Instance", key)
+		if inst and inst.kind == "raid" then return nil end
+		return {
+			kind = "dungeon", ok = true, where = inst and inst.name or key,
+			text = "Container: " .. (obj.name or "?") .. (src.chance and string.format(", %g%%", src.chance) or ""),
 		}
 	elseif src.type == "craft" then
 		-- Skill caps follow the level (armory: about level = skill / 5 when a leveling crafter gets there).

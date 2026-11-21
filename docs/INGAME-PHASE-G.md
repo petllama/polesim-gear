@@ -41,7 +41,8 @@ tab; each step's goals with `t == "turnin"` give quest -> step. It is rebuilt wh
    level) and its first source. Hover a row: the item, "scored with its best suffix" (suffix items),
    Score and its terms (the same terms as the item tooltip's Shift "how?"), "Gain over what you wear",
    a note for weapons/rings when it applies, then every source: quest (zone), dungeon drop (dungeon,
-   boss, drop chance), crafted (profession and skill); "needs: <quest> first" in orange when an
+   boss, drop chance), a container inside a dungeon ("Container: Food Crate, 2%", the dungeon; as on
+   the website), crafted (profession and skill); "needs: <quest> first" in orange when an
    earlier quest of the chain is not done; "on your route (Polestar guide step N)" in blue. **Back**
    returns to the list.
 6. "Coming up (levels L+1 to L+5)": up to 10 upgrades whose required level is in the next five
@@ -99,8 +100,7 @@ Polestar's, once per session.
 
 - A drop of dungeon trash counts as "Dungeon" (as on the website), so some BoE greens show as dungeon
   drops with a small chance.
-- Dungeon chests (objects) are not sources yet; vendors, world drops, reputation and raids are not
-  goals of the browser.
+- Vendors, world drops, reputation and raids are not goals of the browser.
 - Crafted items are gated by "about level = skill / 5" (the website's rule), not by your profession.
 - If Polestar changes its internals, a part turns off instead of erroring: no route tags (guide),
   "Polestar's Codex is not available" (Codex), or an orange "some sources could not be read" line.

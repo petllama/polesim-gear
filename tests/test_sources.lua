@@ -91,6 +91,31 @@ return {
 		T.eq(v[3].kind, "crafted"); T.ok(not v[3].ok); T.eq(v[3].why, "skill 150 (about level 30)")
 		T.eq(v[3].text, "Crafted: Tailoring 150")
 	end,
+	-- A container (Codex `object` source) inside a dungeon counts as a dungeon source, as on the website
+	-- (armory: in-instance containers); one in the open world or in a raid is not one of the kinds.
+	dungeon_chests = function()
+		local S = T.addon(FILES).Sources
+		local OBJECTS = { [10] = { id = 10, name = "Rookery Egg", instance = "UBRS" }, [11] = { id = 11, name = "Chest" },
+			[12] = { id = 12, name = "Cache", instance = "MC" } }
+		local codex = {
+			Item = function() return { sources = {
+				{ type = "object", object = 10, chance = 3 }, { type = "object", object = 11 },
+				{ type = "object", object = 12 }, { type = "object", object = 13 },
+			} } end,
+			Quest = function() return nil end,
+			Object = function(id) return OBJECTS[id] end,
+			Instance = function(key)
+				if key == "MC" then return { name = "Molten Core", kind = "raid" } end
+				return { name = "Upper Blackrock Spire", kind = "dungeon" }
+			end,
+		}
+		local v = S.For(2, codex, player, 20)
+		T.eq(#v, 1)
+		T.eq(v[1].kind, "dungeon"); T.ok(v[1].ok); T.eq(v[1].where, "Upper Blackrock Spire")
+		T.eq(v[1].text, "Container: Rookery Egg, 3%")
+		codex.Object = nil -- an older Polestar without Codex.Object: no source, no error
+		T.eq(#S.For(2, codex, player, 20), 0)
+	end,
 	-- A Codex that changed upstream (a function gone, a read that errors) costs the item its sources, never
 	-- an error in the browser.
 	views_guarded = function()
