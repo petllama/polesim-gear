@@ -77,6 +77,28 @@ return {
 		T.eq(#shown, 1, "never again")
 		done()
 	end,
+	-- Yes when Set fails: the message says whether the value was stored (a Polestar listener erred after
+	-- storing it: /reload applies it) or not (turn it off by hand), read back through Polestar.Get.
+	prompt_yes_fallbacks = function()
+		local ns, shown = prompt()
+		local said = {}
+		ns.Print = function(msg) said[#said + 1] = msg end
+		local stored
+		_G.Polestar.Get = function() return stored end
+		_G.Polestar.Set = function(_, v) stored = v error("listener") end
+		ns.Coexist.MaybeAsk()
+		StaticPopupDialogs[KEY].OnAccept()
+		T.ok(said[1] and said[1]:find("/reload", 1, true), "stored, a listener erred: " .. tostring(said[1]))
+		_G.Polestar.Set = function() error("Set changed upstream") end
+		stored = nil
+		StaticPopupDialogs[KEY].OnAccept()
+		T.ok(said[2] and said[2]:find("Questing > Rewards & gear > Gear advice", 1, true), "not stored: " .. tostring(said[2]))
+		T.ok(not said[2]:find("/reload", 1, true))
+		_G.Polestar.Set = function(_, v) stored = v end
+		StaticPopupDialogs[KEY].OnAccept()
+		T.ok(said[3]:find("Polestar options: Questing > Rewards & gear > Gear advice", 1, true), "the options path: " .. said[3])
+		done()
+	end,
 	prompt_no = function()
 		local ns, shown, set = prompt()
 		ns.Coexist.MaybeAsk()

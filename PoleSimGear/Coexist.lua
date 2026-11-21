@@ -23,11 +23,20 @@ end
 -- Polestar 0.4.1.1 Core/Init.lua ns.Set(path, value): stores the setting and fires its
 -- SETTING_CHANGED, which its Gear module answers at once (Gear.lua: invalidate -> GEAR_UPDATED repaints
 -- its bag arrows; its tooltip and reward picks read Gear.IsEnabled() on each use): no /reload.
+-- -> ok (Set ran without an error), stored (Polestar.Get reads the value back as off)
 function Coexist.TurnOff()
 	local P = _G.Polestar
-	if type(P) ~= "table" or type(P.Set) ~= "function" then return false end
-	return (pcall(P.Set, "gear.enabled", false))
+	if type(P) ~= "table" or type(P.Set) ~= "function" then return false, false end
+	local ok = pcall(P.Set, "gear.enabled", false)
+	local stored = false
+	if type(P.Get) == "function" then
+		local got, v = pcall(P.Get, "gear.enabled")
+		stored = got and v == false
+	end
+	return ok, stored
 end
+
+local OPTIONS = "Polestar options: Questing > Rewards & gear > Gear advice"
 
 -- Our tooltip line is labelled while both score items.
 function Coexist.Label()
@@ -51,7 +60,14 @@ if type(StaticPopupDialogs) == "table" then
 		button2 = NO or "No",
 		OnAccept = function()
 			answer("yes")
-			if Coexist.TurnOff() then ns.Print("Polestar's gear scores are off (Polestar options: Gear to turn them back on).") end
+			local ok, stored = Coexist.TurnOff()
+			if ok then
+				ns.Print("Polestar's gear scores are off (" .. OPTIONS .. " to turn them back on).")
+			elseif stored then
+				ns.Print("Polestar's gear scores are set off, but Polestar reported an error applying it: /reload if they still show.")
+			else
+				ns.Print("Could not turn off Polestar's gear scores: turn them off in " .. OPTIONS .. ".")
+			end
 			ns.Fire("STATE", "COEXIST")
 		end,
 		OnCancel = function(dialog, _, reason)
