@@ -54,15 +54,18 @@ end
 
 -- Decoded only as asked: Peek decodes an item without keeping it (an item Get kept is shared). The
 -- browser walks thousands of items per build; keeping them all decoded cost ~8 MB for the session.
--- With the index built (ByInv) the line is read at its recorded offset, without searching the blob.
+-- With the index built (ByInv) the line is read at its recorded offset, without searching the blob
+-- (if the id is there: else it is searched for).
 local lineOf -- id -> offset * 128 + required level (one number per item: the index stays as small)
 local function line(blob, id)
 	local v = lineOf and lineOf[id]
-	local _, e
+	local key, _, e = "\n" .. id .. "\t"
 	if v then
 		e = math.floor(v / 128) - 1 -- the tab before the fields
-	else
-		_, e = find(blob, "\n" .. id .. "\t", 1, true)
+		if sub(blob, e - #key + 1, e) ~= key then e = nil end -- the table changed under the index
+	end
+	if not e then
+		_, e = find(blob, key, 1, true)
 		if not e then return nil end
 	end
 	local stop = find(blob, "\n", e + 1, true)

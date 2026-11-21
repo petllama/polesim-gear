@@ -83,4 +83,14 @@ return {
 		string.find = find
 		assert(ok, err)
 	end,
+	-- An offset that no longer points at its id (the table changed under the index) is not trusted:
+	-- the line is searched for instead of decoding a neighbour.
+	peek_checks_the_offset = function()
+		local ns = T.addon(FILES)
+		ns.Items.ByInv()
+		ns.DATA.items = "\n1\tShifted\t1\t1\t1\t7\t4\t1\t\t0\t0\t\t0\t\t0\t0\t0\t0" .. ns.DATA.items
+		local p = ns.Items.Peek(6540)
+		T.eq(p and p.id, 6540); T.eq(p and p.name, "Willow Pants")
+		T.eq(ns.Items.Peek(11288).dps > 0, true)
+	end,
 }
