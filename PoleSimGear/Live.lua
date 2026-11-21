@@ -122,7 +122,8 @@ Live.Client = {
 	end,
 }
 
--- link -> instance | nil, "pending" (the client has not got the item yet)
+-- link -> instance | nil, "pending" (the client has not got the item yet). inst.fromTable: the client
+-- knew the item but gave no stats, so the stats are the shipped table's (not to be cached).
 function Live.Instance(link, client)
 	client = client or Live.Client
 	local id = type(link) == "string" and tonumber(link:match("item:(%d+)"))
@@ -135,17 +136,19 @@ function Live.Instance(link, client)
 	local rec = ns.Items.Get(id)
 	if not t and not rec then return nil, "pending" end
 	local bonus = Live.Bonus(link, rec)
-	local stats, armor, dps, filled
+	local stats, armor, dps, filled, fromTable
 	if t then
 		stats, armor, dps, filled = Live.Stats(t, rec)
 	else -- the client knows the item but gave no stats yet: the shipped facts, all of them from the table
 		local inst = ns.Score.Instance(rec, bonus)
 		stats, armor, dps, filled = inst.stats, inst.armor, inst.dps, {}
 		for k in pairs(stats) do filled[k] = true end
+		fromTable = true -- callers do not keep it: the client's stats may come on the next read
 	end
 	return {
 		id = id, link = link, bonus = bonus, inv = inv, rl = minLevel or (rec and rec.rl) or 0, c = classID or (rec and rec.c),
 		sc = subclassID or (rec and rec.sc), cm = rec and rec.cm or 0, unique = rec and rec.u or false,
 		quality = quality, stats = stats, armor = armor, dps = dps, weapon = dps > 0, filled = filled,
+		fromTable = fromTable,
 	}
 end

@@ -114,5 +114,9 @@ return {
 		local i = ns.Live.Instance("item:6540::::::::18::::1:12720::::", client)
 		T.eq(i.bonus, 12720); T.eq(i.stats.int, ns.Score.Instance(ns.Items.Get(6540), 12720).stats.int)
 		T.ok(i.stats.int and i.stats.int > 0)
+		T.eq(i.fromTable, true, "built from the table: tagged so callers do not keep it")
+		local live = ns.Live.Instance("item:6540::::::::18::::1:12720::::",
+			{ Info = client.Info, Stats = function() return { ITEM_MOD_INTELLECT_SHORT = 3 } end })
+		T.eq(live.fromTable, nil, "client stats: not tagged")
 	end,
 }

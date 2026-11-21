@@ -118,6 +118,19 @@ return {
 		T.eq(calls, 3)
 		unclient()
 	end,
+	-- Built from the shipped table while the client has no stats yet: drawn, not kept (the next hover
+	-- reads the client again).
+	hover_from_table_not_cached = function()
+		local ns, GT, _, show = client()
+		local calls = 0
+		local fromTable = { id = 1, inv = 1, c = 4, sc = 1, cm = 0, stats = { int = 10 }, armor = 0, dps = 0, rl = 30, fromTable = true }
+		ns.Live.Instance = function() calls = calls + 1 return fromTable end
+		show(GT, "cloth")
+		T.ok(#GT.lines > 0, "drawn")
+		show(GT, "cloth")
+		T.eq(calls, 2)
+		unclient()
+	end,
 	hover_pending_not_cached = function()
 		local ns, GT, _, show = client()
 		local calls = 0

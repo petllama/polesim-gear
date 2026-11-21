@@ -53,7 +53,8 @@ local secret = issecretvalue or function() return false end
 local drawn = setmetatable({}, { __mode = "k" }) -- tooltip -> the item link our lines were drawn for
 
 -- The hover path's results per link ({ inst, cmp }, or false: nothing to show), kept until scores
--- change; a pending item is not kept. Bounded: emptied when it reaches CACHE_MAX links.
+-- change; a pending item, or one built from the shipped table while the client had no stats yet
+-- (inst.fromTable), is not kept. Bounded: emptied when it reaches CACHE_MAX links.
 local CACHE_MAX = 500
 local cache, cached = {}, 0
 ns.On("SCORES_CHANGED", function() cache, cached = {}, 0 end)
@@ -66,6 +67,7 @@ local function lookup(link, ctx)
 	local cmp = inst and ns.Equip.CanUse(inst, ctx.cls, ctx.level) and (inst.rl or 0) <= ctx.level + AHEAD
 		and ns.Equip.Compare(inst, ctx.w, ctx.cls, ctx.worn, false)
 	hit = cmp and { inst, cmp } or false
+	if inst and inst.fromTable then return hit end -- the client's stats may come by the next hover
 	if cached >= CACHE_MAX then cache, cached = {}, 0 end
 	cache[link], cached = hit, cached + 1
 	return hit
