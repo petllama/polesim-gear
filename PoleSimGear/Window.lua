@@ -379,6 +379,80 @@ function Win.UpdateLeft(f)
 	for _, b in ipairs(f.radios) do b:Set(v.show == b.show) end
 end
 
+Win.EQUIP_SLOTS = { 1, 2, 3, 15, 5, 9, 10, 6, 7, 8, 11, 12, 13, 14, 16, 17, 18 }
+function Win.CreateBottom(f)
+	local eq = S.Panel(f, 12, -400, 470, 88)
+	f.eqTitle = S.Text(eq, 12, C.white)
+	f.eqTitle:SetPoint("TOPLEFT", 8, -6)
+	f.slots = {}
+	for i, slot in ipairs(Win.EQUIP_SLOTS) do
+		local b = CreateFrame("Button", nil, eq)
+		b:SetSize(24, 24)
+		b:SetPoint("TOPLEFT", 8 + (i - 1) * 26, -28)
+		b.slot = slot
+		b.icon = b:CreateTexture(nil, "ARTWORK")
+		b.icon:SetAllPoints()
+		b.border = S.Border(b, C.cardBorder)
+		b.badge = b:CreateTexture(nil, "OVERLAY")
+		b.badge:SetSize(8, 8)
+		b.badge:SetPoint("TOPRIGHT", 2, 2)
+		b:SetScript("OnEnter", function(self)
+			GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+			GameTooltip:SetInventoryItem("player", self.slot)
+			GameTooltip:Show()
+		end)
+		b:SetScript("OnLeave", GameTooltip_Hide)
+		f.slots[i] = b
+	end
+	local wc = S.Panel(f, 490, -400, 278, 88)
+	f.wTitle = S.Text(wc, 12, C.white)
+	f.wTitle:SetPoint("TOPLEFT", 8, -6)
+	f.wLine = S.Text(wc, 12, C.white)
+	f.wLine:SetPoint("TOPLEFT", 8, -32)
+	f.wLine:SetWidth(262)
+	f.wSub = S.Text(wc, 10, C.label)
+	f.wSub:SetPoint("TOPLEFT", 8, -54)
+	f.wSub:SetWidth(262)
+	f.pencil = S.Button(wc, "", 20, 20, function() Win.SetTab("weights") end, S.ACTION)
+	f.pencil:SetPoint("TOPRIGHT", -6, -6)
+	f.pencil.tip = "Weights and spec"
+	local pen = f.pencil:CreateTexture(nil, "OVERLAY")
+	pen:SetTexture("Interface\\Buttons\\UI-GuildButton-PublicNote-Up")
+	pen:SetSize(14, 14)
+	pen:SetPoint("CENTER")
+end
+
+function Win.UpdateBottom(f, ctx)
+	local n = 0
+	local badges = {}
+	if ctx and state.model then
+		local st = Win.St()
+		st.show = "upgrades"
+		badges = ns.View.BadgeSlots(ns.View.PlanEntries(state.model, ctx.worn, st), ctx.worn)
+	end
+	for _, b in ipairs(f.slots) do
+		local link = GetInventoryItemLink("player", b.slot)
+		if link then n = n + 1 end
+		b.icon:SetTexture(GetInventoryItemTexture("player", b.slot) or "Interface\\PaperDoll\\UI-Backpack-EmptySlot")
+		local q = link and ITEM_QUALITY_COLORS and ITEM_QUALITY_COLORS[GetInventoryItemQuality("player", b.slot) or 1]
+		S.SetBorder(b.border, q and q.r and { q.r, q.g, q.b } or C.cardBorder)
+		local kind = badges[b.slot]
+		local c = kind == "pick" and C.pick or C.green
+		b.badge:SetColorTexture(c[1], c[2], c[3], 1)
+		b.badge:SetShown(kind ~= nil)
+	end
+	f.eqTitle:SetText(format("Equipped gear (%d)", n))
+	if not ctx then
+		f.wTitle:SetText("Stat weights"); f.wLine:SetText(""); f.wSub:SetText("")
+		return
+	end
+	f.wTitle:SetText("Stat weights (" .. S.Title(ctx.spec) .. ")")
+	local parts = {}
+	for _, w in ipairs(ns.View.WeightRows(ctx.w, 4)) do parts[#parts + 1] = w.label .. " " .. S.Colour(C.green) .. format("%.2f", w.value) .. "|r" end
+	f.wLine:SetText(table.concat(parts, "   "))
+	f.wSub:SetText(format("levels %d-%d, points of %s", ctx.lo, ctx.band.upTo, ns.DATA.statLabels[ctx.ref] or ctx.ref))
+end
+
 function Win.Toggle()
 	if not ns.Context.ClassKey() then return ns.Print("no weights for this class yet (Priest only for now)") end
 	if not frame then create() end

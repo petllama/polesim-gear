@@ -136,4 +136,22 @@ return {
 		T.eq(ns.Options.View().show, "all"); T.eq(U.button(f, "All gear").on, true); T.eq(U.button(f, "Upgrades only").on, false)
 		fx.done()
 	end,
+	bottom_strip = function()
+		local fx = F.load()
+		local ns, U = fx.ns, fx.U
+		U.equipped[1] = "item:999001"
+		local f = fx.open()
+		local text = U.texts(f)
+		T.ok(text:find("Equipped gear (1)", 1, true), text)
+		T.ok(text:find("Stat weights (Shadow)", 1, true))
+		T.ok(text:find("levels %d+%-%d+, points of"), "band line")
+		T.eq(#f.slots, 17)
+		local head = f.slots[1]
+		head.scripts.OnEnter(head)
+		T.eq(U.tip.inventory, 1, "the item's own tooltip")
+		T.eq(head.badge.shown, true, "the head has a plan (an upgrade exists at level 20)")
+		f.pencil:Click()
+		T.eq(ns.Options.View().tab, "weights")
+		fx.done()
+	end,
 }

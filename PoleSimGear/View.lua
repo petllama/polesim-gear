@@ -115,3 +115,20 @@ function View.BandIndex(bands, level)
 	end
 	return #bands
 end
+
+-- Inventory slots that get a plan badge: { [invSlot] = "pick" | "suggestion" }. Rings and trinkets
+-- badge the slot the plan replaces (the weaker or the empty one, Browser.WornFor's choice).
+function View.BadgeSlots(entries, worn)
+	local out = {}
+	for _, e in ipairs(entries) do
+		if e.entry and (e.entry.plan or e.entry.missing) then
+			local def, slot = e.def, e.def.slot
+			if def.key == "finger" or def.key == "trinket" then
+				local a, b = worn[def.slot], worn[def.slot + 1]
+				if a and (not b or b.score < a.score) then slot = def.slot + 1 end
+			end
+			out[slot] = e.entry.isPick and "pick" or "suggestion"
+		end
+	end
+	return out
+end

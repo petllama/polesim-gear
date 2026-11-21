@@ -77,4 +77,15 @@ return {
 		T.ok(#bands >= 2); T.eq(bands[1].lo, 1); T.eq(bands[2].lo, bands[1].upTo + 1)
 		T.eq(ns.View.BandIndex(bands, bands[2].lo), 2)
 	end,
+	badge_slots = function()
+		local ns = load({ plan = { shadow = { neck = "3:0" } } })
+		local B = ns.Browser
+		local def = {}
+		for _, d in ipairs(B.SLOTS) do def[d.key] = d end
+		local function e(key, isPick) return { def = def[key], entry = { plan = {}, isPick = isPick } } end
+		local worn = { [11] = { score = 5 }, [12] = { score = 3 }, [13] = { score = 2 } }
+		local b = ns.View.BadgeSlots({ e("neck", true), e("finger"), e("trinket"), { def = def.head, entry = {} } }, worn)
+		T.eq(b[2], "pick"); T.eq(b[12], "suggestion", "the weaker ring"); T.eq(b[14], "suggestion", "the empty trinket slot")
+		T.eq(b[1], nil, "no plan")
+	end,
 }
