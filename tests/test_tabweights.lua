@@ -25,4 +25,19 @@ return {
 		T.ok(U.texts(ns.Window.Panel("weights")):find("your band", 1, true), "back on your band after closing")
 		fx.done()
 	end,
+	spec_switch = function()
+		local fx = F.load()
+		local ns, U = fx.ns, fx.U
+		fx.open()
+		ns.Window.SetTab("weights")
+		local p = ns.Window.Panel("weights")
+		local fired
+		ns.On("STATE", function(e) fired = e end)
+		T.eq(U.button(p, "Automatic (talents)").on, true)
+		T.ok(U.texts(p):find("Now: Shadow, from your talents", 1, true), U.texts(p))
+		U.button(p, "Holy"):Click()
+		T.eq(ns.char.spec, "holy"); T.eq(fired, "SPEC")
+		T.eq(U.button(p, "Holy").on, true); T.eq(U.button(p, "Automatic (talents)").on, false)
+		fx.done()
+	end,
 }

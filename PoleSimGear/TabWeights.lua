@@ -55,7 +55,34 @@ function Tab.Create(parent)
 	p.how:SetPoint("TOPLEFT", 8, -36)
 	p.how:SetWidth(390)
 	p.list = S.List(p, 0, -56, 410, S.CONTENT.h - 56, 22, initRow)
+	local t = S.Text(p, 13, C.white)
+	t:SetPoint("TOPLEFT", 420, -8)
+	t:SetText("Spec")
+	p.radios = {}
+	p.specSub = S.Text(p, 10, C.label)
+	p.specSub:SetWidth(196)
 	return p
+end
+
+-- the radios are made on the first refresh (the class's specs are known then)
+local function radios(p, ctx)
+	if #p.radios > 0 then return end
+	local keys = { { "auto", "Automatic (talents)" } }
+	for _, k in ipairs(ns.Spec.Keys(ctx.cls)) do keys[#keys + 1] = { k, S.Title(k) } end
+	for i, k in ipairs(keys) do
+		local b = S.Radio(p, k[2], function()
+			if not ns.char then return end
+			ns.char.spec = k[1]
+			view.band = nil
+			ns.Fire("STATE", "SPEC") -- as /psg spec: read the spec again, rescore, rebuild
+			ns.Window.Refresh()
+		end)
+		b:SetSize(190, 20)
+		b:SetPoint("TOPLEFT", 416, -30 - (i - 1) * 22)
+		b.spec = k[1]
+		p.radios[i] = b
+	end
+	p.specSub:SetPoint("TOPLEFT", 420, -34 - #keys * 22)
 end
 
 function Tab.Step(d)
@@ -72,6 +99,11 @@ function Tab.Refresh(p)
 		p.how:SetText("")
 		return S.SetList(p.list, {})
 	end
+	radios(p, ctx)
+	local chosen = ns.char and ns.char.spec or "auto"
+	for _, b in ipairs(p.radios) do b:Set(b.spec == chosen) end
+	p.specSub:SetText(format("Now: %s, %s", S.Title(ctx.spec),
+		ctx.specSource == "chosen" and "your choice" or (ctx.specSource == "talents" and "from your talents" or "the default (talents not read yet)")))
 	local i = math.min(view.band or mine, #bands)
 	local b = bands[i]
 	p.band:SetText(format("Levels %d-%d", b.lo, b.upTo) .. (i == mine and " (your band)" or ""))
