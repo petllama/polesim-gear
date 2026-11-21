@@ -268,4 +268,16 @@ return {
 		B.Start(env(), function() called = true end)
 		T.ok(got and got:find("boom"), tostring(got)); T.ok(not called)
 	end,
+	-- A fatal error also goes to onError (the window stops saying "Scoring...").
+	start_calls_on_error = function()
+		local B = T.addon(FILES).Browser
+		local frames, reported, failed = {}, nil, nil
+		_G.C_Timer = { After = function(_, fn) frames[#frames + 1] = fn end }
+		_G.geterrorhandler = function() return function(e) reported = e end end
+		B.Build = function(_, yield) yield() error("late boom") end
+		B.Start(env(), function() error("not done") end, nil, function(err) failed = err end)
+		T.eq(failed, nil, "still running")
+		while #frames > 0 do table.remove(frames, 1)() end
+		T.ok(failed and failed:find("late boom"), tostring(failed)); T.ok(reported and reported:find("late boom"))
+	end,
 }

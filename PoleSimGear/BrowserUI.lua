@@ -283,13 +283,19 @@ function UI.ShowAll(key)
 	dropAll()
 	local env = UI.Env()
 	if not env then return end
-	local handle
+	local handle, ended -- ended: done or failed (perhaps at once, inside Start)
 	handle = ns.Browser.Start(env, function(rows)
+		ended = true
 		if state.allBuilding ~= handle then return end
 		state.all, state.allBuilding = { key = key, rows = rows }, nil
 		UI.Refresh()
-	end, function(e, yield) return ns.Browser.SlotAll(e, key, yield) end)
-	if not state.all then state.allBuilding = handle end -- not finished at once
+	end, function(e, yield) return ns.Browser.SlotAll(e, key, yield) end, function()
+		ended = true
+		if state.allBuilding ~= handle then return end
+		state.allBuilding = nil -- "Show all (N)" again: the error went to the client's handler
+		UI.Refresh()
+	end)
+	if not ended then state.allBuilding = handle end
 	UI.Refresh()
 end
 
@@ -302,13 +308,20 @@ function UI.Build()
 	local env, why = UI.Env()
 	state.why = why
 	if not env then return UI.Refresh() end
-	local handle
+	local handle, ended -- ended: done or failed (perhaps at once, inside Start)
 	handle = ns.Browser.Start(env, function(model)
+		ended = true
 		if state.building ~= handle then return end
 		state.model, state.building, state.stale = model, nil, false
 		UI.Refresh()
+	end, nil, function()
+		ended = true
+		if state.building ~= handle then return end
+		state.building = nil -- stale stays true: reopening tries again
+		state.why = "The upgrade list could not be built (the error was reported); close and reopen to try again."
+		UI.Refresh()
 	end)
-	if state.model == nil then state.building = handle end -- not finished at once
+	if not ended then state.building = handle end
 	UI.Refresh()
 end
 

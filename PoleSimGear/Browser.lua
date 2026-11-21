@@ -297,9 +297,10 @@ end
 -- Build over several frames (no stutter opening the window); done(model) at the end. Each frame
 -- resumes the build until FRAME_MS milliseconds are spent (debugprofilestop), then waits for the next
 -- frame (one step per frame without the clock). -> a handle; handle:Cancel() stops the build.
--- work(env, yield) (optional) replaces Build (SlotAll for "Show all").
+-- work(env, yield) (optional) replaces Build (SlotAll for "Show all"). An error ending the build is
+-- reported to the client's handler and passed to onError(err) (optional); done is not called.
 Browser.FRAME_MS = 8
-function Browser.Start(env, done, work)
+function Browser.Start(env, done, work, onError)
 	local co = coroutine.create(function() return (work or Browser.Build)(env, coroutine.yield) end)
 	local clock = type(debugprofilestop) == "function" and debugprofilestop or nil
 	local handle = { Cancel = function(self) self.cancelled = true end }
@@ -308,7 +309,10 @@ function Browser.Start(env, done, work)
 		local t0 = clock and clock()
 		while true do
 			local ok, res = coroutine.resume(co)
-			if not ok then return geterrorhandler()(res) end
+			if not ok then
+				if onError then onError(res) end -- first: the window's state does not hang on the handler
+				return geterrorhandler()(res)
+			end
 			if coroutine.status(co) == "dead" then return done(res) end
 			if not clock or clock() - t0 >= Browser.FRAME_MS then break end
 		end

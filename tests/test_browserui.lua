@@ -84,6 +84,48 @@ return {
 		T.ok(e.player.completed(9), "the client's answer when Polestar's errors"); T.ok(not e.player.completed(7))
 		_G.Polestar, _G.C_QuestLog = nil, nil
 	end,
+	-- A build that fails (not one item: the whole pass) is reported, and the window leaves "Scoring
+	-- items..." for a message saying so; so does "Show all".
+	build_error_leaves_scoring = function()
+		local provided
+		local win = window(function(dp) provided = dp end)
+		local ns, W = win.ns, win.W
+		ns.Browser.KEEP = 1 -- the drill-down offers "Show all"
+		local reported = {}
+		_G.geterrorhandler = function() return function(e) reported[#reported + 1] = e end end
+		local build = ns.Browser.Build
+		ns.Browser.Build = function(_, yield) yield() error("fatal") end
+		SlashCmdList.POLESIMGEAR("")
+		T.eq(provided[1].header, "Scoring items...")
+		local n = 0
+		while #W.timers > 0 and n < 100 do W.flush() n = n + 1 end
+		T.eq(#reported, 1)
+		T.ok(provided[1].header ~= "Scoring items...", "left Scoring")
+		T.ok(provided[1].header:find("could not be built", 1, true), provided[1].header)
+		-- failing in its first step (inside Start) too
+		ns.Browser.Build = function() error("fatal at once") end
+		SlashCmdList.POLESIMGEAR("") -- close
+		SlashCmdList.POLESIMGEAR("")
+		T.eq(#reported, 2)
+		T.ok(provided[1].header:find("could not be built", 1, true), provided[1].header)
+		-- Show all fails: its "Scoring every upgrade..." row goes too
+		ns.Browser.Build = build
+		SlashCmdList.POLESIMGEAR("") -- close
+		SlashCmdList.POLESIMGEAR("")
+		n = 0
+		while #W.timers > 0 and n < 10000 do W.flush() n = n + 1 end
+		local row = win.frame()
+		local key = provided[2].slot.key
+		win.view.init(row, provided[2])
+		row.scripts.OnClick(row)
+		ns.Browser.SlotAll = function(_, _, yield) yield() error("fatal all") end
+		ns.BrowserUI.ShowAll(key)
+		T.eq(provided[#provided].header, "Scoring every upgrade...")
+		n = 0
+		while #W.timers > 0 and n < 100 do W.flush() n = n + 1 end
+		T.ok(provided[#provided].header ~= "Scoring every upgrade...", provided[#provided].header)
+		_G.Polestar = nil
+	end,
 	-- The window opens,
 	-- builds over frames, lists rows, drills into a slot, closes and lets go of the model and the index.
 	window_smoke = function()
