@@ -54,8 +54,8 @@ tab; each step's goals with `t == "turnin"` give quest -> step. It is rebuilt wh
    to it, as on the website), and the reverse for an off hand ("with <one-hander> in the main hand").
 7. Gating, check each:
    - no Alliance-only quest rewards on a Horde priest (and the reverse);
-   - no rewards of quests you already turned in: note a Quest row, turn that quest in, close and
-     reopen the window: it is gone;
+   - no rewards of quests you already turned in: note a Quest row, turn that quest in with the window
+     open: about a second later "Scoring items..." shows and the row is gone (no need to reopen);
    - no raid drops (Molten Core, Zul'Gurub, ...), no leather or mail, no other classes' quests;
    - no items Polestar marks retired (Polestar's own item search shows them as retired).
 8. The **Spec** button cycles auto / discipline / holy / shadow; the list scores again each time

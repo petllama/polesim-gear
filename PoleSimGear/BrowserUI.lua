@@ -324,5 +324,18 @@ local function rebuild()
 end
 ns.On("SCORES_CHANGED", rebuild)
 ns.On("ROUTE_CHANGED", rebuild)
+-- A quest turned in (QUEST_TURNED_IN, QuestLogDocumentation in the Forever 1.60.1 UI source) takes its
+-- rewards off the list: one rebuild a moment later for a burst of turn-ins (the completion flag is set
+-- by then), only while the window is shown (closed, it builds again when opened).
+UI.TURNIN_DELAY = 1
+local turninQueued = false
+ns.RegisterEvent("QUEST_TURNED_IN", function()
+	if turninQueued or not (frame and frame:IsShown()) then return end
+	turninQueued = true
+	C_Timer.After(UI.TURNIN_DELAY, function()
+		turninQueued = false
+		if frame and frame:IsShown() then UI.Build() end
+	end)
+end)
 ns.Slash("", UI.Toggle)
 function PoleSimGear_OnAddonCompartmentClick() UI.Toggle() end
