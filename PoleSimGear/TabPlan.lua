@@ -37,6 +37,7 @@ local function make(row)
 	row.kind = text(row, 12, C.white, COL.kind, 54)
 	row.choose = S.Button(row, "Choose", 40, 18, function()
 		local e = row.e
+		if not e then return end
 		if e.row then return ns.Window.PlanAction({ c = e.row.c, slot = e.def }) end -- a wishlist row: set as plan
 		ns.Window.OpenSlot(e.def.key)
 	end, S.ACTION)

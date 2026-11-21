@@ -304,6 +304,9 @@ function Style.List(parent, x, y, w, h, extent, init)
 	local view = CreateScrollBoxListLinearView()
 	view:SetElementExtent(extent)
 	view:SetElementInitializer("Button", init)
+	-- a released row lets go of its data (ScrollBoxListViewMixin:Release calls this): a pooled row
+	-- would otherwise keep the closed window's model alive
+	view:SetElementResetter(function(row) row.e, row.d = nil, nil end)
 	ScrollUtil.InitScrollBoxListWithScrollBar(box, bar, view)
 	box.bar = bar
 	return box

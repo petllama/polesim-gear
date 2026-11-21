@@ -132,4 +132,14 @@ return {
 		T.ok(text:find("not available now", 1, true), text)
 		fx.done()
 	end,
+	close_releases_row_references = function()
+		local fx = F.load()
+		local ns = fx.ns
+		local f = fx.open()
+		local rows = rowsOf(fx)
+		T.ok(rows[1].e, "a row holds its entry while shown")
+		f:Hide()
+		for _, r in ipairs(rows) do T.eq(r.e, nil, "released on close") end
+		fx.done()
+	end,
 }

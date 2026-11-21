@@ -72,7 +72,17 @@ function M:SetEnabled(v) self.enabled = v and true or false end
 function M:Click(button) if self.scripts.OnClick then self.scripts.OnClick(self, button or "LeftButton") end end
 function M:GetParent() return self.parent end
 function M:GetName() return self.name end
-function M:SetDataProvider(dp) self.provided = dp end -- WowScrollBoxList
+-- WowScrollBoxList: frames past the new data's end are released (the view's resetter runs on them, as
+-- ScrollBoxListViewMixin:Release does); U.rows acquires frames.
+function M:SetDataProvider(dp)
+	local keep = {}
+	for i, f in ipairs(self.frames or {}) do
+		if i <= #(dp or {}) then keep[#keep + 1] = f
+		elseif self.view and self.view.resetter then self.view.resetter(f, f.d or f.e) end
+	end
+	self.frames = keep
+	self.provided = dp
+end
 function M:SetupMenu(gen) self.menu = gen end -- WowStyle1DropdownTemplate
 
 -- A menu generator run against a recording root: -> { { text, radio, isSelected, select, fn, data }, ... }
@@ -118,10 +128,12 @@ end
 -- run a ScrollBox's element initializer over its data: -> fresh rows (one per element)
 function U.rows(box)
 	local out = {}
+	box.frames = {}
 	for i, d in ipairs(box.provided or {}) do
 		local row = new("Button", box)
 		box.view.init(row, d)
 		out[i] = row
+		box.frames[i] = row
 	end
 	return out
 end
@@ -135,6 +147,7 @@ function U.install()
 		local v = new("View")
 		function v:SetElementInitializer(_, init) self.init = init end
 		function v:SetElementExtent(n) self.extent = n end
+		function v:SetElementResetter(fn) self.resetter = fn end
 		return v
 	end
 	_G.ScrollUtil = { InitScrollBoxListWithScrollBar = function(box, _, view) box.view = view end }
