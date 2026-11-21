@@ -165,6 +165,15 @@ return {
 		local f = assert(io.open("PoleSimGear/PoleSimGear.toc"))
 		local toc = f:read("*a")
 		f:close()
-		T.ok(toc:find("TabWeights.lua\r?\nMinimap.lua"), "Minimap.lua right after the window files")
+		T.ok(toc:find("TabSettings.lua\r?\nMinimap.lua"), "Minimap.lua right after the window files")
+	end,
+	set_hidden = function()
+		local db = {}
+		local ns = load(db)
+		local b = _G.PoleSimGearMinimapButton
+		ns.Minimap.SetHidden(true)
+		T.eq(db.minimap.hide, true); T.eq(b.shown, false)
+		ns.Minimap.SetHidden(false)
+		T.eq(db.minimap.hide, false); T.eq(b.shown, true)
 	end,
 }

@@ -161,4 +161,12 @@ return {
 		T.eq(#shown, 1)
 		done()
 	end,
+	ask_again = function()
+		local ns, shown = prompt()
+		ns.db.askedPolestarGear = "no"
+		ns.Coexist.AskAgain()
+		T.eq(ns.db.askedPolestarGear, nil, "the answer is cleared")
+		T.eq(shown[#shown], KEY, "asked again now")
+		done()
+	end,
 }

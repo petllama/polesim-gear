@@ -103,9 +103,11 @@ ns.RegisterEvent("PLAYER_REGEN_ENABLED", function()
 	if waitingForCombat then Coexist.MaybeAsk() end
 end)
 
-ns.Slash("polestar", function()
+-- Forget the answer and ask again now (the Settings tab and /psg polestar).
+function Coexist.AskAgain()
 	if ns.db then ns.db.askedPolestarGear = nil end
 	askedThisSession = false
 	if not Coexist.PolestarGearOn() then ns.Print("Polestar's gear scores are off: nothing to ask.") end
 	Coexist.MaybeAsk()
-end)
+end
+ns.Slash("polestar", Coexist.AskAgain)

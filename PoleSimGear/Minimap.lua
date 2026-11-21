@@ -128,9 +128,13 @@ ns.On("DB_READY", function()
 	if Minimap and not M.button then create() end
 end)
 
-ns.Slash("minimap", function()
+-- Hide or show the button (saved; the Settings tab and /psg minimap).
+function M.SetHidden(hide)
 	local s = settings()
-	s.hide = not s.hide
+	s.hide = hide and true or false
 	if M.button then M.button:SetShown(not s.hide) end
-	ns.Print(s.hide and "minimap button hidden (/psg minimap shows it)" or "minimap button shown")
+end
+ns.Slash("minimap", function()
+	M.SetHidden(not settings().hide)
+	ns.Print(settings().hide and "minimap button hidden (/psg minimap shows it)" or "minimap button shown")
 end)

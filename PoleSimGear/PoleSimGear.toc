@@ -39,4 +39,5 @@ TabPlan.lua
 TabSlot.lua
 TabSources.lua
 TabWeights.lua
+TabSettings.lua
 Minimap.lua
