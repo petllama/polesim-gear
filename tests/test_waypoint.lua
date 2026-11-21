@@ -29,7 +29,10 @@ return {
 		_G.Polestar.Nav.API.Navigate = function() error("boom") end
 		T.eq(W.Go({ map = 1, x = 0, y = 0, title = "Y" }), false, "an error is a no")
 		_G.Polestar.Nav.API.version = 2
-		T.eq(W.Available(), true, "a later version keeps v1's calls")
+		T.eq(W.Available(), false, "another version: its calls may differ, no button")
+		T.eq(W.Go({ map = 1, x = 0, y = 0, title = "Y" }), false)
+		_G.Polestar.Nav.API.version = 0.5
+		T.eq(W.Available(), false)
 		_G.Polestar = nil
 	end,
 }

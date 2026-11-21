@@ -1,5 +1,5 @@
 -- "Waypoint" on a source: Polestar's documented Nav API (Polestar.Nav.API, version 1: Navigate(owner,
--- uiMapID, x, y, title), x and y 0-1). Without it (older Polestar, API changed) no button is shown.
+-- uiMapID, x, y, title), x and y 0-1). Without it, or another version (its calls may differ), no button.
 local ADDON, ns = ...
 local Waypoint = {}
 ns.Waypoint = Waypoint
@@ -8,7 +8,7 @@ local function api()
 	local P = _G.Polestar
 	local N = type(P) == "table" and P.Nav
 	local A = type(N) == "table" and N.API
-	if type(A) == "table" and type(A.version) == "number" and A.version >= 1 and type(A.Navigate) == "function" then return A end
+	if type(A) == "table" and A.version == 1 and type(A.Navigate) == "function" then return A end
 	return nil
 end
 
