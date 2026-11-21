@@ -107,8 +107,8 @@ function Tab.Refresh(p)
 	local i = math.min(view.band or mine, #bands)
 	local b = bands[i]
 	p.band:SetText(format("Levels %d-%d", b.lo, b.upTo) .. (i == mine and " (your band)" or ""))
-	p.prev:SetEnabled(i > 1)
-	p.next:SetEnabled(i < #bands)
+	S.SetEnabled(p.prev, i > 1)
+	S.SetEnabled(p.next, i < #bands)
 	p.how:SetText(format("An item's score = its stats x these weights, in points of %s.", ns.DATA.statLabels[ctx.ref] or ctx.ref))
 	local rows = ns.View.WeightRows(b.w)
 	local max = rows[1] and rows[1].value or 1

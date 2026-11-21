@@ -145,7 +145,7 @@ function Style.Button(parent, text, w, h, onClick, colours)
 	Style.SetColours(b, colours or Style.TAB)
 	b:SetScript("OnEnter", function(self)
 		local hv = self.colours[4]
-		self.bg:SetColorTexture(hv[1], hv[2], hv[3], 1)
+		if self:IsEnabled() then self.bg:SetColorTexture(hv[1], hv[2], hv[3], 1) end
 		if self.tip then
 			GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
 			GameTooltip:AddLine(self.tip, 1, 1, 1, true)
@@ -164,7 +164,14 @@ function Style.SetColours(b, colours)
 	b.colours = colours
 	b.bg:SetColorTexture(colours[1][1], colours[1][2], colours[1][3], 1)
 	Style.SetBorder(b.border, colours[2])
-	b.label:SetTextColor(colours[3][1], colours[3][2], colours[3][3])
+	local t = b:IsEnabled() and colours[3] or C.label
+	b.label:SetTextColor(t[1], t[2], t[3])
+end
+-- A Style.Button on or off, with the look: off is faded with a grey label and no hover colour.
+function Style.SetEnabled(b, on)
+	b:SetEnabled(on)
+	b:SetAlpha(on and 1 or 0.4)
+	Style.SetColours(b, b.colours)
 end
 -- Checkbox row (box, tick, label): b:Set(on); a click calls onToggle(not on).
 function Style.Check(parent, label, onToggle)

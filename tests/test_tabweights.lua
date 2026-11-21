@@ -21,6 +21,12 @@ return {
 		T.ok(not U.texts(p):find("your band", 1, true))
 		U.button(p, "<"):Click()
 		T.ok(U.texts(p):find("your band", 1, true))
+		-- either end: that stepper looks disabled (faded), the other does not
+		for _ = 1, #bands do ns.TabWeights.Step(-1) end
+		T.eq(p.prev.enabled, false); T.eq(p.prev.alpha, 0.4); T.eq(p.next.alpha, 1)
+		for _ = 1, #bands do ns.TabWeights.Step(1) end
+		T.eq(p.next.enabled, false); T.eq(p.next.alpha, 0.4); T.eq(p.prev.enabled, true); T.eq(p.prev.alpha, 1)
+		ns.TabWeights.view.band = nil; ns.Window.Refresh()
 		SlashCmdList.POLESIMGEAR(""); fx.open()
 		T.ok(U.texts(ns.Window.Panel("weights")):find("your band", 1, true), "back on your band after closing")
 		fx.done()

@@ -44,6 +44,14 @@ return {
 		T.eq(cell.name.alpha, 0.5); T.eq(cell.icon.alpha, 0.5); T.eq(cell.iconFrame.alpha, 0.5); T.eq(cell.icon.desaturated, true)
 		cell:Set({ name = "Robe", quality = 3 }, "x")
 		T.eq(cell.name.alpha, 1); T.eq(cell.icon.alpha, 1); T.eq(cell.iconFrame.alpha, 1); T.eq(cell.icon.desaturated, false)
+		-- a disabled button looks disabled (faded, grey label, no hover) and comes back as it was
+		local btn = S.Button(parent, ">", 24, 22, function() end, S.ACTION)
+		S.SetEnabled(btn, false)
+		T.eq(btn.enabled, false); T.eq(btn.alpha, 0.4); T.near(btn.label.textColor[1], S.C.label[1])
+		btn.scripts.OnEnter(btn); T.near(btn.bg.color[1], S.ACTION[1][1], 1e-6, "no hover colour")
+		S.SetEnabled(btn, true)
+		T.eq(btn.enabled, true); T.eq(btn.alpha, 1); T.near(btn.label.textColor[1], S.ACTION[3][1])
+		btn.scripts.OnEnter(btn); T.near(btn.bg.color[1], S.ACTION[4][1], 1e-6, "hover again")
 		local picked
 		local dd = S.Dropdown(parent, 146, 24, function() return { { text = "Now", value = 0 }, { text = "+1", value = 1 } } end,
 			function(v) return v == 0 end, function(v) picked = v end)
