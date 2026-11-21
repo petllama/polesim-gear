@@ -277,4 +277,22 @@ return {
 		T.ok(text:find("On your PoleSim wishlist", 1, true), text)
 		unclient()
 	end,
+	-- The star line is the player's own mark: shown for any starred item, scored or not, switch on or off.
+	wishlist_star_always = function()
+		local ns, GT = client()
+		_G.PoleSimGearDB, _G.PoleSimGearCharDB = {}, { wish = { ["1:0"] = true, ["7:0"] = true } }
+		ns._frame.scripts.OnEvent(ns._frame, "ADDON_LOADED", "PoleSimGear")
+		GT.lines = {}
+		ns.Tooltip.Add(GT, "item:7:plate") -- not a scored hit (Live gives nothing)
+		T.eq(#GT.lines, 1, "only the star line"); T.ok(GT.lines[1]:find("On your PoleSim wishlist", 1, true))
+		ns.Options.Set("tooltip", false)
+		GT.lines = {}
+		ns.Tooltip.Add(GT, "item:1:cloth")
+		T.eq(#GT.lines, 1, "score lines off, the star line stays"); T.ok(GT.lines[1]:find("On your PoleSim wishlist", 1, true))
+		GT.lines = {}
+		ns.Tooltip.Add(GT, "item:8:plate")
+		T.eq(#GT.lines, 0, "not starred")
+		ns.Options.Set("tooltip", true)
+		unclient()
+	end,
 }

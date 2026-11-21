@@ -76,10 +76,12 @@ local function lookup(link, ctx)
 end
 Tooltip.Lookup = lookup
 
-function Tooltip.Add(tooltip, link)
+-- The score lines (switch "tooltip"), then the wishlist star line: the player's own mark, shown for any
+-- starred item whether or not it is scored and whatever the switch says (one line).
+local function scoreLines(tooltip, link)
 	if ns.Options and ns.Options.Get("tooltip") == false then return end
 	local ctx = ns.Context.Get()
-	if not (ctx and link) then return end
+	if not ctx then return end
 	local hit = lookup(link, ctx)
 	if not hit then return end
 	local inst, cmp = hit[1], hit[2]
@@ -92,11 +94,16 @@ function Tooltip.Add(tooltip, link)
 			tooltip:AddLine(l[1], a[1], a[2], a[3], true)
 		end
 	end
+	drawn[tooltip] = link -- Shift redraws only a tooltip with the score lines (the star line never changes)
+end
+
+function Tooltip.Add(tooltip, link)
+	if not link then return end
+	scoreLines(tooltip, link)
 	local id = tonumber(link:match("item:(%d+)"))
 	if ns.Wishlist and id and ns.Wishlist.HasId(id) then
 		tooltip:AddLine("|A:auctionhouse-icon-favorite:12:12|a On your PoleSim wishlist", 1, 0.82, 0)
 	end
-	drawn[tooltip] = link
 end
 
 local function forbidden(tooltip)
