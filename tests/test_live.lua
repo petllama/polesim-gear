@@ -17,6 +17,16 @@ return {
 		ns.DATA.rating.crit = 7
 		T.eq(ns.Live.Stats({ ITEM_MOD_CRIT_SPELL_RATING_SHORT = 14 }, nil).spellCrit, 2, "divisor from the data")
 	end,
+	-- Two client names for one bonus (mp5 as MANA_REGENERATION and POWER_REGEN0; melee and ranged
+	-- hit/crit) count once: the larger, not the sum.
+	duplicate_names_count_once = function()
+		local L = T.addon(FILES).Live
+		local s = L.Stats({ ITEM_MOD_MANA_REGENERATION_SHORT = 4, ITEM_MOD_POWER_REGEN0_SHORT = 4,
+			ITEM_MOD_HEALTH_REGEN_SHORT = 2, ITEM_MOD_HEALTH_REGENERATION_SHORT = 3,
+			ITEM_MOD_HIT_MELEE_RATING_SHORT = 10, ITEM_MOD_HIT_RANGED_RATING_SHORT = 10,
+			ITEM_MOD_CRIT_MELEE_RATING_SHORT = 14, ITEM_MOD_CRIT_RANGED_RATING_SHORT = 28 }, nil)
+		T.eq(s.mp5, 4); T.eq(s.hp5, 3); T.eq(s.mhit, 1); T.eq(s.mcrit, 2)
+	end,
 	fills_missing_equip_families = function()
 		local L = T.addon(FILES).Live
 		local rec = { s = { int = 5, sp = 8, mp5 = 2 } }

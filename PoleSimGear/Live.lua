@@ -56,10 +56,13 @@ function Live.Stats(t, rec)
 				armor = v
 			elseif k == "ITEM_MOD_DAMAGE_PER_SECOND_SHORT" then
 				dps = v
+			-- Two client names for one key are one bonus reported twice (mp5 as MANA_REGENERATION and
+			-- POWER_REGEN0, melee and ranged hit/crit): the larger counts, not the sum.
 			elseif key then
-				out[key] = (out[key] or 0) + v
+				out[key] = math.max(out[key] or v, v)
 			elseif r then -- to %, rounded like a suffix's rating (Score.SuffixStats)
-				out[r[1]] = (out[r[1]] or 0) + ns.Score.Round(v / ns.DATA.rating[r[2]], 2)
+				local pct = ns.Score.Round(v / ns.DATA.rating[r[2]], 2)
+				out[r[1]] = math.max(out[r[1]] or pct, pct)
 			end
 		end
 	end

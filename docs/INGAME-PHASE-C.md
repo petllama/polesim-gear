@@ -31,6 +31,10 @@ Report (copy the printed lines):
 - whether **Equip:** effects appear at all (spell damage, mp5, hit/crit) or are missing;
 - armor as `RESISTANCE0_NAME`? DPS as `ITEM_MOD_DAMAGE_PER_SECOND_SHORT`?
 - ratings as rating points (e.g. 14 for 1% crit), not percent?
+- one bonus under two names? e.g. mp5 as both `ITEM_MOD_MANA_REGENERATION_SHORT` and
+  `ITEM_MOD_POWER_REGEN0_SHORT`, or a hit/crit bonus as both the `..._MELEE_RATING_SHORT` and
+  `..._RANGED_RATING_SHORT` keys. PoleSim Gear counts such a pair once (the larger value); report
+  which pairs appear, and whether two such keys ever carry two different bonuses on one item;
 - any key not in this list: `ITEM_MOD_*_SHORT` for strength, agility, stamina, intellect, spirit,
   health, mana, attack power, ranged attack power, spell power, spell damage done, spell healing done,
   each school's spell damage, mana/health regeneration, defense, block value, spell penetration, the
