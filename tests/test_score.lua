@@ -43,6 +43,26 @@ return {
 		local p = T.addon(FILES).Score.Parts(inst({}), W, "rogue", "oh")
 		T.eq(p[#p][1], "dps"); T.near(p[#p][4], 2)
 	end,
+	suffix_stats = function()
+		local ns = T.addon(FILES)
+		local name, st = ns.Score.SuffixStats(ns.Items.Get(6540), 12720)
+		T.eq(name, "of the Owl"); T.eq(st.int, 3); T.eq(st.spi, 3)
+		local inst = ns.Score.Instance(ns.Items.Get(6540), 12720)
+		T.eq(inst.name, "Willow Pants of the Owl"); T.eq(inst.armor, 28); T.eq(inst.bonus, 12720)
+		T.eq(ns.Score.SuffixStats(ns.Items.Get(11288), 12720), nil, "not this item's suffix")
+	end,
+	best_suffix = function()
+		local ns = T.addon(FILES)
+		local w = ns.DATA.specs.priest.shadow.bands[1].w
+		local it = ns.Items.Get(6540)
+		local best, s = ns.Score.BestSuffix(it, w, "priest", "gear")
+		T.ok(best.name:find("^Willow Pants of"))
+		for _, bl in ipairs(it.sfx) do
+			T.ok(ns.Score.Score(ns.Score.Instance(it, bl), w, "priest", "gear") <= s + 1e-9)
+		end
+		local plain, ps = ns.Score.BestSuffix(ns.Items.Get(11288), w, "priest", "ranged")
+		T.eq(plain.bonus, nil); T.ok(ps > 0)
+	end,
 	nil_item = function()
 		T.eq(T.addon(FILES).Score.Score(nil, W, "priest", "gear"), 0)
 	end,

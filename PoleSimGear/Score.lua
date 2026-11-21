@@ -89,3 +89,52 @@ function Score.Parts(inst, w, cls, role)
 	end
 	return out
 end
+
+-- (suffix name, stats it adds) for an item's random suffix bonus list (its budget, rounded like the
+-- client), or (nil, {}) when the item has no such suffix.
+function Score.SuffixStats(it, bonus)
+	local sfx = ns.DATA.suffixes[bonus]
+	if not sfx then return nil, {} end
+	local has = false
+	for _, b in ipairs(it.sfx) do
+		if b == bonus then has = true break end
+	end
+	if not has then return nil, {} end
+	local out, rating = {}, ns.DATA.rating
+	for k, alloc in pairs(sfx.a) do
+		local v = math.floor(alloc * (it.b or 0) / 10000 + 0.5)
+		if rating[k] then v = round(v / rating[k], 2) end
+		if v ~= 0 then out[k] = v end
+	end
+	return sfx.n, out
+end
+
+-- A shipped item as worn (with the suffix's stats): the shape Score/Parts/Equip read.
+function Score.Instance(it, bonus)
+	if not it then return nil end
+	local stats = {}
+	for k, v in pairs(it.s) do stats[k] = v end
+	local sname
+	if bonus then
+		local extra
+		sname, extra = Score.SuffixStats(it, bonus)
+		for k, v in pairs(extra) do stats[k] = (stats[k] or 0) + v end
+	end
+	return {
+		id = it.id, bonus = sname and bonus or nil, suffix = sname, name = it.name .. (sname and (" " .. sname) or ""),
+		quality = it.q, icon = it.icon, rl = it.rl, inv = it.inv, c = it.c, sc = it.sc, cm = it.cm, rm = it.rm,
+		unique = it.u, stats = stats, armor = it.ar, dps = it.dps, weapon = it.dps > 0,
+	}
+end
+
+-- (instance, score) of an item with its best random suffix for these weights.
+function Score.BestSuffix(it, w, cls, role)
+	local best, bestScore
+	local list = #it.sfx > 0 and it.sfx or { false }
+	for _, bl in ipairs(list) do
+		local inst = Score.Instance(it, bl or nil)
+		local s = Score.Score(inst, w, cls, role)
+		if not best or s > bestScore + 1e-9 then best, bestScore = inst, s end
+	end
+	return best, bestScore
+end
