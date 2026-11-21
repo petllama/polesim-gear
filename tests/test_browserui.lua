@@ -143,6 +143,36 @@ return {
 		T.eq(reads, 2, "read again after closing")
 		_G.Polestar = nil
 	end,
+	-- A "coming up" row whose level has no band (Context.At nil): the tooltip shows no "how?" (no stat
+	-- lines, no band line) rather than the current band's weights.
+	tooltip_without_a_band = function()
+		local win = window(function() end)
+		local ns = win.ns
+		SlashCmdList.POLESIMGEAR("")
+		local lines = {}
+		_G.GameTooltip = setmetatable({
+			AddLine = function(_, t) lines[#lines + 1] = t end,
+			AddDoubleLine = function(_, a, b) lines[#lines + 1] = a .. " = " .. b end,
+		}, { __index = function(_, k) if k:match("^%u") then return function() end end end })
+		local inst = { id = 9, name = "Robe", inv = 5, stats = { int = 5 }, quality = 2 }
+		local data = { c = { id = 9, inst = inst, score = 5, sources = { { text = "Quest: X" } }, kinds = { quest = true }, rl = 21 },
+			gain = 2, at = 21, slot = ns.Browser.SLOTS[5] }
+		local row = win.frame()
+		ns.Context.At = function() return nil end
+		win.view.init(row, data)
+		row.scripts.OnEnter(row)
+		local text = table.concat(lines, "\n")
+		T.ok(not text:find(" x ", 1, true), text)
+		T.ok(not text:find("weights of levels", 1, true), text)
+		T.ok(text:find("Gain over what you wear", 1, true), text)
+		T.ok(text:find("Quest: X", 1, true), text)
+		lines = {}
+		ns.Context.At = function(L) local b, l = ns.Bands.For("priest", "shadow", L) return { band = b, lo = l, w = b.w, worn = {} } end
+		row.scripts.OnEnter(row)
+		text = table.concat(lines, "\n")
+		T.ok(text:find(" x ", 1, true), "with a band: the how? " .. text)
+		_G.Polestar = nil
+	end,
 	-- The window opens,
 	-- builds over frames, lists rows, drills into a slot, closes and lets go of the model and the index.
 	window_smoke = function()

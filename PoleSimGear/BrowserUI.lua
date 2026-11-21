@@ -113,19 +113,21 @@ local function showRowTooltip(row)
 	if not (r and r.c) then return end
 	local ctx = ns.Context.Get()
 	if not ctx then return end
-	local band = r.at and ns.Context.At(r.at) or ctx
+	-- a coming level's band; none (no weights there): no "how?" rather than another band's weights
+	local band
+	if r.at then band = ns.Context.At(r.at) else band = ctx end
 	local inst = r.c.inst
 	GameTooltip:SetOwner(row, "ANCHOR_RIGHT")
 	GameTooltip:AddLine(itemText(inst))
 	if inst.suffix then GameTooltip:AddLine("scored with its best suffix for this spec: " .. inst.suffix, 0.6, 0.6, 0.6) end
 	GameTooltip:AddDoubleLine("Score", format("%.2f", r.c.score), 1, 0.82, 0, 1, 1, 1)
 	local role = inst.inv == 17 and "mh" or (ns.Equip.ROLE_OF_SLOT[r.slot.slot] or "gear")
-	for _, p in ipairs(ns.Score.Parts(inst, band.w, ctx.cls, role)) do
+	for _, p in ipairs(band and ns.Score.Parts(inst, band.w, ctx.cls, role) or {}) do
 		local name = (ns.DATA.statLabels[p[1]] or p[1]) .. (p[1] ~= p[3] and (" as " .. (ns.DATA.statLabels[p[3]] or p[3])) or "")
 		GameTooltip:AddDoubleLine(format("  %s %g x %g", name, p[2], p[4]), format("%.2f", p[5]), 0.7, 0.7, 0.7, 0.7, 0.7, 0.7)
 	end
 	GameTooltip:AddDoubleLine("Gain over what you wear", format("%+.2f", r.gain), 1, 1, 1, 0.3, 1, 0.3)
-	if r.at then GameTooltip:AddLine(format("level %d item: scored with the weights of levels %d-%d", r.at, band.lo, band.band.upTo), 0.6, 0.6, 0.6, true) end
+	if r.at and band then GameTooltip:AddLine(format("level %d item: scored with the weights of levels %d-%d", r.at, band.lo, band.band.upTo), 0.6, 0.6, 0.6, true) end
 	if r.note then GameTooltip:AddLine(r.note, 0.6, 0.6, 0.6, true) end
 	GameTooltip:AddLine(" ")
 	for _, s in ipairs(r.c.sources) do
