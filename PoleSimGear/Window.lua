@@ -493,6 +493,18 @@ function Win.RowTooltip(owner, r, hint)
 	GameTooltip:Show()
 end
 
+-- Set an upgrade row d ({ c, slot }) as the slot's plan, or back to the suggestion when it already is
+-- (Gear Plan's wishlist rows; Slot Upgrades and Sources use it from Task 5.2).
+function Win.PlanAction(d)
+	local ctx = ns.Context.Get()
+	if not (d and d.c and ctx) then return end
+	if ns.Plan.Get(ctx.spec, d.slot.key) == ns.Browser.KeyOf(d.c.inst) then
+		ns.Plan.Clear(ctx.spec, d.slot.key)
+	else
+		ns.Plan.Set(ctx.spec, d.slot.key, d.c.inst)
+	end
+end
+
 function Win.Toggle()
 	if not ns.Context.ClassKey() then return ns.Print("no weights for this class yet (Priest only for now)") end
 	if not frame then create() end

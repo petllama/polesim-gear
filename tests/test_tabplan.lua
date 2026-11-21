@@ -92,4 +92,30 @@ return {
 		T.eq(ns.Wishlist.Has(r.e.entry.plan.c.inst), false)
 		fx.done()
 	end,
+	all_and_wishlist_modes = function()
+		local fx = F.load({ char = { wish = { ["424242:0"] = true } } })
+		local ns, U = fx.ns, fx.U
+		local f = fx.open()
+		ns.Options.View().filters.vendor = false
+		ns.Options.View().filters.crafted = false
+		ns.Options.View().filters.dungeon = false
+		ns.Options.View().filters.quest = false
+		U.button(f, "All gear"):Click()
+		local rows = rowsOf(fx)
+		T.eq(#rows, #ns.Browser.SLOTS, "every slot")
+		T.ok(rows[1].plan.sub.text:find("nothing better now", 1, true), "no source ticked: no upgrades")
+		T.ok(rows[1].cur.name.text:find("Old Hat", 1, true), "the current item is shown")
+		local first = ns.Window.state.model.now.head[1]
+		ns.Wishlist.Toggle(first.c.inst)
+		U.button(f, "Wishlist"):Click()
+		rows = rowsOf(fx)
+		T.eq(#rows, 2)
+		T.eq(rows[1].e.row.c.id, first.c.id, "found, whatever the filters"); T.ok(rows[1].delta.text:match("^%+"))
+		T.ok(rows[2].plan.sub.text:find("not an upgrade now", 1, true))
+		T.eq(fx.U.ownText(rows[1].choose), "Plan")
+		rows[1].choose:Click()
+		T.eq(ns.Plan.Get("shadow", "head"), ns.Browser.KeyOf(first.c.inst), "Set as plan from the wishlist")
+		T.ok(fx.U.ownText(rowsOf(fx)[1].choose):find("Picked", 1, true))
+		fx.done()
+	end,
 }
