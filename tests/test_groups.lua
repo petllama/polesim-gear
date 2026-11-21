@@ -39,6 +39,56 @@ return {
 		T.eq(#g.dungeon, 2, "+5: the level 23 boots from Wailing Caverns")
 		T.eq(g.dungeon[1].name, "The Deadmines", "more upgrades first"); T.eq(g.dungeon[2].name, "Wailing Caverns")
 	end,
+	-- One row per item per instance: the likeliest source is the row's, the others are its detail.
+	dungeon_one_row_per_item = function()
+		local G = T.addon(FILES).Groups
+		local function d(npc, chance, boss) return { kind = "dungeon", instanceKey = "DM", npcName = npc, boss = boss or false, chance = chance, ok = true } end
+		local chest = { kind = "dungeon", instanceKey = "DM", container = "Chest", chance = 0.9, ok = true }
+		local m = { level = 20, coming = {}, now = {
+			head = { row(1, 5, { d("Trash", 0.5), d("Smite", 12, true), chest, d("Cookie", 3, true), d("Sneed", 0.2, true) }) },
+			neck = { row(2, 7, { d("Miner", 0.4), d("Watchman", 0.3) }) },
+			chest = { row(3, 2, { d("VanCleef", 20, true) }) } } }
+		local g = G.Build(m, 0, codex).dungeon[1]
+		T.eq(g.count, 3); T.eq(#g.rows, 3, "one row per item")
+		T.eq(g.rows[1].c.id, 2, "by gain"); T.eq(g.rows[2].c.id, 1); T.eq(g.rows[3].c.id, 3)
+		local r = g.rows[2]
+		T.eq(r.src.npcName, "Smite", "the likeliest source")
+		T.eq(r.otherCount, 4); T.eq(#r.others, 3, "top 3 others")
+		T.eq(r.others[1].npcName, "Cookie"); T.eq(r.others[2].container, "Chest"); T.eq(r.others[3].npcName, "Trash")
+		T.eq(r.rare, false)
+		T.eq(g.rows[1].rare, true, "best chance under 1%: rare")
+		T.eq(g.rows[1].src.npcName, "Miner"); T.eq(g.rows[1].otherCount, 1)
+		T.eq(g.rows[3].otherCount, 0); T.eq(#g.rows[3].others, 0)
+		-- Boss loot lists carry world drops at 0.01-0.9% (the Codex's Deadmines bosses): a boss's sub-1%
+		-- drop is as unlikely as a trash mob's.
+		m.now.feet = { row(4, 1, { d("Sneed", 0.2, true) }) }
+		g = G.Build(m, 0, codex).dungeon[1]
+		T.eq(g.rows[4].c.id, 4); T.eq(g.rows[4].rare, true, "a boss's sub-1% drop: rare")
+	end,
+	-- An item listed in two slots counts once and keeps its best gain.
+	dungeon_item_in_two_slots = function()
+		local G = T.addon(FILES).Groups
+		local s = { kind = "dungeon", instanceKey = "DM", npcName = "Boss", boss = true, chance = 10, ok = true }
+		local m = { level = 20, coming = {}, now = { mainhand = { row(1, 3, { s }) }, offhand = { row(1, 4, { s }) } } }
+		local g = G.Build(m, 0, codex).dungeon[1]
+		T.eq(g.count, 1); T.eq(#g.rows, 1); T.eq(g.rows[1].gain, 4)
+	end,
+	-- The same dedupe for vendors (per zone), professions and quests (per quest).
+	others_one_row_per_item = function()
+		local G = T.addon(FILES).Groups
+		local v1 = { kind = "vendor", npcName = "A", zoneId = 1411, cost = 500, ok = true }
+		local v2 = { kind = "vendor", npcName = "B", zoneId = 1411, cost = 400, ok = true }
+		local c1 = { kind = "crafted", profession = "Tailoring", skill = 75, ok = true }
+		local c2 = { kind = "crafted", profession = "Tailoring", skill = 90, ok = true }
+		local q = { kind = "quest", questId = 100, title = "Wanted", zoneId = 40, where = "Westfall", ok = true }
+		local qc = { kind = "quest", questId = 100, title = "Wanted", zoneId = 40, where = "Westfall", ok = true, text = "a choice" }
+		local m = { level = 20, coming = {}, now = { head = { row(1, 5, { v1, v2, c1, c2, q, qc }) } } }
+		local g = G.Build(m, 0, codex)
+		T.eq(#g.vendor[1].rows, 1); T.eq(g.vendor[1].rows[1].src.npcName, "A", "no chances: source order")
+		T.eq(g.vendor[1].rows[1].otherCount, 1); T.eq(g.vendor[1].rows[1].others[1].npcName, "B")
+		T.eq(#g.crafted[1].rows, 1); T.eq(g.crafted[1].rows[1].otherCount, 1)
+		T.eq(#g.quest[1].quests[1].rows, 1); T.eq(#g.quest[1].rows, 1); T.eq(g.quest[1].count, 1)
+	end,
 	unknown_zone = function()
 		local G = T.addon(FILES).Groups
 		local m = { level = 20, now = { head = { row(1, 5, { { kind = "vendor", npcName = "X", ok = true } }) } }, coming = {} }
