@@ -1,4 +1,4 @@
-# To do (after the first in-game test of 0.1.0)
+# To do (after the first in-game test of 0.2.0)
 
 Start these once the planned features (docs/CHECKLIST.md) have been tested in game.
 
@@ -28,7 +28,7 @@ drives these Polestar features, and they all run on its Gear module, which Fitz 
 
 ## Guides (Polestar API v1 only)
 
-- [ ] **"Upgrades" guide** in its own Polestar tab, built from the browser's list
+- [ ] **"Upgrades" guide** in its own Polestar tab, built from the window's Gear Plan
       (`Polestar.Lookup.RegisterPlanner`, `RegisterGuide`, `Engine.SetGuide`, `API.ReplaceSteps`):
       pick up quest X (reward Y, +gain), run dungeon Z, craft W; updated as items are gained.
       `ReplaceSteps` refuses Polestar's own guides, so nothing is inserted into the leveling route.
@@ -45,3 +45,8 @@ drives these Polestar features, and they all run on its Gear module, which Fitz 
 
 - [ ] Drop GM/test items from the shipped table in `forever/tools/gen_addon_data.py` (e.g. 24358
       "QATest +1000 Spell Dmg Ring"); regenerate.
+
+## From the 0.2.0 review
+
+- [ ] Slots with no upgrade: show the best option anyway (e.g. "Best quest option: Sizzle Stick, -1.3, a sidegrade").
+- [ ] Drift check: note items whose live stats differ from the shipped table; `/psg drift` lists them.

@@ -294,7 +294,7 @@ button around the edge, `/reload`: both stay where they were left. `/psg minimap
 tabs right of the title (Gear Plan, Slot Upgrades, Sources, Weights, Settings), the active one teal; a
 red X; four header cards; the Sources / Show panel on the left; the equipped strip and the stat
 weights card at the bottom. Every kind icon (quest, dungeon skull, crafting hammer, vendor coin, world
-bag) renders: a green square instead of an icon is a missing texture: name which one.
+bag) and the weights card's pencil render: a green square instead of an icon is a missing texture: name which one.
 
 **K4. Header.** "Level N Priest" with the class icon; spec "Shadow (auto)" (no "(auto)" once you choose
 a spec in K15); Gear score = the sum of the "PoleSim score" lines of what you wear (check that two worn
@@ -359,7 +359,9 @@ character" sets the default for a character that never chose one. **Ask again** 
 question (wording pending, see A4) when Polestar's scores are on; the line under it says what you
 answered.
 
-**K17. Memory**, window closed, then open (wait for the list), then closed again:
+**K17. Memory**, window closed, then open (wait for the list), then closed again. (The first visit to
+each tab creates its frames, which stay for the session to be reused: compare open/close pairs taken
+after K3-K16, not against a reading from before them.)
 
 ```
 /run collectgarbage() UpdateAddOnMemoryUsage() print(format("PoleSim Gear %.0f KB",GetAddOnMemoryUsage("PoleSimGear")))
