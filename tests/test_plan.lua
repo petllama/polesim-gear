@@ -32,4 +32,26 @@ return {
 		ns.Plan.Set("shadow", "head", { id = 1 })
 		T.eq(ns.Plan.Get("shadow", "head"), "1:0")
 	end,
+	resolve = function()
+		local ns = load({})
+		local P = ns.Plan
+		local function r(id, gain, kinds, at, bonus)
+			return { c = { id = id, inst = { id = id, bonus = bonus, name = "I" .. id }, kinds = kinds or { quest = true } }, gain = gain, at = at }
+		end
+		local rows = { r(1, 5), r(2, 3), r(3, 1, nil, nil, 7) }
+		-- no pick: the suggestion
+		local e = P.Resolve(rows, nil)
+		T.eq(e.plan.c.id, 1); T.eq(e.isPick, false); T.eq(e.suggestion.c.id, 1); T.eq(e.betterBy, nil)
+		-- a pick in the rows
+		e = P.Resolve(rows, "3:7")
+		T.eq(e.plan.c.id, 3); T.eq(e.isPick, true); T.near(e.betterBy, 4, 1e-9, "best: I1 +4 over the pick")
+		e = P.Resolve(rows, "1:0")
+		T.eq(e.isPick, true); T.eq(e.betterBy, nil, "the pick is the best")
+		-- a pick not in the rows: missing (why from the model, Task 2.5)
+		e = P.Resolve(rows, "9:0")
+		T.eq(e.plan, nil); T.eq(e.missing.id, 9); T.eq(e.isPick, true); T.eq(e.suggestion.c.id, 1)
+		-- nothing at all
+		e = P.Resolve({}, nil)
+		T.eq(e.plan, nil); T.eq(e.missing, nil); T.eq(e.suggestion, nil)
+	end,
 }

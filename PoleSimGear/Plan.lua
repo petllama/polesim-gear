@@ -47,3 +47,24 @@ function Plan.Parse(k)
 	bonus = tonumber(bonus)
 	return tonumber(id), bonus ~= 0 and bonus or nil
 end
+
+-- rows: the slot's upgrade rows as shown (Browser.SlotRows: filters + look ahead), best first;
+-- pick: Plan.Get's "id:bonus" | nil. -> { suggestion = row|nil, plan = row|nil, isPick,
+-- betterBy = suggestion gain - pick gain (when > 0), missing = { id, bonus } (a pick not in rows) }
+function Plan.Resolve(rows, pick)
+	local e = { suggestion = rows[1], isPick = pick ~= nil }
+	if not pick then
+		e.plan = rows[1]
+		return e
+	end
+	for _, r in ipairs(rows) do
+		if ns.Browser.KeyOf(r.c.inst) == pick then
+			e.plan = r
+			if rows[1] and rows[1].gain - r.gain > 1e-6 then e.betterBy = rows[1].gain - r.gain end
+			return e
+		end
+	end
+	local id, bonus = Plan.Parse(pick)
+	e.missing = { id = id, bonus = bonus }
+	return e
+end
