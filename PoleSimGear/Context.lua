@@ -9,10 +9,14 @@ local SLOTS = { 1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 }
 local current, worn, spec, pendingItems = nil, {}, nil, {}
 local SPEC_EVENTS = { TRAIT_CONFIG_UPDATED = true, CHARACTER_POINTS_CHANGED = true, PLAYER_TALENT_UPDATE = true,
 	PLAYER_ENTERING_WORLD = true, SPEC = true }
+-- Right after login the talents may not be readable yet (Detect finds no points): the default spec is
+-- then read again after a short wait, a few times, instead of being kept until the talents change.
+local RETRY_DELAY, RETRY_MAX = 2, 5
+local retries, retryQueued = 0, false
 
 ns.On("STATE", function(event, arg)
 	if event == "PLAYER_LEVEL_UP" then ns.level = arg end
-	if event == "PLAYER_ENTERING_WORLD" then ns.level = nil end
+	if event == "PLAYER_ENTERING_WORLD" then ns.level, retries = nil, 0 end
 	if SPEC_EVENTS[event] then spec = nil end
 	current, worn, pendingItems = nil, {}, {}
 	ns.Score.ClearCache()
@@ -57,13 +61,30 @@ function Context.WornAt(cls, band)
 	return out
 end
 
+function Context.RetrySpec(cls)
+	if retryQueued or retries >= RETRY_MAX or not (C_Timer and C_Timer.After) then return end
+	retryQueued = true
+	C_Timer.After(RETRY_DELAY, function()
+		retryQueued, retries = false, retries + 1
+		if ns.Spec.Detect(cls) then
+			retries = 0
+			ns.Fire("STATE", "SPEC") -- read the spec again and rescore
+		else
+			Context.RetrySpec(cls)
+		end
+	end)
+end
+
 -- -> { cls, spec, specSource, level, band, lo, ref, w, worn, faction, classBit, raceBit } | nil (no weights)
 function Context.Get()
 	if current then return current end
 	local cls = Context.ClassKey()
 	if not cls then return nil end
 	local level = Context.Level()
-	if not spec then spec = { ns.Spec.Current(cls) } end
+	if not spec then
+		spec = { ns.Spec.Current(cls) }
+		if spec[2] == "default" and ns.Spec.ORDER[cls] then Context.RetrySpec(cls) end
+	end
 	local key, source = spec[1], spec[2]
 	local band, lo, sd = ns.Bands.For(cls, key, level)
 	if not band then return nil end

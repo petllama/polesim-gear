@@ -67,6 +67,45 @@ return {
 		ns.Fire("STATE", "SPEC")
 		T.eq(ns.Context.Get().spec, "holy")
 	end,
+	-- Talents not readable yet at the first read after login: the default is not kept; a short timer
+	-- reads them again (a few times at most) and rescoring follows once a spec is found.
+	spec_retried_when_talents_unreadable = function()
+		local W = require("wow")
+		local ns = T.addon(FILES)
+		ns.char = { spec = "auto" }
+		_G.GetInventoryItemLink = function() return nil end
+		local found, calls = nil, 0
+		ns.Spec.Detect = function() calls = calls + 1 return found end
+		T.eq(ns.Context.Get().specSource, "default")
+		T.eq(#W.timers, 1, "a retry is queued")
+		ns.Context.Get()
+		T.eq(#W.timers, 1, "only one at a time")
+		local changed = 0
+		ns.On("SCORES_CHANGED", function() changed = changed + 1 end)
+		W.flush()
+		T.eq(changed, 0, "still nothing: no rescoring")
+		T.eq(#W.timers, 1, "tries again")
+		found = "holy"
+		W.flush()
+		T.eq(changed, 1, "found: scores change")
+		local ctx = ns.Context.Get()
+		T.eq(ctx.spec, "holy"); T.eq(ctx.specSource, "talents")
+		T.eq(#W.timers, 0, "no more retries")
+	end,
+	spec_retries_are_bounded = function()
+		local W = require("wow")
+		local ns = T.addon(FILES)
+		ns.char = { spec = "auto" }
+		_G.GetInventoryItemLink = function() return nil end
+		ns.Spec.Detect = function() return nil end -- a character with no talent points
+		ns.Context.Get()
+		for _ = 1, 10 do W.flush() end
+		T.eq(#W.timers, 0, "gives up")
+		T.eq(ns.Context.Get().specSource, "default")
+		ns.Fire("STATE", "PLAYER_ENTERING_WORLD")
+		ns.Context.Get()
+		T.eq(#W.timers, 1, "entering the world tries again")
+	end,
 	-- Best suffixes are kept per item and band until the scores change.
 	best_suffix_cached = function()
 		local ns = T.addon(FILES)
