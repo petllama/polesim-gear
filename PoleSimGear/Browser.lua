@@ -27,7 +27,7 @@ function Browser.Invs(def, style)
 end
 
 -- One item -> { id, inst (best suffix), score, sources (ok ones), kinds, rl } | nil (unusable, retired,
--- no quest/dungeon/crafted source the character can use).
+-- no source the character can use).
 function Browser.Candidate(id, env, lim, w, role)
 	local it = env.items.Get(id)
 	if not it or it.rl > lim then return nil end
@@ -183,25 +183,32 @@ end
 Browser.AHEAD = 5 -- "coming up": the next levels (the website's look-ahead default)
 Browser.KEEP = 25 -- rows kept per slot and source kind (and for "coming up")
 
-local KINDS = { "quest", "dungeon", "crafted" }
+Browser.KINDS = { "quest", "dungeon", "crafted", "vendor", "world" }
+local KINDS = Browser.KINDS
+
+-- An item as worn/kept: id and random suffix (armory._same's key).
+function Browser.KeyOf(inst) return inst.id .. ":" .. (inst.bonus or 0) end
+
 -- rows (best first) -> the rows among the best `n` of at least one source kind, in the same order:
--- each filter still lists its own best n.
-function Browser.Trim(rows, n)
+-- each filter still lists its own best n. keep (optional): { [KeyOf] = true } rows always kept (the
+-- player's picks and wishlist).
+function Browser.Trim(rows, n, keep)
 	local seen, out = {}, {}
 	for _, r in ipairs(rows) do
-		local keep = false
+		local keepIt = false
 		for _, k in ipairs(KINDS) do
 			if r.c.kinds[k] then
 				seen[k] = (seen[k] or 0) + 1
-				if seen[k] <= n then keep = true end
+				if seen[k] <= n then keepIt = true end
 			end
 		end
-		if keep then out[#out + 1] = r end
+		if keep and keep[Browser.KeyOf(r.c.inst)] then keepIt = true end
+		if keepIt then out[#out + 1] = r end
 	end
 	return out
 end
 
--- rows -> { all = n, quest = n, dungeon = n, crafted = n }
+-- rows -> { all = n, quest = n, dungeon = n, crafted = n, vendor = n, world = n }
 local function counts(rows)
 	local out = { all = #rows }
 	for _, k in ipairs(KINDS) do out[k] = 0 end

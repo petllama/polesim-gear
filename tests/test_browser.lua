@@ -296,4 +296,16 @@ return {
 		while #frames > 0 do table.remove(frames, 1)() end
 		T.ok(failed and failed:find("late boom"), tostring(failed)); T.ok(reported and reported:find("late boom"))
 	end,
+	trim_five_kinds_and_keep = function()
+		local B = T.addon(FILES).Browser
+		T.eq(table.concat(B.KINDS, ","), "quest,dungeon,crafted,vendor,world")
+		local rows = {}
+		for i = 1, 6 do rows[i] = { c = { id = i, inst = { id = i }, kinds = { vendor = true } }, gain = 10 - i } end
+		rows[7] = { c = { id = 7, inst = { id = 7, bonus = 5 }, kinds = { world = true } }, gain = 1 }
+		local t = B.Trim(rows, 2, { ["5:0"] = true })
+		local ids = {}
+		for _, r in ipairs(t) do ids[#ids + 1] = r.c.id end
+		T.eq(table.concat(ids, ","), "1,2,5,7", "2 vendors, kept 5, the world one")
+		T.eq(B.KeyOf({ id = 7, bonus = 5 }), "7:5"); T.eq(B.KeyOf({ id = 9 }), "9:0")
+	end,
 }
