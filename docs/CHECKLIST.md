@@ -1,4 +1,12 @@
-# In-game checklist (one session, on a priest; section M on a mage) — PoleSim Gear 0.5.0
+# In-game checklist (one session, on a priest; section M on a mage) — PoleSim Gear 0.5.1
+
+**0.5.1 over 0.5.0:** fixes a "C stack overflow" error when hovering a row in the PoleSim upgrades
+list at the Auction House (or any window row) with Auctionator installed. Auctionator's tooltip hook
+makes the game report the item as loaded from inside the tooltip draw, and PoleSim Gear redrew the
+tooltip on that report, which drew again, without end. The row tooltip now never redraws from inside
+its own draw and ignores "item loaded" for an item already shown with its full tooltip. Check: with
+Auctionator on, scan at the AH and hover several rows: no error, the tooltip shows the item, its
+Auctionator prices and PoleSim's lines. `/reload` is enough.
 
 **0.5.0 over 0.4.4:** an equip prompt. A new upgrade reaching your bags (loot, quest reward, mail, a
 purchase, a trade) now asks to be equipped: a small card directly above Polestar's guide window with the

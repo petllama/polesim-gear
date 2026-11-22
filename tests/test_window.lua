@@ -402,6 +402,39 @@ return {
 		_G.C_Item = saved
 		fx.done()
 	end,
+	-- Another addon's tooltip hook (Auctionator: Item:ContinueOnItemLoad) can make the client fire
+	-- GET_ITEM_INFO_RECEIVED / ITEM_DATA_LOAD_RESULT for the shown item from inside SetHyperlink: the
+	-- tooltip must not redraw from inside its own draw (that recursed until a C stack overflow), and a
+	-- loaded item already drawn with the game's tooltip is not redrawn at all.
+	item_event_inside_draw_does_not_recurse = function()
+		local fx = F.load()
+		local ns, U = fx.ns, fx.U
+		fx.open()
+		local saved = _G.C_Item
+		_G.C_Item = { IsItemDataCachedByID = function() return true end, RequestLoadItemDataByID = function() end }
+		local r = { c = { id = 6540, inst = ns.Score.Instance(ns.Items.Get(6540)), score = 5, sources = {} }, gain = 2,
+			slot = ns.Browser.SLOTS[7] }
+		local owner = U.new("Button")
+		local depth = 0
+		U.postCall = function()
+			depth = depth + 1
+			if depth > 50 then error("recursion") end
+			ns._frame.scripts.OnEvent(ns._frame, "GET_ITEM_INFO_RECEIVED", 6540, true)
+			ns._frame.scripts.OnEvent(ns._frame, "ITEM_DATA_LOAD_RESULT", 6540, true)
+		end
+		local errs = {}
+		local savedEH = _G.geterrorhandler
+		_G.geterrorhandler = function() return function(e) errs[#errs + 1] = e end end
+		ns.Window.RowTooltip(owner, r)
+		fx.W.flush()
+		_G.geterrorhandler = savedEH
+		U.postCall = nil
+		T.eq(#errs, 0, table.concat(errs, "\n"))
+		T.eq(U.tip.hyperlinks, 1, "drawn once")
+		T.ok(table.concat(U.tip.lines, "\n"):find("Score = 5.00", 1, true), "the window's lines")
+		_G.C_Item = saved
+		fx.done()
+	end,
 	-- An item marked missing while the window shows: one rebuild a moment later for a burst of them
 	-- (its rows go: the table no longer gives the item).
 	missing_items_rebuild_the_window = function()
@@ -427,7 +460,10 @@ return {
 		local r = { c = { id = 6540, inst = ns.Score.Instance(ns.Items.Get(6540)), score = 5, sources = {} }, gain = 2,
 			slot = ns.Browser.SLOTS[7] }
 		local owner = U.new("Button")
+		local saved, isCached = _G.C_Item, false
+		_G.C_Item = { IsItemDataCachedByID = function() return isCached end, RequestLoadItemDataByID = function() end }
 		ns.Window.RowTooltip(owner, r)
+		isCached = true
 		local function event(...) ns._frame.scripts.OnEvent(ns._frame, "GET_ITEM_INFO_RECEIVED", ...) end
 		U.tip.lines = { "Retrieving item information" }
 		event(1234, true)
@@ -439,10 +475,13 @@ return {
 		event(6540, true)
 		T.eq(U.tip.hyperlinks, 2, "another owner now: left alone")
 		-- the window closed (the tooltip not hidden): nothing of the row is kept
+		isCached = false
 		ns.Window.RowTooltip(owner, r)
+		isCached = true
 		_G.PoleSimGearFrame:Hide()
 		event(6540, true)
 		T.eq(U.tip.hyperlinks, 3, "let go on close")
+		_G.C_Item = saved
 		fx.done()
 	end,
 	-- Shift (COMPAREITEMS): the game's comparison tooltips, also when pressed while hovering (the client

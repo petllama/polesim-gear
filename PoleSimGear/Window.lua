@@ -711,23 +711,31 @@ local function itemCached(id)
 	if C_Item and C_Item.IsItemDataCachedByID then return C_Item.IsItemDataCachedByID(id) and true or false end
 	return true -- the client can't say: its own tooltip
 end
+local drawing = false -- inside drawTip: another addon's tooltip hook can fire the item events from SetHyperlink
 local function drawTip(t)
-	t.compare = comparing()
-	GameTooltip:SetOwner(t.owner, "ANCHOR_RIGHT")
-	tip = t -- after SetOwner (it may hide the tooltip)
-	if t.fallback then -- the item's name and why the game's part is missing, then the window's lines
-		local q = ITEM_QUALITY_COLORS and ITEM_QUALITY_COLORS[t.quality or 1]
-		GameTooltip:AddLine(t.name or ("item " .. t.id), q and q.r or 1, q and q.g or 1, q and q.b or 1)
-		GameTooltip:AddLine(ns.Items.IsMissing(t.id)
-			and "Forever's server does not have this item: PoleSim Gear no longer lists it"
-			or "Item data not loaded from the server yet", GREY[1], GREY[2], GREY[3], true)
-	else
-		GameTooltip:SetHyperlink(t.link)
-	end
-	GameTooltip:AddLine(" ")
-	t.draw()
-	GameTooltip:Show()
-	if t.compare and not t.fallback and GameTooltip_ShowCompareItem then GameTooltip_ShowCompareItem(GameTooltip) end
+	if drawing then return end
+	drawing = true
+	local ok, err = pcall(function()
+		t.compare = comparing()
+		t.drawnCached = itemCached(t.id)
+		GameTooltip:SetOwner(t.owner, "ANCHOR_RIGHT")
+		tip = t -- after SetOwner (it may hide the tooltip)
+		if t.fallback then -- the item's name and why the game's part is missing, then the window's lines
+			local q = ITEM_QUALITY_COLORS and ITEM_QUALITY_COLORS[t.quality or 1]
+			GameTooltip:AddLine(t.name or ("item " .. t.id), q and q.r or 1, q and q.g or 1, q and q.b or 1)
+			GameTooltip:AddLine(ns.Items.IsMissing(t.id)
+				and "Forever's server does not have this item: PoleSim Gear no longer lists it"
+				or "Item data not loaded from the server yet", GREY[1], GREY[2], GREY[3], true)
+		else
+			GameTooltip:SetHyperlink(t.link)
+		end
+		GameTooltip:AddLine(" ")
+		t.draw()
+		GameTooltip:Show()
+		if t.compare and not t.fallback and GameTooltip_ShowCompareItem then GameTooltip_ShowCompareItem(GameTooltip) end
+	end)
+	drawing = false
+	if not ok then error(err, 0) end
 end
 -- the kept tooltip when the owner still shows it
 local function shown(owner)
@@ -761,7 +769,15 @@ end
 local function itemLoaded(id, success)
 	local t = shown(GameTooltip and GameTooltip.GetOwner and GameTooltip:GetOwner())
 	if not (t and t.id == id) then return end
-	t.fallback = success == false or ns.Items.IsMissing(id)
+	local fallback = success == false or ns.Items.IsMissing(id)
+	-- already the game's tooltip of a loaded item: nothing to redraw (Auctionator's hook fires these
+	-- events from inside SetHyperlink for every item shown)
+	if fallback == t.fallback and not fallback and t.drawnCached then return end
+	t.fallback = fallback
+	if drawing then -- from inside our own draw: once, after it
+		C_Timer.After(0, function() if shown(t.owner) == t then drawTip(t) end end)
+		return
+	end
 	drawTip(t)
 end
 ns.RegisterEvent("GET_ITEM_INFO_RECEIVED", itemLoaded)
