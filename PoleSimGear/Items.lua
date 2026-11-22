@@ -9,6 +9,47 @@ ns.Items = Items
 local tonumber, find, sub, gmatch = tonumber, string.find, string.sub, string.gmatch
 local cache, byInv = {}, nil
 
+-- Items Forever's server does not have: the client asked for one and was told it doesn't exist
+-- (ITEM_DATA_LOAD_RESULT / GET_ITEM_INFO_RECEIVED with success false; in game its tooltip stays at
+-- "Retrieving item information", e.g. Classic-only ids PoleSim's data once shipped). Kept account-wide
+-- in PoleSimGearDB.missing = { v = "<addon version>/<data build>", ids = { [id] = true } } and forgotten
+-- when the version changes (new data). Get and Peek do not give them, so no list, AH result or arrow
+-- offers them. Only shipped ids are kept (the table stays small).
+local missing = {}
+local function missingVersion() return tostring(ns.version) .. "/" .. tostring(ns.DATA and ns.DATA.build) end
+ns.On("DB_READY", function()
+	local m = ns.db.missing
+	if type(m) ~= "table" or m.v ~= missingVersion() or type(m.ids) ~= "table" then
+		m = { v = missingVersion(), ids = {} }
+		ns.db.missing = m
+	end
+	missing = m.ids
+end)
+function Items.IsMissing(id) return missing[tonumber(id) or 0] == true end
+function Items.MissingCount()
+	local n = 0
+	for _ in pairs(missing) do n = n + 1 end
+	return n
+end
+-- -> true when newly marked (fires ITEMS_MISSING id)
+function Items.MarkMissing(id)
+	id = tonumber(id)
+	if not id or missing[id] then return false end
+	if not find(ns.DATA.items, "\n" .. id .. "\t", 1, true) then return false end
+	missing[id] = true
+	ns.Fire("ITEMS_MISSING", id)
+	return true
+end
+function Items.ClearMissing()
+	for id in pairs(missing) do missing[id] = nil end
+	ns.Fire("ITEMS_MISSING")
+end
+local function loadResult(id, success)
+	if success == false then Items.MarkMissing(id) end
+end
+ns.RegisterEvent("ITEM_DATA_LOAD_RESULT", loadResult)
+ns.RegisterEvent("GET_ITEM_INFO_RECEIVED", loadResult)
+
 local function split(s)
 	local t = {}
 	for f in (s .. "\t"):gmatch("([^\t]*)\t") do t[#t + 1] = f end
@@ -40,7 +81,7 @@ end
 
 function Items.Get(id)
 	id = tonumber(id)
-	if not id then return nil end
+	if not id or missing[id] then return nil end
 	local hit = cache[id]
 	if hit ~= nil then return hit or nil end
 	local blob = ns.DATA.items
@@ -76,7 +117,7 @@ end
 
 function Items.Peek(id)
 	id = tonumber(id)
-	if not id then return nil end
+	if not id or missing[id] then return nil end
 	local hit = cache[id]
 	if hit ~= nil then return hit or nil end
 	local l = line(ns.DATA.items, id)
@@ -110,6 +151,23 @@ function Items.Rl(id)
 end
 
 function Items.ReleaseIndex() byInv, lineOf = nil, nil end
+
+-- /psg missing: the items the server said it does not have; /psg missing clear forgets them.
+ns.Slash("missing", function(rest)
+	if rest == "clear" then
+		Items.ClearMissing()
+		return ns.Print("forgot the items Forever's server did not have; they are offered again")
+	end
+	local ids = {}
+	for id in pairs(missing) do ids[#ids + 1] = id end
+	table.sort(ids)
+	if #ids == 0 then return ns.Print("no items marked as missing on Forever's server") end
+	ns.Print(string.format("%d items Forever's server does not have (left out of every list; /psg missing clear forgets them):", #ids))
+	for _, id in ipairs(ids) do
+		local l = line(ns.DATA.items, id)
+		ns.Print("  " .. ((l and l:match("^[^\t]*")) or "item") .. " (" .. id .. ")")
+	end
+end)
 
 function Items._cached()
 	local n = 0

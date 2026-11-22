@@ -1,6 +1,64 @@
 local T = require("t")
 local FILES = { "Core.lua", "Data/Weights.lua", "Data/Suffixes.lua", "Data/Items.lua", "Items.lua" }
+local function loaded(db)
+	_G.PoleSimGearDB, _G.PoleSimGearCharDB = db, {}
+	local ns = T.addon(FILES)
+	ns._frame.scripts.OnEvent(ns._frame, "ADDON_LOADED", "PoleSimGear")
+	return ns, function(e, ...) ns._frame.scripts.OnEvent(ns._frame, e, ...) end
+end
 return {
+	-- An item the client cannot load (Forever's server has no such item: its tooltip stays at
+	-- "Retrieving item information") arrives as ITEM_DATA_LOAD_RESULT or GET_ITEM_INFO_RECEIVED with
+	-- success false. It is remembered account-wide and the shipped table no longer gives it (every list,
+	-- the AH and arrows read it through Get/Peek), until a new addon version (new data) clears the list.
+	missing_items = function()
+		local ns, ev = loaded({})
+		local fired = {}
+		ns.On("ITEMS_MISSING", function(id) fired[#fired + 1] = id end)
+		T.ok(ns.Items.Get(6540), "shipped")
+		ev("GET_ITEM_INFO_RECEIVED", 6540, true)
+		T.eq(#fired, 0, "loaded fine")
+		ev("ITEM_DATA_LOAD_RESULT", 6540, false)
+		T.eq(fired[1], 6540, "told")
+		T.ok(ns.Items.IsMissing(6540))
+		T.eq(ns.Items.Get(6540), nil, "Get: gone")
+		T.eq(ns.Items.Peek(6540), nil, "Peek: gone")
+		ev("GET_ITEM_INFO_RECEIVED", 6540, false)
+		T.eq(#fired, 1, "told once")
+		ev("GET_ITEM_INFO_RECEIVED", 11288, false)
+		T.eq(fired[2], 11288, "the other event too")
+		ev("GET_ITEM_INFO_RECEIVED", 1, false)
+		T.eq(#fired, 2, "an item we don't ship: not kept")
+		T.eq(PoleSimGearDB.missing.ids[1], nil)
+		T.eq(ns.Items.Peek(1219).id, 1219, "others untouched")
+		-- the next session of the same version still knows
+		local db = PoleSimGearDB
+		ns = loaded(db)
+		T.eq(ns.Items.Get(6540), nil, "remembered")
+		T.eq(ns.Items.MissingCount(), 2)
+		-- a new version (new data): forgotten
+		db.missing.v = "0.0.1/old"
+		ns = loaded(db)
+		T.eq(ns.Items.Get(6540).name, "Willow Pants", "cleared by an update")
+		T.eq(ns.Items.MissingCount(), 0)
+		_G.PoleSimGearDB, _G.PoleSimGearCharDB = nil, nil
+	end,
+	-- /psg missing lists them; /psg missing clear forgets them (then /reload or reopen the window)
+	missing_slash = function()
+		local ns, ev = loaded({})
+		local out = {}
+		ns.Print = function(...) out[#out + 1] = table.concat({ ... }, " ") end
+		SlashCmdList.POLESIMGEAR("missing")
+		T.ok(out[1]:find("no items", 1, true), out[1])
+		ev("ITEM_DATA_LOAD_RESULT", 6540, false)
+		out = {}
+		SlashCmdList.POLESIMGEAR("missing")
+		T.ok(table.concat(out, "\n"):find("Willow Pants (6540)", 1, true), table.concat(out, "\n"))
+		SlashCmdList.POLESIMGEAR("missing clear")
+		T.eq(ns.Items.MissingCount(), 0)
+		T.eq(ns.Items.Get(6540).name, "Willow Pants")
+		_G.PoleSimGearDB, _G.PoleSimGearCharDB = nil, nil
+	end,
 	get = function()
 		local ns = T.addon(FILES)
 		local it = ns.Items.Get(6540)

@@ -355,6 +355,69 @@ return {
 		_G.Enum, _G.TooltipDataProcessor, _G.TooltipUtil = nil, nil, nil
 		fx.done()
 	end,
+	-- An item whose data the server never sends (the game's tooltip stays at "Retrieving item
+	-- information"): after Win.TIP_WAIT the row tooltip is our own lines with the item's name and a grey
+	-- note; the game's tooltip comes back when the data arrives. A "no such item" answer says so.
+	row_tooltip_falls_back_while_loading = function()
+		local fx = F.load()
+		local ns, U = fx.ns, fx.U
+		fx.open()
+		local requested, isCached = {}, false
+		local saved = _G.C_Item
+		_G.C_Item = { IsItemDataCachedByID = function() return isCached end,
+			RequestLoadItemDataByID = function(id) requested[#requested + 1] = id end }
+		local r = { c = { id = 6540, inst = ns.Score.Instance(ns.Items.Get(6540)), score = 5, sources = {} }, gain = 2,
+			slot = ns.Browser.SLOTS[7] }
+		local owner = U.new("Button")
+		local function event(e, ...) ns._frame.scripts.OnEvent(ns._frame, e, ...) end
+		local function text() return table.concat(U.tip.lines, "\n") end
+		ns.Window.RowTooltip(owner, r)
+		T.eq(U.tip.hyperlinks, 1, "the game's tooltip first")
+		T.eq(requested[1], 6540, "the item's data asked for")
+		fx.W.flush()
+		T.ok(text():find("Willow Pants", 1, true), text())
+		T.ok(text():find("Item data not loaded from the server yet", 1, true), "the grey note")
+		T.ok(text():find("Score = 5.00", 1, true), "the window's lines")
+		T.eq(U.tip.hyperlinks, 1, "no empty item part")
+		-- the data arrives: the game's tooltip again
+		isCached = true
+		event("GET_ITEM_INFO_RECEIVED", 6540, true)
+		T.eq(U.tip.hyperlinks, 2, "drawn with the game's tooltip")
+		T.ok(not text():find("not loaded", 1, true), "no note")
+		-- loaded within the wait: no fallback
+		ns.Window.RowTooltip(owner, r)
+		fx.W.flush()
+		T.eq(U.tip.hyperlinks, 3); T.ok(not text():find("not loaded", 1, true))
+		-- still loading but the tooltip moved on: the timer leaves the other owner alone
+		isCached = false
+		ns.Window.RowTooltip(owner, r)
+		U.tip:SetOwner(U.new("Button")); U.tip:AddLine("Bag item")
+		fx.W.flush()
+		T.eq(U.tip.lines[1], "Bag item")
+		-- the server has no such item: remembered (Items) and said on the row
+		ns.Window.RowTooltip(owner, r)
+		event("ITEM_DATA_LOAD_RESULT", 6540, false)
+		T.ok(text():find("Forever's server does not have this item", 1, true), text())
+		T.ok(ns.Items.IsMissing(6540))
+		_G.C_Item = saved
+		fx.done()
+	end,
+	-- An item marked missing while the window shows: one rebuild a moment later for a burst of them
+	-- (its rows go: the table no longer gives the item).
+	missing_items_rebuild_the_window = function()
+		local fx = F.load()
+		local ns = fx.ns
+		fx.open()
+		local builds = 0
+		local build = ns.Window.Build
+		ns.Window.Build = function(...) builds = builds + 1 return build(...) end
+		ns.Fire("ITEMS_MISSING", 6540)
+		ns.Fire("ITEMS_MISSING", 11288)
+		T.eq(builds, 0, "not at once")
+		fx.settle()
+		T.eq(builds, 1, "one rebuild")
+		fx.done()
+	end,
 	-- Item data not cached yet: the client redraws the item part when it arrives; the row tooltip is
 	-- drawn again so the window's lines are not lost. Only while that row still owns the tooltip.
 	row_tooltip_redrawn_on_item_info = function()

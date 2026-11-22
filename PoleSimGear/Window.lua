@@ -703,15 +703,35 @@ local function comparing() return IsModifiedClick and IsModifiedClick("COMPAREIT
 -- tells the item post-call hook (Tooltip.lua) not to add its own score lines.
 local tip, hookedTip = nil, nil
 function Win.ReleaseItemTip() tip = nil end
+-- Seconds a row's item may take to load before its tooltip shows our own lines instead of the game's
+-- empty "Retrieving item information" (an item the server never sends stays at that forever).
+Win.TIP_WAIT = 2
+local GREY = { 0.6, 0.6, 0.6 }
+local function itemCached(id)
+	if C_Item and C_Item.IsItemDataCachedByID then return C_Item.IsItemDataCachedByID(id) and true or false end
+	return true -- the client can't say: its own tooltip
+end
 local function drawTip(t)
 	t.compare = comparing()
 	GameTooltip:SetOwner(t.owner, "ANCHOR_RIGHT")
 	tip = t -- after SetOwner (it may hide the tooltip)
-	GameTooltip:SetHyperlink(t.link)
+	if t.fallback then -- the item's name and why the game's part is missing, then the window's lines
+		local q = ITEM_QUALITY_COLORS and ITEM_QUALITY_COLORS[t.quality or 1]
+		GameTooltip:AddLine(t.name or ("item " .. t.id), q and q.r or 1, q and q.g or 1, q and q.b or 1)
+		GameTooltip:AddLine(ns.Items.IsMissing(t.id)
+			and "Forever's server does not have this item: PoleSim Gear no longer lists it"
+			or "Item data not loaded from the server yet", GREY[1], GREY[2], GREY[3], true)
+	else
+		GameTooltip:SetHyperlink(t.link)
+	end
 	GameTooltip:AddLine(" ")
 	t.draw()
 	GameTooltip:Show()
-	if t.compare and GameTooltip_ShowCompareItem then GameTooltip_ShowCompareItem(GameTooltip) end
+	if t.compare and not t.fallback and GameTooltip_ShowCompareItem then GameTooltip_ShowCompareItem(GameTooltip) end
+end
+-- the kept tooltip when the owner still shows it
+local function shown(owner)
+	if tip and owner ~= nil and tip.owner == owner and GameTooltip.GetOwner and GameTooltip:GetOwner() == owner then return tip end
 end
 function Win.ItemTip(owner, inst, draw)
 	if hookedTip ~= GameTooltip and GameTooltip.HookScript then
@@ -720,20 +740,32 @@ function Win.ItemTip(owner, inst, draw)
 	end
 	owner.psgItemTip = true
 	owner.UpdateTooltip = Win.UpdateItemTip
-	drawTip({ owner = owner, id = inst.id, link = Win.ItemLink(inst), draw = draw })
-end
--- the kept tooltip when the owner still shows it
-local function shown(owner)
-	if tip and owner ~= nil and tip.owner == owner and GameTooltip.GetOwner and GameTooltip:GetOwner() == owner then return tip end
+	local t = { owner = owner, id = inst.id, link = Win.ItemLink(inst), draw = draw, name = inst.name,
+		quality = inst.quality, fallback = ns.Items.IsMissing(inst.id) }
+	drawTip(t)
+	if t.fallback or itemCached(t.id) then return end
+	if C_Item and C_Item.RequestLoadItemDataByID then pcall(C_Item.RequestLoadItemDataByID, t.id) end
+	C_Timer.After(Win.TIP_WAIT, function()
+		if tip == t and shown(t.owner) == t and not t.fallback and not itemCached(t.id) then
+			t.fallback = true
+			drawTip(t)
+		end
+	end)
 end
 function Win.UpdateItemTip(owner)
 	local t = shown(owner)
 	if t and t.compare ~= comparing() then drawTip(t) end
 end
-ns.RegisterEvent("GET_ITEM_INFO_RECEIVED", function(id)
+-- The item's data arrived (the game's tooltip again) or the server has no such item (Items marks it
+-- first: our lines say so).
+local function itemLoaded(id, success)
 	local t = shown(GameTooltip and GameTooltip.GetOwner and GameTooltip:GetOwner())
-	if t and t.id == id then drawTip(t) end
-end)
+	if not (t and t.id == id) then return end
+	t.fallback = success == false or ns.Items.IsMissing(id)
+	drawTip(t)
+end
+ns.RegisterEvent("GET_ITEM_INFO_RECEIVED", itemLoaded)
+ns.RegisterEvent("ITEM_DATA_LOAD_RESULT", itemLoaded)
 
 -- extra (optional): a line or a list of lines in gold above the hint (Gear Plan: "Better: <item> +N"
 -- on a pick; Sources: the place's other sources)
@@ -959,4 +991,16 @@ ns.RegisterEvent("QUEST_TURNED_IN", function()
 	end)
 end)
 ns.Slash("", Win.Toggle)
+-- Items the server does not have (Items.MarkMissing, e.g. found while hovering rows): their rows go
+-- with one rebuild a moment later for a burst; closed, the window builds without them when opened.
+local missingQueued = false
+ns.On("ITEMS_MISSING", function()
+	state.stale = true
+	if missingQueued or not visible() then return end
+	missingQueued = true
+	C_Timer.After(Win.TURNIN_DELAY, function()
+		missingQueued = false
+		if visible() then Win.Build() end
+	end)
+end)
 function PoleSimGear_OnAddonCompartmentClick() Win.Toggle() end

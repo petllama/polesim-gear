@@ -1,4 +1,14 @@
-# In-game checklist (one session, on a priest; section M on a mage) — PoleSim Gear 0.4.2
+# In-game checklist (one session, on a priest; section M on a mage) — PoleSim Gear 0.4.3
+
+**0.4.3 over 0.4.2:** items Forever's server does not have are gone. The item data included ~4,800
+Classic-only items (Season of Discovery ids such as Scout's Blade, Lorekeeper's Staff and Resilient Cloth
+Headband from vendors, Scourge Invasion loot such as Abomination Skin Leggings, raid and PvP gear): the
+game never loads them, so their tooltip stayed at "Retrieving item information". The data now keeps only
+items Forever serves (its own tables, its server's answers, or proof on Wowhead Forever). As a safety net,
+an item the game reports it cannot load is remembered (until the next version) and left out of every
+list, the AH results and arrows (`/psg missing` lists them, `/psg missing clear` forgets them), and a row
+whose item takes over 2 s to load shows its name and a grey "Item data not loaded from the server yet"
+under our lines instead of an empty tooltip. `/reload` is enough.
 
 **0.4.2 over 0.4.1:** AH upgrades while you wear a two-hander: off hands are no longer listed one by one
 (each rode on the best one-hander's score and flooded the list); only the best one-hander + off hand set

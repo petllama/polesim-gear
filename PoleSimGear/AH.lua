@@ -474,12 +474,15 @@ function AH.Clear()
 end
 ns.RegisterEvent("AUCTION_HOUSE_CLOSED", AH.Clear)
 
--- Scores changed (an item bought and equipped, a level, talents): the results are scored again.
-ns.On("SCORES_CHANGED", function()
+-- Scores changed (an item bought and equipped, a level, talents) or items turned out not to exist on
+-- the server (Items.MarkMissing: candidate() no longer gets them): the results are scored again.
+local function rescore()
 	if not (scan and scan.done and next(found)) then return end
 	score(scan)
 	changed()
-end)
+end
+ns.On("SCORES_CHANGED", rescore)
+ns.On("ITEMS_MISSING", rescore)
 
 -- Show a row's item in the auction house: AuctionHouseFrame:SelectBrowseResult (Shared
 -- Blizzard_AuctionHouseFrame.lua: the item buy view, whose list asks for the item's listings on show,

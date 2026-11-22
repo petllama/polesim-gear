@@ -352,6 +352,17 @@ return {
 		ns.Fire("SCORES_CHANGED")
 		T.eq(#ns.AH.Rows(), 0, "worn now")
 	end,
+	-- An item the server turns out not to have (Items.MarkMissing) leaves the results.
+	rescore_on_missing_item = function()
+		local ns = addon(20)
+		local api, log = stubAH({ result(2292, 100) }, 5)
+		_G.C_AuctionHouse = api
+		ns.AH.Scan()
+		for _ = 1, 10 do answer(ns, log) end
+		T.eq(#ns.AH.Rows(), 1)
+		T.ok(ns.Items.MarkMissing(2292))
+		T.eq(#ns.AH.Rows(), 0, "gone")
+	end,
 	-- Many results are scored over frames (Browser.Start's slices, AH.YIELD_EVERY items a step):
 	-- "Scoring n results..." meanwhile, Cancel stops it; no long frame at the end of a scan.
 	scoring_spreads_over_frames = function()
