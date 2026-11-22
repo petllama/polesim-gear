@@ -17,6 +17,8 @@ function Arrows.IsUpgrade(inst, ctx, cmp)
 end
 
 local waiting = {} -- item id -> true: a verdict waited for the client's item data
+-- link -> isUpgrade, gain, cmp (Equip.Compare: the slot it replaces, base), waiting (the client's item
+-- data has not come yet: GET_ITEM_INFO_RECEIVED for its id may change the answer)
 function Arrows.Verdict(link)
 	local ctx = ns.Context.Get()
 	if not (ctx and type(link) == "string") then return false end
@@ -25,8 +27,9 @@ function Arrows.Verdict(link)
 		local id = tonumber(link:match("item:(%d+)"))
 		if id then waiting[id] = true end
 	end
-	if not hit then return false end
-	return Arrows.IsUpgrade(hit[1], ctx, hit[2])
+	if not hit then return false, nil, nil, wait and true or false end
+	local up, gain = Arrows.IsUpgrade(hit[1], ctx, hit[2])
+	return up, gain, hit[2], wait and true or false
 end
 
 -- By item id (auction house browse rows: no link). Random-suffix items get no arrow there: the row

@@ -1,5 +1,6 @@
--- Settings: the account-wide switches (minimap button, tooltip line, upgrade arrows, reward mark),
--- the look ahead a new character starts with, and Polestar's gear-score question.
+-- Settings: the account-wide switches (minimap button, tooltip line, upgrade arrows, reward mark, the
+-- equip prompt), the look ahead a new character starts with, the equip prompt's minimum gain and never
+-- list, and Polestar's gear-score question.
 local ADDON, ns = ...
 local Tab = {}
 ns.TabSettings = Tab
@@ -20,7 +21,16 @@ Tab.SWITCHES = {
 	{ "Mark the best quest reward", function() return ns.Options.Get("rewardMark") end, function(on) ns.Options.Set("rewardMark", on) end },
 	{ "Prefer upgrades from upcoming guide quests (within 2 levels)", function() return ns.Options.Get("preferQuest") end,
 		function(on) ns.Options.Set("preferQuest", on) end },
+	{ "Ask to equip upgrades I pick up", function() return ns.Options.Get("askEquip") end, function(on) ns.Options.Set("askEquip", on) end },
 }
+local ROW = 24
+
+-- the minimum gain choices: { { value, text } }
+function Tab.MinGainList()
+	local out = {}
+	for _, v in ipairs(ns.Prompt.MIN_CHOICES) do out[#out + 1] = { value = v, text = v == 0 and "Any gain" or ("+" .. v .. "% or more") } end
+	return out
+end
 
 function Tab.Create(parent)
 	local p = CreateFrame("Frame", nil, parent)
@@ -31,30 +41,60 @@ function Tab.Create(parent)
 			ns.Window.Refresh()
 		end)
 		b:SetSize(420, 20)
-		b:SetPoint("TOPLEFT", 16, -16 - (i - 1) * 28)
+		b:SetPoint("TOPLEFT", 16, -12 - (i - 1) * ROW)
 		b.get = sw[2]
 		p.checks[i] = b
 	end
-	local y = -16 - #Tab.SWITCHES * 28 - 8
+	local y = -12 - #Tab.SWITCHES * ROW - 4
 	local l = S.Text(p, 12, C.text)
 	l:SetPoint("TOPLEFT", 16, y)
 	l:SetText("Look ahead for a new character")
 	p.ahead = S.Dropdown(p, 146, 24, ns.Window.AheadList, function(a) return ns.Options.Get("ahead") == a end,
 		function(a) ns.Options.Set("ahead", a) ns.Window.Refresh() end)
 	p.ahead:SetPoint("TOPLEFT", 240, y + 5)
-	y = y - 40
+	-- the upgrade prompt: minimum gain, the never list, and Polestar's own prompt
+	y = y - 30
+	local g = S.Text(p, 12, C.text)
+	g:SetPoint("TOPLEFT", 16, y)
+	g:SetText("Minimum gain to ask to equip")
+	p.minGain = S.Dropdown(p, 146, 24, Tab.MinGainList, function(v) return ns.Options.Get("askMinPct") == v end,
+		function(v) ns.Options.Set("askMinPct", v) ns.Window.Refresh() end)
+	p.minGain:SetPoint("TOPLEFT", 240, y + 5)
+	p.never = S.Text(p, 11, C.label)
+	p.never:SetPoint("TOPLEFT", 400, y)
+	p.clearNever = S.Button(p, "Clear", 50, 20, function()
+		ns.Prompt.ClearNever()
+		ns.Window.Refresh()
+	end, S.ACTION)
+	p.clearNever:SetPoint("TOPLEFT", 520, y + 4)
+	p.clearNever.tip = "Ask again about the items you right-clicked Never for"
+	y = y - 22
+	p.promptNote = S.Text(p, 11, C.label)
+	p.promptNote:SetPoint("TOPLEFT", 16, y)
+	y = y - 22
 	local t = S.Text(p, 13, C.white)
 	t:SetPoint("TOPLEFT", 16, y)
 	t:SetText("Polestar's gear scores")
 	p.answer = S.Text(p, 12, C.label)
-	p.answer:SetPoint("TOPLEFT", 16, y - 20)
+	p.answer:SetPoint("TOPLEFT", 16, y - 18)
 	p.answer:SetWidth(420)
 	p.ask = S.Button(p, "Ask again", 90, 20, function()
 		if ns.Coexist then ns.Coexist.AskAgain() end
 		ns.Window.Refresh()
 	end, S.ACTION)
-	p.ask:SetPoint("TOPLEFT", 440, y - 16)
+	p.ask:SetPoint("TOPLEFT", 440, y - 14)
 	return p
+end
+
+-- The never list's count, and whose prompt asks (ours, or Polestar's while its Gear is on).
+function Tab.NeverText(n)
+	if n == 0 then return "No item never asked" end
+	return n .. (n == 1 and " item never asked" or " items never asked")
+end
+function Tab.PromptNote()
+	local Co = ns.Coexist
+	if Co and Co.PolestarGearOn() then return "Polestar's Gear is on: its own \"Wear it\" asks, ours stays quiet." end
+	return "Right-click the equip prompt: Never for this item. /psg ask: every upgrade in your bags."
 end
 
 function Tab.AnswerText()
@@ -70,6 +110,11 @@ function Tab.Refresh(p)
 	for _, b in ipairs(p.checks) do b:Set(b.get()) end
 	p.ahead:Update()
 	p.answer:SetText(Tab.AnswerText())
+	local n = ns.Prompt.NeverCount()
+	p.never:SetText(Tab.NeverText(n))
+	p.clearNever:SetShown(n > 0)
+	p.promptNote:SetText(Tab.PromptNote())
+	p.minGain:Update()
 end
 
 ns.Window.RegisterTab("settings", { create = Tab.Create, refresh = Tab.Refresh })

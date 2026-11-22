@@ -501,6 +501,101 @@ for li, L in ipairs(levels) do
 			_G.C_AuctionHouse, _G.AuctionHouseFrame, _G.AuctionHouseFrameDisplayMode, _G.AuctionHouseSearchContext = nil, nil, nil, nil
 		end
 
+		-- 7. the loot pass: bags with one item at login, then a real shipped head piece the character
+		-- can wear now that scores over the worn one is looted (a new GUID); the equip prompt shows
+		-- above a stand-in Polestar guide window, its icon is hovered, Equip puts it on (the client's
+		-- EquipItemByName recorded), the item goes on and the prompt closes; then Polestar's window hides
+		-- and another loot asks at the prompt's own place.
+		local lootInfo = "not run"
+		do
+			local c = ns.Context.Get()
+			local bagsT, equips, LOC = { [0] = {} }, {}, {}
+			for k, v in pairs(ns.Live.EQUIP_LOC) do LOC[v] = LOC[v] or k end
+			LOC[5], LOC[13] = "INVTYPE_CHEST", "INVTYPE_WEAPON"
+			local function rec(link) return ns.Items.Get(tonumber(link:match("item:(%d+)"))) end
+			_G.C_Container = {
+				GetContainerNumSlots = function(b) return bagsT[b] and 16 or 0 end,
+				GetContainerItemInfo = function(b, s)
+					local e = bagsT[b] and bagsT[b][s]
+					return e and { hyperlink = e.link, itemID = tonumber(e.link:match("item:(%d+)")), stackCount = 1 } or nil
+				end,
+			}
+			_G.ItemLocation = { CreateFromBagAndSlot = function(_, b, s) return { b = b, s = s } end,
+				CreateFromEquipmentSlot = function(_, s) return { e = s } end }
+			_G.C_Item = {
+				DoesItemExist = function(l) return l.e == nil and bagsT[l.b] and bagsT[l.b][l.s] ~= nil end,
+				GetItemGUID = function(l) return bagsT[l.b][l.s].guid end,
+				GetItemInfoInstant = function(link)
+					local r = rec(link)
+					return r and r.id, nil, nil, r and LOC[r.inv] or "", 134400, r and r.c or 15, r and r.sc or 0
+				end,
+				GetItemInfo = function(link)
+					local r = rec(link)
+					if not r then return nil end
+					return r.name, link, r.q, r.il, r.rl, nil, nil, 1, LOC[r.inv], r.icon, 0, r.c, r.sc
+				end,
+				EquipItemByName = function(link, slot) equips[#equips + 1] = { link, slot } end,
+			}
+			-- the best-scoring head piece the character can wear now
+			local best, bestGain
+			for _, id in ipairs(ns.Items.ByInv()[1] or {}) do
+				local it = ns.Items.Peek(id)
+				if it and it.rl <= L and ns.Equip.CanUse(it, c.cls, L) and #it.sfx == 0 then
+					local up, gain = ns.Arrows.Verdict("item:" .. id)
+					if up and (not bestGain or gain > bestGain) then best, bestGain = id, gain end
+				end
+			end
+			local pf = U.new("Frame", _G.UIParent, "PolestarGuideFrame")
+			pf:SetSize(340, 200)
+			step("loot login", function()
+				bagsT[0][1] = { link = "item:" .. (best or 0), guid = "Item-old" }
+				ev(ns._frame, "PLAYER_ENTERING_WORLD", false, true)
+			end)
+			local P = ns.Prompt
+			if P.Frame() and P.Frame():IsShown() then note("loot", "a prompt for the bags at login") end
+			step("loot", function()
+				assert(best, "no head upgrade in the shipped table")
+				bagsT[0][2] = { link = "item:" .. best, guid = "Item-new" }
+				ev(ns._frame, "BAG_UPDATE_DELAYED")
+			end)
+			local f = P.Frame()
+			local shown = f and f:IsShown()
+			if not shown then note("loot", "no prompt for " .. tostring(best)) end
+			local rel, relPt
+			if f then _, rel, relPt = f:GetPoint(1) end
+			if shown and not (rel == pf and relPt == "TOP") then note("loot", "not above Polestar's window") end
+			local text = shown and U.texts(f) or ""
+			step("loot hover", function()
+				f.icon.scripts.OnEnter(f.icon)
+				f.icon.scripts.OnLeave(f.icon)
+			end)
+			step("loot equip", function() U.button(f, "Equip"):Click() end)
+			if not (equips[1] and equips[1][1] == "item:" .. tostring(best) and equips[1][2] == 1) then
+				note("loot", "EquipItemByName not called with the item and slot 1")
+			end
+			step("loot worn", function()
+				U.equipped[1] = "item:" .. best
+				bagsT[0][2] = nil
+				ev(ns._frame, "PLAYER_EQUIPMENT_CHANGED", 1, true)
+				ev(ns._frame, "BAG_UPDATE_DELAYED")
+			end)
+			if f and f:IsShown() then note("loot", "the prompt stayed after equipping") end
+			step("loot away", function()
+				pf:Hide()
+				bagsT[0][3] = { link = "item:" .. best, guid = "Item-new2" }
+				ev(ns._frame, "BAG_UPDATE_DELAYED")
+				if f:IsShown() then
+					local _, r2 = f:GetPoint(1)
+					assert(r2 == _G.UIParent, "Polestar hidden: our own place")
+					U.button(f, "Not now"):Click()
+				end
+			end)
+			lootInfo = format("%s %+.1f; prompt %q; equip %s", tostring(best and ns.Items.Get(best).name), bestGain or 0,
+				(text:gsub("\n", " | ")), equips[1] and (equips[1][1] .. " -> slot " .. equips[1][2]) or "none")
+			U.equipped[1] = nil
+			_G.C_Container, _G.ItemLocation, _G.C_Item, _G.PolestarGuideFrame = nil, nil, nil, nil
+		end
+
 		local function n(k) return counts[k] or 0 end
 		local bad = 0
 		for _, w in ipairs(navs) do
@@ -515,6 +610,7 @@ for li, L in ipairs(levels) do
 			tostring(counts.picked)))
 		print("  route: " .. routeInfo)
 		print("  AH: " .. ahInfo)
+		print("  loot: " .. lootInfo)
 		for _, l in ipairs(ahTop) do print(l) end
 		for i = 1, math.min(10, #errors) do print("  " .. errors[i]) end
 		if #errors > 0 then failures = failures + 1 end

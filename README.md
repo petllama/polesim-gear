@@ -1,6 +1,6 @@
 # PoleSim Gear
 
-Version 0.4.4. WoW: Forever addon: PoleSim's simulated, level-banded gear weights in game. Item scores with a
+Version 0.5.0. WoW: Forever addon: PoleSim's simulated, level-banded gear weights in game. Item scores with a
 "how?" breakdown, upgrade arrows, the best quest reward, and a gear planner window with where to get
 each upgrade. In testing.
 
@@ -48,7 +48,22 @@ upgrade, gold: your pick; hover a slot for the item and its gain), and the stat 
   (through Polestar's Nav API).
 - **Weights:** your band's weights (step through the other bands) and the spec switch.
 - **Settings:** minimap button, tooltip score line, upgrade arrows, the quest reward mark, preferring upcoming guide quests, the look
-  ahead a new character starts with, and Polestar's gear-score question.
+  ahead a new character starts with, the equip prompt (on/off, minimum gain, the never list), and
+  Polestar's gear-score question.
+
+## Equip prompt
+
+New gear that reaches your bags (loot, a quest reward, mail, a purchase, a trade) and is an upgrade you
+can wear now asks once to be equipped: a small card directly above Polestar's guide window (under the
+minimap when that window is hidden; drag it there to move it) with the item, its slot and the gain in
+green, **Equip** and **Not now**. Several upgrades queue ("1 of 3"). Hover the icon for the item's
+tooltip. Equip puts it in the slot it replaces (the weaker ring or trinket); an item that binds when worn
+still brings up the game's own confirmation. In combat the button says "After combat" and comes back when
+the fight ends. Right-click the card: **Never for this item** (kept for the account; Settings > Clear
+forgets the list). Items already in your bags at login, moved between bags or just taken off never ask.
+Settings: "Ask to equip upgrades I pick up" (on by default) and "Minimum gain to ask to equip" (any, 1%,
+3%, 5%). While Polestar's own Gear module is on, its "Wear it" banner asks instead and this one stays
+quiet. `/psg ask` asks about every upgrade in your bags now.
 
 ## Auction house upgrades
 
@@ -79,6 +94,7 @@ best suffix and says "any suffix"; its listings show each one's suffix (with the
   website's import: Frost over Fire over Arcane, Shadow over Holy over Discipline); no points yet =
   Shadow for a priest, Frost for a mage.
 - `/psg minimap`: hide/show the minimap button (saved for the account).
+- `/psg ask`: ask to equip every upgrade in your bags now (the equip prompt, even for items there at login).
 - `/psg polestar`: ask again whether to turn off Polestar's own gear scores (forgets the earlier answer).
 
 ## Development

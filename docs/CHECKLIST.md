@@ -1,4 +1,15 @@
-# In-game checklist (one session, on a priest; section M on a mage) — PoleSim Gear 0.4.4
+# In-game checklist (one session, on a priest; section M on a mage) — PoleSim Gear 0.5.0
+
+**0.5.0 over 0.4.4:** an equip prompt. A new upgrade reaching your bags (loot, quest reward, mail, a
+purchase, a trade) now asks to be equipped: a small card directly above Polestar's guide window with the
+item, its slot and the gain in green (Upgrade +0.5 (+3%)), **Equip** and **Not now**; several upgrades
+queue ("1 of 3"). Equip puts it in the slot it replaces (the weaker ring or trinket); a bind-on-equip
+item still brings up the game's own confirmation. In combat the button reads "After combat" and comes
+back when the fight ends. Right-click the card: Never for this item (account-wide; Settings > Clear).
+Settings: "Ask to equip upgrades I pick up" (on) and "Minimum gain to ask to equip" (any/1%/3%/5%). Quiet
+while Polestar's own Gear module is on (its "Wear it" banner asks instead). `/psg ask` asks about every
+upgrade already in your bags. Checks: section P. **A new file (Prompt.lua): restart the game** (a
+`/reload` does not load it).
 
 **0.4.4 over 0.4.3:** a taint fix. Setting a raid marker from the target frame's right-click menu (Target
 Marker Icon > Skull) could be blocked ("an action was blocked because of taint from PoleSimGear -
@@ -690,6 +701,40 @@ Choose another upgrade, Back to suggestion on a pick, Add/Remove wishlist), then
 Target Marker Icon > Skull: set, no "blocked" popup; with `/console taintLog 1` no PoleSimGear line in
 Logs/taint.log.
 
+## P. Equip prompt (0.5.0)
+
+Before: a full game restart (new file), Polestar's guide window shown, Polestar's own Gear module off (as
+after "Yes" in A4; with it on our prompt stays quiet: P6).
+
+**P1. Loot an upgrade.** Loot (or buy from a vendor, or take from mail) a piece you can wear now that
+shows our green arrow in the bags. A card appears directly above Polestar's guide window: icon with a
+quality border, the name, the slot and "Upgrade +N (+N%)" in green, Equip, Not now and X. Hover the icon:
+the item's own tooltip with our score line and "Right-click the card: never ask for this item". Move
+Polestar's window: the card follows. Hide Polestar's window (its close button or /polestar hide): the card
+moves under the minimap; drag it somewhere and show Polestar's window again: back above it. Items already
+in the bags at login and moving an item to another bag never ask. Screenshot the card.
+
+**P2. Equip.** Click Equip: the item goes on (a bind-on-equip item first shows the game's "will bind"
+confirmation; Okay equips it, Cancel leaves it in the bags and the Equip button comes back after a few
+seconds). Chat: "Wearing <item> (Upgrade +N (+N%))." and the card closes. A ring or trinket replaces the
+weaker of the two you wear (the one the tooltip compares against).
+
+**P3. In combat.** Pull a mob, then loot an upgrade during the fight (or have one waiting): the Equip button
+is greyed and reads "After combat"; clicking it does nothing. When the fight ends it reads Equip again
+and works.
+
+**P4. Queue, Not now.** Get two upgrades at once (a quest reward plus a vendor buy, or `/psg ask` with two
+upgrades in the bags): "1 of 2" top right; Not now (or X) shows the next; the last one has no counter.
+Not now remembers that copy for the session (it does not ask again; `/psg ask` does).
+
+**P5. Never.** Right-click the card > Never for this item: it closes and the same item never asks again (on
+any character). Settings shows "1 item never asked" and Clear; Clear empties it.
+
+**P6. Settings and Polestar.** Settings: "Ask to equip upgrades I pick up" off: no card for a new upgrade.
+"Minimum gain to ask to equip" +5%: a smaller upgrade does not ask. With Polestar's Gear module on
+(Polestar options: Questing > Rewards & gear > Gear advice), the Settings note says Polestar's "Wear it"
+asks, and our card does not show (only Polestar's banner offers it): never two prompts for one item.
+
 ## Probe results (B1, fill in)
 
 | Question | Answer |
@@ -768,6 +813,12 @@ Logs/taint.log.
 | N7 | AH: Gear Plan "AH:" price and strip line | |
 | N8 | AH: cancel, close mid-scan, own search | |
 | O1 | our popups; then Skull from the target frame not blocked, taint.log clean | |
+| P1 | equip prompt above Polestar; tooltip; follows; fallback place | |
+| P2 | Equip: worn, chat line, ring/trinket slot; bind confirmation | |
+| P3 | in combat: After combat, then Equip | |
+| P4 | queue 1 of 2; Not now | |
+| P5 | Never; Settings count and Clear | |
+| P6 | switch off, minimum gain, quiet with Polestar's Gear on | |
 
 ## Known limits (tell me if they bother you)
 
