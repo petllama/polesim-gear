@@ -305,19 +305,21 @@ function Tab.Click(row, button)
 	if button ~= "RightButton" then return ns.Window.OpenSlot(e.def.key) end
 	local ctx = ns.Context.Get()
 	if not ctx then return end
-	if not (MenuUtil and MenuUtil.CreateContextMenu) then return ns.Window.OpenSlot(e.def.key) end -- an older client
 	local r = planRow(e)
 	local inst = r and r.c.inst or (e.entry and e.entry.missing and ns.View.Inst(e.entry.missing.id, e.entry.missing.bonus))
-	MenuUtil.CreateContextMenu(row, function(_, root)
-		root:CreateTitle(e.def.label)
-		root:CreateButton("Choose another upgrade", function() ns.Window.OpenSlot(e.def.key) end)
-		if e.entry and e.entry.isPick then
-			root:CreateButton("Back to suggestion", function() ns.Plan.Clear(ctx.spec, e.def.key) end)
-		end
-		if inst then
-			root:CreateButton(ns.Wishlist.Has(inst) and "Remove from wishlist" or "Add to wishlist", function() ns.Wishlist.Toggle(inst) end)
-		end
-	end)
+	-- our own popup (Style.ContextMenu), never Blizzard's Menu system: it taints the unit popup
+	local items = {
+		{ text = e.def.label, isTitle = true },
+		{ text = "Choose another upgrade", onClick = function() ns.Window.OpenSlot(e.def.key) end },
+	}
+	if e.entry and e.entry.isPick then
+		items[#items + 1] = { text = "Back to suggestion", onClick = function() ns.Plan.Clear(ctx.spec, e.def.key) end }
+	end
+	if inst then
+		items[#items + 1] = { text = ns.Wishlist.Has(inst) and "Remove from wishlist" or "Add to wishlist",
+			onClick = function() ns.Wishlist.Toggle(inst) end }
+	end
+	S.ContextMenu(row, items)
 end
 
 ns.Window.RegisterTab("plan", { create = Tab.Create, refresh = Tab.Refresh, release = Tab.Release, layout = Tab.Layout })

@@ -374,29 +374,159 @@ function Style.ItemCell(parent, iconSize, nameW)
 	end
 	return c
 end
--- A dropdown: Blizzard's WowStyle1DropdownTemplate with radio items, else (template missing) a flat
--- button cycling through the list. list() -> { { text, value } }; dd:Update() redraws its text.
-function Style.Dropdown(parent, w, h, list, isSelected, select)
-	local ok, dd = pcall(CreateFrame, "DropdownButton", nil, parent, "WowStyle1DropdownTemplate")
-	if ok and dd and type(dd.SetupMenu) == "function" then
-		dd:SetSize(w, h)
-		dd:SetupMenu(function(_, root)
-			for _, o in ipairs(list()) do
-				root:CreateRadio(o.text, function() return isSelected(o.value) end, function() select(o.value) end, o.value)
-			end
-		end)
-		function dd:Update() if self.GenerateMenu then self:GenerateMenu() end end
-		return dd
-	end
-	local b = Style.Button(parent, "", w, h, nil, Style.ACTION)
-	b:SetScript("OnClick", function()
-		local l, at = list(), 1
-		for i, o in ipairs(l) do if isSelected(o.value) then at = i end end
-		if #l > 0 then select(l[at % #l + 1].value) end
+-- Our own popup list (dropdowns and right-click menus). Never Blizzard's Menu system (MenuUtil,
+-- DropdownButton/WowStyle*DropdownTemplate, UIDropDownMenu): its menu manager, frame pool and proxies are
+-- shared with the unit popup, and an addon opening a menu first taints them, so a later Target Marker
+-- Icon pick on the target frame was blocked (SetRaidTarget). One popup, made on first use, unnamed (no
+-- global): a full-screen catcher under it closes it on a click outside; Escape closes it (out of combat:
+-- a key listener passes every other key on); it closes when its owner hides and when combat starts.
+-- items: { { text, onClick, isTitle, checked } }: checked true/false draws a radio mark (nil: none).
+local POP_ROW, POP_PAD = 20, 4
+local popup
+local function closePopup() if popup and popup:IsShown() then popup:Hide() end end
+Style.ClosePopup = closePopup
+local function popupRow(p, i)
+	local row = p.rows[i]
+	if row then return row end
+	row = CreateFrame("Button", nil, p)
+	row:SetHeight(POP_ROW)
+	row.hl = Style.Fill(row, C.rowHover, 1, "ARTWORK")
+	row.hl:Hide()
+	row.mark = Style.Dot(row, 7, C.pick)
+	row.mark:SetPoint("LEFT", 8, 0)
+	row.label = Style.Text(row, 12, C.text)
+	row.label:SetPoint("LEFT", 22, 0)
+	row:SetScript("OnEnter", function(self) if not self.title then self.hl:Show() end end)
+	row:SetScript("OnLeave", function(self) self.hl:Hide() end)
+	row:SetScript("OnClick", function(self)
+		local it = self.item
+		if not it or self.title then return end
+		closePopup() -- first: the choice may open another popup
+		if it.onClick then it.onClick() end
 	end)
-	function b:Update()
-		for _, o in ipairs(list()) do if isSelected(o.value) then self.label:SetText(o.text) end end
+	p.rows[i] = row
+	return row
+end
+local function popupFrame()
+	if popup then return popup end
+	local catcher = CreateFrame("Button", nil, UIParent)
+	catcher:SetPoint("TOPLEFT", UIParent, "TOPLEFT")
+	catcher:SetPoint("BOTTOMRIGHT", UIParent, "BOTTOMRIGHT")
+	catcher:SetFrameStrata("DIALOG")
+	catcher:SetFrameLevel(1)
+	catcher:EnableMouse(true)
+	catcher:SetScript("OnMouseDown", closePopup)
+	catcher:Hide()
+	local p = CreateFrame("Frame", nil, UIParent)
+	p.psgPopup = true
+	p:SetFrameStrata("DIALOG")
+	p:SetFrameLevel(20)
+	p:SetClampedToScreen(true)
+	p:EnableMouse(true)
+	p.bg = Style.Fill(p, C.inner, 0.98)
+	p.border = Style.Border(p, C.ddBorder)
+	p.rows = {}
+	p.catcher = catcher
+	-- Escape: a child that only listens out of combat (SetPropagateKeyboardInput is restricted in it)
+	local keys = CreateFrame("Frame", nil, p)
+	keys:SetScript("OnKeyDown", function(self, key)
+		if InCombatLockdown() then return end
+		if key == "ESCAPE" then
+			self:SetPropagateKeyboardInput(false)
+			closePopup()
+		else
+			self:SetPropagateKeyboardInput(true)
+		end
+	end)
+	keys:Hide()
+	p.keys = keys
+	p:SetScript("OnUpdate", function(self)
+		if not (self.owner and self.owner:IsVisible()) then closePopup() end
+	end)
+	p:SetScript("OnHide", function(self)
+		self.catcher:Hide()
+		self.keys:Hide()
+		self.owner = nil
+		for _, row in ipairs(self.rows) do row.item = nil end
+	end)
+	p:Hide()
+	popup = p
+	ns.RegisterEvent("PLAYER_REGEN_DISABLED", closePopup)
+	return p
+end
+Style.PopupFrame = function() return popup end
+-- Open the popup for owner with items; anchor: { point, relativeTo, relativePoint, x, y }.
+-- -> the popup (nil for no items). Replaces one already open.
+function Style.OpenPopup(owner, items, anchor, minW)
+	closePopup()
+	if not items or #items == 0 then return nil end
+	local p = popupFrame()
+	local w = minW or 0
+	for i, it in ipairs(items) do
+		local row = popupRow(p, i)
+		row.item, row.title, row.checked = it, it.isTitle and true or false, it.checked
+		row.label:SetText(it.text or "")
+		local c = it.isTitle and C.gold or C.text
+		row.label:SetTextColor(c[1], c[2], c[3])
+		row.label:ClearAllPoints()
+		row.label:SetPoint("LEFT", it.checked ~= nil and 22 or 8, 0)
+		row.mark:SetShown(it.checked ~= nil)
+		row.mark:SetAlpha(it.checked and 1 or 0.2)
+		row:EnableMouse(not it.isTitle)
+		row.hl:Hide()
+		row:ClearAllPoints()
+		row:SetPoint("TOPLEFT", POP_PAD, -POP_PAD - (i - 1) * POP_ROW)
+		row:SetPoint("TOPRIGHT", -POP_PAD, -POP_PAD - (i - 1) * POP_ROW)
+		row:Show()
+		w = math.max(w, (row.label:GetStringWidth() or 0) + (it.checked ~= nil and 22 or 8) + 12 + 2 * POP_PAD)
 	end
+	for i = #items + 1, #p.rows do p.rows[i]:Hide() p.rows[i].item = nil end
+	p:SetSize(math.ceil(w), #items * POP_ROW + 2 * POP_PAD)
+	p:ClearAllPoints()
+	p:SetPoint(anchor[1], anchor[2], anchor[3], anchor[4] or 0, anchor[5] or 0)
+	p.owner = owner
+	p.catcher:Show()
+	p:Show()
+	if not InCombatLockdown() then
+		p.keys:EnableKeyboard(true)
+		p.keys:SetPropagateKeyboardInput(true)
+		p.keys:Show()
+	end
+	return p
+end
+-- A right-click menu at the cursor: items as Style.OpenPopup's.
+function Style.ContextMenu(owner, items)
+	local x, y = GetCursorPosition()
+	local scale = UIParent:GetEffectiveScale() or 1
+	return Style.OpenPopup(owner, items, { "TOPLEFT", UIParent, "BOTTOMLEFT", x / scale, y / scale })
+end
+-- A dropdown: a flat button showing the selected choice and an arrow; a click opens our popup with a
+-- radio mark on the selected choice, a click on a choice selects it. list() -> { { text, value } };
+-- dd:Update() redraws its text.
+function Style.Dropdown(parent, w, h, list, isSelected, select)
+	local b = Style.Button(parent, "", w, h, nil, Style.ACTION)
+	b.label:ClearAllPoints()
+	b.label:SetPoint("LEFT", 8, 0)
+	b.label:SetWidth(w - 26)
+	b.label:SetJustifyH("LEFT")
+	b.arrow = b:CreateTexture(nil, "OVERLAY")
+	b.arrow:SetAtlas("common-dropdown-c-button-hover-arrow", true)
+	b.arrow:SetPoint("RIGHT", -6, 0)
+	function b:Update()
+		local text = ""
+		for _, o in ipairs(list()) do if isSelected(o.value) then text = o.text end end
+		self.label:SetText(text)
+	end
+	b:SetScript("OnClick", function(self)
+		if popup and popup:IsShown() and popup.owner == self then return closePopup() end
+		local items = {}
+		for i, o in ipairs(list()) do
+			local value = o.value
+			items[i] = { text = o.text, checked = isSelected(value) and true or false,
+				onClick = function() select(value) self:Update() end }
+		end
+		Style.OpenPopup(self, items, { "TOPLEFT", self, "BOTTOMLEFT", 0, -2 }, w)
+	end)
 	b:Update()
 	return b
 end

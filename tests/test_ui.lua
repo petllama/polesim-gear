@@ -18,9 +18,14 @@ return {
 		f:Hide()
 		T.eq(b:IsVisible(), false, "parent hidden"); T.eq(U.button(f, "Go"), nil, "only visible buttons")
 		T.ok(U.texts(UIParent) == "", "hidden text not collected")
-		local dd = CreateFrame("DropdownButton", nil, f, "WowStyle1DropdownTemplate")
-		dd:SetupMenu(function(_, root) root:CreateRadio("Now", function() return true end, function() end, 0) end)
-		T.eq(U.menu(dd)[1].text, "Now")
+		-- Blizzard's Menu system is off limits (it taints the unit popup): every way in errors
+		T.eq(pcall(CreateFrame, "DropdownButton", nil, f, "WowStyle1DropdownTemplate"), false)
+		T.eq(pcall(CreateFrame, "Button", nil, f, "WowStyle2DropdownTemplate"), false)
+		T.eq(pcall(function() return MenuUtil.CreateContextMenu end), false)
+		T.eq(pcall(function() return Menu.GetManager end), false)
+		T.eq(pcall(function() b:SetupMenu(function() end) end), false)
+		T.eq(pcall(function() b:GenerateMenu() end), false)
+		T.eq(pcall(UIDropDownMenu_Initialize), false); T.eq(pcall(EasyMenu), false)
 		_G.PSGTestFrame = nil
 	end,
 	-- U.rows reuses a list's frames as a ScrollBox does: no new frame for the same or a shorter list,

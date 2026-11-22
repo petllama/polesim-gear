@@ -271,10 +271,10 @@ for li, L in ipairs(levels) do
 					hit.scripts.OnEnter(hit); hit.scripts.OnLeave(hit)
 					hit.scripts.OnClick(hit, "RightButton")
 					local back
-					for _, it in ipairs(U.contextMenu or {}) do if it.text == "Back to suggestion" then back = it.fn end end
-					assert(back, "Back to suggestion in the menu")
-					U.contextMenu = nil -- (the stub keeps the last menu; the client lets it go when it closes)
+					for _, it in ipairs(U.popup() or {}) do if it.text == "Back to suggestion" then back = it.click end end
+					assert(back, "Back to suggestion in our popup")
 					back(); settle()
+					assert(U.popup() == nil, "the popup closed")
 					assert(ns.Plan.Get(spec, d.key) == nil, "back to the suggestion")
 					Win.OpenSlot(d.key)
 					rows = U.rows(Win.Panel("slot").list)

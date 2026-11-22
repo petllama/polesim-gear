@@ -1,4 +1,15 @@
-# In-game checklist (one session, on a priest; section M on a mage) — PoleSim Gear 0.4.3
+# In-game checklist (one session, on a priest; section M on a mage) — PoleSim Gear 0.4.4
+
+**0.4.4 over 0.4.3:** a taint fix. Setting a raid marker from the target frame's right-click menu (Target
+Marker Icon > Skull) could be blocked ("an action was blocked because of taint from PoleSimGear -
+SetRaidTarget()") after you had used one of our dropdowns or the Gear Plan's right-click menu: those were
+Blizzard's menus, which the unit menus share, and opening them from an addon tainted them. The look-ahead
+dropdowns (header and Settings), the Slot Upgrades slot picker and the Gear Plan right-click menu are now
+our own popup (same choices, our colours; a click outside or Escape closes it, Escape without closing the
+window). Check (O1): `/console taintLog 1`, `/reload`, open the window, pick a look ahead in the header
+dropdown, right-click a Gear Plan row and pick an entry, close the window, target a mob, right-click its
+target frame > Target Marker Icon > Skull: the skull is set, no "blocked" message, and after logging out
+Logs/taint.log has no PoleSimGear line. `/console taintLog 0` afterwards. `/reload` is enough.
 
 **0.4.3 over 0.4.2:** items Forever's server does not have are gone. The item data included ~4,800
 Classic-only items (Season of Discovery ids such as Scout's Blade, Lorekeeper's Staff and Resilient Cloth
@@ -670,6 +681,15 @@ this after a normal search for e.g. "of the Owl" and report the lines:
 /run local r=C_AuctionHouse.GetBrowseResults() for i=1,math.min(8,#r) do local k=r[i].itemKey local n=C_AuctionHouse.GetItemKeyInfo(k) print(k.itemID,k.itemSuffix,k.itemLevel,n and n.itemName) end
 ```
 
+## O. Our popups, no taint (0.4.4)
+
+**O1. Raid marker after our menus.** As the 0.4.4 paragraph at the top: header Look ahead dropdown (its
+popup opens under it with a dot on the current choice; a click picks and closes; Escape closes only the
+popup, a second Escape the window), Slot Upgrades slot picker, a Gear Plan right-click (slot name in gold,
+Choose another upgrade, Back to suggestion on a pick, Add/Remove wishlist), then a mob's target frame >
+Target Marker Icon > Skull: set, no "blocked" popup; with `/console taintLog 1` no PoleSimGear line in
+Logs/taint.log.
+
 ## Probe results (B1, fill in)
 
 | Question | Answer |
@@ -747,6 +767,7 @@ this after a normal search for e.g. "of the Owl" and report the lines:
 | N6 | AH: click -> listings; manual buy works | |
 | N7 | AH: Gear Plan "AH:" price and strip line | |
 | N8 | AH: cancel, close mid-scan, own search | |
+| O1 | our popups; then Skull from the target frame not blocked, taint.log clean | |
 
 ## Known limits (tell me if they bother you)
 
@@ -776,7 +797,7 @@ this after a normal search for e.g. "of the Owl" and report the lines:
 - "elite" on a quest = the Codex lists hostile elites at one of its objectives for your side (it has no
   group-quest flag).
 - Columns say "Gain" (the mockup's "Δ" may not be in the game font).
-- The Look ahead dropdown uses Blizzard's dropdown art.
+- The dropdowns and the right-click menu are our own popup (Blizzard's menus taint the unit menus).
 - Auction house: the scan sees what the browse list shows (one row per item, its cheapest price); a
   browse row that stands for every suffix is scored with its best suffix ("any suffix"). Under a staff a
   one-hander is paired with the best off hand for sale (not with a Gear Plan item). After a scan the

@@ -102,12 +102,33 @@ return {
 			T.ok(tip:find("Best overall: " .. list[1].c.inst.name .. " " .. ns.Style.Signed(list[1].gain), 1, true), tip)
 		end
 		picked.scripts.OnClick(picked, "RightButton")
+		local menu = assert(U.popup(), "right-click opens our popup")
 		local labels = {}
-		for _, it in ipairs(U.contextMenu) do labels[#labels + 1] = it.text end
+		for _, it in ipairs(menu) do labels[#labels + 1] = it.text end
 		local all = table.concat(labels, "|")
+		T.ok(menu[1].title, "the slot's name is a title"); T.eq(menu[1].text, picked.e.def.label)
 		T.ok(all:find("Back to suggestion", 1, true), all); T.ok(all:find("Choose another upgrade", 1, true))
-		for _, it in ipairs(U.contextMenu) do if it.text == "Back to suggestion" then it.fn() end end
+		T.ok(all:find("Add to wishlist", 1, true), all)
+		menu[1].click(); T.ok(U.popup(), "a title is not a choice: the popup stays")
+		for _, it in ipairs(menu) do if it.text == "Back to suggestion" then it.click() end end
+		T.eq(U.popup(), nil, "a choice closes the popup")
 		T.eq(ns.Plan.Get("shadow", key), nil)
+		-- wishlist from the menu, then Remove offered
+		rows = rowsOf(fx)
+		for _, x in ipairs(rows) do if x.e.def.key == key then picked = x end end
+		picked.scripts.OnClick(picked, "RightButton")
+		for _, it in ipairs(U.popup()) do if it.text == "Add to wishlist" then it.click() end end
+		picked.scripts.OnClick(picked, "RightButton")
+		labels = {}
+		for _, it in ipairs(U.popup()) do labels[#labels + 1] = it.text end
+		T.ok(table.concat(labels, "|"):find("Remove from wishlist", 1, true), table.concat(labels, "|"))
+		for _, it in ipairs(U.popup()) do if it.text == "Remove from wishlist" then it.click() end end
+		T.eq(U.popup(), nil)
+		-- Choose another upgrade opens Slot Upgrades on that slot
+		picked.scripts.OnClick(picked, "RightButton")
+		for _, it in ipairs(U.popup()) do if it.text == "Choose another upgrade" then it.click() end end
+		T.eq(ns.Options.View().tab, "slot"); T.eq(ns.Window.state.slot, key)
+		ns.Window.SetTab("plan")
 		-- left click and Choose open Slot Upgrades on that slot
 		rows = rowsOf(fx)
 		rows[1].scripts.OnClick(rows[1], "LeftButton")

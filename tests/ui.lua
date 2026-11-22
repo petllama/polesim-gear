@@ -90,6 +90,15 @@ local function releaseFrom(box, n)
 	end
 	box.frames = keep
 end
+function M:SetFrameStrata(v) self.strata = v end
+function M:GetFrameStrata() return self.strata or "MEDIUM" end
+function M:SetFrameLevel(v) self.level = v end
+function M:GetFrameLevel() return self.level or 1 end
+function M:SetClampedToScreen(v) self.clamped = v and true or false end
+function M:EnableMouse(v) self.mouse = v and true or false end
+function M:EnableKeyboard(v) self.keyboard = v and true or false end
+function M:SetPropagateKeyboardInput(v) self.propagate = v and true or false end
+function M:GetStringWidth() return self.text and U.textWidth(self.text, self.fontSize) or 0 end
 function M:SetFont(file, size, flags) self.font, self.fontSize = file, size end
 function M:SetResizable(v) self.resizable = v end
 function M:SetResizeBounds(a, b, c, d) self.bounds = { a, b, c, d } end
@@ -105,21 +114,53 @@ function M:SetDataProvider(dp)
 	releaseFrom(self, #(dp or {}))
 	self.provided = dp
 end
-function M:SetupMenu(gen) self.menu = gen end -- WowStyle1DropdownTemplate
+-- Blizzard's Menu system is shared, secure UI: an addon that opens a menu taints it for the unit popup
+-- (SetRaidTarget blocked). The addon draws its own popup; any Menu use is an error here.
+local function noMenu(what) return function() error(what .. ": Blizzard's Menu system (taints the unit popup)", 2) end end
+M.SetupMenu = noMenu("SetupMenu")
+M.GenerateMenu = noMenu("GenerateMenu")
+M.OpenMenu = noMenu("OpenMenu")
 
--- A menu generator run against a recording root: -> { { text, radio, isSelected, select, fn, data }, ... }
-function U.collectMenu(gen, owner)
+-- The addon's popup (Style.OpenPopup): the shown one under UIParent, or nil
+function U.popupFrame()
+	return U.find(_G.UIParent, function(w) return w.psgPopup and w:IsShown() end)
+end
+-- the shown popup's rows: -> { { text, title, checked, row, click() }, ... } | nil
+function U.popup()
+	local p = U.popupFrame()
+	if not p then return nil end
+	local out = {}
+	for _, row in ipairs(p.rows) do
+		if row:IsShown() then
+			out[#out + 1] = { text = row.label.text, title = row.title, checked = row.checked, row = row,
+				click = function() row:Click("LeftButton") end }
+		end
+	end
+	return out
+end
+-- A Style.Dropdown's choices, read by opening its popup (a click) and closing it again:
+-- -> { { text, isSelected(), select() }, ... }; select() opens the popup and clicks the choice.
+function U.menu(dd)
+	local function open()
+		if not U.popupFrame() then dd:Click("LeftButton") end
+		return assert(U.popup(), "the dropdown opened no popup")
+	end
+	local rows = open()
 	local items = {}
-	local root = {}
-	function root:CreateRadio(text, isSel, setSel, data) items[#items + 1] = { text = text, radio = true, isSelected = isSel, select = setSel, data = data } return {} end
-	function root:CreateButton(text, fn) items[#items + 1] = { text = text, fn = fn } return {} end
-	function root:CreateCheckbox(text, isSel, setSel, data) items[#items + 1] = { text = text, isSelected = isSel, select = setSel, data = data } return {} end
-	function root:CreateTitle(text) items[#items + 1] = { text = text, title = true } return {} end
-	function root:CreateDivider() return {} end
-	gen(owner, root)
+	for i, r in ipairs(rows) do
+		items[i] = {
+			text = r.text,
+			select = function() open()[i].click() end,
+			isSelected = function()
+				local c = open()[i].checked
+				U.popupFrame():Hide()
+				return c
+			end,
+		}
+	end
+	U.popupFrame():Hide()
 	return items
 end
-function U.menu(dd) return U.collectMenu(dd.menu, dd) end
 
 function U.walk(w, fn)
 	fn(w)
@@ -217,7 +258,12 @@ function U.overflows(root)
 end
 
 function U.install()
-	_G.CreateFrame = function(kind, name, parent, template) return new(kind, parent, name, template) end
+	_G.CreateFrame = function(kind, name, parent, template)
+		if kind == "DropdownButton" or (type(template) == "string" and (template:find("Dropdown") or template:find("Menu"))) then
+			error("CreateFrame " .. kind .. " " .. tostring(template) .. ": Blizzard's Menu system (taints the unit popup)", 2)
+		end
+		return new(kind, parent, name, template)
+	end
 	_G.UIParent = new("Frame", nil, "UIParent")
 	_G.UISpecialFrames, _G.tinsert = {}, table.insert
 	_G.STANDARD_TEXT_FONT = "Fonts\\FRIZQT__.TTF"
@@ -270,7 +316,12 @@ function U.install()
 	_G.GetInventoryItemTexture = function(_, slot) return U.equipped[slot] and 134400 or nil end
 	_G.GetInventoryItemQuality = function(_, slot) return U.equipped[slot] and 2 or nil end
 	_G.GetMoneyString = function(c) return c .. "c" end
-	_G.MenuUtil = { CreateContextMenu = function(owner, gen) U.contextMenu = U.collectMenu(gen, owner) end }
+	local forbidden = setmetatable({}, { __index = function(_, k) error("MenuUtil/Menu." .. tostring(k) .. ": Blizzard's Menu system (taints the unit popup)", 2) end })
+	_G.MenuUtil, _G.Menu = forbidden, forbidden
+	for _, fn in ipairs({ "UIDropDownMenu_Initialize", "UIDropDownMenu_AddButton", "ToggleDropDownMenu", "EasyMenu", "UnitPopup_ShowMenu" }) do
+		_G[fn] = noMenu(fn)
+	end
+	_G.GetCursorPosition = function() return 500, 400 end
 	_G.IsShiftKeyDown = function() return false end
 end
 
