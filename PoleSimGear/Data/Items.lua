@@ -112,7 +112,6 @@ ns.DATA.items = [===[
 1190	Overseer's Cloak	2	20	15	16	4	1	inv_misc_cape_08	17	0	sta=3	0		0	0		2	
 1207	Murphstar	2	39	34	13	2	4	inv_mace_15	0	21.43		7	12718,12719,12720,12721,12722,12723,12724,12725,12726,12727,12728,12729,12730,12731,12732,12733,12736,12740,12741,12742,12743,12744,12751,12752,12753,12754,12759,12906,12908,12910,12912,12913,12916,12917,12920	0	0		2	
 1214	Gnoll Punisher	2	19	14	21	2	4	inv_hammer_09	0	9.58	str=2	0		0	0		2	
-1216	Frost Bracers	2	33	28	9	4	1	inv_bracer_07	20	0	resFrost=7	0		0	0		2	
 1219	Redridge Machete	2	16	11	21	2	7	inv_sword_16	0	8.26	sta=2	0		0	0		2	
 1265	Scorpion Sting	3	39	34	13	2	7	inv_sword_12	0	26.46		0		0	0		2	
 1270	Finely Woven Cloak	2	15	0	16	4	1	inv_misc_cape_15	14	0	spi=2	0		0	0		1	
@@ -408,7 +407,6 @@ ns.DATA.items = [===[
 2632	Curved Dagger	2	14	9	13	2	15	inv_weapon_shortblade_01	0	7.19		1	12718,12719,12720,12721,12722,12723,12724,12725,12726,12727,12728,12729,12730,12731,12732,12733,12736,12740,12741,12742,12743,12744,12759,12917,12920	0	0		2	
 2644	Loose Chain Cloak	0	6	1	16	4	1	inv_misc_cape_16	5	0		0		0	0		0	
 2652	Flimsy Chain Cloak	0	5	1	16	4	1	inv_misc_cape_02	5	0		0		0	0		0	
-2664	Spinner Fang	2	18	13	13	2	15	inv_misc_monsterfang_01	0	9	sta=1	0		0	0		2	
 2721	Holy Shroud	3	32	27	1	4	1	inv_helmet_16	40	0	heal=33;spDmg=11;spi=6	0		0	0		2	
 2763	Fisherman Knife	0	14	9	13	2	15	inv_weapon_shortblade_01	0	4.29		0		0	0		0	
 2764	Small Dagger	0	18	13	13	2	15	inv_weapon_shortblade_01	0	5.36		0		0	0		0	
@@ -486,7 +484,6 @@ ns.DATA.items = [===[
 3187	Sacrificial Kris	2	44	39	13	2	15	inv_weapon_shortblade_03	0	25.71		8	12718,12719,12720,12721,12722,12723,12724,12725,12726,12727,12728,12729,12730,12731,12732,12733,12736,12740,12741,12742,12743,12744,12751,12753,12759,12906,12908,12910,12912,12913,12916,12917,12920	0	0		2	
 3216	Warm Winter Robe	1	10	0	20	4	1	inv_chest_cloth_41	18	0		0		0	0		1	
 3217	Foreman Belt	2	15	0	6	4	1	inv_belt_23	16	0	spi=2;sta=2	0		0	0		1	
-3222	Wicked Dagger	2	19	14	13	2	15	inv_weapon_shortblade_04	0	9.38	agi=1;str=1	0		0	0		2	
 3223	Frostmane Scepter	2	13	8	21	2	4	inv_mace_07	0	6.82	sta=1	0		0	0		2	
 3224	Silver-lined Bracers	2	12	7	9	4	1	inv_bracer_08	10	0	sta=1	0		0	0		2	
 3225	Bloodstained Knife	2	11	6	13	2	15	inv_weapon_shortblade_01	0	5.88	agi=1	0		0	0		2	
@@ -697,7 +694,6 @@ ns.DATA.items = [===[
 4112	Choker of the High Shaman	2	44	0	2	4	0	inv_jewelry_necklace_04	0	0	int=5;spi=8	0		0	0		1	
 4113	Medicine Blanket	2	45	0	16	4	1	inv_misc_cape_10	30	0	spi=9;sta=4	0		0	0		1	
 4114	Darktide Cape	2	42	0	16	4	1	inv_misc_cape_06	28	0	agi=6;sta=7	0		0	0		1	
-4116	Olmann Sewar	2	41	0	21	2	7	inv_sword_33	0	22.96	sta=7	0		0	0		1	
 4117	Scorching Sash	2	44	0	6	4	1	inv_misc_bandana_03	33	0	spFire=13;spi=9	0		0	0		1	
 4120	Robe of Crystal Waters	2	40	0	20	4	1	inv_chest_cloth_19	53	0	int=10;spi=9;sta=8	0		0	0		1	
 4121	Gemmed Gloves	2	35	0	10	4	1	inv_gauntlets_06	29	0	agi=5;int=6;spi=5	0		0	0		1	
@@ -869,19 +865,15 @@ ns.DATA.items = [===[
 4987	Dwarf Captain's Sword	2	45	0	13	2	7	inv_sword_25	0	26.6	sta=9	0		0	0		1	
 4988	Burning Obsidian Band	2	50	0	11	4	0	inv_jewelry_ring_04	0	0	sta=12	0		0	0		1	
 4989	Mage Dragon Robe	2	50	0	20	4	1	inv_chest_cloth_29	65	0	spi=18;str=7	0		0	0		1	
-4990	Scorched Bands	2	50	0	9	4	1	inv_bracer_17	29	0	int=8;sta=8	0		0	0		1	
 4998	Blood Ring	2	24	19	11	4	0	inv_jewelry_ring_04	0	0	sta=5	0		0	0		2	
 4999	Azora's Will	2	27	22	11	4	0	inv_belt_29	0	0	int=5	0		0	0		2	
 5000	Coral Band	2	26	21	11	4	0	inv_jewelry_ring_07	0	0	int=3;sta=4	0		0	0		2	
 5001	Heart Ring	2	27	22	11	4	0	inv_jewelry_ring_04	0	0	sta=5	0		0	0		2	
 5002	Glowing Green Talisman	2	30	25	2	4	0	inv_jewelry_necklace_01	0	0	spi=6;sta=1	0		0	0		2	
 5003	Crystal Starfire Medallion	2	31	26	2	4	0	inv_jewelry_necklace_02	0	0	int=4;spi=3;sta=4	0		0	0		2	
-5004	Mark of the Kirin Tor	2	35	30	2	4	0	inv_jewelry_necklace_08	0	0	int=7;spi=2	0		0	0		2	
-5005	Emberspark Pendant	2	35	30	2	4	0	inv_jewelry_necklace_05	0	0	spi=7;sta=2	0		0	0		2	
 5007	Band of Thorns	2	31	26	11	4	0	inv_misc_root_01	0	0	spi=6	0		0	0		2	
 5008	Quicksilver Ring	2	36	31	11	4	0	inv_jewelry_ring_14	0	0	agi=7;spi=3	0		0	0		2	
 5009	Mindbender Loop	2	36	31	11	4	0	inv_jewelry_ring_15	0	0	int=7;spi=2	0		0	0		2	
-5010	Inscribed Gold Ring	2	40	35	11	4	0	inv_jewelry_ring_03	0	0	sta=8;str=2	0		0	0		2	
 5011	Welken Ring	2	40	35	11	4	0	inv_jewelry_ring_12	0	0	int=5;spi=7	0		0	0		2	
 5016	Artisan's Trousers	2	35	0	7	4	1	inv_pants_10	41	0	agi=9;spi=9	0		0	0		1	
 5028	Lord Sakrasis' Scepter	2	47	42	23	4	0	inv_wand_10	0	0	int=6	0		0	0		2	
@@ -984,7 +976,6 @@ ns.DATA.items = [===[
 5622	Clergy Ring	2	22	0	11	4	0	inv_belt_33	0	0	spi=3;sta=1	0		0	0		1	
 5624	Circlet of the Order	2	38	33	1	4	1	inv_crown_01	41	0	int=3;spi=10;sta=7	0		0	0		2	
 5627	Relic Blade	2	20	0	13	2	15	inv_weapon_shortblade_05	0	10	sta=3	0		0	0		1	
-5742	Gemstone Dagger	2	40	35	13	2	15	inv_sword_21	0	22.33	resFire=5;resFrost=5	0		0	0		2	
 5743	Prismstone Ring	2	40	35	11	4	0	inv_jewelry_ring_11	0	0	int=9	0		0	0		2	
 5744	Pale Skinner	2	14	9	21	2	7	inv_sword_24	0	7.27	sta=1	0		0	0		2	
 5751	Webwing Cloak	2	27	22	16	4	1	inv_misc_cape_10	20	0	agi=5	0		0	0		2	
@@ -1318,9 +1309,6 @@ ns.DATA.items = [===[
 7544	Champion's Cape	2	44	39	16	4	1	inv_misc_cape_11	29	0		10	12718,12719,12720,12721,12722,12723,12724,12725,12726,12727,12728,12729,12730,12731,12732,12733,12734,12735,12736,12740,12741,12742,12743,12744,12745,12746,12747,12748,12749,12750,12751,12752,12753,12754,12755,12756,12757,12758,12759,12760,12761	0	0		2	
 7547	Onyx Ring	2	46	41	11	4	0	inv_jewelry_ring_15	0	0		11	12718,12719,12720,12721,12722,12723,12724,12725,12726,12727,12728,12729,12730,12731,12732,12733,12737,12738,12739,12740,12741,12742,12743,12744,12745,12746,12747,12748,12749,12750,12751,12752,12753,12754,12755	0	0		2	
 7548	Onyx Choker	2	46	41	2	4	0	inv_jewelry_necklace_06	0	0		11	12718,12719,12720,12721,12722,12723,12724,12725,12726,12727,12728,12729,12730,12731,12732,12733,12737,12738,12739,12740,12741,12742,12743,12744,12745,12746,12747,12748,12749,12750,12751,12752,12753,12754,12755	0	0		2	
-7549	Fairy's Embrace	2	47	42	2	4	0	inv_belt_31	0	0	int=5;spi=5;sta=2	0		0	0		2	
-7550	Warrior's Honor	2	47	42	2	4	0	inv_jewelry_necklace_02	0	0	sta=10;str=3	0		0	0		2	
-7551	Entwined Opaline Talisman	2	47	42	2	4	0	inv_jewelry_necklace_07	0	0	agi=3;sta=10	0		0	0		2	
 7552	Falcon's Hook	2	44	39	11	4	0	inv_jewelry_ring_10	0	0	agi=9;str=3	0		0	0		2	
 7553	Band of the Unicorn	2	48	43	11	4	0	inv_jewelry_ring_11	0	0	sp=13	0		0	0		2	
 7554	Willow Branch	2	19	14	23	4	0	inv_staff_02	0	0		3	12718,12719,12720,12721,12722,12723,12724,12725,12726,12727,12728,12729,12730,12731,12732,12733,12734,12735,12740,12741,12742,12743,12744,12756,12757,12758,12759,12760,12761	0	0		2	
@@ -1762,7 +1750,6 @@ ns.DATA.items = [===[
 10577	Goblin Mortar	1	41	0	12	4	0	inv_musket_01	0	0		0		0	0	1	2	
 10578	Thoughtcast Boots	3	38	33	8	4	1	inv_boots_01	38	0	heal=13;spDmg=5;spi=13;sta=3	0		0	0		2	
 10581	Death's Head Vestment	3	40	35	5	4	1	inv_chest_leather_08	58	0	heal=18;int=8;spDmg=6;spi=13;sta=8	0		0	0		2	
-10585	Goblin Radio	1	44	0	12	4	0	spell_holy_dizzy	0	0		0		0	0		0	
 10587	Goblin Bomb Dispenser	1	46	0	12	4	0	inv_gizmo_06	0	0		0		0	0	1	1	
 10588	Goblin Rocket Helmet	2	47	0	1	4	1	inv_helmet_49	50	0	sta=15	0		0	0		2	
 10625	Stealthblade	3	49	44	21	2	15	inv_sword_41	0	32.86		0		0	0		2	
@@ -1790,7 +1777,6 @@ ns.DATA.items = [===[
 10711	Dragon's Blood Necklace	3	44	0	2	4	0	inv_jewelry_necklace_02	0	0	blockValue=8;sta=12	0		0	0		1	
 10716	Gnomish Shrink Ray	1	41	0	12	4	0	inv_gizmo_09	0	0		0		0	0	1	2	
 10720	Gnomish Net-o-Matic Projector	1	42	0	12	4	0	inv_misc_net_01	0	0		0		0	0	1	2	
-10723	Gnomish Ham Radio	1	44	0	12	4	0	spell_holy_dizzy	0	0		0		0	0		0	
 10724	Gnomish Rocket Boots	2	45	0	8	4	1	inv_boots_02	41	0		0		0	0		2	
 10725	Gnomish Battle Chicken	1	46	0	12	4	0	spell_magic_polymorphchicken	0	0		0		0	0	1	1	
 10726	Gnomish Mind Control Cap	2	47	0	1	4	1	inv_helmet_49	50	0	spi=14	0		0	0		2	
@@ -1851,7 +1837,6 @@ ns.DATA.items = [===[
 11287	Lesser Magic Wand	2	15	5	26	2	19	inv_staff_02	0	11.33	sp=1	0		0	0		2	
 11288	Greater Magic Wand	2	23	13	26	2	19	inv_staff_07	0	17.5	sp=2	0		0	0		2	
 11289	Lesser Mystic Wand	2	31	26	26	2	19	inv_staff_02	0	25.38	int=4	0		0	0		2	
-11290	Greater Mystic Wand	2	35	30	26	2	19	inv_wand_07	0	29		0		0	0		2	
 11302	Uther's Strength	3	52	47	12	4	0	inv_jewelry_talisman_06	0	0	heal=18;spDmg=6	0		0	0	1	2	
 11310	Flameseer Mantle	3	47	42	3	4	1	inv_shoulder_05	51	0	spFire=14;spi=10	0		0	0		1	
 11311	Emberscale Cape	3	47	42	16	4	1	inv_misc_cape_08	34	0	resFire=4;sta=14	0		0	0		1	
@@ -1874,7 +1859,6 @@ ns.DATA.items = [===[
 11750	Kindling Stave	3	53	48	17	2	10	inv_staff_18	0	34.14	crit=1;int=12;resFire=10;sp=60;sta=10	0		0	0		1	
 11755	Verek's Collar	3	56	51	2	4	0	inv_misc_bandage_14	0	0	defense=3;dodge=1;sta=7;str=6	0		0	0		1	
 11766	Flameweave Cuffs	3	57	52	9	4	1	inv_bracer_05	35	0	resFire=10	18	12945,12946,12947,12955,12957,12958,12961,12962,12963,12964,12965,12966,12967,12968,12969,12970,12971,12977,12978,12979,12980,12981,12982,12983	0	0		1	
-11768	Incendic Bracers	2	57	52	9	4	1	inv_bracer_10	32	0	resFire=14	0		0	0		1	
 11782	Boreal Mantle	3	57	52	3	4	1	inv_shoulder_02	61	0	int=8;spFrost=27;sta=5	0		0	0		1	
 11784	Arbiter's Blade	3	53	48	21	2	7	inv_sword_23	0	23.33	hit=0.7;int=5;sp=60;sta=8	0		0	0		1	
 11805	Rubidium Hammer	3	56	51	21	2	4	inv_hammer_09	120	36.75	str=5	0		0	0		1	
@@ -2069,7 +2053,6 @@ ns.DATA.items = [===[
 12609	Polychromatic Visionwrap	3	61	56	5	4	1	inv_chest_cloth_17	87	0	other=20;sta=14	0		0	0		1	
 12626	Funeral Cuffs	3	59	54	9	4	1	inv_bracer_07	37	0	heal=18;int=14;resShadow=7;spDmg=6	0		0	0		1	
 12709	Pip's Skinner	3	63	58	21	2	15	inv_sword_33	0	41.15	ap=20;other=40	0		0	0		1	
-12752	Cap of the Scarlet Savant	4	62	0	1	4	1	inv_helmet_59	78	0	int=20;spellCrit=2;sta=17	0		1488	0		1	
 12777	Blazing Rapier	3	56	51	13	2	7	inv_sword_30	0	37.08		0		0	0		2	
 12781	Serenity	3	57	52	13	2	4	inv_mace_02	0	37.6		0		0	0	1	2	
 12783	Heartseeker	3	63	58	13	2	15	inv_sword_17	0	41.32	agi=4;crit=1	0		0	0	1	2	
@@ -2605,7 +2588,6 @@ ns.DATA.items = [===[
 14465	Elunarian Belt	2	60	55	6	4	1	inv_belt_17	44	0	int=20;spi=10;str=6	0		0	0		2	
 14487	Bonechill Hammer	3	62	57	13	2	4	inv_hammer_13	0	40.62		0		0	0		1	
 14538	Deadwalker Mantle	3	62	57	3	4	1	inv_shoulder_02	66	0	int=11;spShadow=17;sta=19	0		0	0		1	
-14543	Darkshade Gloves	3	62	57	10	4	1	inv_gauntlets_15	55	0	int=7;resArcane=15;resShadow=10;spi=6;sta=6	0		0	0		1	
 14555	Alcor's Sunrazor	4	63	58	13	2	15	inv_sword_34	0	45.38	resFire=10	0		0	0		2	
 14557	The Lion Horn of Stormwind	4	63	58	12	4	0	inv_misc_horn_03	0	0	defense=8	0		0	0	1	2	
 14558	Lady Maye's Pendant	4	64	59	2	4	0	inv_jewelry_necklace_08	0	0	int=19;sp=11;sta=10	0		0	0		2	
@@ -2873,44 +2855,12 @@ ns.DATA.items = [===[
 16789	Captain Rackmore's Tiller	2	36	0	26	2	19	inv_staff_08	0	29.67	heal=6;spDmg=2;spi=3	0		0	0		1	
 16791	Silkstream Cuffs	2	38	0	9	4	1	inv_bracer_13	22	0	int=5;spi=4;sta=4	0		0	0		1	
 16792	Giant Club	2	37	32	21	2	4	inv_mace_10	0	19.74		6	12718,12719,12720,12721,12722,12723,12724,12725,12726,12727,12728,12729,12730,12731,12732,12733,12736,12740,12741,12742,12743,12744,12751,12752,12753,12754,12759,12906,12908,12910,12912,12913,12916,12917,12920	0	0		2	
-16795	Arcanist Crown	4	66	60	1	4	1	inv_helmet_53	83	0	int=27;resFire=10;sp=20;spellHit=1;spi=10;sta=16	0		128	0		1	
-16796	Arcanist Leggings	4	66	60	7	4	1	inv_pants_08	89	0	int=23;resShadow=10;sp=20;spellCrit=1;spi=10;sta=18	0		128	0		1	
-16797	Arcanist Mantle	4	66	60	3	4	1	inv_shoulder_02	76	0	int=21;mp5=4;resShadow=7;sp=14;spi=5;sta=10	0		128	0		1	
-16798	Arcanist Robes	4	66	60	20	4	1	inv_chest_cloth_03	102	0	int=25;resFire=10;sp=23;spi=10;sta=19	0		128	0		1	
-16799	Arcanist Bindings	4	66	60	9	4	1	inv_belt_29	44	0	int=15;mp5=3;sp=12;spi=6;sta=8	0		128	0		2	
-16800	Arcanist Boots	4	66	60	8	4	1	inv_boots_07	70	0	int=14;resShadow=10;sp=11;spellCrit=1;spi=11;sta=13	0		128	0		1	
-16801	Arcanist Gloves	4	66	60	10	4	1	inv_gauntlets_14	63	0	int=15;mp5=4;resFire=7;sp=14;spi=10;sta=14	0		128	0		1	
-16802	Arcanist Belt	4	66	60	6	4	1	inv_belt_30	57	0	int=20;resFire=10;sp=14;spi=10;sta=11	0		128	0		2	
-16811	Boots of Prophecy	4	66	60	8	4	1	inv_boots_07	70	0	heal=18;int=18;resShadow=7;spi=15;sta=17	0		16	0		1	
-16812	Gloves of Prophecy	4	66	60	10	4	1	inv_gauntlets_14	63	0	heal=18;int=15;mp5=6;resFire=7;spi=15;sta=10	0		16	0		1	
-16813	Circlet of Prophecy	4	66	60	1	4	1	inv_helmet_34	83	0	int=27;resFire=10;sp=12;spi=20;sta=17	0		16	0		1	
-16814	Pants of Prophecy	4	66	60	7	4	1	inv_pants_08	89	0	heal=22;int=24;mp5=6;resShadow=10;spi=20;sta=18	0		16	0		1	
-16815	Robes of Prophecy	4	66	60	20	4	1	inv_chest_cloth_03	102	0	heal=22;int=27;resFire=10;spi=17;sta=20	0		16	0		1	
-16816	Mantle of Prophecy	4	66	60	3	4	1	inv_shoulder_02	76	0	int=23;resShadow=7;sp=9;spi=10;sta=13	0		16	0		1	
-16817	Girdle of Prophecy	4	66	60	6	4	1	inv_belt_22	57	0	int=22;mp5=4;resFire=7;sp=9;spi=10;sta=10	0		16	0		2	
-16818	Netherwind Belt	4	76	60	6	4	1	inv_belt_22	65	0	int=20;resShadow=10;sp=23;spi=13;sta=13	0		128	0		1	
-16819	Vambraces of Prophecy	4	66	60	9	4	1	inv_bracer_09	44	0	heal=24;int=14;mp5=2;spi=10;sta=8	0		16	0		2	
 16886	Outlaw Sabre	3	32	0	13	2	7	inv_sword_33	0	20.37	ap=16	0		0	0		1	
 16887	Witch's Finger	3	32	0	23	4	0	inv_wand_12	0	0	int=8;sta=4	0		0	0		1	
 16889	Polished Walking Staff	2	24	0	17	2	10	inv_staff_20	0	11.73	int=7;sp=16;sta=3	0		0	0		1	
 16890	Slatemetal Cutlass	2	24	0	13	2	7	inv_sword_33	0	12.27	agi=2;str=2	0		0	0		1	
 16891	Claystone Shortsword	2	21	0	13	2	7	inv_sword_23	0	10.45	sta=3	0		0	0		1	
 16894	Clear Crystal Rod	2	21	0	17	2	10	inv_wand_07	0	10.16	int=5;sp=14;sta=4	0		0	0		1	
-16912	Netherwind Boots	4	76	60	8	4	1	inv_boots_07	80	0	int=16;resFire=10;sp=27;spi=10;sta=13	0		128	0		1	
-16913	Netherwind Gloves	4	76	60	10	4	1	inv_gauntlets_14	72	0	int=16;resShadow=10;sp=20;spellCrit=1;spi=6;sta=16	0		128	0		1	
-16914	Netherwind Crown	4	76	60	1	4	1	inv_helmet_70	94	0	int=26;mp5=4;resFrost=10;resShadow=10;sp=32;spi=7;sta=17	0		128	0		1	
-16915	Netherwind Pants	4	76	60	7	4	1	inv_pants_08	101	0	int=27;resArcane=10;resFire=10;sp=30;spellCrit=1;spi=5;sta=16	0		128	0		1	
-16916	Netherwind Robes	4	76	60	20	4	1	inv_chest_cloth_03	116	0	int=26;resFire=10;resNature=10;sp=32;spellCrit=1;spi=8;sta=16	0		128	0		1	
-16917	Netherwind Mantle	4	76	60	3	4	1	inv_shoulder_32	87	0	int=13;mp5=4;resFire=10;sp=21;spi=12;sta=16	0		128	0		1	
-16918	Netherwind Bindings	4	76	60	9	4	1	inv_bracer_09	51	0	int=15;mp5=4;sp=19;spi=8;sta=9	0		128	0		1	
-16919	Boots of Transcendence	4	76	60	8	4	1	inv_boots_07	80	0	heal=35;int=17;resFire=10;spi=17;sta=17	0		16	0		1	
-16920	Handguards of Transcendence	4	76	60	10	4	1	inv_gauntlets_14	72	0	heal=29;int=20;resShadow=10;spellCrit=1;spi=13;sta=12	0		16	0		1	
-16921	Halo of Transcendence	4	76	60	1	4	1	inv_helmet_24	94	0	heal=48;int=27;resFire=10;resFrost=10;spi=22;sta=17	0		16	0		1	
-16922	Leggings of Transcendence	4	76	60	7	4	1	inv_pants_08	101	0	heal=46;int=21;mp5=7;resArcane=10;resShadow=10;spi=21;sta=16	0		16	0		1	
-16923	Robes of Transcendence	4	76	60	20	4	1	inv_chest_cloth_03	116	0	heal=57;int=27;resFire=10;resNature=10;spi=16;sta=17	0		16	0		1	
-16924	Pauldrons of Transcendence	4	76	60	3	4	1	inv_shoulder_02	87	0	heal=26;int=25;resFire=10;spi=13;sta=12	0		16	0		1	
-16925	Belt of Transcendence	4	76	60	6	4	1	inv_belt_22	65	0	heal=26;int=26;resShadow=10;spi=9;sta=14	0		16	0		1	
-16926	Bindings of Transcendence	4	76	60	9	4	1	inv_bracer_09	51	0	heal=33;int=13;spi=16;sta=9	0		16	0		1	
 16975	Warsong Sash	3	27	0	6	4	1	inv_belt_02	25	0	sp=11;sta=4	0		0	0		1	
 16979	Flarecore Gloves	4	62	57	10	4	1	inv_gauntlets_26	60	0	int=14;resFire=25;sta=10	0		912	0		2	
 16980	Flarecore Mantle	4	61	56	3	4	1	inv_shoulder_23	71	0	int=10;resFire=24;spi=10;sta=9	0		0	0		2	
@@ -2931,29 +2881,9 @@ ns.DATA.items = [===[
 17045	Blood of the Martyr	3	61	0	11	4	0	inv_jewelry_ring_25	0	0	int=10;sp=12;sta=10	0		0	0		1	
 17047	Luminescent Amice	2	30	0	3	4	1	inv_shoulder_09	32	0	int=4;spi=2;sta=6	0		0	0		1	
 17050	Chan's Imperial Robes	3	52	47	20	4	1	inv_chest_cloth_04	75	0	int=10;resNature=5;spi=10;sta=20	0		0	0		2	
-17054	Joonho's Mercy	3	50	45	13	2	7	inv_sword_41	0	33.33		0		0	0		2	
 17055	Changuk Smasher	3	52	47	13	2	4	inv_hammer_17	0	34.74	int=7;spi=5;sta=7	0		0	0		2	
 17061	Juno's Shadow	3	58	53	16	4	1	inv_misc_cape_20	41	0	int=5;resShadow=15;sta=8	0		0	0		2	
-17063	Band of Accuria	4	78	60	11	4	0	inv_jewelry_ring_15	0	0	agi=16;mhit=2;sta=10	0		0	0	1	1	
-17064	Shard of the Scale	4	71	60	12	4	0	inv_misc_monsterscales_15	0	0	mp5=16	0		0	0	1	1	
-17065	Medallion of Steadfast Might	4	68	60	2	4	0	inv_jewelry_amulet_03	0	0	defense=8;dodge=1;sta=13;str=9	0		0	0		1	
-17067	Ancient Cornerstone Grimoire	4	76	60	23	4	0	inv_misc_book_07	0	0	int=15;spi=11;sta=10	0		0	0		1	
-17070	Fang of the Mystics	4	70	60	13	2	15	inv_weapon_shortblade_06	0	51.67	int=10;mp5=4;sp=40;spellCrit=1	0		0	0		1	
-17071	Gutgore Ripper	4	69	60	13	2	15	inv_weapon_shortblade_18	0	50.56		0		0	0		1	
-17075	Vis'kag the Bloodletter	4	74	60	13	2	7	inv_sword_18	0	55.19		0		0	0	1	1	
-17077	Crimson Shocker	4	63	58	26	2	19	inv_staff_13	0	73.25	int=10;resFire=10	0		0	0		1	
-17078	Sapphiron Drape	4	72	60	16	4	1	inv_misc_cape_16	55	0	int=17;resArcane=6;resFrost=6;sp=14;sta=10	0		0	0		1	
-17082	Shard of the Flame	4	74	60	12	4	0	inv_misc_orb_05	0	0	hp5=16	0		0	0	1	1	
-17102	Cloak of the Shrouded Mists	4	74	60	16	4	1	inv_misc_cape_17	57	0	agi=22;resFire=6;resNature=6;sta=12	0		0	0		1	
-17103	Azuresong Mageblade	4	71	60	21	2	7	inv_sword_39	0	52.5	int=12;sp=40;spellCrit=1;sta=7	0		0	0		1	
-17105	Aurastone Hammer	4	69	60	13	2	4	inv_hammer_05	0	50.56	int=10;mp5=5;sp=25;sta=10	0		0	0		1	
-17107	Dragon's Blood Cape	4	73	60	16	4	1	inv_misc_cape_08	116	0	resArcane=5;resFire=5;resShadow=5;sta=22;str=9	0		0	0		1	
-17108	Mark of Deflection	4	65	60	11	4	0	inv_jewelry_ring_22	100	0	parry=1;str=10	0		0	0	1	1	
-17109	Choker of Enlightenment	4	65	60	2	4	0	inv_jewelry_necklace_10	0	0	int=10;sp=18;spi=10;sta=9	0		0	0		1	
-17110	Seal of the Archmagus	4	70	60	11	4	0	inv_jewelry_ring_21	0	0	int=11;mp5=3;resArcane=6;resFire=6;resFrost=6;resNature=6;resShadow=6;spi=11;sta=11	0		0	0	1	1	
 17111	Blazefury Medallion	4	68	60	2	4	0	inv_jewelry_talisman_01	0	0	agi=13;resFire=12;sta=14	0		0	0		1	
-17112	Empyrean Demolisher	4	66	60	21	2	4	inv_hammer_05	0	48.04		0		0	0		1	
-17113	Amberseal Keeper	4	67	60	17	2	10	inv_staff_goldfeathered_01	0	63.64	int=20;mp5=12;resArcane=5;resFire=5;resFrost=5;resNature=5;resShadow=5;sp=44	0		0	0		1	
 17142	Shard of the Defiler	5	70	60	13	2	15	inv_sword_01	0	51.36	crit=15;haste=15	0		0	0	1	1	
 17523	Smokey's Drape	2	58	0	16	4	1	inv_misc_cape_18	38	0	resFire=10;sta=9	0		0	0		1	
 17690	Frostwolf Insignia Rank 1	2	60	0	12	4	0	inv_jewelry_frostwolftrinket_01	0	0	resFrost=5	0		0	0	1	1	
@@ -2999,7 +2929,6 @@ ns.DATA.items = [===[
 17908	Frostwolf Insignia Rank 5	3	60	0	12	4	0	inv_jewelry_frostwolftrinket_04	0	0	dodge=1;hp5=25;resFrost=10	0		0	0	1	1	
 17909	Frostwolf Insignia Rank 6	4	60	0	12	4	0	inv_jewelry_frostwolftrinket_05	0	0	dodge=2;hp5=30;resFrost=10	0		0	0	1	1	
 17943	Fist of Stone	3	53	48	21	2	4	inv_hammer_17	40	35.28		0		0	0		1	
-17982	Ragnaros Core	3	65	60	11	4	0	inv_jewelry_ring_25	0	0	resFire=18	21	12718,12719,12720,12721,12722,12723,12724,12725,12726,12727,12728,12729,12730,12731,12732,12733,12737,12738,12739,12740,12741,12742,12743,12744,12745,12746,12747,12748,12749,12750,12751,12752,12753,12754,12755	0	0	1	1	
 18022	Royal Seal of Alexis	3	62	0	11	4	0	inv_jewelry_ring_30	0	0	heal=22;spDmg=7;spi=8;sta=10	0		0	0		1	
 18023	Blood Ruby Pendant	3	59	54	2	4	0	inv_misc_gem_ruby_01	0	0	int=10;spArcane=13;spShadow=13;sta=10	0		0	0		2	
 18044	Hurley's Tankard	3	57	52	21	2	4	inv_drink_04	0	37.59	agi=5;spi=3;sta=12	0		0	0		1	
@@ -3008,9 +2937,6 @@ ns.DATA.items = [===[
 18083	Jumanza Grips	3	48	43	10	4	1	inv_gauntlets_09	43	0	heal=18;int=7;mp5=4;spDmg=6;sta=10	0		0	0		1	
 18102	Dragonrider Boots	3	63	58	8	4	1	inv_boots_05	61	0	int=16;resFire=8;sp=18;sta=5	0		0	0		1	
 18103	Band of Rumination	3	63	58	11	4	0	inv_jewelry_ring_16	0	0	crit=1;mp5=5	0		0	0		1	
-18204	Eskhandar's Pelt	4	66	60	16	4	1	inv_misc_cape_07	51	0	mcrit=1;sta=20	0		0	0	1	1	
-18205	Eskhandar's Collar	4	71	60	2	4	0	inv_belt_12	0	0	dodge=1;mcrit=1;sta=17	0		0	0	1	1	
-18208	Drape of Benediction	4	67	60	16	4	1	inv_misc_cape_04	52	0	heal=31;int=13;spi=8;sta=11	0		0	0	1	1	
 18263	Flarecore Wraps	4	64	60	9	4	1	inv_bracer_09	43	0	int=8;mp5=9;resFire=7	0		0	0		2	
 18289	Barbed Thorn Necklace	3	56	51	2	4	0	inv_jewelry_necklace_09	0	0	int=6;spNature=21;sta=7	0		0	0		2	
 18295	Phasing Boots	3	55	50	8	4	1	inv_boots_06	54	0	int=6;sta=6	24	13002,13003,13004,13005,13006	0	0		2	
@@ -3031,7 +2957,6 @@ ns.DATA.items = [===[
 18338	Wand of Arcane Potency	3	59	54	26	2	19	inv_wand_02	0	58.44	spArcane=16	0		0	0		2	
 18339	Eidolon Cloak	2	59	54	16	4	1	inv_misc_cape_21	38	0	resShadow=12;sta=5	0		0	0		2	
 18340	Eidolon Talisman	3	59	54	2	4	0	inv_jewelry_talisman_14	0	0	resShadow=10	0		0	0	1	2	
-18341	Quel'dorai Sash	2	59	54	6	4	1	inv_belt_32	43	0	int=13;resArcane=12	0		0	0		2	
 18343	Petrified Band	2	59	59	11	4	0	inv_jewelry_ring_14	0	0	resNature=10;sta=9	0		0	0		2	
 18345	Murmuring Ring	3	60	55	11	4	0	inv_jewelry_ring_15	0	0	int=13	0		0	0	1	1	
 18346	Threadbare Trousers	3	60	55	7	4	1	inv_pants_09	75	0	other=23;sp=23;sta=18	0		0	0		1	
@@ -3090,9 +3015,7 @@ ns.DATA.items = [===[
 18534	Rod of the Ogre Magi	3	63	58	17	2	10	inv_staff_32	0	40	crit=1;int=20;sp=72;spi=11;sta=14	0		0	0		1	
 18536	Milli's Lexicon	3	59	0	23	4	0	inv_misc_book_06	0	0	mp5=6;sp=11	0		0	0		1	
 18537	Counterattack Lodestone	3	63	58	12	4	0	inv_stone_02	0	0	ap=30	0		0	0	1	1	
-18541	Puissant Cape	4	70	60	16	4	1	inv_misc_cape_06	54	0	ap=40;mhit=1;sta=12	0		0	0		1	
 18543	Ring of Entropy	4	66	60	11	4	0	inv_jewelry_ring_20	0	0	crit=1;int=13;spi=8;sta=11	0		0	0		1	
-18545	Leggings of Arcane Supremacy	4	69	60	7	4	1	inv_pants_08	93	0	int=24;resArcane=10;resFrost=10;spArcane=36;spi=14;sta=14	0		0	0		1	
 18585	Band of Allegiance	3	35	0	11	4	0	inv_jewelry_ring_09	0	0	sta=4;str=9	0		0	0		1	
 18586	Lonetree's Circle	3	35	0	11	4	0	inv_jewelry_ring_13	0	0	int=6;spi=4;sta=6	0		0	0		1	
 18587	Goblin Jumper Cables XL	1	53	0	12	4	0	inv_misc_enggizmos_11	0	0		0		0	0	1	0	
@@ -3137,20 +3060,10 @@ ns.DATA.items = [===[
 18760	Necromantic Band	3	62	57	11	4	0	inv_jewelry_ring_09	0	0	hp5=17;resShadow=15	0		0	0	1	1	
 18761	Oblivion's Touch	3	62	57	26	2	19	inv_wand_12	0	62.5	int=7;sp=9	0		0	0		1	
 18762	Shard of the Green Flame	3	54	0	23	4	0	inv_misc_shadowegg	0	0	spFire=16;sta=12	0		0	0		1	
-18805	Core Hound Tooth	4	70	60	13	2	15	inv_weapon_shortblade_11	0	51.25	ap=20;mcrit=1;sta=9	0		0	0	1	1	
-18808	Gloves of the Hypnotic Flame	4	70	60	10	4	1	inv_gauntlets_03	67	0	int=19;sp=9;spFire=23;spi=8;sta=18	0		0	0		1	
-18809	Sash of Whispered Secrets	4	71	60	6	4	1	inv_belt_12	61	0	hp5=6;spShadow=33;sta=20	0		0	0		1	
-18811	Fireproof Cloak	4	71	60	16	4	1	inv_misc_cape_18	54	0	int=9;resFire=18;spi=8;sta=12	0		0	0		1	
-18813	Ring of Binding	4	73	60	11	4	0	inv_jewelry_ring_13	60	0	defense=4;resArcane=10;resFire=10;resFrost=10;resNature=10;resShadow=10	0		0	0	1	1	
 18814	Choker of the Fire Lord	4	78	60	2	4	0	inv_jewelry_amulet_05	0	0	int=7;sp=34;sta=7	0		0	0		1	
 18815	Essence of the Pure Flame	4	75	60	12	4	0	spell_fire_fire	0	0		0		0	0	1	1	
-18816	Perdition's Blade	4	77	60	13	2	15	inv_sword_48	0	58.33		0		0	0	1	1	
 18820	Talisman of Ephemeral Power	4	66	60	12	4	0	inv_misc_stonetablet_11	0	0		0		0	0	1	1	
 18821	Quick Strike Ring	4	67	60	11	4	0	inv_jewelry_ring_07	0	0	ap=30;crit=1;sta=8;str=5	0		0	0	1	1	
-18832	Brutality Blade	4	70	60	13	2	7	inv_sword_15	0	51.6	agi=9;mcrit=1;str=9	0		0	0	1	1	
-18842	Staff of Dominance	4	70	60	17	2	10	inv_staff_13	0	67.07	int=37;sp=40;spellCrit=1;spi=14;sta=16	0		0	0		1	
-18872	Manastorm Leggings	4	63	58	7	4	1	inv_pants_08	85	0	int=14;mp5=14;sta=19	0		0	0		1	
-18878	Sorcerous Dagger	4	65	60	21	2	15	inv_weapon_shortblade_07	0	47.14	int=17;sp=20;sta=8	0		0	0	1	1	
 18879	Heavy Dark Iron Ring	4	66	60	11	4	0	inv_jewelry_ring_14	110	0	defense=5;sta=20	0		0	0	1	1	
 18951	Evonice's Landin' Pilla	2	50	0	12	4	0	inv_misc_armorkit_18	0	0	spi=10	0		0	0	1	1	
 18957	Brushwood Blade	2	10	0	13	2	7	inv_sword_06	0	5.33	sta=1	0		0	0		1	
@@ -3178,10 +3091,8 @@ ns.DATA.items = [===[
 19101	Whiteout Staff	3	65	60	17	2	10	inv_staff_30	0	41.29	int=25;sp=74;sta=25	0		0	0	1	1	
 19102	Crackling Staff	3	65	60	17	2	10	inv_staff_20	0	41.29	int=25;sp=74;sta=25	0		0	0	1	1	
 19104	Stormstrike Hammer	3	65	60	13	2	4	inv_hammer_21	0	42.59	str=15	0		0	0	1	1	
-19105	Frost Runed Headdress	3	63	58	1	4	1	inv_helmet_61	73	0	int=10;spFrost=41;sta=10	0		0	0		1	
 19108	Wand of Biting Cold	3	63	0	26	2	19	inv_wand_01	0	64	spFrost=16	0		0	0		1	
 19109	Deep Rooted Ring	3	63	58	11	4	0	inv_jewelry_ring_35	0	0	int=10;sp=12;sta=10	0		0	0		1	
-19110	Cold Forged Blade	3	63	58	13	2	7	inv_sword_47	0	41.35	agi=5;sta=13	0		0	0		1	
 19115	Flask of Forest Mojo	2	51	0	23	4	0	inv_potion_19	0	0	int=8;sp=9	0		0	0		1	
 19116	Greenleaf Handwraps	2	50	0	10	4	1	inv_gauntlets_16	41	0	heal=22;int=11;spDmg=7	0		0	0		1	
 19118	Nature's Breath	2	50	0	26	2	19	inv_wand_12	0	41.07	int=6;sta=3	0		0	0		1	
@@ -3189,17 +3100,9 @@ ns.DATA.items = [===[
 19121	Deep Woodlands Cloak	3	51	0	16	4	1	inv_misc_cape_17	37	0	int=9;sp=12;sta=6	0		0	0		1	
 19123	Everwarm Handwraps	2	48	0	10	4	1	inv_gauntlets_19	39	0	int=10;mp5=4	0		0	0		1	
 19129	Everglowing Robe	2	49	0	20	4	1	inv_chest_cloth_16	64	0	int=11;sp=13;spi=11	0		0	0		1	
-19130	Cold Snap	4	70	60	26	2	19	inv_wand_01	0	85.29	int=7;spFrost=20	0		0	0		1	
-19131	Snowblind Shoes	4	69	60	8	4	1	inv_boots_cloth_14	73	0	int=10;mp5=5;sp=32;sta=10	0		0	0		1	
-19132	Crystal Adorned Crown	4	68	60	1	4	1	inv_crown_01	85	0	heal=92;int=14;spi=13	0		0	0		1	
-19133	Fel Infused Leggings	4	71	60	7	4	1	inv_pants_06	95	0	spShadow=64;sta=21	0		0	0		1	
-19135	Blacklight Bracer	4	66	60	9	4	1	inv_bracer_07	44	0	int=13;spellCrit=1;spi=8;sta=11	0		0	0		1	
-19136	Mana Igniting Cord	4	71	60	6	4	1	inv_belt_11	61	0	int=16;sp=25;spellCrit=1;sta=12	0		0	0		1	
 19138	Band of Sulfuras	4	78	60	11	4	0	inv_jewelry_ring_36	0	0	int=23;spi=10;sta=13	0		0	0	1	1	
 19140	Cauterizing Band	4	71	60	11	4	0	inv_jewelry_ring_39	0	0	heal=46;int=12;spDmg=15;sta=9	0		0	0		1	
 19141	Luffa	2	50	0	12	4	0	inv_fabric_wool_01	0	0		0		0	0	1	1	
-19142	Fire Runed Grimoire	4	70	60	23	4	0	inv_misc_book_09	0	0	int=21;sp=11;sta=12	0		0	0		1	
-19145	Robe of Volatile Power	4	66	60	20	4	1	inv_chest_cloth_18	102	0	int=15;sp=23;spellCrit=2;spi=10;sta=10	0		0	0		1	
 19147	Ring of Spell Power	4	66	60	11	4	0	inv_jewelry_ring_38	0	0	sp=33	0		0	0		1	
 19156	Flarecore Robe	4	66	60	20	4	1	inv_chest_cloth_18	102	0	resFire=15;sp=23;sta=35	0		0	0		2	
 19159	Woven Ivy Necklace	3	51	0	2	4	0	inv_misc_herb_15	0	0	agi=9;sta=10;str=6	0		0	0		1	
@@ -3224,51 +3127,24 @@ ns.DATA.items = [===[
 19315	Therazane's Touch	4	60	55	23	4	0	inv_misc_branch_01	0	0	sp=29	0		0	0	1	1	
 19324	The Lobotomizer	4	60	55	13	2	15	inv_sword_29	0	43.33		0		0	0	1	1	
 19325	Don Julio's Band	4	60	55	11	4	0	inv_jewelry_ring_35	0	0	ap=14;crit=1;hit=1;sta=10	0		0	0	1	1	
-19335	Spineshatter	4	73	60	21	2	4	inv_mace_06	0	54.42	defense=5;sta=16;str=9	0		0	0	1	1	
 19339	Mind Quickening Gem	4	76	60	12	4	0	spell_nature_wispheal	0	0		0		640	0	1	1	
 19345	Aegis of Preservation	4	76	60	12	4	0	spell_holy_blessingofprotection	0	0		0		16	0	1	1	
-19346	Dragonfang Blade	4	74	60	13	2	15	inv_weapon_shortblade_29	0	55.28	agi=16;sta=13	0		0	0	1	1	
-19347	Claw of Chromaggus	4	77	60	13	2	15	inv_weapon_shortblade_28	0	58.33	int=17;mp5=4;sp=64;sta=7	0		0	0	1	1	
-19351	Maladath, Runed Blade of the Black Flight	4	75	60	13	2	7	inv_sword_49	0	56.36	parry=1	0		0	0	1	1	
-19352	Chromatically Tempered Sword	4	77	60	13	2	7	inv_sword_51	0	58.46	agi=14;sta=7;str=14	0		0	0	1	1	
-19355	Shadow Wing Focus Staff	4	75	60	17	2	10	inv_staff_13	0	73.28	int=40;sp=56;spi=17;sta=22	0		0	0		1	
-19356	Staff of the Shadow Flame	4	81	60	17	2	10	inv_staff_06	0	81.88	int=29;sp=84;spellCrit=2;spi=18;sta=24	0		0	0		1	
-19360	Lok'amir il Romathis	4	81	60	21	2	4	inv_mace_06	0	62.86	int=18;sp=84;spi=8;sta=10	0		0	0	1	1	
 19366	Master Dragonslayer's Orb	4	83	60	23	4	0	inv_misc_orb_03	0	0	int=14;sp=28;sta=10	0		0	0		1	
-19367	Dragon's Touch	4	75	60	26	2	19	inv_wand_11	0	95.62	int=12;sp=6;sta=7	0		0	0		1	
-19369	Gloves of Rapid Evolution	4	73	60	10	4	1	inv_gauntlets_06	70	0	int=12;spi=32;sta=12	0		0	0		1	
-19370	Mantle of the Blackwing Cabal	4	73	60	3	4	1	inv_shoulder_25	84	0	int=16;sp=34;sta=12	0		0	0		1	
 19371	Pendant of the Fallen Dragon	4	74	60	2	4	0	inv_jewelry_necklace_12	0	0	int=12;mp5=9;sta=9	0		0	0		1	
-19374	Bracers of Arcane Accuracy	4	75	60	9	4	1	inv_bracer_07	50	0	int=12;sp=21;spellHit=1;sta=9	0		0	0		1	
-19375	Mish'undare, Circlet of the Mind Flayer	4	83	60	1	4	1	inv_helmet_52	102	0	int=24;sp=35;spellCrit=2;spi=9;sta=15	0		0	0		1	
 19376	Archimtiros' Ring of Reckoning	4	83	60	11	4	0	inv_jewelry_ring_40	0	0	agi=14;sta=28	0		0	0	1	1	
 19377	Prestor's Talisman of Connivery	4	83	60	2	4	0	inv_jewelry_necklace_17	0	0	agi=30;hit=1	0		0	0		1	
-19378	Cloak of the Brood Lord	4	83	60	16	4	1	inv_misc_cape_20	63	0	int=14;sp=28;sta=10	0		0	0		1	
 19379	Neltharion's Tear	4	83	60	12	4	0	inv_stone_15	0	0	hit=2;sp=44	0		0	0	1	1	
 19382	Pure Elementium Band	4	83	60	11	4	0	inv_jewelry_ring_42	0	0	heal=53;int=10;spi=10;sta=9	0		0	0	1	1	
 19383	Master Dragonslayer's Medallion	4	83	60	2	4	0	inv_jewelry_necklace_18	0	0	agi=14;defense=7;sta=24	0		0	0	1	1	
 19384	Master Dragonslayer's Ring	4	83	60	11	4	0	inv_jewelry_ring_41	0	0	ap=48;hit=1;sta=14	0		0	0	1	1	
-19385	Empowered Leggings	4	77	60	7	4	1	inv_pants_cloth_19	103	0	heal=77;int=12;spellCrit=1;spi=24;sta=12	0		0	0		1	
-19386	Elementium Threaded Cloak	4	77	60	16	4	1	inv_misc_cape_01	169	0	dodge=2;sta=13	0		0	0		1	
-19388	Angelista's Grasp	4	77	60	6	4	1	inv_belt_13	66	0	int=20;spellHit=2;spi=13;sta=17	0		0	0		1	
-19391	Shimmering Geta	4	77	60	8	4	1	inv_boots_cloth_01	81	0	int=17;mp5=12;sta=13	0		0	0		1	
 19395	Rejuvenating Gem	4	75	60	12	4	0	inv_misc_gem_topaz_02	0	0	heal=66;mp5=9	0		0	0	1	1	
 19397	Ring of Blackrock	4	75	60	11	4	0	inv_jewelry_ring_43	0	0	mp5=9;sp=19	0		0	0	1	1	
-19398	Cloak of Firemaw	4	75	60	16	4	1	inv_misc_cape_18	57	0	ap=50;sta=12	0		0	0		1	
-19399	Black Ash Robe	4	75	60	20	4	1	inv_chest_cloth_50	114	0	int=22;resFire=30;spi=17;sta=21	0		0	0		1	
-19400	Firemaw's Clutch	4	75	60	6	4	1	inv_belt_10	64	0	int=12;mp5=5;sp=35;sta=12	0		0	0		1	
 19403	Band of Forced Concentration	4	75	60	11	4	0	inv_jewelry_ring_34	0	0	hit=1;int=12;sp=21;sta=9	0		0	0	1	1	
 19406	Drake Fang Talisman	4	75	60	12	4	0	inv_misc_bone_06	0	0	ap=56;dodge=1;hit=2	0		0	0	1	1	
-19407	Ebony Flame Gloves	4	75	60	10	4	1	inv_gauntlets_27	72	0	int=12;spShadow=43;sta=17	0		0	0		1	
 19426	Orb of the Darkmoon	4	65	60	2	4	0	inv_jewelry_necklace_16	0	0	sp=22;spi=8;sta=11	0		0	0		1	
-19430	Shroud of Pure Thought	4	75	60	16	4	1	inv_misc_cape_16	57	0	heal=33;int=11;mp5=6;sta=10	0		0	0		1	
 19431	Styleen's Impeding Scarab	4	75	60	12	4	0	inv_misc_armorkit_10	0	0	block=5;blockValue=24;defense=13	0		0	0	1	1	
 19432	Circle of Applied Force	4	75	60	11	4	0	inv_jewelry_ring_37	0	0	agi=22;sta=9;str=12	0		0	0	1	1	
 19434	Band of Dark Dominion	4	70	60	11	4	0	inv_jewelry_ring_24	0	0	int=6;spShadow=33;sta=12	0		0	0	1	1	
-19435	Essence Gatherer	4	70	60	26	2	19	inv_wand_06	0	85.36	int=7;mp5=5;sta=5	0		0	0		1	
-19436	Cloak of Draconic Might	4	70	60	16	4	1	inv_misc_cape_11	54	0	agi=16;sta=4;str=16	0		0	0		1	
-19437	Boots of Pure Thought	4	70	60	8	4	1	inv_boots_cloth_03	74	0	heal=62;int=12;spi=12;sta=8	0		0	0		1	
-19438	Ringo's Blizzard Boots	4	71	60	8	4	1	inv_boots_cloth_16	75	0	int=12;spFrost=40;spellHit=1;sta=11	0		0	0		1	
 19491	Amulet of the Darkmoon	4	65	60	2	4	0	inv_jewelry_necklace_14	0	0	agi=19;sta=10;str=10	0		0	0		1	
 19507	Inquisitor's Shawl	3	42	37	3	4	1	inv_shoulder_27	46	0	heal=22;int=13;spDmg=7	0		0	0		1	
 19510	Legionnaire's Band	3	63	58	11	4	0	inv_jewelry_ring_21	0	0	agi=11;sta=8;str=12	0		0	0	1	1	
@@ -3348,56 +3224,12 @@ ns.DATA.items = [===[
 19843	Zandalar Confessor's Wraps	4	61	0	9	4	1	inv_bracer_07	41	0	heal=24;int=11;spi=12;sta=10	0		16	0		1	
 19845	Zandalar Illusionist's Mantle	4	61	0	3	4	1	inv_shoulder_17	71	0	int=21;sp=12;spi=10;sta=13	0		128	0		1	
 19846	Zandalar Illusionist's Wraps	4	61	0	9	4	1	inv_bracer_07	41	0	int=11;sp=14;spi=9;sta=11	0		128	0		1	
-19856	The Eye of Hakkar	4	68	60	2	4	0	inv_jewelry_necklace_22	0	0	ap=40;mcrit=1	0		0	0		1	
-19857	Cloak of Consumption	4	68	60	16	4	1	inv_misc_cape_22	52	0	int=10;sp=23;spellHit=1	0		0	0		1	
-19859	Fang of the Faceless	4	68	60	13	2	15	inv_weapon_shortblade_30	0	49.74	ap=28;mcrit=1	0		0	0	1	1	
-19861	Touch of Chaos	4	68	60	26	2	19	inv_wand_09	0	82	sp=18	0		0	0		1	
-19863	Primalist's Seal	3	71	60	11	4	0	inv_jewelry_ring_47	0	0	heal=29;int=12;spi=8	0		0	0	1	1	
-19864	Bloodcaller	4	68	60	21	2	7	inv_sword_18	0	49.75	int=15;sp=33;sta=12	0		0	0	1	1	
-19865	Warblade of the Hakkari	4	68	60	21	2	7	inv_sword_55	0	49.71	ap=28;mcrit=1	0		0	0	1	1	
-19866	Warblade of the Hakkari	4	66	60	22	2	7	inv_sword_55	0	47.94	ap=40	0		0	0	1	1	
-19867	Bloodlord's Defender	4	66	60	21	2	7	inv_sword_54	80	48.16	defense=4;sta=15	0		0	0	1	1	
-19870	Hakkari Loa Cloak	3	71	60	16	4	1	inv_misc_cape_18	50	0	heal=33;int=6;spi=8;sta=6	0		0	0		1	
-19871	Talisman of Protection	3	68	60	2	4	0	inv_jewelry_necklace_21	0	0	defense=9;dodge=1;sta=8	0		0	0		1	
-19873	Overlord's Crimson Band	3	71	60	11	4	0	inv_jewelry_ring_39	0	0	agi=8;defense=7;sta=10;str=9	0		0	0	1	1	
-19876	Soul Corrupter's Necklace	4	68	60	2	4	0	inv_jewelry_necklace_19	0	0	int=16;spellHit=1;spi=8;sta=10	0		0	0		1	
 19884	Jin'do's Judgement	4	66	60	17	2	10	inv_staff_33	0	46.36	hit=2;int=10;mp5=14;sp=94;sta=10	0		0	0		1	
-19885	Jin'do's Evil Eye	4	66	60	2	4	0	inv_jewelry_ring_45	0	0	heal=44;int=11;spi=6;sta=5	0		0	0	1	1	
-19886	The Hexxer's Cover	3	71	60	1	4	1	inv_mask_02	81	0	int=10;sp=41;sta=10	0		0	0		1	
-19888	Overlord's Embrace	3	71	60	16	4	1	inv_misc_cape_21	140	0	block=1;defense=7;sta=10	0		0	0		1	
-19890	Jin'do's Hexxer	4	66	60	21	2	4	inv_mace_17	0	47.92	heal=51;int=9;spellCrit=1;sta=6	0		0	0	1	1	
-19891	Jin'do's Bag of Whammies	4	66	60	23	4	0	inv_misc_bag_10_black	0	0	int=11;sp=18;spellHit=1;sta=8	0		0	0	1	1	
-19893	Zanzil's Seal	3	71	60	11	4	0	inv_jewelry_ring_46	0	0	int=10;sp=11;spellHit=1;sta=10	0		0	0	1	1	
-19895	Bloodtinged Kilt	3	71	60	7	4	1	inv_pants_cloth_14	87	0	int=20;sp=28;sta=20	0		0	0		1	
-19897	Betrayer's Boots	4	65	60	8	4	1	inv_boots_cloth_09	69	0	int=12;sp=30;spi=12;sta=8	0		0	0		1	
-19898	Seal of Jin	3	68	60	11	4	0	inv_jewelry_ring_44	0	0	ap=20;mcrit=1;sta=8	0		0	0	1	1	
-19899	Ritualistic Legguards	3	68	60	7	4	1	inv_pants_cloth_14	84	0	heal=37;int=14;spi=20;sta=13	0		0	0		1	
-19901	Zulian Slicer	3	68	60	13	2	7	inv_sword_35	0	44.8	ap=12	0		0	0		1	
-19903	Fang of Venoxis	4	65	60	21	2	15	inv_weapon_shortblade_31	0	47.31	int=8;mp5=6;sp=24;spi=6	0		0	0	1	1	
-19905	Zanzil's Band	3	68	60	11	4	0	inv_jewelry_ring_46	0	0	int=13;mp5=4;spellHit=1	0		0	0	1	1	
-19907	Zulian Tigerhide Cloak	3	68	60	16	4	1	inv_misc_cape_10	48	0	agi=13;mhit=1;sta=10	0		0	0		1	
-19908	Sceptre of Smiting	3	65	60	13	2	4	inv_mace_08	0	42.69		0		0	0	1	1	
-19909	Will of Arlokk	4	65	60	17	2	10	inv_staff_35	0	61.5	heal=46;int=19;spi=35;sta=15	0		0	0	1	1	
-19912	Overlord's Onyx Band	3	68	60	11	4	0	inv_jewelry_ring_39	0	0	block=2;dodge=1;sta=11	0		0	0	1	1	
-19920	Primalist's Band	3	68	60	11	4	0	inv_jewelry_ring_47	0	0	int=10;mp5=6;sta=8	0		0	0	1	1	
-19922	Arlokk's Hoodoo Stick	3	68	60	23	4	0	inv_misc_bone_dwarfskull_01	0	0	heal=22;spellCrit=1;sta=8	0		0	0	1	1	
-19923	Jeklik's Opaline Talisman	3	68	60	2	4	0	inv_jewelry_necklace_03	0	0	mp5=3;sp=22	0		0	0		1	
-19925	Band of Jin	3	68	60	11	4	0	inv_jewelry_ring_44	0	0	agi=14;mhit=1;sta=8	0		0	0	1	1	
-19927	Mar'li's Touch	4	65	60	26	2	19	inv_wand_06	0	76.76	int=11;spi=6;sta=5	0		0	0		1	
-19929	Bloodtinged Gloves	3	71	60	10	4	1	inv_gauntlets_16	62	0	int=10;sp=19;spellHit=1;spi=10;sta=10	0		0	0		1	
-19930	Mar'li's Eye	3	68	60	12	4	0	inv_zulgurubtrinket	0	0		0		0	0		1	
-19944	Nat Pagle's Fish Terminator	4	65	60	17	2	10	inv_fishingpole_02	0	61.43	sta=19;str=41	0		0	0	1	1	
-19947	Nat Pagle's Broken Reel	3	68	60	12	4	0	inv_gizmo_09	0	0		0		0	0	1	1	
 19948	Zandalarian Hero Badge	4	68	0	12	4	0	inv_jewelry_necklace_13	0	0		0		0	0	1	1	
 19949	Zandalarian Hero Medallion	4	68	0	12	4	0	inv_jewelry_necklace_13	0	0		0		0	0	1	1	
 19950	Zandalarian Hero Charm	4	68	0	12	4	0	inv_jewelry_necklace_13	0	0		0		0	0	1	1	
 19958	Hazza'rah's Charm of Healing	4	65	60	12	4	0	inv_jewelry_necklace_19	0	0		0		16	0	1	1	
 19959	Hazza'rah's Charm of Magic	4	65	60	12	4	0	inv_jewelry_necklace_19	0	0		0		128	0	1	1	
-19961	Gri'lek's Grinder	3	68	60	13	2	4	inv_mace_04	0	44.79		0		0	0		1	
-19964	Renataki's Soul Conduit	3	68	60	21	2	7	inv_sword_37	0	45	mp5=6;sp=16	0		0	0	1	1	
-19965	Wushoolay's Poker	3	68	60	21	2	15	inv_sword_37	0	45	heal=31;mp5=6	0		0	0	1	1	
-19967	Thoughtblighter	3	68	60	26	2	19	inv_wand_05	0	71.67	mp5=5	0		0	0		1	
-19968	Fiery Retributer	3	68	60	21	2	7	inv_sword_01	60	44.72	defense=5;str=7	0		0	0	1	1	
 19969	Nat Pagle's Extreme Anglin' Boots	2	40	0	8	4	1	inv_boots_09	36	0	other=5;sta=12	0		0	0		1	
 19972	Lucky Fishing Hat	2	40	0	1	4	1	inv_helmet_50	43	0	other=5;sta=15	0		0	0		1	
 19979	Hook of the Master Angler	3	65	0	12	4	0	trade_fishing	0	0		0		0	0	1	1	
@@ -3406,7 +3238,6 @@ ns.DATA.items = [===[
 19990	Blessed Prayer Beads	3	52	0	12	4	0	inv_jewelry_necklace_11	0	0	heal=11;resShadow=7;spDmg=4	0		16	0	1	1	
 19999	Bloodvine Goggles	3	65	60	1	4	1	inv_helmet_47	75	0	crit=1;hit=2;mp5=9	0		0	0		2	
 20006	Circle of Hope	3	52	0	11	4	0	inv_jewelry_ring_32	0	0	resShadow=6;spHoly=21	0		0	0	1	1	
-20032	Flowing Ritual Robes	4	65	60	20	4	1	inv_chest_cloth_25	100	0	int=23;sp=22;spi=24;sta=15	0		0	0	1	1	
 20034	Zandalar Illusionist's Robe	4	65	0	20	4	1	inv_chest_cloth_12	100	0	hit=1;int=24;sp=27;sta=23	0		128	0		1	
 20035	Glacial Spike	3	52	0	21	2	15	inv_weapon_shortblade_06	0	23.08	int=4;sp=60	0		0	0		1	
 20036	Fire Ruby	3	52	0	12	4	0	inv_misc_gem_bloodstone_02	0	0	spFire=14	0		128	0	1	1	
@@ -3445,7 +3276,6 @@ ns.DATA.items = [===[
 20220	Ironbark Staff	4	60	55	17	2	10	inv_wand_04	120	42.06	crit=2;int=15;sp=88;sta=18	0		0	0		1	510:7
 20241	90 Green Warrior Cloak	2	90	60	16	4	1	inv_misc_cape_07	56	0	sta=15;str=16	0		0	0	1	1	
 20250	90 Green Warrior Ring	2	90	0	11	4	0	inv_jewelry_ring_26	0	0	sta=15;str=16	0		0	0		1	
-20258	Zulian Ceremonial Staff	3	65	60	17	2	10	inv_staff_34	0	55.58	int=16;sp=32;sta=13	0		0	0	1	2	
 20275	90 Epic Rogue Neck	4	90	60	2	4	0	inv_jewelry_talisman_07	0	0	agi=14;crit=1;resArcane=4;resFire=4;resFrost=4;resNature=5;resShadow=4;sta=14;str=13	0		0	0		1	
 20276	90 Epic Rogue Cloak	4	90	60	16	4	1	inv_misc_cape_05	68	0	agi=14;crit=1;resArcane=4;resFire=5;resFrost=4;resNature=4;resShadow=4;sta=14;str=13	0		0	0		1	
 20277	90 Epic Rogue Ring	4	90	60	11	4	0	inv_jewelry_ring_05	0	0	agi=14;crit=1;hp5=16;sta=14;str=13	0		0	0		1	
@@ -3541,21 +3371,11 @@ ns.DATA.items = [===[
 20572	Flimsy Male Tauren Mask	1	1	0	1	4	0	achievement_character_tauren_male	0	0		0		0	0		1	
 20573	Flimsy Male Undead Mask	1	1	0	1	4	0	achievement_character_undead_male	0	0		0		0	0		1	
 20574	Flimsy Female Undead Mask	1	1	0	1	4	0	achievement_character_undead_female	0	0		0		0	0		1	
-20577	Nightmare Blade	4	71	60	13	2	7	inv_sword_44	70	52.59	ap=32;sta=9	0		0	0	1	1	
-20578	Emerald Dragonfang	4	71	60	13	2	15	inv_weapon_shortblade_22	0	52.5	agi=12	0		0	0	1	1	
-20579	Green Dragonskin Cloak	4	71	60	16	4	1	inv_misc_cape_17	54	0	hp5=4;resNature=20;sta=12	0		0	0	1	1	
 20580	Hammer of Bestial Fury	4	71	60	21	2	4	inv_mace_20	90	52.37	sta=12;str=13	0		0	0	1	1	
-20581	Staff of Rampant Growth	4	71	60	17	2	10	inv_staff_36	0	68.27	heal=84;int=16;mp5=11;resNature=20;sta=12	0		0	0	1	1	
-20582	Trance Stone	4	71	60	23	4	0	inv_misc_orb_01	0	0	int=8;sp=25;spi=8;sta=9	0		0	0	1	1	
 20600	Malfurion's Signet Ring	4	72	60	11	4	0	inv_jewelry_ring_37	0	0	resNature=20;sta=17	0		0	0	1	1	
-20618	Gloves of Delusional Power	4	72	60	10	4	1	inv_gauntlets_17	69	0	int=16;mp5=5;sp=27;sta=14	0		0	0		1	
 20622	Dragonheart Necklace	4	71	60	2	4	0	inv_jewelry_necklace_18	0	0	ap=24;int=6;spi=6;sta=21	0		0	0		1	
 20624	Ring of the Unliving	4	72	60	11	4	0	inv_jewelry_ring_38	0	0	agi=21;sta=16	0		0	0	1	1	
-20625	Belt of the Dark Bog	4	71	60	6	4	1	inv_belt_15	61	0	int=8;resNature=25;sp=14;sta=16	0		0	0		1	
-20626	Black Bark Wristbands	4	71	60	9	4	1	inv_bracer_07	48	0	int=4;sp=25;spi=4;sta=15	0		0	0		1	
-20631	Mendicant's Slippers	4	71	60	8	4	1	inv_boots_cloth_05	75	0	int=23;mp5=10;sta=12	0		0	0		1	
 20632	Mindtear Band	4	71	60	11	4	0	inv_jewelry_ring_04	0	0	crit=1;int=6;sp=22;sta=6	0		0	0	1	1	
-20635	Jade Inlaid Vestments	4	71	60	20	4	1	inv_chest_cloth_39	109	0	int=18;sp=44;spi=8;sta=16	0		0	0		1	
 20636	Hibernation Crystal	4	71	60	12	4	0	inv_misc_gem_stone_01	0	0		0		0	0	1	1	
 20641	Southsea Mojo Boots	2	45	0	8	4	1	inv_boots_05	41	0	int=11;sp=8	0		0	0		1	
 20642	Antiquated Nobleman's Tunic	2	47	0	5	4	1	inv_chest_cloth_47	61	0	int=10;sp=13;sta=10	0		0	0		1	
@@ -3563,31 +3383,15 @@ ns.DATA.items = [===[
 20647	Black Crystal Dagger	2	59	0	21	2	15	inv_weapon_shortblade_20	0	23.33	int=3;mp5=4;sp=52	0		0	0	1	1	
 20648	Cold Forged Hammer	3	63	0	21	2	4	inv_hammer_22	0	41.4	int=9;mp5=3;sta=5	0		0	0	1	1	
 20649	Sunprism Pendant	2	60	0	2	4	0	inv_jewelry_necklace_15	0	0	agi=12;sta=7	0		0	0	1	1	
-20652	Abyssal Cloth Slippers	2	60	55	8	4	1	inv_boots_cloth_10	53	0		20	12745,12746,12747,12748,12749,12750	0	0		2	
-20654	Amethyst War Staff	3	60	55	17	2	10	inv_staff_11	0	51.38	int=9;sp=34;sta=6	0		0	0		1	
-20655	Abyssal Cloth Handwraps	2	60	55	10	4	1	inv_gauntlets_32	48	0		20	12745,12746,12747,12748,12749,12750	0	0		2	
-20657	Crystal Tipped Stiletto	3	60	55	13	2	15	inv_weapon_shortblade_27	0	39.47	ap=24;sta=5	0		0	0	1	1	
-20664	Abyssal Cloth Sash	2	65	60	6	4	1	inv_belt_06	47	0		21	12745,12746,12747,12748,12749,12750	0	0		2	
-20666	Hardened Steel Warhammer	3	62	57	21	2	4	inv_hammer_14	0	40.77	heal=11;int=6;sta=10	0		0	0	1	1	
-20672	Sparkling Crystal Wand	3	62	57	26	2	19	inv_wand_12	0	62.33	int=9;sp=5	0		0	0		1	
-20674	Abyssal Cloth Pants	3	62	57	7	4	1	inv_pants_cloth_04	77	0	spellCrit=1	36	12928,12930,12931,12932,12933,12934	0	0		2	
 20682	Elemental Focus Band	4	65	60	11	4	0	inv_jewelry_ring_23	0	0	int=11;sp=22;sta=8	0		0	0	1	1	
 20685	Wavefront Necklace	4	65	60	2	4	0	inv_jewelry_necklace_21	0	0	heal=24;int=6;mp5=8;spDmg=8;sta=5	0		0	0		1	
-20686	Abyssal Cloth Amice	3	68	60	3	4	1	inv_shoulder_25	72	0	spellHit=1	29	12923,12924,12925,12926,12927,12929	0	0		1	
-20690	Abyssal Cloth Wristbands	3	68	60	9	4	1	inv_bracer_12	42	0		22	12745,12746,12747,12748,12749,12750	0	0		1	
-20691	Windshear Cape	4	65	60	16	4	1	inv_misc_cape_20	50	0	agi=15;int=7;sta=14;str=8	0		0	0		1	
 20692	Multicolored Band	2	60	55	11	4	0	inv_jewelry_ring_03	0	0	sta=10	15	12992,12993,12994,12995,12996	0	0		2	
-20693	Weighted Cloak	2	60	55	16	4	1	inv_misc_cape_02	99	0	sta=8;str=8	0		0	0		2	
-20694	Glowing Black Orb	2	60	55	23	4	0	inv_misc_orb_04	0	0	int=10;sp=12	0		0	0		2	
 20695	Abyssal War Beads	3	63	58	2	4	0	inv_jewelry_necklace_04	0	0	ap=20;sta=15	0		0	0		2	
-20697	Crystalline Threaded Cape	3	63	58	16	4	1	inv_misc_cape_19	45	0	int=4;sp=20;sta=5	0		0	0		2	
-20698	Elemental Attuned Blade	4	63	58	21	2	7	inv_sword_22	0	45.71	int=6;mp5=3;sp=32	0		0	0	1	2	
 20705	Cenarion Reservist's Pants	3	63	0	7	4	1	inv_pants_cloth_06	78	0	resNature=25;sp=15;sta=13	0		0	0		1	
 20706	Cenarion Reservist's Pants	3	63	0	7	4	1	inv_pants_cloth_06	78	0	resNature=25;sp=15;sta=13	0		0	0		1	
 20707	Cenarion Reservist's Pants	3	63	0	7	4	1	inv_pants_cloth_06	78	0	heal=29;resNature=25;spDmg=10;sta=13	0		0	0		1	
 20716	Sandworm Skin Gloves	3	63	0	10	4	1	inv_gauntlets_17	56	0	int=5;sp=27;sta=8	0		0	0		1	
 20717	Desert Bloom Gloves	3	63	0	10	4	1	inv_gauntlets_17	56	0	heal=51;int=5;spDmg=17;spi=5;sta=5	0		0	0		1	
-20720	Dark Whisper Blade	3	65	60	21	2	15	inv_weapon_shortblade_16	0	42.5	sp=19;sta=6	0		0	0	1	2	
 20721	Band of the Cultist	3	65	60	11	4	0	inv_jewelry_ring_27	0	0	agi=12;sta=12;str=7	0		0	0	1	2	
 20724	Corrupted Blackwood Staff	2	62	0	17	2	10	inv_staff_07	0	35.74	int=22;sp=54;sta=11	0		0	0		1	
 21040	Narain's Robe	1	1	0	20	4	0	inv_chest_cloth_24	0	0		0		0	0		1	
@@ -3598,7 +3402,6 @@ ns.DATA.items = [===[
 21119	Talisman of Arathor	3	33	28	12	4	0	inv_jewelry_talisman_05	0	0	sta=6	0		0	0		1	509:4
 21120	Defiler's Talisman	3	33	28	12	4	0	inv_jewelry_talisman_05	0	0	sta=6	0		0	0		1	510:4
 21126	Death's Sting	4	84	60	13	2	15	inv_weapon_shortblade_33	0	66.39	ap=38;other=3;sta=10	0		0	0	1	1	
-21128	Staff of the Qiraji Prophets	4	75	60	17	2	10	inv_staff_01	0	73.28	int=26;resArcane=10;resFire=10;resFrost=10;resNature=10;resShadow=10;sp=56;spi=8;sta=21	0		0	0		1	
 21179	Band of Earthen Wrath	3	62	0	11	4	0	inv_jewelry_ring_18	0	0	crit=1;int=8;mp5=3	0		0	0	1	1	
 21180	Earthstrike	4	66	0	12	4	0	spell_nature_abolishmagic	0	0		0		0	0	1	1	
 21181	Grace of Earth	3	66	0	12	4	0	inv_misc_herb_02	0	0		0		0	0	1	1	
@@ -3647,25 +3450,10 @@ ns.DATA.items = [===[
 21413	Blade of Vaulted Secrets	4	70	60	21	2	7	inv_sword_57	0	24.35	hit=1;int=16;sp=98;sta=8	0		128	0	1	1	
 21414	Band of Vaulted Secrets	4	65	60	11	4	0	inv_jewelry_ring_ahnqiraj_03	0	0	crit=1;sp=18;sta=9	0		128	0	1	1	
 21415	Drape of Vaulted Secrets	4	67	60	16	4	1	inv_misc_cape_19	52	0	int=9;sp=18;spi=6;sta=14	0		128	0		1	
-21452	Staff of the Ruins	4	72	60	17	2	10	inv_staff_12	0	69.56	int=23;sp=60;spellCrit=1;spellHit=1;spi=14;sta=24	0		0	0		1	
-21456	Sandstorm Cloak	4	72	60	16	4	1	inv_misc_cape_06	135	0	defense=6;dodge=1;sta=12;str=12	0		0	0		1	
-21461	Leggings of the Black Blizzard	4	72	60	7	4	1	inv_pants_cloth_06	97	0	int=16;sp=41;spellCrit=1;spi=8;sta=14	0		0	0		1	
-21462	Gloves of Dark Wisdom	4	72	60	10	4	1	inv_gauntlets_19	69	0	heal=35;int=20;mp5=5;sta=19	0		0	0		1	
-21464	Shackles of the Unscarred	4	72	60	9	4	1	inv_bracer_07	48	0	int=12;sp=21;sta=9	0		0	0		1	
-21466	Stinger of Ayamiss	4	69	60	21	2	4	inv_mace_23	0	50.62	int=7;sp=36;spellCrit=1;sta=9	0		0	0		1	
-21468	Mantle of Maz'Nadir	3	74	60	3	4	1	inv_shoulder_25	78	0	int=15;sp=21;spi=7;sta=11	0		0	0		1	
-21470	Cloak of the Savior	3	74	60	16	4	1	inv_misc_cape_16	52	0	heal=22;int=11;spi=10;sta=10	0		0	0		1	
-21471	Talon of Furious Concentration	4	69	60	23	4	0	inv_mace_21	0	0	int=8;sp=21;spellCrit=1;sta=8	0		0	0		1	
-21472	Dustwind Turban	4	69	60	1	4	1	inv_helmet_62	86	0	heal=31;int=29;spellCrit=1;spi=15;sta=18	0		0	0		1	
 21473	Eye of Moam	3	74	60	12	4	0	inv_misc_eye_01	0	0		0		0	0	1	1	
 21477	Ring of Fury	3	74	60	11	4	0	inv_jewelry_ring_ahnqiraj_04	0	0	ap=30;hit=1;sta=9	0		0	0	1	1	
 21483	Ring of the Desert Winds	3	73	60	11	4	0	inv_jewelry_ring_ahnqiraj_05	0	0	crit=1;int=9;mp5=3;sp=9	0		0	0	1	1	
 21488	Fetish of Chitinous Spikes	3	73	60	12	4	0	inv_misc_ahnqirajtrinket_02	0	0		0		0	0	1	1	
-21489	Quicksand Waders	3	73	60	8	4	1	inv_boots_cloth_05	70	0	int=14;sp=16;spi=11;sta=14	0		0	0		1	
-21496	Bracers of Qiraji Command	3	71	60	9	4	1	inv_bracer_13	44	0	int=13;mp5=4;sta=12	0		0	0		1	
-21498	Qiraji Sacrificial Dagger	4	66	60	13	2	15	inv_weapon_shortblade_12	0	48.16	ap=20;sta=15	0		0	0	1	1	
-21499	Vestments of the Shifting Sands	4	66	60	20	4	1	inv_chest_cloth_17	102	0	int=14;sp=32;spellCrit=1;spi=8;sta=20	0		0	0		1	
-21500	Belt of the Inquisition	3	71	60	6	4	1	inv_belt_05	56	0	heal=24;int=15;mp5=4;sta=14	0		0	0		1	
 21504	Charm of the Shifting Sands	4	70	60	2	4	0	inv_jewelry_necklace_ahnqiraj_03	0	0	int=12;sp=25;sta=9	0		0	0		1	
 21505	Choker of the Shifting Sands	4	70	60	2	4	0	inv_jewelry_necklace_ahnqiraj_03	0	0	ap=42;sta=16	0		0	0		1	
 21506	Pendant of the Shifting Sands	4	70	60	2	4	0	inv_jewelry_necklace_ahnqiraj_03	0	0	defense=4;sta=21;str=14	0		0	0		1	
@@ -3694,52 +3482,36 @@ ns.DATA.items = [===[
 21597	Royal Scepter of Vek'lor	4	81	60	23	4	0	inv_wand_10	0	0	crit=1;hit=1;int=9;sp=20;sta=10	0		0	0		1	
 21600	Boots of Epiphany	4	81	60	8	4	1	inv_boots_cloth_05	84	0	int=19;sp=34;sta=18	0		0	0		1	
 21601	Ring of Emperor Vek'lor	4	81	60	11	4	0	inv_jewelry_ring_ahnqiraj_01	100	0	agi=12;defense=9;sta=18	0		0	0	1	1	
-21603	Wand of Qiraji Nobility	4	78	60	26	2	19	inv_wand_06	0	102.19	sp=19;sta=5	0		0	0		1	
 21604	Bracelets of Royal Redemption	4	81	60	9	4	1	inv_bracer_13	54	0	heal=53;int=10;spi=9;sta=8	0		0	0		1	
 21608	Amulet of Vek'nilash	4	81	60	2	4	0	inv_jewelry_necklace_ahnqiraj_01	0	0	crit=1;int=5;sp=27;sta=9	0		0	0		1	
 21611	Burrower Bracers	4	81	60	9	4	1	inv_bracer_13	54	0	int=13;sp=28;sta=10	0		0	0		1	
 21615	Don Rigoberto's Lost Hat	4	81	60	1	4	1	inv_helmet_51	100	0	heal=64;int=24;mp5=11;spDmg=21;sta=18	0		0	0		1	
 21619	Gloves of the Messiah	4	78	60	10	4	1	inv_gauntlets_17	74	0	heal=26;int=17;mp5=10;spDmg=9;sta=13	0		0	0		1	
 21620	Ring of the Martyr	4	78	60	11	4	0	inv_jewelry_ring_ahnqiraj_01	0	0	heal=51;mp5=5;sta=10	0		0	0	1	1	
-21621	Cloak of the Golden Hive	4	78	60	16	4	1	inv_misc_cape_01	59	0	agi=10;defense=6;sta=19;str=13	0		0	0		1	
 21622	Sharpened Silithid Femur	4	78	60	21	2	7	inv_sword_58	0	39.57	crit=1;int=7;sp=106;sta=14	0		0	0	1	1	
 21625	Scarab Brooch	4	78	60	12	4	0	inv_misc_ahnqirajtrinket_06	0	0		0		0	0	1	1	
-21627	Cloak of Untold Secrets	4	77	60	16	4	1	inv_misc_cape_20	59	0	resShadow=20;sta=21	0		0	0		1	
 21647	Fetish of the Sand Reaver	4	77	60	12	4	0	inv_misc_ahnqirajtrinket_03	0	0		0		0	0	1	1	
 21648	Recomposed Boots	4	76	60	8	4	1	inv_boots_cloth_07	80	0	int=13;resNature=20;sp=20;sta=21	0		0	0		1	
 21650	Ancient Qiraji Ripper	4	77	60	13	2	7	inv_sword_59	0	58.39	ap=20;crit=1;sta=11	0		0	0		1	
 21663	Robes of the Guardian Saint	4	77	60	20	4	1	inv_chest_cloth_23	117	0	heal=70;int=22;mp5=7;spDmg=23;sta=20	0		0	0		1	
 21664	Barbed Choker	4	77	60	2	4	0	inv_jewelry_necklace_ahnqiraj_02	0	0	ap=44;crit=1;sta=10	0		0	0		1	
-21666	Sartura's Might	4	76	60	23	4	0	inv_qirajidol_war	0	0	heal=51;int=6;mp5=5;sta=6	0		0	0		1	
 21670	Badge of the Swarmguard	4	76	60	12	4	0	inv_misc_ahnqirajtrinket_04	0	0		0		0	0	1	1	
-21671	Robes of the Battleguard	4	76	60	20	4	1	inv_chest_cloth_26	116	0	int=17;sp=36;spi=8;sta=23	0		0	0		1	
-21676	Leggings of the Festering Swarm	4	76	60	7	4	1	inv_pants_cloth_02	101	0	int=23;spFire=57;sta=17	0		0	0		1	
 21677	Ring of the Qiraji Fury	4	78	60	11	4	0	inv_jewelry_ring_ahnqiraj_01	0	0	ap=40;crit=1;sta=12	0		0	0	1	1	
 21678	Necklace of Purity	4	76	60	2	4	0	inv_jewelry_necklace_ahnqiraj_04	0	0	int=13;resNature=20;sp=8;sta=9	0		0	0		1	
 21681	Ring of the Devoured	4	78	60	11	4	0	inv_jewelry_ring_ahnqiraj_05	0	0	heal=15;int=13;mp5=8;sta=10	0		0	0	1	1	
 21685	Petrified Scarab	4	76	60	12	4	0	inv_misc_ahnqirajtrinket_01	0	0		0		0	0	1	1	
-21686	Mantle of Phrenic Power	4	76	60	3	4	1	inv_shoulder_02	87	0	int=20;spFire=33;sta=20	0		0	0		1	
 21687	Ukko's Ring of Darkness	4	76	60	11	4	0	inv_jewelry_ring_24	0	0	hp5=18;resShadow=20;sta=13	0		0	0	1	1	
 21690	Angelista's Charm	4	75	60	2	4	0	inv_jewelry_necklace_20	0	0	heal=31;int=14;mp5=6;sta=13	0		0	0		1	
 21694	Ternary Mantle	4	75	60	3	4	1	inv_shoulder_05	86	0	heal=44;int=17;spi=20;sta=12	0		0	0		1	
 21695	Angelista's Touch	4	75	60	11	4	0	inv_jewelry_ring_ahnqiraj_04	0	0	defense=6;dodge=1;sta=17;str=11	0		0	0	1	1	
-21696	Robes of the Triumvirate	4	75	60	20	4	1	inv_chest_cloth_22	114	0	int=22;mp5=7;resNature=30;sta=21	0		0	0		1	
-21697	Cape of the Trinity	4	75	60	16	4	1	inv_misc_cape_18	57	0	int=12;sp=21;sta=17	0		0	0		1	
 21700	Pendant of the Qiraji Guardian	4	73	60	2	4	0	inv_jewelry_necklace_ahnqiraj_01	0	0	agi=11;defense=6;sta=17;str=12	0		0	0		1	
-21701	Cloak of Concentrated Hatred	4	73	60	16	4	1	inv_misc_cape_02	56	0	agi=16;mhit=1;sta=15;str=11	0		0	0		1	
 21702	Amulet of Foul Warding	4	73	60	2	4	0	inv_jewelry_necklace_12	0	0	ap=24;resNature=20;sta=12	0		0	0		1	
 21707	Ring of Swarming Thought	4	73	60	11	4	0	inv_jewelry_ring_ahnqiraj_04	0	0	sp=26;spellPen=5	0		0	0	1	1	
 21709	Ring of the Fallen God	4	88	60	11	4	0	inv_jewelry_ring_ahnqiraj_02	0	0	hit=1;int=6;sp=37;sta=5	0		0	0	1	1	
 21710	Cloak of the Fallen God	4	88	60	16	4	1	inv_misc_cape_10	66	0	agi=26;sta=15;str=11	0		0	0		1	
 21712	Amulet of the Fallen God	4	88	60	2	4	0	inv_jewelry_necklace_ahnqiraj_02	0	0	heal=57;mp5=6;sta=11	0		0	0		1	
-21715	Sand Polished Hammer	4	72	60	13	2	4	inv_mace_24	0	53.46	ap=20;mcrit=1;sta=9	0		0	0	1	1	
-21801	Antenna of Invigoration	3	68	60	26	2	19	inv_wand_04	0	71.56	heal=13;int=4;mp5=3	0		0	0		2	
-21802	The Lost Kris of Zedd	3	68	60	21	2	15	inv_sword_32	0	45	sp=14;spellCrit=1;sta=6	0		0	0		2	
 21809	Fury of the Forgotten Swarm	3	71	60	2	4	0	inv_jewelry_necklace_14	0	0	crit=1;hit=1;str=8	0		0	0		1	
-21810	Treads of the Wandering Nomad	3	71	60	8	4	1	inv_boots_cloth_05	69	0	heal=37;int=18;spi=11	0		0	0		1	
 21836	Ritssyn's Ring of Chaos	4	71	60	11	4	0	inv_jewelry_ring_34	0	0	crit=1;sp=25;sta=6	0		0	0	1	1	
-21837	Anubisath Warhammer	4	71	60	13	2	4	inv_hammer_11	0	52.5	ap=32;sta=7	0		0	0		1	
-21838	Garb of Royal Ascension	4	71	60	20	4	1	inv_chest_cloth_48	109	0	resShadow=25;sp=30;spellHit=2;sta=21	0		0	0		1	
 21839	Scepter of the False Prophet	4	84	60	21	2	4	inv_mace22	0	44.17	heal=210;int=19;mp5=3;spDmg=70;sta=10	0		0	0		1	
 21888	Gloves of the Immortal	4	71	60	10	4	1	inv_gauntlets_14	188	0	int=16;sta=28	0		0	0		1	
 21891	Shard of the Fallen Star	4	75	60	12	4	0	inv_misc_ahnqirajtrinket_04	0	0		0		0	0		1	
@@ -3872,495 +3644,78 @@ ns.DATA.items = [===[
 22688	Verimonde's Last Resort	3	66	0	21	2	15	inv_weapon_shortblade_03	0	28.93	int=8;sp=74;sta=7	0		0	0	1	1	
 22700	Glacial Leggings	4	80	0	7	4	1	inv_pants_06	106	0	resFrost=40;sp=18;sta=28	0		0	0		1	
 22707	Ramaladni's Icy Grasp	4	80	0	11	4	0	inv_jewelry_ring_35	0	0	resFrost=25;sta=15	0		0	0	1	1	
-22711	Cloak of the Hakkari Worshipers	3	68	60	16	4	1	inv_misc_cape_16	48	0	int=6;sp=23;sta=6	0		0	0		1	
-22712	Might of the Tribe	3	68	60	16	4	1	inv_misc_cape_16	48	0	ap=28;sta=18	0		0	0		1	
-22713	Zulian Scepter of Rites	3	68	60	13	2	4	inv_waepon_bow_zulgrub_d_01	0	44.81	heal=26;int=8;mp5=4;sta=9	0		0	0	1	1	
-22716	Belt of Untapped Power	3	68	60	6	4	1	inv_belt_01	54	0	int=7;sp=29;sta=6	0		0	0		1	
-22720	Zulian Headdress	3	68	60	1	4	1	inv_helmet_61	78	0	heal=55;int=15;spi=14;sta=13	0		0	0		1	
-22721	Band of Servitude	4	65	60	11	4	0	inv_jewelry_ring_16	0	0	int=9;sp=23;sta=8	0		0	0	1	1	
-22722	Seal of the Gurubashi Berserker	4	65	60	11	4	0	inv_jewelry_ring_20	0	0	ap=40;sta=13	0		0	0	1	1	
 22725	Band of Cenarius	3	70	0	11	4	0	inv_jewelry_ring_11	0	0	resNature=19;sta=10	0		0	0	1	1	
-22730	Eyestalk Waist Cord	4	88	60	6	4	1	inv_belt_12	75	0	int=9;sp=41;spellCrit=1;sta=10	0		0	0		1	
-22731	Cloak of the Devoured	4	88	60	16	4	1	inv_misc_cape_18	66	0	int=10;sp=30;spellHit=1;sta=11	0		0	0		1	
 22732	Mark of C'Thun	4	88	60	2	4	0	inv_jewelry_necklace_ahnqiraj_04	0	0	defense=10;dodge=1;hit=1;sta=24	0		0	0		1	
-22736	Andonisus, Reaper of Souls	5	100	60	21	2	7	inv_sword_61	0	90.36	ap=600	0		0	0	1	1	
 22747	Outrider's Silk Leggings	4	65	60	7	4	1	inv_pants_cloth_05	188	0	int=19;sp=28;spi=10;sta=23	0		0	0	1	1	
 22752	Sentinel's Silk Leggings	4	65	60	7	4	1	inv_pants_cloth_05	188	0	int=19;sp=28;spi=10;sta=23	0		0	0	1	1	
 22756	Sylvan Vest	3	70	60	5	4	1	inv_chest_plate07	98	0	resNature=30;sp=12;sta=15	0		0	0		2	
 22757	Sylvan Crown	3	70	60	1	4	1	inv_crown_01	80	0	resNature=30;sp=18;sta=10	0		0	0		2	
 22758	Sylvan Shoulders	3	70	60	3	4	1	inv_shoulder_18	74	0	resNature=20;sp=7;sta=18	0		0	0		2	
-22799	Soulseeker	4	89	60	17	2	10	inv_staff_15	0	95.16	int=31;sp=126;spellCrit=2;sta=30	0		0	0		1	
-22800	Brimstone Staff	4	83	60	17	2	10	inv_staff_13	0	85	int=30;sp=113;spellCrit=1;spellHit=2;sta=31	0		0	0		1	
-22801	Spire of Twilight	4	83	60	17	2	10	inv_staff_31	0	85	heal=178;int=38;mp5=10;sta=30	0		0	0		1	
-22802	Kingsfall	4	89	60	13	2	15	inv_weapon_shortblade_37	0	73.06	agi=16;mcrit=1;mhit=1	0		0	0	1	1	
-22803	Midnight Haze	4	81	60	13	2	15	inv_knife_1h_stratholme_d_02	0	62.78	int=12;sp=85;sta=20	0		0	0	1	1	
-22804	Maexxna's Fang	4	83	60	13	2	15	inv_knife_1h_stratholme_d_01	0	65.28	ap=36;mhit=1;sta=8	0		0	0	1	1	
-22806	Widow's Remorse	4	81	60	13	2	7	inv_sword_60	100	62.81	mhit=1;sta=17	0		0	0	1	1	
-22807	Wraith Blade	4	83	60	13	2	7	inv_sword_11	0	65.28	int=8;sp=95;spellCrit=1;spellHit=1;sta=10	0		0	0	1	1	
-22808	The Castigator	4	83	60	13	2	4	inv_mace_1h_stratholme_d_01	0	65.38	ap=16;mcrit=1;mhit=1;sta=9	0		0	0	1	1	
-22820	Wand of Fates	4	83	60	26	2	19	inv_wand_1h_stratholme_d_01	0	113.67	int=7;sp=12;spellHit=1;sta=7	0		0	0		1	
-22821	Doomfinger	4	92	60	26	2	19	inv_wand_1h_stratholme_d_02	0	139	sp=16;spellCrit=1	0		0	0		1	
 22935	Touch of Frost	4	83	60	2	4	0	inv_jewelry_amulet_04	0	0	resFrost=24;sta=20	0		0	0	1	1	
-22937	Gem of Nerubis	4	83	60	23	4	0	inv_offhand_naxxramas_d_01	0	0	int=10;sp=25;sta=14	0		0	0		1	
-22938	Cryptfiend Silk Cloak	4	83	60	16	4	1	inv_misc_cape_naxxramas_02	203	0	defense=7;dodge=1;mhit=1;sta=14	0		0	0		1	
 22939	Band of Unanswered Prayers	4	83	60	11	4	0	inv_jewelry_ring_50naxxramas	0	0	heal=51;int=11;spi=12;sta=11	0		0	0	1	1	
-22942	The Widow's Embrace	4	81	60	13	2	4	inv_mace_29	0	62.89	heal=161;int=12;spi=14;sta=12	0		0	0	1	1	
 22943	Malice Stone Pendant	4	83	60	2	4	0	inv_jewelry_necklace_29naxxramas	0	0	int=8;sp=28;spellPen=13;sta=9	0		0	0		1	
 22947	Pendant of Forgotten Names	4	85	60	2	4	0	inv_jewelry_necklace_28naxxramas	0	0	int=18;mp5=7;spi=18	0		0	0		1	
 22954	Kiss of the Spider	4	85	60	12	4	0	inv_trinket_naxxramas04	0	0	crit=1;hit=1	0		0	0	1	1	
-22960	Cloak of Suturing	4	83	60	16	4	1	inv_misc_cape_naxxramas_02	63	0	heal=48;int=12;mp5=5;spi=12	0		0	0		1	
 22961	Band of Reanimation	4	83	60	11	4	0	inv_jewelry_ring_49naxxramas	0	0	agi=34	0		0	0	1	1	
 22968	Glacial Mantle	4	83	0	3	4	1	inv_shoulder_14	94	0	resFrost=33;sp=16;sta=18	0		0	0		1	
 22981	Gluth's Missing Collar	4	83	60	2	4	0	inv_jewelry_necklace_27naxxramas	0	0	block=3;blockValue=15;sta=24	0		0	0	1	1	
-22983	Rime Covered Mantle	4	83	60	3	4	1	inv_shoulder_05	94	0	int=12;sp=39;spellCrit=1;sta=12	0		0	0		1	
-22988	The End of Dreams	4	83	60	13	2	4	inv_mace_1h_stratholme_d_02	0	65.26	apFeral=305;int=13;mp5=5;sp=95;sta=13	0		0	0	1	1	
-22994	Digested Hand of Power	4	83	60	23	4	0	inv_offhand_stratholme_a_02	0	0	int=14;mp5=10;sta=10	0		0	0		1	
 23001	Eye of Diminution	4	85	60	12	4	0	inv_trinket_naxxramas02	0	0	crit=2	0		0	0	1	1	
-23009	Wand of the Whispering Dead	4	83	60	26	2	19	inv_wand_1h_stratholme_d_01	0	113.67	heal=22;int=10;spi=9	0		0	0		1	
-23014	Iblis, Blade of the Fallen Seraph	4	81	60	13	2	7	inv_sword_07	0	62.81	ap=26;mcrit=1;mhit=1	0		0	0	1	1	
-23017	Veil of Eclipse	4	83	60	16	4	1	inv_misc_cape_naxxramas_01	63	0	int=10;sp=28;sta=10	0		0	0		1	
 23018	Signet of the Fallen Defender	4	83	60	11	4	0	inv_jewelry_ring_50naxxramas	140	0	hit=1;sta=24	0		0	0	1	1	
-23021	The Soul Harvester's Bindings	4	83	60	9	4	1	inv_bracer_07	55	0	int=11;sp=21;spellCrit=1;sta=14	0		0	0		1	
 23023	Sadist's Collar	4	83	60	2	4	0	inv_jewelry_necklace_29naxxramas	0	0	ap=20;crit=1;sta=24	0		0	0		1	
 23025	Seal of the Damned	4	85	60	11	4	0	inv_jewelry_ring_48naxxramas	0	0	crit=1;hit=1;sp=21;sta=17	0		0	0	1	1	
 23027	Warmth of Forgiveness	4	85	60	12	4	0	inv_trinket_naxxramas01	0	0	mp5=10	0		0	0	1	1	
 23028	Hailstone Band	4	83	60	11	4	0	inv_jewelry_ring_35	0	0	dodge=1;resFrost=20;sta=18	0		0	0	1	1	
-23029	Noth's Frigid Heart	4	83	60	23	4	0	inv_offhand_naxxramas_04	0	0	heal=53;int=12;spi=13	0		0	0		1	
-23030	Cloak of the Scourge	4	83	60	16	4	1	inv_misc_cape_naxxramas_01	63	0	ap=30;mhit=1;sta=23	0		0	0		1	
 23031	Band of the Inevitable	4	83	60	11	4	0	inv_jewelry_ring_53naxxramas	0	0	hit=1;sp=36	0		0	0	1	1	
 23032	Glacial Headdress	4	83	60	1	4	1	inv_helmet_53	102	0	int=21;resFrost=40;sp=18;sta=20	0		0	0		1	
-23035	Preceptor's Hat	4	83	60	1	4	1	inv_helmet_50	102	0	int=24;sp=51;sta=18	0		0	0		1	
 23036	Necklace of Necropsy	4	83	60	2	4	0	inv_jewelry_necklace_30naxxramas	0	0	heal=53;int=11;spi=10;sta=10	0		0	0		1	
 23037	Ring of Spiritual Fervor	4	85	60	11	4	0	inv_jewelry_ring_52naxxramas	0	0	int=14;mp5=10;sta=11	0		0	0	1	1	
 23038	Band of Unnatural Forces	4	85	60	11	4	0	inv_jewelry_ring_48naxxramas	0	0	ap=52;crit=1;hit=1	0		0	0	1	1	
 23040	Glyph of Deflection	4	90	60	12	4	0	inv_trinket_naxxramas05	0	0	block=3;blockValue=23	0		0	0	1	1	
 23041	Slayer's Crest	4	90	60	12	4	0	inv_trinket_naxxramas03	0	0	ap=64	0		0	0	1	1	
 23042	Loatheb's Reflection	4	85	60	12	4	0	inv_trinket_naxxramas05	0	0	resArcane=13;resFire=13;resFrost=13;resNature=13;resShadow=13	0		0	0	1	1	
-23044	Harbinger of Doom	4	83	60	13	2	15	inv_knife_1h_stratholme_d_03	0	65.31	agi=8;mcrit=1;mhit=1;sta=8	0		0	0	1	1	
-23045	Shroud of Dominion	4	90	60	16	4	1	inv_misc_cape_naxxramas_03	68	0	ap=50;mcrit=1;sta=11	0		0	0		1	
 23046	The Restrained Essence of Sapphiron	4	90	60	12	4	0	inv_trinket_naxxramas06	0	0	sp=40	0		0	0	1	1	
 23047	Eye of the Dead	4	90	60	12	4	0	inv_trinket_naxxramas01	0	0	heal=70	0		0	0	1	1	
-23048	Sapphiron's Right Eye	4	90	60	23	4	0	inv_offhand_naxxramas_02	0	0	heal=62;int=10;mp5=4;sta=9	0		0	0		1	
-23049	Sapphiron's Left Eye	4	90	60	23	4	0	inv_offhand_naxxramas_03	0	0	int=8;sp=26;spellCrit=1;spellHit=1;sta=12	0		0	0		1	
-23050	Cloak of the Necropolis	4	90	60	16	4	1	inv_misc_cape_naxxramas_03	68	0	int=11;sp=26;spellCrit=1;spellHit=1;sta=12	0		0	0		1	
 23053	Stormrage's Talisman of Seething	4	92	60	2	4	0	inv_jewelry_necklace_28naxxramas	0	0	ap=26;crit=2;sta=12	0		0	0		1	
-23054	Gressil, Dawn of Ruin	4	89	60	13	2	7	inv_sword_61	0	73.15	ap=40;sta=15	0		0	0	1	1	
-23056	Hammer of the Twisting Nether	4	89	60	13	2	4	inv_mace_27	0	73.16	heal=238;int=11;mp5=8;sta=8	0		0	0	1	1	
 23057	Gem of Trapped Innocents	4	92	60	2	4	0	inv_jewelry_necklace_29naxxramas	0	0	crit=2;int=7;sp=15;sta=9	0		0	0		1	
 23058	Life Channeling Necklace	4	92	60	2	4	0	inv_jewelry_necklace_30naxxramas	0	0	heal=70;mp5=6	0		0	0		1	
 23061	Ring of Faith	4	92	60	11	4	0	inv_jewelry_ring_51naxxramas	0	0	heal=55;int=16;spi=16	0		16	0	1	1	
 23062	Frostfire Ring	4	92	60	11	4	0	inv_jewelry_ring_51naxxramas	0	0	crit=1;int=10;sp=30;sta=10	0		128	0	1	1	
-23069	Necro-Knight's Garb	4	85	60	20	4	1	inv_chest_cloth_46	448	0	sp=37;sta=32	0		400	0		1	
-23070	Leggings of Polarity	4	85	60	7	4	1	inv_pants_08	112	0	int=14;sp=44;spellCrit=2;sta=20	0		0	0		1	
 23084	Gloves of Undead Cleansing	3	63	0	10	4	1	inv_gauntlets_16	56	0	int=10;other=18;sp=18;sta=10	0		0	0		1	
-23085	Robe of Undead Cleansing	3	63	58	20	4	1	inv_chest_cloth_04	89	0	int=13;sta=12	0		0	0		1	
-23091	Bracers of Undead Cleansing	3	63	58	9	4	1	inv_bracer_12	39	0	int=7;sta=6	0		0	0		2	
-23124	Staff of Balzaphon	3	60	55	17	2	10	inv_staff_07	0	51.41	int=10;sp=29;spellCrit=1;spi=7;sta=8	0		0	0		1	
 23125	Chains of the Lich	3	60	55	2	4	0	inv_belt_18	0	0	sp=22	0		0	0		1	
-23126	Waistband of Balzaphon	3	60	55	6	4	1	inv_belt_13	48	0	int=14;spFrost=20;sta=13	0		0	0		1	
-23127	Cloak of Revanchion	3	63	58	16	4	1	inv_misc_cape_02	45	0	agi=10;sta=11;str=10	0		0	0		1	
-23128	The Shadow's Grasp	3	62	57	10	4	1	inv_gauntlets_16	55	0	int=14;spShadow=20;sta=14	0		0	0		1	
-23129	Bracers of Mending	3	62	57	9	4	1	inv_bracer_13	38	0	heal=18;int=9;spi=13;sta=5	0		0	0		1	
-23132	Lord Blackwood's Blade	3	62	57	13	2	7	inv_sword_05	60	40.67	sta=14	0		0	0		1	
-23156	Blackwood's Thigh	3	62	57	23	4	0	inv_misc_bone_10	0	0	int=13;sp=9;sta=12	0		0	0		1	
-23168	Scorn's Focal Dagger	3	35	30	21	2	15	inv_weapon_shortblade_07	0	22.86	sp=9	0		0	0		1	
 23169	Scorn's Icy Choker	3	35	30	2	4	0	inv_jewelry_necklace_03	0	0	int=6;sp=7;sta=5	0		0	0		1	
-23173	Abomination Skin Leggings	3	25	20	7	4	1	inv_pants_06	37	0	int=8;sp=9;sta=7	0		0	0		1	
-23177	Lady Falther'ess' Finger	3	41	36	26	2	19	inv_wand_12	0	38.08	spShadow=10	0		0	0		1	
-23178	Mantle of Lady Falther'ess	3	41	36	16	4	1	inv_misc_cape_17	30	0	int=9;sp=9	0		0	0		1	
 23206	Mark of the Champion	4	90	0	12	4	0	inv_misc_token_argentdawn2	0	0	other=300	0		0	0	1	1	
 23207	Mark of the Champion	4	90	0	12	4	0	inv_misc_token_argentdawn3	0	0	other=170	0		0	0	1	1	
-23220	Crystal Webbed Robe	4	85	60	20	4	1	inv_chest_cloth_46	128	0	int=19;sp=53;sta=25	0		0	0		1	
-23221	Misplaced Servo Arm	4	83	60	13	2	4	inv_mace_28	0	65.36		0		0	0		1	
 23237	Ring of the Eternal Flame	4	83	60	11	4	0	inv_jewelry_ring_48naxxramas	0	0	crit=1;int=10;spFire=34	0		0	0	1	1	
 23323	Crown of the Fire Festival	1	1	0	1	4	1	inv_helmet_08	2	0		0		0	0		1	
 23324	Mantle of the Fire Festival	1	1	0	3	4	1	inv_shoulder_23	2	0		0		0	0		1	
 23558	The Burrower's Shell	4	81	60	12	4	0	inv_shield_23	0	0		0		0	0	1	1	
 23570	Jom Gabbar	4	81	60	12	4	0	inv_misc_enggizmos_19	0	0		0		0	0	1	1	
-23577	The Hungering Cold	4	89	60	13	2	7	inv_sword_62	140	73	sta=14	0		0	0	1	1	
 23714	Perpetual Purple Firework	1	20	0	12	4	0	inv_misc_missilesmall_purple	0	0		0		0	0		1	
 23716	Carved Ogre Idol	1	1	0	12	4	0	inv_misc_idol_01	0	0		0		0	0	1	1	
 24071	Bland Dagger	3	69	0	13	2	15	inv_sword_12	0	45.56		0		0	0		0	
 24222	The Shadowfoot Stabber	3	57	52	13	2	15	inv_weapon_shortblade_18	0	37.5	ap=18;sta=8	0		0	0		2	
 191312	Failsafe Phylactery	4	60	60	12	4	0	inv_trinket_naxxramas03	0	0		0		0	0	1	1	
 191458	Shattered Phylactery	0	60	60	12	4	0	inv_gizmo_03	0	0		0		0	0	1	1	
-208196	Moa'kin Band	3	33	60	11	4	0	inv_jewelry_ring_39	0	0	spi=7;sta=7	0		0	0	1	1	
 208424	Sun Shades	2	100	0	1	4	1	inv_helmet_47	101	0		0		0	0	1	1	
-208425	Shiny Archaic Vestige	7	1	0	2	4	0	inv_jewelry_amulet_06	0	0	spi=6	0		0	0	1	0	
-209422	High Tide Choker	3	30	25	2	4	0	inv_jewelry_necklace_20	0	0	agi=4;str=7	0		0	0		1	
-209423	Flowing Scarf	3	30	25	16	4	1	inv_chest_cloth_14	24	0	int=6;spi=6	0		0	0		1	
-209432	Ghamoo-ra's Cinch	3	30	25	6	4	1	inv_belt_24	27	0	int=8;sta=8	0		0	0		1	
-209436	Chipped Bite of Serra'kis	3	35	25	13	2	15	inv_misc_monsterfang_01	0	23.33		0		0	0		1	
-209523	Shimmering Thresher Cape	3	30	25	16	4	1	inv_misc_monsterscales_03	24	0	spi=6;str=6	0		0	0		1	
-209525	Honed Darkwater Talwar	3	35	25	21	2	7	inv_sword_36	0	23.15		0		0	0		1	
-209559	Twilight Sage's Walking Stick	3	30	25	17	2	10	inv_staff_26	0	24.81	heal=24;spi=10;sta=5	0		0	0		1	
-209560	Hammer of Righteous Judgement	3	30	25	21	2	4	inv_hammer_21	50	18.85	sta=2;str=3	0		0	0		1	
-209561	Rod of the Ancient Sleepwalker	4	30	25	17	2	10	inv_staff_06	0	31.5	int=15;resShadow=5;sp=26;spi=14	0		0	0		1	
-209565	Band of Deep Places	3	30	25	11	4	0	inv_jewelry_ring_05	0	0	sta=6;str=6	0		0	0		1	
-209570	Tome of Cavern Lore	3	30	25	23	4	0	inv_misc_book_11	0	0	sp=7;sta=6	0		0	0		1	
-209571	Deadlight	3	30	25	26	2	19	inv_staff_02	0	30	resShadow=5	0		0	0		1	
-209573	Wrathful Spire	3	30	25	17	2	10	inv_staff_10	0	24.82	heal=26;spNature=17;sta=11	0		0	0		1	
-209590	Cracked Water Globe	3	30	25	23	4	0	inv_misc_orb_01	0	0	int=4;resFrost=5;spi=5	0		0	0		1	
 209613	Insignia of the Alliance	3	1	0	12	4	0	inv_jewelry_trinketpvp_01	0	0		0		16	0	1	1	
 209618	Insignia of the Alliance	3	1	0	12	4	0	inv_jewelry_trinketpvp_01	0	0		0		128	0	1	1	
 209621	Insignia of the Horde	3	1	0	12	4	0	inv_jewelry_trinketpvp_02	0	0		0		16	0	1	1	
 209623	Insignia of the Horde	3	1	0	12	4	0	inv_jewelry_trinketpvp_02	0	0		0		128	0	1	1	
-209667	Gaze Dreamer Leggings	3	33	25	7	4	1	inv_pants_02	43	0	int=9;sp=7;spi=9;sta=6	0		0	0		1	
-209668	Signet of the Twilight Lord	3	30	25	11	4	0	inv_jewelry_ring_24	0	0	sp=7;spi=6	0		0	0	1	1	
-209669	Twilight Invoker's Shoes	3	30	25	8	4	1	inv_boots_cloth_09	32	0	int=8;spi=8	0		0	0		1	
-209670	Skinwalkers	3	30	25	8	4	1	inv_boots_06	32	0	agi=7;spi=7;str=4	0		0	0		1	
-209671	Twilight Invoker's Robes	3	30	25	20	4	1	inv_chest_cloth_17	47	0	int=11;sp=8;sta=9	0		0	0		1	
-209672	Black Fingerless Gloves	3	33	25	10	4	1	inv_gauntlets_18	31	0	int=9;sp=6;spi=4;sta=6	0		0	0		1	
-209673	Glowing Fetish Amulet	3	30	25	2	4	0	inv_jewelry_necklace_26	0	0	sta=6;str=6	0		0	0		1	
-209674	Phoenix Ignition	3	30	25	26	2	19	inv_wand_11	0	30	int=5	0		0	0		1	
-209675	Clamweave Tunic	3	30	25	5	4	1	inv_shirt_red_01	117	0	agi=3;int=5;sta=11	0		0	0		1	
-209677	Loop of Swift Currents	3	30	25	11	4	0	inv_jewelry_ring_22	0	0		0		0	0	1	1	
-209679	Azshari Novice's Shoulderpads	3	30	25	3	4	1	inv_shoulder_02	35	0	int=10;spi=5	0		0	0		1	
-209680	Waterproof Scarf	3	30	25	16	4	1	inv_misc_cape_13	24	0	agi=6;spi=6	0		0	0		1	
-209681	Black Murloc Egg	3	30	25	12	4	0	inv_egg_09	0	0		0		0	0	1	1	
-209683	Twilight Invoker's Shawl	3	30	25	1	4	1	inv_helmet_27	38	0	sp=7;spi=9;sta=11	0		0	0		1	
-209684	Soul Leech Pants	3	33	25	7	4	1	inv_pants_14	43	0	int=8;sp=11;spi=6;sta=7	0		0	0		1	
-209686	Jagged Bone Necklace	3	33	25	2	4	0	inv_misc_bone_03	21	0	int=2;sp=6;spi=7	0		0	0		1	
-209691	Vampiric Boot Knife	3	33	25	22	2	15	inv_weapon_shortblade_02	0	21.15		0		0	0		1	
-209694	Blackfathom Ritual Dagger	3	31	25	21	2	15	inv_weapon_shortblade_12	0	19.58	int=5;sp=4;sta=2	0		0	0		1	
-209817	Voidwalker Brooch	3	30	25	2	4	0	inv_jewelry_necklace_11	0	0	defense=4;sta=6	0		0	0		1	
-209818	Sun-Touched Crescent	3	30	25	21	2	15	inv_weapon_shortblade_23	0	18.75	spFire=9;sta=3	0		0	0		1	
-209820	Black Shroud Choker	3	30	25	2	4	0	inv_jewelry_necklace_19	0	0	resShadow=5;spShadow=7;sta=4	0		0	0		1	
-209821	Ring of Shadowsight	3	30	25	11	4	0	inv_jewelry_ring_22	0	0		0		0	0	1	1	
-209822	Strength of Purpose	3	30	25	21	2	4	inv_hammer_17	0	19	int=5;spi=3;sta=2	0		0	0		1	
-209825	Droplet Choker	3	30	25	2	4	0	inv_jewelry_necklace_07	0	0	spi=6;sta=6	0		0	0		1	
-209828	Sub-Zero Pauldrons	3	30	25	3	4	1	inv_shoulder_25	35	0	int=6;spFrost=13	0		0	0		1	
 210250	Engraved Gold Ring	1	20	1	11	4	0	inv_jewelry_ring_03	0	0		0		0	0	1	1	
 210251	Engraved Silver Ring	1	20	1	11	4	0	inv_jewelry_ring_01	0	0		0		0	0	1	1	
 210781	Phoenix Bindings	3	30	25	9	4	1	inv_bracer_25a	21	0	spFire=13	0		0	0		2	
-210795	Extraplanar Spidersilk Boots	4	30	25	8	4	1	inv_boots_05	35	0	hit=1;int=5;sp=7;spi=6;sta=5	0		0	0		1	
-211420	Shifting Scale Talisman	3	25	25	12	4	0	inv_misc_rubysanctum1	0	0	spi=5	0		0	0		1	
-211444	Summoner's Cloak	2	18	13	16	4	1	inv_misc_cape_18	16	0	int=3;spi=1	0		0	0		1	
-211449	Avenger's Void Pearl	3	33	25	12	4	0	inv_misc_gem_pearl_04	0	0	ap=18;resShadow=10	0		0	0		1	
-211450	Invoker's Void Pearl	3	33	25	12	4	0	inv_misc_gem_pearl_07	0	0	resShadow=10;sp=11	0		0	0		1	
-211451	Acolyte's Void Pearl	3	33	25	12	4	0	inv_misc_gem_pearl_06	0	0	heal=20;resShadow=10	0		0	0		1	
-211456	Dagger of Willing Sacrifice	3	33	25	21	2	15	inv_weapon_shortblade_02	57	16.33	int=3;sp=12;sta=4	0		0	0	1	1	
-211458	Tome of Shadow Warding	3	33	25	23	4	0	inv_misc_book_01	40	0	int=3;resShadow=5;sta=4	0		0	0		1	
-211461	Inscribed Gravestone Scepter	3	33	0	26	2	19	inv_wand_04	0	32	resShadow=5;spi=1	0		0	0		1	
-211462	Ever-Sustaining Ring	3	30	0	11	4	0	inv_jewelry_ring_08	0	0	spi=8;sta=3	0		0	0		1	
-211464	Worn Prelacy Cape	3	30	0	16	4	1	inv_misc_cape_18	24	0	spi=9	0		0	0		1	
-211465	Nimbus Boots of Insight	3	30	0	8	4	1	inv_boots_05	34	0	agi=2;int=5;spi=4	0		0	0		1	
-211467	Band of the Iron Fist	3	30	0	11	4	0	inv_jewelry_ring_02	0	0	agi=7;str=4	0		0	0		1	
-211468	Frayed Chestnut Mantle	3	30	0	3	4	1	inv_shoulder_09	30	0	int=6;sp=5;sta=2	0		0	0		1	
-211500	Resilient Cloth Headband	3	25	20	1	4	1	inv_misc_bandana_03	50	0		0		0	0	1	1	
-211842	Rakkamar's Tattered Thinking Cap	3	30	25	1	4	1	inv_helmet_53	38	0	int=8;sp=14;spi=6	0		0	0		1	
-211852	Handwraps of Befouled Water	3	30	25	10	4	1	inv_gauntlets_09	69	0	int=4;spShadow=9;sta=6	0		0	0		1	
-212580	Lorekeeper's Staff	3	30	25	17	2	10	inv_staff_28	0	24.83	int=6;mp5=4;sta=10	0		0	0		1	
-212582	Protector's Sword	3	30	25	13	2	7	inv_sword_27	0	18.89	sta=3;str=6	0		0	0	1	1	
-212583	Sentinel's Blade	3	30	25	13	2	15	inv_weapon_shortblade_14	0	19.12	agi=6;sta=3	0		0	0	1	1	
-212584	Advisor's Gnarled Staff	3	30	25	17	2	10	inv_staff_25	0	24.83	int=6;mp5=4;sta=10	0		0	0		1	
-212586	Legionnaire's Sword	3	30	25	13	2	7	inv_sword_31	0	18.89	sta=3;str=6	0		0	0	1	1	
-212587	Scout's Blade	3	30	25	13	2	15	inv_weapon_shortblade_15	0	19.12	agi=6;sta=3	0		0	0	1	1	
-212588	Provisioner's Gloves	2	17	12	10	4	1	inv_gauntlets_18	20	0	spi=3;sta=3	0		0	0		1	
 213105	Shawarmageddon	2	40	0	13	2	4	inv_misc_food_13	0	22.12		0		0	0		1	
-213281	Electromagnetic Hyperflux Reactivator	3	48	40	1	4	1	inv_gizmo_01	55	0	int=15;sp=16;spi=12	0		0	0		1	
-213282	Hypercharged Gear of Innovation	4	45	40	11	4	0	inv_misc_gear_01	0	0	heal=13;int=5;mp5=3;resArcane=5;resNature=5;spi=8	0		0	0		1	
-213283	Hypercharged Gear of Conflagration	4	45	40	11	4	0	inv_misc_gear_01	0	0	int=4;mp5=4;resArcane=5;resNature=5;sp=11	0		0	0		1	
-213284	Hypercharged Gear of Devastation	4	45	40	11	4	0	inv_misc_gear_01	0	0	agi=8;resArcane=5;resNature=5;sta=10;str=7	0		0	0		1	
-213285	Lev's Oil-Stained Bindings	3	45	40	9	4	1	inv_misc_bandage_09	28	0	int=4;mp5=3;sp=9;sta=5	0		0	0		1	
-213286	Electrocutioner's Needle	4	45	40	21	2	7	inv_sword_30	0	34.12		0		0	0		1	
-213287	Electrocutioner Hexnut	3	45	40	11	4	0	inv_misc_gear_04	0	0	sp=8;spi=9;sta=6	0		0	0	1	1	
-213289	Hydrostaff	3	45	40	17	2	10	inv_staff_15	0	34.82	resFrost=23	0		0	0		1	
-213290	Acidic Waders	3	45	40	8	4	1	inv_boots_05	45	0	int=10;resNature=5;sp=11;spi=5	0		0	0		1	
-213291	Toxic Revenger II	4	45	40	13	2	15	inv_weapon_shortblade_02	0	34.17		0		0	0	1	1	
-213297	Oscillating Blasthammer	3	45	40	13	2	4	inv_hammer_08	0	30.42	defense=4;sta=7;str=5	0		0	0		1	
-213298	Mechbuilder's Overalls	3	45	40	20	4	1	inv_shirt_14	185	0	agi=6;int=12;sta=14	0		0	0		1	
-213300	Fighter Ace Gloves	3	45	40	10	4	1	inv_gauntlets_16	111	0	int=10;sp=9;sta=6	0		0	0		1	
-213301	Synthetic Mantle	3	45	40	3	4	1	inv_shoulder_02	99	0	int=9;sp=12;sta=8	0		0	0		1	
-213306	Ingenuity's Cover	3	45	40	16	4	1	inv_misc_cape_13	32	0	int=9;sp=9;sta=4	0		0	0		1	
-213307	Drape of Dismantling	3	45	40	16	4	1	inv_misc_cape_14	32	0	agi=6;sta=7;str=8	0		0	0		1	
-213308	Prototype Parachute Cloak	3	45	40	16	4	1	inv_misc_cape_05	32	0	agi=12;sta=4	0		0	0		1	
-213309	Cloak of Invention	3	45	40	16	4	1	inv_misc_cape_11	32	0	heal=15;int=7;mp5=2;spi=6	0		0	0		1	
-213310	Hyperconductive Shimmershirt	3	45	40	5	4	1	inv_chest_cloth_42	65	0	heal=29;mp5=6;spi=10;sta=6	0		0	0		1	
-213311	Hyperconductive Robe	3	45	40	5	4	1	inv_chest_cloth_42	145	0	int=11;sp=18;sta=10	0		0	0		1	
-213321	Volatile Concoction Belt	3	45	40	6	4	1	inv_belt_07	77	0	hit=1;sp=12;sta=6	0		0	0		1	
-213328	Hyperconductive Pantaloons	3	45	40	7	4	1	inv_pants_13	57	0	heal=22;int=10;mp5=6;spi=8	0		0	0		1	
-213329	Hyperconductive Skirt	3	45	40	7	4	1	inv_pants_13	57	0	int=12;sp=13;spi=11;sta=9	0		0	0		1	
-213336	Hyperconductive Walkers	3	45	40	8	4	1	inv_boots_05	45	0	int=12;sp=9;sta=9	0		0	0		1	
-213337	Hyperconductive Sandals	3	45	40	8	4	1	inv_boots_05	45	0	heal=15;int=8;spi=12;sta=5	0		0	0		1	
-213343	Justice Badge	4	45	40	2	4	0	inv_jewelry_amulet_03	0	0	defense=4;dodge=1;sta=7;str=6	0		0	0	1	1	
-213344	Gnomeregan Peace Officer's Torque	4	45	40	2	4	0	inv_gizmo_04	0	0	ap=16;crit=1;sta=6	0		0	0	1	1	
-213345	Piston Pendant	4	45	40	2	4	0	inv_misc_enggizmos_essencedistiller	0	0	int=8;sp=9;spi=9;sta=4	0		0	0	1	1	
-213346	Pendant of Homecoming	4	45	40	2	4	0	inv_jewelry_amulet_02	0	0	heal=13;int=8;mp5=3;spi=10	0		0	0	1	1	
-213347	Miniaturized Combustion Chamber	3	45	40	12	4	0	inv_misc_enggizmos_04	0	0	int=6;resFire=10;sp=12	0		0	0	1	1	
-213348	Gyromatic Experiment 420b	3	45	40	12	4	0	inv_gizmo_05	0	0	ap=18;resFrost=10	0		0	0	1	1	
-213349	Gniodine Pill Bottle	3	45	40	12	4	0	inv_valentinecolognebottle	0	0	mp5=4;resNature=10;spi=7	0		0	0	1	1	
-213350	Wirdal's Hardened Core	3	45	40	12	4	0	inv_gizmo_khoriumpowercore	0	0	dodge=1;resArcane=5;resNature=5;sta=7	0		0	0	1	1	
-213352	Gear-Mender's Grace	3	45	40	21	2	4	inv_gizmo_02	0	30.4	heal=20;int=4;spi=3	0		0	0		1	
-213353	Defibrillating Staff	4	45	40	17	2	10	inv_staff_07	0	44.24	heal=35;int=14;spArcane=26;spi=15;sta=11	0		0	0		1	
-213354	Staff of the Evil Genius	3	45	40	17	2	10	inv_staff_14	0	30.45	hit=1;int=4;sp=20;sta=4	0		0	0		1	
-213410	Glimmering Gizmoblade	4	45	40	21	2	15	inv_weapon_shortblade_06	66	30.42	int=4;sp=19;sta=7	0		0	0		1	
-213411	Izzleflick's Inextinguishable Igniter	3	45	40	26	2	19	inv_torch_lit	0	42.25	int=8	0		0	0		1	
-213414	Mech-Mender's Sash	3	45	40	6	4	1	inv_belt_04	37	0	heal=24;int=6;mp5=4;spi=6	0		0	0		1	
-213415	Tinker's Wrist Wraps	3	45	40	9	4	1	inv_bracer_10	28	0	heal=18;int=6;spi=7	0		0	0		1	
-213419	9-60 Repair Manual	3	45	40	23	4	0	inv_misc_book_09	0	0	heal=22;int=6;sta=6	0		0	0		1	
-213542	The Necro-Gnomicon	3	45	40	23	4	0	inv_misc_book_05	0	0	int=2;resShadow=3;sp=14;spi=2	0		0	0		1	
-213559	Mechanostrider Gear Shifter	3	45	40	26	2	19	inv_gizmo_pipe_02	0	42.33	sp=9	0		0	0		1	
-213560	Mechanostrider Muffler	3	45	40	13	2	4	inv_gizmo_pipe_04	0	30.42	ap=16;sta=7	0		0	0		1	
-215111	Gneuro-Linked Arcano-Filament Monocle	4	45	40	1	4	1	inv_misc_enggizmos_27	58	0	int=11;mp5=4;sp=22;sta=10	0		0	0		1	
-215115	Hyperconductive Goldwrap	4	45	40	6	4	1	inv_belt_32	40	0	crit=1;hit=1;sta=9	0		0	0		1	
 215365	Invoker's Mantle	2	30	25	3	4	1	inv_shoulder_02	32	0	int=5;sp=7	0		0	0		2	
 215366	Invoker's Cord	2	30	25	6	4	1	inv_belt_03	24	0	int=5;sp=7	0		0	0		2	
 215375	Tactician's Staff	1	31	26	17	2	10	inv_staff_38	0	19.71		0		0	0		0	
 215376	Crusader's Mace	1	31	26	21	2	4	inv_mace_03	0	15		0		0	0		0	
-215377	Irradiated Robe	3	45	40	5	4	1	inv_chest_cloth_42	65	0	crit=1;int=7;resNature=7;sp=23;spi=8;sta=-10;str=-5	0		0	0		1	
-215378	Irradiated Boots	3	45	40	8	4	1	inv_boots_05	45	0	agi=-5;hit=1;int=12;sp=11;spi=11;sta=-10	0		0	0		1	
-215379	Irradiated Trousers	3	45	40	7	4	1	inv_pants_13	57	0	agi=-5;int=10;mp5=4;resNature=10;sp=16;spi=13;sta=-10	0		0	0		1	
-215461	Domesticated Attack Chicken	3	40	40	12	4	0	spell_magic_polymorphchicken	0	0		0		0	0		1	
-216510	Blood Resonance Circle	4	40	40	11	4	0	inv_jewelry_ring_09	0	0	int=6;spArcane=16;sta=9	0		128	0		1	
-216511	Emberblood Seal	4	40	40	11	4	0	inv_jewelry_ring_25	0	0	int=6;spFire=16;sta=9	0		128	0		1	
-216512	Loop of Chilled Veins	4	40	40	11	4	0	inv_jewelry_ring_29	0	0	int=6;spFrost=16;sta=9	0		128	0		1	
-216517	Sanguine Sanctuary	4	40	40	12	4	0	spell_holy_powerwordshield	0	0		0		16	0		1	
-216518	Blood Covenant Seal	4	40	40	11	4	0	inv_jewelry_ring_08	0	0	heal=13;int=7;spi=7;sta=8	0		16	0		1	
-216519	Sanguine Shadow Band	4	40	40	11	4	0	inv_jewelry_ring_31	0	0	int=6;mp5=3;spShadow=14;sta=5	0		16	0		1	
-216608	Radiant Ray Reflectors	4	1	1	1	4	1	inv_helmet_47	1	0		0		0	0		1	
-216620	Bloodrot Cloak	3	45	40	16	4	1	inv_misc_cape_22	32	0	int=6;sp=11;sta=7	0		0	0		1	
-216621	Blooddrenched Drape	3	45	40	16	4	1	inv_misc_cape_08	32	0	crit=1	0		0	0		1	
-216622	Coagulated Cloak	3	45	40	16	4	1	inv_misc_cape_14	82	0	sta=12	0		0	0		1	
-216623	Cape of Hemostasis	3	45	40	16	4	1	inv_misc_cape_18	32	0	heal=18;int=6;sta=7	0		0	0		1	
-216662	Brilliant Gold Ring	2	40	0	11	4	0	inv_jewelry_ring_03	0	0	spi=6;sta=6	0		0	0	1	1	
-216673	Talvash's Brilliant Gold Ring	3	45	0	11	4	0	inv_jewelry_ring_03	70	0	sta=16	0		0	0	1	1	
-216674	Nogg's Brilliant Gold Ring	3	45	0	11	4	0	inv_jewelry_ring_03	70	0	sta=16	0		0	0	1	1	
-216675	Pristine Civinad Robes	3	45	0	20	4	1	inv_chest_cloth_18	65	0	spi=22;sta=9	0		0	0		1	
-216680	Shilly Mittens	3	40	0	10	4	1	inv_gauntlets_27	41	0	int=12;spi=11	0		0	0		1	
-216941	Ariden's Sigil	2	35	0	12	4	0	inv_jewelry_trinket_04	0	0		0		0	0	1	1	
-217005	Repairman's Cape	3	40	0	16	4	1	inv_misc_cape_06	29	0	int=3;spi=12	0		0	0		1	
-217245	Crimson Silk Robe	2	41	36	20	4	1	inv_chest_cloth_25	54	0	int=15;spFire=9	0		0	0		2	
-217246	Black Mageweave Vest	2	41	36	5	4	1	inv_chest_leather_03	54	0	sp=13;spi=12	0		0	0		2	
-217247	Black Mageweave Leggings	2	41	36	7	4	1	inv_pants_09	47	0	sp=9;spi=14	0		0	0		2	
-217248	Earthen Silk Belt	2	39	34	6	4	1	inv_belt_24	29	0	heal=18;spi=8	0		0	0		2	
-217250	Crimson Silk Shoulders	2	38	33	3	4	1	inv_shoulder_23	38	0	int=8;sp=8	0		0	0		2	
-217252	Long Silken Cloak	2	37	32	16	4	1	inv_misc_cape_02	24	0	int=5;sp=7	0		0	0		2	
-217253	Boots of the Enchanter	2	35	30	8	4	1	inv_boots_05	32	0	sp=6;spi=8	0		0	0		2	
-217255	Crimson Silk Belt	2	35	30	6	4	1	inv_belt_04	26	0	int=7;sp=7	0		0	0		2	
-217256	Earthen Vest	2	34	29	5	4	1	inv_shirt_04	46	0	heal=13;spi=10	0		0	0		2	
-217257	Enchanter's Cowl	2	33	28	1	4	1	inv_helmet_31	37	0	int=10;sp=7	0		0	0		2	
 217287	Greater Mystic Wand	2	35	30	26	2	19	inv_wand_07	0	29	sp=5	0		0	0		2	
-217288	Robes of the Lich	3	44	39	20	4	1	inv_chest_cloth_17	64	0	sp=12;sta=20	0		0	0		1	
-217290	Glowing Eye of Mordresh	3	41	36	2	4	0	inv_misc_orb_03	0	0	heal=11;spi=11	0		0	0		1	
-217291	Mordresh's Lifeless Skull	3	41	36	23	4	0	inv_misc_bone_elfskull_01	0	0	sp=6;spi=11	0		0	0		1	
-217292	Deathmage Sash	3	41	36	6	4	1	inv_belt_24	33	0	int=15;sp=7	0		0	0		1	
-217293	Silky Spider Cape	3	42	35	16	4	1	inv_misc_cape_17	30	0	sp=6;sta=11	0		0	0		1	
-217294	Embalmed Shroud	3	35	30	1	4	1	inv_helmet_28	42	0	int=11;sp=8;spi=12	0		0	0		1	
-217295	Necrotic Wand	3	35	30	26	2	19	inv_wand_04	0	33.21	sp=7	0		0	0		1	
-217296	Ghostshard Talisman	3	35	30	2	4	0	inv_jewelry_necklace_06	0	0	sp=5;sta=9	0		0	0		1	
-217297	Robe of Doan	2	38	33	20	4	1	inv_chest_cloth_25	50	0	sp=5;sta=13	0		0	0		1	
-217298	Mantle of Doan	2	38	33	3	4	1	inv_shoulder_05	38	0	int=8;spFire=10	0		0	0		1	
-217299	Illusionary Rod	3	39	34	17	2	10	inv_wand_04	0	34.71	int=15;sp=12;sta=7	0		0	0		1	
-217300	Whitemane's Chapeau	3	44	39	1	4	1	inv_helmet_12	52	0	int=14;sp=11;spi=14	0		0	0		1	
-217301	Triune Amulet	3	44	39	2	4	0	inv_jewelry_amulet_01	0	0	heal=15;int=7;sta=7	0		0	0		1	
-217303	Stoneweaver Leggings	3	40	35	7	4	1	inv_pants_01	51	0	heal=18;int=15;sta=9	0		0	0		1	
-217304	Revelosh's Gloves	3	40	35	10	4	1	inv_gauntlets_17	36	0	int=12;sta=11	0		0	0		1	
 217497	Narpas Sword	3	42	34	21	2	7	inv_weapon_shortblade_79	0	19	hit=1;sp=48	0		128	0		1	
-217704	Ironshod Bludgeon	3	42	37	17	2	10	inv_staff_28	0	37.2	apFeral=36;sta=20;str=8	0		0	0		1	
 217727	Ward of the Dead	1	1	0	12	4	0	spell_totem_wardofdraining	0	0		0		0	0	1	1	
-219022	Hauler's Ring	2	20	0	11	4	0	inv_jewelry_ring_03	0	0	sta=2;str=2	0		0	0	1	0	
-219023	Clerk's Ring	2	20	0	11	4	0	inv_jewelry_ring_03	0	0	sp=2;sta=2	0		0	0	1	0	
-219024	Messenger's Ring	2	20	0	11	4	0	inv_jewelry_ring_03	0	0	agi=2;sta=2	0		0	0	1	0	
-219135	Curiosity Pendant	3	20	0	2	4	0	inv_jewelry_necklace_44	0	0	sp=4;sta=4	0		0	0		0	
-219136	Tenacity Pendant	3	20	0	2	4	0	inv_jewelry_necklace_44	0	0	sta=4;str=4	0		0	0		0	
-219137	Initiative Pendant	3	20	0	2	4	0	inv_jewelry_necklace_44	0	0	agi=4;sta=4	0		0	0		0	
-219326	Seed of Renewal	3	50	0	12	4	0	ability_druid_giftoftheearthmother	0	0		0		0	0		1	
 219343	Filcher's Cowl	3	50	0	16	4	1	inv_misc_cape_02	36	0	agi=11;spi=7	0		0	0		1	
 219345	Infernal Lasso	3	50	50	12	4	0	spell_nature_slow	0	0	sp=8	0		0	0		1	
-220522	Soulcatcher Crown	3	55	50	1	4	1	inv_crown_01	64	0	heal=44;int=15;spi=12	0		0	0		1	
-220523	Visage of the Exiled	4	53	50	1	4	1	inv_banner_01	67	0	hit=1;int=15;sp=21;sta=14	0		0	0		1	
-220534	Eternal Embrace of the Wind Serpent	4	55	50	5	4	1	inv_chest_cloth_42	86	0	heal=44;int=17;resNature=12;spi=15;sta=8	0		0	0		1	
-220535	Garments of the Atal'ai Prophet	4	53	50	5	4	1	inv_chest_cloth_38	83	0	int=14;sp=35;sta=10	0		0	0		1	
-220536	Atal'ai Medicine Man's Wrists	3	55	50	9	4	1	inv_bracer_11	34	0	heal=22;int=6;spi=7;sta=7	0		0	0		1	
-220538	Cursed Slimescale Bracers	4	55	50	9	4	1	inv_jewelry_ring_03	148	0	hit=1;sp=11;sta=8	0		0	0		1	
-220547	Gloves of the Fallen Atal'ai Prophet	3	55	50	10	4	1	inv_gauntlets_17	49	0	heal=24;int=12;spi=13	0		0	0		1	
-220548	Atal'ai Hexxer's Gloves	3	55	50	10	4	1	inv_bracer_18	49	0	int=8;sp=25	0		0	0		1	
-220549	Dawnspire Strap	3	55	50	6	4	1	inv_belt_11	44	0	heal=26;int=9;spi=9;sta=10	0		0	0		1	
-220556	Kilt of the Fallen Atal'ai Prophet	3	55	50	7	4	1	inv_pants_11	69	0	int=18;sp=29;sta=9	0		0	0		1	
-220565	Ethereal Mistwalker Boots	3	55	50	8	4	1	inv_boots_05	54	0	heal=18;int=13;spi=10;sta=9	0		0	0		1	
-220577	Might of the Blood Loa	4	55	50	13	2	4	inv_mace_11	0	40.21	sta=15;str=6	0		0	0		1	
-220578	Fist of the Forsaken	4	53	50	13	2	4	inv_hammer_11	0	39.29		0		0	0		1	
-220579	Witch Doctor's Stick of Mojo	4	55	50	21	2	4	inv_waepon_bow_zulgrub_d_01	0	40.19	heal=35;int=8;mp5=4;sta=9	0		0	0	1	1	
-220580	Madness of the Avatar	4	55	50	21	2	4	inv_mace_04	0	40.21	hit=1;int=12;sp=20	0		0	0		1	
-220581	Snake Clobberer	4	53	50	13	2	4	inv_wand_10	0	39.07	agi=8;sta=6;str=10	0		0	0		1	
-220582	Dragon's Cry	4	55	50	13	2	7	inv_sword_38	0	40.19	ap=16;sta=8	0		0	0	1	1	
-220583	Vile Blade of the Wretched	3	55	50	13	2	7	inv_sword_38	0	36.67	hit=1	0		0	0		1	
-220584	Flamebreath Blade	3	55	50	13	2	7	inv_sword_09	0	36.36		0		0	0		1	
-220585	Degraded Dire Nail	4	55	50	13	2	15	inv_weapon_shortblade_30	0	40.29	agi=11;str=11	0		0	0		1	
-220586	Hubris, the Bandit Brander	4	58	50	21	2	15	inv_spear_01	0	42.22	int=12;sp=29;sta=12	0		0	0		1	
-220587	Sacrificial Dream Dagger	4	53	50	21	2	15	inv_weapon_shortblade_22	0	39.06	heal=31;int=4	0		0	0		1	
-220590	Spire of Hakkari Worship	4	55	50	17	2	10	inv_waepon_bow_zulgrub_d_01	0	52.24	crit=2;int=13;sp=26;spShadow=17;sta=13	0		0	0		1	
-220591	Mijan's Restorative Rod	4	53	50	17	2	10	inv_staff_goldfeathered_01	0	50.6	heal=62;int=11;spi=11;sta=11	0		0	0		1	
-220595	Nightmare Focus Staff	4	58	50	17	2	10	inv_staff_07	0	54.76	int=26;sp=36;sta=30	0		0	0		1	
-220596	Ancient Divining Rod	4	58	50	17	2	10	inv_staff_goldfeathered_01	0	55	agi=19;apFeral=114;sta=13;str=31	0		0	0		1	
-220597	Drakestone of the Dream Harbinger	4	53	50	23	4	0	inv_misc_orb_03	0	0	sp=14;spFrost=23;spNature=23	0		0	0		1	
-220598	Drakestone of the Nightmare Harbinger	4	53	50	23	4	0	inv_misc_orb_03	0	0	sp=14;spArcane=23;spShadow=23	0		0	0		1	
-220599	Drakestone of the Blood Prophet	4	53	50	23	4	0	inv_misc_orb_03	0	0	heal=35;sp=14;spFire=23	0		0	0		1	
-220603	Rod of Irreversible Corrosion	4	53	50	26	2	19	inv_wand_04	0	56.92	heal=13;int=6;resNature=5;spi=8	0		0	0		1	
-220604	Nightmare Trophy	4	53	50	26	2	19	inv_wand_22	0	57.78	int=5;sp=12	0		0	0		1	
-220608	Featherskin Drape	4	53	50	16	4	1	inv_misc_cape_05	41	0	heal=35;int=10;spi=7	0		0	0		1	
-220609	Drape of Nightfall	3	55	50	16	4	1	inv_misc_cape_05	39	0	agi=8;sta=14	0		0	0		1	
-220611	Hukku's Hex Cape	3	55	50	16	4	1	inv_misc_cape_02	39	0	int=10;sp=15	0		0	0		1	
-220615	Panther Fur Cloak	3	55	50	16	4	1	inv_misc_cape_21	39	0	agi=15;str=6	0		0	0		1	
-220621	Nightmare Resonance Crystal	4	55	50	12	4	0	inv_misc_gem_emeraldrough_02	0	0		0		0	0		1	2641:7
-220622	Perfectly Preserved Dragon's Eye	4	53	50	2	4	0	inv_jewelry_amulet_04	0	0	heal=24;int=10;spi=8;sta=8	0		0	0		1	
-220623	Jin'do's Lost Locket	4	53	50	2	4	0	inv_jewelry_necklace_25	0	0	int=8;sp=19;sta=9	0		0	0		1	
-220624	Bloodstained Charm of Valor	3	55	50	2	4	0	inv_jewelry_necklace_23	0	0	ap=18;crit=1	0		0	0		1	
-220625	Resilience of the Exiled	3	55	50	2	4	0	inv_jewelry_necklace_24	90	0	hit=1;sta=8	0		0	0		1	
-220626	Drakeclaw Band of the Berserker	4	55	50	11	4	0	inv_jewelry_ring_04	0	0	ap=20;hit=1;sta=13	0		0	0		1	
-220627	Drakeclaw Band of the Stalker	4	55	50	11	4	0	inv_jewelry_ring_04	0	0	hit=1;rap=31;sta=10	0		0	0		1	
-220628	Drakeclaw Band of the Harbinger	4	55	50	11	4	0	inv_jewelry_ring_04	0	0	int=11;sp=15;spi=12	0		0	0		1	
-220629	Drakeclaw Band of the Blood Prophet	4	55	50	11	4	0	inv_jewelry_ring_04	0	0	heal=20;int=12;mp5=5	0		0	0		1	
-220630	Drakeclaw Band of the Juggernaut	4	55	50	11	4	0	inv_jewelry_ring_04	60	0	hit=1;sta=16	0		0	0		1	
-220632	Atal'ai Blood Ritual Medallion	4	55	50	12	4	0	inv_jewelry_necklace_26	0	0		0		0	0	1	1	
-220633	Atal'ai Blood Ritual Badge	4	55	50	12	4	0	inv_jewelry_necklace_26	0	0		0		0	0	1	1	
-220634	Atal'ai Blood Ritual Charm	4	55	50	12	4	0	inv_jewelry_necklace_26	0	0		0		0	0	1	1	
-220649	Merithra's Inheritence	3	50	50	20	4	1	inv_chest_cloth_01	72	0	resArcane=5;resNature=5;sta=20	0		0	0	1	1	2641:6
-220674	Debased Stealthblade	4	53	50	13	2	15	inv_sword_41	0	38.46		0		0	0		1	
-220679	Malevolent Prophet's Leggings	3	55	50	7	4	1	inv_pants_06	69	0	int=19;sp=23;sta=6	0		400	0		1	
-220680	Malevolent Prophet's Vest	3	55	50	5	4	1	inv_chest_cloth_07	78	0	crit=1;int=11;sp=23;sta=7	0		400	0		1	
-220681	Malevolent Prophet's Sandals	3	55	50	8	4	1	inv_boots_05	54	0	crit=1;int=6;sp=15;sta=6	0		400	0		1	
-220683	Benevolent Prophet's Vest	3	55	50	5	4	1	inv_chest_cloth_08	78	0	heal=37;int=11;mp5=6;sta=6	0		16	0		1	
-220684	Benevolent Prophet's Leggings	3	55	50	7	4	1	inv_pants_06	69	0	heal=40;int=12;spi=11;sta=11	0		16	0		1	
-220685	Benevolent Prophet's Sandals	3	55	50	8	4	1	inv_boots_09	54	0	heal=18;int=10;spi=11;sta=10	0		16	0		1	
-220689	Void-Powered Vambraces	3	50	50	9	4	1	inv_misc_enggizmos_20	31	0	agi=6;int=6;spi=6;sta=6;str=6	0		0	0		1	
-220749	Mantle of Insanity	4	55	50	3	4	1	inv_shoulder_02	64	0	heal=20;int=13;spi=12;sta=12	0		0	0		1	
-220750	Fractured Mind Pauldrons	4	55	50	3	4	1	inv_shoulder_02	64	0	int=14;sp=18;spi=12	0		0	0		1	
-220751	Shoulderpads of the Deranged	4	55	50	3	4	1	inv_shoulder_02	104	0	int=13;sp=13;sta=15	0		0	0		1	
-220912	Geode Hammer	1	46	41	21	2	4	inv_hammer_17	0	25.79		0		0	0		1	
-220964	Decharged Void-Powered Vambraces	3	50	50	9	4	1	inv_misc_enggizmos_20	31	0		0		0	0		4	
-221025	Void-Powered Invoker's Vambraces	4	55	50	9	4	1	inv_misc_enggizmos_20	37	0	int=8;sp=21;sta=7	0		0	0		1	
-221193	Emerald Ring	3	50	45	11	4	0	inv_jewelry_ring_37	0	0	ap=14;resArcane=5;sta=12	0		0	0	1	1	2641:5
-221307	Darkmoon Card: Decay	4	55	50	12	4	0	inv_inscription_tarotundeath	0	0		0		0	0	1	1	
-221308	Darkmoon Card: Overgrowth	4	55	50	12	4	0	inv_inscription_tarotillusion	0	0		0		0	0	1	1	
-221309	Darkmoon Card: Sandstorm	4	55	50	12	4	0	inv_misc_ticket_tarot_crusade	0	0		0		0	0	1	1	
-221310	Darkmoon Card: Torment	4	55	50	12	4	0	inv_inscription_tarotdeath	0	0		0		0	0	1	1	
 221344	Personal Spellbook	3	55	0	23	4	0	inv_misc_book_11	0	0	int=9;sp=16	0		128	0	1	1	
-221369	Nightmare Siphon	3	25	20	12	4	0	spell_shadow_lifedrain	0	0		0		0	0		1	2641:4
-221374	Anguish of the Dream	3	35	30	12	4	0	inv_misc_gem_pearl_06	0	0		0		0	0		1	2641:4
-221425	Emerald Enchanted Circlet	3	50	50	1	4	1	inv_crown_01	58	0	crit=1;int=9;sp=12;sta=10	0		400	0		1	2641:5
-221426	Emerald Enchanted Boots	3	50	50	8	4	1	inv_boots_09	49	0	hit=1;int=9;sp=8;sta=10	0		400	0		1	2641:4
-221427	Emerald Enchanted Gloves	3	50	50	10	4	1	inv_gauntlets_21	45	0	int=9;sp=13;spi=8;sta=9	0		400	0		1	2641:4
-221429	Emerald Enchanted Pants	3	50	50	7	4	1	inv_pants_10	63	0	crit=1;int=11;sp=13;sta=11	0		400	0		1	2641:5
-221430	Emerald Enchanted Robes	3	50	50	20	4	1	inv_chest_cloth_39	72	0	crit=1;int=11;sp=13;sta=11	0		400	0		1	2641:5
-221431	Emerald Enchanted Shoulders	3	50	50	3	4	1	inv_shoulder_06	54	0	crit=1;int=6;sp=7;sta=8	0		400	0		1	2641:4
-221432	Emerald Woven Mantle	3	50	50	3	4	1	inv_shoulder_06	54	0	heal=18;int=8;spi=8;sta=11	0		144	0		1	2641:4
-221434	Emerald Woven Robes	3	50	50	20	4	1	inv_chest_cloth_39	72	0	heal=31;int=11;spi=11;sta=11	0		144	0		1	2641:5
-221435	Emerald Woven Pants	3	50	50	7	4	1	inv_pants_10	63	0	heal=24;int=12;spi=10;sta=12	0		144	0		1	2641:5
-221436	Emerald Woven Gloves	3	50	50	10	4	1	inv_gauntlets_21	45	0	heal=24;int=8;spi=9;sta=9	0		144	0		1	2641:4
-221437	Emerald Woven Circlet	3	50	50	1	4	1	inv_crown_01	58	0	heal=31;int=9;spi=10;sta=10	0		144	0		1	2641:5
-221438	Emerald Woven Boots	3	50	50	8	4	1	inv_boots_09	49	0	heal=15;int=9;spi=10;sta=10	0		144	0		1	2641:4
-221440	Roar of the Dream	4	50	50	11	4	0	inv_jewelry_ring_37	0	0	sta=14	0		0	0	1	1	2641:7
-221442	Roar of the Guardian	4	50	50	12	4	0	spell_nature_spiritarmor	0	0	sta=10	0		0	0	1	1	2641:7
-221443	Roar of the Grove	4	50	50	12	4	0	spell_nature_wispsplodegreen	0	0	sta=10	0		0	0	1	1	2641:7
-221452	Bloodfocused Arcane Band	4	50	50	11	4	0	inv_jewelry_ring_09	0	0	int=4;spArcane=17;sta=14	0		128	0		1	
-221453	Band of Boiling Blood	4	50	50	11	4	0	inv_jewelry_ring_25	0	0	int=4;spFire=17;sta=14	0		128	0		1	
-221454	Glacial Blood Band	4	50	50	11	4	0	inv_jewelry_ring_29	0	0	int=4;spFrost=17;sta=14	0		128	0		1	
-221458	Shadowy Band of Victory	4	50	50	11	4	0	inv_jewelry_ring_31	0	0	int=4;spShadow=17;sta=14	0		16	0		1	
-221459	Seal of the Sacrificed	4	50	50	11	4	0	inv_jewelry_ring_08	0	0	heal=20;int=6;sta=14	0		16	0		1	
-221474	Chained Essence of Eranikus	3	55	50	12	4	0	inv_stone_03	0	0	resNature=10;sta=10	0		0	0		1	
-223164	Curiosity Cowl	3	20	0	1	4	1	inv_helmet_32	30	0	sp=8;sta=7	0		0	0		0	
-223186	Supply Expediter	3	1	1	12	4	0	ability_hunter_pathfinding	0	0		0		0	0		0	
-223192	Cord of the Untamed	3	55	50	6	4	1	inv_belt_08	44	0	hit=1;int=9;sp=14;sta=10	0		0	0		1	
-223193	Crown of the Dreamweaver	3	55	0	1	4	1	inv_jewelcrafting_gem_01	64	0	heal=55;spi=13	0		0	0		1	
-223194	Band of the Wilds	3	55	50	11	4	0	inv_jewelry_ring_08	0	0	ap=20;hit=1;sta=6	0		0	0	1	1	
-223195	Breadth of the Beast	3	55	50	12	4	0	inv_jewelcrafting_jadeowl	0	0	crit=1;hit=1	0		0	0	1	1	
-223198	Modas Karkun	4	55	50	21	2	15	inv_sword_02	96	40.38	spFire=23;sta=12	0		0	0	1	1	
-223216	Rakkan Archim	3	30	20	3	4	1	inv_shoulder_09	35	0	int=6;sp=9;sta=5	0		0	0		1	
-223217	Rakkas Lek	3	40	30	1	4	1	inv_helmet_50	47	0	int=11;sp=16;sta=10	0		0	0		1	
-223218	Tor Kieldaz	3	50	40	12	4	0	inv_jewelry_amulet_07	0	0	resFire=10;resShadow=10;sp=12	0		0	0		1	
-223219	Fel Cloth Wristbands	3	20	10	9	4	1	inv_bracer_12	16	0		6	12718,12719,12720,12729,12730,12731,12734,12735,12740,12741,12742,12743,12744,12745,12746,12747,12748,12749,12750,12756,12757,12758,12759,12761	0	0		2	
-223237	Fel Cloth Shoulder Pads	3	30	20	3	4	1	inv_shoulder_09	35	0		12	12718,12719,12720,12729,12730,12731,12734,12735,12740,12741,12742,12743,12744,12745,12746,12747,12748,12749,12750,12756,12757,12758,12759,12761	0	0		2	
-223240	Fel Cloth Hood	3	40	30	1	4	1	inv_helmet_30	47	0		23	12718,12719,12720,12729,12730,12731,12734,12735,12740,12741,12742,12743,12744,12745,12746,12747,12748,12749,12750,12756,12757,12758,12759,12761	0	0		2	
-223248	Fel Cloth Legs	3	50	40	7	4	1	inv_pants_cloth_06	63	0		28	12718,12719,12720,12729,12730,12731,12734,12735,12740,12741,12742,12743,12744,12745,12746,12747,12748,12749,12750,12756,12757,12758,12759,12761	0	0		2	
-223256	Fel Cloth Robes	3	55	50	20	4	1	inv_chest_cloth_24	78	0		31	12718,12719,12720,12729,12730,12731,12734,12735,12740,12741,12742,12743,12744,12745,12746,12747,12748,12749,12750,12756,12757,12758,12759,12761	0	0		2	
-223324	Rainstrider Leggings	3	55	0	7	4	1	inv_pants_08	69	0	heal=35;spi=22;sta=7	0		0	0		1	
-223326	Hakkari Shroud	3	55	0	1	4	1	inv_helmet_38	64	0	spFire=29;sta=21	0		0	0		1	
-223327	Mark of Hakkar	3	55	0	11	4	0	inv_jewelry_ring_05	0	0	sta=13;str=10	0		0	0		1	
-223328	Gemburst Circlet	3	55	0	1	4	1	inv_crown_01	64	0	int=17;sp=22;sta=9	0		0	0		1	
-223329	Lifeforce Dirk	3	55	0	13	2	15	inv_sword_21	0	36.56	agi=4;sta=11	0		0	0		1	
-223518	Charstone Dirk	3	57	49	21	2	15	inv_weapon_shortblade_14	0	35.94	int=11;mp5=2;sp=11	0		0	0		1	
-223519	Eye of Theradras	3	54	49	1	4	1	inv_crown_01	63	0	int=20;sp=13;sta=13	0		0	0		1	
-223520	Inventor's Focal Sword	3	56	48	13	2	7	inv_sword_14	0	35.36	crit=1;sp=11	0		0	0		1	
-223521	Rotgrip Mantle	3	53	48	3	4	1	inv_shoulder_05	57	0	int=17;sp=13	0		0	0		1	
-223523	Cloud Stone	3	53	48	23	4	0	inv_misc_orb_01	0	0	heal=18;int=9;resArcane=10;spi=9	0		0	0		1	
-223524	Fist of Stone	3	56	48	21	2	4	inv_hammer_17	0	35.33	heal=18	0		0	0		1	
-223527	Gahz'rilla Fang	3	47	42	13	2	15	inv_misc_monsterfang_01	0	31.67		0		0	0	1	1	
-223532	Lifeblood Amulet	3	48	43	2	4	0	inv_jewelry_necklace_02	50	0	sta=13	0		0	0		1	
-223533	Desertwalker Cane	3	47	42	23	4	0	inv_staff_21	0	0	int=4;sp=15;sta=5	0		0	0		1	
-223534	Jumanza Grips	3	47	42	10	4	1	inv_gauntlets_09	42	0	int=11;sp=12;sta=10	0		0	0	1	1	
-223535	Grimlok's Tribal Vestments	3	47	42	5	4	1	inv_shirt_05	68	0	int=5;sp=19;spi=10;sta=10	0		0	0		1	
-223538	Kindling Stave	3	53	48	17	2	10	inv_staff_18	0	45.86	crit=1;int=12;resFire=10;sp=15;sta=10	0		0	0		1	
-223539	Enthralled Sphere	3	53	48	23	4	0	inv_misc_orb_03	0	0	hit=1;int=9;sp=8	0		0	0		1	
-223541	Gemshard Heart	3	54	49	2	4	0	inv_stone_01	0	0	heal=13;int=10;sta=10	0		0	0		1	
-223543	Vinerot Sandals	3	51	46	8	4	1	inv_boots_05	50	0	int=12;resNature=12;sp=14	0		0	0		1	
-223964	Blade of Eternal Darkness	4	54	49	21	2	15	inv_sword_09	0	39.33	sp=20	0		0	0	1	1	
-223983	Arbiter's Blade	3	56	48	21	2	7	inv_sword_23	0	37.08	int=7;sp=11;sta=11	0		0	0		1	
-223984	Silkweb Gloves	3	54	49	10	4	1	inv_gauntlets_12	48	0	heal=18;int=13;sta=14	0		0	0		1	
-223985	Cyclopean Band	3	54	49	11	4	0	inv_jewelry_ring_08	0	0	int=7;sp=12;spi=4;sta=8	0		0	0	1	1	
-223986	Graverot Cape	3	55	50	16	4	1	inv_misc_cape_19	39	0	heal=13;sta=15	0		0	0		1	
-224004	Emerald Ring	2	25	20	11	4	0	inv_jewelry_ring_37	0	0	ap=6;sta=4	0		0	0	1	1	2641:4
-224005	Emerald Ring	2	25	20	11	4	0	inv_jewelry_ring_37	0	0	sp=4;sta=4	0		0	0	1	1	2641:4
-224006	Emerald Ring	3	50	45	11	4	0	inv_jewelry_ring_37	0	0	resArcane=5;sp=8;sta=12	0		0	0	1	1	2641:5
-226500	Chipped Drakefire Amulet	7	63	50	2	4	0	inv_jewelry_talisman_11	0	0	resFire=15;sta=10	0		0	0	1	0	
 226546	Desert Sonar	1	1	1	12	4	0	inv_misc_enggizmos_20	0	0		0		0	0	1	1	
-226555	Arcanist Belt	4	66	60	6	4	1	inv_belt_30	57	0	hit=1;int=16;resFire=7;sp=20;sta=14	0		128	0		1	
-226556	Arcanist Gloves	4	66	60	10	4	1	inv_gauntlets_14	63	0	hit=1;int=10;resFire=7;sp=29;sta=8	0		128	0		1	
-226557	Arcanist Boots	4	66	60	8	4	1	inv_boots_07	70	0	crit=1;int=14;resFire=5;sp=25;sta=8	0		128	0		1	
-226558	Arcanist Bindings	4	66	60	9	4	1	inv_belt_29	44	0	int=11;resFire=5;sp=21;sta=9	0		128	0		1	
-226559	Arcanist Robes	4	66	60	20	4	1	inv_chest_cloth_03	102	0	crit=1;int=11;resFire=10;sp=40;sta=9	0		128	0		1	
-226560	Arcanist Mantle	4	66	60	3	4	1	inv_shoulder_02	76	0	crit=1;int=15;resFire=7;sp=20;sta=13	0		128	0		1	
-226561	Arcanist Leggings	4	66	60	7	4	1	inv_pants_08	89	0	crit=1;int=18;resFire=10;sp=30;sta=11	0		128	0		1	
-226562	Arcanist Crown	4	66	60	1	4	1	inv_helmet_53	83	0	crit=1;int=18;resFire=10;sp=35;sta=11	0		128	0		1	
-226563	Arcanist Garments	4	66	60	20	4	1	inv_chest_cloth_03	102	0	int=14;resFire=10;sp=40;spi=9;sta=11	0		128	0		1	
-226564	Arcanist Headdress	4	66	60	1	4	1	inv_helmet_53	83	0	int=18;resFire=10;sp=35;spi=11;sta=14	0		128	0		1	
-226565	Arcanist Pants	4	66	60	7	4	1	inv_pants_08	89	0	int=18;resFire=10;sp=30;spi=11;sta=14	0		128	0		1	
-226566	Arcanist Shoulders	4	66	60	3	4	1	inv_shoulder_02	76	0	int=15;resFire=7;sp=20;spi=14;sta=13	0		128	0		1	
-226567	Arcanist Wristwraps	4	66	60	9	4	1	inv_belt_29	44	0	int=8;resFire=5;sp=21;spi=7;sta=8	0		128	0		1	
-226568	Arcanist Sandals	4	66	60	8	4	1	inv_boots_07	70	0	int=16;resFire=5;sp=25;spi=8;sta=15	0		128	0		1	
-226569	Arcanist Handguards	4	66	60	10	4	1	inv_gauntlets_14	63	0	int=10;resFire=7;sp=29;spi=8;sta=10	0		128	0		1	
-226570	Arcanist Cord	4	66	60	6	4	1	inv_belt_30	57	0	int=16;resFire=7;sp=20;spi=10;sta=14	0		128	0		1	
-226571	Boots of Prophecy	4	66	60	8	4	1	inv_boots_07	70	0	heal=37;int=15;resFire=5;spi=13;sta=15	0		16	0		1	
-226572	Gloves of Prophecy	4	66	60	10	4	1	inv_gauntlets_14	63	0	heal=37;int=15;resFire=7;spi=12;sta=14	0		16	0		1	
-226573	Circlet of Prophecy	4	66	60	1	4	1	inv_helmet_34	83	0	heal=66;int=16;resFire=10;spi=14;sta=15	0		16	0		1	
-226574	Pants of Prophecy	4	66	60	7	4	1	inv_pants_08	89	0	heal=66;int=16;resFire=10;spi=14;sta=15	0		16	0		1	
-226575	Robes of Prophecy	4	66	60	20	4	1	inv_chest_cloth_03	102	0	heal=66;int=16;resFire=10;spi=14;sta=15	0		16	0		1	
-226576	Mantle of Prophecy	4	66	60	3	4	1	inv_shoulder_02	76	0	heal=37;int=15;resFire=7;spi=12;sta=14	0		16	0		1	
-226577	Girdle of Prophecy	4	66	60	6	4	1	inv_belt_22	57	0	heal=37;int=15;resFire=7;spi=12;sta=14	0		16	0		1	
-226578	Vambraces of Prophecy	4	66	60	9	4	1	inv_bracer_09	44	0	heal=24;int=13;resFire=5;spi=9;sta=11	0		16	0		1	
-226579	Wristwraps of Prophecy	4	66	60	9	4	1	inv_bracer_09	44	0	int=11;resFire=5;spShadow=27;sta=8	0		16	0		1	
-226580	Belt of Prophecy	4	66	60	6	4	1	inv_belt_22	57	0	crit=1;int=15;resFire=7;spShadow=21;sta=12	0		16	0		1	
-226581	Shoulderpads of Prophecy	4	66	60	3	4	1	inv_shoulder_02	76	0	crit=1;int=17;resFire=7;spShadow=17;sta=15	0		16	0		1	
-226582	Garments of Prophecy	4	66	60	20	4	1	inv_chest_cloth_03	102	0	crit=1;int=16;resFire=10;spShadow=43;sta=15	0		16	0		1	
-226583	Leggings of Prophecy	4	66	60	7	4	1	inv_pants_08	89	0	crit=1;int=19;resFire=10;spShadow=36;sta=17	0		16	0		1	
-226584	Crown of Prophecy	4	66	60	1	4	1	inv_helmet_34	83	0	crit=1;int=19;resFire=10;spShadow=39;sta=13	0		16	0		1	
-226585	Hands of Prophecy	4	66	60	10	4	1	inv_gauntlets_14	63	0	crit=1;int=12;resFire=7;spShadow=21;sta=17	0		16	0		1	
-226586	Sandals of Prophecy	4	66	60	8	4	1	inv_boots_07	70	0	crit=1;int=17;resFire=5;spShadow=21;sta=14	0		16	0		1	
-226724	Magister's Belt	3	58	53	6	4	1	inv_belt_08	46	0	int=12;sp=18;sta=10	0		0	0		2	
-226725	Magister's Bindings	3	57	52	9	4	1	inv_jewelry_ring_23	35	0	int=5;sp=15;sta=4	0		0	0		2	
-226726	Magister's Mantle	3	60	55	3	4	1	inv_shoulder_23	64	0	int=6;mp5=4;sp=18;spi=6;sta=6	0		0	0		1	
-226727	Magister's Leggings	3	61	56	7	4	1	inv_pants_06	76	0	int=17;sp=26;spi=6;sta=11	0		0	0		1	
-226728	Magister's Crown	3	62	57	1	4	1	inv_crown_02	71	0	int=17;sp=30;sta=10	0		0	0		1	
-226729	Magister's Robes	3	63	58	20	4	1	inv_chest_cloth_25	89	0	int=12;sp=33;sta=11	0		0	0		1	
-226730	Magister's Boots	3	59	54	8	4	1	inv_boots_02	58	0	crit=1;int=6;sp=16;sta=6	0		0	0		1	
-226731	Magister's Gloves	3	59	54	10	4	1	inv_gauntlets_17	52	0	int=11;sp=21;sta=7	0		0	0		2	
-226740	Devout Gloves	3	59	54	10	4	1	inv_gauntlets_14	52	0	heal=26;int=9;mp5=2;spi=10;sta=9	0		0	0		2	
-226741	Devout Mantle	3	60	55	3	4	1	inv_shoulder_02	64	0	heal=20;int=11;spi=12;sta=11	0		0	0		1	
-226742	Devout Bracers	3	57	52	9	4	1	inv_belt_31	35	0	heal=20;int=7;spi=8;sta=7	0		0	0		2	
-226743	Devout Sandals	3	59	54	8	4	1	inv_boots_05	58	0	heal=22;int=8;mp5=4;spi=9;sta=8	0		0	0		1	
-226744	Devout Belt	3	58	53	6	4	1	inv_belt_10	46	0	heal=26;int=10;spi=10;sta=11	0		0	0		2	
-226745	Devout Robe	3	63	58	20	4	1	inv_chest_cloth_11	89	0	heal=53;int=12;spi=12;sta=13	0		0	0		1	
-226746	Devout Crown	3	62	57	1	4	1	inv_crown_01	71	0	crit=1;heal=40;int=11;spi=12;sta=11	0		0	0		1	
-226747	Devout Skirt	3	61	56	7	4	1	inv_pants_08	76	0	heal=37;int=13;spi=17;sta=12	0		0	0		1	
-226756	Dreadmist Mantle	3	60	55	3	4	1	inv_misc_bone_taurenskull_01	154	0	int=9;sp=18;sta=10	0		0	0		1	
-226757	Dreadmist Robe	3	63	58	20	4	1	inv_chest_cloth_49	89	0	int=11;sp=30;sta=11	0		0	0		1	
-226758	Dreadmist Wraps	3	59	54	10	4	1	inv_gauntlets_32	52	0	int=9;sp=16;sta=13	0		0	0		2	
-226759	Dreadmist Bracers	3	57	52	9	4	1	inv_bracer_13	35	0	int=5;sp=15;sta=8	0		0	0		2	
-226760	Dreadmist Leggings	3	61	56	7	4	1	inv_pants_08	76	0	int=16;sp=26;sta=16	0		0	0		1	
-226761	Dreadmist Belt	3	58	53	6	4	1	inv_belt_12	126	0	int=9;sp=18;sta=10	0		0	0		2	
-226762	Dreadmist Mask	3	62	57	1	4	1	inv_helmet_29	71	0	int=13;sp=32;sta=12	0		0	0		1	
-226763	Dreadmist Sandals	3	59	54	8	4	1	inv_boots_05	58	0	int=11;sp=20;sta=10	0		0	0		1	
 226929	Sorcerer's Bindings	3	65	0	9	4	1	inv_jewelry_ring_23	40	0	int=10;sp=7;spellPen=4;sta=7	0		128	0		1	
 226930	Sorcerer's Gauntlets	4	55	0	10	4	1	inv_gauntlets_17	54	0	hit=1;int=14;sp=12;spi=9;sta=12	0		128	0		1	
 226931	Sorcerer's Sandals	4	60	0	8	4	1	inv_boots_02	64	0	int=16;sp=21;spi=11;sta=12	0		128	0		1	
@@ -4401,1021 +3756,12 @@ ns.DATA.items = [===[
 226966	Virtuous Gloves	4	55	0	10	4	1	inv_gauntlets_14	54	0	int=15;sp=11;spi=12;sta=14	0		16	0		1	
 226967	Virtuous Boots	4	60	0	8	4	1	inv_boots_05	64	0	int=13;mp5=7;sp=12;spi=12;sta=12	0		16	0		1	
 226968	Virtuous Chest	4	60	0	20	4	1	inv_chest_cloth_11	93	0	int=22;mp5=6;sp=14;spi=12;sta=21	0		16	0		1	
-227279	Loop of the Magister	4	63	58	11	4	0	inv_jewelry_ring_15	0	0	int=11;sp=19;sta=4	0		0	0	1	1	
-227282	Ring of the Dreaded Mist	4	63	58	11	4	0	inv_jewelry_ring_27	0	0	int=4;sp=19;sta=11	0		0	0	1	1	
-227454	Tidal Loop	4	65	0	11	4	0	inv_jewelry_ring_10	0	0	resFire=20;sp=13;sta=8	0		0	0		1	
-227455	Ocean's Breeze	4	65	0	11	4	0	inv_jewelry_ring_28	0	0	ap=22;resFire=20;sta=8	0		0	0		1	
-227808	Rugged Mantle of the Timbermaw	4	65	60	3	4	1	inv_shoulder_19	75	0	crit=1;int=15;sp=27	0		0	0		1	
-227811	Defender of the Timbermaw	4	62	0	12	4	0	inv_misc_horn_01	0	0		0		0	0	1	1	576:7
-227812	Furbolg Medicine Pouch	2	52	0	23	4	0	inv_misc_bag_11	0	0	sta=10	0		0	0		1	
-227816	Argent Elite Boots	4	65	60	8	4	1	inv_boots_cloth_03	179	0	defense=12;hit=1;sta=21	0		0	0		1	
-227823	Fine Flarecore Gloves	4	71	60	10	4	1	inv_gauntlets_26	60	0	int=14;resFire=25;sp=20;sta=10	0		0	0		1	
-227826	Dark Iron Flame Reaver	4	70	60	21	2	7	inv_sword_48	0	51.54	resFire=10;sta=10;str=11	0		0	0		1	
-227830	Fine Flarecore Mantle	4	71	60	3	4	1	inv_shoulder_23	82	0	int=10;resFire=25;sp=22;sta=10	0		0	0		1	
-227831	Fine Flarecore Robe	4	70	60	20	4	1	inv_chest_cloth_18	107	0	resFire=25;sp=41;sta=11	0		0	0		1	
-227832	Tempered Black Amnesty	4	68	60	21	2	15	inv_weapon_shortblade_12	0	49.69	sp=33	0		0	0		1	
-227839	Fine Flarecore Leggings	4	71	60	7	4	1	inv_pants_06	95	0	resFire=20;sp=44;sta=18	0		0	0		1	
-227840	Implacable Blackguard	4	70	60	13	2	7	inv_sword_39	0	51.43	defense=13;sta=9	0		0	0		1	
-227842	Ebon Fist	4	70	60	13	2	4	inv_hammer_19	0	51.48	resFire=7;sta=9	0		0	0		1	
-227850	Sageblade of the Archmagus	4	70	60	21	2	7	inv_sword_51	0	51.67	int=10;sp=41;sta=14	0		0	0		2	
-227854	Mastercrafted Shifting Cloak	4	62	57	16	4	1	inv_misc_cape_20	48	0	agi=17;defense=8;sta=8	0		0	0		2	
-227860	Incandescent Mooncloth Vest	3	63	58	5	4	1	inv_chest_cloth_08	89	0	int=12;sp=33;spi=10	0		0	0		2	
-227861	Incandescent Mooncloth Robe	3	63	58	20	4	1	inv_chest_cloth_04	89	0	heal=62;int=12;spi=10	0		0	0		2	
-227862	Incandescent Mooncloth Boots	4	65	60	8	4	1	inv_boots_05	69	0	heal=44;int=14;spi=14;sta=12	0		0	0		1	
-227863	Incandescent Mooncloth Circlet	3	62	57	1	4	1	inv_misc_bandana_01	71	0	heal=48;int=18;spi=15	0		0	0		2	
-227864	Incandescent Mooncloth Leggings	3	58	53	7	4	1	inv_pants_13	72	0	heal=46;int=14;spi=16	0		0	0		2	
-227869	Brilliant Chromatic Cloak	4	62	57	16	4	1	inv_misc_cape_02	48	0	crit=1;resFire=8;resShadow=8;sp=12;sta=4	0		0	0		2	
-227881	Tranquility	3	63	58	21	2	4	inv_mace_02	0	41.33	sta=4	0		0	0		2	
-227884	Deadly Heartseeker	3	65	60	13	2	15	inv_sword_17	0	42.65	crit=1;str=7	0		0	0	1	2	
-227886	Skyrider's Masterwork Stormhammer	4	69	60	21	2	4	inv_hammer_04	0	50.75	int=6;sp=37;sta=9	0		0	0		2	
-227887	Hardened Frostguard	4	70	60	21	2	7	inv_sword_11	0	51.67	sta=4	0		0	0		2	
-227888	Argent Elite Shoulders	4	65	60	3	4	1	inv_shoulder_13	75	0	heal=59;mp5=6;spi=10	0		0	0		1	
-227915	Duke's Domain	4	65	0	12	4	0	inv_elemental_primal_water	0	0	resFire=20;sta=22	0		0	0	1	1	749:7
-227923	Water Treads	3	65	60	8	4	1	inv_boots_05	63	0	resFire=20;spi=10;sta=11	0		0	0		1	
 227935	Hammer of the Fallen Thane	3	59	0	21	2	4	inv_misc_bone_03	0	25.68	int=10;mp5=2;sp=68;sta=5	0		0	0		1	
-227936	Diplomat Ring	3	60	0	11	4	0	inv_jewelry_ring_54	150	0	sta=9	0		0	0	1	1	
-227940	Lord General's Sword	3	60	55	21	2	7	inv_sword_25	0	39.46	agi=10	0		0	0		1	
-227962	Flarethorn	3	63	58	21	2	15	inv_spear_01	0	41.39	spFire=21	0		0	0		1	
-227963	Blood-etched Blade	3	57	52	21	2	15	inv_weapon_shortblade_15	0	37.5	sp=14;sta=5	0		0	0		1	
-227965	Omnicast Boots	3	59	54	8	4	1	inv_boots_05	58	0	hit=1;sp=22;sta=6	0		0	0		1	
-227967	Second Wind	3	59	54	12	4	0	inv_jewelry_talisman_06	0	0	heal=22	0		0	0	1	1	
-227970	Cape of the Fire Salamander	3	58	53	16	4	1	inv_misc_cape_18	41	0	heal=13;resFire=12;spi=9	0		0	0		1	
-227972	Burst of Knowledge	3	63	58	12	4	0	inv_jewelry_amulet_07	0	0	sp=23	0		0	0	1	1	
-227973	Circle of Flame	4	59	54	1	4	1	spell_fire_fire	74	0	resFire=15;spFire=29	0		0	0		1	
-227978	Magmus Stone	3	58	53	23	4	0	inv_misc_orb_05	0	0	resFire=10;spFire=21	0		0	0		1	
-227980	Robes of the Royal Crown	3	63	58	20	4	1	inv_chest_cloth_16	89	0	int=15;sp=22;spi=10;sta=12	0		0	0		1	
-227982	Guiding Stave of Wisdom	3	63	58	17	2	10	inv_staff_30	0	53.94	heal=53;int=10;resFire=10;spi=15;sta=11	0		0	0		1	
-227983	Dark Iron Seal	3	63	58	11	4	0	inv_jewelry_ring_28	0	0	resFire=15;sta=10	0		0	0		1	
-227984	Thaurissan's Royal Scepter	3	63	58	23	4	0	inv_mace_13	0	0	heal=26;int=6;spi=10;sta=5	0		0	0		1	
-227985	The Emperor's New Cape	3	63	58	16	4	1	inv_misc_cape_20	45	0	agi=8;sta=17	0		0	0		1	
-227988	Imperial Jewel	3	63	58	2	4	0	inv_misc_gem_sapphire_01	0	0	ap=34;sta=8	0		0	0		1	
-227990	Hand of Injustice	3	63	58	12	4	0	inv_jewelry_talisman_05	0	0	rap=34	0		0	0		1	
-227991	Ironfoe	4	63	58	21	2	4	spell_frost_frostbrand	0	45.83	ap=18	0		0	0	1	1	
-227993	Ebon Hilt of Marduk	3	59	54	21	2	7	inv_sword_15	0	38.89	agi=8	0		0	0		1	
-228005	Clutch of Andros	3	61	56	6	4	1	inv_belt_12	49	0	hit=1;int=15;sp=16	0		0	0		1	
-228009	Necropile Boots	3	61	56	8	4	1	inv_boots_05	60	0	int=9;sp=18;spi=9;sta=10	0		0	0		1	
-228010	Necropile Mantle	3	61	56	3	4	1	inv_shoulder_02	65	0	int=11;sp=11;sta=17	0		0	0		1	
-228011	Necropile Cuffs	3	61	56	9	4	1	inv_bracer_07	38	0	int=11;sp=8;spi=12	0		0	0		1	
-228013	Necropile Robe	3	61	56	20	4	1	inv_chest_cloth_43	87	0	int=12;sp=26;spi=7;sta=12	0		0	0		1	
-228015	Frightalon	3	61	56	13	2	15	inv_weapon_shortblade_16	0	40	agi=5;sta=8	0		0	0		1	
-228016	Dimly Opalescent Ring	3	61	56	11	4	0	inv_jewelry_ring_15	0	0	int=4;sp=6	20	12718,12719,12720,12721,12722,12723,12724,12725,12726,12727,12728,12729,12730,12731,12732,12733,12737,12738,12739,12740,12741,12742,12743,12744,12745,12746,12747,12748,12749,12750,12751,12752,12753,12754,12755	0	0	1	1	
-228017	Skullsmoke Pants	3	61	56	7	4	1	inv_pants_08	76	0	int=12;resFire=10;resShadow=5;sp=16;sta=20	0		0	0		1	
-228018	Necropile Leggings	3	61	56	7	4	1	inv_pants_08	76	0	int=18;sp=14;sta=21	0		0	0		1	
-228019	Heart of the Fiend	3	61	56	2	4	0	inv_misc_orb_03	0	0	heal=33;int=5;sta=5	0		0	0		1	
-228021	Witchblade	3	62	57	21	2	15	inv_weapon_shortblade_25	0	40.62	int=4;sp=16	0		0	0		1	
-228022	Headmaster's Charge	4	67	60	17	2	10	inv_jewelry_talisman_12	0	63.62	sp=30;spi=17;sta=30	0		0	0		1	
-228023	Alanna's Embrace	4	62	57	20	4	1	inv_chest_cloth_12	96	0	hit=1;int=20;sp=27;sta=20	0		0	0		1	
-228024	Silent Fang	3	62	57	21	2	7	inv_sword_41	0	40.62		0		0	0		1	
-228026	Blade of Blackwood	3	62	57	13	2	7	inv_sword_05	0	40.71	defense=4;sta=14	0		0	0		1	
-228028	Blade of Necromancy	3	67	57	21	2	7	inv_sword_25	0	44	crit=1;spShadow=14	0		0	0		1	
-228031	Darkshade Gloves	3	62	57	10	4	1	inv_gauntlets_15	55	0	heal=13;int=7;resArcane=15;resShadow=10;sta=6	0		0	0		1	
-228034	Shivery Handwraps	3	62	57	10	4	1	inv_gauntlets_16	55	0	int=12;spFrost=21;sta=12	0		0	0		1	
-228038	Ironweave Pants	3	62	57	7	4	1	inv_pants_08	207	0	sp=18;sta=24	0		400	0		1	
-228039	Spellbound Tome	3	62	57	23	4	0	inv_misc_book_06	0	0	int=14;spArcane=16;spi=3	0		0	0		1	
-228045	Necromantic Band	3	62	57	11	4	0	inv_jewelry_ring_09	0	0	spShadow=29	0		0	0	1	1	
-228046	Don Mauricio's Band of Domination	3	63	58	11	4	0	inv_jewelry_ring_16	0	0	crit=1;sp=11;sta=5	0		0	0	1	1	
-228047	Amalgam's Band	3	63	58	11	4	0	inv_jewelry_ring_19	0	0	crit=1;heal=15;int=6;sta=5	0		0	0	1	1	
-228051	Quel'dorai Channeling Rod	3	58	53	17	2	10	inv_staff_14	0	49.64	heal=29;int=18;spi=8;sta=8	0		0	0		1	
-228054	Tempest Talisman	3	58	53	2	4	0	inv_jewelry_necklace_03	0	0	crit=1;heal=13;int=7	0		0	0		1	
-228056	Fiendish Machete	3	59	54	13	2	7	inv_sword_18	0	38.93	agi=5	0		0	0		1	
-228057	Ring of Demonic Potency	3	59	54	11	4	0	inv_jewelry_ring_28	0	0	block=1;blockValue=17;sta=10	0		0	0		1	
-228060	Heliotrope Cloak	3	60	55	16	4	1	inv_misc_cape_02	43	0	crit=1;heal=18;int=5	0		0	0		1	
-228061	Brightspark Gloves	3	60	55	10	4	1	inv_gauntlets_16	53	0	crit=1;int=15;sp=11	0		0	0		1	
-228066	Ironweave Gloves	3	61	56	10	4	1	inv_gauntlets_27	144	0	sp=13;sta=17	0		400	0		1	
-228067	Elder Magus Pendant	3	61	56	2	4	0	inv_jewelry_necklace_07	0	0	heal=15;int=10;resFire=10;sta=6	0		0	0		1	
-228074	Hands of Temptation	3	62	57	10	4	1	inv_gauntlets_22	55	0	int=12;spShadow=17;spi=9;sta=12	0		0	0		1	
-228076	Burning Ring of Fire	3	62	57	11	4	0	inv_jewelry_ring_65	0	0	crit=1;spFire=19	0		0	0	1	1	
-228077	Dreambough	3	62	57	23	4	0	inv_misc_trailofflowers	0	0	heal=33;spi=8;sta=6	0		0	0		1	
-228078	Accursed Chalice	3	62	57	12	4	0	inv_offhand_pvealliance_d_01	0	0	crit=1	0		0	0		1	
-228079	Cloak of Leaves	3	62	57	16	4	1	inv_misc_cape_17	44	0	heal=29;int=10;spi=9	0		0	0		1	
-228080	Resin Loop	3	62	57	11	4	0	inv_jewelry_ring_13	0	0	agi=7;ap=28;sta=6;str=7	0		0	0	1	1	
-228081	Germinating Poisonseed	3	62	57	12	4	0	inv_misc_herb_nightmareseed	0	0	hit=1	0		0	0		1	
-228083	Gloaming Treeheart	3	62	57	12	4	0	inv_relics_idolofhealth	0	0	sta=10	0		0	0		1	
-228084	Miniaturized Fire Extinguisher	3	62	57	12	4	0	inv_misc_enggizmos_essencedistiller	0	0	resFire=20	0		0	0		1	
-228085	Phaseshifted Legion Band	3	62	57	11	4	0	inv_jewelry_ring_68	0	0	int=8;sp=18;sta=6	0		0	0	1	1	
-228087	Supercharged Silver Moebius	3	62	57	11	4	0	inv_jewelry_ring_15	0	0	int=8;spArcane=20;spi=8	0		0	0	1	1	
-228088	Shredder Operator's Dogtags	3	62	57	2	4	0	inv_jewelry_necklace_39	100	0	defense=7;sta=11	0		0	0		1	
-228089	Woodcarved Moonstalker	3	62	57	12	4	0	inv_jewelcrafting_blackpearlpanther	0	0		0		0	0		1	
-228090	Cenarion Ritual Dagger	3	62	57	21	2	15	inv_weapon_shortblade_25	0	40.62	int=5;sp=14;sta=6	0		0	0		1	
-228093	Dark Heart of Darkness	3	62	57	12	4	0	inv_misc_organ_01	0	0	resShadow=20	0		0	0		1	
-228094	Dreadlord's Blade	3	62	57	13	2	7	inv_sword_25	0	40.89	agi=8;ap=16;sta=7	0		0	0		1	
-228100	Drape of the Fire Lord	4	77	60	16	4	1	inv_misc_cape_18	59	0	int=12;resFire=10;sp=21;sta=10	0		0	0		1	
-228102	Majordomo's Drape	4	71	60	16	4	1	inv_misc_cape_20	54	0	agi=9;sta=12;str=21	0		0	0		1	
-228104	Robes of Elune	3	62	57	20	4	1	inv_chest_cloth_36	88	0	heal=42;int=13;spi=18;sta=12	0		0	0		1	
-228112	Nightmare Gown	3	62	57	20	4	1	inv_chest_cloth_38	88	0	int=13;sp=22;spi=18;sta=12	0		0	0		1	
-228113	Cold Embrace	3	62	57	12	4	0	ability_mage_shattershield	0	0	resFrost=20	0		0	0		1	
-228122	The Molten Core	4	77	60	12	4	0	ability_warlock_moltencore	0	0	resFire=20	0		0	0	1	1	
-228128	Hammer of The Black Anvil	4	68	60	13	2	4	inv_hammer_03	0	50	sta=10;str=16	0		0	0		1	
-228137	Heart of Golemagg	4	71	60	2	4	0	inv_jewelry_necklace_05	0	0	heal=37;int=12;spi=11;sta=9	0		0	0		1	
-228139	Fist of the Firesworn	4	68	60	13	2	4	spell_fire_flametounge	0	49.71	block=2;sta=10	0		0	0		1	
-228147	Magmadar's Horn	4	66	60	2	4	0	inv_jewelry_necklace_22	0	0	ap=30;hit=1;sta=15	0		0	0	1	1	
-228162	Deceit	4	74	60	13	2	15	inv_sword_13	0	55.36	defense=7;sta=19	0		0	0	1	1	
-228163	Broodmother's Brooch	4	74	0	12	4	0	inv_misc_monsterscales_08	0	0	resFire=15;sta=24	0		0	0	1	1	
-228166	Key to the City	4	75	60	17	2	10	inv_misc_key_15	0	73.48	crit=1;hit=1;int=20;sp=60;spi=21;sta=31	0		0	0		1	
-228168	Goblin Gear Grinder	4	65	58	21	2	4	inv_gizmo_02	0	47.2	heal=42;int=10;spi=15	0		0	0		1	
-228170	Makeshift South Sea Oar	4	60	58	17	2	10	inv_spear_08	0	56.57	agi=20;int=19;sta=19;str=20	0		0	0		1	
-228172	Shadowtooth Illusion Ward	2	60	0	12	4	0	spell_totem_wardofdraining	0	0		0		0	0	1	1	
-228184	Goblin Clothesline	4	60	58	6	4	1	inv_jewelcrafting_delicatecopperwire	52	0	hit=1;int=15;sp=18;spi=8;sta=10	0		0	0		1	
-228185	Broken Bottle of Goblino Noir	4	60	58	21	2	15	inv_drink_10	0	43.25	crit=1;sta=8	0		0	0		1	
-228186	Abandoned Wedding Band	3	63	58	11	4	0	inv_jewelry_ring_42	100	0	sta=17	0		0	0	1	1	
-228187	Stick of the South Sea	3	60	58	26	2	19	inv_wand_02	0	59.64	heal=22;sta=8	0		0	0		1	
-228188	Prestor's Hairpin	4	74	60	12	4	0	inv_misc_comb_01	0	0	mp5=7;resFire=15	0		0	0	1	1	
-228190	Knowledge of the Timbermaw	4	65	60	6	4	1	inv_belt_09	56	0	hit=1;int=22;sp=25	0		0	0		1	
-228239	Robe of Volatile Power	4	66	60	20	4	1	inv_chest_cloth_18	102	0	crit=2;int=16;sp=28;sta=10	0		0	0		1	
-228242	Heavy Dark Iron Ring	4	66	60	11	4	0	inv_jewelry_ring_14	80	0	defense=7;sta=20	0		0	0	1	1	
-228243	Ring of Spell Power	4	71	60	11	4	0	inv_jewelry_ring_38	0	0	sp=34	0		0	0	1	1	
-228244	Manastorm Leggings	4	66	60	7	4	1	inv_pants_08	89	0	int=14;mp5=6;sp=39;sta=19	0		0	0		1	
-228247	Choker of Enlightenment	4	66	60	2	4	0	inv_jewelry_necklace_10	0	0	int=10;sp=23;spi=6;sta=7	0		0	0		1	
-228249	Medallion of Steadfast Might	4	68	60	2	4	0	inv_jewelry_amulet_03	0	0	defense=9;sta=21;str=7	0		0	0		1	
-228255	Talisman of Ephemeral Power	4	71	60	12	4	0	inv_misc_stonetablet_11	0	0		0		0	0	1	1	
-228256	Mana Igniting Cord	4	71	60	6	4	1	inv_belt_11	61	0	crit=1;int=15;sp=28;sta=12	0		0	0		1	
-228259	Fire Runed Grimoire	4	71	60	23	4	0	inv_misc_book_09	0	0	int=12;sp=25;sta=9	0		0	0		1	
-228261	Quick Strike Ring	4	68	60	11	4	0	inv_jewelry_ring_07	0	0	ap=36;crit=1;sta=8;str=5	0		0	0	1	1	
-228262	Crimson Shocker	4	66	60	26	2	19	inv_staff_13	0	78.5	resFire=10;sp=13	0		0	0		1	
-228263	Sorcerous Dagger	4	68	60	21	2	15	inv_weapon_shortblade_07	51	50	int=16;sp=36;sta=8	0		0	0	1	1	
-228264	Aurastone Hammer	4	68	60	21	2	4	inv_hammer_05	0	49.81	heal=62;int=10;mp5=4;sta=10	0		0	0		1	
-228265	Brutality Blade	4	71	60	13	2	7	inv_sword_15	0	52.6	agi=10;crit=1;str=10	0		0	0		1	
-228267	Gutgore Ripper	4	71	60	13	2	15	inv_weapon_shortblade_18	0	52.5		0		0	0		1	
-228268	Seal of the Archmagus	4	71	60	11	4	0	inv_jewelry_ring_21	0	0	int=11;resFire=15;sp=12;sta=11	0		0	0	1	1	
-228269	Azuresong Mageblade	4	71	60	21	2	7	inv_sword_39	0	52.5	crit=1;int=12;sp=44;sta=8	0		0	0		1	
-228271	Staff of Dominance	4	71	60	17	2	10	inv_staff_13	0	68.45	crit=2;int=29;sp=47;spi=12;sta=15	0		0	0		1	
-228274	Cauterizing Band	4	71	60	11	4	0	inv_jewelry_ring_39	0	0	heal=46;int=12;sta=9	0		0	0	1	1	
-228277	Core Hound Tooth	4	71	60	13	2	15	inv_weapon_shortblade_11	0	52.69	ap=22;crit=1;sta=9	0		0	0		1	
-228280	Fireproof Cloak	4	71	60	16	4	1	inv_misc_cape_18	54	0	heal=22;int=9;resFire=18;sta=12	0		0	0		1	
-228281	Gloves of the Hypnotic Flame	4	71	60	10	4	1	inv_gauntlets_03	68	0	int=18;sp=11;spFire=27;sta=17	0		0	0		1	
-228282	Sash of Whispered Secrets	4	71	60	6	4	1	inv_belt_12	61	0	sp=35;sta=20	0		0	0		1	
-228286	Band of Accuria	4	77	60	11	4	0	inv_jewelry_ring_15	0	0	agi=17;hit=2;sta=10	0		0	0	1	1	
-228287	Band of Sulfuras	4	77	60	11	4	0	inv_jewelry_ring_36	0	0	hit=1;int=10;sp=28	0		0	0	1	1	
-228289	Choker of the Fire Lord	4	77	60	2	4	0	inv_jewelry_amulet_05	0	0	int=7;sp=34;sta=7	0		0	0		1	
-228290	Cloak of the Shrouded Mists	4	77	60	16	4	1	inv_misc_cape_17	59	0	agi=23;resFire=10;sta=13	0		0	0		1	
-228292	Dragon's Blood Cape	4	77	60	16	4	1	inv_misc_cape_08	119	0	defense=7;resArcane=5;resFire=5;resShadow=5;sta=23	0		0	0		1	
-228293	Essence of the Pure Flame	4	77	60	12	4	0	spell_fire_fire	0	0	resFire=20;sta=16	0		0	0	1	1	
-228296	Perdition's Blade	4	77	60	13	2	15	inv_sword_48	0	58.68		0		0	0		1	
-228297	Shard of the Flame	4	77	60	12	4	0	inv_misc_orb_05	0	0	hp5=96	0		0	0	1	1	
-228298	Shard of the Scale	4	77	60	12	4	0	inv_misc_monsterscales_15	0	0	mp5=16	0		0	0	1	1	
-228335	Benediction	4	75	60	17	2	10	inv_staff_30	0	73.33	heal=112;int=31;resShadow=20;spellCrit=2;spi=12;sta=10	0		16	0	1	1	
-228336	Anathema	4	75	60	17	2	10	inv_staff_12	0	73.33	crit=1;int=34;resShadow=20;spShadow=75;sta=22	0		16	0	1	1	
-228345	Leggings of Arcane Supremacy	4	69	60	7	4	1	inv_pants_08	93	0	int=24;resFrost=10;spArcane=43;spi=12;sta=14	0		0	0		1	
-228352	Fel Infused Leggings	4	71	60	7	4	1	inv_pants_06	95	0	spShadow=64;sta=21	0		0	0		1	
-228354	Blazefury Medallion	4	68	60	2	4	0	inv_jewelry_talisman_01	0	0	agi=14;resFire=12;sta=13	0		0	0		1	
-228356	Amberseal Keeper	4	67	60	17	2	10	inv_staff_goldfeathered_01	53	63.64	hit=2;int=20;mp5=6;resArcane=5;resFire=5;resFrost=5;resNature=5;resShadow=5;sp=44;sta=17	0		0	0		1	
-228357	Blacklight Bracer	4	66	60	9	4	1	inv_bracer_07	44	0	crit=1;int=13;sp=13;sta=8	0		0	0		1	
-228359	Ring of Entropy	4	66	60	11	4	0	inv_jewelry_ring_20	0	0	crit=1;heal=29;int=11;sta=8	0		0	0		1	
-228360	Eskhandar's Pelt	4	66	60	16	4	1	inv_misc_cape_07	51	0	ap=20;crit=1;sta=17	0		0	0	1	1	
-228381	Cold Snap	4	70	60	26	2	19	inv_wand_01	0	85.29	int=7;spFrost=20	0		0	0		1	
-228382	Fang of the Mystics	4	70	60	21	2	15	inv_weapon_shortblade_06	0	51.67	crit=1;int=10;mp5=4;sp=40	0		0	0		1	
-228383	Puissant Cape	4	70	60	16	4	1	inv_misc_cape_06	54	0	ap=40;hit=1;sta=12	0		0	0		1	
-228384	Snowblind Shoes	4	69	60	8	4	1	inv_boots_cloth_14	73	0	int=10;mp5=5;sp=32;sta=10	0		0	0		1	
-228385	Crystal Adorned Crown	4	68	60	1	4	1	inv_crown_01	85	0	heal=92;int=14;spi=13	0		0	0		1	
-228389	Drape of Benediction	4	67	60	16	4	1	inv_misc_cape_04	52	0	heal=31;int=13;spi=8;sta=11	0		0	0	1	1	
-228397	Empyrean Demolisher	4	66	60	21	2	4	inv_hammer_05	0	48.04		0		0	0		1	
-228462	Aurastone Hammer	4	68	60	21	2	4	inv_hammer_05	0	49.81	heal=62;int=10;mp5=4;sta=10	0		0	0		1	
-228466	Royal Seal of Eldre'Thalas	3	62	0	12	4	0	inv_jewelry_talisman_10	0	0	resFire=10;spArcane=29	0		128	0	1	1	
-228469	Tarnished Elven Ring	3	61	56	11	4	0	inv_jewelry_ring_13	0	0	agi=15;hit=1	0		0	0		1	
-228472	Distracting Dagger	3	62	57	22	2	15	inv_weapon_shortblade_05	0	40.77	defense=7	0		0	0		1	
-228474	Mindsurge Robe	3	62	57	20	4	1	inv_chest_cloth_29	88	0	int=13;mp5=6;sp=21;sta=12	0		0	0		1	
-228475	Diabolic Mantle	3	62	57	3	4	1	inv_shoulder_25	66	0	sp=22;sta=16	0		0	0		1	
-228476	Embroidered Belt of the Archmage	4	62	57	6	4	1	inv_belt_31	54	0	crit=1;int=12;sp=23;sta=11	0		0	0		2	
-228480	Crown of the Ogre King	3	63	58	1	4	1	inv_crown_01	73	0	crit=1;int=13;sp=19;spi=11;sta=12	0		0	0		1	
-228484	Rod of the Ogre Magi	3	63	58	17	2	10	inv_staff_32	0	53.89	crit=1;int=15;sp=27;sta=8	0		0	0		1	
-228505	Royal Tribunal Cloak	3	59	54	16	4	1	inv_misc_cape_14	42	0	int=10;sp=13;sta=7	0		0	0		1	
-228506	Brutality Blade	4	71	60	13	2	7	inv_sword_15	0	52.6	agi=10;crit=1;str=10	0		0	0		1	
-228508	Hammer of The Black Anvil	4	68	60	13	2	4	inv_hammer_03	0	50	sta=10;str=16	0		0	0		1	
-228511	Perdition's Blade	4	77	60	13	2	15	inv_sword_48	0	58.68		0		0	0		1	
-228515	Grimgore Noose	3	59	54	6	4	1	inv_belt_02	47	0	heal=20;int=17;spi=10	0		0	0		1	
-228517	Azuresong Mageblade	4	71	60	21	2	7	inv_sword_39	0	52.5	crit=1;int=12;sp=44;sta=8	0		0	0		1	
-228520	Soulstealer Mantle	3	60	55	3	4	1	inv_shoulder_02	64	0	int=9;spShadow=31	0		0	0		1	
-228521	Shadowy Laced Handwraps	3	60	55	10	4	1	inv_gauntlets_16	53	0	heal=22;int=10;mp5=5;resShadow=12	0		0	0		1	
-228523	Cannonball Runner	3	61	56	12	4	0	inv_misc_bomb_04	0	0		0		0	0		1	
-228524	The Postmaster's Seal	3	61	56	11	4	0	inv_jewelry_ring_23	0	0	int=3;sp=13;spi=12;sta=6	0		0	0	1	1	
-228525	The Postmaster's Tunic	3	61	56	5	4	1	inv_chest_leather_10	87	0	int=13;sp=23;spi=10;sta=13	0		0	0		1	
-228527	The Postmaster's Trousers	3	61	56	7	4	1	inv_pants_06	76	0	int=20;sp=16;spi=12;sta=12	0		0	0		1	
-228528	The Postmaster's Band	3	61	56	1	4	1	inv_misc_bandage_15	70	0	int=18;sp=22;spi=11;sta=10	0		0	0		1	
-228529	The Postmaster's Treads	3	61	56	8	4	1	inv_boots_02	60	0	int=15;sp=16;spi=6;sta=6	0		0	0		1	
-228531	Thuzadin Sash	3	61	56	6	4	1	inv_belt_13	49	0	hit=1;int=12;sp=11;sta=11	0		0	0		1	
-228533	Nacreous Shell Necklace	3	61	56	2	4	0	inv_jewelry_necklace_10	0	0	crit=1;int=6;sp=7;sta=6	0		0	0		1	
-228536	Star of Mystaria	3	63	58	2	4	0	inv_jewelry_talisman_08	0	0	hit=1;int=9;sp=9;sta=9	0		0	0		1	
-228538	Seal of Rivendare	3	63	58	11	4	0	inv_jewelry_ring_16	0	0	heal=22;int=12;spi=7	0		0	0		1	
-228539	Book of the Dead	4	63	58	23	4	0	inv_misc_book_06	0	0	int=10;sp=18;sta=8	0		0	0		1	
-228541	Gift of the Elven Magi	3	63	58	21	2	15	inv_weapon_shortblade_15	0	41.33	heal=22;int=6;sta=5	0		0	0		1	
-228542	Skullforge Reaver	3	63	58	13	2	7	inv_sword_12	0	41.4	ap=26	0		0	0		1	
-228546	Shroud of the Nathrezim	3	63	58	3	4	1	inv_shoulder_23	67	0	crit=1;int=16;sp=12	0		0	0		1	
-228547	Ironweave Robe	3	63	58	20	4	1	inv_chest_cloth_48	219	0	sp=18;sta=24	0		400	0		1	
-228548	Scepter of Interminable Focus	3	63	58	23	4	0	inv_wand_07	0	0	crit=1;hit=1;sp=9	0		0	0		1	
-228554	Demonskin Gloves	3	57	52	10	4	1	inv_gauntlets_15	51	0	heal=20;int=9;spi=17	0		0	0		1	
-228555	Phase Blade	3	57	52	13	2	7	inv_sword_36	0	37.69	sta=12;str=7	0		0	0		1	
-228556	Butcher's Apron	3	58	53	16	4	1	inv_misc_cape_18	41	0	heal=20;spi=12;sta=7	0		0	0		1	
-228558	Funeral Cuffs	3	59	54	9	4	1	inv_bracer_07	37	0	heal=31;resShadow=10;spi=5	0		0	0		1	
-228563	Globe of D'sak	3	59	54	23	4	0	inv_wand_09	0	0	int=10;resShadow=7;sp=13;sta=5	0		0	0		1	
-228564	Ogreseer Tower Boots	3	59	54	8	4	1	inv_boots_05	58	0	int=13;sp=15;sta=13	0		0	0		1	
-228565	Magus Ring	3	59	54	11	4	0	spell_holy_innerfire	0	0	int=8;spFire=17;sta=7	0		0	0	1	1	
-228566	Starfire Tiara	3	60	55	1	4	1	inv_crown_02	69	0	heal=33;int=21;resFire=10;spi=10	0		0	0		1	
-228573	Venomspitter	3	60	55	13	2	4	inv_wand_10	0	39.47	defense=7	0		0	0	1	1	
-228574	Talisman of Evasion	3	60	55	2	4	0	inv_jewelry_amulet_04	0	0	agi=13;defense=8	0		0	0		1	
-228576	Smolderweb's Eye	3	60	55	12	4	0	inv_misc_gem_pearl_01	0	0	sp=14;sta=13	0		0	0	1	1	
-228578	Dustfeather Sash	3	61	56	6	4	1	inv_belt_11	49	0	int=8;sp=12;sta=18	0		0	0		1	
-228584	Emberfury Talisman	3	61	56	2	4	0	inv_jewelry_necklace_05	0	0	crit=1;resFire=7;sta=8;str=5	0		0	0		1	
-228585	Mark of the Dragon Lord	4	61	56	11	4	0	inv_jewelry_ring_17	0	0	heal=40;int=8	0		0	0		1	
-228587	Trindlehaven Staff	3	61	56	17	2	10	inv_staff_29	0	52.14	int=12;sp=29;sta=12	0		0	0		1	
-228589	Heart of the Scale	3	61	56	12	4	0	inv_misc_gem_bloodstone_01	0	0	resFire=10;sta=17	0		0	0	1	1	
-228590	Sunderseer Mantle	3	61	56	3	4	1	inv_shoulder_02	175	0	int=4;sp=8;sta=17	0		0	0		1	
-228592	Fang of the Crystal Spider	3	61	56	13	2	15	inv_weapon_shortblade_16	0	40	defense=7	0		0	0	1	1	
-228594	Kayser's Boots of Precision	3	61	56	8	4	1	inv_boots_cloth_02	60	0	hit=1;int=11;sp=9;sta=11	0		0	0		1	
-228596	Ironweave Belt	3	61	56	6	4	1	inv_belt_03	139	0	sp=13;sta=17	0		400	0		1	
-228597	Ironweave Boots	3	61	56	8	4	1	inv_boots_cloth_05	150	0	sp=13;sta=17	0		400	0		1	
-228598	Ironweave Bracers	3	61	56	9	4	1	inv_bracer_13	108	0	sp=9;sta=14	0		400	0		1	
-228599	Heart of Wyrmthalak	3	61	56	12	4	0	inv_misc_gem_bloodstone_01	0	0		0		0	0	1	1	
-228600	The Jaw Breaker	3	61	56	13	2	4	inv_mace_15	0	40.38	agi=2;crit=1	0		0	0		1	
-228652	Dal'Rend's Tribal Guardian	3	63	58	22	2	7	inv_sword_40	0	41.79	defense=7;hit=1	0		0	0		1	
-228653	Dal'Rend's Sacred Charge	3	63	58	21	2	7	inv_sword_43	0	41.43	crit=1;str=4	0		0	0		1	
-228663	Bloodmoon Cloak	3	63	58	16	4	1	inv_misc_cape_05	45	0	resArcane=7;sp=6;sta=17	0		0	0		1	
-228664	Frostweaver Cape	3	63	58	16	4	1	inv_misc_cape_18	45	0	heal=26;resFrost=10;spi=12	0		0	0		1	
-228667	Painweaver Band	3	63	58	11	4	0	inv_jewelry_ring_18	0	0	ap=18;crit=1;sta=7	0		0	0	1	1	
-228669	Tooth of Gnarr	3	63	58	2	4	0	inv_jewelry_necklace_09	0	0	heal=18;int=14;mp5=3	0		0	0		1	
-228675	Band of Rumination	3	63	58	11	4	0	inv_jewelry_ring_16	0	0	crit=1;heal=15;mp5=4	0		0	0	1	1	
-228677	Spellweaver's Turban	3	63	60	1	4	1	inv_helmet_62	73	0	hit=1;int=9;sp=36	0		0	0		1	
-228678	Draconic Infused Emblem	3	63	58	12	4	0	inv_jewelry_talisman_09	0	0		0		0	0	1	1	
-228681	Ironweave Cowl	3	63	58	1	4	1	inv_helmet_30	203	0	sp=18;sta=24	0		400	0		1	
-228682	Lord Valthalak's Staff of Command	3	63	58	17	2	10	inv_staff_07	0	53.81	hit=1;int=10;sp=30;sta=11	0		0	0		1	
-228683	Rune Band of Wizardry	3	63	58	11	4	0	inv_jewelry_ring_35	0	0	hit=1;sp=16;sta=7	0		0	0	1	1	
-228684	Pendant of Celerity	3	63	58	2	4	0	inv_jewelry_necklace_04	0	0	agi=15;hit=1	0		0	0		1	
-228685	Onyxia Tooth Pendant	4	74	0	2	4	0	inv_jewelry_necklace_09	0	0	agi=12;crit=1;hit=1;resFire=10;sta=9	0		0	0		1	
-228686	Onyxia Blood Talisman	4	74	0	12	4	0	spell_shadow_lifedrain	0	0	defense=11;hit=1;resFire=20;sta=18	0		0	0		1	
-228687	Dragonslayer's Signet	4	74	0	11	4	0	inv_jewelry_ring_27	0	0	crit=1;int=10;resFire=10;sp=19	0		0	0		1	
-228699	Ring of Demonic Guile	3	59	54	11	4	0	inv_jewelry_ring_31	0	0	int=10;mp5=3;sp=12	0		0	0		1	
-228700	Ironweave Mantle	3	61	56	3	4	1	inv_shoulder_05	155	0	sp=13;sta=17	0		400	0		1	
-228701	Core Hound Tooth	4	71	60	13	2	15	inv_weapon_shortblade_11	0	52.69	ap=22;crit=1;sta=9	0		0	0		1	
-228703	Coldstone Slippers	3	55	50	8	4	1	inv_boots_fabric_01	54	0	heal=13;int=14;mp5=2;sta=9	0		0	0		2	
-228722	Hand of Justice	3	63	58	12	4	0	inv_jewelry_talisman_01	0	0	ap=28	0		0	0		1	
-228757	Felstriker	4	63	58	13	2	15	inv_weapon_shortblade_25	0	45.59		0		0	0	1	1	
-228759	Eskhandar's Collar	4	71	60	2	4	0	inv_belt_12	0	0	ap=34;crit=1;sta=14	0		0	0	1	1	
-228922	Staff of Dominance	4	71	60	17	2	10	inv_staff_13	0	68.45	crit=2;int=29;sp=47;spi=12;sta=15	0		0	0		1	
-228955	Ancient Cornerstone Grimoire	4	76	60	23	4	0	inv_misc_book_07	0	0	sp=29	0		0	0		1	
-229372	Gutgore Ripper	4	71	60	13	2	15	inv_weapon_shortblade_18	0	52.5		0		0	0		1	
-229374	Fist of the Firesworn	4	68	60	13	2	4	spell_fire_flametounge	0	49.71	block=2;sta=10	0		0	0		1	
-229376	Sorcerous Dagger	4	68	60	21	2	15	inv_weapon_shortblade_07	51	50	int=16;sp=36;sta=8	0		0	0	1	1	
-229906	Tarnished Bronze Scale	4	79	60	12	4	0	inv_shoulder_armor_dragonspawn_c_01_bronze	0	0		0		16	0	1	1	
-229909	Staff of Order	4	79	60	17	2	10	inv_stave_2h_mage_a_01	0	78.91	crit=2;int=26;sp=77;spi=17;sta=22	0		128	0		1	
-229966	Torque of the Silver Hand	4	75	60	2	4	0	inv_jewelry_necklace_16	0	0	sta=5;str=10	0		0	0		1	
-229971	Staff of Inferno	4	79	60	17	2	10	inv_staff_82	0	78.91	crit=2;int=26;sp=77;spi=17;sta=22	0		128	0		1	
-229972	Staff of Rime	4	79	60	17	2	10	inv_staff_81	0	78.91	crit=2;int=26;sp=77;spi=17;sta=22	0		128	0		1	
-230224	Thunderfury, Blessed Blade of the Windseeker	5	80	60	13	2	7	inv_sword_39	0	61.84	agi=5;resFire=8;resNature=9;sta=8	0		0	0	1	1	
-230239	Gloves of Rapid Evolution	4	73	60	10	4	1	inv_gauntlets_06	70	0	heal=46;int=12;spDmg=16;spi=20;sta=12	0		0	0		1	
-230240	Mantle of the Blackwing Cabal	4	73	60	3	4	1	inv_shoulder_25	84	0	int=11;sp=36;sta=12	0		0	0		1	
-230241	Spineshatter	4	73	60	21	2	4	inv_mace_06	0	54.42	defense=8;sta=14;str=7	0		0	0	1	1	
-230243	Mind Quickening Gem	4	76	60	12	4	0	spell_nature_wispheal	0	0		0		640	0	1	1	
-230245	Pendant of the Fallen Dragon	4	74	60	2	4	0	inv_jewelry_necklace_12	0	0	heal=37;int=12;mp5=5;spDmg=13;sta=9	0		0	0		1	
-230247	Dragonfang Blade	4	74	60	13	2	15	inv_weapon_shortblade_29	0	55.36	agi=18;sta=11	0		0	0		1	
-230252	Bracers of Arcane Accuracy	4	75	60	9	4	1	inv_bracer_07	50	0	hit=1;int=10;sp=22;sta=10	0		0	0		1	
-230254	Maladath, Runed Blade of the Black Flight	4	75	60	13	2	7	inv_sword_49	0	56.36	hit=2	0		0	0		1	
-230257	Ring of Blackrock	4	75	60	11	4	0	inv_jewelry_ring_43	0	0	int=12;sp=26;spi=11	0		0	0	1	1	
-230269	Rejuvenating Gem	4	75	60	12	4	0	inv_misc_gem_topaz_02	0	0	heal=66;mp5=9;spDmg=22	0		0	0		1	
-230270	Shadow Wing Focus Staff	4	75	60	17	2	10	inv_staff_13	0	73.28	crit=1;int=36;sp=60;spi=22;sta=19	0		0	0		1	
-230274	Black Ash Robe	4	75	60	20	4	1	inv_chest_cloth_50	114	0	heal=46;int=15;resFire=30;spDmg=16;spi=17;sta=14	0		0	0		1	
-230275	Firemaw's Clutch	4	75	60	6	4	1	inv_belt_10	64	0	int=12;sp=35;spi=12;sta=12	0		0	0		1	
-230277	Cloak of Firemaw	4	75	60	16	4	1	inv_misc_cape_18	57	0	ap=52;sta=11	0		0	0		1	
-230280	Aegis of Preservation	4	76	60	12	4	0	spell_holy_blessingofprotection	0	0		0		16	0	1	1	
-230281	Band of Forced Concentration	4	75	60	11	4	0	inv_jewelry_ring_34	0	0	hit=1;int=12;sp=23;sta=8	0		0	0	1	1	
-230282	Drake Fang Talisman	4	75	60	12	4	0	inv_misc_bone_06	0	0	ap=56;hit=2;resFire=13	0		0	0	1	1	
-230723	Ebony Flame Gloves	4	75	60	10	4	1	inv_gauntlets_27	72	0	int=12;spShadow=43;sta=17	0		0	0		1	
-230733	Shroud of Pure Thought	4	75	60	16	4	1	inv_misc_cape_16	57	0	crit=1;heal=35;int=10;spDmg=12;sta=10	0		0	0		1	
-230734	Circle of Applied Force	4	75	60	11	4	0	inv_jewelry_ring_37	0	0	agi=22;sta=9;str=13	0		0	0	1	1	
-230736	Styleen's Impeding Scarab	4	75	60	12	4	0	inv_misc_armorkit_10	0	0	block=5;blockValue=24;defense=13	0		0	0	1	1	
-230737	Dragon's Touch	4	75	60	26	2	19	inv_wand_11	0	95.62	int=6;sp=14;sta=7	0		0	0		1	
-230739	Angelista's Grasp	4	77	60	6	4	1	inv_belt_13	66	0	hit=2;int=13;sp=22;spi=10;sta=12	0		0	0		1	
-230743	Shimmering Geta	4	77	60	8	4	1	inv_boots_cloth_01	81	0	heal=64;int=17;mp5=6;spDmg=22;sta=12	0		0	0		1	
-230744	Elementium Threaded Cloak	4	77	60	16	4	1	inv_misc_cape_01	159	0	defense=14;sta=16	0		0	0		1	
-230746	Empowered Leggings	4	77	60	7	4	1	inv_pants_cloth_19	103	0	crit=1;heal=77;int=12;spDmg=26;spi=24;sta=12	0		0	0		1	
-230747	Chromatically Tempered Sword	4	77	60	13	2	7	inv_sword_51	0	58.33	agi=15;sta=7;str=14	0		0	0		1	
-230751	Ninja Obi	2	29	24	6	4	1	inv_misc_bandana_01	24	0		8	12718,12719,12720,12729,12730,12731,12734,12735,12740,12741,12742,12743,12744,12745,12746,12747,12748,12749,12750,12756,12757,12758,12759,12761	0	0		2	
-230794	Claw of Chromaggus	4	77	60	21	2	15	inv_weapon_shortblade_28	0	58.33	int=17;sp=68;sta=7	0		0	0	1	1	
-230804	Cloak of the Brood Lord	4	83	60	16	4	1	inv_misc_cape_20	63	0	int=13;sp=30;sta=10	0		0	0		1	
-230808	Archimtiros' Ring of Reckoning	4	83	60	11	4	0	inv_jewelry_ring_40	0	0	defense=9;sta=28	0		0	0	1	1	
-230810	Neltharion's Tear	4	83	60	12	4	0	inv_stone_15	0	0	hit=2;sp=44	0		0	0	1	1	
-230811	Pure Elementium Band	4	83	60	11	4	0	inv_jewelry_ring_42	0	0	heal=53;int=11;spDmg=18;spi=11;sta=9	0		0	0	1	1	
-230812	Mish'undare, Circlet of the Mind Flayer	4	83	60	1	4	1	inv_helmet_52	102	0	crit=2;int=20;sp=37;spi=12;sta=14	0		0	0		1	
-230813	Staff of the Shadow Flame	4	81	60	17	2	10	inv_staff_06	0	81.88	crit=2;int=29;sp=86;spi=18;sta=21	0		0	0		1	
-230838	Lok'amir il Romathis	4	81	60	21	2	4	inv_mace_06	0	62.86	int=18;sp=86;spi=8;sta=10	0		0	0	1	1	
-230839	Master Dragonslayer's Ring	4	83	60	11	4	0	inv_jewelry_ring_41	0	0	ap=50;hit=1;sta=14	0		0	0	1	1	
-230840	Master Dragonslayer's Medallion	4	83	60	2	4	0	inv_jewelry_necklace_18	0	0	agi=12;defense=9;sta=24	0		0	0	1	1	
-230841	Master Dragonslayer's Orb	4	83	60	23	4	0	inv_misc_orb_03	0	0	int=11;sp=32;sta=8	0		0	0		1	
-230842	Cloak of Draconic Might	4	75	60	16	4	1	inv_misc_cape_11	57	0	agi=19;sta=5;str=19	0		0	0		1	
-230843	Boots of Pure Thought	4	74	60	8	4	1	inv_boots_cloth_03	78	0	heal=64;int=14;spDmg=22;spi=13;sta=9	0		0	0		1	
-230846	Band of Dark Dominion	4	74	60	11	4	0	inv_jewelry_ring_24	0	0	int=7;spShadow=34;sta=10	0		0	0	1	1	
-230847	Essence Gatherer	4	75	60	26	2	19	inv_wand_06	0	95.36	heal=26;int=7;spDmg=9;sta=6	0		0	0		1	
-230849	Ringo's Blizzard Boots	4	74	60	8	4	1	inv_boots_cloth_16	78	0	hit=1;int=13;spFrost=43;sta=11	0		0	0		1	
-230854	Band of Servitude	4	68	60	11	4	0	inv_jewelry_ring_16	0	0	int=9;sp=26;sta=8	0		0	0	1	1	
-230855	Seal of the Gurubashi Berserker	4	68	60	11	4	0	inv_jewelry_ring_20	0	0	ap=46;sta=12	0		0	0	1	1	
-230856	Belt of Untapped Power	4	65	60	6	4	1	inv_belt_01	56	0	int=10;sp=32;sta=14	0		0	0		1	
-230858	Cloak of the Hakkari Worshipers	4	65	60	16	4	1	inv_misc_cape_16	50	0	int=8;sp=26;sta=8	0		0	0		1	
-230860	Might of the Tribe	4	65	60	16	4	1	inv_misc_cape_16	50	0	ap=36;sta=18	0		0	0		1	
-230862	Zulian Headdress	4	65	60	1	4	1	inv_helmet_61	81	0	heal=75;int=15;spDmg=25;spi=14;sta=13	0		0	0		1	
-230863	Zulian Scepter of Rites	4	65	60	21	2	4	inv_waepon_bow_zulgrub_d_01	0	47.31	heal=44;int=9;mp5=5;spDmg=15;sta=10	0		0	0	1	1	
-230865	Fang of Venoxis	4	68	60	21	2	15	inv_weapon_shortblade_31	0	49.62	int=8;mp5=6;sp=36;spi=8	0		0	0	1	1	
-230867	Zanzil's Band	4	65	60	11	4	0	inv_jewelry_ring_46	0	0	hit=1;int=15;sp=18	0		0	0	1	1	
-230913	Jeklik's Opaline Talisman	4	65	60	2	4	0	inv_jewelry_necklace_03	0	0	sp=25;spi=12	0		0	0		1	
-230915	Primalist's Band	4	65	60	11	4	0	inv_jewelry_ring_47	0	0	heal=15;int=12;mp5=6;spDmg=6;sta=10	0		0	0	1	1	
-230917	Flowing Ritual Robes	4	68	60	20	4	1	inv_chest_cloth_25	105	0	int=17;sp=35;spi=24;sta=15	0		0	0	1	1	
-230918	Mar'li's Touch	4	68	60	26	2	19	inv_wand_06	0	81.76	heal=22;spDmg=8;spi=6;sta=5	0		0	0		1	
-230920	Mar'li's Eye	4	65	60	12	4	0	inv_zulgurubtrinket	0	0		0		0	0	1	1	
-230921	Band of Jin	4	65	60	11	4	0	inv_jewelry_ring_44	0	0	agi=19;hit=1;sta=11	0		0	0	1	1	
-230922	Talisman of Protection	4	65	60	2	4	0	inv_jewelry_necklace_21	0	0	defense=16;sta=8	0		0	0		1	
-230923	Betrayer's Boots	4	68	60	8	4	1	inv_boots_cloth_09	72	0	int=11;sp=32;spi=12;sta=8	0		0	0		1	
-230927	Ritualistic Legguards	4	65	60	7	4	1	inv_pants_cloth_14	88	0	heal=64;int=12;spDmg=22;spi=25;sta=10	0		0	0		1	
-230929	Seal of Jin	4	65	60	11	4	0	inv_jewelry_ring_44	0	0	ap=24;crit=1;sta=14	0		0	0	1	1	
-230930	Zulian Slicer	4	65	60	13	2	7	inv_sword_35	0	47.25	ap=12;sta=7	0		0	0		1	
-230939	Will of Arlokk	4	68	60	17	2	10	inv_staff_35	0	64.67	heal=62;int=21;spDmg=21;spi=37;sta=15	0		0	0	1	1	
-230941	Arlokk's Hoodoo Stick	4	65	60	23	4	0	inv_misc_bone_dwarfskull_01	0	0	crit=1;heal=35;spDmg=12;sta=10	0		0	0	1	1	
-230943	Overlord's Onyx Band	4	65	60	11	4	0	inv_jewelry_ring_39	0	0	block=2;defense=9;sta=18	0		0	0	1	1	
-230989	Bloodlord's Defender	4	69	60	21	2	7	inv_sword_54	0	50.67	blockValue=17;defense=8;sta=8	0		0	0	1	1	
-230992	Warblade of the Hakkari	4	69	60	22	2	7	inv_sword_55	0	50.59	ap=42	0		0	0	1	1	
-230997	Bloodtinged Kilt	4	67	60	7	4	1	inv_pants_cloth_14	160	0	int=20;sp=34;spi=10;sta=20	0		0	0		1	
-230998	Hakkari Loa Cloak	4	67	60	16	4	1	inv_misc_cape_18	52	0	heal=44;int=7;spDmg=15;spi=8;sta=6	0		0	0		1	
-230999	Overlord's Crimson Band	4	67	60	11	4	0	inv_jewelry_ring_39	0	0	agi=8;blockValue=15;defense=7;sta=11;str=8	0		0	0	1	1	
-231000	Primalist's Seal	4	67	60	11	4	0	inv_jewelry_ring_47	0	0	heal=29;int=13;spDmg=10;spi=15	0		0	0	1	1	
-231001	Zanzil's Seal	4	67	60	11	4	0	inv_jewelry_ring_46	0	0	hit=1;int=10;sp=16;sta=10	0		0	0	1	1	
-231002	Jin'do's Hexxer	4	68	60	21	2	4	inv_mace_17	0	49.79	crit=1;heal=62;int=10;spDmg=21;sta=8	0		0	0	1	1	
-231003	Jin'do's Evil Eye	4	68	60	2	4	0	inv_jewelry_ring_45	0	0	heal=44;int=11;spDmg=15;spi=7;sta=6	0		0	0		1	
-231004	Jin'do's Judgement	4	70	60	17	2	10	inv_staff_33	0	67.12	hit=2;int=21;sp=41;spi=22;sta=20	0		0	0		1	
-231005	Jin'do's Bag of Whammies	4	68	60	23	4	0	inv_misc_bag_10_black	0	0	hit=1;int=11;sp=20;sta=8	0		0	0	1	1	
-231011	Bloodtinged Gloves	4	67	60	10	4	1	inv_gauntlets_16	64	0	hit=1;int=10;sp=23;spi=10;sta=10	0		0	0		1	
-231012	Overlord's Embrace	4	67	60	16	4	1	inv_misc_cape_21	142	0	block=2;defense=11;sta=12	0		0	0		1	
-231013	The Hexxer's Cover	4	67	60	1	4	1	inv_mask_02	84	0	int=14;sp=46;sta=14	0		0	0		1	
-231015	Twill Mask	0	10	1	1	4	1	inv_misc_bandana_01	7	0		0		0	0		0	
-231016	Nat Pagle's Fish Terminator	4	68	60	17	2	10	inv_fishingpole_02	0	64.75	apFeral=140;sta=19;str=41	0		0	0	1	1	
-231100	Netherwind Belt	4	76	60	6	4	1	inv_belt_22	65	0	hit=1;int=10;resFrost=10;sp=34;sta=10	0		128	0		1	
-231101	Netherwind Boots	4	76	60	8	4	1	inv_boots_07	80	0	crit=1;int=10;resNature=10;sp=30;spi=8;sta=10	0		128	0		1	
-231102	Netherwind Gloves	4	76	60	10	4	1	inv_gauntlets_14	72	0	crit=1;int=10;resNature=10;sp=32;sta=12	0		128	0		1	
-231103	Netherwind Crown	4	76	60	1	4	1	inv_helmet_70	94	0	crit=1;int=17;resFrost=10;resNature=10;sp=39;spi=8;sta=13	0		128	0		1	
-231104	Netherwind Pants	4	76	60	7	4	1	inv_pants_08	101	0	crit=1;int=18;resFrost=10;resNature=10;sp=40;sta=17	0		128	0		1	
-231105	Netherwind Robes	4	76	60	20	4	1	inv_chest_cloth_03	116	0	crit=2;int=8;resFrost=10;resNature=10;sp=37;spi=7;sta=10	0		128	0		1	
-231106	Netherwind Mantle	4	76	60	3	4	1	inv_shoulder_32	87	0	crit=1;int=10;resFrost=10;sp=29;spi=8;sta=10	0		128	0		1	
-231107	Netherwind Bindings	4	76	60	9	4	1	inv_bracer_09	51	0	int=14;sp=26;sta=8	0		128	0		1	
-231108	Netherwind Sash	4	76	60	6	4	1	inv_belt_22	65	0	int=10;resFrost=10;sp=36;spi=8;sta=8	0		128	0		1	
-231109	Netherwind Slippers	4	76	60	8	4	1	inv_boots_07	80	0	int=15;resNature=10;sp=33;spi=8;sta=10	0		128	0		1	
-231110	Netherwind Mitts	4	76	60	10	4	1	inv_gauntlets_14	72	0	int=11;resNature=10;sp=35;spi=6;sta=11	0		128	0		1	
-231111	Netherwind Mask	4	76	60	1	4	1	inv_helmet_70	94	0	int=15;resFrost=10;resNature=10;sp=44;spi=13;sta=13	0		128	0		1	
-231112	Netherwind Leggings	4	76	60	7	4	1	inv_pants_08	101	0	int=20;resFrost=10;resNature=10;sp=44;spi=8;sta=13	0		128	0		1	
-231113	Netherwind Vestments	4	76	60	20	4	1	inv_chest_cloth_03	116	0	int=15;resFrost=10;resNature=10;sp=44;spi=10;sta=15	0		128	0		1	
-231114	Netherwind Shoulders	4	76	60	3	4	1	inv_shoulder_32	87	0	int=10;resFrost=10;sp=35;spi=8;sta=10	0		128	0		1	
-231115	Netherwind Wraps	4	76	60	9	4	1	inv_bracer_09	51	0	int=10;sp=27;spi=8;sta=8	0		128	0		1	
-231155	Boots of Transcendence	4	76	60	8	4	1	inv_boots_07	80	0	crit=1;heal=53;int=14;resNature=10;spDmg=18;sta=12	0		16	0		1	
-231156	Handguards of Transcendence	4	76	60	10	4	1	inv_gauntlets_14	72	0	crit=1;heal=40;int=14;resNature=10;spDmg=14;spi=10;sta=11	0		16	0		1	
-231157	Halo of Transcendence	4	76	60	1	4	1	inv_helmet_24	94	0	crit=1;heal=77;int=14;resFrost=10;resNature=10;spDmg=26;spi=9;sta=14	0		16	0		1	
-231158	Leggings of Transcendence	4	76	60	7	4	1	inv_pants_08	101	0	heal=70;int=20;resFrost=10;resNature=10;spDmg=24;spi=18;sta=12	0		16	0		1	
-231159	Robes of Transcendence	4	76	60	20	4	1	inv_chest_cloth_03	116	0	crit=1;heal=70;int=14;resFrost=10;resNature=10;spDmg=24;spi=10;sta=16	0		16	0		1	
-231160	Pauldrons of Transcendence	4	76	60	3	4	1	inv_shoulder_02	87	0	heal=46;int=17;resFrost=10;spDmg=16;spi=13;sta=12	0		16	0		1	
-231161	Belt of Transcendence	4	76	60	6	4	1	inv_belt_22	65	0	heal=42;int=17;resFrost=10;spDmg=14;spi=13;sta=13	0		16	0		1	
-231162	Bindings of Transcendence	4	76	60	9	4	1	inv_bracer_09	51	0	heal=31;int=14;spDmg=11;spi=13;sta=10	0		16	0		1	
-231165	Treads of Transcendence	4	76	60	8	4	1	inv_boots_07	80	0	int=18;resNature=10;spShadow=36;spi=10;sta=10	0		16	0		1	
-231166	Gloves of Transcendence	4	76	60	10	4	1	inv_gauntlets_14	72	0	int=13;resNature=10;spShadow=36;spi=13;sta=12	0		16	0		1	
-231167	Crown of Transcendence	4	76	60	1	4	1	inv_helmet_24	94	0	crit=1;int=14;resFrost=10;resNature=10;spShadow=49;spi=10;sta=14	0		16	0		1	
-231168	Pants of Transcendence	4	76	60	7	4	1	inv_pants_08	101	0	crit=1;int=20;resFrost=10;resNature=10;spShadow=50;sta=15	0		16	0		1	
-231169	Garb of Transcendence	4	76	60	20	4	1	inv_chest_cloth_03	116	0	crit=2;int=17;resFrost=10;resNature=10;spShadow=36;sta=14	0		16	0		1	
-231170	Mantle of Transcendence	4	76	60	3	4	1	inv_shoulder_02	87	0	int=15;resFrost=10;spShadow=37;spi=11;sta=10	0		16	0		1	
-231171	Cord of Transcendence	4	76	60	6	4	1	inv_belt_22	65	0	int=15;resFrost=10;spShadow=36;sta=18	0		16	0		1	
-231172	Bracers of Transcendence	4	76	60	9	4	1	inv_bracer_09	51	0	crit=1;int=11;spShadow=23;sta=10	0		16	0		1	
-231271	Nat Pagle's Broken Reel	4	65	60	12	4	0	inv_gizmo_09	0	0	sp=26	0		0	0	1	1	
-231274	Gri'lek's Grinder	4	65	60	13	2	4	inv_mace_04	0	47.14		0		0	0		1	
-231275	Blazefury Retributer	4	65	60	21	2	7	inv_sword_01	0	47.19	int=15;sp=23	0		0	0		1	
-231276	Thoughtblighter	4	65	60	26	2	19	inv_wand_05	0	76.67	heal=15;mp5=5;spDmg=6	0		0	0		1	
-231279	Wushoolay's Poker	4	65	60	21	2	15	inv_sword_37	0	47.19	heal=44;mp5=6;spDmg=15;spi=8	0		0	0	1	1	
-231282	Hazza'rah's Charm of Chilled Magic	4	65	60	12	4	0	inv_jewelry_necklace_19	0	0		0		128	0	1	1	
-231283	Hazza'rah's Charm of Warding	4	65	60	12	4	0	inv_jewelry_necklace_19	0	0		0		16	0	1	1	
-231296	Bloodcaller	4	70	60	21	2	7	inv_sword_18	0	51.5	int=15;sp=41;sta=12	0		0	0	1	1	
-231300	Cloak of Consumption	4	70	60	16	4	1	inv_misc_cape_22	54	0	hit=1;int=13;sp=23	0		0	0		1	
-231301	Fang of the Faceless	4	70	60	13	2	15	inv_weapon_shortblade_30	0	51.58	ap=28;crit=1	0		0	0		1	
-231306	Soul Corrupter's Necklace	4	70	60	2	4	0	inv_jewelry_necklace_19	0	0	hit=2;int=10;sp=11;spi=4;sta=6	0		0	0		1	
-231307	The Eye of Hakkar	4	70	60	2	4	0	inv_jewelry_necklace_22	0	0	ap=46;crit=1	0		0	0		1	
-231308	Touch of Chaos	4	70	60	26	2	19	inv_wand_09	0	85.33	sp=19	0		0	0		1	
-231309	Warblade of the Hakkari	4	70	60	21	2	7	inv_sword_55	0	51.47	ap=28;crit=1	0		0	0	1	1	
-231324	Jewel of Kajaro	4	65	0	2	4	0	inv_jewelry_necklace_26	0	0	int=7;spFrost=29;sta=8	0		128	0	1	1	
-231325	Zandalar Illusionist's Mantle	4	65	0	3	4	1	inv_shoulder_17	75	0	int=12;spFrost=36;spi=11;sta=10	0		128	0		1	
-231326	Zandalar Illusionist's Wraps	4	65	0	9	4	1	inv_bracer_07	44	0	int=10;spFrost=24;spi=8;sta=10	0		128	0		1	
-231327	Zandalar Illusionist's Robe	4	68	0	20	4	1	inv_chest_cloth_12	105	0	hit=1;int=17;spFrost=51;sta=17	0		128	0		1	
-231332	The All-Seeing Eye of Zuldazar	4	65	0	2	4	0	inv_jewelry_necklace_26	0	0	heal=29;int=7;spDmg=10;spi=10;sta=8	0		16	0	1	1	
-231333	Zandalar Confessor's Mantle	4	68	0	3	4	1	inv_shoulder_01	78	0	heal=35;int=20;spDmg=12;spi=15;sta=10	0		16	0		1	
-231334	Zandalar Confessor's Bindings	4	65	0	6	4	1	inv_belt_08	56	0	heal=35;int=14;spDmg=12;spi=20;sta=10	0		16	0		1	
-231335	Zandalar Confessor's Wraps	4	65	0	9	4	1	inv_bracer_07	41	0	heal=26;int=13;spDmg=9;spi=11;sta=8	0		16	0		1	
-231387	Stormwrath, Sanctified Shortblade of the Galefinder	4	77	60	21	2	15	inv_sword_37	0	58.42	int=9;sp=68;spi=7;sta=10	0		0	0	1	1	
-231509	Cassandra's Tome	4	79	60	12	4	0	inv_misc_1h_book_priest_a_01	0	0	heal=70;spShadow=47	0		16	0	1	1	
-231753	Skywall's Solace	4	77	60	21	2	4	ability_thunderbolt	0	58.57	heal=128;int=16;spDmg=43;spi=10;sta=8	0		0	0	1	1	
-231777	Crystallized Qiraji Limb	4	77	60	23	4	0	inv_wand_07	0	0	heal=55;spDmg=19;spi=9;sta=8	0		0	0	1	1	
-231779	Wrath of Wray	4	77	60	12	4	0	achievement_bg_wineos	0	0	crit=1;resNature=10	0		0	0	1	1	
-231781	Soul of Thunder	4	77	60	12	4	0	spell_nature_elementalshields	0	0	resNature=20	0		0	0	1	1	
-231783	Drape of the Windlord	4	77	60	16	4	1	inv_misc_cape_23	59	0	hit=1;resNature=20;sta=16	0		0	0	1	1	
-231784	Lightning's Cell	4	77	60	12	4	0	spell_nature_unrelentingstorm	0	0	hit=1	0		0	0	1	1	
-231785	Echoes of Betrayal	4	77	60	12	4	0	inv_jewelry_trinket_02	0	0	crit=1	0		0	0	1	1	
-231803	Prestor's Talisman of Connivery	4	83	60	2	4	0	inv_jewelry_necklace_17	0	0	agi=30;hit=1	0		0	0		1	
-231817	Windstriker	4	77	60	13	2	15	inv_weapon_shortblade_99	0	58.24		0		0	0		1	
-231847	Gri'lek's Grinder	4	65	60	13	2	4	inv_mace_04	0	47.14		0		0	0		1	
-231848	Nat Pagle's Fish Terminator	4	68	60	17	2	10	inv_fishingpole_02	0	64.75	apFeral=140;sta=19;str=41	0		0	0	1	1	
-231850	Will of Arlokk	4	68	60	17	2	10	inv_staff_35	0	64.67	heal=62;int=21;spDmg=21;spi=37;sta=15	0		0	0	1	1	
-231853	Warblade of the Hakkari	4	70	60	21	2	7	inv_sword_55	0	51.47	ap=28;crit=1	0		0	0	1	1	
-231855	Fang of the Faceless	4	70	60	13	2	15	inv_weapon_shortblade_30	0	51.58	ap=28;crit=1	0		0	0		1	
-231857	Touch of Chaos	4	70	60	26	2	19	inv_wand_09	0	85.33	sp=19	0		0	0		1	
-231858	Bloodcaller	4	70	60	21	2	7	inv_sword_18	0	51.5	int=15;sp=41;sta=12	0		0	0	1	1	
-231859	Jin'do's Hexxer	4	68	60	21	2	4	inv_mace_17	0	49.79	crit=1;heal=62;int=10;spDmg=21;sta=8	0		0	0	1	1	
-231860	Jin'do's Judgement	4	70	60	17	2	10	inv_staff_33	0	67.12	hit=2;int=21;sp=41;spi=22;sta=20	0		0	0		1	
-231862	Blazefury Retributer	4	65	60	21	2	7	inv_sword_01	0	47.19	int=15;sp=23	0		0	0		1	
-231863	Thoughtblighter	4	65	60	26	2	19	inv_wand_05	0	76.67	heal=15;mp5=5;spDmg=6	0		0	0		1	
-231865	Zulian Scepter of Rites	4	65	60	21	2	4	inv_waepon_bow_zulgrub_d_01	0	47.31	heal=44;int=9;mp5=5;spDmg=15;sta=10	0		0	0	1	1	
-231866	Mar'li's Touch	4	68	60	26	2	19	inv_wand_06	0	81.76	heal=22;spDmg=8;spi=6;sta=5	0		0	0		1	
-231867	Bloodlord's Defender	4	69	60	21	2	7	inv_sword_54	0	50.67	blockValue=17;defense=8;sta=8	0		0	0	1	1	
-231869	Warblade of the Hakkari	4	69	60	22	2	7	inv_sword_55	0	50.59	ap=42	0		0	0	1	1	
-231871	Wushoolay's Poker	4	65	60	21	2	15	inv_sword_37	0	47.19	heal=44;mp5=6;spDmg=15;spi=8	0		0	0	1	1	
-231874	Fang of Venoxis	4	68	60	21	2	15	inv_weapon_shortblade_31	0	49.62	int=8;mp5=6;sp=36;spi=8	0		0	0	1	1	
-231876	Zulian Slicer	4	65	60	13	2	7	inv_sword_35	0	47.25	ap=12;sta=7	0		0	0		1	
 231877	Tyler's Balanced Bobble	3	1	1	12	4	0	inv_scarab_crystal	0	0		0		0	0		1	
-231910	Heart of Azgaloth	3	62	57	12	4	0	inv_misc_organ_02	0	0	heal=35;hp5=36;mp5=4;spDmg=12	0		0	0	1	1	
-231911	Signet of the Legion General	3	62	57	11	4	0	inv_jewelry_ring_47	0	0	heal=26;int=5;spDmg=9;spi=5;sta=10	0		0	0	1	1	
-231912	Blade of the Pit	4	65	57	21	2	15	inv_weapon_shortblade_61	0	47.22	heal=44;int=6;mp5=6;spDmg=15;spi=6;sta=6	0		0	0		1	
-231913	Eye of the Observer	3	62	57	2	4	0	inv_misc_eye_03	0	0	heal=22;int=8;spDmg=8;spi=11	0		0	0		1	
-232127	Netherwind Bindings	4	76	60	9	4	1	inv_bracer_09	51	0	int=14;sp=26;sta=8	0		128	0		1	
-232128	Netherwind Belt	4	76	60	6	4	1	inv_belt_22	65	0	hit=1;int=10;resFrost=10;sp=34;sta=10	0		128	0		1	
-232129	Netherwind Mantle	4	76	60	3	4	1	inv_shoulder_32	87	0	crit=1;int=10;resFrost=10;sp=29;spi=8;sta=10	0		128	0		1	
-232130	Netherwind Pants	4	76	60	7	4	1	inv_pants_08	101	0	crit=1;int=18;resFrost=10;resNature=10;sp=40;sta=17	0		128	0		1	
-232131	Netherwind Crown	4	76	60	1	4	1	inv_helmet_70	94	0	crit=1;int=17;resFrost=10;resNature=10;sp=39;spi=8;sta=13	0		128	0		1	
-232132	Netherwind Gloves	4	76	60	10	4	1	inv_gauntlets_14	72	0	crit=1;int=10;resNature=10;sp=32;sta=12	0		128	0		1	
-232133	Netherwind Boots	4	76	60	8	4	1	inv_boots_07	80	0	crit=1;int=10;resNature=10;sp=30;spi=8;sta=10	0		128	0		1	
-232134	Netherwind Robes	4	76	60	20	4	1	inv_chest_cloth_03	116	0	crit=2;int=8;resFrost=10;resNature=10;sp=37;spi=7;sta=10	0		128	0		1	
-232135	Netherwind Wraps	4	76	60	9	4	1	inv_bracer_09	51	0	int=10;sp=27;spi=8;sta=8	0		128	0		1	
-232136	Netherwind Sash	4	76	60	6	4	1	inv_belt_22	65	0	int=10;resFrost=10;sp=36;spi=8;sta=8	0		128	0		1	
-232137	Netherwind Shoulders	4	76	60	3	4	1	inv_shoulder_32	87	0	int=10;resFrost=10;sp=35;spi=8;sta=10	0		128	0		1	
-232138	Netherwind Leggings	4	76	60	7	4	1	inv_pants_08	101	0	int=20;resFrost=10;resNature=10;sp=44;spi=8;sta=13	0		128	0		1	
-232139	Netherwind Mask	4	76	60	1	4	1	inv_helmet_70	94	0	int=15;resFrost=10;resNature=10;sp=44;spi=13;sta=13	0		128	0		1	
-232140	Netherwind Mitts	4	76	60	10	4	1	inv_gauntlets_14	72	0	int=11;resNature=10;sp=35;spi=6;sta=11	0		128	0		1	
-232141	Netherwind Slippers	4	76	60	8	4	1	inv_boots_07	80	0	int=15;resNature=10;sp=33;spi=8;sta=10	0		128	0		1	
-232142	Netherwind Vestments	4	76	60	20	4	1	inv_chest_cloth_03	116	0	int=15;resFrost=10;resNature=10;sp=44;spi=10;sta=15	0		128	0		1	
-232167	Bracers of Transcendence	4	76	60	9	4	1	inv_bracer_09	51	0	crit=1;int=11;spShadow=23;sta=10	0		16	0		1	
-232168	Cord of Transcendence	4	76	60	6	4	1	inv_belt_22	65	0	int=15;resFrost=10;spShadow=36;sta=18	0		16	0		1	
-232169	Mantle of Transcendence	4	76	60	3	4	1	inv_shoulder_02	87	0	int=15;resFrost=10;spShadow=37;spi=11;sta=10	0		16	0		1	
-232170	Pants of Transcendence	4	76	60	7	4	1	inv_pants_08	101	0	crit=1;int=20;resFrost=10;resNature=10;spShadow=50;sta=15	0		16	0		1	
-232171	Crown of Transcendence	4	76	60	1	4	1	inv_helmet_24	94	0	crit=1;int=14;resFrost=10;resNature=10;spShadow=49;spi=10;sta=14	0		16	0		1	
-232172	Gloves of Transcendence	4	76	60	10	4	1	inv_gauntlets_14	72	0	int=13;resNature=10;spShadow=36;spi=13;sta=12	0		16	0		1	
-232173	Treads of Transcendence	4	76	60	8	4	1	inv_boots_07	80	0	int=18;resNature=10;spShadow=36;spi=10;sta=10	0		16	0		1	
-232174	Garb of Transcendence	4	76	60	20	4	1	inv_chest_cloth_03	116	0	crit=2;int=17;resFrost=10;resNature=10;spShadow=36;sta=14	0		16	0		1	
-232175	Bindings of Transcendence	4	76	60	9	4	1	inv_bracer_09	51	0	heal=31;int=14;spDmg=11;spi=13;sta=10	0		16	0		1	
-232176	Belt of Transcendence	4	76	60	6	4	1	inv_belt_22	65	0	heal=42;int=17;resFrost=10;spDmg=14;spi=13;sta=13	0		16	0		1	
-232177	Pauldrons of Transcendence	4	76	60	3	4	1	inv_shoulder_02	87	0	heal=46;int=17;resFrost=10;spDmg=16;spi=13;sta=12	0		16	0		1	
-232178	Leggings of Transcendence	4	76	60	7	4	1	inv_pants_08	101	0	heal=70;int=20;resFrost=10;resNature=10;spDmg=24;spi=18;sta=12	0		16	0		1	
-232179	Halo of Transcendence	4	76	60	1	4	1	inv_helmet_24	94	0	crit=1;heal=77;int=14;resFrost=10;resNature=10;spDmg=26;spi=9;sta=14	0		16	0		1	
-232180	Handguards of Transcendence	4	76	60	10	4	1	inv_gauntlets_14	72	0	crit=1;heal=40;int=14;resNature=10;spDmg=14;spi=10;sta=11	0		16	0		1	
-232181	Boots of Transcendence	4	76	60	8	4	1	inv_boots_07	80	0	crit=1;heal=53;int=14;resNature=10;spDmg=18;sta=12	0		16	0		1	
-232182	Robes of Transcendence	4	76	60	20	4	1	inv_chest_cloth_03	116	0	crit=1;heal=70;int=14;resFrost=10;resNature=10;spDmg=24;spi=10;sta=16	0		16	0		1	
-232309	Renataki's Soul Conduit	4	65	60	21	2	7	inv_sword_37	0	47.14	sp=23;spi=20	0		0	0	1	1	
-232310	Renataki's Soul Conduit	4	65	60	21	2	7	inv_sword_37	0	47.14	sp=23;spi=20	0		0	0	1	1	
-232311	Zulian Tigerhide Cloak	4	65	60	16	4	1	inv_misc_cape_10	50	0	agi=17;hit=1;sta=14	0		0	0		1	
-232552	Lok'amir il Romathis	4	81	60	21	2	4	inv_mace_06	0	62.86	int=18;sp=86;spi=8;sta=10	0		0	0	1	1	
-232556	Staff of the Shadow Flame	4	81	60	17	2	10	inv_staff_06	0	81.88	crit=2;int=29;sp=86;spi=18;sta=21	0		0	0		1	
-232557	Claw of Chromaggus	4	77	60	21	2	15	inv_weapon_shortblade_28	0	58.33	int=17;sp=68;sta=7	0		0	0	1	1	
-232558	Chromatically Tempered Sword	4	77	60	13	2	7	inv_sword_51	0	58.33	agi=15;sta=7;str=14	0		0	0		1	
-232563	Shadow Wing Focus Staff	4	75	60	17	2	10	inv_staff_13	0	73.28	crit=1;int=36;sp=60;spi=22;sta=19	0		0	0		1	
-232564	Maladath, Runed Blade of the Black Flight	4	75	60	13	2	7	inv_sword_49	0	56.36	hit=2	0		0	0		1	
-232565	Dragonfang Blade	4	74	60	13	2	15	inv_weapon_shortblade_29	0	55.36	agi=18;sta=11	0		0	0		1	
-232567	Spineshatter	4	73	60	21	2	4	inv_mace_06	0	54.42	defense=8;sta=14;str=7	0		0	0	1	1	
-233392	Footwraps of the Oracle	4	78	60	8	4	1	inv_boots_cloth_07	82	0	crit=1;int=15;spShadow=40;sta=13	0		16	0		1	
-233393	Tiara of the Oracle	4	81	60	1	4	1	inv_helmet_06	100	0	crit=2;int=12;spShadow=57;sta=10	0		16	0		1	
-233394	Mantle of the Oracle	4	78	60	3	4	1	inv_shoulder_03	89	0	crit=1;int=13;spShadow=43;sta=10	0		16	0		1	
-233395	Vestments of the Oracle	4	88	60	20	4	1	inv_chest_cloth_10	133	0	crit=2;int=18;spShadow=63;sta=14	0		16	0		1	
-233396	Trousers of the Oracle	4	81	60	7	4	1	inv_pants_cloth_07	107	0	crit=1;int=14;spShadow=64;sta=12	0		16	0		1	
-233402	Enigma Robes	4	88	60	20	4	1	inv_chest_cloth_11	133	0	crit=2;hit=1;int=18;sp=44;sta=17	0		128	0		1	
-233403	Enigma Shoulderpads	4	78	60	3	4	1	inv_shoulder_03	89	0	crit=1;hit=1;int=10;sp=34;sta=10	0		128	0		1	
-233404	Enigma Circlet	4	81	60	1	4	1	inv_helmet_06	100	0	crit=2;int=15;sp=44;sta=14	0		128	0		1	
-233405	Enigma Boots	4	78	60	8	4	1	inv_boots_cloth_03	82	0	crit=1;hit=1;int=10;sp=34;sta=10	0		128	0		1	
-233406	Enigma Leggings	4	81	60	7	4	1	inv_pants_cloth_08	107	0	crit=2;hit=1;int=12;sp=44;sta=11	0		128	0		1	
-233423	Blade of Vaulted Secrets	4	79	60	21	2	7	inv_sword_57	0	60.65	crit=1;int=12;sp=77;sta=10	0		128	0		1	
-233424	Drape of Vaulted Secrets	4	76	60	16	4	1	inv_misc_cape_19	58	0	crit=1;int=9;sp=25;sta=6	0		128	0		1	
-233425	Band of Vaulted Secrets	4	74	60	11	4	0	inv_jewelry_ring_ahnqiraj_03	0	0	crit=1;int=9;sp=25	0		128	0	1	1	
-233429	Gavel of Infinite Wisdom	4	79	60	21	2	4	inv_mace22	0	60.56	crit=1;int=12;sp=77;sta=10	0		16	0		1	
-233430	Shroud of Infinite Wisdom	4	76	60	16	4	1	inv_misc_cape_16	58	0	crit=1;int=12;spShadow=20;sta=12	0		16	0		1	
-233431	Ring of Infinite Wisdom	4	74	60	11	4	0	inv_jewelry_ring_ahnqiraj_03	0	0	crit=1;int=7;spShadow=31	0		16	0	1	1	
-233502	Amulet of Foul Warding	4	76	60	2	4	0	inv_jewelry_necklace_12	0	0	ap=20;hit=1;resNature=10;sta=11	0		0	0		1	
-233503	Pendant of the Qiraji Guardian	4	76	60	2	4	0	inv_jewelry_necklace_ahnqiraj_01	0	0	agi=10;blockValue=18;defense=8;sta=12;str=10	0		0	0		1	
-233504	Cloak of Concentrated Hatred	4	76	60	16	4	1	inv_misc_cape_02	58	0	agi=16;hit=1;sta=11;str=15	0		0	0		1	
-233507	Ring of Swarming Thought	4	76	60	11	4	0	inv_jewelry_ring_ahnqiraj_04	0	0	sp=27;sta=12	0		0	0	1	1	
-233509	Staff of the Qiraji Prophets	4	76	60	17	2	10	inv_staff_01	0	74.48	int=32;resNature=20;sp=64;spi=15;sta=21	0		0	0		1	
-233519	Cape of the Trinity	4	76	60	16	4	1	inv_misc_cape_18	58	0	crit=1;int=15;sp=21	0		0	0		1	
-233520	Robes of the Triumvirate	4	76	60	20	4	1	inv_chest_cloth_22	116	0	heal=59;int=21;resNature=25;spDmg=20;sta=18	0		0	0		1	
-233521	Ternary Mantle	4	76	60	3	4	1	inv_shoulder_05	87	0	heal=55;int=20;spDmg=19;spi=18	0		0	0		1	
-233524	Angelista's Touch	4	76	60	11	4	0	inv_jewelry_ring_ahnqiraj_04	120	0	defense=9;hit=1;sta=17	0		0	0	1	1	
-233562	Angelista's Charm	4	78	60	2	4	0	inv_jewelry_necklace_20	0	0	crit=1;heal=31;int=13;spDmg=11;sta=12	0		0	0		1	
-233563	Mantle of Phrenic Power	4	78	60	3	4	1	inv_shoulder_02	89	0	int=15;spFire=46;sta=14	0		0	0		1	
-233565	Ukko's Ring of Darkness	4	78	60	11	4	0	inv_jewelry_ring_24	0	0	defense=10;resShadow=20;sta=14	0		0	0	1	1	
-233569	Ring of the Devoured	4	78	60	11	4	0	inv_jewelry_ring_ahnqiraj_05	0	0	crit=1;heal=44;int=11;spDmg=15;sta=8	0		0	0	1	1	
-233570	Petrified Scarab	4	78	60	12	4	0	inv_misc_ahnqirajtrinket_01	0	0		0		0	0	1	1	
-233571	Wand of Qiraji Nobility	4	78	60	26	2	19	inv_wand_06	0	102.19	sp=20;sta=3	0		0	0		1	
-233572	Necklace of Purity	4	78	60	2	4	0	inv_jewelry_necklace_ahnqiraj_04	0	0	hit=1;int=10;resNature=10;sp=12;sta=10	0		0	0		1	
-233573	Recomposed Boots	4	78	60	8	4	1	inv_boots_cloth_07	82	0	int=17;resNature=20;sp=23;sta=13	0		0	0		1	
-233574	Leggings of the Festering Swarm	4	78	60	7	4	1	inv_pants_cloth_02	104	0	crit=1;int=19;spFire=57;sta=17	0		0	0		1	
-233575	Robes of the Battleguard	4	78	60	20	4	1	inv_chest_cloth_26	119	0	int=18;sp=36;sta=30	0		0	0		1	
-233580	Badge of the Swarmguard	4	78	60	12	4	0	inv_misc_ahnqirajtrinket_04	0	0		0		0	0	1	1	
-233581	Sartura's Might	4	78	60	23	4	0	inv_qirajidol_war	0	0	heal=59;int=7;mp5=3;spDmg=20;sta=5	0		0	0		1	
-233585	Ancient Qiraji Ripper	4	79	60	13	2	7	inv_sword_59	0	60.69	ap=16;crit=1;sta=8	0		0	0		1	
-233587	Barbed Choker	4	79	60	2	4	0	inv_jewelry_necklace_ahnqiraj_02	0	0	ap=48;crit=1;sta=8	0		0	0		1	
-233588	Cloak of Untold Secrets	4	79	60	16	4	1	inv_misc_cape_20	60	0	defense=9;resShadow=20;sta=16	0		0	0		1	
-233589	Fetish of the Sand Reaver	4	79	60	12	4	0	inv_misc_ahnqirajtrinket_03	0	0		0		0	0	1	1	
-233594	Robes of the Guardian Saint	4	79	60	20	4	1	inv_chest_cloth_23	120	0	crit=2;heal=70;int=19;spDmg=24;sta=18	0		0	0		1	
-233599	Sharpened Silithid Femur	4	79	60	21	2	7	inv_sword_58	0	60.65	crit=1;int=14;sp=77;sta=7	0		0	0	1	1	
-233600	Ring of the Qiraji Fury	4	79	60	11	4	0	inv_jewelry_ring_ahnqiraj_01	0	0	ap=40;crit=1;sta=10	0		0	0	1	1	
-233601	Scarab Brooch	4	79	60	12	4	0	inv_misc_ahnqirajtrinket_06	0	0		0		0	0	1	1	
-233606	Cloak of the Golden Hive	4	79	60	16	4	1	inv_misc_cape_01	60	0	agi=14;defense=7;sta=10;str=19	0		0	0		1	
-233607	Gloves of the Messiah	4	79	60	10	4	1	inv_gauntlets_17	75	0	heal=64;int=17;spDmg=22;spi=14;sta=12	0		0	0		1	
-233609	Ring of the Martyr	4	79	60	11	4	0	inv_jewelry_ring_ahnqiraj_01	0	0	heal=51;mp5=5;spDmg=17;sta=10	0		0	0	1	1	
-233611	Boots of Epiphany	4	81	60	8	4	1	inv_boots_cloth_05	84	0	int=17;sp=36;sta=16	0		0	0		1	
-233615	Ring of Emperor Vek'lor	4	81	60	11	4	0	inv_jewelry_ring_ahnqiraj_01	100	0	agi=17;defense=9;sta=14	0		0	0	1	1	
-233616	Royal Scepter of Vek'lor	4	81	60	23	4	0	inv_wand_10	0	0	crit=1;hit=1;int=5;sp=27	0		0	0		1	
-233617	Bracelets of Royal Redemption	4	81	60	9	4	1	inv_bracer_13	54	0	heal=53;int=10;spDmg=18;spi=10;sta=9	0		0	0		1	
-233620	Amulet of Vek'nilash	4	81	60	2	4	0	inv_jewelry_necklace_ahnqiraj_01	0	0	crit=1;int=6;sp=27;sta=9	0		0	0		1	
-233624	Don Rigoberto's Lost Hat	4	81	60	1	4	1	inv_helmet_51	100	0	crit=2;heal=88;int=12;spDmg=30;sta=10	0		0	0		1	
-233625	Burrower Bracers	4	81	60	9	4	1	inv_bracer_13	54	0	int=11;sp=30;sta=8	0		0	0		1	
-233627	Jom Gabbar	4	81	60	12	4	0	inv_misc_enggizmos_19	0	0		0		0	0	1	1	
-233628	The Burrower's Shell	4	81	60	12	4	0	inv_shield_23	0	0	defense=15;sta=20	0		0	0	1	1	
-233630	Cloak of the Devoured	4	88	60	16	4	1	inv_misc_cape_18	66	0	hit=1;int=10;sp=32;sta=10	0		0	0		1	
-233631	Dark Storm Gauntlets	4	88	60	10	4	1	inv_gauntlets_17	83	0	hit=1;int=15;sp=41;sta=14	0		0	0		1	
-233632	Grasp of the Old God	4	88	60	6	4	1	inv_belt_31	75	0	heal=77;int=19;spDmg=26;sta=15	0		0	0		1	
-233633	Eyestalk Waist Cord	4	88	60	6	4	1	inv_belt_12	75	0	crit=1;int=8;sp=43;sta=10	0		0	0		1	
-233634	Death's Sting	4	84	60	13	2	15	inv_weapon_shortblade_33	0	66.58	ap=28;sta=10	0		0	0		1	
-233636	Scepter of the False Prophet	4	84	60	21	2	4	inv_mace22	0	66.39	heal=189;int=20;spDmg=63;sta=11	0		0	0		1	
-233638	Ring of the Godslayer	4	88	60	11	4	0	inv_jewelry_ring_ahnqiraj_06	0	0	agi=26;sta=12	0		0	0	1	1	
-233639	Vanquished Tentacle of C'Thun	4	88	60	12	4	0	inv_misc_ahnqirajtrinket_05	0	0		0		0	0	1	1	
-233641	Cloak of Clarity	4	88	60	16	4	1	inv_misc_cape_02	66	0	heal=55;int=12;mp5=4;spDmg=19;spi=8;sta=7	0		0	0		1	
-233642	Mark of C'Thun	4	88	60	2	4	0	inv_jewelry_necklace_ahnqiraj_04	0	0	defense=10;hit=1;sta=24	0		0	0		1	
-233643	Anubisath Warhammer	4	76	60	13	2	4	inv_hammer_11	0	57.5	ap=36;sta=8	0		0	0		1	
-233644	Garb of Royal Ascension	4	76	60	20	4	1	inv_chest_cloth_48	116	0	hit=2;resShadow=25;sp=30;sta=21	0		0	0		1	
-233645	Gloves of the Immortal	4	76	60	10	4	1	inv_gauntlets_14	192	0	crit=1;defense=9;hit=1;sta=24	0		0	0		1	
-233648	Ritssyn's Ring of Chaos	4	76	60	11	4	0	inv_jewelry_ring_34	0	0	crit=1;sp=27;sta=6	0		0	0	1	1	
-233649	Shard of the Fallen Star	4	76	60	12	4	0	inv_misc_ahnqirajtrinket_04	0	0		0		0	0	1	1	
-233674	Enigma Pants	4	81	60	7	4	1	inv_pants_cloth_08	107	0	crit=1;int=21;sp=49;spi=13;sta=12	0		128	0		1	
-233675	Enigma Slippers	4	78	60	8	4	1	inv_boots_cloth_03	82	0	crit=1;int=12;sp=34;spi=8;sta=10	0		128	0		1	
-233676	Enigma Diadem	4	81	60	1	4	1	inv_helmet_06	100	0	crit=1;int=20;sp=47;spi=15;sta=12	0		128	0		1	
-233677	Enigma Mantle	4	78	60	3	4	1	inv_shoulder_03	89	0	int=11;sp=41;sta=8	0		128	0		1	
-233678	Enigma Garb	4	88	60	20	4	1	inv_chest_cloth_11	133	0	crit=1;int=18;sp=54;spi=14;sta=12	0		128	0		1	
-233679	Leggings of the Oracle	4	81	60	7	4	1	inv_pants_cloth_07	107	0	crit=1;heal=84;int=23;spDmg=28;spi=15;sta=14	0		16	0		1	
-233680	Robes of the Oracle	4	88	60	20	4	1	inv_chest_cloth_10	133	0	crit=2;heal=88;int=21;spDmg=30;spi=13;sta=11	0		16	0		1	
-233681	Shoulderpads of the Oracle	4	78	60	3	4	1	inv_shoulder_03	89	0	crit=1;heal=51;int=15;spDmg=17;spi=12;sta=12	0		16	0		1	
-233682	Crown of the Oracle	4	81	60	1	4	1	inv_helmet_06	100	0	crit=1;heal=86;int=28;spDmg=29;spi=17;sta=15	0		16	0		1	
-233683	Slippers of the Oracle	4	78	60	8	4	1	inv_boots_cloth_07	82	0	crit=1;heal=66;int=13;spDmg=22;sta=10	0		16	0		1	
-233728	Blood-Caked Insignia	4	1	0	12	4	0	spell_deathknight_runetap	0	0		0		0	0	1	1	
-233729	Blood-Caked Choker	4	74	60	2	4	0	inv_jewelry_necklace_34	0	0	agi=10;sta=30;str=16	0		0	0		1	
-233730	Blood-Caked Talisman	4	74	60	2	4	0	inv_jewelry_necklace_39	0	0	agi=16;ap=20;sta=30	0		0	0		1	
-233731	Blood-Caked Amulet	4	74	60	2	4	0	inv_jewelry_necklace_42	0	0	int=10;sp=19;sta=30	0		0	0		1	
-233732	Blood-Caked Necklace	4	74	60	2	4	0	inv_jewelry_necklace_44	0	0	heal=35;int=10;spDmg=12;sta=30	0		0	0		1	
-233733	Blood-Caked Ring	4	74	60	11	4	0	inv_jewelry_ring_36	0	0	agi=10;sta=30;str=16	0		0	0	1	1	
-233734	Blood-Caked Circle	4	74	60	11	4	0	inv_jewelry_ring_39	0	0	agi=16;ap=20;sta=30	0		0	0	1	1	
-233735	Blood-Caked Loop	4	74	60	11	4	0	inv_jewelry_ring_77	0	0	int=10;sp=19;sta=30	0		0	0	1	1	
-233736	Blood-Caked Band	4	74	60	11	4	0	inv_jewelry_ring_78	0	0	heal=35;int=10;spDmg=12;sta=30	0		0	0	1	1	
-233737	Blood-Caked Cloak	4	74	60	16	4	1	inv_misc_cape_18	57	0	agi=10;sta=30;str=16	0		0	0		1	
-233738	Blood-Caked Cape	4	74	60	16	4	1	inv_misc_cape_08	57	0	agi=16;ap=20;sta=30	0		0	0		1	
-233739	Blood-Caked Drape	4	74	60	16	4	1	inv_misc_cape_22	57	0	int=10;sp=19;sta=30	0		0	0		1	
-233740	Blood-Caked Shroud	4	74	60	16	4	1	inv_chest_cloth_16	57	0	heal=35;int=10;spDmg=12;sta=30	0		0	0		1	
-233775	Battle Hardened Silk Cuffs	4	74	60	9	4	1	inv_bracer_07	50	0	int=10;sp=20;sta=24	0		128	0		1	
-233776	Battle Hardened Silk Cuffs	4	74	60	9	4	1	inv_bracer_09	50	0	int=10;sp=20;sta=24	0		128	0		1	
-233777	Battle Hardened Silk Sash	4	74	60	6	4	1	inv_belt_13	64	0	crit=1;int=12;sp=25;sta=30	0		128	0		1	
-233778	Battle Hardened Silk Sash	4	74	60	6	4	1	inv_belt_22	64	0	crit=1;int=12;sp=25;sta=30	0		128	0		1	
-233779	Battle Hardened Satin Bracers	4	74	60	9	4	1	inv_bracer_07	50	0	int=10;sp=20;sta=24	0		16	0		1	
-233780	Battle Hardened Satin Bracers	4	74	60	9	4	1	inv_bracer_09	50	0	int=10;sp=20;sta=24	0		16	0		1	
-233781	Battle Hardened Satin Wrists	4	74	60	9	4	1	inv_bracer_07	50	0	heal=37;int=10;spDmg=13;sta=24	0		16	0		1	
-233782	Battle Hardened Satin Wrists	4	74	60	9	4	1	inv_bracer_09	50	0	heal=37;int=10;spDmg=13;sta=24	0		16	0		1	
-233783	Battle Hardened Satin Sash	4	74	60	6	4	1	inv_belt_22	64	0	crit=1;int=12;sp=25;sta=30	0		16	0		1	
-233784	Battle Hardened Satin Sash	4	74	60	6	4	1	inv_belt_13	64	0	crit=1;int=12;sp=25;sta=30	0		16	0		1	
-233785	Battle Hardened Satin Cinch	4	74	60	6	4	1	inv_belt_22	64	0	crit=1;heal=37;int=12;spDmg=13;sta=30	0		16	0		1	
-233786	Battle Hardened Satin Cinch	4	74	60	6	4	1	inv_belt_13	64	0	crit=1;heal=46;int=12;spDmg=16;sta=30	0		16	0		1	
-233797	Obsidian Stormhammer	4	75	60	21	2	4	inv_hammer_04	0	56.5	int=8;sp=60;sta=10	0		0	0		2	
-233798	Obsidian Sageblade	4	75	60	21	2	7	inv_sword_51	0	56.33	int=12;sp=60;sta=14	0		0	0		2	
-233826	Vampiric Cowl	4	79	60	1	4	1	inv_helmet_52	178	0	defense=9;int=10;sta=40	0		0	0		2	
-233833	Vampiric Shawl	4	79	60	3	4	1	inv_shoulder_23	150	0	defense=7;int=8;sta=29	0		0	0		2	
-233837	Vampiric Robe	4	79	60	20	4	1	inv_chest_cloth_38	200	0	defense=10;int=13;sta=39	0		0	0		2	
-233956	Qiraji Silk Scarf	4	73	60	16	4	1	inv_misc_cape_18	56	0	hit=1;sta=6;str=23	0		0	0		2	
-233958	Qiraji Silk Cape	4	73	60	16	4	1	inv_misc_cape_08	56	0	agi=23;hit=1;sta=6	0		0	0		2	
-233959	Qiraji Silk Cloak	4	73	60	16	4	1	inv_misc_cape_22	56	0	hit=1;int=7;sp=25;spi=7;sta=6	0		0	0		2	
-233960	Qiraji Silk Drape	4	73	60	16	4	1	inv_chest_cloth_16	56	0	crit=1;heal=31;int=10;spDmg=11;spi=8;sta=7	0		0	0		2	
-233990	Speedstone	4	80	60	12	4	0	inv_pet_scorchedstone	0	0	crit=2	0		0	0	1	2	
-233991	Tear of the Dreamer	4	80	60	12	4	0	inv_elemental_crystal_life	0	0	hit=1;sp=46	0		0	0		2	
-233992	Lodestone of Retaliation	4	80	60	12	4	0	inv_stone_08	0	0	defense=11;sta=23	0		0	0	1	2	
-233993	Enchanted Stopwatch	4	80	60	12	4	0	inv_misc_pocketwatch_02	0	0		0		0	0	1	2	
-233994	Ruby-Encrusted Broach	4	80	60	12	4	0	inv_jewelry_necklace_15	0	0	crit=1;heal=68;int=18;spDmg=23	0		0	0		2	
-234016	Signet Ring of the Bronze Dragonflight	4	60	60	11	4	0	inv_jewelry_ring_40	0	0	hit=1;int=7;sp=21;sta=6	0		0	0		1	910:3
-234017	Signet Ring of the Bronze Dragonflight	4	60	60	11	4	0	inv_jewelry_ring_40	0	0	hit=1;sta=8;str=18	0		0	0		1	910:3
-234018	Signet Ring of the Bronze Dragonflight	4	60	60	11	4	0	inv_jewelry_ring_40	0	0	defense=5;sta=18;str=10	0		0	0		1	910:3
-234019	Signet Ring of the Bronze Dragonflight	4	60	60	11	4	0	inv_jewelry_ring_40	0	0	heal=40;int=7;mp5=3;spDmg=14;sta=6	0		0	0		1	910:3
-234020	Signet Ring of the Bronze Dragonflight	4	65	60	11	4	0	inv_jewelry_ring_40	0	0	hit=1;int=8;sp=22;sta=7	0		0	0		1	910:4
-234021	Signet Ring of the Bronze Dragonflight	4	65	60	11	4	0	inv_jewelry_ring_40	0	0	hit=1;sta=9;str=19	0		0	0		1	910:4
-234022	Signet Ring of the Bronze Dragonflight	4	65	60	11	4	0	inv_jewelry_ring_40	0	0	defense=5;sta=19;str=11	0		0	0		1	910:4
-234023	Signet Ring of the Bronze Dragonflight	4	65	60	11	4	0	inv_jewelry_ring_40	0	0	heal=42;int=8;mp5=3;spDmg=14;sta=7	0		0	0		1	910:4
-234024	Signet Ring of the Bronze Dragonflight	4	70	60	11	4	0	inv_jewelry_ring_40	0	0	hit=1;int=8;sp=25;sta=8	0		0	0		1	910:5
-234025	Signet Ring of the Bronze Dragonflight	4	70	60	11	4	0	inv_jewelry_ring_40	0	0	heal=46;int=8;mp5=4;spDmg=16;sta=8	0		0	0		1	910:5
-234026	Signet Ring of the Bronze Dragonflight	4	70	60	11	4	0	inv_jewelry_ring_40	0	0	hit=1;sta=11;str=21	0		0	0		1	910:5
-234027	Signet Ring of the Bronze Dragonflight	4	70	60	11	4	0	inv_jewelry_ring_40	0	0	defense=6;sta=21;str=12	0		0	0		1	910:5
-234028	Signet Ring of the Bronze Dragonflight	4	75	60	11	4	0	inv_jewelry_ring_40	0	0	hit=1;int=8;sp=26;sta=8	0		0	0		1	910:6
-234029	Signet Ring of the Bronze Dragonflight	4	75	60	11	4	0	inv_jewelry_ring_40	0	0	heal=48;int=8;mp5=4;spDmg=16;sta=8	0		0	0		1	910:6
-234030	Signet Ring of the Bronze Dragonflight	4	75	60	11	4	0	inv_jewelry_ring_40	0	0	hit=1;sta=11;str=22	0		0	0		1	910:6
-234031	Signet Ring of the Bronze Dragonflight	4	75	60	11	4	0	inv_jewelry_ring_40	0	0	defense=6;sta=22;str=12	0		0	0		1	910:6
-234032	Signet Ring of the Bronze Dragonflight	4	80	60	11	4	0	inv_jewelry_ring_40	0	0	hit=1;int=9;sp=28;sta=8	0		0	0		1	910:7
-234033	Signet Ring of the Bronze Dragonflight	4	80	60	11	4	0	inv_jewelry_ring_40	0	0	heal=53;int=9;mp5=5;spDmg=18;sta=8	0		0	0		1	910:7
-234034	Signet Ring of the Bronze Dragonflight	4	80	60	11	4	0	inv_jewelry_ring_40	0	0	hit=1;sta=13;str=24	0		0	0		1	910:7
-234035	Signet Ring of the Bronze Dragonflight	4	80	60	11	4	0	inv_jewelry_ring_40	0	0	defense=7;sta=24;str=13	0		0	0		1	910:7
-234061	Qiraji Sacrificial Dagger	4	75	60	13	2	15	inv_weapon_shortblade_12	0	56.32	ap=22;hit=1;sta=15	0		0	0		1	
-234062	Vestments of the Shifting Sands	4	75	60	20	4	1	inv_chest_cloth_17	114	0	crit=1;int=14;sp=40;spi=14;sta=20	0		0	0		1	
-234064	Belt of the Inquisition	4	75	60	6	4	1	inv_belt_05	64	0	heal=55;hit=1;int=17;spDmg=19;sta=16	0		0	0		1	
-234070	Bracers of Qiraji Command	4	75	60	9	4	1	inv_bracer_13	50	0	heal=35;hit=1;int=12;spDmg=12;sta=11	0		0	0		1	
-234073	Dustwind Turban	4	75	60	1	4	1	inv_helmet_62	93	0	crit=1;heal=66;int=20;spDmg=22;spi=15;sta=18	0		0	0		1	
-234076	Talon of Furious Concentration	4	75	60	23	4	0	inv_mace_21	0	0	crit=1;int=5;sp=26;sta=4	0		0	0		1	
-234079	Cloak of the Savior	4	75	60	16	4	1	inv_misc_cape_16	57	0	heal=33;int=11;spDmg=11;spi=13;sta=10	0		0	0		1	
-234080	Eye of Moam	4	75	60	12	4	0	inv_misc_eye_01	0	0		0		0	0	1	1	
-234082	Mantle of Maz'Nadir	4	75	60	3	4	1	inv_shoulder_25	86	0	int=15;sp=36;spi=7;sta=11	0		0	0		1	
-234083	Ring of Fury	4	75	60	11	4	0	inv_jewelry_ring_ahnqiraj_04	0	0	ap=48;hit=1;sta=9	0		0	0	1	1	
-234092	Fetish of Chitinous Spikes	4	75	60	12	4	0	inv_misc_ahnqirajtrinket_02	0	0		0		0	0	1	1	
-234093	Quicksand Waders	4	75	60	8	4	1	inv_boots_cloth_05	79	0	int=14;sp=34;spi=11;sta=14	0		0	0		1	
-234097	Stinger of Ayamiss	4	77	60	21	2	4	inv_mace_23	0	58.54	crit=1;int=12;sp=68;sta=9	0		0	0		1	
-234101	Ring of the Desert Winds	4	75	60	11	4	0	inv_jewelry_ring_ahnqiraj_05	0	0	crit=1;hit=1;int=8;sp=21	0		0	0	1	1	
-234106	Gloves of Dark Wisdom	4	77	60	10	4	1	inv_gauntlets_19	73	0	crit=1;heal=44;int=19;spDmg=15;sta=15	0		0	0		1	
-234108	Leggings of the Black Blizzard	4	77	60	7	4	1	inv_pants_cloth_06	103	0	crit=1;int=16;sp=47;spi=8;sta=12	0		0	0		1	
-234112	Sand Polished Hammer	4	77	60	13	2	4	inv_mace_24	0	58.33	ap=24;crit=1;sta=9	0		0	0		1	
-234113	Sandstorm Cloak	4	77	60	16	4	1	inv_misc_cape_06	139	0	defense=10;hit=1;sta=12;str=9	0		0	0		1	
-234114	Shackles of the Unscarred	4	77	60	9	4	1	inv_bracer_07	51	0	crit=1;int=12;sp=19;sta=9	0		0	0		1	
-234115	Staff of the Ruins	4	77	60	17	2	10	inv_staff_12	0	75.88	crit=1;hit=2;int=23;sp=68;spi=17;sta=24	0		0	0		1	
-234116	Fury of the Forgotten Swarm	4	75	60	2	4	0	inv_jewelry_necklace_14	0	0	crit=1;hit=1;sta=11;str=15	0		0	0		1	
-234117	Treads of the Wandering Nomad	4	75	60	8	4	1	inv_boots_cloth_05	79	0	heal=66;int=18;spDmg=22;spi=11	0		0	0		1	
-234119	Antenna of Invigoration	4	75	60	26	2	19	inv_wand_04	0	95.62	heal=31;int=4;mp5=2;spDmg=11	0		0	0		1	
-234122	The Lost Kris of Zedd	4	75	60	21	2	15	inv_sword_32	0	56.33	sp=60;spellCrit=1;sta=16	0		0	0		1	
-234130	Amulet of Shadow Shielding	4	79	60	2	4	0	inv_jewelry_necklace_17	0	0	defense=9;resShadow=20;sta=15	0		0	0		1	
-234132	Drake Tooth Necklace	4	79	60	2	4	0	inv_jewelry_necklace_22	0	0	heal=33;int=10;resNature=20;spDmg=11;sta=8	0		0	0		1	
-234134	Gnomish Turban of Psychic Might	4	79	60	1	4	1	inv_helmet_63	98	0	heal=68;int=22;spDmg=23;sta=22	0		0	0		1	
-234135	Band of Icy Depths	4	79	60	11	4	0	inv_jewelry_ring_35	0	0	resFrost=20;sta=19	0		0	0	1	1	
-234136	Darkwater Robes	4	79	60	20	4	1	inv_chest_cloth_31	120	0	int=18;resFire=20;spFrost=57;sta=17	0		0	0		1	
-234137	Fang of Korialstrasz	4	79	60	21	2	15	inv_weapon_shortblade_29	0	60.56	heal=144;int=14;spDmg=47;spi=13;sta=9	0		0	0	1	1	
-234138	Shadowsong's Sorrow	4	79	60	13	2	15	inv_weapon_shortblade_25	0	60.62	agi=13;sta=9;str=14	0		0	0	1	1	
-234139	Ravencrest's Legacy	4	79	60	13	2	7	inv_sword_49	0	60.71	agi=9;sta=13;str=14	0		0	0	1	1	
-234141	Runesword of the Red	4	79	60	21	2	7	inv_sword_51	0	60.68	int=10;sp=77;spi=9;sta=17	0		0	0	1	1	
-234150	Gloves of Delusional Power	4	75	60	10	4	1	inv_gauntlets_17	72	0	int=16;resNature=15;sp=27;sta=14	0		0	0		1	
-234151	Green Dragonskin Cloak	4	75	60	16	4	1	inv_misc_cape_17	57	0	resNature=20;sp=18;sta=10	0		0	0	1	1	
-234152	Hammer of Bestial Fury	4	75	60	21	2	4	inv_mace_20	82	56.32	apFeral=260;sta=12;str=13	0		0	0	1	1	
-234153	Staff of Rampant Growth	4	75	60	17	2	10	inv_staff_36	0	73.27	crit=2;heal=112;int=20;resNature=20;spDmg=37;spi=14;sta=15	0		0	0	1	1	
-234154	Trance Stone	4	75	60	23	4	0	inv_misc_orb_01	0	0	agi=10;int=10;spi=10;sta=10;str=10	0		0	0	1	1	
-234155	Malfurion's Signet Ring	4	75	60	11	4	0	inv_jewelry_ring_37	0	0	hit=1;resNature=20;sta=15	0		0	0	1	1	
-234158	Dragonheart Necklace	4	75	60	2	4	0	inv_jewelry_necklace_18	0	0	defense=11;sp=12;sta=20	0		0	0		1	
-234160	Ring of the Unliving	4	75	60	11	4	0	inv_jewelry_ring_38	0	0	agi=21;hit=1;sta=13	0		0	0	1	1	
-234161	Belt of the Dark Bog	4	75	60	6	4	1	inv_belt_15	64	0	int=9;resNature=25;sp=20;sta=16	0		0	0		1	
-234162	Black Bark Wristbands	4	75	60	9	4	1	inv_bracer_07	50	0	int=4;sp=26;sta=15	0		0	0		1	
-234168	Mendicant's Slippers	4	75	60	8	4	1	inv_boots_cloth_05	79	0	heal=55;int=24;spDmg=19;sta=12	0		0	0		1	
-234169	Mindtear Band	4	75	60	11	4	0	inv_jewelry_ring_04	0	0	crit=1;int=6;sp=25;sta=6	0		0	0	1	1	
-234170	Nightmare Blade	4	75	60	13	2	7	inv_sword_44	0	56.3	ap=32;defense=7;sta=9	0		0	0	1	1	
-234172	Emerald Dragonfang	4	75	60	13	2	15	inv_weapon_shortblade_22	0	56.32	agi=14	0		0	0	1	1	
-234175	Hibernation Crystal	4	75	60	12	4	0	inv_misc_gem_stone_01	0	0		0		0	0	1	1	
-234176	Darkmoon Card: Heroism	4	66	60	12	4	0	inv_misc_ticket_tarot_heroism_01	0	0		0		0	0	1	1	
-234177	Darkmoon Card: Blue Dragon	4	66	60	12	4	0	inv_misc_ticket_tarot_bluedragon_01	0	0		0		0	0	1	1	
-234178	Darkmoon Card: Maelstrom	4	66	60	12	4	0	inv_misc_ticket_tarot_maelstrom_01	0	0		0		0	0	1	1	
-234179	Darkmoon Card: Twisting Nether	4	66	60	12	4	0	inv_misc_ticket_tarot_twistingnether_01	0	0		0		0	0	1	1	
-234198	Signet Ring of the Bronze Dragonflight	4	60	60	11	4	0	inv_jewelry_ring_40	0	0	agi=18;hit=1;sta=8	0		0	0		1	910:3
-234199	Signet Ring of the Bronze Dragonflight	4	65	60	11	4	0	inv_jewelry_ring_40	0	0	agi=19;hit=1;sta=9	0		0	0		1	910:4
-234200	Signet Ring of the Bronze Dragonflight	4	70	60	11	4	0	inv_jewelry_ring_40	0	0	agi=21;hit=1;sta=11	0		0	0		1	910:5
-234201	Signet Ring of the Bronze Dragonflight	4	75	60	11	4	0	inv_jewelry_ring_40	0	0	agi=22;hit=1;sta=11	0		0	0		1	910:6
-234202	Signet Ring of the Bronze Dragonflight	4	80	60	11	4	0	inv_jewelry_ring_40	0	0	agi=24;hit=1;sta=13	0		0	0		1	910:7
-234312	Sylvan Shoulders	4	75	60	3	4	1	inv_shoulder_18	86	0	hit=1;int=8;resNature=25;sp=23;sta=9	0		0	0		2	
-234315	Sylvan Crown	4	75	60	1	4	1	inv_crown_01	93	0	crit=1;int=13;resNature=30;sp=30;sta=14	0		0	0		2	
-234317	Sylvan Vest	4	75	60	5	4	1	inv_chest_plate07	114	0	crit=1;int=12;resNature=30;sp=32;sta=13	0		0	0		2	
-234428	Obsidian Heartseeker	4	75	60	13	2	15	inv_sword_17	0	56.47	crit=1;sta=10;str=11	0		0	0		2	
-234436	Signet Ring of the Bronze Dragonflight	4	80	60	11	4	0	inv_jewelry_ring_40	0	0	int=9;sp=30;sta=8	0		1296	0		1	910:7
-234437	Signet Ring of the Bronze Dragonflight	4	75	60	11	4	0	inv_jewelry_ring_40	0	0	int=8;sp=29;sta=8	0		1296	0		1	910:6
-234438	Signet Ring of the Bronze Dragonflight	4	70	60	11	4	0	inv_jewelry_ring_40	0	0	int=8;sp=28;sta=8	0		1296	0		1	910:5
-234439	Signet Ring of the Bronze Dragonflight	4	65	60	11	4	0	inv_jewelry_ring_40	0	0	int=8;sp=26;sta=7	0		1296	0		1	910:4
-234440	Signet Ring of the Bronze Dragonflight	4	60	60	11	4	0	inv_jewelry_ring_40	0	0	int=7;sp=25;sta=6	0		1296	0		1	910:3
-234462	Earthstrike	4	75	0	12	4	0	spell_nature_abolishmagic	0	0		0		0	0	1	1	
-234463	Wrath of Cenarius	4	75	0	11	4	0	inv_jewelry_ring_40	0	0		0		0	0	1	1	
-234484	Dreamscale Bracers	4	80	60	9	4	1	inv_bracer_06	53	0	resNature=20;sp=22;sta=7	0		0	0		2	
-234485	Dreamscale Mitts	4	80	60	10	4	1	inv_gauntlets_23	76	0	crit=1;resNature=25;sp=26;spi=8	0		0	0		2	
-234614	Void-Touched Emblem	4	60	1	12	4	0	inv_enchant_voidsphere	0	0		0		0	0	1	1	
-234650	Ancient Qiraji Ripper	4	79	60	13	2	7	inv_sword_59	0	60.69	ap=16;crit=1;sta=8	0		0	0		1	
-234749	Earthcalm Orb	4	75	0	23	4	0	inv_misc_gem_pearl_06	0	0	crit=1;heal=44;int=12;spDmg=15	0		0	0		1	
-234760	Rockfury Bracers	4	75	0	9	4	1	inv_bracer_12	50	0	hit=1;sp=28;sta=7	0		0	0		1	
-234761	Might of Cenarius	4	75	0	11	4	0	inv_jewelry_ring_41	0	0	ap=20;hit=1;sta=10	0		0	0	1	1	
-234779	Grace of Earth	4	70	0	12	4	0	inv_misc_herb_02	0	0	heal=55;hit=2;mp5=5;spDmg=19	0		0	0	1	1	
-234780	Band of Earthen Might	4	70	0	11	4	0	inv_jewelry_ring_19	0	0	crit=1;hit=1;sta=14;str=10	0		0	0	1	1	
-234782	Earthpower Vest	4	70	0	5	4	1	inv_chest_cloth_06	107	0	crit=1;int=34;sp=30	0		0	0		1	
-234786	Band of Earthen Wrath	4	65	0	11	4	0	inv_jewelry_ring_18	0	0	crit=1;heal=35;int=10;spDmg=12	0		0	0	1	1	
-234788	Earthweave Cloak	4	65	0	16	4	1	inv_misc_cape_07	50	0	agi=23;hit=1	0		0	0		1	
-234792	Ravenholdt Slicer	4	70	0	13	2	7	inv_sword_38	0	51.61	ap=34;sta=8	0		0	0		1	
-234793	Shivsprocket's Shiv	4	70	0	21	2	15	inv_sword_21	0	51.67	hit=1;sp=40;sta=16	0		0	0		1	
-234797	The Thunderwood Poker	4	70	0	13	2	15	inv_sword_17	0	51.67	agi=17;sta=9	0		0	0	1	1	
-234800	Simone's Cultivating Hammer	4	70	0	21	2	4	inv_hammer_05	0	51.67	heal=76;int=17;spDmg=26;sta=8	0		0	0		1	
-234801	Amulet of the Fallen God	4	88	60	2	4	0	inv_jewelry_necklace_ahnqiraj_02	0	0	heal=59;mp5=6;spDmg=20;sta=11	0		0	0		1	
-234802	Cloak of the Fallen God	4	88	60	16	4	1	inv_misc_cape_10	66	0	agi=27;sta=13;str=12	0		0	0		1	
-234803	Ring of the Fallen God	4	88	60	11	4	0	inv_jewelry_ring_ahnqiraj_02	0	0	hit=1;int=6;sp=37;sta=5	0		0	0	1	1	
-234806	Blessed Qiraji Pugio	4	79	60	13	2	15	inv_weapon_shortblade_35	0	60.71	ap=18;crit=1;hit=1;sta=7	0		0	0		1	
-234808	Blessed Qiraji Acolyte Staff	4	79	60	17	2	10	inv_staff_20	0	78.83	crit=2;hit=1;int=33;sp=77;spi=14;sta=15	0		0	0	1	1	
-234809	Blessed Qiraji Augur Staff	4	79	60	17	2	10	inv_staff_20	0	78.83	crit=2;heal=144;int=30;mp5=6;spDmg=47;sta=22	0		0	0	1	1	
-234810	Blessed Qiraji War Hammer	4	79	60	13	2	4	inv_mace_24	70	60.6	apFeral=338;defense=8;sta=12;str=10	0		0	0		1	
-234811	Charm of the Shifting Sands	4	77	60	2	4	0	inv_jewelry_necklace_ahnqiraj_03	0	0	int=13;sp=27;sta=9	0		0	0		1	
-234812	Amulet of the Shifting Sands	4	77	60	2	4	0	inv_jewelry_necklace_ahnqiraj_03	0	0	heal=51;mp5=7;spDmg=17	0		0	0		1	
-234813	Choker of the Shifting Sands	4	77	60	2	4	0	inv_jewelry_necklace_ahnqiraj_03	0	0	ap=46;hit=1;sta=12	0		0	0		1	
-234814	Pendant of the Shifting Sands	4	77	60	2	4	0	inv_jewelry_necklace_ahnqiraj_03	0	0	defense=10;hit=1;sta=21	0		0	0		1	
-234962	Jade Inlaid Vestments	4	75	60	20	4	1	inv_chest_cloth_39	114	0	int=18;sp=44;spi=16;sta=16	0		0	0		1	
-234974	Staff of the Qiraji Prophets	4	76	60	17	2	10	inv_staff_01	0	74.48	int=32;resNature=20;sp=64;spi=15;sta=21	0		0	0		1	
-234976	Wand of Qiraji Nobility	4	78	60	26	2	19	inv_wand_06	0	102.19	sp=20;sta=3	0		0	0		1	
-234979	Sharpened Silithid Femur	4	79	60	21	2	7	inv_sword_58	0	60.65	crit=1;int=14;sp=77;sta=7	0		0	0	1	1	
-234984	Death's Sting	4	84	60	13	2	15	inv_weapon_shortblade_33	0	66.58	ap=28;sta=10	0		0	0		1	
-234986	Anubisath Warhammer	4	76	60	13	2	4	inv_hammer_11	0	57.5	ap=36;sta=8	0		0	0		1	
-234989	Qiraji Sacrificial Dagger	4	75	60	13	2	15	inv_weapon_shortblade_12	0	56.32	ap=22;hit=1;sta=15	0		0	0		1	
-234992	Stinger of Ayamiss	4	77	60	21	2	4	inv_mace_23	0	58.54	crit=1;int=12;sp=68;sta=9	0		0	0		1	
-234994	Sand Polished Hammer	4	77	60	13	2	4	inv_mace_24	0	58.33	ap=24;crit=1;sta=9	0		0	0		1	
-234995	Staff of the Ruins	4	77	60	17	2	10	inv_staff_12	0	75.88	crit=1;hit=2;int=23;sp=68;spi=17;sta=24	0		0	0		1	
-234998	The Lost Kris of Zedd	4	75	60	21	2	15	inv_sword_32	0	56.33	sp=60;spellCrit=1;sta=16	0		0	0		1	
-234999	Blessed Qiraji War Hammer	4	79	60	13	2	4	inv_mace_24	70	60.6	apFeral=338;defense=8;sta=12;str=10	0		0	0		1	
-235000	Blessed Qiraji Augur Staff	4	79	60	17	2	10	inv_staff_20	0	78.83	crit=2;heal=144;int=30;mp5=6;spDmg=47;sta=22	0		0	0	1	1	
-235001	Blessed Qiraji Acolyte Staff	4	79	60	17	2	10	inv_staff_20	0	78.83	crit=2;hit=1;int=33;sp=77;spi=14;sta=15	0		0	0	1	1	
-235002	Blessed Qiraji Pugio	4	79	60	13	2	15	inv_weapon_shortblade_35	0	60.71	ap=18;crit=1;hit=1;sta=7	0		0	0		1	
-235010	Gavel of Infinite Wisdom	4	79	60	21	2	4	inv_mace22	0	60.56	crit=1;int=12;sp=77;sta=10	0		16	0		1	
-235013	Blade of Vaulted Secrets	4	79	60	21	2	7	inv_sword_57	0	60.65	crit=1;int=12;sp=77;sta=10	0		128	0		1	
-235014	Scepter of the False Prophet	4	84	60	21	2	4	inv_mace22	0	66.39	heal=189;int=20;spDmg=63;sta=11	0		0	0		1	
-235282	Antenna of Invigoration	4	75	60	26	2	19	inv_wand_04	0	95.62	heal=31;int=4;mp5=2;spDmg=11	0		0	0		1	
-235874	Cultist's Handwraps	4	86	60	10	4	1	inv_gauntlets_06	81	0	crit=1;int=7;sp=37	44	12718,12719,12720,12729,12730,12731,12734,12735,12740,12741,12742,12743,12744,12745,12746,12747,12748,12749,12750,12756,12757,12758,12759,12761	0	0		1	
-235878	Malefic Belt	4	84	60	6	4	1	inv_belt_03	72	0	heal=81;spDmg=27;spi=13;sta=10	0		0	0		1	
-235880	Pauper Soles	4	84	60	8	4	1	inv_boots_fabric_01	87	0	int=8;resFrost=14;sp=47;sta=10	0		0	0		1	
-235884	Spectral Signet	4	84	60	11	4	0	inv_jewelry_ring_16	0	0	int=8;spShadow=43;sta=7	0		0	0	1	1	
-235885	Ghastly Ring	4	84	60	11	4	0	inv_jewelry_ring_39	0	0	ap=48;sta=6	0		0	0	1	1	
-235886	Kaigy's Clasp	4	85	60	2	4	0	inv_jewelry_necklace_17	0	0	agi=26;ap=26;hit=1	0		0	0		1	
-235887	Barian's Choker	4	85	60	2	4	0	inv_jewelry_necklace_22	0	0	heal=62;int=10;spDmg=21;spi=8	0		0	0		1	
-235888	Clobberclub	4	85	60	13	2	4	inv_mace_1h_stratholme_d_02	0	67.86	defense=10;sta=10	0		0	0		1	
-235889	Servant's Quarterstaff	4	83	60	17	2	10	inv_staff_02	0	85	agi=25;apFeral=423;defense=13;hit=1;sta=40	0		0	0		1	
-235890	Shadow Weaver's Needle	4	83	60	21	2	15	inv_weapon_shortblade_02	0	65.29	hit=1;int=17;sp=96;sta=11	0		0	0		1	
-235893	Shadowbound Grimoire	4	83	60	23	4	0	inv_misc_book_06	0	0	int=11;spShadow=43	0		0	0		1	
-235894	Doomsayer's Demise	4	83	60	26	2	19	inv_misc_bone_taurenskull_01	0	113.67		0		0	0		1	
-236077	Frostfire Bindings	4	88	60	9	4	1	inv_bracer_13	58	0	int=12;sp=30;sta=10	0		128	0		1	
-236078	Frostfire Belt	4	88	60	6	4	1	inv_belt_03	75	0	crit=1;int=10;sp=35;sta=10	0		128	0		1	
-236079	Frostfire Leggings	4	88	60	7	4	1	inv_pants_cloth_05	116	0	crit=1;int=14;sp=53;sta=14	0		128	0		1	
-236080	Frostfire Sandals	4	86	60	8	4	1	inv_boots_fabric_01	89	0	crit=1;int=11;sp=35;sta=9	0		128	0		1	
-236081	Frostfire Robe	4	92	60	20	4	1	inv_chest_cloth_43	138	0	crit=2;hit=1;int=14;sp=47;sta=12	0		128	0		1	
-236082	Frostfire Gloves	4	88	60	10	4	1	inv_gauntlets_17	83	0	crit=1;int=10;sp=35;sta=10	0		128	0		1	
-236083	Frostfire Circlet	4	88	60	1	4	1	inv_crown_01	108	0	crit=1;int=13;sp=54;sta=12	0		128	0		1	
-236084	Frostfire Shoulderpads	4	86	60	3	4	1	inv_shoulder_25	97	0	hit=1;int=11;sp=36;sta=9	0		128	0		1	
-236085	Frostfire Ring	4	92	60	11	4	0	inv_jewelry_ring_51naxxramas	0	0	crit=1;hit=1;sp=32	0		128	0		1	
-236087	Frostfire Wristwraps	4	88	60	9	4	1	inv_bracer_13	58	0	int=10;sp=23;sta=10	0		128	0		1	
-236088	Frostfire Waistguard	4	88	60	6	4	1	inv_belt_03	75	0	int=10;sp=40;sta=10	0		128	0		1	
-236089	Frostfire Mantle	4	86	60	3	4	1	inv_shoulder_25	97	0	int=10;sp=39;sta=10	0		128	0		1	
-236090	Frostfire Pants	4	88	60	7	4	1	inv_pants_cloth_05	116	0	int=12;sp=59;sta=12	0		128	0		1	
-236091	Frostfire Hood	4	88	60	1	4	1	inv_crown_01	108	0	int=13;sp=59;sta=11	0		128	0		1	
-236092	Frostfire Mitts	4	88	60	10	4	1	inv_gauntlets_17	83	0	int=10;sp=40;sta=10	0		128	0		1	
-236093	Frostfire Band	4	92	60	11	4	0	inv_jewelry_ring_51naxxramas	0	0	sp=33	0		128	0		1	
-236094	Frostfire Boots	4	86	60	8	4	1	inv_boots_fabric_01	89	0	int=10;sp=39;sta=9	0		128	0		1	
-236095	Frostfire Garb	4	92	60	20	4	1	inv_chest_cloth_43	138	0	int=14;sp=61;sta=12	0		128	0		1	
-236097	Robe of Faith	4	92	60	20	4	1	inv_chest_cloth_43	138	0	crit=2;heal=97;int=16;spDmg=32;spi=16;sta=15	0		16	0		1	
-236098	Belt of Faith	4	88	60	6	4	1	inv_belt_08	75	0	crit=1;heal=66;int=14;spDmg=22;spi=14;sta=13	0		16	0		1	
-236099	Sandals of Faith	4	86	60	8	4	1	inv_boots_fabric_01	89	0	crit=1;heal=70;int=11;spDmg=24;spi=11;sta=11	0		16	0		1	
-236100	Bindings of Faith	4	88	60	9	4	1	inv_bracer_13	58	0	crit=1;heal=48;int=10;spDmg=16;spi=9;sta=9	0		16	0		1	
-236101	Leggings of Faith	4	88	60	7	4	1	inv_pants_cloth_05	116	0	crit=2;heal=92;int=15;spDmg=31;spi=15;sta=14	0		16	0		1	
-236102	Shoulderpads of Faith	4	86	60	3	4	1	inv_shoulder_25	97	0	crit=1;heal=70;int=11;spDmg=24;spi=11;sta=11	0		16	0		1	
-236103	Circlet of Faith	4	88	60	1	4	1	inv_crown_01	108	0	crit=2;heal=97;int=11;spDmg=32;spi=11;sta=11	0		16	0		1	
-236104	Gloves of Faith	4	88	60	10	4	1	inv_gauntlets_17	83	0	crit=1;heal=70;int=13;spDmg=24;spi=12;sta=12	0		16	0		1	
-236105	Ring of Faith	4	92	60	11	4	0	inv_jewelry_ring_51naxxramas	0	0	crit=1;heal=62;int=10;spDmg=21	0		16	0		1	
-236106	Wrists of Faith	4	88	60	9	4	1	inv_bracer_13	58	0	crit=1;int=14;spShadow=29;sta=12	0		16	0		1	
-236107	Girdle of Faith	4	88	60	6	4	1	inv_belt_08	75	0	crit=1;int=19;spShadow=43;sta=14	0		16	0		1	
-236108	Mantle of Faith	4	86	60	3	4	1	inv_shoulder_25	97	0	crit=1;int=14;spShadow=46;sta=14	0		16	0		1	
-236109	Pants of Faith	4	88	60	7	4	1	inv_pants_cloth_05	116	0	crit=2;int=21;spShadow=60;sta=14	0		16	0		1	
-236110	Crown of Faith	4	88	60	1	4	1	inv_crown_01	108	0	crit=2;int=15;spShadow=63;sta=14	0		16	0		1	
-236111	Hands of Faith	4	88	60	10	4	1	inv_gauntlets_17	83	0	crit=1;int=19;spShadow=40;sta=16	0		16	0		1	
-236112	Band of Faith	4	92	60	11	4	0	inv_jewelry_ring_51naxxramas	0	0	crit=1;spShadow=40	0		16	0		1	
-236113	Boots of Faith	4	86	60	8	4	1	inv_boots_fabric_01	89	0	crit=1;int=18;spShadow=43;sta=15	0		16	0		1	
-236114	Garb of Faith	4	92	60	20	4	1	inv_chest_cloth_43	138	0	crit=2;int=12;spShadow=70;sta=10	0		16	0		1	
-236219	Harbinger of Doom	4	83	60	13	2	15	inv_knife_1h_stratholme_d_03	0	65.38	agi=11;crit=1;hit=1;sta=5	0		0	0	1	1	
-236220	Necro-Knight's Garb	4	85	60	20	4	1	inv_chest_cloth_46	378	0	crit=1;defense=22;sta=32	0		0	0		1	
-236221	Misplaced Servo Arm	4	83	60	13	2	4	inv_mace_28	0	65.34	int=10;str=13	0		0	0		1	
-236223	Ring of the Eternal Flame	4	83	60	11	4	0	inv_jewelry_ring_48naxxramas	0	0	crit=1;spFire=40	0		0	0	1	1	
-236256	Touch of Frost	4	83	60	2	4	0	inv_jewelry_amulet_04	0	0	crit=1;resFrost=20;sp=20;sta=20	0		0	0		1	
-236257	Gem of Nerubis	4	83	60	23	4	0	inv_offhand_naxxramas_d_01	0	0	crit=1;sp=33	0		0	0		1	
-236258	Cryptfiend Silk Cloak	4	83	60	16	4	1	inv_misc_cape_naxxramas_02	203	0	defense=12;hit=1;sta=14	0		0	0		1	
-236259	Band of Unanswered Prayers	4	83	60	11	4	0	inv_jewelry_ring_50naxxramas	0	0	heal=57;int=13;spDmg=19;sta=11	0		0	0	1	1	
-236261	Malice Stone Pendant	4	83	60	2	4	0	inv_jewelry_necklace_29naxxramas	0	0	int=14;sp=27;sta=10	0		0	0		1	
-236263	Widow's Remorse	4	83	60	13	2	7	inv_sword_60	0	65	defense=7;hit=1;sta=11	0		0	0	1	1	
-236264	The Widow's Embrace	4	83	60	21	2	4	inv_mace_29	0	65.26	heal=179;int=12;spDmg=60;spi=8;sta=12	0		0	0		1	
-236265	Wraith Blade	4	85	60	21	2	7	inv_sword_11	0	67.78	crit=1;int=10;sp=106;sta=8	0		0	0		1	
-236266	Pendant of Forgotten Names	4	85	60	2	4	0	inv_jewelry_necklace_28naxxramas	0	0	heal=53;int=14;spDmg=18;spi=13	0		0	0		1	
-236267	Crystal Webbed Robe	4	85	60	20	4	1	inv_chest_cloth_46	128	0	sp=59;sta=11	0		0	0		1	
-236268	Kiss of the Spider	4	85	60	12	4	0	inv_trinket_naxxramas04	0	0	crit=1;hit=1	0		0	0	1	1	
-236269	Maexxna's Fang	4	85	60	13	2	15	inv_knife_1h_stratholme_d_01	0	67.75	ap=32;hit=1;sta=6	0		0	0	1	1	
-236272	Cloak of the Scourge	4	83	60	16	4	1	inv_misc_cape_naxxramas_01	63	0	ap=46;hit=1;sta=17	0		0	0		1	
-236273	Band of the Inevitable	4	83	60	11	4	0	inv_jewelry_ring_53naxxramas	0	0	hit=1;sp=32	0		0	0	1	1	
-236274	Hailstone Band	4	83	60	11	4	0	inv_jewelry_ring_35	130	0	defense=13;resFrost=20;sta=18	0		0	0	1	1	
-236275	Noth's Frigid Heart	4	83	60	23	4	0	inv_offhand_naxxramas_04	0	0	heal=55;int=8;spDmg=19;sta=10	0		0	0		1	
-236277	Necklace of Necropsy	4	83	60	2	4	0	inv_jewelry_necklace_30naxxramas	0	0	heal=33;int=9;spDmg=11;spi=9;sta=8	0		0	0		1	
-236278	Glacial Headdress	4	83	60	1	4	1	inv_helmet_53	102	0	crit=2;hit=1;int=11;resFrost=40;sp=47;sta=10	0		0	0		1	
-236279	Preceptor's Hat	4	83	60	1	4	1	inv_helmet_50	102	0	crit=3;spShadow=54	0		0	0		1	
-236282	Loatheb's Reflection	4	85	60	12	4	0	inv_trinket_naxxramas05	0	0	resArcane=13;resFire=13;resFrost=13;resNature=13;resShadow=13;sta=19	0		0	0	1	1	
-236283	Ring of Spiritual Fervor	4	85	60	11	4	0	inv_jewelry_ring_52naxxramas	0	0	crit=1;heal=53;int=8;spDmg=18;sta=8	0		0	0	1	1	
-236284	Brimstone Staff	4	85	60	17	2	10	inv_staff_13	0	88.28	crit=3;hit=2;int=20;sp=113;sta=20	0		0	0		1	
-236286	Band of Unnatural Forces	4	85	60	11	4	0	inv_jewelry_ring_48naxxramas	0	0	ap=46;crit=1;hit=1	0		0	0	1	1	
-236289	Cloak of Suturing	4	83	60	16	4	1	inv_misc_cape_naxxramas_02	63	0	heal=62;int=5;spDmg=21;spi=5	0		0	0		1	
-236290	Wand of Fates	4	83	60	26	2	19	inv_wand_1h_stratholme_d_01	0	113.67	sp=22	0		0	0		1	
-236291	Band of Reanimation	4	83	60	11	4	0	inv_jewelry_ring_49naxxramas	0	0	agi=28;crit=1	0		0	0	1	1	
-236292	Midnight Haze	4	83	60	21	2	15	inv_knife_1h_stratholme_d_02	47	65.38	crit=1;hit=1;sp=96;sta=10	0		0	0		1	
-236295	Glacial Mantle	4	83	0	3	4	1	inv_shoulder_14	94	0	crit=1;resFrost=33;sp=39;sta=18	0		0	0		1	
-236297	The End of Dreams	4	83	60	21	2	4	inv_mace_1h_stratholme_d_02	0	65.26	apFeral=423;crit=1;int=13;sp=96;sta=10	0		0	0		1	
-236298	Rime Covered Mantle	4	83	60	3	4	1	inv_shoulder_05	94	0	sp=40;sta=9	0		0	0		1	
-236300	Gluth's Missing Collar	4	83	60	2	4	0	inv_jewelry_necklace_27naxxramas	0	0	blockValue=21;defense=5;sta=14	0		0	0		1	
-236301	Digested Hand of Power	4	83	60	23	4	0	inv_offhand_stratholme_a_02	140	0	hit=1;int=10;sp=13;sta=14	0		0	0		1	
-236302	Eye of Diminution	4	85	60	12	4	0	inv_trinket_naxxramas02	0	0	crit=3	0		0	0	1	1	
-236303	Leggings of Polarity	4	85	60	7	4	1	inv_pants_08	112	0	hit=1;int=10;sp=47;sta=14	0		0	0		1	
-236305	Spire of Twilight	4	85	60	17	2	10	inv_staff_31	0	88.28	crit=2;heal=198;int=13;spDmg=66;sta=20	0		0	0		1	
-236306	The Castigator	4	85	60	13	2	4	inv_mace_1h_stratholme_d_01	0	67.86	ap=16;crit=1	0		0	0	1	1	
-236307	Veil of Eclipse	4	83	60	16	4	1	inv_misc_cape_naxxramas_01	63	0	crit=1;int=8;sp=28;sta=8	0		0	0		1	
-236310	Wand of the Whispering Dead	4	83	60	26	2	19	inv_wand_1h_stratholme_d_01	0	113.67	heal=35;int=5;spDmg=12;spi=4	0		0	0		1	
-236311	Signet of the Fallen Defender	4	83	60	11	4	0	inv_jewelry_ring_50naxxramas	120	0	defense=10;sta=20	0		0	0	1	1	
-236312	Iblis, Blade of the Fallen Seraph	4	83	60	13	2	7	inv_sword_07	0	65.38	ap=12;crit=1;hit=1	0		0	0	1	1	
-236313	The Soul Harvester's Bindings	4	83	60	9	4	1	inv_bracer_07	55	0	crit=1;sp=32	0		0	0		1	
-236316	Sadist's Collar	4	83	60	2	4	0	inv_jewelry_necklace_29naxxramas	0	0	agi=25;crit=1;sta=10	0		0	0		1	
-236318	Seal of the Damned	4	85	60	11	4	0	inv_jewelry_ring_48naxxramas	0	0	crit=1;hit=1;sp=28;sta=9	0		0	0	1	1	
-236320	Warmth of Forgiveness	4	85	60	12	4	0	inv_trinket_naxxramas01	0	0	heal=68;mp5=10;spDmg=23	0		0	0	1	1	
-236327	Cloak of the Necropolis	4	90	60	16	4	1	inv_misc_cape_naxxramas_03	68	0	int=8;sp=27;sta=6	0		0	0		1	
-236328	Sapphiron's Left Eye	4	90	60	23	4	0	inv_offhand_naxxramas_03	0	0	int=8;sp=25;sta=10	0		0	0		1	
-236329	Eye of the Dead	4	90	60	12	4	0	inv_trinket_naxxramas01	0	0	heal=77;spDmg=26	0		0	0	1	1	
-236330	Sapphiron's Right Eye	4	90	60	23	4	0	inv_offhand_naxxramas_02	0	0	crit=1;heal=59;int=9;spDmg=20	0		0	0		1	
-236331	The Restrained Essence of Sapphiron	4	90	60	12	4	0	inv_trinket_naxxramas06	0	0	sp=43	0		0	0	1	1	
-236333	Shroud of Dominion	4	90	60	16	4	1	inv_misc_cape_naxxramas_03	68	0	ap=50;crit=1;sta=11	0		0	0		1	
-236334	Slayer's Crest	4	90	60	12	4	0	inv_trinket_naxxramas03	0	0	ap=70	0		0	0	1	1	
-236337	Glyph of Deflection	4	90	60	12	4	0	inv_trinket_naxxramas05	0	0	block=3;defense=14;sta=21	0		0	0	1	1	
-236339	Gressil, Dawn of Ruin	4	89	60	13	2	7	inv_sword_61	0	73.17	agi=10	0		0	0	1	1	
-236341	The Hungering Cold	4	89	60	13	2	7	inv_sword_62	140	72.92	sta=7	0		0	0	1	1	
-236342	Stormrage's Talisman of Seething	4	92	60	2	4	0	inv_jewelry_necklace_28naxxramas	0	0	ap=22;crit=2;sta=10	0		0	0		1	
-236343	Kingsfall	4	89	60	13	2	15	inv_weapon_shortblade_37	0	73.33	agi=17;crit=1;hit=1	0		0	0	1	1	
-236345	Gem of Trapped Innocents	4	92	60	2	4	0	inv_jewelry_necklace_29naxxramas	0	0	crit=2;int=5;sp=20;sta=5	0		0	0		1	
-236346	Soulseeker	4	89	60	17	2	10	inv_staff_15	0	95.16	crit=2;int=15;sp=127;spi=20;sta=10	0		0	0		1	
-236348	Hammer of the Twisting Nether	4	89	60	21	2	4	inv_mace_27	0	73.16	heal=239;int=11;spDmg=80;sta=8	0		0	0		1	
-236349	Doomfinger	4	92	60	26	2	19	inv_wand_1h_stratholme_d_02	0	139	crit=1;sp=16	0		0	0		1	
-236351	Mark of the Champion	4	90	0	12	4	0	inv_misc_token_argentdawn3	0	0		0		0	0	1	1	
-236352	Mark of the Champion	4	90	0	12	4	0	inv_misc_token_argentdawn2	0	0		0		0	0	1	1	
-236399	Atiesh, Greatstaff of the Guardian	5	90	60	17	2	10	inv_staff_medivh	0	97.07	crit=3;heal=362;int=22;spDmg=169;spi=24;sta=20	0		16	0		1	
-236400	Atiesh, Greatstaff of the Guardian	5	90	60	17	2	10	inv_staff_medivh	0	97.07	int=24;sp=150;spi=23;sta=21	0		128	0		1	
-236642	Mender's Handwraps	4	86	60	10	4	1	inv_gauntlets_06	81	0	crit=1;heal=70;int=17;spDmg=24;spi=10;sta=8	44	12718,12719,12720,12729,12730,12731,12734,12735,12740,12741,12742,12743,12744,12745,12746,12747,12748,12749,12750,12756,12757,12758,12759,12761	0	0		1	
-236690	Glacial Cloak	4	80	60	16	4	1	inv_misc_cape_16	61	0	hit=2;resFrost=24;sta=18	0		0	0		2	
-236692	Glacial Gloves	4	80	60	10	4	1	inv_gauntlets_06	76	0	hit=1;resFrost=30;sp=35;sta=22	0		0	0		2	
-236693	Glacial Wrists	4	80	60	9	4	1	inv_bracer_07	53	0	crit=1;resFrost=20;sp=23;sta=15	0		0	0		2	
-236694	Glacial Vest	4	80	60	5	4	1	inv_chest_cloth_08	121	0	hit=2;resFrost=40;sp=47;sta=26	0		0	0		2	
-236704	Frosty Wrists	4	80	60	9	4	1	inv_bracer_07	53	0	heal=33;int=14;resFrost=20;spDmg=11;spi=13;sta=14	0		0	0		2	
-236705	Frosty Gloves	4	80	60	10	4	1	inv_gauntlets_06	76	0	heal=48;int=12;resFrost=30;spDmg=16;spi=10;sta=26	0		0	0		2	
-236706	Frosty Vest	4	80	60	5	4	1	inv_chest_cloth_08	121	0	heal=70;int=20;resFrost=40;spDmg=24;spi=18;sta=26	0		0	0		2	
-236716	Bracers of Undead Cleansing	4	70	58	9	4	1	inv_bracer_12	47	0	int=13;sta=10	0		0	0		2	
-236717	Gloves of Undead Cleansing	4	70	0	10	4	1	inv_gauntlets_16	67	0	crit=1;int=10;sta=10	0		0	0		1	
-236718	Robe of Undead Cleansing	4	70	58	20	4	1	inv_chest_cloth_04	107	0	crit=1;int=18;sta=14	0		0	0		1	
-236719	Bracers of Undead Purification	4	70	58	9	4	1	inv_bracer_12	47	0	heal=44;int=13;spDmg=15;sta=10	0		0	0		2	
-236720	Gloves of Undead Purification	4	70	0	10	4	1	inv_gauntlets_16	67	0	crit=1;heal=59;int=10;spDmg=20;sta=10	0		0	0		1	
-236721	Robe of Undead Purification	4	70	58	20	4	1	inv_chest_cloth_04	107	0	crit=1;heal=77;int=18;spDmg=26;sta=14	0		0	0		1	
-236722	Bracers of Undead Warding	4	70	58	9	4	1	inv_bracer_12	147	0	defense=8;sta=13	0		0	0		2	
-236723	Gloves of Undead Warding	4	70	0	10	4	1	inv_gauntlets_16	167	0	defense=10;sta=24	0		0	0		1	
-236724	Robe of Undead Warding	4	70	58	20	4	1	inv_chest_cloth_04	247	0	defense=12;sta=35	0		0	0		1	
-236782	Sairuh's Collar	4	85	60	2	4	0	inv_jewelry_necklace_19	90	0	defense=13;resFrost=16;sta=20	0		0	0		1	
-236871	Creepy Censor Sensors	3	80	60	1	4	1	inv_gizmo_newgoggles	90	0	spi=24;sta=24;str=24	0		0	0		2	
-237277	Frosty Leggings	4	80	0	7	4	1	inv_pants_06	106	0	heal=62;int=15;resFrost=40;spDmg=21;spi=14;sta=20	0		0	0		1	
-237279	Amulet of the Dawn	4	77	0	2	4	0	inv_jewelry_amulet_04	0	0	int=14;sp=23;sta=14	0		0	0		1	
-237280	Medallion of the Dawn	4	77	0	2	4	0	inv_jewelry_amulet_04	0	0	ap=36;crit=1;sta=15	0		0	0		1	
-237281	Bracers of Hope	4	77	0	9	4	1	inv_bracer_12	51	0	heal=37;int=12;spDmg=13;spi=12;sta=10	0		0	0		1	
-237283	Talisman of Ascendance	4	77	0	12	4	0	inv_misc_gem_pearl_04	0	0		0		0	0	1	1	
-237285	Band of Resolution	4	75	0	11	4	0	inv_jewelry_ring_01	0	0	defense=9;sta=24	0		0	0	1	1	
-237286	Band of Piety	4	75	0	11	4	0	inv_jewelry_ring_33	0	0	heal=44;int=10;mp5=4;spDmg=15;sta=10	0		0	0	1	1	
-237287	Verimonde's Last Resort	4	75	0	21	2	15	inv_weapon_shortblade_03	0	56.43	crit=1;int=11;sp=60;sta=10	0		0	0		1	
-237291	Glacial Leggings	4	80	0	7	4	1	inv_pants_06	106	0	hit=2;int=14;resFrost=40;sp=33;sta=15	0		0	0		1	
-237294	Ramaladni's Icy Grasp	4	80	0	11	4	0	inv_jewelry_ring_35	0	0	hit=2;resFrost=25;sta=15	0		0	0	1	1	
-237815	Sentinel's Silk Leggings	4	78	60	7	4	1	inv_pants_cloth_05	204	0	crit=2;int=10;sp=32;sta=39	0		0	0	1	1	
-237820	Outrider's Silk Leggings	4	78	60	7	4	1	inv_pants_cloth_05	204	0	crit=2;int=10;sp=32;sta=39	0		0	0	1	1	
-238264	Scarlet Augur's Hood	3	86	60	1	4	1	inv_helmet_28	97	0	crit=1;int=10;sp=47;sta=10	0		0	0		2	
-238265	Scarlet Augur's Mantle	3	86	60	3	4	1	inv_shoulder_05	89	0	hit=1;int=11;sp=32;sta=10	0		0	0		2	
-238266	Scarlet Augur's Vestaments	3	86	60	5	4	1	inv_chest_cloth_18	119	0	crit=1;hit=1;int=10;sp=43;sta=10	0		0	0		2	
-238267	Scarlet Augur's Cuffs	3	86	60	9	4	1	inv_bracer_13	52	0	int=12;sp=25;sta=9	0		0	0		2	
-238268	Scarlet Augur's Mitts	3	86	60	10	4	1	inv_gauntlets_16	74	0	int=14;sp=33;sta=10	0		0	0		2	
-238269	Scarlet Augur's Strap	3	86	60	6	4	1	inv_belt_04	67	0	int=14;sp=33;sta=10	0		0	0		2	
-238270	Scarlet Augur's Leggings	3	86	60	7	4	1	inv_pants_cloth_02	104	0	crit=1;hit=1;int=10;sp=44;sta=8	0		0	0		2	
-238271	Scarlet Augur's Soles	3	86	60	8	4	1	inv_boots_02	82	0	int=13;sp=33;sta=12	0		0	0		2	
-238349	Abomination Skin Leggings	4	25	20	7	4	1	inv_pants_06	41	0	int=8;sp=18;sta=7	0		0	0		1	
-238350	Scorn's Focal Dagger	4	35	30	21	2	15	inv_weapon_shortblade_07	0	27.86	sp=13	0		0	0		1	
-238352	Scorn's Icy Choker	4	35	30	2	4	0	inv_jewelry_necklace_03	0	0	int=6;sp=13;sta=5	0		0	0		1	
-238353	Mantle of Lady Falther'ess	4	41	36	16	4	1	inv_misc_cape_17	32	0	int=9;sp=16	0		0	0		1	
-238354	Lady Falther'ess' Finger	4	41	36	26	2	19	inv_wand_12	0	44.23	spShadow=14	0		0	0		1	
-238355	Chains of the Lich	4	60	55	2	4	0	inv_belt_18	0	0	sp=29	0		0	0		1	
-238356	Waistband of Balzaphon	4	60	55	6	4	1	inv_belt_13	52	0	int=14;spFrost=33;sta=13	0		0	0		1	
-238357	Staff of Balzaphon	4	60	55	17	2	10	inv_staff_07	0	56.54	crit=1;int=10;spFrost=47;spi=7;sta=8	0		0	0		1	
-238358	Blackwood's Thigh	4	62	57	23	4	0	inv_misc_bone_10	0	0	sp=16;spi=13;sta=12	0		0	0		1	
-238361	Lord Blackwood's Blade	4	62	57	13	2	7	inv_sword_05	0	44.62	defense=9;sta=10	0		0	0		1	
-238362	Bracers of Mending	4	62	57	9	4	1	inv_bracer_13	42	0	heal=33;int=8;spDmg=11;spi=13;sta=5	0		0	0		1	
-238363	The Shadow's Grasp	4	62	57	10	4	1	inv_gauntlets_16	60	0	int=14;spShadow=34;sta=14	0		0	0		1	
-238364	Cloak of Revanchion	4	63	58	16	4	1	inv_misc_cape_02	49	0	agi=13;sta=12;str=13	0		0	0		1	
-238781	Semisafe Transporter: New Avalon	2	54	60	12	4	0	inv_misc_enggizmos_20	0	0		0		0	0		3	
-239060	Will of the Mountain	4	96	60	21	2	4	ability_paladin_hammeroftherighteous	0	83.62	crit=1;sta=5;str=17	0		0	0		1	
-239565	Garb of Revelation	4	98	60	20	4	1	inv_chest_cloth_61	146	0	crit=2;int=17;spShadow=76;sta=15	0		16	0		1	
-239572	Boots of Revelation	4	98	60	8	4	1	inv_boots_fabric_01	100	0	crit=1;int=21;spShadow=49;sta=18	0		16	0		1	
-239574	Hands of Revelation	4	98	60	10	4	1	inv_gauntlets_49	91	0	crit=1;int=22;spShadow=44;sta=19	0		16	0		1	
-239575	Crown of Revelation	4	98	60	1	4	1	inv_helmet_86	119	0	crit=2;int=20;spShadow=69;sta=19	0		16	0		1	
-239577	Pants of Revelation	4	98	60	7	4	1	inv_pants_cloth_22	128	0	crit=2;int=26;spShadow=66;sta=19	0		16	0		1	
-239581	Mantle of Revelation	4	98	60	3	4	1	inv_shoulder_49	110	0	int=17;spShadow=50;sta=17	0		16	0		1	
-239582	Girdle of Revelation	4	98	60	6	4	1	inv_belt_08	82	0	crit=1;int=22;spShadow=47;sta=17	0		16	0		1	
-239583	Wrists of Revelation	4	98	60	9	4	1	inv_bracer_13	64	0	crit=1;int=17;spShadow=34;sta=15	0		16	0		1	
-239584	Gloves of Revelation	4	98	60	10	4	1	inv_gauntlets_49	91	0	crit=2;heal=73;int=15;spDmg=25;spi=14;sta=13	0		16	0		1	
-239585	Circlet of Revelation	4	98	60	1	4	1	inv_helmet_86	119	0	crit=2;heal=110;int=16;spDmg=37;spi=14;sta=13	0		16	0		1	
-239586	Shoulderpads of Revelation	4	98	60	3	4	1	inv_shoulder_49	110	0	crit=1;heal=81;int=14;spDmg=27;spi=13;sta=12	0		16	0		1	
-239587	Leggings of Revelation	4	98	60	7	4	1	inv_pants_cloth_22	128	0	crit=2;heal=108;int=20;spDmg=36;spi=19;sta=17	0		16	0		1	
-239588	Bindings of Revelation	4	98	60	9	4	1	inv_bracer_13	64	0	crit=1;heal=55;int=15;spDmg=19;spi=11;sta=12	0		16	0		1	
-239589	Sandals of Revelation	4	98	60	8	4	1	inv_boots_fabric_01	100	0	crit=1;heal=79;int=14;spDmg=27;spi=13;sta=12	0		16	0		1	
-239590	Belt of Revelation	4	98	60	6	4	1	inv_belt_08	82	0	crit=1;heal=73;int=17;spDmg=25;spi=16;sta=15	0		16	0		1	
-239591	Robe of Revelation	4	98	60	20	4	1	inv_chest_cloth_61	146	0	heal=153;int=21;spDmg=51;spi=19;sta=20	0		16	0		1	
-240044	Fireleaf Wristwraps	4	98	60	9	4	1	inv_bracer_13	64	0	crit=1;int=12;sp=28;sta=12	0		128	0		1	
-240045	Fireleaf Waistguard	4	98	60	6	4	1	inv_belt_03	82	0	crit=1;int=14;sp=44;sta=13	0		128	0		1	
-240046	Fireleaf Mantle	4	98	60	3	4	1	inv_shoulder_49	110	0	int=14;sp=44;sta=11	0		128	0		1	
-240047	Fireleaf Pants	4	98	60	7	4	1	inv_pants_cloth_22	128	0	int=19;sp=61;sta=13	0		128	0		1	
-240048	Fireleaf Hood	4	98	60	1	4	1	inv_helmet_86	119	0	int=18;sp=62;sta=15	0		128	0		1	
-240049	Fireleaf Mitts	4	98	60	10	4	1	inv_gauntlets_49	91	0	crit=1;int=15;sp=47;sta=10	0		128	0		1	
-240050	Fireleaf Boots	4	98	60	8	4	1	inv_boots_fabric_01	100	0	crit=1;int=14;sp=43;sta=12	0		128	0		1	
-240051	Fireleaf Garb	4	98	60	20	4	1	inv_chest_cloth_61	146	0	crit=1;int=20;sp=65;sta=17	0		128	0		1	
-240052	Fireleaf Bindings	4	98	60	9	4	1	inv_bracer_13	64	0	crit=1;int=16;sp=35;sta=13	0		128	0		1	
-240053	Fireleaf Belt	4	98	60	6	4	1	inv_belt_03	82	0	hit=1;int=13;sp=46;sta=14	0		128	0		1	
-240054	Fireleaf Shoulderpads	4	98	60	3	4	1	inv_shoulder_49	110	0	crit=1;int=15;sp=41;sta=12	0		128	0		1	
-240055	Fireleaf Leggings	4	98	60	7	4	1	inv_pants_cloth_22	128	0	crit=1;int=19;sp=60;sta=19	0		128	0		1	
-240056	Fireleaf Circlet	4	98	60	1	4	1	inv_helmet_86	119	0	crit=1;int=19;sp=60;sta=17	0		128	0		1	
-240057	Fireleaf Gloves	4	98	60	10	4	1	inv_gauntlets_49	91	0	crit=2;int=14;sp=42;sta=13	0		128	0		1	
-240058	Fireleaf Sandals	4	98	60	8	4	1	inv_boots_fabric_01	100	0	crit=1;int=14;sp=43;sta=13	0		128	0		1	
-240059	Fireleaf Robe	4	98	60	20	4	1	inv_chest_cloth_61	146	0	crit=2;int=19;sp=63;sta=17	0		128	0		1	
-240174	Solistra, Fang of the First Light	4	96	60	13	2	15	inv_misc_monsterfang_01	0	83.75	agi=12;hit=1	0		0	0	1	1	
-240839	Thal'kituun, the Unseen Guest	4	92	60	21	2	15	inv_misc_monsterfang_01	64	77.31	defense=7;hit=1;sp=144;sta=15	0		0	0		1	
-240841	High Commander's Guard	4	96	60	21	2	7	inv_sword_74	0	83.75	defense=12;sta=14	0		0	0	1	1	
-240842	Scarlet Rotbringer	4	96	60	17	2	10	inv_staff_52	96	108.75	agi=14;apFeral=756;defense=7;sta=48;str=24	0		0	0		1	
-240849	Staff of the Glade	4	96	60	17	2	10	inv_staff_26	0	108.75	agi=33;sta=11;str=44	0		0	0		1	
-240850	Lightfist Hammer	4	96	60	13	2	4	inv_mace_39	0	83.62	sta=10;str=10	0		0	0	1	1	
-240851	Regicide	4	96	60	13	2	7	inv_sword_87	0	83.75	agi=14;crit=1;hit=1;str=12	0		0	0	1	1	
-240853	Queensfall	4	96	60	13	2	15	inv_weapon_shortblade_84	0	83.81	agi=19;crit=1;hit=1	0		0	0	1	1	
-240922	Deception	4	92	60	13	2	7	inv_sword_2h_blood_c_01	0	77.41	agi=15;hit=1;sta=10	0		0	0	1	1	
-240923	Duplicity	4	96	60	13	2	7	inv_sword_2h_blood_c_01	0	83.75	hit=1;sta=8;str=19	0		0	0	1	1	
-240998	Soporific Blade	4	96	60	21	2	15	inv_sword_05	0	83.75	crit=1;hit=1;int=10;sp=169;sta=11	0		0	0		1	
-241001	Tyr's Fall	4	96	60	21	2	4	inv_mace_82	0	83.54	crit=1;int=17;sp=169;sta=9	0		0	0		1	
-241002	Remnants of the Red	4	96	60	21	2	7	inv_sword_87	0	83.54	hit=1;int=10;sp=169;sta=5	0		0	0		1	
-241003	Mirage, Rod of Illusion	4	96	60	17	2	10	inv_staff_53	0	108.75	crit=3;int=28;sp=169;sta=12	0		0	0		1	
-241004	Conundrum	4	96	60	26	2	19	inv_wand_22	0	151.67	sp=30;sta=-10	0		0	0		1	
-241006	Spire of Sacrifice	4	96	60	21	2	4	inv_mace_56	0	83.54	crit=1;heal=317;spDmg=106;sta=7	0		0	0		1	
-241008	Condemnation	4	96	60	17	2	10	inv_staff_98	0	104.72	crit=3;heal=317;int=30;spDmg=106;spi=21;sta=20	0		0	0		1	
-241011	Greatstaff of Fealty	4	96	60	17	2	10	inv_staff_61	0	108.75	crit=1;heal=317;int=20;spDmg=106;spi=30;sta=16	0		0	0		1	
-241012	Wand of Reanimation	4	96	60	26	2	19	inv_wand_23	0	151.67	heal=46;int=6;spDmg=16	0		0	0		1	
-241020	Putress' Completed Diary	4	100	60	23	4	0	inv_misc_book_07	0	0	agi=-35;crit=2;sp=65;sta=7;str=-35	0		1424	0		1	
-241021	The Light	4	98	60	23	4	0	inv_misc_lantern_01	0	0	heal=84;spDmg=28	0		0	0		1	
-241022	Dawnbringer's Cloak	4	98	60	16	4	1	inv_misc_cape_06	73	0	blockValue=32;defense=15;sta=12	0		0	0		1	
-241023	Drape of the Dastardly	4	98	60	16	4	1	inv_misc_cape_20	73	0	agi=33;sta=6	0		0	0		1	
-241024	Scarlet Commander's Cape	4	98	60	16	4	1	inv_misc_cape_22	73	0	agi=9;crit=1;str=20	0		0	0		1	
-241025	Flag of the Broken Admiral	4	98	60	16	4	1	spell_misc_warsongfocus	73	0	crit=1;int=10;sp=35;sta=7	0		0	0		1	
-241026	Cardinal's Shawl	4	94	60	16	4	1	inv_misc_cape_18	70	0	crit=1;heal=73;int=10;spDmg=25;sta=8	0		0	0		1	
-241027	Shield Warden's Guard	4	94	60	11	4	0	inv_jewelry_ring_43	0	0	blockValue=18;defense=15;hit=1;sta=12	0		0	0	1	1	
-241028	Nathrezim Loop	4	92	60	11	4	0	inv_jewelry_ring_39	140	0	defense=12;hit=1;sta=20	0		0	0	1	1	
-241029	Baelin's Band	4	98	60	11	4	0	inv_jewelry_ring_55	0	0	crit=1;hit=1;str=20	0		0	0	1	1	
-241030	Mason's Fraternity Ring	4	98	60	11	4	0	inv_jewelry_ring_71	0	0	agi=30;crit=1	0		0	0	1	1	
-241031	Barthalomew's Promise	4	98	60	11	4	0	inv_jewelry_ring_63	0	0	crit=1;int=8;sp=35;sta=8	0		0	0	1	1	
-241032	Ring of Resurrection	4	98	60	11	4	0	inv_jewelry_ring_72	0	0	heal=84;spDmg=28	0		0	0	1	1	
-241034	Heart of Light	4	98	60	12	4	0	spell_holy_summonlightwell	0	0	defense=16;sta=32	0		0	0	1	1	
-241037	Abandoned Experiment	4	98	60	12	4	0	inv_alchemy_potion_06	0	0		0		0	0	1	1	
-241038	Sir Dornel's Didgeridoo	4	96	60	12	4	0	inv_misc_flute_01	0	0	crit=2;hit=1	0		0	0	1	1	
-241039	Infusion of Souls	4	98	60	12	4	0	spell_shadow_destructivesoul	0	0	sp=26	0		1490	0	1	1	
-241068	Stiltz's Standard	4	94	60	12	4	0	inv_misc_token_scarletcrusade	0	0	heal=88;int=10;spDmg=30;spi=10	0		0	0	1	1	
-241069	Choke Chain	4	96	0	2	4	0	inv_belt_18	0	0	defense=12;sta=20	0		0	0		1	
-241070	Hope of Herod	4	98	0	2	4	0	inv_jewelry_necklace_02	0	0	crit=1;sta=9;str=20	0		0	0		1	
-241071	Talisman of the Scarlet Scoundrel	4	98	0	2	4	0	inv_jewelry_necklace_15	0	0	agi=32	0		0	0		1	
-241072	Vial of Pus	4	98	0	2	4	0	inv_potion_19	0	0	crit=1;int=8;sp=42;sta=6	0		0	0		1	
-241073	Touch of Light	4	98	0	2	4	0	inv_jewelry_necklace_12	0	0	crit=1;heal=73;int=8;spDmg=25;sta=9	0		0	0		1	
-241077	Cardinal's Chapeau	4	94	60	1	4	1	inv_helmet_12	114	0	crit=2;heal=125;int=14;spDmg=42;sta=14	0		0	0		1	
-241078	Shroud of the Embalmed	4	98	60	1	4	1	inv_helmet_86	119	0	crit=3;int=14;sp=72;sta=10	0		0	0		1	
-241085	S03 - Scarlet Enclave - Sword 1h	2	45	40	13	2	7	inv_sword_75	0	34.72	resArcane=7;resFire=7;resFrost=7;resNature=7;resShadow=7	0		0	0		2	
 241087	Scarlet Staff	0	1	1	17	2	10	inv_staff_13	0	0.86		0		0	0		0	
 241088	Scarlet Staff	0	1	1	17	2	10	inv_staff_13	0	0.86		0		0	0		0	
 241089	Scarlet Dagger	2	10	5	13	2	15	inv_weapon_shortblade_15	0	5.31	sta=1	0		0	0		2	
-241091	Scarlet Mace	0	1	1	13	2	4	inv_mace_39	0	0.75		0		0	0		0	
-241092	Scarlet Edge	0	1	1	13	2	4	inv_sword_1h_blacksmithing_03	0	0.75		0		0	0		0	
-241121	Reborn Dagger	4	77	60	13	2	15	inv_sword_48	0	58.68		0		0	0		1	
-241122	Reborn Knife	2	10	5	13	2	15	inv_weapon_shortblade_15	0	5.31	sta=1	0		0	0		2	
-241123	Reborn Dagger	4	77	60	13	2	15	inv_sword_48	0	58.68		0		0	0		1	
-241124	Reborn Knife	2	10	5	13	2	15	inv_weapon_shortblade_15	0	5.31	sta=1	0		0	0		2	
-241153	Doan's Mantle	4	98	60	3	4	1	inv_shoulder_49	110	0	int=12;sp=51;sta=8	0		0	0		1	
-241156	Blighted Robes	4	98	60	5	4	1	inv_chest_cloth_61	286	0	crit=2;defense=21;sp=21;spi=34;sta=50	0		0	0		1	
-241159	Monastery Garb	4	94	60	20	4	1	inv_chest_cloth_61	141	0	crit=3;int=13;sp=75;spi=30;sta=10	0		0	0		1	
-241165	Penitent Wraps	4	96	60	9	4	1	inv_bracer_13	63	0	heal=75;int=8;spDmg=25	0		0	0		1	
-241167	Prisoner Shackles	4	96	60	10	4	1	inv_gauntlets_49	88	0	crit=2;int=8;spShadow=70;sta=7	0		0	0		1	
-241168	Sunblaze Grips	4	98	60	10	4	1	inv_gauntlets_49	91	0	int=12;spFire=63;sta=8	0		0	0		1	
-241171	Gloves of Departed Souls	4	92	60	10	4	1	inv_gauntlets_49	86	0	crit=1;heal=90;int=12;spDmg=30;sta=11	0		0	0		1	
-241173	High Wizard Wrap	4	94	60	6	4	1	inv_belt_08	79	0	crit=2;int=9;sp=55;sta=10	0		0	0		1	
-241176	Diesalven's Demise	4	92	60	6	4	1	inv_belt_08	78	0	int=9;sp=55;spi=18;sta=8	0		0	0		1	
-241177	Kilt of the Scarlet Arcanist	4	94	60	7	4	1	inv_pants_cloth_22	123	0	crit=2;int=9;sp=72;sta=10	0		0	0		1	
-241183	Ashwalkers	4	98	60	8	4	1	inv_boots_fabric_01	100	0	int=10;sp=47;spi=25;sta=10	0		0	0		1	
-241184	Savior Sandals	4	92	60	8	4	1	inv_boots_fabric_01	95	0	crit=2;heal=90;int=11;spDmg=30;sta=10	0		0	0		1	
-241241	Lucky Doubloon	4	96	60	12	4	0	inv_10_fishing_dragonislescoins_gold	0	0	crit=2	0		0	0	1	1	
-242310	Hand of Reborn Justice	3	80	60	12	4	0	inv_jewelry_talisman_13	0	0	ap=52	0		0	0		1	
-242311	Leonid's Charm	3	80	60	12	4	0	achievement_dungeon_cotstratholme	0	0	defense=14;hit=1;sta=20	0		0	0	1	1	
-242312	Barthalomew Family Seal	3	80	60	12	4	0	inv_summerfest_symbol_medium	0	0	crit=1;heal=48;int=10;mp5=5;spDmg=16	0		0	0	1	1	
-242313	Journal of the Revered	3	80	60	12	4	0	inv_misc_book_13	0	0	crit=1;hit=1;sp=30	0		0	0	1	1	
-242314	Cinders of the Fallen Crusade	4	96	0	12	4	0	inv_misc_powder_tin	0	0	ap=24;crit=2;hit=1	0		0	0	1	1	
-242315	Ashes of Arrogance	4	96	0	12	4	0	inv_misc_powder_adamantite	0	0	crit=2;hit=1;sp=14	0		0	0	1	1	
-242316	Dust of the Defiant	4	96	0	12	4	0	inv_misc_powder_iron	0	0	defense=19;hit=2;sta=21	0		0	0	1	1	
-242317	Desecrated Prayerbook	4	96	0	12	4	0	inv_misc_powder_copper	0	0	crit=2;heal=37;spDmg=13	0		0	0	1	1	
-242427	Putress' Diary	4	96	60	23	4	0	inv_misc_book_07	0	0	agi=-30;sp=42;sta=6;str=-30	0		1424	0		1	
-242429	Putress' Diary	4	94	60	23	4	0	inv_misc_book_07	0	0	agi=-25;sp=40;sta=5;str=-25	0		1424	0		1	
-242432	Putress' Diary	4	92	60	23	4	0	inv_misc_book_07	0	0	agi=-20;sp=37;sta=4;str=-20	0		1424	0		1	
-242434	Putress' Diary	4	90	60	23	4	0	inv_misc_book_07	0	0	agi=-15;sp=35;sta=3;str=-15	0		1424	0		1	
-242435	Putress' Diary	4	88	60	23	4	0	inv_misc_book_07	0	0	agi=-10;sp=33;sta=2;str=-10	0		1424	0		1	
-242436	Putress' Diary	4	86	60	23	4	0	inv_misc_book_07	0	0	agi=-5;sp=30;sta=1;str=-5	0		1424	0		1	
 242710	Monster Weapon [DNT]	0	1	1	13	2	7	inv_sword_24	0	0.75		0		0	0		0	
-242793	Portable Cannon	4	98	60	12	4	0	ability_vehicle_siegeenginecannon	0	0	crit=3;hit=2	0		0	0		1	
-243064	Long Staff	1	25	20	17	2	10	inv_staff_20	0	15.17		0		0	0		0	
-243345	Long Staff	1	25	20	17	2	10	inv_staff_20	0	15.17		0		0	0		0	
 244352	Cloak of the Veiled Paws	1	1	1	16	4	5	inv_cape_armor_fisherfolk_c_01	0	0		0		0	0		1	
 246164	Skullthumper	2	13	0	21	2	4	inv_mace_01	0	7		0		0	0		1	
 247789	Novice's Practice Wand	1	6	1	26	2	19	inv_weapon_shortblade_09	0	4		0		0	0		2	
