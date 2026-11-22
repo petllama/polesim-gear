@@ -46,4 +46,15 @@ return {
 		T.eq(U.button(p, "Holy").on, true); T.eq(U.button(p, "Automatic (talents)").on, false)
 		fx.done()
 	end,
+	-- Only specs with weights get a radio: a druid sees Balance and Restoration, never Feral.
+	spec_switch_supported_only = function()
+		local fx = F.load({ cls = "druid" })
+		local ns, U = fx.ns, fx.U
+		fx.open()
+		local p = fx.tab("weights")
+		T.ok(U.button(p, "Balance")); T.ok(U.button(p, "Restoration"))
+		T.eq(U.find(p, function(w) return w.text == "Feral" end), nil, "no Feral radio")
+		T.eq(#p.radios, 3)
+		fx.done()
+	end,
 }

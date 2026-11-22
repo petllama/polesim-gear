@@ -5,7 +5,13 @@ local Spec = {}
 ns.Spec = Spec
 
 -- Talent columns left to right on Forever's class tree (Polestar's class table has the same order).
-Spec.ORDER = { priest = { "discipline", "holy", "shadow" }, mage = { "arcane", "fire", "frost" } }
+-- A class's columns may name specs with no shipped weights (Feral, Enhancement, Protection,
+-- Retribution: the melee weapon rules aren't done): they are detected, never scored (Context).
+Spec.ORDER = {
+	priest = { "discipline", "holy", "shadow" }, mage = { "arcane", "fire", "frost" },
+	warlock = { "affliction", "demonology", "destruction" }, druid = { "balance", "feral", "restoration" },
+	shaman = { "elemental", "enhancement", "restoration" }, paladin = { "holy", "protection", "retribution" },
+}
 -- The spec with no talent points: armory.DEFAULT_BUILD, shipped in Data/Weights.lua.
 Spec.DEFAULT = (ns.DATA and ns.DATA.defaultSpec) or {}
 
@@ -96,10 +102,22 @@ function Spec.Detect(cls)
 	return Spec.Pick(points, #names > 0 and names or nil, cls), points
 end
 
--- The class's specs: its talent columns in order, else its weight files by name.
+-- Whether the addon ships weights for this spec.
+function Spec.Supported(cls, key)
+	local specs = ns.DATA.specs[cls]
+	return key ~= nil and specs ~= nil and specs[key] ~= nil
+end
+
+-- The class's specs with weights (the ones a player can pick): its talent columns in order, else its
+-- weight files by name.
 function Spec.Keys(cls)
-	if Spec.ORDER[cls] then return Spec.ORDER[cls] end
 	local out = {}
+	if Spec.ORDER[cls] then
+		for _, k in ipairs(Spec.ORDER[cls]) do
+			if Spec.Supported(cls, k) then out[#out + 1] = k end
+		end
+		return out
+	end
 	for k in pairs(ns.DATA.specs[cls] or {}) do out[#out + 1] = k end
 	table.sort(out)
 	return out
@@ -129,4 +147,6 @@ ns.Slash("spec", function(arg)
 	ns.Print("spec " .. tostring(key) .. " (" .. source .. ")" ..
 		(#shown > 0 and ("; talent points " .. table.concat(shown, "/")) or "") ..
 		". /psg spec auto|" .. table.concat(keys, "|"))
+	local why = ns.Context and ns.Context.SpecUnsupported and ns.Context.SpecUnsupported()
+	if why then ns.Print(why) end
 end)

@@ -1,6 +1,6 @@
 # PoleSim Gear
 
-Version 0.5.1. WoW: Forever addon: PoleSim's simulated, level-banded gear weights in game. Item scores with a
+Version 0.6.0. WoW: Forever addon: PoleSim's simulated, level-banded gear weights in game. Item scores with a
 "how?" breakdown, upgrade arrows, the best quest reward, and a gear planner window with where to get
 each upgrade. In testing.
 
@@ -8,8 +8,33 @@ each upgrade. In testing.
 Unzip it into `World of Warcraft/_forever_/Interface/AddOns/` (a new install needs a game restart; an
 update needs `/reload`).
 
-**Supports Priest and Mage** (Shadow/Holy/Discipline; Frost/Fire/Arcane). Other classes get one chat
-line ("<class> isn't supported yet") and nothing else.
+**Supported classes and specs** (weights from PoleSim's simulation of each spec leveling):
+
+| Class   | Specs with weights                      | No points yet | Not supported yet        |
+|---------|-----------------------------------------|---------------|--------------------------|
+| Priest  | Shadow, Holy, Discipline                | Shadow        |                          |
+| Mage    | Frost, Fire, Arcane                     | Frost         |                          |
+| Warlock | Affliction, Demonology, Destruction     | Affliction    |                          |
+| Druid   | Balance, Restoration                    | Balance       | Feral                    |
+| Shaman  | Elemental, Restoration                  | Elemental     | Enhancement              |
+| Paladin | Holy                                    | Holy          | Retribution, Protection  |
+
+Not supported yet: Druid Feral, Shaman Enhancement, Paladin Retribution and Protection, and all Warriors,
+Rogues and Hunters: their melee/hunter weapon rules are not done yet (weapon speed, daggers, dual wield,
+a hunter's ranged weapon and pet). A Warrior, Rogue or Hunter gets one chat line ("<class> isn't
+supported yet") and nothing else. A supported class whose talents point to an unsupported spec (e.g. a
+Feral druid) is not scored with another spec's weights: chat and the window say "Druid Feral isn't
+supported yet. Pick a supported spec in Settings to use its weights." and Settings (or the Weights tab, or
+`/psg spec balance`) lets you choose one of the class's supported specs.
+
+**Healer specs** (Restoration, Holy, Discipline) use leveling weights: what kills mobs fastest while
+questing (Holy paladins and Restoration shamans melee a lot while leveling, so Strength and weapon DPS
+count), not dungeon healing.
+
+Druid, Shaman and Paladin relics (idols, totems, librams) are scored by their stats only; their effects
+(e.g. "Increases the damage of your Moonfire spell") are not, so they score 0 today. PoleSim plays Druid,
+Shaman and Paladin with a two-hander, so the window suggests two-handers for them (no off hand list);
+tooltips still compare a shield or off hand with yours.
 
 **Requires Polestar** (the addon reads item sources and quests from Polestar's Codex): install and
 enable Polestar first, or PoleSim Gear does not load.
@@ -48,8 +73,8 @@ upgrade, gold: your pick; hover a slot for the item and its gain), and the stat 
   (through Polestar's Nav API).
 - **Weights:** your band's weights (step through the other bands) and the spec switch.
 - **Settings:** minimap button, tooltip score line, upgrade arrows, the quest reward mark, preferring upcoming guide quests, the look
-  ahead a new character starts with, the equip prompt (on/off, minimum gain, the never list), and
-  Polestar's gear-score question.
+  ahead a new character starts with, the equip prompt (on/off, minimum gain, the never list),
+  Polestar's gear-score question, and the spec (Automatic, or one of your class's specs with weights).
 
 ## Equip prompt
 
@@ -70,7 +95,8 @@ quiet. `/psg ask` asks about every upgrade in your bags now.
 At the auction house a **PoleSim upgrades** button sits just right of the auction house's top-right
 corner; it shows or hides the panel below it (kept between sessions). **Scan for upgrades** runs a few
 browse searches, one at a time and as fast as the auction house allows (a priest or mage: 6, cloth,
-neck/rings/trinkets/off hands and cloaks, then one per weapon type; usable items, common to epic, up to
+neck/rings/trinkets/off hands and cloaks, then one per weapon type; more for classes with more armor
+types (leather, mail from 40 for a shaman, plate from 40 for a paladin, shields) and weapon types; usable items, common to epic, up to
 your level + the window's look ahead); **Cancel** stops it. Each item found is scored like the window
 (against what you wear, rings and trinkets against the weaker one, weapons as one set: under a staff a
 one-hander counts with the best off hand for sale) and listed when it is an upgrade: icon, name with its
@@ -90,9 +116,12 @@ best suffix and says "any suffix"; its listings show each one's suffix (with the
 
 - `/psg`: open or close the window.
 - `/psg spec`: the spec in use and your talent points; `/psg spec auto` or `/psg spec <name>` (e.g.
-  `shadow`, `frost`) chooses it. Automatic = the talent tree with the most points (a tie goes as on the
-  website's import: Frost over Fire over Arcane, Shadow over Holy over Discipline); no points yet =
-  Shadow for a priest, Frost for a mage.
+  `shadow`, `frost`, `balance`) chooses it (only specs with weights). Automatic = the talent tree with
+  the most points; a tie goes as on the website's import, to the spec name later in the alphabet (Frost
+  over Fire over Arcane, Shadow over Holy over Discipline, Destruction over Demonology over Affliction,
+  Restoration over Feral over Balance, Restoration over Enhancement over Elemental, Retribution over
+  Protection over Holy); no points yet = Shadow for a priest, Frost for a mage, Affliction for a
+  warlock, Balance for a druid, Elemental for a shaman, Holy for a paladin.
 - `/psg minimap`: hide/show the minimap button (saved for the account).
 - `/psg ask`: ask to equip every upgrade in your bags now (the equip prompt, even for items there at login).
 - `/psg polestar`: ask again whether to turn off Polestar's own gear scores (forgets the earlier answer).

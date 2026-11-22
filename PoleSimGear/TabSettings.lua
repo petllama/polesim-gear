@@ -1,6 +1,7 @@
 -- Settings: the account-wide switches (minimap button, tooltip line, upgrade arrows, reward mark, the
 -- equip prompt), the look ahead a new character starts with, the equip prompt's minimum gain and never
--- list, and Polestar's gear-score question.
+-- list, Polestar's gear-score question, and the character's spec (Automatic or a spec with weights: the
+-- way out when the talents land on one without, e.g. Feral).
 local ADDON, ns = ...
 local Tab = {}
 ns.TabSettings = Tab
@@ -83,8 +84,36 @@ function Tab.Create(parent)
 		ns.Window.Refresh()
 	end, S.ACTION)
 	p.ask:SetPoint("TOPLEFT", 440, y - 14)
+	-- the spec (as the Weights tab and /psg spec)
+	y = y - 50
+	local sl = S.Text(p, 12, C.text)
+	sl:SetPoint("TOPLEFT", 16, y)
+	sl:SetText("Spec")
+	p.spec = S.Dropdown(p, 146, 24, Tab.SpecList, function(v) return ((ns.char and ns.char.spec) or "auto") == v end, Tab.SetSpec)
+	p.spec:SetPoint("TOPLEFT", 240, y + 5)
+	p.healer = S.Text(p, 11, C.label)
+	p.healer:SetPoint("TOPLEFT", 16, y - 22)
+	p.healer:SetWidth(560)
+	p.healer:SetText(Tab.HEALER_NOTE)
 	return p
 end
+
+-- The spec choices: Automatic (talents), then the class's specs with weights (Spec.Keys).
+function Tab.SpecList()
+	local out = { { value = "auto", text = "Automatic (talents)" } }
+	local cls = ns.Context.ClassKey()
+	for _, k in ipairs(cls and ns.Spec.Keys(cls) or {}) do out[#out + 1] = { value = k, text = S.Title(k) } end
+	return out
+end
+function Tab.SetSpec(v)
+	if not ns.char then return end
+	ns.char.spec = v
+	if ns.TabWeights and ns.TabWeights.view then ns.TabWeights.view.band = nil end
+	ns.Fire("STATE", "SPEC") -- as /psg spec: read the spec again, rescore, rebuild
+	ns.Window.Refresh()
+end
+-- (Restoration, Holy, Discipline: kill-sim weights, the website's)
+Tab.HEALER_NOTE = "Healer specs' weights are for leveling (killing while questing), not dungeon healing."
 
 -- The never list's count, and whose prompt asks (ours, or Polestar's while its Gear is on).
 function Tab.NeverText(n)
@@ -115,6 +144,7 @@ function Tab.Refresh(p)
 	p.clearNever:SetShown(n > 0)
 	p.promptNote:SetText(Tab.PromptNote())
 	p.minGain:Update()
+	p.spec:Update()
 end
 
 ns.Window.RegisterTab("settings", { create = Tab.Create, refresh = Tab.Refresh })

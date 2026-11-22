@@ -12,7 +12,9 @@ return {
 		T.eq(mb.upTo, 19); T.eq(mlo, 1); T.eq(msd.ref, "spFrost")
 		T.eq(select(3, B.For("mage", "fire", 30)).ref, "spFire")
 		T.eq(select(3, B.For("mage", "arcane", 60)).ref, "spArcane")
-		T.eq(B.For("warlock", "affliction", 30), nil, "a class with no shipped weights")
+		T.eq(select(3, B.For("warlock", "affliction", 30)).ref, "spShadow")
+		T.eq(B.For("warrior", "arms", 30), nil, "a class with no shipped weights")
+		T.eq(B.For("druid", "feral", 30), nil, "a spec with no shipped weights")
 	end,
 	above_the_last_band = function()
 		local B = T.addon(FILES).Bands

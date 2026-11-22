@@ -83,11 +83,11 @@ return {
 	end,
 	slash_spec_unsupported = function()
 		local ns = T.addon(FILES)
-		ns.Context = { ClassKey = function() return nil end, Unsupported = function() return "Warlock isn't supported yet" end }
+		ns.Context = { ClassKey = function() return nil end, Unsupported = function() return "Warrior isn't supported yet" end }
 		local said
 		ns.Print = function(...) said = table.concat({ ... }, " ") end
 		SlashCmdList.POLESIMGEAR("spec fire")
-		T.eq(said, "Warlock isn't supported yet")
+		T.eq(said, "Warrior isn't supported yet")
 	end,
 	slash_spec_mage = function()
 		local ns = T.addon(FILES)
@@ -170,12 +170,12 @@ return {
 	end,
 	class_without_column_order = function()
 		local ns = T.addon(FILES)
-		ns.DATA.specs.warlock = { frost = ns.DATA.specs.priest.shadow, fire = ns.DATA.specs.priest.shadow }
+		ns.DATA.specs.warrior = { frost = ns.DATA.specs.priest.shadow, fire = ns.DATA.specs.priest.shadow }
 		ns.char = { spec = "auto" }
-		ns.Context = { ClassKey = function() return "warlock" end }
+		ns.Context = { ClassKey = function() return "warrior" end }
 		talents(grid({ { 5 } }, true), GROUPS)
-		T.eq((ns.Spec.Detect("warlock")), nil)
-		local key, source = ns.Spec.Current("warlock")
+		T.eq((ns.Spec.Detect("warrior")), nil)
+		local key, source = ns.Spec.Current("warrior")
 		T.eq(key, "fire", "first spec by name when there is no default"); T.eq(source, "default")
 		local said
 		ns.Print = function(...) said = table.concat({ ... }, " ") end

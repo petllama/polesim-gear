@@ -18,7 +18,7 @@ return {
 	-- A class with no shipped weights: one chat line at login, then nothing (no context, no errors).
 	unsupported_class = function()
 		local ns = T.addon(FILES)
-		require("wow").class = { "Warlock", "WARLOCK", 9 }
+		require("wow").class = { "Warrior", "WARRIOR", 1 }
 		local said = {}
 		ns.Print = function(...) said[#said + 1] = table.concat({ ... }, " ") end
 		T.eq(ns.Context.ClassKey(), nil)
@@ -26,8 +26,8 @@ return {
 		ns._frame.scripts.OnEvent(ns._frame, "PLAYER_LOGIN")
 		ns._frame.scripts.OnEvent(ns._frame, "PLAYER_LOGIN")
 		T.eq(#said, 1)
-		T.eq(said[1], "Warlock isn't supported yet")
-		T.eq(ns.Context.Unsupported(), "Warlock isn't supported yet")
+		T.eq(said[1], "Warrior isn't supported yet")
+		T.eq(ns.Context.Unsupported(), "Warrior isn't supported yet")
 	end,
 	supported_class_says_nothing = function()
 		local ns = T.addon(FILES)

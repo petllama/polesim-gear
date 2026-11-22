@@ -1,4 +1,16 @@
-# In-game checklist (one session, on a priest; section M on a mage) — PoleSim Gear 0.5.1
+# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin) — PoleSim Gear 0.6.0
+
+**0.6.0 over 0.5.1:** four more classes. Warlock (Affliction, Demonology, Destruction), Druid (Balance,
+Restoration), Shaman (Elemental, Restoration) and Paladin (Holy) now get scores, arrows, the quest reward
+mark, the equip prompt, the window and the auction house scan, from PoleSim's simulated leveling weights
+(scores equal the website's armory). Feral, Enhancement, Retribution and Protection, and all Warriors,
+Rogues and Hunters are not supported yet (their melee/hunter weapon rules are not done). A druid, shaman
+or paladin whose talents point to such a spec is not scored with another spec's weights: chat and the
+window say "<Class> <Spec> isn't supported yet. Pick a supported spec in Settings to use its weights.",
+and the new Spec choice in Settings (also the Weights tab and `/psg spec`) lists only the class's specs
+with weights. Restoration and Holy weights are leveling weights (killing while questing), not dungeon
+healing. Relics (idols, totems, librams) score their stats only (none today: 0). Checks: section Q. No
+new files: `/reload` is enough after updating (the item data is larger: about 1.2 MB, 0.5 MB before).
 
 **0.5.1 over 0.5.0:** fixes a "C stack overflow" error when hovering a row in the PoleSim upgrades
 list at the Auction House (or any window row) with Auctionator installed. Auctionator's tooltip hook
@@ -743,6 +755,61 @@ any character). Settings shows "1 item never asked" and Clear; Clear empties it.
 (Polestar options: Questing > Rewards & gear > Gear advice), the Settings note says Polestar's "Wear it"
 asks, and our card does not show (only Polestar's banner offers it): never two prompts for one item.
 
+## Q. Warlock, Druid, Shaman, Paladin (0.6.0)
+
+On an alt of a new class (any level; 40+ shows mail/plate on a shaman/paladin). Report the printed lines.
+
+**Q1. Spec auto-detect.**
+
+```
+/psg spec
+/run local c=PoleSimGear.Context.Get() if c then print(c.cls,c.spec,c.specSource,c.level,c.band.upTo,c.ref,c.classBit) else print("no context") end
+```
+
+Expected: `spec <key> (talents)` with your talent points per column (Warlock Affliction/Demonology/
+Destruction, Druid Balance/Feral/Restoration, Shaman Elemental/Enhancement/Restoration, Paladin Holy/
+Protection/Retribution), the most points wins; no points yet: `affliction`/`balance`/`elemental`/`holy`
+`(default)`. Second line e.g. `warlock affliction talents 21 29 spShadow 256`, `druid balance ... sp 1024`,
+`shaman elemental ... sp 64` (Restoration: `str`), `paladin holy ... str 2`.
+
+**Q2. Unsupported spec (Feral druid, Enhancement shaman, Retribution/Protection paladin).** With most
+points in such a tree (or on a friend's character): at login (or after `/reload`) one chat line
+`<Class> <Spec> isn't supported yet. Pick a supported spec in Settings to use its weights.`; no PoleSim
+line in item tooltips, no arrows; the minimap button is there; `/psg` opens the window: the header says
+`<Spec> (not supported)`, the Gear Plan says the same sentence. Settings > Spec lists only Automatic and
+the class's supported specs (Druid: Balance, Restoration; Shaman: Elemental, Restoration; Paladin:
+Holy); picking one scores with its weights (tooltips, Gear Plan); Automatic brings the message back.
+
+**Q3. Weights tab and Settings.** Weights tab: the radios are Automatic plus the supported specs only
+(no Feral/Enhancement/Retribution/Protection); Settings shows the Spec choice and the line "Healer specs'
+weights are for leveling (killing while questing), not dungeon healing."
+
+**Q4. Tooltips by proficiency.** Hover, and report any that differ:
+- Warlock: a dagger, a one-hand sword, a staff and a wand show a score; a mace, leather and a shield don't.
+- Druid: leather, a mace, a two-hand mace, a staff, a dagger and a fist weapon show a score (an idol
+  scores 0: its effect isn't scored); mail, a shield, a wand and a totem don't. **Also report:** at
+  20+, is a polearm's "Polearm" line white (usable) or red in the game's tooltip? (The client has a
+  druid polearm row; PoleSim follows Classic: no polearms.)
+- Shaman: leather, a shield, a totem, a one- or two-hand axe/mace, a staff, a dagger, a fist weapon show
+  a score; mail only from 40 (at 39 nothing); a sword, plate and a wand don't. **Also report:** is a two-hand axe's or mace's type line white or red without the
+  Enhancement talent? (Classic needed the talent; PoleSim lets shamans use them.)
+- Paladin: mail, a shield, a libram, one- and two-hand swords/maces/axes and a polearm show a score;
+  plate only from 40; a staff, a dagger and a wand don't.
+
+**Q5. A score equals the website.** Hover one worn item, Shift for "how?"; on
+https://polesim.petllama.com/#armory pick the same class, spec and level and the same item: the score
+and the parts are the same.
+
+**Q6. Gear Plan sane.** Gear Plan tab: Main hand suggests two-handers for a druid, shaman or paladin
+(no off-hand suggestions: PoleSim plays them with a two-hander), one-handers and off hands for a
+warlock; no item of an armor type you can't wear yet. Report the first five rows (item, gain, source).
+A Holy paladin's or Restoration shaman's top rows may be Strength and weapon DPS: they melee while
+leveling.
+
+**Q7. Auction house** (if near one): Scan for upgrades: the scan's steps count the class's armor types
+(e.g. a level 40 shaman: cloth, leather, mail, shields, jewelry, 7 weapon types = 12), the rows are items
+you can wear.
+
 ## Probe results (B1, fill in)
 
 | Question | Answer |
@@ -827,6 +894,13 @@ asks, and our card does not show (only Polestar's banner offers it): never two p
 | P4 | queue 1 of 2; Not now | |
 | P5 | Never; Settings count and Clear | |
 | P6 | switch off, minimum gain, quiet with Polestar's Gear on | |
+| Q1 | new class: spec auto-detect, context | |
+| Q2 | unsupported spec: message, Settings choice | |
+| Q3 | Weights radios, Settings spec + healer line | |
+| Q4 | tooltips by proficiency; druid polearm / shaman 2H answer | |
+| Q5 | score = website | |
+| Q6 | Gear Plan sane (two-handers for druid/shaman/paladin) | |
+| Q7 | AH scan steps and rows | |
 
 ## Known limits (tell me if they bother you)
 
@@ -838,9 +912,15 @@ asks, and our card does not show (only Polestar's banner offers it): never two p
   leaves the off hand empty, while the window pairs it with the best off hand (R9).
 - Weapon sets mix bands with look ahead: a level-23 off hand paired with a one-hander you can wear now
   is scored with the weights of its own level, like every "coming up" row.
-- No dual wield yet (no priest or mage can); added with the melee classes.
-- Classes other than Priest and Mage: one chat line ("<class> isn't supported yet"), no window, no
-  minimap button, no scores.
+- No dual wield yet (no supported class can); added with the melee classes.
+- Warriors, Rogues and Hunters: one chat line ("<class> isn't supported yet"), no window, no minimap
+  button, no scores. Feral, Enhancement, Retribution and Protection: no scores until you pick a
+  supported spec in Settings (melee/hunter weapon rules not done yet).
+- Relics (idols, totems, librams) score their stats only; their effects are not modelled, so every relic
+  scores 0 today and the auction house scan does not search for them.
+- Druid, Shaman and Paladin: the window suggests two-handers only (PoleSim plays them with one, as the
+  website does); a shield or off hand gets a tooltip score and AH rows, not a Gear Plan row.
+- Restoration and Holy weights are leveling weights (killing while questing), not dungeon healing.
 - If the client leaves an item's equip bonuses out of its stats, the tooltip fills that whole group
   from PoleSim's item table (Shift shows "(item table)" on those lines).
 - Tooltip (live stats) and window (shipped table) can differ when Forever changes an item before the

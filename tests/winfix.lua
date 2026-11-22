@@ -3,6 +3,9 @@
 local T = require("t")
 local U = require("ui")
 local F = {}
+F.CLASS = { priest = { "Priest", "PRIEST", 5 }, mage = { "Mage", "MAGE", 8 }, warlock = { "Warlock", "WARLOCK", 9 },
+	druid = { "Druid", "DRUID", 11 }, shaman = { "Shaman", "SHAMAN", 7 }, paladin = { "Paladin", "PALADIN", 2 } }
+F.RACE = { priest = { "H", 16 }, mage = { "H", 16 }, warlock = { "H", 16 }, druid = { "H", 32 }, shaman = { "H", 2 }, paladin = { "A", 1 } }
 
 function F.files()
 	local out = {}
@@ -37,7 +40,9 @@ function F.codex()
 	}
 end
 
--- opts: { db, char, done = { [questId] = true }, worn, cls ("priest" | "mage"), spec (default: the class's),
+-- opts: { db, char, done = { [questId] = true }, worn, cls ("priest" | "mage" | "warlock" | "druid" | "shaman" |
+-- "paladin"), spec (default: the class's), unsupportedSpec (a detected spec with no weights, e.g. "feral":
+-- Context.Get is nil and SpecUnsupported says so),
 -- level (default 20), codex = false (keep
 -- the caller's _G.Polestar, e.g. the real one), minimap = true (a client Minimap: the button is made) }
 -- -> fixture
@@ -62,16 +67,32 @@ function F.load(opts)
 	ns._frame.scripts.OnEvent(ns._frame, "ADDON_LOADED", "PoleSimGear")
 	ns.Print = function() end
 	local cls = opts.cls or "priest"
-	W.class = ({ priest = { "Priest", "PRIEST", 5 }, mage = { "Mage", "MAGE", 8 } })[cls]
+	W.class = F.CLASS[cls]
+	-- a race of the class (faction, race bit): undead priest/mage/warlock, tauren druid, orc shaman,
+	-- human paladin
+	local who = F.RACE[cls] or F.RACE.priest
 	local spec = opts.spec or ns.Spec.DEFAULT[cls]
 	local band, lo, sd = ns.Bands.For(cls, spec, L)
 	local worn = opts.worn or { [1] = { inst = { id = 999001, name = "Old Hat", quality = 1, icon = "inv_helmet_01", inv = 1, stats = {} }, score = 1 } }
+	local unsupported = opts.unsupportedSpec
 	ns.Context = {
 		ClassKey = function() return cls end,
 		Unsupported = function() return nil end,
+		SpecUnsupported = function()
+			if not unsupported or (ns.char and ns.char.spec or "auto") ~= "auto" then return nil end
+			return (W.class[1] .. " " .. unsupported:sub(1, 1):upper() .. unsupported:sub(2)
+				.. " isn't supported yet. Pick a supported spec in Settings to use its weights."), unsupported
+		end,
 		Get = function()
-			return { cls = cls, spec = spec, specSource = "talents", level = L, lo = lo, band = band,
-				ref = sd.ref, w = band.w, worn = worn, faction = "H", classBit = ns.DATA.proficiency[cls].bit, raceBit = 16 }
+			local key, source = spec, "talents"
+			if unsupported then -- auto lands on the unsupported spec; a chosen one is scored
+				local o = ns.char and ns.char.spec
+				if not o or o == "auto" then return nil end
+				key, source = o, "chosen"
+				band, lo, sd = ns.Bands.For(cls, key, L)
+			end
+			return { cls = cls, spec = key, specSource = source, level = L, lo = lo, band = band,
+				ref = sd.ref, w = band.w, worn = worn, faction = who[1], classBit = ns.DATA.proficiency[cls].bit, raceBit = who[2] }
 		end,
 		At = function(L) local b, l = ns.Bands.For(cls, spec, L) return { band = b, lo = l, w = b.w, worn = worn } end,
 	}

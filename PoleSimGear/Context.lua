@@ -45,6 +45,17 @@ function Context.Unsupported()
 	if not (name or file) then return nil end
 	return (name or file) .. " isn't supported yet"
 end
+-- The class is supported but the spec in use has no weights (Feral, Enhancement, Protection,
+-- Retribution from the talents): "<Class> <Spec> isn't supported yet. ...", spec key (Get says it once
+-- per spec in chat; the window shows it), else nil. Nothing is scored with another spec's weights.
+local unsupportedSpec, toldSpec = nil, {}
+function Context.SpecUnsupported()
+	if not unsupportedSpec then return nil end
+	local name, file = UnitClass("player")
+	local key = unsupportedSpec
+	return string.format("%s %s isn't supported yet. Pick a supported spec in Settings to use its weights.",
+		name or file or "", key:sub(1, 1):upper() .. key:sub(2)), key
+end
 local toldUnsupported = false
 ns.RegisterEvent("PLAYER_LOGIN", function()
 	local msg = not toldUnsupported and Context.Unsupported()
@@ -116,6 +127,16 @@ function Context.Get()
 		if spec[2] == "default" and ns.Spec.ORDER[cls] then Context.RetrySpec(cls) end
 	end
 	local key, source = spec[1], spec[2]
+	unsupportedSpec = nil
+	if not ns.Spec.Supported(cls, key) then
+		unsupportedSpec = key
+		none = true
+		if key and not toldSpec[key] then
+			toldSpec[key] = true
+			ns.Print((Context.SpecUnsupported()))
+		end
+		return nil
+	end
 	local band, lo, sd = ns.Bands.For(cls, key, level)
 	if not band then none = true return nil end
 	local _, raceFile, raceID = UnitRace("player")

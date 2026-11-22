@@ -47,7 +47,9 @@ end
 
 function Win.Env()
 	local ctx = ns.Context.Get()
-	if not ctx then return nil, "no weights for this character" end
+	if not ctx then
+		return nil, (ns.Context.SpecUnsupported and ns.Context.SpecUnsupported()) or "no weights for this character"
+	end
 	local C, why = codex()
 	if not C then return nil, why end
 	-- Polestar.Compat.IsQuestCompleted (docs/API.md), else the client's own answer.
@@ -469,6 +471,14 @@ function Win.UpdateHeader(f, ctx)
 	local h = f.header
 	if not ctx then
 		h.who:SetText(""); h.spec:SetText(""); h.score:SetText(""); h.progress:SetText(""); h.fill:Hide()
+		-- a spec with no weights (Feral, Enhancement, ...): say which, Settings offers the others
+		local key
+		if ns.Context.SpecUnsupported then key = select(2, ns.Context.SpecUnsupported()) end
+		if key then
+			local className = UnitClass("player")
+			h.who:SetText(format("Level %d %s", ns.Context.Level and ns.Context.Level() or UnitLevel("player") or 1, className or ""))
+			h.spec:SetText(S.Title(key) .. " (not supported)")
+		end
 		return
 	end
 	local className, file = UnitClass("player")

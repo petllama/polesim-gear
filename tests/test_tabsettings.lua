@@ -33,4 +33,50 @@ return {
 		T.ok(U.texts(p):find("Not asked yet", 1, true), "redrawn")
 		fx.done()
 	end,
+	-- The spec choice (as /psg spec and the Weights tab): Automatic plus only the specs with weights
+	-- (a druid: Balance, Restoration; no Feral).
+	spec_dropdown = function()
+		local fx = F.load({ cls = "druid" })
+		local ns, U = fx.ns, fx.U
+		fx.open()
+		local p = fx.tab("settings")
+		T.ok(U.texts(p):find("Spec", 1, true))
+		local items = U.menu(p.spec)
+		local texts = {}
+		for i, it in ipairs(items) do texts[i] = it.text end
+		T.eq(table.concat(texts, ","), "Automatic (talents),Balance,Restoration")
+		T.eq(items[1].isSelected(), true)
+		local fired
+		ns.On("STATE", function(event) fired = event end)
+		items[3].select()
+		T.eq(ns.char.spec, "restoration"); T.eq(fired, "SPEC")
+		fx.done()
+		local fp = F.load({ cls = "paladin" })
+		fp.open()
+		local pp = fp.tab("settings")
+		local list = {}
+		for i, it in ipairs(fp.U.menu(pp.spec)) do list[i] = it.text end
+		T.eq(table.concat(list, ","), "Automatic (talents),Holy")
+		fp.done()
+	end,
+	-- Auto-detect on a spec with no weights (Feral): the window says so where the lists would be and
+	-- in the header, Settings still offers the supported specs; picking one scores with its weights.
+	unsupported_spec_window = function()
+		local fx = F.load({ cls = "druid", unsupportedSpec = "feral" })
+		local ns, U = fx.ns, fx.U
+		local f = fx.open()
+		T.ok(f and f:IsShown(), "the window opens")
+		local msg = "Druid Feral isn't supported yet. Pick a supported spec in Settings to use its weights."
+		T.eq(fx.tab("plan").list.provided[1].empty, msg)
+		T.eq(f.header.spec.text, "Feral (not supported)"); T.eq(f.header.who.text, "Level 20 Druid")
+		local p = fx.tab("settings")
+		local items = U.menu(p.spec)
+		T.eq(#items, 3)
+		items[2].select()
+		T.eq(ns.char.spec, "balance")
+		fx.settle()
+		T.eq(ns.Context.Get().spec, "balance")
+		T.ok(fx.tab("plan").list.provided[1].empty ~= msg, "scored now")
+		fx.done()
+	end,
 }

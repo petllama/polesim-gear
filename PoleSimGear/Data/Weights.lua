@@ -51,8 +51,12 @@ ns.DATA.statLabels = {
 ns.DATA.proficiency = {
 	priest = { bit = 16, armor = { [0] = 1, [1] = 1 }, weapons = { [4] = true, [10] = true, [15] = true, [19] = true }, dw = nil },
 	mage = { bit = 128, armor = { [0] = 1, [1] = 1 }, weapons = { [7] = true, [10] = true, [15] = true, [19] = true }, dw = nil },
+	warlock = { bit = 256, armor = { [0] = 1, [1] = 1 }, weapons = { [7] = true, [10] = true, [15] = true, [19] = true }, dw = nil },
+	druid = { bit = 1024, armor = { [0] = 1, [1] = 1, [2] = 1, [8] = 1 }, weapons = { [4] = true, [5] = true, [10] = true, [13] = true, [15] = true }, dw = nil },
+	shaman = { bit = 64, armor = { [0] = 1, [1] = 1, [2] = 1, [3] = 40, [6] = 1, [9] = 1 }, weapons = { [0] = true, [1] = true, [4] = true, [5] = true, [10] = true, [13] = true, [15] = true }, dw = nil },
+	paladin = { bit = 2, armor = { [0] = 1, [1] = 1, [2] = 1, [3] = 1, [4] = 40, [6] = 1, [7] = 1 }, weapons = { [0] = true, [1] = true, [4] = true, [5] = true, [6] = true, [7] = true, [8] = true }, dw = nil },
 }
-ns.DATA.defaultSpec = { mage = "frost", priest = "shadow" }
+ns.DATA.defaultSpec = { druid = "balance", mage = "frost", paladin = "holy", priest = "shadow", shaman = "elemental", warlock = "affliction" }
 ns.DATA.specs = {
 	priest = {
 		shadow = { ref = "spShadow", bands = {
@@ -104,6 +108,78 @@ ns.DATA.specs = {
 			{ upTo = 49, style = "any", label = "", w = { armor = 0.029, health = 0.11, int = 0.71, mana = 0.021, mp5 = 0.28, rdps = 0.25, sp = 1, spArcane = 1, spellCrit = 3.4, spellHit = 1.9, spi = 0.26, sta = 1.1 } },
 			{ upTo = 59, style = "any", label = "", w = { armor = 0.031, health = 0.1, int = 0.99, mana = 0.04, mp5 = 0.67, rdps = 0.45, sp = 1, spArcane = 1, spellCrit = 5, spellHit = 1.4, spi = 0.45, sta = 1.1 } },
 			{ upTo = 60, style = "any", label = "", w = { armor = 0.032, health = 0.1, int = 1, mana = 0.038, mp5 = 0.76, rdps = 0.55, sp = 1, spArcane = 1, spellCrit = 6.3, spellHit = 0.11, spi = 0.55, sta = 1.1 } },
+		} },
+	},
+	warlock = {
+		affliction = { ref = "spShadow", bands = {
+			{ upTo = 19, style = "any", label = "", w = { armor = 0.0095, health = 0.017, int = 0.1, mp5 = 0.088, rdps = 2.6, sp = 1.1, spShadow = 1, spellCrit = 0.46, spellHit = 0.77, spi = 0.096, sta = 0.26 } },
+			{ upTo = 29, style = "any", label = "", w = { armor = 0.015, health = 0.007, int = 0.15, mana = 0.001, mp5 = 0.0045, rdps = 3.3, sp = 1.1, spShadow = 1, spellCrit = 1.2, spellHit = 0.91, spi = 0.0095, sta = 0.2 } },
+			{ upTo = 39, style = "any", label = "", w = { armor = 0.009, health = 0.008, int = 0.11, mana = 0.003, mp5 = 0.15, rdps = 3.7, sp = 1.1, spShadow = 1, spellCrit = 1.7, spellHit = 1.4, spi = 0.083, sta = 0.15 } },
+			{ upTo = 49, style = "any", label = "", w = { armor = 0.008, health = 0.011, int = 0.098, mana = 0.007, mp5 = 0.29, rdps = 0.63, sp = 1, spShadow = 1, spellCrit = 2.5, spellHit = 1.4, spi = 0.31, sta = 0.12 } },
+			{ upTo = 59, style = "any", label = "", w = { armor = 0.008, health = 0.033, int = 0.058, mp5 = 0.4, rdps = 0.52, sp = 1, spShadow = 1, spellCrit = 2.4, spellHit = 0.41, spi = 0.11, sta = 0.31 } },
+			{ upTo = 60, style = "any", label = "", w = { armor = 0.009, mp5 = 0.2, rdps = 0.37, sp = 1.1, spShadow = 1, spellCrit = 1.3, spellHit = 1.4, spi = 0.35, sta = 0.16 } },
+		} },
+		demonology = { ref = "sp", bands = {
+			{ upTo = 19, style = "any", label = "", w = { armor = 0.005, health = 0.0065, int = 0.12, mana = 0.0065, mp5 = 0.1, rdps = 0.4, sp = 1, spFire = 0.29, spShadow = 0.7, spellCrit = 0.27, spellHit = 0.54, spi = 0.13, sta = 0.1 } },
+			{ upTo = 29, style = "any", label = "", w = { armor = 0.004, health = 0.0075, int = 0, mana = 0, mp5 = 0.13, rdps = 0.28, sp = 1, spFire = 0.39, spShadow = 0.6, spellCrit = 0.47, spellHit = 0.53, spi = 0.18, sta = 0.095 } },
+			{ upTo = 39, style = "any", label = "", w = { armor = 0.001, health = 0.001, int = 0.023, mana = 0, mp5 = 0.044, rdps = 0.041, sp = 1, spFire = 0.66, spShadow = 0.36, spellCrit = 1.1, spellHit = 1.2, spi = 0.34 } },
+			{ upTo = 49, style = "any", label = "", w = { armor = 0.001, int = 0.17, mana = 0.009, mp5 = 0.06, rdps = 0.016, sp = 1, spFire = 0.59, spShadow = 0.27, spellCrit = 0.98, spellHit = 1.6, spi = 0.29, sta = 0 } },
+			{ upTo = 59, style = "any", label = "", w = { armor = 0.001, health = 0.005, int = 0, mana = 0, mp5 = 0.09, rdps = 0.14, sp = 1, spFire = 0.43, spShadow = 0.58, spellCrit = 1.8, spellHit = 1.2, spi = 0.28, sta = 0.11 } },
+			{ upTo = 60, style = "any", label = "", w = { armor = 0.001, health = 0.006, int = 0, mana = 0, mp5 = 0, rdps = 0.15, sp = 1, spFire = 0.43, spShadow = 0.49, spellCrit = 2.5, spellHit = 1.7, spi = 0.31, sta = 0.026 } },
+		} },
+		destruction = { ref = "sp", bands = {
+			{ upTo = 19, style = "any", label = "", w = { armor = 0.0045, health = 0, int = 0.15, mana = 0.021, mp5 = 0.16, rdps = 0.61, sp = 1, spFire = 0.3, spShadow = 0.66, spellCrit = 0.29, spellHit = 0.54, spi = 0.21, sta = 0.14 } },
+			{ upTo = 29, style = "any", label = "", w = { armor = 0.0055, health = 0.0085, int = 0.013, mana = 0, mp5 = 0.12, rdps = 0.3, sp = 1, spFire = 0.25, spShadow = 0.73, spellCrit = 0.57, spellHit = 0.54, spi = 0.15, sta = 0.15 } },
+			{ upTo = 39, style = "any", label = "", w = { armor = 0.007, health = 0.013, int = 0.06, mana = 0, mp5 = 0.14, rdps = 0.72, sp = 1, spFire = 0.47, spShadow = 0.53, spellCrit = 1.7, spellHit = 1.1, spi = 0.3, sta = 0.13 } },
+			{ upTo = 49, style = "any", label = "", w = { armor = 0.006, health = 0.018, int = 0.13, mana = 0.008, mp5 = 0.22, rdps = 0.5, sp = 1, spFire = 0.84, spShadow = 0.16, spellCrit = 2, spellHit = 1.2, spi = 0.17, sta = 0.13 } },
+			{ upTo = 59, style = "any", label = "", w = { armor = 0.0035, int = 0.17, mana = 0.015, mp5 = 0.29, rdps = 0.45, sp = 1, spFire = 0.77, spShadow = 0.23, spellCrit = 2.8, spellHit = 1.2, spi = 0.27, sta = 0.1 } },
+			{ upTo = 60, style = "any", label = "", w = { armor = 0.004, health = 0, int = 0.36, mana = 0.019, mp5 = 0.17, rdps = 0.32, sp = 1, spFire = 0.77, spShadow = 0.24, spellCrit = 3.5, spellHit = 1.4, spi = 0.41, sta = 0 } },
+		} },
+	},
+	druid = {
+		balance = { ref = "sp", bands = {
+			{ upTo = 19, style = "2h", label = "", w = { armor = 0.009, health = 0.026, int = 0.42, mana = 0.025, mp5 = 0.2, sp = 1, spArcane = 0.15, spNature = 0.65, spellCrit = 0.32, spellHit = 0.99, spi = 0.1, sta = 0 } },
+			{ upTo = 29, style = "2h", label = "", w = { armor = 0.02, health = 0.035, int = 0.51, mana = 0.035, mp5 = 0.45, sp = 1, spArcane = 0.77, spNature = 0.11, spellCrit = 0.62, spellHit = 0.55, spi = 0.12, sta = 0.42 } },
+			{ upTo = 39, style = "2h", label = "", w = { armor = 0.015, health = 0.029, int = 0.49, mana = 0.031, mp5 = 0.32, sp = 1, spArcane = 0.41, spNature = 0.47, spellCrit = 0.71, spellHit = 0.59, spi = 0.098, sta = 0.27 } },
+			{ upTo = 49, style = "2h", label = "", w = { armor = 0.058, health = 0.069, int = 0.15, mana = 0.008, mp5 = 0.17, sp = 1, spArcane = 0.72, spNature = 0.26, spellCrit = 1.5, spellHit = 1.2, spi = 0.14, sta = 0.7 } },
+			{ upTo = 59, style = "2h", label = "", w = { armor = 0.057, health = 0.065, int = 0.17, mana = 0.0065, mp5 = 0.52, sp = 1, spArcane = 0.58, spNature = 0.4, spellCrit = 2, spellHit = 1.4, spi = 0.2, sta = 0.65 } },
+			{ upTo = 60, style = "2h", label = "", w = { armor = 0.059, health = 0.062, int = 0.2, mana = 0.009, mp5 = 0.6, sp = 1, spArcane = 0.7, spNature = 0.35, spellCrit = 4.3, spellHit = 2, spi = 0.28, sta = 0.67 } },
+		} },
+		restoration = { ref = "sp", bands = {
+			{ upTo = 19, style = "2h", label = "Kill sim", w = { armor = 0.007, health = 0.032, int = 0.55, mana = 0.031, mp5 = 0.31, sp = 1, spArcane = 0.14, spNature = 0.7, spellCrit = 0.3, spellHit = 0.97, spi = 0.066 } },
+			{ upTo = 29, style = "2h", label = "Kill sim", w = { armor = 0.022, health = 0.04, int = 0.58, mana = 0.03, mp5 = 0.037, sp = 1, spArcane = 0.84, spNature = 0.019, spellCrit = 0.65, spellHit = 1.6, spi = 0.033, sta = 0.38 } },
+			{ upTo = 39, style = "2h", label = "Kill sim", w = { armor = 0.018, health = 0.041, int = 0.62, mana = 0.042, mp5 = 0.5, sp = 1, spArcane = 0.83, spNature = 0.012, spellCrit = 1.1, spellHit = 2.7, spi = 0.24, sta = 0.42 } },
+			{ upTo = 49, style = "2h", label = "Kill sim", w = { armor = 0.022, health = 0.024, int = 0.62, mana = 0.044, mp5 = 0.81, sp = 1, spArcane = 0.8, spNature = 0.016, spellCrit = 1.1, spellHit = 2.9, spi = 0.41, sta = 0.23 } },
+			{ upTo = 59, style = "2h", label = "Kill sim", w = { armor = 0.021, health = 0.036, int = 0.68, mana = 0.039, mp5 = 0.87, sp = 1, spArcane = 0.84, spNature = 0.049, spellCrit = 1.8, spellHit = 4.2, spi = 0.43, sta = 0.38 } },
+			{ upTo = 60, style = "2h", label = "Kill sim", w = { armor = 0.021, health = 0.036, int = 0.75, mana = 0.047, mp5 = 0.99, sp = 1, spArcane = 0.69, spNature = 0.23, spellCrit = 2.1, spellHit = 5.4, spi = 0.45, sta = 0.39 } },
+		} },
+	},
+	shaman = {
+		elemental = { ref = "sp", bands = {
+			{ upTo = 19, style = "2h", label = "", w = { agi = 0.093, ap = 0.12, armor = 0.016, crit = 0.3, dps = 1.8, health = 0.069, hit = 0.17, int = 0.2, mp5 = 0.23, sp = 1, spNature = 0.81, spellCrit = 0.38, spellHit = 1.2, spi = 0.35, sta = 0.89, str = 0.25 } },
+			{ upTo = 29, style = "2h", label = "", w = { agi = 0.24, ap = 0.14, armor = 0.044, crit = 0.55, dps = 2, health = 0.16, hit = 0.29, int = 0.54, mana = 0.042, mp5 = 0.14, sp = 1, spNature = 0.74, spellCrit = 0.9, spellHit = 2.3, spi = 0.24, sta = 1.5, str = 0.28 } },
+			{ upTo = 39, style = "2h", label = "", w = { agi = 0.22, ap = 0.094, armor = 0.04, crit = 0.54, dps = 1.3, health = 0.13, hit = 0.27, int = 1, mana = 0.077, mp5 = 0.51, sp = 1, spNature = 0.79, spellCrit = 0.94, spellHit = 3.3, spi = 0.25, sta = 1.2, str = 0.19 } },
+			{ upTo = 49, style = "2h", label = "", w = { agi = 0.2, ap = 0.077, armor = 0.032, crit = 0.56, dps = 1.1, health = 0.1, hit = 0.41, int = 1.3, mana = 0.08, mp5 = 0.34, sp = 1, spNature = 0.85, spellCrit = 3.8, spellHit = 2, spi = 0.2, sta = 1, str = 0.15 } },
+			{ upTo = 59, style = "2h", label = "", w = { agi = 0.21, ap = 0.056, armor = 0.036, crit = 0.38, dps = 0.83, health = 0.1, hit = 0.21, int = 1.4, mana = 0.086, mp5 = 1.1, sp = 1, spNature = 0.85, spellCrit = 5, spellHit = 1.3, spi = 0.43, sta = 1.1, str = 0.11 } },
+			{ upTo = 60, style = "2h", label = "", w = { agi = 0.18, ap = 0.041, armor = 0.034, crit = 0.34, dps = 0.56, health = 0.085, hit = 0.2, int = 1.5, mana = 0.097, mp5 = 0.97, sp = 1, spNature = 0.86, spellCrit = 6.3, spellHit = 1.3, spi = 0.37, sta = 0.84, str = 0.082 } },
+		} },
+		restoration = { ref = "str", bands = {
+			{ upTo = 19, style = "2h", label = "Kill sim", w = { agi = 0.57, ap = 0.5, armor = 0.084, crit = 1.8, dps = 7.3, health = 0.26, hit = 1.5, int = 1, mp5 = 0.78, sp = 3.5, spNature = 3, spellCrit = 1.4, spellHit = 1.8, spi = 2.4, sta = 3.2, str = 1 } },
+			{ upTo = 29, style = "2h", label = "Kill sim", w = { agi = 0.68, ap = 0.5, armor = 0.1, crit = 2.5, dps = 6.9, health = 0.15, hit = 1.5, int = 1.9, mp5 = 1.9, sp = 2.3, spNature = 1.3, spellCrit = 2.7, spellHit = 0.89, spi = 1.4, sta = 1.4, str = 1 } },
+			{ upTo = 39, style = "2h", label = "Kill sim", w = { agi = 0.52, ap = 0.5, armor = 0.06, crit = 2.9, dps = 7, health = 0.083, hit = 2.1, int = 1.5, mp5 = 2, sp = 1.5, spNature = 0.81, spellCrit = 2.7, spellHit = 0.9, spi = 1.2, sta = 0.84, str = 1 } },
+			{ upTo = 49, style = "2h", label = "Kill sim", w = { agi = 0.64, ap = 0.5, armor = 0.068, crit = 4, dps = 6.9, health = 0.1, hit = 2.4, int = 0.97, mp5 = 1.5, sp = 1.3, spNature = 0.75, spellCrit = 3.6, spellHit = 1.4, spi = 1.2, sta = 1.1, str = 1 } },
+			{ upTo = 59, style = "2h", label = "Kill sim", w = { agi = 0.66, ap = 0.5, armor = 0.068, crit = 4.9, dps = 7.1, health = 0.12, hit = 3.2, int = 1.9, mp5 = 2.8, sp = 1.4, spNature = 0.72, spellCrit = 5.1, spellHit = 1.8, spi = 1.3, sta = 1.1, str = 1 } },
+			{ upTo = 60, style = "2h", label = "Kill sim", w = { agi = 0.78, ap = 0.5, armor = 0.093, crit = 5.5, dps = 7, health = 0.16, hit = 3.8, int = 1.9, mp5 = 2.8, sp = 1.7, spNature = 0.99, spellCrit = 7.6, spellHit = 3, spi = 1.7, sta = 1.5, str = 1 } },
+		} },
+	},
+	paladin = {
+		holy = { ref = "str", bands = {
+			{ upTo = 19, style = "2h", label = "Kill sim", w = { agi = 0.62, ap = 0.5, armor = 0.06, crit = 2.3, dps = 6.8, health = 0.13, hit = 1.3, int = 0.47, mp5 = 0.3, sp = 1.7, spHoly = 1.2, spellCrit = 0.36, spi = 0.49, sta = 1.4, str = 1 } },
+			{ upTo = 29, style = "2h", label = "Kill sim", w = { agi = 0.64, ap = 0.5, armor = 0.05, crit = 3.5, dps = 7.1, health = 0.15, hit = 2.1, int = 1.6, mp5 = 1.2, sp = 1.6, spHoly = 1.5, spellCrit = 0.4, spi = 0.44, sta = 1.7, str = 1 } },
+			{ upTo = 39, style = "2h", label = "Kill sim", w = { agi = 0.81, ap = 0.5, armor = 0.079, crit = 5.1, dps = 6.3, health = 0.15, hit = 3.5, int = 1.6, mp5 = 0.49, sp = 1.6, spHoly = 1.4, spellCrit = 1.6, spi = 0.29, sta = 1.3, str = 1 } },
+			{ upTo = 49, style = "2h", label = "Kill sim", w = { agi = 0.98, ap = 0.5, armor = 0.081, crit = 7.3, dps = 6.6, health = 0.31, hit = 4.5, int = 1.3, mp5 = 2.7, sp = 2, spHoly = 1.9, spellCrit = 0.98, spi = 0.89, sta = 3, str = 1 } },
+			{ upTo = 59, style = "2h", label = "Kill sim", w = { agi = 1.2, ap = 0.5, armor = 0.099, crit = 9.3, dps = 6.9, health = 0.35, hit = 5.7, int = 2, mp5 = 3, sp = 2, spHoly = 2, spellCrit = 1.6, spi = 1, sta = 3.3, str = 1 } },
+			{ upTo = 60, style = "2h", label = "Kill sim", w = { agi = 1.3, ap = 0.5, armor = 0.098, crit = 12, dps = 6.9, health = 0.33, hit = 6.2, int = 2.2, mp5 = 2.3, sp = 2.1, spHoly = 2.1, spellCrit = 2, spi = 0.61, sta = 3.1, str = 1 } },
 		} },
 	},
 }
