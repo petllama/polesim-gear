@@ -65,7 +65,7 @@ function Win.Env()
 	local Items = ns.Items
 	state.codex = C
 	return {
-		cls = ctx.cls, level = ctx.level, ahead = ns.Browser.AHEAD, codex = C,
+		cls = ctx.cls, level = ctx.level, ahead = ns.Browser.AHEAD, codex = C, rules = ctx.rules,
 		-- decoded on demand, nothing kept (Items.Peek; the index is released when the window closes)
 		items = { Get = Items.Peek, ByInv = Items.ByInv, Rl = Items.Rl },
 		player = { faction = ctx.faction, classBit = ctx.classBit, raceBit = ctx.raceBit, completed = completed },
@@ -73,7 +73,7 @@ function Win.Env()
 		at = function(L)
 			local a = ns.Context.At(L)
 			if not a then return { w = {}, worn = {}, style = "any" } end
-			return { w = a.w, worn = a.worn, style = a.band.style }
+			return { w = a.w, worn = a.worn, style = a.band.style, canDw = a.canDw }
 		end,
 	}
 end

@@ -75,7 +75,7 @@ local function decode(id, line)
 		c = tonumber(f[6]), sc = tonumber(f[7]), icon = f[8] ~= "" and f[8] or nil, ar = tonumber(f[9]) or 0,
 		dps = tonumber(f[10]) or 0, s = stats(f[11]), b = tonumber(f[12]) or 0, sfx = numbers(f[13]),
 		cm = tonumber(f[14]) or 0, rm = tonumber(f[15]) or 0, u = f[16] == "1", bd = tonumber(f[17]) or 0,
-		rep = f[18] and f[18] ~= "" and numbers(f[18]) or nil,
+		rep = f[18] and f[18] ~= "" and numbers(f[18]) or nil, speed = f[19] and tonumber(f[19]) or nil,
 	}
 end
 

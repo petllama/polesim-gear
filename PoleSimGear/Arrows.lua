@@ -11,7 +11,7 @@ ns.Arrows = Arrows
 -- now; else false
 function Arrows.IsUpgrade(inst, ctx, cmp)
 	if not ns.Equip.CanUse(inst, ctx.cls, ctx.level) or (inst.rl or 0) > ctx.level then return false end
-	cmp = cmp or ns.Equip.Compare(inst, ctx.w, ctx.cls, ctx.worn, false)
+	cmp = cmp or ns.Equip.Compare(inst, ctx.w, ctx.cls, ctx.worn, ctx.canDw, ctx.rules)
 	if cmp ~= nil and not cmp.equipped and cmp.gain > 1e-6 then return true, cmp.gain end
 	return false
 end

@@ -13,8 +13,10 @@ return {
 		T.eq(select(3, B.For("mage", "fire", 30)).ref, "spFire")
 		T.eq(select(3, B.For("mage", "arcane", 60)).ref, "spArcane")
 		T.eq(select(3, B.For("warlock", "affliction", 30)).ref, "spShadow")
-		T.eq(B.For("warrior", "arms", 30), nil, "a class with no shipped weights")
-		T.eq(B.For("druid", "feral", 30), nil, "a spec with no shipped weights")
+		-- 0.7.0: melee/hunter bands are shipped but gated by Spec.Supported until they carry weaponModel
+		local ab, _, asd = B.For("warrior", "arms", 30)
+		T.eq(ab.style, "2h"); T.ok(asd.needsWeaponModel, "arms needs the weapon model")
+		T.eq(B.For("monk", "windwalker", 30), nil, "a class with no shipped weights")
 	end,
 	above_the_last_band = function()
 		local B = T.addon(FILES).Bands

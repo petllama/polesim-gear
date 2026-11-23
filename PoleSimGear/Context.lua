@@ -31,10 +31,19 @@ ns.RegisterEvent("GET_ITEM_INFO_RECEIVED", function(itemID)
 	if itemID and pendingItems[itemID] then ns.Fire("STATE", "ITEM_INFO") end
 end)
 
+-- The class key when the addon can score at least one of its specs (melee/hunter specs wait for their
+-- weapon-model data: a class with none ready is "not supported yet").
 function Context.ClassKey()
 	local _, file = UnitClass("player")
 	local key = file and file:lower()
-	return key and ns.DATA.specs[key] and key or nil
+	return key and ns.DATA.specs[key] and #ns.Spec.Keys(key) > 0 and key or nil
+end
+
+-- Whether a one-hander may go into the off hand at this band: the class has learned Dual Wield and the
+-- sim plays the spec dual wielding there (band style "dw"; casters' "any" never dual wield).
+function Context.CanDw(cls, level, band)
+	local p = ns.DATA.proficiency[cls]
+	return p ~= nil and p.dw ~= nil and level >= p.dw and band ~= nil and band.style == "dw"
 end
 
 -- A class with no shipped weights -> "<Class> isn't supported yet" (said once at login; the window and
@@ -145,6 +154,7 @@ function Context.Get()
 		cls = cls, spec = key, specSource = source, level = level, band = band, lo = lo, ref = sd.ref, w = band.w,
 		faction = ({ Alliance = "A", Horde = "H" })[factionName or ""],
 		classBit = ns.DATA.proficiency[cls].bit, raceBit = Context.RaceBit(raceID, raceFile, factionName),
+		canDw = Context.CanDw(cls, level, band), rules = sd.rules,
 	}
 	current.worn = Context.WornAt(cls, band)
 	return current
@@ -156,5 +166,6 @@ function Context.At(level)
 	if not ctx then return nil end
 	local band, lo = ns.Bands.For(ctx.cls, ctx.spec, level)
 	if not band then return nil end
-	return { cls = ctx.cls, spec = ctx.spec, level = level, band = band, lo = lo, w = band.w, worn = Context.WornAt(ctx.cls, band) }
+	return { cls = ctx.cls, spec = ctx.spec, level = level, band = band, lo = lo, w = band.w, worn = Context.WornAt(ctx.cls, band),
+		canDw = Context.CanDw(ctx.cls, level, band), rules = ctx.rules }
 end

@@ -19,6 +19,8 @@ function Tooltip.Lines(cmp, inst, ctx, shift, labelled)
 	local right, color
 	if cmp.equipped then
 		right, color = "equipped", GREY
+	elseif cmp.blocked then
+		right, color = "not for " .. title(ctx.spec), RED
 	else
 		right = format("%+.1f", cmp.gain) .. (cmp.base > 0.01 and format(" (%+.0f%%)", 100 * cmp.gain / cmp.base) or "")
 		color = cmp.gain > 1e-6 and GREEN or (cmp.gain < -1e-6 and RED or GREY)
@@ -27,6 +29,7 @@ function Tooltip.Lines(cmp, inst, ctx, shift, labelled)
 	lines[2] = { format("%s, levels %d-%d: points of %s", title(ctx.spec), ctx.lo, ctx.band.upTo, label(ctx.ref)), nil, GREY }
 	if (inst.rl or 0) > ctx.level then lines[#lines + 1] = { format("requires level %d", inst.rl), nil, GREY } end
 	if cmp.note then lines[#lines + 1] = { cmp.note, nil, GREY } end
+	if cmp.blocked then lines[#lines + 1] = { cmp.blocked, nil, RED } end
 	if not shift then
 		lines[#lines + 1] = { "Shift: how?", nil, GREY }
 		return lines
@@ -39,7 +42,7 @@ function Tooltip.Lines(cmp, inst, ctx, shift, labelled)
 		lines[#lines + 1] = { format("  %s %s x %s%s", name, g(p[2]), g(p[4]), filled[p[1]] and " (item table)" or ""),
 			format("%.2f", p[5]), GREY, GREY }
 	end
-	if not cmp.equipped then
+	if not cmp.equipped and not cmp.blocked then
 		lines[#lines + 1] = { "  minus worn", format("%.2f", cmp.base), GREY, GREY }
 		lines[#lines + 1] = { "  gain", format("%+.2f", cmp.gain), GREY, color }
 	end
@@ -67,7 +70,7 @@ local function lookup(link, ctx)
 	local inst, pending = ns.Live.Instance(link)
 	if pending then return false, true end
 	local cmp = inst and ns.Equip.CanUse(inst, ctx.cls, ctx.level) and (inst.rl or 0) <= ctx.level + AHEAD
-		and ns.Equip.Compare(inst, ctx.w, ctx.cls, ctx.worn, false)
+		and ns.Equip.Compare(inst, ctx.w, ctx.cls, ctx.worn, ctx.canDw, ctx.rules)
 	hit = cmp and { inst, cmp } or false
 	if inst and inst.fromTable then return hit, true end -- the client's stats may come by the next read
 	if cached >= CACHE_MAX then cache, cached = {}, 0 end

@@ -17,12 +17,16 @@ Browser.SLOTS = {
 }
 
 -- The weapons PoleSim gives the spec at that band (armory: mh_invs / oh_invs by weapon style; casters
--- "any"). Dual wield is left out: no Priest or Mage can (later classes add it with their data).
+-- "any"). Dual wield ("dw" bands, once the class has Dual Wield: canDw): one-handers and off-hand weapons
+-- in the off hand, scored with the off-hand weights.
 local MH = { ["2h"] = { 17 }, dw = { 13, 21 }, shield = { 13, 21 }, ["1h"] = { 13, 21 }, any = { 13, 17, 21 } }
-local OH = { ["2h"] = {}, shield = { 14 }, ["1h"] = { 14, 23 }, any = { 14, 23 } }
-function Browser.Invs(def, style)
+local OH = { ["2h"] = {}, shield = { 14 }, ["1h"] = { 14, 23 }, any = { 14, 23 }, dw = { 13, 22 } }
+function Browser.Invs(def, style, canDw)
 	if def.key == "mainhand" then return MH[style] or MH.any end
-	if def.key == "offhand" then return OH[style] or OH.any end
+	if def.key == "offhand" then
+		if style == "dw" and not canDw then return {} end
+		return OH[style] or OH.any
+	end
 	return def.invs
 end
 
@@ -32,6 +36,7 @@ function Browser.Candidate(id, env, lim, w, role)
 	local it = env.items.Get(id)
 	if not it or it.rl > lim then return nil end
 	if not ns.Equip.CanUse(it, env.cls, math.max(env.level, it.rl)) then return nil end
+	if ns.Equip.RuleWhy(env.rules, role, it) then return nil end -- a weapon type the spec's rotation can't use
 	if not ns.Sources.RaceOk(it.rm, env.player.raceBit) then return nil end
 	local srcs = ns.Sources.For(id, env.codex, env.player, lim, it)
 	if not srcs then return nil end
@@ -78,7 +83,7 @@ function Browser.Collect(env, at, rlFrom, rlTo, lim, yield, only)
 		if not only or only[def.key] then
 			local role = ns.Equip.ROLE_OF_SLOT[def.slot] or "gear"
 			local list = {}
-			for _, inv in ipairs(Browser.Invs(def, band.style)) do
+			for _, inv in ipairs(Browser.Invs(def, band.style, band.canDw)) do
 				local r = inv == 17 and "mh" or role
 				for _, id in ipairs(byInv[inv] or {}) do
 					local ok, inWindow, c = pcall(consider, id, env, rlFrom, rlTo, lim, band.w, r)

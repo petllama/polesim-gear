@@ -77,6 +77,17 @@ for li, L in ipairs(levels) do
 		failures = failures + 1
 	else
 		local ns, U, W = fx.ns, fx.U, fx.W
+		-- SYNTH=1: the run's melee/hunter spec with synthetic weapon weights (speed, off hand, ranged speed and
+		-- the reference speeds) and weaponModel, as its bands will look after the melee results run (0.7.0)
+		if os.getenv("SYNTH") and run.cls then
+			local SYN = { warrior = { speed = 14, _mhSpeed = 3.1 }, rogue = { speed = 20, ohDps = 1.2, ohSpeed = -10, _mhSpeed = 2.4, _ohSpeed = 1.4 },
+				hunter = { rspeed = 3, _rSpeed = 2.8 }, shaman = { speed = 30, _mhSpeed = 2.7 }, paladin = { speed = 15, _mhSpeed = 3.3 },
+				druid = {} }
+			local sd = ns.DATA.specs[run.cls][run.spec]
+			sd.weaponModel = 1
+			for _, b in ipairs(sd.bands) do for k, v in pairs(SYN[run.cls] or {}) do b.w[k] = v end end
+			ns.Fire("STATE", "SPEC")
+		end
 		-- WORN="16:5306,17:..." wears those items (scored with the level's band) instead of the Old Hat
 		if os.getenv("WORN") then
 			for k in pairs(fx.worn) do fx.worn[k] = nil end

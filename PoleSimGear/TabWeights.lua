@@ -130,7 +130,9 @@ function Tab.Refresh(p)
 	S.SetEnabled(p.prev, i > 1)
 	S.SetEnabled(p.next, i < #bands)
 	p.how:SetText("An item's score = its stats x these weights,")
-	p.how2:SetText(format("in points of %s.", ns.DATA.statLabels[ctx.ref] or ctx.ref))
+	local sd = ns.DATA.specs[ctx.cls] and ns.DATA.specs[ctx.cls][ctx.spec]
+	p.how2:SetText(format("in points of %s.", ns.DATA.statLabels[ctx.ref] or ctx.ref) ..
+		(sd and sd.uncertain and " Tank weights: less certain (Stamina, armor, avoidance)." or ""))
 	local rows = ns.View.WeightRows(b.w)
 	local max = rows[1] and rows[1].value or 1
 	for k, r in ipairs(rows) do

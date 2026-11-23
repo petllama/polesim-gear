@@ -173,6 +173,7 @@ function Live.Instance(link, client)
 		id = id, link = link, bonus = bonus, name = Live.Name(link, cname, rec), icon = Live.Icon(id, rec, icon), inv = inv, rl = minLevel or (rec and rec.rl) or 0, c = classID or (rec and rec.c),
 		sc = subclassID or (rec and rec.sc), cm = rec and rec.cm or 0, unique = rec and rec.u or false,
 		quality = quality, stats = stats, armor = armor, dps = dps, weapon = dps > 0, filled = filled,
+		speed = rec and rec.speed, -- weapon speed: the shipped table's (suffixes never change it)
 		fromTable = fromTable,
 	}
 end

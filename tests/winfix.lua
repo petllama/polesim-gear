@@ -4,8 +4,10 @@ local T = require("t")
 local U = require("ui")
 local F = {}
 F.CLASS = { priest = { "Priest", "PRIEST", 5 }, mage = { "Mage", "MAGE", 8 }, warlock = { "Warlock", "WARLOCK", 9 },
-	druid = { "Druid", "DRUID", 11 }, shaman = { "Shaman", "SHAMAN", 7 }, paladin = { "Paladin", "PALADIN", 2 } }
-F.RACE = { priest = { "H", 16 }, mage = { "H", 16 }, warlock = { "H", 16 }, druid = { "H", 32 }, shaman = { "H", 2 }, paladin = { "A", 1 } }
+	druid = { "Druid", "DRUID", 11 }, shaman = { "Shaman", "SHAMAN", 7 }, paladin = { "Paladin", "PALADIN", 2 },
+	warrior = { "Warrior", "WARRIOR", 1 }, rogue = { "Rogue", "ROGUE", 4 }, hunter = { "Hunter", "HUNTER", 3 } }
+F.RACE = { priest = { "H", 16 }, mage = { "H", 16 }, warlock = { "H", 16 }, druid = { "H", 32 }, shaman = { "H", 2 }, paladin = { "A", 1 },
+	warrior = { "H", 2 }, rogue = { "H", 16 }, hunter = { "H", 2 } }
 
 function F.files()
 	local out = {}
@@ -75,7 +77,9 @@ function F.load(opts)
 	local band, lo, sd = ns.Bands.For(cls, spec, L)
 	local worn = opts.worn or { [1] = { inst = { id = 999001, name = "Old Hat", quality = 1, icon = "inv_helmet_01", inv = 1, stats = {} }, score = 1 } }
 	local unsupported = opts.unsupportedSpec
+	local canDw = ns.Context.CanDw -- the real rule (class Dual Wield level + the band's "dw" style)
 	ns.Context = {
+		CanDw = canDw,
 		ClassKey = function() return cls end,
 		Unsupported = function() return nil end,
 		SpecUnsupported = function()
@@ -92,9 +96,13 @@ function F.load(opts)
 				band, lo, sd = ns.Bands.For(cls, key, L)
 			end
 			return { cls = cls, spec = key, specSource = source, level = L, lo = lo, band = band,
-				ref = sd.ref, w = band.w, worn = worn, faction = who[1], classBit = ns.DATA.proficiency[cls].bit, raceBit = who[2] }
+				ref = sd.ref, w = band.w, worn = worn, faction = who[1], classBit = ns.DATA.proficiency[cls].bit, raceBit = who[2],
+				canDw = canDw(cls, L, band), rules = sd.rules }
 		end,
-		At = function(L) local b, l = ns.Bands.For(cls, spec, L) return { band = b, lo = l, w = b.w, worn = worn } end,
+		At = function(L2)
+			local b, l = ns.Bands.For(cls, spec, L2)
+			return { band = b, lo = l, w = b.w, worn = worn, canDw = canDw(cls, L2, b), rules = sd.rules }
+		end,
 	}
 	local fx = { ns = ns, W = W, U = U, worn = worn }
 	function fx.settle()
