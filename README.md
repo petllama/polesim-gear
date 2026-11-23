@@ -10,7 +10,7 @@ update needs `/reload`).
 
 **Supported classes and specs** (weights from PoleSim's simulation of each spec leveling):
 
-| Class   | Specs with weights                      | No points yet | Not supported yet        |
+| Class   | Specs with weights                      | Default spec* | Not supported yet        |
 |---------|-----------------------------------------|---------------|--------------------------|
 | Priest  | Shadow, Holy, Discipline                | Shadow        |                          |
 | Mage    | Frost, Fire, Arcane                     | Frost         |                          |
@@ -18,6 +18,9 @@ update needs `/reload`).
 | Druid   | Balance, Restoration                    | Balance       | Feral                    |
 | Shaman  | Elemental, Restoration                  | Elemental     | Enhancement              |
 | Paladin | Holy                                    | Holy          | Retribution, Protection  |
+
+\* The spec used before you have spent any talent points (below level 10).
+You can pick another in Settings (or `/psg spec`) at any time.
 
 Not supported yet: Druid Feral, Shaman Enhancement, Paladin Retribution and Protection, and all Warriors,
 Rogues and Hunters: their melee/hunter weapon rules are not done yet (weapon speed, daggers, dual wield,
