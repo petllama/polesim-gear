@@ -95,8 +95,48 @@ function Tab.Create(parent)
 	p.healer:SetPoint("TOPLEFT", 16, y - 22)
 	p.healer:SetWidth(560)
 	p.healer:SetText(Tab.HEALER_NOTE)
+	-- recording for PoleSim (Record.lua): the account-wide answer and asking to upload (right column)
+	local X, CW = 590, 230
+	local rt = S.Text(p, 13, C.white)
+	rt:SetPoint("TOPLEFT", X, -12)
+	rt:SetText("Recording for PoleSim")
+	p.recChecks = {}
+	for i, sw in ipairs(Tab.RECORD_SWITCHES) do
+		local b = S.Check(p, sw[1], function(on)
+			sw[3](on)
+			ns.Window.Refresh()
+		end)
+		b:SetSize(CW, 20)
+		b:SetPoint("TOPLEFT", X, -34 - (i - 1) * ROW)
+		b.get = sw[2]
+		p.recChecks[i] = b
+	end
+	local ry = -34 - #Tab.RECORD_SWITCHES * ROW - 2
+	p.recStatus = S.Text(p, 11, C.label)
+	p.recStatus:SetPoint("TOPLEFT", X, ry)
+	p.recStatus:SetWidth(CW)
+	for i, text in ipairs(Tab.RECORD_NOTES) do
+		local t = S.Text(p, 11, C.label)
+		t:SetPoint("TOPLEFT", X, ry - 16 * i)
+		t:SetWidth(CW)
+		t:SetText(text)
+	end
+	p.recExport = S.Button(p, "Export now", 90, 20, function() ns.RecordUI.OpenExport() end, S.ACTION)
+	p.recExport:SetPoint("TOPLEFT", X, ry - 16 * (#Tab.RECORD_NOTES + 1) - 4)
+	p.recExport.tip = "The copy-paste export for polesim.petllama.com/upload (also /psg export)"
 	return p
 end
+
+Tab.RECORD_NOTES = { "for this character; about 20 h", "are kept. No names, chat, gold", "or map position." }
+-- { label, get, set(on) }
+Tab.RECORD_SWITCHES = {
+	{ "Record leveling data for PoleSim", function() return ns.Options.Get("record") end, function(on)
+		ns.Options.Set("record", on)
+		ns.Options.Set("recAsked", true)
+	end },
+	{ "Ask me to upload every 4 h of play", function() return ns.Options.Get("recPrompt") end,
+		function(on) ns.Options.Set("recPrompt", on) end },
+}
 
 -- The spec choices: Automatic (talents), then the class's specs with weights (Spec.Keys).
 function Tab.SpecList()
@@ -145,6 +185,8 @@ function Tab.Refresh(p)
 	p.promptNote:SetText(Tab.PromptNote())
 	p.minGain:Update()
 	p.spec:Update()
+	for _, b in ipairs(p.recChecks) do b:Set(b.get()) end
+	p.recStatus:SetText(ns.Record.Status())
 end
 
 ns.Window.RegisterTab("settings", { create = Tab.Create, refresh = Tab.Refresh })

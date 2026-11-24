@@ -107,6 +107,11 @@ function M:StopMovingOrSizing() self.sizing = nil end
 function M:SetNormalTexture(v) self.normalTexture = v end
 function M:SetHighlightTexture(v) self.highlightTexture = v end
 function M:SetPushedTexture(v) self.pushedTexture = v end
+-- EditBox: keyboard focus and the text highlighted (what Ctrl+C copies)
+function M:SetFocus() self.focused = true end
+function M:ClearFocus() self.focused = false end
+function M:HasFocus() return self.focused == true end
+function M:HighlightText(a, b) self.highlighted = not (a == 0 and b == 0) end
 -- ScrollBox: the frames in view with their data (the client's ScrollBoxListMixin:ForEachFrame)
 function M:GetView() return self.view end
 function M:ForEachFrame(fn) for _, f in ipairs(self.frames or {}) do fn(f, f.e or f.d) end end

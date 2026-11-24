@@ -18,6 +18,11 @@ Polestar, which it requires and reads at runtime.
   as wowsims/forever (MIT) extracted it.
 - **Where items come from:** read in game from Polestar's Codex and active guide (Polestar, GPL-3.0;
   its data credits are in Polestar_Codex/LICENSE-DATA.txt). Nothing of it is copied into this addon.
+- **LibDeflate** 1.0.2 (`PoleSimGear/Libs/LibDeflate/`, unmodified, from
+  https://github.com/SafeteeWoW/LibDeflate): (C) 2018-2020 Haoqian He, zlib License (its text is in
+  `Libs/LibDeflate/LICENSE.txt`). It compresses the recorder's export.
+- **LibStub** (`PoleSimGear/Libs/LibStub/`, unmodified): public domain (Kaelten, Cladhaire, ckknight,
+  Mikk, Ammo, Nevcairiel, joshborke).
 - Nothing here comes from Forever Leveling BiS or from Polestar_ItemDB's Forever.lua.
 
 ## MIT notice (PoleSim and wowsims)

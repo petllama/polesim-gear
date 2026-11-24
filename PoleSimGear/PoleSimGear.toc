@@ -9,6 +9,8 @@
 ## SavedVariablesPerCharacter: PoleSimGearCharDB
 ## AddonCompartmentFunc: PoleSimGear_OnAddonCompartmentClick
 
+Libs\LibStub\LibStub.lua
+Libs\LibDeflate\LibDeflate.lua
 Core.lua
 Data\Weights.lua
 Data\Suffixes.lua
@@ -44,3 +46,6 @@ TabSettings.lua
 Minimap.lua
 AHPanel.lua
 Prompt.lua
+Record.lua
+RecordExport.lua
+RecordUI.lua

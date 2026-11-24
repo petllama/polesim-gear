@@ -64,6 +64,7 @@ function W.install()
 	_G.StaticPopupDialogs = {}
 	_G.YES, _G.NO = "Yes", "No"
 	_G.InCombatLockdown = function() return false end
+	_G.GetTime = function() return W.time or 0 end -- the client's clock (seconds); W.time moves it
 end
 
 return W
