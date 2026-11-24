@@ -44,11 +44,11 @@ return {
 		local items = U.menu(p.spec)
 		local texts = {}
 		for i, it in ipairs(items) do texts[i] = it.text end
-		T.eq(table.concat(texts, ","), "Automatic (talents),Balance,Restoration")
+		T.eq(table.concat(texts, ","), "Automatic (talents),Balance,Feral,Restoration")
 		T.eq(items[1].isSelected(), true)
 		local fired
 		ns.On("STATE", function(event) fired = event end)
-		items[3].select()
+		items[4].select()
 		T.eq(ns.char.spec, "restoration"); T.eq(fired, "SPEC")
 		fx.done()
 		local fp = F.load({ cls = "paladin" })
@@ -56,26 +56,26 @@ return {
 		local pp = fp.tab("settings")
 		local list = {}
 		for i, it in ipairs(fp.U.menu(pp.spec)) do list[i] = it.text end
-		T.eq(table.concat(list, ","), "Automatic (talents),Holy")
+		T.eq(table.concat(list, ","), "Automatic (talents),Holy,Retribution")  -- no Protection (tank weights pending)
 		fp.done()
 	end,
-	-- Auto-detect on a spec with no weights (Feral): the window says so where the lists would be and
+	-- Auto-detect on a spec with no weights (Protection): the window says so where the lists would be and
 	-- in the header, Settings still offers the supported specs; picking one scores with its weights.
 	unsupported_spec_window = function()
-		local fx = F.load({ cls = "druid", unsupportedSpec = "feral" })
+		local fx = F.load({ cls = "paladin", unsupportedSpec = "protection" })
 		local ns, U = fx.ns, fx.U
 		local f = fx.open()
 		T.ok(f and f:IsShown(), "the window opens")
-		local msg = "Druid Feral isn't supported yet. Pick a supported spec in Settings to use its weights."
+		local msg = "Paladin Protection isn't supported yet. Pick a supported spec in Settings to use its weights."
 		T.eq(fx.tab("plan").list.provided[1].empty, msg)
-		T.eq(f.header.spec.text, "Feral (not supported)"); T.eq(f.header.who.text, "Level 20 Druid")
+		T.eq(f.header.spec.text, "Protection (not supported)"); T.eq(f.header.who.text, "Level 20 Paladin")
 		local p = fx.tab("settings")
 		local items = U.menu(p.spec)
 		T.eq(#items, 3)
 		items[2].select()
-		T.eq(ns.char.spec, "balance")
+		T.eq(ns.char.spec, "holy")
 		fx.settle()
-		T.eq(ns.Context.Get().spec, "balance")
+		T.eq(ns.Context.Get().spec, "holy")
 		T.ok(fx.tab("plan").list.provided[1].empty ~= msg, "scored now")
 		fx.done()
 	end,

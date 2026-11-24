@@ -49,6 +49,10 @@ end
 -- reference-speed weapon scores its DPS alone; an off hand without ohDps scores half the DPS weight.
 local TERMS = { mh = { "dps", "speed", "_mhSpeed" }, oh = { "ohDps", "ohSpeed", "_ohSpeed" }, ranged = { "rdps", "rspeed", "_rSpeed" } }
 Score.TERMS = TERMS
+-- armory.SPEED_RANGE: the speed weights hold within +-0.6 s of the reference weapon (PoleSim's linearity
+-- check), so a weapon's speed difference counts at most that far either way.
+local SPEED_RANGE = 0.6
+Score.SPEED_RANGE = SPEED_RANGE
 -- -> { { item key, amount, weight key, weight }, ... } of a weapon in a role
 function Score.WeaponTerms(inst, w, role)
 	local t = TERMS[role]
@@ -56,7 +60,9 @@ function Score.WeaponTerms(inst, w, role)
 	if role == "oh" and w.ohDps == nil then return { { "dps", inst.dps, "dps", 0.5 * (w.dps or 0) } } end
 	local out = { { t[1], inst.dps, t[1], w[t[1]] or 0 } }
 	local sw, anchor, speed = w[t[2]], w[t[3]], inst.speed
-	if sw and sw ~= 0 and anchor and speed and speed ~= 0 then out[2] = { t[2], speed - anchor, t[2], sw } end
+	if sw and sw ~= 0 and anchor and speed and speed ~= 0 then
+		out[2] = { t[2], math.max(-SPEED_RANGE, math.min(SPEED_RANGE, speed - anchor)), t[2], sw }
+	end
 	return out
 end
 

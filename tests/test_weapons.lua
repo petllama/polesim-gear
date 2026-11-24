@@ -16,8 +16,20 @@ return {
 	reference_speed_scores_dps_alone = function()
 		local S = T.addon(FILES).Score
 		T.near(S.Score(weapon(20, 2.6), W, "rogue", "mh"), 100)
-		T.near(S.Score(weapon(20, 3.6), W, "rogue", "mh"), 102)
-		T.near(S.Score(weapon(20, 1.6), W, "rogue", "mh"), 98)
+		T.near(S.Score(weapon(20, 3.1), W, "rogue", "mh"), 101)
+		T.near(S.Score(weapon(20, 2.2), W, "rogue", "mh"), 99.2)
+	end,
+	-- armory.SPEED_RANGE: the speed weights hold within +-0.6 s of the reference weapon (PoleSim's linearity
+	-- check), so a weapon's speed difference counts at most that far
+	speed_term_clamped_to_the_measured_range = function()
+		local S = T.addon(FILES).Score
+		T.eq(S.SPEED_RANGE, 0.6)
+		T.near(S.Score(weapon(20, 3.6), W, "rogue", "mh"), 101.2)
+		T.near(S.Score(weapon(20, 1.6), W, "rogue", "mh"), 98.8)
+		T.near(S.Score(weapon(10, 2.6), W, "rogue", "oh"), 25 - 0.6)
+		local p = S.Parts(weapon(20, 3.8), W, "rogue", "mh")
+		T.near(p[2][2], 0.6)
+		T.near(p[2][5], 1.2)
 	end,
 	off_hand_own_weights_else_half = function()
 		local S = T.addon(FILES).Score
@@ -34,11 +46,11 @@ return {
 	end,
 	parts_show_speed_and_off_hand = function()
 		local S = T.addon(FILES).Score
-		local p = S.Parts(weapon(20, 3.4), W, "rogue", "mh")
+		local p = S.Parts(weapon(20, 3.1), W, "rogue", "mh")
 		T.eq(#p, 2)
 		T.eq(p[2][1], "speed")
-		T.near(p[2][2], 0.8)
-		T.near(p[2][5], 1.6)
+		T.near(p[2][2], 0.5)
+		T.near(p[2][5], 1.0)
 		local o = S.Parts(weapon(12, 1.3), W, "rogue", "oh")
 		T.eq(o[1][3] .. "," .. o[2][3], "ohDps,ohSpeed")
 	end,
@@ -53,10 +65,13 @@ return {
 		local ns = T.addon(FILES)
 		local Sp = ns.Spec
 		T.ok(Sp.Supported("priest", "shadow"), "casters need no weapon model")
-		T.ok(not Sp.Supported("warrior", "arms"), "arms waits for its weapon-model bands")
-		ns.DATA.specs.warrior.arms.weaponModel = 1
-		T.ok(Sp.Supported("warrior", "arms"), "lights up once the bands carry weaponModel")
-		T.eq(table.concat(Sp.Keys("warrior"), ","), "arms")
+		T.ok(Sp.Supported("warrior", "arms"), "arms: its bands carry weaponModel (melee results run)")
+		T.ok(not Sp.Supported("warrior", "protection"), "tanks wait for their weapon-model bands")
+		ns.DATA.specs.warrior.arms.weaponModel = nil
+		T.ok(not Sp.Supported("warrior", "arms"), "no weaponModel, no scores")
+		ns.DATA.specs.warrior.protection.weaponModel = 1
+		T.ok(Sp.Supported("warrior", "protection"), "lights up once the bands carry weaponModel")
+		T.eq(table.concat(Sp.Keys("warrior"), ","), "fury,protection")
 		T.eq(table.concat(Sp.ORDER.rogue, ","), "assassination,combat,subtlety")
 	end,
 	dagger_rule_blocks_the_main_hand = function()

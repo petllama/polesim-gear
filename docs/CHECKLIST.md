@@ -1,9 +1,21 @@
-# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin) — PoleSim Gear 0.6.0
+# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution paladin) — PoleSim Gear 0.7.0
 
-**Recorder (branch `telemetry`, not released yet; goes into 0.7.0 with the melee work after your okay):**
-an opt-in leveling recorder for PoleSim. New files (Libs/LibStub, Libs/LibDeflate, Record.lua,
-RecordExport.lua, RecordUI.lua): **a full game restart** is needed, `/reload` is not enough. Checks:
-section R.
+**0.7.0 over 0.6.0:** melee and hunter weights, and the Recorder. **New files: restart the game** (a
+`/reload` does not load them). Warriors (Arms, Fury), Rogues (Assassination, Combat, Subtlety), Hunters
+(Beast Mastery, Marksmanship, Survival), Druid Feral, Shaman Enhancement and Paladin Retribution now get
+scores, arrows, the quest reward mark, the equip prompt, the window and the auction house scan, from
+PoleSim's new simulated weights with **weapon speed**: at the same DPS a slow two-hander is worth more
+to Arms, Retribution and Enhancement, a slow main hand to Combat and Subtlety, a fast off hand to most
+dual wielders (counted against the weapon PoleSim fought with at your level, at most 0.6 s either way).
+Off-hand weapons have their own weights; Assassination and Subtlety need a dagger in the main hand and
+hunters a bow, gun or crossbow (other weapons are never an upgrade there; the tooltip says why); rogues
+and Fury warriors dual wield (a one-hander compares in its better hand; a set never plans one item in
+both hands). Warrior and Paladin Protection are not supported yet (tank weights pending): pick another
+spec in Settings. With no talent points yet a druid now starts on Feral, a shaman on Enhancement and a
+paladin on Retribution (the website's defaults). **Recorder:** an opt-in leveling recorder for PoleSim
+(asked once; off until you say yes): pulls, casts, kills and XP, meals, deaths and character sheets, never
+names, chat or gold; every 4 h of play it offers a copy-paste export for polesim.petllama.com/upload.
+Checks: sections S and R. Item data about 1.3 MB (weapon speeds added).
 
 **0.6.0 over 0.5.1:** four more classes. Warlock (Affliction, Demonology, Destruction), Druid (Balance,
 Restoration), Shaman (Elemental, Restoration) and Paladin (Holy) now get scores, arrows, the quest reward
@@ -815,7 +827,50 @@ leveling.
 (e.g. a level 40 shaman: cloth, leather, mail, shields, jewelry, 7 weapon types = 12), the rows are items
 you can wear.
 
-## R. Recording for PoleSim (telemetry branch)
+## S. Warrior, Rogue, Hunter, Feral, Enhancement, Retribution (0.7.0)
+
+On a character of one of these specs (any level; 20+ for dual wield and off-hand checks). After the
+game restart. Report the printed lines.
+
+**S1. Spec and reference weapon.**
+
+```
+/psg spec
+/run local c=PoleSimGear.Context.Get() if c then print(c.cls,c.spec,c.specSource,c.level,c.band.upTo,c.ref,c.w._mhSpeed,c.w.speed,c.w._ohSpeed,c.w.ohSpeed,c.w._rSpeed,c.w.rspeed) else print("no context") end
+```
+
+Expected: your spec from the talents (no points yet: `arms`, `combat`, `beastmastery`, `feral`,
+`enhancement`, `retribution` `(default)`); the second line e.g. `warrior arms talents 30 39 str 3 9.8 nil
+nil nil nil` (reference main-hand speed and its weight; rogues also the off hand, hunters the ranged
+weapon). Feral: `nil` speed (the paw ignores it). Protection (warrior or paladin): one chat line "...
+Protection isn't supported yet. Pick a supported spec in Settings ..." and `no context`.
+
+**S2. Slow vs fast at the same DPS.** Hover two weapons of about the same DPS and different speed (e.g. a
+3.6 s and a 2.7 s two-hander for Arms/Ret/Enhancement, a slow and a fast one-hander in the main hand for
+Combat): with Shift, the "how?" has a "Weapon speed (s over the reference weapon, at most ±0.6)" line,
+positive for the slower one. Compare one score with https://polesim.petllama.com/#armory (same spec and
+level): same score and parts.
+
+**S3. Weapon rules.** Assassination/Subtlety: hover a one-hand sword or mace: it is compared in the off
+hand only (grey line "in the off hand"), never as a main hand; a main-hand-only sword or mace: "not for
+Assassination" (red) and the red line "Backstab, Ambush and Mutilate need a dagger in the main hand", no
+arrow. Hunter: a thrown weapon says "not for <spec>" and "Auto Shot, Aimed Shot and Multi-Shot need a bow,
+gun or crossbow"; a bow scores. Report the lines.
+
+**S4. Dual wield.** Rogue (or Fury warrior 20+): hover a one-hander: it is compared in the hand where it
+gains most (an off-hand comparison has the grey line "in the off hand"). Gear Plan: Main hand and Off
+hand rows suggest different items (never the same one-hander twice). Report both rows.
+
+**S5. Gear Plan sane.** Gear Plan tab: Arms/Ret/Enhancement/Feral/hunter main hand suggests two-handers
+(no off-hand list: "Uses the two-hander"); Assassination/Subtlety main hand only daggers; hunter ranged
+only bows, guns and crossbows. Report the first five rows (item, gain, source) and anything absurd (an
+item far above your level, a weapon type you can't use).
+
+**S6. Weights tab.** The radios list the class's supported specs only (Warrior: Arms, Fury; Paladin: Holy,
+Retribution); the weight list shows "Weapon speed ..." (and off-hand/ranged speed) rows; a negative one
+(e.g. off-hand speed for Combat) sits at the bottom.
+
+## R. Recording for PoleSim (0.7.0)
 
 Before: a full game restart (new files). Any class, out of a dungeon. `/console scriptErrors 1`.
 
@@ -955,6 +1010,13 @@ Skull) on your target: no "blocked" message.
 | Q5 | score = website | |
 | Q6 | Gear Plan sane (two-handers for druid/shaman/paladin) | |
 | Q7 | AH scan steps and rows | |
+| S1 | melee/hunter: spec, reference weapon, Protection message | |
+| S2 | slow vs fast weapon: speed line, score = website | |
+| S3 | dagger / bow-gun-crossbow rules in the tooltip | |
+| S4 | dual wield: better hand, no item planned twice | |
+| S5 | Gear Plan sane (two-handers, daggers, ranged types) | |
+| S6 | Weights tab: supported specs, speed rows | |
+| R1-R10 | Recorder: question, state, pulls, mobs, sheet, meal, AFK, export/upload, reminder, no taint | |
 
 ## Known limits (tell me if they bother you)
 
@@ -973,10 +1035,14 @@ Skull) on your target: no "blocked" message.
   leaves the off hand empty, while the window pairs it with the best off hand (R9).
 - Weapon sets mix bands with look ahead: a level-23 off hand paired with a one-hander you can wear now
   is scored with the weights of its own level, like every "coming up" row.
-- No dual wield yet (no supported class can); added with the melee classes.
-- Warriors, Rogues and Hunters: one chat line ("<class> isn't supported yet"), no window, no minimap
-  button, no scores. Feral, Enhancement, Retribution and Protection: no scores until you pick a
-  supported spec in Settings (melee/hunter weapon rules not done yet).
+- Warrior and Paladin Protection: no scores until you pick a supported spec in Settings (tank weights
+  pending).
+- Weapon speed counts at most 0.6 s from the reference weapon (the range PoleSim measured): a 3.8 s and a
+  3.4 s two-hander score the same speed part when the reference is 2.8 s. Within the range the speed
+  weight is a straight line; PoleSim's check found the real gain flattening above the reference at
+  higher levels (the line overstates a slower weapon by up to ~3% of its score).
+- Hunters' melee weapon is scored as a two-hander (PoleSim plays them with one); dual-wielding hunters
+  get no off-hand list.
 - Relics (idols, totems, librams) score their stats only; their effects are not modelled, so every relic
   scores 0 today and the auction house scan does not search for them.
 - Druid, Shaman and Paladin: the window suggests two-handers only (PoleSim plays them with one, as the

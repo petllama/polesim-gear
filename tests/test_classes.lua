@@ -5,7 +5,7 @@ local T = require("t")
 local FILES = { "Core.lua", "Data/Weights.lua", "Data/Suffixes.lua", "Data/Items.lua", "Items.lua", "Score.lua", "Bands.lua",
 	"Spec.lua", "Equip.lua", "Live.lua", "Context.lua" }
 local CLASS = { warlock = { "Warlock", "WARLOCK", 9 }, druid = { "Druid", "DRUID", 11 }, shaman = { "Shaman", "SHAMAN", 7 },
-	paladin = { "Paladin", "PALADIN", 2 } }
+	paladin = { "Paladin", "PALADIN", 2 }, warrior = { "Warrior", "WARRIOR", 1 } }
 
 local function addon(cls)
 	local ns = T.addon(FILES)
@@ -55,18 +55,22 @@ return {
 	supported_keys = function()
 		local S = addon("druid").Spec
 		T.eq(table.concat(S.Keys("warlock"), ","), "affliction,demonology,destruction")
-		T.eq(table.concat(S.Keys("druid"), ","), "balance,restoration")
-		T.eq(table.concat(S.Keys("shaman"), ","), "elemental,restoration")
-		T.eq(table.concat(S.Keys("paladin"), ","), "holy")
-		T.ok(S.Supported("druid", "balance")); T.ok(not S.Supported("druid", "feral"))
-		T.ok(not S.Supported("paladin", "retribution")); T.ok(not S.Supported("warrior", "arms"))
+		T.eq(table.concat(S.Keys("druid"), ","), "balance,feral,restoration")
+		T.eq(table.concat(S.Keys("shaman"), ","), "elemental,enhancement,restoration")
+		T.eq(table.concat(S.Keys("paladin"), ","), "holy,retribution")
+		T.eq(table.concat(S.Keys("warrior"), ","), "arms,fury")
+		T.ok(S.Supported("druid", "balance")); T.ok(S.Supported("druid", "feral"))
+		T.ok(S.Supported("paladin", "retribution")); T.ok(S.Supported("warrior", "arms"))
+		-- tanks wait for their weights (no weaponModel bands yet)
+		T.ok(not S.Supported("paladin", "protection")); T.ok(not S.Supported("warrior", "protection"))
 	end,
 	-- No talent points: the website's default when shipped, else the class's first shipped spec.
 	defaults = function()
 		local ns = addon("druid")
-		T.eq(ns.Spec.DEFAULT.warlock, "affliction"); T.eq(ns.Spec.DEFAULT.druid, "balance")
-		T.eq(ns.Spec.DEFAULT.shaman, "elemental"); T.eq(ns.Spec.DEFAULT.paladin, "holy")
-		for cls, ref in pairs({ warlock = "spShadow", druid = "sp", shaman = "sp", paladin = "str" }) do
+		T.eq(ns.Spec.DEFAULT.warlock, "affliction"); T.eq(ns.Spec.DEFAULT.druid, "feral")
+		T.eq(ns.Spec.DEFAULT.shaman, "enhancement"); T.eq(ns.Spec.DEFAULT.paladin, "retribution")
+		T.eq(ns.Spec.DEFAULT.warrior, "arms"); T.eq(ns.Spec.DEFAULT.rogue, "combat"); T.eq(ns.Spec.DEFAULT.hunter, "beastmastery")
+		for cls, ref in pairs({ warlock = "spShadow", druid = "str", shaman = "str", paladin = "str" }) do
 			local n = addon(cls)
 			local ctx = n.Context.Get()
 			T.eq(ctx.cls, cls); T.eq(ctx.specSource, "default"); T.eq(ctx.ref, ref, cls)
@@ -150,29 +154,29 @@ return {
 		c = E.Compare(shield, w, "shaman", worn, false)
 		T.eq(c.slot, 17); T.near(c.score, 52); T.near(c.gain, 22)
 	end,
-	-- A spec with no weights (here Feral from the talents): no context (never another spec's weights),
-	-- one chat line saying how to pick a supported one; choosing Balance scores again.
+	-- A spec with no weights (here Protection from the talents): no context (never another spec's weights),
+	-- one chat line saying how to pick a supported one; choosing Holy scores again.
 	unsupported_spec = function()
-		local ns = addon("druid")
+		local ns = addon("paladin")
 		local said = {}
 		ns.Print = function(...) said[#said + 1] = table.concat({ ... }, " ") end
-		ns.Spec.Detect = function() return "feral", { 0, 31, 0 } end
-		T.eq(ns.Context.ClassKey(), "druid")
+		ns.Spec.Detect = function() return "protection", { 0, 31, 0 } end
+		T.eq(ns.Context.ClassKey(), "paladin")
 		T.eq(ns.Context.Unsupported(), nil, "the class is supported")
 		T.eq(ns.Context.Get(), nil)
-		local msg = "Druid Feral isn't supported yet. Pick a supported spec in Settings to use its weights."
+		local msg = "Paladin Protection isn't supported yet. Pick a supported spec in Settings to use its weights."
 		T.eq(ns.Context.SpecUnsupported(), msg)
 		T.eq(#said, 1); T.eq(said[1], msg)
 		ns.Fire("STATE", "SPEC")
 		T.eq(ns.Context.Get(), nil)
 		T.eq(#said, 1, "said once")
-		ns.char.spec = "balance"
+		ns.char.spec = "holy"
 		ns.Fire("STATE", "SPEC")
 		local ctx = ns.Context.Get()
-		T.eq(ctx.spec, "balance"); T.eq(ctx.specSource, "chosen")
+		T.eq(ctx.spec, "holy"); T.eq(ctx.specSource, "chosen")
 		T.eq(ns.Context.SpecUnsupported(), nil)
-		-- the other unsupported specs
-		for cls, key in pairs({ shaman = "enhancement", paladin = "retribution" }) do
+		-- the other unsupported spec
+		for cls, key in pairs({ warrior = "protection" }) do
 			local n = addon(cls)
 			n.Print = function() end
 			n.Spec.Detect = function() return key end
@@ -187,15 +191,15 @@ return {
 	end,
 	-- /psg spec lists only supported specs and refuses an unsupported one.
 	slash_spec = function()
-		local ns = addon("druid")
-		ns.Context = { ClassKey = function() return "druid" end, SpecUnsupported = function() return nil end }
+		local ns = addon("paladin")
+		ns.Context = { ClassKey = function() return "paladin" end, SpecUnsupported = function() return nil end }
 		local said
 		ns.Print = function(...) said = table.concat({ ... }, " ") end
-		SlashCmdList.POLESIMGEAR("spec feral")
-		T.eq(ns.char.spec, "auto", "feral has no weights: not chosen")
-		T.ok(said:find("auto|balance|restoration", 1, true), said)
-		SlashCmdList.POLESIMGEAR("spec restoration")
-		T.eq(ns.char.spec, "restoration")
+		SlashCmdList.POLESIMGEAR("spec protection")
+		T.eq(ns.char.spec, "auto", "protection has no weights: not chosen")
+		T.ok(said:find("auto|holy|retribution", 1, true), said)
+		SlashCmdList.POLESIMGEAR("spec retribution")
+		T.eq(ns.char.spec, "retribution")
 	end,
 	-- The auction house scan asks for the armor the class wears by level + ahead, shields, its weapons.
 	ah_queries = function()

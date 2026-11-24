@@ -1,34 +1,47 @@
 # PoleSim Gear
 
-Version 0.6.0. WoW: Forever addon: PoleSim's simulated, level-banded gear weights in game. Item scores with a
+Version 0.7.0. WoW: Forever addon: PoleSim's simulated, level-banded gear weights in game. Item scores with a
 "how?" breakdown, upgrade arrows, the best quest reward, and a gear planner window with where to get
 each upgrade. In testing.
 
 **Download:** the latest zip is on the [Releases page](https://github.com/petllama/polesim-gear/releases/latest).
 Unzip it into `World of Warcraft/_forever_/Interface/AddOns/` (a new install needs a game restart; an
-update needs `/reload`).
+update needs `/reload`, unless its notes say it adds files: 0.7.0 does, restart the game).
 
 **Supported classes and specs** (weights from PoleSim's simulation of each spec leveling):
 
-| Class   | Specs with weights                      | Default spec* | Not supported yet        |
-|---------|-----------------------------------------|---------------|--------------------------|
-| Priest  | Shadow, Holy, Discipline                | Shadow        |                          |
-| Mage    | Frost, Fire, Arcane                     | Frost         |                          |
-| Warlock | Affliction, Demonology, Destruction     | Affliction    |                          |
-| Druid   | Balance, Restoration                    | Balance       | Feral                    |
-| Shaman  | Elemental, Restoration                  | Elemental     | Enhancement              |
-| Paladin | Holy                                    | Holy          | Retribution, Protection  |
+| Class   | Specs with weights                      | Default spec* | Not supported yet                     |
+|---------|-----------------------------------------|---------------|---------------------------------------|
+| Priest  | Shadow, Holy, Discipline                | Shadow        |                                       |
+| Mage    | Frost, Fire, Arcane                     | Frost         |                                       |
+| Warlock | Affliction, Demonology, Destruction     | Affliction    |                                       |
+| Warrior | Arms, Fury                              | Arms          | Protection (tank weights pending)     |
+| Rogue   | Assassination, Combat, Subtlety         | Combat        |                                       |
+| Hunter  | Beast Mastery, Marksmanship, Survival   | Beast Mastery |                                       |
+| Druid   | Balance, Feral, Restoration             | Feral         |                                       |
+| Shaman  | Elemental, Enhancement, Restoration     | Enhancement   |                                       |
+| Paladin | Holy, Retribution                       | Retribution   | Protection (tank weights pending)     |
 
 \* The spec used before you have spent any talent points (below level 10).
 You can pick another in Settings (or `/psg spec`) at any time.
 
-Not supported yet: Druid Feral, Shaman Enhancement, Paladin Retribution and Protection, and all Warriors,
-Rogues and Hunters: their melee/hunter weapon rules are not done yet (weapon speed, daggers, dual wield,
-a hunter's ranged weapon and pet). A Warrior, Rogue or Hunter gets one chat line ("<class> isn't
-supported yet") and nothing else. A supported class whose talents point to an unsupported spec (e.g. a
-Feral druid) is not scored with another spec's weights: chat and the window say "Druid Feral isn't
-supported yet. Pick a supported spec in Settings to use its weights." and Settings (or the Weights tab, or
-`/psg spec balance`) lets you choose one of the class's supported specs.
+Not supported yet: Warrior and Paladin Protection (tank weights rest on the least validated parts of the
+model and wait for their own run). A warrior or paladin whose talents point to Protection is not scored
+with another spec's weights: chat and the window say "Paladin Protection isn't supported yet. Pick a
+supported spec in Settings to use its weights." and Settings (or the Weights tab, or `/psg spec
+retribution`) lets you choose one of the class's supported specs.
+
+**Weapons (melee classes and hunters, 0.7.0).** A weapon scores its DPS and its **speed**: at the same
+DPS, abilities that add weapon damage hit harder with a slow weapon, so Arms, Retribution and
+Enhancement value slow two-handers, Combat and Subtlety a slow main hand, and most dual wielders a fast
+off hand. Speed counts against the weapon PoleSim fought with at your level (the "reference"; the
+website's upgrade finder names it), at most 0.6 s either way, the range PoleSim checked; Shift on a
+tooltip shows the speed part. Off-hand weapons have their own DPS and speed weights. Assassination and
+Subtlety need a **dagger in the main hand** (Backstab, Ambush, Mutilate) and hunters a **bow, gun or
+crossbow** (not thrown): other weapons are never an upgrade there and the tooltip says why. Dual wield
+(rogues from 10, Fury warriors from 20, as PoleSim plays them): a one-hander compares in the hand where
+it gains most, and a set never plans one item in both hands. Feral druids score weapon DPS only (the paw
+ignores the weapon's speed).
 
 **Healer specs** (Restoration, Holy, Discipline) use leveling weights: what kills mobs fastest while
 questing (Holy paladins and Restoration shamans melee a lot while leveling, so Strength and weapon DPS
@@ -36,8 +49,9 @@ count), not dungeon healing.
 
 Druid, Shaman and Paladin relics (idols, totems, librams) are scored by their stats only; their effects
 (e.g. "Increases the damage of your Moonfire spell") are not, so they score 0 today. PoleSim plays Druid,
-Shaman and Paladin with a two-hander, so the window suggests two-handers for them (no off hand list);
-tooltips still compare a shield or off hand with yours.
+Shaman and Paladin (and Arms warriors, hunters' melee weapon and Fury warriors below 20) with a
+two-hander, so the window suggests two-handers for them (no off hand list); tooltips still compare a
+shield or off hand with yours.
 
 **Requires Polestar** (the addon reads item sources and quests from Polestar's Codex): install and
 enable Polestar first, or PoleSim Gear does not load.
@@ -163,8 +177,10 @@ needed the first time (not just `/reload`).
   the most points; a tie goes as on the website's import, to the spec name later in the alphabet (Frost
   over Fire over Arcane, Shadow over Holy over Discipline, Destruction over Demonology over Affliction,
   Restoration over Feral over Balance, Restoration over Enhancement over Elemental, Retribution over
-  Protection over Holy); no points yet = Shadow for a priest, Frost for a mage, Affliction for a
-  warlock, Balance for a druid, Elemental for a shaman, Holy for a paladin.
+  Protection over Holy, Protection over Fury over Arms, Subtlety over Combat over Assassination,
+  Survival over Marksmanship over Beast Mastery); no points yet = Shadow for a priest, Frost for a mage,
+  Affliction for a warlock, Arms for a warrior, Combat for a rogue, Beast Mastery for a hunter, Feral for
+  a druid, Enhancement for a shaman, Retribution for a paladin.
 - `/psg minimap`: hide/show the minimap button (saved for the account).
 - `/psg ask`: ask to equip every upgrade in your bags now (the equip prompt, even for items there at login).
 - `/psg polestar`: ask again whether to turn off Polestar's own gear scores (forgets the earlier answer).

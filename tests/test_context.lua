@@ -16,8 +16,10 @@ return {
 		T.eq(ns.Context.Get().ref, "spArcane")
 	end,
 	-- A class with no shipped weights: one chat line at login, then nothing (no context, no errors).
+	-- (Every class has a ready spec since 0.7.0: warriors without their weapon-model bands stand in.)
 	unsupported_class = function()
 		local ns = T.addon(FILES)
+		for _, s in pairs(ns.DATA.specs.warrior) do s.weaponModel = nil end
 		require("wow").class = { "Warrior", "WARRIOR", 1 }
 		local said = {}
 		ns.Print = function(...) said[#said + 1] = table.concat({ ... }, " ") end
