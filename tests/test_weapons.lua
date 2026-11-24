@@ -66,11 +66,10 @@ return {
 		local Sp = ns.Spec
 		T.ok(Sp.Supported("priest", "shadow"), "casters need no weapon model")
 		T.ok(Sp.Supported("warrior", "arms"), "arms: its bands carry weaponModel (melee results run)")
-		T.ok(not Sp.Supported("warrior", "protection"), "tanks wait for their weapon-model bands")
+		T.ok(Sp.Supported("warrior", "protection"), "tanks: their bands carry weaponModel (tanks run, 0.7.1)")
+		T.ok(Sp.Supported("paladin", "protection"))
 		ns.DATA.specs.warrior.arms.weaponModel = nil
 		T.ok(not Sp.Supported("warrior", "arms"), "no weaponModel, no scores")
-		ns.DATA.specs.warrior.protection.weaponModel = 1
-		T.ok(Sp.Supported("warrior", "protection"), "lights up once the bands carry weaponModel")
 		T.eq(table.concat(Sp.Keys("warrior"), ","), "fury,protection")
 		T.eq(table.concat(Sp.ORDER.rogue, ","), "assassination,combat,subtlety")
 	end,

@@ -64,6 +64,7 @@ function M:ClearAllPoints() self.points = {} end
 function M:SetSize(w, h) self.w, self.h = w, h end
 function M:SetWidth(w) self.w = w end
 function M:SetHeight(h) self.h = h end
+function M:SetWordWrap(v) self.wordWrap = v and true or false end
 function M:GetWidth() return self.w end
 function M:GetHeight() return self.h end
 function M:SetAlpha(a) self.alpha = a end
@@ -249,14 +250,41 @@ function U.textWidth(text, size)
 	end
 	return w * (size or 12)
 end
--- Every visible FontString under root with a set width whose text is wider than it:
+-- Lines a word-wrapped text takes at a width (greedy, per "\n" paragraph; a word wider than the
+-- line counts as a line of its own), and the widest word.
+function U.wrapLines(text, size, width)
+	local lines, widest = 0, 0
+	for para in (tostring(text) .. "\n"):gmatch("(.-)\n") do
+		local used = nil
+		for word in para:gmatch("%S+") do
+			local ww = U.textWidth(word, size)
+			widest = math.max(widest, ww)
+			local sp = U.textWidth(" ", size)
+			if used and used + sp + ww <= width then used = used + sp + ww
+			else lines, used = lines + 1, ww end
+		end
+		if not used then lines = lines + 1 end -- an empty paragraph is a blank line
+	end
+	return lines, widest
+end
+-- Every visible FontString under root with a set width whose text is wider than it (word-wrapped
+-- ones: a word wider than the line, or more lines (font size x 1.25 each) than its set height):
 -- -> { "text (needs N, has W)", ... }
 function U.overflows(root)
 	local out = {}
 	U.walk(root, function(w)
 		if w.kind == "FontString" and w:IsVisible() and type(w.text) == "string" and w.text ~= "" and (w.w or 0) > 0 then
-			local need = U.textWidth(w.text, w.fontSize)
-			if need > w.w then out[#out + 1] = string.format("%q (needs %.0f, has %d)", w.text, need, w.w) end
+			if w.wordWrap then
+				local size = w.fontSize or 12
+				local lines, widest = U.wrapLines(w.text, size, w.w)
+				local tall = lines * size * 1.25
+				if widest > w.w or ((w.h or 0) > 0 and tall > w.h) then
+					out[#out + 1] = string.format("%q (wrapped: %d lines = %.0f px of %d, widest word %.0f of %d)", w.text, lines, tall, w.h or 0, widest, w.w)
+				end
+			else
+				local need = U.textWidth(w.text, w.fontSize)
+				if need > w.w then out[#out + 1] = string.format("%q (needs %.0f, has %d)", w.text, need, w.w) end
+			end
 		end
 	end)
 	return out

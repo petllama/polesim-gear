@@ -1,4 +1,15 @@
-# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution paladin) — PoleSim Gear 0.7.0
+# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution/Protection paladin) — PoleSim Gear 0.7.1
+
+**0.7.1 over 0.7.0:** tanks. Warrior and Paladin **Protection** now get scores, arrows, the quest reward
+mark, the equip prompt, the window and the auction house scan, from PoleSim's simulated tank weights
+(one-hander + shield; weapon speed against the reference weapon, as for the other melee specs). Tank
+weights are less certain (Stamina, armor and avoidance rest on the least validated parts of the model):
+the Weights tab says so under the spec choice. Prot Paladin's note there: block is a damage stat from 42
+(Holy Shield, Reckoning), faster weapons are better until ~55, and the level-60 weapon speed weight is set
+to neutral (PoleSim's sim and wowsims/forever disagree on it). The auction house scan now follows the
+spec's weapon style like the Gear Plan and the website (no two-handers for a tank, no one-handers or
+shields for Arms/Retribution/Enhancement). No new files: `/reload` is enough. Checks: S1 and S6 on a
+Protection warrior or paladin (talents in Protection, or Settings > Spec > Protection).
 
 **0.7.0 over 0.6.0:** melee and hunter weights, and the Recorder. **New files: restart the game** (a
 `/reload` does not load them). Warriors (Arms, Fury), Rogues (Assassination, Combat, Subtlety), Hunters
@@ -793,7 +804,7 @@ Protection/Retribution), the most points wins; no points yet: `affliction`/`bala
 `(default)`. Second line e.g. `warlock affliction talents 21 29 spShadow 256`, `druid balance ... sp 1024`,
 `shaman elemental ... sp 64` (Restoration: `str`), `paladin holy ... str 2`.
 
-**Q2. Unsupported spec (Feral druid, Enhancement shaman, Retribution/Protection paladin).** With most
+**Q2. Unsupported spec (since 0.7.1 every spec has weights: skip unless a later release gates one).** With most
 points in such a tree (or on a friend's character): at login (or after `/reload`) one chat line
 `<Class> <Spec> isn't supported yet. Pick a supported spec in Settings to use its weights.`; no PoleSim
 line in item tooltips, no arrows; the minimap button is there; `/psg` opens the window: the header says
@@ -846,8 +857,9 @@ game restart. Report the printed lines.
 Expected: your spec from the talents (no points yet: `arms`, `combat`, `beastmastery`, and for a druid,
 shaman or paladin their caster spec `balance`, `elemental`, `holy` `(default)`); the second line e.g. `warrior arms talents 30 39 str 3 9.8 nil
 nil nil nil` (reference main-hand speed and its weight; rogues also the off hand, hunters the ranged
-weapon). Feral: `nil` speed (the paw ignores it). Protection (warrior or paladin): one chat line "...
-Protection isn't supported yet. Pick a supported spec in Settings ..." and `no context`.
+weapon). Feral: `nil` speed (the paw ignores it). Protection (warrior or paladin, 0.7.1): e.g. `paladin
+protection talents 45 49 str 2.4 -14 nil nil nil nil`; the Weights tab shows the tank note under the spec
+choice (Prot Paladin: also the block / weapon speed note).
 
 **S2. Slow vs fast at the same DPS.** Hover two weapons of about the same DPS and different speed (e.g. a
 3.6 s and a 2.7 s two-hander for Arms/Ret/Enhancement, a slow and a fast one-hander in the main hand for
@@ -1039,7 +1051,7 @@ talent reset): `/psg spec` says `balance` / `elemental` / `holy` `(default)`.
 | Q5 | score = website | |
 | Q6 | Gear Plan sane (two-handers for druid/shaman/paladin) | |
 | Q7 | AH scan steps and rows | |
-| S1 | melee/hunter: spec, reference weapon, Protection message | |
+| S1 | melee/hunter/tank: spec, reference weapon, tank note | |
 | S2 | slow vs fast weapon: speed line, score = website | |
 | S3 | dagger / bow-gun-crossbow rules in the tooltip | |
 | S4 | dual wield: better hand, no item planned twice | |
@@ -1064,8 +1076,9 @@ talent reset): `/psg spec` says `balance` / `elemental` / `holy` `(default)`.
   leaves the off hand empty, while the window pairs it with the best off hand (R9).
 - Weapon sets mix bands with look ahead: a level-23 off hand paired with a one-hander you can wear now
   is scored with the weights of its own level, like every "coming up" row.
-- Warrior and Paladin Protection: no scores until you pick a supported spec in Settings (tank weights
-  pending).
+- Warrior and Paladin Protection (0.7.1): tank weights are less certain (Stamina, armor, avoidance).
+  Prot Paladin's level-60 weapon speed weight is set to neutral (PoleSim's sim and wowsims/forever
+  disagree on it); below 60 faster weapons score better until ~55.
 - Weapon speed counts at most 0.6 s from the reference weapon (the range PoleSim measured): a 3.8 s and a
   3.4 s two-hander score the same speed part when the reference is 2.8 s. Within the range the speed
   weight is a straight line; PoleSim's check found the real gain flattening above the reference at

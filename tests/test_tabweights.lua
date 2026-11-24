@@ -46,16 +46,46 @@ return {
 		T.eq(U.button(p, "Holy").on, true); T.eq(U.button(p, "Automatic (talents)").on, false)
 		fx.done()
 	end,
-	-- Only specs with weights get a radio: a paladin sees Holy and Retribution, never Protection (tank
-	-- weights pending).
+	-- Only specs with weights get a radio: a paladin sees Holy, Protection (0.7.1) and Retribution; a spec
+	-- whose bands lack the weapon model (Protection before 0.7.1) gets none.
 	spec_switch_supported_only = function()
 		local fx = F.load({ cls = "paladin" })
 		local ns, U = fx.ns, fx.U
 		fx.open()
 		local p = fx.tab("weights")
-		T.ok(U.button(p, "Holy")); T.ok(U.button(p, "Retribution"))
-		T.eq(U.find(p, function(w) return w.text == "Protection" end), nil, "no Protection radio")
+		T.ok(U.button(p, "Holy")); T.ok(U.button(p, "Retribution")); T.ok(U.button(p, "Protection"))
+		T.eq(#p.radios, 4)
+		fx.done()
+		fx = F.load({ cls = "paladin" })
+		fx.ns.DATA.specs.paladin.protection.weaponModel = nil
+		fx.open()
+		p = fx.tab("weights")
+		T.eq(fx.U.find(p, function(w) return w.text == "Protection" end), nil, "no Protection radio")
 		T.eq(#p.radios, 3)
+		fx.done()
+	end,
+	-- Tanks: the less-certain note; Prot Paladin also its block/speed note; both wrap under the spec
+	-- column without running past the panel at the window sizes the layout test uses. Others: no note.
+	tank_notes = function()
+		for _, case in ipairs({ { "paladin", true }, { "warrior", false } }) do
+			local fx = F.load({ cls = case[1], spec = "protection", level = 45 })
+			local f = fx.open()
+			local p = fx.tab("weights")
+			T.ok(p.note.text:find("Tank weights are less certain", 1, true), p.note.text)
+			T.eq(p.note.text:find("level-60 weapon speed set to neutral", 1, true) ~= nil, case[2], p.note.text)
+			if case[2] then T.ok(p.note.text:find("Block is a damage stat from 42 (Holy Shield, Reckoning)", 1, true)) end
+			for _, size in ipairs({ { 980, 600 }, { 780, 500 }, { 1300, 760 } }) do
+				f:SetSize(size[1], size[2])
+				if f.scripts.OnSizeChanged then f.scripts.OnSizeChanged(f, size[1], size[2]) end
+				p = fx.tab("weights")
+				local cut = fx.U.overflows(p)
+				T.eq(#cut, 0, case[1] .. " " .. size[1] .. ": " .. table.concat(cut, ", "))
+			end
+			fx.done()
+		end
+		local fx = F.load()
+		fx.open()
+		T.eq(fx.tab("weights").note.text, "", "a priest has no note")
 		fx.done()
 	end,
 }

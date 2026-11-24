@@ -65,6 +65,11 @@ function Tab.Create(parent)
 	p.radios = {}
 	p.specSub = S.Text(p, 10, C.label)
 	p.specSub:SetWidth(196)
+	-- the spec's notes (tanks: less certain; Prot Paladin's block/speed note), wrapped under the spec column
+	p.note = S.Text(p, 10, C.label)
+	p.note:SetWidth(196)
+	p.note:SetWordWrap(true)
+	p.note:SetJustifyV("TOP")
 	Tab.Layout(p, S.CONTENT.w, S.CONTENT.h)
 	return p
 end
@@ -72,6 +77,7 @@ end
 -- the list stretches down and (past 410 px) right with the bars; the spec column stays at its right
 function Tab.Layout(p, w, h)
 	local lw = math.max(410, w - 216)
+	p.lastH = h
 	S.PlaceList(p.list, 0, -66, lw, h - 66)
 	p.how:SetWidth(lw - 16)
 	p.how2:SetWidth(lw - 16)
@@ -80,7 +86,24 @@ function Tab.Layout(p, w, h)
 	S.Place(p.specTitle, "TOPLEFT", p.specX, -8)
 	for i, b in ipairs(p.radios) do S.Place(b, "TOPLEFT", p.specX - 4, -30 - (i - 1) * 22) end
 	S.Place(p.specSub, "TOPLEFT", p.specX, -34 - #p.radios * 22)
+	Tab.PlaceNote(p, h)
 	S.EachRow(p.list, function(row, d) if row.made and d then initRow(row, d) end end)
+end
+
+-- the note sits under "Now: ..." and may use the rest of the column's height
+function Tab.PlaceNote(p, h)
+	local top = 34 + #p.radios * 22 + 20
+	S.Place(p.note, "TOPLEFT", p.specX, -top)
+	p.note:SetHeight(math.max(0, (h or S.CONTENT.h) - top - 8))
+end
+
+-- the spec's notes for the Weights tab: "" | text
+function Tab.NoteText(sd)
+	if not sd then return "" end
+	local out = {}
+	if sd.uncertain then out[#out + 1] = "Tank weights are less certain (Stamina, armor, avoidance)." end
+	if sd.note then out[#out + 1] = sd.note end
+	return table.concat(out, "\n\n")
 end
 
 -- the radios are made on the first refresh (the class's specs are known then)
@@ -102,6 +125,7 @@ local function radios(p, ctx)
 		p.radios[i] = b
 	end
 	S.Place(p.specSub, "TOPLEFT", p.specX, -34 - #keys * 22)
+	Tab.PlaceNote(p, p.lastH)
 end
 
 function Tab.Step(d)
@@ -117,6 +141,7 @@ function Tab.Refresh(p)
 		p.band:SetText("")
 		p.how:SetText("")
 		p.how2:SetText("")
+		p.note:SetText("")
 		return S.SetList(p.list, {})
 	end
 	radios(p, ctx)
@@ -131,8 +156,8 @@ function Tab.Refresh(p)
 	S.SetEnabled(p.next, i < #bands)
 	p.how:SetText("An item's score = its stats x these weights,")
 	local sd = ns.DATA.specs[ctx.cls] and ns.DATA.specs[ctx.cls][ctx.spec]
-	p.how2:SetText(format("in points of %s.", ns.DATA.statLabels[ctx.ref] or ctx.ref) ..
-		(sd and sd.uncertain and " Tank weights: less certain (Stamina, armor, avoidance)." or ""))
+	p.how2:SetText(format("in points of %s.", ns.DATA.statLabels[ctx.ref] or ctx.ref))
+	p.note:SetText(Tab.NoteText(sd))
 	local rows = ns.View.WeightRows(b.w)
 	local max = rows[1] and rows[1].value or 1
 	for k, r in ipairs(rows) do

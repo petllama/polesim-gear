@@ -56,7 +56,7 @@ return {
 		local pp = fp.tab("settings")
 		local list = {}
 		for i, it in ipairs(fp.U.menu(pp.spec)) do list[i] = it.text end
-		T.eq(table.concat(list, ","), "Automatic (talents),Holy,Retribution")  -- no Protection (tank weights pending)
+		T.eq(table.concat(list, ","), "Automatic (talents),Holy,Protection,Retribution")  -- tanks since 0.7.1
 		fp.done()
 	end,
 	-- Auto-detect on a spec with no weights (Protection): the window says so where the lists would be and
@@ -64,6 +64,7 @@ return {
 	unsupported_spec_window = function()
 		local fx = F.load({ cls = "paladin", unsupportedSpec = "protection" })
 		local ns, U = fx.ns, fx.U
+		ns.DATA.specs.paladin.protection.weaponModel = nil -- a spec without weights (Protection before 0.7.1)
 		local f = fx.open()
 		T.ok(f and f:IsShown(), "the window opens")
 		local msg = "Paladin Protection isn't supported yet. Pick a supported spec in Settings to use its weights."

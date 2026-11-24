@@ -17800,6 +17800,2148 @@ R	paladin/retribution	60	276399	0	gear	52.429	sta:18:sta:0.83:14.94,mp5:7:mp5:0.
 R	paladin/retribution	60	277235	0	gear	31.884999999999998	str:14:str:1:14,sta:10:sta:0.83:8.3,armor:355:armor:0.027:9.585
 R	paladin/retribution	60	282560	0	gear	45.141	int:10:int:1.9:19,sta:13:sta:0.83:10.79,sp:8:sp:1.2:9.6,armor:213:armor:0.027:5.751
 R	paladin/retribution	60	286609	0	oh	50.472	spi:6:spi:0.42:2.52,armor:1776:armor:0.027:47.952
+R	paladin/protection	12	25	0	mh	10.555	dps:1.05:dps:6.7:7.035,speed:-0.4:speed:-8.8:3.52
+R	paladin/protection	12	1315	0	gear	15.95	sta:10:sta:0.83:8.3,spi:15:spi:0.51:7.65
+R	paladin/protection	12	1808	0	gear	2.886	armor:74:armor:0.039:2.886
+R	paladin/protection	12	2614	0	gear	1.131	armor:29:armor:0.039:1.131
+R	paladin/protection	12	3158	0	gear	1.014	armor:26:armor:0.039:1.014
+R	paladin/protection	12	3570	0	mh	55.523999999999994	str:2:str:1:2,dps:8.12:dps:6.7:54.404,speed:0.1:speed:-8.8:-0.88
+R	paladin/protection	12	4068	0	oh	45.027	sta:9:sta:0.83:7.47,armor:963:armor:0.039:37.557
+R	paladin/protection	12	4570	0	mh	61.72	dps:10:dps:6.7:67,speed:0.6:speed:-8.8:-5.28
+R	paladin/protection	12	4570	12718	mh	65.23	int:3:int:0.34:1.02,sta:3:sta:0.83:2.49,dps:10:dps:6.7:67,speed:0.6:speed:-8.8:-5.28
+R	paladin/protection	12	4570	12719	mh	65.74	spi:3:spi:0.51:1.53,sta:3:sta:0.83:2.49,dps:10:dps:6.7:67,speed:0.6:speed:-8.8:-5.28
+R	paladin/protection	12	4570	12720	mh	64.27	int:3:int:0.34:1.02,spi:3:spi:0.51:1.53,dps:10:dps:6.7:67,speed:0.6:speed:-8.8:-5.28
+R	paladin/protection	12	4570	12721	mh	65.71	agi:3:agi:0.5:1.5,sta:3:sta:0.83:2.49,dps:10:dps:6.7:67,speed:0.6:speed:-8.8:-5.28
+R	paladin/protection	12	4570	12722	mh	67.21	sta:3:sta:0.83:2.49,str:3:str:1:3,dps:10:dps:6.7:67,speed:0.6:speed:-8.8:-5.28
+R	paladin/protection	12	4570	12723	mh	65.74	int:3:int:0.34:1.02,str:3:str:1:3,dps:10:dps:6.7:67,speed:0.6:speed:-8.8:-5.28
+R	paladin/protection	12	4570	12724	mh	64.24	agi:3:agi:0.5:1.5,int:3:int:0.34:1.02,dps:10:dps:6.7:67,speed:0.6:speed:-8.8:-5.28
+R	paladin/protection	12	4570	12725	mh	66.25	spi:3:spi:0.51:1.53,str:3:str:1:3,dps:10:dps:6.7:67,speed:0.6:speed:-8.8:-5.28
+R	paladin/protection	12	4570	12726	mh	64.75	agi:3:agi:0.5:1.5,spi:3:spi:0.51:1.53,dps:10:dps:6.7:67,speed:0.6:speed:-8.8:-5.28
+R	paladin/protection	12	4570	12727	mh	66.22	agi:3:agi:0.5:1.5,str:3:str:1:3,dps:10:dps:6.7:67,speed:0.6:speed:-8.8:-5.28
+R	paladin/protection	12	4570	12728	mh	63.72	agi:4:agi:0.5:2,dps:10:dps:6.7:67,speed:0.6:speed:-8.8:-5.28
+R	paladin/protection	12	4570	12729	mh	63.08	int:4:int:0.34:1.36,dps:10:dps:6.7:67,speed:0.6:speed:-8.8:-5.28
+R	paladin/protection	12	4570	12730	mh	63.760000000000005	spi:4:spi:0.51:2.04,dps:10:dps:6.7:67,speed:0.6:speed:-8.8:-5.28
+R	paladin/protection	12	4570	12731	mh	65.03999999999999	sta:4:sta:0.83:3.32,dps:10:dps:6.7:67,speed:0.6:speed:-8.8:-5.28
+R	paladin/protection	12	4570	12732	mh	65.72	str:4:str:1:4,dps:10:dps:6.7:67,speed:0.6:speed:-8.8:-5.28
+R	paladin/protection	12	4570	12733	mh	65.64	ap:8:ap:0.49:3.92,dps:10:dps:6.7:67,speed:0.6:speed:-8.8:-5.28
+R	paladin/protection	12	4570	12736	mh	62.349999999999994	defense:3:defense:0.21:0.63,dps:10:dps:6.7:67,speed:0.6:speed:-8.8:-5.28
+R	paladin/protection	12	4570	12740	mh	64.21	sta:3:sta:0.83:2.49,dps:10:dps:6.7:67,speed:0.6:speed:-8.8:-5.28
+R	paladin/protection	12	4570	12741	mh	64.21	sta:3:sta:0.83:2.49,dps:10:dps:6.7:67,speed:0.6:speed:-8.8:-5.28
+R	paladin/protection	12	4570	12742	mh	64.21	sta:3:sta:0.83:2.49,dps:10:dps:6.7:67,speed:0.6:speed:-8.8:-5.28
+R	paladin/protection	12	4570	12743	mh	64.21	sta:3:sta:0.83:2.49,dps:10:dps:6.7:67,speed:0.6:speed:-8.8:-5.28
+R	paladin/protection	12	4570	12744	mh	64.21	sta:3:sta:0.83:2.49,dps:10:dps:6.7:67,speed:0.6:speed:-8.8:-5.28
+R	paladin/protection	12	4570	12759	mh	70.12	spHoly:6:spHoly:1.4:8.4,dps:10:dps:6.7:67,speed:0.6:speed:-8.8:-5.28
+R	paladin/protection	12	4570	12918	mh	77.48	sp:8:sp:1.8:14.4,int:4:int:0.34:1.36,dps:10:dps:6.7:67,speed:0.6:speed:-8.8:-5.28
+R	paladin/protection	12	4570	12919	mh	72.08	spDmg:5:sp:1.8:9,int:4:int:0.34:1.36,dps:10:dps:6.7:67,speed:0.6:speed:-8.8:-5.28
+R	paladin/protection	12	5079	0	gear	0.0	
+R	paladin/protection	12	6063	0	gear	2.145	armor:55:armor:0.039:2.145
+R	paladin/protection	12	6540	0	gear	1.092	armor:28:armor:0.039:1.092
+R	paladin/protection	12	6540	12718	gear	4.602	int:3:int:0.34:1.02,sta:3:sta:0.83:2.49,armor:28:armor:0.039:1.092
+R	paladin/protection	12	6540	12719	gear	5.112	spi:3:spi:0.51:1.53,sta:3:sta:0.83:2.49,armor:28:armor:0.039:1.092
+R	paladin/protection	12	6540	12720	gear	3.642	int:3:int:0.34:1.02,spi:3:spi:0.51:1.53,armor:28:armor:0.039:1.092
+R	paladin/protection	12	6540	12729	gear	2.7920000000000003	int:5:int:0.34:1.7,armor:28:armor:0.039:1.092
+R	paladin/protection	12	6540	12730	gear	3.642	spi:5:spi:0.51:2.55,armor:28:armor:0.039:1.092
+R	paladin/protection	12	6540	12731	gear	5.241999999999999	sta:5:sta:0.83:4.15,armor:28:armor:0.039:1.092
+R	paladin/protection	12	6540	12734	gear	11.892000000000001	sp:6:sp:1.8:10.8,armor:28:armor:0.039:1.092
+R	paladin/protection	12	6540	12735	gear	8.292	spDmg:4:sp:1.8:7.2,armor:28:armor:0.039:1.092
+R	paladin/protection	12	6540	12740	gear	3.582	sta:3:sta:0.83:2.49,armor:28:armor:0.039:1.092
+R	paladin/protection	12	6540	12741	gear	3.582	sta:3:sta:0.83:2.49,armor:28:armor:0.039:1.092
+R	paladin/protection	12	6540	12742	gear	3.582	sta:3:sta:0.83:2.49,armor:28:armor:0.039:1.092
+R	paladin/protection	12	6540	12743	gear	3.582	sta:3:sta:0.83:2.49,armor:28:armor:0.039:1.092
+R	paladin/protection	12	6540	12744	gear	3.582	sta:3:sta:0.83:2.49,armor:28:armor:0.039:1.092
+R	paladin/protection	12	6540	12745	gear	7.712	int:4:int:0.34:1.36,sta:2:sta:0.83:1.66,sp:2:sp:1.8:3.6,armor:28:armor:0.039:1.092
+R	paladin/protection	12	6540	12756	gear	1.092	armor:28:armor:0.039:1.092
+R	paladin/protection	12	6540	12757	gear	1.092	armor:28:armor:0.039:1.092
+R	paladin/protection	12	6540	12758	gear	1.092	armor:28:armor:0.039:1.092
+R	paladin/protection	12	6540	12759	gear	10.892	spHoly:7:spHoly:1.4:9.8,armor:28:armor:0.039:1.092
+R	paladin/protection	12	6540	12761	gear	1.092	armor:28:armor:0.039:1.092
+R	paladin/protection	12	6557	0	gear	1.911	armor:49:armor:0.039:1.911
+R	paladin/protection	12	6557	12718	gear	4.2509999999999994	int:2:int:0.34:0.68,sta:2:sta:0.83:1.66,armor:49:armor:0.039:1.911
+R	paladin/protection	12	6557	12719	gear	4.590999999999999	spi:2:spi:0.51:1.02,sta:2:sta:0.83:1.66,armor:49:armor:0.039:1.911
+R	paladin/protection	12	6557	12720	gear	3.611	int:2:int:0.34:0.68,spi:2:spi:0.51:1.02,armor:49:armor:0.039:1.911
+R	paladin/protection	12	6557	12721	gear	4.571	agi:2:agi:0.5:1,sta:2:sta:0.83:1.66,armor:49:armor:0.039:1.911
+R	paladin/protection	12	6557	12722	gear	5.571	sta:2:sta:0.83:1.66,str:2:str:1:2,armor:49:armor:0.039:1.911
+R	paladin/protection	12	6557	12723	gear	4.591	int:2:int:0.34:0.68,str:2:str:1:2,armor:49:armor:0.039:1.911
+R	paladin/protection	12	6557	12724	gear	3.591	agi:2:agi:0.5:1,int:2:int:0.34:0.68,armor:49:armor:0.039:1.911
+R	paladin/protection	12	6557	12725	gear	4.931	spi:2:spi:0.51:1.02,str:2:str:1:2,armor:49:armor:0.039:1.911
+R	paladin/protection	12	6557	12726	gear	3.931	agi:2:agi:0.5:1,spi:2:spi:0.51:1.02,armor:49:armor:0.039:1.911
+R	paladin/protection	12	6557	12727	gear	4.911	agi:2:agi:0.5:1,str:2:str:1:2,armor:49:armor:0.039:1.911
+R	paladin/protection	12	6557	12728	gear	3.411	agi:3:agi:0.5:1.5,armor:49:armor:0.039:1.911
+R	paladin/protection	12	6557	12729	gear	2.931	int:3:int:0.34:1.02,armor:49:armor:0.039:1.911
+R	paladin/protection	12	6557	12730	gear	3.441	spi:3:spi:0.51:1.53,armor:49:armor:0.039:1.911
+R	paladin/protection	12	6557	12731	gear	4.401	sta:3:sta:0.83:2.49,armor:49:armor:0.039:1.911
+R	paladin/protection	12	6557	12732	gear	4.911	str:3:str:1:3,armor:49:armor:0.039:1.911
+R	paladin/protection	12	6557	12733	gear	4.851	ap:6:ap:0.49:2.94,armor:49:armor:0.039:1.911
+R	paladin/protection	12	6557	12734	gear	9.111	sp:4:sp:1.8:7.2,armor:49:armor:0.039:1.911
+R	paladin/protection	12	6557	12735	gear	5.511	spDmg:2:sp:1.8:3.6,armor:49:armor:0.039:1.911
+R	paladin/protection	12	6557	12736	gear	2.331	defense:2:defense:0.21:0.42,armor:49:armor:0.039:1.911
+R	paladin/protection	12	6557	12740	gear	3.5709999999999997	sta:2:sta:0.83:1.66,armor:49:armor:0.039:1.911
+R	paladin/protection	12	6557	12741	gear	3.5709999999999997	sta:2:sta:0.83:1.66,armor:49:armor:0.039:1.911
+R	paladin/protection	12	6557	12742	gear	3.5709999999999997	sta:2:sta:0.83:1.66,armor:49:armor:0.039:1.911
+R	paladin/protection	12	6557	12743	gear	3.5709999999999997	sta:2:sta:0.83:1.66,armor:49:armor:0.039:1.911
+R	paladin/protection	12	6557	12744	gear	3.5709999999999997	sta:2:sta:0.83:1.66,armor:49:armor:0.039:1.911
+R	paladin/protection	12	6557	12756	gear	1.911	armor:49:armor:0.039:1.911
+R	paladin/protection	12	6557	12760	gear	1.911	armor:49:armor:0.039:1.911
+R	paladin/protection	12	7047	0	gear	3.564	spi:5:spi:0.51:2.55,armor:26:armor:0.039:1.014
+R	paladin/protection	12	7538	0	gear	10.257	armor:263:armor:0.039:10.257
+R	paladin/protection	12	7538	12718	gear	25.467	int:13:int:0.34:4.42,sta:13:sta:0.83:10.79,armor:263:armor:0.039:10.257
+R	paladin/protection	12	7538	12719	gear	27.677	spi:13:spi:0.51:6.63,sta:13:sta:0.83:10.79,armor:263:armor:0.039:10.257
+R	paladin/protection	12	7538	12720	gear	21.307000000000002	int:13:int:0.34:4.42,spi:13:spi:0.51:6.63,armor:263:armor:0.039:10.257
+R	paladin/protection	12	7538	12721	gear	27.546999999999997	agi:13:agi:0.5:6.5,sta:13:sta:0.83:10.79,armor:263:armor:0.039:10.257
+R	paladin/protection	12	7538	12722	gear	34.047	sta:13:sta:0.83:10.79,str:13:str:1:13,armor:263:armor:0.039:10.257
+R	paladin/protection	12	7538	12723	gear	27.677	int:13:int:0.34:4.42,str:13:str:1:13,armor:263:armor:0.039:10.257
+R	paladin/protection	12	7538	12724	gear	21.177	agi:13:agi:0.5:6.5,int:13:int:0.34:4.42,armor:263:armor:0.039:10.257
+R	paladin/protection	12	7538	12725	gear	29.887	spi:13:spi:0.51:6.63,str:13:str:1:13,armor:263:armor:0.039:10.257
+R	paladin/protection	12	7538	12726	gear	23.387	agi:13:agi:0.5:6.5,spi:13:spi:0.51:6.63,armor:263:armor:0.039:10.257
+R	paladin/protection	12	7538	12727	gear	29.756999999999998	agi:13:agi:0.5:6.5,str:13:str:1:13,armor:263:armor:0.039:10.257
+R	paladin/protection	12	7538	12728	gear	20.256999999999998	agi:20:agi:0.5:10,armor:263:armor:0.039:10.257
+R	paladin/protection	12	7538	12729	gear	17.057000000000002	int:20:int:0.34:6.8,armor:263:armor:0.039:10.257
+R	paladin/protection	12	7538	12730	gear	20.457	spi:20:spi:0.51:10.2,armor:263:armor:0.039:10.257
+R	paladin/protection	12	7538	12731	gear	26.857	sta:20:sta:0.83:16.6,armor:263:armor:0.039:10.257
+R	paladin/protection	12	7538	12732	gear	30.256999999999998	str:20:str:1:20,armor:263:armor:0.039:10.257
+R	paladin/protection	12	7538	12733	gear	29.857	ap:40:ap:0.49:19.6,armor:263:armor:0.039:10.257
+R	paladin/protection	12	7538	12734	gear	51.657	sp:23:sp:1.8:41.4,armor:263:armor:0.039:10.257
+R	paladin/protection	12	7538	12735	gear	37.257	spDmg:15:sp:1.8:27,armor:263:armor:0.039:10.257
+R	paladin/protection	12	7538	12740	gear	21.046999999999997	sta:13:sta:0.83:10.79,armor:263:armor:0.039:10.257
+R	paladin/protection	12	7538	12741	gear	21.046999999999997	sta:13:sta:0.83:10.79,armor:263:armor:0.039:10.257
+R	paladin/protection	12	7538	12742	gear	21.046999999999997	sta:13:sta:0.83:10.79,armor:263:armor:0.039:10.257
+R	paladin/protection	12	7538	12743	gear	21.046999999999997	sta:13:sta:0.83:10.79,armor:263:armor:0.039:10.257
+R	paladin/protection	12	7538	12744	gear	21.046999999999997	sta:13:sta:0.83:10.79,armor:263:armor:0.039:10.257
+R	paladin/protection	12	7538	12745	gear	34.597	int:15:int:0.34:5.1,sta:8:sta:0.83:6.64,sp:7:sp:1.8:12.6,armor:263:armor:0.039:10.257
+R	paladin/protection	12	7538	12746	gear	32.037	int:15:int:0.34:5.1,spi:8:spi:0.51:4.08,sp:7:sp:1.8:12.6,armor:263:armor:0.039:10.257
+R	paladin/protection	12	7538	12747	gear	39.387	spi:8:spi:0.51:4.08,sta:15:sta:0.83:12.45,sp:7:sp:1.8:12.6,armor:263:armor:0.039:10.257
+R	paladin/protection	12	7538	12748	gear	34.427	int:8:int:0.34:2.72,sta:15:sta:0.83:12.45,spDmg:5:sp:1.8:9,armor:263:armor:0.039:10.257
+R	paladin/protection	12	7538	12749	gear	28.436999999999998	int:15:int:0.34:5.1,spi:8:spi:0.51:4.08,spDmg:5:sp:1.8:9,armor:263:armor:0.039:10.257
+R	paladin/protection	12	7538	12750	gear	35.787	spi:8:spi:0.51:4.08,sta:15:sta:0.83:12.45,spDmg:5:sp:1.8:9,armor:263:armor:0.039:10.257
+R	paladin/protection	12	7538	12751	gear	33.547	agi:6:agi:0.5:3,ap:16:ap:0.49:7.84,sta:15:sta:0.83:12.45,armor:263:armor:0.039:10.257
+R	paladin/protection	12	7538	12752	gear	32.707	agi:8:agi:0.5:4,sta:15:sta:0.83:12.45,str:6:str:1:6,armor:263:armor:0.039:10.257
+R	paladin/protection	12	7538	12755	gear	43.306999999999995	sp:7:sp:1.8:12.6,sta:15:sta:0.83:12.45,str:8:str:1:8,armor:263:armor:0.039:10.257
+R	paladin/protection	12	7538	12760	gear	10.257	armor:263:armor:0.039:10.257
+R	paladin/protection	12	7922	0	gear	34.05	str:12:str:1:12,sta:12:sta:0.83:9.96,armor:310:armor:0.039:12.09
+R	paladin/protection	12	8192	0	gear	13.003999999999998	agi:11:agi:0.5:5.5,sta:5:sta:0.83:4.15,armor:86:armor:0.039:3.354
+R	paladin/protection	12	9458	0	oh	31.794	spi:3:spi:0.51:1.53,armor:776:armor:0.039:30.264
+R	paladin/protection	12	9834	0	gear	2.847	armor:73:armor:0.039:2.847
+R	paladin/protection	12	9834	12718	gear	9.866999999999999	int:6:int:0.34:2.04,sta:6:sta:0.83:4.98,armor:73:armor:0.039:2.847
+R	paladin/protection	12	9834	12719	gear	10.886999999999999	spi:6:spi:0.51:3.06,sta:6:sta:0.83:4.98,armor:73:armor:0.039:2.847
+R	paladin/protection	12	9834	12720	gear	7.946999999999999	int:6:int:0.34:2.04,spi:6:spi:0.51:3.06,armor:73:armor:0.039:2.847
+R	paladin/protection	12	9834	12721	gear	10.827	agi:6:agi:0.5:3,sta:6:sta:0.83:4.98,armor:73:armor:0.039:2.847
+R	paladin/protection	12	9834	12722	gear	13.827	sta:6:sta:0.83:4.98,str:6:str:1:6,armor:73:armor:0.039:2.847
+R	paladin/protection	12	9834	12723	gear	10.886999999999999	int:6:int:0.34:2.04,str:6:str:1:6,armor:73:armor:0.039:2.847
+R	paladin/protection	12	9834	12724	gear	7.8870000000000005	agi:6:agi:0.5:3,int:6:int:0.34:2.04,armor:73:armor:0.039:2.847
+R	paladin/protection	12	9834	12725	gear	11.907	spi:6:spi:0.51:3.06,str:6:str:1:6,armor:73:armor:0.039:2.847
+R	paladin/protection	12	9834	12726	gear	8.907	agi:6:agi:0.5:3,spi:6:spi:0.51:3.06,armor:73:armor:0.039:2.847
+R	paladin/protection	12	9834	12727	gear	11.847	agi:6:agi:0.5:3,str:6:str:1:6,armor:73:armor:0.039:2.847
+R	paladin/protection	12	9834	12728	gear	7.3469999999999995	agi:9:agi:0.5:4.5,armor:73:armor:0.039:2.847
+R	paladin/protection	12	9834	12729	gear	5.907	int:9:int:0.34:3.06,armor:73:armor:0.039:2.847
+R	paladin/protection	12	9834	12730	gear	7.436999999999999	spi:9:spi:0.51:4.59,armor:73:armor:0.039:2.847
+R	paladin/protection	12	9834	12731	gear	10.317	sta:9:sta:0.83:7.47,armor:73:armor:0.039:2.847
+R	paladin/protection	12	9834	12732	gear	11.847	str:9:str:1:9,armor:73:armor:0.039:2.847
+R	paladin/protection	12	9834	12733	gear	11.667	ap:18:ap:0.49:8.82,armor:73:armor:0.039:2.847
+R	paladin/protection	12	9834	12734	gear	22.647000000000002	sp:11:sp:1.8:19.8,armor:73:armor:0.039:2.847
+R	paladin/protection	12	9834	12735	gear	15.447	spDmg:7:sp:1.8:12.6,armor:73:armor:0.039:2.847
+R	paladin/protection	12	9834	12736	gear	4.107	defense:6:defense:0.21:1.26,armor:73:armor:0.039:2.847
+R	paladin/protection	12	9834	12740	gear	7.827	sta:6:sta:0.83:4.98,armor:73:armor:0.039:2.847
+R	paladin/protection	12	9834	12741	gear	7.827	sta:6:sta:0.83:4.98,armor:73:armor:0.039:2.847
+R	paladin/protection	12	9834	12742	gear	7.827	sta:6:sta:0.83:4.98,armor:73:armor:0.039:2.847
+R	paladin/protection	12	9834	12743	gear	7.827	sta:6:sta:0.83:4.98,armor:73:armor:0.039:2.847
+R	paladin/protection	12	9834	12744	gear	7.827	sta:6:sta:0.83:4.98,armor:73:armor:0.039:2.847
+R	paladin/protection	12	9834	12745	gear	13.947000000000001	int:7:int:0.34:2.38,sta:4:sta:0.83:3.32,sp:3:sp:1.8:5.4,armor:73:armor:0.039:2.847
+R	paladin/protection	12	9834	12746	gear	12.667	int:7:int:0.34:2.38,spi:4:spi:0.51:2.04,sp:3:sp:1.8:5.4,armor:73:armor:0.039:2.847
+R	paladin/protection	12	9834	12747	gear	16.097	spi:4:spi:0.51:2.04,sta:7:sta:0.83:5.81,sp:3:sp:1.8:5.4,armor:73:armor:0.039:2.847
+R	paladin/protection	12	9834	12748	gear	13.616999999999999	int:4:int:0.34:1.36,sta:7:sta:0.83:5.81,spDmg:2:sp:1.8:3.6,armor:73:armor:0.039:2.847
+R	paladin/protection	12	9834	12749	gear	10.866999999999999	int:7:int:0.34:2.38,spi:4:spi:0.51:2.04,spDmg:2:sp:1.8:3.6,armor:73:armor:0.039:2.847
+R	paladin/protection	12	9834	12750	gear	14.296999999999999	spi:4:spi:0.51:2.04,sta:7:sta:0.83:5.81,spDmg:2:sp:1.8:3.6,armor:73:armor:0.039:2.847
+R	paladin/protection	12	9834	12751	gear	13.586999999999998	agi:3:agi:0.5:1.5,ap:7:ap:0.49:3.43,sta:7:sta:0.83:5.81,armor:73:armor:0.039:2.847
+R	paladin/protection	12	9834	12752	gear	13.656999999999998	agi:4:agi:0.5:2,sta:7:sta:0.83:5.81,str:3:str:1:3,armor:73:armor:0.039:2.847
+R	paladin/protection	12	9834	12753	gear	13.077	defense:2:defense:0.21:0.42,sta:7:sta:0.83:5.81,str:4:str:1:4,armor:73:armor:0.039:2.847
+R	paladin/protection	12	9834	12755	gear	18.057000000000002	sp:3:sp:1.8:5.4,sta:7:sta:0.83:5.81,str:4:str:1:4,armor:73:armor:0.039:2.847
+R	paladin/protection	12	9834	12756	gear	2.847	armor:73:armor:0.039:2.847
+R	paladin/protection	12	9834	12760	gear	2.847	armor:73:armor:0.039:2.847
+R	paladin/protection	12	10087	0	gear	10.842	armor:278:armor:0.039:10.842
+R	paladin/protection	12	10087	12718	gear	21.372	int:9:int:0.34:3.06,sta:9:sta:0.83:7.47,armor:278:armor:0.039:10.842
+R	paladin/protection	12	10087	12719	gear	22.902	spi:9:spi:0.51:4.59,sta:9:sta:0.83:7.47,armor:278:armor:0.039:10.842
+R	paladin/protection	12	10087	12720	gear	18.492	int:9:int:0.34:3.06,spi:9:spi:0.51:4.59,armor:278:armor:0.039:10.842
+R	paladin/protection	12	10087	12721	gear	22.811999999999998	agi:9:agi:0.5:4.5,sta:9:sta:0.83:7.47,armor:278:armor:0.039:10.842
+R	paladin/protection	12	10087	12722	gear	27.311999999999998	sta:9:sta:0.83:7.47,str:9:str:1:9,armor:278:armor:0.039:10.842
+R	paladin/protection	12	10087	12723	gear	22.902	int:9:int:0.34:3.06,str:9:str:1:9,armor:278:armor:0.039:10.842
+R	paladin/protection	12	10087	12724	gear	18.402	agi:9:agi:0.5:4.5,int:9:int:0.34:3.06,armor:278:armor:0.039:10.842
+R	paladin/protection	12	10087	12725	gear	24.432000000000002	spi:9:spi:0.51:4.59,str:9:str:1:9,armor:278:armor:0.039:10.842
+R	paladin/protection	12	10087	12726	gear	19.932000000000002	agi:9:agi:0.5:4.5,spi:9:spi:0.51:4.59,armor:278:armor:0.039:10.842
+R	paladin/protection	12	10087	12727	gear	24.342	agi:9:agi:0.5:4.5,str:9:str:1:9,armor:278:armor:0.039:10.842
+R	paladin/protection	12	10087	12728	gear	17.842	agi:14:agi:0.5:7,armor:278:armor:0.039:10.842
+R	paladin/protection	12	10087	12729	gear	15.602	int:14:int:0.34:4.76,armor:278:armor:0.039:10.842
+R	paladin/protection	12	10087	12730	gear	17.982	spi:14:spi:0.51:7.14,armor:278:armor:0.039:10.842
+R	paladin/protection	12	10087	12731	gear	22.462	sta:14:sta:0.83:11.62,armor:278:armor:0.039:10.842
+R	paladin/protection	12	10087	12732	gear	24.842	str:14:str:1:14,armor:278:armor:0.039:10.842
+R	paladin/protection	12	10087	12733	gear	24.561999999999998	ap:28:ap:0.49:13.72,armor:278:armor:0.039:10.842
+R	paladin/protection	12	10087	12734	gear	39.642	sp:16:sp:1.8:28.8,armor:278:armor:0.039:10.842
+R	paladin/protection	12	10087	12735	gear	28.842	spDmg:10:sp:1.8:18,armor:278:armor:0.039:10.842
+R	paladin/protection	12	10087	12736	gear	12.732000000000001	defense:9:defense:0.21:1.89,armor:278:armor:0.039:10.842
+R	paladin/protection	12	10087	12740	gear	18.312	sta:9:sta:0.83:7.47,armor:278:armor:0.039:10.842
+R	paladin/protection	12	10087	12741	gear	18.312	sta:9:sta:0.83:7.47,armor:278:armor:0.039:10.842
+R	paladin/protection	12	10087	12742	gear	18.312	sta:9:sta:0.83:7.47,armor:278:armor:0.039:10.842
+R	paladin/protection	12	10087	12743	gear	18.312	sta:9:sta:0.83:7.47,armor:278:armor:0.039:10.842
+R	paladin/protection	12	10087	12744	gear	18.312	sta:9:sta:0.83:7.47,armor:278:armor:0.039:10.842
+R	paladin/protection	12	10087	12748	gear	26.582	int:6:int:0.34:2.04,sta:10:sta:0.83:8.3,spDmg:3:sp:1.8:5.4,armor:278:armor:0.039:10.842
+R	paladin/protection	12	10087	12749	gear	22.702	int:10:int:0.34:3.4,spi:6:spi:0.51:3.06,spDmg:3:sp:1.8:5.4,armor:278:armor:0.039:10.842
+R	paladin/protection	12	10087	12750	gear	27.601999999999997	spi:6:spi:0.51:3.06,sta:10:sta:0.83:8.3,spDmg:3:sp:1.8:5.4,armor:278:armor:0.039:10.842
+R	paladin/protection	12	10087	12752	gear	26.142	agi:6:agi:0.5:3,sta:10:sta:0.83:8.3,str:4:str:1:4,armor:278:armor:0.039:10.842
+R	paladin/protection	12	10087	12753	gear	25.772	defense:3:defense:0.21:0.63,sta:10:sta:0.83:8.3,str:6:str:1:6,armor:278:armor:0.039:10.842
+R	paladin/protection	12	10087	12754	gear	28.982	defense:4:defense:0.21:0.84,sp:5:sp:1.8:9,sta:10:sta:0.83:8.3,armor:278:armor:0.039:10.842
+R	paladin/protection	12	10087	12755	gear	34.141999999999996	sp:5:sp:1.8:9,sta:10:sta:0.83:8.3,str:6:str:1:6,armor:278:armor:0.039:10.842
+R	paladin/protection	12	10087	12759	gear	38.842	spHoly:20:spHoly:1.4:28,armor:278:armor:0.039:10.842
+R	paladin/protection	12	10368	0	gear	56.69199999999999	str:15:str:1:15,sta:14:sta:0.83:11.62,spi:14:spi:0.51:7.14,armor:588:armor:0.039:22.932
+R	paladin/protection	12	11187	0	gear	0.156	armor:4:armor:0.039:0.156
+R	paladin/protection	12	11994	0	gear	0.0	
+R	paladin/protection	12	11994	12718	gear	3.51	int:3:int:0.34:1.02,sta:3:sta:0.83:2.49
+R	paladin/protection	12	11994	12719	gear	4.02	spi:3:spi:0.51:1.53,sta:3:sta:0.83:2.49
+R	paladin/protection	12	11994	12720	gear	2.55	int:3:int:0.34:1.02,spi:3:spi:0.51:1.53
+R	paladin/protection	12	11994	12721	gear	3.9899999999999998	agi:3:agi:0.5:1.5,sta:3:sta:0.83:2.49
+R	paladin/protection	12	11994	12722	gear	5.49	sta:3:sta:0.83:2.49,str:3:str:1:3
+R	paladin/protection	12	11994	12723	gear	4.02	int:3:int:0.34:1.02,str:3:str:1:3
+R	paladin/protection	12	11994	12724	gear	2.52	agi:3:agi:0.5:1.5,int:3:int:0.34:1.02
+R	paladin/protection	12	11994	12725	gear	4.53	spi:3:spi:0.51:1.53,str:3:str:1:3
+R	paladin/protection	12	11994	12726	gear	3.0300000000000002	agi:3:agi:0.5:1.5,spi:3:spi:0.51:1.53
+R	paladin/protection	12	11994	12727	gear	4.5	agi:3:agi:0.5:1.5,str:3:str:1:3
+R	paladin/protection	12	11994	12728	gear	2.5	agi:5:agi:0.5:2.5
+R	paladin/protection	12	11994	12729	gear	1.7000000000000002	int:5:int:0.34:1.7
+R	paladin/protection	12	11994	12730	gear	2.55	spi:5:spi:0.51:2.55
+R	paladin/protection	12	11994	12731	gear	4.1499999999999995	sta:5:sta:0.83:4.15
+R	paladin/protection	12	11994	12732	gear	5.0	str:5:str:1:5
+R	paladin/protection	12	11994	12733	gear	4.9	ap:10:ap:0.49:4.9
+R	paladin/protection	12	11994	12737	gear	0.0	
+R	paladin/protection	12	11994	12738	gear	0.34	mp5:2:mp5:0.17:0.34
+R	paladin/protection	12	11994	12739	gear	1.0	agi:2:agi:0.5:1
+R	paladin/protection	12	11994	12740	gear	2.4899999999999998	sta:3:sta:0.83:2.49
+R	paladin/protection	12	11994	12741	gear	2.4899999999999998	sta:3:sta:0.83:2.49
+R	paladin/protection	12	11994	12742	gear	2.4899999999999998	sta:3:sta:0.83:2.49
+R	paladin/protection	12	11994	12743	gear	2.4899999999999998	sta:3:sta:0.83:2.49
+R	paladin/protection	12	11994	12744	gear	2.4899999999999998	sta:3:sta:0.83:2.49
+R	paladin/protection	12	12790	0	mh	355.314	dps:53.82:dps:6.7:360.594,speed:0.6:speed:-8.8:-5.28
+R	paladin/protection	12	13183	0	mh	267.969	dps:39.47:dps:6.7:264.449,speed:-0.4:speed:-8.8:3.52
+R	paladin/protection	12	14122	0	gear	0.546	armor:14:armor:0.039:0.546
+R	paladin/protection	12	14122	12718	gear	2.886	int:2:int:0.34:0.68,sta:2:sta:0.83:1.66,armor:14:armor:0.039:0.546
+R	paladin/protection	12	14122	12719	gear	3.226	spi:2:spi:0.51:1.02,sta:2:sta:0.83:1.66,armor:14:armor:0.039:0.546
+R	paladin/protection	12	14122	12720	gear	2.2460000000000004	int:2:int:0.34:0.68,spi:2:spi:0.51:1.02,armor:14:armor:0.039:0.546
+R	paladin/protection	12	14122	12729	gear	1.566	int:3:int:0.34:1.02,armor:14:armor:0.039:0.546
+R	paladin/protection	12	14122	12730	gear	2.076	spi:3:spi:0.51:1.53,armor:14:armor:0.039:0.546
+R	paladin/protection	12	14122	12731	gear	3.0359999999999996	sta:3:sta:0.83:2.49,armor:14:armor:0.039:0.546
+R	paladin/protection	12	14122	12734	gear	7.746	sp:4:sp:1.8:7.2,armor:14:armor:0.039:0.546
+R	paladin/protection	12	14122	12735	gear	4.146	spDmg:2:sp:1.8:3.6,armor:14:armor:0.039:0.546
+R	paladin/protection	12	14122	12740	gear	2.206	sta:2:sta:0.83:1.66,armor:14:armor:0.039:0.546
+R	paladin/protection	12	14122	12741	gear	2.206	sta:2:sta:0.83:1.66,armor:14:armor:0.039:0.546
+R	paladin/protection	12	14122	12742	gear	2.206	sta:2:sta:0.83:1.66,armor:14:armor:0.039:0.546
+R	paladin/protection	12	14122	12743	gear	2.206	sta:2:sta:0.83:1.66,armor:14:armor:0.039:0.546
+R	paladin/protection	12	14122	12744	gear	2.206	sta:2:sta:0.83:1.66,armor:14:armor:0.039:0.546
+R	paladin/protection	12	14122	12745	gear	3.856	int:2:int:0.34:0.68,sta:1:sta:0.83:0.83,sp:1:sp:1.8:1.8,armor:14:armor:0.039:0.546
+R	paladin/protection	12	14122	12756	gear	0.546	armor:14:armor:0.039:0.546
+R	paladin/protection	12	14122	12757	gear	0.546	armor:14:armor:0.039:0.546
+R	paladin/protection	12	14122	12758	gear	0.546	armor:14:armor:0.039:0.546
+R	paladin/protection	12	14122	12759	gear	6.146	spHoly:4:spHoly:1.4:5.6,armor:14:armor:0.039:0.546
+R	paladin/protection	12	14122	12761	gear	0.546	armor:14:armor:0.039:0.546
+R	paladin/protection	12	14340	0	gear	19.201999999999998	sta:19:sta:0.83:15.77,armor:88:armor:0.039:3.432
+R	paladin/protection	12	14673	0	gear	12.975999999999999	str:3:str:1:3,agi:9:agi:0.5:4.5,sta:5:sta:0.83:4.15,armor:34:armor:0.039:1.326
+R	paladin/protection	12	14964	0	oh	67.08	armor:1720:armor:0.039:67.08
+R	paladin/protection	12	14964	12718	oh	77.61	int:9:int:0.34:3.06,sta:9:sta:0.83:7.47,armor:1720:armor:0.039:67.08
+R	paladin/protection	12	14964	12719	oh	79.14	spi:9:spi:0.51:4.59,sta:9:sta:0.83:7.47,armor:1720:armor:0.039:67.08
+R	paladin/protection	12	14964	12720	oh	74.73	int:9:int:0.34:3.06,spi:9:spi:0.51:4.59,armor:1720:armor:0.039:67.08
+R	paladin/protection	12	14964	12721	oh	79.05	agi:9:agi:0.5:4.5,sta:9:sta:0.83:7.47,armor:1720:armor:0.039:67.08
+R	paladin/protection	12	14964	12722	oh	83.55	sta:9:sta:0.83:7.47,str:9:str:1:9,armor:1720:armor:0.039:67.08
+R	paladin/protection	12	14964	12723	oh	79.14	int:9:int:0.34:3.06,str:9:str:1:9,armor:1720:armor:0.039:67.08
+R	paladin/protection	12	14964	12724	oh	74.64	agi:9:agi:0.5:4.5,int:9:int:0.34:3.06,armor:1720:armor:0.039:67.08
+R	paladin/protection	12	14964	12725	oh	80.67	spi:9:spi:0.51:4.59,str:9:str:1:9,armor:1720:armor:0.039:67.08
+R	paladin/protection	12	14964	12726	oh	76.17	agi:9:agi:0.5:4.5,spi:9:spi:0.51:4.59,armor:1720:armor:0.039:67.08
+R	paladin/protection	12	14964	12727	oh	80.58	agi:9:agi:0.5:4.5,str:9:str:1:9,armor:1720:armor:0.039:67.08
+R	paladin/protection	12	14964	12728	oh	74.08	agi:14:agi:0.5:7,armor:1720:armor:0.039:67.08
+R	paladin/protection	12	14964	12729	oh	71.84	int:14:int:0.34:4.76,armor:1720:armor:0.039:67.08
+R	paladin/protection	12	14964	12730	oh	74.22	spi:14:spi:0.51:7.14,armor:1720:armor:0.039:67.08
+R	paladin/protection	12	14964	12731	oh	78.7	sta:14:sta:0.83:11.62,armor:1720:armor:0.039:67.08
+R	paladin/protection	12	14964	12732	oh	81.08	str:14:str:1:14,armor:1720:armor:0.039:67.08
+R	paladin/protection	12	14964	12733	oh	80.8	ap:28:ap:0.49:13.72,armor:1720:armor:0.039:67.08
+R	paladin/protection	12	14964	12734	oh	95.88	sp:16:sp:1.8:28.8,armor:1720:armor:0.039:67.08
+R	paladin/protection	12	14964	12735	oh	85.08	spDmg:10:sp:1.8:18,armor:1720:armor:0.039:67.08
+R	paladin/protection	12	14964	12736	oh	68.97	defense:9:defense:0.21:1.89,armor:1720:armor:0.039:67.08
+R	paladin/protection	12	14964	12740	oh	74.55	sta:9:sta:0.83:7.47,armor:1720:armor:0.039:67.08
+R	paladin/protection	12	14964	12741	oh	74.55	sta:9:sta:0.83:7.47,armor:1720:armor:0.039:67.08
+R	paladin/protection	12	14964	12742	oh	74.55	sta:9:sta:0.83:7.47,armor:1720:armor:0.039:67.08
+R	paladin/protection	12	14964	12743	oh	74.55	sta:9:sta:0.83:7.47,armor:1720:armor:0.039:67.08
+R	paladin/protection	12	14964	12744	oh	74.55	sta:9:sta:0.83:7.47,armor:1720:armor:0.039:67.08
+R	paladin/protection	12	14964	12745	oh	84.46	int:10:int:0.34:3.4,sta:6:sta:0.83:4.98,sp:5:sp:1.8:9,armor:1720:armor:0.039:67.08
+R	paladin/protection	12	14964	12746	oh	82.53999999999999	int:10:int:0.34:3.4,spi:6:spi:0.51:3.06,sp:5:sp:1.8:9,armor:1720:armor:0.039:67.08
+R	paladin/protection	12	14964	12747	oh	87.44	spi:6:spi:0.51:3.06,sta:10:sta:0.83:8.3,sp:5:sp:1.8:9,armor:1720:armor:0.039:67.08
+R	paladin/protection	12	14964	12748	oh	82.82	int:6:int:0.34:2.04,sta:10:sta:0.83:8.3,spDmg:3:sp:1.8:5.4,armor:1720:armor:0.039:67.08
+R	paladin/protection	12	14964	12749	oh	78.94	int:10:int:0.34:3.4,spi:6:spi:0.51:3.06,spDmg:3:sp:1.8:5.4,armor:1720:armor:0.039:67.08
+R	paladin/protection	12	14964	12750	oh	83.84	spi:6:spi:0.51:3.06,sta:10:sta:0.83:8.3,spDmg:3:sp:1.8:5.4,armor:1720:armor:0.039:67.08
+R	paladin/protection	12	14964	12753	oh	82.00999999999999	defense:3:defense:0.21:0.63,sta:10:sta:0.83:8.3,str:6:str:1:6,armor:1720:armor:0.039:67.08
+R	paladin/protection	12	14964	12754	oh	85.22	defense:4:defense:0.21:0.84,sp:5:sp:1.8:9,sta:10:sta:0.83:8.3,armor:1720:armor:0.039:67.08
+R	paladin/protection	12	14964	12759	oh	95.08	spHoly:20:spHoly:1.4:28,armor:1720:armor:0.039:67.08
+R	paladin/protection	12	14964	12760	oh	67.08	armor:1720:armor:0.039:67.08
+R	paladin/protection	12	15235	0	mh	193.179	dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12718	mh	199.029	int:5:int:0.34:1.7,sta:5:sta:0.83:4.15,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12719	mh	199.879	spi:5:spi:0.51:2.55,sta:5:sta:0.83:4.15,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12720	mh	197.429	int:5:int:0.34:1.7,spi:5:spi:0.51:2.55,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12721	mh	199.829	agi:5:agi:0.5:2.5,sta:5:sta:0.83:4.15,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12722	mh	202.329	sta:5:sta:0.83:4.15,str:5:str:1:5,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12723	mh	199.879	int:5:int:0.34:1.7,str:5:str:1:5,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12724	mh	197.379	agi:5:agi:0.5:2.5,int:5:int:0.34:1.7,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12725	mh	200.729	spi:5:spi:0.51:2.55,str:5:str:1:5,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12726	mh	198.229	agi:5:agi:0.5:2.5,spi:5:spi:0.51:2.55,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12727	mh	200.679	agi:5:agi:0.5:2.5,str:5:str:1:5,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12728	mh	197.179	agi:8:agi:0.5:4,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12729	mh	195.899	int:8:int:0.34:2.72,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12730	mh	197.25900000000001	spi:8:spi:0.51:4.08,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12731	mh	199.819	sta:8:sta:0.83:6.64,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12732	mh	201.179	str:8:str:1:8,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12733	mh	201.019	ap:16:ap:0.49:7.84,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12736	mh	194.229	defense:5:defense:0.21:1.05,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12740	mh	197.329	sta:5:sta:0.83:4.15,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12741	mh	197.329	sta:5:sta:0.83:4.15,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12742	mh	197.329	sta:5:sta:0.83:4.15,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12743	mh	197.329	sta:5:sta:0.83:4.15,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12744	mh	197.329	sta:5:sta:0.83:4.15,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12751	mh	203.089	agi:3:agi:0.5:1.5,ap:7:ap:0.49:3.43,sta:6:sta:0.83:4.98,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12752	mh	202.659	agi:3:agi:0.5:1.5,sta:6:sta:0.83:4.98,str:3:str:1:3,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12753	mh	201.579	defense:2:defense:0.21:0.42,sta:6:sta:0.83:4.98,str:3:str:1:3,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12754	mh	203.979	defense:2:defense:0.21:0.42,sp:3:sp:1.8:5.4,sta:6:sta:0.83:4.98,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12759	mh	208.579	spHoly:11:spHoly:1.4:15.4,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12906	mh	266.939	int:6:int:0.34:2.04,sta:4:sta:0.83:3.32,sp:38:sp:1.8:68.4,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12908	mh	265.659	int:6:int:0.34:2.04,sp:38:sp:1.8:68.4,spi:4:spi:0.51:2.04,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12910	mh	268.59900000000005	sp:38:sp:1.8:68.4,spi:4:spi:0.51:2.04,sta:6:sta:0.83:4.98,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12912	mh	242.719	spDmg:24:sp:1.8:43.2,int:4:int:0.34:1.36,sta:6:sta:0.83:4.98,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12913	mh	240.459	int:6:int:0.34:2.04,spDmg:24:sp:1.8:43.2,spi:4:spi:0.51:2.04,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12916	mh	243.399	spDmg:24:sp:1.8:43.2,spi:4:spi:0.51:2.04,sta:6:sta:0.83:4.98,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12917	mh	264.299	sp:38:sp:1.8:68.4,int:8:int:0.34:2.72,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12920	mh	239.099	int:8:int:0.34:2.72,spDmg:24:sp:1.8:43.2,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15477	0	gear	3.939	armor:101:armor:0.039:3.939
+R	paladin/protection	12	15477	12718	gear	5.109	int:1:int:0.34:0.34,sta:1:sta:0.83:0.83,armor:101:armor:0.039:3.939
+R	paladin/protection	12	15477	12719	gear	5.279	spi:1:spi:0.51:0.51,sta:1:sta:0.83:0.83,armor:101:armor:0.039:3.939
+R	paladin/protection	12	15477	12720	gear	4.789	int:1:int:0.34:0.34,spi:1:spi:0.51:0.51,armor:101:armor:0.039:3.939
+R	paladin/protection	12	15477	12721	gear	5.269	agi:1:agi:0.5:0.5,sta:1:sta:0.83:0.83,armor:101:armor:0.039:3.939
+R	paladin/protection	12	15477	12722	gear	5.769	sta:1:sta:0.83:0.83,str:1:str:1:1,armor:101:armor:0.039:3.939
+R	paladin/protection	12	15477	12723	gear	5.279	int:1:int:0.34:0.34,str:1:str:1:1,armor:101:armor:0.039:3.939
+R	paladin/protection	12	15477	12724	gear	4.779	agi:1:agi:0.5:0.5,int:1:int:0.34:0.34,armor:101:armor:0.039:3.939
+R	paladin/protection	12	15477	12725	gear	5.449	spi:1:spi:0.51:0.51,str:1:str:1:1,armor:101:armor:0.039:3.939
+R	paladin/protection	12	15477	12726	gear	4.949	agi:1:agi:0.5:0.5,spi:1:spi:0.51:0.51,armor:101:armor:0.039:3.939
+R	paladin/protection	12	15477	12727	gear	5.439	agi:1:agi:0.5:0.5,str:1:str:1:1,armor:101:armor:0.039:3.939
+R	paladin/protection	12	15477	12728	gear	4.939	agi:2:agi:0.5:1,armor:101:armor:0.039:3.939
+R	paladin/protection	12	15477	12729	gear	4.619	int:2:int:0.34:0.68,armor:101:armor:0.039:3.939
+R	paladin/protection	12	15477	12730	gear	4.959	spi:2:spi:0.51:1.02,armor:101:armor:0.039:3.939
+R	paladin/protection	12	15477	12731	gear	5.599	sta:2:sta:0.83:1.66,armor:101:armor:0.039:3.939
+R	paladin/protection	12	15477	12732	gear	5.939	str:2:str:1:2,armor:101:armor:0.039:3.939
+R	paladin/protection	12	15477	12733	gear	5.899	ap:4:ap:0.49:1.96,armor:101:armor:0.039:3.939
+R	paladin/protection	12	15477	12734	gear	7.539	sp:2:sp:1.8:3.6,armor:101:armor:0.039:3.939
+R	paladin/protection	12	15477	12735	gear	5.739	spDmg:1:sp:1.8:1.8,armor:101:armor:0.039:3.939
+R	paladin/protection	12	15477	12736	gear	4.149	defense:1:defense:0.21:0.21,armor:101:armor:0.039:3.939
+R	paladin/protection	12	15477	12740	gear	4.769	sta:1:sta:0.83:0.83,armor:101:armor:0.039:3.939
+R	paladin/protection	12	15477	12741	gear	4.769	sta:1:sta:0.83:0.83,armor:101:armor:0.039:3.939
+R	paladin/protection	12	15477	12742	gear	4.769	sta:1:sta:0.83:0.83,armor:101:armor:0.039:3.939
+R	paladin/protection	12	15477	12743	gear	4.769	sta:1:sta:0.83:0.83,armor:101:armor:0.039:3.939
+R	paladin/protection	12	15477	12744	gear	4.769	sta:1:sta:0.83:0.83,armor:101:armor:0.039:3.939
+R	paladin/protection	12	15477	12759	gear	8.139	spHoly:3:spHoly:1.4:4.2,armor:101:armor:0.039:3.939
+R	paladin/protection	12	15945	0	oh	2.6799999999999997	sta:2:sta:0.83:1.66,spi:2:spi:0.51:1.02
+R	paladin/protection	12	16711	0	gear	22.814999999999998	agi:21:agi:0.5:10.5,sta:9:sta:0.83:7.47,hit:0.3:hit:1.2:0.36,armor:115:armor:0.039:4.485
+R	paladin/protection	12	18312	0	gear	84.743	str:13:str:1:13,sta:20:sta:0.83:16.6,int:12:int:0.34:4.08,sp:15:sp:1.8:27,armor:617:armor:0.039:24.063
+R	paladin/protection	12	18726	0	gear	16.767	sta:15:sta:0.83:12.45,defense:7:defense:0.21:1.47,armor:73:armor:0.039:2.847
+R	paladin/protection	12	19557	0	mh	148.68	str:7:str:1:7,sta:3:sta:0.83:2.49,dps:21.3:dps:6.7:142.71,speed:0.4:speed:-8.8:-3.52
+R	paladin/protection	12	20129	0	gear	20.103	agi:6:agi:0.5:3,str:6:str:1:6,sta:6:sta:0.83:4.98,armor:157:armor:0.039:6.123
+R	paladin/protection	12	22270	0	gear	51.413	str:11:str:1:11,defense:3:defense:0.21:0.63,int:10:int:0.34:3.4,sta:10:sta:0.83:8.3,sp:7:sp:1.8:12.6,armor:397:armor:0.039:15.483
+R	paladin/protection	12	22400	0	ranged	0.0	
+R	paladin/protection	12	22967	0	gear	36.077	sta:25:sta:0.83:20.75,armor:393:armor:0.039:15.327
+R	paladin/protection	12	250491	0	gear	21.195999999999998	int:5:int:0.34:1.7,sta:4:sta:0.83:3.32,spDmg:5:sp:1.8:9,armor:184:armor:0.039:7.176
+R	paladin/protection	12	252507	0	gear	22.064	sta:10:sta:0.83:8.3,spDmg:6:sp:1.8:10.8,armor:76:armor:0.039:2.964
+R	paladin/protection	12	254111	0	gear	15.956	int:9:int:0.34:3.06,sta:13:sta:0.83:10.79,armor:54:armor:0.039:2.106
+R	paladin/protection	12	270033	0	gear	6.521	agi:4:agi:0.5:2,str:3:str:1:3,armor:39:armor:0.039:1.521
+R	paladin/protection	12	271956	0	gear	37.978	agi:27:agi:0.5:13.5,sta:12:sta:0.83:9.96,crit:1:crit:2:2,crit:1:spellCrit:0.35:0.35,armor:312:armor:0.039:12.168
+R	paladin/protection	12	272958	0	gear	60.108	int:27:int:0.34:9.18,sta:12:sta:0.83:9.96,sp:16:sp:1.8:28.8,armor:312:armor:0.039:12.168
+R	paladin/protection	12	276399	0	gear	62.18300000000001	sta:18:sta:0.83:14.94,mp5:7:mp5:0.17:1.19,spDmg:12:sp:1.8:21.6,armor:627:armor:0.039:24.453
+R	paladin/protection	12	277235	0	gear	36.144999999999996	str:14:str:1:14,sta:10:sta:0.83:8.3,armor:355:armor:0.039:13.845
+R	paladin/protection	12	282560	0	gear	36.897	int:10:int:0.34:3.4,sta:13:sta:0.83:10.79,sp:8:sp:1.8:14.4,armor:213:armor:0.039:8.307
+R	paladin/protection	12	286609	0	oh	73.794	spi:6:spi:0.51:3.06,defense:7:defense:0.21:1.47,armor:1776:armor:0.039:69.264
+R	paladin/protection	25	25	0	mh	12.195	dps:1.05:dps:6.7:7.035,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	1315	0	gear	15.45	sta:10:sta:0.72:7.2,spi:15:spi:0.55:8.25
+R	paladin/protection	25	1808	0	gear	2.96	armor:74:armor:0.04:2.96
+R	paladin/protection	25	2614	0	gear	1.16	armor:29:armor:0.04:1.16
+R	paladin/protection	25	3158	0	gear	1.04	armor:26:armor:0.04:1.04
+R	paladin/protection	25	3570	0	mh	60.274	str:2:str:1:2,dps:8.12:dps:6.7:54.404,speed:-0.45:speed:-8.6:3.87
+R	paladin/protection	25	4068	0	oh	45.0	sta:9:sta:0.72:6.48,armor:963:armor:0.04:38.52
+R	paladin/protection	25	4570	0	mh	63.13	dps:10:dps:6.7:67,speed:0.45:speed:-8.6:-3.87
+R	paladin/protection	25	4570	12718	mh	67.50999999999999	int:3:int:0.74:2.22,sta:3:sta:0.72:2.16,dps:10:dps:6.7:67,speed:0.45:speed:-8.6:-3.87
+R	paladin/protection	25	4570	12719	mh	66.94	spi:3:spi:0.55:1.65,sta:3:sta:0.72:2.16,dps:10:dps:6.7:67,speed:0.45:speed:-8.6:-3.87
+R	paladin/protection	25	4570	12720	mh	67.0	int:3:int:0.74:2.22,spi:3:spi:0.55:1.65,dps:10:dps:6.7:67,speed:0.45:speed:-8.6:-3.87
+R	paladin/protection	25	4570	12721	mh	67.15	agi:3:agi:0.62:1.86,sta:3:sta:0.72:2.16,dps:10:dps:6.7:67,speed:0.45:speed:-8.6:-3.87
+R	paladin/protection	25	4570	12722	mh	68.28999999999999	sta:3:sta:0.72:2.16,str:3:str:1:3,dps:10:dps:6.7:67,speed:0.45:speed:-8.6:-3.87
+R	paladin/protection	25	4570	12723	mh	68.35	int:3:int:0.74:2.22,str:3:str:1:3,dps:10:dps:6.7:67,speed:0.45:speed:-8.6:-3.87
+R	paladin/protection	25	4570	12724	mh	67.21000000000001	agi:3:agi:0.62:1.86,int:3:int:0.74:2.22,dps:10:dps:6.7:67,speed:0.45:speed:-8.6:-3.87
+R	paladin/protection	25	4570	12725	mh	67.78	spi:3:spi:0.55:1.65,str:3:str:1:3,dps:10:dps:6.7:67,speed:0.45:speed:-8.6:-3.87
+R	paladin/protection	25	4570	12726	mh	66.64000000000001	agi:3:agi:0.62:1.86,spi:3:spi:0.55:1.65,dps:10:dps:6.7:67,speed:0.45:speed:-8.6:-3.87
+R	paladin/protection	25	4570	12727	mh	67.99000000000001	agi:3:agi:0.62:1.86,str:3:str:1:3,dps:10:dps:6.7:67,speed:0.45:speed:-8.6:-3.87
+R	paladin/protection	25	4570	12728	mh	65.61000000000001	agi:4:agi:0.62:2.48,dps:10:dps:6.7:67,speed:0.45:speed:-8.6:-3.87
+R	paladin/protection	25	4570	12729	mh	66.09	int:4:int:0.74:2.96,dps:10:dps:6.7:67,speed:0.45:speed:-8.6:-3.87
+R	paladin/protection	25	4570	12730	mh	65.33000000000001	spi:4:spi:0.55:2.2,dps:10:dps:6.7:67,speed:0.45:speed:-8.6:-3.87
+R	paladin/protection	25	4570	12731	mh	66.00999999999999	sta:4:sta:0.72:2.88,dps:10:dps:6.7:67,speed:0.45:speed:-8.6:-3.87
+R	paladin/protection	25	4570	12732	mh	67.13	str:4:str:1:4,dps:10:dps:6.7:67,speed:0.45:speed:-8.6:-3.87
+R	paladin/protection	25	4570	12733	mh	66.97	ap:8:ap:0.48:3.84,dps:10:dps:6.7:67,speed:0.45:speed:-8.6:-3.87
+R	paladin/protection	25	4570	12736	mh	64.06	defense:3:defense:0.31:0.93,dps:10:dps:6.7:67,speed:0.45:speed:-8.6:-3.87
+R	paladin/protection	25	4570	12740	mh	65.28999999999999	sta:3:sta:0.72:2.16,dps:10:dps:6.7:67,speed:0.45:speed:-8.6:-3.87
+R	paladin/protection	25	4570	12741	mh	65.28999999999999	sta:3:sta:0.72:2.16,dps:10:dps:6.7:67,speed:0.45:speed:-8.6:-3.87
+R	paladin/protection	25	4570	12742	mh	65.28999999999999	sta:3:sta:0.72:2.16,dps:10:dps:6.7:67,speed:0.45:speed:-8.6:-3.87
+R	paladin/protection	25	4570	12743	mh	65.28999999999999	sta:3:sta:0.72:2.16,dps:10:dps:6.7:67,speed:0.45:speed:-8.6:-3.87
+R	paladin/protection	25	4570	12744	mh	65.28999999999999	sta:3:sta:0.72:2.16,dps:10:dps:6.7:67,speed:0.45:speed:-8.6:-3.87
+R	paladin/protection	25	4570	12759	mh	72.72999999999999	spHoly:6:spHoly:1.6:9.6,dps:10:dps:6.7:67,speed:0.45:speed:-8.6:-3.87
+R	paladin/protection	25	4570	12918	mh	80.49000000000001	sp:8:sp:1.8:14.4,int:4:int:0.74:2.96,dps:10:dps:6.7:67,speed:0.45:speed:-8.6:-3.87
+R	paladin/protection	25	4570	12919	mh	75.09	spDmg:5:sp:1.8:9,int:4:int:0.74:2.96,dps:10:dps:6.7:67,speed:0.45:speed:-8.6:-3.87
+R	paladin/protection	25	5079	0	gear	0.0	
+R	paladin/protection	25	6063	0	gear	2.2	armor:55:armor:0.04:2.2
+R	paladin/protection	25	6540	0	gear	1.12	armor:28:armor:0.04:1.12
+R	paladin/protection	25	6540	12718	gear	5.5	int:3:int:0.74:2.22,sta:3:sta:0.72:2.16,armor:28:armor:0.04:1.12
+R	paladin/protection	25	6540	12719	gear	4.930000000000001	spi:3:spi:0.55:1.65,sta:3:sta:0.72:2.16,armor:28:armor:0.04:1.12
+R	paladin/protection	25	6540	12720	gear	4.99	int:3:int:0.74:2.22,spi:3:spi:0.55:1.65,armor:28:armor:0.04:1.12
+R	paladin/protection	25	6540	12729	gear	4.82	int:5:int:0.74:3.7,armor:28:armor:0.04:1.12
+R	paladin/protection	25	6540	12730	gear	3.87	spi:5:spi:0.55:2.75,armor:28:armor:0.04:1.12
+R	paladin/protection	25	6540	12731	gear	4.72	sta:5:sta:0.72:3.6,armor:28:armor:0.04:1.12
+R	paladin/protection	25	6540	12734	gear	11.920000000000002	sp:6:sp:1.8:10.8,armor:28:armor:0.04:1.12
+R	paladin/protection	25	6540	12735	gear	8.32	spDmg:4:sp:1.8:7.2,armor:28:armor:0.04:1.12
+R	paladin/protection	25	6540	12740	gear	3.2800000000000002	sta:3:sta:0.72:2.16,armor:28:armor:0.04:1.12
+R	paladin/protection	25	6540	12741	gear	3.2800000000000002	sta:3:sta:0.72:2.16,armor:28:armor:0.04:1.12
+R	paladin/protection	25	6540	12742	gear	3.2800000000000002	sta:3:sta:0.72:2.16,armor:28:armor:0.04:1.12
+R	paladin/protection	25	6540	12743	gear	3.2800000000000002	sta:3:sta:0.72:2.16,armor:28:armor:0.04:1.12
+R	paladin/protection	25	6540	12744	gear	3.2800000000000002	sta:3:sta:0.72:2.16,armor:28:armor:0.04:1.12
+R	paladin/protection	25	6540	12745	gear	9.120000000000001	int:4:int:0.74:2.96,sta:2:sta:0.72:1.44,sp:2:sp:1.8:3.6,armor:28:armor:0.04:1.12
+R	paladin/protection	25	6540	12756	gear	1.12	armor:28:armor:0.04:1.12
+R	paladin/protection	25	6540	12757	gear	1.12	armor:28:armor:0.04:1.12
+R	paladin/protection	25	6540	12758	gear	1.12	armor:28:armor:0.04:1.12
+R	paladin/protection	25	6540	12759	gear	12.32	spHoly:7:spHoly:1.6:11.2,armor:28:armor:0.04:1.12
+R	paladin/protection	25	6540	12761	gear	1.12	armor:28:armor:0.04:1.12
+R	paladin/protection	25	6557	0	gear	1.96	armor:49:armor:0.04:1.96
+R	paladin/protection	25	6557	12718	gear	4.88	int:2:int:0.74:1.48,sta:2:sta:0.72:1.44,armor:49:armor:0.04:1.96
+R	paladin/protection	25	6557	12719	gear	4.5	spi:2:spi:0.55:1.1,sta:2:sta:0.72:1.44,armor:49:armor:0.04:1.96
+R	paladin/protection	25	6557	12720	gear	4.54	int:2:int:0.74:1.48,spi:2:spi:0.55:1.1,armor:49:armor:0.04:1.96
+R	paladin/protection	25	6557	12721	gear	4.64	agi:2:agi:0.62:1.24,sta:2:sta:0.72:1.44,armor:49:armor:0.04:1.96
+R	paladin/protection	25	6557	12722	gear	5.4	sta:2:sta:0.72:1.44,str:2:str:1:2,armor:49:armor:0.04:1.96
+R	paladin/protection	25	6557	12723	gear	5.4399999999999995	int:2:int:0.74:1.48,str:2:str:1:2,armor:49:armor:0.04:1.96
+R	paladin/protection	25	6557	12724	gear	4.68	agi:2:agi:0.62:1.24,int:2:int:0.74:1.48,armor:49:armor:0.04:1.96
+R	paladin/protection	25	6557	12725	gear	5.0600000000000005	spi:2:spi:0.55:1.1,str:2:str:1:2,armor:49:armor:0.04:1.96
+R	paladin/protection	25	6557	12726	gear	4.3	agi:2:agi:0.62:1.24,spi:2:spi:0.55:1.1,armor:49:armor:0.04:1.96
+R	paladin/protection	25	6557	12727	gear	5.2	agi:2:agi:0.62:1.24,str:2:str:1:2,armor:49:armor:0.04:1.96
+R	paladin/protection	25	6557	12728	gear	3.82	agi:3:agi:0.62:1.86,armor:49:armor:0.04:1.96
+R	paladin/protection	25	6557	12729	gear	4.18	int:3:int:0.74:2.22,armor:49:armor:0.04:1.96
+R	paladin/protection	25	6557	12730	gear	3.6100000000000003	spi:3:spi:0.55:1.65,armor:49:armor:0.04:1.96
+R	paladin/protection	25	6557	12731	gear	4.12	sta:3:sta:0.72:2.16,armor:49:armor:0.04:1.96
+R	paladin/protection	25	6557	12732	gear	4.96	str:3:str:1:3,armor:49:armor:0.04:1.96
+R	paladin/protection	25	6557	12733	gear	4.84	ap:6:ap:0.48:2.88,armor:49:armor:0.04:1.96
+R	paladin/protection	25	6557	12734	gear	9.16	sp:4:sp:1.8:7.2,armor:49:armor:0.04:1.96
+R	paladin/protection	25	6557	12735	gear	5.5600000000000005	spDmg:2:sp:1.8:3.6,armor:49:armor:0.04:1.96
+R	paladin/protection	25	6557	12736	gear	2.58	defense:2:defense:0.31:0.62,armor:49:armor:0.04:1.96
+R	paladin/protection	25	6557	12740	gear	3.4	sta:2:sta:0.72:1.44,armor:49:armor:0.04:1.96
+R	paladin/protection	25	6557	12741	gear	3.4	sta:2:sta:0.72:1.44,armor:49:armor:0.04:1.96
+R	paladin/protection	25	6557	12742	gear	3.4	sta:2:sta:0.72:1.44,armor:49:armor:0.04:1.96
+R	paladin/protection	25	6557	12743	gear	3.4	sta:2:sta:0.72:1.44,armor:49:armor:0.04:1.96
+R	paladin/protection	25	6557	12744	gear	3.4	sta:2:sta:0.72:1.44,armor:49:armor:0.04:1.96
+R	paladin/protection	25	6557	12756	gear	1.96	armor:49:armor:0.04:1.96
+R	paladin/protection	25	6557	12760	gear	1.96	armor:49:armor:0.04:1.96
+R	paladin/protection	25	7047	0	gear	3.79	spi:5:spi:0.55:2.75,armor:26:armor:0.04:1.04
+R	paladin/protection	25	7538	0	gear	10.52	armor:263:armor:0.04:10.52
+R	paladin/protection	25	7538	12718	gear	29.499999999999996	int:13:int:0.74:9.62,sta:13:sta:0.72:9.36,armor:263:armor:0.04:10.52
+R	paladin/protection	25	7538	12719	gear	27.029999999999998	spi:13:spi:0.55:7.15,sta:13:sta:0.72:9.36,armor:263:armor:0.04:10.52
+R	paladin/protection	25	7538	12720	gear	27.29	int:13:int:0.74:9.62,spi:13:spi:0.55:7.15,armor:263:armor:0.04:10.52
+R	paladin/protection	25	7538	12721	gear	27.94	agi:13:agi:0.62:8.06,sta:13:sta:0.72:9.36,armor:263:armor:0.04:10.52
+R	paladin/protection	25	7538	12722	gear	32.879999999999995	sta:13:sta:0.72:9.36,str:13:str:1:13,armor:263:armor:0.04:10.52
+R	paladin/protection	25	7538	12723	gear	33.14	int:13:int:0.74:9.62,str:13:str:1:13,armor:263:armor:0.04:10.52
+R	paladin/protection	25	7538	12724	gear	28.2	agi:13:agi:0.62:8.06,int:13:int:0.74:9.62,armor:263:armor:0.04:10.52
+R	paladin/protection	25	7538	12725	gear	30.669999999999998	spi:13:spi:0.55:7.15,str:13:str:1:13,armor:263:armor:0.04:10.52
+R	paladin/protection	25	7538	12726	gear	25.73	agi:13:agi:0.62:8.06,spi:13:spi:0.55:7.15,armor:263:armor:0.04:10.52
+R	paladin/protection	25	7538	12727	gear	31.580000000000002	agi:13:agi:0.62:8.06,str:13:str:1:13,armor:263:armor:0.04:10.52
+R	paladin/protection	25	7538	12728	gear	22.92	agi:20:agi:0.62:12.4,armor:263:armor:0.04:10.52
+R	paladin/protection	25	7538	12729	gear	25.32	int:20:int:0.74:14.8,armor:263:armor:0.04:10.52
+R	paladin/protection	25	7538	12730	gear	21.52	spi:20:spi:0.55:11,armor:263:armor:0.04:10.52
+R	paladin/protection	25	7538	12731	gear	24.919999999999998	sta:20:sta:0.72:14.4,armor:263:armor:0.04:10.52
+R	paladin/protection	25	7538	12732	gear	30.52	str:20:str:1:20,armor:263:armor:0.04:10.52
+R	paladin/protection	25	7538	12733	gear	29.72	ap:40:ap:0.48:19.2,armor:263:armor:0.04:10.52
+R	paladin/protection	25	7538	12734	gear	51.92	sp:23:sp:1.8:41.4,armor:263:armor:0.04:10.52
+R	paladin/protection	25	7538	12735	gear	37.519999999999996	spDmg:15:sp:1.8:27,armor:263:armor:0.04:10.52
+R	paladin/protection	25	7538	12740	gear	19.88	sta:13:sta:0.72:9.36,armor:263:armor:0.04:10.52
+R	paladin/protection	25	7538	12741	gear	19.88	sta:13:sta:0.72:9.36,armor:263:armor:0.04:10.52
+R	paladin/protection	25	7538	12742	gear	19.88	sta:13:sta:0.72:9.36,armor:263:armor:0.04:10.52
+R	paladin/protection	25	7538	12743	gear	19.88	sta:13:sta:0.72:9.36,armor:263:armor:0.04:10.52
+R	paladin/protection	25	7538	12744	gear	19.88	sta:13:sta:0.72:9.36,armor:263:armor:0.04:10.52
+R	paladin/protection	25	7538	12745	gear	39.980000000000004	int:15:int:0.74:11.1,sta:8:sta:0.72:5.76,sp:7:sp:1.8:12.6,armor:263:armor:0.04:10.52
+R	paladin/protection	25	7538	12746	gear	38.620000000000005	int:15:int:0.74:11.1,spi:8:spi:0.55:4.4,sp:7:sp:1.8:12.6,armor:263:armor:0.04:10.52
+R	paladin/protection	25	7538	12747	gear	38.31999999999999	spi:8:spi:0.55:4.4,sta:15:sta:0.72:10.8,sp:7:sp:1.8:12.6,armor:263:armor:0.04:10.52
+R	paladin/protection	25	7538	12748	gear	36.239999999999995	int:8:int:0.74:5.92,sta:15:sta:0.72:10.8,spDmg:5:sp:1.8:9,armor:263:armor:0.04:10.52
+R	paladin/protection	25	7538	12749	gear	35.019999999999996	int:15:int:0.74:11.1,spi:8:spi:0.55:4.4,spDmg:5:sp:1.8:9,armor:263:armor:0.04:10.52
+R	paladin/protection	25	7538	12750	gear	34.72	spi:8:spi:0.55:4.4,sta:15:sta:0.72:10.8,spDmg:5:sp:1.8:9,armor:263:armor:0.04:10.52
+R	paladin/protection	25	7538	12751	gear	32.72	agi:6:agi:0.62:3.72,ap:16:ap:0.48:7.68,sta:15:sta:0.72:10.8,armor:263:armor:0.04:10.52
+R	paladin/protection	25	7538	12752	gear	32.28	agi:8:agi:0.62:4.96,sta:15:sta:0.72:10.8,str:6:str:1:6,armor:263:armor:0.04:10.52
+R	paladin/protection	25	7538	12755	gear	41.92	sp:7:sp:1.8:12.6,sta:15:sta:0.72:10.8,str:8:str:1:8,armor:263:armor:0.04:10.52
+R	paladin/protection	25	7538	12760	gear	10.52	armor:263:armor:0.04:10.52
+R	paladin/protection	25	7922	0	gear	33.04	str:12:str:1:12,sta:12:sta:0.72:8.64,armor:310:armor:0.04:12.4
+R	paladin/protection	25	8192	0	gear	13.86	agi:11:agi:0.62:6.82,sta:5:sta:0.72:3.6,armor:86:armor:0.04:3.44
+R	paladin/protection	25	9458	0	oh	32.69	spi:3:spi:0.55:1.65,armor:776:armor:0.04:31.04
+R	paladin/protection	25	9834	0	gear	2.92	armor:73:armor:0.04:2.92
+R	paladin/protection	25	9834	12718	gear	11.68	int:6:int:0.74:4.44,sta:6:sta:0.72:4.32,armor:73:armor:0.04:2.92
+R	paladin/protection	25	9834	12719	gear	10.540000000000001	spi:6:spi:0.55:3.3,sta:6:sta:0.72:4.32,armor:73:armor:0.04:2.92
+R	paladin/protection	25	9834	12720	gear	10.66	int:6:int:0.74:4.44,spi:6:spi:0.55:3.3,armor:73:armor:0.04:2.92
+R	paladin/protection	25	9834	12721	gear	10.959999999999999	agi:6:agi:0.62:3.72,sta:6:sta:0.72:4.32,armor:73:armor:0.04:2.92
+R	paladin/protection	25	9834	12722	gear	13.24	sta:6:sta:0.72:4.32,str:6:str:1:6,armor:73:armor:0.04:2.92
+R	paladin/protection	25	9834	12723	gear	13.36	int:6:int:0.74:4.44,str:6:str:1:6,armor:73:armor:0.04:2.92
+R	paladin/protection	25	9834	12724	gear	11.08	agi:6:agi:0.62:3.72,int:6:int:0.74:4.44,armor:73:armor:0.04:2.92
+R	paladin/protection	25	9834	12725	gear	12.22	spi:6:spi:0.55:3.3,str:6:str:1:6,armor:73:armor:0.04:2.92
+R	paladin/protection	25	9834	12726	gear	9.94	agi:6:agi:0.62:3.72,spi:6:spi:0.55:3.3,armor:73:armor:0.04:2.92
+R	paladin/protection	25	9834	12727	gear	12.639999999999999	agi:6:agi:0.62:3.72,str:6:str:1:6,armor:73:armor:0.04:2.92
+R	paladin/protection	25	9834	12728	gear	8.5	agi:9:agi:0.62:5.58,armor:73:armor:0.04:2.92
+R	paladin/protection	25	9834	12729	gear	9.58	int:9:int:0.74:6.66,armor:73:armor:0.04:2.92
+R	paladin/protection	25	9834	12730	gear	7.87	spi:9:spi:0.55:4.95,armor:73:armor:0.04:2.92
+R	paladin/protection	25	9834	12731	gear	9.399999999999999	sta:9:sta:0.72:6.48,armor:73:armor:0.04:2.92
+R	paladin/protection	25	9834	12732	gear	11.92	str:9:str:1:9,armor:73:armor:0.04:2.92
+R	paladin/protection	25	9834	12733	gear	11.56	ap:18:ap:0.48:8.64,armor:73:armor:0.04:2.92
+R	paladin/protection	25	9834	12734	gear	22.72	sp:11:sp:1.8:19.8,armor:73:armor:0.04:2.92
+R	paladin/protection	25	9834	12735	gear	15.52	spDmg:7:sp:1.8:12.6,armor:73:armor:0.04:2.92
+R	paladin/protection	25	9834	12736	gear	4.779999999999999	defense:6:defense:0.31:1.86,armor:73:armor:0.04:2.92
+R	paladin/protection	25	9834	12740	gear	7.24	sta:6:sta:0.72:4.32,armor:73:armor:0.04:2.92
+R	paladin/protection	25	9834	12741	gear	7.24	sta:6:sta:0.72:4.32,armor:73:armor:0.04:2.92
+R	paladin/protection	25	9834	12742	gear	7.24	sta:6:sta:0.72:4.32,armor:73:armor:0.04:2.92
+R	paladin/protection	25	9834	12743	gear	7.24	sta:6:sta:0.72:4.32,armor:73:armor:0.04:2.92
+R	paladin/protection	25	9834	12744	gear	7.24	sta:6:sta:0.72:4.32,armor:73:armor:0.04:2.92
+R	paladin/protection	25	9834	12745	gear	16.38	int:7:int:0.74:5.18,sta:4:sta:0.72:2.88,sp:3:sp:1.8:5.4,armor:73:armor:0.04:2.92
+R	paladin/protection	25	9834	12746	gear	15.700000000000001	int:7:int:0.74:5.18,spi:4:spi:0.55:2.2,sp:3:sp:1.8:5.4,armor:73:armor:0.04:2.92
+R	paladin/protection	25	9834	12747	gear	15.56	spi:4:spi:0.55:2.2,sta:7:sta:0.72:5.04,sp:3:sp:1.8:5.4,armor:73:armor:0.04:2.92
+R	paladin/protection	25	9834	12748	gear	14.52	int:4:int:0.74:2.96,sta:7:sta:0.72:5.04,spDmg:2:sp:1.8:3.6,armor:73:armor:0.04:2.92
+R	paladin/protection	25	9834	12749	gear	13.9	int:7:int:0.74:5.18,spi:4:spi:0.55:2.2,spDmg:2:sp:1.8:3.6,armor:73:armor:0.04:2.92
+R	paladin/protection	25	9834	12750	gear	13.76	spi:4:spi:0.55:2.2,sta:7:sta:0.72:5.04,spDmg:2:sp:1.8:3.6,armor:73:armor:0.04:2.92
+R	paladin/protection	25	9834	12751	gear	13.18	agi:3:agi:0.62:1.86,ap:7:ap:0.48:3.36,sta:7:sta:0.72:5.04,armor:73:armor:0.04:2.92
+R	paladin/protection	25	9834	12752	gear	13.44	agi:4:agi:0.62:2.48,sta:7:sta:0.72:5.04,str:3:str:1:3,armor:73:armor:0.04:2.92
+R	paladin/protection	25	9834	12753	gear	12.58	defense:2:defense:0.31:0.62,sta:7:sta:0.72:5.04,str:4:str:1:4,armor:73:armor:0.04:2.92
+R	paladin/protection	25	9834	12755	gear	17.36	sp:3:sp:1.8:5.4,sta:7:sta:0.72:5.04,str:4:str:1:4,armor:73:armor:0.04:2.92
+R	paladin/protection	25	9834	12756	gear	2.92	armor:73:armor:0.04:2.92
+R	paladin/protection	25	9834	12760	gear	2.92	armor:73:armor:0.04:2.92
+R	paladin/protection	25	10087	0	gear	11.120000000000001	armor:278:armor:0.04:11.12
+R	paladin/protection	25	10087	12718	gear	24.26	int:9:int:0.74:6.66,sta:9:sta:0.72:6.48,armor:278:armor:0.04:11.12
+R	paladin/protection	25	10087	12719	gear	22.55	spi:9:spi:0.55:4.95,sta:9:sta:0.72:6.48,armor:278:armor:0.04:11.12
+R	paladin/protection	25	10087	12720	gear	22.73	int:9:int:0.74:6.66,spi:9:spi:0.55:4.95,armor:278:armor:0.04:11.12
+R	paladin/protection	25	10087	12721	gear	23.18	agi:9:agi:0.62:5.58,sta:9:sta:0.72:6.48,armor:278:armor:0.04:11.12
+R	paladin/protection	25	10087	12722	gear	26.6	sta:9:sta:0.72:6.48,str:9:str:1:9,armor:278:armor:0.04:11.12
+R	paladin/protection	25	10087	12723	gear	26.78	int:9:int:0.74:6.66,str:9:str:1:9,armor:278:armor:0.04:11.12
+R	paladin/protection	25	10087	12724	gear	23.36	agi:9:agi:0.62:5.58,int:9:int:0.74:6.66,armor:278:armor:0.04:11.12
+R	paladin/protection	25	10087	12725	gear	25.07	spi:9:spi:0.55:4.95,str:9:str:1:9,armor:278:armor:0.04:11.12
+R	paladin/protection	25	10087	12726	gear	21.650000000000002	agi:9:agi:0.62:5.58,spi:9:spi:0.55:4.95,armor:278:armor:0.04:11.12
+R	paladin/protection	25	10087	12727	gear	25.700000000000003	agi:9:agi:0.62:5.58,str:9:str:1:9,armor:278:armor:0.04:11.12
+R	paladin/protection	25	10087	12728	gear	19.8	agi:14:agi:0.62:8.68,armor:278:armor:0.04:11.12
+R	paladin/protection	25	10087	12729	gear	21.48	int:14:int:0.74:10.36,armor:278:armor:0.04:11.12
+R	paladin/protection	25	10087	12730	gear	18.82	spi:14:spi:0.55:7.7,armor:278:armor:0.04:11.12
+R	paladin/protection	25	10087	12731	gear	21.200000000000003	sta:14:sta:0.72:10.08,armor:278:armor:0.04:11.12
+R	paladin/protection	25	10087	12732	gear	25.12	str:14:str:1:14,armor:278:armor:0.04:11.12
+R	paladin/protection	25	10087	12733	gear	24.560000000000002	ap:28:ap:0.48:13.44,armor:278:armor:0.04:11.12
+R	paladin/protection	25	10087	12734	gear	39.92	sp:16:sp:1.8:28.8,armor:278:armor:0.04:11.12
+R	paladin/protection	25	10087	12735	gear	29.12	spDmg:10:sp:1.8:18,armor:278:armor:0.04:11.12
+R	paladin/protection	25	10087	12736	gear	13.91	defense:9:defense:0.31:2.79,armor:278:armor:0.04:11.12
+R	paladin/protection	25	10087	12740	gear	17.6	sta:9:sta:0.72:6.48,armor:278:armor:0.04:11.12
+R	paladin/protection	25	10087	12741	gear	17.6	sta:9:sta:0.72:6.48,armor:278:armor:0.04:11.12
+R	paladin/protection	25	10087	12742	gear	17.6	sta:9:sta:0.72:6.48,armor:278:armor:0.04:11.12
+R	paladin/protection	25	10087	12743	gear	17.6	sta:9:sta:0.72:6.48,armor:278:armor:0.04:11.12
+R	paladin/protection	25	10087	12744	gear	17.6	sta:9:sta:0.72:6.48,armor:278:armor:0.04:11.12
+R	paladin/protection	25	10087	12748	gear	28.16	int:6:int:0.74:4.44,sta:10:sta:0.72:7.2,spDmg:3:sp:1.8:5.4,armor:278:armor:0.04:11.12
+R	paladin/protection	25	10087	12749	gear	27.220000000000002	int:10:int:0.74:7.4,spi:6:spi:0.55:3.3,spDmg:3:sp:1.8:5.4,armor:278:armor:0.04:11.12
+R	paladin/protection	25	10087	12750	gear	27.020000000000003	spi:6:spi:0.55:3.3,sta:10:sta:0.72:7.2,spDmg:3:sp:1.8:5.4,armor:278:armor:0.04:11.12
+R	paladin/protection	25	10087	12752	gear	26.04	agi:6:agi:0.62:3.72,sta:10:sta:0.72:7.2,str:4:str:1:4,armor:278:armor:0.04:11.12
+R	paladin/protection	25	10087	12753	gear	25.25	defense:3:defense:0.31:0.93,sta:10:sta:0.72:7.2,str:6:str:1:6,armor:278:armor:0.04:11.12
+R	paladin/protection	25	10087	12754	gear	28.56	defense:4:defense:0.31:1.24,sp:5:sp:1.8:9,sta:10:sta:0.72:7.2,armor:278:armor:0.04:11.12
+R	paladin/protection	25	10087	12755	gear	33.32	sp:5:sp:1.8:9,sta:10:sta:0.72:7.2,str:6:str:1:6,armor:278:armor:0.04:11.12
+R	paladin/protection	25	10087	12759	gear	43.120000000000005	spHoly:20:spHoly:1.6:32,armor:278:armor:0.04:11.12
+R	paladin/protection	25	10368	0	gear	56.3	str:15:str:1:15,sta:14:sta:0.72:10.08,spi:14:spi:0.55:7.7,armor:588:armor:0.04:23.52
+R	paladin/protection	25	11187	0	gear	0.16	armor:4:armor:0.04:0.16
+R	paladin/protection	25	11994	0	gear	0.0	
+R	paladin/protection	25	11994	12718	gear	4.38	int:3:int:0.74:2.22,sta:3:sta:0.72:2.16
+R	paladin/protection	25	11994	12719	gear	3.8100000000000005	spi:3:spi:0.55:1.65,sta:3:sta:0.72:2.16
+R	paladin/protection	25	11994	12720	gear	3.87	int:3:int:0.74:2.22,spi:3:spi:0.55:1.65
+R	paladin/protection	25	11994	12721	gear	4.02	agi:3:agi:0.62:1.86,sta:3:sta:0.72:2.16
+R	paladin/protection	25	11994	12722	gear	5.16	sta:3:sta:0.72:2.16,str:3:str:1:3
+R	paladin/protection	25	11994	12723	gear	5.22	int:3:int:0.74:2.22,str:3:str:1:3
+R	paladin/protection	25	11994	12724	gear	4.08	agi:3:agi:0.62:1.86,int:3:int:0.74:2.22
+R	paladin/protection	25	11994	12725	gear	4.65	spi:3:spi:0.55:1.65,str:3:str:1:3
+R	paladin/protection	25	11994	12726	gear	3.51	agi:3:agi:0.62:1.86,spi:3:spi:0.55:1.65
+R	paladin/protection	25	11994	12727	gear	4.859999999999999	agi:3:agi:0.62:1.86,str:3:str:1:3
+R	paladin/protection	25	11994	12728	gear	3.1	agi:5:agi:0.62:3.1
+R	paladin/protection	25	11994	12729	gear	3.7	int:5:int:0.74:3.7
+R	paladin/protection	25	11994	12730	gear	2.75	spi:5:spi:0.55:2.75
+R	paladin/protection	25	11994	12731	gear	3.5999999999999996	sta:5:sta:0.72:3.6
+R	paladin/protection	25	11994	12732	gear	5.0	str:5:str:1:5
+R	paladin/protection	25	11994	12733	gear	4.8	ap:10:ap:0.48:4.8
+R	paladin/protection	25	11994	12737	gear	0.0	
+R	paladin/protection	25	11994	12738	gear	0.94	mp5:2:mp5:0.47:0.94
+R	paladin/protection	25	11994	12739	gear	1.24	agi:2:agi:0.62:1.24
+R	paladin/protection	25	11994	12740	gear	2.16	sta:3:sta:0.72:2.16
+R	paladin/protection	25	11994	12741	gear	2.16	sta:3:sta:0.72:2.16
+R	paladin/protection	25	11994	12742	gear	2.16	sta:3:sta:0.72:2.16
+R	paladin/protection	25	11994	12743	gear	2.16	sta:3:sta:0.72:2.16
+R	paladin/protection	25	11994	12744	gear	2.16	sta:3:sta:0.72:2.16
+R	paladin/protection	25	12790	0	mh	355.864	dps:53.82:dps:6.7:360.594,speed:0.55:speed:-8.6:-4.73
+R	paladin/protection	25	13183	0	mh	269.60900000000004	dps:39.47:dps:6.7:264.449,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	14122	0	gear	0.56	armor:14:armor:0.04:0.56
+R	paladin/protection	25	14122	12718	gear	3.48	int:2:int:0.74:1.48,sta:2:sta:0.72:1.44,armor:14:armor:0.04:0.56
+R	paladin/protection	25	14122	12719	gear	3.1	spi:2:spi:0.55:1.1,sta:2:sta:0.72:1.44,armor:14:armor:0.04:0.56
+R	paladin/protection	25	14122	12720	gear	3.14	int:2:int:0.74:1.48,spi:2:spi:0.55:1.1,armor:14:armor:0.04:0.56
+R	paladin/protection	25	14122	12729	gear	2.78	int:3:int:0.74:2.22,armor:14:armor:0.04:0.56
+R	paladin/protection	25	14122	12730	gear	2.21	spi:3:spi:0.55:1.65,armor:14:armor:0.04:0.56
+R	paladin/protection	25	14122	12731	gear	2.72	sta:3:sta:0.72:2.16,armor:14:armor:0.04:0.56
+R	paladin/protection	25	14122	12734	gear	7.76	sp:4:sp:1.8:7.2,armor:14:armor:0.04:0.56
+R	paladin/protection	25	14122	12735	gear	4.16	spDmg:2:sp:1.8:3.6,armor:14:armor:0.04:0.56
+R	paladin/protection	25	14122	12740	gear	2.0	sta:2:sta:0.72:1.44,armor:14:armor:0.04:0.56
+R	paladin/protection	25	14122	12741	gear	2.0	sta:2:sta:0.72:1.44,armor:14:armor:0.04:0.56
+R	paladin/protection	25	14122	12742	gear	2.0	sta:2:sta:0.72:1.44,armor:14:armor:0.04:0.56
+R	paladin/protection	25	14122	12743	gear	2.0	sta:2:sta:0.72:1.44,armor:14:armor:0.04:0.56
+R	paladin/protection	25	14122	12744	gear	2.0	sta:2:sta:0.72:1.44,armor:14:armor:0.04:0.56
+R	paladin/protection	25	14122	12745	gear	4.5600000000000005	int:2:int:0.74:1.48,sta:1:sta:0.72:0.72,sp:1:sp:1.8:1.8,armor:14:armor:0.04:0.56
+R	paladin/protection	25	14122	12756	gear	0.56	armor:14:armor:0.04:0.56
+R	paladin/protection	25	14122	12757	gear	0.56	armor:14:armor:0.04:0.56
+R	paladin/protection	25	14122	12758	gear	0.56	armor:14:armor:0.04:0.56
+R	paladin/protection	25	14122	12759	gear	6.960000000000001	spHoly:4:spHoly:1.6:6.4,armor:14:armor:0.04:0.56
+R	paladin/protection	25	14122	12761	gear	0.56	armor:14:armor:0.04:0.56
+R	paladin/protection	25	14340	0	gear	17.2	sta:19:sta:0.72:13.68,armor:88:armor:0.04:3.52
+R	paladin/protection	25	14673	0	gear	13.54	str:3:str:1:3,agi:9:agi:0.62:5.58,sta:5:sta:0.72:3.6,armor:34:armor:0.04:1.36
+R	paladin/protection	25	14964	0	oh	68.8	armor:1720:armor:0.04:68.8
+R	paladin/protection	25	14964	12718	oh	81.94	int:9:int:0.74:6.66,sta:9:sta:0.72:6.48,armor:1720:armor:0.04:68.8
+R	paladin/protection	25	14964	12719	oh	80.22999999999999	spi:9:spi:0.55:4.95,sta:9:sta:0.72:6.48,armor:1720:armor:0.04:68.8
+R	paladin/protection	25	14964	12720	oh	80.41	int:9:int:0.74:6.66,spi:9:spi:0.55:4.95,armor:1720:armor:0.04:68.8
+R	paladin/protection	25	14964	12721	oh	80.86	agi:9:agi:0.62:5.58,sta:9:sta:0.72:6.48,armor:1720:armor:0.04:68.8
+R	paladin/protection	25	14964	12722	oh	84.28	sta:9:sta:0.72:6.48,str:9:str:1:9,armor:1720:armor:0.04:68.8
+R	paladin/protection	25	14964	12723	oh	84.46	int:9:int:0.74:6.66,str:9:str:1:9,armor:1720:armor:0.04:68.8
+R	paladin/protection	25	14964	12724	oh	81.03999999999999	agi:9:agi:0.62:5.58,int:9:int:0.74:6.66,armor:1720:armor:0.04:68.8
+R	paladin/protection	25	14964	12725	oh	82.75	spi:9:spi:0.55:4.95,str:9:str:1:9,armor:1720:armor:0.04:68.8
+R	paladin/protection	25	14964	12726	oh	79.33	agi:9:agi:0.62:5.58,spi:9:spi:0.55:4.95,armor:1720:armor:0.04:68.8
+R	paladin/protection	25	14964	12727	oh	83.38	agi:9:agi:0.62:5.58,str:9:str:1:9,armor:1720:armor:0.04:68.8
+R	paladin/protection	25	14964	12728	oh	77.47999999999999	agi:14:agi:0.62:8.68,armor:1720:armor:0.04:68.8
+R	paladin/protection	25	14964	12729	oh	79.16	int:14:int:0.74:10.36,armor:1720:armor:0.04:68.8
+R	paladin/protection	25	14964	12730	oh	76.5	spi:14:spi:0.55:7.7,armor:1720:armor:0.04:68.8
+R	paladin/protection	25	14964	12731	oh	78.88	sta:14:sta:0.72:10.08,armor:1720:armor:0.04:68.8
+R	paladin/protection	25	14964	12732	oh	82.8	str:14:str:1:14,armor:1720:armor:0.04:68.8
+R	paladin/protection	25	14964	12733	oh	82.24	ap:28:ap:0.48:13.44,armor:1720:armor:0.04:68.8
+R	paladin/protection	25	14964	12734	oh	97.6	sp:16:sp:1.8:28.8,armor:1720:armor:0.04:68.8
+R	paladin/protection	25	14964	12735	oh	86.8	spDmg:10:sp:1.8:18,armor:1720:armor:0.04:68.8
+R	paladin/protection	25	14964	12736	oh	71.59	defense:9:defense:0.31:2.79,armor:1720:armor:0.04:68.8
+R	paladin/protection	25	14964	12740	oh	75.28	sta:9:sta:0.72:6.48,armor:1720:armor:0.04:68.8
+R	paladin/protection	25	14964	12741	oh	75.28	sta:9:sta:0.72:6.48,armor:1720:armor:0.04:68.8
+R	paladin/protection	25	14964	12742	oh	75.28	sta:9:sta:0.72:6.48,armor:1720:armor:0.04:68.8
+R	paladin/protection	25	14964	12743	oh	75.28	sta:9:sta:0.72:6.48,armor:1720:armor:0.04:68.8
+R	paladin/protection	25	14964	12744	oh	75.28	sta:9:sta:0.72:6.48,armor:1720:armor:0.04:68.8
+R	paladin/protection	25	14964	12745	oh	89.52	int:10:int:0.74:7.4,sta:6:sta:0.72:4.32,sp:5:sp:1.8:9,armor:1720:armor:0.04:68.8
+R	paladin/protection	25	14964	12746	oh	88.5	int:10:int:0.74:7.4,spi:6:spi:0.55:3.3,sp:5:sp:1.8:9,armor:1720:armor:0.04:68.8
+R	paladin/protection	25	14964	12747	oh	88.3	spi:6:spi:0.55:3.3,sta:10:sta:0.72:7.2,sp:5:sp:1.8:9,armor:1720:armor:0.04:68.8
+R	paladin/protection	25	14964	12748	oh	85.84	int:6:int:0.74:4.44,sta:10:sta:0.72:7.2,spDmg:3:sp:1.8:5.4,armor:1720:armor:0.04:68.8
+R	paladin/protection	25	14964	12749	oh	84.9	int:10:int:0.74:7.4,spi:6:spi:0.55:3.3,spDmg:3:sp:1.8:5.4,armor:1720:armor:0.04:68.8
+R	paladin/protection	25	14964	12750	oh	84.7	spi:6:spi:0.55:3.3,sta:10:sta:0.72:7.2,spDmg:3:sp:1.8:5.4,armor:1720:armor:0.04:68.8
+R	paladin/protection	25	14964	12753	oh	82.92999999999999	defense:3:defense:0.31:0.93,sta:10:sta:0.72:7.2,str:6:str:1:6,armor:1720:armor:0.04:68.8
+R	paladin/protection	25	14964	12754	oh	86.24	defense:4:defense:0.31:1.24,sp:5:sp:1.8:9,sta:10:sta:0.72:7.2,armor:1720:armor:0.04:68.8
+R	paladin/protection	25	14964	12759	oh	100.8	spHoly:20:spHoly:1.6:32,armor:1720:armor:0.04:68.8
+R	paladin/protection	25	14964	12760	oh	68.8	armor:1720:armor:0.04:68.8
+R	paladin/protection	25	15235	0	mh	196.579	dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	15235	12718	mh	203.87900000000002	int:5:int:0.74:3.7,sta:5:sta:0.72:3.6,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	15235	12719	mh	202.929	spi:5:spi:0.55:2.75,sta:5:sta:0.72:3.6,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	15235	12720	mh	203.029	int:5:int:0.74:3.7,spi:5:spi:0.55:2.75,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	15235	12721	mh	203.279	agi:5:agi:0.62:3.1,sta:5:sta:0.72:3.6,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	15235	12722	mh	205.179	sta:5:sta:0.72:3.6,str:5:str:1:5,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	15235	12723	mh	205.279	int:5:int:0.74:3.7,str:5:str:1:5,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	15235	12724	mh	203.37900000000002	agi:5:agi:0.62:3.1,int:5:int:0.74:3.7,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	15235	12725	mh	204.329	spi:5:spi:0.55:2.75,str:5:str:1:5,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	15235	12726	mh	202.429	agi:5:agi:0.62:3.1,spi:5:spi:0.55:2.75,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	15235	12727	mh	204.679	agi:5:agi:0.62:3.1,str:5:str:1:5,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	15235	12728	mh	201.53900000000002	agi:8:agi:0.62:4.96,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	15235	12729	mh	202.499	int:8:int:0.74:5.92,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	15235	12730	mh	200.979	spi:8:spi:0.55:4.4,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	15235	12731	mh	202.339	sta:8:sta:0.72:5.76,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	15235	12732	mh	204.579	str:8:str:1:8,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	15235	12733	mh	204.25900000000001	ap:16:ap:0.48:7.68,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	15235	12736	mh	198.12900000000002	defense:5:defense:0.31:1.55,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	15235	12740	mh	200.179	sta:5:sta:0.72:3.6,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	15235	12741	mh	200.179	sta:5:sta:0.72:3.6,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	15235	12742	mh	200.179	sta:5:sta:0.72:3.6,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	15235	12743	mh	200.179	sta:5:sta:0.72:3.6,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	15235	12744	mh	200.179	sta:5:sta:0.72:3.6,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	15235	12751	mh	206.119	agi:3:agi:0.62:1.86,ap:7:ap:0.48:3.36,sta:6:sta:0.72:4.32,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	15235	12752	mh	205.75900000000001	agi:3:agi:0.62:1.86,sta:6:sta:0.72:4.32,str:3:str:1:3,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	15235	12753	mh	204.519	defense:2:defense:0.31:0.62,sta:6:sta:0.72:4.32,str:3:str:1:3,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	15235	12754	mh	206.919	defense:2:defense:0.31:0.62,sp:3:sp:1.8:5.4,sta:6:sta:0.72:4.32,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	15235	12759	mh	214.179	spHoly:11:spHoly:1.6:17.6,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	15235	12906	mh	272.29900000000004	int:6:int:0.74:4.44,sta:4:sta:0.72:2.88,sp:38:sp:1.8:68.4,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	15235	12908	mh	271.619	int:6:int:0.74:4.44,sp:38:sp:1.8:68.4,spi:4:spi:0.55:2.2,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	15235	12910	mh	271.4990000000001	sp:38:sp:1.8:68.4,spi:4:spi:0.55:2.2,sta:6:sta:0.72:4.32,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	15235	12912	mh	247.059	spDmg:24:sp:1.8:43.2,int:4:int:0.74:2.96,sta:6:sta:0.72:4.32,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	15235	12913	mh	246.419	int:6:int:0.74:4.44,spDmg:24:sp:1.8:43.2,spi:4:spi:0.55:2.2,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	15235	12916	mh	246.299	spDmg:24:sp:1.8:43.2,spi:4:spi:0.55:2.2,sta:6:sta:0.72:4.32,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	15235	12917	mh	270.89900000000006	sp:38:sp:1.8:68.4,int:8:int:0.74:5.92,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	15235	12920	mh	245.699	int:8:int:0.74:5.92,spDmg:24:sp:1.8:43.2,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.6:5.16
+R	paladin/protection	25	15477	0	gear	4.04	armor:101:armor:0.04:4.04
+R	paladin/protection	25	15477	12718	gear	5.5	int:1:int:0.74:0.74,sta:1:sta:0.72:0.72,armor:101:armor:0.04:4.04
+R	paladin/protection	25	15477	12719	gear	5.3100000000000005	spi:1:spi:0.55:0.55,sta:1:sta:0.72:0.72,armor:101:armor:0.04:4.04
+R	paladin/protection	25	15477	12720	gear	5.33	int:1:int:0.74:0.74,spi:1:spi:0.55:0.55,armor:101:armor:0.04:4.04
+R	paladin/protection	25	15477	12721	gear	5.38	agi:1:agi:0.62:0.62,sta:1:sta:0.72:0.72,armor:101:armor:0.04:4.04
+R	paladin/protection	25	15477	12722	gear	5.76	sta:1:sta:0.72:0.72,str:1:str:1:1,armor:101:armor:0.04:4.04
+R	paladin/protection	25	15477	12723	gear	5.78	int:1:int:0.74:0.74,str:1:str:1:1,armor:101:armor:0.04:4.04
+R	paladin/protection	25	15477	12724	gear	5.4	agi:1:agi:0.62:0.62,int:1:int:0.74:0.74,armor:101:armor:0.04:4.04
+R	paladin/protection	25	15477	12725	gear	5.59	spi:1:spi:0.55:0.55,str:1:str:1:1,armor:101:armor:0.04:4.04
+R	paladin/protection	25	15477	12726	gear	5.21	agi:1:agi:0.62:0.62,spi:1:spi:0.55:0.55,armor:101:armor:0.04:4.04
+R	paladin/protection	25	15477	12727	gear	5.66	agi:1:agi:0.62:0.62,str:1:str:1:1,armor:101:armor:0.04:4.04
+R	paladin/protection	25	15477	12728	gear	5.28	agi:2:agi:0.62:1.24,armor:101:armor:0.04:4.04
+R	paladin/protection	25	15477	12729	gear	5.52	int:2:int:0.74:1.48,armor:101:armor:0.04:4.04
+R	paladin/protection	25	15477	12730	gear	5.140000000000001	spi:2:spi:0.55:1.1,armor:101:armor:0.04:4.04
+R	paladin/protection	25	15477	12731	gear	5.48	sta:2:sta:0.72:1.44,armor:101:armor:0.04:4.04
+R	paladin/protection	25	15477	12732	gear	6.04	str:2:str:1:2,armor:101:armor:0.04:4.04
+R	paladin/protection	25	15477	12733	gear	5.96	ap:4:ap:0.48:1.92,armor:101:armor:0.04:4.04
+R	paladin/protection	25	15477	12734	gear	7.640000000000001	sp:2:sp:1.8:3.6,armor:101:armor:0.04:4.04
+R	paladin/protection	25	15477	12735	gear	5.84	spDmg:1:sp:1.8:1.8,armor:101:armor:0.04:4.04
+R	paladin/protection	25	15477	12736	gear	4.35	defense:1:defense:0.31:0.31,armor:101:armor:0.04:4.04
+R	paladin/protection	25	15477	12740	gear	4.76	sta:1:sta:0.72:0.72,armor:101:armor:0.04:4.04
+R	paladin/protection	25	15477	12741	gear	4.76	sta:1:sta:0.72:0.72,armor:101:armor:0.04:4.04
+R	paladin/protection	25	15477	12742	gear	4.76	sta:1:sta:0.72:0.72,armor:101:armor:0.04:4.04
+R	paladin/protection	25	15477	12743	gear	4.76	sta:1:sta:0.72:0.72,armor:101:armor:0.04:4.04
+R	paladin/protection	25	15477	12744	gear	4.76	sta:1:sta:0.72:0.72,armor:101:armor:0.04:4.04
+R	paladin/protection	25	15477	12759	gear	8.84	spHoly:3:spHoly:1.6:4.8,armor:101:armor:0.04:4.04
+R	paladin/protection	25	15945	0	oh	2.54	sta:2:sta:0.72:1.44,spi:2:spi:0.55:1.1
+R	paladin/protection	25	16711	0	gear	24.67	agi:21:agi:0.62:13.02,sta:9:sta:0.72:6.48,hit:0.3:hit:1.9:0.57,armor:115:armor:0.04:4.6
+R	paladin/protection	25	18312	0	gear	87.96000000000001	str:13:str:1:13,sta:20:sta:0.72:14.4,int:12:int:0.74:8.88,sp:15:sp:1.8:27,armor:617:armor:0.04:24.68
+R	paladin/protection	25	18726	0	gear	15.889999999999999	sta:15:sta:0.72:10.8,defense:7:defense:0.31:2.17,armor:73:armor:0.04:2.92
+R	paladin/protection	25	19557	0	mh	153.16	str:7:str:1:7,sta:3:sta:0.72:2.16,dps:21.3:dps:6.7:142.71,speed:-0.15:speed:-8.6:1.29
+R	paladin/protection	25	20129	0	gear	20.32	agi:6:agi:0.62:3.72,str:6:str:1:6,sta:6:sta:0.72:4.32,armor:157:armor:0.04:6.28
+R	paladin/protection	25	22270	0	gear	55.01	str:11:str:1:11,defense:3:defense:0.31:0.93,int:10:int:0.74:7.4,sta:10:sta:0.72:7.2,sp:7:sp:1.8:12.6,armor:397:armor:0.04:15.88
+R	paladin/protection	25	22400	0	ranged	0.0	
+R	paladin/protection	25	22967	0	gear	33.72	sta:25:sta:0.72:18,armor:393:armor:0.04:15.72
+R	paladin/protection	25	250491	0	gear	22.94	int:5:int:0.74:3.7,sta:4:sta:0.72:2.88,spDmg:5:sp:1.8:9,armor:184:armor:0.04:7.36
+R	paladin/protection	25	252507	0	gear	21.04	sta:10:sta:0.72:7.2,spDmg:6:sp:1.8:10.8,armor:76:armor:0.04:3.04
+R	paladin/protection	25	254111	0	gear	18.18	int:9:int:0.74:6.66,sta:13:sta:0.72:9.36,armor:54:armor:0.04:2.16
+R	paladin/protection	25	270033	0	gear	7.040000000000001	agi:4:agi:0.62:2.48,str:3:str:1:3,armor:39:armor:0.04:1.56
+R	paladin/protection	25	271956	0	gear	41.8	agi:27:agi:0.62:16.74,sta:12:sta:0.72:8.64,crit:1:crit:3.4:3.4,crit:1:spellCrit:0.54:0.54,armor:312:armor:0.04:12.48
+R	paladin/protection	25	272958	0	gear	69.9	int:27:int:0.74:19.98,sta:12:sta:0.72:8.64,sp:16:sp:1.8:28.8,armor:312:armor:0.04:12.48
+R	paladin/protection	25	276399	0	gear	62.93000000000001	sta:18:sta:0.72:12.96,mp5:7:mp5:0.47:3.29,spDmg:12:sp:1.8:21.6,armor:627:armor:0.04:25.08
+R	paladin/protection	25	277235	0	gear	35.4	str:14:str:1:14,sta:10:sta:0.72:7.2,armor:355:armor:0.04:14.2
+R	paladin/protection	25	282560	0	gear	39.67999999999999	int:10:int:0.74:7.4,sta:13:sta:0.72:9.36,sp:8:sp:1.8:14.4,armor:213:armor:0.04:8.52
+R	paladin/protection	25	286609	0	oh	76.51	spi:6:spi:0.55:3.3,defense:7:defense:0.31:2.17,armor:1776:armor:0.04:71.04
+R	paladin/protection	34	25	0	mh	13.625000000000007	dps:1.05:dps:6.5:6.825,speed:-0.2:speed:-34:6.8
+R	paladin/protection	34	1315	0	gear	13.85	sta:10:sta:0.65:6.5,spi:15:spi:0.49:7.35
+R	paladin/protection	34	1808	0	gear	2.5900000000000003	armor:74:armor:0.035:2.59
+R	paladin/protection	34	2614	0	gear	1.0150000000000001	armor:29:armor:0.035:1.015
+R	paladin/protection	34	3158	0	gear	0.9100000000000001	armor:26:armor:0.035:0.91
+R	paladin/protection	34	3570	0	mh	44.58	str:2:str:1:2,dps:8.12:dps:6.5:52.78,speed:0.3:speed:-34:-10.2
+R	paladin/protection	34	4068	0	oh	39.55500000000001	sta:9:sta:0.65:5.85,armor:963:armor:0.035:33.705
+R	paladin/protection	34	4570	0	mh	44.6	dps:10:dps:6.5:65,speed:0.6:speed:-34:-20.4
+R	paladin/protection	34	4570	12718	mh	48.65	int:3:int:0.7:2.1,sta:3:sta:0.65:1.95,dps:10:dps:6.5:65,speed:0.6:speed:-34:-20.4
+R	paladin/protection	34	4570	12719	mh	48.02	spi:3:spi:0.49:1.47,sta:3:sta:0.65:1.95,dps:10:dps:6.5:65,speed:0.6:speed:-34:-20.4
+R	paladin/protection	34	4570	12720	mh	48.169999999999995	int:3:int:0.7:2.1,spi:3:spi:0.49:1.47,dps:10:dps:6.5:65,speed:0.6:speed:-34:-20.4
+R	paladin/protection	34	4570	12721	mh	48.32	agi:3:agi:0.59:1.77,sta:3:sta:0.65:1.95,dps:10:dps:6.5:65,speed:0.6:speed:-34:-20.4
+R	paladin/protection	34	4570	12722	mh	49.550000000000004	sta:3:sta:0.65:1.95,str:3:str:1:3,dps:10:dps:6.5:65,speed:0.6:speed:-34:-20.4
+R	paladin/protection	34	4570	12723	mh	49.699999999999996	int:3:int:0.7:2.1,str:3:str:1:3,dps:10:dps:6.5:65,speed:0.6:speed:-34:-20.4
+R	paladin/protection	34	4570	12724	mh	48.470000000000006	agi:3:agi:0.59:1.77,int:3:int:0.7:2.1,dps:10:dps:6.5:65,speed:0.6:speed:-34:-20.4
+R	paladin/protection	34	4570	12725	mh	49.07	spi:3:spi:0.49:1.47,str:3:str:1:3,dps:10:dps:6.5:65,speed:0.6:speed:-34:-20.4
+R	paladin/protection	34	4570	12726	mh	47.839999999999996	agi:3:agi:0.59:1.77,spi:3:spi:0.49:1.47,dps:10:dps:6.5:65,speed:0.6:speed:-34:-20.4
+R	paladin/protection	34	4570	12727	mh	49.37	agi:3:agi:0.59:1.77,str:3:str:1:3,dps:10:dps:6.5:65,speed:0.6:speed:-34:-20.4
+R	paladin/protection	34	4570	12728	mh	46.96	agi:4:agi:0.59:2.36,dps:10:dps:6.5:65,speed:0.6:speed:-34:-20.4
+R	paladin/protection	34	4570	12729	mh	47.4	int:4:int:0.7:2.8,dps:10:dps:6.5:65,speed:0.6:speed:-34:-20.4
+R	paladin/protection	34	4570	12730	mh	46.559999999999995	spi:4:spi:0.49:1.96,dps:10:dps:6.5:65,speed:0.6:speed:-34:-20.4
+R	paladin/protection	34	4570	12731	mh	47.199999999999996	sta:4:sta:0.65:2.6,dps:10:dps:6.5:65,speed:0.6:speed:-34:-20.4
+R	paladin/protection	34	4570	12732	mh	48.6	str:4:str:1:4,dps:10:dps:6.5:65,speed:0.6:speed:-34:-20.4
+R	paladin/protection	34	4570	12733	mh	48.440000000000005	ap:8:ap:0.48:3.84,dps:10:dps:6.5:65,speed:0.6:speed:-34:-20.4
+R	paladin/protection	34	4570	12736	mh	45.470000000000006	defense:3:defense:0.29:0.87,dps:10:dps:6.5:65,speed:0.6:speed:-34:-20.4
+R	paladin/protection	34	4570	12740	mh	46.550000000000004	sta:3:sta:0.65:1.95,dps:10:dps:6.5:65,speed:0.6:speed:-34:-20.4
+R	paladin/protection	34	4570	12741	mh	46.550000000000004	sta:3:sta:0.65:1.95,dps:10:dps:6.5:65,speed:0.6:speed:-34:-20.4
+R	paladin/protection	34	4570	12742	mh	46.550000000000004	sta:3:sta:0.65:1.95,dps:10:dps:6.5:65,speed:0.6:speed:-34:-20.4
+R	paladin/protection	34	4570	12743	mh	46.550000000000004	sta:3:sta:0.65:1.95,dps:10:dps:6.5:65,speed:0.6:speed:-34:-20.4
+R	paladin/protection	34	4570	12744	mh	46.550000000000004	sta:3:sta:0.65:1.95,dps:10:dps:6.5:65,speed:0.6:speed:-34:-20.4
+R	paladin/protection	34	4570	12759	mh	54.800000000000004	spHoly:6:spHoly:1.7:10.2,dps:10:dps:6.5:65,speed:0.6:speed:-34:-20.4
+R	paladin/protection	34	4570	12918	mh	61.800000000000004	sp:8:sp:1.8:14.4,int:4:int:0.7:2.8,dps:10:dps:6.5:65,speed:0.6:speed:-34:-20.4
+R	paladin/protection	34	4570	12919	mh	56.4	spDmg:5:sp:1.8:9,int:4:int:0.7:2.8,dps:10:dps:6.5:65,speed:0.6:speed:-34:-20.4
+R	paladin/protection	34	5079	0	gear	0.0	
+R	paladin/protection	34	6063	0	gear	1.9250000000000003	armor:55:armor:0.035:1.925
+R	paladin/protection	34	6540	0	gear	0.9800000000000001	armor:28:armor:0.035:0.98
+R	paladin/protection	34	6540	12718	gear	5.03	int:3:int:0.7:2.1,sta:3:sta:0.65:1.95,armor:28:armor:0.035:0.98
+R	paladin/protection	34	6540	12719	gear	4.4	spi:3:spi:0.49:1.47,sta:3:sta:0.65:1.95,armor:28:armor:0.035:0.98
+R	paladin/protection	34	6540	12720	gear	4.55	int:3:int:0.7:2.1,spi:3:spi:0.49:1.47,armor:28:armor:0.035:0.98
+R	paladin/protection	34	6540	12729	gear	4.48	int:5:int:0.7:3.5,armor:28:armor:0.035:0.98
+R	paladin/protection	34	6540	12730	gear	3.43	spi:5:spi:0.49:2.45,armor:28:armor:0.035:0.98
+R	paladin/protection	34	6540	12731	gear	4.23	sta:5:sta:0.65:3.25,armor:28:armor:0.035:0.98
+R	paladin/protection	34	6540	12734	gear	11.780000000000001	sp:6:sp:1.8:10.8,armor:28:armor:0.035:0.98
+R	paladin/protection	34	6540	12735	gear	8.18	spDmg:4:sp:1.8:7.2,armor:28:armor:0.035:0.98
+R	paladin/protection	34	6540	12740	gear	2.93	sta:3:sta:0.65:1.95,armor:28:armor:0.035:0.98
+R	paladin/protection	34	6540	12741	gear	2.93	sta:3:sta:0.65:1.95,armor:28:armor:0.035:0.98
+R	paladin/protection	34	6540	12742	gear	2.93	sta:3:sta:0.65:1.95,armor:28:armor:0.035:0.98
+R	paladin/protection	34	6540	12743	gear	2.93	sta:3:sta:0.65:1.95,armor:28:armor:0.035:0.98
+R	paladin/protection	34	6540	12744	gear	2.93	sta:3:sta:0.65:1.95,armor:28:armor:0.035:0.98
+R	paladin/protection	34	6540	12745	gear	8.68	int:4:int:0.7:2.8,sta:2:sta:0.65:1.3,sp:2:sp:1.8:3.6,armor:28:armor:0.035:0.98
+R	paladin/protection	34	6540	12756	gear	0.9800000000000001	armor:28:armor:0.035:0.98
+R	paladin/protection	34	6540	12757	gear	0.9800000000000001	armor:28:armor:0.035:0.98
+R	paladin/protection	34	6540	12758	gear	0.9800000000000001	armor:28:armor:0.035:0.98
+R	paladin/protection	34	6540	12759	gear	12.88	spHoly:7:spHoly:1.7:11.9,armor:28:armor:0.035:0.98
+R	paladin/protection	34	6540	12761	gear	0.9800000000000001	armor:28:armor:0.035:0.98
+R	paladin/protection	34	6557	0	gear	1.715	armor:49:armor:0.035:1.715
+R	paladin/protection	34	6557	12718	gear	4.415	int:2:int:0.7:1.4,sta:2:sta:0.65:1.3,armor:49:armor:0.035:1.715
+R	paladin/protection	34	6557	12719	gear	3.995	spi:2:spi:0.49:0.98,sta:2:sta:0.65:1.3,armor:49:armor:0.035:1.715
+R	paladin/protection	34	6557	12720	gear	4.095	int:2:int:0.7:1.4,spi:2:spi:0.49:0.98,armor:49:armor:0.035:1.715
+R	paladin/protection	34	6557	12721	gear	4.195	agi:2:agi:0.59:1.18,sta:2:sta:0.65:1.3,armor:49:armor:0.035:1.715
+R	paladin/protection	34	6557	12722	gear	5.015	sta:2:sta:0.65:1.3,str:2:str:1:2,armor:49:armor:0.035:1.715
+R	paladin/protection	34	6557	12723	gear	5.115	int:2:int:0.7:1.4,str:2:str:1:2,armor:49:armor:0.035:1.715
+R	paladin/protection	34	6557	12724	gear	4.295	agi:2:agi:0.59:1.18,int:2:int:0.7:1.4,armor:49:armor:0.035:1.715
+R	paladin/protection	34	6557	12725	gear	4.695	spi:2:spi:0.49:0.98,str:2:str:1:2,armor:49:armor:0.035:1.715
+R	paladin/protection	34	6557	12726	gear	3.875	agi:2:agi:0.59:1.18,spi:2:spi:0.49:0.98,armor:49:armor:0.035:1.715
+R	paladin/protection	34	6557	12727	gear	4.895	agi:2:agi:0.59:1.18,str:2:str:1:2,armor:49:armor:0.035:1.715
+R	paladin/protection	34	6557	12728	gear	3.4850000000000003	agi:3:agi:0.59:1.77,armor:49:armor:0.035:1.715
+R	paladin/protection	34	6557	12729	gear	3.8149999999999995	int:3:int:0.7:2.1,armor:49:armor:0.035:1.715
+R	paladin/protection	34	6557	12730	gear	3.185	spi:3:spi:0.49:1.47,armor:49:armor:0.035:1.715
+R	paladin/protection	34	6557	12731	gear	3.665	sta:3:sta:0.65:1.95,armor:49:armor:0.035:1.715
+R	paladin/protection	34	6557	12732	gear	4.715	str:3:str:1:3,armor:49:armor:0.035:1.715
+R	paladin/protection	34	6557	12733	gear	4.595	ap:6:ap:0.48:2.88,armor:49:armor:0.035:1.715
+R	paladin/protection	34	6557	12734	gear	8.915000000000001	sp:4:sp:1.8:7.2,armor:49:armor:0.035:1.715
+R	paladin/protection	34	6557	12735	gear	5.315	spDmg:2:sp:1.8:3.6,armor:49:armor:0.035:1.715
+R	paladin/protection	34	6557	12736	gear	2.295	defense:2:defense:0.29:0.58,armor:49:armor:0.035:1.715
+R	paladin/protection	34	6557	12740	gear	3.015	sta:2:sta:0.65:1.3,armor:49:armor:0.035:1.715
+R	paladin/protection	34	6557	12741	gear	3.015	sta:2:sta:0.65:1.3,armor:49:armor:0.035:1.715
+R	paladin/protection	34	6557	12742	gear	3.015	sta:2:sta:0.65:1.3,armor:49:armor:0.035:1.715
+R	paladin/protection	34	6557	12743	gear	3.015	sta:2:sta:0.65:1.3,armor:49:armor:0.035:1.715
+R	paladin/protection	34	6557	12744	gear	3.015	sta:2:sta:0.65:1.3,armor:49:armor:0.035:1.715
+R	paladin/protection	34	6557	12756	gear	1.715	armor:49:armor:0.035:1.715
+R	paladin/protection	34	6557	12760	gear	1.715	armor:49:armor:0.035:1.715
+R	paladin/protection	34	7047	0	gear	3.3600000000000003	spi:5:spi:0.49:2.45,armor:26:armor:0.035:0.91
+R	paladin/protection	34	7538	0	gear	9.205	armor:263:armor:0.035:9.205
+R	paladin/protection	34	7538	12718	gear	26.755000000000003	int:13:int:0.7:9.1,sta:13:sta:0.65:8.45,armor:263:armor:0.035:9.205
+R	paladin/protection	34	7538	12719	gear	24.025	spi:13:spi:0.49:6.37,sta:13:sta:0.65:8.45,armor:263:armor:0.035:9.205
+R	paladin/protection	34	7538	12720	gear	24.674999999999997	int:13:int:0.7:9.1,spi:13:spi:0.49:6.37,armor:263:armor:0.035:9.205
+R	paladin/protection	34	7538	12721	gear	25.325000000000003	agi:13:agi:0.59:7.67,sta:13:sta:0.65:8.45,armor:263:armor:0.035:9.205
+R	paladin/protection	34	7538	12722	gear	30.655	sta:13:sta:0.65:8.45,str:13:str:1:13,armor:263:armor:0.035:9.205
+R	paladin/protection	34	7538	12723	gear	31.305	int:13:int:0.7:9.1,str:13:str:1:13,armor:263:armor:0.035:9.205
+R	paladin/protection	34	7538	12724	gear	25.975	agi:13:agi:0.59:7.67,int:13:int:0.7:9.1,armor:263:armor:0.035:9.205
+R	paladin/protection	34	7538	12725	gear	28.575000000000003	spi:13:spi:0.49:6.37,str:13:str:1:13,armor:263:armor:0.035:9.205
+R	paladin/protection	34	7538	12726	gear	23.244999999999997	agi:13:agi:0.59:7.67,spi:13:spi:0.49:6.37,armor:263:armor:0.035:9.205
+R	paladin/protection	34	7538	12727	gear	29.875	agi:13:agi:0.59:7.67,str:13:str:1:13,armor:263:armor:0.035:9.205
+R	paladin/protection	34	7538	12728	gear	21.005	agi:20:agi:0.59:11.8,armor:263:armor:0.035:9.205
+R	paladin/protection	34	7538	12729	gear	23.205	int:20:int:0.7:14,armor:263:armor:0.035:9.205
+R	paladin/protection	34	7538	12730	gear	19.005000000000003	spi:20:spi:0.49:9.8,armor:263:armor:0.035:9.205
+R	paladin/protection	34	7538	12731	gear	22.205	sta:20:sta:0.65:13,armor:263:armor:0.035:9.205
+R	paladin/protection	34	7538	12732	gear	29.205	str:20:str:1:20,armor:263:armor:0.035:9.205
+R	paladin/protection	34	7538	12733	gear	28.405	ap:40:ap:0.48:19.2,armor:263:armor:0.035:9.205
+R	paladin/protection	34	7538	12734	gear	50.605	sp:23:sp:1.8:41.4,armor:263:armor:0.035:9.205
+R	paladin/protection	34	7538	12735	gear	36.205	spDmg:15:sp:1.8:27,armor:263:armor:0.035:9.205
+R	paladin/protection	34	7538	12740	gear	17.655	sta:13:sta:0.65:8.45,armor:263:armor:0.035:9.205
+R	paladin/protection	34	7538	12741	gear	17.655	sta:13:sta:0.65:8.45,armor:263:armor:0.035:9.205
+R	paladin/protection	34	7538	12742	gear	17.655	sta:13:sta:0.65:8.45,armor:263:armor:0.035:9.205
+R	paladin/protection	34	7538	12743	gear	17.655	sta:13:sta:0.65:8.45,armor:263:armor:0.035:9.205
+R	paladin/protection	34	7538	12744	gear	17.655	sta:13:sta:0.65:8.45,armor:263:armor:0.035:9.205
+R	paladin/protection	34	7538	12745	gear	37.504999999999995	int:15:int:0.7:10.5,sta:8:sta:0.65:5.2,sp:7:sp:1.8:12.6,armor:263:armor:0.035:9.205
+R	paladin/protection	34	7538	12746	gear	36.225	int:15:int:0.7:10.5,spi:8:spi:0.49:3.92,sp:7:sp:1.8:12.6,armor:263:armor:0.035:9.205
+R	paladin/protection	34	7538	12747	gear	35.475	spi:8:spi:0.49:3.92,sta:15:sta:0.65:9.75,sp:7:sp:1.8:12.6,armor:263:armor:0.035:9.205
+R	paladin/protection	34	7538	12748	gear	33.555	int:8:int:0.7:5.6,sta:15:sta:0.65:9.75,spDmg:5:sp:1.8:9,armor:263:armor:0.035:9.205
+R	paladin/protection	34	7538	12749	gear	32.625	int:15:int:0.7:10.5,spi:8:spi:0.49:3.92,spDmg:5:sp:1.8:9,armor:263:armor:0.035:9.205
+R	paladin/protection	34	7538	12750	gear	31.875	spi:8:spi:0.49:3.92,sta:15:sta:0.65:9.75,spDmg:5:sp:1.8:9,armor:263:armor:0.035:9.205
+R	paladin/protection	34	7538	12751	gear	30.174999999999997	agi:6:agi:0.59:3.54,ap:16:ap:0.48:7.68,sta:15:sta:0.65:9.75,armor:263:armor:0.035:9.205
+R	paladin/protection	34	7538	12752	gear	29.674999999999997	agi:8:agi:0.59:4.72,sta:15:sta:0.65:9.75,str:6:str:1:6,armor:263:armor:0.035:9.205
+R	paladin/protection	34	7538	12755	gear	39.555	sp:7:sp:1.8:12.6,sta:15:sta:0.65:9.75,str:8:str:1:8,armor:263:armor:0.035:9.205
+R	paladin/protection	34	7538	12760	gear	9.205	armor:263:armor:0.035:9.205
+R	paladin/protection	34	7922	0	gear	30.650000000000002	str:12:str:1:12,sta:12:sta:0.65:7.8,armor:310:armor:0.035:10.85
+R	paladin/protection	34	8192	0	gear	12.749999999999998	agi:11:agi:0.59:6.49,sta:5:sta:0.65:3.25,armor:86:armor:0.035:3.01
+R	paladin/protection	34	9458	0	oh	28.630000000000003	spi:3:spi:0.49:1.47,armor:776:armor:0.035:27.16
+R	paladin/protection	34	9834	0	gear	2.555	armor:73:armor:0.035:2.555
+R	paladin/protection	34	9834	12718	gear	10.655	int:6:int:0.7:4.2,sta:6:sta:0.65:3.9,armor:73:armor:0.035:2.555
+R	paladin/protection	34	9834	12719	gear	9.395	spi:6:spi:0.49:2.94,sta:6:sta:0.65:3.9,armor:73:armor:0.035:2.555
+R	paladin/protection	34	9834	12720	gear	9.694999999999999	int:6:int:0.7:4.2,spi:6:spi:0.49:2.94,armor:73:armor:0.035:2.555
+R	paladin/protection	34	9834	12721	gear	9.995000000000001	agi:6:agi:0.59:3.54,sta:6:sta:0.65:3.9,armor:73:armor:0.035:2.555
+R	paladin/protection	34	9834	12722	gear	12.455	sta:6:sta:0.65:3.9,str:6:str:1:6,armor:73:armor:0.035:2.555
+R	paladin/protection	34	9834	12723	gear	12.754999999999999	int:6:int:0.7:4.2,str:6:str:1:6,armor:73:armor:0.035:2.555
+R	paladin/protection	34	9834	12724	gear	10.295	agi:6:agi:0.59:3.54,int:6:int:0.7:4.2,armor:73:armor:0.035:2.555
+R	paladin/protection	34	9834	12725	gear	11.495	spi:6:spi:0.49:2.94,str:6:str:1:6,armor:73:armor:0.035:2.555
+R	paladin/protection	34	9834	12726	gear	9.035	agi:6:agi:0.59:3.54,spi:6:spi:0.49:2.94,armor:73:armor:0.035:2.555
+R	paladin/protection	34	9834	12727	gear	12.094999999999999	agi:6:agi:0.59:3.54,str:6:str:1:6,armor:73:armor:0.035:2.555
+R	paladin/protection	34	9834	12728	gear	7.865	agi:9:agi:0.59:5.31,armor:73:armor:0.035:2.555
+R	paladin/protection	34	9834	12729	gear	8.855	int:9:int:0.7:6.3,armor:73:armor:0.035:2.555
+R	paladin/protection	34	9834	12730	gear	6.965	spi:9:spi:0.49:4.41,armor:73:armor:0.035:2.555
+R	paladin/protection	34	9834	12731	gear	8.405000000000001	sta:9:sta:0.65:5.85,armor:73:armor:0.035:2.555
+R	paladin/protection	34	9834	12732	gear	11.555	str:9:str:1:9,armor:73:armor:0.035:2.555
+R	paladin/protection	34	9834	12733	gear	11.195	ap:18:ap:0.48:8.64,armor:73:armor:0.035:2.555
+R	paladin/protection	34	9834	12734	gear	22.355	sp:11:sp:1.8:19.8,armor:73:armor:0.035:2.555
+R	paladin/protection	34	9834	12735	gear	15.155	spDmg:7:sp:1.8:12.6,armor:73:armor:0.035:2.555
+R	paladin/protection	34	9834	12736	gear	4.295	defense:6:defense:0.29:1.74,armor:73:armor:0.035:2.555
+R	paladin/protection	34	9834	12740	gear	6.455	sta:6:sta:0.65:3.9,armor:73:armor:0.035:2.555
+R	paladin/protection	34	9834	12741	gear	6.455	sta:6:sta:0.65:3.9,armor:73:armor:0.035:2.555
+R	paladin/protection	34	9834	12742	gear	6.455	sta:6:sta:0.65:3.9,armor:73:armor:0.035:2.555
+R	paladin/protection	34	9834	12743	gear	6.455	sta:6:sta:0.65:3.9,armor:73:armor:0.035:2.555
+R	paladin/protection	34	9834	12744	gear	6.455	sta:6:sta:0.65:3.9,armor:73:armor:0.035:2.555
+R	paladin/protection	34	9834	12745	gear	15.455	int:7:int:0.7:4.9,sta:4:sta:0.65:2.6,sp:3:sp:1.8:5.4,armor:73:armor:0.035:2.555
+R	paladin/protection	34	9834	12746	gear	14.815	int:7:int:0.7:4.9,spi:4:spi:0.49:1.96,sp:3:sp:1.8:5.4,armor:73:armor:0.035:2.555
+R	paladin/protection	34	9834	12747	gear	14.465	spi:4:spi:0.49:1.96,sta:7:sta:0.65:4.55,sp:3:sp:1.8:5.4,armor:73:armor:0.035:2.555
+R	paladin/protection	34	9834	12748	gear	13.504999999999999	int:4:int:0.7:2.8,sta:7:sta:0.65:4.55,spDmg:2:sp:1.8:3.6,armor:73:armor:0.035:2.555
+R	paladin/protection	34	9834	12749	gear	13.014999999999999	int:7:int:0.7:4.9,spi:4:spi:0.49:1.96,spDmg:2:sp:1.8:3.6,armor:73:armor:0.035:2.555
+R	paladin/protection	34	9834	12750	gear	12.665	spi:4:spi:0.49:1.96,sta:7:sta:0.65:4.55,spDmg:2:sp:1.8:3.6,armor:73:armor:0.035:2.555
+R	paladin/protection	34	9834	12751	gear	12.235	agi:3:agi:0.59:1.77,ap:7:ap:0.48:3.36,sta:7:sta:0.65:4.55,armor:73:armor:0.035:2.555
+R	paladin/protection	34	9834	12752	gear	12.465	agi:4:agi:0.59:2.36,sta:7:sta:0.65:4.55,str:3:str:1:3,armor:73:armor:0.035:2.555
+R	paladin/protection	34	9834	12753	gear	11.684999999999999	defense:2:defense:0.29:0.58,sta:7:sta:0.65:4.55,str:4:str:1:4,armor:73:armor:0.035:2.555
+R	paladin/protection	34	9834	12755	gear	16.505	sp:3:sp:1.8:5.4,sta:7:sta:0.65:4.55,str:4:str:1:4,armor:73:armor:0.035:2.555
+R	paladin/protection	34	9834	12756	gear	2.555	armor:73:armor:0.035:2.555
+R	paladin/protection	34	9834	12760	gear	2.555	armor:73:armor:0.035:2.555
+R	paladin/protection	34	10087	0	gear	9.73	armor:278:armor:0.035:9.73
+R	paladin/protection	34	10087	12718	gear	21.880000000000003	int:9:int:0.7:6.3,sta:9:sta:0.65:5.85,armor:278:armor:0.035:9.73
+R	paladin/protection	34	10087	12719	gear	19.990000000000002	spi:9:spi:0.49:4.41,sta:9:sta:0.65:5.85,armor:278:armor:0.035:9.73
+R	paladin/protection	34	10087	12720	gear	20.44	int:9:int:0.7:6.3,spi:9:spi:0.49:4.41,armor:278:armor:0.035:9.73
+R	paladin/protection	34	10087	12721	gear	20.89	agi:9:agi:0.59:5.31,sta:9:sta:0.65:5.85,armor:278:armor:0.035:9.73
+R	paladin/protection	34	10087	12722	gear	24.580000000000002	sta:9:sta:0.65:5.85,str:9:str:1:9,armor:278:armor:0.035:9.73
+R	paladin/protection	34	10087	12723	gear	25.03	int:9:int:0.7:6.3,str:9:str:1:9,armor:278:armor:0.035:9.73
+R	paladin/protection	34	10087	12724	gear	21.34	agi:9:agi:0.59:5.31,int:9:int:0.7:6.3,armor:278:armor:0.035:9.73
+R	paladin/protection	34	10087	12725	gear	23.14	spi:9:spi:0.49:4.41,str:9:str:1:9,armor:278:armor:0.035:9.73
+R	paladin/protection	34	10087	12726	gear	19.45	agi:9:agi:0.59:5.31,spi:9:spi:0.49:4.41,armor:278:armor:0.035:9.73
+R	paladin/protection	34	10087	12727	gear	24.04	agi:9:agi:0.59:5.31,str:9:str:1:9,armor:278:armor:0.035:9.73
+R	paladin/protection	34	10087	12728	gear	17.990000000000002	agi:14:agi:0.59:8.26,armor:278:armor:0.035:9.73
+R	paladin/protection	34	10087	12729	gear	19.53	int:14:int:0.7:9.8,armor:278:armor:0.035:9.73
+R	paladin/protection	34	10087	12730	gear	16.59	spi:14:spi:0.49:6.86,armor:278:armor:0.035:9.73
+R	paladin/protection	34	10087	12731	gear	18.83	sta:14:sta:0.65:9.1,armor:278:armor:0.035:9.73
+R	paladin/protection	34	10087	12732	gear	23.73	str:14:str:1:14,armor:278:armor:0.035:9.73
+R	paladin/protection	34	10087	12733	gear	23.17	ap:28:ap:0.48:13.44,armor:278:armor:0.035:9.73
+R	paladin/protection	34	10087	12734	gear	38.53	sp:16:sp:1.8:28.8,armor:278:armor:0.035:9.73
+R	paladin/protection	34	10087	12735	gear	27.73	spDmg:10:sp:1.8:18,armor:278:armor:0.035:9.73
+R	paladin/protection	34	10087	12736	gear	12.34	defense:9:defense:0.29:2.61,armor:278:armor:0.035:9.73
+R	paladin/protection	34	10087	12740	gear	15.580000000000002	sta:9:sta:0.65:5.85,armor:278:armor:0.035:9.73
+R	paladin/protection	34	10087	12741	gear	15.580000000000002	sta:9:sta:0.65:5.85,armor:278:armor:0.035:9.73
+R	paladin/protection	34	10087	12742	gear	15.580000000000002	sta:9:sta:0.65:5.85,armor:278:armor:0.035:9.73
+R	paladin/protection	34	10087	12743	gear	15.580000000000002	sta:9:sta:0.65:5.85,armor:278:armor:0.035:9.73
+R	paladin/protection	34	10087	12744	gear	15.580000000000002	sta:9:sta:0.65:5.85,armor:278:armor:0.035:9.73
+R	paladin/protection	34	10087	12748	gear	25.830000000000002	int:6:int:0.7:4.2,sta:10:sta:0.65:6.5,spDmg:3:sp:1.8:5.4,armor:278:armor:0.035:9.73
+R	paladin/protection	34	10087	12749	gear	25.07	int:10:int:0.7:7,spi:6:spi:0.49:2.94,spDmg:3:sp:1.8:5.4,armor:278:armor:0.035:9.73
+R	paladin/protection	34	10087	12750	gear	24.57	spi:6:spi:0.49:2.94,sta:10:sta:0.65:6.5,spDmg:3:sp:1.8:5.4,armor:278:armor:0.035:9.73
+R	paladin/protection	34	10087	12752	gear	23.77	agi:6:agi:0.59:3.54,sta:10:sta:0.65:6.5,str:4:str:1:4,armor:278:armor:0.035:9.73
+R	paladin/protection	34	10087	12753	gear	23.1	defense:3:defense:0.29:0.87,sta:10:sta:0.65:6.5,str:6:str:1:6,armor:278:armor:0.035:9.73
+R	paladin/protection	34	10087	12754	gear	26.39	defense:4:defense:0.29:1.16,sp:5:sp:1.8:9,sta:10:sta:0.65:6.5,armor:278:armor:0.035:9.73
+R	paladin/protection	34	10087	12755	gear	31.23	sp:5:sp:1.8:9,sta:10:sta:0.65:6.5,str:6:str:1:6,armor:278:armor:0.035:9.73
+R	paladin/protection	34	10087	12759	gear	43.730000000000004	spHoly:20:spHoly:1.7:34,armor:278:armor:0.035:9.73
+R	paladin/protection	34	10368	0	gear	51.540000000000006	str:15:str:1:15,sta:14:sta:0.65:9.1,spi:14:spi:0.49:6.86,armor:588:armor:0.035:20.58
+R	paladin/protection	34	11187	0	gear	0.14	armor:4:armor:0.035:0.14
+R	paladin/protection	34	11994	0	gear	0.0	
+R	paladin/protection	34	11994	12718	gear	4.05	int:3:int:0.7:2.1,sta:3:sta:0.65:1.95
+R	paladin/protection	34	11994	12719	gear	3.42	spi:3:spi:0.49:1.47,sta:3:sta:0.65:1.95
+R	paladin/protection	34	11994	12720	gear	3.5699999999999994	int:3:int:0.7:2.1,spi:3:spi:0.49:1.47
+R	paladin/protection	34	11994	12721	gear	3.72	agi:3:agi:0.59:1.77,sta:3:sta:0.65:1.95
+R	paladin/protection	34	11994	12722	gear	4.95	sta:3:sta:0.65:1.95,str:3:str:1:3
+R	paladin/protection	34	11994	12723	gear	5.1	int:3:int:0.7:2.1,str:3:str:1:3
+R	paladin/protection	34	11994	12724	gear	3.8699999999999997	agi:3:agi:0.59:1.77,int:3:int:0.7:2.1
+R	paladin/protection	34	11994	12725	gear	4.47	spi:3:spi:0.49:1.47,str:3:str:1:3
+R	paladin/protection	34	11994	12726	gear	3.24	agi:3:agi:0.59:1.77,spi:3:spi:0.49:1.47
+R	paladin/protection	34	11994	12727	gear	4.77	agi:3:agi:0.59:1.77,str:3:str:1:3
+R	paladin/protection	34	11994	12728	gear	2.9499999999999997	agi:5:agi:0.59:2.95
+R	paladin/protection	34	11994	12729	gear	3.5	int:5:int:0.7:3.5
+R	paladin/protection	34	11994	12730	gear	2.45	spi:5:spi:0.49:2.45
+R	paladin/protection	34	11994	12731	gear	3.25	sta:5:sta:0.65:3.25
+R	paladin/protection	34	11994	12732	gear	5.0	str:5:str:1:5
+R	paladin/protection	34	11994	12733	gear	4.8	ap:10:ap:0.48:4.8
+R	paladin/protection	34	11994	12737	gear	0.0	
+R	paladin/protection	34	11994	12738	gear	1.0	mp5:2:mp5:0.5:1
+R	paladin/protection	34	11994	12739	gear	1.18	agi:2:agi:0.59:1.18
+R	paladin/protection	34	11994	12740	gear	1.9500000000000002	sta:3:sta:0.65:1.95
+R	paladin/protection	34	11994	12741	gear	1.9500000000000002	sta:3:sta:0.65:1.95
+R	paladin/protection	34	11994	12742	gear	1.9500000000000002	sta:3:sta:0.65:1.95
+R	paladin/protection	34	11994	12743	gear	1.9500000000000002	sta:3:sta:0.65:1.95
+R	paladin/protection	34	11994	12744	gear	1.9500000000000002	sta:3:sta:0.65:1.95
+R	paladin/protection	34	12790	0	mh	329.43	dps:53.82:dps:6.5:349.83,speed:0.6:speed:-34:-20.4
+R	paladin/protection	34	13183	0	mh	263.355	dps:39.47:dps:6.5:256.555,speed:-0.2:speed:-34:6.8
+R	paladin/protection	34	14122	0	gear	0.49000000000000005	armor:14:armor:0.035:0.49
+R	paladin/protection	34	14122	12718	gear	3.1900000000000004	int:2:int:0.7:1.4,sta:2:sta:0.65:1.3,armor:14:armor:0.035:0.49
+R	paladin/protection	34	14122	12719	gear	2.7700000000000005	spi:2:spi:0.49:0.98,sta:2:sta:0.65:1.3,armor:14:armor:0.035:0.49
+R	paladin/protection	34	14122	12720	gear	2.87	int:2:int:0.7:1.4,spi:2:spi:0.49:0.98,armor:14:armor:0.035:0.49
+R	paladin/protection	34	14122	12729	gear	2.59	int:3:int:0.7:2.1,armor:14:armor:0.035:0.49
+R	paladin/protection	34	14122	12730	gear	1.96	spi:3:spi:0.49:1.47,armor:14:armor:0.035:0.49
+R	paladin/protection	34	14122	12731	gear	2.4400000000000004	sta:3:sta:0.65:1.95,armor:14:armor:0.035:0.49
+R	paladin/protection	34	14122	12734	gear	7.69	sp:4:sp:1.8:7.2,armor:14:armor:0.035:0.49
+R	paladin/protection	34	14122	12735	gear	4.09	spDmg:2:sp:1.8:3.6,armor:14:armor:0.035:0.49
+R	paladin/protection	34	14122	12740	gear	1.79	sta:2:sta:0.65:1.3,armor:14:armor:0.035:0.49
+R	paladin/protection	34	14122	12741	gear	1.79	sta:2:sta:0.65:1.3,armor:14:armor:0.035:0.49
+R	paladin/protection	34	14122	12742	gear	1.79	sta:2:sta:0.65:1.3,armor:14:armor:0.035:0.49
+R	paladin/protection	34	14122	12743	gear	1.79	sta:2:sta:0.65:1.3,armor:14:armor:0.035:0.49
+R	paladin/protection	34	14122	12744	gear	1.79	sta:2:sta:0.65:1.3,armor:14:armor:0.035:0.49
+R	paladin/protection	34	14122	12745	gear	4.34	int:2:int:0.7:1.4,sta:1:sta:0.65:0.65,sp:1:sp:1.8:1.8,armor:14:armor:0.035:0.49
+R	paladin/protection	34	14122	12756	gear	0.49000000000000005	armor:14:armor:0.035:0.49
+R	paladin/protection	34	14122	12757	gear	0.49000000000000005	armor:14:armor:0.035:0.49
+R	paladin/protection	34	14122	12758	gear	0.49000000000000005	armor:14:armor:0.035:0.49
+R	paladin/protection	34	14122	12759	gear	7.29	spHoly:4:spHoly:1.7:6.8,armor:14:armor:0.035:0.49
+R	paladin/protection	34	14122	12761	gear	0.49000000000000005	armor:14:armor:0.035:0.49
+R	paladin/protection	34	14340	0	gear	15.43	sta:19:sta:0.65:12.35,armor:88:armor:0.035:3.08
+R	paladin/protection	34	14673	0	gear	12.749999999999998	str:3:str:1:3,agi:9:agi:0.59:5.31,sta:5:sta:0.65:3.25,armor:34:armor:0.035:1.19
+R	paladin/protection	34	14964	0	oh	60.2	armor:1720:armor:0.035:60.2
+R	paladin/protection	34	14964	12718	oh	72.35000000000001	int:9:int:0.7:6.3,sta:9:sta:0.65:5.85,armor:1720:armor:0.035:60.2
+R	paladin/protection	34	14964	12719	oh	70.46000000000001	spi:9:spi:0.49:4.41,sta:9:sta:0.65:5.85,armor:1720:armor:0.035:60.2
+R	paladin/protection	34	14964	12720	oh	70.91	int:9:int:0.7:6.3,spi:9:spi:0.49:4.41,armor:1720:armor:0.035:60.2
+R	paladin/protection	34	14964	12721	oh	71.36	agi:9:agi:0.59:5.31,sta:9:sta:0.65:5.85,armor:1720:armor:0.035:60.2
+R	paladin/protection	34	14964	12722	oh	75.05000000000001	sta:9:sta:0.65:5.85,str:9:str:1:9,armor:1720:armor:0.035:60.2
+R	paladin/protection	34	14964	12723	oh	75.5	int:9:int:0.7:6.3,str:9:str:1:9,armor:1720:armor:0.035:60.2
+R	paladin/protection	34	14964	12724	oh	71.81	agi:9:agi:0.59:5.31,int:9:int:0.7:6.3,armor:1720:armor:0.035:60.2
+R	paladin/protection	34	14964	12725	oh	73.61	spi:9:spi:0.49:4.41,str:9:str:1:9,armor:1720:armor:0.035:60.2
+R	paladin/protection	34	14964	12726	oh	69.92	agi:9:agi:0.59:5.31,spi:9:spi:0.49:4.41,armor:1720:armor:0.035:60.2
+R	paladin/protection	34	14964	12727	oh	74.51	agi:9:agi:0.59:5.31,str:9:str:1:9,armor:1720:armor:0.035:60.2
+R	paladin/protection	34	14964	12728	oh	68.46000000000001	agi:14:agi:0.59:8.26,armor:1720:armor:0.035:60.2
+R	paladin/protection	34	14964	12729	oh	70.0	int:14:int:0.7:9.8,armor:1720:armor:0.035:60.2
+R	paladin/protection	34	14964	12730	oh	67.06	spi:14:spi:0.49:6.86,armor:1720:armor:0.035:60.2
+R	paladin/protection	34	14964	12731	oh	69.3	sta:14:sta:0.65:9.1,armor:1720:armor:0.035:60.2
+R	paladin/protection	34	14964	12732	oh	74.2	str:14:str:1:14,armor:1720:armor:0.035:60.2
+R	paladin/protection	34	14964	12733	oh	73.64	ap:28:ap:0.48:13.44,armor:1720:armor:0.035:60.2
+R	paladin/protection	34	14964	12734	oh	89.0	sp:16:sp:1.8:28.8,armor:1720:armor:0.035:60.2
+R	paladin/protection	34	14964	12735	oh	78.2	spDmg:10:sp:1.8:18,armor:1720:armor:0.035:60.2
+R	paladin/protection	34	14964	12736	oh	62.81	defense:9:defense:0.29:2.61,armor:1720:armor:0.035:60.2
+R	paladin/protection	34	14964	12740	oh	66.05	sta:9:sta:0.65:5.85,armor:1720:armor:0.035:60.2
+R	paladin/protection	34	14964	12741	oh	66.05	sta:9:sta:0.65:5.85,armor:1720:armor:0.035:60.2
+R	paladin/protection	34	14964	12742	oh	66.05	sta:9:sta:0.65:5.85,armor:1720:armor:0.035:60.2
+R	paladin/protection	34	14964	12743	oh	66.05	sta:9:sta:0.65:5.85,armor:1720:armor:0.035:60.2
+R	paladin/protection	34	14964	12744	oh	66.05	sta:9:sta:0.65:5.85,armor:1720:armor:0.035:60.2
+R	paladin/protection	34	14964	12745	oh	80.1	int:10:int:0.7:7,sta:6:sta:0.65:3.9,sp:5:sp:1.8:9,armor:1720:armor:0.035:60.2
+R	paladin/protection	34	14964	12746	oh	79.14	int:10:int:0.7:7,spi:6:spi:0.49:2.94,sp:5:sp:1.8:9,armor:1720:armor:0.035:60.2
+R	paladin/protection	34	14964	12747	oh	78.64	spi:6:spi:0.49:2.94,sta:10:sta:0.65:6.5,sp:5:sp:1.8:9,armor:1720:armor:0.035:60.2
+R	paladin/protection	34	14964	12748	oh	76.30000000000001	int:6:int:0.7:4.2,sta:10:sta:0.65:6.5,spDmg:3:sp:1.8:5.4,armor:1720:armor:0.035:60.2
+R	paladin/protection	34	14964	12749	oh	75.54	int:10:int:0.7:7,spi:6:spi:0.49:2.94,spDmg:3:sp:1.8:5.4,armor:1720:armor:0.035:60.2
+R	paladin/protection	34	14964	12750	oh	75.04	spi:6:spi:0.49:2.94,sta:10:sta:0.65:6.5,spDmg:3:sp:1.8:5.4,armor:1720:armor:0.035:60.2
+R	paladin/protection	34	14964	12753	oh	73.57000000000001	defense:3:defense:0.29:0.87,sta:10:sta:0.65:6.5,str:6:str:1:6,armor:1720:armor:0.035:60.2
+R	paladin/protection	34	14964	12754	oh	76.86	defense:4:defense:0.29:1.16,sp:5:sp:1.8:9,sta:10:sta:0.65:6.5,armor:1720:armor:0.035:60.2
+R	paladin/protection	34	14964	12759	oh	94.2	spHoly:20:spHoly:1.7:34,armor:1720:armor:0.035:60.2
+R	paladin/protection	34	14964	12760	oh	60.2	armor:1720:armor:0.035:60.2
+R	paladin/protection	34	15235	0	mh	185.705	dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15235	12718	mh	192.455	int:5:int:0.7:3.5,sta:5:sta:0.65:3.25,dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15235	12719	mh	191.405	spi:5:spi:0.49:2.45,sta:5:sta:0.65:3.25,dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15235	12720	mh	191.655	int:5:int:0.7:3.5,spi:5:spi:0.49:2.45,dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15235	12721	mh	191.905	agi:5:agi:0.59:2.95,sta:5:sta:0.65:3.25,dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15235	12722	mh	193.955	sta:5:sta:0.65:3.25,str:5:str:1:5,dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15235	12723	mh	194.205	int:5:int:0.7:3.5,str:5:str:1:5,dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15235	12724	mh	192.155	agi:5:agi:0.59:2.95,int:5:int:0.7:3.5,dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15235	12725	mh	193.155	spi:5:spi:0.49:2.45,str:5:str:1:5,dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15235	12726	mh	191.10500000000002	agi:5:agi:0.59:2.95,spi:5:spi:0.49:2.45,dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15235	12727	mh	193.655	agi:5:agi:0.59:2.95,str:5:str:1:5,dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15235	12728	mh	190.425	agi:8:agi:0.59:4.72,dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15235	12729	mh	191.305	int:8:int:0.7:5.6,dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15235	12730	mh	189.625	spi:8:spi:0.49:3.92,dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15235	12731	mh	190.905	sta:8:sta:0.65:5.2,dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15235	12732	mh	193.705	str:8:str:1:8,dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15235	12733	mh	193.38500000000002	ap:16:ap:0.48:7.68,dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15235	12736	mh	187.155	defense:5:defense:0.29:1.45,dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15235	12740	mh	188.955	sta:5:sta:0.65:3.25,dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15235	12741	mh	188.955	sta:5:sta:0.65:3.25,dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15235	12742	mh	188.955	sta:5:sta:0.65:3.25,dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15235	12743	mh	188.955	sta:5:sta:0.65:3.25,dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15235	12744	mh	188.955	sta:5:sta:0.65:3.25,dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15235	12751	mh	194.735	agi:3:agi:0.59:1.77,ap:7:ap:0.48:3.36,sta:6:sta:0.65:3.9,dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15235	12752	mh	194.375	agi:3:agi:0.59:1.77,sta:6:sta:0.65:3.9,str:3:str:1:3,dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15235	12753	mh	193.185	defense:2:defense:0.29:0.58,sta:6:sta:0.65:3.9,str:3:str:1:3,dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15235	12754	mh	195.585	defense:2:defense:0.29:0.58,sp:3:sp:1.8:5.4,sta:6:sta:0.65:3.9,dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15235	12759	mh	204.405	spHoly:11:spHoly:1.7:18.7,dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15235	12906	mh	260.90500000000003	int:6:int:0.7:4.2,sta:4:sta:0.65:2.6,sp:38:sp:1.8:68.4,dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15235	12908	mh	260.265	int:6:int:0.7:4.2,sp:38:sp:1.8:68.4,spi:4:spi:0.49:1.96,dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15235	12910	mh	259.96500000000003	sp:38:sp:1.8:68.4,spi:4:spi:0.49:1.96,sta:6:sta:0.65:3.9,dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15235	12912	mh	235.60500000000002	spDmg:24:sp:1.8:43.2,int:4:int:0.7:2.8,sta:6:sta:0.65:3.9,dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15235	12913	mh	235.06500000000003	int:6:int:0.7:4.2,spDmg:24:sp:1.8:43.2,spi:4:spi:0.49:1.96,dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15235	12916	mh	234.76500000000001	spDmg:24:sp:1.8:43.2,spi:4:spi:0.49:1.96,sta:6:sta:0.65:3.9,dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15235	12917	mh	259.70500000000004	sp:38:sp:1.8:68.4,int:8:int:0.7:5.6,dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15235	12920	mh	234.50500000000002	int:8:int:0.7:5.6,spDmg:24:sp:1.8:43.2,dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15477	0	gear	3.535	armor:101:armor:0.035:3.535
+R	paladin/protection	34	15477	12718	gear	4.885	int:1:int:0.7:0.7,sta:1:sta:0.65:0.65,armor:101:armor:0.035:3.535
+R	paladin/protection	34	15477	12719	gear	4.675000000000001	spi:1:spi:0.49:0.49,sta:1:sta:0.65:0.65,armor:101:armor:0.035:3.535
+R	paladin/protection	34	15477	12720	gear	4.725	int:1:int:0.7:0.7,spi:1:spi:0.49:0.49,armor:101:armor:0.035:3.535
+R	paladin/protection	34	15477	12721	gear	4.775	agi:1:agi:0.59:0.59,sta:1:sta:0.65:0.65,armor:101:armor:0.035:3.535
+R	paladin/protection	34	15477	12722	gear	5.1850000000000005	sta:1:sta:0.65:0.65,str:1:str:1:1,armor:101:armor:0.035:3.535
+R	paladin/protection	34	15477	12723	gear	5.235	int:1:int:0.7:0.7,str:1:str:1:1,armor:101:armor:0.035:3.535
+R	paladin/protection	34	15477	12724	gear	4.825	agi:1:agi:0.59:0.59,int:1:int:0.7:0.7,armor:101:armor:0.035:3.535
+R	paladin/protection	34	15477	12725	gear	5.025	spi:1:spi:0.49:0.49,str:1:str:1:1,armor:101:armor:0.035:3.535
+R	paladin/protection	34	15477	12726	gear	4.615	agi:1:agi:0.59:0.59,spi:1:spi:0.49:0.49,armor:101:armor:0.035:3.535
+R	paladin/protection	34	15477	12727	gear	5.125	agi:1:agi:0.59:0.59,str:1:str:1:1,armor:101:armor:0.035:3.535
+R	paladin/protection	34	15477	12728	gear	4.715	agi:2:agi:0.59:1.18,armor:101:armor:0.035:3.535
+R	paladin/protection	34	15477	12729	gear	4.9350000000000005	int:2:int:0.7:1.4,armor:101:armor:0.035:3.535
+R	paladin/protection	34	15477	12730	gear	4.515000000000001	spi:2:spi:0.49:0.98,armor:101:armor:0.035:3.535
+R	paladin/protection	34	15477	12731	gear	4.835	sta:2:sta:0.65:1.3,armor:101:armor:0.035:3.535
+R	paladin/protection	34	15477	12732	gear	5.535	str:2:str:1:2,armor:101:armor:0.035:3.535
+R	paladin/protection	34	15477	12733	gear	5.455	ap:4:ap:0.48:1.92,armor:101:armor:0.035:3.535
+R	paladin/protection	34	15477	12734	gear	7.135	sp:2:sp:1.8:3.6,armor:101:armor:0.035:3.535
+R	paladin/protection	34	15477	12735	gear	5.335	spDmg:1:sp:1.8:1.8,armor:101:armor:0.035:3.535
+R	paladin/protection	34	15477	12736	gear	3.825	defense:1:defense:0.29:0.29,armor:101:armor:0.035:3.535
+R	paladin/protection	34	15477	12740	gear	4.1850000000000005	sta:1:sta:0.65:0.65,armor:101:armor:0.035:3.535
+R	paladin/protection	34	15477	12741	gear	4.1850000000000005	sta:1:sta:0.65:0.65,armor:101:armor:0.035:3.535
+R	paladin/protection	34	15477	12742	gear	4.1850000000000005	sta:1:sta:0.65:0.65,armor:101:armor:0.035:3.535
+R	paladin/protection	34	15477	12743	gear	4.1850000000000005	sta:1:sta:0.65:0.65,armor:101:armor:0.035:3.535
+R	paladin/protection	34	15477	12744	gear	4.1850000000000005	sta:1:sta:0.65:0.65,armor:101:armor:0.035:3.535
+R	paladin/protection	34	15477	12759	gear	8.635	spHoly:3:spHoly:1.7:5.1,armor:101:armor:0.035:3.535
+R	paladin/protection	34	15945	0	oh	2.2800000000000002	sta:2:sta:0.65:1.3,spi:2:spi:0.49:0.98
+R	paladin/protection	34	16711	0	gear	23.434999999999995	agi:21:agi:0.59:12.39,sta:9:sta:0.65:5.85,hit:0.3:hit:3.9:1.17,armor:115:armor:0.035:4.025
+R	paladin/protection	34	18312	0	gear	82.995	str:13:str:1:13,sta:20:sta:0.65:13,int:12:int:0.7:8.4,sp:15:sp:1.8:27,armor:617:armor:0.035:21.595
+R	paladin/protection	34	18726	0	gear	14.334999999999999	sta:15:sta:0.65:9.75,defense:7:defense:0.29:2.03,armor:73:armor:0.035:2.555
+R	paladin/protection	34	19557	0	mh	127.0	str:7:str:1:7,sta:3:sta:0.65:1.95,dps:21.3:dps:6.5:138.45,speed:0.6:speed:-34:-20.4
+R	paladin/protection	34	20129	0	gear	18.935	agi:6:agi:0.59:3.54,str:6:str:1:6,sta:6:sta:0.65:3.9,armor:157:armor:0.035:5.495
+R	paladin/protection	34	22270	0	gear	51.865	str:11:str:1:11,defense:3:defense:0.29:0.87,int:10:int:0.7:7,sta:10:sta:0.65:6.5,sp:7:sp:1.8:12.6,armor:397:armor:0.035:13.895
+R	paladin/protection	34	22400	0	ranged	0.0	
+R	paladin/protection	34	22967	0	gear	30.005000000000003	sta:25:sta:0.65:16.25,armor:393:armor:0.035:13.755
+R	paladin/protection	34	250491	0	gear	21.54	int:5:int:0.7:3.5,sta:4:sta:0.65:2.6,spDmg:5:sp:1.8:9,armor:184:armor:0.035:6.44
+R	paladin/protection	34	252507	0	gear	19.96	sta:10:sta:0.65:6.5,spDmg:6:sp:1.8:10.8,armor:76:armor:0.035:2.66
+R	paladin/protection	34	254111	0	gear	16.64	int:9:int:0.7:6.3,sta:13:sta:0.65:8.45,armor:54:armor:0.035:1.89
+R	paladin/protection	34	270033	0	gear	6.725	agi:4:agi:0.59:2.36,str:3:str:1:3,armor:39:armor:0.035:1.365
+R	paladin/protection	34	271956	0	gear	40.150000000000006	agi:27:agi:0.59:15.93,sta:12:sta:0.65:7.8,crit:1:crit:4.9:4.9,crit:1:spellCrit:0.6:0.6,armor:312:armor:0.035:10.92
+R	paladin/protection	34	272958	0	gear	66.42	int:27:int:0.7:18.9,sta:12:sta:0.65:7.8,sp:16:sp:1.8:28.8,armor:312:armor:0.035:10.92
+R	paladin/protection	34	276399	0	gear	58.745000000000005	sta:18:sta:0.65:11.7,mp5:7:mp5:0.5:3.5,spDmg:12:sp:1.8:21.6,armor:627:armor:0.035:21.945
+R	paladin/protection	34	277235	0	gear	32.925	str:14:str:1:14,sta:10:sta:0.65:6.5,armor:355:armor:0.035:12.425
+R	paladin/protection	34	282560	0	gear	37.305	int:10:int:0.7:7,sta:13:sta:0.65:8.45,sp:8:sp:1.8:14.4,armor:213:armor:0.035:7.455
+R	paladin/protection	34	286609	0	oh	67.13000000000001	spi:6:spi:0.49:2.94,defense:7:defense:0.29:2.03,armor:1776:armor:0.035:62.16
+R	paladin/protection	45	25	0	mh	14.035	dps:1.05:dps:6.7:7.035,speed:-0.5:speed:-14:7
+R	paladin/protection	45	1315	0	gear	19.15	sta:10:sta:0.55:5.5,spi:15:spi:0.91:13.65
+R	paladin/protection	45	1808	0	gear	1.554	armor:74:armor:0.021:1.554
+R	paladin/protection	45	2614	0	gear	0.609	armor:29:armor:0.021:0.609
+R	paladin/protection	45	3158	0	gear	0.546	armor:26:armor:0.021:0.546
+R	paladin/protection	45	3570	0	mh	56.403999999999996	str:2:str:1:2,dps:8.12:dps:6.7:54.404
+R	paladin/protection	45	4068	0	oh	25.173000000000002	sta:9:sta:0.55:4.95,armor:963:armor:0.021:20.223
+R	paladin/protection	45	4570	0	mh	58.6	dps:10:dps:6.7:67,speed:0.6:speed:-14:-8.4
+R	paladin/protection	45	4570	12718	mh	63.25000000000001	int:3:int:1:3,sta:3:sta:0.55:1.65,dps:10:dps:6.7:67,speed:0.6:speed:-14:-8.4
+R	paladin/protection	45	4570	12719	mh	62.98	spi:3:spi:0.91:2.73,sta:3:sta:0.55:1.65,dps:10:dps:6.7:67,speed:0.6:speed:-14:-8.4
+R	paladin/protection	45	4570	12720	mh	64.33	int:3:int:1:3,spi:3:spi:0.91:2.73,dps:10:dps:6.7:67,speed:0.6:speed:-14:-8.4
+R	paladin/protection	45	4570	12721	mh	62.14000000000001	agi:3:agi:0.63:1.89,sta:3:sta:0.55:1.65,dps:10:dps:6.7:67,speed:0.6:speed:-14:-8.4
+R	paladin/protection	45	4570	12722	mh	63.25000000000001	sta:3:sta:0.55:1.65,str:3:str:1:3,dps:10:dps:6.7:67,speed:0.6:speed:-14:-8.4
+R	paladin/protection	45	4570	12723	mh	64.6	int:3:int:1:3,str:3:str:1:3,dps:10:dps:6.7:67,speed:0.6:speed:-14:-8.4
+R	paladin/protection	45	4570	12724	mh	63.49	agi:3:agi:0.63:1.89,int:3:int:1:3,dps:10:dps:6.7:67,speed:0.6:speed:-14:-8.4
+R	paladin/protection	45	4570	12725	mh	64.33	spi:3:spi:0.91:2.73,str:3:str:1:3,dps:10:dps:6.7:67,speed:0.6:speed:-14:-8.4
+R	paladin/protection	45	4570	12726	mh	63.220000000000006	agi:3:agi:0.63:1.89,spi:3:spi:0.91:2.73,dps:10:dps:6.7:67,speed:0.6:speed:-14:-8.4
+R	paladin/protection	45	4570	12727	mh	63.49	agi:3:agi:0.63:1.89,str:3:str:1:3,dps:10:dps:6.7:67,speed:0.6:speed:-14:-8.4
+R	paladin/protection	45	4570	12728	mh	61.12	agi:4:agi:0.63:2.52,dps:10:dps:6.7:67,speed:0.6:speed:-14:-8.4
+R	paladin/protection	45	4570	12729	mh	62.6	int:4:int:1:4,dps:10:dps:6.7:67,speed:0.6:speed:-14:-8.4
+R	paladin/protection	45	4570	12730	mh	62.24	spi:4:spi:0.91:3.64,dps:10:dps:6.7:67,speed:0.6:speed:-14:-8.4
+R	paladin/protection	45	4570	12731	mh	60.800000000000004	sta:4:sta:0.55:2.2,dps:10:dps:6.7:67,speed:0.6:speed:-14:-8.4
+R	paladin/protection	45	4570	12732	mh	62.6	str:4:str:1:4,dps:10:dps:6.7:67,speed:0.6:speed:-14:-8.4
+R	paladin/protection	45	4570	12733	mh	62.36000000000001	ap:8:ap:0.47:3.76,dps:10:dps:6.7:67,speed:0.6:speed:-14:-8.4
+R	paladin/protection	45	4570	12736	mh	60.13	defense:3:defense:0.51:1.53,dps:10:dps:6.7:67,speed:0.6:speed:-14:-8.4
+R	paladin/protection	45	4570	12740	mh	60.25000000000001	sta:3:sta:0.55:1.65,dps:10:dps:6.7:67,speed:0.6:speed:-14:-8.4
+R	paladin/protection	45	4570	12741	mh	60.25000000000001	sta:3:sta:0.55:1.65,dps:10:dps:6.7:67,speed:0.6:speed:-14:-8.4
+R	paladin/protection	45	4570	12742	mh	60.25000000000001	sta:3:sta:0.55:1.65,dps:10:dps:6.7:67,speed:0.6:speed:-14:-8.4
+R	paladin/protection	45	4570	12743	mh	60.25000000000001	sta:3:sta:0.55:1.65,dps:10:dps:6.7:67,speed:0.6:speed:-14:-8.4
+R	paladin/protection	45	4570	12744	mh	60.25000000000001	sta:3:sta:0.55:1.65,dps:10:dps:6.7:67,speed:0.6:speed:-14:-8.4
+R	paladin/protection	45	4570	12759	mh	70.0	spHoly:6:spHoly:1.9:11.4,dps:10:dps:6.7:67,speed:0.6:speed:-14:-8.4
+R	paladin/protection	45	4570	12918	mh	77.8	sp:8:sp:1.9:15.2,int:4:int:1:4,dps:10:dps:6.7:67,speed:0.6:speed:-14:-8.4
+R	paladin/protection	45	4570	12919	mh	72.1	spDmg:5:sp:1.9:9.5,int:4:int:1:4,dps:10:dps:6.7:67,speed:0.6:speed:-14:-8.4
+R	paladin/protection	45	5079	0	gear	0.0	
+R	paladin/protection	45	6063	0	gear	1.155	armor:55:armor:0.021:1.155
+R	paladin/protection	45	6540	0	gear	0.5880000000000001	armor:28:armor:0.021:0.588
+R	paladin/protection	45	6540	12718	gear	5.238	int:3:int:1:3,sta:3:sta:0.55:1.65,armor:28:armor:0.021:0.588
+R	paladin/protection	45	6540	12719	gear	4.968	spi:3:spi:0.91:2.73,sta:3:sta:0.55:1.65,armor:28:armor:0.021:0.588
+R	paladin/protection	45	6540	12720	gear	6.3180000000000005	int:3:int:1:3,spi:3:spi:0.91:2.73,armor:28:armor:0.021:0.588
+R	paladin/protection	45	6540	12729	gear	5.588	int:5:int:1:5,armor:28:armor:0.021:0.588
+R	paladin/protection	45	6540	12730	gear	5.138	spi:5:spi:0.91:4.55,armor:28:armor:0.021:0.588
+R	paladin/protection	45	6540	12731	gear	3.338	sta:5:sta:0.55:2.75,armor:28:armor:0.021:0.588
+R	paladin/protection	45	6540	12734	gear	11.988	sp:6:sp:1.9:11.4,armor:28:armor:0.021:0.588
+R	paladin/protection	45	6540	12735	gear	8.187999999999999	spDmg:4:sp:1.9:7.6,armor:28:armor:0.021:0.588
+R	paladin/protection	45	6540	12740	gear	2.2380000000000004	sta:3:sta:0.55:1.65,armor:28:armor:0.021:0.588
+R	paladin/protection	45	6540	12741	gear	2.2380000000000004	sta:3:sta:0.55:1.65,armor:28:armor:0.021:0.588
+R	paladin/protection	45	6540	12742	gear	2.2380000000000004	sta:3:sta:0.55:1.65,armor:28:armor:0.021:0.588
+R	paladin/protection	45	6540	12743	gear	2.2380000000000004	sta:3:sta:0.55:1.65,armor:28:armor:0.021:0.588
+R	paladin/protection	45	6540	12744	gear	2.2380000000000004	sta:3:sta:0.55:1.65,armor:28:armor:0.021:0.588
+R	paladin/protection	45	6540	12745	gear	9.488	int:4:int:1:4,sta:2:sta:0.55:1.1,sp:2:sp:1.9:3.8,armor:28:armor:0.021:0.588
+R	paladin/protection	45	6540	12756	gear	0.5880000000000001	armor:28:armor:0.021:0.588
+R	paladin/protection	45	6540	12757	gear	0.5880000000000001	armor:28:armor:0.021:0.588
+R	paladin/protection	45	6540	12758	gear	0.5880000000000001	armor:28:armor:0.021:0.588
+R	paladin/protection	45	6540	12759	gear	13.887999999999998	spHoly:7:spHoly:1.9:13.3,armor:28:armor:0.021:0.588
+R	paladin/protection	45	6540	12761	gear	0.5880000000000001	armor:28:armor:0.021:0.588
+R	paladin/protection	45	6557	0	gear	1.0290000000000001	armor:49:armor:0.021:1.029
+R	paladin/protection	45	6557	12718	gear	4.1290000000000004	int:2:int:1:2,sta:2:sta:0.55:1.1,armor:49:armor:0.021:1.029
+R	paladin/protection	45	6557	12719	gear	3.949	spi:2:spi:0.91:1.82,sta:2:sta:0.55:1.1,armor:49:armor:0.021:1.029
+R	paladin/protection	45	6557	12720	gear	4.849	int:2:int:1:2,spi:2:spi:0.91:1.82,armor:49:armor:0.021:1.029
+R	paladin/protection	45	6557	12721	gear	3.3890000000000002	agi:2:agi:0.63:1.26,sta:2:sta:0.55:1.1,armor:49:armor:0.021:1.029
+R	paladin/protection	45	6557	12722	gear	4.1290000000000004	sta:2:sta:0.55:1.1,str:2:str:1:2,armor:49:armor:0.021:1.029
+R	paladin/protection	45	6557	12723	gear	5.029	int:2:int:1:2,str:2:str:1:2,armor:49:armor:0.021:1.029
+R	paladin/protection	45	6557	12724	gear	4.289	agi:2:agi:0.63:1.26,int:2:int:1:2,armor:49:armor:0.021:1.029
+R	paladin/protection	45	6557	12725	gear	4.849	spi:2:spi:0.91:1.82,str:2:str:1:2,armor:49:armor:0.021:1.029
+R	paladin/protection	45	6557	12726	gear	4.109	agi:2:agi:0.63:1.26,spi:2:spi:0.91:1.82,armor:49:armor:0.021:1.029
+R	paladin/protection	45	6557	12727	gear	4.289	agi:2:agi:0.63:1.26,str:2:str:1:2,armor:49:armor:0.021:1.029
+R	paladin/protection	45	6557	12728	gear	2.9190000000000005	agi:3:agi:0.63:1.89,armor:49:armor:0.021:1.029
+R	paladin/protection	45	6557	12729	gear	4.029	int:3:int:1:3,armor:49:armor:0.021:1.029
+R	paladin/protection	45	6557	12730	gear	3.7590000000000003	spi:3:spi:0.91:2.73,armor:49:armor:0.021:1.029
+R	paladin/protection	45	6557	12731	gear	2.6790000000000003	sta:3:sta:0.55:1.65,armor:49:armor:0.021:1.029
+R	paladin/protection	45	6557	12732	gear	4.029	str:3:str:1:3,armor:49:armor:0.021:1.029
+R	paladin/protection	45	6557	12733	gear	3.849	ap:6:ap:0.47:2.82,armor:49:armor:0.021:1.029
+R	paladin/protection	45	6557	12734	gear	8.629	sp:4:sp:1.9:7.6,armor:49:armor:0.021:1.029
+R	paladin/protection	45	6557	12735	gear	4.829	spDmg:2:sp:1.9:3.8,armor:49:armor:0.021:1.029
+R	paladin/protection	45	6557	12736	gear	2.0490000000000004	defense:2:defense:0.51:1.02,armor:49:armor:0.021:1.029
+R	paladin/protection	45	6557	12740	gear	2.1290000000000004	sta:2:sta:0.55:1.1,armor:49:armor:0.021:1.029
+R	paladin/protection	45	6557	12741	gear	2.1290000000000004	sta:2:sta:0.55:1.1,armor:49:armor:0.021:1.029
+R	paladin/protection	45	6557	12742	gear	2.1290000000000004	sta:2:sta:0.55:1.1,armor:49:armor:0.021:1.029
+R	paladin/protection	45	6557	12743	gear	2.1290000000000004	sta:2:sta:0.55:1.1,armor:49:armor:0.021:1.029
+R	paladin/protection	45	6557	12744	gear	2.1290000000000004	sta:2:sta:0.55:1.1,armor:49:armor:0.021:1.029
+R	paladin/protection	45	6557	12756	gear	1.0290000000000001	armor:49:armor:0.021:1.029
+R	paladin/protection	45	6557	12760	gear	1.0290000000000001	armor:49:armor:0.021:1.029
+R	paladin/protection	45	7047	0	gear	5.096	spi:5:spi:0.91:4.55,armor:26:armor:0.021:0.546
+R	paladin/protection	45	7538	0	gear	5.523000000000001	armor:263:armor:0.021:5.523
+R	paladin/protection	45	7538	12718	gear	25.673	int:13:int:1:13,sta:13:sta:0.55:7.15,armor:263:armor:0.021:5.523
+R	paladin/protection	45	7538	12719	gear	24.503	spi:13:spi:0.91:11.83,sta:13:sta:0.55:7.15,armor:263:armor:0.021:5.523
+R	paladin/protection	45	7538	12720	gear	30.352999999999998	int:13:int:1:13,spi:13:spi:0.91:11.83,armor:263:armor:0.021:5.523
+R	paladin/protection	45	7538	12721	gear	20.863	agi:13:agi:0.63:8.19,sta:13:sta:0.55:7.15,armor:263:armor:0.021:5.523
+R	paladin/protection	45	7538	12722	gear	25.673	sta:13:sta:0.55:7.15,str:13:str:1:13,armor:263:armor:0.021:5.523
+R	paladin/protection	45	7538	12723	gear	31.523	int:13:int:1:13,str:13:str:1:13,armor:263:armor:0.021:5.523
+R	paladin/protection	45	7538	12724	gear	26.712999999999997	agi:13:agi:0.63:8.19,int:13:int:1:13,armor:263:armor:0.021:5.523
+R	paladin/protection	45	7538	12725	gear	30.352999999999998	spi:13:spi:0.91:11.83,str:13:str:1:13,armor:263:armor:0.021:5.523
+R	paladin/protection	45	7538	12726	gear	25.543	agi:13:agi:0.63:8.19,spi:13:spi:0.91:11.83,armor:263:armor:0.021:5.523
+R	paladin/protection	45	7538	12727	gear	26.712999999999997	agi:13:agi:0.63:8.19,str:13:str:1:13,armor:263:armor:0.021:5.523
+R	paladin/protection	45	7538	12728	gear	18.123	agi:20:agi:0.63:12.6,armor:263:armor:0.021:5.523
+R	paladin/protection	45	7538	12729	gear	25.523	int:20:int:1:20,armor:263:armor:0.021:5.523
+R	paladin/protection	45	7538	12730	gear	23.723	spi:20:spi:0.91:18.2,armor:263:armor:0.021:5.523
+R	paladin/protection	45	7538	12731	gear	16.523	sta:20:sta:0.55:11,armor:263:armor:0.021:5.523
+R	paladin/protection	45	7538	12732	gear	25.523	str:20:str:1:20,armor:263:armor:0.021:5.523
+R	paladin/protection	45	7538	12733	gear	24.322999999999997	ap:40:ap:0.47:18.8,armor:263:armor:0.021:5.523
+R	paladin/protection	45	7538	12734	gear	49.223	sp:23:sp:1.9:43.7,armor:263:armor:0.021:5.523
+R	paladin/protection	45	7538	12735	gear	34.023	spDmg:15:sp:1.9:28.5,armor:263:armor:0.021:5.523
+R	paladin/protection	45	7538	12740	gear	12.673000000000002	sta:13:sta:0.55:7.15,armor:263:armor:0.021:5.523
+R	paladin/protection	45	7538	12741	gear	12.673000000000002	sta:13:sta:0.55:7.15,armor:263:armor:0.021:5.523
+R	paladin/protection	45	7538	12742	gear	12.673000000000002	sta:13:sta:0.55:7.15,armor:263:armor:0.021:5.523
+R	paladin/protection	45	7538	12743	gear	12.673000000000002	sta:13:sta:0.55:7.15,armor:263:armor:0.021:5.523
+R	paladin/protection	45	7538	12744	gear	12.673000000000002	sta:13:sta:0.55:7.15,armor:263:armor:0.021:5.523
+R	paladin/protection	45	7538	12745	gear	38.223	int:15:int:1:15,sta:8:sta:0.55:4.4,sp:7:sp:1.9:13.3,armor:263:armor:0.021:5.523
+R	paladin/protection	45	7538	12746	gear	41.103	int:15:int:1:15,spi:8:spi:0.91:7.28,sp:7:sp:1.9:13.3,armor:263:armor:0.021:5.523
+R	paladin/protection	45	7538	12747	gear	34.353	spi:8:spi:0.91:7.28,sta:15:sta:0.55:8.25,sp:7:sp:1.9:13.3,armor:263:armor:0.021:5.523
+R	paladin/protection	45	7538	12748	gear	31.273	int:8:int:1:8,sta:15:sta:0.55:8.25,spDmg:5:sp:1.9:9.5,armor:263:armor:0.021:5.523
+R	paladin/protection	45	7538	12749	gear	37.303000000000004	int:15:int:1:15,spi:8:spi:0.91:7.28,spDmg:5:sp:1.9:9.5,armor:263:armor:0.021:5.523
+R	paladin/protection	45	7538	12750	gear	30.553	spi:8:spi:0.91:7.28,sta:15:sta:0.55:8.25,spDmg:5:sp:1.9:9.5,armor:263:armor:0.021:5.523
+R	paladin/protection	45	7538	12751	gear	25.073	agi:6:agi:0.63:3.78,ap:16:ap:0.47:7.52,sta:15:sta:0.55:8.25,armor:263:armor:0.021:5.523
+R	paladin/protection	45	7538	12752	gear	24.813	agi:8:agi:0.63:5.04,sta:15:sta:0.55:8.25,str:6:str:1:6,armor:263:armor:0.021:5.523
+R	paladin/protection	45	7538	12755	gear	35.073	sp:7:sp:1.9:13.3,sta:15:sta:0.55:8.25,str:8:str:1:8,armor:263:armor:0.021:5.523
+R	paladin/protection	45	7538	12760	gear	5.523000000000001	armor:263:armor:0.021:5.523
+R	paladin/protection	45	7922	0	gear	25.110000000000003	str:12:str:1:12,sta:12:sta:0.55:6.6,armor:310:armor:0.021:6.51
+R	paladin/protection	45	8192	0	gear	11.486	agi:11:agi:0.63:6.93,sta:5:sta:0.55:2.75,armor:86:armor:0.021:1.806
+R	paladin/protection	45	9458	0	oh	19.026	spi:3:spi:0.91:2.73,armor:776:armor:0.021:16.296
+R	paladin/protection	45	9834	0	gear	1.5330000000000001	armor:73:armor:0.021:1.533
+R	paladin/protection	45	9834	12718	gear	10.833	int:6:int:1:6,sta:6:sta:0.55:3.3,armor:73:armor:0.021:1.533
+R	paladin/protection	45	9834	12719	gear	10.293	spi:6:spi:0.91:5.46,sta:6:sta:0.55:3.3,armor:73:armor:0.021:1.533
+R	paladin/protection	45	9834	12720	gear	12.993	int:6:int:1:6,spi:6:spi:0.91:5.46,armor:73:armor:0.021:1.533
+R	paladin/protection	45	9834	12721	gear	8.613	agi:6:agi:0.63:3.78,sta:6:sta:0.55:3.3,armor:73:armor:0.021:1.533
+R	paladin/protection	45	9834	12722	gear	10.833	sta:6:sta:0.55:3.3,str:6:str:1:6,armor:73:armor:0.021:1.533
+R	paladin/protection	45	9834	12723	gear	13.533	int:6:int:1:6,str:6:str:1:6,armor:73:armor:0.021:1.533
+R	paladin/protection	45	9834	12724	gear	11.313	agi:6:agi:0.63:3.78,int:6:int:1:6,armor:73:armor:0.021:1.533
+R	paladin/protection	45	9834	12725	gear	12.993	spi:6:spi:0.91:5.46,str:6:str:1:6,armor:73:armor:0.021:1.533
+R	paladin/protection	45	9834	12726	gear	10.773	agi:6:agi:0.63:3.78,spi:6:spi:0.91:5.46,armor:73:armor:0.021:1.533
+R	paladin/protection	45	9834	12727	gear	11.313	agi:6:agi:0.63:3.78,str:6:str:1:6,armor:73:armor:0.021:1.533
+R	paladin/protection	45	9834	12728	gear	7.203	agi:9:agi:0.63:5.67,armor:73:armor:0.021:1.533
+R	paladin/protection	45	9834	12729	gear	10.533	int:9:int:1:9,armor:73:armor:0.021:1.533
+R	paladin/protection	45	9834	12730	gear	9.722999999999999	spi:9:spi:0.91:8.19,armor:73:armor:0.021:1.533
+R	paladin/protection	45	9834	12731	gear	6.4830000000000005	sta:9:sta:0.55:4.95,armor:73:armor:0.021:1.533
+R	paladin/protection	45	9834	12732	gear	10.533	str:9:str:1:9,armor:73:armor:0.021:1.533
+R	paladin/protection	45	9834	12733	gear	9.992999999999999	ap:18:ap:0.47:8.46,armor:73:armor:0.021:1.533
+R	paladin/protection	45	9834	12734	gear	22.433	sp:11:sp:1.9:20.9,armor:73:armor:0.021:1.533
+R	paladin/protection	45	9834	12735	gear	14.832999999999998	spDmg:7:sp:1.9:13.3,armor:73:armor:0.021:1.533
+R	paladin/protection	45	9834	12736	gear	4.593	defense:6:defense:0.51:3.06,armor:73:armor:0.021:1.533
+R	paladin/protection	45	9834	12740	gear	4.833	sta:6:sta:0.55:3.3,armor:73:armor:0.021:1.533
+R	paladin/protection	45	9834	12741	gear	4.833	sta:6:sta:0.55:3.3,armor:73:armor:0.021:1.533
+R	paladin/protection	45	9834	12742	gear	4.833	sta:6:sta:0.55:3.3,armor:73:armor:0.021:1.533
+R	paladin/protection	45	9834	12743	gear	4.833	sta:6:sta:0.55:3.3,armor:73:armor:0.021:1.533
+R	paladin/protection	45	9834	12744	gear	4.833	sta:6:sta:0.55:3.3,armor:73:armor:0.021:1.533
+R	paladin/protection	45	9834	12745	gear	16.433	int:7:int:1:7,sta:4:sta:0.55:2.2,sp:3:sp:1.9:5.7,armor:73:armor:0.021:1.533
+R	paladin/protection	45	9834	12746	gear	17.873	int:7:int:1:7,spi:4:spi:0.91:3.64,sp:3:sp:1.9:5.7,armor:73:armor:0.021:1.533
+R	paladin/protection	45	9834	12747	gear	14.722999999999999	spi:4:spi:0.91:3.64,sta:7:sta:0.55:3.85,sp:3:sp:1.9:5.7,armor:73:armor:0.021:1.533
+R	paladin/protection	45	9834	12748	gear	13.183	int:4:int:1:4,sta:7:sta:0.55:3.85,spDmg:2:sp:1.9:3.8,armor:73:armor:0.021:1.533
+R	paladin/protection	45	9834	12749	gear	15.973	int:7:int:1:7,spi:4:spi:0.91:3.64,spDmg:2:sp:1.9:3.8,armor:73:armor:0.021:1.533
+R	paladin/protection	45	9834	12750	gear	12.822999999999999	spi:4:spi:0.91:3.64,sta:7:sta:0.55:3.85,spDmg:2:sp:1.9:3.8,armor:73:armor:0.021:1.533
+R	paladin/protection	45	9834	12751	gear	10.563	agi:3:agi:0.63:1.89,ap:7:ap:0.47:3.29,sta:7:sta:0.55:3.85,armor:73:armor:0.021:1.533
+R	paladin/protection	45	9834	12752	gear	10.903	agi:4:agi:0.63:2.52,sta:7:sta:0.55:3.85,str:3:str:1:3,armor:73:armor:0.021:1.533
+R	paladin/protection	45	9834	12753	gear	10.403	defense:2:defense:0.51:1.02,sta:7:sta:0.55:3.85,str:4:str:1:4,armor:73:armor:0.021:1.533
+R	paladin/protection	45	9834	12755	gear	15.083	sp:3:sp:1.9:5.7,sta:7:sta:0.55:3.85,str:4:str:1:4,armor:73:armor:0.021:1.533
+R	paladin/protection	45	9834	12756	gear	1.5330000000000001	armor:73:armor:0.021:1.533
+R	paladin/protection	45	9834	12760	gear	1.5330000000000001	armor:73:armor:0.021:1.533
+R	paladin/protection	45	10087	0	gear	5.838	armor:278:armor:0.021:5.838
+R	paladin/protection	45	10087	12718	gear	19.788	int:9:int:1:9,sta:9:sta:0.55:4.95,armor:278:armor:0.021:5.838
+R	paladin/protection	45	10087	12719	gear	18.978	spi:9:spi:0.91:8.19,sta:9:sta:0.55:4.95,armor:278:armor:0.021:5.838
+R	paladin/protection	45	10087	12720	gear	23.028	int:9:int:1:9,spi:9:spi:0.91:8.19,armor:278:armor:0.021:5.838
+R	paladin/protection	45	10087	12721	gear	16.458000000000002	agi:9:agi:0.63:5.67,sta:9:sta:0.55:4.95,armor:278:armor:0.021:5.838
+R	paladin/protection	45	10087	12722	gear	19.788	sta:9:sta:0.55:4.95,str:9:str:1:9,armor:278:armor:0.021:5.838
+R	paladin/protection	45	10087	12723	gear	23.838	int:9:int:1:9,str:9:str:1:9,armor:278:armor:0.021:5.838
+R	paladin/protection	45	10087	12724	gear	20.508	agi:9:agi:0.63:5.67,int:9:int:1:9,armor:278:armor:0.021:5.838
+R	paladin/protection	45	10087	12725	gear	23.028	spi:9:spi:0.91:8.19,str:9:str:1:9,armor:278:armor:0.021:5.838
+R	paladin/protection	45	10087	12726	gear	19.698	agi:9:agi:0.63:5.67,spi:9:spi:0.91:8.19,armor:278:armor:0.021:5.838
+R	paladin/protection	45	10087	12727	gear	20.508	agi:9:agi:0.63:5.67,str:9:str:1:9,armor:278:armor:0.021:5.838
+R	paladin/protection	45	10087	12728	gear	14.658000000000001	agi:14:agi:0.63:8.82,armor:278:armor:0.021:5.838
+R	paladin/protection	45	10087	12729	gear	19.838	int:14:int:1:14,armor:278:armor:0.021:5.838
+R	paladin/protection	45	10087	12730	gear	18.578	spi:14:spi:0.91:12.74,armor:278:armor:0.021:5.838
+R	paladin/protection	45	10087	12731	gear	13.538	sta:14:sta:0.55:7.7,armor:278:armor:0.021:5.838
+R	paladin/protection	45	10087	12732	gear	19.838	str:14:str:1:14,armor:278:armor:0.021:5.838
+R	paladin/protection	45	10087	12733	gear	18.998	ap:28:ap:0.47:13.16,armor:278:armor:0.021:5.838
+R	paladin/protection	45	10087	12734	gear	36.238	sp:16:sp:1.9:30.4,armor:278:armor:0.021:5.838
+R	paladin/protection	45	10087	12735	gear	24.838	spDmg:10:sp:1.9:19,armor:278:armor:0.021:5.838
+R	paladin/protection	45	10087	12736	gear	10.428	defense:9:defense:0.51:4.59,armor:278:armor:0.021:5.838
+R	paladin/protection	45	10087	12740	gear	10.788	sta:9:sta:0.55:4.95,armor:278:armor:0.021:5.838
+R	paladin/protection	45	10087	12741	gear	10.788	sta:9:sta:0.55:4.95,armor:278:armor:0.021:5.838
+R	paladin/protection	45	10087	12742	gear	10.788	sta:9:sta:0.55:4.95,armor:278:armor:0.021:5.838
+R	paladin/protection	45	10087	12743	gear	10.788	sta:9:sta:0.55:4.95,armor:278:armor:0.021:5.838
+R	paladin/protection	45	10087	12744	gear	10.788	sta:9:sta:0.55:4.95,armor:278:armor:0.021:5.838
+R	paladin/protection	45	10087	12748	gear	23.038	int:6:int:1:6,sta:10:sta:0.55:5.5,spDmg:3:sp:1.9:5.7,armor:278:armor:0.021:5.838
+R	paladin/protection	45	10087	12749	gear	26.998	int:10:int:1:10,spi:6:spi:0.91:5.46,spDmg:3:sp:1.9:5.7,armor:278:armor:0.021:5.838
+R	paladin/protection	45	10087	12750	gear	22.498	spi:6:spi:0.91:5.46,sta:10:sta:0.55:5.5,spDmg:3:sp:1.9:5.7,armor:278:armor:0.021:5.838
+R	paladin/protection	45	10087	12752	gear	19.118000000000002	agi:6:agi:0.63:3.78,sta:10:sta:0.55:5.5,str:4:str:1:4,armor:278:armor:0.021:5.838
+R	paladin/protection	45	10087	12753	gear	18.868000000000002	defense:3:defense:0.51:1.53,sta:10:sta:0.55:5.5,str:6:str:1:6,armor:278:armor:0.021:5.838
+R	paladin/protection	45	10087	12754	gear	22.878	defense:4:defense:0.51:2.04,sp:5:sp:1.9:9.5,sta:10:sta:0.55:5.5,armor:278:armor:0.021:5.838
+R	paladin/protection	45	10087	12755	gear	26.838	sp:5:sp:1.9:9.5,sta:10:sta:0.55:5.5,str:6:str:1:6,armor:278:armor:0.021:5.838
+R	paladin/protection	45	10087	12759	gear	43.838	spHoly:20:spHoly:1.9:38,armor:278:armor:0.021:5.838
+R	paladin/protection	45	10368	0	gear	47.788000000000004	str:15:str:1:15,sta:14:sta:0.55:7.7,spi:14:spi:0.91:12.74,armor:588:armor:0.021:12.348
+R	paladin/protection	45	11187	0	gear	0.084	armor:4:armor:0.021:0.084
+R	paladin/protection	45	11994	0	gear	0.0	
+R	paladin/protection	45	11994	12718	gear	4.65	int:3:int:1:3,sta:3:sta:0.55:1.65
+R	paladin/protection	45	11994	12719	gear	4.38	spi:3:spi:0.91:2.73,sta:3:sta:0.55:1.65
+R	paladin/protection	45	11994	12720	gear	5.73	int:3:int:1:3,spi:3:spi:0.91:2.73
+R	paladin/protection	45	11994	12721	gear	3.54	agi:3:agi:0.63:1.89,sta:3:sta:0.55:1.65
+R	paladin/protection	45	11994	12722	gear	4.65	sta:3:sta:0.55:1.65,str:3:str:1:3
+R	paladin/protection	45	11994	12723	gear	6.0	int:3:int:1:3,str:3:str:1:3
+R	paladin/protection	45	11994	12724	gear	4.890000000000001	agi:3:agi:0.63:1.89,int:3:int:1:3
+R	paladin/protection	45	11994	12725	gear	5.73	spi:3:spi:0.91:2.73,str:3:str:1:3
+R	paladin/protection	45	11994	12726	gear	4.62	agi:3:agi:0.63:1.89,spi:3:spi:0.91:2.73
+R	paladin/protection	45	11994	12727	gear	4.890000000000001	agi:3:agi:0.63:1.89,str:3:str:1:3
+R	paladin/protection	45	11994	12728	gear	3.15	agi:5:agi:0.63:3.15
+R	paladin/protection	45	11994	12729	gear	5.0	int:5:int:1:5
+R	paladin/protection	45	11994	12730	gear	4.55	spi:5:spi:0.91:4.55
+R	paladin/protection	45	11994	12731	gear	2.75	sta:5:sta:0.55:2.75
+R	paladin/protection	45	11994	12732	gear	5.0	str:5:str:1:5
+R	paladin/protection	45	11994	12733	gear	4.699999999999999	ap:10:ap:0.47:4.7
+R	paladin/protection	45	11994	12737	gear	0.0	
+R	paladin/protection	45	11994	12738	gear	1.84	mp5:2:mp5:0.92:1.84
+R	paladin/protection	45	11994	12739	gear	1.26	agi:2:agi:0.63:1.26
+R	paladin/protection	45	11994	12740	gear	1.6500000000000001	sta:3:sta:0.55:1.65
+R	paladin/protection	45	11994	12741	gear	1.6500000000000001	sta:3:sta:0.55:1.65
+R	paladin/protection	45	11994	12742	gear	1.6500000000000001	sta:3:sta:0.55:1.65
+R	paladin/protection	45	11994	12743	gear	1.6500000000000001	sta:3:sta:0.55:1.65
+R	paladin/protection	45	11994	12744	gear	1.6500000000000001	sta:3:sta:0.55:1.65
+R	paladin/protection	45	12790	0	mh	352.194	dps:53.82:dps:6.7:360.594,speed:0.6:speed:-14:-8.4
+R	paladin/protection	45	13183	0	mh	271.449	dps:39.47:dps:6.7:264.449,speed:-0.5:speed:-14:7
+R	paladin/protection	45	14122	0	gear	0.29400000000000004	armor:14:armor:0.021:0.294
+R	paladin/protection	45	14122	12718	gear	3.394	int:2:int:1:2,sta:2:sta:0.55:1.1,armor:14:armor:0.021:0.294
+R	paladin/protection	45	14122	12719	gear	3.214	spi:2:spi:0.91:1.82,sta:2:sta:0.55:1.1,armor:14:armor:0.021:0.294
+R	paladin/protection	45	14122	12720	gear	4.114000000000001	int:2:int:1:2,spi:2:spi:0.91:1.82,armor:14:armor:0.021:0.294
+R	paladin/protection	45	14122	12729	gear	3.294	int:3:int:1:3,armor:14:armor:0.021:0.294
+R	paladin/protection	45	14122	12730	gear	3.024	spi:3:spi:0.91:2.73,armor:14:armor:0.021:0.294
+R	paladin/protection	45	14122	12731	gear	1.9440000000000002	sta:3:sta:0.55:1.65,armor:14:armor:0.021:0.294
+R	paladin/protection	45	14122	12734	gear	7.894	sp:4:sp:1.9:7.6,armor:14:armor:0.021:0.294
+R	paladin/protection	45	14122	12735	gear	4.093999999999999	spDmg:2:sp:1.9:3.8,armor:14:armor:0.021:0.294
+R	paladin/protection	45	14122	12740	gear	1.3940000000000001	sta:2:sta:0.55:1.1,armor:14:armor:0.021:0.294
+R	paladin/protection	45	14122	12741	gear	1.3940000000000001	sta:2:sta:0.55:1.1,armor:14:armor:0.021:0.294
+R	paladin/protection	45	14122	12742	gear	1.3940000000000001	sta:2:sta:0.55:1.1,armor:14:armor:0.021:0.294
+R	paladin/protection	45	14122	12743	gear	1.3940000000000001	sta:2:sta:0.55:1.1,armor:14:armor:0.021:0.294
+R	paladin/protection	45	14122	12744	gear	1.3940000000000001	sta:2:sta:0.55:1.1,armor:14:armor:0.021:0.294
+R	paladin/protection	45	14122	12745	gear	4.744	int:2:int:1:2,sta:1:sta:0.55:0.55,sp:1:sp:1.9:1.9,armor:14:armor:0.021:0.294
+R	paladin/protection	45	14122	12756	gear	0.29400000000000004	armor:14:armor:0.021:0.294
+R	paladin/protection	45	14122	12757	gear	0.29400000000000004	armor:14:armor:0.021:0.294
+R	paladin/protection	45	14122	12758	gear	0.29400000000000004	armor:14:armor:0.021:0.294
+R	paladin/protection	45	14122	12759	gear	7.894	spHoly:4:spHoly:1.9:7.6,armor:14:armor:0.021:0.294
+R	paladin/protection	45	14122	12761	gear	0.29400000000000004	armor:14:armor:0.021:0.294
+R	paladin/protection	45	14340	0	gear	12.298000000000002	sta:19:sta:0.55:10.45,armor:88:armor:0.021:1.848
+R	paladin/protection	45	14673	0	gear	12.134	str:3:str:1:3,agi:9:agi:0.63:5.67,sta:5:sta:0.55:2.75,armor:34:armor:0.021:0.714
+R	paladin/protection	45	14964	0	oh	36.120000000000005	armor:1720:armor:0.021:36.12
+R	paladin/protection	45	14964	12718	oh	50.07000000000001	int:9:int:1:9,sta:9:sta:0.55:4.95,armor:1720:armor:0.021:36.12
+R	paladin/protection	45	14964	12719	oh	49.260000000000005	spi:9:spi:0.91:8.19,sta:9:sta:0.55:4.95,armor:1720:armor:0.021:36.12
+R	paladin/protection	45	14964	12720	oh	53.31	int:9:int:1:9,spi:9:spi:0.91:8.19,armor:1720:armor:0.021:36.12
+R	paladin/protection	45	14964	12721	oh	46.74000000000001	agi:9:agi:0.63:5.67,sta:9:sta:0.55:4.95,armor:1720:armor:0.021:36.12
+R	paladin/protection	45	14964	12722	oh	50.07000000000001	sta:9:sta:0.55:4.95,str:9:str:1:9,armor:1720:armor:0.021:36.12
+R	paladin/protection	45	14964	12723	oh	54.120000000000005	int:9:int:1:9,str:9:str:1:9,armor:1720:armor:0.021:36.12
+R	paladin/protection	45	14964	12724	oh	50.790000000000006	agi:9:agi:0.63:5.67,int:9:int:1:9,armor:1720:armor:0.021:36.12
+R	paladin/protection	45	14964	12725	oh	53.31	spi:9:spi:0.91:8.19,str:9:str:1:9,armor:1720:armor:0.021:36.12
+R	paladin/protection	45	14964	12726	oh	49.980000000000004	agi:9:agi:0.63:5.67,spi:9:spi:0.91:8.19,armor:1720:armor:0.021:36.12
+R	paladin/protection	45	14964	12727	oh	50.790000000000006	agi:9:agi:0.63:5.67,str:9:str:1:9,armor:1720:armor:0.021:36.12
+R	paladin/protection	45	14964	12728	oh	44.940000000000005	agi:14:agi:0.63:8.82,armor:1720:armor:0.021:36.12
+R	paladin/protection	45	14964	12729	oh	50.120000000000005	int:14:int:1:14,armor:1720:armor:0.021:36.12
+R	paladin/protection	45	14964	12730	oh	48.86000000000001	spi:14:spi:0.91:12.74,armor:1720:armor:0.021:36.12
+R	paladin/protection	45	14964	12731	oh	43.82000000000001	sta:14:sta:0.55:7.7,armor:1720:armor:0.021:36.12
+R	paladin/protection	45	14964	12732	oh	50.120000000000005	str:14:str:1:14,armor:1720:armor:0.021:36.12
+R	paladin/protection	45	14964	12733	oh	49.28	ap:28:ap:0.47:13.16,armor:1720:armor:0.021:36.12
+R	paladin/protection	45	14964	12734	oh	66.52000000000001	sp:16:sp:1.9:30.4,armor:1720:armor:0.021:36.12
+R	paladin/protection	45	14964	12735	oh	55.120000000000005	spDmg:10:sp:1.9:19,armor:1720:armor:0.021:36.12
+R	paladin/protection	45	14964	12736	oh	40.71000000000001	defense:9:defense:0.51:4.59,armor:1720:armor:0.021:36.12
+R	paladin/protection	45	14964	12740	oh	41.07000000000001	sta:9:sta:0.55:4.95,armor:1720:armor:0.021:36.12
+R	paladin/protection	45	14964	12741	oh	41.07000000000001	sta:9:sta:0.55:4.95,armor:1720:armor:0.021:36.12
+R	paladin/protection	45	14964	12742	oh	41.07000000000001	sta:9:sta:0.55:4.95,armor:1720:armor:0.021:36.12
+R	paladin/protection	45	14964	12743	oh	41.07000000000001	sta:9:sta:0.55:4.95,armor:1720:armor:0.021:36.12
+R	paladin/protection	45	14964	12744	oh	41.07000000000001	sta:9:sta:0.55:4.95,armor:1720:armor:0.021:36.12
+R	paladin/protection	45	14964	12745	oh	58.92	int:10:int:1:10,sta:6:sta:0.55:3.3,sp:5:sp:1.9:9.5,armor:1720:armor:0.021:36.12
+R	paladin/protection	45	14964	12746	oh	61.080000000000005	int:10:int:1:10,spi:6:spi:0.91:5.46,sp:5:sp:1.9:9.5,armor:1720:armor:0.021:36.12
+R	paladin/protection	45	14964	12747	oh	56.580000000000005	spi:6:spi:0.91:5.46,sta:10:sta:0.55:5.5,sp:5:sp:1.9:9.5,armor:1720:armor:0.021:36.12
+R	paladin/protection	45	14964	12748	oh	53.32000000000001	int:6:int:1:6,sta:10:sta:0.55:5.5,spDmg:3:sp:1.9:5.7,armor:1720:armor:0.021:36.12
+R	paladin/protection	45	14964	12749	oh	57.28	int:10:int:1:10,spi:6:spi:0.91:5.46,spDmg:3:sp:1.9:5.7,armor:1720:armor:0.021:36.12
+R	paladin/protection	45	14964	12750	oh	52.78	spi:6:spi:0.91:5.46,sta:10:sta:0.55:5.5,spDmg:3:sp:1.9:5.7,armor:1720:armor:0.021:36.12
+R	paladin/protection	45	14964	12753	oh	49.150000000000006	defense:3:defense:0.51:1.53,sta:10:sta:0.55:5.5,str:6:str:1:6,armor:1720:armor:0.021:36.12
+R	paladin/protection	45	14964	12754	oh	53.160000000000004	defense:4:defense:0.51:2.04,sp:5:sp:1.9:9.5,sta:10:sta:0.55:5.5,armor:1720:armor:0.021:36.12
+R	paladin/protection	45	14964	12759	oh	74.12	spHoly:20:spHoly:1.9:38,armor:1720:armor:0.021:36.12
+R	paladin/protection	45	14964	12760	oh	36.120000000000005	armor:1720:armor:0.021:36.12
+R	paladin/protection	45	15235	0	mh	195.619	dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12718	mh	203.369	int:5:int:1:5,sta:5:sta:0.55:2.75,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12719	mh	202.919	spi:5:spi:0.91:4.55,sta:5:sta:0.55:2.75,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12720	mh	205.169	int:5:int:1:5,spi:5:spi:0.91:4.55,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12721	mh	201.519	agi:5:agi:0.63:3.15,sta:5:sta:0.55:2.75,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12722	mh	203.369	sta:5:sta:0.55:2.75,str:5:str:1:5,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12723	mh	205.619	int:5:int:1:5,str:5:str:1:5,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12724	mh	203.769	agi:5:agi:0.63:3.15,int:5:int:1:5,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12725	mh	205.169	spi:5:spi:0.91:4.55,str:5:str:1:5,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12726	mh	203.319	agi:5:agi:0.63:3.15,spi:5:spi:0.91:4.55,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12727	mh	203.769	agi:5:agi:0.63:3.15,str:5:str:1:5,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12728	mh	200.659	agi:8:agi:0.63:5.04,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12729	mh	203.619	int:8:int:1:8,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12730	mh	202.899	spi:8:spi:0.91:7.28,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12731	mh	200.019	sta:8:sta:0.55:4.4,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12732	mh	203.619	str:8:str:1:8,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12733	mh	203.139	ap:16:ap:0.47:7.52,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12736	mh	198.169	defense:5:defense:0.51:2.55,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12740	mh	198.369	sta:5:sta:0.55:2.75,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12741	mh	198.369	sta:5:sta:0.55:2.75,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12742	mh	198.369	sta:5:sta:0.55:2.75,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12743	mh	198.369	sta:5:sta:0.55:2.75,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12744	mh	198.369	sta:5:sta:0.55:2.75,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12751	mh	204.099	agi:3:agi:0.63:1.89,ap:7:ap:0.47:3.29,sta:6:sta:0.55:3.3,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12752	mh	203.809	agi:3:agi:0.63:1.89,sta:6:sta:0.55:3.3,str:3:str:1:3,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12753	mh	202.939	defense:2:defense:0.51:1.02,sta:6:sta:0.55:3.3,str:3:str:1:3,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12754	mh	205.639	defense:2:defense:0.51:1.02,sp:3:sp:1.9:5.7,sta:6:sta:0.55:3.3,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12759	mh	216.519	spHoly:11:spHoly:1.9:20.9,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12906	mh	276.019	int:6:int:1:6,sta:4:sta:0.55:2.2,sp:38:sp:1.9:72.2,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12908	mh	277.459	int:6:int:1:6,sp:38:sp:1.9:72.2,spi:4:spi:0.91:3.64,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12910	mh	274.759	sp:38:sp:1.9:72.2,spi:4:spi:0.91:3.64,sta:6:sta:0.55:3.3,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12912	mh	248.519	spDmg:24:sp:1.9:45.6,int:4:int:1:4,sta:6:sta:0.55:3.3,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12913	mh	250.85899999999998	int:6:int:1:6,spDmg:24:sp:1.9:45.6,spi:4:spi:0.91:3.64,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12916	mh	248.159	spDmg:24:sp:1.9:45.6,spi:4:spi:0.91:3.64,sta:6:sta:0.55:3.3,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12917	mh	275.819	sp:38:sp:1.9:72.2,int:8:int:1:8,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12920	mh	249.219	int:8:int:1:8,spDmg:24:sp:1.9:45.6,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15477	0	gear	2.121	armor:101:armor:0.021:2.121
+R	paladin/protection	45	15477	12718	gear	3.6710000000000003	int:1:int:1:1,sta:1:sta:0.55:0.55,armor:101:armor:0.021:2.121
+R	paladin/protection	45	15477	12719	gear	3.581	spi:1:spi:0.91:0.91,sta:1:sta:0.55:0.55,armor:101:armor:0.021:2.121
+R	paladin/protection	45	15477	12720	gear	4.031000000000001	int:1:int:1:1,spi:1:spi:0.91:0.91,armor:101:armor:0.021:2.121
+R	paladin/protection	45	15477	12721	gear	3.301	agi:1:agi:0.63:0.63,sta:1:sta:0.55:0.55,armor:101:armor:0.021:2.121
+R	paladin/protection	45	15477	12722	gear	3.6710000000000003	sta:1:sta:0.55:0.55,str:1:str:1:1,armor:101:armor:0.021:2.121
+R	paladin/protection	45	15477	12723	gear	4.121	int:1:int:1:1,str:1:str:1:1,armor:101:armor:0.021:2.121
+R	paladin/protection	45	15477	12724	gear	3.751	agi:1:agi:0.63:0.63,int:1:int:1:1,armor:101:armor:0.021:2.121
+R	paladin/protection	45	15477	12725	gear	4.031000000000001	spi:1:spi:0.91:0.91,str:1:str:1:1,armor:101:armor:0.021:2.121
+R	paladin/protection	45	15477	12726	gear	3.661	agi:1:agi:0.63:0.63,spi:1:spi:0.91:0.91,armor:101:armor:0.021:2.121
+R	paladin/protection	45	15477	12727	gear	3.751	agi:1:agi:0.63:0.63,str:1:str:1:1,armor:101:armor:0.021:2.121
+R	paladin/protection	45	15477	12728	gear	3.3810000000000002	agi:2:agi:0.63:1.26,armor:101:armor:0.021:2.121
+R	paladin/protection	45	15477	12729	gear	4.121	int:2:int:1:2,armor:101:armor:0.021:2.121
+R	paladin/protection	45	15477	12730	gear	3.941	spi:2:spi:0.91:1.82,armor:101:armor:0.021:2.121
+R	paladin/protection	45	15477	12731	gear	3.221	sta:2:sta:0.55:1.1,armor:101:armor:0.021:2.121
+R	paladin/protection	45	15477	12732	gear	4.121	str:2:str:1:2,armor:101:armor:0.021:2.121
+R	paladin/protection	45	15477	12733	gear	4.0009999999999994	ap:4:ap:0.47:1.88,armor:101:armor:0.021:2.121
+R	paladin/protection	45	15477	12734	gear	5.920999999999999	sp:2:sp:1.9:3.8,armor:101:armor:0.021:2.121
+R	paladin/protection	45	15477	12735	gear	4.021	spDmg:1:sp:1.9:1.9,armor:101:armor:0.021:2.121
+R	paladin/protection	45	15477	12736	gear	2.6310000000000002	defense:1:defense:0.51:0.51,armor:101:armor:0.021:2.121
+R	paladin/protection	45	15477	12740	gear	2.6710000000000003	sta:1:sta:0.55:0.55,armor:101:armor:0.021:2.121
+R	paladin/protection	45	15477	12741	gear	2.6710000000000003	sta:1:sta:0.55:0.55,armor:101:armor:0.021:2.121
+R	paladin/protection	45	15477	12742	gear	2.6710000000000003	sta:1:sta:0.55:0.55,armor:101:armor:0.021:2.121
+R	paladin/protection	45	15477	12743	gear	2.6710000000000003	sta:1:sta:0.55:0.55,armor:101:armor:0.021:2.121
+R	paladin/protection	45	15477	12744	gear	2.6710000000000003	sta:1:sta:0.55:0.55,armor:101:armor:0.021:2.121
+R	paladin/protection	45	15477	12759	gear	7.821	spHoly:3:spHoly:1.9:5.7,armor:101:armor:0.021:2.121
+R	paladin/protection	45	15945	0	oh	2.92	sta:2:sta:0.55:1.1,spi:2:spi:0.91:1.82
+R	paladin/protection	45	16711	0	gear	22.544999999999998	agi:21:agi:0.63:13.23,sta:9:sta:0.55:4.95,hit:0.3:hit:6.5:1.95,armor:115:armor:0.021:2.415
+R	paladin/protection	45	18312	0	gear	77.457	str:13:str:1:13,sta:20:sta:0.55:11,int:12:int:1:12,sp:15:sp:1.9:28.5,armor:617:armor:0.021:12.957
+R	paladin/protection	45	18726	0	gear	13.353	sta:15:sta:0.55:8.25,defense:7:defense:0.51:3.57,armor:73:armor:0.021:1.533
+R	paladin/protection	45	19557	0	mh	147.16	str:7:str:1:7,sta:3:sta:0.55:1.65,dps:21.3:dps:6.7:142.71,speed:0.3:speed:-14:-4.2
+R	paladin/protection	45	20129	0	gear	16.377000000000002	agi:6:agi:0.63:3.78,str:6:str:1:6,sta:6:sta:0.55:3.3,armor:157:armor:0.021:3.297
+R	paladin/protection	45	22270	0	gear	49.667	str:11:str:1:11,defense:3:defense:0.51:1.53,int:10:int:1:10,sta:10:sta:0.55:5.5,sp:7:sp:1.9:13.3,armor:397:armor:0.021:8.337
+R	paladin/protection	45	22400	0	ranged	0.0	
+R	paladin/protection	45	22967	0	gear	22.003	sta:25:sta:0.55:13.75,armor:393:armor:0.021:8.253
+R	paladin/protection	45	250491	0	gear	20.564	int:5:int:1:5,sta:4:sta:0.55:2.2,spDmg:5:sp:1.9:9.5,armor:184:armor:0.021:3.864
+R	paladin/protection	45	252507	0	gear	18.496	sta:10:sta:0.55:5.5,spDmg:6:sp:1.9:11.4,armor:76:armor:0.021:1.596
+R	paladin/protection	45	254111	0	gear	17.284	int:9:int:1:9,sta:13:sta:0.55:7.15,armor:54:armor:0.021:1.134
+R	paladin/protection	45	270033	0	gear	6.3389999999999995	agi:4:agi:0.63:2.52,str:3:str:1:3,armor:39:armor:0.021:0.819
+R	paladin/protection	45	271956	0	gear	37.672000000000004	agi:27:agi:0.63:17.01,sta:12:sta:0.55:6.6,crit:1:crit:7.2:7.2,crit:1:spellCrit:0.31:0.31,armor:312:armor:0.021:6.552
+R	paladin/protection	45	272958	0	gear	70.552	int:27:int:1:27,sta:12:sta:0.55:6.6,sp:16:sp:1.9:30.4,armor:312:armor:0.021:6.552
+R	paladin/protection	45	276399	0	gear	52.307	sta:18:sta:0.55:9.9,mp5:7:mp5:0.92:6.44,spDmg:12:sp:1.9:22.8,armor:627:armor:0.021:13.167
+R	paladin/protection	45	277235	0	gear	26.955	str:14:str:1:14,sta:10:sta:0.55:5.5,armor:355:armor:0.021:7.455
+R	paladin/protection	45	282560	0	gear	36.82299999999999	int:10:int:1:10,sta:13:sta:0.55:7.15,sp:8:sp:1.9:15.2,armor:213:armor:0.021:4.473
+R	paladin/protection	45	286609	0	oh	46.326	spi:6:spi:0.91:5.46,defense:7:defense:0.51:3.57,armor:1776:armor:0.021:37.296
+R	paladin/protection	55	25	0	mh	8.264999999999999	dps:1.05:dps:6.8:7.14,speed:-0.15:speed:-7.5:1.125
+R	paladin/protection	55	1315	0	gear	17.6	sta:10:sta:0.56:5.6,spi:15:spi:0.8:12
+R	paladin/protection	55	1808	0	gear	1.48	armor:74:armor:0.02:1.48
+R	paladin/protection	55	2614	0	gear	0.58	armor:29:armor:0.02:0.58
+R	paladin/protection	55	3158	0	gear	0.52	armor:26:armor:0.02:0.52
+R	paladin/protection	55	3570	0	mh	54.590999999999994	str:2:str:1:2,dps:8.12:dps:6.8:55.216,speed:0.35:speed:-7.5:-2.625
+R	paladin/protection	55	4068	0	oh	24.300000000000004	sta:9:sta:0.56:5.04,armor:963:armor:0.02:19.26
+R	paladin/protection	55	4570	0	mh	63.5	dps:10:dps:6.8:68,speed:0.6:speed:-7.5:-4.5
+R	paladin/protection	55	4570	12718	mh	66.59	int:3:int:0.47:1.41,sta:3:sta:0.56:1.68,dps:10:dps:6.8:68,speed:0.6:speed:-7.5:-4.5
+R	paladin/protection	55	4570	12719	mh	67.58	spi:3:spi:0.8:2.4,sta:3:sta:0.56:1.68,dps:10:dps:6.8:68,speed:0.6:speed:-7.5:-4.5
+R	paladin/protection	55	4570	12720	mh	67.31	int:3:int:0.47:1.41,spi:3:spi:0.8:2.4,dps:10:dps:6.8:68,speed:0.6:speed:-7.5:-4.5
+R	paladin/protection	55	4570	12721	mh	67.1	agi:3:agi:0.64:1.92,sta:3:sta:0.56:1.68,dps:10:dps:6.8:68,speed:0.6:speed:-7.5:-4.5
+R	paladin/protection	55	4570	12722	mh	68.18	sta:3:sta:0.56:1.68,str:3:str:1:3,dps:10:dps:6.8:68,speed:0.6:speed:-7.5:-4.5
+R	paladin/protection	55	4570	12723	mh	67.91	int:3:int:0.47:1.41,str:3:str:1:3,dps:10:dps:6.8:68,speed:0.6:speed:-7.5:-4.5
+R	paladin/protection	55	4570	12724	mh	66.83	agi:3:agi:0.64:1.92,int:3:int:0.47:1.41,dps:10:dps:6.8:68,speed:0.6:speed:-7.5:-4.5
+R	paladin/protection	55	4570	12725	mh	68.9	spi:3:spi:0.8:2.4,str:3:str:1:3,dps:10:dps:6.8:68,speed:0.6:speed:-7.5:-4.5
+R	paladin/protection	55	4570	12726	mh	67.82	agi:3:agi:0.64:1.92,spi:3:spi:0.8:2.4,dps:10:dps:6.8:68,speed:0.6:speed:-7.5:-4.5
+R	paladin/protection	55	4570	12727	mh	68.42	agi:3:agi:0.64:1.92,str:3:str:1:3,dps:10:dps:6.8:68,speed:0.6:speed:-7.5:-4.5
+R	paladin/protection	55	4570	12728	mh	66.06	agi:4:agi:0.64:2.56,dps:10:dps:6.8:68,speed:0.6:speed:-7.5:-4.5
+R	paladin/protection	55	4570	12729	mh	65.38	int:4:int:0.47:1.88,dps:10:dps:6.8:68,speed:0.6:speed:-7.5:-4.5
+R	paladin/protection	55	4570	12730	mh	66.7	spi:4:spi:0.8:3.2,dps:10:dps:6.8:68,speed:0.6:speed:-7.5:-4.5
+R	paladin/protection	55	4570	12731	mh	65.74	sta:4:sta:0.56:2.24,dps:10:dps:6.8:68,speed:0.6:speed:-7.5:-4.5
+R	paladin/protection	55	4570	12732	mh	67.5	str:4:str:1:4,dps:10:dps:6.8:68,speed:0.6:speed:-7.5:-4.5
+R	paladin/protection	55	4570	12733	mh	67.42	ap:8:ap:0.49:3.92,dps:10:dps:6.8:68,speed:0.6:speed:-7.5:-4.5
+R	paladin/protection	55	4570	12736	mh	65.12	defense:3:defense:0.54:1.62,dps:10:dps:6.8:68,speed:0.6:speed:-7.5:-4.5
+R	paladin/protection	55	4570	12740	mh	65.18	sta:3:sta:0.56:1.68,dps:10:dps:6.8:68,speed:0.6:speed:-7.5:-4.5
+R	paladin/protection	55	4570	12741	mh	65.18	sta:3:sta:0.56:1.68,dps:10:dps:6.8:68,speed:0.6:speed:-7.5:-4.5
+R	paladin/protection	55	4570	12742	mh	65.18	sta:3:sta:0.56:1.68,dps:10:dps:6.8:68,speed:0.6:speed:-7.5:-4.5
+R	paladin/protection	55	4570	12743	mh	65.18	sta:3:sta:0.56:1.68,dps:10:dps:6.8:68,speed:0.6:speed:-7.5:-4.5
+R	paladin/protection	55	4570	12744	mh	65.18	sta:3:sta:0.56:1.68,dps:10:dps:6.8:68,speed:0.6:speed:-7.5:-4.5
+R	paladin/protection	55	4570	12759	mh	74.9	spHoly:6:spHoly:1.9:11.4,dps:10:dps:6.8:68,speed:0.6:speed:-7.5:-4.5
+R	paladin/protection	55	4570	12918	mh	81.38	sp:8:sp:2:16,int:4:int:0.47:1.88,dps:10:dps:6.8:68,speed:0.6:speed:-7.5:-4.5
+R	paladin/protection	55	4570	12919	mh	75.38	spDmg:5:sp:2:10,int:4:int:0.47:1.88,dps:10:dps:6.8:68,speed:0.6:speed:-7.5:-4.5
+R	paladin/protection	55	5079	0	gear	0.0	
+R	paladin/protection	55	6063	0	gear	1.1	armor:55:armor:0.02:1.1
+R	paladin/protection	55	6540	0	gear	0.56	armor:28:armor:0.02:0.56
+R	paladin/protection	55	6540	12718	gear	3.65	int:3:int:0.47:1.41,sta:3:sta:0.56:1.68,armor:28:armor:0.02:0.56
+R	paladin/protection	55	6540	12719	gear	4.640000000000001	spi:3:spi:0.8:2.4,sta:3:sta:0.56:1.68,armor:28:armor:0.02:0.56
+R	paladin/protection	55	6540	12720	gear	4.370000000000001	int:3:int:0.47:1.41,spi:3:spi:0.8:2.4,armor:28:armor:0.02:0.56
+R	paladin/protection	55	6540	12729	gear	2.9099999999999997	int:5:int:0.47:2.35,armor:28:armor:0.02:0.56
+R	paladin/protection	55	6540	12730	gear	4.5600000000000005	spi:5:spi:0.8:4,armor:28:armor:0.02:0.56
+R	paladin/protection	55	6540	12731	gear	3.3600000000000003	sta:5:sta:0.56:2.8,armor:28:armor:0.02:0.56
+R	paladin/protection	55	6540	12734	gear	12.56	sp:6:sp:2:12,armor:28:armor:0.02:0.56
+R	paladin/protection	55	6540	12735	gear	8.56	spDmg:4:sp:2:8,armor:28:armor:0.02:0.56
+R	paladin/protection	55	6540	12740	gear	2.24	sta:3:sta:0.56:1.68,armor:28:armor:0.02:0.56
+R	paladin/protection	55	6540	12741	gear	2.24	sta:3:sta:0.56:1.68,armor:28:armor:0.02:0.56
+R	paladin/protection	55	6540	12742	gear	2.24	sta:3:sta:0.56:1.68,armor:28:armor:0.02:0.56
+R	paladin/protection	55	6540	12743	gear	2.24	sta:3:sta:0.56:1.68,armor:28:armor:0.02:0.56
+R	paladin/protection	55	6540	12744	gear	2.24	sta:3:sta:0.56:1.68,armor:28:armor:0.02:0.56
+R	paladin/protection	55	6540	12745	gear	7.5600000000000005	int:4:int:0.47:1.88,sta:2:sta:0.56:1.12,sp:2:sp:2:4,armor:28:armor:0.02:0.56
+R	paladin/protection	55	6540	12756	gear	0.56	armor:28:armor:0.02:0.56
+R	paladin/protection	55	6540	12757	gear	0.56	armor:28:armor:0.02:0.56
+R	paladin/protection	55	6540	12758	gear	0.56	armor:28:armor:0.02:0.56
+R	paladin/protection	55	6540	12759	gear	13.86	spHoly:7:spHoly:1.9:13.3,armor:28:armor:0.02:0.56
+R	paladin/protection	55	6540	12761	gear	0.56	armor:28:armor:0.02:0.56
+R	paladin/protection	55	6557	0	gear	0.98	armor:49:armor:0.02:0.98
+R	paladin/protection	55	6557	12718	gear	3.04	int:2:int:0.47:0.94,sta:2:sta:0.56:1.12,armor:49:armor:0.02:0.98
+R	paladin/protection	55	6557	12719	gear	3.7	spi:2:spi:0.8:1.6,sta:2:sta:0.56:1.12,armor:49:armor:0.02:0.98
+R	paladin/protection	55	6557	12720	gear	3.52	int:2:int:0.47:0.94,spi:2:spi:0.8:1.6,armor:49:armor:0.02:0.98
+R	paladin/protection	55	6557	12721	gear	3.3800000000000003	agi:2:agi:0.64:1.28,sta:2:sta:0.56:1.12,armor:49:armor:0.02:0.98
+R	paladin/protection	55	6557	12722	gear	4.1	sta:2:sta:0.56:1.12,str:2:str:1:2,armor:49:armor:0.02:0.98
+R	paladin/protection	55	6557	12723	gear	3.92	int:2:int:0.47:0.94,str:2:str:1:2,armor:49:armor:0.02:0.98
+R	paladin/protection	55	6557	12724	gear	3.1999999999999997	agi:2:agi:0.64:1.28,int:2:int:0.47:0.94,armor:49:armor:0.02:0.98
+R	paladin/protection	55	6557	12725	gear	4.58	spi:2:spi:0.8:1.6,str:2:str:1:2,armor:49:armor:0.02:0.98
+R	paladin/protection	55	6557	12726	gear	3.86	agi:2:agi:0.64:1.28,spi:2:spi:0.8:1.6,armor:49:armor:0.02:0.98
+R	paladin/protection	55	6557	12727	gear	4.26	agi:2:agi:0.64:1.28,str:2:str:1:2,armor:49:armor:0.02:0.98
+R	paladin/protection	55	6557	12728	gear	2.9	agi:3:agi:0.64:1.92,armor:49:armor:0.02:0.98
+R	paladin/protection	55	6557	12729	gear	2.3899999999999997	int:3:int:0.47:1.41,armor:49:armor:0.02:0.98
+R	paladin/protection	55	6557	12730	gear	3.3800000000000003	spi:3:spi:0.8:2.4,armor:49:armor:0.02:0.98
+R	paladin/protection	55	6557	12731	gear	2.66	sta:3:sta:0.56:1.68,armor:49:armor:0.02:0.98
+R	paladin/protection	55	6557	12732	gear	3.98	str:3:str:1:3,armor:49:armor:0.02:0.98
+R	paladin/protection	55	6557	12733	gear	3.92	ap:6:ap:0.49:2.94,armor:49:armor:0.02:0.98
+R	paladin/protection	55	6557	12734	gear	8.98	sp:4:sp:2:8,armor:49:armor:0.02:0.98
+R	paladin/protection	55	6557	12735	gear	4.98	spDmg:2:sp:2:4,armor:49:armor:0.02:0.98
+R	paladin/protection	55	6557	12736	gear	2.06	defense:2:defense:0.54:1.08,armor:49:armor:0.02:0.98
+R	paladin/protection	55	6557	12740	gear	2.1	sta:2:sta:0.56:1.12,armor:49:armor:0.02:0.98
+R	paladin/protection	55	6557	12741	gear	2.1	sta:2:sta:0.56:1.12,armor:49:armor:0.02:0.98
+R	paladin/protection	55	6557	12742	gear	2.1	sta:2:sta:0.56:1.12,armor:49:armor:0.02:0.98
+R	paladin/protection	55	6557	12743	gear	2.1	sta:2:sta:0.56:1.12,armor:49:armor:0.02:0.98
+R	paladin/protection	55	6557	12744	gear	2.1	sta:2:sta:0.56:1.12,armor:49:armor:0.02:0.98
+R	paladin/protection	55	6557	12756	gear	0.98	armor:49:armor:0.02:0.98
+R	paladin/protection	55	6557	12760	gear	0.98	armor:49:armor:0.02:0.98
+R	paladin/protection	55	7047	0	gear	4.52	spi:5:spi:0.8:4,armor:26:armor:0.02:0.52
+R	paladin/protection	55	7538	0	gear	5.26	armor:263:armor:0.02:5.26
+R	paladin/protection	55	7538	12718	gear	18.65	int:13:int:0.47:6.11,sta:13:sta:0.56:7.28,armor:263:armor:0.02:5.26
+R	paladin/protection	55	7538	12719	gear	22.939999999999998	spi:13:spi:0.8:10.4,sta:13:sta:0.56:7.28,armor:263:armor:0.02:5.26
+R	paladin/protection	55	7538	12720	gear	21.769999999999996	int:13:int:0.47:6.11,spi:13:spi:0.8:10.4,armor:263:armor:0.02:5.26
+R	paladin/protection	55	7538	12721	gear	20.86	agi:13:agi:0.64:8.32,sta:13:sta:0.56:7.28,armor:263:armor:0.02:5.26
+R	paladin/protection	55	7538	12722	gear	25.54	sta:13:sta:0.56:7.28,str:13:str:1:13,armor:263:armor:0.02:5.26
+R	paladin/protection	55	7538	12723	gear	24.369999999999997	int:13:int:0.47:6.11,str:13:str:1:13,armor:263:armor:0.02:5.26
+R	paladin/protection	55	7538	12724	gear	19.689999999999998	agi:13:agi:0.64:8.32,int:13:int:0.47:6.11,armor:263:armor:0.02:5.26
+R	paladin/protection	55	7538	12725	gear	28.659999999999997	spi:13:spi:0.8:10.4,str:13:str:1:13,armor:263:armor:0.02:5.26
+R	paladin/protection	55	7538	12726	gear	23.979999999999997	agi:13:agi:0.64:8.32,spi:13:spi:0.8:10.4,armor:263:armor:0.02:5.26
+R	paladin/protection	55	7538	12727	gear	26.58	agi:13:agi:0.64:8.32,str:13:str:1:13,armor:263:armor:0.02:5.26
+R	paladin/protection	55	7538	12728	gear	18.060000000000002	agi:20:agi:0.64:12.8,armor:263:armor:0.02:5.26
+R	paladin/protection	55	7538	12729	gear	14.659999999999998	int:20:int:0.47:9.4,armor:263:armor:0.02:5.26
+R	paladin/protection	55	7538	12730	gear	21.259999999999998	spi:20:spi:0.8:16,armor:263:armor:0.02:5.26
+R	paladin/protection	55	7538	12731	gear	16.46	sta:20:sta:0.56:11.2,armor:263:armor:0.02:5.26
+R	paladin/protection	55	7538	12732	gear	25.259999999999998	str:20:str:1:20,armor:263:armor:0.02:5.26
+R	paladin/protection	55	7538	12733	gear	24.86	ap:40:ap:0.49:19.6,armor:263:armor:0.02:5.26
+R	paladin/protection	55	7538	12734	gear	51.26	sp:23:sp:2:46,armor:263:armor:0.02:5.26
+R	paladin/protection	55	7538	12735	gear	35.26	spDmg:15:sp:2:30,armor:263:armor:0.02:5.26
+R	paladin/protection	55	7538	12740	gear	12.540000000000001	sta:13:sta:0.56:7.28,armor:263:armor:0.02:5.26
+R	paladin/protection	55	7538	12741	gear	12.540000000000001	sta:13:sta:0.56:7.28,armor:263:armor:0.02:5.26
+R	paladin/protection	55	7538	12742	gear	12.540000000000001	sta:13:sta:0.56:7.28,armor:263:armor:0.02:5.26
+R	paladin/protection	55	7538	12743	gear	12.540000000000001	sta:13:sta:0.56:7.28,armor:263:armor:0.02:5.26
+R	paladin/protection	55	7538	12744	gear	12.540000000000001	sta:13:sta:0.56:7.28,armor:263:armor:0.02:5.26
+R	paladin/protection	55	7538	12745	gear	30.79	int:15:int:0.47:7.05,sta:8:sta:0.56:4.48,sp:7:sp:2:14,armor:263:armor:0.02:5.26
+R	paladin/protection	55	7538	12746	gear	32.71	int:15:int:0.47:7.05,spi:8:spi:0.8:6.4,sp:7:sp:2:14,armor:263:armor:0.02:5.26
+R	paladin/protection	55	7538	12747	gear	34.06	spi:8:spi:0.8:6.4,sta:15:sta:0.56:8.4,sp:7:sp:2:14,armor:263:armor:0.02:5.26
+R	paladin/protection	55	7538	12748	gear	27.42	int:8:int:0.47:3.76,sta:15:sta:0.56:8.4,spDmg:5:sp:2:10,armor:263:armor:0.02:5.26
+R	paladin/protection	55	7538	12749	gear	28.71	int:15:int:0.47:7.05,spi:8:spi:0.8:6.4,spDmg:5:sp:2:10,armor:263:armor:0.02:5.26
+R	paladin/protection	55	7538	12750	gear	30.060000000000002	spi:8:spi:0.8:6.4,sta:15:sta:0.56:8.4,spDmg:5:sp:2:10,armor:263:armor:0.02:5.26
+R	paladin/protection	55	7538	12751	gear	25.339999999999996	agi:6:agi:0.64:3.84,ap:16:ap:0.49:7.84,sta:15:sta:0.56:8.4,armor:263:armor:0.02:5.26
+R	paladin/protection	55	7538	12752	gear	24.78	agi:8:agi:0.64:5.12,sta:15:sta:0.56:8.4,str:6:str:1:6,armor:263:armor:0.02:5.26
+R	paladin/protection	55	7538	12755	gear	35.66	sp:7:sp:2:14,sta:15:sta:0.56:8.4,str:8:str:1:8,armor:263:armor:0.02:5.26
+R	paladin/protection	55	7538	12760	gear	5.26	armor:263:armor:0.02:5.26
+R	paladin/protection	55	7922	0	gear	24.919999999999998	str:12:str:1:12,sta:12:sta:0.56:6.72,armor:310:armor:0.02:6.2
+R	paladin/protection	55	8192	0	gear	11.56	agi:11:agi:0.64:7.04,sta:5:sta:0.56:2.8,armor:86:armor:0.02:1.72
+R	paladin/protection	55	9458	0	oh	17.92	spi:3:spi:0.8:2.4,armor:776:armor:0.02:15.52
+R	paladin/protection	55	9834	0	gear	1.46	armor:73:armor:0.02:1.46
+R	paladin/protection	55	9834	12718	gear	7.64	int:6:int:0.47:2.82,sta:6:sta:0.56:3.36,armor:73:armor:0.02:1.46
+R	paladin/protection	55	9834	12719	gear	9.620000000000001	spi:6:spi:0.8:4.8,sta:6:sta:0.56:3.36,armor:73:armor:0.02:1.46
+R	paladin/protection	55	9834	12720	gear	9.080000000000002	int:6:int:0.47:2.82,spi:6:spi:0.8:4.8,armor:73:armor:0.02:1.46
+R	paladin/protection	55	9834	12721	gear	8.66	agi:6:agi:0.64:3.84,sta:6:sta:0.56:3.36,armor:73:armor:0.02:1.46
+R	paladin/protection	55	9834	12722	gear	10.82	sta:6:sta:0.56:3.36,str:6:str:1:6,armor:73:armor:0.02:1.46
+R	paladin/protection	55	9834	12723	gear	10.280000000000001	int:6:int:0.47:2.82,str:6:str:1:6,armor:73:armor:0.02:1.46
+R	paladin/protection	55	9834	12724	gear	8.120000000000001	agi:6:agi:0.64:3.84,int:6:int:0.47:2.82,armor:73:armor:0.02:1.46
+R	paladin/protection	55	9834	12725	gear	12.260000000000002	spi:6:spi:0.8:4.8,str:6:str:1:6,armor:73:armor:0.02:1.46
+R	paladin/protection	55	9834	12726	gear	10.100000000000001	agi:6:agi:0.64:3.84,spi:6:spi:0.8:4.8,armor:73:armor:0.02:1.46
+R	paladin/protection	55	9834	12727	gear	11.3	agi:6:agi:0.64:3.84,str:6:str:1:6,armor:73:armor:0.02:1.46
+R	paladin/protection	55	9834	12728	gear	7.22	agi:9:agi:0.64:5.76,armor:73:armor:0.02:1.46
+R	paladin/protection	55	9834	12729	gear	5.6899999999999995	int:9:int:0.47:4.23,armor:73:armor:0.02:1.46
+R	paladin/protection	55	9834	12730	gear	8.66	spi:9:spi:0.8:7.2,armor:73:armor:0.02:1.46
+R	paladin/protection	55	9834	12731	gear	6.500000000000001	sta:9:sta:0.56:5.04,armor:73:armor:0.02:1.46
+R	paladin/protection	55	9834	12732	gear	10.46	str:9:str:1:9,armor:73:armor:0.02:1.46
+R	paladin/protection	55	9834	12733	gear	10.280000000000001	ap:18:ap:0.49:8.82,armor:73:armor:0.02:1.46
+R	paladin/protection	55	9834	12734	gear	23.46	sp:11:sp:2:22,armor:73:armor:0.02:1.46
+R	paladin/protection	55	9834	12735	gear	15.46	spDmg:7:sp:2:14,armor:73:armor:0.02:1.46
+R	paladin/protection	55	9834	12736	gear	4.7	defense:6:defense:0.54:3.24,armor:73:armor:0.02:1.46
+R	paladin/protection	55	9834	12740	gear	4.82	sta:6:sta:0.56:3.36,armor:73:armor:0.02:1.46
+R	paladin/protection	55	9834	12741	gear	4.82	sta:6:sta:0.56:3.36,armor:73:armor:0.02:1.46
+R	paladin/protection	55	9834	12742	gear	4.82	sta:6:sta:0.56:3.36,armor:73:armor:0.02:1.46
+R	paladin/protection	55	9834	12743	gear	4.82	sta:6:sta:0.56:3.36,armor:73:armor:0.02:1.46
+R	paladin/protection	55	9834	12744	gear	4.82	sta:6:sta:0.56:3.36,armor:73:armor:0.02:1.46
+R	paladin/protection	55	9834	12745	gear	12.990000000000002	int:7:int:0.47:3.29,sta:4:sta:0.56:2.24,sp:3:sp:2:6,armor:73:armor:0.02:1.46
+R	paladin/protection	55	9834	12746	gear	13.95	int:7:int:0.47:3.29,spi:4:spi:0.8:3.2,sp:3:sp:2:6,armor:73:armor:0.02:1.46
+R	paladin/protection	55	9834	12747	gear	14.580000000000002	spi:4:spi:0.8:3.2,sta:7:sta:0.56:3.92,sp:3:sp:2:6,armor:73:armor:0.02:1.46
+R	paladin/protection	55	9834	12748	gear	11.260000000000002	int:4:int:0.47:1.88,sta:7:sta:0.56:3.92,spDmg:2:sp:2:4,armor:73:armor:0.02:1.46
+R	paladin/protection	55	9834	12749	gear	11.95	int:7:int:0.47:3.29,spi:4:spi:0.8:3.2,spDmg:2:sp:2:4,armor:73:armor:0.02:1.46
+R	paladin/protection	55	9834	12750	gear	12.580000000000002	spi:4:spi:0.8:3.2,sta:7:sta:0.56:3.92,spDmg:2:sp:2:4,armor:73:armor:0.02:1.46
+R	paladin/protection	55	9834	12751	gear	10.73	agi:3:agi:0.64:1.92,ap:7:ap:0.49:3.43,sta:7:sta:0.56:3.92,armor:73:armor:0.02:1.46
+R	paladin/protection	55	9834	12752	gear	10.940000000000001	agi:4:agi:0.64:2.56,sta:7:sta:0.56:3.92,str:3:str:1:3,armor:73:armor:0.02:1.46
+R	paladin/protection	55	9834	12753	gear	10.46	defense:2:defense:0.54:1.08,sta:7:sta:0.56:3.92,str:4:str:1:4,armor:73:armor:0.02:1.46
+R	paladin/protection	55	9834	12755	gear	15.379999999999999	sp:3:sp:2:6,sta:7:sta:0.56:3.92,str:4:str:1:4,armor:73:armor:0.02:1.46
+R	paladin/protection	55	9834	12756	gear	1.46	armor:73:armor:0.02:1.46
+R	paladin/protection	55	9834	12760	gear	1.46	armor:73:armor:0.02:1.46
+R	paladin/protection	55	10087	0	gear	5.5600000000000005	armor:278:armor:0.02:5.56
+R	paladin/protection	55	10087	12718	gear	14.83	int:9:int:0.47:4.23,sta:9:sta:0.56:5.04,armor:278:armor:0.02:5.56
+R	paladin/protection	55	10087	12719	gear	17.800000000000004	spi:9:spi:0.8:7.2,sta:9:sta:0.56:5.04,armor:278:armor:0.02:5.56
+R	paladin/protection	55	10087	12720	gear	16.990000000000002	int:9:int:0.47:4.23,spi:9:spi:0.8:7.2,armor:278:armor:0.02:5.56
+R	paladin/protection	55	10087	12721	gear	16.36	agi:9:agi:0.64:5.76,sta:9:sta:0.56:5.04,armor:278:armor:0.02:5.56
+R	paladin/protection	55	10087	12722	gear	19.6	sta:9:sta:0.56:5.04,str:9:str:1:9,armor:278:armor:0.02:5.56
+R	paladin/protection	55	10087	12723	gear	18.79	int:9:int:0.47:4.23,str:9:str:1:9,armor:278:armor:0.02:5.56
+R	paladin/protection	55	10087	12724	gear	15.549999999999999	agi:9:agi:0.64:5.76,int:9:int:0.47:4.23,armor:278:armor:0.02:5.56
+R	paladin/protection	55	10087	12725	gear	21.759999999999998	spi:9:spi:0.8:7.2,str:9:str:1:9,armor:278:armor:0.02:5.56
+R	paladin/protection	55	10087	12726	gear	18.520000000000003	agi:9:agi:0.64:5.76,spi:9:spi:0.8:7.2,armor:278:armor:0.02:5.56
+R	paladin/protection	55	10087	12727	gear	20.32	agi:9:agi:0.64:5.76,str:9:str:1:9,armor:278:armor:0.02:5.56
+R	paladin/protection	55	10087	12728	gear	14.520000000000001	agi:14:agi:0.64:8.96,armor:278:armor:0.02:5.56
+R	paladin/protection	55	10087	12729	gear	12.14	int:14:int:0.47:6.58,armor:278:armor:0.02:5.56
+R	paladin/protection	55	10087	12730	gear	16.76	spi:14:spi:0.8:11.2,armor:278:armor:0.02:5.56
+R	paladin/protection	55	10087	12731	gear	13.400000000000002	sta:14:sta:0.56:7.84,armor:278:armor:0.02:5.56
+R	paladin/protection	55	10087	12732	gear	19.560000000000002	str:14:str:1:14,armor:278:armor:0.02:5.56
+R	paladin/protection	55	10087	12733	gear	19.28	ap:28:ap:0.49:13.72,armor:278:armor:0.02:5.56
+R	paladin/protection	55	10087	12734	gear	37.56	sp:16:sp:2:32,armor:278:armor:0.02:5.56
+R	paladin/protection	55	10087	12735	gear	25.560000000000002	spDmg:10:sp:2:20,armor:278:armor:0.02:5.56
+R	paladin/protection	55	10087	12736	gear	10.420000000000002	defense:9:defense:0.54:4.86,armor:278:armor:0.02:5.56
+R	paladin/protection	55	10087	12740	gear	10.600000000000001	sta:9:sta:0.56:5.04,armor:278:armor:0.02:5.56
+R	paladin/protection	55	10087	12741	gear	10.600000000000001	sta:9:sta:0.56:5.04,armor:278:armor:0.02:5.56
+R	paladin/protection	55	10087	12742	gear	10.600000000000001	sta:9:sta:0.56:5.04,armor:278:armor:0.02:5.56
+R	paladin/protection	55	10087	12743	gear	10.600000000000001	sta:9:sta:0.56:5.04,armor:278:armor:0.02:5.56
+R	paladin/protection	55	10087	12744	gear	10.600000000000001	sta:9:sta:0.56:5.04,armor:278:armor:0.02:5.56
+R	paladin/protection	55	10087	12748	gear	19.98	int:6:int:0.47:2.82,sta:10:sta:0.56:5.6,spDmg:3:sp:2:6,armor:278:armor:0.02:5.56
+R	paladin/protection	55	10087	12749	gear	21.060000000000002	int:10:int:0.47:4.7,spi:6:spi:0.8:4.8,spDmg:3:sp:2:6,armor:278:armor:0.02:5.56
+R	paladin/protection	55	10087	12750	gear	21.96	spi:6:spi:0.8:4.8,sta:10:sta:0.56:5.6,spDmg:3:sp:2:6,armor:278:armor:0.02:5.56
+R	paladin/protection	55	10087	12752	gear	19.0	agi:6:agi:0.64:3.84,sta:10:sta:0.56:5.6,str:4:str:1:4,armor:278:armor:0.02:5.56
+R	paladin/protection	55	10087	12753	gear	18.78	defense:3:defense:0.54:1.62,sta:10:sta:0.56:5.6,str:6:str:1:6,armor:278:armor:0.02:5.56
+R	paladin/protection	55	10087	12754	gear	23.32	defense:4:defense:0.54:2.16,sp:5:sp:2:10,sta:10:sta:0.56:5.6,armor:278:armor:0.02:5.56
+R	paladin/protection	55	10087	12755	gear	27.160000000000004	sp:5:sp:2:10,sta:10:sta:0.56:5.6,str:6:str:1:6,armor:278:armor:0.02:5.56
+R	paladin/protection	55	10087	12759	gear	43.56	spHoly:20:spHoly:1.9:38,armor:278:armor:0.02:5.56
+R	paladin/protection	55	10368	0	gear	45.8	str:15:str:1:15,sta:14:sta:0.56:7.84,spi:14:spi:0.8:11.2,armor:588:armor:0.02:11.76
+R	paladin/protection	55	11187	0	gear	0.08	armor:4:armor:0.02:0.08
+R	paladin/protection	55	11994	0	gear	0.0	
+R	paladin/protection	55	11994	12718	gear	3.09	int:3:int:0.47:1.41,sta:3:sta:0.56:1.68
+R	paladin/protection	55	11994	12719	gear	4.08	spi:3:spi:0.8:2.4,sta:3:sta:0.56:1.68
+R	paladin/protection	55	11994	12720	gear	3.8100000000000005	int:3:int:0.47:1.41,spi:3:spi:0.8:2.4
+R	paladin/protection	55	11994	12721	gear	3.6	agi:3:agi:0.64:1.92,sta:3:sta:0.56:1.68
+R	paladin/protection	55	11994	12722	gear	4.68	sta:3:sta:0.56:1.68,str:3:str:1:3
+R	paladin/protection	55	11994	12723	gear	4.41	int:3:int:0.47:1.41,str:3:str:1:3
+R	paladin/protection	55	11994	12724	gear	3.33	agi:3:agi:0.64:1.92,int:3:int:0.47:1.41
+R	paladin/protection	55	11994	12725	gear	5.4	spi:3:spi:0.8:2.4,str:3:str:1:3
+R	paladin/protection	55	11994	12726	gear	4.32	agi:3:agi:0.64:1.92,spi:3:spi:0.8:2.4
+R	paladin/protection	55	11994	12727	gear	4.92	agi:3:agi:0.64:1.92,str:3:str:1:3
+R	paladin/protection	55	11994	12728	gear	3.2	agi:5:agi:0.64:3.2
+R	paladin/protection	55	11994	12729	gear	2.3499999999999996	int:5:int:0.47:2.35
+R	paladin/protection	55	11994	12730	gear	4.0	spi:5:spi:0.8:4
+R	paladin/protection	55	11994	12731	gear	2.8000000000000003	sta:5:sta:0.56:2.8
+R	paladin/protection	55	11994	12732	gear	5.0	str:5:str:1:5
+R	paladin/protection	55	11994	12733	gear	4.9	ap:10:ap:0.49:4.9
+R	paladin/protection	55	11994	12737	gear	0.0	
+R	paladin/protection	55	11994	12738	gear	0.66	mp5:2:mp5:0.33:0.66
+R	paladin/protection	55	11994	12739	gear	1.28	agi:2:agi:0.64:1.28
+R	paladin/protection	55	11994	12740	gear	1.6800000000000002	sta:3:sta:0.56:1.68
+R	paladin/protection	55	11994	12741	gear	1.6800000000000002	sta:3:sta:0.56:1.68
+R	paladin/protection	55	11994	12742	gear	1.6800000000000002	sta:3:sta:0.56:1.68
+R	paladin/protection	55	11994	12743	gear	1.6800000000000002	sta:3:sta:0.56:1.68
+R	paladin/protection	55	11994	12744	gear	1.6800000000000002	sta:3:sta:0.56:1.68
+R	paladin/protection	55	12790	0	mh	361.476	dps:53.82:dps:6.8:365.976,speed:0.6:speed:-7.5:-4.5
+R	paladin/protection	55	13183	0	mh	269.52099999999996	dps:39.47:dps:6.8:268.396,speed:-0.15:speed:-7.5:1.125
+R	paladin/protection	55	14122	0	gear	0.28	armor:14:armor:0.02:0.28
+R	paladin/protection	55	14122	12718	gear	2.34	int:2:int:0.47:0.94,sta:2:sta:0.56:1.12,armor:14:armor:0.02:0.28
+R	paladin/protection	55	14122	12719	gear	3.0	spi:2:spi:0.8:1.6,sta:2:sta:0.56:1.12,armor:14:armor:0.02:0.28
+R	paladin/protection	55	14122	12720	gear	2.8200000000000003	int:2:int:0.47:0.94,spi:2:spi:0.8:1.6,armor:14:armor:0.02:0.28
+R	paladin/protection	55	14122	12729	gear	1.69	int:3:int:0.47:1.41,armor:14:armor:0.02:0.28
+R	paladin/protection	55	14122	12730	gear	2.6800000000000006	spi:3:spi:0.8:2.4,armor:14:armor:0.02:0.28
+R	paladin/protection	55	14122	12731	gear	1.9600000000000002	sta:3:sta:0.56:1.68,armor:14:armor:0.02:0.28
+R	paladin/protection	55	14122	12734	gear	8.28	sp:4:sp:2:8,armor:14:armor:0.02:0.28
+R	paladin/protection	55	14122	12735	gear	4.28	spDmg:2:sp:2:4,armor:14:armor:0.02:0.28
+R	paladin/protection	55	14122	12740	gear	1.4000000000000001	sta:2:sta:0.56:1.12,armor:14:armor:0.02:0.28
+R	paladin/protection	55	14122	12741	gear	1.4000000000000001	sta:2:sta:0.56:1.12,armor:14:armor:0.02:0.28
+R	paladin/protection	55	14122	12742	gear	1.4000000000000001	sta:2:sta:0.56:1.12,armor:14:armor:0.02:0.28
+R	paladin/protection	55	14122	12743	gear	1.4000000000000001	sta:2:sta:0.56:1.12,armor:14:armor:0.02:0.28
+R	paladin/protection	55	14122	12744	gear	1.4000000000000001	sta:2:sta:0.56:1.12,armor:14:armor:0.02:0.28
+R	paladin/protection	55	14122	12745	gear	3.7800000000000002	int:2:int:0.47:0.94,sta:1:sta:0.56:0.56,sp:1:sp:2:2,armor:14:armor:0.02:0.28
+R	paladin/protection	55	14122	12756	gear	0.28	armor:14:armor:0.02:0.28
+R	paladin/protection	55	14122	12757	gear	0.28	armor:14:armor:0.02:0.28
+R	paladin/protection	55	14122	12758	gear	0.28	armor:14:armor:0.02:0.28
+R	paladin/protection	55	14122	12759	gear	7.88	spHoly:4:spHoly:1.9:7.6,armor:14:armor:0.02:0.28
+R	paladin/protection	55	14122	12761	gear	0.28	armor:14:armor:0.02:0.28
+R	paladin/protection	55	14340	0	gear	12.4	sta:19:sta:0.56:10.64,armor:88:armor:0.02:1.76
+R	paladin/protection	55	14673	0	gear	12.24	str:3:str:1:3,agi:9:agi:0.64:5.76,sta:5:sta:0.56:2.8,armor:34:armor:0.02:0.68
+R	paladin/protection	55	14964	0	oh	34.4	armor:1720:armor:0.02:34.4
+R	paladin/protection	55	14964	12718	oh	43.67	int:9:int:0.47:4.23,sta:9:sta:0.56:5.04,armor:1720:armor:0.02:34.4
+R	paladin/protection	55	14964	12719	oh	46.64	spi:9:spi:0.8:7.2,sta:9:sta:0.56:5.04,armor:1720:armor:0.02:34.4
+R	paladin/protection	55	14964	12720	oh	45.83	int:9:int:0.47:4.23,spi:9:spi:0.8:7.2,armor:1720:armor:0.02:34.4
+R	paladin/protection	55	14964	12721	oh	45.2	agi:9:agi:0.64:5.76,sta:9:sta:0.56:5.04,armor:1720:armor:0.02:34.4
+R	paladin/protection	55	14964	12722	oh	48.44	sta:9:sta:0.56:5.04,str:9:str:1:9,armor:1720:armor:0.02:34.4
+R	paladin/protection	55	14964	12723	oh	47.629999999999995	int:9:int:0.47:4.23,str:9:str:1:9,armor:1720:armor:0.02:34.4
+R	paladin/protection	55	14964	12724	oh	44.39	agi:9:agi:0.64:5.76,int:9:int:0.47:4.23,armor:1720:armor:0.02:34.4
+R	paladin/protection	55	14964	12725	oh	50.599999999999994	spi:9:spi:0.8:7.2,str:9:str:1:9,armor:1720:armor:0.02:34.4
+R	paladin/protection	55	14964	12726	oh	47.36	agi:9:agi:0.64:5.76,spi:9:spi:0.8:7.2,armor:1720:armor:0.02:34.4
+R	paladin/protection	55	14964	12727	oh	49.16	agi:9:agi:0.64:5.76,str:9:str:1:9,armor:1720:armor:0.02:34.4
+R	paladin/protection	55	14964	12728	oh	43.36	agi:14:agi:0.64:8.96,armor:1720:armor:0.02:34.4
+R	paladin/protection	55	14964	12729	oh	40.98	int:14:int:0.47:6.58,armor:1720:armor:0.02:34.4
+R	paladin/protection	55	14964	12730	oh	45.6	spi:14:spi:0.8:11.2,armor:1720:armor:0.02:34.4
+R	paladin/protection	55	14964	12731	oh	42.24	sta:14:sta:0.56:7.84,armor:1720:armor:0.02:34.4
+R	paladin/protection	55	14964	12732	oh	48.4	str:14:str:1:14,armor:1720:armor:0.02:34.4
+R	paladin/protection	55	14964	12733	oh	48.12	ap:28:ap:0.49:13.72,armor:1720:armor:0.02:34.4
+R	paladin/protection	55	14964	12734	oh	66.4	sp:16:sp:2:32,armor:1720:armor:0.02:34.4
+R	paladin/protection	55	14964	12735	oh	54.4	spDmg:10:sp:2:20,armor:1720:armor:0.02:34.4
+R	paladin/protection	55	14964	12736	oh	39.26	defense:9:defense:0.54:4.86,armor:1720:armor:0.02:34.4
+R	paladin/protection	55	14964	12740	oh	39.44	sta:9:sta:0.56:5.04,armor:1720:armor:0.02:34.4
+R	paladin/protection	55	14964	12741	oh	39.44	sta:9:sta:0.56:5.04,armor:1720:armor:0.02:34.4
+R	paladin/protection	55	14964	12742	oh	39.44	sta:9:sta:0.56:5.04,armor:1720:armor:0.02:34.4
+R	paladin/protection	55	14964	12743	oh	39.44	sta:9:sta:0.56:5.04,armor:1720:armor:0.02:34.4
+R	paladin/protection	55	14964	12744	oh	39.44	sta:9:sta:0.56:5.04,armor:1720:armor:0.02:34.4
+R	paladin/protection	55	14964	12745	oh	52.459999999999994	int:10:int:0.47:4.7,sta:6:sta:0.56:3.36,sp:5:sp:2:10,armor:1720:armor:0.02:34.4
+R	paladin/protection	55	14964	12746	oh	53.9	int:10:int:0.47:4.7,spi:6:spi:0.8:4.8,sp:5:sp:2:10,armor:1720:armor:0.02:34.4
+R	paladin/protection	55	14964	12747	oh	54.8	spi:6:spi:0.8:4.8,sta:10:sta:0.56:5.6,sp:5:sp:2:10,armor:1720:armor:0.02:34.4
+R	paladin/protection	55	14964	12748	oh	48.82	int:6:int:0.47:2.82,sta:10:sta:0.56:5.6,spDmg:3:sp:2:6,armor:1720:armor:0.02:34.4
+R	paladin/protection	55	14964	12749	oh	49.9	int:10:int:0.47:4.7,spi:6:spi:0.8:4.8,spDmg:3:sp:2:6,armor:1720:armor:0.02:34.4
+R	paladin/protection	55	14964	12750	oh	50.8	spi:6:spi:0.8:4.8,sta:10:sta:0.56:5.6,spDmg:3:sp:2:6,armor:1720:armor:0.02:34.4
+R	paladin/protection	55	14964	12753	oh	47.62	defense:3:defense:0.54:1.62,sta:10:sta:0.56:5.6,str:6:str:1:6,armor:1720:armor:0.02:34.4
+R	paladin/protection	55	14964	12754	oh	52.16	defense:4:defense:0.54:2.16,sp:5:sp:2:10,sta:10:sta:0.56:5.6,armor:1720:armor:0.02:34.4
+R	paladin/protection	55	14964	12759	oh	72.4	spHoly:20:spHoly:1.9:38,armor:1720:armor:0.02:34.4
+R	paladin/protection	55	14964	12760	oh	34.4	armor:1720:armor:0.02:34.4
+R	paladin/protection	55	15235	0	mh	193.901	dps:28.57:dps:6.8:194.276,speed:0.05:speed:-7.5:-0.375
+R	paladin/protection	55	15235	12718	mh	199.05100000000002	int:5:int:0.47:2.35,sta:5:sta:0.56:2.8,dps:28.57:dps:6.8:194.276,speed:0.05:speed:-7.5:-0.375
+R	paladin/protection	55	15235	12719	mh	200.70100000000002	spi:5:spi:0.8:4,sta:5:sta:0.56:2.8,dps:28.57:dps:6.8:194.276,speed:0.05:speed:-7.5:-0.375
+R	paladin/protection	55	15235	12720	mh	200.251	int:5:int:0.47:2.35,spi:5:spi:0.8:4,dps:28.57:dps:6.8:194.276,speed:0.05:speed:-7.5:-0.375
+R	paladin/protection	55	15235	12721	mh	199.901	agi:5:agi:0.64:3.2,sta:5:sta:0.56:2.8,dps:28.57:dps:6.8:194.276,speed:0.05:speed:-7.5:-0.375
+R	paladin/protection	55	15235	12722	mh	201.70100000000002	sta:5:sta:0.56:2.8,str:5:str:1:5,dps:28.57:dps:6.8:194.276,speed:0.05:speed:-7.5:-0.375
+R	paladin/protection	55	15235	12723	mh	201.251	int:5:int:0.47:2.35,str:5:str:1:5,dps:28.57:dps:6.8:194.276,speed:0.05:speed:-7.5:-0.375
+R	paladin/protection	55	15235	12724	mh	199.45100000000002	agi:5:agi:0.64:3.2,int:5:int:0.47:2.35,dps:28.57:dps:6.8:194.276,speed:0.05:speed:-7.5:-0.375
+R	paladin/protection	55	15235	12725	mh	202.901	spi:5:spi:0.8:4,str:5:str:1:5,dps:28.57:dps:6.8:194.276,speed:0.05:speed:-7.5:-0.375
+R	paladin/protection	55	15235	12726	mh	201.101	agi:5:agi:0.64:3.2,spi:5:spi:0.8:4,dps:28.57:dps:6.8:194.276,speed:0.05:speed:-7.5:-0.375
+R	paladin/protection	55	15235	12727	mh	202.101	agi:5:agi:0.64:3.2,str:5:str:1:5,dps:28.57:dps:6.8:194.276,speed:0.05:speed:-7.5:-0.375
+R	paladin/protection	55	15235	12728	mh	199.02100000000002	agi:8:agi:0.64:5.12,dps:28.57:dps:6.8:194.276,speed:0.05:speed:-7.5:-0.375
+R	paladin/protection	55	15235	12729	mh	197.661	int:8:int:0.47:3.76,dps:28.57:dps:6.8:194.276,speed:0.05:speed:-7.5:-0.375
+R	paladin/protection	55	15235	12730	mh	200.30100000000002	spi:8:spi:0.8:6.4,dps:28.57:dps:6.8:194.276,speed:0.05:speed:-7.5:-0.375
+R	paladin/protection	55	15235	12731	mh	198.381	sta:8:sta:0.56:4.48,dps:28.57:dps:6.8:194.276,speed:0.05:speed:-7.5:-0.375
+R	paladin/protection	55	15235	12732	mh	201.901	str:8:str:1:8,dps:28.57:dps:6.8:194.276,speed:0.05:speed:-7.5:-0.375
+R	paladin/protection	55	15235	12733	mh	201.741	ap:16:ap:0.49:7.84,dps:28.57:dps:6.8:194.276,speed:0.05:speed:-7.5:-0.375
+R	paladin/protection	55	15235	12736	mh	196.601	defense:5:defense:0.54:2.7,dps:28.57:dps:6.8:194.276,speed:0.05:speed:-7.5:-0.375
+R	paladin/protection	55	15235	12740	mh	196.70100000000002	sta:5:sta:0.56:2.8,dps:28.57:dps:6.8:194.276,speed:0.05:speed:-7.5:-0.375
+R	paladin/protection	55	15235	12741	mh	196.70100000000002	sta:5:sta:0.56:2.8,dps:28.57:dps:6.8:194.276,speed:0.05:speed:-7.5:-0.375
+R	paladin/protection	55	15235	12742	mh	196.70100000000002	sta:5:sta:0.56:2.8,dps:28.57:dps:6.8:194.276,speed:0.05:speed:-7.5:-0.375
+R	paladin/protection	55	15235	12743	mh	196.70100000000002	sta:5:sta:0.56:2.8,dps:28.57:dps:6.8:194.276,speed:0.05:speed:-7.5:-0.375
+R	paladin/protection	55	15235	12744	mh	196.70100000000002	sta:5:sta:0.56:2.8,dps:28.57:dps:6.8:194.276,speed:0.05:speed:-7.5:-0.375
+R	paladin/protection	55	15235	12751	mh	202.61100000000002	agi:3:agi:0.64:1.92,ap:7:ap:0.49:3.43,sta:6:sta:0.56:3.36,dps:28.57:dps:6.8:194.276,speed:0.05:speed:-7.5:-0.375
+R	paladin/protection	55	15235	12752	mh	202.181	agi:3:agi:0.64:1.92,sta:6:sta:0.56:3.36,str:3:str:1:3,dps:28.57:dps:6.8:194.276,speed:0.05:speed:-7.5:-0.375
+R	paladin/protection	55	15235	12753	mh	201.341	defense:2:defense:0.54:1.08,sta:6:sta:0.56:3.36,str:3:str:1:3,dps:28.57:dps:6.8:194.276,speed:0.05:speed:-7.5:-0.375
+R	paladin/protection	55	15235	12754	mh	204.341	defense:2:defense:0.54:1.08,sp:3:sp:2:6,sta:6:sta:0.56:3.36,dps:28.57:dps:6.8:194.276,speed:0.05:speed:-7.5:-0.375
+R	paladin/protection	55	15235	12759	mh	214.80100000000002	spHoly:11:spHoly:1.9:20.9,dps:28.57:dps:6.8:194.276,speed:0.05:speed:-7.5:-0.375
+R	paladin/protection	55	15235	12906	mh	274.961	int:6:int:0.47:2.82,sta:4:sta:0.56:2.24,sp:38:sp:2:76,dps:28.57:dps:6.8:194.276,speed:0.05:speed:-7.5:-0.375
+R	paladin/protection	55	15235	12908	mh	275.921	int:6:int:0.47:2.82,sp:38:sp:2:76,spi:4:spi:0.8:3.2,dps:28.57:dps:6.8:194.276,speed:0.05:speed:-7.5:-0.375
+R	paladin/protection	55	15235	12910	mh	276.461	sp:38:sp:2:76,spi:4:spi:0.8:3.2,sta:6:sta:0.56:3.36,dps:28.57:dps:6.8:194.276,speed:0.05:speed:-7.5:-0.375
+R	paladin/protection	55	15235	12912	mh	247.14100000000002	spDmg:24:sp:2:48,int:4:int:0.47:1.88,sta:6:sta:0.56:3.36,dps:28.57:dps:6.8:194.276,speed:0.05:speed:-7.5:-0.375
+R	paladin/protection	55	15235	12913	mh	247.92100000000002	int:6:int:0.47:2.82,spDmg:24:sp:2:48,spi:4:spi:0.8:3.2,dps:28.57:dps:6.8:194.276,speed:0.05:speed:-7.5:-0.375
+R	paladin/protection	55	15235	12916	mh	248.461	spDmg:24:sp:2:48,spi:4:spi:0.8:3.2,sta:6:sta:0.56:3.36,dps:28.57:dps:6.8:194.276,speed:0.05:speed:-7.5:-0.375
+R	paladin/protection	55	15235	12917	mh	273.661	sp:38:sp:2:76,int:8:int:0.47:3.76,dps:28.57:dps:6.8:194.276,speed:0.05:speed:-7.5:-0.375
+R	paladin/protection	55	15235	12920	mh	245.661	int:8:int:0.47:3.76,spDmg:24:sp:2:48,dps:28.57:dps:6.8:194.276,speed:0.05:speed:-7.5:-0.375
+R	paladin/protection	55	15477	0	gear	2.02	armor:101:armor:0.02:2.02
+R	paladin/protection	55	15477	12718	gear	3.05	int:1:int:0.47:0.47,sta:1:sta:0.56:0.56,armor:101:armor:0.02:2.02
+R	paladin/protection	55	15477	12719	gear	3.38	spi:1:spi:0.8:0.8,sta:1:sta:0.56:0.56,armor:101:armor:0.02:2.02
+R	paladin/protection	55	15477	12720	gear	3.29	int:1:int:0.47:0.47,spi:1:spi:0.8:0.8,armor:101:armor:0.02:2.02
+R	paladin/protection	55	15477	12721	gear	3.22	agi:1:agi:0.64:0.64,sta:1:sta:0.56:0.56,armor:101:armor:0.02:2.02
+R	paladin/protection	55	15477	12722	gear	3.58	sta:1:sta:0.56:0.56,str:1:str:1:1,armor:101:armor:0.02:2.02
+R	paladin/protection	55	15477	12723	gear	3.49	int:1:int:0.47:0.47,str:1:str:1:1,armor:101:armor:0.02:2.02
+R	paladin/protection	55	15477	12724	gear	3.13	agi:1:agi:0.64:0.64,int:1:int:0.47:0.47,armor:101:armor:0.02:2.02
+R	paladin/protection	55	15477	12725	gear	3.8200000000000003	spi:1:spi:0.8:0.8,str:1:str:1:1,armor:101:armor:0.02:2.02
+R	paladin/protection	55	15477	12726	gear	3.46	agi:1:agi:0.64:0.64,spi:1:spi:0.8:0.8,armor:101:armor:0.02:2.02
+R	paladin/protection	55	15477	12727	gear	3.66	agi:1:agi:0.64:0.64,str:1:str:1:1,armor:101:armor:0.02:2.02
+R	paladin/protection	55	15477	12728	gear	3.3	agi:2:agi:0.64:1.28,armor:101:armor:0.02:2.02
+R	paladin/protection	55	15477	12729	gear	2.96	int:2:int:0.47:0.94,armor:101:armor:0.02:2.02
+R	paladin/protection	55	15477	12730	gear	3.62	spi:2:spi:0.8:1.6,armor:101:armor:0.02:2.02
+R	paladin/protection	55	15477	12731	gear	3.14	sta:2:sta:0.56:1.12,armor:101:armor:0.02:2.02
+R	paladin/protection	55	15477	12732	gear	4.02	str:2:str:1:2,armor:101:armor:0.02:2.02
+R	paladin/protection	55	15477	12733	gear	3.98	ap:4:ap:0.49:1.96,armor:101:armor:0.02:2.02
+R	paladin/protection	55	15477	12734	gear	6.02	sp:2:sp:2:4,armor:101:armor:0.02:2.02
+R	paladin/protection	55	15477	12735	gear	4.02	spDmg:1:sp:2:2,armor:101:armor:0.02:2.02
+R	paladin/protection	55	15477	12736	gear	2.56	defense:1:defense:0.54:0.54,armor:101:armor:0.02:2.02
+R	paladin/protection	55	15477	12740	gear	2.58	sta:1:sta:0.56:0.56,armor:101:armor:0.02:2.02
+R	paladin/protection	55	15477	12741	gear	2.58	sta:1:sta:0.56:0.56,armor:101:armor:0.02:2.02
+R	paladin/protection	55	15477	12742	gear	2.58	sta:1:sta:0.56:0.56,armor:101:armor:0.02:2.02
+R	paladin/protection	55	15477	12743	gear	2.58	sta:1:sta:0.56:0.56,armor:101:armor:0.02:2.02
+R	paladin/protection	55	15477	12744	gear	2.58	sta:1:sta:0.56:0.56,armor:101:armor:0.02:2.02
+R	paladin/protection	55	15477	12759	gear	7.719999999999999	spHoly:3:spHoly:1.9:5.7,armor:101:armor:0.02:2.02
+R	paladin/protection	55	15945	0	oh	2.72	sta:2:sta:0.56:1.12,spi:2:spi:0.8:1.6
+R	paladin/protection	55	16711	0	gear	23.36	agi:21:agi:0.64:13.44,sta:9:sta:0.56:5.04,hit:0.3:hit:8.6:2.58,armor:115:armor:0.02:2.3
+R	paladin/protection	55	18312	0	gear	72.18	str:13:str:1:13,sta:20:sta:0.56:11.2,int:12:int:0.47:5.64,sp:15:sp:2:30,armor:617:armor:0.02:12.34
+R	paladin/protection	55	18726	0	gear	13.64	sta:15:sta:0.56:8.4,defense:7:defense:0.54:3.78,armor:73:armor:0.02:1.46
+R	paladin/protection	55	19557	0	mh	149.02	str:7:str:1:7,sta:3:sta:0.56:1.68,dps:21.3:dps:6.8:144.84,speed:0.6:speed:-7.5:-4.5
+R	paladin/protection	55	20129	0	gear	16.34	agi:6:agi:0.64:3.84,str:6:str:1:6,sta:6:sta:0.56:3.36,armor:157:armor:0.02:3.14
+R	paladin/protection	55	22270	0	gear	44.86	str:11:str:1:11,defense:3:defense:0.54:1.62,int:10:int:0.47:4.7,sta:10:sta:0.56:5.6,sp:7:sp:2:14,armor:397:armor:0.02:7.94
+R	paladin/protection	55	22400	0	ranged	0.0	
+R	paladin/protection	55	22967	0	gear	21.860000000000003	sta:25:sta:0.56:14,armor:393:armor:0.02:7.86
+R	paladin/protection	55	250491	0	gear	18.27	int:5:int:0.47:2.35,sta:4:sta:0.56:2.24,spDmg:5:sp:2:10,armor:184:armor:0.02:3.68
+R	paladin/protection	55	252507	0	gear	19.12	sta:10:sta:0.56:5.6,spDmg:6:sp:2:12,armor:76:armor:0.02:1.52
+R	paladin/protection	55	254111	0	gear	12.590000000000002	int:9:int:0.47:4.23,sta:13:sta:0.56:7.28,armor:54:armor:0.02:1.08
+R	paladin/protection	55	270033	0	gear	6.340000000000001	agi:4:agi:0.64:2.56,str:3:str:1:3,armor:39:armor:0.02:0.78
+R	paladin/protection	55	271956	0	gear	39.580000000000005	agi:27:agi:0.64:17.28,sta:12:sta:0.56:6.72,crit:1:crit:9:9,crit:1:spellCrit:0.34:0.34,armor:312:armor:0.02:6.24
+R	paladin/protection	55	272958	0	gear	57.65	int:27:int:0.47:12.69,sta:12:sta:0.56:6.72,sp:16:sp:2:32,armor:312:armor:0.02:6.24
+R	paladin/protection	55	276399	0	gear	48.93	sta:18:sta:0.56:10.08,mp5:7:mp5:0.33:2.31,spDmg:12:sp:2:24,armor:627:armor:0.02:12.54
+R	paladin/protection	55	277235	0	gear	26.700000000000003	str:14:str:1:14,sta:10:sta:0.56:5.6,armor:355:armor:0.02:7.1
+R	paladin/protection	55	282560	0	gear	32.24	int:10:int:0.47:4.7,sta:13:sta:0.56:7.28,sp:8:sp:2:16,armor:213:armor:0.02:4.26
+R	paladin/protection	55	286609	0	oh	44.10000000000001	spi:6:spi:0.8:4.8,defense:7:defense:0.54:3.78,armor:1776:armor:0.02:35.52
+R	paladin/protection	60	25	0	mh	7.3500000000000005	dps:1.05:dps:7:7.35
+R	paladin/protection	60	1315	0	gear	13.549999999999999	sta:10:sta:0.11:1.1,spi:15:spi:0.83:12.45
+R	paladin/protection	60	1808	0	gear	0.74	armor:74:armor:0.01:0.74
+R	paladin/protection	60	2614	0	gear	0.29	armor:29:armor:0.01:0.29
+R	paladin/protection	60	3158	0	gear	0.26	armor:26:armor:0.01:0.26
+R	paladin/protection	60	3570	0	mh	58.839999999999996	str:2:str:1:2,dps:8.12:dps:7:56.84
+R	paladin/protection	60	4068	0	oh	10.620000000000001	sta:9:sta:0.11:0.99,armor:963:armor:0.01:9.63
+R	paladin/protection	60	4570	0	mh	70.0	dps:10:dps:7:70
+R	paladin/protection	60	4570	12718	mh	73.63	int:3:int:1.1:3.3,sta:3:sta:0.11:0.33,dps:10:dps:7:70
+R	paladin/protection	60	4570	12719	mh	72.82	spi:3:spi:0.83:2.49,sta:3:sta:0.11:0.33,dps:10:dps:7:70
+R	paladin/protection	60	4570	12720	mh	75.79	int:3:int:1.1:3.3,spi:3:spi:0.83:2.49,dps:10:dps:7:70
+R	paladin/protection	60	4570	12721	mh	72.07	agi:3:agi:0.58:1.74,sta:3:sta:0.11:0.33,dps:10:dps:7:70
+R	paladin/protection	60	4570	12722	mh	73.33	sta:3:sta:0.11:0.33,str:3:str:1:3,dps:10:dps:7:70
+R	paladin/protection	60	4570	12723	mh	76.3	int:3:int:1.1:3.3,str:3:str:1:3,dps:10:dps:7:70
+R	paladin/protection	60	4570	12724	mh	75.04	agi:3:agi:0.58:1.74,int:3:int:1.1:3.3,dps:10:dps:7:70
+R	paladin/protection	60	4570	12725	mh	75.49	spi:3:spi:0.83:2.49,str:3:str:1:3,dps:10:dps:7:70
+R	paladin/protection	60	4570	12726	mh	74.23	agi:3:agi:0.58:1.74,spi:3:spi:0.83:2.49,dps:10:dps:7:70
+R	paladin/protection	60	4570	12727	mh	74.74	agi:3:agi:0.58:1.74,str:3:str:1:3,dps:10:dps:7:70
+R	paladin/protection	60	4570	12728	mh	72.32	agi:4:agi:0.58:2.32,dps:10:dps:7:70
+R	paladin/protection	60	4570	12729	mh	74.4	int:4:int:1.1:4.4,dps:10:dps:7:70
+R	paladin/protection	60	4570	12730	mh	73.32	spi:4:spi:0.83:3.32,dps:10:dps:7:70
+R	paladin/protection	60	4570	12731	mh	70.44	sta:4:sta:0.11:0.44,dps:10:dps:7:70
+R	paladin/protection	60	4570	12732	mh	74.0	str:4:str:1:4,dps:10:dps:7:70
+R	paladin/protection	60	4570	12733	mh	74.0	ap:8:ap:0.5:4,dps:10:dps:7:70
+R	paladin/protection	60	4570	12736	mh	71.53	defense:3:defense:0.51:1.53,dps:10:dps:7:70
+R	paladin/protection	60	4570	12740	mh	70.33	sta:3:sta:0.11:0.33,dps:10:dps:7:70
+R	paladin/protection	60	4570	12741	mh	70.33	sta:3:sta:0.11:0.33,dps:10:dps:7:70
+R	paladin/protection	60	4570	12742	mh	70.33	sta:3:sta:0.11:0.33,dps:10:dps:7:70
+R	paladin/protection	60	4570	12743	mh	70.33	sta:3:sta:0.11:0.33,dps:10:dps:7:70
+R	paladin/protection	60	4570	12744	mh	70.33	sta:3:sta:0.11:0.33,dps:10:dps:7:70
+R	paladin/protection	60	4570	12759	mh	81.4	spHoly:6:spHoly:1.9:11.4,dps:10:dps:7:70
+R	paladin/protection	60	4570	12918	mh	89.6	sp:8:sp:1.9:15.2,int:4:int:1.1:4.4,dps:10:dps:7:70
+R	paladin/protection	60	4570	12919	mh	83.9	spDmg:5:sp:1.9:9.5,int:4:int:1.1:4.4,dps:10:dps:7:70
+R	paladin/protection	60	5079	0	gear	0.0	
+R	paladin/protection	60	6063	0	gear	0.55	armor:55:armor:0.01:0.55
+R	paladin/protection	60	6540	0	gear	0.28	armor:28:armor:0.01:0.28
+R	paladin/protection	60	6540	12718	gear	3.91	int:3:int:1.1:3.3,sta:3:sta:0.11:0.33,armor:28:armor:0.01:0.28
+R	paladin/protection	60	6540	12719	gear	3.0999999999999996	spi:3:spi:0.83:2.49,sta:3:sta:0.11:0.33,armor:28:armor:0.01:0.28
+R	paladin/protection	60	6540	12720	gear	6.07	int:3:int:1.1:3.3,spi:3:spi:0.83:2.49,armor:28:armor:0.01:0.28
+R	paladin/protection	60	6540	12729	gear	5.78	int:5:int:1.1:5.5,armor:28:armor:0.01:0.28
+R	paladin/protection	60	6540	12730	gear	4.43	spi:5:spi:0.83:4.15,armor:28:armor:0.01:0.28
+R	paladin/protection	60	6540	12731	gear	0.8300000000000001	sta:5:sta:0.11:0.55,armor:28:armor:0.01:0.28
+R	paladin/protection	60	6540	12734	gear	11.679999999999998	sp:6:sp:1.9:11.4,armor:28:armor:0.01:0.28
+R	paladin/protection	60	6540	12735	gear	7.88	spDmg:4:sp:1.9:7.6,armor:28:armor:0.01:0.28
+R	paladin/protection	60	6540	12740	gear	0.6100000000000001	sta:3:sta:0.11:0.33,armor:28:armor:0.01:0.28
+R	paladin/protection	60	6540	12741	gear	0.6100000000000001	sta:3:sta:0.11:0.33,armor:28:armor:0.01:0.28
+R	paladin/protection	60	6540	12742	gear	0.6100000000000001	sta:3:sta:0.11:0.33,armor:28:armor:0.01:0.28
+R	paladin/protection	60	6540	12743	gear	0.6100000000000001	sta:3:sta:0.11:0.33,armor:28:armor:0.01:0.28
+R	paladin/protection	60	6540	12744	gear	0.6100000000000001	sta:3:sta:0.11:0.33,armor:28:armor:0.01:0.28
+R	paladin/protection	60	6540	12745	gear	8.7	int:4:int:1.1:4.4,sta:2:sta:0.11:0.22,sp:2:sp:1.9:3.8,armor:28:armor:0.01:0.28
+R	paladin/protection	60	6540	12756	gear	0.28	armor:28:armor:0.01:0.28
+R	paladin/protection	60	6540	12757	gear	0.28	armor:28:armor:0.01:0.28
+R	paladin/protection	60	6540	12758	gear	0.28	armor:28:armor:0.01:0.28
+R	paladin/protection	60	6540	12759	gear	13.579999999999998	spHoly:7:spHoly:1.9:13.3,armor:28:armor:0.01:0.28
+R	paladin/protection	60	6540	12761	gear	0.28	armor:28:armor:0.01:0.28
+R	paladin/protection	60	6557	0	gear	0.49	armor:49:armor:0.01:0.49
+R	paladin/protection	60	6557	12718	gear	2.91	int:2:int:1.1:2.2,sta:2:sta:0.11:0.22,armor:49:armor:0.01:0.49
+R	paladin/protection	60	6557	12719	gear	2.37	spi:2:spi:0.83:1.66,sta:2:sta:0.11:0.22,armor:49:armor:0.01:0.49
+R	paladin/protection	60	6557	12720	gear	4.3500000000000005	int:2:int:1.1:2.2,spi:2:spi:0.83:1.66,armor:49:armor:0.01:0.49
+R	paladin/protection	60	6557	12721	gear	1.8699999999999999	agi:2:agi:0.58:1.16,sta:2:sta:0.11:0.22,armor:49:armor:0.01:0.49
+R	paladin/protection	60	6557	12722	gear	2.71	sta:2:sta:0.11:0.22,str:2:str:1:2,armor:49:armor:0.01:0.49
+R	paladin/protection	60	6557	12723	gear	4.69	int:2:int:1.1:2.2,str:2:str:1:2,armor:49:armor:0.01:0.49
+R	paladin/protection	60	6557	12724	gear	3.8500000000000005	agi:2:agi:0.58:1.16,int:2:int:1.1:2.2,armor:49:armor:0.01:0.49
+R	paladin/protection	60	6557	12725	gear	4.15	spi:2:spi:0.83:1.66,str:2:str:1:2,armor:49:armor:0.01:0.49
+R	paladin/protection	60	6557	12726	gear	3.3099999999999996	agi:2:agi:0.58:1.16,spi:2:spi:0.83:1.66,armor:49:armor:0.01:0.49
+R	paladin/protection	60	6557	12727	gear	3.6500000000000004	agi:2:agi:0.58:1.16,str:2:str:1:2,armor:49:armor:0.01:0.49
+R	paladin/protection	60	6557	12728	gear	2.2299999999999995	agi:3:agi:0.58:1.74,armor:49:armor:0.01:0.49
+R	paladin/protection	60	6557	12729	gear	3.79	int:3:int:1.1:3.3,armor:49:armor:0.01:0.49
+R	paladin/protection	60	6557	12730	gear	2.9799999999999995	spi:3:spi:0.83:2.49,armor:49:armor:0.01:0.49
+R	paladin/protection	60	6557	12731	gear	0.8200000000000001	sta:3:sta:0.11:0.33,armor:49:armor:0.01:0.49
+R	paladin/protection	60	6557	12732	gear	3.49	str:3:str:1:3,armor:49:armor:0.01:0.49
+R	paladin/protection	60	6557	12733	gear	3.49	ap:6:ap:0.5:3,armor:49:armor:0.01:0.49
+R	paladin/protection	60	6557	12734	gear	8.09	sp:4:sp:1.9:7.6,armor:49:armor:0.01:0.49
+R	paladin/protection	60	6557	12735	gear	4.29	spDmg:2:sp:1.9:3.8,armor:49:armor:0.01:0.49
+R	paladin/protection	60	6557	12736	gear	1.51	defense:2:defense:0.51:1.02,armor:49:armor:0.01:0.49
+R	paladin/protection	60	6557	12740	gear	0.71	sta:2:sta:0.11:0.22,armor:49:armor:0.01:0.49
+R	paladin/protection	60	6557	12741	gear	0.71	sta:2:sta:0.11:0.22,armor:49:armor:0.01:0.49
+R	paladin/protection	60	6557	12742	gear	0.71	sta:2:sta:0.11:0.22,armor:49:armor:0.01:0.49
+R	paladin/protection	60	6557	12743	gear	0.71	sta:2:sta:0.11:0.22,armor:49:armor:0.01:0.49
+R	paladin/protection	60	6557	12744	gear	0.71	sta:2:sta:0.11:0.22,armor:49:armor:0.01:0.49
+R	paladin/protection	60	6557	12756	gear	0.49	armor:49:armor:0.01:0.49
+R	paladin/protection	60	6557	12760	gear	0.49	armor:49:armor:0.01:0.49
+R	paladin/protection	60	7047	0	gear	4.409999999999999	spi:5:spi:0.83:4.15,armor:26:armor:0.01:0.26
+R	paladin/protection	60	7538	0	gear	2.63	armor:263:armor:0.01:2.63
+R	paladin/protection	60	7538	12718	gear	18.36	int:13:int:1.1:14.3,sta:13:sta:0.11:1.43,armor:263:armor:0.01:2.63
+R	paladin/protection	60	7538	12719	gear	14.849999999999998	spi:13:spi:0.83:10.79,sta:13:sta:0.11:1.43,armor:263:armor:0.01:2.63
+R	paladin/protection	60	7538	12720	gear	27.72	int:13:int:1.1:14.3,spi:13:spi:0.83:10.79,armor:263:armor:0.01:2.63
+R	paladin/protection	60	7538	12721	gear	11.599999999999998	agi:13:agi:0.58:7.54,sta:13:sta:0.11:1.43,armor:263:armor:0.01:2.63
+R	paladin/protection	60	7538	12722	gear	17.06	sta:13:sta:0.11:1.43,str:13:str:1:13,armor:263:armor:0.01:2.63
+R	paladin/protection	60	7538	12723	gear	29.93	int:13:int:1.1:14.3,str:13:str:1:13,armor:263:armor:0.01:2.63
+R	paladin/protection	60	7538	12724	gear	24.47	agi:13:agi:0.58:7.54,int:13:int:1.1:14.3,armor:263:armor:0.01:2.63
+R	paladin/protection	60	7538	12725	gear	26.419999999999998	spi:13:spi:0.83:10.79,str:13:str:1:13,armor:263:armor:0.01:2.63
+R	paladin/protection	60	7538	12726	gear	20.959999999999997	agi:13:agi:0.58:7.54,spi:13:spi:0.83:10.79,armor:263:armor:0.01:2.63
+R	paladin/protection	60	7538	12727	gear	23.169999999999998	agi:13:agi:0.58:7.54,str:13:str:1:13,armor:263:armor:0.01:2.63
+R	paladin/protection	60	7538	12728	gear	14.23	agi:20:agi:0.58:11.6,armor:263:armor:0.01:2.63
+R	paladin/protection	60	7538	12729	gear	24.63	int:20:int:1.1:22,armor:263:armor:0.01:2.63
+R	paladin/protection	60	7538	12730	gear	19.229999999999997	spi:20:spi:0.83:16.6,armor:263:armor:0.01:2.63
+R	paladin/protection	60	7538	12731	gear	4.83	sta:20:sta:0.11:2.2,armor:263:armor:0.01:2.63
+R	paladin/protection	60	7538	12732	gear	22.63	str:20:str:1:20,armor:263:armor:0.01:2.63
+R	paladin/protection	60	7538	12733	gear	22.63	ap:40:ap:0.5:20,armor:263:armor:0.01:2.63
+R	paladin/protection	60	7538	12734	gear	46.33	sp:23:sp:1.9:43.7,armor:263:armor:0.01:2.63
+R	paladin/protection	60	7538	12735	gear	31.13	spDmg:15:sp:1.9:28.5,armor:263:armor:0.01:2.63
+R	paladin/protection	60	7538	12740	gear	4.06	sta:13:sta:0.11:1.43,armor:263:armor:0.01:2.63
+R	paladin/protection	60	7538	12741	gear	4.06	sta:13:sta:0.11:1.43,armor:263:armor:0.01:2.63
+R	paladin/protection	60	7538	12742	gear	4.06	sta:13:sta:0.11:1.43,armor:263:armor:0.01:2.63
+R	paladin/protection	60	7538	12743	gear	4.06	sta:13:sta:0.11:1.43,armor:263:armor:0.01:2.63
+R	paladin/protection	60	7538	12744	gear	4.06	sta:13:sta:0.11:1.43,armor:263:armor:0.01:2.63
+R	paladin/protection	60	7538	12745	gear	33.31	int:15:int:1.1:16.5,sta:8:sta:0.11:0.88,sp:7:sp:1.9:13.3,armor:263:armor:0.01:2.63
+R	paladin/protection	60	7538	12746	gear	39.07	int:15:int:1.1:16.5,spi:8:spi:0.83:6.64,sp:7:sp:1.9:13.3,armor:263:armor:0.01:2.63
+R	paladin/protection	60	7538	12747	gear	24.219999999999995	spi:8:spi:0.83:6.64,sta:15:sta:0.11:1.65,sp:7:sp:1.9:13.3,armor:263:armor:0.01:2.63
+R	paladin/protection	60	7538	12748	gear	22.580000000000002	int:8:int:1.1:8.8,sta:15:sta:0.11:1.65,spDmg:5:sp:1.9:9.5,armor:263:armor:0.01:2.63
+R	paladin/protection	60	7538	12749	gear	35.27	int:15:int:1.1:16.5,spi:8:spi:0.83:6.64,spDmg:5:sp:1.9:9.5,armor:263:armor:0.01:2.63
+R	paladin/protection	60	7538	12750	gear	20.419999999999998	spi:8:spi:0.83:6.64,sta:15:sta:0.11:1.65,spDmg:5:sp:1.9:9.5,armor:263:armor:0.01:2.63
+R	paladin/protection	60	7538	12751	gear	15.760000000000002	agi:6:agi:0.58:3.48,ap:16:ap:0.5:8,sta:15:sta:0.11:1.65,armor:263:armor:0.01:2.63
+R	paladin/protection	60	7538	12752	gear	14.919999999999998	agi:8:agi:0.58:4.64,sta:15:sta:0.11:1.65,str:6:str:1:6,armor:263:armor:0.01:2.63
+R	paladin/protection	60	7538	12755	gear	25.58	sp:7:sp:1.9:13.3,sta:15:sta:0.11:1.65,str:8:str:1:8,armor:263:armor:0.01:2.63
+R	paladin/protection	60	7538	12760	gear	2.63	armor:263:armor:0.01:2.63
+R	paladin/protection	60	7922	0	gear	16.42	str:12:str:1:12,sta:12:sta:0.11:1.32,armor:310:armor:0.01:3.1
+R	paladin/protection	60	8192	0	gear	7.79	agi:11:agi:0.58:6.38,sta:5:sta:0.11:0.55,armor:86:armor:0.01:0.86
+R	paladin/protection	60	9458	0	oh	10.25	spi:3:spi:0.83:2.49,armor:776:armor:0.01:7.76
+R	paladin/protection	60	9834	0	gear	0.73	armor:73:armor:0.01:0.73
+R	paladin/protection	60	9834	12718	gear	7.99	int:6:int:1.1:6.6,sta:6:sta:0.11:0.66,armor:73:armor:0.01:0.73
+R	paladin/protection	60	9834	12719	gear	6.369999999999999	spi:6:spi:0.83:4.98,sta:6:sta:0.11:0.66,armor:73:armor:0.01:0.73
+R	paladin/protection	60	9834	12720	gear	12.31	int:6:int:1.1:6.6,spi:6:spi:0.83:4.98,armor:73:armor:0.01:0.73
+R	paladin/protection	60	9834	12721	gear	4.869999999999999	agi:6:agi:0.58:3.48,sta:6:sta:0.11:0.66,armor:73:armor:0.01:0.73
+R	paladin/protection	60	9834	12722	gear	7.390000000000001	sta:6:sta:0.11:0.66,str:6:str:1:6,armor:73:armor:0.01:0.73
+R	paladin/protection	60	9834	12723	gear	13.330000000000002	int:6:int:1.1:6.6,str:6:str:1:6,armor:73:armor:0.01:0.73
+R	paladin/protection	60	9834	12724	gear	10.81	agi:6:agi:0.58:3.48,int:6:int:1.1:6.6,armor:73:armor:0.01:0.73
+R	paladin/protection	60	9834	12725	gear	11.71	spi:6:spi:0.83:4.98,str:6:str:1:6,armor:73:armor:0.01:0.73
+R	paladin/protection	60	9834	12726	gear	9.19	agi:6:agi:0.58:3.48,spi:6:spi:0.83:4.98,armor:73:armor:0.01:0.73
+R	paladin/protection	60	9834	12727	gear	10.21	agi:6:agi:0.58:3.48,str:6:str:1:6,armor:73:armor:0.01:0.73
+R	paladin/protection	60	9834	12728	gear	5.949999999999999	agi:9:agi:0.58:5.22,armor:73:armor:0.01:0.73
+R	paladin/protection	60	9834	12729	gear	10.63	int:9:int:1.1:9.9,armor:73:armor:0.01:0.73
+R	paladin/protection	60	9834	12730	gear	8.2	spi:9:spi:0.83:7.47,armor:73:armor:0.01:0.73
+R	paladin/protection	60	9834	12731	gear	1.72	sta:9:sta:0.11:0.99,armor:73:armor:0.01:0.73
+R	paladin/protection	60	9834	12732	gear	9.73	str:9:str:1:9,armor:73:armor:0.01:0.73
+R	paladin/protection	60	9834	12733	gear	9.73	ap:18:ap:0.5:9,armor:73:armor:0.01:0.73
+R	paladin/protection	60	9834	12734	gear	21.63	sp:11:sp:1.9:20.9,armor:73:armor:0.01:0.73
+R	paladin/protection	60	9834	12735	gear	14.03	spDmg:7:sp:1.9:13.3,armor:73:armor:0.01:0.73
+R	paladin/protection	60	9834	12736	gear	3.79	defense:6:defense:0.51:3.06,armor:73:armor:0.01:0.73
+R	paladin/protection	60	9834	12740	gear	1.3900000000000001	sta:6:sta:0.11:0.66,armor:73:armor:0.01:0.73
+R	paladin/protection	60	9834	12741	gear	1.3900000000000001	sta:6:sta:0.11:0.66,armor:73:armor:0.01:0.73
+R	paladin/protection	60	9834	12742	gear	1.3900000000000001	sta:6:sta:0.11:0.66,armor:73:armor:0.01:0.73
+R	paladin/protection	60	9834	12743	gear	1.3900000000000001	sta:6:sta:0.11:0.66,armor:73:armor:0.01:0.73
+R	paladin/protection	60	9834	12744	gear	1.3900000000000001	sta:6:sta:0.11:0.66,armor:73:armor:0.01:0.73
+R	paladin/protection	60	9834	12745	gear	14.57	int:7:int:1.1:7.7,sta:4:sta:0.11:0.44,sp:3:sp:1.9:5.7,armor:73:armor:0.01:0.73
+R	paladin/protection	60	9834	12746	gear	17.45	int:7:int:1.1:7.7,spi:4:spi:0.83:3.32,sp:3:sp:1.9:5.7,armor:73:armor:0.01:0.73
+R	paladin/protection	60	9834	12747	gear	10.52	spi:4:spi:0.83:3.32,sta:7:sta:0.11:0.77,sp:3:sp:1.9:5.7,armor:73:armor:0.01:0.73
+R	paladin/protection	60	9834	12748	gear	9.7	int:4:int:1.1:4.4,sta:7:sta:0.11:0.77,spDmg:2:sp:1.9:3.8,armor:73:armor:0.01:0.73
+R	paladin/protection	60	9834	12749	gear	15.55	int:7:int:1.1:7.7,spi:4:spi:0.83:3.32,spDmg:2:sp:1.9:3.8,armor:73:armor:0.01:0.73
+R	paladin/protection	60	9834	12750	gear	8.62	spi:4:spi:0.83:3.32,sta:7:sta:0.11:0.77,spDmg:2:sp:1.9:3.8,armor:73:armor:0.01:0.73
+R	paladin/protection	60	9834	12751	gear	6.74	agi:3:agi:0.58:1.74,ap:7:ap:0.5:3.5,sta:7:sta:0.11:0.77,armor:73:armor:0.01:0.73
+R	paladin/protection	60	9834	12752	gear	6.82	agi:4:agi:0.58:2.32,sta:7:sta:0.11:0.77,str:3:str:1:3,armor:73:armor:0.01:0.73
+R	paladin/protection	60	9834	12753	gear	6.52	defense:2:defense:0.51:1.02,sta:7:sta:0.11:0.77,str:4:str:1:4,armor:73:armor:0.01:0.73
+R	paladin/protection	60	9834	12755	gear	11.2	sp:3:sp:1.9:5.7,sta:7:sta:0.11:0.77,str:4:str:1:4,armor:73:armor:0.01:0.73
+R	paladin/protection	60	9834	12756	gear	0.73	armor:73:armor:0.01:0.73
+R	paladin/protection	60	9834	12760	gear	0.73	armor:73:armor:0.01:0.73
+R	paladin/protection	60	10087	0	gear	2.7800000000000002	armor:278:armor:0.01:2.78
+R	paladin/protection	60	10087	12718	gear	13.670000000000002	int:9:int:1.1:9.9,sta:9:sta:0.11:0.99,armor:278:armor:0.01:2.78
+R	paladin/protection	60	10087	12719	gear	11.239999999999998	spi:9:spi:0.83:7.47,sta:9:sta:0.11:0.99,armor:278:armor:0.01:2.78
+R	paladin/protection	60	10087	12720	gear	20.150000000000002	int:9:int:1.1:9.9,spi:9:spi:0.83:7.47,armor:278:armor:0.01:2.78
+R	paladin/protection	60	10087	12721	gear	8.99	agi:9:agi:0.58:5.22,sta:9:sta:0.11:0.99,armor:278:armor:0.01:2.78
+R	paladin/protection	60	10087	12722	gear	12.77	sta:9:sta:0.11:0.99,str:9:str:1:9,armor:278:armor:0.01:2.78
+R	paladin/protection	60	10087	12723	gear	21.68	int:9:int:1.1:9.9,str:9:str:1:9,armor:278:armor:0.01:2.78
+R	paladin/protection	60	10087	12724	gear	17.900000000000002	agi:9:agi:0.58:5.22,int:9:int:1.1:9.9,armor:278:armor:0.01:2.78
+R	paladin/protection	60	10087	12725	gear	19.25	spi:9:spi:0.83:7.47,str:9:str:1:9,armor:278:armor:0.01:2.78
+R	paladin/protection	60	10087	12726	gear	15.469999999999999	agi:9:agi:0.58:5.22,spi:9:spi:0.83:7.47,armor:278:armor:0.01:2.78
+R	paladin/protection	60	10087	12727	gear	17.0	agi:9:agi:0.58:5.22,str:9:str:1:9,armor:278:armor:0.01:2.78
+R	paladin/protection	60	10087	12728	gear	10.899999999999999	agi:14:agi:0.58:8.12,armor:278:armor:0.01:2.78
+R	paladin/protection	60	10087	12729	gear	18.180000000000003	int:14:int:1.1:15.4,armor:278:armor:0.01:2.78
+R	paladin/protection	60	10087	12730	gear	14.399999999999999	spi:14:spi:0.83:11.62,armor:278:armor:0.01:2.78
+R	paladin/protection	60	10087	12731	gear	4.32	sta:14:sta:0.11:1.54,armor:278:armor:0.01:2.78
+R	paladin/protection	60	10087	12732	gear	16.78	str:14:str:1:14,armor:278:armor:0.01:2.78
+R	paladin/protection	60	10087	12733	gear	16.78	ap:28:ap:0.5:14,armor:278:armor:0.01:2.78
+R	paladin/protection	60	10087	12734	gear	33.18	sp:16:sp:1.9:30.4,armor:278:armor:0.01:2.78
+R	paladin/protection	60	10087	12735	gear	21.78	spDmg:10:sp:1.9:19,armor:278:armor:0.01:2.78
+R	paladin/protection	60	10087	12736	gear	7.37	defense:9:defense:0.51:4.59,armor:278:armor:0.01:2.78
+R	paladin/protection	60	10087	12740	gear	3.7700000000000005	sta:9:sta:0.11:0.99,armor:278:armor:0.01:2.78
+R	paladin/protection	60	10087	12741	gear	3.7700000000000005	sta:9:sta:0.11:0.99,armor:278:armor:0.01:2.78
+R	paladin/protection	60	10087	12742	gear	3.7700000000000005	sta:9:sta:0.11:0.99,armor:278:armor:0.01:2.78
+R	paladin/protection	60	10087	12743	gear	3.7700000000000005	sta:9:sta:0.11:0.99,armor:278:armor:0.01:2.78
+R	paladin/protection	60	10087	12744	gear	3.7700000000000005	sta:9:sta:0.11:0.99,armor:278:armor:0.01:2.78
+R	paladin/protection	60	10087	12748	gear	16.18	int:6:int:1.1:6.6,sta:10:sta:0.11:1.1,spDmg:3:sp:1.9:5.7,armor:278:armor:0.01:2.78
+R	paladin/protection	60	10087	12749	gear	24.46	int:10:int:1.1:11,spi:6:spi:0.83:4.98,spDmg:3:sp:1.9:5.7,armor:278:armor:0.01:2.78
+R	paladin/protection	60	10087	12750	gear	14.559999999999999	spi:6:spi:0.83:4.98,sta:10:sta:0.11:1.1,spDmg:3:sp:1.9:5.7,armor:278:armor:0.01:2.78
+R	paladin/protection	60	10087	12752	gear	11.36	agi:6:agi:0.58:3.48,sta:10:sta:0.11:1.1,str:4:str:1:4,armor:278:armor:0.01:2.78
+R	paladin/protection	60	10087	12753	gear	11.41	defense:3:defense:0.51:1.53,sta:10:sta:0.11:1.1,str:6:str:1:6,armor:278:armor:0.01:2.78
+R	paladin/protection	60	10087	12754	gear	15.419999999999998	defense:4:defense:0.51:2.04,sp:5:sp:1.9:9.5,sta:10:sta:0.11:1.1,armor:278:armor:0.01:2.78
+R	paladin/protection	60	10087	12755	gear	19.380000000000003	sp:5:sp:1.9:9.5,sta:10:sta:0.11:1.1,str:6:str:1:6,armor:278:armor:0.01:2.78
+R	paladin/protection	60	10087	12759	gear	40.78	spHoly:20:spHoly:1.9:38,armor:278:armor:0.01:2.78
+R	paladin/protection	60	10368	0	gear	34.04	str:15:str:1:15,sta:14:sta:0.11:1.54,spi:14:spi:0.83:11.62,armor:588:armor:0.01:5.88
+R	paladin/protection	60	11187	0	gear	0.04	armor:4:armor:0.01:0.04
+R	paladin/protection	60	11994	0	gear	0.0	
+R	paladin/protection	60	11994	12718	gear	3.6300000000000003	int:3:int:1.1:3.3,sta:3:sta:0.11:0.33
+R	paladin/protection	60	11994	12719	gear	2.82	spi:3:spi:0.83:2.49,sta:3:sta:0.11:0.33
+R	paladin/protection	60	11994	12720	gear	5.79	int:3:int:1.1:3.3,spi:3:spi:0.83:2.49
+R	paladin/protection	60	11994	12721	gear	2.07	agi:3:agi:0.58:1.74,sta:3:sta:0.11:0.33
+R	paladin/protection	60	11994	12722	gear	3.33	sta:3:sta:0.11:0.33,str:3:str:1:3
+R	paladin/protection	60	11994	12723	gear	6.300000000000001	int:3:int:1.1:3.3,str:3:str:1:3
+R	paladin/protection	60	11994	12724	gear	5.04	agi:3:agi:0.58:1.74,int:3:int:1.1:3.3
+R	paladin/protection	60	11994	12725	gear	5.49	spi:3:spi:0.83:2.49,str:3:str:1:3
+R	paladin/protection	60	11994	12726	gear	4.2299999999999995	agi:3:agi:0.58:1.74,spi:3:spi:0.83:2.49
+R	paladin/protection	60	11994	12727	gear	4.74	agi:3:agi:0.58:1.74,str:3:str:1:3
+R	paladin/protection	60	11994	12728	gear	2.9	agi:5:agi:0.58:2.9
+R	paladin/protection	60	11994	12729	gear	5.5	int:5:int:1.1:5.5
+R	paladin/protection	60	11994	12730	gear	4.1499999999999995	spi:5:spi:0.83:4.15
+R	paladin/protection	60	11994	12731	gear	0.55	sta:5:sta:0.11:0.55
+R	paladin/protection	60	11994	12732	gear	5.0	str:5:str:1:5
+R	paladin/protection	60	11994	12733	gear	5.0	ap:10:ap:0.5:5
+R	paladin/protection	60	11994	12737	gear	0.0	
+R	paladin/protection	60	11994	12738	gear	1.0	mp5:2:mp5:0.5:1
+R	paladin/protection	60	11994	12739	gear	1.16	agi:2:agi:0.58:1.16
+R	paladin/protection	60	11994	12740	gear	0.33	sta:3:sta:0.11:0.33
+R	paladin/protection	60	11994	12741	gear	0.33	sta:3:sta:0.11:0.33
+R	paladin/protection	60	11994	12742	gear	0.33	sta:3:sta:0.11:0.33
+R	paladin/protection	60	11994	12743	gear	0.33	sta:3:sta:0.11:0.33
+R	paladin/protection	60	11994	12744	gear	0.33	sta:3:sta:0.11:0.33
+R	paladin/protection	60	12790	0	mh	376.74	dps:53.82:dps:7:376.74
+R	paladin/protection	60	13183	0	mh	276.28999999999996	dps:39.47:dps:7:276.29
+R	paladin/protection	60	14122	0	gear	0.14	armor:14:armor:0.01:0.14
+R	paladin/protection	60	14122	12718	gear	2.5600000000000005	int:2:int:1.1:2.2,sta:2:sta:0.11:0.22,armor:14:armor:0.01:0.14
+R	paladin/protection	60	14122	12719	gear	2.02	spi:2:spi:0.83:1.66,sta:2:sta:0.11:0.22,armor:14:armor:0.01:0.14
+R	paladin/protection	60	14122	12720	gear	4.0	int:2:int:1.1:2.2,spi:2:spi:0.83:1.66,armor:14:armor:0.01:0.14
+R	paladin/protection	60	14122	12729	gear	3.4400000000000004	int:3:int:1.1:3.3,armor:14:armor:0.01:0.14
+R	paladin/protection	60	14122	12730	gear	2.63	spi:3:spi:0.83:2.49,armor:14:armor:0.01:0.14
+R	paladin/protection	60	14122	12731	gear	0.47000000000000003	sta:3:sta:0.11:0.33,armor:14:armor:0.01:0.14
+R	paladin/protection	60	14122	12734	gear	7.739999999999999	sp:4:sp:1.9:7.6,armor:14:armor:0.01:0.14
+R	paladin/protection	60	14122	12735	gear	3.94	spDmg:2:sp:1.9:3.8,armor:14:armor:0.01:0.14
+R	paladin/protection	60	14122	12740	gear	0.36	sta:2:sta:0.11:0.22,armor:14:armor:0.01:0.14
+R	paladin/protection	60	14122	12741	gear	0.36	sta:2:sta:0.11:0.22,armor:14:armor:0.01:0.14
+R	paladin/protection	60	14122	12742	gear	0.36	sta:2:sta:0.11:0.22,armor:14:armor:0.01:0.14
+R	paladin/protection	60	14122	12743	gear	0.36	sta:2:sta:0.11:0.22,armor:14:armor:0.01:0.14
+R	paladin/protection	60	14122	12744	gear	0.36	sta:2:sta:0.11:0.22,armor:14:armor:0.01:0.14
+R	paladin/protection	60	14122	12745	gear	4.35	int:2:int:1.1:2.2,sta:1:sta:0.11:0.11,sp:1:sp:1.9:1.9,armor:14:armor:0.01:0.14
+R	paladin/protection	60	14122	12756	gear	0.14	armor:14:armor:0.01:0.14
+R	paladin/protection	60	14122	12757	gear	0.14	armor:14:armor:0.01:0.14
+R	paladin/protection	60	14122	12758	gear	0.14	armor:14:armor:0.01:0.14
+R	paladin/protection	60	14122	12759	gear	7.739999999999999	spHoly:4:spHoly:1.9:7.6,armor:14:armor:0.01:0.14
+R	paladin/protection	60	14122	12761	gear	0.14	armor:14:armor:0.01:0.14
+R	paladin/protection	60	14340	0	gear	2.9699999999999998	sta:19:sta:0.11:2.09,armor:88:armor:0.01:0.88
+R	paladin/protection	60	14673	0	gear	9.11	str:3:str:1:3,agi:9:agi:0.58:5.22,sta:5:sta:0.11:0.55,armor:34:armor:0.01:0.34
+R	paladin/protection	60	14964	0	oh	17.2	armor:1720:armor:0.01:17.2
+R	paladin/protection	60	14964	12718	oh	28.09	int:9:int:1.1:9.9,sta:9:sta:0.11:0.99,armor:1720:armor:0.01:17.2
+R	paladin/protection	60	14964	12719	oh	25.659999999999997	spi:9:spi:0.83:7.47,sta:9:sta:0.11:0.99,armor:1720:armor:0.01:17.2
+R	paladin/protection	60	14964	12720	oh	34.57	int:9:int:1.1:9.9,spi:9:spi:0.83:7.47,armor:1720:armor:0.01:17.2
+R	paladin/protection	60	14964	12721	oh	23.41	agi:9:agi:0.58:5.22,sta:9:sta:0.11:0.99,armor:1720:armor:0.01:17.2
+R	paladin/protection	60	14964	12722	oh	27.189999999999998	sta:9:sta:0.11:0.99,str:9:str:1:9,armor:1720:armor:0.01:17.2
+R	paladin/protection	60	14964	12723	oh	36.099999999999994	int:9:int:1.1:9.9,str:9:str:1:9,armor:1720:armor:0.01:17.2
+R	paladin/protection	60	14964	12724	oh	32.32	agi:9:agi:0.58:5.22,int:9:int:1.1:9.9,armor:1720:armor:0.01:17.2
+R	paladin/protection	60	14964	12725	oh	33.67	spi:9:spi:0.83:7.47,str:9:str:1:9,armor:1720:armor:0.01:17.2
+R	paladin/protection	60	14964	12726	oh	29.89	agi:9:agi:0.58:5.22,spi:9:spi:0.83:7.47,armor:1720:armor:0.01:17.2
+R	paladin/protection	60	14964	12727	oh	31.419999999999998	agi:9:agi:0.58:5.22,str:9:str:1:9,armor:1720:armor:0.01:17.2
+R	paladin/protection	60	14964	12728	oh	25.32	agi:14:agi:0.58:8.12,armor:1720:armor:0.01:17.2
+R	paladin/protection	60	14964	12729	oh	32.6	int:14:int:1.1:15.4,armor:1720:armor:0.01:17.2
+R	paladin/protection	60	14964	12730	oh	28.82	spi:14:spi:0.83:11.62,armor:1720:armor:0.01:17.2
+R	paladin/protection	60	14964	12731	oh	18.74	sta:14:sta:0.11:1.54,armor:1720:armor:0.01:17.2
+R	paladin/protection	60	14964	12732	oh	31.2	str:14:str:1:14,armor:1720:armor:0.01:17.2
+R	paladin/protection	60	14964	12733	oh	31.2	ap:28:ap:0.5:14,armor:1720:armor:0.01:17.2
+R	paladin/protection	60	14964	12734	oh	47.599999999999994	sp:16:sp:1.9:30.4,armor:1720:armor:0.01:17.2
+R	paladin/protection	60	14964	12735	oh	36.2	spDmg:10:sp:1.9:19,armor:1720:armor:0.01:17.2
+R	paladin/protection	60	14964	12736	oh	21.79	defense:9:defense:0.51:4.59,armor:1720:armor:0.01:17.2
+R	paladin/protection	60	14964	12740	oh	18.189999999999998	sta:9:sta:0.11:0.99,armor:1720:armor:0.01:17.2
+R	paladin/protection	60	14964	12741	oh	18.189999999999998	sta:9:sta:0.11:0.99,armor:1720:armor:0.01:17.2
+R	paladin/protection	60	14964	12742	oh	18.189999999999998	sta:9:sta:0.11:0.99,armor:1720:armor:0.01:17.2
+R	paladin/protection	60	14964	12743	oh	18.189999999999998	sta:9:sta:0.11:0.99,armor:1720:armor:0.01:17.2
+R	paladin/protection	60	14964	12744	oh	18.189999999999998	sta:9:sta:0.11:0.99,armor:1720:armor:0.01:17.2
+R	paladin/protection	60	14964	12745	oh	38.36	int:10:int:1.1:11,sta:6:sta:0.11:0.66,sp:5:sp:1.9:9.5,armor:1720:armor:0.01:17.2
+R	paladin/protection	60	14964	12746	oh	42.68	int:10:int:1.1:11,spi:6:spi:0.83:4.98,sp:5:sp:1.9:9.5,armor:1720:armor:0.01:17.2
+R	paladin/protection	60	14964	12747	oh	32.78	spi:6:spi:0.83:4.98,sta:10:sta:0.11:1.1,sp:5:sp:1.9:9.5,armor:1720:armor:0.01:17.2
+R	paladin/protection	60	14964	12748	oh	30.6	int:6:int:1.1:6.6,sta:10:sta:0.11:1.1,spDmg:3:sp:1.9:5.7,armor:1720:armor:0.01:17.2
+R	paladin/protection	60	14964	12749	oh	38.879999999999995	int:10:int:1.1:11,spi:6:spi:0.83:4.98,spDmg:3:sp:1.9:5.7,armor:1720:armor:0.01:17.2
+R	paladin/protection	60	14964	12750	oh	28.979999999999997	spi:6:spi:0.83:4.98,sta:10:sta:0.11:1.1,spDmg:3:sp:1.9:5.7,armor:1720:armor:0.01:17.2
+R	paladin/protection	60	14964	12753	oh	25.83	defense:3:defense:0.51:1.53,sta:10:sta:0.11:1.1,str:6:str:1:6,armor:1720:armor:0.01:17.2
+R	paladin/protection	60	14964	12754	oh	29.839999999999996	defense:4:defense:0.51:2.04,sp:5:sp:1.9:9.5,sta:10:sta:0.11:1.1,armor:1720:armor:0.01:17.2
+R	paladin/protection	60	14964	12759	oh	55.2	spHoly:20:spHoly:1.9:38,armor:1720:armor:0.01:17.2
+R	paladin/protection	60	14964	12760	oh	17.2	armor:1720:armor:0.01:17.2
+R	paladin/protection	60	15235	0	mh	199.99	dps:28.57:dps:7:199.99
+R	paladin/protection	60	15235	12718	mh	206.04000000000002	int:5:int:1.1:5.5,sta:5:sta:0.11:0.55,dps:28.57:dps:7:199.99
+R	paladin/protection	60	15235	12719	mh	204.69	spi:5:spi:0.83:4.15,sta:5:sta:0.11:0.55,dps:28.57:dps:7:199.99
+R	paladin/protection	60	15235	12720	mh	209.64000000000001	int:5:int:1.1:5.5,spi:5:spi:0.83:4.15,dps:28.57:dps:7:199.99
+R	paladin/protection	60	15235	12721	mh	203.44	agi:5:agi:0.58:2.9,sta:5:sta:0.11:0.55,dps:28.57:dps:7:199.99
+R	paladin/protection	60	15235	12722	mh	205.54000000000002	sta:5:sta:0.11:0.55,str:5:str:1:5,dps:28.57:dps:7:199.99
+R	paladin/protection	60	15235	12723	mh	210.49	int:5:int:1.1:5.5,str:5:str:1:5,dps:28.57:dps:7:199.99
+R	paladin/protection	60	15235	12724	mh	208.39000000000001	agi:5:agi:0.58:2.9,int:5:int:1.1:5.5,dps:28.57:dps:7:199.99
+R	paladin/protection	60	15235	12725	mh	209.14000000000001	spi:5:spi:0.83:4.15,str:5:str:1:5,dps:28.57:dps:7:199.99
+R	paladin/protection	60	15235	12726	mh	207.04000000000002	agi:5:agi:0.58:2.9,spi:5:spi:0.83:4.15,dps:28.57:dps:7:199.99
+R	paladin/protection	60	15235	12727	mh	207.89000000000001	agi:5:agi:0.58:2.9,str:5:str:1:5,dps:28.57:dps:7:199.99
+R	paladin/protection	60	15235	12728	mh	204.63	agi:8:agi:0.58:4.64,dps:28.57:dps:7:199.99
+R	paladin/protection	60	15235	12729	mh	208.79000000000002	int:8:int:1.1:8.8,dps:28.57:dps:7:199.99
+R	paladin/protection	60	15235	12730	mh	206.63	spi:8:spi:0.83:6.64,dps:28.57:dps:7:199.99
+R	paladin/protection	60	15235	12731	mh	200.87	sta:8:sta:0.11:0.88,dps:28.57:dps:7:199.99
+R	paladin/protection	60	15235	12732	mh	207.99	str:8:str:1:8,dps:28.57:dps:7:199.99
+R	paladin/protection	60	15235	12733	mh	207.99	ap:16:ap:0.5:8,dps:28.57:dps:7:199.99
+R	paladin/protection	60	15235	12736	mh	202.54000000000002	defense:5:defense:0.51:2.55,dps:28.57:dps:7:199.99
+R	paladin/protection	60	15235	12740	mh	200.54000000000002	sta:5:sta:0.11:0.55,dps:28.57:dps:7:199.99
+R	paladin/protection	60	15235	12741	mh	200.54000000000002	sta:5:sta:0.11:0.55,dps:28.57:dps:7:199.99
+R	paladin/protection	60	15235	12742	mh	200.54000000000002	sta:5:sta:0.11:0.55,dps:28.57:dps:7:199.99
+R	paladin/protection	60	15235	12743	mh	200.54000000000002	sta:5:sta:0.11:0.55,dps:28.57:dps:7:199.99
+R	paladin/protection	60	15235	12744	mh	200.54000000000002	sta:5:sta:0.11:0.55,dps:28.57:dps:7:199.99
+R	paladin/protection	60	15235	12751	mh	205.89000000000001	agi:3:agi:0.58:1.74,ap:7:ap:0.5:3.5,sta:6:sta:0.11:0.66,dps:28.57:dps:7:199.99
+R	paladin/protection	60	15235	12752	mh	205.39000000000001	agi:3:agi:0.58:1.74,sta:6:sta:0.11:0.66,str:3:str:1:3,dps:28.57:dps:7:199.99
+R	paladin/protection	60	15235	12753	mh	204.67000000000002	defense:2:defense:0.51:1.02,sta:6:sta:0.11:0.66,str:3:str:1:3,dps:28.57:dps:7:199.99
+R	paladin/protection	60	15235	12754	mh	207.37	defense:2:defense:0.51:1.02,sp:3:sp:1.9:5.7,sta:6:sta:0.11:0.66,dps:28.57:dps:7:199.99
+R	paladin/protection	60	15235	12759	mh	220.89000000000001	spHoly:11:spHoly:1.9:20.9,dps:28.57:dps:7:199.99
+R	paladin/protection	60	15235	12906	mh	279.23	int:6:int:1.1:6.6,sta:4:sta:0.11:0.44,sp:38:sp:1.9:72.2,dps:28.57:dps:7:199.99
+R	paladin/protection	60	15235	12908	mh	282.11	int:6:int:1.1:6.6,sp:38:sp:1.9:72.2,spi:4:spi:0.83:3.32,dps:28.57:dps:7:199.99
+R	paladin/protection	60	15235	12910	mh	276.17	sp:38:sp:1.9:72.2,spi:4:spi:0.83:3.32,sta:6:sta:0.11:0.66,dps:28.57:dps:7:199.99
+R	paladin/protection	60	15235	12912	mh	250.65	spDmg:24:sp:1.9:45.6,int:4:int:1.1:4.4,sta:6:sta:0.11:0.66,dps:28.57:dps:7:199.99
+R	paladin/protection	60	15235	12913	mh	255.51	int:6:int:1.1:6.6,spDmg:24:sp:1.9:45.6,spi:4:spi:0.83:3.32,dps:28.57:dps:7:199.99
+R	paladin/protection	60	15235	12916	mh	249.57	spDmg:24:sp:1.9:45.6,spi:4:spi:0.83:3.32,sta:6:sta:0.11:0.66,dps:28.57:dps:7:199.99
+R	paladin/protection	60	15235	12917	mh	280.99	sp:38:sp:1.9:72.2,int:8:int:1.1:8.8,dps:28.57:dps:7:199.99
+R	paladin/protection	60	15235	12920	mh	254.39	int:8:int:1.1:8.8,spDmg:24:sp:1.9:45.6,dps:28.57:dps:7:199.99
+R	paladin/protection	60	15477	0	gear	1.01	armor:101:armor:0.01:1.01
+R	paladin/protection	60	15477	12718	gear	2.22	int:1:int:1.1:1.1,sta:1:sta:0.11:0.11,armor:101:armor:0.01:1.01
+R	paladin/protection	60	15477	12719	gear	1.95	spi:1:spi:0.83:0.83,sta:1:sta:0.11:0.11,armor:101:armor:0.01:1.01
+R	paladin/protection	60	15477	12720	gear	2.9400000000000004	int:1:int:1.1:1.1,spi:1:spi:0.83:0.83,armor:101:armor:0.01:1.01
+R	paladin/protection	60	15477	12721	gear	1.7	agi:1:agi:0.58:0.58,sta:1:sta:0.11:0.11,armor:101:armor:0.01:1.01
+R	paladin/protection	60	15477	12722	gear	2.12	sta:1:sta:0.11:0.11,str:1:str:1:1,armor:101:armor:0.01:1.01
+R	paladin/protection	60	15477	12723	gear	3.1100000000000003	int:1:int:1.1:1.1,str:1:str:1:1,armor:101:armor:0.01:1.01
+R	paladin/protection	60	15477	12724	gear	2.6900000000000004	agi:1:agi:0.58:0.58,int:1:int:1.1:1.1,armor:101:armor:0.01:1.01
+R	paladin/protection	60	15477	12725	gear	2.84	spi:1:spi:0.83:0.83,str:1:str:1:1,armor:101:armor:0.01:1.01
+R	paladin/protection	60	15477	12726	gear	2.42	agi:1:agi:0.58:0.58,spi:1:spi:0.83:0.83,armor:101:armor:0.01:1.01
+R	paladin/protection	60	15477	12727	gear	2.59	agi:1:agi:0.58:0.58,str:1:str:1:1,armor:101:armor:0.01:1.01
+R	paladin/protection	60	15477	12728	gear	2.17	agi:2:agi:0.58:1.16,armor:101:armor:0.01:1.01
+R	paladin/protection	60	15477	12729	gear	3.21	int:2:int:1.1:2.2,armor:101:armor:0.01:1.01
+R	paladin/protection	60	15477	12730	gear	2.67	spi:2:spi:0.83:1.66,armor:101:armor:0.01:1.01
+R	paladin/protection	60	15477	12731	gear	1.23	sta:2:sta:0.11:0.22,armor:101:armor:0.01:1.01
+R	paladin/protection	60	15477	12732	gear	3.01	str:2:str:1:2,armor:101:armor:0.01:1.01
+R	paladin/protection	60	15477	12733	gear	3.01	ap:4:ap:0.5:2,armor:101:armor:0.01:1.01
+R	paladin/protection	60	15477	12734	gear	4.81	sp:2:sp:1.9:3.8,armor:101:armor:0.01:1.01
+R	paladin/protection	60	15477	12735	gear	2.91	spDmg:1:sp:1.9:1.9,armor:101:armor:0.01:1.01
+R	paladin/protection	60	15477	12736	gear	1.52	defense:1:defense:0.51:0.51,armor:101:armor:0.01:1.01
+R	paladin/protection	60	15477	12740	gear	1.12	sta:1:sta:0.11:0.11,armor:101:armor:0.01:1.01
+R	paladin/protection	60	15477	12741	gear	1.12	sta:1:sta:0.11:0.11,armor:101:armor:0.01:1.01
+R	paladin/protection	60	15477	12742	gear	1.12	sta:1:sta:0.11:0.11,armor:101:armor:0.01:1.01
+R	paladin/protection	60	15477	12743	gear	1.12	sta:1:sta:0.11:0.11,armor:101:armor:0.01:1.01
+R	paladin/protection	60	15477	12744	gear	1.12	sta:1:sta:0.11:0.11,armor:101:armor:0.01:1.01
+R	paladin/protection	60	15477	12759	gear	6.709999999999999	spHoly:3:spHoly:1.9:5.7,armor:101:armor:0.01:1.01
+R	paladin/protection	60	15945	0	oh	1.88	sta:2:sta:0.11:0.22,spi:2:spi:0.83:1.66
+R	paladin/protection	60	16711	0	gear	17.919999999999998	agi:21:agi:0.58:12.18,sta:9:sta:0.11:0.99,hit:0.3:hit:12:3.6,armor:115:armor:0.01:1.15
+R	paladin/protection	60	18312	0	gear	63.07	str:13:str:1:13,sta:20:sta:0.11:2.2,int:12:int:1.1:13.2,sp:15:sp:1.9:28.5,armor:617:armor:0.01:6.17
+R	paladin/protection	60	18726	0	gear	5.950000000000001	sta:15:sta:0.11:1.65,defense:7:defense:0.51:3.57,armor:73:armor:0.01:0.73
+R	paladin/protection	60	19557	0	mh	156.43	str:7:str:1:7,sta:3:sta:0.11:0.33,dps:21.3:dps:7:149.1
+R	paladin/protection	60	20129	0	gear	11.71	agi:6:agi:0.58:3.48,str:6:str:1:6,sta:6:sta:0.11:0.66,armor:157:armor:0.01:1.57
+R	paladin/protection	60	22270	0	gear	41.9	str:11:str:1:11,defense:3:defense:0.51:1.53,int:10:int:1.1:11,sta:10:sta:0.11:1.1,sp:7:sp:1.9:13.3,armor:397:armor:0.01:3.97
+R	paladin/protection	60	22400	0	ranged	0.0	
+R	paladin/protection	60	22967	0	gear	6.68	sta:25:sta:0.11:2.75,armor:393:armor:0.01:3.93
+R	paladin/protection	60	250491	0	gear	17.28	int:5:int:1.1:5.5,sta:4:sta:0.11:0.44,spDmg:5:sp:1.9:9.5,armor:184:armor:0.01:1.84
+R	paladin/protection	60	252507	0	gear	13.259999999999998	sta:10:sta:0.11:1.1,spDmg:6:sp:1.9:11.4,armor:76:armor:0.01:0.76
+R	paladin/protection	60	254111	0	gear	11.870000000000001	int:9:int:1.1:9.9,sta:13:sta:0.11:1.43,armor:54:armor:0.01:0.54
+R	paladin/protection	60	270033	0	gear	5.71	agi:4:agi:0.58:2.32,str:3:str:1:3,armor:39:armor:0.01:0.39
+R	paladin/protection	60	271956	0	gear	30.45	agi:27:agi:0.58:15.66,sta:12:sta:0.11:1.32,crit:1:crit:10:10,crit:1:spellCrit:0.35:0.35,armor:312:armor:0.01:3.12
+R	paladin/protection	60	272958	0	gear	64.54	int:27:int:1.1:29.7,sta:12:sta:0.11:1.32,sp:16:sp:1.9:30.4,armor:312:armor:0.01:3.12
+R	paladin/protection	60	276399	0	gear	34.55	sta:18:sta:0.11:1.98,mp5:7:mp5:0.5:3.5,spDmg:12:sp:1.9:22.8,armor:627:armor:0.01:6.27
+R	paladin/protection	60	277235	0	gear	18.65	str:14:str:1:14,sta:10:sta:0.11:1.1,armor:355:armor:0.01:3.55
+R	paladin/protection	60	282560	0	gear	29.759999999999998	int:10:int:1.1:11,sta:13:sta:0.11:1.43,sp:8:sp:1.9:15.2,armor:213:armor:0.01:2.13
+R	paladin/protection	60	286609	0	oh	26.310000000000002	spi:6:spi:0.83:4.98,defense:7:defense:0.51:3.57,armor:1776:armor:0.01:17.76
 R	warrior/arms	12	25	0	mh	6.615	dps:1.05:dps:6.3:6.615
 R	warrior/arms	12	1315	0	gear	37.9	sta:10:sta:2.5:25,spi:15:spi:0.86:12.9
 R	warrior/arms	12	1808	0	gear	3.7739999999999996	armor:74:armor:0.051:3.774
@@ -22156,6 +24298,2184 @@ R	warrior/fury	60	277235	0	gear	37.585	str:14:str:1:14,sta:10:sta:1.4:14,armor:3
 R	warrior/fury	60	280082	0	mh	125.31	hit:1.5:hit:5.6:8.4,spi:21:spi:0.26:5.46,dps:36.25:dps:3:108.75,speed:0.6:speed:4.5:2.7
 R	warrior/fury	60	282560	0	gear	23.951	sta:13:sta:1.4:18.2,armor:213:armor:0.027:5.751
 R	warrior/fury	60	286609	0	oh	49.512	spi:6:spi:0.26:1.56,armor:1776:armor:0.027:47.952
+R	warrior/protection	12	25	0	mh	4.41	dps:1.05:dps:4.2:4.41
+R	warrior/protection	12	1315	0	gear	25.549999999999997	sta:10:sta:1.1:11,spi:15:spi:0.97:14.55
+R	warrior/protection	12	1808	0	gear	1.554	armor:74:armor:0.021:1.554
+R	warrior/protection	12	2225	0	mh	21.0	dps:5:dps:4.2:21
+R	warrior/protection	12	2614	0	gear	0.609	armor:29:armor:0.021:0.609
+R	warrior/protection	12	3158	0	gear	0.546	armor:26:armor:0.021:0.546
+R	warrior/protection	12	3570	0	mh	36.104	str:2:str:1:2,dps:8.12:dps:4.2:34.104
+R	warrior/protection	12	4023	0	mh	64.512	dps:15.36:dps:4.2:64.512
+R	warrior/protection	12	4068	0	oh	30.123000000000005	sta:9:sta:1.1:9.9,armor:963:armor:0.021:20.223
+R	warrior/protection	12	4570	0	mh	42.0	dps:10:dps:4.2:42
+R	warrior/protection	12	4570	12718	mh	45.3	sta:3:sta:1.1:3.3,dps:10:dps:4.2:42
+R	warrior/protection	12	4570	12719	mh	48.21	spi:3:spi:0.97:2.91,sta:3:sta:1.1:3.3,dps:10:dps:4.2:42
+R	warrior/protection	12	4570	12720	mh	44.91	spi:3:spi:0.97:2.91,dps:10:dps:4.2:42
+R	warrior/protection	12	4570	12721	mh	46.44	agi:3:agi:0.38:1.14,sta:3:sta:1.1:3.3,dps:10:dps:4.2:42
+R	warrior/protection	12	4570	12722	mh	48.3	sta:3:sta:1.1:3.3,str:3:str:1:3,dps:10:dps:4.2:42
+R	warrior/protection	12	4570	12723	mh	45.0	str:3:str:1:3,dps:10:dps:4.2:42
+R	warrior/protection	12	4570	12724	mh	43.14	agi:3:agi:0.38:1.14,dps:10:dps:4.2:42
+R	warrior/protection	12	4570	12725	mh	47.91	spi:3:spi:0.97:2.91,str:3:str:1:3,dps:10:dps:4.2:42
+R	warrior/protection	12	4570	12726	mh	46.05	agi:3:agi:0.38:1.14,spi:3:spi:0.97:2.91,dps:10:dps:4.2:42
+R	warrior/protection	12	4570	12727	mh	46.14	agi:3:agi:0.38:1.14,str:3:str:1:3,dps:10:dps:4.2:42
+R	warrior/protection	12	4570	12728	mh	43.52	agi:4:agi:0.38:1.52,dps:10:dps:4.2:42
+R	warrior/protection	12	4570	12729	mh	42.0	dps:10:dps:4.2:42
+R	warrior/protection	12	4570	12730	mh	45.88	spi:4:spi:0.97:3.88,dps:10:dps:4.2:42
+R	warrior/protection	12	4570	12731	mh	46.4	sta:4:sta:1.1:4.4,dps:10:dps:4.2:42
+R	warrior/protection	12	4570	12732	mh	46.0	str:4:str:1:4,dps:10:dps:4.2:42
+R	warrior/protection	12	4570	12733	mh	45.76	ap:8:ap:0.47:3.76,dps:10:dps:4.2:42
+R	warrior/protection	12	4570	12736	mh	42.33	defense:3:defense:0.11:0.33,dps:10:dps:4.2:42
+R	warrior/protection	12	4570	12740	mh	45.3	sta:3:sta:1.1:3.3,dps:10:dps:4.2:42
+R	warrior/protection	12	4570	12741	mh	45.3	sta:3:sta:1.1:3.3,dps:10:dps:4.2:42
+R	warrior/protection	12	4570	12742	mh	45.3	sta:3:sta:1.1:3.3,dps:10:dps:4.2:42
+R	warrior/protection	12	4570	12743	mh	45.3	sta:3:sta:1.1:3.3,dps:10:dps:4.2:42
+R	warrior/protection	12	4570	12744	mh	45.3	sta:3:sta:1.1:3.3,dps:10:dps:4.2:42
+R	warrior/protection	12	4570	12759	mh	42.0	dps:10:dps:4.2:42
+R	warrior/protection	12	4570	12918	mh	42.0	dps:10:dps:4.2:42
+R	warrior/protection	12	4570	12919	mh	42.0	dps:10:dps:4.2:42
+R	warrior/protection	12	5079	0	gear	0.0	
+R	warrior/protection	12	6063	0	gear	1.155	armor:55:armor:0.021:1.155
+R	warrior/protection	12	6540	0	gear	0.5880000000000001	armor:28:armor:0.021:0.588
+R	warrior/protection	12	6540	12718	gear	3.8880000000000003	sta:3:sta:1.1:3.3,armor:28:armor:0.021:0.588
+R	warrior/protection	12	6540	12719	gear	6.798000000000001	spi:3:spi:0.97:2.91,sta:3:sta:1.1:3.3,armor:28:armor:0.021:0.588
+R	warrior/protection	12	6540	12720	gear	3.498	spi:3:spi:0.97:2.91,armor:28:armor:0.021:0.588
+R	warrior/protection	12	6540	12729	gear	0.5880000000000001	armor:28:armor:0.021:0.588
+R	warrior/protection	12	6540	12730	gear	5.438	spi:5:spi:0.97:4.85,armor:28:armor:0.021:0.588
+R	warrior/protection	12	6540	12731	gear	6.088	sta:5:sta:1.1:5.5,armor:28:armor:0.021:0.588
+R	warrior/protection	12	6540	12734	gear	0.5880000000000001	armor:28:armor:0.021:0.588
+R	warrior/protection	12	6540	12735	gear	0.5880000000000001	armor:28:armor:0.021:0.588
+R	warrior/protection	12	6540	12740	gear	3.8880000000000003	sta:3:sta:1.1:3.3,armor:28:armor:0.021:0.588
+R	warrior/protection	12	6540	12741	gear	3.8880000000000003	sta:3:sta:1.1:3.3,armor:28:armor:0.021:0.588
+R	warrior/protection	12	6540	12742	gear	3.8880000000000003	sta:3:sta:1.1:3.3,armor:28:armor:0.021:0.588
+R	warrior/protection	12	6540	12743	gear	3.8880000000000003	sta:3:sta:1.1:3.3,armor:28:armor:0.021:0.588
+R	warrior/protection	12	6540	12744	gear	3.8880000000000003	sta:3:sta:1.1:3.3,armor:28:armor:0.021:0.588
+R	warrior/protection	12	6540	12745	gear	2.7880000000000003	sta:2:sta:1.1:2.2,armor:28:armor:0.021:0.588
+R	warrior/protection	12	6540	12756	gear	0.5880000000000001	armor:28:armor:0.021:0.588
+R	warrior/protection	12	6540	12757	gear	0.5880000000000001	armor:28:armor:0.021:0.588
+R	warrior/protection	12	6540	12758	gear	0.5880000000000001	armor:28:armor:0.021:0.588
+R	warrior/protection	12	6540	12759	gear	0.5880000000000001	armor:28:armor:0.021:0.588
+R	warrior/protection	12	6540	12761	gear	0.5880000000000001	armor:28:armor:0.021:0.588
+R	warrior/protection	12	6557	0	gear	1.0290000000000001	armor:49:armor:0.021:1.029
+R	warrior/protection	12	6557	12718	gear	3.229	sta:2:sta:1.1:2.2,armor:49:armor:0.021:1.029
+R	warrior/protection	12	6557	12719	gear	5.1690000000000005	spi:2:spi:0.97:1.94,sta:2:sta:1.1:2.2,armor:49:armor:0.021:1.029
+R	warrior/protection	12	6557	12720	gear	2.9690000000000003	spi:2:spi:0.97:1.94,armor:49:armor:0.021:1.029
+R	warrior/protection	12	6557	12721	gear	3.989	agi:2:agi:0.38:0.76,sta:2:sta:1.1:2.2,armor:49:armor:0.021:1.029
+R	warrior/protection	12	6557	12722	gear	5.229	sta:2:sta:1.1:2.2,str:2:str:1:2,armor:49:armor:0.021:1.029
+R	warrior/protection	12	6557	12723	gear	3.029	str:2:str:1:2,armor:49:armor:0.021:1.029
+R	warrior/protection	12	6557	12724	gear	1.7890000000000001	agi:2:agi:0.38:0.76,armor:49:armor:0.021:1.029
+R	warrior/protection	12	6557	12725	gear	4.969	spi:2:spi:0.97:1.94,str:2:str:1:2,armor:49:armor:0.021:1.029
+R	warrior/protection	12	6557	12726	gear	3.729	agi:2:agi:0.38:0.76,spi:2:spi:0.97:1.94,armor:49:armor:0.021:1.029
+R	warrior/protection	12	6557	12727	gear	3.7889999999999997	agi:2:agi:0.38:0.76,str:2:str:1:2,armor:49:armor:0.021:1.029
+R	warrior/protection	12	6557	12728	gear	2.1690000000000005	agi:3:agi:0.38:1.14,armor:49:armor:0.021:1.029
+R	warrior/protection	12	6557	12729	gear	1.0290000000000001	armor:49:armor:0.021:1.029
+R	warrior/protection	12	6557	12730	gear	3.939	spi:3:spi:0.97:2.91,armor:49:armor:0.021:1.029
+R	warrior/protection	12	6557	12731	gear	4.329000000000001	sta:3:sta:1.1:3.3,armor:49:armor:0.021:1.029
+R	warrior/protection	12	6557	12732	gear	4.029	str:3:str:1:3,armor:49:armor:0.021:1.029
+R	warrior/protection	12	6557	12733	gear	3.849	ap:6:ap:0.47:2.82,armor:49:armor:0.021:1.029
+R	warrior/protection	12	6557	12734	gear	1.0290000000000001	armor:49:armor:0.021:1.029
+R	warrior/protection	12	6557	12735	gear	1.0290000000000001	armor:49:armor:0.021:1.029
+R	warrior/protection	12	6557	12736	gear	1.249	defense:2:defense:0.11:0.22,armor:49:armor:0.021:1.029
+R	warrior/protection	12	6557	12740	gear	3.229	sta:2:sta:1.1:2.2,armor:49:armor:0.021:1.029
+R	warrior/protection	12	6557	12741	gear	3.229	sta:2:sta:1.1:2.2,armor:49:armor:0.021:1.029
+R	warrior/protection	12	6557	12742	gear	3.229	sta:2:sta:1.1:2.2,armor:49:armor:0.021:1.029
+R	warrior/protection	12	6557	12743	gear	3.229	sta:2:sta:1.1:2.2,armor:49:armor:0.021:1.029
+R	warrior/protection	12	6557	12744	gear	3.229	sta:2:sta:1.1:2.2,armor:49:armor:0.021:1.029
+R	warrior/protection	12	6557	12756	gear	1.0290000000000001	armor:49:armor:0.021:1.029
+R	warrior/protection	12	6557	12760	gear	1.0290000000000001	armor:49:armor:0.021:1.029
+R	warrior/protection	12	7047	0	gear	5.396	spi:5:spi:0.97:4.85,armor:26:armor:0.021:0.546
+R	warrior/protection	12	7538	0	gear	5.523000000000001	armor:263:armor:0.021:5.523
+R	warrior/protection	12	7538	12718	gear	19.823	sta:13:sta:1.1:14.3,armor:263:armor:0.021:5.523
+R	warrior/protection	12	7538	12719	gear	32.433	spi:13:spi:0.97:12.61,sta:13:sta:1.1:14.3,armor:263:armor:0.021:5.523
+R	warrior/protection	12	7538	12720	gear	18.133	spi:13:spi:0.97:12.61,armor:263:armor:0.021:5.523
+R	warrior/protection	12	7538	12721	gear	24.763	agi:13:agi:0.38:4.94,sta:13:sta:1.1:14.3,armor:263:armor:0.021:5.523
+R	warrior/protection	12	7538	12722	gear	32.823	sta:13:sta:1.1:14.3,str:13:str:1:13,armor:263:armor:0.021:5.523
+R	warrior/protection	12	7538	12723	gear	18.523	str:13:str:1:13,armor:263:armor:0.021:5.523
+R	warrior/protection	12	7538	12724	gear	10.463000000000001	agi:13:agi:0.38:4.94,armor:263:armor:0.021:5.523
+R	warrior/protection	12	7538	12725	gear	31.133	spi:13:spi:0.97:12.61,str:13:str:1:13,armor:263:armor:0.021:5.523
+R	warrior/protection	12	7538	12726	gear	23.073	agi:13:agi:0.38:4.94,spi:13:spi:0.97:12.61,armor:263:armor:0.021:5.523
+R	warrior/protection	12	7538	12727	gear	23.463	agi:13:agi:0.38:4.94,str:13:str:1:13,armor:263:armor:0.021:5.523
+R	warrior/protection	12	7538	12728	gear	13.123000000000001	agi:20:agi:0.38:7.6,armor:263:armor:0.021:5.523
+R	warrior/protection	12	7538	12729	gear	5.523000000000001	armor:263:armor:0.021:5.523
+R	warrior/protection	12	7538	12730	gear	24.923	spi:20:spi:0.97:19.4,armor:263:armor:0.021:5.523
+R	warrior/protection	12	7538	12731	gear	27.523	sta:20:sta:1.1:22,armor:263:armor:0.021:5.523
+R	warrior/protection	12	7538	12732	gear	25.523	str:20:str:1:20,armor:263:armor:0.021:5.523
+R	warrior/protection	12	7538	12733	gear	24.322999999999997	ap:40:ap:0.47:18.8,armor:263:armor:0.021:5.523
+R	warrior/protection	12	7538	12734	gear	5.523000000000001	armor:263:armor:0.021:5.523
+R	warrior/protection	12	7538	12735	gear	5.523000000000001	armor:263:armor:0.021:5.523
+R	warrior/protection	12	7538	12740	gear	19.823	sta:13:sta:1.1:14.3,armor:263:armor:0.021:5.523
+R	warrior/protection	12	7538	12741	gear	19.823	sta:13:sta:1.1:14.3,armor:263:armor:0.021:5.523
+R	warrior/protection	12	7538	12742	gear	19.823	sta:13:sta:1.1:14.3,armor:263:armor:0.021:5.523
+R	warrior/protection	12	7538	12743	gear	19.823	sta:13:sta:1.1:14.3,armor:263:armor:0.021:5.523
+R	warrior/protection	12	7538	12744	gear	19.823	sta:13:sta:1.1:14.3,armor:263:armor:0.021:5.523
+R	warrior/protection	12	7538	12745	gear	14.323	sta:8:sta:1.1:8.8,armor:263:armor:0.021:5.523
+R	warrior/protection	12	7538	12746	gear	13.283000000000001	spi:8:spi:0.97:7.76,armor:263:armor:0.021:5.523
+R	warrior/protection	12	7538	12747	gear	29.782999999999998	spi:8:spi:0.97:7.76,sta:15:sta:1.1:16.5,armor:263:armor:0.021:5.523
+R	warrior/protection	12	7538	12748	gear	22.023	sta:15:sta:1.1:16.5,armor:263:armor:0.021:5.523
+R	warrior/protection	12	7538	12749	gear	13.283000000000001	spi:8:spi:0.97:7.76,armor:263:armor:0.021:5.523
+R	warrior/protection	12	7538	12750	gear	29.782999999999998	spi:8:spi:0.97:7.76,sta:15:sta:1.1:16.5,armor:263:armor:0.021:5.523
+R	warrior/protection	12	7538	12751	gear	31.823	agi:6:agi:0.38:2.28,ap:16:ap:0.47:7.52,sta:15:sta:1.1:16.5,armor:263:armor:0.021:5.523
+R	warrior/protection	12	7538	12752	gear	31.063	agi:8:agi:0.38:3.04,sta:15:sta:1.1:16.5,str:6:str:1:6,armor:263:armor:0.021:5.523
+R	warrior/protection	12	7538	12755	gear	30.023	sta:15:sta:1.1:16.5,str:8:str:1:8,armor:263:armor:0.021:5.523
+R	warrior/protection	12	7538	12760	gear	5.523000000000001	armor:263:armor:0.021:5.523
+R	warrior/protection	12	7922	0	gear	31.710000000000004	str:12:str:1:12,sta:12:sta:1.1:13.2,armor:310:armor:0.021:6.51
+R	warrior/protection	12	8192	0	gear	11.486	agi:11:agi:0.38:4.18,sta:5:sta:1.1:5.5,armor:86:armor:0.021:1.806
+R	warrior/protection	12	9458	0	oh	19.206	spi:3:spi:0.97:2.91,armor:776:armor:0.021:16.296
+R	warrior/protection	12	9834	0	gear	1.5330000000000001	armor:73:armor:0.021:1.533
+R	warrior/protection	12	9834	12718	gear	8.133000000000001	sta:6:sta:1.1:6.6,armor:73:armor:0.021:1.533
+R	warrior/protection	12	9834	12719	gear	13.953000000000001	spi:6:spi:0.97:5.82,sta:6:sta:1.1:6.6,armor:73:armor:0.021:1.533
+R	warrior/protection	12	9834	12720	gear	7.353000000000001	spi:6:spi:0.97:5.82,armor:73:armor:0.021:1.533
+R	warrior/protection	12	9834	12721	gear	10.413	agi:6:agi:0.38:2.28,sta:6:sta:1.1:6.6,armor:73:armor:0.021:1.533
+R	warrior/protection	12	9834	12722	gear	14.133000000000001	sta:6:sta:1.1:6.6,str:6:str:1:6,armor:73:armor:0.021:1.533
+R	warrior/protection	12	9834	12723	gear	7.533	str:6:str:1:6,armor:73:armor:0.021:1.533
+R	warrior/protection	12	9834	12724	gear	3.8130000000000006	agi:6:agi:0.38:2.28,armor:73:armor:0.021:1.533
+R	warrior/protection	12	9834	12725	gear	13.353	spi:6:spi:0.97:5.82,str:6:str:1:6,armor:73:armor:0.021:1.533
+R	warrior/protection	12	9834	12726	gear	9.633000000000001	agi:6:agi:0.38:2.28,spi:6:spi:0.97:5.82,armor:73:armor:0.021:1.533
+R	warrior/protection	12	9834	12727	gear	9.813	agi:6:agi:0.38:2.28,str:6:str:1:6,armor:73:armor:0.021:1.533
+R	warrior/protection	12	9834	12728	gear	4.953	agi:9:agi:0.38:3.42,armor:73:armor:0.021:1.533
+R	warrior/protection	12	9834	12729	gear	1.5330000000000001	armor:73:armor:0.021:1.533
+R	warrior/protection	12	9834	12730	gear	10.263	spi:9:spi:0.97:8.73,armor:73:armor:0.021:1.533
+R	warrior/protection	12	9834	12731	gear	11.433	sta:9:sta:1.1:9.9,armor:73:armor:0.021:1.533
+R	warrior/protection	12	9834	12732	gear	10.533	str:9:str:1:9,armor:73:armor:0.021:1.533
+R	warrior/protection	12	9834	12733	gear	9.992999999999999	ap:18:ap:0.47:8.46,armor:73:armor:0.021:1.533
+R	warrior/protection	12	9834	12734	gear	1.5330000000000001	armor:73:armor:0.021:1.533
+R	warrior/protection	12	9834	12735	gear	1.5330000000000001	armor:73:armor:0.021:1.533
+R	warrior/protection	12	9834	12736	gear	2.193	defense:6:defense:0.11:0.66,armor:73:armor:0.021:1.533
+R	warrior/protection	12	9834	12740	gear	8.133000000000001	sta:6:sta:1.1:6.6,armor:73:armor:0.021:1.533
+R	warrior/protection	12	9834	12741	gear	8.133000000000001	sta:6:sta:1.1:6.6,armor:73:armor:0.021:1.533
+R	warrior/protection	12	9834	12742	gear	8.133000000000001	sta:6:sta:1.1:6.6,armor:73:armor:0.021:1.533
+R	warrior/protection	12	9834	12743	gear	8.133000000000001	sta:6:sta:1.1:6.6,armor:73:armor:0.021:1.533
+R	warrior/protection	12	9834	12744	gear	8.133000000000001	sta:6:sta:1.1:6.6,armor:73:armor:0.021:1.533
+R	warrior/protection	12	9834	12745	gear	5.933000000000001	sta:4:sta:1.1:4.4,armor:73:armor:0.021:1.533
+R	warrior/protection	12	9834	12746	gear	5.413	spi:4:spi:0.97:3.88,armor:73:armor:0.021:1.533
+R	warrior/protection	12	9834	12747	gear	13.113000000000001	spi:4:spi:0.97:3.88,sta:7:sta:1.1:7.7,armor:73:armor:0.021:1.533
+R	warrior/protection	12	9834	12748	gear	9.233	sta:7:sta:1.1:7.7,armor:73:armor:0.021:1.533
+R	warrior/protection	12	9834	12749	gear	5.413	spi:4:spi:0.97:3.88,armor:73:armor:0.021:1.533
+R	warrior/protection	12	9834	12750	gear	13.113000000000001	spi:4:spi:0.97:3.88,sta:7:sta:1.1:7.7,armor:73:armor:0.021:1.533
+R	warrior/protection	12	9834	12751	gear	13.663	agi:3:agi:0.38:1.14,ap:7:ap:0.47:3.29,sta:7:sta:1.1:7.7,armor:73:armor:0.021:1.533
+R	warrior/protection	12	9834	12752	gear	13.753	agi:4:agi:0.38:1.52,sta:7:sta:1.1:7.7,str:3:str:1:3,armor:73:armor:0.021:1.533
+R	warrior/protection	12	9834	12753	gear	13.453000000000001	defense:2:defense:0.11:0.22,sta:7:sta:1.1:7.7,str:4:str:1:4,armor:73:armor:0.021:1.533
+R	warrior/protection	12	9834	12755	gear	13.233	sta:7:sta:1.1:7.7,str:4:str:1:4,armor:73:armor:0.021:1.533
+R	warrior/protection	12	9834	12756	gear	1.5330000000000001	armor:73:armor:0.021:1.533
+R	warrior/protection	12	9834	12760	gear	1.5330000000000001	armor:73:armor:0.021:1.533
+R	warrior/protection	12	10087	0	gear	5.838	armor:278:armor:0.021:5.838
+R	warrior/protection	12	10087	12718	gear	15.738	sta:9:sta:1.1:9.9,armor:278:armor:0.021:5.838
+R	warrior/protection	12	10087	12719	gear	24.468000000000004	spi:9:spi:0.97:8.73,sta:9:sta:1.1:9.9,armor:278:armor:0.021:5.838
+R	warrior/protection	12	10087	12720	gear	14.568000000000001	spi:9:spi:0.97:8.73,armor:278:armor:0.021:5.838
+R	warrior/protection	12	10087	12721	gear	19.158	agi:9:agi:0.38:3.42,sta:9:sta:1.1:9.9,armor:278:armor:0.021:5.838
+R	warrior/protection	12	10087	12722	gear	24.738	sta:9:sta:1.1:9.9,str:9:str:1:9,armor:278:armor:0.021:5.838
+R	warrior/protection	12	10087	12723	gear	14.838000000000001	str:9:str:1:9,armor:278:armor:0.021:5.838
+R	warrior/protection	12	10087	12724	gear	9.258	agi:9:agi:0.38:3.42,armor:278:armor:0.021:5.838
+R	warrior/protection	12	10087	12725	gear	23.568	spi:9:spi:0.97:8.73,str:9:str:1:9,armor:278:armor:0.021:5.838
+R	warrior/protection	12	10087	12726	gear	17.988	agi:9:agi:0.38:3.42,spi:9:spi:0.97:8.73,armor:278:armor:0.021:5.838
+R	warrior/protection	12	10087	12727	gear	18.258	agi:9:agi:0.38:3.42,str:9:str:1:9,armor:278:armor:0.021:5.838
+R	warrior/protection	12	10087	12728	gear	11.158000000000001	agi:14:agi:0.38:5.32,armor:278:armor:0.021:5.838
+R	warrior/protection	12	10087	12729	gear	5.838	armor:278:armor:0.021:5.838
+R	warrior/protection	12	10087	12730	gear	19.418	spi:14:spi:0.97:13.58,armor:278:armor:0.021:5.838
+R	warrior/protection	12	10087	12731	gear	21.238000000000003	sta:14:sta:1.1:15.4,armor:278:armor:0.021:5.838
+R	warrior/protection	12	10087	12732	gear	19.838	str:14:str:1:14,armor:278:armor:0.021:5.838
+R	warrior/protection	12	10087	12733	gear	18.998	ap:28:ap:0.47:13.16,armor:278:armor:0.021:5.838
+R	warrior/protection	12	10087	12734	gear	5.838	armor:278:armor:0.021:5.838
+R	warrior/protection	12	10087	12735	gear	5.838	armor:278:armor:0.021:5.838
+R	warrior/protection	12	10087	12736	gear	6.828	defense:9:defense:0.11:0.99,armor:278:armor:0.021:5.838
+R	warrior/protection	12	10087	12740	gear	15.738	sta:9:sta:1.1:9.9,armor:278:armor:0.021:5.838
+R	warrior/protection	12	10087	12741	gear	15.738	sta:9:sta:1.1:9.9,armor:278:armor:0.021:5.838
+R	warrior/protection	12	10087	12742	gear	15.738	sta:9:sta:1.1:9.9,armor:278:armor:0.021:5.838
+R	warrior/protection	12	10087	12743	gear	15.738	sta:9:sta:1.1:9.9,armor:278:armor:0.021:5.838
+R	warrior/protection	12	10087	12744	gear	15.738	sta:9:sta:1.1:9.9,armor:278:armor:0.021:5.838
+R	warrior/protection	12	10087	12748	gear	16.838	sta:10:sta:1.1:11,armor:278:armor:0.021:5.838
+R	warrior/protection	12	10087	12749	gear	11.658000000000001	spi:6:spi:0.97:5.82,armor:278:armor:0.021:5.838
+R	warrior/protection	12	10087	12750	gear	22.658	spi:6:spi:0.97:5.82,sta:10:sta:1.1:11,armor:278:armor:0.021:5.838
+R	warrior/protection	12	10087	12752	gear	23.118000000000002	agi:6:agi:0.38:2.28,sta:10:sta:1.1:11,str:4:str:1:4,armor:278:armor:0.021:5.838
+R	warrior/protection	12	10087	12753	gear	23.168	defense:3:defense:0.11:0.33,sta:10:sta:1.1:11,str:6:str:1:6,armor:278:armor:0.021:5.838
+R	warrior/protection	12	10087	12754	gear	17.278	defense:4:defense:0.11:0.44,sta:10:sta:1.1:11,armor:278:armor:0.021:5.838
+R	warrior/protection	12	10087	12755	gear	22.838	sta:10:sta:1.1:11,str:6:str:1:6,armor:278:armor:0.021:5.838
+R	warrior/protection	12	10087	12759	gear	5.838	armor:278:armor:0.021:5.838
+R	warrior/protection	12	10368	0	gear	56.328	str:15:str:1:15,sta:14:sta:1.1:15.4,spi:14:spi:0.97:13.58,armor:588:armor:0.021:12.348
+R	warrior/protection	12	11187	0	gear	0.084	armor:4:armor:0.021:0.084
+R	warrior/protection	12	11994	0	gear	0.0	
+R	warrior/protection	12	11994	12718	gear	3.3000000000000003	sta:3:sta:1.1:3.3
+R	warrior/protection	12	11994	12719	gear	6.210000000000001	spi:3:spi:0.97:2.91,sta:3:sta:1.1:3.3
+R	warrior/protection	12	11994	12720	gear	2.91	spi:3:spi:0.97:2.91
+R	warrior/protection	12	11994	12721	gear	4.44	agi:3:agi:0.38:1.14,sta:3:sta:1.1:3.3
+R	warrior/protection	12	11994	12722	gear	6.300000000000001	sta:3:sta:1.1:3.3,str:3:str:1:3
+R	warrior/protection	12	11994	12723	gear	3.0	str:3:str:1:3
+R	warrior/protection	12	11994	12724	gear	1.1400000000000001	agi:3:agi:0.38:1.14
+R	warrior/protection	12	11994	12725	gear	5.91	spi:3:spi:0.97:2.91,str:3:str:1:3
+R	warrior/protection	12	11994	12726	gear	4.050000000000001	agi:3:agi:0.38:1.14,spi:3:spi:0.97:2.91
+R	warrior/protection	12	11994	12727	gear	4.140000000000001	agi:3:agi:0.38:1.14,str:3:str:1:3
+R	warrior/protection	12	11994	12728	gear	1.9	agi:5:agi:0.38:1.9
+R	warrior/protection	12	11994	12729	gear	0.0	
+R	warrior/protection	12	11994	12730	gear	4.85	spi:5:spi:0.97:4.85
+R	warrior/protection	12	11994	12731	gear	5.5	sta:5:sta:1.1:5.5
+R	warrior/protection	12	11994	12732	gear	5.0	str:5:str:1:5
+R	warrior/protection	12	11994	12733	gear	4.699999999999999	ap:10:ap:0.47:4.7
+R	warrior/protection	12	11994	12737	gear	0.0	
+R	warrior/protection	12	11994	12738	gear	0.0	
+R	warrior/protection	12	11994	12739	gear	0.76	agi:2:agi:0.38:0.76
+R	warrior/protection	12	11994	12740	gear	3.3000000000000003	sta:3:sta:1.1:3.3
+R	warrior/protection	12	11994	12741	gear	3.3000000000000003	sta:3:sta:1.1:3.3
+R	warrior/protection	12	11994	12742	gear	3.3000000000000003	sta:3:sta:1.1:3.3
+R	warrior/protection	12	11994	12743	gear	3.3000000000000003	sta:3:sta:1.1:3.3
+R	warrior/protection	12	11994	12744	gear	3.3000000000000003	sta:3:sta:1.1:3.3
+R	warrior/protection	12	12790	0	mh	226.044	dps:53.82:dps:4.2:226.044
+R	warrior/protection	12	13183	0	mh	165.774	dps:39.47:dps:4.2:165.774
+R	warrior/protection	12	14122	0	gear	0.29400000000000004	armor:14:armor:0.021:0.294
+R	warrior/protection	12	14122	12718	gear	2.494	sta:2:sta:1.1:2.2,armor:14:armor:0.021:0.294
+R	warrior/protection	12	14122	12719	gear	4.434000000000001	spi:2:spi:0.97:1.94,sta:2:sta:1.1:2.2,armor:14:armor:0.021:0.294
+R	warrior/protection	12	14122	12720	gear	2.234	spi:2:spi:0.97:1.94,armor:14:armor:0.021:0.294
+R	warrior/protection	12	14122	12729	gear	0.29400000000000004	armor:14:armor:0.021:0.294
+R	warrior/protection	12	14122	12730	gear	3.204	spi:3:spi:0.97:2.91,armor:14:armor:0.021:0.294
+R	warrior/protection	12	14122	12731	gear	3.5940000000000003	sta:3:sta:1.1:3.3,armor:14:armor:0.021:0.294
+R	warrior/protection	12	14122	12734	gear	0.29400000000000004	armor:14:armor:0.021:0.294
+R	warrior/protection	12	14122	12735	gear	0.29400000000000004	armor:14:armor:0.021:0.294
+R	warrior/protection	12	14122	12740	gear	2.494	sta:2:sta:1.1:2.2,armor:14:armor:0.021:0.294
+R	warrior/protection	12	14122	12741	gear	2.494	sta:2:sta:1.1:2.2,armor:14:armor:0.021:0.294
+R	warrior/protection	12	14122	12742	gear	2.494	sta:2:sta:1.1:2.2,armor:14:armor:0.021:0.294
+R	warrior/protection	12	14122	12743	gear	2.494	sta:2:sta:1.1:2.2,armor:14:armor:0.021:0.294
+R	warrior/protection	12	14122	12744	gear	2.494	sta:2:sta:1.1:2.2,armor:14:armor:0.021:0.294
+R	warrior/protection	12	14122	12745	gear	1.3940000000000001	sta:1:sta:1.1:1.1,armor:14:armor:0.021:0.294
+R	warrior/protection	12	14122	12756	gear	0.29400000000000004	armor:14:armor:0.021:0.294
+R	warrior/protection	12	14122	12757	gear	0.29400000000000004	armor:14:armor:0.021:0.294
+R	warrior/protection	12	14122	12758	gear	0.29400000000000004	armor:14:armor:0.021:0.294
+R	warrior/protection	12	14122	12759	gear	0.29400000000000004	armor:14:armor:0.021:0.294
+R	warrior/protection	12	14122	12761	gear	0.29400000000000004	armor:14:armor:0.021:0.294
+R	warrior/protection	12	14340	0	gear	22.748	sta:19:sta:1.1:20.9,armor:88:armor:0.021:1.848
+R	warrior/protection	12	14673	0	gear	12.634	str:3:str:1:3,agi:9:agi:0.38:3.42,sta:5:sta:1.1:5.5,armor:34:armor:0.021:0.714
+R	warrior/protection	12	14964	0	oh	36.120000000000005	armor:1720:armor:0.021:36.12
+R	warrior/protection	12	14964	12718	oh	46.02	sta:9:sta:1.1:9.9,armor:1720:armor:0.021:36.12
+R	warrior/protection	12	14964	12719	oh	54.75000000000001	spi:9:spi:0.97:8.73,sta:9:sta:1.1:9.9,armor:1720:armor:0.021:36.12
+R	warrior/protection	12	14964	12720	oh	44.85000000000001	spi:9:spi:0.97:8.73,armor:1720:armor:0.021:36.12
+R	warrior/protection	12	14964	12721	oh	49.440000000000005	agi:9:agi:0.38:3.42,sta:9:sta:1.1:9.9,armor:1720:armor:0.021:36.12
+R	warrior/protection	12	14964	12722	oh	55.02	sta:9:sta:1.1:9.9,str:9:str:1:9,armor:1720:armor:0.021:36.12
+R	warrior/protection	12	14964	12723	oh	45.120000000000005	str:9:str:1:9,armor:1720:armor:0.021:36.12
+R	warrior/protection	12	14964	12724	oh	39.540000000000006	agi:9:agi:0.38:3.42,armor:1720:armor:0.021:36.12
+R	warrior/protection	12	14964	12725	oh	53.85000000000001	spi:9:spi:0.97:8.73,str:9:str:1:9,armor:1720:armor:0.021:36.12
+R	warrior/protection	12	14964	12726	oh	48.27	agi:9:agi:0.38:3.42,spi:9:spi:0.97:8.73,armor:1720:armor:0.021:36.12
+R	warrior/protection	12	14964	12727	oh	48.540000000000006	agi:9:agi:0.38:3.42,str:9:str:1:9,armor:1720:armor:0.021:36.12
+R	warrior/protection	12	14964	12728	oh	41.440000000000005	agi:14:agi:0.38:5.32,armor:1720:armor:0.021:36.12
+R	warrior/protection	12	14964	12729	oh	36.120000000000005	armor:1720:armor:0.021:36.12
+R	warrior/protection	12	14964	12730	oh	49.7	spi:14:spi:0.97:13.58,armor:1720:armor:0.021:36.12
+R	warrior/protection	12	14964	12731	oh	51.52000000000001	sta:14:sta:1.1:15.4,armor:1720:armor:0.021:36.12
+R	warrior/protection	12	14964	12732	oh	50.120000000000005	str:14:str:1:14,armor:1720:armor:0.021:36.12
+R	warrior/protection	12	14964	12733	oh	49.28	ap:28:ap:0.47:13.16,armor:1720:armor:0.021:36.12
+R	warrior/protection	12	14964	12734	oh	36.120000000000005	armor:1720:armor:0.021:36.12
+R	warrior/protection	12	14964	12735	oh	36.120000000000005	armor:1720:armor:0.021:36.12
+R	warrior/protection	12	14964	12736	oh	37.11000000000001	defense:9:defense:0.11:0.99,armor:1720:armor:0.021:36.12
+R	warrior/protection	12	14964	12740	oh	46.02	sta:9:sta:1.1:9.9,armor:1720:armor:0.021:36.12
+R	warrior/protection	12	14964	12741	oh	46.02	sta:9:sta:1.1:9.9,armor:1720:armor:0.021:36.12
+R	warrior/protection	12	14964	12742	oh	46.02	sta:9:sta:1.1:9.9,armor:1720:armor:0.021:36.12
+R	warrior/protection	12	14964	12743	oh	46.02	sta:9:sta:1.1:9.9,armor:1720:armor:0.021:36.12
+R	warrior/protection	12	14964	12744	oh	46.02	sta:9:sta:1.1:9.9,armor:1720:armor:0.021:36.12
+R	warrior/protection	12	14964	12745	oh	42.720000000000006	sta:6:sta:1.1:6.6,armor:1720:armor:0.021:36.12
+R	warrior/protection	12	14964	12746	oh	41.940000000000005	spi:6:spi:0.97:5.82,armor:1720:armor:0.021:36.12
+R	warrior/protection	12	14964	12747	oh	52.940000000000005	spi:6:spi:0.97:5.82,sta:10:sta:1.1:11,armor:1720:armor:0.021:36.12
+R	warrior/protection	12	14964	12748	oh	47.120000000000005	sta:10:sta:1.1:11,armor:1720:armor:0.021:36.12
+R	warrior/protection	12	14964	12749	oh	41.940000000000005	spi:6:spi:0.97:5.82,armor:1720:armor:0.021:36.12
+R	warrior/protection	12	14964	12750	oh	52.940000000000005	spi:6:spi:0.97:5.82,sta:10:sta:1.1:11,armor:1720:armor:0.021:36.12
+R	warrior/protection	12	14964	12753	oh	53.45	defense:3:defense:0.11:0.33,sta:10:sta:1.1:11,str:6:str:1:6,armor:1720:armor:0.021:36.12
+R	warrior/protection	12	14964	12754	oh	47.56	defense:4:defense:0.11:0.44,sta:10:sta:1.1:11,armor:1720:armor:0.021:36.12
+R	warrior/protection	12	14964	12759	oh	36.120000000000005	armor:1720:armor:0.021:36.12
+R	warrior/protection	12	14964	12760	oh	36.120000000000005	armor:1720:armor:0.021:36.12
+R	warrior/protection	12	15235	0	mh	119.994	dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15235	12718	mh	125.494	sta:5:sta:1.1:5.5,dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15235	12719	mh	130.344	spi:5:spi:0.97:4.85,sta:5:sta:1.1:5.5,dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15235	12720	mh	124.844	spi:5:spi:0.97:4.85,dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15235	12721	mh	127.394	agi:5:agi:0.38:1.9,sta:5:sta:1.1:5.5,dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15235	12722	mh	130.494	sta:5:sta:1.1:5.5,str:5:str:1:5,dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15235	12723	mh	124.994	str:5:str:1:5,dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15235	12724	mh	121.894	agi:5:agi:0.38:1.9,dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15235	12725	mh	129.844	spi:5:spi:0.97:4.85,str:5:str:1:5,dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15235	12726	mh	126.744	agi:5:agi:0.38:1.9,spi:5:spi:0.97:4.85,dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15235	12727	mh	126.894	agi:5:agi:0.38:1.9,str:5:str:1:5,dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15235	12728	mh	123.034	agi:8:agi:0.38:3.04,dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15235	12729	mh	119.994	dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15235	12730	mh	127.754	spi:8:spi:0.97:7.76,dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15235	12731	mh	128.794	sta:8:sta:1.1:8.8,dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15235	12732	mh	127.994	str:8:str:1:8,dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15235	12733	mh	127.514	ap:16:ap:0.47:7.52,dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15235	12736	mh	120.544	defense:5:defense:0.11:0.55,dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15235	12740	mh	125.494	sta:5:sta:1.1:5.5,dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15235	12741	mh	125.494	sta:5:sta:1.1:5.5,dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15235	12742	mh	125.494	sta:5:sta:1.1:5.5,dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15235	12743	mh	125.494	sta:5:sta:1.1:5.5,dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15235	12744	mh	125.494	sta:5:sta:1.1:5.5,dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15235	12751	mh	131.024	agi:3:agi:0.38:1.14,ap:7:ap:0.47:3.29,sta:6:sta:1.1:6.6,dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15235	12752	mh	130.734	agi:3:agi:0.38:1.14,sta:6:sta:1.1:6.6,str:3:str:1:3,dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15235	12753	mh	129.814	defense:2:defense:0.11:0.22,sta:6:sta:1.1:6.6,str:3:str:1:3,dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15235	12754	mh	126.814	defense:2:defense:0.11:0.22,sta:6:sta:1.1:6.6,dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15235	12759	mh	119.994	dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15235	12906	mh	124.394	sta:4:sta:1.1:4.4,dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15235	12908	mh	123.874	spi:4:spi:0.97:3.88,dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15235	12910	mh	130.474	spi:4:spi:0.97:3.88,sta:6:sta:1.1:6.6,dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15235	12912	mh	126.594	sta:6:sta:1.1:6.6,dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15235	12913	mh	123.874	spi:4:spi:0.97:3.88,dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15235	12916	mh	130.474	spi:4:spi:0.97:3.88,sta:6:sta:1.1:6.6,dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15235	12917	mh	119.994	dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15235	12920	mh	119.994	dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15477	0	gear	2.121	armor:101:armor:0.021:2.121
+R	warrior/protection	12	15477	12718	gear	3.221	sta:1:sta:1.1:1.1,armor:101:armor:0.021:2.121
+R	warrior/protection	12	15477	12719	gear	4.191000000000001	spi:1:spi:0.97:0.97,sta:1:sta:1.1:1.1,armor:101:armor:0.021:2.121
+R	warrior/protection	12	15477	12720	gear	3.091	spi:1:spi:0.97:0.97,armor:101:armor:0.021:2.121
+R	warrior/protection	12	15477	12721	gear	3.601	agi:1:agi:0.38:0.38,sta:1:sta:1.1:1.1,armor:101:armor:0.021:2.121
+R	warrior/protection	12	15477	12722	gear	4.221	sta:1:sta:1.1:1.1,str:1:str:1:1,armor:101:armor:0.021:2.121
+R	warrior/protection	12	15477	12723	gear	3.121	str:1:str:1:1,armor:101:armor:0.021:2.121
+R	warrior/protection	12	15477	12724	gear	2.501	agi:1:agi:0.38:0.38,armor:101:armor:0.021:2.121
+R	warrior/protection	12	15477	12725	gear	4.091	spi:1:spi:0.97:0.97,str:1:str:1:1,armor:101:armor:0.021:2.121
+R	warrior/protection	12	15477	12726	gear	3.471	agi:1:agi:0.38:0.38,spi:1:spi:0.97:0.97,armor:101:armor:0.021:2.121
+R	warrior/protection	12	15477	12727	gear	3.501	agi:1:agi:0.38:0.38,str:1:str:1:1,armor:101:armor:0.021:2.121
+R	warrior/protection	12	15477	12728	gear	2.8810000000000002	agi:2:agi:0.38:0.76,armor:101:armor:0.021:2.121
+R	warrior/protection	12	15477	12729	gear	2.121	armor:101:armor:0.021:2.121
+R	warrior/protection	12	15477	12730	gear	4.061	spi:2:spi:0.97:1.94,armor:101:armor:0.021:2.121
+R	warrior/protection	12	15477	12731	gear	4.321	sta:2:sta:1.1:2.2,armor:101:armor:0.021:2.121
+R	warrior/protection	12	15477	12732	gear	4.121	str:2:str:1:2,armor:101:armor:0.021:2.121
+R	warrior/protection	12	15477	12733	gear	4.0009999999999994	ap:4:ap:0.47:1.88,armor:101:armor:0.021:2.121
+R	warrior/protection	12	15477	12734	gear	2.121	armor:101:armor:0.021:2.121
+R	warrior/protection	12	15477	12735	gear	2.121	armor:101:armor:0.021:2.121
+R	warrior/protection	12	15477	12736	gear	2.231	defense:1:defense:0.11:0.11,armor:101:armor:0.021:2.121
+R	warrior/protection	12	15477	12740	gear	3.221	sta:1:sta:1.1:1.1,armor:101:armor:0.021:2.121
+R	warrior/protection	12	15477	12741	gear	3.221	sta:1:sta:1.1:1.1,armor:101:armor:0.021:2.121
+R	warrior/protection	12	15477	12742	gear	3.221	sta:1:sta:1.1:1.1,armor:101:armor:0.021:2.121
+R	warrior/protection	12	15477	12743	gear	3.221	sta:1:sta:1.1:1.1,armor:101:armor:0.021:2.121
+R	warrior/protection	12	15477	12744	gear	3.221	sta:1:sta:1.1:1.1,armor:101:armor:0.021:2.121
+R	warrior/protection	12	15477	12759	gear	2.121	armor:101:armor:0.021:2.121
+R	warrior/protection	12	15691	0	ranged	4.140000000000001	agi:3:agi:0.38:1.14,str:3:str:1:3
+R	warrior/protection	12	15945	0	oh	4.140000000000001	sta:2:sta:1.1:2.2,spi:2:spi:0.97:1.94
+R	warrior/protection	12	16711	0	gear	20.523000000000003	agi:21:agi:0.38:7.98,sta:9:sta:1.1:9.9,hit:0.3:hit:0.76:0.228,armor:115:armor:0.021:2.415
+R	warrior/protection	12	18312	0	gear	47.957	str:13:str:1:13,sta:20:sta:1.1:22,armor:617:armor:0.021:12.957
+R	warrior/protection	12	18726	0	gear	18.803	sta:15:sta:1.1:16.5,defense:7:defense:0.11:0.77,armor:73:armor:0.021:1.533
+R	warrior/protection	12	19557	0	mh	99.76	str:7:str:1:7,sta:3:sta:1.1:3.3,dps:21.3:dps:4.2:89.46
+R	warrior/protection	12	20129	0	gear	18.177000000000003	agi:6:agi:0.38:2.28,str:6:str:1:6,sta:6:sta:1.1:6.6,armor:157:armor:0.021:3.297
+R	warrior/protection	12	20437	0	ranged	4.0600000000000005	agi:2:agi:0.38:0.76,sta:3:sta:1.1:3.3
+R	warrior/protection	12	22270	0	gear	30.666999999999998	str:11:str:1:11,defense:3:defense:0.11:0.33,sta:10:sta:1.1:11,armor:397:armor:0.021:8.337
+R	warrior/protection	12	22967	0	gear	35.753	sta:25:sta:1.1:27.5,armor:393:armor:0.021:8.253
+R	warrior/protection	12	226878	0	gear	40.753	str:18:str:1:18,sta:12:sta:1.1:13.2,crit:1:crit:1.3:1.3,armor:393:armor:0.021:8.253
+R	warrior/protection	12	250491	0	gear	8.264000000000001	sta:4:sta:1.1:4.4,armor:184:armor:0.021:3.864
+R	warrior/protection	12	252507	0	gear	12.596	sta:10:sta:1.1:11,armor:76:armor:0.021:1.596
+R	warrior/protection	12	254111	0	gear	15.434000000000001	sta:13:sta:1.1:14.3,armor:54:armor:0.021:1.134
+R	warrior/protection	12	270033	0	gear	5.3389999999999995	agi:4:agi:0.38:1.52,str:3:str:1:3,armor:39:armor:0.021:0.819
+R	warrior/protection	12	271956	0	gear	31.312	agi:27:agi:0.38:10.26,sta:12:sta:1.1:13.2,crit:1:crit:1.3:1.3,armor:312:armor:0.021:6.552
+R	warrior/protection	12	272958	0	gear	19.752000000000002	sta:12:sta:1.1:13.2,armor:312:armor:0.021:6.552
+R	warrior/protection	12	274646	0	ranged	1.9	agi:5:agi:0.38:1.9
+R	warrior/protection	12	276399	0	gear	32.967	sta:18:sta:1.1:19.8,armor:627:armor:0.021:13.167
+R	warrior/protection	12	277235	0	gear	32.455	str:14:str:1:14,sta:10:sta:1.1:11,armor:355:armor:0.021:7.455
+R	warrior/protection	12	280082	0	mh	173.76	hit:1.5:hit:0.76:1.14,spi:21:spi:0.97:20.37,dps:36.25:dps:4.2:152.25
+R	warrior/protection	12	282560	0	gear	18.773	sta:13:sta:1.1:14.3,armor:213:armor:0.021:4.473
+R	warrior/protection	12	286609	0	oh	43.885999999999996	spi:6:spi:0.97:5.82,defense:7:defense:0.11:0.77,armor:1776:armor:0.021:37.296
+R	warrior/protection	25	25	0	mh	2.5900000000000007	dps:1.05:dps:3:3.15,speed:-0.4:speed:1.4:-0.56
+R	warrior/protection	25	1315	0	gear	17.15	sta:10:sta:0.38:3.8,spi:15:spi:0.89:13.35
+R	warrior/protection	25	1808	0	gear	0.74	armor:74:armor:0.01:0.74
+R	warrior/protection	25	2225	0	mh	14.16	dps:5:dps:3:15,speed:-0.6:speed:1.4:-0.84
+R	warrior/protection	25	2614	0	gear	0.29	armor:29:armor:0.01:0.29
+R	warrior/protection	25	3158	0	gear	0.26	armor:26:armor:0.01:0.26
+R	warrior/protection	25	3570	0	mh	26.5	str:2:str:1:2,dps:8.12:dps:3:24.36,speed:0.1:speed:1.4:0.14
+R	warrior/protection	25	4023	0	mh	45.239999999999995	dps:15.36:dps:3:46.08,speed:-0.6:speed:1.4:-0.84
+R	warrior/protection	25	4068	0	oh	13.05	sta:9:sta:0.38:3.42,armor:963:armor:0.01:9.63
+R	warrior/protection	25	4570	0	mh	30.84	dps:10:dps:3:30,speed:0.6:speed:1.4:0.84
+R	warrior/protection	25	4570	12718	mh	31.98	sta:3:sta:0.38:1.14,dps:10:dps:3:30,speed:0.6:speed:1.4:0.84
+R	warrior/protection	25	4570	12719	mh	34.650000000000006	spi:3:spi:0.89:2.67,sta:3:sta:0.38:1.14,dps:10:dps:3:30,speed:0.6:speed:1.4:0.84
+R	warrior/protection	25	4570	12720	mh	33.510000000000005	spi:3:spi:0.89:2.67,dps:10:dps:3:30,speed:0.6:speed:1.4:0.84
+R	warrior/protection	25	4570	12721	mh	32.970000000000006	agi:3:agi:0.33:0.99,sta:3:sta:0.38:1.14,dps:10:dps:3:30,speed:0.6:speed:1.4:0.84
+R	warrior/protection	25	4570	12722	mh	34.980000000000004	sta:3:sta:0.38:1.14,str:3:str:1:3,dps:10:dps:3:30,speed:0.6:speed:1.4:0.84
+R	warrior/protection	25	4570	12723	mh	33.84	str:3:str:1:3,dps:10:dps:3:30,speed:0.6:speed:1.4:0.84
+R	warrior/protection	25	4570	12724	mh	31.83	agi:3:agi:0.33:0.99,dps:10:dps:3:30,speed:0.6:speed:1.4:0.84
+R	warrior/protection	25	4570	12725	mh	36.510000000000005	spi:3:spi:0.89:2.67,str:3:str:1:3,dps:10:dps:3:30,speed:0.6:speed:1.4:0.84
+R	warrior/protection	25	4570	12726	mh	34.5	agi:3:agi:0.33:0.99,spi:3:spi:0.89:2.67,dps:10:dps:3:30,speed:0.6:speed:1.4:0.84
+R	warrior/protection	25	4570	12727	mh	34.830000000000005	agi:3:agi:0.33:0.99,str:3:str:1:3,dps:10:dps:3:30,speed:0.6:speed:1.4:0.84
+R	warrior/protection	25	4570	12728	mh	32.160000000000004	agi:4:agi:0.33:1.32,dps:10:dps:3:30,speed:0.6:speed:1.4:0.84
+R	warrior/protection	25	4570	12729	mh	30.84	dps:10:dps:3:30,speed:0.6:speed:1.4:0.84
+R	warrior/protection	25	4570	12730	mh	34.400000000000006	spi:4:spi:0.89:3.56,dps:10:dps:3:30,speed:0.6:speed:1.4:0.84
+R	warrior/protection	25	4570	12731	mh	32.36	sta:4:sta:0.38:1.52,dps:10:dps:3:30,speed:0.6:speed:1.4:0.84
+R	warrior/protection	25	4570	12732	mh	34.84	str:4:str:1:4,dps:10:dps:3:30,speed:0.6:speed:1.4:0.84
+R	warrior/protection	25	4570	12733	mh	34.52	ap:8:ap:0.46:3.68,dps:10:dps:3:30,speed:0.6:speed:1.4:0.84
+R	warrior/protection	25	4570	12736	mh	31.14	defense:3:defense:0.1:0.3,dps:10:dps:3:30,speed:0.6:speed:1.4:0.84
+R	warrior/protection	25	4570	12740	mh	31.98	sta:3:sta:0.38:1.14,dps:10:dps:3:30,speed:0.6:speed:1.4:0.84
+R	warrior/protection	25	4570	12741	mh	31.98	sta:3:sta:0.38:1.14,dps:10:dps:3:30,speed:0.6:speed:1.4:0.84
+R	warrior/protection	25	4570	12742	mh	31.98	sta:3:sta:0.38:1.14,dps:10:dps:3:30,speed:0.6:speed:1.4:0.84
+R	warrior/protection	25	4570	12743	mh	31.98	sta:3:sta:0.38:1.14,dps:10:dps:3:30,speed:0.6:speed:1.4:0.84
+R	warrior/protection	25	4570	12744	mh	31.98	sta:3:sta:0.38:1.14,dps:10:dps:3:30,speed:0.6:speed:1.4:0.84
+R	warrior/protection	25	4570	12759	mh	30.84	dps:10:dps:3:30,speed:0.6:speed:1.4:0.84
+R	warrior/protection	25	4570	12918	mh	30.84	dps:10:dps:3:30,speed:0.6:speed:1.4:0.84
+R	warrior/protection	25	4570	12919	mh	30.84	dps:10:dps:3:30,speed:0.6:speed:1.4:0.84
+R	warrior/protection	25	5079	0	gear	0.0	
+R	warrior/protection	25	6063	0	gear	0.55	armor:55:armor:0.01:0.55
+R	warrior/protection	25	6540	0	gear	0.28	armor:28:armor:0.01:0.28
+R	warrior/protection	25	6540	12718	gear	1.4200000000000002	sta:3:sta:0.38:1.14,armor:28:armor:0.01:0.28
+R	warrior/protection	25	6540	12719	gear	4.09	spi:3:spi:0.89:2.67,sta:3:sta:0.38:1.14,armor:28:armor:0.01:0.28
+R	warrior/protection	25	6540	12720	gear	2.95	spi:3:spi:0.89:2.67,armor:28:armor:0.01:0.28
+R	warrior/protection	25	6540	12729	gear	0.28	armor:28:armor:0.01:0.28
+R	warrior/protection	25	6540	12730	gear	4.73	spi:5:spi:0.89:4.45,armor:28:armor:0.01:0.28
+R	warrior/protection	25	6540	12731	gear	2.1799999999999997	sta:5:sta:0.38:1.9,armor:28:armor:0.01:0.28
+R	warrior/protection	25	6540	12734	gear	0.28	armor:28:armor:0.01:0.28
+R	warrior/protection	25	6540	12735	gear	0.28	armor:28:armor:0.01:0.28
+R	warrior/protection	25	6540	12740	gear	1.4200000000000002	sta:3:sta:0.38:1.14,armor:28:armor:0.01:0.28
+R	warrior/protection	25	6540	12741	gear	1.4200000000000002	sta:3:sta:0.38:1.14,armor:28:armor:0.01:0.28
+R	warrior/protection	25	6540	12742	gear	1.4200000000000002	sta:3:sta:0.38:1.14,armor:28:armor:0.01:0.28
+R	warrior/protection	25	6540	12743	gear	1.4200000000000002	sta:3:sta:0.38:1.14,armor:28:armor:0.01:0.28
+R	warrior/protection	25	6540	12744	gear	1.4200000000000002	sta:3:sta:0.38:1.14,armor:28:armor:0.01:0.28
+R	warrior/protection	25	6540	12745	gear	1.04	sta:2:sta:0.38:0.76,armor:28:armor:0.01:0.28
+R	warrior/protection	25	6540	12756	gear	0.28	armor:28:armor:0.01:0.28
+R	warrior/protection	25	6540	12757	gear	0.28	armor:28:armor:0.01:0.28
+R	warrior/protection	25	6540	12758	gear	0.28	armor:28:armor:0.01:0.28
+R	warrior/protection	25	6540	12759	gear	0.28	armor:28:armor:0.01:0.28
+R	warrior/protection	25	6540	12761	gear	0.28	armor:28:armor:0.01:0.28
+R	warrior/protection	25	6557	0	gear	0.49	armor:49:armor:0.01:0.49
+R	warrior/protection	25	6557	12718	gear	1.25	sta:2:sta:0.38:0.76,armor:49:armor:0.01:0.49
+R	warrior/protection	25	6557	12719	gear	3.0300000000000002	spi:2:spi:0.89:1.78,sta:2:sta:0.38:0.76,armor:49:armor:0.01:0.49
+R	warrior/protection	25	6557	12720	gear	2.27	spi:2:spi:0.89:1.78,armor:49:armor:0.01:0.49
+R	warrior/protection	25	6557	12721	gear	1.91	agi:2:agi:0.33:0.66,sta:2:sta:0.38:0.76,armor:49:armor:0.01:0.49
+R	warrior/protection	25	6557	12722	gear	3.25	sta:2:sta:0.38:0.76,str:2:str:1:2,armor:49:armor:0.01:0.49
+R	warrior/protection	25	6557	12723	gear	2.49	str:2:str:1:2,armor:49:armor:0.01:0.49
+R	warrior/protection	25	6557	12724	gear	1.15	agi:2:agi:0.33:0.66,armor:49:armor:0.01:0.49
+R	warrior/protection	25	6557	12725	gear	4.2700000000000005	spi:2:spi:0.89:1.78,str:2:str:1:2,armor:49:armor:0.01:0.49
+R	warrior/protection	25	6557	12726	gear	2.9299999999999997	agi:2:agi:0.33:0.66,spi:2:spi:0.89:1.78,armor:49:armor:0.01:0.49
+R	warrior/protection	25	6557	12727	gear	3.1500000000000004	agi:2:agi:0.33:0.66,str:2:str:1:2,armor:49:armor:0.01:0.49
+R	warrior/protection	25	6557	12728	gear	1.48	agi:3:agi:0.33:0.99,armor:49:armor:0.01:0.49
+R	warrior/protection	25	6557	12729	gear	0.49	armor:49:armor:0.01:0.49
+R	warrior/protection	25	6557	12730	gear	3.16	spi:3:spi:0.89:2.67,armor:49:armor:0.01:0.49
+R	warrior/protection	25	6557	12731	gear	1.6300000000000001	sta:3:sta:0.38:1.14,armor:49:armor:0.01:0.49
+R	warrior/protection	25	6557	12732	gear	3.49	str:3:str:1:3,armor:49:armor:0.01:0.49
+R	warrior/protection	25	6557	12733	gear	3.25	ap:6:ap:0.46:2.76,armor:49:armor:0.01:0.49
+R	warrior/protection	25	6557	12734	gear	0.49	armor:49:armor:0.01:0.49
+R	warrior/protection	25	6557	12735	gear	0.49	armor:49:armor:0.01:0.49
+R	warrior/protection	25	6557	12736	gear	0.69	defense:2:defense:0.1:0.2,armor:49:armor:0.01:0.49
+R	warrior/protection	25	6557	12740	gear	1.25	sta:2:sta:0.38:0.76,armor:49:armor:0.01:0.49
+R	warrior/protection	25	6557	12741	gear	1.25	sta:2:sta:0.38:0.76,armor:49:armor:0.01:0.49
+R	warrior/protection	25	6557	12742	gear	1.25	sta:2:sta:0.38:0.76,armor:49:armor:0.01:0.49
+R	warrior/protection	25	6557	12743	gear	1.25	sta:2:sta:0.38:0.76,armor:49:armor:0.01:0.49
+R	warrior/protection	25	6557	12744	gear	1.25	sta:2:sta:0.38:0.76,armor:49:armor:0.01:0.49
+R	warrior/protection	25	6557	12756	gear	0.49	armor:49:armor:0.01:0.49
+R	warrior/protection	25	6557	12760	gear	0.49	armor:49:armor:0.01:0.49
+R	warrior/protection	25	7047	0	gear	4.71	spi:5:spi:0.89:4.45,armor:26:armor:0.01:0.26
+R	warrior/protection	25	7538	0	gear	2.63	armor:263:armor:0.01:2.63
+R	warrior/protection	25	7538	12718	gear	7.57	sta:13:sta:0.38:4.94,armor:263:armor:0.01:2.63
+R	warrior/protection	25	7538	12719	gear	19.14	spi:13:spi:0.89:11.57,sta:13:sta:0.38:4.94,armor:263:armor:0.01:2.63
+R	warrior/protection	25	7538	12720	gear	14.2	spi:13:spi:0.89:11.57,armor:263:armor:0.01:2.63
+R	warrior/protection	25	7538	12721	gear	11.86	agi:13:agi:0.33:4.29,sta:13:sta:0.38:4.94,armor:263:armor:0.01:2.63
+R	warrior/protection	25	7538	12722	gear	20.57	sta:13:sta:0.38:4.94,str:13:str:1:13,armor:263:armor:0.01:2.63
+R	warrior/protection	25	7538	12723	gear	15.629999999999999	str:13:str:1:13,armor:263:armor:0.01:2.63
+R	warrior/protection	25	7538	12724	gear	6.92	agi:13:agi:0.33:4.29,armor:263:armor:0.01:2.63
+R	warrior/protection	25	7538	12725	gear	27.2	spi:13:spi:0.89:11.57,str:13:str:1:13,armor:263:armor:0.01:2.63
+R	warrior/protection	25	7538	12726	gear	18.49	agi:13:agi:0.33:4.29,spi:13:spi:0.89:11.57,armor:263:armor:0.01:2.63
+R	warrior/protection	25	7538	12727	gear	19.919999999999998	agi:13:agi:0.33:4.29,str:13:str:1:13,armor:263:armor:0.01:2.63
+R	warrior/protection	25	7538	12728	gear	9.23	agi:20:agi:0.33:6.6,armor:263:armor:0.01:2.63
+R	warrior/protection	25	7538	12729	gear	2.63	armor:263:armor:0.01:2.63
+R	warrior/protection	25	7538	12730	gear	20.43	spi:20:spi:0.89:17.8,armor:263:armor:0.01:2.63
+R	warrior/protection	25	7538	12731	gear	10.23	sta:20:sta:0.38:7.6,armor:263:armor:0.01:2.63
+R	warrior/protection	25	7538	12732	gear	22.63	str:20:str:1:20,armor:263:armor:0.01:2.63
+R	warrior/protection	25	7538	12733	gear	21.03	ap:40:ap:0.46:18.4,armor:263:armor:0.01:2.63
+R	warrior/protection	25	7538	12734	gear	2.63	armor:263:armor:0.01:2.63
+R	warrior/protection	25	7538	12735	gear	2.63	armor:263:armor:0.01:2.63
+R	warrior/protection	25	7538	12740	gear	7.57	sta:13:sta:0.38:4.94,armor:263:armor:0.01:2.63
+R	warrior/protection	25	7538	12741	gear	7.57	sta:13:sta:0.38:4.94,armor:263:armor:0.01:2.63
+R	warrior/protection	25	7538	12742	gear	7.57	sta:13:sta:0.38:4.94,armor:263:armor:0.01:2.63
+R	warrior/protection	25	7538	12743	gear	7.57	sta:13:sta:0.38:4.94,armor:263:armor:0.01:2.63
+R	warrior/protection	25	7538	12744	gear	7.57	sta:13:sta:0.38:4.94,armor:263:armor:0.01:2.63
+R	warrior/protection	25	7538	12745	gear	5.67	sta:8:sta:0.38:3.04,armor:263:armor:0.01:2.63
+R	warrior/protection	25	7538	12746	gear	9.75	spi:8:spi:0.89:7.12,armor:263:armor:0.01:2.63
+R	warrior/protection	25	7538	12747	gear	15.45	spi:8:spi:0.89:7.12,sta:15:sta:0.38:5.7,armor:263:armor:0.01:2.63
+R	warrior/protection	25	7538	12748	gear	8.33	sta:15:sta:0.38:5.7,armor:263:armor:0.01:2.63
+R	warrior/protection	25	7538	12749	gear	9.75	spi:8:spi:0.89:7.12,armor:263:armor:0.01:2.63
+R	warrior/protection	25	7538	12750	gear	15.45	spi:8:spi:0.89:7.12,sta:15:sta:0.38:5.7,armor:263:armor:0.01:2.63
+R	warrior/protection	25	7538	12751	gear	17.669999999999998	agi:6:agi:0.33:1.98,ap:16:ap:0.46:7.36,sta:15:sta:0.38:5.7,armor:263:armor:0.01:2.63
+R	warrior/protection	25	7538	12752	gear	16.97	agi:8:agi:0.33:2.64,sta:15:sta:0.38:5.7,str:6:str:1:6,armor:263:armor:0.01:2.63
+R	warrior/protection	25	7538	12755	gear	16.33	sta:15:sta:0.38:5.7,str:8:str:1:8,armor:263:armor:0.01:2.63
+R	warrior/protection	25	7538	12760	gear	2.63	armor:263:armor:0.01:2.63
+R	warrior/protection	25	7922	0	gear	19.660000000000004	str:12:str:1:12,sta:12:sta:0.38:4.56,armor:310:armor:0.01:3.1
+R	warrior/protection	25	8192	0	gear	6.390000000000001	agi:11:agi:0.33:3.63,sta:5:sta:0.38:1.9,armor:86:armor:0.01:0.86
+R	warrior/protection	25	9458	0	oh	10.43	spi:3:spi:0.89:2.67,armor:776:armor:0.01:7.76
+R	warrior/protection	25	9834	0	gear	0.73	armor:73:armor:0.01:0.73
+R	warrior/protection	25	9834	12718	gear	3.0100000000000002	sta:6:sta:0.38:2.28,armor:73:armor:0.01:0.73
+R	warrior/protection	25	9834	12719	gear	8.35	spi:6:spi:0.89:5.34,sta:6:sta:0.38:2.28,armor:73:armor:0.01:0.73
+R	warrior/protection	25	9834	12720	gear	6.07	spi:6:spi:0.89:5.34,armor:73:armor:0.01:0.73
+R	warrior/protection	25	9834	12721	gear	4.99	agi:6:agi:0.33:1.98,sta:6:sta:0.38:2.28,armor:73:armor:0.01:0.73
+R	warrior/protection	25	9834	12722	gear	9.010000000000002	sta:6:sta:0.38:2.28,str:6:str:1:6,armor:73:armor:0.01:0.73
+R	warrior/protection	25	9834	12723	gear	6.73	str:6:str:1:6,armor:73:armor:0.01:0.73
+R	warrior/protection	25	9834	12724	gear	2.71	agi:6:agi:0.33:1.98,armor:73:armor:0.01:0.73
+R	warrior/protection	25	9834	12725	gear	12.07	spi:6:spi:0.89:5.34,str:6:str:1:6,armor:73:armor:0.01:0.73
+R	warrior/protection	25	9834	12726	gear	8.05	agi:6:agi:0.33:1.98,spi:6:spi:0.89:5.34,armor:73:armor:0.01:0.73
+R	warrior/protection	25	9834	12727	gear	8.71	agi:6:agi:0.33:1.98,str:6:str:1:6,armor:73:armor:0.01:0.73
+R	warrior/protection	25	9834	12728	gear	3.7	agi:9:agi:0.33:2.97,armor:73:armor:0.01:0.73
+R	warrior/protection	25	9834	12729	gear	0.73	armor:73:armor:0.01:0.73
+R	warrior/protection	25	9834	12730	gear	8.74	spi:9:spi:0.89:8.01,armor:73:armor:0.01:0.73
+R	warrior/protection	25	9834	12731	gear	4.15	sta:9:sta:0.38:3.42,armor:73:armor:0.01:0.73
+R	warrior/protection	25	9834	12732	gear	9.73	str:9:str:1:9,armor:73:armor:0.01:0.73
+R	warrior/protection	25	9834	12733	gear	9.010000000000002	ap:18:ap:0.46:8.28,armor:73:armor:0.01:0.73
+R	warrior/protection	25	9834	12734	gear	0.73	armor:73:armor:0.01:0.73
+R	warrior/protection	25	9834	12735	gear	0.73	armor:73:armor:0.01:0.73
+R	warrior/protection	25	9834	12736	gear	1.33	defense:6:defense:0.1:0.6,armor:73:armor:0.01:0.73
+R	warrior/protection	25	9834	12740	gear	3.0100000000000002	sta:6:sta:0.38:2.28,armor:73:armor:0.01:0.73
+R	warrior/protection	25	9834	12741	gear	3.0100000000000002	sta:6:sta:0.38:2.28,armor:73:armor:0.01:0.73
+R	warrior/protection	25	9834	12742	gear	3.0100000000000002	sta:6:sta:0.38:2.28,armor:73:armor:0.01:0.73
+R	warrior/protection	25	9834	12743	gear	3.0100000000000002	sta:6:sta:0.38:2.28,armor:73:armor:0.01:0.73
+R	warrior/protection	25	9834	12744	gear	3.0100000000000002	sta:6:sta:0.38:2.28,armor:73:armor:0.01:0.73
+R	warrior/protection	25	9834	12745	gear	2.25	sta:4:sta:0.38:1.52,armor:73:armor:0.01:0.73
+R	warrior/protection	25	9834	12746	gear	4.29	spi:4:spi:0.89:3.56,armor:73:armor:0.01:0.73
+R	warrior/protection	25	9834	12747	gear	6.950000000000001	spi:4:spi:0.89:3.56,sta:7:sta:0.38:2.66,armor:73:armor:0.01:0.73
+R	warrior/protection	25	9834	12748	gear	3.39	sta:7:sta:0.38:2.66,armor:73:armor:0.01:0.73
+R	warrior/protection	25	9834	12749	gear	4.29	spi:4:spi:0.89:3.56,armor:73:armor:0.01:0.73
+R	warrior/protection	25	9834	12750	gear	6.950000000000001	spi:4:spi:0.89:3.56,sta:7:sta:0.38:2.66,armor:73:armor:0.01:0.73
+R	warrior/protection	25	9834	12751	gear	7.6	agi:3:agi:0.33:0.99,ap:7:ap:0.46:3.22,sta:7:sta:0.38:2.66,armor:73:armor:0.01:0.73
+R	warrior/protection	25	9834	12752	gear	7.710000000000001	agi:4:agi:0.33:1.32,sta:7:sta:0.38:2.66,str:3:str:1:3,armor:73:armor:0.01:0.73
+R	warrior/protection	25	9834	12753	gear	7.59	defense:2:defense:0.1:0.2,sta:7:sta:0.38:2.66,str:4:str:1:4,armor:73:armor:0.01:0.73
+R	warrior/protection	25	9834	12755	gear	7.390000000000001	sta:7:sta:0.38:2.66,str:4:str:1:4,armor:73:armor:0.01:0.73
+R	warrior/protection	25	9834	12756	gear	0.73	armor:73:armor:0.01:0.73
+R	warrior/protection	25	9834	12760	gear	0.73	armor:73:armor:0.01:0.73
+R	warrior/protection	25	10087	0	gear	2.7800000000000002	armor:278:armor:0.01:2.78
+R	warrior/protection	25	10087	12718	gear	6.2	sta:9:sta:0.38:3.42,armor:278:armor:0.01:2.78
+R	warrior/protection	25	10087	12719	gear	14.21	spi:9:spi:0.89:8.01,sta:9:sta:0.38:3.42,armor:278:armor:0.01:2.78
+R	warrior/protection	25	10087	12720	gear	10.79	spi:9:spi:0.89:8.01,armor:278:armor:0.01:2.78
+R	warrior/protection	25	10087	12721	gear	9.170000000000002	agi:9:agi:0.33:2.97,sta:9:sta:0.38:3.42,armor:278:armor:0.01:2.78
+R	warrior/protection	25	10087	12722	gear	15.2	sta:9:sta:0.38:3.42,str:9:str:1:9,armor:278:armor:0.01:2.78
+R	warrior/protection	25	10087	12723	gear	11.780000000000001	str:9:str:1:9,armor:278:armor:0.01:2.78
+R	warrior/protection	25	10087	12724	gear	5.75	agi:9:agi:0.33:2.97,armor:278:armor:0.01:2.78
+R	warrior/protection	25	10087	12725	gear	19.79	spi:9:spi:0.89:8.01,str:9:str:1:9,armor:278:armor:0.01:2.78
+R	warrior/protection	25	10087	12726	gear	13.760000000000002	agi:9:agi:0.33:2.97,spi:9:spi:0.89:8.01,armor:278:armor:0.01:2.78
+R	warrior/protection	25	10087	12727	gear	14.75	agi:9:agi:0.33:2.97,str:9:str:1:9,armor:278:armor:0.01:2.78
+R	warrior/protection	25	10087	12728	gear	7.4	agi:14:agi:0.33:4.62,armor:278:armor:0.01:2.78
+R	warrior/protection	25	10087	12729	gear	2.7800000000000002	armor:278:armor:0.01:2.78
+R	warrior/protection	25	10087	12730	gear	15.240000000000002	spi:14:spi:0.89:12.46,armor:278:armor:0.01:2.78
+R	warrior/protection	25	10087	12731	gear	8.100000000000001	sta:14:sta:0.38:5.32,armor:278:armor:0.01:2.78
+R	warrior/protection	25	10087	12732	gear	16.78	str:14:str:1:14,armor:278:armor:0.01:2.78
+R	warrior/protection	25	10087	12733	gear	15.66	ap:28:ap:0.46:12.88,armor:278:armor:0.01:2.78
+R	warrior/protection	25	10087	12734	gear	2.7800000000000002	armor:278:armor:0.01:2.78
+R	warrior/protection	25	10087	12735	gear	2.7800000000000002	armor:278:armor:0.01:2.78
+R	warrior/protection	25	10087	12736	gear	3.68	defense:9:defense:0.1:0.9,armor:278:armor:0.01:2.78
+R	warrior/protection	25	10087	12740	gear	6.2	sta:9:sta:0.38:3.42,armor:278:armor:0.01:2.78
+R	warrior/protection	25	10087	12741	gear	6.2	sta:9:sta:0.38:3.42,armor:278:armor:0.01:2.78
+R	warrior/protection	25	10087	12742	gear	6.2	sta:9:sta:0.38:3.42,armor:278:armor:0.01:2.78
+R	warrior/protection	25	10087	12743	gear	6.2	sta:9:sta:0.38:3.42,armor:278:armor:0.01:2.78
+R	warrior/protection	25	10087	12744	gear	6.2	sta:9:sta:0.38:3.42,armor:278:armor:0.01:2.78
+R	warrior/protection	25	10087	12748	gear	6.58	sta:10:sta:0.38:3.8,armor:278:armor:0.01:2.78
+R	warrior/protection	25	10087	12749	gear	8.120000000000001	spi:6:spi:0.89:5.34,armor:278:armor:0.01:2.78
+R	warrior/protection	25	10087	12750	gear	11.920000000000002	spi:6:spi:0.89:5.34,sta:10:sta:0.38:3.8,armor:278:armor:0.01:2.78
+R	warrior/protection	25	10087	12752	gear	12.559999999999999	agi:6:agi:0.33:1.98,sta:10:sta:0.38:3.8,str:4:str:1:4,armor:278:armor:0.01:2.78
+R	warrior/protection	25	10087	12753	gear	12.879999999999999	defense:3:defense:0.1:0.3,sta:10:sta:0.38:3.8,str:6:str:1:6,armor:278:armor:0.01:2.78
+R	warrior/protection	25	10087	12754	gear	6.98	defense:4:defense:0.1:0.4,sta:10:sta:0.38:3.8,armor:278:armor:0.01:2.78
+R	warrior/protection	25	10087	12755	gear	12.580000000000002	sta:10:sta:0.38:3.8,str:6:str:1:6,armor:278:armor:0.01:2.78
+R	warrior/protection	25	10087	12759	gear	2.7800000000000002	armor:278:armor:0.01:2.78
+R	warrior/protection	25	10368	0	gear	38.660000000000004	str:15:str:1:15,sta:14:sta:0.38:5.32,spi:14:spi:0.89:12.46,armor:588:armor:0.01:5.88
+R	warrior/protection	25	11187	0	gear	0.04	armor:4:armor:0.01:0.04
+R	warrior/protection	25	11994	0	gear	0.0	
+R	warrior/protection	25	11994	12718	gear	1.1400000000000001	sta:3:sta:0.38:1.14
+R	warrior/protection	25	11994	12719	gear	3.81	spi:3:spi:0.89:2.67,sta:3:sta:0.38:1.14
+R	warrior/protection	25	11994	12720	gear	2.67	spi:3:spi:0.89:2.67
+R	warrior/protection	25	11994	12721	gear	2.13	agi:3:agi:0.33:0.99,sta:3:sta:0.38:1.14
+R	warrior/protection	25	11994	12722	gear	4.140000000000001	sta:3:sta:0.38:1.14,str:3:str:1:3
+R	warrior/protection	25	11994	12723	gear	3.0	str:3:str:1:3
+R	warrior/protection	25	11994	12724	gear	0.99	agi:3:agi:0.33:0.99
+R	warrior/protection	25	11994	12725	gear	5.67	spi:3:spi:0.89:2.67,str:3:str:1:3
+R	warrior/protection	25	11994	12726	gear	3.66	agi:3:agi:0.33:0.99,spi:3:spi:0.89:2.67
+R	warrior/protection	25	11994	12727	gear	3.99	agi:3:agi:0.33:0.99,str:3:str:1:3
+R	warrior/protection	25	11994	12728	gear	1.6500000000000001	agi:5:agi:0.33:1.65
+R	warrior/protection	25	11994	12729	gear	0.0	
+R	warrior/protection	25	11994	12730	gear	4.45	spi:5:spi:0.89:4.45
+R	warrior/protection	25	11994	12731	gear	1.9	sta:5:sta:0.38:1.9
+R	warrior/protection	25	11994	12732	gear	5.0	str:5:str:1:5
+R	warrior/protection	25	11994	12733	gear	4.6000000000000005	ap:10:ap:0.46:4.6
+R	warrior/protection	25	11994	12737	gear	0.0	
+R	warrior/protection	25	11994	12738	gear	0.0	
+R	warrior/protection	25	11994	12739	gear	0.66	agi:2:agi:0.33:0.66
+R	warrior/protection	25	11994	12740	gear	1.1400000000000001	sta:3:sta:0.38:1.14
+R	warrior/protection	25	11994	12741	gear	1.1400000000000001	sta:3:sta:0.38:1.14
+R	warrior/protection	25	11994	12742	gear	1.1400000000000001	sta:3:sta:0.38:1.14
+R	warrior/protection	25	11994	12743	gear	1.1400000000000001	sta:3:sta:0.38:1.14
+R	warrior/protection	25	11994	12744	gear	1.1400000000000001	sta:3:sta:0.38:1.14
+R	warrior/protection	25	12790	0	mh	162.3	dps:53.82:dps:3:161.46,speed:0.6:speed:1.4:0.84
+R	warrior/protection	25	13183	0	mh	117.85	dps:39.47:dps:3:118.41,speed:-0.4:speed:1.4:-0.56
+R	warrior/protection	25	14122	0	gear	0.14	armor:14:armor:0.01:0.14
+R	warrior/protection	25	14122	12718	gear	0.9	sta:2:sta:0.38:0.76,armor:14:armor:0.01:0.14
+R	warrior/protection	25	14122	12719	gear	2.68	spi:2:spi:0.89:1.78,sta:2:sta:0.38:0.76,armor:14:armor:0.01:0.14
+R	warrior/protection	25	14122	12720	gear	1.92	spi:2:spi:0.89:1.78,armor:14:armor:0.01:0.14
+R	warrior/protection	25	14122	12729	gear	0.14	armor:14:armor:0.01:0.14
+R	warrior/protection	25	14122	12730	gear	2.81	spi:3:spi:0.89:2.67,armor:14:armor:0.01:0.14
+R	warrior/protection	25	14122	12731	gear	1.2800000000000002	sta:3:sta:0.38:1.14,armor:14:armor:0.01:0.14
+R	warrior/protection	25	14122	12734	gear	0.14	armor:14:armor:0.01:0.14
+R	warrior/protection	25	14122	12735	gear	0.14	armor:14:armor:0.01:0.14
+R	warrior/protection	25	14122	12740	gear	0.9	sta:2:sta:0.38:0.76,armor:14:armor:0.01:0.14
+R	warrior/protection	25	14122	12741	gear	0.9	sta:2:sta:0.38:0.76,armor:14:armor:0.01:0.14
+R	warrior/protection	25	14122	12742	gear	0.9	sta:2:sta:0.38:0.76,armor:14:armor:0.01:0.14
+R	warrior/protection	25	14122	12743	gear	0.9	sta:2:sta:0.38:0.76,armor:14:armor:0.01:0.14
+R	warrior/protection	25	14122	12744	gear	0.9	sta:2:sta:0.38:0.76,armor:14:armor:0.01:0.14
+R	warrior/protection	25	14122	12745	gear	0.52	sta:1:sta:0.38:0.38,armor:14:armor:0.01:0.14
+R	warrior/protection	25	14122	12756	gear	0.14	armor:14:armor:0.01:0.14
+R	warrior/protection	25	14122	12757	gear	0.14	armor:14:armor:0.01:0.14
+R	warrior/protection	25	14122	12758	gear	0.14	armor:14:armor:0.01:0.14
+R	warrior/protection	25	14122	12759	gear	0.14	armor:14:armor:0.01:0.14
+R	warrior/protection	25	14122	12761	gear	0.14	armor:14:armor:0.01:0.14
+R	warrior/protection	25	14340	0	gear	8.1	sta:19:sta:0.38:7.22,armor:88:armor:0.01:0.88
+R	warrior/protection	25	14673	0	gear	8.21	str:3:str:1:3,agi:9:agi:0.33:2.97,sta:5:sta:0.38:1.9,armor:34:armor:0.01:0.34
+R	warrior/protection	25	14964	0	oh	17.2	armor:1720:armor:0.01:17.2
+R	warrior/protection	25	14964	12718	oh	20.619999999999997	sta:9:sta:0.38:3.42,armor:1720:armor:0.01:17.2
+R	warrior/protection	25	14964	12719	oh	28.63	spi:9:spi:0.89:8.01,sta:9:sta:0.38:3.42,armor:1720:armor:0.01:17.2
+R	warrior/protection	25	14964	12720	oh	25.21	spi:9:spi:0.89:8.01,armor:1720:armor:0.01:17.2
+R	warrior/protection	25	14964	12721	oh	23.59	agi:9:agi:0.33:2.97,sta:9:sta:0.38:3.42,armor:1720:armor:0.01:17.2
+R	warrior/protection	25	14964	12722	oh	29.619999999999997	sta:9:sta:0.38:3.42,str:9:str:1:9,armor:1720:armor:0.01:17.2
+R	warrior/protection	25	14964	12723	oh	26.2	str:9:str:1:9,armor:1720:armor:0.01:17.2
+R	warrior/protection	25	14964	12724	oh	20.169999999999998	agi:9:agi:0.33:2.97,armor:1720:armor:0.01:17.2
+R	warrior/protection	25	14964	12725	oh	34.209999999999994	spi:9:spi:0.89:8.01,str:9:str:1:9,armor:1720:armor:0.01:17.2
+R	warrior/protection	25	14964	12726	oh	28.18	agi:9:agi:0.33:2.97,spi:9:spi:0.89:8.01,armor:1720:armor:0.01:17.2
+R	warrior/protection	25	14964	12727	oh	29.17	agi:9:agi:0.33:2.97,str:9:str:1:9,armor:1720:armor:0.01:17.2
+R	warrior/protection	25	14964	12728	oh	21.82	agi:14:agi:0.33:4.62,armor:1720:armor:0.01:17.2
+R	warrior/protection	25	14964	12729	oh	17.2	armor:1720:armor:0.01:17.2
+R	warrior/protection	25	14964	12730	oh	29.66	spi:14:spi:0.89:12.46,armor:1720:armor:0.01:17.2
+R	warrior/protection	25	14964	12731	oh	22.52	sta:14:sta:0.38:5.32,armor:1720:armor:0.01:17.2
+R	warrior/protection	25	14964	12732	oh	31.2	str:14:str:1:14,armor:1720:armor:0.01:17.2
+R	warrior/protection	25	14964	12733	oh	30.08	ap:28:ap:0.46:12.88,armor:1720:armor:0.01:17.2
+R	warrior/protection	25	14964	12734	oh	17.2	armor:1720:armor:0.01:17.2
+R	warrior/protection	25	14964	12735	oh	17.2	armor:1720:armor:0.01:17.2
+R	warrior/protection	25	14964	12736	oh	18.099999999999998	defense:9:defense:0.1:0.9,armor:1720:armor:0.01:17.2
+R	warrior/protection	25	14964	12740	oh	20.619999999999997	sta:9:sta:0.38:3.42,armor:1720:armor:0.01:17.2
+R	warrior/protection	25	14964	12741	oh	20.619999999999997	sta:9:sta:0.38:3.42,armor:1720:armor:0.01:17.2
+R	warrior/protection	25	14964	12742	oh	20.619999999999997	sta:9:sta:0.38:3.42,armor:1720:armor:0.01:17.2
+R	warrior/protection	25	14964	12743	oh	20.619999999999997	sta:9:sta:0.38:3.42,armor:1720:armor:0.01:17.2
+R	warrior/protection	25	14964	12744	oh	20.619999999999997	sta:9:sta:0.38:3.42,armor:1720:armor:0.01:17.2
+R	warrior/protection	25	14964	12745	oh	19.48	sta:6:sta:0.38:2.28,armor:1720:armor:0.01:17.2
+R	warrior/protection	25	14964	12746	oh	22.54	spi:6:spi:0.89:5.34,armor:1720:armor:0.01:17.2
+R	warrior/protection	25	14964	12747	oh	26.34	spi:6:spi:0.89:5.34,sta:10:sta:0.38:3.8,armor:1720:armor:0.01:17.2
+R	warrior/protection	25	14964	12748	oh	21.0	sta:10:sta:0.38:3.8,armor:1720:armor:0.01:17.2
+R	warrior/protection	25	14964	12749	oh	22.54	spi:6:spi:0.89:5.34,armor:1720:armor:0.01:17.2
+R	warrior/protection	25	14964	12750	oh	26.34	spi:6:spi:0.89:5.34,sta:10:sta:0.38:3.8,armor:1720:armor:0.01:17.2
+R	warrior/protection	25	14964	12753	oh	27.299999999999997	defense:3:defense:0.1:0.3,sta:10:sta:0.38:3.8,str:6:str:1:6,armor:1720:armor:0.01:17.2
+R	warrior/protection	25	14964	12754	oh	21.4	defense:4:defense:0.1:0.4,sta:10:sta:0.38:3.8,armor:1720:armor:0.01:17.2
+R	warrior/protection	25	14964	12759	oh	17.2	armor:1720:armor:0.01:17.2
+R	warrior/protection	25	14964	12760	oh	17.2	armor:1720:armor:0.01:17.2
+R	warrior/protection	25	15235	0	mh	85.43	dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12718	mh	87.33000000000001	sta:5:sta:0.38:1.9,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12719	mh	91.78	spi:5:spi:0.89:4.45,sta:5:sta:0.38:1.9,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12720	mh	89.88000000000001	spi:5:spi:0.89:4.45,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12721	mh	88.98	agi:5:agi:0.33:1.65,sta:5:sta:0.38:1.9,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12722	mh	92.33000000000001	sta:5:sta:0.38:1.9,str:5:str:1:5,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12723	mh	90.43	str:5:str:1:5,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12724	mh	87.08000000000001	agi:5:agi:0.33:1.65,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12725	mh	94.88000000000001	spi:5:spi:0.89:4.45,str:5:str:1:5,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12726	mh	91.53	agi:5:agi:0.33:1.65,spi:5:spi:0.89:4.45,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12727	mh	92.08000000000001	agi:5:agi:0.33:1.65,str:5:str:1:5,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12728	mh	88.07000000000001	agi:8:agi:0.33:2.64,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12729	mh	85.43	dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12730	mh	92.55000000000001	spi:8:spi:0.89:7.12,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12731	mh	88.47000000000001	sta:8:sta:0.38:3.04,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12732	mh	93.43	str:8:str:1:8,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12733	mh	92.79	ap:16:ap:0.46:7.36,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12736	mh	85.93	defense:5:defense:0.1:0.5,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12740	mh	87.33000000000001	sta:5:sta:0.38:1.9,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12741	mh	87.33000000000001	sta:5:sta:0.38:1.9,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12742	mh	87.33000000000001	sta:5:sta:0.38:1.9,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12743	mh	87.33000000000001	sta:5:sta:0.38:1.9,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12744	mh	87.33000000000001	sta:5:sta:0.38:1.9,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12751	mh	91.92	agi:3:agi:0.33:0.99,ap:7:ap:0.46:3.22,sta:6:sta:0.38:2.28,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12752	mh	91.7	agi:3:agi:0.33:0.99,sta:6:sta:0.38:2.28,str:3:str:1:3,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12753	mh	90.91000000000001	defense:2:defense:0.1:0.2,sta:6:sta:0.38:2.28,str:3:str:1:3,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12754	mh	87.91000000000001	defense:2:defense:0.1:0.2,sta:6:sta:0.38:2.28,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12759	mh	85.43	dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12906	mh	86.95	sta:4:sta:0.38:1.52,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12908	mh	88.99000000000001	spi:4:spi:0.89:3.56,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12910	mh	91.27000000000001	spi:4:spi:0.89:3.56,sta:6:sta:0.38:2.28,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12912	mh	87.71000000000001	sta:6:sta:0.38:2.28,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12913	mh	88.99000000000001	spi:4:spi:0.89:3.56,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12916	mh	91.27000000000001	spi:4:spi:0.89:3.56,sta:6:sta:0.38:2.28,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12917	mh	85.43	dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12920	mh	85.43	dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15477	0	gear	1.01	armor:101:armor:0.01:1.01
+R	warrior/protection	25	15477	12718	gear	1.3900000000000001	sta:1:sta:0.38:0.38,armor:101:armor:0.01:1.01
+R	warrior/protection	25	15477	12719	gear	2.2800000000000002	spi:1:spi:0.89:0.89,sta:1:sta:0.38:0.38,armor:101:armor:0.01:1.01
+R	warrior/protection	25	15477	12720	gear	1.9	spi:1:spi:0.89:0.89,armor:101:armor:0.01:1.01
+R	warrior/protection	25	15477	12721	gear	1.72	agi:1:agi:0.33:0.33,sta:1:sta:0.38:0.38,armor:101:armor:0.01:1.01
+R	warrior/protection	25	15477	12722	gear	2.3899999999999997	sta:1:sta:0.38:0.38,str:1:str:1:1,armor:101:armor:0.01:1.01
+R	warrior/protection	25	15477	12723	gear	2.01	str:1:str:1:1,armor:101:armor:0.01:1.01
+R	warrior/protection	25	15477	12724	gear	1.34	agi:1:agi:0.33:0.33,armor:101:armor:0.01:1.01
+R	warrior/protection	25	15477	12725	gear	2.9000000000000004	spi:1:spi:0.89:0.89,str:1:str:1:1,armor:101:armor:0.01:1.01
+R	warrior/protection	25	15477	12726	gear	2.23	agi:1:agi:0.33:0.33,spi:1:spi:0.89:0.89,armor:101:armor:0.01:1.01
+R	warrior/protection	25	15477	12727	gear	2.34	agi:1:agi:0.33:0.33,str:1:str:1:1,armor:101:armor:0.01:1.01
+R	warrior/protection	25	15477	12728	gear	1.67	agi:2:agi:0.33:0.66,armor:101:armor:0.01:1.01
+R	warrior/protection	25	15477	12729	gear	1.01	armor:101:armor:0.01:1.01
+R	warrior/protection	25	15477	12730	gear	2.79	spi:2:spi:0.89:1.78,armor:101:armor:0.01:1.01
+R	warrior/protection	25	15477	12731	gear	1.77	sta:2:sta:0.38:0.76,armor:101:armor:0.01:1.01
+R	warrior/protection	25	15477	12732	gear	3.01	str:2:str:1:2,armor:101:armor:0.01:1.01
+R	warrior/protection	25	15477	12733	gear	2.85	ap:4:ap:0.46:1.84,armor:101:armor:0.01:1.01
+R	warrior/protection	25	15477	12734	gear	1.01	armor:101:armor:0.01:1.01
+R	warrior/protection	25	15477	12735	gear	1.01	armor:101:armor:0.01:1.01
+R	warrior/protection	25	15477	12736	gear	1.11	defense:1:defense:0.1:0.1,armor:101:armor:0.01:1.01
+R	warrior/protection	25	15477	12740	gear	1.3900000000000001	sta:1:sta:0.38:0.38,armor:101:armor:0.01:1.01
+R	warrior/protection	25	15477	12741	gear	1.3900000000000001	sta:1:sta:0.38:0.38,armor:101:armor:0.01:1.01
+R	warrior/protection	25	15477	12742	gear	1.3900000000000001	sta:1:sta:0.38:0.38,armor:101:armor:0.01:1.01
+R	warrior/protection	25	15477	12743	gear	1.3900000000000001	sta:1:sta:0.38:0.38,armor:101:armor:0.01:1.01
+R	warrior/protection	25	15477	12744	gear	1.3900000000000001	sta:1:sta:0.38:0.38,armor:101:armor:0.01:1.01
+R	warrior/protection	25	15477	12759	gear	1.01	armor:101:armor:0.01:1.01
+R	warrior/protection	25	15691	0	ranged	3.99	agi:3:agi:0.33:0.99,str:3:str:1:3
+R	warrior/protection	25	15945	0	oh	2.54	sta:2:sta:0.38:0.76,spi:2:spi:0.89:1.78
+R	warrior/protection	25	16711	0	gear	11.830000000000002	agi:21:agi:0.33:6.93,sta:9:sta:0.38:3.42,hit:0.3:hit:1.1:0.33,armor:115:armor:0.01:1.15
+R	warrior/protection	25	18312	0	gear	26.770000000000003	str:13:str:1:13,sta:20:sta:0.38:7.6,armor:617:armor:0.01:6.17
+R	warrior/protection	25	18726	0	gear	7.130000000000001	sta:15:sta:0.38:5.7,defense:7:defense:0.1:0.7,armor:73:armor:0.01:0.73
+R	warrior/protection	25	19557	0	mh	72.60000000000001	str:7:str:1:7,sta:3:sta:0.38:1.14,dps:21.3:dps:3:63.9,speed:0.4:speed:1.4:0.56
+R	warrior/protection	25	20129	0	gear	11.830000000000002	agi:6:agi:0.33:1.98,str:6:str:1:6,sta:6:sta:0.38:2.28,armor:157:armor:0.01:1.57
+R	warrior/protection	25	20437	0	ranged	1.8000000000000003	agi:2:agi:0.33:0.66,sta:3:sta:0.38:1.14
+R	warrior/protection	25	22270	0	gear	19.07	str:11:str:1:11,defense:3:defense:0.1:0.3,sta:10:sta:0.38:3.8,armor:397:armor:0.01:3.97
+R	warrior/protection	25	22967	0	gear	13.43	sta:25:sta:0.38:9.5,armor:393:armor:0.01:3.93
+R	warrior/protection	25	226878	0	gear	28.490000000000002	str:18:str:1:18,sta:12:sta:0.38:4.56,crit:1:crit:2:2,armor:393:armor:0.01:3.93
+R	warrior/protection	25	250491	0	gear	3.3600000000000003	sta:4:sta:0.38:1.52,armor:184:armor:0.01:1.84
+R	warrior/protection	25	252507	0	gear	4.56	sta:10:sta:0.38:3.8,armor:76:armor:0.01:0.76
+R	warrior/protection	25	254111	0	gear	5.48	sta:13:sta:0.38:4.94,armor:54:armor:0.01:0.54
+R	warrior/protection	25	270033	0	gear	4.71	agi:4:agi:0.33:1.32,str:3:str:1:3,armor:39:armor:0.01:0.39
+R	warrior/protection	25	271956	0	gear	18.59	agi:27:agi:0.33:8.91,sta:12:sta:0.38:4.56,crit:1:crit:2:2,armor:312:armor:0.01:3.12
+R	warrior/protection	25	272958	0	gear	7.680000000000001	sta:12:sta:0.38:4.56,armor:312:armor:0.01:3.12
+R	warrior/protection	25	274646	0	ranged	1.6500000000000001	agi:5:agi:0.33:1.65
+R	warrior/protection	25	276399	0	gear	13.11	sta:18:sta:0.38:6.84,armor:627:armor:0.01:6.27
+R	warrior/protection	25	277235	0	gear	21.35	str:14:str:1:14,sta:10:sta:0.38:3.8,armor:355:armor:0.01:3.55
+R	warrior/protection	25	280082	0	mh	129.93	hit:1.5:hit:1.1:1.65,spi:21:spi:0.89:18.69,dps:36.25:dps:3:108.75,speed:0.6:speed:1.4:0.84
+R	warrior/protection	25	282560	0	gear	7.07	sta:13:sta:0.38:4.94,armor:213:armor:0.01:2.13
+R	warrior/protection	25	286609	0	oh	23.8	spi:6:spi:0.89:5.34,defense:7:defense:0.1:0.7,armor:1776:armor:0.01:17.76
+R	warrior/protection	34	25	0	mh	2.595	dps:1.05:dps:3.1:3.255,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	1315	0	gear	14.15	sta:10:sta:0.41:4.1,spi:15:spi:0.67:10.05
+R	warrior/protection	34	1808	0	gear	0.814	armor:74:armor:0.011:0.814
+R	warrior/protection	34	2225	0	mh	14.84	dps:5:dps:3.1:15.5,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	2614	0	gear	0.319	armor:29:armor:0.011:0.319
+R	warrior/protection	34	3158	0	gear	0.286	armor:26:armor:0.011:0.286
+R	warrior/protection	34	3570	0	mh	26.731999999999996	str:2:str:1:2,dps:8.12:dps:3.1:25.172,speed:-0.4:speed:1.1:-0.44
+R	warrior/protection	34	4023	0	mh	46.956	dps:15.36:dps:3.1:47.616,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	4068	0	oh	14.283	sta:9:sta:0.41:3.69,armor:963:armor:0.011:10.593
+R	warrior/protection	34	4570	0	mh	31.55	dps:10:dps:3.1:31,speed:0.5:speed:1.1:0.55
+R	warrior/protection	34	4570	12718	mh	32.779999999999994	sta:3:sta:0.41:1.23,dps:10:dps:3.1:31,speed:0.5:speed:1.1:0.55
+R	warrior/protection	34	4570	12719	mh	34.79	spi:3:spi:0.67:2.01,sta:3:sta:0.41:1.23,dps:10:dps:3.1:31,speed:0.5:speed:1.1:0.55
+R	warrior/protection	34	4570	12720	mh	33.559999999999995	spi:3:spi:0.67:2.01,dps:10:dps:3.1:31,speed:0.5:speed:1.1:0.55
+R	warrior/protection	34	4570	12721	mh	33.8	agi:3:agi:0.34:1.02,sta:3:sta:0.41:1.23,dps:10:dps:3.1:31,speed:0.5:speed:1.1:0.55
+R	warrior/protection	34	4570	12722	mh	35.78	sta:3:sta:0.41:1.23,str:3:str:1:3,dps:10:dps:3.1:31,speed:0.5:speed:1.1:0.55
+R	warrior/protection	34	4570	12723	mh	34.55	str:3:str:1:3,dps:10:dps:3.1:31,speed:0.5:speed:1.1:0.55
+R	warrior/protection	34	4570	12724	mh	32.57	agi:3:agi:0.34:1.02,dps:10:dps:3.1:31,speed:0.5:speed:1.1:0.55
+R	warrior/protection	34	4570	12725	mh	36.559999999999995	spi:3:spi:0.67:2.01,str:3:str:1:3,dps:10:dps:3.1:31,speed:0.5:speed:1.1:0.55
+R	warrior/protection	34	4570	12726	mh	34.58	agi:3:agi:0.34:1.02,spi:3:spi:0.67:2.01,dps:10:dps:3.1:31,speed:0.5:speed:1.1:0.55
+R	warrior/protection	34	4570	12727	mh	35.56999999999999	agi:3:agi:0.34:1.02,str:3:str:1:3,dps:10:dps:3.1:31,speed:0.5:speed:1.1:0.55
+R	warrior/protection	34	4570	12728	mh	32.91	agi:4:agi:0.34:1.36,dps:10:dps:3.1:31,speed:0.5:speed:1.1:0.55
+R	warrior/protection	34	4570	12729	mh	31.55	dps:10:dps:3.1:31,speed:0.5:speed:1.1:0.55
+R	warrior/protection	34	4570	12730	mh	34.23	spi:4:spi:0.67:2.68,dps:10:dps:3.1:31,speed:0.5:speed:1.1:0.55
+R	warrior/protection	34	4570	12731	mh	33.19	sta:4:sta:0.41:1.64,dps:10:dps:3.1:31,speed:0.5:speed:1.1:0.55
+R	warrior/protection	34	4570	12732	mh	35.55	str:4:str:1:4,dps:10:dps:3.1:31,speed:0.5:speed:1.1:0.55
+R	warrior/protection	34	4570	12733	mh	35.309999999999995	ap:8:ap:0.47:3.76,dps:10:dps:3.1:31,speed:0.5:speed:1.1:0.55
+R	warrior/protection	34	4570	12736	mh	31.91	defense:3:defense:0.12:0.36,dps:10:dps:3.1:31,speed:0.5:speed:1.1:0.55
+R	warrior/protection	34	4570	12740	mh	32.779999999999994	sta:3:sta:0.41:1.23,dps:10:dps:3.1:31,speed:0.5:speed:1.1:0.55
+R	warrior/protection	34	4570	12741	mh	32.779999999999994	sta:3:sta:0.41:1.23,dps:10:dps:3.1:31,speed:0.5:speed:1.1:0.55
+R	warrior/protection	34	4570	12742	mh	32.779999999999994	sta:3:sta:0.41:1.23,dps:10:dps:3.1:31,speed:0.5:speed:1.1:0.55
+R	warrior/protection	34	4570	12743	mh	32.779999999999994	sta:3:sta:0.41:1.23,dps:10:dps:3.1:31,speed:0.5:speed:1.1:0.55
+R	warrior/protection	34	4570	12744	mh	32.779999999999994	sta:3:sta:0.41:1.23,dps:10:dps:3.1:31,speed:0.5:speed:1.1:0.55
+R	warrior/protection	34	4570	12759	mh	31.55	dps:10:dps:3.1:31,speed:0.5:speed:1.1:0.55
+R	warrior/protection	34	4570	12918	mh	31.55	dps:10:dps:3.1:31,speed:0.5:speed:1.1:0.55
+R	warrior/protection	34	4570	12919	mh	31.55	dps:10:dps:3.1:31,speed:0.5:speed:1.1:0.55
+R	warrior/protection	34	5079	0	gear	0.0	
+R	warrior/protection	34	6063	0	gear	0.605	armor:55:armor:0.011:0.605
+R	warrior/protection	34	6540	0	gear	0.308	armor:28:armor:0.011:0.308
+R	warrior/protection	34	6540	12718	gear	1.538	sta:3:sta:0.41:1.23,armor:28:armor:0.011:0.308
+R	warrior/protection	34	6540	12719	gear	3.548	spi:3:spi:0.67:2.01,sta:3:sta:0.41:1.23,armor:28:armor:0.011:0.308
+R	warrior/protection	34	6540	12720	gear	2.318	spi:3:spi:0.67:2.01,armor:28:armor:0.011:0.308
+R	warrior/protection	34	6540	12729	gear	0.308	armor:28:armor:0.011:0.308
+R	warrior/protection	34	6540	12730	gear	3.658	spi:5:spi:0.67:3.35,armor:28:armor:0.011:0.308
+R	warrior/protection	34	6540	12731	gear	2.3579999999999997	sta:5:sta:0.41:2.05,armor:28:armor:0.011:0.308
+R	warrior/protection	34	6540	12734	gear	0.308	armor:28:armor:0.011:0.308
+R	warrior/protection	34	6540	12735	gear	0.308	armor:28:armor:0.011:0.308
+R	warrior/protection	34	6540	12740	gear	1.538	sta:3:sta:0.41:1.23,armor:28:armor:0.011:0.308
+R	warrior/protection	34	6540	12741	gear	1.538	sta:3:sta:0.41:1.23,armor:28:armor:0.011:0.308
+R	warrior/protection	34	6540	12742	gear	1.538	sta:3:sta:0.41:1.23,armor:28:armor:0.011:0.308
+R	warrior/protection	34	6540	12743	gear	1.538	sta:3:sta:0.41:1.23,armor:28:armor:0.011:0.308
+R	warrior/protection	34	6540	12744	gear	1.538	sta:3:sta:0.41:1.23,armor:28:armor:0.011:0.308
+R	warrior/protection	34	6540	12745	gear	1.128	sta:2:sta:0.41:0.82,armor:28:armor:0.011:0.308
+R	warrior/protection	34	6540	12756	gear	0.308	armor:28:armor:0.011:0.308
+R	warrior/protection	34	6540	12757	gear	0.308	armor:28:armor:0.011:0.308
+R	warrior/protection	34	6540	12758	gear	0.308	armor:28:armor:0.011:0.308
+R	warrior/protection	34	6540	12759	gear	0.308	armor:28:armor:0.011:0.308
+R	warrior/protection	34	6540	12761	gear	0.308	armor:28:armor:0.011:0.308
+R	warrior/protection	34	6557	0	gear	0.5389999999999999	armor:49:armor:0.011:0.539
+R	warrior/protection	34	6557	12718	gear	1.359	sta:2:sta:0.41:0.82,armor:49:armor:0.011:0.539
+R	warrior/protection	34	6557	12719	gear	2.699	spi:2:spi:0.67:1.34,sta:2:sta:0.41:0.82,armor:49:armor:0.011:0.539
+R	warrior/protection	34	6557	12720	gear	1.879	spi:2:spi:0.67:1.34,armor:49:armor:0.011:0.539
+R	warrior/protection	34	6557	12721	gear	2.0389999999999997	agi:2:agi:0.34:0.68,sta:2:sta:0.41:0.82,armor:49:armor:0.011:0.539
+R	warrior/protection	34	6557	12722	gear	3.359	sta:2:sta:0.41:0.82,str:2:str:1:2,armor:49:armor:0.011:0.539
+R	warrior/protection	34	6557	12723	gear	2.5389999999999997	str:2:str:1:2,armor:49:armor:0.011:0.539
+R	warrior/protection	34	6557	12724	gear	1.2189999999999999	agi:2:agi:0.34:0.68,armor:49:armor:0.011:0.539
+R	warrior/protection	34	6557	12725	gear	3.8789999999999996	spi:2:spi:0.67:1.34,str:2:str:1:2,armor:49:armor:0.011:0.539
+R	warrior/protection	34	6557	12726	gear	2.559	agi:2:agi:0.34:0.68,spi:2:spi:0.67:1.34,armor:49:armor:0.011:0.539
+R	warrior/protection	34	6557	12727	gear	3.2190000000000003	agi:2:agi:0.34:0.68,str:2:str:1:2,armor:49:armor:0.011:0.539
+R	warrior/protection	34	6557	12728	gear	1.559	agi:3:agi:0.34:1.02,armor:49:armor:0.011:0.539
+R	warrior/protection	34	6557	12729	gear	0.5389999999999999	armor:49:armor:0.011:0.539
+R	warrior/protection	34	6557	12730	gear	2.5490000000000004	spi:3:spi:0.67:2.01,armor:49:armor:0.011:0.539
+R	warrior/protection	34	6557	12731	gear	1.769	sta:3:sta:0.41:1.23,armor:49:armor:0.011:0.539
+R	warrior/protection	34	6557	12732	gear	3.5389999999999997	str:3:str:1:3,armor:49:armor:0.011:0.539
+R	warrior/protection	34	6557	12733	gear	3.359	ap:6:ap:0.47:2.82,armor:49:armor:0.011:0.539
+R	warrior/protection	34	6557	12734	gear	0.5389999999999999	armor:49:armor:0.011:0.539
+R	warrior/protection	34	6557	12735	gear	0.5389999999999999	armor:49:armor:0.011:0.539
+R	warrior/protection	34	6557	12736	gear	0.7789999999999999	defense:2:defense:0.12:0.24,armor:49:armor:0.011:0.539
+R	warrior/protection	34	6557	12740	gear	1.359	sta:2:sta:0.41:0.82,armor:49:armor:0.011:0.539
+R	warrior/protection	34	6557	12741	gear	1.359	sta:2:sta:0.41:0.82,armor:49:armor:0.011:0.539
+R	warrior/protection	34	6557	12742	gear	1.359	sta:2:sta:0.41:0.82,armor:49:armor:0.011:0.539
+R	warrior/protection	34	6557	12743	gear	1.359	sta:2:sta:0.41:0.82,armor:49:armor:0.011:0.539
+R	warrior/protection	34	6557	12744	gear	1.359	sta:2:sta:0.41:0.82,armor:49:armor:0.011:0.539
+R	warrior/protection	34	6557	12756	gear	0.5389999999999999	armor:49:armor:0.011:0.539
+R	warrior/protection	34	6557	12760	gear	0.5389999999999999	armor:49:armor:0.011:0.539
+R	warrior/protection	34	7047	0	gear	3.636	spi:5:spi:0.67:3.35,armor:26:armor:0.011:0.286
+R	warrior/protection	34	7538	0	gear	2.893	armor:263:armor:0.011:2.893
+R	warrior/protection	34	7538	12718	gear	8.222999999999999	sta:13:sta:0.41:5.33,armor:263:armor:0.011:2.893
+R	warrior/protection	34	7538	12719	gear	16.933	spi:13:spi:0.67:8.71,sta:13:sta:0.41:5.33,armor:263:armor:0.011:2.893
+R	warrior/protection	34	7538	12720	gear	11.603000000000002	spi:13:spi:0.67:8.71,armor:263:armor:0.011:2.893
+R	warrior/protection	34	7538	12721	gear	12.643	agi:13:agi:0.34:4.42,sta:13:sta:0.41:5.33,armor:263:armor:0.011:2.893
+R	warrior/protection	34	7538	12722	gear	21.223	sta:13:sta:0.41:5.33,str:13:str:1:13,armor:263:armor:0.011:2.893
+R	warrior/protection	34	7538	12723	gear	15.893	str:13:str:1:13,armor:263:armor:0.011:2.893
+R	warrior/protection	34	7538	12724	gear	7.313	agi:13:agi:0.34:4.42,armor:263:armor:0.011:2.893
+R	warrior/protection	34	7538	12725	gear	24.603	spi:13:spi:0.67:8.71,str:13:str:1:13,armor:263:armor:0.011:2.893
+R	warrior/protection	34	7538	12726	gear	16.023	agi:13:agi:0.34:4.42,spi:13:spi:0.67:8.71,armor:263:armor:0.011:2.893
+R	warrior/protection	34	7538	12727	gear	20.313000000000002	agi:13:agi:0.34:4.42,str:13:str:1:13,armor:263:armor:0.011:2.893
+R	warrior/protection	34	7538	12728	gear	9.693000000000001	agi:20:agi:0.34:6.8,armor:263:armor:0.011:2.893
+R	warrior/protection	34	7538	12729	gear	2.893	armor:263:armor:0.011:2.893
+R	warrior/protection	34	7538	12730	gear	16.293	spi:20:spi:0.67:13.4,armor:263:armor:0.011:2.893
+R	warrior/protection	34	7538	12731	gear	11.093	sta:20:sta:0.41:8.2,armor:263:armor:0.011:2.893
+R	warrior/protection	34	7538	12732	gear	22.893	str:20:str:1:20,armor:263:armor:0.011:2.893
+R	warrior/protection	34	7538	12733	gear	21.692999999999998	ap:40:ap:0.47:18.8,armor:263:armor:0.011:2.893
+R	warrior/protection	34	7538	12734	gear	2.893	armor:263:armor:0.011:2.893
+R	warrior/protection	34	7538	12735	gear	2.893	armor:263:armor:0.011:2.893
+R	warrior/protection	34	7538	12740	gear	8.222999999999999	sta:13:sta:0.41:5.33,armor:263:armor:0.011:2.893
+R	warrior/protection	34	7538	12741	gear	8.222999999999999	sta:13:sta:0.41:5.33,armor:263:armor:0.011:2.893
+R	warrior/protection	34	7538	12742	gear	8.222999999999999	sta:13:sta:0.41:5.33,armor:263:armor:0.011:2.893
+R	warrior/protection	34	7538	12743	gear	8.222999999999999	sta:13:sta:0.41:5.33,armor:263:armor:0.011:2.893
+R	warrior/protection	34	7538	12744	gear	8.222999999999999	sta:13:sta:0.41:5.33,armor:263:armor:0.011:2.893
+R	warrior/protection	34	7538	12745	gear	6.173	sta:8:sta:0.41:3.28,armor:263:armor:0.011:2.893
+R	warrior/protection	34	7538	12746	gear	8.253	spi:8:spi:0.67:5.36,armor:263:armor:0.011:2.893
+R	warrior/protection	34	7538	12747	gear	14.402999999999999	spi:8:spi:0.67:5.36,sta:15:sta:0.41:6.15,armor:263:armor:0.011:2.893
+R	warrior/protection	34	7538	12748	gear	9.043	sta:15:sta:0.41:6.15,armor:263:armor:0.011:2.893
+R	warrior/protection	34	7538	12749	gear	8.253	spi:8:spi:0.67:5.36,armor:263:armor:0.011:2.893
+R	warrior/protection	34	7538	12750	gear	14.402999999999999	spi:8:spi:0.67:5.36,sta:15:sta:0.41:6.15,armor:263:armor:0.011:2.893
+R	warrior/protection	34	7538	12751	gear	18.602999999999998	agi:6:agi:0.34:2.04,ap:16:ap:0.47:7.52,sta:15:sta:0.41:6.15,armor:263:armor:0.011:2.893
+R	warrior/protection	34	7538	12752	gear	17.762999999999998	agi:8:agi:0.34:2.72,sta:15:sta:0.41:6.15,str:6:str:1:6,armor:263:armor:0.011:2.893
+R	warrior/protection	34	7538	12755	gear	17.043	sta:15:sta:0.41:6.15,str:8:str:1:8,armor:263:armor:0.011:2.893
+R	warrior/protection	34	7538	12760	gear	2.893	armor:263:armor:0.011:2.893
+R	warrior/protection	34	7922	0	gear	20.330000000000002	str:12:str:1:12,sta:12:sta:0.41:4.92,armor:310:armor:0.011:3.41
+R	warrior/protection	34	8192	0	gear	6.736	agi:11:agi:0.34:3.74,sta:5:sta:0.41:2.05,armor:86:armor:0.011:0.946
+R	warrior/protection	34	9458	0	oh	10.546	spi:3:spi:0.67:2.01,armor:776:armor:0.011:8.536
+R	warrior/protection	34	9834	0	gear	0.8029999999999999	armor:73:armor:0.011:0.803
+R	warrior/protection	34	9834	12718	gear	3.263	sta:6:sta:0.41:2.46,armor:73:armor:0.011:0.803
+R	warrior/protection	34	9834	12719	gear	7.283	spi:6:spi:0.67:4.02,sta:6:sta:0.41:2.46,armor:73:armor:0.011:0.803
+R	warrior/protection	34	9834	12720	gear	4.823	spi:6:spi:0.67:4.02,armor:73:armor:0.011:0.803
+R	warrior/protection	34	9834	12721	gear	5.303	agi:6:agi:0.34:2.04,sta:6:sta:0.41:2.46,armor:73:armor:0.011:0.803
+R	warrior/protection	34	9834	12722	gear	9.263000000000002	sta:6:sta:0.41:2.46,str:6:str:1:6,armor:73:armor:0.011:0.803
+R	warrior/protection	34	9834	12723	gear	6.803	str:6:str:1:6,armor:73:armor:0.011:0.803
+R	warrior/protection	34	9834	12724	gear	2.843	agi:6:agi:0.34:2.04,armor:73:armor:0.011:0.803
+R	warrior/protection	34	9834	12725	gear	10.823	spi:6:spi:0.67:4.02,str:6:str:1:6,armor:73:armor:0.011:0.803
+R	warrior/protection	34	9834	12726	gear	6.863	agi:6:agi:0.34:2.04,spi:6:spi:0.67:4.02,armor:73:armor:0.011:0.803
+R	warrior/protection	34	9834	12727	gear	8.843	agi:6:agi:0.34:2.04,str:6:str:1:6,armor:73:armor:0.011:0.803
+R	warrior/protection	34	9834	12728	gear	3.863	agi:9:agi:0.34:3.06,armor:73:armor:0.011:0.803
+R	warrior/protection	34	9834	12729	gear	0.8029999999999999	armor:73:armor:0.011:0.803
+R	warrior/protection	34	9834	12730	gear	6.833	spi:9:spi:0.67:6.03,armor:73:armor:0.011:0.803
+R	warrior/protection	34	9834	12731	gear	4.493	sta:9:sta:0.41:3.69,armor:73:armor:0.011:0.803
+R	warrior/protection	34	9834	12732	gear	9.803	str:9:str:1:9,armor:73:armor:0.011:0.803
+R	warrior/protection	34	9834	12733	gear	9.262999999999998	ap:18:ap:0.47:8.46,armor:73:armor:0.011:0.803
+R	warrior/protection	34	9834	12734	gear	0.8029999999999999	armor:73:armor:0.011:0.803
+R	warrior/protection	34	9834	12735	gear	0.8029999999999999	armor:73:armor:0.011:0.803
+R	warrior/protection	34	9834	12736	gear	1.523	defense:6:defense:0.12:0.72,armor:73:armor:0.011:0.803
+R	warrior/protection	34	9834	12740	gear	3.263	sta:6:sta:0.41:2.46,armor:73:armor:0.011:0.803
+R	warrior/protection	34	9834	12741	gear	3.263	sta:6:sta:0.41:2.46,armor:73:armor:0.011:0.803
+R	warrior/protection	34	9834	12742	gear	3.263	sta:6:sta:0.41:2.46,armor:73:armor:0.011:0.803
+R	warrior/protection	34	9834	12743	gear	3.263	sta:6:sta:0.41:2.46,armor:73:armor:0.011:0.803
+R	warrior/protection	34	9834	12744	gear	3.263	sta:6:sta:0.41:2.46,armor:73:armor:0.011:0.803
+R	warrior/protection	34	9834	12745	gear	2.4429999999999996	sta:4:sta:0.41:1.64,armor:73:armor:0.011:0.803
+R	warrior/protection	34	9834	12746	gear	3.483	spi:4:spi:0.67:2.68,armor:73:armor:0.011:0.803
+R	warrior/protection	34	9834	12747	gear	6.353	spi:4:spi:0.67:2.68,sta:7:sta:0.41:2.87,armor:73:armor:0.011:0.803
+R	warrior/protection	34	9834	12748	gear	3.6729999999999996	sta:7:sta:0.41:2.87,armor:73:armor:0.011:0.803
+R	warrior/protection	34	9834	12749	gear	3.483	spi:4:spi:0.67:2.68,armor:73:armor:0.011:0.803
+R	warrior/protection	34	9834	12750	gear	6.353	spi:4:spi:0.67:2.68,sta:7:sta:0.41:2.87,armor:73:armor:0.011:0.803
+R	warrior/protection	34	9834	12751	gear	7.983	agi:3:agi:0.34:1.02,ap:7:ap:0.47:3.29,sta:7:sta:0.41:2.87,armor:73:armor:0.011:0.803
+R	warrior/protection	34	9834	12752	gear	8.033	agi:4:agi:0.34:1.36,sta:7:sta:0.41:2.87,str:3:str:1:3,armor:73:armor:0.011:0.803
+R	warrior/protection	34	9834	12753	gear	7.912999999999999	defense:2:defense:0.12:0.24,sta:7:sta:0.41:2.87,str:4:str:1:4,armor:73:armor:0.011:0.803
+R	warrior/protection	34	9834	12755	gear	7.672999999999999	sta:7:sta:0.41:2.87,str:4:str:1:4,armor:73:armor:0.011:0.803
+R	warrior/protection	34	9834	12756	gear	0.8029999999999999	armor:73:armor:0.011:0.803
+R	warrior/protection	34	9834	12760	gear	0.8029999999999999	armor:73:armor:0.011:0.803
+R	warrior/protection	34	10087	0	gear	3.058	armor:278:armor:0.011:3.058
+R	warrior/protection	34	10087	12718	gear	6.747999999999999	sta:9:sta:0.41:3.69,armor:278:armor:0.011:3.058
+R	warrior/protection	34	10087	12719	gear	12.778	spi:9:spi:0.67:6.03,sta:9:sta:0.41:3.69,armor:278:armor:0.011:3.058
+R	warrior/protection	34	10087	12720	gear	9.088000000000001	spi:9:spi:0.67:6.03,armor:278:armor:0.011:3.058
+R	warrior/protection	34	10087	12721	gear	9.808	agi:9:agi:0.34:3.06,sta:9:sta:0.41:3.69,armor:278:armor:0.011:3.058
+R	warrior/protection	34	10087	12722	gear	15.748	sta:9:sta:0.41:3.69,str:9:str:1:9,armor:278:armor:0.011:3.058
+R	warrior/protection	34	10087	12723	gear	12.058	str:9:str:1:9,armor:278:armor:0.011:3.058
+R	warrior/protection	34	10087	12724	gear	6.118	agi:9:agi:0.34:3.06,armor:278:armor:0.011:3.058
+R	warrior/protection	34	10087	12725	gear	18.088	spi:9:spi:0.67:6.03,str:9:str:1:9,armor:278:armor:0.011:3.058
+R	warrior/protection	34	10087	12726	gear	12.148	agi:9:agi:0.34:3.06,spi:9:spi:0.67:6.03,armor:278:armor:0.011:3.058
+R	warrior/protection	34	10087	12727	gear	15.118	agi:9:agi:0.34:3.06,str:9:str:1:9,armor:278:armor:0.011:3.058
+R	warrior/protection	34	10087	12728	gear	7.8180000000000005	agi:14:agi:0.34:4.76,armor:278:armor:0.011:3.058
+R	warrior/protection	34	10087	12729	gear	3.058	armor:278:armor:0.011:3.058
+R	warrior/protection	34	10087	12730	gear	12.438	spi:14:spi:0.67:9.38,armor:278:armor:0.011:3.058
+R	warrior/protection	34	10087	12731	gear	8.797999999999998	sta:14:sta:0.41:5.74,armor:278:armor:0.011:3.058
+R	warrior/protection	34	10087	12732	gear	17.058	str:14:str:1:14,armor:278:armor:0.011:3.058
+R	warrior/protection	34	10087	12733	gear	16.218	ap:28:ap:0.47:13.16,armor:278:armor:0.011:3.058
+R	warrior/protection	34	10087	12734	gear	3.058	armor:278:armor:0.011:3.058
+R	warrior/protection	34	10087	12735	gear	3.058	armor:278:armor:0.011:3.058
+R	warrior/protection	34	10087	12736	gear	4.138	defense:9:defense:0.12:1.08,armor:278:armor:0.011:3.058
+R	warrior/protection	34	10087	12740	gear	6.747999999999999	sta:9:sta:0.41:3.69,armor:278:armor:0.011:3.058
+R	warrior/protection	34	10087	12741	gear	6.747999999999999	sta:9:sta:0.41:3.69,armor:278:armor:0.011:3.058
+R	warrior/protection	34	10087	12742	gear	6.747999999999999	sta:9:sta:0.41:3.69,armor:278:armor:0.011:3.058
+R	warrior/protection	34	10087	12743	gear	6.747999999999999	sta:9:sta:0.41:3.69,armor:278:armor:0.011:3.058
+R	warrior/protection	34	10087	12744	gear	6.747999999999999	sta:9:sta:0.41:3.69,armor:278:armor:0.011:3.058
+R	warrior/protection	34	10087	12748	gear	7.1579999999999995	sta:10:sta:0.41:4.1,armor:278:armor:0.011:3.058
+R	warrior/protection	34	10087	12749	gear	7.078	spi:6:spi:0.67:4.02,armor:278:armor:0.011:3.058
+R	warrior/protection	34	10087	12750	gear	11.178	spi:6:spi:0.67:4.02,sta:10:sta:0.41:4.1,armor:278:armor:0.011:3.058
+R	warrior/protection	34	10087	12752	gear	13.198	agi:6:agi:0.34:2.04,sta:10:sta:0.41:4.1,str:4:str:1:4,armor:278:armor:0.011:3.058
+R	warrior/protection	34	10087	12753	gear	13.518	defense:3:defense:0.12:0.36,sta:10:sta:0.41:4.1,str:6:str:1:6,armor:278:armor:0.011:3.058
+R	warrior/protection	34	10087	12754	gear	7.638	defense:4:defense:0.12:0.48,sta:10:sta:0.41:4.1,armor:278:armor:0.011:3.058
+R	warrior/protection	34	10087	12755	gear	13.158	sta:10:sta:0.41:4.1,str:6:str:1:6,armor:278:armor:0.011:3.058
+R	warrior/protection	34	10087	12759	gear	3.058	armor:278:armor:0.011:3.058
+R	warrior/protection	34	10368	0	gear	36.587999999999994	str:15:str:1:15,sta:14:sta:0.41:5.74,spi:14:spi:0.67:9.38,armor:588:armor:0.011:6.468
+R	warrior/protection	34	11187	0	gear	0.044	armor:4:armor:0.011:0.044
+R	warrior/protection	34	11994	0	gear	0.0	
+R	warrior/protection	34	11994	12718	gear	1.23	sta:3:sta:0.41:1.23
+R	warrior/protection	34	11994	12719	gear	3.24	spi:3:spi:0.67:2.01,sta:3:sta:0.41:1.23
+R	warrior/protection	34	11994	12720	gear	2.0100000000000002	spi:3:spi:0.67:2.01
+R	warrior/protection	34	11994	12721	gear	2.25	agi:3:agi:0.34:1.02,sta:3:sta:0.41:1.23
+R	warrior/protection	34	11994	12722	gear	4.23	sta:3:sta:0.41:1.23,str:3:str:1:3
+R	warrior/protection	34	11994	12723	gear	3.0	str:3:str:1:3
+R	warrior/protection	34	11994	12724	gear	1.02	agi:3:agi:0.34:1.02
+R	warrior/protection	34	11994	12725	gear	5.01	spi:3:spi:0.67:2.01,str:3:str:1:3
+R	warrior/protection	34	11994	12726	gear	3.0300000000000002	agi:3:agi:0.34:1.02,spi:3:spi:0.67:2.01
+R	warrior/protection	34	11994	12727	gear	4.02	agi:3:agi:0.34:1.02,str:3:str:1:3
+R	warrior/protection	34	11994	12728	gear	1.7000000000000002	agi:5:agi:0.34:1.7
+R	warrior/protection	34	11994	12729	gear	0.0	
+R	warrior/protection	34	11994	12730	gear	3.35	spi:5:spi:0.67:3.35
+R	warrior/protection	34	11994	12731	gear	2.05	sta:5:sta:0.41:2.05
+R	warrior/protection	34	11994	12732	gear	5.0	str:5:str:1:5
+R	warrior/protection	34	11994	12733	gear	4.699999999999999	ap:10:ap:0.47:4.7
+R	warrior/protection	34	11994	12737	gear	0.0	
+R	warrior/protection	34	11994	12738	gear	0.0	
+R	warrior/protection	34	11994	12739	gear	0.68	agi:2:agi:0.34:0.68
+R	warrior/protection	34	11994	12740	gear	1.23	sta:3:sta:0.41:1.23
+R	warrior/protection	34	11994	12741	gear	1.23	sta:3:sta:0.41:1.23
+R	warrior/protection	34	11994	12742	gear	1.23	sta:3:sta:0.41:1.23
+R	warrior/protection	34	11994	12743	gear	1.23	sta:3:sta:0.41:1.23
+R	warrior/protection	34	11994	12744	gear	1.23	sta:3:sta:0.41:1.23
+R	warrior/protection	34	12790	0	mh	167.502	dps:53.82:dps:3.1:166.842,speed:0.6:speed:1.1:0.66
+R	warrior/protection	34	13183	0	mh	121.697	dps:39.47:dps:3.1:122.357,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	14122	0	gear	0.154	armor:14:armor:0.011:0.154
+R	warrior/protection	34	14122	12718	gear	0.974	sta:2:sta:0.41:0.82,armor:14:armor:0.011:0.154
+R	warrior/protection	34	14122	12719	gear	2.314	spi:2:spi:0.67:1.34,sta:2:sta:0.41:0.82,armor:14:armor:0.011:0.154
+R	warrior/protection	34	14122	12720	gear	1.494	spi:2:spi:0.67:1.34,armor:14:armor:0.011:0.154
+R	warrior/protection	34	14122	12729	gear	0.154	armor:14:armor:0.011:0.154
+R	warrior/protection	34	14122	12730	gear	2.164	spi:3:spi:0.67:2.01,armor:14:armor:0.011:0.154
+R	warrior/protection	34	14122	12731	gear	1.384	sta:3:sta:0.41:1.23,armor:14:armor:0.011:0.154
+R	warrior/protection	34	14122	12734	gear	0.154	armor:14:armor:0.011:0.154
+R	warrior/protection	34	14122	12735	gear	0.154	armor:14:armor:0.011:0.154
+R	warrior/protection	34	14122	12740	gear	0.974	sta:2:sta:0.41:0.82,armor:14:armor:0.011:0.154
+R	warrior/protection	34	14122	12741	gear	0.974	sta:2:sta:0.41:0.82,armor:14:armor:0.011:0.154
+R	warrior/protection	34	14122	12742	gear	0.974	sta:2:sta:0.41:0.82,armor:14:armor:0.011:0.154
+R	warrior/protection	34	14122	12743	gear	0.974	sta:2:sta:0.41:0.82,armor:14:armor:0.011:0.154
+R	warrior/protection	34	14122	12744	gear	0.974	sta:2:sta:0.41:0.82,armor:14:armor:0.011:0.154
+R	warrior/protection	34	14122	12745	gear	0.564	sta:1:sta:0.41:0.41,armor:14:armor:0.011:0.154
+R	warrior/protection	34	14122	12756	gear	0.154	armor:14:armor:0.011:0.154
+R	warrior/protection	34	14122	12757	gear	0.154	armor:14:armor:0.011:0.154
+R	warrior/protection	34	14122	12758	gear	0.154	armor:14:armor:0.011:0.154
+R	warrior/protection	34	14122	12759	gear	0.154	armor:14:armor:0.011:0.154
+R	warrior/protection	34	14122	12761	gear	0.154	armor:14:armor:0.011:0.154
+R	warrior/protection	34	14340	0	gear	8.758	sta:19:sta:0.41:7.79,armor:88:armor:0.011:0.968
+R	warrior/protection	34	14673	0	gear	8.484	str:3:str:1:3,agi:9:agi:0.34:3.06,sta:5:sta:0.41:2.05,armor:34:armor:0.011:0.374
+R	warrior/protection	34	14964	0	oh	18.919999999999998	armor:1720:armor:0.011:18.92
+R	warrior/protection	34	14964	12718	oh	22.61	sta:9:sta:0.41:3.69,armor:1720:armor:0.011:18.92
+R	warrior/protection	34	14964	12719	oh	28.64	spi:9:spi:0.67:6.03,sta:9:sta:0.41:3.69,armor:1720:armor:0.011:18.92
+R	warrior/protection	34	14964	12720	oh	24.95	spi:9:spi:0.67:6.03,armor:1720:armor:0.011:18.92
+R	warrior/protection	34	14964	12721	oh	25.669999999999998	agi:9:agi:0.34:3.06,sta:9:sta:0.41:3.69,armor:1720:armor:0.011:18.92
+R	warrior/protection	34	14964	12722	oh	31.61	sta:9:sta:0.41:3.69,str:9:str:1:9,armor:1720:armor:0.011:18.92
+R	warrior/protection	34	14964	12723	oh	27.919999999999998	str:9:str:1:9,armor:1720:armor:0.011:18.92
+R	warrior/protection	34	14964	12724	oh	21.979999999999997	agi:9:agi:0.34:3.06,armor:1720:armor:0.011:18.92
+R	warrior/protection	34	14964	12725	oh	33.95	spi:9:spi:0.67:6.03,str:9:str:1:9,armor:1720:armor:0.011:18.92
+R	warrior/protection	34	14964	12726	oh	28.009999999999998	agi:9:agi:0.34:3.06,spi:9:spi:0.67:6.03,armor:1720:armor:0.011:18.92
+R	warrior/protection	34	14964	12727	oh	30.979999999999997	agi:9:agi:0.34:3.06,str:9:str:1:9,armor:1720:armor:0.011:18.92
+R	warrior/protection	34	14964	12728	oh	23.68	agi:14:agi:0.34:4.76,armor:1720:armor:0.011:18.92
+R	warrior/protection	34	14964	12729	oh	18.919999999999998	armor:1720:armor:0.011:18.92
+R	warrior/protection	34	14964	12730	oh	28.299999999999997	spi:14:spi:0.67:9.38,armor:1720:armor:0.011:18.92
+R	warrior/protection	34	14964	12731	oh	24.659999999999997	sta:14:sta:0.41:5.74,armor:1720:armor:0.011:18.92
+R	warrior/protection	34	14964	12732	oh	32.92	str:14:str:1:14,armor:1720:armor:0.011:18.92
+R	warrior/protection	34	14964	12733	oh	32.08	ap:28:ap:0.47:13.16,armor:1720:armor:0.011:18.92
+R	warrior/protection	34	14964	12734	oh	18.919999999999998	armor:1720:armor:0.011:18.92
+R	warrior/protection	34	14964	12735	oh	18.919999999999998	armor:1720:armor:0.011:18.92
+R	warrior/protection	34	14964	12736	oh	20.0	defense:9:defense:0.12:1.08,armor:1720:armor:0.011:18.92
+R	warrior/protection	34	14964	12740	oh	22.61	sta:9:sta:0.41:3.69,armor:1720:armor:0.011:18.92
+R	warrior/protection	34	14964	12741	oh	22.61	sta:9:sta:0.41:3.69,armor:1720:armor:0.011:18.92
+R	warrior/protection	34	14964	12742	oh	22.61	sta:9:sta:0.41:3.69,armor:1720:armor:0.011:18.92
+R	warrior/protection	34	14964	12743	oh	22.61	sta:9:sta:0.41:3.69,armor:1720:armor:0.011:18.92
+R	warrior/protection	34	14964	12744	oh	22.61	sta:9:sta:0.41:3.69,armor:1720:armor:0.011:18.92
+R	warrior/protection	34	14964	12745	oh	21.38	sta:6:sta:0.41:2.46,armor:1720:armor:0.011:18.92
+R	warrior/protection	34	14964	12746	oh	22.939999999999998	spi:6:spi:0.67:4.02,armor:1720:armor:0.011:18.92
+R	warrior/protection	34	14964	12747	oh	27.04	spi:6:spi:0.67:4.02,sta:10:sta:0.41:4.1,armor:1720:armor:0.011:18.92
+R	warrior/protection	34	14964	12748	oh	23.019999999999996	sta:10:sta:0.41:4.1,armor:1720:armor:0.011:18.92
+R	warrior/protection	34	14964	12749	oh	22.939999999999998	spi:6:spi:0.67:4.02,armor:1720:armor:0.011:18.92
+R	warrior/protection	34	14964	12750	oh	27.04	spi:6:spi:0.67:4.02,sta:10:sta:0.41:4.1,armor:1720:armor:0.011:18.92
+R	warrior/protection	34	14964	12753	oh	29.38	defense:3:defense:0.12:0.36,sta:10:sta:0.41:4.1,str:6:str:1:6,armor:1720:armor:0.011:18.92
+R	warrior/protection	34	14964	12754	oh	23.5	defense:4:defense:0.12:0.48,sta:10:sta:0.41:4.1,armor:1720:armor:0.011:18.92
+R	warrior/protection	34	14964	12759	oh	18.919999999999998	armor:1720:armor:0.011:18.92
+R	warrior/protection	34	14964	12760	oh	18.919999999999998	armor:1720:armor:0.011:18.92
+R	warrior/protection	34	15235	0	mh	87.90700000000001	dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12718	mh	89.95700000000001	sta:5:sta:0.41:2.05,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12719	mh	93.30700000000002	spi:5:spi:0.67:3.35,sta:5:sta:0.41:2.05,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12720	mh	91.257	spi:5:spi:0.67:3.35,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12721	mh	91.65700000000001	agi:5:agi:0.34:1.7,sta:5:sta:0.41:2.05,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12722	mh	94.95700000000001	sta:5:sta:0.41:2.05,str:5:str:1:5,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12723	mh	92.90700000000001	str:5:str:1:5,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12724	mh	89.60700000000001	agi:5:agi:0.34:1.7,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12725	mh	96.257	spi:5:spi:0.67:3.35,str:5:str:1:5,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12726	mh	92.95700000000001	agi:5:agi:0.34:1.7,spi:5:spi:0.67:3.35,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12727	mh	94.60700000000001	agi:5:agi:0.34:1.7,str:5:str:1:5,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12728	mh	90.62700000000001	agi:8:agi:0.34:2.72,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12729	mh	87.90700000000001	dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12730	mh	93.26700000000001	spi:8:spi:0.67:5.36,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12731	mh	91.18700000000001	sta:8:sta:0.41:3.28,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12732	mh	95.90700000000001	str:8:str:1:8,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12733	mh	95.427	ap:16:ap:0.47:7.52,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12736	mh	88.507	defense:5:defense:0.12:0.6,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12740	mh	89.95700000000001	sta:5:sta:0.41:2.05,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12741	mh	89.95700000000001	sta:5:sta:0.41:2.05,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12742	mh	89.95700000000001	sta:5:sta:0.41:2.05,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12743	mh	89.95700000000001	sta:5:sta:0.41:2.05,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12744	mh	89.95700000000001	sta:5:sta:0.41:2.05,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12751	mh	94.677	agi:3:agi:0.34:1.02,ap:7:ap:0.47:3.29,sta:6:sta:0.41:2.46,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12752	mh	94.38700000000001	agi:3:agi:0.34:1.02,sta:6:sta:0.41:2.46,str:3:str:1:3,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12753	mh	93.60700000000001	defense:2:defense:0.12:0.24,sta:6:sta:0.41:2.46,str:3:str:1:3,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12754	mh	90.60700000000001	defense:2:defense:0.12:0.24,sta:6:sta:0.41:2.46,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12759	mh	87.90700000000001	dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12906	mh	89.54700000000001	sta:4:sta:0.41:1.64,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12908	mh	90.58700000000002	spi:4:spi:0.67:2.68,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12910	mh	93.04700000000001	spi:4:spi:0.67:2.68,sta:6:sta:0.41:2.46,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12912	mh	90.367	sta:6:sta:0.41:2.46,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12913	mh	90.58700000000002	spi:4:spi:0.67:2.68,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12916	mh	93.04700000000001	spi:4:spi:0.67:2.68,sta:6:sta:0.41:2.46,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12917	mh	87.90700000000001	dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12920	mh	87.90700000000001	dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15477	0	gear	1.111	armor:101:armor:0.011:1.111
+R	warrior/protection	34	15477	12718	gear	1.521	sta:1:sta:0.41:0.41,armor:101:armor:0.011:1.111
+R	warrior/protection	34	15477	12719	gear	2.191	spi:1:spi:0.67:0.67,sta:1:sta:0.41:0.41,armor:101:armor:0.011:1.111
+R	warrior/protection	34	15477	12720	gear	1.7810000000000001	spi:1:spi:0.67:0.67,armor:101:armor:0.011:1.111
+R	warrior/protection	34	15477	12721	gear	1.861	agi:1:agi:0.34:0.34,sta:1:sta:0.41:0.41,armor:101:armor:0.011:1.111
+R	warrior/protection	34	15477	12722	gear	2.521	sta:1:sta:0.41:0.41,str:1:str:1:1,armor:101:armor:0.011:1.111
+R	warrior/protection	34	15477	12723	gear	2.1109999999999998	str:1:str:1:1,armor:101:armor:0.011:1.111
+R	warrior/protection	34	15477	12724	gear	1.451	agi:1:agi:0.34:0.34,armor:101:armor:0.011:1.111
+R	warrior/protection	34	15477	12725	gear	2.7809999999999997	spi:1:spi:0.67:0.67,str:1:str:1:1,armor:101:armor:0.011:1.111
+R	warrior/protection	34	15477	12726	gear	2.121	agi:1:agi:0.34:0.34,spi:1:spi:0.67:0.67,armor:101:armor:0.011:1.111
+R	warrior/protection	34	15477	12727	gear	2.451	agi:1:agi:0.34:0.34,str:1:str:1:1,armor:101:armor:0.011:1.111
+R	warrior/protection	34	15477	12728	gear	1.791	agi:2:agi:0.34:0.68,armor:101:armor:0.011:1.111
+R	warrior/protection	34	15477	12729	gear	1.111	armor:101:armor:0.011:1.111
+R	warrior/protection	34	15477	12730	gear	2.451	spi:2:spi:0.67:1.34,armor:101:armor:0.011:1.111
+R	warrior/protection	34	15477	12731	gear	1.931	sta:2:sta:0.41:0.82,armor:101:armor:0.011:1.111
+R	warrior/protection	34	15477	12732	gear	3.1109999999999998	str:2:str:1:2,armor:101:armor:0.011:1.111
+R	warrior/protection	34	15477	12733	gear	2.9909999999999997	ap:4:ap:0.47:1.88,armor:101:armor:0.011:1.111
+R	warrior/protection	34	15477	12734	gear	1.111	armor:101:armor:0.011:1.111
+R	warrior/protection	34	15477	12735	gear	1.111	armor:101:armor:0.011:1.111
+R	warrior/protection	34	15477	12736	gear	1.2309999999999999	defense:1:defense:0.12:0.12,armor:101:armor:0.011:1.111
+R	warrior/protection	34	15477	12740	gear	1.521	sta:1:sta:0.41:0.41,armor:101:armor:0.011:1.111
+R	warrior/protection	34	15477	12741	gear	1.521	sta:1:sta:0.41:0.41,armor:101:armor:0.011:1.111
+R	warrior/protection	34	15477	12742	gear	1.521	sta:1:sta:0.41:0.41,armor:101:armor:0.011:1.111
+R	warrior/protection	34	15477	12743	gear	1.521	sta:1:sta:0.41:0.41,armor:101:armor:0.011:1.111
+R	warrior/protection	34	15477	12744	gear	1.521	sta:1:sta:0.41:0.41,armor:101:armor:0.011:1.111
+R	warrior/protection	34	15477	12759	gear	1.111	armor:101:armor:0.011:1.111
+R	warrior/protection	34	15691	0	ranged	4.02	agi:3:agi:0.34:1.02,str:3:str:1:3
+R	warrior/protection	34	15945	0	oh	2.16	sta:2:sta:0.41:0.82,spi:2:spi:0.67:1.34
+R	warrior/protection	34	16711	0	gear	12.605	agi:21:agi:0.34:7.14,sta:9:sta:0.41:3.69,hit:0.3:hit:1.7:0.51,armor:115:armor:0.011:1.265
+R	warrior/protection	34	18312	0	gear	27.987	str:13:str:1:13,sta:20:sta:0.41:8.2,armor:617:armor:0.011:6.787
+R	warrior/protection	34	18726	0	gear	7.792999999999999	sta:15:sta:0.41:6.15,defense:7:defense:0.12:0.84,armor:73:armor:0.011:0.803
+R	warrior/protection	34	19557	0	mh	74.15	str:7:str:1:7,sta:3:sta:0.41:1.23,dps:21.3:dps:3.1:66.03,speed:-0.1:speed:1.1:-0.11
+R	warrior/protection	34	20129	0	gear	12.227	agi:6:agi:0.34:2.04,str:6:str:1:6,sta:6:sta:0.41:2.46,armor:157:armor:0.011:1.727
+R	warrior/protection	34	20437	0	ranged	1.9100000000000001	agi:2:agi:0.34:0.68,sta:3:sta:0.41:1.23
+R	warrior/protection	34	22270	0	gear	19.826999999999998	str:11:str:1:11,defense:3:defense:0.12:0.36,sta:10:sta:0.41:4.1,armor:397:armor:0.011:4.367
+R	warrior/protection	34	22967	0	gear	14.573	sta:25:sta:0.41:10.25,armor:393:armor:0.011:4.323
+R	warrior/protection	34	226878	0	gear	30.143	str:18:str:1:18,sta:12:sta:0.41:4.92,crit:1:crit:2.9:2.9,armor:393:armor:0.011:4.323
+R	warrior/protection	34	250491	0	gear	3.6639999999999997	sta:4:sta:0.41:1.64,armor:184:armor:0.011:2.024
+R	warrior/protection	34	252507	0	gear	4.936	sta:10:sta:0.41:4.1,armor:76:armor:0.011:0.836
+R	warrior/protection	34	254111	0	gear	5.924	sta:13:sta:0.41:5.33,armor:54:armor:0.011:0.594
+R	warrior/protection	34	270033	0	gear	4.789000000000001	agi:4:agi:0.34:1.36,str:3:str:1:3,armor:39:armor:0.011:0.429
+R	warrior/protection	34	271956	0	gear	20.432	agi:27:agi:0.34:9.18,sta:12:sta:0.41:4.92,crit:1:crit:2.9:2.9,armor:312:armor:0.011:3.432
+R	warrior/protection	34	272958	0	gear	8.352	sta:12:sta:0.41:4.92,armor:312:armor:0.011:3.432
+R	warrior/protection	34	274646	0	ranged	1.7000000000000002	agi:5:agi:0.34:1.7
+R	warrior/protection	34	276399	0	gear	14.277	sta:18:sta:0.41:7.38,armor:627:armor:0.011:6.897
+R	warrior/protection	34	277235	0	gear	22.005000000000003	str:14:str:1:14,sta:10:sta:0.41:4.1,armor:355:armor:0.011:3.905
+R	warrior/protection	34	280082	0	mh	129.655	hit:1.5:hit:1.7:2.55,spi:21:spi:0.67:14.07,dps:36.25:dps:3.1:112.375,speed:0.6:speed:1.1:0.66
+R	warrior/protection	34	282560	0	gear	7.673	sta:13:sta:0.41:5.33,armor:213:armor:0.011:2.343
+R	warrior/protection	34	286609	0	oh	24.395999999999997	spi:6:spi:0.67:4.02,defense:7:defense:0.12:0.84,armor:1776:armor:0.011:19.536
+R	warrior/protection	45	25	0	mh	-0.7999999999999998	dps:1.05:dps:3:3.15,speed:-0.5:speed:7.9:-3.95
+R	warrior/protection	45	1315	0	gear	17.15	sta:10:sta:0.23:2.3,spi:15:spi:0.99:14.85
+R	warrior/protection	45	1808	0	gear	0.518	armor:74:armor:0.007:0.518
+R	warrior/protection	45	2225	0	mh	10.26	dps:5:dps:3:15,speed:-0.6:speed:7.9:-4.74
+R	warrior/protection	45	2614	0	gear	0.203	armor:29:armor:0.007:0.203
+R	warrior/protection	45	3158	0	gear	0.182	armor:26:armor:0.007:0.182
+R	warrior/protection	45	3570	0	mh	26.36	str:2:str:1:2,dps:8.12:dps:3:24.36
+R	warrior/protection	45	4023	0	mh	41.339999999999996	dps:15.36:dps:3:46.08,speed:-0.6:speed:7.9:-4.74
+R	warrior/protection	45	4068	0	oh	8.811	sta:9:sta:0.23:2.07,armor:963:armor:0.007:6.741
+R	warrior/protection	45	4570	0	mh	34.74	dps:10:dps:3:30,speed:0.6:speed:7.9:4.74
+R	warrior/protection	45	4570	12718	mh	35.43	sta:3:sta:0.23:0.69,dps:10:dps:3:30,speed:0.6:speed:7.9:4.74
+R	warrior/protection	45	4570	12719	mh	38.4	spi:3:spi:0.99:2.97,sta:3:sta:0.23:0.69,dps:10:dps:3:30,speed:0.6:speed:7.9:4.74
+R	warrior/protection	45	4570	12720	mh	37.71	spi:3:spi:0.99:2.97,dps:10:dps:3:30,speed:0.6:speed:7.9:4.74
+R	warrior/protection	45	4570	12721	mh	36.870000000000005	agi:3:agi:0.48:1.44,sta:3:sta:0.23:0.69,dps:10:dps:3:30,speed:0.6:speed:7.9:4.74
+R	warrior/protection	45	4570	12722	mh	38.43	sta:3:sta:0.23:0.69,str:3:str:1:3,dps:10:dps:3:30,speed:0.6:speed:7.9:4.74
+R	warrior/protection	45	4570	12723	mh	37.74	str:3:str:1:3,dps:10:dps:3:30,speed:0.6:speed:7.9:4.74
+R	warrior/protection	45	4570	12724	mh	36.18	agi:3:agi:0.48:1.44,dps:10:dps:3:30,speed:0.6:speed:7.9:4.74
+R	warrior/protection	45	4570	12725	mh	40.71	spi:3:spi:0.99:2.97,str:3:str:1:3,dps:10:dps:3:30,speed:0.6:speed:7.9:4.74
+R	warrior/protection	45	4570	12726	mh	39.15	agi:3:agi:0.48:1.44,spi:3:spi:0.99:2.97,dps:10:dps:3:30,speed:0.6:speed:7.9:4.74
+R	warrior/protection	45	4570	12727	mh	39.18	agi:3:agi:0.48:1.44,str:3:str:1:3,dps:10:dps:3:30,speed:0.6:speed:7.9:4.74
+R	warrior/protection	45	4570	12728	mh	36.660000000000004	agi:4:agi:0.48:1.92,dps:10:dps:3:30,speed:0.6:speed:7.9:4.74
+R	warrior/protection	45	4570	12729	mh	34.74	dps:10:dps:3:30,speed:0.6:speed:7.9:4.74
+R	warrior/protection	45	4570	12730	mh	38.7	spi:4:spi:0.99:3.96,dps:10:dps:3:30,speed:0.6:speed:7.9:4.74
+R	warrior/protection	45	4570	12731	mh	35.660000000000004	sta:4:sta:0.23:0.92,dps:10:dps:3:30,speed:0.6:speed:7.9:4.74
+R	warrior/protection	45	4570	12732	mh	38.74	str:4:str:1:4,dps:10:dps:3:30,speed:0.6:speed:7.9:4.74
+R	warrior/protection	45	4570	12733	mh	38.34	ap:8:ap:0.45:3.6,dps:10:dps:3:30,speed:0.6:speed:7.9:4.74
+R	warrior/protection	45	4570	12736	mh	35.1	defense:3:defense:0.12:0.36,dps:10:dps:3:30,speed:0.6:speed:7.9:4.74
+R	warrior/protection	45	4570	12740	mh	35.43	sta:3:sta:0.23:0.69,dps:10:dps:3:30,speed:0.6:speed:7.9:4.74
+R	warrior/protection	45	4570	12741	mh	35.43	sta:3:sta:0.23:0.69,dps:10:dps:3:30,speed:0.6:speed:7.9:4.74
+R	warrior/protection	45	4570	12742	mh	35.43	sta:3:sta:0.23:0.69,dps:10:dps:3:30,speed:0.6:speed:7.9:4.74
+R	warrior/protection	45	4570	12743	mh	35.43	sta:3:sta:0.23:0.69,dps:10:dps:3:30,speed:0.6:speed:7.9:4.74
+R	warrior/protection	45	4570	12744	mh	35.43	sta:3:sta:0.23:0.69,dps:10:dps:3:30,speed:0.6:speed:7.9:4.74
+R	warrior/protection	45	4570	12759	mh	34.74	dps:10:dps:3:30,speed:0.6:speed:7.9:4.74
+R	warrior/protection	45	4570	12918	mh	34.74	dps:10:dps:3:30,speed:0.6:speed:7.9:4.74
+R	warrior/protection	45	4570	12919	mh	34.74	dps:10:dps:3:30,speed:0.6:speed:7.9:4.74
+R	warrior/protection	45	5079	0	gear	0.0	
+R	warrior/protection	45	6063	0	gear	0.385	armor:55:armor:0.007:0.385
+R	warrior/protection	45	6540	0	gear	0.196	armor:28:armor:0.007:0.196
+R	warrior/protection	45	6540	12718	gear	0.8860000000000001	sta:3:sta:0.23:0.69,armor:28:armor:0.007:0.196
+R	warrior/protection	45	6540	12719	gear	3.856	spi:3:spi:0.99:2.97,sta:3:sta:0.23:0.69,armor:28:armor:0.007:0.196
+R	warrior/protection	45	6540	12720	gear	3.166	spi:3:spi:0.99:2.97,armor:28:armor:0.007:0.196
+R	warrior/protection	45	6540	12729	gear	0.196	armor:28:armor:0.007:0.196
+R	warrior/protection	45	6540	12730	gear	5.146	spi:5:spi:0.99:4.95,armor:28:armor:0.007:0.196
+R	warrior/protection	45	6540	12731	gear	1.346	sta:5:sta:0.23:1.15,armor:28:armor:0.007:0.196
+R	warrior/protection	45	6540	12734	gear	0.196	armor:28:armor:0.007:0.196
+R	warrior/protection	45	6540	12735	gear	0.196	armor:28:armor:0.007:0.196
+R	warrior/protection	45	6540	12740	gear	0.8860000000000001	sta:3:sta:0.23:0.69,armor:28:armor:0.007:0.196
+R	warrior/protection	45	6540	12741	gear	0.8860000000000001	sta:3:sta:0.23:0.69,armor:28:armor:0.007:0.196
+R	warrior/protection	45	6540	12742	gear	0.8860000000000001	sta:3:sta:0.23:0.69,armor:28:armor:0.007:0.196
+R	warrior/protection	45	6540	12743	gear	0.8860000000000001	sta:3:sta:0.23:0.69,armor:28:armor:0.007:0.196
+R	warrior/protection	45	6540	12744	gear	0.8860000000000001	sta:3:sta:0.23:0.69,armor:28:armor:0.007:0.196
+R	warrior/protection	45	6540	12745	gear	0.656	sta:2:sta:0.23:0.46,armor:28:armor:0.007:0.196
+R	warrior/protection	45	6540	12756	gear	0.196	armor:28:armor:0.007:0.196
+R	warrior/protection	45	6540	12757	gear	0.196	armor:28:armor:0.007:0.196
+R	warrior/protection	45	6540	12758	gear	0.196	armor:28:armor:0.007:0.196
+R	warrior/protection	45	6540	12759	gear	0.196	armor:28:armor:0.007:0.196
+R	warrior/protection	45	6540	12761	gear	0.196	armor:28:armor:0.007:0.196
+R	warrior/protection	45	6557	0	gear	0.343	armor:49:armor:0.007:0.343
+R	warrior/protection	45	6557	12718	gear	0.803	sta:2:sta:0.23:0.46,armor:49:armor:0.007:0.343
+R	warrior/protection	45	6557	12719	gear	2.783	spi:2:spi:0.99:1.98,sta:2:sta:0.23:0.46,armor:49:armor:0.007:0.343
+R	warrior/protection	45	6557	12720	gear	2.323	spi:2:spi:0.99:1.98,armor:49:armor:0.007:0.343
+R	warrior/protection	45	6557	12721	gear	1.763	agi:2:agi:0.48:0.96,sta:2:sta:0.23:0.46,armor:49:armor:0.007:0.343
+R	warrior/protection	45	6557	12722	gear	2.803	sta:2:sta:0.23:0.46,str:2:str:1:2,armor:49:armor:0.007:0.343
+R	warrior/protection	45	6557	12723	gear	2.343	str:2:str:1:2,armor:49:armor:0.007:0.343
+R	warrior/protection	45	6557	12724	gear	1.303	agi:2:agi:0.48:0.96,armor:49:armor:0.007:0.343
+R	warrior/protection	45	6557	12725	gear	4.323	spi:2:spi:0.99:1.98,str:2:str:1:2,armor:49:armor:0.007:0.343
+R	warrior/protection	45	6557	12726	gear	3.283	agi:2:agi:0.48:0.96,spi:2:spi:0.99:1.98,armor:49:armor:0.007:0.343
+R	warrior/protection	45	6557	12727	gear	3.303	agi:2:agi:0.48:0.96,str:2:str:1:2,armor:49:armor:0.007:0.343
+R	warrior/protection	45	6557	12728	gear	1.783	agi:3:agi:0.48:1.44,armor:49:armor:0.007:0.343
+R	warrior/protection	45	6557	12729	gear	0.343	armor:49:armor:0.007:0.343
+R	warrior/protection	45	6557	12730	gear	3.3129999999999997	spi:3:spi:0.99:2.97,armor:49:armor:0.007:0.343
+R	warrior/protection	45	6557	12731	gear	1.0330000000000001	sta:3:sta:0.23:0.69,armor:49:armor:0.007:0.343
+R	warrior/protection	45	6557	12732	gear	3.343	str:3:str:1:3,armor:49:armor:0.007:0.343
+R	warrior/protection	45	6557	12733	gear	3.043	ap:6:ap:0.45:2.7,armor:49:armor:0.007:0.343
+R	warrior/protection	45	6557	12734	gear	0.343	armor:49:armor:0.007:0.343
+R	warrior/protection	45	6557	12735	gear	0.343	armor:49:armor:0.007:0.343
+R	warrior/protection	45	6557	12736	gear	0.583	defense:2:defense:0.12:0.24,armor:49:armor:0.007:0.343
+R	warrior/protection	45	6557	12740	gear	0.803	sta:2:sta:0.23:0.46,armor:49:armor:0.007:0.343
+R	warrior/protection	45	6557	12741	gear	0.803	sta:2:sta:0.23:0.46,armor:49:armor:0.007:0.343
+R	warrior/protection	45	6557	12742	gear	0.803	sta:2:sta:0.23:0.46,armor:49:armor:0.007:0.343
+R	warrior/protection	45	6557	12743	gear	0.803	sta:2:sta:0.23:0.46,armor:49:armor:0.007:0.343
+R	warrior/protection	45	6557	12744	gear	0.803	sta:2:sta:0.23:0.46,armor:49:armor:0.007:0.343
+R	warrior/protection	45	6557	12756	gear	0.343	armor:49:armor:0.007:0.343
+R	warrior/protection	45	6557	12760	gear	0.343	armor:49:armor:0.007:0.343
+R	warrior/protection	45	7047	0	gear	5.132000000000001	spi:5:spi:0.99:4.95,armor:26:armor:0.007:0.182
+R	warrior/protection	45	7538	0	gear	1.841	armor:263:armor:0.007:1.841
+R	warrior/protection	45	7538	12718	gear	4.831	sta:13:sta:0.23:2.99,armor:263:armor:0.007:1.841
+R	warrior/protection	45	7538	12719	gear	17.701	spi:13:spi:0.99:12.87,sta:13:sta:0.23:2.99,armor:263:armor:0.007:1.841
+R	warrior/protection	45	7538	12720	gear	14.710999999999999	spi:13:spi:0.99:12.87,armor:263:armor:0.007:1.841
+R	warrior/protection	45	7538	12721	gear	11.071	agi:13:agi:0.48:6.24,sta:13:sta:0.23:2.99,armor:263:armor:0.007:1.841
+R	warrior/protection	45	7538	12722	gear	17.831	sta:13:sta:0.23:2.99,str:13:str:1:13,armor:263:armor:0.007:1.841
+R	warrior/protection	45	7538	12723	gear	14.841	str:13:str:1:13,armor:263:armor:0.007:1.841
+R	warrior/protection	45	7538	12724	gear	8.081	agi:13:agi:0.48:6.24,armor:263:armor:0.007:1.841
+R	warrior/protection	45	7538	12725	gear	27.711	spi:13:spi:0.99:12.87,str:13:str:1:13,armor:263:armor:0.007:1.841
+R	warrior/protection	45	7538	12726	gear	20.951	agi:13:agi:0.48:6.24,spi:13:spi:0.99:12.87,armor:263:armor:0.007:1.841
+R	warrior/protection	45	7538	12727	gear	21.081000000000003	agi:13:agi:0.48:6.24,str:13:str:1:13,armor:263:armor:0.007:1.841
+R	warrior/protection	45	7538	12728	gear	11.440999999999999	agi:20:agi:0.48:9.6,armor:263:armor:0.007:1.841
+R	warrior/protection	45	7538	12729	gear	1.841	armor:263:armor:0.007:1.841
+R	warrior/protection	45	7538	12730	gear	21.641000000000002	spi:20:spi:0.99:19.8,armor:263:armor:0.007:1.841
+R	warrior/protection	45	7538	12731	gear	6.441000000000001	sta:20:sta:0.23:4.6,armor:263:armor:0.007:1.841
+R	warrior/protection	45	7538	12732	gear	21.841	str:20:str:1:20,armor:263:armor:0.007:1.841
+R	warrior/protection	45	7538	12733	gear	19.841	ap:40:ap:0.45:18,armor:263:armor:0.007:1.841
+R	warrior/protection	45	7538	12734	gear	1.841	armor:263:armor:0.007:1.841
+R	warrior/protection	45	7538	12735	gear	1.841	armor:263:armor:0.007:1.841
+R	warrior/protection	45	7538	12740	gear	4.831	sta:13:sta:0.23:2.99,armor:263:armor:0.007:1.841
+R	warrior/protection	45	7538	12741	gear	4.831	sta:13:sta:0.23:2.99,armor:263:armor:0.007:1.841
+R	warrior/protection	45	7538	12742	gear	4.831	sta:13:sta:0.23:2.99,armor:263:armor:0.007:1.841
+R	warrior/protection	45	7538	12743	gear	4.831	sta:13:sta:0.23:2.99,armor:263:armor:0.007:1.841
+R	warrior/protection	45	7538	12744	gear	4.831	sta:13:sta:0.23:2.99,armor:263:armor:0.007:1.841
+R	warrior/protection	45	7538	12745	gear	3.681	sta:8:sta:0.23:1.84,armor:263:armor:0.007:1.841
+R	warrior/protection	45	7538	12746	gear	9.761	spi:8:spi:0.99:7.92,armor:263:armor:0.007:1.841
+R	warrior/protection	45	7538	12747	gear	13.211	spi:8:spi:0.99:7.92,sta:15:sta:0.23:3.45,armor:263:armor:0.007:1.841
+R	warrior/protection	45	7538	12748	gear	5.291	sta:15:sta:0.23:3.45,armor:263:armor:0.007:1.841
+R	warrior/protection	45	7538	12749	gear	9.761	spi:8:spi:0.99:7.92,armor:263:armor:0.007:1.841
+R	warrior/protection	45	7538	12750	gear	13.211	spi:8:spi:0.99:7.92,sta:15:sta:0.23:3.45,armor:263:armor:0.007:1.841
+R	warrior/protection	45	7538	12751	gear	15.371	agi:6:agi:0.48:2.88,ap:16:ap:0.45:7.2,sta:15:sta:0.23:3.45,armor:263:armor:0.007:1.841
+R	warrior/protection	45	7538	12752	gear	15.130999999999998	agi:8:agi:0.48:3.84,sta:15:sta:0.23:3.45,str:6:str:1:6,armor:263:armor:0.007:1.841
+R	warrior/protection	45	7538	12755	gear	13.290999999999999	sta:15:sta:0.23:3.45,str:8:str:1:8,armor:263:armor:0.007:1.841
+R	warrior/protection	45	7538	12760	gear	1.841	armor:263:armor:0.007:1.841
+R	warrior/protection	45	7922	0	gear	16.93	str:12:str:1:12,sta:12:sta:0.23:2.76,armor:310:armor:0.007:2.17
+R	warrior/protection	45	8192	0	gear	7.032	agi:11:agi:0.48:5.28,sta:5:sta:0.23:1.15,armor:86:armor:0.007:0.602
+R	warrior/protection	45	9458	0	oh	8.402000000000001	spi:3:spi:0.99:2.97,armor:776:armor:0.007:5.432
+R	warrior/protection	45	9834	0	gear	0.511	armor:73:armor:0.007:0.511
+R	warrior/protection	45	9834	12718	gear	1.891	sta:6:sta:0.23:1.38,armor:73:armor:0.007:0.511
+R	warrior/protection	45	9834	12719	gear	7.8309999999999995	spi:6:spi:0.99:5.94,sta:6:sta:0.23:1.38,armor:73:armor:0.007:0.511
+R	warrior/protection	45	9834	12720	gear	6.451	spi:6:spi:0.99:5.94,armor:73:armor:0.007:0.511
+R	warrior/protection	45	9834	12721	gear	4.771	agi:6:agi:0.48:2.88,sta:6:sta:0.23:1.38,armor:73:armor:0.007:0.511
+R	warrior/protection	45	9834	12722	gear	7.891	sta:6:sta:0.23:1.38,str:6:str:1:6,armor:73:armor:0.007:0.511
+R	warrior/protection	45	9834	12723	gear	6.511	str:6:str:1:6,armor:73:armor:0.007:0.511
+R	warrior/protection	45	9834	12724	gear	3.391	agi:6:agi:0.48:2.88,armor:73:armor:0.007:0.511
+R	warrior/protection	45	9834	12725	gear	12.450999999999999	spi:6:spi:0.99:5.94,str:6:str:1:6,armor:73:armor:0.007:0.511
+R	warrior/protection	45	9834	12726	gear	9.331	agi:6:agi:0.48:2.88,spi:6:spi:0.99:5.94,armor:73:armor:0.007:0.511
+R	warrior/protection	45	9834	12727	gear	9.390999999999998	agi:6:agi:0.48:2.88,str:6:str:1:6,armor:73:armor:0.007:0.511
+R	warrior/protection	45	9834	12728	gear	4.831	agi:9:agi:0.48:4.32,armor:73:armor:0.007:0.511
+R	warrior/protection	45	9834	12729	gear	0.511	armor:73:armor:0.007:0.511
+R	warrior/protection	45	9834	12730	gear	9.421	spi:9:spi:0.99:8.91,armor:73:armor:0.007:0.511
+R	warrior/protection	45	9834	12731	gear	2.5810000000000004	sta:9:sta:0.23:2.07,armor:73:armor:0.007:0.511
+R	warrior/protection	45	9834	12732	gear	9.511	str:9:str:1:9,armor:73:armor:0.007:0.511
+R	warrior/protection	45	9834	12733	gear	8.610999999999999	ap:18:ap:0.45:8.1,armor:73:armor:0.007:0.511
+R	warrior/protection	45	9834	12734	gear	0.511	armor:73:armor:0.007:0.511
+R	warrior/protection	45	9834	12735	gear	0.511	armor:73:armor:0.007:0.511
+R	warrior/protection	45	9834	12736	gear	1.2309999999999999	defense:6:defense:0.12:0.72,armor:73:armor:0.007:0.511
+R	warrior/protection	45	9834	12740	gear	1.891	sta:6:sta:0.23:1.38,armor:73:armor:0.007:0.511
+R	warrior/protection	45	9834	12741	gear	1.891	sta:6:sta:0.23:1.38,armor:73:armor:0.007:0.511
+R	warrior/protection	45	9834	12742	gear	1.891	sta:6:sta:0.23:1.38,armor:73:armor:0.007:0.511
+R	warrior/protection	45	9834	12743	gear	1.891	sta:6:sta:0.23:1.38,armor:73:armor:0.007:0.511
+R	warrior/protection	45	9834	12744	gear	1.891	sta:6:sta:0.23:1.38,armor:73:armor:0.007:0.511
+R	warrior/protection	45	9834	12745	gear	1.431	sta:4:sta:0.23:0.92,armor:73:armor:0.007:0.511
+R	warrior/protection	45	9834	12746	gear	4.471	spi:4:spi:0.99:3.96,armor:73:armor:0.007:0.511
+R	warrior/protection	45	9834	12747	gear	6.081	spi:4:spi:0.99:3.96,sta:7:sta:0.23:1.61,armor:73:armor:0.007:0.511
+R	warrior/protection	45	9834	12748	gear	2.121	sta:7:sta:0.23:1.61,armor:73:armor:0.007:0.511
+R	warrior/protection	45	9834	12749	gear	4.471	spi:4:spi:0.99:3.96,armor:73:armor:0.007:0.511
+R	warrior/protection	45	9834	12750	gear	6.081	spi:4:spi:0.99:3.96,sta:7:sta:0.23:1.61,armor:73:armor:0.007:0.511
+R	warrior/protection	45	9834	12751	gear	6.711	agi:3:agi:0.48:1.44,ap:7:ap:0.45:3.15,sta:7:sta:0.23:1.61,armor:73:armor:0.007:0.511
+R	warrior/protection	45	9834	12752	gear	7.041	agi:4:agi:0.48:1.92,sta:7:sta:0.23:1.61,str:3:str:1:3,armor:73:armor:0.007:0.511
+R	warrior/protection	45	9834	12753	gear	6.361	defense:2:defense:0.12:0.24,sta:7:sta:0.23:1.61,str:4:str:1:4,armor:73:armor:0.007:0.511
+R	warrior/protection	45	9834	12755	gear	6.121	sta:7:sta:0.23:1.61,str:4:str:1:4,armor:73:armor:0.007:0.511
+R	warrior/protection	45	9834	12756	gear	0.511	armor:73:armor:0.007:0.511
+R	warrior/protection	45	9834	12760	gear	0.511	armor:73:armor:0.007:0.511
+R	warrior/protection	45	10087	0	gear	1.946	armor:278:armor:0.007:1.946
+R	warrior/protection	45	10087	12718	gear	4.016	sta:9:sta:0.23:2.07,armor:278:armor:0.007:1.946
+R	warrior/protection	45	10087	12719	gear	12.926	spi:9:spi:0.99:8.91,sta:9:sta:0.23:2.07,armor:278:armor:0.007:1.946
+R	warrior/protection	45	10087	12720	gear	10.856	spi:9:spi:0.99:8.91,armor:278:armor:0.007:1.946
+R	warrior/protection	45	10087	12721	gear	8.336	agi:9:agi:0.48:4.32,sta:9:sta:0.23:2.07,armor:278:armor:0.007:1.946
+R	warrior/protection	45	10087	12722	gear	13.016	sta:9:sta:0.23:2.07,str:9:str:1:9,armor:278:armor:0.007:1.946
+R	warrior/protection	45	10087	12723	gear	10.946	str:9:str:1:9,armor:278:armor:0.007:1.946
+R	warrior/protection	45	10087	12724	gear	6.266	agi:9:agi:0.48:4.32,armor:278:armor:0.007:1.946
+R	warrior/protection	45	10087	12725	gear	19.856	spi:9:spi:0.99:8.91,str:9:str:1:9,armor:278:armor:0.007:1.946
+R	warrior/protection	45	10087	12726	gear	15.176	agi:9:agi:0.48:4.32,spi:9:spi:0.99:8.91,armor:278:armor:0.007:1.946
+R	warrior/protection	45	10087	12727	gear	15.266	agi:9:agi:0.48:4.32,str:9:str:1:9,armor:278:armor:0.007:1.946
+R	warrior/protection	45	10087	12728	gear	8.666	agi:14:agi:0.48:6.72,armor:278:armor:0.007:1.946
+R	warrior/protection	45	10087	12729	gear	1.946	armor:278:armor:0.007:1.946
+R	warrior/protection	45	10087	12730	gear	15.806	spi:14:spi:0.99:13.86,armor:278:armor:0.007:1.946
+R	warrior/protection	45	10087	12731	gear	5.166	sta:14:sta:0.23:3.22,armor:278:armor:0.007:1.946
+R	warrior/protection	45	10087	12732	gear	15.946	str:14:str:1:14,armor:278:armor:0.007:1.946
+R	warrior/protection	45	10087	12733	gear	14.546	ap:28:ap:0.45:12.6,armor:278:armor:0.007:1.946
+R	warrior/protection	45	10087	12734	gear	1.946	armor:278:armor:0.007:1.946
+R	warrior/protection	45	10087	12735	gear	1.946	armor:278:armor:0.007:1.946
+R	warrior/protection	45	10087	12736	gear	3.026	defense:9:defense:0.12:1.08,armor:278:armor:0.007:1.946
+R	warrior/protection	45	10087	12740	gear	4.016	sta:9:sta:0.23:2.07,armor:278:armor:0.007:1.946
+R	warrior/protection	45	10087	12741	gear	4.016	sta:9:sta:0.23:2.07,armor:278:armor:0.007:1.946
+R	warrior/protection	45	10087	12742	gear	4.016	sta:9:sta:0.23:2.07,armor:278:armor:0.007:1.946
+R	warrior/protection	45	10087	12743	gear	4.016	sta:9:sta:0.23:2.07,armor:278:armor:0.007:1.946
+R	warrior/protection	45	10087	12744	gear	4.016	sta:9:sta:0.23:2.07,armor:278:armor:0.007:1.946
+R	warrior/protection	45	10087	12748	gear	4.246	sta:10:sta:0.23:2.3,armor:278:armor:0.007:1.946
+R	warrior/protection	45	10087	12749	gear	7.885999999999999	spi:6:spi:0.99:5.94,armor:278:armor:0.007:1.946
+R	warrior/protection	45	10087	12750	gear	10.186	spi:6:spi:0.99:5.94,sta:10:sta:0.23:2.3,armor:278:armor:0.007:1.946
+R	warrior/protection	45	10087	12752	gear	11.126	agi:6:agi:0.48:2.88,sta:10:sta:0.23:2.3,str:4:str:1:4,armor:278:armor:0.007:1.946
+R	warrior/protection	45	10087	12753	gear	10.606	defense:3:defense:0.12:0.36,sta:10:sta:0.23:2.3,str:6:str:1:6,armor:278:armor:0.007:1.946
+R	warrior/protection	45	10087	12754	gear	4.726	defense:4:defense:0.12:0.48,sta:10:sta:0.23:2.3,armor:278:armor:0.007:1.946
+R	warrior/protection	45	10087	12755	gear	10.246	sta:10:sta:0.23:2.3,str:6:str:1:6,armor:278:armor:0.007:1.946
+R	warrior/protection	45	10087	12759	gear	1.946	armor:278:armor:0.007:1.946
+R	warrior/protection	45	10368	0	gear	36.196	str:15:str:1:15,sta:14:sta:0.23:3.22,spi:14:spi:0.99:13.86,armor:588:armor:0.007:4.116
+R	warrior/protection	45	11187	0	gear	0.028	armor:4:armor:0.007:0.028
+R	warrior/protection	45	11994	0	gear	0.0	
+R	warrior/protection	45	11994	12718	gear	0.6900000000000001	sta:3:sta:0.23:0.69
+R	warrior/protection	45	11994	12719	gear	3.6599999999999997	spi:3:spi:0.99:2.97,sta:3:sta:0.23:0.69
+R	warrior/protection	45	11994	12720	gear	2.9699999999999998	spi:3:spi:0.99:2.97
+R	warrior/protection	45	11994	12721	gear	2.13	agi:3:agi:0.48:1.44,sta:3:sta:0.23:0.69
+R	warrior/protection	45	11994	12722	gear	3.69	sta:3:sta:0.23:0.69,str:3:str:1:3
+R	warrior/protection	45	11994	12723	gear	3.0	str:3:str:1:3
+R	warrior/protection	45	11994	12724	gear	1.44	agi:3:agi:0.48:1.44
+R	warrior/protection	45	11994	12725	gear	5.97	spi:3:spi:0.99:2.97,str:3:str:1:3
+R	warrior/protection	45	11994	12726	gear	4.41	agi:3:agi:0.48:1.44,spi:3:spi:0.99:2.97
+R	warrior/protection	45	11994	12727	gear	4.4399999999999995	agi:3:agi:0.48:1.44,str:3:str:1:3
+R	warrior/protection	45	11994	12728	gear	2.4	agi:5:agi:0.48:2.4
+R	warrior/protection	45	11994	12729	gear	0.0	
+R	warrior/protection	45	11994	12730	gear	4.95	spi:5:spi:0.99:4.95
+R	warrior/protection	45	11994	12731	gear	1.1500000000000001	sta:5:sta:0.23:1.15
+R	warrior/protection	45	11994	12732	gear	5.0	str:5:str:1:5
+R	warrior/protection	45	11994	12733	gear	4.5	ap:10:ap:0.45:4.5
+R	warrior/protection	45	11994	12737	gear	0.0	
+R	warrior/protection	45	11994	12738	gear	0.0	
+R	warrior/protection	45	11994	12739	gear	0.96	agi:2:agi:0.48:0.96
+R	warrior/protection	45	11994	12740	gear	0.6900000000000001	sta:3:sta:0.23:0.69
+R	warrior/protection	45	11994	12741	gear	0.6900000000000001	sta:3:sta:0.23:0.69
+R	warrior/protection	45	11994	12742	gear	0.6900000000000001	sta:3:sta:0.23:0.69
+R	warrior/protection	45	11994	12743	gear	0.6900000000000001	sta:3:sta:0.23:0.69
+R	warrior/protection	45	11994	12744	gear	0.6900000000000001	sta:3:sta:0.23:0.69
+R	warrior/protection	45	12790	0	mh	166.20000000000002	dps:53.82:dps:3:161.46,speed:0.6:speed:7.9:4.74
+R	warrior/protection	45	13183	0	mh	114.46	dps:39.47:dps:3:118.41,speed:-0.5:speed:7.9:-3.95
+R	warrior/protection	45	14122	0	gear	0.098	armor:14:armor:0.007:0.098
+R	warrior/protection	45	14122	12718	gear	0.558	sta:2:sta:0.23:0.46,armor:14:armor:0.007:0.098
+R	warrior/protection	45	14122	12719	gear	2.538	spi:2:spi:0.99:1.98,sta:2:sta:0.23:0.46,armor:14:armor:0.007:0.098
+R	warrior/protection	45	14122	12720	gear	2.078	spi:2:spi:0.99:1.98,armor:14:armor:0.007:0.098
+R	warrior/protection	45	14122	12729	gear	0.098	armor:14:armor:0.007:0.098
+R	warrior/protection	45	14122	12730	gear	3.0679999999999996	spi:3:spi:0.99:2.97,armor:14:armor:0.007:0.098
+R	warrior/protection	45	14122	12731	gear	0.788	sta:3:sta:0.23:0.69,armor:14:armor:0.007:0.098
+R	warrior/protection	45	14122	12734	gear	0.098	armor:14:armor:0.007:0.098
+R	warrior/protection	45	14122	12735	gear	0.098	armor:14:armor:0.007:0.098
+R	warrior/protection	45	14122	12740	gear	0.558	sta:2:sta:0.23:0.46,armor:14:armor:0.007:0.098
+R	warrior/protection	45	14122	12741	gear	0.558	sta:2:sta:0.23:0.46,armor:14:armor:0.007:0.098
+R	warrior/protection	45	14122	12742	gear	0.558	sta:2:sta:0.23:0.46,armor:14:armor:0.007:0.098
+R	warrior/protection	45	14122	12743	gear	0.558	sta:2:sta:0.23:0.46,armor:14:armor:0.007:0.098
+R	warrior/protection	45	14122	12744	gear	0.558	sta:2:sta:0.23:0.46,armor:14:armor:0.007:0.098
+R	warrior/protection	45	14122	12745	gear	0.328	sta:1:sta:0.23:0.23,armor:14:armor:0.007:0.098
+R	warrior/protection	45	14122	12756	gear	0.098	armor:14:armor:0.007:0.098
+R	warrior/protection	45	14122	12757	gear	0.098	armor:14:armor:0.007:0.098
+R	warrior/protection	45	14122	12758	gear	0.098	armor:14:armor:0.007:0.098
+R	warrior/protection	45	14122	12759	gear	0.098	armor:14:armor:0.007:0.098
+R	warrior/protection	45	14122	12761	gear	0.098	armor:14:armor:0.007:0.098
+R	warrior/protection	45	14340	0	gear	4.986	sta:19:sta:0.23:4.37,armor:88:armor:0.007:0.616
+R	warrior/protection	45	14673	0	gear	8.708	str:3:str:1:3,agi:9:agi:0.48:4.32,sta:5:sta:0.23:1.15,armor:34:armor:0.007:0.238
+R	warrior/protection	45	14964	0	oh	12.040000000000001	armor:1720:armor:0.007:12.04
+R	warrior/protection	45	14964	12718	oh	14.110000000000001	sta:9:sta:0.23:2.07,armor:1720:armor:0.007:12.04
+R	warrior/protection	45	14964	12719	oh	23.020000000000003	spi:9:spi:0.99:8.91,sta:9:sta:0.23:2.07,armor:1720:armor:0.007:12.04
+R	warrior/protection	45	14964	12720	oh	20.950000000000003	spi:9:spi:0.99:8.91,armor:1720:armor:0.007:12.04
+R	warrior/protection	45	14964	12721	oh	18.43	agi:9:agi:0.48:4.32,sta:9:sta:0.23:2.07,armor:1720:armor:0.007:12.04
+R	warrior/protection	45	14964	12722	oh	23.11	sta:9:sta:0.23:2.07,str:9:str:1:9,armor:1720:armor:0.007:12.04
+R	warrior/protection	45	14964	12723	oh	21.04	str:9:str:1:9,armor:1720:armor:0.007:12.04
+R	warrior/protection	45	14964	12724	oh	16.36	agi:9:agi:0.48:4.32,armor:1720:armor:0.007:12.04
+R	warrior/protection	45	14964	12725	oh	29.950000000000003	spi:9:spi:0.99:8.91,str:9:str:1:9,armor:1720:armor:0.007:12.04
+R	warrior/protection	45	14964	12726	oh	25.270000000000003	agi:9:agi:0.48:4.32,spi:9:spi:0.99:8.91,armor:1720:armor:0.007:12.04
+R	warrior/protection	45	14964	12727	oh	25.36	agi:9:agi:0.48:4.32,str:9:str:1:9,armor:1720:armor:0.007:12.04
+R	warrior/protection	45	14964	12728	oh	18.76	agi:14:agi:0.48:6.72,armor:1720:armor:0.007:12.04
+R	warrior/protection	45	14964	12729	oh	12.040000000000001	armor:1720:armor:0.007:12.04
+R	warrior/protection	45	14964	12730	oh	25.9	spi:14:spi:0.99:13.86,armor:1720:armor:0.007:12.04
+R	warrior/protection	45	14964	12731	oh	15.260000000000002	sta:14:sta:0.23:3.22,armor:1720:armor:0.007:12.04
+R	warrior/protection	45	14964	12732	oh	26.04	str:14:str:1:14,armor:1720:armor:0.007:12.04
+R	warrior/protection	45	14964	12733	oh	24.64	ap:28:ap:0.45:12.6,armor:1720:armor:0.007:12.04
+R	warrior/protection	45	14964	12734	oh	12.040000000000001	armor:1720:armor:0.007:12.04
+R	warrior/protection	45	14964	12735	oh	12.040000000000001	armor:1720:armor:0.007:12.04
+R	warrior/protection	45	14964	12736	oh	13.120000000000001	defense:9:defense:0.12:1.08,armor:1720:armor:0.007:12.04
+R	warrior/protection	45	14964	12740	oh	14.110000000000001	sta:9:sta:0.23:2.07,armor:1720:armor:0.007:12.04
+R	warrior/protection	45	14964	12741	oh	14.110000000000001	sta:9:sta:0.23:2.07,armor:1720:armor:0.007:12.04
+R	warrior/protection	45	14964	12742	oh	14.110000000000001	sta:9:sta:0.23:2.07,armor:1720:armor:0.007:12.04
+R	warrior/protection	45	14964	12743	oh	14.110000000000001	sta:9:sta:0.23:2.07,armor:1720:armor:0.007:12.04
+R	warrior/protection	45	14964	12744	oh	14.110000000000001	sta:9:sta:0.23:2.07,armor:1720:armor:0.007:12.04
+R	warrior/protection	45	14964	12745	oh	13.420000000000002	sta:6:sta:0.23:1.38,armor:1720:armor:0.007:12.04
+R	warrior/protection	45	14964	12746	oh	17.98	spi:6:spi:0.99:5.94,armor:1720:armor:0.007:12.04
+R	warrior/protection	45	14964	12747	oh	20.28	spi:6:spi:0.99:5.94,sta:10:sta:0.23:2.3,armor:1720:armor:0.007:12.04
+R	warrior/protection	45	14964	12748	oh	14.340000000000002	sta:10:sta:0.23:2.3,armor:1720:armor:0.007:12.04
+R	warrior/protection	45	14964	12749	oh	17.98	spi:6:spi:0.99:5.94,armor:1720:armor:0.007:12.04
+R	warrior/protection	45	14964	12750	oh	20.28	spi:6:spi:0.99:5.94,sta:10:sta:0.23:2.3,armor:1720:armor:0.007:12.04
+R	warrior/protection	45	14964	12753	oh	20.700000000000003	defense:3:defense:0.12:0.36,sta:10:sta:0.23:2.3,str:6:str:1:6,armor:1720:armor:0.007:12.04
+R	warrior/protection	45	14964	12754	oh	14.82	defense:4:defense:0.12:0.48,sta:10:sta:0.23:2.3,armor:1720:armor:0.007:12.04
+R	warrior/protection	45	14964	12759	oh	12.040000000000001	armor:1720:armor:0.007:12.04
+R	warrior/protection	45	14964	12760	oh	12.040000000000001	armor:1720:armor:0.007:12.04
+R	warrior/protection	45	15235	0	mh	83.34	dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12718	mh	84.49000000000001	sta:5:sta:0.23:1.15,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12719	mh	89.44	spi:5:spi:0.99:4.95,sta:5:sta:0.23:1.15,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12720	mh	88.29	spi:5:spi:0.99:4.95,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12721	mh	86.89	agi:5:agi:0.48:2.4,sta:5:sta:0.23:1.15,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12722	mh	89.49000000000001	sta:5:sta:0.23:1.15,str:5:str:1:5,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12723	mh	88.34	str:5:str:1:5,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12724	mh	85.74000000000001	agi:5:agi:0.48:2.4,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12725	mh	93.29	spi:5:spi:0.99:4.95,str:5:str:1:5,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12726	mh	90.69	agi:5:agi:0.48:2.4,spi:5:spi:0.99:4.95,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12727	mh	90.74000000000001	agi:5:agi:0.48:2.4,str:5:str:1:5,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12728	mh	87.18	agi:8:agi:0.48:3.84,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12729	mh	83.34	dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12730	mh	91.26	spi:8:spi:0.99:7.92,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12731	mh	85.18	sta:8:sta:0.23:1.84,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12732	mh	91.34	str:8:str:1:8,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12733	mh	90.54	ap:16:ap:0.45:7.2,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12736	mh	83.94	defense:5:defense:0.12:0.6,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12740	mh	84.49000000000001	sta:5:sta:0.23:1.15,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12741	mh	84.49000000000001	sta:5:sta:0.23:1.15,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12742	mh	84.49000000000001	sta:5:sta:0.23:1.15,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12743	mh	84.49000000000001	sta:5:sta:0.23:1.15,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12744	mh	84.49000000000001	sta:5:sta:0.23:1.15,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12751	mh	89.31	agi:3:agi:0.48:1.44,ap:7:ap:0.45:3.15,sta:6:sta:0.23:1.38,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12752	mh	89.16	agi:3:agi:0.48:1.44,sta:6:sta:0.23:1.38,str:3:str:1:3,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12753	mh	87.96000000000001	defense:2:defense:0.12:0.24,sta:6:sta:0.23:1.38,str:3:str:1:3,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12754	mh	84.96000000000001	defense:2:defense:0.12:0.24,sta:6:sta:0.23:1.38,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12759	mh	83.34	dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12906	mh	84.26	sta:4:sta:0.23:0.92,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12908	mh	87.3	spi:4:spi:0.99:3.96,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12910	mh	88.68	spi:4:spi:0.99:3.96,sta:6:sta:0.23:1.38,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12912	mh	84.72	sta:6:sta:0.23:1.38,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12913	mh	87.3	spi:4:spi:0.99:3.96,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12916	mh	88.68	spi:4:spi:0.99:3.96,sta:6:sta:0.23:1.38,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12917	mh	83.34	dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12920	mh	83.34	dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15477	0	gear	0.707	armor:101:armor:0.007:0.707
+R	warrior/protection	45	15477	12718	gear	0.9369999999999999	sta:1:sta:0.23:0.23,armor:101:armor:0.007:0.707
+R	warrior/protection	45	15477	12719	gear	1.927	spi:1:spi:0.99:0.99,sta:1:sta:0.23:0.23,armor:101:armor:0.007:0.707
+R	warrior/protection	45	15477	12720	gear	1.697	spi:1:spi:0.99:0.99,armor:101:armor:0.007:0.707
+R	warrior/protection	45	15477	12721	gear	1.4169999999999998	agi:1:agi:0.48:0.48,sta:1:sta:0.23:0.23,armor:101:armor:0.007:0.707
+R	warrior/protection	45	15477	12722	gear	1.9369999999999998	sta:1:sta:0.23:0.23,str:1:str:1:1,armor:101:armor:0.007:0.707
+R	warrior/protection	45	15477	12723	gear	1.7069999999999999	str:1:str:1:1,armor:101:armor:0.007:0.707
+R	warrior/protection	45	15477	12724	gear	1.1869999999999998	agi:1:agi:0.48:0.48,armor:101:armor:0.007:0.707
+R	warrior/protection	45	15477	12725	gear	2.697	spi:1:spi:0.99:0.99,str:1:str:1:1,armor:101:armor:0.007:0.707
+R	warrior/protection	45	15477	12726	gear	2.177	agi:1:agi:0.48:0.48,spi:1:spi:0.99:0.99,armor:101:armor:0.007:0.707
+R	warrior/protection	45	15477	12727	gear	2.187	agi:1:agi:0.48:0.48,str:1:str:1:1,armor:101:armor:0.007:0.707
+R	warrior/protection	45	15477	12728	gear	1.6669999999999998	agi:2:agi:0.48:0.96,armor:101:armor:0.007:0.707
+R	warrior/protection	45	15477	12729	gear	0.707	armor:101:armor:0.007:0.707
+R	warrior/protection	45	15477	12730	gear	2.687	spi:2:spi:0.99:1.98,armor:101:armor:0.007:0.707
+R	warrior/protection	45	15477	12731	gear	1.167	sta:2:sta:0.23:0.46,armor:101:armor:0.007:0.707
+R	warrior/protection	45	15477	12732	gear	2.707	str:2:str:1:2,armor:101:armor:0.007:0.707
+R	warrior/protection	45	15477	12733	gear	2.507	ap:4:ap:0.45:1.8,armor:101:armor:0.007:0.707
+R	warrior/protection	45	15477	12734	gear	0.707	armor:101:armor:0.007:0.707
+R	warrior/protection	45	15477	12735	gear	0.707	armor:101:armor:0.007:0.707
+R	warrior/protection	45	15477	12736	gear	0.827	defense:1:defense:0.12:0.12,armor:101:armor:0.007:0.707
+R	warrior/protection	45	15477	12740	gear	0.9369999999999999	sta:1:sta:0.23:0.23,armor:101:armor:0.007:0.707
+R	warrior/protection	45	15477	12741	gear	0.9369999999999999	sta:1:sta:0.23:0.23,armor:101:armor:0.007:0.707
+R	warrior/protection	45	15477	12742	gear	0.9369999999999999	sta:1:sta:0.23:0.23,armor:101:armor:0.007:0.707
+R	warrior/protection	45	15477	12743	gear	0.9369999999999999	sta:1:sta:0.23:0.23,armor:101:armor:0.007:0.707
+R	warrior/protection	45	15477	12744	gear	0.9369999999999999	sta:1:sta:0.23:0.23,armor:101:armor:0.007:0.707
+R	warrior/protection	45	15477	12759	gear	0.707	armor:101:armor:0.007:0.707
+R	warrior/protection	45	15691	0	ranged	4.4399999999999995	agi:3:agi:0.48:1.44,str:3:str:1:3
+R	warrior/protection	45	15945	0	oh	2.44	sta:2:sta:0.23:0.46,spi:2:spi:0.99:1.98
+R	warrior/protection	45	16711	0	gear	13.975	agi:21:agi:0.48:10.08,sta:9:sta:0.23:2.07,hit:0.3:hit:3.4:1.02,armor:115:armor:0.007:0.805
+R	warrior/protection	45	18312	0	gear	21.919	str:13:str:1:13,sta:20:sta:0.23:4.6,armor:617:armor:0.007:4.319
+R	warrior/protection	45	18726	0	gear	4.801	sta:15:sta:0.23:3.45,defense:7:defense:0.12:0.84,armor:73:armor:0.007:0.511
+R	warrior/protection	45	19557	0	mh	73.96000000000001	str:7:str:1:7,sta:3:sta:0.23:0.69,dps:21.3:dps:3:63.9,speed:0.3:speed:7.9:2.37
+R	warrior/protection	45	20129	0	gear	11.359	agi:6:agi:0.48:2.88,str:6:str:1:6,sta:6:sta:0.23:1.38,armor:157:armor:0.007:1.099
+R	warrior/protection	45	20437	0	ranged	1.65	agi:2:agi:0.48:0.96,sta:3:sta:0.23:0.69
+R	warrior/protection	45	22270	0	gear	16.439	str:11:str:1:11,defense:3:defense:0.12:0.36,sta:10:sta:0.23:2.3,armor:397:armor:0.007:2.779
+R	warrior/protection	45	22967	0	gear	8.501	sta:25:sta:0.23:5.75,armor:393:armor:0.007:2.751
+R	warrior/protection	45	226878	0	gear	29.311000000000003	str:18:str:1:18,sta:12:sta:0.23:2.76,crit:1:crit:5.8:5.8,armor:393:armor:0.007:2.751
+R	warrior/protection	45	250491	0	gear	2.208	sta:4:sta:0.23:0.92,armor:184:armor:0.007:1.288
+R	warrior/protection	45	252507	0	gear	2.8320000000000003	sta:10:sta:0.23:2.3,armor:76:armor:0.007:0.532
+R	warrior/protection	45	254111	0	gear	3.3680000000000003	sta:13:sta:0.23:2.99,armor:54:armor:0.007:0.378
+R	warrior/protection	45	270033	0	gear	5.193	agi:4:agi:0.48:1.92,str:3:str:1:3,armor:39:armor:0.007:0.273
+R	warrior/protection	45	271956	0	gear	23.704	agi:27:agi:0.48:12.96,sta:12:sta:0.23:2.76,crit:1:crit:5.8:5.8,armor:312:armor:0.007:2.184
+R	warrior/protection	45	272958	0	gear	4.944000000000001	sta:12:sta:0.23:2.76,armor:312:armor:0.007:2.184
+R	warrior/protection	45	274646	0	ranged	2.4	agi:5:agi:0.48:2.4
+R	warrior/protection	45	276399	0	gear	8.529	sta:18:sta:0.23:4.14,armor:627:armor:0.007:4.389
+R	warrior/protection	45	277235	0	gear	18.785	str:14:str:1:14,sta:10:sta:0.23:2.3,armor:355:armor:0.007:2.485
+R	warrior/protection	45	280082	0	mh	139.38	hit:1.5:hit:3.4:5.1,spi:21:spi:0.99:20.79,dps:36.25:dps:3:108.75,speed:0.6:speed:7.9:4.74
+R	warrior/protection	45	282560	0	gear	4.481	sta:13:sta:0.23:2.99,armor:213:armor:0.007:1.491
+R	warrior/protection	45	286609	0	oh	19.212	spi:6:spi:0.99:5.94,defense:7:defense:0.12:0.84,armor:1776:armor:0.007:12.432
+R	warrior/protection	55	25	0	mh	3.54	dps:1.05:dps:3:3.15,speed:-0.15:speed:-2.6:0.39
+R	warrior/protection	55	1315	0	gear	14.0	sta:10:sta:0.38:3.8,spi:15:spi:0.68:10.2
+R	warrior/protection	55	1808	0	gear	0.703	armor:74:armor:0.0095:0.703
+R	warrior/protection	55	2225	0	mh	16.43	dps:5:dps:3:15,speed:-0.55:speed:-2.6:1.43
+R	warrior/protection	55	2614	0	gear	0.27549999999999997	armor:29:armor:0.0095:0.275
+R	warrior/protection	55	3158	0	gear	0.247	armor:26:armor:0.0095:0.247
+R	warrior/protection	55	3570	0	mh	25.45	str:2:str:1:2,dps:8.12:dps:3:24.36,speed:0.35:speed:-2.6:-0.91
+R	warrior/protection	55	4023	0	mh	47.64	dps:15.36:dps:3:46.08,speed:-0.6:speed:-2.6:1.56
+R	warrior/protection	55	4068	0	oh	12.5685	sta:9:sta:0.38:3.42,armor:963:armor:0.0095:9.149
+R	warrior/protection	55	4570	0	mh	28.44	dps:10:dps:3:30,speed:0.6:speed:-2.6:-1.56
+R	warrior/protection	55	4570	12718	mh	29.580000000000002	sta:3:sta:0.38:1.14,dps:10:dps:3:30,speed:0.6:speed:-2.6:-1.56
+R	warrior/protection	55	4570	12719	mh	31.62	spi:3:spi:0.68:2.04,sta:3:sta:0.38:1.14,dps:10:dps:3:30,speed:0.6:speed:-2.6:-1.56
+R	warrior/protection	55	4570	12720	mh	30.48	spi:3:spi:0.68:2.04,dps:10:dps:3:30,speed:0.6:speed:-2.6:-1.56
+R	warrior/protection	55	4570	12721	mh	31.05	agi:3:agi:0.49:1.47,sta:3:sta:0.38:1.14,dps:10:dps:3:30,speed:0.6:speed:-2.6:-1.56
+R	warrior/protection	55	4570	12722	mh	32.58	sta:3:sta:0.38:1.14,str:3:str:1:3,dps:10:dps:3:30,speed:0.6:speed:-2.6:-1.56
+R	warrior/protection	55	4570	12723	mh	31.44	str:3:str:1:3,dps:10:dps:3:30,speed:0.6:speed:-2.6:-1.56
+R	warrior/protection	55	4570	12724	mh	29.91	agi:3:agi:0.49:1.47,dps:10:dps:3:30,speed:0.6:speed:-2.6:-1.56
+R	warrior/protection	55	4570	12725	mh	33.48	spi:3:spi:0.68:2.04,str:3:str:1:3,dps:10:dps:3:30,speed:0.6:speed:-2.6:-1.56
+R	warrior/protection	55	4570	12726	mh	31.95	agi:3:agi:0.49:1.47,spi:3:spi:0.68:2.04,dps:10:dps:3:30,speed:0.6:speed:-2.6:-1.56
+R	warrior/protection	55	4570	12727	mh	32.91	agi:3:agi:0.49:1.47,str:3:str:1:3,dps:10:dps:3:30,speed:0.6:speed:-2.6:-1.56
+R	warrior/protection	55	4570	12728	mh	30.400000000000002	agi:4:agi:0.49:1.96,dps:10:dps:3:30,speed:0.6:speed:-2.6:-1.56
+R	warrior/protection	55	4570	12729	mh	28.44	dps:10:dps:3:30,speed:0.6:speed:-2.6:-1.56
+R	warrior/protection	55	4570	12730	mh	31.16	spi:4:spi:0.68:2.72,dps:10:dps:3:30,speed:0.6:speed:-2.6:-1.56
+R	warrior/protection	55	4570	12731	mh	29.96	sta:4:sta:0.38:1.52,dps:10:dps:3:30,speed:0.6:speed:-2.6:-1.56
+R	warrior/protection	55	4570	12732	mh	32.44	str:4:str:1:4,dps:10:dps:3:30,speed:0.6:speed:-2.6:-1.56
+R	warrior/protection	55	4570	12733	mh	31.960000000000004	ap:8:ap:0.44:3.52,dps:10:dps:3:30,speed:0.6:speed:-2.6:-1.56
+R	warrior/protection	55	4570	12736	mh	28.860000000000003	defense:3:defense:0.14:0.42,dps:10:dps:3:30,speed:0.6:speed:-2.6:-1.56
+R	warrior/protection	55	4570	12740	mh	29.580000000000002	sta:3:sta:0.38:1.14,dps:10:dps:3:30,speed:0.6:speed:-2.6:-1.56
+R	warrior/protection	55	4570	12741	mh	29.580000000000002	sta:3:sta:0.38:1.14,dps:10:dps:3:30,speed:0.6:speed:-2.6:-1.56
+R	warrior/protection	55	4570	12742	mh	29.580000000000002	sta:3:sta:0.38:1.14,dps:10:dps:3:30,speed:0.6:speed:-2.6:-1.56
+R	warrior/protection	55	4570	12743	mh	29.580000000000002	sta:3:sta:0.38:1.14,dps:10:dps:3:30,speed:0.6:speed:-2.6:-1.56
+R	warrior/protection	55	4570	12744	mh	29.580000000000002	sta:3:sta:0.38:1.14,dps:10:dps:3:30,speed:0.6:speed:-2.6:-1.56
+R	warrior/protection	55	4570	12759	mh	28.44	dps:10:dps:3:30,speed:0.6:speed:-2.6:-1.56
+R	warrior/protection	55	4570	12918	mh	28.44	dps:10:dps:3:30,speed:0.6:speed:-2.6:-1.56
+R	warrior/protection	55	4570	12919	mh	28.44	dps:10:dps:3:30,speed:0.6:speed:-2.6:-1.56
+R	warrior/protection	55	5079	0	gear	0.0	
+R	warrior/protection	55	6063	0	gear	0.5225	armor:55:armor:0.0095:0.522
+R	warrior/protection	55	6540	0	gear	0.266	armor:28:armor:0.0095:0.266
+R	warrior/protection	55	6540	12718	gear	1.4060000000000001	sta:3:sta:0.38:1.14,armor:28:armor:0.0095:0.266
+R	warrior/protection	55	6540	12719	gear	3.446	spi:3:spi:0.68:2.04,sta:3:sta:0.38:1.14,armor:28:armor:0.0095:0.266
+R	warrior/protection	55	6540	12720	gear	2.306	spi:3:spi:0.68:2.04,armor:28:armor:0.0095:0.266
+R	warrior/protection	55	6540	12729	gear	0.266	armor:28:armor:0.0095:0.266
+R	warrior/protection	55	6540	12730	gear	3.6660000000000004	spi:5:spi:0.68:3.4,armor:28:armor:0.0095:0.266
+R	warrior/protection	55	6540	12731	gear	2.166	sta:5:sta:0.38:1.9,armor:28:armor:0.0095:0.266
+R	warrior/protection	55	6540	12734	gear	0.266	armor:28:armor:0.0095:0.266
+R	warrior/protection	55	6540	12735	gear	0.266	armor:28:armor:0.0095:0.266
+R	warrior/protection	55	6540	12740	gear	1.4060000000000001	sta:3:sta:0.38:1.14,armor:28:armor:0.0095:0.266
+R	warrior/protection	55	6540	12741	gear	1.4060000000000001	sta:3:sta:0.38:1.14,armor:28:armor:0.0095:0.266
+R	warrior/protection	55	6540	12742	gear	1.4060000000000001	sta:3:sta:0.38:1.14,armor:28:armor:0.0095:0.266
+R	warrior/protection	55	6540	12743	gear	1.4060000000000001	sta:3:sta:0.38:1.14,armor:28:armor:0.0095:0.266
+R	warrior/protection	55	6540	12744	gear	1.4060000000000001	sta:3:sta:0.38:1.14,armor:28:armor:0.0095:0.266
+R	warrior/protection	55	6540	12745	gear	1.026	sta:2:sta:0.38:0.76,armor:28:armor:0.0095:0.266
+R	warrior/protection	55	6540	12756	gear	0.266	armor:28:armor:0.0095:0.266
+R	warrior/protection	55	6540	12757	gear	0.266	armor:28:armor:0.0095:0.266
+R	warrior/protection	55	6540	12758	gear	0.266	armor:28:armor:0.0095:0.266
+R	warrior/protection	55	6540	12759	gear	0.266	armor:28:armor:0.0095:0.266
+R	warrior/protection	55	6540	12761	gear	0.266	armor:28:armor:0.0095:0.266
+R	warrior/protection	55	6557	0	gear	0.46549999999999997	armor:49:armor:0.0095:0.465
+R	warrior/protection	55	6557	12718	gear	1.2255	sta:2:sta:0.38:0.76,armor:49:armor:0.0095:0.465
+R	warrior/protection	55	6557	12719	gear	2.5855	spi:2:spi:0.68:1.36,sta:2:sta:0.38:0.76,armor:49:armor:0.0095:0.465
+R	warrior/protection	55	6557	12720	gear	1.8255000000000001	spi:2:spi:0.68:1.36,armor:49:armor:0.0095:0.465
+R	warrior/protection	55	6557	12721	gear	2.2055	agi:2:agi:0.49:0.98,sta:2:sta:0.38:0.76,armor:49:armor:0.0095:0.465
+R	warrior/protection	55	6557	12722	gear	3.2255	sta:2:sta:0.38:0.76,str:2:str:1:2,armor:49:armor:0.0095:0.465
+R	warrior/protection	55	6557	12723	gear	2.4655	str:2:str:1:2,armor:49:armor:0.0095:0.465
+R	warrior/protection	55	6557	12724	gear	1.4455	agi:2:agi:0.49:0.98,armor:49:armor:0.0095:0.465
+R	warrior/protection	55	6557	12725	gear	3.8255000000000003	spi:2:spi:0.68:1.36,str:2:str:1:2,armor:49:armor:0.0095:0.465
+R	warrior/protection	55	6557	12726	gear	2.8055	agi:2:agi:0.49:0.98,spi:2:spi:0.68:1.36,armor:49:armor:0.0095:0.465
+R	warrior/protection	55	6557	12727	gear	3.4455	agi:2:agi:0.49:0.98,str:2:str:1:2,armor:49:armor:0.0095:0.465
+R	warrior/protection	55	6557	12728	gear	1.9355	agi:3:agi:0.49:1.47,armor:49:armor:0.0095:0.465
+R	warrior/protection	55	6557	12729	gear	0.46549999999999997	armor:49:armor:0.0095:0.465
+R	warrior/protection	55	6557	12730	gear	2.5055	spi:3:spi:0.68:2.04,armor:49:armor:0.0095:0.465
+R	warrior/protection	55	6557	12731	gear	1.6055000000000001	sta:3:sta:0.38:1.14,armor:49:armor:0.0095:0.465
+R	warrior/protection	55	6557	12732	gear	3.4655	str:3:str:1:3,armor:49:armor:0.0095:0.465
+R	warrior/protection	55	6557	12733	gear	3.1055	ap:6:ap:0.44:2.64,armor:49:armor:0.0095:0.465
+R	warrior/protection	55	6557	12734	gear	0.46549999999999997	armor:49:armor:0.0095:0.465
+R	warrior/protection	55	6557	12735	gear	0.46549999999999997	armor:49:armor:0.0095:0.465
+R	warrior/protection	55	6557	12736	gear	0.7455	defense:2:defense:0.14:0.28,armor:49:armor:0.0095:0.465
+R	warrior/protection	55	6557	12740	gear	1.2255	sta:2:sta:0.38:0.76,armor:49:armor:0.0095:0.465
+R	warrior/protection	55	6557	12741	gear	1.2255	sta:2:sta:0.38:0.76,armor:49:armor:0.0095:0.465
+R	warrior/protection	55	6557	12742	gear	1.2255	sta:2:sta:0.38:0.76,armor:49:armor:0.0095:0.465
+R	warrior/protection	55	6557	12743	gear	1.2255	sta:2:sta:0.38:0.76,armor:49:armor:0.0095:0.465
+R	warrior/protection	55	6557	12744	gear	1.2255	sta:2:sta:0.38:0.76,armor:49:armor:0.0095:0.465
+R	warrior/protection	55	6557	12756	gear	0.46549999999999997	armor:49:armor:0.0095:0.465
+R	warrior/protection	55	6557	12760	gear	0.46549999999999997	armor:49:armor:0.0095:0.465
+R	warrior/protection	55	7047	0	gear	3.6470000000000002	spi:5:spi:0.68:3.4,armor:26:armor:0.0095:0.247
+R	warrior/protection	55	7538	0	gear	2.4985	armor:263:armor:0.0095:2.498
+R	warrior/protection	55	7538	12718	gear	7.4385	sta:13:sta:0.38:4.94,armor:263:armor:0.0095:2.498
+R	warrior/protection	55	7538	12719	gear	16.2785	spi:13:spi:0.68:8.84,sta:13:sta:0.38:4.94,armor:263:armor:0.0095:2.498
+R	warrior/protection	55	7538	12720	gear	11.3385	spi:13:spi:0.68:8.84,armor:263:armor:0.0095:2.498
+R	warrior/protection	55	7538	12721	gear	13.8085	agi:13:agi:0.49:6.37,sta:13:sta:0.38:4.94,armor:263:armor:0.0095:2.498
+R	warrior/protection	55	7538	12722	gear	20.4385	sta:13:sta:0.38:4.94,str:13:str:1:13,armor:263:armor:0.0095:2.498
+R	warrior/protection	55	7538	12723	gear	15.4985	str:13:str:1:13,armor:263:armor:0.0095:2.498
+R	warrior/protection	55	7538	12724	gear	8.868500000000001	agi:13:agi:0.49:6.37,armor:263:armor:0.0095:2.498
+R	warrior/protection	55	7538	12725	gear	24.3385	spi:13:spi:0.68:8.84,str:13:str:1:13,armor:263:armor:0.0095:2.498
+R	warrior/protection	55	7538	12726	gear	17.7085	agi:13:agi:0.49:6.37,spi:13:spi:0.68:8.84,armor:263:armor:0.0095:2.498
+R	warrior/protection	55	7538	12727	gear	21.8685	agi:13:agi:0.49:6.37,str:13:str:1:13,armor:263:armor:0.0095:2.498
+R	warrior/protection	55	7538	12728	gear	12.2985	agi:20:agi:0.49:9.8,armor:263:armor:0.0095:2.498
+R	warrior/protection	55	7538	12729	gear	2.4985	armor:263:armor:0.0095:2.498
+R	warrior/protection	55	7538	12730	gear	16.0985	spi:20:spi:0.68:13.6,armor:263:armor:0.0095:2.498
+R	warrior/protection	55	7538	12731	gear	10.0985	sta:20:sta:0.38:7.6,armor:263:armor:0.0095:2.498
+R	warrior/protection	55	7538	12732	gear	22.4985	str:20:str:1:20,armor:263:armor:0.0095:2.498
+R	warrior/protection	55	7538	12733	gear	20.0985	ap:40:ap:0.44:17.6,armor:263:armor:0.0095:2.498
+R	warrior/protection	55	7538	12734	gear	2.4985	armor:263:armor:0.0095:2.498
+R	warrior/protection	55	7538	12735	gear	2.4985	armor:263:armor:0.0095:2.498
+R	warrior/protection	55	7538	12740	gear	7.4385	sta:13:sta:0.38:4.94,armor:263:armor:0.0095:2.498
+R	warrior/protection	55	7538	12741	gear	7.4385	sta:13:sta:0.38:4.94,armor:263:armor:0.0095:2.498
+R	warrior/protection	55	7538	12742	gear	7.4385	sta:13:sta:0.38:4.94,armor:263:armor:0.0095:2.498
+R	warrior/protection	55	7538	12743	gear	7.4385	sta:13:sta:0.38:4.94,armor:263:armor:0.0095:2.498
+R	warrior/protection	55	7538	12744	gear	7.4385	sta:13:sta:0.38:4.94,armor:263:armor:0.0095:2.498
+R	warrior/protection	55	7538	12745	gear	5.5385	sta:8:sta:0.38:3.04,armor:263:armor:0.0095:2.498
+R	warrior/protection	55	7538	12746	gear	7.9385	spi:8:spi:0.68:5.44,armor:263:armor:0.0095:2.498
+R	warrior/protection	55	7538	12747	gear	13.6385	spi:8:spi:0.68:5.44,sta:15:sta:0.38:5.7,armor:263:armor:0.0095:2.498
+R	warrior/protection	55	7538	12748	gear	8.1985	sta:15:sta:0.38:5.7,armor:263:armor:0.0095:2.498
+R	warrior/protection	55	7538	12749	gear	7.9385	spi:8:spi:0.68:5.44,armor:263:armor:0.0095:2.498
+R	warrior/protection	55	7538	12750	gear	13.6385	spi:8:spi:0.68:5.44,sta:15:sta:0.38:5.7,armor:263:armor:0.0095:2.498
+R	warrior/protection	55	7538	12751	gear	18.1785	agi:6:agi:0.49:2.94,ap:16:ap:0.44:7.04,sta:15:sta:0.38:5.7,armor:263:armor:0.0095:2.498
+R	warrior/protection	55	7538	12752	gear	18.1185	agi:8:agi:0.49:3.92,sta:15:sta:0.38:5.7,str:6:str:1:6,armor:263:armor:0.0095:2.498
+R	warrior/protection	55	7538	12755	gear	16.1985	sta:15:sta:0.38:5.7,str:8:str:1:8,armor:263:armor:0.0095:2.498
+R	warrior/protection	55	7538	12760	gear	2.4985	armor:263:armor:0.0095:2.498
+R	warrior/protection	55	7922	0	gear	19.505000000000003	str:12:str:1:12,sta:12:sta:0.38:4.56,armor:310:armor:0.0095:2.945
+R	warrior/protection	55	8192	0	gear	8.107	agi:11:agi:0.49:5.39,sta:5:sta:0.38:1.9,armor:86:armor:0.0095:0.817
+R	warrior/protection	55	9458	0	oh	9.411999999999999	spi:3:spi:0.68:2.04,armor:776:armor:0.0095:7.372
+R	warrior/protection	55	9834	0	gear	0.6935	armor:73:armor:0.0095:0.694
+R	warrior/protection	55	9834	12718	gear	2.9735000000000005	sta:6:sta:0.38:2.28,armor:73:armor:0.0095:0.694
+R	warrior/protection	55	9834	12719	gear	7.0535000000000005	spi:6:spi:0.68:4.08,sta:6:sta:0.38:2.28,armor:73:armor:0.0095:0.694
+R	warrior/protection	55	9834	12720	gear	4.7735	spi:6:spi:0.68:4.08,armor:73:armor:0.0095:0.694
+R	warrior/protection	55	9834	12721	gear	5.913500000000001	agi:6:agi:0.49:2.94,sta:6:sta:0.38:2.28,armor:73:armor:0.0095:0.694
+R	warrior/protection	55	9834	12722	gear	8.973500000000001	sta:6:sta:0.38:2.28,str:6:str:1:6,armor:73:armor:0.0095:0.694
+R	warrior/protection	55	9834	12723	gear	6.6935	str:6:str:1:6,armor:73:armor:0.0095:0.694
+R	warrior/protection	55	9834	12724	gear	3.6334999999999997	agi:6:agi:0.49:2.94,armor:73:armor:0.0095:0.694
+R	warrior/protection	55	9834	12725	gear	10.7735	spi:6:spi:0.68:4.08,str:6:str:1:6,armor:73:armor:0.0095:0.694
+R	warrior/protection	55	9834	12726	gear	7.7135	agi:6:agi:0.49:2.94,spi:6:spi:0.68:4.08,armor:73:armor:0.0095:0.694
+R	warrior/protection	55	9834	12727	gear	9.6335	agi:6:agi:0.49:2.94,str:6:str:1:6,armor:73:armor:0.0095:0.694
+R	warrior/protection	55	9834	12728	gear	5.1035	agi:9:agi:0.49:4.41,armor:73:armor:0.0095:0.694
+R	warrior/protection	55	9834	12729	gear	0.6935	armor:73:armor:0.0095:0.694
+R	warrior/protection	55	9834	12730	gear	6.8135	spi:9:spi:0.68:6.12,armor:73:armor:0.0095:0.694
+R	warrior/protection	55	9834	12731	gear	4.1135	sta:9:sta:0.38:3.42,armor:73:armor:0.0095:0.694
+R	warrior/protection	55	9834	12732	gear	9.6935	str:9:str:1:9,armor:73:armor:0.0095:0.694
+R	warrior/protection	55	9834	12733	gear	8.6135	ap:18:ap:0.44:7.92,armor:73:armor:0.0095:0.694
+R	warrior/protection	55	9834	12734	gear	0.6935	armor:73:armor:0.0095:0.694
+R	warrior/protection	55	9834	12735	gear	0.6935	armor:73:armor:0.0095:0.694
+R	warrior/protection	55	9834	12736	gear	1.5335	defense:6:defense:0.14:0.84,armor:73:armor:0.0095:0.694
+R	warrior/protection	55	9834	12740	gear	2.9735000000000005	sta:6:sta:0.38:2.28,armor:73:armor:0.0095:0.694
+R	warrior/protection	55	9834	12741	gear	2.9735000000000005	sta:6:sta:0.38:2.28,armor:73:armor:0.0095:0.694
+R	warrior/protection	55	9834	12742	gear	2.9735000000000005	sta:6:sta:0.38:2.28,armor:73:armor:0.0095:0.694
+R	warrior/protection	55	9834	12743	gear	2.9735000000000005	sta:6:sta:0.38:2.28,armor:73:armor:0.0095:0.694
+R	warrior/protection	55	9834	12744	gear	2.9735000000000005	sta:6:sta:0.38:2.28,armor:73:armor:0.0095:0.694
+R	warrior/protection	55	9834	12745	gear	2.2135	sta:4:sta:0.38:1.52,armor:73:armor:0.0095:0.694
+R	warrior/protection	55	9834	12746	gear	3.4135	spi:4:spi:0.68:2.72,armor:73:armor:0.0095:0.694
+R	warrior/protection	55	9834	12747	gear	6.073500000000001	spi:4:spi:0.68:2.72,sta:7:sta:0.38:2.66,armor:73:armor:0.0095:0.694
+R	warrior/protection	55	9834	12748	gear	3.3535000000000004	sta:7:sta:0.38:2.66,armor:73:armor:0.0095:0.694
+R	warrior/protection	55	9834	12749	gear	3.4135	spi:4:spi:0.68:2.72,armor:73:armor:0.0095:0.694
+R	warrior/protection	55	9834	12750	gear	6.073500000000001	spi:4:spi:0.68:2.72,sta:7:sta:0.38:2.66,armor:73:armor:0.0095:0.694
+R	warrior/protection	55	9834	12751	gear	7.9035	agi:3:agi:0.49:1.47,ap:7:ap:0.44:3.08,sta:7:sta:0.38:2.66,armor:73:armor:0.0095:0.694
+R	warrior/protection	55	9834	12752	gear	8.3135	agi:4:agi:0.49:1.96,sta:7:sta:0.38:2.66,str:3:str:1:3,armor:73:armor:0.0095:0.694
+R	warrior/protection	55	9834	12753	gear	7.633500000000001	defense:2:defense:0.14:0.28,sta:7:sta:0.38:2.66,str:4:str:1:4,armor:73:armor:0.0095:0.694
+R	warrior/protection	55	9834	12755	gear	7.3535	sta:7:sta:0.38:2.66,str:4:str:1:4,armor:73:armor:0.0095:0.694
+R	warrior/protection	55	9834	12756	gear	0.6935	armor:73:armor:0.0095:0.694
+R	warrior/protection	55	9834	12760	gear	0.6935	armor:73:armor:0.0095:0.694
+R	warrior/protection	55	10087	0	gear	2.641	armor:278:armor:0.0095:2.641
+R	warrior/protection	55	10087	12718	gear	6.061	sta:9:sta:0.38:3.42,armor:278:armor:0.0095:2.641
+R	warrior/protection	55	10087	12719	gear	12.181	spi:9:spi:0.68:6.12,sta:9:sta:0.38:3.42,armor:278:armor:0.0095:2.641
+R	warrior/protection	55	10087	12720	gear	8.761	spi:9:spi:0.68:6.12,armor:278:armor:0.0095:2.641
+R	warrior/protection	55	10087	12721	gear	10.471	agi:9:agi:0.49:4.41,sta:9:sta:0.38:3.42,armor:278:armor:0.0095:2.641
+R	warrior/protection	55	10087	12722	gear	15.061	sta:9:sta:0.38:3.42,str:9:str:1:9,armor:278:armor:0.0095:2.641
+R	warrior/protection	55	10087	12723	gear	11.641	str:9:str:1:9,armor:278:armor:0.0095:2.641
+R	warrior/protection	55	10087	12724	gear	7.051	agi:9:agi:0.49:4.41,armor:278:armor:0.0095:2.641
+R	warrior/protection	55	10087	12725	gear	17.761000000000003	spi:9:spi:0.68:6.12,str:9:str:1:9,armor:278:armor:0.0095:2.641
+R	warrior/protection	55	10087	12726	gear	13.171000000000001	agi:9:agi:0.49:4.41,spi:9:spi:0.68:6.12,armor:278:armor:0.0095:2.641
+R	warrior/protection	55	10087	12727	gear	16.051000000000002	agi:9:agi:0.49:4.41,str:9:str:1:9,armor:278:armor:0.0095:2.641
+R	warrior/protection	55	10087	12728	gear	9.501	agi:14:agi:0.49:6.86,armor:278:armor:0.0095:2.641
+R	warrior/protection	55	10087	12729	gear	2.641	armor:278:armor:0.0095:2.641
+R	warrior/protection	55	10087	12730	gear	12.161000000000001	spi:14:spi:0.68:9.52,armor:278:armor:0.0095:2.641
+R	warrior/protection	55	10087	12731	gear	7.961	sta:14:sta:0.38:5.32,armor:278:armor:0.0095:2.641
+R	warrior/protection	55	10087	12732	gear	16.641	str:14:str:1:14,armor:278:armor:0.0095:2.641
+R	warrior/protection	55	10087	12733	gear	14.961	ap:28:ap:0.44:12.32,armor:278:armor:0.0095:2.641
+R	warrior/protection	55	10087	12734	gear	2.641	armor:278:armor:0.0095:2.641
+R	warrior/protection	55	10087	12735	gear	2.641	armor:278:armor:0.0095:2.641
+R	warrior/protection	55	10087	12736	gear	3.9010000000000002	defense:9:defense:0.14:1.26,armor:278:armor:0.0095:2.641
+R	warrior/protection	55	10087	12740	gear	6.061	sta:9:sta:0.38:3.42,armor:278:armor:0.0095:2.641
+R	warrior/protection	55	10087	12741	gear	6.061	sta:9:sta:0.38:3.42,armor:278:armor:0.0095:2.641
+R	warrior/protection	55	10087	12742	gear	6.061	sta:9:sta:0.38:3.42,armor:278:armor:0.0095:2.641
+R	warrior/protection	55	10087	12743	gear	6.061	sta:9:sta:0.38:3.42,armor:278:armor:0.0095:2.641
+R	warrior/protection	55	10087	12744	gear	6.061	sta:9:sta:0.38:3.42,armor:278:armor:0.0095:2.641
+R	warrior/protection	55	10087	12748	gear	6.441	sta:10:sta:0.38:3.8,armor:278:armor:0.0095:2.641
+R	warrior/protection	55	10087	12749	gear	6.721	spi:6:spi:0.68:4.08,armor:278:armor:0.0095:2.641
+R	warrior/protection	55	10087	12750	gear	10.521	spi:6:spi:0.68:4.08,sta:10:sta:0.38:3.8,armor:278:armor:0.0095:2.641
+R	warrior/protection	55	10087	12752	gear	13.381	agi:6:agi:0.49:2.94,sta:10:sta:0.38:3.8,str:4:str:1:4,armor:278:armor:0.0095:2.641
+R	warrior/protection	55	10087	12753	gear	12.860999999999999	defense:3:defense:0.14:0.42,sta:10:sta:0.38:3.8,str:6:str:1:6,armor:278:armor:0.0095:2.641
+R	warrior/protection	55	10087	12754	gear	7.0009999999999994	defense:4:defense:0.14:0.56,sta:10:sta:0.38:3.8,armor:278:armor:0.0095:2.641
+R	warrior/protection	55	10087	12755	gear	12.441	sta:10:sta:0.38:3.8,str:6:str:1:6,armor:278:armor:0.0095:2.641
+R	warrior/protection	55	10087	12759	gear	2.641	armor:278:armor:0.0095:2.641
+R	warrior/protection	55	10368	0	gear	35.426	str:15:str:1:15,sta:14:sta:0.38:5.32,spi:14:spi:0.68:9.52,armor:588:armor:0.0095:5.586
+R	warrior/protection	55	11187	0	gear	0.038	armor:4:armor:0.0095:0.038
+R	warrior/protection	55	11994	0	gear	0.0	
+R	warrior/protection	55	11994	12718	gear	1.1400000000000001	sta:3:sta:0.38:1.14
+R	warrior/protection	55	11994	12719	gear	3.18	spi:3:spi:0.68:2.04,sta:3:sta:0.38:1.14
+R	warrior/protection	55	11994	12720	gear	2.04	spi:3:spi:0.68:2.04
+R	warrior/protection	55	11994	12721	gear	2.6100000000000003	agi:3:agi:0.49:1.47,sta:3:sta:0.38:1.14
+R	warrior/protection	55	11994	12722	gear	4.140000000000001	sta:3:sta:0.38:1.14,str:3:str:1:3
+R	warrior/protection	55	11994	12723	gear	3.0	str:3:str:1:3
+R	warrior/protection	55	11994	12724	gear	1.47	agi:3:agi:0.49:1.47
+R	warrior/protection	55	11994	12725	gear	5.04	spi:3:spi:0.68:2.04,str:3:str:1:3
+R	warrior/protection	55	11994	12726	gear	3.51	agi:3:agi:0.49:1.47,spi:3:spi:0.68:2.04
+R	warrior/protection	55	11994	12727	gear	4.47	agi:3:agi:0.49:1.47,str:3:str:1:3
+R	warrior/protection	55	11994	12728	gear	2.45	agi:5:agi:0.49:2.45
+R	warrior/protection	55	11994	12729	gear	0.0	
+R	warrior/protection	55	11994	12730	gear	3.4000000000000004	spi:5:spi:0.68:3.4
+R	warrior/protection	55	11994	12731	gear	1.9	sta:5:sta:0.38:1.9
+R	warrior/protection	55	11994	12732	gear	5.0	str:5:str:1:5
+R	warrior/protection	55	11994	12733	gear	4.4	ap:10:ap:0.44:4.4
+R	warrior/protection	55	11994	12737	gear	0.0	
+R	warrior/protection	55	11994	12738	gear	0.0	
+R	warrior/protection	55	11994	12739	gear	0.98	agi:2:agi:0.49:0.98
+R	warrior/protection	55	11994	12740	gear	1.1400000000000001	sta:3:sta:0.38:1.14
+R	warrior/protection	55	11994	12741	gear	1.1400000000000001	sta:3:sta:0.38:1.14
+R	warrior/protection	55	11994	12742	gear	1.1400000000000001	sta:3:sta:0.38:1.14
+R	warrior/protection	55	11994	12743	gear	1.1400000000000001	sta:3:sta:0.38:1.14
+R	warrior/protection	55	11994	12744	gear	1.1400000000000001	sta:3:sta:0.38:1.14
+R	warrior/protection	55	12790	0	mh	159.9	dps:53.82:dps:3:161.46,speed:0.6:speed:-2.6:-1.56
+R	warrior/protection	55	13183	0	mh	118.8	dps:39.47:dps:3:118.41,speed:-0.15:speed:-2.6:0.39
+R	warrior/protection	55	14122	0	gear	0.133	armor:14:armor:0.0095:0.133
+R	warrior/protection	55	14122	12718	gear	0.893	sta:2:sta:0.38:0.76,armor:14:armor:0.0095:0.133
+R	warrior/protection	55	14122	12719	gear	2.253	spi:2:spi:0.68:1.36,sta:2:sta:0.38:0.76,armor:14:armor:0.0095:0.133
+R	warrior/protection	55	14122	12720	gear	1.493	spi:2:spi:0.68:1.36,armor:14:armor:0.0095:0.133
+R	warrior/protection	55	14122	12729	gear	0.133	armor:14:armor:0.0095:0.133
+R	warrior/protection	55	14122	12730	gear	2.173	spi:3:spi:0.68:2.04,armor:14:armor:0.0095:0.133
+R	warrior/protection	55	14122	12731	gear	1.2730000000000001	sta:3:sta:0.38:1.14,armor:14:armor:0.0095:0.133
+R	warrior/protection	55	14122	12734	gear	0.133	armor:14:armor:0.0095:0.133
+R	warrior/protection	55	14122	12735	gear	0.133	armor:14:armor:0.0095:0.133
+R	warrior/protection	55	14122	12740	gear	0.893	sta:2:sta:0.38:0.76,armor:14:armor:0.0095:0.133
+R	warrior/protection	55	14122	12741	gear	0.893	sta:2:sta:0.38:0.76,armor:14:armor:0.0095:0.133
+R	warrior/protection	55	14122	12742	gear	0.893	sta:2:sta:0.38:0.76,armor:14:armor:0.0095:0.133
+R	warrior/protection	55	14122	12743	gear	0.893	sta:2:sta:0.38:0.76,armor:14:armor:0.0095:0.133
+R	warrior/protection	55	14122	12744	gear	0.893	sta:2:sta:0.38:0.76,armor:14:armor:0.0095:0.133
+R	warrior/protection	55	14122	12745	gear	0.513	sta:1:sta:0.38:0.38,armor:14:armor:0.0095:0.133
+R	warrior/protection	55	14122	12756	gear	0.133	armor:14:armor:0.0095:0.133
+R	warrior/protection	55	14122	12757	gear	0.133	armor:14:armor:0.0095:0.133
+R	warrior/protection	55	14122	12758	gear	0.133	armor:14:armor:0.0095:0.133
+R	warrior/protection	55	14122	12759	gear	0.133	armor:14:armor:0.0095:0.133
+R	warrior/protection	55	14122	12761	gear	0.133	armor:14:armor:0.0095:0.133
+R	warrior/protection	55	14340	0	gear	8.056	sta:19:sta:0.38:7.22,armor:88:armor:0.0095:0.836
+R	warrior/protection	55	14673	0	gear	9.633000000000001	str:3:str:1:3,agi:9:agi:0.49:4.41,sta:5:sta:0.38:1.9,armor:34:armor:0.0095:0.323
+R	warrior/protection	55	14964	0	oh	16.34	armor:1720:armor:0.0095:16.34
+R	warrior/protection	55	14964	12718	oh	19.759999999999998	sta:9:sta:0.38:3.42,armor:1720:armor:0.0095:16.34
+R	warrior/protection	55	14964	12719	oh	25.88	spi:9:spi:0.68:6.12,sta:9:sta:0.38:3.42,armor:1720:armor:0.0095:16.34
+R	warrior/protection	55	14964	12720	oh	22.46	spi:9:spi:0.68:6.12,armor:1720:armor:0.0095:16.34
+R	warrior/protection	55	14964	12721	oh	24.17	agi:9:agi:0.49:4.41,sta:9:sta:0.38:3.42,armor:1720:armor:0.0095:16.34
+R	warrior/protection	55	14964	12722	oh	28.759999999999998	sta:9:sta:0.38:3.42,str:9:str:1:9,armor:1720:armor:0.0095:16.34
+R	warrior/protection	55	14964	12723	oh	25.34	str:9:str:1:9,armor:1720:armor:0.0095:16.34
+R	warrior/protection	55	14964	12724	oh	20.75	agi:9:agi:0.49:4.41,armor:1720:armor:0.0095:16.34
+R	warrior/protection	55	14964	12725	oh	31.46	spi:9:spi:0.68:6.12,str:9:str:1:9,armor:1720:armor:0.0095:16.34
+R	warrior/protection	55	14964	12726	oh	26.87	agi:9:agi:0.49:4.41,spi:9:spi:0.68:6.12,armor:1720:armor:0.0095:16.34
+R	warrior/protection	55	14964	12727	oh	29.75	agi:9:agi:0.49:4.41,str:9:str:1:9,armor:1720:armor:0.0095:16.34
+R	warrior/protection	55	14964	12728	oh	23.2	agi:14:agi:0.49:6.86,armor:1720:armor:0.0095:16.34
+R	warrior/protection	55	14964	12729	oh	16.34	armor:1720:armor:0.0095:16.34
+R	warrior/protection	55	14964	12730	oh	25.86	spi:14:spi:0.68:9.52,armor:1720:armor:0.0095:16.34
+R	warrior/protection	55	14964	12731	oh	21.66	sta:14:sta:0.38:5.32,armor:1720:armor:0.0095:16.34
+R	warrior/protection	55	14964	12732	oh	30.34	str:14:str:1:14,armor:1720:armor:0.0095:16.34
+R	warrior/protection	55	14964	12733	oh	28.66	ap:28:ap:0.44:12.32,armor:1720:armor:0.0095:16.34
+R	warrior/protection	55	14964	12734	oh	16.34	armor:1720:armor:0.0095:16.34
+R	warrior/protection	55	14964	12735	oh	16.34	armor:1720:armor:0.0095:16.34
+R	warrior/protection	55	14964	12736	oh	17.6	defense:9:defense:0.14:1.26,armor:1720:armor:0.0095:16.34
+R	warrior/protection	55	14964	12740	oh	19.759999999999998	sta:9:sta:0.38:3.42,armor:1720:armor:0.0095:16.34
+R	warrior/protection	55	14964	12741	oh	19.759999999999998	sta:9:sta:0.38:3.42,armor:1720:armor:0.0095:16.34
+R	warrior/protection	55	14964	12742	oh	19.759999999999998	sta:9:sta:0.38:3.42,armor:1720:armor:0.0095:16.34
+R	warrior/protection	55	14964	12743	oh	19.759999999999998	sta:9:sta:0.38:3.42,armor:1720:armor:0.0095:16.34
+R	warrior/protection	55	14964	12744	oh	19.759999999999998	sta:9:sta:0.38:3.42,armor:1720:armor:0.0095:16.34
+R	warrior/protection	55	14964	12745	oh	18.62	sta:6:sta:0.38:2.28,armor:1720:armor:0.0095:16.34
+R	warrior/protection	55	14964	12746	oh	20.42	spi:6:spi:0.68:4.08,armor:1720:armor:0.0095:16.34
+R	warrior/protection	55	14964	12747	oh	24.22	spi:6:spi:0.68:4.08,sta:10:sta:0.38:3.8,armor:1720:armor:0.0095:16.34
+R	warrior/protection	55	14964	12748	oh	20.14	sta:10:sta:0.38:3.8,armor:1720:armor:0.0095:16.34
+R	warrior/protection	55	14964	12749	oh	20.42	spi:6:spi:0.68:4.08,armor:1720:armor:0.0095:16.34
+R	warrior/protection	55	14964	12750	oh	24.22	spi:6:spi:0.68:4.08,sta:10:sta:0.38:3.8,armor:1720:armor:0.0095:16.34
+R	warrior/protection	55	14964	12753	oh	26.56	defense:3:defense:0.14:0.42,sta:10:sta:0.38:3.8,str:6:str:1:6,armor:1720:armor:0.0095:16.34
+R	warrior/protection	55	14964	12754	oh	20.7	defense:4:defense:0.14:0.56,sta:10:sta:0.38:3.8,armor:1720:armor:0.0095:16.34
+R	warrior/protection	55	14964	12759	oh	16.34	armor:1720:armor:0.0095:16.34
+R	warrior/protection	55	14964	12760	oh	16.34	armor:1720:armor:0.0095:16.34
+R	warrior/protection	55	15235	0	mh	85.58000000000001	dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12718	mh	87.48000000000002	sta:5:sta:0.38:1.9,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12719	mh	90.88000000000001	spi:5:spi:0.68:3.4,sta:5:sta:0.38:1.9,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12720	mh	88.98000000000002	spi:5:spi:0.68:3.4,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12721	mh	89.93	agi:5:agi:0.49:2.45,sta:5:sta:0.38:1.9,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12722	mh	92.48000000000002	sta:5:sta:0.38:1.9,str:5:str:1:5,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12723	mh	90.58000000000001	str:5:str:1:5,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12724	mh	88.03000000000002	agi:5:agi:0.49:2.45,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12725	mh	93.98000000000002	spi:5:spi:0.68:3.4,str:5:str:1:5,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12726	mh	91.43	agi:5:agi:0.49:2.45,spi:5:spi:0.68:3.4,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12727	mh	93.03000000000002	agi:5:agi:0.49:2.45,str:5:str:1:5,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12728	mh	89.50000000000001	agi:8:agi:0.49:3.92,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12729	mh	85.58000000000001	dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12730	mh	91.02000000000001	spi:8:spi:0.68:5.44,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12731	mh	88.62000000000002	sta:8:sta:0.38:3.04,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12732	mh	93.58000000000001	str:8:str:1:8,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12733	mh	92.62000000000002	ap:16:ap:0.44:7.04,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12736	mh	86.28000000000002	defense:5:defense:0.14:0.7,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12740	mh	87.48000000000002	sta:5:sta:0.38:1.9,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12741	mh	87.48000000000002	sta:5:sta:0.38:1.9,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12742	mh	87.48000000000002	sta:5:sta:0.38:1.9,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12743	mh	87.48000000000002	sta:5:sta:0.38:1.9,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12744	mh	87.48000000000002	sta:5:sta:0.38:1.9,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12751	mh	92.41000000000001	agi:3:agi:0.49:1.47,ap:7:ap:0.44:3.08,sta:6:sta:0.38:2.28,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12752	mh	92.33000000000001	agi:3:agi:0.49:1.47,sta:6:sta:0.38:2.28,str:3:str:1:3,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12753	mh	91.14000000000001	defense:2:defense:0.14:0.28,sta:6:sta:0.38:2.28,str:3:str:1:3,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12754	mh	88.14000000000001	defense:2:defense:0.14:0.28,sta:6:sta:0.38:2.28,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12759	mh	85.58000000000001	dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12906	mh	87.10000000000001	sta:4:sta:0.38:1.52,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12908	mh	88.30000000000001	spi:4:spi:0.68:2.72,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12910	mh	90.58000000000001	spi:4:spi:0.68:2.72,sta:6:sta:0.38:2.28,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12912	mh	87.86000000000001	sta:6:sta:0.38:2.28,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12913	mh	88.30000000000001	spi:4:spi:0.68:2.72,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12916	mh	90.58000000000001	spi:4:spi:0.68:2.72,sta:6:sta:0.38:2.28,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12917	mh	85.58000000000001	dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12920	mh	85.58000000000001	dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15477	0	gear	0.9595	armor:101:armor:0.0095:0.96
+R	warrior/protection	55	15477	12718	gear	1.3395000000000001	sta:1:sta:0.38:0.38,armor:101:armor:0.0095:0.96
+R	warrior/protection	55	15477	12719	gear	2.0195	spi:1:spi:0.68:0.68,sta:1:sta:0.38:0.38,armor:101:armor:0.0095:0.96
+R	warrior/protection	55	15477	12720	gear	1.6395	spi:1:spi:0.68:0.68,armor:101:armor:0.0095:0.96
+R	warrior/protection	55	15477	12721	gear	1.8295	agi:1:agi:0.49:0.49,sta:1:sta:0.38:0.38,armor:101:armor:0.0095:0.96
+R	warrior/protection	55	15477	12722	gear	2.3395	sta:1:sta:0.38:0.38,str:1:str:1:1,armor:101:armor:0.0095:0.96
+R	warrior/protection	55	15477	12723	gear	1.9595	str:1:str:1:1,armor:101:armor:0.0095:0.96
+R	warrior/protection	55	15477	12724	gear	1.4495	agi:1:agi:0.49:0.49,armor:101:armor:0.0095:0.96
+R	warrior/protection	55	15477	12725	gear	2.6395	spi:1:spi:0.68:0.68,str:1:str:1:1,armor:101:armor:0.0095:0.96
+R	warrior/protection	55	15477	12726	gear	2.1295	agi:1:agi:0.49:0.49,spi:1:spi:0.68:0.68,armor:101:armor:0.0095:0.96
+R	warrior/protection	55	15477	12727	gear	2.4495	agi:1:agi:0.49:0.49,str:1:str:1:1,armor:101:armor:0.0095:0.96
+R	warrior/protection	55	15477	12728	gear	1.9395	agi:2:agi:0.49:0.98,armor:101:armor:0.0095:0.96
+R	warrior/protection	55	15477	12729	gear	0.9595	armor:101:armor:0.0095:0.96
+R	warrior/protection	55	15477	12730	gear	2.3195	spi:2:spi:0.68:1.36,armor:101:armor:0.0095:0.96
+R	warrior/protection	55	15477	12731	gear	1.7195	sta:2:sta:0.38:0.76,armor:101:armor:0.0095:0.96
+R	warrior/protection	55	15477	12732	gear	2.9595000000000002	str:2:str:1:2,armor:101:armor:0.0095:0.96
+R	warrior/protection	55	15477	12733	gear	2.7195	ap:4:ap:0.44:1.76,armor:101:armor:0.0095:0.96
+R	warrior/protection	55	15477	12734	gear	0.9595	armor:101:armor:0.0095:0.96
+R	warrior/protection	55	15477	12735	gear	0.9595	armor:101:armor:0.0095:0.96
+R	warrior/protection	55	15477	12736	gear	1.0995	defense:1:defense:0.14:0.14,armor:101:armor:0.0095:0.96
+R	warrior/protection	55	15477	12740	gear	1.3395000000000001	sta:1:sta:0.38:0.38,armor:101:armor:0.0095:0.96
+R	warrior/protection	55	15477	12741	gear	1.3395000000000001	sta:1:sta:0.38:0.38,armor:101:armor:0.0095:0.96
+R	warrior/protection	55	15477	12742	gear	1.3395000000000001	sta:1:sta:0.38:0.38,armor:101:armor:0.0095:0.96
+R	warrior/protection	55	15477	12743	gear	1.3395000000000001	sta:1:sta:0.38:0.38,armor:101:armor:0.0095:0.96
+R	warrior/protection	55	15477	12744	gear	1.3395000000000001	sta:1:sta:0.38:0.38,armor:101:armor:0.0095:0.96
+R	warrior/protection	55	15477	12759	gear	0.9595	armor:101:armor:0.0095:0.96
+R	warrior/protection	55	15691	0	ranged	4.47	agi:3:agi:0.49:1.47,str:3:str:1:3
+R	warrior/protection	55	15945	0	oh	2.12	sta:2:sta:0.38:0.76,spi:2:spi:0.68:1.36
+R	warrior/protection	55	16711	0	gear	16.0325	agi:21:agi:0.49:10.29,sta:9:sta:0.38:3.42,hit:0.3:hit:4.1:1.23,armor:115:armor:0.0095:1.093
+R	warrior/protection	55	18312	0	gear	26.4615	str:13:str:1:13,sta:20:sta:0.38:7.6,armor:617:armor:0.0095:5.861
+R	warrior/protection	55	18726	0	gear	7.373500000000001	sta:15:sta:0.38:5.7,defense:7:defense:0.14:0.98,armor:73:armor:0.0095:0.694
+R	warrior/protection	55	19557	0	mh	70.48	str:7:str:1:7,sta:3:sta:0.38:1.14,dps:21.3:dps:3:63.9,speed:0.6:speed:-2.6:-1.56
+R	warrior/protection	55	20129	0	gear	12.7115	agi:6:agi:0.49:2.94,str:6:str:1:6,sta:6:sta:0.38:2.28,armor:157:armor:0.0095:1.492
+R	warrior/protection	55	20437	0	ranged	2.12	agi:2:agi:0.49:0.98,sta:3:sta:0.38:1.14
+R	warrior/protection	55	22270	0	gear	18.9915	str:11:str:1:11,defense:3:defense:0.14:0.42,sta:10:sta:0.38:3.8,armor:397:armor:0.0095:3.772
+R	warrior/protection	55	22967	0	gear	13.2335	sta:25:sta:0.38:9.5,armor:393:armor:0.0095:3.733
+R	warrior/protection	55	226878	0	gear	33.493500000000004	str:18:str:1:18,sta:12:sta:0.38:4.56,crit:1:crit:7.2:7.2,armor:393:armor:0.0095:3.733
+R	warrior/protection	55	250491	0	gear	3.268	sta:4:sta:0.38:1.52,armor:184:armor:0.0095:1.748
+R	warrior/protection	55	252507	0	gear	4.522	sta:10:sta:0.38:3.8,armor:76:armor:0.0095:0.722
+R	warrior/protection	55	254111	0	gear	5.453	sta:13:sta:0.38:4.94,armor:54:armor:0.0095:0.513
+R	warrior/protection	55	270033	0	gear	5.3305	agi:4:agi:0.49:1.96,str:3:str:1:3,armor:39:armor:0.0095:0.37
+R	warrior/protection	55	271956	0	gear	27.953999999999997	agi:27:agi:0.49:13.23,sta:12:sta:0.38:4.56,crit:1:crit:7.2:7.2,armor:312:armor:0.0095:2.964
+R	warrior/protection	55	272958	0	gear	7.524000000000001	sta:12:sta:0.38:4.56,armor:312:armor:0.0095:2.964
+R	warrior/protection	55	274646	0	ranged	2.45	agi:5:agi:0.49:2.45
+R	warrior/protection	55	276399	0	gear	12.7965	sta:18:sta:0.38:6.84,armor:627:armor:0.0095:5.957
+R	warrior/protection	55	277235	0	gear	21.1725	str:14:str:1:14,sta:10:sta:0.38:3.8,armor:355:armor:0.0095:3.373
+R	warrior/protection	55	280082	0	mh	127.62	hit:1.5:hit:4.1:6.15,spi:21:spi:0.68:14.28,dps:36.25:dps:3:108.75,speed:0.6:speed:-2.6:-1.56
+R	warrior/protection	55	282560	0	gear	6.9635	sta:13:sta:0.38:4.94,armor:213:armor:0.0095:2.023
+R	warrior/protection	55	286609	0	oh	21.932000000000002	spi:6:spi:0.68:4.08,defense:7:defense:0.14:0.98,armor:1776:armor:0.0095:16.872
+R	warrior/protection	60	25	0	mh	3.1500000000000004	dps:1.05:dps:3:3.15
+R	warrior/protection	60	1315	0	gear	15.100000000000001	sta:10:sta:0.46:4.6,spi:15:spi:0.7:10.5
+R	warrior/protection	60	1808	0	gear	0.814	armor:74:armor:0.011:0.814
+R	warrior/protection	60	2225	0	mh	15.0	dps:5:dps:3:15
+R	warrior/protection	60	2614	0	gear	0.319	armor:29:armor:0.011:0.319
+R	warrior/protection	60	3158	0	gear	0.286	armor:26:armor:0.011:0.286
+R	warrior/protection	60	3570	0	mh	26.36	str:2:str:1:2,dps:8.12:dps:3:24.36
+R	warrior/protection	60	4023	0	mh	46.08	dps:15.36:dps:3:46.08
+R	warrior/protection	60	4068	0	oh	14.733	sta:9:sta:0.46:4.14,armor:963:armor:0.011:10.593
+R	warrior/protection	60	4570	0	mh	30.0	dps:10:dps:3:30
+R	warrior/protection	60	4570	12718	mh	31.38	sta:3:sta:0.46:1.38,dps:10:dps:3:30
+R	warrior/protection	60	4570	12719	mh	33.48	spi:3:spi:0.7:2.1,sta:3:sta:0.46:1.38,dps:10:dps:3:30
+R	warrior/protection	60	4570	12720	mh	32.1	spi:3:spi:0.7:2.1,dps:10:dps:3:30
+R	warrior/protection	60	4570	12721	mh	32.91	agi:3:agi:0.51:1.53,sta:3:sta:0.46:1.38,dps:10:dps:3:30
+R	warrior/protection	60	4570	12722	mh	34.38	sta:3:sta:0.46:1.38,str:3:str:1:3,dps:10:dps:3:30
+R	warrior/protection	60	4570	12723	mh	33.0	str:3:str:1:3,dps:10:dps:3:30
+R	warrior/protection	60	4570	12724	mh	31.53	agi:3:agi:0.51:1.53,dps:10:dps:3:30
+R	warrior/protection	60	4570	12725	mh	35.1	spi:3:spi:0.7:2.1,str:3:str:1:3,dps:10:dps:3:30
+R	warrior/protection	60	4570	12726	mh	33.63	agi:3:agi:0.51:1.53,spi:3:spi:0.7:2.1,dps:10:dps:3:30
+R	warrior/protection	60	4570	12727	mh	34.53	agi:3:agi:0.51:1.53,str:3:str:1:3,dps:10:dps:3:30
+R	warrior/protection	60	4570	12728	mh	32.04	agi:4:agi:0.51:2.04,dps:10:dps:3:30
+R	warrior/protection	60	4570	12729	mh	30.0	dps:10:dps:3:30
+R	warrior/protection	60	4570	12730	mh	32.8	spi:4:spi:0.7:2.8,dps:10:dps:3:30
+R	warrior/protection	60	4570	12731	mh	31.84	sta:4:sta:0.46:1.84,dps:10:dps:3:30
+R	warrior/protection	60	4570	12732	mh	34.0	str:4:str:1:4,dps:10:dps:3:30
+R	warrior/protection	60	4570	12733	mh	33.52	ap:8:ap:0.44:3.52,dps:10:dps:3:30
+R	warrior/protection	60	4570	12736	mh	30.48	defense:3:defense:0.16:0.48,dps:10:dps:3:30
+R	warrior/protection	60	4570	12740	mh	31.38	sta:3:sta:0.46:1.38,dps:10:dps:3:30
+R	warrior/protection	60	4570	12741	mh	31.38	sta:3:sta:0.46:1.38,dps:10:dps:3:30
+R	warrior/protection	60	4570	12742	mh	31.38	sta:3:sta:0.46:1.38,dps:10:dps:3:30
+R	warrior/protection	60	4570	12743	mh	31.38	sta:3:sta:0.46:1.38,dps:10:dps:3:30
+R	warrior/protection	60	4570	12744	mh	31.38	sta:3:sta:0.46:1.38,dps:10:dps:3:30
+R	warrior/protection	60	4570	12759	mh	30.0	dps:10:dps:3:30
+R	warrior/protection	60	4570	12918	mh	30.0	dps:10:dps:3:30
+R	warrior/protection	60	4570	12919	mh	30.0	dps:10:dps:3:30
+R	warrior/protection	60	5079	0	gear	0.0	
+R	warrior/protection	60	6063	0	gear	0.605	armor:55:armor:0.011:0.605
+R	warrior/protection	60	6540	0	gear	0.308	armor:28:armor:0.011:0.308
+R	warrior/protection	60	6540	12718	gear	1.6880000000000002	sta:3:sta:0.46:1.38,armor:28:armor:0.011:0.308
+R	warrior/protection	60	6540	12719	gear	3.7879999999999994	spi:3:spi:0.7:2.1,sta:3:sta:0.46:1.38,armor:28:armor:0.011:0.308
+R	warrior/protection	60	6540	12720	gear	2.4079999999999995	spi:3:spi:0.7:2.1,armor:28:armor:0.011:0.308
+R	warrior/protection	60	6540	12729	gear	0.308	armor:28:armor:0.011:0.308
+R	warrior/protection	60	6540	12730	gear	3.808	spi:5:spi:0.7:3.5,armor:28:armor:0.011:0.308
+R	warrior/protection	60	6540	12731	gear	2.608	sta:5:sta:0.46:2.3,armor:28:armor:0.011:0.308
+R	warrior/protection	60	6540	12734	gear	0.308	armor:28:armor:0.011:0.308
+R	warrior/protection	60	6540	12735	gear	0.308	armor:28:armor:0.011:0.308
+R	warrior/protection	60	6540	12740	gear	1.6880000000000002	sta:3:sta:0.46:1.38,armor:28:armor:0.011:0.308
+R	warrior/protection	60	6540	12741	gear	1.6880000000000002	sta:3:sta:0.46:1.38,armor:28:armor:0.011:0.308
+R	warrior/protection	60	6540	12742	gear	1.6880000000000002	sta:3:sta:0.46:1.38,armor:28:armor:0.011:0.308
+R	warrior/protection	60	6540	12743	gear	1.6880000000000002	sta:3:sta:0.46:1.38,armor:28:armor:0.011:0.308
+R	warrior/protection	60	6540	12744	gear	1.6880000000000002	sta:3:sta:0.46:1.38,armor:28:armor:0.011:0.308
+R	warrior/protection	60	6540	12745	gear	1.228	sta:2:sta:0.46:0.92,armor:28:armor:0.011:0.308
+R	warrior/protection	60	6540	12756	gear	0.308	armor:28:armor:0.011:0.308
+R	warrior/protection	60	6540	12757	gear	0.308	armor:28:armor:0.011:0.308
+R	warrior/protection	60	6540	12758	gear	0.308	armor:28:armor:0.011:0.308
+R	warrior/protection	60	6540	12759	gear	0.308	armor:28:armor:0.011:0.308
+R	warrior/protection	60	6540	12761	gear	0.308	armor:28:armor:0.011:0.308
+R	warrior/protection	60	6557	0	gear	0.5389999999999999	armor:49:armor:0.011:0.539
+R	warrior/protection	60	6557	12718	gear	1.459	sta:2:sta:0.46:0.92,armor:49:armor:0.011:0.539
+R	warrior/protection	60	6557	12719	gear	2.859	spi:2:spi:0.7:1.4,sta:2:sta:0.46:0.92,armor:49:armor:0.011:0.539
+R	warrior/protection	60	6557	12720	gear	1.9389999999999998	spi:2:spi:0.7:1.4,armor:49:armor:0.011:0.539
+R	warrior/protection	60	6557	12721	gear	2.479	agi:2:agi:0.51:1.02,sta:2:sta:0.46:0.92,armor:49:armor:0.011:0.539
+R	warrior/protection	60	6557	12722	gear	3.4589999999999996	sta:2:sta:0.46:0.92,str:2:str:1:2,armor:49:armor:0.011:0.539
+R	warrior/protection	60	6557	12723	gear	2.5389999999999997	str:2:str:1:2,armor:49:armor:0.011:0.539
+R	warrior/protection	60	6557	12724	gear	1.559	agi:2:agi:0.51:1.02,armor:49:armor:0.011:0.539
+R	warrior/protection	60	6557	12725	gear	3.939	spi:2:spi:0.7:1.4,str:2:str:1:2,armor:49:armor:0.011:0.539
+R	warrior/protection	60	6557	12726	gear	2.9589999999999996	agi:2:agi:0.51:1.02,spi:2:spi:0.7:1.4,armor:49:armor:0.011:0.539
+R	warrior/protection	60	6557	12727	gear	3.559	agi:2:agi:0.51:1.02,str:2:str:1:2,armor:49:armor:0.011:0.539
+R	warrior/protection	60	6557	12728	gear	2.069	agi:3:agi:0.51:1.53,armor:49:armor:0.011:0.539
+R	warrior/protection	60	6557	12729	gear	0.5389999999999999	armor:49:armor:0.011:0.539
+R	warrior/protection	60	6557	12730	gear	2.6389999999999993	spi:3:spi:0.7:2.1,armor:49:armor:0.011:0.539
+R	warrior/protection	60	6557	12731	gear	1.919	sta:3:sta:0.46:1.38,armor:49:armor:0.011:0.539
+R	warrior/protection	60	6557	12732	gear	3.5389999999999997	str:3:str:1:3,armor:49:armor:0.011:0.539
+R	warrior/protection	60	6557	12733	gear	3.1790000000000003	ap:6:ap:0.44:2.64,armor:49:armor:0.011:0.539
+R	warrior/protection	60	6557	12734	gear	0.5389999999999999	armor:49:armor:0.011:0.539
+R	warrior/protection	60	6557	12735	gear	0.5389999999999999	armor:49:armor:0.011:0.539
+R	warrior/protection	60	6557	12736	gear	0.859	defense:2:defense:0.16:0.32,armor:49:armor:0.011:0.539
+R	warrior/protection	60	6557	12740	gear	1.459	sta:2:sta:0.46:0.92,armor:49:armor:0.011:0.539
+R	warrior/protection	60	6557	12741	gear	1.459	sta:2:sta:0.46:0.92,armor:49:armor:0.011:0.539
+R	warrior/protection	60	6557	12742	gear	1.459	sta:2:sta:0.46:0.92,armor:49:armor:0.011:0.539
+R	warrior/protection	60	6557	12743	gear	1.459	sta:2:sta:0.46:0.92,armor:49:armor:0.011:0.539
+R	warrior/protection	60	6557	12744	gear	1.459	sta:2:sta:0.46:0.92,armor:49:armor:0.011:0.539
+R	warrior/protection	60	6557	12756	gear	0.5389999999999999	armor:49:armor:0.011:0.539
+R	warrior/protection	60	6557	12760	gear	0.5389999999999999	armor:49:armor:0.011:0.539
+R	warrior/protection	60	7047	0	gear	3.786	spi:5:spi:0.7:3.5,armor:26:armor:0.011:0.286
+R	warrior/protection	60	7538	0	gear	2.893	armor:263:armor:0.011:2.893
+R	warrior/protection	60	7538	12718	gear	8.873000000000001	sta:13:sta:0.46:5.98,armor:263:armor:0.011:2.893
+R	warrior/protection	60	7538	12719	gear	17.973	spi:13:spi:0.7:9.1,sta:13:sta:0.46:5.98,armor:263:armor:0.011:2.893
+R	warrior/protection	60	7538	12720	gear	11.992999999999999	spi:13:spi:0.7:9.1,armor:263:armor:0.011:2.893
+R	warrior/protection	60	7538	12721	gear	15.503	agi:13:agi:0.51:6.63,sta:13:sta:0.46:5.98,armor:263:armor:0.011:2.893
+R	warrior/protection	60	7538	12722	gear	21.873	sta:13:sta:0.46:5.98,str:13:str:1:13,armor:263:armor:0.011:2.893
+R	warrior/protection	60	7538	12723	gear	15.893	str:13:str:1:13,armor:263:armor:0.011:2.893
+R	warrior/protection	60	7538	12724	gear	9.523	agi:13:agi:0.51:6.63,armor:263:armor:0.011:2.893
+R	warrior/protection	60	7538	12725	gear	24.993000000000002	spi:13:spi:0.7:9.1,str:13:str:1:13,armor:263:armor:0.011:2.893
+R	warrior/protection	60	7538	12726	gear	18.623	agi:13:agi:0.51:6.63,spi:13:spi:0.7:9.1,armor:263:armor:0.011:2.893
+R	warrior/protection	60	7538	12727	gear	22.523	agi:13:agi:0.51:6.63,str:13:str:1:13,armor:263:armor:0.011:2.893
+R	warrior/protection	60	7538	12728	gear	13.093	agi:20:agi:0.51:10.2,armor:263:armor:0.011:2.893
+R	warrior/protection	60	7538	12729	gear	2.893	armor:263:armor:0.011:2.893
+R	warrior/protection	60	7538	12730	gear	16.893	spi:20:spi:0.7:14,armor:263:armor:0.011:2.893
+R	warrior/protection	60	7538	12731	gear	12.093	sta:20:sta:0.46:9.2,armor:263:armor:0.011:2.893
+R	warrior/protection	60	7538	12732	gear	22.893	str:20:str:1:20,armor:263:armor:0.011:2.893
+R	warrior/protection	60	7538	12733	gear	20.493000000000002	ap:40:ap:0.44:17.6,armor:263:armor:0.011:2.893
+R	warrior/protection	60	7538	12734	gear	2.893	armor:263:armor:0.011:2.893
+R	warrior/protection	60	7538	12735	gear	2.893	armor:263:armor:0.011:2.893
+R	warrior/protection	60	7538	12740	gear	8.873000000000001	sta:13:sta:0.46:5.98,armor:263:armor:0.011:2.893
+R	warrior/protection	60	7538	12741	gear	8.873000000000001	sta:13:sta:0.46:5.98,armor:263:armor:0.011:2.893
+R	warrior/protection	60	7538	12742	gear	8.873000000000001	sta:13:sta:0.46:5.98,armor:263:armor:0.011:2.893
+R	warrior/protection	60	7538	12743	gear	8.873000000000001	sta:13:sta:0.46:5.98,armor:263:armor:0.011:2.893
+R	warrior/protection	60	7538	12744	gear	8.873000000000001	sta:13:sta:0.46:5.98,armor:263:armor:0.011:2.893
+R	warrior/protection	60	7538	12745	gear	6.573	sta:8:sta:0.46:3.68,armor:263:armor:0.011:2.893
+R	warrior/protection	60	7538	12746	gear	8.492999999999999	spi:8:spi:0.7:5.6,armor:263:armor:0.011:2.893
+R	warrior/protection	60	7538	12747	gear	15.393	spi:8:spi:0.7:5.6,sta:15:sta:0.46:6.9,armor:263:armor:0.011:2.893
+R	warrior/protection	60	7538	12748	gear	9.793	sta:15:sta:0.46:6.9,armor:263:armor:0.011:2.893
+R	warrior/protection	60	7538	12749	gear	8.492999999999999	spi:8:spi:0.7:5.6,armor:263:armor:0.011:2.893
+R	warrior/protection	60	7538	12750	gear	15.393	spi:8:spi:0.7:5.6,sta:15:sta:0.46:6.9,armor:263:armor:0.011:2.893
+R	warrior/protection	60	7538	12751	gear	19.893	agi:6:agi:0.51:3.06,ap:16:ap:0.44:7.04,sta:15:sta:0.46:6.9,armor:263:armor:0.011:2.893
+R	warrior/protection	60	7538	12752	gear	19.873	agi:8:agi:0.51:4.08,sta:15:sta:0.46:6.9,str:6:str:1:6,armor:263:armor:0.011:2.893
+R	warrior/protection	60	7538	12755	gear	17.793	sta:15:sta:0.46:6.9,str:8:str:1:8,armor:263:armor:0.011:2.893
+R	warrior/protection	60	7538	12760	gear	2.893	armor:263:armor:0.011:2.893
+R	warrior/protection	60	7922	0	gear	20.93	str:12:str:1:12,sta:12:sta:0.46:5.52,armor:310:armor:0.011:3.41
+R	warrior/protection	60	8192	0	gear	8.856	agi:11:agi:0.51:5.61,sta:5:sta:0.46:2.3,armor:86:armor:0.011:0.946
+R	warrior/protection	60	9458	0	oh	10.636	spi:3:spi:0.7:2.1,armor:776:armor:0.011:8.536
+R	warrior/protection	60	9834	0	gear	0.8029999999999999	armor:73:armor:0.011:0.803
+R	warrior/protection	60	9834	12718	gear	3.563	sta:6:sta:0.46:2.76,armor:73:armor:0.011:0.803
+R	warrior/protection	60	9834	12719	gear	7.762999999999999	spi:6:spi:0.7:4.2,sta:6:sta:0.46:2.76,armor:73:armor:0.011:0.803
+R	warrior/protection	60	9834	12720	gear	5.002999999999999	spi:6:spi:0.7:4.2,armor:73:armor:0.011:0.803
+R	warrior/protection	60	9834	12721	gear	6.623	agi:6:agi:0.51:3.06,sta:6:sta:0.46:2.76,armor:73:armor:0.011:0.803
+R	warrior/protection	60	9834	12722	gear	9.562999999999999	sta:6:sta:0.46:2.76,str:6:str:1:6,armor:73:armor:0.011:0.803
+R	warrior/protection	60	9834	12723	gear	6.803	str:6:str:1:6,armor:73:armor:0.011:0.803
+R	warrior/protection	60	9834	12724	gear	3.863	agi:6:agi:0.51:3.06,armor:73:armor:0.011:0.803
+R	warrior/protection	60	9834	12725	gear	11.003	spi:6:spi:0.7:4.2,str:6:str:1:6,armor:73:armor:0.011:0.803
+R	warrior/protection	60	9834	12726	gear	8.062999999999999	agi:6:agi:0.51:3.06,spi:6:spi:0.7:4.2,armor:73:armor:0.011:0.803
+R	warrior/protection	60	9834	12727	gear	9.863	agi:6:agi:0.51:3.06,str:6:str:1:6,armor:73:armor:0.011:0.803
+R	warrior/protection	60	9834	12728	gear	5.393	agi:9:agi:0.51:4.59,armor:73:armor:0.011:0.803
+R	warrior/protection	60	9834	12729	gear	0.8029999999999999	armor:73:armor:0.011:0.803
+R	warrior/protection	60	9834	12730	gear	7.103	spi:9:spi:0.7:6.3,armor:73:armor:0.011:0.803
+R	warrior/protection	60	9834	12731	gear	4.9430000000000005	sta:9:sta:0.46:4.14,armor:73:armor:0.011:0.803
+R	warrior/protection	60	9834	12732	gear	9.803	str:9:str:1:9,armor:73:armor:0.011:0.803
+R	warrior/protection	60	9834	12733	gear	8.722999999999999	ap:18:ap:0.44:7.92,armor:73:armor:0.011:0.803
+R	warrior/protection	60	9834	12734	gear	0.8029999999999999	armor:73:armor:0.011:0.803
+R	warrior/protection	60	9834	12735	gear	0.8029999999999999	armor:73:armor:0.011:0.803
+R	warrior/protection	60	9834	12736	gear	1.763	defense:6:defense:0.16:0.96,armor:73:armor:0.011:0.803
+R	warrior/protection	60	9834	12740	gear	3.563	sta:6:sta:0.46:2.76,armor:73:armor:0.011:0.803
+R	warrior/protection	60	9834	12741	gear	3.563	sta:6:sta:0.46:2.76,armor:73:armor:0.011:0.803
+R	warrior/protection	60	9834	12742	gear	3.563	sta:6:sta:0.46:2.76,armor:73:armor:0.011:0.803
+R	warrior/protection	60	9834	12743	gear	3.563	sta:6:sta:0.46:2.76,armor:73:armor:0.011:0.803
+R	warrior/protection	60	9834	12744	gear	3.563	sta:6:sta:0.46:2.76,armor:73:armor:0.011:0.803
+R	warrior/protection	60	9834	12745	gear	2.643	sta:4:sta:0.46:1.84,armor:73:armor:0.011:0.803
+R	warrior/protection	60	9834	12746	gear	3.6029999999999998	spi:4:spi:0.7:2.8,armor:73:armor:0.011:0.803
+R	warrior/protection	60	9834	12747	gear	6.8229999999999995	spi:4:spi:0.7:2.8,sta:7:sta:0.46:3.22,armor:73:armor:0.011:0.803
+R	warrior/protection	60	9834	12748	gear	4.023	sta:7:sta:0.46:3.22,armor:73:armor:0.011:0.803
+R	warrior/protection	60	9834	12749	gear	3.6029999999999998	spi:4:spi:0.7:2.8,armor:73:armor:0.011:0.803
+R	warrior/protection	60	9834	12750	gear	6.8229999999999995	spi:4:spi:0.7:2.8,sta:7:sta:0.46:3.22,armor:73:armor:0.011:0.803
+R	warrior/protection	60	9834	12751	gear	8.633	agi:3:agi:0.51:1.53,ap:7:ap:0.44:3.08,sta:7:sta:0.46:3.22,armor:73:armor:0.011:0.803
+R	warrior/protection	60	9834	12752	gear	9.062999999999999	agi:4:agi:0.51:2.04,sta:7:sta:0.46:3.22,str:3:str:1:3,armor:73:armor:0.011:0.803
+R	warrior/protection	60	9834	12753	gear	8.343	defense:2:defense:0.16:0.32,sta:7:sta:0.46:3.22,str:4:str:1:4,armor:73:armor:0.011:0.803
+R	warrior/protection	60	9834	12755	gear	8.023	sta:7:sta:0.46:3.22,str:4:str:1:4,armor:73:armor:0.011:0.803
+R	warrior/protection	60	9834	12756	gear	0.8029999999999999	armor:73:armor:0.011:0.803
+R	warrior/protection	60	9834	12760	gear	0.8029999999999999	armor:73:armor:0.011:0.803
+R	warrior/protection	60	10087	0	gear	3.058	armor:278:armor:0.011:3.058
+R	warrior/protection	60	10087	12718	gear	7.198	sta:9:sta:0.46:4.14,armor:278:armor:0.011:3.058
+R	warrior/protection	60	10087	12719	gear	13.498000000000001	spi:9:spi:0.7:6.3,sta:9:sta:0.46:4.14,armor:278:armor:0.011:3.058
+R	warrior/protection	60	10087	12720	gear	9.358	spi:9:spi:0.7:6.3,armor:278:armor:0.011:3.058
+R	warrior/protection	60	10087	12721	gear	11.788	agi:9:agi:0.51:4.59,sta:9:sta:0.46:4.14,armor:278:armor:0.011:3.058
+R	warrior/protection	60	10087	12722	gear	16.198	sta:9:sta:0.46:4.14,str:9:str:1:9,armor:278:armor:0.011:3.058
+R	warrior/protection	60	10087	12723	gear	12.058	str:9:str:1:9,armor:278:armor:0.011:3.058
+R	warrior/protection	60	10087	12724	gear	7.648	agi:9:agi:0.51:4.59,armor:278:armor:0.011:3.058
+R	warrior/protection	60	10087	12725	gear	18.358	spi:9:spi:0.7:6.3,str:9:str:1:9,armor:278:armor:0.011:3.058
+R	warrior/protection	60	10087	12726	gear	13.948	agi:9:agi:0.51:4.59,spi:9:spi:0.7:6.3,armor:278:armor:0.011:3.058
+R	warrior/protection	60	10087	12727	gear	16.648	agi:9:agi:0.51:4.59,str:9:str:1:9,armor:278:armor:0.011:3.058
+R	warrior/protection	60	10087	12728	gear	10.198	agi:14:agi:0.51:7.14,armor:278:armor:0.011:3.058
+R	warrior/protection	60	10087	12729	gear	3.058	armor:278:armor:0.011:3.058
+R	warrior/protection	60	10087	12730	gear	12.857999999999999	spi:14:spi:0.7:9.8,armor:278:armor:0.011:3.058
+R	warrior/protection	60	10087	12731	gear	9.498000000000001	sta:14:sta:0.46:6.44,armor:278:armor:0.011:3.058
+R	warrior/protection	60	10087	12732	gear	17.058	str:14:str:1:14,armor:278:armor:0.011:3.058
+R	warrior/protection	60	10087	12733	gear	15.378	ap:28:ap:0.44:12.32,armor:278:armor:0.011:3.058
+R	warrior/protection	60	10087	12734	gear	3.058	armor:278:armor:0.011:3.058
+R	warrior/protection	60	10087	12735	gear	3.058	armor:278:armor:0.011:3.058
+R	warrior/protection	60	10087	12736	gear	4.497999999999999	defense:9:defense:0.16:1.44,armor:278:armor:0.011:3.058
+R	warrior/protection	60	10087	12740	gear	7.198	sta:9:sta:0.46:4.14,armor:278:armor:0.011:3.058
+R	warrior/protection	60	10087	12741	gear	7.198	sta:9:sta:0.46:4.14,armor:278:armor:0.011:3.058
+R	warrior/protection	60	10087	12742	gear	7.198	sta:9:sta:0.46:4.14,armor:278:armor:0.011:3.058
+R	warrior/protection	60	10087	12743	gear	7.198	sta:9:sta:0.46:4.14,armor:278:armor:0.011:3.058
+R	warrior/protection	60	10087	12744	gear	7.198	sta:9:sta:0.46:4.14,armor:278:armor:0.011:3.058
+R	warrior/protection	60	10087	12748	gear	7.658	sta:10:sta:0.46:4.6,armor:278:armor:0.011:3.058
+R	warrior/protection	60	10087	12749	gear	7.257999999999999	spi:6:spi:0.7:4.2,armor:278:armor:0.011:3.058
+R	warrior/protection	60	10087	12750	gear	11.858	spi:6:spi:0.7:4.2,sta:10:sta:0.46:4.6,armor:278:armor:0.011:3.058
+R	warrior/protection	60	10087	12752	gear	14.718	agi:6:agi:0.51:3.06,sta:10:sta:0.46:4.6,str:4:str:1:4,armor:278:armor:0.011:3.058
+R	warrior/protection	60	10087	12753	gear	14.138	defense:3:defense:0.16:0.48,sta:10:sta:0.46:4.6,str:6:str:1:6,armor:278:armor:0.011:3.058
+R	warrior/protection	60	10087	12754	gear	8.298	defense:4:defense:0.16:0.64,sta:10:sta:0.46:4.6,armor:278:armor:0.011:3.058
+R	warrior/protection	60	10087	12755	gear	13.658000000000001	sta:10:sta:0.46:4.6,str:6:str:1:6,armor:278:armor:0.011:3.058
+R	warrior/protection	60	10087	12759	gear	3.058	armor:278:armor:0.011:3.058
+R	warrior/protection	60	10368	0	gear	37.708	str:15:str:1:15,sta:14:sta:0.46:6.44,spi:14:spi:0.7:9.8,armor:588:armor:0.011:6.468
+R	warrior/protection	60	11187	0	gear	0.044	armor:4:armor:0.011:0.044
+R	warrior/protection	60	11994	0	gear	0.0	
+R	warrior/protection	60	11994	12718	gear	1.3800000000000001	sta:3:sta:0.46:1.38
+R	warrior/protection	60	11994	12719	gear	3.4799999999999995	spi:3:spi:0.7:2.1,sta:3:sta:0.46:1.38
+R	warrior/protection	60	11994	12720	gear	2.0999999999999996	spi:3:spi:0.7:2.1
+R	warrior/protection	60	11994	12721	gear	2.91	agi:3:agi:0.51:1.53,sta:3:sta:0.46:1.38
+R	warrior/protection	60	11994	12722	gear	4.38	sta:3:sta:0.46:1.38,str:3:str:1:3
+R	warrior/protection	60	11994	12723	gear	3.0	str:3:str:1:3
+R	warrior/protection	60	11994	12724	gear	1.53	agi:3:agi:0.51:1.53
+R	warrior/protection	60	11994	12725	gear	5.1	spi:3:spi:0.7:2.1,str:3:str:1:3
+R	warrior/protection	60	11994	12726	gear	3.63	agi:3:agi:0.51:1.53,spi:3:spi:0.7:2.1
+R	warrior/protection	60	11994	12727	gear	4.53	agi:3:agi:0.51:1.53,str:3:str:1:3
+R	warrior/protection	60	11994	12728	gear	2.55	agi:5:agi:0.51:2.55
+R	warrior/protection	60	11994	12729	gear	0.0	
+R	warrior/protection	60	11994	12730	gear	3.5	spi:5:spi:0.7:3.5
+R	warrior/protection	60	11994	12731	gear	2.3000000000000003	sta:5:sta:0.46:2.3
+R	warrior/protection	60	11994	12732	gear	5.0	str:5:str:1:5
+R	warrior/protection	60	11994	12733	gear	4.4	ap:10:ap:0.44:4.4
+R	warrior/protection	60	11994	12737	gear	0.0	
+R	warrior/protection	60	11994	12738	gear	0.0	
+R	warrior/protection	60	11994	12739	gear	1.02	agi:2:agi:0.51:1.02
+R	warrior/protection	60	11994	12740	gear	1.3800000000000001	sta:3:sta:0.46:1.38
+R	warrior/protection	60	11994	12741	gear	1.3800000000000001	sta:3:sta:0.46:1.38
+R	warrior/protection	60	11994	12742	gear	1.3800000000000001	sta:3:sta:0.46:1.38
+R	warrior/protection	60	11994	12743	gear	1.3800000000000001	sta:3:sta:0.46:1.38
+R	warrior/protection	60	11994	12744	gear	1.3800000000000001	sta:3:sta:0.46:1.38
+R	warrior/protection	60	12790	0	mh	161.46	dps:53.82:dps:3:161.46
+R	warrior/protection	60	13183	0	mh	118.41	dps:39.47:dps:3:118.41
+R	warrior/protection	60	14122	0	gear	0.154	armor:14:armor:0.011:0.154
+R	warrior/protection	60	14122	12718	gear	1.074	sta:2:sta:0.46:0.92,armor:14:armor:0.011:0.154
+R	warrior/protection	60	14122	12719	gear	2.4739999999999998	spi:2:spi:0.7:1.4,sta:2:sta:0.46:0.92,armor:14:armor:0.011:0.154
+R	warrior/protection	60	14122	12720	gear	1.5539999999999998	spi:2:spi:0.7:1.4,armor:14:armor:0.011:0.154
+R	warrior/protection	60	14122	12729	gear	0.154	armor:14:armor:0.011:0.154
+R	warrior/protection	60	14122	12730	gear	2.2539999999999996	spi:3:spi:0.7:2.1,armor:14:armor:0.011:0.154
+R	warrior/protection	60	14122	12731	gear	1.534	sta:3:sta:0.46:1.38,armor:14:armor:0.011:0.154
+R	warrior/protection	60	14122	12734	gear	0.154	armor:14:armor:0.011:0.154
+R	warrior/protection	60	14122	12735	gear	0.154	armor:14:armor:0.011:0.154
+R	warrior/protection	60	14122	12740	gear	1.074	sta:2:sta:0.46:0.92,armor:14:armor:0.011:0.154
+R	warrior/protection	60	14122	12741	gear	1.074	sta:2:sta:0.46:0.92,armor:14:armor:0.011:0.154
+R	warrior/protection	60	14122	12742	gear	1.074	sta:2:sta:0.46:0.92,armor:14:armor:0.011:0.154
+R	warrior/protection	60	14122	12743	gear	1.074	sta:2:sta:0.46:0.92,armor:14:armor:0.011:0.154
+R	warrior/protection	60	14122	12744	gear	1.074	sta:2:sta:0.46:0.92,armor:14:armor:0.011:0.154
+R	warrior/protection	60	14122	12745	gear	0.614	sta:1:sta:0.46:0.46,armor:14:armor:0.011:0.154
+R	warrior/protection	60	14122	12756	gear	0.154	armor:14:armor:0.011:0.154
+R	warrior/protection	60	14122	12757	gear	0.154	armor:14:armor:0.011:0.154
+R	warrior/protection	60	14122	12758	gear	0.154	armor:14:armor:0.011:0.154
+R	warrior/protection	60	14122	12759	gear	0.154	armor:14:armor:0.011:0.154
+R	warrior/protection	60	14122	12761	gear	0.154	armor:14:armor:0.011:0.154
+R	warrior/protection	60	14340	0	gear	9.708	sta:19:sta:0.46:8.74,armor:88:armor:0.011:0.968
+R	warrior/protection	60	14673	0	gear	10.264000000000001	str:3:str:1:3,agi:9:agi:0.51:4.59,sta:5:sta:0.46:2.3,armor:34:armor:0.011:0.374
+R	warrior/protection	60	14964	0	oh	18.919999999999998	armor:1720:armor:0.011:18.92
+R	warrior/protection	60	14964	12718	oh	23.06	sta:9:sta:0.46:4.14,armor:1720:armor:0.011:18.92
+R	warrior/protection	60	14964	12719	oh	29.36	spi:9:spi:0.7:6.3,sta:9:sta:0.46:4.14,armor:1720:armor:0.011:18.92
+R	warrior/protection	60	14964	12720	oh	25.22	spi:9:spi:0.7:6.3,armor:1720:armor:0.011:18.92
+R	warrior/protection	60	14964	12721	oh	27.65	agi:9:agi:0.51:4.59,sta:9:sta:0.46:4.14,armor:1720:armor:0.011:18.92
+R	warrior/protection	60	14964	12722	oh	32.06	sta:9:sta:0.46:4.14,str:9:str:1:9,armor:1720:armor:0.011:18.92
+R	warrior/protection	60	14964	12723	oh	27.919999999999998	str:9:str:1:9,armor:1720:armor:0.011:18.92
+R	warrior/protection	60	14964	12724	oh	23.509999999999998	agi:9:agi:0.51:4.59,armor:1720:armor:0.011:18.92
+R	warrior/protection	60	14964	12725	oh	34.22	spi:9:spi:0.7:6.3,str:9:str:1:9,armor:1720:armor:0.011:18.92
+R	warrior/protection	60	14964	12726	oh	29.81	agi:9:agi:0.51:4.59,spi:9:spi:0.7:6.3,armor:1720:armor:0.011:18.92
+R	warrior/protection	60	14964	12727	oh	32.51	agi:9:agi:0.51:4.59,str:9:str:1:9,armor:1720:armor:0.011:18.92
+R	warrior/protection	60	14964	12728	oh	26.06	agi:14:agi:0.51:7.14,armor:1720:armor:0.011:18.92
+R	warrior/protection	60	14964	12729	oh	18.919999999999998	armor:1720:armor:0.011:18.92
+R	warrior/protection	60	14964	12730	oh	28.72	spi:14:spi:0.7:9.8,armor:1720:armor:0.011:18.92
+R	warrior/protection	60	14964	12731	oh	25.36	sta:14:sta:0.46:6.44,armor:1720:armor:0.011:18.92
+R	warrior/protection	60	14964	12732	oh	32.92	str:14:str:1:14,armor:1720:armor:0.011:18.92
+R	warrior/protection	60	14964	12733	oh	31.24	ap:28:ap:0.44:12.32,armor:1720:armor:0.011:18.92
+R	warrior/protection	60	14964	12734	oh	18.919999999999998	armor:1720:armor:0.011:18.92
+R	warrior/protection	60	14964	12735	oh	18.919999999999998	armor:1720:armor:0.011:18.92
+R	warrior/protection	60	14964	12736	oh	20.36	defense:9:defense:0.16:1.44,armor:1720:armor:0.011:18.92
+R	warrior/protection	60	14964	12740	oh	23.06	sta:9:sta:0.46:4.14,armor:1720:armor:0.011:18.92
+R	warrior/protection	60	14964	12741	oh	23.06	sta:9:sta:0.46:4.14,armor:1720:armor:0.011:18.92
+R	warrior/protection	60	14964	12742	oh	23.06	sta:9:sta:0.46:4.14,armor:1720:armor:0.011:18.92
+R	warrior/protection	60	14964	12743	oh	23.06	sta:9:sta:0.46:4.14,armor:1720:armor:0.011:18.92
+R	warrior/protection	60	14964	12744	oh	23.06	sta:9:sta:0.46:4.14,armor:1720:armor:0.011:18.92
+R	warrior/protection	60	14964	12745	oh	21.68	sta:6:sta:0.46:2.76,armor:1720:armor:0.011:18.92
+R	warrior/protection	60	14964	12746	oh	23.119999999999997	spi:6:spi:0.7:4.2,armor:1720:armor:0.011:18.92
+R	warrior/protection	60	14964	12747	oh	27.72	spi:6:spi:0.7:4.2,sta:10:sta:0.46:4.6,armor:1720:armor:0.011:18.92
+R	warrior/protection	60	14964	12748	oh	23.52	sta:10:sta:0.46:4.6,armor:1720:armor:0.011:18.92
+R	warrior/protection	60	14964	12749	oh	23.119999999999997	spi:6:spi:0.7:4.2,armor:1720:armor:0.011:18.92
+R	warrior/protection	60	14964	12750	oh	27.72	spi:6:spi:0.7:4.2,sta:10:sta:0.46:4.6,armor:1720:armor:0.011:18.92
+R	warrior/protection	60	14964	12753	oh	30.0	defense:3:defense:0.16:0.48,sta:10:sta:0.46:4.6,str:6:str:1:6,armor:1720:armor:0.011:18.92
+R	warrior/protection	60	14964	12754	oh	24.159999999999997	defense:4:defense:0.16:0.64,sta:10:sta:0.46:4.6,armor:1720:armor:0.011:18.92
+R	warrior/protection	60	14964	12759	oh	18.919999999999998	armor:1720:armor:0.011:18.92
+R	warrior/protection	60	14964	12760	oh	18.919999999999998	armor:1720:armor:0.011:18.92
+R	warrior/protection	60	15235	0	mh	85.71000000000001	dps:28.57:dps:3:85.71
+R	warrior/protection	60	15235	12718	mh	88.01	sta:5:sta:0.46:2.3,dps:28.57:dps:3:85.71
+R	warrior/protection	60	15235	12719	mh	91.51	spi:5:spi:0.7:3.5,sta:5:sta:0.46:2.3,dps:28.57:dps:3:85.71
+R	warrior/protection	60	15235	12720	mh	89.21000000000001	spi:5:spi:0.7:3.5,dps:28.57:dps:3:85.71
+R	warrior/protection	60	15235	12721	mh	90.56	agi:5:agi:0.51:2.55,sta:5:sta:0.46:2.3,dps:28.57:dps:3:85.71
+R	warrior/protection	60	15235	12722	mh	93.01	sta:5:sta:0.46:2.3,str:5:str:1:5,dps:28.57:dps:3:85.71
+R	warrior/protection	60	15235	12723	mh	90.71000000000001	str:5:str:1:5,dps:28.57:dps:3:85.71
+R	warrior/protection	60	15235	12724	mh	88.26	agi:5:agi:0.51:2.55,dps:28.57:dps:3:85.71
+R	warrior/protection	60	15235	12725	mh	94.21000000000001	spi:5:spi:0.7:3.5,str:5:str:1:5,dps:28.57:dps:3:85.71
+R	warrior/protection	60	15235	12726	mh	91.76	agi:5:agi:0.51:2.55,spi:5:spi:0.7:3.5,dps:28.57:dps:3:85.71
+R	warrior/protection	60	15235	12727	mh	93.26	agi:5:agi:0.51:2.55,str:5:str:1:5,dps:28.57:dps:3:85.71
+R	warrior/protection	60	15235	12728	mh	89.79	agi:8:agi:0.51:4.08,dps:28.57:dps:3:85.71
+R	warrior/protection	60	15235	12729	mh	85.71000000000001	dps:28.57:dps:3:85.71
+R	warrior/protection	60	15235	12730	mh	91.31	spi:8:spi:0.7:5.6,dps:28.57:dps:3:85.71
+R	warrior/protection	60	15235	12731	mh	89.39000000000001	sta:8:sta:0.46:3.68,dps:28.57:dps:3:85.71
+R	warrior/protection	60	15235	12732	mh	93.71000000000001	str:8:str:1:8,dps:28.57:dps:3:85.71
+R	warrior/protection	60	15235	12733	mh	92.75000000000001	ap:16:ap:0.44:7.04,dps:28.57:dps:3:85.71
+R	warrior/protection	60	15235	12736	mh	86.51	defense:5:defense:0.16:0.8,dps:28.57:dps:3:85.71
+R	warrior/protection	60	15235	12740	mh	88.01	sta:5:sta:0.46:2.3,dps:28.57:dps:3:85.71
+R	warrior/protection	60	15235	12741	mh	88.01	sta:5:sta:0.46:2.3,dps:28.57:dps:3:85.71
+R	warrior/protection	60	15235	12742	mh	88.01	sta:5:sta:0.46:2.3,dps:28.57:dps:3:85.71
+R	warrior/protection	60	15235	12743	mh	88.01	sta:5:sta:0.46:2.3,dps:28.57:dps:3:85.71
+R	warrior/protection	60	15235	12744	mh	88.01	sta:5:sta:0.46:2.3,dps:28.57:dps:3:85.71
+R	warrior/protection	60	15235	12751	mh	93.08000000000001	agi:3:agi:0.51:1.53,ap:7:ap:0.44:3.08,sta:6:sta:0.46:2.76,dps:28.57:dps:3:85.71
+R	warrior/protection	60	15235	12752	mh	93.00000000000001	agi:3:agi:0.51:1.53,sta:6:sta:0.46:2.76,str:3:str:1:3,dps:28.57:dps:3:85.71
+R	warrior/protection	60	15235	12753	mh	91.79	defense:2:defense:0.16:0.32,sta:6:sta:0.46:2.76,str:3:str:1:3,dps:28.57:dps:3:85.71
+R	warrior/protection	60	15235	12754	mh	88.79	defense:2:defense:0.16:0.32,sta:6:sta:0.46:2.76,dps:28.57:dps:3:85.71
+R	warrior/protection	60	15235	12759	mh	85.71000000000001	dps:28.57:dps:3:85.71
+R	warrior/protection	60	15235	12906	mh	87.55000000000001	sta:4:sta:0.46:1.84,dps:28.57:dps:3:85.71
+R	warrior/protection	60	15235	12908	mh	88.51	spi:4:spi:0.7:2.8,dps:28.57:dps:3:85.71
+R	warrior/protection	60	15235	12910	mh	91.27000000000001	spi:4:spi:0.7:2.8,sta:6:sta:0.46:2.76,dps:28.57:dps:3:85.71
+R	warrior/protection	60	15235	12912	mh	88.47000000000001	sta:6:sta:0.46:2.76,dps:28.57:dps:3:85.71
+R	warrior/protection	60	15235	12913	mh	88.51	spi:4:spi:0.7:2.8,dps:28.57:dps:3:85.71
+R	warrior/protection	60	15235	12916	mh	91.27000000000001	spi:4:spi:0.7:2.8,sta:6:sta:0.46:2.76,dps:28.57:dps:3:85.71
+R	warrior/protection	60	15235	12917	mh	85.71000000000001	dps:28.57:dps:3:85.71
+R	warrior/protection	60	15235	12920	mh	85.71000000000001	dps:28.57:dps:3:85.71
+R	warrior/protection	60	15477	0	gear	1.111	armor:101:armor:0.011:1.111
+R	warrior/protection	60	15477	12718	gear	1.571	sta:1:sta:0.46:0.46,armor:101:armor:0.011:1.111
+R	warrior/protection	60	15477	12719	gear	2.271	spi:1:spi:0.7:0.7,sta:1:sta:0.46:0.46,armor:101:armor:0.011:1.111
+R	warrior/protection	60	15477	12720	gear	1.811	spi:1:spi:0.7:0.7,armor:101:armor:0.011:1.111
+R	warrior/protection	60	15477	12721	gear	2.081	agi:1:agi:0.51:0.51,sta:1:sta:0.46:0.46,armor:101:armor:0.011:1.111
+R	warrior/protection	60	15477	12722	gear	2.5709999999999997	sta:1:sta:0.46:0.46,str:1:str:1:1,armor:101:armor:0.011:1.111
+R	warrior/protection	60	15477	12723	gear	2.1109999999999998	str:1:str:1:1,armor:101:armor:0.011:1.111
+R	warrior/protection	60	15477	12724	gear	1.621	agi:1:agi:0.51:0.51,armor:101:armor:0.011:1.111
+R	warrior/protection	60	15477	12725	gear	2.811	spi:1:spi:0.7:0.7,str:1:str:1:1,armor:101:armor:0.011:1.111
+R	warrior/protection	60	15477	12726	gear	2.3209999999999997	agi:1:agi:0.51:0.51,spi:1:spi:0.7:0.7,armor:101:armor:0.011:1.111
+R	warrior/protection	60	15477	12727	gear	2.621	agi:1:agi:0.51:0.51,str:1:str:1:1,armor:101:armor:0.011:1.111
+R	warrior/protection	60	15477	12728	gear	2.1310000000000002	agi:2:agi:0.51:1.02,armor:101:armor:0.011:1.111
+R	warrior/protection	60	15477	12729	gear	1.111	armor:101:armor:0.011:1.111
+R	warrior/protection	60	15477	12730	gear	2.511	spi:2:spi:0.7:1.4,armor:101:armor:0.011:1.111
+R	warrior/protection	60	15477	12731	gear	2.031	sta:2:sta:0.46:0.92,armor:101:armor:0.011:1.111
+R	warrior/protection	60	15477	12732	gear	3.1109999999999998	str:2:str:1:2,armor:101:armor:0.011:1.111
+R	warrior/protection	60	15477	12733	gear	2.871	ap:4:ap:0.44:1.76,armor:101:armor:0.011:1.111
+R	warrior/protection	60	15477	12734	gear	1.111	armor:101:armor:0.011:1.111
+R	warrior/protection	60	15477	12735	gear	1.111	armor:101:armor:0.011:1.111
+R	warrior/protection	60	15477	12736	gear	1.271	defense:1:defense:0.16:0.16,armor:101:armor:0.011:1.111
+R	warrior/protection	60	15477	12740	gear	1.571	sta:1:sta:0.46:0.46,armor:101:armor:0.011:1.111
+R	warrior/protection	60	15477	12741	gear	1.571	sta:1:sta:0.46:0.46,armor:101:armor:0.011:1.111
+R	warrior/protection	60	15477	12742	gear	1.571	sta:1:sta:0.46:0.46,armor:101:armor:0.011:1.111
+R	warrior/protection	60	15477	12743	gear	1.571	sta:1:sta:0.46:0.46,armor:101:armor:0.011:1.111
+R	warrior/protection	60	15477	12744	gear	1.571	sta:1:sta:0.46:0.46,armor:101:armor:0.011:1.111
+R	warrior/protection	60	15477	12759	gear	1.111	armor:101:armor:0.011:1.111
+R	warrior/protection	60	15691	0	ranged	4.53	agi:3:agi:0.51:1.53,str:3:str:1:3
+R	warrior/protection	60	15945	0	oh	2.32	sta:2:sta:0.46:0.92,spi:2:spi:0.7:1.4
+R	warrior/protection	60	16711	0	gear	17.615000000000002	agi:21:agi:0.51:10.71,sta:9:sta:0.46:4.14,hit:0.3:hit:5:1.5,armor:115:armor:0.011:1.265
+R	warrior/protection	60	18312	0	gear	28.987000000000002	str:13:str:1:13,sta:20:sta:0.46:9.2,armor:617:armor:0.011:6.787
+R	warrior/protection	60	18726	0	gear	8.823	sta:15:sta:0.46:6.9,defense:7:defense:0.16:1.12,armor:73:armor:0.011:0.803
+R	warrior/protection	60	19557	0	mh	72.28	str:7:str:1:7,sta:3:sta:0.46:1.38,dps:21.3:dps:3:63.9
+R	warrior/protection	60	20129	0	gear	13.547	agi:6:agi:0.51:3.06,str:6:str:1:6,sta:6:sta:0.46:2.76,armor:157:armor:0.011:1.727
+R	warrior/protection	60	20437	0	ranged	2.4000000000000004	agi:2:agi:0.51:1.02,sta:3:sta:0.46:1.38
+R	warrior/protection	60	22270	0	gear	20.447000000000003	str:11:str:1:11,defense:3:defense:0.16:0.48,sta:10:sta:0.46:4.6,armor:397:armor:0.011:4.367
+R	warrior/protection	60	22967	0	gear	15.823	sta:25:sta:0.46:11.5,armor:393:armor:0.011:4.323
+R	warrior/protection	60	226878	0	gear	36.543	str:18:str:1:18,sta:12:sta:0.46:5.52,crit:1:crit:8.7:8.7,armor:393:armor:0.011:4.323
+R	warrior/protection	60	250491	0	gear	3.864	sta:4:sta:0.46:1.84,armor:184:armor:0.011:2.024
+R	warrior/protection	60	252507	0	gear	5.436000000000001	sta:10:sta:0.46:4.6,armor:76:armor:0.011:0.836
+R	warrior/protection	60	254111	0	gear	6.574000000000001	sta:13:sta:0.46:5.98,armor:54:armor:0.011:0.594
+R	warrior/protection	60	270033	0	gear	5.469	agi:4:agi:0.51:2.04,str:3:str:1:3,armor:39:armor:0.011:0.429
+R	warrior/protection	60	271956	0	gear	31.421999999999997	agi:27:agi:0.51:13.77,sta:12:sta:0.46:5.52,crit:1:crit:8.7:8.7,armor:312:armor:0.011:3.432
+R	warrior/protection	60	272958	0	gear	8.952	sta:12:sta:0.46:5.52,armor:312:armor:0.011:3.432
+R	warrior/protection	60	274646	0	ranged	2.55	agi:5:agi:0.51:2.55
+R	warrior/protection	60	276399	0	gear	15.177	sta:18:sta:0.46:8.28,armor:627:armor:0.011:6.897
+R	warrior/protection	60	277235	0	gear	22.505000000000003	str:14:str:1:14,sta:10:sta:0.46:4.6,armor:355:armor:0.011:3.905
+R	warrior/protection	60	280082	0	mh	130.95	hit:1.5:hit:5:7.5,spi:21:spi:0.7:14.7,dps:36.25:dps:3:108.75
+R	warrior/protection	60	282560	0	gear	8.323	sta:13:sta:0.46:5.98,armor:213:armor:0.011:2.343
+R	warrior/protection	60	286609	0	oh	24.855999999999998	spi:6:spi:0.7:4.2,defense:7:defense:0.16:1.12,armor:1776:armor:0.011:19.536
 R	rogue/combat	12	25	0	mh	0.7450000000000019	dps:1.05:dps:4.9:5.145,speed:-0.4:speed:11:-4.4
 R	rogue/combat	12	1315	0	gear	19.4	sta:10:sta:1.1:11,spi:15:spi:0.56:8.4
 R	rogue/combat	12	1808	0	gear	1.702	armor:74:armor:0.023:1.702
@@ -32428,6 +36748,300 @@ B	paladin/retribution	60	276399	gear	0	52.429
 B	paladin/retribution	60	277235	gear	0	31.884999999999998
 B	paladin/retribution	60	282560	gear	0	45.141
 B	paladin/retribution	60	286609	oh	0	50.472
+B	paladin/protection	12	25	mh	0	10.555
+B	paladin/protection	12	1315	gear	0	15.95
+B	paladin/protection	12	1808	gear	0	2.886
+B	paladin/protection	12	2614	gear	0	1.131
+B	paladin/protection	12	3158	gear	0	1.014
+B	paladin/protection	12	3570	mh	0	55.523999999999994
+B	paladin/protection	12	4068	oh	0	45.027
+B	paladin/protection	12	4570	mh	12918	77.48
+B	paladin/protection	12	5079	gear	0	0.0
+B	paladin/protection	12	6063	gear	0	2.145
+B	paladin/protection	12	6540	gear	12734	11.892000000000001
+B	paladin/protection	12	6557	gear	12734	9.111
+B	paladin/protection	12	7047	gear	0	3.564
+B	paladin/protection	12	7538	gear	12734	51.657
+B	paladin/protection	12	7922	gear	0	34.05
+B	paladin/protection	12	8192	gear	0	13.003999999999998
+B	paladin/protection	12	9458	oh	0	31.794
+B	paladin/protection	12	9834	gear	12734	22.647000000000002
+B	paladin/protection	12	10087	gear	12734	39.642
+B	paladin/protection	12	10368	gear	0	56.69199999999999
+B	paladin/protection	12	11187	gear	0	0.156
+B	paladin/protection	12	11994	gear	12722	5.49
+B	paladin/protection	12	12790	mh	0	355.314
+B	paladin/protection	12	13183	mh	0	267.969
+B	paladin/protection	12	14122	gear	12734	7.746
+B	paladin/protection	12	14340	gear	0	19.201999999999998
+B	paladin/protection	12	14673	gear	0	12.975999999999999
+B	paladin/protection	12	14964	oh	12734	95.88
+B	paladin/protection	12	15235	mh	12910	268.59900000000005
+B	paladin/protection	12	15477	gear	12759	8.139
+B	paladin/protection	12	15945	oh	0	2.6799999999999997
+B	paladin/protection	12	16711	gear	0	22.814999999999998
+B	paladin/protection	12	18312	gear	0	84.743
+B	paladin/protection	12	18726	gear	0	16.767
+B	paladin/protection	12	19557	mh	0	148.68
+B	paladin/protection	12	20129	gear	0	20.103
+B	paladin/protection	12	22270	gear	0	51.413
+B	paladin/protection	12	22400	ranged	0	0.0
+B	paladin/protection	12	22967	gear	0	36.077
+B	paladin/protection	12	250491	gear	0	21.195999999999998
+B	paladin/protection	12	252507	gear	0	22.064
+B	paladin/protection	12	254111	gear	0	15.956
+B	paladin/protection	12	270033	gear	0	6.521
+B	paladin/protection	12	271956	gear	0	37.978
+B	paladin/protection	12	272958	gear	0	60.108
+B	paladin/protection	12	276399	gear	0	62.18300000000001
+B	paladin/protection	12	277235	gear	0	36.144999999999996
+B	paladin/protection	12	282560	gear	0	36.897
+B	paladin/protection	12	286609	oh	0	73.794
+B	paladin/protection	25	25	mh	0	12.195
+B	paladin/protection	25	1315	gear	0	15.45
+B	paladin/protection	25	1808	gear	0	2.96
+B	paladin/protection	25	2614	gear	0	1.16
+B	paladin/protection	25	3158	gear	0	1.04
+B	paladin/protection	25	3570	mh	0	60.274
+B	paladin/protection	25	4068	oh	0	45.0
+B	paladin/protection	25	4570	mh	12918	80.49000000000001
+B	paladin/protection	25	5079	gear	0	0.0
+B	paladin/protection	25	6063	gear	0	2.2
+B	paladin/protection	25	6540	gear	12759	12.32
+B	paladin/protection	25	6557	gear	12734	9.16
+B	paladin/protection	25	7047	gear	0	3.79
+B	paladin/protection	25	7538	gear	12734	51.92
+B	paladin/protection	25	7922	gear	0	33.04
+B	paladin/protection	25	8192	gear	0	13.86
+B	paladin/protection	25	9458	oh	0	32.69
+B	paladin/protection	25	9834	gear	12734	22.72
+B	paladin/protection	25	10087	gear	12759	43.120000000000005
+B	paladin/protection	25	10368	gear	0	56.3
+B	paladin/protection	25	11187	gear	0	0.16
+B	paladin/protection	25	11994	gear	12723	5.22
+B	paladin/protection	25	12790	mh	0	355.864
+B	paladin/protection	25	13183	mh	0	269.60900000000004
+B	paladin/protection	25	14122	gear	12734	7.76
+B	paladin/protection	25	14340	gear	0	17.2
+B	paladin/protection	25	14673	gear	0	13.54
+B	paladin/protection	25	14964	oh	12759	100.8
+B	paladin/protection	25	15235	mh	12906	272.29900000000004
+B	paladin/protection	25	15477	gear	12759	8.84
+B	paladin/protection	25	15945	oh	0	2.54
+B	paladin/protection	25	16711	gear	0	24.67
+B	paladin/protection	25	18312	gear	0	87.96000000000001
+B	paladin/protection	25	18726	gear	0	15.889999999999999
+B	paladin/protection	25	19557	mh	0	153.16
+B	paladin/protection	25	20129	gear	0	20.32
+B	paladin/protection	25	22270	gear	0	55.01
+B	paladin/protection	25	22400	ranged	0	0.0
+B	paladin/protection	25	22967	gear	0	33.72
+B	paladin/protection	25	250491	gear	0	22.94
+B	paladin/protection	25	252507	gear	0	21.04
+B	paladin/protection	25	254111	gear	0	18.18
+B	paladin/protection	25	270033	gear	0	7.040000000000001
+B	paladin/protection	25	271956	gear	0	41.8
+B	paladin/protection	25	272958	gear	0	69.9
+B	paladin/protection	25	276399	gear	0	62.93000000000001
+B	paladin/protection	25	277235	gear	0	35.4
+B	paladin/protection	25	282560	gear	0	39.67999999999999
+B	paladin/protection	25	286609	oh	0	76.51
+B	paladin/protection	34	25	mh	0	13.625000000000007
+B	paladin/protection	34	1315	gear	0	13.85
+B	paladin/protection	34	1808	gear	0	2.5900000000000003
+B	paladin/protection	34	2614	gear	0	1.0150000000000001
+B	paladin/protection	34	3158	gear	0	0.9100000000000001
+B	paladin/protection	34	3570	mh	0	44.58
+B	paladin/protection	34	4068	oh	0	39.55500000000001
+B	paladin/protection	34	4570	mh	12918	61.800000000000004
+B	paladin/protection	34	5079	gear	0	0.0
+B	paladin/protection	34	6063	gear	0	1.9250000000000003
+B	paladin/protection	34	6540	gear	12759	12.88
+B	paladin/protection	34	6557	gear	12734	8.915000000000001
+B	paladin/protection	34	7047	gear	0	3.3600000000000003
+B	paladin/protection	34	7538	gear	12734	50.605
+B	paladin/protection	34	7922	gear	0	30.650000000000002
+B	paladin/protection	34	8192	gear	0	12.749999999999998
+B	paladin/protection	34	9458	oh	0	28.630000000000003
+B	paladin/protection	34	9834	gear	12734	22.355
+B	paladin/protection	34	10087	gear	12759	43.730000000000004
+B	paladin/protection	34	10368	gear	0	51.540000000000006
+B	paladin/protection	34	11187	gear	0	0.14
+B	paladin/protection	34	11994	gear	12723	5.1
+B	paladin/protection	34	12790	mh	0	329.43
+B	paladin/protection	34	13183	mh	0	263.355
+B	paladin/protection	34	14122	gear	12734	7.69
+B	paladin/protection	34	14340	gear	0	15.43
+B	paladin/protection	34	14673	gear	0	12.749999999999998
+B	paladin/protection	34	14964	oh	12759	94.2
+B	paladin/protection	34	15235	mh	12906	260.90500000000003
+B	paladin/protection	34	15477	gear	12759	8.635
+B	paladin/protection	34	15945	oh	0	2.2800000000000002
+B	paladin/protection	34	16711	gear	0	23.434999999999995
+B	paladin/protection	34	18312	gear	0	82.995
+B	paladin/protection	34	18726	gear	0	14.334999999999999
+B	paladin/protection	34	19557	mh	0	127.0
+B	paladin/protection	34	20129	gear	0	18.935
+B	paladin/protection	34	22270	gear	0	51.865
+B	paladin/protection	34	22400	ranged	0	0.0
+B	paladin/protection	34	22967	gear	0	30.005000000000003
+B	paladin/protection	34	250491	gear	0	21.54
+B	paladin/protection	34	252507	gear	0	19.96
+B	paladin/protection	34	254111	gear	0	16.64
+B	paladin/protection	34	270033	gear	0	6.725
+B	paladin/protection	34	271956	gear	0	40.150000000000006
+B	paladin/protection	34	272958	gear	0	66.42
+B	paladin/protection	34	276399	gear	0	58.745000000000005
+B	paladin/protection	34	277235	gear	0	32.925
+B	paladin/protection	34	282560	gear	0	37.305
+B	paladin/protection	34	286609	oh	0	67.13000000000001
+B	paladin/protection	45	25	mh	0	14.035
+B	paladin/protection	45	1315	gear	0	19.15
+B	paladin/protection	45	1808	gear	0	1.554
+B	paladin/protection	45	2614	gear	0	0.609
+B	paladin/protection	45	3158	gear	0	0.546
+B	paladin/protection	45	3570	mh	0	56.403999999999996
+B	paladin/protection	45	4068	oh	0	25.173000000000002
+B	paladin/protection	45	4570	mh	12918	77.8
+B	paladin/protection	45	5079	gear	0	0.0
+B	paladin/protection	45	6063	gear	0	1.155
+B	paladin/protection	45	6540	gear	12759	13.887999999999998
+B	paladin/protection	45	6557	gear	12734	8.629
+B	paladin/protection	45	7047	gear	0	5.096
+B	paladin/protection	45	7538	gear	12734	49.223
+B	paladin/protection	45	7922	gear	0	25.110000000000003
+B	paladin/protection	45	8192	gear	0	11.486
+B	paladin/protection	45	9458	oh	0	19.026
+B	paladin/protection	45	9834	gear	12734	22.433
+B	paladin/protection	45	10087	gear	12759	43.838
+B	paladin/protection	45	10368	gear	0	47.788000000000004
+B	paladin/protection	45	11187	gear	0	0.084
+B	paladin/protection	45	11994	gear	12723	6.0
+B	paladin/protection	45	12790	mh	0	352.194
+B	paladin/protection	45	13183	mh	0	271.449
+B	paladin/protection	45	14122	gear	12734	7.894
+B	paladin/protection	45	14340	gear	0	12.298000000000002
+B	paladin/protection	45	14673	gear	0	12.134
+B	paladin/protection	45	14964	oh	12759	74.12
+B	paladin/protection	45	15235	mh	12908	277.459
+B	paladin/protection	45	15477	gear	12759	7.821
+B	paladin/protection	45	15945	oh	0	2.92
+B	paladin/protection	45	16711	gear	0	22.544999999999998
+B	paladin/protection	45	18312	gear	0	77.457
+B	paladin/protection	45	18726	gear	0	13.353
+B	paladin/protection	45	19557	mh	0	147.16
+B	paladin/protection	45	20129	gear	0	16.377000000000002
+B	paladin/protection	45	22270	gear	0	49.667
+B	paladin/protection	45	22400	ranged	0	0.0
+B	paladin/protection	45	22967	gear	0	22.003
+B	paladin/protection	45	250491	gear	0	20.564
+B	paladin/protection	45	252507	gear	0	18.496
+B	paladin/protection	45	254111	gear	0	17.284
+B	paladin/protection	45	270033	gear	0	6.3389999999999995
+B	paladin/protection	45	271956	gear	0	37.672000000000004
+B	paladin/protection	45	272958	gear	0	70.552
+B	paladin/protection	45	276399	gear	0	52.307
+B	paladin/protection	45	277235	gear	0	26.955
+B	paladin/protection	45	282560	gear	0	36.82299999999999
+B	paladin/protection	45	286609	oh	0	46.326
+B	paladin/protection	55	25	mh	0	8.264999999999999
+B	paladin/protection	55	1315	gear	0	17.6
+B	paladin/protection	55	1808	gear	0	1.48
+B	paladin/protection	55	2614	gear	0	0.58
+B	paladin/protection	55	3158	gear	0	0.52
+B	paladin/protection	55	3570	mh	0	54.590999999999994
+B	paladin/protection	55	4068	oh	0	24.300000000000004
+B	paladin/protection	55	4570	mh	12918	81.38
+B	paladin/protection	55	5079	gear	0	0.0
+B	paladin/protection	55	6063	gear	0	1.1
+B	paladin/protection	55	6540	gear	12759	13.86
+B	paladin/protection	55	6557	gear	12734	8.98
+B	paladin/protection	55	7047	gear	0	4.52
+B	paladin/protection	55	7538	gear	12734	51.26
+B	paladin/protection	55	7922	gear	0	24.919999999999998
+B	paladin/protection	55	8192	gear	0	11.56
+B	paladin/protection	55	9458	oh	0	17.92
+B	paladin/protection	55	9834	gear	12734	23.46
+B	paladin/protection	55	10087	gear	12759	43.56
+B	paladin/protection	55	10368	gear	0	45.8
+B	paladin/protection	55	11187	gear	0	0.08
+B	paladin/protection	55	11994	gear	12725	5.4
+B	paladin/protection	55	12790	mh	0	361.476
+B	paladin/protection	55	13183	mh	0	269.52099999999996
+B	paladin/protection	55	14122	gear	12734	8.28
+B	paladin/protection	55	14340	gear	0	12.4
+B	paladin/protection	55	14673	gear	0	12.24
+B	paladin/protection	55	14964	oh	12759	72.4
+B	paladin/protection	55	15235	mh	12910	276.461
+B	paladin/protection	55	15477	gear	12759	7.719999999999999
+B	paladin/protection	55	15945	oh	0	2.72
+B	paladin/protection	55	16711	gear	0	23.36
+B	paladin/protection	55	18312	gear	0	72.18
+B	paladin/protection	55	18726	gear	0	13.64
+B	paladin/protection	55	19557	mh	0	149.02
+B	paladin/protection	55	20129	gear	0	16.34
+B	paladin/protection	55	22270	gear	0	44.86
+B	paladin/protection	55	22400	ranged	0	0.0
+B	paladin/protection	55	22967	gear	0	21.860000000000003
+B	paladin/protection	55	250491	gear	0	18.27
+B	paladin/protection	55	252507	gear	0	19.12
+B	paladin/protection	55	254111	gear	0	12.590000000000002
+B	paladin/protection	55	270033	gear	0	6.340000000000001
+B	paladin/protection	55	271956	gear	0	39.580000000000005
+B	paladin/protection	55	272958	gear	0	57.65
+B	paladin/protection	55	276399	gear	0	48.93
+B	paladin/protection	55	277235	gear	0	26.700000000000003
+B	paladin/protection	55	282560	gear	0	32.24
+B	paladin/protection	55	286609	oh	0	44.10000000000001
+B	paladin/protection	60	25	mh	0	7.3500000000000005
+B	paladin/protection	60	1315	gear	0	13.549999999999999
+B	paladin/protection	60	1808	gear	0	0.74
+B	paladin/protection	60	2614	gear	0	0.29
+B	paladin/protection	60	3158	gear	0	0.26
+B	paladin/protection	60	3570	mh	0	58.839999999999996
+B	paladin/protection	60	4068	oh	0	10.620000000000001
+B	paladin/protection	60	4570	mh	12918	89.6
+B	paladin/protection	60	5079	gear	0	0.0
+B	paladin/protection	60	6063	gear	0	0.55
+B	paladin/protection	60	6540	gear	12759	13.579999999999998
+B	paladin/protection	60	6557	gear	12734	8.09
+B	paladin/protection	60	7047	gear	0	4.409999999999999
+B	paladin/protection	60	7538	gear	12734	46.33
+B	paladin/protection	60	7922	gear	0	16.42
+B	paladin/protection	60	8192	gear	0	7.79
+B	paladin/protection	60	9458	oh	0	10.25
+B	paladin/protection	60	9834	gear	12734	21.63
+B	paladin/protection	60	10087	gear	12759	40.78
+B	paladin/protection	60	10368	gear	0	34.04
+B	paladin/protection	60	11187	gear	0	0.04
+B	paladin/protection	60	11994	gear	12723	6.300000000000001
+B	paladin/protection	60	12790	mh	0	376.74
+B	paladin/protection	60	13183	mh	0	276.28999999999996
+B	paladin/protection	60	14122	gear	12734	7.739999999999999
+B	paladin/protection	60	14340	gear	0	2.9699999999999998
+B	paladin/protection	60	14673	gear	0	9.11
+B	paladin/protection	60	14964	oh	12759	55.2
+B	paladin/protection	60	15235	mh	12908	282.11
+B	paladin/protection	60	15477	gear	12759	6.709999999999999
+B	paladin/protection	60	15945	oh	0	1.88
+B	paladin/protection	60	16711	gear	0	17.919999999999998
+B	paladin/protection	60	18312	gear	0	63.07
+B	paladin/protection	60	18726	gear	0	5.950000000000001
+B	paladin/protection	60	19557	mh	0	156.43
+B	paladin/protection	60	20129	gear	0	11.71
+B	paladin/protection	60	22270	gear	0	41.9
+B	paladin/protection	60	22400	ranged	0	0.0
+B	paladin/protection	60	22967	gear	0	6.68
+B	paladin/protection	60	250491	gear	0	17.28
+B	paladin/protection	60	252507	gear	0	13.259999999999998
+B	paladin/protection	60	254111	gear	0	11.870000000000001
+B	paladin/protection	60	270033	gear	0	5.71
+B	paladin/protection	60	271956	gear	0	30.45
+B	paladin/protection	60	272958	gear	0	64.54
+B	paladin/protection	60	276399	gear	0	34.55
+B	paladin/protection	60	277235	gear	0	18.65
+B	paladin/protection	60	282560	gear	0	29.759999999999998
+B	paladin/protection	60	286609	oh	0	26.310000000000002
 B	warrior/arms	12	25	mh	0	6.615
 B	warrior/arms	12	1315	gear	0	37.9
 B	warrior/arms	12	1808	gear	0	3.7739999999999996
@@ -33088,6 +37702,336 @@ B	warrior/fury	60	277235	gear	0	37.585
 B	warrior/fury	60	280082	mh	0	125.31
 B	warrior/fury	60	282560	gear	0	23.951
 B	warrior/fury	60	286609	oh	0	49.512
+B	warrior/protection	12	25	mh	0	4.41
+B	warrior/protection	12	1315	gear	0	25.549999999999997
+B	warrior/protection	12	1808	gear	0	1.554
+B	warrior/protection	12	2225	mh	0	21.0
+B	warrior/protection	12	2614	gear	0	0.609
+B	warrior/protection	12	3158	gear	0	0.546
+B	warrior/protection	12	3570	mh	0	36.104
+B	warrior/protection	12	4023	mh	0	64.512
+B	warrior/protection	12	4068	oh	0	30.123000000000005
+B	warrior/protection	12	4570	mh	12722	48.3
+B	warrior/protection	12	5079	gear	0	0.0
+B	warrior/protection	12	6063	gear	0	1.155
+B	warrior/protection	12	6540	gear	12719	6.798000000000001
+B	warrior/protection	12	6557	gear	12722	5.229
+B	warrior/protection	12	7047	gear	0	5.396
+B	warrior/protection	12	7538	gear	12722	32.823
+B	warrior/protection	12	7922	gear	0	31.710000000000004
+B	warrior/protection	12	8192	gear	0	11.486
+B	warrior/protection	12	9458	oh	0	19.206
+B	warrior/protection	12	9834	gear	12722	14.133000000000001
+B	warrior/protection	12	10087	gear	12722	24.738
+B	warrior/protection	12	10368	gear	0	56.328
+B	warrior/protection	12	11187	gear	0	0.084
+B	warrior/protection	12	11994	gear	12722	6.300000000000001
+B	warrior/protection	12	12790	mh	0	226.044
+B	warrior/protection	12	13183	mh	0	165.774
+B	warrior/protection	12	14122	gear	12719	4.434000000000001
+B	warrior/protection	12	14340	gear	0	22.748
+B	warrior/protection	12	14673	gear	0	12.634
+B	warrior/protection	12	14964	oh	12722	55.02
+B	warrior/protection	12	15235	mh	12751	131.024
+B	warrior/protection	12	15477	gear	12731	4.321
+B	warrior/protection	12	15691	ranged	0	4.140000000000001
+B	warrior/protection	12	15945	oh	0	4.140000000000001
+B	warrior/protection	12	16711	gear	0	20.523000000000003
+B	warrior/protection	12	18312	gear	0	47.957
+B	warrior/protection	12	18726	gear	0	18.803
+B	warrior/protection	12	19557	mh	0	99.76
+B	warrior/protection	12	20129	gear	0	18.177000000000003
+B	warrior/protection	12	20437	ranged	0	4.0600000000000005
+B	warrior/protection	12	22270	gear	0	30.666999999999998
+B	warrior/protection	12	22967	gear	0	35.753
+B	warrior/protection	12	226878	gear	0	40.753
+B	warrior/protection	12	250491	gear	0	8.264000000000001
+B	warrior/protection	12	252507	gear	0	12.596
+B	warrior/protection	12	254111	gear	0	15.434000000000001
+B	warrior/protection	12	270033	gear	0	5.3389999999999995
+B	warrior/protection	12	271956	gear	0	31.312
+B	warrior/protection	12	272958	gear	0	19.752000000000002
+B	warrior/protection	12	274646	ranged	0	1.9
+B	warrior/protection	12	276399	gear	0	32.967
+B	warrior/protection	12	277235	gear	0	32.455
+B	warrior/protection	12	280082	mh	0	173.76
+B	warrior/protection	12	282560	gear	0	18.773
+B	warrior/protection	12	286609	oh	0	43.885999999999996
+B	warrior/protection	25	25	mh	0	2.5900000000000007
+B	warrior/protection	25	1315	gear	0	17.15
+B	warrior/protection	25	1808	gear	0	0.74
+B	warrior/protection	25	2225	mh	0	14.16
+B	warrior/protection	25	2614	gear	0	0.29
+B	warrior/protection	25	3158	gear	0	0.26
+B	warrior/protection	25	3570	mh	0	26.5
+B	warrior/protection	25	4023	mh	0	45.239999999999995
+B	warrior/protection	25	4068	oh	0	13.05
+B	warrior/protection	25	4570	mh	12725	36.510000000000005
+B	warrior/protection	25	5079	gear	0	0.0
+B	warrior/protection	25	6063	gear	0	0.55
+B	warrior/protection	25	6540	gear	12730	4.73
+B	warrior/protection	25	6557	gear	12725	4.2700000000000005
+B	warrior/protection	25	7047	gear	0	4.71
+B	warrior/protection	25	7538	gear	12725	27.2
+B	warrior/protection	25	7922	gear	0	19.660000000000004
+B	warrior/protection	25	8192	gear	0	6.390000000000001
+B	warrior/protection	25	9458	oh	0	10.43
+B	warrior/protection	25	9834	gear	12725	12.07
+B	warrior/protection	25	10087	gear	12725	19.79
+B	warrior/protection	25	10368	gear	0	38.660000000000004
+B	warrior/protection	25	11187	gear	0	0.04
+B	warrior/protection	25	11994	gear	12725	5.67
+B	warrior/protection	25	12790	mh	0	162.3
+B	warrior/protection	25	13183	mh	0	117.85
+B	warrior/protection	25	14122	gear	12730	2.81
+B	warrior/protection	25	14340	gear	0	8.1
+B	warrior/protection	25	14673	gear	0	8.21
+B	warrior/protection	25	14964	oh	12725	34.209999999999994
+B	warrior/protection	25	15235	mh	12725	94.88000000000001
+B	warrior/protection	25	15477	gear	12732	3.01
+B	warrior/protection	25	15691	ranged	0	3.99
+B	warrior/protection	25	15945	oh	0	2.54
+B	warrior/protection	25	16711	gear	0	11.830000000000002
+B	warrior/protection	25	18312	gear	0	26.770000000000003
+B	warrior/protection	25	18726	gear	0	7.130000000000001
+B	warrior/protection	25	19557	mh	0	72.60000000000001
+B	warrior/protection	25	20129	gear	0	11.830000000000002
+B	warrior/protection	25	20437	ranged	0	1.8000000000000003
+B	warrior/protection	25	22270	gear	0	19.07
+B	warrior/protection	25	22967	gear	0	13.43
+B	warrior/protection	25	226878	gear	0	28.490000000000002
+B	warrior/protection	25	250491	gear	0	3.3600000000000003
+B	warrior/protection	25	252507	gear	0	4.56
+B	warrior/protection	25	254111	gear	0	5.48
+B	warrior/protection	25	270033	gear	0	4.71
+B	warrior/protection	25	271956	gear	0	18.59
+B	warrior/protection	25	272958	gear	0	7.680000000000001
+B	warrior/protection	25	274646	ranged	0	1.6500000000000001
+B	warrior/protection	25	276399	gear	0	13.11
+B	warrior/protection	25	277235	gear	0	21.35
+B	warrior/protection	25	280082	mh	0	129.93
+B	warrior/protection	25	282560	gear	0	7.07
+B	warrior/protection	25	286609	oh	0	23.8
+B	warrior/protection	34	25	mh	0	2.595
+B	warrior/protection	34	1315	gear	0	14.15
+B	warrior/protection	34	1808	gear	0	0.814
+B	warrior/protection	34	2225	mh	0	14.84
+B	warrior/protection	34	2614	gear	0	0.319
+B	warrior/protection	34	3158	gear	0	0.286
+B	warrior/protection	34	3570	mh	0	26.731999999999996
+B	warrior/protection	34	4023	mh	0	46.956
+B	warrior/protection	34	4068	oh	0	14.283
+B	warrior/protection	34	4570	mh	12725	36.559999999999995
+B	warrior/protection	34	5079	gear	0	0.0
+B	warrior/protection	34	6063	gear	0	0.605
+B	warrior/protection	34	6540	gear	12730	3.658
+B	warrior/protection	34	6557	gear	12725	3.8789999999999996
+B	warrior/protection	34	7047	gear	0	3.636
+B	warrior/protection	34	7538	gear	12725	24.603
+B	warrior/protection	34	7922	gear	0	20.330000000000002
+B	warrior/protection	34	8192	gear	0	6.736
+B	warrior/protection	34	9458	oh	0	10.546
+B	warrior/protection	34	9834	gear	12725	10.823
+B	warrior/protection	34	10087	gear	12725	18.088
+B	warrior/protection	34	10368	gear	0	36.587999999999994
+B	warrior/protection	34	11187	gear	0	0.044
+B	warrior/protection	34	11994	gear	12725	5.01
+B	warrior/protection	34	12790	mh	0	167.502
+B	warrior/protection	34	13183	mh	0	121.697
+B	warrior/protection	34	14122	gear	12719	2.314
+B	warrior/protection	34	14340	gear	0	8.758
+B	warrior/protection	34	14673	gear	0	8.484
+B	warrior/protection	34	14964	oh	12725	33.95
+B	warrior/protection	34	15235	mh	12725	96.257
+B	warrior/protection	34	15477	gear	12732	3.1109999999999998
+B	warrior/protection	34	15691	ranged	0	4.02
+B	warrior/protection	34	15945	oh	0	2.16
+B	warrior/protection	34	16711	gear	0	12.605
+B	warrior/protection	34	18312	gear	0	27.987
+B	warrior/protection	34	18726	gear	0	7.792999999999999
+B	warrior/protection	34	19557	mh	0	74.15
+B	warrior/protection	34	20129	gear	0	12.227
+B	warrior/protection	34	20437	ranged	0	1.9100000000000001
+B	warrior/protection	34	22270	gear	0	19.826999999999998
+B	warrior/protection	34	22967	gear	0	14.573
+B	warrior/protection	34	226878	gear	0	30.143
+B	warrior/protection	34	250491	gear	0	3.6639999999999997
+B	warrior/protection	34	252507	gear	0	4.936
+B	warrior/protection	34	254111	gear	0	5.924
+B	warrior/protection	34	270033	gear	0	4.789000000000001
+B	warrior/protection	34	271956	gear	0	20.432
+B	warrior/protection	34	272958	gear	0	8.352
+B	warrior/protection	34	274646	ranged	0	1.7000000000000002
+B	warrior/protection	34	276399	gear	0	14.277
+B	warrior/protection	34	277235	gear	0	22.005000000000003
+B	warrior/protection	34	280082	mh	0	129.655
+B	warrior/protection	34	282560	gear	0	7.673
+B	warrior/protection	34	286609	oh	0	24.395999999999997
+B	warrior/protection	45	25	mh	0	-0.7999999999999998
+B	warrior/protection	45	1315	gear	0	17.15
+B	warrior/protection	45	1808	gear	0	0.518
+B	warrior/protection	45	2225	mh	0	10.26
+B	warrior/protection	45	2614	gear	0	0.203
+B	warrior/protection	45	3158	gear	0	0.182
+B	warrior/protection	45	3570	mh	0	26.36
+B	warrior/protection	45	4023	mh	0	41.339999999999996
+B	warrior/protection	45	4068	oh	0	8.811
+B	warrior/protection	45	4570	mh	12725	40.71
+B	warrior/protection	45	5079	gear	0	0.0
+B	warrior/protection	45	6063	gear	0	0.385
+B	warrior/protection	45	6540	gear	12730	5.146
+B	warrior/protection	45	6557	gear	12725	4.323
+B	warrior/protection	45	7047	gear	0	5.132000000000001
+B	warrior/protection	45	7538	gear	12725	27.711
+B	warrior/protection	45	7922	gear	0	16.93
+B	warrior/protection	45	8192	gear	0	7.032
+B	warrior/protection	45	9458	oh	0	8.402000000000001
+B	warrior/protection	45	9834	gear	12725	12.450999999999999
+B	warrior/protection	45	10087	gear	12725	19.856
+B	warrior/protection	45	10368	gear	0	36.196
+B	warrior/protection	45	11187	gear	0	0.028
+B	warrior/protection	45	11994	gear	12725	5.97
+B	warrior/protection	45	12790	mh	0	166.20000000000002
+B	warrior/protection	45	13183	mh	0	114.46
+B	warrior/protection	45	14122	gear	12730	3.0679999999999996
+B	warrior/protection	45	14340	gear	0	4.986
+B	warrior/protection	45	14673	gear	0	8.708
+B	warrior/protection	45	14964	oh	12725	29.950000000000003
+B	warrior/protection	45	15235	mh	12725	93.29
+B	warrior/protection	45	15477	gear	12732	2.707
+B	warrior/protection	45	15691	ranged	0	4.4399999999999995
+B	warrior/protection	45	15945	oh	0	2.44
+B	warrior/protection	45	16711	gear	0	13.975
+B	warrior/protection	45	18312	gear	0	21.919
+B	warrior/protection	45	18726	gear	0	4.801
+B	warrior/protection	45	19557	mh	0	73.96000000000001
+B	warrior/protection	45	20129	gear	0	11.359
+B	warrior/protection	45	20437	ranged	0	1.65
+B	warrior/protection	45	22270	gear	0	16.439
+B	warrior/protection	45	22967	gear	0	8.501
+B	warrior/protection	45	226878	gear	0	29.311000000000003
+B	warrior/protection	45	250491	gear	0	2.208
+B	warrior/protection	45	252507	gear	0	2.8320000000000003
+B	warrior/protection	45	254111	gear	0	3.3680000000000003
+B	warrior/protection	45	270033	gear	0	5.193
+B	warrior/protection	45	271956	gear	0	23.704
+B	warrior/protection	45	272958	gear	0	4.944000000000001
+B	warrior/protection	45	274646	ranged	0	2.4
+B	warrior/protection	45	276399	gear	0	8.529
+B	warrior/protection	45	277235	gear	0	18.785
+B	warrior/protection	45	280082	mh	0	139.38
+B	warrior/protection	45	282560	gear	0	4.481
+B	warrior/protection	45	286609	oh	0	19.212
+B	warrior/protection	55	25	mh	0	3.54
+B	warrior/protection	55	1315	gear	0	14.0
+B	warrior/protection	55	1808	gear	0	0.703
+B	warrior/protection	55	2225	mh	0	16.43
+B	warrior/protection	55	2614	gear	0	0.27549999999999997
+B	warrior/protection	55	3158	gear	0	0.247
+B	warrior/protection	55	3570	mh	0	25.45
+B	warrior/protection	55	4023	mh	0	47.64
+B	warrior/protection	55	4068	oh	0	12.5685
+B	warrior/protection	55	4570	mh	12725	33.48
+B	warrior/protection	55	5079	gear	0	0.0
+B	warrior/protection	55	6063	gear	0	0.5225
+B	warrior/protection	55	6540	gear	12730	3.6660000000000004
+B	warrior/protection	55	6557	gear	12725	3.8255000000000003
+B	warrior/protection	55	7047	gear	0	3.6470000000000002
+B	warrior/protection	55	7538	gear	12725	24.3385
+B	warrior/protection	55	7922	gear	0	19.505000000000003
+B	warrior/protection	55	8192	gear	0	8.107
+B	warrior/protection	55	9458	oh	0	9.411999999999999
+B	warrior/protection	55	9834	gear	12725	10.7735
+B	warrior/protection	55	10087	gear	12725	17.761000000000003
+B	warrior/protection	55	10368	gear	0	35.426
+B	warrior/protection	55	11187	gear	0	0.038
+B	warrior/protection	55	11994	gear	12725	5.04
+B	warrior/protection	55	12790	mh	0	159.9
+B	warrior/protection	55	13183	mh	0	118.8
+B	warrior/protection	55	14122	gear	12719	2.253
+B	warrior/protection	55	14340	gear	0	8.056
+B	warrior/protection	55	14673	gear	0	9.633000000000001
+B	warrior/protection	55	14964	oh	12725	31.46
+B	warrior/protection	55	15235	mh	12725	93.98000000000002
+B	warrior/protection	55	15477	gear	12732	2.9595000000000002
+B	warrior/protection	55	15691	ranged	0	4.47
+B	warrior/protection	55	15945	oh	0	2.12
+B	warrior/protection	55	16711	gear	0	16.0325
+B	warrior/protection	55	18312	gear	0	26.4615
+B	warrior/protection	55	18726	gear	0	7.373500000000001
+B	warrior/protection	55	19557	mh	0	70.48
+B	warrior/protection	55	20129	gear	0	12.7115
+B	warrior/protection	55	20437	ranged	0	2.12
+B	warrior/protection	55	22270	gear	0	18.9915
+B	warrior/protection	55	22967	gear	0	13.2335
+B	warrior/protection	55	226878	gear	0	33.493500000000004
+B	warrior/protection	55	250491	gear	0	3.268
+B	warrior/protection	55	252507	gear	0	4.522
+B	warrior/protection	55	254111	gear	0	5.453
+B	warrior/protection	55	270033	gear	0	5.3305
+B	warrior/protection	55	271956	gear	0	27.953999999999997
+B	warrior/protection	55	272958	gear	0	7.524000000000001
+B	warrior/protection	55	274646	ranged	0	2.45
+B	warrior/protection	55	276399	gear	0	12.7965
+B	warrior/protection	55	277235	gear	0	21.1725
+B	warrior/protection	55	280082	mh	0	127.62
+B	warrior/protection	55	282560	gear	0	6.9635
+B	warrior/protection	55	286609	oh	0	21.932000000000002
+B	warrior/protection	60	25	mh	0	3.1500000000000004
+B	warrior/protection	60	1315	gear	0	15.100000000000001
+B	warrior/protection	60	1808	gear	0	0.814
+B	warrior/protection	60	2225	mh	0	15.0
+B	warrior/protection	60	2614	gear	0	0.319
+B	warrior/protection	60	3158	gear	0	0.286
+B	warrior/protection	60	3570	mh	0	26.36
+B	warrior/protection	60	4023	mh	0	46.08
+B	warrior/protection	60	4068	oh	0	14.733
+B	warrior/protection	60	4570	mh	12725	35.1
+B	warrior/protection	60	5079	gear	0	0.0
+B	warrior/protection	60	6063	gear	0	0.605
+B	warrior/protection	60	6540	gear	12730	3.808
+B	warrior/protection	60	6557	gear	12725	3.939
+B	warrior/protection	60	7047	gear	0	3.786
+B	warrior/protection	60	7538	gear	12725	24.993000000000002
+B	warrior/protection	60	7922	gear	0	20.93
+B	warrior/protection	60	8192	gear	0	8.856
+B	warrior/protection	60	9458	oh	0	10.636
+B	warrior/protection	60	9834	gear	12725	11.003
+B	warrior/protection	60	10087	gear	12725	18.358
+B	warrior/protection	60	10368	gear	0	37.708
+B	warrior/protection	60	11187	gear	0	0.044
+B	warrior/protection	60	11994	gear	12725	5.1
+B	warrior/protection	60	12790	mh	0	161.46
+B	warrior/protection	60	13183	mh	0	118.41
+B	warrior/protection	60	14122	gear	12719	2.4739999999999998
+B	warrior/protection	60	14340	gear	0	9.708
+B	warrior/protection	60	14673	gear	0	10.264000000000001
+B	warrior/protection	60	14964	oh	12725	34.22
+B	warrior/protection	60	15235	mh	12725	94.21000000000001
+B	warrior/protection	60	15477	gear	12732	3.1109999999999998
+B	warrior/protection	60	15691	ranged	0	4.53
+B	warrior/protection	60	15945	oh	0	2.32
+B	warrior/protection	60	16711	gear	0	17.615000000000002
+B	warrior/protection	60	18312	gear	0	28.987000000000002
+B	warrior/protection	60	18726	gear	0	8.823
+B	warrior/protection	60	19557	mh	0	72.28
+B	warrior/protection	60	20129	gear	0	13.547
+B	warrior/protection	60	20437	ranged	0	2.4000000000000004
+B	warrior/protection	60	22270	gear	0	20.447000000000003
+B	warrior/protection	60	22967	gear	0	15.823
+B	warrior/protection	60	226878	gear	0	36.543
+B	warrior/protection	60	250491	gear	0	3.864
+B	warrior/protection	60	252507	gear	0	5.436000000000001
+B	warrior/protection	60	254111	gear	0	6.574000000000001
+B	warrior/protection	60	270033	gear	0	5.469
+B	warrior/protection	60	271956	gear	0	31.421999999999997
+B	warrior/protection	60	272958	gear	0	8.952
+B	warrior/protection	60	274646	ranged	0	2.55
+B	warrior/protection	60	276399	gear	0	15.177
+B	warrior/protection	60	277235	gear	0	22.505000000000003
+B	warrior/protection	60	280082	mh	0	130.95
+B	warrior/protection	60	282560	gear	0	8.323
+B	warrior/protection	60	286609	oh	0	24.855999999999998
 B	rogue/combat	12	25	mh	0	0.7450000000000019
 B	rogue/combat	12	1315	gear	0	19.4
 B	rogue/combat	12	1808	gear	0	1.702

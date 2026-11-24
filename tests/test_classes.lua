@@ -57,12 +57,12 @@ return {
 		T.eq(table.concat(S.Keys("warlock"), ","), "affliction,demonology,destruction")
 		T.eq(table.concat(S.Keys("druid"), ","), "balance,feral,restoration")
 		T.eq(table.concat(S.Keys("shaman"), ","), "elemental,enhancement,restoration")
-		T.eq(table.concat(S.Keys("paladin"), ","), "holy,retribution")
-		T.eq(table.concat(S.Keys("warrior"), ","), "arms,fury")
+		T.eq(table.concat(S.Keys("paladin"), ","), "holy,protection,retribution")
+		T.eq(table.concat(S.Keys("warrior"), ","), "arms,fury,protection")
 		T.ok(S.Supported("druid", "balance")); T.ok(S.Supported("druid", "feral"))
 		T.ok(S.Supported("paladin", "retribution")); T.ok(S.Supported("warrior", "arms"))
-		-- tanks wait for their weights (no weaponModel bands yet)
-		T.ok(not S.Supported("paladin", "protection")); T.ok(not S.Supported("warrior", "protection"))
+		-- tanks since 0.7.1 (their bands carry weaponModel)
+		T.ok(S.Supported("paladin", "protection")); T.ok(S.Supported("warrior", "protection"))
 	end,
 	-- No talent points: the website's default when shipped, else the class's first shipped spec; the
 	-- hybrids start as casters in the addon (Balance, Elemental, Holy: Spec.CASTER_DEFAULT), the data
@@ -163,10 +163,12 @@ return {
 		c = E.Compare(shield, w, "shaman", worn, false)
 		T.eq(c.slot, 17); T.near(c.score, 52); T.near(c.gain, 22)
 	end,
-	-- A spec with no weights (here Protection from the talents): no context (never another spec's weights),
-	-- one chat line saying how to pick a supported one; choosing Holy scores again.
+	-- A spec with no weights (here Protection, its bands made to lack the weapon model as before 0.7.1):
+	-- no context (never another spec's weights), one chat line saying how to pick a supported one;
+	-- choosing Holy scores again.
 	unsupported_spec = function()
 		local ns = addon("paladin")
+		ns.DATA.specs.paladin.protection.weaponModel = nil
 		local said = {}
 		ns.Print = function(...) said[#said + 1] = table.concat({ ... }, " ") end
 		ns.Spec.Detect = function() return "protection", { 0, 31, 0 } end
@@ -187,12 +189,14 @@ return {
 		-- the other unsupported spec
 		for cls, key in pairs({ warrior = "protection" }) do
 			local n = addon(cls)
+			n.DATA.specs[cls][key].weaponModel = nil
 			n.Print = function() end
 			n.Spec.Detect = function() return key end
 			T.eq(n.Context.Get(), nil, key)
 			T.ok(n.Context.SpecUnsupported():find(" isn't supported yet. Pick a supported spec in Settings", 1, true), key)
 		end
 		local p = addon("paladin")
+		p.DATA.specs.paladin.protection.weaponModel = nil
 		p.Print = function() end
 		p.Spec.Detect = function() return "protection" end
 		p.Context.Get()
@@ -201,6 +205,7 @@ return {
 	-- /psg spec lists only supported specs and refuses an unsupported one.
 	slash_spec = function()
 		local ns = addon("paladin")
+		ns.DATA.specs.paladin.protection.weaponModel = nil -- a spec without weights (Protection before 0.7.1)
 		ns.Context = { ClassKey = function() return "paladin" end, SpecUnsupported = function() return nil end }
 		local said
 		ns.Print = function(...) said = table.concat({ ... }, " ") end
@@ -209,6 +214,23 @@ return {
 		T.ok(said:find("auto|holy|retribution", 1, true), said)
 		SlashCmdList.POLESIMGEAR("spec retribution")
 		T.eq(ns.char.spec, "retribution")
+	end,
+	-- 0.7.1: the tanks have weights; /psg spec protection picks them and Protection talents score.
+	tanks_supported = function()
+		for _, cls in ipairs({ "paladin", "warrior" }) do
+			local ns = addon(cls)
+			ns.Context = { ClassKey = function() return cls end, SpecUnsupported = function() return nil end }
+			ns.Print = function() end
+			SlashCmdList.POLESIMGEAR("spec protection")
+			T.eq(ns.char.spec, "protection", cls)
+			local n = addon(cls)
+			n.Print = function() end
+			n.Spec.Detect = function() return "protection", { 0, 31, 0 } end
+			local ctx = n.Context.Get()
+			T.ok(ctx, cls .. ": Protection from the talents scores")
+			T.eq(ctx.spec, "protection"); T.eq(ctx.ref, "str")
+			T.eq(n.Context.SpecUnsupported(), nil)
+		end
 	end,
 	-- The auction house scan asks for the armor the class wears by level + ahead, shields, its weapons.
 	ah_queries = function()

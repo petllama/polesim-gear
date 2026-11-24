@@ -289,6 +289,32 @@ return {
 		T.eq(#offs, 1, "one off hand: the best set's")
 		T.ok(mace and mace.partner == offs[1], "next to its one-hander")
 	end,
+	-- Weapons follow the band's weapon style, as the Gear Plan and the website: a tank (one-hander +
+	-- shield) is never offered a two-hander, a two-hander spec never a one-hander or shield; casters any.
+	weapon_style_gate = function()
+		local ns = T.addon(FILES)
+		local W = ns.AH.WeaponFits
+		T.ok(not W(17, "shield")); T.ok(W(13, "shield")); T.ok(W(21, "shield")); T.ok(W(14, "shield"))
+		T.ok(not W(23, "shield"), "no held-in-off-hand frill for a tank"); T.ok(not W(22, "shield"))
+		T.ok(W(17, "2h")); T.ok(not W(13, "2h")); T.ok(not W(14, "2h"))
+		T.ok(W(17, "any")); T.ok(W(13, "any")); T.ok(W(23, "any")); T.ok(W(17, nil))
+		T.ok(W(22, "dw", true)); T.ok(not W(22, "dw", false))
+		T.ok(W(1, "shield"), "armor always fits"); T.ok(W(15, "2h"), "ranged is not a hand weapon")
+		local tank = addon(45, {}, "paladin")
+		tank.Context.Get = function()
+			local band, lo = tank.Bands.For("paladin", "protection", 45)
+			return { cls = "paladin", spec = "protection", level = 45, band = band, lo = lo, w = band.w, worn = {} }
+		end
+		T.eq(tank.Context.Get().band.style, "shield")
+		_G.C_AuctionHouse = stubAH({})
+		local found = {}
+		local function add(id, price) local r = result(id, price) found[id .. ":0:0"] = { itemKey = r.itemKey, minPrice = price, result = r } end
+		add(287015, 1000) -- Supreme Smasher (two-hand mace, a paladin can use it)
+		add(789, 4000) -- Stout Battlehammer (one-hand mace)
+		local by = {}
+		for _, r in ipairs(tank.AH.Build(found, tank.Context.Get(), 0)) do by[r.c.id] = r end
+		T.eq(by[287015], nil, "no two-hander for Protection"); T.ok(by[789], "the one-hander is listed")
+	end,
 	-- Sort: Gain (default, biggest first), Value (gain per gold), Price (cheapest first).
 	sort_orders = function()
 		local ns = addon(20)

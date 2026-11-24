@@ -111,6 +111,21 @@ local function roleOf(inv)
 	return "gear"
 end
 
+-- A weapon of this inventory type in a hand the spec's weapon style uses at that band (Browser.Invs,
+-- the Gear Plan's and the website's rule: tanks one-hander + shield, Arms/Ret/Enh two-handers, casters
+-- any); non-weapons always fit.
+function AH.WeaponFits(inv, style, canDw)
+	if not (MAIN_INV[inv] or OFF_INV[inv]) then return true end
+	for _, def in ipairs(ns.Browser.SLOTS) do
+		if def.key == "mainhand" or def.key == "offhand" then
+			for _, i in ipairs(ns.Browser.Invs(def, style or "any", canDw)) do
+				if i == inv then return true end
+			end
+		end
+	end
+	return false
+end
+
 -- One found entry -> a candidate { key, c, cmp, def, at, price, anySuffix, band } | nil, why
 local function candidate(f, ctx, top, bandAt)
 	local id = f.itemKey.itemID
@@ -124,6 +139,7 @@ local function candidate(f, ctx, top, bandAt)
 	local L = math.max(ctx.level, rec.rl)
 	local band = bandAt(L)
 	if not band then return nil, "no weights" end
+	if not AH.WeaponFits(rec.inv, band.band and band.band.style, band.canDw) then return nil, "weapon style" end
 	local role = roleOf(rec.inv)
 	local inst, anySuffix
 	if #rec.sfx > 0 then

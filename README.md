@@ -1,36 +1,37 @@
 # PoleSim Gear
 
-Version 0.7.0. WoW: Forever addon: PoleSim's simulated, level-banded gear weights in game. Item scores with a
+Version 0.7.1. WoW: Forever addon: PoleSim's simulated, level-banded gear weights in game. Item scores with a
 "how?" breakdown, upgrade arrows, the best quest reward, and a gear planner window with where to get
 each upgrade. In testing.
 
 **Download:** the latest zip is on the [Releases page](https://github.com/petllama/polesim-gear/releases/latest).
 Unzip it into `World of Warcraft/_forever_/Interface/AddOns/` (a new install needs a game restart; an
-update needs `/reload`, unless its notes say it adds files: 0.7.0 does, restart the game).
+update needs `/reload`, unless its notes say it adds files: 0.7.1 adds none; updating from before 0.7.0,
+restart the game).
 
 **Supported classes and specs** (weights from PoleSim's simulation of each spec leveling):
 
-| Class   | Specs with weights                      | Default spec* | Not supported yet                     |
-|---------|-----------------------------------------|---------------|---------------------------------------|
-| Priest  | Shadow, Holy, Discipline                | Shadow        |                                       |
-| Mage    | Frost, Fire, Arcane                     | Frost         |                                       |
-| Warlock | Affliction, Demonology, Destruction     | Affliction    |                                       |
-| Warrior | Arms, Fury                              | Arms          | Protection (tank weights pending)     |
-| Rogue   | Assassination, Combat, Subtlety         | Combat        |                                       |
-| Hunter  | Beast Mastery, Marksmanship, Survival   | Beast Mastery |                                       |
-| Druid   | Balance, Feral, Restoration             | Balance       |                                       |
-| Shaman  | Elemental, Enhancement, Restoration     | Elemental     |                                       |
-| Paladin | Holy, Retribution                       | Holy          | Protection (tank weights pending)     |
+| Class   | Specs with weights                      | Default spec* |
+|---------|-----------------------------------------|---------------|
+| Priest  | Shadow, Holy, Discipline                | Shadow        |
+| Mage    | Frost, Fire, Arcane                     | Frost         |
+| Warlock | Affliction, Demonology, Destruction     | Affliction    |
+| Warrior | Arms, Fury, Protection†                 | Arms          |
+| Rogue   | Assassination, Combat, Subtlety         | Combat        |
+| Hunter  | Beast Mastery, Marksmanship, Survival   | Beast Mastery |
+| Druid   | Balance, Feral, Restoration             | Balance       |
+| Shaman  | Elemental, Enhancement, Restoration     | Elemental     |
+| Paladin | Holy, Retribution, Protection†          | Holy          |
 
 \* The spec used before you have spent any talent points (below level 10). Druids, shamans and paladins
 start on their caster spec (the website's import starts them on Feral, Enhancement and Retribution).
 You can pick another in Settings (or `/psg spec`) at any time.
 
-Not supported yet: Warrior and Paladin Protection (tank weights rest on the least validated parts of the
-model and wait for their own run). A warrior or paladin whose talents point to Protection is not scored
-with another spec's weights: chat and the window say "Paladin Protection isn't supported yet. Pick a
-supported spec in Settings to use its weights." and Settings (or the Weights tab, or `/psg spec
-retribution`) lets you choose one of the class's supported specs.
+† Tanks (since 0.7.1): Protection weights are less certain than the others: Stamina, armor and
+avoidance rest on the least validated parts of PoleSim's model (the Weights tab says so). Prot Paladin:
+block is a damage stat from 42 (Holy Shield, Reckoning), faster weapons score better until ~55, and the
+level-60 weapon speed weight is set to neutral (PoleSim's sim and wowsims/forever disagree on it). Tanks
+are planned with a one-hander and a shield.
 
 **Weapons (melee classes and hunters, 0.7.0).** A weapon scores its DPS and its **speed**: at the same
 DPS, abilities that add weapon damage hit harder with a slow weapon, so Arms, Retribution and
