@@ -135,6 +135,35 @@ return {
 		T.eq(#shown, 1, "once")
 		done()
 	end,
+	-- Polestar's Gear on and nothing to ask (answered earlier): one chat line per session saying our
+	-- equip prompt stays quiet; none while it is off, none while the question is up
+	notice_once_per_session = function()
+		local ns, shown = prompt()
+		local said = {}
+		ns.Print = function(msg) said[#said + 1] = msg end
+		ns.db.askedPolestarGear = "no"
+		event(ns, "PLAYER_LOGIN")
+		W().flush()
+		T.eq(#shown, 0)
+		T.eq(#said, 1); T.eq(said[1], "Polestar's Gear is on: PoleSim Gear's equip prompt stays quiet.")
+		ns.Coexist.MaybeAsk(); event(ns, "PLAYER_LOGIN"); W().flush()
+		T.eq(#said, 1, "once per session")
+		done()
+		ns, shown = prompt()
+		said = {}
+		ns.Print = function(msg) said[#said + 1] = msg end
+		ns.db.askedPolestarGear = "yes"
+		_G.Polestar.Gear.IsEnabled = function() return false end
+		event(ns, "PLAYER_LOGIN"); W().flush()
+		T.eq(#said, 0, "not when Polestar's Gear is off")
+		done()
+		ns, shown = prompt()
+		said = {}
+		ns.Print = function(msg) said[#said + 1] = msg end
+		event(ns, "PLAYER_LOGIN"); W().flush()
+		T.eq(#shown, 1); T.eq(#said, 0, "the question is up: no notice")
+		done()
+	end,
 	prompt_silent_without_module = function()
 		local ns, shown = prompt()
 		_G.Polestar = {}

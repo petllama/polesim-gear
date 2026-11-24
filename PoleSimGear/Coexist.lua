@@ -83,9 +83,19 @@ end
 
 -- Ask now if it is due: saved variables loaded, a class we score, Polestar's Gear on, no answer yet,
 -- not asked already this session. In combat it waits for PLAYER_REGEN_ENABLED.
+-- Polestar's Gear on and nothing to ask: one chat line per session that our equip prompt (Prompt.lua)
+-- stays quiet meanwhile (Polestar's own Wear it banner asks instead).
+Coexist.NOTICE = "Polestar's Gear is on: PoleSim Gear's equip prompt stays quiet."
+local noticed = false
+function Coexist.Notice()
+	if noticed or not Coexist.PolestarGearOn() then return end
+	noticed = true
+	ns.Print(Coexist.NOTICE)
+end
+
 function Coexist.MaybeAsk()
 	if askedThisSession or not (ns.db and ns.Context and ns.Context.ClassKey()) then return end
-	if not Coexist.ShouldAsk(Coexist.PolestarGearOn(), ns.db.askedPolestarGear) then return end
+	if not Coexist.ShouldAsk(Coexist.PolestarGearOn(), ns.db.askedPolestarGear) then return Coexist.Notice() end
 	if InCombatLockdown() then
 		waitingForCombat = true
 		return
