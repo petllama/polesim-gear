@@ -132,6 +132,11 @@ return {
 		local tip = table.concat(U.tip.lines, "\n")
 		T.ok(tip:find("[18] " .. q.title, 1, true), tip); T.ok(tip:find("needs: The First Step first", 1, true), tip)
 		T.ok(tip:find("On your Polestar route: Silverpine Forest, step 87 (12 steps ahead)", 1, true), tip)
+		q.level = 0 -- no quest level: the title alone, never "[0]"
+		h = U.rows(p.detail)[1]
+		T.eq(h.title.text, q.title)
+		q.level = nil
+		T.eq(U.rows(p.detail)[1].title.text, q.title)
 		local item = U.rows(p.detail)[2]
 		T.ok(item.d.c); T.eq(item.tags.shown, false, "item rows: no tag line")
 		fx.done()

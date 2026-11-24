@@ -101,7 +101,7 @@ local function placeLines(d)
 end
 
 -- a quest header's title and tags (elite, steps ahead on the Polestar route, needs: X first), coloured
-local function questTitle(q) return format("[%d] %s", q.level or 0, q.title or "?") end
+local function questTitle(q) return ns.LevelText(q.level, "[", "] ") .. (q.title or "?") end
 local function questTags(q)
 	local tags = {}
 	if q.elite then tags[#tags + 1] = S.Colour(C.orange) .. "elite|r" end
@@ -201,7 +201,7 @@ local function initDetail(row, d)
 		local ok, z = pcall(function() return codex.Zone(d.src.zoneId) end)
 		if ok and type(z) == "table" and z.name then sub = sub .. ", " .. z.name end
 	end
-	if d.at then sub = sub .. "  (level " .. d.at .. ")" end
+	sub = sub .. ns.LevelText(d.at, "  (level ", ")")
 	row.item:Set(d.c.inst, sub)
 	if d.rare then row.item:SetDim(true) end
 	row.delta:SetText(S.Signed(d.gain))

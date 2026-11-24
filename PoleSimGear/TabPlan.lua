@@ -106,9 +106,9 @@ local function fill(row, e)
 		elseif entry.near and bis then
 			-- an upgrade from an upcoming guide quest within 2 levels, suggested over the best overall
 			sub = S.Colour(C.gold) .. "near quest|r"
-			if r.at then sub = sub .. "  level " .. r.at end
+			sub = sub .. ns.LevelText(r.at, "  level ")
 		elseif r.at then
-			sub = "level " .. r.at
+			sub = ns.LevelText(r.at, "level ")
 		end
 		if bis then
 			-- the name would be cut here: the row tooltip says which item ("Best overall: ...")

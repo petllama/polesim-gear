@@ -139,7 +139,7 @@ function Tab.Init(row, d)
 	if s and s.route then sub = sub .. " " .. S.Colour(C.blue) .. ns.Route.Tag(s.route) .. "|r" end -- "in 12 steps"
 	if s and s.needs then sub = sub .. " " .. S.Colour(C.orange) .. "needs: " .. s.needs .. " first|r" end
 	row.item:Set(d.c.inst, sub)
-	row.level:SetText("lvl " .. (d.at or d.c.rl or 0))
+	row.level:SetText(ns.LevelText(d.at or d.c.rl, "lvl "))
 	row.delta:SetText(S.Signed(d.gain))
 	row.pct:SetText(S.Pct(d.gain, d.base)) -- over everything it replaces (main + off hand for a staff)
 	row.srcIcon:SetTexture(s and S.KIND_ICON[s.kind])

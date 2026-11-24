@@ -92,6 +92,12 @@ return {
 		T.eq(v[3].text, "Crafted: Tailoring 150")
 		T.eq(v[4].kind, "vendor"); T.eq(v[4].text, "Vendor: Mob")
 		T.eq(v[5].kind, "world", "the open-world drop: kept drops go after the other sources"); T.eq(v[5].text, "Drop: Mob (20)")
+		-- a quest with level 0 or none: no "(0)"
+		for _, lv in ipairs({ 0, false }) do
+			codex.Quest = function(id) return { id = id, title = "Wanted", level = lv or nil, zone = 40 } end
+			v = S.For(2, codex, player, 20)
+			T.eq(v[1].text, "Quest: Wanted, a choice"); T.ok(v[1].ok)
+		end
 	end,
 	-- A container (Codex `object` source) inside a dungeon counts as a dungeon source, as on the website
 	-- (armory: in-instance containers); one in the open world or in a raid is not one of the kinds.

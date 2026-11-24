@@ -819,7 +819,7 @@ function Win.RowLines(r, ctx, band, hint, extra)
 	end
 	GameTooltip:AddDoubleLine("Gain over what you wear", format("%+.2f", r.gain) .. (r.base and r.base > 0.01
 		and format(" (%s)", ns.Style.Pct(r.gain, r.base)) or ""), 1, 1, 1, 0.3, 1, 0.3)
-	if r.at and band then GameTooltip:AddLine(format("level %d item: scored with the weights of levels %d-%d", r.at, band.lo, band.band.upTo), 0.6, 0.6, 0.6, true) end
+	if (r.at or 0) > 0 and band then GameTooltip:AddLine(format("level %d item: scored with the weights of levels %d-%d", r.at, band.lo, band.band.upTo), 0.6, 0.6, 0.6, true) end
 	if r.note then GameTooltip:AddLine(r.note, 0.6, 0.6, 0.6, true) end
 	local pick = ns.Plan.Get(ctx.spec, r.slot.key)
 	if pick and pick == ns.Browser.KeyOf(r.c.inst) then GameTooltip:AddLine("Your pick for " .. r.slot.label, 1, 0.82, 0) end

@@ -49,7 +49,7 @@ local function mark(button, gain, upgrade, rl)
 	end
 	m.arrow:SetShown(upgrade and not rl)
 	m.text:SetText((not upgrade and GREY or rl and GOLD or GREEN) .. string.format("%+.1f", gain) .. "|r")
-	m.note:SetText(rl and (GOLD .. "lvl " .. rl .. "|r") or "")
+	m.note:SetText((rl or 0) > 0 and (GOLD .. "lvl " .. rl .. "|r") or "")
 	m.note:SetShown(rl and true or false)
 	m:Show()
 end

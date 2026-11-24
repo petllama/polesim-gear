@@ -12,6 +12,17 @@ return {
 		T.eq(ns.LevelLessGate({ il = 62 }, 21), "item level 62", "no rl = 0")
 		T.eq(ns.LevelLessGate(nil, 21), nil, "no item record: no rule")
 	end,
+	-- A level shown as text: blank when missing or 0 (quest rewards with no quest level, level-less
+	-- items), never "lvl 0".
+	level_text = function()
+		local ns = T.addon({ "Core.lua" })
+		T.eq(ns.LevelText(22, "lvl "), "lvl 22")
+		T.eq(ns.LevelText(0, "lvl "), "")
+		T.eq(ns.LevelText(nil, "lvl "), "")
+		T.eq(ns.LevelText(-1, "lvl "), "", "scaling quests (-1): no level either")
+		T.eq(ns.LevelText(18, " (", ")"), " (18)")
+		T.eq(ns.LevelText(0, " (", ")"), "")
+	end,
 	bus = function()
 		local ns = T.addon({ "Core.lua" })
 		local got

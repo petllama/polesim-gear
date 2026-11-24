@@ -87,7 +87,7 @@ function Sources.View(src, codex, player, lim, generic)
 		return {
 			kind = "quest", ok = ok, why = why, questId = q.id, where = zone and zone.name or nil,
 			title = q.title, level = q.level, zoneId = q.zone, elite = Sources.Elite(q, player.faction),
-			text = "Quest: " .. (q.title or "?") .. (q.level and (" (" .. q.level .. ")") or "") .. (src.choice and ", a choice" or ""),
+			text = "Quest: " .. (q.title or "?") .. ns.LevelText(q.level, " (", ")") .. (src.choice and ", a choice" or ""),
 			needs = ok and Sources.Needs(q, codex, player.completed) or nil,
 		}
 	elseif src.type == "drop" then

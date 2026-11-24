@@ -34,7 +34,7 @@ end
 local function fill(row, r)
 	S.RowBg(row, row.index)
 	local sub = r.slot and (r.slot.short or r.slot.label) or ""
-	if r.at then sub = sub .. "  " .. S.Colour(C.gold) .. "lvl " .. r.at .. "|r" end
+	if (r.at or 0) > 0 then sub = sub .. "  " .. S.Colour(C.gold) .. "lvl " .. r.at .. "|r" end
 	if r.anySuffix then sub = sub .. "  " .. S.Colour(C.label) .. "any suffix|r" end
 	if isPlan(r) then sub = sub .. "  " .. S.Colour(C.pick) .. "plan|r" end
 	row.item:Set(r.c.inst, sub)

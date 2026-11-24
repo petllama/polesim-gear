@@ -27,6 +27,13 @@ function ns.LevelLessGate(it, lim)
 	return nil
 end
 
+-- A level as text: prefix .. n .. suffix, or "" when there is none (nil, 0, or a scaling quest's -1):
+-- quest rewards with no quest level and level-less items show nothing rather than "lvl 0".
+function ns.LevelText(n, prefix, suffix)
+	if type(n) ~= "number" or n <= 0 then return "" end
+	return (prefix or "") .. n .. (suffix or "")
+end
+
 -- Report an error to the client's handler once per key (an item link) per session: glue that runs on
 -- every redraw must not flood the handler with the same error. At most REPORT_KEYS keys are kept: past
 -- that, errors under new keys are neither stored nor reported for the rest of the session (the first
