@@ -46,6 +46,7 @@ TabSettings.lua
 Minimap.lua
 AHPanel.lua
 Prompt.lua
+Drift.lua
 Record.lua
 RecordExport.lua
 RecordUI.lua
