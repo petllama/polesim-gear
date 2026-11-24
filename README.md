@@ -115,6 +115,46 @@ house's own list shows the scan's last search afterwards (search again as usual)
 gives one row for every suffix of an item ("... of the Owl", "of the Bear"), the row is scored with its
 best suffix and says "any suffix"; its listings show each one's suffix (with the upgrade arrow).
 
+## Recording for PoleSim (opt-in)
+
+PoleSim Gear can record how a character levels so PoleSim's model (fight lengths, kills per hour, rest,
+regen, casts per kill) can be checked against real play. It is **off until you say yes**: on the first
+load of a version with the recorder a PoleSim-styled dialog asks **"Help improve PoleSim's gear
+weights?"** once for the account (**Yes, record** / **No thanks**); Settings > "Record leveling data for
+PoleSim" changes the answer any time. Data is kept per character in your SavedVariables
+(`PoleSimGearCharDB`), about the last 20 hours of active play.
+
+**Recorded** (nothing named):
+- a character sheet at login and at every level-up: level, class, race, base and effective Strength,
+  Agility, Stamina, Intellect, Spirit, max health and mana, armor, attack power, ranged attack power, spell
+  power per school, bonus healing, melee/ranged/spell crit, hit, spell hit, dodge/parry/block, the game's
+  mana regen out of combat and while casting, weapon damage and speed, worn item ids (with suffix and
+  enchant ids), talents (node and rank);
+- each pull: when it started and ended (seconds into the session), how many mobs fought you, each mob's
+  creature id, level, creature type and whether it uses mana, your casts per spell, kills and the XP each
+  paid, the gap since the previous pull;
+- meals (Food/Drink: how long you sat, the aura's length, whether a pull interrupted it), deaths (level,
+  the mobs and their levels, the fight so far, time until alive and until the next pull), XP and rested
+  at the session's start, each level-up and the session's end, and pauses over 2 minutes (AFK flag, or no
+  combat, movement or casting) so only active play counts.
+
+**Never recorded:** names (yours, your realm, guild, party, other players or mobs), chat, gold, map
+position, health or mana values.
+
+**Uploading:** every 4 hours of active recorded play, at a calm moment (out of combat, not in an
+instance, not casting, no other PoleSim popup, not at the auction house, mail, a vendor or a trainer) a
+card asks **"4 h of leveling recorded. Upload it?"**: **Copy export**, **Later** (asks again after an hour
+of play) or **Stop asking** (recording goes on; Settings > "Ask me to upload every 4 h of play" turns it
+back on). `/psg export` (or Settings > Export now) opens the export any time: one line of text, already
+highlighted: **Ctrl+C, then paste at polesim.petllama.com/upload**. A big export comes in numbered parts
+(Next). After sending, the website shows a 6-character code: click **I uploaded it** and type it in; only
+then are the uploaded records removed from your SavedVariables (nothing is deleted otherwise, apart from
+the 20-hour cap). A 4-hour export is about 4-5 KB. `/psg record` prints the state.
+
+The export is compressed with LibDeflate (zlib licence, bundled in `PoleSimGear/Libs/LibDeflate`, loaded
+through LibStub, public domain, `Libs/LibStub`). The recorder adds new files: **a full game restart** is
+needed the first time (not just `/reload`).
+
 ## Commands
 
 - `/psg`: open or close the window.
@@ -128,6 +168,8 @@ best suffix and says "any suffix"; its listings show each one's suffix (with the
 - `/psg minimap`: hide/show the minimap button (saved for the account).
 - `/psg ask`: ask to equip every upgrade in your bags now (the equip prompt, even for items there at login).
 - `/psg polestar`: ask again whether to turn off Polestar's own gear scores (forgets the earlier answer).
+- `/psg export`: the recorder's copy-paste export (Recording for PoleSim); `/psg record`: recording on/off,
+  hours recorded and since the last upload.
 
 ## Development
 
@@ -138,6 +180,10 @@ best suffix and says "any suffix"; its listings show each one's suffix (with the
   scan against a fake browse server built from the shipped items and prints the top 5 by gain and by
   value.
 - Install into the game: `tools/install.sh`. Package: `tools/package.sh`.
+- Recorder export fixture for PoleSim's website tests: `luajit tools/record_fixture.lua DIR [seconds]`
+  writes `export.txt`, `summary.json` and `code.txt` (copy them to PoleSim's
+  `forever/web/tests/fixtures/record/`). The fullload run also records 200 pulls with recording on and
+  prints the handler cost per event and the export size.
 - In-game checks: `docs/CHECKLIST.md`.
 
 Licence: GPL-3.0-only (see LICENSE and NOTICE.md).

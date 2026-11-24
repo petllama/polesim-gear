@@ -1,5 +1,10 @@
 # In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin) — PoleSim Gear 0.6.0
 
+**Recorder (branch `telemetry`, not released yet; goes into 0.7.0 with the melee work after your okay):**
+an opt-in leveling recorder for PoleSim. New files (Libs/LibStub, Libs/LibDeflate, Record.lua,
+RecordExport.lua, RecordUI.lua): **a full game restart** is needed, `/reload` is not enough. Checks:
+section R.
+
 **0.6.0 over 0.5.1:** four more classes. Warlock (Affliction, Demonology, Destruction), Druid (Balance,
 Restoration), Shaman (Elemental, Restoration) and Paladin (Holy) now get scores, arrows, the quest reward
 mark, the equip prompt, the window and the auction house scan, from PoleSim's simulated leveling weights
@@ -810,6 +815,55 @@ leveling.
 (e.g. a level 40 shaman: cloth, leather, mail, shields, jewelry, 7 weapon types = 12), the rows are items
 you can wear.
 
+## R. Recording for PoleSim (telemetry branch)
+
+Before: a full game restart (new files). Any class, out of a dungeon. `/console scriptErrors 1`.
+
+**R1. The question.** About 8 s after login, out of combat: a PoleSim-styled dialog "Help improve PoleSim's
+gear weights?" with what is recorded / never recorded and **Yes, record** / **No thanks**. In combat it
+waits until the fight ends. Click Yes: chat "Recording leveling data for PoleSim ...". Screenshot it.
+`/reload`: it does not ask again (nor on another character).
+
+**R2. State.** `/psg record` prints "Recording on; 0.0 h of active play recorded; ...". Settings tab, right
+column: "Record leveling data for PoleSim" and "Ask me to upload every 4 h of play" ticked, the hours and
+an Export now button.
+
+**R3. A pull.** Kill one mob with a few casts, wait 3 s, then:
+`/run local b=PoleSimGearCharDB.rec.blocks b=b[#b] local p=b.p[#b.p] print(#b.p,p.n,#p.k,p.k[1] and p.k[1][3],p.e-p.s,p.l)`
+prints: pulls so far, mobs engaged (1), kills (1), the XP the kill paid (as in chat), fight seconds, your
+level. Then two mobs at once: the second number is 2. Casts of the last pull:
+`/run local b=PoleSimGearCharDB.rec.blocks b=b[#b] for id,n in pairs(b.p[#b.p].c) do print(id,C_Spell.GetSpellName(id),n) end`
+(the opener cast just before the fight counts).
+
+**R4. The mobs.** `/run local b=PoleSimGearCharDB.rec.blocks b=b[#b] for _,m in ipairs(b.p[#b.p].m) do print(unpack(m)) end`
+prints each mob: creature id, level, creature type, 1 if it uses mana. If it prints nothing, report it
+(identity secret in combat on this content: the pull then has flag "s").
+
+**R5. Character sheet.** `/run local c=PoleSimGearCharDB.rec.blocks[1].c[1] print(c.l,c.cls,c.hp,c.mp,c.ar,c.mr[1],c.mr[2],#c.it,#c.ta)`
+prints level, class, max health and mana, armor, mana regen out of combat and while casting (per second;
+both 0 for a warrior/rogue), items worn, talent nodes. After the next level-up (3 s, out of combat) there
+is a second sheet: `/run local b=PoleSimGearCharDB.rec.blocks print(#b[#b].c)`.
+
+**R6. A meal.** Eat or drink 10 s, stand up, then
+`/run local b=PoleSimGearCharDB.rec.blocks b=b[#b] local m=b.m[#b.m] print(m and m.k,m and m.d,m and m.a,m and m.i)`:
+f/d/b, seconds sat, the aura's length, nil (1 when a pull interrupted it).
+
+**R7. AFK.** `/run print(PoleSimGear.Record.ActiveSeconds())`, then `/afk` for 3 minutes, come back, move
+for 10 s and run it again: it grew by about 10 s, not 190.
+
+**R8. Export and upload.** `/psg export`: a window with one line of text, already highlighted; Ctrl+C. Open
+https://polesim.petllama.com/upload, paste, tick the Cloudflare check, Send: a 6-character code. In game:
+**I uploaded it**, type the code, **Confirm** (or Enter): chat "Thanks! ..."; `/psg record` now says 0.0 h
+since the last upload. A wrong code says it doesn't match and deletes nothing.
+
+**R9. The reminder.** Force it: `/run PoleSimGearCharDB.rec.askAt=0` and wait 5 s out of combat (not at a
+vendor/mailbox/AH, not casting): the card "N h of leveling recorded. Upload it?" with Copy export, Later,
+Stop asking. Pull a mob while it shows: it hides and comes back after. Later: gone for an hour of play.
+Force again, Stop asking: never again; Settings "Ask me to upload every 4 h of play" back on: it shows.
+
+**R10. No taint.** After the dialogs and the export window, use a unit frame's menu (Target Marker Icon >
+Skull) on your target: no "blocked" message.
+
 ## Probe results (B1, fill in)
 
 | Question | Answer |
@@ -903,6 +957,13 @@ you can wear.
 | Q7 | AH scan steps and rows | |
 
 ## Known limits (tell me if they bother you)
+
+- Recorder: Forever closes the combat log to addons, so kills come from UNIT_DIED / PARTY_KILL and the
+  XP from the kill's chat line (its number only); a mob's identity can be secret in combat on some
+  content (pull flag "s": the mob is counted but not described). Active play = activity (moving,
+  casting, fighting, looting, quests) with gaps under 2 minutes and the AFK flag off; standing still
+  reading quest text for over 2 minutes counts as a pause. Creature types are the client's words (in its
+  language).
 
 - A drop of dungeon trash counts as "Dungeon" (as on the website), so some BoE greens show as dungeon
   drops with a small chance.

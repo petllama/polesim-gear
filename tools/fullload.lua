@@ -596,6 +596,54 @@ for li, L in ipairs(levels) do
 			_G.C_Container, _G.ItemLocation, _G.C_Item, _G.PolestarGuideFrame = nil, nil, nil, nil
 		end
 
+		-- 8. recording on (Record.lua): 200 pulls through the client's events, then the handler cost per
+		-- event (1000 each of a player cast, a creature death and an XP line in a pull) and the export
+		local recInfo = "-"
+		step("record", function()
+			ns.Options.Set("record", true)
+			ns.Options.Set("recAsked", true)
+			W.time = 100
+			local mobs = {}
+			_G.UnitExists = function(u) return mobs[u] ~= nil or u == "player" end
+			_G.UnitGUID = function(u) return mobs[u] and mobs[u].guid or (u == "player" and "Player-1-1" or nil) end
+			_G.UnitCanAttack = function(_, u) return mobs[u] ~= nil end
+			_G.UnitThreatSituation = function(_, u) return mobs[u] and 1 or nil end
+			_G.UnitCreatureType = function(u) return mobs[u] and "Beast" or nil end
+			_G.UnitAffectingCombat = function() return false end
+			for i = 1, 200 do
+				mobs.target = { guid = "Creature-0-1-0-1-" .. (400 + i % 9) .. "-" .. i }
+				ev(ns._frame, "PLAYER_REGEN_DISABLED")
+				ns.Record.Tick()
+				ev(ns._frame, "UNIT_SPELLCAST_SUCCEEDED", "player", "c", 585)
+				W.time = W.time + 15
+				ev(ns._frame, "UNIT_DIED", mobs.target.guid)
+				ev(ns._frame, "CHAT_MSG_COMBAT_XP_GAIN", "Wolf dies, you gain 55 experience.")
+				ev(ns._frame, "PLAYER_REGEN_ENABLED")
+				mobs.target = nil
+				W.time = W.time + 25
+				ns.Record.Tick()
+				settle()
+			end
+			mobs.target = { guid = "Creature-0-1-0-1-448-1" }
+			ev(ns._frame, "PLAYER_REGEN_DISABLED")
+			local t = clock()
+			for i = 1, 1000 do
+				ev(ns._frame, "UNIT_SPELLCAST_SUCCEEDED", "player", "c", 585)
+				ev(ns._frame, "UNIT_DIED", "Creature-0-1-0-1-999-" .. i)
+				ev(ns._frame, "CHAT_MSG_COMBAT_XP_GAIN", "Wolf dies, you gain 55 experience.")
+			end
+			local us = (clock() - t) * 1e6 / 3000
+			ev(ns._frame, "PLAYER_REGEN_ENABLED")
+			settle()
+			local parts = ns.RecordExport.Build()
+			local doc, why = ns.RecordExport.Decode(table.concat(parts, "\n"))
+			if not doc then error("export does not decode: " .. tostring(why)) end
+			recInfo = format("%d pulls, %.1f us per event (3000 events), export %d chars, %d pull rows decoded", #doc.pulls.rows, us,
+				#parts[1], #doc.pulls.rows)
+			for _, k in ipairs({ "UnitExists", "UnitGUID", "UnitCanAttack", "UnitThreatSituation", "UnitCreatureType", "UnitAffectingCombat" }) do
+				_G[k] = nil
+			end
+		end)
 		local function n(k) return counts[k] or 0 end
 		local bad = 0
 		for _, w in ipairs(navs) do
@@ -611,6 +659,7 @@ for li, L in ipairs(levels) do
 		print("  route: " .. routeInfo)
 		print("  AH: " .. ahInfo)
 		print("  loot: " .. lootInfo)
+		print("  record: " .. recInfo)
 		for _, l in ipairs(ahTop) do print(l) end
 		for i = 1, math.min(10, #errors) do print("  " .. errors[i]) end
 		if #errors > 0 then failures = failures + 1 end
