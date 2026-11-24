@@ -11,6 +11,8 @@ Spec.ORDER = {
 	priest = { "discipline", "holy", "shadow" }, mage = { "arcane", "fire", "frost" },
 	warlock = { "affliction", "demonology", "destruction" }, druid = { "balance", "feral", "restoration" },
 	shaman = { "elemental", "enhancement", "restoration" }, paladin = { "holy", "protection", "retribution" },
+	warrior = { "arms", "fury", "protection" }, rogue = { "assassination", "combat", "subtlety" },
+	hunter = { "beastmastery", "marksmanship", "survival" },
 }
 -- The spec with no talent points: armory.DEFAULT_BUILD, shipped in Data/Weights.lua.
 Spec.DEFAULT = (ns.DATA and ns.DATA.defaultSpec) or {}
@@ -102,10 +104,13 @@ function Spec.Detect(cls)
 	return Spec.Pick(points, #names > 0 and names or nil, cls), points
 end
 
--- Whether the addon ships weights for this spec.
+-- Whether the addon ships weights it can score with for this spec: melee and hunter specs
+-- (needsWeaponModel) only once their bands come from a weights run with the weapon speed / off-hand
+-- measurement (weaponModel; PoleSim design 2026-11-22-melee-weapon-weights): they light up with that data.
 function Spec.Supported(cls, key)
 	local specs = ns.DATA.specs[cls]
-	return key ~= nil and specs ~= nil and specs[key] ~= nil
+	local sd = key ~= nil and specs ~= nil and specs[key]
+	return sd ~= nil and sd ~= false and (not sd.needsWeaponModel or sd.weaponModel ~= nil)
 end
 
 -- The class's specs with weights (the ones a player can pick): its talent columns in order, else its
@@ -126,7 +131,7 @@ end
 -- -> spec key, "chosen" | "talents" | "default"
 function Spec.Current(cls)
 	local o = ns.char and ns.char.spec
-	if o and o ~= "auto" and ns.DATA.specs[cls] and ns.DATA.specs[cls][o] then return o, "chosen" end
+	if o and o ~= "auto" and Spec.Supported(cls, o) then return o, "chosen" end
 	local key = Spec.Detect(cls)
 	if key then return key, "talents" end
 	return Spec.DEFAULT[cls] or Spec.Keys(cls)[1], "default"
@@ -136,7 +141,7 @@ ns.Slash("spec", function(arg)
 	local cls = ns.Context and ns.Context.ClassKey()
 	if not cls then return ns.Print(ns.Context and ns.Context.Unsupported and ns.Context.Unsupported() or "no weights for this class yet") end
 	arg = (arg or ""):lower()
-	if arg == "auto" or ns.DATA.specs[cls][arg] then
+	if arg == "auto" or Spec.Supported(cls, arg) then
 		ns.char.spec = arg
 		ns.Fire("STATE", "SPEC")
 	end

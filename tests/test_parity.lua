@@ -38,7 +38,47 @@ local function weights(ns, specKey, level)
 	return ns.Bands.For(cls, spec, level).w, cls
 end
 
+-- X rows (gen_addon_data.synth_rows): synthetic melee/hunter weights with speed, off-hand and ranged-speed
+-- terms (no shipped band has them before the melee results run) -> { cls, id, bonus, role, w, score, parts }
+local function synth()
+	local text = assert(loadfile("tests/fixtures/parity.lua"))()
+	local out = {}
+	for line in text:gmatch("[^\n]+") do
+		local f = {}
+		for x in (line .. "	"):gmatch("([^	]*)	") do f[#f + 1] = x end
+		if f[1] == "X" then
+			local w = {}
+			for k, v in f[6]:gmatch("([%w_]+)=([^;]+)") do w[k] = tonumber(v) end
+			out[#out + 1] = { cls = f[2], id = tonumber(f[3]), bonus = tonumber(f[4]), role = f[5], w = w,
+				score = tonumber(f[7]), parts = f[8] }
+		end
+	end
+	return out
+end
+
 return {
+	synthetic_weapon_weights_equal_the_website = function()
+		local ns = T.addon(FILES)
+		local rows = synth()
+		T.ok(#rows > 50, "X rows " .. #rows)
+		local seen = {}
+		for _, r in ipairs(rows) do
+			local inst = ns.Score.Instance(ns.Items.Get(r.id), r.bonus ~= 0 and r.bonus or nil)
+			local where = r.cls .. " " .. r.id .. "." .. r.bonus .. " " .. r.role
+			T.near(ns.Score.Score(inst, r.w, r.cls, r.role), r.score, 1e-6, where)
+			local want, m = {}, 0
+			for k, _, wk, _, pts in r.parts:gmatch("(%w+):([^:,]+):(%w+):([^:,]+):([^:,]+)") do
+				want[k .. ">" .. wk], m = tonumber(pts), m + 1
+			end
+			local parts = ns.Score.Parts(inst, r.w, r.cls, r.role)
+			for _, p in ipairs(parts) do
+				seen[p[3]] = true
+				T.near(p[5], want[p[1] .. ">" .. p[3]] or 1e9, 1.5e-3, where .. " " .. p[3])
+			end
+			T.eq(#parts, m, where .. " part count")
+		end
+		for _, k in ipairs({ "speed", "ohDps", "ohSpeed", "rspeed" }) do T.ok(seen[k], "covers " .. k) end
+	end,
 	scores_equal_the_website = function()
 		local ns = T.addon(FILES)
 		local rows = fixture()

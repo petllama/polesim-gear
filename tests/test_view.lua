@@ -143,6 +143,23 @@ return {
 		T.eq(oh.plan.setText, "Weapon set: +26.3 over Wind Rider Staff")
 		T.ok(not oh.twoHander)
 	end,
+	-- Dual wield (0.7.0): one quest dagger is the best one-hander AND the best off hand; a quest choice
+	-- gives one copy, so the set pairs it with the next off hand (the website's rule, armory set_oh).
+	weapon_set_dual_wield_one_copy = function()
+		local ns = load()
+		local function row(id, score, name, key)
+			return { c = { id = id, score = score, inst = { id = id, inv = 13, name = name }, kinds = { quest = true }, sources = {} },
+				gain = score, base = 0, slot = { key = key, label = key } }
+		end
+		local m = { level = 30, coming = {},
+			now = { mainhand = { row(1, 54.7, "Claw", "mainhand"), row(2, 40, "Knife", "mainhand") },
+				offhand = { row(1, 24.0, "Claw", "offhand"), row(3, 20.0, "Shiv", "offhand") } } }
+		local st = { spec = "assassination", filters = { quest = true }, ahead = 0, show = "all" }
+		local mh, oh = ns.View.Weapons(m, {}, st, 0)
+		T.eq(mh.plan.c.id, 1, "the claw in the main hand")
+		T.eq(oh.plan.c.id, 3, "the next off hand, not a second claw")
+		T.near(mh.plan.setGain, 74.7, 1e-9)
+	end,
 	-- The near-quest rule per item: The Stitcher from an upcoming guide quest is the main hand (its set
 	-- with the best off hand, Skum's Bucket, still beats the staff: +4.1), BiS the two-hander (+30.4).
 	weapon_set_near_quest = function()

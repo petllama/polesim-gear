@@ -23,6 +23,8 @@ ns.DATA.statLabels = {
 	mcrit = "Melee/ranged crit %",
 	mhit = "Melee/ranged hit %",
 	mp5 = "Mana per 5 s",
+	ohDps = "Off-hand weapon DPS",
+	ohSpeed = "Off-hand speed (s over the reference)",
 	other = "Other (skill, profession)",
 	parry = "Parry %",
 	rap = "Ranged attack power",
@@ -33,6 +35,7 @@ ns.DATA.statLabels = {
 	resHoly = "Holy resistance",
 	resNature = "Nature resistance",
 	resShadow = "Shadow resistance",
+	rspeed = "Ranged speed (s over the reference)",
 	sp = "Spell damage and healing",
 	spArcane = "Arcane spell damage",
 	spDmg = "Spell damage",
@@ -41,6 +44,7 @@ ns.DATA.statLabels = {
 	spHoly = "Holy spell damage",
 	spNature = "Nature spell damage",
 	spShadow = "Shadow spell damage",
+	speed = "Weapon speed (s over the reference weapon)",
 	spellCrit = "Spell crit %",
 	spellHit = "Spell hit %",
 	spellPen = "Spell penetration",
@@ -55,8 +59,11 @@ ns.DATA.proficiency = {
 	druid = { bit = 1024, armor = { [0] = 1, [1] = 1, [2] = 1, [8] = 1 }, weapons = { [4] = true, [5] = true, [10] = true, [13] = true, [15] = true }, dw = nil },
 	shaman = { bit = 64, armor = { [0] = 1, [1] = 1, [2] = 1, [3] = 40, [6] = 1, [9] = 1 }, weapons = { [0] = true, [1] = true, [4] = true, [5] = true, [10] = true, [13] = true, [15] = true }, dw = nil },
 	paladin = { bit = 2, armor = { [0] = 1, [1] = 1, [2] = 1, [3] = 1, [4] = 40, [6] = 1, [7] = 1 }, weapons = { [0] = true, [1] = true, [4] = true, [5] = true, [6] = true, [7] = true, [8] = true }, dw = nil },
+	warrior = { bit = 1, armor = { [0] = 1, [1] = 1, [2] = 1, [3] = 1, [4] = 40, [6] = 1 }, weapons = { [0] = true, [1] = true, [2] = true, [3] = true, [4] = true, [5] = true, [6] = true, [7] = true, [8] = true, [10] = true, [13] = true, [15] = true, [16] = true, [18] = true }, dw = 20 },
+	rogue = { bit = 8, armor = { [0] = 1, [1] = 1, [2] = 1 }, weapons = { [2] = true, [3] = true, [4] = true, [7] = true, [13] = true, [15] = true, [16] = true, [18] = true }, dw = 10 },
+	hunter = { bit = 4, armor = { [0] = 1, [1] = 1, [2] = 1, [3] = 40 }, weapons = { [0] = true, [1] = true, [2] = true, [3] = true, [6] = true, [7] = true, [8] = true, [10] = true, [13] = true, [15] = true, [16] = true, [18] = true }, dw = 20 },
 }
-ns.DATA.defaultSpec = { druid = "balance", mage = "frost", paladin = "holy", priest = "shadow", shaman = "elemental", warlock = "affliction" }
+ns.DATA.defaultSpec = { druid = "balance", hunter = "beastmastery", mage = "frost", paladin = "holy", priest = "shadow", rogue = "combat", shaman = "elemental", warlock = "affliction", warrior = "arms" }
 ns.DATA.specs = {
 	priest = {
 		shadow = { ref = "spShadow", bands = {
@@ -153,6 +160,14 @@ ns.DATA.specs = {
 			{ upTo = 59, style = "2h", label = "Kill sim", w = { armor = 0.021, health = 0.036, int = 0.68, mana = 0.039, mp5 = 0.87, sp = 1, spArcane = 0.84, spNature = 0.049, spellCrit = 1.8, spellHit = 4.2, spi = 0.43, sta = 0.38 } },
 			{ upTo = 60, style = "2h", label = "Kill sim", w = { armor = 0.021, health = 0.036, int = 0.75, mana = 0.047, mp5 = 0.99, sp = 1, spArcane = 0.69, spNature = 0.23, spellCrit = 2.1, spellHit = 5.4, spi = 0.45, sta = 0.39 } },
 		} },
+		feral = { ref = "str", needsWeaponModel = true, bands = {
+			{ upTo = 19, style = "2h", label = "", w = { agi = 0.27, ap = 0.5, armor = 0.099, crit = 1.5, dodge = 0.84, dps = 7.1, health = 0.16, hit = 0.88, int = 0.29, spi = 0.14, sta = 1.5, str = 1 } },
+			{ upTo = 29, style = "2h", label = "", w = { agi = 0.88, ap = 0.5, armor = 0.052, crit = 2.8, dodge = 2, dps = 5.5, health = 0.081, hit = 1.1, int = 0.41, mp5 = 0.28, spi = 0.42, sta = 0.96, str = 1 } },
+			{ upTo = 39, style = "2h", label = "", w = { agi = 1.1, ap = 0.5, armor = 0.055, crit = 4.7, dodge = 2.6, dps = 5.1, health = 0.059, hit = 1.9, int = 0.25, mp5 = 0.51, spi = 0.57, sta = 0.81, str = 1 } },
+			{ upTo = 49, style = "2h", label = "", w = { agi = 1.5, ap = 0.5, armor = 0.086, crit = 7.8, dodge = 4.9, dps = 4.7, health = 0.21, hit = 2.3, int = 0, mp5 = 0, spi = 0.17, sta = 2.1, str = 1 } },
+			{ upTo = 59, style = "2h", label = "", w = { agi = 1.5, ap = 0.46, armor = 0.09, crit = 9.3, dodge = 6.5, dps = 4, health = 0.21, hit = 2.5, int = 0.41, spi = 0.092, sta = 2.1, str = 1 } },
+			{ upTo = 60, style = "2h", label = "", w = { agi = 1.6, ap = 0.45, armor = 0.11, crit = 11, dodge = 7.9, dps = 3.9, health = 0.18, hit = 3.9, int = 0.52, mp5 = 0, spi = 0.2, sta = 1.8, str = 1 } },
+		} },
 	},
 	shaman = {
 		elemental = { ref = "sp", bands = {
@@ -171,6 +186,14 @@ ns.DATA.specs = {
 			{ upTo = 59, style = "2h", label = "Kill sim", w = { agi = 0.66, ap = 0.5, armor = 0.068, crit = 4.9, dps = 7.1, health = 0.12, hit = 3.2, int = 1.9, mp5 = 2.8, sp = 1.4, spNature = 0.72, spellCrit = 5.1, spellHit = 1.8, spi = 1.3, sta = 1.1, str = 1 } },
 			{ upTo = 60, style = "2h", label = "Kill sim", w = { agi = 0.78, ap = 0.5, armor = 0.093, crit = 5.5, dps = 7, health = 0.16, hit = 3.8, int = 1.9, mp5 = 2.8, sp = 1.7, spNature = 0.99, spellCrit = 7.6, spellHit = 3, spi = 1.7, sta = 1.5, str = 1 } },
 		} },
+		enhancement = { ref = "str", needsWeaponModel = true, bands = {
+			{ upTo = 19, style = "2h", label = "", w = { agi = 0.48, ap = 0.5, armor = 0.065, crit = 1.9, dps = 7.2, health = 0.26, hit = 1.1, int = 0.95, mp5 = 0.56, sp = 1.4, spNature = 1.1, spellCrit = 0.65, spellHit = 2.2, spi = 0.81, sta = 3, str = 1 } },
+			{ upTo = 29, style = "2h", label = "", w = { agi = 1, ap = 0.5, armor = 0.16, crit = 3.1, dps = 7.3, health = 0.55, hit = 2.1, int = 0.098, mp5 = 0.26, sp = 1.2, spNature = 0.97, spellCrit = 1, spellHit = 3.6, spi = 0.42, sta = 5.4, str = 1 } },
+			{ upTo = 39, style = "2h", label = "", w = { agi = 1, ap = 0.5, armor = 0.1, crit = 4.6, dps = 7.2, health = 0.34, hit = 2.7, int = 0.73, mp5 = 0.21, sp = 0.79, spNature = 0.52, spellCrit = 1.1, spellHit = 3.9, spi = 0.56, sta = 3.4, str = 1 } },
+			{ upTo = 49, style = "2h", label = "", w = { agi = 1.3, ap = 0.5, armor = 0.091, crit = 8.2, dps = 6.9, health = 0.3, hit = 4.3, int = 1.4, mp5 = 0.72, sp = 0.94, spNature = 0.64, spellCrit = 1.9, spellHit = 7, spi = 0.67, sta = 3.2, str = 1 } },
+			{ upTo = 59, style = "2h", label = "", w = { agi = 1.5, ap = 0.5, armor = 0.11, crit = 11, dps = 6.9, health = 0.36, hit = 6, int = 2, mp5 = 0.75, sp = 0.98, spNature = 0.7, spellCrit = 4.1, spellHit = 10, spi = 0.6, sta = 3.7, str = 1 } },
+			{ upTo = 60, style = "2h", label = "", w = { agi = 1.7, ap = 0.5, armor = 0.15, crit = 14, dps = 7.2, health = 0.41, hit = 7.1, int = 2.9, mp5 = 1.4, sp = 1.1, spNature = 0.76, spellCrit = 5.9, spellHit = 14, spi = 0.68, sta = 4.1, str = 1 } },
+		} },
 	},
 	paladin = {
 		holy = { ref = "str", bands = {
@@ -180,6 +203,100 @@ ns.DATA.specs = {
 			{ upTo = 49, style = "2h", label = "Kill sim", w = { agi = 0.98, ap = 0.5, armor = 0.081, crit = 7.3, dps = 6.6, health = 0.31, hit = 4.5, int = 1.3, mp5 = 2.7, sp = 2, spHoly = 1.9, spellCrit = 0.98, spi = 0.89, sta = 3, str = 1 } },
 			{ upTo = 59, style = "2h", label = "Kill sim", w = { agi = 1.2, ap = 0.5, armor = 0.099, crit = 9.3, dps = 6.9, health = 0.35, hit = 5.7, int = 2, mp5 = 3, sp = 2, spHoly = 2, spellCrit = 1.6, spi = 1, sta = 3.3, str = 1 } },
 			{ upTo = 60, style = "2h", label = "Kill sim", w = { agi = 1.3, ap = 0.5, armor = 0.098, crit = 12, dps = 6.9, health = 0.33, hit = 6.2, int = 2.2, mp5 = 2.3, sp = 2.1, spHoly = 2.1, spellCrit = 2, spi = 0.61, sta = 3.1, str = 1 } },
+		} },
+		retribution = { ref = "str", needsWeaponModel = true, bands = {
+			{ upTo = 19, style = "2h", label = "", w = { agi = 0.64, ap = 0.5, armor = 0.062, crit = 2.3, dps = 6.9, health = 0.12, hit = 1.3, int = 0.36, mp5 = 0.23, sp = 1.7, spHoly = 1.2, spellCrit = 0.45, spi = 0.55, sta = 1.3, str = 1 } },
+			{ upTo = 29, style = "2h", label = "", w = { agi = 0.56, ap = 0.5, armor = 0.045, crit = 3.1, dps = 7, health = 0.11, hit = 2.2, int = 0.74, mp5 = 0.43, sp = 1.3, spHoly = 1.1, spellCrit = 0.46, spi = 0.41, sta = 1.1, str = 1 } },
+			{ upTo = 39, style = "2h", label = "", w = { agi = 0.66, ap = 0.5, armor = 0.045, crit = 5.1, dps = 6.8, health = 0.099, hit = 2.9, int = 0.9, mp5 = 0.81, sp = 1.2, spHoly = 1.1, spellCrit = 1.3, spi = 0.36, sta = 1, str = 1 } },
+			{ upTo = 49, style = "2h", label = "", w = { agi = 0.99, ap = 0.46, armor = 0.068, crit = 8.2, dps = 6.1, health = 0.23, hit = 4.7, int = 0.68, mp5 = 0.39, sp = 1.3, spHoly = 1.2, spellCrit = 2.3, spi = 0.49, sta = 2.3, str = 1 } },
+			{ upTo = 59, style = "2h", label = "", w = { agi = 0.79, ap = 0.45, armor = 0.043, crit = 9.6, dps = 6.3, health = 0.13, hit = 5.8, int = 2.2, mp5 = 0.81, sp = 1.2, spHoly = 1.2, spellCrit = 2.6, spi = 0.37, sta = 1.4, str = 1 } },
+			{ upTo = 60, style = "2h", label = "", w = { agi = 0.69, ap = 0.46, armor = 0.02, crit = 11, dps = 6.2, health = 0.052, hit = 9.2, int = 2.1, mp5 = 1.2, sp = 1.2, spHoly = 1.1, spellCrit = 2.3, spi = 0.39, sta = 0.59, str = 1 } },
+		} },
+		protection = { ref = "str", needsWeaponModel = true, uncertain = true, bands = {
+			{ upTo = 19, style = "shield", label = "", w = { agi = 0.51, ap = 0.49, armor = 0.041, block = 0.5, blockValue = 0.28, crit = 2, defense = 0.18, dps = 6.7, health = 0.085, hit = 1.2, int = 0.32, mp5 = 0.27, sp = 1.7, spHoly = 1.4, spellCrit = 0.3, spi = 0.49, sta = 0.83, str = 1 } },
+			{ upTo = 29, style = "shield", label = "", w = { agi = 0.57, ap = 0.48, armor = 0.037, block = 0.83, blockValue = 0.73, crit = 3.4, defense = 0.3, dps = 7, health = 0.087, hit = 1.8, int = 0.72, mp5 = 0.34, sp = 1.8, spHoly = 1.6, spellCrit = 0.45, spi = 0.38, sta = 0.89, str = 1 } },
+			{ upTo = 39, style = "shield", label = "", w = { agi = 0.63, ap = 0.48, armor = 0.041, block = 1.3, blockValue = 1, crit = 5, defense = 0.36, dps = 6.5, health = 0.089, hit = 3.9, int = 0.59, mp5 = 0.43, sp = 1.8, spHoly = 1.7, spellCrit = 0.56, spi = 0.26, sta = 0.88, str = 1 } },
+			{ upTo = 49, style = "shield", label = "", w = { agi = 0.57, ap = 0.47, armor = 0.016, block = 7.3, blockValue = 1.4, crit = 7, defense = 0.41, dps = 6.7, health = 0.085, hit = 6.5, int = 0.83, mp5 = 0.98, sp = 1.8, spHoly = 1.8, spellCrit = 0.21, spi = 0.55, sta = 0.96, str = 1 } },
+			{ upTo = 59, style = "shield", label = "", w = { agi = 0.54, ap = 0.5, armor = 0.008, block = 9.7, blockValue = 0.24, crit = 8.8, defense = 0.31, dps = 6.8, health = 0.03, hit = 9.1, int = 1.5, mp5 = 0.97, sp = 1.9, spHoly = 1.9, spellCrit = 0.34, spi = 0.51, sta = 0.32, str = 1 } },
+			{ upTo = 60, style = "shield", label = "", w = { agi = 0.65, ap = 0.5, armor = 0.018, block = 12, blockValue = 0.51, crit = 10, defense = 0.75, dps = 6.9, health = 0.078, hit = 12, int = 1.6, mp5 = 0.29, sp = 1.9, spHoly = 1.9, spellCrit = 0.37, spi = 0.7, sta = 0.75, str = 1 } },
+		} },
+	},
+	warrior = {
+		arms = { ref = "str", needsWeaponModel = true, bands = {
+			{ upTo = 19, style = "2h", label = "", w = { agi = 0.6, ap = 0.5, armor = 0.051, crit = 1.9, dodge = 1.2, dps = 6.3, health = 0.25, hit = 1.1, parry = 2, spi = 0.86, sta = 2.5, str = 1 } },
+			{ upTo = 29, style = "2h", label = "", w = { agi = 0.74, ap = 0.5, armor = 0.046, crit = 3.8, dodge = 1.6, dps = 5.6, health = 0.24, hit = 1.6, parry = 2.9, spi = 0.24, sta = 2.4, str = 1 } },
+			{ upTo = 39, style = "2h", label = "", w = { agi = 0.75, ap = 0.5, armor = 0.055, crit = 4.9, dodge = 2.4, dps = 5.9, health = 0.23, hit = 2.6, parry = 3.8, spi = 0.07, sta = 2.4, str = 1 } },
+			{ upTo = 49, style = "2h", label = "", w = { agi = 0.8, ap = 0.5, armor = 0.042, crit = 7.4, dodge = 3.2, dps = 5.7, health = 0.2, hit = 3.3, parry = 5, spi = 0.028, sta = 2, str = 1 } },
+			{ upTo = 59, style = "2h", label = "", w = { agi = 0.81, ap = 0.5, armor = 0.037, crit = 9.5, dodge = 3, dps = 6.2, health = 0.16, hit = 4.3, parry = 5.8, spi = 0, sta = 1.6, str = 1 } },
+			{ upTo = 60, style = "2h", label = "", w = { agi = 0.79, ap = 0.5, armor = 0.036, crit = 11, dodge = 3.2, dps = 5.9, health = 0.14, hit = 4.9, parry = 6, spi = 0, sta = 1.4, str = 1 } },
+		} },
+		fury = { ref = "str", needsWeaponModel = true, bands = {
+			{ upTo = 19, style = "2h", label = "", w = { agi = 0.55, ap = 0.5, armor = 0.048, crit = 1.7, dodge = 1.2, dps = 5.8, health = 0.23, hit = 0.97, parry = 1.9, spi = 0.78, sta = 2.3, str = 1 } },
+			{ upTo = 29, style = "dw", label = "", w = { agi = 0.61, ap = 0.5, armor = 0.052, crit = 2.8, dodge = 1.8, dps = 4.2, health = 0.24, hit = 1.8, parry = 2.5, spi = 0.26, sta = 2.4, str = 1 } },
+			{ upTo = 39, style = "dw", label = "", w = { agi = 0.59, ap = 0.5, armor = 0.047, crit = 4.1, dodge = 1.7, dps = 4.1, health = 0.2, hit = 2.9, parry = 2.7, spi = 0.77, sta = 2.2, str = 1 } },
+			{ upTo = 49, style = "dw", label = "", w = { agi = 0.7, ap = 0.5, armor = 0.034, crit = 7.1, dodge = 2, dps = 3.1, health = 0.15, hit = 3.8, parry = 2.7, spi = 0.62, sta = 1.6, str = 1 } },
+			{ upTo = 59, style = "dw", label = "", w = { agi = 0.68, ap = 0.5, armor = 0.026, crit = 9.2, dodge = 1.6, dps = 3.1, health = 0.13, hit = 4.8, parry = 2.6, spi = 0.32, sta = 1.3, str = 1 } },
+			{ upTo = 60, style = "dw", label = "", w = { agi = 0.69, ap = 0.5, armor = 0.027, crit = 11, dodge = 1.8, dps = 3, health = 0.14, hit = 5.6, parry = 2.8, spi = 0.26, sta = 1.4, str = 1 } },
+		} },
+		protection = { ref = "str", needsWeaponModel = true, uncertain = true, bands = {
+			{ upTo = 19, style = "shield", label = "", w = { agi = 0.38, ap = 0.47, armor = 0.021, block = 0.58, blockValue = 1.3, crit = 1.3, defense = 0.11, dodge = 0.71, dps = 4.2, health = 0.11, hit = 0.76, parry = 0.99, spi = 0.97, sta = 1.1, str = 1 } },
+			{ upTo = 29, style = "shield", label = "", w = { agi = 0.33, ap = 0.46, armor = 0.01, block = 0.48, blockValue = 1.4, crit = 2, defense = 0.1, dodge = 0.81, dps = 3, health = 0.037, hit = 1.1, parry = 1.2, spi = 0.89, sta = 0.38, str = 1 } },
+			{ upTo = 39, style = "shield", label = "", w = { agi = 0.34, ap = 0.47, armor = 0.011, block = 0.43, blockValue = 1.3, crit = 2.9, defense = 0.12, dodge = 0.82, dps = 3.1, health = 0.037, hit = 1.7, parry = 1.5, spi = 0.67, sta = 0.41, str = 1 } },
+			{ upTo = 49, style = "shield", label = "", w = { agi = 0.48, ap = 0.45, armor = 0.007, block = 0.58, blockValue = 1.8, crit = 5.8, defense = 0.12, dodge = 0.94, dps = 3, health = 0.023, hit = 3.4, parry = 1.8, spi = 0.99, sta = 0.23, str = 1 } },
+			{ upTo = 59, style = "shield", label = "", w = { agi = 0.49, ap = 0.44, armor = 0.0095, block = 0.7, blockValue = 1.3, crit = 7.2, defense = 0.14, dodge = 1.1, dps = 3, health = 0.041, hit = 4.1, parry = 1.9, spi = 0.68, sta = 0.38, str = 1 } },
+			{ upTo = 60, style = "shield", label = "", w = { agi = 0.51, ap = 0.44, armor = 0.011, block = 0.79, blockValue = 0.91, crit = 8.7, defense = 0.16, dodge = 1.1, dps = 3, health = 0.039, hit = 5, parry = 2.1, spi = 0.7, sta = 0.46, str = 1 } },
+		} },
+	},
+	rogue = {
+		combat = { ref = "agi", needsWeaponModel = true, bands = {
+			{ upTo = 19, style = "dw", label = "", w = { agi = 1, ap = 0.45, armor = 0.023, crit = 1.2, dodge = 0.8, dps = 4.9, health = 0.11, hit = 0.6, spi = 0.56, sta = 1.1, str = 0.44 } },
+			{ upTo = 29, style = "dw", label = "", w = { agi = 1, ap = 0.46, armor = 0.026, crit = 2, dodge = 1.5, dps = 5.4, health = 0.11, hit = 1.8, spi = 0.46, sta = 1.1, str = 0.46 } },
+			{ upTo = 39, style = "dw", label = "", w = { agi = 1, ap = 0.53, armor = 0.024, crit = 3.4, dodge = 1.4, dps = 5.8, health = 0.057, hit = 3.2, spi = 0.91, sta = 0.61, str = 0.53 } },
+			{ upTo = 49, style = "dw", label = "", w = { agi = 1, ap = 0.49, armor = 0.033, crit = 4.1, dodge = 2.6, dps = 4.8, health = 0.1, hit = 4, spi = 0.1, sta = 0.99, str = 0.49 } },
+			{ upTo = 59, style = "dw", label = "", w = { agi = 1, ap = 0.45, armor = 0.037, crit = 5.2, dodge = 3.5, dps = 4.5, health = 0.11, hit = 5, spi = 0, sta = 1.1, str = 0.46 } },
+			{ upTo = 60, style = "dw", label = "", w = { agi = 1, ap = 0.41, armor = 0.044, crit = 5.9, dodge = 4.6, dps = 4, health = 0.11, hit = 5.5, spi = 0, sta = 1.1, str = 0.41 } },
+		} },
+		assassination = { ref = "agi", needsWeaponModel = true, rules = { mh = { [15] = true }, why = "Backstab, Ambush and Mutilate need a dagger in the main hand" }, bands = {
+			{ upTo = 19, style = "dw", label = "", w = { agi = 1, ap = 0.41, armor = 0.029, crit = 1.1, dodge = 0.88, dps = 4.3, health = 0.12, hit = 0.6, spi = 0.48, sta = 1.2, str = 0.42 } },
+			{ upTo = 29, style = "dw", label = "", w = { agi = 1, ap = 0.39, armor = 0.035, crit = 1.8, dodge = 1.8, dps = 3.6, health = 0.15, hit = 1.1, spi = 0.12, sta = 1.4, str = 0.4 } },
+			{ upTo = 39, style = "dw", label = "", w = { agi = 1, ap = 0.39, armor = 0.039, crit = 2.6, dodge = 2.8, dps = 3.8, health = 0.15, hit = 1.6, spi = 0, sta = 1.5, str = 0.39 } },
+			{ upTo = 49, style = "dw", label = "", w = { agi = 1, ap = 0.35, armor = 0.048, crit = 3.7, dodge = 3.7, dps = 2.7, health = 0.15, hit = 2.4, spi = 0, sta = 1.5, str = 0.35 } },
+			{ upTo = 59, style = "dw", label = "", w = { agi = 1, ap = 0.33, armor = 0.052, crit = 4.8, dodge = 4.8, dps = 2.6, health = 0.15, hit = 4.9, spi = 0, sta = 1.5, str = 0.33 } },
+			{ upTo = 60, style = "dw", label = "", w = { agi = 1, ap = 0.32, armor = 0.051, crit = 5.7, dodge = 5.5, dps = 2.6, health = 0.14, hit = 6, spi = 0, sta = 1.4, str = 0.33 } },
+		} },
+		subtlety = { ref = "agi", needsWeaponModel = true, rules = { mh = { [15] = true }, why = "Backstab, Ambush and Mutilate need a dagger in the main hand" }, bands = {
+			{ upTo = 19, style = "dw", label = "", w = { agi = 1, ap = 0.42, armor = 0.029, crit = 1.2, dodge = 0.88, dps = 4.2, health = 0.12, hit = 0.66, spi = 0.48, sta = 1.2, str = 0.41 } },
+			{ upTo = 29, style = "dw", label = "", w = { agi = 1, ap = 0.46, armor = 0.03, crit = 2.1, dodge = 1.5, dps = 4.6, health = 0.13, hit = 1.2, spi = 0.17, sta = 1.3, str = 0.46 } },
+			{ upTo = 39, style = "dw", label = "", w = { agi = 1, ap = 0.43, armor = 0.042, crit = 2.7, dodge = 2.1, dps = 5, health = 0.12, hit = 1.7, spi = 0.063, sta = 1.2, str = 0.43 } },
+			{ upTo = 49, style = "dw", label = "", w = { agi = 1, ap = 0.41, armor = 0.04, crit = 3.3, dodge = 3.7, dps = 3.7, health = 0.13, hit = 3.9, spi = 0, sta = 1.3, str = 0.4 } },
+			{ upTo = 59, style = "dw", label = "", w = { agi = 1, ap = 0.42, armor = 0.036, crit = 4.3, dodge = 4.3, dps = 4.1, health = 0.11, hit = 4.4, spi = 0, sta = 1.1, str = 0.42 } },
+			{ upTo = 60, style = "dw", label = "", w = { agi = 1, ap = 0.41, armor = 0.043, crit = 4.8, dodge = 5, dps = 4.2, health = 0.11, hit = 5.6, spi = 0, sta = 1.1, str = 0.41 } },
+		} },
+	},
+	hunter = {
+		beastmastery = { ref = "agi", needsWeaponModel = true, rules = { ranged = { [2] = true, [3] = true, [18] = true }, why = "Auto Shot, Aimed Shot and Multi-Shot need a bow, gun or crossbow" }, bands = {
+			{ upTo = 19, style = "2h", label = "", w = { agi = 1, ap = 0.019, armor = 0.011, crit = 1.9, dps = 0.3, health = 0.002, hit = 1.1, int = 0.35, mana = 0.021, mp5 = 0.053, rap = 0.39, rdps = 4.1, spi = 0.084, sta = 0.26 } },
+			{ upTo = 29, style = "2h", label = "", w = { agi = 1, ap = 0.009, armor = 0.006, crit = 2.8, dps = 0.46, hit = 1.8, int = 0.51, mana = 0.032, mp5 = 0.2, rap = 0.41, rdps = 4, spi = 0.15, sta = 0.1 } },
+			{ upTo = 39, style = "2h", label = "", w = { agi = 1, ap = 0.023, armor = 0.008, crit = 3.7, dps = 1.1, health = 0.004, hit = 2.1, int = 0.45, mana = 0.031, mp5 = 0.35, rap = 0.41, rdps = 3.5, spi = 0.22, sta = 0.17 } },
+			{ upTo = 49, style = "2h", label = "", w = { agi = 1, ap = 0.051, armor = 0.013, crit = 5.7, dps = 1.3, health = 0.013, hit = 3.3, int = 0.44, mana = 0.036, mp5 = 0.64, rap = 0.38, rdps = 3.1, spi = 0.33, sta = 0.31 } },
+			{ upTo = 59, style = "2h", label = "", w = { agi = 1, ap = 0.052, armor = 0.013, crit = 7.5, dps = 1.3, health = 0.01, hit = 4.3, int = 0.97, mana = 0.039, mp5 = 0.69, rap = 0.38, rdps = 3.2, spi = 0.29, sta = 0.27 } },
+			{ upTo = 60, style = "2h", label = "", w = { agi = 1, ap = 0.077, armor = 0.015, crit = 9, dps = 1.8, health = 0.016, hit = 4.2, int = 0.76, mana = 0.02, mp5 = 0.59, rap = 0.37, rdps = 2.8, spi = 0.26, sta = 0.24 } },
+		} },
+		marksmanship = { ref = "agi", needsWeaponModel = true, rules = { ranged = { [2] = true, [3] = true, [18] = true }, why = "Auto Shot, Aimed Shot and Multi-Shot need a bow, gun or crossbow" }, bands = {
+			{ upTo = 19, style = "2h", label = "", w = { agi = 1, ap = 0.011, armor = 0.01, crit = 1.9, dps = 0.19, health = 0.001, hit = 1.2, int = 0.55, mana = 0.025, mp5 = 0.046, rap = 0.4, rdps = 4.1, spi = 0.074, sta = 0.23 } },
+			{ upTo = 29, style = "2h", label = "", w = { agi = 1, ap = 0.024, armor = 0.0085, crit = 3.1, dps = 0.37, health = 0.0045, hit = 1.9, int = 1, mana = 0.041, mp5 = 0.26, rap = 0.4, rdps = 4.1, spi = 0.18, sta = 0.19 } },
+			{ upTo = 39, style = "2h", label = "", w = { agi = 1, ap = 0.029, armor = 0.01, crit = 4.7, dps = 0.42, health = 0.004, hit = 2.6, int = 1.1, mana = 0.037, mp5 = 0.43, rap = 0.39, rdps = 4.1, spi = 0.33, sta = 0.18 } },
+			{ upTo = 49, style = "2h", label = "", w = { agi = 1, ap = 0.078, armor = 0.019, crit = 6.5, dps = 1.1, health = 0.02, hit = 3.8, int = 1.1, mana = 0.047, mp5 = 0.78, rap = 0.36, rdps = 3.7, spi = 0.42, sta = 0.4 } },
+			{ upTo = 59, style = "2h", label = "", w = { agi = 1, ap = 0.062, armor = 0.013, crit = 7.8, dps = 1.1, health = 0.013, hit = 4.5, int = 1.1, mana = 0.052, mp5 = 0.75, rap = 0.38, rdps = 3.8, spi = 0.4, sta = 0.3 } },
+			{ upTo = 60, style = "2h", label = "", w = { agi = 1, ap = 0.085, armor = 0.016, crit = 8.3, dps = 1.8, health = 0.016, hit = 4.2, int = 0.85, mana = 0.022, mp5 = 0.38, rap = 0.37, rdps = 3.2, spi = 0.23, sta = 0.24 } },
+		} },
+		survival = { ref = "agi", needsWeaponModel = true, rules = { ranged = { [2] = true, [3] = true, [18] = true }, why = "Auto Shot, Aimed Shot and Multi-Shot need a bow, gun or crossbow" }, bands = {
+			{ upTo = 19, style = "2h", label = "", w = { agi = 1, ap = 0.015, armor = 0.011, crit = 1.9, dps = 0.23, health = 0.001, hit = 1.2, int = 0.43, mana = 0.022, mp5 = 0.061, rap = 0.4, rdps = 4.2, spi = 0.11, sta = 0.23 } },
+			{ upTo = 29, style = "2h", label = "", w = { agi = 1, ap = 0.011, armor = 0.005, crit = 2.9, dps = 0.16, hit = 3.1, int = 0.58, mana = 0.035, mp5 = 0.22, rap = 0.41, rdps = 4.3, spi = 0.16, sta = 0.097 } },
+			{ upTo = 39, style = "2h", label = "", w = { agi = 1, ap = 0.034, armor = 0.01, crit = 4, dps = 0.52, health = 0.005, hit = 4.1, int = 0.74, mana = 0.043, mp5 = 0.26, rap = 0.4, rdps = 4.2, spi = 0.25, sta = 0.17 } },
+			{ upTo = 49, style = "2h", label = "", w = { agi = 1, ap = 0.06, armor = 0.012, crit = 5.2, dps = 0.85, health = 0.014, hit = 5.3, int = 0.57, mana = 0.036, mp5 = 0.37, rap = 0.32, rdps = 3.3, spi = 0.2, sta = 0.27 } },
+			{ upTo = 59, style = "2h", label = "", w = { agi = 1, ap = 0.054, armor = 0.012, crit = 6.1, dps = 0.99, health = 0.011, hit = 6.1, int = 0.56, mana = 0.034, mp5 = 0.34, rap = 0.33, rdps = 3.3, spi = 0.22, sta = 0.22 } },
+			{ upTo = 60, style = "2h", label = "", w = { agi = 1, ap = 0.079, armor = 0.013, crit = 6.6, dps = 1.6, health = 0.014, hit = 6, int = 0.42, mana = 0.031, mp5 = 0.23, rap = 0.34, rdps = 2.9, spi = 0.19, sta = 0.18 } },
 		} },
 	},
 }

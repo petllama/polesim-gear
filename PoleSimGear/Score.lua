@@ -43,20 +43,30 @@ function Score.StatScore(stats, w, cls)
 	return total
 end
 
--- role: "mh" (main hand or two-hander), "oh" (off-hand weapon: half its DPS), "ranged" (wands, bows:
--- rdps), else "gear".
+-- Weapon terms (armory._weapon_terms; PoleSim design 2026-11-22-melee-weapon-weights): per role the DPS
+-- weight, the speed weight and its anchor, the band's reference weapon speed (shipped in the weights as
+-- _mhSpeed/_ohSpeed/_rSpeed). A weapon's speed term is (its speed - the anchor) x the weight, so a
+-- reference-speed weapon scores its DPS alone; an off hand without ohDps scores half the DPS weight.
+local TERMS = { mh = { "dps", "speed", "_mhSpeed" }, oh = { "ohDps", "ohSpeed", "_ohSpeed" }, ranged = { "rdps", "rspeed", "_rSpeed" } }
+Score.TERMS = TERMS
+-- -> { { item key, amount, weight key, weight }, ... } of a weapon in a role
+function Score.WeaponTerms(inst, w, role)
+	local t = TERMS[role]
+	if not t or (role == "oh" and inst.inv ~= ONE_HAND and inst.inv ~= OFF_HAND_ONLY) then return {} end
+	if role == "oh" and w.ohDps == nil then return { { "dps", inst.dps, "dps", 0.5 * (w.dps or 0) } } end
+	local out = { { t[1], inst.dps, t[1], w[t[1]] or 0 } }
+	local sw, anchor, speed = w[t[2]], w[t[3]], inst.speed
+	if sw and sw ~= 0 and anchor and speed and speed ~= 0 then out[2] = { t[2], speed - anchor, t[2], sw } end
+	return out
+end
+
+-- role: "mh" (main hand or two-hander), "oh" (off-hand weapon: ohDps/ohSpeed, else half its DPS),
+-- "ranged" (wands, bows: rdps, rspeed), else "gear".
 function Score.Score(inst, w, cls, role)
 	if not inst then return 0 end
 	local s = Score.StatScore(inst.stats, w, cls) + (inst.armor or 0) * (w.armor or 0)
-	local dps = inst.dps or 0
-	if dps ~= 0 and inst.weapon then
-		if role == "mh" then
-			s = s + dps * (w.dps or 0)
-		elseif role == "oh" and (inst.inv == ONE_HAND or inst.inv == OFF_HAND_ONLY) then
-			s = s + 0.5 * dps * (w.dps or 0)
-		elseif role == "ranged" then
-			s = s + dps * (w.rdps or 0)
-		end
+	if (inst.dps or 0) ~= 0 and inst.weapon then
+		for _, x in ipairs(Score.WeaponTerms(inst, w, role)) do s = s + x[2] * x[4] end
 	end
 	return s
 end
@@ -79,12 +89,8 @@ function Score.Parts(inst, w, cls, role)
 	end
 	add("armor", inst.armor or 0, "armor")
 	if (inst.dps or 0) ~= 0 and inst.weapon then
-		if role == "mh" then
-			add("dps", inst.dps, "dps")
-		elseif role == "oh" and (inst.inv == ONE_HAND or inst.inv == OFF_HAND_ONLY) then
-			add("dps", inst.dps, "dps", 0.5)
-		elseif role == "ranged" then
-			add("rdps", inst.dps, "rdps")
+		for _, x in ipairs(Score.WeaponTerms(inst, w, role)) do
+			if x[2] ~= 0 and x[4] ~= 0 then out[#out + 1] = { x[1], round(x[2], 3), x[3], round(x[4], 4), round(x[2] * x[4], 3) } end
 		end
 	end
 	return out
@@ -123,7 +129,7 @@ function Score.Instance(it, bonus)
 	return {
 		id = it.id, bonus = sname and bonus or nil, suffix = sname, name = it.name .. (sname and (" " .. sname) or ""),
 		quality = it.q, icon = it.icon, rl = it.rl, inv = it.inv, c = it.c, sc = it.sc, cm = it.cm, rm = it.rm,
-		unique = it.u, stats = stats, armor = it.ar, dps = it.dps, weapon = it.dps > 0,
+		unique = it.u, stats = stats, armor = it.ar, dps = it.dps, weapon = it.dps > 0, speed = it.speed,
 	}
 end
 

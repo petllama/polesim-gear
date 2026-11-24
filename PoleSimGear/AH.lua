@@ -144,7 +144,7 @@ local function candidate(f, ctx, top, bandAt)
 	else
 		inst = ns.Score.Instance(rec)
 	end
-	local cmp = ns.Equip.Compare(inst, band.w, ctx.cls, band.worn, false)
+	local cmp = ns.Equip.Compare(inst, band.w, ctx.cls, band.worn, band.canDw, ctx.rules)
 	if not cmp or cmp.equipped then return nil, "worn" end
 	return { key = ns.Browser.KeyOf(inst), c = { id = id, inst = inst, score = cmp.score, sources = {}, kinds = {} },
 		cmp = cmp, def = def, at = L > ctx.level and L or nil, price = f.minPrice or 0, quantity = f.totalQuantity,

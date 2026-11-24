@@ -137,6 +137,16 @@ function View.Weapons(model, worn, st, ahead)
 	local ohFixed = oh.isPick and partner ~= nil
 	-- what an off hand adds to the set: all of its score in an empty off hand (under a two-hander)
 	local function ohOwn(r) return W2 and r.c.score or (r.c.score - (r.base or 0)) end
+	-- dual wield: a one-hander never pairs with another copy of itself in the off hand (a quest choice
+	-- gives one; the website's set_oh rule): the next off hand of another item instead
+	local wornIds = { [wm and wm.inst.id or -1] = true, [wo and wo.inst.id or -1] = true }
+	local function partnerFor(id)
+		if not partner or partner.c.id ~= id or ohFixed or wornIds[id] then return partner end
+		for _, o in ipairs(ohRows) do
+			if o.c.id ~= id then return o end
+		end
+		return nil
+	end
 	local set = {}
 	for _, r in ipairs(mhAll) do
 		local k = B.KeyOf(r.c.inst)
@@ -145,7 +155,8 @@ function View.Weapons(model, worn, st, ahead)
 			if not ohFixed or k == pickMH then g = r.gain end -- against main + off hand
 		else
 			own = r.c.score - (r.base or 0)
-			g = own + (partner and ohOwn(partner) or 0)
+			local p = partnerFor(r.c.id)
+			g = own + (p and ohOwn(p) or 0)
 		end
 		-- only sets that beat what is worn; the pick; under an off-hand pick every one-hander (it needs one)
 		if g and (g > 1e-6 or k == pickMH or (ohFixed and W2 and own)) then set[#set + 1] = copy(r, { gain = g, own = own }) end
@@ -157,6 +168,13 @@ function View.Weapons(model, worn, st, ahead)
 	if (mp and isTwo(mp.c.inst)) or (not mp and W2 and not ohFixed) then
 		-- the set is a two-hander (planned, or the one worn): nothing to plan for the off hand
 		oh = { twoHander = true, rows = ohRows }
+	end
+	if mp and not isTwo(mp.c.inst) and oh.plan and oh.plan == partner then
+		local alt = partnerFor(mp.c.id)
+		if alt ~= partner then
+			if oh.suggestion == oh.plan then oh.suggestion = alt end
+			oh.plan = alt
+		end
 	end
 	if mp and not isTwo(mp.c.inst) then
 		local p = oh.plan
@@ -186,7 +204,8 @@ end
 function View.WeightRows(w, n)
 	local out = {}
 	for k, v in pairs(w) do
-		if type(v) == "number" and v ~= 0 then out[#out + 1] = { key = k, value = v, label = ns.DATA.statLabels[k] or k } end
+		-- underscore keys are the reference weapon speeds (anchors of the speed weights), not weights
+		if type(v) == "number" and v ~= 0 and k:sub(1, 1) ~= "_" then out[#out + 1] = { key = k, value = v, label = ns.DATA.statLabels[k] or k } end
 	end
 	table.sort(out, function(a, b)
 		if a.value ~= b.value then return a.value > b.value end

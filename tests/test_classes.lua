@@ -89,8 +89,11 @@ return {
 			T.eq(sd.ref, ref, key)
 			T.near(b.w[ref], 1, 1e-9, key .. " ref weight")
 		end
-		T.eq(ns.DATA.specs.druid.feral, nil); T.eq(ns.DATA.specs.shaman.enhancement, nil)
-		T.eq(ns.DATA.specs.paladin.retribution, nil); T.eq(ns.DATA.specs.paladin.protection, nil)
+		-- melee specs ship gated (needsWeaponModel) until their weights run carries the weapon model
+		for _, k in ipairs({ "druid/feral", "shaman/enhancement", "paladin/retribution", "paladin/protection" }) do
+			local c, s = k:match("(%a+)/(%a+)")
+			T.ok(ns.DATA.specs[c][s].needsWeaponModel, k)
+		end
 	end,
 	-- A known item scores in the addon exactly as on the website.
 	scores_equal_the_website = function()
