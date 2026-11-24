@@ -14,8 +14,14 @@ Spec.ORDER = {
 	warrior = { "arms", "fury", "protection" }, rogue = { "assassination", "combat", "subtlety" },
 	hunter = { "beastmastery", "marksmanship", "survival" },
 }
--- The spec with no talent points: armory.DEFAULT_BUILD, shipped in Data/Weights.lua.
-Spec.DEFAULT = (ns.DATA and ns.DATA.defaultSpec) or {}
+-- The spec with no talent points: armory.DEFAULT_BUILD, shipped in Data/Weights.lua (the website's),
+-- except the hybrids, which start as casters here (CASTER_DEFAULT, when that spec has weights).
+Spec.CASTER_DEFAULT = { druid = "balance", shaman = "elemental", paladin = "holy" }
+Spec.DEFAULT = {}
+for cls, key in pairs((ns.DATA and ns.DATA.defaultSpec) or {}) do Spec.DEFAULT[cls] = key end
+for cls, key in pairs(Spec.CASTER_DEFAULT) do
+	if ns.DATA and ns.DATA.specs and ns.DATA.specs[cls] and ns.DATA.specs[cls][key] then Spec.DEFAULT[cls] = key end
+end
 
 -- points[column], names[column] (the client's column headers, any language) -> spec key | nil.
 -- A column is named by its header when that is a spec key, else by its position. Most points wins;

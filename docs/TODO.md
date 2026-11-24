@@ -65,4 +65,4 @@ drives these Polestar features, and they all run on its Gear module, which Fitz 
 ## From the 0.2.0 review
 
 - [ ] Slots with no upgrade: show the best option anyway (e.g. "Best quest option: Sizzle Stick, -1.3, a sidegrade").
-- [ ] Drift check: note items whose live stats differ from the shipped table; `/psg drift` lists them.
+- [x] Drift check: `/psg drift [itemID]` lists items whose live stats differ from the shipped table (0.7.0).

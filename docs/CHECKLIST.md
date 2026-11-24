@@ -11,11 +11,15 @@ Off-hand weapons have their own weights; Assassination and Subtlety need a dagge
 hunters a bow, gun or crossbow (other weapons are never an upgrade there; the tooltip says why); rogues
 and Fury warriors dual wield (a one-hander compares in its better hand; a set never plans one item in
 both hands). Warrior and Paladin Protection are not supported yet (tank weights pending): pick another
-spec in Settings. With no talent points yet a druid now starts on Feral, a shaman on Enhancement and a
-paladin on Retribution (the website's defaults). **Recorder:** an opt-in leveling recorder for PoleSim
+spec in Settings. With no talent points yet a druid starts on Balance, a shaman on Elemental and a
+paladin on Holy (casters, as in 0.6.0; the website's import starts them on Feral/Enhancement/Retribution).
+Quest rewards and items with no level show no level (no more "lvl 0", "(0)" or "[0]"). New
+`/psg drift [itemID]`: lists items whose live stats differ from PoleSim's shipped table (shipped -> live),
+for Blizzard hotfixes. With Polestar's Gear module on, one chat line per session says our equip prompt
+stays quiet. **Recorder:** an opt-in leveling recorder for PoleSim
 (asked once; off until you say yes): pulls, casts, kills and XP, meals, deaths and character sheets, never
 names, chat or gold; every 4 h of play it offers a copy-paste export for polesim.petllama.com/upload.
-Checks: sections S and R. Item data about 1.3 MB (weapon speeds added).
+Checks: sections S, R and T. Item data about 1.3 MB (weapon speeds added).
 
 **0.6.0 over 0.5.1:** four more classes. Warlock (Affliction, Demonology, Destruction), Druid (Balance,
 Restoration), Shaman (Elemental, Restoration) and Paladin (Holy) now get scores, arrows, the quest reward
@@ -839,8 +843,8 @@ game restart. Report the printed lines.
 /run local c=PoleSimGear.Context.Get() if c then print(c.cls,c.spec,c.specSource,c.level,c.band.upTo,c.ref,c.w._mhSpeed,c.w.speed,c.w._ohSpeed,c.w.ohSpeed,c.w._rSpeed,c.w.rspeed) else print("no context") end
 ```
 
-Expected: your spec from the talents (no points yet: `arms`, `combat`, `beastmastery`, `feral`,
-`enhancement`, `retribution` `(default)`); the second line e.g. `warrior arms talents 30 39 str 3 9.8 nil
+Expected: your spec from the talents (no points yet: `arms`, `combat`, `beastmastery`, and for a druid,
+shaman or paladin their caster spec `balance`, `elemental`, `holy` `(default)`); the second line e.g. `warrior arms talents 30 39 str 3 9.8 nil
 nil nil nil` (reference main-hand speed and its weight; rogues also the off hand, hunters the ranged
 weapon). Feral: `nil` speed (the paw ignores it). Protection (warrior or paladin): one chat line "...
 Protection isn't supported yet. Pick a supported spec in Settings ..." and `no context`.
@@ -918,6 +922,31 @@ Force again, Stop asking: never again; Settings "Ask me to upload every 4 h of p
 
 **R10. No taint.** After the dialogs and the export window, use a unit frame's menu (Target Marker Icon >
 Skull) on your target: no "blocked" message.
+
+## T. Small changes (0.7.0)
+
+**T1. No "lvl 0".** Open the window: Gear Plan, Slot Upgrades (a slot with a quest reward that has no
+required level), Sources > Quests (a quest with no level) and the AH upgrades panel: a missing level is
+blank, never "lvl 0", "(0)", "[0]" or "level 0". Hover such a row: the source line has no "(0)".
+
+**T2. /psg drift.**
+
+```
+/psg drift
+```
+
+Expected: either "drift: no differences (N items checked)" or one line per item "Name (id): stat
+shipped -> live, ..." (at most 15, then "and N more"), plus "N items not loaded yet, run again" if some
+were not cached (run it again after a few seconds: the count drops). Running it twice at once prints
+"ran a moment ago, try again in N s". `/psg drift 8071` checks one item (Sizzle Stick). Send me the list
+if it shows differences.
+
+**T3. Polestar's Gear notice.** With Polestar's Gear module on (and the Polestar question answered
+earlier), log in: one chat line "PoleSim Gear: Polestar's Gear is on: PoleSim Gear's equip prompt stays
+quiet." once; `/reload` shows it again (a new session), turning Polestar's Gear off: none at the next login.
+
+**T4. Default spec.** A druid, shaman or paladin with no talent points (a new character, or after a
+talent reset): `/psg spec` says `balance` / `elemental` / `holy` `(default)`.
 
 ## Probe results (B1, fill in)
 

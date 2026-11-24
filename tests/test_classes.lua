@@ -64,13 +64,22 @@ return {
 		-- tanks wait for their weights (no weaponModel bands yet)
 		T.ok(not S.Supported("paladin", "protection")); T.ok(not S.Supported("warrior", "protection"))
 	end,
-	-- No talent points: the website's default when shipped, else the class's first shipped spec.
+	-- No talent points: the website's default when shipped, else the class's first shipped spec; the
+	-- hybrids start as casters in the addon (Balance, Elemental, Holy: Spec.CASTER_DEFAULT), the data
+	-- (the website's default) stays Feral/Enhancement/Retribution.
 	defaults = function()
 		local ns = addon("druid")
-		T.eq(ns.Spec.DEFAULT.warlock, "affliction"); T.eq(ns.Spec.DEFAULT.druid, "feral")
-		T.eq(ns.Spec.DEFAULT.shaman, "enhancement"); T.eq(ns.Spec.DEFAULT.paladin, "retribution")
+		T.eq(ns.Spec.DEFAULT.warlock, "affliction"); T.eq(ns.Spec.DEFAULT.druid, "balance")
+		T.eq(ns.Spec.DEFAULT.shaman, "elemental"); T.eq(ns.Spec.DEFAULT.paladin, "holy")
+		T.eq(ns.Spec.DEFAULT.priest, "shadow"); T.eq(ns.Spec.DEFAULT.mage, "frost")
 		T.eq(ns.Spec.DEFAULT.warrior, "arms"); T.eq(ns.Spec.DEFAULT.rogue, "combat"); T.eq(ns.Spec.DEFAULT.hunter, "beastmastery")
-		for cls, ref in pairs({ warlock = "spShadow", druid = "str", shaman = "str", paladin = "str" }) do
+		T.eq(ns.DATA.defaultSpec.druid, "feral", "the website's default is untouched")
+		for cls, spec in pairs({ druid = "balance", shaman = "elemental", paladin = "holy" }) do
+			local n = addon(cls)
+			n.char = n.char or { spec = "auto" }
+			T.eq(n.Spec.Current(cls), spec, cls)
+		end
+		for cls, ref in pairs({ warlock = "spShadow", druid = "sp", shaman = "sp", paladin = "str" }) do
 			local n = addon(cls)
 			local ctx = n.Context.Get()
 			T.eq(ctx.cls, cls); T.eq(ctx.specSource, "default"); T.eq(ctx.ref, ref, cls)

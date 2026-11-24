@@ -18,11 +18,12 @@ update needs `/reload`, unless its notes say it adds files: 0.7.0 does, restart 
 | Warrior | Arms, Fury                              | Arms          | Protection (tank weights pending)     |
 | Rogue   | Assassination, Combat, Subtlety         | Combat        |                                       |
 | Hunter  | Beast Mastery, Marksmanship, Survival   | Beast Mastery |                                       |
-| Druid   | Balance, Feral, Restoration             | Feral         |                                       |
-| Shaman  | Elemental, Enhancement, Restoration     | Enhancement   |                                       |
-| Paladin | Holy, Retribution                       | Retribution   | Protection (tank weights pending)     |
+| Druid   | Balance, Feral, Restoration             | Balance       |                                       |
+| Shaman  | Elemental, Enhancement, Restoration     | Elemental     |                                       |
+| Paladin | Holy, Retribution                       | Holy          | Protection (tank weights pending)     |
 
-\* The spec used before you have spent any talent points (below level 10).
+\* The spec used before you have spent any talent points (below level 10). Druids, shamans and paladins
+start on their caster spec (the website's import starts them on Feral, Enhancement and Retribution).
 You can pick another in Settings (or `/psg spec`) at any time.
 
 Not supported yet: Warrior and Paladin Protection (tank weights rest on the least validated parts of the
@@ -179,11 +180,14 @@ needed the first time (not just `/reload`).
   Restoration over Feral over Balance, Restoration over Enhancement over Elemental, Retribution over
   Protection over Holy, Protection over Fury over Arms, Subtlety over Combat over Assassination,
   Survival over Marksmanship over Beast Mastery); no points yet = Shadow for a priest, Frost for a mage,
-  Affliction for a warlock, Arms for a warrior, Combat for a rogue, Beast Mastery for a hunter, Feral for
-  a druid, Enhancement for a shaman, Retribution for a paladin.
+  Affliction for a warlock, Arms for a warrior, Combat for a rogue, Beast Mastery for a hunter, Balance
+  for a druid, Elemental for a shaman, Holy for a paladin.
 - `/psg minimap`: hide/show the minimap button (saved for the account).
 - `/psg ask`: ask to equip every upgrade in your bags now (the equip prompt, even for items there at login).
 - `/psg polestar`: ask again whether to turn off Polestar's own gear scores (forgets the earlier answer).
+- `/psg drift` (or `/psg drift <itemID>`): compares PoleSim's shipped stats with the game's live stats for
+  everything you wear and carry (or one item) and lists the differences (`spi 4 -> 6`: shipped -> live),
+  e.g. after a Blizzard hotfix; items the game has not loaded yet are requested: run it again.
 - `/psg export`: the recorder's copy-paste export (Recording for PoleSim); `/psg record`: recording on/off,
   hours recorded and since the last upload.
 
