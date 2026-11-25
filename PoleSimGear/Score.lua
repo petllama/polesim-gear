@@ -16,6 +16,16 @@ local EXPAND = { hit = { "hit", "spellHit" }, crit = { "crit", "spellCrit" }, mh
 	spDmg = { "sp" }, ap = { "ap", "rap" } }
 Score.EXPAND = EXPAND
 
+-- armory.expand: the weight keys an item stat counts with. Spell damage alone (spDmg) takes the band's
+-- spDmg weight when it has one (paladins: Holy spell damage; their healing power has its own `heal`
+-- weight = sp - spHoly, both set by armory.split_spell_power), else the generic spell power weight.
+local SPDMG = { "spDmg" }
+function Score.Expand(k, w)
+	if k == "spDmg" and w.spDmg ~= nil then return SPDMG end
+	return EXPAND[k] or { k }
+end
+local expand = Score.Expand
+
 local function sortedKeys(t)
 	local out = {}
 	for k in pairs(t) do out[#out + 1] = k end
@@ -37,7 +47,7 @@ function Score.StatScore(stats, w, cls)
 		if k == "apFeral" then
 			if cls == "druid" then total = total + v * (w.ap or 0) end
 		else
-			for _, wk in ipairs(EXPAND[k] or { k }) do total = total + v * (w[wk] or 0) end
+			for _, wk in ipairs(expand(k, w)) do total = total + v * (w[wk] or 0) end
 		end
 	end
 	return total
@@ -90,7 +100,7 @@ function Score.Parts(inst, w, cls, role)
 		if k == "apFeral" then
 			if cls == "druid" then add(k, stats[k], "ap") end
 		else
-			for _, wk in ipairs(EXPAND[k] or { k }) do add(k, stats[k], wk) end
+			for _, wk in ipairs(expand(k, w)) do add(k, stats[k], wk) end
 		end
 	end
 	add("armor", inst.armor or 0, "armor")

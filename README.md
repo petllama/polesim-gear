@@ -1,6 +1,6 @@
 # PoleSim Gear
 
-Version 0.7.7. WoW: Forever addon: PoleSim's simulated, level-banded gear weights in game. Item scores with a
+Version 0.7.8. WoW: Forever addon: PoleSim's simulated, level-banded gear weights in game. Item scores with a
 "how?" breakdown, upgrade arrows, the best quest reward, and a gear planner window with where to get
 each upgrade. In testing.
 
@@ -48,6 +48,10 @@ ignores the weapon's speed).
 **Healer specs** (Restoration, Holy, Discipline) use leveling weights: what kills mobs fastest while
 questing (Holy paladins and Restoration shamans melee a lot while leveling, so Strength and weapon DPS
 count), not dungeon healing.
+
+**Paladins:** PoleSim's spell power weight counts damage and Holy Light's healing, and every paladin spell
+hits for Holy damage, so "+spell damage" alone scores like Holy spell damage and "+healing" at what spell power
+adds through Holy Light (spell power minus Holy spell damage). The website scores them the same way.
 
 Druid, Shaman and Paladin relics (idols, totems, librams) are scored by their stats only; their effects
 (e.g. "Increases the damage of your Moonfire spell") are not, so they score 0 today. PoleSim plays Druid,

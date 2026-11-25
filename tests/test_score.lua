@@ -27,6 +27,31 @@ return {
 		T.near(S.StatScore({ apFeral = 10 }, w, "priest"), 0)
 		T.near(S.StatScore({ apFeral = 10 }, w, "druid"), 5)
 	end,
+	paladin_spell_damage_vs_healing = function()
+		-- armory.split_spell_power: paladin weights carry spDmg (= spHoly) and heal (= sp - spHoly)
+		local ns = T.addon(FILES)
+		local S = ns.Score
+		local w = { sp = 1.8, spHoly = 1.2, spDmg = 1.2, heal = 0.6, str = 1 }
+		T.near(S.StatScore({ spDmg = 10, str = 5 }, w, "paladin"), 10 * 1.2 + 5)
+		T.near(S.StatScore({ spDmg = 15, heal = 45 }, w, "paladin"), 15 * 1.2 + 45 * 0.6)
+		T.near(S.StatScore({ sp = 10 }, w, "paladin"), 18)
+		local p = S.Parts({ stats = { spDmg = 15, heal = 45 }, armor = 0 }, w, "paladin", "gear")
+		T.eq(p[1][1], "heal"); T.eq(p[1][3], "heal"); T.near(p[1][5], 27)
+		T.eq(p[2][1], "spDmg"); T.eq(p[2][3], "spDmg"); T.near(p[2][5], 18)
+		-- without a spDmg weight (other classes) spell damage alone takes the generic weight
+		T.near(S.StatScore({ spDmg = 10 }, { sp = 1.8, spHoly = 1.2 }, "priest"), 18)
+		-- the shipped paladin bands carry the split (gen_addon_data -> armory.band_weights)
+		for _, spec in ipairs({ "retribution", "holy", "protection" }) do
+			local sd = ns.DATA.specs.paladin[spec]
+			if sd then
+				for _, b in ipairs(sd.bands) do
+					T.near(b.w.spDmg, b.w.spHoly, 1e-9, spec .. b.upTo)
+					T.near(b.w.heal or 0, math.max(0, b.w.sp - b.w.spHoly), 1e-3, spec .. b.upTo)
+				end
+			end
+		end
+		for _, b in ipairs(ns.DATA.specs.priest.shadow.bands) do T.eq(b.w.spDmg, nil) end
+	end,
 	parts_sum_to_score = function()
 		local S = T.addon(FILES).Score
 		local i = inst({ hit = 1, int = 10 })

@@ -1,4 +1,13 @@
-# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution/Protection paladin) — PoleSim Gear 0.7.7
+# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution/Protection paladin) — PoleSim Gear 0.7.8
+
+**0.7.8 over 0.7.7:** new weights. Caster openers follow Method's guides: priests and shamans put their
+DoT (Shadow Word: Pain, Flame Shock) on right after the first cast-time spell, not when the mob arrives;
+druids pick per level between that order and holding Moonfire/Insect Swarm until the mob arrives (the sim
+takes the faster one). Protection paladins: Redoubt procs 10% of the time at every rank and Shieldsworn
+lets you block casters' bolts. Fury warriors: steadier weights (three seeds). Paladins: "+spell damage"
+alone now scores like Holy spell damage and "+healing" counts (Holy Light), so a "+spell damage" item
+scores a bit lower for Retribution and an "of the Physician"-style healing item a bit higher. Data only, no
+new files: `/reload` is enough.
 
 **0.7.7 over 0.7.6:** `/psg export gear` opens a window with one highlighted line (your class, spec,
 level, race and worn items: no names) to paste in the website's Armory ("Paste from PoleSim Gear"), which
