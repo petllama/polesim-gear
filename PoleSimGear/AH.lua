@@ -250,12 +250,15 @@ function AH.Build(found, ctx, ahead, yield)
 end
 
 -- rows -> a new list in the order: "gain" (default: biggest first), "value" (gain per gold), "price"
--- (cheapest first); ties: cheaper, then the item key.
+-- (cheapest first); ties: cheaper, then the item key. A weapon-set row's price is the pair's (setPrice),
+-- the one its Price cell and gain per gold show.
+function AH.RowPrice(r) return r.setPrice or r.price or 0 end
 function AH.Sort(list, by)
 	local out = {}
 	for i, r in ipairs(list) do out[i] = r end
+	local price = AH.RowPrice
 	local function tie(a, b)
-		if (a.price or 0) ~= (b.price or 0) then return (a.price or 0) < (b.price or 0) end
+		if price(a) ~= price(b) then return price(a) < price(b) end
 		return tostring(a.key) < tostring(b.key)
 	end
 	local cmp
@@ -263,7 +266,7 @@ function AH.Sort(list, by)
 		cmp = function(a, b) if a.value ~= b.value then return a.value > b.value end return tie(a, b) end
 	elseif by == "price" then
 		cmp = function(a, b)
-			if (a.price or 0) ~= (b.price or 0) then return (a.price or 0) < (b.price or 0) end
+			if price(a) ~= price(b) then return price(a) < price(b) end
 			if a.gain ~= b.gain then return a.gain > b.gain end
 			return tostring(a.key) < tostring(b.key)
 		end

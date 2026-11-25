@@ -330,6 +330,12 @@ return {
 		T.eq(ids("price"), "4,2,1,3")
 		T.eq(ids(nil), "3,1,4,2", "default gain")
 		T.eq(rows[1].c.id, 1, "a new list")
+		-- a weapon-set row sorts by the pair's price (setPrice), not its own
+		local set = row(5, 4, 100)
+		set.setPrice, set.value = 60000, 4 / 6
+		rows[#rows + 1] = set
+		T.eq(ids("price"), "4,2,1,5,3", "set row at its pair price")
+		T.eq(ids("gain"), "3,1,5,4,2")
 	end,
 	-- A row's click selects its browse result in the AH frame the Blizzard way (SelectBrowseResult: the
 	-- item's listings, cheapest buyout first); from the item buy view the listing is asked again

@@ -4,7 +4,9 @@
 -- "lvl N" (look ahead), gain, cheapest price, gain per gold; sorts Gain / Value / Price; hover: the
 -- game's item tooltip with PoleSim's lines; click: the item's listings in the AH (buying is yours).
 -- Weapon-set rows (one-hander + off hand under a worn two-hander): right-click opens the PARTNER's
--- listings, and after a set row's listings a "Next: <partner>" button does (then hides).
+-- listings, and after a set row's listings a "Next: <partner>" button does (then hides). They read as a
+-- pair at a glance: the partner's small icon on the row's icon, "Main hand + <partner>" in the set
+-- colour, and the Price cell shows both items' price ("set of 2"), the price Gain/g uses.
 local ADDON, ns = ...
 local P = {}
 ns.AHPanel = P
@@ -37,18 +39,47 @@ local function isPlan(r)
 	return ok and sk == r.key or false
 end
 
+-- the weapon-set colour (partner name, "set of 2", the partner icon's frame)
+P.SET = S.hex("6fd6c4")
+
+-- The slot line: slot, "+ <partner>" (set rows; the name cut with "..." to fit the column), tags.
+local function slotLine(row, r)
+	local slot = r.slot and (r.slot.short or r.slot.label) or ""
+	local tags = ""
+	if (r.at or 0) > 0 then tags = tags .. "  " .. S.Colour(C.gold) .. "lvl " .. r.at .. "|r" end
+	if r.anySuffix then tags = tags .. "  " .. S.Colour(C.label) .. "any suffix|r" end
+	if isPlan(r) then tags = tags .. "  " .. S.Colour(C.pick) .. "plan|r" end
+	if not r.partner then return slot .. tags end
+	local name = partnerName(r)
+	local function line(n) return slot .. " " .. S.Colour(P.SET) .. "+ " .. n .. "|r" .. tags end
+	local fs, text = row.item.sub, line(name)
+	fs:SetText(text)
+	local cut = #name
+	while cut > 4 and (fs:GetStringWidth() or 0) > COL.nameW do
+		cut = cut - 1
+		text = line(name:sub(1, cut):gsub("%s+$", "") .. "...")
+		fs:SetText(text)
+	end
+	return text
+end
+
 local function fill(row, r)
 	S.RowBg(row, row.index)
-	local sub = r.slot and (r.slot.short or r.slot.label) or ""
-	if (r.at or 0) > 0 then sub = sub .. "  " .. S.Colour(C.gold) .. "lvl " .. r.at .. "|r" end
-	if r.anySuffix then sub = sub .. "  " .. S.Colour(C.label) .. "any suffix|r" end
-	if isPlan(r) then sub = sub .. "  " .. S.Colour(C.pick) .. "plan|r" end
+	local sub = slotLine(row, r)
 	row.item:Set(r.c.inst, sub)
 	row.gain:SetText(S.Signed(r.gain))
-	row.price:SetText(S.Money(r.price))
+	local p = r.partner
+	row.price:SetText(S.Money(ns.AH.RowPrice(r)))
+	S.Place(row.price, "LEFT", COL.price, p and 6 or 0, COL.priceW)
+	row.priceSub:SetShown(p ~= nil)
+	if p then
+		row.partnerIcon.icon:SetTexture(S.IconPath(p.c and p.c.inst and p.c.inst.icon))
+	end
+	row.partnerIcon:SetShown(p ~= nil)
 	row.value:SetText(format("%+.1f", r.value))
 	row.star:Set(ns.Wishlist.Has(r.c.inst))
 end
+P._fill = fill
 
 -- The row tooltip: the game's item tooltip (with the row's suffix), PoleSim's lines (Window.RowLines),
 -- then the auction house's: price, gain per gold, the weapon set's partner, any-suffix rows.
@@ -107,9 +138,26 @@ local function make(row)
 	row.star:SetPoint("LEFT", COL.star, 0)
 	row.item = S.ItemCell(row, 22, COL.nameW)
 	row.item:SetPoint("LEFT", COL.item, 0)
+	-- a weapon set's partner: its small icon over the row icon's bottom-right corner, framed in the set colour
+	local pi = CreateFrame("Frame", nil, row.item)
+	pi:SetSize(14, 14)
+	pi:SetPoint("CENTER", row.item.icon, "BOTTOMRIGHT", -3, 3)
+	if pi.SetFrameLevel and row.item.GetFrameLevel then pi:SetFrameLevel((row.item:GetFrameLevel() or 0) + 2) end
+	pi.bg = S.Fill(pi, C.body)
+	pi.icon = pi:CreateTexture(nil, "ARTWORK")
+	pi.icon:SetPoint("TOPLEFT", 1, -1)
+	pi.icon:SetPoint("BOTTOMRIGHT", -1, 1)
+	pi.border = S.Border(pi, P.SET)
+	pi:Hide()
+	row.partnerIcon = pi
 	row.price = S.Text(row, 11, C.text)
 	row.price:SetJustifyH("RIGHT")
 	S.Place(row.price, "LEFT", COL.price, 0, COL.priceW)
+	row.priceSub = S.Text(row, 9, P.SET)
+	row.priceSub:SetJustifyH("RIGHT")
+	S.Place(row.priceSub, "LEFT", COL.price, -8, COL.priceW)
+	row.priceSub:SetText("set of 2")
+	row.priceSub:Hide()
 	row.value = S.Text(row, 11, C.dim)
 	row.value:SetJustifyH("RIGHT")
 	S.Place(row.value, "LEFT", COL.value, 0, COL.valueW)

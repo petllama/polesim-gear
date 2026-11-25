@@ -238,6 +238,54 @@ return {
 		T.eq(fx.log.bought, 0)
 		fx.cleanup()
 	end,
+	-- Weapon-set rows read as a pair at a glance: the partner's small icon on the row's icon, the slot
+	-- line "Main hand + <partner>" (in the set colour), the Price cell = both items' price with "set of 2"
+	-- under it (so Price and Gain/g agree); rows without a partner are unchanged.
+	set_rows_marked_as_pairs = function()
+		local fx, P, U, mace, orb, robe = setScanned()
+		local S = fx.ns.Style
+		local robeD = robe.d
+		T.eq(mace.d.setPrice, 5000)
+		T.eq(mace.price.text, S.Money(5000), "the pair's price")
+		T.eq(orb.price.text, S.Money(5000))
+		T.ok(mace.priceSub:IsShown() and mace.priceSub.text:find("set of 2", 1, true), "set marker")
+		T.eq(mace.value.text, string.format("%+.1f", mace.d.gain / 0.5), "Gain/g agrees with the price shown")
+		T.ok(mace.partnerIcon:IsShown(), "partner icon")
+		T.eq(mace.partnerIcon.icon.texture, S.IconPath(orb.d.c.inst.icon))
+		T.eq(orb.partnerIcon.icon.texture, S.IconPath(mace.d.c.inst.icon))
+		local sub = mace.item.sub.text
+		T.ok(sub:find("^Main hand") and sub:find("+ Orb of Power", 1, true), sub)
+		T.ok(orb.item.sub.text:find("^Off hand") and orb.item.sub.text:find("+ Stout Battlehammer", 1, true), orb.item.sub.text)
+		T.ok(sub:find("any suffix", 1, true), "other tags stay")
+		-- unpaired row unchanged
+		T.eq(robe.price.text, S.Money(20000)); T.eq(robe.priceSub:IsShown(), false)
+		T.eq(robe.partnerIcon:IsShown(), false); T.eq(robe.item.sub.text, "Chest")
+		T.eq(#U.overflows(P.frame), 0, table.concat(U.overflows(P.frame), "; "))
+		-- tooltip: own price, the set line, the gain note
+		mace.scripts.OnEnter(mace)
+		local lines = table.concat(U.tip.lines, "\n")
+		T.ok(lines:find("Auction house: 4000c (cheapest)", 1, true), lines)
+		T.ok(lines:find("Weapon set with Orb of Power (1000c): 5000c together", 1, true), lines)
+		T.ok(lines:find("with Orb of Power (AH) over your two-hander", 1, true), lines)
+		-- Price sort: by the pair's price (5000) before the robe (20000)
+		U.button(P.frame, "Price"):Click()
+		local rows = U.rows(P.list)
+		T.eq(rows[#rows].d.c.id, 2292, "robe last")
+		-- a pooled row reused for an unpaired row drops the marks (rows are pooled: the sort moved data)
+		fx.ns.AHPanel._fill(mace, robeD)
+		T.eq(mace.partnerIcon:IsShown(), false); T.eq(mace.priceSub:IsShown(), false); T.eq(mace.item.sub.text, "Chest")
+		fx.cleanup()
+	end,
+	-- A long partner name is cut with "..." so the slot line fits the name column.
+	set_long_partner_name_fits = function()
+		local fx, P, U, mace, orb = setScanned()
+		orb.d.c.inst.name = "Orb of the Exceedingly Long Mistmantle Name"
+		fx.ns.AHPanel._fill(mace, mace.d)
+		local sub = mace.item.sub.text
+		T.ok(sub:find("+ Orb of the", 1, true) and sub:find("...", 1, true), sub)
+		T.eq(#U.overflows(P.frame), 0, table.concat(U.overflows(P.frame), "; "))
+		fx.cleanup()
+	end,
 	-- Closing the auction house stops a scan and lets go of results and rows (the rows' data too).
 	close_releases = function()
 		local fx = setup(RESULTS)

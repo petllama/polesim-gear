@@ -1,4 +1,12 @@
-# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution/Protection paladin) — PoleSim Gear 0.7.2
+# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution/Protection paladin) — PoleSim Gear 0.7.3
+
+**0.7.3 over 0.7.2:** auction house weapon sets read as a pair at a glance. A set row (a one-hander
+under your two-hander with the best off hand for sale, or the reverse) shows the partner's small icon
+on its icon's bottom-right corner, "Main hand + <partner>" (or "Off hand + <one-hander>") in teal under
+the name (a long name ends in "..."), and its **Price** is both items' price with "set of 2" under it,
+the price its Gain/g uses; sorting by Price uses it too. The tooltip still gives the item's own price
+and "Weapon set with X (price): Y together". Other rows are unchanged. No new files: `/reload` is enough.
+Check: N10.
 
 **0.7.2 over 0.7.1:** auction house weapon sets. A weapon-set row (a one-hander under your two-hander
 paired with the best off hand for sale, or the reverse) now takes you to the other half too:
@@ -751,6 +759,12 @@ row: the off hand's listings show. Right-click the off hand's row: the one-hande
 one-hander row: its listings, and a "Next: <off hand>" button right of Gain / Value / Price; click it:
 the off hand's listings, the button hides. Left-click a non-weapon row: no Next button; right-click it:
 nothing happens. Then buy something with Blizzard's Buyout button: no "blocked" message.
+
+**N10. Weapon set rows (0.7.3).** Same scan: the one-hander and the off hand rows each carry the other's
+small teal-framed icon on their icon and "+ <partner>" in teal on the second line; their Price is the
+sum of both (the tooltip's "... together" figure) with "set of 2" under it, and Gain/g = gain / that
+price in gold. Sort by Price: the set rows sit at the pair's price. A chest or ring row: no small icon,
+plain slot line, its own price.
 
 If the browse rows of "of the ..." items never show their suffix (every such row "any suffix"), paste
 this after a normal search for e.g. "of the Owl" and report the lines:
