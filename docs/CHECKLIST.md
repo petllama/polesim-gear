@@ -1,5 +1,9 @@
 # In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution/Protection paladin) — PoleSim Gear 0.7.4
 
+**0.7.5 over 0.7.4:** the Slot dropdown is greyed out (its tooltip says "Scan first") until a scan has
+listed upgrades, and while a scan runs, so it never opens empty. No new files: `/reload` is enough.
+Check: N12.
+
 **0.7.4 over 0.7.3:** the auction house upgrades panel has a **Slot** dropdown right of Gain / Value /
 Price (our own popup, not Blizzard's menu). **All slots** by default, then only the slots the scan found,
 in paper-doll order with their counts ("Main hand (3)", "Rings (12)"). A choice lists that slot only,
@@ -780,6 +784,10 @@ only that slot's rows, from the top; Price/Gain still sort them. Wearing a staff
 one-hander set row, then "Next: <off hand>": the off hand's listings, though its row is hidden. Scan
 again: the choice stays. Close and reopen the auction house: All slots. Then a raid marker from the
 target frame's menu: no "blocked" message.
+
+**N12. Slot dropdown waits for a scan (0.7.5).** Open the auction house: the Slot dropdown is faded and
+does nothing; its tooltip says "Scan first". Scan: it stays faded while scanning, then turns on. Scan
+again: faded during the scan, your choice is back after it.
 
 If the browse rows of "of the ..." items never show their suffix (every such row "any suffix"), paste
 this after a normal search for e.g. "of the Owl" and report the lines:

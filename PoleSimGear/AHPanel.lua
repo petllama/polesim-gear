@@ -248,6 +248,12 @@ function P.Refresh(top)
 	end
 	S.SetList(P.list, list, top == true)
 	f.slot:Update()
+	-- off (faded) until a finished scan has listed something, and while a scan runs: an empty
+	-- dropdown before the first scan only confuses
+	local ready = not scanning and #ns.AH.Rows() > 0
+	if f.slot:IsEnabled() ~= ready then S.SetEnabled(f.slot, ready) end
+	f.slot.tip = ready and "Show the upgrades for one slot (the sort still applies)"
+		or "Scan first: then pick a slot to show"
 	f.empty:SetShown(#list == 0 and not scanning and ns.AH.Status() ~= nil)
 end
 

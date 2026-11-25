@@ -295,11 +295,18 @@ return {
 		local dd = P.frame.slot
 		T.ok(dd and dd:IsShown(), "the Slot dropdown")
 		T.eq(dd.label.text, "All slots", "default")
-		local items = U.menu(dd)
-		T.eq(#items, 1, "no results: only All"); T.eq(items[1].text, "All slots")
+		T.eq(dd.enabled, false, "off until a scan has listed something")
+		T.eq(dd.alpha, 0.4, "and looks off")
+		T.ok(dd.tip:find("Scan first", 1, true), dd.tip)
+		fx.api.ready = false
 		U.button(P.frame, "Scan for upgrades"):Click()
+		T.eq(dd.enabled, false, "still off while the first scan runs")
+		fx.api.ready = true
+		fire(fx.ns, "AUCTION_HOUSE_THROTTLED_SYSTEM_READY")
 		answerAll(fx.ns, fx.log)
-		items = U.menu(dd)
+		T.eq(dd.enabled, true, "on once the scan is done"); T.eq(dd.alpha, 1)
+		T.ok(not dd.tip:find("Scan first", 1, true), dd.tip)
+		local items = U.menu(dd)
 		local texts = {}
 		for i, it in ipairs(items) do texts[i] = it.text end
 		T.eq(table.concat(texts, "|"), "All slots|Chest (2)|Main hand (1)")
@@ -348,6 +355,7 @@ return {
 		T.eq(dd.label.text, "Main hand (1)")
 		U.button(P.frame, "Scan for upgrades"):Click()
 		T.eq(dd.label.text, "Main hand (0)", "kept while scanning")
+		T.eq(dd.enabled, false, "off while a re-scan runs")
 		answerAll(fx.ns, fx.log)
 		T.eq(dd.label.text, "Main hand (1)", "kept after a re-scan")
 		T.eq(#U.rows(P.list), 1); T.eq(U.rows(P.list)[1].d.c.id, 789)
