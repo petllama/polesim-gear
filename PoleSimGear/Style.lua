@@ -559,7 +559,9 @@ function Style.EachRow(box, fn)
 	if box.GetView and not box:GetView() then return end
 	if box.ForEachFrame then box:ForEachFrame(fn) end
 end
-function Style.SetList(box, list)
+-- top: back to the top of the list (else the scroll position stays)
+function Style.SetList(box, list, top)
+	if top then return box:SetDataProvider(CreateDataProvider(list)) end
 	box:SetDataProvider(CreateDataProvider(list), ScrollBoxConstants and ScrollBoxConstants.RetainScrollPosition)
 end
 -- Row background: alternating fill and the hover colour.

@@ -1,6 +1,6 @@
 # PoleSim Gear
 
-Version 0.7.3. WoW: Forever addon: PoleSim's simulated, level-banded gear weights in game. Item scores with a
+Version 0.7.4. WoW: Forever addon: PoleSim's simulated, level-banded gear weights in game. Item scores with a
 "how?" breakdown, upgrade arrows, the best quest reward, and a gear planner window with where to get
 each upgrade. In testing.
 
@@ -120,7 +120,10 @@ your level + the window's look ahead); **Cancel** stops it. Each item found is s
 (against what you wear, rings and trinkets against the weaker one, weapons as one set: under a staff a
 one-hander counts with the best off hand for sale) and listed when it is an upgrade: icon, name with its
 suffix, slot, **lvl N** in gold for an item above your level (scored with that level's weights), gain,
-the cheapest price, and gain per gold. Sort by **Gain**, **Value** (gain per gold) or **Price**. Hover a
+the cheapest price, and gain per gold. Sort by **Gain**, **Value** (gain per gold) or **Price**; the
+**Slot** dropdown beside them shows one slot only (**All slots** by default; it lists the slots found with
+their counts, e.g. "Rings (12)", keeps your choice while the auction house stays open and goes back to
+All slots when it closes). Hover a
 row for the game's tooltip with PoleSim's lines and the price; **click it to see its listings** in the
 auction house, cheapest first. Buying is yours: PoleSim Gear never bids or buys.
 

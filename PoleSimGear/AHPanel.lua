@@ -7,6 +7,9 @@
 -- listings, and after a set row's listings a "Next: <partner>" button does (then hides). They read as a
 -- pair at a glance: the partner's small icon on the row's icon, "Main hand + <partner>" in the set
 -- colour, and the Price cell shows both items' price ("set of 2"), the price Gain/g uses.
+-- A Slot dropdown (our own Style.Dropdown, never Blizzard's Menu: it taints the unit popup) filters the
+-- list: "All slots", then the slots in the results with their counts; kept while the AH is open (a
+-- re-scan keeps it, All again when that slot has nothing left), back to All when the AH closes.
 local ADDON, ns = ...
 local P = {}
 ns.AHPanel = P
@@ -15,6 +18,8 @@ local C = S.C
 local format = string.format
 
 P.W = 500
+P.SLOT_W = 130 -- the Slot dropdown: "Main hand (999)" fits
+P.NEXT_W = P.W - 352 -- the "Next: <partner>" button, right of the Slot dropdown
 P.ROW_H = 30
 -- row columns (x from the row's left; the row is P.W - 20 wide)
 local COL = { star = 4, item = 22, nameW = 210, gain = 262, gainW = 48, price = 314, priceW = 100, value = 418, valueW = 56 }
@@ -22,6 +27,7 @@ P.COL = COL
 P.SORTS = { { "gain", "Gain", "Biggest gain first" }, { "value", "Value", "Most gain per gold first" },
 	{ "price", "Price", "Cheapest first" } }
 local sortBy = "gain"
+local slotFilter -- a Browser.SLOTS key, nil = all slots
 
 local function ctxNow() return ns.Context.Get() end
 
@@ -121,8 +127,16 @@ function P.SetNext(r)
 	local b = P.frame and P.frame.next
 	if not b then return end
 	if r then
-		b.label:SetText("Next: " .. partnerName(r))
-		b.tip = "The other half of the weapon set: " .. partnerName(r) .. "'s listings"
+		-- the partner's name cut with "..." to fit the button (the tooltip has it whole)
+		local name = partnerName(r)
+		local text, cut = "Next: " .. name, #name
+		b.label:SetText(text)
+		while cut > 4 and (b.label:GetStringWidth() or 0) > P.NEXT_W - 12 do
+			cut = cut - 1
+			text = "Next: " .. name:sub(1, cut):gsub("%s+$", "") .. "..."
+			b.label:SetText(text)
+		end
+		b.tip = "The other half of the weapon set: " .. name .. "'s listings"
 	end
 	b:SetShown(r ~= nil)
 end
@@ -186,18 +200,54 @@ function P.StatusText()
 	return format("Gear you can wear up to level %d (look ahead %d)", math.min(60, ctx.level + ahead), ahead)
 end
 
-function P.Refresh()
+-- Rows per slot key in the results -> counts
+local function slotCounts()
+	local n = {}
+	for _, r in ipairs(ns.AH.Rows()) do
+		local k = r.slot and r.slot.key
+		if k then n[k] = (n[k] or 0) + 1 end
+	end
+	return n
+end
+-- The Slot dropdown's choices: "All slots", then the slots in the results (and the chosen one, while a
+-- re-scan runs) in paper-doll order, with their counts.
+function P.SlotList()
+	local n = slotCounts()
+	local out = { { text = "All slots", value = "all" } }
+	for _, def in ipairs(ns.Browser.SLOTS) do
+		if n[def.key] or def.key == slotFilter then
+			out[#out + 1] = { text = format("%s (%d)", def.short or def.label, n[def.key] or 0), value = def.key }
+		end
+	end
+	return out
+end
+function P.SlotFilter() return slotFilter end
+function P.SetSlot(key)
+	slotFilter = key ~= "all" and key or nil
+	P.Refresh(true)
+end
+
+-- top: back to the top of the list (a new slot filter); else the scroll position stays
+function P.Refresh(top)
 	local f = P.frame
 	if not (f and f:IsShown()) then return end
 	local scanning = ns.AH.Scanning()
+	-- the chosen slot has nothing left after a scan: all slots again
+	if slotFilter and not scanning and not slotCounts()[slotFilter] then slotFilter = nil end
 	f.scan.label:SetText(scanning and "Cancel" or "Scan for upgrades")
 	f.scan.tip = scanning and "Stop the scan (what it found so far stays)"
 		or "Search the auction house for gear you can wear (a few searches, one at a time); upgrades are listed here"
 	f.status:SetText(P.StatusText())
 	for _, b in ipairs(f.sorts) do S.SetColours(b, b.key == sortBy and S.TAB_ON or S.TAB) end
-	local list = ns.AH.Sort(ns.AH.Rows(), sortBy)
-	for i, r in ipairs(list) do r.index = i end
-	S.SetList(P.list, list)
+	local list = {}
+	for _, r in ipairs(ns.AH.Sort(ns.AH.Rows(), sortBy)) do
+		if not slotFilter or (r.slot and r.slot.key == slotFilter) then
+			list[#list + 1] = r
+			r.index = #list
+		end
+	end
+	S.SetList(P.list, list, top == true)
+	f.slot:Update()
 	f.empty:SetShown(#list == 0 and not scanning and ns.AH.Status() ~= nil)
 end
 
@@ -234,13 +284,16 @@ local function create(ahf)
 	sl:SetPoint("TOPLEFT", 10, -64)
 	sl:SetText("Sort")
 	for i, s in ipairs(P.SORTS) do
-		local b = S.Button(f, s[2], 60, 20, function() P.SetSort(s[1]) end)
+		local b = S.Button(f, s[2], 50, 20, function() P.SetSort(s[1]) end)
 		b.key, b.tip = s[1], s[3]
-		b:SetPoint("TOPLEFT", 44 + (i - 1) * 64, -60)
+		b:SetPoint("TOPLEFT", 40 + (i - 1) * 54, -60)
 		f.sorts[i] = b
 	end
-	f.next = S.Button(f, "", P.W - 254, 20, function() if P.nextFor then P.OpenPartner(P.nextFor) end end, S.ACTION)
-	f.next:SetPoint("TOPLEFT", 244, -60)
+	f.slot = S.Dropdown(f, P.SLOT_W, 20, P.SlotList, function(v) return (slotFilter or "all") == v end, P.SetSlot)
+	f.slot:SetPoint("TOPLEFT", 206, -60)
+	f.slot.tip = "Show the upgrades for one slot (the sort still applies)"
+	f.next = S.Button(f, "", P.NEXT_W, 20, function() if P.nextFor then P.OpenPartner(P.nextFor) end end, S.ACTION)
+	f.next:SetPoint("TOPLEFT", 342, -60)
 	f.next:Hide()
 	local head = CreateFrame("Frame", nil, f)
 	head:SetPoint("TOPLEFT", 4, -88)
@@ -296,6 +349,7 @@ ns.On("AH_CHANGED", function()
 	if not ns.AH.Status() then
 		ns.Window.ReleaseItemTip()
 		P.SetNext(nil)
+		slotFilter = nil -- the AH closed: all slots on the next visit
 		S.SetList(P.list, {})
 	end
 	P.Refresh()

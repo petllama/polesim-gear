@@ -116,9 +116,10 @@ function M:HighlightText(a, b) self.highlighted = not (a == 0 and b == 0) end
 -- ScrollBox: the frames in view with their data (the client's ScrollBoxListMixin:ForEachFrame)
 function M:GetView() return self.view end
 function M:ForEachFrame(fn) for _, f in ipairs(self.frames or {}) do fn(f, f.e or f.d) end end
-function M:SetDataProvider(dp)
+function M:SetDataProvider(dp, retain)
 	releaseFrom(self, #(dp or {}))
 	self.provided = dp
+	self.retained = retain -- ScrollBoxConstants.RetainScrollPosition, else the list goes back to the top
 end
 -- Blizzard's Menu system is shared, secure UI: an addon that opens a menu taints it for the unit popup
 -- (SetRaidTarget blocked). The addon draws its own popup; any Menu use is an error here.

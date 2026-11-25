@@ -480,6 +480,16 @@ for li, L in ipairs(levels) do
 					scroll(P.list)
 					hover(P.list, 5)
 				end
+				-- the Slot dropdown: every slot in the results, then All again
+				local slots = P.SlotList()
+				for i = 2, #slots do
+					P.SetSlot(slots[i].value)
+					for _, row in ipairs(U.rows(P.list, 50)) do
+						assert(row.d.slot.key == slots[i].value, "slot filter shows only " .. slots[i].text)
+					end
+				end
+				if #slots > 1 then print(string.format("  AH slot filter: %d slots (%s ... %s)", #slots - 1, slots[2].text, slots[#slots].text)) end
+				P.SetSlot("all")
 				U.button(P.frame, "Gain"):Click()
 				local first = U.rows(P.list, 1)[1]
 				if first then first:Click("LeftButton") assert(ahf.selected == first.d.result, "click selects the row's result") end

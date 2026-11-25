@@ -1,4 +1,12 @@
-# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution/Protection paladin) — PoleSim Gear 0.7.3
+# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution/Protection paladin) — PoleSim Gear 0.7.4
+
+**0.7.4 over 0.7.3:** the auction house upgrades panel has a **Slot** dropdown right of Gain / Value /
+Price (our own popup, not Blizzard's menu). **All slots** by default, then only the slots the scan found,
+in paper-doll order with their counts ("Main hand (3)", "Rings (12)"). A choice lists that slot only,
+still sorted, from the top. It stays while the auction house is open (a new scan keeps it; if that slot
+has nothing left it goes back to All slots) and resets to All slots when the auction house closes. The
+"Next: <partner>" button still opens the other half when that row is filtered out; it is a bit
+narrower now (a long name ends in "..."). No new files: `/reload` is enough. Check: N11.
 
 **0.7.3 over 0.7.2:** auction house weapon sets read as a pair at a glance. A set row (a one-hander
 under your two-hander with the best off hand for sale, or the reverse) shows the partner's small icon
@@ -765,6 +773,13 @@ small teal-framed icon on their icon and "+ <partner>" in teal on the second lin
 sum of both (the tooltip's "... together" figure) with "set of 2" under it, and Gain/g = gain / that
 price in gold. Sort by Price: the set rows sit at the pair's price. A chest or ring row: no small icon,
 plain slot line, its own price.
+
+**N11. Slot filter (0.7.4).** After a scan the Slot dropdown (right of Gain / Value / Price) says "All
+slots"; open it: All slots, then only slots in the list, head to ranged, each with its count. Pick one:
+only that slot's rows, from the top; Price/Gain still sort them. Wearing a staff, pick Main hand, click a
+one-hander set row, then "Next: <off hand>": the off hand's listings, though its row is hidden. Scan
+again: the choice stays. Close and reopen the auction house: All slots. Then a raid marker from the
+target frame's menu: no "blocked" message.
 
 If the browse rows of "of the ..." items never show their suffix (every such row "any suffix"), paste
 this after a normal search for e.g. "of the Owl" and report the lines:

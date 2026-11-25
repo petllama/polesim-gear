@@ -205,7 +205,7 @@ return {
 		T.eq(fx.ahf.selected, orb.d.result, "the partner's listings")
 		T.eq(nb:IsShown(), false, "hidden after use")
 		orb:Click("LeftButton")
-		T.ok(nb:IsShown() and U.ownText(nb):find("Next: Stout Battlehammer", 1, true), "from the off hand: the one-hander")
+		T.ok(nb:IsShown() and U.ownText(nb):find("Next: Stout Battle", 1, true), "from the off hand: the one-hander (cut to fit)")
 		robe:Click("LeftButton")
 		T.eq(nb:IsShown(), false, "a row without a partner hides it")
 		mace:Click("LeftButton")
@@ -284,6 +284,110 @@ return {
 		local sub = mace.item.sub.text
 		T.ok(sub:find("+ Orb of the", 1, true) and sub:find("...", 1, true), sub)
 		T.eq(#U.overflows(P.frame), 0, table.concat(U.overflows(P.frame), "; "))
+		fx.cleanup()
+	end,
+	-- The Slot dropdown (our own Style.Dropdown, beside the sort buttons): "All slots" (default), then only
+	-- the slots in the results, in paper-doll order, each with its count.
+	slot_filter_entries = function()
+		local fx = setup(RESULTS)
+		fx.loadAH()
+		local P, U = fx.ns.AHPanel, fx.U
+		local dd = P.frame.slot
+		T.ok(dd and dd:IsShown(), "the Slot dropdown")
+		T.eq(dd.label.text, "All slots", "default")
+		local items = U.menu(dd)
+		T.eq(#items, 1, "no results: only All"); T.eq(items[1].text, "All slots")
+		U.button(P.frame, "Scan for upgrades"):Click()
+		answerAll(fx.ns, fx.log)
+		items = U.menu(dd)
+		local texts = {}
+		for i, it in ipairs(items) do texts[i] = it.text end
+		T.eq(table.concat(texts, "|"), "All slots|Chest (2)|Main hand (1)")
+		T.ok(items[1].isSelected(), "All selected")
+		fx.ns.Style.ClosePopup()
+		fx.cleanup()
+		-- paper-doll order, not gain order
+		local fx2, P2, U2 = setScanned()
+		texts = {}
+		for i, it in ipairs(U2.menu(P2.frame.slot)) do texts[i] = it.text end
+		T.eq(table.concat(texts, "|"), "All slots|Chest (1)|Main hand (1)|Off hand (1)")
+		fx2.ns.Style.ClosePopup()
+		fx2.cleanup()
+	end,
+	-- Choosing a slot lists only its rows (the sort still applies, indexes from 1, back to the top);
+	-- All again lists everything; everything fits.
+	slot_filter_filters_and_sorts = function()
+		local fx = setup(RESULTS)
+		local P, U = scanned(fx), fx.U
+		local dd = P.frame.slot
+		U.menu(dd)[2].select()
+		T.eq(dd.label.text, "Chest (2)")
+		local rows = U.rows(P.list)
+		T.eq(#rows, 2)
+		for i, r in ipairs(rows) do T.eq(r.d.slot.key, "chest"); T.eq(r.d.index, i) end
+		T.ok(rows[1].d.gain >= rows[2].d.gain, "biggest gain first")
+		T.eq(P.list.retained, nil, "a new filter starts at the top")
+		U.button(P.frame, "Price"):Click()
+		rows = U.rows(P.list)
+		T.eq(#rows, 2); T.ok(rows[1].d.price <= rows[2].d.price, "cheapest first within the slot")
+		T.ok(P.list.retained, "re-sorting keeps the scroll position")
+		T.eq(#U.overflows(P.frame), 0, table.concat(U.overflows(P.frame), "; "))
+		T.ok(U.textWidth("Main hand (999)", 12) <= dd.label.w, "a 3-digit count fits the dropdown")
+		U.menu(dd)[1].select()
+		T.eq(dd.label.text, "All slots"); T.eq(#U.rows(P.list), 3)
+		fx.cleanup()
+	end,
+	-- The choice stays while the AH is open (a re-scan keeps it), falls back to All when a re-scan finds
+	-- nothing for that slot, and resets to All when the AH closes.
+	slot_filter_keep_fallback_reset = function()
+		local res = { A.result(2292, 20000), A.result(2585, 900), A.result(789, 30000, 12718) }
+		local fx = setup(res)
+		local P, U = scanned(fx), fx.U
+		local dd = P.frame.slot
+		U.menu(dd)[3].select()
+		T.eq(dd.label.text, "Main hand (1)")
+		U.button(P.frame, "Scan for upgrades"):Click()
+		T.eq(dd.label.text, "Main hand (0)", "kept while scanning")
+		answerAll(fx.ns, fx.log)
+		T.eq(dd.label.text, "Main hand (1)", "kept after a re-scan")
+		T.eq(#U.rows(P.list), 1); T.eq(U.rows(P.list)[1].d.c.id, 789)
+		table.remove(res, 3) -- the mace sold
+		U.button(P.frame, "Scan for upgrades"):Click()
+		answerAll(fx.ns, fx.log)
+		T.eq(dd.label.text, "All slots", "nothing left for that slot: All")
+		T.eq(#U.rows(P.list), 2)
+		U.menu(dd)[2].select()
+		T.eq(#U.rows(P.list), 2)
+		fire(fx.ns, "AUCTION_HOUSE_CLOSED")
+		T.eq(dd.label.text, "All slots", "the AH closing resets it")
+		res[3] = A.result(789, 30000, 12718)
+		U.button(P.frame, "Scan for upgrades"):Click()
+		answerAll(fx.ns, fx.log)
+		T.eq(#U.rows(P.list), 3, "next visit: every slot")
+		fx.cleanup()
+	end,
+	-- Filtered to Main hand, the off-hand partner is not listed, yet "Next: <partner>" still opens it
+	-- (the row's partner listing, not a visible row); the Next button and dropdown fit beside the sorts.
+	slot_filter_next_with_partner_hidden = function()
+		local fx, P, U, mace, orb = setScanned()
+		local orbResult = orb.d.result
+		orb.d.c.inst.name = "Orb of the Exceedingly Long Mistmantle Name"
+		local items = U.menu(P.frame.slot)
+		items[3].select()
+		local rows = U.rows(P.list)
+		T.eq(#rows, 1); T.eq(rows[1].d.c.id, 789)
+		rows[1]:Click("LeftButton")
+		local nb = P.frame.next
+		T.ok(nb:IsShown() and U.ownText(nb):find("Next: Orb of the", 1, true), U.ownText(nb))
+		T.eq(#U.overflows(P.frame), 0, table.concat(U.overflows(P.frame), "; "))
+		T.ok(nb.tip:find("Exceedingly Long Mistmantle Name", 1, true), "the full name in the tooltip")
+		T.ok(U.textWidth(nb.label.text, 12) <= P.NEXT_W - 12, "the cut name fits the button")
+		local sx, nx = P.frame.slot.points[1][2], nb.points[1][2]
+		T.eq(type(sx), "number", "x of the dropdown")
+		T.ok(sx + P.SLOT_W <= nx and nx + P.NEXT_W <= P.W - 8, "dropdown, Next inside the panel")
+		nb:Click()
+		T.eq(fx.ahf.selected, orbResult, "the partner's listings")
+		T.eq(fx.log.bought, 0)
 		fx.cleanup()
 	end,
 	-- Closing the auction house stops a scan and lets go of results and rows (the rows' data too).
