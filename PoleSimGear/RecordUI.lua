@@ -71,6 +71,7 @@ local function dialog(w, h)
 	f:SetPoint("CENTER", UIParent, "CENTER", 0, 120)
 	return f
 end
+UI.Dialog = dialog -- also the gear export's window (GearExport.lua)
 local function line(f, y, text, size, colour, w)
 	local S = ns.Style
 	local t = S.Text(f, size or 12, colour)
@@ -284,7 +285,11 @@ function UI.OpenExport()
 	confirmMode(false)
 	showPart()
 end
-ns.Slash("export", UI.OpenExport)
+-- /psg export = the recorder's export; /psg export gear = the gear string for the website (GearExport.lua)
+ns.Slash("export", function(rest)
+	if (rest or ""):lower() == "gear" and ns.GearExport then return ns.GearExport.Open() end
+	UI.OpenExport()
+end)
 ns.Slash("record", function()
 	local r = ns.Record.Data()
 	local status = ns.Record.Status()

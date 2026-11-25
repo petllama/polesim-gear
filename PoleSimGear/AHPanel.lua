@@ -200,6 +200,14 @@ function P.StatusText()
 	return format("Gear you can wear up to level %d (look ahead %d)", math.min(60, ctx.level + ahead), ahead)
 end
 
+-- Which spec's weights the scan scores with: "Scored for: <Spec> (talents | chosen | default)", "" with no
+-- weights. (A player took the AH for Holy weights while Retribution was chosen in Settings.)
+function P.SpecText()
+	local ctx = ctxNow()
+	if not (ctx and ctx.spec) then return "" end
+	return format("Scored for: %s (%s)", S.Title(ctx.spec), ctx.specSource or "talents")
+end
+
 -- Rows per slot key in the results -> counts
 local function slotCounts()
 	local n = {}
@@ -238,6 +246,7 @@ function P.Refresh(top)
 	f.scan.tip = scanning and "Stop the scan (what it found so far stays)"
 		or "Search the auction house for gear you can wear (a few searches, one at a time); upgrades are listed here"
 	f.status:SetText(P.StatusText())
+	f.spec:SetText(P.SpecText())
 	for _, b in ipairs(f.sorts) do S.SetColours(b, b.key == sortBy and S.TAB_ON or S.TAB) end
 	local list = {}
 	for _, r in ipairs(ns.AH.Sort(ns.AH.Rows(), sortBy)) do
@@ -274,6 +283,11 @@ local function create(ahf)
 	f.title = S.Text(f, 14, C.title)
 	f.title:SetPoint("TOPLEFT", 10, -8)
 	f.title:SetText("PoleSim upgrades")
+	f.spec = S.Text(f, 11, C.label)
+	f.spec:SetPoint("TOPRIGHT", -10, -11)
+	f.spec:SetWidth(P.W - 170)
+	if f.spec.SetJustifyH then f.spec:SetJustifyH("RIGHT") end
+	f.spec.tip = "The spec whose weights score these items: Settings > Spec (or /psg spec) changes it"
 	f.scan = S.Button(f, "Scan for upgrades", 140, 22, function()
 		if ns.AH.Scanning() then return ns.AH.Cancel() end
 		P.SetNext(nil)
@@ -362,4 +376,5 @@ ns.On("AH_CHANGED", function()
 end)
 ns.On("WISHLIST_CHANGED", redraw)
 ns.On("PLAN_CHANGED", redraw)
+ns.On("SCORES_CHANGED", redraw) -- the spec label (a spec change rescores)
 ns.On("OPTIONS", function(k) if k == "ahead" then redraw() end end)

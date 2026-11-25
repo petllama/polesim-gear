@@ -410,4 +410,26 @@ return {
 		for _, r in ipairs(rows) do T.eq(r.d, nil, "a released row keeps no data") end
 		fx.cleanup()
 	end,
+	-- the panel says which spec's weights it scores with (a player thought the AH used Holy while Ret was
+	-- chosen): "Scored for: <Spec> (talents|chosen|default)", redrawn when scores change; fits the header
+	spec_label_names_the_spec_and_where_it_comes_from = function()
+		local fx = setup({})
+		fx.loadAH()
+		local P = fx.ns.AHPanel
+		T.eq(P.frame.spec.text, "Scored for: Shadow (talents)")
+		local get = fx.ns.Context.Get
+		fx.ns.Context.Get = function()
+			local c = get()
+			c.spec, c.specSource = "beastmastery", "default"
+			return c
+		end
+		fx.ns.Fire("SCORES_CHANGED")
+		T.eq(P.frame.spec.text, "Scored for: Beastmastery (default)", "redrawn on a rescore")
+		T.eq(#fx.U.overflows(P.frame), 0, table.concat(fx.U.overflows(P.frame), "; "))
+		fx.ns.Context.Get = function() return nil end
+		fx.ns.Fire("SCORES_CHANGED")
+		T.eq(P.frame.spec.text, "", "no weights: no label")
+		fx.ns.Context.Get = get
+		fx.cleanup()
+	end,
 }

@@ -1,13 +1,13 @@
 # PoleSim Gear
 
-Version 0.7.6. WoW: Forever addon: PoleSim's simulated, level-banded gear weights in game. Item scores with a
+Version 0.7.7. WoW: Forever addon: PoleSim's simulated, level-banded gear weights in game. Item scores with a
 "how?" breakdown, upgrade arrows, the best quest reward, and a gear planner window with where to get
 each upgrade. In testing.
 
 **Download:** the latest zip is on the [Releases page](https://github.com/petllama/polesim-gear/releases/latest).
 Unzip it into `World of Warcraft/_forever_/Interface/AddOns/` (a new install needs a game restart; an
-update needs `/reload`, unless its notes say it adds files: 0.7.2 adds none; updating from before 0.7.0,
-restart the game).
+update needs `/reload`, unless its notes say it adds files: 0.7.7 adds two, so restart the game when
+updating to it).
 
 **Supported classes and specs** (weights from PoleSim's simulation of each spec leveling):
 
@@ -109,10 +109,36 @@ Settings: "Ask to equip upgrades I pick up" (on by default) and "Minimum gain to
 3%, 5%). While Polestar's own Gear module is on, its "Wear it" banner asks instead and this one stays
 quiet. `/psg ask` asks about every upgrade in your bags now.
 
+## Your gear on the website
+
+`/psg export gear` opens a small window with one line, already highlighted: **Ctrl+C**, then paste it in
+the Armory at polesim.petllama.com (**Import > Paste from PoleSim Gear**). The website fills in your
+class, spec, level, race and worn items (with their random suffixes) and shows your upgrades by slot or
+the **Dungeon finder** (which dungeon near your level has the biggest upgrades for you); its **Copy link**
+button gives a link to exactly that page.
+
+The line (format `PSGG1`, plain text, safe in a URL as it is):
+
+```
+PSGG1:<class>:<spec>:<level>:<race id>:<A|H>:<items>
+PSGG1:priest:shadow:24:5:H:,,9796.12761,6536.12720,,6568.12761,6562.12720,,,11965.12720,,,,6564.12761,1405,,5069
+```
+
+`<items>` = 17 entries, comma separated, in equipment-slot order 1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13,
+14, 15, 16, 17, 18 (head, neck, shoulder, chest, waist, legs, feet, wrist, hands, ring 1, ring 2,
+trinket 1, trinket 2, back, main hand, off hand, ranged; no shirt, no tabard): `<item id>` or
+`<item id>.<random-suffix bonus id>`, empty for an empty slot, trailing empty slots left off. The race id
+is the game's (Skyborne 95 Alliance / 96 Horde). It holds no names (character, realm, guild) and no
+enchants (neither the addon nor the website scores them). A later format would start `PSGG2:`; the
+website says so instead of guessing. The website's reader: PoleSim `forever/web/armory.py`
+`parse_gear_string`.
+
 ## Auction house upgrades
 
 At the auction house a **PoleSim upgrades** button sits just right of the auction house's top-right
-corner; it shows or hides the panel below it (kept between sessions). **Scan for upgrades** runs a few
+corner; it shows or hides the panel below it (kept between sessions). Its header says which spec's
+weights it scores with, e.g. **Scored for: Retribution (chosen)** (chosen in Settings or `/psg spec`),
+`(talents)` (from your talent points) or `(default)` (no points yet). **Scan for upgrades** runs a few
 browse searches, one at a time and as fast as the auction house allows (a priest or mage: 6, cloth,
 neck/rings/trinkets/off hands and cloaks, then one per weapon type; more for classes with more armor
 types (leather, mail from 40 for a shaman, plate from 40 for a paladin, shields) and weapon types; usable items, common to epic, up to
@@ -192,6 +218,7 @@ needed the first time (not just `/reload`).
 - `/psg drift` (or `/psg drift <itemID>`): compares PoleSim's shipped stats with the game's live stats for
   everything you wear and carry (or one item) and lists the differences (`spi 4 -> 6`: shipped -> live),
   e.g. after a Blizzard hotfix; items the game has not loaded yet are requested: run it again.
+- `/psg export gear`: your gear as one line for the website's Armory (Your gear on the website).
 - `/psg export`: the recorder's copy-paste export (Recording for PoleSim); `/psg record`: recording on/off,
   hours recorded and since the last upload.
 

@@ -395,6 +395,12 @@ for li, L in ipairs(levels) do
 		end)
 		step("ask again", function() sp.ask:Click() end)
 		step("slash minimap", function() SlashCmdList.POLESIMGEAR("minimap") SlashCmdList.POLESIMGEAR("minimap") end)
+		step("export gear", function()
+			SlashCmdList.POLESIMGEAR("export gear")
+			local w = ns.GearExport.Frame()
+			assert(w and w:IsShown() and (w.box.text or ""):match("^PSGG1:"), "gear export window")
+			w:Hide()
+		end)
 		-- close (the X), then the closed window's memory
 		step("close", function() frame.close:Click() end)
 		if frame:IsShown() then note("close", "still shown") end

@@ -1,4 +1,12 @@
-# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution/Protection paladin) — PoleSim Gear 0.7.4
+# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution/Protection paladin) — PoleSim Gear 0.7.7
+
+**0.7.7 over 0.7.6:** `/psg export gear` opens a window with one highlighted line (your class, spec,
+level, race and worn items: no names) to paste in the website's Armory ("Paste from PoleSim Gear"), which
+now also has a **Dungeon finder** and a **Copy link** button. The auction house upgrades panel says which
+spec it scores with ("Scored for: Retribution (chosen)" / "(talents)" / "(default)"): a player took a
+Retribution scan for Holy weights; a test now checks a 0-talent paladin with Retribution chosen scans
+with Retribution's weights. New files (GearString.lua, GearExport.lua): **restart the game**, `/reload`
+is not enough. Check: N13, U1.
 
 **0.7.6 over 0.7.5:** the recorder offers its upload every **2 h** of active play (was 4 h); a
 character already waiting for the old 4 h mark is asked at 2 h. No new files: `/reload` is enough.
@@ -792,6 +800,12 @@ target frame's menu: no "blocked" message.
 does nothing; its tooltip says "Scan first". Scan: it stays faded while scanning, then turns on. Scan
 again: faded during the scan, your choice is back after it.
 
+**N13. Which spec scores the scan (0.7.7).** Open the auction house: the panel's header, right of
+"PoleSim upgrades", says "Scored for: <Spec> (talents)" (or "(chosen)" after picking a spec in Settings,
+"(default)" with no talent points), on one line, not cut. Settings > Spec: pick another spec: the line
+changes and the rows rescore. On a paladin with Retribution chosen the line says "Scored for:
+Retribution (chosen)".
+
 If the browse rows of "of the ..." items never show their suffix (every such row "any suffix"), paste
 this after a normal search for e.g. "of the Owl" and report the lines:
 
@@ -1015,6 +1029,14 @@ quiet." once; `/reload` shows it again (a new session), turning Polestar's Gear 
 **T4. Default spec.** A druid, shaman or paladin with no talent points (a new character, or after a
 talent reset): `/psg spec` says `balance` / `elemental` / `holy` `(default)`.
 
+## U. Gear for the website (0.7.7)
+
+**U1. /psg export gear.** Type `/psg export gear`: a window "Your gear for PoleSim" with one highlighted
+line starting `PSGG1:<class>:<spec>:<level>:`. Ctrl+C, open polesim.petllama.com > Armory > Import >
+"Paste from PoleSim Gear", paste, Import: your level, race and every worn item appear (green items with
+the right "of the ..." suffix). Typing in the line does not change it; Escape closes it. Plain
+`/psg export` is still the recorder's export.
+
 ## Probe results (B1, fill in)
 
 | Question | Answer |
@@ -1113,6 +1135,8 @@ talent reset): `/psg spec` says `balance` / `elemental` / `holy` `(default)`.
 | S5 | Gear Plan sane (two-handers, daggers, ranged types) | |
 | S6 | Weights tab: supported specs, speed rows | |
 | R1-R10 | Recorder: question, state, pulls, mobs, sheet, meal, AFK, export/upload, reminder, no taint | |
+| N13 | AH panel: "Scored for: <Spec> (source)", changes with Settings | |
+| U1 | /psg export gear: line, paste on the website fills the character | |
 
 ## Known limits (tell me if they bother you)
 
