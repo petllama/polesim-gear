@@ -1,12 +1,12 @@
 # PoleSim Gear
 
-Version 0.7.1. WoW: Forever addon: PoleSim's simulated, level-banded gear weights in game. Item scores with a
+Version 0.7.2. WoW: Forever addon: PoleSim's simulated, level-banded gear weights in game. Item scores with a
 "how?" breakdown, upgrade arrows, the best quest reward, and a gear planner window with where to get
 each upgrade. In testing.
 
 **Download:** the latest zip is on the [Releases page](https://github.com/petllama/polesim-gear/releases/latest).
 Unzip it into `World of Warcraft/_forever_/Interface/AddOns/` (a new install needs a game restart; an
-update needs `/reload`, unless its notes say it adds files: 0.7.1 adds none; updating from before 0.7.0,
+update needs `/reload`, unless its notes say it adds files: 0.7.2 adds none; updating from before 0.7.0,
 restart the game).
 
 **Supported classes and specs** (weights from PoleSim's simulation of each spec leveling):

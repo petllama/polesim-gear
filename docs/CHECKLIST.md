@@ -1,4 +1,12 @@
-# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution/Protection paladin) — PoleSim Gear 0.7.1
+# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution/Protection paladin) — PoleSim Gear 0.7.2
+
+**0.7.2 over 0.7.1:** auction house weapon sets. A weapon-set row (a one-hander under your two-hander
+paired with the best off hand for sale, or the reverse) now takes you to the other half too:
+**right-click** the row opens the partner's listings (its tooltip ends with "Right-click: <partner>'s
+listings"), and after you click a set row a **Next: <partner>** button appears next to the sort buttons;
+it opens the partner's listings and hides (a new scan, a row without a partner or closing the auction
+house hide it too). If the partner's listing is gone, it searches the auction house for it by name and
+says so in chat. No new files: `/reload` is enough. Check: N9.
 
 **0.7.1 over 0.7.0:** tanks. Warrior and Paladin **Protection** now get scores, arrows, the quest reward
 mark, the equip prompt, the window and the auction house scan, from PoleSim's simulated tank weights
@@ -736,6 +744,13 @@ upgrade than the plan ends with "AH: <item> +N (<price>)". Close the auction hou
 found is listed. Start another and close the auction house mid-scan: no error; reopen: the panel is
 empty ("Gear you can wear..."). Search for something yourself mid-scan: "Stopped: another search
 started".
+
+**N9. Weapon set partner (0.7.2).** Wearing a staff, scan; find a one-hander row whose tooltip says
+"Weapon set with <off hand>". The tooltip ends with "Right-click: <off hand>'s listings". Right-click the
+row: the off hand's listings show. Right-click the off hand's row: the one-hander's. Left-click the
+one-hander row: its listings, and a "Next: <off hand>" button right of Gain / Value / Price; click it:
+the off hand's listings, the button hides. Left-click a non-weapon row: no Next button; right-click it:
+nothing happens. Then buy something with Blizzard's Buyout button: no "blocked" message.
 
 If the browse rows of "of the ..." items never show their suffix (every such row "any suffix"), paste
 this after a normal search for e.g. "of the Owl" and report the lines:

@@ -48,6 +48,21 @@ local function scanned(fx)
 	return P
 end
 
+-- A level 21 priest wearing Foamspittle Staff; the AH has Stout Battlehammer (main hand), Orb of Power
+-- (off hand) and Necrology Robes: -> fx, panel, U, mace row, orb row, robe row
+local function setScanned()
+	local fx = setup({ A.result(789, 4000), A.result(4838, 1000), A.result(2292, 20000) }, { level = 21 })
+	local ns = fx.ns
+	local inst = ns.Score.Instance(ns.Items.Get(1405))
+	fx.worn[16] = { inst = inst, score = ns.Score.Score(inst, ns.Context.Get().w, "priest", ns.Equip.ROLE_OF_SLOT[16]) }
+	local P = scanned(fx)
+	local by = {}
+	for _, r in ipairs(fx.U.rows(P.list)) do by[r.d.c.id] = r end
+	T.ok(by[789] and by[4838] and by[2292], "mace, orb and robe listed")
+	T.eq(by[789].d.partner, by[4838].d)
+	return fx, P, fx.U, by[789], by[4838], by[2292]
+end
+
 local RESULTS = { A.result(2292, 20000), A.result(2585, 900), A.result(789, 30000, 12718), A.result(999999, 5) }
 
 return {
@@ -151,6 +166,76 @@ return {
 		local rows = U.rows(P.list)
 		T.eq(#rows, 1); T.eq(rows[1].d.at, 21)
 		T.ok(rows[1].item.sub.text:find("lvl 21", 1, true), rows[1].item.sub.text)
+		fx.cleanup()
+	end,
+	-- A weapon-set row (under a worn staff: mace + orb): right-click opens the PARTNER's listings, both
+	-- ways; the tooltip says so; a row without a partner does nothing on right-click.
+	set_right_click_opens_partner = function()
+		local fx, P, U, mace, orb, robe = setScanned()
+		mace:Click("RightButton")
+		T.eq(fx.ahf.selected, orb.d.result, "the orb's browse result")
+		T.eq(orb.d.itemKey.itemID, 4838)
+		fx.ahf.mode = AuctionHouseFrameDisplayMode.ItemBuy
+		orb:Click("RightButton")
+		T.eq(fx.ahf.selected, mace.d.result, "and the reverse")
+		T.eq(fx.ahf.refreshed, mace.d.itemKey, "already in the item buy view: its listings asked for")
+		mace.scripts.OnEnter(mace)
+		local lines = table.concat(U.tip.lines, "\n")
+		T.ok(lines:find("Right-click: Orb of Power's listings", 1, true), lines)
+		T.ok(lines:find("Click: its listings", 1, true), lines)
+		fx.ahf.selected = nil
+		robe:Click("RightButton")
+		T.eq(fx.ahf.selected, nil, "no partner: nothing")
+		robe.scripts.OnEnter(robe)
+		T.ok(not table.concat(U.tip.lines, "\n"):find("Right-click", 1, true))
+		T.eq(fx.log.bought, 0)
+		fx.cleanup()
+	end,
+	-- After a set row's listings open (left-click), a "Next: <partner>" button opens the partner's and
+	-- hides; not after a row without a partner; a new scan or the AH closing hides it too.
+	set_next_button = function()
+		local fx, P, U, mace, orb, robe = setScanned()
+		T.eq(U.button(P.frame, "Next: Orb of Power"), nil, "not before a click")
+		mace:Click("LeftButton")
+		T.eq(fx.ahf.selected, mace.d.result)
+		local nb = U.button(P.frame, "Next: Orb of Power")
+		T.ok(nb, "Next after the set row's listings")
+		T.eq(#U.overflows(P.frame), 0, table.concat(U.overflows(P.frame), "; "))
+		nb:Click()
+		T.eq(fx.ahf.selected, orb.d.result, "the partner's listings")
+		T.eq(nb:IsShown(), false, "hidden after use")
+		orb:Click("LeftButton")
+		T.ok(nb:IsShown() and U.ownText(nb):find("Next: Stout Battlehammer", 1, true), "from the off hand: the one-hander")
+		robe:Click("LeftButton")
+		T.eq(nb:IsShown(), false, "a row without a partner hides it")
+		mace:Click("LeftButton")
+		T.ok(nb:IsShown())
+		U.button(P.frame, "Scan for upgrades"):Click()
+		T.eq(nb:IsShown(), false, "a new scan hides it")
+		answerAll(fx.ns, fx.log)
+		mace = nil
+		for _, r in ipairs(U.rows(P.list)) do if r.d.c.id == 789 then mace = r end end
+		mace:Click("LeftButton")
+		T.ok(nb:IsShown())
+		fire(fx.ns, "AUCTION_HOUSE_CLOSED")
+		T.eq(nb:IsShown(), false, "the AH closing hides it")
+		T.eq(fx.log.bought, 0)
+		fx.cleanup()
+	end,
+	-- The partner's listing is gone (no browse result/item key): a browse search by its name instead,
+	-- with a chat note.
+	partner_gone_searches_by_name = function()
+		local fx, P, U, mace = setScanned()
+		local q
+		function fx.ahf:SendBrowseQuery(s, lo, hi, filters) q = { s = s, lo = lo, hi = hi, filters = filters } end
+		mace.d.partner.result, mace.d.partner.itemKey = nil, nil
+		local printed = {}
+		fx.ns.Print = function(...) printed[#printed + 1] = table.concat({ ... }, " ") end
+		mace:Click("RightButton")
+		T.ok(q, "a browse search")
+		T.eq(q.s, "Orb of Power"); T.eq(q.lo, 0)
+		T.ok(table.concat(printed, "\n"):find("Orb of Power", 1, true), table.concat(printed, "\n"))
+		T.eq(fx.log.bought, 0)
 		fx.cleanup()
 	end,
 	-- Closing the auction house stops a scan and lets go of results and rows (the rows' data too).

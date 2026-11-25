@@ -3,6 +3,8 @@
 -- ahPanel setting). Scan for upgrades (AH.lua) and the upgrades it found: icon, name with suffix, slot,
 -- "lvl N" (look ahead), gain, cheapest price, gain per gold; sorts Gain / Value / Price; hover: the
 -- game's item tooltip with PoleSim's lines; click: the item's listings in the AH (buying is yours).
+-- Weapon-set rows (one-hander + off hand under a worn two-hander): right-click opens the PARTNER's
+-- listings, and after a set row's listings a "Next: <partner>" button does (then hides).
 local ADDON, ns = ...
 local P = {}
 ns.AHPanel = P
@@ -20,6 +22,10 @@ P.SORTS = { { "gain", "Gain", "Biggest gain first" }, { "value", "Value", "Most 
 local sortBy = "gain"
 
 local function ctxNow() return ns.Context.Get() end
+
+-- the weapon-set row whose listings were opened last: the "Next: <partner>" button opens its partner's
+P.nextFor = nil
+local function partnerName(r) return r.partner and r.partner.c and r.partner.c.inst and r.partner.c.inst.name or "?" end
 
 -- The Gear Plan's item for the row's slot (your pick, else the suggestion): "plan" on the row.
 local function isPlan(r)
@@ -60,15 +66,40 @@ function P.Tooltip(row)
 		extra[#extra + 1] = format("The browse list shows every suffix of this item as one row: scored with the best (%s); the weakest (%s) gains %s. Its listings show each one's suffix.",
 			r.anySuffix.best or "?", r.anySuffix.worstName or "?", S.Signed(r.anySuffix.worst or 0))
 	end
+	local hint = "Click: its listings in the auction house, cheapest first (buying is yours)"
+	if r.partner then hint = hint .. "\nRight-click: " .. partnerName(r) .. "'s listings" end
 	ns.Window.ItemTip(row, r.c.inst, function()
-		ns.Window.RowLines(r, ctx, band, "Click: its listings in the auction house, cheapest first (buying is yours)", extra)
+		ns.Window.RowLines(r, ctx, band, hint, extra)
 	end)
+end
+
+-- Left: the row's listings (a set row then offers "Next: <partner>"); right: a set row's partner's.
+function P.Open(r)
+	local ok, why = ns.AH.Select(r)
+	if not ok and why then ns.Print(why) end
+	P.SetNext(ok and r and r.partner and r or nil)
+end
+function P.OpenPartner(r)
+	if not (r and r.partner) then return end
+	local ok, why = ns.AH.SelectPartner(r)
+	if why then ns.Print(why) end
+	if ok then P.SetNext(nil) end
+end
+function P.SetNext(r)
+	P.nextFor = r
+	local b = P.frame and P.frame.next
+	if not b then return end
+	if r then
+		b.label:SetText("Next: " .. partnerName(r))
+		b.tip = "The other half of the weapon set: " .. partnerName(r) .. "'s listings"
+	end
+	b:SetShown(r ~= nil)
 end
 
 local function make(row)
 	row.made = true
 	row:SetHeight(P.ROW_H)
-	row:RegisterForClicks("LeftButtonUp")
+	row:RegisterForClicks("LeftButtonUp", "RightButtonUp")
 	row.gain = S.Text(row, 12, C.green)
 	row.gain:SetJustifyH("RIGHT")
 	S.Place(row.gain, "LEFT", COL.gain, 0, COL.gainW)
@@ -84,9 +115,9 @@ local function make(row)
 	S.Place(row.value, "LEFT", COL.value, 0, COL.valueW)
 	row:SetScript("OnEnter", function(self) S.Hover(self, true) P.Tooltip(self) end)
 	row:SetScript("OnLeave", function(self) S.Hover(self, false) GameTooltip_Hide() end)
-	row:SetScript("OnClick", function(self)
-		local ok, why = ns.AH.Select(self.d)
-		if not ok and why then ns.Print(why) end
+	row:SetScript("OnClick", function(self, button)
+		if button == "RightButton" then return P.OpenPartner(self.d) end
+		P.Open(self.d)
 	end)
 end
 
@@ -141,6 +172,7 @@ local function create(ahf)
 	f.title:SetText("PoleSim upgrades")
 	f.scan = S.Button(f, "Scan for upgrades", 140, 22, function()
 		if ns.AH.Scanning() then return ns.AH.Cancel() end
+		P.SetNext(nil)
 		local ok, why = ns.AH.Scan()
 		if not ok and why then ns.Print(why) end
 		P.Refresh()
@@ -159,6 +191,9 @@ local function create(ahf)
 		b:SetPoint("TOPLEFT", 44 + (i - 1) * 64, -60)
 		f.sorts[i] = b
 	end
+	f.next = S.Button(f, "", P.W - 254, 20, function() if P.nextFor then P.OpenPartner(P.nextFor) end end, S.ACTION)
+	f.next:SetPoint("TOPLEFT", 244, -60)
+	f.next:Hide()
 	local head = CreateFrame("Frame", nil, f)
 	head:SetPoint("TOPLEFT", 4, -88)
 	head:SetSize(P.W - 18, 20)
@@ -176,7 +211,7 @@ local function create(ahf)
 	f.empty:SetWidth(P.W - 24)
 	f.empty:SetText("No upgrades for sale right now.")
 	f:SetScript("OnShow", P.Refresh)
-	f:SetScript("OnHide", function() ns.Window.ReleaseItemTip() end)
+	f:SetScript("OnHide", function() ns.Window.ReleaseItemTip() P.SetNext(nil) end)
 	-- the list fills the panel's height (the AH frame's)
 	f:SetScript("OnSizeChanged", function(self, w, h) S.PlaceList(P.list, 4, -108, P.W - 8, math.max(60, (h or 0) - 114)) end)
 	local h = ahf.GetHeight and ahf:GetHeight() or 0
@@ -212,6 +247,7 @@ ns.On("AH_CHANGED", function()
 	if not P.frame then return end
 	if not ns.AH.Status() then
 		ns.Window.ReleaseItemTip()
+		P.SetNext(nil)
 		S.SetList(P.list, {})
 	end
 	P.Refresh()

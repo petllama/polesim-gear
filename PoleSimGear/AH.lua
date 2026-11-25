@@ -523,3 +523,29 @@ function AH.Select(r)
 	end
 	return true
 end
+
+-- A browse search by an item's name, as the AH's own search bar sends it (AuctionHouseFrame:SendBrowseQuery:
+-- browse view, its results list). -> true | false, why
+function AH.SearchName(name)
+	local f = _G.AuctionHouseFrame
+	if not name or name == "" then return false, "no item name to search for" end
+	if not (f and f.SendBrowseQuery and f:IsShown()) then return false, "the auction house is not open" end
+	f:SendBrowseQuery(name, 0, 0, {})
+	return true
+end
+
+-- A weapon-set row's partner (the other hand): its listings (AH.Select); when its listing is gone (no
+-- browse result or item key left), a search by its name. -> true, note (chat) | false, why | false (no partner)
+function AH.SelectPartner(r)
+	local p = r and r.partner
+	if not p then return false end
+	if p.result and p.itemKey then return AH.Select(p) end
+	local inst = p.c and p.c.inst or {}
+	local name = inst.name
+	if name and inst.suffix and name:sub(-#inst.suffix - 1) == " " .. inst.suffix then
+		name = name:sub(1, #name - #inst.suffix - 1)
+	end
+	local ok, why = AH.SearchName(name)
+	if not ok then return false, why end
+	return true, (name or "?") .. "'s listing is gone: searching the auction house for it by name"
+end
