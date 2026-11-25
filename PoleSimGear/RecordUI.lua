@@ -1,6 +1,6 @@
 -- The recorder's dialogs, all our own frames (Style), never StaticPopup or Blizzard's Menu (taint):
 --   * the opt-in question, once per account on the first load of a version with the recorder;
---   * the upload card every 4 h of ACTIVE recorded play since the last confirmed upload, at a calm
+--   * the upload card every 2 h of ACTIVE recorded play since the last confirmed upload, at a calm
 --     moment (out of combat, not in an instance, not casting, no other PoleSim popup, not at the
 --     auction house, mail, a vendor or a trainer): [Copy export] [Later] (again after 1 h of play)
 --     [Stop asking] (recording goes on; /psg export still works; Settings asks again);
@@ -85,7 +85,7 @@ end
 UI.OPTIN_TITLE = "Help improve PoleSim's gear weights?"
 UI.OPTIN_TEXT = {
 	"PoleSim Gear can record how this character levels, so PoleSim's model (fight lengths, kills per hour, "
-		.. "rest, regen) can be checked against real play. It stays in your SavedVariables; every 4 hours of play it "
+		.. "rest, regen) can be checked against real play. It stays in your SavedVariables; every 2 hours of play it "
 		.. "offers a copy-paste export for " .. UI.URL .. ".",
 	"Recorded: level, class, race, character stats, regen, worn item ids, talents; each fight's length, the mobs' "
 		.. "type and level, kills and XP, your spell casts; meals, deaths, XP and rested, pauses.",

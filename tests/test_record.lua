@@ -307,7 +307,7 @@ return {
 		fx.open()
 		local p = fx.tab("settings")
 		local rec = R.U.find(p, function(w) return w.get and R.U.ownText(w) == "Record leveling data for PoleSim" end)
-		local ask = R.U.find(p, function(w) return w.get and R.U.ownText(w) == "Ask me to upload every 4 h of play" end)
+		local ask = R.U.find(p, function(w) return w.get and R.U.ownText(w) == "Ask me to upload every 2 h of play" end)
 		T.ok(rec and ask, "both switches")
 		rec:Click()
 		T.eq(R.ns.Options.Get("record"), true, "recording on from Settings")

@@ -1,6 +1,6 @@
 # PoleSim Gear
 
-Version 0.7.5. WoW: Forever addon: PoleSim's simulated, level-banded gear weights in game. Item scores with a
+Version 0.7.6. WoW: Forever addon: PoleSim's simulated, level-banded gear weights in game. Item scores with a
 "how?" breakdown, upgrade arrows, the best quest reward, and a gear planner window with where to get
 each upgrade. In testing.
 
@@ -160,10 +160,10 @@ PoleSim" changes the answer any time. Data is kept per character in your SavedVa
 **Never recorded:** names (yours, your realm, guild, party, other players or mobs), chat, gold, map
 position, health or mana values.
 
-**Uploading:** every 4 hours of active recorded play, at a calm moment (out of combat, not in an
+**Uploading:** every 2 hours of active recorded play, at a calm moment (out of combat, not in an
 instance, not casting, no other PoleSim popup, not at the auction house, mail, a vendor or a trainer) a
-card asks **"4 h of leveling recorded. Upload it?"**: **Copy export**, **Later** (asks again after an hour
-of play) or **Stop asking** (recording goes on; Settings > "Ask me to upload every 4 h of play" turns it
+card asks **"2 h of leveling recorded. Upload it?"**: **Copy export**, **Later** (asks again after an hour
+of play) or **Stop asking** (recording goes on; Settings > "Ask me to upload every 2 h of play" turns it
 back on). `/psg export` (or Settings > Export now) opens the export any time: one line of text, already
 highlighted: **Ctrl+C, then paste at polesim.petllama.com/upload**. A big export comes in numbered parts
 (Next). After sending, the website shows a 6-character code: click **I uploaded it** and type it in; only

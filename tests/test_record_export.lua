@@ -7,21 +7,31 @@ local session = RF.session
 local function card(R) return R.ns.RecordUI.UploadShown() end
 
 return {
-	asks_to_upload_after_four_hours_of_active_play = function()
+	asks_to_upload_after_two_hours_of_active_play = function()
 		local R = RF.setup({ record = true })
 		R.login()
-		R.play(3 * 3600 + 3000)
-		T.ok(not card(R), "not before 4 h")
+		R.play(3600 + 3000)
+		T.ok(not card(R), "not before 2 h")
 		R.play(700)
-		T.ok(card(R), "after 4 h")
-		T.ok(R.U.texts(R.ns.RecordUI.UploadFrame()):find("4 h of leveling recorded. Upload it?", 1, true), "card text")
+		T.ok(card(R), "after 2 h")
+		T.ok(R.U.texts(R.ns.RecordUI.UploadFrame()):find("2 h of leveling recorded. Upload it?", 1, true), "card text")
 		R.done()
 	end,
 
-	afk_time_does_not_count_toward_the_four_hours = function()
+	-- a character saved by 0.6-0.7.5 still waits for the old 4 h default: it moves to 2 h
+	old_four_hour_wait_moves_to_two = function()
+		local R = RF.setup({ record = true })
+		R.ns.char.rec = { v = 1, blocks = {}, next = 1, since = 0, askAt = 4 * 3600, sessions = 0 }
+		R.login()
+		R.play(2 * 3600 + 20)
+		T.ok(card(R), "asks at 2 h")
+		R.done()
+	end,
+
+	afk_time_does_not_count_toward_the_two_hours = function()
 		local R = RF.setup({ record = true })
 		R.login()
-		R.play(3 * 3600)
+		R.play(3600)
 		R.afk = true
 		R.event("PLAYER_FLAGS_CHANGED", "player")
 		R.wait(2 * 3600)
@@ -29,14 +39,14 @@ return {
 		R.afk = false
 		R.event("PLAYER_FLAGS_CHANGED", "player")
 		R.play(60)
-		T.ok(not card(R), "3 h of play + 2 h AFK is not 4 h")
+		T.ok(not card(R), "1 h of play + 2 h AFK is not 2 h")
 		R.done()
 	end,
 
 	waits_for_a_calm_moment = function()
 		local R = RF.setup({ record = true })
 		R.login()
-		R.play(4 * 3600 - 30)
+		R.play(2 * 3600 - 30)
 		for _, case in ipairs({ "combat", "instance", "casting", "MailFrame", "AuctionHouseFrame", "MerchantFrame", "ClassTrainerFrame" }) do
 			if R[case] ~= nil then R[case] = true else R.frames[case] = true end
 			R.play(60)
@@ -54,7 +64,7 @@ return {
 	not_while_the_equip_prompt_shows = function()
 		local R = RF.setup({ record = true })
 		R.login()
-		R.play(4 * 3600 - 30)
+		R.play(2 * 3600 - 30)
 		R.ns.RecordUI.OtherPopup = function() return true end
 		R.play(60)
 		T.ok(not card(R), "the equip card is up")
@@ -67,7 +77,7 @@ return {
 	later_asks_again_after_an_hour_of_play = function()
 		local R = RF.setup({ record = true })
 		R.login()
-		R.play(4 * 3600 + 20)
+		R.play(2 * 3600 + 20)
 		T.ok(card(R))
 		R.U.button(R.ns.RecordUI.UploadFrame(), "Later"):Click()
 		T.ok(not card(R))
@@ -81,7 +91,7 @@ return {
 	stop_asking_keeps_recording_and_settings_turn_it_back_on = function()
 		local R = RF.setup({ record = true })
 		R.login()
-		R.play(4 * 3600 + 20)
+		R.play(2 * 3600 + 20)
 		R.U.button(R.ns.RecordUI.UploadFrame(), "Stop asking"):Click()
 		T.eq(R.ns.Options.Get("recPrompt"), false)
 		T.eq(R.ns.Options.Get("record"), true, "still recording")
@@ -100,7 +110,7 @@ return {
 		local R = RF.setup({ record = true })
 		R.login()
 		session(R, 600)
-		R.play(4 * 3600)
+		R.play(2 * 3600)
 		R.U.button(R.ns.RecordUI.UploadFrame(), "Copy export"):Click()
 		local w = R.ns.RecordUI.ExportFrame()
 		T.ok(w and w:IsShown(), "export window")
@@ -172,7 +182,7 @@ return {
 	the_confirmation_code_clears_what_was_exported = function()
 		local R = RF.setup({ record = true })
 		R.login()
-		session(R, 4 * 3600 + 100)
+		session(R, 2 * 3600 + 100)
 		R.play(30)
 		local E, UI = R.ns.RecordExport, R.ns.RecordUI
 		UI.OpenExport()

@@ -100,11 +100,14 @@ local function data()
 	if type(r.next) ~= "number" then r.next = 1 end
 	if type(r.since) ~= "number" then r.since = 0 end
 	if type(r.askAt) ~= "number" then r.askAt = Record.ASK_SECONDS end
+	-- 0.6-0.7.5 asked every 4 h: a saved wait at that old default moves to the current one
+	if r.askAt == Record.OLD_ASK_SECONDS then r.askAt = Record.ASK_SECONDS end
 	if type(r.sessions) ~= "number" then r.sessions = 0 end
 	return r
 end
 Record.Data = data
-Record.ASK_SECONDS = 4 * 3600
+Record.ASK_SECONDS = 2 * 3600
+Record.OLD_ASK_SECONDS = 4 * 3600
 
 -- seconds into the session (tenths)
 local function rel(t) return round((t or now()) - (sess and sess.start or 0), 1) end

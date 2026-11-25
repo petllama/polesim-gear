@@ -1,5 +1,8 @@
 # In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution/Protection paladin) — PoleSim Gear 0.7.4
 
+**0.7.6 over 0.7.5:** the recorder offers its upload every **2 h** of active play (was 4 h); a
+character already waiting for the old 4 h mark is asked at 2 h. No new files: `/reload` is enough.
+
 **0.7.5 over 0.7.4:** the Slot dropdown is greyed out (its tooltip says "Scan first") until a scan has
 listed upgrades, and while a scan runs, so it never opens empty. No new files: `/reload` is enough.
 Check: N12.
@@ -57,7 +60,7 @@ Quest rewards and items with no level show no level (no more "lvl 0", "(0)" or "
 for Blizzard hotfixes. With Polestar's Gear module on, one chat line per session says our equip prompt
 stays quiet. **Recorder:** an opt-in leveling recorder for PoleSim
 (asked once; off until you say yes): pulls, casts, kills and XP, meals, deaths and character sheets, never
-names, chat or gold; every 4 h of play it offers a copy-paste export for polesim.petllama.com/upload.
+names, chat or gold; every 2 h of play it offers a copy-paste export for polesim.petllama.com/upload.
 Checks: sections S, R and T. Item data about 1.3 MB (weapon speeds added).
 
 **0.6.0 over 0.5.1:** four more classes. Warlock (Affliction, Demonology, Destruction), Druid (Balance,
@@ -948,7 +951,7 @@ waits until the fight ends. Click Yes: chat "Recording leveling data for PoleSim
 `/reload`: it does not ask again (nor on another character).
 
 **R2. State.** `/psg record` prints "Recording on; 0.0 h of active play recorded; ...". Settings tab, right
-column: "Record leveling data for PoleSim" and "Ask me to upload every 4 h of play" ticked, the hours and
+column: "Record leveling data for PoleSim" and "Ask me to upload every 2 h of play" ticked, the hours and
 an Export now button.
 
 **R3. A pull.** Kill one mob with a few casts, wait 3 s, then:
@@ -982,7 +985,7 @@ since the last upload. A wrong code says it doesn't match and deletes nothing.
 **R9. The reminder.** Force it: `/run PoleSimGearCharDB.rec.askAt=0` and wait 5 s out of combat (not at a
 vendor/mailbox/AH, not casting): the card "N h of leveling recorded. Upload it?" with Copy export, Later,
 Stop asking. Pull a mob while it shows: it hides and comes back after. Later: gone for an hour of play.
-Force again, Stop asking: never again; Settings "Ask me to upload every 4 h of play" back on: it shows.
+Force again, Stop asking: never again; Settings "Ask me to upload every 2 h of play" back on: it shows.
 
 **R10. No taint.** After the dialogs and the export window, use a unit frame's menu (Target Marker Icon >
 Skull) on your target: no "blocked" message.

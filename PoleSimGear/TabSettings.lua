@@ -134,7 +134,7 @@ Tab.RECORD_SWITCHES = {
 		ns.Options.Set("record", on)
 		ns.Options.Set("recAsked", true)
 	end },
-	{ "Ask me to upload every 4 h of play", function() return ns.Options.Get("recPrompt") end,
+	{ "Ask me to upload every 2 h of play", function() return ns.Options.Get("recPrompt") end,
 		function(on) ns.Options.Set("recPrompt", on) end },
 }
 
