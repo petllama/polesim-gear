@@ -4,11 +4,14 @@
 --   c  character sheet at login and at every level up (stats, pools, armor, power, crit/hit, avoidance,
 --      the client's mana regen out of combat and while casting, weapons, worn item ids, talents)
 --   p  a pull: start/end (seconds into the session), its level, the mobs engaged (npc id from the GUID,
---      level, creature type, caster = has mana), kills with the XP each paid, the player's casts per
+--      level, creature type, caster = has mana), kills with the XP each paid (a kill XP line with no
+--      readable death is still a kill: npc 0 when Forever keeps the mob's identity secret), the player's casts per
 --      spell id, the gap since the previous pull's end, flags (a after a meal, d died, s some reads secret)
 --   m  a meal: Food/Drink aura start, seconds, the aura's duration, kind, interrupted by a pull
 --   d  a death: level, mobs and their levels, the fight so far, dead -> alive, death -> next pull
---   x  XP and rested at the session's start, every level up and the session's end
+--   x  XP and rested at the session's start, every level up (read a few seconds later: the client
+--      still reports the old level while PLAYER_LEVEL_UP fires) and the session's end (the last
+--      readable values: the client hands out 0 on logout)
 --   k  a pause over 2 minutes (AFK flag, or no combat, movement, casting or other input)
 -- Records sit in blocks of at most an hour of ACTIVE play (pauses left out); about 20 h are kept per
 -- character (oldest blocks dropped first). Export (RecordExport.lua) summarises them; a confirmed
@@ -84,7 +87,9 @@ local deadAt        -- GetTime of the death
 local casts = {}    -- recent casts out of combat: { id, at }, newest last (for the opener)
 local plates = {}   -- nameplate tokens shown, in order
 local candidate     -- a death no pull claimed yet: { npc, lvl, at } (an XP line may confirm it)
-local xpLine        -- { xp, at } an XP line no kill took yet
+local xpKill        -- { k = the kill record, at } a kill made from an XP line no death named yet
+local xpDue         -- GetTime the level-up XP mark is due
+local xpLast        -- the last readable { l, x, mx, r }
 local charDue       -- GetTime a sheet snapshot is due, nil when none
 local loginAt       -- GetTime of the login (the opt-in question waits a little)
 
@@ -201,10 +206,19 @@ local function onFlags(unit)
 end
 
 -- Sessions -------------------------------------------------------------------------------------------
+-- The XP state now, or the last readable one when the client hands out nothing (logout).
+local function xpRead()
+	local v = { l = num(call(UnitLevel, "player")), x = num(call(UnitXP, "player")), mx = num(call(UnitXPMax, "player")),
+		r = num(call(GetXPExhaustion)) or 0 }
+	if (v.mx or 0) > 0 and (v.l or 0) > 0 then
+		xpLast = v
+		return v
+	end
+	return xpLast or v
+end
 local function xpMark(why)
-	local lvl = num(call(UnitLevel, "player"))
-	add("x", { t = rel(), l = lvl, x = num(call(UnitXP, "player")), mx = num(call(UnitXPMax, "player")),
-		r = num(call(GetXPExhaustion)) or 0, w = why })
+	local v = xpRead()
+	add("x", { t = rel(), l = v.l, x = v.x, mx = v.mx, r = v.r, w = why })
 end
 
 local function startSession()
@@ -290,10 +304,13 @@ function Record.Snapshot()
 	local _, cls = call(UnitClass, "player")
 	local _, race = call(UnitRace, "player")
 	local c = { t = rel(), l = num(call(UnitLevel, "player")), cls = str(cls), race = str(race), spec = specKey() }
-	c.st = {}
+	-- UnitStat: Forever's first return already holds gear AND buffs (= the second); the buff part
+	-- (posBuff + negBuff) is kept apart so base + gear can be told from buffs
+	c.st, c.bf = {}, {}
 	for i = 1, 5 do
-		local base, eff = call(UnitStat, "player", i)
+		local base, eff, pos, neg = call(UnitStat, "player", i)
 		c.st[i] = { round(num(base)) or 0, round(num(eff)) or 0 }
+		c.bf[i] = round((num(pos) or 0) + (num(neg) or 0)) or 0
 	end
 	c.hp = round(num(call(UnitHealthMax, "player")))
 	c.mp = round(num(call(UnitPowerMax, "player", 0)))
@@ -370,7 +387,11 @@ local function scan()
 		end
 	end
 	look("target")
-	for _, token in ipairs(plates) do look(token) end
+	local hasTarget = call(UnitExists, "target") == true
+	for _, token in ipairs(plates) do
+		-- the target's own nameplate is the same mob
+		if not (hasTarget and call(UnitIsUnit, token, "target") == true) then look(token) end
+	end
 	if live > p.live then p.live = live end
 	local n = 0
 	for _ in pairs(p.guids) do n = n + 1 end
@@ -436,16 +457,24 @@ local function onDied(guid, byPlayer)
 	if info or byPlayer then
 		if p.dead[g] then return end
 		p.dead[g] = true
-		local k = { type(info) == "table" and info[1] or Record.NpcId(g) or 0, type(info) == "table" and info[2] or 0 }
-		kills[#kills + 1] = k
-		local x = xpLine
-		if x and now() - x.at <= XP_WINDOW then
-			k[3] = x.xp
-			xpLine = nil
+		local npc, lvl = type(info) == "table" and info[1] or Record.NpcId(g) or 0, type(info) == "table" and info[2] or 0
+		local x = xpKill
+		if x and now() - x.at <= XP_WINDOW and x.p == p then
+			-- its XP line came first: name that kill
+			xpKill = nil
+			x.k[1], x.k[2] = npc, lvl
+			return
 		end
+		kills[#kills + 1] = { npc, lvl }
 	else
 		local npc = Record.NpcId(g)
-		if npc then candidate = { npc, 0, at = now() } end
+		local x = xpKill
+		if npc and x and now() - x.at <= XP_WINDOW and x.p == p and x.k[1] == 0 then
+			xpKill = nil
+			x.k[1] = npc
+		elseif npc then
+			candidate = { npc, 0, at = now() }
+		end
 	end
 end
 
@@ -499,7 +528,10 @@ local function onXP(text)
 		kills[#kills + 1] = { c[1], c[2], xp }
 		return
 	end
-	xpLine = { xp = xp, at = t }
+	-- no death to give it to (not yet, or its GUID was secret): a kill of this pull all the same
+	local k = { 0, 0, xp }
+	kills[#kills + 1] = k
+	xpKill = { k = k, at = t, p = p }
 end
 
 local function onCast(unit, _, spell)
@@ -592,6 +624,12 @@ function Record.Tick()
 		activity()
 	end
 	if closing and t - closing.at > Record.CLOSE_SECONDS then finishClosing() end
+	if xpDue and t >= xpDue then
+		xpDue = nil
+		if Record.On() then xpMark("l") else xpRead() end
+	elseif not xpDue then
+		xpRead() -- keeps the last readable values for the logout mark
+	end
 	if charDue and t >= charDue and not inCombat() then writeSheet() end
 	local r = data()
 	if r then
@@ -621,6 +659,8 @@ ns.RegisterEvent("PLAYER_LOGOUT", function()
 		meal = nil
 	end
 	if lastAct and not afkAt then pause(lastAct, now()) end
+	if xpDue and Record.On() then xpMark("l") end
+	xpDue = nil
 	if Record.On() then xpMark("e") end
 	local r = data()
 	if r then r.live = nil end
@@ -641,7 +681,7 @@ ns.RegisterEvent("CHAT_MSG_COMBAT_XP_GAIN", function(text) activity() onXP(text)
 ns.RegisterEvent("UNIT_SPELLCAST_SUCCEEDED", onCast)
 ns.RegisterEvent("PLAYER_LEVEL_UP", function()
 	if not sess then return end
-	if Record.On() then xpMark("l") end
+	xpDue = now() + Record.LEVEL_DELAY
 	charDue = now() + Record.LEVEL_DELAY
 end)
 ns.RegisterEvent("UNIT_AURA", onAura)

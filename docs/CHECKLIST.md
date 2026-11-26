@@ -1151,7 +1151,9 @@ the right "of the ..." suffix). Typing in the line does not change it; Escape cl
 
 - Recorder: Forever closes the combat log to addons, so kills come from UNIT_DIED / PARTY_KILL and the
   XP from the kill's chat line (its number only); a mob's identity can be secret in combat on some
-  content (pull flag "s": the mob is counted but not described). Active play = activity (moving,
+  content (pull flag "s": the mob is counted but not described; since the recorder-fixes build such a
+  kill still counts from its XP line, with creature id 0, while a grey mob's kill there, which pays no
+  XP, is not counted). Active play = activity (moving,
   casting, fighting, looting, quests) with gaps under 2 minutes and the AFK flag off; standing still
   reading quest text for over 2 minutes counts as a pause. Creature types are the client's words (in its
   language).
