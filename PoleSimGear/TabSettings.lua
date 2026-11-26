@@ -1,7 +1,8 @@
 -- Settings: the account-wide switches (minimap button, tooltip line, upgrade arrows, reward mark, the
 -- equip prompt), the look ahead a new character starts with, the equip prompt's minimum gain and never
--- list, Polestar's gear-score question, and the character's spec (Automatic or a spec with weights: the
--- way out when the talents land on one without, e.g. Feral).
+-- list, Polestar's gear-score question, the character's spec (Automatic or a spec with weights: the
+-- way out when the talents land on one without, e.g. Feral), recording for PoleSim and update notices
+-- (the hidden channel switch; a newer release heard of).
 local ADDON, ns = ...
 local Tab = {}
 ns.TabSettings = Tab
@@ -23,6 +24,9 @@ Tab.SWITCHES = {
 	{ "Prefer upgrades from upcoming guide quests (within 2 levels)", function() return ns.Options.Get("preferQuest") end,
 		function(on) ns.Options.Set("preferQuest", on) end },
 	{ "Ask to equip upgrades I pick up", function() return ns.Options.Get("askEquip") end, function(on) ns.Options.Set("askEquip", on) end },
+	-- Update.lua: off = leave the channel, send nothing
+	{ "Update notices (joins a hidden PoleSimGear channel)", function() return ns.Options.Get("shareVersion") end,
+		function(on) ns.Options.Set("shareVersion", on) end },
 }
 local ROW = 24
 
@@ -124,6 +128,20 @@ function Tab.Create(parent)
 	p.recExport = S.Button(p, "Export now", 90, 20, function() ns.RecordUI.OpenExport() end, S.ACTION)
 	p.recExport:SetPoint("TOPLEFT", X, ry - 16 * (#Tab.RECORD_NOTES + 1) - 4)
 	p.recExport.tip = "The copy-paste export for polesim.petllama.com/upload (also /psg export)"
+	-- update notices (Update.lua): sharing our version, and what is known (right column, under recording)
+	local uy = ry - 16 * (#Tab.RECORD_NOTES + 1) - 36
+	local ut = S.Text(p, 13, C.white)
+	ut:SetPoint("TOPLEFT", X, uy)
+	ut:SetText("Update notices")
+	p.updateStatus = S.Text(p, 11, C.label)
+	p.updateStatus:SetPoint("TOPLEFT", X, uy - 22)
+	p.updateStatus:SetWidth(CW)
+	for i, text in ipairs(Tab.SHARE_NOTES) do
+		local t = S.Text(p, 11, C.label)
+		t:SetPoint("TOPLEFT", X, uy - 22 - 16 * i)
+		t:SetWidth(CW)
+		t:SetText(text)
+	end
 	return p
 end
 
@@ -137,6 +155,14 @@ Tab.RECORD_SWITCHES = {
 	{ "Ask me to upload every 2 h of play", function() return ns.Options.Get("recPrompt") end,
 		function(on) ns.Options.Set("recPrompt", on) end },
 }
+
+-- Update notices (Options shareVersion, on by default; the switch is in Tab.SWITCHES): what is known.
+Tab.SHARE_NOTES = { "Only the version number is sent,", "on a hidden channel. /psg version" }
+function Tab.UpdateText()
+	local line = ns.Update and ns.Update.Line()
+	if line then return line end
+	return "No newer version heard of"
+end
 
 -- The spec choices: Automatic (talents), then the class's specs with weights (Spec.Keys).
 function Tab.SpecList()
@@ -187,6 +213,7 @@ function Tab.Refresh(p)
 	p.spec:Update()
 	for _, b in ipairs(p.recChecks) do b:Set(b.get()) end
 	p.recStatus:SetText(ns.Record.Status())
+	p.updateStatus:SetText(Tab.UpdateText())
 end
 
 ns.Window.RegisterTab("settings", { create = Tab.Create, refresh = Tab.Refresh })

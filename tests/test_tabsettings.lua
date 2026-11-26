@@ -80,4 +80,25 @@ return {
 		T.ok(fx.tab("plan").list.provided[1].empty ~= msg, "scored now")
 		fx.done()
 	end,
+	-- Update notices: the share switch (on by default), what is known, and the title bar's line.
+	update_notices = function()
+		local fx = F.load()
+		local ns, U = fx.ns, fx.U
+		ns.version = "0.7.8"
+		local f = fx.open()
+		local p = fx.tab("settings")
+		local LABEL = "Update notices (joins a hidden PoleSimGear channel)"
+		local b = U.button(p, LABEL)
+		T.eq(b.on, true, "on by default")
+		T.ok(U.textWidth(LABEL, 12) <= 420 - 20, "the label fits its row")
+		for _, t in ipairs(ns.TabSettings.SHARE_NOTES) do T.ok(U.textWidth(t, 11) <= 230, t) end
+		T.ok(U.texts(p):find("No newer version heard of", 1, true), U.texts(p))
+		T.eq(f.update.text, ""); T.eq(f.updateHit:IsShown(), false)
+		b:Click()
+		T.eq(ns.Options.Get("shareVersion"), false); T.eq(U.button(p, LABEL).on, false)
+		ns.Update.Heard("0.7.9")
+		T.ok(U.texts(p):find("Update available: 0.7.9", 1, true), "redrawn when heard")
+		T.eq(f.update.text, "Update available: 0.7.9"); T.eq(f.updateHit:IsShown(), true)
+		fx.done()
+	end,
 }

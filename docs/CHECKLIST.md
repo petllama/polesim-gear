@@ -1,4 +1,14 @@
-# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution/Protection paladin) — PoleSim Gear 0.7.8
+# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution/Protection paladin) — PoleSim Gear 0.7.9
+
+**0.7.9 over 0.7.8:** update notices. About 20 s after login PoleSim Gear joins a hidden chat channel
+"PoleSimGear" (temporary, in no chat window) and says hello with its version (only the version number);
+a player on a newer version answers once. An older version then prints one chat line per login
+("version X is out (you have Y): download it from <releases page>") and shows "Update available: X" under
+the window's title. Settings: "Update notices (joins a hidden PoleSimGear channel)" (on by default; off
+leaves the channel and sends nothing). `/psg version`. Only works from 0.7.9 on (older versions don't
+listen). Recorder: kills are counted even when the game hides the mob's identity; cleaner level-up/logout
+marks; buffs recorded separately from base stats. New file (Update.lua): **restart the game**, `/reload`
+is not enough. Check: V1-V3.
 
 **0.7.8 over 0.7.7:** new weights. Caster openers follow Method's guides: priests and shamans put their
 DoT (Shadow Word: Pain, Flame Shock) on right after the first cast-time spell, not when the mob arrives;
@@ -1046,6 +1056,26 @@ line starting `PSGG1:<class>:<spec>:<level>:`. Ctrl+C, open polesim.petllama.com
 the right "of the ..." suffix). Typing in the line does not change it; Escape closes it. Plain
 `/psg export` is still the recorder's export.
 
+## V. Update notices (0.7.9; full game restart after installing)
+
+**V1. The hidden channel.** ~20 s after login: no "Joined Channel" line in any chat tab, no new channel
+in the chat tabs. `/psg version`: "version 0.7.9", "no newer version heard of", "update notices: on, in
+the hidden PoleSimGear channel". `/chatlist` (or Social > Chat channels) lists PoleSimGear (that is the
+only place it shows). Settings tab: the box "Update notices (joins a hidden PoleSimGear channel)" ticked;
+right column "Update notices" with "No newer version heard of".
+
+**V2. An older one hears it** (two characters online at once, any faction/guild/party; addon messages on a
+custom channel are what this checks: if V2 shows nothing, tell me). On the second character's install
+edit `PoleSimGear.toc` to `## Version: 0.7.8` (and restart that game), log both in. Within ~35 s of the
+later login the 0.7.8 one gets ONE chat line "PoleSim Gear: version 0.7.9 is out (you have 0.7.8):
+download it from https://github.com/petllama/polesim-gear/releases/latest" and its window shows "Update
+available: 0.7.9" in green under the title (hover: where to download). `/psg version` there: "newest
+known: 0.7.9, heard ... ago". Nothing shows in any chat tab on either character. `/reload` on the old one:
+the chat line once again after ~10 s, no more. Put the real 0.7.9 TOC back afterwards.
+
+**V3. Off.** Untick the box: `/chatlist` no longer lists PoleSimGear, `/psg version` says "update
+notices: off". Tick it again: back in the channel within a few seconds.
+
 ## Probe results (B1, fill in)
 
 | Question | Answer |
@@ -1146,8 +1176,15 @@ the right "of the ..." suffix). Typing in the line does not change it; Escape cl
 | R1-R10 | Recorder: question, state, pulls, mobs, sheet, meal, AFK, export/upload, reminder, no taint | |
 | N13 | AH panel: "Scored for: <Spec> (source)", changes with Settings | |
 | U1 | /psg export gear: line, paste on the website fills the character | |
+| V1-V3 | Update notices: hidden channel, older one sees one line + title line, off leaves the channel | |
 
 ## Known limits (tell me if they bother you)
+
+- Update notices (0.7.9) work only from 0.7.9 on (older versions neither send nor listen) and only while
+  someone on a newer version is online. The hidden channel takes one of your chat channel slots (none
+  free: no notices). Anyone can join a channel named PoleSimGear and send versions; a fake one is
+  ignored unless it is at most one minor version ahead, and a squatter who sets a channel password would
+  just switch the notices off.
 
 - Recorder: Forever closes the combat log to addons, so kills come from UNIT_DIED / PARTY_KILL and the
   XP from the kill's chat line (its number only); a mob's identity can be secret in combat on some

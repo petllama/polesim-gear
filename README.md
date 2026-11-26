@@ -1,13 +1,13 @@
 # PoleSim Gear
 
-Version 0.7.8. WoW: Forever addon: PoleSim's simulated, level-banded gear weights in game. Item scores with a
+Version 0.7.9. WoW: Forever addon: PoleSim's simulated, level-banded gear weights in game. Item scores with a
 "how?" breakdown, upgrade arrows, the best quest reward, and a gear planner window with where to get
 each upgrade. In testing.
 
 **Download:** the latest zip is on the [Releases page](https://github.com/petllama/polesim-gear/releases/latest).
 Unzip it into `World of Warcraft/_forever_/Interface/AddOns/` (a new install needs a game restart; an
-update needs `/reload`, unless its notes say it adds files: 0.7.7 adds two, so restart the game when
-updating to it).
+update needs `/reload`, unless its notes say it adds files: 0.7.7 adds two and 0.7.9 one, so restart the
+game when updating to them).
 
 **Supported classes and specs** (weights from PoleSim's simulation of each spec leveling):
 
@@ -164,6 +164,35 @@ house's own list shows the scan's last search afterwards (search again as usual)
 gives one row for every suffix of an item ("... of the Owl", "of the Bear"), the row is scored with its
 best suffix and says "any suffix"; its listings show each one's suffix (with the upgrade arrow).
 
+## Update notices
+
+Addons can't go online, so PoleSim Gear (0.7.9 and later) hears about a newer release from other
+players' PoleSim Gear. When someone online runs a newer version, you get **one chat line per login**
+("PoleSim Gear: version 0.7.10 is out (you have 0.7.9): download it from
+https://github.com/petllama/polesim-gear/releases/latest") and **"Update available: 0.7.10"** under the
+window's title. No popup; in combat the chat line waits until the fight ends. Download from the
+[Releases page](https://github.com/petllama/polesim-gear/releases/latest) (the only download place).
+
+How it works: about 20 s after login (out of combat, outside instances) PoleSim Gear joins a **hidden
+chat channel** `PoleSimGear` (a temporary one: not saved with your chat settings, added to no chat
+window, its join notices filtered out, so you never see it; it takes one of your channel slots, and if all
+are taken it quietly skips). It says hello with its version once (at most every 30 minutes, so a
+`/reload` says nothing); a player on a **newer** version answers once after a random 2-10 s (only one
+answers: the others hear the answer and stay quiet; each answers at most every 5 minutes). The messages
+are hidden addon messages.
+
+**Privacy:** only the version number is sent (`hello 0.7.9` / `ver 0.7.9`), on that hidden channel: no
+name, gear, level or recording (the game itself shows channel members to anyone in the channel, as for any
+chat channel). A version heard counts only if it looks like a release (x.y.z), is newer than yours and at
+most one minor version ahead (a made-up `9.9.9` is ignored); it is kept 7 days (account-wide, in your
+SavedVariables).
+
+**Turn it off:** Settings > "Update notices (joins a hidden PoleSimGear channel)" (on by default). Off,
+PoleSim Gear leaves the channel (or never joins), sends nothing and so hears nothing. `/psg version`
+prints your version, the newest one heard of (and when) and whether you are in the channel.
+
+Versions before 0.7.9 neither send nor listen: the notices start working once players are on 0.7.9.
+
 ## Recording for PoleSim (opt-in)
 
 PoleSim Gear can record how a character levels so PoleSim's model (fight lengths, kills per hour, rest,
@@ -216,6 +245,8 @@ needed the first time (not just `/reload`).
   Survival over Marksmanship over Beast Mastery); no points yet = Shadow for a priest, Frost for a mage,
   Affliction for a warlock, Arms for a warrior, Combat for a rogue, Beast Mastery for a hunter, Balance
   for a druid, Elemental for a shaman, Holy for a paladin.
+- `/psg version`: your version, the newest one heard of, and whether update notices are on (Update
+  notices).
 - `/psg minimap`: hide/show the minimap button (saved for the account).
 - `/psg ask`: ask to equip every upgrade in your bags now (the equip prompt, even for items there at login).
 - `/psg polestar`: ask again whether to turn off Polestar's own gear scores (forgets the earlier answer).

@@ -209,6 +209,24 @@ local function create()
 	frame.title = S.Text(bar, 20, C.title)
 	frame.title:SetPoint("TOPLEFT", 56, -14)
 	frame.title:SetText("PoleSim Gear")
+	-- "Update available: 0.7.9" under the title when another player's PoleSim Gear told us (Update.lua)
+	frame.update = S.Text(bar, 10, C.green)
+	frame.update:SetPoint("TOPLEFT", 57, -34)
+	frame.updateHit = CreateFrame("Frame", nil, bar)
+	frame.updateHit:SetPoint("TOPLEFT", 56, -32)
+	frame.updateHit:SetSize(150, 13)
+	frame.updateHit:EnableMouse(true)
+	frame.updateHit:SetScript("OnEnter", function(self)
+		local U = ns.Update
+		if not (U and U.Known()) then return end
+		GameTooltip:SetOwner(self, "ANCHOR_BOTTOMRIGHT")
+		GameTooltip:AddLine(U.Line(), 1, 1, 1)
+		GameTooltip:AddLine("Another player runs a newer PoleSim Gear. Download it from " .. U.RELEASES
+			.. " (a new version may need a full game restart). /psg version says more.", 0.8, 0.8, 0.8, true)
+		GameTooltip:Show()
+	end)
+	frame.updateHit:SetScript("OnLeave", GameTooltip_Hide)
+	frame.updateHit:Hide()
 	frame.close = S.Button(bar, "X", 22, 22, function() frame:Hide() end, S.CLOSE)
 	frame.close:SetPoint("TOPRIGHT", -10, -12)
 	frame.tabs = {}
@@ -267,8 +285,16 @@ end
 -- shown and visible (Alt+Z hides UIParent: no work then; OnShow builds again)
 local function visible() return frame ~= nil and frame:IsVisible() end
 
+-- the update line under the title (empty when no newer release is known)
+function Win.UpdateTitle(f)
+	local line = ns.Update and ns.Update.Line() or nil
+	f.update:SetText(line or "")
+	f.updateHit:SetShown(line ~= nil)
+end
+
 local function redrawAll()
 	local ctx = ns.Context.Get()
+	Win.UpdateTitle(frame)
 	if Win.UpdateHeader then Win.UpdateHeader(frame, ctx) end
 	if Win.UpdateLeft then Win.UpdateLeft(frame) end
 	if Win.UpdateBottom then Win.UpdateBottom(frame, ctx) end
@@ -1003,6 +1029,7 @@ end)
 ns.On("OPTIONS", redraw)
 -- an auction house scan's prices and upgrades show on the Gear Plan (session only; gone on close)
 ns.On("AH_CHANGED", function() if visible() then redraw() end end)
+ns.On("UPDATE_KNOWN", function() if visible() then redraw() end end)
 -- A quest turned in (QUEST_TURNED_IN, QuestLogDocumentation in the Forever 1.60.1 UI source) takes its
 -- rewards off the list: one rebuild a moment later for a burst of turn-ins (the completion flag is set
 -- by then), only while the window is shown (closed, it builds again when opened).
