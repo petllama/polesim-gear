@@ -15,12 +15,20 @@
 --   k  a pause over 2 minutes (AFK flag, or no combat, movement, casting or other input)
 --   f  item data drift, at each sheet: a worn or bagged item whose shipped stats differ from the
 --      client's (item id, suffix id, stat key, shipped and live value), once per item + suffix + stat
+--   g  a group fight in a dungeon (0.7.14; only in a party inside a dungeon instance): pull number,
+--      instance + difficulty ids, mobs (npc id, level, elite/boss), the party's classes + levels by
+--      role (self/tank/other), the player's healing per spell and target role (overheal when the
+--      client gives it), damage taken per role (melee/spell, by mob npc id + spell id, biggest hit),
+--      deaths per role, the player's mana every second (when readable), the healing sheet at the
+--      start, drinking time since the last fight ("Group fights in dungeons" below)
 -- Records sit in blocks of at most an hour of ACTIVE play (pauses left out); about 20 h are kept per
 -- character (oldest blocks dropped first). Export (RecordExport.lua) summarises them; a confirmed
 -- upload deletes the blocks it carried.
 --
--- Never read or stored: names (player, realm, guild, party, units), chat text (the kill XP line is
--- parsed for its number only), gold, map position, health and mana values (secret in Forever anyway).
+-- Never stored: names (player, realm, guild, party, units; party names and GUIDs are compared in
+-- memory only to sort the party into roles), chat text (the kill XP line is parsed for its number
+-- only), gold, map position, health values; mana only the player's own during dungeon group fights,
+-- and only when the client lets addons read it (Forever keeps it secret so far).
 --
 -- APIs, checked in Forever's Blizzard_APIDocumentationGenerated: PLAYER_REGEN_DISABLED/ENABLED,
 -- UNIT_DIED and PARTY_KILL (GUIDs; COMBAT_LOG_EVENT_UNFILTERED is a restricted callback event on this
@@ -32,7 +40,9 @@
 -- (UnitStat, UnitHealthMax, UnitPowerMax, UnitArmor, UnitAttackPower, UnitRangedAttackPower,
 -- GetSpellBonusDamage/Healing, Get*CritChance, GetHitModifier, GetSpellHitModifier, GetDodge/Parry/
 -- BlockChance, GetManaRegen, UnitDamage, UnitAttackSpeed, UnitRangedDamage: secret while unit stats
--- are restricted, so the sheet is read out of combat only). Every value goes through `ok()`: a secret
+-- are restricted, so the sheet is read out of combat only); for dungeon fights IsInInstance,
+-- GetInstanceInfo, GetNumGroupMembers/IsInGroup, UnitGroupRolesAssigned, UnitClassification,
+-- ENCOUNTER_START/END, UNIT_COMBAT (amount secret when restricted) and C_DamageMeter (secret in combat). Every value goes through `ok()`: a secret
 -- or failed read is unknown, never an error.
 local ADDON, ns = ...
 local Record = {}
@@ -94,6 +104,8 @@ local xpDue         -- GetTime the level-up XP mark is due
 local xpLast        -- the last readable { l, x, mx, r }
 local charDue       -- GetTime a sheet snapshot is due, nil when none
 local loginAt       -- GetTime of the login (the opt-in question waits a little)
+-- the dungeon group fights ("Group fights in dungeons" below)
+local groupCast, groupMealEnded, groupDied, groupPlayerDead, groupTick, groupCheck, startGroupFight
 
 function Record.On() return ns.Options.Get("record") == true end
 
@@ -159,7 +171,7 @@ local function block()
 	local b = r.blocks[#r.blocks]
 	if b and b.s == sess.n and not r.cut and (b.a or 0) < Record.BLOCK_SECONDS then return b end
 	r.cut = nil
-	b = { id = r.next, s = sess.n, t0 = rel(), a = 0, p = {}, c = {}, m = {}, d = {}, x = {}, k = {}, f = {} }
+	b = { id = r.next, s = sess.n, t0 = rel(), a = 0, p = {}, c = {}, m = {}, d = {}, x = {}, k = {}, f = {}, g = {} }
 	r.next = r.next + 1
 	r.blocks[#r.blocks + 1] = b
 	cap(r)
@@ -428,6 +440,7 @@ local function startPull()
 	if meal then
 		meal.rec.i = 1
 		meal.rec.d = round(t - meal.at, 1)
+		groupMealEnded(meal)
 		meal = nil
 	end
 	local lvl = num(call(UnitLevel, "player"))
@@ -559,6 +572,7 @@ local function onCast(unit, _, spell)
 	if not Record.On() then return end
 	spell = num(spell)
 	if not spell then return end
+	groupCast(spell)
 	if pull then
 		pull.rec.c[spell] = (pull.rec.c[spell] or 0) + 1
 	else
@@ -604,6 +618,7 @@ local function onAura(unit)
 		if meal.rec.k ~= kind then meal.rec.k = "b" end
 	elseif not kind and meal then
 		meal.rec.d = round(now() - meal.at, 1)
+		groupMealEnded(meal)
 		meal = nil
 	end
 end
@@ -622,6 +637,7 @@ local function onDead()
 		if not p.rec.f:find("d", 1, true) then p.rec.f = p.rec.f .. "d" end
 	end
 	death, deadAt = add("d", d), t
+	groupPlayerDead()
 end
 local function onAlive()
 	if death and deadAt then death.r = round(now() - deadAt, 1) end
@@ -677,6 +693,583 @@ function Record.DriftScan()
 end
 Record.DRIFT_MAX = 50
 
+-- Group fights in dungeons (0.7.14) ------------------------------------------------------------------
+-- Kind g, one record per fight of the GROUP, only while recording is on AND the player is in a party
+-- inside a dungeon (IsInInstance "party", 2+ group members): for PoleSim's dungeon-healing model.
+--   t start (session s), d seconds, i instance id, df difficulty id, n pull number in this dungeon visit,
+--   e encounter id (ENCOUNTER_START, 0 none) + es success (1/0, -1 open), b a boss fought,
+--   m mobs { npc, level, class code } (n normal, e elite, r rare, re rare elite, b boss, t trivial, x minus),
+--   p party "role:CLASS:level" (role s self, t tank, o other), rs where the tank came from (a assigned
+--     role, d most melee damage taken this fight, c carried over from an earlier fight, "" none),
+--   h the player's heals per spell { spell, amount, overheal (-1 unknown), to self, to tank, to others,
+--     to nobody known }, ht their total, ab absorbs { spell, amount },
+--   dt damage taken per role { total, melee, spell, biggest hit (-1 unknown), hits seen },
+--   ds damage taken by source { role, npc (0 unknown), spell, amount }, the biggest GROUP_SOURCES,
+--   x deaths per role { s, t, o }, mp the player's mana { start, end, max, samples every second }
+--   (empty when the client keeps mana secret: flag p), st the sheet at the start { +healing, spirit,
+--   intellect, mana regen/s out of combat, while casting, max mana }, dk drinking seconds since the
+--   last fight, g seconds since it, c casts { spell = count }, ct { seconds into the fight, spell },
+--   ms the damage meter's own length of the session, f flags (M no meter data, S meter values secret,
+--   p mana secret, u hit amounts secret, g mob identity secret, c a party member matched by class only,
+--   x ended by leaving the dungeon).
+-- Where the numbers come from: Forever's combat log is a restricted event (no addon reads it), so the
+-- heal and damage totals come from the client's own damage meter (C_DamageMeter, read once the fight
+-- is over: its values are secret in combat), the biggest hit from UNIT_COMBAT (when its amount is not
+-- secret), deaths from UNIT_DIED / PLAYER_DEAD and the meter. Party members are told apart by GUID,
+-- name or class IN MEMORY ONLY to sort them into roles; no name or GUID is ever stored.
+-- Cost: outside a dungeon group nothing is registered but a few roster/zone events; UNIT_COMBAT and the
+-- encounter events are registered only while the gate is open.
+Record.GROUP_MAX = 200        -- fights held for one export (more wait for an upload)
+Record.GROUP_MOBS = 30        -- mobs per fight
+Record.GROUP_SPELLS = 24      -- heal / absorb spells per fight
+Record.GROUP_SOURCES = 30     -- damage-taken rows per fight
+Record.GROUP_CASTS = 300      -- cast times per fight
+Record.GROUP_SAMPLES = 900    -- mana samples per fight (15 min)
+Record.GROUP_QUIET = 2        -- nobody in combat this long ends the fight
+Record.METER_DELAY = 1.5      -- the meter is read again this long after the fight
+Record.MELEE_SPELLS = { [1] = true, [6603] = true } -- how the meter names an auto attack
+local PARTY = { "party1", "party2", "party3", "party4" }
+local CLASSIFY = { normal = "n", elite = "e", rare = "r", rareelite = "re", worldboss = "b", trivial = "t", minus = "x" }
+local GROUP_EVENTS = { "UNIT_COMBAT", "ENCOUNTER_START", "ENCOUNTER_END" }
+
+local grp = { on = false, n = 0, drink = 0, tank = nil, enc = nil, inst = nil, statsAt = nil, stats = nil,
+	meterSeen = 0, full = false, registered = {} }
+local gf      -- the group fight in progress: { rec, at, quiet, sampleAt, guids, names, uc, deaths, tokens }
+local gclose  -- the fight that ended, waiting for the meter: { rec, ctx, readAt }
+local gframe  -- UNIT_COMBAT / ENCOUNTER_* while the gate is open
+
+local function groupHeld()
+	local r = data()
+	local n = 0
+	for _, b in ipairs(r and r.blocks or {}) do n = n + (type(b.g) == "table" and #b.g or 0) end
+	return n
+end
+Record.GroupHeld = groupHeld
+
+-- Recording on, in a dungeon instance, in a group of 2+.
+local function groupGate()
+	if not (Record.On() and sess) then return false, "recording off" end
+	local inside, kind = call(IsInInstance)
+	if not inside or kind ~= "party" then return false, "not in a dungeon" end
+	local n = num(call(GetNumGroupMembers)) or 0
+	if n < 2 and call(IsInGroup) ~= true then return false, "not in a group" end
+	return true
+end
+Record.GroupGate = groupGate
+
+-- player + party1-4: { token, cls, lvl, role (assigned), key } with key = GUID, else name, else the token
+-- (kept in memory for this fight only)
+local function roster()
+	local out = {}
+	for _, token in ipairs({ "player", PARTY[1], PARTY[2], PARTY[3], PARTY[4] }) do
+		if token == "player" or call(UnitExists, token) == true then
+			local _, cls = call(UnitClass, token)
+			local guid = str(call(UnitGUID, token))
+			local name = str(call(UnitName, token))
+			out[#out + 1] = { token = token, cls = str(cls) or "", lvl = num(call(UnitLevel, token)) or 0,
+				role = str(call(UnitGroupRolesAssigned, token)), guid = guid, name = name, key = guid or name or token }
+		end
+	end
+	return out
+end
+
+local function inCombatAny(members)
+	if inCombat() then return true end
+	for _, m in ipairs(members) do
+		if m.token ~= "player" and call(UnitAffectingCombat, m.token) == true then return true end
+	end
+	return false
+end
+
+local function readStats()
+	local _, spi = call(UnitStat, "player", 5)
+	local _, int = call(UnitStat, "player", 4)
+	local mr, mrc = call(GetManaRegen)
+	return { round(num(call(GetSpellBonusHealing))) or 0, round(num(spi)) or 0, round(num(int)) or 0,
+		round(num(mr), 2) or 0, round(num(mrc), 2) or 0, round(num(call(UnitPowerMax, "player", 0))) or 0 }
+end
+
+local function setRegistered(on)
+	if not gframe then
+		gframe = CreateFrame("Frame")
+		gframe:SetScript("OnEvent", function(_, event, ...)
+			local okh, err = pcall(Record.GroupEvent, event, ...)
+			if not okh then ns.ReportOnce("record:group", err) end
+		end)
+		Record._gframe = gframe
+	end
+	for _, e in ipairs(GROUP_EVENTS) do
+		if on and not grp.registered[e] then
+			pcall(gframe.RegisterEvent, gframe, e)
+			grp.registered[e] = true
+		elseif not on and grp.registered[e] then
+			pcall(gframe.UnregisterEvent, gframe, e)
+			grp.registered[e] = nil
+		end
+	end
+end
+function Record.GroupRegistered() return grp.registered end
+
+local endGroupFight, finishMeter
+
+-- The gate opened or closed (zone, roster, the recording option): register or drop the fight events;
+-- a new dungeon visit starts the pull count again.
+groupCheck = function()
+	local on = groupGate() == true
+	if on and not grp.on then
+		local _, _, diff, _, _, _, _, inst = call(GetInstanceInfo)
+		inst, diff = num(inst) or 0, num(diff) or 0
+		if grp.inst ~= inst then
+			grp.n, grp.drink, grp.tank, grp.lastEnd, grp.enc = 0, 0, nil, nil, nil
+		end
+		grp.inst, grp.diff = inst, diff
+		-- meter sessions from before the gate opened are never a fight of ours
+		local DM = C_DamageMeter
+		local list = DM and DM.GetAvailableCombatSessions and call(DM.GetAvailableCombatSessions)
+		for _, s in ipairs(type(list) == "table" and list or {}) do
+			local sid = type(s) == "table" and num(s.sessionID)
+			if sid and sid > grp.meterSeen then grp.meterSeen = sid end
+		end
+	elseif not on and grp.on then
+		if gf then endGroupFight("x") end
+		if gclose then finishMeter() end
+	end
+	grp.on = on
+	setRegistered(on)
+	return on
+end
+
+-- Mobs fighting the group: the target, focus, boss frames, party targets and nameplates in combat.
+local function groupScan()
+	local f = gf
+	if not f then return end
+	local function look(token)
+		if #f.rec.m >= Record.GROUP_MOBS then return end
+		if call(UnitExists, token) ~= true or call(UnitCanAttack, "player", token) ~= true then return end
+		if call(UnitAffectingCombat, token) ~= true and not token:match("^boss") then return end
+		local guid = str(call(UnitGUID, token))
+		local npc = Record.NpcId(guid)
+		if not npc then
+			f.rec.f = f.rec.f:find("g", 1, true) and f.rec.f or (f.rec.f .. "g")
+			return
+		end
+		if f.guids[guid] then return end
+		f.guids[guid] = true
+		local lvl = num(call(UnitLevel, token)) or 0
+		local cls = CLASSIFY[str(call(UnitClassification, token)) or ""] or ""
+		if token:match("^boss") or lvl < 0 then cls = "b" end
+		if cls == "b" then f.rec.b = 1 end
+		f.rec.m[#f.rec.m + 1] = { npc, lvl, cls }
+		local name = str(call(UnitName, token))
+		if name then f.names[name] = npc end -- for the meter's damage sources; memory only
+	end
+	for _, token in ipairs({ "target", "focus", "boss1", "boss2", "boss3", "boss4", "boss5",
+		"party1target", "party2target", "party3target", "party4target" }) do look(token) end
+	for _, token in ipairs(plates) do look(token) end
+end
+
+local function sampleMana(f, t)
+	f.sampleAt = t
+	local v = num(call(UnitPower, "player", 0))
+	if v then
+		local c = f.rec.mp.c
+		if #c < Record.GROUP_SAMPLES then c[#c + 1] = round(v) end
+		if f.rec.mp.a == -1 then f.rec.mp.a = round(v) end
+		f.rec.mp.z = round(v)
+	elseif not f.rec.f:find("p", 1, true) then
+		f.rec.f = f.rec.f .. "p"
+	end
+end
+
+local function drinkKind(m) return m and m.rec and (m.rec.k == "d" or m.rec.k == "b") end
+
+startGroupFight = function()
+	if gf or not grp.on then return end
+	if gclose then finishMeter() end
+	local t = now()
+	if grp.stats == nil or not inCombat() then grp.stats, grp.statsAt = readStats(), t end
+	local dk = grp.drink
+	if drinkKind(meal) then
+		local part = t - meal.at - (meal.counted or 0)
+		if part > 0 then dk, meal.counted = dk + part, (meal.counted or 0) + part end
+	end
+	grp.drink = 0
+	grp.n = grp.n + 1
+	local rec = { t = rel(t), d = 0, i = grp.inst or 0, df = grp.diff or 0, n = grp.n, e = grp.enc or 0, es = -1,
+		b = 0, m = {}, p = {}, rs = "", h = {}, ht = 0, ab = {}, dt = {}, ds = {}, x = { s = 0, t = 0, o = 0 },
+		mp = { a = -1, z = -1, mx = round(num(call(UnitPowerMax, "player", 0))) or 0, c = {} }, st = { unpack(grp.stats) },
+		dk = round(dk, 1), g = grp.lastEnd and round(rel(t) - grp.lastEnd, 1) or -1, c = {}, ct = {}, ms = 0, f = "" }
+	gf = { rec = rec, at = t, guids = {}, names = {}, uc = {}, deaths = {}, members = roster() }
+	sampleMana(gf, t)
+	groupScan()
+end
+
+-- The meter's view of the session that just ended (all values secret while the player is in combat).
+local function meterTypes()
+	local E = Enum and Enum.DamageMeterType or {}
+	return E.HealingDone or 2, E.Absorbs or 4, E.DamageTaken or 7, E.Deaths or 9
+end
+
+-- A party member of the meter's source / detail entry: GUID, else name, else the only member of
+-- that class (flag c); the local player by isLocalPlayer. -> member | nil
+local function memberOf(ctx, guid, name, cls, isLocal)
+	if isLocal == true then
+		for _, m in ipairs(ctx.members) do if m.token == "player" then return m end end
+	end
+	guid, name, cls = str(guid), str(name), str(cls)
+	local short = name and name:match("^([^%-]+)%-") -- "Name-Realm" (another realm): UnitName gives the name alone
+	for _, m in ipairs(ctx.members) do
+		if (guid and m.guid == guid) or (name and (m.name == name or m.name == short)) then return m end
+	end
+	if cls then
+		local hit, count = nil, 0
+		for _, m in ipairs(ctx.members) do if m.cls == cls then hit, count = m, count + 1 end end
+		if count == 1 then
+			ctx.byClass = true
+			return hit
+		end
+	end
+	return nil
+end
+
+local function details(d)
+	if type(d) ~= "table" then return {} end
+	if d.amount ~= nil or d.unitName ~= nil then return { d } end
+	return d
+end
+
+local function roleOf(ctx, m)
+	if not m then return nil end
+	if m.token == "player" then return "s" end
+	return m.key == ctx.tankKey and "t" or "o"
+end
+
+-- Decide the tank: an assigned TANK (not the player), else the member who took the most melee damage
+-- (meter, else UNIT_COMBAT physical hits), else the tank of an earlier fight in this visit.
+local function pickTank(ctx, taken)
+	for _, m in ipairs(ctx.members) do
+		if m.token ~= "player" and m.role == "TANK" then
+			ctx.tankKey, ctx.rs = m.key, "a"
+			grp.tank = m.key
+			return
+		end
+	end
+	local best, most = nil, 0
+	for _, m in ipairs(ctx.members) do
+		if m.token ~= "player" then
+			local a = taken[m.key]
+			local v = a and (a.melee > 0 and a.melee or a.total) or 0
+			if v > most then best, most = m, v end
+		end
+	end
+	if best then
+		ctx.tankKey, ctx.rs = best.key, "d"
+		grp.tank = best.key
+		return
+	end
+	if grp.tank then
+		for _, m in ipairs(ctx.members) do
+			if m.key == grp.tank then
+				ctx.tankKey, ctx.rs = m.key, "c"
+				return
+			end
+		end
+	end
+	ctx.rs = ""
+end
+
+-- Fill the fight record from the meter (when readable) and the live counts; again after METER_DELAY.
+local function fillRecord(rec, ctx)
+	local DM = C_DamageMeter
+	local HEAL, ABS, TAKEN, DEATHS = meterTypes()
+	local id
+	local secret = false
+	if DM and DM.GetAvailableCombatSessions and DM.GetCombatSessionFromID and not inCombat() then
+		local list = call(DM.GetAvailableCombatSessions)
+		for _, s in ipairs(type(list) == "table" and list or {}) do
+			local sid = type(s) == "table" and num(s.sessionID)
+			if sid and sid > (ctx.meterBase or 0) and (not id or sid > id) then id, rec.ms = sid, round(num(s.durationSeconds), 1) or 0 end
+		end
+	end
+	-- damage taken per member key: { total, melee, spell, rows = { [npc:spell] = amount } }
+	local taken = {}
+	local function acc(m)
+		local a = taken[m.key]
+		if not a then
+			a = { total = 0, melee = 0, spell = 0, rows = {} }
+			taken[m.key] = a
+		end
+		return a
+	end
+	local meterDeaths = {}
+	local heal, absorb, healTotal = {}, {}, 0
+	if id then
+		local s = call(DM.GetCombatSessionFromID, id, TAKEN)
+		for _, src in ipairs(type(s) == "table" and type(s.combatSources) == "table" and s.combatSources or {}) do
+			local m = memberOf(ctx, src.sourceGUID, src.name, src.classFilename, ok(src.isLocalPlayer))
+			local total = num(src.totalAmount)
+			if src.totalAmount ~= nil and total == nil then secret = true end
+			if m and total then
+				local a = acc(m)
+				a.total = a.total + total
+				local guid = str(src.sourceGUID) or (m.token == "player" and str(call(UnitGUID, "player"))) or m.guid
+				local detail = guid and call(DM.GetCombatSessionSourceFromID, id, TAKEN, guid)
+				for _, sp in ipairs(type(detail) == "table" and type(detail.combatSpells) == "table" and detail.combatSpells or {}) do
+					local spell, amount = num(sp.spellID) or 0, num(sp.totalAmount)
+					if amount then
+						if Record.MELEE_SPELLS[spell] then a.melee = a.melee + amount else a.spell = a.spell + amount end
+						local npc = ctx.names[str(sp.creatureName) or ""] or 0
+						local k = npc .. ":" .. spell
+						a.rows[k] = (a.rows[k] or 0) + amount
+					end
+				end
+			end
+		end
+		local d = call(DM.GetCombatSessionFromID, id, DEATHS)
+		for _, src in ipairs(type(d) == "table" and type(d.combatSources) == "table" and d.combatSources or {}) do
+			local m = memberOf(ctx, src.sourceGUID, src.name, src.classFilename, ok(src.isLocalPlayer))
+			if m then meterDeaths[m.key] = (meterDeaths[m.key] or 0) + 1 end
+		end
+	end
+	-- UNIT_COMBAT physical hits stand in for the melee split when the meter gave nothing
+	local fromMeter = next(taken) ~= nil
+	if not fromMeter then
+		for _, m in ipairs(ctx.members) do
+			local u = ctx.uc[m.token]
+			if u and u.sum > 0 then
+				local a = acc(m)
+				a.total, a.melee, a.spell = u.sum, u.phys, u.sum - u.phys
+			end
+		end
+	end
+	pickTank(ctx, taken)
+	-- heals: the player's source, per spell, split by target role
+	if id then
+		local s = call(DM.GetCombatSessionFromID, id, HEAL)
+		local mine
+		for _, src in ipairs(type(s) == "table" and type(s.combatSources) == "table" and s.combatSources or {}) do
+			if ok(src.isLocalPlayer) == true then mine = src break end
+		end
+		if mine then
+			healTotal = num(mine.totalAmount) or 0
+			if mine.totalAmount ~= nil and num(mine.totalAmount) == nil then secret = true end
+			local guid = str(mine.sourceGUID) or str(call(UnitGUID, "player"))
+			local detail = guid and call(DM.GetCombatSessionSourceFromID, id, HEAL, guid)
+			for _, sp in ipairs(type(detail) == "table" and type(detail.combatSpells) == "table" and detail.combatSpells or {}) do
+				local spell, amount = num(sp.spellID), num(sp.totalAmount)
+				if spell and amount and #heal < Record.GROUP_SPELLS then
+					local row = { spell, round(amount), round(num(sp.overkillAmount)) or -1, 0, 0, 0, 0 }
+					local placed = 0
+					for _, dt in ipairs(details(sp.combatSpellDetails)) do
+						local a = type(dt) == "table" and num(dt.amount)
+						if a then
+							local role = roleOf(ctx, memberOf(ctx, nil, dt.unitName, dt.unitClassFilename, nil))
+							local col = role == "s" and 4 or role == "t" and 5 or role == "o" and 6 or 7
+							row[col] = row[col] + round(a)
+							placed = placed + a
+						end
+					end
+					if placed < amount then row[7] = row[7] + round(amount - placed) end
+					heal[#heal + 1] = row
+				end
+			end
+		end
+		local a = call(DM.GetCombatSessionFromID, id, ABS)
+		for _, src in ipairs(type(a) == "table" and type(a.combatSources) == "table" and a.combatSources or {}) do
+			if ok(src.isLocalPlayer) == true then
+				local guid = str(src.sourceGUID) or str(call(UnitGUID, "player"))
+				local detail = guid and call(DM.GetCombatSessionSourceFromID, id, ABS, guid)
+				for _, sp in ipairs(type(detail) == "table" and type(detail.combatSpells) == "table" and detail.combatSpells or {}) do
+					local spell, amount = num(sp.spellID), num(sp.totalAmount)
+					if spell and amount and #absorb < Record.GROUP_SPELLS then absorb[#absorb + 1] = { spell, round(amount) } end
+				end
+			end
+		end
+	end
+	-- per role
+	local dt, rows, x = {}, {}, { s = 0, t = 0, o = 0 }
+	for _, m in ipairs(ctx.members) do
+		local role = roleOf(ctx, m)
+		local a, u = taken[m.key], ctx.uc[m.token]
+		if a or u then
+			local r = dt[role] or { 0, 0, 0, -1, 0 }
+			dt[role] = r
+			if a then r[1], r[2], r[3] = r[1] + round(a.total), r[2] + round(a.melee), r[3] + round(a.spell) end
+			if u then
+				if u.max and u.max > r[4] then r[4] = round(u.max) end
+				r[5] = r[5] + u.n
+			end
+			for k, v in pairs(a and a.rows or {}) do
+				local npc, spell = k:match("^(%d+):(%d+)$")
+				local rk = role .. ":" .. k
+				rows[rk] = rows[rk] or { role, tonumber(npc), tonumber(spell), 0 }
+				rows[rk][4] = rows[rk][4] + v
+			end
+		end
+		local dead = math.max(ctx.deaths[m.token] or 0, meterDeaths[m.key] or 0)
+		if dead > 0 then x[role] = x[role] + dead end
+	end
+	local ds = {}
+	for _, r in pairs(rows) do r[4] = round(r[4]) ds[#ds + 1] = r end
+	table.sort(ds, function(a, b) if a[4] ~= b[4] then return a[4] > b[4] end return a[1] .. a[2] .. ":" .. a[3] < b[1] .. b[2] .. ":" .. b[3] end)
+	for i = #ds, Record.GROUP_SOURCES + 1, -1 do ds[i] = nil end
+	-- the party with roles (class + level only)
+	local p = {}
+	for _, m in ipairs(ctx.members) do p[#p + 1] = roleOf(ctx, m) .. ":" .. (m.cls ~= "" and m.cls or "UNKNOWN") .. ":" .. m.lvl end
+	rec.p, rec.rs, rec.dt, rec.ds, rec.x = p, ctx.rs or "", dt, ds, x
+	if id then
+		rec.h, rec.ht, rec.ab = heal, round(healTotal), absorb
+		ctx.meterId = id
+	end
+	local flags = rec.f:gsub("[MSc]", "")
+	if not id then flags = flags .. "M" elseif secret then flags = flags .. "S" end
+	if ctx.byClass then flags = flags .. "c" end
+	rec.f = flags
+end
+
+-- Gate closed / the meter read done: forget the fight's names and GUIDs.
+finishMeter = function()
+	local c = gclose
+	gclose = nil
+	if not c then return end
+	local okf, err = pcall(fillRecord, c.rec, c.ctx)
+	if not okf then ns.ReportOnce("record:meter", err) end
+	if c.ctx.meterId and c.ctx.meterId > grp.meterSeen then grp.meterSeen = c.ctx.meterId end
+end
+
+endGroupFight = function(why)
+	local f = gf
+	if not f then return end
+	gf = nil
+	local t = f.quiet or now()
+	local rec = f.rec
+	rec.d = round(t - f.at, 1)
+	sampleMana(f, now())
+	if why == "x" then rec.f = rec.f .. "x" end
+	grp.lastEnd = rel(t)
+	local ctx = { members = f.members, names = f.names, uc = f.uc, deaths = f.deaths, meterBase = grp.meterSeen }
+	local okf, err = pcall(fillRecord, rec, ctx)
+	if not okf then ns.ReportOnce("record:meter", err) end
+	if ctx.meterId and ctx.meterId > grp.meterSeen then grp.meterSeen = ctx.meterId end
+	local held = groupHeld()
+	if held < Record.GROUP_MAX then grp.full = false end
+	if held >= Record.GROUP_MAX then
+		if not grp.full then
+			grp.full = true
+			ns.Print(format("Dungeon recording is full (%d fights): upload with /psg export to record more.", Record.GROUP_MAX))
+		end
+		return
+	end
+	if add("g", rec) then gclose = { rec = rec, ctx = ctx, readAt = now() + Record.METER_DELAY } end
+end
+
+-- Every tick while the gate is open: fight start/end, mobs, mana each second, the sheet out of combat.
+groupTick = function(t)
+	if not grp.on then return end
+	if not gf then
+		local fighting = inCombat()
+		for _, token in ipairs(PARTY) do
+			if fighting then break end
+			fighting = call(UnitAffectingCombat, token) == true
+		end
+		if fighting then
+			startGroupFight()
+		elseif not grp.statsAt or t - grp.statsAt >= 5 then
+			grp.stats, grp.statsAt = readStats(), t
+		end
+	else
+		if inCombatAny(gf.members) then
+			gf.quiet = nil
+		elseif not gf.quiet then
+			gf.quiet = t
+		end
+		if gf and gf.quiet and t - gf.quiet >= Record.GROUP_QUIET then
+			endGroupFight()
+		else
+			groupScan()
+			if t - (gf.sampleAt or 0) >= 1 then sampleMana(gf, t) end
+		end
+	end
+	if gclose and t >= gclose.readAt and not inCombat() then finishMeter() end
+end
+
+-- UNIT_COMBAT / ENCOUNTER_* (registered only while the gate is open).
+function Record.GroupEvent(event, a1, a2, a3, a4, a5)
+	if event == "UNIT_COMBAT" then
+		local f = gf
+		if not f or (a1 ~= "player" and not tostring(a1):match("^party%d$")) or a2 ~= "WOUND" then return end
+		local u = f.uc[a1]
+		if not u then
+			u = { n = 0, sum = 0, phys = 0 }
+			f.uc[a1] = u
+		end
+		u.n = u.n + 1
+		local amount = num(a4)
+		if not amount then
+			if not f.rec.f:find("u", 1, true) then f.rec.f = f.rec.f .. "u" end
+			return
+		end
+		u.sum = u.sum + amount
+		if num(a5) == 1 then u.phys = u.phys + amount end
+		if not u.max or amount > u.max then u.max = amount end
+	elseif event == "ENCOUNTER_START" then
+		grp.enc = num(a1)
+		if gf then gf.rec.e, gf.rec.es = grp.enc or 0, -1 end
+	elseif event == "ENCOUNTER_END" then
+		local id, success = num(a1), num(a5)
+		local rec = (gf and gf.rec) or (gclose and gclose.rec)
+		if rec and id and (rec.e == id or rec.e == 0) then
+			rec.e, rec.es = id, success == 1 and 1 or 0
+			rec.b = 1
+		end
+		grp.enc = nil
+	end
+end
+
+-- A party member died (UNIT_DIED with a readable GUID) or the player (PLAYER_DEAD).
+groupDied = function(guid)
+	local f = gf
+	if not f then return end
+	guid = str(guid)
+	if not guid then return end
+	for _, m in ipairs(f.members) do
+		if m.guid == guid and m.token ~= "player" then f.deaths[m.token] = (f.deaths[m.token] or 0) + 1 return end
+	end
+end
+groupPlayerDead = function()
+	if gf then gf.deaths.player = (gf.deaths.player or 0) + 1 end
+end
+groupCast = function(spell)
+	local f = gf
+	if not f then return end
+	f.rec.c[spell] = (f.rec.c[spell] or 0) + 1
+	if #f.rec.ct < Record.GROUP_CASTS then f.rec.ct[#f.rec.ct + 1] = { round(now() - f.at, 1), spell } end
+end
+groupMealEnded = function(m)
+	if not (grp.on and drinkKind(m)) then return end
+	local d = (m.rec.d or 0) - (m.counted or 0)
+	if d > 0 then grp.drink = grp.drink + d end
+end
+
+function Record.GroupOn() return grp.on end
+function Record.GroupCheck() return groupCheck() end
+-- Logout / tests: close the fight in progress and read the meter now.
+function Record.GroupFlush()
+	if gf then endGroupFight() end
+	if gclose then finishMeter() end
+end
+
+-- For /psg group: the gate, what is held and what the last fight could read.
+function Record.GroupStatus()
+	local on, why = groupGate()
+	local last
+	local r = data()
+	for _, b in ipairs(r and r.blocks or {}) do
+		if type(b.g) == "table" and #b.g > 0 then last = b.g[#b.g] end
+	end
+	return on, why, groupHeld(), last
+end
+
 -- Snapshots and the clock ----------------------------------------------------------------------------
 local function writeSheet()
 	charDue = nil
@@ -704,6 +1297,8 @@ function Record.Tick()
 		xpRead() -- keeps the last readable values for the logout mark
 	end
 	if charDue and t >= charDue and not inCombat() then writeSheet() end
+	groupCheck()
+	groupTick(t)
 	local r = data()
 	if r then
 		r.live = r.live or {}
@@ -727,6 +1322,7 @@ ns.RegisterEvent("PLAYER_LOGOUT", function()
 	if not sess then return end
 	if pull then endPull() end
 	finishClosing()
+	Record.GroupFlush()
 	if meal then
 		meal.rec.d = round(now() - meal.at, 1)
 		meal = nil
@@ -738,13 +1334,18 @@ ns.RegisterEvent("PLAYER_LOGOUT", function()
 	local r = data()
 	if r then r.live = nil end
 end)
-ns.RegisterEvent("PLAYER_REGEN_DISABLED", function() activity() startPull() end)
+ns.RegisterEvent("PLAYER_REGEN_DISABLED", function() activity() startPull() if groupCheck() then startGroupFight() end end)
 ns.RegisterEvent("PLAYER_REGEN_ENABLED", function()
 	activity()
 	endPull()
 	if charDue and Record.On() and charDue <= now() then charDue = now() + 1 end
 end)
-ns.RegisterEvent("UNIT_DIED", function(guid) onDied(guid, false) end)
+ns.RegisterEvent("UNIT_DIED", function(guid) onDied(guid, false) groupDied(guid) end)
+-- the dungeon gate: zone and roster changes, the recording option
+for _, e in ipairs({ "GROUP_ROSTER_UPDATE", "ZONE_CHANGED_NEW_AREA", "PLAYER_ENTERING_WORLD" }) do
+	ns.RegisterEvent(e, function() if sess then groupCheck() end end)
+end
+ns.On("OPTIONS", function(k) if k == "record" and sess then groupCheck() end end)
 ns.RegisterEvent("PARTY_KILL", function(attacker, target)
 	local a = str(attacker)
 	local me, pet = str(call(UnitGUID, "player")), str(call(UnitGUID, "pet"))
@@ -776,13 +1377,13 @@ for _, e in ipairs({ "PLAYER_STARTED_MOVING", "PLAYER_STOPPED_MOVING", "PLAYER_T
 	ns.RegisterEvent(e, activity)
 end
 
--- The clock: every 5 s, every 0.5 s in a pull (the mobs engaged).
+-- The clock: every 5 s, every 0.5 s in a pull (the mobs engaged), every second in a dungeon group.
 do
 	local f = CreateFrame("Frame")
 	local acc = 0
 	f:SetScript("OnUpdate", function(_, elapsed)
 		acc = acc + (elapsed or 0)
-		if acc < (pull and 0.5 or 5) then return end
+		if acc < (pull and 0.5 or Record.GroupOn() and 1 or 5) then return end
 		acc = 0
 		local okt, err = pcall(Record.Tick)
 		if not okt then ns.ReportOnce("record:tick", err) end

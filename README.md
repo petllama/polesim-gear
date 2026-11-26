@@ -1,6 +1,6 @@
 # PoleSim Gear
 
-Version 0.7.13. WoW: Forever addon: PoleSim's simulated, level-banded gear weights in game. Item scores with a
+Version 0.7.14. WoW: Forever addon: PoleSim's simulated, level-banded gear weights in game. Item scores with a
 "how?" breakdown, upgrade arrows, the best quest reward, and a gear planner window with where to get
 each upgrade. In testing.
 
@@ -230,10 +230,21 @@ PoleSim" changes the answer any time. Data is kept per character in your SavedVa
   recorded: item id, random suffix id, the stat, PoleSim's value and the game's value (the client build is
   in the export already). Each difference once per character (again only if the game's value changes), at
   most 50 per export; items the game hasn't loaded yet wait for the next sheet. It lets the website spot data
-  bugs (a hotfix PoleSim's table lacks) from many players at once.
+  bugs (a hotfix PoleSim's table lacks) from many players at once;
+- dungeon group fights (0.7.14), only while you are in a party inside a dungeon: per fight the dungeon and
+  difficulty ids, the pull number in this visit, a boss encounter's id and whether it was won, the mobs
+  (creature id, level, elite/rare/boss rank), the party's classes and levels by role (you, tank, others),
+  your healing per spell split by target role (overheal when the game gives it) and your shields, the
+  damage the party took per role (melee or spell, by mob id and spell id, the biggest hit) and deaths per
+  role, your own mana every second (only when the game lets addons read it), your +healing, Spirit,
+  Intellect and mana regen at the start, drinking time since the last fight and your casts with their
+  time into the fight. Forever's combat log is closed to addons, so heal and damage totals come from the
+  game's own damage meter, read right after each fight. At most 200 fights per export; `/psg group` shows
+  whether it is recording where you are and what the last fight could read. Party members are told apart
+  in memory only (to sort them into roles); no name or GUID is stored.
 
 **Never recorded:** names (yours, your realm, guild, party, other players or mobs), chat, gold, map
-position, health or mana values.
+position, health values; mana only your own, in dungeon group fights.
 
 **Uploading:** every 2-6 hours of active recorded play (your choice: Settings > "Ask me to upload
 every" 2 h / 4 h / 6 h, default 2 h, counted from your last upload; a new choice applies at once), at a
@@ -273,6 +284,8 @@ needed the first time (not just `/reload`).
 - `/psg export gear`: your gear as one line for the website's Armory (Your gear on the website).
 - `/psg export`: the recorder's copy-paste export (Recording for PoleSim); `/psg record`: recording on/off,
   hours recorded and since the last upload.
+- `/psg group`: whether dungeon group recording is on where you are (in a party inside a dungeon) and what
+  the last dungeon fight could read (healing, the tank's damage taken, mana or "secret").
 
 ## Development
 

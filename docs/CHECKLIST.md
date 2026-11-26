@@ -1,4 +1,14 @@
-# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution/Protection paladin) — PoleSim Gear 0.7.13
+# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution/Protection paladin) — PoleSim Gear 0.7.14 (section W in a dungeon group as a healer)
+
+**0.7.14 over 0.7.13:** with recording on, the recorder also records dungeon group fights, but only
+while you are in a party inside a dungeon (nothing changes anywhere else): each pull's mobs (id, level,
+elite/boss), boss encounters, the party's classes and levels by role (you, tank, others: no names), your
+healing per spell and per role, the damage the party took per role (melee/spell, by mob and spell, the
+biggest hit), deaths per role, your mana each second if the game lets addons read it, your healing stats
+at the pull and drinking time between pulls. Forever's combat log is closed to addons, so heal and
+damage totals come from the game's own damage meter, read right after each fight. `/psg group` says
+whether it is recording where you stand and what the last fight could read. At most 200 fights per
+export. The upload page lists the new data. No new files: `/reload` is enough. Check: W1-W7.
 
 **0.7.13 over 0.7.12:** Shift-click a quest-sourced item in the Gear Plan or Slot Upgrades, or a quest
 (or one of its rewards) in Sources > Quests, to open that quest in Polestar's Lookup (its sources, chain
@@ -1146,6 +1156,44 @@ the chat line once again after ~10 s, no more. Put the real 0.7.9 TOC back after
 **V3. Off.** Untick the box: `/chatlist` no longer lists PoleSimGear, `/psg version` says "update
 notices: off". Tick it again: back in the channel within a few seconds.
 
+## W. Dungeon healing recording (0.7.14; `/reload` is enough)
+
+Before: recording on (`/psg record` says "Recording on"), a healer (priest), `/console scriptErrors 1`.
+Note whether the game's own damage meter is on (Options > Gameplay > Advanced: "Enable Damage Meter");
+W6 tries it off and on.
+
+**W1. Off outside.** In the open world (in a party or not) and solo inside a dungeon: `/psg group` says
+"Dungeon group recording: off (not in a dungeon)" / "off (not in a group)".
+
+**W2. On inside.** In a party inside the dungeon: `/psg group` says "ON here; 0 of 200 fights held" (the
+number counts fights not uploaded yet). Probe once, out of combat:
+`/run print(C_DamageMeter and C_DamageMeter.IsDamageMeterAvailable(),C_CVar.GetCVar("damageMeterEnabled"),issecretvalue(UnitPower("player",0)))`
+prints true/false + a reason, the meter setting (1/0), and whether your mana is secret (true = secret).
+
+**W3. A trash pull.** Heal through one pull, wait until everyone is out of combat plus 3 s, then
+`/psg group`: "Last fight: pull 1, N s, M mobs, healing X (S spells), tank took Y, mana A -> B, tank by
+role|damage". Screenshot it. Your heals per spell (spell, amount, overheal, to you, tank, others, unknown):
+`/run local _,_,_,g=PoleSimGear.Record.GroupStatus() for _,h in ipairs(g and g.h or {}) do print(C_Spell.GetSpellName(h[1]),unpack(h)) end`
+Compare the total with the damage meter's healing for that fight (Healing Done, current session).
+
+**W4. Damage taken and deaths.** After a pull where someone died (or any pull):
+`/run local _,_,_,g=PoleSimGear.Record.GroupStatus() for r,v in pairs(g and g.dt or {}) do print(r,unpack(v)) end print(g and g.x.s,g.x.t,g.x.o)`
+prints per role (s you, t tank, o others): total, melee, spell, biggest hit (-1 = unknown), hits seen; then
+deaths you/tank/others. Compare the tank's total with the meter's Damage Taken.
+
+**W5. Mobs, boss, mana.** After a boss:
+`/run local _,_,_,g=PoleSimGear.Record.GroupStatus() for _,m in ipairs(g and g.m or {}) do print(unpack(m)) end print(g and g.e,g and g.es,g and g.b)`
+prints each mob (creature id, level, class: e elite, b boss) and the encounter id, 1 if won, 1 for boss.
+`/run local _,_,_,g=PoleSimGear.Record.GroupStatus() print(g and #g.mp.c,g and g.mp.a,g and g.mp.z,g and g.f)`
+prints mana samples, start, end and the flags (p = mana secret, M = no meter data, S = meter secret,
+u = hit sizes secret). Tell me the flags you see.
+
+**W6. The meter setting.** If W3 shows "no damage meter data": turn the game's damage meter on (setting in
+the Before line), `/reload`, one more pull, `/psg group` again: tell me whether healing now shows.
+
+**W7. Leaving.** Hearth or walk out mid-run: `/psg group` says off again; no Lua errors anywhere in the run.
+Then `/psg export` as usual (R8): the upload works and the confirmation code clears it.
+
 ## Probe results (B1, fill in)
 
 | Question | Answer |
@@ -1256,6 +1304,13 @@ notices: off". Tick it again: back in the channel within a few seconds.
   Lookup" instead of opening it). Only primary professions count for crafted items (Cooking, First Aid,
   Fishing never hide anything); a client that reports professions only by name is matched on English
   names (other languages: nothing is hidden).
+
+- Dungeon recording (0.7.14): Forever closes the combat log to addons, so heal and damage numbers are the
+  game's damage meter's per-fight totals (no single heals, no crits); overheal only if the meter gives it
+  (else -1); the biggest hit only when the game shows hit sizes to addons (flag u otherwise); your mana
+  only if it is not secret (flag p; Forever kept it secret so far). Without an assigned tank role the tank
+  is the party member who took the most melee damage that fight. Party members who share a class and
+  whose names/GUIDs are secret cannot be told apart (flag c avoids guessing).
 
 - Update notices (0.7.9) work only from 0.7.9 on (older versions neither send nor listen) and only while
   someone on a newer version is online. The hidden channel takes one of your chat channel slots (none

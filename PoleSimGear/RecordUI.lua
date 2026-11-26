@@ -90,8 +90,9 @@ UI.OPTIN_TEXT = {
 		.. "rest, regen) can be checked against real play. It stays in your SavedVariables; every 2-6 hours of play (your choice) it "
 		.. "offers a copy-paste export for " .. UI.URL .. ".",
 	"Recorded: level, class, race, character stats, regen, worn item ids, talents, item stats that differ from PoleSim's data; each fight's length, the mobs' "
-		.. "type and level, kills and XP, your spell casts; meals, deaths, XP and rested, pauses.",
-	"Never recorded: names (yours, realm, guild, party or mobs), chat, gold, map position, health or mana.",
+		.. "type and level, kills and XP, your spell casts; meals, deaths, XP and rested, pauses. In dungeon groups: your healing, "
+		.. "the party's damage taken and deaths by role (class and level only), your mana if the game allows.",
+	"Never recorded: names (yours, realm, guild, party or mobs), chat, gold, map position, health.",
 	"You can turn it off any time in Settings.",
 }
 local function answer(yes)
@@ -296,6 +297,30 @@ ns.Slash("record", function()
 	local status = ns.Record.Status()
 	ns.Print(format("Recording %s; %s; %.1f h since the last upload.", ns.Record.On() and "on" or "off", status,
 		r and r.since / 3600 or 0))
+end)
+
+-- /psg group: is the dungeon recorder on here, and what could the last fight read? (in-game check)
+UI.GROUP_FLAGS = { M = "no damage meter data", S = "meter values secret", p = "mana secret", u = "hit sizes secret",
+	g = "some mob ids secret", c = "a party member matched by class", x = "ended by leaving" }
+function UI.GroupText()
+	local on, why, held, last = ns.Record.GroupStatus()
+	local out = { format("Dungeon group recording: %s; %d of %d fights held.", on and "ON here" or ("off (" .. (why or "?") .. ")"),
+		held, ns.Record.GROUP_MAX) }
+	if last then
+		local flags = {}
+		for c in (last.f or ""):gmatch(".") do flags[#flags + 1] = UI.GROUP_FLAGS[c] or c end
+		local tank = type(last.dt) == "table" and last.dt.t
+		out[#out + 1] = format("Last fight: pull %d, %.0f s, %d mobs, healing %d (%d spells), tank took %s, mana %s -> %s, tank by %s%s.",
+			last.n or 0, last.d or 0, type(last.m) == "table" and #last.m or 0, last.ht or 0, type(last.h) == "table" and #last.h or 0,
+			tank and tostring(tank[1]) or "?", (last.mp and last.mp.a or -1) >= 0 and tostring(last.mp.a) or "secret",
+			(last.mp and last.mp.z or -1) >= 0 and tostring(last.mp.z) or "secret",
+			({ a = "role", d = "damage", c = "earlier fight" })[last.rs or ""] or "unknown",
+			#flags > 0 and ("; " .. table.concat(flags, ", ")) or "")
+	end
+	return out
+end
+ns.Slash("group", function()
+	for _, line in ipairs(UI.GroupText()) do ns.Print(line) end
 end)
 
 -- When to ask ----------------------------------------------------------------------------------------

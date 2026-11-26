@@ -167,12 +167,57 @@ local function list(t, fmt1)
 end
 local function n0(v) return v == nil and "" or numText(v) end
 
+Export.GROUPS_VERSION = 1
+local function nums(t)
+	local out = {}
+	for i, v in ipairs(type(t) == "table" and t or {}) do out[i] = type(v) == "number" and v or 0 end
+	return out
+end
+local function rows(t)
+	local out = {}
+	for _, r in ipairs(type(t) == "table" and t or {}) do out[#out + 1] = nums(r) end
+	return out
+end
+-- One stored group fight (Record kind g) as the export's object.
+--   mobs "npc:level:class;..."; party "role:CLASS:level;..." (s self, t tank, o other); heal rows
+--   { spell, amount, overheal (-1 unknown), to self, to tank, to others, to unknown }; absorb rows
+--   { spell, amount }; taken rows { role, total, melee, spell, biggest hit (-1 unknown), hits seen };
+--   takenBy rows { role, npc (0 unknown), spell, amount }; deaths { self, tank, others }; mana
+--   { start, end, max } (-1 unknown) + manaSamples (one a second); stats { +healing, spirit, intellect,
+--   regen/s, regen/s casting, max mana }; casts "spell:count;..."; castTimes { seconds in, spell }.
+function Export.GroupFight(sess, g)
+	local ids = {}
+	for id in pairs(type(g.c) == "table" and g.c or {}) do ids[#ids + 1] = id end
+	table.sort(ids)
+	local casts = {}
+	for _, id in ipairs(ids) do casts[#casts + 1] = numText(id) .. ":" .. numText(g.c[id]) end
+	local taken = {}
+	for _, role in ipairs({ "s", "t", "o" }) do
+		local v = type(g.dt) == "table" and g.dt[role]
+		if type(v) == "table" then taken[#taken + 1] = { role, v[1] or 0, v[2] or 0, v[3] or 0, v[4] or -1, v[5] or 0 } end
+	end
+	local by = {}
+	for _, r in ipairs(type(g.ds) == "table" and g.ds or {}) do by[#by + 1] = { tostring(r[1] or "o"), r[2] or 0, r[3] or 0, r[4] or 0 } end
+	local x = type(g.x) == "table" and g.x or {}
+	local mp = type(g.mp) == "table" and g.mp or {}
+	return { sess = sess, at = g.t or 0, dur = g.d or 0, inst = g.i or 0, diff = g.df or 0, pull = g.n or 0, enc = g.e or 0,
+		encOk = g.es or -1, boss = g.b or 0,
+		mobs = list(g.m, function(m) return n0(m[1]) .. ":" .. n0(m[2]) .. ":" .. tostring(m[3] or "") end),
+		party = concat(type(g.p) == "table" and g.p or {}, ";"), tankBy = g.rs or "",
+		heal = rows(g.h), healTotal = g.ht or 0, absorb = rows(g.ab), taken = taken, takenBy = by,
+		deaths = { x.s or 0, x.t or 0, x.o or 0 }, mana = { mp.a or -1, mp.z or -1, mp.mx or 0 }, manaSamples = nums(mp.c),
+		stats = nums(g.st), drink = g.dk or 0, gap = g.g or -1, casts = concat(casts, ";"), castTimes = rows(g.ct),
+		meter = g.ms or 0, flags = g.f or "" }
+end
+
 -- The summary of every stored block: one document (Export.Json gives its text).
 -- pulls: column names + one row per pull; mobList "npc:level:type:caster;..." (caster 1 mana, 0 not,
 -- -1 unknown), kills "npc:level:xp;...", casts "spell:count;..." (spells sorted), gap -1 for a
 -- session's first pull, flags a (after a meal) d (died) s (some reads were secret).
 -- drift (0.7.11): item data drift, one row per item + suffix (0 none) + stat key whose shipped value
 -- differs from the client's (at most Record.DRIFT_MAX rows; the client build is the document's).
+-- groups (0.7.14, its own version groups.v = 1; absent in older exports): dungeon group fights, at
+-- most Record.GROUP_MAX, one object each (Export.GroupFight; field meanings in Record.lua "Group fights").
 function Export.Summary()
 	local r = ns.Record.Data()
 	if not r or #r.blocks == 0 then return nil end
@@ -189,7 +234,8 @@ function Export.Summary()
 		deaths = { cols = { "sess", "at", "level", "mobs", "mobLevels", "fight", "deadSeconds", "toNextPull" }, rows = {} },
 		xp = { cols = { "sess", "at", "level", "xp", "xpMax", "rested", "why" }, rows = {} },
 		pauses = { cols = { "sess", "start", "end", "afk" }, rows = {} },
-		drift = { cols = { "sess", "at", "item", "suffix", "stat", "shipped", "live" }, rows = {} } }
+		drift = { cols = { "sess", "at", "item", "suffix", "stat", "shipped", "live" }, rows = {} },
+		groups = { v = Export.GROUPS_VERSION, fights = {} } }
 	local lo, hi, active = nil, nil, 0
 	local bySess, order = {}, {}
 	local function level(l)
@@ -246,6 +292,12 @@ function Export.Summary()
 		end
 		for _, k in ipairs(b.k) do
 			doc.pauses.rows[#doc.pauses.rows + 1] = { b.s, k.s, k.e, k.afk or 0 }
+		end
+		for _, g in ipairs(type(b.g) == "table" and b.g or {}) do -- none in blocks saved by 0.7.13 and older
+			if #doc.groups.fights < ns.Record.GROUP_MAX then
+				level(type(g.p) == "table" and tonumber((g.p[1] or ""):match(":(%d+)$")) or nil)
+				doc.groups.fights[#doc.groups.fights + 1] = Export.GroupFight(b.s, g)
+			end
 		end
 		for _, f in ipairs(type(b.f) == "table" and b.f or {}) do -- none in blocks saved by 0.7.10 and older
 			if #doc.drift.rows < ns.Record.DRIFT_MAX then
