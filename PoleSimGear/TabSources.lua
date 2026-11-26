@@ -115,6 +115,7 @@ function Tab.QuestTooltip(owner, q)
 	for _, t in ipairs(questTags(q)) do GameTooltip:AddLine(t, 1, 1, 1, true) end
 	if q.route then GameTooltip:AddLine(ns.Route.Line(q.route), 0.3, 0.8, 1, true) end
 	GameTooltip:AddLine("Its rewards that are upgrades are listed below.", 0.6, 0.6, 0.6, true)
+	if q.questId then GameTooltip:AddLine(ns.Lookup.HINT, 0.6, 0.6, 0.6, true) end
 	GameTooltip:Show()
 end
 
@@ -158,10 +159,26 @@ local function makeDetail(row)
 	row.way.tip = "Polestar's arrow to this place"
 	row:SetScript("OnEnter", function(self)
 		S.Hover(self, true)
-		if self.d and self.d.c then ns.Window.RowTooltip(self, self.d, "Set as plan: make it this slot's plan item.", placeLines(self.d)) end
+		if self.d and self.d.c then
+			ns.Window.RowTooltip(self, self.d, ns.Window.Hints("Set as plan: make it this slot's plan item.", Tab.QuestOf(self.d)), placeLines(self.d))
+		end
 		if self.d and self.d.quest then Tab.QuestTooltip(self, self.d.quest) end
 	end)
+	-- Shift-click on a quest (its header or a reward under it): the quest in Polestar's Lookup
+	row:SetScript("OnClick", function(self, button)
+		local q = Tab.QuestOf(self.d)
+		if q then ns.Lookup.Click(q.questId, button) end
+	end)
 	row:SetScript("OnLeave", function(self) S.Hover(self, false) GameTooltip_Hide() end)
+end
+
+-- A detail row's quest to open in Polestar: a quest header's, or the quest a reward row is listed
+-- under (its place here) | nil. Other rows (dungeon, vendor, ...) have none.
+function Tab.QuestOf(d)
+	if not d then return nil end
+	if d.quest and d.quest.questId then return d.quest end
+	if d.src and d.src.kind == "quest" and d.src.questId then return d.src end
+	return nil
 end
 
 local function initDetail(row, d)

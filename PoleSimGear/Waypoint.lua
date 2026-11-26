@@ -51,3 +51,65 @@ function Waypoint.Go(s)
 	local ok, res = pcall(A.Navigate, ADDON, s.map, s.x, s.y, s.title)
 	return ok and res == true
 end
+
+-- Quest details in Polestar's Lookup (the Codex pages: sources, chain, "Guide me"). Shift-click on a
+-- quest-sourced row (window rows never link to chat, so Shift is free) or the right-click menu.
+-- Polestar.Lookup.Show(query, kind, id) is not in its documented API: read at call time, guarded; a
+-- Polestar without it gets one chat line. With Lookup turned off Polestar prints its own message.
+local Lookup = {}
+ns.Lookup = Lookup
+Lookup.HINT = "Shift-click: quest details in Polestar"
+Lookup.MISSING = "Update Polestar to open quests in its Lookup"
+
+local function show()
+	local P = _G.Polestar
+	local L = type(P) == "table" and P.Lookup
+	local fn = type(L) == "table" and L.Show
+	return type(fn) == "function" and fn or nil
+end
+function Lookup.Available() return show() ~= nil end
+
+-- the modifier that opens the quest (Shift)
+function Lookup.Modifier() return IsShiftKeyDown and IsShiftKeyDown() and true or false end
+
+-- An item's quest source to open, in the row's own order (sources as listed): the one on the Polestar
+-- route (the row's "in N steps" tag, a near quest's), else the first available one, else the first.
+-- sources: Sources.View list | nil -> source | nil
+function Lookup.QuestSource(sources)
+	local route, ok, first
+	for _, s in ipairs(sources or {}) do
+		if type(s) == "table" and s.kind == "quest" and s.questId then
+			first = first or s
+			if s.ok ~= false then ok = ok or s end
+			if s.route then route = route or s end
+		end
+	end
+	return route or ok or first
+end
+
+-- questId -> true when Polestar was asked to show it; else one chat line and false
+function Lookup.OpenQuest(questId)
+	if not questId then return false end
+	local fn = show()
+	if not fn then
+		ns.Print(Lookup.MISSING)
+		return false
+	end
+	if pcall(fn, nil, "quest", questId) then return true end
+	ns.Print("Polestar could not open quest " .. tostring(questId) .. " in its Lookup")
+	return false
+end
+
+-- A row click: with the modifier and a quest -> opened (true: the click is used); else false
+function Lookup.Click(questId, button)
+	if not questId or (button and button ~= "LeftButton") or not Lookup.Modifier() then return false end
+	Lookup.OpenQuest(questId)
+	return true
+end
+
+-- the right-click menu entry for a quest source | nil
+function Lookup.MenuItem(src)
+	if not (src and src.questId) then return nil end
+	return { text = "Open quest in Polestar: " .. (src.title or ("quest " .. src.questId)),
+		onClick = function() Lookup.OpenQuest(src.questId) end }
+end

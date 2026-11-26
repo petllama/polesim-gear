@@ -45,6 +45,15 @@ function Win.Keep(spec)
 	return keep
 end
 
+-- professions -> a comparable key ("?" unknown, else the sorted skill lines)
+function Win.ProfKey(profs)
+	if not profs then return "?" end
+	local ls = {}
+	for l in pairs(profs.lines) do ls[#ls + 1] = l end
+	table.sort(ls)
+	return table.concat(ls, ",")
+end
+
 function Win.Env()
 	local ctx = ns.Context.Get()
 	if not ctx then
@@ -64,11 +73,14 @@ function Win.Env()
 	end
 	local Items = ns.Items
 	state.codex = C
+	-- primary professions: BoP crafts of other professions go once there are two (Sources.CraftBlocked)
+	local profs = ns.Sources.Professions()
+	state.profKey = Win.ProfKey(profs)
 	return {
 		cls = ctx.cls, level = ctx.level, ahead = ns.Browser.AHEAD, codex = C, rules = ctx.rules,
 		-- decoded on demand, nothing kept (Items.Peek; the index is released when the window closes)
 		items = { Get = Items.Peek, ByInv = Items.ByInv, Rl = Items.Rl },
-		player = { faction = ctx.faction, classBit = ctx.classBit, raceBit = ctx.raceBit, completed = completed },
+		player = { faction = ctx.faction, classBit = ctx.classBit, raceBit = ctx.raceBit, completed = completed, profs = profs },
 		routeStep = ns.Route.StepOf, keep = Win.Keep(ctx.spec),
 		at = function(L)
 			local a = ns.Context.At(L)
@@ -864,7 +876,18 @@ function Win.RowLines(r, ctx, band, hint, extra)
 	end
 	if type(extra) == "string" then extra = { extra } end
 	for _, line in ipairs(extra or {}) do GameTooltip:AddLine(line, 1, 0.82, 0, true) end
-	if hint then GameTooltip:AddLine(hint, 0.6, 0.6, 0.6, true) end
+	if type(hint) == "table" then
+		for _, line in ipairs(hint) do GameTooltip:AddLine(line, 0.6, 0.6, 0.6, true) end
+	elseif hint then GameTooltip:AddLine(hint, 0.6, 0.6, 0.6, true) end
+end
+
+-- A row's click hints: hint, plus the Shift-click line when the row has a quest to open in Polestar
+function Win.Hints(hint, questSrc)
+	if not questSrc then return hint end
+	local out = {}
+	if hint then out[1] = hint end
+	out[#out + 1] = ns.Lookup.HINT
+	return out
 end
 
 -- The Gear Plan's suggestion for a slot ("id:bonus") | nil (no model, nothing better)
@@ -1041,6 +1064,18 @@ ns.RegisterEvent("QUEST_TURNED_IN", function()
 	C_Timer.After(Win.TURNIN_DELAY, function()
 		turninQueued = false
 		if visible() then Win.Build() else state.stale = true end
+	end)
+end)
+-- A primary profession learned or dropped (SKILL_LINES_CHANGED, which also fires on every skill-up:
+-- only a changed set counts) changes which BoP crafts are sources: rebuild like a turn-in.
+ns.RegisterEvent("SKILL_LINES_CHANGED", function()
+	if not state.profKey or Win.ProfKey(ns.Sources.Professions()) == state.profKey then return end
+	state.stale = true
+	if turninQueued or not visible() then return end
+	turninQueued = true
+	C_Timer.After(Win.TURNIN_DELAY, function()
+		turninQueued = false
+		if visible() then Win.Build() end
 	end)
 end)
 ns.Slash("", Win.Toggle)

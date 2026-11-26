@@ -113,10 +113,23 @@ local function make(row)
 	row.action = S.Button(row, "", COL.actionW, 18, function() ns.Window.PlanAction(row.d) end, S.ACTION)
 	row:SetScript("OnEnter", function(self)
 		S.Hover(self, true)
-		if self.d and self.d.c then ns.Window.RowTooltip(self, self.d, "Set as plan: make it this slot's plan item.") end
+		if self.d and self.d.c then
+			ns.Window.RowTooltip(self, self.d, ns.Window.Hints("Set as plan: make it this slot's plan item.", Tab.QuestOf(self.d)))
+		end
 	end)
 	row:SetScript("OnLeave", function(self) S.Hover(self, false) GameTooltip_Hide() end)
-	row:SetScript("OnClick", function(self) if self.d and self.d.showAll then ns.Window.ShowAll(ns.Window.state.slot) end end)
+	row:SetScript("OnClick", function(self, button)
+		local d = self.d
+		if d and d.showAll then return ns.Window.ShowAll(ns.Window.state.slot) end
+		-- Shift-click on a quest-sourced upgrade: the quest in Polestar's Lookup
+		local q = Tab.QuestOf(d)
+		if q then ns.Lookup.Click(q.questId, button) end
+	end)
+end
+
+-- a row's quest to open in Polestar (Lookup.QuestSource of the item) | nil
+function Tab.QuestOf(d)
+	return d and d.c and ns.Lookup.QuestSource(d.c.sources) or nil
 end
 
 function Tab.Init(row, d)

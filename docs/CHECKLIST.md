@@ -1,4 +1,17 @@
-# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution/Protection paladin) — PoleSim Gear 0.7.12
+# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution/Protection paladin) — PoleSim Gear 0.7.13
+
+**0.7.13 over 0.7.12:** Shift-click a quest-sourced item in the Gear Plan or Slot Upgrades, or a quest
+(or one of its rewards) in Sources > Quests, to open that quest in Polestar's Lookup (its sources, chain
+and "Guide me"); the Gear Plan's right-click menu also offers "Open quest in Polestar: <quest>". With
+several quests the one on your Polestar route is opened, else the first one listed. Only quest rows say
+"Shift-click: quest details in Polestar" in their tooltip; other rows click as before. Shift was free:
+rows never linked items to chat. A Polestar without its Lookup says "Update Polestar to open quests in
+its Lookup" in chat; with Lookup turned off Polestar says so itself. Also: once a character has two
+primary professions, Bind on Pickup crafted items of another profession are no longer suggested (Gear
+Plan, Slot Upgrades, Sources > Crafting; e.g. Shadow Gown for a non-tailor); with fewer than two they
+stay with their "Crafted: Tailoring 110" note, BoE crafts always stay, and an item's other sources
+(quest, drop, vendor) still list it. Professions or binding unknown: kept. No new files: `/reload` is
+enough. Check: T5, T6.
 
 **0.7.12 over 0.7.11:** the auction house upgrades panel keeps its results. A full scan is saved for
 your realm and faction (every character there shares it): next time the auction house opens, the list
@@ -1099,6 +1112,20 @@ line starting `PSGG1:<class>:<spec>:<level>:`. Ctrl+C, open polesim.petllama.com
 the right "of the ..." suffix). Typing in the line does not change it; Escape closes it. Plain
 `/psg export` is still the recorder's export.
 
+**T5. Quests in Polestar (0.7.13).** Gear Plan: hover a row whose source is a quest: the tooltip ends
+"Shift-click: quest details in Polestar"; a dungeon/crafted/vendor row has no such line. Shift-click the
+quest row: Polestar's window opens at Lookup on that quest (the one tagged "in N steps"/"near quest" when
+the row shows one) and PoleSim stays on the Gear Plan; a plain click still opens Slot Upgrades.
+Right-click the quest row: "Open quest in Polestar: <quest>" does the same. Slot Upgrades: Shift-click a
+quest upgrade: same. Sources > Quests: Shift-click a quest title and one of its rewards: that quest.
+Polestar Settings > Discovery > Lookup off: Shift-click prints Polestar's "Lookup is turned off" line.
+Then a raid marker from the target frame's menu: no "blocked" message.
+
+**T6. Profession crafts (0.7.13).** On a character with two primary professions, neither Tailoring:
+no Bind on Pickup Tailoring item (e.g. Shadow Gown) in the Gear Plan, Slot Upgrades or Sources >
+Crafting; BoE crafts still listed. On a character with one or no profession: they are back with
+"Crafted: Tailoring N". Learning a second profession with the window open rebuilds it within a second.
+
 ## V. Update notices (0.7.9; full game restart after installing)
 
 **V1. The hidden channel.** ~20 s after login: no "Joined Channel" line in any chat tab, no new channel
@@ -1223,6 +1250,12 @@ notices: off". Tick it again: back in the channel within a few seconds.
 | V1-V3 | Update notices: hidden channel, older one sees one line + title line, off leaves the channel | |
 
 ## Known limits (tell me if they bother you)
+
+- Quests in Polestar (0.7.13) use Polestar.Lookup.Show, which Polestar does not list as public API:
+  a Polestar update may change it (then Shift-click prints "Update Polestar to open quests in its
+  Lookup" instead of opening it). Only primary professions count for crafted items (Cooking, First Aid,
+  Fishing never hide anything); a client that reports professions only by name is matched on English
+  names (other languages: nothing is hidden).
 
 - Update notices (0.7.9) work only from 0.7.9 on (older versions neither send nor listen) and only while
   someone on a newer version is online. The hidden channel takes one of your chat channel slots (none

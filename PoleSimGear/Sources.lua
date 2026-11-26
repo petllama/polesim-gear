@@ -231,10 +231,95 @@ function Sources.GenericWorld(rec, it)
 	return false
 end
 
+-- Primary professions (Classic skill lines, as Polestar's Compat.SKILL_LINES); secondary ones (Cooking,
+-- First Aid, Fishing) never count. English names for clients that give names only.
+Sources.PRIMARY = { [171] = "alchemy", [164] = "blacksmithing", [333] = "enchanting", [202] = "engineering",
+	[182] = "herbalism", [165] = "leatherworking", [186] = "mining", [393] = "skinning", [197] = "tailoring" }
+local LINE_OF = {}
+for line, name in pairs(Sources.PRIMARY) do LINE_OF[name] = line end
+Sources.MAX_PRIMARY = 2
+
+-- The character's primary professions -> { lines = { [skillLine] = true }, n } | nil (the client can't
+-- say). Read from GetProfessions, else C_SkillInfo by id or by index, else the Classic skill list.
+function Sources.Professions()
+	local lines, n = {}, 0
+	local function add(line)
+		if Sources.PRIMARY[line] and not lines[line] then lines[line], n = true, n + 1 end
+	end
+	if type(GetProfessions) == "function" and type(GetProfessionInfo) == "function" then
+		local ok, p1, p2 = pcall(GetProfessions)
+		if ok then
+			for _, idx in ipairs({ p1 or false, p2 or false }) do
+				if idx then
+					local okInfo, _, _, _, _, _, _, line = pcall(GetProfessionInfo, idx)
+					if okInfo then add(line) end
+				end
+			end
+			return { lines = lines, n = n }
+		end
+	end
+	local S = C_SkillInfo
+	if type(S) == "table" and type(S.GetSkillLineInfoByID) == "function" then
+		local answered = false
+		for line in pairs(Sources.PRIMARY) do
+			local ok, info = pcall(S.GetSkillLineInfoByID, line)
+			if ok then answered = true end
+			if ok and type(info) == "table" and not info.isHeader
+				and ((tonumber(info.rank) or 0) > 0 or (tonumber(info.maxRank) or 0) > 0) then add(line) end
+		end
+		if answered then return { lines = lines, n = n } end
+	end
+	if type(S) == "table" and type(S.GetNumSkillLines) == "function" and type(S.GetSkillLineInfo) == "function" then
+		local ok, count = pcall(S.GetNumSkillLines)
+		if ok and type(count) == "number" then
+			for i = 1, count do
+				local okInfo, info = pcall(S.GetSkillLineInfo, i)
+				if okInfo and type(info) == "table" and not info.isHeader then
+					add(info.skillID or LINE_OF[type(info.name) == "string" and info.name:lower() or ""])
+				end
+			end
+			return { lines = lines, n = n }
+		end
+	end
+	if type(GetNumSkillLines) == "function" and type(GetSkillLineInfo) == "function" then
+		local ok, count = pcall(GetNumSkillLines)
+		if ok and type(count) == "number" then
+			for i = 1, count do
+				local okInfo, name, header = pcall(GetSkillLineInfo, i)
+				if okInfo and not header and type(name) == "string" then add(LINE_OF[name:lower()]) end
+			end
+			return { lines = lines, n = n }
+		end
+	end
+	return nil
+end
+
+-- Bind on pickup: the shipped item's binding (`bd` 1), else the client's (GetItemInfo bindType 1)
+-- -> true | false | nil (unknown)
+function Sources.IsBoP(it, id)
+	if type(it) == "table" and type(it.bd) == "number" then return it.bd == 1 end
+	local get = (C_Item and C_Item.GetItemInfo) or GetItemInfo
+	if not (id and type(get) == "function") then return nil end
+	local ok, name, _, _, _, _, _, _, _, _, _, _, _, _, bind = pcall(get, id)
+	if not (ok and name and type(bind) == "number") then return nil end
+	return bind == 1
+end
+
+-- A crafted view the character can never use: the item binds on pickup, its profession is not one of
+-- theirs and they already have MAX_PRIMARY primary professions. Unknown professions, binding or
+-- profession: kept (never guessed).
+function Sources.CraftBlocked(v, it, id, profs)
+	if not (v and v.kind == "crafted" and type(profs) == "table" and (profs.n or 0) >= Sources.MAX_PRIMARY) then return false end
+	local line = tonumber(v.skillLine) or LINE_OF[type(v.profession) == "string" and v.profession:lower() or ""]
+	if not (line and Sources.PRIMARY[line]) or profs.lines[line] then return false end
+	return Sources.IsBoP(it, id) == true
+end
+
 -- An item's browser sources; nil when Polestar marks it retired (hidden). it (optional): the shipped
 -- item (rl, il, rep) for the item-level rule and the reputation note. Codex reads are Polestar
 -- internals: one that errors (Polestar changed) drops that source, or all of the item's, and is kept in
--- Sources.lastError for the window; it never stops the browser.
+-- Sources.lastError for the window; it never stops the browser. player.profs (Sources.Professions)
+-- drops crafted sources the character can't use (Sources.CraftBlocked).
 function Sources.For(id, codex, player, lim, it)
 	local okRec, rec = pcall(codex.Item, id)
 	if not okRec then
@@ -259,6 +344,8 @@ function Sources.For(id, codex, player, lim, it)
 		local ok, v = pcall(Sources.View, src, codex, player, lim, generic)
 		if not ok then
 			Sources.lastError = v
+		elseif v and Sources.CraftBlocked(v, it, id, player.profs) then
+			-- a BoP craft of a profession the character can't take up any more: not a source
 		elseif v then
 			local gate = v.ok and LEVEL_LESS[src.type] and ns.LevelLessGate(it, lim)
 			if gate then v.ok, v.why = false, gate end

@@ -265,8 +265,9 @@ function Tab.Tooltip(row)
 		-- a weapon of a planned set: the set's whole gain (the other hand is planned with it)
 		local extra = r.setText and { r.setText } or {}
 		if better then extra[#extra + 1] = better end
-		return ns.Window.RowTooltip(row, r, entry and "Click: this slot's upgrades. Right-click: back to suggestion, wishlist."
-			or "Click: this slot's upgrades.", extra)
+		local hint = entry and "Click: this slot's upgrades. Right-click: back to suggestion, wishlist."
+			or "Click: this slot's upgrades."
+		return ns.Window.RowTooltip(row, r, ns.Window.Hints(hint, Tab.QuestOf(e)), extra)
 	end
 	if e.entry and e.entry.twoHander then
 		GameTooltip:SetOwner(row, "ANCHOR_RIGHT")
@@ -299,9 +300,18 @@ function Tab.CurrentTooltip(row, cell)
 	GameTooltip:Show()
 end
 
+-- The row's quest to open in Polestar (Lookup.QuestSource of the plan item) | nil
+function Tab.QuestOf(e)
+	local r = e and planRow(e)
+	return r and ns.Lookup.QuestSource(r.c.sources) or nil
+end
+
 function Tab.Click(row, button)
 	local e = row.e
 	if not (e and e.def) then return end
+	-- Shift-click on a quest-sourced row: the quest in Polestar's Lookup (no quest: a plain click)
+	local q = Tab.QuestOf(e)
+	if q and ns.Lookup.Click(q.questId, button) then return end
 	if button ~= "RightButton" then return ns.Window.OpenSlot(e.def.key) end
 	local ctx = ns.Context.Get()
 	if not ctx then return end
@@ -315,6 +325,7 @@ function Tab.Click(row, button)
 	if e.entry and e.entry.isPick then
 		items[#items + 1] = { text = "Back to suggestion", onClick = function() ns.Plan.Clear(ctx.spec, e.def.key) end }
 	end
+	if q then items[#items + 1] = ns.Lookup.MenuItem(q) end
 	if inst then
 		items[#items + 1] = { text = ns.Wishlist.Has(inst) and "Remove from wishlist" or "Add to wishlist",
 			onClick = function() ns.Wishlist.Toggle(inst) end }
