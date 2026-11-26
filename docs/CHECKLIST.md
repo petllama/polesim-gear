@@ -1,4 +1,15 @@
-# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution/Protection paladin) — PoleSim Gear 0.7.11
+# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution/Protection paladin) — PoleSim Gear 0.7.12
+
+**0.7.12 over 0.7.11:** the auction house upgrades panel keeps its results. A full scan is saved for
+your realm and faction (every character there shares it): next time the auction house opens, the list
+is back, scored for the character standing there, with "Last scan 3 h ago" in the status until you scan
+again. Those prices are only a hint: a click still opens the live listings. Each scan also keeps one
+price a day per item (the day's cheapest, 14 days, items unseen for 30 days forgotten), and a row whose
+price is at most 60% of its usual price (the median of 3 or more earlier days) gets an orange **deal**
+tag and a tooltip line "Deal: 45% below usual (median ... over N days)"; the new **Deals** sort lists
+them first. No history yet = no deals (nothing is guessed). Scans now search 2 levels past your level
+(or your look ahead, if more) so price history builds for gear you will wear soon; only gear within
+your look ahead is listed. No new files: `/reload` is enough. Check: N14.
 
 **0.7.11 over 0.7.10:** Settings > "Ask me to upload every" now has a **2 h / 4 h / 6 h** dropdown
 (default 2 h, counted from your last upload; a new choice applies at once; Later still asks again after an
@@ -837,6 +848,15 @@ again: faded during the scan, your choice is back after it.
 changes and the rows rescore. On a paladin with Retribution chosen the line says "Scored for:
 Retribution (chosen)".
 
+**N14. Kept results and deals (0.7.12).** Scan, close the auction house, open it again: the same rows
+are back without a search and the status says "Last scan N min ago: X upgrades (old prices)"; a row's
+tooltip ends "Price from the last scan, ... ago"; clicking it opens its live listings. On another
+character of the same faction and realm: the list is back, scored for that character (other gear, other
+gains). Scan again: the status is the normal "Done: ..." line. Deals need 3 earlier days of scans: after
+that, an item listed far below its usual price shows an orange "deal" on its slot line and a "Deal: N%
+below usual (median ... over N days)" tooltip line; Deals sorts them first. Then a raid marker from the
+target frame's menu: no "blocked" message.
+
 If the browse rows of "of the ..." items never show their suffix (every such row "any suffix"), paste
 this after a normal search for e.g. "of the Owl" and report the lines:
 
@@ -1198,6 +1218,7 @@ notices: off". Tick it again: back in the channel within a few seconds.
 | S6 | Weights tab: supported specs, speed rows | |
 | R1-R10 | Recorder: question, state, pulls, mobs, sheet, meal, AFK, export/upload, reminder, no taint | |
 | N13 | AH panel: "Scored for: <Spec> (source)", changes with Settings | |
+| N14 | AH: last scan back on reopen (other character too), deal tag + tooltip, Deals sort | |
 | U1 | /psg export gear: line, paste on the website fills the character | |
 | V1-V3 | Update notices: hidden channel, older one sees one line + title line, off leaves the channel | |
 

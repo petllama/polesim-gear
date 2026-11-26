@@ -10,6 +10,9 @@
 -- A Slot dropdown (our own Style.Dropdown, never Blizzard's Menu: it taints the unit popup) filters the
 -- list: "All slots", then the slots in the results with their counts; kept while the AH is open (a
 -- re-scan keeps it, All again when that slot has nothing left), back to All when the AH closes.
+-- Saved scans (AH.Restore) list the same way with "Last scan 3 h ago" in the status; a row whose price
+-- is unusually low for that item (AH.Deal: <= 60% of the median of 3+ earlier days) gets an orange
+-- "deal" tag and a tooltip line; the Deals sort lists deals first.
 local ADDON, ns = ...
 local P = {}
 ns.AHPanel = P
@@ -18,14 +21,19 @@ local C = S.C
 local format = string.format
 
 P.W = 500
+P.SORT_X, P.SORT_W, P.SORT_STEP = 38, 44, 46 -- the sort buttons (4): "Value" fits
 P.SLOT_W = 130 -- the Slot dropdown: "Main hand (999)" fits
-P.NEXT_W = P.W - 352 -- the "Next: <partner>" button, right of the Slot dropdown
+P.SLOT_X = P.SORT_X + 4 * P.SORT_STEP
+P.NEXT_X = P.SLOT_X + P.SLOT_W + 4
+P.NEXT_W = P.W - 8 - P.NEXT_X -- the "Next: <partner>" button, right of the Slot dropdown
 P.ROW_H = 30
 -- row columns (x from the row's left; the row is P.W - 20 wide)
 local COL = { star = 4, item = 22, nameW = 210, gain = 262, gainW = 48, price = 314, priceW = 100, value = 418, valueW = 56 }
 P.COL = COL
 P.SORTS = { { "gain", "Gain", "Biggest gain first" }, { "value", "Value", "Most gain per gold first" },
-	{ "price", "Price", "Cheapest first" } }
+	{ "price", "Price", "Cheapest first" },
+	{ "deal", "Deals", "Unusually cheap first (price at most 60% of its usual, from 3+ earlier days of scans), then gain" } }
+P.DEAL = C.orange
 local sortBy = "gain"
 local slotFilter -- a Browser.SLOTS key, nil = all slots
 
@@ -52,6 +60,7 @@ P.SET = S.hex("6fd6c4")
 local function slotLine(row, r)
 	local slot = r.slot and (r.slot.short or r.slot.label) or ""
 	local tags = ""
+	if r.deal then tags = tags .. "  " .. S.Colour(P.DEAL) .. "deal|r" end
 	if (r.at or 0) > 0 then tags = tags .. "  " .. S.Colour(C.gold) .. "lvl " .. r.at .. "|r" end
 	if r.anySuffix then tags = tags .. "  " .. S.Colour(C.label) .. "any suffix|r" end
 	if isPlan(r) then tags = tags .. "  " .. S.Colour(C.pick) .. "plan|r" end
@@ -99,6 +108,18 @@ function P.Tooltip(row)
 		extra[#extra + 1] = format("Weapon set with %s (%s): %s together", r.partner.c.inst.name or "?", S.Money(r.partner.price), S.Money(r.setPrice or r.price))
 	end
 	extra[#extra + 1] = format("Gain per gold: %+.2f", r.value)
+	local h = r.history
+	if h and h.deal then
+		extra[#extra + 1] = S.Colour(P.DEAL) .. format("Deal: %d%% below usual (median %s over %d days)|r",
+			math.floor(h.pct * 100 + 0.5), S.Money(math.floor(h.median + 0.5)), h.days)
+	elseif h then
+		extra[#extra + 1] = format("Usual price: %s (median over %d days)", S.Money(math.floor(h.median + 0.5)), h.days)
+	end
+	if h and h.lowest then extra[#extra + 1] = format("Lowest price seen in %d days of scans", h.days) end
+	local at = ns.AH.Restored()
+	if at then
+		extra[#extra + 1] = "Price from the last scan, " .. ns.AH.Age(at) .. " ago: the listings may have changed"
+	end
 	if r.anySuffix then
 		extra[#extra + 1] = format("The browse list shows every suffix of this item as one row: scored with the best (%s); the weakest (%s) gains %s. Its listings show each one's suffix.",
 			r.anySuffix.best or "?", r.anySuffix.worstName or "?", S.Signed(r.anySuffix.worst or 0))
@@ -304,16 +325,16 @@ local function create(ahf)
 	sl:SetPoint("TOPLEFT", 10, -64)
 	sl:SetText("Sort")
 	for i, s in ipairs(P.SORTS) do
-		local b = S.Button(f, s[2], 50, 20, function() P.SetSort(s[1]) end)
+		local b = S.Button(f, s[2], P.SORT_W, 20, function() P.SetSort(s[1]) end)
 		b.key, b.tip = s[1], s[3]
-		b:SetPoint("TOPLEFT", 40 + (i - 1) * 54, -60)
+		b:SetPoint("TOPLEFT", P.SORT_X + (i - 1) * P.SORT_STEP, -60)
 		f.sorts[i] = b
 	end
 	f.slot = S.Dropdown(f, P.SLOT_W, 20, P.SlotList, function(v) return (slotFilter or "all") == v end, P.SetSlot)
-	f.slot:SetPoint("TOPLEFT", 206, -60)
+	f.slot:SetPoint("TOPLEFT", P.SLOT_X, -60)
 	f.slot.tip = "Show the upgrades for one slot (the sort still applies)"
 	f.next = S.Button(f, "", P.NEXT_W, 20, function() if P.nextFor then P.OpenPartner(P.nextFor) end end, S.ACTION)
-	f.next:SetPoint("TOPLEFT", 342, -60)
+	f.next:SetPoint("TOPLEFT", P.NEXT_X, -60)
 	f.next:Hide()
 	local head = CreateFrame("Frame", nil, f)
 	head:SetPoint("TOPLEFT", 4, -88)

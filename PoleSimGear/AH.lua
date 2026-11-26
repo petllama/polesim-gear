@@ -1,8 +1,14 @@
 -- Auction house upgrades: a few browse queries over what the character can wear (usable only, up to
 -- the window's look ahead), paged and throttled the client's way; each result scored like the window's
 -- rows (Equip.Compare against what is worn, the weapon set rule) and kept when it is an upgrade, with
--- its cheapest price. Session only: cleared when the auction house closes. Buying stays the player's:
--- nothing here bids, buys or posts (a click only opens the item's listings in the AH frame).
+-- its cheapest price. The last complete scan's prices are kept per realm and faction (PoleSimGearDB.ah:
+-- the auction house is shared by every character there) and listed again, re-scored for the character
+-- at the AH, when it opens ("Last scan 3 h ago") until a new scan replaces them; they are only a hint (a
+-- click opens the live listings). Price history: per realm-faction and item ("id:suffix"), one price a
+-- day (that day's cheapest), from every scored item, upgrade or not; a row whose price is at most 60%
+-- of the median of 3+ earlier days is a deal. Scans search 2 levels past the character (or the look
+-- ahead, if more) so the history covers gear worn soon; rows stay within the look ahead.
+-- Buying stays the player's: nothing here bids, buys or posts (a click only opens the item's listings).
 -- Client API (Forever 1.60.1 UI source, Blizzard_APIDocumentationGenerated/AuctionHouseDocumentation.lua):
 -- C_AuctionHouse.SendBrowseQuery(AuctionHouseBrowseQuery), GetBrowseResults, HasFullBrowseResults,
 -- RequestMoreBrowseResults, IsThrottledMessageSystemReady, GetItemKeyInfo; events
@@ -143,8 +149,9 @@ local function candidate(f, ctx, top, bandAt)
 	local role = roleOf(rec.inv)
 	local inst, anySuffix
 	if #rec.sfx > 0 then
-		local b = AH.Suffix(rec, f.itemKey)
+		local b = f.bonus or AH.Suffix(rec, f.itemKey)
 		if b then
+			f.bonus = b -- kept with a saved scan (the item's name may not be loaded on a later visit)
 			inst = ns.Score.Instance(rec, b)
 		else
 			-- every suffix: the best one scores the row, the weakest is said in the tooltip
@@ -169,20 +176,119 @@ end
 
 local function perGold(gain, price) return gain / (math.max(price or 0, 1) / 10000) end
 
+-- Price history -----------------------------------------------------------------------------------
+AH.HISTORY_DAYS = 14 -- days kept per item
+AH.HISTORY_FORGET = 30 -- an item not seen for this many days is dropped
+AH.HISTORY_MAX = 3000 -- items kept per realm-faction (the longest unseen go first)
+AH.DEAL_SHARE = 0.6 -- a deal: price <= 60% of the usual (median of earlier days)
+AH.DEAL_MIN_DAYS = 3 -- earlier days needed before anything is called a deal
+AH.PRICE_AHEAD = 2 -- scans search this many levels ahead at least (history only past the look ahead)
+
+function AH.Now() return type(time) == "function" and time() or 0 end
+-- a calendar day number (local days when the client's date/time are there)
+function AH.Day(t)
+	t = t or AH.Now()
+	if type(date) == "function" and type(time) == "function" then
+		local ok, d = pcall(date, "*t", t)
+		if ok and type(d) == "table" then
+			local ok2, noon = pcall(time, { year = d.year, month = d.month, day = d.day, hour = 12 })
+			if ok2 and noon then return math.floor(noon / 86400) end
+		end
+	end
+	return math.floor(t / 86400)
+end
+-- the history key of a browse result: item id and the item key's suffix (any item level)
+function AH.HistKey(itemKey) return (itemKey.itemID or 0) .. ":" .. (itemKey.itemSuffix or 0) end
+
+-- hist ({ [key] = { s = last day seen, d = { day, price, day, price, ... } } }), prices ({ [key] = copper }),
+-- day: each price becomes that day's entry (the lowest of the day), at most HISTORY_DAYS days an item;
+-- then items unseen for HISTORY_FORGET days go, and the longest unseen past HISTORY_MAX.
+function AH.Record(hist, prices, day)
+	for k, p in pairs(prices) do
+		if type(p) == "number" and p > 0 then
+			local e = hist[k]
+			if type(e) ~= "table" or type(e.d) ~= "table" then e = { d = {} } hist[k] = e end
+			local d = e.d
+			local n = #d
+			if n >= 2 and d[n - 1] == day then
+				if p < d[n] then d[n] = p end
+			elseif n < 2 or d[n - 1] < day then
+				d[n + 1], d[n + 2] = day, p
+			end -- (an earlier day than the last: the clock went back; ignored)
+			while #d > 2 * AH.HISTORY_DAYS do
+				table.remove(d, 1)
+				table.remove(d, 1)
+			end
+			if not e.s or day > e.s then e.s = day end
+		end
+	end
+	AH.Prune(hist, day)
+end
+function AH.Prune(hist, day)
+	local keys = {}
+	for k, e in pairs(hist) do
+		if type(e) ~= "table" or not e.s or day - e.s > AH.HISTORY_FORGET then hist[k] = nil
+		else keys[#keys + 1] = k end
+	end
+	if #keys <= AH.HISTORY_MAX then return end
+	table.sort(keys, function(a, b)
+		if hist[a].s ~= hist[b].s then return hist[a].s < hist[b].s end
+		return a < b
+	end)
+	for i = 1, #keys - AH.HISTORY_MAX do hist[keys[i]] = nil end
+end
+
+function AH.Median(list)
+	local t = {}
+	for i, v in ipairs(list) do t[i] = v end
+	table.sort(t)
+	local n = #t
+	if n == 0 then return nil end
+	if n % 2 == 1 then return t[(n + 1) / 2] end
+	return (t[n / 2] + t[n / 2 + 1]) / 2
+end
+
+-- What the history says about a price on a day: nil (fewer than DEAL_MIN_DAYS earlier days: no guess),
+-- else { deal (price <= DEAL_SHARE x median), pct (below the median, 0..1; negative = above), median,
+-- days (earlier days), lowest (below every earlier day) }. The day itself never counts.
+function AH.Deal(hist, key, price, day)
+	local e = hist and key and hist[key]
+	if not (type(e) == "table" and type(e.d) == "table" and price and price > 0) then return nil end
+	local prev, low = {}, nil
+	for i = 1, #e.d - 1, 2 do
+		if e.d[i] < day then
+			local p = e.d[i + 1]
+			prev[#prev + 1] = p
+			if not low or p < low then low = p end
+		end
+	end
+	if #prev < AH.DEAL_MIN_DAYS then return nil end
+	local med = AH.Median(prev)
+	if not med or med <= 0 then return nil end
+	return { deal = price <= AH.DEAL_SHARE * med, pct = 1 - price / med, median = med, days = #prev,
+		lowest = price < low }
+end
+
 -- found (the scan's), ctx (Context.Get), ahead, yield (optional: called every YIELD_EVERY results, for
 -- Browser.Start's frame slices) -> rows (upgrades: { key, c = { id, inst, score,
 -- sources, kinds }, gain, base, slot, note, at, price, setPrice, value, partner, anySuffix, result,
 -- itemKey }), counts { results, notScored, scored }.
 -- Weapons follow the weapon set rule: under a worn two-hander a one-hander pairs with the best AH off
 -- hand (and the reverse), and the pair must beat the two-hander (its value counts both prices).
+-- opts (optional): histAhead (levels searched for the price history only; default ahead), hist (the
+-- realm's price history: rows get `history`, and `deal` when it is one), day (today, or the saved
+-- scan's day). prices.hist = { [AH.HistKey] = cheapest } of every item scored up to histAhead.
 AH.YIELD_EVERY = 50
-function AH.Build(found, ctx, ahead, yield)
+function AH.Build(found, ctx, ahead, yield, opts)
+	opts = opts or {}
 	local counts = { results = 0, notScored = 0, scored = 0 }
 	local out = {}
-	-- the cheapest price of every scored item, upgrade or not: exact ("id:bonus") and any-suffix (id)
-	local prices = { exact = {}, any = {} }
+	-- the cheapest price of every scored item, upgrade or not: exact ("id:bonus") and any-suffix (id);
+	-- hist: by history key, up to the history's levels
+	local prices = { exact = {}, any = {}, hist = {} }
 	if not ctx then return out, counts, prices end
 	local top = math.min(60, ctx.level + (ahead or 0))
+	local histTop = math.max(top, math.min(60, ctx.level + (opts.histAhead or ahead or 0)))
 	local bands = {}
 	local function bandAt(L)
 		if L == ctx.level then return ctx end
@@ -190,10 +296,25 @@ function AH.Build(found, ctx, ahead, yield)
 		return bands[L] or nil
 	end
 	local cands = {}
+	local seen = 0
 	for _, f in pairs(found) do
-		counts.results = counts.results + 1
-		if yield and counts.results % AH.YIELD_EVERY == 0 then yield() end
-		local ok, c, why = pcall(candidate, f, ctx, top, bandAt)
+		seen = seen + 1
+		if yield and seen % AH.YIELD_EVERY == 0 then yield() end
+		-- the price history: every usable gear item up to histTop, upgrade or not; past the look ahead
+		-- the item is history only (no row, not counted)
+		local rec = f.itemKey and ns.Items.Peek(f.itemKey.itemID)
+		local histOnly = false
+		if rec and (rec.c == 2 or rec.c == 4) and rec.rl <= histTop and not ns.LevelLessGate(rec, histTop)
+			and ns.Equip.CanUse(rec, ctx.cls, math.max(ctx.level, rec.rl)) then
+			local hk, p = AH.HistKey(f.itemKey), f.minPrice
+			if p and p > 0 and (not prices.hist[hk] or p < prices.hist[hk]) then prices.hist[hk] = p end
+			histOnly = rec.rl > top or ns.LevelLessGate(rec, top)
+		end
+		local ok, c, why = true, nil, "history"
+		if not histOnly then
+			counts.results = counts.results + 1
+			ok, c, why = pcall(candidate, f, ctx, top, bandAt)
+		end
 		if not ok then
 			ns.ReportOnce("ah:" .. tostring(f.itemKey and f.itemKey.itemID), c)
 		elseif c then
@@ -238,6 +359,11 @@ function AH.Build(found, ctx, ahead, yield)
 			r.setPrice = partner and (c.price + partner.price) or nil
 			r.value = perGold(gain, r.setPrice or c.price)
 			r.partnerCand = partner
+			r.hkey = AH.HistKey(c.itemKey)
+			if opts.hist and opts.day then
+				r.history = AH.Deal(opts.hist, r.hkey, c.price, opts.day)
+				r.deal = r.history and r.history.deal and r.history or nil
+			end
 			rowOf[c] = r
 			out[#out + 1] = r
 		end
@@ -250,7 +376,8 @@ function AH.Build(found, ctx, ahead, yield)
 end
 
 -- rows -> a new list in the order: "gain" (default: biggest first), "value" (gain per gold), "price"
--- (cheapest first); ties: cheaper, then the item key. A weapon-set row's price is the pair's (setPrice),
+-- (cheapest first), "deal" (deals first, the biggest discount first, then by gain); ties: cheaper, then
+-- the item key. A weapon-set row's price is the pair's (setPrice),
 -- the one its Price cell and gain per gold show.
 function AH.RowPrice(r) return r.setPrice or r.price or 0 end
 function AH.Sort(list, by)
@@ -264,6 +391,14 @@ function AH.Sort(list, by)
 	local cmp
 	if by == "value" then
 		cmp = function(a, b) if a.value ~= b.value then return a.value > b.value end return tie(a, b) end
+	elseif by == "deal" then
+		cmp = function(a, b)
+			local da, db = a.deal and a.deal.pct or nil, b.deal and b.deal.pct or nil
+			if (da ~= nil) ~= (db ~= nil) then return da ~= nil end
+			if da and da ~= db then return da > db end
+			if a.gain ~= b.gain then return a.gain > b.gain end
+			return tie(a, b)
+		end
 	elseif by == "price" then
 		cmp = function(a, b)
 			if price(a) ~= price(b) then return price(a) < price(b) end
@@ -318,8 +453,23 @@ end
 function AH.Rows() return rows end
 function AH.Scanning() return scan ~= nil and (not scan.done or scan.scoring ~= nil) end
 
+-- "12 min" / "3 h" / "2 days" since a time
+function AH.Age(at)
+	local s = math.max(0, AH.Now() - (at or 0))
+	if s < 3600 then return string.format("%d min", math.max(1, math.floor(s / 60))) end
+	if s < 48 * 3600 then return string.format("%d h", math.floor(s / 3600)) end
+	return string.format("%d days", math.floor(s / 86400))
+end
+-- The saved scan on show: its time | nil (a live scan, or none)
+function AH.Restored() return scan and scan.restored and scan.at or nil end
+
 function AH.Status()
 	if not scan then return nil end
+	if scan.restored then
+		if scan.scoring then return "Last scan " .. AH.Age(scan.at) .. " ago: scoring..." end
+		return string.format("Last scan %s ago: %d upgrade%s (old prices)", AH.Age(scan.at), #rows,
+			#rows == 1 and "" or "s")
+	end
 	local n = #scan.queries
 	if scan.stopped then return scan.stopped end
 	if scan.cancelled then return string.format("Cancelled (%d/%d searched)", scan.searched, n) end
@@ -356,18 +506,77 @@ end
 
 -- Score what the scan found, over frames (Browser.Start: FRAME_MS per frame): a few thousand results
 -- cost ~60-170 ms under lua5.1, too long for one frame. A later scoring (scores changed) replaces it.
+-- Saved data --------------------------------------------------------------------------------------------
+-- PoleSimGearDB.ah = { realms = { ["<realm>-<faction>"] = { scan = { at, day, cls, level, f = { [found key] =
+-- { itemID, itemSuffix, itemLevel, minPrice, totalQuantity, bonus (0 = not known) } } }, hist = { ... } } } }
+function AH.RealmKey()
+	local realm = type(GetRealmName) == "function" and GetRealmName() or nil
+	local faction = type(UnitFactionGroup) == "function" and UnitFactionGroup("player") or nil
+	return (realm or "?") .. "-" .. (faction or "?")
+end
+-- this realm-faction's saved table | nil (before the saved variables load)
+function AH.Store()
+	local db = ns.db
+	if type(db) ~= "table" then return nil end
+	if type(db.ah) ~= "table" then db.ah = {} end
+	if type(db.ah.realms) ~= "table" then db.ah.realms = {} end
+	local k = AH.RealmKey()
+	local r = db.ah.realms[k]
+	if type(r) ~= "table" then r = {} db.ah.realms[k] = r end
+	if type(r.hist) ~= "table" then r.hist = {} end
+	return r
+end
+
+local function saveScan(s, ctx)
+	local st = AH.Store()
+	if not st then return end
+	local f = {}
+	for k, e in pairs(found) do
+		local key = e.itemKey
+		if key and key.itemID then
+			f[k] = { key.itemID, key.itemSuffix or 0, key.itemLevel or 0, e.minPrice or 0, e.totalQuantity or 1, e.bonus or 0 }
+		end
+	end
+	st.scan = { at = s.at, day = s.day, cls = ctx and ctx.cls, level = ctx and ctx.level, f = f }
+end
+
+-- the saved scan -> found (browse results rebuilt from it: the row's click needs the item key) | nil
+local function loadScan(saved)
+	if not (type(saved) == "table" and type(saved.f) == "table") then return nil end
+	local out, n = {}, 0
+	for k, e in pairs(saved.f) do
+		if type(e) == "table" and type(e[1]) == "number" then
+			local key = { itemID = e[1], itemSuffix = e[2] or 0, itemLevel = e[3] or 0, battlePetSpeciesID = 0 }
+			local res = { itemKey = key, minPrice = e[4], totalQuantity = e[5] or 1 }
+			out[k] = { itemKey = key, minPrice = e[4], totalQuantity = e[5] or 1, result = res,
+				bonus = (e[6] or 0) > 0 and e[6] or nil }
+			n = n + 1
+		end
+	end
+	return n > 0 and out or nil
+end
+
 local function score(s)
 	if s.scoring and s.scoring ~= true then s.scoring:Cancel() end
 	s.scoreToken = (s.scoreToken or 0) + 1
 	local tok, ctx, f = s.scoreToken, ns.Context.Get(), found
 	local function current() return scan == s and s.scoreToken == tok end
+	local st = AH.Store()
+	local opts = { histAhead = s.histAhead, hist = st and st.hist, day = s.day }
 	s.scoring = true
 	local h = ns.Browser.Start(nil, function(res)
 		if not current() then return end
 		s.scoring = nil
 		rows, counts, prices = res[1], res[2], res[3]
+		-- a live scan's prices go into the history once (after the rows' deals: today never counts);
+		-- a complete one becomes the saved scan
+		if not s.restored and not s.recorded and st then
+			s.recorded = true
+			AH.Record(st.hist, prices.hist, s.day)
+			if not (s.cancelled or s.stopped) and next(found) then saveScan(s, ctx) end
+		end
 		changed()
-	end, function(_, y) return { AH.Build(f, ctx, s.ahead, y) } end, function()
+	end, function(_, y) return { AH.Build(f, ctx, s.ahead, y, opts) } end, function()
 		if current() then s.scoring = nil changed() end
 	end)
 	if current() and s.scoring == true then s.scoring = h end
@@ -452,11 +661,16 @@ function AH.Scan()
 	local ctx = ns.Context.Get()
 	if not ctx then return false, "no weights for this character" end
 	local ahead = ns.Options and ns.Options.View().ahead or 0
-	local queries = AH.Queries(ctx.cls, ctx.level, ahead)
+	-- the searches reach PRICE_AHEAD levels at least (the price history); rows stay within `ahead`
+	local histAhead = math.max(ahead, AH.PRICE_AHEAD)
+	local queries = AH.Queries(ctx.cls, ctx.level, histAhead)
 	if #queries == 0 then return false, "nothing to search for" end
 	hook(api)
+	if scan and scan.scoring and scan.scoring ~= true then scan.scoring:Cancel() end
 	found, rows, counts, prices = {}, {}, nil, nil
-	scan = { queries = queries, i = 0, pages = 0, failed = 0, searched = 0, level = ctx.level, ahead = ahead }
+	local now = AH.Now()
+	scan = { queries = queries, i = 0, pages = 0, failed = 0, searched = 0, level = ctx.level, ahead = ahead,
+		histAhead = histAhead, at = now, day = AH.Day(now) }
 	advance()
 	return true
 end
@@ -485,18 +699,45 @@ ns.RegisterEvent("AUCTION_HOUSE_THROTTLED_SYSTEM_READY", function()
 	if scan and not scan.done and (scan.waiting == "send" or scan.waiting == "more") then trySend() end
 end)
 
--- Session only: the auction house closing stops a scan and lets go of every result.
+-- The auction house closing stops a scan and lets go of every result (a complete scan is saved).
+local ahOpen, restorePending = false, false
 function AH.Clear()
 	if scan and scan.scoring and scan.scoring ~= true then scan.scoring:Cancel() end
 	scan, found, rows, counts, prices = nil, {}, {}, nil, nil
+	ahOpen, restorePending = false, false
 	changed()
 end
 ns.RegisterEvent("AUCTION_HOUSE_CLOSED", AH.Clear)
 
+-- The auction house opening: the saved scan of this realm-faction, re-scored for this character (its
+-- level, spec and worn gear now). No weights yet (the character's data still loading): again when
+-- scores change. -> true (restoring) | false
+function AH.Restore()
+	restorePending = false
+	if scan then return false end
+	local st = AH.Store()
+	local f = st and loadScan(st.scan)
+	if not f then return false end
+	if not ns.Context.Get() then restorePending = true return false end
+	local ahead = ns.Options and ns.Options.View().ahead or 0
+	found, rows, counts, prices = f, {}, nil, nil
+	scan = { restored = true, done = true, queries = {}, i = 0, pages = 0, failed = 0, searched = 0, ahead = ahead,
+		histAhead = ahead, at = st.scan.at or 0, day = st.scan.day or AH.Day(st.scan.at) }
+	score(scan)
+	changed()
+	return true
+end
+ns.RegisterEvent("AUCTION_HOUSE_SHOW", function()
+	ahOpen = true
+	AH.Restore()
+end)
+
 -- Scores changed (an item bought and equipped, a level, talents) or items turned out not to exist on
 -- the server (Items.MarkMissing: candidate() no longer gets them): the results are scored again.
 local function rescore()
+	if restorePending and ahOpen and not scan then AH.Restore() return end
 	if not (scan and scan.done and next(found)) then return end
+	if scan.restored then scan.ahead = ns.Options and ns.Options.View().ahead or 0 scan.histAhead = scan.ahead end
 	score(scan)
 	changed()
 end

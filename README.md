@@ -1,6 +1,6 @@
 # PoleSim Gear
 
-Version 0.7.11. WoW: Forever addon: PoleSim's simulated, level-banded gear weights in game. Item scores with a
+Version 0.7.12. WoW: Forever addon: PoleSim's simulated, level-banded gear weights in game. Item scores with a
 "how?" breakdown, upgrade arrows, the best quest reward, and a gear planner window with where to get
 each upgrade. In testing.
 
@@ -146,11 +146,11 @@ weights it scores with, e.g. **Scored for: Retribution (chosen)** (chosen in Set
 browse searches, one at a time and as fast as the auction house allows (a priest or mage: 6, cloth,
 neck/rings/trinkets/off hands and cloaks, then one per weapon type; more for classes with more armor
 types (leather, mail from 40 for a shaman, plate from 40 for a paladin, shields) and weapon types; usable items, common to epic, up to
-your level + the window's look ahead); **Cancel** stops it. Each item found is scored like the window
+your level + the window's look ahead, searched to at least your level + 2 for the price history); **Cancel** stops it. Each item found is scored like the window
 (against what you wear, rings and trinkets against the weaker one, weapons as one set: under a staff a
 one-hander counts with the best off hand for sale) and listed when it is an upgrade: icon, name with its
 suffix, slot, **lvl N** in gold for an item above your level (scored with that level's weights), gain,
-the cheapest price, and gain per gold. Sort by **Gain**, **Value** (gain per gold) or **Price**; the
+the cheapest price, and gain per gold. Sort by **Gain**, **Value** (gain per gold), **Price** or **Deals**; the
 **Slot** dropdown beside them shows one slot only (**All slots** by default; it lists the slots found with
 their counts, e.g. "Rings (12)", keeps your choice while the auction house stays open and goes back to
 All slots when it closes). Hover a
@@ -159,7 +159,15 @@ auction house, cheapest first. Buying is yours: PoleSim Gear never bids or buys.
 
 While the auction house is open after a scan, the Gear Plan says **AH: <price>** on a plan item for
 sale, and an equipped slot's tooltip names a scanned item that beats the plan (**AH: <item> +N
-(<price>)**). Prices are for the session only: they go when the auction house closes. The auction
+(<price>)**). The last full scan is kept for your realm and faction (every character there shares it):
+when the auction house opens again the list is back, re-scored for the character there, with "Last scan
+3 h ago" until you scan again; those prices are a hint (a click opens the live listings). Each scan also
+keeps one price a day per item (the day's cheapest, 14 days; items unseen for 30 days are forgotten,
+3000 items at most), from every item scored, upgrade or not. A row priced at most 60% of the item's
+usual price (the median of 3 or more earlier days; today never counts) gets an orange **deal** tag and
+a tooltip line "Deal: 45% below usual (median ... over N days)"; **Deals** sorts them first, biggest
+discount first. Without 3 earlier days nothing is called a deal. Scans search 2 levels past your level
+(or the look ahead, if more) for the price history only; the list stays within your look ahead. The auction
 house's own list shows the scan's last search afterwards (search again as usual). If the browse list
 gives one row for every suffix of an item ("... of the Owl", "of the Bear"), the row is scored with its
 best suffix and says "any suffix"; its listings show each one's suffix (with the upgrade arrow).
