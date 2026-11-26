@@ -60,6 +60,21 @@ return {
 		T.eq(D.Text(D.Diff("item:8071", client({ ["item:8071"] = { loc = "INVTYPE_RANGEDRIGHT", stats = stick } }))),
 			"dps 17.65 -> 19, sp 2 -> 4")
 	end,
+	-- 0.7.10: a weapon with a caster suffix deals less damage in game (Carving Knife of Healing 3.75 DPS,
+	-- bare 5.94): the shipped side scores the same, so /psg drift shows no difference
+	caster_suffix = function()
+		local ns = T.addon(FILES)
+		local D = ns.Drift
+		local link = "item:2140" .. (":"):rep(12) .. "1:12920"
+		local healing = { ITEM_MOD_INTELLECT_SHORT = 1, ITEM_MOD_SPELL_DAMAGE_DONE_SHORT = 3,
+			ITEM_MOD_SPELL_HEALING_DONE_SHORT = 9, ITEM_MOD_DAMAGE_PER_SECOND_SHORT = 3.75 }
+		T.eq(D.Diff(link, client({ [link] = { loc = "INVTYPE_WEAPON", stats = healing } })), nil)
+		T.eq(D.Diff("item:2140", client({ ["item:2140"] = { loc = "INVTYPE_WEAPON",
+			stats = { ITEM_MOD_DAMAGE_PER_SECOND_SHORT = 5.94 } } })), nil, "bare knife")
+		local eagle = "item:2140" .. (":"):rep(12) .. "1:12718"
+		T.eq(D.Diff(eagle, client({ [eagle] = { loc = "INVTYPE_WEAPON", stats = { ITEM_MOD_INTELLECT_SHORT = 1,
+			ITEM_MOD_STAMINA_SHORT = 1, ITEM_MOD_DAMAGE_PER_SECOND_SHORT = 5.94 } } })), nil, "of the Eagle")
+	end,
 	-- /psg drift: worn + bags (each link once), a compact line per item, 'no differences', items not
 	-- loaded are requested and counted; /psg drift <id> checks one; runs at most every few seconds
 	command = function()

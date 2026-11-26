@@ -137,15 +137,19 @@ function Score.Instance(it, bonus)
 	local stats = {}
 	for k, v in pairs(it.s) do stats[k] = v end
 	local sname
+	local dps = it.dps
 	if bonus then
 		local extra
 		sname, extra = Score.SuffixStats(it, bonus)
 		for k, v in pairs(extra) do stats[k] = (stats[k] or 0) + v end
+		-- a caster suffix (of Healing, of the Sorcerer, ...) cuts the weapon's damage to its caster share
+		-- (one-hand 2/3, two-hand 29/39 of its table): the shipped dc is that DPS from the rounded damage
+		if sname and it.dc and ns.DATA.suffixes[bonus].cd then dps = it.dc end
 	end
 	return {
 		id = it.id, bonus = sname and bonus or nil, suffix = sname, name = it.name .. (sname and (" " .. sname) or ""),
 		quality = it.q, icon = it.icon, rl = it.rl, inv = it.inv, c = it.c, sc = it.sc, cm = it.cm, rm = it.rm,
-		unique = it.u, stats = stats, armor = it.ar, dps = it.dps, weapon = it.dps > 0, speed = it.speed,
+		unique = it.u, stats = stats, armor = it.ar, dps = dps, weapon = it.dps > 0, speed = it.speed,
 	}
 end
 

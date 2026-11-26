@@ -233,6 +233,9 @@ X	hunter	284101	0	mh	_rSpeed=2.8;agi=1;ap=0.2;crit=8;dps=0.5;hit=7;int=0.2;rap=0
 X	hunter	285328	0	mh	_rSpeed=2.8;agi=1;ap=0.2;crit=8;dps=0.5;hit=7;int=0.2;rap=0.4;rdps=4;rspeed=3	11.47	dps:22.94:dps:0.5:11.47
 X	hunter	287066	0	ranged	_rSpeed=2.8;agi=1;ap=0.2;crit=8;dps=0.5;hit=7;int=0.2;rap=0.4;rdps=4;rspeed=3	56.2	agi:2:agi:1:2,rdps:14:rdps:4:56,rspeed:-0.6:rspeed:3:-1.8
 R	priest/shadow	12	1315	0	gear	10.05	sta:10:sta:0.24:2.4,spi:15:spi:0.51:7.65
+R	priest/shadow	12	2140	0	mh	0.0	
+R	priest/shadow	12	2140	12718	mh	0.62	int:1:int:0.38:0.38,sta:1:sta:0.24:0.24
+R	priest/shadow	12	2140	12917	mh	5.88	sp:5:sp:1.1:5.5,int:1:int:0.38:0.38
 R	priest/shadow	12	2225	0	mh	0.0	
 R	priest/shadow	12	2614	0	gear	2.0300000000000002	armor:29:armor:0.07:2.03
 R	priest/shadow	12	3570	0	mh	0.0	
@@ -315,6 +318,9 @@ R	priest/shadow	12	254111	0	gear	10.32	int:9:int:0.38:3.42,sta:13:sta:0.24:3.12,
 R	priest/shadow	12	272577	0	gear	41.425	int:18:int:0.38:6.84,sta:34:sta:0.24:8.16,crit:0.5:spellCrit:0.93:0.465,sp:18:sp:1.1:19.8,armor:88:armor:0.07:6.16
 R	priest/shadow	12	280082	0	mh	92.16000000000001	int:15:int:0.38:5.7,hit:1.5:spellHit:2.1:3.15,spi:21:spi:0.51:10.71,sp:66:sp:1.1:72.6
 R	priest/shadow	25	1315	0	gear	19.05	sta:10:sta:0.99:9.9,spi:15:spi:0.61:9.15
+R	priest/shadow	25	2140	0	mh	0.0	
+R	priest/shadow	25	2140	12718	mh	1.6	int:1:int:0.61:0.61,sta:1:sta:0.99:0.99
+R	priest/shadow	25	2140	12917	mh	6.61	sp:5:sp:1.2:6,int:1:int:0.61:0.61
 R	priest/shadow	25	2225	0	mh	0.0	
 R	priest/shadow	25	2614	0	gear	1.653	armor:29:armor:0.057:1.653
 R	priest/shadow	25	3570	0	mh	0.0	
@@ -397,6 +403,9 @@ R	priest/shadow	25	254111	0	gear	21.438	int:9:int:0.61:5.49,sta:13:sta:0.99:12.8
 R	priest/shadow	25	272577	0	gear	72.056	int:18:int:0.61:10.98,sta:34:sta:0.99:33.66,crit:0.5:spellCrit:1.6:0.8,sp:18:sp:1.2:21.6,armor:88:armor:0.057:5.016
 R	priest/shadow	25	280082	0	mh	106.26	int:15:int:0.61:9.15,hit:1.5:spellHit:3.4:5.1,spi:21:spi:0.61:12.81,sp:66:sp:1.2:79.2
 R	priest/shadow	34	1315	0	gear	16.049999999999997	sta:10:sta:0.75:7.5,spi:15:spi:0.57:8.55
+R	priest/shadow	34	2140	0	mh	0.0	
+R	priest/shadow	34	2140	12718	mh	1.38	int:1:int:0.63:0.63,sta:1:sta:0.75:0.75
+R	priest/shadow	34	2140	12917	mh	6.13	sp:5:sp:1.1:5.5,int:1:int:0.63:0.63
 R	priest/shadow	34	2225	0	mh	0.0	
 R	priest/shadow	34	2614	0	gear	1.276	armor:29:armor:0.044:1.276
 R	priest/shadow	34	3570	0	mh	0.0	
@@ -479,6 +488,9 @@ R	priest/shadow	34	254111	0	gear	17.796	int:9:int:0.63:5.67,sta:13:sta:0.75:9.75
 R	priest/shadow	34	272577	0	gear	62.012	int:18:int:0.63:11.34,sta:34:sta:0.75:25.5,crit:0.5:spellCrit:3:1.5,sp:18:sp:1.1:19.8,armor:88:armor:0.044:3.872
 R	priest/shadow	34	280082	0	mh	101.82000000000001	int:15:int:0.63:9.45,hit:1.5:spellHit:5.2:7.8,spi:21:spi:0.57:11.97,sp:66:sp:1.1:72.6
 R	priest/shadow	45	1315	0	gear	10.6	sta:10:sta:0.16:1.6,spi:15:spi:0.6:9
+R	priest/shadow	45	2140	0	mh	0.0	
+R	priest/shadow	45	2140	12718	mh	0.9400000000000001	int:1:int:0.78:0.78,sta:1:sta:0.16:0.16
+R	priest/shadow	45	2140	12917	mh	5.78	sp:5:sp:1:5,int:1:int:0.78:0.78
 R	priest/shadow	45	2225	0	mh	0.0	
 R	priest/shadow	45	2614	0	gear	0.6960000000000001	armor:29:armor:0.024:0.696
 R	priest/shadow	45	3570	0	mh	0.0	
@@ -561,6 +573,9 @@ R	priest/shadow	45	254111	0	gear	10.396	int:9:int:0.78:7.02,sta:13:sta:0.16:2.08
 R	priest/shadow	45	272577	0	gear	41.642	int:18:int:0.78:14.04,sta:34:sta:0.16:5.44,crit:0.5:spellCrit:4.1:2.05,sp:18:sp:1:18,armor:88:armor:0.024:2.112
 R	priest/shadow	45	280082	0	mh	93.9	int:15:int:0.78:11.7,hit:1.5:spellHit:2.4:3.6,spi:21:spi:0.6:12.6,sp:66:sp:1:66
 R	priest/shadow	55	1315	0	gear	11.0	sta:10:sta:0.11:1.1,spi:15:spi:0.66:9.9
+R	priest/shadow	55	2140	0	mh	0.0	
+R	priest/shadow	55	2140	12718	mh	0.66	int:1:int:0.55:0.55,sta:1:sta:0.11:0.11
+R	priest/shadow	55	2140	12917	mh	5.55	sp:5:sp:1:5,int:1:int:0.55:0.55
 R	priest/shadow	55	2225	0	mh	0.0	
 R	priest/shadow	55	2614	0	gear	0.24650000000000002	armor:29:armor:0.0085:0.247
 R	priest/shadow	55	3570	0	mh	0.0	
@@ -643,6 +658,9 @@ R	priest/shadow	55	254111	0	gear	6.8389999999999995	int:9:int:0.55:4.95,sta:13:s
 R	priest/shadow	55	272577	0	gear	35.238	int:18:int:0.55:9.9,sta:34:sta:0.11:3.74,crit:0.5:spellCrit:5.7:2.85,sp:18:sp:1:18,armor:88:armor:0.0085:0.748
 R	priest/shadow	55	280082	0	mh	92.16	int:15:int:0.55:8.25,hit:1.5:spellHit:2.7:4.05,spi:21:spi:0.66:13.86,sp:66:sp:1:66
 R	priest/shadow	60	1315	0	gear	17.8	sta:10:sta:0.28:2.8,spi:15:spi:1:15
+R	priest/shadow	60	2140	0	mh	0.0	
+R	priest/shadow	60	2140	12718	mh	0.68	int:1:int:0.4:0.4,sta:1:sta:0.28:0.28
+R	priest/shadow	60	2140	12917	mh	5.4	sp:5:sp:1:5,int:1:int:0.4:0.4
 R	priest/shadow	60	2225	0	mh	0.0	
 R	priest/shadow	60	2614	0	gear	1.1019999999999999	armor:29:armor:0.038:1.102
 R	priest/shadow	60	3570	0	mh	0.0	
@@ -725,6 +743,9 @@ R	priest/shadow	60	254111	0	gear	9.292	int:9:int:0.4:3.6,sta:13:sta:0.28:3.64,ar
 R	priest/shadow	60	272577	0	gear	42.014	int:18:int:0.4:7.2,sta:34:sta:0.28:9.52,crit:0.5:spellCrit:7.9:3.95,sp:18:sp:1:18,armor:88:armor:0.038:3.344
 R	priest/shadow	60	280082	0	mh	97.2	int:15:int:0.4:6,hit:1.5:spellHit:2.8:4.2,spi:21:spi:1:21,sp:66:sp:1:66
 R	priest/holy	12	1315	0	gear	8.81	sta:10:sta:0.8:8,spi:15:spi:0.054:0.81
+R	priest/holy	12	2140	0	mh	0.0	
+R	priest/holy	12	2140	12718	mh	1.23	int:1:int:0.43:0.43,sta:1:sta:0.8:0.8
+R	priest/holy	12	2140	12917	mh	5.43	sp:5:sp:1:5,int:1:int:0.43:0.43
 R	priest/holy	12	2225	0	mh	0.0	
 R	priest/holy	12	2614	0	gear	1.218	armor:29:armor:0.042:1.218
 R	priest/holy	12	3570	0	mh	0.0	
@@ -807,6 +828,9 @@ R	priest/holy	12	254111	0	gear	16.538	int:9:int:0.43:3.87,sta:13:sta:0.8:10.4,ar
 R	priest/holy	12	272577	0	gear	56.996	int:18:int:0.43:7.74,sta:34:sta:0.8:27.2,crit:0.5:spellCrit:0.72:0.36,sp:18:sp:1:18,armor:88:armor:0.042:3.696
 R	priest/holy	12	280082	0	mh	76.134	int:15:int:0.43:6.45,hit:1.5:spellHit:1.7:2.55,spi:21:spi:0.054:1.134,sp:66:sp:1:66
 R	priest/holy	25	1315	0	gear	15.85	sta:10:sta:1.3:13,spi:15:spi:0.19:2.85
+R	priest/holy	25	2140	0	mh	0.0	
+R	priest/holy	25	2140	12718	mh	2.09	int:1:int:0.79:0.79,sta:1:sta:1.3:1.3
+R	priest/holy	25	2140	12917	mh	5.79	sp:5:sp:1:5,int:1:int:0.79:0.79
 R	priest/holy	25	2225	0	mh	0.0	
 R	priest/holy	25	2614	0	gear	1.9140000000000001	armor:29:armor:0.066:1.914
 R	priest/holy	25	3570	0	mh	0.0	
@@ -889,6 +913,9 @@ R	priest/holy	25	254111	0	gear	27.574	int:9:int:0.79:7.11,sta:13:sta:1.3:16.9,ar
 R	priest/holy	25	272577	0	gear	83.02799999999999	int:18:int:0.79:14.22,sta:34:sta:1.3:44.2,crit:0.5:spellCrit:1.6:0.8,sp:18:sp:1:18,armor:88:armor:0.066:5.808
 R	priest/holy	25	280082	0	mh	86.78999999999999	int:15:int:0.79:11.85,hit:1.5:spellHit:3.3:4.95,spi:21:spi:0.19:3.99,sp:66:sp:1:66
 R	priest/holy	34	1315	0	gear	21.35	sta:10:sta:0.89:8.9,spi:15:spi:0.83:12.45
+R	priest/holy	34	2140	0	mh	0.0	
+R	priest/holy	34	2140	12718	mh	1.57	int:1:int:0.68:0.68,sta:1:sta:0.89:0.89
+R	priest/holy	34	2140	12917	mh	5.68	sp:5:sp:1:5,int:1:int:0.68:0.68
 R	priest/holy	34	2225	0	mh	0.0	
 R	priest/holy	34	2614	0	gear	1.334	armor:29:armor:0.046:1.334
 R	priest/holy	34	3570	0	mh	0.0	
@@ -971,6 +998,9 @@ R	priest/holy	34	254111	0	gear	20.174	int:9:int:0.68:6.12,sta:13:sta:0.89:11.57,
 R	priest/holy	34	272577	0	gear	65.648	int:18:int:0.68:12.24,sta:34:sta:0.89:30.26,crit:0.5:spellCrit:2.2:1.1,sp:18:sp:1:18,armor:88:armor:0.046:4.048
 R	priest/holy	34	280082	0	mh	101.13	int:15:int:0.68:10.2,hit:1.5:spellHit:5:7.5,spi:21:spi:0.83:17.43,sp:66:sp:1:66
 R	priest/holy	45	1315	0	gear	17.7	sta:10:sta:0.69:6.9,spi:15:spi:0.72:10.8
+R	priest/holy	45	2140	0	mh	0.0	
+R	priest/holy	45	2140	12718	mh	1.69	int:1:int:1:1,sta:1:sta:0.69:0.69
+R	priest/holy	45	2140	12917	mh	6.0	sp:5:sp:1:5,int:1:int:1:1
 R	priest/holy	45	2225	0	mh	0.0	
 R	priest/holy	45	2614	0	gear	2.2039999999999997	armor:29:armor:0.076:2.204
 R	priest/holy	45	3570	0	mh	0.0	
@@ -1053,6 +1083,9 @@ R	priest/holy	45	254111	0	gear	22.073999999999998	int:9:int:1:9,sta:13:sta:0.69:
 R	priest/holy	45	272577	0	gear	67.398	int:18:int:1:18,sta:34:sta:0.69:23.46,crit:0.5:spellCrit:2.5:1.25,sp:18:sp:1:18,armor:88:armor:0.076:6.688
 R	priest/holy	45	280082	0	mh	105.42	int:15:int:1:15,hit:1.5:spellHit:6.2:9.3,spi:21:spi:0.72:15.12,sp:66:sp:1:66
 R	priest/holy	55	1315	0	gear	24.5	sta:10:sta:0.8:8,spi:15:spi:1.1:16.5
+R	priest/holy	55	2140	0	mh	0.0	
+R	priest/holy	55	2140	12718	mh	2.2	int:1:int:1.4:1.4,sta:1:sta:0.8:0.8
+R	priest/holy	55	2140	12917	mh	6.4	sp:5:sp:1:5,int:1:int:1.4:1.4
 R	priest/holy	55	2225	0	mh	0.0	
 R	priest/holy	55	2614	0	gear	3.48	armor:29:armor:0.12:3.48
 R	priest/holy	55	3570	0	mh	0.0	
@@ -1135,6 +1168,9 @@ R	priest/holy	55	254111	0	gear	29.48	int:9:int:1.4:12.6,sta:13:sta:0.8:10.4,armo
 R	priest/holy	55	272577	0	gear	84.11000000000001	int:18:int:1.4:25.2,sta:34:sta:0.8:27.2,crit:0.5:spellCrit:6.3:3.15,sp:18:sp:1:18,armor:88:armor:0.12:10.56
 R	priest/holy	55	280082	0	mh	120.6	int:15:int:1.4:21,hit:1.5:spellHit:7:10.5,spi:21:spi:1.1:23.1,sp:66:sp:1:66
 R	priest/holy	60	1315	0	gear	24.3	sta:10:sta:0.48:4.8,spi:15:spi:1.3:19.5
+R	priest/holy	60	2140	0	mh	0.0	
+R	priest/holy	60	2140	12718	mh	1.44	int:1:int:0.96:0.96,sta:1:sta:0.48:0.48
+R	priest/holy	60	2140	12917	mh	5.96	sp:5:sp:1:5,int:1:int:0.96:0.96
 R	priest/holy	60	2225	0	mh	0.0	
 R	priest/holy	60	2614	0	gear	1.6820000000000002	armor:29:armor:0.058:1.682
 R	priest/holy	60	3570	0	mh	0.0	
@@ -1217,6 +1253,9 @@ R	priest/holy	60	254111	0	gear	18.012	int:9:int:0.96:8.64,sta:13:sta:0.48:6.24,a
 R	priest/holy	60	272577	0	gear	59.904	int:18:int:0.96:17.28,sta:34:sta:0.48:16.32,crit:0.5:spellCrit:6.4:3.2,sp:18:sp:1:18,armor:88:armor:0.058:5.104
 R	priest/holy	60	280082	0	mh	125.7	int:15:int:0.96:14.4,hit:1.5:spellHit:12:18,spi:21:spi:1.3:27.3,sp:66:sp:1:66
 R	priest/discipline	12	1315	0	gear	9.2	sta:10:sta:0.62:6.2,spi:15:spi:0.2:3
+R	priest/discipline	12	2140	0	mh	0.0	
+R	priest/discipline	12	2140	12718	mh	1.1099999999999999	int:1:int:0.49:0.49,sta:1:sta:0.62:0.62
+R	priest/discipline	12	2140	12917	mh	5.49	sp:5:sp:1:5,int:1:int:0.49:0.49
 R	priest/discipline	12	2225	0	mh	0.0	
 R	priest/discipline	12	2614	0	gear	1.276	armor:29:armor:0.044:1.276
 R	priest/discipline	12	3570	0	mh	0.0	
@@ -1299,6 +1338,9 @@ R	priest/discipline	12	254111	0	gear	14.846	int:9:int:0.49:4.41,sta:13:sta:0.62:
 R	priest/discipline	12	272577	0	gear	52.117	int:18:int:0.49:8.82,sta:34:sta:0.62:21.08,crit:0.5:spellCrit:0.69:0.345,sp:18:sp:1:18,armor:88:armor:0.044:3.872
 R	priest/discipline	12	280082	0	mh	80.25	int:15:int:0.49:7.35,hit:1.5:spellHit:1.8:2.7,spi:21:spi:0.2:4.2,sp:66:sp:1:66
 R	priest/discipline	25	1315	0	gear	16.85	sta:10:sta:0.95:9.5,spi:15:spi:0.49:7.35
+R	priest/discipline	25	2140	0	mh	0.0	
+R	priest/discipline	25	2140	12718	mh	2.15	int:1:int:1.2:1.2,sta:1:sta:0.95:0.95
+R	priest/discipline	25	2140	12917	mh	6.2	sp:5:sp:1:5,int:1:int:1.2:1.2
 R	priest/discipline	25	2225	0	mh	0.0	
 R	priest/discipline	25	2614	0	gear	1.3920000000000001	armor:29:armor:0.048:1.392
 R	priest/discipline	25	3570	0	mh	0.0	
@@ -1381,6 +1423,9 @@ R	priest/discipline	25	254111	0	gear	25.741999999999997	int:9:int:1.2:10.8,sta:1
 R	priest/discipline	25	272577	0	gear	77.02399999999999	int:18:int:1.2:21.6,sta:34:sta:0.95:32.3,crit:0.5:spellCrit:1.8:0.9,sp:18:sp:1:18,armor:88:armor:0.048:4.224
 R	priest/discipline	25	280082	0	mh	99.09	int:15:int:1.2:18,hit:1.5:spellHit:3.2:4.8,spi:21:spi:0.49:10.29,sp:66:sp:1:66
 R	priest/discipline	34	1315	0	gear	24.1	sta:10:sta:0.61:6.1,spi:15:spi:1.2:18
+R	priest/discipline	34	2140	0	mh	0.0	
+R	priest/discipline	34	2140	12718	mh	1.3399999999999999	int:1:int:0.73:0.73,sta:1:sta:0.61:0.61
+R	priest/discipline	34	2140	12917	mh	5.73	sp:5:sp:1:5,int:1:int:0.73:0.73
 R	priest/discipline	34	2225	0	mh	0.0	
 R	priest/discipline	34	2614	0	gear	1.189	armor:29:armor:0.041:1.189
 R	priest/discipline	34	3570	0	mh	0.0	
@@ -1463,6 +1508,9 @@ R	priest/discipline	34	254111	0	gear	16.714	int:9:int:0.73:6.57,sta:13:sta:0.61:
 R	priest/discipline	34	272577	0	gear	56.98799999999999	int:18:int:0.73:13.14,sta:34:sta:0.61:20.74,crit:0.5:spellCrit:3:1.5,sp:18:sp:1:18,armor:88:armor:0.041:3.608
 R	priest/discipline	34	280082	0	mh	111.3	int:15:int:0.73:10.95,hit:1.5:spellHit:6.1:9.15,spi:21:spi:1.2:25.2,sp:66:sp:1:66
 R	priest/discipline	45	1315	0	gear	25.45	sta:10:sta:1.9:19,spi:15:spi:0.43:6.45
+R	priest/discipline	45	2140	0	mh	0.0	
+R	priest/discipline	45	2140	12718	mh	2.9	int:1:int:1:1,sta:1:sta:1.9:1.9
+R	priest/discipline	45	2140	12917	mh	6.0	sp:5:sp:1:5,int:1:int:1:1
 R	priest/discipline	45	2225	0	mh	0.0	
 R	priest/discipline	45	2614	0	gear	3.48	armor:29:armor:0.12:3.48
 R	priest/discipline	45	3570	0	mh	0.0	
@@ -1545,6 +1593,9 @@ R	priest/discipline	45	254111	0	gear	40.18	int:9:int:1:9,sta:13:sta:1.9:24.7,arm
 R	priest/discipline	45	272577	0	gear	112.96	int:18:int:1:18,sta:34:sta:1.9:64.6,crit:0.5:spellCrit:3.6:1.8,sp:18:sp:1:18,armor:88:armor:0.12:10.56
 R	priest/discipline	45	280082	0	mh	102.78	int:15:int:1:15,hit:1.5:spellHit:8.5:12.75,spi:21:spi:0.43:9.03,sp:66:sp:1:66
 R	priest/discipline	55	1315	0	gear	25.700000000000003	sta:10:sta:0.92:9.2,spi:15:spi:1.1:16.5
+R	priest/discipline	55	2140	0	mh	0.0	
+R	priest/discipline	55	2140	12718	mh	1.9	int:1:int:0.98:0.98,sta:1:sta:0.92:0.92
+R	priest/discipline	55	2140	12917	mh	5.98	sp:5:sp:1:5,int:1:int:0.98:0.98
 R	priest/discipline	55	2225	0	mh	0.0	
 R	priest/discipline	55	2614	0	gear	1.363	armor:29:armor:0.047:1.363
 R	priest/discipline	55	3570	0	mh	0.0	
@@ -1627,6 +1678,9 @@ R	priest/discipline	55	254111	0	gear	23.318	int:9:int:0.98:8.82,sta:13:sta:0.92:
 R	priest/discipline	55	272577	0	gear	73.256	int:18:int:0.98:17.64,sta:34:sta:0.92:31.28,crit:0.5:spellCrit:4.4:2.2,sp:18:sp:1:18,armor:88:armor:0.047:4.136
 R	priest/discipline	55	280082	0	mh	118.8	int:15:int:0.98:14.7,hit:1.5:spellHit:10:15,spi:21:spi:1.1:23.1,sp:66:sp:1:66
 R	priest/discipline	60	1315	0	gear	16.599999999999998	sta:10:sta:0.22:2.2,spi:15:spi:0.96:14.4
+R	priest/discipline	60	2140	0	mh	0.0	
+R	priest/discipline	60	2140	12718	mh	0.68	int:1:int:0.46:0.46,sta:1:sta:0.22:0.22
+R	priest/discipline	60	2140	12917	mh	5.46	sp:5:sp:1:5,int:1:int:0.46:0.46
 R	priest/discipline	60	2225	0	mh	0.0	
 R	priest/discipline	60	2614	0	gear	0.377	armor:29:armor:0.013:0.377
 R	priest/discipline	60	3570	0	mh	0.0	
@@ -1710,6 +1764,9 @@ R	priest/discipline	60	272577	0	gear	37.254	int:18:int:0.46:8.28,sta:34:sta:0.22
 R	priest/discipline	60	280082	0	mh	106.56	int:15:int:0.46:6.9,hit:1.5:spellHit:9:13.5,spi:21:spi:0.96:20.16,sp:66:sp:1:66
 R	mage/frost	12	25	0	mh	0.0	
 R	mage/frost	12	1315	0	gear	8.6	sta:10:sta:0.62:6.2,spi:15:spi:0.16:2.4
+R	mage/frost	12	2140	0	mh	0.0	
+R	mage/frost	12	2140	12718	mh	0.6799999999999999	int:1:int:0.06:0.06,sta:1:sta:0.62:0.62
+R	mage/frost	12	2140	12917	mh	5.56	sp:5:sp:1.1:5.5,int:1:int:0.06:0.06
 R	mage/frost	12	2225	0	mh	0.0	
 R	mage/frost	12	2614	0	gear	0.27549999999999997	armor:29:armor:0.0095:0.275
 R	mage/frost	12	4023	0	mh	0.0	
@@ -1790,6 +1847,9 @@ R	mage/frost	12	254111	0	gear	9.113000000000001	int:9:int:0.06:0.54,sta:13:sta:0
 R	mage/frost	12	280082	0	mh	77.745	int:15:int:0.06:0.9,hit:1.5:spellHit:0.59:0.885,spi:21:spi:0.16:3.36,sp:66:sp:1.1:72.6
 R	mage/frost	25	25	0	mh	0.0	
 R	mage/frost	25	1315	0	gear	10.3	sta:10:sta:0.7:7,spi:15:spi:0.22:3.3
+R	mage/frost	25	2140	0	mh	0.0	
+R	mage/frost	25	2140	12718	mh	0.9199999999999999	int:1:int:0.22:0.22,sta:1:sta:0.7:0.7
+R	mage/frost	25	2140	12917	mh	5.72	sp:5:sp:1.1:5.5,int:1:int:0.22:0.22
 R	mage/frost	25	2225	0	mh	0.0	
 R	mage/frost	25	2614	0	gear	0.29	armor:29:armor:0.01:0.29
 R	mage/frost	25	4023	0	mh	0.0	
@@ -1870,6 +1930,9 @@ R	mage/frost	25	254111	0	gear	11.620000000000001	int:9:int:0.22:1.98,sta:13:sta:
 R	mage/frost	25	280082	0	mh	80.5935	int:15:int:0.22:3.3,hit:1.5:spellHit:0.049:0.074,spi:21:spi:0.22:4.62,sp:66:sp:1.1:72.6
 R	mage/frost	34	25	0	mh	0.0	
 R	mage/frost	34	1315	0	gear	10.45	sta:10:sta:0.61:6.1,spi:15:spi:0.29:4.35
+R	mage/frost	34	2140	0	mh	0.0	
+R	mage/frost	34	2140	12718	mh	0.9299999999999999	int:1:int:0.32:0.32,sta:1:sta:0.61:0.61
+R	mage/frost	34	2140	12917	mh	5.82	sp:5:sp:1.1:5.5,int:1:int:0.32:0.32
 R	mage/frost	34	2225	0	mh	0.0	
 R	mage/frost	34	2614	0	gear	0.406	armor:29:armor:0.014:0.406
 R	mage/frost	34	4023	0	mh	0.0	
@@ -1950,6 +2013,9 @@ R	mage/frost	34	254111	0	gear	11.565999999999999	int:9:int:0.32:2.88,sta:13:sta:
 R	mage/frost	34	280082	0	mh	83.5815	int:15:int:0.32:4.8,hit:1.5:spellHit:0.061:0.091,spi:21:spi:0.29:6.09,sp:66:sp:1.1:72.6
 R	mage/frost	45	25	0	mh	0.0	
 R	mage/frost	45	1315	0	gear	13.100000000000001	sta:10:sta:0.32:3.2,spi:15:spi:0.66:9.9
+R	mage/frost	45	2140	0	mh	0.0	
+R	mage/frost	45	2140	12718	mh	0.99	int:1:int:0.67:0.67,sta:1:sta:0.32:0.32
+R	mage/frost	45	2140	12917	mh	6.17	sp:5:sp:1.1:5.5,int:1:int:0.67:0.67
 R	mage/frost	45	2225	0	mh	0.0	
 R	mage/frost	45	2614	0	gear	0.406	armor:29:armor:0.014:0.406
 R	mage/frost	45	4023	0	mh	0.0	
@@ -2030,6 +2096,9 @@ R	mage/frost	45	254111	0	gear	10.946000000000002	int:9:int:0.67:6.03,sta:13:sta:
 R	mage/frost	45	280082	0	mh	96.69000000000001	int:15:int:0.67:10.05,hit:1.5:spellHit:0.12:0.18,spi:21:spi:0.66:13.86,sp:66:sp:1.1:72.6
 R	mage/frost	55	25	0	mh	0.0	
 R	mage/frost	55	1315	0	gear	13.450000000000001	sta:10:sta:0.34:3.4,spi:15:spi:0.67:10.05
+R	mage/frost	55	2140	0	mh	0.0	
+R	mage/frost	55	2140	12718	mh	1.06	int:1:int:0.72:0.72,sta:1:sta:0.34:0.34
+R	mage/frost	55	2140	12917	mh	6.22	sp:5:sp:1.1:5.5,int:1:int:0.72:0.72
 R	mage/frost	55	2225	0	mh	0.0	
 R	mage/frost	55	2614	0	gear	0.435	armor:29:armor:0.015:0.435
 R	mage/frost	55	4023	0	mh	0.0	
@@ -2110,6 +2179,9 @@ R	mage/frost	55	254111	0	gear	11.709999999999999	int:9:int:0.72:6.48,sta:13:sta:
 R	mage/frost	55	280082	0	mh	97.72500000000001	int:15:int:0.72:10.8,hit:1.5:spellHit:0.17:0.255,spi:21:spi:0.67:14.07,sp:66:sp:1.1:72.6
 R	mage/frost	60	25	0	mh	0.0	
 R	mage/frost	60	1315	0	gear	15.15	sta:10:sta:0.24:2.4,spi:15:spi:0.85:12.75
+R	mage/frost	60	2140	0	mh	0.0	
+R	mage/frost	60	2140	12718	mh	0.71	int:1:int:0.47:0.47,sta:1:sta:0.24:0.24
+R	mage/frost	60	2140	12917	mh	5.47	sp:5:sp:1:5,int:1:int:0.47:0.47
 R	mage/frost	60	2225	0	mh	0.0	
 R	mage/frost	60	2614	0	gear	0.377	armor:29:armor:0.013:0.377
 R	mage/frost	60	4023	0	mh	0.0	
@@ -2190,6 +2262,9 @@ R	mage/frost	60	254111	0	gear	8.052	int:9:int:0.47:4.23,sta:13:sta:0.24:3.12,arm
 R	mage/frost	60	280082	0	mh	91.155	int:15:int:0.47:7.05,hit:1.5:spellHit:0.17:0.255,spi:21:spi:0.85:17.85,sp:66:sp:1:66
 R	mage/fire	12	25	0	mh	0.0	
 R	mage/fire	12	1315	0	gear	10.950000000000001	sta:10:sta:0.78:7.8,spi:15:spi:0.21:3.15
+R	mage/fire	12	2140	0	mh	0.0	
+R	mage/fire	12	2140	12718	mh	1.0	int:1:int:0.22:0.22,sta:1:sta:0.78:0.78
+R	mage/fire	12	2140	12917	mh	5.22	sp:5:sp:1:5,int:1:int:0.22:0.22
 R	mage/fire	12	2225	0	mh	0.0	
 R	mage/fire	12	2614	0	gear	0.29	armor:29:armor:0.01:0.29
 R	mage/fire	12	4023	0	mh	0.0	
@@ -2270,6 +2345,9 @@ R	mage/fire	12	254111	0	gear	32.660000000000004	int:9:int:0.22:1.98,sta:13:sta:0
 R	mage/fire	12	280082	0	mh	75.51	int:15:int:0.22:3.3,hit:1.5:spellHit:1.2:1.8,spi:21:spi:0.21:4.41,sp:66:sp:1:66
 R	mage/fire	25	25	0	mh	0.0	
 R	mage/fire	25	1315	0	gear	14.4	sta:10:sta:1.2:12,spi:15:spi:0.16:2.4
+R	mage/fire	25	2140	0	mh	0.0	
+R	mage/fire	25	2140	12718	mh	1.49	int:1:int:0.29:0.29,sta:1:sta:1.2:1.2
+R	mage/fire	25	2140	12917	mh	5.29	sp:5:sp:1:5,int:1:int:0.29:0.29
 R	mage/fire	25	2225	0	mh	0.0	
 R	mage/fire	25	2614	0	gear	0.87	armor:29:armor:0.03:0.87
 R	mage/fire	25	4023	0	mh	0.0	
@@ -2350,6 +2428,9 @@ R	mage/fire	25	254111	0	gear	39.83	int:9:int:0.29:2.61,sta:13:sta:1.2:15.6,spFir
 R	mage/fire	25	280082	0	mh	75.81	int:15:int:0.29:4.35,hit:1.5:spellHit:1.4:2.1,spi:21:spi:0.16:3.36,sp:66:sp:1:66
 R	mage/fire	34	25	0	mh	0.0	
 R	mage/fire	34	1315	0	gear	17.75	sta:10:sta:1.4:14,spi:15:spi:0.25:3.75
+R	mage/fire	34	2140	0	mh	0.0	
+R	mage/fire	34	2140	12718	mh	1.98	int:1:int:0.58:0.58,sta:1:sta:1.4:1.4
+R	mage/fire	34	2140	12917	mh	5.58	sp:5:sp:1:5,int:1:int:0.58:0.58
 R	mage/fire	34	2225	0	mh	0.0	
 R	mage/fire	34	2614	0	gear	1.1019999999999999	armor:29:armor:0.038:1.102
 R	mage/fire	34	4023	0	mh	0.0	
@@ -2430,6 +2511,9 @@ R	mage/fire	34	254111	0	gear	45.472	int:9:int:0.58:5.22,sta:13:sta:1.4:18.2,spFi
 R	mage/fire	34	280082	0	mh	84.0	int:15:int:0.58:8.7,hit:1.5:spellHit:2.7:4.05,spi:21:spi:0.25:5.25,sp:66:sp:1:66
 R	mage/fire	45	25	0	mh	0.0	
 R	mage/fire	45	1315	0	gear	17.25	sta:10:sta:1.2:12,spi:15:spi:0.35:5.25
+R	mage/fire	45	2140	0	mh	0.0	
+R	mage/fire	45	2140	12718	mh	1.91	int:1:int:0.71:0.71,sta:1:sta:1.2:1.2
+R	mage/fire	45	2140	12917	mh	6.21	sp:5:sp:1.1:5.5,int:1:int:0.71:0.71
 R	mage/fire	45	2225	0	mh	0.0	
 R	mage/fire	45	2614	0	gear	1.0150000000000001	armor:29:armor:0.035:1.015
 R	mage/fire	45	4023	0	mh	0.0	
@@ -2510,6 +2594,9 @@ R	mage/fire	45	254111	0	gear	43.879999999999995	int:9:int:0.71:6.39,sta:13:sta:1
 R	mage/fire	45	280082	0	mh	96.45000000000002	int:15:int:0.71:10.65,hit:1.5:spellHit:3.9:5.85,spi:21:spi:0.35:7.35,sp:66:sp:1.1:72.6
 R	mage/fire	55	25	0	mh	0.0	
 R	mage/fire	55	1315	0	gear	17.25	sta:10:sta:1.2:12,spi:15:spi:0.35:5.25
+R	mage/fire	55	2140	0	mh	0.0	
+R	mage/fire	55	2140	12718	mh	2.06	int:1:int:0.86:0.86,sta:1:sta:1.2:1.2
+R	mage/fire	55	2140	12917	mh	6.36	sp:5:sp:1.1:5.5,int:1:int:0.86:0.86
 R	mage/fire	55	2225	0	mh	0.0	
 R	mage/fire	55	2614	0	gear	1.073	armor:29:armor:0.037:1.073
 R	mage/fire	55	4023	0	mh	0.0	
@@ -2590,6 +2677,9 @@ R	mage/fire	55	254111	0	gear	45.338	int:9:int:0.86:7.74,sta:13:sta:1.2:15.6,spFi
 R	mage/fire	55	280082	0	mh	98.85000000000001	int:15:int:0.86:12.9,hit:1.5:spellHit:4:6,spi:21:spi:0.35:7.35,sp:66:sp:1.1:72.6
 R	mage/fire	60	25	0	mh	0.0	
 R	mage/fire	60	1315	0	gear	20.1	sta:10:sta:1.2:12,spi:15:spi:0.54:8.1
+R	mage/fire	60	2140	0	mh	0.0	
+R	mage/fire	60	2140	12718	mh	1.95	int:1:int:0.75:0.75,sta:1:sta:1.2:1.2
+R	mage/fire	60	2140	12917	mh	6.25	sp:5:sp:1.1:5.5,int:1:int:0.75:0.75
 R	mage/fire	60	2225	0	mh	0.0	
 R	mage/fire	60	2614	0	gear	1.1019999999999999	armor:29:armor:0.038:1.102
 R	mage/fire	60	4023	0	mh	0.0	
@@ -2670,6 +2760,9 @@ R	mage/fire	60	254111	0	gear	44.402	int:9:int:0.75:6.75,sta:13:sta:1.2:15.6,spFi
 R	mage/fire	60	280082	0	mh	100.44000000000001	int:15:int:0.75:11.25,hit:1.5:spellHit:3.5:5.25,spi:21:spi:0.54:11.34,sp:66:sp:1.1:72.6
 R	mage/arcane	12	25	0	mh	0.0	
 R	mage/arcane	12	1315	0	gear	11.25	sta:10:sta:0.54:5.4,spi:15:spi:0.39:5.85
+R	mage/arcane	12	2140	0	mh	0.0	
+R	mage/arcane	12	2140	12718	mh	0.75	int:1:int:0.21:0.21,sta:1:sta:0.54:0.54
+R	mage/arcane	12	2140	12917	mh	7.21	sp:5:sp:1.4:7,int:1:int:0.21:0.21
 R	mage/arcane	12	2225	0	mh	0.0	
 R	mage/arcane	12	2614	0	gear	0.232	armor:29:armor:0.008:0.232
 R	mage/arcane	12	4023	0	mh	0.0	
@@ -2750,6 +2843,9 @@ R	mage/arcane	12	254111	0	gear	9.342	int:9:int:0.21:1.89,sta:13:sta:0.54:7.02,ar
 R	mage/arcane	12	280082	0	mh	105.83999999999999	int:15:int:0.21:3.15,hit:1.5:spellHit:1.4:2.1,spi:21:spi:0.39:8.19,sp:66:sp:1.4:92.4
 R	mage/arcane	25	25	0	mh	0.0	
 R	mage/arcane	25	1315	0	gear	17.15	sta:10:sta:1.4:14,spi:15:spi:0.21:3.15
+R	mage/arcane	25	2140	0	mh	0.0	
+R	mage/arcane	25	2140	12718	mh	1.9	int:1:int:0.5:0.5,sta:1:sta:1.4:1.4
+R	mage/arcane	25	2140	12917	mh	6.0	sp:5:sp:1.1:5.5,int:1:int:0.5:0.5
 R	mage/arcane	25	2225	0	mh	0.0	
 R	mage/arcane	25	2614	0	gear	0.87	armor:29:armor:0.03:0.87
 R	mage/arcane	25	4023	0	mh	0.0	
@@ -2830,6 +2926,9 @@ R	mage/arcane	25	254111	0	gear	24.32	int:9:int:0.5:4.5,sta:13:sta:1.4:18.2,armor
 R	mage/arcane	25	280082	0	mh	87.51	int:15:int:0.5:7.5,hit:1.5:spellHit:2:3,spi:21:spi:0.21:4.41,sp:66:sp:1.1:72.6
 R	mage/arcane	34	25	0	mh	0.0	
 R	mage/arcane	34	1315	0	gear	14.75	sta:10:sta:0.92:9.2,spi:15:spi:0.37:5.55
+R	mage/arcane	34	2140	0	mh	0.0	
+R	mage/arcane	34	2140	12718	mh	1.6099999999999999	int:1:int:0.69:0.69,sta:1:sta:0.92:0.92
+R	mage/arcane	34	2140	12917	mh	5.6899999999999995	sp:5:sp:1:5,int:1:int:0.69:0.69
 R	mage/arcane	34	2225	0	mh	0.0	
 R	mage/arcane	34	2614	0	gear	0.638	armor:29:armor:0.022:0.638
 R	mage/arcane	34	4023	0	mh	0.0	
@@ -2910,6 +3009,9 @@ R	mage/arcane	34	254111	0	gear	19.358	int:9:int:0.69:6.21,sta:13:sta:0.92:11.96,
 R	mage/arcane	34	280082	0	mh	86.22	int:15:int:0.69:10.35,hit:1.5:spellHit:1.4:2.1,spi:21:spi:0.37:7.77,sp:66:sp:1:66
 R	mage/arcane	45	25	0	mh	0.0	
 R	mage/arcane	45	1315	0	gear	14.9	sta:10:sta:1.1:11,spi:15:spi:0.26:3.9
+R	mage/arcane	45	2140	0	mh	0.0	
+R	mage/arcane	45	2140	12718	mh	1.81	int:1:int:0.71:0.71,sta:1:sta:1.1:1.1
+R	mage/arcane	45	2140	12917	mh	5.71	sp:5:sp:1:5,int:1:int:0.71:0.71
 R	mage/arcane	45	2225	0	mh	0.0	
 R	mage/arcane	45	2614	0	gear	0.8410000000000001	armor:29:armor:0.029:0.841
 R	mage/arcane	45	4023	0	mh	0.0	
@@ -2990,6 +3092,9 @@ R	mage/arcane	45	254111	0	gear	22.256	int:9:int:0.71:6.39,sta:13:sta:1.1:14.3,ar
 R	mage/arcane	45	280082	0	mh	84.96	int:15:int:0.71:10.65,hit:1.5:spellHit:1.9:2.85,spi:21:spi:0.26:5.46,sp:66:sp:1:66
 R	mage/arcane	55	25	0	mh	0.0	
 R	mage/arcane	55	1315	0	gear	17.75	sta:10:sta:1.1:11,spi:15:spi:0.45:6.75
+R	mage/arcane	55	2140	0	mh	0.0	
+R	mage/arcane	55	2140	12718	mh	2.09	int:1:int:0.99:0.99,sta:1:sta:1.1:1.1
+R	mage/arcane	55	2140	12917	mh	5.99	sp:5:sp:1:5,int:1:int:0.99:0.99
 R	mage/arcane	55	2225	0	mh	0.0	
 R	mage/arcane	55	2614	0	gear	0.899	armor:29:armor:0.031:0.899
 R	mage/arcane	55	4023	0	mh	0.0	
@@ -3070,6 +3175,9 @@ R	mage/arcane	55	254111	0	gear	24.884	int:9:int:0.99:8.91,sta:13:sta:1.1:14.3,ar
 R	mage/arcane	55	280082	0	mh	92.4	int:15:int:0.99:14.85,hit:1.5:spellHit:1.4:2.1,spi:21:spi:0.45:9.45,sp:66:sp:1:66
 R	mage/arcane	60	25	0	mh	0.0	
 R	mage/arcane	60	1315	0	gear	19.25	sta:10:sta:1.1:11,spi:15:spi:0.55:8.25
+R	mage/arcane	60	2140	0	mh	0.0	
+R	mage/arcane	60	2140	12718	mh	2.1	int:1:int:1:1,sta:1:sta:1.1:1.1
+R	mage/arcane	60	2140	12917	mh	6.0	sp:5:sp:1:5,int:1:int:1:1
 R	mage/arcane	60	2225	0	mh	0.0	
 R	mage/arcane	60	2614	0	gear	0.928	armor:29:armor:0.032:0.928
 R	mage/arcane	60	4023	0	mh	0.0	
@@ -3150,6 +3258,9 @@ R	mage/arcane	60	254111	0	gear	25.028000000000002	int:9:int:1:9,sta:13:sta:1.1:1
 R	mage/arcane	60	280082	0	mh	92.715	int:15:int:1:15,hit:1.5:spellHit:0.11:0.165,spi:21:spi:0.55:11.55,sp:66:sp:1:66
 R	warlock/affliction	12	25	0	mh	0.0	
 R	warlock/affliction	12	1315	0	gear	4.04	sta:10:sta:0.26:2.6,spi:15:spi:0.096:1.44
+R	warlock/affliction	12	2140	0	mh	0.0	
+R	warlock/affliction	12	2140	12718	mh	0.36	int:1:int:0.1:0.1,sta:1:sta:0.26:0.26
+R	warlock/affliction	12	2140	12917	mh	5.6	sp:5:sp:1.1:5.5,int:1:int:0.1:0.1
 R	warlock/affliction	12	2225	0	mh	0.0	
 R	warlock/affliction	12	2614	0	gear	0.27549999999999997	armor:29:armor:0.0095:0.275
 R	warlock/affliction	12	4023	0	mh	0.0	
@@ -3230,6 +3341,9 @@ R	warlock/affliction	12	254111	0	gear	4.793	int:9:int:0.1:0.9,sta:13:sta:0.26:3.
 R	warlock/affliction	12	280082	0	mh	77.27100000000002	int:15:int:0.1:1.5,hit:1.5:spellHit:0.77:1.155,spi:21:spi:0.096:2.016,sp:66:sp:1.1:72.6
 R	warlock/affliction	25	25	0	mh	0.0	
 R	warlock/affliction	25	1315	0	gear	2.1425	sta:10:sta:0.2:2,spi:15:spi:0.0095:0.142
+R	warlock/affliction	25	2140	0	mh	0.0	
+R	warlock/affliction	25	2140	12718	mh	0.35	int:1:int:0.15:0.15,sta:1:sta:0.2:0.2
+R	warlock/affliction	25	2140	12917	mh	5.65	sp:5:sp:1.1:5.5,int:1:int:0.15:0.15
 R	warlock/affliction	25	2225	0	mh	0.0	
 R	warlock/affliction	25	2614	0	gear	0.435	armor:29:armor:0.015:0.435
 R	warlock/affliction	25	4023	0	mh	0.0	
@@ -3310,6 +3424,9 @@ R	warlock/affliction	25	254111	0	gear	4.76	int:9:int:0.15:1.35,sta:13:sta:0.2:2.
 R	warlock/affliction	25	280082	0	mh	76.4145	int:15:int:0.15:2.25,hit:1.5:spellHit:0.91:1.365,spi:21:spi:0.0095:0.199,sp:66:sp:1.1:72.6
 R	warlock/affliction	34	25	0	mh	0.0	
 R	warlock/affliction	34	1315	0	gear	2.745	sta:10:sta:0.15:1.5,spi:15:spi:0.083:1.245
+R	warlock/affliction	34	2140	0	mh	0.0	
+R	warlock/affliction	34	2140	12718	mh	0.26	int:1:int:0.11:0.11,sta:1:sta:0.15:0.15
+R	warlock/affliction	34	2140	12917	mh	5.61	sp:5:sp:1.1:5.5,int:1:int:0.11:0.11
 R	warlock/affliction	34	2225	0	mh	0.0	
 R	warlock/affliction	34	2614	0	gear	0.26099999999999995	armor:29:armor:0.009:0.261
 R	warlock/affliction	34	4023	0	mh	0.0	
@@ -3390,6 +3507,9 @@ R	warlock/affliction	34	254111	0	gear	3.426	int:9:int:0.11:0.99,sta:13:sta:0.15:
 R	warlock/affliction	34	280082	0	mh	78.093	int:15:int:0.11:1.65,hit:1.5:spellHit:1.4:2.1,spi:21:spi:0.083:1.743,sp:66:sp:1.1:72.6
 R	warlock/affliction	45	25	0	mh	0.0	
 R	warlock/affliction	45	1315	0	gear	5.8500000000000005	sta:10:sta:0.12:1.2,spi:15:spi:0.31:4.65
+R	warlock/affliction	45	2140	0	mh	0.0	
+R	warlock/affliction	45	2140	12718	mh	0.218	int:1:int:0.098:0.098,sta:1:sta:0.12:0.12
+R	warlock/affliction	45	2140	12917	mh	5.098	sp:5:sp:1:5,int:1:int:0.098:0.098
 R	warlock/affliction	45	2225	0	mh	0.0	
 R	warlock/affliction	45	2614	0	gear	0.232	armor:29:armor:0.008:0.232
 R	warlock/affliction	45	4023	0	mh	0.0	
@@ -3470,6 +3590,9 @@ R	warlock/affliction	45	254111	0	gear	2.874	int:9:int:0.098:0.882,sta:13:sta:0.1
 R	warlock/affliction	45	280082	0	mh	76.08	int:15:int:0.098:1.47,hit:1.5:spellHit:1.4:2.1,spi:21:spi:0.31:6.51,sp:66:sp:1:66
 R	warlock/affliction	55	25	0	mh	0.0	
 R	warlock/affliction	55	1315	0	gear	4.75	sta:10:sta:0.31:3.1,spi:15:spi:0.11:1.65
+R	warlock/affliction	55	2140	0	mh	0.0	
+R	warlock/affliction	55	2140	12718	mh	0.368	int:1:int:0.058:0.058,sta:1:sta:0.31:0.31
+R	warlock/affliction	55	2140	12917	mh	5.058	sp:5:sp:1:5,int:1:int:0.058:0.058
 R	warlock/affliction	55	2225	0	mh	0.0	
 R	warlock/affliction	55	2614	0	gear	0.232	armor:29:armor:0.008:0.232
 R	warlock/affliction	55	4023	0	mh	0.0	
@@ -3550,6 +3673,9 @@ R	warlock/affliction	55	254111	0	gear	4.984000000000001	int:9:int:0.058:0.522,st
 R	warlock/affliction	55	280082	0	mh	69.795	int:15:int:0.058:0.87,hit:1.5:spellHit:0.41:0.615,spi:21:spi:0.11:2.31,sp:66:sp:1:66
 R	warlock/affliction	60	25	0	mh	0.0	
 R	warlock/affliction	60	1315	0	gear	6.85	sta:10:sta:0.16:1.6,spi:15:spi:0.35:5.25
+R	warlock/affliction	60	2140	0	mh	0.0	
+R	warlock/affliction	60	2140	12718	mh	0.16	sta:1:sta:0.16:0.16
+R	warlock/affliction	60	2140	12917	mh	5.5	sp:5:sp:1.1:5.5
 R	warlock/affliction	60	2225	0	mh	0.0	
 R	warlock/affliction	60	2614	0	gear	0.26099999999999995	armor:29:armor:0.009:0.261
 R	warlock/affliction	60	4023	0	mh	0.0	
@@ -3630,6 +3756,9 @@ R	warlock/affliction	60	254111	0	gear	2.566	sta:13:sta:0.16:2.08,armor:54:armor:
 R	warlock/affliction	60	280082	0	mh	82.05000000000001	hit:1.5:spellHit:1.4:2.1,spi:21:spi:0.35:7.35,sp:66:sp:1.1:72.6
 R	warlock/demonology	12	25	0	mh	0.0	
 R	warlock/demonology	12	1315	0	gear	2.95	sta:10:sta:0.1:1,spi:15:spi:0.13:1.95
+R	warlock/demonology	12	2140	0	mh	0.0	
+R	warlock/demonology	12	2140	12718	mh	0.22	int:1:int:0.12:0.12,sta:1:sta:0.1:0.1
+R	warlock/demonology	12	2140	12917	mh	5.12	sp:5:sp:1:5,int:1:int:0.12:0.12
 R	warlock/demonology	12	2225	0	mh	0.0	
 R	warlock/demonology	12	2614	0	gear	0.145	armor:29:armor:0.005:0.145
 R	warlock/demonology	12	4023	0	mh	0.0	
@@ -3710,6 +3839,9 @@ R	warlock/demonology	12	254111	0	gear	8.45	int:9:int:0.12:1.08,sta:13:sta:0.1:1.
 R	warlock/demonology	12	280082	0	mh	71.34	int:15:int:0.12:1.8,hit:1.5:spellHit:0.54:0.81,spi:21:spi:0.13:2.73,sp:66:sp:1:66
 R	warlock/demonology	25	25	0	mh	0.0	
 R	warlock/demonology	25	1315	0	gear	3.6499999999999995	sta:10:sta:0.095:0.95,spi:15:spi:0.18:2.7
+R	warlock/demonology	25	2140	0	mh	0.0	
+R	warlock/demonology	25	2140	12718	mh	0.095	sta:1:sta:0.095:0.095
+R	warlock/demonology	25	2140	12917	mh	5.0	sp:5:sp:1:5
 R	warlock/demonology	25	2225	0	mh	0.0	
 R	warlock/demonology	25	2614	0	gear	0.116	armor:29:armor:0.004:0.116
 R	warlock/demonology	25	4023	0	mh	0.0	
@@ -3790,6 +3922,9 @@ R	warlock/demonology	25	254111	0	gear	9.251	sta:13:sta:0.095:1.235,spFire:20:spF
 R	warlock/demonology	25	280082	0	mh	70.575	hit:1.5:spellHit:0.53:0.795,spi:21:spi:0.18:3.78,sp:66:sp:1:66
 R	warlock/demonology	34	25	0	mh	0.0	
 R	warlock/demonology	34	1315	0	gear	5.1000000000000005	spi:15:spi:0.34:5.1
+R	warlock/demonology	34	2140	0	mh	0.0	
+R	warlock/demonology	34	2140	12718	mh	0.023	int:1:int:0.023:0.023
+R	warlock/demonology	34	2140	12917	mh	5.023	sp:5:sp:1:5,int:1:int:0.023:0.023
 R	warlock/demonology	34	2225	0	mh	0.0	
 R	warlock/demonology	34	2614	0	gear	0.029	armor:29:armor:0.001:0.029
 R	warlock/demonology	34	4023	0	mh	0.0	
@@ -3870,6 +4005,9 @@ R	warlock/demonology	34	254111	0	gear	13.461000000000002	int:9:int:0.023:0.207,s
 R	warlock/demonology	34	280082	0	mh	75.285	int:15:int:0.023:0.345,hit:1.5:spellHit:1.2:1.8,spi:21:spi:0.34:7.14,sp:66:sp:1:66
 R	warlock/demonology	45	25	0	mh	0.0	
 R	warlock/demonology	45	1315	0	gear	4.35	spi:15:spi:0.29:4.35
+R	warlock/demonology	45	2140	0	mh	0.0	
+R	warlock/demonology	45	2140	12718	mh	0.17	int:1:int:0.17:0.17
+R	warlock/demonology	45	2140	12917	mh	5.17	sp:5:sp:1:5,int:1:int:0.17:0.17
 R	warlock/demonology	45	2225	0	mh	0.0	
 R	warlock/demonology	45	2614	0	gear	0.029	armor:29:armor:0.001:0.029
 R	warlock/demonology	45	4023	0	mh	0.0	
@@ -3950,6 +4088,9 @@ R	warlock/demonology	45	254111	0	gear	13.383999999999999	int:9:int:0.17:1.53,spF
 R	warlock/demonology	45	280082	0	mh	77.04	int:15:int:0.17:2.55,hit:1.5:spellHit:1.6:2.4,spi:21:spi:0.29:6.09,sp:66:sp:1:66
 R	warlock/demonology	55	25	0	mh	0.0	
 R	warlock/demonology	55	1315	0	gear	5.300000000000001	sta:10:sta:0.11:1.1,spi:15:spi:0.28:4.2
+R	warlock/demonology	55	2140	0	mh	0.0	
+R	warlock/demonology	55	2140	12718	mh	0.11	sta:1:sta:0.11:0.11
+R	warlock/demonology	55	2140	12917	mh	5.0	sp:5:sp:1:5
 R	warlock/demonology	55	2225	0	mh	0.0	
 R	warlock/demonology	55	2614	0	gear	0.029	armor:29:armor:0.001:0.029
 R	warlock/demonology	55	4023	0	mh	0.0	
@@ -4030,6 +4171,9 @@ R	warlock/demonology	55	254111	0	gear	10.084	sta:13:sta:0.11:1.43,spFire:20:spFi
 R	warlock/demonology	55	280082	0	mh	73.68	hit:1.5:spellHit:1.2:1.8,spi:21:spi:0.28:5.88,sp:66:sp:1:66
 R	warlock/demonology	60	25	0	mh	0.0	
 R	warlock/demonology	60	1315	0	gear	4.91	sta:10:sta:0.026:0.26,spi:15:spi:0.31:4.65
+R	warlock/demonology	60	2140	0	mh	0.0	
+R	warlock/demonology	60	2140	12718	mh	0.026	sta:1:sta:0.026:0.026
+R	warlock/demonology	60	2140	12917	mh	5.0	sp:5:sp:1:5
 R	warlock/demonology	60	2225	0	mh	0.0	
 R	warlock/demonology	60	2614	0	gear	0.029	armor:29:armor:0.001:0.029
 R	warlock/demonology	60	4023	0	mh	0.0	
@@ -4110,6 +4254,9 @@ R	warlock/demonology	60	254111	0	gear	8.991999999999999	sta:13:sta:0.026:0.338,s
 R	warlock/demonology	60	280082	0	mh	75.06	hit:1.5:spellHit:1.7:2.55,spi:21:spi:0.31:6.51,sp:66:sp:1:66
 R	warlock/destruction	12	25	0	mh	0.0	
 R	warlock/destruction	12	1315	0	gear	4.55	sta:10:sta:0.14:1.4,spi:15:spi:0.21:3.15
+R	warlock/destruction	12	2140	0	mh	0.0	
+R	warlock/destruction	12	2140	12718	mh	0.29000000000000004	int:1:int:0.15:0.15,sta:1:sta:0.14:0.14
+R	warlock/destruction	12	2140	12917	mh	5.15	sp:5:sp:1:5,int:1:int:0.15:0.15
 R	warlock/destruction	12	2225	0	mh	0.0	
 R	warlock/destruction	12	2614	0	gear	0.13049999999999998	armor:29:armor:0.0045:0.13
 R	warlock/destruction	12	4023	0	mh	0.0	
@@ -4190,6 +4337,9 @@ R	warlock/destruction	12	254111	0	gear	9.413	int:9:int:0.15:1.35,sta:13:sta:0.14
 R	warlock/destruction	12	280082	0	mh	73.47	int:15:int:0.15:2.25,hit:1.5:spellHit:0.54:0.81,spi:21:spi:0.21:4.41,sp:66:sp:1:66
 R	warlock/destruction	25	25	0	mh	0.0	
 R	warlock/destruction	25	1315	0	gear	3.75	sta:10:sta:0.15:1.5,spi:15:spi:0.15:2.25
+R	warlock/destruction	25	2140	0	mh	0.0	
+R	warlock/destruction	25	2140	12718	mh	0.163	int:1:int:0.013:0.013,sta:1:sta:0.15:0.15
+R	warlock/destruction	25	2140	12917	mh	5.013	sp:5:sp:1:5,int:1:int:0.013:0.013
 R	warlock/destruction	25	2225	0	mh	0.0	
 R	warlock/destruction	25	2614	0	gear	0.1595	armor:29:armor:0.0055:0.16
 R	warlock/destruction	25	4023	0	mh	0.0	
@@ -4270,6 +4420,9 @@ R	warlock/destruction	25	254111	0	gear	7.364	int:9:int:0.013:0.117,sta:13:sta:0.
 R	warlock/destruction	25	280082	0	mh	70.155	int:15:int:0.013:0.195,hit:1.5:spellHit:0.54:0.81,spi:21:spi:0.15:3.15,sp:66:sp:1:66
 R	warlock/destruction	34	25	0	mh	0.0	
 R	warlock/destruction	34	1315	0	gear	5.8	sta:10:sta:0.13:1.3,spi:15:spi:0.3:4.5
+R	warlock/destruction	34	2140	0	mh	0.0	
+R	warlock/destruction	34	2140	12718	mh	0.19	int:1:int:0.06:0.06,sta:1:sta:0.13:0.13
+R	warlock/destruction	34	2140	12917	mh	5.06	sp:5:sp:1:5,int:1:int:0.06:0.06
 R	warlock/destruction	34	2225	0	mh	0.0	
 R	warlock/destruction	34	2614	0	gear	0.203	armor:29:armor:0.007:0.203
 R	warlock/destruction	34	4023	0	mh	0.0	
@@ -4350,6 +4503,9 @@ R	warlock/destruction	34	254111	0	gear	12.008	int:9:int:0.06:0.54,sta:13:sta:0.1
 R	warlock/destruction	34	280082	0	mh	74.85	int:15:int:0.06:0.9,hit:1.5:spellHit:1.1:1.65,spi:21:spi:0.3:6.3,sp:66:sp:1:66
 R	warlock/destruction	45	25	0	mh	0.0	
 R	warlock/destruction	45	1315	0	gear	3.8500000000000005	sta:10:sta:0.13:1.3,spi:15:spi:0.17:2.55
+R	warlock/destruction	45	2140	0	mh	0.0	
+R	warlock/destruction	45	2140	12718	mh	0.26	int:1:int:0.13:0.13,sta:1:sta:0.13:0.13
+R	warlock/destruction	45	2140	12917	mh	5.13	sp:5:sp:1:5,int:1:int:0.13:0.13
 R	warlock/destruction	45	2225	0	mh	0.0	
 R	warlock/destruction	45	2614	0	gear	0.17400000000000002	armor:29:armor:0.006:0.174
 R	warlock/destruction	45	4023	0	mh	0.0	
@@ -4430,6 +4586,9 @@ R	warlock/destruction	45	254111	0	gear	19.984	int:9:int:0.13:1.17,sta:13:sta:0.1
 R	warlock/destruction	45	280082	0	mh	73.32	int:15:int:0.13:1.95,hit:1.5:spellHit:1.2:1.8,spi:21:spi:0.17:3.57,sp:66:sp:1:66
 R	warlock/destruction	55	25	0	mh	0.0	
 R	warlock/destruction	55	1315	0	gear	5.050000000000001	sta:10:sta:0.1:1,spi:15:spi:0.27:4.05
+R	warlock/destruction	55	2140	0	mh	0.0	
+R	warlock/destruction	55	2140	12718	mh	0.27	int:1:int:0.17:0.17,sta:1:sta:0.1:0.1
+R	warlock/destruction	55	2140	12917	mh	5.17	sp:5:sp:1:5,int:1:int:0.17:0.17
 R	warlock/destruction	55	2225	0	mh	0.0	
 R	warlock/destruction	55	2614	0	gear	0.1015	armor:29:armor:0.0035:0.102
 R	warlock/destruction	55	4023	0	mh	0.0	
@@ -4510,6 +4669,9 @@ R	warlock/destruction	55	254111	0	gear	18.419	int:9:int:0.17:1.53,sta:13:sta:0.1
 R	warlock/destruction	55	280082	0	mh	76.02	int:15:int:0.17:2.55,hit:1.5:spellHit:1.2:1.8,spi:21:spi:0.27:5.67,sp:66:sp:1:66
 R	warlock/destruction	60	25	0	mh	0.0	
 R	warlock/destruction	60	1315	0	gear	6.1499999999999995	spi:15:spi:0.41:6.15
+R	warlock/destruction	60	2140	0	mh	0.0	
+R	warlock/destruction	60	2140	12718	mh	0.36	int:1:int:0.36:0.36
+R	warlock/destruction	60	2140	12917	mh	5.36	sp:5:sp:1:5,int:1:int:0.36:0.36
 R	warlock/destruction	60	2225	0	mh	0.0	
 R	warlock/destruction	60	2614	0	gear	0.116	armor:29:armor:0.004:0.116
 R	warlock/destruction	60	4023	0	mh	0.0	
@@ -4590,6 +4752,12 @@ R	warlock/destruction	60	254111	0	gear	18.856	int:9:int:0.36:3.24,spFire:20:spFi
 R	warlock/destruction	60	280082	0	mh	82.11	int:15:int:0.36:5.4,hit:1.5:spellHit:1.4:2.1,spi:21:spi:0.41:8.61,sp:66:sp:1:66
 R	druid/balance	12	1315	0	gear	1.5	spi:15:spi:0.1:1.5
 R	druid/balance	12	1808	0	gear	0.6659999999999999	armor:74:armor:0.009:0.666
+R	druid/balance	12	1990	0	mh	0.0	
+R	druid/balance	12	1990	12718	mh	3.78	int:9:int:0.42:3.78
+R	druid/balance	12	1990	12905	mh	32.62	int:11:int:0.42:4.62,sp:28:sp:1:28
+R	druid/balance	12	2140	0	mh	0.0	
+R	druid/balance	12	2140	12718	mh	0.42	int:1:int:0.42:0.42
+R	druid/balance	12	2140	12917	mh	5.42	sp:5:sp:1:5,int:1:int:0.42:0.42
 R	druid/balance	12	2225	0	mh	0.0	
 R	druid/balance	12	2614	0	gear	0.26099999999999995	armor:29:armor:0.009:0.261
 R	druid/balance	12	3158	0	gear	0.23399999999999999	armor:26:armor:0.009:0.234
@@ -4768,6 +4936,12 @@ R	druid/balance	12	273892	0	gear	22.037999999999997	int:19:int:0.42:7.98,spi:16:
 R	druid/balance	12	280082	0	mh	75.885	int:15:int:0.42:6.3,hit:1.5:spellHit:0.99:1.485,spi:21:spi:0.1:2.1,sp:66:sp:1:66
 R	druid/balance	25	1315	0	gear	5.5	sta:10:sta:0.37:3.7,spi:15:spi:0.12:1.8
 R	druid/balance	25	1808	0	gear	1.3319999999999999	armor:74:armor:0.018:1.332
+R	druid/balance	25	1990	0	mh	0.0	
+R	druid/balance	25	1990	12718	mh	7.74	int:9:int:0.49:4.41,sta:9:sta:0.37:3.33
+R	druid/balance	25	1990	12905	mh	35.98	int:11:int:0.49:5.39,sta:7:sta:0.37:2.59,sp:28:sp:1:28
+R	druid/balance	25	2140	0	mh	0.0	
+R	druid/balance	25	2140	12718	mh	0.86	int:1:int:0.49:0.49,sta:1:sta:0.37:0.37
+R	druid/balance	25	2140	12917	mh	5.49	sp:5:sp:1:5,int:1:int:0.49:0.49
 R	druid/balance	25	2225	0	mh	0.0	
 R	druid/balance	25	2614	0	gear	0.5219999999999999	armor:29:armor:0.018:0.522
 R	druid/balance	25	3158	0	gear	0.46799999999999997	armor:26:armor:0.018:0.468
@@ -4946,6 +5120,12 @@ R	druid/balance	25	273892	0	gear	32.546	sta:20:sta:0.37:7.4,int:19:int:0.49:9.31
 R	druid/balance	25	280082	0	mh	76.65	int:15:int:0.49:7.35,hit:1.5:spellHit:0.52:0.78,spi:21:spi:0.12:2.52,sp:66:sp:1:66
 R	druid/balance	34	1315	0	gear	4.5	sta:10:sta:0.3:3,spi:15:spi:0.1:1.5
 R	druid/balance	34	1808	0	gear	1.1099999999999999	armor:74:armor:0.015:1.11
+R	druid/balance	34	1990	0	mh	0.0	
+R	druid/balance	34	1990	12718	mh	7.379999999999999	int:9:int:0.52:4.68,sta:9:sta:0.3:2.7
+R	druid/balance	34	1990	12905	mh	35.82	int:11:int:0.52:5.72,sta:7:sta:0.3:2.1,sp:28:sp:1:28
+R	druid/balance	34	2140	0	mh	0.0	
+R	druid/balance	34	2140	12718	mh	0.8200000000000001	int:1:int:0.52:0.52,sta:1:sta:0.3:0.3
+R	druid/balance	34	2140	12917	mh	5.52	sp:5:sp:1:5,int:1:int:0.52:0.52
 R	druid/balance	34	2225	0	mh	0.0	
 R	druid/balance	34	2614	0	gear	0.435	armor:29:armor:0.015:0.435
 R	druid/balance	34	3158	0	gear	0.39	armor:26:armor:0.015:0.39
@@ -5124,6 +5304,12 @@ R	druid/balance	34	273892	0	gear	30.91	sta:20:sta:0.3:6,int:19:int:0.52:9.88,spi
 R	druid/balance	34	280082	0	mh	76.785	int:15:int:0.52:7.8,hit:1.5:spellHit:0.59:0.885,spi:21:spi:0.1:2.1,sp:66:sp:1:66
 R	druid/balance	45	1315	0	gear	9.0	sta:10:sta:0.69:6.9,spi:15:spi:0.14:2.1
 R	druid/balance	45	1808	0	gear	4.144	armor:74:armor:0.056:4.144
+R	druid/balance	45	1990	0	mh	0.0	
+R	druid/balance	45	1990	12718	mh	7.379999999999999	int:9:int:0.13:1.17,sta:9:sta:0.69:6.21
+R	druid/balance	45	1990	12905	mh	34.26	int:11:int:0.13:1.43,sta:7:sta:0.69:4.83,sp:28:sp:1:28
+R	druid/balance	45	2140	0	mh	0.0	
+R	druid/balance	45	2140	12718	mh	0.82	int:1:int:0.13:0.13,sta:1:sta:0.69:0.69
+R	druid/balance	45	2140	12917	mh	5.13	sp:5:sp:1:5,int:1:int:0.13:0.13
 R	druid/balance	45	2225	0	mh	0.0	
 R	druid/balance	45	2614	0	gear	1.624	armor:29:armor:0.056:1.624
 R	druid/balance	45	3158	0	gear	1.456	armor:26:armor:0.056:1.456
@@ -5302,6 +5488,12 @@ R	druid/balance	45	273892	0	gear	38.582	sta:20:sta:0.69:13.8,int:19:int:0.13:2.4
 R	druid/balance	45	280082	0	mh	72.69	int:15:int:0.13:1.95,hit:1.5:spellHit:1.2:1.8,spi:21:spi:0.14:2.94,sp:66:sp:1:66
 R	druid/balance	55	1315	0	gear	9.7	sta:10:sta:0.67:6.7,spi:15:spi:0.2:3
 R	druid/balance	55	1808	0	gear	4.366	armor:74:armor:0.059:4.366
+R	druid/balance	55	1990	0	mh	0.0	
+R	druid/balance	55	1990	12718	mh	7.470000000000001	int:9:int:0.16:1.44,sta:9:sta:0.67:6.03
+R	druid/balance	55	1990	12905	mh	34.45	int:11:int:0.16:1.76,sta:7:sta:0.67:4.69,sp:28:sp:1:28
+R	druid/balance	55	2140	0	mh	0.0	
+R	druid/balance	55	2140	12718	mh	0.8300000000000001	int:1:int:0.16:0.16,sta:1:sta:0.67:0.67
+R	druid/balance	55	2140	12917	mh	5.16	sp:5:sp:1:5,int:1:int:0.16:0.16
 R	druid/balance	55	2225	0	mh	0.0	
 R	druid/balance	55	2614	0	gear	1.7109999999999999	armor:29:armor:0.059:1.711
 R	druid/balance	55	3158	0	gear	1.5339999999999998	armor:26:armor:0.059:1.534
@@ -5480,6 +5672,12 @@ R	druid/balance	55	273892	0	gear	40.198	sta:20:sta:0.67:13.4,int:19:int:0.16:3.0
 R	druid/balance	55	280082	0	mh	74.7	int:15:int:0.16:2.4,hit:1.5:spellHit:1.4:2.1,spi:21:spi:0.2:4.2,sp:66:sp:1:66
 R	druid/balance	60	1315	0	gear	10.850000000000001	sta:10:sta:0.68:6.8,spi:15:spi:0.27:4.05
 R	druid/balance	60	1808	0	gear	4.588	armor:74:armor:0.062:4.588
+R	druid/balance	60	1990	0	mh	0.0	
+R	druid/balance	60	1990	12718	mh	7.92	int:9:int:0.2:1.8,sta:9:sta:0.68:6.12
+R	druid/balance	60	1990	12905	mh	34.96	int:11:int:0.2:2.2,sta:7:sta:0.68:4.76,sp:28:sp:1:28
+R	druid/balance	60	2140	0	mh	0.0	
+R	druid/balance	60	2140	12718	mh	0.8800000000000001	int:1:int:0.2:0.2,sta:1:sta:0.68:0.68
+R	druid/balance	60	2140	12917	mh	5.2	sp:5:sp:1:5,int:1:int:0.2:0.2
 R	druid/balance	60	2225	0	mh	0.0	
 R	druid/balance	60	2614	0	gear	1.798	armor:29:armor:0.062:1.798
 R	druid/balance	60	3158	0	gear	1.612	armor:26:armor:0.062:1.612
@@ -5658,6 +5856,12 @@ R	druid/balance	60	273892	0	gear	42.763999999999996	sta:20:sta:0.68:13.6,int:19:
 R	druid/balance	60	280082	0	mh	77.52	int:15:int:0.2:3,hit:1.5:spellHit:1.9:2.85,spi:21:spi:0.27:5.67,sp:66:sp:1:66
 R	druid/restoration	12	1315	0	gear	0.99	spi:15:spi:0.066:0.99
 R	druid/restoration	12	1808	0	gear	0.518	armor:74:armor:0.007:0.518
+R	druid/restoration	12	1990	0	mh	0.0	
+R	druid/restoration	12	1990	12718	mh	4.95	int:9:int:0.55:4.95
+R	druid/restoration	12	1990	12905	mh	34.05	int:11:int:0.55:6.05,sp:28:sp:1:28
+R	druid/restoration	12	2140	0	mh	0.0	
+R	druid/restoration	12	2140	12718	mh	0.55	int:1:int:0.55:0.55
+R	druid/restoration	12	2140	12917	mh	5.55	sp:5:sp:1:5,int:1:int:0.55:0.55
 R	druid/restoration	12	2225	0	mh	0.0	
 R	druid/restoration	12	2614	0	gear	0.203	armor:29:armor:0.007:0.203
 R	druid/restoration	12	3158	0	gear	0.182	armor:26:armor:0.007:0.182
@@ -5836,6 +6040,12 @@ R	druid/restoration	12	273892	0	gear	23.64	int:19:int:0.55:10.45,spi:16:spi:0.06
 R	druid/restoration	12	280082	0	mh	77.09100000000001	int:15:int:0.55:8.25,hit:1.5:spellHit:0.97:1.455,spi:21:spi:0.066:1.386,sp:66:sp:1:66
 R	druid/restoration	25	1315	0	gear	4.295	sta:10:sta:0.38:3.8,spi:15:spi:0.033:0.495
 R	druid/restoration	25	1808	0	gear	1.628	armor:74:armor:0.022:1.628
+R	druid/restoration	25	1990	0	mh	0.0	
+R	druid/restoration	25	1990	12718	mh	8.64	int:9:int:0.58:5.22,sta:9:sta:0.38:3.42
+R	druid/restoration	25	1990	12905	mh	37.04	int:11:int:0.58:6.38,sta:7:sta:0.38:2.66,sp:28:sp:1:28
+R	druid/restoration	25	2140	0	mh	0.0	
+R	druid/restoration	25	2140	12718	mh	0.96	int:1:int:0.58:0.58,sta:1:sta:0.38:0.38
+R	druid/restoration	25	2140	12917	mh	5.58	sp:5:sp:1:5,int:1:int:0.58:0.58
 R	druid/restoration	25	2225	0	mh	0.0	
 R	druid/restoration	25	2614	0	gear	0.638	armor:29:armor:0.022:0.638
 R	druid/restoration	25	3158	0	gear	0.572	armor:26:armor:0.022:0.572
@@ -6014,6 +6224,12 @@ R	druid/restoration	25	273892	0	gear	33.711999999999996	sta:20:sta:0.38:7.6,int:
 R	druid/restoration	25	280082	0	mh	77.793	int:15:int:0.58:8.7,hit:1.5:spellHit:1.6:2.4,spi:21:spi:0.033:0.693,sp:66:sp:1:66
 R	druid/restoration	34	1315	0	gear	7.8	sta:10:sta:0.42:4.2,spi:15:spi:0.24:3.6
 R	druid/restoration	34	1808	0	gear	1.3319999999999999	armor:74:armor:0.018:1.332
+R	druid/restoration	34	1990	0	mh	0.0	
+R	druid/restoration	34	1990	12718	mh	9.36	int:9:int:0.62:5.58,sta:9:sta:0.42:3.78
+R	druid/restoration	34	1990	12905	mh	37.76	int:11:int:0.62:6.82,sta:7:sta:0.42:2.94,sp:28:sp:1:28
+R	druid/restoration	34	2140	0	mh	0.0	
+R	druid/restoration	34	2140	12718	mh	1.04	int:1:int:0.62:0.62,sta:1:sta:0.42:0.42
+R	druid/restoration	34	2140	12917	mh	5.62	sp:5:sp:1:5,int:1:int:0.62:0.62
 R	druid/restoration	34	2225	0	mh	0.0	
 R	druid/restoration	34	2614	0	gear	0.5219999999999999	armor:29:armor:0.018:0.522
 R	druid/restoration	34	3158	0	gear	0.46799999999999997	armor:26:armor:0.018:0.468
@@ -6192,6 +6408,12 @@ R	druid/restoration	34	273892	0	gear	37.93599999999999	sta:20:sta:0.42:8.4,int:1
 R	druid/restoration	34	280082	0	mh	84.39	int:15:int:0.62:9.3,hit:1.5:spellHit:2.7:4.05,spi:21:spi:0.24:5.04,sp:66:sp:1:66
 R	druid/restoration	45	1315	0	gear	8.5	sta:10:sta:0.25:2.5,spi:15:spi:0.4:6
 R	druid/restoration	45	1808	0	gear	1.628	armor:74:armor:0.022:1.628
+R	druid/restoration	45	1990	0	mh	0.0	
+R	druid/restoration	45	1990	12718	mh	7.83	int:9:int:0.62:5.58,sta:9:sta:0.25:2.25
+R	druid/restoration	45	1990	12905	mh	36.57	int:11:int:0.62:6.82,sta:7:sta:0.25:1.75,sp:28:sp:1:28
+R	druid/restoration	45	2140	0	mh	0.0	
+R	druid/restoration	45	2140	12718	mh	0.87	int:1:int:0.62:0.62,sta:1:sta:0.25:0.25
+R	druid/restoration	45	2140	12917	mh	5.62	sp:5:sp:1:5,int:1:int:0.62:0.62
 R	druid/restoration	45	2225	0	mh	0.0	
 R	druid/restoration	45	2614	0	gear	0.638	armor:29:armor:0.022:0.638
 R	druid/restoration	45	3158	0	gear	0.572	armor:26:armor:0.022:0.572
@@ -6370,6 +6592,12 @@ R	druid/restoration	45	273892	0	gear	37.744	sta:20:sta:0.25:5,int:19:int:0.62:11
 R	druid/restoration	45	280082	0	mh	88.05	int:15:int:0.62:9.3,hit:1.5:spellHit:2.9:4.35,spi:21:spi:0.4:8.4,sp:66:sp:1:66
 R	druid/restoration	55	1315	0	gear	10.65	sta:10:sta:0.39:3.9,spi:15:spi:0.45:6.75
 R	druid/restoration	55	1808	0	gear	1.554	armor:74:armor:0.021:1.554
+R	druid/restoration	55	1990	0	mh	0.0	
+R	druid/restoration	55	1990	12718	mh	9.719999999999999	int:9:int:0.69:6.21,sta:9:sta:0.39:3.51
+R	druid/restoration	55	1990	12905	mh	38.32	int:11:int:0.69:7.59,sta:7:sta:0.39:2.73,sp:28:sp:1:28
+R	druid/restoration	55	2140	0	mh	0.0	
+R	druid/restoration	55	2140	12718	mh	1.08	int:1:int:0.69:0.69,sta:1:sta:0.39:0.39
+R	druid/restoration	55	2140	12917	mh	5.6899999999999995	sp:5:sp:1:5,int:1:int:0.69:0.69
 R	druid/restoration	55	2225	0	mh	0.0	
 R	druid/restoration	55	2614	0	gear	0.609	armor:29:armor:0.021:0.609
 R	druid/restoration	55	3158	0	gear	0.546	armor:26:armor:0.021:0.546
@@ -6548,6 +6776,12 @@ R	druid/restoration	55	273892	0	gear	42.512	sta:20:sta:0.39:7.8,int:19:int:0.69:
 R	druid/restoration	55	280082	0	mh	92.25	int:15:int:0.69:10.35,hit:1.5:spellHit:4.3:6.45,spi:21:spi:0.45:9.45,sp:66:sp:1:66
 R	druid/restoration	60	1315	0	gear	10.85	sta:10:sta:0.38:3.8,spi:15:spi:0.47:7.05
 R	druid/restoration	60	1808	0	gear	1.554	armor:74:armor:0.021:1.554
+R	druid/restoration	60	1990	0	mh	0.0	
+R	druid/restoration	60	1990	12718	mh	10.26	int:9:int:0.76:6.84,sta:9:sta:0.38:3.42
+R	druid/restoration	60	1990	12905	mh	39.019999999999996	int:11:int:0.76:8.36,sta:7:sta:0.38:2.66,sp:28:sp:1:28
+R	druid/restoration	60	2140	0	mh	0.0	
+R	druid/restoration	60	2140	12718	mh	1.1400000000000001	int:1:int:0.76:0.76,sta:1:sta:0.38:0.38
+R	druid/restoration	60	2140	12917	mh	5.76	sp:5:sp:1:5,int:1:int:0.76:0.76
 R	druid/restoration	60	2225	0	mh	0.0	
 R	druid/restoration	60	2614	0	gear	0.609	armor:29:armor:0.021:0.609
 R	druid/restoration	60	3158	0	gear	0.546	armor:26:armor:0.021:0.546
@@ -6726,6 +6960,12 @@ R	druid/restoration	60	273892	0	gear	43.962	sta:20:sta:0.38:7.6,int:19:int:0.76:
 R	druid/restoration	60	280082	0	mh	95.37	int:15:int:0.76:11.4,hit:1.5:spellHit:5.4:8.1,spi:21:spi:0.47:9.87,sp:66:sp:1:66
 R	druid/feral	12	1315	0	gear	17.1	sta:10:sta:1.5:15,spi:15:spi:0.14:2.1
 R	druid/feral	12	1808	0	gear	7.3260000000000005	armor:74:armor:0.099:7.326
+R	druid/feral	12	1990	0	mh	175.441	dps:24.71:dps:7.1:175.441
+R	druid/feral	12	1990	12718	mh	191.551	int:9:int:0.29:2.61,sta:9:sta:1.5:13.5,dps:24.71:dps:7.1:175.441
+R	druid/feral	12	1990	12905	mh	144.188	int:11:int:0.29:3.19,sta:7:sta:1.5:10.5,dps:18.38:dps:7.1:130.498
+R	druid/feral	12	2140	0	mh	42.174	dps:5.94:dps:7.1:42.174
+R	druid/feral	12	2140	12718	mh	43.964	int:1:int:0.29:0.29,sta:1:sta:1.5:1.5,dps:5.94:dps:7.1:42.174
+R	druid/feral	12	2140	12917	mh	26.915	int:1:int:0.29:0.29,dps:3.75:dps:7.1:26.625
 R	druid/feral	12	2225	0	mh	35.5	dps:5:dps:7.1:35.5
 R	druid/feral	12	2614	0	gear	2.871	armor:29:armor:0.099:2.871
 R	druid/feral	12	3158	0	gear	2.5740000000000003	armor:26:armor:0.099:2.574
@@ -6755,8 +6995,8 @@ R	druid/feral	12	4570	12742	mh	75.5	sta:3:sta:1.5:4.5,dps:10:dps:7.1:71
 R	druid/feral	12	4570	12743	mh	75.5	sta:3:sta:1.5:4.5,dps:10:dps:7.1:71
 R	druid/feral	12	4570	12744	mh	75.5	sta:3:sta:1.5:4.5,dps:10:dps:7.1:71
 R	druid/feral	12	4570	12759	mh	71.0	dps:10:dps:7.1:71
-R	druid/feral	12	4570	12918	mh	72.16	int:4:int:0.29:1.16,dps:10:dps:7.1:71
-R	druid/feral	12	4570	12919	mh	72.16	int:4:int:0.29:1.16,dps:10:dps:7.1:71
+R	druid/feral	12	4570	12918	mh	54.977999999999994	int:4:int:0.29:1.16,dps:7.58:dps:7.1:53.818
+R	druid/feral	12	4570	12919	mh	54.977999999999994	int:4:int:0.29:1.16,dps:7.58:dps:7.1:53.818
 R	druid/feral	12	5079	0	gear	0.0	
 R	druid/feral	12	6540	0	gear	2.7720000000000002	armor:28:armor:0.099:2.772
 R	druid/feral	12	6540	12718	gear	8.142	int:3:int:0.29:0.87,sta:3:sta:1.5:4.5,armor:28:armor:0.099:2.772
@@ -6904,6 +7144,12 @@ R	druid/feral	12	273892	0	gear	53.788	sta:20:sta:1.5:30,int:19:int:0.29:5.51,spi
 R	druid/feral	12	280082	0	mh	265.985	int:15:int:0.29:4.35,hit:1.5:hit:0.88:1.32,spi:21:spi:0.14:2.94,dps:36.25:dps:7.1:257.375
 R	druid/feral	25	1315	0	gear	15.899999999999999	sta:10:sta:0.96:9.6,spi:15:spi:0.42:6.3
 R	druid/feral	25	1808	0	gear	3.848	armor:74:armor:0.052:3.848
+R	druid/feral	25	1990	0	mh	135.905	dps:24.71:dps:5.5:135.905
+R	druid/feral	25	1990	12718	mh	148.235	int:9:int:0.41:3.69,sta:9:sta:0.96:8.64,dps:24.71:dps:5.5:135.905
+R	druid/feral	25	1990	12905	mh	112.32	int:11:int:0.41:4.51,sta:7:sta:0.96:6.72,dps:18.38:dps:5.5:101.09
+R	druid/feral	25	2140	0	mh	32.67	dps:5.94:dps:5.5:32.67
+R	druid/feral	25	2140	12718	mh	34.04	int:1:int:0.41:0.41,sta:1:sta:0.96:0.96,dps:5.94:dps:5.5:32.67
+R	druid/feral	25	2140	12917	mh	21.035	int:1:int:0.41:0.41,dps:3.75:dps:5.5:20.625
 R	druid/feral	25	2225	0	mh	27.5	dps:5:dps:5.5:27.5
 R	druid/feral	25	2614	0	gear	1.508	armor:29:armor:0.052:1.508
 R	druid/feral	25	3158	0	gear	1.3519999999999999	armor:26:armor:0.052:1.352
@@ -6933,8 +7179,8 @@ R	druid/feral	25	4570	12742	mh	57.88	sta:3:sta:0.96:2.88,dps:10:dps:5.5:55
 R	druid/feral	25	4570	12743	mh	57.88	sta:3:sta:0.96:2.88,dps:10:dps:5.5:55
 R	druid/feral	25	4570	12744	mh	57.88	sta:3:sta:0.96:2.88,dps:10:dps:5.5:55
 R	druid/feral	25	4570	12759	mh	55.0	dps:10:dps:5.5:55
-R	druid/feral	25	4570	12918	mh	56.64	int:4:int:0.41:1.64,dps:10:dps:5.5:55
-R	druid/feral	25	4570	12919	mh	56.64	int:4:int:0.41:1.64,dps:10:dps:5.5:55
+R	druid/feral	25	4570	12918	mh	43.33	int:4:int:0.41:1.64,dps:7.58:dps:5.5:41.69
+R	druid/feral	25	4570	12919	mh	43.33	int:4:int:0.41:1.64,dps:7.58:dps:5.5:41.69
 R	druid/feral	25	5079	0	gear	0.0	
 R	druid/feral	25	6540	0	gear	1.456	armor:28:armor:0.052:1.456
 R	druid/feral	25	6540	12718	gear	5.565999999999999	int:3:int:0.41:1.23,sta:3:sta:0.96:2.88,armor:28:armor:0.052:1.456
@@ -7082,6 +7328,12 @@ R	druid/feral	25	273892	0	gear	42.134	sta:20:sta:0.96:19.2,int:19:int:0.41:7.79,
 R	druid/feral	25	280082	0	mh	215.995	int:15:int:0.41:6.15,hit:1.5:hit:1.1:1.65,spi:21:spi:0.42:8.82,dps:36.25:dps:5.5:199.375
 R	druid/feral	34	1315	0	gear	16.65	sta:10:sta:0.81:8.1,spi:15:spi:0.57:8.55
 R	druid/feral	34	1808	0	gear	4.07	armor:74:armor:0.055:4.07
+R	druid/feral	34	1990	0	mh	126.021	dps:24.71:dps:5.1:126.021
+R	druid/feral	34	1990	12718	mh	135.561	int:9:int:0.25:2.25,sta:9:sta:0.81:7.29,dps:24.71:dps:5.1:126.021
+R	druid/feral	34	1990	12905	mh	102.15799999999999	int:11:int:0.25:2.75,sta:7:sta:0.81:5.67,dps:18.38:dps:5.1:93.738
+R	druid/feral	34	2140	0	mh	30.294	dps:5.94:dps:5.1:30.294
+R	druid/feral	34	2140	12718	mh	31.354	int:1:int:0.25:0.25,sta:1:sta:0.81:0.81,dps:5.94:dps:5.1:30.294
+R	druid/feral	34	2140	12917	mh	19.375	int:1:int:0.25:0.25,dps:3.75:dps:5.1:19.125
 R	druid/feral	34	2225	0	mh	25.5	dps:5:dps:5.1:25.5
 R	druid/feral	34	2614	0	gear	1.595	armor:29:armor:0.055:1.595
 R	druid/feral	34	3158	0	gear	1.43	armor:26:armor:0.055:1.43
@@ -7111,8 +7363,8 @@ R	druid/feral	34	4570	12742	mh	53.43	sta:3:sta:0.81:2.43,dps:10:dps:5.1:51
 R	druid/feral	34	4570	12743	mh	53.43	sta:3:sta:0.81:2.43,dps:10:dps:5.1:51
 R	druid/feral	34	4570	12744	mh	53.43	sta:3:sta:0.81:2.43,dps:10:dps:5.1:51
 R	druid/feral	34	4570	12759	mh	51.0	dps:10:dps:5.1:51
-R	druid/feral	34	4570	12918	mh	52.0	int:4:int:0.25:1,dps:10:dps:5.1:51
-R	druid/feral	34	4570	12919	mh	52.0	int:4:int:0.25:1,dps:10:dps:5.1:51
+R	druid/feral	34	4570	12918	mh	39.657999999999994	int:4:int:0.25:1,dps:7.58:dps:5.1:38.658
+R	druid/feral	34	4570	12919	mh	39.657999999999994	int:4:int:0.25:1,dps:7.58:dps:5.1:38.658
 R	druid/feral	34	5079	0	gear	0.0	
 R	druid/feral	34	6540	0	gear	1.54	armor:28:armor:0.055:1.54
 R	druid/feral	34	6540	12718	gear	4.720000000000001	int:3:int:0.25:0.75,sta:3:sta:0.81:2.43,armor:28:armor:0.055:1.54
@@ -7260,6 +7512,12 @@ R	druid/feral	34	273892	0	gear	38.980000000000004	sta:20:sta:0.81:16.2,int:19:in
 R	druid/feral	34	280082	0	mh	203.445	int:15:int:0.25:3.75,hit:1.5:hit:1.9:2.85,spi:21:spi:0.57:11.97,dps:36.25:dps:5.1:184.875
 R	druid/feral	45	1315	0	gear	23.55	sta:10:sta:2.1:21,spi:15:spi:0.17:2.55
 R	druid/feral	45	1808	0	gear	6.364	armor:74:armor:0.086:6.364
+R	druid/feral	45	1990	0	mh	116.13700000000001	dps:24.71:dps:4.7:116.137
+R	druid/feral	45	1990	12718	mh	135.037	sta:9:sta:2.1:18.9,dps:24.71:dps:4.7:116.137
+R	druid/feral	45	1990	12905	mh	101.086	sta:7:sta:2.1:14.7,dps:18.38:dps:4.7:86.386
+R	druid/feral	45	2140	0	mh	27.918000000000003	dps:5.94:dps:4.7:27.918
+R	druid/feral	45	2140	12718	mh	30.018000000000004	sta:1:sta:2.1:2.1,dps:5.94:dps:4.7:27.918
+R	druid/feral	45	2140	12917	mh	17.625	dps:3.75:dps:4.7:17.625
 R	druid/feral	45	2225	0	mh	23.5	dps:5:dps:4.7:23.5
 R	druid/feral	45	2614	0	gear	2.4939999999999998	armor:29:armor:0.086:2.494
 R	druid/feral	45	3158	0	gear	2.2359999999999998	armor:26:armor:0.086:2.236
@@ -7289,8 +7547,8 @@ R	druid/feral	45	4570	12742	mh	53.3	sta:3:sta:2.1:6.3,dps:10:dps:4.7:47
 R	druid/feral	45	4570	12743	mh	53.3	sta:3:sta:2.1:6.3,dps:10:dps:4.7:47
 R	druid/feral	45	4570	12744	mh	53.3	sta:3:sta:2.1:6.3,dps:10:dps:4.7:47
 R	druid/feral	45	4570	12759	mh	47.0	dps:10:dps:4.7:47
-R	druid/feral	45	4570	12918	mh	47.0	dps:10:dps:4.7:47
-R	druid/feral	45	4570	12919	mh	47.0	dps:10:dps:4.7:47
+R	druid/feral	45	4570	12918	mh	35.626000000000005	dps:7.58:dps:4.7:35.626
+R	druid/feral	45	4570	12919	mh	35.626000000000005	dps:7.58:dps:4.7:35.626
 R	druid/feral	45	5079	0	gear	0.0	
 R	druid/feral	45	6540	0	gear	2.408	armor:28:armor:0.086:2.408
 R	druid/feral	45	6540	12718	gear	8.708	sta:3:sta:2.1:6.3,armor:28:armor:0.086:2.408
@@ -7438,6 +7696,12 @@ R	druid/feral	45	273892	0	gear	58.652	sta:20:sta:2.1:42,spi:16:spi:0.17:2.72,arm
 R	druid/feral	45	280082	0	mh	177.395	hit:1.5:hit:2.3:3.45,spi:21:spi:0.17:3.57,dps:36.25:dps:4.7:170.375
 R	druid/feral	55	1315	0	gear	22.38	sta:10:sta:2.1:21,spi:15:spi:0.092:1.38
 R	druid/feral	55	1808	0	gear	6.66	armor:74:armor:0.09:6.66
+R	druid/feral	55	1990	0	mh	98.84	dps:24.71:dps:4:98.84
+R	druid/feral	55	1990	12718	mh	121.43	int:9:int:0.41:3.69,sta:9:sta:2.1:18.9,dps:24.71:dps:4:98.84
+R	druid/feral	55	1990	12905	mh	92.72999999999999	int:11:int:0.41:4.51,sta:7:sta:2.1:14.7,dps:18.38:dps:4:73.52
+R	druid/feral	55	2140	0	mh	23.76	dps:5.94:dps:4:23.76
+R	druid/feral	55	2140	12718	mh	26.270000000000003	int:1:int:0.41:0.41,sta:1:sta:2.1:2.1,dps:5.94:dps:4:23.76
+R	druid/feral	55	2140	12917	mh	15.41	int:1:int:0.41:0.41,dps:3.75:dps:4:15
 R	druid/feral	55	2225	0	mh	20.0	dps:5:dps:4:20
 R	druid/feral	55	2614	0	gear	2.61	armor:29:armor:0.09:2.61
 R	druid/feral	55	3158	0	gear	2.34	armor:26:armor:0.09:2.34
@@ -7467,8 +7731,8 @@ R	druid/feral	55	4570	12742	mh	46.3	sta:3:sta:2.1:6.3,dps:10:dps:4:40
 R	druid/feral	55	4570	12743	mh	46.3	sta:3:sta:2.1:6.3,dps:10:dps:4:40
 R	druid/feral	55	4570	12744	mh	46.3	sta:3:sta:2.1:6.3,dps:10:dps:4:40
 R	druid/feral	55	4570	12759	mh	40.0	dps:10:dps:4:40
-R	druid/feral	55	4570	12918	mh	41.64	int:4:int:0.41:1.64,dps:10:dps:4:40
-R	druid/feral	55	4570	12919	mh	41.64	int:4:int:0.41:1.64,dps:10:dps:4:40
+R	druid/feral	55	4570	12918	mh	31.96	int:4:int:0.41:1.64,dps:7.58:dps:4:30.32
+R	druid/feral	55	4570	12919	mh	31.96	int:4:int:0.41:1.64,dps:7.58:dps:4:30.32
 R	druid/feral	55	5079	0	gear	0.0	
 R	druid/feral	55	6540	0	gear	2.52	armor:28:armor:0.09:2.52
 R	druid/feral	55	6540	12718	gear	10.05	int:3:int:0.41:1.23,sta:3:sta:2.1:6.3,armor:28:armor:0.09:2.52
@@ -7616,6 +7880,12 @@ R	druid/feral	55	273892	0	gear	65.842	sta:20:sta:2.1:42,int:19:int:0.41:7.79,spi
 R	druid/feral	55	280082	0	mh	156.832	int:15:int:0.41:6.15,hit:1.5:hit:2.5:3.75,spi:21:spi:0.092:1.932,dps:36.25:dps:4:145
 R	druid/feral	60	1315	0	gear	21.0	sta:10:sta:1.8:18,spi:15:spi:0.2:3
 R	druid/feral	60	1808	0	gear	8.14	armor:74:armor:0.11:8.14
+R	druid/feral	60	1990	0	mh	96.369	dps:24.71:dps:3.9:96.369
+R	druid/feral	60	1990	12718	mh	117.249	int:9:int:0.52:4.68,sta:9:sta:1.8:16.2,dps:24.71:dps:3.9:96.369
+R	druid/feral	60	1990	12905	mh	90.00199999999998	int:11:int:0.52:5.72,sta:7:sta:1.8:12.6,dps:18.38:dps:3.9:71.682
+R	druid/feral	60	2140	0	mh	23.166	dps:5.94:dps:3.9:23.166
+R	druid/feral	60	2140	12718	mh	25.486	int:1:int:0.52:0.52,sta:1:sta:1.8:1.8,dps:5.94:dps:3.9:23.166
+R	druid/feral	60	2140	12917	mh	15.145	int:1:int:0.52:0.52,dps:3.75:dps:3.9:14.625
 R	druid/feral	60	2225	0	mh	19.5	dps:5:dps:3.9:19.5
 R	druid/feral	60	2614	0	gear	3.19	armor:29:armor:0.11:3.19
 R	druid/feral	60	3158	0	gear	2.86	armor:26:armor:0.11:2.86
@@ -7645,8 +7915,8 @@ R	druid/feral	60	4570	12742	mh	44.4	sta:3:sta:1.8:5.4,dps:10:dps:3.9:39
 R	druid/feral	60	4570	12743	mh	44.4	sta:3:sta:1.8:5.4,dps:10:dps:3.9:39
 R	druid/feral	60	4570	12744	mh	44.4	sta:3:sta:1.8:5.4,dps:10:dps:3.9:39
 R	druid/feral	60	4570	12759	mh	39.0	dps:10:dps:3.9:39
-R	druid/feral	60	4570	12918	mh	41.08	int:4:int:0.52:2.08,dps:10:dps:3.9:39
-R	druid/feral	60	4570	12919	mh	41.08	int:4:int:0.52:2.08,dps:10:dps:3.9:39
+R	druid/feral	60	4570	12918	mh	31.642000000000003	int:4:int:0.52:2.08,dps:7.58:dps:3.9:29.562
+R	druid/feral	60	4570	12919	mh	31.642000000000003	int:4:int:0.52:2.08,dps:7.58:dps:3.9:29.562
 R	druid/feral	60	5079	0	gear	0.0	
 R	druid/feral	60	6540	0	gear	3.08	armor:28:armor:0.11:3.08
 R	druid/feral	60	6540	12718	gear	10.040000000000001	int:3:int:0.52:1.56,sta:3:sta:1.8:5.4,armor:28:armor:0.11:3.08
@@ -7794,6 +8064,12 @@ R	druid/feral	60	273892	0	gear	66.9	sta:20:sta:1.8:36,int:19:int:0.52:9.88,spi:1
 R	druid/feral	60	280082	0	mh	159.225	int:15:int:0.52:7.8,hit:1.5:hit:3.9:5.85,spi:21:spi:0.2:4.2,dps:36.25:dps:3.9:141.375
 R	shaman/elemental	12	1315	0	gear	14.15	sta:10:sta:0.89:8.9,spi:15:spi:0.35:5.25
 R	shaman/elemental	12	1808	0	gear	1.184	armor:74:armor:0.016:1.184
+R	shaman/elemental	12	1990	0	mh	44.478	dps:24.71:dps:1.8:44.478
+R	shaman/elemental	12	1990	12718	mh	54.288000000000004	int:9:int:0.2:1.8,sta:9:sta:0.89:8.01,dps:24.71:dps:1.8:44.478
+R	shaman/elemental	12	1990	12905	mh	69.514	int:11:int:0.2:2.2,sta:7:sta:0.89:6.23,sp:28:sp:1:28,dps:18.38:dps:1.8:33.084
+R	shaman/elemental	12	2140	0	mh	10.692	dps:5.94:dps:1.8:10.692
+R	shaman/elemental	12	2140	12718	mh	11.782	int:1:int:0.2:0.2,sta:1:sta:0.89:0.89,dps:5.94:dps:1.8:10.692
+R	shaman/elemental	12	2140	12917	mh	11.95	sp:5:sp:1:5,int:1:int:0.2:0.2,dps:3.75:dps:1.8:6.75
 R	shaman/elemental	12	2225	0	mh	9.0	dps:5:dps:1.8:9
 R	shaman/elemental	12	2614	0	gear	0.464	armor:29:armor:0.016:0.464
 R	shaman/elemental	12	3158	0	gear	0.41600000000000004	armor:26:armor:0.016:0.416
@@ -7824,8 +8100,8 @@ R	shaman/elemental	12	4570	12742	mh	20.67	sta:3:sta:0.89:2.67,dps:10:dps:1.8:18
 R	shaman/elemental	12	4570	12743	mh	20.67	sta:3:sta:0.89:2.67,dps:10:dps:1.8:18
 R	shaman/elemental	12	4570	12744	mh	20.67	sta:3:sta:0.89:2.67,dps:10:dps:1.8:18
 R	shaman/elemental	12	4570	12759	mh	18.0	dps:10:dps:1.8:18
-R	shaman/elemental	12	4570	12918	mh	26.8	sp:8:sp:1:8,int:4:int:0.2:0.8,dps:10:dps:1.8:18
-R	shaman/elemental	12	4570	12919	mh	23.8	spDmg:5:sp:1:5,int:4:int:0.2:0.8,dps:10:dps:1.8:18
+R	shaman/elemental	12	4570	12918	mh	22.444000000000003	sp:8:sp:1:8,int:4:int:0.2:0.8,dps:7.58:dps:1.8:13.644
+R	shaman/elemental	12	4570	12919	mh	19.444	spDmg:5:sp:1:5,int:4:int:0.2:0.8,dps:7.58:dps:1.8:13.644
 R	shaman/elemental	12	5079	0	gear	0.0	
 R	shaman/elemental	12	6063	0	gear	0.88	armor:55:armor:0.016:0.88
 R	shaman/elemental	12	6540	0	gear	0.448	armor:28:armor:0.016:0.448
@@ -8061,14 +8337,14 @@ R	shaman/elemental	12	15235	12752	mh	57.795	agi:3:agi:0.093:0.279,sta:6:sta:0.89
 R	shaman/elemental	12	15235	12753	mh	57.516000000000005	sta:6:sta:0.89:5.34,str:3:str:0.25:0.75,dps:28.57:dps:1.8:51.426
 R	shaman/elemental	12	15235	12754	mh	59.766000000000005	sp:3:sp:1:3,sta:6:sta:0.89:5.34,dps:28.57:dps:1.8:51.426
 R	shaman/elemental	12	15235	12759	mh	51.426	dps:28.57:dps:1.8:51.426
-R	shaman/elemental	12	15235	12906	mh	94.186	int:6:int:0.2:1.2,sta:4:sta:0.89:3.56,sp:38:sp:1:38,dps:28.57:dps:1.8:51.426
-R	shaman/elemental	12	15235	12908	mh	92.02600000000001	int:6:int:0.2:1.2,sp:38:sp:1:38,spi:4:spi:0.35:1.4,dps:28.57:dps:1.8:51.426
-R	shaman/elemental	12	15235	12910	mh	96.166	sp:38:sp:1:38,spi:4:spi:0.35:1.4,sta:6:sta:0.89:5.34,dps:28.57:dps:1.8:51.426
-R	shaman/elemental	12	15235	12912	mh	81.566	spDmg:24:sp:1:24,int:4:int:0.2:0.8,sta:6:sta:0.89:5.34,dps:28.57:dps:1.8:51.426
-R	shaman/elemental	12	15235	12913	mh	78.026	int:6:int:0.2:1.2,spDmg:24:sp:1:24,spi:4:spi:0.35:1.4,dps:28.57:dps:1.8:51.426
-R	shaman/elemental	12	15235	12916	mh	82.166	spDmg:24:sp:1:24,spi:4:spi:0.35:1.4,sta:6:sta:0.89:5.34,dps:28.57:dps:1.8:51.426
-R	shaman/elemental	12	15235	12917	mh	91.02600000000001	sp:38:sp:1:38,int:8:int:0.2:1.6,dps:28.57:dps:1.8:51.426
-R	shaman/elemental	12	15235	12920	mh	77.02600000000001	int:8:int:0.2:1.6,spDmg:24:sp:1:24,dps:28.57:dps:1.8:51.426
+R	shaman/elemental	12	15235	12906	mh	77.05	int:6:int:0.2:1.2,sta:4:sta:0.89:3.56,sp:38:sp:1:38,dps:19.05:dps:1.8:34.29
+R	shaman/elemental	12	15235	12908	mh	74.89	int:6:int:0.2:1.2,sp:38:sp:1:38,spi:4:spi:0.35:1.4,dps:19.05:dps:1.8:34.29
+R	shaman/elemental	12	15235	12910	mh	79.03	sp:38:sp:1:38,spi:4:spi:0.35:1.4,sta:6:sta:0.89:5.34,dps:19.05:dps:1.8:34.29
+R	shaman/elemental	12	15235	12912	mh	64.43	spDmg:24:sp:1:24,int:4:int:0.2:0.8,sta:6:sta:0.89:5.34,dps:19.05:dps:1.8:34.29
+R	shaman/elemental	12	15235	12913	mh	60.89	int:6:int:0.2:1.2,spDmg:24:sp:1:24,spi:4:spi:0.35:1.4,dps:19.05:dps:1.8:34.29
+R	shaman/elemental	12	15235	12916	mh	65.03	spDmg:24:sp:1:24,spi:4:spi:0.35:1.4,sta:6:sta:0.89:5.34,dps:19.05:dps:1.8:34.29
+R	shaman/elemental	12	15235	12917	mh	73.89	sp:38:sp:1:38,int:8:int:0.2:1.6,dps:19.05:dps:1.8:34.29
+R	shaman/elemental	12	15235	12920	mh	59.89	int:8:int:0.2:1.6,spDmg:24:sp:1:24,dps:19.05:dps:1.8:34.29
 R	shaman/elemental	12	15477	0	gear	1.616	armor:101:armor:0.016:1.616
 R	shaman/elemental	12	15477	12718	gear	2.7060000000000004	int:1:int:0.2:0.2,sta:1:sta:0.89:0.89,armor:101:armor:0.016:1.616
 R	shaman/elemental	12	15477	12719	gear	2.856	spi:1:spi:0.35:0.35,sta:1:sta:0.89:0.89,armor:101:armor:0.016:1.616
@@ -8112,6 +8388,12 @@ R	shaman/elemental	12	282560	0	gear	24.978	int:10:int:0.2:2,sta:13:sta:0.89:11.5
 R	shaman/elemental	12	286609	0	oh	30.516	spi:6:spi:0.35:2.1,armor:1776:armor:0.016:28.416
 R	shaman/elemental	25	1315	0	gear	18.6	sta:10:sta:1.5:15,spi:15:spi:0.24:3.6
 R	shaman/elemental	25	1808	0	gear	3.256	armor:74:armor:0.044:3.256
+R	shaman/elemental	25	1990	0	mh	49.42	dps:24.71:dps:2:49.42
+R	shaman/elemental	25	1990	12718	mh	67.78	int:9:int:0.54:4.86,sta:9:sta:1.5:13.5,dps:24.71:dps:2:49.42
+R	shaman/elemental	25	1990	12905	mh	81.19999999999999	int:11:int:0.54:5.94,sta:7:sta:1.5:10.5,sp:28:sp:1:28,dps:18.38:dps:2:36.76
+R	shaman/elemental	25	2140	0	mh	11.88	dps:5.94:dps:2:11.88
+R	shaman/elemental	25	2140	12718	mh	13.920000000000002	int:1:int:0.54:0.54,sta:1:sta:1.5:1.5,dps:5.94:dps:2:11.88
+R	shaman/elemental	25	2140	12917	mh	13.04	sp:5:sp:1:5,int:1:int:0.54:0.54,dps:3.75:dps:2:7.5
 R	shaman/elemental	25	2225	0	mh	10.0	dps:5:dps:2:10
 R	shaman/elemental	25	2614	0	gear	1.276	armor:29:armor:0.044:1.276
 R	shaman/elemental	25	3158	0	gear	1.144	armor:26:armor:0.044:1.144
@@ -8142,8 +8424,8 @@ R	shaman/elemental	25	4570	12742	mh	24.5	sta:3:sta:1.5:4.5,dps:10:dps:2:20
 R	shaman/elemental	25	4570	12743	mh	24.5	sta:3:sta:1.5:4.5,dps:10:dps:2:20
 R	shaman/elemental	25	4570	12744	mh	24.5	sta:3:sta:1.5:4.5,dps:10:dps:2:20
 R	shaman/elemental	25	4570	12759	mh	20.0	dps:10:dps:2:20
-R	shaman/elemental	25	4570	12918	mh	30.16	sp:8:sp:1:8,int:4:int:0.54:2.16,dps:10:dps:2:20
-R	shaman/elemental	25	4570	12919	mh	27.16	spDmg:5:sp:1:5,int:4:int:0.54:2.16,dps:10:dps:2:20
+R	shaman/elemental	25	4570	12918	mh	25.32	sp:8:sp:1:8,int:4:int:0.54:2.16,dps:7.58:dps:2:15.16
+R	shaman/elemental	25	4570	12919	mh	22.32	spDmg:5:sp:1:5,int:4:int:0.54:2.16,dps:7.58:dps:2:15.16
 R	shaman/elemental	25	5079	0	gear	0.0	
 R	shaman/elemental	25	6063	0	gear	2.42	armor:55:armor:0.044:2.42
 R	shaman/elemental	25	6540	0	gear	1.232	armor:28:armor:0.044:1.232
@@ -8379,14 +8661,14 @@ R	shaman/elemental	25	15235	12752	mh	67.7	agi:3:agi:0.24:0.72,sta:6:sta:1.5:9,st
 R	shaman/elemental	25	15235	12753	mh	66.98	sta:6:sta:1.5:9,str:3:str:0.28:0.84,dps:28.57:dps:2:57.14
 R	shaman/elemental	25	15235	12754	mh	69.14	sp:3:sp:1:3,sta:6:sta:1.5:9,dps:28.57:dps:2:57.14
 R	shaman/elemental	25	15235	12759	mh	57.14	dps:28.57:dps:2:57.14
-R	shaman/elemental	25	15235	12906	mh	104.38	int:6:int:0.54:3.24,sta:4:sta:1.5:6,sp:38:sp:1:38,dps:28.57:dps:2:57.14
-R	shaman/elemental	25	15235	12908	mh	99.34	int:6:int:0.54:3.24,sp:38:sp:1:38,spi:4:spi:0.24:0.96,dps:28.57:dps:2:57.14
-R	shaman/elemental	25	15235	12910	mh	105.1	sp:38:sp:1:38,spi:4:spi:0.24:0.96,sta:6:sta:1.5:9,dps:28.57:dps:2:57.14
-R	shaman/elemental	25	15235	12912	mh	92.3	spDmg:24:sp:1:24,int:4:int:0.54:2.16,sta:6:sta:1.5:9,dps:28.57:dps:2:57.14
-R	shaman/elemental	25	15235	12913	mh	85.34	int:6:int:0.54:3.24,spDmg:24:sp:1:24,spi:4:spi:0.24:0.96,dps:28.57:dps:2:57.14
-R	shaman/elemental	25	15235	12916	mh	91.1	spDmg:24:sp:1:24,spi:4:spi:0.24:0.96,sta:6:sta:1.5:9,dps:28.57:dps:2:57.14
-R	shaman/elemental	25	15235	12917	mh	99.46000000000001	sp:38:sp:1:38,int:8:int:0.54:4.32,dps:28.57:dps:2:57.14
-R	shaman/elemental	25	15235	12920	mh	85.46000000000001	int:8:int:0.54:4.32,spDmg:24:sp:1:24,dps:28.57:dps:2:57.14
+R	shaman/elemental	25	15235	12906	mh	85.34	int:6:int:0.54:3.24,sta:4:sta:1.5:6,sp:38:sp:1:38,dps:19.05:dps:2:38.1
+R	shaman/elemental	25	15235	12908	mh	80.30000000000001	int:6:int:0.54:3.24,sp:38:sp:1:38,spi:4:spi:0.24:0.96,dps:19.05:dps:2:38.1
+R	shaman/elemental	25	15235	12910	mh	86.06	sp:38:sp:1:38,spi:4:spi:0.24:0.96,sta:6:sta:1.5:9,dps:19.05:dps:2:38.1
+R	shaman/elemental	25	15235	12912	mh	73.25999999999999	spDmg:24:sp:1:24,int:4:int:0.54:2.16,sta:6:sta:1.5:9,dps:19.05:dps:2:38.1
+R	shaman/elemental	25	15235	12913	mh	66.30000000000001	int:6:int:0.54:3.24,spDmg:24:sp:1:24,spi:4:spi:0.24:0.96,dps:19.05:dps:2:38.1
+R	shaman/elemental	25	15235	12916	mh	72.06	spDmg:24:sp:1:24,spi:4:spi:0.24:0.96,sta:6:sta:1.5:9,dps:19.05:dps:2:38.1
+R	shaman/elemental	25	15235	12917	mh	80.42	sp:38:sp:1:38,int:8:int:0.54:4.32,dps:19.05:dps:2:38.1
+R	shaman/elemental	25	15235	12920	mh	66.42	int:8:int:0.54:4.32,spDmg:24:sp:1:24,dps:19.05:dps:2:38.1
 R	shaman/elemental	25	15477	0	gear	4.444	armor:101:armor:0.044:4.444
 R	shaman/elemental	25	15477	12718	gear	6.484	int:1:int:0.54:0.54,sta:1:sta:1.5:1.5,armor:101:armor:0.044:4.444
 R	shaman/elemental	25	15477	12719	gear	6.184	spi:1:spi:0.24:0.24,sta:1:sta:1.5:1.5,armor:101:armor:0.044:4.444
@@ -8430,6 +8712,12 @@ R	shaman/elemental	25	282560	0	gear	42.272	int:10:int:0.54:5.4,sta:13:sta:1.5:19
 R	shaman/elemental	25	286609	0	oh	79.58399999999999	spi:6:spi:0.24:1.44,armor:1776:armor:0.044:78.144
 R	shaman/elemental	34	1315	0	gear	15.75	sta:10:sta:1.2:12,spi:15:spi:0.25:3.75
 R	shaman/elemental	34	1808	0	gear	2.96	armor:74:armor:0.04:2.96
+R	shaman/elemental	34	1990	0	mh	34.594	dps:24.71:dps:1.4:34.594
+R	shaman/elemental	34	1990	12718	mh	55.294	int:9:int:1.1:9.9,sta:9:sta:1.2:10.8,dps:24.71:dps:1.4:34.594
+R	shaman/elemental	34	1990	12905	mh	74.232	int:11:int:1.1:12.1,sta:7:sta:1.2:8.4,sp:28:sp:1:28,dps:18.38:dps:1.4:25.732
+R	shaman/elemental	34	2140	0	mh	8.316	dps:5.94:dps:1.4:8.316
+R	shaman/elemental	34	2140	12718	mh	10.616	int:1:int:1.1:1.1,sta:1:sta:1.2:1.2,dps:5.94:dps:1.4:8.316
+R	shaman/elemental	34	2140	12917	mh	11.35	sp:5:sp:1:5,int:1:int:1.1:1.1,dps:3.75:dps:1.4:5.25
 R	shaman/elemental	34	2225	0	mh	7.0	dps:5:dps:1.4:7
 R	shaman/elemental	34	2614	0	gear	1.16	armor:29:armor:0.04:1.16
 R	shaman/elemental	34	3158	0	gear	1.04	armor:26:armor:0.04:1.04
@@ -8460,8 +8748,8 @@ R	shaman/elemental	34	4570	12742	mh	17.6	sta:3:sta:1.2:3.6,dps:10:dps:1.4:14
 R	shaman/elemental	34	4570	12743	mh	17.6	sta:3:sta:1.2:3.6,dps:10:dps:1.4:14
 R	shaman/elemental	34	4570	12744	mh	17.6	sta:3:sta:1.2:3.6,dps:10:dps:1.4:14
 R	shaman/elemental	34	4570	12759	mh	14.0	dps:10:dps:1.4:14
-R	shaman/elemental	34	4570	12918	mh	26.4	sp:8:sp:1:8,int:4:int:1.1:4.4,dps:10:dps:1.4:14
-R	shaman/elemental	34	4570	12919	mh	23.4	spDmg:5:sp:1:5,int:4:int:1.1:4.4,dps:10:dps:1.4:14
+R	shaman/elemental	34	4570	12918	mh	23.012	sp:8:sp:1:8,int:4:int:1.1:4.4,dps:7.58:dps:1.4:10.612
+R	shaman/elemental	34	4570	12919	mh	20.012	spDmg:5:sp:1:5,int:4:int:1.1:4.4,dps:7.58:dps:1.4:10.612
 R	shaman/elemental	34	5079	0	gear	0.0	
 R	shaman/elemental	34	6063	0	gear	2.2	armor:55:armor:0.04:2.2
 R	shaman/elemental	34	6540	0	gear	1.12	armor:28:armor:0.04:1.12
@@ -8697,14 +8985,14 @@ R	shaman/elemental	34	15235	12752	mh	48.458	agi:3:agi:0.22:0.66,sta:6:sta:1.2:7.
 R	shaman/elemental	34	15235	12753	mh	47.797999999999995	sta:6:sta:1.2:7.2,str:3:str:0.2:0.6,dps:28.57:dps:1.4:39.998
 R	shaman/elemental	34	15235	12754	mh	50.19799999999999	sp:3:sp:1:3,sta:6:sta:1.2:7.2,dps:28.57:dps:1.4:39.998
 R	shaman/elemental	34	15235	12759	mh	39.998	dps:28.57:dps:1.4:39.998
-R	shaman/elemental	34	15235	12906	mh	89.398	int:6:int:1.1:6.6,sta:4:sta:1.2:4.8,sp:38:sp:1:38,dps:28.57:dps:1.4:39.998
-R	shaman/elemental	34	15235	12908	mh	85.598	int:6:int:1.1:6.6,sp:38:sp:1:38,spi:4:spi:0.25:1,dps:28.57:dps:1.4:39.998
-R	shaman/elemental	34	15235	12910	mh	86.19800000000001	sp:38:sp:1:38,spi:4:spi:0.25:1,sta:6:sta:1.2:7.2,dps:28.57:dps:1.4:39.998
-R	shaman/elemental	34	15235	12912	mh	75.59799999999998	spDmg:24:sp:1:24,int:4:int:1.1:4.4,sta:6:sta:1.2:7.2,dps:28.57:dps:1.4:39.998
-R	shaman/elemental	34	15235	12913	mh	71.598	int:6:int:1.1:6.6,spDmg:24:sp:1:24,spi:4:spi:0.25:1,dps:28.57:dps:1.4:39.998
-R	shaman/elemental	34	15235	12916	mh	72.19800000000001	spDmg:24:sp:1:24,spi:4:spi:0.25:1,sta:6:sta:1.2:7.2,dps:28.57:dps:1.4:39.998
-R	shaman/elemental	34	15235	12917	mh	86.798	sp:38:sp:1:38,int:8:int:1.1:8.8,dps:28.57:dps:1.4:39.998
-R	shaman/elemental	34	15235	12920	mh	72.798	int:8:int:1.1:8.8,spDmg:24:sp:1:24,dps:28.57:dps:1.4:39.998
+R	shaman/elemental	34	15235	12906	mh	76.07	int:6:int:1.1:6.6,sta:4:sta:1.2:4.8,sp:38:sp:1:38,dps:19.05:dps:1.4:26.67
+R	shaman/elemental	34	15235	12908	mh	72.27	int:6:int:1.1:6.6,sp:38:sp:1:38,spi:4:spi:0.25:1,dps:19.05:dps:1.4:26.67
+R	shaman/elemental	34	15235	12910	mh	72.87	sp:38:sp:1:38,spi:4:spi:0.25:1,sta:6:sta:1.2:7.2,dps:19.05:dps:1.4:26.67
+R	shaman/elemental	34	15235	12912	mh	62.269999999999996	spDmg:24:sp:1:24,int:4:int:1.1:4.4,sta:6:sta:1.2:7.2,dps:19.05:dps:1.4:26.67
+R	shaman/elemental	34	15235	12913	mh	58.269999999999996	int:6:int:1.1:6.6,spDmg:24:sp:1:24,spi:4:spi:0.25:1,dps:19.05:dps:1.4:26.67
+R	shaman/elemental	34	15235	12916	mh	58.870000000000005	spDmg:24:sp:1:24,spi:4:spi:0.25:1,sta:6:sta:1.2:7.2,dps:19.05:dps:1.4:26.67
+R	shaman/elemental	34	15235	12917	mh	73.47	sp:38:sp:1:38,int:8:int:1.1:8.8,dps:19.05:dps:1.4:26.67
+R	shaman/elemental	34	15235	12920	mh	59.47	int:8:int:1.1:8.8,spDmg:24:sp:1:24,dps:19.05:dps:1.4:26.67
 R	shaman/elemental	34	15477	0	gear	4.04	armor:101:armor:0.04:4.04
 R	shaman/elemental	34	15477	12718	gear	6.34	int:1:int:1.1:1.1,sta:1:sta:1.2:1.2,armor:101:armor:0.04:4.04
 R	shaman/elemental	34	15477	12719	gear	5.49	spi:1:spi:0.25:0.25,sta:1:sta:1.2:1.2,armor:101:armor:0.04:4.04
@@ -8748,6 +9036,12 @@ R	shaman/elemental	34	282560	0	gear	43.120000000000005	int:10:int:1.1:11,sta:13:
 R	shaman/elemental	34	286609	0	oh	72.54	spi:6:spi:0.25:1.5,armor:1776:armor:0.04:71.04
 R	shaman/elemental	45	1315	0	gear	13.0	sta:10:sta:1:10,spi:15:spi:0.2:3
 R	shaman/elemental	45	1808	0	gear	2.368	armor:74:armor:0.032:2.368
+R	shaman/elemental	45	1990	0	mh	27.181000000000004	dps:24.71:dps:1.1:27.181
+R	shaman/elemental	45	1990	12718	mh	47.88100000000001	int:9:int:1.3:11.7,sta:9:sta:1:9,dps:24.71:dps:1.1:27.181
+R	shaman/elemental	45	1990	12905	mh	69.518	int:11:int:1.3:14.3,sta:7:sta:1:7,sp:28:sp:1:28,dps:18.38:dps:1.1:20.218
+R	shaman/elemental	45	2140	0	mh	6.534000000000001	dps:5.94:dps:1.1:6.534
+R	shaman/elemental	45	2140	12718	mh	8.834	int:1:int:1.3:1.3,sta:1:sta:1:1,dps:5.94:dps:1.1:6.534
+R	shaman/elemental	45	2140	12917	mh	10.425	sp:5:sp:1:5,int:1:int:1.3:1.3,dps:3.75:dps:1.1:4.125
 R	shaman/elemental	45	2225	0	mh	5.5	dps:5:dps:1.1:5.5
 R	shaman/elemental	45	2614	0	gear	0.928	armor:29:armor:0.032:0.928
 R	shaman/elemental	45	3158	0	gear	0.8320000000000001	armor:26:armor:0.032:0.832
@@ -8778,8 +9072,8 @@ R	shaman/elemental	45	4570	12742	mh	14.0	sta:3:sta:1:3,dps:10:dps:1.1:11
 R	shaman/elemental	45	4570	12743	mh	14.0	sta:3:sta:1:3,dps:10:dps:1.1:11
 R	shaman/elemental	45	4570	12744	mh	14.0	sta:3:sta:1:3,dps:10:dps:1.1:11
 R	shaman/elemental	45	4570	12759	mh	11.0	dps:10:dps:1.1:11
-R	shaman/elemental	45	4570	12918	mh	24.2	sp:8:sp:1:8,int:4:int:1.3:5.2,dps:10:dps:1.1:11
-R	shaman/elemental	45	4570	12919	mh	21.2	spDmg:5:sp:1:5,int:4:int:1.3:5.2,dps:10:dps:1.1:11
+R	shaman/elemental	45	4570	12918	mh	21.538	sp:8:sp:1:8,int:4:int:1.3:5.2,dps:7.58:dps:1.1:8.338
+R	shaman/elemental	45	4570	12919	mh	18.538	spDmg:5:sp:1:5,int:4:int:1.3:5.2,dps:7.58:dps:1.1:8.338
 R	shaman/elemental	45	5079	0	gear	0.0	
 R	shaman/elemental	45	6063	0	gear	1.76	armor:55:armor:0.032:1.76
 R	shaman/elemental	45	6540	0	gear	0.896	armor:28:armor:0.032:0.896
@@ -9015,14 +9309,14 @@ R	shaman/elemental	45	15235	12752	mh	38.477000000000004	agi:3:agi:0.2:0.6,sta:6:
 R	shaman/elemental	45	15235	12753	mh	37.877	sta:6:sta:1:6,str:3:str:0.15:0.45,dps:28.57:dps:1.1:31.427
 R	shaman/elemental	45	15235	12754	mh	40.42700000000001	sp:3:sp:1:3,sta:6:sta:1:6,dps:28.57:dps:1.1:31.427
 R	shaman/elemental	45	15235	12759	mh	31.427000000000003	dps:28.57:dps:1.1:31.427
-R	shaman/elemental	45	15235	12906	mh	81.227	int:6:int:1.3:7.8,sta:4:sta:1:4,sp:38:sp:1:38,dps:28.57:dps:1.1:31.427
-R	shaman/elemental	45	15235	12908	mh	78.027	int:6:int:1.3:7.8,sp:38:sp:1:38,spi:4:spi:0.2:0.8,dps:28.57:dps:1.1:31.427
-R	shaman/elemental	45	15235	12910	mh	76.227	sp:38:sp:1:38,spi:4:spi:0.2:0.8,sta:6:sta:1:6,dps:28.57:dps:1.1:31.427
-R	shaman/elemental	45	15235	12912	mh	66.62700000000001	spDmg:24:sp:1:24,int:4:int:1.3:5.2,sta:6:sta:1:6,dps:28.57:dps:1.1:31.427
-R	shaman/elemental	45	15235	12913	mh	64.027	int:6:int:1.3:7.8,spDmg:24:sp:1:24,spi:4:spi:0.2:0.8,dps:28.57:dps:1.1:31.427
-R	shaman/elemental	45	15235	12916	mh	62.227000000000004	spDmg:24:sp:1:24,spi:4:spi:0.2:0.8,sta:6:sta:1:6,dps:28.57:dps:1.1:31.427
-R	shaman/elemental	45	15235	12917	mh	79.827	sp:38:sp:1:38,int:8:int:1.3:10.4,dps:28.57:dps:1.1:31.427
-R	shaman/elemental	45	15235	12920	mh	65.827	int:8:int:1.3:10.4,spDmg:24:sp:1:24,dps:28.57:dps:1.1:31.427
+R	shaman/elemental	45	15235	12906	mh	70.755	int:6:int:1.3:7.8,sta:4:sta:1:4,sp:38:sp:1:38,dps:19.05:dps:1.1:20.955
+R	shaman/elemental	45	15235	12908	mh	67.55499999999999	int:6:int:1.3:7.8,sp:38:sp:1:38,spi:4:spi:0.2:0.8,dps:19.05:dps:1.1:20.955
+R	shaman/elemental	45	15235	12910	mh	65.755	sp:38:sp:1:38,spi:4:spi:0.2:0.8,sta:6:sta:1:6,dps:19.05:dps:1.1:20.955
+R	shaman/elemental	45	15235	12912	mh	56.155	spDmg:24:sp:1:24,int:4:int:1.3:5.2,sta:6:sta:1:6,dps:19.05:dps:1.1:20.955
+R	shaman/elemental	45	15235	12913	mh	53.55500000000001	int:6:int:1.3:7.8,spDmg:24:sp:1:24,spi:4:spi:0.2:0.8,dps:19.05:dps:1.1:20.955
+R	shaman/elemental	45	15235	12916	mh	51.755	spDmg:24:sp:1:24,spi:4:spi:0.2:0.8,sta:6:sta:1:6,dps:19.05:dps:1.1:20.955
+R	shaman/elemental	45	15235	12917	mh	69.355	sp:38:sp:1:38,int:8:int:1.3:10.4,dps:19.05:dps:1.1:20.955
+R	shaman/elemental	45	15235	12920	mh	55.355000000000004	int:8:int:1.3:10.4,spDmg:24:sp:1:24,dps:19.05:dps:1.1:20.955
 R	shaman/elemental	45	15477	0	gear	3.232	armor:101:armor:0.032:3.232
 R	shaman/elemental	45	15477	12718	gear	5.532	int:1:int:1.3:1.3,sta:1:sta:1:1,armor:101:armor:0.032:3.232
 R	shaman/elemental	45	15477	12719	gear	4.432	spi:1:spi:0.2:0.2,sta:1:sta:1:1,armor:101:armor:0.032:3.232
@@ -9066,6 +9360,12 @@ R	shaman/elemental	45	282560	0	gear	40.816	int:10:int:1.3:13,sta:13:sta:1:13,sp:
 R	shaman/elemental	45	286609	0	oh	58.032000000000004	spi:6:spi:0.2:1.2,armor:1776:armor:0.032:56.832
 R	shaman/elemental	55	1315	0	gear	17.6	sta:10:sta:1.1:11,spi:15:spi:0.44:6.6
 R	shaman/elemental	55	1808	0	gear	2.812	armor:74:armor:0.038:2.812
+R	shaman/elemental	55	1990	0	mh	21.9919	dps:24.71:dps:0.89:21.992
+R	shaman/elemental	55	1990	12718	mh	45.3919	int:9:int:1.5:13.5,sta:9:sta:1.1:9.9,dps:24.71:dps:0.89:21.992
+R	shaman/elemental	55	1990	12905	mh	68.5582	int:11:int:1.5:16.5,sta:7:sta:1.1:7.7,sp:28:sp:1:28,dps:18.38:dps:0.89:16.358
+R	shaman/elemental	55	2140	0	mh	5.286600000000001	dps:5.94:dps:0.89:5.287
+R	shaman/elemental	55	2140	12718	mh	7.886600000000001	int:1:int:1.5:1.5,sta:1:sta:1.1:1.1,dps:5.94:dps:0.89:5.287
+R	shaman/elemental	55	2140	12917	mh	9.8375	sp:5:sp:1:5,int:1:int:1.5:1.5,dps:3.75:dps:0.89:3.337
 R	shaman/elemental	55	2225	0	mh	4.45	dps:5:dps:0.89:4.45
 R	shaman/elemental	55	2614	0	gear	1.1019999999999999	armor:29:armor:0.038:1.102
 R	shaman/elemental	55	3158	0	gear	0.988	armor:26:armor:0.038:0.988
@@ -9096,8 +9396,8 @@ R	shaman/elemental	55	4570	12742	mh	12.200000000000001	sta:3:sta:1.1:3.3,dps:10:
 R	shaman/elemental	55	4570	12743	mh	12.200000000000001	sta:3:sta:1.1:3.3,dps:10:dps:0.89:8.9
 R	shaman/elemental	55	4570	12744	mh	12.200000000000001	sta:3:sta:1.1:3.3,dps:10:dps:0.89:8.9
 R	shaman/elemental	55	4570	12759	mh	8.9	dps:10:dps:0.89:8.9
-R	shaman/elemental	55	4570	12918	mh	22.9	sp:8:sp:1:8,int:4:int:1.5:6,dps:10:dps:0.89:8.9
-R	shaman/elemental	55	4570	12919	mh	19.9	spDmg:5:sp:1:5,int:4:int:1.5:6,dps:10:dps:0.89:8.9
+R	shaman/elemental	55	4570	12918	mh	20.7462	sp:8:sp:1:8,int:4:int:1.5:6,dps:7.58:dps:0.89:6.746
+R	shaman/elemental	55	4570	12919	mh	17.7462	spDmg:5:sp:1:5,int:4:int:1.5:6,dps:7.58:dps:0.89:6.746
 R	shaman/elemental	55	5079	0	gear	0.0	
 R	shaman/elemental	55	6063	0	gear	2.09	armor:55:armor:0.038:2.09
 R	shaman/elemental	55	6540	0	gear	1.064	armor:28:armor:0.038:1.064
@@ -9333,14 +9633,14 @@ R	shaman/elemental	55	15235	12752	mh	33.0473	agi:3:agi:0.22:0.66,sta:6:sta:1.1:6
 R	shaman/elemental	55	15235	12753	mh	32.387299999999996	sta:6:sta:1.1:6.6,str:3:str:0.12:0.36,dps:28.57:dps:0.89:25.427
 R	shaman/elemental	55	15235	12754	mh	35.0273	sp:3:sp:1:3,sta:6:sta:1.1:6.6,dps:28.57:dps:0.89:25.427
 R	shaman/elemental	55	15235	12759	mh	25.4273	dps:28.57:dps:0.89:25.427
-R	shaman/elemental	55	15235	12906	mh	76.8273	int:6:int:1.5:9,sta:4:sta:1.1:4.4,sp:38:sp:1:38,dps:28.57:dps:0.89:25.427
-R	shaman/elemental	55	15235	12908	mh	74.1873	int:6:int:1.5:9,sp:38:sp:1:38,spi:4:spi:0.44:1.76,dps:28.57:dps:0.89:25.427
-R	shaman/elemental	55	15235	12910	mh	71.7873	sp:38:sp:1:38,spi:4:spi:0.44:1.76,sta:6:sta:1.1:6.6,dps:28.57:dps:0.89:25.427
-R	shaman/elemental	55	15235	12912	mh	62.0273	spDmg:24:sp:1:24,int:4:int:1.5:6,sta:6:sta:1.1:6.6,dps:28.57:dps:0.89:25.427
-R	shaman/elemental	55	15235	12913	mh	60.18729999999999	int:6:int:1.5:9,spDmg:24:sp:1:24,spi:4:spi:0.44:1.76,dps:28.57:dps:0.89:25.427
-R	shaman/elemental	55	15235	12916	mh	57.7873	spDmg:24:sp:1:24,spi:4:spi:0.44:1.76,sta:6:sta:1.1:6.6,dps:28.57:dps:0.89:25.427
-R	shaman/elemental	55	15235	12917	mh	75.4273	sp:38:sp:1:38,int:8:int:1.5:12,dps:28.57:dps:0.89:25.427
-R	shaman/elemental	55	15235	12920	mh	61.4273	int:8:int:1.5:12,spDmg:24:sp:1:24,dps:28.57:dps:0.89:25.427
+R	shaman/elemental	55	15235	12906	mh	68.3545	int:6:int:1.5:9,sta:4:sta:1.1:4.4,sp:38:sp:1:38,dps:19.05:dps:0.89:16.954
+R	shaman/elemental	55	15235	12908	mh	65.7145	int:6:int:1.5:9,sp:38:sp:1:38,spi:4:spi:0.44:1.76,dps:19.05:dps:0.89:16.954
+R	shaman/elemental	55	15235	12910	mh	63.314499999999995	sp:38:sp:1:38,spi:4:spi:0.44:1.76,sta:6:sta:1.1:6.6,dps:19.05:dps:0.89:16.954
+R	shaman/elemental	55	15235	12912	mh	53.554500000000004	spDmg:24:sp:1:24,int:4:int:1.5:6,sta:6:sta:1.1:6.6,dps:19.05:dps:0.89:16.954
+R	shaman/elemental	55	15235	12913	mh	51.7145	int:6:int:1.5:9,spDmg:24:sp:1:24,spi:4:spi:0.44:1.76,dps:19.05:dps:0.89:16.954
+R	shaman/elemental	55	15235	12916	mh	49.314499999999995	spDmg:24:sp:1:24,spi:4:spi:0.44:1.76,sta:6:sta:1.1:6.6,dps:19.05:dps:0.89:16.954
+R	shaman/elemental	55	15235	12917	mh	66.9545	sp:38:sp:1:38,int:8:int:1.5:12,dps:19.05:dps:0.89:16.954
+R	shaman/elemental	55	15235	12920	mh	52.954499999999996	int:8:int:1.5:12,spDmg:24:sp:1:24,dps:19.05:dps:0.89:16.954
 R	shaman/elemental	55	15477	0	gear	3.838	armor:101:armor:0.038:3.838
 R	shaman/elemental	55	15477	12718	gear	6.438000000000001	int:1:int:1.5:1.5,sta:1:sta:1.1:1.1,armor:101:armor:0.038:3.838
 R	shaman/elemental	55	15477	12719	gear	5.378	spi:1:spi:0.44:0.44,sta:1:sta:1.1:1.1,armor:101:armor:0.038:3.838
@@ -9384,6 +9684,12 @@ R	shaman/elemental	55	282560	0	gear	45.394	int:10:int:1.5:15,sta:13:sta:1.1:14.3
 R	shaman/elemental	55	286609	0	oh	70.128	spi:6:spi:0.44:2.64,armor:1776:armor:0.038:67.488
 R	shaman/elemental	60	1315	0	gear	13.95	sta:10:sta:0.84:8.4,spi:15:spi:0.37:5.55
 R	shaman/elemental	60	1808	0	gear	2.516	armor:74:armor:0.034:2.516
+R	shaman/elemental	60	1990	0	mh	13.837600000000002	dps:24.71:dps:0.56:13.838
+R	shaman/elemental	60	1990	12718	mh	34.8976	int:9:int:1.5:13.5,sta:9:sta:0.84:7.56,dps:24.71:dps:0.56:13.838
+R	shaman/elemental	60	1990	12905	mh	60.672799999999995	int:11:int:1.5:16.5,sta:7:sta:0.84:5.88,sp:28:sp:1:28,dps:18.38:dps:0.56:10.293
+R	shaman/elemental	60	2140	0	mh	3.3264000000000005	dps:5.94:dps:0.56:3.326
+R	shaman/elemental	60	2140	12718	mh	5.6664	int:1:int:1.5:1.5,sta:1:sta:0.84:0.84,dps:5.94:dps:0.56:3.326
+R	shaman/elemental	60	2140	12917	mh	8.6	sp:5:sp:1:5,int:1:int:1.5:1.5,dps:3.75:dps:0.56:2.1
 R	shaman/elemental	60	2225	0	mh	2.8000000000000003	dps:5:dps:0.56:2.8
 R	shaman/elemental	60	2614	0	gear	0.9860000000000001	armor:29:armor:0.034:0.986
 R	shaman/elemental	60	3158	0	gear	0.8840000000000001	armor:26:armor:0.034:0.884
@@ -9414,8 +9720,8 @@ R	shaman/elemental	60	4570	12742	mh	8.120000000000001	sta:3:sta:0.84:2.52,dps:10
 R	shaman/elemental	60	4570	12743	mh	8.120000000000001	sta:3:sta:0.84:2.52,dps:10:dps:0.56:5.6
 R	shaman/elemental	60	4570	12744	mh	8.120000000000001	sta:3:sta:0.84:2.52,dps:10:dps:0.56:5.6
 R	shaman/elemental	60	4570	12759	mh	5.6000000000000005	dps:10:dps:0.56:5.6
-R	shaman/elemental	60	4570	12918	mh	19.6	sp:8:sp:1:8,int:4:int:1.5:6,dps:10:dps:0.56:5.6
-R	shaman/elemental	60	4570	12919	mh	16.6	spDmg:5:sp:1:5,int:4:int:1.5:6,dps:10:dps:0.56:5.6
+R	shaman/elemental	60	4570	12918	mh	18.2448	sp:8:sp:1:8,int:4:int:1.5:6,dps:7.58:dps:0.56:4.245
+R	shaman/elemental	60	4570	12919	mh	15.244800000000001	spDmg:5:sp:1:5,int:4:int:1.5:6,dps:7.58:dps:0.56:4.245
 R	shaman/elemental	60	5079	0	gear	0.0	
 R	shaman/elemental	60	6063	0	gear	1.87	armor:55:armor:0.034:1.87
 R	shaman/elemental	60	6540	0	gear	0.9520000000000001	armor:28:armor:0.034:0.952
@@ -9651,14 +9957,14 @@ R	shaman/elemental	60	15235	12752	mh	21.825200000000002	agi:3:agi:0.18:0.54,sta:
 R	shaman/elemental	60	15235	12753	mh	21.285200000000003	sta:6:sta:0.84:5.04,str:3:str:0.082:0.246,dps:28.57:dps:0.56:15.999
 R	shaman/elemental	60	15235	12754	mh	24.0392	sp:3:sp:1:3,sta:6:sta:0.84:5.04,dps:28.57:dps:0.56:15.999
 R	shaman/elemental	60	15235	12759	mh	15.999200000000002	dps:28.57:dps:0.56:15.999
-R	shaman/elemental	60	15235	12906	mh	66.3592	int:6:int:1.5:9,sta:4:sta:0.84:3.36,sp:38:sp:1:38,dps:28.57:dps:0.56:15.999
-R	shaman/elemental	60	15235	12908	mh	64.47919999999999	int:6:int:1.5:9,sp:38:sp:1:38,spi:4:spi:0.37:1.48,dps:28.57:dps:0.56:15.999
-R	shaman/elemental	60	15235	12910	mh	60.5192	sp:38:sp:1:38,spi:4:spi:0.37:1.48,sta:6:sta:0.84:5.04,dps:28.57:dps:0.56:15.999
-R	shaman/elemental	60	15235	12912	mh	51.0392	spDmg:24:sp:1:24,int:4:int:1.5:6,sta:6:sta:0.84:5.04,dps:28.57:dps:0.56:15.999
-R	shaman/elemental	60	15235	12913	mh	50.4792	int:6:int:1.5:9,spDmg:24:sp:1:24,spi:4:spi:0.37:1.48,dps:28.57:dps:0.56:15.999
-R	shaman/elemental	60	15235	12916	mh	46.5192	spDmg:24:sp:1:24,spi:4:spi:0.37:1.48,sta:6:sta:0.84:5.04,dps:28.57:dps:0.56:15.999
-R	shaman/elemental	60	15235	12917	mh	65.9992	sp:38:sp:1:38,int:8:int:1.5:12,dps:28.57:dps:0.56:15.999
-R	shaman/elemental	60	15235	12920	mh	51.9992	int:8:int:1.5:12,spDmg:24:sp:1:24,dps:28.57:dps:0.56:15.999
+R	shaman/elemental	60	15235	12906	mh	61.028	int:6:int:1.5:9,sta:4:sta:0.84:3.36,sp:38:sp:1:38,dps:19.05:dps:0.56:10.668
+R	shaman/elemental	60	15235	12908	mh	59.147999999999996	int:6:int:1.5:9,sp:38:sp:1:38,spi:4:spi:0.37:1.48,dps:19.05:dps:0.56:10.668
+R	shaman/elemental	60	15235	12910	mh	55.187999999999995	sp:38:sp:1:38,spi:4:spi:0.37:1.48,sta:6:sta:0.84:5.04,dps:19.05:dps:0.56:10.668
+R	shaman/elemental	60	15235	12912	mh	45.708	spDmg:24:sp:1:24,int:4:int:1.5:6,sta:6:sta:0.84:5.04,dps:19.05:dps:0.56:10.668
+R	shaman/elemental	60	15235	12913	mh	45.147999999999996	int:6:int:1.5:9,spDmg:24:sp:1:24,spi:4:spi:0.37:1.48,dps:19.05:dps:0.56:10.668
+R	shaman/elemental	60	15235	12916	mh	41.188	spDmg:24:sp:1:24,spi:4:spi:0.37:1.48,sta:6:sta:0.84:5.04,dps:19.05:dps:0.56:10.668
+R	shaman/elemental	60	15235	12917	mh	60.668	sp:38:sp:1:38,int:8:int:1.5:12,dps:19.05:dps:0.56:10.668
+R	shaman/elemental	60	15235	12920	mh	46.668	int:8:int:1.5:12,spDmg:24:sp:1:24,dps:19.05:dps:0.56:10.668
 R	shaman/elemental	60	15477	0	gear	3.434	armor:101:armor:0.034:3.434
 R	shaman/elemental	60	15477	12718	gear	5.774	int:1:int:1.5:1.5,sta:1:sta:0.84:0.84,armor:101:armor:0.034:3.434
 R	shaman/elemental	60	15477	12719	gear	4.644	spi:1:spi:0.37:0.37,sta:1:sta:0.84:0.84,armor:101:armor:0.034:3.434
@@ -9702,6 +10008,12 @@ R	shaman/elemental	60	282560	0	gear	41.162000000000006	int:10:int:1.5:15,sta:13:
 R	shaman/elemental	60	286609	0	oh	62.604000000000006	spi:6:spi:0.37:2.22,armor:1776:armor:0.034:60.384
 R	shaman/restoration	12	1315	0	gear	44.0	sta:10:sta:2:20,spi:15:spi:1.6:24
 R	shaman/restoration	12	1808	0	gear	3.552	armor:74:armor:0.048:3.552
+R	shaman/restoration	12	1990	0	mh	170.49900000000002	dps:24.71:dps:6.9:170.499
+R	shaman/restoration	12	1990	12718	mh	194.889	int:9:int:0.71:6.39,sta:9:sta:2:18,dps:24.71:dps:6.9:170.499
+R	shaman/restoration	12	1990	12905	mh	221.43200000000002	int:11:int:0.71:7.81,sta:7:sta:2:14,sp:28:sp:2.6:72.8,dps:18.38:dps:6.9:126.822
+R	shaman/restoration	12	2140	0	mh	40.986000000000004	dps:5.94:dps:6.9:40.986
+R	shaman/restoration	12	2140	12718	mh	43.696000000000005	int:1:int:0.71:0.71,sta:1:sta:2:2,dps:5.94:dps:6.9:40.986
+R	shaman/restoration	12	2140	12917	mh	39.585	sp:5:sp:2.6:13,int:1:int:0.71:0.71,dps:3.75:dps:6.9:25.875
 R	shaman/restoration	12	2225	0	mh	34.5	dps:5:dps:6.9:34.5
 R	shaman/restoration	12	2614	0	gear	1.3920000000000001	armor:29:armor:0.048:1.392
 R	shaman/restoration	12	3158	0	gear	1.248	armor:26:armor:0.048:1.248
@@ -9732,8 +10044,8 @@ R	shaman/restoration	12	4570	12742	mh	75.0	sta:3:sta:2:6,dps:10:dps:6.9:69
 R	shaman/restoration	12	4570	12743	mh	75.0	sta:3:sta:2:6,dps:10:dps:6.9:69
 R	shaman/restoration	12	4570	12744	mh	75.0	sta:3:sta:2:6,dps:10:dps:6.9:69
 R	shaman/restoration	12	4570	12759	mh	69.0	dps:10:dps:6.9:69
-R	shaman/restoration	12	4570	12918	mh	92.64	sp:8:sp:2.6:20.8,int:4:int:0.71:2.84,dps:10:dps:6.9:69
-R	shaman/restoration	12	4570	12919	mh	84.84	spDmg:5:sp:2.6:13,int:4:int:0.71:2.84,dps:10:dps:6.9:69
+R	shaman/restoration	12	4570	12918	mh	75.94200000000001	sp:8:sp:2.6:20.8,int:4:int:0.71:2.84,dps:7.58:dps:6.9:52.302
+R	shaman/restoration	12	4570	12919	mh	68.14200000000001	spDmg:5:sp:2.6:13,int:4:int:0.71:2.84,dps:7.58:dps:6.9:52.302
 R	shaman/restoration	12	5079	0	gear	0.0	
 R	shaman/restoration	12	6063	0	gear	2.64	armor:55:armor:0.048:2.64
 R	shaman/restoration	12	6540	0	gear	1.344	armor:28:armor:0.048:1.344
@@ -9969,14 +10281,14 @@ R	shaman/restoration	12	15235	12752	mh	213.333	agi:3:agi:0.4:1.2,sta:6:sta:2:12,
 R	shaman/restoration	12	15235	12753	mh	212.133	sta:6:sta:2:12,str:3:str:1:3,dps:28.57:dps:6.9:197.133
 R	shaman/restoration	12	15235	12754	mh	216.93300000000002	sp:3:sp:2.6:7.8,sta:6:sta:2:12,dps:28.57:dps:6.9:197.133
 R	shaman/restoration	12	15235	12759	mh	197.133	dps:28.57:dps:6.9:197.133
-R	shaman/restoration	12	15235	12906	mh	308.193	int:6:int:0.71:4.26,sta:4:sta:2:8,sp:38:sp:2.6:98.8,dps:28.57:dps:6.9:197.133
-R	shaman/restoration	12	15235	12908	mh	306.593	int:6:int:0.71:4.26,sp:38:sp:2.6:98.8,spi:4:spi:1.6:6.4,dps:28.57:dps:6.9:197.133
-R	shaman/restoration	12	15235	12910	mh	314.333	sp:38:sp:2.6:98.8,spi:4:spi:1.6:6.4,sta:6:sta:2:12,dps:28.57:dps:6.9:197.133
-R	shaman/restoration	12	15235	12912	mh	274.37300000000005	spDmg:24:sp:2.6:62.4,int:4:int:0.71:2.84,sta:6:sta:2:12,dps:28.57:dps:6.9:197.133
-R	shaman/restoration	12	15235	12913	mh	270.19300000000004	int:6:int:0.71:4.26,spDmg:24:sp:2.6:62.4,spi:4:spi:1.6:6.4,dps:28.57:dps:6.9:197.133
-R	shaman/restoration	12	15235	12916	mh	277.933	spDmg:24:sp:2.6:62.4,spi:4:spi:1.6:6.4,sta:6:sta:2:12,dps:28.57:dps:6.9:197.133
-R	shaman/restoration	12	15235	12917	mh	301.613	sp:38:sp:2.6:98.8,int:8:int:0.71:5.68,dps:28.57:dps:6.9:197.133
-R	shaman/restoration	12	15235	12920	mh	265.213	int:8:int:0.71:5.68,spDmg:24:sp:2.6:62.4,dps:28.57:dps:6.9:197.133
+R	shaman/restoration	12	15235	12906	mh	242.50500000000002	int:6:int:0.71:4.26,sta:4:sta:2:8,sp:38:sp:2.6:98.8,dps:19.05:dps:6.9:131.445
+R	shaman/restoration	12	15235	12908	mh	240.90500000000003	int:6:int:0.71:4.26,sp:38:sp:2.6:98.8,spi:4:spi:1.6:6.4,dps:19.05:dps:6.9:131.445
+R	shaman/restoration	12	15235	12910	mh	248.64500000000004	sp:38:sp:2.6:98.8,spi:4:spi:1.6:6.4,sta:6:sta:2:12,dps:19.05:dps:6.9:131.445
+R	shaman/restoration	12	15235	12912	mh	208.68500000000003	spDmg:24:sp:2.6:62.4,int:4:int:0.71:2.84,sta:6:sta:2:12,dps:19.05:dps:6.9:131.445
+R	shaman/restoration	12	15235	12913	mh	204.50500000000005	int:6:int:0.71:4.26,spDmg:24:sp:2.6:62.4,spi:4:spi:1.6:6.4,dps:19.05:dps:6.9:131.445
+R	shaman/restoration	12	15235	12916	mh	212.24500000000003	spDmg:24:sp:2.6:62.4,spi:4:spi:1.6:6.4,sta:6:sta:2:12,dps:19.05:dps:6.9:131.445
+R	shaman/restoration	12	15235	12917	mh	235.925	sp:38:sp:2.6:98.8,int:8:int:0.71:5.68,dps:19.05:dps:6.9:131.445
+R	shaman/restoration	12	15235	12920	mh	199.52500000000003	int:8:int:0.71:5.68,spDmg:24:sp:2.6:62.4,dps:19.05:dps:6.9:131.445
 R	shaman/restoration	12	15477	0	gear	4.848	armor:101:armor:0.048:4.848
 R	shaman/restoration	12	15477	12718	gear	7.558	int:1:int:0.71:0.71,sta:1:sta:2:2,armor:101:armor:0.048:4.848
 R	shaman/restoration	12	15477	12719	gear	8.448	spi:1:spi:1.6:1.6,sta:1:sta:2:2,armor:101:armor:0.048:4.848
@@ -10020,6 +10332,12 @@ R	shaman/restoration	12	282560	0	gear	64.12400000000001	int:10:int:0.71:7.1,sta:
 R	shaman/restoration	12	286609	0	oh	94.84800000000001	spi:6:spi:1.6:9.6,armor:1776:armor:0.048:85.248
 R	shaman/restoration	25	1315	0	gear	35.0	sta:10:sta:1.4:14,spi:15:spi:1.4:21
 R	shaman/restoration	25	1808	0	gear	7.4	armor:74:armor:0.1:7.4
+R	shaman/restoration	25	1990	0	mh	170.49900000000002	dps:24.71:dps:6.9:170.499
+R	shaman/restoration	25	1990	12718	mh	200.199	int:9:int:1.9:17.1,sta:9:sta:1.4:12.6,dps:24.71:dps:6.9:170.499
+R	shaman/restoration	25	1990	12905	mh	221.922	int:11:int:1.9:20.9,sta:7:sta:1.4:9.8,sp:28:sp:2.3:64.4,dps:18.38:dps:6.9:126.822
+R	shaman/restoration	25	2140	0	mh	40.986000000000004	dps:5.94:dps:6.9:40.986
+R	shaman/restoration	25	2140	12718	mh	44.286	int:1:int:1.9:1.9,sta:1:sta:1.4:1.4,dps:5.94:dps:6.9:40.986
+R	shaman/restoration	25	2140	12917	mh	39.275	sp:5:sp:2.3:11.5,int:1:int:1.9:1.9,dps:3.75:dps:6.9:25.875
 R	shaman/restoration	25	2225	0	mh	34.5	dps:5:dps:6.9:34.5
 R	shaman/restoration	25	2614	0	gear	2.9000000000000004	armor:29:armor:0.1:2.9
 R	shaman/restoration	25	3158	0	gear	2.6	armor:26:armor:0.1:2.6
@@ -10050,8 +10368,8 @@ R	shaman/restoration	25	4570	12742	mh	73.2	sta:3:sta:1.4:4.2,dps:10:dps:6.9:69
 R	shaman/restoration	25	4570	12743	mh	73.2	sta:3:sta:1.4:4.2,dps:10:dps:6.9:69
 R	shaman/restoration	25	4570	12744	mh	73.2	sta:3:sta:1.4:4.2,dps:10:dps:6.9:69
 R	shaman/restoration	25	4570	12759	mh	69.0	dps:10:dps:6.9:69
-R	shaman/restoration	25	4570	12918	mh	95.0	sp:8:sp:2.3:18.4,int:4:int:1.9:7.6,dps:10:dps:6.9:69
-R	shaman/restoration	25	4570	12919	mh	88.1	spDmg:5:sp:2.3:11.5,int:4:int:1.9:7.6,dps:10:dps:6.9:69
+R	shaman/restoration	25	4570	12918	mh	78.302	sp:8:sp:2.3:18.4,int:4:int:1.9:7.6,dps:7.58:dps:6.9:52.302
+R	shaman/restoration	25	4570	12919	mh	71.40200000000002	spDmg:5:sp:2.3:11.5,int:4:int:1.9:7.6,dps:7.58:dps:6.9:52.302
 R	shaman/restoration	25	5079	0	gear	0.0	
 R	shaman/restoration	25	6063	0	gear	5.5	armor:55:armor:0.1:5.5
 R	shaman/restoration	25	6540	0	gear	2.8000000000000003	armor:28:armor:0.1:2.8
@@ -10287,14 +10605,14 @@ R	shaman/restoration	25	15235	12752	mh	210.603	agi:3:agi:0.69:2.07,sta:6:sta:1.4
 R	shaman/restoration	25	15235	12753	mh	208.53300000000002	sta:6:sta:1.4:8.4,str:3:str:1:3,dps:28.57:dps:6.9:197.133
 R	shaman/restoration	25	15235	12754	mh	212.433	sp:3:sp:2.3:6.9,sta:6:sta:1.4:8.4,dps:28.57:dps:6.9:197.133
 R	shaman/restoration	25	15235	12759	mh	197.133	dps:28.57:dps:6.9:197.133
-R	shaman/restoration	25	15235	12906	mh	301.533	int:6:int:1.9:11.4,sta:4:sta:1.4:5.6,sp:38:sp:2.3:87.4,dps:28.57:dps:6.9:197.133
-R	shaman/restoration	25	15235	12908	mh	301.533	int:6:int:1.9:11.4,sp:38:sp:2.3:87.4,spi:4:spi:1.4:5.6,dps:28.57:dps:6.9:197.133
-R	shaman/restoration	25	15235	12910	mh	298.533	sp:38:sp:2.3:87.4,spi:4:spi:1.4:5.6,sta:6:sta:1.4:8.4,dps:28.57:dps:6.9:197.133
-R	shaman/restoration	25	15235	12912	mh	268.33299999999997	spDmg:24:sp:2.3:55.2,int:4:int:1.9:7.6,sta:6:sta:1.4:8.4,dps:28.57:dps:6.9:197.133
-R	shaman/restoration	25	15235	12913	mh	269.33299999999997	int:6:int:1.9:11.4,spDmg:24:sp:2.3:55.2,spi:4:spi:1.4:5.6,dps:28.57:dps:6.9:197.133
-R	shaman/restoration	25	15235	12916	mh	266.33299999999997	spDmg:24:sp:2.3:55.2,spi:4:spi:1.4:5.6,sta:6:sta:1.4:8.4,dps:28.57:dps:6.9:197.133
-R	shaman/restoration	25	15235	12917	mh	299.733	sp:38:sp:2.3:87.4,int:8:int:1.9:15.2,dps:28.57:dps:6.9:197.133
-R	shaman/restoration	25	15235	12920	mh	267.533	int:8:int:1.9:15.2,spDmg:24:sp:2.3:55.2,dps:28.57:dps:6.9:197.133
+R	shaman/restoration	25	15235	12906	mh	235.84500000000003	int:6:int:1.9:11.4,sta:4:sta:1.4:5.6,sp:38:sp:2.3:87.4,dps:19.05:dps:6.9:131.445
+R	shaman/restoration	25	15235	12908	mh	235.845	int:6:int:1.9:11.4,sp:38:sp:2.3:87.4,spi:4:spi:1.4:5.6,dps:19.05:dps:6.9:131.445
+R	shaman/restoration	25	15235	12910	mh	232.845	sp:38:sp:2.3:87.4,spi:4:spi:1.4:5.6,sta:6:sta:1.4:8.4,dps:19.05:dps:6.9:131.445
+R	shaman/restoration	25	15235	12912	mh	202.645	spDmg:24:sp:2.3:55.2,int:4:int:1.9:7.6,sta:6:sta:1.4:8.4,dps:19.05:dps:6.9:131.445
+R	shaman/restoration	25	15235	12913	mh	203.645	int:6:int:1.9:11.4,spDmg:24:sp:2.3:55.2,spi:4:spi:1.4:5.6,dps:19.05:dps:6.9:131.445
+R	shaman/restoration	25	15235	12916	mh	200.645	spDmg:24:sp:2.3:55.2,spi:4:spi:1.4:5.6,sta:6:sta:1.4:8.4,dps:19.05:dps:6.9:131.445
+R	shaman/restoration	25	15235	12917	mh	234.04500000000002	sp:38:sp:2.3:87.4,int:8:int:1.9:15.2,dps:19.05:dps:6.9:131.445
+R	shaman/restoration	25	15235	12920	mh	201.84500000000003	int:8:int:1.9:15.2,spDmg:24:sp:2.3:55.2,dps:19.05:dps:6.9:131.445
 R	shaman/restoration	25	15477	0	gear	10.100000000000001	armor:101:armor:0.1:10.1
 R	shaman/restoration	25	15477	12718	gear	13.400000000000002	int:1:int:1.9:1.9,sta:1:sta:1.4:1.4,armor:101:armor:0.1:10.1
 R	shaman/restoration	25	15477	12719	gear	12.900000000000002	spi:1:spi:1.4:1.4,sta:1:sta:1.4:1.4,armor:101:armor:0.1:10.1
@@ -10338,6 +10656,12 @@ R	shaman/restoration	25	282560	0	gear	76.9	int:10:int:1.9:19,sta:13:sta:1.4:18.2
 R	shaman/restoration	25	286609	0	oh	186.00000000000003	spi:6:spi:1.4:8.4,armor:1776:armor:0.1:177.6
 R	shaman/restoration	34	1315	0	gear	26.299999999999997	sta:10:sta:0.83:8.3,spi:15:spi:1.2:18
 R	shaman/restoration	34	1808	0	gear	4.4399999999999995	armor:74:armor:0.06:4.44
+R	shaman/restoration	34	1990	0	mh	172.97	dps:24.71:dps:7:172.97
+R	shaman/restoration	34	1990	12718	mh	193.94	int:9:int:1.5:13.5,sta:9:sta:0.83:7.47,dps:24.71:dps:7:172.97
+R	shaman/restoration	34	1990	12905	mh	192.97	int:11:int:1.5:16.5,sta:7:sta:0.83:5.81,sp:28:sp:1.5:42,dps:18.38:dps:7:128.66
+R	shaman/restoration	34	2140	0	mh	41.580000000000005	dps:5.94:dps:7:41.58
+R	shaman/restoration	34	2140	12718	mh	43.910000000000004	int:1:int:1.5:1.5,sta:1:sta:0.83:0.83,dps:5.94:dps:7:41.58
+R	shaman/restoration	34	2140	12917	mh	35.25	sp:5:sp:1.5:7.5,int:1:int:1.5:1.5,dps:3.75:dps:7:26.25
 R	shaman/restoration	34	2225	0	mh	35.0	dps:5:dps:7:35
 R	shaman/restoration	34	2614	0	gear	1.74	armor:29:armor:0.06:1.74
 R	shaman/restoration	34	3158	0	gear	1.56	armor:26:armor:0.06:1.56
@@ -10368,8 +10692,8 @@ R	shaman/restoration	34	4570	12742	mh	72.49	sta:3:sta:0.83:2.49,dps:10:dps:7:70
 R	shaman/restoration	34	4570	12743	mh	72.49	sta:3:sta:0.83:2.49,dps:10:dps:7:70
 R	shaman/restoration	34	4570	12744	mh	72.49	sta:3:sta:0.83:2.49,dps:10:dps:7:70
 R	shaman/restoration	34	4570	12759	mh	70.0	dps:10:dps:7:70
-R	shaman/restoration	34	4570	12918	mh	88.0	sp:8:sp:1.5:12,int:4:int:1.5:6,dps:10:dps:7:70
-R	shaman/restoration	34	4570	12919	mh	83.5	spDmg:5:sp:1.5:7.5,int:4:int:1.5:6,dps:10:dps:7:70
+R	shaman/restoration	34	4570	12918	mh	71.06	sp:8:sp:1.5:12,int:4:int:1.5:6,dps:7.58:dps:7:53.06
+R	shaman/restoration	34	4570	12919	mh	66.56	spDmg:5:sp:1.5:7.5,int:4:int:1.5:6,dps:7.58:dps:7:53.06
 R	shaman/restoration	34	5079	0	gear	0.0	
 R	shaman/restoration	34	6063	0	gear	3.3	armor:55:armor:0.06:3.3
 R	shaman/restoration	34	6540	0	gear	1.68	armor:28:armor:0.06:1.68
@@ -10605,14 +10929,14 @@ R	shaman/restoration	34	15235	12752	mh	209.53	agi:3:agi:0.52:1.56,sta:6:sta:0.83
 R	shaman/restoration	34	15235	12753	mh	207.97	sta:6:sta:0.83:4.98,str:3:str:1:3,dps:28.57:dps:7:199.99
 R	shaman/restoration	34	15235	12754	mh	209.47	sp:3:sp:1.5:4.5,sta:6:sta:0.83:4.98,dps:28.57:dps:7:199.99
 R	shaman/restoration	34	15235	12759	mh	199.99	dps:28.57:dps:7:199.99
-R	shaman/restoration	34	15235	12906	mh	269.31	int:6:int:1.5:9,sta:4:sta:0.83:3.32,sp:38:sp:1.5:57,dps:28.57:dps:7:199.99
-R	shaman/restoration	34	15235	12908	mh	270.79	int:6:int:1.5:9,sp:38:sp:1.5:57,spi:4:spi:1.2:4.8,dps:28.57:dps:7:199.99
-R	shaman/restoration	34	15235	12910	mh	266.77	sp:38:sp:1.5:57,spi:4:spi:1.2:4.8,sta:6:sta:0.83:4.98,dps:28.57:dps:7:199.99
-R	shaman/restoration	34	15235	12912	mh	246.97	spDmg:24:sp:1.5:36,int:4:int:1.5:6,sta:6:sta:0.83:4.98,dps:28.57:dps:7:199.99
-R	shaman/restoration	34	15235	12913	mh	249.79000000000002	int:6:int:1.5:9,spDmg:24:sp:1.5:36,spi:4:spi:1.2:4.8,dps:28.57:dps:7:199.99
-R	shaman/restoration	34	15235	12916	mh	245.77	spDmg:24:sp:1.5:36,spi:4:spi:1.2:4.8,sta:6:sta:0.83:4.98,dps:28.57:dps:7:199.99
-R	shaman/restoration	34	15235	12917	mh	268.99	sp:38:sp:1.5:57,int:8:int:1.5:12,dps:28.57:dps:7:199.99
-R	shaman/restoration	34	15235	12920	mh	247.99	int:8:int:1.5:12,spDmg:24:sp:1.5:36,dps:28.57:dps:7:199.99
+R	shaman/restoration	34	15235	12906	mh	202.67	int:6:int:1.5:9,sta:4:sta:0.83:3.32,sp:38:sp:1.5:57,dps:19.05:dps:7:133.35
+R	shaman/restoration	34	15235	12908	mh	204.14999999999998	int:6:int:1.5:9,sp:38:sp:1.5:57,spi:4:spi:1.2:4.8,dps:19.05:dps:7:133.35
+R	shaman/restoration	34	15235	12910	mh	200.13	sp:38:sp:1.5:57,spi:4:spi:1.2:4.8,sta:6:sta:0.83:4.98,dps:19.05:dps:7:133.35
+R	shaman/restoration	34	15235	12912	mh	180.32999999999998	spDmg:24:sp:1.5:36,int:4:int:1.5:6,sta:6:sta:0.83:4.98,dps:19.05:dps:7:133.35
+R	shaman/restoration	34	15235	12913	mh	183.14999999999998	int:6:int:1.5:9,spDmg:24:sp:1.5:36,spi:4:spi:1.2:4.8,dps:19.05:dps:7:133.35
+R	shaman/restoration	34	15235	12916	mh	179.13	spDmg:24:sp:1.5:36,spi:4:spi:1.2:4.8,sta:6:sta:0.83:4.98,dps:19.05:dps:7:133.35
+R	shaman/restoration	34	15235	12917	mh	202.35	sp:38:sp:1.5:57,int:8:int:1.5:12,dps:19.05:dps:7:133.35
+R	shaman/restoration	34	15235	12920	mh	181.35	int:8:int:1.5:12,spDmg:24:sp:1.5:36,dps:19.05:dps:7:133.35
 R	shaman/restoration	34	15477	0	gear	6.06	armor:101:armor:0.06:6.06
 R	shaman/restoration	34	15477	12718	gear	8.39	int:1:int:1.5:1.5,sta:1:sta:0.83:0.83,armor:101:armor:0.06:6.06
 R	shaman/restoration	34	15477	12719	gear	8.09	spi:1:spi:1.2:1.2,sta:1:sta:0.83:0.83,armor:101:armor:0.06:6.06
@@ -10656,6 +10980,12 @@ R	shaman/restoration	34	282560	0	gear	50.57	int:10:int:1.5:15,sta:13:sta:0.83:10
 R	shaman/restoration	34	286609	0	oh	113.76	spi:6:spi:1.2:7.2,armor:1776:armor:0.06:106.56
 R	shaman/restoration	45	1315	0	gear	29.0	sta:10:sta:1.1:11,spi:15:spi:1.2:18
 R	shaman/restoration	45	1808	0	gear	5.032	armor:74:armor:0.068:5.032
+R	shaman/restoration	45	1990	0	mh	168.028	dps:24.71:dps:6.8:168.028
+R	shaman/restoration	45	1990	12718	mh	186.658	int:9:int:0.97:8.73,sta:9:sta:1.1:9.9,dps:24.71:dps:6.8:168.028
+R	shaman/restoration	45	1990	12905	mh	179.754	int:11:int:0.97:10.67,sta:7:sta:1.1:7.7,sp:28:sp:1.3:36.4,dps:18.38:dps:6.8:124.984
+R	shaman/restoration	45	2140	0	mh	40.392	dps:5.94:dps:6.8:40.392
+R	shaman/restoration	45	2140	12718	mh	42.462	int:1:int:0.97:0.97,sta:1:sta:1.1:1.1,dps:5.94:dps:6.8:40.392
+R	shaman/restoration	45	2140	12917	mh	32.97	sp:5:sp:1.3:6.5,int:1:int:0.97:0.97,dps:3.75:dps:6.8:25.5
 R	shaman/restoration	45	2225	0	mh	34.0	dps:5:dps:6.8:34
 R	shaman/restoration	45	2614	0	gear	1.9720000000000002	armor:29:armor:0.068:1.972
 R	shaman/restoration	45	3158	0	gear	1.7680000000000002	armor:26:armor:0.068:1.768
@@ -10686,8 +11016,8 @@ R	shaman/restoration	45	4570	12742	mh	71.3	sta:3:sta:1.1:3.3,dps:10:dps:6.8:68
 R	shaman/restoration	45	4570	12743	mh	71.3	sta:3:sta:1.1:3.3,dps:10:dps:6.8:68
 R	shaman/restoration	45	4570	12744	mh	71.3	sta:3:sta:1.1:3.3,dps:10:dps:6.8:68
 R	shaman/restoration	45	4570	12759	mh	68.0	dps:10:dps:6.8:68
-R	shaman/restoration	45	4570	12918	mh	82.28	sp:8:sp:1.3:10.4,int:4:int:0.97:3.88,dps:10:dps:6.8:68
-R	shaman/restoration	45	4570	12919	mh	78.38	spDmg:5:sp:1.3:6.5,int:4:int:0.97:3.88,dps:10:dps:6.8:68
+R	shaman/restoration	45	4570	12918	mh	65.824	sp:8:sp:1.3:10.4,int:4:int:0.97:3.88,dps:7.58:dps:6.8:51.544
+R	shaman/restoration	45	4570	12919	mh	61.92399999999999	spDmg:5:sp:1.3:6.5,int:4:int:0.97:3.88,dps:7.58:dps:6.8:51.544
 R	shaman/restoration	45	5079	0	gear	0.0	
 R	shaman/restoration	45	6063	0	gear	3.74	armor:55:armor:0.068:3.74
 R	shaman/restoration	45	6540	0	gear	1.9040000000000001	armor:28:armor:0.068:1.904
@@ -10923,14 +11253,14 @@ R	shaman/restoration	45	15235	12752	mh	205.79600000000002	agi:3:agi:0.64:1.92,st
 R	shaman/restoration	45	15235	12753	mh	203.876	sta:6:sta:1.1:6.6,str:3:str:1:3,dps:28.57:dps:6.8:194.276
 R	shaman/restoration	45	15235	12754	mh	204.776	sp:3:sp:1.3:3.9,sta:6:sta:1.1:6.6,dps:28.57:dps:6.8:194.276
 R	shaman/restoration	45	15235	12759	mh	194.276	dps:28.57:dps:6.8:194.276
-R	shaman/restoration	45	15235	12906	mh	253.89600000000002	int:6:int:0.97:5.82,sta:4:sta:1.1:4.4,sp:38:sp:1.3:49.4,dps:28.57:dps:6.8:194.276
-R	shaman/restoration	45	15235	12908	mh	254.296	int:6:int:0.97:5.82,sp:38:sp:1.3:49.4,spi:4:spi:1.2:4.8,dps:28.57:dps:6.8:194.276
-R	shaman/restoration	45	15235	12910	mh	255.07600000000002	sp:38:sp:1.3:49.4,spi:4:spi:1.2:4.8,sta:6:sta:1.1:6.6,dps:28.57:dps:6.8:194.276
-R	shaman/restoration	45	15235	12912	mh	235.95600000000002	spDmg:24:sp:1.3:31.2,int:4:int:0.97:3.88,sta:6:sta:1.1:6.6,dps:28.57:dps:6.8:194.276
-R	shaman/restoration	45	15235	12913	mh	236.096	int:6:int:0.97:5.82,spDmg:24:sp:1.3:31.2,spi:4:spi:1.2:4.8,dps:28.57:dps:6.8:194.276
-R	shaman/restoration	45	15235	12916	mh	236.876	spDmg:24:sp:1.3:31.2,spi:4:spi:1.2:4.8,sta:6:sta:1.1:6.6,dps:28.57:dps:6.8:194.276
-R	shaman/restoration	45	15235	12917	mh	251.436	sp:38:sp:1.3:49.4,int:8:int:0.97:7.76,dps:28.57:dps:6.8:194.276
-R	shaman/restoration	45	15235	12920	mh	233.23600000000002	int:8:int:0.97:7.76,spDmg:24:sp:1.3:31.2,dps:28.57:dps:6.8:194.276
+R	shaman/restoration	45	15235	12906	mh	189.16	int:6:int:0.97:5.82,sta:4:sta:1.1:4.4,sp:38:sp:1.3:49.4,dps:19.05:dps:6.8:129.54
+R	shaman/restoration	45	15235	12908	mh	189.56	int:6:int:0.97:5.82,sp:38:sp:1.3:49.4,spi:4:spi:1.2:4.8,dps:19.05:dps:6.8:129.54
+R	shaman/restoration	45	15235	12910	mh	190.33999999999997	sp:38:sp:1.3:49.4,spi:4:spi:1.2:4.8,sta:6:sta:1.1:6.6,dps:19.05:dps:6.8:129.54
+R	shaman/restoration	45	15235	12912	mh	171.22	spDmg:24:sp:1.3:31.2,int:4:int:0.97:3.88,sta:6:sta:1.1:6.6,dps:19.05:dps:6.8:129.54
+R	shaman/restoration	45	15235	12913	mh	171.35999999999999	int:6:int:0.97:5.82,spDmg:24:sp:1.3:31.2,spi:4:spi:1.2:4.8,dps:19.05:dps:6.8:129.54
+R	shaman/restoration	45	15235	12916	mh	172.14	spDmg:24:sp:1.3:31.2,spi:4:spi:1.2:4.8,sta:6:sta:1.1:6.6,dps:19.05:dps:6.8:129.54
+R	shaman/restoration	45	15235	12917	mh	186.7	sp:38:sp:1.3:49.4,int:8:int:0.97:7.76,dps:19.05:dps:6.8:129.54
+R	shaman/restoration	45	15235	12920	mh	168.5	int:8:int:0.97:7.76,spDmg:24:sp:1.3:31.2,dps:19.05:dps:6.8:129.54
 R	shaman/restoration	45	15477	0	gear	6.868	armor:101:armor:0.068:6.868
 R	shaman/restoration	45	15477	12718	gear	8.938	int:1:int:0.97:0.97,sta:1:sta:1.1:1.1,armor:101:armor:0.068:6.868
 R	shaman/restoration	45	15477	12719	gear	9.168	spi:1:spi:1.2:1.2,sta:1:sta:1.1:1.1,armor:101:armor:0.068:6.868
@@ -10974,6 +11304,12 @@ R	shaman/restoration	45	282560	0	gear	48.884	int:10:int:0.97:9.7,sta:13:sta:1.1:
 R	shaman/restoration	45	286609	0	oh	127.96800000000002	spi:6:spi:1.2:7.2,armor:1776:armor:0.068:120.768
 R	shaman/restoration	55	1315	0	gear	30.5	sta:10:sta:1.1:11,spi:15:spi:1.3:19.5
 R	shaman/restoration	55	1808	0	gear	4.958	armor:74:armor:0.067:4.958
+R	shaman/restoration	55	1990	0	mh	175.441	dps:24.71:dps:7.1:175.441
+R	shaman/restoration	55	1990	12718	mh	202.441	int:9:int:1.9:17.1,sta:9:sta:1.1:9.9,dps:24.71:dps:7.1:175.441
+R	shaman/restoration	55	1990	12905	mh	198.298	int:11:int:1.9:20.9,sta:7:sta:1.1:7.7,sp:28:sp:1.4:39.2,dps:18.38:dps:7.1:130.498
+R	shaman/restoration	55	2140	0	mh	42.174	dps:5.94:dps:7.1:42.174
+R	shaman/restoration	55	2140	12718	mh	45.174	int:1:int:1.9:1.9,sta:1:sta:1.1:1.1,dps:5.94:dps:7.1:42.174
+R	shaman/restoration	55	2140	12917	mh	35.525	sp:5:sp:1.4:7,int:1:int:1.9:1.9,dps:3.75:dps:7.1:26.625
 R	shaman/restoration	55	2225	0	mh	35.5	dps:5:dps:7.1:35.5
 R	shaman/restoration	55	2614	0	gear	1.943	armor:29:armor:0.067:1.943
 R	shaman/restoration	55	3158	0	gear	1.742	armor:26:armor:0.067:1.742
@@ -11004,8 +11340,8 @@ R	shaman/restoration	55	4570	12742	mh	74.3	sta:3:sta:1.1:3.3,dps:10:dps:7.1:71
 R	shaman/restoration	55	4570	12743	mh	74.3	sta:3:sta:1.1:3.3,dps:10:dps:7.1:71
 R	shaman/restoration	55	4570	12744	mh	74.3	sta:3:sta:1.1:3.3,dps:10:dps:7.1:71
 R	shaman/restoration	55	4570	12759	mh	71.0	dps:10:dps:7.1:71
-R	shaman/restoration	55	4570	12918	mh	89.8	sp:8:sp:1.4:11.2,int:4:int:1.9:7.6,dps:10:dps:7.1:71
-R	shaman/restoration	55	4570	12919	mh	85.6	spDmg:5:sp:1.4:7,int:4:int:1.9:7.6,dps:10:dps:7.1:71
+R	shaman/restoration	55	4570	12918	mh	72.618	sp:8:sp:1.4:11.2,int:4:int:1.9:7.6,dps:7.58:dps:7.1:53.818
+R	shaman/restoration	55	4570	12919	mh	68.41799999999999	spDmg:5:sp:1.4:7,int:4:int:1.9:7.6,dps:7.58:dps:7.1:53.818
 R	shaman/restoration	55	5079	0	gear	0.0	
 R	shaman/restoration	55	6063	0	gear	3.685	armor:55:armor:0.067:3.685
 R	shaman/restoration	55	6540	0	gear	1.8760000000000001	armor:28:armor:0.067:1.876
@@ -11241,14 +11577,14 @@ R	shaman/restoration	55	15235	12752	mh	214.427	agi:3:agi:0.66:1.98,sta:6:sta:1.1
 R	shaman/restoration	55	15235	12753	mh	212.44699999999997	sta:6:sta:1.1:6.6,str:3:str:1:3,dps:28.57:dps:7.1:202.847
 R	shaman/restoration	55	15235	12754	mh	213.647	sp:3:sp:1.4:4.2,sta:6:sta:1.1:6.6,dps:28.57:dps:7.1:202.847
 R	shaman/restoration	55	15235	12759	mh	202.84699999999998	dps:28.57:dps:7.1:202.847
-R	shaman/restoration	55	15235	12906	mh	271.847	int:6:int:1.9:11.4,sta:4:sta:1.1:4.4,sp:38:sp:1.4:53.2,dps:28.57:dps:7.1:202.847
-R	shaman/restoration	55	15235	12908	mh	272.647	int:6:int:1.9:11.4,sp:38:sp:1.4:53.2,spi:4:spi:1.3:5.2,dps:28.57:dps:7.1:202.847
-R	shaman/restoration	55	15235	12910	mh	267.847	sp:38:sp:1.4:53.2,spi:4:spi:1.3:5.2,sta:6:sta:1.1:6.6,dps:28.57:dps:7.1:202.847
-R	shaman/restoration	55	15235	12912	mh	250.647	spDmg:24:sp:1.4:33.6,int:4:int:1.9:7.6,sta:6:sta:1.1:6.6,dps:28.57:dps:7.1:202.847
-R	shaman/restoration	55	15235	12913	mh	253.04699999999997	int:6:int:1.9:11.4,spDmg:24:sp:1.4:33.6,spi:4:spi:1.3:5.2,dps:28.57:dps:7.1:202.847
-R	shaman/restoration	55	15235	12916	mh	248.24699999999999	spDmg:24:sp:1.4:33.6,spi:4:spi:1.3:5.2,sta:6:sta:1.1:6.6,dps:28.57:dps:7.1:202.847
-R	shaman/restoration	55	15235	12917	mh	271.24699999999996	sp:38:sp:1.4:53.2,int:8:int:1.9:15.2,dps:28.57:dps:7.1:202.847
-R	shaman/restoration	55	15235	12920	mh	251.647	int:8:int:1.9:15.2,spDmg:24:sp:1.4:33.6,dps:28.57:dps:7.1:202.847
+R	shaman/restoration	55	15235	12906	mh	204.255	int:6:int:1.9:11.4,sta:4:sta:1.1:4.4,sp:38:sp:1.4:53.2,dps:19.05:dps:7.1:135.255
+R	shaman/restoration	55	15235	12908	mh	205.055	int:6:int:1.9:11.4,sp:38:sp:1.4:53.2,spi:4:spi:1.3:5.2,dps:19.05:dps:7.1:135.255
+R	shaman/restoration	55	15235	12910	mh	200.255	sp:38:sp:1.4:53.2,spi:4:spi:1.3:5.2,sta:6:sta:1.1:6.6,dps:19.05:dps:7.1:135.255
+R	shaman/restoration	55	15235	12912	mh	183.055	spDmg:24:sp:1.4:33.6,int:4:int:1.9:7.6,sta:6:sta:1.1:6.6,dps:19.05:dps:7.1:135.255
+R	shaman/restoration	55	15235	12913	mh	185.45499999999998	int:6:int:1.9:11.4,spDmg:24:sp:1.4:33.6,spi:4:spi:1.3:5.2,dps:19.05:dps:7.1:135.255
+R	shaman/restoration	55	15235	12916	mh	180.655	spDmg:24:sp:1.4:33.6,spi:4:spi:1.3:5.2,sta:6:sta:1.1:6.6,dps:19.05:dps:7.1:135.255
+R	shaman/restoration	55	15235	12917	mh	203.65499999999997	sp:38:sp:1.4:53.2,int:8:int:1.9:15.2,dps:19.05:dps:7.1:135.255
+R	shaman/restoration	55	15235	12920	mh	184.055	int:8:int:1.9:15.2,spDmg:24:sp:1.4:33.6,dps:19.05:dps:7.1:135.255
 R	shaman/restoration	55	15477	0	gear	6.767	armor:101:armor:0.067:6.767
 R	shaman/restoration	55	15477	12718	gear	9.767	int:1:int:1.9:1.9,sta:1:sta:1.1:1.1,armor:101:armor:0.067:6.767
 R	shaman/restoration	55	15477	12719	gear	9.167000000000002	spi:1:spi:1.3:1.3,sta:1:sta:1.1:1.1,armor:101:armor:0.067:6.767
@@ -11292,6 +11628,12 @@ R	shaman/restoration	55	282560	0	gear	58.771	int:10:int:1.9:19,sta:13:sta:1.1:14
 R	shaman/restoration	55	286609	0	oh	126.792	spi:6:spi:1.3:7.8,armor:1776:armor:0.067:118.992
 R	shaman/restoration	60	1315	0	gear	35.0	sta:10:sta:1.4:14,spi:15:spi:1.4:21
 R	shaman/restoration	60	1808	0	gear	5.92	armor:74:armor:0.08:5.92
+R	shaman/restoration	60	1990	0	mh	172.97	dps:24.71:dps:7:172.97
+R	shaman/restoration	60	1990	12718	mh	201.76999999999998	int:9:int:1.8:16.2,sta:9:sta:1.4:12.6,dps:24.71:dps:7:172.97
+R	shaman/restoration	60	1990	12905	mh	197.45999999999998	int:11:int:1.8:19.8,sta:7:sta:1.4:9.8,sp:28:sp:1.4:39.2,dps:18.38:dps:7:128.66
+R	shaman/restoration	60	2140	0	mh	41.580000000000005	dps:5.94:dps:7:41.58
+R	shaman/restoration	60	2140	12718	mh	44.78000000000001	int:1:int:1.8:1.8,sta:1:sta:1.4:1.4,dps:5.94:dps:7:41.58
+R	shaman/restoration	60	2140	12917	mh	35.05	sp:5:sp:1.4:7,int:1:int:1.8:1.8,dps:3.75:dps:7:26.25
 R	shaman/restoration	60	2225	0	mh	35.0	dps:5:dps:7:35
 R	shaman/restoration	60	2614	0	gear	2.32	armor:29:armor:0.08:2.32
 R	shaman/restoration	60	3158	0	gear	2.08	armor:26:armor:0.08:2.08
@@ -11322,8 +11664,8 @@ R	shaman/restoration	60	4570	12742	mh	74.2	sta:3:sta:1.4:4.2,dps:10:dps:7:70
 R	shaman/restoration	60	4570	12743	mh	74.2	sta:3:sta:1.4:4.2,dps:10:dps:7:70
 R	shaman/restoration	60	4570	12744	mh	74.2	sta:3:sta:1.4:4.2,dps:10:dps:7:70
 R	shaman/restoration	60	4570	12759	mh	70.0	dps:10:dps:7:70
-R	shaman/restoration	60	4570	12918	mh	88.4	sp:8:sp:1.4:11.2,int:4:int:1.8:7.2,dps:10:dps:7:70
-R	shaman/restoration	60	4570	12919	mh	84.2	spDmg:5:sp:1.4:7,int:4:int:1.8:7.2,dps:10:dps:7:70
+R	shaman/restoration	60	4570	12918	mh	71.46000000000001	sp:8:sp:1.4:11.2,int:4:int:1.8:7.2,dps:7.58:dps:7:53.06
+R	shaman/restoration	60	4570	12919	mh	67.26	spDmg:5:sp:1.4:7,int:4:int:1.8:7.2,dps:7.58:dps:7:53.06
 R	shaman/restoration	60	5079	0	gear	0.0	
 R	shaman/restoration	60	6063	0	gear	4.4	armor:55:armor:0.08:4.4
 R	shaman/restoration	60	6540	0	gear	2.24	armor:28:armor:0.08:2.24
@@ -11559,14 +11901,14 @@ R	shaman/restoration	60	15235	12752	mh	213.49	agi:3:agi:0.7:2.1,sta:6:sta:1.4:8.
 R	shaman/restoration	60	15235	12753	mh	211.39000000000001	sta:6:sta:1.4:8.4,str:3:str:1:3,dps:28.57:dps:7:199.99
 R	shaman/restoration	60	15235	12754	mh	212.59	sp:3:sp:1.4:4.2,sta:6:sta:1.4:8.4,dps:28.57:dps:7:199.99
 R	shaman/restoration	60	15235	12759	mh	199.99	dps:28.57:dps:7:199.99
-R	shaman/restoration	60	15235	12906	mh	269.59000000000003	int:6:int:1.8:10.8,sta:4:sta:1.4:5.6,sp:38:sp:1.4:53.2,dps:28.57:dps:7:199.99
-R	shaman/restoration	60	15235	12908	mh	269.59000000000003	int:6:int:1.8:10.8,sp:38:sp:1.4:53.2,spi:4:spi:1.4:5.6,dps:28.57:dps:7:199.99
-R	shaman/restoration	60	15235	12910	mh	267.19	sp:38:sp:1.4:53.2,spi:4:spi:1.4:5.6,sta:6:sta:1.4:8.4,dps:28.57:dps:7:199.99
-R	shaman/restoration	60	15235	12912	mh	249.19	spDmg:24:sp:1.4:33.6,int:4:int:1.8:7.2,sta:6:sta:1.4:8.4,dps:28.57:dps:7:199.99
-R	shaman/restoration	60	15235	12913	mh	249.99	int:6:int:1.8:10.8,spDmg:24:sp:1.4:33.6,spi:4:spi:1.4:5.6,dps:28.57:dps:7:199.99
-R	shaman/restoration	60	15235	12916	mh	247.59	spDmg:24:sp:1.4:33.6,spi:4:spi:1.4:5.6,sta:6:sta:1.4:8.4,dps:28.57:dps:7:199.99
-R	shaman/restoration	60	15235	12917	mh	267.59000000000003	sp:38:sp:1.4:53.2,int:8:int:1.8:14.4,dps:28.57:dps:7:199.99
-R	shaman/restoration	60	15235	12920	mh	247.99	int:8:int:1.8:14.4,spDmg:24:sp:1.4:33.6,dps:28.57:dps:7:199.99
+R	shaman/restoration	60	15235	12906	mh	202.95	int:6:int:1.8:10.8,sta:4:sta:1.4:5.6,sp:38:sp:1.4:53.2,dps:19.05:dps:7:133.35
+R	shaman/restoration	60	15235	12908	mh	202.95	int:6:int:1.8:10.8,sp:38:sp:1.4:53.2,spi:4:spi:1.4:5.6,dps:19.05:dps:7:133.35
+R	shaman/restoration	60	15235	12910	mh	200.54999999999998	sp:38:sp:1.4:53.2,spi:4:spi:1.4:5.6,sta:6:sta:1.4:8.4,dps:19.05:dps:7:133.35
+R	shaman/restoration	60	15235	12912	mh	182.54999999999998	spDmg:24:sp:1.4:33.6,int:4:int:1.8:7.2,sta:6:sta:1.4:8.4,dps:19.05:dps:7:133.35
+R	shaman/restoration	60	15235	12913	mh	183.35	int:6:int:1.8:10.8,spDmg:24:sp:1.4:33.6,spi:4:spi:1.4:5.6,dps:19.05:dps:7:133.35
+R	shaman/restoration	60	15235	12916	mh	180.95	spDmg:24:sp:1.4:33.6,spi:4:spi:1.4:5.6,sta:6:sta:1.4:8.4,dps:19.05:dps:7:133.35
+R	shaman/restoration	60	15235	12917	mh	200.95	sp:38:sp:1.4:53.2,int:8:int:1.8:14.4,dps:19.05:dps:7:133.35
+R	shaman/restoration	60	15235	12920	mh	181.35	int:8:int:1.8:14.4,spDmg:24:sp:1.4:33.6,dps:19.05:dps:7:133.35
 R	shaman/restoration	60	15477	0	gear	8.08	armor:101:armor:0.08:8.08
 R	shaman/restoration	60	15477	12718	gear	11.280000000000001	int:1:int:1.8:1.8,sta:1:sta:1.4:1.4,armor:101:armor:0.08:8.08
 R	shaman/restoration	60	15477	12719	gear	10.879999999999999	spi:1:spi:1.4:1.4,sta:1:sta:1.4:1.4,armor:101:armor:0.08:8.08
@@ -11610,6 +11952,12 @@ R	shaman/restoration	60	282560	0	gear	64.44	int:10:int:1.8:18,sta:13:sta:1.4:18.
 R	shaman/restoration	60	286609	0	oh	150.48000000000002	spi:6:spi:1.4:8.4,armor:1776:armor:0.08:142.08
 R	shaman/enhancement	12	1315	0	gear	64.5	sta:10:sta:4.5:45,spi:15:spi:1.3:19.5
 R	shaman/enhancement	12	1808	0	gear	9.620000000000001	armor:74:armor:0.13:9.62
+R	shaman/enhancement	12	1990	0	mh	160.615	dps:24.71:dps:6.5:160.615
+R	shaman/enhancement	12	1990	12718	mh	205.255	int:9:int:0.46:4.14,sta:9:sta:4.5:40.5,dps:24.71:dps:6.5:160.615
+R	shaman/enhancement	12	1990	12905	mh	189.63	int:11:int:0.46:5.06,sta:7:sta:4.5:31.5,sp:28:sp:1.2:33.6,dps:18.38:dps:6.5:119.47
+R	shaman/enhancement	12	2140	0	mh	38.61	dps:5.94:dps:6.5:38.61
+R	shaman/enhancement	12	2140	12718	mh	43.57	int:1:int:0.46:0.46,sta:1:sta:4.5:4.5,dps:5.94:dps:6.5:38.61
+R	shaman/enhancement	12	2140	12917	mh	30.835	sp:5:sp:1.2:6,int:1:int:0.46:0.46,dps:3.75:dps:6.5:24.375
 R	shaman/enhancement	12	2225	0	mh	32.5	dps:5:dps:6.5:32.5
 R	shaman/enhancement	12	2614	0	gear	3.77	armor:29:armor:0.13:3.77
 R	shaman/enhancement	12	3158	0	gear	3.38	armor:26:armor:0.13:3.38
@@ -11640,8 +11988,8 @@ R	shaman/enhancement	12	4570	12742	mh	78.5	sta:3:sta:4.5:13.5,dps:10:dps:6.5:65
 R	shaman/enhancement	12	4570	12743	mh	78.5	sta:3:sta:4.5:13.5,dps:10:dps:6.5:65
 R	shaman/enhancement	12	4570	12744	mh	78.5	sta:3:sta:4.5:13.5,dps:10:dps:6.5:65
 R	shaman/enhancement	12	4570	12759	mh	65.0	dps:10:dps:6.5:65
-R	shaman/enhancement	12	4570	12918	mh	76.44	sp:8:sp:1.2:9.6,int:4:int:0.46:1.84,dps:10:dps:6.5:65
-R	shaman/enhancement	12	4570	12919	mh	72.84	spDmg:5:sp:1.2:6,int:4:int:0.46:1.84,dps:10:dps:6.5:65
+R	shaman/enhancement	12	4570	12918	mh	60.71	sp:8:sp:1.2:9.6,int:4:int:0.46:1.84,dps:7.58:dps:6.5:49.27
+R	shaman/enhancement	12	4570	12919	mh	57.11	spDmg:5:sp:1.2:6,int:4:int:0.46:1.84,dps:7.58:dps:6.5:49.27
 R	shaman/enhancement	12	5079	0	gear	0.0	
 R	shaman/enhancement	12	6063	0	gear	7.15	armor:55:armor:0.13:7.15
 R	shaman/enhancement	12	6540	0	gear	3.64	armor:28:armor:0.13:3.64
@@ -11877,14 +12225,14 @@ R	shaman/enhancement	12	15235	12752	mh	217.775	agi:3:agi:0.69:2.07,sta:6:sta:4.5
 R	shaman/enhancement	12	15235	12753	mh	215.705	sta:6:sta:4.5:27,str:3:str:1:3,dps:28.57:dps:6.5:185.705
 R	shaman/enhancement	12	15235	12754	mh	216.305	sp:3:sp:1.2:3.6,sta:6:sta:4.5:27,dps:28.57:dps:6.5:185.705
 R	shaman/enhancement	12	15235	12759	mh	185.705	dps:28.57:dps:6.5:185.705
-R	shaman/enhancement	12	15235	12906	mh	252.065	int:6:int:0.46:2.76,sta:4:sta:4.5:18,sp:38:sp:1.2:45.6,dps:28.57:dps:6.5:185.705
-R	shaman/enhancement	12	15235	12908	mh	239.26500000000001	int:6:int:0.46:2.76,sp:38:sp:1.2:45.6,spi:4:spi:1.3:5.2,dps:28.57:dps:6.5:185.705
-R	shaman/enhancement	12	15235	12910	mh	263.505	sp:38:sp:1.2:45.6,spi:4:spi:1.3:5.2,sta:6:sta:4.5:27,dps:28.57:dps:6.5:185.705
-R	shaman/enhancement	12	15235	12912	mh	243.34500000000003	spDmg:24:sp:1.2:28.8,int:4:int:0.46:1.84,sta:6:sta:4.5:27,dps:28.57:dps:6.5:185.705
-R	shaman/enhancement	12	15235	12913	mh	222.465	int:6:int:0.46:2.76,spDmg:24:sp:1.2:28.8,spi:4:spi:1.3:5.2,dps:28.57:dps:6.5:185.705
-R	shaman/enhancement	12	15235	12916	mh	246.705	spDmg:24:sp:1.2:28.8,spi:4:spi:1.3:5.2,sta:6:sta:4.5:27,dps:28.57:dps:6.5:185.705
-R	shaman/enhancement	12	15235	12917	mh	234.985	sp:38:sp:1.2:45.6,int:8:int:0.46:3.68,dps:28.57:dps:6.5:185.705
-R	shaman/enhancement	12	15235	12920	mh	218.185	int:8:int:0.46:3.68,spDmg:24:sp:1.2:28.8,dps:28.57:dps:6.5:185.705
+R	shaman/enhancement	12	15235	12906	mh	190.185	int:6:int:0.46:2.76,sta:4:sta:4.5:18,sp:38:sp:1.2:45.6,dps:19.05:dps:6.5:123.825
+R	shaman/enhancement	12	15235	12908	mh	177.385	int:6:int:0.46:2.76,sp:38:sp:1.2:45.6,spi:4:spi:1.3:5.2,dps:19.05:dps:6.5:123.825
+R	shaman/enhancement	12	15235	12910	mh	201.625	sp:38:sp:1.2:45.6,spi:4:spi:1.3:5.2,sta:6:sta:4.5:27,dps:19.05:dps:6.5:123.825
+R	shaman/enhancement	12	15235	12912	mh	181.465	spDmg:24:sp:1.2:28.8,int:4:int:0.46:1.84,sta:6:sta:4.5:27,dps:19.05:dps:6.5:123.825
+R	shaman/enhancement	12	15235	12913	mh	160.585	int:6:int:0.46:2.76,spDmg:24:sp:1.2:28.8,spi:4:spi:1.3:5.2,dps:19.05:dps:6.5:123.825
+R	shaman/enhancement	12	15235	12916	mh	184.825	spDmg:24:sp:1.2:28.8,spi:4:spi:1.3:5.2,sta:6:sta:4.5:27,dps:19.05:dps:6.5:123.825
+R	shaman/enhancement	12	15235	12917	mh	173.10500000000002	sp:38:sp:1.2:45.6,int:8:int:0.46:3.68,dps:19.05:dps:6.5:123.825
+R	shaman/enhancement	12	15235	12920	mh	156.305	int:8:int:0.46:3.68,spDmg:24:sp:1.2:28.8,dps:19.05:dps:6.5:123.825
 R	shaman/enhancement	12	15477	0	gear	13.13	armor:101:armor:0.13:13.13
 R	shaman/enhancement	12	15477	12718	gear	18.09	int:1:int:0.46:0.46,sta:1:sta:4.5:4.5,armor:101:armor:0.13:13.13
 R	shaman/enhancement	12	15477	12719	gear	18.93	spi:1:spi:1.3:1.3,sta:1:sta:4.5:4.5,armor:101:armor:0.13:13.13
@@ -11928,6 +12276,12 @@ R	shaman/enhancement	12	282560	0	gear	100.39	int:10:int:0.46:4.6,sta:13:sta:4.5:
 R	shaman/enhancement	12	286609	0	oh	238.68	spi:6:spi:1.3:7.8,armor:1776:armor:0.13:230.88
 R	shaman/enhancement	25	1315	0	gear	57.7	sta:10:sta:4.9:49,spi:15:spi:0.58:8.7
 R	shaman/enhancement	25	1808	0	gear	7.104	armor:74:armor:0.096:7.104
+R	shaman/enhancement	25	1990	0	mh	185.32500000000002	dps:24.71:dps:7.5:185.325
+R	shaman/enhancement	25	1990	12718	mh	235.81500000000003	int:9:int:0.71:6.39,sta:9:sta:4.9:44.1,dps:24.71:dps:7.5:185.325
+R	shaman/enhancement	25	1990	12905	mh	213.56	int:11:int:0.71:7.81,sta:7:sta:4.9:34.3,sp:28:sp:1.2:33.6,dps:18.38:dps:7.5:137.85
+R	shaman/enhancement	25	2140	0	mh	44.550000000000004	dps:5.94:dps:7.5:44.55
+R	shaman/enhancement	25	2140	12718	mh	50.160000000000004	int:1:int:0.71:0.71,sta:1:sta:4.9:4.9,dps:5.94:dps:7.5:44.55
+R	shaman/enhancement	25	2140	12917	mh	34.835	sp:5:sp:1.2:6,int:1:int:0.71:0.71,dps:3.75:dps:7.5:28.125
 R	shaman/enhancement	25	2225	0	mh	37.5	dps:5:dps:7.5:37.5
 R	shaman/enhancement	25	2614	0	gear	2.7840000000000003	armor:29:armor:0.096:2.784
 R	shaman/enhancement	25	3158	0	gear	2.496	armor:26:armor:0.096:2.496
@@ -11958,8 +12312,8 @@ R	shaman/enhancement	25	4570	12742	mh	89.7	sta:3:sta:4.9:14.7,dps:10:dps:7.5:75
 R	shaman/enhancement	25	4570	12743	mh	89.7	sta:3:sta:4.9:14.7,dps:10:dps:7.5:75
 R	shaman/enhancement	25	4570	12744	mh	89.7	sta:3:sta:4.9:14.7,dps:10:dps:7.5:75
 R	shaman/enhancement	25	4570	12759	mh	75.0	dps:10:dps:7.5:75
-R	shaman/enhancement	25	4570	12918	mh	87.44	sp:8:sp:1.2:9.6,int:4:int:0.71:2.84,dps:10:dps:7.5:75
-R	shaman/enhancement	25	4570	12919	mh	83.84	spDmg:5:sp:1.2:6,int:4:int:0.71:2.84,dps:10:dps:7.5:75
+R	shaman/enhancement	25	4570	12918	mh	69.29	sp:8:sp:1.2:9.6,int:4:int:0.71:2.84,dps:7.58:dps:7.5:56.85
+R	shaman/enhancement	25	4570	12919	mh	65.69	spDmg:5:sp:1.2:6,int:4:int:0.71:2.84,dps:7.58:dps:7.5:56.85
 R	shaman/enhancement	25	5079	0	gear	0.0	
 R	shaman/enhancement	25	6063	0	gear	5.28	armor:55:armor:0.096:5.28
 R	shaman/enhancement	25	6540	0	gear	2.688	armor:28:armor:0.096:2.688
@@ -12195,14 +12549,14 @@ R	shaman/enhancement	25	15235	12752	mh	249.28500000000003	agi:3:agi:0.87:2.61,st
 R	shaman/enhancement	25	15235	12753	mh	246.675	sta:6:sta:4.9:29.4,str:3:str:1:3,dps:28.57:dps:7.5:214.275
 R	shaman/enhancement	25	15235	12754	mh	247.275	sp:3:sp:1.2:3.6,sta:6:sta:4.9:29.4,dps:28.57:dps:7.5:214.275
 R	shaman/enhancement	25	15235	12759	mh	214.275	dps:28.57:dps:7.5:214.275
-R	shaman/enhancement	25	15235	12906	mh	283.735	int:6:int:0.71:4.26,sta:4:sta:4.9:19.6,sp:38:sp:1.2:45.6,dps:28.57:dps:7.5:214.275
-R	shaman/enhancement	25	15235	12908	mh	266.455	int:6:int:0.71:4.26,sp:38:sp:1.2:45.6,spi:4:spi:0.58:2.32,dps:28.57:dps:7.5:214.275
-R	shaman/enhancement	25	15235	12910	mh	291.595	sp:38:sp:1.2:45.6,spi:4:spi:0.58:2.32,sta:6:sta:4.9:29.4,dps:28.57:dps:7.5:214.275
-R	shaman/enhancement	25	15235	12912	mh	275.315	spDmg:24:sp:1.2:28.8,int:4:int:0.71:2.84,sta:6:sta:4.9:29.4,dps:28.57:dps:7.5:214.275
-R	shaman/enhancement	25	15235	12913	mh	249.655	int:6:int:0.71:4.26,spDmg:24:sp:1.2:28.8,spi:4:spi:0.58:2.32,dps:28.57:dps:7.5:214.275
-R	shaman/enhancement	25	15235	12916	mh	274.795	spDmg:24:sp:1.2:28.8,spi:4:spi:0.58:2.32,sta:6:sta:4.9:29.4,dps:28.57:dps:7.5:214.275
-R	shaman/enhancement	25	15235	12917	mh	265.555	sp:38:sp:1.2:45.6,int:8:int:0.71:5.68,dps:28.57:dps:7.5:214.275
-R	shaman/enhancement	25	15235	12920	mh	248.755	int:8:int:0.71:5.68,spDmg:24:sp:1.2:28.8,dps:28.57:dps:7.5:214.275
+R	shaman/enhancement	25	15235	12906	mh	212.335	int:6:int:0.71:4.26,sta:4:sta:4.9:19.6,sp:38:sp:1.2:45.6,dps:19.05:dps:7.5:142.875
+R	shaman/enhancement	25	15235	12908	mh	195.055	int:6:int:0.71:4.26,sp:38:sp:1.2:45.6,spi:4:spi:0.58:2.32,dps:19.05:dps:7.5:142.875
+R	shaman/enhancement	25	15235	12910	mh	220.195	sp:38:sp:1.2:45.6,spi:4:spi:0.58:2.32,sta:6:sta:4.9:29.4,dps:19.05:dps:7.5:142.875
+R	shaman/enhancement	25	15235	12912	mh	203.915	spDmg:24:sp:1.2:28.8,int:4:int:0.71:2.84,sta:6:sta:4.9:29.4,dps:19.05:dps:7.5:142.875
+R	shaman/enhancement	25	15235	12913	mh	178.255	int:6:int:0.71:4.26,spDmg:24:sp:1.2:28.8,spi:4:spi:0.58:2.32,dps:19.05:dps:7.5:142.875
+R	shaman/enhancement	25	15235	12916	mh	203.39499999999998	spDmg:24:sp:1.2:28.8,spi:4:spi:0.58:2.32,sta:6:sta:4.9:29.4,dps:19.05:dps:7.5:142.875
+R	shaman/enhancement	25	15235	12917	mh	194.155	sp:38:sp:1.2:45.6,int:8:int:0.71:5.68,dps:19.05:dps:7.5:142.875
+R	shaman/enhancement	25	15235	12920	mh	177.355	int:8:int:0.71:5.68,spDmg:24:sp:1.2:28.8,dps:19.05:dps:7.5:142.875
 R	shaman/enhancement	25	15477	0	gear	9.696	armor:101:armor:0.096:9.696
 R	shaman/enhancement	25	15477	12718	gear	15.306000000000001	int:1:int:0.71:0.71,sta:1:sta:4.9:4.9,armor:101:armor:0.096:9.696
 R	shaman/enhancement	25	15477	12719	gear	15.176	spi:1:spi:0.58:0.58,sta:1:sta:4.9:4.9,armor:101:armor:0.096:9.696
@@ -12246,6 +12600,12 @@ R	shaman/enhancement	25	282560	0	gear	100.84799999999998	int:10:int:0.71:7.1,sta
 R	shaman/enhancement	25	286609	0	oh	173.976	spi:6:spi:0.58:3.48,armor:1776:armor:0.096:170.496
 R	shaman/enhancement	34	1315	0	gear	59.0	sta:10:sta:4.1:41,spi:15:spi:1.2:18
 R	shaman/enhancement	34	1808	0	gear	10.360000000000001	armor:74:armor:0.14:10.36
+R	shaman/enhancement	34	1990	0	mh	180.49900000000002	dps:24.71:dps:6.9:170.499,speed:0.4:speed:25:10
+R	shaman/enhancement	34	1990	12718	mh	219.73900000000003	int:9:int:0.26:2.34,sta:9:sta:4.1:36.9,dps:24.71:dps:6.9:170.499,speed:0.4:speed:25:10
+R	shaman/enhancement	34	1990	12905	mh	189.942	int:11:int:0.26:2.86,sta:7:sta:4.1:28.7,sp:28:sp:0.77:21.56,dps:18.38:dps:6.9:126.822,speed:0.4:speed:25:10
+R	shaman/enhancement	34	2140	0	mh	25.986000000000004	dps:5.94:dps:6.9:40.986,speed:-0.6:speed:25:-15
+R	shaman/enhancement	34	2140	12718	mh	30.346000000000004	int:1:int:0.26:0.26,sta:1:sta:4.1:4.1,dps:5.94:dps:6.9:40.986,speed:-0.6:speed:25:-15
+R	shaman/enhancement	34	2140	12917	mh	14.985	sp:5:sp:0.77:3.85,int:1:int:0.26:0.26,dps:3.75:dps:6.9:25.875,speed:-0.6:speed:25:-15
 R	shaman/enhancement	34	2225	0	mh	19.5	dps:5:dps:6.9:34.5,speed:-0.6:speed:25:-15
 R	shaman/enhancement	34	2614	0	gear	4.0600000000000005	armor:29:armor:0.14:4.06
 R	shaman/enhancement	34	3158	0	gear	3.6400000000000006	armor:26:armor:0.14:3.64
@@ -12276,8 +12636,8 @@ R	shaman/enhancement	34	4570	12742	mh	88.8	sta:3:sta:4.1:12.3,dps:10:dps:6.9:69,
 R	shaman/enhancement	34	4570	12743	mh	88.8	sta:3:sta:4.1:12.3,dps:10:dps:6.9:69,speed:0.3:speed:25:7.5
 R	shaman/enhancement	34	4570	12744	mh	88.8	sta:3:sta:4.1:12.3,dps:10:dps:6.9:69,speed:0.3:speed:25:7.5
 R	shaman/enhancement	34	4570	12759	mh	76.5	dps:10:dps:6.9:69,speed:0.3:speed:25:7.5
-R	shaman/enhancement	34	4570	12918	mh	83.7	sp:8:sp:0.77:6.16,int:4:int:0.26:1.04,dps:10:dps:6.9:69,speed:0.3:speed:25:7.5
-R	shaman/enhancement	34	4570	12919	mh	81.39	spDmg:5:sp:0.77:3.85,int:4:int:0.26:1.04,dps:10:dps:6.9:69,speed:0.3:speed:25:7.5
+R	shaman/enhancement	34	4570	12918	mh	67.00200000000001	sp:8:sp:0.77:6.16,int:4:int:0.26:1.04,dps:7.58:dps:6.9:52.302,speed:0.3:speed:25:7.5
+R	shaman/enhancement	34	4570	12919	mh	64.69200000000001	spDmg:5:sp:0.77:3.85,int:4:int:0.26:1.04,dps:7.58:dps:6.9:52.302,speed:0.3:speed:25:7.5
 R	shaman/enhancement	34	5079	0	gear	0.0	
 R	shaman/enhancement	34	6063	0	gear	7.700000000000001	armor:55:armor:0.14:7.7
 R	shaman/enhancement	34	6540	0	gear	3.9200000000000004	armor:28:armor:0.14:3.92
@@ -12513,14 +12873,14 @@ R	shaman/enhancement	34	15235	12752	mh	213.933	agi:3:agi:1.4:4.2,sta:6:sta:4.1:2
 R	shaman/enhancement	34	15235	12753	mh	209.733	sta:6:sta:4.1:24.6,str:3:str:1:3,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:25:-15
 R	shaman/enhancement	34	15235	12754	mh	209.043	sp:3:sp:0.77:2.31,sta:6:sta:4.1:24.6,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:25:-15
 R	shaman/enhancement	34	15235	12759	mh	182.133	dps:28.57:dps:6.9:197.133,speed:-0.6:speed:25:-15
-R	shaman/enhancement	34	15235	12906	mh	229.353	int:6:int:0.26:1.56,sta:4:sta:4.1:16.4,sp:38:sp:0.77:29.26,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:25:-15
-R	shaman/enhancement	34	15235	12908	mh	217.75300000000001	int:6:int:0.26:1.56,sp:38:sp:0.77:29.26,spi:4:spi:1.2:4.8,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:25:-15
-R	shaman/enhancement	34	15235	12910	mh	240.793	sp:38:sp:0.77:29.26,spi:4:spi:1.2:4.8,sta:6:sta:4.1:24.6,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:25:-15
-R	shaman/enhancement	34	15235	12912	mh	226.25300000000001	spDmg:24:sp:0.77:18.48,int:4:int:0.26:1.04,sta:6:sta:4.1:24.6,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:25:-15
-R	shaman/enhancement	34	15235	12913	mh	206.973	int:6:int:0.26:1.56,spDmg:24:sp:0.77:18.48,spi:4:spi:1.2:4.8,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:25:-15
-R	shaman/enhancement	34	15235	12916	mh	230.013	spDmg:24:sp:0.77:18.48,spi:4:spi:1.2:4.8,sta:6:sta:4.1:24.6,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:25:-15
-R	shaman/enhancement	34	15235	12917	mh	213.473	sp:38:sp:0.77:29.26,int:8:int:0.26:2.08,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:25:-15
-R	shaman/enhancement	34	15235	12920	mh	202.693	int:8:int:0.26:2.08,spDmg:24:sp:0.77:18.48,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:25:-15
+R	shaman/enhancement	34	15235	12906	mh	163.66500000000002	int:6:int:0.26:1.56,sta:4:sta:4.1:16.4,sp:38:sp:0.77:29.26,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:25:-15
+R	shaman/enhancement	34	15235	12908	mh	152.06500000000003	int:6:int:0.26:1.56,sp:38:sp:0.77:29.26,spi:4:spi:1.2:4.8,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:25:-15
+R	shaman/enhancement	34	15235	12910	mh	175.10500000000002	sp:38:sp:0.77:29.26,spi:4:spi:1.2:4.8,sta:6:sta:4.1:24.6,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:25:-15
+R	shaman/enhancement	34	15235	12912	mh	160.56500000000003	spDmg:24:sp:0.77:18.48,int:4:int:0.26:1.04,sta:6:sta:4.1:24.6,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:25:-15
+R	shaman/enhancement	34	15235	12913	mh	141.28500000000003	int:6:int:0.26:1.56,spDmg:24:sp:0.77:18.48,spi:4:spi:1.2:4.8,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:25:-15
+R	shaman/enhancement	34	15235	12916	mh	164.32500000000002	spDmg:24:sp:0.77:18.48,spi:4:spi:1.2:4.8,sta:6:sta:4.1:24.6,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:25:-15
+R	shaman/enhancement	34	15235	12917	mh	147.78500000000003	sp:38:sp:0.77:29.26,int:8:int:0.26:2.08,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:25:-15
+R	shaman/enhancement	34	15235	12920	mh	137.00500000000002	int:8:int:0.26:2.08,spDmg:24:sp:0.77:18.48,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:25:-15
 R	shaman/enhancement	34	15477	0	gear	14.14	armor:101:armor:0.14:14.14
 R	shaman/enhancement	34	15477	12718	gear	18.5	int:1:int:0.26:0.26,sta:1:sta:4.1:4.1,armor:101:armor:0.14:14.14
 R	shaman/enhancement	34	15477	12719	gear	19.44	spi:1:spi:1.2:1.2,sta:1:sta:4.1:4.1,armor:101:armor:0.14:14.14
@@ -12564,6 +12924,12 @@ R	shaman/enhancement	34	282560	0	gear	91.88000000000001	int:10:int:0.26:2.6,sta:
 R	shaman/enhancement	34	286609	0	oh	255.84	spi:6:spi:1.2:7.2,armor:1776:armor:0.14:248.64
 R	shaman/enhancement	45	1315	0	gear	48.95	sta:10:sta:3.5:35,spi:15:spi:0.93:13.95
 R	shaman/enhancement	45	1808	0	gear	8.14	armor:74:armor:0.11:8.14
+R	shaman/enhancement	45	1990	0	mh	191.95700000000002	dps:24.71:dps:6.7:165.557,speed:0.6:speed:44:26.4
+R	shaman/enhancement	45	1990	12718	mh	234.25700000000003	int:9:int:1.2:10.8,sta:9:sta:3.5:31.5,dps:24.71:dps:6.7:165.557,speed:0.6:speed:44:26.4
+R	shaman/enhancement	45	1990	12905	mh	211.60600000000002	int:11:int:1.2:13.2,sta:7:sta:3.5:24.5,sp:28:sp:0.87:24.36,dps:18.38:dps:6.7:123.146,speed:0.6:speed:44:26.4
+R	shaman/enhancement	45	2140	0	mh	13.398000000000003	dps:5.94:dps:6.7:39.798,speed:-0.6:speed:44:-26.4
+R	shaman/enhancement	45	2140	12718	mh	18.098000000000006	int:1:int:1.2:1.2,sta:1:sta:3.5:3.5,dps:5.94:dps:6.7:39.798,speed:-0.6:speed:44:-26.4
+R	shaman/enhancement	45	2140	12917	mh	4.275000000000002	sp:5:sp:0.87:4.35,int:1:int:1.2:1.2,dps:3.75:dps:6.7:25.125,speed:-0.6:speed:44:-26.4
 R	shaman/enhancement	45	2225	0	mh	7.100000000000001	dps:5:dps:6.7:33.5,speed:-0.6:speed:44:-26.4
 R	shaman/enhancement	45	2614	0	gear	3.19	armor:29:armor:0.11:3.19
 R	shaman/enhancement	45	3158	0	gear	2.86	armor:26:armor:0.11:2.86
@@ -12594,8 +12960,8 @@ R	shaman/enhancement	45	4570	12742	mh	99.5	sta:3:sta:3.5:10.5,dps:10:dps:6.7:67,
 R	shaman/enhancement	45	4570	12743	mh	99.5	sta:3:sta:3.5:10.5,dps:10:dps:6.7:67,speed:0.5:speed:44:22
 R	shaman/enhancement	45	4570	12744	mh	99.5	sta:3:sta:3.5:10.5,dps:10:dps:6.7:67,speed:0.5:speed:44:22
 R	shaman/enhancement	45	4570	12759	mh	89.0	dps:10:dps:6.7:67,speed:0.5:speed:44:22
-R	shaman/enhancement	45	4570	12918	mh	100.76	sp:8:sp:0.87:6.96,int:4:int:1.2:4.8,dps:10:dps:6.7:67,speed:0.5:speed:44:22
-R	shaman/enhancement	45	4570	12919	mh	98.15	spDmg:5:sp:0.87:4.35,int:4:int:1.2:4.8,dps:10:dps:6.7:67,speed:0.5:speed:44:22
+R	shaman/enhancement	45	4570	12918	mh	84.54599999999999	sp:8:sp:0.87:6.96,int:4:int:1.2:4.8,dps:7.58:dps:6.7:50.786,speed:0.5:speed:44:22
+R	shaman/enhancement	45	4570	12919	mh	81.936	spDmg:5:sp:0.87:4.35,int:4:int:1.2:4.8,dps:7.58:dps:6.7:50.786,speed:0.5:speed:44:22
 R	shaman/enhancement	45	5079	0	gear	0.0	
 R	shaman/enhancement	45	6063	0	gear	6.05	armor:55:armor:0.11:6.05
 R	shaman/enhancement	45	6540	0	gear	3.08	armor:28:armor:0.11:3.08
@@ -12831,14 +13197,14 @@ R	shaman/enhancement	45	15235	12752	mh	193.219	agi:3:agi:1.4:4.2,sta:6:sta:3.5:2
 R	shaman/enhancement	45	15235	12753	mh	189.019	sta:6:sta:3.5:21,str:3:str:1:3,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:44:-26.4
 R	shaman/enhancement	45	15235	12754	mh	188.629	sp:3:sp:0.87:2.61,sta:6:sta:3.5:21,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:44:-26.4
 R	shaman/enhancement	45	15235	12759	mh	165.019	dps:28.57:dps:6.7:191.419,speed:-0.6:speed:44:-26.4
-R	shaman/enhancement	45	15235	12906	mh	219.27900000000002	int:6:int:1.2:7.2,sta:4:sta:3.5:14,sp:38:sp:0.87:33.06,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:44:-26.4
-R	shaman/enhancement	45	15235	12908	mh	208.999	int:6:int:1.2:7.2,sp:38:sp:0.87:33.06,spi:4:spi:0.93:3.72,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:44:-26.4
-R	shaman/enhancement	45	15235	12910	mh	222.799	sp:38:sp:0.87:33.06,spi:4:spi:0.93:3.72,sta:6:sta:3.5:21,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:44:-26.4
-R	shaman/enhancement	45	15235	12912	mh	211.699	spDmg:24:sp:0.87:20.88,int:4:int:1.2:4.8,sta:6:sta:3.5:21,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:44:-26.4
-R	shaman/enhancement	45	15235	12913	mh	196.819	int:6:int:1.2:7.2,spDmg:24:sp:0.87:20.88,spi:4:spi:0.93:3.72,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:44:-26.4
-R	shaman/enhancement	45	15235	12916	mh	210.619	spDmg:24:sp:0.87:20.88,spi:4:spi:0.93:3.72,sta:6:sta:3.5:21,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:44:-26.4
-R	shaman/enhancement	45	15235	12917	mh	207.679	sp:38:sp:0.87:33.06,int:8:int:1.2:9.6,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:44:-26.4
-R	shaman/enhancement	45	15235	12920	mh	195.499	int:8:int:1.2:9.6,spDmg:24:sp:0.87:20.88,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:44:-26.4
+R	shaman/enhancement	45	15235	12906	mh	155.495	int:6:int:1.2:7.2,sta:4:sta:3.5:14,sp:38:sp:0.87:33.06,dps:19.05:dps:6.7:127.635,speed:-0.6:speed:44:-26.4
+R	shaman/enhancement	45	15235	12908	mh	145.215	int:6:int:1.2:7.2,sp:38:sp:0.87:33.06,spi:4:spi:0.93:3.72,dps:19.05:dps:6.7:127.635,speed:-0.6:speed:44:-26.4
+R	shaman/enhancement	45	15235	12910	mh	159.01500000000001	sp:38:sp:0.87:33.06,spi:4:spi:0.93:3.72,sta:6:sta:3.5:21,dps:19.05:dps:6.7:127.635,speed:-0.6:speed:44:-26.4
+R	shaman/enhancement	45	15235	12912	mh	147.915	spDmg:24:sp:0.87:20.88,int:4:int:1.2:4.8,sta:6:sta:3.5:21,dps:19.05:dps:6.7:127.635,speed:-0.6:speed:44:-26.4
+R	shaman/enhancement	45	15235	12913	mh	133.035	int:6:int:1.2:7.2,spDmg:24:sp:0.87:20.88,spi:4:spi:0.93:3.72,dps:19.05:dps:6.7:127.635,speed:-0.6:speed:44:-26.4
+R	shaman/enhancement	45	15235	12916	mh	146.835	spDmg:24:sp:0.87:20.88,spi:4:spi:0.93:3.72,sta:6:sta:3.5:21,dps:19.05:dps:6.7:127.635,speed:-0.6:speed:44:-26.4
+R	shaman/enhancement	45	15235	12917	mh	143.895	sp:38:sp:0.87:33.06,int:8:int:1.2:9.6,dps:19.05:dps:6.7:127.635,speed:-0.6:speed:44:-26.4
+R	shaman/enhancement	45	15235	12920	mh	131.715	int:8:int:1.2:9.6,spDmg:24:sp:0.87:20.88,dps:19.05:dps:6.7:127.635,speed:-0.6:speed:44:-26.4
 R	shaman/enhancement	45	15477	0	gear	11.11	armor:101:armor:0.11:11.11
 R	shaman/enhancement	45	15477	12718	gear	15.809999999999999	int:1:int:1.2:1.2,sta:1:sta:3.5:3.5,armor:101:armor:0.11:11.11
 R	shaman/enhancement	45	15477	12719	gear	15.54	spi:1:spi:0.93:0.93,sta:1:sta:3.5:3.5,armor:101:armor:0.11:11.11
@@ -12882,6 +13248,12 @@ R	shaman/enhancement	45	282560	0	gear	87.88999999999999	int:10:int:1.2:12,sta:13
 R	shaman/enhancement	45	286609	0	oh	200.94000000000003	spi:6:spi:0.93:5.58,armor:1776:armor:0.11:195.36
 R	shaman/enhancement	55	1315	0	gear	52.7	sta:10:sta:4.1:41,spi:15:spi:0.78:11.7
 R	shaman/enhancement	55	1808	0	gear	8.879999999999999	armor:74:armor:0.12:8.88
+R	shaman/enhancement	55	1990	0	mh	180.841	dps:24.71:dps:7.1:175.441,speed:0.1:speed:54:5.4
+R	shaman/enhancement	55	1990	12718	mh	234.841	int:9:int:1.9:17.1,sta:9:sta:4.1:36.9,dps:24.71:dps:7.1:175.441,speed:0.1:speed:54:5.4
+R	shaman/enhancement	55	1990	12905	mh	212.09799999999998	int:11:int:1.9:20.9,sta:7:sta:4.1:28.7,sp:28:sp:0.95:26.6,dps:18.38:dps:7.1:130.498,speed:0.1:speed:54:5.4
+R	shaman/enhancement	55	2140	0	mh	9.774000000000001	dps:5.94:dps:7.1:42.174,speed:-0.6:speed:54:-32.4
+R	shaman/enhancement	55	2140	12718	mh	15.774000000000001	int:1:int:1.9:1.9,sta:1:sta:4.1:4.1,dps:5.94:dps:7.1:42.174,speed:-0.6:speed:54:-32.4
+R	shaman/enhancement	55	2140	12917	mh	0.875	sp:5:sp:0.95:4.75,int:1:int:1.9:1.9,dps:3.75:dps:7.1:26.625,speed:-0.6:speed:54:-32.4
 R	shaman/enhancement	55	2225	0	mh	3.1000000000000014	dps:5:dps:7.1:35.5,speed:-0.6:speed:54:-32.4
 R	shaman/enhancement	55	2614	0	gear	3.48	armor:29:armor:0.12:3.48
 R	shaman/enhancement	55	3158	0	gear	3.12	armor:26:armor:0.12:3.12
@@ -12912,8 +13284,8 @@ R	shaman/enhancement	55	4570	12742	mh	83.3	sta:3:sta:4.1:12.3,dps:10:dps:7.1:71
 R	shaman/enhancement	55	4570	12743	mh	83.3	sta:3:sta:4.1:12.3,dps:10:dps:7.1:71
 R	shaman/enhancement	55	4570	12744	mh	83.3	sta:3:sta:4.1:12.3,dps:10:dps:7.1:71
 R	shaman/enhancement	55	4570	12759	mh	71.0	dps:10:dps:7.1:71
-R	shaman/enhancement	55	4570	12918	mh	86.2	sp:8:sp:0.95:7.6,int:4:int:1.9:7.6,dps:10:dps:7.1:71
-R	shaman/enhancement	55	4570	12919	mh	83.35	spDmg:5:sp:0.95:4.75,int:4:int:1.9:7.6,dps:10:dps:7.1:71
+R	shaman/enhancement	55	4570	12918	mh	69.018	sp:8:sp:0.95:7.6,int:4:int:1.9:7.6,dps:7.58:dps:7.1:53.818
+R	shaman/enhancement	55	4570	12919	mh	66.16799999999999	spDmg:5:sp:0.95:4.75,int:4:int:1.9:7.6,dps:7.58:dps:7.1:53.818
 R	shaman/enhancement	55	5079	0	gear	0.0	
 R	shaman/enhancement	55	6063	0	gear	6.6	armor:55:armor:0.12:6.6
 R	shaman/enhancement	55	6540	0	gear	3.36	armor:28:armor:0.12:3.36
@@ -13149,14 +13521,14 @@ R	shaman/enhancement	55	15235	12752	mh	202.84699999999998	agi:3:agi:1.6:4.8,sta:
 R	shaman/enhancement	55	15235	12753	mh	198.04699999999997	sta:6:sta:4.1:24.6,str:3:str:1:3,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:54:-32.4
 R	shaman/enhancement	55	15235	12754	mh	197.89699999999996	sp:3:sp:0.95:2.85,sta:6:sta:4.1:24.6,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:54:-32.4
 R	shaman/enhancement	55	15235	12759	mh	170.44699999999997	dps:28.57:dps:7.1:202.847,speed:-0.6:speed:54:-32.4
-R	shaman/enhancement	55	15235	12906	mh	234.34699999999995	int:6:int:1.9:11.4,sta:4:sta:4.1:16.4,sp:38:sp:0.95:36.1,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:54:-32.4
-R	shaman/enhancement	55	15235	12908	mh	221.06699999999998	int:6:int:1.9:11.4,sp:38:sp:0.95:36.1,spi:4:spi:0.78:3.12,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:54:-32.4
-R	shaman/enhancement	55	15235	12910	mh	234.26699999999997	sp:38:sp:0.95:36.1,spi:4:spi:0.78:3.12,sta:6:sta:4.1:24.6,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:54:-32.4
-R	shaman/enhancement	55	15235	12912	mh	225.44699999999997	spDmg:24:sp:0.95:22.8,int:4:int:1.9:7.6,sta:6:sta:4.1:24.6,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:54:-32.4
-R	shaman/enhancement	55	15235	12913	mh	207.76699999999997	int:6:int:1.9:11.4,spDmg:24:sp:0.95:22.8,spi:4:spi:0.78:3.12,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:54:-32.4
-R	shaman/enhancement	55	15235	12916	mh	220.96699999999996	spDmg:24:sp:0.95:22.8,spi:4:spi:0.78:3.12,sta:6:sta:4.1:24.6,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:54:-32.4
-R	shaman/enhancement	55	15235	12917	mh	221.74699999999999	sp:38:sp:0.95:36.1,int:8:int:1.9:15.2,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:54:-32.4
-R	shaman/enhancement	55	15235	12920	mh	208.44699999999997	int:8:int:1.9:15.2,spDmg:24:sp:0.95:22.8,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:54:-32.4
+R	shaman/enhancement	55	15235	12906	mh	166.755	int:6:int:1.9:11.4,sta:4:sta:4.1:16.4,sp:38:sp:0.95:36.1,dps:19.05:dps:7.1:135.255,speed:-0.6:speed:54:-32.4
+R	shaman/enhancement	55	15235	12908	mh	153.475	int:6:int:1.9:11.4,sp:38:sp:0.95:36.1,spi:4:spi:0.78:3.12,dps:19.05:dps:7.1:135.255,speed:-0.6:speed:54:-32.4
+R	shaman/enhancement	55	15235	12910	mh	166.67499999999998	sp:38:sp:0.95:36.1,spi:4:spi:0.78:3.12,sta:6:sta:4.1:24.6,dps:19.05:dps:7.1:135.255,speed:-0.6:speed:54:-32.4
+R	shaman/enhancement	55	15235	12912	mh	157.855	spDmg:24:sp:0.95:22.8,int:4:int:1.9:7.6,sta:6:sta:4.1:24.6,dps:19.05:dps:7.1:135.255,speed:-0.6:speed:54:-32.4
+R	shaman/enhancement	55	15235	12913	mh	140.17499999999998	int:6:int:1.9:11.4,spDmg:24:sp:0.95:22.8,spi:4:spi:0.78:3.12,dps:19.05:dps:7.1:135.255,speed:-0.6:speed:54:-32.4
+R	shaman/enhancement	55	15235	12916	mh	153.37499999999997	spDmg:24:sp:0.95:22.8,spi:4:spi:0.78:3.12,sta:6:sta:4.1:24.6,dps:19.05:dps:7.1:135.255,speed:-0.6:speed:54:-32.4
+R	shaman/enhancement	55	15235	12917	mh	154.155	sp:38:sp:0.95:36.1,int:8:int:1.9:15.2,dps:19.05:dps:7.1:135.255,speed:-0.6:speed:54:-32.4
+R	shaman/enhancement	55	15235	12920	mh	140.855	int:8:int:1.9:15.2,spDmg:24:sp:0.95:22.8,dps:19.05:dps:7.1:135.255,speed:-0.6:speed:54:-32.4
 R	shaman/enhancement	55	15477	0	gear	12.12	armor:101:armor:0.12:12.12
 R	shaman/enhancement	55	15477	12718	gear	18.119999999999997	int:1:int:1.9:1.9,sta:1:sta:4.1:4.1,armor:101:armor:0.12:12.12
 R	shaman/enhancement	55	15477	12719	gear	17.0	spi:1:spi:0.78:0.78,sta:1:sta:4.1:4.1,armor:101:armor:0.12:12.12
@@ -13200,6 +13572,12 @@ R	shaman/enhancement	55	282560	0	gear	105.46	int:10:int:1.9:19,sta:13:sta:4.1:53
 R	shaman/enhancement	55	286609	0	oh	217.8	spi:6:spi:0.78:4.68,armor:1776:armor:0.12:213.12
 R	shaman/enhancement	60	1315	0	gear	56.95	sta:10:sta:4.3:43,spi:15:spi:0.93:13.95
 R	shaman/enhancement	60	1808	0	gear	11.1	armor:74:armor:0.15:11.1
+R	shaman/enhancement	60	1990	0	mh	177.912	dps:24.71:dps:7.2:177.912
+R	shaman/enhancement	60	1990	12718	mh	240.012	int:9:int:2.6:23.4,sta:9:sta:4.3:38.7,dps:24.71:dps:7.2:177.912
+R	shaman/enhancement	60	1990	12905	mh	221.83599999999998	int:11:int:2.6:28.6,sta:7:sta:4.3:30.1,sp:28:sp:1.1:30.8,dps:18.38:dps:7.2:132.336
+R	shaman/enhancement	60	2140	0	mh	10.368000000000002	dps:5.94:dps:7.2:42.768,speed:-0.6:speed:54:-32.4
+R	shaman/enhancement	60	2140	12718	mh	17.268	int:1:int:2.6:2.6,sta:1:sta:4.3:4.3,dps:5.94:dps:7.2:42.768,speed:-0.6:speed:54:-32.4
+R	shaman/enhancement	60	2140	12917	mh	2.700000000000003	sp:5:sp:1.1:5.5,int:1:int:2.6:2.6,dps:3.75:dps:7.2:27,speed:-0.6:speed:54:-32.4
 R	shaman/enhancement	60	2225	0	mh	3.6000000000000014	dps:5:dps:7.2:36,speed:-0.6:speed:54:-32.4
 R	shaman/enhancement	60	2614	0	gear	4.35	armor:29:armor:0.15:4.35
 R	shaman/enhancement	60	3158	0	gear	3.9	armor:26:armor:0.15:3.9
@@ -13230,8 +13608,8 @@ R	shaman/enhancement	60	4570	12742	mh	79.5	sta:3:sta:4.3:12.9,dps:10:dps:7.2:72,
 R	shaman/enhancement	60	4570	12743	mh	79.5	sta:3:sta:4.3:12.9,dps:10:dps:7.2:72,speed:-0.1:speed:54:-5.4
 R	shaman/enhancement	60	4570	12744	mh	79.5	sta:3:sta:4.3:12.9,dps:10:dps:7.2:72,speed:-0.1:speed:54:-5.4
 R	shaman/enhancement	60	4570	12759	mh	66.6	dps:10:dps:7.2:72,speed:-0.1:speed:54:-5.4
-R	shaman/enhancement	60	4570	12918	mh	85.8	sp:8:sp:1.1:8.8,int:4:int:2.6:10.4,dps:10:dps:7.2:72,speed:-0.1:speed:54:-5.4
-R	shaman/enhancement	60	4570	12919	mh	82.5	spDmg:5:sp:1.1:5.5,int:4:int:2.6:10.4,dps:10:dps:7.2:72,speed:-0.1:speed:54:-5.4
+R	shaman/enhancement	60	4570	12918	mh	68.376	sp:8:sp:1.1:8.8,int:4:int:2.6:10.4,dps:7.58:dps:7.2:54.576,speed:-0.1:speed:54:-5.4
+R	shaman/enhancement	60	4570	12919	mh	65.076	spDmg:5:sp:1.1:5.5,int:4:int:2.6:10.4,dps:7.58:dps:7.2:54.576,speed:-0.1:speed:54:-5.4
 R	shaman/enhancement	60	5079	0	gear	0.0	
 R	shaman/enhancement	60	6063	0	gear	8.25	armor:55:armor:0.15:8.25
 R	shaman/enhancement	60	6540	0	gear	4.2	armor:28:armor:0.15:4.2
@@ -13467,14 +13845,14 @@ R	shaman/enhancement	60	15235	12752	mh	207.804	agi:3:agi:1.9:5.7,sta:6:sta:4.3:2
 R	shaman/enhancement	60	15235	12753	mh	202.104	sta:6:sta:4.3:25.8,str:3:str:1:3,dps:28.57:dps:7.2:205.704,speed:-0.6:speed:54:-32.4
 R	shaman/enhancement	60	15235	12754	mh	202.404	sp:3:sp:1.1:3.3,sta:6:sta:4.3:25.8,dps:28.57:dps:7.2:205.704,speed:-0.6:speed:54:-32.4
 R	shaman/enhancement	60	15235	12759	mh	173.304	dps:28.57:dps:7.2:205.704,speed:-0.6:speed:54:-32.4
-R	shaman/enhancement	60	15235	12906	mh	247.90399999999997	int:6:int:2.6:15.6,sta:4:sta:4.3:17.2,sp:38:sp:1.1:41.8,dps:28.57:dps:7.2:205.704,speed:-0.6:speed:54:-32.4
-R	shaman/enhancement	60	15235	12908	mh	234.424	int:6:int:2.6:15.6,sp:38:sp:1.1:41.8,spi:4:spi:0.93:3.72,dps:28.57:dps:7.2:205.704,speed:-0.6:speed:54:-32.4
-R	shaman/enhancement	60	15235	12910	mh	244.624	sp:38:sp:1.1:41.8,spi:4:spi:0.93:3.72,sta:6:sta:4.3:25.8,dps:28.57:dps:7.2:205.704,speed:-0.6:speed:54:-32.4
-R	shaman/enhancement	60	15235	12912	mh	235.90400000000002	spDmg:24:sp:1.1:26.4,int:4:int:2.6:10.4,sta:6:sta:4.3:25.8,dps:28.57:dps:7.2:205.704,speed:-0.6:speed:54:-32.4
-R	shaman/enhancement	60	15235	12913	mh	219.024	int:6:int:2.6:15.6,spDmg:24:sp:1.1:26.4,spi:4:spi:0.93:3.72,dps:28.57:dps:7.2:205.704,speed:-0.6:speed:54:-32.4
-R	shaman/enhancement	60	15235	12916	mh	229.22400000000002	spDmg:24:sp:1.1:26.4,spi:4:spi:0.93:3.72,sta:6:sta:4.3:25.8,dps:28.57:dps:7.2:205.704,speed:-0.6:speed:54:-32.4
-R	shaman/enhancement	60	15235	12917	mh	235.90400000000002	sp:38:sp:1.1:41.8,int:8:int:2.6:20.8,dps:28.57:dps:7.2:205.704,speed:-0.6:speed:54:-32.4
-R	shaman/enhancement	60	15235	12920	mh	220.504	int:8:int:2.6:20.8,spDmg:24:sp:1.1:26.4,dps:28.57:dps:7.2:205.704,speed:-0.6:speed:54:-32.4
+R	shaman/enhancement	60	15235	12906	mh	179.35999999999999	int:6:int:2.6:15.6,sta:4:sta:4.3:17.2,sp:38:sp:1.1:41.8,dps:19.05:dps:7.2:137.16,speed:-0.6:speed:54:-32.4
+R	shaman/enhancement	60	15235	12908	mh	165.88	int:6:int:2.6:15.6,sp:38:sp:1.1:41.8,spi:4:spi:0.93:3.72,dps:19.05:dps:7.2:137.16,speed:-0.6:speed:54:-32.4
+R	shaman/enhancement	60	15235	12910	mh	176.07999999999998	sp:38:sp:1.1:41.8,spi:4:spi:0.93:3.72,sta:6:sta:4.3:25.8,dps:19.05:dps:7.2:137.16,speed:-0.6:speed:54:-32.4
+R	shaman/enhancement	60	15235	12912	mh	167.35999999999999	spDmg:24:sp:1.1:26.4,int:4:int:2.6:10.4,sta:6:sta:4.3:25.8,dps:19.05:dps:7.2:137.16,speed:-0.6:speed:54:-32.4
+R	shaman/enhancement	60	15235	12913	mh	150.48	int:6:int:2.6:15.6,spDmg:24:sp:1.1:26.4,spi:4:spi:0.93:3.72,dps:19.05:dps:7.2:137.16,speed:-0.6:speed:54:-32.4
+R	shaman/enhancement	60	15235	12916	mh	160.67999999999998	spDmg:24:sp:1.1:26.4,spi:4:spi:0.93:3.72,sta:6:sta:4.3:25.8,dps:19.05:dps:7.2:137.16,speed:-0.6:speed:54:-32.4
+R	shaman/enhancement	60	15235	12917	mh	167.35999999999999	sp:38:sp:1.1:41.8,int:8:int:2.6:20.8,dps:19.05:dps:7.2:137.16,speed:-0.6:speed:54:-32.4
+R	shaman/enhancement	60	15235	12920	mh	151.96	int:8:int:2.6:20.8,spDmg:24:sp:1.1:26.4,dps:19.05:dps:7.2:137.16,speed:-0.6:speed:54:-32.4
 R	shaman/enhancement	60	15477	0	gear	15.149999999999999	armor:101:armor:0.15:15.15
 R	shaman/enhancement	60	15477	12718	gear	22.049999999999997	int:1:int:2.6:2.6,sta:1:sta:4.3:4.3,armor:101:armor:0.15:15.15
 R	shaman/enhancement	60	15477	12719	gear	20.38	spi:1:spi:0.93:0.93,sta:1:sta:4.3:4.3,armor:101:armor:0.15:15.15
@@ -13519,6 +13897,9 @@ R	shaman/enhancement	60	286609	0	oh	271.97999999999996	spi:6:spi:0.93:5.58,armor
 R	paladin/holy	12	25	0	mh	7.14	dps:1.05:dps:6.8:7.14
 R	paladin/holy	12	1315	0	gear	21.35	sta:10:sta:1.4:14,spi:15:spi:0.49:7.35
 R	paladin/holy	12	1808	0	gear	4.4399999999999995	armor:74:armor:0.06:4.44
+R	paladin/holy	12	1990	0	mh	168.028	dps:24.71:dps:6.8:168.028
+R	paladin/holy	12	1990	12718	mh	184.858	int:9:int:0.47:4.23,sta:9:sta:1.4:12.6,dps:24.71:dps:6.8:168.028
+R	paladin/holy	12	1990	12905	mh	187.554	int:11:int:0.47:5.17,sta:7:sta:1.4:9.8,sp:28:sp:1.7:47.6,dps:18.38:dps:6.8:124.984
 R	paladin/holy	12	2614	0	gear	1.74	armor:29:armor:0.06:1.74
 R	paladin/holy	12	3158	0	gear	1.56	armor:26:armor:0.06:1.56
 R	paladin/holy	12	3570	0	mh	57.215999999999994	str:2:str:1:2,dps:8.12:dps:6.8:55.216
@@ -13547,8 +13928,8 @@ R	paladin/holy	12	4570	12742	mh	72.2	sta:3:sta:1.4:4.2,dps:10:dps:6.8:68
 R	paladin/holy	12	4570	12743	mh	72.2	sta:3:sta:1.4:4.2,dps:10:dps:6.8:68
 R	paladin/holy	12	4570	12744	mh	72.2	sta:3:sta:1.4:4.2,dps:10:dps:6.8:68
 R	paladin/holy	12	4570	12759	mh	75.2	spHoly:6:spHoly:1.2:7.2,dps:10:dps:6.8:68
-R	paladin/holy	12	4570	12918	mh	83.48	sp:8:sp:1.7:13.6,int:4:int:0.47:1.88,dps:10:dps:6.8:68
-R	paladin/holy	12	4570	12919	mh	83.38	spDmg:5:spDmg:1.2:6,heal:15:heal:0.5:7.5,int:4:int:0.47:1.88,dps:10:dps:6.8:68
+R	paladin/holy	12	4570	12918	mh	67.024	sp:8:sp:1.7:13.6,int:4:int:0.47:1.88,dps:7.58:dps:6.8:51.544
+R	paladin/holy	12	4570	12919	mh	66.92399999999999	spDmg:5:spDmg:1.2:6,heal:15:heal:0.5:7.5,int:4:int:0.47:1.88,dps:7.58:dps:6.8:51.544
 R	paladin/holy	12	5079	0	gear	0.0	
 R	paladin/holy	12	6063	0	gear	3.3	armor:55:armor:0.06:3.3
 R	paladin/holy	12	6540	0	gear	1.68	armor:28:armor:0.06:1.68
@@ -13820,14 +14201,14 @@ R	paladin/holy	12	15235	12752	mh	207.536	agi:3:agi:0.62:1.86,sta:6:sta:1.4:8.4,s
 R	paladin/holy	12	15235	12753	mh	205.67600000000002	sta:6:sta:1.4:8.4,str:3:str:1:3,dps:28.57:dps:6.8:194.276
 R	paladin/holy	12	15235	12754	mh	207.776	sp:3:sp:1.7:5.1,sta:6:sta:1.4:8.4,dps:28.57:dps:6.8:194.276
 R	paladin/holy	12	15235	12759	mh	207.476	spHoly:11:spHoly:1.2:13.2,dps:28.57:dps:6.8:194.276
-R	paladin/holy	12	15235	12906	mh	267.296	int:6:int:0.47:2.82,sta:4:sta:1.4:5.6,sp:38:sp:1.7:64.6,dps:28.57:dps:6.8:194.276
-R	paladin/holy	12	15235	12908	mh	263.656	int:6:int:0.47:2.82,sp:38:sp:1.7:64.6,spi:4:spi:0.49:1.96,dps:28.57:dps:6.8:194.276
-R	paladin/holy	12	15235	12910	mh	269.236	sp:38:sp:1.7:64.6,spi:4:spi:0.49:1.96,sta:6:sta:1.4:8.4,dps:28.57:dps:6.8:194.276
-R	paladin/holy	12	15235	12912	mh	268.856	spDmg:24:spDmg:1.2:28.8,heal:71:heal:0.5:35.5,int:4:int:0.47:1.88,sta:6:sta:1.4:8.4,dps:28.57:dps:6.8:194.276
-R	paladin/holy	12	15235	12913	mh	263.356	int:6:int:0.47:2.82,spDmg:24:spDmg:1.2:28.8,heal:71:heal:0.5:35.5,spi:4:spi:0.49:1.96,dps:28.57:dps:6.8:194.276
-R	paladin/holy	12	15235	12916	mh	268.93600000000004	spDmg:24:spDmg:1.2:28.8,heal:71:heal:0.5:35.5,spi:4:spi:0.49:1.96,sta:6:sta:1.4:8.4,dps:28.57:dps:6.8:194.276
-R	paladin/holy	12	15235	12917	mh	262.636	sp:38:sp:1.7:64.6,int:8:int:0.47:3.76,dps:28.57:dps:6.8:194.276
-R	paladin/holy	12	15235	12920	mh	262.336	int:8:int:0.47:3.76,spDmg:24:spDmg:1.2:28.8,heal:71:heal:0.5:35.5,dps:28.57:dps:6.8:194.276
+R	paladin/holy	12	15235	12906	mh	202.56	int:6:int:0.47:2.82,sta:4:sta:1.4:5.6,sp:38:sp:1.7:64.6,dps:19.05:dps:6.8:129.54
+R	paladin/holy	12	15235	12908	mh	198.91999999999996	int:6:int:0.47:2.82,sp:38:sp:1.7:64.6,spi:4:spi:0.49:1.96,dps:19.05:dps:6.8:129.54
+R	paladin/holy	12	15235	12910	mh	204.49999999999997	sp:38:sp:1.7:64.6,spi:4:spi:0.49:1.96,sta:6:sta:1.4:8.4,dps:19.05:dps:6.8:129.54
+R	paladin/holy	12	15235	12912	mh	204.11999999999998	spDmg:24:spDmg:1.2:28.8,heal:71:heal:0.5:35.5,int:4:int:0.47:1.88,sta:6:sta:1.4:8.4,dps:19.05:dps:6.8:129.54
+R	paladin/holy	12	15235	12913	mh	198.62	int:6:int:0.47:2.82,spDmg:24:spDmg:1.2:28.8,heal:71:heal:0.5:35.5,spi:4:spi:0.49:1.96,dps:19.05:dps:6.8:129.54
+R	paladin/holy	12	15235	12916	mh	204.2	spDmg:24:spDmg:1.2:28.8,heal:71:heal:0.5:35.5,spi:4:spi:0.49:1.96,sta:6:sta:1.4:8.4,dps:19.05:dps:6.8:129.54
+R	paladin/holy	12	15235	12917	mh	197.89999999999998	sp:38:sp:1.7:64.6,int:8:int:0.47:3.76,dps:19.05:dps:6.8:129.54
+R	paladin/holy	12	15235	12920	mh	197.6	int:8:int:0.47:3.76,spDmg:24:spDmg:1.2:28.8,heal:71:heal:0.5:35.5,dps:19.05:dps:6.8:129.54
 R	paladin/holy	12	15477	0	gear	6.06	armor:101:armor:0.06:6.06
 R	paladin/holy	12	15477	12718	gear	7.93	int:1:int:0.47:0.47,sta:1:sta:1.4:1.4,armor:101:armor:0.06:6.06
 R	paladin/holy	12	15477	12719	gear	7.949999999999999	spi:1:spi:0.49:0.49,sta:1:sta:1.4:1.4,armor:101:armor:0.06:6.06
@@ -13876,6 +14257,9 @@ R	paladin/holy	12	286609	0	oh	109.5	spi:6:spi:0.49:2.94,armor:1776:armor:0.06:10
 R	paladin/holy	25	25	0	mh	7.455	dps:1.05:dps:7.1:7.455
 R	paladin/holy	25	1315	0	gear	23.6	sta:10:sta:1.7:17,spi:15:spi:0.44:6.6
 R	paladin/holy	25	1808	0	gear	3.7	armor:74:armor:0.05:3.7
+R	paladin/holy	25	1990	0	mh	175.441	dps:24.71:dps:7.1:175.441
+R	paladin/holy	25	1990	12718	mh	205.141	int:9:int:1.6:14.4,sta:9:sta:1.7:15.3,dps:24.71:dps:7.1:175.441
+R	paladin/holy	25	1990	12905	mh	204.798	int:11:int:1.6:17.6,sta:7:sta:1.7:11.9,sp:28:sp:1.6:44.8,dps:18.38:dps:7.1:130.498
 R	paladin/holy	25	2614	0	gear	1.4500000000000002	armor:29:armor:0.05:1.45
 R	paladin/holy	25	3158	0	gear	1.3	armor:26:armor:0.05:1.3
 R	paladin/holy	25	3570	0	mh	59.651999999999994	str:2:str:1:2,dps:8.12:dps:7.1:57.652
@@ -13904,8 +14288,8 @@ R	paladin/holy	25	4570	12742	mh	76.1	sta:3:sta:1.7:5.1,dps:10:dps:7.1:71
 R	paladin/holy	25	4570	12743	mh	76.1	sta:3:sta:1.7:5.1,dps:10:dps:7.1:71
 R	paladin/holy	25	4570	12744	mh	76.1	sta:3:sta:1.7:5.1,dps:10:dps:7.1:71
 R	paladin/holy	25	4570	12759	mh	80.0	spHoly:6:spHoly:1.5:9,dps:10:dps:7.1:71
-R	paladin/holy	25	4570	12918	mh	90.2	sp:8:sp:1.6:12.8,int:4:int:1.6:6.4,dps:10:dps:7.1:71
-R	paladin/holy	25	4570	12919	mh	86.4	spDmg:5:spDmg:1.5:7.5,heal:15:heal:0.1:1.5,int:4:int:1.6:6.4,dps:10:dps:7.1:71
+R	paladin/holy	25	4570	12918	mh	73.018	sp:8:sp:1.6:12.8,int:4:int:1.6:6.4,dps:7.58:dps:7.1:53.818
+R	paladin/holy	25	4570	12919	mh	69.218	spDmg:5:spDmg:1.5:7.5,heal:15:heal:0.1:1.5,int:4:int:1.6:6.4,dps:7.58:dps:7.1:53.818
 R	paladin/holy	25	5079	0	gear	0.0	
 R	paladin/holy	25	6063	0	gear	2.75	armor:55:armor:0.05:2.75
 R	paladin/holy	25	6540	0	gear	1.4000000000000001	armor:28:armor:0.05:1.4
@@ -14177,14 +14561,14 @@ R	paladin/holy	25	15235	12752	mh	217.96699999999998	agi:3:agi:0.64:1.92,sta:6:st
 R	paladin/holy	25	15235	12753	mh	216.04699999999997	sta:6:sta:1.7:10.2,str:3:str:1:3,dps:28.57:dps:7.1:202.847
 R	paladin/holy	25	15235	12754	mh	217.84699999999998	sp:3:sp:1.6:4.8,sta:6:sta:1.7:10.2,dps:28.57:dps:7.1:202.847
 R	paladin/holy	25	15235	12759	mh	219.34699999999998	spHoly:11:spHoly:1.5:16.5,dps:28.57:dps:7.1:202.847
-R	paladin/holy	25	15235	12906	mh	280.04699999999997	int:6:int:1.6:9.6,sta:4:sta:1.7:6.8,sp:38:sp:1.6:60.8,dps:28.57:dps:7.1:202.847
-R	paladin/holy	25	15235	12908	mh	275.007	int:6:int:1.6:9.6,sp:38:sp:1.6:60.8,spi:4:spi:0.44:1.76,dps:28.57:dps:7.1:202.847
-R	paladin/holy	25	15235	12910	mh	275.60699999999997	sp:38:sp:1.6:60.8,spi:4:spi:0.44:1.76,sta:6:sta:1.7:10.2,dps:28.57:dps:7.1:202.847
-R	paladin/holy	25	15235	12912	mh	262.54699999999997	spDmg:24:spDmg:1.5:36,heal:71:heal:0.1:7.1,int:4:int:1.6:6.4,sta:6:sta:1.7:10.2,dps:28.57:dps:7.1:202.847
-R	paladin/holy	25	15235	12913	mh	257.30699999999996	int:6:int:1.6:9.6,spDmg:24:spDmg:1.5:36,heal:71:heal:0.1:7.1,spi:4:spi:0.44:1.76,dps:28.57:dps:7.1:202.847
-R	paladin/holy	25	15235	12916	mh	257.907	spDmg:24:spDmg:1.5:36,heal:71:heal:0.1:7.1,spi:4:spi:0.44:1.76,sta:6:sta:1.7:10.2,dps:28.57:dps:7.1:202.847
-R	paladin/holy	25	15235	12917	mh	276.447	sp:38:sp:1.6:60.8,int:8:int:1.6:12.8,dps:28.57:dps:7.1:202.847
-R	paladin/holy	25	15235	12920	mh	258.74699999999996	int:8:int:1.6:12.8,spDmg:24:spDmg:1.5:36,heal:71:heal:0.1:7.1,dps:28.57:dps:7.1:202.847
+R	paladin/holy	25	15235	12906	mh	212.45499999999998	int:6:int:1.6:9.6,sta:4:sta:1.7:6.8,sp:38:sp:1.6:60.8,dps:19.05:dps:7.1:135.255
+R	paladin/holy	25	15235	12908	mh	207.41500000000002	int:6:int:1.6:9.6,sp:38:sp:1.6:60.8,spi:4:spi:0.44:1.76,dps:19.05:dps:7.1:135.255
+R	paladin/holy	25	15235	12910	mh	208.015	sp:38:sp:1.6:60.8,spi:4:spi:0.44:1.76,sta:6:sta:1.7:10.2,dps:19.05:dps:7.1:135.255
+R	paladin/holy	25	15235	12912	mh	194.95499999999998	spDmg:24:spDmg:1.5:36,heal:71:heal:0.1:7.1,int:4:int:1.6:6.4,sta:6:sta:1.7:10.2,dps:19.05:dps:7.1:135.255
+R	paladin/holy	25	15235	12913	mh	189.715	int:6:int:1.6:9.6,spDmg:24:spDmg:1.5:36,heal:71:heal:0.1:7.1,spi:4:spi:0.44:1.76,dps:19.05:dps:7.1:135.255
+R	paladin/holy	25	15235	12916	mh	190.315	spDmg:24:spDmg:1.5:36,heal:71:heal:0.1:7.1,spi:4:spi:0.44:1.76,sta:6:sta:1.7:10.2,dps:19.05:dps:7.1:135.255
+R	paladin/holy	25	15235	12917	mh	208.85500000000002	sp:38:sp:1.6:60.8,int:8:int:1.6:12.8,dps:19.05:dps:7.1:135.255
+R	paladin/holy	25	15235	12920	mh	191.155	int:8:int:1.6:12.8,spDmg:24:spDmg:1.5:36,heal:71:heal:0.1:7.1,dps:19.05:dps:7.1:135.255
 R	paladin/holy	25	15477	0	gear	5.050000000000001	armor:101:armor:0.05:5.05
 R	paladin/holy	25	15477	12718	gear	8.350000000000001	int:1:int:1.6:1.6,sta:1:sta:1.7:1.7,armor:101:armor:0.05:5.05
 R	paladin/holy	25	15477	12719	gear	7.190000000000001	spi:1:spi:0.44:0.44,sta:1:sta:1.7:1.7,armor:101:armor:0.05:5.05
@@ -14233,6 +14617,9 @@ R	paladin/holy	25	286609	0	oh	91.44000000000001	spi:6:spi:0.44:2.64,armor:1776:a
 R	paladin/holy	34	25	0	mh	6.615	dps:1.05:dps:6.3:6.615
 R	paladin/holy	34	1315	0	gear	17.35	sta:10:sta:1.3:13,spi:15:spi:0.29:4.35
 R	paladin/holy	34	1808	0	gear	5.846	armor:74:armor:0.079:5.846
+R	paladin/holy	34	1990	0	mh	155.673	dps:24.71:dps:6.3:155.673
+R	paladin/holy	34	1990	12718	mh	181.773	int:9:int:1.6:14.4,sta:9:sta:1.3:11.7,dps:24.71:dps:6.3:155.673
+R	paladin/holy	34	1990	12905	mh	187.29399999999998	int:11:int:1.6:17.6,sta:7:sta:1.3:9.1,sp:28:sp:1.6:44.8,dps:18.38:dps:6.3:115.794
 R	paladin/holy	34	2614	0	gear	2.291	armor:29:armor:0.079:2.291
 R	paladin/holy	34	3158	0	gear	2.054	armor:26:armor:0.079:2.054
 R	paladin/holy	34	3570	0	mh	53.15599999999999	str:2:str:1:2,dps:8.12:dps:6.3:51.156
@@ -14261,8 +14648,8 @@ R	paladin/holy	34	4570	12742	mh	66.9	sta:3:sta:1.3:3.9,dps:10:dps:6.3:63
 R	paladin/holy	34	4570	12743	mh	66.9	sta:3:sta:1.3:3.9,dps:10:dps:6.3:63
 R	paladin/holy	34	4570	12744	mh	66.9	sta:3:sta:1.3:3.9,dps:10:dps:6.3:63
 R	paladin/holy	34	4570	12759	mh	71.4	spHoly:6:spHoly:1.4:8.4,dps:10:dps:6.3:63
-R	paladin/holy	34	4570	12918	mh	82.2	sp:8:sp:1.6:12.8,int:4:int:1.6:6.4,dps:10:dps:6.3:63
-R	paladin/holy	34	4570	12919	mh	79.4	spDmg:5:spDmg:1.4:7,heal:15:heal:0.2:3,int:4:int:1.6:6.4,dps:10:dps:6.3:63
+R	paladin/holy	34	4570	12918	mh	66.95400000000001	sp:8:sp:1.6:12.8,int:4:int:1.6:6.4,dps:7.58:dps:6.3:47.754
+R	paladin/holy	34	4570	12919	mh	64.154	spDmg:5:spDmg:1.4:7,heal:15:heal:0.2:3,int:4:int:1.6:6.4,dps:7.58:dps:6.3:47.754
 R	paladin/holy	34	5079	0	gear	0.0	
 R	paladin/holy	34	6063	0	gear	4.345	armor:55:armor:0.079:4.345
 R	paladin/holy	34	6540	0	gear	2.212	armor:28:armor:0.079:2.212
@@ -14534,14 +14921,14 @@ R	paladin/holy	34	15235	12752	mh	193.22099999999998	agi:3:agi:0.81:2.43,sta:6:st
 R	paladin/holy	34	15235	12753	mh	190.791	sta:6:sta:1.3:7.8,str:3:str:1:3,dps:28.57:dps:6.3:179.991
 R	paladin/holy	34	15235	12754	mh	192.59099999999998	sp:3:sp:1.6:4.8,sta:6:sta:1.3:7.8,dps:28.57:dps:6.3:179.991
 R	paladin/holy	34	15235	12759	mh	195.391	spHoly:11:spHoly:1.4:15.4,dps:28.57:dps:6.3:179.991
-R	paladin/holy	34	15235	12906	mh	255.591	int:6:int:1.6:9.6,sta:4:sta:1.3:5.2,sp:38:sp:1.6:60.8,dps:28.57:dps:6.3:179.991
-R	paladin/holy	34	15235	12908	mh	251.551	int:6:int:1.6:9.6,sp:38:sp:1.6:60.8,spi:4:spi:0.29:1.16,dps:28.57:dps:6.3:179.991
-R	paladin/holy	34	15235	12910	mh	249.75099999999998	sp:38:sp:1.6:60.8,spi:4:spi:0.29:1.16,sta:6:sta:1.3:7.8,dps:28.57:dps:6.3:179.991
-R	paladin/holy	34	15235	12912	mh	241.99099999999999	spDmg:24:spDmg:1.4:33.6,heal:71:heal:0.2:14.2,int:4:int:1.6:6.4,sta:6:sta:1.3:7.8,dps:28.57:dps:6.3:179.991
-R	paladin/holy	34	15235	12913	mh	238.551	int:6:int:1.6:9.6,spDmg:24:spDmg:1.4:33.6,heal:71:heal:0.2:14.2,spi:4:spi:0.29:1.16,dps:28.57:dps:6.3:179.991
-R	paladin/holy	34	15235	12916	mh	236.75099999999998	spDmg:24:spDmg:1.4:33.6,heal:71:heal:0.2:14.2,spi:4:spi:0.29:1.16,sta:6:sta:1.3:7.8,dps:28.57:dps:6.3:179.991
-R	paladin/holy	34	15235	12917	mh	253.591	sp:38:sp:1.6:60.8,int:8:int:1.6:12.8,dps:28.57:dps:6.3:179.991
-R	paladin/holy	34	15235	12920	mh	240.59099999999998	int:8:int:1.6:12.8,spDmg:24:spDmg:1.4:33.6,heal:71:heal:0.2:14.2,dps:28.57:dps:6.3:179.991
+R	paladin/holy	34	15235	12906	mh	195.615	int:6:int:1.6:9.6,sta:4:sta:1.3:5.2,sp:38:sp:1.6:60.8,dps:19.05:dps:6.3:120.015
+R	paladin/holy	34	15235	12908	mh	191.575	int:6:int:1.6:9.6,sp:38:sp:1.6:60.8,spi:4:spi:0.29:1.16,dps:19.05:dps:6.3:120.015
+R	paladin/holy	34	15235	12910	mh	189.775	sp:38:sp:1.6:60.8,spi:4:spi:0.29:1.16,sta:6:sta:1.3:7.8,dps:19.05:dps:6.3:120.015
+R	paladin/holy	34	15235	12912	mh	182.015	spDmg:24:spDmg:1.4:33.6,heal:71:heal:0.2:14.2,int:4:int:1.6:6.4,sta:6:sta:1.3:7.8,dps:19.05:dps:6.3:120.015
+R	paladin/holy	34	15235	12913	mh	178.575	int:6:int:1.6:9.6,spDmg:24:spDmg:1.4:33.6,heal:71:heal:0.2:14.2,spi:4:spi:0.29:1.16,dps:19.05:dps:6.3:120.015
+R	paladin/holy	34	15235	12916	mh	176.77499999999998	spDmg:24:spDmg:1.4:33.6,heal:71:heal:0.2:14.2,spi:4:spi:0.29:1.16,sta:6:sta:1.3:7.8,dps:19.05:dps:6.3:120.015
+R	paladin/holy	34	15235	12917	mh	193.615	sp:38:sp:1.6:60.8,int:8:int:1.6:12.8,dps:19.05:dps:6.3:120.015
+R	paladin/holy	34	15235	12920	mh	180.615	int:8:int:1.6:12.8,spDmg:24:spDmg:1.4:33.6,heal:71:heal:0.2:14.2,dps:19.05:dps:6.3:120.015
 R	paladin/holy	34	15477	0	gear	7.979	armor:101:armor:0.079:7.979
 R	paladin/holy	34	15477	12718	gear	10.879000000000001	int:1:int:1.6:1.6,sta:1:sta:1.3:1.3,armor:101:armor:0.079:7.979
 R	paladin/holy	34	15477	12719	gear	9.569	spi:1:spi:0.29:0.29,sta:1:sta:1.3:1.3,armor:101:armor:0.079:7.979
@@ -14590,6 +14977,9 @@ R	paladin/holy	34	286609	0	oh	142.044	spi:6:spi:0.29:1.74,armor:1776:armor:0.079
 R	paladin/holy	45	25	0	mh	6.93	dps:1.05:dps:6.6:6.93
 R	paladin/holy	45	1315	0	gear	43.35	sta:10:sta:3:30,spi:15:spi:0.89:13.35
 R	paladin/holy	45	1808	0	gear	5.994	armor:74:armor:0.081:5.994
+R	paladin/holy	45	1990	0	mh	163.08599999999998	dps:24.71:dps:6.6:163.086
+R	paladin/holy	45	1990	12718	mh	201.786	int:9:int:1.3:11.7,sta:9:sta:3:27,dps:24.71:dps:6.6:163.086
+R	paladin/holy	45	1990	12905	mh	212.608	int:11:int:1.3:14.3,sta:7:sta:3:21,sp:28:sp:2:56,dps:18.38:dps:6.6:121.308
 R	paladin/holy	45	2614	0	gear	2.349	armor:29:armor:0.081:2.349
 R	paladin/holy	45	3158	0	gear	2.106	armor:26:armor:0.081:2.106
 R	paladin/holy	45	3570	0	mh	55.59199999999999	str:2:str:1:2,dps:8.12:dps:6.6:53.592
@@ -14618,8 +15008,8 @@ R	paladin/holy	45	4570	12742	mh	75.0	sta:3:sta:3:9,dps:10:dps:6.6:66
 R	paladin/holy	45	4570	12743	mh	75.0	sta:3:sta:3:9,dps:10:dps:6.6:66
 R	paladin/holy	45	4570	12744	mh	75.0	sta:3:sta:3:9,dps:10:dps:6.6:66
 R	paladin/holy	45	4570	12759	mh	77.4	spHoly:6:spHoly:1.9:11.4,dps:10:dps:6.6:66
-R	paladin/holy	45	4570	12918	mh	87.2	sp:8:sp:2:16,int:4:int:1.3:5.2,dps:10:dps:6.6:66
-R	paladin/holy	45	4570	12919	mh	82.2	spDmg:5:spDmg:1.9:9.5,heal:15:heal:0.1:1.5,int:4:int:1.3:5.2,dps:10:dps:6.6:66
+R	paladin/holy	45	4570	12918	mh	71.228	sp:8:sp:2:16,int:4:int:1.3:5.2,dps:7.58:dps:6.6:50.028
+R	paladin/holy	45	4570	12919	mh	66.228	spDmg:5:spDmg:1.9:9.5,heal:15:heal:0.1:1.5,int:4:int:1.3:5.2,dps:7.58:dps:6.6:50.028
 R	paladin/holy	45	5079	0	gear	0.0	
 R	paladin/holy	45	6063	0	gear	4.455	armor:55:armor:0.081:4.455
 R	paladin/holy	45	6540	0	gear	2.2680000000000002	armor:28:armor:0.081:2.268
@@ -14891,14 +15281,14 @@ R	paladin/holy	45	15235	12752	mh	212.50199999999998	agi:3:agi:0.98:2.94,sta:6:st
 R	paladin/holy	45	15235	12753	mh	209.56199999999998	sta:6:sta:3:18,str:3:str:1:3,dps:28.57:dps:6.6:188.562
 R	paladin/holy	45	15235	12754	mh	212.56199999999998	sp:3:sp:2:6,sta:6:sta:3:18,dps:28.57:dps:6.6:188.562
 R	paladin/holy	45	15235	12759	mh	209.462	spHoly:11:spHoly:1.9:20.9,dps:28.57:dps:6.6:188.562
-R	paladin/holy	45	15235	12906	mh	284.36199999999997	int:6:int:1.3:7.8,sta:4:sta:3:12,sp:38:sp:2:76,dps:28.57:dps:6.6:188.562
-R	paladin/holy	45	15235	12908	mh	275.92199999999997	int:6:int:1.3:7.8,sp:38:sp:2:76,spi:4:spi:0.89:3.56,dps:28.57:dps:6.6:188.562
-R	paladin/holy	45	15235	12910	mh	286.12199999999996	sp:38:sp:2:76,spi:4:spi:0.89:3.56,sta:6:sta:3:18,dps:28.57:dps:6.6:188.562
-R	paladin/holy	45	15235	12912	mh	264.462	spDmg:24:spDmg:1.9:45.6,heal:71:heal:0.1:7.1,int:4:int:1.3:5.2,sta:6:sta:3:18,dps:28.57:dps:6.6:188.562
-R	paladin/holy	45	15235	12913	mh	252.62199999999996	int:6:int:1.3:7.8,spDmg:24:spDmg:1.9:45.6,heal:71:heal:0.1:7.1,spi:4:spi:0.89:3.56,dps:28.57:dps:6.6:188.562
-R	paladin/holy	45	15235	12916	mh	262.822	spDmg:24:spDmg:1.9:45.6,heal:71:heal:0.1:7.1,spi:4:spi:0.89:3.56,sta:6:sta:3:18,dps:28.57:dps:6.6:188.562
-R	paladin/holy	45	15235	12917	mh	274.962	sp:38:sp:2:76,int:8:int:1.3:10.4,dps:28.57:dps:6.6:188.562
-R	paladin/holy	45	15235	12920	mh	251.66199999999998	int:8:int:1.3:10.4,spDmg:24:spDmg:1.9:45.6,heal:71:heal:0.1:7.1,dps:28.57:dps:6.6:188.562
+R	paladin/holy	45	15235	12906	mh	221.53	int:6:int:1.3:7.8,sta:4:sta:3:12,sp:38:sp:2:76,dps:19.05:dps:6.6:125.73
+R	paladin/holy	45	15235	12908	mh	213.09	int:6:int:1.3:7.8,sp:38:sp:2:76,spi:4:spi:0.89:3.56,dps:19.05:dps:6.6:125.73
+R	paladin/holy	45	15235	12910	mh	223.29000000000002	sp:38:sp:2:76,spi:4:spi:0.89:3.56,sta:6:sta:3:18,dps:19.05:dps:6.6:125.73
+R	paladin/holy	45	15235	12912	mh	201.63	spDmg:24:spDmg:1.9:45.6,heal:71:heal:0.1:7.1,int:4:int:1.3:5.2,sta:6:sta:3:18,dps:19.05:dps:6.6:125.73
+R	paladin/holy	45	15235	12913	mh	189.79	int:6:int:1.3:7.8,spDmg:24:spDmg:1.9:45.6,heal:71:heal:0.1:7.1,spi:4:spi:0.89:3.56,dps:19.05:dps:6.6:125.73
+R	paladin/holy	45	15235	12916	mh	199.99	spDmg:24:spDmg:1.9:45.6,heal:71:heal:0.1:7.1,spi:4:spi:0.89:3.56,sta:6:sta:3:18,dps:19.05:dps:6.6:125.73
+R	paladin/holy	45	15235	12917	mh	212.13	sp:38:sp:2:76,int:8:int:1.3:10.4,dps:19.05:dps:6.6:125.73
+R	paladin/holy	45	15235	12920	mh	188.82999999999998	int:8:int:1.3:10.4,spDmg:24:spDmg:1.9:45.6,heal:71:heal:0.1:7.1,dps:19.05:dps:6.6:125.73
 R	paladin/holy	45	15477	0	gear	8.181000000000001	armor:101:armor:0.081:8.181
 R	paladin/holy	45	15477	12718	gear	12.481000000000002	int:1:int:1.3:1.3,sta:1:sta:3:3,armor:101:armor:0.081:8.181
 R	paladin/holy	45	15477	12719	gear	12.071000000000002	spi:1:spi:0.89:0.89,sta:1:sta:3:3,armor:101:armor:0.081:8.181
@@ -14947,6 +15337,9 @@ R	paladin/holy	45	286609	0	oh	149.196	spi:6:spi:0.89:5.34,armor:1776:armor:0.081
 R	paladin/holy	55	25	0	mh	7.245000000000001	dps:1.05:dps:6.9:7.245
 R	paladin/holy	55	1315	0	gear	48.0	sta:10:sta:3.3:33,spi:15:spi:1:15
 R	paladin/holy	55	1808	0	gear	7.3260000000000005	armor:74:armor:0.099:7.326
+R	paladin/holy	55	1990	0	mh	170.49900000000002	dps:24.71:dps:6.9:170.499
+R	paladin/holy	55	1990	12718	mh	218.199	int:9:int:2:18,sta:9:sta:3.3:29.7,dps:24.71:dps:6.9:170.499
+R	paladin/holy	55	1990	12905	mh	227.922	int:11:int:2:22,sta:7:sta:3.3:23.1,sp:28:sp:2:56,dps:18.38:dps:6.9:126.822
 R	paladin/holy	55	2614	0	gear	2.871	armor:29:armor:0.099:2.871
 R	paladin/holy	55	3158	0	gear	2.5740000000000003	armor:26:armor:0.099:2.574
 R	paladin/holy	55	3570	0	mh	58.028	str:2:str:1:2,dps:8.12:dps:6.9:56.028
@@ -14975,8 +15368,8 @@ R	paladin/holy	55	4570	12742	mh	78.9	sta:3:sta:3.3:9.9,dps:10:dps:6.9:69
 R	paladin/holy	55	4570	12743	mh	78.9	sta:3:sta:3.3:9.9,dps:10:dps:6.9:69
 R	paladin/holy	55	4570	12744	mh	78.9	sta:3:sta:3.3:9.9,dps:10:dps:6.9:69
 R	paladin/holy	55	4570	12759	mh	81.0	spHoly:6:spHoly:2:12,dps:10:dps:6.9:69
-R	paladin/holy	55	4570	12918	mh	93.0	sp:8:sp:2:16,int:4:int:2:8,dps:10:dps:6.9:69
-R	paladin/holy	55	4570	12919	mh	87.0	spDmg:5:spDmg:2:10,int:4:int:2:8,dps:10:dps:6.9:69
+R	paladin/holy	55	4570	12918	mh	76.302	sp:8:sp:2:16,int:4:int:2:8,dps:7.58:dps:6.9:52.302
+R	paladin/holy	55	4570	12919	mh	70.302	spDmg:5:spDmg:2:10,int:4:int:2:8,dps:7.58:dps:6.9:52.302
 R	paladin/holy	55	5079	0	gear	0.0	
 R	paladin/holy	55	6063	0	gear	5.445	armor:55:armor:0.099:5.445
 R	paladin/holy	55	6540	0	gear	2.7720000000000002	armor:28:armor:0.099:2.772
@@ -15248,14 +15641,14 @@ R	paladin/holy	55	15235	12752	mh	223.53300000000002	agi:3:agi:1.2:3.6,sta:6:sta:
 R	paladin/holy	55	15235	12753	mh	219.933	sta:6:sta:3.3:19.8,str:3:str:1:3,dps:28.57:dps:6.9:197.133
 R	paladin/holy	55	15235	12754	mh	222.933	sp:3:sp:2:6,sta:6:sta:3.3:19.8,dps:28.57:dps:6.9:197.133
 R	paladin/holy	55	15235	12759	mh	219.133	spHoly:11:spHoly:2:22,dps:28.57:dps:6.9:197.133
-R	paladin/holy	55	15235	12906	mh	298.333	int:6:int:2:12,sta:4:sta:3.3:13.2,sp:38:sp:2:76,dps:28.57:dps:6.9:197.133
-R	paladin/holy	55	15235	12908	mh	289.13300000000004	int:6:int:2:12,sp:38:sp:2:76,spi:4:spi:1:4,dps:28.57:dps:6.9:197.133
-R	paladin/holy	55	15235	12910	mh	296.933	sp:38:sp:2:76,spi:4:spi:1:4,sta:6:sta:3.3:19.8,dps:28.57:dps:6.9:197.133
-R	paladin/holy	55	15235	12912	mh	272.933	spDmg:24:spDmg:2:48,int:4:int:2:8,sta:6:sta:3.3:19.8,dps:28.57:dps:6.9:197.133
-R	paladin/holy	55	15235	12913	mh	261.13300000000004	int:6:int:2:12,spDmg:24:spDmg:2:48,spi:4:spi:1:4,dps:28.57:dps:6.9:197.133
-R	paladin/holy	55	15235	12916	mh	268.933	spDmg:24:spDmg:2:48,spi:4:spi:1:4,sta:6:sta:3.3:19.8,dps:28.57:dps:6.9:197.133
-R	paladin/holy	55	15235	12917	mh	289.13300000000004	sp:38:sp:2:76,int:8:int:2:16,dps:28.57:dps:6.9:197.133
-R	paladin/holy	55	15235	12920	mh	261.13300000000004	int:8:int:2:16,spDmg:24:spDmg:2:48,dps:28.57:dps:6.9:197.133
+R	paladin/holy	55	15235	12906	mh	232.64500000000004	int:6:int:2:12,sta:4:sta:3.3:13.2,sp:38:sp:2:76,dps:19.05:dps:6.9:131.445
+R	paladin/holy	55	15235	12908	mh	223.44500000000002	int:6:int:2:12,sp:38:sp:2:76,spi:4:spi:1:4,dps:19.05:dps:6.9:131.445
+R	paladin/holy	55	15235	12910	mh	231.245	sp:38:sp:2:76,spi:4:spi:1:4,sta:6:sta:3.3:19.8,dps:19.05:dps:6.9:131.445
+R	paladin/holy	55	15235	12912	mh	207.245	spDmg:24:spDmg:2:48,int:4:int:2:8,sta:6:sta:3.3:19.8,dps:19.05:dps:6.9:131.445
+R	paladin/holy	55	15235	12913	mh	195.44500000000002	int:6:int:2:12,spDmg:24:spDmg:2:48,spi:4:spi:1:4,dps:19.05:dps:6.9:131.445
+R	paladin/holy	55	15235	12916	mh	203.245	spDmg:24:spDmg:2:48,spi:4:spi:1:4,sta:6:sta:3.3:19.8,dps:19.05:dps:6.9:131.445
+R	paladin/holy	55	15235	12917	mh	223.44500000000002	sp:38:sp:2:76,int:8:int:2:16,dps:19.05:dps:6.9:131.445
+R	paladin/holy	55	15235	12920	mh	195.44500000000002	int:8:int:2:16,spDmg:24:spDmg:2:48,dps:19.05:dps:6.9:131.445
 R	paladin/holy	55	15477	0	gear	9.999	armor:101:armor:0.099:9.999
 R	paladin/holy	55	15477	12718	gear	15.299	int:1:int:2:2,sta:1:sta:3.3:3.3,armor:101:armor:0.099:9.999
 R	paladin/holy	55	15477	12719	gear	14.299	spi:1:spi:1:1,sta:1:sta:3.3:3.3,armor:101:armor:0.099:9.999
@@ -15304,6 +15697,9 @@ R	paladin/holy	55	286609	0	oh	181.824	spi:6:spi:1:6,armor:1776:armor:0.099:175.8
 R	paladin/holy	60	25	0	mh	7.245000000000001	dps:1.05:dps:6.9:7.245
 R	paladin/holy	60	1315	0	gear	40.15	sta:10:sta:3.1:31,spi:15:spi:0.61:9.15
 R	paladin/holy	60	1808	0	gear	7.252000000000001	armor:74:armor:0.098:7.252
+R	paladin/holy	60	1990	0	mh	170.49900000000002	dps:24.71:dps:6.9:170.499
+R	paladin/holy	60	1990	12718	mh	218.199	int:9:int:2.2:19.8,sta:9:sta:3.1:27.9,dps:24.71:dps:6.9:170.499
+R	paladin/holy	60	1990	12905	mh	231.52200000000002	int:11:int:2.2:24.2,sta:7:sta:3.1:21.7,sp:28:sp:2.1:58.8,dps:18.38:dps:6.9:126.822
 R	paladin/holy	60	2614	0	gear	2.842	armor:29:armor:0.098:2.842
 R	paladin/holy	60	3158	0	gear	2.548	armor:26:armor:0.098:2.548
 R	paladin/holy	60	3570	0	mh	58.028	str:2:str:1:2,dps:8.12:dps:6.9:56.028
@@ -15332,8 +15728,8 @@ R	paladin/holy	60	4570	12742	mh	78.3	sta:3:sta:3.1:9.3,dps:10:dps:6.9:69
 R	paladin/holy	60	4570	12743	mh	78.3	sta:3:sta:3.1:9.3,dps:10:dps:6.9:69
 R	paladin/holy	60	4570	12744	mh	78.3	sta:3:sta:3.1:9.3,dps:10:dps:6.9:69
 R	paladin/holy	60	4570	12759	mh	81.6	spHoly:6:spHoly:2.1:12.6,dps:10:dps:6.9:69
-R	paladin/holy	60	4570	12918	mh	94.6	sp:8:sp:2.1:16.8,int:4:int:2.2:8.8,dps:10:dps:6.9:69
-R	paladin/holy	60	4570	12919	mh	88.3	spDmg:5:spDmg:2.1:10.5,int:4:int:2.2:8.8,dps:10:dps:6.9:69
+R	paladin/holy	60	4570	12918	mh	77.90200000000002	sp:8:sp:2.1:16.8,int:4:int:2.2:8.8,dps:7.58:dps:6.9:52.302
+R	paladin/holy	60	4570	12919	mh	71.602	spDmg:5:spDmg:2.1:10.5,int:4:int:2.2:8.8,dps:7.58:dps:6.9:52.302
 R	paladin/holy	60	5079	0	gear	0.0	
 R	paladin/holy	60	6063	0	gear	5.390000000000001	armor:55:armor:0.098:5.39
 R	paladin/holy	60	6540	0	gear	2.744	armor:28:armor:0.098:2.744
@@ -15605,14 +16001,14 @@ R	paladin/holy	60	15235	12752	mh	222.633	agi:3:agi:1.3:3.9,sta:6:sta:3.1:18.6,st
 R	paladin/holy	60	15235	12753	mh	218.733	sta:6:sta:3.1:18.6,str:3:str:1:3,dps:28.57:dps:6.9:197.133
 R	paladin/holy	60	15235	12754	mh	222.03300000000002	sp:3:sp:2.1:6.3,sta:6:sta:3.1:18.6,dps:28.57:dps:6.9:197.133
 R	paladin/holy	60	15235	12759	mh	220.233	spHoly:11:spHoly:2.1:23.1,dps:28.57:dps:6.9:197.133
-R	paladin/holy	60	15235	12906	mh	302.533	int:6:int:2.2:13.2,sta:4:sta:3.1:12.4,sp:38:sp:2.1:79.8,dps:28.57:dps:6.9:197.133
-R	paladin/holy	60	15235	12908	mh	292.573	int:6:int:2.2:13.2,sp:38:sp:2.1:79.8,spi:4:spi:0.61:2.44,dps:28.57:dps:6.9:197.133
-R	paladin/holy	60	15235	12910	mh	297.973	sp:38:sp:2.1:79.8,spi:4:spi:0.61:2.44,sta:6:sta:3.1:18.6,dps:28.57:dps:6.9:197.133
-R	paladin/holy	60	15235	12912	mh	274.933	spDmg:24:spDmg:2.1:50.4,int:4:int:2.2:8.8,sta:6:sta:3.1:18.6,dps:28.57:dps:6.9:197.133
-R	paladin/holy	60	15235	12913	mh	263.173	int:6:int:2.2:13.2,spDmg:24:spDmg:2.1:50.4,spi:4:spi:0.61:2.44,dps:28.57:dps:6.9:197.133
-R	paladin/holy	60	15235	12916	mh	268.573	spDmg:24:spDmg:2.1:50.4,spi:4:spi:0.61:2.44,sta:6:sta:3.1:18.6,dps:28.57:dps:6.9:197.133
-R	paladin/holy	60	15235	12917	mh	294.533	sp:38:sp:2.1:79.8,int:8:int:2.2:17.6,dps:28.57:dps:6.9:197.133
-R	paladin/holy	60	15235	12920	mh	265.13300000000004	int:8:int:2.2:17.6,spDmg:24:spDmg:2.1:50.4,dps:28.57:dps:6.9:197.133
+R	paladin/holy	60	15235	12906	mh	236.84500000000003	int:6:int:2.2:13.2,sta:4:sta:3.1:12.4,sp:38:sp:2.1:79.8,dps:19.05:dps:6.9:131.445
+R	paladin/holy	60	15235	12908	mh	226.88500000000002	int:6:int:2.2:13.2,sp:38:sp:2.1:79.8,spi:4:spi:0.61:2.44,dps:19.05:dps:6.9:131.445
+R	paladin/holy	60	15235	12910	mh	232.28500000000003	sp:38:sp:2.1:79.8,spi:4:spi:0.61:2.44,sta:6:sta:3.1:18.6,dps:19.05:dps:6.9:131.445
+R	paladin/holy	60	15235	12912	mh	209.24500000000003	spDmg:24:spDmg:2.1:50.4,int:4:int:2.2:8.8,sta:6:sta:3.1:18.6,dps:19.05:dps:6.9:131.445
+R	paladin/holy	60	15235	12913	mh	197.485	int:6:int:2.2:13.2,spDmg:24:spDmg:2.1:50.4,spi:4:spi:0.61:2.44,dps:19.05:dps:6.9:131.445
+R	paladin/holy	60	15235	12916	mh	202.88500000000002	spDmg:24:spDmg:2.1:50.4,spi:4:spi:0.61:2.44,sta:6:sta:3.1:18.6,dps:19.05:dps:6.9:131.445
+R	paladin/holy	60	15235	12917	mh	228.84500000000003	sp:38:sp:2.1:79.8,int:8:int:2.2:17.6,dps:19.05:dps:6.9:131.445
+R	paladin/holy	60	15235	12920	mh	199.44500000000002	int:8:int:2.2:17.6,spDmg:24:spDmg:2.1:50.4,dps:19.05:dps:6.9:131.445
 R	paladin/holy	60	15477	0	gear	9.898	armor:101:armor:0.098:9.898
 R	paladin/holy	60	15477	12718	gear	15.198	int:1:int:2.2:2.2,sta:1:sta:3.1:3.1,armor:101:armor:0.098:9.898
 R	paladin/holy	60	15477	12719	gear	13.608	spi:1:spi:0.61:0.61,sta:1:sta:3.1:3.1,armor:101:armor:0.098:9.898
@@ -15661,6 +16057,9 @@ R	paladin/holy	60	286609	0	oh	177.708	spi:6:spi:0.61:3.66,armor:1776:armor:0.098
 R	paladin/retribution	12	25	0	mh	4.575	dps:1.05:dps:7.1:7.455,speed:-0.6:speed:4.8:-2.88
 R	paladin/retribution	12	1315	0	gear	23.200000000000003	sta:10:sta:1.3:13,spi:15:spi:0.68:10.2
 R	paladin/retribution	12	1808	0	gear	4.736	armor:74:armor:0.064:4.736
+R	paladin/retribution	12	1990	0	mh	177.361	dps:24.71:dps:7.1:175.441,speed:0.4:speed:4.8:1.92
+R	paladin/retribution	12	1990	12718	mh	192.391	int:9:int:0.37:3.33,sta:9:sta:1.3:11.7,dps:24.71:dps:7.1:175.441,speed:0.4:speed:4.8:1.92
+R	paladin/retribution	12	1990	12905	mh	195.98799999999997	int:11:int:0.37:4.07,sta:7:sta:1.3:9.1,sp:28:sp:1.8:50.4,dps:18.38:dps:7.1:130.498,speed:0.4:speed:4.8:1.92
 R	paladin/retribution	12	2614	0	gear	1.856	armor:29:armor:0.064:1.856
 R	paladin/retribution	12	3158	0	gear	1.6640000000000001	armor:26:armor:0.064:1.664
 R	paladin/retribution	12	3570	0	mh	56.77199999999999	str:2:str:1:2,dps:8.12:dps:7.1:57.652,speed:-0.6:speed:4.8:-2.88
@@ -15689,8 +16088,8 @@ R	paladin/retribution	12	4570	12742	mh	76.34	sta:3:sta:1.3:3.9,dps:10:dps:7.1:71
 R	paladin/retribution	12	4570	12743	mh	76.34	sta:3:sta:1.3:3.9,dps:10:dps:7.1:71,speed:0.3:speed:4.8:1.44
 R	paladin/retribution	12	4570	12744	mh	76.34	sta:3:sta:1.3:3.9,dps:10:dps:7.1:71,speed:0.3:speed:4.8:1.44
 R	paladin/retribution	12	4570	12759	mh	79.64	spHoly:6:spHoly:1.2:7.2,dps:10:dps:7.1:71,speed:0.3:speed:4.8:1.44
-R	paladin/retribution	12	4570	12918	mh	88.32	sp:8:sp:1.8:14.4,int:4:int:0.37:1.48,dps:10:dps:7.1:71,speed:0.3:speed:4.8:1.44
-R	paladin/retribution	12	4570	12919	mh	88.92	spDmg:5:spDmg:1.2:6,heal:15:heal:0.6:9,int:4:int:0.37:1.48,dps:10:dps:7.1:71,speed:0.3:speed:4.8:1.44
+R	paladin/retribution	12	4570	12918	mh	71.13799999999999	sp:8:sp:1.8:14.4,int:4:int:0.37:1.48,dps:7.58:dps:7.1:53.818,speed:0.3:speed:4.8:1.44
+R	paladin/retribution	12	4570	12919	mh	71.738	spDmg:5:spDmg:1.2:6,heal:15:heal:0.6:9,int:4:int:0.37:1.48,dps:7.58:dps:7.1:53.818,speed:0.3:speed:4.8:1.44
 R	paladin/retribution	12	5079	0	gear	0.0	
 R	paladin/retribution	12	6063	0	gear	3.52	armor:55:armor:0.064:3.52
 R	paladin/retribution	12	6540	0	gear	1.792	armor:28:armor:0.064:1.792
@@ -15962,14 +16361,14 @@ R	paladin/retribution	12	15235	12752	mh	212.71699999999998	agi:3:agi:0.65:1.95,s
 R	paladin/retribution	12	15235	12753	mh	210.767	sta:6:sta:1.3:7.8,str:3:str:1:3,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:4.8:-2.88
 R	paladin/retribution	12	15235	12754	mh	213.16699999999997	sp:3:sp:1.8:5.4,sta:6:sta:1.3:7.8,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:4.8:-2.88
 R	paladin/retribution	12	15235	12759	mh	213.16699999999997	spHoly:11:spHoly:1.2:13.2,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:4.8:-2.88
-R	paladin/retribution	12	15235	12906	mh	275.787	int:6:int:0.37:2.22,sta:4:sta:1.3:5.2,sp:38:sp:1.8:68.4,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:4.8:-2.88
-R	paladin/retribution	12	15235	12908	mh	273.307	int:6:int:0.37:2.22,sp:38:sp:1.8:68.4,spi:4:spi:0.68:2.72,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:4.8:-2.88
-R	paladin/retribution	12	15235	12910	mh	278.887	sp:38:sp:1.8:68.4,spi:4:spi:0.68:2.72,sta:6:sta:1.3:7.8,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:4.8:-2.88
-R	paladin/retribution	12	15235	12912	mh	280.647	spDmg:24:spDmg:1.2:28.8,heal:71:heal:0.6:42.6,int:4:int:0.37:1.48,sta:6:sta:1.3:7.8,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:4.8:-2.88
-R	paladin/retribution	12	15235	12913	mh	276.307	int:6:int:0.37:2.22,spDmg:24:spDmg:1.2:28.8,heal:71:heal:0.6:42.6,spi:4:spi:0.68:2.72,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:4.8:-2.88
-R	paladin/retribution	12	15235	12916	mh	281.887	spDmg:24:spDmg:1.2:28.8,heal:71:heal:0.6:42.6,spi:4:spi:0.68:2.72,sta:6:sta:1.3:7.8,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:4.8:-2.88
-R	paladin/retribution	12	15235	12917	mh	271.327	sp:38:sp:1.8:68.4,int:8:int:0.37:2.96,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:4.8:-2.88
-R	paladin/retribution	12	15235	12920	mh	274.327	int:8:int:0.37:2.96,spDmg:24:spDmg:1.2:28.8,heal:71:heal:0.6:42.6,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:4.8:-2.88
+R	paladin/retribution	12	15235	12906	mh	208.195	int:6:int:0.37:2.22,sta:4:sta:1.3:5.2,sp:38:sp:1.8:68.4,dps:19.05:dps:7.1:135.255,speed:-0.6:speed:4.8:-2.88
+R	paladin/retribution	12	15235	12908	mh	205.715	int:6:int:0.37:2.22,sp:38:sp:1.8:68.4,spi:4:spi:0.68:2.72,dps:19.05:dps:7.1:135.255,speed:-0.6:speed:4.8:-2.88
+R	paladin/retribution	12	15235	12910	mh	211.29500000000002	sp:38:sp:1.8:68.4,spi:4:spi:0.68:2.72,sta:6:sta:1.3:7.8,dps:19.05:dps:7.1:135.255,speed:-0.6:speed:4.8:-2.88
+R	paladin/retribution	12	15235	12912	mh	213.055	spDmg:24:spDmg:1.2:28.8,heal:71:heal:0.6:42.6,int:4:int:0.37:1.48,sta:6:sta:1.3:7.8,dps:19.05:dps:7.1:135.255,speed:-0.6:speed:4.8:-2.88
+R	paladin/retribution	12	15235	12913	mh	208.715	int:6:int:0.37:2.22,spDmg:24:spDmg:1.2:28.8,heal:71:heal:0.6:42.6,spi:4:spi:0.68:2.72,dps:19.05:dps:7.1:135.255,speed:-0.6:speed:4.8:-2.88
+R	paladin/retribution	12	15235	12916	mh	214.29500000000002	spDmg:24:spDmg:1.2:28.8,heal:71:heal:0.6:42.6,spi:4:spi:0.68:2.72,sta:6:sta:1.3:7.8,dps:19.05:dps:7.1:135.255,speed:-0.6:speed:4.8:-2.88
+R	paladin/retribution	12	15235	12917	mh	203.735	sp:38:sp:1.8:68.4,int:8:int:0.37:2.96,dps:19.05:dps:7.1:135.255,speed:-0.6:speed:4.8:-2.88
+R	paladin/retribution	12	15235	12920	mh	206.735	int:8:int:0.37:2.96,spDmg:24:spDmg:1.2:28.8,heal:71:heal:0.6:42.6,dps:19.05:dps:7.1:135.255,speed:-0.6:speed:4.8:-2.88
 R	paladin/retribution	12	15477	0	gear	6.464	armor:101:armor:0.064:6.464
 R	paladin/retribution	12	15477	12718	gear	8.134	int:1:int:0.37:0.37,sta:1:sta:1.3:1.3,armor:101:armor:0.064:6.464
 R	paladin/retribution	12	15477	12719	gear	8.444	spi:1:spi:0.68:0.68,sta:1:sta:1.3:1.3,armor:101:armor:0.064:6.464
@@ -16018,6 +16417,9 @@ R	paladin/retribution	12	286609	0	oh	117.744	spi:6:spi:0.68:4.08,armor:1776:armo
 R	paladin/retribution	25	25	0	mh	-7.049999999999998	dps:1.05:dps:7:7.35,speed:-0.6:speed:24:-14.4
 R	paladin/retribution	25	1315	0	gear	19.299999999999997	sta:10:sta:0.94:9.4,spi:15:spi:0.66:9.9
 R	paladin/retribution	25	1808	0	gear	3.6260000000000003	armor:74:armor:0.049:3.626
+R	paladin/retribution	25	1990	0	mh	172.97	dps:24.71:dps:7:172.97
+R	paladin/retribution	25	1990	12718	mh	187.82	int:9:int:0.71:6.39,sta:9:sta:0.94:8.46,dps:24.71:dps:7:172.97
+R	paladin/retribution	25	1990	12905	mh	179.45	int:11:int:0.71:7.81,sta:7:sta:0.94:6.58,sp:28:sp:1.3:36.4,dps:18.38:dps:7:128.66
 R	paladin/retribution	25	2614	0	gear	1.421	armor:29:armor:0.049:1.421
 R	paladin/retribution	25	3158	0	gear	1.274	armor:26:armor:0.049:1.274
 R	paladin/retribution	25	3570	0	mh	44.44	str:2:str:1:2,dps:8.12:dps:7:56.84,speed:-0.6:speed:24:-14.4
@@ -16046,8 +16448,8 @@ R	paladin/retribution	25	4570	12742	mh	70.41999999999999	sta:3:sta:0.94:2.82,dps
 R	paladin/retribution	25	4570	12743	mh	70.41999999999999	sta:3:sta:0.94:2.82,dps:10:dps:7:70,speed:-0.1:speed:24:-2.4
 R	paladin/retribution	25	4570	12744	mh	70.41999999999999	sta:3:sta:0.94:2.82,dps:10:dps:7:70,speed:-0.1:speed:24:-2.4
 R	paladin/retribution	25	4570	12759	mh	74.19999999999999	spHoly:6:spHoly:1.1:6.6,dps:10:dps:7:70,speed:-0.1:speed:24:-2.4
-R	paladin/retribution	25	4570	12918	mh	80.83999999999999	sp:8:sp:1.3:10.4,int:4:int:0.71:2.84,dps:10:dps:7:70,speed:-0.1:speed:24:-2.4
-R	paladin/retribution	25	4570	12919	mh	78.94	spDmg:5:spDmg:1.1:5.5,heal:15:heal:0.2:3,int:4:int:0.71:2.84,dps:10:dps:7:70,speed:-0.1:speed:24:-2.4
+R	paladin/retribution	25	4570	12918	mh	63.89999999999999	sp:8:sp:1.3:10.4,int:4:int:0.71:2.84,dps:7.58:dps:7:53.06,speed:-0.1:speed:24:-2.4
+R	paladin/retribution	25	4570	12919	mh	62.0	spDmg:5:spDmg:1.1:5.5,heal:15:heal:0.2:3,int:4:int:0.71:2.84,dps:7.58:dps:7:53.06,speed:-0.1:speed:24:-2.4
 R	paladin/retribution	25	5079	0	gear	0.0	
 R	paladin/retribution	25	6063	0	gear	2.6950000000000003	armor:55:armor:0.049:2.695
 R	paladin/retribution	25	6540	0	gear	1.372	armor:28:armor:0.049:1.372
@@ -16319,14 +16721,14 @@ R	paladin/retribution	25	15235	12752	mh	195.91	agi:3:agi:0.56:1.68,sta:6:sta:0.9
 R	paladin/retribution	25	15235	12753	mh	194.23	sta:6:sta:0.94:5.64,str:3:str:1:3,dps:28.57:dps:7:199.99,speed:-0.6:speed:24:-14.4
 R	paladin/retribution	25	15235	12754	mh	195.13	sp:3:sp:1.3:3.9,sta:6:sta:0.94:5.64,dps:28.57:dps:7:199.99,speed:-0.6:speed:24:-14.4
 R	paladin/retribution	25	15235	12759	mh	197.69	spHoly:11:spHoly:1.1:12.1,dps:28.57:dps:7:199.99,speed:-0.6:speed:24:-14.4
-R	paladin/retribution	25	15235	12906	mh	243.01000000000002	int:6:int:0.71:4.26,sta:4:sta:0.94:3.76,sp:38:sp:1.3:49.4,dps:28.57:dps:7:199.99,speed:-0.6:speed:24:-14.4
-R	paladin/retribution	25	15235	12908	mh	241.89000000000001	int:6:int:0.71:4.26,sp:38:sp:1.3:49.4,spi:4:spi:0.66:2.64,dps:28.57:dps:7:199.99,speed:-0.6:speed:24:-14.4
-R	paladin/retribution	25	15235	12910	mh	243.27	sp:38:sp:1.3:49.4,spi:4:spi:0.66:2.64,sta:6:sta:0.94:5.64,dps:28.57:dps:7:199.99,speed:-0.6:speed:24:-14.4
-R	paladin/retribution	25	15235	12912	mh	234.67	spDmg:24:spDmg:1.1:26.4,heal:71:heal:0.2:14.2,int:4:int:0.71:2.84,sta:6:sta:0.94:5.64,dps:28.57:dps:7:199.99,speed:-0.6:speed:24:-14.4
-R	paladin/retribution	25	15235	12913	mh	233.09	int:6:int:0.71:4.26,spDmg:24:spDmg:1.1:26.4,heal:71:heal:0.2:14.2,spi:4:spi:0.66:2.64,dps:28.57:dps:7:199.99,speed:-0.6:speed:24:-14.4
-R	paladin/retribution	25	15235	12916	mh	234.47	spDmg:24:spDmg:1.1:26.4,heal:71:heal:0.2:14.2,spi:4:spi:0.66:2.64,sta:6:sta:0.94:5.64,dps:28.57:dps:7:199.99,speed:-0.6:speed:24:-14.4
-R	paladin/retribution	25	15235	12917	mh	240.67	sp:38:sp:1.3:49.4,int:8:int:0.71:5.68,dps:28.57:dps:7:199.99,speed:-0.6:speed:24:-14.4
-R	paladin/retribution	25	15235	12920	mh	231.87	int:8:int:0.71:5.68,spDmg:24:spDmg:1.1:26.4,heal:71:heal:0.2:14.2,dps:28.57:dps:7:199.99,speed:-0.6:speed:24:-14.4
+R	paladin/retribution	25	15235	12906	mh	176.36999999999998	int:6:int:0.71:4.26,sta:4:sta:0.94:3.76,sp:38:sp:1.3:49.4,dps:19.05:dps:7:133.35,speed:-0.6:speed:24:-14.4
+R	paladin/retribution	25	15235	12908	mh	175.24999999999997	int:6:int:0.71:4.26,sp:38:sp:1.3:49.4,spi:4:spi:0.66:2.64,dps:19.05:dps:7:133.35,speed:-0.6:speed:24:-14.4
+R	paladin/retribution	25	15235	12910	mh	176.63	sp:38:sp:1.3:49.4,spi:4:spi:0.66:2.64,sta:6:sta:0.94:5.64,dps:19.05:dps:7:133.35,speed:-0.6:speed:24:-14.4
+R	paladin/retribution	25	15235	12912	mh	168.03	spDmg:24:spDmg:1.1:26.4,heal:71:heal:0.2:14.2,int:4:int:0.71:2.84,sta:6:sta:0.94:5.64,dps:19.05:dps:7:133.35,speed:-0.6:speed:24:-14.4
+R	paladin/retribution	25	15235	12913	mh	166.45	int:6:int:0.71:4.26,spDmg:24:spDmg:1.1:26.4,heal:71:heal:0.2:14.2,spi:4:spi:0.66:2.64,dps:19.05:dps:7:133.35,speed:-0.6:speed:24:-14.4
+R	paladin/retribution	25	15235	12916	mh	167.82999999999998	spDmg:24:spDmg:1.1:26.4,heal:71:heal:0.2:14.2,spi:4:spi:0.66:2.64,sta:6:sta:0.94:5.64,dps:19.05:dps:7:133.35,speed:-0.6:speed:24:-14.4
+R	paladin/retribution	25	15235	12917	mh	174.03	sp:38:sp:1.3:49.4,int:8:int:0.71:5.68,dps:19.05:dps:7:133.35,speed:-0.6:speed:24:-14.4
+R	paladin/retribution	25	15235	12920	mh	165.23	int:8:int:0.71:5.68,spDmg:24:spDmg:1.1:26.4,heal:71:heal:0.2:14.2,dps:19.05:dps:7:133.35,speed:-0.6:speed:24:-14.4
 R	paladin/retribution	25	15477	0	gear	4.949	armor:101:armor:0.049:4.949
 R	paladin/retribution	25	15477	12718	gear	6.599	int:1:int:0.71:0.71,sta:1:sta:0.94:0.94,armor:101:armor:0.049:4.949
 R	paladin/retribution	25	15477	12719	gear	6.5489999999999995	spi:1:spi:0.66:0.66,sta:1:sta:0.94:0.94,armor:101:armor:0.049:4.949
@@ -16375,6 +16777,9 @@ R	paladin/retribution	25	286609	0	oh	90.984	spi:6:spi:0.66:3.96,armor:1776:armor
 R	paladin/retribution	34	25	0	mh	-10.754999999999999	dps:1.05:dps:6.9:7.245,speed:-0.6:speed:30:-18
 R	paladin/retribution	34	1315	0	gear	16.95	sta:10:sta:0.87:8.7,spi:15:spi:0.55:8.25
 R	paladin/retribution	34	1808	0	gear	3.182	armor:74:armor:0.043:3.182
+R	paladin/retribution	34	1990	0	mh	182.49900000000002	dps:24.71:dps:6.9:170.499,speed:0.4:speed:30:12
+R	paladin/retribution	34	1990	12718	mh	199.23900000000003	int:9:int:0.99:8.91,sta:9:sta:0.87:7.83,dps:24.71:dps:6.9:170.499,speed:0.4:speed:30:12
+R	paladin/retribution	34	1990	12905	mh	192.202	int:11:int:0.99:10.89,sta:7:sta:0.87:6.09,sp:28:sp:1.3:36.4,dps:18.38:dps:6.9:126.822,speed:0.4:speed:30:12
 R	paladin/retribution	34	2614	0	gear	1.2469999999999999	armor:29:armor:0.043:1.247
 R	paladin/retribution	34	3158	0	gear	1.1179999999999999	armor:26:armor:0.043:1.118
 R	paladin/retribution	34	3570	0	mh	40.028	str:2:str:1:2,dps:8.12:dps:6.9:56.028,speed:-0.6:speed:30:-18
@@ -16403,8 +16808,8 @@ R	paladin/retribution	34	4570	12742	mh	80.61	sta:3:sta:0.87:2.61,dps:10:dps:6.9:
 R	paladin/retribution	34	4570	12743	mh	80.61	sta:3:sta:0.87:2.61,dps:10:dps:6.9:69,speed:0.3:speed:30:9
 R	paladin/retribution	34	4570	12744	mh	80.61	sta:3:sta:0.87:2.61,dps:10:dps:6.9:69,speed:0.3:speed:30:9
 R	paladin/retribution	34	4570	12759	mh	84.6	spHoly:6:spHoly:1.1:6.6,dps:10:dps:6.9:69,speed:0.3:speed:30:9
-R	paladin/retribution	34	4570	12918	mh	92.36	sp:8:sp:1.3:10.4,int:4:int:0.99:3.96,dps:10:dps:6.9:69,speed:0.3:speed:30:9
-R	paladin/retribution	34	4570	12919	mh	90.46000000000001	spDmg:5:spDmg:1.1:5.5,heal:15:heal:0.2:3,int:4:int:0.99:3.96,dps:10:dps:6.9:69,speed:0.3:speed:30:9
+R	paladin/retribution	34	4570	12918	mh	75.662	sp:8:sp:1.3:10.4,int:4:int:0.99:3.96,dps:7.58:dps:6.9:52.302,speed:0.3:speed:30:9
+R	paladin/retribution	34	4570	12919	mh	73.762	spDmg:5:spDmg:1.1:5.5,heal:15:heal:0.2:3,int:4:int:0.99:3.96,dps:7.58:dps:6.9:52.302,speed:0.3:speed:30:9
 R	paladin/retribution	34	5079	0	gear	0.0	
 R	paladin/retribution	34	6063	0	gear	2.3649999999999998	armor:55:armor:0.043:2.365
 R	paladin/retribution	34	6540	0	gear	1.204	armor:28:armor:0.043:1.204
@@ -16676,14 +17081,14 @@ R	paladin/retribution	34	15235	12752	mh	189.363	agi:3:agi:0.67:2.01,sta:6:sta:0.
 R	paladin/retribution	34	15235	12753	mh	187.353	sta:6:sta:0.87:5.22,str:3:str:1:3,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:30:-18
 R	paladin/retribution	34	15235	12754	mh	188.25300000000001	sp:3:sp:1.3:3.9,sta:6:sta:0.87:5.22,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:30:-18
 R	paladin/retribution	34	15235	12759	mh	191.233	spHoly:11:spHoly:1.1:12.1,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:30:-18
-R	paladin/retribution	34	15235	12906	mh	237.953	int:6:int:0.99:5.94,sta:4:sta:0.87:3.48,sp:38:sp:1.3:49.4,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:30:-18
-R	paladin/retribution	34	15235	12908	mh	236.673	int:6:int:0.99:5.94,sp:38:sp:1.3:49.4,spi:4:spi:0.55:2.2,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:30:-18
-R	paladin/retribution	34	15235	12910	mh	235.953	sp:38:sp:1.3:49.4,spi:4:spi:0.55:2.2,sta:6:sta:0.87:5.22,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:30:-18
-R	paladin/retribution	34	15235	12912	mh	228.913	spDmg:24:spDmg:1.1:26.4,heal:71:heal:0.2:14.2,int:4:int:0.99:3.96,sta:6:sta:0.87:5.22,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:30:-18
-R	paladin/retribution	34	15235	12913	mh	227.87300000000002	int:6:int:0.99:5.94,spDmg:24:spDmg:1.1:26.4,heal:71:heal:0.2:14.2,spi:4:spi:0.55:2.2,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:30:-18
-R	paladin/retribution	34	15235	12916	mh	227.15300000000002	spDmg:24:spDmg:1.1:26.4,heal:71:heal:0.2:14.2,spi:4:spi:0.55:2.2,sta:6:sta:0.87:5.22,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:30:-18
-R	paladin/retribution	34	15235	12917	mh	236.453	sp:38:sp:1.3:49.4,int:8:int:0.99:7.92,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:30:-18
-R	paladin/retribution	34	15235	12920	mh	227.65300000000002	int:8:int:0.99:7.92,spDmg:24:spDmg:1.1:26.4,heal:71:heal:0.2:14.2,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:30:-18
+R	paladin/retribution	34	15235	12906	mh	172.26500000000001	int:6:int:0.99:5.94,sta:4:sta:0.87:3.48,sp:38:sp:1.3:49.4,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:30:-18
+R	paladin/retribution	34	15235	12908	mh	170.985	int:6:int:0.99:5.94,sp:38:sp:1.3:49.4,spi:4:spi:0.55:2.2,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:30:-18
+R	paladin/retribution	34	15235	12910	mh	170.26500000000001	sp:38:sp:1.3:49.4,spi:4:spi:0.55:2.2,sta:6:sta:0.87:5.22,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:30:-18
+R	paladin/retribution	34	15235	12912	mh	163.22500000000002	spDmg:24:spDmg:1.1:26.4,heal:71:heal:0.2:14.2,int:4:int:0.99:3.96,sta:6:sta:0.87:5.22,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:30:-18
+R	paladin/retribution	34	15235	12913	mh	162.18500000000003	int:6:int:0.99:5.94,spDmg:24:spDmg:1.1:26.4,heal:71:heal:0.2:14.2,spi:4:spi:0.55:2.2,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:30:-18
+R	paladin/retribution	34	15235	12916	mh	161.46500000000003	spDmg:24:spDmg:1.1:26.4,heal:71:heal:0.2:14.2,spi:4:spi:0.55:2.2,sta:6:sta:0.87:5.22,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:30:-18
+R	paladin/retribution	34	15235	12917	mh	170.76500000000001	sp:38:sp:1.3:49.4,int:8:int:0.99:7.92,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:30:-18
+R	paladin/retribution	34	15235	12920	mh	161.96500000000003	int:8:int:0.99:7.92,spDmg:24:spDmg:1.1:26.4,heal:71:heal:0.2:14.2,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:30:-18
 R	paladin/retribution	34	15477	0	gear	4.343	armor:101:armor:0.043:4.343
 R	paladin/retribution	34	15477	12718	gear	6.202999999999999	int:1:int:0.99:0.99,sta:1:sta:0.87:0.87,armor:101:armor:0.043:4.343
 R	paladin/retribution	34	15477	12719	gear	5.763	spi:1:spi:0.55:0.55,sta:1:sta:0.87:0.87,armor:101:armor:0.043:4.343
@@ -16732,6 +17137,9 @@ R	paladin/retribution	34	286609	0	oh	79.66799999999999	spi:6:spi:0.55:3.3,armor:
 R	paladin/retribution	45	25	0	mh	-16.08	dps:1.05:dps:6.4:6.72,speed:-0.6:speed:38:-22.8
 R	paladin/retribution	45	1315	0	gear	22.4	sta:10:sta:1.4:14,spi:15:spi:0.56:8.4
 R	paladin/retribution	45	1808	0	gear	3.6260000000000003	armor:74:armor:0.049:3.626
+R	paladin/retribution	45	1990	0	mh	180.94400000000002	dps:24.71:dps:6.4:158.144,speed:0.6:speed:38:22.8
+R	paladin/retribution	45	1990	12718	mh	214.24400000000003	int:9:int:2.3:20.7,sta:9:sta:1.4:12.6,dps:24.71:dps:6.4:158.144,speed:0.6:speed:38:22.8
+R	paladin/retribution	45	1990	12905	mh	211.93200000000002	int:11:int:2.3:25.3,sta:7:sta:1.4:9.8,sp:28:sp:1.3:36.4,dps:18.38:dps:6.4:117.632,speed:0.6:speed:38:22.8
 R	paladin/retribution	45	2614	0	gear	1.421	armor:29:armor:0.049:1.421
 R	paladin/retribution	45	3158	0	gear	1.274	armor:26:armor:0.049:1.274
 R	paladin/retribution	45	3570	0	mh	38.768	str:2:str:1:2,dps:8.12:dps:6.4:51.968,speed:-0.4:speed:38:-15.2
@@ -16760,8 +17168,8 @@ R	paladin/retribution	45	4570	12742	mh	87.2	sta:3:sta:1.4:4.2,dps:10:dps:6.4:64,
 R	paladin/retribution	45	4570	12743	mh	87.2	sta:3:sta:1.4:4.2,dps:10:dps:6.4:64,speed:0.5:speed:38:19
 R	paladin/retribution	45	4570	12744	mh	87.2	sta:3:sta:1.4:4.2,dps:10:dps:6.4:64,speed:0.5:speed:38:19
 R	paladin/retribution	45	4570	12759	mh	90.2	spHoly:6:spHoly:1.2:7.2,dps:10:dps:6.4:64,speed:0.5:speed:38:19
-R	paladin/retribution	45	4570	12918	mh	102.6	sp:8:sp:1.3:10.4,int:4:int:2.3:9.2,dps:10:dps:6.4:64,speed:0.5:speed:38:19
-R	paladin/retribution	45	4570	12919	mh	99.7	spDmg:5:spDmg:1.2:6,heal:15:heal:0.1:1.5,int:4:int:2.3:9.2,dps:10:dps:6.4:64,speed:0.5:speed:38:19
+R	paladin/retribution	45	4570	12918	mh	87.112	sp:8:sp:1.3:10.4,int:4:int:2.3:9.2,dps:7.58:dps:6.4:48.512,speed:0.5:speed:38:19
+R	paladin/retribution	45	4570	12919	mh	84.212	spDmg:5:spDmg:1.2:6,heal:15:heal:0.1:1.5,int:4:int:2.3:9.2,dps:7.58:dps:6.4:48.512,speed:0.5:speed:38:19
 R	paladin/retribution	45	5079	0	gear	0.0	
 R	paladin/retribution	45	6063	0	gear	2.6950000000000003	armor:55:armor:0.049:2.695
 R	paladin/retribution	45	6540	0	gear	1.372	armor:28:armor:0.049:1.372
@@ -17033,14 +17441,14 @@ R	paladin/retribution	45	15235	12752	mh	173.878	agi:3:agi:0.81:2.43,sta:6:sta:1.
 R	paladin/retribution	45	15235	12753	mh	171.448	sta:6:sta:1.4:8.4,str:3:str:1:3,dps:28.57:dps:6.4:182.848,speed:-0.6:speed:38:-22.8
 R	paladin/retribution	45	15235	12754	mh	172.348	sp:3:sp:1.3:3.9,sta:6:sta:1.4:8.4,dps:28.57:dps:6.4:182.848,speed:-0.6:speed:38:-22.8
 R	paladin/retribution	45	15235	12759	mh	173.248	spHoly:11:spHoly:1.2:13.2,dps:28.57:dps:6.4:182.848,speed:-0.6:speed:38:-22.8
-R	paladin/retribution	45	15235	12906	mh	228.848	int:6:int:2.3:13.8,sta:4:sta:1.4:5.6,sp:38:sp:1.3:49.4,dps:28.57:dps:6.4:182.848,speed:-0.6:speed:38:-22.8
-R	paladin/retribution	45	15235	12908	mh	225.488	int:6:int:2.3:13.8,sp:38:sp:1.3:49.4,spi:4:spi:0.56:2.24,dps:28.57:dps:6.4:182.848,speed:-0.6:speed:38:-22.8
-R	paladin/retribution	45	15235	12910	mh	220.088	sp:38:sp:1.3:49.4,spi:4:spi:0.56:2.24,sta:6:sta:1.4:8.4,dps:28.57:dps:6.4:182.848,speed:-0.6:speed:38:-22.8
-R	paladin/retribution	45	15235	12912	mh	213.548	spDmg:24:spDmg:1.2:28.8,heal:71:heal:0.1:7.1,int:4:int:2.3:9.2,sta:6:sta:1.4:8.4,dps:28.57:dps:6.4:182.848,speed:-0.6:speed:38:-22.8
-R	paladin/retribution	45	15235	12913	mh	211.988	int:6:int:2.3:13.8,spDmg:24:spDmg:1.2:28.8,heal:71:heal:0.1:7.1,spi:4:spi:0.56:2.24,dps:28.57:dps:6.4:182.848,speed:-0.6:speed:38:-22.8
-R	paladin/retribution	45	15235	12916	mh	206.588	spDmg:24:spDmg:1.2:28.8,heal:71:heal:0.1:7.1,spi:4:spi:0.56:2.24,sta:6:sta:1.4:8.4,dps:28.57:dps:6.4:182.848,speed:-0.6:speed:38:-22.8
-R	paladin/retribution	45	15235	12917	mh	227.848	sp:38:sp:1.3:49.4,int:8:int:2.3:18.4,dps:28.57:dps:6.4:182.848,speed:-0.6:speed:38:-22.8
-R	paladin/retribution	45	15235	12920	mh	214.348	int:8:int:2.3:18.4,spDmg:24:spDmg:1.2:28.8,heal:71:heal:0.1:7.1,dps:28.57:dps:6.4:182.848,speed:-0.6:speed:38:-22.8
+R	paladin/retribution	45	15235	12906	mh	167.92000000000002	int:6:int:2.3:13.8,sta:4:sta:1.4:5.6,sp:38:sp:1.3:49.4,dps:19.05:dps:6.4:121.92,speed:-0.6:speed:38:-22.8
+R	paladin/retribution	45	15235	12908	mh	164.56	int:6:int:2.3:13.8,sp:38:sp:1.3:49.4,spi:4:spi:0.56:2.24,dps:19.05:dps:6.4:121.92,speed:-0.6:speed:38:-22.8
+R	paladin/retribution	45	15235	12910	mh	159.16	sp:38:sp:1.3:49.4,spi:4:spi:0.56:2.24,sta:6:sta:1.4:8.4,dps:19.05:dps:6.4:121.92,speed:-0.6:speed:38:-22.8
+R	paladin/retribution	45	15235	12912	mh	152.62	spDmg:24:spDmg:1.2:28.8,heal:71:heal:0.1:7.1,int:4:int:2.3:9.2,sta:6:sta:1.4:8.4,dps:19.05:dps:6.4:121.92,speed:-0.6:speed:38:-22.8
+R	paladin/retribution	45	15235	12913	mh	151.06	int:6:int:2.3:13.8,spDmg:24:spDmg:1.2:28.8,heal:71:heal:0.1:7.1,spi:4:spi:0.56:2.24,dps:19.05:dps:6.4:121.92,speed:-0.6:speed:38:-22.8
+R	paladin/retribution	45	15235	12916	mh	145.66	spDmg:24:spDmg:1.2:28.8,heal:71:heal:0.1:7.1,spi:4:spi:0.56:2.24,sta:6:sta:1.4:8.4,dps:19.05:dps:6.4:121.92,speed:-0.6:speed:38:-22.8
+R	paladin/retribution	45	15235	12917	mh	166.92000000000002	sp:38:sp:1.3:49.4,int:8:int:2.3:18.4,dps:19.05:dps:6.4:121.92,speed:-0.6:speed:38:-22.8
+R	paladin/retribution	45	15235	12920	mh	153.42000000000002	int:8:int:2.3:18.4,spDmg:24:spDmg:1.2:28.8,heal:71:heal:0.1:7.1,dps:19.05:dps:6.4:121.92,speed:-0.6:speed:38:-22.8
 R	paladin/retribution	45	15477	0	gear	4.949	armor:101:armor:0.049:4.949
 R	paladin/retribution	45	15477	12718	gear	8.649	int:1:int:2.3:2.3,sta:1:sta:1.4:1.4,armor:101:armor:0.049:4.949
 R	paladin/retribution	45	15477	12719	gear	6.909	spi:1:spi:0.56:0.56,sta:1:sta:1.4:1.4,armor:101:armor:0.049:4.949
@@ -17089,6 +17497,9 @@ R	paladin/retribution	45	286609	0	oh	90.384	spi:6:spi:0.56:3.36,armor:1776:armor
 R	paladin/retribution	55	25	0	mh	-29.880000000000003	dps:1.05:dps:6.4:6.72,speed:-0.6:speed:61:-36.6
 R	paladin/retribution	55	1315	0	gear	17.0	sta:10:sta:1.1:11,spi:15:spi:0.4:6
 R	paladin/retribution	55	1808	0	gear	3.182	armor:74:armor:0.043:3.182
+R	paladin/retribution	55	1990	0	mh	164.244	dps:24.71:dps:6.4:158.144,speed:0.1:speed:61:6.1
+R	paladin/retribution	55	1990	12718	mh	193.044	int:9:int:2.1:18.9,sta:9:sta:1.1:9.9,dps:24.71:dps:6.4:158.144,speed:0.1:speed:61:6.1
+R	paladin/retribution	55	1990	12905	mh	188.132	int:11:int:2.1:23.1,sta:7:sta:1.1:7.7,sp:28:sp:1.2:33.6,dps:18.38:dps:6.4:117.632,speed:0.1:speed:61:6.1
 R	paladin/retribution	55	2614	0	gear	1.2469999999999999	armor:29:armor:0.043:1.247
 R	paladin/retribution	55	3158	0	gear	1.1179999999999999	armor:26:armor:0.043:1.118
 R	paladin/retribution	55	3570	0	mh	17.367999999999995	str:2:str:1:2,dps:8.12:dps:6.4:51.968,speed:-0.6:speed:61:-36.6
@@ -17117,8 +17528,8 @@ R	paladin/retribution	55	4570	12742	mh	67.3	sta:3:sta:1.1:3.3,dps:10:dps:6.4:64
 R	paladin/retribution	55	4570	12743	mh	67.3	sta:3:sta:1.1:3.3,dps:10:dps:6.4:64
 R	paladin/retribution	55	4570	12744	mh	67.3	sta:3:sta:1.1:3.3,dps:10:dps:6.4:64
 R	paladin/retribution	55	4570	12759	mh	70.6	spHoly:6:spHoly:1.1:6.6,dps:10:dps:6.4:64
-R	paladin/retribution	55	4570	12918	mh	82.0	sp:8:sp:1.2:9.6,int:4:int:2.1:8.4,dps:10:dps:6.4:64
-R	paladin/retribution	55	4570	12919	mh	79.4	spDmg:5:spDmg:1.1:5.5,heal:15:heal:0.1:1.5,int:4:int:2.1:8.4,dps:10:dps:6.4:64
+R	paladin/retribution	55	4570	12918	mh	66.512	sp:8:sp:1.2:9.6,int:4:int:2.1:8.4,dps:7.58:dps:6.4:48.512
+R	paladin/retribution	55	4570	12919	mh	63.912	spDmg:5:spDmg:1.1:5.5,heal:15:heal:0.1:1.5,int:4:int:2.1:8.4,dps:7.58:dps:6.4:48.512
 R	paladin/retribution	55	5079	0	gear	0.0	
 R	paladin/retribution	55	6063	0	gear	2.3649999999999998	armor:55:armor:0.043:2.365
 R	paladin/retribution	55	6540	0	gear	1.204	armor:28:armor:0.043:1.204
@@ -17390,14 +17801,14 @@ R	paladin/retribution	55	15235	12752	mh	158.068	agi:3:agi:0.74:2.22,sta:6:sta:1.
 R	paladin/retribution	55	15235	12753	mh	155.848	sta:6:sta:1.1:6.6,str:3:str:1:3,dps:28.57:dps:6.4:182.848,speed:-0.6:speed:61:-36.6
 R	paladin/retribution	55	15235	12754	mh	156.448	sp:3:sp:1.2:3.6,sta:6:sta:1.1:6.6,dps:28.57:dps:6.4:182.848,speed:-0.6:speed:61:-36.6
 R	paladin/retribution	55	15235	12759	mh	158.348	spHoly:11:spHoly:1.1:12.1,dps:28.57:dps:6.4:182.848,speed:-0.6:speed:61:-36.6
-R	paladin/retribution	55	15235	12906	mh	208.848	int:6:int:2.1:12.6,sta:4:sta:1.1:4.4,sp:38:sp:1.2:45.6,dps:28.57:dps:6.4:182.848,speed:-0.6:speed:61:-36.6
-R	paladin/retribution	55	15235	12908	mh	206.04800000000003	int:6:int:2.1:12.6,sp:38:sp:1.2:45.6,spi:4:spi:0.4:1.6,dps:28.57:dps:6.4:182.848,speed:-0.6:speed:61:-36.6
-R	paladin/retribution	55	15235	12910	mh	200.04800000000003	sp:38:sp:1.2:45.6,spi:4:spi:0.4:1.6,sta:6:sta:1.1:6.6,dps:28.57:dps:6.4:182.848,speed:-0.6:speed:61:-36.6
-R	paladin/retribution	55	15235	12912	mh	194.74800000000002	spDmg:24:spDmg:1.1:26.4,heal:71:heal:0.1:7.1,int:4:int:2.1:8.4,sta:6:sta:1.1:6.6,dps:28.57:dps:6.4:182.848,speed:-0.6:speed:61:-36.6
-R	paladin/retribution	55	15235	12913	mh	193.948	int:6:int:2.1:12.6,spDmg:24:spDmg:1.1:26.4,heal:71:heal:0.1:7.1,spi:4:spi:0.4:1.6,dps:28.57:dps:6.4:182.848,speed:-0.6:speed:61:-36.6
-R	paladin/retribution	55	15235	12916	mh	187.948	spDmg:24:spDmg:1.1:26.4,heal:71:heal:0.1:7.1,spi:4:spi:0.4:1.6,sta:6:sta:1.1:6.6,dps:28.57:dps:6.4:182.848,speed:-0.6:speed:61:-36.6
-R	paladin/retribution	55	15235	12917	mh	208.64800000000002	sp:38:sp:1.2:45.6,int:8:int:2.1:16.8,dps:28.57:dps:6.4:182.848,speed:-0.6:speed:61:-36.6
-R	paladin/retribution	55	15235	12920	mh	196.54800000000003	int:8:int:2.1:16.8,spDmg:24:spDmg:1.1:26.4,heal:71:heal:0.1:7.1,dps:28.57:dps:6.4:182.848,speed:-0.6:speed:61:-36.6
+R	paladin/retribution	55	15235	12906	mh	147.92000000000002	int:6:int:2.1:12.6,sta:4:sta:1.1:4.4,sp:38:sp:1.2:45.6,dps:19.05:dps:6.4:121.92,speed:-0.6:speed:61:-36.6
+R	paladin/retribution	55	15235	12908	mh	145.12000000000003	int:6:int:2.1:12.6,sp:38:sp:1.2:45.6,spi:4:spi:0.4:1.6,dps:19.05:dps:6.4:121.92,speed:-0.6:speed:61:-36.6
+R	paladin/retribution	55	15235	12910	mh	139.12000000000003	sp:38:sp:1.2:45.6,spi:4:spi:0.4:1.6,sta:6:sta:1.1:6.6,dps:19.05:dps:6.4:121.92,speed:-0.6:speed:61:-36.6
+R	paladin/retribution	55	15235	12912	mh	133.82000000000002	spDmg:24:spDmg:1.1:26.4,heal:71:heal:0.1:7.1,int:4:int:2.1:8.4,sta:6:sta:1.1:6.6,dps:19.05:dps:6.4:121.92,speed:-0.6:speed:61:-36.6
+R	paladin/retribution	55	15235	12913	mh	133.02	int:6:int:2.1:12.6,spDmg:24:spDmg:1.1:26.4,heal:71:heal:0.1:7.1,spi:4:spi:0.4:1.6,dps:19.05:dps:6.4:121.92,speed:-0.6:speed:61:-36.6
+R	paladin/retribution	55	15235	12916	mh	127.02000000000001	spDmg:24:spDmg:1.1:26.4,heal:71:heal:0.1:7.1,spi:4:spi:0.4:1.6,sta:6:sta:1.1:6.6,dps:19.05:dps:6.4:121.92,speed:-0.6:speed:61:-36.6
+R	paladin/retribution	55	15235	12917	mh	147.72000000000003	sp:38:sp:1.2:45.6,int:8:int:2.1:16.8,dps:19.05:dps:6.4:121.92,speed:-0.6:speed:61:-36.6
+R	paladin/retribution	55	15235	12920	mh	135.62000000000003	int:8:int:2.1:16.8,spDmg:24:spDmg:1.1:26.4,heal:71:heal:0.1:7.1,dps:19.05:dps:6.4:121.92,speed:-0.6:speed:61:-36.6
 R	paladin/retribution	55	15477	0	gear	4.343	armor:101:armor:0.043:4.343
 R	paladin/retribution	55	15477	12718	gear	7.543	int:1:int:2.1:2.1,sta:1:sta:1.1:1.1,armor:101:armor:0.043:4.343
 R	paladin/retribution	55	15477	12719	gear	5.843	spi:1:spi:0.4:0.4,sta:1:sta:1.1:1.1,armor:101:armor:0.043:4.343
@@ -17446,6 +17857,9 @@ R	paladin/retribution	55	286609	0	oh	78.768	spi:6:spi:0.4:2.4,armor:1776:armor:0
 R	paladin/retribution	60	25	0	mh	-35.595	dps:1.05:dps:6.1:6.405,speed:-0.6:speed:70:-42
 R	paladin/retribution	60	1315	0	gear	14.599999999999998	sta:10:sta:0.83:8.3,spi:15:spi:0.42:6.3
 R	paladin/retribution	60	1808	0	gear	1.998	armor:74:armor:0.027:1.998
+R	paladin/retribution	60	1990	0	mh	192.731	dps:24.71:dps:6.1:150.731,speed:0.6:speed:70:42
+R	paladin/retribution	60	1990	12718	mh	217.301	int:9:int:1.9:17.1,sta:9:sta:0.83:7.47,dps:24.71:dps:6.1:150.731,speed:0.6:speed:70:42
+R	paladin/retribution	60	1990	12905	mh	214.428	int:11:int:1.9:20.9,sta:7:sta:0.83:5.81,sp:28:sp:1.2:33.6,dps:18.38:dps:6.1:112.118,speed:0.6:speed:70:42
 R	paladin/retribution	60	2614	0	gear	0.783	armor:29:armor:0.027:0.783
 R	paladin/retribution	60	3158	0	gear	0.702	armor:26:armor:0.027:0.702
 R	paladin/retribution	60	3570	0	mh	30.53199999999997	str:2:str:1:2,dps:8.12:dps:6.1:49.532,speed:-0.3:speed:70:-21
@@ -17474,8 +17888,8 @@ R	paladin/retribution	60	4570	12742	mh	105.48999999999998	sta:3:sta:0.83:2.49,dp
 R	paladin/retribution	60	4570	12743	mh	105.48999999999998	sta:3:sta:0.83:2.49,dps:10:dps:6.1:61,speed:0.6:speed:70:42
 R	paladin/retribution	60	4570	12744	mh	105.48999999999998	sta:3:sta:0.83:2.49,dps:10:dps:6.1:61,speed:0.6:speed:70:42
 R	paladin/retribution	60	4570	12759	mh	109.59999999999997	spHoly:6:spHoly:1.1:6.6,dps:10:dps:6.1:61,speed:0.6:speed:70:42
-R	paladin/retribution	60	4570	12918	mh	120.19999999999997	sp:8:sp:1.2:9.6,int:4:int:1.9:7.6,dps:10:dps:6.1:61,speed:0.6:speed:70:42
-R	paladin/retribution	60	4570	12919	mh	117.59999999999997	spDmg:5:spDmg:1.1:5.5,heal:15:heal:0.1:1.5,int:4:int:1.9:7.6,dps:10:dps:6.1:61,speed:0.6:speed:70:42
+R	paladin/retribution	60	4570	12918	mh	105.43799999999997	sp:8:sp:1.2:9.6,int:4:int:1.9:7.6,dps:7.58:dps:6.1:46.238,speed:0.6:speed:70:42
+R	paladin/retribution	60	4570	12919	mh	102.83799999999997	spDmg:5:spDmg:1.1:5.5,heal:15:heal:0.1:1.5,int:4:int:1.9:7.6,dps:7.58:dps:6.1:46.238,speed:0.6:speed:70:42
 R	paladin/retribution	60	5079	0	gear	0.0	
 R	paladin/retribution	60	6063	0	gear	1.4849999999999999	armor:55:armor:0.027:1.485
 R	paladin/retribution	60	6540	0	gear	0.756	armor:28:armor:0.027:0.756
@@ -17747,14 +18161,14 @@ R	paladin/retribution	60	15235	12752	mh	142.47699999999998	agi:3:agi:0.74:2.22,s
 R	paladin/retribution	60	15235	12753	mh	140.25699999999998	sta:6:sta:0.83:4.98,str:3:str:1:3,dps:28.57:dps:6.1:174.277,speed:-0.6:speed:70:-42
 R	paladin/retribution	60	15235	12754	mh	140.85699999999997	sp:3:sp:1.2:3.6,sta:6:sta:0.83:4.98,dps:28.57:dps:6.1:174.277,speed:-0.6:speed:70:-42
 R	paladin/retribution	60	15235	12759	mh	144.37699999999998	spHoly:11:spHoly:1.1:12.1,dps:28.57:dps:6.1:174.277,speed:-0.6:speed:70:-42
-R	paladin/retribution	60	15235	12906	mh	192.59699999999998	int:6:int:1.9:11.4,sta:4:sta:0.83:3.32,sp:38:sp:1.2:45.6,dps:28.57:dps:6.1:174.277,speed:-0.6:speed:70:-42
-R	paladin/retribution	60	15235	12908	mh	190.957	int:6:int:1.9:11.4,sp:38:sp:1.2:45.6,spi:4:spi:0.42:1.68,dps:28.57:dps:6.1:174.277,speed:-0.6:speed:70:-42
-R	paladin/retribution	60	15235	12910	mh	184.53699999999998	sp:38:sp:1.2:45.6,spi:4:spi:0.42:1.68,sta:6:sta:0.83:4.98,dps:28.57:dps:6.1:174.277,speed:-0.6:speed:70:-42
-R	paladin/retribution	60	15235	12912	mh	178.35699999999997	spDmg:24:spDmg:1.1:26.4,heal:71:heal:0.1:7.1,int:4:int:1.9:7.6,sta:6:sta:0.83:4.98,dps:28.57:dps:6.1:174.277,speed:-0.6:speed:70:-42
-R	paladin/retribution	60	15235	12913	mh	178.85699999999997	int:6:int:1.9:11.4,spDmg:24:spDmg:1.1:26.4,heal:71:heal:0.1:7.1,spi:4:spi:0.42:1.68,dps:28.57:dps:6.1:174.277,speed:-0.6:speed:70:-42
-R	paladin/retribution	60	15235	12916	mh	172.43699999999998	spDmg:24:spDmg:1.1:26.4,heal:71:heal:0.1:7.1,spi:4:spi:0.42:1.68,sta:6:sta:0.83:4.98,dps:28.57:dps:6.1:174.277,speed:-0.6:speed:70:-42
-R	paladin/retribution	60	15235	12917	mh	193.077	sp:38:sp:1.2:45.6,int:8:int:1.9:15.2,dps:28.57:dps:6.1:174.277,speed:-0.6:speed:70:-42
-R	paladin/retribution	60	15235	12920	mh	180.97699999999998	int:8:int:1.9:15.2,spDmg:24:spDmg:1.1:26.4,heal:71:heal:0.1:7.1,dps:28.57:dps:6.1:174.277,speed:-0.6:speed:70:-42
+R	paladin/retribution	60	15235	12906	mh	134.525	int:6:int:1.9:11.4,sta:4:sta:0.83:3.32,sp:38:sp:1.2:45.6,dps:19.05:dps:6.1:116.205,speed:-0.6:speed:70:-42
+R	paladin/retribution	60	15235	12908	mh	132.885	int:6:int:1.9:11.4,sp:38:sp:1.2:45.6,spi:4:spi:0.42:1.68,dps:19.05:dps:6.1:116.205,speed:-0.6:speed:70:-42
+R	paladin/retribution	60	15235	12910	mh	126.465	sp:38:sp:1.2:45.6,spi:4:spi:0.42:1.68,sta:6:sta:0.83:4.98,dps:19.05:dps:6.1:116.205,speed:-0.6:speed:70:-42
+R	paladin/retribution	60	15235	12912	mh	120.285	spDmg:24:spDmg:1.1:26.4,heal:71:heal:0.1:7.1,int:4:int:1.9:7.6,sta:6:sta:0.83:4.98,dps:19.05:dps:6.1:116.205,speed:-0.6:speed:70:-42
+R	paladin/retribution	60	15235	12913	mh	120.785	int:6:int:1.9:11.4,spDmg:24:spDmg:1.1:26.4,heal:71:heal:0.1:7.1,spi:4:spi:0.42:1.68,dps:19.05:dps:6.1:116.205,speed:-0.6:speed:70:-42
+R	paladin/retribution	60	15235	12916	mh	114.36500000000001	spDmg:24:spDmg:1.1:26.4,heal:71:heal:0.1:7.1,spi:4:spi:0.42:1.68,sta:6:sta:0.83:4.98,dps:19.05:dps:6.1:116.205,speed:-0.6:speed:70:-42
+R	paladin/retribution	60	15235	12917	mh	135.005	sp:38:sp:1.2:45.6,int:8:int:1.9:15.2,dps:19.05:dps:6.1:116.205,speed:-0.6:speed:70:-42
+R	paladin/retribution	60	15235	12920	mh	122.905	int:8:int:1.9:15.2,spDmg:24:spDmg:1.1:26.4,heal:71:heal:0.1:7.1,dps:19.05:dps:6.1:116.205,speed:-0.6:speed:70:-42
 R	paladin/retribution	60	15477	0	gear	2.727	armor:101:armor:0.027:2.727
 R	paladin/retribution	60	15477	12718	gear	5.457	int:1:int:1.9:1.9,sta:1:sta:0.83:0.83,armor:101:armor:0.027:2.727
 R	paladin/retribution	60	15477	12719	gear	3.977	spi:1:spi:0.42:0.42,sta:1:sta:0.83:0.83,armor:101:armor:0.027:2.727
@@ -17803,6 +18217,9 @@ R	paladin/retribution	60	286609	0	oh	50.472	spi:6:spi:0.42:2.52,armor:1776:armor
 R	paladin/protection	12	25	0	mh	10.555	dps:1.05:dps:6.7:7.035,speed:-0.4:speed:-8.8:3.52
 R	paladin/protection	12	1315	0	gear	15.95	sta:10:sta:0.83:8.3,spi:15:spi:0.51:7.65
 R	paladin/protection	12	1808	0	gear	2.886	armor:74:armor:0.039:2.886
+R	paladin/protection	12	1990	0	mh	160.27700000000002	dps:24.71:dps:6.7:165.557,speed:0.6:speed:-8.8:-5.28
+R	paladin/protection	12	1990	12718	mh	170.80700000000002	int:9:int:0.34:3.06,sta:9:sta:0.83:7.47,dps:24.71:dps:6.7:165.557,speed:0.6:speed:-8.8:-5.28
+R	paladin/protection	12	1990	12905	mh	177.816	int:11:int:0.34:3.74,sta:7:sta:0.83:5.81,sp:28:sp:1.8:50.4,dps:18.38:dps:6.7:123.146,speed:0.6:speed:-8.8:-5.28
 R	paladin/protection	12	2614	0	gear	1.131	armor:29:armor:0.039:1.131
 R	paladin/protection	12	3158	0	gear	1.014	armor:26:armor:0.039:1.014
 R	paladin/protection	12	3570	0	mh	55.523999999999994	str:2:str:1:2,dps:8.12:dps:6.7:54.404,speed:0.1:speed:-8.8:-0.88
@@ -17831,8 +18248,8 @@ R	paladin/protection	12	4570	12742	mh	64.21	sta:3:sta:0.83:2.49,dps:10:dps:6.7:6
 R	paladin/protection	12	4570	12743	mh	64.21	sta:3:sta:0.83:2.49,dps:10:dps:6.7:67,speed:0.6:speed:-8.8:-5.28
 R	paladin/protection	12	4570	12744	mh	64.21	sta:3:sta:0.83:2.49,dps:10:dps:6.7:67,speed:0.6:speed:-8.8:-5.28
 R	paladin/protection	12	4570	12759	mh	70.12	spHoly:6:spHoly:1.4:8.4,dps:10:dps:6.7:67,speed:0.6:speed:-8.8:-5.28
-R	paladin/protection	12	4570	12918	mh	77.48	sp:8:sp:1.8:14.4,int:4:int:0.34:1.36,dps:10:dps:6.7:67,speed:0.6:speed:-8.8:-5.28
-R	paladin/protection	12	4570	12919	mh	76.08	spDmg:5:spDmg:1.4:7,heal:15:heal:0.4:6,int:4:int:0.34:1.36,dps:10:dps:6.7:67,speed:0.6:speed:-8.8:-5.28
+R	paladin/protection	12	4570	12918	mh	61.266000000000005	sp:8:sp:1.8:14.4,int:4:int:0.34:1.36,dps:7.58:dps:6.7:50.786,speed:0.6:speed:-8.8:-5.28
+R	paladin/protection	12	4570	12919	mh	59.866	spDmg:5:spDmg:1.4:7,heal:15:heal:0.4:6,int:4:int:0.34:1.36,dps:7.58:dps:6.7:50.786,speed:0.6:speed:-8.8:-5.28
 R	paladin/protection	12	5079	0	gear	0.0	
 R	paladin/protection	12	6063	0	gear	2.145	armor:55:armor:0.039:2.145
 R	paladin/protection	12	6540	0	gear	1.092	armor:28:armor:0.039:1.092
@@ -18104,14 +18521,14 @@ R	paladin/protection	12	15235	12752	mh	202.659	agi:3:agi:0.5:1.5,sta:6:sta:0.83:
 R	paladin/protection	12	15235	12753	mh	201.579	defense:2:defense:0.21:0.42,sta:6:sta:0.83:4.98,str:3:str:1:3,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
 R	paladin/protection	12	15235	12754	mh	203.979	defense:2:defense:0.21:0.42,sp:3:sp:1.8:5.4,sta:6:sta:0.83:4.98,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
 R	paladin/protection	12	15235	12759	mh	208.579	spHoly:11:spHoly:1.4:15.4,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
-R	paladin/protection	12	15235	12906	mh	266.939	int:6:int:0.34:2.04,sta:4:sta:0.83:3.32,sp:38:sp:1.8:68.4,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
-R	paladin/protection	12	15235	12908	mh	265.659	int:6:int:0.34:2.04,sp:38:sp:1.8:68.4,spi:4:spi:0.51:2.04,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
-R	paladin/protection	12	15235	12910	mh	268.59900000000005	sp:38:sp:1.8:68.4,spi:4:spi:0.51:2.04,sta:6:sta:0.83:4.98,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
-R	paladin/protection	12	15235	12912	mh	261.519	spDmg:24:spDmg:1.4:33.6,heal:71:heal:0.4:28.4,int:4:int:0.34:1.36,sta:6:sta:0.83:4.98,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
-R	paladin/protection	12	15235	12913	mh	259.259	int:6:int:0.34:2.04,spDmg:24:spDmg:1.4:33.6,heal:71:heal:0.4:28.4,spi:4:spi:0.51:2.04,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
-R	paladin/protection	12	15235	12916	mh	262.199	spDmg:24:spDmg:1.4:33.6,heal:71:heal:0.4:28.4,spi:4:spi:0.51:2.04,sta:6:sta:0.83:4.98,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
-R	paladin/protection	12	15235	12917	mh	264.299	sp:38:sp:1.8:68.4,int:8:int:0.34:2.72,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
-R	paladin/protection	12	15235	12920	mh	257.899	int:8:int:0.34:2.72,spDmg:24:spDmg:1.4:33.6,heal:71:heal:0.4:28.4,dps:28.57:dps:6.7:191.419,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12906	mh	203.155	int:6:int:0.34:2.04,sta:4:sta:0.83:3.32,sp:38:sp:1.8:68.4,dps:19.05:dps:6.7:127.635,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12908	mh	201.875	int:6:int:0.34:2.04,sp:38:sp:1.8:68.4,spi:4:spi:0.51:2.04,dps:19.05:dps:6.7:127.635,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12910	mh	204.815	sp:38:sp:1.8:68.4,spi:4:spi:0.51:2.04,sta:6:sta:0.83:4.98,dps:19.05:dps:6.7:127.635,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12912	mh	197.735	spDmg:24:spDmg:1.4:33.6,heal:71:heal:0.4:28.4,int:4:int:0.34:1.36,sta:6:sta:0.83:4.98,dps:19.05:dps:6.7:127.635,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12913	mh	195.475	int:6:int:0.34:2.04,spDmg:24:spDmg:1.4:33.6,heal:71:heal:0.4:28.4,spi:4:spi:0.51:2.04,dps:19.05:dps:6.7:127.635,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12916	mh	198.41500000000002	spDmg:24:spDmg:1.4:33.6,heal:71:heal:0.4:28.4,spi:4:spi:0.51:2.04,sta:6:sta:0.83:4.98,dps:19.05:dps:6.7:127.635,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12917	mh	200.515	sp:38:sp:1.8:68.4,int:8:int:0.34:2.72,dps:19.05:dps:6.7:127.635,speed:-0.2:speed:-8.8:1.76
+R	paladin/protection	12	15235	12920	mh	194.115	int:8:int:0.34:2.72,spDmg:24:spDmg:1.4:33.6,heal:71:heal:0.4:28.4,dps:19.05:dps:6.7:127.635,speed:-0.2:speed:-8.8:1.76
 R	paladin/protection	12	15477	0	gear	3.939	armor:101:armor:0.039:3.939
 R	paladin/protection	12	15477	12718	gear	5.109	int:1:int:0.34:0.34,sta:1:sta:0.83:0.83,armor:101:armor:0.039:3.939
 R	paladin/protection	12	15477	12719	gear	5.279	spi:1:spi:0.51:0.51,sta:1:sta:0.83:0.83,armor:101:armor:0.039:3.939
@@ -18160,6 +18577,9 @@ R	paladin/protection	12	286609	0	oh	73.794	spi:6:spi:0.51:3.06,defense:7:defense
 R	paladin/protection	25	25	0	mh	12.254999999999999	dps:1.05:dps:6.7:7.035,speed:-0.6:speed:-8.7:5.22
 R	paladin/protection	25	1315	0	gear	15.35	sta:10:sta:0.71:7.1,spi:15:spi:0.55:8.25
 R	paladin/protection	25	1808	0	gear	2.96	armor:74:armor:0.04:2.96
+R	paladin/protection	25	1990	0	mh	160.77200000000002	dps:24.71:dps:6.7:165.557,speed:0.55:speed:-8.7:-4.785
+R	paladin/protection	25	1990	12718	mh	173.64200000000002	int:9:int:0.72:6.48,sta:9:sta:0.71:6.39,dps:24.71:dps:6.7:165.557,speed:0.55:speed:-8.7:-4.785
+R	paladin/protection	25	1990	12905	mh	178.851	int:11:int:0.72:7.92,sta:7:sta:0.71:4.97,sp:28:sp:1.7:47.6,dps:18.38:dps:6.7:123.146,speed:0.55:speed:-8.7:-4.785
 R	paladin/protection	25	2614	0	gear	1.16	armor:29:armor:0.04:1.16
 R	paladin/protection	25	3158	0	gear	1.04	armor:26:armor:0.04:1.04
 R	paladin/protection	25	3570	0	mh	60.318999999999996	str:2:str:1:2,dps:8.12:dps:6.7:54.404,speed:-0.45:speed:-8.7:3.915
@@ -18188,8 +18608,8 @@ R	paladin/protection	25	4570	12742	mh	65.215	sta:3:sta:0.71:2.13,dps:10:dps:6.7:
 R	paladin/protection	25	4570	12743	mh	65.215	sta:3:sta:0.71:2.13,dps:10:dps:6.7:67,speed:0.45:speed:-8.7:-3.915
 R	paladin/protection	25	4570	12744	mh	65.215	sta:3:sta:0.71:2.13,dps:10:dps:6.7:67,speed:0.45:speed:-8.7:-3.915
 R	paladin/protection	25	4570	12759	mh	72.08500000000001	spHoly:6:spHoly:1.5:9,dps:10:dps:6.7:67,speed:0.45:speed:-8.7:-3.915
-R	paladin/protection	25	4570	12918	mh	79.56500000000001	sp:8:sp:1.7:13.6,int:4:int:0.72:2.88,dps:10:dps:6.7:67,speed:0.45:speed:-8.7:-3.915
-R	paladin/protection	25	4570	12919	mh	76.465	spDmg:5:spDmg:1.5:7.5,heal:15:heal:0.2:3,int:4:int:0.72:2.88,dps:10:dps:6.7:67,speed:0.45:speed:-8.7:-3.915
+R	paladin/protection	25	4570	12918	mh	63.351000000000006	sp:8:sp:1.7:13.6,int:4:int:0.72:2.88,dps:7.58:dps:6.7:50.786,speed:0.45:speed:-8.7:-3.915
+R	paladin/protection	25	4570	12919	mh	60.251	spDmg:5:spDmg:1.5:7.5,heal:15:heal:0.2:3,int:4:int:0.72:2.88,dps:7.58:dps:6.7:50.786,speed:0.45:speed:-8.7:-3.915
 R	paladin/protection	25	5079	0	gear	0.0	
 R	paladin/protection	25	6063	0	gear	2.2	armor:55:armor:0.04:2.2
 R	paladin/protection	25	6540	0	gear	1.12	armor:28:armor:0.04:1.12
@@ -18461,14 +18881,14 @@ R	paladin/protection	25	15235	12752	mh	205.699	agi:3:agi:0.6:1.8,sta:6:sta:0.71:
 R	paladin/protection	25	15235	12753	mh	204.519	defense:2:defense:0.31:0.62,sta:6:sta:0.71:4.26,str:3:str:1:3,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.7:5.22
 R	paladin/protection	25	15235	12754	mh	206.619	defense:2:defense:0.31:0.62,sp:3:sp:1.7:5.1,sta:6:sta:0.71:4.26,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.7:5.22
 R	paladin/protection	25	15235	12759	mh	213.139	spHoly:11:spHoly:1.5:16.5,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.7:5.22
-R	paladin/protection	25	15235	12906	mh	268.399	int:6:int:0.72:4.32,sta:4:sta:0.71:2.84,sp:38:sp:1.7:64.6,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.7:5.22
-R	paladin/protection	25	15235	12908	mh	267.759	int:6:int:0.72:4.32,sp:38:sp:1.7:64.6,spi:4:spi:0.55:2.2,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.7:5.22
-R	paladin/protection	25	15235	12910	mh	267.69900000000007	sp:38:sp:1.7:64.6,spi:4:spi:0.55:2.2,sta:6:sta:0.71:4.26,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.7:5.22
-R	paladin/protection	25	15235	12912	mh	253.979	spDmg:24:spDmg:1.5:36,heal:71:heal:0.2:14.2,int:4:int:0.72:2.88,sta:6:sta:0.71:4.26,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.7:5.22
-R	paladin/protection	25	15235	12913	mh	253.359	int:6:int:0.72:4.32,spDmg:24:spDmg:1.5:36,heal:71:heal:0.2:14.2,spi:4:spi:0.55:2.2,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.7:5.22
-R	paladin/protection	25	15235	12916	mh	253.299	spDmg:24:spDmg:1.5:36,heal:71:heal:0.2:14.2,spi:4:spi:0.55:2.2,sta:6:sta:0.71:4.26,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.7:5.22
-R	paladin/protection	25	15235	12917	mh	266.999	sp:38:sp:1.7:64.6,int:8:int:0.72:5.76,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.7:5.22
-R	paladin/protection	25	15235	12920	mh	252.59900000000002	int:8:int:0.72:5.76,spDmg:24:spDmg:1.5:36,heal:71:heal:0.2:14.2,dps:28.57:dps:6.7:191.419,speed:-0.6:speed:-8.7:5.22
+R	paladin/protection	25	15235	12906	mh	204.61499999999998	int:6:int:0.72:4.32,sta:4:sta:0.71:2.84,sp:38:sp:1.7:64.6,dps:19.05:dps:6.7:127.635,speed:-0.6:speed:-8.7:5.22
+R	paladin/protection	25	15235	12908	mh	203.975	int:6:int:0.72:4.32,sp:38:sp:1.7:64.6,spi:4:spi:0.55:2.2,dps:19.05:dps:6.7:127.635,speed:-0.6:speed:-8.7:5.22
+R	paladin/protection	25	15235	12910	mh	203.915	sp:38:sp:1.7:64.6,spi:4:spi:0.55:2.2,sta:6:sta:0.71:4.26,dps:19.05:dps:6.7:127.635,speed:-0.6:speed:-8.7:5.22
+R	paladin/protection	25	15235	12912	mh	190.19500000000002	spDmg:24:spDmg:1.5:36,heal:71:heal:0.2:14.2,int:4:int:0.72:2.88,sta:6:sta:0.71:4.26,dps:19.05:dps:6.7:127.635,speed:-0.6:speed:-8.7:5.22
+R	paladin/protection	25	15235	12913	mh	189.57500000000002	int:6:int:0.72:4.32,spDmg:24:spDmg:1.5:36,heal:71:heal:0.2:14.2,spi:4:spi:0.55:2.2,dps:19.05:dps:6.7:127.635,speed:-0.6:speed:-8.7:5.22
+R	paladin/protection	25	15235	12916	mh	189.51500000000001	spDmg:24:spDmg:1.5:36,heal:71:heal:0.2:14.2,spi:4:spi:0.55:2.2,sta:6:sta:0.71:4.26,dps:19.05:dps:6.7:127.635,speed:-0.6:speed:-8.7:5.22
+R	paladin/protection	25	15235	12917	mh	203.215	sp:38:sp:1.7:64.6,int:8:int:0.72:5.76,dps:19.05:dps:6.7:127.635,speed:-0.6:speed:-8.7:5.22
+R	paladin/protection	25	15235	12920	mh	188.815	int:8:int:0.72:5.76,spDmg:24:spDmg:1.5:36,heal:71:heal:0.2:14.2,dps:19.05:dps:6.7:127.635,speed:-0.6:speed:-8.7:5.22
 R	paladin/protection	25	15477	0	gear	4.04	armor:101:armor:0.04:4.04
 R	paladin/protection	25	15477	12718	gear	5.47	int:1:int:0.72:0.72,sta:1:sta:0.71:0.71,armor:101:armor:0.04:4.04
 R	paladin/protection	25	15477	12719	gear	5.3	spi:1:spi:0.55:0.55,sta:1:sta:0.71:0.71,armor:101:armor:0.04:4.04
@@ -18517,6 +18937,9 @@ R	paladin/protection	25	286609	0	oh	76.51	spi:6:spi:0.55:3.3,defense:7:defense:0
 R	paladin/protection	34	25	0	mh	13.625000000000007	dps:1.05:dps:6.5:6.825,speed:-0.2:speed:-34:6.8
 R	paladin/protection	34	1315	0	gear	13.85	sta:10:sta:0.65:6.5,spi:15:spi:0.49:7.35
 R	paladin/protection	34	1808	0	gear	2.5900000000000003	armor:74:armor:0.035:2.59
+R	paladin/protection	34	1990	0	mh	140.215	dps:24.71:dps:6.5:160.615,speed:0.6:speed:-34:-20.4
+R	paladin/protection	34	1990	12718	mh	152.365	int:9:int:0.7:6.3,sta:9:sta:0.65:5.85,dps:24.71:dps:6.5:160.615,speed:0.6:speed:-34:-20.4
+R	paladin/protection	34	1990	12905	mh	161.72	int:11:int:0.7:7.7,sta:7:sta:0.65:4.55,sp:28:sp:1.8:50.4,dps:18.38:dps:6.5:119.47,speed:0.6:speed:-34:-20.4
 R	paladin/protection	34	2614	0	gear	1.0150000000000001	armor:29:armor:0.035:1.015
 R	paladin/protection	34	3158	0	gear	0.9100000000000001	armor:26:armor:0.035:0.91
 R	paladin/protection	34	3570	0	mh	44.58	str:2:str:1:2,dps:8.12:dps:6.5:52.78,speed:0.3:speed:-34:-10.2
@@ -18545,8 +18968,8 @@ R	paladin/protection	34	4570	12742	mh	46.550000000000004	sta:3:sta:0.65:1.95,dps
 R	paladin/protection	34	4570	12743	mh	46.550000000000004	sta:3:sta:0.65:1.95,dps:10:dps:6.5:65,speed:0.6:speed:-34:-20.4
 R	paladin/protection	34	4570	12744	mh	46.550000000000004	sta:3:sta:0.65:1.95,dps:10:dps:6.5:65,speed:0.6:speed:-34:-20.4
 R	paladin/protection	34	4570	12759	mh	54.800000000000004	spHoly:6:spHoly:1.7:10.2,dps:10:dps:6.5:65,speed:0.6:speed:-34:-20.4
-R	paladin/protection	34	4570	12918	mh	61.800000000000004	sp:8:sp:1.8:14.4,int:4:int:0.7:2.8,dps:10:dps:6.5:65,speed:0.6:speed:-34:-20.4
-R	paladin/protection	34	4570	12919	mh	57.4	spDmg:5:spDmg:1.7:8.5,heal:15:heal:0.1:1.5,int:4:int:0.7:2.8,dps:10:dps:6.5:65,speed:0.6:speed:-34:-20.4
+R	paladin/protection	34	4570	12918	mh	46.07	sp:8:sp:1.8:14.4,int:4:int:0.7:2.8,dps:7.58:dps:6.5:49.27,speed:0.6:speed:-34:-20.4
+R	paladin/protection	34	4570	12919	mh	41.67000000000001	spDmg:5:spDmg:1.7:8.5,heal:15:heal:0.1:1.5,int:4:int:0.7:2.8,dps:7.58:dps:6.5:49.27,speed:0.6:speed:-34:-20.4
 R	paladin/protection	34	5079	0	gear	0.0	
 R	paladin/protection	34	6063	0	gear	1.9250000000000003	armor:55:armor:0.035:1.925
 R	paladin/protection	34	6540	0	gear	0.9800000000000001	armor:28:armor:0.035:0.98
@@ -18818,14 +19241,14 @@ R	paladin/protection	34	15235	12752	mh	194.375	agi:3:agi:0.59:1.77,sta:6:sta:0.6
 R	paladin/protection	34	15235	12753	mh	193.185	defense:2:defense:0.29:0.58,sta:6:sta:0.65:3.9,str:3:str:1:3,dps:28.57:dps:6.5:185.705
 R	paladin/protection	34	15235	12754	mh	195.585	defense:2:defense:0.29:0.58,sp:3:sp:1.8:5.4,sta:6:sta:0.65:3.9,dps:28.57:dps:6.5:185.705
 R	paladin/protection	34	15235	12759	mh	204.405	spHoly:11:spHoly:1.7:18.7,dps:28.57:dps:6.5:185.705
-R	paladin/protection	34	15235	12906	mh	260.90500000000003	int:6:int:0.7:4.2,sta:4:sta:0.65:2.6,sp:38:sp:1.8:68.4,dps:28.57:dps:6.5:185.705
-R	paladin/protection	34	15235	12908	mh	260.265	int:6:int:0.7:4.2,sp:38:sp:1.8:68.4,spi:4:spi:0.49:1.96,dps:28.57:dps:6.5:185.705
-R	paladin/protection	34	15235	12910	mh	259.96500000000003	sp:38:sp:1.8:68.4,spi:4:spi:0.49:1.96,sta:6:sta:0.65:3.9,dps:28.57:dps:6.5:185.705
-R	paladin/protection	34	15235	12912	mh	240.305	spDmg:24:spDmg:1.7:40.8,heal:71:heal:0.1:7.1,int:4:int:0.7:2.8,sta:6:sta:0.65:3.9,dps:28.57:dps:6.5:185.705
-R	paladin/protection	34	15235	12913	mh	239.76500000000001	int:6:int:0.7:4.2,spDmg:24:spDmg:1.7:40.8,heal:71:heal:0.1:7.1,spi:4:spi:0.49:1.96,dps:28.57:dps:6.5:185.705
-R	paladin/protection	34	15235	12916	mh	239.465	spDmg:24:spDmg:1.7:40.8,heal:71:heal:0.1:7.1,spi:4:spi:0.49:1.96,sta:6:sta:0.65:3.9,dps:28.57:dps:6.5:185.705
-R	paladin/protection	34	15235	12917	mh	259.70500000000004	sp:38:sp:1.8:68.4,int:8:int:0.7:5.6,dps:28.57:dps:6.5:185.705
-R	paladin/protection	34	15235	12920	mh	239.205	int:8:int:0.7:5.6,spDmg:24:spDmg:1.7:40.8,heal:71:heal:0.1:7.1,dps:28.57:dps:6.5:185.705
+R	paladin/protection	34	15235	12906	mh	199.025	int:6:int:0.7:4.2,sta:4:sta:0.65:2.6,sp:38:sp:1.8:68.4,dps:19.05:dps:6.5:123.825
+R	paladin/protection	34	15235	12908	mh	198.385	int:6:int:0.7:4.2,sp:38:sp:1.8:68.4,spi:4:spi:0.49:1.96,dps:19.05:dps:6.5:123.825
+R	paladin/protection	34	15235	12910	mh	198.085	sp:38:sp:1.8:68.4,spi:4:spi:0.49:1.96,sta:6:sta:0.65:3.9,dps:19.05:dps:6.5:123.825
+R	paladin/protection	34	15235	12912	mh	178.425	spDmg:24:spDmg:1.7:40.8,heal:71:heal:0.1:7.1,int:4:int:0.7:2.8,sta:6:sta:0.65:3.9,dps:19.05:dps:6.5:123.825
+R	paladin/protection	34	15235	12913	mh	177.885	int:6:int:0.7:4.2,spDmg:24:spDmg:1.7:40.8,heal:71:heal:0.1:7.1,spi:4:spi:0.49:1.96,dps:19.05:dps:6.5:123.825
+R	paladin/protection	34	15235	12916	mh	177.585	spDmg:24:spDmg:1.7:40.8,heal:71:heal:0.1:7.1,spi:4:spi:0.49:1.96,sta:6:sta:0.65:3.9,dps:19.05:dps:6.5:123.825
+R	paladin/protection	34	15235	12917	mh	197.825	sp:38:sp:1.8:68.4,int:8:int:0.7:5.6,dps:19.05:dps:6.5:123.825
+R	paladin/protection	34	15235	12920	mh	177.325	int:8:int:0.7:5.6,spDmg:24:spDmg:1.7:40.8,heal:71:heal:0.1:7.1,dps:19.05:dps:6.5:123.825
 R	paladin/protection	34	15477	0	gear	3.535	armor:101:armor:0.035:3.535
 R	paladin/protection	34	15477	12718	gear	4.885	int:1:int:0.7:0.7,sta:1:sta:0.65:0.65,armor:101:armor:0.035:3.535
 R	paladin/protection	34	15477	12719	gear	4.675000000000001	spi:1:spi:0.49:0.49,sta:1:sta:0.65:0.65,armor:101:armor:0.035:3.535
@@ -18874,6 +19297,9 @@ R	paladin/protection	34	286609	0	oh	67.13000000000001	spi:6:spi:0.49:2.94,defens
 R	paladin/protection	45	25	0	mh	14.035	dps:1.05:dps:6.7:7.035,speed:-0.5:speed:-14:7
 R	paladin/protection	45	1315	0	gear	19.15	sta:10:sta:0.55:5.5,spi:15:spi:0.91:13.65
 R	paladin/protection	45	1808	0	gear	1.554	armor:74:armor:0.021:1.554
+R	paladin/protection	45	1990	0	mh	157.157	dps:24.71:dps:6.7:165.557,speed:0.6:speed:-14:-8.4
+R	paladin/protection	45	1990	12718	mh	171.107	int:9:int:1:9,sta:9:sta:0.55:4.95,dps:24.71:dps:6.7:165.557,speed:0.6:speed:-14:-8.4
+R	paladin/protection	45	1990	12905	mh	182.796	int:11:int:1:11,sta:7:sta:0.55:3.85,sp:28:sp:1.9:53.2,dps:18.38:dps:6.7:123.146,speed:0.6:speed:-14:-8.4
 R	paladin/protection	45	2614	0	gear	0.609	armor:29:armor:0.021:0.609
 R	paladin/protection	45	3158	0	gear	0.546	armor:26:armor:0.021:0.546
 R	paladin/protection	45	3570	0	mh	56.403999999999996	str:2:str:1:2,dps:8.12:dps:6.7:54.404
@@ -18902,8 +19328,8 @@ R	paladin/protection	45	4570	12742	mh	60.25000000000001	sta:3:sta:0.55:1.65,dps:
 R	paladin/protection	45	4570	12743	mh	60.25000000000001	sta:3:sta:0.55:1.65,dps:10:dps:6.7:67,speed:0.6:speed:-14:-8.4
 R	paladin/protection	45	4570	12744	mh	60.25000000000001	sta:3:sta:0.55:1.65,dps:10:dps:6.7:67,speed:0.6:speed:-14:-8.4
 R	paladin/protection	45	4570	12759	mh	70.0	spHoly:6:spHoly:1.9:11.4,dps:10:dps:6.7:67,speed:0.6:speed:-14:-8.4
-R	paladin/protection	45	4570	12918	mh	77.8	sp:8:sp:1.9:15.2,int:4:int:1:4,dps:10:dps:6.7:67,speed:0.6:speed:-14:-8.4
-R	paladin/protection	45	4570	12919	mh	72.1	spDmg:5:spDmg:1.9:9.5,int:4:int:1:4,dps:10:dps:6.7:67,speed:0.6:speed:-14:-8.4
+R	paladin/protection	45	4570	12918	mh	61.586000000000006	sp:8:sp:1.9:15.2,int:4:int:1:4,dps:7.58:dps:6.7:50.786,speed:0.6:speed:-14:-8.4
+R	paladin/protection	45	4570	12919	mh	55.886	spDmg:5:spDmg:1.9:9.5,int:4:int:1:4,dps:7.58:dps:6.7:50.786,speed:0.6:speed:-14:-8.4
 R	paladin/protection	45	5079	0	gear	0.0	
 R	paladin/protection	45	6063	0	gear	1.155	armor:55:armor:0.021:1.155
 R	paladin/protection	45	6540	0	gear	0.5880000000000001	armor:28:armor:0.021:0.588
@@ -19175,14 +19601,14 @@ R	paladin/protection	45	15235	12752	mh	203.809	agi:3:agi:0.63:1.89,sta:6:sta:0.5
 R	paladin/protection	45	15235	12753	mh	202.939	defense:2:defense:0.51:1.02,sta:6:sta:0.55:3.3,str:3:str:1:3,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
 R	paladin/protection	45	15235	12754	mh	205.639	defense:2:defense:0.51:1.02,sp:3:sp:1.9:5.7,sta:6:sta:0.55:3.3,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
 R	paladin/protection	45	15235	12759	mh	216.519	spHoly:11:spHoly:1.9:20.9,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
-R	paladin/protection	45	15235	12906	mh	276.019	int:6:int:1:6,sta:4:sta:0.55:2.2,sp:38:sp:1.9:72.2,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
-R	paladin/protection	45	15235	12908	mh	277.459	int:6:int:1:6,sp:38:sp:1.9:72.2,spi:4:spi:0.91:3.64,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
-R	paladin/protection	45	15235	12910	mh	274.759	sp:38:sp:1.9:72.2,spi:4:spi:0.91:3.64,sta:6:sta:0.55:3.3,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
-R	paladin/protection	45	15235	12912	mh	248.519	spDmg:24:spDmg:1.9:45.6,int:4:int:1:4,sta:6:sta:0.55:3.3,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
-R	paladin/protection	45	15235	12913	mh	250.85899999999998	int:6:int:1:6,spDmg:24:spDmg:1.9:45.6,spi:4:spi:0.91:3.64,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
-R	paladin/protection	45	15235	12916	mh	248.159	spDmg:24:spDmg:1.9:45.6,spi:4:spi:0.91:3.64,sta:6:sta:0.55:3.3,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
-R	paladin/protection	45	15235	12917	mh	275.819	sp:38:sp:1.9:72.2,int:8:int:1:8,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
-R	paladin/protection	45	15235	12920	mh	249.219	int:8:int:1:8,spDmg:24:spDmg:1.9:45.6,dps:28.57:dps:6.7:191.419,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12906	mh	212.235	int:6:int:1:6,sta:4:sta:0.55:2.2,sp:38:sp:1.9:72.2,dps:19.05:dps:6.7:127.635,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12908	mh	213.675	int:6:int:1:6,sp:38:sp:1.9:72.2,spi:4:spi:0.91:3.64,dps:19.05:dps:6.7:127.635,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12910	mh	210.975	sp:38:sp:1.9:72.2,spi:4:spi:0.91:3.64,sta:6:sta:0.55:3.3,dps:19.05:dps:6.7:127.635,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12912	mh	184.73499999999999	spDmg:24:spDmg:1.9:45.6,int:4:int:1:4,sta:6:sta:0.55:3.3,dps:19.05:dps:6.7:127.635,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12913	mh	187.075	int:6:int:1:6,spDmg:24:spDmg:1.9:45.6,spi:4:spi:0.91:3.64,dps:19.05:dps:6.7:127.635,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12916	mh	184.375	spDmg:24:spDmg:1.9:45.6,spi:4:spi:0.91:3.64,sta:6:sta:0.55:3.3,dps:19.05:dps:6.7:127.635,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12917	mh	212.035	sp:38:sp:1.9:72.2,int:8:int:1:8,dps:19.05:dps:6.7:127.635,speed:-0.3:speed:-14:4.2
+R	paladin/protection	45	15235	12920	mh	185.435	int:8:int:1:8,spDmg:24:spDmg:1.9:45.6,dps:19.05:dps:6.7:127.635,speed:-0.3:speed:-14:4.2
 R	paladin/protection	45	15477	0	gear	2.121	armor:101:armor:0.021:2.121
 R	paladin/protection	45	15477	12718	gear	3.6710000000000003	int:1:int:1:1,sta:1:sta:0.55:0.55,armor:101:armor:0.021:2.121
 R	paladin/protection	45	15477	12719	gear	3.581	spi:1:spi:0.91:0.91,sta:1:sta:0.55:0.55,armor:101:armor:0.021:2.121
@@ -19231,6 +19657,9 @@ R	paladin/protection	45	286609	0	oh	46.326	spi:6:spi:0.91:5.46,defense:7:defense
 R	paladin/protection	55	25	0	mh	8.01	dps:1.05:dps:6.7:7.035,speed:-0.15:speed:-6.5:0.975
 R	paladin/protection	55	1315	0	gear	16.6	sta:10:sta:0.52:5.2,spi:15:spi:0.76:11.4
 R	paladin/protection	55	1808	0	gear	1.3319999999999999	armor:74:armor:0.018:1.332
+R	paladin/protection	55	1990	0	mh	161.657	dps:24.71:dps:6.7:165.557,speed:0.6:speed:-6.5:-3.9
+R	paladin/protection	55	1990	12718	mh	170.567	int:9:int:0.47:4.23,sta:9:sta:0.52:4.68,dps:24.71:dps:6.7:165.557,speed:0.6:speed:-6.5:-3.9
+R	paladin/protection	55	1990	12905	mh	181.256	int:11:int:0.47:5.17,sta:7:sta:0.52:3.64,sp:28:sp:1.9:53.2,dps:18.38:dps:6.7:123.146,speed:0.6:speed:-6.5:-3.9
 R	paladin/protection	55	2614	0	gear	0.5219999999999999	armor:29:armor:0.018:0.522
 R	paladin/protection	55	3158	0	gear	0.46799999999999997	armor:26:armor:0.018:0.468
 R	paladin/protection	55	3570	0	mh	54.129	str:2:str:1:2,dps:8.12:dps:6.7:54.404,speed:0.35:speed:-6.5:-2.275
@@ -19259,8 +19688,8 @@ R	paladin/protection	55	4570	12742	mh	64.66	sta:3:sta:0.52:1.56,dps:10:dps:6.7:6
 R	paladin/protection	55	4570	12743	mh	64.66	sta:3:sta:0.52:1.56,dps:10:dps:6.7:67,speed:0.6:speed:-6.5:-3.9
 R	paladin/protection	55	4570	12744	mh	64.66	sta:3:sta:0.52:1.56,dps:10:dps:6.7:67,speed:0.6:speed:-6.5:-3.9
 R	paladin/protection	55	4570	12759	mh	74.5	spHoly:6:spHoly:1.9:11.4,dps:10:dps:6.7:67,speed:0.6:speed:-6.5:-3.9
-R	paladin/protection	55	4570	12918	mh	80.17999999999999	sp:8:sp:1.9:15.2,int:4:int:0.47:1.88,dps:10:dps:6.7:67,speed:0.6:speed:-6.5:-3.9
-R	paladin/protection	55	4570	12919	mh	74.47999999999999	spDmg:5:spDmg:1.9:9.5,int:4:int:0.47:1.88,dps:10:dps:6.7:67,speed:0.6:speed:-6.5:-3.9
+R	paladin/protection	55	4570	12918	mh	63.966	sp:8:sp:1.9:15.2,int:4:int:0.47:1.88,dps:7.58:dps:6.7:50.786,speed:0.6:speed:-6.5:-3.9
+R	paladin/protection	55	4570	12919	mh	58.266	spDmg:5:spDmg:1.9:9.5,int:4:int:0.47:1.88,dps:7.58:dps:6.7:50.786,speed:0.6:speed:-6.5:-3.9
 R	paladin/protection	55	5079	0	gear	0.0	
 R	paladin/protection	55	6063	0	gear	0.9899999999999999	armor:55:armor:0.018:0.99
 R	paladin/protection	55	6540	0	gear	0.504	armor:28:armor:0.018:0.504
@@ -19532,14 +19961,14 @@ R	paladin/protection	55	15235	12752	mh	199.104	agi:3:agi:0.63:1.89,sta:6:sta:0.5
 R	paladin/protection	55	15235	12753	mh	198.25400000000002	defense:2:defense:0.52:1.04,sta:6:sta:0.52:3.12,str:3:str:1:3,dps:28.57:dps:6.7:191.419,speed:0.05:speed:-6.5:-0.325
 R	paladin/protection	55	15235	12754	mh	200.954	defense:2:defense:0.52:1.04,sp:3:sp:1.9:5.7,sta:6:sta:0.52:3.12,dps:28.57:dps:6.7:191.419,speed:0.05:speed:-6.5:-0.325
 R	paladin/protection	55	15235	12759	mh	211.99400000000003	spHoly:11:spHoly:1.9:20.9,dps:28.57:dps:6.7:191.419,speed:0.05:speed:-6.5:-0.325
-R	paladin/protection	55	15235	12906	mh	268.194	int:6:int:0.47:2.82,sta:4:sta:0.52:2.08,sp:38:sp:1.9:72.2,dps:28.57:dps:6.7:191.419,speed:0.05:speed:-6.5:-0.325
-R	paladin/protection	55	15235	12908	mh	269.15400000000005	int:6:int:0.47:2.82,sp:38:sp:1.9:72.2,spi:4:spi:0.76:3.04,dps:28.57:dps:6.7:191.419,speed:0.05:speed:-6.5:-0.325
-R	paladin/protection	55	15235	12910	mh	269.454	sp:38:sp:1.9:72.2,spi:4:spi:0.76:3.04,sta:6:sta:0.52:3.12,dps:28.57:dps:6.7:191.419,speed:0.05:speed:-6.5:-0.325
-R	paladin/protection	55	15235	12912	mh	241.69400000000002	spDmg:24:spDmg:1.9:45.6,int:4:int:0.47:1.88,sta:6:sta:0.52:3.12,dps:28.57:dps:6.7:191.419,speed:0.05:speed:-6.5:-0.325
-R	paladin/protection	55	15235	12913	mh	242.55400000000003	int:6:int:0.47:2.82,spDmg:24:spDmg:1.9:45.6,spi:4:spi:0.76:3.04,dps:28.57:dps:6.7:191.419,speed:0.05:speed:-6.5:-0.325
-R	paladin/protection	55	15235	12916	mh	242.854	spDmg:24:spDmg:1.9:45.6,spi:4:spi:0.76:3.04,sta:6:sta:0.52:3.12,dps:28.57:dps:6.7:191.419,speed:0.05:speed:-6.5:-0.325
-R	paladin/protection	55	15235	12917	mh	267.05400000000003	sp:38:sp:1.9:72.2,int:8:int:0.47:3.76,dps:28.57:dps:6.7:191.419,speed:0.05:speed:-6.5:-0.325
-R	paladin/protection	55	15235	12920	mh	240.454	int:8:int:0.47:3.76,spDmg:24:spDmg:1.9:45.6,dps:28.57:dps:6.7:191.419,speed:0.05:speed:-6.5:-0.325
+R	paladin/protection	55	15235	12906	mh	204.41000000000003	int:6:int:0.47:2.82,sta:4:sta:0.52:2.08,sp:38:sp:1.9:72.2,dps:19.05:dps:6.7:127.635,speed:0.05:speed:-6.5:-0.325
+R	paladin/protection	55	15235	12908	mh	205.37	int:6:int:0.47:2.82,sp:38:sp:1.9:72.2,spi:4:spi:0.76:3.04,dps:19.05:dps:6.7:127.635,speed:0.05:speed:-6.5:-0.325
+R	paladin/protection	55	15235	12910	mh	205.67000000000002	sp:38:sp:1.9:72.2,spi:4:spi:0.76:3.04,sta:6:sta:0.52:3.12,dps:19.05:dps:6.7:127.635,speed:0.05:speed:-6.5:-0.325
+R	paladin/protection	55	15235	12912	mh	177.91000000000003	spDmg:24:spDmg:1.9:45.6,int:4:int:0.47:1.88,sta:6:sta:0.52:3.12,dps:19.05:dps:6.7:127.635,speed:0.05:speed:-6.5:-0.325
+R	paladin/protection	55	15235	12913	mh	178.77	int:6:int:0.47:2.82,spDmg:24:spDmg:1.9:45.6,spi:4:spi:0.76:3.04,dps:19.05:dps:6.7:127.635,speed:0.05:speed:-6.5:-0.325
+R	paladin/protection	55	15235	12916	mh	179.07	spDmg:24:spDmg:1.9:45.6,spi:4:spi:0.76:3.04,sta:6:sta:0.52:3.12,dps:19.05:dps:6.7:127.635,speed:0.05:speed:-6.5:-0.325
+R	paladin/protection	55	15235	12917	mh	203.27000000000004	sp:38:sp:1.9:72.2,int:8:int:0.47:3.76,dps:19.05:dps:6.7:127.635,speed:0.05:speed:-6.5:-0.325
+R	paladin/protection	55	15235	12920	mh	176.67000000000002	int:8:int:0.47:3.76,spDmg:24:spDmg:1.9:45.6,dps:19.05:dps:6.7:127.635,speed:0.05:speed:-6.5:-0.325
 R	paladin/protection	55	15477	0	gear	1.8179999999999998	armor:101:armor:0.018:1.818
 R	paladin/protection	55	15477	12718	gear	2.808	int:1:int:0.47:0.47,sta:1:sta:0.52:0.52,armor:101:armor:0.018:1.818
 R	paladin/protection	55	15477	12719	gear	3.098	spi:1:spi:0.76:0.76,sta:1:sta:0.52:0.52,armor:101:armor:0.018:1.818
@@ -19588,6 +20017,9 @@ R	paladin/protection	55	286609	0	oh	40.168	spi:6:spi:0.76:4.56,defense:7:defense
 R	paladin/protection	60	25	0	mh	7.3500000000000005	dps:1.05:dps:7:7.35
 R	paladin/protection	60	1315	0	gear	16.2	sta:10:sta:0.12:1.2,spi:15:spi:1:15
 R	paladin/protection	60	1808	0	gear	1.1099999999999999	armor:74:armor:0.015:1.11
+R	paladin/protection	60	1990	0	mh	172.97	dps:24.71:dps:7:172.97
+R	paladin/protection	60	1990	12718	mh	182.6	int:9:int:0.95:8.55,sta:9:sta:0.12:1.08,dps:24.71:dps:7:172.97
+R	paladin/protection	60	1990	12905	mh	193.14999999999998	int:11:int:0.95:10.45,sta:7:sta:0.12:0.84,sp:28:sp:1.9:53.2,dps:18.38:dps:7:128.66
 R	paladin/protection	60	2614	0	gear	0.435	armor:29:armor:0.015:0.435
 R	paladin/protection	60	3158	0	gear	0.39	armor:26:armor:0.015:0.39
 R	paladin/protection	60	3570	0	mh	58.839999999999996	str:2:str:1:2,dps:8.12:dps:7:56.84
@@ -19616,8 +20048,8 @@ R	paladin/protection	60	4570	12742	mh	70.36	sta:3:sta:0.12:0.36,dps:10:dps:7:70
 R	paladin/protection	60	4570	12743	mh	70.36	sta:3:sta:0.12:0.36,dps:10:dps:7:70
 R	paladin/protection	60	4570	12744	mh	70.36	sta:3:sta:0.12:0.36,dps:10:dps:7:70
 R	paladin/protection	60	4570	12759	mh	81.4	spHoly:6:spHoly:1.9:11.4,dps:10:dps:7:70
-R	paladin/protection	60	4570	12918	mh	89.0	sp:8:sp:1.9:15.2,int:4:int:0.95:3.8,dps:10:dps:7:70
-R	paladin/protection	60	4570	12919	mh	83.3	spDmg:5:spDmg:1.9:9.5,int:4:int:0.95:3.8,dps:10:dps:7:70
+R	paladin/protection	60	4570	12918	mh	72.06	sp:8:sp:1.9:15.2,int:4:int:0.95:3.8,dps:7.58:dps:7:53.06
+R	paladin/protection	60	4570	12919	mh	66.36	spDmg:5:spDmg:1.9:9.5,int:4:int:0.95:3.8,dps:7.58:dps:7:53.06
 R	paladin/protection	60	5079	0	gear	0.0	
 R	paladin/protection	60	6063	0	gear	0.825	armor:55:armor:0.015:0.825
 R	paladin/protection	60	6540	0	gear	0.42	armor:28:armor:0.015:0.42
@@ -19889,14 +20321,14 @@ R	paladin/protection	60	15235	12752	mh	205.63	agi:3:agi:0.64:1.92,sta:6:sta:0.12
 R	paladin/protection	60	15235	12753	mh	205.05	defense:2:defense:0.67:1.34,sta:6:sta:0.12:0.72,str:3:str:1:3,dps:28.57:dps:7:199.99
 R	paladin/protection	60	15235	12754	mh	207.75	defense:2:defense:0.67:1.34,sp:3:sp:1.9:5.7,sta:6:sta:0.12:0.72,dps:28.57:dps:7:199.99
 R	paladin/protection	60	15235	12759	mh	220.89000000000001	spHoly:11:spHoly:1.9:20.9,dps:28.57:dps:7:199.99
-R	paladin/protection	60	15235	12906	mh	278.37	int:6:int:0.95:5.7,sta:4:sta:0.12:0.48,sp:38:sp:1.9:72.2,dps:28.57:dps:7:199.99
-R	paladin/protection	60	15235	12908	mh	281.89	int:6:int:0.95:5.7,sp:38:sp:1.9:72.2,spi:4:spi:1:4,dps:28.57:dps:7:199.99
-R	paladin/protection	60	15235	12910	mh	276.91	sp:38:sp:1.9:72.2,spi:4:spi:1:4,sta:6:sta:0.12:0.72,dps:28.57:dps:7:199.99
-R	paladin/protection	60	15235	12912	mh	250.11	spDmg:24:spDmg:1.9:45.6,int:4:int:0.95:3.8,sta:6:sta:0.12:0.72,dps:28.57:dps:7:199.99
-R	paladin/protection	60	15235	12913	mh	255.29000000000002	int:6:int:0.95:5.7,spDmg:24:spDmg:1.9:45.6,spi:4:spi:1:4,dps:28.57:dps:7:199.99
-R	paladin/protection	60	15235	12916	mh	250.31	spDmg:24:spDmg:1.9:45.6,spi:4:spi:1:4,sta:6:sta:0.12:0.72,dps:28.57:dps:7:199.99
-R	paladin/protection	60	15235	12917	mh	279.79	sp:38:sp:1.9:72.2,int:8:int:0.95:7.6,dps:28.57:dps:7:199.99
-R	paladin/protection	60	15235	12920	mh	253.19	int:8:int:0.95:7.6,spDmg:24:spDmg:1.9:45.6,dps:28.57:dps:7:199.99
+R	paladin/protection	60	15235	12906	mh	211.73	int:6:int:0.95:5.7,sta:4:sta:0.12:0.48,sp:38:sp:1.9:72.2,dps:19.05:dps:7:133.35
+R	paladin/protection	60	15235	12908	mh	215.25	int:6:int:0.95:5.7,sp:38:sp:1.9:72.2,spi:4:spi:1:4,dps:19.05:dps:7:133.35
+R	paladin/protection	60	15235	12910	mh	210.26999999999998	sp:38:sp:1.9:72.2,spi:4:spi:1:4,sta:6:sta:0.12:0.72,dps:19.05:dps:7:133.35
+R	paladin/protection	60	15235	12912	mh	183.46999999999997	spDmg:24:spDmg:1.9:45.6,int:4:int:0.95:3.8,sta:6:sta:0.12:0.72,dps:19.05:dps:7:133.35
+R	paladin/protection	60	15235	12913	mh	188.64999999999998	int:6:int:0.95:5.7,spDmg:24:spDmg:1.9:45.6,spi:4:spi:1:4,dps:19.05:dps:7:133.35
+R	paladin/protection	60	15235	12916	mh	183.67	spDmg:24:spDmg:1.9:45.6,spi:4:spi:1:4,sta:6:sta:0.12:0.72,dps:19.05:dps:7:133.35
+R	paladin/protection	60	15235	12917	mh	213.14999999999998	sp:38:sp:1.9:72.2,int:8:int:0.95:7.6,dps:19.05:dps:7:133.35
+R	paladin/protection	60	15235	12920	mh	186.54999999999998	int:8:int:0.95:7.6,spDmg:24:spDmg:1.9:45.6,dps:19.05:dps:7:133.35
 R	paladin/protection	60	15477	0	gear	1.515	armor:101:armor:0.015:1.515
 R	paladin/protection	60	15477	12718	gear	2.585	int:1:int:0.95:0.95,sta:1:sta:0.12:0.12,armor:101:armor:0.015:1.515
 R	paladin/protection	60	15477	12719	gear	2.635	spi:1:spi:1:1,sta:1:sta:0.12:0.12,armor:101:armor:0.015:1.515
@@ -19945,6 +20377,12 @@ R	paladin/protection	60	286609	0	oh	37.33	spi:6:spi:1:6,defense:7:defense:0.67:4
 R	warrior/arms	12	25	0	mh	6.615	dps:1.05:dps:6.3:6.615
 R	warrior/arms	12	1315	0	gear	37.9	sta:10:sta:2.5:25,spi:15:spi:0.86:12.9
 R	warrior/arms	12	1808	0	gear	3.7739999999999996	armor:74:armor:0.051:3.774
+R	warrior/arms	12	1990	0	mh	155.673	dps:24.71:dps:6.3:155.673
+R	warrior/arms	12	1990	12718	mh	178.173	sta:9:sta:2.5:22.5,dps:24.71:dps:6.3:155.673
+R	warrior/arms	12	1990	12905	mh	133.29399999999998	sta:7:sta:2.5:17.5,dps:18.38:dps:6.3:115.794
+R	warrior/arms	12	2140	0	mh	37.422000000000004	dps:5.94:dps:6.3:37.422
+R	warrior/arms	12	2140	12718	mh	39.922000000000004	sta:1:sta:2.5:2.5,dps:5.94:dps:6.3:37.422
+R	warrior/arms	12	2140	12917	mh	23.625	dps:3.75:dps:6.3:23.625
 R	warrior/arms	12	2225	0	mh	31.5	dps:5:dps:6.3:31.5
 R	warrior/arms	12	2614	0	gear	1.4789999999999999	armor:29:armor:0.051:1.479
 R	warrior/arms	12	3158	0	gear	1.3259999999999998	armor:26:armor:0.051:1.326
@@ -19975,8 +20413,8 @@ R	warrior/arms	12	4570	12742	mh	70.5	sta:3:sta:2.5:7.5,dps:10:dps:6.3:63
 R	warrior/arms	12	4570	12743	mh	70.5	sta:3:sta:2.5:7.5,dps:10:dps:6.3:63
 R	warrior/arms	12	4570	12744	mh	70.5	sta:3:sta:2.5:7.5,dps:10:dps:6.3:63
 R	warrior/arms	12	4570	12759	mh	63.0	dps:10:dps:6.3:63
-R	warrior/arms	12	4570	12918	mh	63.0	dps:10:dps:6.3:63
-R	warrior/arms	12	4570	12919	mh	63.0	dps:10:dps:6.3:63
+R	warrior/arms	12	4570	12918	mh	47.754	dps:7.58:dps:6.3:47.754
+R	warrior/arms	12	4570	12919	mh	47.754	dps:7.58:dps:6.3:47.754
 R	warrior/arms	12	5079	0	gear	0.0	
 R	warrior/arms	12	6063	0	gear	2.8049999999999997	armor:55:armor:0.051:2.805
 R	warrior/arms	12	6540	0	gear	1.428	armor:28:armor:0.051:1.428
@@ -20248,14 +20686,14 @@ R	warrior/arms	12	15235	12752	mh	199.791	agi:3:agi:0.6:1.8,sta:6:sta:2.5:15,str:
 R	warrior/arms	12	15235	12753	mh	197.99099999999999	sta:6:sta:2.5:15,str:3:str:1:3,dps:28.57:dps:6.3:179.991
 R	warrior/arms	12	15235	12754	mh	194.99099999999999	sta:6:sta:2.5:15,dps:28.57:dps:6.3:179.991
 R	warrior/arms	12	15235	12759	mh	179.99099999999999	dps:28.57:dps:6.3:179.991
-R	warrior/arms	12	15235	12906	mh	189.99099999999999	sta:4:sta:2.5:10,dps:28.57:dps:6.3:179.991
-R	warrior/arms	12	15235	12908	mh	183.43099999999998	spi:4:spi:0.86:3.44,dps:28.57:dps:6.3:179.991
-R	warrior/arms	12	15235	12910	mh	198.43099999999998	spi:4:spi:0.86:3.44,sta:6:sta:2.5:15,dps:28.57:dps:6.3:179.991
-R	warrior/arms	12	15235	12912	mh	194.99099999999999	sta:6:sta:2.5:15,dps:28.57:dps:6.3:179.991
-R	warrior/arms	12	15235	12913	mh	183.43099999999998	spi:4:spi:0.86:3.44,dps:28.57:dps:6.3:179.991
-R	warrior/arms	12	15235	12916	mh	198.43099999999998	spi:4:spi:0.86:3.44,sta:6:sta:2.5:15,dps:28.57:dps:6.3:179.991
-R	warrior/arms	12	15235	12917	mh	179.99099999999999	dps:28.57:dps:6.3:179.991
-R	warrior/arms	12	15235	12920	mh	179.99099999999999	dps:28.57:dps:6.3:179.991
+R	warrior/arms	12	15235	12906	mh	130.015	sta:4:sta:2.5:10,dps:19.05:dps:6.3:120.015
+R	warrior/arms	12	15235	12908	mh	123.455	spi:4:spi:0.86:3.44,dps:19.05:dps:6.3:120.015
+R	warrior/arms	12	15235	12910	mh	138.455	spi:4:spi:0.86:3.44,sta:6:sta:2.5:15,dps:19.05:dps:6.3:120.015
+R	warrior/arms	12	15235	12912	mh	135.015	sta:6:sta:2.5:15,dps:19.05:dps:6.3:120.015
+R	warrior/arms	12	15235	12913	mh	123.455	spi:4:spi:0.86:3.44,dps:19.05:dps:6.3:120.015
+R	warrior/arms	12	15235	12916	mh	138.455	spi:4:spi:0.86:3.44,sta:6:sta:2.5:15,dps:19.05:dps:6.3:120.015
+R	warrior/arms	12	15235	12917	mh	120.015	dps:19.05:dps:6.3:120.015
+R	warrior/arms	12	15235	12920	mh	120.015	dps:19.05:dps:6.3:120.015
 R	warrior/arms	12	15477	0	gear	5.151	armor:101:armor:0.051:5.151
 R	warrior/arms	12	15477	12718	gear	7.651	sta:1:sta:2.5:2.5,armor:101:armor:0.051:5.151
 R	warrior/arms	12	15477	12719	gear	8.511	spi:1:spi:0.86:0.86,sta:1:sta:2.5:2.5,armor:101:armor:0.051:5.151
@@ -20308,6 +20746,12 @@ R	warrior/arms	12	286609	0	oh	95.73599999999999	spi:6:spi:0.86:5.16,armor:1776:a
 R	warrior/arms	25	25	0	mh	0.1200000000000001	dps:1.05:dps:5.6:5.88,speed:-0.6:speed:9.6:-5.76
 R	warrior/arms	25	1315	0	gear	27.6	sta:10:sta:2.4:24,spi:15:spi:0.24:3.6
 R	warrior/arms	25	1808	0	gear	3.404	armor:74:armor:0.046:3.404
+R	warrior/arms	25	1990	0	mh	138.376	dps:24.71:dps:5.6:138.376
+R	warrior/arms	25	1990	12718	mh	159.976	sta:9:sta:2.4:21.6,dps:24.71:dps:5.6:138.376
+R	warrior/arms	25	1990	12905	mh	119.72799999999998	sta:7:sta:2.4:16.8,dps:18.38:dps:5.6:102.928
+R	warrior/arms	25	2140	0	mh	27.504000000000005	dps:5.94:dps:5.6:33.264,speed:-0.6:speed:9.6:-5.76
+R	warrior/arms	25	2140	12718	mh	29.904000000000003	sta:1:sta:2.4:2.4,dps:5.94:dps:5.6:33.264,speed:-0.6:speed:9.6:-5.76
+R	warrior/arms	25	2140	12917	mh	15.24	dps:3.75:dps:5.6:21,speed:-0.6:speed:9.6:-5.76
 R	warrior/arms	25	2225	0	mh	22.240000000000002	dps:5:dps:5.6:28,speed:-0.6:speed:9.6:-5.76
 R	warrior/arms	25	2614	0	gear	1.334	armor:29:armor:0.046:1.334
 R	warrior/arms	25	3158	0	gear	1.196	armor:26:armor:0.046:1.196
@@ -20338,8 +20782,8 @@ R	warrior/arms	25	4570	12742	mh	62.24	sta:3:sta:2.4:7.2,dps:10:dps:5.6:56,speed:
 R	warrior/arms	25	4570	12743	mh	62.24	sta:3:sta:2.4:7.2,dps:10:dps:5.6:56,speed:-0.1:speed:9.6:-0.96
 R	warrior/arms	25	4570	12744	mh	62.24	sta:3:sta:2.4:7.2,dps:10:dps:5.6:56,speed:-0.1:speed:9.6:-0.96
 R	warrior/arms	25	4570	12759	mh	55.04	dps:10:dps:5.6:56,speed:-0.1:speed:9.6:-0.96
-R	warrior/arms	25	4570	12918	mh	55.04	dps:10:dps:5.6:56,speed:-0.1:speed:9.6:-0.96
-R	warrior/arms	25	4570	12919	mh	55.04	dps:10:dps:5.6:56,speed:-0.1:speed:9.6:-0.96
+R	warrior/arms	25	4570	12918	mh	41.488	dps:7.58:dps:5.6:42.448,speed:-0.1:speed:9.6:-0.96
+R	warrior/arms	25	4570	12919	mh	41.488	dps:7.58:dps:5.6:42.448,speed:-0.1:speed:9.6:-0.96
 R	warrior/arms	25	5079	0	gear	0.0	
 R	warrior/arms	25	6063	0	gear	2.53	armor:55:armor:0.046:2.53
 R	warrior/arms	25	6540	0	gear	1.288	armor:28:armor:0.046:1.288
@@ -20611,14 +21055,14 @@ R	warrior/arms	25	15235	12752	mh	173.852	agi:3:agi:0.74:2.22,sta:6:sta:2.4:14.4,
 R	warrior/arms	25	15235	12753	mh	171.632	sta:6:sta:2.4:14.4,str:3:str:1:3,dps:28.57:dps:5.6:159.992,speed:-0.6:speed:9.6:-5.76
 R	warrior/arms	25	15235	12754	mh	168.632	sta:6:sta:2.4:14.4,dps:28.57:dps:5.6:159.992,speed:-0.6:speed:9.6:-5.76
 R	warrior/arms	25	15235	12759	mh	154.232	dps:28.57:dps:5.6:159.992,speed:-0.6:speed:9.6:-5.76
-R	warrior/arms	25	15235	12906	mh	163.832	sta:4:sta:2.4:9.6,dps:28.57:dps:5.6:159.992,speed:-0.6:speed:9.6:-5.76
-R	warrior/arms	25	15235	12908	mh	155.192	spi:4:spi:0.24:0.96,dps:28.57:dps:5.6:159.992,speed:-0.6:speed:9.6:-5.76
-R	warrior/arms	25	15235	12910	mh	169.59199999999998	spi:4:spi:0.24:0.96,sta:6:sta:2.4:14.4,dps:28.57:dps:5.6:159.992,speed:-0.6:speed:9.6:-5.76
-R	warrior/arms	25	15235	12912	mh	168.632	sta:6:sta:2.4:14.4,dps:28.57:dps:5.6:159.992,speed:-0.6:speed:9.6:-5.76
-R	warrior/arms	25	15235	12913	mh	155.192	spi:4:spi:0.24:0.96,dps:28.57:dps:5.6:159.992,speed:-0.6:speed:9.6:-5.76
-R	warrior/arms	25	15235	12916	mh	169.59199999999998	spi:4:spi:0.24:0.96,sta:6:sta:2.4:14.4,dps:28.57:dps:5.6:159.992,speed:-0.6:speed:9.6:-5.76
-R	warrior/arms	25	15235	12917	mh	154.232	dps:28.57:dps:5.6:159.992,speed:-0.6:speed:9.6:-5.76
-R	warrior/arms	25	15235	12920	mh	154.232	dps:28.57:dps:5.6:159.992,speed:-0.6:speed:9.6:-5.76
+R	warrior/arms	25	15235	12906	mh	110.51999999999998	sta:4:sta:2.4:9.6,dps:19.05:dps:5.6:106.68,speed:-0.6:speed:9.6:-5.76
+R	warrior/arms	25	15235	12908	mh	101.87999999999998	spi:4:spi:0.24:0.96,dps:19.05:dps:5.6:106.68,speed:-0.6:speed:9.6:-5.76
+R	warrior/arms	25	15235	12910	mh	116.27999999999999	spi:4:spi:0.24:0.96,sta:6:sta:2.4:14.4,dps:19.05:dps:5.6:106.68,speed:-0.6:speed:9.6:-5.76
+R	warrior/arms	25	15235	12912	mh	115.31999999999998	sta:6:sta:2.4:14.4,dps:19.05:dps:5.6:106.68,speed:-0.6:speed:9.6:-5.76
+R	warrior/arms	25	15235	12913	mh	101.87999999999998	spi:4:spi:0.24:0.96,dps:19.05:dps:5.6:106.68,speed:-0.6:speed:9.6:-5.76
+R	warrior/arms	25	15235	12916	mh	116.27999999999999	spi:4:spi:0.24:0.96,sta:6:sta:2.4:14.4,dps:19.05:dps:5.6:106.68,speed:-0.6:speed:9.6:-5.76
+R	warrior/arms	25	15235	12917	mh	100.91999999999999	dps:19.05:dps:5.6:106.68,speed:-0.6:speed:9.6:-5.76
+R	warrior/arms	25	15235	12920	mh	100.91999999999999	dps:19.05:dps:5.6:106.68,speed:-0.6:speed:9.6:-5.76
 R	warrior/arms	25	15477	0	gear	4.646	armor:101:armor:0.046:4.646
 R	warrior/arms	25	15477	12718	gear	7.045999999999999	sta:1:sta:2.4:2.4,armor:101:armor:0.046:4.646
 R	warrior/arms	25	15477	12719	gear	7.286	spi:1:spi:0.24:0.24,sta:1:sta:2.4:2.4,armor:101:armor:0.046:4.646
@@ -20671,6 +21115,12 @@ R	warrior/arms	25	286609	0	oh	83.136	spi:6:spi:0.24:1.44,armor:1776:armor:0.046:
 R	warrior/arms	34	25	0	mh	0.3150000000000004	dps:1.05:dps:5.9:6.195,speed:-0.6:speed:9.8:-5.88
 R	warrior/arms	34	1315	0	gear	25.05	sta:10:sta:2.4:24,spi:15:spi:0.07:1.05
 R	warrior/arms	34	1808	0	gear	4.07	armor:74:armor:0.055:4.07
+R	warrior/arms	34	1990	0	mh	149.709	dps:24.71:dps:5.9:145.789,speed:0.4:speed:9.8:3.92
+R	warrior/arms	34	1990	12718	mh	171.309	sta:9:sta:2.4:21.6,dps:24.71:dps:5.9:145.789,speed:0.4:speed:9.8:3.92
+R	warrior/arms	34	1990	12905	mh	129.162	sta:7:sta:2.4:16.8,dps:18.38:dps:5.9:108.442,speed:0.4:speed:9.8:3.92
+R	warrior/arms	34	2140	0	mh	29.166000000000007	dps:5.94:dps:5.9:35.046,speed:-0.6:speed:9.8:-5.88
+R	warrior/arms	34	2140	12718	mh	31.566000000000006	sta:1:sta:2.4:2.4,dps:5.94:dps:5.9:35.046,speed:-0.6:speed:9.8:-5.88
+R	warrior/arms	34	2140	12917	mh	16.245	dps:3.75:dps:5.9:22.125,speed:-0.6:speed:9.8:-5.88
 R	warrior/arms	34	2225	0	mh	23.62	dps:5:dps:5.9:29.5,speed:-0.6:speed:9.8:-5.88
 R	warrior/arms	34	2614	0	gear	1.595	armor:29:armor:0.055:1.595
 R	warrior/arms	34	3158	0	gear	1.43	armor:26:armor:0.055:1.43
@@ -20701,8 +21151,8 @@ R	warrior/arms	34	4570	12742	mh	69.14	sta:3:sta:2.4:7.2,dps:10:dps:5.9:59,speed:
 R	warrior/arms	34	4570	12743	mh	69.14	sta:3:sta:2.4:7.2,dps:10:dps:5.9:59,speed:0.3:speed:9.8:2.94
 R	warrior/arms	34	4570	12744	mh	69.14	sta:3:sta:2.4:7.2,dps:10:dps:5.9:59,speed:0.3:speed:9.8:2.94
 R	warrior/arms	34	4570	12759	mh	61.94	dps:10:dps:5.9:59,speed:0.3:speed:9.8:2.94
-R	warrior/arms	34	4570	12918	mh	61.94	dps:10:dps:5.9:59,speed:0.3:speed:9.8:2.94
-R	warrior/arms	34	4570	12919	mh	61.94	dps:10:dps:5.9:59,speed:0.3:speed:9.8:2.94
+R	warrior/arms	34	4570	12918	mh	47.662	dps:7.58:dps:5.9:44.722,speed:0.3:speed:9.8:2.94
+R	warrior/arms	34	4570	12919	mh	47.662	dps:7.58:dps:5.9:44.722,speed:0.3:speed:9.8:2.94
 R	warrior/arms	34	5079	0	gear	0.0	
 R	warrior/arms	34	6063	0	gear	3.025	armor:55:armor:0.055:3.025
 R	warrior/arms	34	6540	0	gear	1.54	armor:28:armor:0.055:1.54
@@ -20974,14 +21424,14 @@ R	warrior/arms	34	15235	12752	mh	182.33300000000003	agi:3:agi:0.75:2.25,sta:6:st
 R	warrior/arms	34	15235	12753	mh	180.08300000000003	sta:6:sta:2.4:14.4,str:3:str:1:3,dps:28.57:dps:5.9:168.563,speed:-0.6:speed:9.8:-5.88
 R	warrior/arms	34	15235	12754	mh	177.08300000000003	sta:6:sta:2.4:14.4,dps:28.57:dps:5.9:168.563,speed:-0.6:speed:9.8:-5.88
 R	warrior/arms	34	15235	12759	mh	162.68300000000002	dps:28.57:dps:5.9:168.563,speed:-0.6:speed:9.8:-5.88
-R	warrior/arms	34	15235	12906	mh	172.28300000000002	sta:4:sta:2.4:9.6,dps:28.57:dps:5.9:168.563,speed:-0.6:speed:9.8:-5.88
-R	warrior/arms	34	15235	12908	mh	162.96300000000002	spi:4:spi:0.07:0.28,dps:28.57:dps:5.9:168.563,speed:-0.6:speed:9.8:-5.88
-R	warrior/arms	34	15235	12910	mh	177.36300000000003	spi:4:spi:0.07:0.28,sta:6:sta:2.4:14.4,dps:28.57:dps:5.9:168.563,speed:-0.6:speed:9.8:-5.88
-R	warrior/arms	34	15235	12912	mh	177.08300000000003	sta:6:sta:2.4:14.4,dps:28.57:dps:5.9:168.563,speed:-0.6:speed:9.8:-5.88
-R	warrior/arms	34	15235	12913	mh	162.96300000000002	spi:4:spi:0.07:0.28,dps:28.57:dps:5.9:168.563,speed:-0.6:speed:9.8:-5.88
-R	warrior/arms	34	15235	12916	mh	177.36300000000003	spi:4:spi:0.07:0.28,sta:6:sta:2.4:14.4,dps:28.57:dps:5.9:168.563,speed:-0.6:speed:9.8:-5.88
-R	warrior/arms	34	15235	12917	mh	162.68300000000002	dps:28.57:dps:5.9:168.563,speed:-0.6:speed:9.8:-5.88
-R	warrior/arms	34	15235	12920	mh	162.68300000000002	dps:28.57:dps:5.9:168.563,speed:-0.6:speed:9.8:-5.88
+R	warrior/arms	34	15235	12906	mh	116.11500000000001	sta:4:sta:2.4:9.6,dps:19.05:dps:5.9:112.395,speed:-0.6:speed:9.8:-5.88
+R	warrior/arms	34	15235	12908	mh	106.79500000000002	spi:4:spi:0.07:0.28,dps:19.05:dps:5.9:112.395,speed:-0.6:speed:9.8:-5.88
+R	warrior/arms	34	15235	12910	mh	121.19500000000001	spi:4:spi:0.07:0.28,sta:6:sta:2.4:14.4,dps:19.05:dps:5.9:112.395,speed:-0.6:speed:9.8:-5.88
+R	warrior/arms	34	15235	12912	mh	120.91500000000002	sta:6:sta:2.4:14.4,dps:19.05:dps:5.9:112.395,speed:-0.6:speed:9.8:-5.88
+R	warrior/arms	34	15235	12913	mh	106.79500000000002	spi:4:spi:0.07:0.28,dps:19.05:dps:5.9:112.395,speed:-0.6:speed:9.8:-5.88
+R	warrior/arms	34	15235	12916	mh	121.19500000000001	spi:4:spi:0.07:0.28,sta:6:sta:2.4:14.4,dps:19.05:dps:5.9:112.395,speed:-0.6:speed:9.8:-5.88
+R	warrior/arms	34	15235	12917	mh	106.51500000000001	dps:19.05:dps:5.9:112.395,speed:-0.6:speed:9.8:-5.88
+R	warrior/arms	34	15235	12920	mh	106.51500000000001	dps:19.05:dps:5.9:112.395,speed:-0.6:speed:9.8:-5.88
 R	warrior/arms	34	15477	0	gear	5.555	armor:101:armor:0.055:5.555
 R	warrior/arms	34	15477	12718	gear	7.955	sta:1:sta:2.4:2.4,armor:101:armor:0.055:5.555
 R	warrior/arms	34	15477	12719	gear	8.024999999999999	spi:1:spi:0.07:0.07,sta:1:sta:2.4:2.4,armor:101:armor:0.055:5.555
@@ -21034,6 +21484,12 @@ R	warrior/arms	34	286609	0	oh	98.10000000000001	spi:6:spi:0.07:0.42,armor:1776:a
 R	warrior/arms	45	25	0	mh	-17.415	dps:1.05:dps:5.7:5.985,speed:-0.6:speed:39:-23.4
 R	warrior/arms	45	1315	0	gear	20.42	sta:10:sta:2:20,spi:15:spi:0.028:0.42
 R	warrior/arms	45	1808	0	gear	3.108	armor:74:armor:0.042:3.108
+R	warrior/arms	45	1990	0	mh	164.247	dps:24.71:dps:5.7:140.847,speed:0.6:speed:39:23.4
+R	warrior/arms	45	1990	12718	mh	182.247	sta:9:sta:2:18,dps:24.71:dps:5.7:140.847,speed:0.6:speed:39:23.4
+R	warrior/arms	45	1990	12905	mh	142.166	sta:7:sta:2:14,dps:18.38:dps:5.7:104.766,speed:0.6:speed:39:23.4
+R	warrior/arms	45	2140	0	mh	10.458000000000006	dps:5.94:dps:5.7:33.858,speed:-0.6:speed:39:-23.4
+R	warrior/arms	45	2140	12718	mh	12.458000000000006	sta:1:sta:2:2,dps:5.94:dps:5.7:33.858,speed:-0.6:speed:39:-23.4
+R	warrior/arms	45	2140	12917	mh	-2.0249999999999986	dps:3.75:dps:5.7:21.375,speed:-0.6:speed:39:-23.4
 R	warrior/arms	45	2225	0	mh	5.100000000000001	dps:5:dps:5.7:28.5,speed:-0.6:speed:39:-23.4
 R	warrior/arms	45	2614	0	gear	1.218	armor:29:armor:0.042:1.218
 R	warrior/arms	45	3158	0	gear	1.092	armor:26:armor:0.042:1.092
@@ -21064,8 +21520,8 @@ R	warrior/arms	45	4570	12742	mh	82.5	sta:3:sta:2:6,dps:10:dps:5.7:57,speed:0.5:s
 R	warrior/arms	45	4570	12743	mh	82.5	sta:3:sta:2:6,dps:10:dps:5.7:57,speed:0.5:speed:39:19.5
 R	warrior/arms	45	4570	12744	mh	82.5	sta:3:sta:2:6,dps:10:dps:5.7:57,speed:0.5:speed:39:19.5
 R	warrior/arms	45	4570	12759	mh	76.5	dps:10:dps:5.7:57,speed:0.5:speed:39:19.5
-R	warrior/arms	45	4570	12918	mh	76.5	dps:10:dps:5.7:57,speed:0.5:speed:39:19.5
-R	warrior/arms	45	4570	12919	mh	76.5	dps:10:dps:5.7:57,speed:0.5:speed:39:19.5
+R	warrior/arms	45	4570	12918	mh	62.706	dps:7.58:dps:5.7:43.206,speed:0.5:speed:39:19.5
+R	warrior/arms	45	4570	12919	mh	62.706	dps:7.58:dps:5.7:43.206,speed:0.5:speed:39:19.5
 R	warrior/arms	45	5079	0	gear	0.0	
 R	warrior/arms	45	6063	0	gear	2.31	armor:55:armor:0.042:2.31
 R	warrior/arms	45	6540	0	gear	1.1760000000000002	armor:28:armor:0.042:1.176
@@ -21337,14 +21793,14 @@ R	warrior/arms	45	15235	12752	mh	156.84900000000002	agi:3:agi:0.8:2.4,sta:6:sta:
 R	warrior/arms	45	15235	12753	mh	154.449	sta:6:sta:2:12,str:3:str:1:3,dps:28.57:dps:5.7:162.849,speed:-0.6:speed:39:-23.4
 R	warrior/arms	45	15235	12754	mh	151.449	sta:6:sta:2:12,dps:28.57:dps:5.7:162.849,speed:-0.6:speed:39:-23.4
 R	warrior/arms	45	15235	12759	mh	139.449	dps:28.57:dps:5.7:162.849,speed:-0.6:speed:39:-23.4
-R	warrior/arms	45	15235	12906	mh	147.449	sta:4:sta:2:8,dps:28.57:dps:5.7:162.849,speed:-0.6:speed:39:-23.4
-R	warrior/arms	45	15235	12908	mh	139.561	spi:4:spi:0.028:0.112,dps:28.57:dps:5.7:162.849,speed:-0.6:speed:39:-23.4
-R	warrior/arms	45	15235	12910	mh	151.561	spi:4:spi:0.028:0.112,sta:6:sta:2:12,dps:28.57:dps:5.7:162.849,speed:-0.6:speed:39:-23.4
-R	warrior/arms	45	15235	12912	mh	151.449	sta:6:sta:2:12,dps:28.57:dps:5.7:162.849,speed:-0.6:speed:39:-23.4
-R	warrior/arms	45	15235	12913	mh	139.561	spi:4:spi:0.028:0.112,dps:28.57:dps:5.7:162.849,speed:-0.6:speed:39:-23.4
-R	warrior/arms	45	15235	12916	mh	151.561	spi:4:spi:0.028:0.112,sta:6:sta:2:12,dps:28.57:dps:5.7:162.849,speed:-0.6:speed:39:-23.4
-R	warrior/arms	45	15235	12917	mh	139.449	dps:28.57:dps:5.7:162.849,speed:-0.6:speed:39:-23.4
-R	warrior/arms	45	15235	12920	mh	139.449	dps:28.57:dps:5.7:162.849,speed:-0.6:speed:39:-23.4
+R	warrior/arms	45	15235	12906	mh	93.185	sta:4:sta:2:8,dps:19.05:dps:5.7:108.585,speed:-0.6:speed:39:-23.4
+R	warrior/arms	45	15235	12908	mh	85.297	spi:4:spi:0.028:0.112,dps:19.05:dps:5.7:108.585,speed:-0.6:speed:39:-23.4
+R	warrior/arms	45	15235	12910	mh	97.297	spi:4:spi:0.028:0.112,sta:6:sta:2:12,dps:19.05:dps:5.7:108.585,speed:-0.6:speed:39:-23.4
+R	warrior/arms	45	15235	12912	mh	97.185	sta:6:sta:2:12,dps:19.05:dps:5.7:108.585,speed:-0.6:speed:39:-23.4
+R	warrior/arms	45	15235	12913	mh	85.297	spi:4:spi:0.028:0.112,dps:19.05:dps:5.7:108.585,speed:-0.6:speed:39:-23.4
+R	warrior/arms	45	15235	12916	mh	97.297	spi:4:spi:0.028:0.112,sta:6:sta:2:12,dps:19.05:dps:5.7:108.585,speed:-0.6:speed:39:-23.4
+R	warrior/arms	45	15235	12917	mh	85.185	dps:19.05:dps:5.7:108.585,speed:-0.6:speed:39:-23.4
+R	warrior/arms	45	15235	12920	mh	85.185	dps:19.05:dps:5.7:108.585,speed:-0.6:speed:39:-23.4
 R	warrior/arms	45	15477	0	gear	4.242	armor:101:armor:0.042:4.242
 R	warrior/arms	45	15477	12718	gear	6.242	sta:1:sta:2:2,armor:101:armor:0.042:4.242
 R	warrior/arms	45	15477	12719	gear	6.27	spi:1:spi:0.028:0.028,sta:1:sta:2:2,armor:101:armor:0.042:4.242
@@ -21397,6 +21853,12 @@ R	warrior/arms	45	286609	0	oh	74.76	spi:6:spi:0.028:0.168,armor:1776:armor:0.042
 R	warrior/arms	55	25	0	mh	-13.29	dps:1.05:dps:6.2:6.51,speed:-0.6:speed:33:-19.8
 R	warrior/arms	55	1315	0	gear	16.0	sta:10:sta:1.6:16
 R	warrior/arms	55	1808	0	gear	2.738	armor:74:armor:0.037:2.738
+R	warrior/arms	55	1990	0	mh	156.502	dps:24.71:dps:6.2:153.202,speed:0.1:speed:33:3.3
+R	warrior/arms	55	1990	12718	mh	170.90200000000002	sta:9:sta:1.6:14.4,dps:24.71:dps:6.2:153.202,speed:0.1:speed:33:3.3
+R	warrior/arms	55	1990	12905	mh	128.45600000000002	sta:7:sta:1.6:11.2,dps:18.38:dps:6.2:113.956,speed:0.1:speed:33:3.3
+R	warrior/arms	55	2140	0	mh	17.028000000000002	dps:5.94:dps:6.2:36.828,speed:-0.6:speed:33:-19.8
+R	warrior/arms	55	2140	12718	mh	18.628000000000004	sta:1:sta:1.6:1.6,dps:5.94:dps:6.2:36.828,speed:-0.6:speed:33:-19.8
+R	warrior/arms	55	2140	12917	mh	3.4499999999999993	dps:3.75:dps:6.2:23.25,speed:-0.6:speed:33:-19.8
 R	warrior/arms	55	2225	0	mh	11.2	dps:5:dps:6.2:31,speed:-0.6:speed:33:-19.8
 R	warrior/arms	55	2614	0	gear	1.073	armor:29:armor:0.037:1.073
 R	warrior/arms	55	3158	0	gear	0.962	armor:26:armor:0.037:0.962
@@ -21427,8 +21889,8 @@ R	warrior/arms	55	4570	12742	mh	66.8	sta:3:sta:1.6:4.8,dps:10:dps:6.2:62
 R	warrior/arms	55	4570	12743	mh	66.8	sta:3:sta:1.6:4.8,dps:10:dps:6.2:62
 R	warrior/arms	55	4570	12744	mh	66.8	sta:3:sta:1.6:4.8,dps:10:dps:6.2:62
 R	warrior/arms	55	4570	12759	mh	62.0	dps:10:dps:6.2:62
-R	warrior/arms	55	4570	12918	mh	62.0	dps:10:dps:6.2:62
-R	warrior/arms	55	4570	12919	mh	62.0	dps:10:dps:6.2:62
+R	warrior/arms	55	4570	12918	mh	46.996	dps:7.58:dps:6.2:46.996
+R	warrior/arms	55	4570	12919	mh	46.996	dps:7.58:dps:6.2:46.996
 R	warrior/arms	55	5079	0	gear	0.0	
 R	warrior/arms	55	6063	0	gear	2.0349999999999997	armor:55:armor:0.037:2.035
 R	warrior/arms	55	6540	0	gear	1.036	armor:28:armor:0.037:1.036
@@ -21700,14 +22162,14 @@ R	warrior/arms	55	15235	12752	mh	172.364	agi:3:agi:0.81:2.43,sta:6:sta:1.6:9.6,s
 R	warrior/arms	55	15235	12753	mh	169.934	sta:6:sta:1.6:9.6,str:3:str:1:3,dps:28.57:dps:6.2:177.134,speed:-0.6:speed:33:-19.8
 R	warrior/arms	55	15235	12754	mh	166.934	sta:6:sta:1.6:9.6,dps:28.57:dps:6.2:177.134,speed:-0.6:speed:33:-19.8
 R	warrior/arms	55	15235	12759	mh	157.334	dps:28.57:dps:6.2:177.134,speed:-0.6:speed:33:-19.8
-R	warrior/arms	55	15235	12906	mh	163.734	sta:4:sta:1.6:6.4,dps:28.57:dps:6.2:177.134,speed:-0.6:speed:33:-19.8
-R	warrior/arms	55	15235	12908	mh	157.334	dps:28.57:dps:6.2:177.134,speed:-0.6:speed:33:-19.8
-R	warrior/arms	55	15235	12910	mh	166.934	sta:6:sta:1.6:9.6,dps:28.57:dps:6.2:177.134,speed:-0.6:speed:33:-19.8
-R	warrior/arms	55	15235	12912	mh	166.934	sta:6:sta:1.6:9.6,dps:28.57:dps:6.2:177.134,speed:-0.6:speed:33:-19.8
-R	warrior/arms	55	15235	12913	mh	157.334	dps:28.57:dps:6.2:177.134,speed:-0.6:speed:33:-19.8
-R	warrior/arms	55	15235	12916	mh	166.934	sta:6:sta:1.6:9.6,dps:28.57:dps:6.2:177.134,speed:-0.6:speed:33:-19.8
-R	warrior/arms	55	15235	12917	mh	157.334	dps:28.57:dps:6.2:177.134,speed:-0.6:speed:33:-19.8
-R	warrior/arms	55	15235	12920	mh	157.334	dps:28.57:dps:6.2:177.134,speed:-0.6:speed:33:-19.8
+R	warrior/arms	55	15235	12906	mh	104.71000000000002	sta:4:sta:1.6:6.4,dps:19.05:dps:6.2:118.11,speed:-0.6:speed:33:-19.8
+R	warrior/arms	55	15235	12908	mh	98.31000000000002	dps:19.05:dps:6.2:118.11,speed:-0.6:speed:33:-19.8
+R	warrior/arms	55	15235	12910	mh	107.91000000000001	sta:6:sta:1.6:9.6,dps:19.05:dps:6.2:118.11,speed:-0.6:speed:33:-19.8
+R	warrior/arms	55	15235	12912	mh	107.91000000000001	sta:6:sta:1.6:9.6,dps:19.05:dps:6.2:118.11,speed:-0.6:speed:33:-19.8
+R	warrior/arms	55	15235	12913	mh	98.31000000000002	dps:19.05:dps:6.2:118.11,speed:-0.6:speed:33:-19.8
+R	warrior/arms	55	15235	12916	mh	107.91000000000001	sta:6:sta:1.6:9.6,dps:19.05:dps:6.2:118.11,speed:-0.6:speed:33:-19.8
+R	warrior/arms	55	15235	12917	mh	98.31000000000002	dps:19.05:dps:6.2:118.11,speed:-0.6:speed:33:-19.8
+R	warrior/arms	55	15235	12920	mh	98.31000000000002	dps:19.05:dps:6.2:118.11,speed:-0.6:speed:33:-19.8
 R	warrior/arms	55	15477	0	gear	3.7369999999999997	armor:101:armor:0.037:3.737
 R	warrior/arms	55	15477	12718	gear	5.337	sta:1:sta:1.6:1.6,armor:101:armor:0.037:3.737
 R	warrior/arms	55	15477	12719	gear	5.337	sta:1:sta:1.6:1.6,armor:101:armor:0.037:3.737
@@ -21760,6 +22222,12 @@ R	warrior/arms	55	286609	0	oh	65.712	armor:1776:armor:0.037:65.712
 R	warrior/arms	60	25	0	mh	-36.405	dps:1.05:dps:5.9:6.195,speed:-0.6:speed:71:-42.6
 R	warrior/arms	60	1315	0	gear	14.0	sta:10:sta:1.4:14
 R	warrior/arms	60	1808	0	gear	2.6639999999999997	armor:74:armor:0.036:2.664
+R	warrior/arms	60	1990	0	mh	188.389	dps:24.71:dps:5.9:145.789,speed:0.6:speed:71:42.6
+R	warrior/arms	60	1990	12718	mh	200.989	sta:9:sta:1.4:12.6,dps:24.71:dps:5.9:145.789,speed:0.6:speed:71:42.6
+R	warrior/arms	60	1990	12905	mh	160.842	sta:7:sta:1.4:9.8,dps:18.38:dps:5.9:108.442,speed:0.6:speed:71:42.6
+R	warrior/arms	60	2140	0	mh	-7.553999999999995	dps:5.94:dps:5.9:35.046,speed:-0.6:speed:71:-42.6
+R	warrior/arms	60	2140	12718	mh	-6.153999999999996	sta:1:sta:1.4:1.4,dps:5.94:dps:5.9:35.046,speed:-0.6:speed:71:-42.6
+R	warrior/arms	60	2140	12917	mh	-20.475	dps:3.75:dps:5.9:22.125,speed:-0.6:speed:71:-42.6
 R	warrior/arms	60	2225	0	mh	-13.100000000000001	dps:5:dps:5.9:29.5,speed:-0.6:speed:71:-42.6
 R	warrior/arms	60	2614	0	gear	1.0439999999999998	armor:29:armor:0.036:1.044
 R	warrior/arms	60	3158	0	gear	0.9359999999999999	armor:26:armor:0.036:0.936
@@ -21790,8 +22258,8 @@ R	warrior/arms	60	4570	12742	mh	105.79999999999998	sta:3:sta:1.4:4.2,dps:10:dps:
 R	warrior/arms	60	4570	12743	mh	105.79999999999998	sta:3:sta:1.4:4.2,dps:10:dps:5.9:59,speed:0.6:speed:71:42.6
 R	warrior/arms	60	4570	12744	mh	105.79999999999998	sta:3:sta:1.4:4.2,dps:10:dps:5.9:59,speed:0.6:speed:71:42.6
 R	warrior/arms	60	4570	12759	mh	101.59999999999997	dps:10:dps:5.9:59,speed:0.6:speed:71:42.6
-R	warrior/arms	60	4570	12918	mh	101.59999999999997	dps:10:dps:5.9:59,speed:0.6:speed:71:42.6
-R	warrior/arms	60	4570	12919	mh	101.59999999999997	dps:10:dps:5.9:59,speed:0.6:speed:71:42.6
+R	warrior/arms	60	4570	12918	mh	87.32199999999997	dps:7.58:dps:5.9:44.722,speed:0.6:speed:71:42.6
+R	warrior/arms	60	4570	12919	mh	87.32199999999997	dps:7.58:dps:5.9:44.722,speed:0.6:speed:71:42.6
 R	warrior/arms	60	5079	0	gear	0.0	
 R	warrior/arms	60	6063	0	gear	1.9799999999999998	armor:55:armor:0.036:1.98
 R	warrior/arms	60	6540	0	gear	1.008	armor:28:armor:0.036:1.008
@@ -22063,14 +22531,14 @@ R	warrior/arms	60	15235	12752	mh	139.73300000000003	agi:3:agi:0.79:2.37,sta:6:st
 R	warrior/arms	60	15235	12753	mh	137.36300000000003	sta:6:sta:1.4:8.4,str:3:str:1:3,dps:28.57:dps:5.9:168.563,speed:-0.6:speed:71:-42.6
 R	warrior/arms	60	15235	12754	mh	134.36300000000003	sta:6:sta:1.4:8.4,dps:28.57:dps:5.9:168.563,speed:-0.6:speed:71:-42.6
 R	warrior/arms	60	15235	12759	mh	125.96300000000002	dps:28.57:dps:5.9:168.563,speed:-0.6:speed:71:-42.6
-R	warrior/arms	60	15235	12906	mh	131.56300000000002	sta:4:sta:1.4:5.6,dps:28.57:dps:5.9:168.563,speed:-0.6:speed:71:-42.6
-R	warrior/arms	60	15235	12908	mh	125.96300000000002	dps:28.57:dps:5.9:168.563,speed:-0.6:speed:71:-42.6
-R	warrior/arms	60	15235	12910	mh	134.36300000000003	sta:6:sta:1.4:8.4,dps:28.57:dps:5.9:168.563,speed:-0.6:speed:71:-42.6
-R	warrior/arms	60	15235	12912	mh	134.36300000000003	sta:6:sta:1.4:8.4,dps:28.57:dps:5.9:168.563,speed:-0.6:speed:71:-42.6
-R	warrior/arms	60	15235	12913	mh	125.96300000000002	dps:28.57:dps:5.9:168.563,speed:-0.6:speed:71:-42.6
-R	warrior/arms	60	15235	12916	mh	134.36300000000003	sta:6:sta:1.4:8.4,dps:28.57:dps:5.9:168.563,speed:-0.6:speed:71:-42.6
-R	warrior/arms	60	15235	12917	mh	125.96300000000002	dps:28.57:dps:5.9:168.563,speed:-0.6:speed:71:-42.6
-R	warrior/arms	60	15235	12920	mh	125.96300000000002	dps:28.57:dps:5.9:168.563,speed:-0.6:speed:71:-42.6
+R	warrior/arms	60	15235	12906	mh	75.39500000000001	sta:4:sta:1.4:5.6,dps:19.05:dps:5.9:112.395,speed:-0.6:speed:71:-42.6
+R	warrior/arms	60	15235	12908	mh	69.79500000000002	dps:19.05:dps:5.9:112.395,speed:-0.6:speed:71:-42.6
+R	warrior/arms	60	15235	12910	mh	78.19500000000002	sta:6:sta:1.4:8.4,dps:19.05:dps:5.9:112.395,speed:-0.6:speed:71:-42.6
+R	warrior/arms	60	15235	12912	mh	78.19500000000002	sta:6:sta:1.4:8.4,dps:19.05:dps:5.9:112.395,speed:-0.6:speed:71:-42.6
+R	warrior/arms	60	15235	12913	mh	69.79500000000002	dps:19.05:dps:5.9:112.395,speed:-0.6:speed:71:-42.6
+R	warrior/arms	60	15235	12916	mh	78.19500000000002	sta:6:sta:1.4:8.4,dps:19.05:dps:5.9:112.395,speed:-0.6:speed:71:-42.6
+R	warrior/arms	60	15235	12917	mh	69.79500000000002	dps:19.05:dps:5.9:112.395,speed:-0.6:speed:71:-42.6
+R	warrior/arms	60	15235	12920	mh	69.79500000000002	dps:19.05:dps:5.9:112.395,speed:-0.6:speed:71:-42.6
 R	warrior/arms	60	15477	0	gear	3.6359999999999997	armor:101:armor:0.036:3.636
 R	warrior/arms	60	15477	12718	gear	5.036	sta:1:sta:1.4:1.4,armor:101:armor:0.036:3.636
 R	warrior/arms	60	15477	12719	gear	5.036	sta:1:sta:1.4:1.4,armor:101:armor:0.036:3.636
@@ -22123,6 +22591,12 @@ R	warrior/arms	60	286609	0	oh	63.93599999999999	armor:1776:armor:0.036:63.936
 R	warrior/fury	12	25	0	mh	6.09	dps:1.05:dps:5.8:6.09
 R	warrior/fury	12	1315	0	gear	34.7	sta:10:sta:2.3:23,spi:15:spi:0.78:11.7
 R	warrior/fury	12	1808	0	gear	3.552	armor:74:armor:0.048:3.552
+R	warrior/fury	12	1990	0	mh	143.318	dps:24.71:dps:5.8:143.318
+R	warrior/fury	12	1990	12718	mh	164.018	sta:9:sta:2.3:20.7,dps:24.71:dps:5.8:143.318
+R	warrior/fury	12	1990	12905	mh	122.70399999999998	sta:7:sta:2.3:16.1,dps:18.38:dps:5.8:106.604
+R	warrior/fury	12	2140	0	mh	34.452	dps:5.94:dps:5.8:34.452
+R	warrior/fury	12	2140	12718	mh	36.751999999999995	sta:1:sta:2.3:2.3,dps:5.94:dps:5.8:34.452
+R	warrior/fury	12	2140	12917	mh	21.75	dps:3.75:dps:5.8:21.75
 R	warrior/fury	12	2225	0	mh	29.0	dps:5:dps:5.8:29
 R	warrior/fury	12	2614	0	gear	1.3920000000000001	armor:29:armor:0.048:1.392
 R	warrior/fury	12	3158	0	gear	1.248	armor:26:armor:0.048:1.248
@@ -22153,8 +22627,8 @@ R	warrior/fury	12	4570	12742	mh	64.9	sta:3:sta:2.3:6.9,dps:10:dps:5.8:58
 R	warrior/fury	12	4570	12743	mh	64.9	sta:3:sta:2.3:6.9,dps:10:dps:5.8:58
 R	warrior/fury	12	4570	12744	mh	64.9	sta:3:sta:2.3:6.9,dps:10:dps:5.8:58
 R	warrior/fury	12	4570	12759	mh	58.0	dps:10:dps:5.8:58
-R	warrior/fury	12	4570	12918	mh	58.0	dps:10:dps:5.8:58
-R	warrior/fury	12	4570	12919	mh	58.0	dps:10:dps:5.8:58
+R	warrior/fury	12	4570	12918	mh	43.964	dps:7.58:dps:5.8:43.964
+R	warrior/fury	12	4570	12919	mh	43.964	dps:7.58:dps:5.8:43.964
 R	warrior/fury	12	5079	0	gear	0.0	
 R	warrior/fury	12	6063	0	gear	2.64	armor:55:armor:0.048:2.64
 R	warrior/fury	12	6540	0	gear	1.344	armor:28:armor:0.048:1.344
@@ -22426,14 +22900,14 @@ R	warrior/fury	12	15235	12752	mh	184.15599999999998	agi:3:agi:0.55:1.65,sta:6:st
 R	warrior/fury	12	15235	12753	mh	182.50599999999997	sta:6:sta:2.3:13.8,str:3:str:1:3,dps:28.57:dps:5.8:165.706
 R	warrior/fury	12	15235	12754	mh	179.506	sta:6:sta:2.3:13.8,dps:28.57:dps:5.8:165.706
 R	warrior/fury	12	15235	12759	mh	165.706	dps:28.57:dps:5.8:165.706
-R	warrior/fury	12	15235	12906	mh	174.90599999999998	sta:4:sta:2.3:9.2,dps:28.57:dps:5.8:165.706
-R	warrior/fury	12	15235	12908	mh	168.826	spi:4:spi:0.78:3.12,dps:28.57:dps:5.8:165.706
-R	warrior/fury	12	15235	12910	mh	182.62599999999998	spi:4:spi:0.78:3.12,sta:6:sta:2.3:13.8,dps:28.57:dps:5.8:165.706
-R	warrior/fury	12	15235	12912	mh	179.506	sta:6:sta:2.3:13.8,dps:28.57:dps:5.8:165.706
-R	warrior/fury	12	15235	12913	mh	168.826	spi:4:spi:0.78:3.12,dps:28.57:dps:5.8:165.706
-R	warrior/fury	12	15235	12916	mh	182.62599999999998	spi:4:spi:0.78:3.12,sta:6:sta:2.3:13.8,dps:28.57:dps:5.8:165.706
-R	warrior/fury	12	15235	12917	mh	165.706	dps:28.57:dps:5.8:165.706
-R	warrior/fury	12	15235	12920	mh	165.706	dps:28.57:dps:5.8:165.706
+R	warrior/fury	12	15235	12906	mh	119.69	sta:4:sta:2.3:9.2,dps:19.05:dps:5.8:110.49
+R	warrior/fury	12	15235	12908	mh	113.61	spi:4:spi:0.78:3.12,dps:19.05:dps:5.8:110.49
+R	warrior/fury	12	15235	12910	mh	127.41	spi:4:spi:0.78:3.12,sta:6:sta:2.3:13.8,dps:19.05:dps:5.8:110.49
+R	warrior/fury	12	15235	12912	mh	124.28999999999999	sta:6:sta:2.3:13.8,dps:19.05:dps:5.8:110.49
+R	warrior/fury	12	15235	12913	mh	113.61	spi:4:spi:0.78:3.12,dps:19.05:dps:5.8:110.49
+R	warrior/fury	12	15235	12916	mh	127.41	spi:4:spi:0.78:3.12,sta:6:sta:2.3:13.8,dps:19.05:dps:5.8:110.49
+R	warrior/fury	12	15235	12917	mh	110.49	dps:19.05:dps:5.8:110.49
+R	warrior/fury	12	15235	12920	mh	110.49	dps:19.05:dps:5.8:110.49
 R	warrior/fury	12	15477	0	gear	4.848	armor:101:armor:0.048:4.848
 R	warrior/fury	12	15477	12718	gear	7.148	sta:1:sta:2.3:2.3,armor:101:armor:0.048:4.848
 R	warrior/fury	12	15477	12719	gear	7.928	spi:1:spi:0.78:0.78,sta:1:sta:2.3:2.3,armor:101:armor:0.048:4.848
@@ -22486,6 +22960,12 @@ R	warrior/fury	12	286609	0	oh	89.928	spi:6:spi:0.78:4.68,armor:1776:armor:0.048:
 R	warrior/fury	25	25	0	mh	1.8900000000000001	dps:1.05:dps:4.2:4.41,speed:-0.6:speed:4.2:-2.52
 R	warrior/fury	25	1315	0	gear	27.9	sta:10:sta:2.4:24,spi:15:spi:0.26:3.9
 R	warrior/fury	25	1808	0	gear	3.848	armor:74:armor:0.052:3.848
+R	warrior/fury	25	1990	0	mh	106.09200000000001	dps:24.71:dps:4.2:103.782,speed:0.55:speed:4.2:2.31
+R	warrior/fury	25	1990	12718	mh	127.69200000000001	sta:9:sta:2.4:21.6,dps:24.71:dps:4.2:103.782,speed:0.55:speed:4.2:2.31
+R	warrior/fury	25	1990	12905	mh	96.306	sta:7:sta:2.4:16.8,dps:18.38:dps:4.2:77.196,speed:0.55:speed:4.2:2.31
+R	warrior/fury	25	2140	0	mh	22.428000000000004	dps:5.94:dps:4.2:24.948,speed:-0.6:speed:4.2:-2.52
+R	warrior/fury	25	2140	12718	mh	24.828000000000003	sta:1:sta:2.4:2.4,dps:5.94:dps:4.2:24.948,speed:-0.6:speed:4.2:-2.52
+R	warrior/fury	25	2140	12917	mh	13.23	dps:3.75:dps:4.2:15.75,speed:-0.6:speed:4.2:-2.52
 R	warrior/fury	25	2225	0	mh	18.48	dps:5:dps:4.2:21,speed:-0.6:speed:4.2:-2.52
 R	warrior/fury	25	2614	0	gear	1.508	armor:29:armor:0.052:1.508
 R	warrior/fury	25	3158	0	gear	1.3519999999999999	armor:26:armor:0.052:1.352
@@ -22516,8 +22996,8 @@ R	warrior/fury	25	4570	12742	mh	51.09	sta:3:sta:2.4:7.2,dps:10:dps:4.2:42,speed:
 R	warrior/fury	25	4570	12743	mh	51.09	sta:3:sta:2.4:7.2,dps:10:dps:4.2:42,speed:0.45:speed:4.2:1.89
 R	warrior/fury	25	4570	12744	mh	51.09	sta:3:sta:2.4:7.2,dps:10:dps:4.2:42,speed:0.45:speed:4.2:1.89
 R	warrior/fury	25	4570	12759	mh	43.89	dps:10:dps:4.2:42,speed:0.45:speed:4.2:1.89
-R	warrior/fury	25	4570	12918	mh	43.89	dps:10:dps:4.2:42,speed:0.45:speed:4.2:1.89
-R	warrior/fury	25	4570	12919	mh	43.89	dps:10:dps:4.2:42,speed:0.45:speed:4.2:1.89
+R	warrior/fury	25	4570	12918	mh	33.726	dps:7.58:dps:4.2:31.836,speed:0.45:speed:4.2:1.89
+R	warrior/fury	25	4570	12919	mh	33.726	dps:7.58:dps:4.2:31.836,speed:0.45:speed:4.2:1.89
 R	warrior/fury	25	5079	0	gear	0.0	
 R	warrior/fury	25	6063	0	gear	2.86	armor:55:armor:0.052:2.86
 R	warrior/fury	25	6540	0	gear	1.456	armor:28:armor:0.052:1.456
@@ -22789,14 +23269,14 @@ R	warrior/fury	25	15235	12752	mh	136.73399999999998	agi:3:agi:0.62:1.86,sta:6:st
 R	warrior/fury	25	15235	12753	mh	134.874	sta:6:sta:2.4:14.4,str:3:str:1:3,dps:28.57:dps:4.2:119.994,speed:-0.6:speed:4.2:-2.52
 R	warrior/fury	25	15235	12754	mh	131.874	sta:6:sta:2.4:14.4,dps:28.57:dps:4.2:119.994,speed:-0.6:speed:4.2:-2.52
 R	warrior/fury	25	15235	12759	mh	117.474	dps:28.57:dps:4.2:119.994,speed:-0.6:speed:4.2:-2.52
-R	warrior/fury	25	15235	12906	mh	127.074	sta:4:sta:2.4:9.6,dps:28.57:dps:4.2:119.994,speed:-0.6:speed:4.2:-2.52
-R	warrior/fury	25	15235	12908	mh	118.51400000000001	spi:4:spi:0.26:1.04,dps:28.57:dps:4.2:119.994,speed:-0.6:speed:4.2:-2.52
-R	warrior/fury	25	15235	12910	mh	132.914	spi:4:spi:0.26:1.04,sta:6:sta:2.4:14.4,dps:28.57:dps:4.2:119.994,speed:-0.6:speed:4.2:-2.52
-R	warrior/fury	25	15235	12912	mh	131.874	sta:6:sta:2.4:14.4,dps:28.57:dps:4.2:119.994,speed:-0.6:speed:4.2:-2.52
-R	warrior/fury	25	15235	12913	mh	118.51400000000001	spi:4:spi:0.26:1.04,dps:28.57:dps:4.2:119.994,speed:-0.6:speed:4.2:-2.52
-R	warrior/fury	25	15235	12916	mh	132.914	spi:4:spi:0.26:1.04,sta:6:sta:2.4:14.4,dps:28.57:dps:4.2:119.994,speed:-0.6:speed:4.2:-2.52
-R	warrior/fury	25	15235	12917	mh	117.474	dps:28.57:dps:4.2:119.994,speed:-0.6:speed:4.2:-2.52
-R	warrior/fury	25	15235	12920	mh	117.474	dps:28.57:dps:4.2:119.994,speed:-0.6:speed:4.2:-2.52
+R	warrior/fury	25	15235	12906	mh	87.09	sta:4:sta:2.4:9.6,dps:19.05:dps:4.2:80.01,speed:-0.6:speed:4.2:-2.52
+R	warrior/fury	25	15235	12908	mh	78.53000000000002	spi:4:spi:0.26:1.04,dps:19.05:dps:4.2:80.01,speed:-0.6:speed:4.2:-2.52
+R	warrior/fury	25	15235	12910	mh	92.93	spi:4:spi:0.26:1.04,sta:6:sta:2.4:14.4,dps:19.05:dps:4.2:80.01,speed:-0.6:speed:4.2:-2.52
+R	warrior/fury	25	15235	12912	mh	91.89	sta:6:sta:2.4:14.4,dps:19.05:dps:4.2:80.01,speed:-0.6:speed:4.2:-2.52
+R	warrior/fury	25	15235	12913	mh	78.53000000000002	spi:4:spi:0.26:1.04,dps:19.05:dps:4.2:80.01,speed:-0.6:speed:4.2:-2.52
+R	warrior/fury	25	15235	12916	mh	92.93	spi:4:spi:0.26:1.04,sta:6:sta:2.4:14.4,dps:19.05:dps:4.2:80.01,speed:-0.6:speed:4.2:-2.52
+R	warrior/fury	25	15235	12917	mh	77.49000000000001	dps:19.05:dps:4.2:80.01,speed:-0.6:speed:4.2:-2.52
+R	warrior/fury	25	15235	12920	mh	77.49000000000001	dps:19.05:dps:4.2:80.01,speed:-0.6:speed:4.2:-2.52
 R	warrior/fury	25	15477	0	gear	5.252	armor:101:armor:0.052:5.252
 R	warrior/fury	25	15477	12718	gear	7.651999999999999	sta:1:sta:2.4:2.4,armor:101:armor:0.052:5.252
 R	warrior/fury	25	15477	12719	gear	7.912	spi:1:spi:0.26:0.26,sta:1:sta:2.4:2.4,armor:101:armor:0.052:5.252
@@ -22849,6 +23329,12 @@ R	warrior/fury	25	286609	0	oh	93.91199999999999	spi:6:spi:0.26:1.56,armor:1776:a
 R	warrior/fury	34	25	0	mh	4.305	dps:1.05:dps:4.1:4.305
 R	warrior/fury	34	1315	0	gear	32.55	sta:10:sta:2.1:21,spi:15:spi:0.77:11.55
 R	warrior/fury	34	1808	0	gear	3.404	armor:74:armor:0.046:3.404
+R	warrior/fury	34	1990	0	mh	101.31099999999999	dps:24.71:dps:4.1:101.311
+R	warrior/fury	34	1990	12718	mh	120.211	sta:9:sta:2.1:18.9,dps:24.71:dps:4.1:101.311
+R	warrior/fury	34	1990	12905	mh	90.05799999999999	sta:7:sta:2.1:14.7,dps:18.38:dps:4.1:75.358
+R	warrior/fury	34	2140	0	mh	24.354	dps:5.94:dps:4.1:24.354
+R	warrior/fury	34	2140	12718	mh	26.454	sta:1:sta:2.1:2.1,dps:5.94:dps:4.1:24.354
+R	warrior/fury	34	2140	12917	mh	15.374999999999998	dps:3.75:dps:4.1:15.375
 R	warrior/fury	34	2225	0	mh	20.5	dps:5:dps:4.1:20.5
 R	warrior/fury	34	2614	0	gear	1.334	armor:29:armor:0.046:1.334
 R	warrior/fury	34	3158	0	gear	1.196	armor:26:armor:0.046:1.196
@@ -22879,8 +23365,8 @@ R	warrior/fury	34	4570	12742	mh	47.3	sta:3:sta:2.1:6.3,dps:10:dps:4.1:41
 R	warrior/fury	34	4570	12743	mh	47.3	sta:3:sta:2.1:6.3,dps:10:dps:4.1:41
 R	warrior/fury	34	4570	12744	mh	47.3	sta:3:sta:2.1:6.3,dps:10:dps:4.1:41
 R	warrior/fury	34	4570	12759	mh	41.0	dps:10:dps:4.1:41
-R	warrior/fury	34	4570	12918	mh	41.0	dps:10:dps:4.1:41
-R	warrior/fury	34	4570	12919	mh	41.0	dps:10:dps:4.1:41
+R	warrior/fury	34	4570	12918	mh	31.077999999999996	dps:7.58:dps:4.1:31.078
+R	warrior/fury	34	4570	12919	mh	31.077999999999996	dps:7.58:dps:4.1:31.078
 R	warrior/fury	34	5079	0	gear	0.0	
 R	warrior/fury	34	6063	0	gear	2.53	armor:55:armor:0.046:2.53
 R	warrior/fury	34	6540	0	gear	1.288	armor:28:armor:0.046:1.288
@@ -23152,14 +23638,14 @@ R	warrior/fury	34	15235	12752	mh	134.47699999999998	agi:3:agi:0.58:1.74,sta:6:st
 R	warrior/fury	34	15235	12753	mh	132.737	sta:6:sta:2.1:12.6,str:3:str:1:3,dps:28.57:dps:4.1:117.137
 R	warrior/fury	34	15235	12754	mh	129.737	sta:6:sta:2.1:12.6,dps:28.57:dps:4.1:117.137
 R	warrior/fury	34	15235	12759	mh	117.13699999999999	dps:28.57:dps:4.1:117.137
-R	warrior/fury	34	15235	12906	mh	125.53699999999999	sta:4:sta:2.1:8.4,dps:28.57:dps:4.1:117.137
-R	warrior/fury	34	15235	12908	mh	120.21699999999998	spi:4:spi:0.77:3.08,dps:28.57:dps:4.1:117.137
-R	warrior/fury	34	15235	12910	mh	132.81699999999998	spi:4:spi:0.77:3.08,sta:6:sta:2.1:12.6,dps:28.57:dps:4.1:117.137
-R	warrior/fury	34	15235	12912	mh	129.737	sta:6:sta:2.1:12.6,dps:28.57:dps:4.1:117.137
-R	warrior/fury	34	15235	12913	mh	120.21699999999998	spi:4:spi:0.77:3.08,dps:28.57:dps:4.1:117.137
-R	warrior/fury	34	15235	12916	mh	132.81699999999998	spi:4:spi:0.77:3.08,sta:6:sta:2.1:12.6,dps:28.57:dps:4.1:117.137
-R	warrior/fury	34	15235	12917	mh	117.13699999999999	dps:28.57:dps:4.1:117.137
-R	warrior/fury	34	15235	12920	mh	117.13699999999999	dps:28.57:dps:4.1:117.137
+R	warrior/fury	34	15235	12906	mh	86.505	sta:4:sta:2.1:8.4,dps:19.05:dps:4.1:78.105
+R	warrior/fury	34	15235	12908	mh	81.18499999999999	spi:4:spi:0.77:3.08,dps:19.05:dps:4.1:78.105
+R	warrior/fury	34	15235	12910	mh	93.785	spi:4:spi:0.77:3.08,sta:6:sta:2.1:12.6,dps:19.05:dps:4.1:78.105
+R	warrior/fury	34	15235	12912	mh	90.70499999999998	sta:6:sta:2.1:12.6,dps:19.05:dps:4.1:78.105
+R	warrior/fury	34	15235	12913	mh	81.18499999999999	spi:4:spi:0.77:3.08,dps:19.05:dps:4.1:78.105
+R	warrior/fury	34	15235	12916	mh	93.785	spi:4:spi:0.77:3.08,sta:6:sta:2.1:12.6,dps:19.05:dps:4.1:78.105
+R	warrior/fury	34	15235	12917	mh	78.10499999999999	dps:19.05:dps:4.1:78.105
+R	warrior/fury	34	15235	12920	mh	78.10499999999999	dps:19.05:dps:4.1:78.105
 R	warrior/fury	34	15477	0	gear	4.646	armor:101:armor:0.046:4.646
 R	warrior/fury	34	15477	12718	gear	6.746	sta:1:sta:2.1:2.1,armor:101:armor:0.046:4.646
 R	warrior/fury	34	15477	12719	gear	7.516	spi:1:spi:0.77:0.77,sta:1:sta:2.1:2.1,armor:101:armor:0.046:4.646
@@ -23212,6 +23698,12 @@ R	warrior/fury	34	286609	0	oh	86.316	spi:6:spi:0.77:4.62,armor:1776:armor:0.046:
 R	warrior/fury	45	25	0	mh	-0.6999999999999997	dps:1.05:dps:3:3.15,speed:-0.5:speed:7.7:-3.85
 R	warrior/fury	45	1315	0	gear	25.3	sta:10:sta:1.6:16,spi:15:spi:0.62:9.3
 R	warrior/fury	45	1808	0	gear	2.516	armor:74:armor:0.034:2.516
+R	warrior/fury	45	1990	0	mh	78.75	dps:24.71:dps:3:74.13,speed:0.6:speed:7.7:4.62
+R	warrior/fury	45	1990	12718	mh	93.15	sta:9:sta:1.6:14.4,dps:24.71:dps:3:74.13,speed:0.6:speed:7.7:4.62
+R	warrior/fury	45	1990	12905	mh	70.96000000000001	sta:7:sta:1.6:11.2,dps:18.38:dps:3:55.14,speed:0.6:speed:7.7:4.62
+R	warrior/fury	45	2140	0	mh	13.2	dps:5.94:dps:3:17.82,speed:-0.6:speed:7.7:-4.62
+R	warrior/fury	45	2140	12718	mh	14.8	sta:1:sta:1.6:1.6,dps:5.94:dps:3:17.82,speed:-0.6:speed:7.7:-4.62
+R	warrior/fury	45	2140	12917	mh	6.63	dps:3.75:dps:3:11.25,speed:-0.6:speed:7.7:-4.62
 R	warrior/fury	45	2225	0	mh	10.379999999999999	dps:5:dps:3:15,speed:-0.6:speed:7.7:-4.62
 R	warrior/fury	45	2614	0	gear	0.9860000000000001	armor:29:armor:0.034:0.986
 R	warrior/fury	45	3158	0	gear	0.8840000000000001	armor:26:armor:0.034:0.884
@@ -23242,8 +23734,8 @@ R	warrior/fury	45	4570	12742	mh	39.419999999999995	sta:3:sta:1.6:4.8,dps:10:dps:
 R	warrior/fury	45	4570	12743	mh	39.419999999999995	sta:3:sta:1.6:4.8,dps:10:dps:3:30,speed:0.6:speed:7.7:4.62
 R	warrior/fury	45	4570	12744	mh	39.419999999999995	sta:3:sta:1.6:4.8,dps:10:dps:3:30,speed:0.6:speed:7.7:4.62
 R	warrior/fury	45	4570	12759	mh	34.62	dps:10:dps:3:30,speed:0.6:speed:7.7:4.62
-R	warrior/fury	45	4570	12918	mh	34.62	dps:10:dps:3:30,speed:0.6:speed:7.7:4.62
-R	warrior/fury	45	4570	12919	mh	34.62	dps:10:dps:3:30,speed:0.6:speed:7.7:4.62
+R	warrior/fury	45	4570	12918	mh	27.360000000000003	dps:7.58:dps:3:22.74,speed:0.6:speed:7.7:4.62
+R	warrior/fury	45	4570	12919	mh	27.360000000000003	dps:7.58:dps:3:22.74,speed:0.6:speed:7.7:4.62
 R	warrior/fury	45	5079	0	gear	0.0	
 R	warrior/fury	45	6063	0	gear	1.87	armor:55:armor:0.034:1.87
 R	warrior/fury	45	6540	0	gear	0.9520000000000001	armor:28:armor:0.034:0.952
@@ -23515,14 +24007,14 @@ R	warrior/fury	45	15235	12752	mh	98.10000000000001	agi:3:agi:0.7:2.1,sta:6:sta:1
 R	warrior/fury	45	15235	12753	mh	96.0	sta:6:sta:1.6:9.6,str:3:str:1:3,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.7:-2.31
 R	warrior/fury	45	15235	12754	mh	93.0	sta:6:sta:1.6:9.6,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.7:-2.31
 R	warrior/fury	45	15235	12759	mh	83.4	dps:28.57:dps:3:85.71,speed:-0.3:speed:7.7:-2.31
-R	warrior/fury	45	15235	12906	mh	89.80000000000001	sta:4:sta:1.6:6.4,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.7:-2.31
-R	warrior/fury	45	15235	12908	mh	85.88000000000001	spi:4:spi:0.62:2.48,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.7:-2.31
-R	warrior/fury	45	15235	12910	mh	95.48	spi:4:spi:0.62:2.48,sta:6:sta:1.6:9.6,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.7:-2.31
-R	warrior/fury	45	15235	12912	mh	93.0	sta:6:sta:1.6:9.6,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.7:-2.31
-R	warrior/fury	45	15235	12913	mh	85.88000000000001	spi:4:spi:0.62:2.48,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.7:-2.31
-R	warrior/fury	45	15235	12916	mh	95.48	spi:4:spi:0.62:2.48,sta:6:sta:1.6:9.6,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.7:-2.31
-R	warrior/fury	45	15235	12917	mh	83.4	dps:28.57:dps:3:85.71,speed:-0.3:speed:7.7:-2.31
-R	warrior/fury	45	15235	12920	mh	83.4	dps:28.57:dps:3:85.71,speed:-0.3:speed:7.7:-2.31
+R	warrior/fury	45	15235	12906	mh	61.24000000000001	sta:4:sta:1.6:6.4,dps:19.05:dps:3:57.15,speed:-0.3:speed:7.7:-2.31
+R	warrior/fury	45	15235	12908	mh	57.32000000000001	spi:4:spi:0.62:2.48,dps:19.05:dps:3:57.15,speed:-0.3:speed:7.7:-2.31
+R	warrior/fury	45	15235	12910	mh	66.92	spi:4:spi:0.62:2.48,sta:6:sta:1.6:9.6,dps:19.05:dps:3:57.15,speed:-0.3:speed:7.7:-2.31
+R	warrior/fury	45	15235	12912	mh	64.44	sta:6:sta:1.6:9.6,dps:19.05:dps:3:57.15,speed:-0.3:speed:7.7:-2.31
+R	warrior/fury	45	15235	12913	mh	57.32000000000001	spi:4:spi:0.62:2.48,dps:19.05:dps:3:57.15,speed:-0.3:speed:7.7:-2.31
+R	warrior/fury	45	15235	12916	mh	66.92	spi:4:spi:0.62:2.48,sta:6:sta:1.6:9.6,dps:19.05:dps:3:57.15,speed:-0.3:speed:7.7:-2.31
+R	warrior/fury	45	15235	12917	mh	54.84	dps:19.05:dps:3:57.15,speed:-0.3:speed:7.7:-2.31
+R	warrior/fury	45	15235	12920	mh	54.84	dps:19.05:dps:3:57.15,speed:-0.3:speed:7.7:-2.31
 R	warrior/fury	45	15477	0	gear	3.434	armor:101:armor:0.034:3.434
 R	warrior/fury	45	15477	12718	gear	5.034000000000001	sta:1:sta:1.6:1.6,armor:101:armor:0.034:3.434
 R	warrior/fury	45	15477	12719	gear	5.654	spi:1:spi:0.62:0.62,sta:1:sta:1.6:1.6,armor:101:armor:0.034:3.434
@@ -23575,6 +24067,12 @@ R	warrior/fury	45	286609	0	oh	64.10400000000001	spi:6:spi:0.62:3.72,armor:1776:a
 R	warrior/fury	55	25	0	mh	-0.8849999999999993	dps:1.05:dps:3.1:3.255,speed:-0.6:speed:6.9:-4.14
 R	warrior/fury	55	1315	0	gear	17.8	sta:10:sta:1.3:13,spi:15:spi:0.32:4.8
 R	warrior/fury	55	1808	0	gear	1.85	armor:74:armor:0.025:1.85
+R	warrior/fury	55	1990	0	mh	80.741	dps:24.71:dps:3.1:76.601,speed:0.6:speed:6.9:4.14
+R	warrior/fury	55	1990	12718	mh	92.441	sta:9:sta:1.3:11.7,dps:24.71:dps:3.1:76.601,speed:0.6:speed:6.9:4.14
+R	warrior/fury	55	1990	12905	mh	70.218	sta:7:sta:1.3:9.1,dps:18.38:dps:3.1:56.978,speed:0.6:speed:6.9:4.14
+R	warrior/fury	55	2140	0	mh	14.274000000000001	dps:5.94:dps:3.1:18.414,speed:-0.6:speed:6.9:-4.14
+R	warrior/fury	55	2140	12718	mh	15.574000000000002	sta:1:sta:1.3:1.3,dps:5.94:dps:3.1:18.414,speed:-0.6:speed:6.9:-4.14
+R	warrior/fury	55	2140	12917	mh	7.485	dps:3.75:dps:3.1:11.625,speed:-0.6:speed:6.9:-4.14
 R	warrior/fury	55	2225	0	mh	11.36	dps:5:dps:3.1:15.5,speed:-0.6:speed:6.9:-4.14
 R	warrior/fury	55	2614	0	gear	0.7250000000000001	armor:29:armor:0.025:0.725
 R	warrior/fury	55	3158	0	gear	0.65	armor:26:armor:0.025:0.65
@@ -23605,8 +24103,8 @@ R	warrior/fury	55	4570	12742	mh	39.04	sta:3:sta:1.3:3.9,dps:10:dps:3.1:31,speed:
 R	warrior/fury	55	4570	12743	mh	39.04	sta:3:sta:1.3:3.9,dps:10:dps:3.1:31,speed:0.6:speed:6.9:4.14
 R	warrior/fury	55	4570	12744	mh	39.04	sta:3:sta:1.3:3.9,dps:10:dps:3.1:31,speed:0.6:speed:6.9:4.14
 R	warrior/fury	55	4570	12759	mh	35.14	dps:10:dps:3.1:31,speed:0.6:speed:6.9:4.14
-R	warrior/fury	55	4570	12918	mh	35.14	dps:10:dps:3.1:31,speed:0.6:speed:6.9:4.14
-R	warrior/fury	55	4570	12919	mh	35.14	dps:10:dps:3.1:31,speed:0.6:speed:6.9:4.14
+R	warrior/fury	55	4570	12918	mh	27.638	dps:7.58:dps:3.1:23.498,speed:0.6:speed:6.9:4.14
+R	warrior/fury	55	4570	12919	mh	27.638	dps:7.58:dps:3.1:23.498,speed:0.6:speed:6.9:4.14
 R	warrior/fury	55	5079	0	gear	0.0	
 R	warrior/fury	55	6063	0	gear	1.375	armor:55:armor:0.025:1.375
 R	warrior/fury	55	6540	0	gear	0.7000000000000001	armor:28:armor:0.025:0.7
@@ -23878,14 +24376,14 @@ R	warrior/fury	55	15235	12752	mh	98.617	agi:3:agi:0.67:2.01,sta:6:sta:1.3:7.8,st
 R	warrior/fury	55	15235	12753	mh	96.607	sta:6:sta:1.3:7.8,str:3:str:1:3,dps:28.57:dps:3.1:88.567,speed:-0.4:speed:6.9:-2.76
 R	warrior/fury	55	15235	12754	mh	93.607	sta:6:sta:1.3:7.8,dps:28.57:dps:3.1:88.567,speed:-0.4:speed:6.9:-2.76
 R	warrior/fury	55	15235	12759	mh	85.807	dps:28.57:dps:3.1:88.567,speed:-0.4:speed:6.9:-2.76
-R	warrior/fury	55	15235	12906	mh	91.007	sta:4:sta:1.3:5.2,dps:28.57:dps:3.1:88.567,speed:-0.4:speed:6.9:-2.76
-R	warrior/fury	55	15235	12908	mh	87.087	spi:4:spi:0.32:1.28,dps:28.57:dps:3.1:88.567,speed:-0.4:speed:6.9:-2.76
-R	warrior/fury	55	15235	12910	mh	94.887	spi:4:spi:0.32:1.28,sta:6:sta:1.3:7.8,dps:28.57:dps:3.1:88.567,speed:-0.4:speed:6.9:-2.76
-R	warrior/fury	55	15235	12912	mh	93.607	sta:6:sta:1.3:7.8,dps:28.57:dps:3.1:88.567,speed:-0.4:speed:6.9:-2.76
-R	warrior/fury	55	15235	12913	mh	87.087	spi:4:spi:0.32:1.28,dps:28.57:dps:3.1:88.567,speed:-0.4:speed:6.9:-2.76
-R	warrior/fury	55	15235	12916	mh	94.887	spi:4:spi:0.32:1.28,sta:6:sta:1.3:7.8,dps:28.57:dps:3.1:88.567,speed:-0.4:speed:6.9:-2.76
-R	warrior/fury	55	15235	12917	mh	85.807	dps:28.57:dps:3.1:88.567,speed:-0.4:speed:6.9:-2.76
-R	warrior/fury	55	15235	12920	mh	85.807	dps:28.57:dps:3.1:88.567,speed:-0.4:speed:6.9:-2.76
+R	warrior/fury	55	15235	12906	mh	61.49500000000001	sta:4:sta:1.3:5.2,dps:19.05:dps:3.1:59.055,speed:-0.4:speed:6.9:-2.76
+R	warrior/fury	55	15235	12908	mh	57.57500000000001	spi:4:spi:0.32:1.28,dps:19.05:dps:3.1:59.055,speed:-0.4:speed:6.9:-2.76
+R	warrior/fury	55	15235	12910	mh	65.375	spi:4:spi:0.32:1.28,sta:6:sta:1.3:7.8,dps:19.05:dps:3.1:59.055,speed:-0.4:speed:6.9:-2.76
+R	warrior/fury	55	15235	12912	mh	64.095	sta:6:sta:1.3:7.8,dps:19.05:dps:3.1:59.055,speed:-0.4:speed:6.9:-2.76
+R	warrior/fury	55	15235	12913	mh	57.57500000000001	spi:4:spi:0.32:1.28,dps:19.05:dps:3.1:59.055,speed:-0.4:speed:6.9:-2.76
+R	warrior/fury	55	15235	12916	mh	65.375	spi:4:spi:0.32:1.28,sta:6:sta:1.3:7.8,dps:19.05:dps:3.1:59.055,speed:-0.4:speed:6.9:-2.76
+R	warrior/fury	55	15235	12917	mh	56.29500000000001	dps:19.05:dps:3.1:59.055,speed:-0.4:speed:6.9:-2.76
+R	warrior/fury	55	15235	12920	mh	56.29500000000001	dps:19.05:dps:3.1:59.055,speed:-0.4:speed:6.9:-2.76
 R	warrior/fury	55	15477	0	gear	2.5250000000000004	armor:101:armor:0.025:2.525
 R	warrior/fury	55	15477	12718	gear	3.825	sta:1:sta:1.3:1.3,armor:101:armor:0.025:2.525
 R	warrior/fury	55	15477	12719	gear	4.1450000000000005	spi:1:spi:0.32:0.32,sta:1:sta:1.3:1.3,armor:101:armor:0.025:2.525
@@ -23938,6 +24436,12 @@ R	warrior/fury	55	286609	0	oh	46.32000000000001	spi:6:spi:0.32:1.92,armor:1776:a
 R	warrior/fury	60	25	0	mh	1.3500000000000008	dps:1.05:dps:3:3.15,speed:-0.4:speed:4.5:-1.8
 R	warrior/fury	60	1315	0	gear	17.9	sta:10:sta:1.4:14,spi:15:spi:0.26:3.9
 R	warrior/fury	60	1808	0	gear	1.998	armor:74:armor:0.027:1.998
+R	warrior/fury	60	1990	0	mh	76.83	dps:24.71:dps:3:74.13,speed:0.6:speed:4.5:2.7
+R	warrior/fury	60	1990	12718	mh	89.42999999999999	sta:9:sta:1.4:12.6,dps:24.71:dps:3:74.13,speed:0.6:speed:4.5:2.7
+R	warrior/fury	60	1990	12905	mh	67.64	sta:7:sta:1.4:9.8,dps:18.38:dps:3:55.14,speed:0.6:speed:4.5:2.7
+R	warrior/fury	60	2140	0	mh	15.120000000000001	dps:5.94:dps:3:17.82,speed:-0.6:speed:4.5:-2.7
+R	warrior/fury	60	2140	12718	mh	16.52	sta:1:sta:1.4:1.4,dps:5.94:dps:3:17.82,speed:-0.6:speed:4.5:-2.7
+R	warrior/fury	60	2140	12917	mh	8.55	dps:3.75:dps:3:11.25,speed:-0.6:speed:4.5:-2.7
 R	warrior/fury	60	2225	0	mh	12.3	dps:5:dps:3:15,speed:-0.6:speed:4.5:-2.7
 R	warrior/fury	60	2614	0	gear	0.783	armor:29:armor:0.027:0.783
 R	warrior/fury	60	3158	0	gear	0.702	armor:26:armor:0.027:0.702
@@ -23968,8 +24472,8 @@ R	warrior/fury	60	4570	12742	mh	36.900000000000006	sta:3:sta:1.4:4.2,dps:10:dps:
 R	warrior/fury	60	4570	12743	mh	36.900000000000006	sta:3:sta:1.4:4.2,dps:10:dps:3:30,speed:0.6:speed:4.5:2.7
 R	warrior/fury	60	4570	12744	mh	36.900000000000006	sta:3:sta:1.4:4.2,dps:10:dps:3:30,speed:0.6:speed:4.5:2.7
 R	warrior/fury	60	4570	12759	mh	32.7	dps:10:dps:3:30,speed:0.6:speed:4.5:2.7
-R	warrior/fury	60	4570	12918	mh	32.7	dps:10:dps:3:30,speed:0.6:speed:4.5:2.7
-R	warrior/fury	60	4570	12919	mh	32.7	dps:10:dps:3:30,speed:0.6:speed:4.5:2.7
+R	warrior/fury	60	4570	12918	mh	25.44	dps:7.58:dps:3:22.74,speed:0.6:speed:4.5:2.7
+R	warrior/fury	60	4570	12919	mh	25.44	dps:7.58:dps:3:22.74,speed:0.6:speed:4.5:2.7
 R	warrior/fury	60	5079	0	gear	0.0	
 R	warrior/fury	60	6063	0	gear	1.4849999999999999	armor:55:armor:0.027:1.485
 R	warrior/fury	60	6540	0	gear	0.756	armor:28:armor:0.027:0.756
@@ -24241,14 +24745,14 @@ R	warrior/fury	60	15235	12752	mh	98.31	agi:3:agi:0.7:2.1,sta:6:sta:1.4:8.4,str:3
 R	warrior/fury	60	15235	12753	mh	96.21000000000001	sta:6:sta:1.4:8.4,str:3:str:1:3,dps:28.57:dps:3:85.71,speed:-0.2:speed:4.5:-0.9
 R	warrior/fury	60	15235	12754	mh	93.21000000000001	sta:6:sta:1.4:8.4,dps:28.57:dps:3:85.71,speed:-0.2:speed:4.5:-0.9
 R	warrior/fury	60	15235	12759	mh	84.81	dps:28.57:dps:3:85.71,speed:-0.2:speed:4.5:-0.9
-R	warrior/fury	60	15235	12906	mh	90.41	sta:4:sta:1.4:5.6,dps:28.57:dps:3:85.71,speed:-0.2:speed:4.5:-0.9
-R	warrior/fury	60	15235	12908	mh	85.85000000000001	spi:4:spi:0.26:1.04,dps:28.57:dps:3:85.71,speed:-0.2:speed:4.5:-0.9
-R	warrior/fury	60	15235	12910	mh	94.25	spi:4:spi:0.26:1.04,sta:6:sta:1.4:8.4,dps:28.57:dps:3:85.71,speed:-0.2:speed:4.5:-0.9
-R	warrior/fury	60	15235	12912	mh	93.21000000000001	sta:6:sta:1.4:8.4,dps:28.57:dps:3:85.71,speed:-0.2:speed:4.5:-0.9
-R	warrior/fury	60	15235	12913	mh	85.85000000000001	spi:4:spi:0.26:1.04,dps:28.57:dps:3:85.71,speed:-0.2:speed:4.5:-0.9
-R	warrior/fury	60	15235	12916	mh	94.25	spi:4:spi:0.26:1.04,sta:6:sta:1.4:8.4,dps:28.57:dps:3:85.71,speed:-0.2:speed:4.5:-0.9
-R	warrior/fury	60	15235	12917	mh	84.81	dps:28.57:dps:3:85.71,speed:-0.2:speed:4.5:-0.9
-R	warrior/fury	60	15235	12920	mh	84.81	dps:28.57:dps:3:85.71,speed:-0.2:speed:4.5:-0.9
+R	warrior/fury	60	15235	12906	mh	61.85000000000001	sta:4:sta:1.4:5.6,dps:19.05:dps:3:57.15,speed:-0.2:speed:4.5:-0.9
+R	warrior/fury	60	15235	12908	mh	57.290000000000006	spi:4:spi:0.26:1.04,dps:19.05:dps:3:57.15,speed:-0.2:speed:4.5:-0.9
+R	warrior/fury	60	15235	12910	mh	65.69	spi:4:spi:0.26:1.04,sta:6:sta:1.4:8.4,dps:19.05:dps:3:57.15,speed:-0.2:speed:4.5:-0.9
+R	warrior/fury	60	15235	12912	mh	64.65	sta:6:sta:1.4:8.4,dps:19.05:dps:3:57.15,speed:-0.2:speed:4.5:-0.9
+R	warrior/fury	60	15235	12913	mh	57.290000000000006	spi:4:spi:0.26:1.04,dps:19.05:dps:3:57.15,speed:-0.2:speed:4.5:-0.9
+R	warrior/fury	60	15235	12916	mh	65.69	spi:4:spi:0.26:1.04,sta:6:sta:1.4:8.4,dps:19.05:dps:3:57.15,speed:-0.2:speed:4.5:-0.9
+R	warrior/fury	60	15235	12917	mh	56.25000000000001	dps:19.05:dps:3:57.15,speed:-0.2:speed:4.5:-0.9
+R	warrior/fury	60	15235	12920	mh	56.25000000000001	dps:19.05:dps:3:57.15,speed:-0.2:speed:4.5:-0.9
 R	warrior/fury	60	15477	0	gear	2.727	armor:101:armor:0.027:2.727
 R	warrior/fury	60	15477	12718	gear	4.127	sta:1:sta:1.4:1.4,armor:101:armor:0.027:2.727
 R	warrior/fury	60	15477	12719	gear	4.387	spi:1:spi:0.26:0.26,sta:1:sta:1.4:1.4,armor:101:armor:0.027:2.727
@@ -24301,6 +24805,12 @@ R	warrior/fury	60	286609	0	oh	49.512	spi:6:spi:0.26:1.56,armor:1776:armor:0.027:
 R	warrior/protection	12	25	0	mh	4.41	dps:1.05:dps:4.2:4.41
 R	warrior/protection	12	1315	0	gear	25.549999999999997	sta:10:sta:1.1:11,spi:15:spi:0.97:14.55
 R	warrior/protection	12	1808	0	gear	1.554	armor:74:armor:0.021:1.554
+R	warrior/protection	12	1990	0	mh	103.78200000000001	dps:24.71:dps:4.2:103.782
+R	warrior/protection	12	1990	12718	mh	113.68200000000002	sta:9:sta:1.1:9.9,dps:24.71:dps:4.2:103.782
+R	warrior/protection	12	1990	12905	mh	84.896	sta:7:sta:1.1:7.7,dps:18.38:dps:4.2:77.196
+R	warrior/protection	12	2140	0	mh	24.948000000000004	dps:5.94:dps:4.2:24.948
+R	warrior/protection	12	2140	12718	mh	26.048000000000005	sta:1:sta:1.1:1.1,dps:5.94:dps:4.2:24.948
+R	warrior/protection	12	2140	12917	mh	15.75	dps:3.75:dps:4.2:15.75
 R	warrior/protection	12	2225	0	mh	21.0	dps:5:dps:4.2:21
 R	warrior/protection	12	2614	0	gear	0.609	armor:29:armor:0.021:0.609
 R	warrior/protection	12	3158	0	gear	0.546	armor:26:armor:0.021:0.546
@@ -24331,8 +24841,8 @@ R	warrior/protection	12	4570	12742	mh	45.3	sta:3:sta:1.1:3.3,dps:10:dps:4.2:42
 R	warrior/protection	12	4570	12743	mh	45.3	sta:3:sta:1.1:3.3,dps:10:dps:4.2:42
 R	warrior/protection	12	4570	12744	mh	45.3	sta:3:sta:1.1:3.3,dps:10:dps:4.2:42
 R	warrior/protection	12	4570	12759	mh	42.0	dps:10:dps:4.2:42
-R	warrior/protection	12	4570	12918	mh	42.0	dps:10:dps:4.2:42
-R	warrior/protection	12	4570	12919	mh	42.0	dps:10:dps:4.2:42
+R	warrior/protection	12	4570	12918	mh	31.836000000000002	dps:7.58:dps:4.2:31.836
+R	warrior/protection	12	4570	12919	mh	31.836000000000002	dps:7.58:dps:4.2:31.836
 R	warrior/protection	12	5079	0	gear	0.0	
 R	warrior/protection	12	6063	0	gear	1.155	armor:55:armor:0.021:1.155
 R	warrior/protection	12	6540	0	gear	0.5880000000000001	armor:28:armor:0.021:0.588
@@ -24604,14 +25114,14 @@ R	warrior/protection	12	15235	12752	mh	130.734	agi:3:agi:0.38:1.14,sta:6:sta:1.1
 R	warrior/protection	12	15235	12753	mh	129.814	defense:2:defense:0.11:0.22,sta:6:sta:1.1:6.6,str:3:str:1:3,dps:28.57:dps:4.2:119.994
 R	warrior/protection	12	15235	12754	mh	126.814	defense:2:defense:0.11:0.22,sta:6:sta:1.1:6.6,dps:28.57:dps:4.2:119.994
 R	warrior/protection	12	15235	12759	mh	119.994	dps:28.57:dps:4.2:119.994
-R	warrior/protection	12	15235	12906	mh	124.394	sta:4:sta:1.1:4.4,dps:28.57:dps:4.2:119.994
-R	warrior/protection	12	15235	12908	mh	123.874	spi:4:spi:0.97:3.88,dps:28.57:dps:4.2:119.994
-R	warrior/protection	12	15235	12910	mh	130.474	spi:4:spi:0.97:3.88,sta:6:sta:1.1:6.6,dps:28.57:dps:4.2:119.994
-R	warrior/protection	12	15235	12912	mh	126.594	sta:6:sta:1.1:6.6,dps:28.57:dps:4.2:119.994
-R	warrior/protection	12	15235	12913	mh	123.874	spi:4:spi:0.97:3.88,dps:28.57:dps:4.2:119.994
-R	warrior/protection	12	15235	12916	mh	130.474	spi:4:spi:0.97:3.88,sta:6:sta:1.1:6.6,dps:28.57:dps:4.2:119.994
-R	warrior/protection	12	15235	12917	mh	119.994	dps:28.57:dps:4.2:119.994
-R	warrior/protection	12	15235	12920	mh	119.994	dps:28.57:dps:4.2:119.994
+R	warrior/protection	12	15235	12906	mh	84.41000000000001	sta:4:sta:1.1:4.4,dps:19.05:dps:4.2:80.01
+R	warrior/protection	12	15235	12908	mh	83.89	spi:4:spi:0.97:3.88,dps:19.05:dps:4.2:80.01
+R	warrior/protection	12	15235	12910	mh	90.49000000000001	spi:4:spi:0.97:3.88,sta:6:sta:1.1:6.6,dps:19.05:dps:4.2:80.01
+R	warrior/protection	12	15235	12912	mh	86.61	sta:6:sta:1.1:6.6,dps:19.05:dps:4.2:80.01
+R	warrior/protection	12	15235	12913	mh	83.89	spi:4:spi:0.97:3.88,dps:19.05:dps:4.2:80.01
+R	warrior/protection	12	15235	12916	mh	90.49000000000001	spi:4:spi:0.97:3.88,sta:6:sta:1.1:6.6,dps:19.05:dps:4.2:80.01
+R	warrior/protection	12	15235	12917	mh	80.01	dps:19.05:dps:4.2:80.01
+R	warrior/protection	12	15235	12920	mh	80.01	dps:19.05:dps:4.2:80.01
 R	warrior/protection	12	15477	0	gear	2.121	armor:101:armor:0.021:2.121
 R	warrior/protection	12	15477	12718	gear	3.221	sta:1:sta:1.1:1.1,armor:101:armor:0.021:2.121
 R	warrior/protection	12	15477	12719	gear	4.191000000000001	spi:1:spi:0.97:0.97,sta:1:sta:1.1:1.1,armor:101:armor:0.021:2.121
@@ -24664,6 +25174,12 @@ R	warrior/protection	12	286609	0	oh	43.885999999999996	spi:6:spi:0.97:5.82,defen
 R	warrior/protection	25	25	0	mh	2.5900000000000007	dps:1.05:dps:3:3.15,speed:-0.4:speed:1.4:-0.56
 R	warrior/protection	25	1315	0	gear	17.15	sta:10:sta:0.38:3.8,spi:15:spi:0.89:13.35
 R	warrior/protection	25	1808	0	gear	0.74	armor:74:armor:0.01:0.74
+R	warrior/protection	25	1990	0	mh	74.97	dps:24.71:dps:3:74.13,speed:0.6:speed:1.4:0.84
+R	warrior/protection	25	1990	12718	mh	78.39	sta:9:sta:0.38:3.42,dps:24.71:dps:3:74.13,speed:0.6:speed:1.4:0.84
+R	warrior/protection	25	1990	12905	mh	58.64	sta:7:sta:0.38:2.66,dps:18.38:dps:3:55.14,speed:0.6:speed:1.4:0.84
+R	warrior/protection	25	2140	0	mh	16.98	dps:5.94:dps:3:17.82,speed:-0.6:speed:1.4:-0.84
+R	warrior/protection	25	2140	12718	mh	17.36	sta:1:sta:0.38:0.38,dps:5.94:dps:3:17.82,speed:-0.6:speed:1.4:-0.84
+R	warrior/protection	25	2140	12917	mh	10.41	dps:3.75:dps:3:11.25,speed:-0.6:speed:1.4:-0.84
 R	warrior/protection	25	2225	0	mh	14.16	dps:5:dps:3:15,speed:-0.6:speed:1.4:-0.84
 R	warrior/protection	25	2614	0	gear	0.29	armor:29:armor:0.01:0.29
 R	warrior/protection	25	3158	0	gear	0.26	armor:26:armor:0.01:0.26
@@ -24694,8 +25210,8 @@ R	warrior/protection	25	4570	12742	mh	31.98	sta:3:sta:0.38:1.14,dps:10:dps:3:30,
 R	warrior/protection	25	4570	12743	mh	31.98	sta:3:sta:0.38:1.14,dps:10:dps:3:30,speed:0.6:speed:1.4:0.84
 R	warrior/protection	25	4570	12744	mh	31.98	sta:3:sta:0.38:1.14,dps:10:dps:3:30,speed:0.6:speed:1.4:0.84
 R	warrior/protection	25	4570	12759	mh	30.84	dps:10:dps:3:30,speed:0.6:speed:1.4:0.84
-R	warrior/protection	25	4570	12918	mh	30.84	dps:10:dps:3:30,speed:0.6:speed:1.4:0.84
-R	warrior/protection	25	4570	12919	mh	30.84	dps:10:dps:3:30,speed:0.6:speed:1.4:0.84
+R	warrior/protection	25	4570	12918	mh	23.580000000000002	dps:7.58:dps:3:22.74,speed:0.6:speed:1.4:0.84
+R	warrior/protection	25	4570	12919	mh	23.580000000000002	dps:7.58:dps:3:22.74,speed:0.6:speed:1.4:0.84
 R	warrior/protection	25	5079	0	gear	0.0	
 R	warrior/protection	25	6063	0	gear	0.55	armor:55:armor:0.01:0.55
 R	warrior/protection	25	6540	0	gear	0.28	armor:28:armor:0.01:0.28
@@ -24967,14 +25483,14 @@ R	warrior/protection	25	15235	12752	mh	91.7	agi:3:agi:0.33:0.99,sta:6:sta:0.38:2
 R	warrior/protection	25	15235	12753	mh	90.91000000000001	defense:2:defense:0.1:0.2,sta:6:sta:0.38:2.28,str:3:str:1:3,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
 R	warrior/protection	25	15235	12754	mh	87.91000000000001	defense:2:defense:0.1:0.2,sta:6:sta:0.38:2.28,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
 R	warrior/protection	25	15235	12759	mh	85.43	dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
-R	warrior/protection	25	15235	12906	mh	86.95	sta:4:sta:0.38:1.52,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
-R	warrior/protection	25	15235	12908	mh	88.99000000000001	spi:4:spi:0.89:3.56,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
-R	warrior/protection	25	15235	12910	mh	91.27000000000001	spi:4:spi:0.89:3.56,sta:6:sta:0.38:2.28,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
-R	warrior/protection	25	15235	12912	mh	87.71000000000001	sta:6:sta:0.38:2.28,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
-R	warrior/protection	25	15235	12913	mh	88.99000000000001	spi:4:spi:0.89:3.56,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
-R	warrior/protection	25	15235	12916	mh	91.27000000000001	spi:4:spi:0.89:3.56,sta:6:sta:0.38:2.28,dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
-R	warrior/protection	25	15235	12917	mh	85.43	dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
-R	warrior/protection	25	15235	12920	mh	85.43	dps:28.57:dps:3:85.71,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12906	mh	58.39000000000001	sta:4:sta:0.38:1.52,dps:19.05:dps:3:57.15,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12908	mh	60.43000000000001	spi:4:spi:0.89:3.56,dps:19.05:dps:3:57.15,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12910	mh	62.71000000000001	spi:4:spi:0.89:3.56,sta:6:sta:0.38:2.28,dps:19.05:dps:3:57.15,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12912	mh	59.150000000000006	sta:6:sta:0.38:2.28,dps:19.05:dps:3:57.15,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12913	mh	60.43000000000001	spi:4:spi:0.89:3.56,dps:19.05:dps:3:57.15,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12916	mh	62.71000000000001	spi:4:spi:0.89:3.56,sta:6:sta:0.38:2.28,dps:19.05:dps:3:57.15,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12917	mh	56.870000000000005	dps:19.05:dps:3:57.15,speed:-0.2:speed:1.4:-0.28
+R	warrior/protection	25	15235	12920	mh	56.870000000000005	dps:19.05:dps:3:57.15,speed:-0.2:speed:1.4:-0.28
 R	warrior/protection	25	15477	0	gear	1.01	armor:101:armor:0.01:1.01
 R	warrior/protection	25	15477	12718	gear	1.3900000000000001	sta:1:sta:0.38:0.38,armor:101:armor:0.01:1.01
 R	warrior/protection	25	15477	12719	gear	2.2800000000000002	spi:1:spi:0.89:0.89,sta:1:sta:0.38:0.38,armor:101:armor:0.01:1.01
@@ -25027,6 +25543,12 @@ R	warrior/protection	25	286609	0	oh	23.8	spi:6:spi:0.89:5.34,defense:7:defense:0
 R	warrior/protection	34	25	0	mh	2.595	dps:1.05:dps:3.1:3.255,speed:-0.6:speed:1.1:-0.66
 R	warrior/protection	34	1315	0	gear	14.15	sta:10:sta:0.41:4.1,spi:15:spi:0.67:10.05
 R	warrior/protection	34	1808	0	gear	0.814	armor:74:armor:0.011:0.814
+R	warrior/protection	34	1990	0	mh	77.261	dps:24.71:dps:3.1:76.601,speed:0.6:speed:1.1:0.66
+R	warrior/protection	34	1990	12718	mh	80.951	sta:9:sta:0.41:3.69,dps:24.71:dps:3.1:76.601,speed:0.6:speed:1.1:0.66
+R	warrior/protection	34	1990	12905	mh	60.507999999999996	sta:7:sta:0.41:2.87,dps:18.38:dps:3.1:56.978,speed:0.6:speed:1.1:0.66
+R	warrior/protection	34	2140	0	mh	17.754	dps:5.94:dps:3.1:18.414,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	2140	12718	mh	18.164	sta:1:sta:0.41:0.41,dps:5.94:dps:3.1:18.414,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	2140	12917	mh	10.965	dps:3.75:dps:3.1:11.625,speed:-0.6:speed:1.1:-0.66
 R	warrior/protection	34	2225	0	mh	14.84	dps:5:dps:3.1:15.5,speed:-0.6:speed:1.1:-0.66
 R	warrior/protection	34	2614	0	gear	0.319	armor:29:armor:0.011:0.319
 R	warrior/protection	34	3158	0	gear	0.286	armor:26:armor:0.011:0.286
@@ -25057,8 +25579,8 @@ R	warrior/protection	34	4570	12742	mh	32.779999999999994	sta:3:sta:0.41:1.23,dps
 R	warrior/protection	34	4570	12743	mh	32.779999999999994	sta:3:sta:0.41:1.23,dps:10:dps:3.1:31,speed:0.5:speed:1.1:0.55
 R	warrior/protection	34	4570	12744	mh	32.779999999999994	sta:3:sta:0.41:1.23,dps:10:dps:3.1:31,speed:0.5:speed:1.1:0.55
 R	warrior/protection	34	4570	12759	mh	31.55	dps:10:dps:3.1:31,speed:0.5:speed:1.1:0.55
-R	warrior/protection	34	4570	12918	mh	31.55	dps:10:dps:3.1:31,speed:0.5:speed:1.1:0.55
-R	warrior/protection	34	4570	12919	mh	31.55	dps:10:dps:3.1:31,speed:0.5:speed:1.1:0.55
+R	warrior/protection	34	4570	12918	mh	24.048000000000002	dps:7.58:dps:3.1:23.498,speed:0.5:speed:1.1:0.55
+R	warrior/protection	34	4570	12919	mh	24.048000000000002	dps:7.58:dps:3.1:23.498,speed:0.5:speed:1.1:0.55
 R	warrior/protection	34	5079	0	gear	0.0	
 R	warrior/protection	34	6063	0	gear	0.605	armor:55:armor:0.011:0.605
 R	warrior/protection	34	6540	0	gear	0.308	armor:28:armor:0.011:0.308
@@ -25330,14 +25852,14 @@ R	warrior/protection	34	15235	12752	mh	94.38700000000001	agi:3:agi:0.34:1.02,sta
 R	warrior/protection	34	15235	12753	mh	93.60700000000001	defense:2:defense:0.12:0.24,sta:6:sta:0.41:2.46,str:3:str:1:3,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
 R	warrior/protection	34	15235	12754	mh	90.60700000000001	defense:2:defense:0.12:0.24,sta:6:sta:0.41:2.46,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
 R	warrior/protection	34	15235	12759	mh	87.90700000000001	dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
-R	warrior/protection	34	15235	12906	mh	89.54700000000001	sta:4:sta:0.41:1.64,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
-R	warrior/protection	34	15235	12908	mh	90.58700000000002	spi:4:spi:0.67:2.68,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
-R	warrior/protection	34	15235	12910	mh	93.04700000000001	spi:4:spi:0.67:2.68,sta:6:sta:0.41:2.46,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
-R	warrior/protection	34	15235	12912	mh	90.367	sta:6:sta:0.41:2.46,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
-R	warrior/protection	34	15235	12913	mh	90.58700000000002	spi:4:spi:0.67:2.68,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
-R	warrior/protection	34	15235	12916	mh	93.04700000000001	spi:4:spi:0.67:2.68,sta:6:sta:0.41:2.46,dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
-R	warrior/protection	34	15235	12917	mh	87.90700000000001	dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
-R	warrior/protection	34	15235	12920	mh	87.90700000000001	dps:28.57:dps:3.1:88.567,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12906	mh	60.03500000000001	sta:4:sta:0.41:1.64,dps:19.05:dps:3.1:59.055,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12908	mh	61.07500000000001	spi:4:spi:0.67:2.68,dps:19.05:dps:3.1:59.055,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12910	mh	63.53500000000001	spi:4:spi:0.67:2.68,sta:6:sta:0.41:2.46,dps:19.05:dps:3.1:59.055,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12912	mh	60.85500000000001	sta:6:sta:0.41:2.46,dps:19.05:dps:3.1:59.055,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12913	mh	61.07500000000001	spi:4:spi:0.67:2.68,dps:19.05:dps:3.1:59.055,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12916	mh	63.53500000000001	spi:4:spi:0.67:2.68,sta:6:sta:0.41:2.46,dps:19.05:dps:3.1:59.055,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12917	mh	58.39500000000001	dps:19.05:dps:3.1:59.055,speed:-0.6:speed:1.1:-0.66
+R	warrior/protection	34	15235	12920	mh	58.39500000000001	dps:19.05:dps:3.1:59.055,speed:-0.6:speed:1.1:-0.66
 R	warrior/protection	34	15477	0	gear	1.111	armor:101:armor:0.011:1.111
 R	warrior/protection	34	15477	12718	gear	1.521	sta:1:sta:0.41:0.41,armor:101:armor:0.011:1.111
 R	warrior/protection	34	15477	12719	gear	2.191	spi:1:spi:0.67:0.67,sta:1:sta:0.41:0.41,armor:101:armor:0.011:1.111
@@ -25390,6 +25912,12 @@ R	warrior/protection	34	286609	0	oh	24.395999999999997	spi:6:spi:0.67:4.02,defen
 R	warrior/protection	45	25	0	mh	-0.7999999999999998	dps:1.05:dps:3:3.15,speed:-0.5:speed:7.9:-3.95
 R	warrior/protection	45	1315	0	gear	17.15	sta:10:sta:0.23:2.3,spi:15:spi:0.99:14.85
 R	warrior/protection	45	1808	0	gear	0.518	armor:74:armor:0.007:0.518
+R	warrior/protection	45	1990	0	mh	78.86999999999999	dps:24.71:dps:3:74.13,speed:0.6:speed:7.9:4.74
+R	warrior/protection	45	1990	12718	mh	80.93999999999998	sta:9:sta:0.23:2.07,dps:24.71:dps:3:74.13,speed:0.6:speed:7.9:4.74
+R	warrior/protection	45	1990	12905	mh	61.49	sta:7:sta:0.23:1.61,dps:18.38:dps:3:55.14,speed:0.6:speed:7.9:4.74
+R	warrior/protection	45	2140	0	mh	13.08	dps:5.94:dps:3:17.82,speed:-0.6:speed:7.9:-4.74
+R	warrior/protection	45	2140	12718	mh	13.31	sta:1:sta:0.23:0.23,dps:5.94:dps:3:17.82,speed:-0.6:speed:7.9:-4.74
+R	warrior/protection	45	2140	12917	mh	6.51	dps:3.75:dps:3:11.25,speed:-0.6:speed:7.9:-4.74
 R	warrior/protection	45	2225	0	mh	10.26	dps:5:dps:3:15,speed:-0.6:speed:7.9:-4.74
 R	warrior/protection	45	2614	0	gear	0.203	armor:29:armor:0.007:0.203
 R	warrior/protection	45	3158	0	gear	0.182	armor:26:armor:0.007:0.182
@@ -25420,8 +25948,8 @@ R	warrior/protection	45	4570	12742	mh	35.43	sta:3:sta:0.23:0.69,dps:10:dps:3:30,
 R	warrior/protection	45	4570	12743	mh	35.43	sta:3:sta:0.23:0.69,dps:10:dps:3:30,speed:0.6:speed:7.9:4.74
 R	warrior/protection	45	4570	12744	mh	35.43	sta:3:sta:0.23:0.69,dps:10:dps:3:30,speed:0.6:speed:7.9:4.74
 R	warrior/protection	45	4570	12759	mh	34.74	dps:10:dps:3:30,speed:0.6:speed:7.9:4.74
-R	warrior/protection	45	4570	12918	mh	34.74	dps:10:dps:3:30,speed:0.6:speed:7.9:4.74
-R	warrior/protection	45	4570	12919	mh	34.74	dps:10:dps:3:30,speed:0.6:speed:7.9:4.74
+R	warrior/protection	45	4570	12918	mh	27.480000000000004	dps:7.58:dps:3:22.74,speed:0.6:speed:7.9:4.74
+R	warrior/protection	45	4570	12919	mh	27.480000000000004	dps:7.58:dps:3:22.74,speed:0.6:speed:7.9:4.74
 R	warrior/protection	45	5079	0	gear	0.0	
 R	warrior/protection	45	6063	0	gear	0.385	armor:55:armor:0.007:0.385
 R	warrior/protection	45	6540	0	gear	0.196	armor:28:armor:0.007:0.196
@@ -25693,14 +26221,14 @@ R	warrior/protection	45	15235	12752	mh	89.16	agi:3:agi:0.48:1.44,sta:6:sta:0.23:
 R	warrior/protection	45	15235	12753	mh	87.96000000000001	defense:2:defense:0.12:0.24,sta:6:sta:0.23:1.38,str:3:str:1:3,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
 R	warrior/protection	45	15235	12754	mh	84.96000000000001	defense:2:defense:0.12:0.24,sta:6:sta:0.23:1.38,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
 R	warrior/protection	45	15235	12759	mh	83.34	dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
-R	warrior/protection	45	15235	12906	mh	84.26	sta:4:sta:0.23:0.92,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
-R	warrior/protection	45	15235	12908	mh	87.3	spi:4:spi:0.99:3.96,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
-R	warrior/protection	45	15235	12910	mh	88.68	spi:4:spi:0.99:3.96,sta:6:sta:0.23:1.38,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
-R	warrior/protection	45	15235	12912	mh	84.72	sta:6:sta:0.23:1.38,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
-R	warrior/protection	45	15235	12913	mh	87.3	spi:4:spi:0.99:3.96,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
-R	warrior/protection	45	15235	12916	mh	88.68	spi:4:spi:0.99:3.96,sta:6:sta:0.23:1.38,dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
-R	warrior/protection	45	15235	12917	mh	83.34	dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
-R	warrior/protection	45	15235	12920	mh	83.34	dps:28.57:dps:3:85.71,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12906	mh	55.70000000000001	sta:4:sta:0.23:0.92,dps:19.05:dps:3:57.15,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12908	mh	58.74000000000001	spi:4:spi:0.99:3.96,dps:19.05:dps:3:57.15,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12910	mh	60.12000000000001	spi:4:spi:0.99:3.96,sta:6:sta:0.23:1.38,dps:19.05:dps:3:57.15,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12912	mh	56.16000000000001	sta:6:sta:0.23:1.38,dps:19.05:dps:3:57.15,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12913	mh	58.74000000000001	spi:4:spi:0.99:3.96,dps:19.05:dps:3:57.15,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12916	mh	60.12000000000001	spi:4:spi:0.99:3.96,sta:6:sta:0.23:1.38,dps:19.05:dps:3:57.15,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12917	mh	54.78000000000001	dps:19.05:dps:3:57.15,speed:-0.3:speed:7.9:-2.37
+R	warrior/protection	45	15235	12920	mh	54.78000000000001	dps:19.05:dps:3:57.15,speed:-0.3:speed:7.9:-2.37
 R	warrior/protection	45	15477	0	gear	0.707	armor:101:armor:0.007:0.707
 R	warrior/protection	45	15477	12718	gear	0.9369999999999999	sta:1:sta:0.23:0.23,armor:101:armor:0.007:0.707
 R	warrior/protection	45	15477	12719	gear	1.927	spi:1:spi:0.99:0.99,sta:1:sta:0.23:0.23,armor:101:armor:0.007:0.707
@@ -25753,6 +26281,12 @@ R	warrior/protection	45	286609	0	oh	19.212	spi:6:spi:0.99:5.94,defense:7:defense
 R	warrior/protection	55	25	0	mh	3.54	dps:1.05:dps:3:3.15,speed:-0.15:speed:-2.6:0.39
 R	warrior/protection	55	1315	0	gear	14.0	sta:10:sta:0.38:3.8,spi:15:spi:0.68:10.2
 R	warrior/protection	55	1808	0	gear	0.703	armor:74:armor:0.0095:0.703
+R	warrior/protection	55	1990	0	mh	72.57	dps:24.71:dps:3:74.13,speed:0.6:speed:-2.6:-1.56
+R	warrior/protection	55	1990	12718	mh	75.99	sta:9:sta:0.38:3.42,dps:24.71:dps:3:74.13,speed:0.6:speed:-2.6:-1.56
+R	warrior/protection	55	1990	12905	mh	56.239999999999995	sta:7:sta:0.38:2.66,dps:18.38:dps:3:55.14,speed:0.6:speed:-2.6:-1.56
+R	warrior/protection	55	2140	0	mh	18.99	dps:5.94:dps:3:17.82,speed:-0.45:speed:-2.6:1.17
+R	warrior/protection	55	2140	12718	mh	19.369999999999997	sta:1:sta:0.38:0.38,dps:5.94:dps:3:17.82,speed:-0.45:speed:-2.6:1.17
+R	warrior/protection	55	2140	12917	mh	12.42	dps:3.75:dps:3:11.25,speed:-0.45:speed:-2.6:1.17
 R	warrior/protection	55	2225	0	mh	16.43	dps:5:dps:3:15,speed:-0.55:speed:-2.6:1.43
 R	warrior/protection	55	2614	0	gear	0.27549999999999997	armor:29:armor:0.0095:0.275
 R	warrior/protection	55	3158	0	gear	0.247	armor:26:armor:0.0095:0.247
@@ -25783,8 +26317,8 @@ R	warrior/protection	55	4570	12742	mh	29.580000000000002	sta:3:sta:0.38:1.14,dps
 R	warrior/protection	55	4570	12743	mh	29.580000000000002	sta:3:sta:0.38:1.14,dps:10:dps:3:30,speed:0.6:speed:-2.6:-1.56
 R	warrior/protection	55	4570	12744	mh	29.580000000000002	sta:3:sta:0.38:1.14,dps:10:dps:3:30,speed:0.6:speed:-2.6:-1.56
 R	warrior/protection	55	4570	12759	mh	28.44	dps:10:dps:3:30,speed:0.6:speed:-2.6:-1.56
-R	warrior/protection	55	4570	12918	mh	28.44	dps:10:dps:3:30,speed:0.6:speed:-2.6:-1.56
-R	warrior/protection	55	4570	12919	mh	28.44	dps:10:dps:3:30,speed:0.6:speed:-2.6:-1.56
+R	warrior/protection	55	4570	12918	mh	21.180000000000003	dps:7.58:dps:3:22.74,speed:0.6:speed:-2.6:-1.56
+R	warrior/protection	55	4570	12919	mh	21.180000000000003	dps:7.58:dps:3:22.74,speed:0.6:speed:-2.6:-1.56
 R	warrior/protection	55	5079	0	gear	0.0	
 R	warrior/protection	55	6063	0	gear	0.5225	armor:55:armor:0.0095:0.522
 R	warrior/protection	55	6540	0	gear	0.266	armor:28:armor:0.0095:0.266
@@ -26056,14 +26590,14 @@ R	warrior/protection	55	15235	12752	mh	92.33000000000001	agi:3:agi:0.49:1.47,sta
 R	warrior/protection	55	15235	12753	mh	91.14000000000001	defense:2:defense:0.14:0.28,sta:6:sta:0.38:2.28,str:3:str:1:3,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
 R	warrior/protection	55	15235	12754	mh	88.14000000000001	defense:2:defense:0.14:0.28,sta:6:sta:0.38:2.28,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
 R	warrior/protection	55	15235	12759	mh	85.58000000000001	dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
-R	warrior/protection	55	15235	12906	mh	87.10000000000001	sta:4:sta:0.38:1.52,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
-R	warrior/protection	55	15235	12908	mh	88.30000000000001	spi:4:spi:0.68:2.72,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
-R	warrior/protection	55	15235	12910	mh	90.58000000000001	spi:4:spi:0.68:2.72,sta:6:sta:0.38:2.28,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
-R	warrior/protection	55	15235	12912	mh	87.86000000000001	sta:6:sta:0.38:2.28,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
-R	warrior/protection	55	15235	12913	mh	88.30000000000001	spi:4:spi:0.68:2.72,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
-R	warrior/protection	55	15235	12916	mh	90.58000000000001	spi:4:spi:0.68:2.72,sta:6:sta:0.38:2.28,dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
-R	warrior/protection	55	15235	12917	mh	85.58000000000001	dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
-R	warrior/protection	55	15235	12920	mh	85.58000000000001	dps:28.57:dps:3:85.71,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12906	mh	58.540000000000006	sta:4:sta:0.38:1.52,dps:19.05:dps:3:57.15,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12908	mh	59.74	spi:4:spi:0.68:2.72,dps:19.05:dps:3:57.15,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12910	mh	62.02	spi:4:spi:0.68:2.72,sta:6:sta:0.38:2.28,dps:19.05:dps:3:57.15,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12912	mh	59.300000000000004	sta:6:sta:0.38:2.28,dps:19.05:dps:3:57.15,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12913	mh	59.74	spi:4:spi:0.68:2.72,dps:19.05:dps:3:57.15,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12916	mh	62.02	spi:4:spi:0.68:2.72,sta:6:sta:0.38:2.28,dps:19.05:dps:3:57.15,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12917	mh	57.02	dps:19.05:dps:3:57.15,speed:0.05:speed:-2.6:-0.13
+R	warrior/protection	55	15235	12920	mh	57.02	dps:19.05:dps:3:57.15,speed:0.05:speed:-2.6:-0.13
 R	warrior/protection	55	15477	0	gear	0.9595	armor:101:armor:0.0095:0.96
 R	warrior/protection	55	15477	12718	gear	1.3395000000000001	sta:1:sta:0.38:0.38,armor:101:armor:0.0095:0.96
 R	warrior/protection	55	15477	12719	gear	2.0195	spi:1:spi:0.68:0.68,sta:1:sta:0.38:0.38,armor:101:armor:0.0095:0.96
@@ -26116,6 +26650,12 @@ R	warrior/protection	55	286609	0	oh	21.932000000000002	spi:6:spi:0.68:4.08,defen
 R	warrior/protection	60	25	0	mh	3.1500000000000004	dps:1.05:dps:3:3.15
 R	warrior/protection	60	1315	0	gear	15.100000000000001	sta:10:sta:0.46:4.6,spi:15:spi:0.7:10.5
 R	warrior/protection	60	1808	0	gear	0.814	armor:74:armor:0.011:0.814
+R	warrior/protection	60	1990	0	mh	74.13	dps:24.71:dps:3:74.13
+R	warrior/protection	60	1990	12718	mh	78.27	sta:9:sta:0.46:4.14,dps:24.71:dps:3:74.13
+R	warrior/protection	60	1990	12905	mh	58.36	sta:7:sta:0.46:3.22,dps:18.38:dps:3:55.14
+R	warrior/protection	60	2140	0	mh	17.82	dps:5.94:dps:3:17.82
+R	warrior/protection	60	2140	12718	mh	18.28	sta:1:sta:0.46:0.46,dps:5.94:dps:3:17.82
+R	warrior/protection	60	2140	12917	mh	11.25	dps:3.75:dps:3:11.25
 R	warrior/protection	60	2225	0	mh	15.0	dps:5:dps:3:15
 R	warrior/protection	60	2614	0	gear	0.319	armor:29:armor:0.011:0.319
 R	warrior/protection	60	3158	0	gear	0.286	armor:26:armor:0.011:0.286
@@ -26146,8 +26686,8 @@ R	warrior/protection	60	4570	12742	mh	31.38	sta:3:sta:0.46:1.38,dps:10:dps:3:30
 R	warrior/protection	60	4570	12743	mh	31.38	sta:3:sta:0.46:1.38,dps:10:dps:3:30
 R	warrior/protection	60	4570	12744	mh	31.38	sta:3:sta:0.46:1.38,dps:10:dps:3:30
 R	warrior/protection	60	4570	12759	mh	30.0	dps:10:dps:3:30
-R	warrior/protection	60	4570	12918	mh	30.0	dps:10:dps:3:30
-R	warrior/protection	60	4570	12919	mh	30.0	dps:10:dps:3:30
+R	warrior/protection	60	4570	12918	mh	22.740000000000002	dps:7.58:dps:3:22.74
+R	warrior/protection	60	4570	12919	mh	22.740000000000002	dps:7.58:dps:3:22.74
 R	warrior/protection	60	5079	0	gear	0.0	
 R	warrior/protection	60	6063	0	gear	0.605	armor:55:armor:0.011:0.605
 R	warrior/protection	60	6540	0	gear	0.308	armor:28:armor:0.011:0.308
@@ -26419,14 +26959,14 @@ R	warrior/protection	60	15235	12752	mh	93.00000000000001	agi:3:agi:0.51:1.53,sta
 R	warrior/protection	60	15235	12753	mh	91.79	defense:2:defense:0.16:0.32,sta:6:sta:0.46:2.76,str:3:str:1:3,dps:28.57:dps:3:85.71
 R	warrior/protection	60	15235	12754	mh	88.79	defense:2:defense:0.16:0.32,sta:6:sta:0.46:2.76,dps:28.57:dps:3:85.71
 R	warrior/protection	60	15235	12759	mh	85.71000000000001	dps:28.57:dps:3:85.71
-R	warrior/protection	60	15235	12906	mh	87.55000000000001	sta:4:sta:0.46:1.84,dps:28.57:dps:3:85.71
-R	warrior/protection	60	15235	12908	mh	88.51	spi:4:spi:0.7:2.8,dps:28.57:dps:3:85.71
-R	warrior/protection	60	15235	12910	mh	91.27000000000001	spi:4:spi:0.7:2.8,sta:6:sta:0.46:2.76,dps:28.57:dps:3:85.71
-R	warrior/protection	60	15235	12912	mh	88.47000000000001	sta:6:sta:0.46:2.76,dps:28.57:dps:3:85.71
-R	warrior/protection	60	15235	12913	mh	88.51	spi:4:spi:0.7:2.8,dps:28.57:dps:3:85.71
-R	warrior/protection	60	15235	12916	mh	91.27000000000001	spi:4:spi:0.7:2.8,sta:6:sta:0.46:2.76,dps:28.57:dps:3:85.71
-R	warrior/protection	60	15235	12917	mh	85.71000000000001	dps:28.57:dps:3:85.71
-R	warrior/protection	60	15235	12920	mh	85.71000000000001	dps:28.57:dps:3:85.71
+R	warrior/protection	60	15235	12906	mh	58.99000000000001	sta:4:sta:0.46:1.84,dps:19.05:dps:3:57.15
+R	warrior/protection	60	15235	12908	mh	59.95	spi:4:spi:0.7:2.8,dps:19.05:dps:3:57.15
+R	warrior/protection	60	15235	12910	mh	62.71000000000001	spi:4:spi:0.7:2.8,sta:6:sta:0.46:2.76,dps:19.05:dps:3:57.15
+R	warrior/protection	60	15235	12912	mh	59.910000000000004	sta:6:sta:0.46:2.76,dps:19.05:dps:3:57.15
+R	warrior/protection	60	15235	12913	mh	59.95	spi:4:spi:0.7:2.8,dps:19.05:dps:3:57.15
+R	warrior/protection	60	15235	12916	mh	62.71000000000001	spi:4:spi:0.7:2.8,sta:6:sta:0.46:2.76,dps:19.05:dps:3:57.15
+R	warrior/protection	60	15235	12917	mh	57.150000000000006	dps:19.05:dps:3:57.15
+R	warrior/protection	60	15235	12920	mh	57.150000000000006	dps:19.05:dps:3:57.15
 R	warrior/protection	60	15477	0	gear	1.111	armor:101:armor:0.011:1.111
 R	warrior/protection	60	15477	12718	gear	1.571	sta:1:sta:0.46:0.46,armor:101:armor:0.011:1.111
 R	warrior/protection	60	15477	12719	gear	2.271	spi:1:spi:0.7:0.7,sta:1:sta:0.46:0.46,armor:101:armor:0.011:1.111
@@ -26479,6 +27019,9 @@ R	warrior/protection	60	286609	0	oh	24.855999999999998	spi:6:spi:0.7:4.2,defense
 R	rogue/combat	12	25	0	mh	0.7450000000000019	dps:1.05:dps:4.9:5.145,speed:-0.4:speed:11:-4.4
 R	rogue/combat	12	1315	0	gear	19.4	sta:10:sta:1.1:11,spi:15:spi:0.56:8.4
 R	rogue/combat	12	1808	0	gear	1.702	armor:74:armor:0.023:1.702
+R	rogue/combat	12	2140	0	mh	22.506000000000007	dps:5.94:dps:4.9:29.106,speed:-0.6:speed:11:-6.6
+R	rogue/combat	12	2140	12718	mh	23.60600000000001	sta:1:sta:1.1:1.1,dps:5.94:dps:4.9:29.106,speed:-0.6:speed:11:-6.6
+R	rogue/combat	12	2140	12917	mh	11.775	dps:3.75:dps:4.9:18.375,speed:-0.6:speed:11:-6.6
 R	rogue/combat	12	2225	0	mh	17.9	dps:5:dps:4.9:24.5,speed:-0.6:speed:11:-6.6
 R	rogue/combat	12	2614	0	gear	0.667	armor:29:armor:0.023:0.667
 R	rogue/combat	12	3158	0	gear	0.598	armor:26:armor:0.023:0.598
@@ -26633,6 +27176,9 @@ R	rogue/combat	12	274646	0	ranged	5.0	agi:5:agi:1:5
 R	rogue/combat	25	25	0	mh	-5.7299999999999995	dps:1.05:dps:5.4:5.67,speed:-0.6:speed:19:-11.4
 R	rogue/combat	25	1315	0	gear	17.9	sta:10:sta:1.1:11,spi:15:spi:0.46:6.9
 R	rogue/combat	25	1808	0	gear	1.924	armor:74:armor:0.026:1.924
+R	rogue/combat	25	2140	0	mh	20.67600000000001	dps:5.94:dps:5.4:32.076,speed:-0.6:speed:19:-11.4
+R	rogue/combat	25	2140	12718	mh	21.77600000000001	sta:1:sta:1.1:1.1,dps:5.94:dps:5.4:32.076,speed:-0.6:speed:19:-11.4
+R	rogue/combat	25	2140	12917	mh	8.85	dps:3.75:dps:5.4:20.25,speed:-0.6:speed:19:-11.4
 R	rogue/combat	25	2225	0	mh	15.6	dps:5:dps:5.4:27,speed:-0.6:speed:19:-11.4
 R	rogue/combat	25	2614	0	gear	0.754	armor:29:armor:0.026:0.754
 R	rogue/combat	25	3158	0	gear	0.6759999999999999	armor:26:armor:0.026:0.676
@@ -26787,6 +27333,9 @@ R	rogue/combat	25	274646	0	ranged	5.0	agi:5:agi:1:5
 R	rogue/combat	34	25	0	mh	-11.91	dps:1.05:dps:5.8:6.09,speed:-0.6:speed:30:-18
 R	rogue/combat	34	1315	0	gear	19.75	sta:10:sta:0.61:6.1,spi:15:spi:0.91:13.65
 R	rogue/combat	34	1808	0	gear	1.776	armor:74:armor:0.024:1.776
+R	rogue/combat	34	2140	0	mh	16.451999999999998	dps:5.94:dps:5.8:34.452,speed:-0.6:speed:30:-18
+R	rogue/combat	34	2140	12718	mh	17.061999999999998	sta:1:sta:0.61:0.61,dps:5.94:dps:5.8:34.452,speed:-0.6:speed:30:-18
+R	rogue/combat	34	2140	12917	mh	3.75	dps:3.75:dps:5.8:21.75,speed:-0.6:speed:30:-18
 R	rogue/combat	34	2225	0	mh	11.0	dps:5:dps:5.8:29,speed:-0.6:speed:30:-18
 R	rogue/combat	34	2614	0	gear	0.6960000000000001	armor:29:armor:0.024:0.696
 R	rogue/combat	34	3158	0	gear	0.624	armor:26:armor:0.024:0.624
@@ -26941,6 +27490,9 @@ R	rogue/combat	34	274646	0	ranged	5.0	agi:5:agi:1:5
 R	rogue/combat	45	25	0	mh	-10.46	dps:1.05:dps:4.8:5.04,speed:-0.5:speed:31:-15.5
 R	rogue/combat	45	1315	0	gear	11.4	sta:10:sta:0.99:9.9,spi:15:spi:0.1:1.5
 R	rogue/combat	45	1808	0	gear	2.442	armor:74:armor:0.033:2.442
+R	rogue/combat	45	2140	0	mh	9.912000000000003	dps:5.94:dps:4.8:28.512,speed:-0.6:speed:31:-18.6
+R	rogue/combat	45	2140	12718	mh	10.902000000000001	sta:1:sta:0.99:0.99,dps:5.94:dps:4.8:28.512,speed:-0.6:speed:31:-18.6
+R	rogue/combat	45	2140	12917	mh	-0.5999999999999979	dps:3.75:dps:4.8:18,speed:-0.6:speed:31:-18.6
 R	rogue/combat	45	2225	0	mh	5.400000000000002	dps:5:dps:4.8:24,speed:-0.6:speed:31:-18.6
 R	rogue/combat	45	2614	0	gear	0.9570000000000001	armor:29:armor:0.033:0.957
 R	rogue/combat	45	3158	0	gear	0.8580000000000001	armor:26:armor:0.033:0.858
@@ -27095,6 +27647,9 @@ R	rogue/combat	45	274646	0	ranged	5.0	agi:5:agi:1:5
 R	rogue/combat	55	25	0	mh	-15.674999999999997	dps:1.05:dps:4.5:4.725,speed:-0.6:speed:34:-20.4
 R	rogue/combat	55	1315	0	gear	11.0	sta:10:sta:1.1:11
 R	rogue/combat	55	1808	0	gear	2.738	armor:74:armor:0.037:2.738
+R	rogue/combat	55	2140	0	mh	6.330000000000002	dps:5.94:dps:4.5:26.73,speed:-0.6:speed:34:-20.4
+R	rogue/combat	55	2140	12718	mh	7.430000000000003	sta:1:sta:1.1:1.1,dps:5.94:dps:4.5:26.73,speed:-0.6:speed:34:-20.4
+R	rogue/combat	55	2140	12917	mh	-3.5249999999999986	dps:3.75:dps:4.5:16.875,speed:-0.6:speed:34:-20.4
 R	rogue/combat	55	2225	0	mh	2.1000000000000014	dps:5:dps:4.5:22.5,speed:-0.6:speed:34:-20.4
 R	rogue/combat	55	2614	0	gear	1.073	armor:29:armor:0.037:1.073
 R	rogue/combat	55	3158	0	gear	0.962	armor:26:armor:0.037:0.962
@@ -27249,6 +27804,9 @@ R	rogue/combat	55	274646	0	ranged	5.0	agi:5:agi:1:5
 R	rogue/combat	60	25	0	mh	-8.999999999999996	dps:1.05:dps:4:4.2,speed:-0.4:speed:33:-13.2
 R	rogue/combat	60	1315	0	gear	11.0	sta:10:sta:1.1:11
 R	rogue/combat	60	1808	0	gear	3.256	armor:74:armor:0.044:3.256
+R	rogue/combat	60	2140	0	mh	3.960000000000001	dps:5.94:dps:4:23.76,speed:-0.6:speed:33:-19.8
+R	rogue/combat	60	2140	12718	mh	5.060000000000002	sta:1:sta:1.1:1.1,dps:5.94:dps:4:23.76,speed:-0.6:speed:33:-19.8
+R	rogue/combat	60	2140	12917	mh	-4.800000000000001	dps:3.75:dps:4:15,speed:-0.6:speed:33:-19.8
 R	rogue/combat	60	2225	0	mh	0.1999999999999993	dps:5:dps:4:20,speed:-0.6:speed:33:-19.8
 R	rogue/combat	60	2614	0	gear	1.276	armor:29:armor:0.044:1.276
 R	rogue/combat	60	3158	0	gear	1.144	armor:26:armor:0.044:1.144
@@ -27403,6 +27961,9 @@ R	rogue/combat	60	274646	0	ranged	5.0	agi:5:agi:1:5
 R	rogue/assassination	12	25	0	mh	7.274999999999998	dps:1.05:dps:4.3:4.515,speed:0.3:speed:9.2:2.76
 R	rogue/assassination	12	1315	0	gear	19.2	sta:10:sta:1.2:12,spi:15:spi:0.48:7.2
 R	rogue/assassination	12	1808	0	gear	2.146	armor:74:armor:0.029:2.146
+R	rogue/assassination	12	2140	0	mh	25.542	dps:5.94:dps:4.3:25.542
+R	rogue/assassination	12	2140	12718	mh	26.742	sta:1:sta:1.2:1.2,dps:5.94:dps:4.3:25.542
+R	rogue/assassination	12	2140	12917	mh	16.125	dps:3.75:dps:4.3:16.125
 R	rogue/assassination	12	2225	0	mh	20.58	dps:5:dps:4.3:21.5,speed:-0.1:speed:9.2:-0.92
 R	rogue/assassination	12	2614	0	gear	0.8410000000000001	armor:29:armor:0.029:0.841
 R	rogue/assassination	12	3158	0	gear	0.754	armor:26:armor:0.029:0.754
@@ -27557,6 +28118,9 @@ R	rogue/assassination	12	274646	0	ranged	5.0	agi:5:agi:1:5
 R	rogue/assassination	25	25	0	mh	6.02	dps:1.05:dps:3.6:3.78,speed:0.4:speed:5.6:2.24
 R	rogue/assassination	25	1315	0	gear	15.8	sta:10:sta:1.4:14,spi:15:spi:0.12:1.8
 R	rogue/assassination	25	1808	0	gear	2.5900000000000003	armor:74:armor:0.035:2.59
+R	rogue/assassination	25	2140	0	mh	21.944000000000003	dps:5.94:dps:3.6:21.384,speed:0.1:speed:5.6:0.56
+R	rogue/assassination	25	2140	12718	mh	23.344	sta:1:sta:1.4:1.4,dps:5.94:dps:3.6:21.384,speed:0.1:speed:5.6:0.56
+R	rogue/assassination	25	2140	12917	mh	14.06	dps:3.75:dps:3.6:13.5,speed:0.1:speed:5.6:0.56
 R	rogue/assassination	25	2225	0	mh	18.0	dps:5:dps:3.6:18
 R	rogue/assassination	25	2614	0	gear	1.0150000000000001	armor:29:armor:0.035:1.015
 R	rogue/assassination	25	3158	0	gear	0.9100000000000001	armor:26:armor:0.035:0.91
@@ -27711,6 +28275,9 @@ R	rogue/assassination	25	274646	0	ranged	5.0	agi:5:agi:1:5
 R	rogue/assassination	34	25	0	mh	3.9899999999999998	dps:1.05:dps:3.8:3.99
 R	rogue/assassination	34	1315	0	gear	15.0	sta:10:sta:1.5:15
 R	rogue/assassination	34	1808	0	gear	2.886	armor:74:armor:0.039:2.886
+R	rogue/assassination	34	2140	0	mh	19.602	dps:5.94:dps:3.8:22.572,speed:-0.3:speed:9.9:-2.97
+R	rogue/assassination	34	2140	12718	mh	21.102	sta:1:sta:1.5:1.5,dps:5.94:dps:3.8:22.572,speed:-0.3:speed:9.9:-2.97
+R	rogue/assassination	34	2140	12917	mh	11.280000000000001	dps:3.75:dps:3.8:14.25,speed:-0.3:speed:9.9:-2.97
 R	rogue/assassination	34	2225	0	mh	15.040000000000001	dps:5:dps:3.8:19,speed:-0.4:speed:9.9:-3.96
 R	rogue/assassination	34	2614	0	gear	1.131	armor:29:armor:0.039:1.131
 R	rogue/assassination	34	3158	0	gear	1.014	armor:26:armor:0.039:1.014
@@ -27865,6 +28432,9 @@ R	rogue/assassination	34	274646	0	ranged	5.0	agi:5:agi:1:5
 R	rogue/assassination	45	25	0	mh	-4.764999999999997	dps:1.05:dps:2.7:2.835,speed:0.4:speed:-19:-7.6
 R	rogue/assassination	45	1315	0	gear	15.0	sta:10:sta:1.5:15
 R	rogue/assassination	45	1808	0	gear	3.552	armor:74:armor:0.048:3.552
+R	rogue/assassination	45	2140	0	mh	14.138000000000002	dps:5.94:dps:2.7:16.038,speed:0.1:speed:-19:-1.9
+R	rogue/assassination	45	2140	12718	mh	15.638000000000002	sta:1:sta:1.5:1.5,dps:5.94:dps:2.7:16.038,speed:0.1:speed:-19:-1.9
+R	rogue/assassination	45	2140	12917	mh	8.224999999999998	dps:3.75:dps:2.7:10.125,speed:0.1:speed:-19:-1.9
 R	rogue/assassination	45	2225	0	mh	13.5	dps:5:dps:2.7:13.5
 R	rogue/assassination	45	2614	0	gear	1.3920000000000001	armor:29:armor:0.048:1.392
 R	rogue/assassination	45	3158	0	gear	1.248	armor:26:armor:0.048:1.248
@@ -28019,6 +28589,9 @@ R	rogue/assassination	45	274646	0	ranged	5.0	agi:5:agi:1:5
 R	rogue/assassination	55	25	0	mh	-1.469999999999998	dps:1.05:dps:2.6:2.73,speed:0.35:speed:-12:-4.2
 R	rogue/assassination	55	1315	0	gear	15.0	sta:10:sta:1.5:15
 R	rogue/assassination	55	1808	0	gear	3.848	armor:74:armor:0.052:3.848
+R	rogue/assassination	55	2140	0	mh	14.844000000000001	dps:5.94:dps:2.6:15.444,speed:0.05:speed:-12:-0.6
+R	rogue/assassination	55	2140	12718	mh	16.344	sta:1:sta:1.5:1.5,dps:5.94:dps:2.6:15.444,speed:0.05:speed:-12:-0.6
+R	rogue/assassination	55	2140	12917	mh	9.149999999999999	dps:3.75:dps:2.6:9.75,speed:0.05:speed:-12:-0.6
 R	rogue/assassination	55	2225	0	mh	13.600000000000001	dps:5:dps:2.6:13,speed:-0.05:speed:-12:0.6
 R	rogue/assassination	55	2614	0	gear	1.508	armor:29:armor:0.052:1.508
 R	rogue/assassination	55	3158	0	gear	1.3519999999999999	armor:26:armor:0.052:1.352
@@ -28173,6 +28746,9 @@ R	rogue/assassination	55	274646	0	ranged	5.0	agi:5:agi:1:5
 R	rogue/assassination	60	25	0	mh	2.7300000000000004	dps:1.05:dps:2.6:2.73
 R	rogue/assassination	60	1315	0	gear	14.0	sta:10:sta:1.4:14
 R	rogue/assassination	60	1808	0	gear	3.7739999999999996	armor:74:armor:0.051:3.774
+R	rogue/assassination	60	2140	0	mh	15.444	dps:5.94:dps:2.6:15.444
+R	rogue/assassination	60	2140	12718	mh	16.844	sta:1:sta:1.4:1.4,dps:5.94:dps:2.6:15.444
+R	rogue/assassination	60	2140	12917	mh	9.75	dps:3.75:dps:2.6:9.75
 R	rogue/assassination	60	2225	0	mh	13.0	dps:5:dps:2.6:13
 R	rogue/assassination	60	2614	0	gear	1.4789999999999999	armor:29:armor:0.051:1.479
 R	rogue/assassination	60	3158	0	gear	1.3259999999999998	armor:26:armor:0.051:1.326
@@ -28327,6 +28903,9 @@ R	rogue/assassination	60	274646	0	ranged	5.0	agi:5:agi:1:5
 R	rogue/subtlety	12	25	0	mh	7.289999999999998	dps:1.05:dps:4.2:4.41,speed:0.3:speed:9.6:2.88
 R	rogue/subtlety	12	1315	0	gear	19.2	sta:10:sta:1.2:12,spi:15:spi:0.48:7.2
 R	rogue/subtlety	12	1808	0	gear	2.146	armor:74:armor:0.029:2.146
+R	rogue/subtlety	12	2140	0	mh	24.948000000000004	dps:5.94:dps:4.2:24.948
+R	rogue/subtlety	12	2140	12718	mh	26.148000000000003	sta:1:sta:1.2:1.2,dps:5.94:dps:4.2:24.948
+R	rogue/subtlety	12	2140	12917	mh	15.75	dps:3.75:dps:4.2:15.75
 R	rogue/subtlety	12	2225	0	mh	20.04	dps:5:dps:4.2:21,speed:-0.1:speed:9.6:-0.96
 R	rogue/subtlety	12	2614	0	gear	0.8410000000000001	armor:29:armor:0.029:0.841
 R	rogue/subtlety	12	3158	0	gear	0.754	armor:26:armor:0.029:0.754
@@ -28481,6 +29060,9 @@ R	rogue/subtlety	12	274646	0	ranged	5.0	agi:5:agi:1:5
 R	rogue/subtlety	25	25	0	mh	11.229999999999999	dps:1.05:dps:4.6:4.83,speed:0.4:speed:16:6.4
 R	rogue/subtlety	25	1315	0	gear	15.55	sta:10:sta:1.3:13,spi:15:spi:0.17:2.55
 R	rogue/subtlety	25	1808	0	gear	2.2199999999999998	armor:74:armor:0.03:2.22
+R	rogue/subtlety	25	2140	0	mh	28.924	dps:5.94:dps:4.6:27.324,speed:0.1:speed:16:1.6
+R	rogue/subtlety	25	2140	12718	mh	30.224	sta:1:sta:1.3:1.3,dps:5.94:dps:4.6:27.324,speed:0.1:speed:16:1.6
+R	rogue/subtlety	25	2140	12917	mh	18.85	dps:3.75:dps:4.6:17.25,speed:0.1:speed:16:1.6
 R	rogue/subtlety	25	2225	0	mh	23.0	dps:5:dps:4.6:23
 R	rogue/subtlety	25	2614	0	gear	0.87	armor:29:armor:0.03:0.87
 R	rogue/subtlety	25	3158	0	gear	0.78	armor:26:armor:0.03:0.78
@@ -28635,6 +29217,9 @@ R	rogue/subtlety	25	274646	0	ranged	5.0	agi:5:agi:1:5
 R	rogue/subtlety	34	25	0	mh	5.25	dps:1.05:dps:5:5.25
 R	rogue/subtlety	34	1315	0	gear	12.945	sta:10:sta:1.2:12,spi:15:spi:0.063:0.945
 R	rogue/subtlety	34	1808	0	gear	3.108	armor:74:armor:0.042:3.108
+R	rogue/subtlety	34	2140	0	mh	21.900000000000006	dps:5.94:dps:5:29.7,speed:-0.3:speed:26:-7.8
+R	rogue/subtlety	34	2140	12718	mh	23.10000000000001	sta:1:sta:1.2:1.2,dps:5.94:dps:5:29.7,speed:-0.3:speed:26:-7.8
+R	rogue/subtlety	34	2140	12917	mh	10.950000000000005	dps:3.75:dps:5:18.75,speed:-0.3:speed:26:-7.8
 R	rogue/subtlety	34	2225	0	mh	14.600000000000001	dps:5:dps:5:25,speed:-0.4:speed:26:-10.4
 R	rogue/subtlety	34	2614	0	gear	1.218	armor:29:armor:0.042:1.218
 R	rogue/subtlety	34	3158	0	gear	1.092	armor:26:armor:0.042:1.092
@@ -28789,6 +29374,9 @@ R	rogue/subtlety	34	274646	0	ranged	5.0	agi:5:agi:1:5
 R	rogue/subtlety	45	25	0	mh	14.684999999999997	dps:1.05:dps:3.7:3.885,speed:0.4:speed:27:10.8
 R	rogue/subtlety	45	1315	0	gear	13.0	sta:10:sta:1.3:13
 R	rogue/subtlety	45	1808	0	gear	2.96	armor:74:armor:0.04:2.96
+R	rogue/subtlety	45	2140	0	mh	24.678000000000004	dps:5.94:dps:3.7:21.978,speed:0.1:speed:27:2.7
+R	rogue/subtlety	45	2140	12718	mh	25.978000000000005	sta:1:sta:1.3:1.3,dps:5.94:dps:3.7:21.978,speed:0.1:speed:27:2.7
+R	rogue/subtlety	45	2140	12917	mh	16.575000000000003	dps:3.75:dps:3.7:13.875,speed:0.1:speed:27:2.7
 R	rogue/subtlety	45	2225	0	mh	18.5	dps:5:dps:3.7:18.5
 R	rogue/subtlety	45	2614	0	gear	1.16	armor:29:armor:0.04:1.16
 R	rogue/subtlety	45	3158	0	gear	1.04	armor:26:armor:0.04:1.04
@@ -28943,6 +29531,9 @@ R	rogue/subtlety	45	274646	0	ranged	5.0	agi:5:agi:1:5
 R	rogue/subtlety	55	25	0	mh	19.354999999999993	dps:1.05:dps:4.1:4.305,speed:0.35:speed:43:15.05
 R	rogue/subtlety	55	1315	0	gear	11.0	sta:10:sta:1.1:11
 R	rogue/subtlety	55	1808	0	gear	2.6639999999999997	armor:74:armor:0.036:2.664
+R	rogue/subtlety	55	2140	0	mh	26.504	dps:5.94:dps:4.1:24.354,speed:0.05:speed:43:2.15
+R	rogue/subtlety	55	2140	12718	mh	27.604000000000003	sta:1:sta:1.1:1.1,dps:5.94:dps:4.1:24.354,speed:0.05:speed:43:2.15
+R	rogue/subtlety	55	2140	12917	mh	17.525	dps:3.75:dps:4.1:15.375,speed:0.05:speed:43:2.15
 R	rogue/subtlety	55	2225	0	mh	18.349999999999998	dps:5:dps:4.1:20.5,speed:-0.05:speed:43:-2.15
 R	rogue/subtlety	55	2614	0	gear	1.0439999999999998	armor:29:armor:0.036:1.044
 R	rogue/subtlety	55	3158	0	gear	0.9359999999999999	armor:26:armor:0.036:0.936
@@ -29097,6 +29688,9 @@ R	rogue/subtlety	55	274646	0	ranged	5.0	agi:5:agi:1:5
 R	rogue/subtlety	60	25	0	mh	12.809999999999999	dps:1.05:dps:4.2:4.41,speed:0.2:speed:42:8.4
 R	rogue/subtlety	60	1315	0	gear	11.0	sta:10:sta:1.1:11
 R	rogue/subtlety	60	1808	0	gear	3.182	armor:74:armor:0.043:3.182
+R	rogue/subtlety	60	2140	0	mh	20.74800000000001	dps:5.94:dps:4.2:24.948,speed:-0.1:speed:42:-4.2
+R	rogue/subtlety	60	2140	12718	mh	21.848000000000013	sta:1:sta:1.1:1.1,dps:5.94:dps:4.2:24.948,speed:-0.1:speed:42:-4.2
+R	rogue/subtlety	60	2140	12917	mh	11.550000000000006	dps:3.75:dps:4.2:15.75,speed:-0.1:speed:42:-4.2
 R	rogue/subtlety	60	2225	0	mh	12.600000000000001	dps:5:dps:4.2:21,speed:-0.2:speed:42:-8.4
 R	rogue/subtlety	60	2614	0	gear	1.2469999999999999	armor:29:armor:0.043:1.247
 R	rogue/subtlety	60	3158	0	gear	1.1179999999999999	armor:26:armor:0.043:1.118
@@ -29251,6 +29845,9 @@ R	rogue/subtlety	60	274646	0	ranged	5.0	agi:5:agi:1:5
 R	hunter/beastmastery	12	25	0	mh	0.315	dps:1.05:dps:0.3:0.315
 R	hunter/beastmastery	12	1315	0	gear	3.8600000000000003	sta:10:sta:0.26:2.6,spi:15:spi:0.084:1.26
 R	hunter/beastmastery	12	1808	0	gear	0.814	armor:74:armor:0.011:0.814
+R	hunter/beastmastery	12	2140	0	mh	1.782	dps:5.94:dps:0.3:1.782
+R	hunter/beastmastery	12	2140	12718	mh	2.392	int:1:int:0.35:0.35,sta:1:sta:0.26:0.26,dps:5.94:dps:0.3:1.782
+R	hunter/beastmastery	12	2140	12917	mh	1.475	int:1:int:0.35:0.35,dps:3.75:dps:0.3:1.125
 R	hunter/beastmastery	12	2225	0	mh	1.5	dps:5:dps:0.3:1.5
 R	hunter/beastmastery	12	2614	0	gear	0.319	armor:29:armor:0.011:0.319
 R	hunter/beastmastery	12	3158	0	gear	0.286	armor:26:armor:0.011:0.286
@@ -29454,14 +30051,14 @@ R	hunter/beastmastery	12	15235	12752	mh	13.131	agi:3:agi:1:3,sta:6:sta:0.26:1.56
 R	hunter/beastmastery	12	15235	12753	mh	10.131	sta:6:sta:0.26:1.56,dps:28.57:dps:0.3:8.571
 R	hunter/beastmastery	12	15235	12754	mh	10.131	sta:6:sta:0.26:1.56,dps:28.57:dps:0.3:8.571
 R	hunter/beastmastery	12	15235	12759	mh	8.571	dps:28.57:dps:0.3:8.571
-R	hunter/beastmastery	12	15235	12906	mh	11.710999999999999	int:6:int:0.35:2.1,sta:4:sta:0.26:1.04,dps:28.57:dps:0.3:8.571
-R	hunter/beastmastery	12	15235	12908	mh	11.007	int:6:int:0.35:2.1,spi:4:spi:0.084:0.336,dps:28.57:dps:0.3:8.571
-R	hunter/beastmastery	12	15235	12910	mh	10.467	spi:4:spi:0.084:0.336,sta:6:sta:0.26:1.56,dps:28.57:dps:0.3:8.571
-R	hunter/beastmastery	12	15235	12912	mh	11.530999999999999	int:4:int:0.35:1.4,sta:6:sta:0.26:1.56,dps:28.57:dps:0.3:8.571
-R	hunter/beastmastery	12	15235	12913	mh	11.007	int:6:int:0.35:2.1,spi:4:spi:0.084:0.336,dps:28.57:dps:0.3:8.571
-R	hunter/beastmastery	12	15235	12916	mh	10.467	spi:4:spi:0.084:0.336,sta:6:sta:0.26:1.56,dps:28.57:dps:0.3:8.571
-R	hunter/beastmastery	12	15235	12917	mh	11.370999999999999	int:8:int:0.35:2.8,dps:28.57:dps:0.3:8.571
-R	hunter/beastmastery	12	15235	12920	mh	11.370999999999999	int:8:int:0.35:2.8,dps:28.57:dps:0.3:8.571
+R	hunter/beastmastery	12	15235	12906	mh	8.855	int:6:int:0.35:2.1,sta:4:sta:0.26:1.04,dps:19.05:dps:0.3:5.715
+R	hunter/beastmastery	12	15235	12908	mh	8.151	int:6:int:0.35:2.1,spi:4:spi:0.084:0.336,dps:19.05:dps:0.3:5.715
+R	hunter/beastmastery	12	15235	12910	mh	7.611	spi:4:spi:0.084:0.336,sta:6:sta:0.26:1.56,dps:19.05:dps:0.3:5.715
+R	hunter/beastmastery	12	15235	12912	mh	8.675	int:4:int:0.35:1.4,sta:6:sta:0.26:1.56,dps:19.05:dps:0.3:5.715
+R	hunter/beastmastery	12	15235	12913	mh	8.151	int:6:int:0.35:2.1,spi:4:spi:0.084:0.336,dps:19.05:dps:0.3:5.715
+R	hunter/beastmastery	12	15235	12916	mh	7.611	spi:4:spi:0.084:0.336,sta:6:sta:0.26:1.56,dps:19.05:dps:0.3:5.715
+R	hunter/beastmastery	12	15235	12917	mh	8.515	int:8:int:0.35:2.8,dps:19.05:dps:0.3:5.715
+R	hunter/beastmastery	12	15235	12920	mh	8.515	int:8:int:0.35:2.8,dps:19.05:dps:0.3:5.715
 R	hunter/beastmastery	12	15477	0	gear	1.111	armor:101:armor:0.011:1.111
 R	hunter/beastmastery	12	15477	12718	gear	1.721	int:1:int:0.35:0.35,sta:1:sta:0.26:0.26,armor:101:armor:0.011:1.111
 R	hunter/beastmastery	12	15477	12719	gear	1.455	spi:1:spi:0.084:0.084,sta:1:sta:0.26:0.26,armor:101:armor:0.011:1.111
@@ -29508,6 +30105,9 @@ R	hunter/beastmastery	12	282560	0	gear	9.222999999999999	int:10:int:0.35:3.5,sta
 R	hunter/beastmastery	25	25	0	mh	0.48300000000000004	dps:1.05:dps:0.46:0.483
 R	hunter/beastmastery	25	1315	0	gear	3.25	sta:10:sta:0.1:1,spi:15:spi:0.15:2.25
 R	hunter/beastmastery	25	1808	0	gear	0.444	armor:74:armor:0.006:0.444
+R	hunter/beastmastery	25	2140	0	mh	2.7324	dps:5.94:dps:0.46:2.732
+R	hunter/beastmastery	25	2140	12718	mh	3.3424	int:1:int:0.51:0.51,sta:1:sta:0.1:0.1,dps:5.94:dps:0.46:2.732
+R	hunter/beastmastery	25	2140	12917	mh	2.2350000000000003	int:1:int:0.51:0.51,dps:3.75:dps:0.46:1.725
 R	hunter/beastmastery	25	2225	0	mh	2.3000000000000003	dps:5:dps:0.46:2.3
 R	hunter/beastmastery	25	2614	0	gear	0.17400000000000002	armor:29:armor:0.006:0.174
 R	hunter/beastmastery	25	3158	0	gear	0.156	armor:26:armor:0.006:0.156
@@ -29711,14 +30311,14 @@ R	hunter/beastmastery	25	15235	12752	mh	16.7422	agi:3:agi:1:3,sta:6:sta:0.1:0.6,
 R	hunter/beastmastery	25	15235	12753	mh	13.7422	sta:6:sta:0.1:0.6,dps:28.57:dps:0.46:13.142
 R	hunter/beastmastery	25	15235	12754	mh	13.7422	sta:6:sta:0.1:0.6,dps:28.57:dps:0.46:13.142
 R	hunter/beastmastery	25	15235	12759	mh	13.1422	dps:28.57:dps:0.46:13.142
-R	hunter/beastmastery	25	15235	12906	mh	16.6022	int:6:int:0.51:3.06,sta:4:sta:0.1:0.4,dps:28.57:dps:0.46:13.142
-R	hunter/beastmastery	25	15235	12908	mh	16.8022	int:6:int:0.51:3.06,spi:4:spi:0.15:0.6,dps:28.57:dps:0.46:13.142
-R	hunter/beastmastery	25	15235	12910	mh	14.342200000000002	spi:4:spi:0.15:0.6,sta:6:sta:0.1:0.6,dps:28.57:dps:0.46:13.142
-R	hunter/beastmastery	25	15235	12912	mh	15.782200000000001	int:4:int:0.51:2.04,sta:6:sta:0.1:0.6,dps:28.57:dps:0.46:13.142
-R	hunter/beastmastery	25	15235	12913	mh	16.8022	int:6:int:0.51:3.06,spi:4:spi:0.15:0.6,dps:28.57:dps:0.46:13.142
-R	hunter/beastmastery	25	15235	12916	mh	14.342200000000002	spi:4:spi:0.15:0.6,sta:6:sta:0.1:0.6,dps:28.57:dps:0.46:13.142
-R	hunter/beastmastery	25	15235	12917	mh	17.2222	int:8:int:0.51:4.08,dps:28.57:dps:0.46:13.142
-R	hunter/beastmastery	25	15235	12920	mh	17.2222	int:8:int:0.51:4.08,dps:28.57:dps:0.46:13.142
+R	hunter/beastmastery	25	15235	12906	mh	12.222999999999999	int:6:int:0.51:3.06,sta:4:sta:0.1:0.4,dps:19.05:dps:0.46:8.763
+R	hunter/beastmastery	25	15235	12908	mh	12.423	int:6:int:0.51:3.06,spi:4:spi:0.15:0.6,dps:19.05:dps:0.46:8.763
+R	hunter/beastmastery	25	15235	12910	mh	9.963000000000001	spi:4:spi:0.15:0.6,sta:6:sta:0.1:0.6,dps:19.05:dps:0.46:8.763
+R	hunter/beastmastery	25	15235	12912	mh	11.403	int:4:int:0.51:2.04,sta:6:sta:0.1:0.6,dps:19.05:dps:0.46:8.763
+R	hunter/beastmastery	25	15235	12913	mh	12.423	int:6:int:0.51:3.06,spi:4:spi:0.15:0.6,dps:19.05:dps:0.46:8.763
+R	hunter/beastmastery	25	15235	12916	mh	9.963000000000001	spi:4:spi:0.15:0.6,sta:6:sta:0.1:0.6,dps:19.05:dps:0.46:8.763
+R	hunter/beastmastery	25	15235	12917	mh	12.843	int:8:int:0.51:4.08,dps:19.05:dps:0.46:8.763
+R	hunter/beastmastery	25	15235	12920	mh	12.843	int:8:int:0.51:4.08,dps:19.05:dps:0.46:8.763
 R	hunter/beastmastery	25	15477	0	gear	0.606	armor:101:armor:0.006:0.606
 R	hunter/beastmastery	25	15477	12718	gear	1.216	int:1:int:0.51:0.51,sta:1:sta:0.1:0.1,armor:101:armor:0.006:0.606
 R	hunter/beastmastery	25	15477	12719	gear	0.856	spi:1:spi:0.15:0.15,sta:1:sta:0.1:0.1,armor:101:armor:0.006:0.606
@@ -29765,6 +30365,9 @@ R	hunter/beastmastery	25	282560	0	gear	7.677999999999999	int:10:int:0.51:5.1,sta
 R	hunter/beastmastery	34	25	0	mh	1.1550000000000002	dps:1.05:dps:1.1:1.155
 R	hunter/beastmastery	34	1315	0	gear	5.0	sta:10:sta:0.17:1.7,spi:15:spi:0.22:3.3
 R	hunter/beastmastery	34	1808	0	gear	0.592	armor:74:armor:0.008:0.592
+R	hunter/beastmastery	34	2140	0	mh	6.534000000000001	dps:5.94:dps:1.1:6.534
+R	hunter/beastmastery	34	2140	12718	mh	7.154000000000001	int:1:int:0.45:0.45,sta:1:sta:0.17:0.17,dps:5.94:dps:1.1:6.534
+R	hunter/beastmastery	34	2140	12917	mh	4.575	int:1:int:0.45:0.45,dps:3.75:dps:1.1:4.125
 R	hunter/beastmastery	34	2225	0	mh	5.5	dps:5:dps:1.1:5.5
 R	hunter/beastmastery	34	2614	0	gear	0.232	armor:29:armor:0.008:0.232
 R	hunter/beastmastery	34	3158	0	gear	0.20800000000000002	armor:26:armor:0.008:0.208
@@ -29968,14 +30571,14 @@ R	hunter/beastmastery	34	15235	12752	mh	35.447	agi:3:agi:1:3,sta:6:sta:0.17:1.02
 R	hunter/beastmastery	34	15235	12753	mh	32.447	sta:6:sta:0.17:1.02,dps:28.57:dps:1.1:31.427
 R	hunter/beastmastery	34	15235	12754	mh	32.447	sta:6:sta:0.17:1.02,dps:28.57:dps:1.1:31.427
 R	hunter/beastmastery	34	15235	12759	mh	31.427000000000003	dps:28.57:dps:1.1:31.427
-R	hunter/beastmastery	34	15235	12906	mh	34.807	int:6:int:0.45:2.7,sta:4:sta:0.17:0.68,dps:28.57:dps:1.1:31.427
-R	hunter/beastmastery	34	15235	12908	mh	35.007000000000005	int:6:int:0.45:2.7,spi:4:spi:0.22:0.88,dps:28.57:dps:1.1:31.427
-R	hunter/beastmastery	34	15235	12910	mh	33.327000000000005	spi:4:spi:0.22:0.88,sta:6:sta:0.17:1.02,dps:28.57:dps:1.1:31.427
-R	hunter/beastmastery	34	15235	12912	mh	34.247	int:4:int:0.45:1.8,sta:6:sta:0.17:1.02,dps:28.57:dps:1.1:31.427
-R	hunter/beastmastery	34	15235	12913	mh	35.007000000000005	int:6:int:0.45:2.7,spi:4:spi:0.22:0.88,dps:28.57:dps:1.1:31.427
-R	hunter/beastmastery	34	15235	12916	mh	33.327000000000005	spi:4:spi:0.22:0.88,sta:6:sta:0.17:1.02,dps:28.57:dps:1.1:31.427
-R	hunter/beastmastery	34	15235	12917	mh	35.027	int:8:int:0.45:3.6,dps:28.57:dps:1.1:31.427
-R	hunter/beastmastery	34	15235	12920	mh	35.027	int:8:int:0.45:3.6,dps:28.57:dps:1.1:31.427
+R	hunter/beastmastery	34	15235	12906	mh	24.335	int:6:int:0.45:2.7,sta:4:sta:0.17:0.68,dps:19.05:dps:1.1:20.955
+R	hunter/beastmastery	34	15235	12908	mh	24.535000000000004	int:6:int:0.45:2.7,spi:4:spi:0.22:0.88,dps:19.05:dps:1.1:20.955
+R	hunter/beastmastery	34	15235	12910	mh	22.855	spi:4:spi:0.22:0.88,sta:6:sta:0.17:1.02,dps:19.05:dps:1.1:20.955
+R	hunter/beastmastery	34	15235	12912	mh	23.775000000000002	int:4:int:0.45:1.8,sta:6:sta:0.17:1.02,dps:19.05:dps:1.1:20.955
+R	hunter/beastmastery	34	15235	12913	mh	24.535000000000004	int:6:int:0.45:2.7,spi:4:spi:0.22:0.88,dps:19.05:dps:1.1:20.955
+R	hunter/beastmastery	34	15235	12916	mh	22.855	spi:4:spi:0.22:0.88,sta:6:sta:0.17:1.02,dps:19.05:dps:1.1:20.955
+R	hunter/beastmastery	34	15235	12917	mh	24.555000000000003	int:8:int:0.45:3.6,dps:19.05:dps:1.1:20.955
+R	hunter/beastmastery	34	15235	12920	mh	24.555000000000003	int:8:int:0.45:3.6,dps:19.05:dps:1.1:20.955
 R	hunter/beastmastery	34	15477	0	gear	0.808	armor:101:armor:0.008:0.808
 R	hunter/beastmastery	34	15477	12718	gear	1.428	int:1:int:0.45:0.45,sta:1:sta:0.17:0.17,armor:101:armor:0.008:0.808
 R	hunter/beastmastery	34	15477	12719	gear	1.198	spi:1:spi:0.22:0.22,sta:1:sta:0.17:0.17,armor:101:armor:0.008:0.808
@@ -30022,6 +30625,9 @@ R	hunter/beastmastery	34	282560	0	gear	8.414	int:10:int:0.45:4.5,sta:13:sta:0.17
 R	hunter/beastmastery	45	25	0	mh	1.3650000000000002	dps:1.05:dps:1.3:1.365
 R	hunter/beastmastery	45	1315	0	gear	8.05	sta:10:sta:0.31:3.1,spi:15:spi:0.33:4.95
 R	hunter/beastmastery	45	1808	0	gear	0.962	armor:74:armor:0.013:0.962
+R	hunter/beastmastery	45	2140	0	mh	7.722	dps:5.94:dps:1.3:7.722
+R	hunter/beastmastery	45	2140	12718	mh	8.472000000000001	int:1:int:0.44:0.44,sta:1:sta:0.31:0.31,dps:5.94:dps:1.3:7.722
+R	hunter/beastmastery	45	2140	12917	mh	5.315	int:1:int:0.44:0.44,dps:3.75:dps:1.3:4.875
 R	hunter/beastmastery	45	2225	0	mh	6.5	dps:5:dps:1.3:6.5
 R	hunter/beastmastery	45	2614	0	gear	0.377	armor:29:armor:0.013:0.377
 R	hunter/beastmastery	45	3158	0	gear	0.33799999999999997	armor:26:armor:0.013:0.338
@@ -30225,14 +30831,14 @@ R	hunter/beastmastery	45	15235	12752	mh	42.001	agi:3:agi:1:3,sta:6:sta:0.31:1.86
 R	hunter/beastmastery	45	15235	12753	mh	39.001	sta:6:sta:0.31:1.86,dps:28.57:dps:1.3:37.141
 R	hunter/beastmastery	45	15235	12754	mh	39.001	sta:6:sta:0.31:1.86,dps:28.57:dps:1.3:37.141
 R	hunter/beastmastery	45	15235	12759	mh	37.141	dps:28.57:dps:1.3:37.141
-R	hunter/beastmastery	45	15235	12906	mh	41.021	int:6:int:0.44:2.64,sta:4:sta:0.31:1.24,dps:28.57:dps:1.3:37.141
-R	hunter/beastmastery	45	15235	12908	mh	41.101	int:6:int:0.44:2.64,spi:4:spi:0.33:1.32,dps:28.57:dps:1.3:37.141
-R	hunter/beastmastery	45	15235	12910	mh	40.321	spi:4:spi:0.33:1.32,sta:6:sta:0.31:1.86,dps:28.57:dps:1.3:37.141
-R	hunter/beastmastery	45	15235	12912	mh	40.760999999999996	int:4:int:0.44:1.76,sta:6:sta:0.31:1.86,dps:28.57:dps:1.3:37.141
-R	hunter/beastmastery	45	15235	12913	mh	41.101	int:6:int:0.44:2.64,spi:4:spi:0.33:1.32,dps:28.57:dps:1.3:37.141
-R	hunter/beastmastery	45	15235	12916	mh	40.321	spi:4:spi:0.33:1.32,sta:6:sta:0.31:1.86,dps:28.57:dps:1.3:37.141
-R	hunter/beastmastery	45	15235	12917	mh	40.661	int:8:int:0.44:3.52,dps:28.57:dps:1.3:37.141
-R	hunter/beastmastery	45	15235	12920	mh	40.661	int:8:int:0.44:3.52,dps:28.57:dps:1.3:37.141
+R	hunter/beastmastery	45	15235	12906	mh	28.645	int:6:int:0.44:2.64,sta:4:sta:0.31:1.24,dps:19.05:dps:1.3:24.765
+R	hunter/beastmastery	45	15235	12908	mh	28.725	int:6:int:0.44:2.64,spi:4:spi:0.33:1.32,dps:19.05:dps:1.3:24.765
+R	hunter/beastmastery	45	15235	12910	mh	27.945	spi:4:spi:0.33:1.32,sta:6:sta:0.31:1.86,dps:19.05:dps:1.3:24.765
+R	hunter/beastmastery	45	15235	12912	mh	28.385	int:4:int:0.44:1.76,sta:6:sta:0.31:1.86,dps:19.05:dps:1.3:24.765
+R	hunter/beastmastery	45	15235	12913	mh	28.725	int:6:int:0.44:2.64,spi:4:spi:0.33:1.32,dps:19.05:dps:1.3:24.765
+R	hunter/beastmastery	45	15235	12916	mh	27.945	spi:4:spi:0.33:1.32,sta:6:sta:0.31:1.86,dps:19.05:dps:1.3:24.765
+R	hunter/beastmastery	45	15235	12917	mh	28.285	int:8:int:0.44:3.52,dps:19.05:dps:1.3:24.765
+R	hunter/beastmastery	45	15235	12920	mh	28.285	int:8:int:0.44:3.52,dps:19.05:dps:1.3:24.765
 R	hunter/beastmastery	45	15477	0	gear	1.313	armor:101:armor:0.013:1.313
 R	hunter/beastmastery	45	15477	12718	gear	2.0629999999999997	int:1:int:0.44:0.44,sta:1:sta:0.31:0.31,armor:101:armor:0.013:1.313
 R	hunter/beastmastery	45	15477	12719	gear	1.9529999999999998	spi:1:spi:0.33:0.33,sta:1:sta:0.31:0.31,armor:101:armor:0.013:1.313
@@ -30279,6 +30885,9 @@ R	hunter/beastmastery	45	282560	0	gear	11.199	int:10:int:0.44:4.4,sta:13:sta:0.3
 R	hunter/beastmastery	55	25	0	mh	1.3650000000000002	dps:1.05:dps:1.3:1.365
 R	hunter/beastmastery	55	1315	0	gear	7.05	sta:10:sta:0.27:2.7,spi:15:spi:0.29:4.35
 R	hunter/beastmastery	55	1808	0	gear	0.962	armor:74:armor:0.013:0.962
+R	hunter/beastmastery	55	2140	0	mh	7.722	dps:5.94:dps:1.3:7.722
+R	hunter/beastmastery	55	2140	12718	mh	8.962	int:1:int:0.97:0.97,sta:1:sta:0.27:0.27,dps:5.94:dps:1.3:7.722
+R	hunter/beastmastery	55	2140	12917	mh	5.845	int:1:int:0.97:0.97,dps:3.75:dps:1.3:4.875
 R	hunter/beastmastery	55	2225	0	mh	6.5	dps:5:dps:1.3:6.5
 R	hunter/beastmastery	55	2614	0	gear	0.377	armor:29:armor:0.013:0.377
 R	hunter/beastmastery	55	3158	0	gear	0.33799999999999997	armor:26:armor:0.013:0.338
@@ -30482,14 +31091,14 @@ R	hunter/beastmastery	55	15235	12752	mh	41.760999999999996	agi:3:agi:1:3,sta:6:s
 R	hunter/beastmastery	55	15235	12753	mh	38.760999999999996	sta:6:sta:0.27:1.62,dps:28.57:dps:1.3:37.141
 R	hunter/beastmastery	55	15235	12754	mh	38.760999999999996	sta:6:sta:0.27:1.62,dps:28.57:dps:1.3:37.141
 R	hunter/beastmastery	55	15235	12759	mh	37.141	dps:28.57:dps:1.3:37.141
-R	hunter/beastmastery	55	15235	12906	mh	44.041	int:6:int:0.97:5.82,sta:4:sta:0.27:1.08,dps:28.57:dps:1.3:37.141
-R	hunter/beastmastery	55	15235	12908	mh	44.120999999999995	int:6:int:0.97:5.82,spi:4:spi:0.29:1.16,dps:28.57:dps:1.3:37.141
-R	hunter/beastmastery	55	15235	12910	mh	39.921	spi:4:spi:0.29:1.16,sta:6:sta:0.27:1.62,dps:28.57:dps:1.3:37.141
-R	hunter/beastmastery	55	15235	12912	mh	42.641	int:4:int:0.97:3.88,sta:6:sta:0.27:1.62,dps:28.57:dps:1.3:37.141
-R	hunter/beastmastery	55	15235	12913	mh	44.120999999999995	int:6:int:0.97:5.82,spi:4:spi:0.29:1.16,dps:28.57:dps:1.3:37.141
-R	hunter/beastmastery	55	15235	12916	mh	39.921	spi:4:spi:0.29:1.16,sta:6:sta:0.27:1.62,dps:28.57:dps:1.3:37.141
-R	hunter/beastmastery	55	15235	12917	mh	44.900999999999996	int:8:int:0.97:7.76,dps:28.57:dps:1.3:37.141
-R	hunter/beastmastery	55	15235	12920	mh	44.900999999999996	int:8:int:0.97:7.76,dps:28.57:dps:1.3:37.141
+R	hunter/beastmastery	55	15235	12906	mh	31.665	int:6:int:0.97:5.82,sta:4:sta:0.27:1.08,dps:19.05:dps:1.3:24.765
+R	hunter/beastmastery	55	15235	12908	mh	31.745	int:6:int:0.97:5.82,spi:4:spi:0.29:1.16,dps:19.05:dps:1.3:24.765
+R	hunter/beastmastery	55	15235	12910	mh	27.545	spi:4:spi:0.29:1.16,sta:6:sta:0.27:1.62,dps:19.05:dps:1.3:24.765
+R	hunter/beastmastery	55	15235	12912	mh	30.265	int:4:int:0.97:3.88,sta:6:sta:0.27:1.62,dps:19.05:dps:1.3:24.765
+R	hunter/beastmastery	55	15235	12913	mh	31.745	int:6:int:0.97:5.82,spi:4:spi:0.29:1.16,dps:19.05:dps:1.3:24.765
+R	hunter/beastmastery	55	15235	12916	mh	27.545	spi:4:spi:0.29:1.16,sta:6:sta:0.27:1.62,dps:19.05:dps:1.3:24.765
+R	hunter/beastmastery	55	15235	12917	mh	32.525	int:8:int:0.97:7.76,dps:19.05:dps:1.3:24.765
+R	hunter/beastmastery	55	15235	12920	mh	32.525	int:8:int:0.97:7.76,dps:19.05:dps:1.3:24.765
 R	hunter/beastmastery	55	15477	0	gear	1.313	armor:101:armor:0.013:1.313
 R	hunter/beastmastery	55	15477	12718	gear	2.553	int:1:int:0.97:0.97,sta:1:sta:0.27:0.27,armor:101:armor:0.013:1.313
 R	hunter/beastmastery	55	15477	12719	gear	1.873	spi:1:spi:0.29:0.29,sta:1:sta:0.27:0.27,armor:101:armor:0.013:1.313
@@ -30536,6 +31145,9 @@ R	hunter/beastmastery	55	282560	0	gear	15.979	int:10:int:0.97:9.7,sta:13:sta:0.2
 R	hunter/beastmastery	60	25	0	mh	1.8900000000000001	dps:1.05:dps:1.8:1.89
 R	hunter/beastmastery	60	1315	0	gear	6.300000000000001	sta:10:sta:0.24:2.4,spi:15:spi:0.26:3.9
 R	hunter/beastmastery	60	1808	0	gear	1.1099999999999999	armor:74:armor:0.015:1.11
+R	hunter/beastmastery	60	2140	0	mh	10.692	dps:5.94:dps:1.8:10.692
+R	hunter/beastmastery	60	2140	12718	mh	11.692	int:1:int:0.76:0.76,sta:1:sta:0.24:0.24,dps:5.94:dps:1.8:10.692
+R	hunter/beastmastery	60	2140	12917	mh	7.51	int:1:int:0.76:0.76,dps:3.75:dps:1.8:6.75
 R	hunter/beastmastery	60	2225	0	mh	9.0	dps:5:dps:1.8:9
 R	hunter/beastmastery	60	2614	0	gear	0.435	armor:29:armor:0.015:0.435
 R	hunter/beastmastery	60	3158	0	gear	0.39	armor:26:armor:0.015:0.39
@@ -30739,14 +31351,14 @@ R	hunter/beastmastery	60	15235	12752	mh	55.866	agi:3:agi:1:3,sta:6:sta:0.24:1.44
 R	hunter/beastmastery	60	15235	12753	mh	52.866	sta:6:sta:0.24:1.44,dps:28.57:dps:1.8:51.426
 R	hunter/beastmastery	60	15235	12754	mh	52.866	sta:6:sta:0.24:1.44,dps:28.57:dps:1.8:51.426
 R	hunter/beastmastery	60	15235	12759	mh	51.426	dps:28.57:dps:1.8:51.426
-R	hunter/beastmastery	60	15235	12906	mh	56.946000000000005	int:6:int:0.76:4.56,sta:4:sta:0.24:0.96,dps:28.57:dps:1.8:51.426
-R	hunter/beastmastery	60	15235	12908	mh	57.026	int:6:int:0.76:4.56,spi:4:spi:0.26:1.04,dps:28.57:dps:1.8:51.426
-R	hunter/beastmastery	60	15235	12910	mh	53.906	spi:4:spi:0.26:1.04,sta:6:sta:0.24:1.44,dps:28.57:dps:1.8:51.426
-R	hunter/beastmastery	60	15235	12912	mh	55.906000000000006	int:4:int:0.76:3.04,sta:6:sta:0.24:1.44,dps:28.57:dps:1.8:51.426
-R	hunter/beastmastery	60	15235	12913	mh	57.026	int:6:int:0.76:4.56,spi:4:spi:0.26:1.04,dps:28.57:dps:1.8:51.426
-R	hunter/beastmastery	60	15235	12916	mh	53.906	spi:4:spi:0.26:1.04,sta:6:sta:0.24:1.44,dps:28.57:dps:1.8:51.426
-R	hunter/beastmastery	60	15235	12917	mh	57.506	int:8:int:0.76:6.08,dps:28.57:dps:1.8:51.426
-R	hunter/beastmastery	60	15235	12920	mh	57.506	int:8:int:0.76:6.08,dps:28.57:dps:1.8:51.426
+R	hunter/beastmastery	60	15235	12906	mh	39.81	int:6:int:0.76:4.56,sta:4:sta:0.24:0.96,dps:19.05:dps:1.8:34.29
+R	hunter/beastmastery	60	15235	12908	mh	39.89	int:6:int:0.76:4.56,spi:4:spi:0.26:1.04,dps:19.05:dps:1.8:34.29
+R	hunter/beastmastery	60	15235	12910	mh	36.769999999999996	spi:4:spi:0.26:1.04,sta:6:sta:0.24:1.44,dps:19.05:dps:1.8:34.29
+R	hunter/beastmastery	60	15235	12912	mh	38.769999999999996	int:4:int:0.76:3.04,sta:6:sta:0.24:1.44,dps:19.05:dps:1.8:34.29
+R	hunter/beastmastery	60	15235	12913	mh	39.89	int:6:int:0.76:4.56,spi:4:spi:0.26:1.04,dps:19.05:dps:1.8:34.29
+R	hunter/beastmastery	60	15235	12916	mh	36.769999999999996	spi:4:spi:0.26:1.04,sta:6:sta:0.24:1.44,dps:19.05:dps:1.8:34.29
+R	hunter/beastmastery	60	15235	12917	mh	40.37	int:8:int:0.76:6.08,dps:19.05:dps:1.8:34.29
+R	hunter/beastmastery	60	15235	12920	mh	40.37	int:8:int:0.76:6.08,dps:19.05:dps:1.8:34.29
 R	hunter/beastmastery	60	15477	0	gear	1.515	armor:101:armor:0.015:1.515
 R	hunter/beastmastery	60	15477	12718	gear	2.5149999999999997	int:1:int:0.76:0.76,sta:1:sta:0.24:0.24,armor:101:armor:0.015:1.515
 R	hunter/beastmastery	60	15477	12719	gear	2.0149999999999997	spi:1:spi:0.26:0.26,sta:1:sta:0.24:0.24,armor:101:armor:0.015:1.515
@@ -30793,6 +31405,9 @@ R	hunter/beastmastery	60	282560	0	gear	13.915	int:10:int:0.76:7.6,sta:13:sta:0.2
 R	hunter/marksmanship	12	25	0	mh	0.1995	dps:1.05:dps:0.19:0.2
 R	hunter/marksmanship	12	1315	0	gear	3.41	sta:10:sta:0.23:2.3,spi:15:spi:0.074:1.11
 R	hunter/marksmanship	12	1808	0	gear	0.74	armor:74:armor:0.01:0.74
+R	hunter/marksmanship	12	2140	0	mh	1.1286	dps:5.94:dps:0.19:1.129
+R	hunter/marksmanship	12	2140	12718	mh	1.9086	int:1:int:0.55:0.55,sta:1:sta:0.23:0.23,dps:5.94:dps:0.19:1.129
+R	hunter/marksmanship	12	2140	12917	mh	1.2625000000000002	int:1:int:0.55:0.55,dps:3.75:dps:0.19:0.713
 R	hunter/marksmanship	12	2225	0	mh	0.95	dps:5:dps:0.19:0.95
 R	hunter/marksmanship	12	2614	0	gear	0.29	armor:29:armor:0.01:0.29
 R	hunter/marksmanship	12	3158	0	gear	0.26	armor:26:armor:0.01:0.26
@@ -30996,14 +31611,14 @@ R	hunter/marksmanship	12	15235	12752	mh	9.8083	agi:3:agi:1:3,sta:6:sta:0.23:1.38
 R	hunter/marksmanship	12	15235	12753	mh	6.8083	sta:6:sta:0.23:1.38,dps:28.57:dps:0.19:5.428
 R	hunter/marksmanship	12	15235	12754	mh	6.8083	sta:6:sta:0.23:1.38,dps:28.57:dps:0.19:5.428
 R	hunter/marksmanship	12	15235	12759	mh	5.4283	dps:28.57:dps:0.19:5.428
-R	hunter/marksmanship	12	15235	12906	mh	9.6483	int:6:int:0.55:3.3,sta:4:sta:0.23:0.92,dps:28.57:dps:0.19:5.428
-R	hunter/marksmanship	12	15235	12908	mh	9.0243	int:6:int:0.55:3.3,spi:4:spi:0.074:0.296,dps:28.57:dps:0.19:5.428
-R	hunter/marksmanship	12	15235	12910	mh	7.1043	spi:4:spi:0.074:0.296,sta:6:sta:0.23:1.38,dps:28.57:dps:0.19:5.428
-R	hunter/marksmanship	12	15235	12912	mh	9.0083	int:4:int:0.55:2.2,sta:6:sta:0.23:1.38,dps:28.57:dps:0.19:5.428
-R	hunter/marksmanship	12	15235	12913	mh	9.0243	int:6:int:0.55:3.3,spi:4:spi:0.074:0.296,dps:28.57:dps:0.19:5.428
-R	hunter/marksmanship	12	15235	12916	mh	7.1043	spi:4:spi:0.074:0.296,sta:6:sta:0.23:1.38,dps:28.57:dps:0.19:5.428
-R	hunter/marksmanship	12	15235	12917	mh	9.8283	int:8:int:0.55:4.4,dps:28.57:dps:0.19:5.428
-R	hunter/marksmanship	12	15235	12920	mh	9.8283	int:8:int:0.55:4.4,dps:28.57:dps:0.19:5.428
+R	hunter/marksmanship	12	15235	12906	mh	7.839500000000001	int:6:int:0.55:3.3,sta:4:sta:0.23:0.92,dps:19.05:dps:0.19:3.62
+R	hunter/marksmanship	12	15235	12908	mh	7.2155000000000005	int:6:int:0.55:3.3,spi:4:spi:0.074:0.296,dps:19.05:dps:0.19:3.62
+R	hunter/marksmanship	12	15235	12910	mh	5.2955000000000005	spi:4:spi:0.074:0.296,sta:6:sta:0.23:1.38,dps:19.05:dps:0.19:3.62
+R	hunter/marksmanship	12	15235	12912	mh	7.1995000000000005	int:4:int:0.55:2.2,sta:6:sta:0.23:1.38,dps:19.05:dps:0.19:3.62
+R	hunter/marksmanship	12	15235	12913	mh	7.2155000000000005	int:6:int:0.55:3.3,spi:4:spi:0.074:0.296,dps:19.05:dps:0.19:3.62
+R	hunter/marksmanship	12	15235	12916	mh	5.2955000000000005	spi:4:spi:0.074:0.296,sta:6:sta:0.23:1.38,dps:19.05:dps:0.19:3.62
+R	hunter/marksmanship	12	15235	12917	mh	8.0195	int:8:int:0.55:4.4,dps:19.05:dps:0.19:3.62
+R	hunter/marksmanship	12	15235	12920	mh	8.0195	int:8:int:0.55:4.4,dps:19.05:dps:0.19:3.62
 R	hunter/marksmanship	12	15477	0	gear	1.01	armor:101:armor:0.01:1.01
 R	hunter/marksmanship	12	15477	12718	gear	1.79	int:1:int:0.55:0.55,sta:1:sta:0.23:0.23,armor:101:armor:0.01:1.01
 R	hunter/marksmanship	12	15477	12719	gear	1.314	spi:1:spi:0.074:0.074,sta:1:sta:0.23:0.23,armor:101:armor:0.01:1.01
@@ -31050,6 +31665,9 @@ R	hunter/marksmanship	12	282560	0	gear	10.620000000000001	int:10:int:0.55:5.5,st
 R	hunter/marksmanship	25	25	0	mh	0.3885	dps:1.05:dps:0.37:0.389
 R	hunter/marksmanship	25	1315	0	gear	4.6	sta:10:sta:0.19:1.9,spi:15:spi:0.18:2.7
 R	hunter/marksmanship	25	1808	0	gear	0.629	armor:74:armor:0.0085:0.629
+R	hunter/marksmanship	25	2140	0	mh	2.1978	dps:5.94:dps:0.37:2.198
+R	hunter/marksmanship	25	2140	12718	mh	3.3878	int:1:int:1:1,sta:1:sta:0.19:0.19,dps:5.94:dps:0.37:2.198
+R	hunter/marksmanship	25	2140	12917	mh	2.3875	int:1:int:1:1,dps:3.75:dps:0.37:1.387
 R	hunter/marksmanship	25	2225	0	mh	1.85	dps:5:dps:0.37:1.85
 R	hunter/marksmanship	25	2614	0	gear	0.24650000000000002	armor:29:armor:0.0085:0.247
 R	hunter/marksmanship	25	3158	0	gear	0.22100000000000003	armor:26:armor:0.0085:0.221
@@ -31253,14 +31871,14 @@ R	hunter/marksmanship	25	15235	12752	mh	14.7109	agi:3:agi:1:3,sta:6:sta:0.19:1.1
 R	hunter/marksmanship	25	15235	12753	mh	11.7109	sta:6:sta:0.19:1.14,dps:28.57:dps:0.37:10.571
 R	hunter/marksmanship	25	15235	12754	mh	11.7109	sta:6:sta:0.19:1.14,dps:28.57:dps:0.37:10.571
 R	hunter/marksmanship	25	15235	12759	mh	10.5709	dps:28.57:dps:0.37:10.571
-R	hunter/marksmanship	25	15235	12906	mh	17.3309	int:6:int:1:6,sta:4:sta:0.19:0.76,dps:28.57:dps:0.37:10.571
-R	hunter/marksmanship	25	15235	12908	mh	17.2909	int:6:int:1:6,spi:4:spi:0.18:0.72,dps:28.57:dps:0.37:10.571
-R	hunter/marksmanship	25	15235	12910	mh	12.4309	spi:4:spi:0.18:0.72,sta:6:sta:0.19:1.14,dps:28.57:dps:0.37:10.571
-R	hunter/marksmanship	25	15235	12912	mh	15.7109	int:4:int:1:4,sta:6:sta:0.19:1.14,dps:28.57:dps:0.37:10.571
-R	hunter/marksmanship	25	15235	12913	mh	17.2909	int:6:int:1:6,spi:4:spi:0.18:0.72,dps:28.57:dps:0.37:10.571
-R	hunter/marksmanship	25	15235	12916	mh	12.4309	spi:4:spi:0.18:0.72,sta:6:sta:0.19:1.14,dps:28.57:dps:0.37:10.571
-R	hunter/marksmanship	25	15235	12917	mh	18.5709	int:8:int:1:8,dps:28.57:dps:0.37:10.571
-R	hunter/marksmanship	25	15235	12920	mh	18.5709	int:8:int:1:8,dps:28.57:dps:0.37:10.571
+R	hunter/marksmanship	25	15235	12906	mh	13.808499999999999	int:6:int:1:6,sta:4:sta:0.19:0.76,dps:19.05:dps:0.37:7.048
+R	hunter/marksmanship	25	15235	12908	mh	13.7685	int:6:int:1:6,spi:4:spi:0.18:0.72,dps:19.05:dps:0.37:7.048
+R	hunter/marksmanship	25	15235	12910	mh	8.9085	spi:4:spi:0.18:0.72,sta:6:sta:0.19:1.14,dps:19.05:dps:0.37:7.048
+R	hunter/marksmanship	25	15235	12912	mh	12.188500000000001	int:4:int:1:4,sta:6:sta:0.19:1.14,dps:19.05:dps:0.37:7.048
+R	hunter/marksmanship	25	15235	12913	mh	13.7685	int:6:int:1:6,spi:4:spi:0.18:0.72,dps:19.05:dps:0.37:7.048
+R	hunter/marksmanship	25	15235	12916	mh	8.9085	spi:4:spi:0.18:0.72,sta:6:sta:0.19:1.14,dps:19.05:dps:0.37:7.048
+R	hunter/marksmanship	25	15235	12917	mh	15.0485	int:8:int:1:8,dps:19.05:dps:0.37:7.048
+R	hunter/marksmanship	25	15235	12920	mh	15.0485	int:8:int:1:8,dps:19.05:dps:0.37:7.048
 R	hunter/marksmanship	25	15477	0	gear	0.8585	armor:101:armor:0.0085:0.859
 R	hunter/marksmanship	25	15477	12718	gear	2.0484999999999998	int:1:int:1:1,sta:1:sta:0.19:0.19,armor:101:armor:0.0085:0.859
 R	hunter/marksmanship	25	15477	12719	gear	1.2285	spi:1:spi:0.18:0.18,sta:1:sta:0.19:0.19,armor:101:armor:0.0085:0.859
@@ -31307,6 +31925,9 @@ R	hunter/marksmanship	25	282560	0	gear	14.2805	int:10:int:1:10,sta:13:sta:0.19:2
 R	hunter/marksmanship	34	25	0	mh	0.441	dps:1.05:dps:0.42:0.441
 R	hunter/marksmanship	34	1315	0	gear	6.75	sta:10:sta:0.18:1.8,spi:15:spi:0.33:4.95
 R	hunter/marksmanship	34	1808	0	gear	0.74	armor:74:armor:0.01:0.74
+R	hunter/marksmanship	34	2140	0	mh	2.4948	dps:5.94:dps:0.42:2.495
+R	hunter/marksmanship	34	2140	12718	mh	3.7748	int:1:int:1.1:1.1,sta:1:sta:0.18:0.18,dps:5.94:dps:0.42:2.495
+R	hunter/marksmanship	34	2140	12917	mh	2.675	int:1:int:1.1:1.1,dps:3.75:dps:0.42:1.575
 R	hunter/marksmanship	34	2225	0	mh	2.1	dps:5:dps:0.42:2.1
 R	hunter/marksmanship	34	2614	0	gear	0.29	armor:29:armor:0.01:0.29
 R	hunter/marksmanship	34	3158	0	gear	0.26	armor:26:armor:0.01:0.26
@@ -31510,14 +32131,14 @@ R	hunter/marksmanship	34	15235	12752	mh	16.0794	agi:3:agi:1:3,sta:6:sta:0.18:1.0
 R	hunter/marksmanship	34	15235	12753	mh	13.0794	sta:6:sta:0.18:1.08,dps:28.57:dps:0.42:11.999
 R	hunter/marksmanship	34	15235	12754	mh	13.0794	sta:6:sta:0.18:1.08,dps:28.57:dps:0.42:11.999
 R	hunter/marksmanship	34	15235	12759	mh	11.9994	dps:28.57:dps:0.42:11.999
-R	hunter/marksmanship	34	15235	12906	mh	19.3194	int:6:int:1.1:6.6,sta:4:sta:0.18:0.72,dps:28.57:dps:0.42:11.999
-R	hunter/marksmanship	34	15235	12908	mh	19.9194	int:6:int:1.1:6.6,spi:4:spi:0.33:1.32,dps:28.57:dps:0.42:11.999
-R	hunter/marksmanship	34	15235	12910	mh	14.3994	spi:4:spi:0.33:1.32,sta:6:sta:0.18:1.08,dps:28.57:dps:0.42:11.999
-R	hunter/marksmanship	34	15235	12912	mh	17.4794	int:4:int:1.1:4.4,sta:6:sta:0.18:1.08,dps:28.57:dps:0.42:11.999
-R	hunter/marksmanship	34	15235	12913	mh	19.9194	int:6:int:1.1:6.6,spi:4:spi:0.33:1.32,dps:28.57:dps:0.42:11.999
-R	hunter/marksmanship	34	15235	12916	mh	14.3994	spi:4:spi:0.33:1.32,sta:6:sta:0.18:1.08,dps:28.57:dps:0.42:11.999
-R	hunter/marksmanship	34	15235	12917	mh	20.7994	int:8:int:1.1:8.8,dps:28.57:dps:0.42:11.999
-R	hunter/marksmanship	34	15235	12920	mh	20.7994	int:8:int:1.1:8.8,dps:28.57:dps:0.42:11.999
+R	hunter/marksmanship	34	15235	12906	mh	15.321	int:6:int:1.1:6.6,sta:4:sta:0.18:0.72,dps:19.05:dps:0.42:8.001
+R	hunter/marksmanship	34	15235	12908	mh	15.921	int:6:int:1.1:6.6,spi:4:spi:0.33:1.32,dps:19.05:dps:0.42:8.001
+R	hunter/marksmanship	34	15235	12910	mh	10.401	spi:4:spi:0.33:1.32,sta:6:sta:0.18:1.08,dps:19.05:dps:0.42:8.001
+R	hunter/marksmanship	34	15235	12912	mh	13.481	int:4:int:1.1:4.4,sta:6:sta:0.18:1.08,dps:19.05:dps:0.42:8.001
+R	hunter/marksmanship	34	15235	12913	mh	15.921	int:6:int:1.1:6.6,spi:4:spi:0.33:1.32,dps:19.05:dps:0.42:8.001
+R	hunter/marksmanship	34	15235	12916	mh	10.401	spi:4:spi:0.33:1.32,sta:6:sta:0.18:1.08,dps:19.05:dps:0.42:8.001
+R	hunter/marksmanship	34	15235	12917	mh	16.801000000000002	int:8:int:1.1:8.8,dps:19.05:dps:0.42:8.001
+R	hunter/marksmanship	34	15235	12920	mh	16.801000000000002	int:8:int:1.1:8.8,dps:19.05:dps:0.42:8.001
 R	hunter/marksmanship	34	15477	0	gear	1.01	armor:101:armor:0.01:1.01
 R	hunter/marksmanship	34	15477	12718	gear	2.29	int:1:int:1.1:1.1,sta:1:sta:0.18:0.18,armor:101:armor:0.01:1.01
 R	hunter/marksmanship	34	15477	12719	gear	1.52	spi:1:spi:0.33:0.33,sta:1:sta:0.18:0.18,armor:101:armor:0.01:1.01
@@ -31564,6 +32185,9 @@ R	hunter/marksmanship	34	282560	0	gear	15.469999999999999	int:10:int:1.1:11,sta:
 R	hunter/marksmanship	45	25	0	mh	1.1550000000000002	dps:1.05:dps:1.1:1.155
 R	hunter/marksmanship	45	1315	0	gear	10.3	sta:10:sta:0.4:4,spi:15:spi:0.42:6.3
 R	hunter/marksmanship	45	1808	0	gear	1.406	armor:74:armor:0.019:1.406
+R	hunter/marksmanship	45	2140	0	mh	6.534000000000001	dps:5.94:dps:1.1:6.534
+R	hunter/marksmanship	45	2140	12718	mh	8.034	int:1:int:1.1:1.1,sta:1:sta:0.4:0.4,dps:5.94:dps:1.1:6.534
+R	hunter/marksmanship	45	2140	12917	mh	5.225	int:1:int:1.1:1.1,dps:3.75:dps:1.1:4.125
 R	hunter/marksmanship	45	2225	0	mh	5.5	dps:5:dps:1.1:5.5
 R	hunter/marksmanship	45	2614	0	gear	0.5509999999999999	armor:29:armor:0.019:0.551
 R	hunter/marksmanship	45	3158	0	gear	0.494	armor:26:armor:0.019:0.494
@@ -31767,14 +32391,14 @@ R	hunter/marksmanship	45	15235	12752	mh	36.827000000000005	agi:3:agi:1:3,sta:6:s
 R	hunter/marksmanship	45	15235	12753	mh	33.827000000000005	sta:6:sta:0.4:2.4,dps:28.57:dps:1.1:31.427
 R	hunter/marksmanship	45	15235	12754	mh	33.827000000000005	sta:6:sta:0.4:2.4,dps:28.57:dps:1.1:31.427
 R	hunter/marksmanship	45	15235	12759	mh	31.427000000000003	dps:28.57:dps:1.1:31.427
-R	hunter/marksmanship	45	15235	12906	mh	39.627	int:6:int:1.1:6.6,sta:4:sta:0.4:1.6,dps:28.57:dps:1.1:31.427
-R	hunter/marksmanship	45	15235	12908	mh	39.70700000000001	int:6:int:1.1:6.6,spi:4:spi:0.42:1.68,dps:28.57:dps:1.1:31.427
-R	hunter/marksmanship	45	15235	12910	mh	35.507000000000005	spi:4:spi:0.42:1.68,sta:6:sta:0.4:2.4,dps:28.57:dps:1.1:31.427
-R	hunter/marksmanship	45	15235	12912	mh	38.227000000000004	int:4:int:1.1:4.4,sta:6:sta:0.4:2.4,dps:28.57:dps:1.1:31.427
-R	hunter/marksmanship	45	15235	12913	mh	39.70700000000001	int:6:int:1.1:6.6,spi:4:spi:0.42:1.68,dps:28.57:dps:1.1:31.427
-R	hunter/marksmanship	45	15235	12916	mh	35.507000000000005	spi:4:spi:0.42:1.68,sta:6:sta:0.4:2.4,dps:28.57:dps:1.1:31.427
-R	hunter/marksmanship	45	15235	12917	mh	40.227000000000004	int:8:int:1.1:8.8,dps:28.57:dps:1.1:31.427
-R	hunter/marksmanship	45	15235	12920	mh	40.227000000000004	int:8:int:1.1:8.8,dps:28.57:dps:1.1:31.427
+R	hunter/marksmanship	45	15235	12906	mh	29.155	int:6:int:1.1:6.6,sta:4:sta:0.4:1.6,dps:19.05:dps:1.1:20.955
+R	hunter/marksmanship	45	15235	12908	mh	29.235000000000003	int:6:int:1.1:6.6,spi:4:spi:0.42:1.68,dps:19.05:dps:1.1:20.955
+R	hunter/marksmanship	45	15235	12910	mh	25.035000000000004	spi:4:spi:0.42:1.68,sta:6:sta:0.4:2.4,dps:19.05:dps:1.1:20.955
+R	hunter/marksmanship	45	15235	12912	mh	27.755000000000003	int:4:int:1.1:4.4,sta:6:sta:0.4:2.4,dps:19.05:dps:1.1:20.955
+R	hunter/marksmanship	45	15235	12913	mh	29.235000000000003	int:6:int:1.1:6.6,spi:4:spi:0.42:1.68,dps:19.05:dps:1.1:20.955
+R	hunter/marksmanship	45	15235	12916	mh	25.035000000000004	spi:4:spi:0.42:1.68,sta:6:sta:0.4:2.4,dps:19.05:dps:1.1:20.955
+R	hunter/marksmanship	45	15235	12917	mh	29.755000000000003	int:8:int:1.1:8.8,dps:19.05:dps:1.1:20.955
+R	hunter/marksmanship	45	15235	12920	mh	29.755000000000003	int:8:int:1.1:8.8,dps:19.05:dps:1.1:20.955
 R	hunter/marksmanship	45	15477	0	gear	1.919	armor:101:armor:0.019:1.919
 R	hunter/marksmanship	45	15477	12718	gear	3.419	int:1:int:1.1:1.1,sta:1:sta:0.4:0.4,armor:101:armor:0.019:1.919
 R	hunter/marksmanship	45	15477	12719	gear	2.739	spi:1:spi:0.42:0.42,sta:1:sta:0.4:0.4,armor:101:armor:0.019:1.919
@@ -31821,6 +32445,9 @@ R	hunter/marksmanship	45	282560	0	gear	20.247	int:10:int:1.1:11,sta:13:sta:0.4:5
 R	hunter/marksmanship	55	25	0	mh	1.1550000000000002	dps:1.05:dps:1.1:1.155
 R	hunter/marksmanship	55	1315	0	gear	9.0	sta:10:sta:0.3:3,spi:15:spi:0.4:6
 R	hunter/marksmanship	55	1808	0	gear	0.962	armor:74:armor:0.013:0.962
+R	hunter/marksmanship	55	2140	0	mh	6.534000000000001	dps:5.94:dps:1.1:6.534
+R	hunter/marksmanship	55	2140	12718	mh	7.934000000000001	int:1:int:1.1:1.1,sta:1:sta:0.3:0.3,dps:5.94:dps:1.1:6.534
+R	hunter/marksmanship	55	2140	12917	mh	5.225	int:1:int:1.1:1.1,dps:3.75:dps:1.1:4.125
 R	hunter/marksmanship	55	2225	0	mh	5.5	dps:5:dps:1.1:5.5
 R	hunter/marksmanship	55	2614	0	gear	0.377	armor:29:armor:0.013:0.377
 R	hunter/marksmanship	55	3158	0	gear	0.33799999999999997	armor:26:armor:0.013:0.338
@@ -32024,14 +32651,14 @@ R	hunter/marksmanship	55	15235	12752	mh	36.227000000000004	agi:3:agi:1:3,sta:6:s
 R	hunter/marksmanship	55	15235	12753	mh	33.227000000000004	sta:6:sta:0.3:1.8,dps:28.57:dps:1.1:31.427
 R	hunter/marksmanship	55	15235	12754	mh	33.227000000000004	sta:6:sta:0.3:1.8,dps:28.57:dps:1.1:31.427
 R	hunter/marksmanship	55	15235	12759	mh	31.427000000000003	dps:28.57:dps:1.1:31.427
-R	hunter/marksmanship	55	15235	12906	mh	39.227000000000004	int:6:int:1.1:6.6,sta:4:sta:0.3:1.2,dps:28.57:dps:1.1:31.427
-R	hunter/marksmanship	55	15235	12908	mh	39.627	int:6:int:1.1:6.6,spi:4:spi:0.4:1.6,dps:28.57:dps:1.1:31.427
-R	hunter/marksmanship	55	15235	12910	mh	34.827000000000005	spi:4:spi:0.4:1.6,sta:6:sta:0.3:1.8,dps:28.57:dps:1.1:31.427
-R	hunter/marksmanship	55	15235	12912	mh	37.627	int:4:int:1.1:4.4,sta:6:sta:0.3:1.8,dps:28.57:dps:1.1:31.427
-R	hunter/marksmanship	55	15235	12913	mh	39.627	int:6:int:1.1:6.6,spi:4:spi:0.4:1.6,dps:28.57:dps:1.1:31.427
-R	hunter/marksmanship	55	15235	12916	mh	34.827000000000005	spi:4:spi:0.4:1.6,sta:6:sta:0.3:1.8,dps:28.57:dps:1.1:31.427
-R	hunter/marksmanship	55	15235	12917	mh	40.227000000000004	int:8:int:1.1:8.8,dps:28.57:dps:1.1:31.427
-R	hunter/marksmanship	55	15235	12920	mh	40.227000000000004	int:8:int:1.1:8.8,dps:28.57:dps:1.1:31.427
+R	hunter/marksmanship	55	15235	12906	mh	28.755000000000003	int:6:int:1.1:6.6,sta:4:sta:0.3:1.2,dps:19.05:dps:1.1:20.955
+R	hunter/marksmanship	55	15235	12908	mh	29.155	int:6:int:1.1:6.6,spi:4:spi:0.4:1.6,dps:19.05:dps:1.1:20.955
+R	hunter/marksmanship	55	15235	12910	mh	24.355	spi:4:spi:0.4:1.6,sta:6:sta:0.3:1.8,dps:19.05:dps:1.1:20.955
+R	hunter/marksmanship	55	15235	12912	mh	27.155	int:4:int:1.1:4.4,sta:6:sta:0.3:1.8,dps:19.05:dps:1.1:20.955
+R	hunter/marksmanship	55	15235	12913	mh	29.155	int:6:int:1.1:6.6,spi:4:spi:0.4:1.6,dps:19.05:dps:1.1:20.955
+R	hunter/marksmanship	55	15235	12916	mh	24.355	spi:4:spi:0.4:1.6,sta:6:sta:0.3:1.8,dps:19.05:dps:1.1:20.955
+R	hunter/marksmanship	55	15235	12917	mh	29.755000000000003	int:8:int:1.1:8.8,dps:19.05:dps:1.1:20.955
+R	hunter/marksmanship	55	15235	12920	mh	29.755000000000003	int:8:int:1.1:8.8,dps:19.05:dps:1.1:20.955
 R	hunter/marksmanship	55	15477	0	gear	1.313	armor:101:armor:0.013:1.313
 R	hunter/marksmanship	55	15477	12718	gear	2.713	int:1:int:1.1:1.1,sta:1:sta:0.3:0.3,armor:101:armor:0.013:1.313
 R	hunter/marksmanship	55	15477	12719	gear	2.013	spi:1:spi:0.4:0.4,sta:1:sta:0.3:0.3,armor:101:armor:0.013:1.313
@@ -32078,6 +32705,9 @@ R	hunter/marksmanship	55	282560	0	gear	17.669	int:10:int:1.1:11,sta:13:sta:0.3:3
 R	hunter/marksmanship	60	25	0	mh	1.8900000000000001	dps:1.05:dps:1.8:1.89
 R	hunter/marksmanship	60	1315	0	gear	5.85	sta:10:sta:0.24:2.4,spi:15:spi:0.23:3.45
 R	hunter/marksmanship	60	1808	0	gear	1.184	armor:74:armor:0.016:1.184
+R	hunter/marksmanship	60	2140	0	mh	10.692	dps:5.94:dps:1.8:10.692
+R	hunter/marksmanship	60	2140	12718	mh	11.782	int:1:int:0.85:0.85,sta:1:sta:0.24:0.24,dps:5.94:dps:1.8:10.692
+R	hunter/marksmanship	60	2140	12917	mh	7.6	int:1:int:0.85:0.85,dps:3.75:dps:1.8:6.75
 R	hunter/marksmanship	60	2225	0	mh	9.0	dps:5:dps:1.8:9
 R	hunter/marksmanship	60	2614	0	gear	0.464	armor:29:armor:0.016:0.464
 R	hunter/marksmanship	60	3158	0	gear	0.41600000000000004	armor:26:armor:0.016:0.416
@@ -32281,14 +32911,14 @@ R	hunter/marksmanship	60	15235	12752	mh	55.866	agi:3:agi:1:3,sta:6:sta:0.24:1.44
 R	hunter/marksmanship	60	15235	12753	mh	52.866	sta:6:sta:0.24:1.44,dps:28.57:dps:1.8:51.426
 R	hunter/marksmanship	60	15235	12754	mh	52.866	sta:6:sta:0.24:1.44,dps:28.57:dps:1.8:51.426
 R	hunter/marksmanship	60	15235	12759	mh	51.426	dps:28.57:dps:1.8:51.426
-R	hunter/marksmanship	60	15235	12906	mh	57.486000000000004	int:6:int:0.85:5.1,sta:4:sta:0.24:0.96,dps:28.57:dps:1.8:51.426
-R	hunter/marksmanship	60	15235	12908	mh	57.446	int:6:int:0.85:5.1,spi:4:spi:0.23:0.92,dps:28.57:dps:1.8:51.426
-R	hunter/marksmanship	60	15235	12910	mh	53.786	spi:4:spi:0.23:0.92,sta:6:sta:0.24:1.44,dps:28.57:dps:1.8:51.426
-R	hunter/marksmanship	60	15235	12912	mh	56.266000000000005	int:4:int:0.85:3.4,sta:6:sta:0.24:1.44,dps:28.57:dps:1.8:51.426
-R	hunter/marksmanship	60	15235	12913	mh	57.446	int:6:int:0.85:5.1,spi:4:spi:0.23:0.92,dps:28.57:dps:1.8:51.426
-R	hunter/marksmanship	60	15235	12916	mh	53.786	spi:4:spi:0.23:0.92,sta:6:sta:0.24:1.44,dps:28.57:dps:1.8:51.426
-R	hunter/marksmanship	60	15235	12917	mh	58.226	int:8:int:0.85:6.8,dps:28.57:dps:1.8:51.426
-R	hunter/marksmanship	60	15235	12920	mh	58.226	int:8:int:0.85:6.8,dps:28.57:dps:1.8:51.426
+R	hunter/marksmanship	60	15235	12906	mh	40.35	int:6:int:0.85:5.1,sta:4:sta:0.24:0.96,dps:19.05:dps:1.8:34.29
+R	hunter/marksmanship	60	15235	12908	mh	40.31	int:6:int:0.85:5.1,spi:4:spi:0.23:0.92,dps:19.05:dps:1.8:34.29
+R	hunter/marksmanship	60	15235	12910	mh	36.65	spi:4:spi:0.23:0.92,sta:6:sta:0.24:1.44,dps:19.05:dps:1.8:34.29
+R	hunter/marksmanship	60	15235	12912	mh	39.129999999999995	int:4:int:0.85:3.4,sta:6:sta:0.24:1.44,dps:19.05:dps:1.8:34.29
+R	hunter/marksmanship	60	15235	12913	mh	40.31	int:6:int:0.85:5.1,spi:4:spi:0.23:0.92,dps:19.05:dps:1.8:34.29
+R	hunter/marksmanship	60	15235	12916	mh	36.65	spi:4:spi:0.23:0.92,sta:6:sta:0.24:1.44,dps:19.05:dps:1.8:34.29
+R	hunter/marksmanship	60	15235	12917	mh	41.089999999999996	int:8:int:0.85:6.8,dps:19.05:dps:1.8:34.29
+R	hunter/marksmanship	60	15235	12920	mh	41.089999999999996	int:8:int:0.85:6.8,dps:19.05:dps:1.8:34.29
 R	hunter/marksmanship	60	15477	0	gear	1.616	armor:101:armor:0.016:1.616
 R	hunter/marksmanship	60	15477	12718	gear	2.706	int:1:int:0.85:0.85,sta:1:sta:0.24:0.24,armor:101:armor:0.016:1.616
 R	hunter/marksmanship	60	15477	12719	gear	2.0860000000000003	spi:1:spi:0.23:0.23,sta:1:sta:0.24:0.24,armor:101:armor:0.016:1.616
@@ -32335,6 +32965,9 @@ R	hunter/marksmanship	60	282560	0	gear	15.028	int:10:int:0.85:8.5,sta:13:sta:0.2
 R	hunter/survival	12	25	0	mh	0.24150000000000002	dps:1.05:dps:0.23:0.242
 R	hunter/survival	12	1315	0	gear	3.95	sta:10:sta:0.23:2.3,spi:15:spi:0.11:1.65
 R	hunter/survival	12	1808	0	gear	0.814	armor:74:armor:0.011:0.814
+R	hunter/survival	12	2140	0	mh	1.3662	dps:5.94:dps:0.23:1.366
+R	hunter/survival	12	2140	12718	mh	2.0262000000000002	int:1:int:0.43:0.43,sta:1:sta:0.23:0.23,dps:5.94:dps:0.23:1.366
+R	hunter/survival	12	2140	12917	mh	1.2925	int:1:int:0.43:0.43,dps:3.75:dps:0.23:0.863
 R	hunter/survival	12	2225	0	mh	1.1500000000000001	dps:5:dps:0.23:1.15
 R	hunter/survival	12	2614	0	gear	0.319	armor:29:armor:0.011:0.319
 R	hunter/survival	12	3158	0	gear	0.286	armor:26:armor:0.011:0.286
@@ -32538,14 +33171,14 @@ R	hunter/survival	12	15235	12752	mh	10.9511	agi:3:agi:1:3,sta:6:sta:0.23:1.38,dp
 R	hunter/survival	12	15235	12753	mh	7.9511	sta:6:sta:0.23:1.38,dps:28.57:dps:0.23:6.571
 R	hunter/survival	12	15235	12754	mh	7.9511	sta:6:sta:0.23:1.38,dps:28.57:dps:0.23:6.571
 R	hunter/survival	12	15235	12759	mh	6.5711	dps:28.57:dps:0.23:6.571
-R	hunter/survival	12	15235	12906	mh	10.071100000000001	int:6:int:0.43:2.58,sta:4:sta:0.23:0.92,dps:28.57:dps:0.23:6.571
-R	hunter/survival	12	15235	12908	mh	9.5911	int:6:int:0.43:2.58,spi:4:spi:0.11:0.44,dps:28.57:dps:0.23:6.571
-R	hunter/survival	12	15235	12910	mh	8.3911	spi:4:spi:0.11:0.44,sta:6:sta:0.23:1.38,dps:28.57:dps:0.23:6.571
-R	hunter/survival	12	15235	12912	mh	9.671100000000001	int:4:int:0.43:1.72,sta:6:sta:0.23:1.38,dps:28.57:dps:0.23:6.571
-R	hunter/survival	12	15235	12913	mh	9.5911	int:6:int:0.43:2.58,spi:4:spi:0.11:0.44,dps:28.57:dps:0.23:6.571
-R	hunter/survival	12	15235	12916	mh	8.3911	spi:4:spi:0.11:0.44,sta:6:sta:0.23:1.38,dps:28.57:dps:0.23:6.571
-R	hunter/survival	12	15235	12917	mh	10.0111	int:8:int:0.43:3.44,dps:28.57:dps:0.23:6.571
-R	hunter/survival	12	15235	12920	mh	10.0111	int:8:int:0.43:3.44,dps:28.57:dps:0.23:6.571
+R	hunter/survival	12	15235	12906	mh	7.8815	int:6:int:0.43:2.58,sta:4:sta:0.23:0.92,dps:19.05:dps:0.23:4.381
+R	hunter/survival	12	15235	12908	mh	7.4015	int:6:int:0.43:2.58,spi:4:spi:0.11:0.44,dps:19.05:dps:0.23:4.381
+R	hunter/survival	12	15235	12910	mh	6.2015	spi:4:spi:0.11:0.44,sta:6:sta:0.23:1.38,dps:19.05:dps:0.23:4.381
+R	hunter/survival	12	15235	12912	mh	7.4815000000000005	int:4:int:0.43:1.72,sta:6:sta:0.23:1.38,dps:19.05:dps:0.23:4.381
+R	hunter/survival	12	15235	12913	mh	7.4015	int:6:int:0.43:2.58,spi:4:spi:0.11:0.44,dps:19.05:dps:0.23:4.381
+R	hunter/survival	12	15235	12916	mh	6.2015	spi:4:spi:0.11:0.44,sta:6:sta:0.23:1.38,dps:19.05:dps:0.23:4.381
+R	hunter/survival	12	15235	12917	mh	7.8215	int:8:int:0.43:3.44,dps:19.05:dps:0.23:4.381
+R	hunter/survival	12	15235	12920	mh	7.8215	int:8:int:0.43:3.44,dps:19.05:dps:0.23:4.381
 R	hunter/survival	12	15477	0	gear	1.111	armor:101:armor:0.011:1.111
 R	hunter/survival	12	15477	12718	gear	1.771	int:1:int:0.43:0.43,sta:1:sta:0.23:0.23,armor:101:armor:0.011:1.111
 R	hunter/survival	12	15477	12719	gear	1.451	spi:1:spi:0.11:0.11,sta:1:sta:0.23:0.23,armor:101:armor:0.011:1.111
@@ -32592,6 +33225,9 @@ R	hunter/survival	12	282560	0	gear	9.633	int:10:int:0.43:4.3,sta:13:sta:0.23:2.9
 R	hunter/survival	25	25	0	mh	0.168	dps:1.05:dps:0.16:0.168
 R	hunter/survival	25	1315	0	gear	3.37	sta:10:sta:0.097:0.97,spi:15:spi:0.16:2.4
 R	hunter/survival	25	1808	0	gear	0.37	armor:74:armor:0.005:0.37
+R	hunter/survival	25	2140	0	mh	0.9504000000000001	dps:5.94:dps:0.16:0.95
+R	hunter/survival	25	2140	12718	mh	1.6274000000000002	int:1:int:0.58:0.58,sta:1:sta:0.097:0.097,dps:5.94:dps:0.16:0.95
+R	hunter/survival	25	2140	12917	mh	1.18	int:1:int:0.58:0.58,dps:3.75:dps:0.16:0.6
 R	hunter/survival	25	2225	0	mh	0.8	dps:5:dps:0.16:0.8
 R	hunter/survival	25	2614	0	gear	0.145	armor:29:armor:0.005:0.145
 R	hunter/survival	25	3158	0	gear	0.13	armor:26:armor:0.005:0.13
@@ -32795,14 +33431,14 @@ R	hunter/survival	25	15235	12752	mh	8.1532	agi:3:agi:1:3,sta:6:sta:0.097:0.582,d
 R	hunter/survival	25	15235	12753	mh	5.1532	sta:6:sta:0.097:0.582,dps:28.57:dps:0.16:4.571
 R	hunter/survival	25	15235	12754	mh	5.1532	sta:6:sta:0.097:0.582,dps:28.57:dps:0.16:4.571
 R	hunter/survival	25	15235	12759	mh	4.5712	dps:28.57:dps:0.16:4.571
-R	hunter/survival	25	15235	12906	mh	8.4392	int:6:int:0.58:3.48,sta:4:sta:0.097:0.388,dps:28.57:dps:0.16:4.571
-R	hunter/survival	25	15235	12908	mh	8.691199999999998	int:6:int:0.58:3.48,spi:4:spi:0.16:0.64,dps:28.57:dps:0.16:4.571
-R	hunter/survival	25	15235	12910	mh	5.793200000000001	spi:4:spi:0.16:0.64,sta:6:sta:0.097:0.582,dps:28.57:dps:0.16:4.571
-R	hunter/survival	25	15235	12912	mh	7.4732	int:4:int:0.58:2.32,sta:6:sta:0.097:0.582,dps:28.57:dps:0.16:4.571
-R	hunter/survival	25	15235	12913	mh	8.691199999999998	int:6:int:0.58:3.48,spi:4:spi:0.16:0.64,dps:28.57:dps:0.16:4.571
-R	hunter/survival	25	15235	12916	mh	5.793200000000001	spi:4:spi:0.16:0.64,sta:6:sta:0.097:0.582,dps:28.57:dps:0.16:4.571
-R	hunter/survival	25	15235	12917	mh	9.2112	int:8:int:0.58:4.64,dps:28.57:dps:0.16:4.571
-R	hunter/survival	25	15235	12920	mh	9.2112	int:8:int:0.58:4.64,dps:28.57:dps:0.16:4.571
+R	hunter/survival	25	15235	12906	mh	6.9159999999999995	int:6:int:0.58:3.48,sta:4:sta:0.097:0.388,dps:19.05:dps:0.16:3.048
+R	hunter/survival	25	15235	12908	mh	7.167999999999999	int:6:int:0.58:3.48,spi:4:spi:0.16:0.64,dps:19.05:dps:0.16:3.048
+R	hunter/survival	25	15235	12910	mh	4.27	spi:4:spi:0.16:0.64,sta:6:sta:0.097:0.582,dps:19.05:dps:0.16:3.048
+R	hunter/survival	25	15235	12912	mh	5.95	int:4:int:0.58:2.32,sta:6:sta:0.097:0.582,dps:19.05:dps:0.16:3.048
+R	hunter/survival	25	15235	12913	mh	7.167999999999999	int:6:int:0.58:3.48,spi:4:spi:0.16:0.64,dps:19.05:dps:0.16:3.048
+R	hunter/survival	25	15235	12916	mh	4.27	spi:4:spi:0.16:0.64,sta:6:sta:0.097:0.582,dps:19.05:dps:0.16:3.048
+R	hunter/survival	25	15235	12917	mh	7.688	int:8:int:0.58:4.64,dps:19.05:dps:0.16:3.048
+R	hunter/survival	25	15235	12920	mh	7.688	int:8:int:0.58:4.64,dps:19.05:dps:0.16:3.048
 R	hunter/survival	25	15477	0	gear	0.505	armor:101:armor:0.005:0.505
 R	hunter/survival	25	15477	12718	gear	1.182	int:1:int:0.58:0.58,sta:1:sta:0.097:0.097,armor:101:armor:0.005:0.505
 R	hunter/survival	25	15477	12719	gear	0.762	spi:1:spi:0.16:0.16,sta:1:sta:0.097:0.097,armor:101:armor:0.005:0.505
@@ -32849,6 +33485,9 @@ R	hunter/survival	25	282560	0	gear	8.126	int:10:int:0.58:5.8,sta:13:sta:0.097:1.
 R	hunter/survival	34	25	0	mh	0.546	dps:1.05:dps:0.52:0.546
 R	hunter/survival	34	1315	0	gear	5.45	sta:10:sta:0.17:1.7,spi:15:spi:0.25:3.75
 R	hunter/survival	34	1808	0	gear	0.74	armor:74:armor:0.01:0.74
+R	hunter/survival	34	2140	0	mh	3.0888000000000004	dps:5.94:dps:0.52:3.089
+R	hunter/survival	34	2140	12718	mh	3.9988000000000006	int:1:int:0.74:0.74,sta:1:sta:0.17:0.17,dps:5.94:dps:0.52:3.089
+R	hunter/survival	34	2140	12917	mh	2.6900000000000004	int:1:int:0.74:0.74,dps:3.75:dps:0.52:1.95
 R	hunter/survival	34	2225	0	mh	2.6	dps:5:dps:0.52:2.6
 R	hunter/survival	34	2614	0	gear	0.29	armor:29:armor:0.01:0.29
 R	hunter/survival	34	3158	0	gear	0.26	armor:26:armor:0.01:0.26
@@ -33052,14 +33691,14 @@ R	hunter/survival	34	15235	12752	mh	18.8764	agi:3:agi:1:3,sta:6:sta:0.17:1.02,dp
 R	hunter/survival	34	15235	12753	mh	15.8764	sta:6:sta:0.17:1.02,dps:28.57:dps:0.52:14.856
 R	hunter/survival	34	15235	12754	mh	15.8764	sta:6:sta:0.17:1.02,dps:28.57:dps:0.52:14.856
 R	hunter/survival	34	15235	12759	mh	14.8564	dps:28.57:dps:0.52:14.856
-R	hunter/survival	34	15235	12906	mh	19.976399999999998	int:6:int:0.74:4.44,sta:4:sta:0.17:0.68,dps:28.57:dps:0.52:14.856
-R	hunter/survival	34	15235	12908	mh	20.2964	int:6:int:0.74:4.44,spi:4:spi:0.25:1,dps:28.57:dps:0.52:14.856
-R	hunter/survival	34	15235	12910	mh	16.8764	spi:4:spi:0.25:1,sta:6:sta:0.17:1.02,dps:28.57:dps:0.52:14.856
-R	hunter/survival	34	15235	12912	mh	18.8364	int:4:int:0.74:2.96,sta:6:sta:0.17:1.02,dps:28.57:dps:0.52:14.856
-R	hunter/survival	34	15235	12913	mh	20.2964	int:6:int:0.74:4.44,spi:4:spi:0.25:1,dps:28.57:dps:0.52:14.856
-R	hunter/survival	34	15235	12916	mh	16.8764	spi:4:spi:0.25:1,sta:6:sta:0.17:1.02,dps:28.57:dps:0.52:14.856
-R	hunter/survival	34	15235	12917	mh	20.776400000000002	int:8:int:0.74:5.92,dps:28.57:dps:0.52:14.856
-R	hunter/survival	34	15235	12920	mh	20.776400000000002	int:8:int:0.74:5.92,dps:28.57:dps:0.52:14.856
+R	hunter/survival	34	15235	12906	mh	15.026	int:6:int:0.74:4.44,sta:4:sta:0.17:0.68,dps:19.05:dps:0.52:9.906
+R	hunter/survival	34	15235	12908	mh	15.346	int:6:int:0.74:4.44,spi:4:spi:0.25:1,dps:19.05:dps:0.52:9.906
+R	hunter/survival	34	15235	12910	mh	11.926	spi:4:spi:0.25:1,sta:6:sta:0.17:1.02,dps:19.05:dps:0.52:9.906
+R	hunter/survival	34	15235	12912	mh	13.886000000000001	int:4:int:0.74:2.96,sta:6:sta:0.17:1.02,dps:19.05:dps:0.52:9.906
+R	hunter/survival	34	15235	12913	mh	15.346	int:6:int:0.74:4.44,spi:4:spi:0.25:1,dps:19.05:dps:0.52:9.906
+R	hunter/survival	34	15235	12916	mh	11.926	spi:4:spi:0.25:1,sta:6:sta:0.17:1.02,dps:19.05:dps:0.52:9.906
+R	hunter/survival	34	15235	12917	mh	15.826	int:8:int:0.74:5.92,dps:19.05:dps:0.52:9.906
+R	hunter/survival	34	15235	12920	mh	15.826	int:8:int:0.74:5.92,dps:19.05:dps:0.52:9.906
 R	hunter/survival	34	15477	0	gear	1.01	armor:101:armor:0.01:1.01
 R	hunter/survival	34	15477	12718	gear	1.92	int:1:int:0.74:0.74,sta:1:sta:0.17:0.17,armor:101:armor:0.01:1.01
 R	hunter/survival	34	15477	12719	gear	1.4300000000000002	spi:1:spi:0.25:0.25,sta:1:sta:0.17:0.17,armor:101:armor:0.01:1.01
@@ -33106,6 +33745,9 @@ R	hunter/survival	34	282560	0	gear	11.739999999999998	int:10:int:0.74:7.4,sta:13
 R	hunter/survival	45	25	0	mh	0.8925	dps:1.05:dps:0.85:0.892
 R	hunter/survival	45	1315	0	gear	5.7	sta:10:sta:0.27:2.7,spi:15:spi:0.2:3
 R	hunter/survival	45	1808	0	gear	0.888	armor:74:armor:0.012:0.888
+R	hunter/survival	45	2140	0	mh	5.049	dps:5.94:dps:0.85:5.049
+R	hunter/survival	45	2140	12718	mh	5.889	int:1:int:0.57:0.57,sta:1:sta:0.27:0.27,dps:5.94:dps:0.85:5.049
+R	hunter/survival	45	2140	12917	mh	3.7575	int:1:int:0.57:0.57,dps:3.75:dps:0.85:3.188
 R	hunter/survival	45	2225	0	mh	4.25	dps:5:dps:0.85:4.25
 R	hunter/survival	45	2614	0	gear	0.34800000000000003	armor:29:armor:0.012:0.348
 R	hunter/survival	45	3158	0	gear	0.312	armor:26:armor:0.012:0.312
@@ -33309,14 +33951,14 @@ R	hunter/survival	45	15235	12752	mh	28.904500000000002	agi:3:agi:1:3,sta:6:sta:0
 R	hunter/survival	45	15235	12753	mh	25.904500000000002	sta:6:sta:0.27:1.62,dps:28.57:dps:0.85:24.285
 R	hunter/survival	45	15235	12754	mh	25.904500000000002	sta:6:sta:0.27:1.62,dps:28.57:dps:0.85:24.285
 R	hunter/survival	45	15235	12759	mh	24.2845	dps:28.57:dps:0.85:24.285
-R	hunter/survival	45	15235	12906	mh	28.7845	int:6:int:0.57:3.42,sta:4:sta:0.27:1.08,dps:28.57:dps:0.85:24.285
-R	hunter/survival	45	15235	12908	mh	28.5045	int:6:int:0.57:3.42,spi:4:spi:0.2:0.8,dps:28.57:dps:0.85:24.285
-R	hunter/survival	45	15235	12910	mh	26.704500000000003	spi:4:spi:0.2:0.8,sta:6:sta:0.27:1.62,dps:28.57:dps:0.85:24.285
-R	hunter/survival	45	15235	12912	mh	28.1845	int:4:int:0.57:2.28,sta:6:sta:0.27:1.62,dps:28.57:dps:0.85:24.285
-R	hunter/survival	45	15235	12913	mh	28.5045	int:6:int:0.57:3.42,spi:4:spi:0.2:0.8,dps:28.57:dps:0.85:24.285
-R	hunter/survival	45	15235	12916	mh	26.704500000000003	spi:4:spi:0.2:0.8,sta:6:sta:0.27:1.62,dps:28.57:dps:0.85:24.285
-R	hunter/survival	45	15235	12917	mh	28.8445	int:8:int:0.57:4.56,dps:28.57:dps:0.85:24.285
-R	hunter/survival	45	15235	12920	mh	28.8445	int:8:int:0.57:4.56,dps:28.57:dps:0.85:24.285
+R	hunter/survival	45	15235	12906	mh	20.6925	int:6:int:0.57:3.42,sta:4:sta:0.27:1.08,dps:19.05:dps:0.85:16.192
+R	hunter/survival	45	15235	12908	mh	20.412499999999998	int:6:int:0.57:3.42,spi:4:spi:0.2:0.8,dps:19.05:dps:0.85:16.192
+R	hunter/survival	45	15235	12910	mh	18.612499999999997	spi:4:spi:0.2:0.8,sta:6:sta:0.27:1.62,dps:19.05:dps:0.85:16.192
+R	hunter/survival	45	15235	12912	mh	20.092499999999998	int:4:int:0.57:2.28,sta:6:sta:0.27:1.62,dps:19.05:dps:0.85:16.192
+R	hunter/survival	45	15235	12913	mh	20.412499999999998	int:6:int:0.57:3.42,spi:4:spi:0.2:0.8,dps:19.05:dps:0.85:16.192
+R	hunter/survival	45	15235	12916	mh	18.612499999999997	spi:4:spi:0.2:0.8,sta:6:sta:0.27:1.62,dps:19.05:dps:0.85:16.192
+R	hunter/survival	45	15235	12917	mh	20.752499999999998	int:8:int:0.57:4.56,dps:19.05:dps:0.85:16.192
+R	hunter/survival	45	15235	12920	mh	20.752499999999998	int:8:int:0.57:4.56,dps:19.05:dps:0.85:16.192
 R	hunter/survival	45	15477	0	gear	1.212	armor:101:armor:0.012:1.212
 R	hunter/survival	45	15477	12718	gear	2.052	int:1:int:0.57:0.57,sta:1:sta:0.27:0.27,armor:101:armor:0.012:1.212
 R	hunter/survival	45	15477	12719	gear	1.682	spi:1:spi:0.2:0.2,sta:1:sta:0.27:0.27,armor:101:armor:0.012:1.212
@@ -33363,6 +34005,9 @@ R	hunter/survival	45	282560	0	gear	11.765999999999998	int:10:int:0.57:5.7,sta:13
 R	hunter/survival	55	25	0	mh	1.0395	dps:1.05:dps:0.99:1.04
 R	hunter/survival	55	1315	0	gear	5.5	sta:10:sta:0.22:2.2,spi:15:spi:0.22:3.3
 R	hunter/survival	55	1808	0	gear	0.888	armor:74:armor:0.012:0.888
+R	hunter/survival	55	2140	0	mh	5.8806	dps:5.94:dps:0.99:5.881
+R	hunter/survival	55	2140	12718	mh	6.6606000000000005	int:1:int:0.56:0.56,sta:1:sta:0.22:0.22,dps:5.94:dps:0.99:5.881
+R	hunter/survival	55	2140	12917	mh	4.2725	int:1:int:0.56:0.56,dps:3.75:dps:0.99:3.712
 R	hunter/survival	55	2225	0	mh	4.95	dps:5:dps:0.99:4.95
 R	hunter/survival	55	2614	0	gear	0.34800000000000003	armor:29:armor:0.012:0.348
 R	hunter/survival	55	3158	0	gear	0.312	armor:26:armor:0.012:0.312
@@ -33566,14 +34211,14 @@ R	hunter/survival	55	15235	12752	mh	32.6043	agi:3:agi:1:3,sta:6:sta:0.22:1.32,dp
 R	hunter/survival	55	15235	12753	mh	29.604300000000002	sta:6:sta:0.22:1.32,dps:28.57:dps:0.99:28.284
 R	hunter/survival	55	15235	12754	mh	29.604300000000002	sta:6:sta:0.22:1.32,dps:28.57:dps:0.99:28.284
 R	hunter/survival	55	15235	12759	mh	28.2843	dps:28.57:dps:0.99:28.284
-R	hunter/survival	55	15235	12906	mh	32.524300000000004	int:6:int:0.56:3.36,sta:4:sta:0.22:0.88,dps:28.57:dps:0.99:28.284
-R	hunter/survival	55	15235	12908	mh	32.524300000000004	int:6:int:0.56:3.36,spi:4:spi:0.22:0.88,dps:28.57:dps:0.99:28.284
-R	hunter/survival	55	15235	12910	mh	30.4843	spi:4:spi:0.22:0.88,sta:6:sta:0.22:1.32,dps:28.57:dps:0.99:28.284
-R	hunter/survival	55	15235	12912	mh	31.844300000000004	int:4:int:0.56:2.24,sta:6:sta:0.22:1.32,dps:28.57:dps:0.99:28.284
-R	hunter/survival	55	15235	12913	mh	32.524300000000004	int:6:int:0.56:3.36,spi:4:spi:0.22:0.88,dps:28.57:dps:0.99:28.284
-R	hunter/survival	55	15235	12916	mh	30.4843	spi:4:spi:0.22:0.88,sta:6:sta:0.22:1.32,dps:28.57:dps:0.99:28.284
-R	hunter/survival	55	15235	12917	mh	32.764300000000006	int:8:int:0.56:4.48,dps:28.57:dps:0.99:28.284
-R	hunter/survival	55	15235	12920	mh	32.764300000000006	int:8:int:0.56:4.48,dps:28.57:dps:0.99:28.284
+R	hunter/survival	55	15235	12906	mh	23.0995	int:6:int:0.56:3.36,sta:4:sta:0.22:0.88,dps:19.05:dps:0.99:18.86
+R	hunter/survival	55	15235	12908	mh	23.0995	int:6:int:0.56:3.36,spi:4:spi:0.22:0.88,dps:19.05:dps:0.99:18.86
+R	hunter/survival	55	15235	12910	mh	21.0595	spi:4:spi:0.22:0.88,sta:6:sta:0.22:1.32,dps:19.05:dps:0.99:18.86
+R	hunter/survival	55	15235	12912	mh	22.4195	int:4:int:0.56:2.24,sta:6:sta:0.22:1.32,dps:19.05:dps:0.99:18.86
+R	hunter/survival	55	15235	12913	mh	23.0995	int:6:int:0.56:3.36,spi:4:spi:0.22:0.88,dps:19.05:dps:0.99:18.86
+R	hunter/survival	55	15235	12916	mh	21.0595	spi:4:spi:0.22:0.88,sta:6:sta:0.22:1.32,dps:19.05:dps:0.99:18.86
+R	hunter/survival	55	15235	12917	mh	23.3395	int:8:int:0.56:4.48,dps:19.05:dps:0.99:18.86
+R	hunter/survival	55	15235	12920	mh	23.3395	int:8:int:0.56:4.48,dps:19.05:dps:0.99:18.86
 R	hunter/survival	55	15477	0	gear	1.212	armor:101:armor:0.012:1.212
 R	hunter/survival	55	15477	12718	gear	1.992	int:1:int:0.56:0.56,sta:1:sta:0.22:0.22,armor:101:armor:0.012:1.212
 R	hunter/survival	55	15477	12719	gear	1.652	spi:1:spi:0.22:0.22,sta:1:sta:0.22:0.22,armor:101:armor:0.012:1.212
@@ -33620,6 +34265,9 @@ R	hunter/survival	55	282560	0	gear	11.016000000000002	int:10:int:0.56:5.6,sta:13
 R	hunter/survival	60	25	0	mh	1.6800000000000002	dps:1.05:dps:1.6:1.68
 R	hunter/survival	60	1315	0	gear	4.65	sta:10:sta:0.18:1.8,spi:15:spi:0.19:2.85
 R	hunter/survival	60	1808	0	gear	0.962	armor:74:armor:0.013:0.962
+R	hunter/survival	60	2140	0	mh	9.504000000000001	dps:5.94:dps:1.6:9.504
+R	hunter/survival	60	2140	12718	mh	10.104000000000001	int:1:int:0.42:0.42,sta:1:sta:0.18:0.18,dps:5.94:dps:1.6:9.504
+R	hunter/survival	60	2140	12917	mh	6.42	int:1:int:0.42:0.42,dps:3.75:dps:1.6:6
 R	hunter/survival	60	2225	0	mh	8.0	dps:5:dps:1.6:8
 R	hunter/survival	60	2614	0	gear	0.377	armor:29:armor:0.013:0.377
 R	hunter/survival	60	3158	0	gear	0.33799999999999997	armor:26:armor:0.013:0.338
@@ -33823,14 +34471,14 @@ R	hunter/survival	60	15235	12752	mh	49.792	agi:3:agi:1:3,sta:6:sta:0.18:1.08,dps
 R	hunter/survival	60	15235	12753	mh	46.792	sta:6:sta:0.18:1.08,dps:28.57:dps:1.6:45.712
 R	hunter/survival	60	15235	12754	mh	46.792	sta:6:sta:0.18:1.08,dps:28.57:dps:1.6:45.712
 R	hunter/survival	60	15235	12759	mh	45.712	dps:28.57:dps:1.6:45.712
-R	hunter/survival	60	15235	12906	mh	48.952000000000005	int:6:int:0.42:2.52,sta:4:sta:0.18:0.72,dps:28.57:dps:1.6:45.712
-R	hunter/survival	60	15235	12908	mh	48.992000000000004	int:6:int:0.42:2.52,spi:4:spi:0.19:0.76,dps:28.57:dps:1.6:45.712
-R	hunter/survival	60	15235	12910	mh	47.55200000000001	spi:4:spi:0.19:0.76,sta:6:sta:0.18:1.08,dps:28.57:dps:1.6:45.712
-R	hunter/survival	60	15235	12912	mh	48.472	int:4:int:0.42:1.68,sta:6:sta:0.18:1.08,dps:28.57:dps:1.6:45.712
-R	hunter/survival	60	15235	12913	mh	48.992000000000004	int:6:int:0.42:2.52,spi:4:spi:0.19:0.76,dps:28.57:dps:1.6:45.712
-R	hunter/survival	60	15235	12916	mh	47.55200000000001	spi:4:spi:0.19:0.76,sta:6:sta:0.18:1.08,dps:28.57:dps:1.6:45.712
-R	hunter/survival	60	15235	12917	mh	49.072	int:8:int:0.42:3.36,dps:28.57:dps:1.6:45.712
-R	hunter/survival	60	15235	12920	mh	49.072	int:8:int:0.42:3.36,dps:28.57:dps:1.6:45.712
+R	hunter/survival	60	15235	12906	mh	33.720000000000006	int:6:int:0.42:2.52,sta:4:sta:0.18:0.72,dps:19.05:dps:1.6:30.48
+R	hunter/survival	60	15235	12908	mh	33.760000000000005	int:6:int:0.42:2.52,spi:4:spi:0.19:0.76,dps:19.05:dps:1.6:30.48
+R	hunter/survival	60	15235	12910	mh	32.32000000000001	spi:4:spi:0.19:0.76,sta:6:sta:0.18:1.08,dps:19.05:dps:1.6:30.48
+R	hunter/survival	60	15235	12912	mh	33.24	int:4:int:0.42:1.68,sta:6:sta:0.18:1.08,dps:19.05:dps:1.6:30.48
+R	hunter/survival	60	15235	12913	mh	33.760000000000005	int:6:int:0.42:2.52,spi:4:spi:0.19:0.76,dps:19.05:dps:1.6:30.48
+R	hunter/survival	60	15235	12916	mh	32.32000000000001	spi:4:spi:0.19:0.76,sta:6:sta:0.18:1.08,dps:19.05:dps:1.6:30.48
+R	hunter/survival	60	15235	12917	mh	33.84	int:8:int:0.42:3.36,dps:19.05:dps:1.6:30.48
+R	hunter/survival	60	15235	12920	mh	33.84	int:8:int:0.42:3.36,dps:19.05:dps:1.6:30.48
 R	hunter/survival	60	15477	0	gear	1.313	armor:101:armor:0.013:1.313
 R	hunter/survival	60	15477	12718	gear	1.9129999999999998	int:1:int:0.42:0.42,sta:1:sta:0.18:0.18,armor:101:armor:0.013:1.313
 R	hunter/survival	60	15477	12719	gear	1.6829999999999998	spi:1:spi:0.19:0.19,sta:1:sta:0.18:0.18,armor:101:armor:0.013:1.313
@@ -33875,6 +34523,7 @@ R	hunter/survival	60	274646	0	ranged	82.098	agi:5:agi:1:5,rdps:24.62:rdps:2.9:71
 R	hunter/survival	60	280082	0	mh	77.28999999999999	int:15:int:0.42:6.3,hit:1.5:hit:6:9,spi:21:spi:0.19:3.99,dps:36.25:dps:1.6:58
 R	hunter/survival	60	282560	0	gear	9.309	int:10:int:0.42:4.2,sta:13:sta:0.18:2.34,armor:213:armor:0.013:2.769
 B	priest/shadow	12	1315	gear	0	10.05
+B	priest/shadow	12	2140	mh	12917	5.88
 B	priest/shadow	12	2225	mh	0	0.0
 B	priest/shadow	12	2614	gear	0	2.0300000000000002
 B	priest/shadow	12	3570	mh	0	0.0
@@ -33895,6 +34544,7 @@ B	priest/shadow	12	254111	gear	0	10.32
 B	priest/shadow	12	272577	gear	0	41.425
 B	priest/shadow	12	280082	mh	0	92.16000000000001
 B	priest/shadow	25	1315	gear	0	19.05
+B	priest/shadow	25	2140	mh	12917	6.61
 B	priest/shadow	25	2225	mh	0	0.0
 B	priest/shadow	25	2614	gear	0	1.653
 B	priest/shadow	25	3570	mh	0	0.0
@@ -33915,6 +34565,7 @@ B	priest/shadow	25	254111	gear	0	21.438
 B	priest/shadow	25	272577	gear	0	72.056
 B	priest/shadow	25	280082	mh	0	106.26
 B	priest/shadow	34	1315	gear	0	16.049999999999997
+B	priest/shadow	34	2140	mh	12917	6.13
 B	priest/shadow	34	2225	mh	0	0.0
 B	priest/shadow	34	2614	gear	0	1.276
 B	priest/shadow	34	3570	mh	0	0.0
@@ -33935,6 +34586,7 @@ B	priest/shadow	34	254111	gear	0	17.796
 B	priest/shadow	34	272577	gear	0	62.012
 B	priest/shadow	34	280082	mh	0	101.82000000000001
 B	priest/shadow	45	1315	gear	0	10.6
+B	priest/shadow	45	2140	mh	12917	5.78
 B	priest/shadow	45	2225	mh	0	0.0
 B	priest/shadow	45	2614	gear	0	0.6960000000000001
 B	priest/shadow	45	3570	mh	0	0.0
@@ -33955,6 +34607,7 @@ B	priest/shadow	45	254111	gear	0	10.396
 B	priest/shadow	45	272577	gear	0	41.642
 B	priest/shadow	45	280082	mh	0	93.9
 B	priest/shadow	55	1315	gear	0	11.0
+B	priest/shadow	55	2140	mh	12917	5.55
 B	priest/shadow	55	2225	mh	0	0.0
 B	priest/shadow	55	2614	gear	0	0.24650000000000002
 B	priest/shadow	55	3570	mh	0	0.0
@@ -33975,6 +34628,7 @@ B	priest/shadow	55	254111	gear	0	6.8389999999999995
 B	priest/shadow	55	272577	gear	0	35.238
 B	priest/shadow	55	280082	mh	0	92.16
 B	priest/shadow	60	1315	gear	0	17.8
+B	priest/shadow	60	2140	mh	12917	5.4
 B	priest/shadow	60	2225	mh	0	0.0
 B	priest/shadow	60	2614	gear	0	1.1019999999999999
 B	priest/shadow	60	3570	mh	0	0.0
@@ -33995,6 +34649,7 @@ B	priest/shadow	60	254111	gear	0	9.292
 B	priest/shadow	60	272577	gear	0	42.014
 B	priest/shadow	60	280082	mh	0	97.2
 B	priest/holy	12	1315	gear	0	8.81
+B	priest/holy	12	2140	mh	12917	5.43
 B	priest/holy	12	2225	mh	0	0.0
 B	priest/holy	12	2614	gear	0	1.218
 B	priest/holy	12	3570	mh	0	0.0
@@ -34015,6 +34670,7 @@ B	priest/holy	12	254111	gear	0	16.538
 B	priest/holy	12	272577	gear	0	56.996
 B	priest/holy	12	280082	mh	0	76.134
 B	priest/holy	25	1315	gear	0	15.85
+B	priest/holy	25	2140	mh	12917	5.79
 B	priest/holy	25	2225	mh	0	0.0
 B	priest/holy	25	2614	gear	0	1.9140000000000001
 B	priest/holy	25	3570	mh	0	0.0
@@ -34035,6 +34691,7 @@ B	priest/holy	25	254111	gear	0	27.574
 B	priest/holy	25	272577	gear	0	83.02799999999999
 B	priest/holy	25	280082	mh	0	86.78999999999999
 B	priest/holy	34	1315	gear	0	21.35
+B	priest/holy	34	2140	mh	12917	5.68
 B	priest/holy	34	2225	mh	0	0.0
 B	priest/holy	34	2614	gear	0	1.334
 B	priest/holy	34	3570	mh	0	0.0
@@ -34055,6 +34712,7 @@ B	priest/holy	34	254111	gear	0	20.174
 B	priest/holy	34	272577	gear	0	65.648
 B	priest/holy	34	280082	mh	0	101.13
 B	priest/holy	45	1315	gear	0	17.7
+B	priest/holy	45	2140	mh	12917	6.0
 B	priest/holy	45	2225	mh	0	0.0
 B	priest/holy	45	2614	gear	0	2.2039999999999997
 B	priest/holy	45	3570	mh	0	0.0
@@ -34075,6 +34733,7 @@ B	priest/holy	45	254111	gear	0	22.073999999999998
 B	priest/holy	45	272577	gear	0	67.398
 B	priest/holy	45	280082	mh	0	105.42
 B	priest/holy	55	1315	gear	0	24.5
+B	priest/holy	55	2140	mh	12917	6.4
 B	priest/holy	55	2225	mh	0	0.0
 B	priest/holy	55	2614	gear	0	3.48
 B	priest/holy	55	3570	mh	0	0.0
@@ -34095,6 +34754,7 @@ B	priest/holy	55	254111	gear	0	29.48
 B	priest/holy	55	272577	gear	0	84.11000000000001
 B	priest/holy	55	280082	mh	0	120.6
 B	priest/holy	60	1315	gear	0	24.3
+B	priest/holy	60	2140	mh	12917	5.96
 B	priest/holy	60	2225	mh	0	0.0
 B	priest/holy	60	2614	gear	0	1.6820000000000002
 B	priest/holy	60	3570	mh	0	0.0
@@ -34115,6 +34775,7 @@ B	priest/holy	60	254111	gear	0	18.012
 B	priest/holy	60	272577	gear	0	59.904
 B	priest/holy	60	280082	mh	0	125.7
 B	priest/discipline	12	1315	gear	0	9.2
+B	priest/discipline	12	2140	mh	12917	5.49
 B	priest/discipline	12	2225	mh	0	0.0
 B	priest/discipline	12	2614	gear	0	1.276
 B	priest/discipline	12	3570	mh	0	0.0
@@ -34135,6 +34796,7 @@ B	priest/discipline	12	254111	gear	0	14.846
 B	priest/discipline	12	272577	gear	0	52.117
 B	priest/discipline	12	280082	mh	0	80.25
 B	priest/discipline	25	1315	gear	0	16.85
+B	priest/discipline	25	2140	mh	12917	6.2
 B	priest/discipline	25	2225	mh	0	0.0
 B	priest/discipline	25	2614	gear	0	1.3920000000000001
 B	priest/discipline	25	3570	mh	0	0.0
@@ -34155,6 +34817,7 @@ B	priest/discipline	25	254111	gear	0	25.741999999999997
 B	priest/discipline	25	272577	gear	0	77.02399999999999
 B	priest/discipline	25	280082	mh	0	99.09
 B	priest/discipline	34	1315	gear	0	24.1
+B	priest/discipline	34	2140	mh	12917	5.73
 B	priest/discipline	34	2225	mh	0	0.0
 B	priest/discipline	34	2614	gear	0	1.189
 B	priest/discipline	34	3570	mh	0	0.0
@@ -34175,6 +34838,7 @@ B	priest/discipline	34	254111	gear	0	16.714
 B	priest/discipline	34	272577	gear	0	56.98799999999999
 B	priest/discipline	34	280082	mh	0	111.3
 B	priest/discipline	45	1315	gear	0	25.45
+B	priest/discipline	45	2140	mh	12917	6.0
 B	priest/discipline	45	2225	mh	0	0.0
 B	priest/discipline	45	2614	gear	0	3.48
 B	priest/discipline	45	3570	mh	0	0.0
@@ -34195,6 +34859,7 @@ B	priest/discipline	45	254111	gear	0	40.18
 B	priest/discipline	45	272577	gear	0	112.96
 B	priest/discipline	45	280082	mh	0	102.78
 B	priest/discipline	55	1315	gear	0	25.700000000000003
+B	priest/discipline	55	2140	mh	12917	5.98
 B	priest/discipline	55	2225	mh	0	0.0
 B	priest/discipline	55	2614	gear	0	1.363
 B	priest/discipline	55	3570	mh	0	0.0
@@ -34215,6 +34880,7 @@ B	priest/discipline	55	254111	gear	0	23.318
 B	priest/discipline	55	272577	gear	0	73.256
 B	priest/discipline	55	280082	mh	0	118.8
 B	priest/discipline	60	1315	gear	0	16.599999999999998
+B	priest/discipline	60	2140	mh	12917	5.46
 B	priest/discipline	60	2225	mh	0	0.0
 B	priest/discipline	60	2614	gear	0	0.377
 B	priest/discipline	60	3570	mh	0	0.0
@@ -34236,6 +34902,7 @@ B	priest/discipline	60	272577	gear	0	37.254
 B	priest/discipline	60	280082	mh	0	106.56
 B	mage/frost	12	25	mh	0	0.0
 B	mage/frost	12	1315	gear	0	8.6
+B	mage/frost	12	2140	mh	12917	5.56
 B	mage/frost	12	2225	mh	0	0.0
 B	mage/frost	12	2614	gear	0	0.27549999999999997
 B	mage/frost	12	4023	mh	0	0.0
@@ -34254,6 +34921,7 @@ B	mage/frost	12	254111	gear	0	9.113000000000001
 B	mage/frost	12	280082	mh	0	77.745
 B	mage/frost	25	25	mh	0	0.0
 B	mage/frost	25	1315	gear	0	10.3
+B	mage/frost	25	2140	mh	12917	5.72
 B	mage/frost	25	2225	mh	0	0.0
 B	mage/frost	25	2614	gear	0	0.29
 B	mage/frost	25	4023	mh	0	0.0
@@ -34272,6 +34940,7 @@ B	mage/frost	25	254111	gear	0	11.620000000000001
 B	mage/frost	25	280082	mh	0	80.5935
 B	mage/frost	34	25	mh	0	0.0
 B	mage/frost	34	1315	gear	0	10.45
+B	mage/frost	34	2140	mh	12917	5.82
 B	mage/frost	34	2225	mh	0	0.0
 B	mage/frost	34	2614	gear	0	0.406
 B	mage/frost	34	4023	mh	0	0.0
@@ -34290,6 +34959,7 @@ B	mage/frost	34	254111	gear	0	11.565999999999999
 B	mage/frost	34	280082	mh	0	83.5815
 B	mage/frost	45	25	mh	0	0.0
 B	mage/frost	45	1315	gear	0	13.100000000000001
+B	mage/frost	45	2140	mh	12917	6.17
 B	mage/frost	45	2225	mh	0	0.0
 B	mage/frost	45	2614	gear	0	0.406
 B	mage/frost	45	4023	mh	0	0.0
@@ -34308,6 +34978,7 @@ B	mage/frost	45	254111	gear	0	10.946000000000002
 B	mage/frost	45	280082	mh	0	96.69000000000001
 B	mage/frost	55	25	mh	0	0.0
 B	mage/frost	55	1315	gear	0	13.450000000000001
+B	mage/frost	55	2140	mh	12917	6.22
 B	mage/frost	55	2225	mh	0	0.0
 B	mage/frost	55	2614	gear	0	0.435
 B	mage/frost	55	4023	mh	0	0.0
@@ -34326,6 +34997,7 @@ B	mage/frost	55	254111	gear	0	11.709999999999999
 B	mage/frost	55	280082	mh	0	97.72500000000001
 B	mage/frost	60	25	mh	0	0.0
 B	mage/frost	60	1315	gear	0	15.15
+B	mage/frost	60	2140	mh	12917	5.47
 B	mage/frost	60	2225	mh	0	0.0
 B	mage/frost	60	2614	gear	0	0.377
 B	mage/frost	60	4023	mh	0	0.0
@@ -34344,6 +35016,7 @@ B	mage/frost	60	254111	gear	0	8.052
 B	mage/frost	60	280082	mh	0	91.155
 B	mage/fire	12	25	mh	0	0.0
 B	mage/fire	12	1315	gear	0	10.950000000000001
+B	mage/fire	12	2140	mh	12917	5.22
 B	mage/fire	12	2225	mh	0	0.0
 B	mage/fire	12	2614	gear	0	0.29
 B	mage/fire	12	4023	mh	0	0.0
@@ -34362,6 +35035,7 @@ B	mage/fire	12	254111	gear	0	32.660000000000004
 B	mage/fire	12	280082	mh	0	75.51
 B	mage/fire	25	25	mh	0	0.0
 B	mage/fire	25	1315	gear	0	14.4
+B	mage/fire	25	2140	mh	12917	5.29
 B	mage/fire	25	2225	mh	0	0.0
 B	mage/fire	25	2614	gear	0	0.87
 B	mage/fire	25	4023	mh	0	0.0
@@ -34380,6 +35054,7 @@ B	mage/fire	25	254111	gear	0	39.83
 B	mage/fire	25	280082	mh	0	75.81
 B	mage/fire	34	25	mh	0	0.0
 B	mage/fire	34	1315	gear	0	17.75
+B	mage/fire	34	2140	mh	12917	5.58
 B	mage/fire	34	2225	mh	0	0.0
 B	mage/fire	34	2614	gear	0	1.1019999999999999
 B	mage/fire	34	4023	mh	0	0.0
@@ -34398,6 +35073,7 @@ B	mage/fire	34	254111	gear	0	45.472
 B	mage/fire	34	280082	mh	0	84.0
 B	mage/fire	45	25	mh	0	0.0
 B	mage/fire	45	1315	gear	0	17.25
+B	mage/fire	45	2140	mh	12917	6.21
 B	mage/fire	45	2225	mh	0	0.0
 B	mage/fire	45	2614	gear	0	1.0150000000000001
 B	mage/fire	45	4023	mh	0	0.0
@@ -34416,6 +35092,7 @@ B	mage/fire	45	254111	gear	0	43.879999999999995
 B	mage/fire	45	280082	mh	0	96.45000000000002
 B	mage/fire	55	25	mh	0	0.0
 B	mage/fire	55	1315	gear	0	17.25
+B	mage/fire	55	2140	mh	12917	6.36
 B	mage/fire	55	2225	mh	0	0.0
 B	mage/fire	55	2614	gear	0	1.073
 B	mage/fire	55	4023	mh	0	0.0
@@ -34434,6 +35111,7 @@ B	mage/fire	55	254111	gear	0	45.338
 B	mage/fire	55	280082	mh	0	98.85000000000001
 B	mage/fire	60	25	mh	0	0.0
 B	mage/fire	60	1315	gear	0	20.1
+B	mage/fire	60	2140	mh	12917	6.25
 B	mage/fire	60	2225	mh	0	0.0
 B	mage/fire	60	2614	gear	0	1.1019999999999999
 B	mage/fire	60	4023	mh	0	0.0
@@ -34452,6 +35130,7 @@ B	mage/fire	60	254111	gear	0	44.402
 B	mage/fire	60	280082	mh	0	100.44000000000001
 B	mage/arcane	12	25	mh	0	0.0
 B	mage/arcane	12	1315	gear	0	11.25
+B	mage/arcane	12	2140	mh	12917	7.21
 B	mage/arcane	12	2225	mh	0	0.0
 B	mage/arcane	12	2614	gear	0	0.232
 B	mage/arcane	12	4023	mh	0	0.0
@@ -34470,6 +35149,7 @@ B	mage/arcane	12	254111	gear	0	9.342
 B	mage/arcane	12	280082	mh	0	105.83999999999999
 B	mage/arcane	25	25	mh	0	0.0
 B	mage/arcane	25	1315	gear	0	17.15
+B	mage/arcane	25	2140	mh	12917	6.0
 B	mage/arcane	25	2225	mh	0	0.0
 B	mage/arcane	25	2614	gear	0	0.87
 B	mage/arcane	25	4023	mh	0	0.0
@@ -34488,6 +35168,7 @@ B	mage/arcane	25	254111	gear	0	24.32
 B	mage/arcane	25	280082	mh	0	87.51
 B	mage/arcane	34	25	mh	0	0.0
 B	mage/arcane	34	1315	gear	0	14.75
+B	mage/arcane	34	2140	mh	12917	5.6899999999999995
 B	mage/arcane	34	2225	mh	0	0.0
 B	mage/arcane	34	2614	gear	0	0.638
 B	mage/arcane	34	4023	mh	0	0.0
@@ -34506,6 +35187,7 @@ B	mage/arcane	34	254111	gear	0	19.358
 B	mage/arcane	34	280082	mh	0	86.22
 B	mage/arcane	45	25	mh	0	0.0
 B	mage/arcane	45	1315	gear	0	14.9
+B	mage/arcane	45	2140	mh	12917	5.71
 B	mage/arcane	45	2225	mh	0	0.0
 B	mage/arcane	45	2614	gear	0	0.8410000000000001
 B	mage/arcane	45	4023	mh	0	0.0
@@ -34524,6 +35206,7 @@ B	mage/arcane	45	254111	gear	0	22.256
 B	mage/arcane	45	280082	mh	0	84.96
 B	mage/arcane	55	25	mh	0	0.0
 B	mage/arcane	55	1315	gear	0	17.75
+B	mage/arcane	55	2140	mh	12917	5.99
 B	mage/arcane	55	2225	mh	0	0.0
 B	mage/arcane	55	2614	gear	0	0.899
 B	mage/arcane	55	4023	mh	0	0.0
@@ -34542,6 +35225,7 @@ B	mage/arcane	55	254111	gear	0	24.884
 B	mage/arcane	55	280082	mh	0	92.4
 B	mage/arcane	60	25	mh	0	0.0
 B	mage/arcane	60	1315	gear	0	19.25
+B	mage/arcane	60	2140	mh	12917	6.0
 B	mage/arcane	60	2225	mh	0	0.0
 B	mage/arcane	60	2614	gear	0	0.928
 B	mage/arcane	60	4023	mh	0	0.0
@@ -34560,6 +35244,7 @@ B	mage/arcane	60	254111	gear	0	25.028000000000002
 B	mage/arcane	60	280082	mh	0	92.715
 B	warlock/affliction	12	25	mh	0	0.0
 B	warlock/affliction	12	1315	gear	0	4.04
+B	warlock/affliction	12	2140	mh	12917	5.6
 B	warlock/affliction	12	2225	mh	0	0.0
 B	warlock/affliction	12	2614	gear	0	0.27549999999999997
 B	warlock/affliction	12	4023	mh	0	0.0
@@ -34578,6 +35263,7 @@ B	warlock/affliction	12	254111	gear	0	4.793
 B	warlock/affliction	12	280082	mh	0	77.27100000000002
 B	warlock/affliction	25	25	mh	0	0.0
 B	warlock/affliction	25	1315	gear	0	2.1425
+B	warlock/affliction	25	2140	mh	12917	5.65
 B	warlock/affliction	25	2225	mh	0	0.0
 B	warlock/affliction	25	2614	gear	0	0.435
 B	warlock/affliction	25	4023	mh	0	0.0
@@ -34596,6 +35282,7 @@ B	warlock/affliction	25	254111	gear	0	4.76
 B	warlock/affliction	25	280082	mh	0	76.4145
 B	warlock/affliction	34	25	mh	0	0.0
 B	warlock/affliction	34	1315	gear	0	2.745
+B	warlock/affliction	34	2140	mh	12917	5.61
 B	warlock/affliction	34	2225	mh	0	0.0
 B	warlock/affliction	34	2614	gear	0	0.26099999999999995
 B	warlock/affliction	34	4023	mh	0	0.0
@@ -34614,6 +35301,7 @@ B	warlock/affliction	34	254111	gear	0	3.426
 B	warlock/affliction	34	280082	mh	0	78.093
 B	warlock/affliction	45	25	mh	0	0.0
 B	warlock/affliction	45	1315	gear	0	5.8500000000000005
+B	warlock/affliction	45	2140	mh	12917	5.098
 B	warlock/affliction	45	2225	mh	0	0.0
 B	warlock/affliction	45	2614	gear	0	0.232
 B	warlock/affliction	45	4023	mh	0	0.0
@@ -34632,6 +35320,7 @@ B	warlock/affliction	45	254111	gear	0	2.874
 B	warlock/affliction	45	280082	mh	0	76.08
 B	warlock/affliction	55	25	mh	0	0.0
 B	warlock/affliction	55	1315	gear	0	4.75
+B	warlock/affliction	55	2140	mh	12917	5.058
 B	warlock/affliction	55	2225	mh	0	0.0
 B	warlock/affliction	55	2614	gear	0	0.232
 B	warlock/affliction	55	4023	mh	0	0.0
@@ -34650,6 +35339,7 @@ B	warlock/affliction	55	254111	gear	0	4.984000000000001
 B	warlock/affliction	55	280082	mh	0	69.795
 B	warlock/affliction	60	25	mh	0	0.0
 B	warlock/affliction	60	1315	gear	0	6.85
+B	warlock/affliction	60	2140	mh	12917	5.5
 B	warlock/affliction	60	2225	mh	0	0.0
 B	warlock/affliction	60	2614	gear	0	0.26099999999999995
 B	warlock/affliction	60	4023	mh	0	0.0
@@ -34668,6 +35358,7 @@ B	warlock/affliction	60	254111	gear	0	2.566
 B	warlock/affliction	60	280082	mh	0	82.05000000000001
 B	warlock/demonology	12	25	mh	0	0.0
 B	warlock/demonology	12	1315	gear	0	2.95
+B	warlock/demonology	12	2140	mh	12917	5.12
 B	warlock/demonology	12	2225	mh	0	0.0
 B	warlock/demonology	12	2614	gear	0	0.145
 B	warlock/demonology	12	4023	mh	0	0.0
@@ -34686,6 +35377,7 @@ B	warlock/demonology	12	254111	gear	0	8.45
 B	warlock/demonology	12	280082	mh	0	71.34
 B	warlock/demonology	25	25	mh	0	0.0
 B	warlock/demonology	25	1315	gear	0	3.6499999999999995
+B	warlock/demonology	25	2140	mh	12917	5.0
 B	warlock/demonology	25	2225	mh	0	0.0
 B	warlock/demonology	25	2614	gear	0	0.116
 B	warlock/demonology	25	4023	mh	0	0.0
@@ -34704,6 +35396,7 @@ B	warlock/demonology	25	254111	gear	0	9.251
 B	warlock/demonology	25	280082	mh	0	70.575
 B	warlock/demonology	34	25	mh	0	0.0
 B	warlock/demonology	34	1315	gear	0	5.1000000000000005
+B	warlock/demonology	34	2140	mh	12917	5.023
 B	warlock/demonology	34	2225	mh	0	0.0
 B	warlock/demonology	34	2614	gear	0	0.029
 B	warlock/demonology	34	4023	mh	0	0.0
@@ -34722,6 +35415,7 @@ B	warlock/demonology	34	254111	gear	0	13.461000000000002
 B	warlock/demonology	34	280082	mh	0	75.285
 B	warlock/demonology	45	25	mh	0	0.0
 B	warlock/demonology	45	1315	gear	0	4.35
+B	warlock/demonology	45	2140	mh	12917	5.17
 B	warlock/demonology	45	2225	mh	0	0.0
 B	warlock/demonology	45	2614	gear	0	0.029
 B	warlock/demonology	45	4023	mh	0	0.0
@@ -34740,6 +35434,7 @@ B	warlock/demonology	45	254111	gear	0	13.383999999999999
 B	warlock/demonology	45	280082	mh	0	77.04
 B	warlock/demonology	55	25	mh	0	0.0
 B	warlock/demonology	55	1315	gear	0	5.300000000000001
+B	warlock/demonology	55	2140	mh	12917	5.0
 B	warlock/demonology	55	2225	mh	0	0.0
 B	warlock/demonology	55	2614	gear	0	0.029
 B	warlock/demonology	55	4023	mh	0	0.0
@@ -34758,6 +35453,7 @@ B	warlock/demonology	55	254111	gear	0	10.084
 B	warlock/demonology	55	280082	mh	0	73.68
 B	warlock/demonology	60	25	mh	0	0.0
 B	warlock/demonology	60	1315	gear	0	4.91
+B	warlock/demonology	60	2140	mh	12917	5.0
 B	warlock/demonology	60	2225	mh	0	0.0
 B	warlock/demonology	60	2614	gear	0	0.029
 B	warlock/demonology	60	4023	mh	0	0.0
@@ -34776,6 +35472,7 @@ B	warlock/demonology	60	254111	gear	0	8.991999999999999
 B	warlock/demonology	60	280082	mh	0	75.06
 B	warlock/destruction	12	25	mh	0	0.0
 B	warlock/destruction	12	1315	gear	0	4.55
+B	warlock/destruction	12	2140	mh	12917	5.15
 B	warlock/destruction	12	2225	mh	0	0.0
 B	warlock/destruction	12	2614	gear	0	0.13049999999999998
 B	warlock/destruction	12	4023	mh	0	0.0
@@ -34794,6 +35491,7 @@ B	warlock/destruction	12	254111	gear	0	9.413
 B	warlock/destruction	12	280082	mh	0	73.47
 B	warlock/destruction	25	25	mh	0	0.0
 B	warlock/destruction	25	1315	gear	0	3.75
+B	warlock/destruction	25	2140	mh	12917	5.013
 B	warlock/destruction	25	2225	mh	0	0.0
 B	warlock/destruction	25	2614	gear	0	0.1595
 B	warlock/destruction	25	4023	mh	0	0.0
@@ -34812,6 +35510,7 @@ B	warlock/destruction	25	254111	gear	0	7.364
 B	warlock/destruction	25	280082	mh	0	70.155
 B	warlock/destruction	34	25	mh	0	0.0
 B	warlock/destruction	34	1315	gear	0	5.8
+B	warlock/destruction	34	2140	mh	12917	5.06
 B	warlock/destruction	34	2225	mh	0	0.0
 B	warlock/destruction	34	2614	gear	0	0.203
 B	warlock/destruction	34	4023	mh	0	0.0
@@ -34830,6 +35529,7 @@ B	warlock/destruction	34	254111	gear	0	12.008
 B	warlock/destruction	34	280082	mh	0	74.85
 B	warlock/destruction	45	25	mh	0	0.0
 B	warlock/destruction	45	1315	gear	0	3.8500000000000005
+B	warlock/destruction	45	2140	mh	12917	5.13
 B	warlock/destruction	45	2225	mh	0	0.0
 B	warlock/destruction	45	2614	gear	0	0.17400000000000002
 B	warlock/destruction	45	4023	mh	0	0.0
@@ -34848,6 +35548,7 @@ B	warlock/destruction	45	254111	gear	0	19.984
 B	warlock/destruction	45	280082	mh	0	73.32
 B	warlock/destruction	55	25	mh	0	0.0
 B	warlock/destruction	55	1315	gear	0	5.050000000000001
+B	warlock/destruction	55	2140	mh	12917	5.17
 B	warlock/destruction	55	2225	mh	0	0.0
 B	warlock/destruction	55	2614	gear	0	0.1015
 B	warlock/destruction	55	4023	mh	0	0.0
@@ -34866,6 +35567,7 @@ B	warlock/destruction	55	254111	gear	0	18.419
 B	warlock/destruction	55	280082	mh	0	76.02
 B	warlock/destruction	60	25	mh	0	0.0
 B	warlock/destruction	60	1315	gear	0	6.1499999999999995
+B	warlock/destruction	60	2140	mh	12917	5.36
 B	warlock/destruction	60	2225	mh	0	0.0
 B	warlock/destruction	60	2614	gear	0	0.116
 B	warlock/destruction	60	4023	mh	0	0.0
@@ -34884,6 +35586,8 @@ B	warlock/destruction	60	254111	gear	0	18.856
 B	warlock/destruction	60	280082	mh	0	82.11
 B	druid/balance	12	1315	gear	0	1.5
 B	druid/balance	12	1808	gear	0	0.6659999999999999
+B	druid/balance	12	1990	mh	12918	33.88
+B	druid/balance	12	2140	mh	12917	5.42
 B	druid/balance	12	2225	mh	0	0.0
 B	druid/balance	12	2614	gear	0	0.26099999999999995
 B	druid/balance	12	3158	gear	0	0.23399999999999999
@@ -34913,6 +35617,8 @@ B	druid/balance	12	273892	gear	0	22.037999999999997
 B	druid/balance	12	280082	mh	0	75.885
 B	druid/balance	25	1315	gear	0	5.5
 B	druid/balance	25	1808	gear	0	1.3319999999999999
+B	druid/balance	25	1990	mh	12905	35.98
+B	druid/balance	25	2140	mh	12917	5.49
 B	druid/balance	25	2225	mh	0	0.0
 B	druid/balance	25	2614	gear	0	0.5219999999999999
 B	druid/balance	25	3158	gear	0	0.46799999999999997
@@ -34942,6 +35648,8 @@ B	druid/balance	25	273892	gear	0	32.546
 B	druid/balance	25	280082	mh	0	76.65
 B	druid/balance	34	1315	gear	0	4.5
 B	druid/balance	34	1808	gear	0	1.1099999999999999
+B	druid/balance	34	1990	mh	12905	35.82
+B	druid/balance	34	2140	mh	12917	5.52
 B	druid/balance	34	2225	mh	0	0.0
 B	druid/balance	34	2614	gear	0	0.435
 B	druid/balance	34	3158	gear	0	0.39
@@ -34971,6 +35679,8 @@ B	druid/balance	34	273892	gear	0	30.91
 B	druid/balance	34	280082	mh	0	76.785
 B	druid/balance	45	1315	gear	0	9.0
 B	druid/balance	45	1808	gear	0	4.144
+B	druid/balance	45	1990	mh	12909	36.57
+B	druid/balance	45	2140	mh	12917	5.13
 B	druid/balance	45	2225	mh	0	0.0
 B	druid/balance	45	2614	gear	0	1.624
 B	druid/balance	45	3158	gear	0	1.456
@@ -35000,6 +35710,8 @@ B	druid/balance	45	273892	gear	0	38.582
 B	druid/balance	45	280082	mh	0	72.69
 B	druid/balance	55	1315	gear	0	9.7
 B	druid/balance	55	1808	gear	0	4.366
+B	druid/balance	55	1990	mh	12909	36.769999999999996
+B	druid/balance	55	2140	mh	12917	5.16
 B	druid/balance	55	2225	mh	0	0.0
 B	druid/balance	55	2614	gear	0	1.7109999999999999
 B	druid/balance	55	3158	gear	0	1.5339999999999998
@@ -35029,6 +35741,8 @@ B	druid/balance	55	273892	gear	0	40.198
 B	druid/balance	55	280082	mh	0	74.7
 B	druid/balance	60	1315	gear	0	10.850000000000001
 B	druid/balance	60	1808	gear	0	4.588
+B	druid/balance	60	1990	mh	12909	37.370000000000005
+B	druid/balance	60	2140	mh	12917	5.2
 B	druid/balance	60	2225	mh	0	0.0
 B	druid/balance	60	2614	gear	0	1.798
 B	druid/balance	60	3158	gear	0	1.612
@@ -35058,6 +35772,8 @@ B	druid/balance	60	273892	gear	0	42.763999999999996
 B	druid/balance	60	280082	mh	0	77.52
 B	druid/restoration	12	1315	gear	0	0.99
 B	druid/restoration	12	1808	gear	0	0.518
+B	druid/restoration	12	1990	mh	12918	35.7
+B	druid/restoration	12	2140	mh	12917	5.55
 B	druid/restoration	12	2225	mh	0	0.0
 B	druid/restoration	12	2614	gear	0	0.203
 B	druid/restoration	12	3158	gear	0	0.182
@@ -35087,6 +35803,8 @@ B	druid/restoration	12	273892	gear	0	23.64
 B	druid/restoration	12	280082	mh	0	77.09100000000001
 B	druid/restoration	25	1315	gear	0	4.295
 B	druid/restoration	25	1808	gear	0	1.628
+B	druid/restoration	25	1990	mh	12905	37.04
+B	druid/restoration	25	2140	mh	12917	5.58
 B	druid/restoration	25	2225	mh	0	0.0
 B	druid/restoration	25	2614	gear	0	0.638
 B	druid/restoration	25	3158	gear	0	0.572
@@ -35116,6 +35834,8 @@ B	druid/restoration	25	273892	gear	0	33.711999999999996
 B	druid/restoration	25	280082	mh	0	77.793
 B	druid/restoration	34	1315	gear	0	7.8
 B	druid/restoration	34	1808	gear	0	1.3319999999999999
+B	druid/restoration	34	1990	mh	12905	37.76
+B	druid/restoration	34	2140	mh	12917	5.62
 B	druid/restoration	34	2225	mh	0	0.0
 B	druid/restoration	34	2614	gear	0	0.5219999999999999
 B	druid/restoration	34	3158	gear	0	0.46799999999999997
@@ -35145,6 +35865,8 @@ B	druid/restoration	34	273892	gear	0	37.93599999999999
 B	druid/restoration	34	280082	mh	0	84.39
 B	druid/restoration	45	1315	gear	0	8.5
 B	druid/restoration	45	1808	gear	0	1.628
+B	druid/restoration	45	1990	mh	12907	37.62
+B	druid/restoration	45	2140	mh	12917	5.62
 B	druid/restoration	45	2225	mh	0	0.0
 B	druid/restoration	45	2614	gear	0	0.638
 B	druid/restoration	45	3158	gear	0	0.572
@@ -35174,6 +35896,8 @@ B	druid/restoration	45	273892	gear	0	37.744
 B	druid/restoration	45	280082	mh	0	88.05
 B	druid/restoration	55	1315	gear	0	10.65
 B	druid/restoration	55	1808	gear	0	1.554
+B	druid/restoration	55	1990	mh	12907	38.74
+B	druid/restoration	55	2140	mh	12917	5.6899999999999995
 B	druid/restoration	55	2225	mh	0	0.0
 B	druid/restoration	55	2614	gear	0	0.609
 B	druid/restoration	55	3158	gear	0	0.546
@@ -35203,6 +35927,8 @@ B	druid/restoration	55	273892	gear	0	42.512
 B	druid/restoration	55	280082	mh	0	92.25
 B	druid/restoration	60	1315	gear	0	10.85
 B	druid/restoration	60	1808	gear	0	1.554
+B	druid/restoration	60	1990	mh	12907	39.65
+B	druid/restoration	60	2140	mh	12917	5.76
 B	druid/restoration	60	2225	mh	0	0.0
 B	druid/restoration	60	2614	gear	0	0.609
 B	druid/restoration	60	3158	gear	0	0.546
@@ -35232,6 +35958,8 @@ B	druid/restoration	60	273892	gear	0	43.962
 B	druid/restoration	60	280082	mh	0	95.37
 B	druid/feral	12	1315	gear	0	17.1
 B	druid/feral	12	1808	gear	0	7.3260000000000005
+B	druid/feral	12	1990	mh	12722	197.941
+B	druid/feral	12	2140	mh	12722	44.674
 B	druid/feral	12	2225	mh	0	35.5
 B	druid/feral	12	2614	gear	0	2.871
 B	druid/feral	12	3158	gear	0	2.5740000000000003
@@ -35261,6 +35989,8 @@ B	druid/feral	12	273892	gear	0	53.788
 B	druid/feral	12	280082	mh	0	265.985
 B	druid/feral	25	1315	gear	0	15.899999999999999
 B	druid/feral	25	1808	gear	0	3.848
+B	druid/feral	25	1990	mh	12752	154.785
+B	druid/feral	25	2140	mh	12722	34.63
 B	druid/feral	25	2225	mh	0	27.5
 B	druid/feral	25	2614	gear	0	1.508
 B	druid/feral	25	3158	gear	0	1.3519999999999999
@@ -35290,6 +36020,8 @@ B	druid/feral	25	273892	gear	0	42.134
 B	druid/feral	25	280082	mh	0	215.995
 B	druid/feral	34	1315	gear	0	16.65
 B	druid/feral	34	1808	gear	0	4.07
+B	druid/feral	34	1990	mh	12727	144.921
+B	druid/feral	34	2140	mh	12727	32.394
 B	druid/feral	34	2225	mh	0	25.5
 B	druid/feral	34	2614	gear	0	1.595
 B	druid/feral	34	3158	gear	0	1.43
@@ -35319,6 +36051,8 @@ B	druid/feral	34	273892	gear	0	38.980000000000004
 B	druid/feral	34	280082	mh	0	203.445
 B	druid/feral	45	1315	gear	0	23.55
 B	druid/feral	45	1808	gear	0	6.364
+B	druid/feral	45	1990	mh	12752	150.137
+B	druid/feral	45	2140	mh	12721	31.518000000000004
 B	druid/feral	45	2225	mh	0	23.5
 B	druid/feral	45	2614	gear	0	2.4939999999999998
 B	druid/feral	45	3158	gear	0	2.2359999999999998
@@ -35348,6 +36082,8 @@ B	druid/feral	45	273892	gear	0	58.652
 B	druid/feral	45	280082	mh	0	177.395
 B	druid/feral	55	1315	gear	0	22.38
 B	druid/feral	55	1808	gear	0	6.66
+B	druid/feral	55	1990	mh	12752	132.84
+B	druid/feral	55	2140	mh	12721	27.360000000000003
 B	druid/feral	55	2225	mh	0	20.0
 B	druid/feral	55	2614	gear	0	2.61
 B	druid/feral	55	3158	gear	0	2.34
@@ -35377,6 +36113,8 @@ B	druid/feral	55	273892	gear	0	65.842
 B	druid/feral	55	280082	mh	0	156.832
 B	druid/feral	60	1315	gear	0	21.0
 B	druid/feral	60	1808	gear	0	8.14
+B	druid/feral	60	1990	mh	12752	127.969
+B	druid/feral	60	2140	mh	12721	26.566000000000003
 B	druid/feral	60	2225	mh	0	19.5
 B	druid/feral	60	2614	gear	0	3.19
 B	druid/feral	60	3158	gear	0	2.86
@@ -35406,13 +36144,15 @@ B	druid/feral	60	273892	gear	0	66.9
 B	druid/feral	60	280082	mh	0	159.225
 B	shaman/elemental	12	1315	gear	0	14.15
 B	shaman/elemental	12	1808	gear	0	1.184
+B	shaman/elemental	12	1990	mh	12909	73.324
+B	shaman/elemental	12	2140	mh	12917	11.95
 B	shaman/elemental	12	2225	mh	0	9.0
 B	shaman/elemental	12	2614	gear	0	0.464
 B	shaman/elemental	12	3158	gear	0	0.41600000000000004
 B	shaman/elemental	12	3570	mh	0	15.116
 B	shaman/elemental	12	4023	mh	0	27.648
 B	shaman/elemental	12	4068	oh	0	23.418
-B	shaman/elemental	12	4570	mh	12918	26.8
+B	shaman/elemental	12	4570	mh	12918	22.444000000000003
 B	shaman/elemental	12	5079	gear	0	0.0
 B	shaman/elemental	12	6063	gear	0	0.88
 B	shaman/elemental	12	6540	gear	12734	6.448
@@ -35429,7 +36169,7 @@ B	shaman/elemental	12	14122	gear	12734	4.224
 B	shaman/elemental	12	14340	gear	0	18.318
 B	shaman/elemental	12	14673	gear	0	6.5809999999999995
 B	shaman/elemental	12	14964	oh	12760	43.72
-B	shaman/elemental	12	15235	mh	12910	96.166
+B	shaman/elemental	12	15235	mh	12910	79.03
 B	shaman/elemental	12	15477	gear	12734	3.616
 B	shaman/elemental	12	15945	oh	0	2.48
 B	shaman/elemental	12	16711	gear	0	12.213999999999999
@@ -35448,13 +36188,15 @@ B	shaman/elemental	12	282560	gear	0	24.978
 B	shaman/elemental	12	286609	oh	0	30.516
 B	shaman/elemental	25	1315	gear	0	18.6
 B	shaman/elemental	25	1808	gear	0	3.256
+B	shaman/elemental	25	1990	mh	12909	82.94
+B	shaman/elemental	25	2140	mh	12718	13.920000000000002
 B	shaman/elemental	25	2225	mh	0	10.0
 B	shaman/elemental	25	2614	gear	0	1.276
 B	shaman/elemental	25	3158	gear	0	1.144
 B	shaman/elemental	25	3570	mh	0	16.799999999999997
 B	shaman/elemental	25	4023	mh	0	30.72
 B	shaman/elemental	25	4068	oh	0	55.872
-B	shaman/elemental	25	4570	mh	12918	30.16
+B	shaman/elemental	25	4570	mh	12718	26.12
 B	shaman/elemental	25	5079	gear	0	0.0
 B	shaman/elemental	25	6063	gear	0	2.42
 B	shaman/elemental	25	6540	gear	12731	8.732
@@ -35471,7 +36213,7 @@ B	shaman/elemental	25	14122	gear	12731	5.116
 B	shaman/elemental	25	14340	gear	0	32.372
 B	shaman/elemental	25	14673	gear	0	11.996
 B	shaman/elemental	25	14964	oh	12747	97.11999999999999
-B	shaman/elemental	25	15235	mh	12910	105.1
+B	shaman/elemental	25	15235	mh	12910	86.06
 B	shaman/elemental	25	15477	gear	12731	7.444
 B	shaman/elemental	25	15945	oh	0	3.48
 B	shaman/elemental	25	16711	gear	0	24.377
@@ -35490,13 +36232,15 @@ B	shaman/elemental	25	282560	gear	0	42.272
 B	shaman/elemental	25	286609	oh	0	79.58399999999999
 B	shaman/elemental	34	1315	gear	0	15.75
 B	shaman/elemental	34	1808	gear	0	2.96
+B	shaman/elemental	34	1990	mh	12905	74.232
+B	shaman/elemental	34	2140	mh	12917	11.35
 B	shaman/elemental	34	2225	mh	0	7.0
 B	shaman/elemental	34	2614	gear	0	1.16
 B	shaman/elemental	34	3158	gear	0	1.04
 B	shaman/elemental	34	3570	mh	0	11.767999999999999
 B	shaman/elemental	34	4023	mh	0	21.503999999999998
 B	shaman/elemental	34	4068	oh	0	49.32
-B	shaman/elemental	34	4570	mh	12918	26.4
+B	shaman/elemental	34	4570	mh	12918	23.012
 B	shaman/elemental	34	5079	gear	0	0.0
 B	shaman/elemental	34	6063	gear	0	2.2
 B	shaman/elemental	34	6540	gear	12745	9.920000000000002
@@ -35513,7 +36257,7 @@ B	shaman/elemental	34	14122	gear	12718	5.16
 B	shaman/elemental	34	14340	gear	0	26.32
 B	shaman/elemental	34	14673	gear	0	9.94
 B	shaman/elemental	34	14964	oh	12745	92.0
-B	shaman/elemental	34	15235	mh	12906	89.398
+B	shaman/elemental	34	15235	mh	12906	76.07
 B	shaman/elemental	34	15477	gear	12731	6.4399999999999995
 B	shaman/elemental	34	15945	oh	0	2.9
 B	shaman/elemental	34	16711	gear	0	21.157
@@ -35532,13 +36276,15 @@ B	shaman/elemental	34	282560	gear	0	43.120000000000005
 B	shaman/elemental	34	286609	oh	0	72.54
 B	shaman/elemental	45	1315	gear	0	13.0
 B	shaman/elemental	45	1808	gear	0	2.368
+B	shaman/elemental	45	1990	mh	12905	69.518
+B	shaman/elemental	45	2140	mh	12917	10.425
 B	shaman/elemental	45	2225	mh	0	5.5
 B	shaman/elemental	45	2614	gear	0	0.928
 B	shaman/elemental	45	3158	gear	0	0.8320000000000001
 B	shaman/elemental	45	3570	mh	0	9.232000000000001
 B	shaman/elemental	45	4023	mh	0	16.896
 B	shaman/elemental	45	4068	oh	0	39.816
-B	shaman/elemental	45	4570	mh	12918	24.2
+B	shaman/elemental	45	4570	mh	12918	21.538
 B	shaman/elemental	45	5079	gear	0	0.0
 B	shaman/elemental	45	6063	gear	0	1.76
 B	shaman/elemental	45	6540	gear	12745	10.096
@@ -35555,7 +36301,7 @@ B	shaman/elemental	45	14122	gear	12718	5.048
 B	shaman/elemental	45	14340	gear	0	21.816
 B	shaman/elemental	45	14673	gear	0	8.338000000000001
 B	shaman/elemental	45	14964	oh	12745	79.03999999999999
-B	shaman/elemental	45	15235	mh	12906	81.227
+B	shaman/elemental	45	15235	mh	12906	70.755
 B	shaman/elemental	45	15477	gear	12729	5.832000000000001
 B	shaman/elemental	45	15945	oh	0	2.4
 B	shaman/elemental	45	16711	gear	0	17.602999999999998
@@ -35574,13 +36320,15 @@ B	shaman/elemental	45	282560	gear	0	40.816
 B	shaman/elemental	45	286609	oh	0	58.032000000000004
 B	shaman/elemental	55	1315	gear	0	17.6
 B	shaman/elemental	55	1808	gear	0	2.812
+B	shaman/elemental	55	1990	mh	12905	68.5582
+B	shaman/elemental	55	2140	mh	12917	9.8375
 B	shaman/elemental	55	2225	mh	0	4.45
 B	shaman/elemental	55	2614	gear	0	1.1019999999999999
 B	shaman/elemental	55	3158	gear	0	0.988
 B	shaman/elemental	55	3570	mh	0	7.466799999999999
 B	shaman/elemental	55	4023	mh	0	13.670399999999999
 B	shaman/elemental	55	4068	oh	0	46.494
-B	shaman/elemental	55	4570	mh	12918	22.9
+B	shaman/elemental	55	4570	mh	12918	20.7462
 B	shaman/elemental	55	5079	gear	0	0.0
 B	shaman/elemental	55	6063	gear	0	2.09
 B	shaman/elemental	55	6540	gear	12745	11.264
@@ -35597,7 +36345,7 @@ B	shaman/elemental	55	14122	gear	12718	5.732
 B	shaman/elemental	55	14340	gear	0	24.244000000000003
 B	shaman/elemental	55	14673	gear	0	9.132
 B	shaman/elemental	55	14964	oh	12745	91.96000000000001
-B	shaman/elemental	55	15235	mh	12906	76.8273
+B	shaman/elemental	55	15235	mh	12906	68.3545
 B	shaman/elemental	55	15477	gear	12729	6.838
 B	shaman/elemental	55	15945	oh	0	3.08
 B	shaman/elemental	55	16711	gear	0	19.346
@@ -35616,13 +36364,15 @@ B	shaman/elemental	55	282560	gear	0	45.394
 B	shaman/elemental	55	286609	oh	0	70.128
 B	shaman/elemental	60	1315	gear	0	13.95
 B	shaman/elemental	60	1808	gear	0	2.516
+B	shaman/elemental	60	1990	mh	12905	60.672799999999995
+B	shaman/elemental	60	2140	mh	12917	8.6
 B	shaman/elemental	60	2225	mh	0	2.8000000000000003
 B	shaman/elemental	60	2614	gear	0	0.9860000000000001
 B	shaman/elemental	60	3158	gear	0	0.8840000000000001
 B	shaman/elemental	60	3570	mh	0	4.7112
 B	shaman/elemental	60	4023	mh	0	8.601600000000001
 B	shaman/elemental	60	4068	oh	0	40.30200000000001
-B	shaman/elemental	60	4570	mh	12918	19.6
+B	shaman/elemental	60	4570	mh	12918	18.2448
 B	shaman/elemental	60	5079	gear	0	0.0
 B	shaman/elemental	60	6063	gear	0	1.87
 B	shaman/elemental	60	6540	gear	12745	10.632
@@ -35639,7 +36389,7 @@ B	shaman/elemental	60	14122	gear	12745	5.316
 B	shaman/elemental	60	14340	gear	0	18.951999999999998
 B	shaman/elemental	60	14673	gear	0	7.2219999999999995
 B	shaman/elemental	60	14964	oh	12745	83.52000000000001
-B	shaman/elemental	60	15235	mh	12906	66.3592
+B	shaman/elemental	60	15235	mh	12906	61.028
 B	shaman/elemental	60	15477	gear	12729	6.434
 B	shaman/elemental	60	15945	oh	0	2.42
 B	shaman/elemental	60	16711	gear	0	15.700000000000001
@@ -35658,13 +36408,15 @@ B	shaman/elemental	60	282560	gear	0	41.162000000000006
 B	shaman/elemental	60	286609	oh	0	62.604000000000006
 B	shaman/restoration	12	1315	gear	0	44.0
 B	shaman/restoration	12	1808	gear	0	3.552
+B	shaman/restoration	12	1990	mh	12909	232.822
+B	shaman/restoration	12	2140	mh	12719	44.586000000000006
 B	shaman/restoration	12	2225	mh	0	34.5
 B	shaman/restoration	12	2614	gear	0	1.3920000000000001
 B	shaman/restoration	12	3158	gear	0	1.248
 B	shaman/restoration	12	3570	mh	0	58.028
 B	shaman/restoration	12	4023	mh	0	105.984
 B	shaman/restoration	12	4068	oh	0	64.224
-B	shaman/restoration	12	4570	mh	12918	92.64
+B	shaman/restoration	12	4570	mh	12719	79.8
 B	shaman/restoration	12	5079	gear	0	0.0
 B	shaman/restoration	12	6063	gear	0	2.64
 B	shaman/restoration	12	6540	gear	12734	16.944000000000003
@@ -35681,7 +36433,7 @@ B	shaman/restoration	12	14122	gear	12734	11.072000000000001
 B	shaman/restoration	12	14340	gear	0	42.224000000000004
 B	shaman/restoration	12	14673	gear	0	18.232000000000003
 B	shaman/restoration	12	14964	oh	12747	125.16
-B	shaman/restoration	12	15235	mh	12910	314.333
+B	shaman/restoration	12	15235	mh	12910	248.64500000000004
 B	shaman/restoration	12	15477	gear	12734	10.048
 B	shaman/restoration	12	15945	oh	0	7.2
 B	shaman/restoration	12	16711	gear	0	32.61
@@ -35700,13 +36452,15 @@ B	shaman/restoration	12	282560	gear	0	64.12400000000001
 B	shaman/restoration	12	286609	oh	0	94.84800000000001
 B	shaman/restoration	25	1315	gear	0	35.0
 B	shaman/restoration	25	1808	gear	0	7.4
+B	shaman/restoration	25	1990	mh	12905	221.922
+B	shaman/restoration	25	2140	mh	12718	44.286
 B	shaman/restoration	25	2225	mh	0	34.5
 B	shaman/restoration	25	2614	gear	0	2.9000000000000004
 B	shaman/restoration	25	3158	gear	0	2.6
 B	shaman/restoration	25	3570	mh	0	58.028
 B	shaman/restoration	25	4023	mh	0	105.984
 B	shaman/restoration	25	4068	oh	0	108.9
-B	shaman/restoration	25	4570	mh	12918	95.0
+B	shaman/restoration	25	4570	mh	12718	78.9
 B	shaman/restoration	25	5079	gear	0	0.0
 B	shaman/restoration	25	6063	gear	0	5.5
 B	shaman/restoration	25	6540	gear	12745	17.799999999999997
@@ -35723,7 +36477,7 @@ B	shaman/restoration	25	14122	gear	12734	10.6
 B	shaman/restoration	25	14340	gear	0	35.4
 B	shaman/restoration	25	14673	gear	0	19.61
 B	shaman/restoration	25	14964	oh	12745	210.9
-B	shaman/restoration	25	15235	mh	12906	301.533
+B	shaman/restoration	25	15235	mh	12906	235.84500000000003
 B	shaman/restoration	25	15477	gear	12734	14.700000000000001
 B	shaman/restoration	25	15945	oh	0	5.6
 B	shaman/restoration	25	16711	gear	0	39.268
@@ -35742,13 +36496,15 @@ B	shaman/restoration	25	282560	gear	0	76.9
 B	shaman/restoration	25	286609	oh	0	186.00000000000003
 B	shaman/restoration	34	1315	gear	0	26.299999999999997
 B	shaman/restoration	34	1808	gear	0	4.4399999999999995
+B	shaman/restoration	34	1990	mh	12720	197.26999999999998
+B	shaman/restoration	34	2140	mh	12720	44.28000000000001
 B	shaman/restoration	34	2225	mh	0	35.0
 B	shaman/restoration	34	2614	gear	0	1.74
 B	shaman/restoration	34	3158	gear	0	1.56
 B	shaman/restoration	34	3570	mh	0	58.839999999999996
 B	shaman/restoration	34	4023	mh	0	107.52
 B	shaman/restoration	34	4068	oh	0	65.25
-B	shaman/restoration	34	4570	mh	12918	88.0
+B	shaman/restoration	34	4570	mh	12720	78.1
 B	shaman/restoration	34	5079	gear	0	0.0
 B	shaman/restoration	34	6063	gear	0	3.3
 B	shaman/restoration	34	6540	gear	12745	12.34
@@ -35765,7 +36521,7 @@ B	shaman/restoration	34	14122	gear	12734	6.84
 B	shaman/restoration	34	14340	gear	0	21.049999999999997
 B	shaman/restoration	34	14673	gear	0	13.869999999999997
 B	shaman/restoration	34	14964	oh	12746	132.9
-B	shaman/restoration	34	15235	mh	12908	270.79
+B	shaman/restoration	34	15235	mh	12720	213.49
 B	shaman/restoration	34	15477	gear	12729	9.059999999999999
 B	shaman/restoration	34	15945	oh	0	4.06
 B	shaman/restoration	34	16711	gear	0	26.189999999999998
@@ -35784,13 +36540,15 @@ B	shaman/restoration	34	282560	gear	0	50.57
 B	shaman/restoration	34	286609	oh	0	113.76
 B	shaman/restoration	45	1315	gear	0	29.0
 B	shaman/restoration	45	1808	gear	0	5.032
+B	shaman/restoration	45	1990	mh	12755	191.528
+B	shaman/restoration	45	2140	mh	12719	42.692
 B	shaman/restoration	45	2225	mh	0	34.0
 B	shaman/restoration	45	2614	gear	0	1.9720000000000002
 B	shaman/restoration	45	3158	gear	0	1.7680000000000002
 B	shaman/restoration	45	3570	mh	0	57.215999999999994
 B	shaman/restoration	45	4023	mh	0	104.448
 B	shaman/restoration	45	4068	oh	0	75.38400000000001
-B	shaman/restoration	45	4570	mh	12918	82.28
+B	shaman/restoration	45	4570	mh	12719	74.9
 B	shaman/restoration	45	5079	gear	0	0.0
 B	shaman/restoration	45	6063	gear	0	3.74
 B	shaman/restoration	45	6540	gear	12745	10.584
@@ -35807,7 +36565,7 @@ B	shaman/restoration	45	14122	gear	12734	6.152
 B	shaman/restoration	45	14340	gear	0	26.884
 B	shaman/restoration	45	14673	gear	0	16.572
 B	shaman/restoration	45	14964	oh	12747	141.66
-B	shaman/restoration	45	15235	mh	12910	255.07600000000002
+B	shaman/restoration	45	15235	mh	12751	206.29600000000002
 B	shaman/restoration	45	15477	gear	12734	9.468
 B	shaman/restoration	45	15945	oh	0	4.6
 B	shaman/restoration	45	16711	gear	0	32.3
@@ -35826,13 +36584,15 @@ B	shaman/restoration	45	282560	gear	0	48.884
 B	shaman/restoration	45	286609	oh	0	127.96800000000002
 B	shaman/restoration	55	1315	gear	0	30.5
 B	shaman/restoration	55	1808	gear	0	4.958
+B	shaman/restoration	55	1990	mh	12720	204.24099999999999
+B	shaman/restoration	55	2140	mh	12720	45.374
 B	shaman/restoration	55	2225	mh	0	35.5
 B	shaman/restoration	55	2614	gear	0	1.943
 B	shaman/restoration	55	3158	gear	0	1.742
 B	shaman/restoration	55	3570	mh	0	59.651999999999994
 B	shaman/restoration	55	4023	mh	0	109.056
 B	shaman/restoration	55	4068	oh	0	74.421
-B	shaman/restoration	55	4570	mh	12918	89.8
+B	shaman/restoration	55	4570	mh	12720	80.6
 B	shaman/restoration	55	5079	gear	0	0.0
 B	shaman/restoration	55	6063	gear	0	3.685
 B	shaman/restoration	55	6540	gear	12745	14.476
@@ -35849,7 +36609,7 @@ B	shaman/restoration	55	14122	gear	12720	7.338
 B	shaman/restoration	55	14340	gear	0	26.796000000000003
 B	shaman/restoration	55	14673	gear	0	16.718
 B	shaman/restoration	55	14964	oh	12746	149.04000000000002
-B	shaman/restoration	55	15235	mh	12908	272.647
+B	shaman/restoration	55	15235	mh	12720	218.84699999999998
 B	shaman/restoration	55	15477	gear	12729	10.567
 B	shaman/restoration	55	15945	oh	0	4.800000000000001
 B	shaman/restoration	55	16711	gear	0	32.965
@@ -35868,13 +36628,15 @@ B	shaman/restoration	55	282560	gear	0	58.771
 B	shaman/restoration	55	286609	oh	0	126.792
 B	shaman/restoration	60	1315	gear	0	35.0
 B	shaman/restoration	60	1808	gear	0	5.92
+B	shaman/restoration	60	1990	mh	12718	201.76999999999998
+B	shaman/restoration	60	2140	mh	12718	44.78000000000001
 B	shaman/restoration	60	2225	mh	0	35.0
 B	shaman/restoration	60	2614	gear	0	2.32
 B	shaman/restoration	60	3158	gear	0	2.08
 B	shaman/restoration	60	3570	mh	0	58.839999999999996
 B	shaman/restoration	60	4023	mh	0	107.52
 B	shaman/restoration	60	4068	oh	0	89.64
-B	shaman/restoration	60	4570	mh	12918	88.4
+B	shaman/restoration	60	4570	mh	12718	79.6
 B	shaman/restoration	60	5079	gear	0	0.0
 B	shaman/restoration	60	6063	gear	0	4.4
 B	shaman/restoration	60	6540	gear	12745	15.040000000000001
@@ -35891,7 +36653,7 @@ B	shaman/restoration	60	14122	gear	12718	7.5200000000000005
 B	shaman/restoration	60	14340	gear	0	33.64
 B	shaman/restoration	60	14673	gear	0	19.02
 B	shaman/restoration	60	14964	oh	12745	171.0
-B	shaman/restoration	60	15235	mh	12906	269.59000000000003
+B	shaman/restoration	60	15235	mh	12718	215.99
 B	shaman/restoration	60	15477	gear	12729	11.68
 B	shaman/restoration	60	15945	oh	0	5.6
 B	shaman/restoration	60	16711	gear	0	38.51
@@ -35910,6 +36672,8 @@ B	shaman/restoration	60	282560	gear	0	64.44
 B	shaman/restoration	60	286609	oh	0	150.48000000000002
 B	shaman/enhancement	12	1315	gear	0	64.5
 B	shaman/enhancement	12	1808	gear	0	9.620000000000001
+B	shaman/enhancement	12	1990	mh	12731	223.615
+B	shaman/enhancement	12	2140	mh	12719	44.41
 B	shaman/enhancement	12	2225	mh	0	32.5
 B	shaman/enhancement	12	2614	gear	0	3.77
 B	shaman/enhancement	12	3158	gear	0	3.38
@@ -35933,7 +36697,7 @@ B	shaman/enhancement	12	14122	gear	12731	15.32
 B	shaman/enhancement	12	14340	gear	0	96.94
 B	shaman/enhancement	12	14673	gear	0	36.13
 B	shaman/enhancement	12	14964	oh	12731	286.6
-B	shaman/enhancement	12	15235	mh	12910	263.505
+B	shaman/enhancement	12	15235	mh	12731	221.705
 B	shaman/enhancement	12	15477	gear	12731	22.130000000000003
 B	shaman/enhancement	12	15945	oh	0	11.6
 B	shaman/enhancement	12	16711	gear	0	70.92999999999999
@@ -35952,6 +36716,8 @@ B	shaman/enhancement	12	282560	gear	0	100.39
 B	shaman/enhancement	12	286609	oh	0	238.68
 B	shaman/enhancement	25	1315	gear	0	57.7
 B	shaman/enhancement	25	1808	gear	0	7.104
+B	shaman/enhancement	25	1990	mh	12731	253.925
+B	shaman/enhancement	25	2140	mh	12722	50.45
 B	shaman/enhancement	25	2225	mh	0	37.5
 B	shaman/enhancement	25	2614	gear	0	2.7840000000000003
 B	shaman/enhancement	25	3158	gear	0	2.496
@@ -35975,7 +36741,7 @@ B	shaman/enhancement	25	14122	gear	12731	16.044
 B	shaman/enhancement	25	14340	gear	0	101.548
 B	shaman/enhancement	25	14673	gear	0	38.594
 B	shaman/enhancement	25	14964	oh	12731	233.72000000000003
-B	shaman/enhancement	25	15235	mh	12910	291.595
+B	shaman/enhancement	25	15235	mh	12731	253.47500000000002
 B	shaman/enhancement	25	15477	gear	12731	19.496000000000002
 B	shaman/enhancement	25	15945	oh	0	10.96
 B	shaman/enhancement	25	16711	gear	0	74.97000000000001
@@ -35994,6 +36760,8 @@ B	shaman/enhancement	25	282560	gear	0	100.84799999999998
 B	shaman/enhancement	25	286609	oh	0	173.976
 B	shaman/enhancement	34	1315	gear	0	59.0
 B	shaman/enhancement	34	1808	gear	0	10.360000000000001
+B	shaman/enhancement	34	1990	mh	12731	237.899
+B	shaman/enhancement	34	2140	mh	12721	31.486000000000004
 B	shaman/enhancement	34	2225	mh	0	19.5
 B	shaman/enhancement	34	2614	gear	0	4.0600000000000005
 B	shaman/enhancement	34	3158	gear	0	3.6400000000000006
@@ -36017,7 +36785,7 @@ B	shaman/enhancement	34	14122	gear	12731	14.26
 B	shaman/enhancement	34	14340	gear	0	90.22
 B	shaman/enhancement	34	14673	gear	0	40.86
 B	shaman/enhancement	34	14964	oh	12731	298.2
-B	shaman/enhancement	34	15235	mh	12910	240.793
+B	shaman/enhancement	34	15235	mh	12731	214.933
 B	shaman/enhancement	34	15477	gear	12731	22.34
 B	shaman/enhancement	34	15945	oh	0	10.6
 B	shaman/enhancement	34	16711	gear	0	84.32
@@ -36036,6 +36804,8 @@ B	shaman/enhancement	34	282560	gear	0	91.88000000000001
 B	shaman/enhancement	34	286609	oh	0	255.84
 B	shaman/enhancement	45	1315	gear	0	48.95
 B	shaman/enhancement	45	1808	gear	0	8.14
+B	shaman/enhancement	45	1990	mh	12731	240.95700000000002
+B	shaman/enhancement	45	2140	mh	12721	18.298000000000002
 B	shaman/enhancement	45	2225	mh	0	7.100000000000001
 B	shaman/enhancement	45	2614	gear	0	3.19
 B	shaman/enhancement	45	3158	gear	0	2.86
@@ -36059,7 +36829,7 @@ B	shaman/enhancement	45	14122	gear	12731	12.04
 B	shaman/enhancement	45	14340	gear	0	76.18
 B	shaman/enhancement	45	14673	gear	0	36.84
 B	shaman/enhancement	45	14964	oh	12731	238.2
-B	shaman/enhancement	45	15235	mh	12910	222.799
+B	shaman/enhancement	45	15235	mh	12751	193.719
 B	shaman/enhancement	45	15477	gear	12731	18.11
 B	shaman/enhancement	45	15945	oh	0	8.86
 B	shaman/enhancement	45	16711	gear	0	76.7
@@ -36078,6 +36848,8 @@ B	shaman/enhancement	45	282560	gear	0	87.88999999999999
 B	shaman/enhancement	45	286609	oh	0	200.94000000000003
 B	shaman/enhancement	55	1315	gear	0	52.7
 B	shaman/enhancement	55	1808	gear	0	8.879999999999999
+B	shaman/enhancement	55	1990	mh	12731	238.241
+B	shaman/enhancement	55	2140	mh	12718	15.774000000000001
 B	shaman/enhancement	55	2225	mh	0	3.1000000000000014
 B	shaman/enhancement	55	2614	gear	0	3.48
 B	shaman/enhancement	55	3158	gear	0	3.12
@@ -36101,7 +36873,7 @@ B	shaman/enhancement	55	14122	gear	12731	13.979999999999999
 B	shaman/enhancement	55	14340	gear	0	88.46
 B	shaman/enhancement	55	14673	gear	0	41.98
 B	shaman/enhancement	55	14964	oh	12731	263.8
-B	shaman/enhancement	55	15235	mh	12906	234.34699999999995
+B	shaman/enhancement	55	15235	mh	12751	203.34699999999998
 B	shaman/enhancement	55	15477	gear	12731	20.32
 B	shaman/enhancement	55	15945	oh	0	9.76
 B	shaman/enhancement	55	16711	gear	0	88.97999999999999
@@ -36120,6 +36892,8 @@ B	shaman/enhancement	55	282560	gear	0	105.46
 B	shaman/enhancement	55	286609	oh	0	217.8
 B	shaman/enhancement	60	1315	gear	0	56.95
 B	shaman/enhancement	60	1808	gear	0	11.1
+B	shaman/enhancement	60	1990	mh	12718	240.012
+B	shaman/enhancement	60	2140	mh	12718	17.268
 B	shaman/enhancement	60	2225	mh	0	3.6000000000000014
 B	shaman/enhancement	60	2614	gear	0	4.35
 B	shaman/enhancement	60	3158	gear	0	3.9
@@ -36143,7 +36917,7 @@ B	shaman/enhancement	60	14122	gear	12718	15.9
 B	shaman/enhancement	60	14340	gear	0	94.9
 B	shaman/enhancement	60	14673	gear	0	46.699999999999996
 B	shaman/enhancement	60	14964	oh	12718	320.1
-B	shaman/enhancement	60	15235	mh	12906	247.90399999999997
+B	shaman/enhancement	60	15235	mh	12751	208.304
 B	shaman/enhancement	60	15477	gear	12731	23.75
 B	shaman/enhancement	60	15945	oh	0	10.459999999999999
 B	shaman/enhancement	60	16711	gear	0	101.7
@@ -36163,11 +36937,12 @@ B	shaman/enhancement	60	286609	oh	0	271.97999999999996
 B	paladin/holy	12	25	mh	0	7.14
 B	paladin/holy	12	1315	gear	0	21.35
 B	paladin/holy	12	1808	gear	0	4.4399999999999995
+B	paladin/holy	12	1990	mh	12755	196.528
 B	paladin/holy	12	2614	gear	0	1.74
 B	paladin/holy	12	3158	gear	0	1.56
 B	paladin/holy	12	3570	mh	0	57.215999999999994
 B	paladin/holy	12	4068	oh	0	70.38
-B	paladin/holy	12	4570	mh	12918	83.48
+B	paladin/holy	12	4570	mh	12722	75.2
 B	paladin/holy	12	5079	gear	0	0.0
 B	paladin/holy	12	6063	gear	0	3.3
 B	paladin/holy	12	6540	gear	12735	11.98
@@ -36188,7 +36963,7 @@ B	paladin/holy	12	14122	gear	12734	7.64
 B	paladin/holy	12	14340	gear	0	31.879999999999995
 B	paladin/holy	12	14673	gear	0	17.62
 B	paladin/holy	12	14964	oh	12735	130.7
-B	paladin/holy	12	15235	mh	12910	269.236
+B	paladin/holy	12	15235	mh	12751	208.036
 B	paladin/holy	12	15477	gear	12759	9.66
 B	paladin/holy	12	15945	oh	0	3.78
 B	paladin/holy	12	16711	gear	0	32.91
@@ -36212,11 +36987,12 @@ B	paladin/holy	12	286609	oh	0	109.5
 B	paladin/holy	25	25	mh	0	7.455
 B	paladin/holy	25	1315	gear	0	23.6
 B	paladin/holy	25	1808	gear	0	3.7
+B	paladin/holy	25	1990	mh	12755	206.441
 B	paladin/holy	25	2614	gear	0	1.4500000000000002
 B	paladin/holy	25	3158	gear	0	1.3
 B	paladin/holy	25	3570	mh	0	59.651999999999994
 B	paladin/holy	25	4068	oh	0	63.45
-B	paladin/holy	25	4570	mh	12918	90.2
+B	paladin/holy	25	4570	mh	12718	80.9
 B	paladin/holy	25	5079	gear	0	0.0
 B	paladin/holy	25	6063	gear	0	2.75
 B	paladin/holy	25	6540	gear	12745	14.4
@@ -36237,7 +37013,7 @@ B	paladin/holy	25	14122	gear	12718	7.3
 B	paladin/holy	25	14340	gear	0	36.699999999999996
 B	paladin/holy	25	14673	gear	0	18.959999999999997
 B	paladin/holy	25	14964	oh	12745	120.2
-B	paladin/holy	25	15235	mh	12906	280.04699999999997
+B	paladin/holy	25	15235	mh	12718	219.34699999999998
 B	paladin/holy	25	15477	gear	12759	9.55
 B	paladin/holy	25	15945	oh	0	4.28
 B	paladin/holy	25	16711	gear	0	35.12
@@ -36261,11 +37037,12 @@ B	paladin/holy	25	286609	oh	0	91.44000000000001
 B	paladin/holy	34	25	mh	0	6.615
 B	paladin/holy	34	1315	gear	0	17.35
 B	paladin/holy	34	1808	gear	0	5.846
+B	paladin/holy	34	1990	mh	12905	187.29399999999998
 B	paladin/holy	34	2614	gear	0	2.291
 B	paladin/holy	34	3158	gear	0	2.054
 B	paladin/holy	34	3570	mh	0	53.15599999999999
 B	paladin/holy	34	4068	oh	0	87.777
-B	paladin/holy	34	4570	mh	12918	82.2
+B	paladin/holy	34	4570	mh	12718	71.7
 B	paladin/holy	34	5079	gear	0	0.0
 B	paladin/holy	34	6063	gear	0	4.345
 B	paladin/holy	34	6540	gear	12745	14.411999999999999
@@ -36286,7 +37063,7 @@ B	paladin/holy	34	14122	gear	12734	7.506
 B	paladin/holy	34	14340	gear	0	31.652
 B	paladin/holy	34	14673	gear	0	19.476
 B	paladin/holy	34	14964	oh	12745	167.68
-B	paladin/holy	34	15235	mh	12906	255.591
+B	paladin/holy	34	15235	mh	12906	195.615
 B	paladin/holy	34	15477	gear	12759	12.178999999999998
 B	paladin/holy	34	15945	oh	0	3.18
 B	paladin/holy	34	16711	gear	0	38.845
@@ -36310,11 +37087,12 @@ B	paladin/holy	34	286609	oh	0	142.044
 B	paladin/holy	45	25	mh	0	6.93
 B	paladin/holy	45	1315	gear	0	43.35
 B	paladin/holy	45	1808	gear	0	5.994
+B	paladin/holy	45	1990	mh	12909	216.538
 B	paladin/holy	45	2614	gear	0	2.349
 B	paladin/holy	45	3158	gear	0	2.106
 B	paladin/holy	45	3570	mh	0	55.59199999999999
 B	paladin/holy	45	4068	oh	0	105.003
-B	paladin/holy	45	4570	mh	12918	87.2
+B	paladin/holy	45	4570	mh	12718	78.9
 B	paladin/holy	45	5079	gear	0	0.0
 B	paladin/holy	45	6063	gear	0	4.455
 B	paladin/holy	45	6540	gear	12745	17.468
@@ -36335,7 +37113,7 @@ B	paladin/holy	45	14122	gear	12731	10.134
 B	paladin/holy	45	14340	gear	0	64.128
 B	paladin/holy	45	14673	gear	0	29.574
 B	paladin/holy	45	14964	oh	12747	184.66
-B	paladin/holy	45	15235	mh	12910	286.12199999999996
+B	paladin/holy	45	15235	mh	12910	223.29000000000002
 B	paladin/holy	45	15477	gear	12731	14.181000000000001
 B	paladin/holy	45	15945	oh	0	7.78
 B	paladin/holy	45	16711	gear	0	58.245
@@ -36359,11 +37137,12 @@ B	paladin/holy	45	286609	oh	0	149.196
 B	paladin/holy	55	25	mh	0	7.245000000000001
 B	paladin/holy	55	1315	gear	0	48.0
 B	paladin/holy	55	1808	gear	0	7.3260000000000005
+B	paladin/holy	55	1990	mh	12905	227.922
 B	paladin/holy	55	2614	gear	0	2.871
 B	paladin/holy	55	3158	gear	0	2.5740000000000003
 B	paladin/holy	55	3570	mh	0	58.028
 B	paladin/holy	55	4068	oh	0	125.037
-B	paladin/holy	55	4570	mh	12918	93.0
+B	paladin/holy	55	4570	mh	12718	84.9
 B	paladin/holy	55	5079	gear	0	0.0
 B	paladin/holy	55	6063	gear	0	5.445
 B	paladin/holy	55	6540	gear	12745	21.372
@@ -36384,7 +37163,7 @@ B	paladin/holy	55	14122	gear	12718	11.986
 B	paladin/holy	55	14340	gear	0	71.41199999999999
 B	paladin/holy	55	14673	gear	0	33.666
 B	paladin/holy	55	14964	oh	12748	221.28
-B	paladin/holy	55	15235	mh	12906	298.333
+B	paladin/holy	55	15235	mh	12906	232.64500000000004
 B	paladin/holy	55	15477	gear	12731	16.599
 B	paladin/holy	55	15945	oh	0	8.6
 B	paladin/holy	55	16711	gear	0	67.995
@@ -36408,11 +37187,12 @@ B	paladin/holy	55	286609	oh	0	181.824
 B	paladin/holy	60	25	mh	0	7.245000000000001
 B	paladin/holy	60	1315	gear	0	40.15
 B	paladin/holy	60	1808	gear	0	7.252000000000001
+B	paladin/holy	60	1990	mh	12905	231.52200000000002
 B	paladin/holy	60	2614	gear	0	2.842
 B	paladin/holy	60	3158	gear	0	2.548
 B	paladin/holy	60	3570	mh	0	58.028
 B	paladin/holy	60	4068	oh	0	122.27400000000002
-B	paladin/holy	60	4570	mh	12918	94.6
+B	paladin/holy	60	4570	mh	12718	84.9
 B	paladin/holy	60	5079	gear	0	0.0
 B	paladin/holy	60	6063	gear	0	5.390000000000001
 B	paladin/holy	60	6540	gear	12745	21.944
@@ -36433,7 +37213,7 @@ B	paladin/holy	60	14122	gear	12718	11.972000000000001
 B	paladin/holy	60	14340	gear	0	67.524
 B	paladin/holy	60	14673	gear	0	33.532000000000004
 B	paladin/holy	60	14964	oh	12745	219.66
-B	paladin/holy	60	15235	mh	12906	302.533
+B	paladin/holy	60	15235	mh	12906	236.84500000000003
 B	paladin/holy	60	15477	gear	12759	16.198
 B	paladin/holy	60	15945	oh	0	7.42
 B	paladin/holy	60	16711	gear	0	68.33
@@ -36457,11 +37237,12 @@ B	paladin/holy	60	286609	oh	0	177.708
 B	paladin/retribution	12	25	mh	0	4.575
 B	paladin/retribution	12	1315	gear	0	23.200000000000003
 B	paladin/retribution	12	1808	gear	0	4.736
+B	paladin/retribution	12	1990	mh	12755	205.361
 B	paladin/retribution	12	2614	gear	0	1.856
 B	paladin/retribution	12	3158	gear	0	1.6640000000000001
 B	paladin/retribution	12	3570	mh	0	56.77199999999999
 B	paladin/retribution	12	4068	oh	0	73.332
-B	paladin/retribution	12	4570	mh	12919	88.92
+B	paladin/retribution	12	4570	mh	12759	79.64
 B	paladin/retribution	12	5079	gear	0	0.0
 B	paladin/retribution	12	6063	gear	0	3.52
 B	paladin/retribution	12	6540	gear	12735	13.191999999999998
@@ -36482,7 +37263,7 @@ B	paladin/retribution	12	14122	gear	12734	8.096
 B	paladin/retribution	12	14340	gear	0	30.332
 B	paladin/retribution	12	14673	gear	0	17.526000000000003
 B	paladin/retribution	12	14964	oh	12735	140.68
-B	paladin/retribution	12	15235	mh	12916	281.887
+B	paladin/retribution	12	15235	mh	12916	214.29500000000002
 B	paladin/retribution	12	15477	gear	12734	10.064
 B	paladin/retribution	12	15945	oh	0	3.96
 B	paladin/retribution	12	16711	gear	0	33.1
@@ -36506,11 +37287,12 @@ B	paladin/retribution	12	286609	oh	0	117.744
 B	paladin/retribution	25	25	mh	0	-7.049999999999998
 B	paladin/retribution	25	1315	gear	0	19.299999999999997
 B	paladin/retribution	25	1808	gear	0	3.6260000000000003
+B	paladin/retribution	25	1990	mh	12759	194.97
 B	paladin/retribution	25	2614	gear	0	1.421
 B	paladin/retribution	25	3158	gear	0	1.274
 B	paladin/retribution	25	3570	mh	0	44.44
 B	paladin/retribution	25	4068	oh	0	55.647000000000006
-B	paladin/retribution	25	4570	mh	12918	80.83999999999999
+B	paladin/retribution	25	4570	mh	12759	74.19999999999999
 B	paladin/retribution	25	5079	gear	0	0.0
 B	paladin/retribution	25	6063	gear	0	2.6950000000000003
 B	paladin/retribution	25	6540	gear	12734	9.172
@@ -36531,7 +37313,7 @@ B	paladin/retribution	25	14122	gear	12734	5.886
 B	paladin/retribution	25	14340	gear	0	22.172
 B	paladin/retribution	25	14673	gear	0	14.406
 B	paladin/retribution	25	14964	oh	12759	106.28
-B	paladin/retribution	25	15235	mh	12910	243.27
+B	paladin/retribution	25	15235	mh	12759	197.69
 B	paladin/retribution	25	15477	gear	12759	8.249
 B	paladin/retribution	25	15945	oh	0	3.2
 B	paladin/retribution	25	16711	gear	0	26.515
@@ -36555,11 +37337,12 @@ B	paladin/retribution	25	286609	oh	0	90.984
 B	paladin/retribution	34	25	mh	0	-10.754999999999999
 B	paladin/retribution	34	1315	gear	0	16.95
 B	paladin/retribution	34	1808	gear	0	3.182
+B	paladin/retribution	34	1990	mh	12759	204.49900000000002
 B	paladin/retribution	34	2614	gear	0	1.2469999999999999
 B	paladin/retribution	34	3158	gear	0	1.1179999999999999
 B	paladin/retribution	34	3570	mh	0	40.028
 B	paladin/retribution	34	4068	oh	0	49.239
-B	paladin/retribution	34	4570	mh	12918	92.36
+B	paladin/retribution	34	4570	mh	12759	84.6
 B	paladin/retribution	34	5079	gear	0	0.0
 B	paladin/retribution	34	6063	gear	0	2.3649999999999998
 B	paladin/retribution	34	6540	gear	12745	9.504000000000001
@@ -36580,7 +37363,7 @@ B	paladin/retribution	34	14122	gear	12734	5.8020000000000005
 B	paladin/retribution	34	14340	gear	0	20.314
 B	paladin/retribution	34	14673	gear	0	14.842
 B	paladin/retribution	34	14964	oh	12759	95.96
-B	paladin/retribution	34	15235	mh	12906	237.953
+B	paladin/retribution	34	15235	mh	12759	191.233
 B	paladin/retribution	34	15477	gear	12759	7.643000000000001
 B	paladin/retribution	34	15945	oh	0	2.84
 B	paladin/retribution	34	16711	gear	0	27.715
@@ -36604,11 +37387,12 @@ B	paladin/retribution	34	286609	oh	0	79.66799999999999
 B	paladin/retribution	45	25	mh	0	-16.08
 B	paladin/retribution	45	1315	gear	0	22.4
 B	paladin/retribution	45	1808	gear	0	3.6260000000000003
+B	paladin/retribution	45	1990	mh	12718	214.24400000000003
 B	paladin/retribution	45	2614	gear	0	1.421
 B	paladin/retribution	45	3158	gear	0	1.274
 B	paladin/retribution	45	3570	mh	0	38.768
 B	paladin/retribution	45	4068	oh	0	59.787000000000006
-B	paladin/retribution	45	4570	mh	12918	102.6
+B	paladin/retribution	45	4570	mh	12718	94.1
 B	paladin/retribution	45	5079	gear	0	0.0
 B	paladin/retribution	45	6063	gear	0	2.6950000000000003
 B	paladin/retribution	45	6540	gear	12745	15.972
@@ -36629,7 +37413,7 @@ B	paladin/retribution	45	14122	gear	12718	8.086
 B	paladin/retribution	45	14340	gear	0	30.912
 B	paladin/retribution	45	14673	gear	0	18.956
 B	paladin/retribution	45	14964	oh	12745	122.18
-B	paladin/retribution	45	15235	mh	12906	228.848
+B	paladin/retribution	45	15235	mh	12718	178.548
 B	paladin/retribution	45	15477	gear	12729	9.549
 B	paladin/retribution	45	15945	oh	0	3.92
 B	paladin/retribution	45	16711	gear	0	36.565
@@ -36653,11 +37437,12 @@ B	paladin/retribution	45	286609	oh	0	90.384
 B	paladin/retribution	55	25	mh	0	-29.880000000000003
 B	paladin/retribution	55	1315	gear	0	17.0
 B	paladin/retribution	55	1808	gear	0	3.182
+B	paladin/retribution	55	1990	mh	12729	193.644
 B	paladin/retribution	55	2614	gear	0	1.2469999999999999
 B	paladin/retribution	55	3158	gear	0	1.1179999999999999
 B	paladin/retribution	55	3570	mh	0	17.367999999999995
 B	paladin/retribution	55	4068	oh	0	51.309
-B	paladin/retribution	55	4570	mh	12918	82.0
+B	paladin/retribution	55	4570	mh	12718	73.6
 B	paladin/retribution	55	5079	gear	0	0.0
 B	paladin/retribution	55	6063	gear	0	2.3649999999999998
 B	paladin/retribution	55	6540	gear	12745	14.204000000000002
@@ -36678,7 +37463,7 @@ B	paladin/retribution	55	14122	gear	12745	7.102000000000001
 B	paladin/retribution	55	14340	gear	0	24.684
 B	paladin/retribution	55	14673	gear	0	16.622
 B	paladin/retribution	55	14964	oh	12745	107.56
-B	paladin/retribution	55	15235	mh	12906	208.848
+B	paladin/retribution	55	15235	mh	12729	163.04800000000003
 B	paladin/retribution	55	15477	gear	12729	8.543
 B	paladin/retribution	55	15945	oh	0	3.0
 B	paladin/retribution	55	16711	gear	0	32.12499999999999
@@ -36702,11 +37487,12 @@ B	paladin/retribution	55	286609	oh	0	78.768
 B	paladin/retribution	60	25	mh	0	-35.595
 B	paladin/retribution	60	1315	gear	0	14.599999999999998
 B	paladin/retribution	60	1808	gear	0	1.998
+B	paladin/retribution	60	1990	mh	12729	219.331
 B	paladin/retribution	60	2614	gear	0	0.783
 B	paladin/retribution	60	3158	gear	0	0.702
 B	paladin/retribution	60	3570	mh	0	30.53199999999997
 B	paladin/retribution	60	4068	oh	0	33.471000000000004
-B	paladin/retribution	60	4570	mh	12918	120.19999999999997
+B	paladin/retribution	60	4570	mh	12723	111.69999999999997
 B	paladin/retribution	60	5079	gear	0	0.0
 B	paladin/retribution	60	6063	gear	0	1.4849999999999999
 B	paladin/retribution	60	6540	gear	12745	12.416
@@ -36727,7 +37513,7 @@ B	paladin/retribution	60	14122	gear	12745	6.208
 B	paladin/retribution	60	14340	gear	0	18.146
 B	paladin/retribution	60	14673	gear	0	14.727999999999998
 B	paladin/retribution	60	14964	oh	12745	76.42
-B	paladin/retribution	60	15235	mh	12917	193.077
+B	paladin/retribution	60	15235	mh	12729	147.47699999999998
 B	paladin/retribution	60	15477	gear	12729	6.526999999999999
 B	paladin/retribution	60	15945	oh	0	2.5
 B	paladin/retribution	60	16711	gear	0	28.935
@@ -36751,11 +37537,12 @@ B	paladin/retribution	60	286609	oh	0	50.472
 B	paladin/protection	12	25	mh	0	10.555
 B	paladin/protection	12	1315	gear	0	15.95
 B	paladin/protection	12	1808	gear	0	2.886
+B	paladin/protection	12	1990	mh	12759	188.27700000000002
 B	paladin/protection	12	2614	gear	0	1.131
 B	paladin/protection	12	3158	gear	0	1.014
 B	paladin/protection	12	3570	mh	0	55.523999999999994
 B	paladin/protection	12	4068	oh	0	45.027
-B	paladin/protection	12	4570	mh	12918	77.48
+B	paladin/protection	12	4570	mh	12759	70.12
 B	paladin/protection	12	5079	gear	0	0.0
 B	paladin/protection	12	6063	gear	0	2.145
 B	paladin/protection	12	6540	gear	12734	11.892000000000001
@@ -36776,7 +37563,7 @@ B	paladin/protection	12	14122	gear	12734	7.746
 B	paladin/protection	12	14340	gear	0	19.201999999999998
 B	paladin/protection	12	14673	gear	0	12.975999999999999
 B	paladin/protection	12	14964	oh	12734	95.88
-B	paladin/protection	12	15235	mh	12910	268.59900000000005
+B	paladin/protection	12	15235	mh	12759	208.579
 B	paladin/protection	12	15477	gear	12759	8.139
 B	paladin/protection	12	15945	oh	0	2.6799999999999997
 B	paladin/protection	12	16711	gear	0	22.814999999999998
@@ -36800,11 +37587,12 @@ B	paladin/protection	12	286609	oh	0	73.794
 B	paladin/protection	25	25	mh	0	12.254999999999999
 B	paladin/protection	25	1315	gear	0	15.35
 B	paladin/protection	25	1808	gear	0	2.96
+B	paladin/protection	25	1990	mh	12759	190.77200000000002
 B	paladin/protection	25	2614	gear	0	1.16
 B	paladin/protection	25	3158	gear	0	1.04
 B	paladin/protection	25	3570	mh	0	60.318999999999996
 B	paladin/protection	25	4068	oh	0	44.910000000000004
-B	paladin/protection	25	4570	mh	12918	79.56500000000001
+B	paladin/protection	25	4570	mh	12759	72.08500000000001
 B	paladin/protection	25	5079	gear	0	0.0
 B	paladin/protection	25	6063	gear	0	2.2
 B	paladin/protection	25	6540	gear	12759	11.620000000000001
@@ -36825,7 +37613,7 @@ B	paladin/protection	25	14122	gear	12734	7.359999999999999
 B	paladin/protection	25	14340	gear	0	17.009999999999998
 B	paladin/protection	25	14673	gear	0	13.309999999999999
 B	paladin/protection	25	14964	oh	12759	98.8
-B	paladin/protection	25	15235	mh	12906	268.399
+B	paladin/protection	25	15235	mh	12759	213.139
 B	paladin/protection	25	15477	gear	12759	8.54
 B	paladin/protection	25	15945	oh	0	2.52
 B	paladin/protection	25	16711	gear	0	24.13
@@ -36849,11 +37637,12 @@ B	paladin/protection	25	286609	oh	0	76.51
 B	paladin/protection	34	25	mh	0	13.625000000000007
 B	paladin/protection	34	1315	gear	0	13.85
 B	paladin/protection	34	1808	gear	0	2.5900000000000003
+B	paladin/protection	34	1990	mh	12759	174.215
 B	paladin/protection	34	2614	gear	0	1.0150000000000001
 B	paladin/protection	34	3158	gear	0	0.9100000000000001
 B	paladin/protection	34	3570	mh	0	44.58
 B	paladin/protection	34	4068	oh	0	39.55500000000001
-B	paladin/protection	34	4570	mh	12918	61.800000000000004
+B	paladin/protection	34	4570	mh	12759	54.800000000000004
 B	paladin/protection	34	5079	gear	0	0.0
 B	paladin/protection	34	6063	gear	0	1.9250000000000003
 B	paladin/protection	34	6540	gear	12759	12.88
@@ -36874,7 +37663,7 @@ B	paladin/protection	34	14122	gear	12734	7.69
 B	paladin/protection	34	14340	gear	0	15.43
 B	paladin/protection	34	14673	gear	0	12.749999999999998
 B	paladin/protection	34	14964	oh	12759	94.2
-B	paladin/protection	34	15235	mh	12906	260.90500000000003
+B	paladin/protection	34	15235	mh	12759	204.405
 B	paladin/protection	34	15477	gear	12759	8.635
 B	paladin/protection	34	15945	oh	0	2.2800000000000002
 B	paladin/protection	34	16711	gear	0	23.434999999999995
@@ -36898,11 +37687,12 @@ B	paladin/protection	34	286609	oh	0	67.13000000000001
 B	paladin/protection	45	25	mh	0	14.035
 B	paladin/protection	45	1315	gear	0	19.15
 B	paladin/protection	45	1808	gear	0	1.554
+B	paladin/protection	45	1990	mh	12759	195.157
 B	paladin/protection	45	2614	gear	0	0.609
 B	paladin/protection	45	3158	gear	0	0.546
 B	paladin/protection	45	3570	mh	0	56.403999999999996
 B	paladin/protection	45	4068	oh	0	25.173000000000002
-B	paladin/protection	45	4570	mh	12918	77.8
+B	paladin/protection	45	4570	mh	12759	70.0
 B	paladin/protection	45	5079	gear	0	0.0
 B	paladin/protection	45	6063	gear	0	1.155
 B	paladin/protection	45	6540	gear	12759	13.887999999999998
@@ -36923,7 +37713,7 @@ B	paladin/protection	45	14122	gear	12734	7.894
 B	paladin/protection	45	14340	gear	0	12.298000000000002
 B	paladin/protection	45	14673	gear	0	12.134
 B	paladin/protection	45	14964	oh	12759	74.12
-B	paladin/protection	45	15235	mh	12908	277.459
+B	paladin/protection	45	15235	mh	12759	216.519
 B	paladin/protection	45	15477	gear	12759	7.821
 B	paladin/protection	45	15945	oh	0	2.92
 B	paladin/protection	45	16711	gear	0	22.544999999999998
@@ -36947,11 +37737,12 @@ B	paladin/protection	45	286609	oh	0	46.326
 B	paladin/protection	55	25	mh	0	8.01
 B	paladin/protection	55	1315	gear	0	16.6
 B	paladin/protection	55	1808	gear	0	1.3319999999999999
+B	paladin/protection	55	1990	mh	12759	199.657
 B	paladin/protection	55	2614	gear	0	0.5219999999999999
 B	paladin/protection	55	3158	gear	0	0.46799999999999997
 B	paladin/protection	55	3570	mh	0	54.129
 B	paladin/protection	55	4068	oh	0	22.014
-B	paladin/protection	55	4570	mh	12918	80.17999999999999
+B	paladin/protection	55	4570	mh	12759	74.5
 B	paladin/protection	55	5079	gear	0	0.0
 B	paladin/protection	55	6063	gear	0	0.9899999999999999
 B	paladin/protection	55	6540	gear	12759	13.803999999999998
@@ -36972,7 +37763,7 @@ B	paladin/protection	55	14122	gear	12734	7.851999999999999
 B	paladin/protection	55	14340	gear	0	11.464
 B	paladin/protection	55	14673	gear	0	11.882
 B	paladin/protection	55	14964	oh	12759	68.96
-B	paladin/protection	55	15235	mh	12910	269.454
+B	paladin/protection	55	15235	mh	12759	211.99400000000003
 B	paladin/protection	55	15477	gear	12759	7.517999999999999
 B	paladin/protection	55	15945	oh	0	2.56
 B	paladin/protection	55	16711	gear	0	22.5
@@ -36996,11 +37787,12 @@ B	paladin/protection	55	286609	oh	0	40.168
 B	paladin/protection	60	25	mh	0	7.3500000000000005
 B	paladin/protection	60	1315	gear	0	16.2
 B	paladin/protection	60	1808	gear	0	1.1099999999999999
+B	paladin/protection	60	1990	mh	12759	210.97
 B	paladin/protection	60	2614	gear	0	0.435
 B	paladin/protection	60	3158	gear	0	0.39
 B	paladin/protection	60	3570	mh	0	58.839999999999996
 B	paladin/protection	60	4068	oh	0	15.525
-B	paladin/protection	60	4570	mh	12918	89.0
+B	paladin/protection	60	4570	mh	12759	81.4
 B	paladin/protection	60	5079	gear	0	0.0
 B	paladin/protection	60	6063	gear	0	0.825
 B	paladin/protection	60	6540	gear	12759	13.719999999999999
@@ -37021,7 +37813,7 @@ B	paladin/protection	60	14122	gear	12734	7.81
 B	paladin/protection	60	14340	gear	0	3.5999999999999996
 B	paladin/protection	60	14673	gear	0	9.87
 B	paladin/protection	60	14964	oh	12759	63.8
-B	paladin/protection	60	15235	mh	12908	281.89
+B	paladin/protection	60	15235	mh	12759	220.89000000000001
 B	paladin/protection	60	15477	gear	12759	7.214999999999999
 B	paladin/protection	60	15945	oh	0	2.24
 B	paladin/protection	60	16711	gear	0	19.545
@@ -37045,6 +37837,8 @@ B	paladin/protection	60	286609	oh	0	37.33
 B	warrior/arms	12	25	mh	0	6.615
 B	warrior/arms	12	1315	gear	0	37.9
 B	warrior/arms	12	1808	gear	0	3.7739999999999996
+B	warrior/arms	12	1990	mh	12731	190.673
+B	warrior/arms	12	2140	mh	12722	40.922000000000004
 B	warrior/arms	12	2225	mh	0	31.5
 B	warrior/arms	12	2614	gear	0	1.4789999999999999
 B	warrior/arms	12	3158	gear	0	1.3259999999999998
@@ -37100,6 +37894,8 @@ B	warrior/arms	12	286609	oh	0	95.73599999999999
 B	warrior/arms	25	25	mh	0	0.1200000000000001
 B	warrior/arms	25	1315	gear	0	27.6
 B	warrior/arms	25	1808	gear	0	3.404
+B	warrior/arms	25	1990	mh	12731	171.976
+B	warrior/arms	25	2140	mh	12722	30.904000000000003
 B	warrior/arms	25	2225	mh	0	22.240000000000002
 B	warrior/arms	25	2614	gear	0	1.334
 B	warrior/arms	25	3158	gear	0	1.196
@@ -37155,6 +37951,8 @@ B	warrior/arms	25	286609	oh	0	83.136
 B	warrior/arms	34	25	mh	0	0.3150000000000004
 B	warrior/arms	34	1315	gear	0	25.05
 B	warrior/arms	34	1808	gear	0	4.07
+B	warrior/arms	34	1990	mh	12731	183.309
+B	warrior/arms	34	2140	mh	12722	32.566
 B	warrior/arms	34	2225	mh	0	23.62
 B	warrior/arms	34	2614	gear	0	1.595
 B	warrior/arms	34	3158	gear	0	1.43
@@ -37210,6 +38008,8 @@ B	warrior/arms	34	286609	oh	0	98.10000000000001
 B	warrior/arms	45	25	mh	0	-17.415
 B	warrior/arms	45	1315	gear	0	20.42
 B	warrior/arms	45	1808	gear	0	3.108
+B	warrior/arms	45	1990	mh	12752	193.04700000000003
+B	warrior/arms	45	2140	mh	12722	13.458000000000006
 B	warrior/arms	45	2225	mh	0	5.100000000000001
 B	warrior/arms	45	2614	gear	0	1.218
 B	warrior/arms	45	3158	gear	0	1.092
@@ -37265,6 +38065,8 @@ B	warrior/arms	45	286609	oh	0	74.76
 B	warrior/arms	55	25	mh	0	-13.29
 B	warrior/arms	55	1315	gear	0	16.0
 B	warrior/arms	55	1808	gear	0	2.738
+B	warrior/arms	55	1990	mh	12752	181.36200000000002
+B	warrior/arms	55	2140	mh	12722	19.628000000000004
 B	warrior/arms	55	2225	mh	0	11.2
 B	warrior/arms	55	2614	gear	0	1.073
 B	warrior/arms	55	3158	gear	0	0.962
@@ -37320,6 +38122,8 @@ B	warrior/arms	55	286609	oh	0	65.712
 B	warrior/arms	60	25	mh	0	-36.405
 B	warrior/arms	60	1315	gear	0	14.0
 B	warrior/arms	60	1808	gear	0	2.6639999999999997
+B	warrior/arms	60	1990	mh	12752	211.12900000000002
+B	warrior/arms	60	2140	mh	12722	-5.153999999999996
 B	warrior/arms	60	2225	mh	0	-13.100000000000001
 B	warrior/arms	60	2614	gear	0	1.0439999999999998
 B	warrior/arms	60	3158	gear	0	0.9359999999999999
@@ -37375,6 +38179,8 @@ B	warrior/arms	60	286609	oh	0	63.93599999999999
 B	warrior/fury	12	25	mh	0	6.09
 B	warrior/fury	12	1315	gear	0	34.7
 B	warrior/fury	12	1808	gear	0	3.552
+B	warrior/fury	12	1990	mh	12731	175.518
+B	warrior/fury	12	2140	mh	12722	37.751999999999995
 B	warrior/fury	12	2225	mh	0	29.0
 B	warrior/fury	12	2614	gear	0	1.3920000000000001
 B	warrior/fury	12	3158	gear	0	1.248
@@ -37430,6 +38236,8 @@ B	warrior/fury	12	286609	oh	0	89.928
 B	warrior/fury	25	25	mh	0	1.8900000000000001
 B	warrior/fury	25	1315	gear	0	27.9
 B	warrior/fury	25	1808	gear	0	3.848
+B	warrior/fury	25	1990	mh	12731	139.692
+B	warrior/fury	25	2140	mh	12722	25.828000000000003
 B	warrior/fury	25	2225	mh	0	18.48
 B	warrior/fury	25	2614	gear	0	1.508
 B	warrior/fury	25	3158	gear	0	1.3519999999999999
@@ -37485,6 +38293,8 @@ B	warrior/fury	25	286609	oh	0	93.91199999999999
 B	warrior/fury	34	25	mh	0	4.305
 B	warrior/fury	34	1315	gear	0	32.55
 B	warrior/fury	34	1808	gear	0	3.404
+B	warrior/fury	34	1990	mh	12731	130.71099999999998
+B	warrior/fury	34	2140	mh	12722	27.454
 B	warrior/fury	34	2225	mh	0	20.5
 B	warrior/fury	34	2614	gear	0	1.334
 B	warrior/fury	34	3158	gear	0	1.196
@@ -37540,6 +38350,8 @@ B	warrior/fury	34	286609	oh	0	86.316
 B	warrior/fury	45	25	mh	0	-0.6999999999999997
 B	warrior/fury	45	1315	gear	0	25.3
 B	warrior/fury	45	1808	gear	0	2.516
+B	warrior/fury	45	1990	mh	12752	102.95
+B	warrior/fury	45	2140	mh	12722	15.8
 B	warrior/fury	45	2225	mh	0	10.379999999999999
 B	warrior/fury	45	2614	gear	0	0.9860000000000001
 B	warrior/fury	45	3158	gear	0	0.8840000000000001
@@ -37595,6 +38407,8 @@ B	warrior/fury	45	286609	oh	0	64.10400000000001
 B	warrior/fury	55	25	mh	0	-0.8849999999999993
 B	warrior/fury	55	1315	gear	0	17.8
 B	warrior/fury	55	1808	gear	0	1.85
+B	warrior/fury	55	1990	mh	12752	101.761
+B	warrior/fury	55	2140	mh	12722	16.574
 B	warrior/fury	55	2225	mh	0	11.36
 B	warrior/fury	55	2614	gear	0	0.7250000000000001
 B	warrior/fury	55	3158	gear	0	0.65
@@ -37650,6 +38464,8 @@ B	warrior/fury	55	286609	oh	0	46.32000000000001
 B	warrior/fury	60	25	mh	0	1.3500000000000008
 B	warrior/fury	60	1315	gear	0	17.9
 B	warrior/fury	60	1808	gear	0	1.998
+B	warrior/fury	60	1990	mh	12752	99.03
+B	warrior/fury	60	2140	mh	12722	17.52
 B	warrior/fury	60	2225	mh	0	12.3
 B	warrior/fury	60	2614	gear	0	0.783
 B	warrior/fury	60	3158	gear	0	0.702
@@ -37705,6 +38521,8 @@ B	warrior/fury	60	286609	oh	0	49.512
 B	warrior/protection	12	25	mh	0	4.41
 B	warrior/protection	12	1315	gear	0	25.549999999999997
 B	warrior/protection	12	1808	gear	0	1.554
+B	warrior/protection	12	1990	mh	12722	122.68200000000002
+B	warrior/protection	12	2140	mh	12722	27.048000000000005
 B	warrior/protection	12	2225	mh	0	21.0
 B	warrior/protection	12	2614	gear	0	0.609
 B	warrior/protection	12	3158	gear	0	0.546
@@ -37760,6 +38578,8 @@ B	warrior/protection	12	286609	oh	0	43.885999999999996
 B	warrior/protection	25	25	mh	0	2.5900000000000007
 B	warrior/protection	25	1315	gear	0	17.15
 B	warrior/protection	25	1808	gear	0	0.74
+B	warrior/protection	25	1990	mh	12725	91.97999999999999
+B	warrior/protection	25	2140	mh	12725	18.87
 B	warrior/protection	25	2225	mh	0	14.16
 B	warrior/protection	25	2614	gear	0	0.29
 B	warrior/protection	25	3158	gear	0	0.26
@@ -37815,6 +38635,8 @@ B	warrior/protection	25	286609	oh	0	23.8
 B	warrior/protection	34	25	mh	0	2.595
 B	warrior/protection	34	1315	gear	0	14.15
 B	warrior/protection	34	1808	gear	0	0.814
+B	warrior/protection	34	1990	mh	12725	92.291
+B	warrior/protection	34	2140	mh	12725	19.424000000000003
 B	warrior/protection	34	2225	mh	0	14.84
 B	warrior/protection	34	2614	gear	0	0.319
 B	warrior/protection	34	3158	gear	0	0.286
@@ -37870,6 +38692,8 @@ B	warrior/protection	34	286609	oh	0	24.395999999999997
 B	warrior/protection	45	25	mh	0	-0.7999999999999998
 B	warrior/protection	45	1315	gear	0	17.15
 B	warrior/protection	45	1808	gear	0	0.518
+B	warrior/protection	45	1990	mh	12725	96.77999999999999
+B	warrior/protection	45	2140	mh	12725	15.069999999999999
 B	warrior/protection	45	2225	mh	0	10.26
 B	warrior/protection	45	2614	gear	0	0.203
 B	warrior/protection	45	3158	gear	0	0.182
@@ -37925,6 +38749,8 @@ B	warrior/protection	45	286609	oh	0	19.212
 B	warrior/protection	55	25	mh	0	3.54
 B	warrior/protection	55	1315	gear	0	14.0
 B	warrior/protection	55	1808	gear	0	0.703
+B	warrior/protection	55	1990	mh	12725	87.69
+B	warrior/protection	55	2140	mh	12725	20.669999999999998
 B	warrior/protection	55	2225	mh	0	16.43
 B	warrior/protection	55	2614	gear	0	0.27549999999999997
 B	warrior/protection	55	3158	gear	0	0.247
@@ -37980,6 +38806,8 @@ B	warrior/protection	55	286609	oh	0	21.932000000000002
 B	warrior/protection	60	25	mh	0	3.1500000000000004
 B	warrior/protection	60	1315	gear	0	15.100000000000001
 B	warrior/protection	60	1808	gear	0	0.814
+B	warrior/protection	60	1990	mh	12725	89.42999999999999
+B	warrior/protection	60	2140	mh	12725	19.52
 B	warrior/protection	60	2225	mh	0	15.0
 B	warrior/protection	60	2614	gear	0	0.319
 B	warrior/protection	60	3158	gear	0	0.286
@@ -38035,6 +38863,7 @@ B	warrior/protection	60	286609	oh	0	24.855999999999998
 B	rogue/combat	12	25	mh	0	0.7450000000000019
 B	rogue/combat	12	1315	gear	0	19.4
 B	rogue/combat	12	1808	gear	0	1.702
+B	rogue/combat	12	2140	mh	12721	24.60600000000001
 B	rogue/combat	12	2225	mh	0	17.9
 B	rogue/combat	12	2614	gear	0	0.667
 B	rogue/combat	12	3158	gear	0	0.598
@@ -38065,6 +38894,7 @@ B	rogue/combat	12	274646	ranged	0	5.0
 B	rogue/combat	25	25	mh	0	-5.7299999999999995
 B	rogue/combat	25	1315	gear	0	17.9
 B	rogue/combat	25	1808	gear	0	1.924
+B	rogue/combat	25	2140	mh	12721	22.77600000000001
 B	rogue/combat	25	2225	mh	0	15.6
 B	rogue/combat	25	2614	gear	0	0.754
 B	rogue/combat	25	3158	gear	0	0.6759999999999999
@@ -38095,6 +38925,7 @@ B	rogue/combat	25	274646	ranged	0	5.0
 B	rogue/combat	34	25	mh	0	-11.91
 B	rogue/combat	34	1315	gear	0	19.75
 B	rogue/combat	34	1808	gear	0	1.776
+B	rogue/combat	34	2140	mh	12726	18.361999999999995
 B	rogue/combat	34	2225	mh	0	11.0
 B	rogue/combat	34	2614	gear	0	0.6960000000000001
 B	rogue/combat	34	3158	gear	0	0.624
@@ -38125,6 +38956,7 @@ B	rogue/combat	34	274646	ranged	0	5.0
 B	rogue/combat	45	25	mh	0	-10.46
 B	rogue/combat	45	1315	gear	0	11.4
 B	rogue/combat	45	1808	gear	0	2.442
+B	rogue/combat	45	2140	mh	12721	11.902000000000001
 B	rogue/combat	45	2225	mh	0	5.400000000000002
 B	rogue/combat	45	2614	gear	0	0.9570000000000001
 B	rogue/combat	45	3158	gear	0	0.8580000000000001
@@ -38155,6 +38987,7 @@ B	rogue/combat	45	274646	ranged	0	5.0
 B	rogue/combat	55	25	mh	0	-15.674999999999997
 B	rogue/combat	55	1315	gear	0	11.0
 B	rogue/combat	55	1808	gear	0	2.738
+B	rogue/combat	55	2140	mh	12721	8.430000000000003
 B	rogue/combat	55	2225	mh	0	2.1000000000000014
 B	rogue/combat	55	2614	gear	0	1.073
 B	rogue/combat	55	3158	gear	0	0.962
@@ -38185,6 +39018,7 @@ B	rogue/combat	55	274646	ranged	0	5.0
 B	rogue/combat	60	25	mh	0	-8.999999999999996
 B	rogue/combat	60	1315	gear	0	11.0
 B	rogue/combat	60	1808	gear	0	3.256
+B	rogue/combat	60	2140	mh	12721	6.060000000000002
 B	rogue/combat	60	2225	mh	0	0.1999999999999993
 B	rogue/combat	60	2614	gear	0	1.276
 B	rogue/combat	60	3158	gear	0	1.144
@@ -38215,6 +39049,7 @@ B	rogue/combat	60	274646	ranged	0	5.0
 B	rogue/assassination	12	25	mh	0	7.274999999999998
 B	rogue/assassination	12	1315	gear	0	19.2
 B	rogue/assassination	12	1808	gear	0	2.146
+B	rogue/assassination	12	2140	mh	12721	27.742
 B	rogue/assassination	12	2225	mh	0	20.58
 B	rogue/assassination	12	2614	gear	0	0.8410000000000001
 B	rogue/assassination	12	3158	gear	0	0.754
@@ -38245,6 +39080,7 @@ B	rogue/assassination	12	274646	ranged	0	5.0
 B	rogue/assassination	25	25	mh	0	6.02
 B	rogue/assassination	25	1315	gear	0	15.8
 B	rogue/assassination	25	1808	gear	0	2.5900000000000003
+B	rogue/assassination	25	2140	mh	12721	24.344
 B	rogue/assassination	25	2225	mh	0	18.0
 B	rogue/assassination	25	2614	gear	0	1.0150000000000001
 B	rogue/assassination	25	3158	gear	0	0.9100000000000001
@@ -38275,6 +39111,7 @@ B	rogue/assassination	25	274646	ranged	0	5.0
 B	rogue/assassination	34	25	mh	0	3.9899999999999998
 B	rogue/assassination	34	1315	gear	0	15.0
 B	rogue/assassination	34	1808	gear	0	2.886
+B	rogue/assassination	34	2140	mh	12721	22.102
 B	rogue/assassination	34	2225	mh	0	15.040000000000001
 B	rogue/assassination	34	2614	gear	0	1.131
 B	rogue/assassination	34	3158	gear	0	1.014
@@ -38305,6 +39142,7 @@ B	rogue/assassination	34	274646	ranged	0	5.0
 B	rogue/assassination	45	25	mh	0	-4.764999999999997
 B	rogue/assassination	45	1315	gear	0	15.0
 B	rogue/assassination	45	1808	gear	0	3.552
+B	rogue/assassination	45	2140	mh	12721	16.638
 B	rogue/assassination	45	2225	mh	0	13.5
 B	rogue/assassination	45	2614	gear	0	1.3920000000000001
 B	rogue/assassination	45	3158	gear	0	1.248
@@ -38335,6 +39173,7 @@ B	rogue/assassination	45	274646	ranged	0	5.0
 B	rogue/assassination	55	25	mh	0	-1.469999999999998
 B	rogue/assassination	55	1315	gear	0	15.0
 B	rogue/assassination	55	1808	gear	0	3.848
+B	rogue/assassination	55	2140	mh	12721	17.344
 B	rogue/assassination	55	2225	mh	0	13.600000000000001
 B	rogue/assassination	55	2614	gear	0	1.508
 B	rogue/assassination	55	3158	gear	0	1.3519999999999999
@@ -38365,6 +39204,7 @@ B	rogue/assassination	55	274646	ranged	0	5.0
 B	rogue/assassination	60	25	mh	0	2.7300000000000004
 B	rogue/assassination	60	1315	gear	0	14.0
 B	rogue/assassination	60	1808	gear	0	3.7739999999999996
+B	rogue/assassination	60	2140	mh	12721	17.844
 B	rogue/assassination	60	2225	mh	0	13.0
 B	rogue/assassination	60	2614	gear	0	1.4789999999999999
 B	rogue/assassination	60	3158	gear	0	1.3259999999999998
@@ -38395,6 +39235,7 @@ B	rogue/assassination	60	274646	ranged	0	5.0
 B	rogue/subtlety	12	25	mh	0	7.289999999999998
 B	rogue/subtlety	12	1315	gear	0	19.2
 B	rogue/subtlety	12	1808	gear	0	2.146
+B	rogue/subtlety	12	2140	mh	12721	27.148000000000003
 B	rogue/subtlety	12	2225	mh	0	20.04
 B	rogue/subtlety	12	2614	gear	0	0.8410000000000001
 B	rogue/subtlety	12	3158	gear	0	0.754
@@ -38425,6 +39266,7 @@ B	rogue/subtlety	12	274646	ranged	0	5.0
 B	rogue/subtlety	25	25	mh	0	11.229999999999999
 B	rogue/subtlety	25	1315	gear	0	15.55
 B	rogue/subtlety	25	1808	gear	0	2.2199999999999998
+B	rogue/subtlety	25	2140	mh	12721	31.224
 B	rogue/subtlety	25	2225	mh	0	23.0
 B	rogue/subtlety	25	2614	gear	0	0.87
 B	rogue/subtlety	25	3158	gear	0	0.78
@@ -38455,6 +39297,7 @@ B	rogue/subtlety	25	274646	ranged	0	5.0
 B	rogue/subtlety	34	25	mh	0	5.25
 B	rogue/subtlety	34	1315	gear	0	12.945
 B	rogue/subtlety	34	1808	gear	0	3.108
+B	rogue/subtlety	34	2140	mh	12721	24.10000000000001
 B	rogue/subtlety	34	2225	mh	0	14.600000000000001
 B	rogue/subtlety	34	2614	gear	0	1.218
 B	rogue/subtlety	34	3158	gear	0	1.092
@@ -38485,6 +39328,7 @@ B	rogue/subtlety	34	274646	ranged	0	5.0
 B	rogue/subtlety	45	25	mh	0	14.684999999999997
 B	rogue/subtlety	45	1315	gear	0	13.0
 B	rogue/subtlety	45	1808	gear	0	2.96
+B	rogue/subtlety	45	2140	mh	12721	26.978000000000005
 B	rogue/subtlety	45	2225	mh	0	18.5
 B	rogue/subtlety	45	2614	gear	0	1.16
 B	rogue/subtlety	45	3158	gear	0	1.04
@@ -38515,6 +39359,7 @@ B	rogue/subtlety	45	274646	ranged	0	5.0
 B	rogue/subtlety	55	25	mh	0	19.354999999999993
 B	rogue/subtlety	55	1315	gear	0	11.0
 B	rogue/subtlety	55	1808	gear	0	2.6639999999999997
+B	rogue/subtlety	55	2140	mh	12721	28.604000000000003
 B	rogue/subtlety	55	2225	mh	0	18.349999999999998
 B	rogue/subtlety	55	2614	gear	0	1.0439999999999998
 B	rogue/subtlety	55	3158	gear	0	0.9359999999999999
@@ -38545,6 +39390,7 @@ B	rogue/subtlety	55	274646	ranged	0	5.0
 B	rogue/subtlety	60	25	mh	0	12.809999999999999
 B	rogue/subtlety	60	1315	gear	0	11.0
 B	rogue/subtlety	60	1808	gear	0	3.182
+B	rogue/subtlety	60	2140	mh	12721	22.848000000000013
 B	rogue/subtlety	60	2225	mh	0	12.600000000000001
 B	rogue/subtlety	60	2614	gear	0	1.2469999999999999
 B	rogue/subtlety	60	3158	gear	0	1.1179999999999999
@@ -38575,6 +39421,7 @@ B	rogue/subtlety	60	274646	ranged	0	5.0
 B	hunter/beastmastery	12	25	mh	0	0.315
 B	hunter/beastmastery	12	1315	gear	0	3.8600000000000003
 B	hunter/beastmastery	12	1808	gear	0	0.814
+B	hunter/beastmastery	12	2140	mh	12724	3.132
 B	hunter/beastmastery	12	2225	mh	0	1.5
 B	hunter/beastmastery	12	2614	gear	0	0.319
 B	hunter/beastmastery	12	3158	gear	0	0.286
@@ -38615,6 +39462,7 @@ B	hunter/beastmastery	12	282560	gear	0	9.222999999999999
 B	hunter/beastmastery	25	25	mh	0	0.48300000000000004
 B	hunter/beastmastery	25	1315	gear	0	3.25
 B	hunter/beastmastery	25	1808	gear	0	0.444
+B	hunter/beastmastery	25	2140	mh	12724	4.2424
 B	hunter/beastmastery	25	2225	mh	0	2.3000000000000003
 B	hunter/beastmastery	25	2614	gear	0	0.17400000000000002
 B	hunter/beastmastery	25	3158	gear	0	0.156
@@ -38655,6 +39503,7 @@ B	hunter/beastmastery	25	282560	gear	0	7.677999999999999
 B	hunter/beastmastery	34	25	mh	0	1.1550000000000002
 B	hunter/beastmastery	34	1315	gear	0	5.0
 B	hunter/beastmastery	34	1808	gear	0	0.592
+B	hunter/beastmastery	34	2140	mh	12724	7.984000000000001
 B	hunter/beastmastery	34	2225	mh	0	5.5
 B	hunter/beastmastery	34	2614	gear	0	0.232
 B	hunter/beastmastery	34	3158	gear	0	0.20800000000000002
@@ -38695,6 +39544,7 @@ B	hunter/beastmastery	34	282560	gear	0	8.414
 B	hunter/beastmastery	45	25	mh	0	1.3650000000000002
 B	hunter/beastmastery	45	1315	gear	0	8.05
 B	hunter/beastmastery	45	1808	gear	0	0.962
+B	hunter/beastmastery	45	2140	mh	12724	9.162
 B	hunter/beastmastery	45	2225	mh	0	6.5
 B	hunter/beastmastery	45	2614	gear	0	0.377
 B	hunter/beastmastery	45	3158	gear	0	0.33799999999999997
@@ -38735,6 +39585,7 @@ B	hunter/beastmastery	45	282560	gear	0	11.199
 B	hunter/beastmastery	55	25	mh	0	1.3650000000000002
 B	hunter/beastmastery	55	1315	gear	0	7.05
 B	hunter/beastmastery	55	1808	gear	0	0.962
+B	hunter/beastmastery	55	2140	mh	12724	9.692
 B	hunter/beastmastery	55	2225	mh	0	6.5
 B	hunter/beastmastery	55	2614	gear	0	0.377
 B	hunter/beastmastery	55	3158	gear	0	0.33799999999999997
@@ -38775,6 +39626,7 @@ B	hunter/beastmastery	55	282560	gear	0	15.979
 B	hunter/beastmastery	60	25	mh	0	1.8900000000000001
 B	hunter/beastmastery	60	1315	gear	0	6.300000000000001
 B	hunter/beastmastery	60	1808	gear	0	1.1099999999999999
+B	hunter/beastmastery	60	2140	mh	12724	12.452
 B	hunter/beastmastery	60	2225	mh	0	9.0
 B	hunter/beastmastery	60	2614	gear	0	0.435
 B	hunter/beastmastery	60	3158	gear	0	0.39
@@ -38815,6 +39667,7 @@ B	hunter/beastmastery	60	282560	gear	0	13.915
 B	hunter/marksmanship	12	25	mh	0	0.1995
 B	hunter/marksmanship	12	1315	gear	0	3.41
 B	hunter/marksmanship	12	1808	gear	0	0.74
+B	hunter/marksmanship	12	2140	mh	12724	2.6786000000000003
 B	hunter/marksmanship	12	2225	mh	0	0.95
 B	hunter/marksmanship	12	2614	gear	0	0.29
 B	hunter/marksmanship	12	3158	gear	0	0.26
@@ -38855,6 +39708,7 @@ B	hunter/marksmanship	12	282560	gear	0	10.620000000000001
 B	hunter/marksmanship	25	25	mh	0	0.3885
 B	hunter/marksmanship	25	1315	gear	0	4.6
 B	hunter/marksmanship	25	1808	gear	0	0.629
+B	hunter/marksmanship	25	2140	mh	12724	4.1978
 B	hunter/marksmanship	25	2225	mh	0	1.85
 B	hunter/marksmanship	25	2614	gear	0	0.24650000000000002
 B	hunter/marksmanship	25	3158	gear	0	0.22100000000000003
@@ -38895,6 +39749,7 @@ B	hunter/marksmanship	25	282560	gear	0	14.2805
 B	hunter/marksmanship	34	25	mh	0	0.441
 B	hunter/marksmanship	34	1315	gear	0	6.75
 B	hunter/marksmanship	34	1808	gear	0	0.74
+B	hunter/marksmanship	34	2140	mh	12724	4.5948
 B	hunter/marksmanship	34	2225	mh	0	2.1
 B	hunter/marksmanship	34	2614	gear	0	0.29
 B	hunter/marksmanship	34	3158	gear	0	0.26
@@ -38935,6 +39790,7 @@ B	hunter/marksmanship	34	282560	gear	0	15.469999999999999
 B	hunter/marksmanship	45	25	mh	0	1.1550000000000002
 B	hunter/marksmanship	45	1315	gear	0	10.3
 B	hunter/marksmanship	45	1808	gear	0	1.406
+B	hunter/marksmanship	45	2140	mh	12724	8.634
 B	hunter/marksmanship	45	2225	mh	0	5.5
 B	hunter/marksmanship	45	2614	gear	0	0.5509999999999999
 B	hunter/marksmanship	45	3158	gear	0	0.494
@@ -38975,6 +39831,7 @@ B	hunter/marksmanship	45	282560	gear	0	20.247
 B	hunter/marksmanship	55	25	mh	0	1.1550000000000002
 B	hunter/marksmanship	55	1315	gear	0	9.0
 B	hunter/marksmanship	55	1808	gear	0	0.962
+B	hunter/marksmanship	55	2140	mh	12724	8.634
 B	hunter/marksmanship	55	2225	mh	0	5.5
 B	hunter/marksmanship	55	2614	gear	0	0.377
 B	hunter/marksmanship	55	3158	gear	0	0.33799999999999997
@@ -39015,6 +39872,7 @@ B	hunter/marksmanship	55	282560	gear	0	17.669
 B	hunter/marksmanship	60	25	mh	0	1.8900000000000001
 B	hunter/marksmanship	60	1315	gear	0	5.85
 B	hunter/marksmanship	60	1808	gear	0	1.184
+B	hunter/marksmanship	60	2140	mh	12724	12.542
 B	hunter/marksmanship	60	2225	mh	0	9.0
 B	hunter/marksmanship	60	2614	gear	0	0.464
 B	hunter/marksmanship	60	3158	gear	0	0.41600000000000004
@@ -39055,6 +39913,7 @@ B	hunter/marksmanship	60	282560	gear	0	15.028
 B	hunter/survival	12	25	mh	0	0.24150000000000002
 B	hunter/survival	12	1315	gear	0	3.95
 B	hunter/survival	12	1808	gear	0	0.814
+B	hunter/survival	12	2140	mh	12724	2.7962
 B	hunter/survival	12	2225	mh	0	1.1500000000000001
 B	hunter/survival	12	2614	gear	0	0.319
 B	hunter/survival	12	3158	gear	0	0.286
@@ -39095,6 +39954,7 @@ B	hunter/survival	12	282560	gear	0	9.633
 B	hunter/survival	25	25	mh	0	0.168
 B	hunter/survival	25	1315	gear	0	3.37
 B	hunter/survival	25	1808	gear	0	0.37
+B	hunter/survival	25	2140	mh	12724	2.5304
 B	hunter/survival	25	2225	mh	0	0.8
 B	hunter/survival	25	2614	gear	0	0.145
 B	hunter/survival	25	3158	gear	0	0.13
@@ -39135,6 +39995,7 @@ B	hunter/survival	25	282560	gear	0	8.126
 B	hunter/survival	34	25	mh	0	0.546
 B	hunter/survival	34	1315	gear	0	5.45
 B	hunter/survival	34	1808	gear	0	0.74
+B	hunter/survival	34	2140	mh	12724	4.8288
 B	hunter/survival	34	2225	mh	0	2.6
 B	hunter/survival	34	2614	gear	0	0.29
 B	hunter/survival	34	3158	gear	0	0.26
@@ -39175,6 +40036,7 @@ B	hunter/survival	34	282560	gear	0	11.739999999999998
 B	hunter/survival	45	25	mh	0	0.8925
 B	hunter/survival	45	1315	gear	0	5.7
 B	hunter/survival	45	1808	gear	0	0.888
+B	hunter/survival	45	2140	mh	12724	6.619
 B	hunter/survival	45	2225	mh	0	4.25
 B	hunter/survival	45	2614	gear	0	0.34800000000000003
 B	hunter/survival	45	3158	gear	0	0.312
@@ -39215,6 +40077,7 @@ B	hunter/survival	45	282560	gear	0	11.765999999999998
 B	hunter/survival	55	25	mh	0	1.0395
 B	hunter/survival	55	1315	gear	0	5.5
 B	hunter/survival	55	1808	gear	0	0.888
+B	hunter/survival	55	2140	mh	12724	7.4406
 B	hunter/survival	55	2225	mh	0	4.95
 B	hunter/survival	55	2614	gear	0	0.34800000000000003
 B	hunter/survival	55	3158	gear	0	0.312
@@ -39255,6 +40118,7 @@ B	hunter/survival	55	282560	gear	0	11.016000000000002
 B	hunter/survival	60	25	mh	0	1.6800000000000002
 B	hunter/survival	60	1315	gear	0	4.65
 B	hunter/survival	60	1808	gear	0	0.962
+B	hunter/survival	60	2140	mh	12724	10.924000000000001
 B	hunter/survival	60	2225	mh	0	8.0
 B	hunter/survival	60	2614	gear	0	0.377
 B	hunter/survival	60	3158	gear	0	0.33799999999999997
@@ -39549,39 +40413,39 @@ G	warlock/destruction	30	mainhand:3413,offhand:4837	offhand	15912	12734	0	0	3.2	
 G	shaman/elemental	40	mainhand:7736,offhand:4068	mainhand	873	0	0	0	50.65	68.6
 G	shaman/elemental	40	mainhand:7736,offhand:4068	mainhand	271803	0	0	0	37.42	50.7
 G	shaman/elemental	40	mainhand:7736,offhand:4068	mainhand	274606	0	0	0	30.72	41.6
-G	shaman/elemental	40	mainhand:7736,offhand:4068	mainhand	1613	12905	0	0	26.31	35.6
 G	shaman/elemental	40	mainhand:7736,offhand:4068	mainhand	7713	0	0	0	22.06	29.9
-G	shaman/elemental	40	mainhand:7736,offhand:4068	mainhand	866	12905	0	0	20.46	27.7
-G	shaman/elemental	40	mainhand:7736,offhand:4068	mainhand	1640	12905	0	0	20.43	27.7
-G	shaman/elemental	40	mainhand:7736,offhand:4068	mainhand	15261	12905	0	0	13.63	18.5
-G	shaman/elemental	40	mainhand:7736,offhand:4068	mainhand	15260	12905	0	0	7.82	10.6
+G	shaman/elemental	40	mainhand:7736,offhand:4068	mainhand	1613	12905	0	0	16.89	22.9
+G	shaman/elemental	40	mainhand:7736,offhand:4068	mainhand	1640	12905	0	0	11.8	16.0
+G	shaman/elemental	40	mainhand:7736,offhand:4068	mainhand	866	12905	0	0	11.52	15.6
 G	shaman/elemental	40	mainhand:7736,offhand:4068	mainhand	249392	0	0	0	5.74	7.8
+G	shaman/elemental	40	mainhand:7736,offhand:4068	mainhand	15261	12905	0	0	5.38	7.3
 G	shaman/elemental	40	mainhand:7736,offhand:4068	mainhand	7723	0	0	0	4.89	6.6
 G	shaman/elemental	40	mainhand:7736,offhand:4068	mainhand	274430	0	0	0	4.41	6.0
-G	shaman/restoration	25	mainhand:1484	mainhand	3210	12905	0	0	99.43	86.7
+G	shaman/elemental	40	mainhand:7736,offhand:4068	mainhand	15260	12905	0	0	0.3	0.4
 G	shaman/restoration	25	mainhand:1484	mainhand	1155	0	0	0	96.29	83.9
-G	shaman/restoration	25	mainhand:1484	mainhand	2077	12905	0	0	95.22	83.0
 G	shaman/restoration	25	mainhand:1484	mainhand	2280	0	0	0	93.49	81.5
 G	shaman/restoration	25	mainhand:1484	mainhand	285350	0	0	0	86.67	75.6
-G	shaman/restoration	25	mainhand:1484	mainhand	3201	12905	0	0	84.8	73.9
 G	shaman/restoration	25	mainhand:1484	mainhand	2271	0	0	0	84.42	73.6
-G	shaman/restoration	25	mainhand:1484	mainhand	2072	12905	0	0	80.38	70.1
 G	shaman/restoration	25	mainhand:1484	mainhand	6505	0	0	0	77.7	67.7
 G	shaman/restoration	25	mainhand:1484	mainhand	1976	0	0	0	74.17	64.7
 G	shaman/restoration	25	mainhand:1484	mainhand	273841	0	0	0	70.77	61.7
 G	shaman/restoration	25	mainhand:1484	mainhand	3203	0	0	0	67.44	58.8
+G	shaman/restoration	25	mainhand:1484	mainhand	6905	0	0	0	66.39	57.9
+G	shaman/restoration	25	mainhand:1484	mainhand	3210	12905	0	0	63.96	55.8
+G	shaman/restoration	25	mainhand:1484	mainhand	251534	0	0	0	63.84	55.7
+G	shaman/restoration	25	mainhand:1484	mainhand	273817	0	0	0	63.79	55.6
 G	paladin/holy	40	mainhand:1207,offhand:7465	mainhand	276203	0	0	0	137.42	68.6
 G	paladin/holy	40	mainhand:1207,offhand:7465	mainhand	275001	0	0	0	134.44	67.1
 G	paladin/holy	40	mainhand:1207,offhand:7465	mainhand	7723	0	0	0	126.61	63.2
 G	paladin/holy	40	mainhand:1207,offhand:7465	mainhand	13058	0	0	0	124.57	62.2
-G	paladin/holy	40	mainhand:1207,offhand:7465	mainhand	1640	12909	0	0	120.66	60.2
-G	paladin/holy	40	mainhand:1207,offhand:7465	mainhand	15251	12911	0	0	118.29	59.0
 G	paladin/holy	40	mainhand:1207,offhand:7465	mainhand	11265	0	0	0	116.72	58.2
 G	paladin/holy	40	mainhand:1207,offhand:7465	mainhand	13042	0	0	0	102.53	51.2
 G	paladin/holy	40	mainhand:1207,offhand:7465	mainhand	9383	0	0	0	102.52	51.2
 G	paladin/holy	40	mainhand:1207,offhand:7465	mainhand	279885	0	0	0	101.25	50.5
 G	paladin/holy	40	mainhand:1207,offhand:7465	mainhand	271800	0	0	0	97.82	48.8
-G	paladin/holy	40	mainhand:1207,offhand:7465	mainhand	15261	12909	0	0	97.78	48.8
+G	paladin/holy	40	mainhand:1207,offhand:7465	mainhand	271926	0	0	0	87.79	43.8
+G	paladin/holy	40	mainhand:1207,offhand:7465	mainhand	272081	0	0	0	87.79	43.8
+G	paladin/holy	40	mainhand:1207,offhand:7465	mainhand	10758	0	0	0	86.58	43.2
 G	druid/balance	30	mainhand:865,offhand:4837	mainhand	249392	0	0	0	42.42	7070.0
 G	druid/balance	30	mainhand:865,offhand:4837	mainhand	273040	0	0	0	39.6	6600.0
 G	druid/balance	30	mainhand:865,offhand:4837	mainhand	274158	0	0	0	38.45	6408.3
@@ -39715,7 +40579,7 @@ S	mage/arcane	25	mainhand:1484	2h	34.6	2567:0	16887:0	2271:0	2271:0	34.6	0:0	0.0
 S	warlock/affliction	21	mainhand:5306	pair	26.89	2567:0	6898:0	15109:0	2567:0	17.89	6898:0	9.0	0
 S	warlock/destruction	30	mainhand:3413,offhand:4837	pair	48.79	6691:0	6898:0	249393:0	6691:0	41.59	6898:0	7.2	0
 S	shaman/elemental	40	mainhand:7736,offhand:4068	2h	50.65	0:0	0:0	873:0	873:0	50.65	0:0	0.0	1
-S	shaman/restoration	25	mainhand:1484	2h	99.43	0:0	0:0	3210:12905	3210:12905	99.43	0:0	0.0	1
+S	shaman/restoration	25	mainhand:1484	2h	96.29	0:0	0:0	1155:0	1155:0	96.29	0:0	0.0	1
 S	paladin/holy	40	mainhand:1207,offhand:7465	2h	137.42	0:0	0:0	276203:0	276203:0	137.42	0:0	0.0	1
 S	druid/balance	30	mainhand:865,offhand:4837	2h	42.42	0:0	0:0	249392:0	249392:0	42.42	0:0	0.0	1
 S	druid/restoration	34	mainhand:7736	2h	53.02	0:0	0:0	7713:0	7713:0	53.02	0:0	0.0	1

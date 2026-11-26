@@ -100,6 +100,34 @@ return {
 		T.ok(c ~= a); T.eq(c.name, a.name); T.near(sc, sa)
 		T.eq(ns.Score.BestSuffix(it, w, "priest", "gear", false), c, "a kept answer is still used")
 	end,
+	-- 0.7.10: caster random suffixes (of Healing/Magic/the Sorcerer/...: ItemBonus Type 54) cut a weapon's
+	-- damage to its caster share (one-hand 2/3, two-hand 29/39 of its table), as in game and on the website
+	caster_suffix_weapon_damage = function()
+		local ns = T.addon(FILES)
+		local S, I = ns.Score, ns.Items
+		local knife = I.Get(2140) -- Carving Knife: 6-13 @1.6 bare, 4-8 "of Healing"
+		local heal = S.Instance(knife, 12920)
+		T.eq(heal.name, "Carving Knife of Healing")
+		T.eq(heal.dps, 3.75)
+		T.eq(ns.DATA.suffixes[12920].cd, 1)
+		T.eq(ns.DATA.suffixes[12718].cd, nil)
+		T.eq(S.Instance(knife).dps, 5.94)
+		T.eq(S.Instance(knife, 12718).dps, 5.94, "a non-caster suffix keeps the damage")
+		local w = { int = 0.5, spDmg = 1, heal = 0.5, sta = 0.3, dps = 4 }
+		T.near(S.Score(heal, w, "priest", "mh"), S.StatScore(heal.stats, w, "priest") + 3.75 * 4)
+		local eagle = S.Instance(knife, 12718)
+		T.near(S.Score(eagle, w, "priest", "mh"), S.StatScore(eagle.stats, w, "priest") + 5.94 * 4)
+		local dpsPart
+		for _, p in ipairs(S.Parts(heal, w, "priest", "mh")) do if p[1] == "dps" then dpsPart = p end end
+		T.near(dpsPart[2], 3.75)
+		-- a two-hander: 29/39 (Ballast Maul 67-101 @3.4 bare, 50-75 "of the Sorcerer")
+		local maul = I.Get(1990)
+		local bare, sorc = S.Instance(maul).dps, S.Instance(maul, 12905).dps
+		T.eq(bare, 24.71)
+		T.eq(sorc, 18.38)
+		T.ok(math.abs(sorc / bare - 29 / 39) < 0.005, sorc / bare)
+		T.eq(S.Instance(maul, 12718).dps, 24.71)
+	end,
 	nil_item = function()
 		T.eq(T.addon(FILES).Score.Score(nil, W, "priest", "gear"), 0)
 		T.eq(T.addon(FILES).Score.BestSuffix(nil, W, "priest", "gear"), nil)

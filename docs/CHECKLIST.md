@@ -1,4 +1,9 @@
-# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution/Protection paladin) — PoleSim Gear 0.7.9
+# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution/Protection paladin) — PoleSim Gear 0.7.10
+
+**0.7.10 over 0.7.9:** caster suffixes "of the Sorcerer/Elder/Channeler/Physician/Prophet/Hierophant/Magic/
+Healing" lower a weapon's damage to 2/3 (one-hand) or 29/39 (two-hand) as in game; scores and `/psg drift`
+now match the tooltip (Carving Knife of Healing 3.75 DPS, a bare Carving Knife 5.94). No new files: `/reload`
+is enough. Check: `/psg drift` with such a weapon worn or in the bags lists no DPS difference for it.
 
 **0.7.9 over 0.7.8:** update notices. About 20 s after login PoleSim Gear joins a hidden chat channel
 "PoleSimGear" (temporary, in no chat window) and says hello with its version (only the version number);

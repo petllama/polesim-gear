@@ -81,7 +81,7 @@ return {
 		local ns = T.addon(FILES)
 		T.eq(ns.Items.Get(16315), nil, "Sergeant Major's Cape: a PvP rank")
 		T.eq(ns.Items.Get(6540).rep, nil)
-		local id, f, s = ns.DATA.items:match("\n(%d+)	([^\n]*	)(%d+:%d+)	[%d.]*\n")
+		local id, f, s = ns.DATA.items:match("\n(%d+)	([^\n]*	)(%d+:%d+)	[%d.]*	[%d.]*\n")
 		T.ok(id, "a shipped item with a reputation gate")
 		local it = ns.Items.Get(tonumber(id))
 		T.eq(it.rep[1] .. ":" .. it.rep[2], s)

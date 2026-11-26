@@ -1,7 +1,8 @@
 -- The shipped item table (Data/Items.lua): one "\n<id>\t<fields>" line per item, decoded on first use.
 -- Fields: name, quality, item level, required level, inventory type, class, subclass, icon, armor,
 -- weapon DPS, stats (k=v;...), suffix budget, suffix ids (a,b), class mask, race mask, unique, bind,
--- reputation gate (faction:standing 0..7, empty for none).
+-- reputation gate (faction:standing 0..7, empty for none), weapon speed, DPS with a caster suffix
+-- (Data/Suffixes.lua cd = 1; empty when none of its suffixes is one).
 local ADDON, ns = ...
 local Items = {}
 ns.Items = Items
@@ -76,6 +77,7 @@ local function decode(id, line)
 		dps = tonumber(f[10]) or 0, s = stats(f[11]), b = tonumber(f[12]) or 0, sfx = numbers(f[13]),
 		cm = tonumber(f[14]) or 0, rm = tonumber(f[15]) or 0, u = f[16] == "1", bd = tonumber(f[17]) or 0,
 		rep = f[18] and f[18] ~= "" and numbers(f[18]) or nil, speed = f[19] and tonumber(f[19]) or nil,
+		dc = f[20] and tonumber(f[20]) or nil, -- DPS with a caster suffix (0.7.10)
 	}
 end
 
