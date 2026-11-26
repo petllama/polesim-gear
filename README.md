@@ -205,8 +205,8 @@ PoleSim" changes the answer any time. Data is kept per character in your SavedVa
 **Recorded** (nothing named):
 - a character sheet at login and at every level-up: level, class, race, base and effective Strength,
   Agility, Stamina, Intellect, Spirit, max health and mana, armor, attack power, ranged attack power, spell
-  power per school, bonus healing, melee/ranged/spell crit, hit, spell hit, dodge/parry/block, the game's
-  mana regen out of combat and while casting, weapon damage and speed, worn item ids (with suffix and
+  power per school, bonus healing, melee/ranged/spell crit, hit, spell hit, dodge/parry/block, the part of each
+  attribute that comes from buffs, the game's mana regen out of combat and while casting, weapon damage and speed, worn item ids (with suffix and
   enchant ids), talents (node and rank);
 - each pull: when it started and ended (seconds into the session), how many mobs fought you, each mob's
   creature id, level, creature type and whether it uses mana, your casts per spell, kills and the XP each

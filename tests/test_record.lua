@@ -300,6 +300,122 @@ return {
 		R.done()
 	end,
 
+	-- Forever hides unit identity in some fights (UnitGUID and the UNIT_DIED/PARTY_KILL GUIDs come back
+	-- secret): uploads 0.7.6 had 118 of 133 hunter pulls with no mob and no kill. The kill XP line is
+	-- still readable: it is a kill of the pull.
+	kills_count_from_the_xp_line_when_mob_identity_is_secret = function()
+		local R = RF.setup({ record = true })
+		R.login()
+		R.play(30)
+		local secret = { secret = true }
+		R.units.target = { guid = secret, lvl = 23, ctype = "Beast", threat = 1, combat = true }
+		R.pullStart()
+		R.tick()
+		R.wait(12)
+		R.event("UNIT_DIED", secret)
+		R.event("CHAT_MSG_COMBAT_XP_GAIN", RF.NAMES[4] .. " dies, you gain 118 experience.", "")
+		R.pullEnd()
+		R.units = {}
+		R.wait(3)
+		R.tick()
+		local p = R.all("p")
+		T.eq(#p, 1, "one pull")
+		T.eq(#p[1].k, 1, "the kill counted from its XP line")
+		T.eq(p[1].k[1][3], 118, "with its XP")
+		T.eq(p[1].k[1][1], 0, "npc unknown")
+		T.ok(p[1].f:find("s", 1, true), "flagged secret")
+		R.done()
+	end,
+
+	an_xp_line_before_the_death_is_still_one_kill = function()
+		local R = RF.setup({ record = true })
+		R.login()
+		R.play(30)
+		local m = R.mob("target", 448, 13, "Beast", false)
+		R.pullStart()
+		R.tick()
+		R.wait(10)
+		R.event("CHAT_MSG_COMBAT_XP_GAIN", RF.NAMES[4] .. " dies, you gain 60 experience.", "")
+		R.event("UNIT_DIED", m.guid)
+		R.pullEnd()
+		R.units = {}
+		R.wait(3)
+		R.tick()
+		local p = R.all("p")[1]
+		T.eq(#p.k, 1, "one kill, not an XP kill plus a death kill")
+		T.eq(p.k[1][1], 448, "the death names the mob")
+		T.eq(p.k[1][2], 13)
+		T.eq(p.k[1][3], 60)
+		R.done()
+	end,
+
+	a_mob_that_is_target_and_nameplate_counts_once = function()
+		local R = RF.setup({ record = true })
+		R.login()
+		R.play(30)
+		local m = R.mob("target", 448, 13, "Beast", false)
+		R.units.nameplate1 = m
+		R.event("NAME_PLATE_UNIT_ADDED", "nameplate1")
+		_G.UnitIsUnit = function(a, b) return R.units[a] ~= nil and R.units[a] == R.units[b] end
+		R.pullStart()
+		R.tick()
+		R.wait(10)
+		R.kill(m, 60)
+		R.pullEnd()
+		R.units = {}
+		R.wait(3)
+		R.tick()
+		_G.UnitIsUnit = nil
+		T.eq(R.all("p")[1].n, 1, "one mob engaged, not two tokens")
+		R.done()
+	end,
+
+	the_level_up_xp_mark_waits_for_the_new_level = function()
+		local R = RF.setup({ record = true })
+		R.login()
+		R.play(20)
+		-- the client still reports the old level and XP while PLAYER_LEVEL_UP fires
+		R.xp, R.xpMax = 990, 1000
+		R.event("PLAYER_LEVEL_UP", 13)
+		R.level, R.xp, R.xpMax = 13, 40, 1200
+		R.wait(4)
+		R.tick()
+		local x = R.all("x")
+		T.eq(x[#x].w, "l")
+		T.eq(x[#x].l, 13, "the new level")
+		T.eq(x[#x].x, 40, "XP into the new level")
+		T.eq(x[#x].mx, 1200)
+		R.done()
+	end,
+
+	the_logout_xp_mark_keeps_the_last_readable_values = function()
+		local R = RF.setup({ record = true })
+		R.login()
+		R.play(20)
+		R.xp = 400
+		R.tick()
+		-- on logout the client hands out 0 / level 0
+		R.xp, R.xpMax = 0, 0
+		R.event("PLAYER_LOGOUT")
+		local x = R.all("x")
+		T.eq(x[#x].w, "e")
+		T.eq(x[#x].x, 400, "the last readable XP")
+		T.eq(x[#x].mx, 1000)
+		T.eq(x[#x].l, 12)
+		R.done()
+	end,
+
+	the_sheet_records_stat_buffs_apart = function()
+		local R = RF.setup({ record = true })
+		_G.UnitStat = function(_, i) return 20 + i, 20 + i, i == 3 and 32 or 0, 0 end
+		R.login()
+		R.play(20)
+		local c = R.all("c")[1]
+		T.eq(c.bf[3], 32, "Stamina from buffs (Power Word: Fortitude)")
+		T.eq(c.bf[1], 0)
+		R.done()
+	end,
+
 	settings_switches_turn_recording_and_asking_on_and_off = function()
 		local R = RF.setup({ record = false })
 		R.login()
