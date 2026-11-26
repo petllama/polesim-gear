@@ -9,6 +9,17 @@ local dir = assert(arg[1], "usage: tools/record_fixture.lua DIR [seconds]")
 local seconds = tonumber(arg[2] or "1800")
 local RF = require("recfix")
 local R = RF.setup({ record = true })
+-- one worn item whose live stats differ from the shipped table (Ambassador's Boots, spirit 4 -> 6): a
+-- drift row for the website's parser and its aggregate
+R.U.equipped[8] = "item:2033"
+R.ns.Drift.client = {
+	Info = function(link) if link == "item:2033" then return "INVTYPE_FEET", 1, 4, 1, 2, 1, "x" end end,
+	Stats = function(link)
+		if link == "item:2033" then
+			return { ITEM_MOD_STAMINA_SHORT = 5, ITEM_MOD_AGILITY_SHORT = 3, ITEM_MOD_SPIRIT_SHORT = 6, RESISTANCE0_NAME = 62 }
+		end
+	end,
+}
 R.login()
 RF.session(R, seconds)
 local E = R.ns.RecordExport
@@ -22,5 +33,5 @@ end
 write("export.txt", table.concat(parts, "\n") .. "\n")
 write("summary.json", E.Json(doc) .. "\n")
 write("code.txt", E.CodeFor(crc) .. "\n")
-print(("%d pulls, %d chars in %d part(s), checksum %s, code %s"):format(#doc.pulls.rows, #table.concat(parts), #parts, crc, E.CodeFor(crc)))
+print(("%d pulls, %d drift rows, %d chars in %d part(s), checksum %s, code %s"):format(#doc.pulls.rows, #doc.drift.rows, #table.concat(parts), #parts, crc, E.CodeFor(crc)))
 R.done()

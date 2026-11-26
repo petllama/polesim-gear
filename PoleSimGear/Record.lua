@@ -13,6 +13,8 @@
 --      still reports the old level while PLAYER_LEVEL_UP fires) and the session's end (the last
 --      readable values: the client hands out 0 on logout)
 --   k  a pause over 2 minutes (AFK flag, or no combat, movement, casting or other input)
+--   f  item data drift, at each sheet: a worn or bagged item whose shipped stats differ from the
+--      client's (item id, suffix id, stat key, shipped and live value), once per item + suffix + stat
 -- Records sit in blocks of at most an hour of ACTIVE play (pauses left out); about 20 h are kept per
 -- character (oldest blocks dropped first). Export (RecordExport.lua) summarises them; a confirmed
 -- upload deletes the blocks it carried.
@@ -104,15 +106,31 @@ local function data()
 	if type(r.blocks) ~= "table" then r.blocks = {} end
 	if type(r.next) ~= "number" then r.next = 1 end
 	if type(r.since) ~= "number" then r.since = 0 end
-	if type(r.askAt) ~= "number" then r.askAt = Record.ASK_SECONDS end
-	-- 0.6-0.7.5 asked every 4 h: a saved wait at that old default moves to the current one
-	if r.askAt == Record.OLD_ASK_SECONDS then r.askAt = Record.ASK_SECONDS end
+	-- the upload card's next ask, in active seconds since the last confirmed upload: the chosen interval
+	-- (Settings, recEvery), or later after "Later"; askEvery = the interval it was set with, so a new
+	-- choice applies at once (askAt = the last upload + the new interval), on every character
+	local every = Record.AskSeconds()
+	if type(r.askAt) ~= "number" then r.askAt, r.askEvery = every, every end
+	if type(r.askEvery) ~= "number" then
+		-- saved by 0.7.10 or older (2 h); 0.6-0.7.5 asked every 4 h: that old default moves too
+		if r.askAt == Record.OLD_ASK_SECONDS then r.askAt = 2 * 3600 end
+		r.askEvery = 2 * 3600
+	end
+	if r.askEvery ~= every then r.askAt, r.askEvery = every, every end
 	if type(r.sessions) ~= "number" then r.sessions = 0 end
 	return r
 end
 Record.Data = data
-Record.ASK_SECONDS = 2 * 3600
+Record.ASK_HOURS = { 2, 4, 6 } -- Settings "Ask me to upload every" (Options recEvery, default 2)
 Record.OLD_ASK_SECONDS = 4 * 3600
+-- The chosen upload interval in active seconds.
+function Record.AskSeconds()
+	local h = ns.Options.Get("recEvery")
+	for _, v in ipairs(Record.ASK_HOURS) do
+		if h == v then return h * 3600 end
+	end
+	return Record.ASK_HOURS[1] * 3600
+end
 
 -- seconds into the session (tenths)
 local function rel(t) return round((t or now()) - (sess and sess.start or 0), 1) end
@@ -141,7 +159,7 @@ local function block()
 	local b = r.blocks[#r.blocks]
 	if b and b.s == sess.n and not r.cut and (b.a or 0) < Record.BLOCK_SECONDS then return b end
 	r.cut = nil
-	b = { id = r.next, s = sess.n, t0 = rel(), a = 0, p = {}, c = {}, m = {}, d = {}, x = {}, k = {} }
+	b = { id = r.next, s = sess.n, t0 = rel(), a = 0, p = {}, c = {}, m = {}, d = {}, x = {}, k = {}, f = {} }
 	r.next = r.next + 1
 	r.blocks[#r.blocks + 1] = b
 	cap(r)
@@ -153,6 +171,7 @@ local function add(kind, rec)
 	if not Record.On() then return nil end
 	local b = block()
 	if not b then return nil end
+	if type(b[kind]) ~= "table" then b[kind] = {} end -- a block saved before this kind existed
 	b[kind][#b[kind] + 1] = rec
 	return rec
 end
@@ -608,10 +627,64 @@ local function onAlive()
 	if death and deadAt then death.r = round(now() - deadAt, 1) end
 end
 
+-- Item data drift ------------------------------------------------------------------------------------
+-- The random suffix of a link for a drift row: the one the shipped table knows (Live.Bonus), else the
+-- link's first bonus id, else its classic suffix field; 0 = none.
+local function driftSuffix(link, rec)
+	local b = ns.Live and ns.Live.Bonus and ns.Live.Bonus(link, rec)
+	if b then return b end
+	local body = link:match("item:([%-%d:]+)")
+	if not body then return 0 end
+	local f = {}
+	for v in (body .. ":"):gmatch("([^:]*):") do f[#f + 1] = tonumber(v) or 0 end
+	for i = 14, 13 + (f[13] or 0) do
+		if (f[i] or 0) > 0 then return f[i] end
+	end
+	return (f[7] or 0) > 0 and f[7] or 0
+end
+
+-- At each sheet snapshot: the worn and bagged items compared like /psg drift (Drift.Diff: shipped
+-- stats vs the client's); only mismatches are recorded (kind f: item id, suffix, stat key, shipped,
+-- live), once per item + suffix + stat per character (rec.drift remembers the live value; a changed
+-- value is recorded again). Items the client has not loaded are requested and wait for the next
+-- snapshot. At most DRIFT_MAX rows are held; the rest stay unseen until an upload makes room.
+function Record.DriftScan()
+	local D = ns.Drift
+	local r = data()
+	if not (r and D and D.Diff and D.Links and Record.On()) then return end
+	if type(r.drift) ~= "table" then r.drift = {} end
+	local seen, held = r.drift, 0
+	for _, b in ipairs(r.blocks) do held = held + (type(b.f) == "table" and #b.f or 0) end
+	for _, link in ipairs(D.Links()) do
+		local okd, d = pcall(D.Diff, link)
+		local id = tonumber(link:match("item:(%d+)"))
+		if okd and d == "pending" then
+			if id and C_Item and C_Item.RequestLoadItemDataByID then pcall(C_Item.RequestLoadItemDataByID, id) end
+		elseif okd and type(d) == "table" and id then
+			local sx = driftSuffix(link, ns.Items.Get(id))
+			for _, e in ipairs(d) do
+				local key = format("%.0f:%.0f:%s", id, sx, e[1])
+				local live = round(e[3], 2)
+				if seen[key] ~= live then
+					if held >= Record.DRIFT_MAX then return end
+					if add("f", { t = rel(), i = id, sx = sx, k = e[1], s = round(e[2], 2), v = live }) then
+						seen[key], held = live, held + 1
+					end
+				end
+			end
+		end
+	end
+end
+Record.DRIFT_MAX = 50
+
 -- Snapshots and the clock ----------------------------------------------------------------------------
 local function writeSheet()
 	charDue = nil
-	if Record.On() then add("c", Record.Snapshot()) end
+	if Record.On() then
+		add("c", Record.Snapshot())
+		local okd, err = pcall(Record.DriftScan)
+		if not okd then ns.ReportOnce("record:drift", err) end
+	end
 end
 
 -- Every few seconds (OnUpdate) and from tests: activity while moving, casting or fighting; the sheet

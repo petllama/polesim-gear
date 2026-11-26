@@ -2,7 +2,8 @@
 -- equip prompt), the look ahead a new character starts with, the equip prompt's minimum gain and never
 -- list, Polestar's gear-score question, the character's spec (Automatic or a spec with weights: the
 -- way out when the talents land on one without, e.g. Feral), recording for PoleSim and update notices
--- (the hidden channel switch; a newer release heard of).
+-- (the hidden channel switch; a newer release heard of). Recording: on/off, asking to upload on/off and
+-- its interval (2/4/6 h of active play).
 local ADDON, ns = ...
 local Tab = {}
 ns.TabSettings = Tab
@@ -115,6 +116,13 @@ function Tab.Create(parent)
 		b.get = sw[2]
 		p.recChecks[i] = b
 	end
+	-- "Ask me to upload every [2 h]" of active play: our own dropdown right of the switch's label
+	local DW = 52
+	p.recChecks[2]:SetSize(CW - DW - 4, 20) -- the switch's click area ends before the dropdown
+	p.recEvery = S.Dropdown(p, DW, 22, Tab.RecEveryList, function(h) return ns.Options.Get("recEvery") == h end,
+		function(h) ns.Options.Set("recEvery", h) ns.Window.Refresh() end)
+	p.recEvery:SetPoint("TOPLEFT", X + CW - DW, -34 - ROW + 1)
+	p.recEvery.tip = "Hours of active play between upload reminders, counted from your last upload"
 	local ry = -34 - #Tab.RECORD_SWITCHES * ROW - 2
 	p.recStatus = S.Text(p, 11, C.label)
 	p.recStatus:SetPoint("TOPLEFT", X, ry)
@@ -152,9 +160,15 @@ Tab.RECORD_SWITCHES = {
 		ns.Options.Set("record", on)
 		ns.Options.Set("recAsked", true)
 	end },
-	{ "Ask me to upload every 2 h of play", function() return ns.Options.Get("recPrompt") end,
+	{ "Ask me to upload every", function() return ns.Options.Get("recPrompt") end,
 		function(on) ns.Options.Set("recPrompt", on) end },
 }
+-- the upload interval choices (Record.ASK_HOURS): { { value, text } }
+function Tab.RecEveryList()
+	local out = {}
+	for _, h in ipairs(ns.Record.ASK_HOURS) do out[#out + 1] = { value = h, text = h .. " h" } end
+	return out
+end
 
 -- Update notices (Options shareVersion, on by default; the switch is in Tab.SWITCHES): what is known.
 Tab.SHARE_NOTES = { "Only the version number is sent,", "on a hidden channel. /psg version" }
@@ -212,6 +226,7 @@ function Tab.Refresh(p)
 	p.minGain:Update()
 	p.spec:Update()
 	for _, b in ipairs(p.recChecks) do b:Set(b.get()) end
+	p.recEvery:Update()
 	p.recStatus:SetText(ns.Record.Status())
 	p.updateStatus:SetText(Tab.UpdateText())
 end

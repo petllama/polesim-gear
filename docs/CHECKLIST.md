@@ -1,4 +1,11 @@
-# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution/Protection paladin) — PoleSim Gear 0.7.10
+# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution/Protection paladin) — PoleSim Gear 0.7.11
+
+**0.7.11 over 0.7.10:** Settings > "Ask me to upload every" now has a **2 h / 4 h / 6 h** dropdown
+(default 2 h, counted from your last upload; a new choice applies at once; Later still asks again after an
+hour of play). The recorder also notes item data drift: at login and every level-up it runs the
+`/psg drift` check on worn and bagged items and records only differences (item id, suffix id, stat,
+PoleSim's value, the game's value), once per character, at most 50 per export; the website lists items
+several players flag. No new files: `/reload` is enough. Check: R11, R12.
 
 **0.7.10 over 0.7.9:** caster suffixes "of the Sorcerer/Elder/Channeler/Physician/Prophet/Hierophant/Magic/
 Healing" lower a weapon's damage to 2/3 (one-hand) or 29/39 (two-hand) as in game; scores and `/psg drift`
@@ -92,7 +99,7 @@ Quest rewards and items with no level show no level (no more "lvl 0", "(0)" or "
 for Blizzard hotfixes. With Polestar's Gear module on, one chat line per session says our equip prompt
 stays quiet. **Recorder:** an opt-in leveling recorder for PoleSim
 (asked once; off until you say yes): pulls, casts, kills and XP, meals, deaths and character sheets, never
-names, chat or gold; every 2 h of play it offers a copy-paste export for polesim.petllama.com/upload.
+names, chat or gold; every 2 h of play (2-6 h since 0.7.11) it offers a copy-paste export for polesim.petllama.com/upload.
 Checks: sections S, R and T. Item data about 1.3 MB (weapon speeds added).
 
 **0.6.0 over 0.5.1:** four more classes. Warlock (Affliction, Demonology, Destruction), Druid (Balance,
@@ -989,7 +996,7 @@ waits until the fight ends. Click Yes: chat "Recording leveling data for PoleSim
 `/reload`: it does not ask again (nor on another character).
 
 **R2. State.** `/psg record` prints "Recording on; 0.0 h of active play recorded; ...". Settings tab, right
-column: "Record leveling data for PoleSim" and "Ask me to upload every 2 h of play" ticked, the hours and
+column: "Record leveling data for PoleSim" and "Ask me to upload every" ticked with "2 h" beside it, the hours and
 an Export now button.
 
 **R3. A pull.** Kill one mob with a few casts, wait 3 s, then:
@@ -1023,7 +1030,18 @@ since the last upload. A wrong code says it doesn't match and deletes nothing.
 **R9. The reminder.** Force it: `/run PoleSimGearCharDB.rec.askAt=0` and wait 5 s out of combat (not at a
 vendor/mailbox/AH, not casting): the card "N h of leveling recorded. Upload it?" with Copy export, Later,
 Stop asking. Pull a mob while it shows: it hides and comes back after. Later: gone for an hour of play.
-Force again, Stop asking: never again; Settings "Ask me to upload every 2 h of play" back on: it shows.
+Force again, Stop asking: never again; Settings "Ask me to upload every" back on: it shows.
+
+**R11. Upload interval (0.7.11).** Settings, right column: click the "2 h" dropdown beside "Ask me to upload
+every": our own small list 2 h / 4 h / 6 h (not the game's menu). Pick 4 h, then
+`/run local r=PoleSimGearCharDB.rec print(r.since,r.askAt)`: the second number is 14400 (6 h: 21600; 2 h:
+7200; after a Later it is the first number + 3600 until you change the choice). `/reload`: 4 h is still
+selected, also on another character.
+
+**R12. Drift rows (0.7.11).** Log in (or level up) with recording on, wait 10 s out of combat, then
+`/run local n=0 for _,b in ipairs(PoleSimGearCharDB.rec.blocks) do for _,f in ipairs(b.f or {}) do n=n+1 print(f.i,f.sx,f.k,f.s,f.v) end end print(n,"drift rows")`
+Each line is item id, suffix id (0 none), stat, PoleSim's value, the game's value; they match what
+`/psg drift` lists (usually "0 drift rows" and "no differences"). Another `/reload` adds no repeats.
 
 **R10. No taint.** After the dialogs and the export window, use a unit frame's menu (Target Marker Icon >
 Skull) on your target: no "blocked" message.

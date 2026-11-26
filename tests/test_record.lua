@@ -423,8 +423,23 @@ return {
 		fx.open()
 		local p = fx.tab("settings")
 		local rec = R.U.find(p, function(w) return w.get and R.U.ownText(w) == "Record leveling data for PoleSim" end)
-		local ask = R.U.find(p, function(w) return w.get and R.U.ownText(w) == "Ask me to upload every 2 h of play" end)
+		local ask = R.U.find(p, function(w) return w.get and R.U.ownText(w) == "Ask me to upload every" end)
 		T.ok(rec and ask, "both switches")
+		-- the interval: our own dropdown (never Blizzard's Menu), 2 h / 4 h / 6 h
+		local items = R.U.menu(p.recEvery)
+		local texts = {}
+		for i, it in ipairs(items) do texts[i] = it.text end
+		T.eq(table.concat(texts, ","), "2 h,4 h,6 h")
+		T.eq(items[1].isSelected(), true, "2 h by default")
+		items[3].select()
+		T.eq(R.ns.Options.Get("recEvery"), 6)
+		T.eq(R.U.menu(p.recEvery)[3].isSelected(), true)
+		-- the label fits left of the dropdown, whose label fits inside it
+		local _, ax = ask:GetPoint(1)
+		local _, dx = p.recEvery:GetPoint(1)
+		T.ok(ax + 20 + R.U.textWidth("Ask me to upload every", 12) <= dx - 4, "label clear of the dropdown")
+		T.ok(ax + ask:GetWidth() <= dx, "switch click area ends before the dropdown")
+		T.ok(R.U.textWidth("6 h", 12) <= 52 - 26, "6 h fits")
 		rec:Click()
 		T.eq(R.ns.Options.Get("record"), true, "recording on from Settings")
 		ask:Click()

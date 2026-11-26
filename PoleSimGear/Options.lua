@@ -6,7 +6,10 @@ local Options = {}
 ns.Options = Options
 
 Options.DEFAULTS = { tooltip = true, arrows = true, rewardMark = true, ahead = 0, preferQuest = true, ahPanel = true,
-	askEquip = true, askMinPct = 0, record = false, recAsked = false, recPrompt = true, shareVersion = true }
+	askEquip = true, askMinPct = 0, record = false, recAsked = false, recPrompt = true, shareVersion = true,
+	recEvery = 2 }
+-- keys with a fixed set of values (anything else is refused)
+Options.CHOICES = { recEvery = { [2] = true, [4] = true, [6] = true } }
 Options.KINDS = { "quest", "dungeon", "crafted", "vendor", "world" } -- Browser.KINDS (Browser loads later)
 Options.FILTER_DEFAULTS = { quest = true, dungeon = true, crafted = true, vendor = true, world = false }
 Options.SHOWS = { all = true, upgrades = true, wishlist = true }
@@ -22,7 +25,7 @@ local function opts()
 	if type(db.options) ~= "table" then db.options = {} end
 	local o = db.options
 	for k, v in pairs(Options.DEFAULTS) do
-		if type(o[k]) ~= type(v) then o[k] = v end
+		if type(o[k]) ~= type(v) or (Options.CHOICES[k] and not Options.CHOICES[k][o[k]]) then o[k] = v end
 	end
 	return o
 end
@@ -31,6 +34,7 @@ function Options.Get(key) return opts()[key] end
 
 function Options.Set(key, value)
 	if Options.DEFAULTS[key] == nil or type(value) ~= type(Options.DEFAULTS[key]) then return false end
+	if Options.CHOICES[key] and not Options.CHOICES[key][value] then return false end
 	if not ns.db then queued[key] = value end
 	opts()[key] = value
 	ns.Fire("OPTIONS", key, value)

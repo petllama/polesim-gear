@@ -28,6 +28,64 @@ return {
 		R.done()
 	end,
 
+	-- Settings > "Ask me to upload every" 2 h / 4 h / 6 h (Options recEvery, account-wide)
+	a_four_or_six_hour_interval_asks_later = function()
+		for _, h in ipairs({ 4, 6 }) do
+			local R = RF.setup({ record = true })
+			T.eq(R.ns.Options.Set("recEvery", h), true)
+			R.login()
+			R.play(h * 3600 - 120)
+			T.ok(not card(R), "not before " .. h .. " h")
+			R.play(200)
+			T.ok(card(R), "after " .. h .. " h")
+			R.done()
+		end
+	end,
+
+	only_two_four_or_six_hours = function()
+		local R = RF.setup({ record = true })
+		T.eq(R.ns.Options.Get("recEvery"), 2, "default 2 h")
+		T.eq(R.ns.Options.Set("recEvery", 3), false)
+		T.eq(R.ns.Options.Set("recEvery", 0), false)
+		T.eq(R.ns.Options.Get("recEvery"), 2)
+		R.done()
+	end,
+
+	-- a change applies at once: the next ask = the last upload + the new interval
+	changing_the_interval_moves_the_next_ask = function()
+		local R = RF.setup({ record = true })
+		R.ns.Options.Set("recEvery", 6)
+		R.login()
+		R.play(3 * 3600)
+		T.ok(not card(R), "3 h of 6")
+		R.ns.Options.Set("recEvery", 2)
+		R.play(20)
+		T.ok(card(R), "2 h chosen and 3 h played: asks now")
+		R.U.button(R.ns.RecordUI.UploadFrame(), "Later"):Click()
+		R.ns.Options.Set("recEvery", 4)
+		R.play(3600 - 200)
+		T.ok(not card(R), "4 h chosen: not at 4 h - 200 s")
+		R.play(400)
+		T.ok(card(R), "at 4 h")
+		R.done()
+	end,
+
+	-- the interval is saved account-wide and reaches another character's saved wait
+	the_interval_is_saved = function()
+		local R = RF.setup({ record = true })
+		R.ns.Options.Set("recEvery", 4)
+		local db = _G.PoleSimGearDB
+		R.done()
+		local R2 = RF.setup({ db = db, char = { rec = { v = 1, blocks = {}, next = 1, since = 0, askAt = 2 * 3600, sessions = 0 } } })
+		T.eq(R2.ns.Options.Get("recEvery"), 4)
+		R2.login()
+		R2.play(2 * 3600 + 60)
+		T.ok(not card(R2), "the other character waits 4 h too")
+		R2.play(2 * 3600)
+		T.ok(card(R2))
+		R2.done()
+	end,
+
 	afk_time_does_not_count_toward_the_two_hours = function()
 		local R = RF.setup({ record = true })
 		R.login()

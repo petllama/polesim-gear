@@ -171,6 +171,8 @@ local function n0(v) return v == nil and "" or numText(v) end
 -- pulls: column names + one row per pull; mobList "npc:level:type:caster;..." (caster 1 mana, 0 not,
 -- -1 unknown), kills "npc:level:xp;...", casts "spell:count;..." (spells sorted), gap -1 for a
 -- session's first pull, flags a (after a meal) d (died) s (some reads were secret).
+-- drift (0.7.11): item data drift, one row per item + suffix (0 none) + stat key whose shipped value
+-- differs from the client's (at most Record.DRIFT_MAX rows; the client build is the document's).
 function Export.Summary()
 	local r = ns.Record.Data()
 	if not r or #r.blocks == 0 then return nil end
@@ -186,7 +188,8 @@ function Export.Summary()
 		meals = { cols = { "sess", "start", "kind", "seconds", "aura", "interrupted" }, rows = {} },
 		deaths = { cols = { "sess", "at", "level", "mobs", "mobLevels", "fight", "deadSeconds", "toNextPull" }, rows = {} },
 		xp = { cols = { "sess", "at", "level", "xp", "xpMax", "rested", "why" }, rows = {} },
-		pauses = { cols = { "sess", "start", "end", "afk" }, rows = {} } }
+		pauses = { cols = { "sess", "start", "end", "afk" }, rows = {} },
+		drift = { cols = { "sess", "at", "item", "suffix", "stat", "shipped", "live" }, rows = {} } }
 	local lo, hi, active = nil, nil, 0
 	local bySess, order = {}, {}
 	local function level(l)
@@ -243,6 +246,11 @@ function Export.Summary()
 		end
 		for _, k in ipairs(b.k) do
 			doc.pauses.rows[#doc.pauses.rows + 1] = { b.s, k.s, k.e, k.afk or 0 }
+		end
+		for _, f in ipairs(type(b.f) == "table" and b.f or {}) do -- none in blocks saved by 0.7.10 and older
+			if #doc.drift.rows < ns.Record.DRIFT_MAX then
+				doc.drift.rows[#doc.drift.rows + 1] = { b.s, f.t or 0, f.i or 0, f.sx or 0, f.k or "", f.s or 0, f.v or 0 }
+			end
 		end
 	end
 	for _, s in ipairs(order) do
@@ -375,7 +383,8 @@ function Export.Confirm(code)
 			r.blocks = keep
 			for j = i, 1, -1 do table.remove(e, j) end
 			r.since = 0
-			r.askAt = ns.Record.ASK_SECONDS
+			r.askAt = ns.Record.AskSeconds()
+			r.askEvery = r.askAt
 			ns.Fire("RECORD_UPLOADED")
 			return true, "Thanks! The uploaded records were removed from your SavedVariables."
 		end

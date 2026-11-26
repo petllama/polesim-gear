@@ -1,6 +1,6 @@
 # PoleSim Gear
 
-Version 0.7.10. WoW: Forever addon: PoleSim's simulated, level-banded gear weights in game. Item scores with a
+Version 0.7.11. WoW: Forever addon: PoleSim's simulated, level-banded gear weights in game. Item scores with a
 "how?" breakdown, upgrade arrows, the best quest reward, and a gear planner window with where to get
 each upgrade. In testing.
 
@@ -214,15 +214,22 @@ PoleSim" changes the answer any time. Data is kept per character in your SavedVa
 - meals (Food/Drink: how long you sat, the aura's length, whether a pull interrupted it), deaths (level,
   the mobs and their levels, the fight so far, time until alive and until the next pull), XP and rested
   at the session's start, each level-up and the session's end, and pauses over 2 minutes (AFK flag, or no
-  combat, movement or casting) so only active play counts.
+  combat, movement or casting) so only active play counts;
+- item data drift: at each character sheet, the worn and bagged items are compared with PoleSim's item
+  table (the same check as `/psg drift`); only items whose stats differ from what the game shows are
+  recorded: item id, random suffix id, the stat, PoleSim's value and the game's value (the client build is
+  in the export already). Each difference once per character (again only if the game's value changes), at
+  most 50 per export; items the game hasn't loaded yet wait for the next sheet. It lets the website spot data
+  bugs (a hotfix PoleSim's table lacks) from many players at once.
 
 **Never recorded:** names (yours, your realm, guild, party, other players or mobs), chat, gold, map
 position, health or mana values.
 
-**Uploading:** every 2 hours of active recorded play, at a calm moment (out of combat, not in an
-instance, not casting, no other PoleSim popup, not at the auction house, mail, a vendor or a trainer) a
-card asks **"2 h of leveling recorded. Upload it?"**: **Copy export**, **Later** (asks again after an hour
-of play) or **Stop asking** (recording goes on; Settings > "Ask me to upload every 2 h of play" turns it
+**Uploading:** every 2-6 hours of active recorded play (your choice: Settings > "Ask me to upload
+every" 2 h / 4 h / 6 h, default 2 h, counted from your last upload; a new choice applies at once), at a
+calm moment (out of combat, not in an instance, not casting, no other PoleSim popup, not at the auction
+house, mail, a vendor or a trainer) a card asks e.g. **"2 h of leveling recorded. Upload it?"**: **Copy export**, **Later** (asks again after an hour
+of play) or **Stop asking** (recording goes on; the Settings > "Ask me to upload every" switch turns it
 back on). `/psg export` (or Settings > Export now) opens the export any time: one line of text, already
 highlighted: **Ctrl+C, then paste at polesim.petllama.com/upload**. A big export comes in numbered parts
 (Next). After sending, the website shows a 6-character code: click **I uploaded it** and type it in; only
