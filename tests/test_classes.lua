@@ -20,7 +20,7 @@ end
 local WEBSITE = {
 	{ "warlock/affliction", 20, 11288, "ranged", 59.95 },     -- Greater Magic Wand
 	{ "warlock/destruction", 20, 6540, "gear", 0.154 },       -- Willow Pants (armor only)
-	{ "shaman/elemental", 40, 4007, "gear", 7.168 },          -- Overlinked Chain Armor (mail at 40)
+	{ "shaman/elemental", 40, 4007, "gear", 5.376 },          -- Overlinked Chain Armor (mail at 40)
 	{ "paladin/holy", 40, 7922, "gear", 73.11 },              -- Steel Plate Helm (plate at 40)
 	{ "paladin/holy", 40, 4068, "oh", 105.003 },              -- Chief Brigadier Shield
 	{ "druid/balance", 60, 23197, "ranged", 0 },              -- Idol of the Moon: no stats (its effect isn't scored)

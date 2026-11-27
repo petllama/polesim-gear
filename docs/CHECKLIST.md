@@ -1,4 +1,10 @@
-# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution/Protection paladin) — PoleSim Gear 0.7.14 (section W in a dungeon group as a healer)
+# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution/Protection paladin) — PoleSim Gear 0.7.15 (section W in a dungeon group as a healer)
+
+**0.7.15 over 0.7.14:** new weights for Shadow, Discipline and Holy Priest, Retribution Paladin, Fury
+Warrior and Elemental Shaman. The sim now uses Forever's real mana regeneration (measured from player
+uploads), and a pull that goes wrong ends the way it does for real players: you escape (Psychic Scream,
+Fade, running away) instead of always fighting to the death. Stamina is no longer inflated by those
+deaths. The other specs get their new weights over the next days. No new files: `/reload` is enough.
 
 **0.7.14 over 0.7.13:** with recording on, the recorder also records dungeon group fights, but only
 while you are in a party inside a dungeon (nothing changes anywhere else): each pull's mobs (id, level,
