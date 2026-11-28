@@ -1,7 +1,9 @@
 # Tests on every push and pull request. On main, when the TOC's version has no release yet, build the
 # zip (tools/package.sh: luac, both test runners, git archive) and publish GitHub release v<version>
-# with it. So a release is: bump "## Version" in PoleSimGear.toc (+ its "**X over Y:**" notes in
-# docs/CHECKLIST.md), push to main.
+# with it, then upload the same zip to CurseForge (tools/publish_curseforge.py; needs the CF_API_TOKEN
+# secret and the CF_PROJECT_ID variable, skipped while CF_PROJECT_ID is unset). So a release is: bump
+# "## Version" in PoleSimGear.toc (+ its "**X over Y:**" notes in docs/CHECKLIST.md), push to main.
+# Run the workflow by hand with "curseforge" ticked to (re)upload the TOC's version to CurseForge only.
 name: test and release
 
 on:
@@ -9,6 +11,11 @@ on:
     branches: [main]
   pull_request:
   workflow_dispatch:
+    inputs:
+      curseforge:
+        description: Upload the TOC's version to CurseForge (even if GitHub already has its release)
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -56,3 +63,16 @@ jobs:
           tools/release-notes.sh "$V" > "$RUNNER_TEMP/notes.md"
           gh release create "v$V" "$RUNNER_TEMP/dist/PoleSimGear-$V.zip" \
             --title "PoleSim Gear $V" --notes-file "$RUNNER_TEMP/notes.md" --target "$GITHUB_SHA"
+
+      - name: CurseForge
+        if: >-
+          github.event_name != 'pull_request' && github.ref == 'refs/heads/main' &&
+          (steps.v.outputs.released == 'false' || inputs.curseforge)
+        env:
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CF_PROJECT_ID: ${{ vars.CF_PROJECT_ID }}
+          V: ${{ steps.v.outputs.version }}
+        run: |
+          if [ -z "$CF_PROJECT_ID" ]; then echo "CF_PROJECT_ID not set: skipping CurseForge"; exit 0; fi
+          [ -n "$CF_API_TOKEN" ] || { echo "::error::CF_API_TOKEN secret missing"; exit 1; }
+          python3 tools/publish_curseforge.py "$RUNNER_TEMP/dist/PoleSimGear-$V.zip" "$V" release

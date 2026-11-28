@@ -207,6 +207,7 @@ return {
 		T.eq(#old.ns.printed, 1, "one chat line")
 		T.ok(old.ns.printed[1]:find("version 0.7.9 is out (you have 0.7.8)", 1, true), old.ns.printed[1])
 		T.ok(old.ns.printed[1]:find("github.com/petllama/polesim-gear/releases/latest", 1, true))
+		T.ok(old.ns.printed[1]:find("CurseForge app", 1, true), "names CurseForge too")
 		T.eq(#a.ns.printed, 0); T.eq(a.ns.Update.Known(), nil, "the newer ones learn nothing")
 		T.eq(old.ns.Update.Line(), "Update available: 0.7.9"); T.eq(a.ns.Update.Line(), nil)
 	end,

@@ -280,7 +280,7 @@ end
 function Update.NoticeText()
 	local v = Update.Known()
 	if not v then return nil end
-	return string.format("version %s is out (you have %s): download it from %s", v, mine(), Update.RELEASES)
+	return string.format("version %s is out (you have %s): update it in the CurseForge app or from %s", v, mine(), Update.RELEASES)
 end
 
 -- The window's line under the title, or nil.

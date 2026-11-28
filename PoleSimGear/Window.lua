@@ -233,7 +233,7 @@ local function create()
 		if not (U and U.Known()) then return end
 		GameTooltip:SetOwner(self, "ANCHOR_BOTTOMRIGHT")
 		GameTooltip:AddLine(U.Line(), 1, 1, 1)
-		GameTooltip:AddLine("Another player runs a newer PoleSim Gear. Download it from " .. U.RELEASES
+		GameTooltip:AddLine("Another player runs a newer PoleSim Gear. Update it in the CurseForge app or from " .. U.RELEASES
 			.. " (a new version may need a full game restart). /psg version says more.", 0.8, 0.8, 0.8, true)
 		GameTooltip:Show()
 	end)
