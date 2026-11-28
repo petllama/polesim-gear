@@ -11,6 +11,13 @@ Drift.THROTTLE = 5
 Drift.MAX_LINES = 15
 Drift.client = nil -- tests set a fake client; nil = ns.Live.Client
 local EPS = { dps = 0.06, armor = 0.5 } -- client DPS is rounded; anything else: 0.011 (2-decimal %)
+-- C_Item.GetItemStats on Forever leaves out the school spell damage of the "of ... Wrath" random
+-- suffixes (Arcane/Fiery/Frozen/Holy/Nature's/Shadow Wrath), although the game applies it: a recorded
+-- character sheet showed Frost spell damage +14 = Azure Silk Hood (spFrost 10) + Pagan Cape of Frozen
+-- Wrath (spFrost 4) while the client reported no frost stat for the cape. So a school key that comes
+-- from the link's suffix and that the client does not report is the client being silent, not drift;
+-- a different value it does report still is.
+local SILENT_SUFFIX = { spArcane = true, spFire = true, spFrost = true, spHoly = true, spNature = true, spShadow = true }
 
 local function num(v)
 	return string.format("%g", ns.Score.Round(v, 2))
@@ -31,11 +38,19 @@ function Drift.Diff(link, client)
 		if next(rec.s) or (rec.ar or 0) > 0 or (rec.dps or 0) > 0 then return "pending" end
 		return nil
 	end
-	local live, armor, dps = ns.Live.Stats(t, rec)
+	local live, armor, dps, filled = ns.Live.Stats(t, rec)
 	live.armor, live.dps = armor, dps
-	local inst = ns.Score.Instance(rec, ns.Live.Bonus(link, rec))
+	local bonus = ns.Live.Bonus(link, rec)
+	local inst = ns.Score.Instance(rec, bonus)
 	local shipped = {}
 	for k, v in pairs(inst.stats) do shipped[k] = v end
+	if bonus then
+		local base = ns.Score.Instance(rec).stats
+		for k in pairs(SILENT_SUFFIX) do
+			local fromSuffix = (shipped[k] or 0) - (base[k] or 0)
+			if fromSuffix > 0 and (live[k] == nil or filled[k]) then shipped[k] = base[k] end
+		end
+	end
 	shipped.armor, shipped.dps = inst.armor or 0, inst.dps or 0
 	local keys, seen = {}, {}
 	for _, src in ipairs({ shipped, live }) do

@@ -75,6 +75,33 @@ return {
 		T.eq(D.Diff(eagle, client({ [eagle] = { loc = "INVTYPE_WEAPON", stats = { ITEM_MOD_INTELLECT_SHORT = 1,
 			ITEM_MOD_STAMINA_SHORT = 1, ITEM_MOD_DAMAGE_PER_SECOND_SHORT = 5.94 } } })), nil, "of the Eagle")
 	end,
+	-- The client's GetItemStats leaves out an "of ... Wrath" suffix's school spell damage (applied in game:
+	-- a character sheet's Frost damage counted the cape's +4): no frost key = silent, not drift. A
+	-- different value it does report, or a base stat it leaves out, still is.
+	wrath_suffix = function()
+		local ns = T.addon(FILES)
+		local D = ns.Drift
+		local link = "item:14161" .. (":"):rep(12) .. "1:12758" -- Pagan Cape of Frozen Wrath: spFrost 4, armor 16
+		local function diff(stats) return D.Diff(link, client({ [link] = { loc = "INVTYPE_CLOAK", stats = stats } })) end
+		T.eq(diff({ RESISTANCE0_NAME = 16 }), nil, "no frost key: the client is silent")
+		T.eq(diff({ RESISTANCE0_NAME = 16, ITEM_MOD_FROST_SPELL_DAMAGE_DONE_SHORT = 4 }), nil, "reported and equal")
+		T.eq(D.Text(diff({ RESISTANCE0_NAME = 16, ITEM_MOD_FROST_SPELL_DAMAGE_DONE_SHORT = 6 })), "spFrost 4 -> 6")
+		T.eq(D.Text(diff({ RESISTANCE0_NAME = 16, ITEM_MOD_FIRE_SPELL_DAMAGE_DONE_SHORT = 4 })), "spFire 0 -> 4",
+			"another school reported: the family is the client's, frost stays silent")
+		-- the bare cape: nothing from a suffix, so a missing stat is drift as before
+		T.eq(D.Text(D.Diff("item:14161", client({ ["item:14161"] = { loc = "INVTYPE_CLOAK", stats = { RESISTANCE0_NAME = 16,
+			ITEM_MOD_FROST_SPELL_DAMAGE_DONE_SHORT = 4 } } }))), "spFrost 0 -> 4")
+		-- a base stat (not from the suffix) the client leaves out is still drift
+		local boots = {}
+		for k, v in pairs(BOOTS) do boots[k] = v end
+		boots.ITEM_MOD_SPIRIT_SHORT = nil
+		T.eq(D.Text(D.Diff("item:2033", client({ ["item:2033"] = { loc = "INVTYPE_FEET", stats = boots } }))), "spi 4 -> 0")
+		-- a non-school suffix stat the client leaves out is still drift (of the Owl: int + spi)
+		local owl = "item:14161" .. (":"):rep(12) .. "1:12720"
+		local inst = ns.Score.Instance(ns.Items.Get(14161), 12720)
+		T.ok(next(inst.stats), "owl has stats")
+		T.ok(D.Diff(owl, client({ [owl] = { loc = "INVTYPE_CLOAK", stats = { RESISTANCE0_NAME = 16 } } })), "owl stats missing")
+	end,
 	-- /psg drift: worn + bags (each link once), a compact line per item, 'no differences', items not
 	-- loaded are requested and counted; /psg drift <id> checks one; runs at most every few seconds
 	command = function()
