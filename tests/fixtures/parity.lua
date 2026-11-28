@@ -3755,1001 +3755,1001 @@ R	warlock/affliction	60	19557	0	mh	1.23	sta:3:sta:0.41:1.23
 R	warlock/affliction	60	254111	0	gear	5.546	sta:13:sta:0.41:5.33,armor:54:armor:0.004:0.216
 R	warlock/affliction	60	280082	0	mh	74.10000000000001	hit:1.5:spellHit:1:1.5,sp:66:sp:1.1:72.6
 R	warlock/demonology	12	25	0	mh	0.0	
-R	warlock/demonology	12	1315	0	gear	2.95	sta:10:sta:0.1:1,spi:15:spi:0.13:1.95
+R	warlock/demonology	12	1315	0	gear	4.319999999999999	sta:10:sta:0.072:0.72,spi:15:spi:0.24:3.6
 R	warlock/demonology	12	2140	0	mh	0.0	
-R	warlock/demonology	12	2140	12718	mh	0.22	int:1:int:0.12:0.12,sta:1:sta:0.1:0.1
-R	warlock/demonology	12	2140	12917	mh	5.12	sp:5:sp:1:5,int:1:int:0.12:0.12
+R	warlock/demonology	12	2140	12718	mh	0.16099999999999998	int:1:int:0.089:0.089,sta:1:sta:0.072:0.072
+R	warlock/demonology	12	2140	12917	mh	5.089	sp:5:sp:1:5,int:1:int:0.089:0.089
 R	warlock/demonology	12	2225	0	mh	0.0	
-R	warlock/demonology	12	2614	0	gear	0.145	armor:29:armor:0.005:0.145
+R	warlock/demonology	12	2614	0	gear	0.0725	armor:29:armor:0.0025:0.072
 R	warlock/demonology	12	4023	0	mh	0.0	
 R	warlock/demonology	12	5079	0	gear	0.0	
-R	warlock/demonology	12	6540	0	gear	0.14	armor:28:armor:0.005:0.14
-R	warlock/demonology	12	6540	12718	gear	0.8	int:3:int:0.12:0.36,sta:3:sta:0.1:0.3,armor:28:armor:0.005:0.14
-R	warlock/demonology	12	6540	12719	gear	0.8300000000000001	spi:3:spi:0.13:0.39,sta:3:sta:0.1:0.3,armor:28:armor:0.005:0.14
-R	warlock/demonology	12	6540	12720	gear	0.89	int:3:int:0.12:0.36,spi:3:spi:0.13:0.39,armor:28:armor:0.005:0.14
-R	warlock/demonology	12	6540	12729	gear	0.74	int:5:int:0.12:0.6,armor:28:armor:0.005:0.14
-R	warlock/demonology	12	6540	12730	gear	0.79	spi:5:spi:0.13:0.65,armor:28:armor:0.005:0.14
-R	warlock/demonology	12	6540	12731	gear	0.64	sta:5:sta:0.1:0.5,armor:28:armor:0.005:0.14
-R	warlock/demonology	12	6540	12734	gear	6.14	sp:6:sp:1:6,armor:28:armor:0.005:0.14
-R	warlock/demonology	12	6540	12735	gear	4.14	spDmg:4:sp:1:4,armor:28:armor:0.005:0.14
-R	warlock/demonology	12	6540	12740	gear	0.44000000000000006	sta:3:sta:0.1:0.3,armor:28:armor:0.005:0.14
-R	warlock/demonology	12	6540	12741	gear	0.44000000000000006	sta:3:sta:0.1:0.3,armor:28:armor:0.005:0.14
-R	warlock/demonology	12	6540	12742	gear	0.44000000000000006	sta:3:sta:0.1:0.3,armor:28:armor:0.005:0.14
-R	warlock/demonology	12	6540	12743	gear	0.44000000000000006	sta:3:sta:0.1:0.3,armor:28:armor:0.005:0.14
-R	warlock/demonology	12	6540	12744	gear	0.44000000000000006	sta:3:sta:0.1:0.3,armor:28:armor:0.005:0.14
-R	warlock/demonology	12	6540	12745	gear	2.82	int:4:int:0.12:0.48,sta:2:sta:0.1:0.2,sp:2:sp:1:2,armor:28:armor:0.005:0.14
-R	warlock/demonology	12	6540	12756	gear	0.14	armor:28:armor:0.005:0.14
-R	warlock/demonology	12	6540	12757	gear	2.17	spFire:7:spFire:0.29:2.03,armor:28:armor:0.005:0.14
-R	warlock/demonology	12	6540	12758	gear	0.14	armor:28:armor:0.005:0.14
-R	warlock/demonology	12	6540	12759	gear	0.14	armor:28:armor:0.005:0.14
-R	warlock/demonology	12	6540	12761	gear	5.039999999999999	spShadow:7:spShadow:0.7:4.9,armor:28:armor:0.005:0.14
-R	warlock/demonology	12	7047	0	gear	7.08	spi:5:spi:0.13:0.65,spShadow:9:spShadow:0.7:6.3,armor:26:armor:0.005:0.13
-R	warlock/demonology	12	11187	0	gear	0.02	armor:4:armor:0.005:0.02
-R	warlock/demonology	12	11288	0	ranged	9.0	sp:2:sp:1:2,rdps:17.5:rdps:0.4:7
+R	warlock/demonology	12	6540	0	gear	0.07	armor:28:armor:0.0025:0.07
+R	warlock/demonology	12	6540	12718	gear	0.5529999999999999	int:3:int:0.089:0.267,sta:3:sta:0.072:0.216,armor:28:armor:0.0025:0.07
+R	warlock/demonology	12	6540	12719	gear	1.006	spi:3:spi:0.24:0.72,sta:3:sta:0.072:0.216,armor:28:armor:0.0025:0.07
+R	warlock/demonology	12	6540	12720	gear	1.057	int:3:int:0.089:0.267,spi:3:spi:0.24:0.72,armor:28:armor:0.0025:0.07
+R	warlock/demonology	12	6540	12729	gear	0.5149999999999999	int:5:int:0.089:0.445,armor:28:armor:0.0025:0.07
+R	warlock/demonology	12	6540	12730	gear	1.27	spi:5:spi:0.24:1.2,armor:28:armor:0.0025:0.07
+R	warlock/demonology	12	6540	12731	gear	0.43	sta:5:sta:0.072:0.36,armor:28:armor:0.0025:0.07
+R	warlock/demonology	12	6540	12734	gear	6.07	sp:6:sp:1:6,armor:28:armor:0.0025:0.07
+R	warlock/demonology	12	6540	12735	gear	4.07	spDmg:4:sp:1:4,armor:28:armor:0.0025:0.07
+R	warlock/demonology	12	6540	12740	gear	0.286	sta:3:sta:0.072:0.216,armor:28:armor:0.0025:0.07
+R	warlock/demonology	12	6540	12741	gear	0.286	sta:3:sta:0.072:0.216,armor:28:armor:0.0025:0.07
+R	warlock/demonology	12	6540	12742	gear	0.286	sta:3:sta:0.072:0.216,armor:28:armor:0.0025:0.07
+R	warlock/demonology	12	6540	12743	gear	0.286	sta:3:sta:0.072:0.216,armor:28:armor:0.0025:0.07
+R	warlock/demonology	12	6540	12744	gear	0.286	sta:3:sta:0.072:0.216,armor:28:armor:0.0025:0.07
+R	warlock/demonology	12	6540	12745	gear	2.57	int:4:int:0.089:0.356,sta:2:sta:0.072:0.144,sp:2:sp:1:2,armor:28:armor:0.0025:0.07
+R	warlock/demonology	12	6540	12756	gear	0.07	armor:28:armor:0.0025:0.07
+R	warlock/demonology	12	6540	12757	gear	2.45	spFire:7:spFire:0.34:2.38,armor:28:armor:0.0025:0.07
+R	warlock/demonology	12	6540	12758	gear	0.07	armor:28:armor:0.0025:0.07
+R	warlock/demonology	12	6540	12759	gear	0.07	armor:28:armor:0.0025:0.07
+R	warlock/demonology	12	6540	12761	gear	5.18	spShadow:7:spShadow:0.73:5.11,armor:28:armor:0.0025:0.07
+R	warlock/demonology	12	7047	0	gear	7.835000000000001	spi:5:spi:0.24:1.2,spShadow:9:spShadow:0.73:6.57,armor:26:armor:0.0025:0.065
+R	warlock/demonology	12	11187	0	gear	0.01	armor:4:armor:0.0025:0.01
+R	warlock/demonology	12	11288	0	ranged	7.074999999999999	sp:2:sp:1:2,rdps:17.5:rdps:0.29:5.075
 R	warlock/demonology	12	11994	0	gear	0.0	
-R	warlock/demonology	12	11994	12718	gear	0.66	int:3:int:0.12:0.36,sta:3:sta:0.1:0.3
-R	warlock/demonology	12	11994	12719	gear	0.6900000000000001	spi:3:spi:0.13:0.39,sta:3:sta:0.1:0.3
-R	warlock/demonology	12	11994	12720	gear	0.75	int:3:int:0.12:0.36,spi:3:spi:0.13:0.39
-R	warlock/demonology	12	11994	12721	gear	0.30000000000000004	sta:3:sta:0.1:0.3
-R	warlock/demonology	12	11994	12722	gear	0.30000000000000004	sta:3:sta:0.1:0.3
-R	warlock/demonology	12	11994	12723	gear	0.36	int:3:int:0.12:0.36
-R	warlock/demonology	12	11994	12724	gear	0.36	int:3:int:0.12:0.36
-R	warlock/demonology	12	11994	12725	gear	0.39	spi:3:spi:0.13:0.39
-R	warlock/demonology	12	11994	12726	gear	0.39	spi:3:spi:0.13:0.39
+R	warlock/demonology	12	11994	12718	gear	0.483	int:3:int:0.089:0.267,sta:3:sta:0.072:0.216
+R	warlock/demonology	12	11994	12719	gear	0.9359999999999999	spi:3:spi:0.24:0.72,sta:3:sta:0.072:0.216
+R	warlock/demonology	12	11994	12720	gear	0.987	int:3:int:0.089:0.267,spi:3:spi:0.24:0.72
+R	warlock/demonology	12	11994	12721	gear	0.21599999999999997	sta:3:sta:0.072:0.216
+R	warlock/demonology	12	11994	12722	gear	0.21599999999999997	sta:3:sta:0.072:0.216
+R	warlock/demonology	12	11994	12723	gear	0.267	int:3:int:0.089:0.267
+R	warlock/demonology	12	11994	12724	gear	0.267	int:3:int:0.089:0.267
+R	warlock/demonology	12	11994	12725	gear	0.72	spi:3:spi:0.24:0.72
+R	warlock/demonology	12	11994	12726	gear	0.72	spi:3:spi:0.24:0.72
 R	warlock/demonology	12	11994	12727	gear	0.0	
 R	warlock/demonology	12	11994	12728	gear	0.0	
-R	warlock/demonology	12	11994	12729	gear	0.6	int:5:int:0.12:0.6
-R	warlock/demonology	12	11994	12730	gear	0.65	spi:5:spi:0.13:0.65
-R	warlock/demonology	12	11994	12731	gear	0.5	sta:5:sta:0.1:0.5
+R	warlock/demonology	12	11994	12729	gear	0.44499999999999995	int:5:int:0.089:0.445
+R	warlock/demonology	12	11994	12730	gear	1.2	spi:5:spi:0.24:1.2
+R	warlock/demonology	12	11994	12731	gear	0.36	sta:5:sta:0.072:0.36
 R	warlock/demonology	12	11994	12732	gear	0.0	
 R	warlock/demonology	12	11994	12733	gear	0.0	
 R	warlock/demonology	12	11994	12737	gear	0.0	
-R	warlock/demonology	12	11994	12738	gear	0.2	mp5:2:mp5:0.1:0.2
+R	warlock/demonology	12	11994	12738	gear	0.4	mp5:2:mp5:0.2:0.4
 R	warlock/demonology	12	11994	12739	gear	0.0	
-R	warlock/demonology	12	11994	12740	gear	0.30000000000000004	sta:3:sta:0.1:0.3
-R	warlock/demonology	12	11994	12741	gear	0.30000000000000004	sta:3:sta:0.1:0.3
-R	warlock/demonology	12	11994	12742	gear	0.30000000000000004	sta:3:sta:0.1:0.3
-R	warlock/demonology	12	11994	12743	gear	0.30000000000000004	sta:3:sta:0.1:0.3
-R	warlock/demonology	12	11994	12744	gear	0.30000000000000004	sta:3:sta:0.1:0.3
-R	warlock/demonology	12	14122	0	gear	0.07	armor:14:armor:0.005:0.07
-R	warlock/demonology	12	14122	12718	gear	0.51	int:2:int:0.12:0.24,sta:2:sta:0.1:0.2,armor:14:armor:0.005:0.07
-R	warlock/demonology	12	14122	12719	gear	0.53	spi:2:spi:0.13:0.26,sta:2:sta:0.1:0.2,armor:14:armor:0.005:0.07
-R	warlock/demonology	12	14122	12720	gear	0.5700000000000001	int:2:int:0.12:0.24,spi:2:spi:0.13:0.26,armor:14:armor:0.005:0.07
-R	warlock/demonology	12	14122	12729	gear	0.43	int:3:int:0.12:0.36,armor:14:armor:0.005:0.07
-R	warlock/demonology	12	14122	12730	gear	0.46	spi:3:spi:0.13:0.39,armor:14:armor:0.005:0.07
-R	warlock/demonology	12	14122	12731	gear	0.37000000000000005	sta:3:sta:0.1:0.3,armor:14:armor:0.005:0.07
-R	warlock/demonology	12	14122	12734	gear	4.07	sp:4:sp:1:4,armor:14:armor:0.005:0.07
-R	warlock/demonology	12	14122	12735	gear	2.07	spDmg:2:sp:1:2,armor:14:armor:0.005:0.07
-R	warlock/demonology	12	14122	12740	gear	0.27	sta:2:sta:0.1:0.2,armor:14:armor:0.005:0.07
-R	warlock/demonology	12	14122	12741	gear	0.27	sta:2:sta:0.1:0.2,armor:14:armor:0.005:0.07
-R	warlock/demonology	12	14122	12742	gear	0.27	sta:2:sta:0.1:0.2,armor:14:armor:0.005:0.07
-R	warlock/demonology	12	14122	12743	gear	0.27	sta:2:sta:0.1:0.2,armor:14:armor:0.005:0.07
-R	warlock/demonology	12	14122	12744	gear	0.27	sta:2:sta:0.1:0.2,armor:14:armor:0.005:0.07
-R	warlock/demonology	12	14122	12745	gear	1.41	int:2:int:0.12:0.24,sta:1:sta:0.1:0.1,sp:1:sp:1:1,armor:14:armor:0.005:0.07
-R	warlock/demonology	12	14122	12756	gear	0.07	armor:14:armor:0.005:0.07
-R	warlock/demonology	12	14122	12757	gear	1.23	spFire:4:spFire:0.29:1.16,armor:14:armor:0.005:0.07
-R	warlock/demonology	12	14122	12758	gear	0.07	armor:14:armor:0.005:0.07
-R	warlock/demonology	12	14122	12759	gear	0.07	armor:14:armor:0.005:0.07
-R	warlock/demonology	12	14122	12761	gear	2.8699999999999997	spShadow:4:spShadow:0.7:2.8,armor:14:armor:0.005:0.07
-R	warlock/demonology	12	14340	0	gear	2.3400000000000003	sta:19:sta:0.1:1.9,armor:88:armor:0.005:0.44
-R	warlock/demonology	12	14673	0	gear	0.67	sta:5:sta:0.1:0.5,armor:34:armor:0.005:0.17
-R	warlock/demonology	12	15945	0	oh	0.46	sta:2:sta:0.1:0.2,spi:2:spi:0.13:0.26
-R	warlock/demonology	12	19557	0	mh	0.30000000000000004	sta:3:sta:0.1:0.3
-R	warlock/demonology	12	254111	0	gear	8.45	int:9:int:0.12:1.08,sta:13:sta:0.1:1.3,spFire:20:spFire:0.29:5.8,armor:54:armor:0.005:0.27
-R	warlock/demonology	12	280082	0	mh	71.34	int:15:int:0.12:1.8,hit:1.5:spellHit:0.54:0.81,spi:21:spi:0.13:2.73,sp:66:sp:1:66
+R	warlock/demonology	12	11994	12740	gear	0.21599999999999997	sta:3:sta:0.072:0.216
+R	warlock/demonology	12	11994	12741	gear	0.21599999999999997	sta:3:sta:0.072:0.216
+R	warlock/demonology	12	11994	12742	gear	0.21599999999999997	sta:3:sta:0.072:0.216
+R	warlock/demonology	12	11994	12743	gear	0.21599999999999997	sta:3:sta:0.072:0.216
+R	warlock/demonology	12	11994	12744	gear	0.21599999999999997	sta:3:sta:0.072:0.216
+R	warlock/demonology	12	14122	0	gear	0.035	armor:14:armor:0.0025:0.035
+R	warlock/demonology	12	14122	12718	gear	0.357	int:2:int:0.089:0.178,sta:2:sta:0.072:0.144,armor:14:armor:0.0025:0.035
+R	warlock/demonology	12	14122	12719	gear	0.659	spi:2:spi:0.24:0.48,sta:2:sta:0.072:0.144,armor:14:armor:0.0025:0.035
+R	warlock/demonology	12	14122	12720	gear	0.693	int:2:int:0.089:0.178,spi:2:spi:0.24:0.48,armor:14:armor:0.0025:0.035
+R	warlock/demonology	12	14122	12729	gear	0.30200000000000005	int:3:int:0.089:0.267,armor:14:armor:0.0025:0.035
+R	warlock/demonology	12	14122	12730	gear	0.755	spi:3:spi:0.24:0.72,armor:14:armor:0.0025:0.035
+R	warlock/demonology	12	14122	12731	gear	0.251	sta:3:sta:0.072:0.216,armor:14:armor:0.0025:0.035
+R	warlock/demonology	12	14122	12734	gear	4.035	sp:4:sp:1:4,armor:14:armor:0.0025:0.035
+R	warlock/demonology	12	14122	12735	gear	2.035	spDmg:2:sp:1:2,armor:14:armor:0.0025:0.035
+R	warlock/demonology	12	14122	12740	gear	0.179	sta:2:sta:0.072:0.144,armor:14:armor:0.0025:0.035
+R	warlock/demonology	12	14122	12741	gear	0.179	sta:2:sta:0.072:0.144,armor:14:armor:0.0025:0.035
+R	warlock/demonology	12	14122	12742	gear	0.179	sta:2:sta:0.072:0.144,armor:14:armor:0.0025:0.035
+R	warlock/demonology	12	14122	12743	gear	0.179	sta:2:sta:0.072:0.144,armor:14:armor:0.0025:0.035
+R	warlock/demonology	12	14122	12744	gear	0.179	sta:2:sta:0.072:0.144,armor:14:armor:0.0025:0.035
+R	warlock/demonology	12	14122	12745	gear	1.285	int:2:int:0.089:0.178,sta:1:sta:0.072:0.072,sp:1:sp:1:1,armor:14:armor:0.0025:0.035
+R	warlock/demonology	12	14122	12756	gear	0.035	armor:14:armor:0.0025:0.035
+R	warlock/demonology	12	14122	12757	gear	1.395	spFire:4:spFire:0.34:1.36,armor:14:armor:0.0025:0.035
+R	warlock/demonology	12	14122	12758	gear	0.035	armor:14:armor:0.0025:0.035
+R	warlock/demonology	12	14122	12759	gear	0.035	armor:14:armor:0.0025:0.035
+R	warlock/demonology	12	14122	12761	gear	2.955	spShadow:4:spShadow:0.73:2.92,armor:14:armor:0.0025:0.035
+R	warlock/demonology	12	14340	0	gear	1.5879999999999999	sta:19:sta:0.072:1.368,armor:88:armor:0.0025:0.22
+R	warlock/demonology	12	14673	0	gear	0.445	sta:5:sta:0.072:0.36,armor:34:armor:0.0025:0.085
+R	warlock/demonology	12	15945	0	oh	0.624	sta:2:sta:0.072:0.144,spi:2:spi:0.24:0.48
+R	warlock/demonology	12	19557	0	mh	0.21599999999999997	sta:3:sta:0.072:0.216
+R	warlock/demonology	12	254111	0	gear	8.672	int:9:int:0.089:0.801,sta:13:sta:0.072:0.936,spFire:20:spFire:0.34:6.8,armor:54:armor:0.0025:0.135
+R	warlock/demonology	12	280082	0	mh	73.125	int:15:int:0.089:1.335,hit:1.5:spellHit:0.5:0.75,spi:21:spi:0.24:5.04,sp:66:sp:1:66
 R	warlock/demonology	25	25	0	mh	0.0	
-R	warlock/demonology	25	1315	0	gear	3.6499999999999995	sta:10:sta:0.095:0.95,spi:15:spi:0.18:2.7
+R	warlock/demonology	25	1315	0	gear	3.15	sta:10:sta:0.09:0.9,spi:15:spi:0.15:2.25
 R	warlock/demonology	25	2140	0	mh	0.0	
-R	warlock/demonology	25	2140	12718	mh	0.095	sta:1:sta:0.095:0.095
-R	warlock/demonology	25	2140	12917	mh	5.0	sp:5:sp:1:5
+R	warlock/demonology	25	2140	12718	mh	0.12	int:1:int:0.03:0.03,sta:1:sta:0.09:0.09
+R	warlock/demonology	25	2140	12917	mh	5.03	sp:5:sp:1:5,int:1:int:0.03:0.03
 R	warlock/demonology	25	2225	0	mh	0.0	
-R	warlock/demonology	25	2614	0	gear	0.116	armor:29:armor:0.004:0.116
+R	warlock/demonology	25	2614	0	gear	0.13049999999999998	armor:29:armor:0.0045:0.13
 R	warlock/demonology	25	4023	0	mh	0.0	
 R	warlock/demonology	25	5079	0	gear	0.0	
-R	warlock/demonology	25	6540	0	gear	0.112	armor:28:armor:0.004:0.112
-R	warlock/demonology	25	6540	12718	gear	0.397	sta:3:sta:0.095:0.285,armor:28:armor:0.004:0.112
-R	warlock/demonology	25	6540	12719	gear	0.937	spi:3:spi:0.18:0.54,sta:3:sta:0.095:0.285,armor:28:armor:0.004:0.112
-R	warlock/demonology	25	6540	12720	gear	0.652	spi:3:spi:0.18:0.54,armor:28:armor:0.004:0.112
-R	warlock/demonology	25	6540	12729	gear	0.112	armor:28:armor:0.004:0.112
-R	warlock/demonology	25	6540	12730	gear	1.012	spi:5:spi:0.18:0.9,armor:28:armor:0.004:0.112
-R	warlock/demonology	25	6540	12731	gear	0.587	sta:5:sta:0.095:0.475,armor:28:armor:0.004:0.112
-R	warlock/demonology	25	6540	12734	gear	6.112	sp:6:sp:1:6,armor:28:armor:0.004:0.112
-R	warlock/demonology	25	6540	12735	gear	4.112	spDmg:4:sp:1:4,armor:28:armor:0.004:0.112
-R	warlock/demonology	25	6540	12740	gear	0.397	sta:3:sta:0.095:0.285,armor:28:armor:0.004:0.112
-R	warlock/demonology	25	6540	12741	gear	0.397	sta:3:sta:0.095:0.285,armor:28:armor:0.004:0.112
-R	warlock/demonology	25	6540	12742	gear	0.397	sta:3:sta:0.095:0.285,armor:28:armor:0.004:0.112
-R	warlock/demonology	25	6540	12743	gear	0.397	sta:3:sta:0.095:0.285,armor:28:armor:0.004:0.112
-R	warlock/demonology	25	6540	12744	gear	0.397	sta:3:sta:0.095:0.285,armor:28:armor:0.004:0.112
-R	warlock/demonology	25	6540	12745	gear	2.302	sta:2:sta:0.095:0.19,sp:2:sp:1:2,armor:28:armor:0.004:0.112
-R	warlock/demonology	25	6540	12756	gear	0.112	armor:28:armor:0.004:0.112
-R	warlock/demonology	25	6540	12757	gear	2.842	spFire:7:spFire:0.39:2.73,armor:28:armor:0.004:0.112
-R	warlock/demonology	25	6540	12758	gear	0.112	armor:28:armor:0.004:0.112
-R	warlock/demonology	25	6540	12759	gear	0.112	armor:28:armor:0.004:0.112
-R	warlock/demonology	25	6540	12761	gear	4.312	spShadow:7:spShadow:0.6:4.2,armor:28:armor:0.004:0.112
-R	warlock/demonology	25	7047	0	gear	6.403999999999999	spi:5:spi:0.18:0.9,spShadow:9:spShadow:0.6:5.4,armor:26:armor:0.004:0.104
-R	warlock/demonology	25	11187	0	gear	0.016	armor:4:armor:0.004:0.016
-R	warlock/demonology	25	11288	0	ranged	6.9	sp:2:sp:1:2,rdps:17.5:rdps:0.28:4.9
+R	warlock/demonology	25	6540	0	gear	0.126	armor:28:armor:0.0045:0.126
+R	warlock/demonology	25	6540	12718	gear	0.486	int:3:int:0.03:0.09,sta:3:sta:0.09:0.27,armor:28:armor:0.0045:0.126
+R	warlock/demonology	25	6540	12719	gear	0.846	spi:3:spi:0.15:0.45,sta:3:sta:0.09:0.27,armor:28:armor:0.0045:0.126
+R	warlock/demonology	25	6540	12720	gear	0.6659999999999999	int:3:int:0.03:0.09,spi:3:spi:0.15:0.45,armor:28:armor:0.0045:0.126
+R	warlock/demonology	25	6540	12729	gear	0.276	int:5:int:0.03:0.15,armor:28:armor:0.0045:0.126
+R	warlock/demonology	25	6540	12730	gear	0.876	spi:5:spi:0.15:0.75,armor:28:armor:0.0045:0.126
+R	warlock/demonology	25	6540	12731	gear	0.576	sta:5:sta:0.09:0.45,armor:28:armor:0.0045:0.126
+R	warlock/demonology	25	6540	12734	gear	6.126	sp:6:sp:1:6,armor:28:armor:0.0045:0.126
+R	warlock/demonology	25	6540	12735	gear	4.126	spDmg:4:sp:1:4,armor:28:armor:0.0045:0.126
+R	warlock/demonology	25	6540	12740	gear	0.396	sta:3:sta:0.09:0.27,armor:28:armor:0.0045:0.126
+R	warlock/demonology	25	6540	12741	gear	0.396	sta:3:sta:0.09:0.27,armor:28:armor:0.0045:0.126
+R	warlock/demonology	25	6540	12742	gear	0.396	sta:3:sta:0.09:0.27,armor:28:armor:0.0045:0.126
+R	warlock/demonology	25	6540	12743	gear	0.396	sta:3:sta:0.09:0.27,armor:28:armor:0.0045:0.126
+R	warlock/demonology	25	6540	12744	gear	0.396	sta:3:sta:0.09:0.27,armor:28:armor:0.0045:0.126
+R	warlock/demonology	25	6540	12745	gear	2.4259999999999997	int:4:int:0.03:0.12,sta:2:sta:0.09:0.18,sp:2:sp:1:2,armor:28:armor:0.0045:0.126
+R	warlock/demonology	25	6540	12756	gear	0.126	armor:28:armor:0.0045:0.126
+R	warlock/demonology	25	6540	12757	gear	2.366	spFire:7:spFire:0.32:2.24,armor:28:armor:0.0045:0.126
+R	warlock/demonology	25	6540	12758	gear	0.126	armor:28:armor:0.0045:0.126
+R	warlock/demonology	25	6540	12759	gear	0.126	armor:28:armor:0.0045:0.126
+R	warlock/demonology	25	6540	12761	gear	5.026	spShadow:7:spShadow:0.7:4.9,armor:28:armor:0.0045:0.126
+R	warlock/demonology	25	7047	0	gear	7.167	spi:5:spi:0.15:0.75,spShadow:9:spShadow:0.7:6.3,armor:26:armor:0.0045:0.117
+R	warlock/demonology	25	11187	0	gear	0.018	armor:4:armor:0.0045:0.018
+R	warlock/demonology	25	11288	0	ranged	8.3	sp:2:sp:1:2,rdps:17.5:rdps:0.36:6.3
 R	warlock/demonology	25	11994	0	gear	0.0	
-R	warlock/demonology	25	11994	12718	gear	0.28500000000000003	sta:3:sta:0.095:0.285
-R	warlock/demonology	25	11994	12719	gear	0.8250000000000001	spi:3:spi:0.18:0.54,sta:3:sta:0.095:0.285
-R	warlock/demonology	25	11994	12720	gear	0.54	spi:3:spi:0.18:0.54
-R	warlock/demonology	25	11994	12721	gear	0.28500000000000003	sta:3:sta:0.095:0.285
-R	warlock/demonology	25	11994	12722	gear	0.28500000000000003	sta:3:sta:0.095:0.285
-R	warlock/demonology	25	11994	12723	gear	0.0	
-R	warlock/demonology	25	11994	12724	gear	0.0	
-R	warlock/demonology	25	11994	12725	gear	0.54	spi:3:spi:0.18:0.54
-R	warlock/demonology	25	11994	12726	gear	0.54	spi:3:spi:0.18:0.54
+R	warlock/demonology	25	11994	12718	gear	0.36	int:3:int:0.03:0.09,sta:3:sta:0.09:0.27
+R	warlock/demonology	25	11994	12719	gear	0.72	spi:3:spi:0.15:0.45,sta:3:sta:0.09:0.27
+R	warlock/demonology	25	11994	12720	gear	0.5399999999999999	int:3:int:0.03:0.09,spi:3:spi:0.15:0.45
+R	warlock/demonology	25	11994	12721	gear	0.27	sta:3:sta:0.09:0.27
+R	warlock/demonology	25	11994	12722	gear	0.27	sta:3:sta:0.09:0.27
+R	warlock/demonology	25	11994	12723	gear	0.09	int:3:int:0.03:0.09
+R	warlock/demonology	25	11994	12724	gear	0.09	int:3:int:0.03:0.09
+R	warlock/demonology	25	11994	12725	gear	0.44999999999999996	spi:3:spi:0.15:0.45
+R	warlock/demonology	25	11994	12726	gear	0.44999999999999996	spi:3:spi:0.15:0.45
 R	warlock/demonology	25	11994	12727	gear	0.0	
 R	warlock/demonology	25	11994	12728	gear	0.0	
-R	warlock/demonology	25	11994	12729	gear	0.0	
-R	warlock/demonology	25	11994	12730	gear	0.8999999999999999	spi:5:spi:0.18:0.9
-R	warlock/demonology	25	11994	12731	gear	0.475	sta:5:sta:0.095:0.475
+R	warlock/demonology	25	11994	12729	gear	0.15	int:5:int:0.03:0.15
+R	warlock/demonology	25	11994	12730	gear	0.75	spi:5:spi:0.15:0.75
+R	warlock/demonology	25	11994	12731	gear	0.44999999999999996	sta:5:sta:0.09:0.45
 R	warlock/demonology	25	11994	12732	gear	0.0	
 R	warlock/demonology	25	11994	12733	gear	0.0	
 R	warlock/demonology	25	11994	12737	gear	0.0	
-R	warlock/demonology	25	11994	12738	gear	0.26	mp5:2:mp5:0.13:0.26
+R	warlock/demonology	25	11994	12738	gear	0.148	mp5:2:mp5:0.074:0.148
 R	warlock/demonology	25	11994	12739	gear	0.0	
-R	warlock/demonology	25	11994	12740	gear	0.28500000000000003	sta:3:sta:0.095:0.285
-R	warlock/demonology	25	11994	12741	gear	0.28500000000000003	sta:3:sta:0.095:0.285
-R	warlock/demonology	25	11994	12742	gear	0.28500000000000003	sta:3:sta:0.095:0.285
-R	warlock/demonology	25	11994	12743	gear	0.28500000000000003	sta:3:sta:0.095:0.285
-R	warlock/demonology	25	11994	12744	gear	0.28500000000000003	sta:3:sta:0.095:0.285
-R	warlock/demonology	25	14122	0	gear	0.056	armor:14:armor:0.004:0.056
-R	warlock/demonology	25	14122	12718	gear	0.246	sta:2:sta:0.095:0.19,armor:14:armor:0.004:0.056
-R	warlock/demonology	25	14122	12719	gear	0.6060000000000001	spi:2:spi:0.18:0.36,sta:2:sta:0.095:0.19,armor:14:armor:0.004:0.056
-R	warlock/demonology	25	14122	12720	gear	0.416	spi:2:spi:0.18:0.36,armor:14:armor:0.004:0.056
-R	warlock/demonology	25	14122	12729	gear	0.056	armor:14:armor:0.004:0.056
-R	warlock/demonology	25	14122	12730	gear	0.5960000000000001	spi:3:spi:0.18:0.54,armor:14:armor:0.004:0.056
-R	warlock/demonology	25	14122	12731	gear	0.341	sta:3:sta:0.095:0.285,armor:14:armor:0.004:0.056
-R	warlock/demonology	25	14122	12734	gear	4.056	sp:4:sp:1:4,armor:14:armor:0.004:0.056
-R	warlock/demonology	25	14122	12735	gear	2.056	spDmg:2:sp:1:2,armor:14:armor:0.004:0.056
-R	warlock/demonology	25	14122	12740	gear	0.246	sta:2:sta:0.095:0.19,armor:14:armor:0.004:0.056
-R	warlock/demonology	25	14122	12741	gear	0.246	sta:2:sta:0.095:0.19,armor:14:armor:0.004:0.056
-R	warlock/demonology	25	14122	12742	gear	0.246	sta:2:sta:0.095:0.19,armor:14:armor:0.004:0.056
-R	warlock/demonology	25	14122	12743	gear	0.246	sta:2:sta:0.095:0.19,armor:14:armor:0.004:0.056
-R	warlock/demonology	25	14122	12744	gear	0.246	sta:2:sta:0.095:0.19,armor:14:armor:0.004:0.056
-R	warlock/demonology	25	14122	12745	gear	1.151	sta:1:sta:0.095:0.095,sp:1:sp:1:1,armor:14:armor:0.004:0.056
-R	warlock/demonology	25	14122	12756	gear	0.056	armor:14:armor:0.004:0.056
-R	warlock/demonology	25	14122	12757	gear	1.616	spFire:4:spFire:0.39:1.56,armor:14:armor:0.004:0.056
-R	warlock/demonology	25	14122	12758	gear	0.056	armor:14:armor:0.004:0.056
-R	warlock/demonology	25	14122	12759	gear	0.056	armor:14:armor:0.004:0.056
-R	warlock/demonology	25	14122	12761	gear	2.456	spShadow:4:spShadow:0.6:2.4,armor:14:armor:0.004:0.056
-R	warlock/demonology	25	14340	0	gear	2.157	sta:19:sta:0.095:1.805,armor:88:armor:0.004:0.352
-R	warlock/demonology	25	14673	0	gear	0.611	sta:5:sta:0.095:0.475,armor:34:armor:0.004:0.136
-R	warlock/demonology	25	15945	0	oh	0.55	sta:2:sta:0.095:0.19,spi:2:spi:0.18:0.36
-R	warlock/demonology	25	19557	0	mh	0.28500000000000003	sta:3:sta:0.095:0.285
-R	warlock/demonology	25	254111	0	gear	9.251	sta:13:sta:0.095:1.235,spFire:20:spFire:0.39:7.8,armor:54:armor:0.004:0.216
-R	warlock/demonology	25	280082	0	mh	70.575	hit:1.5:spellHit:0.53:0.795,spi:21:spi:0.18:3.78,sp:66:sp:1:66
+R	warlock/demonology	25	11994	12740	gear	0.27	sta:3:sta:0.09:0.27
+R	warlock/demonology	25	11994	12741	gear	0.27	sta:3:sta:0.09:0.27
+R	warlock/demonology	25	11994	12742	gear	0.27	sta:3:sta:0.09:0.27
+R	warlock/demonology	25	11994	12743	gear	0.27	sta:3:sta:0.09:0.27
+R	warlock/demonology	25	11994	12744	gear	0.27	sta:3:sta:0.09:0.27
+R	warlock/demonology	25	14122	0	gear	0.063	armor:14:armor:0.0045:0.063
+R	warlock/demonology	25	14122	12718	gear	0.303	int:2:int:0.03:0.06,sta:2:sta:0.09:0.18,armor:14:armor:0.0045:0.063
+R	warlock/demonology	25	14122	12719	gear	0.5429999999999999	spi:2:spi:0.15:0.3,sta:2:sta:0.09:0.18,armor:14:armor:0.0045:0.063
+R	warlock/demonology	25	14122	12720	gear	0.423	int:2:int:0.03:0.06,spi:2:spi:0.15:0.3,armor:14:armor:0.0045:0.063
+R	warlock/demonology	25	14122	12729	gear	0.153	int:3:int:0.03:0.09,armor:14:armor:0.0045:0.063
+R	warlock/demonology	25	14122	12730	gear	0.5129999999999999	spi:3:spi:0.15:0.45,armor:14:armor:0.0045:0.063
+R	warlock/demonology	25	14122	12731	gear	0.333	sta:3:sta:0.09:0.27,armor:14:armor:0.0045:0.063
+R	warlock/demonology	25	14122	12734	gear	4.063	sp:4:sp:1:4,armor:14:armor:0.0045:0.063
+R	warlock/demonology	25	14122	12735	gear	2.063	spDmg:2:sp:1:2,armor:14:armor:0.0045:0.063
+R	warlock/demonology	25	14122	12740	gear	0.243	sta:2:sta:0.09:0.18,armor:14:armor:0.0045:0.063
+R	warlock/demonology	25	14122	12741	gear	0.243	sta:2:sta:0.09:0.18,armor:14:armor:0.0045:0.063
+R	warlock/demonology	25	14122	12742	gear	0.243	sta:2:sta:0.09:0.18,armor:14:armor:0.0045:0.063
+R	warlock/demonology	25	14122	12743	gear	0.243	sta:2:sta:0.09:0.18,armor:14:armor:0.0045:0.063
+R	warlock/demonology	25	14122	12744	gear	0.243	sta:2:sta:0.09:0.18,armor:14:armor:0.0045:0.063
+R	warlock/demonology	25	14122	12745	gear	1.2129999999999999	int:2:int:0.03:0.06,sta:1:sta:0.09:0.09,sp:1:sp:1:1,armor:14:armor:0.0045:0.063
+R	warlock/demonology	25	14122	12756	gear	0.063	armor:14:armor:0.0045:0.063
+R	warlock/demonology	25	14122	12757	gear	1.343	spFire:4:spFire:0.32:1.28,armor:14:armor:0.0045:0.063
+R	warlock/demonology	25	14122	12758	gear	0.063	armor:14:armor:0.0045:0.063
+R	warlock/demonology	25	14122	12759	gear	0.063	armor:14:armor:0.0045:0.063
+R	warlock/demonology	25	14122	12761	gear	2.863	spShadow:4:spShadow:0.7:2.8,armor:14:armor:0.0045:0.063
+R	warlock/demonology	25	14340	0	gear	2.106	sta:19:sta:0.09:1.71,armor:88:armor:0.0045:0.396
+R	warlock/demonology	25	14673	0	gear	0.603	sta:5:sta:0.09:0.45,armor:34:armor:0.0045:0.153
+R	warlock/demonology	25	15945	0	oh	0.48	sta:2:sta:0.09:0.18,spi:2:spi:0.15:0.3
+R	warlock/demonology	25	19557	0	mh	0.27	sta:3:sta:0.09:0.27
+R	warlock/demonology	25	254111	0	gear	8.083	int:9:int:0.03:0.27,sta:13:sta:0.09:1.17,spFire:20:spFire:0.32:6.4,armor:54:armor:0.0045:0.243
+R	warlock/demonology	25	280082	0	mh	70.605	int:15:int:0.03:0.45,hit:1.5:spellHit:0.67:1.005,spi:21:spi:0.15:3.15,sp:66:sp:1:66
 R	warlock/demonology	34	25	0	mh	0.0	
-R	warlock/demonology	34	1315	0	gear	5.1000000000000005	spi:15:spi:0.34:5.1
+R	warlock/demonology	34	1315	0	gear	5.4	sta:10:sta:0.045:0.45,spi:15:spi:0.33:4.95
 R	warlock/demonology	34	2140	0	mh	0.0	
-R	warlock/demonology	34	2140	12718	mh	0.023	int:1:int:0.023:0.023
-R	warlock/demonology	34	2140	12917	mh	5.023	sp:5:sp:1:5,int:1:int:0.023:0.023
+R	warlock/demonology	34	2140	12718	mh	0.079	int:1:int:0.034:0.034,sta:1:sta:0.045:0.045
+R	warlock/demonology	34	2140	12917	mh	5.034	sp:5:sp:1:5,int:1:int:0.034:0.034
 R	warlock/demonology	34	2225	0	mh	0.0	
-R	warlock/demonology	34	2614	0	gear	0.029	armor:29:armor:0.001:0.029
+R	warlock/demonology	34	2614	0	gear	0.08700000000000001	armor:29:armor:0.003:0.087
 R	warlock/demonology	34	4023	0	mh	0.0	
 R	warlock/demonology	34	5079	0	gear	0.0	
-R	warlock/demonology	34	6540	0	gear	0.028	armor:28:armor:0.001:0.028
-R	warlock/demonology	34	6540	12718	gear	0.097	int:3:int:0.023:0.069,armor:28:armor:0.001:0.028
-R	warlock/demonology	34	6540	12719	gear	1.048	spi:3:spi:0.34:1.02,armor:28:armor:0.001:0.028
-R	warlock/demonology	34	6540	12720	gear	1.117	int:3:int:0.023:0.069,spi:3:spi:0.34:1.02,armor:28:armor:0.001:0.028
-R	warlock/demonology	34	6540	12729	gear	0.143	int:5:int:0.023:0.115,armor:28:armor:0.001:0.028
-R	warlock/demonology	34	6540	12730	gear	1.7280000000000002	spi:5:spi:0.34:1.7,armor:28:armor:0.001:0.028
-R	warlock/demonology	34	6540	12731	gear	0.028	armor:28:armor:0.001:0.028
-R	warlock/demonology	34	6540	12734	gear	6.028	sp:6:sp:1:6,armor:28:armor:0.001:0.028
-R	warlock/demonology	34	6540	12735	gear	4.028	spDmg:4:sp:1:4,armor:28:armor:0.001:0.028
-R	warlock/demonology	34	6540	12740	gear	0.028	armor:28:armor:0.001:0.028
-R	warlock/demonology	34	6540	12741	gear	0.028	armor:28:armor:0.001:0.028
-R	warlock/demonology	34	6540	12742	gear	0.028	armor:28:armor:0.001:0.028
-R	warlock/demonology	34	6540	12743	gear	0.028	armor:28:armor:0.001:0.028
-R	warlock/demonology	34	6540	12744	gear	0.028	armor:28:armor:0.001:0.028
-R	warlock/demonology	34	6540	12745	gear	2.12	int:4:int:0.023:0.092,sp:2:sp:1:2,armor:28:armor:0.001:0.028
-R	warlock/demonology	34	6540	12756	gear	0.028	armor:28:armor:0.001:0.028
-R	warlock/demonology	34	6540	12757	gear	4.648	spFire:7:spFire:0.66:4.62,armor:28:armor:0.001:0.028
-R	warlock/demonology	34	6540	12758	gear	0.028	armor:28:armor:0.001:0.028
-R	warlock/demonology	34	6540	12759	gear	0.028	armor:28:armor:0.001:0.028
-R	warlock/demonology	34	6540	12761	gear	2.548	spShadow:7:spShadow:0.36:2.52,armor:28:armor:0.001:0.028
-R	warlock/demonology	34	7047	0	gear	4.965999999999999	spi:5:spi:0.34:1.7,spShadow:9:spShadow:0.36:3.24,armor:26:armor:0.001:0.026
-R	warlock/demonology	34	11187	0	gear	0.004	armor:4:armor:0.001:0.004
-R	warlock/demonology	34	11288	0	ranged	2.7175000000000002	sp:2:sp:1:2,rdps:17.5:rdps:0.041:0.718
+R	warlock/demonology	34	6540	0	gear	0.084	armor:28:armor:0.003:0.084
+R	warlock/demonology	34	6540	12718	gear	0.321	int:3:int:0.034:0.102,sta:3:sta:0.045:0.135,armor:28:armor:0.003:0.084
+R	warlock/demonology	34	6540	12719	gear	1.209	spi:3:spi:0.33:0.99,sta:3:sta:0.045:0.135,armor:28:armor:0.003:0.084
+R	warlock/demonology	34	6540	12720	gear	1.1760000000000002	int:3:int:0.034:0.102,spi:3:spi:0.33:0.99,armor:28:armor:0.003:0.084
+R	warlock/demonology	34	6540	12729	gear	0.254	int:5:int:0.034:0.17,armor:28:armor:0.003:0.084
+R	warlock/demonology	34	6540	12730	gear	1.7340000000000002	spi:5:spi:0.33:1.65,armor:28:armor:0.003:0.084
+R	warlock/demonology	34	6540	12731	gear	0.309	sta:5:sta:0.045:0.225,armor:28:armor:0.003:0.084
+R	warlock/demonology	34	6540	12734	gear	6.084	sp:6:sp:1:6,armor:28:armor:0.003:0.084
+R	warlock/demonology	34	6540	12735	gear	4.084	spDmg:4:sp:1:4,armor:28:armor:0.003:0.084
+R	warlock/demonology	34	6540	12740	gear	0.21900000000000003	sta:3:sta:0.045:0.135,armor:28:armor:0.003:0.084
+R	warlock/demonology	34	6540	12741	gear	0.21900000000000003	sta:3:sta:0.045:0.135,armor:28:armor:0.003:0.084
+R	warlock/demonology	34	6540	12742	gear	0.21900000000000003	sta:3:sta:0.045:0.135,armor:28:armor:0.003:0.084
+R	warlock/demonology	34	6540	12743	gear	0.21900000000000003	sta:3:sta:0.045:0.135,armor:28:armor:0.003:0.084
+R	warlock/demonology	34	6540	12744	gear	0.21900000000000003	sta:3:sta:0.045:0.135,armor:28:armor:0.003:0.084
+R	warlock/demonology	34	6540	12745	gear	2.31	int:4:int:0.034:0.136,sta:2:sta:0.045:0.09,sp:2:sp:1:2,armor:28:armor:0.003:0.084
+R	warlock/demonology	34	6540	12756	gear	0.084	armor:28:armor:0.003:0.084
+R	warlock/demonology	34	6540	12757	gear	3.3040000000000003	spFire:7:spFire:0.46:3.22,armor:28:armor:0.003:0.084
+R	warlock/demonology	34	6540	12758	gear	0.084	armor:28:armor:0.003:0.084
+R	warlock/demonology	34	6540	12759	gear	0.084	armor:28:armor:0.003:0.084
+R	warlock/demonology	34	6540	12761	gear	3.374	spShadow:7:spShadow:0.47:3.29,armor:28:armor:0.003:0.084
+R	warlock/demonology	34	7047	0	gear	5.958	spi:5:spi:0.33:1.65,spShadow:9:spShadow:0.47:4.23,armor:26:armor:0.003:0.078
+R	warlock/demonology	34	11187	0	gear	0.012	armor:4:armor:0.003:0.012
+R	warlock/demonology	34	11288	0	ranged	5.5	sp:2:sp:1:2,rdps:17.5:rdps:0.2:3.5
 R	warlock/demonology	34	11994	0	gear	0.0	
-R	warlock/demonology	34	11994	12718	gear	0.069	int:3:int:0.023:0.069
-R	warlock/demonology	34	11994	12719	gear	1.02	spi:3:spi:0.34:1.02
-R	warlock/demonology	34	11994	12720	gear	1.089	int:3:int:0.023:0.069,spi:3:spi:0.34:1.02
-R	warlock/demonology	34	11994	12721	gear	0.0	
-R	warlock/demonology	34	11994	12722	gear	0.0	
-R	warlock/demonology	34	11994	12723	gear	0.069	int:3:int:0.023:0.069
-R	warlock/demonology	34	11994	12724	gear	0.069	int:3:int:0.023:0.069
-R	warlock/demonology	34	11994	12725	gear	1.02	spi:3:spi:0.34:1.02
-R	warlock/demonology	34	11994	12726	gear	1.02	spi:3:spi:0.34:1.02
+R	warlock/demonology	34	11994	12718	gear	0.23700000000000002	int:3:int:0.034:0.102,sta:3:sta:0.045:0.135
+R	warlock/demonology	34	11994	12719	gear	1.125	spi:3:spi:0.33:0.99,sta:3:sta:0.045:0.135
+R	warlock/demonology	34	11994	12720	gear	1.092	int:3:int:0.034:0.102,spi:3:spi:0.33:0.99
+R	warlock/demonology	34	11994	12721	gear	0.135	sta:3:sta:0.045:0.135
+R	warlock/demonology	34	11994	12722	gear	0.135	sta:3:sta:0.045:0.135
+R	warlock/demonology	34	11994	12723	gear	0.10200000000000001	int:3:int:0.034:0.102
+R	warlock/demonology	34	11994	12724	gear	0.10200000000000001	int:3:int:0.034:0.102
+R	warlock/demonology	34	11994	12725	gear	0.99	spi:3:spi:0.33:0.99
+R	warlock/demonology	34	11994	12726	gear	0.99	spi:3:spi:0.33:0.99
 R	warlock/demonology	34	11994	12727	gear	0.0	
 R	warlock/demonology	34	11994	12728	gear	0.0	
-R	warlock/demonology	34	11994	12729	gear	0.11499999999999999	int:5:int:0.023:0.115
-R	warlock/demonology	34	11994	12730	gear	1.7000000000000002	spi:5:spi:0.34:1.7
-R	warlock/demonology	34	11994	12731	gear	0.0	
+R	warlock/demonology	34	11994	12729	gear	0.17	int:5:int:0.034:0.17
+R	warlock/demonology	34	11994	12730	gear	1.6500000000000001	spi:5:spi:0.33:1.65
+R	warlock/demonology	34	11994	12731	gear	0.22499999999999998	sta:5:sta:0.045:0.225
 R	warlock/demonology	34	11994	12732	gear	0.0	
 R	warlock/demonology	34	11994	12733	gear	0.0	
 R	warlock/demonology	34	11994	12737	gear	0.0	
-R	warlock/demonology	34	11994	12738	gear	0.088	mp5:2:mp5:0.044:0.088
+R	warlock/demonology	34	11994	12738	gear	0.6	mp5:2:mp5:0.3:0.6
 R	warlock/demonology	34	11994	12739	gear	0.0	
-R	warlock/demonology	34	11994	12740	gear	0.0	
-R	warlock/demonology	34	11994	12741	gear	0.0	
-R	warlock/demonology	34	11994	12742	gear	0.0	
-R	warlock/demonology	34	11994	12743	gear	0.0	
-R	warlock/demonology	34	11994	12744	gear	0.0	
-R	warlock/demonology	34	14122	0	gear	0.014	armor:14:armor:0.001:0.014
-R	warlock/demonology	34	14122	12718	gear	0.06	int:2:int:0.023:0.046,armor:14:armor:0.001:0.014
-R	warlock/demonology	34	14122	12719	gear	0.6940000000000001	spi:2:spi:0.34:0.68,armor:14:armor:0.001:0.014
-R	warlock/demonology	34	14122	12720	gear	0.7400000000000001	int:2:int:0.023:0.046,spi:2:spi:0.34:0.68,armor:14:armor:0.001:0.014
-R	warlock/demonology	34	14122	12729	gear	0.083	int:3:int:0.023:0.069,armor:14:armor:0.001:0.014
-R	warlock/demonology	34	14122	12730	gear	1.034	spi:3:spi:0.34:1.02,armor:14:armor:0.001:0.014
-R	warlock/demonology	34	14122	12731	gear	0.014	armor:14:armor:0.001:0.014
-R	warlock/demonology	34	14122	12734	gear	4.014	sp:4:sp:1:4,armor:14:armor:0.001:0.014
-R	warlock/demonology	34	14122	12735	gear	2.014	spDmg:2:sp:1:2,armor:14:armor:0.001:0.014
-R	warlock/demonology	34	14122	12740	gear	0.014	armor:14:armor:0.001:0.014
-R	warlock/demonology	34	14122	12741	gear	0.014	armor:14:armor:0.001:0.014
-R	warlock/demonology	34	14122	12742	gear	0.014	armor:14:armor:0.001:0.014
-R	warlock/demonology	34	14122	12743	gear	0.014	armor:14:armor:0.001:0.014
-R	warlock/demonology	34	14122	12744	gear	0.014	armor:14:armor:0.001:0.014
-R	warlock/demonology	34	14122	12745	gear	1.06	int:2:int:0.023:0.046,sp:1:sp:1:1,armor:14:armor:0.001:0.014
-R	warlock/demonology	34	14122	12756	gear	0.014	armor:14:armor:0.001:0.014
-R	warlock/demonology	34	14122	12757	gear	2.654	spFire:4:spFire:0.66:2.64,armor:14:armor:0.001:0.014
-R	warlock/demonology	34	14122	12758	gear	0.014	armor:14:armor:0.001:0.014
-R	warlock/demonology	34	14122	12759	gear	0.014	armor:14:armor:0.001:0.014
-R	warlock/demonology	34	14122	12761	gear	1.454	spShadow:4:spShadow:0.36:1.44,armor:14:armor:0.001:0.014
-R	warlock/demonology	34	14340	0	gear	0.088	armor:88:armor:0.001:0.088
-R	warlock/demonology	34	14673	0	gear	0.034	armor:34:armor:0.001:0.034
-R	warlock/demonology	34	15945	0	oh	0.68	spi:2:spi:0.34:0.68
-R	warlock/demonology	34	19557	0	mh	0.0	
-R	warlock/demonology	34	254111	0	gear	13.461000000000002	int:9:int:0.023:0.207,spFire:20:spFire:0.66:13.2,armor:54:armor:0.001:0.054
-R	warlock/demonology	34	280082	0	mh	75.285	int:15:int:0.023:0.345,hit:1.5:spellHit:1.2:1.8,spi:21:spi:0.34:7.14,sp:66:sp:1:66
+R	warlock/demonology	34	11994	12740	gear	0.135	sta:3:sta:0.045:0.135
+R	warlock/demonology	34	11994	12741	gear	0.135	sta:3:sta:0.045:0.135
+R	warlock/demonology	34	11994	12742	gear	0.135	sta:3:sta:0.045:0.135
+R	warlock/demonology	34	11994	12743	gear	0.135	sta:3:sta:0.045:0.135
+R	warlock/demonology	34	11994	12744	gear	0.135	sta:3:sta:0.045:0.135
+R	warlock/demonology	34	14122	0	gear	0.042	armor:14:armor:0.003:0.042
+R	warlock/demonology	34	14122	12718	gear	0.2	int:2:int:0.034:0.068,sta:2:sta:0.045:0.09,armor:14:armor:0.003:0.042
+R	warlock/demonology	34	14122	12719	gear	0.792	spi:2:spi:0.33:0.66,sta:2:sta:0.045:0.09,armor:14:armor:0.003:0.042
+R	warlock/demonology	34	14122	12720	gear	0.77	int:2:int:0.034:0.068,spi:2:spi:0.33:0.66,armor:14:armor:0.003:0.042
+R	warlock/demonology	34	14122	12729	gear	0.14400000000000002	int:3:int:0.034:0.102,armor:14:armor:0.003:0.042
+R	warlock/demonology	34	14122	12730	gear	1.032	spi:3:spi:0.33:0.99,armor:14:armor:0.003:0.042
+R	warlock/demonology	34	14122	12731	gear	0.17700000000000002	sta:3:sta:0.045:0.135,armor:14:armor:0.003:0.042
+R	warlock/demonology	34	14122	12734	gear	4.042	sp:4:sp:1:4,armor:14:armor:0.003:0.042
+R	warlock/demonology	34	14122	12735	gear	2.042	spDmg:2:sp:1:2,armor:14:armor:0.003:0.042
+R	warlock/demonology	34	14122	12740	gear	0.132	sta:2:sta:0.045:0.09,armor:14:armor:0.003:0.042
+R	warlock/demonology	34	14122	12741	gear	0.132	sta:2:sta:0.045:0.09,armor:14:armor:0.003:0.042
+R	warlock/demonology	34	14122	12742	gear	0.132	sta:2:sta:0.045:0.09,armor:14:armor:0.003:0.042
+R	warlock/demonology	34	14122	12743	gear	0.132	sta:2:sta:0.045:0.09,armor:14:armor:0.003:0.042
+R	warlock/demonology	34	14122	12744	gear	0.132	sta:2:sta:0.045:0.09,armor:14:armor:0.003:0.042
+R	warlock/demonology	34	14122	12745	gear	1.155	int:2:int:0.034:0.068,sta:1:sta:0.045:0.045,sp:1:sp:1:1,armor:14:armor:0.003:0.042
+R	warlock/demonology	34	14122	12756	gear	0.042	armor:14:armor:0.003:0.042
+R	warlock/demonology	34	14122	12757	gear	1.8820000000000001	spFire:4:spFire:0.46:1.84,armor:14:armor:0.003:0.042
+R	warlock/demonology	34	14122	12758	gear	0.042	armor:14:armor:0.003:0.042
+R	warlock/demonology	34	14122	12759	gear	0.042	armor:14:armor:0.003:0.042
+R	warlock/demonology	34	14122	12761	gear	1.922	spShadow:4:spShadow:0.47:1.88,armor:14:armor:0.003:0.042
+R	warlock/demonology	34	14340	0	gear	1.119	sta:19:sta:0.045:0.855,armor:88:armor:0.003:0.264
+R	warlock/demonology	34	14673	0	gear	0.32699999999999996	sta:5:sta:0.045:0.225,armor:34:armor:0.003:0.102
+R	warlock/demonology	34	15945	0	oh	0.75	sta:2:sta:0.045:0.09,spi:2:spi:0.33:0.66
+R	warlock/demonology	34	19557	0	mh	0.135	sta:3:sta:0.045:0.135
+R	warlock/demonology	34	254111	0	gear	10.253000000000002	int:9:int:0.034:0.306,sta:13:sta:0.045:0.585,spFire:20:spFire:0.46:9.2,armor:54:armor:0.003:0.162
+R	warlock/demonology	34	280082	0	mh	74.94	int:15:int:0.034:0.51,hit:1.5:spellHit:1:1.5,spi:21:spi:0.33:6.93,sp:66:sp:1:66
 R	warlock/demonology	45	25	0	mh	0.0	
-R	warlock/demonology	45	1315	0	gear	4.35	spi:15:spi:0.29:4.35
+R	warlock/demonology	45	1315	0	gear	5.8500000000000005	sta:10:sta:0.12:1.2,spi:15:spi:0.31:4.65
 R	warlock/demonology	45	2140	0	mh	0.0	
-R	warlock/demonology	45	2140	12718	mh	0.17	int:1:int:0.17:0.17
-R	warlock/demonology	45	2140	12917	mh	5.17	sp:5:sp:1:5,int:1:int:0.17:0.17
+R	warlock/demonology	45	2140	12718	mh	0.12	sta:1:sta:0.12:0.12
+R	warlock/demonology	45	2140	12917	mh	5.0	sp:5:sp:1:5
 R	warlock/demonology	45	2225	0	mh	0.0	
-R	warlock/demonology	45	2614	0	gear	0.029	armor:29:armor:0.001:0.029
+R	warlock/demonology	45	2614	0	gear	0.058	armor:29:armor:0.002:0.058
 R	warlock/demonology	45	4023	0	mh	0.0	
 R	warlock/demonology	45	5079	0	gear	0.0	
-R	warlock/demonology	45	6540	0	gear	0.028	armor:28:armor:0.001:0.028
-R	warlock/demonology	45	6540	12718	gear	0.538	int:3:int:0.17:0.51,armor:28:armor:0.001:0.028
-R	warlock/demonology	45	6540	12719	gear	0.8979999999999999	spi:3:spi:0.29:0.87,armor:28:armor:0.001:0.028
-R	warlock/demonology	45	6540	12720	gear	1.408	int:3:int:0.17:0.51,spi:3:spi:0.29:0.87,armor:28:armor:0.001:0.028
-R	warlock/demonology	45	6540	12729	gear	0.8780000000000001	int:5:int:0.17:0.85,armor:28:armor:0.001:0.028
-R	warlock/demonology	45	6540	12730	gear	1.478	spi:5:spi:0.29:1.45,armor:28:armor:0.001:0.028
-R	warlock/demonology	45	6540	12731	gear	0.028	armor:28:armor:0.001:0.028
-R	warlock/demonology	45	6540	12734	gear	6.028	sp:6:sp:1:6,armor:28:armor:0.001:0.028
-R	warlock/demonology	45	6540	12735	gear	4.028	spDmg:4:sp:1:4,armor:28:armor:0.001:0.028
-R	warlock/demonology	45	6540	12740	gear	0.028	armor:28:armor:0.001:0.028
-R	warlock/demonology	45	6540	12741	gear	0.028	armor:28:armor:0.001:0.028
-R	warlock/demonology	45	6540	12742	gear	0.028	armor:28:armor:0.001:0.028
-R	warlock/demonology	45	6540	12743	gear	0.028	armor:28:armor:0.001:0.028
-R	warlock/demonology	45	6540	12744	gear	0.028	armor:28:armor:0.001:0.028
-R	warlock/demonology	45	6540	12745	gear	2.708	int:4:int:0.17:0.68,sp:2:sp:1:2,armor:28:armor:0.001:0.028
-R	warlock/demonology	45	6540	12756	gear	0.028	armor:28:armor:0.001:0.028
-R	warlock/demonology	45	6540	12757	gear	4.1579999999999995	spFire:7:spFire:0.59:4.13,armor:28:armor:0.001:0.028
-R	warlock/demonology	45	6540	12758	gear	0.028	armor:28:armor:0.001:0.028
-R	warlock/demonology	45	6540	12759	gear	0.028	armor:28:armor:0.001:0.028
-R	warlock/demonology	45	6540	12761	gear	1.9180000000000001	spShadow:7:spShadow:0.27:1.89,armor:28:armor:0.001:0.028
-R	warlock/demonology	45	7047	0	gear	3.9059999999999997	spi:5:spi:0.29:1.45,spShadow:9:spShadow:0.27:2.43,armor:26:armor:0.001:0.026
-R	warlock/demonology	45	11187	0	gear	0.004	armor:4:armor:0.001:0.004
-R	warlock/demonology	45	11288	0	ranged	2.2800000000000002	sp:2:sp:1:2,rdps:17.5:rdps:0.016:0.28
+R	warlock/demonology	45	6540	0	gear	0.056	armor:28:armor:0.002:0.056
+R	warlock/demonology	45	6540	12718	gear	0.416	sta:3:sta:0.12:0.36,armor:28:armor:0.002:0.056
+R	warlock/demonology	45	6540	12719	gear	1.346	spi:3:spi:0.31:0.93,sta:3:sta:0.12:0.36,armor:28:armor:0.002:0.056
+R	warlock/demonology	45	6540	12720	gear	0.986	spi:3:spi:0.31:0.93,armor:28:armor:0.002:0.056
+R	warlock/demonology	45	6540	12729	gear	0.056	armor:28:armor:0.002:0.056
+R	warlock/demonology	45	6540	12730	gear	1.606	spi:5:spi:0.31:1.55,armor:28:armor:0.002:0.056
+R	warlock/demonology	45	6540	12731	gear	0.656	sta:5:sta:0.12:0.6,armor:28:armor:0.002:0.056
+R	warlock/demonology	45	6540	12734	gear	6.056	sp:6:sp:1:6,armor:28:armor:0.002:0.056
+R	warlock/demonology	45	6540	12735	gear	4.056	spDmg:4:sp:1:4,armor:28:armor:0.002:0.056
+R	warlock/demonology	45	6540	12740	gear	0.416	sta:3:sta:0.12:0.36,armor:28:armor:0.002:0.056
+R	warlock/demonology	45	6540	12741	gear	0.416	sta:3:sta:0.12:0.36,armor:28:armor:0.002:0.056
+R	warlock/demonology	45	6540	12742	gear	0.416	sta:3:sta:0.12:0.36,armor:28:armor:0.002:0.056
+R	warlock/demonology	45	6540	12743	gear	0.416	sta:3:sta:0.12:0.36,armor:28:armor:0.002:0.056
+R	warlock/demonology	45	6540	12744	gear	0.416	sta:3:sta:0.12:0.36,armor:28:armor:0.002:0.056
+R	warlock/demonology	45	6540	12745	gear	2.2960000000000003	sta:2:sta:0.12:0.24,sp:2:sp:1:2,armor:28:armor:0.002:0.056
+R	warlock/demonology	45	6540	12756	gear	0.056	armor:28:armor:0.002:0.056
+R	warlock/demonology	45	6540	12757	gear	3.4859999999999998	spFire:7:spFire:0.49:3.43,armor:28:armor:0.002:0.056
+R	warlock/demonology	45	6540	12758	gear	0.056	armor:28:armor:0.002:0.056
+R	warlock/demonology	45	6540	12759	gear	0.056	armor:28:armor:0.002:0.056
+R	warlock/demonology	45	6540	12761	gear	3.8360000000000003	spShadow:7:spShadow:0.54:3.78,armor:28:armor:0.002:0.056
+R	warlock/demonology	45	7047	0	gear	6.462	spi:5:spi:0.31:1.55,spShadow:9:spShadow:0.54:4.86,armor:26:armor:0.002:0.052
+R	warlock/demonology	45	11187	0	gear	0.008	armor:4:armor:0.002:0.008
+R	warlock/demonology	45	11288	0	ranged	8.125	sp:2:sp:1:2,rdps:17.5:rdps:0.35:6.125
 R	warlock/demonology	45	11994	0	gear	0.0	
-R	warlock/demonology	45	11994	12718	gear	0.51	int:3:int:0.17:0.51
-R	warlock/demonology	45	11994	12719	gear	0.8699999999999999	spi:3:spi:0.29:0.87
-R	warlock/demonology	45	11994	12720	gear	1.38	int:3:int:0.17:0.51,spi:3:spi:0.29:0.87
-R	warlock/demonology	45	11994	12721	gear	0.0	
-R	warlock/demonology	45	11994	12722	gear	0.0	
-R	warlock/demonology	45	11994	12723	gear	0.51	int:3:int:0.17:0.51
-R	warlock/demonology	45	11994	12724	gear	0.51	int:3:int:0.17:0.51
-R	warlock/demonology	45	11994	12725	gear	0.8699999999999999	spi:3:spi:0.29:0.87
-R	warlock/demonology	45	11994	12726	gear	0.8699999999999999	spi:3:spi:0.29:0.87
+R	warlock/demonology	45	11994	12718	gear	0.36	sta:3:sta:0.12:0.36
+R	warlock/demonology	45	11994	12719	gear	1.29	spi:3:spi:0.31:0.93,sta:3:sta:0.12:0.36
+R	warlock/demonology	45	11994	12720	gear	0.9299999999999999	spi:3:spi:0.31:0.93
+R	warlock/demonology	45	11994	12721	gear	0.36	sta:3:sta:0.12:0.36
+R	warlock/demonology	45	11994	12722	gear	0.36	sta:3:sta:0.12:0.36
+R	warlock/demonology	45	11994	12723	gear	0.0	
+R	warlock/demonology	45	11994	12724	gear	0.0	
+R	warlock/demonology	45	11994	12725	gear	0.9299999999999999	spi:3:spi:0.31:0.93
+R	warlock/demonology	45	11994	12726	gear	0.9299999999999999	spi:3:spi:0.31:0.93
 R	warlock/demonology	45	11994	12727	gear	0.0	
 R	warlock/demonology	45	11994	12728	gear	0.0	
-R	warlock/demonology	45	11994	12729	gear	0.8500000000000001	int:5:int:0.17:0.85
-R	warlock/demonology	45	11994	12730	gear	1.45	spi:5:spi:0.29:1.45
-R	warlock/demonology	45	11994	12731	gear	0.0	
+R	warlock/demonology	45	11994	12729	gear	0.0	
+R	warlock/demonology	45	11994	12730	gear	1.55	spi:5:spi:0.31:1.55
+R	warlock/demonology	45	11994	12731	gear	0.6	sta:5:sta:0.12:0.6
 R	warlock/demonology	45	11994	12732	gear	0.0	
 R	warlock/demonology	45	11994	12733	gear	0.0	
 R	warlock/demonology	45	11994	12737	gear	0.0	
-R	warlock/demonology	45	11994	12738	gear	0.12	mp5:2:mp5:0.06:0.12
+R	warlock/demonology	45	11994	12738	gear	0.34	mp5:2:mp5:0.17:0.34
 R	warlock/demonology	45	11994	12739	gear	0.0	
-R	warlock/demonology	45	11994	12740	gear	0.0	
-R	warlock/demonology	45	11994	12741	gear	0.0	
-R	warlock/demonology	45	11994	12742	gear	0.0	
-R	warlock/demonology	45	11994	12743	gear	0.0	
-R	warlock/demonology	45	11994	12744	gear	0.0	
-R	warlock/demonology	45	14122	0	gear	0.014	armor:14:armor:0.001:0.014
-R	warlock/demonology	45	14122	12718	gear	0.35400000000000004	int:2:int:0.17:0.34,armor:14:armor:0.001:0.014
-R	warlock/demonology	45	14122	12719	gear	0.594	spi:2:spi:0.29:0.58,armor:14:armor:0.001:0.014
-R	warlock/demonology	45	14122	12720	gear	0.9339999999999999	int:2:int:0.17:0.34,spi:2:spi:0.29:0.58,armor:14:armor:0.001:0.014
-R	warlock/demonology	45	14122	12729	gear	0.524	int:3:int:0.17:0.51,armor:14:armor:0.001:0.014
-R	warlock/demonology	45	14122	12730	gear	0.8839999999999999	spi:3:spi:0.29:0.87,armor:14:armor:0.001:0.014
-R	warlock/demonology	45	14122	12731	gear	0.014	armor:14:armor:0.001:0.014
-R	warlock/demonology	45	14122	12734	gear	4.014	sp:4:sp:1:4,armor:14:armor:0.001:0.014
-R	warlock/demonology	45	14122	12735	gear	2.014	spDmg:2:sp:1:2,armor:14:armor:0.001:0.014
-R	warlock/demonology	45	14122	12740	gear	0.014	armor:14:armor:0.001:0.014
-R	warlock/demonology	45	14122	12741	gear	0.014	armor:14:armor:0.001:0.014
-R	warlock/demonology	45	14122	12742	gear	0.014	armor:14:armor:0.001:0.014
-R	warlock/demonology	45	14122	12743	gear	0.014	armor:14:armor:0.001:0.014
-R	warlock/demonology	45	14122	12744	gear	0.014	armor:14:armor:0.001:0.014
-R	warlock/demonology	45	14122	12745	gear	1.354	int:2:int:0.17:0.34,sp:1:sp:1:1,armor:14:armor:0.001:0.014
-R	warlock/demonology	45	14122	12756	gear	0.014	armor:14:armor:0.001:0.014
-R	warlock/demonology	45	14122	12757	gear	2.3739999999999997	spFire:4:spFire:0.59:2.36,armor:14:armor:0.001:0.014
-R	warlock/demonology	45	14122	12758	gear	0.014	armor:14:armor:0.001:0.014
-R	warlock/demonology	45	14122	12759	gear	0.014	armor:14:armor:0.001:0.014
-R	warlock/demonology	45	14122	12761	gear	1.094	spShadow:4:spShadow:0.27:1.08,armor:14:armor:0.001:0.014
-R	warlock/demonology	45	14340	0	gear	0.088	armor:88:armor:0.001:0.088
-R	warlock/demonology	45	14673	0	gear	0.034	armor:34:armor:0.001:0.034
-R	warlock/demonology	45	15945	0	oh	0.58	spi:2:spi:0.29:0.58
-R	warlock/demonology	45	19557	0	mh	0.0	
-R	warlock/demonology	45	254111	0	gear	13.383999999999999	int:9:int:0.17:1.53,spFire:20:spFire:0.59:11.8,armor:54:armor:0.001:0.054
-R	warlock/demonology	45	280082	0	mh	77.04	int:15:int:0.17:2.55,hit:1.5:spellHit:1.6:2.4,spi:21:spi:0.29:6.09,sp:66:sp:1:66
+R	warlock/demonology	45	11994	12740	gear	0.36	sta:3:sta:0.12:0.36
+R	warlock/demonology	45	11994	12741	gear	0.36	sta:3:sta:0.12:0.36
+R	warlock/demonology	45	11994	12742	gear	0.36	sta:3:sta:0.12:0.36
+R	warlock/demonology	45	11994	12743	gear	0.36	sta:3:sta:0.12:0.36
+R	warlock/demonology	45	11994	12744	gear	0.36	sta:3:sta:0.12:0.36
+R	warlock/demonology	45	14122	0	gear	0.028	armor:14:armor:0.002:0.028
+R	warlock/demonology	45	14122	12718	gear	0.268	sta:2:sta:0.12:0.24,armor:14:armor:0.002:0.028
+R	warlock/demonology	45	14122	12719	gear	0.888	spi:2:spi:0.31:0.62,sta:2:sta:0.12:0.24,armor:14:armor:0.002:0.028
+R	warlock/demonology	45	14122	12720	gear	0.648	spi:2:spi:0.31:0.62,armor:14:armor:0.002:0.028
+R	warlock/demonology	45	14122	12729	gear	0.028	armor:14:armor:0.002:0.028
+R	warlock/demonology	45	14122	12730	gear	0.958	spi:3:spi:0.31:0.93,armor:14:armor:0.002:0.028
+R	warlock/demonology	45	14122	12731	gear	0.388	sta:3:sta:0.12:0.36,armor:14:armor:0.002:0.028
+R	warlock/demonology	45	14122	12734	gear	4.028	sp:4:sp:1:4,armor:14:armor:0.002:0.028
+R	warlock/demonology	45	14122	12735	gear	2.028	spDmg:2:sp:1:2,armor:14:armor:0.002:0.028
+R	warlock/demonology	45	14122	12740	gear	0.268	sta:2:sta:0.12:0.24,armor:14:armor:0.002:0.028
+R	warlock/demonology	45	14122	12741	gear	0.268	sta:2:sta:0.12:0.24,armor:14:armor:0.002:0.028
+R	warlock/demonology	45	14122	12742	gear	0.268	sta:2:sta:0.12:0.24,armor:14:armor:0.002:0.028
+R	warlock/demonology	45	14122	12743	gear	0.268	sta:2:sta:0.12:0.24,armor:14:armor:0.002:0.028
+R	warlock/demonology	45	14122	12744	gear	0.268	sta:2:sta:0.12:0.24,armor:14:armor:0.002:0.028
+R	warlock/demonology	45	14122	12745	gear	1.1480000000000001	sta:1:sta:0.12:0.12,sp:1:sp:1:1,armor:14:armor:0.002:0.028
+R	warlock/demonology	45	14122	12756	gear	0.028	armor:14:armor:0.002:0.028
+R	warlock/demonology	45	14122	12757	gear	1.988	spFire:4:spFire:0.49:1.96,armor:14:armor:0.002:0.028
+R	warlock/demonology	45	14122	12758	gear	0.028	armor:14:armor:0.002:0.028
+R	warlock/demonology	45	14122	12759	gear	0.028	armor:14:armor:0.002:0.028
+R	warlock/demonology	45	14122	12761	gear	2.188	spShadow:4:spShadow:0.54:2.16,armor:14:armor:0.002:0.028
+R	warlock/demonology	45	14340	0	gear	2.456	sta:19:sta:0.12:2.28,armor:88:armor:0.002:0.176
+R	warlock/demonology	45	14673	0	gear	0.6679999999999999	sta:5:sta:0.12:0.6,armor:34:armor:0.002:0.068
+R	warlock/demonology	45	15945	0	oh	0.86	sta:2:sta:0.12:0.24,spi:2:spi:0.31:0.62
+R	warlock/demonology	45	19557	0	mh	0.36	sta:3:sta:0.12:0.36
+R	warlock/demonology	45	254111	0	gear	11.468000000000002	sta:13:sta:0.12:1.56,spFire:20:spFire:0.49:9.8,armor:54:armor:0.002:0.108
+R	warlock/demonology	45	280082	0	mh	75.06	hit:1.5:spellHit:1.7:2.55,spi:21:spi:0.31:6.51,sp:66:sp:1:66
 R	warlock/demonology	55	25	0	mh	0.0	
-R	warlock/demonology	55	1315	0	gear	5.300000000000001	sta:10:sta:0.11:1.1,spi:15:spi:0.28:4.2
+R	warlock/demonology	55	1315	0	gear	5.450000000000001	sta:10:sta:0.14:1.4,spi:15:spi:0.27:4.05
 R	warlock/demonology	55	2140	0	mh	0.0	
-R	warlock/demonology	55	2140	12718	mh	0.11	sta:1:sta:0.11:0.11
+R	warlock/demonology	55	2140	12718	mh	0.14	sta:1:sta:0.14:0.14
 R	warlock/demonology	55	2140	12917	mh	5.0	sp:5:sp:1:5
 R	warlock/demonology	55	2225	0	mh	0.0	
-R	warlock/demonology	55	2614	0	gear	0.029	armor:29:armor:0.001:0.029
+R	warlock/demonology	55	2614	0	gear	0.0	
 R	warlock/demonology	55	4023	0	mh	0.0	
 R	warlock/demonology	55	5079	0	gear	0.0	
-R	warlock/demonology	55	6540	0	gear	0.028	armor:28:armor:0.001:0.028
-R	warlock/demonology	55	6540	12718	gear	0.35800000000000004	sta:3:sta:0.11:0.33,armor:28:armor:0.001:0.028
-R	warlock/demonology	55	6540	12719	gear	1.1980000000000002	spi:3:spi:0.28:0.84,sta:3:sta:0.11:0.33,armor:28:armor:0.001:0.028
-R	warlock/demonology	55	6540	12720	gear	0.8680000000000001	spi:3:spi:0.28:0.84,armor:28:armor:0.001:0.028
-R	warlock/demonology	55	6540	12729	gear	0.028	armor:28:armor:0.001:0.028
-R	warlock/demonology	55	6540	12730	gear	1.4280000000000002	spi:5:spi:0.28:1.4,armor:28:armor:0.001:0.028
-R	warlock/demonology	55	6540	12731	gear	0.5780000000000001	sta:5:sta:0.11:0.55,armor:28:armor:0.001:0.028
-R	warlock/demonology	55	6540	12734	gear	6.028	sp:6:sp:1:6,armor:28:armor:0.001:0.028
-R	warlock/demonology	55	6540	12735	gear	4.028	spDmg:4:sp:1:4,armor:28:armor:0.001:0.028
-R	warlock/demonology	55	6540	12740	gear	0.35800000000000004	sta:3:sta:0.11:0.33,armor:28:armor:0.001:0.028
-R	warlock/demonology	55	6540	12741	gear	0.35800000000000004	sta:3:sta:0.11:0.33,armor:28:armor:0.001:0.028
-R	warlock/demonology	55	6540	12742	gear	0.35800000000000004	sta:3:sta:0.11:0.33,armor:28:armor:0.001:0.028
-R	warlock/demonology	55	6540	12743	gear	0.35800000000000004	sta:3:sta:0.11:0.33,armor:28:armor:0.001:0.028
-R	warlock/demonology	55	6540	12744	gear	0.35800000000000004	sta:3:sta:0.11:0.33,armor:28:armor:0.001:0.028
-R	warlock/demonology	55	6540	12745	gear	2.248	sta:2:sta:0.11:0.22,sp:2:sp:1:2,armor:28:armor:0.001:0.028
-R	warlock/demonology	55	6540	12756	gear	0.028	armor:28:armor:0.001:0.028
-R	warlock/demonology	55	6540	12757	gear	3.038	spFire:7:spFire:0.43:3.01,armor:28:armor:0.001:0.028
-R	warlock/demonology	55	6540	12758	gear	0.028	armor:28:armor:0.001:0.028
-R	warlock/demonology	55	6540	12759	gear	0.028	armor:28:armor:0.001:0.028
-R	warlock/demonology	55	6540	12761	gear	4.087999999999999	spShadow:7:spShadow:0.58:4.06,armor:28:armor:0.001:0.028
-R	warlock/demonology	55	7047	0	gear	6.646	spi:5:spi:0.28:1.4,spShadow:9:spShadow:0.58:5.22,armor:26:armor:0.001:0.026
-R	warlock/demonology	55	11187	0	gear	0.004	armor:4:armor:0.001:0.004
-R	warlock/demonology	55	11288	0	ranged	4.45	sp:2:sp:1:2,rdps:17.5:rdps:0.14:2.45
+R	warlock/demonology	55	6540	0	gear	0.0	
+R	warlock/demonology	55	6540	12718	gear	0.42000000000000004	sta:3:sta:0.14:0.42
+R	warlock/demonology	55	6540	12719	gear	1.23	spi:3:spi:0.27:0.81,sta:3:sta:0.14:0.42
+R	warlock/demonology	55	6540	12720	gear	0.81	spi:3:spi:0.27:0.81
+R	warlock/demonology	55	6540	12729	gear	0.0	
+R	warlock/demonology	55	6540	12730	gear	1.35	spi:5:spi:0.27:1.35
+R	warlock/demonology	55	6540	12731	gear	0.7000000000000001	sta:5:sta:0.14:0.7
+R	warlock/demonology	55	6540	12734	gear	6.0	sp:6:sp:1:6
+R	warlock/demonology	55	6540	12735	gear	4.0	spDmg:4:sp:1:4
+R	warlock/demonology	55	6540	12740	gear	0.42000000000000004	sta:3:sta:0.14:0.42
+R	warlock/demonology	55	6540	12741	gear	0.42000000000000004	sta:3:sta:0.14:0.42
+R	warlock/demonology	55	6540	12742	gear	0.42000000000000004	sta:3:sta:0.14:0.42
+R	warlock/demonology	55	6540	12743	gear	0.42000000000000004	sta:3:sta:0.14:0.42
+R	warlock/demonology	55	6540	12744	gear	0.42000000000000004	sta:3:sta:0.14:0.42
+R	warlock/demonology	55	6540	12745	gear	2.2800000000000002	sta:2:sta:0.14:0.28,sp:2:sp:1:2
+R	warlock/demonology	55	6540	12756	gear	0.0	
+R	warlock/demonology	55	6540	12757	gear	3.08	spFire:7:spFire:0.44:3.08
+R	warlock/demonology	55	6540	12758	gear	0.0	
+R	warlock/demonology	55	6540	12759	gear	0.0	
+R	warlock/demonology	55	6540	12761	gear	4.06	spShadow:7:spShadow:0.58:4.06
+R	warlock/demonology	55	7047	0	gear	6.57	spi:5:spi:0.27:1.35,spShadow:9:spShadow:0.58:5.22
+R	warlock/demonology	55	11187	0	gear	0.0	
+R	warlock/demonology	55	11288	0	ranged	3.54	sp:2:sp:1:2,rdps:17.5:rdps:0.088:1.54
 R	warlock/demonology	55	11994	0	gear	0.0	
-R	warlock/demonology	55	11994	12718	gear	0.33	sta:3:sta:0.11:0.33
-R	warlock/demonology	55	11994	12719	gear	1.1700000000000002	spi:3:spi:0.28:0.84,sta:3:sta:0.11:0.33
-R	warlock/demonology	55	11994	12720	gear	0.8400000000000001	spi:3:spi:0.28:0.84
-R	warlock/demonology	55	11994	12721	gear	0.33	sta:3:sta:0.11:0.33
-R	warlock/demonology	55	11994	12722	gear	0.33	sta:3:sta:0.11:0.33
+R	warlock/demonology	55	11994	12718	gear	0.42000000000000004	sta:3:sta:0.14:0.42
+R	warlock/demonology	55	11994	12719	gear	1.23	spi:3:spi:0.27:0.81,sta:3:sta:0.14:0.42
+R	warlock/demonology	55	11994	12720	gear	0.81	spi:3:spi:0.27:0.81
+R	warlock/demonology	55	11994	12721	gear	0.42000000000000004	sta:3:sta:0.14:0.42
+R	warlock/demonology	55	11994	12722	gear	0.42000000000000004	sta:3:sta:0.14:0.42
 R	warlock/demonology	55	11994	12723	gear	0.0	
 R	warlock/demonology	55	11994	12724	gear	0.0	
-R	warlock/demonology	55	11994	12725	gear	0.8400000000000001	spi:3:spi:0.28:0.84
-R	warlock/demonology	55	11994	12726	gear	0.8400000000000001	spi:3:spi:0.28:0.84
+R	warlock/demonology	55	11994	12725	gear	0.81	spi:3:spi:0.27:0.81
+R	warlock/demonology	55	11994	12726	gear	0.81	spi:3:spi:0.27:0.81
 R	warlock/demonology	55	11994	12727	gear	0.0	
 R	warlock/demonology	55	11994	12728	gear	0.0	
 R	warlock/demonology	55	11994	12729	gear	0.0	
-R	warlock/demonology	55	11994	12730	gear	1.4000000000000001	spi:5:spi:0.28:1.4
-R	warlock/demonology	55	11994	12731	gear	0.55	sta:5:sta:0.11:0.55
+R	warlock/demonology	55	11994	12730	gear	1.35	spi:5:spi:0.27:1.35
+R	warlock/demonology	55	11994	12731	gear	0.7000000000000001	sta:5:sta:0.14:0.7
 R	warlock/demonology	55	11994	12732	gear	0.0	
 R	warlock/demonology	55	11994	12733	gear	0.0	
 R	warlock/demonology	55	11994	12737	gear	0.0	
-R	warlock/demonology	55	11994	12738	gear	0.18	mp5:2:mp5:0.09:0.18
+R	warlock/demonology	55	11994	12738	gear	0.42	mp5:2:mp5:0.21:0.42
 R	warlock/demonology	55	11994	12739	gear	0.0	
-R	warlock/demonology	55	11994	12740	gear	0.33	sta:3:sta:0.11:0.33
-R	warlock/demonology	55	11994	12741	gear	0.33	sta:3:sta:0.11:0.33
-R	warlock/demonology	55	11994	12742	gear	0.33	sta:3:sta:0.11:0.33
-R	warlock/demonology	55	11994	12743	gear	0.33	sta:3:sta:0.11:0.33
-R	warlock/demonology	55	11994	12744	gear	0.33	sta:3:sta:0.11:0.33
-R	warlock/demonology	55	14122	0	gear	0.014	armor:14:armor:0.001:0.014
-R	warlock/demonology	55	14122	12718	gear	0.234	sta:2:sta:0.11:0.22,armor:14:armor:0.001:0.014
-R	warlock/demonology	55	14122	12719	gear	0.794	spi:2:spi:0.28:0.56,sta:2:sta:0.11:0.22,armor:14:armor:0.001:0.014
-R	warlock/demonology	55	14122	12720	gear	0.5740000000000001	spi:2:spi:0.28:0.56,armor:14:armor:0.001:0.014
-R	warlock/demonology	55	14122	12729	gear	0.014	armor:14:armor:0.001:0.014
-R	warlock/demonology	55	14122	12730	gear	0.8540000000000001	spi:3:spi:0.28:0.84,armor:14:armor:0.001:0.014
-R	warlock/demonology	55	14122	12731	gear	0.34400000000000003	sta:3:sta:0.11:0.33,armor:14:armor:0.001:0.014
-R	warlock/demonology	55	14122	12734	gear	4.014	sp:4:sp:1:4,armor:14:armor:0.001:0.014
-R	warlock/demonology	55	14122	12735	gear	2.014	spDmg:2:sp:1:2,armor:14:armor:0.001:0.014
-R	warlock/demonology	55	14122	12740	gear	0.234	sta:2:sta:0.11:0.22,armor:14:armor:0.001:0.014
-R	warlock/demonology	55	14122	12741	gear	0.234	sta:2:sta:0.11:0.22,armor:14:armor:0.001:0.014
-R	warlock/demonology	55	14122	12742	gear	0.234	sta:2:sta:0.11:0.22,armor:14:armor:0.001:0.014
-R	warlock/demonology	55	14122	12743	gear	0.234	sta:2:sta:0.11:0.22,armor:14:armor:0.001:0.014
-R	warlock/demonology	55	14122	12744	gear	0.234	sta:2:sta:0.11:0.22,armor:14:armor:0.001:0.014
-R	warlock/demonology	55	14122	12745	gear	1.124	sta:1:sta:0.11:0.11,sp:1:sp:1:1,armor:14:armor:0.001:0.014
-R	warlock/demonology	55	14122	12756	gear	0.014	armor:14:armor:0.001:0.014
-R	warlock/demonology	55	14122	12757	gear	1.734	spFire:4:spFire:0.43:1.72,armor:14:armor:0.001:0.014
-R	warlock/demonology	55	14122	12758	gear	0.014	armor:14:armor:0.001:0.014
-R	warlock/demonology	55	14122	12759	gear	0.014	armor:14:armor:0.001:0.014
-R	warlock/demonology	55	14122	12761	gear	2.3339999999999996	spShadow:4:spShadow:0.58:2.32,armor:14:armor:0.001:0.014
-R	warlock/demonology	55	14340	0	gear	2.178	sta:19:sta:0.11:2.09,armor:88:armor:0.001:0.088
-R	warlock/demonology	55	14673	0	gear	0.5840000000000001	sta:5:sta:0.11:0.55,armor:34:armor:0.001:0.034
-R	warlock/demonology	55	15945	0	oh	0.78	sta:2:sta:0.11:0.22,spi:2:spi:0.28:0.56
-R	warlock/demonology	55	19557	0	mh	0.33	sta:3:sta:0.11:0.33
-R	warlock/demonology	55	254111	0	gear	10.084	sta:13:sta:0.11:1.43,spFire:20:spFire:0.43:8.6,armor:54:armor:0.001:0.054
-R	warlock/demonology	55	280082	0	mh	73.68	hit:1.5:spellHit:1.2:1.8,spi:21:spi:0.28:5.88,sp:66:sp:1:66
+R	warlock/demonology	55	11994	12740	gear	0.42000000000000004	sta:3:sta:0.14:0.42
+R	warlock/demonology	55	11994	12741	gear	0.42000000000000004	sta:3:sta:0.14:0.42
+R	warlock/demonology	55	11994	12742	gear	0.42000000000000004	sta:3:sta:0.14:0.42
+R	warlock/demonology	55	11994	12743	gear	0.42000000000000004	sta:3:sta:0.14:0.42
+R	warlock/demonology	55	11994	12744	gear	0.42000000000000004	sta:3:sta:0.14:0.42
+R	warlock/demonology	55	14122	0	gear	0.0	
+R	warlock/demonology	55	14122	12718	gear	0.28	sta:2:sta:0.14:0.28
+R	warlock/demonology	55	14122	12719	gear	0.8200000000000001	spi:2:spi:0.27:0.54,sta:2:sta:0.14:0.28
+R	warlock/demonology	55	14122	12720	gear	0.54	spi:2:spi:0.27:0.54
+R	warlock/demonology	55	14122	12729	gear	0.0	
+R	warlock/demonology	55	14122	12730	gear	0.81	spi:3:spi:0.27:0.81
+R	warlock/demonology	55	14122	12731	gear	0.42000000000000004	sta:3:sta:0.14:0.42
+R	warlock/demonology	55	14122	12734	gear	4.0	sp:4:sp:1:4
+R	warlock/demonology	55	14122	12735	gear	2.0	spDmg:2:sp:1:2
+R	warlock/demonology	55	14122	12740	gear	0.28	sta:2:sta:0.14:0.28
+R	warlock/demonology	55	14122	12741	gear	0.28	sta:2:sta:0.14:0.28
+R	warlock/demonology	55	14122	12742	gear	0.28	sta:2:sta:0.14:0.28
+R	warlock/demonology	55	14122	12743	gear	0.28	sta:2:sta:0.14:0.28
+R	warlock/demonology	55	14122	12744	gear	0.28	sta:2:sta:0.14:0.28
+R	warlock/demonology	55	14122	12745	gear	1.1400000000000001	sta:1:sta:0.14:0.14,sp:1:sp:1:1
+R	warlock/demonology	55	14122	12756	gear	0.0	
+R	warlock/demonology	55	14122	12757	gear	1.76	spFire:4:spFire:0.44:1.76
+R	warlock/demonology	55	14122	12758	gear	0.0	
+R	warlock/demonology	55	14122	12759	gear	0.0	
+R	warlock/demonology	55	14122	12761	gear	2.32	spShadow:4:spShadow:0.58:2.32
+R	warlock/demonology	55	14340	0	gear	2.66	sta:19:sta:0.14:2.66
+R	warlock/demonology	55	14673	0	gear	0.7000000000000001	sta:5:sta:0.14:0.7
+R	warlock/demonology	55	15945	0	oh	0.8200000000000001	sta:2:sta:0.14:0.28,spi:2:spi:0.27:0.54
+R	warlock/demonology	55	19557	0	mh	0.42000000000000004	sta:3:sta:0.14:0.42
+R	warlock/demonology	55	254111	0	gear	10.620000000000001	sta:13:sta:0.14:1.82,spFire:20:spFire:0.44:8.8
+R	warlock/demonology	55	280082	0	mh	73.47	hit:1.5:spellHit:1.2:1.8,spi:21:spi:0.27:5.67,sp:66:sp:1:66
 R	warlock/demonology	60	25	0	mh	0.0	
-R	warlock/demonology	60	1315	0	gear	4.91	sta:10:sta:0.026:0.26,spi:15:spi:0.31:4.65
+R	warlock/demonology	60	1315	0	gear	6.510000000000001	sta:10:sta:0.066:0.66,spi:15:spi:0.39:5.85
 R	warlock/demonology	60	2140	0	mh	0.0	
-R	warlock/demonology	60	2140	12718	mh	0.026	sta:1:sta:0.026:0.026
+R	warlock/demonology	60	2140	12718	mh	0.066	sta:1:sta:0.066:0.066
 R	warlock/demonology	60	2140	12917	mh	5.0	sp:5:sp:1:5
 R	warlock/demonology	60	2225	0	mh	0.0	
 R	warlock/demonology	60	2614	0	gear	0.029	armor:29:armor:0.001:0.029
 R	warlock/demonology	60	4023	0	mh	0.0	
 R	warlock/demonology	60	5079	0	gear	0.0	
 R	warlock/demonology	60	6540	0	gear	0.028	armor:28:armor:0.001:0.028
-R	warlock/demonology	60	6540	12718	gear	0.106	sta:3:sta:0.026:0.078,armor:28:armor:0.001:0.028
-R	warlock/demonology	60	6540	12719	gear	1.036	spi:3:spi:0.31:0.93,sta:3:sta:0.026:0.078,armor:28:armor:0.001:0.028
-R	warlock/demonology	60	6540	12720	gear	0.958	spi:3:spi:0.31:0.93,armor:28:armor:0.001:0.028
+R	warlock/demonology	60	6540	12718	gear	0.226	sta:3:sta:0.066:0.198,armor:28:armor:0.001:0.028
+R	warlock/demonology	60	6540	12719	gear	1.396	spi:3:spi:0.39:1.17,sta:3:sta:0.066:0.198,armor:28:armor:0.001:0.028
+R	warlock/demonology	60	6540	12720	gear	1.198	spi:3:spi:0.39:1.17,armor:28:armor:0.001:0.028
 R	warlock/demonology	60	6540	12729	gear	0.028	armor:28:armor:0.001:0.028
-R	warlock/demonology	60	6540	12730	gear	1.578	spi:5:spi:0.31:1.55,armor:28:armor:0.001:0.028
-R	warlock/demonology	60	6540	12731	gear	0.158	sta:5:sta:0.026:0.13,armor:28:armor:0.001:0.028
+R	warlock/demonology	60	6540	12730	gear	1.9780000000000002	spi:5:spi:0.39:1.95,armor:28:armor:0.001:0.028
+R	warlock/demonology	60	6540	12731	gear	0.35800000000000004	sta:5:sta:0.066:0.33,armor:28:armor:0.001:0.028
 R	warlock/demonology	60	6540	12734	gear	6.028	sp:6:sp:1:6,armor:28:armor:0.001:0.028
 R	warlock/demonology	60	6540	12735	gear	4.028	spDmg:4:sp:1:4,armor:28:armor:0.001:0.028
-R	warlock/demonology	60	6540	12740	gear	0.106	sta:3:sta:0.026:0.078,armor:28:armor:0.001:0.028
-R	warlock/demonology	60	6540	12741	gear	0.106	sta:3:sta:0.026:0.078,armor:28:armor:0.001:0.028
-R	warlock/demonology	60	6540	12742	gear	0.106	sta:3:sta:0.026:0.078,armor:28:armor:0.001:0.028
-R	warlock/demonology	60	6540	12743	gear	0.106	sta:3:sta:0.026:0.078,armor:28:armor:0.001:0.028
-R	warlock/demonology	60	6540	12744	gear	0.106	sta:3:sta:0.026:0.078,armor:28:armor:0.001:0.028
-R	warlock/demonology	60	6540	12745	gear	2.08	sta:2:sta:0.026:0.052,sp:2:sp:1:2,armor:28:armor:0.001:0.028
+R	warlock/demonology	60	6540	12740	gear	0.226	sta:3:sta:0.066:0.198,armor:28:armor:0.001:0.028
+R	warlock/demonology	60	6540	12741	gear	0.226	sta:3:sta:0.066:0.198,armor:28:armor:0.001:0.028
+R	warlock/demonology	60	6540	12742	gear	0.226	sta:3:sta:0.066:0.198,armor:28:armor:0.001:0.028
+R	warlock/demonology	60	6540	12743	gear	0.226	sta:3:sta:0.066:0.198,armor:28:armor:0.001:0.028
+R	warlock/demonology	60	6540	12744	gear	0.226	sta:3:sta:0.066:0.198,armor:28:armor:0.001:0.028
+R	warlock/demonology	60	6540	12745	gear	2.16	sta:2:sta:0.066:0.132,sp:2:sp:1:2,armor:28:armor:0.001:0.028
 R	warlock/demonology	60	6540	12756	gear	0.028	armor:28:armor:0.001:0.028
-R	warlock/demonology	60	6540	12757	gear	3.038	spFire:7:spFire:0.43:3.01,armor:28:armor:0.001:0.028
+R	warlock/demonology	60	6540	12757	gear	2.688	spFire:7:spFire:0.38:2.66,armor:28:armor:0.001:0.028
 R	warlock/demonology	60	6540	12758	gear	0.028	armor:28:armor:0.001:0.028
 R	warlock/demonology	60	6540	12759	gear	0.028	armor:28:armor:0.001:0.028
-R	warlock/demonology	60	6540	12761	gear	3.4579999999999997	spShadow:7:spShadow:0.49:3.43,armor:28:armor:0.001:0.028
-R	warlock/demonology	60	7047	0	gear	5.986	spi:5:spi:0.31:1.55,spShadow:9:spShadow:0.49:4.41,armor:26:armor:0.001:0.026
+R	warlock/demonology	60	6540	12761	gear	4.508	spShadow:7:spShadow:0.64:4.48,armor:28:armor:0.001:0.028
+R	warlock/demonology	60	7047	0	gear	7.736	spi:5:spi:0.39:1.95,spShadow:9:spShadow:0.64:5.76,armor:26:armor:0.001:0.026
 R	warlock/demonology	60	11187	0	gear	0.004	armor:4:armor:0.001:0.004
-R	warlock/demonology	60	11288	0	ranged	4.625	sp:2:sp:1:2,rdps:17.5:rdps:0.15:2.625
+R	warlock/demonology	60	11288	0	ranged	5.85	sp:2:sp:1:2,rdps:17.5:rdps:0.22:3.85
 R	warlock/demonology	60	11994	0	gear	0.0	
-R	warlock/demonology	60	11994	12718	gear	0.078	sta:3:sta:0.026:0.078
-R	warlock/demonology	60	11994	12719	gear	1.008	spi:3:spi:0.31:0.93,sta:3:sta:0.026:0.078
-R	warlock/demonology	60	11994	12720	gear	0.9299999999999999	spi:3:spi:0.31:0.93
-R	warlock/demonology	60	11994	12721	gear	0.078	sta:3:sta:0.026:0.078
-R	warlock/demonology	60	11994	12722	gear	0.078	sta:3:sta:0.026:0.078
+R	warlock/demonology	60	11994	12718	gear	0.198	sta:3:sta:0.066:0.198
+R	warlock/demonology	60	11994	12719	gear	1.3679999999999999	spi:3:spi:0.39:1.17,sta:3:sta:0.066:0.198
+R	warlock/demonology	60	11994	12720	gear	1.17	spi:3:spi:0.39:1.17
+R	warlock/demonology	60	11994	12721	gear	0.198	sta:3:sta:0.066:0.198
+R	warlock/demonology	60	11994	12722	gear	0.198	sta:3:sta:0.066:0.198
 R	warlock/demonology	60	11994	12723	gear	0.0	
 R	warlock/demonology	60	11994	12724	gear	0.0	
-R	warlock/demonology	60	11994	12725	gear	0.9299999999999999	spi:3:spi:0.31:0.93
-R	warlock/demonology	60	11994	12726	gear	0.9299999999999999	spi:3:spi:0.31:0.93
+R	warlock/demonology	60	11994	12725	gear	1.17	spi:3:spi:0.39:1.17
+R	warlock/demonology	60	11994	12726	gear	1.17	spi:3:spi:0.39:1.17
 R	warlock/demonology	60	11994	12727	gear	0.0	
 R	warlock/demonology	60	11994	12728	gear	0.0	
 R	warlock/demonology	60	11994	12729	gear	0.0	
-R	warlock/demonology	60	11994	12730	gear	1.55	spi:5:spi:0.31:1.55
-R	warlock/demonology	60	11994	12731	gear	0.13	sta:5:sta:0.026:0.13
+R	warlock/demonology	60	11994	12730	gear	1.9500000000000002	spi:5:spi:0.39:1.95
+R	warlock/demonology	60	11994	12731	gear	0.33	sta:5:sta:0.066:0.33
 R	warlock/demonology	60	11994	12732	gear	0.0	
 R	warlock/demonology	60	11994	12733	gear	0.0	
 R	warlock/demonology	60	11994	12737	gear	0.0	
-R	warlock/demonology	60	11994	12738	gear	0.0	
+R	warlock/demonology	60	11994	12738	gear	0.34	mp5:2:mp5:0.17:0.34
 R	warlock/demonology	60	11994	12739	gear	0.0	
-R	warlock/demonology	60	11994	12740	gear	0.078	sta:3:sta:0.026:0.078
-R	warlock/demonology	60	11994	12741	gear	0.078	sta:3:sta:0.026:0.078
-R	warlock/demonology	60	11994	12742	gear	0.078	sta:3:sta:0.026:0.078
-R	warlock/demonology	60	11994	12743	gear	0.078	sta:3:sta:0.026:0.078
-R	warlock/demonology	60	11994	12744	gear	0.078	sta:3:sta:0.026:0.078
+R	warlock/demonology	60	11994	12740	gear	0.198	sta:3:sta:0.066:0.198
+R	warlock/demonology	60	11994	12741	gear	0.198	sta:3:sta:0.066:0.198
+R	warlock/demonology	60	11994	12742	gear	0.198	sta:3:sta:0.066:0.198
+R	warlock/demonology	60	11994	12743	gear	0.198	sta:3:sta:0.066:0.198
+R	warlock/demonology	60	11994	12744	gear	0.198	sta:3:sta:0.066:0.198
 R	warlock/demonology	60	14122	0	gear	0.014	armor:14:armor:0.001:0.014
-R	warlock/demonology	60	14122	12718	gear	0.066	sta:2:sta:0.026:0.052,armor:14:armor:0.001:0.014
-R	warlock/demonology	60	14122	12719	gear	0.686	spi:2:spi:0.31:0.62,sta:2:sta:0.026:0.052,armor:14:armor:0.001:0.014
-R	warlock/demonology	60	14122	12720	gear	0.634	spi:2:spi:0.31:0.62,armor:14:armor:0.001:0.014
+R	warlock/demonology	60	14122	12718	gear	0.14600000000000002	sta:2:sta:0.066:0.132,armor:14:armor:0.001:0.014
+R	warlock/demonology	60	14122	12719	gear	0.926	spi:2:spi:0.39:0.78,sta:2:sta:0.066:0.132,armor:14:armor:0.001:0.014
+R	warlock/demonology	60	14122	12720	gear	0.794	spi:2:spi:0.39:0.78,armor:14:armor:0.001:0.014
 R	warlock/demonology	60	14122	12729	gear	0.014	armor:14:armor:0.001:0.014
-R	warlock/demonology	60	14122	12730	gear	0.944	spi:3:spi:0.31:0.93,armor:14:armor:0.001:0.014
-R	warlock/demonology	60	14122	12731	gear	0.092	sta:3:sta:0.026:0.078,armor:14:armor:0.001:0.014
+R	warlock/demonology	60	14122	12730	gear	1.184	spi:3:spi:0.39:1.17,armor:14:armor:0.001:0.014
+R	warlock/demonology	60	14122	12731	gear	0.21200000000000002	sta:3:sta:0.066:0.198,armor:14:armor:0.001:0.014
 R	warlock/demonology	60	14122	12734	gear	4.014	sp:4:sp:1:4,armor:14:armor:0.001:0.014
 R	warlock/demonology	60	14122	12735	gear	2.014	spDmg:2:sp:1:2,armor:14:armor:0.001:0.014
-R	warlock/demonology	60	14122	12740	gear	0.066	sta:2:sta:0.026:0.052,armor:14:armor:0.001:0.014
-R	warlock/demonology	60	14122	12741	gear	0.066	sta:2:sta:0.026:0.052,armor:14:armor:0.001:0.014
-R	warlock/demonology	60	14122	12742	gear	0.066	sta:2:sta:0.026:0.052,armor:14:armor:0.001:0.014
-R	warlock/demonology	60	14122	12743	gear	0.066	sta:2:sta:0.026:0.052,armor:14:armor:0.001:0.014
-R	warlock/demonology	60	14122	12744	gear	0.066	sta:2:sta:0.026:0.052,armor:14:armor:0.001:0.014
-R	warlock/demonology	60	14122	12745	gear	1.04	sta:1:sta:0.026:0.026,sp:1:sp:1:1,armor:14:armor:0.001:0.014
+R	warlock/demonology	60	14122	12740	gear	0.14600000000000002	sta:2:sta:0.066:0.132,armor:14:armor:0.001:0.014
+R	warlock/demonology	60	14122	12741	gear	0.14600000000000002	sta:2:sta:0.066:0.132,armor:14:armor:0.001:0.014
+R	warlock/demonology	60	14122	12742	gear	0.14600000000000002	sta:2:sta:0.066:0.132,armor:14:armor:0.001:0.014
+R	warlock/demonology	60	14122	12743	gear	0.14600000000000002	sta:2:sta:0.066:0.132,armor:14:armor:0.001:0.014
+R	warlock/demonology	60	14122	12744	gear	0.14600000000000002	sta:2:sta:0.066:0.132,armor:14:armor:0.001:0.014
+R	warlock/demonology	60	14122	12745	gear	1.08	sta:1:sta:0.066:0.066,sp:1:sp:1:1,armor:14:armor:0.001:0.014
 R	warlock/demonology	60	14122	12756	gear	0.014	armor:14:armor:0.001:0.014
-R	warlock/demonology	60	14122	12757	gear	1.734	spFire:4:spFire:0.43:1.72,armor:14:armor:0.001:0.014
+R	warlock/demonology	60	14122	12757	gear	1.534	spFire:4:spFire:0.38:1.52,armor:14:armor:0.001:0.014
 R	warlock/demonology	60	14122	12758	gear	0.014	armor:14:armor:0.001:0.014
 R	warlock/demonology	60	14122	12759	gear	0.014	armor:14:armor:0.001:0.014
-R	warlock/demonology	60	14122	12761	gear	1.974	spShadow:4:spShadow:0.49:1.96,armor:14:armor:0.001:0.014
-R	warlock/demonology	60	14340	0	gear	0.582	sta:19:sta:0.026:0.494,armor:88:armor:0.001:0.088
-R	warlock/demonology	60	14673	0	gear	0.164	sta:5:sta:0.026:0.13,armor:34:armor:0.001:0.034
-R	warlock/demonology	60	15945	0	oh	0.672	sta:2:sta:0.026:0.052,spi:2:spi:0.31:0.62
-R	warlock/demonology	60	19557	0	mh	0.078	sta:3:sta:0.026:0.078
-R	warlock/demonology	60	254111	0	gear	8.991999999999999	sta:13:sta:0.026:0.338,spFire:20:spFire:0.43:8.6,armor:54:armor:0.001:0.054
-R	warlock/demonology	60	280082	0	mh	75.06	hit:1.5:spellHit:1.7:2.55,spi:21:spi:0.31:6.51,sp:66:sp:1:66
+R	warlock/demonology	60	14122	12761	gear	2.574	spShadow:4:spShadow:0.64:2.56,armor:14:armor:0.001:0.014
+R	warlock/demonology	60	14340	0	gear	1.342	sta:19:sta:0.066:1.254,armor:88:armor:0.001:0.088
+R	warlock/demonology	60	14673	0	gear	0.364	sta:5:sta:0.066:0.33,armor:34:armor:0.001:0.034
+R	warlock/demonology	60	15945	0	oh	0.912	sta:2:sta:0.066:0.132,spi:2:spi:0.39:0.78
+R	warlock/demonology	60	19557	0	mh	0.198	sta:3:sta:0.066:0.198
+R	warlock/demonology	60	254111	0	gear	8.512	sta:13:sta:0.066:0.858,spFire:20:spFire:0.38:7.6,armor:54:armor:0.001:0.054
+R	warlock/demonology	60	280082	0	mh	76.14	hit:1.5:spellHit:1.3:1.95,spi:21:spi:0.39:8.19,sp:66:sp:1:66
 R	warlock/destruction	12	25	0	mh	0.0	
-R	warlock/destruction	12	1315	0	gear	4.55	sta:10:sta:0.14:1.4,spi:15:spi:0.21:3.15
+R	warlock/destruction	12	1315	0	gear	4.65	sta:10:sta:0.075:0.75,spi:15:spi:0.26:3.9
 R	warlock/destruction	12	2140	0	mh	0.0	
-R	warlock/destruction	12	2140	12718	mh	0.29000000000000004	int:1:int:0.15:0.15,sta:1:sta:0.14:0.14
-R	warlock/destruction	12	2140	12917	mh	5.15	sp:5:sp:1:5,int:1:int:0.15:0.15
+R	warlock/destruction	12	2140	12718	mh	0.21500000000000002	int:1:int:0.14:0.14,sta:1:sta:0.075:0.075
+R	warlock/destruction	12	2140	12917	mh	5.14	sp:5:sp:1:5,int:1:int:0.14:0.14
 R	warlock/destruction	12	2225	0	mh	0.0	
 R	warlock/destruction	12	2614	0	gear	0.13049999999999998	armor:29:armor:0.0045:0.13
 R	warlock/destruction	12	4023	0	mh	0.0	
 R	warlock/destruction	12	5079	0	gear	0.0	
 R	warlock/destruction	12	6540	0	gear	0.126	armor:28:armor:0.0045:0.126
-R	warlock/destruction	12	6540	12718	gear	0.996	int:3:int:0.15:0.45,sta:3:sta:0.14:0.42,armor:28:armor:0.0045:0.126
-R	warlock/destruction	12	6540	12719	gear	1.1760000000000002	spi:3:spi:0.21:0.63,sta:3:sta:0.14:0.42,armor:28:armor:0.0045:0.126
-R	warlock/destruction	12	6540	12720	gear	1.206	int:3:int:0.15:0.45,spi:3:spi:0.21:0.63,armor:28:armor:0.0045:0.126
-R	warlock/destruction	12	6540	12729	gear	0.876	int:5:int:0.15:0.75,armor:28:armor:0.0045:0.126
-R	warlock/destruction	12	6540	12730	gear	1.1760000000000002	spi:5:spi:0.21:1.05,armor:28:armor:0.0045:0.126
-R	warlock/destruction	12	6540	12731	gear	0.8260000000000001	sta:5:sta:0.14:0.7,armor:28:armor:0.0045:0.126
+R	warlock/destruction	12	6540	12718	gear	0.771	int:3:int:0.14:0.42,sta:3:sta:0.075:0.225,armor:28:armor:0.0045:0.126
+R	warlock/destruction	12	6540	12719	gear	1.1309999999999998	spi:3:spi:0.26:0.78,sta:3:sta:0.075:0.225,armor:28:armor:0.0045:0.126
+R	warlock/destruction	12	6540	12720	gear	1.326	int:3:int:0.14:0.42,spi:3:spi:0.26:0.78,armor:28:armor:0.0045:0.126
+R	warlock/destruction	12	6540	12729	gear	0.8260000000000001	int:5:int:0.14:0.7,armor:28:armor:0.0045:0.126
+R	warlock/destruction	12	6540	12730	gear	1.4260000000000002	spi:5:spi:0.26:1.3,armor:28:armor:0.0045:0.126
+R	warlock/destruction	12	6540	12731	gear	0.501	sta:5:sta:0.075:0.375,armor:28:armor:0.0045:0.126
 R	warlock/destruction	12	6540	12734	gear	6.126	sp:6:sp:1:6,armor:28:armor:0.0045:0.126
 R	warlock/destruction	12	6540	12735	gear	4.126	spDmg:4:sp:1:4,armor:28:armor:0.0045:0.126
-R	warlock/destruction	12	6540	12740	gear	0.546	sta:3:sta:0.14:0.42,armor:28:armor:0.0045:0.126
-R	warlock/destruction	12	6540	12741	gear	0.546	sta:3:sta:0.14:0.42,armor:28:armor:0.0045:0.126
-R	warlock/destruction	12	6540	12742	gear	0.546	sta:3:sta:0.14:0.42,armor:28:armor:0.0045:0.126
-R	warlock/destruction	12	6540	12743	gear	0.546	sta:3:sta:0.14:0.42,armor:28:armor:0.0045:0.126
-R	warlock/destruction	12	6540	12744	gear	0.546	sta:3:sta:0.14:0.42,armor:28:armor:0.0045:0.126
-R	warlock/destruction	12	6540	12745	gear	3.006	int:4:int:0.15:0.6,sta:2:sta:0.14:0.28,sp:2:sp:1:2,armor:28:armor:0.0045:0.126
+R	warlock/destruction	12	6540	12740	gear	0.351	sta:3:sta:0.075:0.225,armor:28:armor:0.0045:0.126
+R	warlock/destruction	12	6540	12741	gear	0.351	sta:3:sta:0.075:0.225,armor:28:armor:0.0045:0.126
+R	warlock/destruction	12	6540	12742	gear	0.351	sta:3:sta:0.075:0.225,armor:28:armor:0.0045:0.126
+R	warlock/destruction	12	6540	12743	gear	0.351	sta:3:sta:0.075:0.225,armor:28:armor:0.0045:0.126
+R	warlock/destruction	12	6540	12744	gear	0.351	sta:3:sta:0.075:0.225,armor:28:armor:0.0045:0.126
+R	warlock/destruction	12	6540	12745	gear	2.836	int:4:int:0.14:0.56,sta:2:sta:0.075:0.15,sp:2:sp:1:2,armor:28:armor:0.0045:0.126
 R	warlock/destruction	12	6540	12756	gear	0.126	armor:28:armor:0.0045:0.126
-R	warlock/destruction	12	6540	12757	gear	2.226	spFire:7:spFire:0.3:2.1,armor:28:armor:0.0045:0.126
+R	warlock/destruction	12	6540	12757	gear	2.296	spFire:7:spFire:0.31:2.17,armor:28:armor:0.0045:0.126
 R	warlock/destruction	12	6540	12758	gear	0.126	armor:28:armor:0.0045:0.126
 R	warlock/destruction	12	6540	12759	gear	0.126	armor:28:armor:0.0045:0.126
-R	warlock/destruction	12	6540	12761	gear	4.746	spShadow:7:spShadow:0.66:4.62,armor:28:armor:0.0045:0.126
-R	warlock/destruction	12	7047	0	gear	7.107	spi:5:spi:0.21:1.05,spShadow:9:spShadow:0.66:5.94,armor:26:armor:0.0045:0.117
+R	warlock/destruction	12	6540	12761	gear	4.816000000000001	spShadow:7:spShadow:0.67:4.69,armor:28:armor:0.0045:0.126
+R	warlock/destruction	12	7047	0	gear	7.447	spi:5:spi:0.26:1.3,spShadow:9:spShadow:0.67:6.03,armor:26:armor:0.0045:0.117
 R	warlock/destruction	12	11187	0	gear	0.018	armor:4:armor:0.0045:0.018
-R	warlock/destruction	12	11288	0	ranged	12.674999999999999	sp:2:sp:1:2,rdps:17.5:rdps:0.61:10.675
+R	warlock/destruction	12	11288	0	ranged	10.05	sp:2:sp:1:2,rdps:17.5:rdps:0.46:8.05
 R	warlock/destruction	12	11994	0	gear	0.0	
-R	warlock/destruction	12	11994	12718	gear	0.87	int:3:int:0.15:0.45,sta:3:sta:0.14:0.42
-R	warlock/destruction	12	11994	12719	gear	1.05	spi:3:spi:0.21:0.63,sta:3:sta:0.14:0.42
-R	warlock/destruction	12	11994	12720	gear	1.08	int:3:int:0.15:0.45,spi:3:spi:0.21:0.63
-R	warlock/destruction	12	11994	12721	gear	0.42000000000000004	sta:3:sta:0.14:0.42
-R	warlock/destruction	12	11994	12722	gear	0.42000000000000004	sta:3:sta:0.14:0.42
-R	warlock/destruction	12	11994	12723	gear	0.44999999999999996	int:3:int:0.15:0.45
-R	warlock/destruction	12	11994	12724	gear	0.44999999999999996	int:3:int:0.15:0.45
-R	warlock/destruction	12	11994	12725	gear	0.63	spi:3:spi:0.21:0.63
-R	warlock/destruction	12	11994	12726	gear	0.63	spi:3:spi:0.21:0.63
+R	warlock/destruction	12	11994	12718	gear	0.645	int:3:int:0.14:0.42,sta:3:sta:0.075:0.225
+R	warlock/destruction	12	11994	12719	gear	1.005	spi:3:spi:0.26:0.78,sta:3:sta:0.075:0.225
+R	warlock/destruction	12	11994	12720	gear	1.2000000000000002	int:3:int:0.14:0.42,spi:3:spi:0.26:0.78
+R	warlock/destruction	12	11994	12721	gear	0.22499999999999998	sta:3:sta:0.075:0.225
+R	warlock/destruction	12	11994	12722	gear	0.22499999999999998	sta:3:sta:0.075:0.225
+R	warlock/destruction	12	11994	12723	gear	0.42000000000000004	int:3:int:0.14:0.42
+R	warlock/destruction	12	11994	12724	gear	0.42000000000000004	int:3:int:0.14:0.42
+R	warlock/destruction	12	11994	12725	gear	0.78	spi:3:spi:0.26:0.78
+R	warlock/destruction	12	11994	12726	gear	0.78	spi:3:spi:0.26:0.78
 R	warlock/destruction	12	11994	12727	gear	0.0	
 R	warlock/destruction	12	11994	12728	gear	0.0	
-R	warlock/destruction	12	11994	12729	gear	0.75	int:5:int:0.15:0.75
-R	warlock/destruction	12	11994	12730	gear	1.05	spi:5:spi:0.21:1.05
-R	warlock/destruction	12	11994	12731	gear	0.7000000000000001	sta:5:sta:0.14:0.7
+R	warlock/destruction	12	11994	12729	gear	0.7000000000000001	int:5:int:0.14:0.7
+R	warlock/destruction	12	11994	12730	gear	1.3	spi:5:spi:0.26:1.3
+R	warlock/destruction	12	11994	12731	gear	0.375	sta:5:sta:0.075:0.375
 R	warlock/destruction	12	11994	12732	gear	0.0	
 R	warlock/destruction	12	11994	12733	gear	0.0	
 R	warlock/destruction	12	11994	12737	gear	0.0	
 R	warlock/destruction	12	11994	12738	gear	0.32	mp5:2:mp5:0.16:0.32
 R	warlock/destruction	12	11994	12739	gear	0.0	
-R	warlock/destruction	12	11994	12740	gear	0.42000000000000004	sta:3:sta:0.14:0.42
-R	warlock/destruction	12	11994	12741	gear	0.42000000000000004	sta:3:sta:0.14:0.42
-R	warlock/destruction	12	11994	12742	gear	0.42000000000000004	sta:3:sta:0.14:0.42
-R	warlock/destruction	12	11994	12743	gear	0.42000000000000004	sta:3:sta:0.14:0.42
-R	warlock/destruction	12	11994	12744	gear	0.42000000000000004	sta:3:sta:0.14:0.42
+R	warlock/destruction	12	11994	12740	gear	0.22499999999999998	sta:3:sta:0.075:0.225
+R	warlock/destruction	12	11994	12741	gear	0.22499999999999998	sta:3:sta:0.075:0.225
+R	warlock/destruction	12	11994	12742	gear	0.22499999999999998	sta:3:sta:0.075:0.225
+R	warlock/destruction	12	11994	12743	gear	0.22499999999999998	sta:3:sta:0.075:0.225
+R	warlock/destruction	12	11994	12744	gear	0.22499999999999998	sta:3:sta:0.075:0.225
 R	warlock/destruction	12	14122	0	gear	0.063	armor:14:armor:0.0045:0.063
-R	warlock/destruction	12	14122	12718	gear	0.643	int:2:int:0.15:0.3,sta:2:sta:0.14:0.28,armor:14:armor:0.0045:0.063
-R	warlock/destruction	12	14122	12719	gear	0.7629999999999999	spi:2:spi:0.21:0.42,sta:2:sta:0.14:0.28,armor:14:armor:0.0045:0.063
-R	warlock/destruction	12	14122	12720	gear	0.7829999999999999	int:2:int:0.15:0.3,spi:2:spi:0.21:0.42,armor:14:armor:0.0045:0.063
-R	warlock/destruction	12	14122	12729	gear	0.5129999999999999	int:3:int:0.15:0.45,armor:14:armor:0.0045:0.063
-R	warlock/destruction	12	14122	12730	gear	0.6930000000000001	spi:3:spi:0.21:0.63,armor:14:armor:0.0045:0.063
-R	warlock/destruction	12	14122	12731	gear	0.48300000000000004	sta:3:sta:0.14:0.42,armor:14:armor:0.0045:0.063
+R	warlock/destruction	12	14122	12718	gear	0.49300000000000005	int:2:int:0.14:0.28,sta:2:sta:0.075:0.15,armor:14:armor:0.0045:0.063
+R	warlock/destruction	12	14122	12719	gear	0.7330000000000001	spi:2:spi:0.26:0.52,sta:2:sta:0.075:0.15,armor:14:armor:0.0045:0.063
+R	warlock/destruction	12	14122	12720	gear	0.863	int:2:int:0.14:0.28,spi:2:spi:0.26:0.52,armor:14:armor:0.0045:0.063
+R	warlock/destruction	12	14122	12729	gear	0.48300000000000004	int:3:int:0.14:0.42,armor:14:armor:0.0045:0.063
+R	warlock/destruction	12	14122	12730	gear	0.843	spi:3:spi:0.26:0.78,armor:14:armor:0.0045:0.063
+R	warlock/destruction	12	14122	12731	gear	0.288	sta:3:sta:0.075:0.225,armor:14:armor:0.0045:0.063
 R	warlock/destruction	12	14122	12734	gear	4.063	sp:4:sp:1:4,armor:14:armor:0.0045:0.063
 R	warlock/destruction	12	14122	12735	gear	2.063	spDmg:2:sp:1:2,armor:14:armor:0.0045:0.063
-R	warlock/destruction	12	14122	12740	gear	0.343	sta:2:sta:0.14:0.28,armor:14:armor:0.0045:0.063
-R	warlock/destruction	12	14122	12741	gear	0.343	sta:2:sta:0.14:0.28,armor:14:armor:0.0045:0.063
-R	warlock/destruction	12	14122	12742	gear	0.343	sta:2:sta:0.14:0.28,armor:14:armor:0.0045:0.063
-R	warlock/destruction	12	14122	12743	gear	0.343	sta:2:sta:0.14:0.28,armor:14:armor:0.0045:0.063
-R	warlock/destruction	12	14122	12744	gear	0.343	sta:2:sta:0.14:0.28,armor:14:armor:0.0045:0.063
-R	warlock/destruction	12	14122	12745	gear	1.503	int:2:int:0.15:0.3,sta:1:sta:0.14:0.14,sp:1:sp:1:1,armor:14:armor:0.0045:0.063
+R	warlock/destruction	12	14122	12740	gear	0.213	sta:2:sta:0.075:0.15,armor:14:armor:0.0045:0.063
+R	warlock/destruction	12	14122	12741	gear	0.213	sta:2:sta:0.075:0.15,armor:14:armor:0.0045:0.063
+R	warlock/destruction	12	14122	12742	gear	0.213	sta:2:sta:0.075:0.15,armor:14:armor:0.0045:0.063
+R	warlock/destruction	12	14122	12743	gear	0.213	sta:2:sta:0.075:0.15,armor:14:armor:0.0045:0.063
+R	warlock/destruction	12	14122	12744	gear	0.213	sta:2:sta:0.075:0.15,armor:14:armor:0.0045:0.063
+R	warlock/destruction	12	14122	12745	gear	1.418	int:2:int:0.14:0.28,sta:1:sta:0.075:0.075,sp:1:sp:1:1,armor:14:armor:0.0045:0.063
 R	warlock/destruction	12	14122	12756	gear	0.063	armor:14:armor:0.0045:0.063
-R	warlock/destruction	12	14122	12757	gear	1.263	spFire:4:spFire:0.3:1.2,armor:14:armor:0.0045:0.063
+R	warlock/destruction	12	14122	12757	gear	1.303	spFire:4:spFire:0.31:1.24,armor:14:armor:0.0045:0.063
 R	warlock/destruction	12	14122	12758	gear	0.063	armor:14:armor:0.0045:0.063
 R	warlock/destruction	12	14122	12759	gear	0.063	armor:14:armor:0.0045:0.063
-R	warlock/destruction	12	14122	12761	gear	2.7030000000000003	spShadow:4:spShadow:0.66:2.64,armor:14:armor:0.0045:0.063
-R	warlock/destruction	12	14340	0	gear	3.056	sta:19:sta:0.14:2.66,armor:88:armor:0.0045:0.396
-R	warlock/destruction	12	14673	0	gear	0.8530000000000001	sta:5:sta:0.14:0.7,armor:34:armor:0.0045:0.153
-R	warlock/destruction	12	15945	0	oh	0.7	sta:2:sta:0.14:0.28,spi:2:spi:0.21:0.42
-R	warlock/destruction	12	19557	0	mh	0.42000000000000004	sta:3:sta:0.14:0.42
-R	warlock/destruction	12	254111	0	gear	9.413	int:9:int:0.15:1.35,sta:13:sta:0.14:1.82,spFire:20:spFire:0.3:6,armor:54:armor:0.0045:0.243
-R	warlock/destruction	12	280082	0	mh	73.47	int:15:int:0.15:2.25,hit:1.5:spellHit:0.54:0.81,spi:21:spi:0.21:4.41,sp:66:sp:1:66
+R	warlock/destruction	12	14122	12761	gear	2.7430000000000003	spShadow:4:spShadow:0.67:2.68,armor:14:armor:0.0045:0.063
+R	warlock/destruction	12	14340	0	gear	1.821	sta:19:sta:0.075:1.425,armor:88:armor:0.0045:0.396
+R	warlock/destruction	12	14673	0	gear	0.528	sta:5:sta:0.075:0.375,armor:34:armor:0.0045:0.153
+R	warlock/destruction	12	15945	0	oh	0.67	sta:2:sta:0.075:0.15,spi:2:spi:0.26:0.52
+R	warlock/destruction	12	19557	0	mh	0.22499999999999998	sta:3:sta:0.075:0.225
+R	warlock/destruction	12	254111	0	gear	8.678	int:9:int:0.14:1.26,sta:13:sta:0.075:0.975,spFire:20:spFire:0.31:6.2,armor:54:armor:0.0045:0.243
+R	warlock/destruction	12	280082	0	mh	74.325	int:15:int:0.14:2.1,hit:1.5:spellHit:0.51:0.765,spi:21:spi:0.26:5.46,sp:66:sp:1:66
 R	warlock/destruction	25	25	0	mh	0.0	
-R	warlock/destruction	25	1315	0	gear	3.75	sta:10:sta:0.15:1.5,spi:15:spi:0.15:2.25
+R	warlock/destruction	25	1315	0	gear	4.65	sta:10:sta:0.12:1.2,spi:15:spi:0.23:3.45
 R	warlock/destruction	25	2140	0	mh	0.0	
-R	warlock/destruction	25	2140	12718	mh	0.163	int:1:int:0.013:0.013,sta:1:sta:0.15:0.15
-R	warlock/destruction	25	2140	12917	mh	5.013	sp:5:sp:1:5,int:1:int:0.013:0.013
+R	warlock/destruction	25	2140	12718	mh	0.12	sta:1:sta:0.12:0.12
+R	warlock/destruction	25	2140	12917	mh	5.0	sp:5:sp:1:5
 R	warlock/destruction	25	2225	0	mh	0.0	
-R	warlock/destruction	25	2614	0	gear	0.1595	armor:29:armor:0.0055:0.16
+R	warlock/destruction	25	2614	0	gear	0.13049999999999998	armor:29:armor:0.0045:0.13
 R	warlock/destruction	25	4023	0	mh	0.0	
 R	warlock/destruction	25	5079	0	gear	0.0	
-R	warlock/destruction	25	6540	0	gear	0.154	armor:28:armor:0.0055:0.154
-R	warlock/destruction	25	6540	12718	gear	0.6429999999999999	int:3:int:0.013:0.039,sta:3:sta:0.15:0.45,armor:28:armor:0.0055:0.154
-R	warlock/destruction	25	6540	12719	gear	1.0539999999999998	spi:3:spi:0.15:0.45,sta:3:sta:0.15:0.45,armor:28:armor:0.0055:0.154
-R	warlock/destruction	25	6540	12720	gear	0.6429999999999999	int:3:int:0.013:0.039,spi:3:spi:0.15:0.45,armor:28:armor:0.0055:0.154
-R	warlock/destruction	25	6540	12729	gear	0.219	int:5:int:0.013:0.065,armor:28:armor:0.0055:0.154
-R	warlock/destruction	25	6540	12730	gear	0.904	spi:5:spi:0.15:0.75,armor:28:armor:0.0055:0.154
-R	warlock/destruction	25	6540	12731	gear	0.904	sta:5:sta:0.15:0.75,armor:28:armor:0.0055:0.154
-R	warlock/destruction	25	6540	12734	gear	6.154	sp:6:sp:1:6,armor:28:armor:0.0055:0.154
-R	warlock/destruction	25	6540	12735	gear	4.154	spDmg:4:sp:1:4,armor:28:armor:0.0055:0.154
-R	warlock/destruction	25	6540	12740	gear	0.604	sta:3:sta:0.15:0.45,armor:28:armor:0.0055:0.154
-R	warlock/destruction	25	6540	12741	gear	0.604	sta:3:sta:0.15:0.45,armor:28:armor:0.0055:0.154
-R	warlock/destruction	25	6540	12742	gear	0.604	sta:3:sta:0.15:0.45,armor:28:armor:0.0055:0.154
-R	warlock/destruction	25	6540	12743	gear	0.604	sta:3:sta:0.15:0.45,armor:28:armor:0.0055:0.154
-R	warlock/destruction	25	6540	12744	gear	0.604	sta:3:sta:0.15:0.45,armor:28:armor:0.0055:0.154
-R	warlock/destruction	25	6540	12745	gear	2.506	int:4:int:0.013:0.052,sta:2:sta:0.15:0.3,sp:2:sp:1:2,armor:28:armor:0.0055:0.154
-R	warlock/destruction	25	6540	12756	gear	0.154	armor:28:armor:0.0055:0.154
-R	warlock/destruction	25	6540	12757	gear	1.904	spFire:7:spFire:0.25:1.75,armor:28:armor:0.0055:0.154
-R	warlock/destruction	25	6540	12758	gear	0.154	armor:28:armor:0.0055:0.154
-R	warlock/destruction	25	6540	12759	gear	0.154	armor:28:armor:0.0055:0.154
-R	warlock/destruction	25	6540	12761	gear	5.263999999999999	spShadow:7:spShadow:0.73:5.11,armor:28:armor:0.0055:0.154
-R	warlock/destruction	25	7047	0	gear	7.463	spi:5:spi:0.15:0.75,spShadow:9:spShadow:0.73:6.57,armor:26:armor:0.0055:0.143
-R	warlock/destruction	25	11187	0	gear	0.022	armor:4:armor:0.0055:0.022
-R	warlock/destruction	25	11288	0	ranged	7.25	sp:2:sp:1:2,rdps:17.5:rdps:0.3:5.25
+R	warlock/destruction	25	6540	0	gear	0.126	armor:28:armor:0.0045:0.126
+R	warlock/destruction	25	6540	12718	gear	0.486	sta:3:sta:0.12:0.36,armor:28:armor:0.0045:0.126
+R	warlock/destruction	25	6540	12719	gear	1.1760000000000002	spi:3:spi:0.23:0.69,sta:3:sta:0.12:0.36,armor:28:armor:0.0045:0.126
+R	warlock/destruction	25	6540	12720	gear	0.8160000000000001	spi:3:spi:0.23:0.69,armor:28:armor:0.0045:0.126
+R	warlock/destruction	25	6540	12729	gear	0.126	armor:28:armor:0.0045:0.126
+R	warlock/destruction	25	6540	12730	gear	1.2760000000000002	spi:5:spi:0.23:1.15,armor:28:armor:0.0045:0.126
+R	warlock/destruction	25	6540	12731	gear	0.726	sta:5:sta:0.12:0.6,armor:28:armor:0.0045:0.126
+R	warlock/destruction	25	6540	12734	gear	6.126	sp:6:sp:1:6,armor:28:armor:0.0045:0.126
+R	warlock/destruction	25	6540	12735	gear	4.126	spDmg:4:sp:1:4,armor:28:armor:0.0045:0.126
+R	warlock/destruction	25	6540	12740	gear	0.486	sta:3:sta:0.12:0.36,armor:28:armor:0.0045:0.126
+R	warlock/destruction	25	6540	12741	gear	0.486	sta:3:sta:0.12:0.36,armor:28:armor:0.0045:0.126
+R	warlock/destruction	25	6540	12742	gear	0.486	sta:3:sta:0.12:0.36,armor:28:armor:0.0045:0.126
+R	warlock/destruction	25	6540	12743	gear	0.486	sta:3:sta:0.12:0.36,armor:28:armor:0.0045:0.126
+R	warlock/destruction	25	6540	12744	gear	0.486	sta:3:sta:0.12:0.36,armor:28:armor:0.0045:0.126
+R	warlock/destruction	25	6540	12745	gear	2.366	sta:2:sta:0.12:0.24,sp:2:sp:1:2,armor:28:armor:0.0045:0.126
+R	warlock/destruction	25	6540	12756	gear	0.126	armor:28:armor:0.0045:0.126
+R	warlock/destruction	25	6540	12757	gear	1.9460000000000002	spFire:7:spFire:0.26:1.82,armor:28:armor:0.0045:0.126
+R	warlock/destruction	25	6540	12758	gear	0.126	armor:28:armor:0.0045:0.126
+R	warlock/destruction	25	6540	12759	gear	0.126	armor:28:armor:0.0045:0.126
+R	warlock/destruction	25	6540	12761	gear	5.166	spShadow:7:spShadow:0.72:5.04,armor:28:armor:0.0045:0.126
+R	warlock/destruction	25	7047	0	gear	7.747	spi:5:spi:0.23:1.15,spShadow:9:spShadow:0.72:6.48,armor:26:armor:0.0045:0.117
+R	warlock/destruction	25	11187	0	gear	0.018	armor:4:armor:0.0045:0.018
+R	warlock/destruction	25	11288	0	ranged	8.125	sp:2:sp:1:2,rdps:17.5:rdps:0.35:6.125
 R	warlock/destruction	25	11994	0	gear	0.0	
-R	warlock/destruction	25	11994	12718	gear	0.48899999999999993	int:3:int:0.013:0.039,sta:3:sta:0.15:0.45
-R	warlock/destruction	25	11994	12719	gear	0.8999999999999999	spi:3:spi:0.15:0.45,sta:3:sta:0.15:0.45
-R	warlock/destruction	25	11994	12720	gear	0.48899999999999993	int:3:int:0.013:0.039,spi:3:spi:0.15:0.45
-R	warlock/destruction	25	11994	12721	gear	0.44999999999999996	sta:3:sta:0.15:0.45
-R	warlock/destruction	25	11994	12722	gear	0.44999999999999996	sta:3:sta:0.15:0.45
-R	warlock/destruction	25	11994	12723	gear	0.039	int:3:int:0.013:0.039
-R	warlock/destruction	25	11994	12724	gear	0.039	int:3:int:0.013:0.039
-R	warlock/destruction	25	11994	12725	gear	0.44999999999999996	spi:3:spi:0.15:0.45
-R	warlock/destruction	25	11994	12726	gear	0.44999999999999996	spi:3:spi:0.15:0.45
+R	warlock/destruction	25	11994	12718	gear	0.36	sta:3:sta:0.12:0.36
+R	warlock/destruction	25	11994	12719	gear	1.05	spi:3:spi:0.23:0.69,sta:3:sta:0.12:0.36
+R	warlock/destruction	25	11994	12720	gear	0.6900000000000001	spi:3:spi:0.23:0.69
+R	warlock/destruction	25	11994	12721	gear	0.36	sta:3:sta:0.12:0.36
+R	warlock/destruction	25	11994	12722	gear	0.36	sta:3:sta:0.12:0.36
+R	warlock/destruction	25	11994	12723	gear	0.0	
+R	warlock/destruction	25	11994	12724	gear	0.0	
+R	warlock/destruction	25	11994	12725	gear	0.6900000000000001	spi:3:spi:0.23:0.69
+R	warlock/destruction	25	11994	12726	gear	0.6900000000000001	spi:3:spi:0.23:0.69
 R	warlock/destruction	25	11994	12727	gear	0.0	
 R	warlock/destruction	25	11994	12728	gear	0.0	
-R	warlock/destruction	25	11994	12729	gear	0.065	int:5:int:0.013:0.065
-R	warlock/destruction	25	11994	12730	gear	0.75	spi:5:spi:0.15:0.75
-R	warlock/destruction	25	11994	12731	gear	0.75	sta:5:sta:0.15:0.75
+R	warlock/destruction	25	11994	12729	gear	0.0	
+R	warlock/destruction	25	11994	12730	gear	1.1500000000000001	spi:5:spi:0.23:1.15
+R	warlock/destruction	25	11994	12731	gear	0.6	sta:5:sta:0.12:0.6
 R	warlock/destruction	25	11994	12732	gear	0.0	
 R	warlock/destruction	25	11994	12733	gear	0.0	
 R	warlock/destruction	25	11994	12737	gear	0.0	
-R	warlock/destruction	25	11994	12738	gear	0.24	mp5:2:mp5:0.12:0.24
+R	warlock/destruction	25	11994	12738	gear	0.2	mp5:2:mp5:0.1:0.2
 R	warlock/destruction	25	11994	12739	gear	0.0	
-R	warlock/destruction	25	11994	12740	gear	0.44999999999999996	sta:3:sta:0.15:0.45
-R	warlock/destruction	25	11994	12741	gear	0.44999999999999996	sta:3:sta:0.15:0.45
-R	warlock/destruction	25	11994	12742	gear	0.44999999999999996	sta:3:sta:0.15:0.45
-R	warlock/destruction	25	11994	12743	gear	0.44999999999999996	sta:3:sta:0.15:0.45
-R	warlock/destruction	25	11994	12744	gear	0.44999999999999996	sta:3:sta:0.15:0.45
-R	warlock/destruction	25	14122	0	gear	0.077	armor:14:armor:0.0055:0.077
-R	warlock/destruction	25	14122	12718	gear	0.403	int:2:int:0.013:0.026,sta:2:sta:0.15:0.3,armor:14:armor:0.0055:0.077
-R	warlock/destruction	25	14122	12719	gear	0.6769999999999999	spi:2:spi:0.15:0.3,sta:2:sta:0.15:0.3,armor:14:armor:0.0055:0.077
-R	warlock/destruction	25	14122	12720	gear	0.403	int:2:int:0.013:0.026,spi:2:spi:0.15:0.3,armor:14:armor:0.0055:0.077
-R	warlock/destruction	25	14122	12729	gear	0.11599999999999999	int:3:int:0.013:0.039,armor:14:armor:0.0055:0.077
-R	warlock/destruction	25	14122	12730	gear	0.5269999999999999	spi:3:spi:0.15:0.45,armor:14:armor:0.0055:0.077
-R	warlock/destruction	25	14122	12731	gear	0.5269999999999999	sta:3:sta:0.15:0.45,armor:14:armor:0.0055:0.077
-R	warlock/destruction	25	14122	12734	gear	4.077	sp:4:sp:1:4,armor:14:armor:0.0055:0.077
-R	warlock/destruction	25	14122	12735	gear	2.077	spDmg:2:sp:1:2,armor:14:armor:0.0055:0.077
-R	warlock/destruction	25	14122	12740	gear	0.377	sta:2:sta:0.15:0.3,armor:14:armor:0.0055:0.077
-R	warlock/destruction	25	14122	12741	gear	0.377	sta:2:sta:0.15:0.3,armor:14:armor:0.0055:0.077
-R	warlock/destruction	25	14122	12742	gear	0.377	sta:2:sta:0.15:0.3,armor:14:armor:0.0055:0.077
-R	warlock/destruction	25	14122	12743	gear	0.377	sta:2:sta:0.15:0.3,armor:14:armor:0.0055:0.077
-R	warlock/destruction	25	14122	12744	gear	0.377	sta:2:sta:0.15:0.3,armor:14:armor:0.0055:0.077
-R	warlock/destruction	25	14122	12745	gear	1.253	int:2:int:0.013:0.026,sta:1:sta:0.15:0.15,sp:1:sp:1:1,armor:14:armor:0.0055:0.077
-R	warlock/destruction	25	14122	12756	gear	0.077	armor:14:armor:0.0055:0.077
-R	warlock/destruction	25	14122	12757	gear	1.077	spFire:4:spFire:0.25:1,armor:14:armor:0.0055:0.077
-R	warlock/destruction	25	14122	12758	gear	0.077	armor:14:armor:0.0055:0.077
-R	warlock/destruction	25	14122	12759	gear	0.077	armor:14:armor:0.0055:0.077
-R	warlock/destruction	25	14122	12761	gear	2.997	spShadow:4:spShadow:0.73:2.92,armor:14:armor:0.0055:0.077
-R	warlock/destruction	25	14340	0	gear	3.334	sta:19:sta:0.15:2.85,armor:88:armor:0.0055:0.484
-R	warlock/destruction	25	14673	0	gear	0.937	sta:5:sta:0.15:0.75,armor:34:armor:0.0055:0.187
-R	warlock/destruction	25	15945	0	oh	0.6	sta:2:sta:0.15:0.3,spi:2:spi:0.15:0.3
-R	warlock/destruction	25	19557	0	mh	0.44999999999999996	sta:3:sta:0.15:0.45
-R	warlock/destruction	25	254111	0	gear	7.364	int:9:int:0.013:0.117,sta:13:sta:0.15:1.95,spFire:20:spFire:0.25:5,armor:54:armor:0.0055:0.297
-R	warlock/destruction	25	280082	0	mh	70.155	int:15:int:0.013:0.195,hit:1.5:spellHit:0.54:0.81,spi:21:spi:0.15:3.15,sp:66:sp:1:66
+R	warlock/destruction	25	11994	12740	gear	0.36	sta:3:sta:0.12:0.36
+R	warlock/destruction	25	11994	12741	gear	0.36	sta:3:sta:0.12:0.36
+R	warlock/destruction	25	11994	12742	gear	0.36	sta:3:sta:0.12:0.36
+R	warlock/destruction	25	11994	12743	gear	0.36	sta:3:sta:0.12:0.36
+R	warlock/destruction	25	11994	12744	gear	0.36	sta:3:sta:0.12:0.36
+R	warlock/destruction	25	14122	0	gear	0.063	armor:14:armor:0.0045:0.063
+R	warlock/destruction	25	14122	12718	gear	0.303	sta:2:sta:0.12:0.24,armor:14:armor:0.0045:0.063
+R	warlock/destruction	25	14122	12719	gear	0.7629999999999999	spi:2:spi:0.23:0.46,sta:2:sta:0.12:0.24,armor:14:armor:0.0045:0.063
+R	warlock/destruction	25	14122	12720	gear	0.523	spi:2:spi:0.23:0.46,armor:14:armor:0.0045:0.063
+R	warlock/destruction	25	14122	12729	gear	0.063	armor:14:armor:0.0045:0.063
+R	warlock/destruction	25	14122	12730	gear	0.7530000000000001	spi:3:spi:0.23:0.69,armor:14:armor:0.0045:0.063
+R	warlock/destruction	25	14122	12731	gear	0.423	sta:3:sta:0.12:0.36,armor:14:armor:0.0045:0.063
+R	warlock/destruction	25	14122	12734	gear	4.063	sp:4:sp:1:4,armor:14:armor:0.0045:0.063
+R	warlock/destruction	25	14122	12735	gear	2.063	spDmg:2:sp:1:2,armor:14:armor:0.0045:0.063
+R	warlock/destruction	25	14122	12740	gear	0.303	sta:2:sta:0.12:0.24,armor:14:armor:0.0045:0.063
+R	warlock/destruction	25	14122	12741	gear	0.303	sta:2:sta:0.12:0.24,armor:14:armor:0.0045:0.063
+R	warlock/destruction	25	14122	12742	gear	0.303	sta:2:sta:0.12:0.24,armor:14:armor:0.0045:0.063
+R	warlock/destruction	25	14122	12743	gear	0.303	sta:2:sta:0.12:0.24,armor:14:armor:0.0045:0.063
+R	warlock/destruction	25	14122	12744	gear	0.303	sta:2:sta:0.12:0.24,armor:14:armor:0.0045:0.063
+R	warlock/destruction	25	14122	12745	gear	1.183	sta:1:sta:0.12:0.12,sp:1:sp:1:1,armor:14:armor:0.0045:0.063
+R	warlock/destruction	25	14122	12756	gear	0.063	armor:14:armor:0.0045:0.063
+R	warlock/destruction	25	14122	12757	gear	1.103	spFire:4:spFire:0.26:1.04,armor:14:armor:0.0045:0.063
+R	warlock/destruction	25	14122	12758	gear	0.063	armor:14:armor:0.0045:0.063
+R	warlock/destruction	25	14122	12759	gear	0.063	armor:14:armor:0.0045:0.063
+R	warlock/destruction	25	14122	12761	gear	2.943	spShadow:4:spShadow:0.72:2.88,armor:14:armor:0.0045:0.063
+R	warlock/destruction	25	14340	0	gear	2.6759999999999997	sta:19:sta:0.12:2.28,armor:88:armor:0.0045:0.396
+R	warlock/destruction	25	14673	0	gear	0.753	sta:5:sta:0.12:0.6,armor:34:armor:0.0045:0.153
+R	warlock/destruction	25	15945	0	oh	0.7	sta:2:sta:0.12:0.24,spi:2:spi:0.23:0.46
+R	warlock/destruction	25	19557	0	mh	0.36	sta:3:sta:0.12:0.36
+R	warlock/destruction	25	254111	0	gear	7.003	sta:13:sta:0.12:1.56,spFire:20:spFire:0.26:5.2,armor:54:armor:0.0045:0.243
+R	warlock/destruction	25	280082	0	mh	71.67	hit:1.5:spellHit:0.56:0.84,spi:21:spi:0.23:4.83,sp:66:sp:1:66
 R	warlock/destruction	34	25	0	mh	0.0	
-R	warlock/destruction	34	1315	0	gear	5.8	sta:10:sta:0.13:1.3,spi:15:spi:0.3:4.5
+R	warlock/destruction	34	1315	0	gear	7.22	sta:10:sta:0.062:0.62,spi:15:spi:0.44:6.6
 R	warlock/destruction	34	2140	0	mh	0.0	
-R	warlock/destruction	34	2140	12718	mh	0.19	int:1:int:0.06:0.06,sta:1:sta:0.13:0.13
-R	warlock/destruction	34	2140	12917	mh	5.06	sp:5:sp:1:5,int:1:int:0.06:0.06
+R	warlock/destruction	34	2140	12718	mh	0.062	sta:1:sta:0.062:0.062
+R	warlock/destruction	34	2140	12917	mh	5.0	sp:5:sp:1:5
 R	warlock/destruction	34	2225	0	mh	0.0	
-R	warlock/destruction	34	2614	0	gear	0.203	armor:29:armor:0.007:0.203
+R	warlock/destruction	34	2614	0	gear	0.058	armor:29:armor:0.002:0.058
 R	warlock/destruction	34	4023	0	mh	0.0	
 R	warlock/destruction	34	5079	0	gear	0.0	
-R	warlock/destruction	34	6540	0	gear	0.196	armor:28:armor:0.007:0.196
-R	warlock/destruction	34	6540	12718	gear	0.766	int:3:int:0.06:0.18,sta:3:sta:0.13:0.39,armor:28:armor:0.007:0.196
-R	warlock/destruction	34	6540	12719	gear	1.486	spi:3:spi:0.3:0.9,sta:3:sta:0.13:0.39,armor:28:armor:0.007:0.196
-R	warlock/destruction	34	6540	12720	gear	1.2759999999999998	int:3:int:0.06:0.18,spi:3:spi:0.3:0.9,armor:28:armor:0.007:0.196
-R	warlock/destruction	34	6540	12729	gear	0.496	int:5:int:0.06:0.3,armor:28:armor:0.007:0.196
-R	warlock/destruction	34	6540	12730	gear	1.696	spi:5:spi:0.3:1.5,armor:28:armor:0.007:0.196
-R	warlock/destruction	34	6540	12731	gear	0.8460000000000001	sta:5:sta:0.13:0.65,armor:28:armor:0.007:0.196
-R	warlock/destruction	34	6540	12734	gear	6.196	sp:6:sp:1:6,armor:28:armor:0.007:0.196
-R	warlock/destruction	34	6540	12735	gear	4.196	spDmg:4:sp:1:4,armor:28:armor:0.007:0.196
-R	warlock/destruction	34	6540	12740	gear	0.5860000000000001	sta:3:sta:0.13:0.39,armor:28:armor:0.007:0.196
-R	warlock/destruction	34	6540	12741	gear	0.5860000000000001	sta:3:sta:0.13:0.39,armor:28:armor:0.007:0.196
-R	warlock/destruction	34	6540	12742	gear	0.5860000000000001	sta:3:sta:0.13:0.39,armor:28:armor:0.007:0.196
-R	warlock/destruction	34	6540	12743	gear	0.5860000000000001	sta:3:sta:0.13:0.39,armor:28:armor:0.007:0.196
-R	warlock/destruction	34	6540	12744	gear	0.5860000000000001	sta:3:sta:0.13:0.39,armor:28:armor:0.007:0.196
-R	warlock/destruction	34	6540	12745	gear	2.696	int:4:int:0.06:0.24,sta:2:sta:0.13:0.26,sp:2:sp:1:2,armor:28:armor:0.007:0.196
-R	warlock/destruction	34	6540	12756	gear	0.196	armor:28:armor:0.007:0.196
-R	warlock/destruction	34	6540	12757	gear	3.486	spFire:7:spFire:0.47:3.29,armor:28:armor:0.007:0.196
-R	warlock/destruction	34	6540	12758	gear	0.196	armor:28:armor:0.007:0.196
-R	warlock/destruction	34	6540	12759	gear	0.196	armor:28:armor:0.007:0.196
-R	warlock/destruction	34	6540	12761	gear	3.906	spShadow:7:spShadow:0.53:3.71,armor:28:armor:0.007:0.196
-R	warlock/destruction	34	7047	0	gear	6.452000000000001	spi:5:spi:0.3:1.5,spShadow:9:spShadow:0.53:4.77,armor:26:armor:0.007:0.182
-R	warlock/destruction	34	11187	0	gear	0.028	armor:4:armor:0.007:0.028
-R	warlock/destruction	34	11288	0	ranged	14.6	sp:2:sp:1:2,rdps:17.5:rdps:0.72:12.6
+R	warlock/destruction	34	6540	0	gear	0.056	armor:28:armor:0.002:0.056
+R	warlock/destruction	34	6540	12718	gear	0.242	sta:3:sta:0.062:0.186,armor:28:armor:0.002:0.056
+R	warlock/destruction	34	6540	12719	gear	1.562	spi:3:spi:0.44:1.32,sta:3:sta:0.062:0.186,armor:28:armor:0.002:0.056
+R	warlock/destruction	34	6540	12720	gear	1.3760000000000001	spi:3:spi:0.44:1.32,armor:28:armor:0.002:0.056
+R	warlock/destruction	34	6540	12729	gear	0.056	armor:28:armor:0.002:0.056
+R	warlock/destruction	34	6540	12730	gear	2.2560000000000002	spi:5:spi:0.44:2.2,armor:28:armor:0.002:0.056
+R	warlock/destruction	34	6540	12731	gear	0.366	sta:5:sta:0.062:0.31,armor:28:armor:0.002:0.056
+R	warlock/destruction	34	6540	12734	gear	6.056	sp:6:sp:1:6,armor:28:armor:0.002:0.056
+R	warlock/destruction	34	6540	12735	gear	4.056	spDmg:4:sp:1:4,armor:28:armor:0.002:0.056
+R	warlock/destruction	34	6540	12740	gear	0.242	sta:3:sta:0.062:0.186,armor:28:armor:0.002:0.056
+R	warlock/destruction	34	6540	12741	gear	0.242	sta:3:sta:0.062:0.186,armor:28:armor:0.002:0.056
+R	warlock/destruction	34	6540	12742	gear	0.242	sta:3:sta:0.062:0.186,armor:28:armor:0.002:0.056
+R	warlock/destruction	34	6540	12743	gear	0.242	sta:3:sta:0.062:0.186,armor:28:armor:0.002:0.056
+R	warlock/destruction	34	6540	12744	gear	0.242	sta:3:sta:0.062:0.186,armor:28:armor:0.002:0.056
+R	warlock/destruction	34	6540	12745	gear	2.18	sta:2:sta:0.062:0.124,sp:2:sp:1:2,armor:28:armor:0.002:0.056
+R	warlock/destruction	34	6540	12756	gear	0.056	armor:28:armor:0.002:0.056
+R	warlock/destruction	34	6540	12757	gear	3.9760000000000004	spFire:7:spFire:0.56:3.92,armor:28:armor:0.002:0.056
+R	warlock/destruction	34	6540	12758	gear	0.056	armor:28:armor:0.002:0.056
+R	warlock/destruction	34	6540	12759	gear	0.056	armor:28:armor:0.002:0.056
+R	warlock/destruction	34	6540	12761	gear	3.066	spShadow:7:spShadow:0.43:3.01,armor:28:armor:0.002:0.056
+R	warlock/destruction	34	7047	0	gear	6.122	spi:5:spi:0.44:2.2,spShadow:9:spShadow:0.43:3.87,armor:26:armor:0.002:0.052
+R	warlock/destruction	34	11187	0	gear	0.008	armor:4:armor:0.002:0.008
+R	warlock/destruction	34	11288	0	ranged	11.275	sp:2:sp:1:2,rdps:17.5:rdps:0.53:9.275
 R	warlock/destruction	34	11994	0	gear	0.0	
-R	warlock/destruction	34	11994	12718	gear	0.5700000000000001	int:3:int:0.06:0.18,sta:3:sta:0.13:0.39
-R	warlock/destruction	34	11994	12719	gear	1.29	spi:3:spi:0.3:0.9,sta:3:sta:0.13:0.39
-R	warlock/destruction	34	11994	12720	gear	1.0799999999999998	int:3:int:0.06:0.18,spi:3:spi:0.3:0.9
-R	warlock/destruction	34	11994	12721	gear	0.39	sta:3:sta:0.13:0.39
-R	warlock/destruction	34	11994	12722	gear	0.39	sta:3:sta:0.13:0.39
-R	warlock/destruction	34	11994	12723	gear	0.18	int:3:int:0.06:0.18
-R	warlock/destruction	34	11994	12724	gear	0.18	int:3:int:0.06:0.18
-R	warlock/destruction	34	11994	12725	gear	0.8999999999999999	spi:3:spi:0.3:0.9
-R	warlock/destruction	34	11994	12726	gear	0.8999999999999999	spi:3:spi:0.3:0.9
+R	warlock/destruction	34	11994	12718	gear	0.186	sta:3:sta:0.062:0.186
+R	warlock/destruction	34	11994	12719	gear	1.506	spi:3:spi:0.44:1.32,sta:3:sta:0.062:0.186
+R	warlock/destruction	34	11994	12720	gear	1.32	spi:3:spi:0.44:1.32
+R	warlock/destruction	34	11994	12721	gear	0.186	sta:3:sta:0.062:0.186
+R	warlock/destruction	34	11994	12722	gear	0.186	sta:3:sta:0.062:0.186
+R	warlock/destruction	34	11994	12723	gear	0.0	
+R	warlock/destruction	34	11994	12724	gear	0.0	
+R	warlock/destruction	34	11994	12725	gear	1.32	spi:3:spi:0.44:1.32
+R	warlock/destruction	34	11994	12726	gear	1.32	spi:3:spi:0.44:1.32
 R	warlock/destruction	34	11994	12727	gear	0.0	
 R	warlock/destruction	34	11994	12728	gear	0.0	
-R	warlock/destruction	34	11994	12729	gear	0.3	int:5:int:0.06:0.3
-R	warlock/destruction	34	11994	12730	gear	1.5	spi:5:spi:0.3:1.5
-R	warlock/destruction	34	11994	12731	gear	0.65	sta:5:sta:0.13:0.65
+R	warlock/destruction	34	11994	12729	gear	0.0	
+R	warlock/destruction	34	11994	12730	gear	2.2	spi:5:spi:0.44:2.2
+R	warlock/destruction	34	11994	12731	gear	0.31	sta:5:sta:0.062:0.31
 R	warlock/destruction	34	11994	12732	gear	0.0	
 R	warlock/destruction	34	11994	12733	gear	0.0	
 R	warlock/destruction	34	11994	12737	gear	0.0	
-R	warlock/destruction	34	11994	12738	gear	0.28	mp5:2:mp5:0.14:0.28
+R	warlock/destruction	34	11994	12738	gear	0.16	mp5:2:mp5:0.08:0.16
 R	warlock/destruction	34	11994	12739	gear	0.0	
-R	warlock/destruction	34	11994	12740	gear	0.39	sta:3:sta:0.13:0.39
-R	warlock/destruction	34	11994	12741	gear	0.39	sta:3:sta:0.13:0.39
-R	warlock/destruction	34	11994	12742	gear	0.39	sta:3:sta:0.13:0.39
-R	warlock/destruction	34	11994	12743	gear	0.39	sta:3:sta:0.13:0.39
-R	warlock/destruction	34	11994	12744	gear	0.39	sta:3:sta:0.13:0.39
-R	warlock/destruction	34	14122	0	gear	0.098	armor:14:armor:0.007:0.098
-R	warlock/destruction	34	14122	12718	gear	0.478	int:2:int:0.06:0.12,sta:2:sta:0.13:0.26,armor:14:armor:0.007:0.098
-R	warlock/destruction	34	14122	12719	gear	0.958	spi:2:spi:0.3:0.6,sta:2:sta:0.13:0.26,armor:14:armor:0.007:0.098
-R	warlock/destruction	34	14122	12720	gear	0.818	int:2:int:0.06:0.12,spi:2:spi:0.3:0.6,armor:14:armor:0.007:0.098
-R	warlock/destruction	34	14122	12729	gear	0.278	int:3:int:0.06:0.18,armor:14:armor:0.007:0.098
-R	warlock/destruction	34	14122	12730	gear	0.9979999999999999	spi:3:spi:0.3:0.9,armor:14:armor:0.007:0.098
-R	warlock/destruction	34	14122	12731	gear	0.488	sta:3:sta:0.13:0.39,armor:14:armor:0.007:0.098
-R	warlock/destruction	34	14122	12734	gear	4.098	sp:4:sp:1:4,armor:14:armor:0.007:0.098
-R	warlock/destruction	34	14122	12735	gear	2.098	spDmg:2:sp:1:2,armor:14:armor:0.007:0.098
-R	warlock/destruction	34	14122	12740	gear	0.358	sta:2:sta:0.13:0.26,armor:14:armor:0.007:0.098
-R	warlock/destruction	34	14122	12741	gear	0.358	sta:2:sta:0.13:0.26,armor:14:armor:0.007:0.098
-R	warlock/destruction	34	14122	12742	gear	0.358	sta:2:sta:0.13:0.26,armor:14:armor:0.007:0.098
-R	warlock/destruction	34	14122	12743	gear	0.358	sta:2:sta:0.13:0.26,armor:14:armor:0.007:0.098
-R	warlock/destruction	34	14122	12744	gear	0.358	sta:2:sta:0.13:0.26,armor:14:armor:0.007:0.098
-R	warlock/destruction	34	14122	12745	gear	1.348	int:2:int:0.06:0.12,sta:1:sta:0.13:0.13,sp:1:sp:1:1,armor:14:armor:0.007:0.098
-R	warlock/destruction	34	14122	12756	gear	0.098	armor:14:armor:0.007:0.098
-R	warlock/destruction	34	14122	12757	gear	1.978	spFire:4:spFire:0.47:1.88,armor:14:armor:0.007:0.098
-R	warlock/destruction	34	14122	12758	gear	0.098	armor:14:armor:0.007:0.098
-R	warlock/destruction	34	14122	12759	gear	0.098	armor:14:armor:0.007:0.098
-R	warlock/destruction	34	14122	12761	gear	2.218	spShadow:4:spShadow:0.53:2.12,armor:14:armor:0.007:0.098
-R	warlock/destruction	34	14340	0	gear	3.0860000000000003	sta:19:sta:0.13:2.47,armor:88:armor:0.007:0.616
-R	warlock/destruction	34	14673	0	gear	0.888	sta:5:sta:0.13:0.65,armor:34:armor:0.007:0.238
-R	warlock/destruction	34	15945	0	oh	0.86	sta:2:sta:0.13:0.26,spi:2:spi:0.3:0.6
-R	warlock/destruction	34	19557	0	mh	0.39	sta:3:sta:0.13:0.39
-R	warlock/destruction	34	254111	0	gear	12.008	int:9:int:0.06:0.54,sta:13:sta:0.13:1.69,spFire:20:spFire:0.47:9.4,armor:54:armor:0.007:0.378
-R	warlock/destruction	34	280082	0	mh	74.85	int:15:int:0.06:0.9,hit:1.5:spellHit:1.1:1.65,spi:21:spi:0.3:6.3,sp:66:sp:1:66
+R	warlock/destruction	34	11994	12740	gear	0.186	sta:3:sta:0.062:0.186
+R	warlock/destruction	34	11994	12741	gear	0.186	sta:3:sta:0.062:0.186
+R	warlock/destruction	34	11994	12742	gear	0.186	sta:3:sta:0.062:0.186
+R	warlock/destruction	34	11994	12743	gear	0.186	sta:3:sta:0.062:0.186
+R	warlock/destruction	34	11994	12744	gear	0.186	sta:3:sta:0.062:0.186
+R	warlock/destruction	34	14122	0	gear	0.028	armor:14:armor:0.002:0.028
+R	warlock/destruction	34	14122	12718	gear	0.152	sta:2:sta:0.062:0.124,armor:14:armor:0.002:0.028
+R	warlock/destruction	34	14122	12719	gear	1.032	spi:2:spi:0.44:0.88,sta:2:sta:0.062:0.124,armor:14:armor:0.002:0.028
+R	warlock/destruction	34	14122	12720	gear	0.908	spi:2:spi:0.44:0.88,armor:14:armor:0.002:0.028
+R	warlock/destruction	34	14122	12729	gear	0.028	armor:14:armor:0.002:0.028
+R	warlock/destruction	34	14122	12730	gear	1.348	spi:3:spi:0.44:1.32,armor:14:armor:0.002:0.028
+R	warlock/destruction	34	14122	12731	gear	0.214	sta:3:sta:0.062:0.186,armor:14:armor:0.002:0.028
+R	warlock/destruction	34	14122	12734	gear	4.028	sp:4:sp:1:4,armor:14:armor:0.002:0.028
+R	warlock/destruction	34	14122	12735	gear	2.028	spDmg:2:sp:1:2,armor:14:armor:0.002:0.028
+R	warlock/destruction	34	14122	12740	gear	0.152	sta:2:sta:0.062:0.124,armor:14:armor:0.002:0.028
+R	warlock/destruction	34	14122	12741	gear	0.152	sta:2:sta:0.062:0.124,armor:14:armor:0.002:0.028
+R	warlock/destruction	34	14122	12742	gear	0.152	sta:2:sta:0.062:0.124,armor:14:armor:0.002:0.028
+R	warlock/destruction	34	14122	12743	gear	0.152	sta:2:sta:0.062:0.124,armor:14:armor:0.002:0.028
+R	warlock/destruction	34	14122	12744	gear	0.152	sta:2:sta:0.062:0.124,armor:14:armor:0.002:0.028
+R	warlock/destruction	34	14122	12745	gear	1.09	sta:1:sta:0.062:0.062,sp:1:sp:1:1,armor:14:armor:0.002:0.028
+R	warlock/destruction	34	14122	12756	gear	0.028	armor:14:armor:0.002:0.028
+R	warlock/destruction	34	14122	12757	gear	2.2680000000000002	spFire:4:spFire:0.56:2.24,armor:14:armor:0.002:0.028
+R	warlock/destruction	34	14122	12758	gear	0.028	armor:14:armor:0.002:0.028
+R	warlock/destruction	34	14122	12759	gear	0.028	armor:14:armor:0.002:0.028
+R	warlock/destruction	34	14122	12761	gear	1.748	spShadow:4:spShadow:0.43:1.72,armor:14:armor:0.002:0.028
+R	warlock/destruction	34	14340	0	gear	1.3539999999999999	sta:19:sta:0.062:1.178,armor:88:armor:0.002:0.176
+R	warlock/destruction	34	14673	0	gear	0.378	sta:5:sta:0.062:0.31,armor:34:armor:0.002:0.068
+R	warlock/destruction	34	15945	0	oh	1.004	sta:2:sta:0.062:0.124,spi:2:spi:0.44:0.88
+R	warlock/destruction	34	19557	0	mh	0.186	sta:3:sta:0.062:0.186
+R	warlock/destruction	34	254111	0	gear	12.114	sta:13:sta:0.062:0.806,spFire:20:spFire:0.56:11.2,armor:54:armor:0.002:0.108
+R	warlock/destruction	34	280082	0	mh	76.89	hit:1.5:spellHit:1.1:1.65,spi:21:spi:0.44:9.24,sp:66:sp:1:66
 R	warlock/destruction	45	25	0	mh	0.0	
-R	warlock/destruction	45	1315	0	gear	3.8500000000000005	sta:10:sta:0.13:1.3,spi:15:spi:0.17:2.55
+R	warlock/destruction	45	1315	0	gear	5.1	sta:10:sta:0.18:1.8,spi:15:spi:0.22:3.3
 R	warlock/destruction	45	2140	0	mh	0.0	
-R	warlock/destruction	45	2140	12718	mh	0.26	int:1:int:0.13:0.13,sta:1:sta:0.13:0.13
-R	warlock/destruction	45	2140	12917	mh	5.13	sp:5:sp:1:5,int:1:int:0.13:0.13
+R	warlock/destruction	45	2140	12718	mh	0.22	int:1:int:0.04:0.04,sta:1:sta:0.18:0.18
+R	warlock/destruction	45	2140	12917	mh	5.04	sp:5:sp:1:5,int:1:int:0.04:0.04
 R	warlock/destruction	45	2225	0	mh	0.0	
-R	warlock/destruction	45	2614	0	gear	0.17400000000000002	armor:29:armor:0.006:0.174
+R	warlock/destruction	45	2614	0	gear	0.116	armor:29:armor:0.004:0.116
 R	warlock/destruction	45	4023	0	mh	0.0	
 R	warlock/destruction	45	5079	0	gear	0.0	
-R	warlock/destruction	45	6540	0	gear	0.168	armor:28:armor:0.006:0.168
-R	warlock/destruction	45	6540	12718	gear	0.9480000000000001	int:3:int:0.13:0.39,sta:3:sta:0.13:0.39,armor:28:armor:0.006:0.168
-R	warlock/destruction	45	6540	12719	gear	1.068	spi:3:spi:0.17:0.51,sta:3:sta:0.13:0.39,armor:28:armor:0.006:0.168
-R	warlock/destruction	45	6540	12720	gear	1.068	int:3:int:0.13:0.39,spi:3:spi:0.17:0.51,armor:28:armor:0.006:0.168
-R	warlock/destruction	45	6540	12729	gear	0.8180000000000001	int:5:int:0.13:0.65,armor:28:armor:0.006:0.168
-R	warlock/destruction	45	6540	12730	gear	1.018	spi:5:spi:0.17:0.85,armor:28:armor:0.006:0.168
-R	warlock/destruction	45	6540	12731	gear	0.8180000000000001	sta:5:sta:0.13:0.65,armor:28:armor:0.006:0.168
-R	warlock/destruction	45	6540	12734	gear	6.168	sp:6:sp:1:6,armor:28:armor:0.006:0.168
-R	warlock/destruction	45	6540	12735	gear	4.168	spDmg:4:sp:1:4,armor:28:armor:0.006:0.168
-R	warlock/destruction	45	6540	12740	gear	0.558	sta:3:sta:0.13:0.39,armor:28:armor:0.006:0.168
-R	warlock/destruction	45	6540	12741	gear	0.558	sta:3:sta:0.13:0.39,armor:28:armor:0.006:0.168
-R	warlock/destruction	45	6540	12742	gear	0.558	sta:3:sta:0.13:0.39,armor:28:armor:0.006:0.168
-R	warlock/destruction	45	6540	12743	gear	0.558	sta:3:sta:0.13:0.39,armor:28:armor:0.006:0.168
-R	warlock/destruction	45	6540	12744	gear	0.558	sta:3:sta:0.13:0.39,armor:28:armor:0.006:0.168
-R	warlock/destruction	45	6540	12745	gear	2.9480000000000004	int:4:int:0.13:0.52,sta:2:sta:0.13:0.26,sp:2:sp:1:2,armor:28:armor:0.006:0.168
-R	warlock/destruction	45	6540	12756	gear	0.168	armor:28:armor:0.006:0.168
-R	warlock/destruction	45	6540	12757	gear	6.048	spFire:7:spFire:0.84:5.88,armor:28:armor:0.006:0.168
-R	warlock/destruction	45	6540	12758	gear	0.168	armor:28:armor:0.006:0.168
-R	warlock/destruction	45	6540	12759	gear	0.168	armor:28:armor:0.006:0.168
-R	warlock/destruction	45	6540	12761	gear	1.288	spShadow:7:spShadow:0.16:1.12,armor:28:armor:0.006:0.168
-R	warlock/destruction	45	7047	0	gear	2.446	spi:5:spi:0.17:0.85,spShadow:9:spShadow:0.16:1.44,armor:26:armor:0.006:0.156
-R	warlock/destruction	45	11187	0	gear	0.024	armor:4:armor:0.006:0.024
-R	warlock/destruction	45	11288	0	ranged	10.75	sp:2:sp:1:2,rdps:17.5:rdps:0.5:8.75
+R	warlock/destruction	45	6540	0	gear	0.112	armor:28:armor:0.004:0.112
+R	warlock/destruction	45	6540	12718	gear	0.772	int:3:int:0.04:0.12,sta:3:sta:0.18:0.54,armor:28:armor:0.004:0.112
+R	warlock/destruction	45	6540	12719	gear	1.3120000000000003	spi:3:spi:0.22:0.66,sta:3:sta:0.18:0.54,armor:28:armor:0.004:0.112
+R	warlock/destruction	45	6540	12720	gear	0.892	int:3:int:0.04:0.12,spi:3:spi:0.22:0.66,armor:28:armor:0.004:0.112
+R	warlock/destruction	45	6540	12729	gear	0.312	int:5:int:0.04:0.2,armor:28:armor:0.004:0.112
+R	warlock/destruction	45	6540	12730	gear	1.2120000000000002	spi:5:spi:0.22:1.1,armor:28:armor:0.004:0.112
+R	warlock/destruction	45	6540	12731	gear	1.012	sta:5:sta:0.18:0.9,armor:28:armor:0.004:0.112
+R	warlock/destruction	45	6540	12734	gear	6.112	sp:6:sp:1:6,armor:28:armor:0.004:0.112
+R	warlock/destruction	45	6540	12735	gear	4.112	spDmg:4:sp:1:4,armor:28:armor:0.004:0.112
+R	warlock/destruction	45	6540	12740	gear	0.652	sta:3:sta:0.18:0.54,armor:28:armor:0.004:0.112
+R	warlock/destruction	45	6540	12741	gear	0.652	sta:3:sta:0.18:0.54,armor:28:armor:0.004:0.112
+R	warlock/destruction	45	6540	12742	gear	0.652	sta:3:sta:0.18:0.54,armor:28:armor:0.004:0.112
+R	warlock/destruction	45	6540	12743	gear	0.652	sta:3:sta:0.18:0.54,armor:28:armor:0.004:0.112
+R	warlock/destruction	45	6540	12744	gear	0.652	sta:3:sta:0.18:0.54,armor:28:armor:0.004:0.112
+R	warlock/destruction	45	6540	12745	gear	2.632	int:4:int:0.04:0.16,sta:2:sta:0.18:0.36,sp:2:sp:1:2,armor:28:armor:0.004:0.112
+R	warlock/destruction	45	6540	12756	gear	0.112	armor:28:armor:0.004:0.112
+R	warlock/destruction	45	6540	12757	gear	5.922	spFire:7:spFire:0.83:5.81,armor:28:armor:0.004:0.112
+R	warlock/destruction	45	6540	12758	gear	0.112	armor:28:armor:0.004:0.112
+R	warlock/destruction	45	6540	12759	gear	0.112	armor:28:armor:0.004:0.112
+R	warlock/destruction	45	6540	12761	gear	1.2320000000000002	spShadow:7:spShadow:0.16:1.12,armor:28:armor:0.004:0.112
+R	warlock/destruction	45	7047	0	gear	2.644	spi:5:spi:0.22:1.1,spShadow:9:spShadow:0.16:1.44,armor:26:armor:0.004:0.104
+R	warlock/destruction	45	11187	0	gear	0.016	armor:4:armor:0.004:0.016
+R	warlock/destruction	45	11288	0	ranged	10.575	sp:2:sp:1:2,rdps:17.5:rdps:0.49:8.575
 R	warlock/destruction	45	11994	0	gear	0.0	
-R	warlock/destruction	45	11994	12718	gear	0.78	int:3:int:0.13:0.39,sta:3:sta:0.13:0.39
-R	warlock/destruction	45	11994	12719	gear	0.9	spi:3:spi:0.17:0.51,sta:3:sta:0.13:0.39
-R	warlock/destruction	45	11994	12720	gear	0.9	int:3:int:0.13:0.39,spi:3:spi:0.17:0.51
-R	warlock/destruction	45	11994	12721	gear	0.39	sta:3:sta:0.13:0.39
-R	warlock/destruction	45	11994	12722	gear	0.39	sta:3:sta:0.13:0.39
-R	warlock/destruction	45	11994	12723	gear	0.39	int:3:int:0.13:0.39
-R	warlock/destruction	45	11994	12724	gear	0.39	int:3:int:0.13:0.39
-R	warlock/destruction	45	11994	12725	gear	0.51	spi:3:spi:0.17:0.51
-R	warlock/destruction	45	11994	12726	gear	0.51	spi:3:spi:0.17:0.51
+R	warlock/destruction	45	11994	12718	gear	0.66	int:3:int:0.04:0.12,sta:3:sta:0.18:0.54
+R	warlock/destruction	45	11994	12719	gear	1.2000000000000002	spi:3:spi:0.22:0.66,sta:3:sta:0.18:0.54
+R	warlock/destruction	45	11994	12720	gear	0.78	int:3:int:0.04:0.12,spi:3:spi:0.22:0.66
+R	warlock/destruction	45	11994	12721	gear	0.54	sta:3:sta:0.18:0.54
+R	warlock/destruction	45	11994	12722	gear	0.54	sta:3:sta:0.18:0.54
+R	warlock/destruction	45	11994	12723	gear	0.12	int:3:int:0.04:0.12
+R	warlock/destruction	45	11994	12724	gear	0.12	int:3:int:0.04:0.12
+R	warlock/destruction	45	11994	12725	gear	0.66	spi:3:spi:0.22:0.66
+R	warlock/destruction	45	11994	12726	gear	0.66	spi:3:spi:0.22:0.66
 R	warlock/destruction	45	11994	12727	gear	0.0	
 R	warlock/destruction	45	11994	12728	gear	0.0	
-R	warlock/destruction	45	11994	12729	gear	0.65	int:5:int:0.13:0.65
-R	warlock/destruction	45	11994	12730	gear	0.8500000000000001	spi:5:spi:0.17:0.85
-R	warlock/destruction	45	11994	12731	gear	0.65	sta:5:sta:0.13:0.65
+R	warlock/destruction	45	11994	12729	gear	0.2	int:5:int:0.04:0.2
+R	warlock/destruction	45	11994	12730	gear	1.1	spi:5:spi:0.22:1.1
+R	warlock/destruction	45	11994	12731	gear	0.8999999999999999	sta:5:sta:0.18:0.9
 R	warlock/destruction	45	11994	12732	gear	0.0	
 R	warlock/destruction	45	11994	12733	gear	0.0	
 R	warlock/destruction	45	11994	12737	gear	0.0	
-R	warlock/destruction	45	11994	12738	gear	0.44	mp5:2:mp5:0.22:0.44
+R	warlock/destruction	45	11994	12738	gear	0.36	mp5:2:mp5:0.18:0.36
 R	warlock/destruction	45	11994	12739	gear	0.0	
-R	warlock/destruction	45	11994	12740	gear	0.39	sta:3:sta:0.13:0.39
-R	warlock/destruction	45	11994	12741	gear	0.39	sta:3:sta:0.13:0.39
-R	warlock/destruction	45	11994	12742	gear	0.39	sta:3:sta:0.13:0.39
-R	warlock/destruction	45	11994	12743	gear	0.39	sta:3:sta:0.13:0.39
-R	warlock/destruction	45	11994	12744	gear	0.39	sta:3:sta:0.13:0.39
-R	warlock/destruction	45	14122	0	gear	0.084	armor:14:armor:0.006:0.084
-R	warlock/destruction	45	14122	12718	gear	0.604	int:2:int:0.13:0.26,sta:2:sta:0.13:0.26,armor:14:armor:0.006:0.084
-R	warlock/destruction	45	14122	12719	gear	0.684	spi:2:spi:0.17:0.34,sta:2:sta:0.13:0.26,armor:14:armor:0.006:0.084
-R	warlock/destruction	45	14122	12720	gear	0.684	int:2:int:0.13:0.26,spi:2:spi:0.17:0.34,armor:14:armor:0.006:0.084
-R	warlock/destruction	45	14122	12729	gear	0.47400000000000003	int:3:int:0.13:0.39,armor:14:armor:0.006:0.084
-R	warlock/destruction	45	14122	12730	gear	0.594	spi:3:spi:0.17:0.51,armor:14:armor:0.006:0.084
-R	warlock/destruction	45	14122	12731	gear	0.47400000000000003	sta:3:sta:0.13:0.39,armor:14:armor:0.006:0.084
-R	warlock/destruction	45	14122	12734	gear	4.084	sp:4:sp:1:4,armor:14:armor:0.006:0.084
-R	warlock/destruction	45	14122	12735	gear	2.084	spDmg:2:sp:1:2,armor:14:armor:0.006:0.084
-R	warlock/destruction	45	14122	12740	gear	0.34400000000000003	sta:2:sta:0.13:0.26,armor:14:armor:0.006:0.084
-R	warlock/destruction	45	14122	12741	gear	0.34400000000000003	sta:2:sta:0.13:0.26,armor:14:armor:0.006:0.084
-R	warlock/destruction	45	14122	12742	gear	0.34400000000000003	sta:2:sta:0.13:0.26,armor:14:armor:0.006:0.084
-R	warlock/destruction	45	14122	12743	gear	0.34400000000000003	sta:2:sta:0.13:0.26,armor:14:armor:0.006:0.084
-R	warlock/destruction	45	14122	12744	gear	0.34400000000000003	sta:2:sta:0.13:0.26,armor:14:armor:0.006:0.084
-R	warlock/destruction	45	14122	12745	gear	1.4740000000000002	int:2:int:0.13:0.26,sta:1:sta:0.13:0.13,sp:1:sp:1:1,armor:14:armor:0.006:0.084
-R	warlock/destruction	45	14122	12756	gear	0.084	armor:14:armor:0.006:0.084
-R	warlock/destruction	45	14122	12757	gear	3.444	spFire:4:spFire:0.84:3.36,armor:14:armor:0.006:0.084
-R	warlock/destruction	45	14122	12758	gear	0.084	armor:14:armor:0.006:0.084
-R	warlock/destruction	45	14122	12759	gear	0.084	armor:14:armor:0.006:0.084
-R	warlock/destruction	45	14122	12761	gear	0.724	spShadow:4:spShadow:0.16:0.64,armor:14:armor:0.006:0.084
-R	warlock/destruction	45	14340	0	gear	2.998	sta:19:sta:0.13:2.47,armor:88:armor:0.006:0.528
-R	warlock/destruction	45	14673	0	gear	0.8540000000000001	sta:5:sta:0.13:0.65,armor:34:armor:0.006:0.204
-R	warlock/destruction	45	15945	0	oh	0.6000000000000001	sta:2:sta:0.13:0.26,spi:2:spi:0.17:0.34
-R	warlock/destruction	45	19557	0	mh	0.39	sta:3:sta:0.13:0.39
-R	warlock/destruction	45	254111	0	gear	19.984	int:9:int:0.13:1.17,sta:13:sta:0.13:1.69,spFire:20:spFire:0.84:16.8,armor:54:armor:0.006:0.324
-R	warlock/destruction	45	280082	0	mh	73.32	int:15:int:0.13:1.95,hit:1.5:spellHit:1.2:1.8,spi:21:spi:0.17:3.57,sp:66:sp:1:66
+R	warlock/destruction	45	11994	12740	gear	0.54	sta:3:sta:0.18:0.54
+R	warlock/destruction	45	11994	12741	gear	0.54	sta:3:sta:0.18:0.54
+R	warlock/destruction	45	11994	12742	gear	0.54	sta:3:sta:0.18:0.54
+R	warlock/destruction	45	11994	12743	gear	0.54	sta:3:sta:0.18:0.54
+R	warlock/destruction	45	11994	12744	gear	0.54	sta:3:sta:0.18:0.54
+R	warlock/destruction	45	14122	0	gear	0.056	armor:14:armor:0.004:0.056
+R	warlock/destruction	45	14122	12718	gear	0.496	int:2:int:0.04:0.08,sta:2:sta:0.18:0.36,armor:14:armor:0.004:0.056
+R	warlock/destruction	45	14122	12719	gear	0.8560000000000001	spi:2:spi:0.22:0.44,sta:2:sta:0.18:0.36,armor:14:armor:0.004:0.056
+R	warlock/destruction	45	14122	12720	gear	0.5760000000000001	int:2:int:0.04:0.08,spi:2:spi:0.22:0.44,armor:14:armor:0.004:0.056
+R	warlock/destruction	45	14122	12729	gear	0.176	int:3:int:0.04:0.12,armor:14:armor:0.004:0.056
+R	warlock/destruction	45	14122	12730	gear	0.7160000000000001	spi:3:spi:0.22:0.66,armor:14:armor:0.004:0.056
+R	warlock/destruction	45	14122	12731	gear	0.5960000000000001	sta:3:sta:0.18:0.54,armor:14:armor:0.004:0.056
+R	warlock/destruction	45	14122	12734	gear	4.056	sp:4:sp:1:4,armor:14:armor:0.004:0.056
+R	warlock/destruction	45	14122	12735	gear	2.056	spDmg:2:sp:1:2,armor:14:armor:0.004:0.056
+R	warlock/destruction	45	14122	12740	gear	0.416	sta:2:sta:0.18:0.36,armor:14:armor:0.004:0.056
+R	warlock/destruction	45	14122	12741	gear	0.416	sta:2:sta:0.18:0.36,armor:14:armor:0.004:0.056
+R	warlock/destruction	45	14122	12742	gear	0.416	sta:2:sta:0.18:0.36,armor:14:armor:0.004:0.056
+R	warlock/destruction	45	14122	12743	gear	0.416	sta:2:sta:0.18:0.36,armor:14:armor:0.004:0.056
+R	warlock/destruction	45	14122	12744	gear	0.416	sta:2:sta:0.18:0.36,armor:14:armor:0.004:0.056
+R	warlock/destruction	45	14122	12745	gear	1.316	int:2:int:0.04:0.08,sta:1:sta:0.18:0.18,sp:1:sp:1:1,armor:14:armor:0.004:0.056
+R	warlock/destruction	45	14122	12756	gear	0.056	armor:14:armor:0.004:0.056
+R	warlock/destruction	45	14122	12757	gear	3.376	spFire:4:spFire:0.83:3.32,armor:14:armor:0.004:0.056
+R	warlock/destruction	45	14122	12758	gear	0.056	armor:14:armor:0.004:0.056
+R	warlock/destruction	45	14122	12759	gear	0.056	armor:14:armor:0.004:0.056
+R	warlock/destruction	45	14122	12761	gear	0.6960000000000001	spShadow:4:spShadow:0.16:0.64,armor:14:armor:0.004:0.056
+R	warlock/destruction	45	14340	0	gear	3.772	sta:19:sta:0.18:3.42,armor:88:armor:0.004:0.352
+R	warlock/destruction	45	14673	0	gear	1.036	sta:5:sta:0.18:0.9,armor:34:armor:0.004:0.136
+R	warlock/destruction	45	15945	0	oh	0.8	sta:2:sta:0.18:0.36,spi:2:spi:0.22:0.44
+R	warlock/destruction	45	19557	0	mh	0.54	sta:3:sta:0.18:0.54
+R	warlock/destruction	45	254111	0	gear	19.516	int:9:int:0.04:0.36,sta:13:sta:0.18:2.34,spFire:20:spFire:0.83:16.6,armor:54:armor:0.004:0.216
+R	warlock/destruction	45	280082	0	mh	73.02	int:15:int:0.04:0.6,hit:1.5:spellHit:1.2:1.8,spi:21:spi:0.22:4.62,sp:66:sp:1:66
 R	warlock/destruction	55	25	0	mh	0.0	
-R	warlock/destruction	55	1315	0	gear	5.050000000000001	sta:10:sta:0.1:1,spi:15:spi:0.27:4.05
+R	warlock/destruction	55	1315	0	gear	4.9	sta:10:sta:0.16:1.6,spi:15:spi:0.22:3.3
 R	warlock/destruction	55	2140	0	mh	0.0	
-R	warlock/destruction	55	2140	12718	mh	0.27	int:1:int:0.17:0.17,sta:1:sta:0.1:0.1
-R	warlock/destruction	55	2140	12917	mh	5.17	sp:5:sp:1:5,int:1:int:0.17:0.17
+R	warlock/destruction	55	2140	12718	mh	0.29000000000000004	int:1:int:0.13:0.13,sta:1:sta:0.16:0.16
+R	warlock/destruction	55	2140	12917	mh	5.13	sp:5:sp:1:5,int:1:int:0.13:0.13
 R	warlock/destruction	55	2225	0	mh	0.0	
 R	warlock/destruction	55	2614	0	gear	0.1015	armor:29:armor:0.0035:0.102
 R	warlock/destruction	55	4023	0	mh	0.0	
 R	warlock/destruction	55	5079	0	gear	0.0	
 R	warlock/destruction	55	6540	0	gear	0.098	armor:28:armor:0.0035:0.098
-R	warlock/destruction	55	6540	12718	gear	0.908	int:3:int:0.17:0.51,sta:3:sta:0.1:0.3,armor:28:armor:0.0035:0.098
-R	warlock/destruction	55	6540	12719	gear	1.2080000000000002	spi:3:spi:0.27:0.81,sta:3:sta:0.1:0.3,armor:28:armor:0.0035:0.098
-R	warlock/destruction	55	6540	12720	gear	1.4180000000000001	int:3:int:0.17:0.51,spi:3:spi:0.27:0.81,armor:28:armor:0.0035:0.098
-R	warlock/destruction	55	6540	12729	gear	0.9480000000000001	int:5:int:0.17:0.85,armor:28:armor:0.0035:0.098
-R	warlock/destruction	55	6540	12730	gear	1.4480000000000002	spi:5:spi:0.27:1.35,armor:28:armor:0.0035:0.098
-R	warlock/destruction	55	6540	12731	gear	0.598	sta:5:sta:0.1:0.5,armor:28:armor:0.0035:0.098
+R	warlock/destruction	55	6540	12718	gear	0.968	int:3:int:0.13:0.39,sta:3:sta:0.16:0.48,armor:28:armor:0.0035:0.098
+R	warlock/destruction	55	6540	12719	gear	1.2380000000000002	spi:3:spi:0.22:0.66,sta:3:sta:0.16:0.48,armor:28:armor:0.0035:0.098
+R	warlock/destruction	55	6540	12720	gear	1.1480000000000001	int:3:int:0.13:0.39,spi:3:spi:0.22:0.66,armor:28:armor:0.0035:0.098
+R	warlock/destruction	55	6540	12729	gear	0.748	int:5:int:0.13:0.65,armor:28:armor:0.0035:0.098
+R	warlock/destruction	55	6540	12730	gear	1.1980000000000002	spi:5:spi:0.22:1.1,armor:28:armor:0.0035:0.098
+R	warlock/destruction	55	6540	12731	gear	0.898	sta:5:sta:0.16:0.8,armor:28:armor:0.0035:0.098
 R	warlock/destruction	55	6540	12734	gear	6.098	sp:6:sp:1:6,armor:28:armor:0.0035:0.098
 R	warlock/destruction	55	6540	12735	gear	4.098	spDmg:4:sp:1:4,armor:28:armor:0.0035:0.098
-R	warlock/destruction	55	6540	12740	gear	0.398	sta:3:sta:0.1:0.3,armor:28:armor:0.0035:0.098
-R	warlock/destruction	55	6540	12741	gear	0.398	sta:3:sta:0.1:0.3,armor:28:armor:0.0035:0.098
-R	warlock/destruction	55	6540	12742	gear	0.398	sta:3:sta:0.1:0.3,armor:28:armor:0.0035:0.098
-R	warlock/destruction	55	6540	12743	gear	0.398	sta:3:sta:0.1:0.3,armor:28:armor:0.0035:0.098
-R	warlock/destruction	55	6540	12744	gear	0.398	sta:3:sta:0.1:0.3,armor:28:armor:0.0035:0.098
-R	warlock/destruction	55	6540	12745	gear	2.9779999999999998	int:4:int:0.17:0.68,sta:2:sta:0.1:0.2,sp:2:sp:1:2,armor:28:armor:0.0035:0.098
+R	warlock/destruction	55	6540	12740	gear	0.578	sta:3:sta:0.16:0.48,armor:28:armor:0.0035:0.098
+R	warlock/destruction	55	6540	12741	gear	0.578	sta:3:sta:0.16:0.48,armor:28:armor:0.0035:0.098
+R	warlock/destruction	55	6540	12742	gear	0.578	sta:3:sta:0.16:0.48,armor:28:armor:0.0035:0.098
+R	warlock/destruction	55	6540	12743	gear	0.578	sta:3:sta:0.16:0.48,armor:28:armor:0.0035:0.098
+R	warlock/destruction	55	6540	12744	gear	0.578	sta:3:sta:0.16:0.48,armor:28:armor:0.0035:0.098
+R	warlock/destruction	55	6540	12745	gear	2.9379999999999997	int:4:int:0.13:0.52,sta:2:sta:0.16:0.32,sp:2:sp:1:2,armor:28:armor:0.0035:0.098
 R	warlock/destruction	55	6540	12756	gear	0.098	armor:28:armor:0.0035:0.098
-R	warlock/destruction	55	6540	12757	gear	5.488	spFire:7:spFire:0.77:5.39,armor:28:armor:0.0035:0.098
+R	warlock/destruction	55	6540	12757	gear	5.698	spFire:7:spFire:0.8:5.6,armor:28:armor:0.0035:0.098
 R	warlock/destruction	55	6540	12758	gear	0.098	armor:28:armor:0.0035:0.098
 R	warlock/destruction	55	6540	12759	gear	0.098	armor:28:armor:0.0035:0.098
-R	warlock/destruction	55	6540	12761	gear	1.7080000000000002	spShadow:7:spShadow:0.23:1.61,armor:28:armor:0.0035:0.098
-R	warlock/destruction	55	7047	0	gear	3.5110000000000006	spi:5:spi:0.27:1.35,spShadow:9:spShadow:0.23:2.07,armor:26:armor:0.0035:0.091
+R	warlock/destruction	55	6540	12761	gear	1.6380000000000001	spShadow:7:spShadow:0.22:1.54,armor:28:armor:0.0035:0.098
+R	warlock/destruction	55	7047	0	gear	3.1710000000000003	spi:5:spi:0.22:1.1,spShadow:9:spShadow:0.22:1.98,armor:26:armor:0.0035:0.091
 R	warlock/destruction	55	11187	0	gear	0.014	armor:4:armor:0.0035:0.014
-R	warlock/destruction	55	11288	0	ranged	9.875	sp:2:sp:1:2,rdps:17.5:rdps:0.45:7.875
+R	warlock/destruction	55	11288	0	ranged	8.65	sp:2:sp:1:2,rdps:17.5:rdps:0.38:6.65
 R	warlock/destruction	55	11994	0	gear	0.0	
-R	warlock/destruction	55	11994	12718	gear	0.81	int:3:int:0.17:0.51,sta:3:sta:0.1:0.3
-R	warlock/destruction	55	11994	12719	gear	1.11	spi:3:spi:0.27:0.81,sta:3:sta:0.1:0.3
-R	warlock/destruction	55	11994	12720	gear	1.32	int:3:int:0.17:0.51,spi:3:spi:0.27:0.81
-R	warlock/destruction	55	11994	12721	gear	0.30000000000000004	sta:3:sta:0.1:0.3
-R	warlock/destruction	55	11994	12722	gear	0.30000000000000004	sta:3:sta:0.1:0.3
-R	warlock/destruction	55	11994	12723	gear	0.51	int:3:int:0.17:0.51
-R	warlock/destruction	55	11994	12724	gear	0.51	int:3:int:0.17:0.51
-R	warlock/destruction	55	11994	12725	gear	0.81	spi:3:spi:0.27:0.81
-R	warlock/destruction	55	11994	12726	gear	0.81	spi:3:spi:0.27:0.81
+R	warlock/destruction	55	11994	12718	gear	0.87	int:3:int:0.13:0.39,sta:3:sta:0.16:0.48
+R	warlock/destruction	55	11994	12719	gear	1.1400000000000001	spi:3:spi:0.22:0.66,sta:3:sta:0.16:0.48
+R	warlock/destruction	55	11994	12720	gear	1.05	int:3:int:0.13:0.39,spi:3:spi:0.22:0.66
+R	warlock/destruction	55	11994	12721	gear	0.48	sta:3:sta:0.16:0.48
+R	warlock/destruction	55	11994	12722	gear	0.48	sta:3:sta:0.16:0.48
+R	warlock/destruction	55	11994	12723	gear	0.39	int:3:int:0.13:0.39
+R	warlock/destruction	55	11994	12724	gear	0.39	int:3:int:0.13:0.39
+R	warlock/destruction	55	11994	12725	gear	0.66	spi:3:spi:0.22:0.66
+R	warlock/destruction	55	11994	12726	gear	0.66	spi:3:spi:0.22:0.66
 R	warlock/destruction	55	11994	12727	gear	0.0	
 R	warlock/destruction	55	11994	12728	gear	0.0	
-R	warlock/destruction	55	11994	12729	gear	0.8500000000000001	int:5:int:0.17:0.85
-R	warlock/destruction	55	11994	12730	gear	1.35	spi:5:spi:0.27:1.35
-R	warlock/destruction	55	11994	12731	gear	0.5	sta:5:sta:0.1:0.5
+R	warlock/destruction	55	11994	12729	gear	0.65	int:5:int:0.13:0.65
+R	warlock/destruction	55	11994	12730	gear	1.1	spi:5:spi:0.22:1.1
+R	warlock/destruction	55	11994	12731	gear	0.8	sta:5:sta:0.16:0.8
 R	warlock/destruction	55	11994	12732	gear	0.0	
 R	warlock/destruction	55	11994	12733	gear	0.0	
 R	warlock/destruction	55	11994	12737	gear	0.0	
-R	warlock/destruction	55	11994	12738	gear	0.58	mp5:2:mp5:0.29:0.58
+R	warlock/destruction	55	11994	12738	gear	0.38	mp5:2:mp5:0.19:0.38
 R	warlock/destruction	55	11994	12739	gear	0.0	
-R	warlock/destruction	55	11994	12740	gear	0.30000000000000004	sta:3:sta:0.1:0.3
-R	warlock/destruction	55	11994	12741	gear	0.30000000000000004	sta:3:sta:0.1:0.3
-R	warlock/destruction	55	11994	12742	gear	0.30000000000000004	sta:3:sta:0.1:0.3
-R	warlock/destruction	55	11994	12743	gear	0.30000000000000004	sta:3:sta:0.1:0.3
-R	warlock/destruction	55	11994	12744	gear	0.30000000000000004	sta:3:sta:0.1:0.3
+R	warlock/destruction	55	11994	12740	gear	0.48	sta:3:sta:0.16:0.48
+R	warlock/destruction	55	11994	12741	gear	0.48	sta:3:sta:0.16:0.48
+R	warlock/destruction	55	11994	12742	gear	0.48	sta:3:sta:0.16:0.48
+R	warlock/destruction	55	11994	12743	gear	0.48	sta:3:sta:0.16:0.48
+R	warlock/destruction	55	11994	12744	gear	0.48	sta:3:sta:0.16:0.48
 R	warlock/destruction	55	14122	0	gear	0.049	armor:14:armor:0.0035:0.049
-R	warlock/destruction	55	14122	12718	gear	0.5890000000000001	int:2:int:0.17:0.34,sta:2:sta:0.1:0.2,armor:14:armor:0.0035:0.049
-R	warlock/destruction	55	14122	12719	gear	0.789	spi:2:spi:0.27:0.54,sta:2:sta:0.1:0.2,armor:14:armor:0.0035:0.049
-R	warlock/destruction	55	14122	12720	gear	0.9290000000000002	int:2:int:0.17:0.34,spi:2:spi:0.27:0.54,armor:14:armor:0.0035:0.049
-R	warlock/destruction	55	14122	12729	gear	0.559	int:3:int:0.17:0.51,armor:14:armor:0.0035:0.049
-R	warlock/destruction	55	14122	12730	gear	0.8590000000000001	spi:3:spi:0.27:0.81,armor:14:armor:0.0035:0.049
-R	warlock/destruction	55	14122	12731	gear	0.34900000000000003	sta:3:sta:0.1:0.3,armor:14:armor:0.0035:0.049
+R	warlock/destruction	55	14122	12718	gear	0.6290000000000001	int:2:int:0.13:0.26,sta:2:sta:0.16:0.32,armor:14:armor:0.0035:0.049
+R	warlock/destruction	55	14122	12719	gear	0.809	spi:2:spi:0.22:0.44,sta:2:sta:0.16:0.32,armor:14:armor:0.0035:0.049
+R	warlock/destruction	55	14122	12720	gear	0.749	int:2:int:0.13:0.26,spi:2:spi:0.22:0.44,armor:14:armor:0.0035:0.049
+R	warlock/destruction	55	14122	12729	gear	0.439	int:3:int:0.13:0.39,armor:14:armor:0.0035:0.049
+R	warlock/destruction	55	14122	12730	gear	0.7090000000000001	spi:3:spi:0.22:0.66,armor:14:armor:0.0035:0.049
+R	warlock/destruction	55	14122	12731	gear	0.529	sta:3:sta:0.16:0.48,armor:14:armor:0.0035:0.049
 R	warlock/destruction	55	14122	12734	gear	4.049	sp:4:sp:1:4,armor:14:armor:0.0035:0.049
 R	warlock/destruction	55	14122	12735	gear	2.049	spDmg:2:sp:1:2,armor:14:armor:0.0035:0.049
-R	warlock/destruction	55	14122	12740	gear	0.249	sta:2:sta:0.1:0.2,armor:14:armor:0.0035:0.049
-R	warlock/destruction	55	14122	12741	gear	0.249	sta:2:sta:0.1:0.2,armor:14:armor:0.0035:0.049
-R	warlock/destruction	55	14122	12742	gear	0.249	sta:2:sta:0.1:0.2,armor:14:armor:0.0035:0.049
-R	warlock/destruction	55	14122	12743	gear	0.249	sta:2:sta:0.1:0.2,armor:14:armor:0.0035:0.049
-R	warlock/destruction	55	14122	12744	gear	0.249	sta:2:sta:0.1:0.2,armor:14:armor:0.0035:0.049
-R	warlock/destruction	55	14122	12745	gear	1.4889999999999999	int:2:int:0.17:0.34,sta:1:sta:0.1:0.1,sp:1:sp:1:1,armor:14:armor:0.0035:0.049
+R	warlock/destruction	55	14122	12740	gear	0.369	sta:2:sta:0.16:0.32,armor:14:armor:0.0035:0.049
+R	warlock/destruction	55	14122	12741	gear	0.369	sta:2:sta:0.16:0.32,armor:14:armor:0.0035:0.049
+R	warlock/destruction	55	14122	12742	gear	0.369	sta:2:sta:0.16:0.32,armor:14:armor:0.0035:0.049
+R	warlock/destruction	55	14122	12743	gear	0.369	sta:2:sta:0.16:0.32,armor:14:armor:0.0035:0.049
+R	warlock/destruction	55	14122	12744	gear	0.369	sta:2:sta:0.16:0.32,armor:14:armor:0.0035:0.049
+R	warlock/destruction	55	14122	12745	gear	1.4689999999999999	int:2:int:0.13:0.26,sta:1:sta:0.16:0.16,sp:1:sp:1:1,armor:14:armor:0.0035:0.049
 R	warlock/destruction	55	14122	12756	gear	0.049	armor:14:armor:0.0035:0.049
-R	warlock/destruction	55	14122	12757	gear	3.129	spFire:4:spFire:0.77:3.08,armor:14:armor:0.0035:0.049
+R	warlock/destruction	55	14122	12757	gear	3.249	spFire:4:spFire:0.8:3.2,armor:14:armor:0.0035:0.049
 R	warlock/destruction	55	14122	12758	gear	0.049	armor:14:armor:0.0035:0.049
 R	warlock/destruction	55	14122	12759	gear	0.049	armor:14:armor:0.0035:0.049
-R	warlock/destruction	55	14122	12761	gear	0.9690000000000001	spShadow:4:spShadow:0.23:0.92,armor:14:armor:0.0035:0.049
-R	warlock/destruction	55	14340	0	gear	2.208	sta:19:sta:0.1:1.9,armor:88:armor:0.0035:0.308
-R	warlock/destruction	55	14673	0	gear	0.619	sta:5:sta:0.1:0.5,armor:34:armor:0.0035:0.119
-R	warlock/destruction	55	15945	0	oh	0.74	sta:2:sta:0.1:0.2,spi:2:spi:0.27:0.54
-R	warlock/destruction	55	19557	0	mh	0.30000000000000004	sta:3:sta:0.1:0.3
-R	warlock/destruction	55	254111	0	gear	18.419	int:9:int:0.17:1.53,sta:13:sta:0.1:1.3,spFire:20:spFire:0.77:15.4,armor:54:armor:0.0035:0.189
-R	warlock/destruction	55	280082	0	mh	76.02	int:15:int:0.17:2.55,hit:1.5:spellHit:1.2:1.8,spi:21:spi:0.27:5.67,sp:66:sp:1:66
+R	warlock/destruction	55	14122	12761	gear	0.929	spShadow:4:spShadow:0.22:0.88,armor:14:armor:0.0035:0.049
+R	warlock/destruction	55	14340	0	gear	3.348	sta:19:sta:0.16:3.04,armor:88:armor:0.0035:0.308
+R	warlock/destruction	55	14673	0	gear	0.919	sta:5:sta:0.16:0.8,armor:34:armor:0.0035:0.119
+R	warlock/destruction	55	15945	0	oh	0.76	sta:2:sta:0.16:0.32,spi:2:spi:0.22:0.44
+R	warlock/destruction	55	19557	0	mh	0.48	sta:3:sta:0.16:0.48
+R	warlock/destruction	55	254111	0	gear	19.439	int:9:int:0.13:1.17,sta:13:sta:0.16:2.08,spFire:20:spFire:0.8:16,armor:54:armor:0.0035:0.189
+R	warlock/destruction	55	280082	0	mh	74.37	int:15:int:0.13:1.95,hit:1.5:spellHit:1.2:1.8,spi:21:spi:0.22:4.62,sp:66:sp:1:66
 R	warlock/destruction	60	25	0	mh	0.0	
-R	warlock/destruction	60	1315	0	gear	6.1499999999999995	spi:15:spi:0.41:6.15
+R	warlock/destruction	60	1315	0	gear	6.17	sta:10:sta:0.017:0.17,spi:15:spi:0.4:6
 R	warlock/destruction	60	2140	0	mh	0.0	
-R	warlock/destruction	60	2140	12718	mh	0.36	int:1:int:0.36:0.36
-R	warlock/destruction	60	2140	12917	mh	5.36	sp:5:sp:1:5,int:1:int:0.36:0.36
+R	warlock/destruction	60	2140	12718	mh	0.28700000000000003	int:1:int:0.27:0.27,sta:1:sta:0.017:0.017
+R	warlock/destruction	60	2140	12917	mh	5.27	sp:5:sp:1:5,int:1:int:0.27:0.27
 R	warlock/destruction	60	2225	0	mh	0.0	
 R	warlock/destruction	60	2614	0	gear	0.116	armor:29:armor:0.004:0.116
 R	warlock/destruction	60	4023	0	mh	0.0	
 R	warlock/destruction	60	5079	0	gear	0.0	
 R	warlock/destruction	60	6540	0	gear	0.112	armor:28:armor:0.004:0.112
-R	warlock/destruction	60	6540	12718	gear	1.1920000000000002	int:3:int:0.36:1.08,armor:28:armor:0.004:0.112
-R	warlock/destruction	60	6540	12719	gear	1.342	spi:3:spi:0.41:1.23,armor:28:armor:0.004:0.112
-R	warlock/destruction	60	6540	12720	gear	2.422	int:3:int:0.36:1.08,spi:3:spi:0.41:1.23,armor:28:armor:0.004:0.112
-R	warlock/destruction	60	6540	12729	gear	1.912	int:5:int:0.36:1.8,armor:28:armor:0.004:0.112
-R	warlock/destruction	60	6540	12730	gear	2.162	spi:5:spi:0.41:2.05,armor:28:armor:0.004:0.112
-R	warlock/destruction	60	6540	12731	gear	0.112	armor:28:armor:0.004:0.112
+R	warlock/destruction	60	6540	12718	gear	0.9730000000000001	int:3:int:0.27:0.81,sta:3:sta:0.017:0.051,armor:28:armor:0.004:0.112
+R	warlock/destruction	60	6540	12719	gear	1.3630000000000002	spi:3:spi:0.4:1.2,sta:3:sta:0.017:0.051,armor:28:armor:0.004:0.112
+R	warlock/destruction	60	6540	12720	gear	2.1220000000000003	int:3:int:0.27:0.81,spi:3:spi:0.4:1.2,armor:28:armor:0.004:0.112
+R	warlock/destruction	60	6540	12729	gear	1.4620000000000002	int:5:int:0.27:1.35,armor:28:armor:0.004:0.112
+R	warlock/destruction	60	6540	12730	gear	2.112	spi:5:spi:0.4:2,armor:28:armor:0.004:0.112
+R	warlock/destruction	60	6540	12731	gear	0.197	sta:5:sta:0.017:0.085,armor:28:armor:0.004:0.112
 R	warlock/destruction	60	6540	12734	gear	6.112	sp:6:sp:1:6,armor:28:armor:0.004:0.112
 R	warlock/destruction	60	6540	12735	gear	4.112	spDmg:4:sp:1:4,armor:28:armor:0.004:0.112
-R	warlock/destruction	60	6540	12740	gear	0.112	armor:28:armor:0.004:0.112
-R	warlock/destruction	60	6540	12741	gear	0.112	armor:28:armor:0.004:0.112
-R	warlock/destruction	60	6540	12742	gear	0.112	armor:28:armor:0.004:0.112
-R	warlock/destruction	60	6540	12743	gear	0.112	armor:28:armor:0.004:0.112
-R	warlock/destruction	60	6540	12744	gear	0.112	armor:28:armor:0.004:0.112
-R	warlock/destruction	60	6540	12745	gear	3.552	int:4:int:0.36:1.44,sp:2:sp:1:2,armor:28:armor:0.004:0.112
+R	warlock/destruction	60	6540	12740	gear	0.163	sta:3:sta:0.017:0.051,armor:28:armor:0.004:0.112
+R	warlock/destruction	60	6540	12741	gear	0.163	sta:3:sta:0.017:0.051,armor:28:armor:0.004:0.112
+R	warlock/destruction	60	6540	12742	gear	0.163	sta:3:sta:0.017:0.051,armor:28:armor:0.004:0.112
+R	warlock/destruction	60	6540	12743	gear	0.163	sta:3:sta:0.017:0.051,armor:28:armor:0.004:0.112
+R	warlock/destruction	60	6540	12744	gear	0.163	sta:3:sta:0.017:0.051,armor:28:armor:0.004:0.112
+R	warlock/destruction	60	6540	12745	gear	3.226	int:4:int:0.27:1.08,sta:2:sta:0.017:0.034,sp:2:sp:1:2,armor:28:armor:0.004:0.112
 R	warlock/destruction	60	6540	12756	gear	0.112	armor:28:armor:0.004:0.112
 R	warlock/destruction	60	6540	12757	gear	5.502000000000001	spFire:7:spFire:0.77:5.39,armor:28:armor:0.004:0.112
 R	warlock/destruction	60	6540	12758	gear	0.112	armor:28:armor:0.004:0.112
 R	warlock/destruction	60	6540	12759	gear	0.112	armor:28:armor:0.004:0.112
-R	warlock/destruction	60	6540	12761	gear	1.792	spShadow:7:spShadow:0.24:1.68,armor:28:armor:0.004:0.112
-R	warlock/destruction	60	7047	0	gear	4.314	spi:5:spi:0.41:2.05,spShadow:9:spShadow:0.24:2.16,armor:26:armor:0.004:0.104
+R	warlock/destruction	60	6540	12761	gear	1.862	spShadow:7:spShadow:0.25:1.75,armor:28:armor:0.004:0.112
+R	warlock/destruction	60	7047	0	gear	4.354	spi:5:spi:0.4:2,spShadow:9:spShadow:0.25:2.25,armor:26:armor:0.004:0.104
 R	warlock/destruction	60	11187	0	gear	0.016	armor:4:armor:0.004:0.016
-R	warlock/destruction	60	11288	0	ranged	7.6000000000000005	sp:2:sp:1:2,rdps:17.5:rdps:0.32:5.6
+R	warlock/destruction	60	11288	0	ranged	9.7	sp:2:sp:1:2,rdps:17.5:rdps:0.44:7.7
 R	warlock/destruction	60	11994	0	gear	0.0	
-R	warlock/destruction	60	11994	12718	gear	1.08	int:3:int:0.36:1.08
-R	warlock/destruction	60	11994	12719	gear	1.23	spi:3:spi:0.41:1.23
-R	warlock/destruction	60	11994	12720	gear	2.31	int:3:int:0.36:1.08,spi:3:spi:0.41:1.23
-R	warlock/destruction	60	11994	12721	gear	0.0	
-R	warlock/destruction	60	11994	12722	gear	0.0	
-R	warlock/destruction	60	11994	12723	gear	1.08	int:3:int:0.36:1.08
-R	warlock/destruction	60	11994	12724	gear	1.08	int:3:int:0.36:1.08
-R	warlock/destruction	60	11994	12725	gear	1.23	spi:3:spi:0.41:1.23
-R	warlock/destruction	60	11994	12726	gear	1.23	spi:3:spi:0.41:1.23
+R	warlock/destruction	60	11994	12718	gear	0.8610000000000001	int:3:int:0.27:0.81,sta:3:sta:0.017:0.051
+R	warlock/destruction	60	11994	12719	gear	1.2510000000000001	spi:3:spi:0.4:1.2,sta:3:sta:0.017:0.051
+R	warlock/destruction	60	11994	12720	gear	2.0100000000000002	int:3:int:0.27:0.81,spi:3:spi:0.4:1.2
+R	warlock/destruction	60	11994	12721	gear	0.051000000000000004	sta:3:sta:0.017:0.051
+R	warlock/destruction	60	11994	12722	gear	0.051000000000000004	sta:3:sta:0.017:0.051
+R	warlock/destruction	60	11994	12723	gear	0.81	int:3:int:0.27:0.81
+R	warlock/destruction	60	11994	12724	gear	0.81	int:3:int:0.27:0.81
+R	warlock/destruction	60	11994	12725	gear	1.2000000000000002	spi:3:spi:0.4:1.2
+R	warlock/destruction	60	11994	12726	gear	1.2000000000000002	spi:3:spi:0.4:1.2
 R	warlock/destruction	60	11994	12727	gear	0.0	
 R	warlock/destruction	60	11994	12728	gear	0.0	
-R	warlock/destruction	60	11994	12729	gear	1.7999999999999998	int:5:int:0.36:1.8
-R	warlock/destruction	60	11994	12730	gear	2.05	spi:5:spi:0.41:2.05
-R	warlock/destruction	60	11994	12731	gear	0.0	
+R	warlock/destruction	60	11994	12729	gear	1.35	int:5:int:0.27:1.35
+R	warlock/destruction	60	11994	12730	gear	2.0	spi:5:spi:0.4:2
+R	warlock/destruction	60	11994	12731	gear	0.085	sta:5:sta:0.017:0.085
 R	warlock/destruction	60	11994	12732	gear	0.0	
 R	warlock/destruction	60	11994	12733	gear	0.0	
 R	warlock/destruction	60	11994	12737	gear	0.0	
-R	warlock/destruction	60	11994	12738	gear	0.34	mp5:2:mp5:0.17:0.34
+R	warlock/destruction	60	11994	12738	gear	0.5	mp5:2:mp5:0.25:0.5
 R	warlock/destruction	60	11994	12739	gear	0.0	
-R	warlock/destruction	60	11994	12740	gear	0.0	
-R	warlock/destruction	60	11994	12741	gear	0.0	
-R	warlock/destruction	60	11994	12742	gear	0.0	
-R	warlock/destruction	60	11994	12743	gear	0.0	
-R	warlock/destruction	60	11994	12744	gear	0.0	
+R	warlock/destruction	60	11994	12740	gear	0.051000000000000004	sta:3:sta:0.017:0.051
+R	warlock/destruction	60	11994	12741	gear	0.051000000000000004	sta:3:sta:0.017:0.051
+R	warlock/destruction	60	11994	12742	gear	0.051000000000000004	sta:3:sta:0.017:0.051
+R	warlock/destruction	60	11994	12743	gear	0.051000000000000004	sta:3:sta:0.017:0.051
+R	warlock/destruction	60	11994	12744	gear	0.051000000000000004	sta:3:sta:0.017:0.051
 R	warlock/destruction	60	14122	0	gear	0.056	armor:14:armor:0.004:0.056
-R	warlock/destruction	60	14122	12718	gear	0.776	int:2:int:0.36:0.72,armor:14:armor:0.004:0.056
-R	warlock/destruction	60	14122	12719	gear	0.876	spi:2:spi:0.41:0.82,armor:14:armor:0.004:0.056
-R	warlock/destruction	60	14122	12720	gear	1.596	int:2:int:0.36:0.72,spi:2:spi:0.41:0.82,armor:14:armor:0.004:0.056
-R	warlock/destruction	60	14122	12729	gear	1.1360000000000001	int:3:int:0.36:1.08,armor:14:armor:0.004:0.056
-R	warlock/destruction	60	14122	12730	gear	1.286	spi:3:spi:0.41:1.23,armor:14:armor:0.004:0.056
-R	warlock/destruction	60	14122	12731	gear	0.056	armor:14:armor:0.004:0.056
+R	warlock/destruction	60	14122	12718	gear	0.6300000000000001	int:2:int:0.27:0.54,sta:2:sta:0.017:0.034,armor:14:armor:0.004:0.056
+R	warlock/destruction	60	14122	12719	gear	0.8900000000000001	spi:2:spi:0.4:0.8,sta:2:sta:0.017:0.034,armor:14:armor:0.004:0.056
+R	warlock/destruction	60	14122	12720	gear	1.3960000000000001	int:2:int:0.27:0.54,spi:2:spi:0.4:0.8,armor:14:armor:0.004:0.056
+R	warlock/destruction	60	14122	12729	gear	0.8660000000000001	int:3:int:0.27:0.81,armor:14:armor:0.004:0.056
+R	warlock/destruction	60	14122	12730	gear	1.2560000000000002	spi:3:spi:0.4:1.2,armor:14:armor:0.004:0.056
+R	warlock/destruction	60	14122	12731	gear	0.10700000000000001	sta:3:sta:0.017:0.051,armor:14:armor:0.004:0.056
 R	warlock/destruction	60	14122	12734	gear	4.056	sp:4:sp:1:4,armor:14:armor:0.004:0.056
 R	warlock/destruction	60	14122	12735	gear	2.056	spDmg:2:sp:1:2,armor:14:armor:0.004:0.056
-R	warlock/destruction	60	14122	12740	gear	0.056	armor:14:armor:0.004:0.056
-R	warlock/destruction	60	14122	12741	gear	0.056	armor:14:armor:0.004:0.056
-R	warlock/destruction	60	14122	12742	gear	0.056	armor:14:armor:0.004:0.056
-R	warlock/destruction	60	14122	12743	gear	0.056	armor:14:armor:0.004:0.056
-R	warlock/destruction	60	14122	12744	gear	0.056	armor:14:armor:0.004:0.056
-R	warlock/destruction	60	14122	12745	gear	1.776	int:2:int:0.36:0.72,sp:1:sp:1:1,armor:14:armor:0.004:0.056
+R	warlock/destruction	60	14122	12740	gear	0.09	sta:2:sta:0.017:0.034,armor:14:armor:0.004:0.056
+R	warlock/destruction	60	14122	12741	gear	0.09	sta:2:sta:0.017:0.034,armor:14:armor:0.004:0.056
+R	warlock/destruction	60	14122	12742	gear	0.09	sta:2:sta:0.017:0.034,armor:14:armor:0.004:0.056
+R	warlock/destruction	60	14122	12743	gear	0.09	sta:2:sta:0.017:0.034,armor:14:armor:0.004:0.056
+R	warlock/destruction	60	14122	12744	gear	0.09	sta:2:sta:0.017:0.034,armor:14:armor:0.004:0.056
+R	warlock/destruction	60	14122	12745	gear	1.613	int:2:int:0.27:0.54,sta:1:sta:0.017:0.017,sp:1:sp:1:1,armor:14:armor:0.004:0.056
 R	warlock/destruction	60	14122	12756	gear	0.056	armor:14:armor:0.004:0.056
 R	warlock/destruction	60	14122	12757	gear	3.136	spFire:4:spFire:0.77:3.08,armor:14:armor:0.004:0.056
 R	warlock/destruction	60	14122	12758	gear	0.056	armor:14:armor:0.004:0.056
 R	warlock/destruction	60	14122	12759	gear	0.056	armor:14:armor:0.004:0.056
-R	warlock/destruction	60	14122	12761	gear	1.016	spShadow:4:spShadow:0.24:0.96,armor:14:armor:0.004:0.056
-R	warlock/destruction	60	14340	0	gear	0.352	armor:88:armor:0.004:0.352
-R	warlock/destruction	60	14673	0	gear	0.136	armor:34:armor:0.004:0.136
-R	warlock/destruction	60	15945	0	oh	0.82	spi:2:spi:0.41:0.82
-R	warlock/destruction	60	19557	0	mh	0.0	
-R	warlock/destruction	60	254111	0	gear	18.856	int:9:int:0.36:3.24,spFire:20:spFire:0.77:15.4,armor:54:armor:0.004:0.216
-R	warlock/destruction	60	280082	0	mh	82.11	int:15:int:0.36:5.4,hit:1.5:spellHit:1.4:2.1,spi:21:spi:0.41:8.61,sp:66:sp:1:66
+R	warlock/destruction	60	14122	12761	gear	1.056	spShadow:4:spShadow:0.25:1,armor:14:armor:0.004:0.056
+R	warlock/destruction	60	14340	0	gear	0.675	sta:19:sta:0.017:0.323,armor:88:armor:0.004:0.352
+R	warlock/destruction	60	14673	0	gear	0.22100000000000003	sta:5:sta:0.017:0.085,armor:34:armor:0.004:0.136
+R	warlock/destruction	60	15945	0	oh	0.8340000000000001	sta:2:sta:0.017:0.034,spi:2:spi:0.4:0.8
+R	warlock/destruction	60	19557	0	mh	0.051000000000000004	sta:3:sta:0.017:0.051
+R	warlock/destruction	60	254111	0	gear	18.267000000000003	int:9:int:0.27:2.43,sta:13:sta:0.017:0.221,spFire:20:spFire:0.77:15.4,armor:54:armor:0.004:0.216
+R	warlock/destruction	60	280082	0	mh	80.4	int:15:int:0.27:4.05,hit:1.5:spellHit:1.3:1.95,spi:21:spi:0.4:8.4,sp:66:sp:1:66
 R	druid/balance	12	1315	0	gear	4.5	sta:10:sta:0.3:3,spi:15:spi:0.1:1.5
 R	druid/balance	12	1808	0	gear	1.036	armor:74:armor:0.014:1.036
 R	druid/balance	12	1990	0	mh	0.0	
@@ -5854,1110 +5854,1110 @@ R	druid/balance	60	254111	0	gear	8.118	int:9:int:0.22:1.98,sta:13:sta:0.36:4.68,
 R	druid/balance	60	270033	0	gear	1.053	armor:39:armor:0.027:1.053
 R	druid/balance	60	273892	0	gear	33.634	sta:20:sta:0.36:7.2,int:19:int:0.22:4.18,spi:16:spi:0.43:6.88,spDmg:11:sp:1:11,armor:162:armor:0.027:4.374
 R	druid/balance	60	280082	0	mh	81.48	int:15:int:0.22:3.3,hit:1.5:spellHit:2.1:3.15,spi:21:spi:0.43:9.03,sp:66:sp:1:66
-R	druid/restoration	12	1315	0	gear	0.99	spi:15:spi:0.066:0.99
-R	druid/restoration	12	1808	0	gear	0.518	armor:74:armor:0.007:0.518
+R	druid/restoration	12	1315	0	gear	5.550000000000001	sta:10:sta:0.39:3.9,spi:15:spi:0.11:1.65
+R	druid/restoration	12	1808	0	gear	0.962	armor:74:armor:0.013:0.962
 R	druid/restoration	12	1990	0	mh	0.0	
-R	druid/restoration	12	1990	12718	mh	4.95	int:9:int:0.55:4.95
-R	druid/restoration	12	1990	12905	mh	34.05	int:11:int:0.55:6.05,sp:28:sp:1:28
+R	druid/restoration	12	1990	12718	mh	6.75	int:9:int:0.36:3.24,sta:9:sta:0.39:3.51
+R	druid/restoration	12	1990	12905	mh	34.69	int:11:int:0.36:3.96,sta:7:sta:0.39:2.73,sp:28:sp:1:28
 R	druid/restoration	12	2140	0	mh	0.0	
-R	druid/restoration	12	2140	12718	mh	0.55	int:1:int:0.55:0.55
-R	druid/restoration	12	2140	12917	mh	5.55	sp:5:sp:1:5,int:1:int:0.55:0.55
+R	druid/restoration	12	2140	12718	mh	0.75	int:1:int:0.36:0.36,sta:1:sta:0.39:0.39
+R	druid/restoration	12	2140	12917	mh	5.36	sp:5:sp:1:5,int:1:int:0.36:0.36
 R	druid/restoration	12	2225	0	mh	0.0	
-R	druid/restoration	12	2614	0	gear	0.203	armor:29:armor:0.007:0.203
-R	druid/restoration	12	3158	0	gear	0.182	armor:26:armor:0.007:0.182
+R	druid/restoration	12	2614	0	gear	0.377	armor:29:armor:0.013:0.377
+R	druid/restoration	12	3158	0	gear	0.33799999999999997	armor:26:armor:0.013:0.338
 R	druid/restoration	12	3570	0	mh	0.0	
 R	druid/restoration	12	4023	0	mh	0.0	
 R	druid/restoration	12	4570	0	mh	0.0	
-R	druid/restoration	12	4570	12718	mh	1.6500000000000001	int:3:int:0.55:1.65
-R	druid/restoration	12	4570	12719	mh	0.198	spi:3:spi:0.066:0.198
-R	druid/restoration	12	4570	12720	mh	1.848	int:3:int:0.55:1.65,spi:3:spi:0.066:0.198
-R	druid/restoration	12	4570	12721	mh	0.0	
-R	druid/restoration	12	4570	12722	mh	0.0	
-R	druid/restoration	12	4570	12723	mh	1.6500000000000001	int:3:int:0.55:1.65
-R	druid/restoration	12	4570	12724	mh	1.6500000000000001	int:3:int:0.55:1.65
-R	druid/restoration	12	4570	12725	mh	0.198	spi:3:spi:0.066:0.198
-R	druid/restoration	12	4570	12726	mh	0.198	spi:3:spi:0.066:0.198
+R	druid/restoration	12	4570	12718	mh	2.25	int:3:int:0.36:1.08,sta:3:sta:0.39:1.17
+R	druid/restoration	12	4570	12719	mh	1.5	spi:3:spi:0.11:0.33,sta:3:sta:0.39:1.17
+R	druid/restoration	12	4570	12720	mh	1.4100000000000001	int:3:int:0.36:1.08,spi:3:spi:0.11:0.33
+R	druid/restoration	12	4570	12721	mh	1.17	sta:3:sta:0.39:1.17
+R	druid/restoration	12	4570	12722	mh	1.17	sta:3:sta:0.39:1.17
+R	druid/restoration	12	4570	12723	mh	1.08	int:3:int:0.36:1.08
+R	druid/restoration	12	4570	12724	mh	1.08	int:3:int:0.36:1.08
+R	druid/restoration	12	4570	12725	mh	0.33	spi:3:spi:0.11:0.33
+R	druid/restoration	12	4570	12726	mh	0.33	spi:3:spi:0.11:0.33
 R	druid/restoration	12	4570	12727	mh	0.0	
 R	druid/restoration	12	4570	12728	mh	0.0	
-R	druid/restoration	12	4570	12729	mh	2.2	int:4:int:0.55:2.2
-R	druid/restoration	12	4570	12730	mh	0.264	spi:4:spi:0.066:0.264
-R	druid/restoration	12	4570	12731	mh	0.0	
+R	druid/restoration	12	4570	12729	mh	1.44	int:4:int:0.36:1.44
+R	druid/restoration	12	4570	12730	mh	0.44	spi:4:spi:0.11:0.44
+R	druid/restoration	12	4570	12731	mh	1.56	sta:4:sta:0.39:1.56
 R	druid/restoration	12	4570	12732	mh	0.0	
 R	druid/restoration	12	4570	12733	mh	0.0	
 R	druid/restoration	12	4570	12736	mh	0.0	
-R	druid/restoration	12	4570	12740	mh	0.0	
-R	druid/restoration	12	4570	12741	mh	0.0	
-R	druid/restoration	12	4570	12742	mh	0.0	
-R	druid/restoration	12	4570	12743	mh	0.0	
-R	druid/restoration	12	4570	12744	mh	0.0	
+R	druid/restoration	12	4570	12740	mh	1.17	sta:3:sta:0.39:1.17
+R	druid/restoration	12	4570	12741	mh	1.17	sta:3:sta:0.39:1.17
+R	druid/restoration	12	4570	12742	mh	1.17	sta:3:sta:0.39:1.17
+R	druid/restoration	12	4570	12743	mh	1.17	sta:3:sta:0.39:1.17
+R	druid/restoration	12	4570	12744	mh	1.17	sta:3:sta:0.39:1.17
 R	druid/restoration	12	4570	12759	mh	0.0	
-R	druid/restoration	12	4570	12918	mh	10.2	sp:8:sp:1:8,int:4:int:0.55:2.2
-R	druid/restoration	12	4570	12919	mh	7.2	spDmg:5:sp:1:5,int:4:int:0.55:2.2
+R	druid/restoration	12	4570	12918	mh	9.44	sp:8:sp:1:8,int:4:int:0.36:1.44
+R	druid/restoration	12	4570	12919	mh	6.4399999999999995	spDmg:5:sp:1:5,int:4:int:0.36:1.44
 R	druid/restoration	12	5079	0	gear	0.0	
-R	druid/restoration	12	6540	0	gear	0.196	armor:28:armor:0.007:0.196
-R	druid/restoration	12	6540	12718	gear	1.846	int:3:int:0.55:1.65,armor:28:armor:0.007:0.196
-R	druid/restoration	12	6540	12719	gear	0.394	spi:3:spi:0.066:0.198,armor:28:armor:0.007:0.196
-R	druid/restoration	12	6540	12720	gear	2.044	int:3:int:0.55:1.65,spi:3:spi:0.066:0.198,armor:28:armor:0.007:0.196
-R	druid/restoration	12	6540	12729	gear	2.946	int:5:int:0.55:2.75,armor:28:armor:0.007:0.196
-R	druid/restoration	12	6540	12730	gear	0.526	spi:5:spi:0.066:0.33,armor:28:armor:0.007:0.196
-R	druid/restoration	12	6540	12731	gear	0.196	armor:28:armor:0.007:0.196
-R	druid/restoration	12	6540	12734	gear	6.196	sp:6:sp:1:6,armor:28:armor:0.007:0.196
-R	druid/restoration	12	6540	12735	gear	4.196	spDmg:4:sp:1:4,armor:28:armor:0.007:0.196
-R	druid/restoration	12	6540	12740	gear	0.196	armor:28:armor:0.007:0.196
-R	druid/restoration	12	6540	12741	gear	0.196	armor:28:armor:0.007:0.196
-R	druid/restoration	12	6540	12742	gear	0.196	armor:28:armor:0.007:0.196
-R	druid/restoration	12	6540	12743	gear	0.196	armor:28:armor:0.007:0.196
-R	druid/restoration	12	6540	12744	gear	0.196	armor:28:armor:0.007:0.196
-R	druid/restoration	12	6540	12745	gear	4.396	int:4:int:0.55:2.2,sp:2:sp:1:2,armor:28:armor:0.007:0.196
-R	druid/restoration	12	6540	12756	gear	1.1760000000000002	spArcane:7:spArcane:0.14:0.98,armor:28:armor:0.007:0.196
-R	druid/restoration	12	6540	12757	gear	0.196	armor:28:armor:0.007:0.196
-R	druid/restoration	12	6540	12758	gear	0.196	armor:28:armor:0.007:0.196
-R	druid/restoration	12	6540	12759	gear	0.196	armor:28:armor:0.007:0.196
-R	druid/restoration	12	6540	12761	gear	0.196	armor:28:armor:0.007:0.196
-R	druid/restoration	12	6557	0	gear	0.343	armor:49:armor:0.007:0.343
-R	druid/restoration	12	6557	12718	gear	1.443	int:2:int:0.55:1.1,armor:49:armor:0.007:0.343
-R	druid/restoration	12	6557	12719	gear	0.47500000000000003	spi:2:spi:0.066:0.132,armor:49:armor:0.007:0.343
-R	druid/restoration	12	6557	12720	gear	1.5750000000000002	int:2:int:0.55:1.1,spi:2:spi:0.066:0.132,armor:49:armor:0.007:0.343
-R	druid/restoration	12	6557	12721	gear	0.343	armor:49:armor:0.007:0.343
-R	druid/restoration	12	6557	12722	gear	0.343	armor:49:armor:0.007:0.343
-R	druid/restoration	12	6557	12723	gear	1.443	int:2:int:0.55:1.1,armor:49:armor:0.007:0.343
-R	druid/restoration	12	6557	12724	gear	1.443	int:2:int:0.55:1.1,armor:49:armor:0.007:0.343
-R	druid/restoration	12	6557	12725	gear	0.47500000000000003	spi:2:spi:0.066:0.132,armor:49:armor:0.007:0.343
-R	druid/restoration	12	6557	12726	gear	0.47500000000000003	spi:2:spi:0.066:0.132,armor:49:armor:0.007:0.343
-R	druid/restoration	12	6557	12727	gear	0.343	armor:49:armor:0.007:0.343
-R	druid/restoration	12	6557	12728	gear	0.343	armor:49:armor:0.007:0.343
-R	druid/restoration	12	6557	12729	gear	1.993	int:3:int:0.55:1.65,armor:49:armor:0.007:0.343
-R	druid/restoration	12	6557	12730	gear	0.541	spi:3:spi:0.066:0.198,armor:49:armor:0.007:0.343
-R	druid/restoration	12	6557	12731	gear	0.343	armor:49:armor:0.007:0.343
-R	druid/restoration	12	6557	12732	gear	0.343	armor:49:armor:0.007:0.343
-R	druid/restoration	12	6557	12733	gear	0.343	armor:49:armor:0.007:0.343
-R	druid/restoration	12	6557	12734	gear	4.343	sp:4:sp:1:4,armor:49:armor:0.007:0.343
-R	druid/restoration	12	6557	12735	gear	2.343	spDmg:2:sp:1:2,armor:49:armor:0.007:0.343
-R	druid/restoration	12	6557	12736	gear	0.343	armor:49:armor:0.007:0.343
-R	druid/restoration	12	6557	12740	gear	0.343	armor:49:armor:0.007:0.343
-R	druid/restoration	12	6557	12741	gear	0.343	armor:49:armor:0.007:0.343
-R	druid/restoration	12	6557	12742	gear	0.343	armor:49:armor:0.007:0.343
-R	druid/restoration	12	6557	12743	gear	0.343	armor:49:armor:0.007:0.343
-R	druid/restoration	12	6557	12744	gear	0.343	armor:49:armor:0.007:0.343
-R	druid/restoration	12	6557	12756	gear	0.903	spArcane:4:spArcane:0.14:0.56,armor:49:armor:0.007:0.343
-R	druid/restoration	12	6557	12760	gear	3.143	spNature:4:spNature:0.7:2.8,armor:49:armor:0.007:0.343
-R	druid/restoration	12	7047	0	gear	0.512	spi:5:spi:0.066:0.33,armor:26:armor:0.007:0.182
-R	druid/restoration	12	8192	0	gear	0.602	armor:86:armor:0.007:0.602
-R	druid/restoration	12	9834	0	gear	0.511	armor:73:armor:0.007:0.511
-R	druid/restoration	12	9834	12718	gear	3.8110000000000004	int:6:int:0.55:3.3,armor:73:armor:0.007:0.511
-R	druid/restoration	12	9834	12719	gear	0.907	spi:6:spi:0.066:0.396,armor:73:armor:0.007:0.511
-R	druid/restoration	12	9834	12720	gear	4.207	int:6:int:0.55:3.3,spi:6:spi:0.066:0.396,armor:73:armor:0.007:0.511
-R	druid/restoration	12	9834	12721	gear	0.511	armor:73:armor:0.007:0.511
-R	druid/restoration	12	9834	12722	gear	0.511	armor:73:armor:0.007:0.511
-R	druid/restoration	12	9834	12723	gear	3.8110000000000004	int:6:int:0.55:3.3,armor:73:armor:0.007:0.511
-R	druid/restoration	12	9834	12724	gear	3.8110000000000004	int:6:int:0.55:3.3,armor:73:armor:0.007:0.511
-R	druid/restoration	12	9834	12725	gear	0.907	spi:6:spi:0.066:0.396,armor:73:armor:0.007:0.511
-R	druid/restoration	12	9834	12726	gear	0.907	spi:6:spi:0.066:0.396,armor:73:armor:0.007:0.511
-R	druid/restoration	12	9834	12727	gear	0.511	armor:73:armor:0.007:0.511
-R	druid/restoration	12	9834	12728	gear	0.511	armor:73:armor:0.007:0.511
-R	druid/restoration	12	9834	12729	gear	5.461	int:9:int:0.55:4.95,armor:73:armor:0.007:0.511
-R	druid/restoration	12	9834	12730	gear	1.105	spi:9:spi:0.066:0.594,armor:73:armor:0.007:0.511
-R	druid/restoration	12	9834	12731	gear	0.511	armor:73:armor:0.007:0.511
-R	druid/restoration	12	9834	12732	gear	0.511	armor:73:armor:0.007:0.511
-R	druid/restoration	12	9834	12733	gear	0.511	armor:73:armor:0.007:0.511
-R	druid/restoration	12	9834	12734	gear	11.511	sp:11:sp:1:11,armor:73:armor:0.007:0.511
-R	druid/restoration	12	9834	12735	gear	7.511	spDmg:7:sp:1:7,armor:73:armor:0.007:0.511
-R	druid/restoration	12	9834	12736	gear	0.511	armor:73:armor:0.007:0.511
-R	druid/restoration	12	9834	12740	gear	0.511	armor:73:armor:0.007:0.511
-R	druid/restoration	12	9834	12741	gear	0.511	armor:73:armor:0.007:0.511
-R	druid/restoration	12	9834	12742	gear	0.511	armor:73:armor:0.007:0.511
-R	druid/restoration	12	9834	12743	gear	0.511	armor:73:armor:0.007:0.511
-R	druid/restoration	12	9834	12744	gear	0.511	armor:73:armor:0.007:0.511
-R	druid/restoration	12	9834	12745	gear	7.361000000000001	int:7:int:0.55:3.85,sp:3:sp:1:3,armor:73:armor:0.007:0.511
-R	druid/restoration	12	9834	12746	gear	7.625000000000001	int:7:int:0.55:3.85,spi:4:spi:0.066:0.264,sp:3:sp:1:3,armor:73:armor:0.007:0.511
-R	druid/restoration	12	9834	12747	gear	3.7750000000000004	spi:4:spi:0.066:0.264,sp:3:sp:1:3,armor:73:armor:0.007:0.511
-R	druid/restoration	12	9834	12748	gear	4.711	int:4:int:0.55:2.2,spDmg:2:sp:1:2,armor:73:armor:0.007:0.511
-R	druid/restoration	12	9834	12749	gear	6.625000000000001	int:7:int:0.55:3.85,spi:4:spi:0.066:0.264,spDmg:2:sp:1:2,armor:73:armor:0.007:0.511
-R	druid/restoration	12	9834	12750	gear	2.7750000000000004	spi:4:spi:0.066:0.264,spDmg:2:sp:1:2,armor:73:armor:0.007:0.511
-R	druid/restoration	12	9834	12751	gear	0.511	armor:73:armor:0.007:0.511
-R	druid/restoration	12	9834	12752	gear	0.511	armor:73:armor:0.007:0.511
-R	druid/restoration	12	9834	12753	gear	0.511	armor:73:armor:0.007:0.511
-R	druid/restoration	12	9834	12755	gear	3.511	sp:3:sp:1:3,armor:73:armor:0.007:0.511
-R	druid/restoration	12	9834	12756	gear	2.3310000000000004	spArcane:13:spArcane:0.14:1.82,armor:73:armor:0.007:0.511
-R	druid/restoration	12	9834	12760	gear	9.610999999999999	spNature:13:spNature:0.7:9.1,armor:73:armor:0.007:0.511
-R	druid/restoration	12	11187	0	gear	0.028	armor:4:armor:0.007:0.028
+R	druid/restoration	12	6540	0	gear	0.364	armor:28:armor:0.013:0.364
+R	druid/restoration	12	6540	12718	gear	2.614	int:3:int:0.36:1.08,sta:3:sta:0.39:1.17,armor:28:armor:0.013:0.364
+R	druid/restoration	12	6540	12719	gear	1.8639999999999999	spi:3:spi:0.11:0.33,sta:3:sta:0.39:1.17,armor:28:armor:0.013:0.364
+R	druid/restoration	12	6540	12720	gear	1.774	int:3:int:0.36:1.08,spi:3:spi:0.11:0.33,armor:28:armor:0.013:0.364
+R	druid/restoration	12	6540	12729	gear	2.1639999999999997	int:5:int:0.36:1.8,armor:28:armor:0.013:0.364
+R	druid/restoration	12	6540	12730	gear	0.914	spi:5:spi:0.11:0.55,armor:28:armor:0.013:0.364
+R	druid/restoration	12	6540	12731	gear	2.314	sta:5:sta:0.39:1.95,armor:28:armor:0.013:0.364
+R	druid/restoration	12	6540	12734	gear	6.364	sp:6:sp:1:6,armor:28:armor:0.013:0.364
+R	druid/restoration	12	6540	12735	gear	4.364	spDmg:4:sp:1:4,armor:28:armor:0.013:0.364
+R	druid/restoration	12	6540	12740	gear	1.5339999999999998	sta:3:sta:0.39:1.17,armor:28:armor:0.013:0.364
+R	druid/restoration	12	6540	12741	gear	1.5339999999999998	sta:3:sta:0.39:1.17,armor:28:armor:0.013:0.364
+R	druid/restoration	12	6540	12742	gear	1.5339999999999998	sta:3:sta:0.39:1.17,armor:28:armor:0.013:0.364
+R	druid/restoration	12	6540	12743	gear	1.5339999999999998	sta:3:sta:0.39:1.17,armor:28:armor:0.013:0.364
+R	druid/restoration	12	6540	12744	gear	1.5339999999999998	sta:3:sta:0.39:1.17,armor:28:armor:0.013:0.364
+R	druid/restoration	12	6540	12745	gear	4.584	int:4:int:0.36:1.44,sta:2:sta:0.39:0.78,sp:2:sp:1:2,armor:28:armor:0.013:0.364
+R	druid/restoration	12	6540	12756	gear	1.274	spArcane:7:spArcane:0.13:0.91,armor:28:armor:0.013:0.364
+R	druid/restoration	12	6540	12757	gear	0.364	armor:28:armor:0.013:0.364
+R	druid/restoration	12	6540	12758	gear	0.364	armor:28:armor:0.013:0.364
+R	druid/restoration	12	6540	12759	gear	0.364	armor:28:armor:0.013:0.364
+R	druid/restoration	12	6540	12761	gear	0.364	armor:28:armor:0.013:0.364
+R	druid/restoration	12	6557	0	gear	0.637	armor:49:armor:0.013:0.637
+R	druid/restoration	12	6557	12718	gear	2.137	int:2:int:0.36:0.72,sta:2:sta:0.39:0.78,armor:49:armor:0.013:0.637
+R	druid/restoration	12	6557	12719	gear	1.637	spi:2:spi:0.11:0.22,sta:2:sta:0.39:0.78,armor:49:armor:0.013:0.637
+R	druid/restoration	12	6557	12720	gear	1.577	int:2:int:0.36:0.72,spi:2:spi:0.11:0.22,armor:49:armor:0.013:0.637
+R	druid/restoration	12	6557	12721	gear	1.417	sta:2:sta:0.39:0.78,armor:49:armor:0.013:0.637
+R	druid/restoration	12	6557	12722	gear	1.417	sta:2:sta:0.39:0.78,armor:49:armor:0.013:0.637
+R	druid/restoration	12	6557	12723	gear	1.357	int:2:int:0.36:0.72,armor:49:armor:0.013:0.637
+R	druid/restoration	12	6557	12724	gear	1.357	int:2:int:0.36:0.72,armor:49:armor:0.013:0.637
+R	druid/restoration	12	6557	12725	gear	0.857	spi:2:spi:0.11:0.22,armor:49:armor:0.013:0.637
+R	druid/restoration	12	6557	12726	gear	0.857	spi:2:spi:0.11:0.22,armor:49:armor:0.013:0.637
+R	druid/restoration	12	6557	12727	gear	0.637	armor:49:armor:0.013:0.637
+R	druid/restoration	12	6557	12728	gear	0.637	armor:49:armor:0.013:0.637
+R	druid/restoration	12	6557	12729	gear	1.717	int:3:int:0.36:1.08,armor:49:armor:0.013:0.637
+R	druid/restoration	12	6557	12730	gear	0.9670000000000001	spi:3:spi:0.11:0.33,armor:49:armor:0.013:0.637
+R	druid/restoration	12	6557	12731	gear	1.807	sta:3:sta:0.39:1.17,armor:49:armor:0.013:0.637
+R	druid/restoration	12	6557	12732	gear	0.637	armor:49:armor:0.013:0.637
+R	druid/restoration	12	6557	12733	gear	0.637	armor:49:armor:0.013:0.637
+R	druid/restoration	12	6557	12734	gear	4.6370000000000005	sp:4:sp:1:4,armor:49:armor:0.013:0.637
+R	druid/restoration	12	6557	12735	gear	2.637	spDmg:2:sp:1:2,armor:49:armor:0.013:0.637
+R	druid/restoration	12	6557	12736	gear	0.637	armor:49:armor:0.013:0.637
+R	druid/restoration	12	6557	12740	gear	1.417	sta:2:sta:0.39:0.78,armor:49:armor:0.013:0.637
+R	druid/restoration	12	6557	12741	gear	1.417	sta:2:sta:0.39:0.78,armor:49:armor:0.013:0.637
+R	druid/restoration	12	6557	12742	gear	1.417	sta:2:sta:0.39:0.78,armor:49:armor:0.013:0.637
+R	druid/restoration	12	6557	12743	gear	1.417	sta:2:sta:0.39:0.78,armor:49:armor:0.013:0.637
+R	druid/restoration	12	6557	12744	gear	1.417	sta:2:sta:0.39:0.78,armor:49:armor:0.013:0.637
+R	druid/restoration	12	6557	12756	gear	1.157	spArcane:4:spArcane:0.13:0.52,armor:49:armor:0.013:0.637
+R	druid/restoration	12	6557	12760	gear	3.837	spNature:4:spNature:0.8:3.2,armor:49:armor:0.013:0.637
+R	druid/restoration	12	7047	0	gear	0.888	spi:5:spi:0.11:0.55,armor:26:armor:0.013:0.338
+R	druid/restoration	12	8192	0	gear	3.068	sta:5:sta:0.39:1.95,armor:86:armor:0.013:1.118
+R	druid/restoration	12	9834	0	gear	0.949	armor:73:armor:0.013:0.949
+R	druid/restoration	12	9834	12718	gear	5.449	int:6:int:0.36:2.16,sta:6:sta:0.39:2.34,armor:73:armor:0.013:0.949
+R	druid/restoration	12	9834	12719	gear	3.949	spi:6:spi:0.11:0.66,sta:6:sta:0.39:2.34,armor:73:armor:0.013:0.949
+R	druid/restoration	12	9834	12720	gear	3.769	int:6:int:0.36:2.16,spi:6:spi:0.11:0.66,armor:73:armor:0.013:0.949
+R	druid/restoration	12	9834	12721	gear	3.2889999999999997	sta:6:sta:0.39:2.34,armor:73:armor:0.013:0.949
+R	druid/restoration	12	9834	12722	gear	3.2889999999999997	sta:6:sta:0.39:2.34,armor:73:armor:0.013:0.949
+R	druid/restoration	12	9834	12723	gear	3.109	int:6:int:0.36:2.16,armor:73:armor:0.013:0.949
+R	druid/restoration	12	9834	12724	gear	3.109	int:6:int:0.36:2.16,armor:73:armor:0.013:0.949
+R	druid/restoration	12	9834	12725	gear	1.609	spi:6:spi:0.11:0.66,armor:73:armor:0.013:0.949
+R	druid/restoration	12	9834	12726	gear	1.609	spi:6:spi:0.11:0.66,armor:73:armor:0.013:0.949
+R	druid/restoration	12	9834	12727	gear	0.949	armor:73:armor:0.013:0.949
+R	druid/restoration	12	9834	12728	gear	0.949	armor:73:armor:0.013:0.949
+R	druid/restoration	12	9834	12729	gear	4.189	int:9:int:0.36:3.24,armor:73:armor:0.013:0.949
+R	druid/restoration	12	9834	12730	gear	1.939	spi:9:spi:0.11:0.99,armor:73:armor:0.013:0.949
+R	druid/restoration	12	9834	12731	gear	4.4590000000000005	sta:9:sta:0.39:3.51,armor:73:armor:0.013:0.949
+R	druid/restoration	12	9834	12732	gear	0.949	armor:73:armor:0.013:0.949
+R	druid/restoration	12	9834	12733	gear	0.949	armor:73:armor:0.013:0.949
+R	druid/restoration	12	9834	12734	gear	11.949	sp:11:sp:1:11,armor:73:armor:0.013:0.949
+R	druid/restoration	12	9834	12735	gear	7.949	spDmg:7:sp:1:7,armor:73:armor:0.013:0.949
+R	druid/restoration	12	9834	12736	gear	0.949	armor:73:armor:0.013:0.949
+R	druid/restoration	12	9834	12740	gear	3.2889999999999997	sta:6:sta:0.39:2.34,armor:73:armor:0.013:0.949
+R	druid/restoration	12	9834	12741	gear	3.2889999999999997	sta:6:sta:0.39:2.34,armor:73:armor:0.013:0.949
+R	druid/restoration	12	9834	12742	gear	3.2889999999999997	sta:6:sta:0.39:2.34,armor:73:armor:0.013:0.949
+R	druid/restoration	12	9834	12743	gear	3.2889999999999997	sta:6:sta:0.39:2.34,armor:73:armor:0.013:0.949
+R	druid/restoration	12	9834	12744	gear	3.2889999999999997	sta:6:sta:0.39:2.34,armor:73:armor:0.013:0.949
+R	druid/restoration	12	9834	12745	gear	8.029	int:7:int:0.36:2.52,sta:4:sta:0.39:1.56,sp:3:sp:1:3,armor:73:armor:0.013:0.949
+R	druid/restoration	12	9834	12746	gear	6.909	int:7:int:0.36:2.52,spi:4:spi:0.11:0.44,sp:3:sp:1:3,armor:73:armor:0.013:0.949
+R	druid/restoration	12	9834	12747	gear	7.119	spi:4:spi:0.11:0.44,sta:7:sta:0.39:2.73,sp:3:sp:1:3,armor:73:armor:0.013:0.949
+R	druid/restoration	12	9834	12748	gear	7.119	int:4:int:0.36:1.44,sta:7:sta:0.39:2.73,spDmg:2:sp:1:2,armor:73:armor:0.013:0.949
+R	druid/restoration	12	9834	12749	gear	5.909	int:7:int:0.36:2.52,spi:4:spi:0.11:0.44,spDmg:2:sp:1:2,armor:73:armor:0.013:0.949
+R	druid/restoration	12	9834	12750	gear	6.119	spi:4:spi:0.11:0.44,sta:7:sta:0.39:2.73,spDmg:2:sp:1:2,armor:73:armor:0.013:0.949
+R	druid/restoration	12	9834	12751	gear	3.679	sta:7:sta:0.39:2.73,armor:73:armor:0.013:0.949
+R	druid/restoration	12	9834	12752	gear	3.679	sta:7:sta:0.39:2.73,armor:73:armor:0.013:0.949
+R	druid/restoration	12	9834	12753	gear	3.679	sta:7:sta:0.39:2.73,armor:73:armor:0.013:0.949
+R	druid/restoration	12	9834	12755	gear	6.679	sp:3:sp:1:3,sta:7:sta:0.39:2.73,armor:73:armor:0.013:0.949
+R	druid/restoration	12	9834	12756	gear	2.639	spArcane:13:spArcane:0.13:1.69,armor:73:armor:0.013:0.949
+R	druid/restoration	12	9834	12760	gear	11.349	spNature:13:spNature:0.8:10.4,armor:73:armor:0.013:0.949
+R	druid/restoration	12	11187	0	gear	0.052	armor:4:armor:0.013:0.052
 R	druid/restoration	12	11994	0	gear	0.0	
-R	druid/restoration	12	11994	12718	gear	1.6500000000000001	int:3:int:0.55:1.65
-R	druid/restoration	12	11994	12719	gear	0.198	spi:3:spi:0.066:0.198
-R	druid/restoration	12	11994	12720	gear	1.848	int:3:int:0.55:1.65,spi:3:spi:0.066:0.198
-R	druid/restoration	12	11994	12721	gear	0.0	
-R	druid/restoration	12	11994	12722	gear	0.0	
-R	druid/restoration	12	11994	12723	gear	1.6500000000000001	int:3:int:0.55:1.65
-R	druid/restoration	12	11994	12724	gear	1.6500000000000001	int:3:int:0.55:1.65
-R	druid/restoration	12	11994	12725	gear	0.198	spi:3:spi:0.066:0.198
-R	druid/restoration	12	11994	12726	gear	0.198	spi:3:spi:0.066:0.198
+R	druid/restoration	12	11994	12718	gear	2.25	int:3:int:0.36:1.08,sta:3:sta:0.39:1.17
+R	druid/restoration	12	11994	12719	gear	1.5	spi:3:spi:0.11:0.33,sta:3:sta:0.39:1.17
+R	druid/restoration	12	11994	12720	gear	1.4100000000000001	int:3:int:0.36:1.08,spi:3:spi:0.11:0.33
+R	druid/restoration	12	11994	12721	gear	1.17	sta:3:sta:0.39:1.17
+R	druid/restoration	12	11994	12722	gear	1.17	sta:3:sta:0.39:1.17
+R	druid/restoration	12	11994	12723	gear	1.08	int:3:int:0.36:1.08
+R	druid/restoration	12	11994	12724	gear	1.08	int:3:int:0.36:1.08
+R	druid/restoration	12	11994	12725	gear	0.33	spi:3:spi:0.11:0.33
+R	druid/restoration	12	11994	12726	gear	0.33	spi:3:spi:0.11:0.33
 R	druid/restoration	12	11994	12727	gear	0.0	
 R	druid/restoration	12	11994	12728	gear	0.0	
-R	druid/restoration	12	11994	12729	gear	2.75	int:5:int:0.55:2.75
-R	druid/restoration	12	11994	12730	gear	0.33	spi:5:spi:0.066:0.33
-R	druid/restoration	12	11994	12731	gear	0.0	
+R	druid/restoration	12	11994	12729	gear	1.7999999999999998	int:5:int:0.36:1.8
+R	druid/restoration	12	11994	12730	gear	0.55	spi:5:spi:0.11:0.55
+R	druid/restoration	12	11994	12731	gear	1.9500000000000002	sta:5:sta:0.39:1.95
 R	druid/restoration	12	11994	12732	gear	0.0	
 R	druid/restoration	12	11994	12733	gear	0.0	
 R	druid/restoration	12	11994	12737	gear	0.0	
-R	druid/restoration	12	11994	12738	gear	0.62	mp5:2:mp5:0.31:0.62
+R	druid/restoration	12	11994	12738	gear	0.24	mp5:2:mp5:0.12:0.24
 R	druid/restoration	12	11994	12739	gear	0.0	
-R	druid/restoration	12	11994	12740	gear	0.0	
-R	druid/restoration	12	11994	12741	gear	0.0	
-R	druid/restoration	12	11994	12742	gear	0.0	
-R	druid/restoration	12	11994	12743	gear	0.0	
-R	druid/restoration	12	11994	12744	gear	0.0	
+R	druid/restoration	12	11994	12740	gear	1.17	sta:3:sta:0.39:1.17
+R	druid/restoration	12	11994	12741	gear	1.17	sta:3:sta:0.39:1.17
+R	druid/restoration	12	11994	12742	gear	1.17	sta:3:sta:0.39:1.17
+R	druid/restoration	12	11994	12743	gear	1.17	sta:3:sta:0.39:1.17
+R	druid/restoration	12	11994	12744	gear	1.17	sta:3:sta:0.39:1.17
 R	druid/restoration	12	13183	0	mh	0.0	
-R	druid/restoration	12	14122	0	gear	0.098	armor:14:armor:0.007:0.098
-R	druid/restoration	12	14122	12718	gear	1.1980000000000002	int:2:int:0.55:1.1,armor:14:armor:0.007:0.098
-R	druid/restoration	12	14122	12719	gear	0.23	spi:2:spi:0.066:0.132,armor:14:armor:0.007:0.098
-R	druid/restoration	12	14122	12720	gear	1.3300000000000003	int:2:int:0.55:1.1,spi:2:spi:0.066:0.132,armor:14:armor:0.007:0.098
-R	druid/restoration	12	14122	12729	gear	1.7480000000000002	int:3:int:0.55:1.65,armor:14:armor:0.007:0.098
-R	druid/restoration	12	14122	12730	gear	0.29600000000000004	spi:3:spi:0.066:0.198,armor:14:armor:0.007:0.098
-R	druid/restoration	12	14122	12731	gear	0.098	armor:14:armor:0.007:0.098
-R	druid/restoration	12	14122	12734	gear	4.098	sp:4:sp:1:4,armor:14:armor:0.007:0.098
-R	druid/restoration	12	14122	12735	gear	2.098	spDmg:2:sp:1:2,armor:14:armor:0.007:0.098
-R	druid/restoration	12	14122	12740	gear	0.098	armor:14:armor:0.007:0.098
-R	druid/restoration	12	14122	12741	gear	0.098	armor:14:armor:0.007:0.098
-R	druid/restoration	12	14122	12742	gear	0.098	armor:14:armor:0.007:0.098
-R	druid/restoration	12	14122	12743	gear	0.098	armor:14:armor:0.007:0.098
-R	druid/restoration	12	14122	12744	gear	0.098	armor:14:armor:0.007:0.098
-R	druid/restoration	12	14122	12745	gear	2.198	int:2:int:0.55:1.1,sp:1:sp:1:1,armor:14:armor:0.007:0.098
-R	druid/restoration	12	14122	12756	gear	0.658	spArcane:4:spArcane:0.14:0.56,armor:14:armor:0.007:0.098
-R	druid/restoration	12	14122	12757	gear	0.098	armor:14:armor:0.007:0.098
-R	druid/restoration	12	14122	12758	gear	0.098	armor:14:armor:0.007:0.098
-R	druid/restoration	12	14122	12759	gear	0.098	armor:14:armor:0.007:0.098
-R	druid/restoration	12	14122	12761	gear	0.098	armor:14:armor:0.007:0.098
-R	druid/restoration	12	14340	0	gear	0.616	armor:88:armor:0.007:0.616
-R	druid/restoration	12	14673	0	gear	0.23800000000000002	armor:34:armor:0.007:0.238
-R	druid/restoration	12	15945	0	oh	0.132	spi:2:spi:0.066:0.132
-R	druid/restoration	12	16711	0	gear	1.096	hit:0.3:spellHit:0.97:0.291,armor:115:armor:0.007:0.805
-R	druid/restoration	12	18726	0	gear	0.511	armor:73:armor:0.007:0.511
+R	druid/restoration	12	14122	0	gear	0.182	armor:14:armor:0.013:0.182
+R	druid/restoration	12	14122	12718	gear	1.682	int:2:int:0.36:0.72,sta:2:sta:0.39:0.78,armor:14:armor:0.013:0.182
+R	druid/restoration	12	14122	12719	gear	1.182	spi:2:spi:0.11:0.22,sta:2:sta:0.39:0.78,armor:14:armor:0.013:0.182
+R	druid/restoration	12	14122	12720	gear	1.1219999999999999	int:2:int:0.36:0.72,spi:2:spi:0.11:0.22,armor:14:armor:0.013:0.182
+R	druid/restoration	12	14122	12729	gear	1.262	int:3:int:0.36:1.08,armor:14:armor:0.013:0.182
+R	druid/restoration	12	14122	12730	gear	0.512	spi:3:spi:0.11:0.33,armor:14:armor:0.013:0.182
+R	druid/restoration	12	14122	12731	gear	1.3519999999999999	sta:3:sta:0.39:1.17,armor:14:armor:0.013:0.182
+R	druid/restoration	12	14122	12734	gear	4.182	sp:4:sp:1:4,armor:14:armor:0.013:0.182
+R	druid/restoration	12	14122	12735	gear	2.182	spDmg:2:sp:1:2,armor:14:armor:0.013:0.182
+R	druid/restoration	12	14122	12740	gear	0.962	sta:2:sta:0.39:0.78,armor:14:armor:0.013:0.182
+R	druid/restoration	12	14122	12741	gear	0.962	sta:2:sta:0.39:0.78,armor:14:armor:0.013:0.182
+R	druid/restoration	12	14122	12742	gear	0.962	sta:2:sta:0.39:0.78,armor:14:armor:0.013:0.182
+R	druid/restoration	12	14122	12743	gear	0.962	sta:2:sta:0.39:0.78,armor:14:armor:0.013:0.182
+R	druid/restoration	12	14122	12744	gear	0.962	sta:2:sta:0.39:0.78,armor:14:armor:0.013:0.182
+R	druid/restoration	12	14122	12745	gear	2.292	int:2:int:0.36:0.72,sta:1:sta:0.39:0.39,sp:1:sp:1:1,armor:14:armor:0.013:0.182
+R	druid/restoration	12	14122	12756	gear	0.702	spArcane:4:spArcane:0.13:0.52,armor:14:armor:0.013:0.182
+R	druid/restoration	12	14122	12757	gear	0.182	armor:14:armor:0.013:0.182
+R	druid/restoration	12	14122	12758	gear	0.182	armor:14:armor:0.013:0.182
+R	druid/restoration	12	14122	12759	gear	0.182	armor:14:armor:0.013:0.182
+R	druid/restoration	12	14122	12761	gear	0.182	armor:14:armor:0.013:0.182
+R	druid/restoration	12	14340	0	gear	8.554	sta:19:sta:0.39:7.41,armor:88:armor:0.013:1.144
+R	druid/restoration	12	14673	0	gear	2.3920000000000003	sta:5:sta:0.39:1.95,armor:34:armor:0.013:0.442
+R	druid/restoration	12	15945	0	oh	1.0	sta:2:sta:0.39:0.78,spi:2:spi:0.11:0.22
+R	druid/restoration	12	16711	0	gear	5.245	sta:9:sta:0.39:3.51,hit:0.3:spellHit:0.8:0.24,armor:115:armor:0.013:1.495
+R	druid/restoration	12	18726	0	gear	6.799	sta:15:sta:0.39:5.85,armor:73:armor:0.013:0.949
 R	druid/restoration	12	22397	0	ranged	0.0	
-R	druid/restoration	12	252507	0	gear	6.532	spDmg:6:sp:1:6,armor:76:armor:0.007:0.532
-R	druid/restoration	12	254111	0	gear	5.328	int:9:int:0.55:4.95,armor:54:armor:0.007:0.378
-R	druid/restoration	12	270033	0	gear	0.273	armor:39:armor:0.007:0.273
-R	druid/restoration	12	273892	0	gear	23.64	int:19:int:0.55:10.45,spi:16:spi:0.066:1.056,spDmg:11:sp:1:11,armor:162:armor:0.007:1.134
-R	druid/restoration	12	280082	0	mh	77.09100000000001	int:15:int:0.55:8.25,hit:1.5:spellHit:0.97:1.455,spi:21:spi:0.066:1.386,sp:66:sp:1:66
-R	druid/restoration	25	1315	0	gear	4.295	sta:10:sta:0.38:3.8,spi:15:spi:0.033:0.495
-R	druid/restoration	25	1808	0	gear	1.628	armor:74:armor:0.022:1.628
+R	druid/restoration	12	252507	0	gear	10.888	sta:10:sta:0.39:3.9,spDmg:6:sp:1:6,armor:76:armor:0.013:0.988
+R	druid/restoration	12	254111	0	gear	9.012	int:9:int:0.36:3.24,sta:13:sta:0.39:5.07,armor:54:armor:0.013:0.702
+R	druid/restoration	12	270033	0	gear	0.507	armor:39:armor:0.013:0.507
+R	druid/restoration	12	273892	0	gear	29.506	sta:20:sta:0.39:7.8,int:19:int:0.36:6.84,spi:16:spi:0.11:1.76,spDmg:11:sp:1:11,armor:162:armor:0.013:2.106
+R	druid/restoration	12	280082	0	mh	74.91	int:15:int:0.36:5.4,hit:1.5:spellHit:0.8:1.2,spi:21:spi:0.11:2.31,sp:66:sp:1:66
+R	druid/restoration	25	1315	0	gear	7.05	sta:10:sta:0.48:4.8,spi:15:spi:0.15:2.25
+R	druid/restoration	25	1808	0	gear	1.406	armor:74:armor:0.019:1.406
 R	druid/restoration	25	1990	0	mh	0.0	
-R	druid/restoration	25	1990	12718	mh	8.64	int:9:int:0.58:5.22,sta:9:sta:0.38:3.42
-R	druid/restoration	25	1990	12905	mh	37.04	int:11:int:0.58:6.38,sta:7:sta:0.38:2.66,sp:28:sp:1:28
+R	druid/restoration	25	1990	12718	mh	7.83	int:9:int:0.39:3.51,sta:9:sta:0.48:4.32
+R	druid/restoration	25	1990	12905	mh	35.65	int:11:int:0.39:4.29,sta:7:sta:0.48:3.36,sp:28:sp:1:28
 R	druid/restoration	25	2140	0	mh	0.0	
-R	druid/restoration	25	2140	12718	mh	0.96	int:1:int:0.58:0.58,sta:1:sta:0.38:0.38
-R	druid/restoration	25	2140	12917	mh	5.58	sp:5:sp:1:5,int:1:int:0.58:0.58
+R	druid/restoration	25	2140	12718	mh	0.87	int:1:int:0.39:0.39,sta:1:sta:0.48:0.48
+R	druid/restoration	25	2140	12917	mh	5.39	sp:5:sp:1:5,int:1:int:0.39:0.39
 R	druid/restoration	25	2225	0	mh	0.0	
-R	druid/restoration	25	2614	0	gear	0.638	armor:29:armor:0.022:0.638
-R	druid/restoration	25	3158	0	gear	0.572	armor:26:armor:0.022:0.572
+R	druid/restoration	25	2614	0	gear	0.5509999999999999	armor:29:armor:0.019:0.551
+R	druid/restoration	25	3158	0	gear	0.494	armor:26:armor:0.019:0.494
 R	druid/restoration	25	3570	0	mh	0.0	
 R	druid/restoration	25	4023	0	mh	0.0	
 R	druid/restoration	25	4570	0	mh	0.0	
-R	druid/restoration	25	4570	12718	mh	2.88	int:3:int:0.58:1.74,sta:3:sta:0.38:1.14
-R	druid/restoration	25	4570	12719	mh	1.239	spi:3:spi:0.033:0.099,sta:3:sta:0.38:1.14
-R	druid/restoration	25	4570	12720	mh	1.8389999999999997	int:3:int:0.58:1.74,spi:3:spi:0.033:0.099
-R	druid/restoration	25	4570	12721	mh	1.1400000000000001	sta:3:sta:0.38:1.14
-R	druid/restoration	25	4570	12722	mh	1.1400000000000001	sta:3:sta:0.38:1.14
-R	druid/restoration	25	4570	12723	mh	1.7399999999999998	int:3:int:0.58:1.74
-R	druid/restoration	25	4570	12724	mh	1.7399999999999998	int:3:int:0.58:1.74
-R	druid/restoration	25	4570	12725	mh	0.099	spi:3:spi:0.033:0.099
-R	druid/restoration	25	4570	12726	mh	0.099	spi:3:spi:0.033:0.099
+R	druid/restoration	25	4570	12718	mh	2.61	int:3:int:0.39:1.17,sta:3:sta:0.48:1.44
+R	druid/restoration	25	4570	12719	mh	1.89	spi:3:spi:0.15:0.45,sta:3:sta:0.48:1.44
+R	druid/restoration	25	4570	12720	mh	1.6199999999999999	int:3:int:0.39:1.17,spi:3:spi:0.15:0.45
+R	druid/restoration	25	4570	12721	mh	1.44	sta:3:sta:0.48:1.44
+R	druid/restoration	25	4570	12722	mh	1.44	sta:3:sta:0.48:1.44
+R	druid/restoration	25	4570	12723	mh	1.17	int:3:int:0.39:1.17
+R	druid/restoration	25	4570	12724	mh	1.17	int:3:int:0.39:1.17
+R	druid/restoration	25	4570	12725	mh	0.44999999999999996	spi:3:spi:0.15:0.45
+R	druid/restoration	25	4570	12726	mh	0.44999999999999996	spi:3:spi:0.15:0.45
 R	druid/restoration	25	4570	12727	mh	0.0	
 R	druid/restoration	25	4570	12728	mh	0.0	
-R	druid/restoration	25	4570	12729	mh	2.32	int:4:int:0.58:2.32
-R	druid/restoration	25	4570	12730	mh	0.132	spi:4:spi:0.033:0.132
-R	druid/restoration	25	4570	12731	mh	1.52	sta:4:sta:0.38:1.52
+R	druid/restoration	25	4570	12729	mh	1.56	int:4:int:0.39:1.56
+R	druid/restoration	25	4570	12730	mh	0.6	spi:4:spi:0.15:0.6
+R	druid/restoration	25	4570	12731	mh	1.92	sta:4:sta:0.48:1.92
 R	druid/restoration	25	4570	12732	mh	0.0	
 R	druid/restoration	25	4570	12733	mh	0.0	
 R	druid/restoration	25	4570	12736	mh	0.0	
-R	druid/restoration	25	4570	12740	mh	1.1400000000000001	sta:3:sta:0.38:1.14
-R	druid/restoration	25	4570	12741	mh	1.1400000000000001	sta:3:sta:0.38:1.14
-R	druid/restoration	25	4570	12742	mh	1.1400000000000001	sta:3:sta:0.38:1.14
-R	druid/restoration	25	4570	12743	mh	1.1400000000000001	sta:3:sta:0.38:1.14
-R	druid/restoration	25	4570	12744	mh	1.1400000000000001	sta:3:sta:0.38:1.14
+R	druid/restoration	25	4570	12740	mh	1.44	sta:3:sta:0.48:1.44
+R	druid/restoration	25	4570	12741	mh	1.44	sta:3:sta:0.48:1.44
+R	druid/restoration	25	4570	12742	mh	1.44	sta:3:sta:0.48:1.44
+R	druid/restoration	25	4570	12743	mh	1.44	sta:3:sta:0.48:1.44
+R	druid/restoration	25	4570	12744	mh	1.44	sta:3:sta:0.48:1.44
 R	druid/restoration	25	4570	12759	mh	0.0	
-R	druid/restoration	25	4570	12918	mh	10.32	sp:8:sp:1:8,int:4:int:0.58:2.32
-R	druid/restoration	25	4570	12919	mh	7.32	spDmg:5:sp:1:5,int:4:int:0.58:2.32
+R	druid/restoration	25	4570	12918	mh	9.56	sp:8:sp:1:8,int:4:int:0.39:1.56
+R	druid/restoration	25	4570	12919	mh	6.5600000000000005	spDmg:5:sp:1:5,int:4:int:0.39:1.56
 R	druid/restoration	25	5079	0	gear	0.0	
-R	druid/restoration	25	6540	0	gear	0.616	armor:28:armor:0.022:0.616
-R	druid/restoration	25	6540	12718	gear	3.496	int:3:int:0.58:1.74,sta:3:sta:0.38:1.14,armor:28:armor:0.022:0.616
-R	druid/restoration	25	6540	12719	gear	1.855	spi:3:spi:0.033:0.099,sta:3:sta:0.38:1.14,armor:28:armor:0.022:0.616
-R	druid/restoration	25	6540	12720	gear	2.4549999999999996	int:3:int:0.58:1.74,spi:3:spi:0.033:0.099,armor:28:armor:0.022:0.616
-R	druid/restoration	25	6540	12729	gear	3.516	int:5:int:0.58:2.9,armor:28:armor:0.022:0.616
-R	druid/restoration	25	6540	12730	gear	0.781	spi:5:spi:0.033:0.165,armor:28:armor:0.022:0.616
-R	druid/restoration	25	6540	12731	gear	2.516	sta:5:sta:0.38:1.9,armor:28:armor:0.022:0.616
-R	druid/restoration	25	6540	12734	gear	6.616	sp:6:sp:1:6,armor:28:armor:0.022:0.616
-R	druid/restoration	25	6540	12735	gear	4.616	spDmg:4:sp:1:4,armor:28:armor:0.022:0.616
-R	druid/restoration	25	6540	12740	gear	1.7560000000000002	sta:3:sta:0.38:1.14,armor:28:armor:0.022:0.616
-R	druid/restoration	25	6540	12741	gear	1.7560000000000002	sta:3:sta:0.38:1.14,armor:28:armor:0.022:0.616
-R	druid/restoration	25	6540	12742	gear	1.7560000000000002	sta:3:sta:0.38:1.14,armor:28:armor:0.022:0.616
-R	druid/restoration	25	6540	12743	gear	1.7560000000000002	sta:3:sta:0.38:1.14,armor:28:armor:0.022:0.616
-R	druid/restoration	25	6540	12744	gear	1.7560000000000002	sta:3:sta:0.38:1.14,armor:28:armor:0.022:0.616
-R	druid/restoration	25	6540	12745	gear	5.696	int:4:int:0.58:2.32,sta:2:sta:0.38:0.76,sp:2:sp:1:2,armor:28:armor:0.022:0.616
-R	druid/restoration	25	6540	12756	gear	6.4959999999999996	spArcane:7:spArcane:0.84:5.88,armor:28:armor:0.022:0.616
-R	druid/restoration	25	6540	12757	gear	0.616	armor:28:armor:0.022:0.616
-R	druid/restoration	25	6540	12758	gear	0.616	armor:28:armor:0.022:0.616
-R	druid/restoration	25	6540	12759	gear	0.616	armor:28:armor:0.022:0.616
-R	druid/restoration	25	6540	12761	gear	0.616	armor:28:armor:0.022:0.616
-R	druid/restoration	25	6557	0	gear	1.0779999999999998	armor:49:armor:0.022:1.078
-R	druid/restoration	25	6557	12718	gear	2.9979999999999998	int:2:int:0.58:1.16,sta:2:sta:0.38:0.76,armor:49:armor:0.022:1.078
-R	druid/restoration	25	6557	12719	gear	1.904	spi:2:spi:0.033:0.066,sta:2:sta:0.38:0.76,armor:49:armor:0.022:1.078
-R	druid/restoration	25	6557	12720	gear	2.304	int:2:int:0.58:1.16,spi:2:spi:0.033:0.066,armor:49:armor:0.022:1.078
-R	druid/restoration	25	6557	12721	gear	1.8379999999999999	sta:2:sta:0.38:0.76,armor:49:armor:0.022:1.078
-R	druid/restoration	25	6557	12722	gear	1.8379999999999999	sta:2:sta:0.38:0.76,armor:49:armor:0.022:1.078
-R	druid/restoration	25	6557	12723	gear	2.2379999999999995	int:2:int:0.58:1.16,armor:49:armor:0.022:1.078
-R	druid/restoration	25	6557	12724	gear	2.2379999999999995	int:2:int:0.58:1.16,armor:49:armor:0.022:1.078
-R	druid/restoration	25	6557	12725	gear	1.144	spi:2:spi:0.033:0.066,armor:49:armor:0.022:1.078
-R	druid/restoration	25	6557	12726	gear	1.144	spi:2:spi:0.033:0.066,armor:49:armor:0.022:1.078
-R	druid/restoration	25	6557	12727	gear	1.0779999999999998	armor:49:armor:0.022:1.078
-R	druid/restoration	25	6557	12728	gear	1.0779999999999998	armor:49:armor:0.022:1.078
-R	druid/restoration	25	6557	12729	gear	2.8179999999999996	int:3:int:0.58:1.74,armor:49:armor:0.022:1.078
-R	druid/restoration	25	6557	12730	gear	1.1769999999999998	spi:3:spi:0.033:0.099,armor:49:armor:0.022:1.078
-R	druid/restoration	25	6557	12731	gear	2.218	sta:3:sta:0.38:1.14,armor:49:armor:0.022:1.078
-R	druid/restoration	25	6557	12732	gear	1.0779999999999998	armor:49:armor:0.022:1.078
-R	druid/restoration	25	6557	12733	gear	1.0779999999999998	armor:49:armor:0.022:1.078
-R	druid/restoration	25	6557	12734	gear	5.077999999999999	sp:4:sp:1:4,armor:49:armor:0.022:1.078
-R	druid/restoration	25	6557	12735	gear	3.078	spDmg:2:sp:1:2,armor:49:armor:0.022:1.078
-R	druid/restoration	25	6557	12736	gear	1.0779999999999998	armor:49:armor:0.022:1.078
-R	druid/restoration	25	6557	12740	gear	1.8379999999999999	sta:2:sta:0.38:0.76,armor:49:armor:0.022:1.078
-R	druid/restoration	25	6557	12741	gear	1.8379999999999999	sta:2:sta:0.38:0.76,armor:49:armor:0.022:1.078
-R	druid/restoration	25	6557	12742	gear	1.8379999999999999	sta:2:sta:0.38:0.76,armor:49:armor:0.022:1.078
-R	druid/restoration	25	6557	12743	gear	1.8379999999999999	sta:2:sta:0.38:0.76,armor:49:armor:0.022:1.078
-R	druid/restoration	25	6557	12744	gear	1.8379999999999999	sta:2:sta:0.38:0.76,armor:49:armor:0.022:1.078
-R	druid/restoration	25	6557	12756	gear	4.438	spArcane:4:spArcane:0.84:3.36,armor:49:armor:0.022:1.078
-R	druid/restoration	25	6557	12760	gear	1.154	spNature:4:spNature:0.019:0.076,armor:49:armor:0.022:1.078
-R	druid/restoration	25	7047	0	gear	0.737	spi:5:spi:0.033:0.165,armor:26:armor:0.022:0.572
-R	druid/restoration	25	8192	0	gear	3.792	sta:5:sta:0.38:1.9,armor:86:armor:0.022:1.892
-R	druid/restoration	25	9834	0	gear	1.6059999999999999	armor:73:armor:0.022:1.606
-R	druid/restoration	25	9834	12718	gear	7.366	int:6:int:0.58:3.48,sta:6:sta:0.38:2.28,armor:73:armor:0.022:1.606
-R	druid/restoration	25	9834	12719	gear	4.084	spi:6:spi:0.033:0.198,sta:6:sta:0.38:2.28,armor:73:armor:0.022:1.606
-R	druid/restoration	25	9834	12720	gear	5.283999999999999	int:6:int:0.58:3.48,spi:6:spi:0.033:0.198,armor:73:armor:0.022:1.606
-R	druid/restoration	25	9834	12721	gear	3.886	sta:6:sta:0.38:2.28,armor:73:armor:0.022:1.606
-R	druid/restoration	25	9834	12722	gear	3.886	sta:6:sta:0.38:2.28,armor:73:armor:0.022:1.606
-R	druid/restoration	25	9834	12723	gear	5.085999999999999	int:6:int:0.58:3.48,armor:73:armor:0.022:1.606
-R	druid/restoration	25	9834	12724	gear	5.085999999999999	int:6:int:0.58:3.48,armor:73:armor:0.022:1.606
-R	druid/restoration	25	9834	12725	gear	1.8039999999999998	spi:6:spi:0.033:0.198,armor:73:armor:0.022:1.606
-R	druid/restoration	25	9834	12726	gear	1.8039999999999998	spi:6:spi:0.033:0.198,armor:73:armor:0.022:1.606
-R	druid/restoration	25	9834	12727	gear	1.6059999999999999	armor:73:armor:0.022:1.606
-R	druid/restoration	25	9834	12728	gear	1.6059999999999999	armor:73:armor:0.022:1.606
-R	druid/restoration	25	9834	12729	gear	6.826	int:9:int:0.58:5.22,armor:73:armor:0.022:1.606
-R	druid/restoration	25	9834	12730	gear	1.903	spi:9:spi:0.033:0.297,armor:73:armor:0.022:1.606
-R	druid/restoration	25	9834	12731	gear	5.026	sta:9:sta:0.38:3.42,armor:73:armor:0.022:1.606
-R	druid/restoration	25	9834	12732	gear	1.6059999999999999	armor:73:armor:0.022:1.606
-R	druid/restoration	25	9834	12733	gear	1.6059999999999999	armor:73:armor:0.022:1.606
-R	druid/restoration	25	9834	12734	gear	12.606	sp:11:sp:1:11,armor:73:armor:0.022:1.606
-R	druid/restoration	25	9834	12735	gear	8.606	spDmg:7:sp:1:7,armor:73:armor:0.022:1.606
-R	druid/restoration	25	9834	12736	gear	1.6059999999999999	armor:73:armor:0.022:1.606
-R	druid/restoration	25	9834	12740	gear	3.886	sta:6:sta:0.38:2.28,armor:73:armor:0.022:1.606
-R	druid/restoration	25	9834	12741	gear	3.886	sta:6:sta:0.38:2.28,armor:73:armor:0.022:1.606
-R	druid/restoration	25	9834	12742	gear	3.886	sta:6:sta:0.38:2.28,armor:73:armor:0.022:1.606
-R	druid/restoration	25	9834	12743	gear	3.886	sta:6:sta:0.38:2.28,armor:73:armor:0.022:1.606
-R	druid/restoration	25	9834	12744	gear	3.886	sta:6:sta:0.38:2.28,armor:73:armor:0.022:1.606
-R	druid/restoration	25	9834	12745	gear	10.186	int:7:int:0.58:4.06,sta:4:sta:0.38:1.52,sp:3:sp:1:3,armor:73:armor:0.022:1.606
-R	druid/restoration	25	9834	12746	gear	8.797999999999998	int:7:int:0.58:4.06,spi:4:spi:0.033:0.132,sp:3:sp:1:3,armor:73:armor:0.022:1.606
-R	druid/restoration	25	9834	12747	gear	7.398	spi:4:spi:0.033:0.132,sta:7:sta:0.38:2.66,sp:3:sp:1:3,armor:73:armor:0.022:1.606
-R	druid/restoration	25	9834	12748	gear	8.586	int:4:int:0.58:2.32,sta:7:sta:0.38:2.66,spDmg:2:sp:1:2,armor:73:armor:0.022:1.606
-R	druid/restoration	25	9834	12749	gear	7.797999999999999	int:7:int:0.58:4.06,spi:4:spi:0.033:0.132,spDmg:2:sp:1:2,armor:73:armor:0.022:1.606
-R	druid/restoration	25	9834	12750	gear	6.398	spi:4:spi:0.033:0.132,sta:7:sta:0.38:2.66,spDmg:2:sp:1:2,armor:73:armor:0.022:1.606
-R	druid/restoration	25	9834	12751	gear	4.266	sta:7:sta:0.38:2.66,armor:73:armor:0.022:1.606
-R	druid/restoration	25	9834	12752	gear	4.266	sta:7:sta:0.38:2.66,armor:73:armor:0.022:1.606
-R	druid/restoration	25	9834	12753	gear	4.266	sta:7:sta:0.38:2.66,armor:73:armor:0.022:1.606
-R	druid/restoration	25	9834	12755	gear	7.266	sp:3:sp:1:3,sta:7:sta:0.38:2.66,armor:73:armor:0.022:1.606
-R	druid/restoration	25	9834	12756	gear	12.526	spArcane:13:spArcane:0.84:10.92,armor:73:armor:0.022:1.606
-R	druid/restoration	25	9834	12760	gear	1.8529999999999998	spNature:13:spNature:0.019:0.247,armor:73:armor:0.022:1.606
-R	druid/restoration	25	11187	0	gear	0.088	armor:4:armor:0.022:0.088
+R	druid/restoration	25	6540	0	gear	0.532	armor:28:armor:0.019:0.532
+R	druid/restoration	25	6540	12718	gear	3.142	int:3:int:0.39:1.17,sta:3:sta:0.48:1.44,armor:28:armor:0.019:0.532
+R	druid/restoration	25	6540	12719	gear	2.4219999999999997	spi:3:spi:0.15:0.45,sta:3:sta:0.48:1.44,armor:28:armor:0.019:0.532
+R	druid/restoration	25	6540	12720	gear	2.152	int:3:int:0.39:1.17,spi:3:spi:0.15:0.45,armor:28:armor:0.019:0.532
+R	druid/restoration	25	6540	12729	gear	2.482	int:5:int:0.39:1.95,armor:28:armor:0.019:0.532
+R	druid/restoration	25	6540	12730	gear	1.282	spi:5:spi:0.15:0.75,armor:28:armor:0.019:0.532
+R	druid/restoration	25	6540	12731	gear	2.932	sta:5:sta:0.48:2.4,armor:28:armor:0.019:0.532
+R	druid/restoration	25	6540	12734	gear	6.532	sp:6:sp:1:6,armor:28:armor:0.019:0.532
+R	druid/restoration	25	6540	12735	gear	4.532	spDmg:4:sp:1:4,armor:28:armor:0.019:0.532
+R	druid/restoration	25	6540	12740	gear	1.972	sta:3:sta:0.48:1.44,armor:28:armor:0.019:0.532
+R	druid/restoration	25	6540	12741	gear	1.972	sta:3:sta:0.48:1.44,armor:28:armor:0.019:0.532
+R	druid/restoration	25	6540	12742	gear	1.972	sta:3:sta:0.48:1.44,armor:28:armor:0.019:0.532
+R	druid/restoration	25	6540	12743	gear	1.972	sta:3:sta:0.48:1.44,armor:28:armor:0.019:0.532
+R	druid/restoration	25	6540	12744	gear	1.972	sta:3:sta:0.48:1.44,armor:28:armor:0.019:0.532
+R	druid/restoration	25	6540	12745	gear	5.052	int:4:int:0.39:1.56,sta:2:sta:0.48:0.96,sp:2:sp:1:2,armor:28:armor:0.019:0.532
+R	druid/restoration	25	6540	12756	gear	6.692	spArcane:7:spArcane:0.88:6.16,armor:28:armor:0.019:0.532
+R	druid/restoration	25	6540	12757	gear	0.532	armor:28:armor:0.019:0.532
+R	druid/restoration	25	6540	12758	gear	0.532	armor:28:armor:0.019:0.532
+R	druid/restoration	25	6540	12759	gear	0.532	armor:28:armor:0.019:0.532
+R	druid/restoration	25	6540	12761	gear	0.532	armor:28:armor:0.019:0.532
+R	druid/restoration	25	6557	0	gear	0.9309999999999999	armor:49:armor:0.019:0.931
+R	druid/restoration	25	6557	12718	gear	2.671	int:2:int:0.39:0.78,sta:2:sta:0.48:0.96,armor:49:armor:0.019:0.931
+R	druid/restoration	25	6557	12719	gear	2.191	spi:2:spi:0.15:0.3,sta:2:sta:0.48:0.96,armor:49:armor:0.019:0.931
+R	druid/restoration	25	6557	12720	gear	2.011	int:2:int:0.39:0.78,spi:2:spi:0.15:0.3,armor:49:armor:0.019:0.931
+R	druid/restoration	25	6557	12721	gear	1.891	sta:2:sta:0.48:0.96,armor:49:armor:0.019:0.931
+R	druid/restoration	25	6557	12722	gear	1.891	sta:2:sta:0.48:0.96,armor:49:armor:0.019:0.931
+R	druid/restoration	25	6557	12723	gear	1.7109999999999999	int:2:int:0.39:0.78,armor:49:armor:0.019:0.931
+R	druid/restoration	25	6557	12724	gear	1.7109999999999999	int:2:int:0.39:0.78,armor:49:armor:0.019:0.931
+R	druid/restoration	25	6557	12725	gear	1.2309999999999999	spi:2:spi:0.15:0.3,armor:49:armor:0.019:0.931
+R	druid/restoration	25	6557	12726	gear	1.2309999999999999	spi:2:spi:0.15:0.3,armor:49:armor:0.019:0.931
+R	druid/restoration	25	6557	12727	gear	0.9309999999999999	armor:49:armor:0.019:0.931
+R	druid/restoration	25	6557	12728	gear	0.9309999999999999	armor:49:armor:0.019:0.931
+R	druid/restoration	25	6557	12729	gear	2.101	int:3:int:0.39:1.17,armor:49:armor:0.019:0.931
+R	druid/restoration	25	6557	12730	gear	1.3809999999999998	spi:3:spi:0.15:0.45,armor:49:armor:0.019:0.931
+R	druid/restoration	25	6557	12731	gear	2.371	sta:3:sta:0.48:1.44,armor:49:armor:0.019:0.931
+R	druid/restoration	25	6557	12732	gear	0.9309999999999999	armor:49:armor:0.019:0.931
+R	druid/restoration	25	6557	12733	gear	0.9309999999999999	armor:49:armor:0.019:0.931
+R	druid/restoration	25	6557	12734	gear	4.931	sp:4:sp:1:4,armor:49:armor:0.019:0.931
+R	druid/restoration	25	6557	12735	gear	2.931	spDmg:2:sp:1:2,armor:49:armor:0.019:0.931
+R	druid/restoration	25	6557	12736	gear	0.9309999999999999	armor:49:armor:0.019:0.931
+R	druid/restoration	25	6557	12740	gear	1.891	sta:2:sta:0.48:0.96,armor:49:armor:0.019:0.931
+R	druid/restoration	25	6557	12741	gear	1.891	sta:2:sta:0.48:0.96,armor:49:armor:0.019:0.931
+R	druid/restoration	25	6557	12742	gear	1.891	sta:2:sta:0.48:0.96,armor:49:armor:0.019:0.931
+R	druid/restoration	25	6557	12743	gear	1.891	sta:2:sta:0.48:0.96,armor:49:armor:0.019:0.931
+R	druid/restoration	25	6557	12744	gear	1.891	sta:2:sta:0.48:0.96,armor:49:armor:0.019:0.931
+R	druid/restoration	25	6557	12756	gear	4.451	spArcane:4:spArcane:0.88:3.52,armor:49:armor:0.019:0.931
+R	druid/restoration	25	6557	12760	gear	1.007	spNature:4:spNature:0.019:0.076,armor:49:armor:0.019:0.931
+R	druid/restoration	25	7047	0	gear	1.244	spi:5:spi:0.15:0.75,armor:26:armor:0.019:0.494
+R	druid/restoration	25	8192	0	gear	4.034	sta:5:sta:0.48:2.4,armor:86:armor:0.019:1.634
+R	druid/restoration	25	9834	0	gear	1.387	armor:73:armor:0.019:1.387
+R	druid/restoration	25	9834	12718	gear	6.606999999999999	int:6:int:0.39:2.34,sta:6:sta:0.48:2.88,armor:73:armor:0.019:1.387
+R	druid/restoration	25	9834	12719	gear	5.167	spi:6:spi:0.15:0.9,sta:6:sta:0.48:2.88,armor:73:armor:0.019:1.387
+R	druid/restoration	25	9834	12720	gear	4.627	int:6:int:0.39:2.34,spi:6:spi:0.15:0.9,armor:73:armor:0.019:1.387
+R	druid/restoration	25	9834	12721	gear	4.2669999999999995	sta:6:sta:0.48:2.88,armor:73:armor:0.019:1.387
+R	druid/restoration	25	9834	12722	gear	4.2669999999999995	sta:6:sta:0.48:2.88,armor:73:armor:0.019:1.387
+R	druid/restoration	25	9834	12723	gear	3.727	int:6:int:0.39:2.34,armor:73:armor:0.019:1.387
+R	druid/restoration	25	9834	12724	gear	3.727	int:6:int:0.39:2.34,armor:73:armor:0.019:1.387
+R	druid/restoration	25	9834	12725	gear	2.287	spi:6:spi:0.15:0.9,armor:73:armor:0.019:1.387
+R	druid/restoration	25	9834	12726	gear	2.287	spi:6:spi:0.15:0.9,armor:73:armor:0.019:1.387
+R	druid/restoration	25	9834	12727	gear	1.387	armor:73:armor:0.019:1.387
+R	druid/restoration	25	9834	12728	gear	1.387	armor:73:armor:0.019:1.387
+R	druid/restoration	25	9834	12729	gear	4.897	int:9:int:0.39:3.51,armor:73:armor:0.019:1.387
+R	druid/restoration	25	9834	12730	gear	2.737	spi:9:spi:0.15:1.35,armor:73:armor:0.019:1.387
+R	druid/restoration	25	9834	12731	gear	5.707000000000001	sta:9:sta:0.48:4.32,armor:73:armor:0.019:1.387
+R	druid/restoration	25	9834	12732	gear	1.387	armor:73:armor:0.019:1.387
+R	druid/restoration	25	9834	12733	gear	1.387	armor:73:armor:0.019:1.387
+R	druid/restoration	25	9834	12734	gear	12.387	sp:11:sp:1:11,armor:73:armor:0.019:1.387
+R	druid/restoration	25	9834	12735	gear	8.387	spDmg:7:sp:1:7,armor:73:armor:0.019:1.387
+R	druid/restoration	25	9834	12736	gear	1.387	armor:73:armor:0.019:1.387
+R	druid/restoration	25	9834	12740	gear	4.2669999999999995	sta:6:sta:0.48:2.88,armor:73:armor:0.019:1.387
+R	druid/restoration	25	9834	12741	gear	4.2669999999999995	sta:6:sta:0.48:2.88,armor:73:armor:0.019:1.387
+R	druid/restoration	25	9834	12742	gear	4.2669999999999995	sta:6:sta:0.48:2.88,armor:73:armor:0.019:1.387
+R	druid/restoration	25	9834	12743	gear	4.2669999999999995	sta:6:sta:0.48:2.88,armor:73:armor:0.019:1.387
+R	druid/restoration	25	9834	12744	gear	4.2669999999999995	sta:6:sta:0.48:2.88,armor:73:armor:0.019:1.387
+R	druid/restoration	25	9834	12745	gear	9.037	int:7:int:0.39:2.73,sta:4:sta:0.48:1.92,sp:3:sp:1:3,armor:73:armor:0.019:1.387
+R	druid/restoration	25	9834	12746	gear	7.7170000000000005	int:7:int:0.39:2.73,spi:4:spi:0.15:0.6,sp:3:sp:1:3,armor:73:armor:0.019:1.387
+R	druid/restoration	25	9834	12747	gear	8.347	spi:4:spi:0.15:0.6,sta:7:sta:0.48:3.36,sp:3:sp:1:3,armor:73:armor:0.019:1.387
+R	druid/restoration	25	9834	12748	gear	8.307	int:4:int:0.39:1.56,sta:7:sta:0.48:3.36,spDmg:2:sp:1:2,armor:73:armor:0.019:1.387
+R	druid/restoration	25	9834	12749	gear	6.7170000000000005	int:7:int:0.39:2.73,spi:4:spi:0.15:0.6,spDmg:2:sp:1:2,armor:73:armor:0.019:1.387
+R	druid/restoration	25	9834	12750	gear	7.3469999999999995	spi:4:spi:0.15:0.6,sta:7:sta:0.48:3.36,spDmg:2:sp:1:2,armor:73:armor:0.019:1.387
+R	druid/restoration	25	9834	12751	gear	4.747	sta:7:sta:0.48:3.36,armor:73:armor:0.019:1.387
+R	druid/restoration	25	9834	12752	gear	4.747	sta:7:sta:0.48:3.36,armor:73:armor:0.019:1.387
+R	druid/restoration	25	9834	12753	gear	4.747	sta:7:sta:0.48:3.36,armor:73:armor:0.019:1.387
+R	druid/restoration	25	9834	12755	gear	7.747	sp:3:sp:1:3,sta:7:sta:0.48:3.36,armor:73:armor:0.019:1.387
+R	druid/restoration	25	9834	12756	gear	12.827	spArcane:13:spArcane:0.88:11.44,armor:73:armor:0.019:1.387
+R	druid/restoration	25	9834	12760	gear	1.634	spNature:13:spNature:0.019:0.247,armor:73:armor:0.019:1.387
+R	druid/restoration	25	11187	0	gear	0.076	armor:4:armor:0.019:0.076
 R	druid/restoration	25	11994	0	gear	0.0	
-R	druid/restoration	25	11994	12718	gear	2.88	int:3:int:0.58:1.74,sta:3:sta:0.38:1.14
-R	druid/restoration	25	11994	12719	gear	1.239	spi:3:spi:0.033:0.099,sta:3:sta:0.38:1.14
-R	druid/restoration	25	11994	12720	gear	1.8389999999999997	int:3:int:0.58:1.74,spi:3:spi:0.033:0.099
-R	druid/restoration	25	11994	12721	gear	1.1400000000000001	sta:3:sta:0.38:1.14
-R	druid/restoration	25	11994	12722	gear	1.1400000000000001	sta:3:sta:0.38:1.14
-R	druid/restoration	25	11994	12723	gear	1.7399999999999998	int:3:int:0.58:1.74
-R	druid/restoration	25	11994	12724	gear	1.7399999999999998	int:3:int:0.58:1.74
-R	druid/restoration	25	11994	12725	gear	0.099	spi:3:spi:0.033:0.099
-R	druid/restoration	25	11994	12726	gear	0.099	spi:3:spi:0.033:0.099
+R	druid/restoration	25	11994	12718	gear	2.61	int:3:int:0.39:1.17,sta:3:sta:0.48:1.44
+R	druid/restoration	25	11994	12719	gear	1.89	spi:3:spi:0.15:0.45,sta:3:sta:0.48:1.44
+R	druid/restoration	25	11994	12720	gear	1.6199999999999999	int:3:int:0.39:1.17,spi:3:spi:0.15:0.45
+R	druid/restoration	25	11994	12721	gear	1.44	sta:3:sta:0.48:1.44
+R	druid/restoration	25	11994	12722	gear	1.44	sta:3:sta:0.48:1.44
+R	druid/restoration	25	11994	12723	gear	1.17	int:3:int:0.39:1.17
+R	druid/restoration	25	11994	12724	gear	1.17	int:3:int:0.39:1.17
+R	druid/restoration	25	11994	12725	gear	0.44999999999999996	spi:3:spi:0.15:0.45
+R	druid/restoration	25	11994	12726	gear	0.44999999999999996	spi:3:spi:0.15:0.45
 R	druid/restoration	25	11994	12727	gear	0.0	
 R	druid/restoration	25	11994	12728	gear	0.0	
-R	druid/restoration	25	11994	12729	gear	2.9	int:5:int:0.58:2.9
-R	druid/restoration	25	11994	12730	gear	0.165	spi:5:spi:0.033:0.165
-R	druid/restoration	25	11994	12731	gear	1.9	sta:5:sta:0.38:1.9
+R	druid/restoration	25	11994	12729	gear	1.9500000000000002	int:5:int:0.39:1.95
+R	druid/restoration	25	11994	12730	gear	0.75	spi:5:spi:0.15:0.75
+R	druid/restoration	25	11994	12731	gear	2.4	sta:5:sta:0.48:2.4
 R	druid/restoration	25	11994	12732	gear	0.0	
 R	druid/restoration	25	11994	12733	gear	0.0	
 R	druid/restoration	25	11994	12737	gear	0.0	
-R	druid/restoration	25	11994	12738	gear	0.074	mp5:2:mp5:0.037:0.074
+R	druid/restoration	25	11994	12738	gear	0.62	mp5:2:mp5:0.31:0.62
 R	druid/restoration	25	11994	12739	gear	0.0	
-R	druid/restoration	25	11994	12740	gear	1.1400000000000001	sta:3:sta:0.38:1.14
-R	druid/restoration	25	11994	12741	gear	1.1400000000000001	sta:3:sta:0.38:1.14
-R	druid/restoration	25	11994	12742	gear	1.1400000000000001	sta:3:sta:0.38:1.14
-R	druid/restoration	25	11994	12743	gear	1.1400000000000001	sta:3:sta:0.38:1.14
-R	druid/restoration	25	11994	12744	gear	1.1400000000000001	sta:3:sta:0.38:1.14
+R	druid/restoration	25	11994	12740	gear	1.44	sta:3:sta:0.48:1.44
+R	druid/restoration	25	11994	12741	gear	1.44	sta:3:sta:0.48:1.44
+R	druid/restoration	25	11994	12742	gear	1.44	sta:3:sta:0.48:1.44
+R	druid/restoration	25	11994	12743	gear	1.44	sta:3:sta:0.48:1.44
+R	druid/restoration	25	11994	12744	gear	1.44	sta:3:sta:0.48:1.44
 R	druid/restoration	25	13183	0	mh	0.0	
-R	druid/restoration	25	14122	0	gear	0.308	armor:14:armor:0.022:0.308
-R	druid/restoration	25	14122	12718	gear	2.2279999999999998	int:2:int:0.58:1.16,sta:2:sta:0.38:0.76,armor:14:armor:0.022:0.308
-R	druid/restoration	25	14122	12719	gear	1.1340000000000001	spi:2:spi:0.033:0.066,sta:2:sta:0.38:0.76,armor:14:armor:0.022:0.308
-R	druid/restoration	25	14122	12720	gear	1.534	int:2:int:0.58:1.16,spi:2:spi:0.033:0.066,armor:14:armor:0.022:0.308
-R	druid/restoration	25	14122	12729	gear	2.0479999999999996	int:3:int:0.58:1.74,armor:14:armor:0.022:0.308
-R	druid/restoration	25	14122	12730	gear	0.40700000000000003	spi:3:spi:0.033:0.099,armor:14:armor:0.022:0.308
-R	druid/restoration	25	14122	12731	gear	1.4480000000000002	sta:3:sta:0.38:1.14,armor:14:armor:0.022:0.308
-R	druid/restoration	25	14122	12734	gear	4.308	sp:4:sp:1:4,armor:14:armor:0.022:0.308
-R	druid/restoration	25	14122	12735	gear	2.308	spDmg:2:sp:1:2,armor:14:armor:0.022:0.308
-R	druid/restoration	25	14122	12740	gear	1.068	sta:2:sta:0.38:0.76,armor:14:armor:0.022:0.308
-R	druid/restoration	25	14122	12741	gear	1.068	sta:2:sta:0.38:0.76,armor:14:armor:0.022:0.308
-R	druid/restoration	25	14122	12742	gear	1.068	sta:2:sta:0.38:0.76,armor:14:armor:0.022:0.308
-R	druid/restoration	25	14122	12743	gear	1.068	sta:2:sta:0.38:0.76,armor:14:armor:0.022:0.308
-R	druid/restoration	25	14122	12744	gear	1.068	sta:2:sta:0.38:0.76,armor:14:armor:0.022:0.308
-R	druid/restoration	25	14122	12745	gear	2.848	int:2:int:0.58:1.16,sta:1:sta:0.38:0.38,sp:1:sp:1:1,armor:14:armor:0.022:0.308
-R	druid/restoration	25	14122	12756	gear	3.6679999999999997	spArcane:4:spArcane:0.84:3.36,armor:14:armor:0.022:0.308
-R	druid/restoration	25	14122	12757	gear	0.308	armor:14:armor:0.022:0.308
-R	druid/restoration	25	14122	12758	gear	0.308	armor:14:armor:0.022:0.308
-R	druid/restoration	25	14122	12759	gear	0.308	armor:14:armor:0.022:0.308
-R	druid/restoration	25	14122	12761	gear	0.308	armor:14:armor:0.022:0.308
-R	druid/restoration	25	14340	0	gear	9.155999999999999	sta:19:sta:0.38:7.22,armor:88:armor:0.022:1.936
-R	druid/restoration	25	14673	0	gear	2.6479999999999997	sta:5:sta:0.38:1.9,armor:34:armor:0.022:0.748
-R	druid/restoration	25	15945	0	oh	0.8260000000000001	sta:2:sta:0.38:0.76,spi:2:spi:0.033:0.066
-R	druid/restoration	25	16711	0	gear	6.43	sta:9:sta:0.38:3.42,hit:0.3:spellHit:1.6:0.48,armor:115:armor:0.022:2.53
-R	druid/restoration	25	18726	0	gear	7.306	sta:15:sta:0.38:5.7,armor:73:armor:0.022:1.606
+R	druid/restoration	25	14122	0	gear	0.266	armor:14:armor:0.019:0.266
+R	druid/restoration	25	14122	12718	gear	2.0060000000000002	int:2:int:0.39:0.78,sta:2:sta:0.48:0.96,armor:14:armor:0.019:0.266
+R	druid/restoration	25	14122	12719	gear	1.526	spi:2:spi:0.15:0.3,sta:2:sta:0.48:0.96,armor:14:armor:0.019:0.266
+R	druid/restoration	25	14122	12720	gear	1.346	int:2:int:0.39:0.78,spi:2:spi:0.15:0.3,armor:14:armor:0.019:0.266
+R	druid/restoration	25	14122	12729	gear	1.436	int:3:int:0.39:1.17,armor:14:armor:0.019:0.266
+R	druid/restoration	25	14122	12730	gear	0.716	spi:3:spi:0.15:0.45,armor:14:armor:0.019:0.266
+R	druid/restoration	25	14122	12731	gear	1.706	sta:3:sta:0.48:1.44,armor:14:armor:0.019:0.266
+R	druid/restoration	25	14122	12734	gear	4.266	sp:4:sp:1:4,armor:14:armor:0.019:0.266
+R	druid/restoration	25	14122	12735	gear	2.266	spDmg:2:sp:1:2,armor:14:armor:0.019:0.266
+R	druid/restoration	25	14122	12740	gear	1.226	sta:2:sta:0.48:0.96,armor:14:armor:0.019:0.266
+R	druid/restoration	25	14122	12741	gear	1.226	sta:2:sta:0.48:0.96,armor:14:armor:0.019:0.266
+R	druid/restoration	25	14122	12742	gear	1.226	sta:2:sta:0.48:0.96,armor:14:armor:0.019:0.266
+R	druid/restoration	25	14122	12743	gear	1.226	sta:2:sta:0.48:0.96,armor:14:armor:0.019:0.266
+R	druid/restoration	25	14122	12744	gear	1.226	sta:2:sta:0.48:0.96,armor:14:armor:0.019:0.266
+R	druid/restoration	25	14122	12745	gear	2.526	int:2:int:0.39:0.78,sta:1:sta:0.48:0.48,sp:1:sp:1:1,armor:14:armor:0.019:0.266
+R	druid/restoration	25	14122	12756	gear	3.786	spArcane:4:spArcane:0.88:3.52,armor:14:armor:0.019:0.266
+R	druid/restoration	25	14122	12757	gear	0.266	armor:14:armor:0.019:0.266
+R	druid/restoration	25	14122	12758	gear	0.266	armor:14:armor:0.019:0.266
+R	druid/restoration	25	14122	12759	gear	0.266	armor:14:armor:0.019:0.266
+R	druid/restoration	25	14122	12761	gear	0.266	armor:14:armor:0.019:0.266
+R	druid/restoration	25	14340	0	gear	10.792	sta:19:sta:0.48:9.12,armor:88:armor:0.019:1.672
+R	druid/restoration	25	14673	0	gear	3.046	sta:5:sta:0.48:2.4,armor:34:armor:0.019:0.646
+R	druid/restoration	25	15945	0	oh	1.26	sta:2:sta:0.48:0.96,spi:2:spi:0.15:0.3
+R	druid/restoration	25	16711	0	gear	7.015000000000001	sta:9:sta:0.48:4.32,hit:0.3:spellHit:1.7:0.51,armor:115:armor:0.019:2.185
+R	druid/restoration	25	18726	0	gear	8.587	sta:15:sta:0.48:7.2,armor:73:armor:0.019:1.387
 R	druid/restoration	25	22397	0	ranged	0.0	
-R	druid/restoration	25	252507	0	gear	11.472000000000001	sta:10:sta:0.38:3.8,spDmg:6:sp:1:6,armor:76:armor:0.022:1.672
-R	druid/restoration	25	254111	0	gear	11.348	int:9:int:0.58:5.22,sta:13:sta:0.38:4.94,armor:54:armor:0.022:1.188
-R	druid/restoration	25	270033	0	gear	0.858	armor:39:armor:0.022:0.858
-R	druid/restoration	25	273892	0	gear	33.711999999999996	sta:20:sta:0.38:7.6,int:19:int:0.58:11.02,spi:16:spi:0.033:0.528,spDmg:11:sp:1:11,armor:162:armor:0.022:3.564
-R	druid/restoration	25	280082	0	mh	77.793	int:15:int:0.58:8.7,hit:1.5:spellHit:1.6:2.4,spi:21:spi:0.033:0.693,sp:66:sp:1:66
-R	druid/restoration	34	1315	0	gear	7.8	sta:10:sta:0.42:4.2,spi:15:spi:0.24:3.6
-R	druid/restoration	34	1808	0	gear	1.3319999999999999	armor:74:armor:0.018:1.332
+R	druid/restoration	25	252507	0	gear	12.244	sta:10:sta:0.48:4.8,spDmg:6:sp:1:6,armor:76:armor:0.019:1.444
+R	druid/restoration	25	254111	0	gear	10.776	int:9:int:0.39:3.51,sta:13:sta:0.48:6.24,armor:54:armor:0.019:1.026
+R	druid/restoration	25	270033	0	gear	0.741	armor:39:armor:0.019:0.741
+R	druid/restoration	25	273892	0	gear	33.488	sta:20:sta:0.48:9.6,int:19:int:0.39:7.41,spi:16:spi:0.15:2.4,spDmg:11:sp:1:11,armor:162:armor:0.019:3.078
+R	druid/restoration	25	280082	0	mh	77.55	int:15:int:0.39:5.85,hit:1.5:spellHit:1.7:2.55,spi:21:spi:0.15:3.15,sp:66:sp:1:66
+R	druid/restoration	34	1315	0	gear	10.2	sta:10:sta:0.48:4.8,spi:15:spi:0.36:5.4
+R	druid/restoration	34	1808	0	gear	1.702	armor:74:armor:0.023:1.702
 R	druid/restoration	34	1990	0	mh	0.0	
-R	druid/restoration	34	1990	12718	mh	9.36	int:9:int:0.62:5.58,sta:9:sta:0.42:3.78
-R	druid/restoration	34	1990	12905	mh	37.76	int:11:int:0.62:6.82,sta:7:sta:0.42:2.94,sp:28:sp:1:28
+R	druid/restoration	34	1990	12718	mh	9.360000000000001	int:9:int:0.56:5.04,sta:9:sta:0.48:4.32
+R	druid/restoration	34	1990	12905	mh	37.519999999999996	int:11:int:0.56:6.16,sta:7:sta:0.48:3.36,sp:28:sp:1:28
 R	druid/restoration	34	2140	0	mh	0.0	
-R	druid/restoration	34	2140	12718	mh	1.04	int:1:int:0.62:0.62,sta:1:sta:0.42:0.42
-R	druid/restoration	34	2140	12917	mh	5.62	sp:5:sp:1:5,int:1:int:0.62:0.62
+R	druid/restoration	34	2140	12718	mh	1.04	int:1:int:0.56:0.56,sta:1:sta:0.48:0.48
+R	druid/restoration	34	2140	12917	mh	5.5600000000000005	sp:5:sp:1:5,int:1:int:0.56:0.56
 R	druid/restoration	34	2225	0	mh	0.0	
-R	druid/restoration	34	2614	0	gear	0.5219999999999999	armor:29:armor:0.018:0.522
-R	druid/restoration	34	3158	0	gear	0.46799999999999997	armor:26:armor:0.018:0.468
+R	druid/restoration	34	2614	0	gear	0.667	armor:29:armor:0.023:0.667
+R	druid/restoration	34	3158	0	gear	0.598	armor:26:armor:0.023:0.598
 R	druid/restoration	34	3570	0	mh	0.0	
 R	druid/restoration	34	4023	0	mh	0.0	
 R	druid/restoration	34	4570	0	mh	0.0	
-R	druid/restoration	34	4570	12718	mh	3.12	int:3:int:0.62:1.86,sta:3:sta:0.42:1.26
-R	druid/restoration	34	4570	12719	mh	1.98	spi:3:spi:0.24:0.72,sta:3:sta:0.42:1.26
-R	druid/restoration	34	4570	12720	mh	2.58	int:3:int:0.62:1.86,spi:3:spi:0.24:0.72
-R	druid/restoration	34	4570	12721	mh	1.26	sta:3:sta:0.42:1.26
-R	druid/restoration	34	4570	12722	mh	1.26	sta:3:sta:0.42:1.26
-R	druid/restoration	34	4570	12723	mh	1.8599999999999999	int:3:int:0.62:1.86
-R	druid/restoration	34	4570	12724	mh	1.8599999999999999	int:3:int:0.62:1.86
-R	druid/restoration	34	4570	12725	mh	0.72	spi:3:spi:0.24:0.72
-R	druid/restoration	34	4570	12726	mh	0.72	spi:3:spi:0.24:0.72
+R	druid/restoration	34	4570	12718	mh	3.12	int:3:int:0.56:1.68,sta:3:sta:0.48:1.44
+R	druid/restoration	34	4570	12719	mh	2.52	spi:3:spi:0.36:1.08,sta:3:sta:0.48:1.44
+R	druid/restoration	34	4570	12720	mh	2.7600000000000002	int:3:int:0.56:1.68,spi:3:spi:0.36:1.08
+R	druid/restoration	34	4570	12721	mh	1.44	sta:3:sta:0.48:1.44
+R	druid/restoration	34	4570	12722	mh	1.44	sta:3:sta:0.48:1.44
+R	druid/restoration	34	4570	12723	mh	1.6800000000000002	int:3:int:0.56:1.68
+R	druid/restoration	34	4570	12724	mh	1.6800000000000002	int:3:int:0.56:1.68
+R	druid/restoration	34	4570	12725	mh	1.08	spi:3:spi:0.36:1.08
+R	druid/restoration	34	4570	12726	mh	1.08	spi:3:spi:0.36:1.08
 R	druid/restoration	34	4570	12727	mh	0.0	
 R	druid/restoration	34	4570	12728	mh	0.0	
-R	druid/restoration	34	4570	12729	mh	2.48	int:4:int:0.62:2.48
-R	druid/restoration	34	4570	12730	mh	0.96	spi:4:spi:0.24:0.96
-R	druid/restoration	34	4570	12731	mh	1.68	sta:4:sta:0.42:1.68
+R	druid/restoration	34	4570	12729	mh	2.24	int:4:int:0.56:2.24
+R	druid/restoration	34	4570	12730	mh	1.44	spi:4:spi:0.36:1.44
+R	druid/restoration	34	4570	12731	mh	1.92	sta:4:sta:0.48:1.92
 R	druid/restoration	34	4570	12732	mh	0.0	
 R	druid/restoration	34	4570	12733	mh	0.0	
 R	druid/restoration	34	4570	12736	mh	0.0	
-R	druid/restoration	34	4570	12740	mh	1.26	sta:3:sta:0.42:1.26
-R	druid/restoration	34	4570	12741	mh	1.26	sta:3:sta:0.42:1.26
-R	druid/restoration	34	4570	12742	mh	1.26	sta:3:sta:0.42:1.26
-R	druid/restoration	34	4570	12743	mh	1.26	sta:3:sta:0.42:1.26
-R	druid/restoration	34	4570	12744	mh	1.26	sta:3:sta:0.42:1.26
+R	druid/restoration	34	4570	12740	mh	1.44	sta:3:sta:0.48:1.44
+R	druid/restoration	34	4570	12741	mh	1.44	sta:3:sta:0.48:1.44
+R	druid/restoration	34	4570	12742	mh	1.44	sta:3:sta:0.48:1.44
+R	druid/restoration	34	4570	12743	mh	1.44	sta:3:sta:0.48:1.44
+R	druid/restoration	34	4570	12744	mh	1.44	sta:3:sta:0.48:1.44
 R	druid/restoration	34	4570	12759	mh	0.0	
-R	druid/restoration	34	4570	12918	mh	10.48	sp:8:sp:1:8,int:4:int:0.62:2.48
-R	druid/restoration	34	4570	12919	mh	7.48	spDmg:5:sp:1:5,int:4:int:0.62:2.48
+R	druid/restoration	34	4570	12918	mh	10.24	sp:8:sp:1:8,int:4:int:0.56:2.24
+R	druid/restoration	34	4570	12919	mh	7.24	spDmg:5:sp:1:5,int:4:int:0.56:2.24
 R	druid/restoration	34	5079	0	gear	0.0	
-R	druid/restoration	34	6540	0	gear	0.504	armor:28:armor:0.018:0.504
-R	druid/restoration	34	6540	12718	gear	3.624	int:3:int:0.62:1.86,sta:3:sta:0.42:1.26,armor:28:armor:0.018:0.504
-R	druid/restoration	34	6540	12719	gear	2.484	spi:3:spi:0.24:0.72,sta:3:sta:0.42:1.26,armor:28:armor:0.018:0.504
-R	druid/restoration	34	6540	12720	gear	3.084	int:3:int:0.62:1.86,spi:3:spi:0.24:0.72,armor:28:armor:0.018:0.504
-R	druid/restoration	34	6540	12729	gear	3.604	int:5:int:0.62:3.1,armor:28:armor:0.018:0.504
-R	druid/restoration	34	6540	12730	gear	1.704	spi:5:spi:0.24:1.2,armor:28:armor:0.018:0.504
-R	druid/restoration	34	6540	12731	gear	2.604	sta:5:sta:0.42:2.1,armor:28:armor:0.018:0.504
-R	druid/restoration	34	6540	12734	gear	6.504	sp:6:sp:1:6,armor:28:armor:0.018:0.504
-R	druid/restoration	34	6540	12735	gear	4.504	spDmg:4:sp:1:4,armor:28:armor:0.018:0.504
-R	druid/restoration	34	6540	12740	gear	1.764	sta:3:sta:0.42:1.26,armor:28:armor:0.018:0.504
-R	druid/restoration	34	6540	12741	gear	1.764	sta:3:sta:0.42:1.26,armor:28:armor:0.018:0.504
-R	druid/restoration	34	6540	12742	gear	1.764	sta:3:sta:0.42:1.26,armor:28:armor:0.018:0.504
-R	druid/restoration	34	6540	12743	gear	1.764	sta:3:sta:0.42:1.26,armor:28:armor:0.018:0.504
-R	druid/restoration	34	6540	12744	gear	1.764	sta:3:sta:0.42:1.26,armor:28:armor:0.018:0.504
-R	druid/restoration	34	6540	12745	gear	5.824	int:4:int:0.62:2.48,sta:2:sta:0.42:0.84,sp:2:sp:1:2,armor:28:armor:0.018:0.504
-R	druid/restoration	34	6540	12756	gear	6.314	spArcane:7:spArcane:0.83:5.81,armor:28:armor:0.018:0.504
-R	druid/restoration	34	6540	12757	gear	0.504	armor:28:armor:0.018:0.504
-R	druid/restoration	34	6540	12758	gear	0.504	armor:28:armor:0.018:0.504
-R	druid/restoration	34	6540	12759	gear	0.504	armor:28:armor:0.018:0.504
-R	druid/restoration	34	6540	12761	gear	0.504	armor:28:armor:0.018:0.504
-R	druid/restoration	34	6557	0	gear	0.8819999999999999	armor:49:armor:0.018:0.882
-R	druid/restoration	34	6557	12718	gear	2.9619999999999997	int:2:int:0.62:1.24,sta:2:sta:0.42:0.84,armor:49:armor:0.018:0.882
-R	druid/restoration	34	6557	12719	gear	2.202	spi:2:spi:0.24:0.48,sta:2:sta:0.42:0.84,armor:49:armor:0.018:0.882
-R	druid/restoration	34	6557	12720	gear	2.602	int:2:int:0.62:1.24,spi:2:spi:0.24:0.48,armor:49:armor:0.018:0.882
-R	druid/restoration	34	6557	12721	gear	1.722	sta:2:sta:0.42:0.84,armor:49:armor:0.018:0.882
-R	druid/restoration	34	6557	12722	gear	1.722	sta:2:sta:0.42:0.84,armor:49:armor:0.018:0.882
-R	druid/restoration	34	6557	12723	gear	2.122	int:2:int:0.62:1.24,armor:49:armor:0.018:0.882
-R	druid/restoration	34	6557	12724	gear	2.122	int:2:int:0.62:1.24,armor:49:armor:0.018:0.882
-R	druid/restoration	34	6557	12725	gear	1.3619999999999999	spi:2:spi:0.24:0.48,armor:49:armor:0.018:0.882
-R	druid/restoration	34	6557	12726	gear	1.3619999999999999	spi:2:spi:0.24:0.48,armor:49:armor:0.018:0.882
-R	druid/restoration	34	6557	12727	gear	0.8819999999999999	armor:49:armor:0.018:0.882
-R	druid/restoration	34	6557	12728	gear	0.8819999999999999	armor:49:armor:0.018:0.882
-R	druid/restoration	34	6557	12729	gear	2.742	int:3:int:0.62:1.86,armor:49:armor:0.018:0.882
-R	druid/restoration	34	6557	12730	gear	1.6019999999999999	spi:3:spi:0.24:0.72,armor:49:armor:0.018:0.882
-R	druid/restoration	34	6557	12731	gear	2.142	sta:3:sta:0.42:1.26,armor:49:armor:0.018:0.882
-R	druid/restoration	34	6557	12732	gear	0.8819999999999999	armor:49:armor:0.018:0.882
-R	druid/restoration	34	6557	12733	gear	0.8819999999999999	armor:49:armor:0.018:0.882
-R	druid/restoration	34	6557	12734	gear	4.882	sp:4:sp:1:4,armor:49:armor:0.018:0.882
-R	druid/restoration	34	6557	12735	gear	2.8819999999999997	spDmg:2:sp:1:2,armor:49:armor:0.018:0.882
-R	druid/restoration	34	6557	12736	gear	0.8819999999999999	armor:49:armor:0.018:0.882
-R	druid/restoration	34	6557	12740	gear	1.722	sta:2:sta:0.42:0.84,armor:49:armor:0.018:0.882
-R	druid/restoration	34	6557	12741	gear	1.722	sta:2:sta:0.42:0.84,armor:49:armor:0.018:0.882
-R	druid/restoration	34	6557	12742	gear	1.722	sta:2:sta:0.42:0.84,armor:49:armor:0.018:0.882
-R	druid/restoration	34	6557	12743	gear	1.722	sta:2:sta:0.42:0.84,armor:49:armor:0.018:0.882
-R	druid/restoration	34	6557	12744	gear	1.722	sta:2:sta:0.42:0.84,armor:49:armor:0.018:0.882
-R	druid/restoration	34	6557	12756	gear	4.202	spArcane:4:spArcane:0.83:3.32,armor:49:armor:0.018:0.882
-R	druid/restoration	34	6557	12760	gear	0.9299999999999999	spNature:4:spNature:0.012:0.048,armor:49:armor:0.018:0.882
-R	druid/restoration	34	7047	0	gear	1.668	spi:5:spi:0.24:1.2,armor:26:armor:0.018:0.468
-R	druid/restoration	34	8192	0	gear	3.6479999999999997	sta:5:sta:0.42:2.1,armor:86:armor:0.018:1.548
-R	druid/restoration	34	9834	0	gear	1.3139999999999998	armor:73:armor:0.018:1.314
-R	druid/restoration	34	9834	12718	gear	7.554	int:6:int:0.62:3.72,sta:6:sta:0.42:2.52,armor:73:armor:0.018:1.314
-R	druid/restoration	34	9834	12719	gear	5.274	spi:6:spi:0.24:1.44,sta:6:sta:0.42:2.52,armor:73:armor:0.018:1.314
-R	druid/restoration	34	9834	12720	gear	6.474	int:6:int:0.62:3.72,spi:6:spi:0.24:1.44,armor:73:armor:0.018:1.314
-R	druid/restoration	34	9834	12721	gear	3.8339999999999996	sta:6:sta:0.42:2.52,armor:73:armor:0.018:1.314
-R	druid/restoration	34	9834	12722	gear	3.8339999999999996	sta:6:sta:0.42:2.52,armor:73:armor:0.018:1.314
-R	druid/restoration	34	9834	12723	gear	5.034	int:6:int:0.62:3.72,armor:73:armor:0.018:1.314
-R	druid/restoration	34	9834	12724	gear	5.034	int:6:int:0.62:3.72,armor:73:armor:0.018:1.314
-R	druid/restoration	34	9834	12725	gear	2.7539999999999996	spi:6:spi:0.24:1.44,armor:73:armor:0.018:1.314
-R	druid/restoration	34	9834	12726	gear	2.7539999999999996	spi:6:spi:0.24:1.44,armor:73:armor:0.018:1.314
-R	druid/restoration	34	9834	12727	gear	1.3139999999999998	armor:73:armor:0.018:1.314
-R	druid/restoration	34	9834	12728	gear	1.3139999999999998	armor:73:armor:0.018:1.314
-R	druid/restoration	34	9834	12729	gear	6.894	int:9:int:0.62:5.58,armor:73:armor:0.018:1.314
-R	druid/restoration	34	9834	12730	gear	3.474	spi:9:spi:0.24:2.16,armor:73:armor:0.018:1.314
-R	druid/restoration	34	9834	12731	gear	5.093999999999999	sta:9:sta:0.42:3.78,armor:73:armor:0.018:1.314
-R	druid/restoration	34	9834	12732	gear	1.3139999999999998	armor:73:armor:0.018:1.314
-R	druid/restoration	34	9834	12733	gear	1.3139999999999998	armor:73:armor:0.018:1.314
-R	druid/restoration	34	9834	12734	gear	12.314	sp:11:sp:1:11,armor:73:armor:0.018:1.314
-R	druid/restoration	34	9834	12735	gear	8.314	spDmg:7:sp:1:7,armor:73:armor:0.018:1.314
-R	druid/restoration	34	9834	12736	gear	1.3139999999999998	armor:73:armor:0.018:1.314
-R	druid/restoration	34	9834	12740	gear	3.8339999999999996	sta:6:sta:0.42:2.52,armor:73:armor:0.018:1.314
-R	druid/restoration	34	9834	12741	gear	3.8339999999999996	sta:6:sta:0.42:2.52,armor:73:armor:0.018:1.314
-R	druid/restoration	34	9834	12742	gear	3.8339999999999996	sta:6:sta:0.42:2.52,armor:73:armor:0.018:1.314
-R	druid/restoration	34	9834	12743	gear	3.8339999999999996	sta:6:sta:0.42:2.52,armor:73:armor:0.018:1.314
-R	druid/restoration	34	9834	12744	gear	3.8339999999999996	sta:6:sta:0.42:2.52,armor:73:armor:0.018:1.314
-R	druid/restoration	34	9834	12745	gear	10.334	int:7:int:0.62:4.34,sta:4:sta:0.42:1.68,sp:3:sp:1:3,armor:73:armor:0.018:1.314
-R	druid/restoration	34	9834	12746	gear	9.614	int:7:int:0.62:4.34,spi:4:spi:0.24:0.96,sp:3:sp:1:3,armor:73:armor:0.018:1.314
-R	druid/restoration	34	9834	12747	gear	8.214	spi:4:spi:0.24:0.96,sta:7:sta:0.42:2.94,sp:3:sp:1:3,armor:73:armor:0.018:1.314
-R	druid/restoration	34	9834	12748	gear	8.734	int:4:int:0.62:2.48,sta:7:sta:0.42:2.94,spDmg:2:sp:1:2,armor:73:armor:0.018:1.314
-R	druid/restoration	34	9834	12749	gear	8.613999999999999	int:7:int:0.62:4.34,spi:4:spi:0.24:0.96,spDmg:2:sp:1:2,armor:73:armor:0.018:1.314
-R	druid/restoration	34	9834	12750	gear	7.214	spi:4:spi:0.24:0.96,sta:7:sta:0.42:2.94,spDmg:2:sp:1:2,armor:73:armor:0.018:1.314
-R	druid/restoration	34	9834	12751	gear	4.254	sta:7:sta:0.42:2.94,armor:73:armor:0.018:1.314
-R	druid/restoration	34	9834	12752	gear	4.254	sta:7:sta:0.42:2.94,armor:73:armor:0.018:1.314
-R	druid/restoration	34	9834	12753	gear	4.254	sta:7:sta:0.42:2.94,armor:73:armor:0.018:1.314
-R	druid/restoration	34	9834	12755	gear	7.254	sp:3:sp:1:3,sta:7:sta:0.42:2.94,armor:73:armor:0.018:1.314
-R	druid/restoration	34	9834	12756	gear	12.104	spArcane:13:spArcane:0.83:10.79,armor:73:armor:0.018:1.314
-R	druid/restoration	34	9834	12760	gear	1.4699999999999998	spNature:13:spNature:0.012:0.156,armor:73:armor:0.018:1.314
-R	druid/restoration	34	11187	0	gear	0.072	armor:4:armor:0.018:0.072
+R	druid/restoration	34	6540	0	gear	0.644	armor:28:armor:0.023:0.644
+R	druid/restoration	34	6540	12718	gear	3.7640000000000002	int:3:int:0.56:1.68,sta:3:sta:0.48:1.44,armor:28:armor:0.023:0.644
+R	druid/restoration	34	6540	12719	gear	3.164	spi:3:spi:0.36:1.08,sta:3:sta:0.48:1.44,armor:28:armor:0.023:0.644
+R	druid/restoration	34	6540	12720	gear	3.4040000000000004	int:3:int:0.56:1.68,spi:3:spi:0.36:1.08,armor:28:armor:0.023:0.644
+R	druid/restoration	34	6540	12729	gear	3.4440000000000004	int:5:int:0.56:2.8,armor:28:armor:0.023:0.644
+R	druid/restoration	34	6540	12730	gear	2.444	spi:5:spi:0.36:1.8,armor:28:armor:0.023:0.644
+R	druid/restoration	34	6540	12731	gear	3.044	sta:5:sta:0.48:2.4,armor:28:armor:0.023:0.644
+R	druid/restoration	34	6540	12734	gear	6.644	sp:6:sp:1:6,armor:28:armor:0.023:0.644
+R	druid/restoration	34	6540	12735	gear	4.644	spDmg:4:sp:1:4,armor:28:armor:0.023:0.644
+R	druid/restoration	34	6540	12740	gear	2.084	sta:3:sta:0.48:1.44,armor:28:armor:0.023:0.644
+R	druid/restoration	34	6540	12741	gear	2.084	sta:3:sta:0.48:1.44,armor:28:armor:0.023:0.644
+R	druid/restoration	34	6540	12742	gear	2.084	sta:3:sta:0.48:1.44,armor:28:armor:0.023:0.644
+R	druid/restoration	34	6540	12743	gear	2.084	sta:3:sta:0.48:1.44,armor:28:armor:0.023:0.644
+R	druid/restoration	34	6540	12744	gear	2.084	sta:3:sta:0.48:1.44,armor:28:armor:0.023:0.644
+R	druid/restoration	34	6540	12745	gear	5.844	int:4:int:0.56:2.24,sta:2:sta:0.48:0.96,sp:2:sp:1:2,armor:28:armor:0.023:0.644
+R	druid/restoration	34	6540	12756	gear	6.454	spArcane:7:spArcane:0.83:5.81,armor:28:armor:0.023:0.644
+R	druid/restoration	34	6540	12757	gear	0.644	armor:28:armor:0.023:0.644
+R	druid/restoration	34	6540	12758	gear	0.644	armor:28:armor:0.023:0.644
+R	druid/restoration	34	6540	12759	gear	0.644	armor:28:armor:0.023:0.644
+R	druid/restoration	34	6540	12761	gear	0.644	armor:28:armor:0.023:0.644
+R	druid/restoration	34	6557	0	gear	1.127	armor:49:armor:0.023:1.127
+R	druid/restoration	34	6557	12718	gear	3.207	int:2:int:0.56:1.12,sta:2:sta:0.48:0.96,armor:49:armor:0.023:1.127
+R	druid/restoration	34	6557	12719	gear	2.807	spi:2:spi:0.36:0.72,sta:2:sta:0.48:0.96,armor:49:armor:0.023:1.127
+R	druid/restoration	34	6557	12720	gear	2.967	int:2:int:0.56:1.12,spi:2:spi:0.36:0.72,armor:49:armor:0.023:1.127
+R	druid/restoration	34	6557	12721	gear	2.0869999999999997	sta:2:sta:0.48:0.96,armor:49:armor:0.023:1.127
+R	druid/restoration	34	6557	12722	gear	2.0869999999999997	sta:2:sta:0.48:0.96,armor:49:armor:0.023:1.127
+R	druid/restoration	34	6557	12723	gear	2.247	int:2:int:0.56:1.12,armor:49:armor:0.023:1.127
+R	druid/restoration	34	6557	12724	gear	2.247	int:2:int:0.56:1.12,armor:49:armor:0.023:1.127
+R	druid/restoration	34	6557	12725	gear	1.847	spi:2:spi:0.36:0.72,armor:49:armor:0.023:1.127
+R	druid/restoration	34	6557	12726	gear	1.847	spi:2:spi:0.36:0.72,armor:49:armor:0.023:1.127
+R	druid/restoration	34	6557	12727	gear	1.127	armor:49:armor:0.023:1.127
+R	druid/restoration	34	6557	12728	gear	1.127	armor:49:armor:0.023:1.127
+R	druid/restoration	34	6557	12729	gear	2.8070000000000004	int:3:int:0.56:1.68,armor:49:armor:0.023:1.127
+R	druid/restoration	34	6557	12730	gear	2.207	spi:3:spi:0.36:1.08,armor:49:armor:0.023:1.127
+R	druid/restoration	34	6557	12731	gear	2.567	sta:3:sta:0.48:1.44,armor:49:armor:0.023:1.127
+R	druid/restoration	34	6557	12732	gear	1.127	armor:49:armor:0.023:1.127
+R	druid/restoration	34	6557	12733	gear	1.127	armor:49:armor:0.023:1.127
+R	druid/restoration	34	6557	12734	gear	5.127	sp:4:sp:1:4,armor:49:armor:0.023:1.127
+R	druid/restoration	34	6557	12735	gear	3.127	spDmg:2:sp:1:2,armor:49:armor:0.023:1.127
+R	druid/restoration	34	6557	12736	gear	1.127	armor:49:armor:0.023:1.127
+R	druid/restoration	34	6557	12740	gear	2.0869999999999997	sta:2:sta:0.48:0.96,armor:49:armor:0.023:1.127
+R	druid/restoration	34	6557	12741	gear	2.0869999999999997	sta:2:sta:0.48:0.96,armor:49:armor:0.023:1.127
+R	druid/restoration	34	6557	12742	gear	2.0869999999999997	sta:2:sta:0.48:0.96,armor:49:armor:0.023:1.127
+R	druid/restoration	34	6557	12743	gear	2.0869999999999997	sta:2:sta:0.48:0.96,armor:49:armor:0.023:1.127
+R	druid/restoration	34	6557	12744	gear	2.0869999999999997	sta:2:sta:0.48:0.96,armor:49:armor:0.023:1.127
+R	druid/restoration	34	6557	12756	gear	4.447	spArcane:4:spArcane:0.83:3.32,armor:49:armor:0.023:1.127
+R	druid/restoration	34	6557	12760	gear	1.191	spNature:4:spNature:0.016:0.064,armor:49:armor:0.023:1.127
+R	druid/restoration	34	7047	0	gear	2.3979999999999997	spi:5:spi:0.36:1.8,armor:26:armor:0.023:0.598
+R	druid/restoration	34	8192	0	gear	4.378	sta:5:sta:0.48:2.4,armor:86:armor:0.023:1.978
+R	druid/restoration	34	9834	0	gear	1.679	armor:73:armor:0.023:1.679
+R	druid/restoration	34	9834	12718	gear	7.9190000000000005	int:6:int:0.56:3.36,sta:6:sta:0.48:2.88,armor:73:armor:0.023:1.679
+R	druid/restoration	34	9834	12719	gear	6.719	spi:6:spi:0.36:2.16,sta:6:sta:0.48:2.88,armor:73:armor:0.023:1.679
+R	druid/restoration	34	9834	12720	gear	7.199000000000001	int:6:int:0.56:3.36,spi:6:spi:0.36:2.16,armor:73:armor:0.023:1.679
+R	druid/restoration	34	9834	12721	gear	4.559	sta:6:sta:0.48:2.88,armor:73:armor:0.023:1.679
+R	druid/restoration	34	9834	12722	gear	4.559	sta:6:sta:0.48:2.88,armor:73:armor:0.023:1.679
+R	druid/restoration	34	9834	12723	gear	5.039000000000001	int:6:int:0.56:3.36,armor:73:armor:0.023:1.679
+R	druid/restoration	34	9834	12724	gear	5.039000000000001	int:6:int:0.56:3.36,armor:73:armor:0.023:1.679
+R	druid/restoration	34	9834	12725	gear	3.8390000000000004	spi:6:spi:0.36:2.16,armor:73:armor:0.023:1.679
+R	druid/restoration	34	9834	12726	gear	3.8390000000000004	spi:6:spi:0.36:2.16,armor:73:armor:0.023:1.679
+R	druid/restoration	34	9834	12727	gear	1.679	armor:73:armor:0.023:1.679
+R	druid/restoration	34	9834	12728	gear	1.679	armor:73:armor:0.023:1.679
+R	druid/restoration	34	9834	12729	gear	6.719000000000001	int:9:int:0.56:5.04,armor:73:armor:0.023:1.679
+R	druid/restoration	34	9834	12730	gear	4.919	spi:9:spi:0.36:3.24,armor:73:armor:0.023:1.679
+R	druid/restoration	34	9834	12731	gear	5.9990000000000006	sta:9:sta:0.48:4.32,armor:73:armor:0.023:1.679
+R	druid/restoration	34	9834	12732	gear	1.679	armor:73:armor:0.023:1.679
+R	druid/restoration	34	9834	12733	gear	1.679	armor:73:armor:0.023:1.679
+R	druid/restoration	34	9834	12734	gear	12.679	sp:11:sp:1:11,armor:73:armor:0.023:1.679
+R	druid/restoration	34	9834	12735	gear	8.679	spDmg:7:sp:1:7,armor:73:armor:0.023:1.679
+R	druid/restoration	34	9834	12736	gear	1.679	armor:73:armor:0.023:1.679
+R	druid/restoration	34	9834	12740	gear	4.559	sta:6:sta:0.48:2.88,armor:73:armor:0.023:1.679
+R	druid/restoration	34	9834	12741	gear	4.559	sta:6:sta:0.48:2.88,armor:73:armor:0.023:1.679
+R	druid/restoration	34	9834	12742	gear	4.559	sta:6:sta:0.48:2.88,armor:73:armor:0.023:1.679
+R	druid/restoration	34	9834	12743	gear	4.559	sta:6:sta:0.48:2.88,armor:73:armor:0.023:1.679
+R	druid/restoration	34	9834	12744	gear	4.559	sta:6:sta:0.48:2.88,armor:73:armor:0.023:1.679
+R	druid/restoration	34	9834	12745	gear	10.519	int:7:int:0.56:3.92,sta:4:sta:0.48:1.92,sp:3:sp:1:3,armor:73:armor:0.023:1.679
+R	druid/restoration	34	9834	12746	gear	10.039	int:7:int:0.56:3.92,spi:4:spi:0.36:1.44,sp:3:sp:1:3,armor:73:armor:0.023:1.679
+R	druid/restoration	34	9834	12747	gear	9.479	spi:4:spi:0.36:1.44,sta:7:sta:0.48:3.36,sp:3:sp:1:3,armor:73:armor:0.023:1.679
+R	druid/restoration	34	9834	12748	gear	9.279	int:4:int:0.56:2.24,sta:7:sta:0.48:3.36,spDmg:2:sp:1:2,armor:73:armor:0.023:1.679
+R	druid/restoration	34	9834	12749	gear	9.039	int:7:int:0.56:3.92,spi:4:spi:0.36:1.44,spDmg:2:sp:1:2,armor:73:armor:0.023:1.679
+R	druid/restoration	34	9834	12750	gear	8.479	spi:4:spi:0.36:1.44,sta:7:sta:0.48:3.36,spDmg:2:sp:1:2,armor:73:armor:0.023:1.679
+R	druid/restoration	34	9834	12751	gear	5.039	sta:7:sta:0.48:3.36,armor:73:armor:0.023:1.679
+R	druid/restoration	34	9834	12752	gear	5.039	sta:7:sta:0.48:3.36,armor:73:armor:0.023:1.679
+R	druid/restoration	34	9834	12753	gear	5.039	sta:7:sta:0.48:3.36,armor:73:armor:0.023:1.679
+R	druid/restoration	34	9834	12755	gear	8.039	sp:3:sp:1:3,sta:7:sta:0.48:3.36,armor:73:armor:0.023:1.679
+R	druid/restoration	34	9834	12756	gear	12.469	spArcane:13:spArcane:0.83:10.79,armor:73:armor:0.023:1.679
+R	druid/restoration	34	9834	12760	gear	1.887	spNature:13:spNature:0.016:0.208,armor:73:armor:0.023:1.679
+R	druid/restoration	34	11187	0	gear	0.092	armor:4:armor:0.023:0.092
 R	druid/restoration	34	11994	0	gear	0.0	
-R	druid/restoration	34	11994	12718	gear	3.12	int:3:int:0.62:1.86,sta:3:sta:0.42:1.26
-R	druid/restoration	34	11994	12719	gear	1.98	spi:3:spi:0.24:0.72,sta:3:sta:0.42:1.26
-R	druid/restoration	34	11994	12720	gear	2.58	int:3:int:0.62:1.86,spi:3:spi:0.24:0.72
-R	druid/restoration	34	11994	12721	gear	1.26	sta:3:sta:0.42:1.26
-R	druid/restoration	34	11994	12722	gear	1.26	sta:3:sta:0.42:1.26
-R	druid/restoration	34	11994	12723	gear	1.8599999999999999	int:3:int:0.62:1.86
-R	druid/restoration	34	11994	12724	gear	1.8599999999999999	int:3:int:0.62:1.86
-R	druid/restoration	34	11994	12725	gear	0.72	spi:3:spi:0.24:0.72
-R	druid/restoration	34	11994	12726	gear	0.72	spi:3:spi:0.24:0.72
+R	druid/restoration	34	11994	12718	gear	3.12	int:3:int:0.56:1.68,sta:3:sta:0.48:1.44
+R	druid/restoration	34	11994	12719	gear	2.52	spi:3:spi:0.36:1.08,sta:3:sta:0.48:1.44
+R	druid/restoration	34	11994	12720	gear	2.7600000000000002	int:3:int:0.56:1.68,spi:3:spi:0.36:1.08
+R	druid/restoration	34	11994	12721	gear	1.44	sta:3:sta:0.48:1.44
+R	druid/restoration	34	11994	12722	gear	1.44	sta:3:sta:0.48:1.44
+R	druid/restoration	34	11994	12723	gear	1.6800000000000002	int:3:int:0.56:1.68
+R	druid/restoration	34	11994	12724	gear	1.6800000000000002	int:3:int:0.56:1.68
+R	druid/restoration	34	11994	12725	gear	1.08	spi:3:spi:0.36:1.08
+R	druid/restoration	34	11994	12726	gear	1.08	spi:3:spi:0.36:1.08
 R	druid/restoration	34	11994	12727	gear	0.0	
 R	druid/restoration	34	11994	12728	gear	0.0	
-R	druid/restoration	34	11994	12729	gear	3.1	int:5:int:0.62:3.1
-R	druid/restoration	34	11994	12730	gear	1.2	spi:5:spi:0.24:1.2
-R	druid/restoration	34	11994	12731	gear	2.1	sta:5:sta:0.42:2.1
+R	druid/restoration	34	11994	12729	gear	2.8000000000000003	int:5:int:0.56:2.8
+R	druid/restoration	34	11994	12730	gear	1.7999999999999998	spi:5:spi:0.36:1.8
+R	druid/restoration	34	11994	12731	gear	2.4	sta:5:sta:0.48:2.4
 R	druid/restoration	34	11994	12732	gear	0.0	
 R	druid/restoration	34	11994	12733	gear	0.0	
 R	druid/restoration	34	11994	12737	gear	0.0	
-R	druid/restoration	34	11994	12738	gear	1.0	mp5:2:mp5:0.5:1
+R	druid/restoration	34	11994	12738	gear	1.36	mp5:2:mp5:0.68:1.36
 R	druid/restoration	34	11994	12739	gear	0.0	
-R	druid/restoration	34	11994	12740	gear	1.26	sta:3:sta:0.42:1.26
-R	druid/restoration	34	11994	12741	gear	1.26	sta:3:sta:0.42:1.26
-R	druid/restoration	34	11994	12742	gear	1.26	sta:3:sta:0.42:1.26
-R	druid/restoration	34	11994	12743	gear	1.26	sta:3:sta:0.42:1.26
-R	druid/restoration	34	11994	12744	gear	1.26	sta:3:sta:0.42:1.26
+R	druid/restoration	34	11994	12740	gear	1.44	sta:3:sta:0.48:1.44
+R	druid/restoration	34	11994	12741	gear	1.44	sta:3:sta:0.48:1.44
+R	druid/restoration	34	11994	12742	gear	1.44	sta:3:sta:0.48:1.44
+R	druid/restoration	34	11994	12743	gear	1.44	sta:3:sta:0.48:1.44
+R	druid/restoration	34	11994	12744	gear	1.44	sta:3:sta:0.48:1.44
 R	druid/restoration	34	13183	0	mh	0.0	
-R	druid/restoration	34	14122	0	gear	0.252	armor:14:armor:0.018:0.252
-R	druid/restoration	34	14122	12718	gear	2.332	int:2:int:0.62:1.24,sta:2:sta:0.42:0.84,armor:14:armor:0.018:0.252
-R	druid/restoration	34	14122	12719	gear	1.5719999999999998	spi:2:spi:0.24:0.48,sta:2:sta:0.42:0.84,armor:14:armor:0.018:0.252
-R	druid/restoration	34	14122	12720	gear	1.972	int:2:int:0.62:1.24,spi:2:spi:0.24:0.48,armor:14:armor:0.018:0.252
-R	druid/restoration	34	14122	12729	gear	2.112	int:3:int:0.62:1.86,armor:14:armor:0.018:0.252
-R	druid/restoration	34	14122	12730	gear	0.972	spi:3:spi:0.24:0.72,armor:14:armor:0.018:0.252
-R	druid/restoration	34	14122	12731	gear	1.512	sta:3:sta:0.42:1.26,armor:14:armor:0.018:0.252
-R	druid/restoration	34	14122	12734	gear	4.252	sp:4:sp:1:4,armor:14:armor:0.018:0.252
-R	druid/restoration	34	14122	12735	gear	2.252	spDmg:2:sp:1:2,armor:14:armor:0.018:0.252
-R	druid/restoration	34	14122	12740	gear	1.092	sta:2:sta:0.42:0.84,armor:14:armor:0.018:0.252
-R	druid/restoration	34	14122	12741	gear	1.092	sta:2:sta:0.42:0.84,armor:14:armor:0.018:0.252
-R	druid/restoration	34	14122	12742	gear	1.092	sta:2:sta:0.42:0.84,armor:14:armor:0.018:0.252
-R	druid/restoration	34	14122	12743	gear	1.092	sta:2:sta:0.42:0.84,armor:14:armor:0.018:0.252
-R	druid/restoration	34	14122	12744	gear	1.092	sta:2:sta:0.42:0.84,armor:14:armor:0.018:0.252
-R	druid/restoration	34	14122	12745	gear	2.912	int:2:int:0.62:1.24,sta:1:sta:0.42:0.42,sp:1:sp:1:1,armor:14:armor:0.018:0.252
-R	druid/restoration	34	14122	12756	gear	3.572	spArcane:4:spArcane:0.83:3.32,armor:14:armor:0.018:0.252
-R	druid/restoration	34	14122	12757	gear	0.252	armor:14:armor:0.018:0.252
-R	druid/restoration	34	14122	12758	gear	0.252	armor:14:armor:0.018:0.252
-R	druid/restoration	34	14122	12759	gear	0.252	armor:14:armor:0.018:0.252
-R	druid/restoration	34	14122	12761	gear	0.252	armor:14:armor:0.018:0.252
-R	druid/restoration	34	14340	0	gear	9.564	sta:19:sta:0.42:7.98,armor:88:armor:0.018:1.584
-R	druid/restoration	34	14673	0	gear	2.712	sta:5:sta:0.42:2.1,armor:34:armor:0.018:0.612
-R	druid/restoration	34	15945	0	oh	1.3199999999999998	sta:2:sta:0.42:0.84,spi:2:spi:0.24:0.48
-R	druid/restoration	34	16711	0	gear	6.66	sta:9:sta:0.42:3.78,hit:0.3:spellHit:2.7:0.81,armor:115:armor:0.018:2.07
-R	druid/restoration	34	18726	0	gear	7.614	sta:15:sta:0.42:6.3,armor:73:armor:0.018:1.314
+R	druid/restoration	34	14122	0	gear	0.322	armor:14:armor:0.023:0.322
+R	druid/restoration	34	14122	12718	gear	2.402	int:2:int:0.56:1.12,sta:2:sta:0.48:0.96,armor:14:armor:0.023:0.322
+R	druid/restoration	34	14122	12719	gear	2.002	spi:2:spi:0.36:0.72,sta:2:sta:0.48:0.96,armor:14:armor:0.023:0.322
+R	druid/restoration	34	14122	12720	gear	2.162	int:2:int:0.56:1.12,spi:2:spi:0.36:0.72,armor:14:armor:0.023:0.322
+R	druid/restoration	34	14122	12729	gear	2.0020000000000002	int:3:int:0.56:1.68,armor:14:armor:0.023:0.322
+R	druid/restoration	34	14122	12730	gear	1.4020000000000001	spi:3:spi:0.36:1.08,armor:14:armor:0.023:0.322
+R	druid/restoration	34	14122	12731	gear	1.762	sta:3:sta:0.48:1.44,armor:14:armor:0.023:0.322
+R	druid/restoration	34	14122	12734	gear	4.322	sp:4:sp:1:4,armor:14:armor:0.023:0.322
+R	druid/restoration	34	14122	12735	gear	2.322	spDmg:2:sp:1:2,armor:14:armor:0.023:0.322
+R	druid/restoration	34	14122	12740	gear	1.282	sta:2:sta:0.48:0.96,armor:14:armor:0.023:0.322
+R	druid/restoration	34	14122	12741	gear	1.282	sta:2:sta:0.48:0.96,armor:14:armor:0.023:0.322
+R	druid/restoration	34	14122	12742	gear	1.282	sta:2:sta:0.48:0.96,armor:14:armor:0.023:0.322
+R	druid/restoration	34	14122	12743	gear	1.282	sta:2:sta:0.48:0.96,armor:14:armor:0.023:0.322
+R	druid/restoration	34	14122	12744	gear	1.282	sta:2:sta:0.48:0.96,armor:14:armor:0.023:0.322
+R	druid/restoration	34	14122	12745	gear	2.922	int:2:int:0.56:1.12,sta:1:sta:0.48:0.48,sp:1:sp:1:1,armor:14:armor:0.023:0.322
+R	druid/restoration	34	14122	12756	gear	3.642	spArcane:4:spArcane:0.83:3.32,armor:14:armor:0.023:0.322
+R	druid/restoration	34	14122	12757	gear	0.322	armor:14:armor:0.023:0.322
+R	druid/restoration	34	14122	12758	gear	0.322	armor:14:armor:0.023:0.322
+R	druid/restoration	34	14122	12759	gear	0.322	armor:14:armor:0.023:0.322
+R	druid/restoration	34	14122	12761	gear	0.322	armor:14:armor:0.023:0.322
+R	druid/restoration	34	14340	0	gear	11.143999999999998	sta:19:sta:0.48:9.12,armor:88:armor:0.023:2.024
+R	druid/restoration	34	14673	0	gear	3.182	sta:5:sta:0.48:2.4,armor:34:armor:0.023:0.782
+R	druid/restoration	34	15945	0	oh	1.68	sta:2:sta:0.48:0.96,spi:2:spi:0.36:0.72
+R	druid/restoration	34	16711	0	gear	7.835000000000001	sta:9:sta:0.48:4.32,hit:0.3:spellHit:2.9:0.87,armor:115:armor:0.023:2.645
+R	druid/restoration	34	18726	0	gear	8.879	sta:15:sta:0.48:7.2,armor:73:armor:0.023:1.679
 R	druid/restoration	34	22397	0	ranged	0.0	
-R	druid/restoration	34	252507	0	gear	11.568	sta:10:sta:0.42:4.2,spDmg:6:sp:1:6,armor:76:armor:0.018:1.368
-R	druid/restoration	34	254111	0	gear	12.011999999999999	int:9:int:0.62:5.58,sta:13:sta:0.42:5.46,armor:54:armor:0.018:0.972
-R	druid/restoration	34	270033	0	gear	0.702	armor:39:armor:0.018:0.702
-R	druid/restoration	34	273892	0	gear	37.93599999999999	sta:20:sta:0.42:8.4,int:19:int:0.62:11.78,spi:16:spi:0.24:3.84,spDmg:11:sp:1:11,armor:162:armor:0.018:2.916
-R	druid/restoration	34	280082	0	mh	84.39	int:15:int:0.62:9.3,hit:1.5:spellHit:2.7:4.05,spi:21:spi:0.24:5.04,sp:66:sp:1:66
-R	druid/restoration	45	1315	0	gear	8.5	sta:10:sta:0.25:2.5,spi:15:spi:0.4:6
-R	druid/restoration	45	1808	0	gear	1.628	armor:74:armor:0.022:1.628
+R	druid/restoration	34	252507	0	gear	12.548	sta:10:sta:0.48:4.8,spDmg:6:sp:1:6,armor:76:armor:0.023:1.748
+R	druid/restoration	34	254111	0	gear	12.522000000000002	int:9:int:0.56:5.04,sta:13:sta:0.48:6.24,armor:54:armor:0.023:1.242
+R	druid/restoration	34	270033	0	gear	0.897	armor:39:armor:0.023:0.897
+R	druid/restoration	34	273892	0	gear	40.726	sta:20:sta:0.48:9.6,int:19:int:0.56:10.64,spi:16:spi:0.36:5.76,spDmg:11:sp:1:11,armor:162:armor:0.023:3.726
+R	druid/restoration	34	280082	0	mh	86.31	int:15:int:0.56:8.4,hit:1.5:spellHit:2.9:4.35,spi:21:spi:0.36:7.56,sp:66:sp:1:66
+R	druid/restoration	45	1315	0	gear	10.55	sta:10:sta:0.41:4.1,spi:15:spi:0.43:6.45
+R	druid/restoration	45	1808	0	gear	1.85	armor:74:armor:0.025:1.85
 R	druid/restoration	45	1990	0	mh	0.0	
-R	druid/restoration	45	1990	12718	mh	7.83	int:9:int:0.62:5.58,sta:9:sta:0.25:2.25
-R	druid/restoration	45	1990	12905	mh	36.57	int:11:int:0.62:6.82,sta:7:sta:0.25:1.75,sp:28:sp:1:28
+R	druid/restoration	45	1990	12718	mh	8.37	int:9:int:0.52:4.68,sta:9:sta:0.41:3.69
+R	druid/restoration	45	1990	12905	mh	36.59	int:11:int:0.52:5.72,sta:7:sta:0.41:2.87,sp:28:sp:1:28
 R	druid/restoration	45	2140	0	mh	0.0	
-R	druid/restoration	45	2140	12718	mh	0.87	int:1:int:0.62:0.62,sta:1:sta:0.25:0.25
-R	druid/restoration	45	2140	12917	mh	5.62	sp:5:sp:1:5,int:1:int:0.62:0.62
+R	druid/restoration	45	2140	12718	mh	0.9299999999999999	int:1:int:0.52:0.52,sta:1:sta:0.41:0.41
+R	druid/restoration	45	2140	12917	mh	5.52	sp:5:sp:1:5,int:1:int:0.52:0.52
 R	druid/restoration	45	2225	0	mh	0.0	
-R	druid/restoration	45	2614	0	gear	0.638	armor:29:armor:0.022:0.638
-R	druid/restoration	45	3158	0	gear	0.572	armor:26:armor:0.022:0.572
+R	druid/restoration	45	2614	0	gear	0.7250000000000001	armor:29:armor:0.025:0.725
+R	druid/restoration	45	3158	0	gear	0.65	armor:26:armor:0.025:0.65
 R	druid/restoration	45	3570	0	mh	0.0	
 R	druid/restoration	45	4023	0	mh	0.0	
 R	druid/restoration	45	4570	0	mh	0.0	
-R	druid/restoration	45	4570	12718	mh	2.61	int:3:int:0.62:1.86,sta:3:sta:0.25:0.75
-R	druid/restoration	45	4570	12719	mh	1.9500000000000002	spi:3:spi:0.4:1.2,sta:3:sta:0.25:0.75
-R	druid/restoration	45	4570	12720	mh	3.06	int:3:int:0.62:1.86,spi:3:spi:0.4:1.2
-R	druid/restoration	45	4570	12721	mh	0.75	sta:3:sta:0.25:0.75
-R	druid/restoration	45	4570	12722	mh	0.75	sta:3:sta:0.25:0.75
-R	druid/restoration	45	4570	12723	mh	1.8599999999999999	int:3:int:0.62:1.86
-R	druid/restoration	45	4570	12724	mh	1.8599999999999999	int:3:int:0.62:1.86
-R	druid/restoration	45	4570	12725	mh	1.2000000000000002	spi:3:spi:0.4:1.2
-R	druid/restoration	45	4570	12726	mh	1.2000000000000002	spi:3:spi:0.4:1.2
+R	druid/restoration	45	4570	12718	mh	2.79	int:3:int:0.52:1.56,sta:3:sta:0.41:1.23
+R	druid/restoration	45	4570	12719	mh	2.52	spi:3:spi:0.43:1.29,sta:3:sta:0.41:1.23
+R	druid/restoration	45	4570	12720	mh	2.85	int:3:int:0.52:1.56,spi:3:spi:0.43:1.29
+R	druid/restoration	45	4570	12721	mh	1.23	sta:3:sta:0.41:1.23
+R	druid/restoration	45	4570	12722	mh	1.23	sta:3:sta:0.41:1.23
+R	druid/restoration	45	4570	12723	mh	1.56	int:3:int:0.52:1.56
+R	druid/restoration	45	4570	12724	mh	1.56	int:3:int:0.52:1.56
+R	druid/restoration	45	4570	12725	mh	1.29	spi:3:spi:0.43:1.29
+R	druid/restoration	45	4570	12726	mh	1.29	spi:3:spi:0.43:1.29
 R	druid/restoration	45	4570	12727	mh	0.0	
 R	druid/restoration	45	4570	12728	mh	0.0	
-R	druid/restoration	45	4570	12729	mh	2.48	int:4:int:0.62:2.48
-R	druid/restoration	45	4570	12730	mh	1.6	spi:4:spi:0.4:1.6
-R	druid/restoration	45	4570	12731	mh	1.0	sta:4:sta:0.25:1
+R	druid/restoration	45	4570	12729	mh	2.08	int:4:int:0.52:2.08
+R	druid/restoration	45	4570	12730	mh	1.72	spi:4:spi:0.43:1.72
+R	druid/restoration	45	4570	12731	mh	1.64	sta:4:sta:0.41:1.64
 R	druid/restoration	45	4570	12732	mh	0.0	
 R	druid/restoration	45	4570	12733	mh	0.0	
 R	druid/restoration	45	4570	12736	mh	0.0	
-R	druid/restoration	45	4570	12740	mh	0.75	sta:3:sta:0.25:0.75
-R	druid/restoration	45	4570	12741	mh	0.75	sta:3:sta:0.25:0.75
-R	druid/restoration	45	4570	12742	mh	0.75	sta:3:sta:0.25:0.75
-R	druid/restoration	45	4570	12743	mh	0.75	sta:3:sta:0.25:0.75
-R	druid/restoration	45	4570	12744	mh	0.75	sta:3:sta:0.25:0.75
+R	druid/restoration	45	4570	12740	mh	1.23	sta:3:sta:0.41:1.23
+R	druid/restoration	45	4570	12741	mh	1.23	sta:3:sta:0.41:1.23
+R	druid/restoration	45	4570	12742	mh	1.23	sta:3:sta:0.41:1.23
+R	druid/restoration	45	4570	12743	mh	1.23	sta:3:sta:0.41:1.23
+R	druid/restoration	45	4570	12744	mh	1.23	sta:3:sta:0.41:1.23
 R	druid/restoration	45	4570	12759	mh	0.0	
-R	druid/restoration	45	4570	12918	mh	10.48	sp:8:sp:1:8,int:4:int:0.62:2.48
-R	druid/restoration	45	4570	12919	mh	7.48	spDmg:5:sp:1:5,int:4:int:0.62:2.48
+R	druid/restoration	45	4570	12918	mh	10.08	sp:8:sp:1:8,int:4:int:0.52:2.08
+R	druid/restoration	45	4570	12919	mh	7.08	spDmg:5:sp:1:5,int:4:int:0.52:2.08
 R	druid/restoration	45	5079	0	gear	0.0	
-R	druid/restoration	45	6540	0	gear	0.616	armor:28:armor:0.022:0.616
-R	druid/restoration	45	6540	12718	gear	3.226	int:3:int:0.62:1.86,sta:3:sta:0.25:0.75,armor:28:armor:0.022:0.616
-R	druid/restoration	45	6540	12719	gear	2.5660000000000003	spi:3:spi:0.4:1.2,sta:3:sta:0.25:0.75,armor:28:armor:0.022:0.616
-R	druid/restoration	45	6540	12720	gear	3.676	int:3:int:0.62:1.86,spi:3:spi:0.4:1.2,armor:28:armor:0.022:0.616
-R	druid/restoration	45	6540	12729	gear	3.716	int:5:int:0.62:3.1,armor:28:armor:0.022:0.616
-R	druid/restoration	45	6540	12730	gear	2.616	spi:5:spi:0.4:2,armor:28:armor:0.022:0.616
-R	druid/restoration	45	6540	12731	gear	1.866	sta:5:sta:0.25:1.25,armor:28:armor:0.022:0.616
-R	druid/restoration	45	6540	12734	gear	6.616	sp:6:sp:1:6,armor:28:armor:0.022:0.616
-R	druid/restoration	45	6540	12735	gear	4.616	spDmg:4:sp:1:4,armor:28:armor:0.022:0.616
-R	druid/restoration	45	6540	12740	gear	1.366	sta:3:sta:0.25:0.75,armor:28:armor:0.022:0.616
-R	druid/restoration	45	6540	12741	gear	1.366	sta:3:sta:0.25:0.75,armor:28:armor:0.022:0.616
-R	druid/restoration	45	6540	12742	gear	1.366	sta:3:sta:0.25:0.75,armor:28:armor:0.022:0.616
-R	druid/restoration	45	6540	12743	gear	1.366	sta:3:sta:0.25:0.75,armor:28:armor:0.022:0.616
-R	druid/restoration	45	6540	12744	gear	1.366	sta:3:sta:0.25:0.75,armor:28:armor:0.022:0.616
-R	druid/restoration	45	6540	12745	gear	5.596	int:4:int:0.62:2.48,sta:2:sta:0.25:0.5,sp:2:sp:1:2,armor:28:armor:0.022:0.616
-R	druid/restoration	45	6540	12756	gear	6.146	spArcane:7:spArcane:0.79:5.53,armor:28:armor:0.022:0.616
-R	druid/restoration	45	6540	12757	gear	0.616	armor:28:armor:0.022:0.616
-R	druid/restoration	45	6540	12758	gear	0.616	armor:28:armor:0.022:0.616
-R	druid/restoration	45	6540	12759	gear	0.616	armor:28:armor:0.022:0.616
-R	druid/restoration	45	6540	12761	gear	0.616	armor:28:armor:0.022:0.616
-R	druid/restoration	45	6557	0	gear	1.0779999999999998	armor:49:armor:0.022:1.078
-R	druid/restoration	45	6557	12718	gear	2.8179999999999996	int:2:int:0.62:1.24,sta:2:sta:0.25:0.5,armor:49:armor:0.022:1.078
-R	druid/restoration	45	6557	12719	gear	2.378	spi:2:spi:0.4:0.8,sta:2:sta:0.25:0.5,armor:49:armor:0.022:1.078
-R	druid/restoration	45	6557	12720	gear	3.118	int:2:int:0.62:1.24,spi:2:spi:0.4:0.8,armor:49:armor:0.022:1.078
-R	druid/restoration	45	6557	12721	gear	1.5779999999999998	sta:2:sta:0.25:0.5,armor:49:armor:0.022:1.078
-R	druid/restoration	45	6557	12722	gear	1.5779999999999998	sta:2:sta:0.25:0.5,armor:49:armor:0.022:1.078
-R	druid/restoration	45	6557	12723	gear	2.3179999999999996	int:2:int:0.62:1.24,armor:49:armor:0.022:1.078
-R	druid/restoration	45	6557	12724	gear	2.3179999999999996	int:2:int:0.62:1.24,armor:49:armor:0.022:1.078
-R	druid/restoration	45	6557	12725	gear	1.878	spi:2:spi:0.4:0.8,armor:49:armor:0.022:1.078
-R	druid/restoration	45	6557	12726	gear	1.878	spi:2:spi:0.4:0.8,armor:49:armor:0.022:1.078
-R	druid/restoration	45	6557	12727	gear	1.0779999999999998	armor:49:armor:0.022:1.078
-R	druid/restoration	45	6557	12728	gear	1.0779999999999998	armor:49:armor:0.022:1.078
-R	druid/restoration	45	6557	12729	gear	2.9379999999999997	int:3:int:0.62:1.86,armor:49:armor:0.022:1.078
-R	druid/restoration	45	6557	12730	gear	2.278	spi:3:spi:0.4:1.2,armor:49:armor:0.022:1.078
-R	druid/restoration	45	6557	12731	gear	1.8279999999999998	sta:3:sta:0.25:0.75,armor:49:armor:0.022:1.078
-R	druid/restoration	45	6557	12732	gear	1.0779999999999998	armor:49:armor:0.022:1.078
-R	druid/restoration	45	6557	12733	gear	1.0779999999999998	armor:49:armor:0.022:1.078
-R	druid/restoration	45	6557	12734	gear	5.077999999999999	sp:4:sp:1:4,armor:49:armor:0.022:1.078
-R	druid/restoration	45	6557	12735	gear	3.078	spDmg:2:sp:1:2,armor:49:armor:0.022:1.078
-R	druid/restoration	45	6557	12736	gear	1.0779999999999998	armor:49:armor:0.022:1.078
-R	druid/restoration	45	6557	12740	gear	1.5779999999999998	sta:2:sta:0.25:0.5,armor:49:armor:0.022:1.078
-R	druid/restoration	45	6557	12741	gear	1.5779999999999998	sta:2:sta:0.25:0.5,armor:49:armor:0.022:1.078
-R	druid/restoration	45	6557	12742	gear	1.5779999999999998	sta:2:sta:0.25:0.5,armor:49:armor:0.022:1.078
-R	druid/restoration	45	6557	12743	gear	1.5779999999999998	sta:2:sta:0.25:0.5,armor:49:armor:0.022:1.078
-R	druid/restoration	45	6557	12744	gear	1.5779999999999998	sta:2:sta:0.25:0.5,armor:49:armor:0.022:1.078
-R	druid/restoration	45	6557	12756	gear	4.2379999999999995	spArcane:4:spArcane:0.79:3.16,armor:49:armor:0.022:1.078
-R	druid/restoration	45	6557	12760	gear	1.146	spNature:4:spNature:0.017:0.068,armor:49:armor:0.022:1.078
-R	druid/restoration	45	7047	0	gear	2.572	spi:5:spi:0.4:2,armor:26:armor:0.022:0.572
-R	druid/restoration	45	8192	0	gear	3.142	sta:5:sta:0.25:1.25,armor:86:armor:0.022:1.892
-R	druid/restoration	45	9834	0	gear	1.6059999999999999	armor:73:armor:0.022:1.606
-R	druid/restoration	45	9834	12718	gear	6.826	int:6:int:0.62:3.72,sta:6:sta:0.25:1.5,armor:73:armor:0.022:1.606
-R	druid/restoration	45	9834	12719	gear	5.506	spi:6:spi:0.4:2.4,sta:6:sta:0.25:1.5,armor:73:armor:0.022:1.606
-R	druid/restoration	45	9834	12720	gear	7.726	int:6:int:0.62:3.72,spi:6:spi:0.4:2.4,armor:73:armor:0.022:1.606
-R	druid/restoration	45	9834	12721	gear	3.106	sta:6:sta:0.25:1.5,armor:73:armor:0.022:1.606
-R	druid/restoration	45	9834	12722	gear	3.106	sta:6:sta:0.25:1.5,armor:73:armor:0.022:1.606
-R	druid/restoration	45	9834	12723	gear	5.326	int:6:int:0.62:3.72,armor:73:armor:0.022:1.606
-R	druid/restoration	45	9834	12724	gear	5.326	int:6:int:0.62:3.72,armor:73:armor:0.022:1.606
-R	druid/restoration	45	9834	12725	gear	4.006	spi:6:spi:0.4:2.4,armor:73:armor:0.022:1.606
-R	druid/restoration	45	9834	12726	gear	4.006	spi:6:spi:0.4:2.4,armor:73:armor:0.022:1.606
-R	druid/restoration	45	9834	12727	gear	1.6059999999999999	armor:73:armor:0.022:1.606
-R	druid/restoration	45	9834	12728	gear	1.6059999999999999	armor:73:armor:0.022:1.606
-R	druid/restoration	45	9834	12729	gear	7.186	int:9:int:0.62:5.58,armor:73:armor:0.022:1.606
-R	druid/restoration	45	9834	12730	gear	5.2059999999999995	spi:9:spi:0.4:3.6,armor:73:armor:0.022:1.606
-R	druid/restoration	45	9834	12731	gear	3.856	sta:9:sta:0.25:2.25,armor:73:armor:0.022:1.606
-R	druid/restoration	45	9834	12732	gear	1.6059999999999999	armor:73:armor:0.022:1.606
-R	druid/restoration	45	9834	12733	gear	1.6059999999999999	armor:73:armor:0.022:1.606
-R	druid/restoration	45	9834	12734	gear	12.606	sp:11:sp:1:11,armor:73:armor:0.022:1.606
-R	druid/restoration	45	9834	12735	gear	8.606	spDmg:7:sp:1:7,armor:73:armor:0.022:1.606
-R	druid/restoration	45	9834	12736	gear	1.6059999999999999	armor:73:armor:0.022:1.606
-R	druid/restoration	45	9834	12740	gear	3.106	sta:6:sta:0.25:1.5,armor:73:armor:0.022:1.606
-R	druid/restoration	45	9834	12741	gear	3.106	sta:6:sta:0.25:1.5,armor:73:armor:0.022:1.606
-R	druid/restoration	45	9834	12742	gear	3.106	sta:6:sta:0.25:1.5,armor:73:armor:0.022:1.606
-R	druid/restoration	45	9834	12743	gear	3.106	sta:6:sta:0.25:1.5,armor:73:armor:0.022:1.606
-R	druid/restoration	45	9834	12744	gear	3.106	sta:6:sta:0.25:1.5,armor:73:armor:0.022:1.606
-R	druid/restoration	45	9834	12745	gear	9.946	int:7:int:0.62:4.34,sta:4:sta:0.25:1,sp:3:sp:1:3,armor:73:armor:0.022:1.606
-R	druid/restoration	45	9834	12746	gear	10.546	int:7:int:0.62:4.34,spi:4:spi:0.4:1.6,sp:3:sp:1:3,armor:73:armor:0.022:1.606
-R	druid/restoration	45	9834	12747	gear	7.9559999999999995	spi:4:spi:0.4:1.6,sta:7:sta:0.25:1.75,sp:3:sp:1:3,armor:73:armor:0.022:1.606
-R	druid/restoration	45	9834	12748	gear	7.836	int:4:int:0.62:2.48,sta:7:sta:0.25:1.75,spDmg:2:sp:1:2,armor:73:armor:0.022:1.606
-R	druid/restoration	45	9834	12749	gear	9.546	int:7:int:0.62:4.34,spi:4:spi:0.4:1.6,spDmg:2:sp:1:2,armor:73:armor:0.022:1.606
-R	druid/restoration	45	9834	12750	gear	6.9559999999999995	spi:4:spi:0.4:1.6,sta:7:sta:0.25:1.75,spDmg:2:sp:1:2,armor:73:armor:0.022:1.606
-R	druid/restoration	45	9834	12751	gear	3.356	sta:7:sta:0.25:1.75,armor:73:armor:0.022:1.606
-R	druid/restoration	45	9834	12752	gear	3.356	sta:7:sta:0.25:1.75,armor:73:armor:0.022:1.606
-R	druid/restoration	45	9834	12753	gear	3.356	sta:7:sta:0.25:1.75,armor:73:armor:0.022:1.606
-R	druid/restoration	45	9834	12755	gear	6.356	sp:3:sp:1:3,sta:7:sta:0.25:1.75,armor:73:armor:0.022:1.606
-R	druid/restoration	45	9834	12756	gear	11.876	spArcane:13:spArcane:0.79:10.27,armor:73:armor:0.022:1.606
-R	druid/restoration	45	9834	12760	gear	1.827	spNature:13:spNature:0.017:0.221,armor:73:armor:0.022:1.606
-R	druid/restoration	45	11187	0	gear	0.088	armor:4:armor:0.022:0.088
+R	druid/restoration	45	6540	0	gear	0.7000000000000001	armor:28:armor:0.025:0.7
+R	druid/restoration	45	6540	12718	gear	3.49	int:3:int:0.52:1.56,sta:3:sta:0.41:1.23,armor:28:armor:0.025:0.7
+R	druid/restoration	45	6540	12719	gear	3.22	spi:3:spi:0.43:1.29,sta:3:sta:0.41:1.23,armor:28:armor:0.025:0.7
+R	druid/restoration	45	6540	12720	gear	3.5500000000000003	int:3:int:0.52:1.56,spi:3:spi:0.43:1.29,armor:28:armor:0.025:0.7
+R	druid/restoration	45	6540	12729	gear	3.3000000000000003	int:5:int:0.52:2.6,armor:28:armor:0.025:0.7
+R	druid/restoration	45	6540	12730	gear	2.85	spi:5:spi:0.43:2.15,armor:28:armor:0.025:0.7
+R	druid/restoration	45	6540	12731	gear	2.75	sta:5:sta:0.41:2.05,armor:28:armor:0.025:0.7
+R	druid/restoration	45	6540	12734	gear	6.7	sp:6:sp:1:6,armor:28:armor:0.025:0.7
+R	druid/restoration	45	6540	12735	gear	4.7	spDmg:4:sp:1:4,armor:28:armor:0.025:0.7
+R	druid/restoration	45	6540	12740	gear	1.9300000000000002	sta:3:sta:0.41:1.23,armor:28:armor:0.025:0.7
+R	druid/restoration	45	6540	12741	gear	1.9300000000000002	sta:3:sta:0.41:1.23,armor:28:armor:0.025:0.7
+R	druid/restoration	45	6540	12742	gear	1.9300000000000002	sta:3:sta:0.41:1.23,armor:28:armor:0.025:0.7
+R	druid/restoration	45	6540	12743	gear	1.9300000000000002	sta:3:sta:0.41:1.23,armor:28:armor:0.025:0.7
+R	druid/restoration	45	6540	12744	gear	1.9300000000000002	sta:3:sta:0.41:1.23,armor:28:armor:0.025:0.7
+R	druid/restoration	45	6540	12745	gear	5.6000000000000005	int:4:int:0.52:2.08,sta:2:sta:0.41:0.82,sp:2:sp:1:2,armor:28:armor:0.025:0.7
+R	druid/restoration	45	6540	12756	gear	6.37	spArcane:7:spArcane:0.81:5.67,armor:28:armor:0.025:0.7
+R	druid/restoration	45	6540	12757	gear	0.7000000000000001	armor:28:armor:0.025:0.7
+R	druid/restoration	45	6540	12758	gear	0.7000000000000001	armor:28:armor:0.025:0.7
+R	druid/restoration	45	6540	12759	gear	0.7000000000000001	armor:28:armor:0.025:0.7
+R	druid/restoration	45	6540	12761	gear	0.7000000000000001	armor:28:armor:0.025:0.7
+R	druid/restoration	45	6557	0	gear	1.225	armor:49:armor:0.025:1.225
+R	druid/restoration	45	6557	12718	gear	3.085	int:2:int:0.52:1.04,sta:2:sta:0.41:0.82,armor:49:armor:0.025:1.225
+R	druid/restoration	45	6557	12719	gear	2.9050000000000002	spi:2:spi:0.43:0.86,sta:2:sta:0.41:0.82,armor:49:armor:0.025:1.225
+R	druid/restoration	45	6557	12720	gear	3.125	int:2:int:0.52:1.04,spi:2:spi:0.43:0.86,armor:49:armor:0.025:1.225
+R	druid/restoration	45	6557	12721	gear	2.045	sta:2:sta:0.41:0.82,armor:49:armor:0.025:1.225
+R	druid/restoration	45	6557	12722	gear	2.045	sta:2:sta:0.41:0.82,armor:49:armor:0.025:1.225
+R	druid/restoration	45	6557	12723	gear	2.265	int:2:int:0.52:1.04,armor:49:armor:0.025:1.225
+R	druid/restoration	45	6557	12724	gear	2.265	int:2:int:0.52:1.04,armor:49:armor:0.025:1.225
+R	druid/restoration	45	6557	12725	gear	2.085	spi:2:spi:0.43:0.86,armor:49:armor:0.025:1.225
+R	druid/restoration	45	6557	12726	gear	2.085	spi:2:spi:0.43:0.86,armor:49:armor:0.025:1.225
+R	druid/restoration	45	6557	12727	gear	1.225	armor:49:armor:0.025:1.225
+R	druid/restoration	45	6557	12728	gear	1.225	armor:49:armor:0.025:1.225
+R	druid/restoration	45	6557	12729	gear	2.785	int:3:int:0.52:1.56,armor:49:armor:0.025:1.225
+R	druid/restoration	45	6557	12730	gear	2.515	spi:3:spi:0.43:1.29,armor:49:armor:0.025:1.225
+R	druid/restoration	45	6557	12731	gear	2.455	sta:3:sta:0.41:1.23,armor:49:armor:0.025:1.225
+R	druid/restoration	45	6557	12732	gear	1.225	armor:49:armor:0.025:1.225
+R	druid/restoration	45	6557	12733	gear	1.225	armor:49:armor:0.025:1.225
+R	druid/restoration	45	6557	12734	gear	5.225	sp:4:sp:1:4,armor:49:armor:0.025:1.225
+R	druid/restoration	45	6557	12735	gear	3.225	spDmg:2:sp:1:2,armor:49:armor:0.025:1.225
+R	druid/restoration	45	6557	12736	gear	1.225	armor:49:armor:0.025:1.225
+R	druid/restoration	45	6557	12740	gear	2.045	sta:2:sta:0.41:0.82,armor:49:armor:0.025:1.225
+R	druid/restoration	45	6557	12741	gear	2.045	sta:2:sta:0.41:0.82,armor:49:armor:0.025:1.225
+R	druid/restoration	45	6557	12742	gear	2.045	sta:2:sta:0.41:0.82,armor:49:armor:0.025:1.225
+R	druid/restoration	45	6557	12743	gear	2.045	sta:2:sta:0.41:0.82,armor:49:armor:0.025:1.225
+R	druid/restoration	45	6557	12744	gear	2.045	sta:2:sta:0.41:0.82,armor:49:armor:0.025:1.225
+R	druid/restoration	45	6557	12756	gear	4.465	spArcane:4:spArcane:0.81:3.24,armor:49:armor:0.025:1.225
+R	druid/restoration	45	6557	12760	gear	1.2850000000000001	spNature:4:spNature:0.015:0.06,armor:49:armor:0.025:1.225
+R	druid/restoration	45	7047	0	gear	2.8	spi:5:spi:0.43:2.15,armor:26:armor:0.025:0.65
+R	druid/restoration	45	8192	0	gear	4.199999999999999	sta:5:sta:0.41:2.05,armor:86:armor:0.025:2.15
+R	druid/restoration	45	9834	0	gear	1.8250000000000002	armor:73:armor:0.025:1.825
+R	druid/restoration	45	9834	12718	gear	7.405	int:6:int:0.52:3.12,sta:6:sta:0.41:2.46,armor:73:armor:0.025:1.825
+R	druid/restoration	45	9834	12719	gear	6.865	spi:6:spi:0.43:2.58,sta:6:sta:0.41:2.46,armor:73:armor:0.025:1.825
+R	druid/restoration	45	9834	12720	gear	7.525	int:6:int:0.52:3.12,spi:6:spi:0.43:2.58,armor:73:armor:0.025:1.825
+R	druid/restoration	45	9834	12721	gear	4.285	sta:6:sta:0.41:2.46,armor:73:armor:0.025:1.825
+R	druid/restoration	45	9834	12722	gear	4.285	sta:6:sta:0.41:2.46,armor:73:armor:0.025:1.825
+R	druid/restoration	45	9834	12723	gear	4.945	int:6:int:0.52:3.12,armor:73:armor:0.025:1.825
+R	druid/restoration	45	9834	12724	gear	4.945	int:6:int:0.52:3.12,armor:73:armor:0.025:1.825
+R	druid/restoration	45	9834	12725	gear	4.405	spi:6:spi:0.43:2.58,armor:73:armor:0.025:1.825
+R	druid/restoration	45	9834	12726	gear	4.405	spi:6:spi:0.43:2.58,armor:73:armor:0.025:1.825
+R	druid/restoration	45	9834	12727	gear	1.8250000000000002	armor:73:armor:0.025:1.825
+R	druid/restoration	45	9834	12728	gear	1.8250000000000002	armor:73:armor:0.025:1.825
+R	druid/restoration	45	9834	12729	gear	6.505	int:9:int:0.52:4.68,armor:73:armor:0.025:1.825
+R	druid/restoration	45	9834	12730	gear	5.695	spi:9:spi:0.43:3.87,armor:73:armor:0.025:1.825
+R	druid/restoration	45	9834	12731	gear	5.515000000000001	sta:9:sta:0.41:3.69,armor:73:armor:0.025:1.825
+R	druid/restoration	45	9834	12732	gear	1.8250000000000002	armor:73:armor:0.025:1.825
+R	druid/restoration	45	9834	12733	gear	1.8250000000000002	armor:73:armor:0.025:1.825
+R	druid/restoration	45	9834	12734	gear	12.825	sp:11:sp:1:11,armor:73:armor:0.025:1.825
+R	druid/restoration	45	9834	12735	gear	8.825	spDmg:7:sp:1:7,armor:73:armor:0.025:1.825
+R	druid/restoration	45	9834	12736	gear	1.8250000000000002	armor:73:armor:0.025:1.825
+R	druid/restoration	45	9834	12740	gear	4.285	sta:6:sta:0.41:2.46,armor:73:armor:0.025:1.825
+R	druid/restoration	45	9834	12741	gear	4.285	sta:6:sta:0.41:2.46,armor:73:armor:0.025:1.825
+R	druid/restoration	45	9834	12742	gear	4.285	sta:6:sta:0.41:2.46,armor:73:armor:0.025:1.825
+R	druid/restoration	45	9834	12743	gear	4.285	sta:6:sta:0.41:2.46,armor:73:armor:0.025:1.825
+R	druid/restoration	45	9834	12744	gear	4.285	sta:6:sta:0.41:2.46,armor:73:armor:0.025:1.825
+R	druid/restoration	45	9834	12745	gear	10.105	int:7:int:0.52:3.64,sta:4:sta:0.41:1.64,sp:3:sp:1:3,armor:73:armor:0.025:1.825
+R	druid/restoration	45	9834	12746	gear	10.184999999999999	int:7:int:0.52:3.64,spi:4:spi:0.43:1.72,sp:3:sp:1:3,armor:73:armor:0.025:1.825
+R	druid/restoration	45	9834	12747	gear	9.415	spi:4:spi:0.43:1.72,sta:7:sta:0.41:2.87,sp:3:sp:1:3,armor:73:armor:0.025:1.825
+R	druid/restoration	45	9834	12748	gear	8.774999999999999	int:4:int:0.52:2.08,sta:7:sta:0.41:2.87,spDmg:2:sp:1:2,armor:73:armor:0.025:1.825
+R	druid/restoration	45	9834	12749	gear	9.185	int:7:int:0.52:3.64,spi:4:spi:0.43:1.72,spDmg:2:sp:1:2,armor:73:armor:0.025:1.825
+R	druid/restoration	45	9834	12750	gear	8.415	spi:4:spi:0.43:1.72,sta:7:sta:0.41:2.87,spDmg:2:sp:1:2,armor:73:armor:0.025:1.825
+R	druid/restoration	45	9834	12751	gear	4.695	sta:7:sta:0.41:2.87,armor:73:armor:0.025:1.825
+R	druid/restoration	45	9834	12752	gear	4.695	sta:7:sta:0.41:2.87,armor:73:armor:0.025:1.825
+R	druid/restoration	45	9834	12753	gear	4.695	sta:7:sta:0.41:2.87,armor:73:armor:0.025:1.825
+R	druid/restoration	45	9834	12755	gear	7.694999999999999	sp:3:sp:1:3,sta:7:sta:0.41:2.87,armor:73:armor:0.025:1.825
+R	druid/restoration	45	9834	12756	gear	12.355	spArcane:13:spArcane:0.81:10.53,armor:73:armor:0.025:1.825
+R	druid/restoration	45	9834	12760	gear	2.02	spNature:13:spNature:0.015:0.195,armor:73:armor:0.025:1.825
+R	druid/restoration	45	11187	0	gear	0.1	armor:4:armor:0.025:0.1
 R	druid/restoration	45	11994	0	gear	0.0	
-R	druid/restoration	45	11994	12718	gear	2.61	int:3:int:0.62:1.86,sta:3:sta:0.25:0.75
-R	druid/restoration	45	11994	12719	gear	1.9500000000000002	spi:3:spi:0.4:1.2,sta:3:sta:0.25:0.75
-R	druid/restoration	45	11994	12720	gear	3.06	int:3:int:0.62:1.86,spi:3:spi:0.4:1.2
-R	druid/restoration	45	11994	12721	gear	0.75	sta:3:sta:0.25:0.75
-R	druid/restoration	45	11994	12722	gear	0.75	sta:3:sta:0.25:0.75
-R	druid/restoration	45	11994	12723	gear	1.8599999999999999	int:3:int:0.62:1.86
-R	druid/restoration	45	11994	12724	gear	1.8599999999999999	int:3:int:0.62:1.86
-R	druid/restoration	45	11994	12725	gear	1.2000000000000002	spi:3:spi:0.4:1.2
-R	druid/restoration	45	11994	12726	gear	1.2000000000000002	spi:3:spi:0.4:1.2
+R	druid/restoration	45	11994	12718	gear	2.79	int:3:int:0.52:1.56,sta:3:sta:0.41:1.23
+R	druid/restoration	45	11994	12719	gear	2.52	spi:3:spi:0.43:1.29,sta:3:sta:0.41:1.23
+R	druid/restoration	45	11994	12720	gear	2.85	int:3:int:0.52:1.56,spi:3:spi:0.43:1.29
+R	druid/restoration	45	11994	12721	gear	1.23	sta:3:sta:0.41:1.23
+R	druid/restoration	45	11994	12722	gear	1.23	sta:3:sta:0.41:1.23
+R	druid/restoration	45	11994	12723	gear	1.56	int:3:int:0.52:1.56
+R	druid/restoration	45	11994	12724	gear	1.56	int:3:int:0.52:1.56
+R	druid/restoration	45	11994	12725	gear	1.29	spi:3:spi:0.43:1.29
+R	druid/restoration	45	11994	12726	gear	1.29	spi:3:spi:0.43:1.29
 R	druid/restoration	45	11994	12727	gear	0.0	
 R	druid/restoration	45	11994	12728	gear	0.0	
-R	druid/restoration	45	11994	12729	gear	3.1	int:5:int:0.62:3.1
-R	druid/restoration	45	11994	12730	gear	2.0	spi:5:spi:0.4:2
-R	druid/restoration	45	11994	12731	gear	1.25	sta:5:sta:0.25:1.25
+R	druid/restoration	45	11994	12729	gear	2.6	int:5:int:0.52:2.6
+R	druid/restoration	45	11994	12730	gear	2.15	spi:5:spi:0.43:2.15
+R	druid/restoration	45	11994	12731	gear	2.05	sta:5:sta:0.41:2.05
 R	druid/restoration	45	11994	12732	gear	0.0	
 R	druid/restoration	45	11994	12733	gear	0.0	
 R	druid/restoration	45	11994	12737	gear	0.0	
-R	druid/restoration	45	11994	12738	gear	1.56	mp5:2:mp5:0.78:1.56
+R	druid/restoration	45	11994	12738	gear	1.4	mp5:2:mp5:0.7:1.4
 R	druid/restoration	45	11994	12739	gear	0.0	
-R	druid/restoration	45	11994	12740	gear	0.75	sta:3:sta:0.25:0.75
-R	druid/restoration	45	11994	12741	gear	0.75	sta:3:sta:0.25:0.75
-R	druid/restoration	45	11994	12742	gear	0.75	sta:3:sta:0.25:0.75
-R	druid/restoration	45	11994	12743	gear	0.75	sta:3:sta:0.25:0.75
-R	druid/restoration	45	11994	12744	gear	0.75	sta:3:sta:0.25:0.75
+R	druid/restoration	45	11994	12740	gear	1.23	sta:3:sta:0.41:1.23
+R	druid/restoration	45	11994	12741	gear	1.23	sta:3:sta:0.41:1.23
+R	druid/restoration	45	11994	12742	gear	1.23	sta:3:sta:0.41:1.23
+R	druid/restoration	45	11994	12743	gear	1.23	sta:3:sta:0.41:1.23
+R	druid/restoration	45	11994	12744	gear	1.23	sta:3:sta:0.41:1.23
 R	druid/restoration	45	13183	0	mh	0.0	
-R	druid/restoration	45	14122	0	gear	0.308	armor:14:armor:0.022:0.308
-R	druid/restoration	45	14122	12718	gear	2.048	int:2:int:0.62:1.24,sta:2:sta:0.25:0.5,armor:14:armor:0.022:0.308
-R	druid/restoration	45	14122	12719	gear	1.608	spi:2:spi:0.4:0.8,sta:2:sta:0.25:0.5,armor:14:armor:0.022:0.308
-R	druid/restoration	45	14122	12720	gear	2.348	int:2:int:0.62:1.24,spi:2:spi:0.4:0.8,armor:14:armor:0.022:0.308
-R	druid/restoration	45	14122	12729	gear	2.1679999999999997	int:3:int:0.62:1.86,armor:14:armor:0.022:0.308
-R	druid/restoration	45	14122	12730	gear	1.5080000000000002	spi:3:spi:0.4:1.2,armor:14:armor:0.022:0.308
-R	druid/restoration	45	14122	12731	gear	1.058	sta:3:sta:0.25:0.75,armor:14:armor:0.022:0.308
-R	druid/restoration	45	14122	12734	gear	4.308	sp:4:sp:1:4,armor:14:armor:0.022:0.308
-R	druid/restoration	45	14122	12735	gear	2.308	spDmg:2:sp:1:2,armor:14:armor:0.022:0.308
-R	druid/restoration	45	14122	12740	gear	0.808	sta:2:sta:0.25:0.5,armor:14:armor:0.022:0.308
-R	druid/restoration	45	14122	12741	gear	0.808	sta:2:sta:0.25:0.5,armor:14:armor:0.022:0.308
-R	druid/restoration	45	14122	12742	gear	0.808	sta:2:sta:0.25:0.5,armor:14:armor:0.022:0.308
-R	druid/restoration	45	14122	12743	gear	0.808	sta:2:sta:0.25:0.5,armor:14:armor:0.022:0.308
-R	druid/restoration	45	14122	12744	gear	0.808	sta:2:sta:0.25:0.5,armor:14:armor:0.022:0.308
-R	druid/restoration	45	14122	12745	gear	2.798	int:2:int:0.62:1.24,sta:1:sta:0.25:0.25,sp:1:sp:1:1,armor:14:armor:0.022:0.308
-R	druid/restoration	45	14122	12756	gear	3.468	spArcane:4:spArcane:0.79:3.16,armor:14:armor:0.022:0.308
-R	druid/restoration	45	14122	12757	gear	0.308	armor:14:armor:0.022:0.308
-R	druid/restoration	45	14122	12758	gear	0.308	armor:14:armor:0.022:0.308
-R	druid/restoration	45	14122	12759	gear	0.308	armor:14:armor:0.022:0.308
-R	druid/restoration	45	14122	12761	gear	0.308	armor:14:armor:0.022:0.308
-R	druid/restoration	45	14340	0	gear	6.686	sta:19:sta:0.25:4.75,armor:88:armor:0.022:1.936
-R	druid/restoration	45	14673	0	gear	1.998	sta:5:sta:0.25:1.25,armor:34:armor:0.022:0.748
-R	druid/restoration	45	15945	0	oh	1.3	sta:2:sta:0.25:0.5,spi:2:spi:0.4:0.8
-R	druid/restoration	45	16711	0	gear	5.65	sta:9:sta:0.25:2.25,hit:0.3:spellHit:2.9:0.87,armor:115:armor:0.022:2.53
-R	druid/restoration	45	18726	0	gear	5.356	sta:15:sta:0.25:3.75,armor:73:armor:0.022:1.606
+R	druid/restoration	45	14122	0	gear	0.35000000000000003	armor:14:armor:0.025:0.35
+R	druid/restoration	45	14122	12718	gear	2.21	int:2:int:0.52:1.04,sta:2:sta:0.41:0.82,armor:14:armor:0.025:0.35
+R	druid/restoration	45	14122	12719	gear	2.03	spi:2:spi:0.43:0.86,sta:2:sta:0.41:0.82,armor:14:armor:0.025:0.35
+R	druid/restoration	45	14122	12720	gear	2.25	int:2:int:0.52:1.04,spi:2:spi:0.43:0.86,armor:14:armor:0.025:0.35
+R	druid/restoration	45	14122	12729	gear	1.9100000000000001	int:3:int:0.52:1.56,armor:14:armor:0.025:0.35
+R	druid/restoration	45	14122	12730	gear	1.6400000000000001	spi:3:spi:0.43:1.29,armor:14:armor:0.025:0.35
+R	druid/restoration	45	14122	12731	gear	1.58	sta:3:sta:0.41:1.23,armor:14:armor:0.025:0.35
+R	druid/restoration	45	14122	12734	gear	4.35	sp:4:sp:1:4,armor:14:armor:0.025:0.35
+R	druid/restoration	45	14122	12735	gear	2.35	spDmg:2:sp:1:2,armor:14:armor:0.025:0.35
+R	druid/restoration	45	14122	12740	gear	1.17	sta:2:sta:0.41:0.82,armor:14:armor:0.025:0.35
+R	druid/restoration	45	14122	12741	gear	1.17	sta:2:sta:0.41:0.82,armor:14:armor:0.025:0.35
+R	druid/restoration	45	14122	12742	gear	1.17	sta:2:sta:0.41:0.82,armor:14:armor:0.025:0.35
+R	druid/restoration	45	14122	12743	gear	1.17	sta:2:sta:0.41:0.82,armor:14:armor:0.025:0.35
+R	druid/restoration	45	14122	12744	gear	1.17	sta:2:sta:0.41:0.82,armor:14:armor:0.025:0.35
+R	druid/restoration	45	14122	12745	gear	2.8000000000000003	int:2:int:0.52:1.04,sta:1:sta:0.41:0.41,sp:1:sp:1:1,armor:14:armor:0.025:0.35
+R	druid/restoration	45	14122	12756	gear	3.5900000000000003	spArcane:4:spArcane:0.81:3.24,armor:14:armor:0.025:0.35
+R	druid/restoration	45	14122	12757	gear	0.35000000000000003	armor:14:armor:0.025:0.35
+R	druid/restoration	45	14122	12758	gear	0.35000000000000003	armor:14:armor:0.025:0.35
+R	druid/restoration	45	14122	12759	gear	0.35000000000000003	armor:14:armor:0.025:0.35
+R	druid/restoration	45	14122	12761	gear	0.35000000000000003	armor:14:armor:0.025:0.35
+R	druid/restoration	45	14340	0	gear	9.989999999999998	sta:19:sta:0.41:7.79,armor:88:armor:0.025:2.2
+R	druid/restoration	45	14673	0	gear	2.9	sta:5:sta:0.41:2.05,armor:34:armor:0.025:0.85
+R	druid/restoration	45	15945	0	oh	1.68	sta:2:sta:0.41:0.82,spi:2:spi:0.43:0.86
+R	druid/restoration	45	16711	0	gear	7.525	sta:9:sta:0.41:3.69,hit:0.3:spellHit:3.2:0.96,armor:115:armor:0.025:2.875
+R	druid/restoration	45	18726	0	gear	7.975	sta:15:sta:0.41:6.15,armor:73:armor:0.025:1.825
 R	druid/restoration	45	22397	0	ranged	0.0	
-R	druid/restoration	45	252507	0	gear	10.172	sta:10:sta:0.25:2.5,spDmg:6:sp:1:6,armor:76:armor:0.022:1.672
-R	druid/restoration	45	254111	0	gear	10.018	int:9:int:0.62:5.58,sta:13:sta:0.25:3.25,armor:54:armor:0.022:1.188
-R	druid/restoration	45	270033	0	gear	0.858	armor:39:armor:0.022:0.858
-R	druid/restoration	45	273892	0	gear	37.744	sta:20:sta:0.25:5,int:19:int:0.62:11.78,spi:16:spi:0.4:6.4,spDmg:11:sp:1:11,armor:162:armor:0.022:3.564
-R	druid/restoration	45	280082	0	mh	88.05	int:15:int:0.62:9.3,hit:1.5:spellHit:2.9:4.35,spi:21:spi:0.4:8.4,sp:66:sp:1:66
-R	druid/restoration	55	1315	0	gear	10.65	sta:10:sta:0.39:3.9,spi:15:spi:0.45:6.75
-R	druid/restoration	55	1808	0	gear	1.554	armor:74:armor:0.021:1.554
+R	druid/restoration	45	252507	0	gear	12.0	sta:10:sta:0.41:4.1,spDmg:6:sp:1:6,armor:76:armor:0.025:1.9
+R	druid/restoration	45	254111	0	gear	11.36	int:9:int:0.52:4.68,sta:13:sta:0.41:5.33,armor:54:armor:0.025:1.35
+R	druid/restoration	45	270033	0	gear	0.9750000000000001	armor:39:armor:0.025:0.975
+R	druid/restoration	45	273892	0	gear	40.00999999999999	sta:20:sta:0.41:8.2,int:19:int:0.52:9.88,spi:16:spi:0.43:6.88,spDmg:11:sp:1:11,armor:162:armor:0.025:4.05
+R	druid/restoration	45	280082	0	mh	87.63	int:15:int:0.52:7.8,hit:1.5:spellHit:3.2:4.8,spi:21:spi:0.43:9.03,sp:66:sp:1:66
+R	druid/restoration	55	1315	0	gear	11.2	sta:10:sta:0.37:3.7,spi:15:spi:0.5:7.5
+R	druid/restoration	55	1808	0	gear	1.628	armor:74:armor:0.022:1.628
 R	druid/restoration	55	1990	0	mh	0.0	
-R	druid/restoration	55	1990	12718	mh	9.719999999999999	int:9:int:0.69:6.21,sta:9:sta:0.39:3.51
-R	druid/restoration	55	1990	12905	mh	38.32	int:11:int:0.69:7.59,sta:7:sta:0.39:2.73,sp:28:sp:1:28
+R	druid/restoration	55	1990	12718	mh	8.190000000000001	int:9:int:0.54:4.86,sta:9:sta:0.37:3.33
+R	druid/restoration	55	1990	12905	mh	36.53	int:11:int:0.54:5.94,sta:7:sta:0.37:2.59,sp:28:sp:1:28
 R	druid/restoration	55	2140	0	mh	0.0	
-R	druid/restoration	55	2140	12718	mh	1.08	int:1:int:0.69:0.69,sta:1:sta:0.39:0.39
-R	druid/restoration	55	2140	12917	mh	5.6899999999999995	sp:5:sp:1:5,int:1:int:0.69:0.69
+R	druid/restoration	55	2140	12718	mh	0.91	int:1:int:0.54:0.54,sta:1:sta:0.37:0.37
+R	druid/restoration	55	2140	12917	mh	5.54	sp:5:sp:1:5,int:1:int:0.54:0.54
 R	druid/restoration	55	2225	0	mh	0.0	
-R	druid/restoration	55	2614	0	gear	0.609	armor:29:armor:0.021:0.609
-R	druid/restoration	55	3158	0	gear	0.546	armor:26:armor:0.021:0.546
+R	druid/restoration	55	2614	0	gear	0.638	armor:29:armor:0.022:0.638
+R	druid/restoration	55	3158	0	gear	0.572	armor:26:armor:0.022:0.572
 R	druid/restoration	55	3570	0	mh	0.0	
 R	druid/restoration	55	4023	0	mh	0.0	
 R	druid/restoration	55	4570	0	mh	0.0	
-R	druid/restoration	55	4570	12718	mh	3.2399999999999998	int:3:int:0.69:2.07,sta:3:sta:0.39:1.17
-R	druid/restoration	55	4570	12719	mh	2.52	spi:3:spi:0.45:1.35,sta:3:sta:0.39:1.17
-R	druid/restoration	55	4570	12720	mh	3.42	int:3:int:0.69:2.07,spi:3:spi:0.45:1.35
-R	druid/restoration	55	4570	12721	mh	1.17	sta:3:sta:0.39:1.17
-R	druid/restoration	55	4570	12722	mh	1.17	sta:3:sta:0.39:1.17
-R	druid/restoration	55	4570	12723	mh	2.07	int:3:int:0.69:2.07
-R	druid/restoration	55	4570	12724	mh	2.07	int:3:int:0.69:2.07
-R	druid/restoration	55	4570	12725	mh	1.35	spi:3:spi:0.45:1.35
-R	druid/restoration	55	4570	12726	mh	1.35	spi:3:spi:0.45:1.35
+R	druid/restoration	55	4570	12718	mh	2.73	int:3:int:0.54:1.62,sta:3:sta:0.37:1.11
+R	druid/restoration	55	4570	12719	mh	2.61	spi:3:spi:0.5:1.5,sta:3:sta:0.37:1.11
+R	druid/restoration	55	4570	12720	mh	3.12	int:3:int:0.54:1.62,spi:3:spi:0.5:1.5
+R	druid/restoration	55	4570	12721	mh	1.1099999999999999	sta:3:sta:0.37:1.11
+R	druid/restoration	55	4570	12722	mh	1.1099999999999999	sta:3:sta:0.37:1.11
+R	druid/restoration	55	4570	12723	mh	1.62	int:3:int:0.54:1.62
+R	druid/restoration	55	4570	12724	mh	1.62	int:3:int:0.54:1.62
+R	druid/restoration	55	4570	12725	mh	1.5	spi:3:spi:0.5:1.5
+R	druid/restoration	55	4570	12726	mh	1.5	spi:3:spi:0.5:1.5
 R	druid/restoration	55	4570	12727	mh	0.0	
 R	druid/restoration	55	4570	12728	mh	0.0	
-R	druid/restoration	55	4570	12729	mh	2.76	int:4:int:0.69:2.76
-R	druid/restoration	55	4570	12730	mh	1.8	spi:4:spi:0.45:1.8
-R	druid/restoration	55	4570	12731	mh	1.56	sta:4:sta:0.39:1.56
+R	druid/restoration	55	4570	12729	mh	2.16	int:4:int:0.54:2.16
+R	druid/restoration	55	4570	12730	mh	2.0	spi:4:spi:0.5:2
+R	druid/restoration	55	4570	12731	mh	1.48	sta:4:sta:0.37:1.48
 R	druid/restoration	55	4570	12732	mh	0.0	
 R	druid/restoration	55	4570	12733	mh	0.0	
 R	druid/restoration	55	4570	12736	mh	0.0	
-R	druid/restoration	55	4570	12740	mh	1.17	sta:3:sta:0.39:1.17
-R	druid/restoration	55	4570	12741	mh	1.17	sta:3:sta:0.39:1.17
-R	druid/restoration	55	4570	12742	mh	1.17	sta:3:sta:0.39:1.17
-R	druid/restoration	55	4570	12743	mh	1.17	sta:3:sta:0.39:1.17
-R	druid/restoration	55	4570	12744	mh	1.17	sta:3:sta:0.39:1.17
+R	druid/restoration	55	4570	12740	mh	1.1099999999999999	sta:3:sta:0.37:1.11
+R	druid/restoration	55	4570	12741	mh	1.1099999999999999	sta:3:sta:0.37:1.11
+R	druid/restoration	55	4570	12742	mh	1.1099999999999999	sta:3:sta:0.37:1.11
+R	druid/restoration	55	4570	12743	mh	1.1099999999999999	sta:3:sta:0.37:1.11
+R	druid/restoration	55	4570	12744	mh	1.1099999999999999	sta:3:sta:0.37:1.11
 R	druid/restoration	55	4570	12759	mh	0.0	
-R	druid/restoration	55	4570	12918	mh	10.76	sp:8:sp:1:8,int:4:int:0.69:2.76
-R	druid/restoration	55	4570	12919	mh	7.76	spDmg:5:sp:1:5,int:4:int:0.69:2.76
+R	druid/restoration	55	4570	12918	mh	10.16	sp:8:sp:1:8,int:4:int:0.54:2.16
+R	druid/restoration	55	4570	12919	mh	7.16	spDmg:5:sp:1:5,int:4:int:0.54:2.16
 R	druid/restoration	55	5079	0	gear	0.0	
-R	druid/restoration	55	6540	0	gear	0.5880000000000001	armor:28:armor:0.021:0.588
-R	druid/restoration	55	6540	12718	gear	3.828	int:3:int:0.69:2.07,sta:3:sta:0.39:1.17,armor:28:armor:0.021:0.588
-R	druid/restoration	55	6540	12719	gear	3.108	spi:3:spi:0.45:1.35,sta:3:sta:0.39:1.17,armor:28:armor:0.021:0.588
-R	druid/restoration	55	6540	12720	gear	4.008	int:3:int:0.69:2.07,spi:3:spi:0.45:1.35,armor:28:armor:0.021:0.588
-R	druid/restoration	55	6540	12729	gear	4.038	int:5:int:0.69:3.45,armor:28:armor:0.021:0.588
-R	druid/restoration	55	6540	12730	gear	2.838	spi:5:spi:0.45:2.25,armor:28:armor:0.021:0.588
-R	druid/restoration	55	6540	12731	gear	2.5380000000000003	sta:5:sta:0.39:1.95,armor:28:armor:0.021:0.588
-R	druid/restoration	55	6540	12734	gear	6.588	sp:6:sp:1:6,armor:28:armor:0.021:0.588
-R	druid/restoration	55	6540	12735	gear	4.588	spDmg:4:sp:1:4,armor:28:armor:0.021:0.588
-R	druid/restoration	55	6540	12740	gear	1.758	sta:3:sta:0.39:1.17,armor:28:armor:0.021:0.588
-R	druid/restoration	55	6540	12741	gear	1.758	sta:3:sta:0.39:1.17,armor:28:armor:0.021:0.588
-R	druid/restoration	55	6540	12742	gear	1.758	sta:3:sta:0.39:1.17,armor:28:armor:0.021:0.588
-R	druid/restoration	55	6540	12743	gear	1.758	sta:3:sta:0.39:1.17,armor:28:armor:0.021:0.588
-R	druid/restoration	55	6540	12744	gear	1.758	sta:3:sta:0.39:1.17,armor:28:armor:0.021:0.588
-R	druid/restoration	55	6540	12745	gear	6.128	int:4:int:0.69:2.76,sta:2:sta:0.39:0.78,sp:2:sp:1:2,armor:28:armor:0.021:0.588
-R	druid/restoration	55	6540	12756	gear	6.468	spArcane:7:spArcane:0.84:5.88,armor:28:armor:0.021:0.588
-R	druid/restoration	55	6540	12757	gear	0.5880000000000001	armor:28:armor:0.021:0.588
-R	druid/restoration	55	6540	12758	gear	0.5880000000000001	armor:28:armor:0.021:0.588
-R	druid/restoration	55	6540	12759	gear	0.5880000000000001	armor:28:armor:0.021:0.588
-R	druid/restoration	55	6540	12761	gear	0.5880000000000001	armor:28:armor:0.021:0.588
-R	druid/restoration	55	6557	0	gear	1.0290000000000001	armor:49:armor:0.021:1.029
-R	druid/restoration	55	6557	12718	gear	3.189	int:2:int:0.69:1.38,sta:2:sta:0.39:0.78,armor:49:armor:0.021:1.029
-R	druid/restoration	55	6557	12719	gear	2.7090000000000005	spi:2:spi:0.45:0.9,sta:2:sta:0.39:0.78,armor:49:armor:0.021:1.029
-R	druid/restoration	55	6557	12720	gear	3.309	int:2:int:0.69:1.38,spi:2:spi:0.45:0.9,armor:49:armor:0.021:1.029
-R	druid/restoration	55	6557	12721	gear	1.8090000000000002	sta:2:sta:0.39:0.78,armor:49:armor:0.021:1.029
-R	druid/restoration	55	6557	12722	gear	1.8090000000000002	sta:2:sta:0.39:0.78,armor:49:armor:0.021:1.029
-R	druid/restoration	55	6557	12723	gear	2.409	int:2:int:0.69:1.38,armor:49:armor:0.021:1.029
-R	druid/restoration	55	6557	12724	gear	2.409	int:2:int:0.69:1.38,armor:49:armor:0.021:1.029
-R	druid/restoration	55	6557	12725	gear	1.9290000000000003	spi:2:spi:0.45:0.9,armor:49:armor:0.021:1.029
-R	druid/restoration	55	6557	12726	gear	1.9290000000000003	spi:2:spi:0.45:0.9,armor:49:armor:0.021:1.029
-R	druid/restoration	55	6557	12727	gear	1.0290000000000001	armor:49:armor:0.021:1.029
-R	druid/restoration	55	6557	12728	gear	1.0290000000000001	armor:49:armor:0.021:1.029
-R	druid/restoration	55	6557	12729	gear	3.099	int:3:int:0.69:2.07,armor:49:armor:0.021:1.029
-R	druid/restoration	55	6557	12730	gear	2.3790000000000004	spi:3:spi:0.45:1.35,armor:49:armor:0.021:1.029
-R	druid/restoration	55	6557	12731	gear	2.199	sta:3:sta:0.39:1.17,armor:49:armor:0.021:1.029
-R	druid/restoration	55	6557	12732	gear	1.0290000000000001	armor:49:armor:0.021:1.029
-R	druid/restoration	55	6557	12733	gear	1.0290000000000001	armor:49:armor:0.021:1.029
-R	druid/restoration	55	6557	12734	gear	5.029	sp:4:sp:1:4,armor:49:armor:0.021:1.029
-R	druid/restoration	55	6557	12735	gear	3.029	spDmg:2:sp:1:2,armor:49:armor:0.021:1.029
-R	druid/restoration	55	6557	12736	gear	1.0290000000000001	armor:49:armor:0.021:1.029
-R	druid/restoration	55	6557	12740	gear	1.8090000000000002	sta:2:sta:0.39:0.78,armor:49:armor:0.021:1.029
-R	druid/restoration	55	6557	12741	gear	1.8090000000000002	sta:2:sta:0.39:0.78,armor:49:armor:0.021:1.029
-R	druid/restoration	55	6557	12742	gear	1.8090000000000002	sta:2:sta:0.39:0.78,armor:49:armor:0.021:1.029
-R	druid/restoration	55	6557	12743	gear	1.8090000000000002	sta:2:sta:0.39:0.78,armor:49:armor:0.021:1.029
-R	druid/restoration	55	6557	12744	gear	1.8090000000000002	sta:2:sta:0.39:0.78,armor:49:armor:0.021:1.029
-R	druid/restoration	55	6557	12756	gear	4.389	spArcane:4:spArcane:0.84:3.36,armor:49:armor:0.021:1.029
-R	druid/restoration	55	6557	12760	gear	1.229	spNature:4:spNature:0.05:0.2,armor:49:armor:0.021:1.029
-R	druid/restoration	55	7047	0	gear	2.7960000000000003	spi:5:spi:0.45:2.25,armor:26:armor:0.021:0.546
-R	druid/restoration	55	8192	0	gear	3.7560000000000002	sta:5:sta:0.39:1.95,armor:86:armor:0.021:1.806
-R	druid/restoration	55	9834	0	gear	1.5330000000000001	armor:73:armor:0.021:1.533
-R	druid/restoration	55	9834	12718	gear	8.013	int:6:int:0.69:4.14,sta:6:sta:0.39:2.34,armor:73:armor:0.021:1.533
-R	druid/restoration	55	9834	12719	gear	6.573	spi:6:spi:0.45:2.7,sta:6:sta:0.39:2.34,armor:73:armor:0.021:1.533
-R	druid/restoration	55	9834	12720	gear	8.373	int:6:int:0.69:4.14,spi:6:spi:0.45:2.7,armor:73:armor:0.021:1.533
-R	druid/restoration	55	9834	12721	gear	3.873	sta:6:sta:0.39:2.34,armor:73:armor:0.021:1.533
-R	druid/restoration	55	9834	12722	gear	3.873	sta:6:sta:0.39:2.34,armor:73:armor:0.021:1.533
-R	druid/restoration	55	9834	12723	gear	5.673	int:6:int:0.69:4.14,armor:73:armor:0.021:1.533
-R	druid/restoration	55	9834	12724	gear	5.673	int:6:int:0.69:4.14,armor:73:armor:0.021:1.533
-R	druid/restoration	55	9834	12725	gear	4.2330000000000005	spi:6:spi:0.45:2.7,armor:73:armor:0.021:1.533
-R	druid/restoration	55	9834	12726	gear	4.2330000000000005	spi:6:spi:0.45:2.7,armor:73:armor:0.021:1.533
-R	druid/restoration	55	9834	12727	gear	1.5330000000000001	armor:73:armor:0.021:1.533
-R	druid/restoration	55	9834	12728	gear	1.5330000000000001	armor:73:armor:0.021:1.533
-R	druid/restoration	55	9834	12729	gear	7.742999999999999	int:9:int:0.69:6.21,armor:73:armor:0.021:1.533
-R	druid/restoration	55	9834	12730	gear	5.583	spi:9:spi:0.45:4.05,armor:73:armor:0.021:1.533
-R	druid/restoration	55	9834	12731	gear	5.043	sta:9:sta:0.39:3.51,armor:73:armor:0.021:1.533
-R	druid/restoration	55	9834	12732	gear	1.5330000000000001	armor:73:armor:0.021:1.533
-R	druid/restoration	55	9834	12733	gear	1.5330000000000001	armor:73:armor:0.021:1.533
-R	druid/restoration	55	9834	12734	gear	12.533	sp:11:sp:1:11,armor:73:armor:0.021:1.533
-R	druid/restoration	55	9834	12735	gear	8.533	spDmg:7:sp:1:7,armor:73:armor:0.021:1.533
-R	druid/restoration	55	9834	12736	gear	1.5330000000000001	armor:73:armor:0.021:1.533
-R	druid/restoration	55	9834	12740	gear	3.873	sta:6:sta:0.39:2.34,armor:73:armor:0.021:1.533
-R	druid/restoration	55	9834	12741	gear	3.873	sta:6:sta:0.39:2.34,armor:73:armor:0.021:1.533
-R	druid/restoration	55	9834	12742	gear	3.873	sta:6:sta:0.39:2.34,armor:73:armor:0.021:1.533
-R	druid/restoration	55	9834	12743	gear	3.873	sta:6:sta:0.39:2.34,armor:73:armor:0.021:1.533
-R	druid/restoration	55	9834	12744	gear	3.873	sta:6:sta:0.39:2.34,armor:73:armor:0.021:1.533
-R	druid/restoration	55	9834	12745	gear	10.923	int:7:int:0.69:4.83,sta:4:sta:0.39:1.56,sp:3:sp:1:3,armor:73:armor:0.021:1.533
-R	druid/restoration	55	9834	12746	gear	11.162999999999998	int:7:int:0.69:4.83,spi:4:spi:0.45:1.8,sp:3:sp:1:3,armor:73:armor:0.021:1.533
-R	druid/restoration	55	9834	12747	gear	9.063	spi:4:spi:0.45:1.8,sta:7:sta:0.39:2.73,sp:3:sp:1:3,armor:73:armor:0.021:1.533
-R	druid/restoration	55	9834	12748	gear	9.023	int:4:int:0.69:2.76,sta:7:sta:0.39:2.73,spDmg:2:sp:1:2,armor:73:armor:0.021:1.533
-R	druid/restoration	55	9834	12749	gear	10.162999999999998	int:7:int:0.69:4.83,spi:4:spi:0.45:1.8,spDmg:2:sp:1:2,armor:73:armor:0.021:1.533
-R	druid/restoration	55	9834	12750	gear	8.063	spi:4:spi:0.45:1.8,sta:7:sta:0.39:2.73,spDmg:2:sp:1:2,armor:73:armor:0.021:1.533
-R	druid/restoration	55	9834	12751	gear	4.263	sta:7:sta:0.39:2.73,armor:73:armor:0.021:1.533
-R	druid/restoration	55	9834	12752	gear	4.263	sta:7:sta:0.39:2.73,armor:73:armor:0.021:1.533
-R	druid/restoration	55	9834	12753	gear	4.263	sta:7:sta:0.39:2.73,armor:73:armor:0.021:1.533
-R	druid/restoration	55	9834	12755	gear	7.263000000000001	sp:3:sp:1:3,sta:7:sta:0.39:2.73,armor:73:armor:0.021:1.533
-R	druid/restoration	55	9834	12756	gear	12.453	spArcane:13:spArcane:0.84:10.92,armor:73:armor:0.021:1.533
-R	druid/restoration	55	9834	12760	gear	2.1830000000000003	spNature:13:spNature:0.05:0.65,armor:73:armor:0.021:1.533
-R	druid/restoration	55	11187	0	gear	0.084	armor:4:armor:0.021:0.084
+R	druid/restoration	55	6540	0	gear	0.616	armor:28:armor:0.022:0.616
+R	druid/restoration	55	6540	12718	gear	3.346	int:3:int:0.54:1.62,sta:3:sta:0.37:1.11,armor:28:armor:0.022:0.616
+R	druid/restoration	55	6540	12719	gear	3.226	spi:3:spi:0.5:1.5,sta:3:sta:0.37:1.11,armor:28:armor:0.022:0.616
+R	druid/restoration	55	6540	12720	gear	3.736	int:3:int:0.54:1.62,spi:3:spi:0.5:1.5,armor:28:armor:0.022:0.616
+R	druid/restoration	55	6540	12729	gear	3.3160000000000003	int:5:int:0.54:2.7,armor:28:armor:0.022:0.616
+R	druid/restoration	55	6540	12730	gear	3.116	spi:5:spi:0.5:2.5,armor:28:armor:0.022:0.616
+R	druid/restoration	55	6540	12731	gear	2.466	sta:5:sta:0.37:1.85,armor:28:armor:0.022:0.616
+R	druid/restoration	55	6540	12734	gear	6.616	sp:6:sp:1:6,armor:28:armor:0.022:0.616
+R	druid/restoration	55	6540	12735	gear	4.616	spDmg:4:sp:1:4,armor:28:armor:0.022:0.616
+R	druid/restoration	55	6540	12740	gear	1.726	sta:3:sta:0.37:1.11,armor:28:armor:0.022:0.616
+R	druid/restoration	55	6540	12741	gear	1.726	sta:3:sta:0.37:1.11,armor:28:armor:0.022:0.616
+R	druid/restoration	55	6540	12742	gear	1.726	sta:3:sta:0.37:1.11,armor:28:armor:0.022:0.616
+R	druid/restoration	55	6540	12743	gear	1.726	sta:3:sta:0.37:1.11,armor:28:armor:0.022:0.616
+R	druid/restoration	55	6540	12744	gear	1.726	sta:3:sta:0.37:1.11,armor:28:armor:0.022:0.616
+R	druid/restoration	55	6540	12745	gear	5.516	int:4:int:0.54:2.16,sta:2:sta:0.37:0.74,sp:2:sp:1:2,armor:28:armor:0.022:0.616
+R	druid/restoration	55	6540	12756	gear	6.7059999999999995	spArcane:7:spArcane:0.87:6.09,armor:28:armor:0.022:0.616
+R	druid/restoration	55	6540	12757	gear	0.616	armor:28:armor:0.022:0.616
+R	druid/restoration	55	6540	12758	gear	0.616	armor:28:armor:0.022:0.616
+R	druid/restoration	55	6540	12759	gear	0.616	armor:28:armor:0.022:0.616
+R	druid/restoration	55	6540	12761	gear	0.616	armor:28:armor:0.022:0.616
+R	druid/restoration	55	6557	0	gear	1.0779999999999998	armor:49:armor:0.022:1.078
+R	druid/restoration	55	6557	12718	gear	2.8979999999999997	int:2:int:0.54:1.08,sta:2:sta:0.37:0.74,armor:49:armor:0.022:1.078
+R	druid/restoration	55	6557	12719	gear	2.8179999999999996	spi:2:spi:0.5:1,sta:2:sta:0.37:0.74,armor:49:armor:0.022:1.078
+R	druid/restoration	55	6557	12720	gear	3.158	int:2:int:0.54:1.08,spi:2:spi:0.5:1,armor:49:armor:0.022:1.078
+R	druid/restoration	55	6557	12721	gear	1.8179999999999998	sta:2:sta:0.37:0.74,armor:49:armor:0.022:1.078
+R	druid/restoration	55	6557	12722	gear	1.8179999999999998	sta:2:sta:0.37:0.74,armor:49:armor:0.022:1.078
+R	druid/restoration	55	6557	12723	gear	2.158	int:2:int:0.54:1.08,armor:49:armor:0.022:1.078
+R	druid/restoration	55	6557	12724	gear	2.158	int:2:int:0.54:1.08,armor:49:armor:0.022:1.078
+R	druid/restoration	55	6557	12725	gear	2.078	spi:2:spi:0.5:1,armor:49:armor:0.022:1.078
+R	druid/restoration	55	6557	12726	gear	2.078	spi:2:spi:0.5:1,armor:49:armor:0.022:1.078
+R	druid/restoration	55	6557	12727	gear	1.0779999999999998	armor:49:armor:0.022:1.078
+R	druid/restoration	55	6557	12728	gear	1.0779999999999998	armor:49:armor:0.022:1.078
+R	druid/restoration	55	6557	12729	gear	2.698	int:3:int:0.54:1.62,armor:49:armor:0.022:1.078
+R	druid/restoration	55	6557	12730	gear	2.578	spi:3:spi:0.5:1.5,armor:49:armor:0.022:1.078
+R	druid/restoration	55	6557	12731	gear	2.1879999999999997	sta:3:sta:0.37:1.11,armor:49:armor:0.022:1.078
+R	druid/restoration	55	6557	12732	gear	1.0779999999999998	armor:49:armor:0.022:1.078
+R	druid/restoration	55	6557	12733	gear	1.0779999999999998	armor:49:armor:0.022:1.078
+R	druid/restoration	55	6557	12734	gear	5.077999999999999	sp:4:sp:1:4,armor:49:armor:0.022:1.078
+R	druid/restoration	55	6557	12735	gear	3.078	spDmg:2:sp:1:2,armor:49:armor:0.022:1.078
+R	druid/restoration	55	6557	12736	gear	1.0779999999999998	armor:49:armor:0.022:1.078
+R	druid/restoration	55	6557	12740	gear	1.8179999999999998	sta:2:sta:0.37:0.74,armor:49:armor:0.022:1.078
+R	druid/restoration	55	6557	12741	gear	1.8179999999999998	sta:2:sta:0.37:0.74,armor:49:armor:0.022:1.078
+R	druid/restoration	55	6557	12742	gear	1.8179999999999998	sta:2:sta:0.37:0.74,armor:49:armor:0.022:1.078
+R	druid/restoration	55	6557	12743	gear	1.8179999999999998	sta:2:sta:0.37:0.74,armor:49:armor:0.022:1.078
+R	druid/restoration	55	6557	12744	gear	1.8179999999999998	sta:2:sta:0.37:0.74,armor:49:armor:0.022:1.078
+R	druid/restoration	55	6557	12756	gear	4.558	spArcane:4:spArcane:0.87:3.48,armor:49:armor:0.022:1.078
+R	druid/restoration	55	6557	12760	gear	1.2499999999999998	spNature:4:spNature:0.043:0.172,armor:49:armor:0.022:1.078
+R	druid/restoration	55	7047	0	gear	3.072	spi:5:spi:0.5:2.5,armor:26:armor:0.022:0.572
+R	druid/restoration	55	8192	0	gear	3.742	sta:5:sta:0.37:1.85,armor:86:armor:0.022:1.892
+R	druid/restoration	55	9834	0	gear	1.6059999999999999	armor:73:armor:0.022:1.606
+R	druid/restoration	55	9834	12718	gear	7.066	int:6:int:0.54:3.24,sta:6:sta:0.37:2.22,armor:73:armor:0.022:1.606
+R	druid/restoration	55	9834	12719	gear	6.826	spi:6:spi:0.5:3,sta:6:sta:0.37:2.22,armor:73:armor:0.022:1.606
+R	druid/restoration	55	9834	12720	gear	7.846	int:6:int:0.54:3.24,spi:6:spi:0.5:3,armor:73:armor:0.022:1.606
+R	druid/restoration	55	9834	12721	gear	3.8259999999999996	sta:6:sta:0.37:2.22,armor:73:armor:0.022:1.606
+R	druid/restoration	55	9834	12722	gear	3.8259999999999996	sta:6:sta:0.37:2.22,armor:73:armor:0.022:1.606
+R	druid/restoration	55	9834	12723	gear	4.846	int:6:int:0.54:3.24,armor:73:armor:0.022:1.606
+R	druid/restoration	55	9834	12724	gear	4.846	int:6:int:0.54:3.24,armor:73:armor:0.022:1.606
+R	druid/restoration	55	9834	12725	gear	4.606	spi:6:spi:0.5:3,armor:73:armor:0.022:1.606
+R	druid/restoration	55	9834	12726	gear	4.606	spi:6:spi:0.5:3,armor:73:armor:0.022:1.606
+R	druid/restoration	55	9834	12727	gear	1.6059999999999999	armor:73:armor:0.022:1.606
+R	druid/restoration	55	9834	12728	gear	1.6059999999999999	armor:73:armor:0.022:1.606
+R	druid/restoration	55	9834	12729	gear	6.466	int:9:int:0.54:4.86,armor:73:armor:0.022:1.606
+R	druid/restoration	55	9834	12730	gear	6.106	spi:9:spi:0.5:4.5,armor:73:armor:0.022:1.606
+R	druid/restoration	55	9834	12731	gear	4.936	sta:9:sta:0.37:3.33,armor:73:armor:0.022:1.606
+R	druid/restoration	55	9834	12732	gear	1.6059999999999999	armor:73:armor:0.022:1.606
+R	druid/restoration	55	9834	12733	gear	1.6059999999999999	armor:73:armor:0.022:1.606
+R	druid/restoration	55	9834	12734	gear	12.606	sp:11:sp:1:11,armor:73:armor:0.022:1.606
+R	druid/restoration	55	9834	12735	gear	8.606	spDmg:7:sp:1:7,armor:73:armor:0.022:1.606
+R	druid/restoration	55	9834	12736	gear	1.6059999999999999	armor:73:armor:0.022:1.606
+R	druid/restoration	55	9834	12740	gear	3.8259999999999996	sta:6:sta:0.37:2.22,armor:73:armor:0.022:1.606
+R	druid/restoration	55	9834	12741	gear	3.8259999999999996	sta:6:sta:0.37:2.22,armor:73:armor:0.022:1.606
+R	druid/restoration	55	9834	12742	gear	3.8259999999999996	sta:6:sta:0.37:2.22,armor:73:armor:0.022:1.606
+R	druid/restoration	55	9834	12743	gear	3.8259999999999996	sta:6:sta:0.37:2.22,armor:73:armor:0.022:1.606
+R	druid/restoration	55	9834	12744	gear	3.8259999999999996	sta:6:sta:0.37:2.22,armor:73:armor:0.022:1.606
+R	druid/restoration	55	9834	12745	gear	9.866	int:7:int:0.54:3.78,sta:4:sta:0.37:1.48,sp:3:sp:1:3,armor:73:armor:0.022:1.606
+R	druid/restoration	55	9834	12746	gear	10.386000000000001	int:7:int:0.54:3.78,spi:4:spi:0.5:2,sp:3:sp:1:3,armor:73:armor:0.022:1.606
+R	druid/restoration	55	9834	12747	gear	9.196	spi:4:spi:0.5:2,sta:7:sta:0.37:2.59,sp:3:sp:1:3,armor:73:armor:0.022:1.606
+R	druid/restoration	55	9834	12748	gear	8.356	int:4:int:0.54:2.16,sta:7:sta:0.37:2.59,spDmg:2:sp:1:2,armor:73:armor:0.022:1.606
+R	druid/restoration	55	9834	12749	gear	9.386	int:7:int:0.54:3.78,spi:4:spi:0.5:2,spDmg:2:sp:1:2,armor:73:armor:0.022:1.606
+R	druid/restoration	55	9834	12750	gear	8.196	spi:4:spi:0.5:2,sta:7:sta:0.37:2.59,spDmg:2:sp:1:2,armor:73:armor:0.022:1.606
+R	druid/restoration	55	9834	12751	gear	4.196	sta:7:sta:0.37:2.59,armor:73:armor:0.022:1.606
+R	druid/restoration	55	9834	12752	gear	4.196	sta:7:sta:0.37:2.59,armor:73:armor:0.022:1.606
+R	druid/restoration	55	9834	12753	gear	4.196	sta:7:sta:0.37:2.59,armor:73:armor:0.022:1.606
+R	druid/restoration	55	9834	12755	gear	7.196	sp:3:sp:1:3,sta:7:sta:0.37:2.59,armor:73:armor:0.022:1.606
+R	druid/restoration	55	9834	12756	gear	12.916	spArcane:13:spArcane:0.87:11.31,armor:73:armor:0.022:1.606
+R	druid/restoration	55	9834	12760	gear	2.165	spNature:13:spNature:0.043:0.559,armor:73:armor:0.022:1.606
+R	druid/restoration	55	11187	0	gear	0.088	armor:4:armor:0.022:0.088
 R	druid/restoration	55	11994	0	gear	0.0	
-R	druid/restoration	55	11994	12718	gear	3.2399999999999998	int:3:int:0.69:2.07,sta:3:sta:0.39:1.17
-R	druid/restoration	55	11994	12719	gear	2.52	spi:3:spi:0.45:1.35,sta:3:sta:0.39:1.17
-R	druid/restoration	55	11994	12720	gear	3.42	int:3:int:0.69:2.07,spi:3:spi:0.45:1.35
-R	druid/restoration	55	11994	12721	gear	1.17	sta:3:sta:0.39:1.17
-R	druid/restoration	55	11994	12722	gear	1.17	sta:3:sta:0.39:1.17
-R	druid/restoration	55	11994	12723	gear	2.07	int:3:int:0.69:2.07
-R	druid/restoration	55	11994	12724	gear	2.07	int:3:int:0.69:2.07
-R	druid/restoration	55	11994	12725	gear	1.35	spi:3:spi:0.45:1.35
-R	druid/restoration	55	11994	12726	gear	1.35	spi:3:spi:0.45:1.35
+R	druid/restoration	55	11994	12718	gear	2.73	int:3:int:0.54:1.62,sta:3:sta:0.37:1.11
+R	druid/restoration	55	11994	12719	gear	2.61	spi:3:spi:0.5:1.5,sta:3:sta:0.37:1.11
+R	druid/restoration	55	11994	12720	gear	3.12	int:3:int:0.54:1.62,spi:3:spi:0.5:1.5
+R	druid/restoration	55	11994	12721	gear	1.1099999999999999	sta:3:sta:0.37:1.11
+R	druid/restoration	55	11994	12722	gear	1.1099999999999999	sta:3:sta:0.37:1.11
+R	druid/restoration	55	11994	12723	gear	1.62	int:3:int:0.54:1.62
+R	druid/restoration	55	11994	12724	gear	1.62	int:3:int:0.54:1.62
+R	druid/restoration	55	11994	12725	gear	1.5	spi:3:spi:0.5:1.5
+R	druid/restoration	55	11994	12726	gear	1.5	spi:3:spi:0.5:1.5
 R	druid/restoration	55	11994	12727	gear	0.0	
 R	druid/restoration	55	11994	12728	gear	0.0	
-R	druid/restoration	55	11994	12729	gear	3.4499999999999997	int:5:int:0.69:3.45
-R	druid/restoration	55	11994	12730	gear	2.25	spi:5:spi:0.45:2.25
-R	druid/restoration	55	11994	12731	gear	1.9500000000000002	sta:5:sta:0.39:1.95
+R	druid/restoration	55	11994	12729	gear	2.7	int:5:int:0.54:2.7
+R	druid/restoration	55	11994	12730	gear	2.5	spi:5:spi:0.5:2.5
+R	druid/restoration	55	11994	12731	gear	1.85	sta:5:sta:0.37:1.85
 R	druid/restoration	55	11994	12732	gear	0.0	
 R	druid/restoration	55	11994	12733	gear	0.0	
 R	druid/restoration	55	11994	12737	gear	0.0	
-R	druid/restoration	55	11994	12738	gear	1.78	mp5:2:mp5:0.89:1.78
+R	druid/restoration	55	11994	12738	gear	1.82	mp5:2:mp5:0.91:1.82
 R	druid/restoration	55	11994	12739	gear	0.0	
-R	druid/restoration	55	11994	12740	gear	1.17	sta:3:sta:0.39:1.17
-R	druid/restoration	55	11994	12741	gear	1.17	sta:3:sta:0.39:1.17
-R	druid/restoration	55	11994	12742	gear	1.17	sta:3:sta:0.39:1.17
-R	druid/restoration	55	11994	12743	gear	1.17	sta:3:sta:0.39:1.17
-R	druid/restoration	55	11994	12744	gear	1.17	sta:3:sta:0.39:1.17
+R	druid/restoration	55	11994	12740	gear	1.1099999999999999	sta:3:sta:0.37:1.11
+R	druid/restoration	55	11994	12741	gear	1.1099999999999999	sta:3:sta:0.37:1.11
+R	druid/restoration	55	11994	12742	gear	1.1099999999999999	sta:3:sta:0.37:1.11
+R	druid/restoration	55	11994	12743	gear	1.1099999999999999	sta:3:sta:0.37:1.11
+R	druid/restoration	55	11994	12744	gear	1.1099999999999999	sta:3:sta:0.37:1.11
 R	druid/restoration	55	13183	0	mh	0.0	
-R	druid/restoration	55	14122	0	gear	0.29400000000000004	armor:14:armor:0.021:0.294
-R	druid/restoration	55	14122	12718	gear	2.454	int:2:int:0.69:1.38,sta:2:sta:0.39:0.78,armor:14:armor:0.021:0.294
-R	druid/restoration	55	14122	12719	gear	1.9740000000000002	spi:2:spi:0.45:0.9,sta:2:sta:0.39:0.78,armor:14:armor:0.021:0.294
-R	druid/restoration	55	14122	12720	gear	2.574	int:2:int:0.69:1.38,spi:2:spi:0.45:0.9,armor:14:armor:0.021:0.294
-R	druid/restoration	55	14122	12729	gear	2.364	int:3:int:0.69:2.07,armor:14:armor:0.021:0.294
-R	druid/restoration	55	14122	12730	gear	1.6440000000000001	spi:3:spi:0.45:1.35,armor:14:armor:0.021:0.294
-R	druid/restoration	55	14122	12731	gear	1.464	sta:3:sta:0.39:1.17,armor:14:armor:0.021:0.294
-R	druid/restoration	55	14122	12734	gear	4.2940000000000005	sp:4:sp:1:4,armor:14:armor:0.021:0.294
-R	druid/restoration	55	14122	12735	gear	2.294	spDmg:2:sp:1:2,armor:14:armor:0.021:0.294
-R	druid/restoration	55	14122	12740	gear	1.074	sta:2:sta:0.39:0.78,armor:14:armor:0.021:0.294
-R	druid/restoration	55	14122	12741	gear	1.074	sta:2:sta:0.39:0.78,armor:14:armor:0.021:0.294
-R	druid/restoration	55	14122	12742	gear	1.074	sta:2:sta:0.39:0.78,armor:14:armor:0.021:0.294
-R	druid/restoration	55	14122	12743	gear	1.074	sta:2:sta:0.39:0.78,armor:14:armor:0.021:0.294
-R	druid/restoration	55	14122	12744	gear	1.074	sta:2:sta:0.39:0.78,armor:14:armor:0.021:0.294
-R	druid/restoration	55	14122	12745	gear	3.064	int:2:int:0.69:1.38,sta:1:sta:0.39:0.39,sp:1:sp:1:1,armor:14:armor:0.021:0.294
-R	druid/restoration	55	14122	12756	gear	3.654	spArcane:4:spArcane:0.84:3.36,armor:14:armor:0.021:0.294
-R	druid/restoration	55	14122	12757	gear	0.29400000000000004	armor:14:armor:0.021:0.294
-R	druid/restoration	55	14122	12758	gear	0.29400000000000004	armor:14:armor:0.021:0.294
-R	druid/restoration	55	14122	12759	gear	0.29400000000000004	armor:14:armor:0.021:0.294
-R	druid/restoration	55	14122	12761	gear	0.29400000000000004	armor:14:armor:0.021:0.294
-R	druid/restoration	55	14340	0	gear	9.258000000000001	sta:19:sta:0.39:7.41,armor:88:armor:0.021:1.848
-R	druid/restoration	55	14673	0	gear	2.664	sta:5:sta:0.39:1.95,armor:34:armor:0.021:0.714
-R	druid/restoration	55	15945	0	oh	1.6800000000000002	sta:2:sta:0.39:0.78,spi:2:spi:0.45:0.9
-R	druid/restoration	55	16711	0	gear	7.215	sta:9:sta:0.39:3.51,hit:0.3:spellHit:4.3:1.29,armor:115:armor:0.021:2.415
-R	druid/restoration	55	18726	0	gear	7.383000000000001	sta:15:sta:0.39:5.85,armor:73:armor:0.021:1.533
+R	druid/restoration	55	14122	0	gear	0.308	armor:14:armor:0.022:0.308
+R	druid/restoration	55	14122	12718	gear	2.128	int:2:int:0.54:1.08,sta:2:sta:0.37:0.74,armor:14:armor:0.022:0.308
+R	druid/restoration	55	14122	12719	gear	2.048	spi:2:spi:0.5:1,sta:2:sta:0.37:0.74,armor:14:armor:0.022:0.308
+R	druid/restoration	55	14122	12720	gear	2.388	int:2:int:0.54:1.08,spi:2:spi:0.5:1,armor:14:armor:0.022:0.308
+R	druid/restoration	55	14122	12729	gear	1.9280000000000002	int:3:int:0.54:1.62,armor:14:armor:0.022:0.308
+R	druid/restoration	55	14122	12730	gear	1.808	spi:3:spi:0.5:1.5,armor:14:armor:0.022:0.308
+R	druid/restoration	55	14122	12731	gear	1.418	sta:3:sta:0.37:1.11,armor:14:armor:0.022:0.308
+R	druid/restoration	55	14122	12734	gear	4.308	sp:4:sp:1:4,armor:14:armor:0.022:0.308
+R	druid/restoration	55	14122	12735	gear	2.308	spDmg:2:sp:1:2,armor:14:armor:0.022:0.308
+R	druid/restoration	55	14122	12740	gear	1.048	sta:2:sta:0.37:0.74,armor:14:armor:0.022:0.308
+R	druid/restoration	55	14122	12741	gear	1.048	sta:2:sta:0.37:0.74,armor:14:armor:0.022:0.308
+R	druid/restoration	55	14122	12742	gear	1.048	sta:2:sta:0.37:0.74,armor:14:armor:0.022:0.308
+R	druid/restoration	55	14122	12743	gear	1.048	sta:2:sta:0.37:0.74,armor:14:armor:0.022:0.308
+R	druid/restoration	55	14122	12744	gear	1.048	sta:2:sta:0.37:0.74,armor:14:armor:0.022:0.308
+R	druid/restoration	55	14122	12745	gear	2.758	int:2:int:0.54:1.08,sta:1:sta:0.37:0.37,sp:1:sp:1:1,armor:14:armor:0.022:0.308
+R	druid/restoration	55	14122	12756	gear	3.788	spArcane:4:spArcane:0.87:3.48,armor:14:armor:0.022:0.308
+R	druid/restoration	55	14122	12757	gear	0.308	armor:14:armor:0.022:0.308
+R	druid/restoration	55	14122	12758	gear	0.308	armor:14:armor:0.022:0.308
+R	druid/restoration	55	14122	12759	gear	0.308	armor:14:armor:0.022:0.308
+R	druid/restoration	55	14122	12761	gear	0.308	armor:14:armor:0.022:0.308
+R	druid/restoration	55	14340	0	gear	8.966000000000001	sta:19:sta:0.37:7.03,armor:88:armor:0.022:1.936
+R	druid/restoration	55	14673	0	gear	2.598	sta:5:sta:0.37:1.85,armor:34:armor:0.022:0.748
+R	druid/restoration	55	15945	0	oh	1.74	sta:2:sta:0.37:0.74,spi:2:spi:0.5:1
+R	druid/restoration	55	16711	0	gear	7.209999999999999	sta:9:sta:0.37:3.33,hit:0.3:spellHit:4.5:1.35,armor:115:armor:0.022:2.53
+R	druid/restoration	55	18726	0	gear	7.156	sta:15:sta:0.37:5.55,armor:73:armor:0.022:1.606
 R	druid/restoration	55	22397	0	ranged	0.0	
-R	druid/restoration	55	252507	0	gear	11.496	sta:10:sta:0.39:3.9,spDmg:6:sp:1:6,armor:76:armor:0.021:1.596
-R	druid/restoration	55	254111	0	gear	12.414	int:9:int:0.69:6.21,sta:13:sta:0.39:5.07,armor:54:armor:0.021:1.134
-R	druid/restoration	55	270033	0	gear	0.8190000000000001	armor:39:armor:0.021:0.819
-R	druid/restoration	55	273892	0	gear	42.512	sta:20:sta:0.39:7.8,int:19:int:0.69:13.11,spi:16:spi:0.45:7.2,spDmg:11:sp:1:11,armor:162:armor:0.021:3.402
-R	druid/restoration	55	280082	0	mh	92.25	int:15:int:0.69:10.35,hit:1.5:spellHit:4.3:6.45,spi:21:spi:0.45:9.45,sp:66:sp:1:66
-R	druid/restoration	60	1315	0	gear	10.85	sta:10:sta:0.38:3.8,spi:15:spi:0.47:7.05
-R	druid/restoration	60	1808	0	gear	1.554	armor:74:armor:0.021:1.554
+R	druid/restoration	55	252507	0	gear	11.372	sta:10:sta:0.37:3.7,spDmg:6:sp:1:6,armor:76:armor:0.022:1.672
+R	druid/restoration	55	254111	0	gear	10.858	int:9:int:0.54:4.86,sta:13:sta:0.37:4.81,armor:54:armor:0.022:1.188
+R	druid/restoration	55	270033	0	gear	0.858	armor:39:armor:0.022:0.858
+R	druid/restoration	55	273892	0	gear	40.224000000000004	sta:20:sta:0.37:7.4,int:19:int:0.54:10.26,spi:16:spi:0.5:8,spDmg:11:sp:1:11,armor:162:armor:0.022:3.564
+R	druid/restoration	55	280082	0	mh	91.35	int:15:int:0.54:8.1,hit:1.5:spellHit:4.5:6.75,spi:21:spi:0.5:10.5,sp:66:sp:1:66
+R	druid/restoration	60	1315	0	gear	12.700000000000001	sta:10:sta:0.34:3.4,spi:15:spi:0.62:9.3
+R	druid/restoration	60	1808	0	gear	1.406	armor:74:armor:0.019:1.406
 R	druid/restoration	60	1990	0	mh	0.0	
-R	druid/restoration	60	1990	12718	mh	10.26	int:9:int:0.76:6.84,sta:9:sta:0.38:3.42
-R	druid/restoration	60	1990	12905	mh	39.019999999999996	int:11:int:0.76:8.36,sta:7:sta:0.38:2.66,sp:28:sp:1:28
+R	druid/restoration	60	1990	12718	mh	8.01	int:9:int:0.55:4.95,sta:9:sta:0.34:3.06
+R	druid/restoration	60	1990	12905	mh	36.43	int:11:int:0.55:6.05,sta:7:sta:0.34:2.38,sp:28:sp:1:28
 R	druid/restoration	60	2140	0	mh	0.0	
-R	druid/restoration	60	2140	12718	mh	1.1400000000000001	int:1:int:0.76:0.76,sta:1:sta:0.38:0.38
-R	druid/restoration	60	2140	12917	mh	5.76	sp:5:sp:1:5,int:1:int:0.76:0.76
+R	druid/restoration	60	2140	12718	mh	0.8900000000000001	int:1:int:0.55:0.55,sta:1:sta:0.34:0.34
+R	druid/restoration	60	2140	12917	mh	5.55	sp:5:sp:1:5,int:1:int:0.55:0.55
 R	druid/restoration	60	2225	0	mh	0.0	
-R	druid/restoration	60	2614	0	gear	0.609	armor:29:armor:0.021:0.609
-R	druid/restoration	60	3158	0	gear	0.546	armor:26:armor:0.021:0.546
+R	druid/restoration	60	2614	0	gear	0.5509999999999999	armor:29:armor:0.019:0.551
+R	druid/restoration	60	3158	0	gear	0.494	armor:26:armor:0.019:0.494
 R	druid/restoration	60	3570	0	mh	0.0	
 R	druid/restoration	60	4023	0	mh	0.0	
 R	druid/restoration	60	4570	0	mh	0.0	
-R	druid/restoration	60	4570	12718	mh	3.4200000000000004	int:3:int:0.76:2.28,sta:3:sta:0.38:1.14
-R	druid/restoration	60	4570	12719	mh	2.55	spi:3:spi:0.47:1.41,sta:3:sta:0.38:1.14
-R	druid/restoration	60	4570	12720	mh	3.6900000000000004	int:3:int:0.76:2.28,spi:3:spi:0.47:1.41
-R	druid/restoration	60	4570	12721	mh	1.1400000000000001	sta:3:sta:0.38:1.14
-R	druid/restoration	60	4570	12722	mh	1.1400000000000001	sta:3:sta:0.38:1.14
-R	druid/restoration	60	4570	12723	mh	2.2800000000000002	int:3:int:0.76:2.28
-R	druid/restoration	60	4570	12724	mh	2.2800000000000002	int:3:int:0.76:2.28
-R	druid/restoration	60	4570	12725	mh	1.41	spi:3:spi:0.47:1.41
-R	druid/restoration	60	4570	12726	mh	1.41	spi:3:spi:0.47:1.41
+R	druid/restoration	60	4570	12718	mh	2.67	int:3:int:0.55:1.65,sta:3:sta:0.34:1.02
+R	druid/restoration	60	4570	12719	mh	2.88	spi:3:spi:0.62:1.86,sta:3:sta:0.34:1.02
+R	druid/restoration	60	4570	12720	mh	3.51	int:3:int:0.55:1.65,spi:3:spi:0.62:1.86
+R	druid/restoration	60	4570	12721	mh	1.02	sta:3:sta:0.34:1.02
+R	druid/restoration	60	4570	12722	mh	1.02	sta:3:sta:0.34:1.02
+R	druid/restoration	60	4570	12723	mh	1.6500000000000001	int:3:int:0.55:1.65
+R	druid/restoration	60	4570	12724	mh	1.6500000000000001	int:3:int:0.55:1.65
+R	druid/restoration	60	4570	12725	mh	1.8599999999999999	spi:3:spi:0.62:1.86
+R	druid/restoration	60	4570	12726	mh	1.8599999999999999	spi:3:spi:0.62:1.86
 R	druid/restoration	60	4570	12727	mh	0.0	
 R	druid/restoration	60	4570	12728	mh	0.0	
-R	druid/restoration	60	4570	12729	mh	3.04	int:4:int:0.76:3.04
-R	druid/restoration	60	4570	12730	mh	1.88	spi:4:spi:0.47:1.88
-R	druid/restoration	60	4570	12731	mh	1.52	sta:4:sta:0.38:1.52
+R	druid/restoration	60	4570	12729	mh	2.2	int:4:int:0.55:2.2
+R	druid/restoration	60	4570	12730	mh	2.48	spi:4:spi:0.62:2.48
+R	druid/restoration	60	4570	12731	mh	1.36	sta:4:sta:0.34:1.36
 R	druid/restoration	60	4570	12732	mh	0.0	
 R	druid/restoration	60	4570	12733	mh	0.0	
 R	druid/restoration	60	4570	12736	mh	0.0	
-R	druid/restoration	60	4570	12740	mh	1.1400000000000001	sta:3:sta:0.38:1.14
-R	druid/restoration	60	4570	12741	mh	1.1400000000000001	sta:3:sta:0.38:1.14
-R	druid/restoration	60	4570	12742	mh	1.1400000000000001	sta:3:sta:0.38:1.14
-R	druid/restoration	60	4570	12743	mh	1.1400000000000001	sta:3:sta:0.38:1.14
-R	druid/restoration	60	4570	12744	mh	1.1400000000000001	sta:3:sta:0.38:1.14
+R	druid/restoration	60	4570	12740	mh	1.02	sta:3:sta:0.34:1.02
+R	druid/restoration	60	4570	12741	mh	1.02	sta:3:sta:0.34:1.02
+R	druid/restoration	60	4570	12742	mh	1.02	sta:3:sta:0.34:1.02
+R	druid/restoration	60	4570	12743	mh	1.02	sta:3:sta:0.34:1.02
+R	druid/restoration	60	4570	12744	mh	1.02	sta:3:sta:0.34:1.02
 R	druid/restoration	60	4570	12759	mh	0.0	
-R	druid/restoration	60	4570	12918	mh	11.04	sp:8:sp:1:8,int:4:int:0.76:3.04
-R	druid/restoration	60	4570	12919	mh	8.04	spDmg:5:sp:1:5,int:4:int:0.76:3.04
+R	druid/restoration	60	4570	12918	mh	10.2	sp:8:sp:1:8,int:4:int:0.55:2.2
+R	druid/restoration	60	4570	12919	mh	7.2	spDmg:5:sp:1:5,int:4:int:0.55:2.2
 R	druid/restoration	60	5079	0	gear	0.0	
-R	druid/restoration	60	6540	0	gear	0.5880000000000001	armor:28:armor:0.021:0.588
-R	druid/restoration	60	6540	12718	gear	4.008000000000001	int:3:int:0.76:2.28,sta:3:sta:0.38:1.14,armor:28:armor:0.021:0.588
-R	druid/restoration	60	6540	12719	gear	3.138	spi:3:spi:0.47:1.41,sta:3:sta:0.38:1.14,armor:28:armor:0.021:0.588
-R	druid/restoration	60	6540	12720	gear	4.2780000000000005	int:3:int:0.76:2.28,spi:3:spi:0.47:1.41,armor:28:armor:0.021:0.588
-R	druid/restoration	60	6540	12729	gear	4.388	int:5:int:0.76:3.8,armor:28:armor:0.021:0.588
-R	druid/restoration	60	6540	12730	gear	2.9379999999999997	spi:5:spi:0.47:2.35,armor:28:armor:0.021:0.588
-R	druid/restoration	60	6540	12731	gear	2.488	sta:5:sta:0.38:1.9,armor:28:armor:0.021:0.588
-R	druid/restoration	60	6540	12734	gear	6.588	sp:6:sp:1:6,armor:28:armor:0.021:0.588
-R	druid/restoration	60	6540	12735	gear	4.588	spDmg:4:sp:1:4,armor:28:armor:0.021:0.588
-R	druid/restoration	60	6540	12740	gear	1.7280000000000002	sta:3:sta:0.38:1.14,armor:28:armor:0.021:0.588
-R	druid/restoration	60	6540	12741	gear	1.7280000000000002	sta:3:sta:0.38:1.14,armor:28:armor:0.021:0.588
-R	druid/restoration	60	6540	12742	gear	1.7280000000000002	sta:3:sta:0.38:1.14,armor:28:armor:0.021:0.588
-R	druid/restoration	60	6540	12743	gear	1.7280000000000002	sta:3:sta:0.38:1.14,armor:28:armor:0.021:0.588
-R	druid/restoration	60	6540	12744	gear	1.7280000000000002	sta:3:sta:0.38:1.14,armor:28:armor:0.021:0.588
-R	druid/restoration	60	6540	12745	gear	6.388	int:4:int:0.76:3.04,sta:2:sta:0.38:0.76,sp:2:sp:1:2,armor:28:armor:0.021:0.588
-R	druid/restoration	60	6540	12756	gear	5.2780000000000005	spArcane:7:spArcane:0.67:4.69,armor:28:armor:0.021:0.588
-R	druid/restoration	60	6540	12757	gear	0.5880000000000001	armor:28:armor:0.021:0.588
-R	druid/restoration	60	6540	12758	gear	0.5880000000000001	armor:28:armor:0.021:0.588
-R	druid/restoration	60	6540	12759	gear	0.5880000000000001	armor:28:armor:0.021:0.588
-R	druid/restoration	60	6540	12761	gear	0.5880000000000001	armor:28:armor:0.021:0.588
-R	druid/restoration	60	6557	0	gear	1.0290000000000001	armor:49:armor:0.021:1.029
-R	druid/restoration	60	6557	12718	gear	3.309	int:2:int:0.76:1.52,sta:2:sta:0.38:0.76,armor:49:armor:0.021:1.029
-R	druid/restoration	60	6557	12719	gear	2.729	spi:2:spi:0.47:0.94,sta:2:sta:0.38:0.76,armor:49:armor:0.021:1.029
-R	druid/restoration	60	6557	12720	gear	3.489	int:2:int:0.76:1.52,spi:2:spi:0.47:0.94,armor:49:armor:0.021:1.029
-R	druid/restoration	60	6557	12721	gear	1.7890000000000001	sta:2:sta:0.38:0.76,armor:49:armor:0.021:1.029
-R	druid/restoration	60	6557	12722	gear	1.7890000000000001	sta:2:sta:0.38:0.76,armor:49:armor:0.021:1.029
-R	druid/restoration	60	6557	12723	gear	2.5490000000000004	int:2:int:0.76:1.52,armor:49:armor:0.021:1.029
-R	druid/restoration	60	6557	12724	gear	2.5490000000000004	int:2:int:0.76:1.52,armor:49:armor:0.021:1.029
-R	druid/restoration	60	6557	12725	gear	1.969	spi:2:spi:0.47:0.94,armor:49:armor:0.021:1.029
-R	druid/restoration	60	6557	12726	gear	1.969	spi:2:spi:0.47:0.94,armor:49:armor:0.021:1.029
-R	druid/restoration	60	6557	12727	gear	1.0290000000000001	armor:49:armor:0.021:1.029
-R	druid/restoration	60	6557	12728	gear	1.0290000000000001	armor:49:armor:0.021:1.029
-R	druid/restoration	60	6557	12729	gear	3.309	int:3:int:0.76:2.28,armor:49:armor:0.021:1.029
-R	druid/restoration	60	6557	12730	gear	2.439	spi:3:spi:0.47:1.41,armor:49:armor:0.021:1.029
-R	druid/restoration	60	6557	12731	gear	2.1690000000000005	sta:3:sta:0.38:1.14,armor:49:armor:0.021:1.029
-R	druid/restoration	60	6557	12732	gear	1.0290000000000001	armor:49:armor:0.021:1.029
-R	druid/restoration	60	6557	12733	gear	1.0290000000000001	armor:49:armor:0.021:1.029
-R	druid/restoration	60	6557	12734	gear	5.029	sp:4:sp:1:4,armor:49:armor:0.021:1.029
-R	druid/restoration	60	6557	12735	gear	3.029	spDmg:2:sp:1:2,armor:49:armor:0.021:1.029
-R	druid/restoration	60	6557	12736	gear	1.0290000000000001	armor:49:armor:0.021:1.029
-R	druid/restoration	60	6557	12740	gear	1.7890000000000001	sta:2:sta:0.38:0.76,armor:49:armor:0.021:1.029
-R	druid/restoration	60	6557	12741	gear	1.7890000000000001	sta:2:sta:0.38:0.76,armor:49:armor:0.021:1.029
-R	druid/restoration	60	6557	12742	gear	1.7890000000000001	sta:2:sta:0.38:0.76,armor:49:armor:0.021:1.029
-R	druid/restoration	60	6557	12743	gear	1.7890000000000001	sta:2:sta:0.38:0.76,armor:49:armor:0.021:1.029
-R	druid/restoration	60	6557	12744	gear	1.7890000000000001	sta:2:sta:0.38:0.76,armor:49:armor:0.021:1.029
-R	druid/restoration	60	6557	12756	gear	3.7090000000000005	spArcane:4:spArcane:0.67:2.68,armor:49:armor:0.021:1.029
-R	druid/restoration	60	6557	12760	gear	1.989	spNature:4:spNature:0.24:0.96,armor:49:armor:0.021:1.029
-R	druid/restoration	60	7047	0	gear	2.896	spi:5:spi:0.47:2.35,armor:26:armor:0.021:0.546
-R	druid/restoration	60	8192	0	gear	3.706	sta:5:sta:0.38:1.9,armor:86:armor:0.021:1.806
-R	druid/restoration	60	9834	0	gear	1.5330000000000001	armor:73:armor:0.021:1.533
-R	druid/restoration	60	9834	12718	gear	8.373000000000001	int:6:int:0.76:4.56,sta:6:sta:0.38:2.28,armor:73:armor:0.021:1.533
-R	druid/restoration	60	9834	12719	gear	6.633	spi:6:spi:0.47:2.82,sta:6:sta:0.38:2.28,armor:73:armor:0.021:1.533
-R	druid/restoration	60	9834	12720	gear	8.913	int:6:int:0.76:4.56,spi:6:spi:0.47:2.82,armor:73:armor:0.021:1.533
-R	druid/restoration	60	9834	12721	gear	3.8130000000000006	sta:6:sta:0.38:2.28,armor:73:armor:0.021:1.533
-R	druid/restoration	60	9834	12722	gear	3.8130000000000006	sta:6:sta:0.38:2.28,armor:73:armor:0.021:1.533
-R	druid/restoration	60	9834	12723	gear	6.093000000000001	int:6:int:0.76:4.56,armor:73:armor:0.021:1.533
-R	druid/restoration	60	9834	12724	gear	6.093000000000001	int:6:int:0.76:4.56,armor:73:armor:0.021:1.533
-R	druid/restoration	60	9834	12725	gear	4.353	spi:6:spi:0.47:2.82,armor:73:armor:0.021:1.533
-R	druid/restoration	60	9834	12726	gear	4.353	spi:6:spi:0.47:2.82,armor:73:armor:0.021:1.533
-R	druid/restoration	60	9834	12727	gear	1.5330000000000001	armor:73:armor:0.021:1.533
-R	druid/restoration	60	9834	12728	gear	1.5330000000000001	armor:73:armor:0.021:1.533
-R	druid/restoration	60	9834	12729	gear	8.373	int:9:int:0.76:6.84,armor:73:armor:0.021:1.533
-R	druid/restoration	60	9834	12730	gear	5.763	spi:9:spi:0.47:4.23,armor:73:armor:0.021:1.533
-R	druid/restoration	60	9834	12731	gear	4.953	sta:9:sta:0.38:3.42,armor:73:armor:0.021:1.533
-R	druid/restoration	60	9834	12732	gear	1.5330000000000001	armor:73:armor:0.021:1.533
-R	druid/restoration	60	9834	12733	gear	1.5330000000000001	armor:73:armor:0.021:1.533
-R	druid/restoration	60	9834	12734	gear	12.533	sp:11:sp:1:11,armor:73:armor:0.021:1.533
-R	druid/restoration	60	9834	12735	gear	8.533	spDmg:7:sp:1:7,armor:73:armor:0.021:1.533
-R	druid/restoration	60	9834	12736	gear	1.5330000000000001	armor:73:armor:0.021:1.533
-R	druid/restoration	60	9834	12740	gear	3.8130000000000006	sta:6:sta:0.38:2.28,armor:73:armor:0.021:1.533
-R	druid/restoration	60	9834	12741	gear	3.8130000000000006	sta:6:sta:0.38:2.28,armor:73:armor:0.021:1.533
-R	druid/restoration	60	9834	12742	gear	3.8130000000000006	sta:6:sta:0.38:2.28,armor:73:armor:0.021:1.533
-R	druid/restoration	60	9834	12743	gear	3.8130000000000006	sta:6:sta:0.38:2.28,armor:73:armor:0.021:1.533
-R	druid/restoration	60	9834	12744	gear	3.8130000000000006	sta:6:sta:0.38:2.28,armor:73:armor:0.021:1.533
-R	druid/restoration	60	9834	12745	gear	11.373	int:7:int:0.76:5.32,sta:4:sta:0.38:1.52,sp:3:sp:1:3,armor:73:armor:0.021:1.533
-R	druid/restoration	60	9834	12746	gear	11.732999999999999	int:7:int:0.76:5.32,spi:4:spi:0.47:1.88,sp:3:sp:1:3,armor:73:armor:0.021:1.533
-R	druid/restoration	60	9834	12747	gear	9.073	spi:4:spi:0.47:1.88,sta:7:sta:0.38:2.66,sp:3:sp:1:3,armor:73:armor:0.021:1.533
-R	druid/restoration	60	9834	12748	gear	9.233	int:4:int:0.76:3.04,sta:7:sta:0.38:2.66,spDmg:2:sp:1:2,armor:73:armor:0.021:1.533
-R	druid/restoration	60	9834	12749	gear	10.732999999999999	int:7:int:0.76:5.32,spi:4:spi:0.47:1.88,spDmg:2:sp:1:2,armor:73:armor:0.021:1.533
-R	druid/restoration	60	9834	12750	gear	8.073	spi:4:spi:0.47:1.88,sta:7:sta:0.38:2.66,spDmg:2:sp:1:2,armor:73:armor:0.021:1.533
-R	druid/restoration	60	9834	12751	gear	4.1930000000000005	sta:7:sta:0.38:2.66,armor:73:armor:0.021:1.533
-R	druid/restoration	60	9834	12752	gear	4.1930000000000005	sta:7:sta:0.38:2.66,armor:73:armor:0.021:1.533
-R	druid/restoration	60	9834	12753	gear	4.1930000000000005	sta:7:sta:0.38:2.66,armor:73:armor:0.021:1.533
-R	druid/restoration	60	9834	12755	gear	7.1930000000000005	sp:3:sp:1:3,sta:7:sta:0.38:2.66,armor:73:armor:0.021:1.533
-R	druid/restoration	60	9834	12756	gear	10.243	spArcane:13:spArcane:0.67:8.71,armor:73:armor:0.021:1.533
-R	druid/restoration	60	9834	12760	gear	4.6530000000000005	spNature:13:spNature:0.24:3.12,armor:73:armor:0.021:1.533
-R	druid/restoration	60	11187	0	gear	0.084	armor:4:armor:0.021:0.084
+R	druid/restoration	60	6540	0	gear	0.532	armor:28:armor:0.019:0.532
+R	druid/restoration	60	6540	12718	gear	3.202	int:3:int:0.55:1.65,sta:3:sta:0.34:1.02,armor:28:armor:0.019:0.532
+R	druid/restoration	60	6540	12719	gear	3.412	spi:3:spi:0.62:1.86,sta:3:sta:0.34:1.02,armor:28:armor:0.019:0.532
+R	druid/restoration	60	6540	12720	gear	4.042	int:3:int:0.55:1.65,spi:3:spi:0.62:1.86,armor:28:armor:0.019:0.532
+R	druid/restoration	60	6540	12729	gear	3.282	int:5:int:0.55:2.75,armor:28:armor:0.019:0.532
+R	druid/restoration	60	6540	12730	gear	3.632	spi:5:spi:0.62:3.1,armor:28:armor:0.019:0.532
+R	druid/restoration	60	6540	12731	gear	2.232	sta:5:sta:0.34:1.7,armor:28:armor:0.019:0.532
+R	druid/restoration	60	6540	12734	gear	6.532	sp:6:sp:1:6,armor:28:armor:0.019:0.532
+R	druid/restoration	60	6540	12735	gear	4.532	spDmg:4:sp:1:4,armor:28:armor:0.019:0.532
+R	druid/restoration	60	6540	12740	gear	1.552	sta:3:sta:0.34:1.02,armor:28:armor:0.019:0.532
+R	druid/restoration	60	6540	12741	gear	1.552	sta:3:sta:0.34:1.02,armor:28:armor:0.019:0.532
+R	druid/restoration	60	6540	12742	gear	1.552	sta:3:sta:0.34:1.02,armor:28:armor:0.019:0.532
+R	druid/restoration	60	6540	12743	gear	1.552	sta:3:sta:0.34:1.02,armor:28:armor:0.019:0.532
+R	druid/restoration	60	6540	12744	gear	1.552	sta:3:sta:0.34:1.02,armor:28:armor:0.019:0.532
+R	druid/restoration	60	6540	12745	gear	5.412000000000001	int:4:int:0.55:2.2,sta:2:sta:0.34:0.68,sp:2:sp:1:2,armor:28:armor:0.019:0.532
+R	druid/restoration	60	6540	12756	gear	5.4319999999999995	spArcane:7:spArcane:0.7:4.9,armor:28:armor:0.019:0.532
+R	druid/restoration	60	6540	12757	gear	0.532	armor:28:armor:0.019:0.532
+R	druid/restoration	60	6540	12758	gear	0.532	armor:28:armor:0.019:0.532
+R	druid/restoration	60	6540	12759	gear	0.532	armor:28:armor:0.019:0.532
+R	druid/restoration	60	6540	12761	gear	0.532	armor:28:armor:0.019:0.532
+R	druid/restoration	60	6557	0	gear	0.9309999999999999	armor:49:armor:0.019:0.931
+R	druid/restoration	60	6557	12718	gear	2.7110000000000003	int:2:int:0.55:1.1,sta:2:sta:0.34:0.68,armor:49:armor:0.019:0.931
+R	druid/restoration	60	6557	12719	gear	2.851	spi:2:spi:0.62:1.24,sta:2:sta:0.34:0.68,armor:49:armor:0.019:0.931
+R	druid/restoration	60	6557	12720	gear	3.271	int:2:int:0.55:1.1,spi:2:spi:0.62:1.24,armor:49:armor:0.019:0.931
+R	druid/restoration	60	6557	12721	gear	1.611	sta:2:sta:0.34:0.68,armor:49:armor:0.019:0.931
+R	druid/restoration	60	6557	12722	gear	1.611	sta:2:sta:0.34:0.68,armor:49:armor:0.019:0.931
+R	druid/restoration	60	6557	12723	gear	2.031	int:2:int:0.55:1.1,armor:49:armor:0.019:0.931
+R	druid/restoration	60	6557	12724	gear	2.031	int:2:int:0.55:1.1,armor:49:armor:0.019:0.931
+R	druid/restoration	60	6557	12725	gear	2.171	spi:2:spi:0.62:1.24,armor:49:armor:0.019:0.931
+R	druid/restoration	60	6557	12726	gear	2.171	spi:2:spi:0.62:1.24,armor:49:armor:0.019:0.931
+R	druid/restoration	60	6557	12727	gear	0.9309999999999999	armor:49:armor:0.019:0.931
+R	druid/restoration	60	6557	12728	gear	0.9309999999999999	armor:49:armor:0.019:0.931
+R	druid/restoration	60	6557	12729	gear	2.581	int:3:int:0.55:1.65,armor:49:armor:0.019:0.931
+R	druid/restoration	60	6557	12730	gear	2.791	spi:3:spi:0.62:1.86,armor:49:armor:0.019:0.931
+R	druid/restoration	60	6557	12731	gear	1.951	sta:3:sta:0.34:1.02,armor:49:armor:0.019:0.931
+R	druid/restoration	60	6557	12732	gear	0.9309999999999999	armor:49:armor:0.019:0.931
+R	druid/restoration	60	6557	12733	gear	0.9309999999999999	armor:49:armor:0.019:0.931
+R	druid/restoration	60	6557	12734	gear	4.931	sp:4:sp:1:4,armor:49:armor:0.019:0.931
+R	druid/restoration	60	6557	12735	gear	2.931	spDmg:2:sp:1:2,armor:49:armor:0.019:0.931
+R	druid/restoration	60	6557	12736	gear	0.9309999999999999	armor:49:armor:0.019:0.931
+R	druid/restoration	60	6557	12740	gear	1.611	sta:2:sta:0.34:0.68,armor:49:armor:0.019:0.931
+R	druid/restoration	60	6557	12741	gear	1.611	sta:2:sta:0.34:0.68,armor:49:armor:0.019:0.931
+R	druid/restoration	60	6557	12742	gear	1.611	sta:2:sta:0.34:0.68,armor:49:armor:0.019:0.931
+R	druid/restoration	60	6557	12743	gear	1.611	sta:2:sta:0.34:0.68,armor:49:armor:0.019:0.931
+R	druid/restoration	60	6557	12744	gear	1.611	sta:2:sta:0.34:0.68,armor:49:armor:0.019:0.931
+R	druid/restoration	60	6557	12756	gear	3.731	spArcane:4:spArcane:0.7:2.8,armor:49:armor:0.019:0.931
+R	druid/restoration	60	6557	12760	gear	1.811	spNature:4:spNature:0.22:0.88,armor:49:armor:0.019:0.931
+R	druid/restoration	60	7047	0	gear	3.5940000000000003	spi:5:spi:0.62:3.1,armor:26:armor:0.019:0.494
+R	druid/restoration	60	8192	0	gear	3.334	sta:5:sta:0.34:1.7,armor:86:armor:0.019:1.634
+R	druid/restoration	60	9834	0	gear	1.387	armor:73:armor:0.019:1.387
+R	druid/restoration	60	9834	12718	gear	6.727	int:6:int:0.55:3.3,sta:6:sta:0.34:2.04,armor:73:armor:0.019:1.387
+R	druid/restoration	60	9834	12719	gear	7.147	spi:6:spi:0.62:3.72,sta:6:sta:0.34:2.04,armor:73:armor:0.019:1.387
+R	druid/restoration	60	9834	12720	gear	8.407	int:6:int:0.55:3.3,spi:6:spi:0.62:3.72,armor:73:armor:0.019:1.387
+R	druid/restoration	60	9834	12721	gear	3.427	sta:6:sta:0.34:2.04,armor:73:armor:0.019:1.387
+R	druid/restoration	60	9834	12722	gear	3.427	sta:6:sta:0.34:2.04,armor:73:armor:0.019:1.387
+R	druid/restoration	60	9834	12723	gear	4.687	int:6:int:0.55:3.3,armor:73:armor:0.019:1.387
+R	druid/restoration	60	9834	12724	gear	4.687	int:6:int:0.55:3.3,armor:73:armor:0.019:1.387
+R	druid/restoration	60	9834	12725	gear	5.106999999999999	spi:6:spi:0.62:3.72,armor:73:armor:0.019:1.387
+R	druid/restoration	60	9834	12726	gear	5.106999999999999	spi:6:spi:0.62:3.72,armor:73:armor:0.019:1.387
+R	druid/restoration	60	9834	12727	gear	1.387	armor:73:armor:0.019:1.387
+R	druid/restoration	60	9834	12728	gear	1.387	armor:73:armor:0.019:1.387
+R	druid/restoration	60	9834	12729	gear	6.337	int:9:int:0.55:4.95,armor:73:armor:0.019:1.387
+R	druid/restoration	60	9834	12730	gear	6.9670000000000005	spi:9:spi:0.62:5.58,armor:73:armor:0.019:1.387
+R	druid/restoration	60	9834	12731	gear	4.447	sta:9:sta:0.34:3.06,armor:73:armor:0.019:1.387
+R	druid/restoration	60	9834	12732	gear	1.387	armor:73:armor:0.019:1.387
+R	druid/restoration	60	9834	12733	gear	1.387	armor:73:armor:0.019:1.387
+R	druid/restoration	60	9834	12734	gear	12.387	sp:11:sp:1:11,armor:73:armor:0.019:1.387
+R	druid/restoration	60	9834	12735	gear	8.387	spDmg:7:sp:1:7,armor:73:armor:0.019:1.387
+R	druid/restoration	60	9834	12736	gear	1.387	armor:73:armor:0.019:1.387
+R	druid/restoration	60	9834	12740	gear	3.427	sta:6:sta:0.34:2.04,armor:73:armor:0.019:1.387
+R	druid/restoration	60	9834	12741	gear	3.427	sta:6:sta:0.34:2.04,armor:73:armor:0.019:1.387
+R	druid/restoration	60	9834	12742	gear	3.427	sta:6:sta:0.34:2.04,armor:73:armor:0.019:1.387
+R	druid/restoration	60	9834	12743	gear	3.427	sta:6:sta:0.34:2.04,armor:73:armor:0.019:1.387
+R	druid/restoration	60	9834	12744	gear	3.427	sta:6:sta:0.34:2.04,armor:73:armor:0.019:1.387
+R	druid/restoration	60	9834	12745	gear	9.597000000000001	int:7:int:0.55:3.85,sta:4:sta:0.34:1.36,sp:3:sp:1:3,armor:73:armor:0.019:1.387
+R	druid/restoration	60	9834	12746	gear	10.717	int:7:int:0.55:3.85,spi:4:spi:0.62:2.48,sp:3:sp:1:3,armor:73:armor:0.019:1.387
+R	druid/restoration	60	9834	12747	gear	9.247	spi:4:spi:0.62:2.48,sta:7:sta:0.34:2.38,sp:3:sp:1:3,armor:73:armor:0.019:1.387
+R	druid/restoration	60	9834	12748	gear	7.9670000000000005	int:4:int:0.55:2.2,sta:7:sta:0.34:2.38,spDmg:2:sp:1:2,armor:73:armor:0.019:1.387
+R	druid/restoration	60	9834	12749	gear	9.717	int:7:int:0.55:3.85,spi:4:spi:0.62:2.48,spDmg:2:sp:1:2,armor:73:armor:0.019:1.387
+R	druid/restoration	60	9834	12750	gear	8.247	spi:4:spi:0.62:2.48,sta:7:sta:0.34:2.38,spDmg:2:sp:1:2,armor:73:armor:0.019:1.387
+R	druid/restoration	60	9834	12751	gear	3.7670000000000003	sta:7:sta:0.34:2.38,armor:73:armor:0.019:1.387
+R	druid/restoration	60	9834	12752	gear	3.7670000000000003	sta:7:sta:0.34:2.38,armor:73:armor:0.019:1.387
+R	druid/restoration	60	9834	12753	gear	3.7670000000000003	sta:7:sta:0.34:2.38,armor:73:armor:0.019:1.387
+R	druid/restoration	60	9834	12755	gear	6.767000000000001	sp:3:sp:1:3,sta:7:sta:0.34:2.38,armor:73:armor:0.019:1.387
+R	druid/restoration	60	9834	12756	gear	10.487	spArcane:13:spArcane:0.7:9.1,armor:73:armor:0.019:1.387
+R	druid/restoration	60	9834	12760	gear	4.247	spNature:13:spNature:0.22:2.86,armor:73:armor:0.019:1.387
+R	druid/restoration	60	11187	0	gear	0.076	armor:4:armor:0.019:0.076
 R	druid/restoration	60	11994	0	gear	0.0	
-R	druid/restoration	60	11994	12718	gear	3.4200000000000004	int:3:int:0.76:2.28,sta:3:sta:0.38:1.14
-R	druid/restoration	60	11994	12719	gear	2.55	spi:3:spi:0.47:1.41,sta:3:sta:0.38:1.14
-R	druid/restoration	60	11994	12720	gear	3.6900000000000004	int:3:int:0.76:2.28,spi:3:spi:0.47:1.41
-R	druid/restoration	60	11994	12721	gear	1.1400000000000001	sta:3:sta:0.38:1.14
-R	druid/restoration	60	11994	12722	gear	1.1400000000000001	sta:3:sta:0.38:1.14
-R	druid/restoration	60	11994	12723	gear	2.2800000000000002	int:3:int:0.76:2.28
-R	druid/restoration	60	11994	12724	gear	2.2800000000000002	int:3:int:0.76:2.28
-R	druid/restoration	60	11994	12725	gear	1.41	spi:3:spi:0.47:1.41
-R	druid/restoration	60	11994	12726	gear	1.41	spi:3:spi:0.47:1.41
+R	druid/restoration	60	11994	12718	gear	2.67	int:3:int:0.55:1.65,sta:3:sta:0.34:1.02
+R	druid/restoration	60	11994	12719	gear	2.88	spi:3:spi:0.62:1.86,sta:3:sta:0.34:1.02
+R	druid/restoration	60	11994	12720	gear	3.51	int:3:int:0.55:1.65,spi:3:spi:0.62:1.86
+R	druid/restoration	60	11994	12721	gear	1.02	sta:3:sta:0.34:1.02
+R	druid/restoration	60	11994	12722	gear	1.02	sta:3:sta:0.34:1.02
+R	druid/restoration	60	11994	12723	gear	1.6500000000000001	int:3:int:0.55:1.65
+R	druid/restoration	60	11994	12724	gear	1.6500000000000001	int:3:int:0.55:1.65
+R	druid/restoration	60	11994	12725	gear	1.8599999999999999	spi:3:spi:0.62:1.86
+R	druid/restoration	60	11994	12726	gear	1.8599999999999999	spi:3:spi:0.62:1.86
 R	druid/restoration	60	11994	12727	gear	0.0	
 R	druid/restoration	60	11994	12728	gear	0.0	
-R	druid/restoration	60	11994	12729	gear	3.8	int:5:int:0.76:3.8
-R	druid/restoration	60	11994	12730	gear	2.3499999999999996	spi:5:spi:0.47:2.35
-R	druid/restoration	60	11994	12731	gear	1.9	sta:5:sta:0.38:1.9
+R	druid/restoration	60	11994	12729	gear	2.75	int:5:int:0.55:2.75
+R	druid/restoration	60	11994	12730	gear	3.1	spi:5:spi:0.62:3.1
+R	druid/restoration	60	11994	12731	gear	1.7000000000000002	sta:5:sta:0.34:1.7
 R	druid/restoration	60	11994	12732	gear	0.0	
 R	druid/restoration	60	11994	12733	gear	0.0	
 R	druid/restoration	60	11994	12737	gear	0.0	
-R	druid/restoration	60	11994	12738	gear	2.0	mp5:2:mp5:1:2
+R	druid/restoration	60	11994	12738	gear	2.2	mp5:2:mp5:1.1:2.2
 R	druid/restoration	60	11994	12739	gear	0.0	
-R	druid/restoration	60	11994	12740	gear	1.1400000000000001	sta:3:sta:0.38:1.14
-R	druid/restoration	60	11994	12741	gear	1.1400000000000001	sta:3:sta:0.38:1.14
-R	druid/restoration	60	11994	12742	gear	1.1400000000000001	sta:3:sta:0.38:1.14
-R	druid/restoration	60	11994	12743	gear	1.1400000000000001	sta:3:sta:0.38:1.14
-R	druid/restoration	60	11994	12744	gear	1.1400000000000001	sta:3:sta:0.38:1.14
+R	druid/restoration	60	11994	12740	gear	1.02	sta:3:sta:0.34:1.02
+R	druid/restoration	60	11994	12741	gear	1.02	sta:3:sta:0.34:1.02
+R	druid/restoration	60	11994	12742	gear	1.02	sta:3:sta:0.34:1.02
+R	druid/restoration	60	11994	12743	gear	1.02	sta:3:sta:0.34:1.02
+R	druid/restoration	60	11994	12744	gear	1.02	sta:3:sta:0.34:1.02
 R	druid/restoration	60	13183	0	mh	0.0	
-R	druid/restoration	60	14122	0	gear	0.29400000000000004	armor:14:armor:0.021:0.294
-R	druid/restoration	60	14122	12718	gear	2.5740000000000003	int:2:int:0.76:1.52,sta:2:sta:0.38:0.76,armor:14:armor:0.021:0.294
-R	druid/restoration	60	14122	12719	gear	1.994	spi:2:spi:0.47:0.94,sta:2:sta:0.38:0.76,armor:14:armor:0.021:0.294
-R	druid/restoration	60	14122	12720	gear	2.754	int:2:int:0.76:1.52,spi:2:spi:0.47:0.94,armor:14:armor:0.021:0.294
-R	druid/restoration	60	14122	12729	gear	2.5740000000000003	int:3:int:0.76:2.28,armor:14:armor:0.021:0.294
-R	druid/restoration	60	14122	12730	gear	1.704	spi:3:spi:0.47:1.41,armor:14:armor:0.021:0.294
-R	druid/restoration	60	14122	12731	gear	1.4340000000000002	sta:3:sta:0.38:1.14,armor:14:armor:0.021:0.294
-R	druid/restoration	60	14122	12734	gear	4.2940000000000005	sp:4:sp:1:4,armor:14:armor:0.021:0.294
-R	druid/restoration	60	14122	12735	gear	2.294	spDmg:2:sp:1:2,armor:14:armor:0.021:0.294
-R	druid/restoration	60	14122	12740	gear	1.054	sta:2:sta:0.38:0.76,armor:14:armor:0.021:0.294
-R	druid/restoration	60	14122	12741	gear	1.054	sta:2:sta:0.38:0.76,armor:14:armor:0.021:0.294
-R	druid/restoration	60	14122	12742	gear	1.054	sta:2:sta:0.38:0.76,armor:14:armor:0.021:0.294
-R	druid/restoration	60	14122	12743	gear	1.054	sta:2:sta:0.38:0.76,armor:14:armor:0.021:0.294
-R	druid/restoration	60	14122	12744	gear	1.054	sta:2:sta:0.38:0.76,armor:14:armor:0.021:0.294
-R	druid/restoration	60	14122	12745	gear	3.194	int:2:int:0.76:1.52,sta:1:sta:0.38:0.38,sp:1:sp:1:1,armor:14:armor:0.021:0.294
-R	druid/restoration	60	14122	12756	gear	2.974	spArcane:4:spArcane:0.67:2.68,armor:14:armor:0.021:0.294
-R	druid/restoration	60	14122	12757	gear	0.29400000000000004	armor:14:armor:0.021:0.294
-R	druid/restoration	60	14122	12758	gear	0.29400000000000004	armor:14:armor:0.021:0.294
-R	druid/restoration	60	14122	12759	gear	0.29400000000000004	armor:14:armor:0.021:0.294
-R	druid/restoration	60	14122	12761	gear	0.29400000000000004	armor:14:armor:0.021:0.294
-R	druid/restoration	60	14340	0	gear	9.068	sta:19:sta:0.38:7.22,armor:88:armor:0.021:1.848
-R	druid/restoration	60	14673	0	gear	2.614	sta:5:sta:0.38:1.9,armor:34:armor:0.021:0.714
-R	druid/restoration	60	15945	0	oh	1.7	sta:2:sta:0.38:0.76,spi:2:spi:0.47:0.94
-R	druid/restoration	60	16711	0	gear	7.455	sta:9:sta:0.38:3.42,hit:0.3:spellHit:5.4:1.62,armor:115:armor:0.021:2.415
-R	druid/restoration	60	18726	0	gear	7.2330000000000005	sta:15:sta:0.38:5.7,armor:73:armor:0.021:1.533
+R	druid/restoration	60	14122	0	gear	0.266	armor:14:armor:0.019:0.266
+R	druid/restoration	60	14122	12718	gear	2.0460000000000003	int:2:int:0.55:1.1,sta:2:sta:0.34:0.68,armor:14:armor:0.019:0.266
+R	druid/restoration	60	14122	12719	gear	2.186	spi:2:spi:0.62:1.24,sta:2:sta:0.34:0.68,armor:14:armor:0.019:0.266
+R	druid/restoration	60	14122	12720	gear	2.606	int:2:int:0.55:1.1,spi:2:spi:0.62:1.24,armor:14:armor:0.019:0.266
+R	druid/restoration	60	14122	12729	gear	1.9160000000000001	int:3:int:0.55:1.65,armor:14:armor:0.019:0.266
+R	druid/restoration	60	14122	12730	gear	2.126	spi:3:spi:0.62:1.86,armor:14:armor:0.019:0.266
+R	druid/restoration	60	14122	12731	gear	1.286	sta:3:sta:0.34:1.02,armor:14:armor:0.019:0.266
+R	druid/restoration	60	14122	12734	gear	4.266	sp:4:sp:1:4,armor:14:armor:0.019:0.266
+R	druid/restoration	60	14122	12735	gear	2.266	spDmg:2:sp:1:2,armor:14:armor:0.019:0.266
+R	druid/restoration	60	14122	12740	gear	0.9460000000000001	sta:2:sta:0.34:0.68,armor:14:armor:0.019:0.266
+R	druid/restoration	60	14122	12741	gear	0.9460000000000001	sta:2:sta:0.34:0.68,armor:14:armor:0.019:0.266
+R	druid/restoration	60	14122	12742	gear	0.9460000000000001	sta:2:sta:0.34:0.68,armor:14:armor:0.019:0.266
+R	druid/restoration	60	14122	12743	gear	0.9460000000000001	sta:2:sta:0.34:0.68,armor:14:armor:0.019:0.266
+R	druid/restoration	60	14122	12744	gear	0.9460000000000001	sta:2:sta:0.34:0.68,armor:14:armor:0.019:0.266
+R	druid/restoration	60	14122	12745	gear	2.7060000000000004	int:2:int:0.55:1.1,sta:1:sta:0.34:0.34,sp:1:sp:1:1,armor:14:armor:0.019:0.266
+R	druid/restoration	60	14122	12756	gear	3.066	spArcane:4:spArcane:0.7:2.8,armor:14:armor:0.019:0.266
+R	druid/restoration	60	14122	12757	gear	0.266	armor:14:armor:0.019:0.266
+R	druid/restoration	60	14122	12758	gear	0.266	armor:14:armor:0.019:0.266
+R	druid/restoration	60	14122	12759	gear	0.266	armor:14:armor:0.019:0.266
+R	druid/restoration	60	14122	12761	gear	0.266	armor:14:armor:0.019:0.266
+R	druid/restoration	60	14340	0	gear	8.132000000000001	sta:19:sta:0.34:6.46,armor:88:armor:0.019:1.672
+R	druid/restoration	60	14673	0	gear	2.346	sta:5:sta:0.34:1.7,armor:34:armor:0.019:0.646
+R	druid/restoration	60	15945	0	oh	1.92	sta:2:sta:0.34:0.68,spi:2:spi:0.62:1.24
+R	druid/restoration	60	16711	0	gear	6.895	sta:9:sta:0.34:3.06,hit:0.3:spellHit:5.5:1.65,armor:115:armor:0.019:2.185
+R	druid/restoration	60	18726	0	gear	6.487	sta:15:sta:0.34:5.1,armor:73:armor:0.019:1.387
 R	druid/restoration	60	22397	0	ranged	0.0	
-R	druid/restoration	60	252507	0	gear	11.396	sta:10:sta:0.38:3.8,spDmg:6:sp:1:6,armor:76:armor:0.021:1.596
-R	druid/restoration	60	254111	0	gear	12.914000000000001	int:9:int:0.76:6.84,sta:13:sta:0.38:4.94,armor:54:armor:0.021:1.134
-R	druid/restoration	60	270033	0	gear	0.8190000000000001	armor:39:armor:0.021:0.819
-R	druid/restoration	60	273892	0	gear	43.962	sta:20:sta:0.38:7.6,int:19:int:0.76:14.44,spi:16:spi:0.47:7.52,spDmg:11:sp:1:11,armor:162:armor:0.021:3.402
-R	druid/restoration	60	280082	0	mh	95.37	int:15:int:0.76:11.4,hit:1.5:spellHit:5.4:8.1,spi:21:spi:0.47:9.87,sp:66:sp:1:66
+R	druid/restoration	60	252507	0	gear	10.844000000000001	sta:10:sta:0.34:3.4,spDmg:6:sp:1:6,armor:76:armor:0.019:1.444
+R	druid/restoration	60	254111	0	gear	10.396	int:9:int:0.55:4.95,sta:13:sta:0.34:4.42,armor:54:armor:0.019:1.026
+R	druid/restoration	60	270033	0	gear	0.741	armor:39:armor:0.019:0.741
+R	druid/restoration	60	273892	0	gear	41.248000000000005	sta:20:sta:0.34:6.8,int:19:int:0.55:10.45,spi:16:spi:0.62:9.92,spDmg:11:sp:1:11,armor:162:armor:0.019:3.078
+R	druid/restoration	60	280082	0	mh	95.52	int:15:int:0.55:8.25,hit:1.5:spellHit:5.5:8.25,spi:21:spi:0.62:13.02,sp:66:sp:1:66
 R	druid/feral	12	1315	0	gear	19.4	sta:10:sta:1.4:14,spi:15:spi:0.36:5.4
 R	druid/feral	12	1808	0	gear	7.3260000000000005	armor:74:armor:0.099:7.326
 R	druid/feral	12	1990	0	mh	168.028	dps:24.71:dps:6.8:168.028
@@ -35357,233 +35357,233 @@ B	warlock/affliction	60	19557	mh	0	1.23
 B	warlock/affliction	60	254111	gear	0	5.546
 B	warlock/affliction	60	280082	mh	0	74.10000000000001
 B	warlock/demonology	12	25	mh	0	0.0
-B	warlock/demonology	12	1315	gear	0	2.95
-B	warlock/demonology	12	2140	mh	12917	5.12
+B	warlock/demonology	12	1315	gear	0	4.319999999999999
+B	warlock/demonology	12	2140	mh	12917	5.089
 B	warlock/demonology	12	2225	mh	0	0.0
-B	warlock/demonology	12	2614	gear	0	0.145
+B	warlock/demonology	12	2614	gear	0	0.0725
 B	warlock/demonology	12	4023	mh	0	0.0
 B	warlock/demonology	12	5079	gear	0	0.0
-B	warlock/demonology	12	6540	gear	12734	6.14
-B	warlock/demonology	12	7047	gear	0	7.08
-B	warlock/demonology	12	11187	gear	0	0.02
-B	warlock/demonology	12	11288	ranged	0	9.0
-B	warlock/demonology	12	11994	gear	12720	0.75
-B	warlock/demonology	12	14122	gear	12734	4.07
-B	warlock/demonology	12	14340	gear	0	2.3400000000000003
-B	warlock/demonology	12	14673	gear	0	0.67
-B	warlock/demonology	12	15945	oh	0	0.46
-B	warlock/demonology	12	19557	mh	0	0.30000000000000004
-B	warlock/demonology	12	254111	gear	0	8.45
-B	warlock/demonology	12	280082	mh	0	71.34
+B	warlock/demonology	12	6540	gear	12734	6.07
+B	warlock/demonology	12	7047	gear	0	7.835000000000001
+B	warlock/demonology	12	11187	gear	0	0.01
+B	warlock/demonology	12	11288	ranged	0	7.074999999999999
+B	warlock/demonology	12	11994	gear	12730	1.2
+B	warlock/demonology	12	14122	gear	12734	4.035
+B	warlock/demonology	12	14340	gear	0	1.5879999999999999
+B	warlock/demonology	12	14673	gear	0	0.445
+B	warlock/demonology	12	15945	oh	0	0.624
+B	warlock/demonology	12	19557	mh	0	0.21599999999999997
+B	warlock/demonology	12	254111	gear	0	8.672
+B	warlock/demonology	12	280082	mh	0	73.125
 B	warlock/demonology	25	25	mh	0	0.0
-B	warlock/demonology	25	1315	gear	0	3.6499999999999995
-B	warlock/demonology	25	2140	mh	12917	5.0
+B	warlock/demonology	25	1315	gear	0	3.15
+B	warlock/demonology	25	2140	mh	12917	5.03
 B	warlock/demonology	25	2225	mh	0	0.0
-B	warlock/demonology	25	2614	gear	0	0.116
+B	warlock/demonology	25	2614	gear	0	0.13049999999999998
 B	warlock/demonology	25	4023	mh	0	0.0
 B	warlock/demonology	25	5079	gear	0	0.0
-B	warlock/demonology	25	6540	gear	12734	6.112
-B	warlock/demonology	25	7047	gear	0	6.403999999999999
-B	warlock/demonology	25	11187	gear	0	0.016
-B	warlock/demonology	25	11288	ranged	0	6.9
-B	warlock/demonology	25	11994	gear	12730	0.8999999999999999
-B	warlock/demonology	25	14122	gear	12734	4.056
-B	warlock/demonology	25	14340	gear	0	2.157
-B	warlock/demonology	25	14673	gear	0	0.611
-B	warlock/demonology	25	15945	oh	0	0.55
-B	warlock/demonology	25	19557	mh	0	0.28500000000000003
-B	warlock/demonology	25	254111	gear	0	9.251
-B	warlock/demonology	25	280082	mh	0	70.575
+B	warlock/demonology	25	6540	gear	12734	6.126
+B	warlock/demonology	25	7047	gear	0	7.167
+B	warlock/demonology	25	11187	gear	0	0.018
+B	warlock/demonology	25	11288	ranged	0	8.3
+B	warlock/demonology	25	11994	gear	12730	0.75
+B	warlock/demonology	25	14122	gear	12734	4.063
+B	warlock/demonology	25	14340	gear	0	2.106
+B	warlock/demonology	25	14673	gear	0	0.603
+B	warlock/demonology	25	15945	oh	0	0.48
+B	warlock/demonology	25	19557	mh	0	0.27
+B	warlock/demonology	25	254111	gear	0	8.083
+B	warlock/demonology	25	280082	mh	0	70.605
 B	warlock/demonology	34	25	mh	0	0.0
-B	warlock/demonology	34	1315	gear	0	5.1000000000000005
-B	warlock/demonology	34	2140	mh	12917	5.023
+B	warlock/demonology	34	1315	gear	0	5.4
+B	warlock/demonology	34	2140	mh	12917	5.034
 B	warlock/demonology	34	2225	mh	0	0.0
-B	warlock/demonology	34	2614	gear	0	0.029
+B	warlock/demonology	34	2614	gear	0	0.08700000000000001
 B	warlock/demonology	34	4023	mh	0	0.0
 B	warlock/demonology	34	5079	gear	0	0.0
-B	warlock/demonology	34	6540	gear	12734	6.028
-B	warlock/demonology	34	7047	gear	0	4.965999999999999
-B	warlock/demonology	34	11187	gear	0	0.004
-B	warlock/demonology	34	11288	ranged	0	2.7175000000000002
-B	warlock/demonology	34	11994	gear	12730	1.7000000000000002
-B	warlock/demonology	34	14122	gear	12734	4.014
-B	warlock/demonology	34	14340	gear	0	0.088
-B	warlock/demonology	34	14673	gear	0	0.034
-B	warlock/demonology	34	15945	oh	0	0.68
-B	warlock/demonology	34	19557	mh	0	0.0
-B	warlock/demonology	34	254111	gear	0	13.461000000000002
-B	warlock/demonology	34	280082	mh	0	75.285
+B	warlock/demonology	34	6540	gear	12734	6.084
+B	warlock/demonology	34	7047	gear	0	5.958
+B	warlock/demonology	34	11187	gear	0	0.012
+B	warlock/demonology	34	11288	ranged	0	5.5
+B	warlock/demonology	34	11994	gear	12730	1.6500000000000001
+B	warlock/demonology	34	14122	gear	12734	4.042
+B	warlock/demonology	34	14340	gear	0	1.119
+B	warlock/demonology	34	14673	gear	0	0.32699999999999996
+B	warlock/demonology	34	15945	oh	0	0.75
+B	warlock/demonology	34	19557	mh	0	0.135
+B	warlock/demonology	34	254111	gear	0	10.253000000000002
+B	warlock/demonology	34	280082	mh	0	74.94
 B	warlock/demonology	45	25	mh	0	0.0
-B	warlock/demonology	45	1315	gear	0	4.35
-B	warlock/demonology	45	2140	mh	12917	5.17
+B	warlock/demonology	45	1315	gear	0	5.8500000000000005
+B	warlock/demonology	45	2140	mh	12917	5.0
 B	warlock/demonology	45	2225	mh	0	0.0
-B	warlock/demonology	45	2614	gear	0	0.029
+B	warlock/demonology	45	2614	gear	0	0.058
 B	warlock/demonology	45	4023	mh	0	0.0
 B	warlock/demonology	45	5079	gear	0	0.0
-B	warlock/demonology	45	6540	gear	12734	6.028
-B	warlock/demonology	45	7047	gear	0	3.9059999999999997
-B	warlock/demonology	45	11187	gear	0	0.004
-B	warlock/demonology	45	11288	ranged	0	2.2800000000000002
-B	warlock/demonology	45	11994	gear	12730	1.45
-B	warlock/demonology	45	14122	gear	12734	4.014
-B	warlock/demonology	45	14340	gear	0	0.088
-B	warlock/demonology	45	14673	gear	0	0.034
-B	warlock/demonology	45	15945	oh	0	0.58
-B	warlock/demonology	45	19557	mh	0	0.0
-B	warlock/demonology	45	254111	gear	0	13.383999999999999
-B	warlock/demonology	45	280082	mh	0	77.04
+B	warlock/demonology	45	6540	gear	12734	6.056
+B	warlock/demonology	45	7047	gear	0	6.462
+B	warlock/demonology	45	11187	gear	0	0.008
+B	warlock/demonology	45	11288	ranged	0	8.125
+B	warlock/demonology	45	11994	gear	12730	1.55
+B	warlock/demonology	45	14122	gear	12734	4.028
+B	warlock/demonology	45	14340	gear	0	2.456
+B	warlock/demonology	45	14673	gear	0	0.6679999999999999
+B	warlock/demonology	45	15945	oh	0	0.86
+B	warlock/demonology	45	19557	mh	0	0.36
+B	warlock/demonology	45	254111	gear	0	11.468000000000002
+B	warlock/demonology	45	280082	mh	0	75.06
 B	warlock/demonology	55	25	mh	0	0.0
-B	warlock/demonology	55	1315	gear	0	5.300000000000001
+B	warlock/demonology	55	1315	gear	0	5.450000000000001
 B	warlock/demonology	55	2140	mh	12917	5.0
 B	warlock/demonology	55	2225	mh	0	0.0
-B	warlock/demonology	55	2614	gear	0	0.029
+B	warlock/demonology	55	2614	gear	0	0.0
 B	warlock/demonology	55	4023	mh	0	0.0
 B	warlock/demonology	55	5079	gear	0	0.0
-B	warlock/demonology	55	6540	gear	12734	6.028
-B	warlock/demonology	55	7047	gear	0	6.646
-B	warlock/demonology	55	11187	gear	0	0.004
-B	warlock/demonology	55	11288	ranged	0	4.45
-B	warlock/demonology	55	11994	gear	12730	1.4000000000000001
-B	warlock/demonology	55	14122	gear	12734	4.014
-B	warlock/demonology	55	14340	gear	0	2.178
-B	warlock/demonology	55	14673	gear	0	0.5840000000000001
-B	warlock/demonology	55	15945	oh	0	0.78
-B	warlock/demonology	55	19557	mh	0	0.33
-B	warlock/demonology	55	254111	gear	0	10.084
-B	warlock/demonology	55	280082	mh	0	73.68
+B	warlock/demonology	55	6540	gear	12734	6.0
+B	warlock/demonology	55	7047	gear	0	6.57
+B	warlock/demonology	55	11187	gear	0	0.0
+B	warlock/demonology	55	11288	ranged	0	3.54
+B	warlock/demonology	55	11994	gear	12730	1.35
+B	warlock/demonology	55	14122	gear	12734	4.0
+B	warlock/demonology	55	14340	gear	0	2.66
+B	warlock/demonology	55	14673	gear	0	0.7000000000000001
+B	warlock/demonology	55	15945	oh	0	0.8200000000000001
+B	warlock/demonology	55	19557	mh	0	0.42000000000000004
+B	warlock/demonology	55	254111	gear	0	10.620000000000001
+B	warlock/demonology	55	280082	mh	0	73.47
 B	warlock/demonology	60	25	mh	0	0.0
-B	warlock/demonology	60	1315	gear	0	4.91
+B	warlock/demonology	60	1315	gear	0	6.510000000000001
 B	warlock/demonology	60	2140	mh	12917	5.0
 B	warlock/demonology	60	2225	mh	0	0.0
 B	warlock/demonology	60	2614	gear	0	0.029
 B	warlock/demonology	60	4023	mh	0	0.0
 B	warlock/demonology	60	5079	gear	0	0.0
 B	warlock/demonology	60	6540	gear	12734	6.028
-B	warlock/demonology	60	7047	gear	0	5.986
+B	warlock/demonology	60	7047	gear	0	7.736
 B	warlock/demonology	60	11187	gear	0	0.004
-B	warlock/demonology	60	11288	ranged	0	4.625
-B	warlock/demonology	60	11994	gear	12730	1.55
+B	warlock/demonology	60	11288	ranged	0	5.85
+B	warlock/demonology	60	11994	gear	12730	1.9500000000000002
 B	warlock/demonology	60	14122	gear	12734	4.014
-B	warlock/demonology	60	14340	gear	0	0.582
-B	warlock/demonology	60	14673	gear	0	0.164
-B	warlock/demonology	60	15945	oh	0	0.672
-B	warlock/demonology	60	19557	mh	0	0.078
-B	warlock/demonology	60	254111	gear	0	8.991999999999999
-B	warlock/demonology	60	280082	mh	0	75.06
+B	warlock/demonology	60	14340	gear	0	1.342
+B	warlock/demonology	60	14673	gear	0	0.364
+B	warlock/demonology	60	15945	oh	0	0.912
+B	warlock/demonology	60	19557	mh	0	0.198
+B	warlock/demonology	60	254111	gear	0	8.512
+B	warlock/demonology	60	280082	mh	0	76.14
 B	warlock/destruction	12	25	mh	0	0.0
-B	warlock/destruction	12	1315	gear	0	4.55
-B	warlock/destruction	12	2140	mh	12917	5.15
+B	warlock/destruction	12	1315	gear	0	4.65
+B	warlock/destruction	12	2140	mh	12917	5.14
 B	warlock/destruction	12	2225	mh	0	0.0
 B	warlock/destruction	12	2614	gear	0	0.13049999999999998
 B	warlock/destruction	12	4023	mh	0	0.0
 B	warlock/destruction	12	5079	gear	0	0.0
 B	warlock/destruction	12	6540	gear	12734	6.126
-B	warlock/destruction	12	7047	gear	0	7.107
+B	warlock/destruction	12	7047	gear	0	7.447
 B	warlock/destruction	12	11187	gear	0	0.018
-B	warlock/destruction	12	11288	ranged	0	12.674999999999999
-B	warlock/destruction	12	11994	gear	12720	1.08
+B	warlock/destruction	12	11288	ranged	0	10.05
+B	warlock/destruction	12	11994	gear	12730	1.3
 B	warlock/destruction	12	14122	gear	12734	4.063
-B	warlock/destruction	12	14340	gear	0	3.056
-B	warlock/destruction	12	14673	gear	0	0.8530000000000001
-B	warlock/destruction	12	15945	oh	0	0.7
-B	warlock/destruction	12	19557	mh	0	0.42000000000000004
-B	warlock/destruction	12	254111	gear	0	9.413
-B	warlock/destruction	12	280082	mh	0	73.47
+B	warlock/destruction	12	14340	gear	0	1.821
+B	warlock/destruction	12	14673	gear	0	0.528
+B	warlock/destruction	12	15945	oh	0	0.67
+B	warlock/destruction	12	19557	mh	0	0.22499999999999998
+B	warlock/destruction	12	254111	gear	0	8.678
+B	warlock/destruction	12	280082	mh	0	74.325
 B	warlock/destruction	25	25	mh	0	0.0
-B	warlock/destruction	25	1315	gear	0	3.75
-B	warlock/destruction	25	2140	mh	12917	5.013
+B	warlock/destruction	25	1315	gear	0	4.65
+B	warlock/destruction	25	2140	mh	12917	5.0
 B	warlock/destruction	25	2225	mh	0	0.0
-B	warlock/destruction	25	2614	gear	0	0.1595
+B	warlock/destruction	25	2614	gear	0	0.13049999999999998
 B	warlock/destruction	25	4023	mh	0	0.0
 B	warlock/destruction	25	5079	gear	0	0.0
-B	warlock/destruction	25	6540	gear	12734	6.154
-B	warlock/destruction	25	7047	gear	0	7.463
-B	warlock/destruction	25	11187	gear	0	0.022
-B	warlock/destruction	25	11288	ranged	0	7.25
-B	warlock/destruction	25	11994	gear	12719	0.8999999999999999
-B	warlock/destruction	25	14122	gear	12734	4.077
-B	warlock/destruction	25	14340	gear	0	3.334
-B	warlock/destruction	25	14673	gear	0	0.937
-B	warlock/destruction	25	15945	oh	0	0.6
-B	warlock/destruction	25	19557	mh	0	0.44999999999999996
-B	warlock/destruction	25	254111	gear	0	7.364
-B	warlock/destruction	25	280082	mh	0	70.155
+B	warlock/destruction	25	6540	gear	12734	6.126
+B	warlock/destruction	25	7047	gear	0	7.747
+B	warlock/destruction	25	11187	gear	0	0.018
+B	warlock/destruction	25	11288	ranged	0	8.125
+B	warlock/destruction	25	11994	gear	12730	1.1500000000000001
+B	warlock/destruction	25	14122	gear	12734	4.063
+B	warlock/destruction	25	14340	gear	0	2.6759999999999997
+B	warlock/destruction	25	14673	gear	0	0.753
+B	warlock/destruction	25	15945	oh	0	0.7
+B	warlock/destruction	25	19557	mh	0	0.36
+B	warlock/destruction	25	254111	gear	0	7.003
+B	warlock/destruction	25	280082	mh	0	71.67
 B	warlock/destruction	34	25	mh	0	0.0
-B	warlock/destruction	34	1315	gear	0	5.8
-B	warlock/destruction	34	2140	mh	12917	5.06
+B	warlock/destruction	34	1315	gear	0	7.22
+B	warlock/destruction	34	2140	mh	12917	5.0
 B	warlock/destruction	34	2225	mh	0	0.0
-B	warlock/destruction	34	2614	gear	0	0.203
+B	warlock/destruction	34	2614	gear	0	0.058
 B	warlock/destruction	34	4023	mh	0	0.0
 B	warlock/destruction	34	5079	gear	0	0.0
-B	warlock/destruction	34	6540	gear	12734	6.196
-B	warlock/destruction	34	7047	gear	0	6.452000000000001
-B	warlock/destruction	34	11187	gear	0	0.028
-B	warlock/destruction	34	11288	ranged	0	14.6
-B	warlock/destruction	34	11994	gear	12730	1.5
-B	warlock/destruction	34	14122	gear	12734	4.098
-B	warlock/destruction	34	14340	gear	0	3.0860000000000003
-B	warlock/destruction	34	14673	gear	0	0.888
-B	warlock/destruction	34	15945	oh	0	0.86
-B	warlock/destruction	34	19557	mh	0	0.39
-B	warlock/destruction	34	254111	gear	0	12.008
-B	warlock/destruction	34	280082	mh	0	74.85
+B	warlock/destruction	34	6540	gear	12734	6.056
+B	warlock/destruction	34	7047	gear	0	6.122
+B	warlock/destruction	34	11187	gear	0	0.008
+B	warlock/destruction	34	11288	ranged	0	11.275
+B	warlock/destruction	34	11994	gear	12730	2.2
+B	warlock/destruction	34	14122	gear	12734	4.028
+B	warlock/destruction	34	14340	gear	0	1.3539999999999999
+B	warlock/destruction	34	14673	gear	0	0.378
+B	warlock/destruction	34	15945	oh	0	1.004
+B	warlock/destruction	34	19557	mh	0	0.186
+B	warlock/destruction	34	254111	gear	0	12.114
+B	warlock/destruction	34	280082	mh	0	76.89
 B	warlock/destruction	45	25	mh	0	0.0
-B	warlock/destruction	45	1315	gear	0	3.8500000000000005
-B	warlock/destruction	45	2140	mh	12917	5.13
+B	warlock/destruction	45	1315	gear	0	5.1
+B	warlock/destruction	45	2140	mh	12917	5.04
 B	warlock/destruction	45	2225	mh	0	0.0
-B	warlock/destruction	45	2614	gear	0	0.17400000000000002
+B	warlock/destruction	45	2614	gear	0	0.116
 B	warlock/destruction	45	4023	mh	0	0.0
 B	warlock/destruction	45	5079	gear	0	0.0
-B	warlock/destruction	45	6540	gear	12734	6.168
-B	warlock/destruction	45	7047	gear	0	2.446
-B	warlock/destruction	45	11187	gear	0	0.024
-B	warlock/destruction	45	11288	ranged	0	10.75
-B	warlock/destruction	45	11994	gear	12719	0.9
-B	warlock/destruction	45	14122	gear	12734	4.084
-B	warlock/destruction	45	14340	gear	0	2.998
-B	warlock/destruction	45	14673	gear	0	0.8540000000000001
-B	warlock/destruction	45	15945	oh	0	0.6000000000000001
-B	warlock/destruction	45	19557	mh	0	0.39
-B	warlock/destruction	45	254111	gear	0	19.984
-B	warlock/destruction	45	280082	mh	0	73.32
+B	warlock/destruction	45	6540	gear	12734	6.112
+B	warlock/destruction	45	7047	gear	0	2.644
+B	warlock/destruction	45	11187	gear	0	0.016
+B	warlock/destruction	45	11288	ranged	0	10.575
+B	warlock/destruction	45	11994	gear	12719	1.2000000000000002
+B	warlock/destruction	45	14122	gear	12734	4.056
+B	warlock/destruction	45	14340	gear	0	3.772
+B	warlock/destruction	45	14673	gear	0	1.036
+B	warlock/destruction	45	15945	oh	0	0.8
+B	warlock/destruction	45	19557	mh	0	0.54
+B	warlock/destruction	45	254111	gear	0	19.516
+B	warlock/destruction	45	280082	mh	0	73.02
 B	warlock/destruction	55	25	mh	0	0.0
-B	warlock/destruction	55	1315	gear	0	5.050000000000001
-B	warlock/destruction	55	2140	mh	12917	5.17
+B	warlock/destruction	55	1315	gear	0	4.9
+B	warlock/destruction	55	2140	mh	12917	5.13
 B	warlock/destruction	55	2225	mh	0	0.0
 B	warlock/destruction	55	2614	gear	0	0.1015
 B	warlock/destruction	55	4023	mh	0	0.0
 B	warlock/destruction	55	5079	gear	0	0.0
 B	warlock/destruction	55	6540	gear	12734	6.098
-B	warlock/destruction	55	7047	gear	0	3.5110000000000006
+B	warlock/destruction	55	7047	gear	0	3.1710000000000003
 B	warlock/destruction	55	11187	gear	0	0.014
-B	warlock/destruction	55	11288	ranged	0	9.875
-B	warlock/destruction	55	11994	gear	12730	1.35
+B	warlock/destruction	55	11288	ranged	0	8.65
+B	warlock/destruction	55	11994	gear	12719	1.1400000000000001
 B	warlock/destruction	55	14122	gear	12734	4.049
-B	warlock/destruction	55	14340	gear	0	2.208
-B	warlock/destruction	55	14673	gear	0	0.619
-B	warlock/destruction	55	15945	oh	0	0.74
-B	warlock/destruction	55	19557	mh	0	0.30000000000000004
-B	warlock/destruction	55	254111	gear	0	18.419
-B	warlock/destruction	55	280082	mh	0	76.02
+B	warlock/destruction	55	14340	gear	0	3.348
+B	warlock/destruction	55	14673	gear	0	0.919
+B	warlock/destruction	55	15945	oh	0	0.76
+B	warlock/destruction	55	19557	mh	0	0.48
+B	warlock/destruction	55	254111	gear	0	19.439
+B	warlock/destruction	55	280082	mh	0	74.37
 B	warlock/destruction	60	25	mh	0	0.0
-B	warlock/destruction	60	1315	gear	0	6.1499999999999995
-B	warlock/destruction	60	2140	mh	12917	5.36
+B	warlock/destruction	60	1315	gear	0	6.17
+B	warlock/destruction	60	2140	mh	12917	5.27
 B	warlock/destruction	60	2225	mh	0	0.0
 B	warlock/destruction	60	2614	gear	0	0.116
 B	warlock/destruction	60	4023	mh	0	0.0
 B	warlock/destruction	60	5079	gear	0	0.0
 B	warlock/destruction	60	6540	gear	12734	6.112
-B	warlock/destruction	60	7047	gear	0	4.314
+B	warlock/destruction	60	7047	gear	0	4.354
 B	warlock/destruction	60	11187	gear	0	0.016
-B	warlock/destruction	60	11288	ranged	0	7.6000000000000005
-B	warlock/destruction	60	11994	gear	12720	2.31
+B	warlock/destruction	60	11288	ranged	0	9.7
+B	warlock/destruction	60	11994	gear	12720	2.0100000000000002
 B	warlock/destruction	60	14122	gear	12734	4.056
-B	warlock/destruction	60	14340	gear	0	0.352
-B	warlock/destruction	60	14673	gear	0	0.136
-B	warlock/destruction	60	15945	oh	0	0.82
-B	warlock/destruction	60	19557	mh	0	0.0
-B	warlock/destruction	60	254111	gear	0	18.856
-B	warlock/destruction	60	280082	mh	0	82.11
+B	warlock/destruction	60	14340	gear	0	0.675
+B	warlock/destruction	60	14673	gear	0	0.22100000000000003
+B	warlock/destruction	60	15945	oh	0	0.8340000000000001
+B	warlock/destruction	60	19557	mh	0	0.051000000000000004
+B	warlock/destruction	60	254111	gear	0	18.267000000000003
+B	warlock/destruction	60	280082	mh	0	80.4
 B	druid/balance	12	1315	gear	0	4.5
 B	druid/balance	12	1808	gear	0	1.036
 B	druid/balance	12	1990	mh	12905	33.4
@@ -35770,192 +35770,192 @@ B	druid/balance	60	254111	gear	0	8.118
 B	druid/balance	60	270033	gear	0	1.053
 B	druid/balance	60	273892	gear	0	33.634
 B	druid/balance	60	280082	mh	0	81.48
-B	druid/restoration	12	1315	gear	0	0.99
-B	druid/restoration	12	1808	gear	0	0.518
-B	druid/restoration	12	1990	mh	12918	35.7
-B	druid/restoration	12	2140	mh	12917	5.55
+B	druid/restoration	12	1315	gear	0	5.550000000000001
+B	druid/restoration	12	1808	gear	0	0.962
+B	druid/restoration	12	1990	mh	12905	34.69
+B	druid/restoration	12	2140	mh	12917	5.36
 B	druid/restoration	12	2225	mh	0	0.0
-B	druid/restoration	12	2614	gear	0	0.203
-B	druid/restoration	12	3158	gear	0	0.182
+B	druid/restoration	12	2614	gear	0	0.377
+B	druid/restoration	12	3158	gear	0	0.33799999999999997
 B	druid/restoration	12	3570	mh	0	0.0
 B	druid/restoration	12	4023	mh	0	0.0
-B	druid/restoration	12	4570	mh	12918	10.2
+B	druid/restoration	12	4570	mh	12918	9.44
 B	druid/restoration	12	5079	gear	0	0.0
-B	druid/restoration	12	6540	gear	12734	6.196
-B	druid/restoration	12	6557	gear	12734	4.343
-B	druid/restoration	12	7047	gear	0	0.512
-B	druid/restoration	12	8192	gear	0	0.602
-B	druid/restoration	12	9834	gear	12734	11.511
-B	druid/restoration	12	11187	gear	0	0.028
-B	druid/restoration	12	11994	gear	12729	2.75
+B	druid/restoration	12	6540	gear	12734	6.364
+B	druid/restoration	12	6557	gear	12734	4.6370000000000005
+B	druid/restoration	12	7047	gear	0	0.888
+B	druid/restoration	12	8192	gear	0	3.068
+B	druid/restoration	12	9834	gear	12734	11.949
+B	druid/restoration	12	11187	gear	0	0.052
+B	druid/restoration	12	11994	gear	12718	2.25
 B	druid/restoration	12	13183	mh	0	0.0
-B	druid/restoration	12	14122	gear	12734	4.098
-B	druid/restoration	12	14340	gear	0	0.616
-B	druid/restoration	12	14673	gear	0	0.23800000000000002
-B	druid/restoration	12	15945	oh	0	0.132
-B	druid/restoration	12	16711	gear	0	1.096
-B	druid/restoration	12	18726	gear	0	0.511
+B	druid/restoration	12	14122	gear	12734	4.182
+B	druid/restoration	12	14340	gear	0	8.554
+B	druid/restoration	12	14673	gear	0	2.3920000000000003
+B	druid/restoration	12	15945	oh	0	1.0
+B	druid/restoration	12	16711	gear	0	5.245
+B	druid/restoration	12	18726	gear	0	6.799
 B	druid/restoration	12	22397	ranged	0	0.0
-B	druid/restoration	12	252507	gear	0	6.532
-B	druid/restoration	12	254111	gear	0	5.328
-B	druid/restoration	12	270033	gear	0	0.273
-B	druid/restoration	12	273892	gear	0	23.64
-B	druid/restoration	12	280082	mh	0	77.09100000000001
-B	druid/restoration	25	1315	gear	0	4.295
-B	druid/restoration	25	1808	gear	0	1.628
-B	druid/restoration	25	1990	mh	12905	37.04
-B	druid/restoration	25	2140	mh	12917	5.58
+B	druid/restoration	12	252507	gear	0	10.888
+B	druid/restoration	12	254111	gear	0	9.012
+B	druid/restoration	12	270033	gear	0	0.507
+B	druid/restoration	12	273892	gear	0	29.506
+B	druid/restoration	12	280082	mh	0	74.91
+B	druid/restoration	25	1315	gear	0	7.05
+B	druid/restoration	25	1808	gear	0	1.406
+B	druid/restoration	25	1990	mh	12905	35.65
+B	druid/restoration	25	2140	mh	12917	5.39
 B	druid/restoration	25	2225	mh	0	0.0
-B	druid/restoration	25	2614	gear	0	0.638
-B	druid/restoration	25	3158	gear	0	0.572
+B	druid/restoration	25	2614	gear	0	0.5509999999999999
+B	druid/restoration	25	3158	gear	0	0.494
 B	druid/restoration	25	3570	mh	0	0.0
 B	druid/restoration	25	4023	mh	0	0.0
-B	druid/restoration	25	4570	mh	12918	10.32
+B	druid/restoration	25	4570	mh	12918	9.56
 B	druid/restoration	25	5079	gear	0	0.0
-B	druid/restoration	25	6540	gear	12734	6.616
-B	druid/restoration	25	6557	gear	12734	5.077999999999999
-B	druid/restoration	25	7047	gear	0	0.737
-B	druid/restoration	25	8192	gear	0	3.792
-B	druid/restoration	25	9834	gear	12734	12.606
-B	druid/restoration	25	11187	gear	0	0.088
-B	druid/restoration	25	11994	gear	12729	2.9
+B	druid/restoration	25	6540	gear	12756	6.692
+B	druid/restoration	25	6557	gear	12734	4.931
+B	druid/restoration	25	7047	gear	0	1.244
+B	druid/restoration	25	8192	gear	0	4.034
+B	druid/restoration	25	9834	gear	12756	12.827
+B	druid/restoration	25	11187	gear	0	0.076
+B	druid/restoration	25	11994	gear	12718	2.61
 B	druid/restoration	25	13183	mh	0	0.0
-B	druid/restoration	25	14122	gear	12734	4.308
-B	druid/restoration	25	14340	gear	0	9.155999999999999
-B	druid/restoration	25	14673	gear	0	2.6479999999999997
-B	druid/restoration	25	15945	oh	0	0.8260000000000001
-B	druid/restoration	25	16711	gear	0	6.43
-B	druid/restoration	25	18726	gear	0	7.306
+B	druid/restoration	25	14122	gear	12734	4.266
+B	druid/restoration	25	14340	gear	0	10.792
+B	druid/restoration	25	14673	gear	0	3.046
+B	druid/restoration	25	15945	oh	0	1.26
+B	druid/restoration	25	16711	gear	0	7.015000000000001
+B	druid/restoration	25	18726	gear	0	8.587
 B	druid/restoration	25	22397	ranged	0	0.0
-B	druid/restoration	25	252507	gear	0	11.472000000000001
-B	druid/restoration	25	254111	gear	0	11.348
-B	druid/restoration	25	270033	gear	0	0.858
-B	druid/restoration	25	273892	gear	0	33.711999999999996
-B	druid/restoration	25	280082	mh	0	77.793
-B	druid/restoration	34	1315	gear	0	7.8
-B	druid/restoration	34	1808	gear	0	1.3319999999999999
-B	druid/restoration	34	1990	mh	12905	37.76
-B	druid/restoration	34	2140	mh	12917	5.62
+B	druid/restoration	25	252507	gear	0	12.244
+B	druid/restoration	25	254111	gear	0	10.776
+B	druid/restoration	25	270033	gear	0	0.741
+B	druid/restoration	25	273892	gear	0	33.488
+B	druid/restoration	25	280082	mh	0	77.55
+B	druid/restoration	34	1315	gear	0	10.2
+B	druid/restoration	34	1808	gear	0	1.702
+B	druid/restoration	34	1990	mh	12905	37.519999999999996
+B	druid/restoration	34	2140	mh	12917	5.5600000000000005
 B	druid/restoration	34	2225	mh	0	0.0
-B	druid/restoration	34	2614	gear	0	0.5219999999999999
-B	druid/restoration	34	3158	gear	0	0.46799999999999997
+B	druid/restoration	34	2614	gear	0	0.667
+B	druid/restoration	34	3158	gear	0	0.598
 B	druid/restoration	34	3570	mh	0	0.0
 B	druid/restoration	34	4023	mh	0	0.0
-B	druid/restoration	34	4570	mh	12918	10.48
+B	druid/restoration	34	4570	mh	12918	10.24
 B	druid/restoration	34	5079	gear	0	0.0
-B	druid/restoration	34	6540	gear	12734	6.504
-B	druid/restoration	34	6557	gear	12734	4.882
-B	druid/restoration	34	7047	gear	0	1.668
-B	druid/restoration	34	8192	gear	0	3.6479999999999997
-B	druid/restoration	34	9834	gear	12734	12.314
-B	druid/restoration	34	11187	gear	0	0.072
+B	druid/restoration	34	6540	gear	12734	6.644
+B	druid/restoration	34	6557	gear	12734	5.127
+B	druid/restoration	34	7047	gear	0	2.3979999999999997
+B	druid/restoration	34	8192	gear	0	4.378
+B	druid/restoration	34	9834	gear	12734	12.679
+B	druid/restoration	34	11187	gear	0	0.092
 B	druid/restoration	34	11994	gear	12718	3.12
 B	druid/restoration	34	13183	mh	0	0.0
-B	druid/restoration	34	14122	gear	12734	4.252
-B	druid/restoration	34	14340	gear	0	9.564
-B	druid/restoration	34	14673	gear	0	2.712
-B	druid/restoration	34	15945	oh	0	1.3199999999999998
-B	druid/restoration	34	16711	gear	0	6.66
-B	druid/restoration	34	18726	gear	0	7.614
+B	druid/restoration	34	14122	gear	12734	4.322
+B	druid/restoration	34	14340	gear	0	11.143999999999998
+B	druid/restoration	34	14673	gear	0	3.182
+B	druid/restoration	34	15945	oh	0	1.68
+B	druid/restoration	34	16711	gear	0	7.835000000000001
+B	druid/restoration	34	18726	gear	0	8.879
 B	druid/restoration	34	22397	ranged	0	0.0
-B	druid/restoration	34	252507	gear	0	11.568
-B	druid/restoration	34	254111	gear	0	12.011999999999999
-B	druid/restoration	34	270033	gear	0	0.702
-B	druid/restoration	34	273892	gear	0	37.93599999999999
-B	druid/restoration	34	280082	mh	0	84.39
-B	druid/restoration	45	1315	gear	0	8.5
-B	druid/restoration	45	1808	gear	0	1.628
-B	druid/restoration	45	1990	mh	12907	37.62
-B	druid/restoration	45	2140	mh	12917	5.62
+B	druid/restoration	34	252507	gear	0	12.548
+B	druid/restoration	34	254111	gear	0	12.522000000000002
+B	druid/restoration	34	270033	gear	0	0.897
+B	druid/restoration	34	273892	gear	0	40.726
+B	druid/restoration	34	280082	mh	0	86.31
+B	druid/restoration	45	1315	gear	0	10.55
+B	druid/restoration	45	1808	gear	0	1.85
+B	druid/restoration	45	1990	mh	12907	36.73
+B	druid/restoration	45	2140	mh	12917	5.52
 B	druid/restoration	45	2225	mh	0	0.0
-B	druid/restoration	45	2614	gear	0	0.638
-B	druid/restoration	45	3158	gear	0	0.572
+B	druid/restoration	45	2614	gear	0	0.7250000000000001
+B	druid/restoration	45	3158	gear	0	0.65
 B	druid/restoration	45	3570	mh	0	0.0
 B	druid/restoration	45	4023	mh	0	0.0
-B	druid/restoration	45	4570	mh	12918	10.48
+B	druid/restoration	45	4570	mh	12918	10.08
 B	druid/restoration	45	5079	gear	0	0.0
-B	druid/restoration	45	6540	gear	12734	6.616
-B	druid/restoration	45	6557	gear	12734	5.077999999999999
-B	druid/restoration	45	7047	gear	0	2.572
-B	druid/restoration	45	8192	gear	0	3.142
-B	druid/restoration	45	9834	gear	12734	12.606
-B	druid/restoration	45	11187	gear	0	0.088
-B	druid/restoration	45	11994	gear	12729	3.1
+B	druid/restoration	45	6540	gear	12734	6.7
+B	druid/restoration	45	6557	gear	12734	5.225
+B	druid/restoration	45	7047	gear	0	2.8
+B	druid/restoration	45	8192	gear	0	4.199999999999999
+B	druid/restoration	45	9834	gear	12734	12.825
+B	druid/restoration	45	11187	gear	0	0.1
+B	druid/restoration	45	11994	gear	12720	2.85
 B	druid/restoration	45	13183	mh	0	0.0
-B	druid/restoration	45	14122	gear	12734	4.308
-B	druid/restoration	45	14340	gear	0	6.686
-B	druid/restoration	45	14673	gear	0	1.998
-B	druid/restoration	45	15945	oh	0	1.3
-B	druid/restoration	45	16711	gear	0	5.65
-B	druid/restoration	45	18726	gear	0	5.356
+B	druid/restoration	45	14122	gear	12734	4.35
+B	druid/restoration	45	14340	gear	0	9.989999999999998
+B	druid/restoration	45	14673	gear	0	2.9
+B	druid/restoration	45	15945	oh	0	1.68
+B	druid/restoration	45	16711	gear	0	7.525
+B	druid/restoration	45	18726	gear	0	7.975
 B	druid/restoration	45	22397	ranged	0	0.0
-B	druid/restoration	45	252507	gear	0	10.172
-B	druid/restoration	45	254111	gear	0	10.018
-B	druid/restoration	45	270033	gear	0	0.858
-B	druid/restoration	45	273892	gear	0	37.744
-B	druid/restoration	45	280082	mh	0	88.05
-B	druid/restoration	55	1315	gear	0	10.65
-B	druid/restoration	55	1808	gear	0	1.554
-B	druid/restoration	55	1990	mh	12907	38.74
-B	druid/restoration	55	2140	mh	12917	5.6899999999999995
+B	druid/restoration	45	252507	gear	0	12.0
+B	druid/restoration	45	254111	gear	0	11.36
+B	druid/restoration	45	270033	gear	0	0.9750000000000001
+B	druid/restoration	45	273892	gear	0	40.00999999999999
+B	druid/restoration	45	280082	mh	0	87.63
+B	druid/restoration	55	1315	gear	0	11.2
+B	druid/restoration	55	1808	gear	0	1.628
+B	druid/restoration	55	1990	mh	12907	37.44
+B	druid/restoration	55	2140	mh	12917	5.54
 B	druid/restoration	55	2225	mh	0	0.0
-B	druid/restoration	55	2614	gear	0	0.609
-B	druid/restoration	55	3158	gear	0	0.546
+B	druid/restoration	55	2614	gear	0	0.638
+B	druid/restoration	55	3158	gear	0	0.572
 B	druid/restoration	55	3570	mh	0	0.0
 B	druid/restoration	55	4023	mh	0	0.0
-B	druid/restoration	55	4570	mh	12918	10.76
+B	druid/restoration	55	4570	mh	12918	10.16
 B	druid/restoration	55	5079	gear	0	0.0
-B	druid/restoration	55	6540	gear	12734	6.588
-B	druid/restoration	55	6557	gear	12734	5.029
-B	druid/restoration	55	7047	gear	0	2.7960000000000003
-B	druid/restoration	55	8192	gear	0	3.7560000000000002
-B	druid/restoration	55	9834	gear	12734	12.533
-B	druid/restoration	55	11187	gear	0	0.084
-B	druid/restoration	55	11994	gear	12729	3.4499999999999997
+B	druid/restoration	55	6540	gear	12756	6.7059999999999995
+B	druid/restoration	55	6557	gear	12734	5.077999999999999
+B	druid/restoration	55	7047	gear	0	3.072
+B	druid/restoration	55	8192	gear	0	3.742
+B	druid/restoration	55	9834	gear	12756	12.916
+B	druid/restoration	55	11187	gear	0	0.088
+B	druid/restoration	55	11994	gear	12720	3.12
 B	druid/restoration	55	13183	mh	0	0.0
-B	druid/restoration	55	14122	gear	12734	4.2940000000000005
-B	druid/restoration	55	14340	gear	0	9.258000000000001
-B	druid/restoration	55	14673	gear	0	2.664
-B	druid/restoration	55	15945	oh	0	1.6800000000000002
-B	druid/restoration	55	16711	gear	0	7.215
-B	druid/restoration	55	18726	gear	0	7.383000000000001
+B	druid/restoration	55	14122	gear	12734	4.308
+B	druid/restoration	55	14340	gear	0	8.966000000000001
+B	druid/restoration	55	14673	gear	0	2.598
+B	druid/restoration	55	15945	oh	0	1.74
+B	druid/restoration	55	16711	gear	0	7.209999999999999
+B	druid/restoration	55	18726	gear	0	7.156
 B	druid/restoration	55	22397	ranged	0	0.0
-B	druid/restoration	55	252507	gear	0	11.496
-B	druid/restoration	55	254111	gear	0	12.414
-B	druid/restoration	55	270033	gear	0	0.8190000000000001
-B	druid/restoration	55	273892	gear	0	42.512
-B	druid/restoration	55	280082	mh	0	92.25
-B	druid/restoration	60	1315	gear	0	10.85
-B	druid/restoration	60	1808	gear	0	1.554
-B	druid/restoration	60	1990	mh	12907	39.65
-B	druid/restoration	60	2140	mh	12917	5.76
+B	druid/restoration	55	252507	gear	0	11.372
+B	druid/restoration	55	254111	gear	0	10.858
+B	druid/restoration	55	270033	gear	0	0.858
+B	druid/restoration	55	273892	gear	0	40.224000000000004
+B	druid/restoration	55	280082	mh	0	91.35
+B	druid/restoration	60	1315	gear	0	12.700000000000001
+B	druid/restoration	60	1808	gear	0	1.406
+B	druid/restoration	60	1990	mh	12907	38.39
+B	druid/restoration	60	2140	mh	12917	5.55
 B	druid/restoration	60	2225	mh	0	0.0
-B	druid/restoration	60	2614	gear	0	0.609
-B	druid/restoration	60	3158	gear	0	0.546
+B	druid/restoration	60	2614	gear	0	0.5509999999999999
+B	druid/restoration	60	3158	gear	0	0.494
 B	druid/restoration	60	3570	mh	0	0.0
 B	druid/restoration	60	4023	mh	0	0.0
-B	druid/restoration	60	4570	mh	12918	11.04
+B	druid/restoration	60	4570	mh	12918	10.2
 B	druid/restoration	60	5079	gear	0	0.0
-B	druid/restoration	60	6540	gear	12734	6.588
-B	druid/restoration	60	6557	gear	12734	5.029
-B	druid/restoration	60	7047	gear	0	2.896
-B	druid/restoration	60	8192	gear	0	3.706
-B	druid/restoration	60	9834	gear	12734	12.533
-B	druid/restoration	60	11187	gear	0	0.084
-B	druid/restoration	60	11994	gear	12729	3.8
+B	druid/restoration	60	6540	gear	12734	6.532
+B	druid/restoration	60	6557	gear	12734	4.931
+B	druid/restoration	60	7047	gear	0	3.5940000000000003
+B	druid/restoration	60	8192	gear	0	3.334
+B	druid/restoration	60	9834	gear	12734	12.387
+B	druid/restoration	60	11187	gear	0	0.076
+B	druid/restoration	60	11994	gear	12720	3.51
 B	druid/restoration	60	13183	mh	0	0.0
-B	druid/restoration	60	14122	gear	12734	4.2940000000000005
-B	druid/restoration	60	14340	gear	0	9.068
-B	druid/restoration	60	14673	gear	0	2.614
-B	druid/restoration	60	15945	oh	0	1.7
-B	druid/restoration	60	16711	gear	0	7.455
-B	druid/restoration	60	18726	gear	0	7.2330000000000005
+B	druid/restoration	60	14122	gear	12734	4.266
+B	druid/restoration	60	14340	gear	0	8.132000000000001
+B	druid/restoration	60	14673	gear	0	2.346
+B	druid/restoration	60	15945	oh	0	1.92
+B	druid/restoration	60	16711	gear	0	6.895
+B	druid/restoration	60	18726	gear	0	6.487
 B	druid/restoration	60	22397	ranged	0	0.0
-B	druid/restoration	60	252507	gear	0	11.396
-B	druid/restoration	60	254111	gear	0	12.914000000000001
-B	druid/restoration	60	270033	gear	0	0.8190000000000001
-B	druid/restoration	60	273892	gear	0	43.962
-B	druid/restoration	60	280082	mh	0	95.37
+B	druid/restoration	60	252507	gear	0	10.844000000000001
+B	druid/restoration	60	254111	gear	0	10.396
+B	druid/restoration	60	270033	gear	0	0.741
+B	druid/restoration	60	273892	gear	0	41.248000000000005
+B	druid/restoration	60	280082	mh	0	95.52
 B	druid/feral	12	1315	gear	0	19.4
 B	druid/feral	12	1808	gear	0	7.3260000000000005
 B	druid/feral	12	1990	mh	12722	189.628
@@ -40341,30 +40341,30 @@ G	mage/arcane	40	mainhand:864,offhand:7555	offhand	9882	12756	0	0	14.0
 G	mage/arcane	40	mainhand:864,offhand:7555	offhand	7556	12756	0	0	13.0	
 G	mage/arcane	40	mainhand:864,offhand:7555	offhand	249394	0	0	0	11.56	
 G	mage/arcane	40	mainhand:864,offhand:7555	offhand	7609	12756	0	0	11.0	
-G	warlock/demonology	18	mainhand:1219,offhand:7554	mainhand	6505	0	0	0	27.34	13670.0
-G	warlock/demonology	18	mainhand:1219,offhand:7554	mainhand	251534	0	0	0	27.1	13550.0
-G	warlock/demonology	18	mainhand:1219,offhand:7554	mainhand	5201	0	0	0	24.6	12300.0
-G	warlock/demonology	18	mainhand:1219,offhand:7554	mainhand	2169	0	0	0	21.8	10900.0
-G	warlock/demonology	18	mainhand:1219,offhand:7554	mainhand	1484	0	0	0	19.9	9950.0
-G	warlock/demonology	18	mainhand:1219,offhand:7554	mainhand	15444	0	0	0	18.52	9260.0
-G	warlock/demonology	18	mainhand:1219,offhand:7554	mainhand	271095	0	0	0	18.28	9140.0
-G	warlock/demonology	18	mainhand:1219,offhand:7554	mainhand	270228	0	0	0	17.8	8900.0
-G	warlock/demonology	18	mainhand:1219,offhand:7554	mainhand	276888	0	0	0	16.3	8150.0
-G	warlock/demonology	18	mainhand:1219,offhand:7554	mainhand	6631	0	0	0	15.65	7825.0
-G	warlock/demonology	18	mainhand:1219,offhand:7554	mainhand	16894	0	0	0	14.8	7400.0
-G	warlock/demonology	18	mainhand:1219,offhand:7554	mainhand	3452	0	0	0	14.5	7250.0
+G	warlock/demonology	18	mainhand:1219,offhand:7554	mainhand	251534	0	0	0	28.26	19622.2
+G	warlock/demonology	18	mainhand:1219,offhand:7554	mainhand	6505	0	0	0	26.98	18738.2
+G	warlock/demonology	18	mainhand:1219,offhand:7554	mainhand	5201	0	0	0	24.43	16966.7
+G	warlock/demonology	18	mainhand:1219,offhand:7554	mainhand	2169	0	0	0	21.86	15177.8
+G	warlock/demonology	18	mainhand:1219,offhand:7554	mainhand	1484	0	0	0	20.44	14196.5
+G	warlock/demonology	18	mainhand:1219,offhand:7554	mainhand	15444	0	0	0	18.39	12770.8
+G	warlock/demonology	18	mainhand:1219,offhand:7554	mainhand	271095	0	0	0	18.21	12647.2
+G	warlock/demonology	18	mainhand:1219,offhand:7554	mainhand	270228	0	0	0	17.86	12400.0
+G	warlock/demonology	18	mainhand:1219,offhand:7554	mainhand	276888	0	0	0	16.51	11468.1
+G	warlock/demonology	18	mainhand:1219,offhand:7554	mainhand	6631	0	0	0	16.2	11250.0
+G	warlock/demonology	18	mainhand:1219,offhand:7554	mainhand	16894	0	0	0	14.59	10131.3
+G	warlock/demonology	18	mainhand:1219,offhand:7554	mainhand	3452	0	0	0	14.36	9972.2
 G	warlock/demonology	18	mainhand:1219,offhand:7554	offhand	15912	12734	0	0	5.0	
 G	warlock/demonology	18	mainhand:1219,offhand:7554	offhand	7554	12734	0	0	4.0	
-G	warlock/demonology	18	mainhand:1219,offhand:7554	offhand	273137	0	0	0	3.3	
-G	warlock/demonology	18	mainhand:1219,offhand:7554	offhand	5183	0	0	0	2.52	
-G	warlock/demonology	18	mainhand:1219,offhand:7554	offhand	15933	12761	0	0	2.1	
-G	warlock/demonology	18	mainhand:1219,offhand:7554	offhand	15970	12761	0	0	2.1	
-G	warlock/demonology	18	mainhand:1219,offhand:7554	offhand	2879	0	0	0	1.74	
+G	warlock/demonology	18	mainhand:1219,offhand:7554	offhand	273137	0	0	0	3.22	
+G	warlock/demonology	18	mainhand:1219,offhand:7554	offhand	5183	0	0	0	2.86	
+G	warlock/demonology	18	mainhand:1219,offhand:7554	offhand	15933	12761	0	0	2.19	
+G	warlock/demonology	18	mainhand:1219,offhand:7554	offhand	15970	12761	0	0	2.19	
+G	warlock/demonology	18	mainhand:1219,offhand:7554	offhand	2879	0	0	0	2.04	
 G	warlock/demonology	18	mainhand:1219,offhand:7554	offhand	15932	12734	0	0	1.0	
 G	warlock/demonology	18	mainhand:1219,offhand:7554	offhand	15969	12734	0	0	1.0	
-G	warlock/demonology	18	mainhand:1219,offhand:7554	offhand	1172	0	0	0	0.52	
-G	warlock/demonology	18	mainhand:1219,offhand:7554	offhand	7608	0	0	0	0.49	
-G	warlock/demonology	18	mainhand:1219,offhand:7554	offhand	3451	0	0	0	0.39	
+G	warlock/demonology	18	mainhand:1219,offhand:7554	offhand	1172	0	0	0	0.96	
+G	warlock/demonology	18	mainhand:1219,offhand:7554	offhand	3451	0	0	0	0.72	
+G	warlock/demonology	18	mainhand:1219,offhand:7554	offhand	7608	0	0	0	0.51	
 G	warlock/affliction	20	mainhand:1484	mainhand	2567	0	6898	0	11.26	39.0
 G	warlock/affliction	20	mainhand:1484	mainhand	15109	0	0	0	8.21	28.4
 G	warlock/affliction	20	mainhand:1484	mainhand	2169	0	6898	0	4.33	15.0
@@ -40383,30 +40383,30 @@ G	warlock/affliction	20	mainhand:1484	offhand	15969	12734	2567	0	3.36	11.6
 G	warlock/affliction	20	mainhand:1484	offhand	6341	0	2567	0	3.14	10.9
 G	warlock/affliction	20	mainhand:1484	offhand	7559	0	2567	0	2.92	10.1
 G	warlock/affliction	20	mainhand:1484	offhand	274743	0	2567	0	2.91	10.1
-G	warlock/destruction	30	mainhand:3413,offhand:4837	mainhand	6691	0	0	0	41.59	10664.1
-G	warlock/destruction	30	mainhand:3413,offhand:4837	mainhand	249393	0	0	0	36.54	1668.5
-G	warlock/destruction	30	mainhand:3413,offhand:4837	mainhand	273053	0	0	0	36.26	9297.4
-G	warlock/destruction	30	mainhand:3413,offhand:4837	mainhand	273040	0	0	0	35.63	1626.9
-G	warlock/destruction	30	mainhand:3413,offhand:4837	mainhand	274158	0	0	0	33.94	1549.8
-G	warlock/destruction	30	mainhand:3413,offhand:4837	mainhand	249392	0	0	0	33.9	1547.9
-G	warlock/destruction	30	mainhand:3413,offhand:4837	mainhand	9452	0	0	0	33.81	1543.8
-G	warlock/destruction	30	mainhand:3413,offhand:4837	mainhand	15109	0	0	0	33.63	1535.6
-G	warlock/destruction	30	mainhand:3413,offhand:4837	mainhand	273827	0	0	0	33.61	8617.9
-G	warlock/destruction	30	mainhand:3413,offhand:4837	mainhand	1155	0	0	0	33.11	1511.9
-G	warlock/destruction	30	mainhand:3413,offhand:4837	mainhand	2280	0	0	0	29.99	1369.4
-G	warlock/destruction	30	mainhand:3413,offhand:4837	mainhand	2271	0	0	0	29.98	1368.9
-G	warlock/destruction	30	mainhand:3413,offhand:4837	offhand	6898	0	0	0	7.2	400.0
-G	warlock/destruction	30	mainhand:3413,offhand:4837	offhand	7609	12734	0	0	7.2	400.0
-G	warlock/destruction	30	mainhand:3413,offhand:4837	offhand	273027	0	0	0	6.96	386.7
-G	warlock/destruction	30	mainhand:3413,offhand:4837	offhand	15934	12734	0	0	6.2	344.4
-G	warlock/destruction	30	mainhand:3413,offhand:4837	offhand	15935	12734	0	0	6.2	344.4
-G	warlock/destruction	30	mainhand:3413,offhand:4837	offhand	249394	0	0	0	5.56	308.9
-G	warlock/destruction	30	mainhand:3413,offhand:4837	offhand	9800	12734	0	0	5.2	288.9
-G	warlock/destruction	30	mainhand:3413,offhand:4837	offhand	273052	0	0	0	4.72	262.2
-G	warlock/destruction	30	mainhand:3413,offhand:4837	offhand	2565	0	0	0	4.31	239.4
-G	warlock/destruction	30	mainhand:3413,offhand:4837	offhand	7558	12734	0	0	4.2	233.3
-G	warlock/destruction	30	mainhand:3413,offhand:4837	offhand	249395	0	0	0	4.0	222.2
-G	warlock/destruction	30	mainhand:3413,offhand:4837	offhand	15912	12734	0	0	3.2	177.8
+G	warlock/destruction	30	mainhand:3413,offhand:4837	mainhand	6691	0	0	0	41.95	22551.6
+G	warlock/destruction	30	mainhand:3413,offhand:4837	mainhand	249393	0	0	0	36.7	1298.5
+G	warlock/destruction	30	mainhand:3413,offhand:4837	mainhand	273053	0	0	0	36.12	19421.5
+G	warlock/destruction	30	mainhand:3413,offhand:4837	mainhand	273040	0	0	0	34.04	1204.6
+G	warlock/destruction	30	mainhand:3413,offhand:4837	mainhand	1155	0	0	0	34.01	1203.6
+G	warlock/destruction	30	mainhand:3413,offhand:4837	mainhand	273827	0	0	0	33.81	18179.6
+G	warlock/destruction	30	mainhand:3413,offhand:4837	mainhand	9452	0	0	0	33.17	1173.9
+G	warlock/destruction	30	mainhand:3413,offhand:4837	mainhand	274158	0	0	0	32.26	1141.4
+G	warlock/destruction	30	mainhand:3413,offhand:4837	mainhand	249392	0	0	0	31.86	1127.2
+G	warlock/destruction	30	mainhand:3413,offhand:4837	mainhand	15109	0	0	0	31.7	1121.8
+G	warlock/destruction	30	mainhand:3413,offhand:4837	mainhand	2271	0	0	0	30.13	1066.2
+G	warlock/destruction	30	mainhand:3413,offhand:4837	mainhand	2567	0	0	0	30.01	16136.6
+G	warlock/destruction	30	mainhand:3413,offhand:4837	offhand	7609	12734	0	0	6.36	240.9
+G	warlock/destruction	30	mainhand:3413,offhand:4837	offhand	6898	0	0	0	6.27	237.5
+G	warlock/destruction	30	mainhand:3413,offhand:4837	offhand	273027	0	0	0	5.61	212.4
+G	warlock/destruction	30	mainhand:3413,offhand:4837	offhand	15934	12734	0	0	5.36	203.0
+G	warlock/destruction	30	mainhand:3413,offhand:4837	offhand	15935	12734	0	0	5.36	203.0
+G	warlock/destruction	30	mainhand:3413,offhand:4837	offhand	273052	0	0	0	4.88	184.8
+G	warlock/destruction	30	mainhand:3413,offhand:4837	offhand	2565	0	0	0	4.64	175.8
+G	warlock/destruction	30	mainhand:3413,offhand:4837	offhand	9800	12734	0	0	4.36	165.2
+G	warlock/destruction	30	mainhand:3413,offhand:4837	offhand	249394	0	0	0	4.36	165.2
+G	warlock/destruction	30	mainhand:3413,offhand:4837	offhand	249395	0	0	0	4.0	151.5
+G	warlock/destruction	30	mainhand:3413,offhand:4837	offhand	7558	12734	0	0	3.36	127.3
+G	warlock/destruction	30	mainhand:3413,offhand:4837	offhand	15912	12734	0	0	2.36	89.4
 G	shaman/elemental	40	mainhand:7736,offhand:4068	mainhand	873	0	0	0	61.6	102.8
 G	shaman/elemental	40	mainhand:7736,offhand:4068	mainhand	271803	0	0	0	45.48	75.9
 G	shaman/elemental	40	mainhand:7736,offhand:4068	mainhand	274606	0	0	0	40.48	67.6
@@ -40455,18 +40455,18 @@ G	druid/balance	30	mainhand:865,offhand:4837	mainhand	2271	0	0	0	31.23	4731.8
 G	druid/balance	30	mainhand:865,offhand:4837	mainhand	285350	0	0	0	31.12	4715.2
 G	druid/balance	30	mainhand:865,offhand:4837	mainhand	6505	0	0	0	30.87	4677.3
 G	druid/balance	30	mainhand:865,offhand:4837	mainhand	3851	0	0	0	27.06	4100.0
-G	druid/restoration	34	mainhand:7736	mainhand	7713	0	0	0	53.02	3156.0
-G	druid/restoration	34	mainhand:7736	mainhand	7757	0	0	0	47.79	2844.6
-G	druid/restoration	34	mainhand:7736	mainhand	249392	0	0	0	43.76	2604.8
-G	druid/restoration	34	mainhand:7736	mainhand	273040	0	0	0	40.2	2392.9
-G	druid/restoration	34	mainhand:7736	mainhand	249393	0	0	0	39.58	2356.0
-G	druid/restoration	34	mainhand:7736	mainhand	274158	0	0	0	39.44	2347.6
-G	druid/restoration	34	mainhand:7736	mainhand	15260	12905	0	0	38.5	2291.7
-G	druid/restoration	34	mainhand:7736	mainhand	1990	12905	0	0	36.08	2147.6
-G	druid/restoration	34	mainhand:7736	mainhand	9452	0	0	0	34.32	2042.9
-G	druid/restoration	34	mainhand:7736	mainhand	3185	12905	0	0	33.46	1991.7
-G	druid/restoration	34	mainhand:7736	mainhand	1155	0	0	0	32.96	1961.9
-G	druid/restoration	34	mainhand:7736	mainhand	2271	0	0	0	32.5	1934.5
+G	druid/restoration	34	mainhand:7736	mainhand	7713	0	0	0	53.71	2797.4
+G	druid/restoration	34	mainhand:7736	mainhand	7757	0	0	0	48.57	2529.7
+G	druid/restoration	34	mainhand:7736	mainhand	249392	0	0	0	43.52	2266.7
+G	druid/restoration	34	mainhand:7736	mainhand	249393	0	0	0	41.32	2152.1
+G	druid/restoration	34	mainhand:7736	mainhand	273040	0	0	0	40.8	2125.0
+G	druid/restoration	34	mainhand:7736	mainhand	274158	0	0	0	40.76	2122.9
+G	druid/restoration	34	mainhand:7736	mainhand	15260	12905	0	0	38.08	1983.3
+G	druid/restoration	34	mainhand:7736	mainhand	1990	12905	0	0	35.6	1854.2
+G	druid/restoration	34	mainhand:7736	mainhand	9452	0	0	0	34.08	1775.0
+G	druid/restoration	34	mainhand:7736	mainhand	1155	0	0	0	34.04	1772.9
+G	druid/restoration	34	mainhand:7736	mainhand	2271	0	0	0	34.0	1770.8
+G	druid/restoration	34	mainhand:7736	mainhand	285350	0	0	0	33.64	1752.1
 G	rogue/combat	30	mainhand:6738,offhand:15242	mainhand	13033	0	0	0	43.72	44.4
 G	rogue/combat	30	mainhand:6738,offhand:15242	mainhand	19553	0	0	0	33.48	34.0
 G	rogue/combat	30	mainhand:6738,offhand:15242	mainhand	19557	0	0	0	33.48	34.0
@@ -40574,12 +40574,12 @@ S	mage/frost	18	mainhand:1219,offhand:7554	2h	31.95	2169:0	2879:0	6505:0	6505:0	
 S	mage/fire	30	mainhand:3413,offhand:4837	pair	55.74	6691:0	273027:0	273040:0	6691:0	44.14	273027:0	11.6	0
 S	mage/arcane	25	mainhand:1484	2h	33.77	2567:0	9800:12756	2271:0	2271:0	33.77	0:0	0.0	1
 S	warlock/affliction	21	mainhand:5306	pair	26.8	2567:0	6898:0	15109:0	2567:0	17.8	6898:0	9.0	0
-S	warlock/destruction	30	mainhand:3413,offhand:4837	pair	48.79	6691:0	6898:0	249393:0	6691:0	41.59	6898:0	7.2	0
+S	warlock/destruction	30	mainhand:3413,offhand:4837	pair	48.31	6691:0	7609:12734	249393:0	6691:0	41.95	7609:12734	6.36	0
 S	shaman/elemental	40	mainhand:7736,offhand:4068	2h	61.6	0:0	0:0	873:0	873:0	61.6	0:0	0.0	1
 S	shaman/restoration	25	mainhand:1484	2h	96.29	0:0	0:0	1155:0	1155:0	96.29	0:0	0.0	1
 S	paladin/holy	40	mainhand:1207,offhand:7465	2h	137.42	0:0	0:0	276203:0	276203:0	137.42	0:0	0.0	1
 S	druid/balance	30	mainhand:865,offhand:4837	2h	42.03	0:0	0:0	249392:0	249392:0	42.03	0:0	0.0	1
-S	druid/restoration	34	mainhand:7736	2h	53.02	0:0	0:0	7713:0	7713:0	53.02	0:0	0.0	1
+S	druid/restoration	34	mainhand:7736	2h	53.71	0:0	0:0	7713:0	7713:0	53.71	0:0	0.0	1
 S	rogue/combat	30	mainhand:6738,offhand:15242	pair	63.36	13033:0	16886:0	0:0	13033:0	43.72	16886:0	19.63	0
 S	rogue/combat	22		pair	120.7	285346:0	3413:0	0:0	285346:0	94.18	3413:0	26.52	0
 S	warrior/fury	30	mainhand:6738,offhand:2080	pair	54.82	6692:0	19545:0	0:0	6692:0	31.16	19545:0	23.66	0

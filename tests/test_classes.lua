@@ -19,7 +19,7 @@ end
 -- python3 -c 'A.score(A.instance(d, id), A.bands_for(spec, level)[0]["weights"], cls, role)'
 local WEBSITE = {
 	{ "warlock/affliction", 20, 11288, "ranged", 65.2 },      -- Greater Magic Wand
-	{ "warlock/destruction", 20, 6540, "gear", 0.154 },       -- Willow Pants (armor only)
+	{ "warlock/destruction", 20, 6540, "gear", 0.126 },       -- Willow Pants (armor only)
 	{ "shaman/elemental", 40, 4007, "gear", 5.376 },          -- Overlinked Chain Armor (mail at 40)
 	{ "paladin/holy", 40, 7922, "gear", 73.11 },              -- Steel Plate Helm (plate at 40)
 	{ "paladin/holy", 40, 4068, "oh", 105.003 },              -- Chief Brigadier Shield
