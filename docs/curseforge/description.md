@@ -1,4 +1,4 @@
-![PoleSim Gear: the Gear Plan](https://raw.githubusercontent.com/petllama/polesim-gear/main/docs/curseforge/gallery/01-gear-plan.png)
+![PoleSim Gear: the Gear Plan](https://raw.githubusercontent.com/petllama/polesim-gear/main/docs/curseforge/media/gear-plan.png)
 
 **PoleSim Gear** scores your gear for **leveling** in WoW: Forever. Its stat weights come from PoleSim, a combat simulator that levels every spec from 10 to 60 and measures what actually makes you kill faster: the weights change with your level, so a Spirit or wand point is worth what it is worth *at your level*, not at 60.
 
@@ -17,7 +17,7 @@ It is a companion to **Polestar** (required): it reads Polestar's item and quest
 - **Auction house upgrades:** one click scans the auction house for upgrades you can use, sorted by gain, gain per gold, price or deals (items well below their usual price). Click a row to see its listings. Buying is always yours.
 - **Weapons done right:** two-handers against main hand + off hand as one set, weapon speed for specs that care about it, daggers for Backstab rogues, bows/guns/crossbows for hunters.
 
-![Auction house upgrades](https://raw.githubusercontent.com/petllama/polesim-gear/main/docs/curseforge/gallery/06-auction-house.png)
+![Auction house upgrades](https://raw.githubusercontent.com/petllama/polesim-gear/main/docs/curseforge/media/auction-house.png)
 
 ## Classes and specs
 
