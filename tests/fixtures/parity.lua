@@ -6958,33 +6958,33 @@ R	druid/restoration	60	254111	0	gear	12.914000000000001	int:9:int:0.76:6.84,sta:
 R	druid/restoration	60	270033	0	gear	0.8190000000000001	armor:39:armor:0.021:0.819
 R	druid/restoration	60	273892	0	gear	43.962	sta:20:sta:0.38:7.6,int:19:int:0.76:14.44,spi:16:spi:0.47:7.52,spDmg:11:sp:1:11,armor:162:armor:0.021:3.402
 R	druid/restoration	60	280082	0	mh	95.37	int:15:int:0.76:11.4,hit:1.5:spellHit:5.4:8.1,spi:21:spi:0.47:9.87,sp:66:sp:1:66
-R	druid/feral	12	1315	0	gear	18.65	sta:10:sta:1.4:14,spi:15:spi:0.31:4.65
-R	druid/feral	12	1808	0	gear	7.4	armor:74:armor:0.1:7.4
+R	druid/feral	12	1315	0	gear	19.4	sta:10:sta:1.4:14,spi:15:spi:0.36:5.4
+R	druid/feral	12	1808	0	gear	7.3260000000000005	armor:74:armor:0.099:7.326
 R	druid/feral	12	1990	0	mh	168.028	dps:24.71:dps:6.8:168.028
-R	druid/feral	12	1990	12718	mh	181.798	int:9:int:0.13:1.17,sta:9:sta:1.4:12.6,dps:24.71:dps:6.8:168.028
-R	druid/feral	12	1990	12905	mh	136.214	int:11:int:0.13:1.43,sta:7:sta:1.4:9.8,dps:18.38:dps:6.8:124.984
+R	druid/feral	12	1990	12718	mh	182.428	int:9:int:0.2:1.8,sta:9:sta:1.4:12.6,dps:24.71:dps:6.8:168.028
+R	druid/feral	12	1990	12905	mh	136.98399999999998	int:11:int:0.2:2.2,sta:7:sta:1.4:9.8,dps:18.38:dps:6.8:124.984
 R	druid/feral	12	2140	0	mh	40.392	dps:5.94:dps:6.8:40.392
-R	druid/feral	12	2140	12718	mh	41.922000000000004	int:1:int:0.13:0.13,sta:1:sta:1.4:1.4,dps:5.94:dps:6.8:40.392
-R	druid/feral	12	2140	12917	mh	25.63	int:1:int:0.13:0.13,dps:3.75:dps:6.8:25.5
+R	druid/feral	12	2140	12718	mh	41.992000000000004	int:1:int:0.2:0.2,sta:1:sta:1.4:1.4,dps:5.94:dps:6.8:40.392
+R	druid/feral	12	2140	12917	mh	25.7	int:1:int:0.2:0.2,dps:3.75:dps:6.8:25.5
 R	druid/feral	12	2225	0	mh	34.0	dps:5:dps:6.8:34
-R	druid/feral	12	2614	0	gear	2.9000000000000004	armor:29:armor:0.1:2.9
-R	druid/feral	12	3158	0	gear	2.6	armor:26:armor:0.1:2.6
+R	druid/feral	12	2614	0	gear	2.871	armor:29:armor:0.099:2.871
+R	druid/feral	12	3158	0	gear	2.5740000000000003	armor:26:armor:0.099:2.574
 R	druid/feral	12	3570	0	mh	57.215999999999994	str:2:str:1:2,dps:8.12:dps:6.8:55.216
 R	druid/feral	12	4023	0	mh	104.448	dps:15.36:dps:6.8:104.448
 R	druid/feral	12	4570	0	mh	68.0	dps:10:dps:6.8:68
-R	druid/feral	12	4570	12718	mh	72.59	int:3:int:0.13:0.39,sta:3:sta:1.4:4.2,dps:10:dps:6.8:68
-R	druid/feral	12	4570	12719	mh	73.13	spi:3:spi:0.31:0.93,sta:3:sta:1.4:4.2,dps:10:dps:6.8:68
-R	druid/feral	12	4570	12720	mh	69.32	int:3:int:0.13:0.39,spi:3:spi:0.31:0.93,dps:10:dps:6.8:68
-R	druid/feral	12	4570	12721	mh	73.01	agi:3:agi:0.27:0.81,sta:3:sta:1.4:4.2,dps:10:dps:6.8:68
+R	druid/feral	12	4570	12718	mh	72.8	int:3:int:0.2:0.6,sta:3:sta:1.4:4.2,dps:10:dps:6.8:68
+R	druid/feral	12	4570	12719	mh	73.28	spi:3:spi:0.36:1.08,sta:3:sta:1.4:4.2,dps:10:dps:6.8:68
+R	druid/feral	12	4570	12720	mh	69.68	int:3:int:0.2:0.6,spi:3:spi:0.36:1.08,dps:10:dps:6.8:68
+R	druid/feral	12	4570	12721	mh	73.03999999999999	agi:3:agi:0.28:0.84,sta:3:sta:1.4:4.2,dps:10:dps:6.8:68
 R	druid/feral	12	4570	12722	mh	75.2	sta:3:sta:1.4:4.2,str:3:str:1:3,dps:10:dps:6.8:68
-R	druid/feral	12	4570	12723	mh	71.39	int:3:int:0.13:0.39,str:3:str:1:3,dps:10:dps:6.8:68
-R	druid/feral	12	4570	12724	mh	69.2	agi:3:agi:0.27:0.81,int:3:int:0.13:0.39,dps:10:dps:6.8:68
-R	druid/feral	12	4570	12725	mh	71.93	spi:3:spi:0.31:0.93,str:3:str:1:3,dps:10:dps:6.8:68
-R	druid/feral	12	4570	12726	mh	69.74	agi:3:agi:0.27:0.81,spi:3:spi:0.31:0.93,dps:10:dps:6.8:68
-R	druid/feral	12	4570	12727	mh	71.81	agi:3:agi:0.27:0.81,str:3:str:1:3,dps:10:dps:6.8:68
-R	druid/feral	12	4570	12728	mh	69.08	agi:4:agi:0.27:1.08,dps:10:dps:6.8:68
-R	druid/feral	12	4570	12729	mh	68.52	int:4:int:0.13:0.52,dps:10:dps:6.8:68
-R	druid/feral	12	4570	12730	mh	69.24	spi:4:spi:0.31:1.24,dps:10:dps:6.8:68
+R	druid/feral	12	4570	12723	mh	71.6	int:3:int:0.2:0.6,str:3:str:1:3,dps:10:dps:6.8:68
+R	druid/feral	12	4570	12724	mh	69.44	agi:3:agi:0.28:0.84,int:3:int:0.2:0.6,dps:10:dps:6.8:68
+R	druid/feral	12	4570	12725	mh	72.08	spi:3:spi:0.36:1.08,str:3:str:1:3,dps:10:dps:6.8:68
+R	druid/feral	12	4570	12726	mh	69.92	agi:3:agi:0.28:0.84,spi:3:spi:0.36:1.08,dps:10:dps:6.8:68
+R	druid/feral	12	4570	12727	mh	71.84	agi:3:agi:0.28:0.84,str:3:str:1:3,dps:10:dps:6.8:68
+R	druid/feral	12	4570	12728	mh	69.12	agi:4:agi:0.28:1.12,dps:10:dps:6.8:68
+R	druid/feral	12	4570	12729	mh	68.8	int:4:int:0.2:0.8,dps:10:dps:6.8:68
+R	druid/feral	12	4570	12730	mh	69.44	spi:4:spi:0.36:1.44,dps:10:dps:6.8:68
 R	druid/feral	12	4570	12731	mh	73.6	sta:4:sta:1.4:5.6,dps:10:dps:6.8:68
 R	druid/feral	12	4570	12732	mh	72.0	str:4:str:1:4,dps:10:dps:6.8:68
 R	druid/feral	12	4570	12733	mh	72.0	ap:8:ap:0.5:4,dps:10:dps:6.8:68
@@ -6995,732 +6995,732 @@ R	druid/feral	12	4570	12742	mh	72.2	sta:3:sta:1.4:4.2,dps:10:dps:6.8:68
 R	druid/feral	12	4570	12743	mh	72.2	sta:3:sta:1.4:4.2,dps:10:dps:6.8:68
 R	druid/feral	12	4570	12744	mh	72.2	sta:3:sta:1.4:4.2,dps:10:dps:6.8:68
 R	druid/feral	12	4570	12759	mh	68.0	dps:10:dps:6.8:68
-R	druid/feral	12	4570	12918	mh	52.064	int:4:int:0.13:0.52,dps:7.58:dps:6.8:51.544
-R	druid/feral	12	4570	12919	mh	52.064	int:4:int:0.13:0.52,dps:7.58:dps:6.8:51.544
+R	druid/feral	12	4570	12918	mh	52.343999999999994	int:4:int:0.2:0.8,dps:7.58:dps:6.8:51.544
+R	druid/feral	12	4570	12919	mh	52.343999999999994	int:4:int:0.2:0.8,dps:7.58:dps:6.8:51.544
 R	druid/feral	12	5079	0	gear	0.0	
-R	druid/feral	12	6540	0	gear	2.8000000000000003	armor:28:armor:0.1:2.8
-R	druid/feral	12	6540	12718	gear	7.389999999999999	int:3:int:0.13:0.39,sta:3:sta:1.4:4.2,armor:28:armor:0.1:2.8
-R	druid/feral	12	6540	12719	gear	7.93	spi:3:spi:0.31:0.93,sta:3:sta:1.4:4.2,armor:28:armor:0.1:2.8
-R	druid/feral	12	6540	12720	gear	4.12	int:3:int:0.13:0.39,spi:3:spi:0.31:0.93,armor:28:armor:0.1:2.8
-R	druid/feral	12	6540	12729	gear	3.45	int:5:int:0.13:0.65,armor:28:armor:0.1:2.8
-R	druid/feral	12	6540	12730	gear	4.3500000000000005	spi:5:spi:0.31:1.55,armor:28:armor:0.1:2.8
-R	druid/feral	12	6540	12731	gear	9.8	sta:5:sta:1.4:7,armor:28:armor:0.1:2.8
-R	druid/feral	12	6540	12734	gear	2.8000000000000003	armor:28:armor:0.1:2.8
-R	druid/feral	12	6540	12735	gear	2.8000000000000003	armor:28:armor:0.1:2.8
-R	druid/feral	12	6540	12740	gear	7.0	sta:3:sta:1.4:4.2,armor:28:armor:0.1:2.8
-R	druid/feral	12	6540	12741	gear	7.0	sta:3:sta:1.4:4.2,armor:28:armor:0.1:2.8
-R	druid/feral	12	6540	12742	gear	7.0	sta:3:sta:1.4:4.2,armor:28:armor:0.1:2.8
-R	druid/feral	12	6540	12743	gear	7.0	sta:3:sta:1.4:4.2,armor:28:armor:0.1:2.8
-R	druid/feral	12	6540	12744	gear	7.0	sta:3:sta:1.4:4.2,armor:28:armor:0.1:2.8
-R	druid/feral	12	6540	12745	gear	6.12	int:4:int:0.13:0.52,sta:2:sta:1.4:2.8,armor:28:armor:0.1:2.8
-R	druid/feral	12	6540	12756	gear	2.8000000000000003	armor:28:armor:0.1:2.8
-R	druid/feral	12	6540	12757	gear	2.8000000000000003	armor:28:armor:0.1:2.8
-R	druid/feral	12	6540	12758	gear	2.8000000000000003	armor:28:armor:0.1:2.8
-R	druid/feral	12	6540	12759	gear	2.8000000000000003	armor:28:armor:0.1:2.8
-R	druid/feral	12	6540	12761	gear	2.8000000000000003	armor:28:armor:0.1:2.8
-R	druid/feral	12	6557	0	gear	4.9	armor:49:armor:0.1:4.9
-R	druid/feral	12	6557	12718	gear	7.96	int:2:int:0.13:0.26,sta:2:sta:1.4:2.8,armor:49:armor:0.1:4.9
-R	druid/feral	12	6557	12719	gear	8.32	spi:2:spi:0.31:0.62,sta:2:sta:1.4:2.8,armor:49:armor:0.1:4.9
-R	druid/feral	12	6557	12720	gear	5.78	int:2:int:0.13:0.26,spi:2:spi:0.31:0.62,armor:49:armor:0.1:4.9
-R	druid/feral	12	6557	12721	gear	8.24	agi:2:agi:0.27:0.54,sta:2:sta:1.4:2.8,armor:49:armor:0.1:4.9
-R	druid/feral	12	6557	12722	gear	9.7	sta:2:sta:1.4:2.8,str:2:str:1:2,armor:49:armor:0.1:4.9
-R	druid/feral	12	6557	12723	gear	7.16	int:2:int:0.13:0.26,str:2:str:1:2,armor:49:armor:0.1:4.9
-R	druid/feral	12	6557	12724	gear	5.7	agi:2:agi:0.27:0.54,int:2:int:0.13:0.26,armor:49:armor:0.1:4.9
-R	druid/feral	12	6557	12725	gear	7.5200000000000005	spi:2:spi:0.31:0.62,str:2:str:1:2,armor:49:armor:0.1:4.9
-R	druid/feral	12	6557	12726	gear	6.0600000000000005	agi:2:agi:0.27:0.54,spi:2:spi:0.31:0.62,armor:49:armor:0.1:4.9
-R	druid/feral	12	6557	12727	gear	7.44	agi:2:agi:0.27:0.54,str:2:str:1:2,armor:49:armor:0.1:4.9
-R	druid/feral	12	6557	12728	gear	5.710000000000001	agi:3:agi:0.27:0.81,armor:49:armor:0.1:4.9
-R	druid/feral	12	6557	12729	gear	5.29	int:3:int:0.13:0.39,armor:49:armor:0.1:4.9
-R	druid/feral	12	6557	12730	gear	5.83	spi:3:spi:0.31:0.93,armor:49:armor:0.1:4.9
-R	druid/feral	12	6557	12731	gear	9.1	sta:3:sta:1.4:4.2,armor:49:armor:0.1:4.9
-R	druid/feral	12	6557	12732	gear	7.9	str:3:str:1:3,armor:49:armor:0.1:4.9
-R	druid/feral	12	6557	12733	gear	7.9	ap:6:ap:0.5:3,armor:49:armor:0.1:4.9
-R	druid/feral	12	6557	12734	gear	4.9	armor:49:armor:0.1:4.9
-R	druid/feral	12	6557	12735	gear	4.9	armor:49:armor:0.1:4.9
-R	druid/feral	12	6557	12736	gear	4.9	armor:49:armor:0.1:4.9
-R	druid/feral	12	6557	12740	gear	7.7	sta:2:sta:1.4:2.8,armor:49:armor:0.1:4.9
-R	druid/feral	12	6557	12741	gear	7.7	sta:2:sta:1.4:2.8,armor:49:armor:0.1:4.9
-R	druid/feral	12	6557	12742	gear	7.7	sta:2:sta:1.4:2.8,armor:49:armor:0.1:4.9
-R	druid/feral	12	6557	12743	gear	7.7	sta:2:sta:1.4:2.8,armor:49:armor:0.1:4.9
-R	druid/feral	12	6557	12744	gear	7.7	sta:2:sta:1.4:2.8,armor:49:armor:0.1:4.9
-R	druid/feral	12	6557	12756	gear	4.9	armor:49:armor:0.1:4.9
-R	druid/feral	12	6557	12760	gear	4.9	armor:49:armor:0.1:4.9
-R	druid/feral	12	7047	0	gear	4.15	spi:5:spi:0.31:1.55,armor:26:armor:0.1:2.6
-R	druid/feral	12	8192	0	gear	18.57	agi:11:agi:0.27:2.97,sta:5:sta:1.4:7,armor:86:armor:0.1:8.6
-R	druid/feral	12	9834	0	gear	7.300000000000001	armor:73:armor:0.1:7.3
-R	druid/feral	12	9834	12718	gear	16.479999999999997	int:6:int:0.13:0.78,sta:6:sta:1.4:8.4,armor:73:armor:0.1:7.3
-R	druid/feral	12	9834	12719	gear	17.56	spi:6:spi:0.31:1.86,sta:6:sta:1.4:8.4,armor:73:armor:0.1:7.3
-R	druid/feral	12	9834	12720	gear	9.940000000000001	int:6:int:0.13:0.78,spi:6:spi:0.31:1.86,armor:73:armor:0.1:7.3
-R	druid/feral	12	9834	12721	gear	17.32	agi:6:agi:0.27:1.62,sta:6:sta:1.4:8.4,armor:73:armor:0.1:7.3
-R	druid/feral	12	9834	12722	gear	21.7	sta:6:sta:1.4:8.4,str:6:str:1:6,armor:73:armor:0.1:7.3
-R	druid/feral	12	9834	12723	gear	14.080000000000002	int:6:int:0.13:0.78,str:6:str:1:6,armor:73:armor:0.1:7.3
-R	druid/feral	12	9834	12724	gear	9.700000000000001	agi:6:agi:0.27:1.62,int:6:int:0.13:0.78,armor:73:armor:0.1:7.3
-R	druid/feral	12	9834	12725	gear	15.16	spi:6:spi:0.31:1.86,str:6:str:1:6,armor:73:armor:0.1:7.3
-R	druid/feral	12	9834	12726	gear	10.780000000000001	agi:6:agi:0.27:1.62,spi:6:spi:0.31:1.86,armor:73:armor:0.1:7.3
-R	druid/feral	12	9834	12727	gear	14.920000000000002	agi:6:agi:0.27:1.62,str:6:str:1:6,armor:73:armor:0.1:7.3
-R	druid/feral	12	9834	12728	gear	9.73	agi:9:agi:0.27:2.43,armor:73:armor:0.1:7.3
-R	druid/feral	12	9834	12729	gear	8.47	int:9:int:0.13:1.17,armor:73:armor:0.1:7.3
-R	druid/feral	12	9834	12730	gear	10.09	spi:9:spi:0.31:2.79,armor:73:armor:0.1:7.3
-R	druid/feral	12	9834	12731	gear	19.9	sta:9:sta:1.4:12.6,armor:73:armor:0.1:7.3
-R	druid/feral	12	9834	12732	gear	16.3	str:9:str:1:9,armor:73:armor:0.1:7.3
-R	druid/feral	12	9834	12733	gear	16.3	ap:18:ap:0.5:9,armor:73:armor:0.1:7.3
-R	druid/feral	12	9834	12734	gear	7.300000000000001	armor:73:armor:0.1:7.3
-R	druid/feral	12	9834	12735	gear	7.300000000000001	armor:73:armor:0.1:7.3
-R	druid/feral	12	9834	12736	gear	7.300000000000001	armor:73:armor:0.1:7.3
-R	druid/feral	12	9834	12740	gear	15.7	sta:6:sta:1.4:8.4,armor:73:armor:0.1:7.3
-R	druid/feral	12	9834	12741	gear	15.7	sta:6:sta:1.4:8.4,armor:73:armor:0.1:7.3
-R	druid/feral	12	9834	12742	gear	15.7	sta:6:sta:1.4:8.4,armor:73:armor:0.1:7.3
-R	druid/feral	12	9834	12743	gear	15.7	sta:6:sta:1.4:8.4,armor:73:armor:0.1:7.3
-R	druid/feral	12	9834	12744	gear	15.7	sta:6:sta:1.4:8.4,armor:73:armor:0.1:7.3
-R	druid/feral	12	9834	12745	gear	13.81	int:7:int:0.13:0.91,sta:4:sta:1.4:5.6,armor:73:armor:0.1:7.3
-R	druid/feral	12	9834	12746	gear	9.450000000000001	int:7:int:0.13:0.91,spi:4:spi:0.31:1.24,armor:73:armor:0.1:7.3
-R	druid/feral	12	9834	12747	gear	18.34	spi:4:spi:0.31:1.24,sta:7:sta:1.4:9.8,armor:73:armor:0.1:7.3
-R	druid/feral	12	9834	12748	gear	17.619999999999997	int:4:int:0.13:0.52,sta:7:sta:1.4:9.8,armor:73:armor:0.1:7.3
-R	druid/feral	12	9834	12749	gear	9.450000000000001	int:7:int:0.13:0.91,spi:4:spi:0.31:1.24,armor:73:armor:0.1:7.3
-R	druid/feral	12	9834	12750	gear	18.34	spi:4:spi:0.31:1.24,sta:7:sta:1.4:9.8,armor:73:armor:0.1:7.3
-R	druid/feral	12	9834	12751	gear	21.41	agi:3:agi:0.27:0.81,ap:7:ap:0.5:3.5,sta:7:sta:1.4:9.8,armor:73:armor:0.1:7.3
-R	druid/feral	12	9834	12752	gear	21.18	agi:4:agi:0.27:1.08,sta:7:sta:1.4:9.8,str:3:str:1:3,armor:73:armor:0.1:7.3
-R	druid/feral	12	9834	12753	gear	21.1	sta:7:sta:1.4:9.8,str:4:str:1:4,armor:73:armor:0.1:7.3
-R	druid/feral	12	9834	12755	gear	21.1	sta:7:sta:1.4:9.8,str:4:str:1:4,armor:73:armor:0.1:7.3
-R	druid/feral	12	9834	12756	gear	7.300000000000001	armor:73:armor:0.1:7.3
-R	druid/feral	12	9834	12760	gear	7.300000000000001	armor:73:armor:0.1:7.3
-R	druid/feral	12	11187	0	gear	0.4	armor:4:armor:0.1:0.4
+R	druid/feral	12	6540	0	gear	2.7720000000000002	armor:28:armor:0.099:2.772
+R	druid/feral	12	6540	12718	gear	7.571999999999999	int:3:int:0.2:0.6,sta:3:sta:1.4:4.2,armor:28:armor:0.099:2.772
+R	druid/feral	12	6540	12719	gear	8.052	spi:3:spi:0.36:1.08,sta:3:sta:1.4:4.2,armor:28:armor:0.099:2.772
+R	druid/feral	12	6540	12720	gear	4.452	int:3:int:0.2:0.6,spi:3:spi:0.36:1.08,armor:28:armor:0.099:2.772
+R	druid/feral	12	6540	12729	gear	3.7720000000000002	int:5:int:0.2:1,armor:28:armor:0.099:2.772
+R	druid/feral	12	6540	12730	gear	4.572	spi:5:spi:0.36:1.8,armor:28:armor:0.099:2.772
+R	druid/feral	12	6540	12731	gear	9.772	sta:5:sta:1.4:7,armor:28:armor:0.099:2.772
+R	druid/feral	12	6540	12734	gear	2.7720000000000002	armor:28:armor:0.099:2.772
+R	druid/feral	12	6540	12735	gear	2.7720000000000002	armor:28:armor:0.099:2.772
+R	druid/feral	12	6540	12740	gear	6.9719999999999995	sta:3:sta:1.4:4.2,armor:28:armor:0.099:2.772
+R	druid/feral	12	6540	12741	gear	6.9719999999999995	sta:3:sta:1.4:4.2,armor:28:armor:0.099:2.772
+R	druid/feral	12	6540	12742	gear	6.9719999999999995	sta:3:sta:1.4:4.2,armor:28:armor:0.099:2.772
+R	druid/feral	12	6540	12743	gear	6.9719999999999995	sta:3:sta:1.4:4.2,armor:28:armor:0.099:2.772
+R	druid/feral	12	6540	12744	gear	6.9719999999999995	sta:3:sta:1.4:4.2,armor:28:armor:0.099:2.772
+R	druid/feral	12	6540	12745	gear	6.372	int:4:int:0.2:0.8,sta:2:sta:1.4:2.8,armor:28:armor:0.099:2.772
+R	druid/feral	12	6540	12756	gear	2.7720000000000002	armor:28:armor:0.099:2.772
+R	druid/feral	12	6540	12757	gear	2.7720000000000002	armor:28:armor:0.099:2.772
+R	druid/feral	12	6540	12758	gear	2.7720000000000002	armor:28:armor:0.099:2.772
+R	druid/feral	12	6540	12759	gear	2.7720000000000002	armor:28:armor:0.099:2.772
+R	druid/feral	12	6540	12761	gear	2.7720000000000002	armor:28:armor:0.099:2.772
+R	druid/feral	12	6557	0	gear	4.851	armor:49:armor:0.099:4.851
+R	druid/feral	12	6557	12718	gear	8.051	int:2:int:0.2:0.4,sta:2:sta:1.4:2.8,armor:49:armor:0.099:4.851
+R	druid/feral	12	6557	12719	gear	8.370999999999999	spi:2:spi:0.36:0.72,sta:2:sta:1.4:2.8,armor:49:armor:0.099:4.851
+R	druid/feral	12	6557	12720	gear	5.971	int:2:int:0.2:0.4,spi:2:spi:0.36:0.72,armor:49:armor:0.099:4.851
+R	druid/feral	12	6557	12721	gear	8.211	agi:2:agi:0.28:0.56,sta:2:sta:1.4:2.8,armor:49:armor:0.099:4.851
+R	druid/feral	12	6557	12722	gear	9.651	sta:2:sta:1.4:2.8,str:2:str:1:2,armor:49:armor:0.099:4.851
+R	druid/feral	12	6557	12723	gear	7.2509999999999994	int:2:int:0.2:0.4,str:2:str:1:2,armor:49:armor:0.099:4.851
+R	druid/feral	12	6557	12724	gear	5.811	agi:2:agi:0.28:0.56,int:2:int:0.2:0.4,armor:49:armor:0.099:4.851
+R	druid/feral	12	6557	12725	gear	7.571	spi:2:spi:0.36:0.72,str:2:str:1:2,armor:49:armor:0.099:4.851
+R	druid/feral	12	6557	12726	gear	6.131	agi:2:agi:0.28:0.56,spi:2:spi:0.36:0.72,armor:49:armor:0.099:4.851
+R	druid/feral	12	6557	12727	gear	7.411	agi:2:agi:0.28:0.56,str:2:str:1:2,armor:49:armor:0.099:4.851
+R	druid/feral	12	6557	12728	gear	5.691	agi:3:agi:0.28:0.84,armor:49:armor:0.099:4.851
+R	druid/feral	12	6557	12729	gear	5.4510000000000005	int:3:int:0.2:0.6,armor:49:armor:0.099:4.851
+R	druid/feral	12	6557	12730	gear	5.931	spi:3:spi:0.36:1.08,armor:49:armor:0.099:4.851
+R	druid/feral	12	6557	12731	gear	9.050999999999998	sta:3:sta:1.4:4.2,armor:49:armor:0.099:4.851
+R	druid/feral	12	6557	12732	gear	7.851	str:3:str:1:3,armor:49:armor:0.099:4.851
+R	druid/feral	12	6557	12733	gear	7.851	ap:6:ap:0.5:3,armor:49:armor:0.099:4.851
+R	druid/feral	12	6557	12734	gear	4.851	armor:49:armor:0.099:4.851
+R	druid/feral	12	6557	12735	gear	4.851	armor:49:armor:0.099:4.851
+R	druid/feral	12	6557	12736	gear	4.851	armor:49:armor:0.099:4.851
+R	druid/feral	12	6557	12740	gear	7.651	sta:2:sta:1.4:2.8,armor:49:armor:0.099:4.851
+R	druid/feral	12	6557	12741	gear	7.651	sta:2:sta:1.4:2.8,armor:49:armor:0.099:4.851
+R	druid/feral	12	6557	12742	gear	7.651	sta:2:sta:1.4:2.8,armor:49:armor:0.099:4.851
+R	druid/feral	12	6557	12743	gear	7.651	sta:2:sta:1.4:2.8,armor:49:armor:0.099:4.851
+R	druid/feral	12	6557	12744	gear	7.651	sta:2:sta:1.4:2.8,armor:49:armor:0.099:4.851
+R	druid/feral	12	6557	12756	gear	4.851	armor:49:armor:0.099:4.851
+R	druid/feral	12	6557	12760	gear	4.851	armor:49:armor:0.099:4.851
+R	druid/feral	12	7047	0	gear	4.3740000000000006	spi:5:spi:0.36:1.8,armor:26:armor:0.099:2.574
+R	druid/feral	12	8192	0	gear	18.594	agi:11:agi:0.28:3.08,sta:5:sta:1.4:7,armor:86:armor:0.099:8.514
+R	druid/feral	12	9834	0	gear	7.227	armor:73:armor:0.099:7.227
+R	druid/feral	12	9834	12718	gear	16.826999999999998	int:6:int:0.2:1.2,sta:6:sta:1.4:8.4,armor:73:armor:0.099:7.227
+R	druid/feral	12	9834	12719	gear	17.787	spi:6:spi:0.36:2.16,sta:6:sta:1.4:8.4,armor:73:armor:0.099:7.227
+R	druid/feral	12	9834	12720	gear	10.587	int:6:int:0.2:1.2,spi:6:spi:0.36:2.16,armor:73:armor:0.099:7.227
+R	druid/feral	12	9834	12721	gear	17.307	agi:6:agi:0.28:1.68,sta:6:sta:1.4:8.4,armor:73:armor:0.099:7.227
+R	druid/feral	12	9834	12722	gear	21.627	sta:6:sta:1.4:8.4,str:6:str:1:6,armor:73:armor:0.099:7.227
+R	druid/feral	12	9834	12723	gear	14.427	int:6:int:0.2:1.2,str:6:str:1:6,armor:73:armor:0.099:7.227
+R	druid/feral	12	9834	12724	gear	10.107000000000001	agi:6:agi:0.28:1.68,int:6:int:0.2:1.2,armor:73:armor:0.099:7.227
+R	druid/feral	12	9834	12725	gear	15.387	spi:6:spi:0.36:2.16,str:6:str:1:6,armor:73:armor:0.099:7.227
+R	druid/feral	12	9834	12726	gear	11.067	agi:6:agi:0.28:1.68,spi:6:spi:0.36:2.16,armor:73:armor:0.099:7.227
+R	druid/feral	12	9834	12727	gear	14.907	agi:6:agi:0.28:1.68,str:6:str:1:6,armor:73:armor:0.099:7.227
+R	druid/feral	12	9834	12728	gear	9.747	agi:9:agi:0.28:2.52,armor:73:armor:0.099:7.227
+R	druid/feral	12	9834	12729	gear	9.027000000000001	int:9:int:0.2:1.8,armor:73:armor:0.099:7.227
+R	druid/feral	12	9834	12730	gear	10.467	spi:9:spi:0.36:3.24,armor:73:armor:0.099:7.227
+R	druid/feral	12	9834	12731	gear	19.826999999999998	sta:9:sta:1.4:12.6,armor:73:armor:0.099:7.227
+R	druid/feral	12	9834	12732	gear	16.227	str:9:str:1:9,armor:73:armor:0.099:7.227
+R	druid/feral	12	9834	12733	gear	16.227	ap:18:ap:0.5:9,armor:73:armor:0.099:7.227
+R	druid/feral	12	9834	12734	gear	7.227	armor:73:armor:0.099:7.227
+R	druid/feral	12	9834	12735	gear	7.227	armor:73:armor:0.099:7.227
+R	druid/feral	12	9834	12736	gear	7.227	armor:73:armor:0.099:7.227
+R	druid/feral	12	9834	12740	gear	15.626999999999999	sta:6:sta:1.4:8.4,armor:73:armor:0.099:7.227
+R	druid/feral	12	9834	12741	gear	15.626999999999999	sta:6:sta:1.4:8.4,armor:73:armor:0.099:7.227
+R	druid/feral	12	9834	12742	gear	15.626999999999999	sta:6:sta:1.4:8.4,armor:73:armor:0.099:7.227
+R	druid/feral	12	9834	12743	gear	15.626999999999999	sta:6:sta:1.4:8.4,armor:73:armor:0.099:7.227
+R	druid/feral	12	9834	12744	gear	15.626999999999999	sta:6:sta:1.4:8.4,armor:73:armor:0.099:7.227
+R	druid/feral	12	9834	12745	gear	14.227	int:7:int:0.2:1.4,sta:4:sta:1.4:5.6,armor:73:armor:0.099:7.227
+R	druid/feral	12	9834	12746	gear	10.067	int:7:int:0.2:1.4,spi:4:spi:0.36:1.44,armor:73:armor:0.099:7.227
+R	druid/feral	12	9834	12747	gear	18.467	spi:4:spi:0.36:1.44,sta:7:sta:1.4:9.8,armor:73:armor:0.099:7.227
+R	druid/feral	12	9834	12748	gear	17.826999999999998	int:4:int:0.2:0.8,sta:7:sta:1.4:9.8,armor:73:armor:0.099:7.227
+R	druid/feral	12	9834	12749	gear	10.067	int:7:int:0.2:1.4,spi:4:spi:0.36:1.44,armor:73:armor:0.099:7.227
+R	druid/feral	12	9834	12750	gear	18.467	spi:4:spi:0.36:1.44,sta:7:sta:1.4:9.8,armor:73:armor:0.099:7.227
+R	druid/feral	12	9834	12751	gear	21.366999999999997	agi:3:agi:0.28:0.84,ap:7:ap:0.5:3.5,sta:7:sta:1.4:9.8,armor:73:armor:0.099:7.227
+R	druid/feral	12	9834	12752	gear	21.147	agi:4:agi:0.28:1.12,sta:7:sta:1.4:9.8,str:3:str:1:3,armor:73:armor:0.099:7.227
+R	druid/feral	12	9834	12753	gear	21.027	sta:7:sta:1.4:9.8,str:4:str:1:4,armor:73:armor:0.099:7.227
+R	druid/feral	12	9834	12755	gear	21.027	sta:7:sta:1.4:9.8,str:4:str:1:4,armor:73:armor:0.099:7.227
+R	druid/feral	12	9834	12756	gear	7.227	armor:73:armor:0.099:7.227
+R	druid/feral	12	9834	12760	gear	7.227	armor:73:armor:0.099:7.227
+R	druid/feral	12	11187	0	gear	0.396	armor:4:armor:0.099:0.396
 R	druid/feral	12	11994	0	gear	0.0	
-R	druid/feral	12	11994	12718	gear	4.589999999999999	int:3:int:0.13:0.39,sta:3:sta:1.4:4.2
-R	druid/feral	12	11994	12719	gear	5.129999999999999	spi:3:spi:0.31:0.93,sta:3:sta:1.4:4.2
-R	druid/feral	12	11994	12720	gear	1.3199999999999998	int:3:int:0.13:0.39,spi:3:spi:0.31:0.93
-R	druid/feral	12	11994	12721	gear	5.01	agi:3:agi:0.27:0.81,sta:3:sta:1.4:4.2
+R	druid/feral	12	11994	12718	gear	4.799999999999999	int:3:int:0.2:0.6,sta:3:sta:1.4:4.2
+R	druid/feral	12	11994	12719	gear	5.279999999999999	spi:3:spi:0.36:1.08,sta:3:sta:1.4:4.2
+R	druid/feral	12	11994	12720	gear	1.6800000000000002	int:3:int:0.2:0.6,spi:3:spi:0.36:1.08
+R	druid/feral	12	11994	12721	gear	5.039999999999999	agi:3:agi:0.28:0.84,sta:3:sta:1.4:4.2
 R	druid/feral	12	11994	12722	gear	7.199999999999999	sta:3:sta:1.4:4.2,str:3:str:1:3
-R	druid/feral	12	11994	12723	gear	3.39	int:3:int:0.13:0.39,str:3:str:1:3
-R	druid/feral	12	11994	12724	gear	1.2000000000000002	agi:3:agi:0.27:0.81,int:3:int:0.13:0.39
-R	druid/feral	12	11994	12725	gear	3.9299999999999997	spi:3:spi:0.31:0.93,str:3:str:1:3
-R	druid/feral	12	11994	12726	gear	1.74	agi:3:agi:0.27:0.81,spi:3:spi:0.31:0.93
-R	druid/feral	12	11994	12727	gear	3.81	agi:3:agi:0.27:0.81,str:3:str:1:3
-R	druid/feral	12	11994	12728	gear	1.35	agi:5:agi:0.27:1.35
-R	druid/feral	12	11994	12729	gear	0.65	int:5:int:0.13:0.65
-R	druid/feral	12	11994	12730	gear	1.55	spi:5:spi:0.31:1.55
+R	druid/feral	12	11994	12723	gear	3.6	int:3:int:0.2:0.6,str:3:str:1:3
+R	druid/feral	12	11994	12724	gear	1.4400000000000002	agi:3:agi:0.28:0.84,int:3:int:0.2:0.6
+R	druid/feral	12	11994	12725	gear	4.08	spi:3:spi:0.36:1.08,str:3:str:1:3
+R	druid/feral	12	11994	12726	gear	1.9200000000000002	agi:3:agi:0.28:0.84,spi:3:spi:0.36:1.08
+R	druid/feral	12	11994	12727	gear	3.84	agi:3:agi:0.28:0.84,str:3:str:1:3
+R	druid/feral	12	11994	12728	gear	1.4000000000000001	agi:5:agi:0.28:1.4
+R	druid/feral	12	11994	12729	gear	1.0	int:5:int:0.2:1
+R	druid/feral	12	11994	12730	gear	1.7999999999999998	spi:5:spi:0.36:1.8
 R	druid/feral	12	11994	12731	gear	7.0	sta:5:sta:1.4:7
 R	druid/feral	12	11994	12732	gear	5.0	str:5:str:1:5
 R	druid/feral	12	11994	12733	gear	5.0	ap:10:ap:0.5:5
 R	druid/feral	12	11994	12737	gear	0.0	
-R	druid/feral	12	11994	12738	gear	0.0	
-R	druid/feral	12	11994	12739	gear	0.54	agi:2:agi:0.27:0.54
+R	druid/feral	12	11994	12738	gear	0.164	mp5:2:mp5:0.082:0.164
+R	druid/feral	12	11994	12739	gear	0.56	agi:2:agi:0.28:0.56
 R	druid/feral	12	11994	12740	gear	4.199999999999999	sta:3:sta:1.4:4.2
 R	druid/feral	12	11994	12741	gear	4.199999999999999	sta:3:sta:1.4:4.2
 R	druid/feral	12	11994	12742	gear	4.199999999999999	sta:3:sta:1.4:4.2
 R	druid/feral	12	11994	12743	gear	4.199999999999999	sta:3:sta:1.4:4.2
 R	druid/feral	12	11994	12744	gear	4.199999999999999	sta:3:sta:1.4:4.2
 R	druid/feral	12	13183	0	mh	268.39599999999996	dps:39.47:dps:6.8:268.396
-R	druid/feral	12	14122	0	gear	1.4000000000000001	armor:14:armor:0.1:1.4
-R	druid/feral	12	14122	12718	gear	4.46	int:2:int:0.13:0.26,sta:2:sta:1.4:2.8,armor:14:armor:0.1:1.4
-R	druid/feral	12	14122	12719	gear	4.82	spi:2:spi:0.31:0.62,sta:2:sta:1.4:2.8,armor:14:armor:0.1:1.4
-R	druid/feral	12	14122	12720	gear	2.2800000000000002	int:2:int:0.13:0.26,spi:2:spi:0.31:0.62,armor:14:armor:0.1:1.4
-R	druid/feral	12	14122	12729	gear	1.79	int:3:int:0.13:0.39,armor:14:armor:0.1:1.4
-R	druid/feral	12	14122	12730	gear	2.33	spi:3:spi:0.31:0.93,armor:14:armor:0.1:1.4
-R	druid/feral	12	14122	12731	gear	5.6	sta:3:sta:1.4:4.2,armor:14:armor:0.1:1.4
-R	druid/feral	12	14122	12734	gear	1.4000000000000001	armor:14:armor:0.1:1.4
-R	druid/feral	12	14122	12735	gear	1.4000000000000001	armor:14:armor:0.1:1.4
-R	druid/feral	12	14122	12740	gear	4.2	sta:2:sta:1.4:2.8,armor:14:armor:0.1:1.4
-R	druid/feral	12	14122	12741	gear	4.2	sta:2:sta:1.4:2.8,armor:14:armor:0.1:1.4
-R	druid/feral	12	14122	12742	gear	4.2	sta:2:sta:1.4:2.8,armor:14:armor:0.1:1.4
-R	druid/feral	12	14122	12743	gear	4.2	sta:2:sta:1.4:2.8,armor:14:armor:0.1:1.4
-R	druid/feral	12	14122	12744	gear	4.2	sta:2:sta:1.4:2.8,armor:14:armor:0.1:1.4
-R	druid/feral	12	14122	12745	gear	3.06	int:2:int:0.13:0.26,sta:1:sta:1.4:1.4,armor:14:armor:0.1:1.4
-R	druid/feral	12	14122	12756	gear	1.4000000000000001	armor:14:armor:0.1:1.4
-R	druid/feral	12	14122	12757	gear	1.4000000000000001	armor:14:armor:0.1:1.4
-R	druid/feral	12	14122	12758	gear	1.4000000000000001	armor:14:armor:0.1:1.4
-R	druid/feral	12	14122	12759	gear	1.4000000000000001	armor:14:armor:0.1:1.4
-R	druid/feral	12	14122	12761	gear	1.4000000000000001	armor:14:armor:0.1:1.4
-R	druid/feral	12	14340	0	gear	35.4	sta:19:sta:1.4:26.6,armor:88:armor:0.1:8.8
-R	druid/feral	12	14673	0	gear	15.83	str:3:str:1:3,agi:9:agi:0.27:2.43,sta:5:sta:1.4:7,armor:34:armor:0.1:3.4
-R	druid/feral	12	15945	0	oh	3.42	sta:2:sta:1.4:2.8,spi:2:spi:0.31:0.62
-R	druid/feral	12	16711	0	gear	30.052	agi:21:agi:0.27:5.67,sta:9:sta:1.4:12.6,hit:0.3:hit:0.94:0.282,armor:115:armor:0.1:11.5
-R	druid/feral	12	18726	0	gear	28.3	sta:15:sta:1.4:21,armor:73:armor:0.1:7.3
+R	druid/feral	12	14122	0	gear	1.3860000000000001	armor:14:armor:0.099:1.386
+R	druid/feral	12	14122	12718	gear	4.586	int:2:int:0.2:0.4,sta:2:sta:1.4:2.8,armor:14:armor:0.099:1.386
+R	druid/feral	12	14122	12719	gear	4.906	spi:2:spi:0.36:0.72,sta:2:sta:1.4:2.8,armor:14:armor:0.099:1.386
+R	druid/feral	12	14122	12720	gear	2.5060000000000002	int:2:int:0.2:0.4,spi:2:spi:0.36:0.72,armor:14:armor:0.099:1.386
+R	druid/feral	12	14122	12729	gear	1.9860000000000002	int:3:int:0.2:0.6,armor:14:armor:0.099:1.386
+R	druid/feral	12	14122	12730	gear	2.466	spi:3:spi:0.36:1.08,armor:14:armor:0.099:1.386
+R	druid/feral	12	14122	12731	gear	5.585999999999999	sta:3:sta:1.4:4.2,armor:14:armor:0.099:1.386
+R	druid/feral	12	14122	12734	gear	1.3860000000000001	armor:14:armor:0.099:1.386
+R	druid/feral	12	14122	12735	gear	1.3860000000000001	armor:14:armor:0.099:1.386
+R	druid/feral	12	14122	12740	gear	4.186	sta:2:sta:1.4:2.8,armor:14:armor:0.099:1.386
+R	druid/feral	12	14122	12741	gear	4.186	sta:2:sta:1.4:2.8,armor:14:armor:0.099:1.386
+R	druid/feral	12	14122	12742	gear	4.186	sta:2:sta:1.4:2.8,armor:14:armor:0.099:1.386
+R	druid/feral	12	14122	12743	gear	4.186	sta:2:sta:1.4:2.8,armor:14:armor:0.099:1.386
+R	druid/feral	12	14122	12744	gear	4.186	sta:2:sta:1.4:2.8,armor:14:armor:0.099:1.386
+R	druid/feral	12	14122	12745	gear	3.186	int:2:int:0.2:0.4,sta:1:sta:1.4:1.4,armor:14:armor:0.099:1.386
+R	druid/feral	12	14122	12756	gear	1.3860000000000001	armor:14:armor:0.099:1.386
+R	druid/feral	12	14122	12757	gear	1.3860000000000001	armor:14:armor:0.099:1.386
+R	druid/feral	12	14122	12758	gear	1.3860000000000001	armor:14:armor:0.099:1.386
+R	druid/feral	12	14122	12759	gear	1.3860000000000001	armor:14:armor:0.099:1.386
+R	druid/feral	12	14122	12761	gear	1.3860000000000001	armor:14:armor:0.099:1.386
+R	druid/feral	12	14340	0	gear	35.312	sta:19:sta:1.4:26.6,armor:88:armor:0.099:8.712
+R	druid/feral	12	14673	0	gear	15.886	str:3:str:1:3,agi:9:agi:0.28:2.52,sta:5:sta:1.4:7,armor:34:armor:0.099:3.366
+R	druid/feral	12	15945	0	oh	3.5199999999999996	sta:2:sta:1.4:2.8,spi:2:spi:0.36:0.72
+R	druid/feral	12	16711	0	gear	30.15	agi:21:agi:0.28:5.88,sta:9:sta:1.4:12.6,hit:0.3:hit:0.95:0.285,armor:115:armor:0.099:11.385
+R	druid/feral	12	18726	0	gear	28.227	sta:15:sta:1.4:21,armor:73:armor:0.099:7.227
 R	druid/feral	12	22397	0	ranged	0.0	
-R	druid/feral	12	252507	0	gear	21.6	sta:10:sta:1.4:14,armor:76:armor:0.1:7.6
-R	druid/feral	12	254111	0	gear	24.769999999999996	int:9:int:0.13:1.17,sta:13:sta:1.4:18.2,armor:54:armor:0.1:5.4
-R	druid/feral	12	270033	0	gear	7.98	agi:4:agi:0.27:1.08,str:3:str:1:3,armor:39:armor:0.1:3.9
-R	druid/feral	12	273892	0	gear	51.629999999999995	sta:20:sta:1.4:28,int:19:int:0.13:2.47,spi:16:spi:0.31:4.96,armor:162:armor:0.1:16.2
-R	druid/feral	12	280082	0	mh	256.37	int:15:int:0.13:1.95,hit:1.5:hit:0.94:1.41,spi:21:spi:0.31:6.51,dps:36.25:dps:6.8:246.5
-R	druid/feral	25	1315	0	gear	28.45	sta:10:sta:2.2:22,spi:15:spi:0.43:6.45
-R	druid/feral	25	1808	0	gear	4.958	armor:74:armor:0.067:4.958
+R	druid/feral	12	252507	0	gear	21.524	sta:10:sta:1.4:14,armor:76:armor:0.099:7.524
+R	druid/feral	12	254111	0	gear	25.346	int:9:int:0.2:1.8,sta:13:sta:1.4:18.2,armor:54:armor:0.099:5.346
+R	druid/feral	12	270033	0	gear	7.981	agi:4:agi:0.28:1.12,str:3:str:1:3,armor:39:armor:0.099:3.861
+R	druid/feral	12	273892	0	gear	53.598	sta:20:sta:1.4:28,int:19:int:0.2:3.8,spi:16:spi:0.36:5.76,armor:162:armor:0.099:16.038
+R	druid/feral	12	280082	0	mh	258.485	int:15:int:0.2:3,hit:1.5:hit:0.95:1.425,spi:21:spi:0.36:7.56,dps:36.25:dps:6.8:246.5
+R	druid/feral	25	1315	0	gear	19.9	sta:10:sta:1.3:13,spi:15:spi:0.46:6.9
+R	druid/feral	25	1808	0	gear	4.218	armor:74:armor:0.057:4.218
 R	druid/feral	25	1990	0	mh	140.847	dps:24.71:dps:5.7:140.847
-R	druid/feral	25	1990	12718	mh	161.31300000000002	int:9:int:0.074:0.666,sta:9:sta:2.2:19.8,dps:24.71:dps:5.7:140.847
-R	druid/feral	25	1990	12905	mh	120.97999999999999	int:11:int:0.074:0.814,sta:7:sta:2.2:15.4,dps:18.38:dps:5.7:104.766
+R	druid/feral	25	1990	12718	mh	153.627	int:9:int:0.12:1.08,sta:9:sta:1.3:11.7,dps:24.71:dps:5.7:140.847
+R	druid/feral	25	1990	12905	mh	115.18599999999999	int:11:int:0.12:1.32,sta:7:sta:1.3:9.1,dps:18.38:dps:5.7:104.766
 R	druid/feral	25	2140	0	mh	33.858000000000004	dps:5.94:dps:5.7:33.858
-R	druid/feral	25	2140	12718	mh	36.132000000000005	int:1:int:0.074:0.074,sta:1:sta:2.2:2.2,dps:5.94:dps:5.7:33.858
-R	druid/feral	25	2140	12917	mh	21.449	int:1:int:0.074:0.074,dps:3.75:dps:5.7:21.375
+R	druid/feral	25	2140	12718	mh	35.278000000000006	int:1:int:0.12:0.12,sta:1:sta:1.3:1.3,dps:5.94:dps:5.7:33.858
+R	druid/feral	25	2140	12917	mh	21.495	int:1:int:0.12:0.12,dps:3.75:dps:5.7:21.375
 R	druid/feral	25	2225	0	mh	28.5	dps:5:dps:5.7:28.5
-R	druid/feral	25	2614	0	gear	1.943	armor:29:armor:0.067:1.943
-R	druid/feral	25	3158	0	gear	1.742	armor:26:armor:0.067:1.742
+R	druid/feral	25	2614	0	gear	1.653	armor:29:armor:0.057:1.653
+R	druid/feral	25	3158	0	gear	1.482	armor:26:armor:0.057:1.482
 R	druid/feral	25	3570	0	mh	48.284	str:2:str:1:2,dps:8.12:dps:5.7:46.284
 R	druid/feral	25	4023	0	mh	87.55199999999999	dps:15.36:dps:5.7:87.552
 R	druid/feral	25	4570	0	mh	57.0	dps:10:dps:5.7:57
-R	druid/feral	25	4570	12718	mh	63.822	int:3:int:0.074:0.222,sta:3:sta:2.2:6.6,dps:10:dps:5.7:57
-R	druid/feral	25	4570	12719	mh	64.89	spi:3:spi:0.43:1.29,sta:3:sta:2.2:6.6,dps:10:dps:5.7:57
-R	druid/feral	25	4570	12720	mh	58.512	int:3:int:0.074:0.222,spi:3:spi:0.43:1.29,dps:10:dps:5.7:57
-R	druid/feral	25	4570	12721	mh	66.51	agi:3:agi:0.97:2.91,sta:3:sta:2.2:6.6,dps:10:dps:5.7:57
-R	druid/feral	25	4570	12722	mh	66.6	sta:3:sta:2.2:6.6,str:3:str:1:3,dps:10:dps:5.7:57
-R	druid/feral	25	4570	12723	mh	60.222	int:3:int:0.074:0.222,str:3:str:1:3,dps:10:dps:5.7:57
-R	druid/feral	25	4570	12724	mh	60.132	agi:3:agi:0.97:2.91,int:3:int:0.074:0.222,dps:10:dps:5.7:57
-R	druid/feral	25	4570	12725	mh	61.29	spi:3:spi:0.43:1.29,str:3:str:1:3,dps:10:dps:5.7:57
-R	druid/feral	25	4570	12726	mh	61.2	agi:3:agi:0.97:2.91,spi:3:spi:0.43:1.29,dps:10:dps:5.7:57
-R	druid/feral	25	4570	12727	mh	62.91	agi:3:agi:0.97:2.91,str:3:str:1:3,dps:10:dps:5.7:57
-R	druid/feral	25	4570	12728	mh	60.88	agi:4:agi:0.97:3.88,dps:10:dps:5.7:57
-R	druid/feral	25	4570	12729	mh	57.296	int:4:int:0.074:0.296,dps:10:dps:5.7:57
-R	druid/feral	25	4570	12730	mh	58.72	spi:4:spi:0.43:1.72,dps:10:dps:5.7:57
-R	druid/feral	25	4570	12731	mh	65.8	sta:4:sta:2.2:8.8,dps:10:dps:5.7:57
+R	druid/feral	25	4570	12718	mh	61.26	int:3:int:0.12:0.36,sta:3:sta:1.3:3.9,dps:10:dps:5.7:57
+R	druid/feral	25	4570	12719	mh	62.28	spi:3:spi:0.46:1.38,sta:3:sta:1.3:3.9,dps:10:dps:5.7:57
+R	druid/feral	25	4570	12720	mh	58.74	int:3:int:0.12:0.36,spi:3:spi:0.46:1.38,dps:10:dps:5.7:57
+R	druid/feral	25	4570	12721	mh	63.480000000000004	agi:3:agi:0.86:2.58,sta:3:sta:1.3:3.9,dps:10:dps:5.7:57
+R	druid/feral	25	4570	12722	mh	63.9	sta:3:sta:1.3:3.9,str:3:str:1:3,dps:10:dps:5.7:57
+R	druid/feral	25	4570	12723	mh	60.36	int:3:int:0.12:0.36,str:3:str:1:3,dps:10:dps:5.7:57
+R	druid/feral	25	4570	12724	mh	59.94	agi:3:agi:0.86:2.58,int:3:int:0.12:0.36,dps:10:dps:5.7:57
+R	druid/feral	25	4570	12725	mh	61.38	spi:3:spi:0.46:1.38,str:3:str:1:3,dps:10:dps:5.7:57
+R	druid/feral	25	4570	12726	mh	60.96	agi:3:agi:0.86:2.58,spi:3:spi:0.46:1.38,dps:10:dps:5.7:57
+R	druid/feral	25	4570	12727	mh	62.58	agi:3:agi:0.86:2.58,str:3:str:1:3,dps:10:dps:5.7:57
+R	druid/feral	25	4570	12728	mh	60.44	agi:4:agi:0.86:3.44,dps:10:dps:5.7:57
+R	druid/feral	25	4570	12729	mh	57.48	int:4:int:0.12:0.48,dps:10:dps:5.7:57
+R	druid/feral	25	4570	12730	mh	58.84	spi:4:spi:0.46:1.84,dps:10:dps:5.7:57
+R	druid/feral	25	4570	12731	mh	62.2	sta:4:sta:1.3:5.2,dps:10:dps:5.7:57
 R	druid/feral	25	4570	12732	mh	61.0	str:4:str:1:4,dps:10:dps:5.7:57
 R	druid/feral	25	4570	12733	mh	61.0	ap:8:ap:0.5:4,dps:10:dps:5.7:57
 R	druid/feral	25	4570	12736	mh	57.0	dps:10:dps:5.7:57
-R	druid/feral	25	4570	12740	mh	63.6	sta:3:sta:2.2:6.6,dps:10:dps:5.7:57
-R	druid/feral	25	4570	12741	mh	63.6	sta:3:sta:2.2:6.6,dps:10:dps:5.7:57
-R	druid/feral	25	4570	12742	mh	63.6	sta:3:sta:2.2:6.6,dps:10:dps:5.7:57
-R	druid/feral	25	4570	12743	mh	63.6	sta:3:sta:2.2:6.6,dps:10:dps:5.7:57
-R	druid/feral	25	4570	12744	mh	63.6	sta:3:sta:2.2:6.6,dps:10:dps:5.7:57
+R	druid/feral	25	4570	12740	mh	60.9	sta:3:sta:1.3:3.9,dps:10:dps:5.7:57
+R	druid/feral	25	4570	12741	mh	60.9	sta:3:sta:1.3:3.9,dps:10:dps:5.7:57
+R	druid/feral	25	4570	12742	mh	60.9	sta:3:sta:1.3:3.9,dps:10:dps:5.7:57
+R	druid/feral	25	4570	12743	mh	60.9	sta:3:sta:1.3:3.9,dps:10:dps:5.7:57
+R	druid/feral	25	4570	12744	mh	60.9	sta:3:sta:1.3:3.9,dps:10:dps:5.7:57
 R	druid/feral	25	4570	12759	mh	57.0	dps:10:dps:5.7:57
-R	druid/feral	25	4570	12918	mh	43.502	int:4:int:0.074:0.296,dps:7.58:dps:5.7:43.206
-R	druid/feral	25	4570	12919	mh	43.502	int:4:int:0.074:0.296,dps:7.58:dps:5.7:43.206
+R	druid/feral	25	4570	12918	mh	43.686	int:4:int:0.12:0.48,dps:7.58:dps:5.7:43.206
+R	druid/feral	25	4570	12919	mh	43.686	int:4:int:0.12:0.48,dps:7.58:dps:5.7:43.206
 R	druid/feral	25	5079	0	gear	0.0	
-R	druid/feral	25	6540	0	gear	1.8760000000000001	armor:28:armor:0.067:1.876
-R	druid/feral	25	6540	12718	gear	8.698	int:3:int:0.074:0.222,sta:3:sta:2.2:6.6,armor:28:armor:0.067:1.876
-R	druid/feral	25	6540	12719	gear	9.766	spi:3:spi:0.43:1.29,sta:3:sta:2.2:6.6,armor:28:armor:0.067:1.876
-R	druid/feral	25	6540	12720	gear	3.388	int:3:int:0.074:0.222,spi:3:spi:0.43:1.29,armor:28:armor:0.067:1.876
-R	druid/feral	25	6540	12729	gear	2.246	int:5:int:0.074:0.37,armor:28:armor:0.067:1.876
-R	druid/feral	25	6540	12730	gear	4.026	spi:5:spi:0.43:2.15,armor:28:armor:0.067:1.876
-R	druid/feral	25	6540	12731	gear	12.876	sta:5:sta:2.2:11,armor:28:armor:0.067:1.876
-R	druid/feral	25	6540	12734	gear	1.8760000000000001	armor:28:armor:0.067:1.876
-R	druid/feral	25	6540	12735	gear	1.8760000000000001	armor:28:armor:0.067:1.876
-R	druid/feral	25	6540	12740	gear	8.476	sta:3:sta:2.2:6.6,armor:28:armor:0.067:1.876
-R	druid/feral	25	6540	12741	gear	8.476	sta:3:sta:2.2:6.6,armor:28:armor:0.067:1.876
-R	druid/feral	25	6540	12742	gear	8.476	sta:3:sta:2.2:6.6,armor:28:armor:0.067:1.876
-R	druid/feral	25	6540	12743	gear	8.476	sta:3:sta:2.2:6.6,armor:28:armor:0.067:1.876
-R	druid/feral	25	6540	12744	gear	8.476	sta:3:sta:2.2:6.6,armor:28:armor:0.067:1.876
-R	druid/feral	25	6540	12745	gear	6.572000000000001	int:4:int:0.074:0.296,sta:2:sta:2.2:4.4,armor:28:armor:0.067:1.876
-R	druid/feral	25	6540	12756	gear	1.8760000000000001	armor:28:armor:0.067:1.876
-R	druid/feral	25	6540	12757	gear	1.8760000000000001	armor:28:armor:0.067:1.876
-R	druid/feral	25	6540	12758	gear	1.8760000000000001	armor:28:armor:0.067:1.876
-R	druid/feral	25	6540	12759	gear	1.8760000000000001	armor:28:armor:0.067:1.876
-R	druid/feral	25	6540	12761	gear	1.8760000000000001	armor:28:armor:0.067:1.876
-R	druid/feral	25	6557	0	gear	3.2830000000000004	armor:49:armor:0.067:3.283
-R	druid/feral	25	6557	12718	gear	7.831	int:2:int:0.074:0.148,sta:2:sta:2.2:4.4,armor:49:armor:0.067:3.283
-R	druid/feral	25	6557	12719	gear	8.543000000000001	spi:2:spi:0.43:0.86,sta:2:sta:2.2:4.4,armor:49:armor:0.067:3.283
-R	druid/feral	25	6557	12720	gear	4.291	int:2:int:0.074:0.148,spi:2:spi:0.43:0.86,armor:49:armor:0.067:3.283
-R	druid/feral	25	6557	12721	gear	9.623000000000001	agi:2:agi:0.97:1.94,sta:2:sta:2.2:4.4,armor:49:armor:0.067:3.283
-R	druid/feral	25	6557	12722	gear	9.683	sta:2:sta:2.2:4.4,str:2:str:1:2,armor:49:armor:0.067:3.283
-R	druid/feral	25	6557	12723	gear	5.431000000000001	int:2:int:0.074:0.148,str:2:str:1:2,armor:49:armor:0.067:3.283
-R	druid/feral	25	6557	12724	gear	5.371	agi:2:agi:0.97:1.94,int:2:int:0.074:0.148,armor:49:armor:0.067:3.283
-R	druid/feral	25	6557	12725	gear	6.143000000000001	spi:2:spi:0.43:0.86,str:2:str:1:2,armor:49:armor:0.067:3.283
-R	druid/feral	25	6557	12726	gear	6.083	agi:2:agi:0.97:1.94,spi:2:spi:0.43:0.86,armor:49:armor:0.067:3.283
-R	druid/feral	25	6557	12727	gear	7.223000000000001	agi:2:agi:0.97:1.94,str:2:str:1:2,armor:49:armor:0.067:3.283
-R	druid/feral	25	6557	12728	gear	6.1930000000000005	agi:3:agi:0.97:2.91,armor:49:armor:0.067:3.283
-R	druid/feral	25	6557	12729	gear	3.5050000000000003	int:3:int:0.074:0.222,armor:49:armor:0.067:3.283
-R	druid/feral	25	6557	12730	gear	4.573	spi:3:spi:0.43:1.29,armor:49:armor:0.067:3.283
-R	druid/feral	25	6557	12731	gear	9.883000000000001	sta:3:sta:2.2:6.6,armor:49:armor:0.067:3.283
-R	druid/feral	25	6557	12732	gear	6.283	str:3:str:1:3,armor:49:armor:0.067:3.283
-R	druid/feral	25	6557	12733	gear	6.283	ap:6:ap:0.5:3,armor:49:armor:0.067:3.283
-R	druid/feral	25	6557	12734	gear	3.2830000000000004	armor:49:armor:0.067:3.283
-R	druid/feral	25	6557	12735	gear	3.2830000000000004	armor:49:armor:0.067:3.283
-R	druid/feral	25	6557	12736	gear	3.2830000000000004	armor:49:armor:0.067:3.283
-R	druid/feral	25	6557	12740	gear	7.683000000000001	sta:2:sta:2.2:4.4,armor:49:armor:0.067:3.283
-R	druid/feral	25	6557	12741	gear	7.683000000000001	sta:2:sta:2.2:4.4,armor:49:armor:0.067:3.283
-R	druid/feral	25	6557	12742	gear	7.683000000000001	sta:2:sta:2.2:4.4,armor:49:armor:0.067:3.283
-R	druid/feral	25	6557	12743	gear	7.683000000000001	sta:2:sta:2.2:4.4,armor:49:armor:0.067:3.283
-R	druid/feral	25	6557	12744	gear	7.683000000000001	sta:2:sta:2.2:4.4,armor:49:armor:0.067:3.283
-R	druid/feral	25	6557	12756	gear	3.2830000000000004	armor:49:armor:0.067:3.283
-R	druid/feral	25	6557	12760	gear	3.2830000000000004	armor:49:armor:0.067:3.283
-R	druid/feral	25	7047	0	gear	3.892	spi:5:spi:0.43:2.15,armor:26:armor:0.067:1.742
-R	druid/feral	25	8192	0	gear	27.432000000000002	agi:11:agi:0.97:10.67,sta:5:sta:2.2:11,armor:86:armor:0.067:5.762
-R	druid/feral	25	9834	0	gear	4.891	armor:73:armor:0.067:4.891
-R	druid/feral	25	9834	12718	gear	18.535000000000004	int:6:int:0.074:0.444,sta:6:sta:2.2:13.2,armor:73:armor:0.067:4.891
-R	druid/feral	25	9834	12719	gear	20.671	spi:6:spi:0.43:2.58,sta:6:sta:2.2:13.2,armor:73:armor:0.067:4.891
-R	druid/feral	25	9834	12720	gear	7.915	int:6:int:0.074:0.444,spi:6:spi:0.43:2.58,armor:73:armor:0.067:4.891
-R	druid/feral	25	9834	12721	gear	23.911	agi:6:agi:0.97:5.82,sta:6:sta:2.2:13.2,armor:73:armor:0.067:4.891
-R	druid/feral	25	9834	12722	gear	24.091	sta:6:sta:2.2:13.2,str:6:str:1:6,armor:73:armor:0.067:4.891
-R	druid/feral	25	9834	12723	gear	11.335	int:6:int:0.074:0.444,str:6:str:1:6,armor:73:armor:0.067:4.891
-R	druid/feral	25	9834	12724	gear	11.155000000000001	agi:6:agi:0.97:5.82,int:6:int:0.074:0.444,armor:73:armor:0.067:4.891
-R	druid/feral	25	9834	12725	gear	13.471	spi:6:spi:0.43:2.58,str:6:str:1:6,armor:73:armor:0.067:4.891
-R	druid/feral	25	9834	12726	gear	13.291	agi:6:agi:0.97:5.82,spi:6:spi:0.43:2.58,armor:73:armor:0.067:4.891
-R	druid/feral	25	9834	12727	gear	16.711	agi:6:agi:0.97:5.82,str:6:str:1:6,armor:73:armor:0.067:4.891
-R	druid/feral	25	9834	12728	gear	13.621	agi:9:agi:0.97:8.73,armor:73:armor:0.067:4.891
-R	druid/feral	25	9834	12729	gear	5.557	int:9:int:0.074:0.666,armor:73:armor:0.067:4.891
-R	druid/feral	25	9834	12730	gear	8.761	spi:9:spi:0.43:3.87,armor:73:armor:0.067:4.891
-R	druid/feral	25	9834	12731	gear	24.691000000000003	sta:9:sta:2.2:19.8,armor:73:armor:0.067:4.891
-R	druid/feral	25	9834	12732	gear	13.891	str:9:str:1:9,armor:73:armor:0.067:4.891
-R	druid/feral	25	9834	12733	gear	13.891	ap:18:ap:0.5:9,armor:73:armor:0.067:4.891
-R	druid/feral	25	9834	12734	gear	4.891	armor:73:armor:0.067:4.891
-R	druid/feral	25	9834	12735	gear	4.891	armor:73:armor:0.067:4.891
-R	druid/feral	25	9834	12736	gear	4.891	armor:73:armor:0.067:4.891
-R	druid/feral	25	9834	12740	gear	18.091	sta:6:sta:2.2:13.2,armor:73:armor:0.067:4.891
-R	druid/feral	25	9834	12741	gear	18.091	sta:6:sta:2.2:13.2,armor:73:armor:0.067:4.891
-R	druid/feral	25	9834	12742	gear	18.091	sta:6:sta:2.2:13.2,armor:73:armor:0.067:4.891
-R	druid/feral	25	9834	12743	gear	18.091	sta:6:sta:2.2:13.2,armor:73:armor:0.067:4.891
-R	druid/feral	25	9834	12744	gear	18.091	sta:6:sta:2.2:13.2,armor:73:armor:0.067:4.891
-R	druid/feral	25	9834	12745	gear	14.209000000000001	int:7:int:0.074:0.518,sta:4:sta:2.2:8.8,armor:73:armor:0.067:4.891
-R	druid/feral	25	9834	12746	gear	7.129	int:7:int:0.074:0.518,spi:4:spi:0.43:1.72,armor:73:armor:0.067:4.891
-R	druid/feral	25	9834	12747	gear	22.011000000000003	spi:4:spi:0.43:1.72,sta:7:sta:2.2:15.4,armor:73:armor:0.067:4.891
-R	druid/feral	25	9834	12748	gear	20.587000000000003	int:4:int:0.074:0.296,sta:7:sta:2.2:15.4,armor:73:armor:0.067:4.891
-R	druid/feral	25	9834	12749	gear	7.129	int:7:int:0.074:0.518,spi:4:spi:0.43:1.72,armor:73:armor:0.067:4.891
-R	druid/feral	25	9834	12750	gear	22.011000000000003	spi:4:spi:0.43:1.72,sta:7:sta:2.2:15.4,armor:73:armor:0.067:4.891
-R	druid/feral	25	9834	12751	gear	26.701	agi:3:agi:0.97:2.91,ap:7:ap:0.5:3.5,sta:7:sta:2.2:15.4,armor:73:armor:0.067:4.891
-R	druid/feral	25	9834	12752	gear	27.171	agi:4:agi:0.97:3.88,sta:7:sta:2.2:15.4,str:3:str:1:3,armor:73:armor:0.067:4.891
-R	druid/feral	25	9834	12753	gear	24.291000000000004	sta:7:sta:2.2:15.4,str:4:str:1:4,armor:73:armor:0.067:4.891
-R	druid/feral	25	9834	12755	gear	24.291000000000004	sta:7:sta:2.2:15.4,str:4:str:1:4,armor:73:armor:0.067:4.891
-R	druid/feral	25	9834	12756	gear	4.891	armor:73:armor:0.067:4.891
-R	druid/feral	25	9834	12760	gear	4.891	armor:73:armor:0.067:4.891
-R	druid/feral	25	11187	0	gear	0.268	armor:4:armor:0.067:0.268
+R	druid/feral	25	6540	0	gear	1.596	armor:28:armor:0.057:1.596
+R	druid/feral	25	6540	12718	gear	5.856000000000001	int:3:int:0.12:0.36,sta:3:sta:1.3:3.9,armor:28:armor:0.057:1.596
+R	druid/feral	25	6540	12719	gear	6.876	spi:3:spi:0.46:1.38,sta:3:sta:1.3:3.9,armor:28:armor:0.057:1.596
+R	druid/feral	25	6540	12720	gear	3.3360000000000003	int:3:int:0.12:0.36,spi:3:spi:0.46:1.38,armor:28:armor:0.057:1.596
+R	druid/feral	25	6540	12729	gear	2.196	int:5:int:0.12:0.6,armor:28:armor:0.057:1.596
+R	druid/feral	25	6540	12730	gear	3.8960000000000004	spi:5:spi:0.46:2.3,armor:28:armor:0.057:1.596
+R	druid/feral	25	6540	12731	gear	8.096	sta:5:sta:1.3:6.5,armor:28:armor:0.057:1.596
+R	druid/feral	25	6540	12734	gear	1.596	armor:28:armor:0.057:1.596
+R	druid/feral	25	6540	12735	gear	1.596	armor:28:armor:0.057:1.596
+R	druid/feral	25	6540	12740	gear	5.496	sta:3:sta:1.3:3.9,armor:28:armor:0.057:1.596
+R	druid/feral	25	6540	12741	gear	5.496	sta:3:sta:1.3:3.9,armor:28:armor:0.057:1.596
+R	druid/feral	25	6540	12742	gear	5.496	sta:3:sta:1.3:3.9,armor:28:armor:0.057:1.596
+R	druid/feral	25	6540	12743	gear	5.496	sta:3:sta:1.3:3.9,armor:28:armor:0.057:1.596
+R	druid/feral	25	6540	12744	gear	5.496	sta:3:sta:1.3:3.9,armor:28:armor:0.057:1.596
+R	druid/feral	25	6540	12745	gear	4.676	int:4:int:0.12:0.48,sta:2:sta:1.3:2.6,armor:28:armor:0.057:1.596
+R	druid/feral	25	6540	12756	gear	1.596	armor:28:armor:0.057:1.596
+R	druid/feral	25	6540	12757	gear	1.596	armor:28:armor:0.057:1.596
+R	druid/feral	25	6540	12758	gear	1.596	armor:28:armor:0.057:1.596
+R	druid/feral	25	6540	12759	gear	1.596	armor:28:armor:0.057:1.596
+R	druid/feral	25	6540	12761	gear	1.596	armor:28:armor:0.057:1.596
+R	druid/feral	25	6557	0	gear	2.793	armor:49:armor:0.057:2.793
+R	druid/feral	25	6557	12718	gear	5.633	int:2:int:0.12:0.24,sta:2:sta:1.3:2.6,armor:49:armor:0.057:2.793
+R	druid/feral	25	6557	12719	gear	6.313000000000001	spi:2:spi:0.46:0.92,sta:2:sta:1.3:2.6,armor:49:armor:0.057:2.793
+R	druid/feral	25	6557	12720	gear	3.9530000000000003	int:2:int:0.12:0.24,spi:2:spi:0.46:0.92,armor:49:armor:0.057:2.793
+R	druid/feral	25	6557	12721	gear	7.113	agi:2:agi:0.86:1.72,sta:2:sta:1.3:2.6,armor:49:armor:0.057:2.793
+R	druid/feral	25	6557	12722	gear	7.393	sta:2:sta:1.3:2.6,str:2:str:1:2,armor:49:armor:0.057:2.793
+R	druid/feral	25	6557	12723	gear	5.033	int:2:int:0.12:0.24,str:2:str:1:2,armor:49:armor:0.057:2.793
+R	druid/feral	25	6557	12724	gear	4.753	agi:2:agi:0.86:1.72,int:2:int:0.12:0.24,armor:49:armor:0.057:2.793
+R	druid/feral	25	6557	12725	gear	5.713	spi:2:spi:0.46:0.92,str:2:str:1:2,armor:49:armor:0.057:2.793
+R	druid/feral	25	6557	12726	gear	5.433	agi:2:agi:0.86:1.72,spi:2:spi:0.46:0.92,armor:49:armor:0.057:2.793
+R	druid/feral	25	6557	12727	gear	6.513	agi:2:agi:0.86:1.72,str:2:str:1:2,armor:49:armor:0.057:2.793
+R	druid/feral	25	6557	12728	gear	5.373	agi:3:agi:0.86:2.58,armor:49:armor:0.057:2.793
+R	druid/feral	25	6557	12729	gear	3.153	int:3:int:0.12:0.36,armor:49:armor:0.057:2.793
+R	druid/feral	25	6557	12730	gear	4.173	spi:3:spi:0.46:1.38,armor:49:armor:0.057:2.793
+R	druid/feral	25	6557	12731	gear	6.6930000000000005	sta:3:sta:1.3:3.9,armor:49:armor:0.057:2.793
+R	druid/feral	25	6557	12732	gear	5.793	str:3:str:1:3,armor:49:armor:0.057:2.793
+R	druid/feral	25	6557	12733	gear	5.793	ap:6:ap:0.5:3,armor:49:armor:0.057:2.793
+R	druid/feral	25	6557	12734	gear	2.793	armor:49:armor:0.057:2.793
+R	druid/feral	25	6557	12735	gear	2.793	armor:49:armor:0.057:2.793
+R	druid/feral	25	6557	12736	gear	2.793	armor:49:armor:0.057:2.793
+R	druid/feral	25	6557	12740	gear	5.393000000000001	sta:2:sta:1.3:2.6,armor:49:armor:0.057:2.793
+R	druid/feral	25	6557	12741	gear	5.393000000000001	sta:2:sta:1.3:2.6,armor:49:armor:0.057:2.793
+R	druid/feral	25	6557	12742	gear	5.393000000000001	sta:2:sta:1.3:2.6,armor:49:armor:0.057:2.793
+R	druid/feral	25	6557	12743	gear	5.393000000000001	sta:2:sta:1.3:2.6,armor:49:armor:0.057:2.793
+R	druid/feral	25	6557	12744	gear	5.393000000000001	sta:2:sta:1.3:2.6,armor:49:armor:0.057:2.793
+R	druid/feral	25	6557	12756	gear	2.793	armor:49:armor:0.057:2.793
+R	druid/feral	25	6557	12760	gear	2.793	armor:49:armor:0.057:2.793
+R	druid/feral	25	7047	0	gear	3.782	spi:5:spi:0.46:2.3,armor:26:armor:0.057:1.482
+R	druid/feral	25	8192	0	gear	20.862	agi:11:agi:0.86:9.46,sta:5:sta:1.3:6.5,armor:86:armor:0.057:4.902
+R	druid/feral	25	9834	0	gear	4.1610000000000005	armor:73:armor:0.057:4.161
+R	druid/feral	25	9834	12718	gear	12.681000000000001	int:6:int:0.12:0.72,sta:6:sta:1.3:7.8,armor:73:armor:0.057:4.161
+R	druid/feral	25	9834	12719	gear	14.721	spi:6:spi:0.46:2.76,sta:6:sta:1.3:7.8,armor:73:armor:0.057:4.161
+R	druid/feral	25	9834	12720	gear	7.641000000000001	int:6:int:0.12:0.72,spi:6:spi:0.46:2.76,armor:73:armor:0.057:4.161
+R	druid/feral	25	9834	12721	gear	17.121000000000002	agi:6:agi:0.86:5.16,sta:6:sta:1.3:7.8,armor:73:armor:0.057:4.161
+R	druid/feral	25	9834	12722	gear	17.961000000000002	sta:6:sta:1.3:7.8,str:6:str:1:6,armor:73:armor:0.057:4.161
+R	druid/feral	25	9834	12723	gear	10.881	int:6:int:0.12:0.72,str:6:str:1:6,armor:73:armor:0.057:4.161
+R	druid/feral	25	9834	12724	gear	10.041	agi:6:agi:0.86:5.16,int:6:int:0.12:0.72,armor:73:armor:0.057:4.161
+R	druid/feral	25	9834	12725	gear	12.921	spi:6:spi:0.46:2.76,str:6:str:1:6,armor:73:armor:0.057:4.161
+R	druid/feral	25	9834	12726	gear	12.081	agi:6:agi:0.86:5.16,spi:6:spi:0.46:2.76,armor:73:armor:0.057:4.161
+R	druid/feral	25	9834	12727	gear	15.321000000000002	agi:6:agi:0.86:5.16,str:6:str:1:6,armor:73:armor:0.057:4.161
+R	druid/feral	25	9834	12728	gear	11.901	agi:9:agi:0.86:7.74,armor:73:armor:0.057:4.161
+R	druid/feral	25	9834	12729	gear	5.2410000000000005	int:9:int:0.12:1.08,armor:73:armor:0.057:4.161
+R	druid/feral	25	9834	12730	gear	8.301000000000002	spi:9:spi:0.46:4.14,armor:73:armor:0.057:4.161
+R	druid/feral	25	9834	12731	gear	15.861	sta:9:sta:1.3:11.7,armor:73:armor:0.057:4.161
+R	druid/feral	25	9834	12732	gear	13.161000000000001	str:9:str:1:9,armor:73:armor:0.057:4.161
+R	druid/feral	25	9834	12733	gear	13.161000000000001	ap:18:ap:0.5:9,armor:73:armor:0.057:4.161
+R	druid/feral	25	9834	12734	gear	4.1610000000000005	armor:73:armor:0.057:4.161
+R	druid/feral	25	9834	12735	gear	4.1610000000000005	armor:73:armor:0.057:4.161
+R	druid/feral	25	9834	12736	gear	4.1610000000000005	armor:73:armor:0.057:4.161
+R	druid/feral	25	9834	12740	gear	11.961000000000002	sta:6:sta:1.3:7.8,armor:73:armor:0.057:4.161
+R	druid/feral	25	9834	12741	gear	11.961000000000002	sta:6:sta:1.3:7.8,armor:73:armor:0.057:4.161
+R	druid/feral	25	9834	12742	gear	11.961000000000002	sta:6:sta:1.3:7.8,armor:73:armor:0.057:4.161
+R	druid/feral	25	9834	12743	gear	11.961000000000002	sta:6:sta:1.3:7.8,armor:73:armor:0.057:4.161
+R	druid/feral	25	9834	12744	gear	11.961000000000002	sta:6:sta:1.3:7.8,armor:73:armor:0.057:4.161
+R	druid/feral	25	9834	12745	gear	10.201	int:7:int:0.12:0.84,sta:4:sta:1.3:5.2,armor:73:armor:0.057:4.161
+R	druid/feral	25	9834	12746	gear	6.841000000000001	int:7:int:0.12:0.84,spi:4:spi:0.46:1.84,armor:73:armor:0.057:4.161
+R	druid/feral	25	9834	12747	gear	15.100999999999999	spi:4:spi:0.46:1.84,sta:7:sta:1.3:9.1,armor:73:armor:0.057:4.161
+R	druid/feral	25	9834	12748	gear	13.741	int:4:int:0.12:0.48,sta:7:sta:1.3:9.1,armor:73:armor:0.057:4.161
+R	druid/feral	25	9834	12749	gear	6.841000000000001	int:7:int:0.12:0.84,spi:4:spi:0.46:1.84,armor:73:armor:0.057:4.161
+R	druid/feral	25	9834	12750	gear	15.100999999999999	spi:4:spi:0.46:1.84,sta:7:sta:1.3:9.1,armor:73:armor:0.057:4.161
+R	druid/feral	25	9834	12751	gear	19.341	agi:3:agi:0.86:2.58,ap:7:ap:0.5:3.5,sta:7:sta:1.3:9.1,armor:73:armor:0.057:4.161
+R	druid/feral	25	9834	12752	gear	19.701	agi:4:agi:0.86:3.44,sta:7:sta:1.3:9.1,str:3:str:1:3,armor:73:armor:0.057:4.161
+R	druid/feral	25	9834	12753	gear	17.261	sta:7:sta:1.3:9.1,str:4:str:1:4,armor:73:armor:0.057:4.161
+R	druid/feral	25	9834	12755	gear	17.261	sta:7:sta:1.3:9.1,str:4:str:1:4,armor:73:armor:0.057:4.161
+R	druid/feral	25	9834	12756	gear	4.1610000000000005	armor:73:armor:0.057:4.161
+R	druid/feral	25	9834	12760	gear	4.1610000000000005	armor:73:armor:0.057:4.161
+R	druid/feral	25	11187	0	gear	0.228	armor:4:armor:0.057:0.228
 R	druid/feral	25	11994	0	gear	0.0	
-R	druid/feral	25	11994	12718	gear	6.822000000000001	int:3:int:0.074:0.222,sta:3:sta:2.2:6.6
-R	druid/feral	25	11994	12719	gear	7.890000000000001	spi:3:spi:0.43:1.29,sta:3:sta:2.2:6.6
-R	druid/feral	25	11994	12720	gear	1.512	int:3:int:0.074:0.222,spi:3:spi:0.43:1.29
-R	druid/feral	25	11994	12721	gear	9.510000000000002	agi:3:agi:0.97:2.91,sta:3:sta:2.2:6.6
-R	druid/feral	25	11994	12722	gear	9.600000000000001	sta:3:sta:2.2:6.6,str:3:str:1:3
-R	druid/feral	25	11994	12723	gear	3.222	int:3:int:0.074:0.222,str:3:str:1:3
-R	druid/feral	25	11994	12724	gear	3.132	agi:3:agi:0.97:2.91,int:3:int:0.074:0.222
-R	druid/feral	25	11994	12725	gear	4.29	spi:3:spi:0.43:1.29,str:3:str:1:3
-R	druid/feral	25	11994	12726	gear	4.2	agi:3:agi:0.97:2.91,spi:3:spi:0.43:1.29
-R	druid/feral	25	11994	12727	gear	5.91	agi:3:agi:0.97:2.91,str:3:str:1:3
-R	druid/feral	25	11994	12728	gear	4.85	agi:5:agi:0.97:4.85
-R	druid/feral	25	11994	12729	gear	0.37	int:5:int:0.074:0.37
-R	druid/feral	25	11994	12730	gear	2.15	spi:5:spi:0.43:2.15
-R	druid/feral	25	11994	12731	gear	11.0	sta:5:sta:2.2:11
+R	druid/feral	25	11994	12718	gear	4.260000000000001	int:3:int:0.12:0.36,sta:3:sta:1.3:3.9
+R	druid/feral	25	11994	12719	gear	5.28	spi:3:spi:0.46:1.38,sta:3:sta:1.3:3.9
+R	druid/feral	25	11994	12720	gear	1.7400000000000002	int:3:int:0.12:0.36,spi:3:spi:0.46:1.38
+R	druid/feral	25	11994	12721	gear	6.48	agi:3:agi:0.86:2.58,sta:3:sta:1.3:3.9
+R	druid/feral	25	11994	12722	gear	6.9	sta:3:sta:1.3:3.9,str:3:str:1:3
+R	druid/feral	25	11994	12723	gear	3.36	int:3:int:0.12:0.36,str:3:str:1:3
+R	druid/feral	25	11994	12724	gear	2.94	agi:3:agi:0.86:2.58,int:3:int:0.12:0.36
+R	druid/feral	25	11994	12725	gear	4.38	spi:3:spi:0.46:1.38,str:3:str:1:3
+R	druid/feral	25	11994	12726	gear	3.96	agi:3:agi:0.86:2.58,spi:3:spi:0.46:1.38
+R	druid/feral	25	11994	12727	gear	5.58	agi:3:agi:0.86:2.58,str:3:str:1:3
+R	druid/feral	25	11994	12728	gear	4.3	agi:5:agi:0.86:4.3
+R	druid/feral	25	11994	12729	gear	0.6	int:5:int:0.12:0.6
+R	druid/feral	25	11994	12730	gear	2.3000000000000003	spi:5:spi:0.46:2.3
+R	druid/feral	25	11994	12731	gear	6.5	sta:5:sta:1.3:6.5
 R	druid/feral	25	11994	12732	gear	5.0	str:5:str:1:5
 R	druid/feral	25	11994	12733	gear	5.0	ap:10:ap:0.5:5
 R	druid/feral	25	11994	12737	gear	0.0	
-R	druid/feral	25	11994	12738	gear	0.36	mp5:2:mp5:0.18:0.36
-R	druid/feral	25	11994	12739	gear	1.94	agi:2:agi:0.97:1.94
-R	druid/feral	25	11994	12740	gear	6.6000000000000005	sta:3:sta:2.2:6.6
-R	druid/feral	25	11994	12741	gear	6.6000000000000005	sta:3:sta:2.2:6.6
-R	druid/feral	25	11994	12742	gear	6.6000000000000005	sta:3:sta:2.2:6.6
-R	druid/feral	25	11994	12743	gear	6.6000000000000005	sta:3:sta:2.2:6.6
-R	druid/feral	25	11994	12744	gear	6.6000000000000005	sta:3:sta:2.2:6.6
+R	druid/feral	25	11994	12738	gear	0.4	mp5:2:mp5:0.2:0.4
+R	druid/feral	25	11994	12739	gear	1.72	agi:2:agi:0.86:1.72
+R	druid/feral	25	11994	12740	gear	3.9000000000000004	sta:3:sta:1.3:3.9
+R	druid/feral	25	11994	12741	gear	3.9000000000000004	sta:3:sta:1.3:3.9
+R	druid/feral	25	11994	12742	gear	3.9000000000000004	sta:3:sta:1.3:3.9
+R	druid/feral	25	11994	12743	gear	3.9000000000000004	sta:3:sta:1.3:3.9
+R	druid/feral	25	11994	12744	gear	3.9000000000000004	sta:3:sta:1.3:3.9
 R	druid/feral	25	13183	0	mh	224.979	dps:39.47:dps:5.7:224.979
-R	druid/feral	25	14122	0	gear	0.9380000000000001	armor:14:armor:0.067:0.938
-R	druid/feral	25	14122	12718	gear	5.486	int:2:int:0.074:0.148,sta:2:sta:2.2:4.4,armor:14:armor:0.067:0.938
-R	druid/feral	25	14122	12719	gear	6.198	spi:2:spi:0.43:0.86,sta:2:sta:2.2:4.4,armor:14:armor:0.067:0.938
-R	druid/feral	25	14122	12720	gear	1.9460000000000002	int:2:int:0.074:0.148,spi:2:spi:0.43:0.86,armor:14:armor:0.067:0.938
-R	druid/feral	25	14122	12729	gear	1.1600000000000001	int:3:int:0.074:0.222,armor:14:armor:0.067:0.938
-R	druid/feral	25	14122	12730	gear	2.228	spi:3:spi:0.43:1.29,armor:14:armor:0.067:0.938
-R	druid/feral	25	14122	12731	gear	7.538	sta:3:sta:2.2:6.6,armor:14:armor:0.067:0.938
-R	druid/feral	25	14122	12734	gear	0.9380000000000001	armor:14:armor:0.067:0.938
-R	druid/feral	25	14122	12735	gear	0.9380000000000001	armor:14:armor:0.067:0.938
-R	druid/feral	25	14122	12740	gear	5.338	sta:2:sta:2.2:4.4,armor:14:armor:0.067:0.938
-R	druid/feral	25	14122	12741	gear	5.338	sta:2:sta:2.2:4.4,armor:14:armor:0.067:0.938
-R	druid/feral	25	14122	12742	gear	5.338	sta:2:sta:2.2:4.4,armor:14:armor:0.067:0.938
-R	druid/feral	25	14122	12743	gear	5.338	sta:2:sta:2.2:4.4,armor:14:armor:0.067:0.938
-R	druid/feral	25	14122	12744	gear	5.338	sta:2:sta:2.2:4.4,armor:14:armor:0.067:0.938
-R	druid/feral	25	14122	12745	gear	3.2860000000000005	int:2:int:0.074:0.148,sta:1:sta:2.2:2.2,armor:14:armor:0.067:0.938
-R	druid/feral	25	14122	12756	gear	0.9380000000000001	armor:14:armor:0.067:0.938
-R	druid/feral	25	14122	12757	gear	0.9380000000000001	armor:14:armor:0.067:0.938
-R	druid/feral	25	14122	12758	gear	0.9380000000000001	armor:14:armor:0.067:0.938
-R	druid/feral	25	14122	12759	gear	0.9380000000000001	armor:14:armor:0.067:0.938
-R	druid/feral	25	14122	12761	gear	0.9380000000000001	armor:14:armor:0.067:0.938
-R	druid/feral	25	14340	0	gear	47.696000000000005	sta:19:sta:2.2:41.8,armor:88:armor:0.067:5.896
-R	druid/feral	25	14673	0	gear	25.008	str:3:str:1:3,agi:9:agi:0.97:8.73,sta:5:sta:2.2:11,armor:34:armor:0.067:2.278
-R	druid/feral	25	15945	0	oh	5.260000000000001	sta:2:sta:2.2:4.4,spi:2:spi:0.43:0.86
-R	druid/feral	25	16711	0	gear	48.205	agi:21:agi:0.97:20.37,sta:9:sta:2.2:19.8,hit:0.3:hit:1.1:0.33,armor:115:armor:0.067:7.705
-R	druid/feral	25	18726	0	gear	37.891	sta:15:sta:2.2:33,armor:73:armor:0.067:4.891
+R	druid/feral	25	14122	0	gear	0.798	armor:14:armor:0.057:0.798
+R	druid/feral	25	14122	12718	gear	3.638	int:2:int:0.12:0.24,sta:2:sta:1.3:2.6,armor:14:armor:0.057:0.798
+R	druid/feral	25	14122	12719	gear	4.318	spi:2:spi:0.46:0.92,sta:2:sta:1.3:2.6,armor:14:armor:0.057:0.798
+R	druid/feral	25	14122	12720	gear	1.9580000000000002	int:2:int:0.12:0.24,spi:2:spi:0.46:0.92,armor:14:armor:0.057:0.798
+R	druid/feral	25	14122	12729	gear	1.158	int:3:int:0.12:0.36,armor:14:armor:0.057:0.798
+R	druid/feral	25	14122	12730	gear	2.178	spi:3:spi:0.46:1.38,armor:14:armor:0.057:0.798
+R	druid/feral	25	14122	12731	gear	4.698	sta:3:sta:1.3:3.9,armor:14:armor:0.057:0.798
+R	druid/feral	25	14122	12734	gear	0.798	armor:14:armor:0.057:0.798
+R	druid/feral	25	14122	12735	gear	0.798	armor:14:armor:0.057:0.798
+R	druid/feral	25	14122	12740	gear	3.398	sta:2:sta:1.3:2.6,armor:14:armor:0.057:0.798
+R	druid/feral	25	14122	12741	gear	3.398	sta:2:sta:1.3:2.6,armor:14:armor:0.057:0.798
+R	druid/feral	25	14122	12742	gear	3.398	sta:2:sta:1.3:2.6,armor:14:armor:0.057:0.798
+R	druid/feral	25	14122	12743	gear	3.398	sta:2:sta:1.3:2.6,armor:14:armor:0.057:0.798
+R	druid/feral	25	14122	12744	gear	3.398	sta:2:sta:1.3:2.6,armor:14:armor:0.057:0.798
+R	druid/feral	25	14122	12745	gear	2.338	int:2:int:0.12:0.24,sta:1:sta:1.3:1.3,armor:14:armor:0.057:0.798
+R	druid/feral	25	14122	12756	gear	0.798	armor:14:armor:0.057:0.798
+R	druid/feral	25	14122	12757	gear	0.798	armor:14:armor:0.057:0.798
+R	druid/feral	25	14122	12758	gear	0.798	armor:14:armor:0.057:0.798
+R	druid/feral	25	14122	12759	gear	0.798	armor:14:armor:0.057:0.798
+R	druid/feral	25	14122	12761	gear	0.798	armor:14:armor:0.057:0.798
+R	druid/feral	25	14340	0	gear	29.716	sta:19:sta:1.3:24.7,armor:88:armor:0.057:5.016
+R	druid/feral	25	14673	0	gear	19.178	str:3:str:1:3,agi:9:agi:0.86:7.74,sta:5:sta:1.3:6.5,armor:34:armor:0.057:1.938
+R	druid/feral	25	15945	0	oh	3.52	sta:2:sta:1.3:2.6,spi:2:spi:0.46:0.92
+R	druid/feral	25	16711	0	gear	36.644999999999996	agi:21:agi:0.86:18.06,sta:9:sta:1.3:11.7,hit:0.3:hit:1.1:0.33,armor:115:armor:0.057:6.555
+R	druid/feral	25	18726	0	gear	23.661	sta:15:sta:1.3:19.5,armor:73:armor:0.057:4.161
 R	druid/feral	25	22397	0	ranged	0.0	
-R	druid/feral	25	252507	0	gear	27.092	sta:10:sta:2.2:22,armor:76:armor:0.067:5.092
-R	druid/feral	25	254111	0	gear	32.884	int:9:int:0.074:0.666,sta:13:sta:2.2:28.6,armor:54:armor:0.067:3.618
-R	druid/feral	25	270033	0	gear	9.493	agi:4:agi:0.97:3.88,str:3:str:1:3,armor:39:armor:0.067:2.613
-R	druid/feral	25	273892	0	gear	63.14	sta:20:sta:2.2:44,int:19:int:0.074:1.406,spi:16:spi:0.43:6.88,armor:162:armor:0.067:10.854
-R	druid/feral	25	280082	0	mh	218.415	int:15:int:0.074:1.11,hit:1.5:hit:1.1:1.65,spi:21:spi:0.43:9.03,dps:36.25:dps:5.7:206.625
-R	druid/feral	34	1315	0	gear	23.1	sta:10:sta:1.8:18,spi:15:spi:0.34:5.1
-R	druid/feral	34	1808	0	gear	4.218	armor:74:armor:0.057:4.218
+R	druid/feral	25	252507	0	gear	17.332	sta:10:sta:1.3:13,armor:76:armor:0.057:4.332
+R	druid/feral	25	254111	0	gear	21.058000000000003	int:9:int:0.12:1.08,sta:13:sta:1.3:16.9,armor:54:armor:0.057:3.078
+R	druid/feral	25	270033	0	gear	8.663	agi:4:agi:0.86:3.44,str:3:str:1:3,armor:39:armor:0.057:2.223
+R	druid/feral	25	273892	0	gear	44.874	sta:20:sta:1.3:26,int:19:int:0.12:2.28,spi:16:spi:0.46:7.36,armor:162:armor:0.057:9.234
+R	druid/feral	25	280082	0	mh	219.735	int:15:int:0.12:1.8,hit:1.5:hit:1.1:1.65,spi:21:spi:0.46:9.66,dps:36.25:dps:5.7:206.625
+R	druid/feral	34	1315	0	gear	14.7	sta:10:sta:0.96:9.6,spi:15:spi:0.34:5.1
+R	druid/feral	34	1808	0	gear	3.7	armor:74:armor:0.05:3.7
 R	druid/feral	34	1990	0	mh	126.021	dps:24.71:dps:5.1:126.021
-R	druid/feral	34	1990	12718	mh	142.995	int:9:int:0.086:0.774,sta:9:sta:1.8:16.2,dps:24.71:dps:5.1:126.021
-R	druid/feral	34	1990	12905	mh	107.28399999999999	int:11:int:0.086:0.946,sta:7:sta:1.8:12.6,dps:18.38:dps:5.1:93.738
+R	druid/feral	34	1990	12718	mh	135.093	int:9:int:0.048:0.432,sta:9:sta:0.96:8.64,dps:24.71:dps:5.1:126.021
+R	druid/feral	34	1990	12905	mh	100.98599999999999	int:11:int:0.048:0.528,sta:7:sta:0.96:6.72,dps:18.38:dps:5.1:93.738
 R	druid/feral	34	2140	0	mh	30.294	dps:5.94:dps:5.1:30.294
-R	druid/feral	34	2140	12718	mh	32.18	int:1:int:0.086:0.086,sta:1:sta:1.8:1.8,dps:5.94:dps:5.1:30.294
-R	druid/feral	34	2140	12917	mh	19.211	int:1:int:0.086:0.086,dps:3.75:dps:5.1:19.125
+R	druid/feral	34	2140	12718	mh	31.302	int:1:int:0.048:0.048,sta:1:sta:0.96:0.96,dps:5.94:dps:5.1:30.294
+R	druid/feral	34	2140	12917	mh	19.173	int:1:int:0.048:0.048,dps:3.75:dps:5.1:19.125
 R	druid/feral	34	2225	0	mh	25.5	dps:5:dps:5.1:25.5
-R	druid/feral	34	2614	0	gear	1.653	armor:29:armor:0.057:1.653
-R	druid/feral	34	3158	0	gear	1.482	armor:26:armor:0.057:1.482
+R	druid/feral	34	2614	0	gear	1.4500000000000002	armor:29:armor:0.05:1.45
+R	druid/feral	34	3158	0	gear	1.3	armor:26:armor:0.05:1.3
 R	druid/feral	34	3570	0	mh	43.41199999999999	str:2:str:1:2,dps:8.12:dps:5.1:41.412
 R	druid/feral	34	4023	0	mh	78.336	dps:15.36:dps:5.1:78.336
 R	druid/feral	34	4570	0	mh	51.0	dps:10:dps:5.1:51
-R	druid/feral	34	4570	12718	mh	56.658	int:3:int:0.086:0.258,sta:3:sta:1.8:5.4,dps:10:dps:5.1:51
-R	druid/feral	34	4570	12719	mh	57.42	spi:3:spi:0.34:1.02,sta:3:sta:1.8:5.4,dps:10:dps:5.1:51
-R	druid/feral	34	4570	12720	mh	52.278	int:3:int:0.086:0.258,spi:3:spi:0.34:1.02,dps:10:dps:5.1:51
-R	druid/feral	34	4570	12721	mh	59.7	agi:3:agi:1.1:3.3,sta:3:sta:1.8:5.4,dps:10:dps:5.1:51
-R	druid/feral	34	4570	12722	mh	59.4	sta:3:sta:1.8:5.4,str:3:str:1:3,dps:10:dps:5.1:51
-R	druid/feral	34	4570	12723	mh	54.258	int:3:int:0.086:0.258,str:3:str:1:3,dps:10:dps:5.1:51
-R	druid/feral	34	4570	12724	mh	54.558	agi:3:agi:1.1:3.3,int:3:int:0.086:0.258,dps:10:dps:5.1:51
+R	druid/feral	34	4570	12718	mh	54.024	int:3:int:0.048:0.144,sta:3:sta:0.96:2.88,dps:10:dps:5.1:51
+R	druid/feral	34	4570	12719	mh	54.9	spi:3:spi:0.34:1.02,sta:3:sta:0.96:2.88,dps:10:dps:5.1:51
+R	druid/feral	34	4570	12720	mh	52.164	int:3:int:0.048:0.144,spi:3:spi:0.34:1.02,dps:10:dps:5.1:51
+R	druid/feral	34	4570	12721	mh	56.88	agi:3:agi:1:3,sta:3:sta:0.96:2.88,dps:10:dps:5.1:51
+R	druid/feral	34	4570	12722	mh	56.88	sta:3:sta:0.96:2.88,str:3:str:1:3,dps:10:dps:5.1:51
+R	druid/feral	34	4570	12723	mh	54.144	int:3:int:0.048:0.144,str:3:str:1:3,dps:10:dps:5.1:51
+R	druid/feral	34	4570	12724	mh	54.144	agi:3:agi:1:3,int:3:int:0.048:0.144,dps:10:dps:5.1:51
 R	druid/feral	34	4570	12725	mh	55.019999999999996	spi:3:spi:0.34:1.02,str:3:str:1:3,dps:10:dps:5.1:51
-R	druid/feral	34	4570	12726	mh	55.32	agi:3:agi:1.1:3.3,spi:3:spi:0.34:1.02,dps:10:dps:5.1:51
-R	druid/feral	34	4570	12727	mh	57.3	agi:3:agi:1.1:3.3,str:3:str:1:3,dps:10:dps:5.1:51
-R	druid/feral	34	4570	12728	mh	55.4	agi:4:agi:1.1:4.4,dps:10:dps:5.1:51
-R	druid/feral	34	4570	12729	mh	51.344	int:4:int:0.086:0.344,dps:10:dps:5.1:51
+R	druid/feral	34	4570	12726	mh	55.019999999999996	agi:3:agi:1:3,spi:3:spi:0.34:1.02,dps:10:dps:5.1:51
+R	druid/feral	34	4570	12727	mh	57.0	agi:3:agi:1:3,str:3:str:1:3,dps:10:dps:5.1:51
+R	druid/feral	34	4570	12728	mh	55.0	agi:4:agi:1:4,dps:10:dps:5.1:51
+R	druid/feral	34	4570	12729	mh	51.192	int:4:int:0.048:0.192,dps:10:dps:5.1:51
 R	druid/feral	34	4570	12730	mh	52.36	spi:4:spi:0.34:1.36,dps:10:dps:5.1:51
-R	druid/feral	34	4570	12731	mh	58.2	sta:4:sta:1.8:7.2,dps:10:dps:5.1:51
+R	druid/feral	34	4570	12731	mh	54.84	sta:4:sta:0.96:3.84,dps:10:dps:5.1:51
 R	druid/feral	34	4570	12732	mh	55.0	str:4:str:1:4,dps:10:dps:5.1:51
 R	druid/feral	34	4570	12733	mh	55.0	ap:8:ap:0.5:4,dps:10:dps:5.1:51
 R	druid/feral	34	4570	12736	mh	51.0	dps:10:dps:5.1:51
-R	druid/feral	34	4570	12740	mh	56.4	sta:3:sta:1.8:5.4,dps:10:dps:5.1:51
-R	druid/feral	34	4570	12741	mh	56.4	sta:3:sta:1.8:5.4,dps:10:dps:5.1:51
-R	druid/feral	34	4570	12742	mh	56.4	sta:3:sta:1.8:5.4,dps:10:dps:5.1:51
-R	druid/feral	34	4570	12743	mh	56.4	sta:3:sta:1.8:5.4,dps:10:dps:5.1:51
-R	druid/feral	34	4570	12744	mh	56.4	sta:3:sta:1.8:5.4,dps:10:dps:5.1:51
+R	druid/feral	34	4570	12740	mh	53.88	sta:3:sta:0.96:2.88,dps:10:dps:5.1:51
+R	druid/feral	34	4570	12741	mh	53.88	sta:3:sta:0.96:2.88,dps:10:dps:5.1:51
+R	druid/feral	34	4570	12742	mh	53.88	sta:3:sta:0.96:2.88,dps:10:dps:5.1:51
+R	druid/feral	34	4570	12743	mh	53.88	sta:3:sta:0.96:2.88,dps:10:dps:5.1:51
+R	druid/feral	34	4570	12744	mh	53.88	sta:3:sta:0.96:2.88,dps:10:dps:5.1:51
 R	druid/feral	34	4570	12759	mh	51.0	dps:10:dps:5.1:51
-R	druid/feral	34	4570	12918	mh	39.001999999999995	int:4:int:0.086:0.344,dps:7.58:dps:5.1:38.658
-R	druid/feral	34	4570	12919	mh	39.001999999999995	int:4:int:0.086:0.344,dps:7.58:dps:5.1:38.658
+R	druid/feral	34	4570	12918	mh	38.849999999999994	int:4:int:0.048:0.192,dps:7.58:dps:5.1:38.658
+R	druid/feral	34	4570	12919	mh	38.849999999999994	int:4:int:0.048:0.192,dps:7.58:dps:5.1:38.658
 R	druid/feral	34	5079	0	gear	0.0	
-R	druid/feral	34	6540	0	gear	1.596	armor:28:armor:0.057:1.596
-R	druid/feral	34	6540	12718	gear	7.2540000000000004	int:3:int:0.086:0.258,sta:3:sta:1.8:5.4,armor:28:armor:0.057:1.596
-R	druid/feral	34	6540	12719	gear	8.016	spi:3:spi:0.34:1.02,sta:3:sta:1.8:5.4,armor:28:armor:0.057:1.596
-R	druid/feral	34	6540	12720	gear	2.874	int:3:int:0.086:0.258,spi:3:spi:0.34:1.02,armor:28:armor:0.057:1.596
-R	druid/feral	34	6540	12729	gear	2.026	int:5:int:0.086:0.43,armor:28:armor:0.057:1.596
-R	druid/feral	34	6540	12730	gear	3.2960000000000003	spi:5:spi:0.34:1.7,armor:28:armor:0.057:1.596
-R	druid/feral	34	6540	12731	gear	10.596	sta:5:sta:1.8:9,armor:28:armor:0.057:1.596
-R	druid/feral	34	6540	12734	gear	1.596	armor:28:armor:0.057:1.596
-R	druid/feral	34	6540	12735	gear	1.596	armor:28:armor:0.057:1.596
-R	druid/feral	34	6540	12740	gear	6.996	sta:3:sta:1.8:5.4,armor:28:armor:0.057:1.596
-R	druid/feral	34	6540	12741	gear	6.996	sta:3:sta:1.8:5.4,armor:28:armor:0.057:1.596
-R	druid/feral	34	6540	12742	gear	6.996	sta:3:sta:1.8:5.4,armor:28:armor:0.057:1.596
-R	druid/feral	34	6540	12743	gear	6.996	sta:3:sta:1.8:5.4,armor:28:armor:0.057:1.596
-R	druid/feral	34	6540	12744	gear	6.996	sta:3:sta:1.8:5.4,armor:28:armor:0.057:1.596
-R	druid/feral	34	6540	12745	gear	5.54	int:4:int:0.086:0.344,sta:2:sta:1.8:3.6,armor:28:armor:0.057:1.596
-R	druid/feral	34	6540	12756	gear	1.596	armor:28:armor:0.057:1.596
-R	druid/feral	34	6540	12757	gear	1.596	armor:28:armor:0.057:1.596
-R	druid/feral	34	6540	12758	gear	1.596	armor:28:armor:0.057:1.596
-R	druid/feral	34	6540	12759	gear	1.596	armor:28:armor:0.057:1.596
-R	druid/feral	34	6540	12761	gear	1.596	armor:28:armor:0.057:1.596
-R	druid/feral	34	6557	0	gear	2.793	armor:49:armor:0.057:2.793
-R	druid/feral	34	6557	12718	gear	6.565	int:2:int:0.086:0.172,sta:2:sta:1.8:3.6,armor:49:armor:0.057:2.793
-R	druid/feral	34	6557	12719	gear	7.073	spi:2:spi:0.34:0.68,sta:2:sta:1.8:3.6,armor:49:armor:0.057:2.793
-R	druid/feral	34	6557	12720	gear	3.6450000000000005	int:2:int:0.086:0.172,spi:2:spi:0.34:0.68,armor:49:armor:0.057:2.793
-R	druid/feral	34	6557	12721	gear	8.593	agi:2:agi:1.1:2.2,sta:2:sta:1.8:3.6,armor:49:armor:0.057:2.793
-R	druid/feral	34	6557	12722	gear	8.393	sta:2:sta:1.8:3.6,str:2:str:1:2,armor:49:armor:0.057:2.793
-R	druid/feral	34	6557	12723	gear	4.965	int:2:int:0.086:0.172,str:2:str:1:2,armor:49:armor:0.057:2.793
-R	druid/feral	34	6557	12724	gear	5.165000000000001	agi:2:agi:1.1:2.2,int:2:int:0.086:0.172,armor:49:armor:0.057:2.793
-R	druid/feral	34	6557	12725	gear	5.473000000000001	spi:2:spi:0.34:0.68,str:2:str:1:2,armor:49:armor:0.057:2.793
-R	druid/feral	34	6557	12726	gear	5.673	agi:2:agi:1.1:2.2,spi:2:spi:0.34:0.68,armor:49:armor:0.057:2.793
-R	druid/feral	34	6557	12727	gear	6.993	agi:2:agi:1.1:2.2,str:2:str:1:2,armor:49:armor:0.057:2.793
-R	druid/feral	34	6557	12728	gear	6.093	agi:3:agi:1.1:3.3,armor:49:armor:0.057:2.793
-R	druid/feral	34	6557	12729	gear	3.051	int:3:int:0.086:0.258,armor:49:armor:0.057:2.793
-R	druid/feral	34	6557	12730	gear	3.813	spi:3:spi:0.34:1.02,armor:49:armor:0.057:2.793
-R	druid/feral	34	6557	12731	gear	8.193000000000001	sta:3:sta:1.8:5.4,armor:49:armor:0.057:2.793
-R	druid/feral	34	6557	12732	gear	5.793	str:3:str:1:3,armor:49:armor:0.057:2.793
-R	druid/feral	34	6557	12733	gear	5.793	ap:6:ap:0.5:3,armor:49:armor:0.057:2.793
-R	druid/feral	34	6557	12734	gear	2.793	armor:49:armor:0.057:2.793
-R	druid/feral	34	6557	12735	gear	2.793	armor:49:armor:0.057:2.793
-R	druid/feral	34	6557	12736	gear	2.793	armor:49:armor:0.057:2.793
-R	druid/feral	34	6557	12740	gear	6.393000000000001	sta:2:sta:1.8:3.6,armor:49:armor:0.057:2.793
-R	druid/feral	34	6557	12741	gear	6.393000000000001	sta:2:sta:1.8:3.6,armor:49:armor:0.057:2.793
-R	druid/feral	34	6557	12742	gear	6.393000000000001	sta:2:sta:1.8:3.6,armor:49:armor:0.057:2.793
-R	druid/feral	34	6557	12743	gear	6.393000000000001	sta:2:sta:1.8:3.6,armor:49:armor:0.057:2.793
-R	druid/feral	34	6557	12744	gear	6.393000000000001	sta:2:sta:1.8:3.6,armor:49:armor:0.057:2.793
-R	druid/feral	34	6557	12756	gear	2.793	armor:49:armor:0.057:2.793
-R	druid/feral	34	6557	12760	gear	2.793	armor:49:armor:0.057:2.793
-R	druid/feral	34	7047	0	gear	3.1820000000000004	spi:5:spi:0.34:1.7,armor:26:armor:0.057:1.482
-R	druid/feral	34	8192	0	gear	26.002000000000002	agi:11:agi:1.1:12.1,sta:5:sta:1.8:9,armor:86:armor:0.057:4.902
-R	druid/feral	34	9834	0	gear	4.1610000000000005	armor:73:armor:0.057:4.161
-R	druid/feral	34	9834	12718	gear	15.477	int:6:int:0.086:0.516,sta:6:sta:1.8:10.8,armor:73:armor:0.057:4.161
-R	druid/feral	34	9834	12719	gear	17.001	spi:6:spi:0.34:2.04,sta:6:sta:1.8:10.8,armor:73:armor:0.057:4.161
-R	druid/feral	34	9834	12720	gear	6.7170000000000005	int:6:int:0.086:0.516,spi:6:spi:0.34:2.04,armor:73:armor:0.057:4.161
-R	druid/feral	34	9834	12721	gear	21.561000000000003	agi:6:agi:1.1:6.6,sta:6:sta:1.8:10.8,armor:73:armor:0.057:4.161
-R	druid/feral	34	9834	12722	gear	20.961000000000002	sta:6:sta:1.8:10.8,str:6:str:1:6,armor:73:armor:0.057:4.161
-R	druid/feral	34	9834	12723	gear	10.677	int:6:int:0.086:0.516,str:6:str:1:6,armor:73:armor:0.057:4.161
-R	druid/feral	34	9834	12724	gear	11.277000000000001	agi:6:agi:1.1:6.6,int:6:int:0.086:0.516,armor:73:armor:0.057:4.161
-R	druid/feral	34	9834	12725	gear	12.201	spi:6:spi:0.34:2.04,str:6:str:1:6,armor:73:armor:0.057:4.161
-R	druid/feral	34	9834	12726	gear	12.801000000000002	agi:6:agi:1.1:6.6,spi:6:spi:0.34:2.04,armor:73:armor:0.057:4.161
-R	druid/feral	34	9834	12727	gear	16.761000000000003	agi:6:agi:1.1:6.6,str:6:str:1:6,armor:73:armor:0.057:4.161
-R	druid/feral	34	9834	12728	gear	14.061	agi:9:agi:1.1:9.9,armor:73:armor:0.057:4.161
-R	druid/feral	34	9834	12729	gear	4.9350000000000005	int:9:int:0.086:0.774,armor:73:armor:0.057:4.161
-R	druid/feral	34	9834	12730	gear	7.221	spi:9:spi:0.34:3.06,armor:73:armor:0.057:4.161
-R	druid/feral	34	9834	12731	gear	20.361	sta:9:sta:1.8:16.2,armor:73:armor:0.057:4.161
-R	druid/feral	34	9834	12732	gear	13.161000000000001	str:9:str:1:9,armor:73:armor:0.057:4.161
-R	druid/feral	34	9834	12733	gear	13.161000000000001	ap:18:ap:0.5:9,armor:73:armor:0.057:4.161
-R	druid/feral	34	9834	12734	gear	4.1610000000000005	armor:73:armor:0.057:4.161
-R	druid/feral	34	9834	12735	gear	4.1610000000000005	armor:73:armor:0.057:4.161
-R	druid/feral	34	9834	12736	gear	4.1610000000000005	armor:73:armor:0.057:4.161
-R	druid/feral	34	9834	12740	gear	14.961000000000002	sta:6:sta:1.8:10.8,armor:73:armor:0.057:4.161
-R	druid/feral	34	9834	12741	gear	14.961000000000002	sta:6:sta:1.8:10.8,armor:73:armor:0.057:4.161
-R	druid/feral	34	9834	12742	gear	14.961000000000002	sta:6:sta:1.8:10.8,armor:73:armor:0.057:4.161
-R	druid/feral	34	9834	12743	gear	14.961000000000002	sta:6:sta:1.8:10.8,armor:73:armor:0.057:4.161
-R	druid/feral	34	9834	12744	gear	14.961000000000002	sta:6:sta:1.8:10.8,armor:73:armor:0.057:4.161
-R	druid/feral	34	9834	12745	gear	11.963000000000001	int:7:int:0.086:0.602,sta:4:sta:1.8:7.2,armor:73:armor:0.057:4.161
-R	druid/feral	34	9834	12746	gear	6.123000000000001	int:7:int:0.086:0.602,spi:4:spi:0.34:1.36,armor:73:armor:0.057:4.161
-R	druid/feral	34	9834	12747	gear	18.121	spi:4:spi:0.34:1.36,sta:7:sta:1.8:12.6,armor:73:armor:0.057:4.161
-R	druid/feral	34	9834	12748	gear	17.105	int:4:int:0.086:0.344,sta:7:sta:1.8:12.6,armor:73:armor:0.057:4.161
-R	druid/feral	34	9834	12749	gear	6.123000000000001	int:7:int:0.086:0.602,spi:4:spi:0.34:1.36,armor:73:armor:0.057:4.161
-R	druid/feral	34	9834	12750	gear	18.121	spi:4:spi:0.34:1.36,sta:7:sta:1.8:12.6,armor:73:armor:0.057:4.161
-R	druid/feral	34	9834	12751	gear	23.561	agi:3:agi:1.1:3.3,ap:7:ap:0.5:3.5,sta:7:sta:1.8:12.6,armor:73:armor:0.057:4.161
-R	druid/feral	34	9834	12752	gear	24.161	agi:4:agi:1.1:4.4,sta:7:sta:1.8:12.6,str:3:str:1:3,armor:73:armor:0.057:4.161
-R	druid/feral	34	9834	12753	gear	20.761000000000003	sta:7:sta:1.8:12.6,str:4:str:1:4,armor:73:armor:0.057:4.161
-R	druid/feral	34	9834	12755	gear	20.761000000000003	sta:7:sta:1.8:12.6,str:4:str:1:4,armor:73:armor:0.057:4.161
-R	druid/feral	34	9834	12756	gear	4.1610000000000005	armor:73:armor:0.057:4.161
-R	druid/feral	34	9834	12760	gear	4.1610000000000005	armor:73:armor:0.057:4.161
-R	druid/feral	34	11187	0	gear	0.228	armor:4:armor:0.057:0.228
+R	druid/feral	34	6540	0	gear	1.4000000000000001	armor:28:armor:0.05:1.4
+R	druid/feral	34	6540	12718	gear	4.424	int:3:int:0.048:0.144,sta:3:sta:0.96:2.88,armor:28:armor:0.05:1.4
+R	druid/feral	34	6540	12719	gear	5.3	spi:3:spi:0.34:1.02,sta:3:sta:0.96:2.88,armor:28:armor:0.05:1.4
+R	druid/feral	34	6540	12720	gear	2.564	int:3:int:0.048:0.144,spi:3:spi:0.34:1.02,armor:28:armor:0.05:1.4
+R	druid/feral	34	6540	12729	gear	1.6400000000000001	int:5:int:0.048:0.24,armor:28:armor:0.05:1.4
+R	druid/feral	34	6540	12730	gear	3.1000000000000005	spi:5:spi:0.34:1.7,armor:28:armor:0.05:1.4
+R	druid/feral	34	6540	12731	gear	6.2	sta:5:sta:0.96:4.8,armor:28:armor:0.05:1.4
+R	druid/feral	34	6540	12734	gear	1.4000000000000001	armor:28:armor:0.05:1.4
+R	druid/feral	34	6540	12735	gear	1.4000000000000001	armor:28:armor:0.05:1.4
+R	druid/feral	34	6540	12740	gear	4.28	sta:3:sta:0.96:2.88,armor:28:armor:0.05:1.4
+R	druid/feral	34	6540	12741	gear	4.28	sta:3:sta:0.96:2.88,armor:28:armor:0.05:1.4
+R	druid/feral	34	6540	12742	gear	4.28	sta:3:sta:0.96:2.88,armor:28:armor:0.05:1.4
+R	druid/feral	34	6540	12743	gear	4.28	sta:3:sta:0.96:2.88,armor:28:armor:0.05:1.4
+R	druid/feral	34	6540	12744	gear	4.28	sta:3:sta:0.96:2.88,armor:28:armor:0.05:1.4
+R	druid/feral	34	6540	12745	gear	3.5120000000000005	int:4:int:0.048:0.192,sta:2:sta:0.96:1.92,armor:28:armor:0.05:1.4
+R	druid/feral	34	6540	12756	gear	1.4000000000000001	armor:28:armor:0.05:1.4
+R	druid/feral	34	6540	12757	gear	1.4000000000000001	armor:28:armor:0.05:1.4
+R	druid/feral	34	6540	12758	gear	1.4000000000000001	armor:28:armor:0.05:1.4
+R	druid/feral	34	6540	12759	gear	1.4000000000000001	armor:28:armor:0.05:1.4
+R	druid/feral	34	6540	12761	gear	1.4000000000000001	armor:28:armor:0.05:1.4
+R	druid/feral	34	6557	0	gear	2.45	armor:49:armor:0.05:2.45
+R	druid/feral	34	6557	12718	gear	4.466	int:2:int:0.048:0.096,sta:2:sta:0.96:1.92,armor:49:armor:0.05:2.45
+R	druid/feral	34	6557	12719	gear	5.050000000000001	spi:2:spi:0.34:0.68,sta:2:sta:0.96:1.92,armor:49:armor:0.05:2.45
+R	druid/feral	34	6557	12720	gear	3.226	int:2:int:0.048:0.096,spi:2:spi:0.34:0.68,armor:49:armor:0.05:2.45
+R	druid/feral	34	6557	12721	gear	6.37	agi:2:agi:1:2,sta:2:sta:0.96:1.92,armor:49:armor:0.05:2.45
+R	druid/feral	34	6557	12722	gear	6.37	sta:2:sta:0.96:1.92,str:2:str:1:2,armor:49:armor:0.05:2.45
+R	druid/feral	34	6557	12723	gear	4.546	int:2:int:0.048:0.096,str:2:str:1:2,armor:49:armor:0.05:2.45
+R	druid/feral	34	6557	12724	gear	4.546	agi:2:agi:1:2,int:2:int:0.048:0.096,armor:49:armor:0.05:2.45
+R	druid/feral	34	6557	12725	gear	5.130000000000001	spi:2:spi:0.34:0.68,str:2:str:1:2,armor:49:armor:0.05:2.45
+R	druid/feral	34	6557	12726	gear	5.130000000000001	agi:2:agi:1:2,spi:2:spi:0.34:0.68,armor:49:armor:0.05:2.45
+R	druid/feral	34	6557	12727	gear	6.45	agi:2:agi:1:2,str:2:str:1:2,armor:49:armor:0.05:2.45
+R	druid/feral	34	6557	12728	gear	5.45	agi:3:agi:1:3,armor:49:armor:0.05:2.45
+R	druid/feral	34	6557	12729	gear	2.5940000000000003	int:3:int:0.048:0.144,armor:49:armor:0.05:2.45
+R	druid/feral	34	6557	12730	gear	3.47	spi:3:spi:0.34:1.02,armor:49:armor:0.05:2.45
+R	druid/feral	34	6557	12731	gear	5.33	sta:3:sta:0.96:2.88,armor:49:armor:0.05:2.45
+R	druid/feral	34	6557	12732	gear	5.45	str:3:str:1:3,armor:49:armor:0.05:2.45
+R	druid/feral	34	6557	12733	gear	5.45	ap:6:ap:0.5:3,armor:49:armor:0.05:2.45
+R	druid/feral	34	6557	12734	gear	2.45	armor:49:armor:0.05:2.45
+R	druid/feral	34	6557	12735	gear	2.45	armor:49:armor:0.05:2.45
+R	druid/feral	34	6557	12736	gear	2.45	armor:49:armor:0.05:2.45
+R	druid/feral	34	6557	12740	gear	4.37	sta:2:sta:0.96:1.92,armor:49:armor:0.05:2.45
+R	druid/feral	34	6557	12741	gear	4.37	sta:2:sta:0.96:1.92,armor:49:armor:0.05:2.45
+R	druid/feral	34	6557	12742	gear	4.37	sta:2:sta:0.96:1.92,armor:49:armor:0.05:2.45
+R	druid/feral	34	6557	12743	gear	4.37	sta:2:sta:0.96:1.92,armor:49:armor:0.05:2.45
+R	druid/feral	34	6557	12744	gear	4.37	sta:2:sta:0.96:1.92,armor:49:armor:0.05:2.45
+R	druid/feral	34	6557	12756	gear	2.45	armor:49:armor:0.05:2.45
+R	druid/feral	34	6557	12760	gear	2.45	armor:49:armor:0.05:2.45
+R	druid/feral	34	7047	0	gear	3.0	spi:5:spi:0.34:1.7,armor:26:armor:0.05:1.3
+R	druid/feral	34	8192	0	gear	20.1	agi:11:agi:1:11,sta:5:sta:0.96:4.8,armor:86:armor:0.05:4.3
+R	druid/feral	34	9834	0	gear	3.6500000000000004	armor:73:armor:0.05:3.65
+R	druid/feral	34	9834	12718	gear	9.698	int:6:int:0.048:0.288,sta:6:sta:0.96:5.76,armor:73:armor:0.05:3.65
+R	druid/feral	34	9834	12719	gear	11.45	spi:6:spi:0.34:2.04,sta:6:sta:0.96:5.76,armor:73:armor:0.05:3.65
+R	druid/feral	34	9834	12720	gear	5.978000000000001	int:6:int:0.048:0.288,spi:6:spi:0.34:2.04,armor:73:armor:0.05:3.65
+R	druid/feral	34	9834	12721	gear	15.41	agi:6:agi:1:6,sta:6:sta:0.96:5.76,armor:73:armor:0.05:3.65
+R	druid/feral	34	9834	12722	gear	15.41	sta:6:sta:0.96:5.76,str:6:str:1:6,armor:73:armor:0.05:3.65
+R	druid/feral	34	9834	12723	gear	9.938	int:6:int:0.048:0.288,str:6:str:1:6,armor:73:armor:0.05:3.65
+R	druid/feral	34	9834	12724	gear	9.938	agi:6:agi:1:6,int:6:int:0.048:0.288,armor:73:armor:0.05:3.65
+R	druid/feral	34	9834	12725	gear	11.69	spi:6:spi:0.34:2.04,str:6:str:1:6,armor:73:armor:0.05:3.65
+R	druid/feral	34	9834	12726	gear	11.69	agi:6:agi:1:6,spi:6:spi:0.34:2.04,armor:73:armor:0.05:3.65
+R	druid/feral	34	9834	12727	gear	15.65	agi:6:agi:1:6,str:6:str:1:6,armor:73:armor:0.05:3.65
+R	druid/feral	34	9834	12728	gear	12.65	agi:9:agi:1:9,armor:73:armor:0.05:3.65
+R	druid/feral	34	9834	12729	gear	4.082000000000001	int:9:int:0.048:0.432,armor:73:armor:0.05:3.65
+R	druid/feral	34	9834	12730	gear	6.710000000000001	spi:9:spi:0.34:3.06,armor:73:armor:0.05:3.65
+R	druid/feral	34	9834	12731	gear	12.290000000000001	sta:9:sta:0.96:8.64,armor:73:armor:0.05:3.65
+R	druid/feral	34	9834	12732	gear	12.65	str:9:str:1:9,armor:73:armor:0.05:3.65
+R	druid/feral	34	9834	12733	gear	12.65	ap:18:ap:0.5:9,armor:73:armor:0.05:3.65
+R	druid/feral	34	9834	12734	gear	3.6500000000000004	armor:73:armor:0.05:3.65
+R	druid/feral	34	9834	12735	gear	3.6500000000000004	armor:73:armor:0.05:3.65
+R	druid/feral	34	9834	12736	gear	3.6500000000000004	armor:73:armor:0.05:3.65
+R	druid/feral	34	9834	12740	gear	9.41	sta:6:sta:0.96:5.76,armor:73:armor:0.05:3.65
+R	druid/feral	34	9834	12741	gear	9.41	sta:6:sta:0.96:5.76,armor:73:armor:0.05:3.65
+R	druid/feral	34	9834	12742	gear	9.41	sta:6:sta:0.96:5.76,armor:73:armor:0.05:3.65
+R	druid/feral	34	9834	12743	gear	9.41	sta:6:sta:0.96:5.76,armor:73:armor:0.05:3.65
+R	druid/feral	34	9834	12744	gear	9.41	sta:6:sta:0.96:5.76,armor:73:armor:0.05:3.65
+R	druid/feral	34	9834	12745	gear	7.8260000000000005	int:7:int:0.048:0.336,sta:4:sta:0.96:3.84,armor:73:armor:0.05:3.65
+R	druid/feral	34	9834	12746	gear	5.346	int:7:int:0.048:0.336,spi:4:spi:0.34:1.36,armor:73:armor:0.05:3.65
+R	druid/feral	34	9834	12747	gear	11.73	spi:4:spi:0.34:1.36,sta:7:sta:0.96:6.72,armor:73:armor:0.05:3.65
+R	druid/feral	34	9834	12748	gear	10.562000000000001	int:4:int:0.048:0.192,sta:7:sta:0.96:6.72,armor:73:armor:0.05:3.65
+R	druid/feral	34	9834	12749	gear	5.346	int:7:int:0.048:0.336,spi:4:spi:0.34:1.36,armor:73:armor:0.05:3.65
+R	druid/feral	34	9834	12750	gear	11.73	spi:4:spi:0.34:1.36,sta:7:sta:0.96:6.72,armor:73:armor:0.05:3.65
+R	druid/feral	34	9834	12751	gear	16.869999999999997	agi:3:agi:1:3,ap:7:ap:0.5:3.5,sta:7:sta:0.96:6.72,armor:73:armor:0.05:3.65
+R	druid/feral	34	9834	12752	gear	17.369999999999997	agi:4:agi:1:4,sta:7:sta:0.96:6.72,str:3:str:1:3,armor:73:armor:0.05:3.65
+R	druid/feral	34	9834	12753	gear	14.37	sta:7:sta:0.96:6.72,str:4:str:1:4,armor:73:armor:0.05:3.65
+R	druid/feral	34	9834	12755	gear	14.37	sta:7:sta:0.96:6.72,str:4:str:1:4,armor:73:armor:0.05:3.65
+R	druid/feral	34	9834	12756	gear	3.6500000000000004	armor:73:armor:0.05:3.65
+R	druid/feral	34	9834	12760	gear	3.6500000000000004	armor:73:armor:0.05:3.65
+R	druid/feral	34	11187	0	gear	0.2	armor:4:armor:0.05:0.2
 R	druid/feral	34	11994	0	gear	0.0	
-R	druid/feral	34	11994	12718	gear	5.658	int:3:int:0.086:0.258,sta:3:sta:1.8:5.4
-R	druid/feral	34	11994	12719	gear	6.42	spi:3:spi:0.34:1.02,sta:3:sta:1.8:5.4
-R	druid/feral	34	11994	12720	gear	1.278	int:3:int:0.086:0.258,spi:3:spi:0.34:1.02
-R	druid/feral	34	11994	12721	gear	8.700000000000001	agi:3:agi:1.1:3.3,sta:3:sta:1.8:5.4
-R	druid/feral	34	11994	12722	gear	8.4	sta:3:sta:1.8:5.4,str:3:str:1:3
-R	druid/feral	34	11994	12723	gear	3.258	int:3:int:0.086:0.258,str:3:str:1:3
-R	druid/feral	34	11994	12724	gear	3.5580000000000003	agi:3:agi:1.1:3.3,int:3:int:0.086:0.258
+R	druid/feral	34	11994	12718	gear	3.024	int:3:int:0.048:0.144,sta:3:sta:0.96:2.88
+R	druid/feral	34	11994	12719	gear	3.9	spi:3:spi:0.34:1.02,sta:3:sta:0.96:2.88
+R	druid/feral	34	11994	12720	gear	1.1640000000000001	int:3:int:0.048:0.144,spi:3:spi:0.34:1.02
+R	druid/feral	34	11994	12721	gear	5.88	agi:3:agi:1:3,sta:3:sta:0.96:2.88
+R	druid/feral	34	11994	12722	gear	5.88	sta:3:sta:0.96:2.88,str:3:str:1:3
+R	druid/feral	34	11994	12723	gear	3.144	int:3:int:0.048:0.144,str:3:str:1:3
+R	druid/feral	34	11994	12724	gear	3.144	agi:3:agi:1:3,int:3:int:0.048:0.144
 R	druid/feral	34	11994	12725	gear	4.02	spi:3:spi:0.34:1.02,str:3:str:1:3
-R	druid/feral	34	11994	12726	gear	4.32	agi:3:agi:1.1:3.3,spi:3:spi:0.34:1.02
-R	druid/feral	34	11994	12727	gear	6.300000000000001	agi:3:agi:1.1:3.3,str:3:str:1:3
-R	druid/feral	34	11994	12728	gear	5.5	agi:5:agi:1.1:5.5
-R	druid/feral	34	11994	12729	gear	0.42999999999999994	int:5:int:0.086:0.43
+R	druid/feral	34	11994	12726	gear	4.02	agi:3:agi:1:3,spi:3:spi:0.34:1.02
+R	druid/feral	34	11994	12727	gear	6.0	agi:3:agi:1:3,str:3:str:1:3
+R	druid/feral	34	11994	12728	gear	5.0	agi:5:agi:1:5
+R	druid/feral	34	11994	12729	gear	0.24	int:5:int:0.048:0.24
 R	druid/feral	34	11994	12730	gear	1.7000000000000002	spi:5:spi:0.34:1.7
-R	druid/feral	34	11994	12731	gear	9.0	sta:5:sta:1.8:9
+R	druid/feral	34	11994	12731	gear	4.8	sta:5:sta:0.96:4.8
 R	druid/feral	34	11994	12732	gear	5.0	str:5:str:1:5
 R	druid/feral	34	11994	12733	gear	5.0	ap:10:ap:0.5:5
 R	druid/feral	34	11994	12737	gear	0.0	
-R	druid/feral	34	11994	12738	gear	0.086	mp5:2:mp5:0.043:0.086
-R	druid/feral	34	11994	12739	gear	2.2	agi:2:agi:1.1:2.2
-R	druid/feral	34	11994	12740	gear	5.4	sta:3:sta:1.8:5.4
-R	druid/feral	34	11994	12741	gear	5.4	sta:3:sta:1.8:5.4
-R	druid/feral	34	11994	12742	gear	5.4	sta:3:sta:1.8:5.4
-R	druid/feral	34	11994	12743	gear	5.4	sta:3:sta:1.8:5.4
-R	druid/feral	34	11994	12744	gear	5.4	sta:3:sta:1.8:5.4
+R	druid/feral	34	11994	12738	gear	0.066	mp5:2:mp5:0.033:0.066
+R	druid/feral	34	11994	12739	gear	2.0	agi:2:agi:1:2
+R	druid/feral	34	11994	12740	gear	2.88	sta:3:sta:0.96:2.88
+R	druid/feral	34	11994	12741	gear	2.88	sta:3:sta:0.96:2.88
+R	druid/feral	34	11994	12742	gear	2.88	sta:3:sta:0.96:2.88
+R	druid/feral	34	11994	12743	gear	2.88	sta:3:sta:0.96:2.88
+R	druid/feral	34	11994	12744	gear	2.88	sta:3:sta:0.96:2.88
 R	druid/feral	34	13183	0	mh	201.29699999999997	dps:39.47:dps:5.1:201.297
-R	druid/feral	34	14122	0	gear	0.798	armor:14:armor:0.057:0.798
-R	druid/feral	34	14122	12718	gear	4.57	int:2:int:0.086:0.172,sta:2:sta:1.8:3.6,armor:14:armor:0.057:0.798
-R	druid/feral	34	14122	12719	gear	5.078	spi:2:spi:0.34:0.68,sta:2:sta:1.8:3.6,armor:14:armor:0.057:0.798
-R	druid/feral	34	14122	12720	gear	1.6500000000000001	int:2:int:0.086:0.172,spi:2:spi:0.34:0.68,armor:14:armor:0.057:0.798
-R	druid/feral	34	14122	12729	gear	1.056	int:3:int:0.086:0.258,armor:14:armor:0.057:0.798
-R	druid/feral	34	14122	12730	gear	1.818	spi:3:spi:0.34:1.02,armor:14:armor:0.057:0.798
-R	druid/feral	34	14122	12731	gear	6.198	sta:3:sta:1.8:5.4,armor:14:armor:0.057:0.798
-R	druid/feral	34	14122	12734	gear	0.798	armor:14:armor:0.057:0.798
-R	druid/feral	34	14122	12735	gear	0.798	armor:14:armor:0.057:0.798
-R	druid/feral	34	14122	12740	gear	4.398	sta:2:sta:1.8:3.6,armor:14:armor:0.057:0.798
-R	druid/feral	34	14122	12741	gear	4.398	sta:2:sta:1.8:3.6,armor:14:armor:0.057:0.798
-R	druid/feral	34	14122	12742	gear	4.398	sta:2:sta:1.8:3.6,armor:14:armor:0.057:0.798
-R	druid/feral	34	14122	12743	gear	4.398	sta:2:sta:1.8:3.6,armor:14:armor:0.057:0.798
-R	druid/feral	34	14122	12744	gear	4.398	sta:2:sta:1.8:3.6,armor:14:armor:0.057:0.798
-R	druid/feral	34	14122	12745	gear	2.77	int:2:int:0.086:0.172,sta:1:sta:1.8:1.8,armor:14:armor:0.057:0.798
-R	druid/feral	34	14122	12756	gear	0.798	armor:14:armor:0.057:0.798
-R	druid/feral	34	14122	12757	gear	0.798	armor:14:armor:0.057:0.798
-R	druid/feral	34	14122	12758	gear	0.798	armor:14:armor:0.057:0.798
-R	druid/feral	34	14122	12759	gear	0.798	armor:14:armor:0.057:0.798
-R	druid/feral	34	14122	12761	gear	0.798	armor:14:armor:0.057:0.798
-R	druid/feral	34	14340	0	gear	39.216	sta:19:sta:1.8:34.2,armor:88:armor:0.057:5.016
-R	druid/feral	34	14673	0	gear	23.837999999999997	str:3:str:1:3,agi:9:agi:1.1:9.9,sta:5:sta:1.8:9,armor:34:armor:0.057:1.938
-R	druid/feral	34	15945	0	oh	4.28	sta:2:sta:1.8:3.6,spi:2:spi:0.34:0.68
-R	druid/feral	34	16711	0	gear	46.394999999999996	agi:21:agi:1.1:23.1,sta:9:sta:1.8:16.2,hit:0.3:hit:1.8:0.54,armor:115:armor:0.057:6.555
-R	druid/feral	34	18726	0	gear	31.161	sta:15:sta:1.8:27,armor:73:armor:0.057:4.161
+R	druid/feral	34	14122	0	gear	0.7000000000000001	armor:14:armor:0.05:0.7
+R	druid/feral	34	14122	12718	gear	2.716	int:2:int:0.048:0.096,sta:2:sta:0.96:1.92,armor:14:armor:0.05:0.7
+R	druid/feral	34	14122	12719	gear	3.3000000000000003	spi:2:spi:0.34:0.68,sta:2:sta:0.96:1.92,armor:14:armor:0.05:0.7
+R	druid/feral	34	14122	12720	gear	1.476	int:2:int:0.048:0.096,spi:2:spi:0.34:0.68,armor:14:armor:0.05:0.7
+R	druid/feral	34	14122	12729	gear	0.8440000000000001	int:3:int:0.048:0.144,armor:14:armor:0.05:0.7
+R	druid/feral	34	14122	12730	gear	1.7200000000000002	spi:3:spi:0.34:1.02,armor:14:armor:0.05:0.7
+R	druid/feral	34	14122	12731	gear	3.58	sta:3:sta:0.96:2.88,armor:14:armor:0.05:0.7
+R	druid/feral	34	14122	12734	gear	0.7000000000000001	armor:14:armor:0.05:0.7
+R	druid/feral	34	14122	12735	gear	0.7000000000000001	armor:14:armor:0.05:0.7
+R	druid/feral	34	14122	12740	gear	2.62	sta:2:sta:0.96:1.92,armor:14:armor:0.05:0.7
+R	druid/feral	34	14122	12741	gear	2.62	sta:2:sta:0.96:1.92,armor:14:armor:0.05:0.7
+R	druid/feral	34	14122	12742	gear	2.62	sta:2:sta:0.96:1.92,armor:14:armor:0.05:0.7
+R	druid/feral	34	14122	12743	gear	2.62	sta:2:sta:0.96:1.92,armor:14:armor:0.05:0.7
+R	druid/feral	34	14122	12744	gear	2.62	sta:2:sta:0.96:1.92,armor:14:armor:0.05:0.7
+R	druid/feral	34	14122	12745	gear	1.7560000000000002	int:2:int:0.048:0.096,sta:1:sta:0.96:0.96,armor:14:armor:0.05:0.7
+R	druid/feral	34	14122	12756	gear	0.7000000000000001	armor:14:armor:0.05:0.7
+R	druid/feral	34	14122	12757	gear	0.7000000000000001	armor:14:armor:0.05:0.7
+R	druid/feral	34	14122	12758	gear	0.7000000000000001	armor:14:armor:0.05:0.7
+R	druid/feral	34	14122	12759	gear	0.7000000000000001	armor:14:armor:0.05:0.7
+R	druid/feral	34	14122	12761	gear	0.7000000000000001	armor:14:armor:0.05:0.7
+R	druid/feral	34	14340	0	gear	22.64	sta:19:sta:0.96:18.24,armor:88:armor:0.05:4.4
+R	druid/feral	34	14673	0	gear	18.5	str:3:str:1:3,agi:9:agi:1:9,sta:5:sta:0.96:4.8,armor:34:armor:0.05:1.7
+R	druid/feral	34	15945	0	oh	2.6	sta:2:sta:0.96:1.92,spi:2:spi:0.34:0.68
+R	druid/feral	34	16711	0	gear	35.93	agi:21:agi:1:21,sta:9:sta:0.96:8.64,hit:0.3:hit:1.8:0.54,armor:115:armor:0.05:5.75
+R	druid/feral	34	18726	0	gear	18.049999999999997	sta:15:sta:0.96:14.4,armor:73:armor:0.05:3.65
 R	druid/feral	34	22397	0	ranged	0.0	
-R	druid/feral	34	252507	0	gear	22.332	sta:10:sta:1.8:18,armor:76:armor:0.057:4.332
-R	druid/feral	34	254111	0	gear	27.252000000000002	int:9:int:0.086:0.774,sta:13:sta:1.8:23.4,armor:54:armor:0.057:3.078
-R	druid/feral	34	270033	0	gear	9.623000000000001	agi:4:agi:1.1:4.4,str:3:str:1:3,armor:39:armor:0.057:2.223
-R	druid/feral	34	273892	0	gear	52.308	sta:20:sta:1.8:36,int:19:int:0.086:1.634,spi:16:spi:0.34:5.44,armor:162:armor:0.057:9.234
-R	druid/feral	34	280082	0	mh	196.005	int:15:int:0.086:1.29,hit:1.5:hit:1.8:2.7,spi:21:spi:0.34:7.14,dps:36.25:dps:5.1:184.875
-R	druid/feral	45	1315	0	gear	28.1	sta:10:sta:2:20,spi:15:spi:0.54:8.1
-R	druid/feral	45	1808	0	gear	5.401999999999999	armor:74:armor:0.073:5.402
+R	druid/feral	34	252507	0	gear	13.4	sta:10:sta:0.96:9.6,armor:76:armor:0.05:3.8
+R	druid/feral	34	254111	0	gear	15.612000000000002	int:9:int:0.048:0.432,sta:13:sta:0.96:12.48,armor:54:armor:0.05:2.7
+R	druid/feral	34	270033	0	gear	8.95	agi:4:agi:1:4,str:3:str:1:3,armor:39:armor:0.05:1.95
+R	druid/feral	34	273892	0	gear	33.652	sta:20:sta:0.96:19.2,int:19:int:0.048:0.912,spi:16:spi:0.34:5.44,armor:162:armor:0.05:8.1
+R	druid/feral	34	280082	0	mh	195.435	int:15:int:0.048:0.72,hit:1.5:hit:1.8:2.7,spi:21:spi:0.34:7.14,dps:36.25:dps:5.1:184.875
+R	druid/feral	45	1315	0	gear	27.25	sta:10:sta:1.9:19,spi:15:spi:0.55:8.25
+R	druid/feral	45	1808	0	gear	5.106000000000001	armor:74:armor:0.069:5.106
 R	druid/feral	45	1990	0	mh	118.608	dps:24.71:dps:4.8:118.608
-R	druid/feral	45	1990	12718	mh	137.868	int:9:int:0.14:1.26,sta:9:sta:2:18,dps:24.71:dps:4.8:118.608
-R	druid/feral	45	1990	12905	mh	103.76399999999998	int:11:int:0.14:1.54,sta:7:sta:2:14,dps:18.38:dps:4.8:88.224
+R	druid/feral	45	1990	12718	mh	136.96800000000002	int:9:int:0.14:1.26,sta:9:sta:1.9:17.1,dps:24.71:dps:4.8:118.608
+R	druid/feral	45	1990	12905	mh	103.064	int:11:int:0.14:1.54,sta:7:sta:1.9:13.3,dps:18.38:dps:4.8:88.224
 R	druid/feral	45	2140	0	mh	28.512	dps:5.94:dps:4.8:28.512
-R	druid/feral	45	2140	12718	mh	30.652	int:1:int:0.14:0.14,sta:1:sta:2:2,dps:5.94:dps:4.8:28.512
+R	druid/feral	45	2140	12718	mh	30.552	int:1:int:0.14:0.14,sta:1:sta:1.9:1.9,dps:5.94:dps:4.8:28.512
 R	druid/feral	45	2140	12917	mh	18.14	int:1:int:0.14:0.14,dps:3.75:dps:4.8:18
 R	druid/feral	45	2225	0	mh	24.0	dps:5:dps:4.8:24
-R	druid/feral	45	2614	0	gear	2.117	armor:29:armor:0.073:2.117
-R	druid/feral	45	3158	0	gear	1.898	armor:26:armor:0.073:1.898
+R	druid/feral	45	2614	0	gear	2.0010000000000003	armor:29:armor:0.069:2.001
+R	druid/feral	45	3158	0	gear	1.794	armor:26:armor:0.069:1.794
 R	druid/feral	45	3570	0	mh	40.97599999999999	str:2:str:1:2,dps:8.12:dps:4.8:38.976
 R	druid/feral	45	4023	0	mh	73.728	dps:15.36:dps:4.8:73.728
 R	druid/feral	45	4570	0	mh	48.0	dps:10:dps:4.8:48
-R	druid/feral	45	4570	12718	mh	54.42	int:3:int:0.14:0.42,sta:3:sta:2:6,dps:10:dps:4.8:48
-R	druid/feral	45	4570	12719	mh	55.62	spi:3:spi:0.54:1.62,sta:3:sta:2:6,dps:10:dps:4.8:48
-R	druid/feral	45	4570	12720	mh	50.04	int:3:int:0.14:0.42,spi:3:spi:0.54:1.62,dps:10:dps:4.8:48
-R	druid/feral	45	4570	12721	mh	58.2	agi:3:agi:1.4:4.2,sta:3:sta:2:6,dps:10:dps:4.8:48
-R	druid/feral	45	4570	12722	mh	57.0	sta:3:sta:2:6,str:3:str:1:3,dps:10:dps:4.8:48
+R	druid/feral	45	4570	12718	mh	54.12	int:3:int:0.14:0.42,sta:3:sta:1.9:5.7,dps:10:dps:4.8:48
+R	druid/feral	45	4570	12719	mh	55.35	spi:3:spi:0.55:1.65,sta:3:sta:1.9:5.7,dps:10:dps:4.8:48
+R	druid/feral	45	4570	12720	mh	50.07	int:3:int:0.14:0.42,spi:3:spi:0.55:1.65,dps:10:dps:4.8:48
+R	druid/feral	45	4570	12721	mh	57.9	agi:3:agi:1.4:4.2,sta:3:sta:1.9:5.7,dps:10:dps:4.8:48
+R	druid/feral	45	4570	12722	mh	56.7	sta:3:sta:1.9:5.7,str:3:str:1:3,dps:10:dps:4.8:48
 R	druid/feral	45	4570	12723	mh	51.42	int:3:int:0.14:0.42,str:3:str:1:3,dps:10:dps:4.8:48
 R	druid/feral	45	4570	12724	mh	52.62	agi:3:agi:1.4:4.2,int:3:int:0.14:0.42,dps:10:dps:4.8:48
-R	druid/feral	45	4570	12725	mh	52.62	spi:3:spi:0.54:1.62,str:3:str:1:3,dps:10:dps:4.8:48
-R	druid/feral	45	4570	12726	mh	53.82	agi:3:agi:1.4:4.2,spi:3:spi:0.54:1.62,dps:10:dps:4.8:48
+R	druid/feral	45	4570	12725	mh	52.65	spi:3:spi:0.55:1.65,str:3:str:1:3,dps:10:dps:4.8:48
+R	druid/feral	45	4570	12726	mh	53.85	agi:3:agi:1.4:4.2,spi:3:spi:0.55:1.65,dps:10:dps:4.8:48
 R	druid/feral	45	4570	12727	mh	55.2	agi:3:agi:1.4:4.2,str:3:str:1:3,dps:10:dps:4.8:48
 R	druid/feral	45	4570	12728	mh	53.6	agi:4:agi:1.4:5.6,dps:10:dps:4.8:48
 R	druid/feral	45	4570	12729	mh	48.56	int:4:int:0.14:0.56,dps:10:dps:4.8:48
-R	druid/feral	45	4570	12730	mh	50.16	spi:4:spi:0.54:2.16,dps:10:dps:4.8:48
-R	druid/feral	45	4570	12731	mh	56.0	sta:4:sta:2:8,dps:10:dps:4.8:48
+R	druid/feral	45	4570	12730	mh	50.2	spi:4:spi:0.55:2.2,dps:10:dps:4.8:48
+R	druid/feral	45	4570	12731	mh	55.6	sta:4:sta:1.9:7.6,dps:10:dps:4.8:48
 R	druid/feral	45	4570	12732	mh	52.0	str:4:str:1:4,dps:10:dps:4.8:48
 R	druid/feral	45	4570	12733	mh	52.0	ap:8:ap:0.5:4,dps:10:dps:4.8:48
 R	druid/feral	45	4570	12736	mh	48.0	dps:10:dps:4.8:48
-R	druid/feral	45	4570	12740	mh	54.0	sta:3:sta:2:6,dps:10:dps:4.8:48
-R	druid/feral	45	4570	12741	mh	54.0	sta:3:sta:2:6,dps:10:dps:4.8:48
-R	druid/feral	45	4570	12742	mh	54.0	sta:3:sta:2:6,dps:10:dps:4.8:48
-R	druid/feral	45	4570	12743	mh	54.0	sta:3:sta:2:6,dps:10:dps:4.8:48
-R	druid/feral	45	4570	12744	mh	54.0	sta:3:sta:2:6,dps:10:dps:4.8:48
+R	druid/feral	45	4570	12740	mh	53.7	sta:3:sta:1.9:5.7,dps:10:dps:4.8:48
+R	druid/feral	45	4570	12741	mh	53.7	sta:3:sta:1.9:5.7,dps:10:dps:4.8:48
+R	druid/feral	45	4570	12742	mh	53.7	sta:3:sta:1.9:5.7,dps:10:dps:4.8:48
+R	druid/feral	45	4570	12743	mh	53.7	sta:3:sta:1.9:5.7,dps:10:dps:4.8:48
+R	druid/feral	45	4570	12744	mh	53.7	sta:3:sta:1.9:5.7,dps:10:dps:4.8:48
 R	druid/feral	45	4570	12759	mh	48.0	dps:10:dps:4.8:48
 R	druid/feral	45	4570	12918	mh	36.944	int:4:int:0.14:0.56,dps:7.58:dps:4.8:36.384
 R	druid/feral	45	4570	12919	mh	36.944	int:4:int:0.14:0.56,dps:7.58:dps:4.8:36.384
 R	druid/feral	45	5079	0	gear	0.0	
-R	druid/feral	45	6540	0	gear	2.044	armor:28:armor:0.073:2.044
-R	druid/feral	45	6540	12718	gear	8.464	int:3:int:0.14:0.42,sta:3:sta:2:6,armor:28:armor:0.073:2.044
-R	druid/feral	45	6540	12719	gear	9.664	spi:3:spi:0.54:1.62,sta:3:sta:2:6,armor:28:armor:0.073:2.044
-R	druid/feral	45	6540	12720	gear	4.084	int:3:int:0.14:0.42,spi:3:spi:0.54:1.62,armor:28:armor:0.073:2.044
-R	druid/feral	45	6540	12729	gear	2.744	int:5:int:0.14:0.7,armor:28:armor:0.073:2.044
-R	druid/feral	45	6540	12730	gear	4.744	spi:5:spi:0.54:2.7,armor:28:armor:0.073:2.044
-R	druid/feral	45	6540	12731	gear	12.044	sta:5:sta:2:10,armor:28:armor:0.073:2.044
-R	druid/feral	45	6540	12734	gear	2.044	armor:28:armor:0.073:2.044
-R	druid/feral	45	6540	12735	gear	2.044	armor:28:armor:0.073:2.044
-R	druid/feral	45	6540	12740	gear	8.044	sta:3:sta:2:6,armor:28:armor:0.073:2.044
-R	druid/feral	45	6540	12741	gear	8.044	sta:3:sta:2:6,armor:28:armor:0.073:2.044
-R	druid/feral	45	6540	12742	gear	8.044	sta:3:sta:2:6,armor:28:armor:0.073:2.044
-R	druid/feral	45	6540	12743	gear	8.044	sta:3:sta:2:6,armor:28:armor:0.073:2.044
-R	druid/feral	45	6540	12744	gear	8.044	sta:3:sta:2:6,armor:28:armor:0.073:2.044
-R	druid/feral	45	6540	12745	gear	6.604000000000001	int:4:int:0.14:0.56,sta:2:sta:2:4,armor:28:armor:0.073:2.044
-R	druid/feral	45	6540	12756	gear	2.044	armor:28:armor:0.073:2.044
-R	druid/feral	45	6540	12757	gear	2.044	armor:28:armor:0.073:2.044
-R	druid/feral	45	6540	12758	gear	2.044	armor:28:armor:0.073:2.044
-R	druid/feral	45	6540	12759	gear	2.044	armor:28:armor:0.073:2.044
-R	druid/feral	45	6540	12761	gear	2.044	armor:28:armor:0.073:2.044
-R	druid/feral	45	6557	0	gear	3.577	armor:49:armor:0.073:3.577
-R	druid/feral	45	6557	12718	gear	7.857	int:2:int:0.14:0.28,sta:2:sta:2:4,armor:49:armor:0.073:3.577
-R	druid/feral	45	6557	12719	gear	8.657	spi:2:spi:0.54:1.08,sta:2:sta:2:4,armor:49:armor:0.073:3.577
-R	druid/feral	45	6557	12720	gear	4.937	int:2:int:0.14:0.28,spi:2:spi:0.54:1.08,armor:49:armor:0.073:3.577
-R	druid/feral	45	6557	12721	gear	10.376999999999999	agi:2:agi:1.4:2.8,sta:2:sta:2:4,armor:49:armor:0.073:3.577
-R	druid/feral	45	6557	12722	gear	9.577	sta:2:sta:2:4,str:2:str:1:2,armor:49:armor:0.073:3.577
-R	druid/feral	45	6557	12723	gear	5.857	int:2:int:0.14:0.28,str:2:str:1:2,armor:49:armor:0.073:3.577
-R	druid/feral	45	6557	12724	gear	6.657	agi:2:agi:1.4:2.8,int:2:int:0.14:0.28,armor:49:armor:0.073:3.577
-R	druid/feral	45	6557	12725	gear	6.657	spi:2:spi:0.54:1.08,str:2:str:1:2,armor:49:armor:0.073:3.577
-R	druid/feral	45	6557	12726	gear	7.457	agi:2:agi:1.4:2.8,spi:2:spi:0.54:1.08,armor:49:armor:0.073:3.577
-R	druid/feral	45	6557	12727	gear	8.376999999999999	agi:2:agi:1.4:2.8,str:2:str:1:2,armor:49:armor:0.073:3.577
-R	druid/feral	45	6557	12728	gear	7.776999999999999	agi:3:agi:1.4:4.2,armor:49:armor:0.073:3.577
-R	druid/feral	45	6557	12729	gear	3.997	int:3:int:0.14:0.42,armor:49:armor:0.073:3.577
-R	druid/feral	45	6557	12730	gear	5.197	spi:3:spi:0.54:1.62,armor:49:armor:0.073:3.577
-R	druid/feral	45	6557	12731	gear	9.577	sta:3:sta:2:6,armor:49:armor:0.073:3.577
-R	druid/feral	45	6557	12732	gear	6.577	str:3:str:1:3,armor:49:armor:0.073:3.577
-R	druid/feral	45	6557	12733	gear	6.577	ap:6:ap:0.5:3,armor:49:armor:0.073:3.577
-R	druid/feral	45	6557	12734	gear	3.577	armor:49:armor:0.073:3.577
-R	druid/feral	45	6557	12735	gear	3.577	armor:49:armor:0.073:3.577
-R	druid/feral	45	6557	12736	gear	3.577	armor:49:armor:0.073:3.577
-R	druid/feral	45	6557	12740	gear	7.577	sta:2:sta:2:4,armor:49:armor:0.073:3.577
-R	druid/feral	45	6557	12741	gear	7.577	sta:2:sta:2:4,armor:49:armor:0.073:3.577
-R	druid/feral	45	6557	12742	gear	7.577	sta:2:sta:2:4,armor:49:armor:0.073:3.577
-R	druid/feral	45	6557	12743	gear	7.577	sta:2:sta:2:4,armor:49:armor:0.073:3.577
-R	druid/feral	45	6557	12744	gear	7.577	sta:2:sta:2:4,armor:49:armor:0.073:3.577
-R	druid/feral	45	6557	12756	gear	3.577	armor:49:armor:0.073:3.577
-R	druid/feral	45	6557	12760	gear	3.577	armor:49:armor:0.073:3.577
-R	druid/feral	45	7047	0	gear	4.598	spi:5:spi:0.54:2.7,armor:26:armor:0.073:1.898
-R	druid/feral	45	8192	0	gear	31.677999999999997	agi:11:agi:1.4:15.4,sta:5:sta:2:10,armor:86:armor:0.073:6.278
-R	druid/feral	45	9834	0	gear	5.329	armor:73:armor:0.073:5.329
-R	druid/feral	45	9834	12718	gear	18.169	int:6:int:0.14:0.84,sta:6:sta:2:12,armor:73:armor:0.073:5.329
-R	druid/feral	45	9834	12719	gear	20.569	spi:6:spi:0.54:3.24,sta:6:sta:2:12,armor:73:armor:0.073:5.329
-R	druid/feral	45	9834	12720	gear	9.408999999999999	int:6:int:0.14:0.84,spi:6:spi:0.54:3.24,armor:73:armor:0.073:5.329
-R	druid/feral	45	9834	12721	gear	25.729	agi:6:agi:1.4:8.4,sta:6:sta:2:12,armor:73:armor:0.073:5.329
-R	druid/feral	45	9834	12722	gear	23.329	sta:6:sta:2:12,str:6:str:1:6,armor:73:armor:0.073:5.329
-R	druid/feral	45	9834	12723	gear	12.169	int:6:int:0.14:0.84,str:6:str:1:6,armor:73:armor:0.073:5.329
-R	druid/feral	45	9834	12724	gear	14.568999999999999	agi:6:agi:1.4:8.4,int:6:int:0.14:0.84,armor:73:armor:0.073:5.329
-R	druid/feral	45	9834	12725	gear	14.568999999999999	spi:6:spi:0.54:3.24,str:6:str:1:6,armor:73:armor:0.073:5.329
-R	druid/feral	45	9834	12726	gear	16.968999999999998	agi:6:agi:1.4:8.4,spi:6:spi:0.54:3.24,armor:73:armor:0.073:5.329
-R	druid/feral	45	9834	12727	gear	19.729	agi:6:agi:1.4:8.4,str:6:str:1:6,armor:73:armor:0.073:5.329
-R	druid/feral	45	9834	12728	gear	17.929	agi:9:agi:1.4:12.6,armor:73:armor:0.073:5.329
-R	druid/feral	45	9834	12729	gear	6.589	int:9:int:0.14:1.26,armor:73:armor:0.073:5.329
-R	druid/feral	45	9834	12730	gear	10.189	spi:9:spi:0.54:4.86,armor:73:armor:0.073:5.329
-R	druid/feral	45	9834	12731	gear	23.329	sta:9:sta:2:18,armor:73:armor:0.073:5.329
-R	druid/feral	45	9834	12732	gear	14.329	str:9:str:1:9,armor:73:armor:0.073:5.329
-R	druid/feral	45	9834	12733	gear	14.329	ap:18:ap:0.5:9,armor:73:armor:0.073:5.329
-R	druid/feral	45	9834	12734	gear	5.329	armor:73:armor:0.073:5.329
-R	druid/feral	45	9834	12735	gear	5.329	armor:73:armor:0.073:5.329
-R	druid/feral	45	9834	12736	gear	5.329	armor:73:armor:0.073:5.329
-R	druid/feral	45	9834	12740	gear	17.329	sta:6:sta:2:12,armor:73:armor:0.073:5.329
-R	druid/feral	45	9834	12741	gear	17.329	sta:6:sta:2:12,armor:73:armor:0.073:5.329
-R	druid/feral	45	9834	12742	gear	17.329	sta:6:sta:2:12,armor:73:armor:0.073:5.329
-R	druid/feral	45	9834	12743	gear	17.329	sta:6:sta:2:12,armor:73:armor:0.073:5.329
-R	druid/feral	45	9834	12744	gear	17.329	sta:6:sta:2:12,armor:73:armor:0.073:5.329
-R	druid/feral	45	9834	12745	gear	14.309000000000001	int:7:int:0.14:0.98,sta:4:sta:2:8,armor:73:armor:0.073:5.329
-R	druid/feral	45	9834	12746	gear	8.469	int:7:int:0.14:0.98,spi:4:spi:0.54:2.16,armor:73:armor:0.073:5.329
-R	druid/feral	45	9834	12747	gear	21.489	spi:4:spi:0.54:2.16,sta:7:sta:2:14,armor:73:armor:0.073:5.329
-R	druid/feral	45	9834	12748	gear	19.889	int:4:int:0.14:0.56,sta:7:sta:2:14,armor:73:armor:0.073:5.329
-R	druid/feral	45	9834	12749	gear	8.469	int:7:int:0.14:0.98,spi:4:spi:0.54:2.16,armor:73:armor:0.073:5.329
-R	druid/feral	45	9834	12750	gear	21.489	spi:4:spi:0.54:2.16,sta:7:sta:2:14,armor:73:armor:0.073:5.329
-R	druid/feral	45	9834	12751	gear	27.029	agi:3:agi:1.4:4.2,ap:7:ap:0.5:3.5,sta:7:sta:2:14,armor:73:armor:0.073:5.329
-R	druid/feral	45	9834	12752	gear	27.929000000000002	agi:4:agi:1.4:5.6,sta:7:sta:2:14,str:3:str:1:3,armor:73:armor:0.073:5.329
-R	druid/feral	45	9834	12753	gear	23.329	sta:7:sta:2:14,str:4:str:1:4,armor:73:armor:0.073:5.329
-R	druid/feral	45	9834	12755	gear	23.329	sta:7:sta:2:14,str:4:str:1:4,armor:73:armor:0.073:5.329
-R	druid/feral	45	9834	12756	gear	5.329	armor:73:armor:0.073:5.329
-R	druid/feral	45	9834	12760	gear	5.329	armor:73:armor:0.073:5.329
-R	druid/feral	45	11187	0	gear	0.292	armor:4:armor:0.073:0.292
+R	druid/feral	45	6540	0	gear	1.9320000000000002	armor:28:armor:0.069:1.932
+R	druid/feral	45	6540	12718	gear	8.052	int:3:int:0.14:0.42,sta:3:sta:1.9:5.7,armor:28:armor:0.069:1.932
+R	druid/feral	45	6540	12719	gear	9.282	spi:3:spi:0.55:1.65,sta:3:sta:1.9:5.7,armor:28:armor:0.069:1.932
+R	druid/feral	45	6540	12720	gear	4.002000000000001	int:3:int:0.14:0.42,spi:3:spi:0.55:1.65,armor:28:armor:0.069:1.932
+R	druid/feral	45	6540	12729	gear	2.632	int:5:int:0.14:0.7,armor:28:armor:0.069:1.932
+R	druid/feral	45	6540	12730	gear	4.682	spi:5:spi:0.55:2.75,armor:28:armor:0.069:1.932
+R	druid/feral	45	6540	12731	gear	11.432	sta:5:sta:1.9:9.5,armor:28:armor:0.069:1.932
+R	druid/feral	45	6540	12734	gear	1.9320000000000002	armor:28:armor:0.069:1.932
+R	druid/feral	45	6540	12735	gear	1.9320000000000002	armor:28:armor:0.069:1.932
+R	druid/feral	45	6540	12740	gear	7.632	sta:3:sta:1.9:5.7,armor:28:armor:0.069:1.932
+R	druid/feral	45	6540	12741	gear	7.632	sta:3:sta:1.9:5.7,armor:28:armor:0.069:1.932
+R	druid/feral	45	6540	12742	gear	7.632	sta:3:sta:1.9:5.7,armor:28:armor:0.069:1.932
+R	druid/feral	45	6540	12743	gear	7.632	sta:3:sta:1.9:5.7,armor:28:armor:0.069:1.932
+R	druid/feral	45	6540	12744	gear	7.632	sta:3:sta:1.9:5.7,armor:28:armor:0.069:1.932
+R	druid/feral	45	6540	12745	gear	6.292	int:4:int:0.14:0.56,sta:2:sta:1.9:3.8,armor:28:armor:0.069:1.932
+R	druid/feral	45	6540	12756	gear	1.9320000000000002	armor:28:armor:0.069:1.932
+R	druid/feral	45	6540	12757	gear	1.9320000000000002	armor:28:armor:0.069:1.932
+R	druid/feral	45	6540	12758	gear	1.9320000000000002	armor:28:armor:0.069:1.932
+R	druid/feral	45	6540	12759	gear	1.9320000000000002	armor:28:armor:0.069:1.932
+R	druid/feral	45	6540	12761	gear	1.9320000000000002	armor:28:armor:0.069:1.932
+R	druid/feral	45	6557	0	gear	3.3810000000000002	armor:49:armor:0.069:3.381
+R	druid/feral	45	6557	12718	gear	7.461	int:2:int:0.14:0.28,sta:2:sta:1.9:3.8,armor:49:armor:0.069:3.381
+R	druid/feral	45	6557	12719	gear	8.281	spi:2:spi:0.55:1.1,sta:2:sta:1.9:3.8,armor:49:armor:0.069:3.381
+R	druid/feral	45	6557	12720	gear	4.761	int:2:int:0.14:0.28,spi:2:spi:0.55:1.1,armor:49:armor:0.069:3.381
+R	druid/feral	45	6557	12721	gear	9.981	agi:2:agi:1.4:2.8,sta:2:sta:1.9:3.8,armor:49:armor:0.069:3.381
+R	druid/feral	45	6557	12722	gear	9.181000000000001	sta:2:sta:1.9:3.8,str:2:str:1:2,armor:49:armor:0.069:3.381
+R	druid/feral	45	6557	12723	gear	5.6610000000000005	int:2:int:0.14:0.28,str:2:str:1:2,armor:49:armor:0.069:3.381
+R	druid/feral	45	6557	12724	gear	6.461	agi:2:agi:1.4:2.8,int:2:int:0.14:0.28,armor:49:armor:0.069:3.381
+R	druid/feral	45	6557	12725	gear	6.481	spi:2:spi:0.55:1.1,str:2:str:1:2,armor:49:armor:0.069:3.381
+R	druid/feral	45	6557	12726	gear	7.281000000000001	agi:2:agi:1.4:2.8,spi:2:spi:0.55:1.1,armor:49:armor:0.069:3.381
+R	druid/feral	45	6557	12727	gear	8.181000000000001	agi:2:agi:1.4:2.8,str:2:str:1:2,armor:49:armor:0.069:3.381
+R	druid/feral	45	6557	12728	gear	7.5809999999999995	agi:3:agi:1.4:4.2,armor:49:armor:0.069:3.381
+R	druid/feral	45	6557	12729	gear	3.801	int:3:int:0.14:0.42,armor:49:armor:0.069:3.381
+R	druid/feral	45	6557	12730	gear	5.031000000000001	spi:3:spi:0.55:1.65,armor:49:armor:0.069:3.381
+R	druid/feral	45	6557	12731	gear	9.081	sta:3:sta:1.9:5.7,armor:49:armor:0.069:3.381
+R	druid/feral	45	6557	12732	gear	6.381	str:3:str:1:3,armor:49:armor:0.069:3.381
+R	druid/feral	45	6557	12733	gear	6.381	ap:6:ap:0.5:3,armor:49:armor:0.069:3.381
+R	druid/feral	45	6557	12734	gear	3.3810000000000002	armor:49:armor:0.069:3.381
+R	druid/feral	45	6557	12735	gear	3.3810000000000002	armor:49:armor:0.069:3.381
+R	druid/feral	45	6557	12736	gear	3.3810000000000002	armor:49:armor:0.069:3.381
+R	druid/feral	45	6557	12740	gear	7.181	sta:2:sta:1.9:3.8,armor:49:armor:0.069:3.381
+R	druid/feral	45	6557	12741	gear	7.181	sta:2:sta:1.9:3.8,armor:49:armor:0.069:3.381
+R	druid/feral	45	6557	12742	gear	7.181	sta:2:sta:1.9:3.8,armor:49:armor:0.069:3.381
+R	druid/feral	45	6557	12743	gear	7.181	sta:2:sta:1.9:3.8,armor:49:armor:0.069:3.381
+R	druid/feral	45	6557	12744	gear	7.181	sta:2:sta:1.9:3.8,armor:49:armor:0.069:3.381
+R	druid/feral	45	6557	12756	gear	3.3810000000000002	armor:49:armor:0.069:3.381
+R	druid/feral	45	6557	12760	gear	3.3810000000000002	armor:49:armor:0.069:3.381
+R	druid/feral	45	7047	0	gear	4.5440000000000005	spi:5:spi:0.55:2.75,armor:26:armor:0.069:1.794
+R	druid/feral	45	8192	0	gear	30.834	agi:11:agi:1.4:15.4,sta:5:sta:1.9:9.5,armor:86:armor:0.069:5.934
+R	druid/feral	45	9834	0	gear	5.037000000000001	armor:73:armor:0.069:5.037
+R	druid/feral	45	9834	12718	gear	17.277	int:6:int:0.14:0.84,sta:6:sta:1.9:11.4,armor:73:armor:0.069:5.037
+R	druid/feral	45	9834	12719	gear	19.737000000000002	spi:6:spi:0.55:3.3,sta:6:sta:1.9:11.4,armor:73:armor:0.069:5.037
+R	druid/feral	45	9834	12720	gear	9.177000000000001	int:6:int:0.14:0.84,spi:6:spi:0.55:3.3,armor:73:armor:0.069:5.037
+R	druid/feral	45	9834	12721	gear	24.836999999999996	agi:6:agi:1.4:8.4,sta:6:sta:1.9:11.4,armor:73:armor:0.069:5.037
+R	druid/feral	45	9834	12722	gear	22.436999999999998	sta:6:sta:1.9:11.4,str:6:str:1:6,armor:73:armor:0.069:5.037
+R	druid/feral	45	9834	12723	gear	11.877	int:6:int:0.14:0.84,str:6:str:1:6,armor:73:armor:0.069:5.037
+R	druid/feral	45	9834	12724	gear	14.277	agi:6:agi:1.4:8.4,int:6:int:0.14:0.84,armor:73:armor:0.069:5.037
+R	druid/feral	45	9834	12725	gear	14.337000000000002	spi:6:spi:0.55:3.3,str:6:str:1:6,armor:73:armor:0.069:5.037
+R	druid/feral	45	9834	12726	gear	16.737000000000002	agi:6:agi:1.4:8.4,spi:6:spi:0.55:3.3,armor:73:armor:0.069:5.037
+R	druid/feral	45	9834	12727	gear	19.436999999999998	agi:6:agi:1.4:8.4,str:6:str:1:6,armor:73:armor:0.069:5.037
+R	druid/feral	45	9834	12728	gear	17.637	agi:9:agi:1.4:12.6,armor:73:armor:0.069:5.037
+R	druid/feral	45	9834	12729	gear	6.297000000000001	int:9:int:0.14:1.26,armor:73:armor:0.069:5.037
+R	druid/feral	45	9834	12730	gear	9.987000000000002	spi:9:spi:0.55:4.95,armor:73:armor:0.069:5.037
+R	druid/feral	45	9834	12731	gear	22.137	sta:9:sta:1.9:17.1,armor:73:armor:0.069:5.037
+R	druid/feral	45	9834	12732	gear	14.037	str:9:str:1:9,armor:73:armor:0.069:5.037
+R	druid/feral	45	9834	12733	gear	14.037	ap:18:ap:0.5:9,armor:73:armor:0.069:5.037
+R	druid/feral	45	9834	12734	gear	5.037000000000001	armor:73:armor:0.069:5.037
+R	druid/feral	45	9834	12735	gear	5.037000000000001	armor:73:armor:0.069:5.037
+R	druid/feral	45	9834	12736	gear	5.037000000000001	armor:73:armor:0.069:5.037
+R	druid/feral	45	9834	12740	gear	16.436999999999998	sta:6:sta:1.9:11.4,armor:73:armor:0.069:5.037
+R	druid/feral	45	9834	12741	gear	16.436999999999998	sta:6:sta:1.9:11.4,armor:73:armor:0.069:5.037
+R	druid/feral	45	9834	12742	gear	16.436999999999998	sta:6:sta:1.9:11.4,armor:73:armor:0.069:5.037
+R	druid/feral	45	9834	12743	gear	16.436999999999998	sta:6:sta:1.9:11.4,armor:73:armor:0.069:5.037
+R	druid/feral	45	9834	12744	gear	16.436999999999998	sta:6:sta:1.9:11.4,armor:73:armor:0.069:5.037
+R	druid/feral	45	9834	12745	gear	13.617	int:7:int:0.14:0.98,sta:4:sta:1.9:7.6,armor:73:armor:0.069:5.037
+R	druid/feral	45	9834	12746	gear	8.217	int:7:int:0.14:0.98,spi:4:spi:0.55:2.2,armor:73:armor:0.069:5.037
+R	druid/feral	45	9834	12747	gear	20.537	spi:4:spi:0.55:2.2,sta:7:sta:1.9:13.3,armor:73:armor:0.069:5.037
+R	druid/feral	45	9834	12748	gear	18.897	int:4:int:0.14:0.56,sta:7:sta:1.9:13.3,armor:73:armor:0.069:5.037
+R	druid/feral	45	9834	12749	gear	8.217	int:7:int:0.14:0.98,spi:4:spi:0.55:2.2,armor:73:armor:0.069:5.037
+R	druid/feral	45	9834	12750	gear	20.537	spi:4:spi:0.55:2.2,sta:7:sta:1.9:13.3,armor:73:armor:0.069:5.037
+R	druid/feral	45	9834	12751	gear	26.037	agi:3:agi:1.4:4.2,ap:7:ap:0.5:3.5,sta:7:sta:1.9:13.3,armor:73:armor:0.069:5.037
+R	druid/feral	45	9834	12752	gear	26.936999999999998	agi:4:agi:1.4:5.6,sta:7:sta:1.9:13.3,str:3:str:1:3,armor:73:armor:0.069:5.037
+R	druid/feral	45	9834	12753	gear	22.336999999999996	sta:7:sta:1.9:13.3,str:4:str:1:4,armor:73:armor:0.069:5.037
+R	druid/feral	45	9834	12755	gear	22.336999999999996	sta:7:sta:1.9:13.3,str:4:str:1:4,armor:73:armor:0.069:5.037
+R	druid/feral	45	9834	12756	gear	5.037000000000001	armor:73:armor:0.069:5.037
+R	druid/feral	45	9834	12760	gear	5.037000000000001	armor:73:armor:0.069:5.037
+R	druid/feral	45	11187	0	gear	0.276	armor:4:armor:0.069:0.276
 R	druid/feral	45	11994	0	gear	0.0	
-R	druid/feral	45	11994	12718	gear	6.42	int:3:int:0.14:0.42,sta:3:sta:2:6
-R	druid/feral	45	11994	12719	gear	7.62	spi:3:spi:0.54:1.62,sta:3:sta:2:6
-R	druid/feral	45	11994	12720	gear	2.04	int:3:int:0.14:0.42,spi:3:spi:0.54:1.62
-R	druid/feral	45	11994	12721	gear	10.2	agi:3:agi:1.4:4.2,sta:3:sta:2:6
-R	druid/feral	45	11994	12722	gear	9.0	sta:3:sta:2:6,str:3:str:1:3
+R	druid/feral	45	11994	12718	gear	6.119999999999999	int:3:int:0.14:0.42,sta:3:sta:1.9:5.7
+R	druid/feral	45	11994	12719	gear	7.35	spi:3:spi:0.55:1.65,sta:3:sta:1.9:5.7
+R	druid/feral	45	11994	12720	gear	2.0700000000000003	int:3:int:0.14:0.42,spi:3:spi:0.55:1.65
+R	druid/feral	45	11994	12721	gear	9.899999999999999	agi:3:agi:1.4:4.2,sta:3:sta:1.9:5.7
+R	druid/feral	45	11994	12722	gear	8.7	sta:3:sta:1.9:5.7,str:3:str:1:3
 R	druid/feral	45	11994	12723	gear	3.42	int:3:int:0.14:0.42,str:3:str:1:3
 R	druid/feral	45	11994	12724	gear	4.619999999999999	agi:3:agi:1.4:4.2,int:3:int:0.14:0.42
-R	druid/feral	45	11994	12725	gear	4.62	spi:3:spi:0.54:1.62,str:3:str:1:3
-R	druid/feral	45	11994	12726	gear	5.819999999999999	agi:3:agi:1.4:4.2,spi:3:spi:0.54:1.62
+R	druid/feral	45	11994	12725	gear	4.65	spi:3:spi:0.55:1.65,str:3:str:1:3
+R	druid/feral	45	11994	12726	gear	5.85	agi:3:agi:1.4:4.2,spi:3:spi:0.55:1.65
 R	druid/feral	45	11994	12727	gear	7.199999999999999	agi:3:agi:1.4:4.2,str:3:str:1:3
 R	druid/feral	45	11994	12728	gear	7.0	agi:5:agi:1.4:7
 R	druid/feral	45	11994	12729	gear	0.7000000000000001	int:5:int:0.14:0.7
-R	druid/feral	45	11994	12730	gear	2.7	spi:5:spi:0.54:2.7
-R	druid/feral	45	11994	12731	gear	10.0	sta:5:sta:2:10
+R	druid/feral	45	11994	12730	gear	2.75	spi:5:spi:0.55:2.75
+R	druid/feral	45	11994	12731	gear	9.5	sta:5:sta:1.9:9.5
 R	druid/feral	45	11994	12732	gear	5.0	str:5:str:1:5
 R	druid/feral	45	11994	12733	gear	5.0	ap:10:ap:0.5:5
 R	druid/feral	45	11994	12737	gear	0.0	
 R	druid/feral	45	11994	12738	gear	0.0	
 R	druid/feral	45	11994	12739	gear	2.8	agi:2:agi:1.4:2.8
-R	druid/feral	45	11994	12740	gear	6.0	sta:3:sta:2:6
-R	druid/feral	45	11994	12741	gear	6.0	sta:3:sta:2:6
-R	druid/feral	45	11994	12742	gear	6.0	sta:3:sta:2:6
-R	druid/feral	45	11994	12743	gear	6.0	sta:3:sta:2:6
-R	druid/feral	45	11994	12744	gear	6.0	sta:3:sta:2:6
+R	druid/feral	45	11994	12740	gear	5.699999999999999	sta:3:sta:1.9:5.7
+R	druid/feral	45	11994	12741	gear	5.699999999999999	sta:3:sta:1.9:5.7
+R	druid/feral	45	11994	12742	gear	5.699999999999999	sta:3:sta:1.9:5.7
+R	druid/feral	45	11994	12743	gear	5.699999999999999	sta:3:sta:1.9:5.7
+R	druid/feral	45	11994	12744	gear	5.699999999999999	sta:3:sta:1.9:5.7
 R	druid/feral	45	13183	0	mh	189.456	dps:39.47:dps:4.8:189.456
-R	druid/feral	45	14122	0	gear	1.022	armor:14:armor:0.073:1.022
-R	druid/feral	45	14122	12718	gear	5.3020000000000005	int:2:int:0.14:0.28,sta:2:sta:2:4,armor:14:armor:0.073:1.022
-R	druid/feral	45	14122	12719	gear	6.102	spi:2:spi:0.54:1.08,sta:2:sta:2:4,armor:14:armor:0.073:1.022
-R	druid/feral	45	14122	12720	gear	2.382	int:2:int:0.14:0.28,spi:2:spi:0.54:1.08,armor:14:armor:0.073:1.022
-R	druid/feral	45	14122	12729	gear	1.4420000000000002	int:3:int:0.14:0.42,armor:14:armor:0.073:1.022
-R	druid/feral	45	14122	12730	gear	2.6420000000000003	spi:3:spi:0.54:1.62,armor:14:armor:0.073:1.022
-R	druid/feral	45	14122	12731	gear	7.022	sta:3:sta:2:6,armor:14:armor:0.073:1.022
-R	druid/feral	45	14122	12734	gear	1.022	armor:14:armor:0.073:1.022
-R	druid/feral	45	14122	12735	gear	1.022	armor:14:armor:0.073:1.022
-R	druid/feral	45	14122	12740	gear	5.022	sta:2:sta:2:4,armor:14:armor:0.073:1.022
-R	druid/feral	45	14122	12741	gear	5.022	sta:2:sta:2:4,armor:14:armor:0.073:1.022
-R	druid/feral	45	14122	12742	gear	5.022	sta:2:sta:2:4,armor:14:armor:0.073:1.022
-R	druid/feral	45	14122	12743	gear	5.022	sta:2:sta:2:4,armor:14:armor:0.073:1.022
-R	druid/feral	45	14122	12744	gear	5.022	sta:2:sta:2:4,armor:14:armor:0.073:1.022
-R	druid/feral	45	14122	12745	gear	3.3020000000000005	int:2:int:0.14:0.28,sta:1:sta:2:2,armor:14:armor:0.073:1.022
-R	druid/feral	45	14122	12756	gear	1.022	armor:14:armor:0.073:1.022
-R	druid/feral	45	14122	12757	gear	1.022	armor:14:armor:0.073:1.022
-R	druid/feral	45	14122	12758	gear	1.022	armor:14:armor:0.073:1.022
-R	druid/feral	45	14122	12759	gear	1.022	armor:14:armor:0.073:1.022
-R	druid/feral	45	14122	12761	gear	1.022	armor:14:armor:0.073:1.022
-R	druid/feral	45	14340	0	gear	44.424	sta:19:sta:2:38,armor:88:armor:0.073:6.424
-R	druid/feral	45	14673	0	gear	28.082	str:3:str:1:3,agi:9:agi:1.4:12.6,sta:5:sta:2:10,armor:34:armor:0.073:2.482
-R	druid/feral	45	15945	0	oh	5.08	sta:2:sta:2:4,spi:2:spi:0.54:1.08
-R	druid/feral	45	16711	0	gear	56.485	agi:21:agi:1.4:29.4,sta:9:sta:2:18,hit:0.3:hit:2.3:0.69,armor:115:armor:0.073:8.395
-R	druid/feral	45	18726	0	gear	35.329	sta:15:sta:2:30,armor:73:armor:0.073:5.329
+R	druid/feral	45	14122	0	gear	0.9660000000000001	armor:14:armor:0.069:0.966
+R	druid/feral	45	14122	12718	gear	5.046	int:2:int:0.14:0.28,sta:2:sta:1.9:3.8,armor:14:armor:0.069:0.966
+R	druid/feral	45	14122	12719	gear	5.8660000000000005	spi:2:spi:0.55:1.1,sta:2:sta:1.9:3.8,armor:14:armor:0.069:0.966
+R	druid/feral	45	14122	12720	gear	2.346	int:2:int:0.14:0.28,spi:2:spi:0.55:1.1,armor:14:armor:0.069:0.966
+R	druid/feral	45	14122	12729	gear	1.3860000000000001	int:3:int:0.14:0.42,armor:14:armor:0.069:0.966
+R	druid/feral	45	14122	12730	gear	2.616	spi:3:spi:0.55:1.65,armor:14:armor:0.069:0.966
+R	druid/feral	45	14122	12731	gear	6.6659999999999995	sta:3:sta:1.9:5.7,armor:14:armor:0.069:0.966
+R	druid/feral	45	14122	12734	gear	0.9660000000000001	armor:14:armor:0.069:0.966
+R	druid/feral	45	14122	12735	gear	0.9660000000000001	armor:14:armor:0.069:0.966
+R	druid/feral	45	14122	12740	gear	4.766	sta:2:sta:1.9:3.8,armor:14:armor:0.069:0.966
+R	druid/feral	45	14122	12741	gear	4.766	sta:2:sta:1.9:3.8,armor:14:armor:0.069:0.966
+R	druid/feral	45	14122	12742	gear	4.766	sta:2:sta:1.9:3.8,armor:14:armor:0.069:0.966
+R	druid/feral	45	14122	12743	gear	4.766	sta:2:sta:1.9:3.8,armor:14:armor:0.069:0.966
+R	druid/feral	45	14122	12744	gear	4.766	sta:2:sta:1.9:3.8,armor:14:armor:0.069:0.966
+R	druid/feral	45	14122	12745	gear	3.146	int:2:int:0.14:0.28,sta:1:sta:1.9:1.9,armor:14:armor:0.069:0.966
+R	druid/feral	45	14122	12756	gear	0.9660000000000001	armor:14:armor:0.069:0.966
+R	druid/feral	45	14122	12757	gear	0.9660000000000001	armor:14:armor:0.069:0.966
+R	druid/feral	45	14122	12758	gear	0.9660000000000001	armor:14:armor:0.069:0.966
+R	druid/feral	45	14122	12759	gear	0.9660000000000001	armor:14:armor:0.069:0.966
+R	druid/feral	45	14122	12761	gear	0.9660000000000001	armor:14:armor:0.069:0.966
+R	druid/feral	45	14340	0	gear	42.172000000000004	sta:19:sta:1.9:36.1,armor:88:armor:0.069:6.072
+R	druid/feral	45	14673	0	gear	27.446	str:3:str:1:3,agi:9:agi:1.4:12.6,sta:5:sta:1.9:9.5,armor:34:armor:0.069:2.346
+R	druid/feral	45	15945	0	oh	4.9	sta:2:sta:1.9:3.8,spi:2:spi:0.55:1.1
+R	druid/feral	45	16711	0	gear	55.095	agi:21:agi:1.4:29.4,sta:9:sta:1.9:17.1,hit:0.3:hit:2.2:0.66,armor:115:armor:0.069:7.935
+R	druid/feral	45	18726	0	gear	33.537	sta:15:sta:1.9:28.5,armor:73:armor:0.069:5.037
 R	druid/feral	45	22397	0	ranged	0.0	
-R	druid/feral	45	252507	0	gear	25.548000000000002	sta:10:sta:2:20,armor:76:armor:0.073:5.548
-R	druid/feral	45	254111	0	gear	31.202	int:9:int:0.14:1.26,sta:13:sta:2:26,armor:54:armor:0.073:3.942
-R	druid/feral	45	270033	0	gear	11.447	agi:4:agi:1.4:5.6,str:3:str:1:3,armor:39:armor:0.073:2.847
-R	druid/feral	45	273892	0	gear	63.126	sta:20:sta:2:40,int:19:int:0.14:2.66,spi:16:spi:0.54:8.64,armor:162:armor:0.073:11.826
-R	druid/feral	45	280082	0	mh	190.89	int:15:int:0.14:2.1,hit:1.5:hit:2.3:3.45,spi:21:spi:0.54:11.34,dps:36.25:dps:4.8:174
-R	druid/feral	55	1315	0	gear	22.55	sta:10:sta:1.7:17,spi:15:spi:0.37:5.55
+R	druid/feral	45	252507	0	gear	24.244	sta:10:sta:1.9:19,armor:76:armor:0.069:5.244
+R	druid/feral	45	254111	0	gear	29.686	int:9:int:0.14:1.26,sta:13:sta:1.9:24.7,armor:54:armor:0.069:3.726
+R	druid/feral	45	270033	0	gear	11.291	agi:4:agi:1.4:5.6,str:3:str:1:3,armor:39:armor:0.069:2.691
+R	druid/feral	45	273892	0	gear	60.63799999999999	sta:20:sta:1.9:38,int:19:int:0.14:2.66,spi:16:spi:0.55:8.8,armor:162:armor:0.069:11.178
+R	druid/feral	45	280082	0	mh	190.95	int:15:int:0.14:2.1,hit:1.5:hit:2.2:3.3,spi:21:spi:0.55:11.55,dps:36.25:dps:4.8:174
+R	druid/feral	55	1315	0	gear	22.4	sta:10:sta:1.7:17,spi:15:spi:0.36:5.4
 R	druid/feral	55	1808	0	gear	5.55	armor:74:armor:0.075:5.55
 R	druid/feral	55	1990	0	mh	103.78200000000001	dps:24.71:dps:4.2:103.782
-R	druid/feral	55	1990	12718	mh	122.052	int:9:int:0.33:2.97,sta:9:sta:1.7:15.3,dps:24.71:dps:4.2:103.782
-R	druid/feral	55	1990	12905	mh	92.726	int:11:int:0.33:3.63,sta:7:sta:1.7:11.9,dps:18.38:dps:4.2:77.196
+R	druid/feral	55	1990	12718	mh	122.14200000000001	int:9:int:0.34:3.06,sta:9:sta:1.7:15.3,dps:24.71:dps:4.2:103.782
+R	druid/feral	55	1990	12905	mh	92.836	int:11:int:0.34:3.74,sta:7:sta:1.7:11.9,dps:18.38:dps:4.2:77.196
 R	druid/feral	55	2140	0	mh	24.948000000000004	dps:5.94:dps:4.2:24.948
-R	druid/feral	55	2140	12718	mh	26.978000000000005	int:1:int:0.33:0.33,sta:1:sta:1.7:1.7,dps:5.94:dps:4.2:24.948
-R	druid/feral	55	2140	12917	mh	16.08	int:1:int:0.33:0.33,dps:3.75:dps:4.2:15.75
+R	druid/feral	55	2140	12718	mh	26.988000000000003	int:1:int:0.34:0.34,sta:1:sta:1.7:1.7,dps:5.94:dps:4.2:24.948
+R	druid/feral	55	2140	12917	mh	16.09	int:1:int:0.34:0.34,dps:3.75:dps:4.2:15.75
 R	druid/feral	55	2225	0	mh	21.0	dps:5:dps:4.2:21
 R	druid/feral	55	2614	0	gear	2.175	armor:29:armor:0.075:2.175
 R	druid/feral	55	3158	0	gear	1.95	armor:26:armor:0.075:1.95
 R	druid/feral	55	3570	0	mh	36.104	str:2:str:1:2,dps:8.12:dps:4.2:34.104
 R	druid/feral	55	4023	0	mh	64.512	dps:15.36:dps:4.2:64.512
 R	druid/feral	55	4570	0	mh	42.0	dps:10:dps:4.2:42
-R	druid/feral	55	4570	12718	mh	48.09	int:3:int:0.33:0.99,sta:3:sta:1.7:5.1,dps:10:dps:4.2:42
-R	druid/feral	55	4570	12719	mh	48.21	spi:3:spi:0.37:1.11,sta:3:sta:1.7:5.1,dps:10:dps:4.2:42
-R	druid/feral	55	4570	12720	mh	44.1	int:3:int:0.33:0.99,spi:3:spi:0.37:1.11,dps:10:dps:4.2:42
+R	druid/feral	55	4570	12718	mh	48.12	int:3:int:0.34:1.02,sta:3:sta:1.7:5.1,dps:10:dps:4.2:42
+R	druid/feral	55	4570	12719	mh	48.18	spi:3:spi:0.36:1.08,sta:3:sta:1.7:5.1,dps:10:dps:4.2:42
+R	druid/feral	55	4570	12720	mh	44.1	int:3:int:0.34:1.02,spi:3:spi:0.36:1.08,dps:10:dps:4.2:42
 R	druid/feral	55	4570	12721	mh	51.0	agi:3:agi:1.3:3.9,sta:3:sta:1.7:5.1,dps:10:dps:4.2:42
 R	druid/feral	55	4570	12722	mh	50.1	sta:3:sta:1.7:5.1,str:3:str:1:3,dps:10:dps:4.2:42
-R	druid/feral	55	4570	12723	mh	45.99	int:3:int:0.33:0.99,str:3:str:1:3,dps:10:dps:4.2:42
-R	druid/feral	55	4570	12724	mh	46.89	agi:3:agi:1.3:3.9,int:3:int:0.33:0.99,dps:10:dps:4.2:42
-R	druid/feral	55	4570	12725	mh	46.11	spi:3:spi:0.37:1.11,str:3:str:1:3,dps:10:dps:4.2:42
-R	druid/feral	55	4570	12726	mh	47.01	agi:3:agi:1.3:3.9,spi:3:spi:0.37:1.11,dps:10:dps:4.2:42
+R	druid/feral	55	4570	12723	mh	46.019999999999996	int:3:int:0.34:1.02,str:3:str:1:3,dps:10:dps:4.2:42
+R	druid/feral	55	4570	12724	mh	46.92	agi:3:agi:1.3:3.9,int:3:int:0.34:1.02,dps:10:dps:4.2:42
+R	druid/feral	55	4570	12725	mh	46.08	spi:3:spi:0.36:1.08,str:3:str:1:3,dps:10:dps:4.2:42
+R	druid/feral	55	4570	12726	mh	46.980000000000004	agi:3:agi:1.3:3.9,spi:3:spi:0.36:1.08,dps:10:dps:4.2:42
 R	druid/feral	55	4570	12727	mh	48.9	agi:3:agi:1.3:3.9,str:3:str:1:3,dps:10:dps:4.2:42
 R	druid/feral	55	4570	12728	mh	47.2	agi:4:agi:1.3:5.2,dps:10:dps:4.2:42
-R	druid/feral	55	4570	12729	mh	43.32	int:4:int:0.33:1.32,dps:10:dps:4.2:42
-R	druid/feral	55	4570	12730	mh	43.48	spi:4:spi:0.37:1.48,dps:10:dps:4.2:42
+R	druid/feral	55	4570	12729	mh	43.36	int:4:int:0.34:1.36,dps:10:dps:4.2:42
+R	druid/feral	55	4570	12730	mh	43.44	spi:4:spi:0.36:1.44,dps:10:dps:4.2:42
 R	druid/feral	55	4570	12731	mh	48.8	sta:4:sta:1.7:6.8,dps:10:dps:4.2:42
 R	druid/feral	55	4570	12732	mh	46.0	str:4:str:1:4,dps:10:dps:4.2:42
 R	druid/feral	55	4570	12733	mh	45.6	ap:8:ap:0.45:3.6,dps:10:dps:4.2:42
@@ -7731,15 +7731,15 @@ R	druid/feral	55	4570	12742	mh	47.1	sta:3:sta:1.7:5.1,dps:10:dps:4.2:42
 R	druid/feral	55	4570	12743	mh	47.1	sta:3:sta:1.7:5.1,dps:10:dps:4.2:42
 R	druid/feral	55	4570	12744	mh	47.1	sta:3:sta:1.7:5.1,dps:10:dps:4.2:42
 R	druid/feral	55	4570	12759	mh	42.0	dps:10:dps:4.2:42
-R	druid/feral	55	4570	12918	mh	33.156	int:4:int:0.33:1.32,dps:7.58:dps:4.2:31.836
-R	druid/feral	55	4570	12919	mh	33.156	int:4:int:0.33:1.32,dps:7.58:dps:4.2:31.836
+R	druid/feral	55	4570	12918	mh	33.196000000000005	int:4:int:0.34:1.36,dps:7.58:dps:4.2:31.836
+R	druid/feral	55	4570	12919	mh	33.196000000000005	int:4:int:0.34:1.36,dps:7.58:dps:4.2:31.836
 R	druid/feral	55	5079	0	gear	0.0	
 R	druid/feral	55	6540	0	gear	2.1	armor:28:armor:0.075:2.1
-R	druid/feral	55	6540	12718	gear	8.19	int:3:int:0.33:0.99,sta:3:sta:1.7:5.1,armor:28:armor:0.075:2.1
-R	druid/feral	55	6540	12719	gear	8.309999999999999	spi:3:spi:0.37:1.11,sta:3:sta:1.7:5.1,armor:28:armor:0.075:2.1
-R	druid/feral	55	6540	12720	gear	4.199999999999999	int:3:int:0.33:0.99,spi:3:spi:0.37:1.11,armor:28:armor:0.075:2.1
-R	druid/feral	55	6540	12729	gear	3.75	int:5:int:0.33:1.65,armor:28:armor:0.075:2.1
-R	druid/feral	55	6540	12730	gear	3.95	spi:5:spi:0.37:1.85,armor:28:armor:0.075:2.1
+R	druid/feral	55	6540	12718	gear	8.219999999999999	int:3:int:0.34:1.02,sta:3:sta:1.7:5.1,armor:28:armor:0.075:2.1
+R	druid/feral	55	6540	12719	gear	8.28	spi:3:spi:0.36:1.08,sta:3:sta:1.7:5.1,armor:28:armor:0.075:2.1
+R	druid/feral	55	6540	12720	gear	4.2	int:3:int:0.34:1.02,spi:3:spi:0.36:1.08,armor:28:armor:0.075:2.1
+R	druid/feral	55	6540	12729	gear	3.8000000000000003	int:5:int:0.34:1.7,armor:28:armor:0.075:2.1
+R	druid/feral	55	6540	12730	gear	3.9	spi:5:spi:0.36:1.8,armor:28:armor:0.075:2.1
 R	druid/feral	55	6540	12731	gear	10.6	sta:5:sta:1.7:8.5,armor:28:armor:0.075:2.1
 R	druid/feral	55	6540	12734	gear	2.1	armor:28:armor:0.075:2.1
 R	druid/feral	55	6540	12735	gear	2.1	armor:28:armor:0.075:2.1
@@ -7748,26 +7748,26 @@ R	druid/feral	55	6540	12741	gear	7.199999999999999	sta:3:sta:1.7:5.1,armor:28:ar
 R	druid/feral	55	6540	12742	gear	7.199999999999999	sta:3:sta:1.7:5.1,armor:28:armor:0.075:2.1
 R	druid/feral	55	6540	12743	gear	7.199999999999999	sta:3:sta:1.7:5.1,armor:28:armor:0.075:2.1
 R	druid/feral	55	6540	12744	gear	7.199999999999999	sta:3:sta:1.7:5.1,armor:28:armor:0.075:2.1
-R	druid/feral	55	6540	12745	gear	6.82	int:4:int:0.33:1.32,sta:2:sta:1.7:3.4,armor:28:armor:0.075:2.1
+R	druid/feral	55	6540	12745	gear	6.859999999999999	int:4:int:0.34:1.36,sta:2:sta:1.7:3.4,armor:28:armor:0.075:2.1
 R	druid/feral	55	6540	12756	gear	2.1	armor:28:armor:0.075:2.1
 R	druid/feral	55	6540	12757	gear	2.1	armor:28:armor:0.075:2.1
 R	druid/feral	55	6540	12758	gear	2.1	armor:28:armor:0.075:2.1
 R	druid/feral	55	6540	12759	gear	2.1	armor:28:armor:0.075:2.1
 R	druid/feral	55	6540	12761	gear	2.1	armor:28:armor:0.075:2.1
 R	druid/feral	55	6557	0	gear	3.675	armor:49:armor:0.075:3.675
-R	druid/feral	55	6557	12718	gear	7.734999999999999	int:2:int:0.33:0.66,sta:2:sta:1.7:3.4,armor:49:armor:0.075:3.675
-R	druid/feral	55	6557	12719	gear	7.8149999999999995	spi:2:spi:0.37:0.74,sta:2:sta:1.7:3.4,armor:49:armor:0.075:3.675
-R	druid/feral	55	6557	12720	gear	5.074999999999999	int:2:int:0.33:0.66,spi:2:spi:0.37:0.74,armor:49:armor:0.075:3.675
+R	druid/feral	55	6557	12718	gear	7.755	int:2:int:0.34:0.68,sta:2:sta:1.7:3.4,armor:49:armor:0.075:3.675
+R	druid/feral	55	6557	12719	gear	7.795	spi:2:spi:0.36:0.72,sta:2:sta:1.7:3.4,armor:49:armor:0.075:3.675
+R	druid/feral	55	6557	12720	gear	5.074999999999999	int:2:int:0.34:0.68,spi:2:spi:0.36:0.72,armor:49:armor:0.075:3.675
 R	druid/feral	55	6557	12721	gear	9.675	agi:2:agi:1.3:2.6,sta:2:sta:1.7:3.4,armor:49:armor:0.075:3.675
 R	druid/feral	55	6557	12722	gear	9.075	sta:2:sta:1.7:3.4,str:2:str:1:2,armor:49:armor:0.075:3.675
-R	druid/feral	55	6557	12723	gear	6.335	int:2:int:0.33:0.66,str:2:str:1:2,armor:49:armor:0.075:3.675
-R	druid/feral	55	6557	12724	gear	6.9350000000000005	agi:2:agi:1.3:2.6,int:2:int:0.33:0.66,armor:49:armor:0.075:3.675
-R	druid/feral	55	6557	12725	gear	6.415	spi:2:spi:0.37:0.74,str:2:str:1:2,armor:49:armor:0.075:3.675
-R	druid/feral	55	6557	12726	gear	7.015	agi:2:agi:1.3:2.6,spi:2:spi:0.37:0.74,armor:49:armor:0.075:3.675
+R	druid/feral	55	6557	12723	gear	6.355	int:2:int:0.34:0.68,str:2:str:1:2,armor:49:armor:0.075:3.675
+R	druid/feral	55	6557	12724	gear	6.955	agi:2:agi:1.3:2.6,int:2:int:0.34:0.68,armor:49:armor:0.075:3.675
+R	druid/feral	55	6557	12725	gear	6.395	spi:2:spi:0.36:0.72,str:2:str:1:2,armor:49:armor:0.075:3.675
+R	druid/feral	55	6557	12726	gear	6.995	agi:2:agi:1.3:2.6,spi:2:spi:0.36:0.72,armor:49:armor:0.075:3.675
 R	druid/feral	55	6557	12727	gear	8.274999999999999	agi:2:agi:1.3:2.6,str:2:str:1:2,armor:49:armor:0.075:3.675
 R	druid/feral	55	6557	12728	gear	7.575	agi:3:agi:1.3:3.9,armor:49:armor:0.075:3.675
-R	druid/feral	55	6557	12729	gear	4.665	int:3:int:0.33:0.99,armor:49:armor:0.075:3.675
-R	druid/feral	55	6557	12730	gear	4.785	spi:3:spi:0.37:1.11,armor:49:armor:0.075:3.675
+R	druid/feral	55	6557	12729	gear	4.695	int:3:int:0.34:1.02,armor:49:armor:0.075:3.675
+R	druid/feral	55	6557	12730	gear	4.755	spi:3:spi:0.36:1.08,armor:49:armor:0.075:3.675
 R	druid/feral	55	6557	12731	gear	8.774999999999999	sta:3:sta:1.7:5.1,armor:49:armor:0.075:3.675
 R	druid/feral	55	6557	12732	gear	6.675	str:3:str:1:3,armor:49:armor:0.075:3.675
 R	druid/feral	55	6557	12733	gear	6.375	ap:6:ap:0.45:2.7,armor:49:armor:0.075:3.675
@@ -7781,22 +7781,22 @@ R	druid/feral	55	6557	12743	gear	7.074999999999999	sta:2:sta:1.7:3.4,armor:49:ar
 R	druid/feral	55	6557	12744	gear	7.074999999999999	sta:2:sta:1.7:3.4,armor:49:armor:0.075:3.675
 R	druid/feral	55	6557	12756	gear	3.675	armor:49:armor:0.075:3.675
 R	druid/feral	55	6557	12760	gear	3.675	armor:49:armor:0.075:3.675
-R	druid/feral	55	7047	0	gear	3.8	spi:5:spi:0.37:1.85,armor:26:armor:0.075:1.95
+R	druid/feral	55	7047	0	gear	3.75	spi:5:spi:0.36:1.8,armor:26:armor:0.075:1.95
 R	druid/feral	55	8192	0	gear	29.25	agi:11:agi:1.3:14.3,sta:5:sta:1.7:8.5,armor:86:armor:0.075:6.45
 R	druid/feral	55	9834	0	gear	5.475	armor:73:armor:0.075:5.475
-R	druid/feral	55	9834	12718	gear	17.655	int:6:int:0.33:1.98,sta:6:sta:1.7:10.2,armor:73:armor:0.075:5.475
-R	druid/feral	55	9834	12719	gear	17.894999999999996	spi:6:spi:0.37:2.22,sta:6:sta:1.7:10.2,armor:73:armor:0.075:5.475
-R	druid/feral	55	9834	12720	gear	9.674999999999999	int:6:int:0.33:1.98,spi:6:spi:0.37:2.22,armor:73:armor:0.075:5.475
+R	druid/feral	55	9834	12718	gear	17.714999999999996	int:6:int:0.34:2.04,sta:6:sta:1.7:10.2,armor:73:armor:0.075:5.475
+R	druid/feral	55	9834	12719	gear	17.835	spi:6:spi:0.36:2.16,sta:6:sta:1.7:10.2,armor:73:armor:0.075:5.475
+R	druid/feral	55	9834	12720	gear	9.675	int:6:int:0.34:2.04,spi:6:spi:0.36:2.16,armor:73:armor:0.075:5.475
 R	druid/feral	55	9834	12721	gear	23.475	agi:6:agi:1.3:7.8,sta:6:sta:1.7:10.2,armor:73:armor:0.075:5.475
 R	druid/feral	55	9834	12722	gear	21.674999999999997	sta:6:sta:1.7:10.2,str:6:str:1:6,armor:73:armor:0.075:5.475
-R	druid/feral	55	9834	12723	gear	13.455	int:6:int:0.33:1.98,str:6:str:1:6,armor:73:armor:0.075:5.475
-R	druid/feral	55	9834	12724	gear	15.255	agi:6:agi:1.3:7.8,int:6:int:0.33:1.98,armor:73:armor:0.075:5.475
-R	druid/feral	55	9834	12725	gear	13.694999999999999	spi:6:spi:0.37:2.22,str:6:str:1:6,armor:73:armor:0.075:5.475
-R	druid/feral	55	9834	12726	gear	15.495	agi:6:agi:1.3:7.8,spi:6:spi:0.37:2.22,armor:73:armor:0.075:5.475
+R	druid/feral	55	9834	12723	gear	13.514999999999999	int:6:int:0.34:2.04,str:6:str:1:6,armor:73:armor:0.075:5.475
+R	druid/feral	55	9834	12724	gear	15.315	agi:6:agi:1.3:7.8,int:6:int:0.34:2.04,armor:73:armor:0.075:5.475
+R	druid/feral	55	9834	12725	gear	13.635	spi:6:spi:0.36:2.16,str:6:str:1:6,armor:73:armor:0.075:5.475
+R	druid/feral	55	9834	12726	gear	15.435	agi:6:agi:1.3:7.8,spi:6:spi:0.36:2.16,armor:73:armor:0.075:5.475
 R	druid/feral	55	9834	12727	gear	19.275	agi:6:agi:1.3:7.8,str:6:str:1:6,armor:73:armor:0.075:5.475
 R	druid/feral	55	9834	12728	gear	17.175	agi:9:agi:1.3:11.7,armor:73:armor:0.075:5.475
-R	druid/feral	55	9834	12729	gear	8.445	int:9:int:0.33:2.97,armor:73:armor:0.075:5.475
-R	druid/feral	55	9834	12730	gear	8.805	spi:9:spi:0.37:3.33,armor:73:armor:0.075:5.475
+R	druid/feral	55	9834	12729	gear	8.535	int:9:int:0.34:3.06,armor:73:armor:0.075:5.475
+R	druid/feral	55	9834	12730	gear	8.715	spi:9:spi:0.36:3.24,armor:73:armor:0.075:5.475
 R	druid/feral	55	9834	12731	gear	20.775	sta:9:sta:1.7:15.3,armor:73:armor:0.075:5.475
 R	druid/feral	55	9834	12732	gear	14.475	str:9:str:1:9,armor:73:armor:0.075:5.475
 R	druid/feral	55	9834	12733	gear	13.575	ap:18:ap:0.45:8.1,armor:73:armor:0.075:5.475
@@ -7808,12 +7808,12 @@ R	druid/feral	55	9834	12741	gear	15.674999999999999	sta:6:sta:1.7:10.2,armor:73:
 R	druid/feral	55	9834	12742	gear	15.674999999999999	sta:6:sta:1.7:10.2,armor:73:armor:0.075:5.475
 R	druid/feral	55	9834	12743	gear	15.674999999999999	sta:6:sta:1.7:10.2,armor:73:armor:0.075:5.475
 R	druid/feral	55	9834	12744	gear	15.674999999999999	sta:6:sta:1.7:10.2,armor:73:armor:0.075:5.475
-R	druid/feral	55	9834	12745	gear	14.584999999999999	int:7:int:0.33:2.31,sta:4:sta:1.7:6.8,armor:73:armor:0.075:5.475
-R	druid/feral	55	9834	12746	gear	9.265	int:7:int:0.33:2.31,spi:4:spi:0.37:1.48,armor:73:armor:0.075:5.475
-R	druid/feral	55	9834	12747	gear	18.855	spi:4:spi:0.37:1.48,sta:7:sta:1.7:11.9,armor:73:armor:0.075:5.475
-R	druid/feral	55	9834	12748	gear	18.695	int:4:int:0.33:1.32,sta:7:sta:1.7:11.9,armor:73:armor:0.075:5.475
-R	druid/feral	55	9834	12749	gear	9.265	int:7:int:0.33:2.31,spi:4:spi:0.37:1.48,armor:73:armor:0.075:5.475
-R	druid/feral	55	9834	12750	gear	18.855	spi:4:spi:0.37:1.48,sta:7:sta:1.7:11.9,armor:73:armor:0.075:5.475
+R	druid/feral	55	9834	12745	gear	14.655	int:7:int:0.34:2.38,sta:4:sta:1.7:6.8,armor:73:armor:0.075:5.475
+R	druid/feral	55	9834	12746	gear	9.295	int:7:int:0.34:2.38,spi:4:spi:0.36:1.44,armor:73:armor:0.075:5.475
+R	druid/feral	55	9834	12747	gear	18.814999999999998	spi:4:spi:0.36:1.44,sta:7:sta:1.7:11.9,armor:73:armor:0.075:5.475
+R	druid/feral	55	9834	12748	gear	18.735	int:4:int:0.34:1.36,sta:7:sta:1.7:11.9,armor:73:armor:0.075:5.475
+R	druid/feral	55	9834	12749	gear	9.295	int:7:int:0.34:2.38,spi:4:spi:0.36:1.44,armor:73:armor:0.075:5.475
+R	druid/feral	55	9834	12750	gear	18.814999999999998	spi:4:spi:0.36:1.44,sta:7:sta:1.7:11.9,armor:73:armor:0.075:5.475
 R	druid/feral	55	9834	12751	gear	24.425000000000004	agi:3:agi:1.3:3.9,ap:7:ap:0.45:3.15,sta:7:sta:1.7:11.9,armor:73:armor:0.075:5.475
 R	druid/feral	55	9834	12752	gear	25.575000000000003	agi:4:agi:1.3:5.2,sta:7:sta:1.7:11.9,str:3:str:1:3,armor:73:armor:0.075:5.475
 R	druid/feral	55	9834	12753	gear	21.375	sta:7:sta:1.7:11.9,str:4:str:1:4,armor:73:armor:0.075:5.475
@@ -7822,19 +7822,19 @@ R	druid/feral	55	9834	12756	gear	5.475	armor:73:armor:0.075:5.475
 R	druid/feral	55	9834	12760	gear	5.475	armor:73:armor:0.075:5.475
 R	druid/feral	55	11187	0	gear	0.3	armor:4:armor:0.075:0.3
 R	druid/feral	55	11994	0	gear	0.0	
-R	druid/feral	55	11994	12718	gear	6.09	int:3:int:0.33:0.99,sta:3:sta:1.7:5.1
-R	druid/feral	55	11994	12719	gear	6.209999999999999	spi:3:spi:0.37:1.11,sta:3:sta:1.7:5.1
-R	druid/feral	55	11994	12720	gear	2.0999999999999996	int:3:int:0.33:0.99,spi:3:spi:0.37:1.11
+R	druid/feral	55	11994	12718	gear	6.119999999999999	int:3:int:0.34:1.02,sta:3:sta:1.7:5.1
+R	druid/feral	55	11994	12719	gear	6.18	spi:3:spi:0.36:1.08,sta:3:sta:1.7:5.1
+R	druid/feral	55	11994	12720	gear	2.1	int:3:int:0.34:1.02,spi:3:spi:0.36:1.08
 R	druid/feral	55	11994	12721	gear	9.0	agi:3:agi:1.3:3.9,sta:3:sta:1.7:5.1
 R	druid/feral	55	11994	12722	gear	8.1	sta:3:sta:1.7:5.1,str:3:str:1:3
-R	druid/feral	55	11994	12723	gear	3.99	int:3:int:0.33:0.99,str:3:str:1:3
-R	druid/feral	55	11994	12724	gear	4.890000000000001	agi:3:agi:1.3:3.9,int:3:int:0.33:0.99
-R	druid/feral	55	11994	12725	gear	4.109999999999999	spi:3:spi:0.37:1.11,str:3:str:1:3
-R	druid/feral	55	11994	12726	gear	5.01	agi:3:agi:1.3:3.9,spi:3:spi:0.37:1.11
+R	druid/feral	55	11994	12723	gear	4.02	int:3:int:0.34:1.02,str:3:str:1:3
+R	druid/feral	55	11994	12724	gear	4.92	agi:3:agi:1.3:3.9,int:3:int:0.34:1.02
+R	druid/feral	55	11994	12725	gear	4.08	spi:3:spi:0.36:1.08,str:3:str:1:3
+R	druid/feral	55	11994	12726	gear	4.98	agi:3:agi:1.3:3.9,spi:3:spi:0.36:1.08
 R	druid/feral	55	11994	12727	gear	6.9	agi:3:agi:1.3:3.9,str:3:str:1:3
 R	druid/feral	55	11994	12728	gear	6.5	agi:5:agi:1.3:6.5
-R	druid/feral	55	11994	12729	gear	1.6500000000000001	int:5:int:0.33:1.65
-R	druid/feral	55	11994	12730	gear	1.85	spi:5:spi:0.37:1.85
+R	druid/feral	55	11994	12729	gear	1.7000000000000002	int:5:int:0.34:1.7
+R	druid/feral	55	11994	12730	gear	1.7999999999999998	spi:5:spi:0.36:1.8
 R	druid/feral	55	11994	12731	gear	8.5	sta:5:sta:1.7:8.5
 R	druid/feral	55	11994	12732	gear	5.0	str:5:str:1:5
 R	druid/feral	55	11994	12733	gear	4.5	ap:10:ap:0.45:4.5
@@ -7848,11 +7848,11 @@ R	druid/feral	55	11994	12743	gear	5.1	sta:3:sta:1.7:5.1
 R	druid/feral	55	11994	12744	gear	5.1	sta:3:sta:1.7:5.1
 R	druid/feral	55	13183	0	mh	165.774	dps:39.47:dps:4.2:165.774
 R	druid/feral	55	14122	0	gear	1.05	armor:14:armor:0.075:1.05
-R	druid/feral	55	14122	12718	gear	5.109999999999999	int:2:int:0.33:0.66,sta:2:sta:1.7:3.4,armor:14:armor:0.075:1.05
-R	druid/feral	55	14122	12719	gear	5.1899999999999995	spi:2:spi:0.37:0.74,sta:2:sta:1.7:3.4,armor:14:armor:0.075:1.05
-R	druid/feral	55	14122	12720	gear	2.45	int:2:int:0.33:0.66,spi:2:spi:0.37:0.74,armor:14:armor:0.075:1.05
-R	druid/feral	55	14122	12729	gear	2.04	int:3:int:0.33:0.99,armor:14:armor:0.075:1.05
-R	druid/feral	55	14122	12730	gear	2.16	spi:3:spi:0.37:1.11,armor:14:armor:0.075:1.05
+R	druid/feral	55	14122	12718	gear	5.13	int:2:int:0.34:0.68,sta:2:sta:1.7:3.4,armor:14:armor:0.075:1.05
+R	druid/feral	55	14122	12719	gear	5.17	spi:2:spi:0.36:0.72,sta:2:sta:1.7:3.4,armor:14:armor:0.075:1.05
+R	druid/feral	55	14122	12720	gear	2.45	int:2:int:0.34:0.68,spi:2:spi:0.36:0.72,armor:14:armor:0.075:1.05
+R	druid/feral	55	14122	12729	gear	2.0700000000000003	int:3:int:0.34:1.02,armor:14:armor:0.075:1.05
+R	druid/feral	55	14122	12730	gear	2.13	spi:3:spi:0.36:1.08,armor:14:armor:0.075:1.05
 R	druid/feral	55	14122	12731	gear	6.1499999999999995	sta:3:sta:1.7:5.1,armor:14:armor:0.075:1.05
 R	druid/feral	55	14122	12734	gear	1.05	armor:14:armor:0.075:1.05
 R	druid/feral	55	14122	12735	gear	1.05	armor:14:armor:0.075:1.05
@@ -7861,7 +7861,7 @@ R	druid/feral	55	14122	12741	gear	4.45	sta:2:sta:1.7:3.4,armor:14:armor:0.075:1.
 R	druid/feral	55	14122	12742	gear	4.45	sta:2:sta:1.7:3.4,armor:14:armor:0.075:1.05
 R	druid/feral	55	14122	12743	gear	4.45	sta:2:sta:1.7:3.4,armor:14:armor:0.075:1.05
 R	druid/feral	55	14122	12744	gear	4.45	sta:2:sta:1.7:3.4,armor:14:armor:0.075:1.05
-R	druid/feral	55	14122	12745	gear	3.41	int:2:int:0.33:0.66,sta:1:sta:1.7:1.7,armor:14:armor:0.075:1.05
+R	druid/feral	55	14122	12745	gear	3.4299999999999997	int:2:int:0.34:0.68,sta:1:sta:1.7:1.7,armor:14:armor:0.075:1.05
 R	druid/feral	55	14122	12756	gear	1.05	armor:14:armor:0.075:1.05
 R	druid/feral	55	14122	12757	gear	1.05	armor:14:armor:0.075:1.05
 R	druid/feral	55	14122	12758	gear	1.05	armor:14:armor:0.075:1.05
@@ -7869,41 +7869,41 @@ R	druid/feral	55	14122	12759	gear	1.05	armor:14:armor:0.075:1.05
 R	druid/feral	55	14122	12761	gear	1.05	armor:14:armor:0.075:1.05
 R	druid/feral	55	14340	0	gear	38.9	sta:19:sta:1.7:32.3,armor:88:armor:0.075:6.6
 R	druid/feral	55	14673	0	gear	25.750000000000004	str:3:str:1:3,agi:9:agi:1.3:11.7,sta:5:sta:1.7:8.5,armor:34:armor:0.075:2.55
-R	druid/feral	55	15945	0	oh	4.14	sta:2:sta:1.7:3.4,spi:2:spi:0.37:0.74
+R	druid/feral	55	15945	0	oh	4.12	sta:2:sta:1.7:3.4,spi:2:spi:0.36:0.72
 R	druid/feral	55	16711	0	gear	52.005	agi:21:agi:1.3:27.3,sta:9:sta:1.7:15.3,hit:0.3:hit:2.6:0.78,armor:115:armor:0.075:8.625
 R	druid/feral	55	18726	0	gear	30.975	sta:15:sta:1.7:25.5,armor:73:armor:0.075:5.475
 R	druid/feral	55	22397	0	ranged	0.0	
 R	druid/feral	55	252507	0	gear	22.7	sta:10:sta:1.7:17,armor:76:armor:0.075:5.7
-R	druid/feral	55	254111	0	gear	29.119999999999997	int:9:int:0.33:2.97,sta:13:sta:1.7:22.1,armor:54:armor:0.075:4.05
+R	druid/feral	55	254111	0	gear	29.209999999999997	int:9:int:0.34:3.06,sta:13:sta:1.7:22.1,armor:54:armor:0.075:4.05
 R	druid/feral	55	270033	0	gear	11.125	agi:4:agi:1.3:5.2,str:3:str:1:3,armor:39:armor:0.075:2.925
-R	druid/feral	55	273892	0	gear	58.34	sta:20:sta:1.7:34,int:19:int:0.33:6.27,spi:16:spi:0.37:5.92,armor:162:armor:0.075:12.15
-R	druid/feral	55	280082	0	mh	168.87	int:15:int:0.33:4.95,hit:1.5:hit:2.6:3.9,spi:21:spi:0.37:7.77,dps:36.25:dps:4.2:152.25
+R	druid/feral	55	273892	0	gear	58.37	sta:20:sta:1.7:34,int:19:int:0.34:6.46,spi:16:spi:0.36:5.76,armor:162:armor:0.075:12.15
+R	druid/feral	55	280082	0	mh	168.81	int:15:int:0.34:5.1,hit:1.5:hit:2.6:3.9,spi:21:spi:0.36:7.56,dps:36.25:dps:4.2:152.25
 R	druid/feral	60	1315	0	gear	24.35	sta:10:sta:1.4:14,spi:15:spi:0.69:10.35
-R	druid/feral	60	1808	0	gear	6.142	armor:74:armor:0.083:6.142
+R	druid/feral	60	1808	0	gear	6.0680000000000005	armor:74:armor:0.082:6.068
 R	druid/feral	60	1990	0	mh	96.369	dps:24.71:dps:3.9:96.369
-R	druid/feral	60	1990	12718	mh	115.449	int:9:int:0.72:6.48,sta:9:sta:1.4:12.6,dps:24.71:dps:3.9:96.369
-R	druid/feral	60	1990	12905	mh	89.40199999999999	int:11:int:0.72:7.92,sta:7:sta:1.4:9.8,dps:18.38:dps:3.9:71.682
+R	druid/feral	60	1990	12718	mh	115.359	int:9:int:0.71:6.39,sta:9:sta:1.4:12.6,dps:24.71:dps:3.9:96.369
+R	druid/feral	60	1990	12905	mh	89.29199999999999	int:11:int:0.71:7.81,sta:7:sta:1.4:9.8,dps:18.38:dps:3.9:71.682
 R	druid/feral	60	2140	0	mh	23.166	dps:5.94:dps:3.9:23.166
-R	druid/feral	60	2140	12718	mh	25.286	int:1:int:0.72:0.72,sta:1:sta:1.4:1.4,dps:5.94:dps:3.9:23.166
-R	druid/feral	60	2140	12917	mh	15.345	int:1:int:0.72:0.72,dps:3.75:dps:3.9:14.625
+R	druid/feral	60	2140	12718	mh	25.276	int:1:int:0.71:0.71,sta:1:sta:1.4:1.4,dps:5.94:dps:3.9:23.166
+R	druid/feral	60	2140	12917	mh	15.335	int:1:int:0.71:0.71,dps:3.75:dps:3.9:14.625
 R	druid/feral	60	2225	0	mh	19.5	dps:5:dps:3.9:19.5
-R	druid/feral	60	2614	0	gear	2.407	armor:29:armor:0.083:2.407
-R	druid/feral	60	3158	0	gear	2.158	armor:26:armor:0.083:2.158
+R	druid/feral	60	2614	0	gear	2.378	armor:29:armor:0.082:2.378
+R	druid/feral	60	3158	0	gear	2.132	armor:26:armor:0.082:2.132
 R	druid/feral	60	3570	0	mh	33.66799999999999	str:2:str:1:2,dps:8.12:dps:3.9:31.668
 R	druid/feral	60	4023	0	mh	59.903999999999996	dps:15.36:dps:3.9:59.904
 R	druid/feral	60	4570	0	mh	39.0	dps:10:dps:3.9:39
-R	druid/feral	60	4570	12718	mh	45.36	int:3:int:0.72:2.16,sta:3:sta:1.4:4.2,dps:10:dps:3.9:39
+R	druid/feral	60	4570	12718	mh	45.33	int:3:int:0.71:2.13,sta:3:sta:1.4:4.2,dps:10:dps:3.9:39
 R	druid/feral	60	4570	12719	mh	45.269999999999996	spi:3:spi:0.69:2.07,sta:3:sta:1.4:4.2,dps:10:dps:3.9:39
-R	druid/feral	60	4570	12720	mh	43.230000000000004	int:3:int:0.72:2.16,spi:3:spi:0.69:2.07,dps:10:dps:3.9:39
+R	druid/feral	60	4570	12720	mh	43.2	int:3:int:0.71:2.13,spi:3:spi:0.69:2.07,dps:10:dps:3.9:39
 R	druid/feral	60	4570	12721	mh	47.4	agi:3:agi:1.4:4.2,sta:3:sta:1.4:4.2,dps:10:dps:3.9:39
 R	druid/feral	60	4570	12722	mh	46.2	sta:3:sta:1.4:4.2,str:3:str:1:3,dps:10:dps:3.9:39
-R	druid/feral	60	4570	12723	mh	44.16	int:3:int:0.72:2.16,str:3:str:1:3,dps:10:dps:3.9:39
-R	druid/feral	60	4570	12724	mh	45.36	agi:3:agi:1.4:4.2,int:3:int:0.72:2.16,dps:10:dps:3.9:39
+R	druid/feral	60	4570	12723	mh	44.13	int:3:int:0.71:2.13,str:3:str:1:3,dps:10:dps:3.9:39
+R	druid/feral	60	4570	12724	mh	45.33	agi:3:agi:1.4:4.2,int:3:int:0.71:2.13,dps:10:dps:3.9:39
 R	druid/feral	60	4570	12725	mh	44.07	spi:3:spi:0.69:2.07,str:3:str:1:3,dps:10:dps:3.9:39
 R	druid/feral	60	4570	12726	mh	45.269999999999996	agi:3:agi:1.4:4.2,spi:3:spi:0.69:2.07,dps:10:dps:3.9:39
 R	druid/feral	60	4570	12727	mh	46.2	agi:3:agi:1.4:4.2,str:3:str:1:3,dps:10:dps:3.9:39
 R	druid/feral	60	4570	12728	mh	44.6	agi:4:agi:1.4:5.6,dps:10:dps:3.9:39
-R	druid/feral	60	4570	12729	mh	41.88	int:4:int:0.72:2.88,dps:10:dps:3.9:39
+R	druid/feral	60	4570	12729	mh	41.84	int:4:int:0.71:2.84,dps:10:dps:3.9:39
 R	druid/feral	60	4570	12730	mh	41.76	spi:4:spi:0.69:2.76,dps:10:dps:3.9:39
 R	druid/feral	60	4570	12731	mh	44.6	sta:4:sta:1.4:5.6,dps:10:dps:3.9:39
 R	druid/feral	60	4570	12732	mh	43.0	str:4:str:1:4,dps:10:dps:3.9:39
@@ -7915,115 +7915,115 @@ R	druid/feral	60	4570	12742	mh	43.2	sta:3:sta:1.4:4.2,dps:10:dps:3.9:39
 R	druid/feral	60	4570	12743	mh	43.2	sta:3:sta:1.4:4.2,dps:10:dps:3.9:39
 R	druid/feral	60	4570	12744	mh	43.2	sta:3:sta:1.4:4.2,dps:10:dps:3.9:39
 R	druid/feral	60	4570	12759	mh	39.0	dps:10:dps:3.9:39
-R	druid/feral	60	4570	12918	mh	32.442	int:4:int:0.72:2.88,dps:7.58:dps:3.9:29.562
-R	druid/feral	60	4570	12919	mh	32.442	int:4:int:0.72:2.88,dps:7.58:dps:3.9:29.562
+R	druid/feral	60	4570	12918	mh	32.402	int:4:int:0.71:2.84,dps:7.58:dps:3.9:29.562
+R	druid/feral	60	4570	12919	mh	32.402	int:4:int:0.71:2.84,dps:7.58:dps:3.9:29.562
 R	druid/feral	60	5079	0	gear	0.0	
-R	druid/feral	60	6540	0	gear	2.3240000000000003	armor:28:armor:0.083:2.324
-R	druid/feral	60	6540	12718	gear	8.684	int:3:int:0.72:2.16,sta:3:sta:1.4:4.2,armor:28:armor:0.083:2.324
-R	druid/feral	60	6540	12719	gear	8.594	spi:3:spi:0.69:2.07,sta:3:sta:1.4:4.2,armor:28:armor:0.083:2.324
-R	druid/feral	60	6540	12720	gear	6.554	int:3:int:0.72:2.16,spi:3:spi:0.69:2.07,armor:28:armor:0.083:2.324
-R	druid/feral	60	6540	12729	gear	5.9239999999999995	int:5:int:0.72:3.6,armor:28:armor:0.083:2.324
-R	druid/feral	60	6540	12730	gear	5.774	spi:5:spi:0.69:3.45,armor:28:armor:0.083:2.324
-R	druid/feral	60	6540	12731	gear	9.324	sta:5:sta:1.4:7,armor:28:armor:0.083:2.324
-R	druid/feral	60	6540	12734	gear	2.3240000000000003	armor:28:armor:0.083:2.324
-R	druid/feral	60	6540	12735	gear	2.3240000000000003	armor:28:armor:0.083:2.324
-R	druid/feral	60	6540	12740	gear	6.523999999999999	sta:3:sta:1.4:4.2,armor:28:armor:0.083:2.324
-R	druid/feral	60	6540	12741	gear	6.523999999999999	sta:3:sta:1.4:4.2,armor:28:armor:0.083:2.324
-R	druid/feral	60	6540	12742	gear	6.523999999999999	sta:3:sta:1.4:4.2,armor:28:armor:0.083:2.324
-R	druid/feral	60	6540	12743	gear	6.523999999999999	sta:3:sta:1.4:4.2,armor:28:armor:0.083:2.324
-R	druid/feral	60	6540	12744	gear	6.523999999999999	sta:3:sta:1.4:4.2,armor:28:armor:0.083:2.324
-R	druid/feral	60	6540	12745	gear	8.004	int:4:int:0.72:2.88,sta:2:sta:1.4:2.8,armor:28:armor:0.083:2.324
-R	druid/feral	60	6540	12756	gear	2.3240000000000003	armor:28:armor:0.083:2.324
-R	druid/feral	60	6540	12757	gear	2.3240000000000003	armor:28:armor:0.083:2.324
-R	druid/feral	60	6540	12758	gear	2.3240000000000003	armor:28:armor:0.083:2.324
-R	druid/feral	60	6540	12759	gear	2.3240000000000003	armor:28:armor:0.083:2.324
-R	druid/feral	60	6540	12761	gear	2.3240000000000003	armor:28:armor:0.083:2.324
-R	druid/feral	60	6557	0	gear	4.067	armor:49:armor:0.083:4.067
-R	druid/feral	60	6557	12718	gear	8.307	int:2:int:0.72:1.44,sta:2:sta:1.4:2.8,armor:49:armor:0.083:4.067
-R	druid/feral	60	6557	12719	gear	8.247	spi:2:spi:0.69:1.38,sta:2:sta:1.4:2.8,armor:49:armor:0.083:4.067
-R	druid/feral	60	6557	12720	gear	6.8870000000000005	int:2:int:0.72:1.44,spi:2:spi:0.69:1.38,armor:49:armor:0.083:4.067
-R	druid/feral	60	6557	12721	gear	9.667	agi:2:agi:1.4:2.8,sta:2:sta:1.4:2.8,armor:49:armor:0.083:4.067
-R	druid/feral	60	6557	12722	gear	8.867	sta:2:sta:1.4:2.8,str:2:str:1:2,armor:49:armor:0.083:4.067
-R	druid/feral	60	6557	12723	gear	7.507	int:2:int:0.72:1.44,str:2:str:1:2,armor:49:armor:0.083:4.067
-R	druid/feral	60	6557	12724	gear	8.307	agi:2:agi:1.4:2.8,int:2:int:0.72:1.44,armor:49:armor:0.083:4.067
-R	druid/feral	60	6557	12725	gear	7.447	spi:2:spi:0.69:1.38,str:2:str:1:2,armor:49:armor:0.083:4.067
-R	druid/feral	60	6557	12726	gear	8.247	agi:2:agi:1.4:2.8,spi:2:spi:0.69:1.38,armor:49:armor:0.083:4.067
-R	druid/feral	60	6557	12727	gear	8.867	agi:2:agi:1.4:2.8,str:2:str:1:2,armor:49:armor:0.083:4.067
-R	druid/feral	60	6557	12728	gear	8.267	agi:3:agi:1.4:4.2,armor:49:armor:0.083:4.067
-R	druid/feral	60	6557	12729	gear	6.227	int:3:int:0.72:2.16,armor:49:armor:0.083:4.067
-R	druid/feral	60	6557	12730	gear	6.1370000000000005	spi:3:spi:0.69:2.07,armor:49:armor:0.083:4.067
-R	druid/feral	60	6557	12731	gear	8.267	sta:3:sta:1.4:4.2,armor:49:armor:0.083:4.067
-R	druid/feral	60	6557	12732	gear	7.067	str:3:str:1:3,armor:49:armor:0.083:4.067
-R	druid/feral	60	6557	12733	gear	6.827	ap:6:ap:0.46:2.76,armor:49:armor:0.083:4.067
-R	druid/feral	60	6557	12734	gear	4.067	armor:49:armor:0.083:4.067
-R	druid/feral	60	6557	12735	gear	4.067	armor:49:armor:0.083:4.067
-R	druid/feral	60	6557	12736	gear	4.067	armor:49:armor:0.083:4.067
-R	druid/feral	60	6557	12740	gear	6.867	sta:2:sta:1.4:2.8,armor:49:armor:0.083:4.067
-R	druid/feral	60	6557	12741	gear	6.867	sta:2:sta:1.4:2.8,armor:49:armor:0.083:4.067
-R	druid/feral	60	6557	12742	gear	6.867	sta:2:sta:1.4:2.8,armor:49:armor:0.083:4.067
-R	druid/feral	60	6557	12743	gear	6.867	sta:2:sta:1.4:2.8,armor:49:armor:0.083:4.067
-R	druid/feral	60	6557	12744	gear	6.867	sta:2:sta:1.4:2.8,armor:49:armor:0.083:4.067
-R	druid/feral	60	6557	12756	gear	4.067	armor:49:armor:0.083:4.067
-R	druid/feral	60	6557	12760	gear	4.067	armor:49:armor:0.083:4.067
-R	druid/feral	60	7047	0	gear	5.608	spi:5:spi:0.69:3.45,armor:26:armor:0.083:2.158
-R	druid/feral	60	8192	0	gear	29.538	agi:11:agi:1.4:15.4,sta:5:sta:1.4:7,armor:86:armor:0.083:7.138
-R	druid/feral	60	9834	0	gear	6.059	armor:73:armor:0.083:6.059
-R	druid/feral	60	9834	12718	gear	18.779	int:6:int:0.72:4.32,sta:6:sta:1.4:8.4,armor:73:armor:0.083:6.059
-R	druid/feral	60	9834	12719	gear	18.599	spi:6:spi:0.69:4.14,sta:6:sta:1.4:8.4,armor:73:armor:0.083:6.059
-R	druid/feral	60	9834	12720	gear	14.519000000000002	int:6:int:0.72:4.32,spi:6:spi:0.69:4.14,armor:73:armor:0.083:6.059
-R	druid/feral	60	9834	12721	gear	22.858999999999998	agi:6:agi:1.4:8.4,sta:6:sta:1.4:8.4,armor:73:armor:0.083:6.059
-R	druid/feral	60	9834	12722	gear	20.459	sta:6:sta:1.4:8.4,str:6:str:1:6,armor:73:armor:0.083:6.059
-R	druid/feral	60	9834	12723	gear	16.379	int:6:int:0.72:4.32,str:6:str:1:6,armor:73:armor:0.083:6.059
-R	druid/feral	60	9834	12724	gear	18.779	agi:6:agi:1.4:8.4,int:6:int:0.72:4.32,armor:73:armor:0.083:6.059
-R	druid/feral	60	9834	12725	gear	16.199	spi:6:spi:0.69:4.14,str:6:str:1:6,armor:73:armor:0.083:6.059
-R	druid/feral	60	9834	12726	gear	18.599	agi:6:agi:1.4:8.4,spi:6:spi:0.69:4.14,armor:73:armor:0.083:6.059
-R	druid/feral	60	9834	12727	gear	20.459	agi:6:agi:1.4:8.4,str:6:str:1:6,armor:73:armor:0.083:6.059
-R	druid/feral	60	9834	12728	gear	18.659	agi:9:agi:1.4:12.6,armor:73:armor:0.083:6.059
-R	druid/feral	60	9834	12729	gear	12.539	int:9:int:0.72:6.48,armor:73:armor:0.083:6.059
-R	druid/feral	60	9834	12730	gear	12.268999999999998	spi:9:spi:0.69:6.21,armor:73:armor:0.083:6.059
-R	druid/feral	60	9834	12731	gear	18.659	sta:9:sta:1.4:12.6,armor:73:armor:0.083:6.059
-R	druid/feral	60	9834	12732	gear	15.059000000000001	str:9:str:1:9,armor:73:armor:0.083:6.059
-R	druid/feral	60	9834	12733	gear	14.339000000000002	ap:18:ap:0.46:8.28,armor:73:armor:0.083:6.059
-R	druid/feral	60	9834	12734	gear	6.059	armor:73:armor:0.083:6.059
-R	druid/feral	60	9834	12735	gear	6.059	armor:73:armor:0.083:6.059
-R	druid/feral	60	9834	12736	gear	6.059	armor:73:armor:0.083:6.059
-R	druid/feral	60	9834	12740	gear	14.459	sta:6:sta:1.4:8.4,armor:73:armor:0.083:6.059
-R	druid/feral	60	9834	12741	gear	14.459	sta:6:sta:1.4:8.4,armor:73:armor:0.083:6.059
-R	druid/feral	60	9834	12742	gear	14.459	sta:6:sta:1.4:8.4,armor:73:armor:0.083:6.059
-R	druid/feral	60	9834	12743	gear	14.459	sta:6:sta:1.4:8.4,armor:73:armor:0.083:6.059
-R	druid/feral	60	9834	12744	gear	14.459	sta:6:sta:1.4:8.4,armor:73:armor:0.083:6.059
-R	druid/feral	60	9834	12745	gear	16.699	int:7:int:0.72:5.04,sta:4:sta:1.4:5.6,armor:73:armor:0.083:6.059
-R	druid/feral	60	9834	12746	gear	13.859	int:7:int:0.72:5.04,spi:4:spi:0.69:2.76,armor:73:armor:0.083:6.059
-R	druid/feral	60	9834	12747	gear	18.619	spi:4:spi:0.69:2.76,sta:7:sta:1.4:9.8,armor:73:armor:0.083:6.059
-R	druid/feral	60	9834	12748	gear	18.739	int:4:int:0.72:2.88,sta:7:sta:1.4:9.8,armor:73:armor:0.083:6.059
-R	druid/feral	60	9834	12749	gear	13.859	int:7:int:0.72:5.04,spi:4:spi:0.69:2.76,armor:73:armor:0.083:6.059
-R	druid/feral	60	9834	12750	gear	18.619	spi:4:spi:0.69:2.76,sta:7:sta:1.4:9.8,armor:73:armor:0.083:6.059
-R	druid/feral	60	9834	12751	gear	23.279	agi:3:agi:1.4:4.2,ap:7:ap:0.46:3.22,sta:7:sta:1.4:9.8,armor:73:armor:0.083:6.059
-R	druid/feral	60	9834	12752	gear	24.459	agi:4:agi:1.4:5.6,sta:7:sta:1.4:9.8,str:3:str:1:3,armor:73:armor:0.083:6.059
-R	druid/feral	60	9834	12753	gear	19.858999999999998	sta:7:sta:1.4:9.8,str:4:str:1:4,armor:73:armor:0.083:6.059
-R	druid/feral	60	9834	12755	gear	19.858999999999998	sta:7:sta:1.4:9.8,str:4:str:1:4,armor:73:armor:0.083:6.059
-R	druid/feral	60	9834	12756	gear	6.059	armor:73:armor:0.083:6.059
-R	druid/feral	60	9834	12760	gear	6.059	armor:73:armor:0.083:6.059
-R	druid/feral	60	11187	0	gear	0.332	armor:4:armor:0.083:0.332
+R	druid/feral	60	6540	0	gear	2.2960000000000003	armor:28:armor:0.082:2.296
+R	druid/feral	60	6540	12718	gear	8.626	int:3:int:0.71:2.13,sta:3:sta:1.4:4.2,armor:28:armor:0.082:2.296
+R	druid/feral	60	6540	12719	gear	8.565999999999999	spi:3:spi:0.69:2.07,sta:3:sta:1.4:4.2,armor:28:armor:0.082:2.296
+R	druid/feral	60	6540	12720	gear	6.4959999999999996	int:3:int:0.71:2.13,spi:3:spi:0.69:2.07,armor:28:armor:0.082:2.296
+R	druid/feral	60	6540	12729	gear	5.846	int:5:int:0.71:3.55,armor:28:armor:0.082:2.296
+R	druid/feral	60	6540	12730	gear	5.746	spi:5:spi:0.69:3.45,armor:28:armor:0.082:2.296
+R	druid/feral	60	6540	12731	gear	9.296	sta:5:sta:1.4:7,armor:28:armor:0.082:2.296
+R	druid/feral	60	6540	12734	gear	2.2960000000000003	armor:28:armor:0.082:2.296
+R	druid/feral	60	6540	12735	gear	2.2960000000000003	armor:28:armor:0.082:2.296
+R	druid/feral	60	6540	12740	gear	6.4959999999999996	sta:3:sta:1.4:4.2,armor:28:armor:0.082:2.296
+R	druid/feral	60	6540	12741	gear	6.4959999999999996	sta:3:sta:1.4:4.2,armor:28:armor:0.082:2.296
+R	druid/feral	60	6540	12742	gear	6.4959999999999996	sta:3:sta:1.4:4.2,armor:28:armor:0.082:2.296
+R	druid/feral	60	6540	12743	gear	6.4959999999999996	sta:3:sta:1.4:4.2,armor:28:armor:0.082:2.296
+R	druid/feral	60	6540	12744	gear	6.4959999999999996	sta:3:sta:1.4:4.2,armor:28:armor:0.082:2.296
+R	druid/feral	60	6540	12745	gear	7.936	int:4:int:0.71:2.84,sta:2:sta:1.4:2.8,armor:28:armor:0.082:2.296
+R	druid/feral	60	6540	12756	gear	2.2960000000000003	armor:28:armor:0.082:2.296
+R	druid/feral	60	6540	12757	gear	2.2960000000000003	armor:28:armor:0.082:2.296
+R	druid/feral	60	6540	12758	gear	2.2960000000000003	armor:28:armor:0.082:2.296
+R	druid/feral	60	6540	12759	gear	2.2960000000000003	armor:28:armor:0.082:2.296
+R	druid/feral	60	6540	12761	gear	2.2960000000000003	armor:28:armor:0.082:2.296
+R	druid/feral	60	6557	0	gear	4.018	armor:49:armor:0.082:4.018
+R	druid/feral	60	6557	12718	gear	8.238	int:2:int:0.71:1.42,sta:2:sta:1.4:2.8,armor:49:armor:0.082:4.018
+R	druid/feral	60	6557	12719	gear	8.198	spi:2:spi:0.69:1.38,sta:2:sta:1.4:2.8,armor:49:armor:0.082:4.018
+R	druid/feral	60	6557	12720	gear	6.818	int:2:int:0.71:1.42,spi:2:spi:0.69:1.38,armor:49:armor:0.082:4.018
+R	druid/feral	60	6557	12721	gear	9.617999999999999	agi:2:agi:1.4:2.8,sta:2:sta:1.4:2.8,armor:49:armor:0.082:4.018
+R	druid/feral	60	6557	12722	gear	8.818	sta:2:sta:1.4:2.8,str:2:str:1:2,armor:49:armor:0.082:4.018
+R	druid/feral	60	6557	12723	gear	7.438	int:2:int:0.71:1.42,str:2:str:1:2,armor:49:armor:0.082:4.018
+R	druid/feral	60	6557	12724	gear	8.238	agi:2:agi:1.4:2.8,int:2:int:0.71:1.42,armor:49:armor:0.082:4.018
+R	druid/feral	60	6557	12725	gear	7.398	spi:2:spi:0.69:1.38,str:2:str:1:2,armor:49:armor:0.082:4.018
+R	druid/feral	60	6557	12726	gear	8.198	agi:2:agi:1.4:2.8,spi:2:spi:0.69:1.38,armor:49:armor:0.082:4.018
+R	druid/feral	60	6557	12727	gear	8.818	agi:2:agi:1.4:2.8,str:2:str:1:2,armor:49:armor:0.082:4.018
+R	druid/feral	60	6557	12728	gear	8.218	agi:3:agi:1.4:4.2,armor:49:armor:0.082:4.018
+R	druid/feral	60	6557	12729	gear	6.148	int:3:int:0.71:2.13,armor:49:armor:0.082:4.018
+R	druid/feral	60	6557	12730	gear	6.087999999999999	spi:3:spi:0.69:2.07,armor:49:armor:0.082:4.018
+R	druid/feral	60	6557	12731	gear	8.218	sta:3:sta:1.4:4.2,armor:49:armor:0.082:4.018
+R	druid/feral	60	6557	12732	gear	7.018	str:3:str:1:3,armor:49:armor:0.082:4.018
+R	druid/feral	60	6557	12733	gear	6.7780000000000005	ap:6:ap:0.46:2.76,armor:49:armor:0.082:4.018
+R	druid/feral	60	6557	12734	gear	4.018	armor:49:armor:0.082:4.018
+R	druid/feral	60	6557	12735	gear	4.018	armor:49:armor:0.082:4.018
+R	druid/feral	60	6557	12736	gear	4.018	armor:49:armor:0.082:4.018
+R	druid/feral	60	6557	12740	gear	6.818	sta:2:sta:1.4:2.8,armor:49:armor:0.082:4.018
+R	druid/feral	60	6557	12741	gear	6.818	sta:2:sta:1.4:2.8,armor:49:armor:0.082:4.018
+R	druid/feral	60	6557	12742	gear	6.818	sta:2:sta:1.4:2.8,armor:49:armor:0.082:4.018
+R	druid/feral	60	6557	12743	gear	6.818	sta:2:sta:1.4:2.8,armor:49:armor:0.082:4.018
+R	druid/feral	60	6557	12744	gear	6.818	sta:2:sta:1.4:2.8,armor:49:armor:0.082:4.018
+R	druid/feral	60	6557	12756	gear	4.018	armor:49:armor:0.082:4.018
+R	druid/feral	60	6557	12760	gear	4.018	armor:49:armor:0.082:4.018
+R	druid/feral	60	7047	0	gear	5.582	spi:5:spi:0.69:3.45,armor:26:armor:0.082:2.132
+R	druid/feral	60	8192	0	gear	29.451999999999998	agi:11:agi:1.4:15.4,sta:5:sta:1.4:7,armor:86:armor:0.082:7.052
+R	druid/feral	60	9834	0	gear	5.986000000000001	armor:73:armor:0.082:5.986
+R	druid/feral	60	9834	12718	gear	18.646	int:6:int:0.71:4.26,sta:6:sta:1.4:8.4,armor:73:armor:0.082:5.986
+R	druid/feral	60	9834	12719	gear	18.526	spi:6:spi:0.69:4.14,sta:6:sta:1.4:8.4,armor:73:armor:0.082:5.986
+R	druid/feral	60	9834	12720	gear	14.386	int:6:int:0.71:4.26,spi:6:spi:0.69:4.14,armor:73:armor:0.082:5.986
+R	druid/feral	60	9834	12721	gear	22.785999999999998	agi:6:agi:1.4:8.4,sta:6:sta:1.4:8.4,armor:73:armor:0.082:5.986
+R	druid/feral	60	9834	12722	gear	20.386	sta:6:sta:1.4:8.4,str:6:str:1:6,armor:73:armor:0.082:5.986
+R	druid/feral	60	9834	12723	gear	16.246000000000002	int:6:int:0.71:4.26,str:6:str:1:6,armor:73:armor:0.082:5.986
+R	druid/feral	60	9834	12724	gear	18.646	agi:6:agi:1.4:8.4,int:6:int:0.71:4.26,armor:73:armor:0.082:5.986
+R	druid/feral	60	9834	12725	gear	16.126	spi:6:spi:0.69:4.14,str:6:str:1:6,armor:73:armor:0.082:5.986
+R	druid/feral	60	9834	12726	gear	18.526	agi:6:agi:1.4:8.4,spi:6:spi:0.69:4.14,armor:73:armor:0.082:5.986
+R	druid/feral	60	9834	12727	gear	20.386	agi:6:agi:1.4:8.4,str:6:str:1:6,armor:73:armor:0.082:5.986
+R	druid/feral	60	9834	12728	gear	18.586	agi:9:agi:1.4:12.6,armor:73:armor:0.082:5.986
+R	druid/feral	60	9834	12729	gear	12.376000000000001	int:9:int:0.71:6.39,armor:73:armor:0.082:5.986
+R	druid/feral	60	9834	12730	gear	12.196	spi:9:spi:0.69:6.21,armor:73:armor:0.082:5.986
+R	druid/feral	60	9834	12731	gear	18.586	sta:9:sta:1.4:12.6,armor:73:armor:0.082:5.986
+R	druid/feral	60	9834	12732	gear	14.986	str:9:str:1:9,armor:73:armor:0.082:5.986
+R	druid/feral	60	9834	12733	gear	14.266000000000002	ap:18:ap:0.46:8.28,armor:73:armor:0.082:5.986
+R	druid/feral	60	9834	12734	gear	5.986000000000001	armor:73:armor:0.082:5.986
+R	druid/feral	60	9834	12735	gear	5.986000000000001	armor:73:armor:0.082:5.986
+R	druid/feral	60	9834	12736	gear	5.986000000000001	armor:73:armor:0.082:5.986
+R	druid/feral	60	9834	12740	gear	14.386	sta:6:sta:1.4:8.4,armor:73:armor:0.082:5.986
+R	druid/feral	60	9834	12741	gear	14.386	sta:6:sta:1.4:8.4,armor:73:armor:0.082:5.986
+R	druid/feral	60	9834	12742	gear	14.386	sta:6:sta:1.4:8.4,armor:73:armor:0.082:5.986
+R	druid/feral	60	9834	12743	gear	14.386	sta:6:sta:1.4:8.4,armor:73:armor:0.082:5.986
+R	druid/feral	60	9834	12744	gear	14.386	sta:6:sta:1.4:8.4,armor:73:armor:0.082:5.986
+R	druid/feral	60	9834	12745	gear	16.556	int:7:int:0.71:4.97,sta:4:sta:1.4:5.6,armor:73:armor:0.082:5.986
+R	druid/feral	60	9834	12746	gear	13.716000000000001	int:7:int:0.71:4.97,spi:4:spi:0.69:2.76,armor:73:armor:0.082:5.986
+R	druid/feral	60	9834	12747	gear	18.546	spi:4:spi:0.69:2.76,sta:7:sta:1.4:9.8,armor:73:armor:0.082:5.986
+R	druid/feral	60	9834	12748	gear	18.625999999999998	int:4:int:0.71:2.84,sta:7:sta:1.4:9.8,armor:73:armor:0.082:5.986
+R	druid/feral	60	9834	12749	gear	13.716000000000001	int:7:int:0.71:4.97,spi:4:spi:0.69:2.76,armor:73:armor:0.082:5.986
+R	druid/feral	60	9834	12750	gear	18.546	spi:4:spi:0.69:2.76,sta:7:sta:1.4:9.8,armor:73:armor:0.082:5.986
+R	druid/feral	60	9834	12751	gear	23.206	agi:3:agi:1.4:4.2,ap:7:ap:0.46:3.22,sta:7:sta:1.4:9.8,armor:73:armor:0.082:5.986
+R	druid/feral	60	9834	12752	gear	24.386	agi:4:agi:1.4:5.6,sta:7:sta:1.4:9.8,str:3:str:1:3,armor:73:armor:0.082:5.986
+R	druid/feral	60	9834	12753	gear	19.786	sta:7:sta:1.4:9.8,str:4:str:1:4,armor:73:armor:0.082:5.986
+R	druid/feral	60	9834	12755	gear	19.786	sta:7:sta:1.4:9.8,str:4:str:1:4,armor:73:armor:0.082:5.986
+R	druid/feral	60	9834	12756	gear	5.986000000000001	armor:73:armor:0.082:5.986
+R	druid/feral	60	9834	12760	gear	5.986000000000001	armor:73:armor:0.082:5.986
+R	druid/feral	60	11187	0	gear	0.328	armor:4:armor:0.082:0.328
 R	druid/feral	60	11994	0	gear	0.0	
-R	druid/feral	60	11994	12718	gear	6.359999999999999	int:3:int:0.72:2.16,sta:3:sta:1.4:4.2
+R	druid/feral	60	11994	12718	gear	6.329999999999999	int:3:int:0.71:2.13,sta:3:sta:1.4:4.2
 R	druid/feral	60	11994	12719	gear	6.27	spi:3:spi:0.69:2.07,sta:3:sta:1.4:4.2
-R	druid/feral	60	11994	12720	gear	4.23	int:3:int:0.72:2.16,spi:3:spi:0.69:2.07
+R	druid/feral	60	11994	12720	gear	4.199999999999999	int:3:int:0.71:2.13,spi:3:spi:0.69:2.07
 R	druid/feral	60	11994	12721	gear	8.399999999999999	agi:3:agi:1.4:4.2,sta:3:sta:1.4:4.2
 R	druid/feral	60	11994	12722	gear	7.199999999999999	sta:3:sta:1.4:4.2,str:3:str:1:3
-R	druid/feral	60	11994	12723	gear	5.16	int:3:int:0.72:2.16,str:3:str:1:3
-R	druid/feral	60	11994	12724	gear	6.359999999999999	agi:3:agi:1.4:4.2,int:3:int:0.72:2.16
+R	druid/feral	60	11994	12723	gear	5.13	int:3:int:0.71:2.13,str:3:str:1:3
+R	druid/feral	60	11994	12724	gear	6.329999999999999	agi:3:agi:1.4:4.2,int:3:int:0.71:2.13
 R	druid/feral	60	11994	12725	gear	5.07	spi:3:spi:0.69:2.07,str:3:str:1:3
 R	druid/feral	60	11994	12726	gear	6.27	agi:3:agi:1.4:4.2,spi:3:spi:0.69:2.07
 R	druid/feral	60	11994	12727	gear	7.199999999999999	agi:3:agi:1.4:4.2,str:3:str:1:3
 R	druid/feral	60	11994	12728	gear	7.0	agi:5:agi:1.4:7
-R	druid/feral	60	11994	12729	gear	3.5999999999999996	int:5:int:0.72:3.6
+R	druid/feral	60	11994	12729	gear	3.55	int:5:int:0.71:3.55
 R	druid/feral	60	11994	12730	gear	3.4499999999999997	spi:5:spi:0.69:3.45
 R	druid/feral	60	11994	12731	gear	7.0	sta:5:sta:1.4:7
 R	druid/feral	60	11994	12732	gear	5.0	str:5:str:1:5
 R	druid/feral	60	11994	12733	gear	4.6000000000000005	ap:10:ap:0.46:4.6
 R	druid/feral	60	11994	12737	gear	0.0	
-R	druid/feral	60	11994	12738	gear	1.62	mp5:2:mp5:0.81:1.62
+R	druid/feral	60	11994	12738	gear	1.64	mp5:2:mp5:0.82:1.64
 R	druid/feral	60	11994	12739	gear	2.8	agi:2:agi:1.4:2.8
 R	druid/feral	60	11994	12740	gear	4.199999999999999	sta:3:sta:1.4:4.2
 R	druid/feral	60	11994	12741	gear	4.199999999999999	sta:3:sta:1.4:4.2
@@ -8031,37 +8031,37 @@ R	druid/feral	60	11994	12742	gear	4.199999999999999	sta:3:sta:1.4:4.2
 R	druid/feral	60	11994	12743	gear	4.199999999999999	sta:3:sta:1.4:4.2
 R	druid/feral	60	11994	12744	gear	4.199999999999999	sta:3:sta:1.4:4.2
 R	druid/feral	60	13183	0	mh	153.933	dps:39.47:dps:3.9:153.933
-R	druid/feral	60	14122	0	gear	1.1620000000000001	armor:14:armor:0.083:1.162
-R	druid/feral	60	14122	12718	gear	5.402	int:2:int:0.72:1.44,sta:2:sta:1.4:2.8,armor:14:armor:0.083:1.162
-R	druid/feral	60	14122	12719	gear	5.342	spi:2:spi:0.69:1.38,sta:2:sta:1.4:2.8,armor:14:armor:0.083:1.162
-R	druid/feral	60	14122	12720	gear	3.982	int:2:int:0.72:1.44,spi:2:spi:0.69:1.38,armor:14:armor:0.083:1.162
-R	druid/feral	60	14122	12729	gear	3.322	int:3:int:0.72:2.16,armor:14:armor:0.083:1.162
-R	druid/feral	60	14122	12730	gear	3.232	spi:3:spi:0.69:2.07,armor:14:armor:0.083:1.162
-R	druid/feral	60	14122	12731	gear	5.361999999999999	sta:3:sta:1.4:4.2,armor:14:armor:0.083:1.162
-R	druid/feral	60	14122	12734	gear	1.1620000000000001	armor:14:armor:0.083:1.162
-R	druid/feral	60	14122	12735	gear	1.1620000000000001	armor:14:armor:0.083:1.162
-R	druid/feral	60	14122	12740	gear	3.9619999999999997	sta:2:sta:1.4:2.8,armor:14:armor:0.083:1.162
-R	druid/feral	60	14122	12741	gear	3.9619999999999997	sta:2:sta:1.4:2.8,armor:14:armor:0.083:1.162
-R	druid/feral	60	14122	12742	gear	3.9619999999999997	sta:2:sta:1.4:2.8,armor:14:armor:0.083:1.162
-R	druid/feral	60	14122	12743	gear	3.9619999999999997	sta:2:sta:1.4:2.8,armor:14:armor:0.083:1.162
-R	druid/feral	60	14122	12744	gear	3.9619999999999997	sta:2:sta:1.4:2.8,armor:14:armor:0.083:1.162
-R	druid/feral	60	14122	12745	gear	4.002	int:2:int:0.72:1.44,sta:1:sta:1.4:1.4,armor:14:armor:0.083:1.162
-R	druid/feral	60	14122	12756	gear	1.1620000000000001	armor:14:armor:0.083:1.162
-R	druid/feral	60	14122	12757	gear	1.1620000000000001	armor:14:armor:0.083:1.162
-R	druid/feral	60	14122	12758	gear	1.1620000000000001	armor:14:armor:0.083:1.162
-R	druid/feral	60	14122	12759	gear	1.1620000000000001	armor:14:armor:0.083:1.162
-R	druid/feral	60	14122	12761	gear	1.1620000000000001	armor:14:armor:0.083:1.162
-R	druid/feral	60	14340	0	gear	33.903999999999996	sta:19:sta:1.4:26.6,armor:88:armor:0.083:7.304
-R	druid/feral	60	14673	0	gear	25.422	str:3:str:1:3,agi:9:agi:1.4:12.6,sta:5:sta:1.4:7,armor:34:armor:0.083:2.822
+R	druid/feral	60	14122	0	gear	1.1480000000000001	armor:14:armor:0.082:1.148
+R	druid/feral	60	14122	12718	gear	5.368	int:2:int:0.71:1.42,sta:2:sta:1.4:2.8,armor:14:armor:0.082:1.148
+R	druid/feral	60	14122	12719	gear	5.327999999999999	spi:2:spi:0.69:1.38,sta:2:sta:1.4:2.8,armor:14:armor:0.082:1.148
+R	druid/feral	60	14122	12720	gear	3.948	int:2:int:0.71:1.42,spi:2:spi:0.69:1.38,armor:14:armor:0.082:1.148
+R	druid/feral	60	14122	12729	gear	3.278	int:3:int:0.71:2.13,armor:14:armor:0.082:1.148
+R	druid/feral	60	14122	12730	gear	3.218	spi:3:spi:0.69:2.07,armor:14:armor:0.082:1.148
+R	druid/feral	60	14122	12731	gear	5.347999999999999	sta:3:sta:1.4:4.2,armor:14:armor:0.082:1.148
+R	druid/feral	60	14122	12734	gear	1.1480000000000001	armor:14:armor:0.082:1.148
+R	druid/feral	60	14122	12735	gear	1.1480000000000001	armor:14:armor:0.082:1.148
+R	druid/feral	60	14122	12740	gear	3.948	sta:2:sta:1.4:2.8,armor:14:armor:0.082:1.148
+R	druid/feral	60	14122	12741	gear	3.948	sta:2:sta:1.4:2.8,armor:14:armor:0.082:1.148
+R	druid/feral	60	14122	12742	gear	3.948	sta:2:sta:1.4:2.8,armor:14:armor:0.082:1.148
+R	druid/feral	60	14122	12743	gear	3.948	sta:2:sta:1.4:2.8,armor:14:armor:0.082:1.148
+R	druid/feral	60	14122	12744	gear	3.948	sta:2:sta:1.4:2.8,armor:14:armor:0.082:1.148
+R	druid/feral	60	14122	12745	gear	3.968	int:2:int:0.71:1.42,sta:1:sta:1.4:1.4,armor:14:armor:0.082:1.148
+R	druid/feral	60	14122	12756	gear	1.1480000000000001	armor:14:armor:0.082:1.148
+R	druid/feral	60	14122	12757	gear	1.1480000000000001	armor:14:armor:0.082:1.148
+R	druid/feral	60	14122	12758	gear	1.1480000000000001	armor:14:armor:0.082:1.148
+R	druid/feral	60	14122	12759	gear	1.1480000000000001	armor:14:armor:0.082:1.148
+R	druid/feral	60	14122	12761	gear	1.1480000000000001	armor:14:armor:0.082:1.148
+R	druid/feral	60	14340	0	gear	33.815999999999995	sta:19:sta:1.4:26.6,armor:88:armor:0.082:7.216
+R	druid/feral	60	14673	0	gear	25.388	str:3:str:1:3,agi:9:agi:1.4:12.6,sta:5:sta:1.4:7,armor:34:armor:0.082:2.788
 R	druid/feral	60	15945	0	oh	4.18	sta:2:sta:1.4:2.8,spi:2:spi:0.69:1.38
-R	druid/feral	60	16711	0	gear	52.745000000000005	agi:21:agi:1.4:29.4,sta:9:sta:1.4:12.6,hit:0.3:hit:4:1.2,armor:115:armor:0.083:9.545
-R	druid/feral	60	18726	0	gear	27.059	sta:15:sta:1.4:21,armor:73:armor:0.083:6.059
+R	druid/feral	60	16711	0	gear	52.63	agi:21:agi:1.4:29.4,sta:9:sta:1.4:12.6,hit:0.3:hit:4:1.2,armor:115:armor:0.082:9.43
+R	druid/feral	60	18726	0	gear	26.986	sta:15:sta:1.4:21,armor:73:armor:0.082:5.986
 R	druid/feral	60	22397	0	ranged	0.0	
-R	druid/feral	60	252507	0	gear	20.308	sta:10:sta:1.4:14,armor:76:armor:0.083:6.308
-R	druid/feral	60	254111	0	gear	29.162	int:9:int:0.72:6.48,sta:13:sta:1.4:18.2,armor:54:armor:0.083:4.482
-R	druid/feral	60	270033	0	gear	11.837	agi:4:agi:1.4:5.6,str:3:str:1:3,armor:39:armor:0.083:3.237
-R	druid/feral	60	273892	0	gear	66.166	sta:20:sta:1.4:28,int:19:int:0.72:13.68,spi:16:spi:0.69:11.04,armor:162:armor:0.083:13.446
-R	druid/feral	60	280082	0	mh	172.665	int:15:int:0.72:10.8,hit:1.5:hit:4:6,spi:21:spi:0.69:14.49,dps:36.25:dps:3.9:141.375
+R	druid/feral	60	252507	0	gear	20.232	sta:10:sta:1.4:14,armor:76:armor:0.082:6.232
+R	druid/feral	60	254111	0	gear	29.018	int:9:int:0.71:6.39,sta:13:sta:1.4:18.2,armor:54:armor:0.082:4.428
+R	druid/feral	60	270033	0	gear	11.798	agi:4:agi:1.4:5.6,str:3:str:1:3,armor:39:armor:0.082:3.198
+R	druid/feral	60	273892	0	gear	65.814	sta:20:sta:1.4:28,int:19:int:0.71:13.49,spi:16:spi:0.69:11.04,armor:162:armor:0.082:13.284
+R	druid/feral	60	280082	0	mh	172.515	int:15:int:0.71:10.65,hit:1.5:hit:4:6,spi:21:spi:0.69:14.49,dps:36.25:dps:3.9:141.375
 R	shaman/elemental	12	1315	0	gear	10.95	sta:10:sta:0.27:2.7,spi:15:spi:0.55:8.25
 R	shaman/elemental	12	1808	0	gear	0.33299999999999996	armor:74:armor:0.0045:0.333
 R	shaman/elemental	12	1990	0	mh	27.181000000000004	dps:24.71:dps:1.1:27.181
@@ -11950,1950 +11950,1950 @@ R	shaman/restoration	60	272958	0	gear	112.76000000000002	int:27:int:1.8:48.6,sta
 R	shaman/restoration	60	280082	0	mh	412.59999999999997	int:15:int:1.8:27,hit:1.5:hit:4.2:6.3,hit:1.5:spellHit:2.5:3.75,spi:21:spi:1.4:29.4,sp:66:sp:1.4:92.4,dps:36.25:dps:7:253.75
 R	shaman/restoration	60	282560	0	gear	64.44	int:10:int:1.8:18,sta:13:sta:1.4:18.2,sp:8:sp:1.4:11.2,armor:213:armor:0.08:17.04
 R	shaman/restoration	60	286609	0	oh	150.48000000000002	spi:6:spi:1.4:8.4,armor:1776:armor:0.08:142.08
-R	shaman/enhancement	12	1315	0	gear	60.0	sta:10:sta:3:30,spi:15:spi:2:30
-R	shaman/enhancement	12	1808	0	gear	5.327999999999999	armor:74:armor:0.072:5.328
-R	shaman/enhancement	12	1990	0	mh	172.97	dps:24.71:dps:7:172.97
-R	shaman/enhancement	12	1990	12718	mh	207.62	int:9:int:0.85:7.65,sta:9:sta:3:27,dps:24.71:dps:7:172.97
-R	shaman/enhancement	12	1990	12905	mh	198.20999999999998	int:11:int:0.85:9.35,sta:7:sta:3:21,sp:28:sp:1.4:39.2,dps:18.38:dps:7:128.66
-R	shaman/enhancement	12	2140	0	mh	41.580000000000005	dps:5.94:dps:7:41.58
-R	shaman/enhancement	12	2140	12718	mh	45.43000000000001	int:1:int:0.85:0.85,sta:1:sta:3:3,dps:5.94:dps:7:41.58
-R	shaman/enhancement	12	2140	12917	mh	34.1	sp:5:sp:1.4:7,int:1:int:0.85:0.85,dps:3.75:dps:7:26.25
-R	shaman/enhancement	12	2225	0	mh	35.0	dps:5:dps:7:35
-R	shaman/enhancement	12	2614	0	gear	2.0879999999999996	armor:29:armor:0.072:2.088
-R	shaman/enhancement	12	3158	0	gear	1.8719999999999999	armor:26:armor:0.072:1.872
-R	shaman/enhancement	12	3570	0	mh	58.839999999999996	str:2:str:1:2,dps:8.12:dps:7:56.84
-R	shaman/enhancement	12	4023	0	mh	107.52	dps:15.36:dps:7:107.52
-R	shaman/enhancement	12	4068	0	oh	96.336	sta:9:sta:3:27,armor:963:armor:0.072:69.336
-R	shaman/enhancement	12	4570	0	mh	70.0	dps:10:dps:7:70
-R	shaman/enhancement	12	4570	12718	mh	81.55	int:3:int:0.85:2.55,sta:3:sta:3:9,dps:10:dps:7:70
-R	shaman/enhancement	12	4570	12719	mh	85.0	spi:3:spi:2:6,sta:3:sta:3:9,dps:10:dps:7:70
-R	shaman/enhancement	12	4570	12720	mh	78.55	int:3:int:0.85:2.55,spi:3:spi:2:6,dps:10:dps:7:70
-R	shaman/enhancement	12	4570	12721	mh	80.5	agi:3:agi:0.5:1.5,sta:3:sta:3:9,dps:10:dps:7:70
-R	shaman/enhancement	12	4570	12722	mh	82.0	sta:3:sta:3:9,str:3:str:1:3,dps:10:dps:7:70
-R	shaman/enhancement	12	4570	12723	mh	75.55	int:3:int:0.85:2.55,str:3:str:1:3,dps:10:dps:7:70
-R	shaman/enhancement	12	4570	12724	mh	74.05	agi:3:agi:0.5:1.5,int:3:int:0.85:2.55,dps:10:dps:7:70
-R	shaman/enhancement	12	4570	12725	mh	79.0	spi:3:spi:2:6,str:3:str:1:3,dps:10:dps:7:70
-R	shaman/enhancement	12	4570	12726	mh	77.5	agi:3:agi:0.5:1.5,spi:3:spi:2:6,dps:10:dps:7:70
-R	shaman/enhancement	12	4570	12727	mh	74.5	agi:3:agi:0.5:1.5,str:3:str:1:3,dps:10:dps:7:70
-R	shaman/enhancement	12	4570	12728	mh	72.0	agi:4:agi:0.5:2,dps:10:dps:7:70
-R	shaman/enhancement	12	4570	12729	mh	73.4	int:4:int:0.85:3.4,dps:10:dps:7:70
-R	shaman/enhancement	12	4570	12730	mh	78.0	spi:4:spi:2:8,dps:10:dps:7:70
-R	shaman/enhancement	12	4570	12731	mh	82.0	sta:4:sta:3:12,dps:10:dps:7:70
-R	shaman/enhancement	12	4570	12732	mh	74.0	str:4:str:1:4,dps:10:dps:7:70
-R	shaman/enhancement	12	4570	12733	mh	74.0	ap:8:ap:0.5:4,dps:10:dps:7:70
-R	shaman/enhancement	12	4570	12736	mh	70.0	dps:10:dps:7:70
-R	shaman/enhancement	12	4570	12740	mh	79.0	sta:3:sta:3:9,dps:10:dps:7:70
-R	shaman/enhancement	12	4570	12741	mh	79.0	sta:3:sta:3:9,dps:10:dps:7:70
-R	shaman/enhancement	12	4570	12742	mh	79.0	sta:3:sta:3:9,dps:10:dps:7:70
-R	shaman/enhancement	12	4570	12743	mh	79.0	sta:3:sta:3:9,dps:10:dps:7:70
-R	shaman/enhancement	12	4570	12744	mh	79.0	sta:3:sta:3:9,dps:10:dps:7:70
-R	shaman/enhancement	12	4570	12759	mh	70.0	dps:10:dps:7:70
-R	shaman/enhancement	12	4570	12918	mh	67.66	sp:8:sp:1.4:11.2,int:4:int:0.85:3.4,dps:7.58:dps:7:53.06
-R	shaman/enhancement	12	4570	12919	mh	63.46	spDmg:5:sp:1.4:7,int:4:int:0.85:3.4,dps:7.58:dps:7:53.06
+R	shaman/enhancement	12	1315	0	gear	56.5	sta:10:sta:2.5:25,spi:15:spi:2.1:31.5
+R	shaman/enhancement	12	1808	0	gear	4.884	armor:74:armor:0.066:4.884
+R	shaman/enhancement	12	1990	0	mh	173.85	dps:24.71:dps:7:172.97,speed:0.4:speed:2.2:0.88
+R	shaman/enhancement	12	1990	12718	mh	205.07999999999998	int:9:int:0.97:8.73,sta:9:sta:2.5:22.5,dps:24.71:dps:7:172.97,speed:0.4:speed:2.2:0.88
+R	shaman/enhancement	12	1990	12905	mh	196.91	int:11:int:0.97:10.67,sta:7:sta:2.5:17.5,sp:28:sp:1.4:39.2,dps:18.38:dps:7:128.66,speed:0.4:speed:2.2:0.88
+R	shaman/enhancement	12	2140	0	mh	40.260000000000005	dps:5.94:dps:7:41.58,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	2140	12718	mh	43.730000000000004	int:1:int:0.97:0.97,sta:1:sta:2.5:2.5,dps:5.94:dps:7:41.58,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	2140	12917	mh	32.9	sp:5:sp:1.4:7,int:1:int:0.97:0.97,dps:3.75:dps:7:26.25,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	2225	0	mh	33.68	dps:5:dps:7:35,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	2614	0	gear	1.9140000000000001	armor:29:armor:0.066:1.914
+R	shaman/enhancement	12	3158	0	gear	1.7160000000000002	armor:26:armor:0.066:1.716
+R	shaman/enhancement	12	3570	0	mh	57.519999999999996	str:2:str:1:2,dps:8.12:dps:7:56.84,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	4023	0	mh	106.2	dps:15.36:dps:7:107.52,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	4068	0	oh	86.05799999999999	sta:9:sta:2.5:22.5,armor:963:armor:0.066:63.558
+R	shaman/enhancement	12	4570	0	mh	70.66	dps:10:dps:7:70,speed:0.3:speed:2.2:0.66
+R	shaman/enhancement	12	4570	12718	mh	81.07	int:3:int:0.97:2.91,sta:3:sta:2.5:7.5,dps:10:dps:7:70,speed:0.3:speed:2.2:0.66
+R	shaman/enhancement	12	4570	12719	mh	84.46	spi:3:spi:2.1:6.3,sta:3:sta:2.5:7.5,dps:10:dps:7:70,speed:0.3:speed:2.2:0.66
+R	shaman/enhancement	12	4570	12720	mh	79.87	int:3:int:0.97:2.91,spi:3:spi:2.1:6.3,dps:10:dps:7:70,speed:0.3:speed:2.2:0.66
+R	shaman/enhancement	12	4570	12721	mh	79.6	agi:3:agi:0.48:1.44,sta:3:sta:2.5:7.5,dps:10:dps:7:70,speed:0.3:speed:2.2:0.66
+R	shaman/enhancement	12	4570	12722	mh	81.16	sta:3:sta:2.5:7.5,str:3:str:1:3,dps:10:dps:7:70,speed:0.3:speed:2.2:0.66
+R	shaman/enhancement	12	4570	12723	mh	76.57	int:3:int:0.97:2.91,str:3:str:1:3,dps:10:dps:7:70,speed:0.3:speed:2.2:0.66
+R	shaman/enhancement	12	4570	12724	mh	75.00999999999999	agi:3:agi:0.48:1.44,int:3:int:0.97:2.91,dps:10:dps:7:70,speed:0.3:speed:2.2:0.66
+R	shaman/enhancement	12	4570	12725	mh	79.96	spi:3:spi:2.1:6.3,str:3:str:1:3,dps:10:dps:7:70,speed:0.3:speed:2.2:0.66
+R	shaman/enhancement	12	4570	12726	mh	78.39999999999999	agi:3:agi:0.48:1.44,spi:3:spi:2.1:6.3,dps:10:dps:7:70,speed:0.3:speed:2.2:0.66
+R	shaman/enhancement	12	4570	12727	mh	75.1	agi:3:agi:0.48:1.44,str:3:str:1:3,dps:10:dps:7:70,speed:0.3:speed:2.2:0.66
+R	shaman/enhancement	12	4570	12728	mh	72.58	agi:4:agi:0.48:1.92,dps:10:dps:7:70,speed:0.3:speed:2.2:0.66
+R	shaman/enhancement	12	4570	12729	mh	74.53999999999999	int:4:int:0.97:3.88,dps:10:dps:7:70,speed:0.3:speed:2.2:0.66
+R	shaman/enhancement	12	4570	12730	mh	79.06	spi:4:spi:2.1:8.4,dps:10:dps:7:70,speed:0.3:speed:2.2:0.66
+R	shaman/enhancement	12	4570	12731	mh	80.66	sta:4:sta:2.5:10,dps:10:dps:7:70,speed:0.3:speed:2.2:0.66
+R	shaman/enhancement	12	4570	12732	mh	74.66	str:4:str:1:4,dps:10:dps:7:70,speed:0.3:speed:2.2:0.66
+R	shaman/enhancement	12	4570	12733	mh	74.66	ap:8:ap:0.5:4,dps:10:dps:7:70,speed:0.3:speed:2.2:0.66
+R	shaman/enhancement	12	4570	12736	mh	70.66	dps:10:dps:7:70,speed:0.3:speed:2.2:0.66
+R	shaman/enhancement	12	4570	12740	mh	78.16	sta:3:sta:2.5:7.5,dps:10:dps:7:70,speed:0.3:speed:2.2:0.66
+R	shaman/enhancement	12	4570	12741	mh	78.16	sta:3:sta:2.5:7.5,dps:10:dps:7:70,speed:0.3:speed:2.2:0.66
+R	shaman/enhancement	12	4570	12742	mh	78.16	sta:3:sta:2.5:7.5,dps:10:dps:7:70,speed:0.3:speed:2.2:0.66
+R	shaman/enhancement	12	4570	12743	mh	78.16	sta:3:sta:2.5:7.5,dps:10:dps:7:70,speed:0.3:speed:2.2:0.66
+R	shaman/enhancement	12	4570	12744	mh	78.16	sta:3:sta:2.5:7.5,dps:10:dps:7:70,speed:0.3:speed:2.2:0.66
+R	shaman/enhancement	12	4570	12759	mh	70.66	dps:10:dps:7:70,speed:0.3:speed:2.2:0.66
+R	shaman/enhancement	12	4570	12918	mh	68.8	sp:8:sp:1.4:11.2,int:4:int:0.97:3.88,dps:7.58:dps:7:53.06,speed:0.3:speed:2.2:0.66
+R	shaman/enhancement	12	4570	12919	mh	64.6	spDmg:5:sp:1.4:7,int:4:int:0.97:3.88,dps:7.58:dps:7:53.06,speed:0.3:speed:2.2:0.66
 R	shaman/enhancement	12	5079	0	gear	0.0	
-R	shaman/enhancement	12	6063	0	gear	3.9599999999999995	armor:55:armor:0.072:3.96
-R	shaman/enhancement	12	6540	0	gear	2.016	armor:28:armor:0.072:2.016
-R	shaman/enhancement	12	6540	12718	gear	13.566	int:3:int:0.85:2.55,sta:3:sta:3:9,armor:28:armor:0.072:2.016
-R	shaman/enhancement	12	6540	12719	gear	17.016	spi:3:spi:2:6,sta:3:sta:3:9,armor:28:armor:0.072:2.016
-R	shaman/enhancement	12	6540	12720	gear	10.566	int:3:int:0.85:2.55,spi:3:spi:2:6,armor:28:armor:0.072:2.016
-R	shaman/enhancement	12	6540	12729	gear	6.266	int:5:int:0.85:4.25,armor:28:armor:0.072:2.016
-R	shaman/enhancement	12	6540	12730	gear	12.016	spi:5:spi:2:10,armor:28:armor:0.072:2.016
-R	shaman/enhancement	12	6540	12731	gear	17.016	sta:5:sta:3:15,armor:28:armor:0.072:2.016
-R	shaman/enhancement	12	6540	12734	gear	10.415999999999999	sp:6:sp:1.4:8.4,armor:28:armor:0.072:2.016
-R	shaman/enhancement	12	6540	12735	gear	7.616	spDmg:4:sp:1.4:5.6,armor:28:armor:0.072:2.016
-R	shaman/enhancement	12	6540	12740	gear	11.016	sta:3:sta:3:9,armor:28:armor:0.072:2.016
-R	shaman/enhancement	12	6540	12741	gear	11.016	sta:3:sta:3:9,armor:28:armor:0.072:2.016
-R	shaman/enhancement	12	6540	12742	gear	11.016	sta:3:sta:3:9,armor:28:armor:0.072:2.016
-R	shaman/enhancement	12	6540	12743	gear	11.016	sta:3:sta:3:9,armor:28:armor:0.072:2.016
-R	shaman/enhancement	12	6540	12744	gear	11.016	sta:3:sta:3:9,armor:28:armor:0.072:2.016
-R	shaman/enhancement	12	6540	12745	gear	14.216	int:4:int:0.85:3.4,sta:2:sta:3:6,sp:2:sp:1.4:2.8,armor:28:armor:0.072:2.016
-R	shaman/enhancement	12	6540	12756	gear	2.016	armor:28:armor:0.072:2.016
-R	shaman/enhancement	12	6540	12757	gear	2.016	armor:28:armor:0.072:2.016
-R	shaman/enhancement	12	6540	12758	gear	2.016	armor:28:armor:0.072:2.016
-R	shaman/enhancement	12	6540	12759	gear	2.016	armor:28:armor:0.072:2.016
-R	shaman/enhancement	12	6540	12761	gear	2.016	armor:28:armor:0.072:2.016
-R	shaman/enhancement	12	6557	0	gear	3.5279999999999996	armor:49:armor:0.072:3.528
-R	shaman/enhancement	12	6557	12718	gear	11.228	int:2:int:0.85:1.7,sta:2:sta:3:6,armor:49:armor:0.072:3.528
-R	shaman/enhancement	12	6557	12719	gear	13.527999999999999	spi:2:spi:2:4,sta:2:sta:3:6,armor:49:armor:0.072:3.528
-R	shaman/enhancement	12	6557	12720	gear	9.228	int:2:int:0.85:1.7,spi:2:spi:2:4,armor:49:armor:0.072:3.528
-R	shaman/enhancement	12	6557	12721	gear	10.527999999999999	agi:2:agi:0.5:1,sta:2:sta:3:6,armor:49:armor:0.072:3.528
-R	shaman/enhancement	12	6557	12722	gear	11.527999999999999	sta:2:sta:3:6,str:2:str:1:2,armor:49:armor:0.072:3.528
-R	shaman/enhancement	12	6557	12723	gear	7.228	int:2:int:0.85:1.7,str:2:str:1:2,armor:49:armor:0.072:3.528
-R	shaman/enhancement	12	6557	12724	gear	6.228	agi:2:agi:0.5:1,int:2:int:0.85:1.7,armor:49:armor:0.072:3.528
-R	shaman/enhancement	12	6557	12725	gear	9.527999999999999	spi:2:spi:2:4,str:2:str:1:2,armor:49:armor:0.072:3.528
-R	shaman/enhancement	12	6557	12726	gear	8.527999999999999	agi:2:agi:0.5:1,spi:2:spi:2:4,armor:49:armor:0.072:3.528
-R	shaman/enhancement	12	6557	12727	gear	6.528	agi:2:agi:0.5:1,str:2:str:1:2,armor:49:armor:0.072:3.528
-R	shaman/enhancement	12	6557	12728	gear	5.028	agi:3:agi:0.5:1.5,armor:49:armor:0.072:3.528
-R	shaman/enhancement	12	6557	12729	gear	6.077999999999999	int:3:int:0.85:2.55,armor:49:armor:0.072:3.528
-R	shaman/enhancement	12	6557	12730	gear	9.527999999999999	spi:3:spi:2:6,armor:49:armor:0.072:3.528
-R	shaman/enhancement	12	6557	12731	gear	12.527999999999999	sta:3:sta:3:9,armor:49:armor:0.072:3.528
-R	shaman/enhancement	12	6557	12732	gear	6.528	str:3:str:1:3,armor:49:armor:0.072:3.528
-R	shaman/enhancement	12	6557	12733	gear	6.528	ap:6:ap:0.5:3,armor:49:armor:0.072:3.528
-R	shaman/enhancement	12	6557	12734	gear	9.128	sp:4:sp:1.4:5.6,armor:49:armor:0.072:3.528
-R	shaman/enhancement	12	6557	12735	gear	6.327999999999999	spDmg:2:sp:1.4:2.8,armor:49:armor:0.072:3.528
-R	shaman/enhancement	12	6557	12736	gear	3.5279999999999996	armor:49:armor:0.072:3.528
-R	shaman/enhancement	12	6557	12740	gear	9.527999999999999	sta:2:sta:3:6,armor:49:armor:0.072:3.528
-R	shaman/enhancement	12	6557	12741	gear	9.527999999999999	sta:2:sta:3:6,armor:49:armor:0.072:3.528
-R	shaman/enhancement	12	6557	12742	gear	9.527999999999999	sta:2:sta:3:6,armor:49:armor:0.072:3.528
-R	shaman/enhancement	12	6557	12743	gear	9.527999999999999	sta:2:sta:3:6,armor:49:armor:0.072:3.528
-R	shaman/enhancement	12	6557	12744	gear	9.527999999999999	sta:2:sta:3:6,armor:49:armor:0.072:3.528
-R	shaman/enhancement	12	6557	12756	gear	3.5279999999999996	armor:49:armor:0.072:3.528
-R	shaman/enhancement	12	6557	12760	gear	7.528	spNature:4:spNature:1:4,armor:49:armor:0.072:3.528
-R	shaman/enhancement	12	7047	0	gear	11.872	spi:5:spi:2:10,armor:26:armor:0.072:1.872
-R	shaman/enhancement	12	7538	0	gear	18.936	armor:263:armor:0.072:18.936
-R	shaman/enhancement	12	7538	12718	gear	68.98599999999999	int:13:int:0.85:11.05,sta:13:sta:3:39,armor:263:armor:0.072:18.936
-R	shaman/enhancement	12	7538	12719	gear	83.936	spi:13:spi:2:26,sta:13:sta:3:39,armor:263:armor:0.072:18.936
-R	shaman/enhancement	12	7538	12720	gear	55.986	int:13:int:0.85:11.05,spi:13:spi:2:26,armor:263:armor:0.072:18.936
-R	shaman/enhancement	12	7538	12721	gear	64.436	agi:13:agi:0.5:6.5,sta:13:sta:3:39,armor:263:armor:0.072:18.936
-R	shaman/enhancement	12	7538	12722	gear	70.936	sta:13:sta:3:39,str:13:str:1:13,armor:263:armor:0.072:18.936
-R	shaman/enhancement	12	7538	12723	gear	42.986	int:13:int:0.85:11.05,str:13:str:1:13,armor:263:armor:0.072:18.936
-R	shaman/enhancement	12	7538	12724	gear	36.486	agi:13:agi:0.5:6.5,int:13:int:0.85:11.05,armor:263:armor:0.072:18.936
-R	shaman/enhancement	12	7538	12725	gear	57.936	spi:13:spi:2:26,str:13:str:1:13,armor:263:armor:0.072:18.936
-R	shaman/enhancement	12	7538	12726	gear	51.436	agi:13:agi:0.5:6.5,spi:13:spi:2:26,armor:263:armor:0.072:18.936
-R	shaman/enhancement	12	7538	12727	gear	38.436	agi:13:agi:0.5:6.5,str:13:str:1:13,armor:263:armor:0.072:18.936
-R	shaman/enhancement	12	7538	12728	gear	28.936	agi:20:agi:0.5:10,armor:263:armor:0.072:18.936
-R	shaman/enhancement	12	7538	12729	gear	35.936	int:20:int:0.85:17,armor:263:armor:0.072:18.936
-R	shaman/enhancement	12	7538	12730	gear	58.936	spi:20:spi:2:40,armor:263:armor:0.072:18.936
-R	shaman/enhancement	12	7538	12731	gear	78.936	sta:20:sta:3:60,armor:263:armor:0.072:18.936
-R	shaman/enhancement	12	7538	12732	gear	38.936	str:20:str:1:20,armor:263:armor:0.072:18.936
-R	shaman/enhancement	12	7538	12733	gear	38.936	ap:40:ap:0.5:20,armor:263:armor:0.072:18.936
-R	shaman/enhancement	12	7538	12734	gear	51.135999999999996	sp:23:sp:1.4:32.2,armor:263:armor:0.072:18.936
-R	shaman/enhancement	12	7538	12735	gear	39.936	spDmg:15:sp:1.4:21,armor:263:armor:0.072:18.936
-R	shaman/enhancement	12	7538	12740	gear	57.936	sta:13:sta:3:39,armor:263:armor:0.072:18.936
-R	shaman/enhancement	12	7538	12741	gear	57.936	sta:13:sta:3:39,armor:263:armor:0.072:18.936
-R	shaman/enhancement	12	7538	12742	gear	57.936	sta:13:sta:3:39,armor:263:armor:0.072:18.936
-R	shaman/enhancement	12	7538	12743	gear	57.936	sta:13:sta:3:39,armor:263:armor:0.072:18.936
-R	shaman/enhancement	12	7538	12744	gear	57.936	sta:13:sta:3:39,armor:263:armor:0.072:18.936
-R	shaman/enhancement	12	7538	12745	gear	65.48599999999999	int:15:int:0.85:12.75,sta:8:sta:3:24,sp:7:sp:1.4:9.8,armor:263:armor:0.072:18.936
-R	shaman/enhancement	12	7538	12746	gear	57.486	int:15:int:0.85:12.75,spi:8:spi:2:16,sp:7:sp:1.4:9.8,armor:263:armor:0.072:18.936
-R	shaman/enhancement	12	7538	12747	gear	89.73599999999999	spi:8:spi:2:16,sta:15:sta:3:45,sp:7:sp:1.4:9.8,armor:263:armor:0.072:18.936
-R	shaman/enhancement	12	7538	12748	gear	77.73599999999999	int:8:int:0.85:6.8,sta:15:sta:3:45,spDmg:5:sp:1.4:7,armor:263:armor:0.072:18.936
-R	shaman/enhancement	12	7538	12749	gear	54.686	int:15:int:0.85:12.75,spi:8:spi:2:16,spDmg:5:sp:1.4:7,armor:263:armor:0.072:18.936
-R	shaman/enhancement	12	7538	12750	gear	86.936	spi:8:spi:2:16,sta:15:sta:3:45,spDmg:5:sp:1.4:7,armor:263:armor:0.072:18.936
-R	shaman/enhancement	12	7538	12751	gear	74.936	agi:6:agi:0.5:3,ap:16:ap:0.5:8,sta:15:sta:3:45,armor:263:armor:0.072:18.936
-R	shaman/enhancement	12	7538	12752	gear	73.936	agi:8:agi:0.5:4,sta:15:sta:3:45,str:6:str:1:6,armor:263:armor:0.072:18.936
-R	shaman/enhancement	12	7538	12755	gear	81.73599999999999	sp:7:sp:1.4:9.8,sta:15:sta:3:45,str:8:str:1:8,armor:263:armor:0.072:18.936
-R	shaman/enhancement	12	7538	12760	gear	47.936	spNature:29:spNature:1:29,armor:263:armor:0.072:18.936
-R	shaman/enhancement	12	8192	0	gear	26.692	agi:11:agi:0.5:5.5,sta:5:sta:3:15,armor:86:armor:0.072:6.192
-R	shaman/enhancement	12	9458	0	oh	61.87199999999999	spi:3:spi:2:6,armor:776:armor:0.072:55.872
-R	shaman/enhancement	12	9834	0	gear	5.255999999999999	armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	9834	12718	gear	28.356	int:6:int:0.85:5.1,sta:6:sta:3:18,armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	9834	12719	gear	35.256	spi:6:spi:2:12,sta:6:sta:3:18,armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	9834	12720	gear	22.356	int:6:int:0.85:5.1,spi:6:spi:2:12,armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	9834	12721	gear	26.256	agi:6:agi:0.5:3,sta:6:sta:3:18,armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	9834	12722	gear	29.256	sta:6:sta:3:18,str:6:str:1:6,armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	9834	12723	gear	16.355999999999998	int:6:int:0.85:5.1,str:6:str:1:6,armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	9834	12724	gear	13.355999999999998	agi:6:agi:0.5:3,int:6:int:0.85:5.1,armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	9834	12725	gear	23.256	spi:6:spi:2:12,str:6:str:1:6,armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	9834	12726	gear	20.256	agi:6:agi:0.5:3,spi:6:spi:2:12,armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	9834	12727	gear	14.256	agi:6:agi:0.5:3,str:6:str:1:6,armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	9834	12728	gear	9.756	agi:9:agi:0.5:4.5,armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	9834	12729	gear	12.905999999999999	int:9:int:0.85:7.65,armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	9834	12730	gear	23.256	spi:9:spi:2:18,armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	9834	12731	gear	32.256	sta:9:sta:3:27,armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	9834	12732	gear	14.256	str:9:str:1:9,armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	9834	12733	gear	14.256	ap:18:ap:0.5:9,armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	9834	12734	gear	20.656	sp:11:sp:1.4:15.4,armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	9834	12735	gear	15.055999999999997	spDmg:7:sp:1.4:9.8,armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	9834	12736	gear	5.255999999999999	armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	9834	12740	gear	23.256	sta:6:sta:3:18,armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	9834	12741	gear	23.256	sta:6:sta:3:18,armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	9834	12742	gear	23.256	sta:6:sta:3:18,armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	9834	12743	gear	23.256	sta:6:sta:3:18,armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	9834	12744	gear	23.256	sta:6:sta:3:18,armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	9834	12745	gear	27.406	int:7:int:0.85:5.95,sta:4:sta:3:12,sp:3:sp:1.4:4.2,armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	9834	12746	gear	23.406	int:7:int:0.85:5.95,spi:4:spi:2:8,sp:3:sp:1.4:4.2,armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	9834	12747	gear	38.456	spi:4:spi:2:8,sta:7:sta:3:21,sp:3:sp:1.4:4.2,armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	9834	12748	gear	32.455999999999996	int:4:int:0.85:3.4,sta:7:sta:3:21,spDmg:2:sp:1.4:2.8,armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	9834	12749	gear	22.006	int:7:int:0.85:5.95,spi:4:spi:2:8,spDmg:2:sp:1.4:2.8,armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	9834	12750	gear	37.056	spi:4:spi:2:8,sta:7:sta:3:21,spDmg:2:sp:1.4:2.8,armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	9834	12751	gear	31.256	agi:3:agi:0.5:1.5,ap:7:ap:0.5:3.5,sta:7:sta:3:21,armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	9834	12752	gear	31.256	agi:4:agi:0.5:2,sta:7:sta:3:21,str:3:str:1:3,armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	9834	12753	gear	30.256	sta:7:sta:3:21,str:4:str:1:4,armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	9834	12755	gear	34.455999999999996	sp:3:sp:1.4:4.2,sta:7:sta:3:21,str:4:str:1:4,armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	9834	12756	gear	5.255999999999999	armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	9834	12760	gear	18.256	spNature:13:spNature:1:13,armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	11187	0	gear	0.288	armor:4:armor:0.072:0.288
+R	shaman/enhancement	12	6063	0	gear	3.6300000000000003	armor:55:armor:0.066:3.63
+R	shaman/enhancement	12	6540	0	gear	1.848	armor:28:armor:0.066:1.848
+R	shaman/enhancement	12	6540	12718	gear	12.258000000000001	int:3:int:0.97:2.91,sta:3:sta:2.5:7.5,armor:28:armor:0.066:1.848
+R	shaman/enhancement	12	6540	12719	gear	15.648000000000001	spi:3:spi:2.1:6.3,sta:3:sta:2.5:7.5,armor:28:armor:0.066:1.848
+R	shaman/enhancement	12	6540	12720	gear	11.058000000000002	int:3:int:0.97:2.91,spi:3:spi:2.1:6.3,armor:28:armor:0.066:1.848
+R	shaman/enhancement	12	6540	12729	gear	6.6979999999999995	int:5:int:0.97:4.85,armor:28:armor:0.066:1.848
+R	shaman/enhancement	12	6540	12730	gear	12.348	spi:5:spi:2.1:10.5,armor:28:armor:0.066:1.848
+R	shaman/enhancement	12	6540	12731	gear	14.348	sta:5:sta:2.5:12.5,armor:28:armor:0.066:1.848
+R	shaman/enhancement	12	6540	12734	gear	10.248	sp:6:sp:1.4:8.4,armor:28:armor:0.066:1.848
+R	shaman/enhancement	12	6540	12735	gear	7.4479999999999995	spDmg:4:sp:1.4:5.6,armor:28:armor:0.066:1.848
+R	shaman/enhancement	12	6540	12740	gear	9.348	sta:3:sta:2.5:7.5,armor:28:armor:0.066:1.848
+R	shaman/enhancement	12	6540	12741	gear	9.348	sta:3:sta:2.5:7.5,armor:28:armor:0.066:1.848
+R	shaman/enhancement	12	6540	12742	gear	9.348	sta:3:sta:2.5:7.5,armor:28:armor:0.066:1.848
+R	shaman/enhancement	12	6540	12743	gear	9.348	sta:3:sta:2.5:7.5,armor:28:armor:0.066:1.848
+R	shaman/enhancement	12	6540	12744	gear	9.348	sta:3:sta:2.5:7.5,armor:28:armor:0.066:1.848
+R	shaman/enhancement	12	6540	12745	gear	13.528	int:4:int:0.97:3.88,sta:2:sta:2.5:5,sp:2:sp:1.4:2.8,armor:28:armor:0.066:1.848
+R	shaman/enhancement	12	6540	12756	gear	1.848	armor:28:armor:0.066:1.848
+R	shaman/enhancement	12	6540	12757	gear	1.848	armor:28:armor:0.066:1.848
+R	shaman/enhancement	12	6540	12758	gear	1.848	armor:28:armor:0.066:1.848
+R	shaman/enhancement	12	6540	12759	gear	1.848	armor:28:armor:0.066:1.848
+R	shaman/enhancement	12	6540	12761	gear	1.848	armor:28:armor:0.066:1.848
+R	shaman/enhancement	12	6557	0	gear	3.234	armor:49:armor:0.066:3.234
+R	shaman/enhancement	12	6557	12718	gear	10.174	int:2:int:0.97:1.94,sta:2:sta:2.5:5,armor:49:armor:0.066:3.234
+R	shaman/enhancement	12	6557	12719	gear	12.434	spi:2:spi:2.1:4.2,sta:2:sta:2.5:5,armor:49:armor:0.066:3.234
+R	shaman/enhancement	12	6557	12720	gear	9.374	int:2:int:0.97:1.94,spi:2:spi:2.1:4.2,armor:49:armor:0.066:3.234
+R	shaman/enhancement	12	6557	12721	gear	9.193999999999999	agi:2:agi:0.48:0.96,sta:2:sta:2.5:5,armor:49:armor:0.066:3.234
+R	shaman/enhancement	12	6557	12722	gear	10.234	sta:2:sta:2.5:5,str:2:str:1:2,armor:49:armor:0.066:3.234
+R	shaman/enhancement	12	6557	12723	gear	7.1739999999999995	int:2:int:0.97:1.94,str:2:str:1:2,armor:49:armor:0.066:3.234
+R	shaman/enhancement	12	6557	12724	gear	6.134	agi:2:agi:0.48:0.96,int:2:int:0.97:1.94,armor:49:armor:0.066:3.234
+R	shaman/enhancement	12	6557	12725	gear	9.434000000000001	spi:2:spi:2.1:4.2,str:2:str:1:2,armor:49:armor:0.066:3.234
+R	shaman/enhancement	12	6557	12726	gear	8.394	agi:2:agi:0.48:0.96,spi:2:spi:2.1:4.2,armor:49:armor:0.066:3.234
+R	shaman/enhancement	12	6557	12727	gear	6.194	agi:2:agi:0.48:0.96,str:2:str:1:2,armor:49:armor:0.066:3.234
+R	shaman/enhancement	12	6557	12728	gear	4.6739999999999995	agi:3:agi:0.48:1.44,armor:49:armor:0.066:3.234
+R	shaman/enhancement	12	6557	12729	gear	6.144	int:3:int:0.97:2.91,armor:49:armor:0.066:3.234
+R	shaman/enhancement	12	6557	12730	gear	9.534	spi:3:spi:2.1:6.3,armor:49:armor:0.066:3.234
+R	shaman/enhancement	12	6557	12731	gear	10.734	sta:3:sta:2.5:7.5,armor:49:armor:0.066:3.234
+R	shaman/enhancement	12	6557	12732	gear	6.234	str:3:str:1:3,armor:49:armor:0.066:3.234
+R	shaman/enhancement	12	6557	12733	gear	6.234	ap:6:ap:0.5:3,armor:49:armor:0.066:3.234
+R	shaman/enhancement	12	6557	12734	gear	8.834	sp:4:sp:1.4:5.6,armor:49:armor:0.066:3.234
+R	shaman/enhancement	12	6557	12735	gear	6.034	spDmg:2:sp:1.4:2.8,armor:49:armor:0.066:3.234
+R	shaman/enhancement	12	6557	12736	gear	3.234	armor:49:armor:0.066:3.234
+R	shaman/enhancement	12	6557	12740	gear	8.234	sta:2:sta:2.5:5,armor:49:armor:0.066:3.234
+R	shaman/enhancement	12	6557	12741	gear	8.234	sta:2:sta:2.5:5,armor:49:armor:0.066:3.234
+R	shaman/enhancement	12	6557	12742	gear	8.234	sta:2:sta:2.5:5,armor:49:armor:0.066:3.234
+R	shaman/enhancement	12	6557	12743	gear	8.234	sta:2:sta:2.5:5,armor:49:armor:0.066:3.234
+R	shaman/enhancement	12	6557	12744	gear	8.234	sta:2:sta:2.5:5,armor:49:armor:0.066:3.234
+R	shaman/enhancement	12	6557	12756	gear	3.234	armor:49:armor:0.066:3.234
+R	shaman/enhancement	12	6557	12760	gear	7.234	spNature:4:spNature:1:4,armor:49:armor:0.066:3.234
+R	shaman/enhancement	12	7047	0	gear	12.216000000000001	spi:5:spi:2.1:10.5,armor:26:armor:0.066:1.716
+R	shaman/enhancement	12	7538	0	gear	17.358	armor:263:armor:0.066:17.358
+R	shaman/enhancement	12	7538	12718	gear	62.468	int:13:int:0.97:12.61,sta:13:sta:2.5:32.5,armor:263:armor:0.066:17.358
+R	shaman/enhancement	12	7538	12719	gear	77.158	spi:13:spi:2.1:27.3,sta:13:sta:2.5:32.5,armor:263:armor:0.066:17.358
+R	shaman/enhancement	12	7538	12720	gear	57.268	int:13:int:0.97:12.61,spi:13:spi:2.1:27.3,armor:263:armor:0.066:17.358
+R	shaman/enhancement	12	7538	12721	gear	56.098	agi:13:agi:0.48:6.24,sta:13:sta:2.5:32.5,armor:263:armor:0.066:17.358
+R	shaman/enhancement	12	7538	12722	gear	62.858000000000004	sta:13:sta:2.5:32.5,str:13:str:1:13,armor:263:armor:0.066:17.358
+R	shaman/enhancement	12	7538	12723	gear	42.968	int:13:int:0.97:12.61,str:13:str:1:13,armor:263:armor:0.066:17.358
+R	shaman/enhancement	12	7538	12724	gear	36.208	agi:13:agi:0.48:6.24,int:13:int:0.97:12.61,armor:263:armor:0.066:17.358
+R	shaman/enhancement	12	7538	12725	gear	57.658	spi:13:spi:2.1:27.3,str:13:str:1:13,armor:263:armor:0.066:17.358
+R	shaman/enhancement	12	7538	12726	gear	50.897999999999996	agi:13:agi:0.48:6.24,spi:13:spi:2.1:27.3,armor:263:armor:0.066:17.358
+R	shaman/enhancement	12	7538	12727	gear	36.598	agi:13:agi:0.48:6.24,str:13:str:1:13,armor:263:armor:0.066:17.358
+R	shaman/enhancement	12	7538	12728	gear	26.958	agi:20:agi:0.48:9.6,armor:263:armor:0.066:17.358
+R	shaman/enhancement	12	7538	12729	gear	36.757999999999996	int:20:int:0.97:19.4,armor:263:armor:0.066:17.358
+R	shaman/enhancement	12	7538	12730	gear	59.358000000000004	spi:20:spi:2.1:42,armor:263:armor:0.066:17.358
+R	shaman/enhancement	12	7538	12731	gear	67.358	sta:20:sta:2.5:50,armor:263:armor:0.066:17.358
+R	shaman/enhancement	12	7538	12732	gear	37.358000000000004	str:20:str:1:20,armor:263:armor:0.066:17.358
+R	shaman/enhancement	12	7538	12733	gear	37.358000000000004	ap:40:ap:0.5:20,armor:263:armor:0.066:17.358
+R	shaman/enhancement	12	7538	12734	gear	49.55799999999999	sp:23:sp:1.4:32.2,armor:263:armor:0.066:17.358
+R	shaman/enhancement	12	7538	12735	gear	38.358000000000004	spDmg:15:sp:1.4:21,armor:263:armor:0.066:17.358
+R	shaman/enhancement	12	7538	12740	gear	49.858000000000004	sta:13:sta:2.5:32.5,armor:263:armor:0.066:17.358
+R	shaman/enhancement	12	7538	12741	gear	49.858000000000004	sta:13:sta:2.5:32.5,armor:263:armor:0.066:17.358
+R	shaman/enhancement	12	7538	12742	gear	49.858000000000004	sta:13:sta:2.5:32.5,armor:263:armor:0.066:17.358
+R	shaman/enhancement	12	7538	12743	gear	49.858000000000004	sta:13:sta:2.5:32.5,armor:263:armor:0.066:17.358
+R	shaman/enhancement	12	7538	12744	gear	49.858000000000004	sta:13:sta:2.5:32.5,armor:263:armor:0.066:17.358
+R	shaman/enhancement	12	7538	12745	gear	61.708	int:15:int:0.97:14.55,sta:8:sta:2.5:20,sp:7:sp:1.4:9.8,armor:263:armor:0.066:17.358
+R	shaman/enhancement	12	7538	12746	gear	58.507999999999996	int:15:int:0.97:14.55,spi:8:spi:2.1:16.8,sp:7:sp:1.4:9.8,armor:263:armor:0.066:17.358
+R	shaman/enhancement	12	7538	12747	gear	81.458	spi:8:spi:2.1:16.8,sta:15:sta:2.5:37.5,sp:7:sp:1.4:9.8,armor:263:armor:0.066:17.358
+R	shaman/enhancement	12	7538	12748	gear	69.618	int:8:int:0.97:7.76,sta:15:sta:2.5:37.5,spDmg:5:sp:1.4:7,armor:263:armor:0.066:17.358
+R	shaman/enhancement	12	7538	12749	gear	55.708	int:15:int:0.97:14.55,spi:8:spi:2.1:16.8,spDmg:5:sp:1.4:7,armor:263:armor:0.066:17.358
+R	shaman/enhancement	12	7538	12750	gear	78.658	spi:8:spi:2.1:16.8,sta:15:sta:2.5:37.5,spDmg:5:sp:1.4:7,armor:263:armor:0.066:17.358
+R	shaman/enhancement	12	7538	12751	gear	65.738	agi:6:agi:0.48:2.88,ap:16:ap:0.5:8,sta:15:sta:2.5:37.5,armor:263:armor:0.066:17.358
+R	shaman/enhancement	12	7538	12752	gear	64.69800000000001	agi:8:agi:0.48:3.84,sta:15:sta:2.5:37.5,str:6:str:1:6,armor:263:armor:0.066:17.358
+R	shaman/enhancement	12	7538	12755	gear	72.658	sp:7:sp:1.4:9.8,sta:15:sta:2.5:37.5,str:8:str:1:8,armor:263:armor:0.066:17.358
+R	shaman/enhancement	12	7538	12760	gear	46.358000000000004	spNature:29:spNature:1:29,armor:263:armor:0.066:17.358
+R	shaman/enhancement	12	8192	0	gear	23.456000000000003	agi:11:agi:0.48:5.28,sta:5:sta:2.5:12.5,armor:86:armor:0.066:5.676
+R	shaman/enhancement	12	9458	0	oh	57.516000000000005	spi:3:spi:2.1:6.3,armor:776:armor:0.066:51.216
+R	shaman/enhancement	12	9834	0	gear	4.8180000000000005	armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	9834	12718	gear	25.638	int:6:int:0.97:5.82,sta:6:sta:2.5:15,armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	9834	12719	gear	32.418	spi:6:spi:2.1:12.6,sta:6:sta:2.5:15,armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	9834	12720	gear	23.238000000000003	int:6:int:0.97:5.82,spi:6:spi:2.1:12.6,armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	9834	12721	gear	22.698	agi:6:agi:0.48:2.88,sta:6:sta:2.5:15,armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	9834	12722	gear	25.818	sta:6:sta:2.5:15,str:6:str:1:6,armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	9834	12723	gear	16.638	int:6:int:0.97:5.82,str:6:str:1:6,armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	9834	12724	gear	13.518	agi:6:agi:0.48:2.88,int:6:int:0.97:5.82,armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	9834	12725	gear	23.418000000000003	spi:6:spi:2.1:12.6,str:6:str:1:6,armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	9834	12726	gear	20.298000000000002	agi:6:agi:0.48:2.88,spi:6:spi:2.1:12.6,armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	9834	12727	gear	13.698	agi:6:agi:0.48:2.88,str:6:str:1:6,armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	9834	12728	gear	9.138000000000002	agi:9:agi:0.48:4.32,armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	9834	12729	gear	13.548000000000002	int:9:int:0.97:8.73,armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	9834	12730	gear	23.718000000000004	spi:9:spi:2.1:18.9,armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	9834	12731	gear	27.318	sta:9:sta:2.5:22.5,armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	9834	12732	gear	13.818000000000001	str:9:str:1:9,armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	9834	12733	gear	13.818000000000001	ap:18:ap:0.5:9,armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	9834	12734	gear	20.218	sp:11:sp:1.4:15.4,armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	9834	12735	gear	14.617999999999999	spDmg:7:sp:1.4:9.8,armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	9834	12736	gear	4.8180000000000005	armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	9834	12740	gear	19.818	sta:6:sta:2.5:15,armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	9834	12741	gear	19.818	sta:6:sta:2.5:15,armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	9834	12742	gear	19.818	sta:6:sta:2.5:15,armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	9834	12743	gear	19.818	sta:6:sta:2.5:15,armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	9834	12744	gear	19.818	sta:6:sta:2.5:15,armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	9834	12745	gear	25.808	int:7:int:0.97:6.79,sta:4:sta:2.5:10,sp:3:sp:1.4:4.2,armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	9834	12746	gear	24.208000000000002	int:7:int:0.97:6.79,spi:4:spi:2.1:8.4,sp:3:sp:1.4:4.2,armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	9834	12747	gear	34.918	spi:4:spi:2.1:8.4,sta:7:sta:2.5:17.5,sp:3:sp:1.4:4.2,armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	9834	12748	gear	28.998	int:4:int:0.97:3.88,sta:7:sta:2.5:17.5,spDmg:2:sp:1.4:2.8,armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	9834	12749	gear	22.808000000000003	int:7:int:0.97:6.79,spi:4:spi:2.1:8.4,spDmg:2:sp:1.4:2.8,armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	9834	12750	gear	33.518	spi:4:spi:2.1:8.4,sta:7:sta:2.5:17.5,spDmg:2:sp:1.4:2.8,armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	9834	12751	gear	27.258	agi:3:agi:0.48:1.44,ap:7:ap:0.5:3.5,sta:7:sta:2.5:17.5,armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	9834	12752	gear	27.238000000000003	agi:4:agi:0.48:1.92,sta:7:sta:2.5:17.5,str:3:str:1:3,armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	9834	12753	gear	26.318	sta:7:sta:2.5:17.5,str:4:str:1:4,armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	9834	12755	gear	30.518	sp:3:sp:1.4:4.2,sta:7:sta:2.5:17.5,str:4:str:1:4,armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	9834	12756	gear	4.8180000000000005	armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	9834	12760	gear	17.818	spNature:13:spNature:1:13,armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	11187	0	gear	0.264	armor:4:armor:0.066:0.264
 R	shaman/enhancement	12	11994	0	gear	0.0	
-R	shaman/enhancement	12	11994	12718	gear	11.55	int:3:int:0.85:2.55,sta:3:sta:3:9
-R	shaman/enhancement	12	11994	12719	gear	15.0	spi:3:spi:2:6,sta:3:sta:3:9
-R	shaman/enhancement	12	11994	12720	gear	8.55	int:3:int:0.85:2.55,spi:3:spi:2:6
-R	shaman/enhancement	12	11994	12721	gear	10.5	agi:3:agi:0.5:1.5,sta:3:sta:3:9
-R	shaman/enhancement	12	11994	12722	gear	12.0	sta:3:sta:3:9,str:3:str:1:3
-R	shaman/enhancement	12	11994	12723	gear	5.55	int:3:int:0.85:2.55,str:3:str:1:3
-R	shaman/enhancement	12	11994	12724	gear	4.05	agi:3:agi:0.5:1.5,int:3:int:0.85:2.55
-R	shaman/enhancement	12	11994	12725	gear	9.0	spi:3:spi:2:6,str:3:str:1:3
-R	shaman/enhancement	12	11994	12726	gear	7.5	agi:3:agi:0.5:1.5,spi:3:spi:2:6
-R	shaman/enhancement	12	11994	12727	gear	4.5	agi:3:agi:0.5:1.5,str:3:str:1:3
-R	shaman/enhancement	12	11994	12728	gear	2.5	agi:5:agi:0.5:2.5
-R	shaman/enhancement	12	11994	12729	gear	4.25	int:5:int:0.85:4.25
-R	shaman/enhancement	12	11994	12730	gear	10.0	spi:5:spi:2:10
-R	shaman/enhancement	12	11994	12731	gear	15.0	sta:5:sta:3:15
+R	shaman/enhancement	12	11994	12718	gear	10.41	int:3:int:0.97:2.91,sta:3:sta:2.5:7.5
+R	shaman/enhancement	12	11994	12719	gear	13.8	spi:3:spi:2.1:6.3,sta:3:sta:2.5:7.5
+R	shaman/enhancement	12	11994	12720	gear	9.21	int:3:int:0.97:2.91,spi:3:spi:2.1:6.3
+R	shaman/enhancement	12	11994	12721	gear	8.94	agi:3:agi:0.48:1.44,sta:3:sta:2.5:7.5
+R	shaman/enhancement	12	11994	12722	gear	10.5	sta:3:sta:2.5:7.5,str:3:str:1:3
+R	shaman/enhancement	12	11994	12723	gear	5.91	int:3:int:0.97:2.91,str:3:str:1:3
+R	shaman/enhancement	12	11994	12724	gear	4.35	agi:3:agi:0.48:1.44,int:3:int:0.97:2.91
+R	shaman/enhancement	12	11994	12725	gear	9.3	spi:3:spi:2.1:6.3,str:3:str:1:3
+R	shaman/enhancement	12	11994	12726	gear	7.74	agi:3:agi:0.48:1.44,spi:3:spi:2.1:6.3
+R	shaman/enhancement	12	11994	12727	gear	4.4399999999999995	agi:3:agi:0.48:1.44,str:3:str:1:3
+R	shaman/enhancement	12	11994	12728	gear	2.4	agi:5:agi:0.48:2.4
+R	shaman/enhancement	12	11994	12729	gear	4.85	int:5:int:0.97:4.85
+R	shaman/enhancement	12	11994	12730	gear	10.5	spi:5:spi:2.1:10.5
+R	shaman/enhancement	12	11994	12731	gear	12.5	sta:5:sta:2.5:12.5
 R	shaman/enhancement	12	11994	12732	gear	5.0	str:5:str:1:5
 R	shaman/enhancement	12	11994	12733	gear	5.0	ap:10:ap:0.5:5
 R	shaman/enhancement	12	11994	12737	gear	0.0	
-R	shaman/enhancement	12	11994	12738	gear	1.0	mp5:2:mp5:0.5:1
-R	shaman/enhancement	12	11994	12739	gear	1.0	agi:2:agi:0.5:1
-R	shaman/enhancement	12	11994	12740	gear	9.0	sta:3:sta:3:9
-R	shaman/enhancement	12	11994	12741	gear	9.0	sta:3:sta:3:9
-R	shaman/enhancement	12	11994	12742	gear	9.0	sta:3:sta:3:9
-R	shaman/enhancement	12	11994	12743	gear	9.0	sta:3:sta:3:9
-R	shaman/enhancement	12	11994	12744	gear	9.0	sta:3:sta:3:9
-R	shaman/enhancement	12	13183	0	mh	276.28999999999996	dps:39.47:dps:7:276.29
-R	shaman/enhancement	12	14122	0	gear	1.008	armor:14:armor:0.072:1.008
-R	shaman/enhancement	12	14122	12718	gear	8.708	int:2:int:0.85:1.7,sta:2:sta:3:6,armor:14:armor:0.072:1.008
-R	shaman/enhancement	12	14122	12719	gear	11.008	spi:2:spi:2:4,sta:2:sta:3:6,armor:14:armor:0.072:1.008
-R	shaman/enhancement	12	14122	12720	gear	6.708	int:2:int:0.85:1.7,spi:2:spi:2:4,armor:14:armor:0.072:1.008
-R	shaman/enhancement	12	14122	12729	gear	3.558	int:3:int:0.85:2.55,armor:14:armor:0.072:1.008
-R	shaman/enhancement	12	14122	12730	gear	7.008	spi:3:spi:2:6,armor:14:armor:0.072:1.008
-R	shaman/enhancement	12	14122	12731	gear	10.008	sta:3:sta:3:9,armor:14:armor:0.072:1.008
-R	shaman/enhancement	12	14122	12734	gear	6.608	sp:4:sp:1.4:5.6,armor:14:armor:0.072:1.008
-R	shaman/enhancement	12	14122	12735	gear	3.808	spDmg:2:sp:1.4:2.8,armor:14:armor:0.072:1.008
-R	shaman/enhancement	12	14122	12740	gear	7.008	sta:2:sta:3:6,armor:14:armor:0.072:1.008
-R	shaman/enhancement	12	14122	12741	gear	7.008	sta:2:sta:3:6,armor:14:armor:0.072:1.008
-R	shaman/enhancement	12	14122	12742	gear	7.008	sta:2:sta:3:6,armor:14:armor:0.072:1.008
-R	shaman/enhancement	12	14122	12743	gear	7.008	sta:2:sta:3:6,armor:14:armor:0.072:1.008
-R	shaman/enhancement	12	14122	12744	gear	7.008	sta:2:sta:3:6,armor:14:armor:0.072:1.008
-R	shaman/enhancement	12	14122	12745	gear	7.108	int:2:int:0.85:1.7,sta:1:sta:3:3,sp:1:sp:1.4:1.4,armor:14:armor:0.072:1.008
-R	shaman/enhancement	12	14122	12756	gear	1.008	armor:14:armor:0.072:1.008
-R	shaman/enhancement	12	14122	12757	gear	1.008	armor:14:armor:0.072:1.008
-R	shaman/enhancement	12	14122	12758	gear	1.008	armor:14:armor:0.072:1.008
-R	shaman/enhancement	12	14122	12759	gear	1.008	armor:14:armor:0.072:1.008
-R	shaman/enhancement	12	14122	12761	gear	1.008	armor:14:armor:0.072:1.008
-R	shaman/enhancement	12	14340	0	gear	63.336	sta:19:sta:3:57,armor:88:armor:0.072:6.336
-R	shaman/enhancement	12	14673	0	gear	24.948	str:3:str:1:3,agi:9:agi:0.5:4.5,sta:5:sta:3:15,armor:34:armor:0.072:2.448
-R	shaman/enhancement	12	14964	0	oh	123.83999999999999	armor:1720:armor:0.072:123.84
-R	shaman/enhancement	12	14964	12718	oh	158.48999999999998	int:9:int:0.85:7.65,sta:9:sta:3:27,armor:1720:armor:0.072:123.84
-R	shaman/enhancement	12	14964	12719	oh	168.83999999999997	spi:9:spi:2:18,sta:9:sta:3:27,armor:1720:armor:0.072:123.84
-R	shaman/enhancement	12	14964	12720	oh	149.48999999999998	int:9:int:0.85:7.65,spi:9:spi:2:18,armor:1720:armor:0.072:123.84
-R	shaman/enhancement	12	14964	12721	oh	155.33999999999997	agi:9:agi:0.5:4.5,sta:9:sta:3:27,armor:1720:armor:0.072:123.84
-R	shaman/enhancement	12	14964	12722	oh	159.83999999999997	sta:9:sta:3:27,str:9:str:1:9,armor:1720:armor:0.072:123.84
-R	shaman/enhancement	12	14964	12723	oh	140.48999999999998	int:9:int:0.85:7.65,str:9:str:1:9,armor:1720:armor:0.072:123.84
-R	shaman/enhancement	12	14964	12724	oh	135.98999999999998	agi:9:agi:0.5:4.5,int:9:int:0.85:7.65,armor:1720:armor:0.072:123.84
-R	shaman/enhancement	12	14964	12725	oh	150.83999999999997	spi:9:spi:2:18,str:9:str:1:9,armor:1720:armor:0.072:123.84
-R	shaman/enhancement	12	14964	12726	oh	146.33999999999997	agi:9:agi:0.5:4.5,spi:9:spi:2:18,armor:1720:armor:0.072:123.84
-R	shaman/enhancement	12	14964	12727	oh	137.33999999999997	agi:9:agi:0.5:4.5,str:9:str:1:9,armor:1720:armor:0.072:123.84
-R	shaman/enhancement	12	14964	12728	oh	130.83999999999997	agi:14:agi:0.5:7,armor:1720:armor:0.072:123.84
-R	shaman/enhancement	12	14964	12729	oh	135.73999999999998	int:14:int:0.85:11.9,armor:1720:armor:0.072:123.84
-R	shaman/enhancement	12	14964	12730	oh	151.83999999999997	spi:14:spi:2:28,armor:1720:armor:0.072:123.84
-R	shaman/enhancement	12	14964	12731	oh	165.83999999999997	sta:14:sta:3:42,armor:1720:armor:0.072:123.84
-R	shaman/enhancement	12	14964	12732	oh	137.83999999999997	str:14:str:1:14,armor:1720:armor:0.072:123.84
-R	shaman/enhancement	12	14964	12733	oh	137.83999999999997	ap:28:ap:0.5:14,armor:1720:armor:0.072:123.84
-R	shaman/enhancement	12	14964	12734	oh	146.23999999999998	sp:16:sp:1.4:22.4,armor:1720:armor:0.072:123.84
-R	shaman/enhancement	12	14964	12735	oh	137.83999999999997	spDmg:10:sp:1.4:14,armor:1720:armor:0.072:123.84
-R	shaman/enhancement	12	14964	12736	oh	123.83999999999999	armor:1720:armor:0.072:123.84
-R	shaman/enhancement	12	14964	12740	oh	150.83999999999997	sta:9:sta:3:27,armor:1720:armor:0.072:123.84
-R	shaman/enhancement	12	14964	12741	oh	150.83999999999997	sta:9:sta:3:27,armor:1720:armor:0.072:123.84
-R	shaman/enhancement	12	14964	12742	oh	150.83999999999997	sta:9:sta:3:27,armor:1720:armor:0.072:123.84
-R	shaman/enhancement	12	14964	12743	oh	150.83999999999997	sta:9:sta:3:27,armor:1720:armor:0.072:123.84
-R	shaman/enhancement	12	14964	12744	oh	150.83999999999997	sta:9:sta:3:27,armor:1720:armor:0.072:123.84
-R	shaman/enhancement	12	14964	12745	oh	157.33999999999997	int:10:int:0.85:8.5,sta:6:sta:3:18,sp:5:sp:1.4:7,armor:1720:armor:0.072:123.84
-R	shaman/enhancement	12	14964	12746	oh	151.33999999999997	int:10:int:0.85:8.5,spi:6:spi:2:12,sp:5:sp:1.4:7,armor:1720:armor:0.072:123.84
-R	shaman/enhancement	12	14964	12747	oh	172.83999999999997	spi:6:spi:2:12,sta:10:sta:3:30,sp:5:sp:1.4:7,armor:1720:armor:0.072:123.84
-R	shaman/enhancement	12	14964	12748	oh	163.14	int:6:int:0.85:5.1,sta:10:sta:3:30,spDmg:3:sp:1.4:4.2,armor:1720:armor:0.072:123.84
-R	shaman/enhancement	12	14964	12749	oh	148.54	int:10:int:0.85:8.5,spi:6:spi:2:12,spDmg:3:sp:1.4:4.2,armor:1720:armor:0.072:123.84
-R	shaman/enhancement	12	14964	12750	oh	170.04	spi:6:spi:2:12,sta:10:sta:3:30,spDmg:3:sp:1.4:4.2,armor:1720:armor:0.072:123.84
-R	shaman/enhancement	12	14964	12753	oh	159.83999999999997	sta:10:sta:3:30,str:6:str:1:6,armor:1720:armor:0.072:123.84
-R	shaman/enhancement	12	14964	12754	oh	160.83999999999997	sp:5:sp:1.4:7,sta:10:sta:3:30,armor:1720:armor:0.072:123.84
-R	shaman/enhancement	12	14964	12759	oh	123.83999999999999	armor:1720:armor:0.072:123.84
-R	shaman/enhancement	12	14964	12760	oh	143.83999999999997	spNature:20:spNature:1:20,armor:1720:armor:0.072:123.84
-R	shaman/enhancement	12	15235	0	mh	199.99	dps:28.57:dps:7:199.99
-R	shaman/enhancement	12	15235	12718	mh	219.24	int:5:int:0.85:4.25,sta:5:sta:3:15,dps:28.57:dps:7:199.99
-R	shaman/enhancement	12	15235	12719	mh	224.99	spi:5:spi:2:10,sta:5:sta:3:15,dps:28.57:dps:7:199.99
-R	shaman/enhancement	12	15235	12720	mh	214.24	int:5:int:0.85:4.25,spi:5:spi:2:10,dps:28.57:dps:7:199.99
-R	shaman/enhancement	12	15235	12721	mh	217.49	agi:5:agi:0.5:2.5,sta:5:sta:3:15,dps:28.57:dps:7:199.99
-R	shaman/enhancement	12	15235	12722	mh	219.99	sta:5:sta:3:15,str:5:str:1:5,dps:28.57:dps:7:199.99
-R	shaman/enhancement	12	15235	12723	mh	209.24	int:5:int:0.85:4.25,str:5:str:1:5,dps:28.57:dps:7:199.99
-R	shaman/enhancement	12	15235	12724	mh	206.74	agi:5:agi:0.5:2.5,int:5:int:0.85:4.25,dps:28.57:dps:7:199.99
-R	shaman/enhancement	12	15235	12725	mh	214.99	spi:5:spi:2:10,str:5:str:1:5,dps:28.57:dps:7:199.99
-R	shaman/enhancement	12	15235	12726	mh	212.49	agi:5:agi:0.5:2.5,spi:5:spi:2:10,dps:28.57:dps:7:199.99
-R	shaman/enhancement	12	15235	12727	mh	207.49	agi:5:agi:0.5:2.5,str:5:str:1:5,dps:28.57:dps:7:199.99
-R	shaman/enhancement	12	15235	12728	mh	203.99	agi:8:agi:0.5:4,dps:28.57:dps:7:199.99
-R	shaman/enhancement	12	15235	12729	mh	206.79000000000002	int:8:int:0.85:6.8,dps:28.57:dps:7:199.99
-R	shaman/enhancement	12	15235	12730	mh	215.99	spi:8:spi:2:16,dps:28.57:dps:7:199.99
-R	shaman/enhancement	12	15235	12731	mh	223.99	sta:8:sta:3:24,dps:28.57:dps:7:199.99
-R	shaman/enhancement	12	15235	12732	mh	207.99	str:8:str:1:8,dps:28.57:dps:7:199.99
-R	shaman/enhancement	12	15235	12733	mh	207.99	ap:16:ap:0.5:8,dps:28.57:dps:7:199.99
-R	shaman/enhancement	12	15235	12736	mh	199.99	dps:28.57:dps:7:199.99
-R	shaman/enhancement	12	15235	12740	mh	214.99	sta:5:sta:3:15,dps:28.57:dps:7:199.99
-R	shaman/enhancement	12	15235	12741	mh	214.99	sta:5:sta:3:15,dps:28.57:dps:7:199.99
-R	shaman/enhancement	12	15235	12742	mh	214.99	sta:5:sta:3:15,dps:28.57:dps:7:199.99
-R	shaman/enhancement	12	15235	12743	mh	214.99	sta:5:sta:3:15,dps:28.57:dps:7:199.99
-R	shaman/enhancement	12	15235	12744	mh	214.99	sta:5:sta:3:15,dps:28.57:dps:7:199.99
-R	shaman/enhancement	12	15235	12751	mh	222.99	agi:3:agi:0.5:1.5,ap:7:ap:0.5:3.5,sta:6:sta:3:18,dps:28.57:dps:7:199.99
-R	shaman/enhancement	12	15235	12752	mh	222.49	agi:3:agi:0.5:1.5,sta:6:sta:3:18,str:3:str:1:3,dps:28.57:dps:7:199.99
-R	shaman/enhancement	12	15235	12753	mh	220.99	sta:6:sta:3:18,str:3:str:1:3,dps:28.57:dps:7:199.99
-R	shaman/enhancement	12	15235	12754	mh	222.19	sp:3:sp:1.4:4.2,sta:6:sta:3:18,dps:28.57:dps:7:199.99
-R	shaman/enhancement	12	15235	12759	mh	199.99	dps:28.57:dps:7:199.99
-R	shaman/enhancement	12	15235	12906	mh	203.64999999999998	int:6:int:0.85:5.1,sta:4:sta:3:12,sp:38:sp:1.4:53.2,dps:19.05:dps:7:133.35
-R	shaman/enhancement	12	15235	12908	mh	199.64999999999998	int:6:int:0.85:5.1,sp:38:sp:1.4:53.2,spi:4:spi:2:8,dps:19.05:dps:7:133.35
-R	shaman/enhancement	12	15235	12910	mh	212.54999999999998	sp:38:sp:1.4:53.2,spi:4:spi:2:8,sta:6:sta:3:18,dps:19.05:dps:7:133.35
-R	shaman/enhancement	12	15235	12912	mh	188.35	spDmg:24:sp:1.4:33.6,int:4:int:0.85:3.4,sta:6:sta:3:18,dps:19.05:dps:7:133.35
-R	shaman/enhancement	12	15235	12913	mh	180.04999999999998	int:6:int:0.85:5.1,spDmg:24:sp:1.4:33.6,spi:4:spi:2:8,dps:19.05:dps:7:133.35
-R	shaman/enhancement	12	15235	12916	mh	192.95	spDmg:24:sp:1.4:33.6,spi:4:spi:2:8,sta:6:sta:3:18,dps:19.05:dps:7:133.35
-R	shaman/enhancement	12	15235	12917	mh	193.35	sp:38:sp:1.4:53.2,int:8:int:0.85:6.8,dps:19.05:dps:7:133.35
-R	shaman/enhancement	12	15235	12920	mh	173.75	int:8:int:0.85:6.8,spDmg:24:sp:1.4:33.6,dps:19.05:dps:7:133.35
-R	shaman/enhancement	12	15477	0	gear	7.271999999999999	armor:101:armor:0.072:7.272
-R	shaman/enhancement	12	15477	12718	gear	11.122	int:1:int:0.85:0.85,sta:1:sta:3:3,armor:101:armor:0.072:7.272
-R	shaman/enhancement	12	15477	12719	gear	12.271999999999998	spi:1:spi:2:2,sta:1:sta:3:3,armor:101:armor:0.072:7.272
-R	shaman/enhancement	12	15477	12720	gear	10.122	int:1:int:0.85:0.85,spi:1:spi:2:2,armor:101:armor:0.072:7.272
-R	shaman/enhancement	12	15477	12721	gear	10.771999999999998	agi:1:agi:0.5:0.5,sta:1:sta:3:3,armor:101:armor:0.072:7.272
-R	shaman/enhancement	12	15477	12722	gear	11.271999999999998	sta:1:sta:3:3,str:1:str:1:1,armor:101:armor:0.072:7.272
-R	shaman/enhancement	12	15477	12723	gear	9.122	int:1:int:0.85:0.85,str:1:str:1:1,armor:101:armor:0.072:7.272
-R	shaman/enhancement	12	15477	12724	gear	8.622	agi:1:agi:0.5:0.5,int:1:int:0.85:0.85,armor:101:armor:0.072:7.272
-R	shaman/enhancement	12	15477	12725	gear	10.271999999999998	spi:1:spi:2:2,str:1:str:1:1,armor:101:armor:0.072:7.272
-R	shaman/enhancement	12	15477	12726	gear	9.771999999999998	agi:1:agi:0.5:0.5,spi:1:spi:2:2,armor:101:armor:0.072:7.272
-R	shaman/enhancement	12	15477	12727	gear	8.771999999999998	agi:1:agi:0.5:0.5,str:1:str:1:1,armor:101:armor:0.072:7.272
-R	shaman/enhancement	12	15477	12728	gear	8.271999999999998	agi:2:agi:0.5:1,armor:101:armor:0.072:7.272
-R	shaman/enhancement	12	15477	12729	gear	8.972	int:2:int:0.85:1.7,armor:101:armor:0.072:7.272
-R	shaman/enhancement	12	15477	12730	gear	11.271999999999998	spi:2:spi:2:4,armor:101:armor:0.072:7.272
-R	shaman/enhancement	12	15477	12731	gear	13.271999999999998	sta:2:sta:3:6,armor:101:armor:0.072:7.272
-R	shaman/enhancement	12	15477	12732	gear	9.271999999999998	str:2:str:1:2,armor:101:armor:0.072:7.272
-R	shaman/enhancement	12	15477	12733	gear	9.271999999999998	ap:4:ap:0.5:2,armor:101:armor:0.072:7.272
-R	shaman/enhancement	12	15477	12734	gear	10.072	sp:2:sp:1.4:2.8,armor:101:armor:0.072:7.272
-R	shaman/enhancement	12	15477	12735	gear	8.671999999999999	spDmg:1:sp:1.4:1.4,armor:101:armor:0.072:7.272
-R	shaman/enhancement	12	15477	12736	gear	7.271999999999999	armor:101:armor:0.072:7.272
-R	shaman/enhancement	12	15477	12740	gear	10.271999999999998	sta:1:sta:3:3,armor:101:armor:0.072:7.272
-R	shaman/enhancement	12	15477	12741	gear	10.271999999999998	sta:1:sta:3:3,armor:101:armor:0.072:7.272
-R	shaman/enhancement	12	15477	12742	gear	10.271999999999998	sta:1:sta:3:3,armor:101:armor:0.072:7.272
-R	shaman/enhancement	12	15477	12743	gear	10.271999999999998	sta:1:sta:3:3,armor:101:armor:0.072:7.272
-R	shaman/enhancement	12	15477	12744	gear	10.271999999999998	sta:1:sta:3:3,armor:101:armor:0.072:7.272
-R	shaman/enhancement	12	15477	12759	gear	7.271999999999999	armor:101:armor:0.072:7.272
-R	shaman/enhancement	12	15945	0	oh	10.0	sta:2:sta:3:6,spi:2:spi:2:4
-R	shaman/enhancement	12	16711	0	gear	46.8	agi:21:agi:0.5:10.5,sta:9:sta:3:27,hit:0.3:hit:1.2:0.36,hit:0.3:spellHit:2.2:0.66,armor:115:armor:0.072:8.28
-R	shaman/enhancement	12	18726	0	gear	50.256	sta:15:sta:3:45,armor:73:armor:0.072:5.256
-R	shaman/enhancement	12	20129	0	gear	38.304	agi:6:agi:0.5:3,str:6:str:1:6,sta:6:sta:3:18,armor:157:armor:0.072:11.304
+R	shaman/enhancement	12	11994	12738	gear	1.26	mp5:2:mp5:0.63:1.26
+R	shaman/enhancement	12	11994	12739	gear	0.96	agi:2:agi:0.48:0.96
+R	shaman/enhancement	12	11994	12740	gear	7.5	sta:3:sta:2.5:7.5
+R	shaman/enhancement	12	11994	12741	gear	7.5	sta:3:sta:2.5:7.5
+R	shaman/enhancement	12	11994	12742	gear	7.5	sta:3:sta:2.5:7.5
+R	shaman/enhancement	12	11994	12743	gear	7.5	sta:3:sta:2.5:7.5
+R	shaman/enhancement	12	11994	12744	gear	7.5	sta:3:sta:2.5:7.5
+R	shaman/enhancement	12	13183	0	mh	274.96999999999997	dps:39.47:dps:7:276.29,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	14122	0	gear	0.924	armor:14:armor:0.066:0.924
+R	shaman/enhancement	12	14122	12718	gear	7.864	int:2:int:0.97:1.94,sta:2:sta:2.5:5,armor:14:armor:0.066:0.924
+R	shaman/enhancement	12	14122	12719	gear	10.123999999999999	spi:2:spi:2.1:4.2,sta:2:sta:2.5:5,armor:14:armor:0.066:0.924
+R	shaman/enhancement	12	14122	12720	gear	7.064000000000001	int:2:int:0.97:1.94,spi:2:spi:2.1:4.2,armor:14:armor:0.066:0.924
+R	shaman/enhancement	12	14122	12729	gear	3.834	int:3:int:0.97:2.91,armor:14:armor:0.066:0.924
+R	shaman/enhancement	12	14122	12730	gear	7.224000000000001	spi:3:spi:2.1:6.3,armor:14:armor:0.066:0.924
+R	shaman/enhancement	12	14122	12731	gear	8.424	sta:3:sta:2.5:7.5,armor:14:armor:0.066:0.924
+R	shaman/enhancement	12	14122	12734	gear	6.524	sp:4:sp:1.4:5.6,armor:14:armor:0.066:0.924
+R	shaman/enhancement	12	14122	12735	gear	3.7239999999999998	spDmg:2:sp:1.4:2.8,armor:14:armor:0.066:0.924
+R	shaman/enhancement	12	14122	12740	gear	5.924	sta:2:sta:2.5:5,armor:14:armor:0.066:0.924
+R	shaman/enhancement	12	14122	12741	gear	5.924	sta:2:sta:2.5:5,armor:14:armor:0.066:0.924
+R	shaman/enhancement	12	14122	12742	gear	5.924	sta:2:sta:2.5:5,armor:14:armor:0.066:0.924
+R	shaman/enhancement	12	14122	12743	gear	5.924	sta:2:sta:2.5:5,armor:14:armor:0.066:0.924
+R	shaman/enhancement	12	14122	12744	gear	5.924	sta:2:sta:2.5:5,armor:14:armor:0.066:0.924
+R	shaman/enhancement	12	14122	12745	gear	6.764	int:2:int:0.97:1.94,sta:1:sta:2.5:2.5,sp:1:sp:1.4:1.4,armor:14:armor:0.066:0.924
+R	shaman/enhancement	12	14122	12756	gear	0.924	armor:14:armor:0.066:0.924
+R	shaman/enhancement	12	14122	12757	gear	0.924	armor:14:armor:0.066:0.924
+R	shaman/enhancement	12	14122	12758	gear	0.924	armor:14:armor:0.066:0.924
+R	shaman/enhancement	12	14122	12759	gear	0.924	armor:14:armor:0.066:0.924
+R	shaman/enhancement	12	14122	12761	gear	0.924	armor:14:armor:0.066:0.924
+R	shaman/enhancement	12	14340	0	gear	53.308	sta:19:sta:2.5:47.5,armor:88:armor:0.066:5.808
+R	shaman/enhancement	12	14673	0	gear	22.064	str:3:str:1:3,agi:9:agi:0.48:4.32,sta:5:sta:2.5:12.5,armor:34:armor:0.066:2.244
+R	shaman/enhancement	12	14964	0	oh	113.52000000000001	armor:1720:armor:0.066:113.52
+R	shaman/enhancement	12	14964	12718	oh	144.75	int:9:int:0.97:8.73,sta:9:sta:2.5:22.5,armor:1720:armor:0.066:113.52
+R	shaman/enhancement	12	14964	12719	oh	154.92000000000002	spi:9:spi:2.1:18.9,sta:9:sta:2.5:22.5,armor:1720:armor:0.066:113.52
+R	shaman/enhancement	12	14964	12720	oh	141.15	int:9:int:0.97:8.73,spi:9:spi:2.1:18.9,armor:1720:armor:0.066:113.52
+R	shaman/enhancement	12	14964	12721	oh	140.34	agi:9:agi:0.48:4.32,sta:9:sta:2.5:22.5,armor:1720:armor:0.066:113.52
+R	shaman/enhancement	12	14964	12722	oh	145.02	sta:9:sta:2.5:22.5,str:9:str:1:9,armor:1720:armor:0.066:113.52
+R	shaman/enhancement	12	14964	12723	oh	131.25	int:9:int:0.97:8.73,str:9:str:1:9,armor:1720:armor:0.066:113.52
+R	shaman/enhancement	12	14964	12724	oh	126.57000000000001	agi:9:agi:0.48:4.32,int:9:int:0.97:8.73,armor:1720:armor:0.066:113.52
+R	shaman/enhancement	12	14964	12725	oh	141.42000000000002	spi:9:spi:2.1:18.9,str:9:str:1:9,armor:1720:armor:0.066:113.52
+R	shaman/enhancement	12	14964	12726	oh	136.74	agi:9:agi:0.48:4.32,spi:9:spi:2.1:18.9,armor:1720:armor:0.066:113.52
+R	shaman/enhancement	12	14964	12727	oh	126.84	agi:9:agi:0.48:4.32,str:9:str:1:9,armor:1720:armor:0.066:113.52
+R	shaman/enhancement	12	14964	12728	oh	120.24000000000001	agi:14:agi:0.48:6.72,armor:1720:armor:0.066:113.52
+R	shaman/enhancement	12	14964	12729	oh	127.10000000000001	int:14:int:0.97:13.58,armor:1720:armor:0.066:113.52
+R	shaman/enhancement	12	14964	12730	oh	142.92000000000002	spi:14:spi:2.1:29.4,armor:1720:armor:0.066:113.52
+R	shaman/enhancement	12	14964	12731	oh	148.52	sta:14:sta:2.5:35,armor:1720:armor:0.066:113.52
+R	shaman/enhancement	12	14964	12732	oh	127.52000000000001	str:14:str:1:14,armor:1720:armor:0.066:113.52
+R	shaman/enhancement	12	14964	12733	oh	127.52000000000001	ap:28:ap:0.5:14,armor:1720:armor:0.066:113.52
+R	shaman/enhancement	12	14964	12734	oh	135.92000000000002	sp:16:sp:1.4:22.4,armor:1720:armor:0.066:113.52
+R	shaman/enhancement	12	14964	12735	oh	127.52000000000001	spDmg:10:sp:1.4:14,armor:1720:armor:0.066:113.52
+R	shaman/enhancement	12	14964	12736	oh	113.52000000000001	armor:1720:armor:0.066:113.52
+R	shaman/enhancement	12	14964	12740	oh	136.02	sta:9:sta:2.5:22.5,armor:1720:armor:0.066:113.52
+R	shaman/enhancement	12	14964	12741	oh	136.02	sta:9:sta:2.5:22.5,armor:1720:armor:0.066:113.52
+R	shaman/enhancement	12	14964	12742	oh	136.02	sta:9:sta:2.5:22.5,armor:1720:armor:0.066:113.52
+R	shaman/enhancement	12	14964	12743	oh	136.02	sta:9:sta:2.5:22.5,armor:1720:armor:0.066:113.52
+R	shaman/enhancement	12	14964	12744	oh	136.02	sta:9:sta:2.5:22.5,armor:1720:armor:0.066:113.52
+R	shaman/enhancement	12	14964	12745	oh	145.22	int:10:int:0.97:9.7,sta:6:sta:2.5:15,sp:5:sp:1.4:7,armor:1720:armor:0.066:113.52
+R	shaman/enhancement	12	14964	12746	oh	142.82000000000002	int:10:int:0.97:9.7,spi:6:spi:2.1:12.6,sp:5:sp:1.4:7,armor:1720:armor:0.066:113.52
+R	shaman/enhancement	12	14964	12747	oh	158.12	spi:6:spi:2.1:12.6,sta:10:sta:2.5:25,sp:5:sp:1.4:7,armor:1720:armor:0.066:113.52
+R	shaman/enhancement	12	14964	12748	oh	148.54000000000002	int:6:int:0.97:5.82,sta:10:sta:2.5:25,spDmg:3:sp:1.4:4.2,armor:1720:armor:0.066:113.52
+R	shaman/enhancement	12	14964	12749	oh	140.02	int:10:int:0.97:9.7,spi:6:spi:2.1:12.6,spDmg:3:sp:1.4:4.2,armor:1720:armor:0.066:113.52
+R	shaman/enhancement	12	14964	12750	oh	155.32	spi:6:spi:2.1:12.6,sta:10:sta:2.5:25,spDmg:3:sp:1.4:4.2,armor:1720:armor:0.066:113.52
+R	shaman/enhancement	12	14964	12753	oh	144.52	sta:10:sta:2.5:25,str:6:str:1:6,armor:1720:armor:0.066:113.52
+R	shaman/enhancement	12	14964	12754	oh	145.52	sp:5:sp:1.4:7,sta:10:sta:2.5:25,armor:1720:armor:0.066:113.52
+R	shaman/enhancement	12	14964	12759	oh	113.52000000000001	armor:1720:armor:0.066:113.52
+R	shaman/enhancement	12	14964	12760	oh	133.52	spNature:20:spNature:1:20,armor:1720:armor:0.066:113.52
+R	shaman/enhancement	12	15235	0	mh	198.67000000000002	dps:28.57:dps:7:199.99,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	15235	12718	mh	216.02	int:5:int:0.97:4.85,sta:5:sta:2.5:12.5,dps:28.57:dps:7:199.99,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	15235	12719	mh	221.67000000000002	spi:5:spi:2.1:10.5,sta:5:sta:2.5:12.5,dps:28.57:dps:7:199.99,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	15235	12720	mh	214.02	int:5:int:0.97:4.85,spi:5:spi:2.1:10.5,dps:28.57:dps:7:199.99,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	15235	12721	mh	213.57000000000002	agi:5:agi:0.48:2.4,sta:5:sta:2.5:12.5,dps:28.57:dps:7:199.99,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	15235	12722	mh	216.17000000000002	sta:5:sta:2.5:12.5,str:5:str:1:5,dps:28.57:dps:7:199.99,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	15235	12723	mh	208.52	int:5:int:0.97:4.85,str:5:str:1:5,dps:28.57:dps:7:199.99,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	15235	12724	mh	205.92000000000002	agi:5:agi:0.48:2.4,int:5:int:0.97:4.85,dps:28.57:dps:7:199.99,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	15235	12725	mh	214.17000000000002	spi:5:spi:2.1:10.5,str:5:str:1:5,dps:28.57:dps:7:199.99,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	15235	12726	mh	211.57000000000002	agi:5:agi:0.48:2.4,spi:5:spi:2.1:10.5,dps:28.57:dps:7:199.99,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	15235	12727	mh	206.07000000000002	agi:5:agi:0.48:2.4,str:5:str:1:5,dps:28.57:dps:7:199.99,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	15235	12728	mh	202.51000000000002	agi:8:agi:0.48:3.84,dps:28.57:dps:7:199.99,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	15235	12729	mh	206.43	int:8:int:0.97:7.76,dps:28.57:dps:7:199.99,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	15235	12730	mh	215.47000000000003	spi:8:spi:2.1:16.8,dps:28.57:dps:7:199.99,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	15235	12731	mh	218.67000000000002	sta:8:sta:2.5:20,dps:28.57:dps:7:199.99,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	15235	12732	mh	206.67000000000002	str:8:str:1:8,dps:28.57:dps:7:199.99,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	15235	12733	mh	206.67000000000002	ap:16:ap:0.5:8,dps:28.57:dps:7:199.99,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	15235	12736	mh	198.67000000000002	dps:28.57:dps:7:199.99,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	15235	12740	mh	211.17000000000002	sta:5:sta:2.5:12.5,dps:28.57:dps:7:199.99,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	15235	12741	mh	211.17000000000002	sta:5:sta:2.5:12.5,dps:28.57:dps:7:199.99,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	15235	12742	mh	211.17000000000002	sta:5:sta:2.5:12.5,dps:28.57:dps:7:199.99,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	15235	12743	mh	211.17000000000002	sta:5:sta:2.5:12.5,dps:28.57:dps:7:199.99,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	15235	12744	mh	211.17000000000002	sta:5:sta:2.5:12.5,dps:28.57:dps:7:199.99,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	15235	12751	mh	218.61	agi:3:agi:0.48:1.44,ap:7:ap:0.5:3.5,sta:6:sta:2.5:15,dps:28.57:dps:7:199.99,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	15235	12752	mh	218.11	agi:3:agi:0.48:1.44,sta:6:sta:2.5:15,str:3:str:1:3,dps:28.57:dps:7:199.99,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	15235	12753	mh	216.67000000000002	sta:6:sta:2.5:15,str:3:str:1:3,dps:28.57:dps:7:199.99,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	15235	12754	mh	217.87	sp:3:sp:1.4:4.2,sta:6:sta:2.5:15,dps:28.57:dps:7:199.99,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	15235	12759	mh	198.67000000000002	dps:28.57:dps:7:199.99,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	15235	12906	mh	201.05	int:6:int:0.97:5.82,sta:4:sta:2.5:10,sp:38:sp:1.4:53.2,dps:19.05:dps:7:133.35,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	15235	12908	mh	199.45	int:6:int:0.97:5.82,sp:38:sp:1.4:53.2,spi:4:spi:2.1:8.4,dps:19.05:dps:7:133.35,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	15235	12910	mh	208.63	sp:38:sp:1.4:53.2,spi:4:spi:2.1:8.4,sta:6:sta:2.5:15,dps:19.05:dps:7:133.35,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	15235	12912	mh	184.51	spDmg:24:sp:1.4:33.6,int:4:int:0.97:3.88,sta:6:sta:2.5:15,dps:19.05:dps:7:133.35,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	15235	12913	mh	179.85	int:6:int:0.97:5.82,spDmg:24:sp:1.4:33.6,spi:4:spi:2.1:8.4,dps:19.05:dps:7:133.35,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	15235	12916	mh	189.03	spDmg:24:sp:1.4:33.6,spi:4:spi:2.1:8.4,sta:6:sta:2.5:15,dps:19.05:dps:7:133.35,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	15235	12917	mh	192.99	sp:38:sp:1.4:53.2,int:8:int:0.97:7.76,dps:19.05:dps:7:133.35,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	15235	12920	mh	173.39	int:8:int:0.97:7.76,spDmg:24:sp:1.4:33.6,dps:19.05:dps:7:133.35,speed:-0.6:speed:2.2:-1.32
+R	shaman/enhancement	12	15477	0	gear	6.666	armor:101:armor:0.066:6.666
+R	shaman/enhancement	12	15477	12718	gear	10.136	int:1:int:0.97:0.97,sta:1:sta:2.5:2.5,armor:101:armor:0.066:6.666
+R	shaman/enhancement	12	15477	12719	gear	11.266	spi:1:spi:2.1:2.1,sta:1:sta:2.5:2.5,armor:101:armor:0.066:6.666
+R	shaman/enhancement	12	15477	12720	gear	9.736	int:1:int:0.97:0.97,spi:1:spi:2.1:2.1,armor:101:armor:0.066:6.666
+R	shaman/enhancement	12	15477	12721	gear	9.646	agi:1:agi:0.48:0.48,sta:1:sta:2.5:2.5,armor:101:armor:0.066:6.666
+R	shaman/enhancement	12	15477	12722	gear	10.166	sta:1:sta:2.5:2.5,str:1:str:1:1,armor:101:armor:0.066:6.666
+R	shaman/enhancement	12	15477	12723	gear	8.636000000000001	int:1:int:0.97:0.97,str:1:str:1:1,armor:101:armor:0.066:6.666
+R	shaman/enhancement	12	15477	12724	gear	8.116	agi:1:agi:0.48:0.48,int:1:int:0.97:0.97,armor:101:armor:0.066:6.666
+R	shaman/enhancement	12	15477	12725	gear	9.766	spi:1:spi:2.1:2.1,str:1:str:1:1,armor:101:armor:0.066:6.666
+R	shaman/enhancement	12	15477	12726	gear	9.246	agi:1:agi:0.48:0.48,spi:1:spi:2.1:2.1,armor:101:armor:0.066:6.666
+R	shaman/enhancement	12	15477	12727	gear	8.146	agi:1:agi:0.48:0.48,str:1:str:1:1,armor:101:armor:0.066:6.666
+R	shaman/enhancement	12	15477	12728	gear	7.626	agi:2:agi:0.48:0.96,armor:101:armor:0.066:6.666
+R	shaman/enhancement	12	15477	12729	gear	8.606	int:2:int:0.97:1.94,armor:101:armor:0.066:6.666
+R	shaman/enhancement	12	15477	12730	gear	10.866	spi:2:spi:2.1:4.2,armor:101:armor:0.066:6.666
+R	shaman/enhancement	12	15477	12731	gear	11.666	sta:2:sta:2.5:5,armor:101:armor:0.066:6.666
+R	shaman/enhancement	12	15477	12732	gear	8.666	str:2:str:1:2,armor:101:armor:0.066:6.666
+R	shaman/enhancement	12	15477	12733	gear	8.666	ap:4:ap:0.5:2,armor:101:armor:0.066:6.666
+R	shaman/enhancement	12	15477	12734	gear	9.466000000000001	sp:2:sp:1.4:2.8,armor:101:armor:0.066:6.666
+R	shaman/enhancement	12	15477	12735	gear	8.066	spDmg:1:sp:1.4:1.4,armor:101:armor:0.066:6.666
+R	shaman/enhancement	12	15477	12736	gear	6.666	armor:101:armor:0.066:6.666
+R	shaman/enhancement	12	15477	12740	gear	9.166	sta:1:sta:2.5:2.5,armor:101:armor:0.066:6.666
+R	shaman/enhancement	12	15477	12741	gear	9.166	sta:1:sta:2.5:2.5,armor:101:armor:0.066:6.666
+R	shaman/enhancement	12	15477	12742	gear	9.166	sta:1:sta:2.5:2.5,armor:101:armor:0.066:6.666
+R	shaman/enhancement	12	15477	12743	gear	9.166	sta:1:sta:2.5:2.5,armor:101:armor:0.066:6.666
+R	shaman/enhancement	12	15477	12744	gear	9.166	sta:1:sta:2.5:2.5,armor:101:armor:0.066:6.666
+R	shaman/enhancement	12	15477	12759	gear	6.666	armor:101:armor:0.066:6.666
+R	shaman/enhancement	12	15945	0	oh	9.2	sta:2:sta:2.5:5,spi:2:spi:2.1:4.2
+R	shaman/enhancement	12	16711	0	gear	41.19	agi:21:agi:0.48:10.08,sta:9:sta:2.5:22.5,hit:0.3:hit:1.2:0.36,hit:0.3:spellHit:2.2:0.66,armor:115:armor:0.066:7.59
+R	shaman/enhancement	12	18726	0	gear	42.318	sta:15:sta:2.5:37.5,armor:73:armor:0.066:4.818
+R	shaman/enhancement	12	20129	0	gear	34.242	agi:6:agi:0.48:2.88,str:6:str:1:6,sta:6:sta:2.5:15,armor:157:armor:0.066:10.362
 R	shaman/enhancement	12	22345	0	ranged	0.0	
-R	shaman/enhancement	12	22967	0	gear	103.29599999999999	sta:25:sta:3:75,armor:393:armor:0.072:28.296
-R	shaman/enhancement	12	250491	0	gear	36.498	int:5:int:0.85:4.25,sta:4:sta:3:12,spDmg:5:sp:1.4:7,armor:184:armor:0.072:13.248
-R	shaman/enhancement	12	252507	0	gear	43.872	sta:10:sta:3:30,spDmg:6:sp:1.4:8.4,armor:76:armor:0.072:5.472
-R	shaman/enhancement	12	254111	0	gear	50.538	int:9:int:0.85:7.65,sta:13:sta:3:39,armor:54:armor:0.072:3.888
-R	shaman/enhancement	12	270033	0	gear	7.808	agi:4:agi:0.5:2,str:3:str:1:3,armor:39:armor:0.072:2.808
-R	shaman/enhancement	12	271956	0	gear	74.394	agi:27:agi:0.5:13.5,sta:12:sta:3:36,crit:1:crit:1.8:1.8,crit:1:spellCrit:0.63:0.63,armor:312:armor:0.072:22.464
-R	shaman/enhancement	12	272958	0	gear	103.814	int:27:int:0.85:22.95,sta:12:sta:3:36,sp:16:sp:1.4:22.4,armor:312:armor:0.072:22.464
-R	shaman/enhancement	12	280082	0	mh	406.0	int:15:int:0.85:12.75,hit:1.5:hit:1.2:1.8,hit:1.5:spellHit:2.2:3.3,spi:21:spi:2:42,sp:66:sp:1.4:92.4,dps:36.25:dps:7:253.75
-R	shaman/enhancement	12	282560	0	gear	74.036	int:10:int:0.85:8.5,sta:13:sta:3:39,sp:8:sp:1.4:11.2,armor:213:armor:0.072:15.336
-R	shaman/enhancement	12	286609	0	oh	139.87199999999999	spi:6:spi:2:12,armor:1776:armor:0.072:127.872
-R	shaman/enhancement	25	1315	0	gear	67.0	sta:10:sta:4.9:49,spi:15:spi:1.2:18
-R	shaman/enhancement	25	1808	0	gear	11.1	armor:74:armor:0.15:11.1
+R	shaman/enhancement	12	22967	0	gear	88.438	sta:25:sta:2.5:62.5,armor:393:armor:0.066:25.938
+R	shaman/enhancement	12	250491	0	gear	33.994	int:5:int:0.97:4.85,sta:4:sta:2.5:10,spDmg:5:sp:1.4:7,armor:184:armor:0.066:12.144
+R	shaman/enhancement	12	252507	0	gear	38.416	sta:10:sta:2.5:25,spDmg:6:sp:1.4:8.4,armor:76:armor:0.066:5.016
+R	shaman/enhancement	12	254111	0	gear	44.794000000000004	int:9:int:0.97:8.73,sta:13:sta:2.5:32.5,armor:54:armor:0.066:3.564
+R	shaman/enhancement	12	270033	0	gear	7.494	agi:4:agi:0.48:1.92,str:3:str:1:3,armor:39:armor:0.066:2.574
+R	shaman/enhancement	12	271956	0	gear	66.002	agi:27:agi:0.48:12.96,sta:12:sta:2.5:30,crit:1:crit:1.8:1.8,crit:1:spellCrit:0.65:0.65,armor:312:armor:0.066:20.592
+R	shaman/enhancement	12	272958	0	gear	99.182	int:27:int:0.97:26.19,sta:12:sta:2.5:30,sp:16:sp:1.4:22.4,armor:312:armor:0.066:20.592
+R	shaman/enhancement	12	280082	0	mh	411.21999999999997	int:15:int:0.97:14.55,hit:1.5:hit:1.2:1.8,hit:1.5:spellHit:2.2:3.3,spi:21:spi:2.1:44.1,sp:66:sp:1.4:92.4,dps:36.25:dps:7:253.75,speed:0.6:speed:2.2:1.32
+R	shaman/enhancement	12	282560	0	gear	67.458	int:10:int:0.97:9.7,sta:13:sta:2.5:32.5,sp:8:sp:1.4:11.2,armor:213:armor:0.066:14.058
+R	shaman/enhancement	12	286609	0	oh	129.816	spi:6:spi:2.1:12.6,armor:1776:armor:0.066:117.216
+R	shaman/enhancement	25	1315	0	gear	45.0	sta:10:sta:2.1:21,spi:15:spi:1.6:24
+R	shaman/enhancement	25	1808	0	gear	6.29	armor:74:armor:0.085:6.29
 R	shaman/enhancement	25	1990	0	mh	180.383	dps:24.71:dps:7.3:180.383
-R	shaman/enhancement	25	1990	12718	mh	226.913	int:9:int:0.27:2.43,sta:9:sta:4.9:44.1,dps:24.71:dps:7.3:180.383
-R	shaman/enhancement	25	1990	12905	mh	205.04399999999998	int:11:int:0.27:2.97,sta:7:sta:4.9:34.3,sp:28:sp:1.2:33.6,dps:18.38:dps:7.3:134.174
-R	shaman/enhancement	25	2140	0	mh	37.842	dps:5.94:dps:7.3:43.362,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	2140	12718	mh	43.012	int:1:int:0.27:0.27,sta:1:sta:4.9:4.9,dps:5.94:dps:7.3:43.362,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	2140	12917	mh	28.124999999999996	sp:5:sp:1.2:6,int:1:int:0.27:0.27,dps:3.75:dps:7.3:27.375,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	2225	0	mh	30.98	dps:5:dps:7.3:36.5,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	2614	0	gear	4.35	armor:29:armor:0.15:4.35
-R	shaman/enhancement	25	3158	0	gear	3.9	armor:26:armor:0.15:3.9
-R	shaman/enhancement	25	3570	0	mh	55.756	str:2:str:1:2,dps:8.12:dps:7.3:59.276,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	4023	0	mh	106.608	dps:15.36:dps:7.3:112.128,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	4068	0	oh	188.54999999999998	sta:9:sta:4.9:44.1,armor:963:armor:0.15:144.45
-R	shaman/enhancement	25	4570	0	mh	72.08	dps:10:dps:7.3:73,speed:-0.1:speed:9.2:-0.92
-R	shaman/enhancement	25	4570	12718	mh	87.59	int:3:int:0.27:0.81,sta:3:sta:4.9:14.7,dps:10:dps:7.3:73,speed:-0.1:speed:9.2:-0.92
-R	shaman/enhancement	25	4570	12719	mh	90.38	spi:3:spi:1.2:3.6,sta:3:sta:4.9:14.7,dps:10:dps:7.3:73,speed:-0.1:speed:9.2:-0.92
-R	shaman/enhancement	25	4570	12720	mh	76.49	int:3:int:0.27:0.81,spi:3:spi:1.2:3.6,dps:10:dps:7.3:73,speed:-0.1:speed:9.2:-0.92
-R	shaman/enhancement	25	4570	12721	mh	89.66	agi:3:agi:0.96:2.88,sta:3:sta:4.9:14.7,dps:10:dps:7.3:73,speed:-0.1:speed:9.2:-0.92
-R	shaman/enhancement	25	4570	12722	mh	89.78	sta:3:sta:4.9:14.7,str:3:str:1:3,dps:10:dps:7.3:73,speed:-0.1:speed:9.2:-0.92
-R	shaman/enhancement	25	4570	12723	mh	75.89	int:3:int:0.27:0.81,str:3:str:1:3,dps:10:dps:7.3:73,speed:-0.1:speed:9.2:-0.92
-R	shaman/enhancement	25	4570	12724	mh	75.77	agi:3:agi:0.96:2.88,int:3:int:0.27:0.81,dps:10:dps:7.3:73,speed:-0.1:speed:9.2:-0.92
-R	shaman/enhancement	25	4570	12725	mh	78.67999999999999	spi:3:spi:1.2:3.6,str:3:str:1:3,dps:10:dps:7.3:73,speed:-0.1:speed:9.2:-0.92
-R	shaman/enhancement	25	4570	12726	mh	78.56	agi:3:agi:0.96:2.88,spi:3:spi:1.2:3.6,dps:10:dps:7.3:73,speed:-0.1:speed:9.2:-0.92
-R	shaman/enhancement	25	4570	12727	mh	77.96	agi:3:agi:0.96:2.88,str:3:str:1:3,dps:10:dps:7.3:73,speed:-0.1:speed:9.2:-0.92
-R	shaman/enhancement	25	4570	12728	mh	75.92	agi:4:agi:0.96:3.84,dps:10:dps:7.3:73,speed:-0.1:speed:9.2:-0.92
-R	shaman/enhancement	25	4570	12729	mh	73.16	int:4:int:0.27:1.08,dps:10:dps:7.3:73,speed:-0.1:speed:9.2:-0.92
-R	shaman/enhancement	25	4570	12730	mh	76.88	spi:4:spi:1.2:4.8,dps:10:dps:7.3:73,speed:-0.1:speed:9.2:-0.92
-R	shaman/enhancement	25	4570	12731	mh	91.67999999999999	sta:4:sta:4.9:19.6,dps:10:dps:7.3:73,speed:-0.1:speed:9.2:-0.92
-R	shaman/enhancement	25	4570	12732	mh	76.08	str:4:str:1:4,dps:10:dps:7.3:73,speed:-0.1:speed:9.2:-0.92
-R	shaman/enhancement	25	4570	12733	mh	76.08	ap:8:ap:0.5:4,dps:10:dps:7.3:73,speed:-0.1:speed:9.2:-0.92
-R	shaman/enhancement	25	4570	12736	mh	72.08	dps:10:dps:7.3:73,speed:-0.1:speed:9.2:-0.92
-R	shaman/enhancement	25	4570	12740	mh	86.78	sta:3:sta:4.9:14.7,dps:10:dps:7.3:73,speed:-0.1:speed:9.2:-0.92
-R	shaman/enhancement	25	4570	12741	mh	86.78	sta:3:sta:4.9:14.7,dps:10:dps:7.3:73,speed:-0.1:speed:9.2:-0.92
-R	shaman/enhancement	25	4570	12742	mh	86.78	sta:3:sta:4.9:14.7,dps:10:dps:7.3:73,speed:-0.1:speed:9.2:-0.92
-R	shaman/enhancement	25	4570	12743	mh	86.78	sta:3:sta:4.9:14.7,dps:10:dps:7.3:73,speed:-0.1:speed:9.2:-0.92
-R	shaman/enhancement	25	4570	12744	mh	86.78	sta:3:sta:4.9:14.7,dps:10:dps:7.3:73,speed:-0.1:speed:9.2:-0.92
-R	shaman/enhancement	25	4570	12759	mh	72.08	dps:10:dps:7.3:73,speed:-0.1:speed:9.2:-0.92
-R	shaman/enhancement	25	4570	12918	mh	65.094	sp:8:sp:1.2:9.6,int:4:int:0.27:1.08,dps:7.58:dps:7.3:55.334,speed:-0.1:speed:9.2:-0.92
-R	shaman/enhancement	25	4570	12919	mh	61.49399999999999	spDmg:5:sp:1.2:6,int:4:int:0.27:1.08,dps:7.58:dps:7.3:55.334,speed:-0.1:speed:9.2:-0.92
+R	shaman/enhancement	25	1990	12718	mh	213.68300000000002	int:9:int:1.6:14.4,sta:9:sta:2.1:18.9,dps:24.71:dps:7.3:180.383
+R	shaman/enhancement	25	1990	12905	mh	208.474	int:11:int:1.6:17.6,sta:7:sta:2.1:14.7,sp:28:sp:1.5:42,dps:18.38:dps:7.3:134.174
+R	shaman/enhancement	25	2140	0	mh	42.522	dps:5.94:dps:7.3:43.362,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	2140	12718	mh	46.222	int:1:int:1.6:1.6,sta:1:sta:2.1:2.1,dps:5.94:dps:7.3:43.362,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	2140	12917	mh	35.635	sp:5:sp:1.5:7.5,int:1:int:1.6:1.6,dps:3.75:dps:7.3:27.375,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	2225	0	mh	35.66	dps:5:dps:7.3:36.5,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	2614	0	gear	2.4650000000000003	armor:29:armor:0.085:2.465
+R	shaman/enhancement	25	3158	0	gear	2.21	armor:26:armor:0.085:2.21
+R	shaman/enhancement	25	3570	0	mh	60.43599999999999	str:2:str:1:2,dps:8.12:dps:7.3:59.276,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	4023	0	mh	111.288	dps:15.36:dps:7.3:112.128,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	4068	0	oh	100.75500000000001	sta:9:sta:2.1:18.9,armor:963:armor:0.085:81.855
+R	shaman/enhancement	25	4570	0	mh	72.86	dps:10:dps:7.3:73,speed:-0.1:speed:1.4:-0.14
+R	shaman/enhancement	25	4570	12718	mh	83.96	int:3:int:1.6:4.8,sta:3:sta:2.1:6.3,dps:10:dps:7.3:73,speed:-0.1:speed:1.4:-0.14
+R	shaman/enhancement	25	4570	12719	mh	83.96	spi:3:spi:1.6:4.8,sta:3:sta:2.1:6.3,dps:10:dps:7.3:73,speed:-0.1:speed:1.4:-0.14
+R	shaman/enhancement	25	4570	12720	mh	82.46	int:3:int:1.6:4.8,spi:3:spi:1.6:4.8,dps:10:dps:7.3:73,speed:-0.1:speed:1.4:-0.14
+R	shaman/enhancement	25	4570	12721	mh	81.17	agi:3:agi:0.67:2.01,sta:3:sta:2.1:6.3,dps:10:dps:7.3:73,speed:-0.1:speed:1.4:-0.14
+R	shaman/enhancement	25	4570	12722	mh	82.16	sta:3:sta:2.1:6.3,str:3:str:1:3,dps:10:dps:7.3:73,speed:-0.1:speed:1.4:-0.14
+R	shaman/enhancement	25	4570	12723	mh	80.66	int:3:int:1.6:4.8,str:3:str:1:3,dps:10:dps:7.3:73,speed:-0.1:speed:1.4:-0.14
+R	shaman/enhancement	25	4570	12724	mh	79.67	agi:3:agi:0.67:2.01,int:3:int:1.6:4.8,dps:10:dps:7.3:73,speed:-0.1:speed:1.4:-0.14
+R	shaman/enhancement	25	4570	12725	mh	80.66	spi:3:spi:1.6:4.8,str:3:str:1:3,dps:10:dps:7.3:73,speed:-0.1:speed:1.4:-0.14
+R	shaman/enhancement	25	4570	12726	mh	79.67	agi:3:agi:0.67:2.01,spi:3:spi:1.6:4.8,dps:10:dps:7.3:73,speed:-0.1:speed:1.4:-0.14
+R	shaman/enhancement	25	4570	12727	mh	77.87	agi:3:agi:0.67:2.01,str:3:str:1:3,dps:10:dps:7.3:73,speed:-0.1:speed:1.4:-0.14
+R	shaman/enhancement	25	4570	12728	mh	75.54	agi:4:agi:0.67:2.68,dps:10:dps:7.3:73,speed:-0.1:speed:1.4:-0.14
+R	shaman/enhancement	25	4570	12729	mh	79.26	int:4:int:1.6:6.4,dps:10:dps:7.3:73,speed:-0.1:speed:1.4:-0.14
+R	shaman/enhancement	25	4570	12730	mh	79.26	spi:4:spi:1.6:6.4,dps:10:dps:7.3:73,speed:-0.1:speed:1.4:-0.14
+R	shaman/enhancement	25	4570	12731	mh	81.26	sta:4:sta:2.1:8.4,dps:10:dps:7.3:73,speed:-0.1:speed:1.4:-0.14
+R	shaman/enhancement	25	4570	12732	mh	76.86	str:4:str:1:4,dps:10:dps:7.3:73,speed:-0.1:speed:1.4:-0.14
+R	shaman/enhancement	25	4570	12733	mh	76.86	ap:8:ap:0.5:4,dps:10:dps:7.3:73,speed:-0.1:speed:1.4:-0.14
+R	shaman/enhancement	25	4570	12736	mh	72.86	dps:10:dps:7.3:73,speed:-0.1:speed:1.4:-0.14
+R	shaman/enhancement	25	4570	12740	mh	79.16	sta:3:sta:2.1:6.3,dps:10:dps:7.3:73,speed:-0.1:speed:1.4:-0.14
+R	shaman/enhancement	25	4570	12741	mh	79.16	sta:3:sta:2.1:6.3,dps:10:dps:7.3:73,speed:-0.1:speed:1.4:-0.14
+R	shaman/enhancement	25	4570	12742	mh	79.16	sta:3:sta:2.1:6.3,dps:10:dps:7.3:73,speed:-0.1:speed:1.4:-0.14
+R	shaman/enhancement	25	4570	12743	mh	79.16	sta:3:sta:2.1:6.3,dps:10:dps:7.3:73,speed:-0.1:speed:1.4:-0.14
+R	shaman/enhancement	25	4570	12744	mh	79.16	sta:3:sta:2.1:6.3,dps:10:dps:7.3:73,speed:-0.1:speed:1.4:-0.14
+R	shaman/enhancement	25	4570	12759	mh	72.86	dps:10:dps:7.3:73,speed:-0.1:speed:1.4:-0.14
+R	shaman/enhancement	25	4570	12918	mh	73.594	sp:8:sp:1.5:12,int:4:int:1.6:6.4,dps:7.58:dps:7.3:55.334,speed:-0.1:speed:1.4:-0.14
+R	shaman/enhancement	25	4570	12919	mh	69.094	spDmg:5:sp:1.5:7.5,int:4:int:1.6:6.4,dps:7.58:dps:7.3:55.334,speed:-0.1:speed:1.4:-0.14
 R	shaman/enhancement	25	5079	0	gear	0.0	
-R	shaman/enhancement	25	6063	0	gear	8.25	armor:55:armor:0.15:8.25
-R	shaman/enhancement	25	6540	0	gear	4.2	armor:28:armor:0.15:4.2
-R	shaman/enhancement	25	6540	12718	gear	19.71	int:3:int:0.27:0.81,sta:3:sta:4.9:14.7,armor:28:armor:0.15:4.2
-R	shaman/enhancement	25	6540	12719	gear	22.5	spi:3:spi:1.2:3.6,sta:3:sta:4.9:14.7,armor:28:armor:0.15:4.2
-R	shaman/enhancement	25	6540	12720	gear	8.61	int:3:int:0.27:0.81,spi:3:spi:1.2:3.6,armor:28:armor:0.15:4.2
-R	shaman/enhancement	25	6540	12729	gear	5.550000000000001	int:5:int:0.27:1.35,armor:28:armor:0.15:4.2
-R	shaman/enhancement	25	6540	12730	gear	10.2	spi:5:spi:1.2:6,armor:28:armor:0.15:4.2
-R	shaman/enhancement	25	6540	12731	gear	28.7	sta:5:sta:4.9:24.5,armor:28:armor:0.15:4.2
-R	shaman/enhancement	25	6540	12734	gear	11.399999999999999	sp:6:sp:1.2:7.2,armor:28:armor:0.15:4.2
-R	shaman/enhancement	25	6540	12735	gear	9.0	spDmg:4:sp:1.2:4.8,armor:28:armor:0.15:4.2
-R	shaman/enhancement	25	6540	12740	gear	18.900000000000002	sta:3:sta:4.9:14.7,armor:28:armor:0.15:4.2
-R	shaman/enhancement	25	6540	12741	gear	18.900000000000002	sta:3:sta:4.9:14.7,armor:28:armor:0.15:4.2
-R	shaman/enhancement	25	6540	12742	gear	18.900000000000002	sta:3:sta:4.9:14.7,armor:28:armor:0.15:4.2
-R	shaman/enhancement	25	6540	12743	gear	18.900000000000002	sta:3:sta:4.9:14.7,armor:28:armor:0.15:4.2
-R	shaman/enhancement	25	6540	12744	gear	18.900000000000002	sta:3:sta:4.9:14.7,armor:28:armor:0.15:4.2
-R	shaman/enhancement	25	6540	12745	gear	17.48	int:4:int:0.27:1.08,sta:2:sta:4.9:9.8,sp:2:sp:1.2:2.4,armor:28:armor:0.15:4.2
-R	shaman/enhancement	25	6540	12756	gear	4.2	armor:28:armor:0.15:4.2
-R	shaman/enhancement	25	6540	12757	gear	4.2	armor:28:armor:0.15:4.2
-R	shaman/enhancement	25	6540	12758	gear	4.2	armor:28:armor:0.15:4.2
-R	shaman/enhancement	25	6540	12759	gear	4.2	armor:28:armor:0.15:4.2
-R	shaman/enhancement	25	6540	12761	gear	4.2	armor:28:armor:0.15:4.2
-R	shaman/enhancement	25	6557	0	gear	7.35	armor:49:armor:0.15:7.35
-R	shaman/enhancement	25	6557	12718	gear	17.689999999999998	int:2:int:0.27:0.54,sta:2:sta:4.9:9.8,armor:49:armor:0.15:7.35
-R	shaman/enhancement	25	6557	12719	gear	19.55	spi:2:spi:1.2:2.4,sta:2:sta:4.9:9.8,armor:49:armor:0.15:7.35
-R	shaman/enhancement	25	6557	12720	gear	10.29	int:2:int:0.27:0.54,spi:2:spi:1.2:2.4,armor:49:armor:0.15:7.35
-R	shaman/enhancement	25	6557	12721	gear	19.07	agi:2:agi:0.96:1.92,sta:2:sta:4.9:9.8,armor:49:armor:0.15:7.35
-R	shaman/enhancement	25	6557	12722	gear	19.15	sta:2:sta:4.9:9.8,str:2:str:1:2,armor:49:armor:0.15:7.35
-R	shaman/enhancement	25	6557	12723	gear	9.89	int:2:int:0.27:0.54,str:2:str:1:2,armor:49:armor:0.15:7.35
-R	shaman/enhancement	25	6557	12724	gear	9.809999999999999	agi:2:agi:0.96:1.92,int:2:int:0.27:0.54,armor:49:armor:0.15:7.35
-R	shaman/enhancement	25	6557	12725	gear	11.75	spi:2:spi:1.2:2.4,str:2:str:1:2,armor:49:armor:0.15:7.35
-R	shaman/enhancement	25	6557	12726	gear	11.67	agi:2:agi:0.96:1.92,spi:2:spi:1.2:2.4,armor:49:armor:0.15:7.35
-R	shaman/enhancement	25	6557	12727	gear	11.27	agi:2:agi:0.96:1.92,str:2:str:1:2,armor:49:armor:0.15:7.35
-R	shaman/enhancement	25	6557	12728	gear	10.23	agi:3:agi:0.96:2.88,armor:49:armor:0.15:7.35
-R	shaman/enhancement	25	6557	12729	gear	8.16	int:3:int:0.27:0.81,armor:49:armor:0.15:7.35
-R	shaman/enhancement	25	6557	12730	gear	10.95	spi:3:spi:1.2:3.6,armor:49:armor:0.15:7.35
-R	shaman/enhancement	25	6557	12731	gear	22.05	sta:3:sta:4.9:14.7,armor:49:armor:0.15:7.35
-R	shaman/enhancement	25	6557	12732	gear	10.35	str:3:str:1:3,armor:49:armor:0.15:7.35
-R	shaman/enhancement	25	6557	12733	gear	10.35	ap:6:ap:0.5:3,armor:49:armor:0.15:7.35
-R	shaman/enhancement	25	6557	12734	gear	12.149999999999999	sp:4:sp:1.2:4.8,armor:49:armor:0.15:7.35
-R	shaman/enhancement	25	6557	12735	gear	9.75	spDmg:2:sp:1.2:2.4,armor:49:armor:0.15:7.35
-R	shaman/enhancement	25	6557	12736	gear	7.35	armor:49:armor:0.15:7.35
-R	shaman/enhancement	25	6557	12740	gear	17.15	sta:2:sta:4.9:9.8,armor:49:armor:0.15:7.35
-R	shaman/enhancement	25	6557	12741	gear	17.15	sta:2:sta:4.9:9.8,armor:49:armor:0.15:7.35
-R	shaman/enhancement	25	6557	12742	gear	17.15	sta:2:sta:4.9:9.8,armor:49:armor:0.15:7.35
-R	shaman/enhancement	25	6557	12743	gear	17.15	sta:2:sta:4.9:9.8,armor:49:armor:0.15:7.35
-R	shaman/enhancement	25	6557	12744	gear	17.15	sta:2:sta:4.9:9.8,armor:49:armor:0.15:7.35
-R	shaman/enhancement	25	6557	12756	gear	7.35	armor:49:armor:0.15:7.35
-R	shaman/enhancement	25	6557	12760	gear	11.11	spNature:4:spNature:0.94:3.76,armor:49:armor:0.15:7.35
-R	shaman/enhancement	25	7047	0	gear	9.9	spi:5:spi:1.2:6,armor:26:armor:0.15:3.9
-R	shaman/enhancement	25	7538	0	gear	39.449999999999996	armor:263:armor:0.15:39.45
-R	shaman/enhancement	25	7538	12718	gear	106.66	int:13:int:0.27:3.51,sta:13:sta:4.9:63.7,armor:263:armor:0.15:39.45
-R	shaman/enhancement	25	7538	12719	gear	118.75	spi:13:spi:1.2:15.6,sta:13:sta:4.9:63.7,armor:263:armor:0.15:39.45
-R	shaman/enhancement	25	7538	12720	gear	58.559999999999995	int:13:int:0.27:3.51,spi:13:spi:1.2:15.6,armor:263:armor:0.15:39.45
-R	shaman/enhancement	25	7538	12721	gear	115.63	agi:13:agi:0.96:12.48,sta:13:sta:4.9:63.7,armor:263:armor:0.15:39.45
-R	shaman/enhancement	25	7538	12722	gear	116.15	sta:13:sta:4.9:63.7,str:13:str:1:13,armor:263:armor:0.15:39.45
-R	shaman/enhancement	25	7538	12723	gear	55.959999999999994	int:13:int:0.27:3.51,str:13:str:1:13,armor:263:armor:0.15:39.45
-R	shaman/enhancement	25	7538	12724	gear	55.44	agi:13:agi:0.96:12.48,int:13:int:0.27:3.51,armor:263:armor:0.15:39.45
-R	shaman/enhancement	25	7538	12725	gear	68.05	spi:13:spi:1.2:15.6,str:13:str:1:13,armor:263:armor:0.15:39.45
-R	shaman/enhancement	25	7538	12726	gear	67.53	agi:13:agi:0.96:12.48,spi:13:spi:1.2:15.6,armor:263:armor:0.15:39.45
-R	shaman/enhancement	25	7538	12727	gear	64.92999999999999	agi:13:agi:0.96:12.48,str:13:str:1:13,armor:263:armor:0.15:39.45
-R	shaman/enhancement	25	7538	12728	gear	58.64999999999999	agi:20:agi:0.96:19.2,armor:263:armor:0.15:39.45
-R	shaman/enhancement	25	7538	12729	gear	44.849999999999994	int:20:int:0.27:5.4,armor:263:armor:0.15:39.45
-R	shaman/enhancement	25	7538	12730	gear	63.449999999999996	spi:20:spi:1.2:24,armor:263:armor:0.15:39.45
-R	shaman/enhancement	25	7538	12731	gear	137.45	sta:20:sta:4.9:98,armor:263:armor:0.15:39.45
-R	shaman/enhancement	25	7538	12732	gear	59.449999999999996	str:20:str:1:20,armor:263:armor:0.15:39.45
-R	shaman/enhancement	25	7538	12733	gear	59.449999999999996	ap:40:ap:0.5:20,armor:263:armor:0.15:39.45
-R	shaman/enhancement	25	7538	12734	gear	67.05	sp:23:sp:1.2:27.6,armor:263:armor:0.15:39.45
-R	shaman/enhancement	25	7538	12735	gear	57.449999999999996	spDmg:15:sp:1.2:18,armor:263:armor:0.15:39.45
-R	shaman/enhancement	25	7538	12740	gear	103.15	sta:13:sta:4.9:63.7,armor:263:armor:0.15:39.45
-R	shaman/enhancement	25	7538	12741	gear	103.15	sta:13:sta:4.9:63.7,armor:263:armor:0.15:39.45
-R	shaman/enhancement	25	7538	12742	gear	103.15	sta:13:sta:4.9:63.7,armor:263:armor:0.15:39.45
-R	shaman/enhancement	25	7538	12743	gear	103.15	sta:13:sta:4.9:63.7,armor:263:armor:0.15:39.45
-R	shaman/enhancement	25	7538	12744	gear	103.15	sta:13:sta:4.9:63.7,armor:263:armor:0.15:39.45
-R	shaman/enhancement	25	7538	12745	gear	91.1	int:15:int:0.27:4.05,sta:8:sta:4.9:39.2,sp:7:sp:1.2:8.4,armor:263:armor:0.15:39.45
-R	shaman/enhancement	25	7538	12746	gear	61.5	int:15:int:0.27:4.05,spi:8:spi:1.2:9.6,sp:7:sp:1.2:8.4,armor:263:armor:0.15:39.45
-R	shaman/enhancement	25	7538	12747	gear	130.95	spi:8:spi:1.2:9.6,sta:15:sta:4.9:73.5,sp:7:sp:1.2:8.4,armor:263:armor:0.15:39.45
-R	shaman/enhancement	25	7538	12748	gear	121.10999999999999	int:8:int:0.27:2.16,sta:15:sta:4.9:73.5,spDmg:5:sp:1.2:6,armor:263:armor:0.15:39.45
-R	shaman/enhancement	25	7538	12749	gear	59.099999999999994	int:15:int:0.27:4.05,spi:8:spi:1.2:9.6,spDmg:5:sp:1.2:6,armor:263:armor:0.15:39.45
-R	shaman/enhancement	25	7538	12750	gear	128.54999999999998	spi:8:spi:1.2:9.6,sta:15:sta:4.9:73.5,spDmg:5:sp:1.2:6,armor:263:armor:0.15:39.45
-R	shaman/enhancement	25	7538	12751	gear	126.71000000000001	agi:6:agi:0.96:5.76,ap:16:ap:0.5:8,sta:15:sta:4.9:73.5,armor:263:armor:0.15:39.45
-R	shaman/enhancement	25	7538	12752	gear	126.63	agi:8:agi:0.96:7.68,sta:15:sta:4.9:73.5,str:6:str:1:6,armor:263:armor:0.15:39.45
-R	shaman/enhancement	25	7538	12755	gear	129.35	sp:7:sp:1.2:8.4,sta:15:sta:4.9:73.5,str:8:str:1:8,armor:263:armor:0.15:39.45
-R	shaman/enhancement	25	7538	12760	gear	66.71	spNature:29:spNature:0.94:27.26,armor:263:armor:0.15:39.45
-R	shaman/enhancement	25	8192	0	gear	47.96	agi:11:agi:0.96:10.56,sta:5:sta:4.9:24.5,armor:86:armor:0.15:12.9
-R	shaman/enhancement	25	9458	0	oh	119.99999999999999	spi:3:spi:1.2:3.6,armor:776:armor:0.15:116.4
-R	shaman/enhancement	25	9834	0	gear	10.95	armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	9834	12718	gear	41.97	int:6:int:0.27:1.62,sta:6:sta:4.9:29.4,armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	9834	12719	gear	47.55	spi:6:spi:1.2:7.2,sta:6:sta:4.9:29.4,armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	9834	12720	gear	19.77	int:6:int:0.27:1.62,spi:6:spi:1.2:7.2,armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	9834	12721	gear	46.11	agi:6:agi:0.96:5.76,sta:6:sta:4.9:29.4,armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	9834	12722	gear	46.35000000000001	sta:6:sta:4.9:29.4,str:6:str:1:6,armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	9834	12723	gear	18.57	int:6:int:0.27:1.62,str:6:str:1:6,armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	9834	12724	gear	18.33	agi:6:agi:0.96:5.76,int:6:int:0.27:1.62,armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	9834	12725	gear	24.15	spi:6:spi:1.2:7.2,str:6:str:1:6,armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	9834	12726	gear	23.909999999999997	agi:6:agi:0.96:5.76,spi:6:spi:1.2:7.2,armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	9834	12727	gear	22.71	agi:6:agi:0.96:5.76,str:6:str:1:6,armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	9834	12728	gear	19.59	agi:9:agi:0.96:8.64,armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	9834	12729	gear	13.379999999999999	int:9:int:0.27:2.43,armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	9834	12730	gear	21.75	spi:9:spi:1.2:10.8,armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	9834	12731	gear	55.05	sta:9:sta:4.9:44.1,armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	9834	12732	gear	19.95	str:9:str:1:9,armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	9834	12733	gear	19.95	ap:18:ap:0.5:9,armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	9834	12734	gear	24.15	sp:11:sp:1.2:13.2,armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	9834	12735	gear	19.35	spDmg:7:sp:1.2:8.4,armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	9834	12736	gear	10.95	armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	9834	12740	gear	40.35	sta:6:sta:4.9:29.4,armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	9834	12741	gear	40.35	sta:6:sta:4.9:29.4,armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	9834	12742	gear	40.35	sta:6:sta:4.9:29.4,armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	9834	12743	gear	40.35	sta:6:sta:4.9:29.4,armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	9834	12744	gear	40.35	sta:6:sta:4.9:29.4,armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	9834	12745	gear	36.040000000000006	int:7:int:0.27:1.89,sta:4:sta:4.9:19.6,sp:3:sp:1.2:3.6,armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	9834	12746	gear	21.24	int:7:int:0.27:1.89,spi:4:spi:1.2:4.8,sp:3:sp:1.2:3.6,armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	9834	12747	gear	53.650000000000006	spi:4:spi:1.2:4.8,sta:7:sta:4.9:34.3,sp:3:sp:1.2:3.6,armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	9834	12748	gear	48.730000000000004	int:4:int:0.27:1.08,sta:7:sta:4.9:34.3,spDmg:2:sp:1.2:2.4,armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	9834	12749	gear	20.04	int:7:int:0.27:1.89,spi:4:spi:1.2:4.8,spDmg:2:sp:1.2:2.4,armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	9834	12750	gear	52.45	spi:4:spi:1.2:4.8,sta:7:sta:4.9:34.3,spDmg:2:sp:1.2:2.4,armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	9834	12751	gear	51.63000000000001	agi:3:agi:0.96:2.88,ap:7:ap:0.5:3.5,sta:7:sta:4.9:34.3,armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	9834	12752	gear	52.09	agi:4:agi:0.96:3.84,sta:7:sta:4.9:34.3,str:3:str:1:3,armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	9834	12753	gear	49.25	sta:7:sta:4.9:34.3,str:4:str:1:4,armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	9834	12755	gear	52.85000000000001	sp:3:sp:1.2:3.6,sta:7:sta:4.9:34.3,str:4:str:1:4,armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	9834	12756	gear	10.95	armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	9834	12760	gear	23.169999999999998	spNature:13:spNature:0.94:12.22,armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	11187	0	gear	0.6	armor:4:armor:0.15:0.6
+R	shaman/enhancement	25	6063	0	gear	4.675000000000001	armor:55:armor:0.085:4.675
+R	shaman/enhancement	25	6540	0	gear	2.3800000000000003	armor:28:armor:0.085:2.38
+R	shaman/enhancement	25	6540	12718	gear	13.480000000000002	int:3:int:1.6:4.8,sta:3:sta:2.1:6.3,armor:28:armor:0.085:2.38
+R	shaman/enhancement	25	6540	12719	gear	13.480000000000002	spi:3:spi:1.6:4.8,sta:3:sta:2.1:6.3,armor:28:armor:0.085:2.38
+R	shaman/enhancement	25	6540	12720	gear	11.980000000000002	int:3:int:1.6:4.8,spi:3:spi:1.6:4.8,armor:28:armor:0.085:2.38
+R	shaman/enhancement	25	6540	12729	gear	10.38	int:5:int:1.6:8,armor:28:armor:0.085:2.38
+R	shaman/enhancement	25	6540	12730	gear	10.38	spi:5:spi:1.6:8,armor:28:armor:0.085:2.38
+R	shaman/enhancement	25	6540	12731	gear	12.88	sta:5:sta:2.1:10.5,armor:28:armor:0.085:2.38
+R	shaman/enhancement	25	6540	12734	gear	11.38	sp:6:sp:1.5:9,armor:28:armor:0.085:2.38
+R	shaman/enhancement	25	6540	12735	gear	8.38	spDmg:4:sp:1.5:6,armor:28:armor:0.085:2.38
+R	shaman/enhancement	25	6540	12740	gear	8.680000000000001	sta:3:sta:2.1:6.3,armor:28:armor:0.085:2.38
+R	shaman/enhancement	25	6540	12741	gear	8.680000000000001	sta:3:sta:2.1:6.3,armor:28:armor:0.085:2.38
+R	shaman/enhancement	25	6540	12742	gear	8.680000000000001	sta:3:sta:2.1:6.3,armor:28:armor:0.085:2.38
+R	shaman/enhancement	25	6540	12743	gear	8.680000000000001	sta:3:sta:2.1:6.3,armor:28:armor:0.085:2.38
+R	shaman/enhancement	25	6540	12744	gear	8.680000000000001	sta:3:sta:2.1:6.3,armor:28:armor:0.085:2.38
+R	shaman/enhancement	25	6540	12745	gear	15.980000000000002	int:4:int:1.6:6.4,sta:2:sta:2.1:4.2,sp:2:sp:1.5:3,armor:28:armor:0.085:2.38
+R	shaman/enhancement	25	6540	12756	gear	2.3800000000000003	armor:28:armor:0.085:2.38
+R	shaman/enhancement	25	6540	12757	gear	2.3800000000000003	armor:28:armor:0.085:2.38
+R	shaman/enhancement	25	6540	12758	gear	2.3800000000000003	armor:28:armor:0.085:2.38
+R	shaman/enhancement	25	6540	12759	gear	2.3800000000000003	armor:28:armor:0.085:2.38
+R	shaman/enhancement	25	6540	12761	gear	2.3800000000000003	armor:28:armor:0.085:2.38
+R	shaman/enhancement	25	6557	0	gear	4.165	armor:49:armor:0.085:4.165
+R	shaman/enhancement	25	6557	12718	gear	11.565000000000001	int:2:int:1.6:3.2,sta:2:sta:2.1:4.2,armor:49:armor:0.085:4.165
+R	shaman/enhancement	25	6557	12719	gear	11.565000000000001	spi:2:spi:1.6:3.2,sta:2:sta:2.1:4.2,armor:49:armor:0.085:4.165
+R	shaman/enhancement	25	6557	12720	gear	10.565000000000001	int:2:int:1.6:3.2,spi:2:spi:1.6:3.2,armor:49:armor:0.085:4.165
+R	shaman/enhancement	25	6557	12721	gear	9.705	agi:2:agi:0.67:1.34,sta:2:sta:2.1:4.2,armor:49:armor:0.085:4.165
+R	shaman/enhancement	25	6557	12722	gear	10.365	sta:2:sta:2.1:4.2,str:2:str:1:2,armor:49:armor:0.085:4.165
+R	shaman/enhancement	25	6557	12723	gear	9.365	int:2:int:1.6:3.2,str:2:str:1:2,armor:49:armor:0.085:4.165
+R	shaman/enhancement	25	6557	12724	gear	8.705	agi:2:agi:0.67:1.34,int:2:int:1.6:3.2,armor:49:armor:0.085:4.165
+R	shaman/enhancement	25	6557	12725	gear	9.365	spi:2:spi:1.6:3.2,str:2:str:1:2,armor:49:armor:0.085:4.165
+R	shaman/enhancement	25	6557	12726	gear	8.705	agi:2:agi:0.67:1.34,spi:2:spi:1.6:3.2,armor:49:armor:0.085:4.165
+R	shaman/enhancement	25	6557	12727	gear	7.505	agi:2:agi:0.67:1.34,str:2:str:1:2,armor:49:armor:0.085:4.165
+R	shaman/enhancement	25	6557	12728	gear	6.175000000000001	agi:3:agi:0.67:2.01,armor:49:armor:0.085:4.165
+R	shaman/enhancement	25	6557	12729	gear	8.965	int:3:int:1.6:4.8,armor:49:armor:0.085:4.165
+R	shaman/enhancement	25	6557	12730	gear	8.965	spi:3:spi:1.6:4.8,armor:49:armor:0.085:4.165
+R	shaman/enhancement	25	6557	12731	gear	10.465	sta:3:sta:2.1:6.3,armor:49:armor:0.085:4.165
+R	shaman/enhancement	25	6557	12732	gear	7.165	str:3:str:1:3,armor:49:armor:0.085:4.165
+R	shaman/enhancement	25	6557	12733	gear	7.165	ap:6:ap:0.5:3,armor:49:armor:0.085:4.165
+R	shaman/enhancement	25	6557	12734	gear	10.165	sp:4:sp:1.5:6,armor:49:armor:0.085:4.165
+R	shaman/enhancement	25	6557	12735	gear	7.165	spDmg:2:sp:1.5:3,armor:49:armor:0.085:4.165
+R	shaman/enhancement	25	6557	12736	gear	4.165	armor:49:armor:0.085:4.165
+R	shaman/enhancement	25	6557	12740	gear	8.365	sta:2:sta:2.1:4.2,armor:49:armor:0.085:4.165
+R	shaman/enhancement	25	6557	12741	gear	8.365	sta:2:sta:2.1:4.2,armor:49:armor:0.085:4.165
+R	shaman/enhancement	25	6557	12742	gear	8.365	sta:2:sta:2.1:4.2,armor:49:armor:0.085:4.165
+R	shaman/enhancement	25	6557	12743	gear	8.365	sta:2:sta:2.1:4.2,armor:49:armor:0.085:4.165
+R	shaman/enhancement	25	6557	12744	gear	8.365	sta:2:sta:2.1:4.2,armor:49:armor:0.085:4.165
+R	shaman/enhancement	25	6557	12756	gear	4.165	armor:49:armor:0.085:4.165
+R	shaman/enhancement	25	6557	12760	gear	8.085	spNature:4:spNature:0.98:3.92,armor:49:armor:0.085:4.165
+R	shaman/enhancement	25	7047	0	gear	10.21	spi:5:spi:1.6:8,armor:26:armor:0.085:2.21
+R	shaman/enhancement	25	7538	0	gear	22.355	armor:263:armor:0.085:22.355
+R	shaman/enhancement	25	7538	12718	gear	70.455	int:13:int:1.6:20.8,sta:13:sta:2.1:27.3,armor:263:armor:0.085:22.355
+R	shaman/enhancement	25	7538	12719	gear	70.455	spi:13:spi:1.6:20.8,sta:13:sta:2.1:27.3,armor:263:armor:0.085:22.355
+R	shaman/enhancement	25	7538	12720	gear	63.955	int:13:int:1.6:20.8,spi:13:spi:1.6:20.8,armor:263:armor:0.085:22.355
+R	shaman/enhancement	25	7538	12721	gear	58.36500000000001	agi:13:agi:0.67:8.71,sta:13:sta:2.1:27.3,armor:263:armor:0.085:22.355
+R	shaman/enhancement	25	7538	12722	gear	62.655	sta:13:sta:2.1:27.3,str:13:str:1:13,armor:263:armor:0.085:22.355
+R	shaman/enhancement	25	7538	12723	gear	56.155	int:13:int:1.6:20.8,str:13:str:1:13,armor:263:armor:0.085:22.355
+R	shaman/enhancement	25	7538	12724	gear	51.865	agi:13:agi:0.67:8.71,int:13:int:1.6:20.8,armor:263:armor:0.085:22.355
+R	shaman/enhancement	25	7538	12725	gear	56.155	spi:13:spi:1.6:20.8,str:13:str:1:13,armor:263:armor:0.085:22.355
+R	shaman/enhancement	25	7538	12726	gear	51.865	agi:13:agi:0.67:8.71,spi:13:spi:1.6:20.8,armor:263:armor:0.085:22.355
+R	shaman/enhancement	25	7538	12727	gear	44.065	agi:13:agi:0.67:8.71,str:13:str:1:13,armor:263:armor:0.085:22.355
+R	shaman/enhancement	25	7538	12728	gear	35.755	agi:20:agi:0.67:13.4,armor:263:armor:0.085:22.355
+R	shaman/enhancement	25	7538	12729	gear	54.355000000000004	int:20:int:1.6:32,armor:263:armor:0.085:22.355
+R	shaman/enhancement	25	7538	12730	gear	54.355000000000004	spi:20:spi:1.6:32,armor:263:armor:0.085:22.355
+R	shaman/enhancement	25	7538	12731	gear	64.355	sta:20:sta:2.1:42,armor:263:armor:0.085:22.355
+R	shaman/enhancement	25	7538	12732	gear	42.355000000000004	str:20:str:1:20,armor:263:armor:0.085:22.355
+R	shaman/enhancement	25	7538	12733	gear	42.355000000000004	ap:40:ap:0.5:20,armor:263:armor:0.085:22.355
+R	shaman/enhancement	25	7538	12734	gear	56.855000000000004	sp:23:sp:1.5:34.5,armor:263:armor:0.085:22.355
+R	shaman/enhancement	25	7538	12735	gear	44.855000000000004	spDmg:15:sp:1.5:22.5,armor:263:armor:0.085:22.355
+R	shaman/enhancement	25	7538	12740	gear	49.655	sta:13:sta:2.1:27.3,armor:263:armor:0.085:22.355
+R	shaman/enhancement	25	7538	12741	gear	49.655	sta:13:sta:2.1:27.3,armor:263:armor:0.085:22.355
+R	shaman/enhancement	25	7538	12742	gear	49.655	sta:13:sta:2.1:27.3,armor:263:armor:0.085:22.355
+R	shaman/enhancement	25	7538	12743	gear	49.655	sta:13:sta:2.1:27.3,armor:263:armor:0.085:22.355
+R	shaman/enhancement	25	7538	12744	gear	49.655	sta:13:sta:2.1:27.3,armor:263:armor:0.085:22.355
+R	shaman/enhancement	25	7538	12745	gear	73.655	int:15:int:1.6:24,sta:8:sta:2.1:16.8,sp:7:sp:1.5:10.5,armor:263:armor:0.085:22.355
+R	shaman/enhancement	25	7538	12746	gear	69.655	int:15:int:1.6:24,spi:8:spi:1.6:12.8,sp:7:sp:1.5:10.5,armor:263:armor:0.085:22.355
+R	shaman/enhancement	25	7538	12747	gear	77.155	spi:8:spi:1.6:12.8,sta:15:sta:2.1:31.5,sp:7:sp:1.5:10.5,armor:263:armor:0.085:22.355
+R	shaman/enhancement	25	7538	12748	gear	74.155	int:8:int:1.6:12.8,sta:15:sta:2.1:31.5,spDmg:5:sp:1.5:7.5,armor:263:armor:0.085:22.355
+R	shaman/enhancement	25	7538	12749	gear	66.655	int:15:int:1.6:24,spi:8:spi:1.6:12.8,spDmg:5:sp:1.5:7.5,armor:263:armor:0.085:22.355
+R	shaman/enhancement	25	7538	12750	gear	74.155	spi:8:spi:1.6:12.8,sta:15:sta:2.1:31.5,spDmg:5:sp:1.5:7.5,armor:263:armor:0.085:22.355
+R	shaman/enhancement	25	7538	12751	gear	65.875	agi:6:agi:0.67:4.02,ap:16:ap:0.5:8,sta:15:sta:2.1:31.5,armor:263:armor:0.085:22.355
+R	shaman/enhancement	25	7538	12752	gear	65.215	agi:8:agi:0.67:5.36,sta:15:sta:2.1:31.5,str:6:str:1:6,armor:263:armor:0.085:22.355
+R	shaman/enhancement	25	7538	12755	gear	72.355	sp:7:sp:1.5:10.5,sta:15:sta:2.1:31.5,str:8:str:1:8,armor:263:armor:0.085:22.355
+R	shaman/enhancement	25	7538	12760	gear	50.775	spNature:29:spNature:0.98:28.42,armor:263:armor:0.085:22.355
+R	shaman/enhancement	25	8192	0	gear	25.18	agi:11:agi:0.67:7.37,sta:5:sta:2.1:10.5,armor:86:armor:0.085:7.31
+R	shaman/enhancement	25	9458	0	oh	70.76	spi:3:spi:1.6:4.8,armor:776:armor:0.085:65.96
+R	shaman/enhancement	25	9834	0	gear	6.205	armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	9834	12718	gear	28.405	int:6:int:1.6:9.6,sta:6:sta:2.1:12.6,armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	9834	12719	gear	28.405	spi:6:spi:1.6:9.6,sta:6:sta:2.1:12.6,armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	9834	12720	gear	25.405	int:6:int:1.6:9.6,spi:6:spi:1.6:9.6,armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	9834	12721	gear	22.825000000000003	agi:6:agi:0.67:4.02,sta:6:sta:2.1:12.6,armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	9834	12722	gear	24.805	sta:6:sta:2.1:12.6,str:6:str:1:6,armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	9834	12723	gear	21.805	int:6:int:1.6:9.6,str:6:str:1:6,armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	9834	12724	gear	19.825000000000003	agi:6:agi:0.67:4.02,int:6:int:1.6:9.6,armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	9834	12725	gear	21.805	spi:6:spi:1.6:9.6,str:6:str:1:6,armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	9834	12726	gear	19.825000000000003	agi:6:agi:0.67:4.02,spi:6:spi:1.6:9.6,armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	9834	12727	gear	16.225	agi:6:agi:0.67:4.02,str:6:str:1:6,armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	9834	12728	gear	12.235	agi:9:agi:0.67:6.03,armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	9834	12729	gear	20.605	int:9:int:1.6:14.4,armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	9834	12730	gear	20.605	spi:9:spi:1.6:14.4,armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	9834	12731	gear	25.105000000000004	sta:9:sta:2.1:18.9,armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	9834	12732	gear	15.205	str:9:str:1:9,armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	9834	12733	gear	15.205	ap:18:ap:0.5:9,armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	9834	12734	gear	22.705	sp:11:sp:1.5:16.5,armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	9834	12735	gear	16.705	spDmg:7:sp:1.5:10.5,armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	9834	12736	gear	6.205	armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	9834	12740	gear	18.805	sta:6:sta:2.1:12.6,armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	9834	12741	gear	18.805	sta:6:sta:2.1:12.6,armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	9834	12742	gear	18.805	sta:6:sta:2.1:12.6,armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	9834	12743	gear	18.805	sta:6:sta:2.1:12.6,armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	9834	12744	gear	18.805	sta:6:sta:2.1:12.6,armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	9834	12745	gear	30.305	int:7:int:1.6:11.2,sta:4:sta:2.1:8.4,sp:3:sp:1.5:4.5,armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	9834	12746	gear	28.305	int:7:int:1.6:11.2,spi:4:spi:1.6:6.4,sp:3:sp:1.5:4.5,armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	9834	12747	gear	31.805	spi:4:spi:1.6:6.4,sta:7:sta:2.1:14.7,sp:3:sp:1.5:4.5,armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	9834	12748	gear	30.305	int:4:int:1.6:6.4,sta:7:sta:2.1:14.7,spDmg:2:sp:1.5:3,armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	9834	12749	gear	26.805	int:7:int:1.6:11.2,spi:4:spi:1.6:6.4,spDmg:2:sp:1.5:3,armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	9834	12750	gear	30.305	spi:4:spi:1.6:6.4,sta:7:sta:2.1:14.7,spDmg:2:sp:1.5:3,armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	9834	12751	gear	26.415	agi:3:agi:0.67:2.01,ap:7:ap:0.5:3.5,sta:7:sta:2.1:14.7,armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	9834	12752	gear	26.585	agi:4:agi:0.67:2.68,sta:7:sta:2.1:14.7,str:3:str:1:3,armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	9834	12753	gear	24.905	sta:7:sta:2.1:14.7,str:4:str:1:4,armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	9834	12755	gear	29.405	sp:3:sp:1.5:4.5,sta:7:sta:2.1:14.7,str:4:str:1:4,armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	9834	12756	gear	6.205	armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	9834	12760	gear	18.945	spNature:13:spNature:0.98:12.74,armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	11187	0	gear	0.34	armor:4:armor:0.085:0.34
 R	shaman/enhancement	25	11994	0	gear	0.0	
-R	shaman/enhancement	25	11994	12718	gear	15.510000000000002	int:3:int:0.27:0.81,sta:3:sta:4.9:14.7
-R	shaman/enhancement	25	11994	12719	gear	18.3	spi:3:spi:1.2:3.6,sta:3:sta:4.9:14.7
-R	shaman/enhancement	25	11994	12720	gear	4.41	int:3:int:0.27:0.81,spi:3:spi:1.2:3.6
-R	shaman/enhancement	25	11994	12721	gear	17.580000000000002	agi:3:agi:0.96:2.88,sta:3:sta:4.9:14.7
-R	shaman/enhancement	25	11994	12722	gear	17.700000000000003	sta:3:sta:4.9:14.7,str:3:str:1:3
-R	shaman/enhancement	25	11994	12723	gear	3.81	int:3:int:0.27:0.81,str:3:str:1:3
-R	shaman/enhancement	25	11994	12724	gear	3.69	agi:3:agi:0.96:2.88,int:3:int:0.27:0.81
-R	shaman/enhancement	25	11994	12725	gear	6.6	spi:3:spi:1.2:3.6,str:3:str:1:3
-R	shaman/enhancement	25	11994	12726	gear	6.4799999999999995	agi:3:agi:0.96:2.88,spi:3:spi:1.2:3.6
-R	shaman/enhancement	25	11994	12727	gear	5.88	agi:3:agi:0.96:2.88,str:3:str:1:3
-R	shaman/enhancement	25	11994	12728	gear	4.8	agi:5:agi:0.96:4.8
-R	shaman/enhancement	25	11994	12729	gear	1.35	int:5:int:0.27:1.35
-R	shaman/enhancement	25	11994	12730	gear	6.0	spi:5:spi:1.2:6
-R	shaman/enhancement	25	11994	12731	gear	24.5	sta:5:sta:4.9:24.5
+R	shaman/enhancement	25	11994	12718	gear	11.100000000000001	int:3:int:1.6:4.8,sta:3:sta:2.1:6.3
+R	shaman/enhancement	25	11994	12719	gear	11.100000000000001	spi:3:spi:1.6:4.8,sta:3:sta:2.1:6.3
+R	shaman/enhancement	25	11994	12720	gear	9.600000000000001	int:3:int:1.6:4.8,spi:3:spi:1.6:4.8
+R	shaman/enhancement	25	11994	12721	gear	8.31	agi:3:agi:0.67:2.01,sta:3:sta:2.1:6.3
+R	shaman/enhancement	25	11994	12722	gear	9.3	sta:3:sta:2.1:6.3,str:3:str:1:3
+R	shaman/enhancement	25	11994	12723	gear	7.800000000000001	int:3:int:1.6:4.8,str:3:str:1:3
+R	shaman/enhancement	25	11994	12724	gear	6.8100000000000005	agi:3:agi:0.67:2.01,int:3:int:1.6:4.8
+R	shaman/enhancement	25	11994	12725	gear	7.800000000000001	spi:3:spi:1.6:4.8,str:3:str:1:3
+R	shaman/enhancement	25	11994	12726	gear	6.8100000000000005	agi:3:agi:0.67:2.01,spi:3:spi:1.6:4.8
+R	shaman/enhancement	25	11994	12727	gear	5.01	agi:3:agi:0.67:2.01,str:3:str:1:3
+R	shaman/enhancement	25	11994	12728	gear	3.35	agi:5:agi:0.67:3.35
+R	shaman/enhancement	25	11994	12729	gear	8.0	int:5:int:1.6:8
+R	shaman/enhancement	25	11994	12730	gear	8.0	spi:5:spi:1.6:8
+R	shaman/enhancement	25	11994	12731	gear	10.5	sta:5:sta:2.1:10.5
 R	shaman/enhancement	25	11994	12732	gear	5.0	str:5:str:1:5
 R	shaman/enhancement	25	11994	12733	gear	5.0	ap:10:ap:0.5:5
 R	shaman/enhancement	25	11994	12737	gear	0.0	
-R	shaman/enhancement	25	11994	12738	gear	0.0	
-R	shaman/enhancement	25	11994	12739	gear	1.92	agi:2:agi:0.96:1.92
-R	shaman/enhancement	25	11994	12740	gear	14.700000000000001	sta:3:sta:4.9:14.7
-R	shaman/enhancement	25	11994	12741	gear	14.700000000000001	sta:3:sta:4.9:14.7
-R	shaman/enhancement	25	11994	12742	gear	14.700000000000001	sta:3:sta:4.9:14.7
-R	shaman/enhancement	25	11994	12743	gear	14.700000000000001	sta:3:sta:4.9:14.7
-R	shaman/enhancement	25	11994	12744	gear	14.700000000000001	sta:3:sta:4.9:14.7
-R	shaman/enhancement	25	13183	0	mh	282.611	dps:39.47:dps:7.3:288.131,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	14122	0	gear	2.1	armor:14:armor:0.15:2.1
-R	shaman/enhancement	25	14122	12718	gear	12.44	int:2:int:0.27:0.54,sta:2:sta:4.9:9.8,armor:14:armor:0.15:2.1
-R	shaman/enhancement	25	14122	12719	gear	14.3	spi:2:spi:1.2:2.4,sta:2:sta:4.9:9.8,armor:14:armor:0.15:2.1
-R	shaman/enhancement	25	14122	12720	gear	5.04	int:2:int:0.27:0.54,spi:2:spi:1.2:2.4,armor:14:armor:0.15:2.1
-R	shaman/enhancement	25	14122	12729	gear	2.91	int:3:int:0.27:0.81,armor:14:armor:0.15:2.1
-R	shaman/enhancement	25	14122	12730	gear	5.699999999999999	spi:3:spi:1.2:3.6,armor:14:armor:0.15:2.1
-R	shaman/enhancement	25	14122	12731	gear	16.8	sta:3:sta:4.9:14.7,armor:14:armor:0.15:2.1
-R	shaman/enhancement	25	14122	12734	gear	6.9	sp:4:sp:1.2:4.8,armor:14:armor:0.15:2.1
-R	shaman/enhancement	25	14122	12735	gear	4.5	spDmg:2:sp:1.2:2.4,armor:14:armor:0.15:2.1
-R	shaman/enhancement	25	14122	12740	gear	11.9	sta:2:sta:4.9:9.8,armor:14:armor:0.15:2.1
-R	shaman/enhancement	25	14122	12741	gear	11.9	sta:2:sta:4.9:9.8,armor:14:armor:0.15:2.1
-R	shaman/enhancement	25	14122	12742	gear	11.9	sta:2:sta:4.9:9.8,armor:14:armor:0.15:2.1
-R	shaman/enhancement	25	14122	12743	gear	11.9	sta:2:sta:4.9:9.8,armor:14:armor:0.15:2.1
-R	shaman/enhancement	25	14122	12744	gear	11.9	sta:2:sta:4.9:9.8,armor:14:armor:0.15:2.1
-R	shaman/enhancement	25	14122	12745	gear	8.74	int:2:int:0.27:0.54,sta:1:sta:4.9:4.9,sp:1:sp:1.2:1.2,armor:14:armor:0.15:2.1
-R	shaman/enhancement	25	14122	12756	gear	2.1	armor:14:armor:0.15:2.1
-R	shaman/enhancement	25	14122	12757	gear	2.1	armor:14:armor:0.15:2.1
-R	shaman/enhancement	25	14122	12758	gear	2.1	armor:14:armor:0.15:2.1
-R	shaman/enhancement	25	14122	12759	gear	2.1	armor:14:armor:0.15:2.1
-R	shaman/enhancement	25	14122	12761	gear	2.1	armor:14:armor:0.15:2.1
-R	shaman/enhancement	25	14340	0	gear	106.30000000000001	sta:19:sta:4.9:93.1,armor:88:armor:0.15:13.2
-R	shaman/enhancement	25	14673	0	gear	41.24	str:3:str:1:3,agi:9:agi:0.96:8.64,sta:5:sta:4.9:24.5,armor:34:armor:0.15:5.1
-R	shaman/enhancement	25	14964	0	oh	258.0	armor:1720:armor:0.15:258
-R	shaman/enhancement	25	14964	12718	oh	304.53	int:9:int:0.27:2.43,sta:9:sta:4.9:44.1,armor:1720:armor:0.15:258
-R	shaman/enhancement	25	14964	12719	oh	312.9	spi:9:spi:1.2:10.8,sta:9:sta:4.9:44.1,armor:1720:armor:0.15:258
-R	shaman/enhancement	25	14964	12720	oh	271.23	int:9:int:0.27:2.43,spi:9:spi:1.2:10.8,armor:1720:armor:0.15:258
-R	shaman/enhancement	25	14964	12721	oh	310.74	agi:9:agi:0.96:8.64,sta:9:sta:4.9:44.1,armor:1720:armor:0.15:258
-R	shaman/enhancement	25	14964	12722	oh	311.1	sta:9:sta:4.9:44.1,str:9:str:1:9,armor:1720:armor:0.15:258
-R	shaman/enhancement	25	14964	12723	oh	269.43	int:9:int:0.27:2.43,str:9:str:1:9,armor:1720:armor:0.15:258
-R	shaman/enhancement	25	14964	12724	oh	269.07	agi:9:agi:0.96:8.64,int:9:int:0.27:2.43,armor:1720:armor:0.15:258
-R	shaman/enhancement	25	14964	12725	oh	277.8	spi:9:spi:1.2:10.8,str:9:str:1:9,armor:1720:armor:0.15:258
-R	shaman/enhancement	25	14964	12726	oh	277.44	agi:9:agi:0.96:8.64,spi:9:spi:1.2:10.8,armor:1720:armor:0.15:258
-R	shaman/enhancement	25	14964	12727	oh	275.64	agi:9:agi:0.96:8.64,str:9:str:1:9,armor:1720:armor:0.15:258
-R	shaman/enhancement	25	14964	12728	oh	271.44	agi:14:agi:0.96:13.44,armor:1720:armor:0.15:258
-R	shaman/enhancement	25	14964	12729	oh	261.78	int:14:int:0.27:3.78,armor:1720:armor:0.15:258
-R	shaman/enhancement	25	14964	12730	oh	274.8	spi:14:spi:1.2:16.8,armor:1720:armor:0.15:258
-R	shaman/enhancement	25	14964	12731	oh	326.6	sta:14:sta:4.9:68.6,armor:1720:armor:0.15:258
-R	shaman/enhancement	25	14964	12732	oh	272.0	str:14:str:1:14,armor:1720:armor:0.15:258
-R	shaman/enhancement	25	14964	12733	oh	272.0	ap:28:ap:0.5:14,armor:1720:armor:0.15:258
-R	shaman/enhancement	25	14964	12734	oh	277.2	sp:16:sp:1.2:19.2,armor:1720:armor:0.15:258
-R	shaman/enhancement	25	14964	12735	oh	270.0	spDmg:10:sp:1.2:12,armor:1720:armor:0.15:258
-R	shaman/enhancement	25	14964	12736	oh	258.0	armor:1720:armor:0.15:258
-R	shaman/enhancement	25	14964	12740	oh	302.1	sta:9:sta:4.9:44.1,armor:1720:armor:0.15:258
-R	shaman/enhancement	25	14964	12741	oh	302.1	sta:9:sta:4.9:44.1,armor:1720:armor:0.15:258
-R	shaman/enhancement	25	14964	12742	oh	302.1	sta:9:sta:4.9:44.1,armor:1720:armor:0.15:258
-R	shaman/enhancement	25	14964	12743	oh	302.1	sta:9:sta:4.9:44.1,armor:1720:armor:0.15:258
-R	shaman/enhancement	25	14964	12744	oh	302.1	sta:9:sta:4.9:44.1,armor:1720:armor:0.15:258
-R	shaman/enhancement	25	14964	12745	oh	296.1	int:10:int:0.27:2.7,sta:6:sta:4.9:29.4,sp:5:sp:1.2:6,armor:1720:armor:0.15:258
-R	shaman/enhancement	25	14964	12746	oh	273.9	int:10:int:0.27:2.7,spi:6:spi:1.2:7.2,sp:5:sp:1.2:6,armor:1720:armor:0.15:258
-R	shaman/enhancement	25	14964	12747	oh	320.2	spi:6:spi:1.2:7.2,sta:10:sta:4.9:49,sp:5:sp:1.2:6,armor:1720:armor:0.15:258
-R	shaman/enhancement	25	14964	12748	oh	312.22	int:6:int:0.27:1.62,sta:10:sta:4.9:49,spDmg:3:sp:1.2:3.6,armor:1720:armor:0.15:258
-R	shaman/enhancement	25	14964	12749	oh	271.5	int:10:int:0.27:2.7,spi:6:spi:1.2:7.2,spDmg:3:sp:1.2:3.6,armor:1720:armor:0.15:258
-R	shaman/enhancement	25	14964	12750	oh	317.8	spi:6:spi:1.2:7.2,sta:10:sta:4.9:49,spDmg:3:sp:1.2:3.6,armor:1720:armor:0.15:258
-R	shaman/enhancement	25	14964	12753	oh	313.0	sta:10:sta:4.9:49,str:6:str:1:6,armor:1720:armor:0.15:258
-R	shaman/enhancement	25	14964	12754	oh	313.0	sp:5:sp:1.2:6,sta:10:sta:4.9:49,armor:1720:armor:0.15:258
-R	shaman/enhancement	25	14964	12759	oh	258.0	armor:1720:armor:0.15:258
-R	shaman/enhancement	25	14964	12760	oh	276.8	spNature:20:spNature:0.94:18.8,armor:1720:armor:0.15:258
-R	shaman/enhancement	25	15235	0	mh	203.041	dps:28.57:dps:7.3:208.561,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	15235	12718	mh	228.891	int:5:int:0.27:1.35,sta:5:sta:4.9:24.5,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	15235	12719	mh	233.541	spi:5:spi:1.2:6,sta:5:sta:4.9:24.5,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	15235	12720	mh	210.391	int:5:int:0.27:1.35,spi:5:spi:1.2:6,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	15235	12721	mh	232.341	agi:5:agi:0.96:4.8,sta:5:sta:4.9:24.5,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	15235	12722	mh	232.541	sta:5:sta:4.9:24.5,str:5:str:1:5,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	15235	12723	mh	209.391	int:5:int:0.27:1.35,str:5:str:1:5,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	15235	12724	mh	209.191	agi:5:agi:0.96:4.8,int:5:int:0.27:1.35,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	15235	12725	mh	214.041	spi:5:spi:1.2:6,str:5:str:1:5,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	15235	12726	mh	213.841	agi:5:agi:0.96:4.8,spi:5:spi:1.2:6,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	15235	12727	mh	212.841	agi:5:agi:0.96:4.8,str:5:str:1:5,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	15235	12728	mh	210.721	agi:8:agi:0.96:7.68,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	15235	12729	mh	205.201	int:8:int:0.27:2.16,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	15235	12730	mh	212.641	spi:8:spi:1.2:9.6,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	15235	12731	mh	242.241	sta:8:sta:4.9:39.2,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	15235	12732	mh	211.041	str:8:str:1:8,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	15235	12733	mh	211.041	ap:16:ap:0.5:8,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	15235	12736	mh	203.041	dps:28.57:dps:7.3:208.561,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	15235	12740	mh	227.541	sta:5:sta:4.9:24.5,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	15235	12741	mh	227.541	sta:5:sta:4.9:24.5,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	15235	12742	mh	227.541	sta:5:sta:4.9:24.5,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	15235	12743	mh	227.541	sta:5:sta:4.9:24.5,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	15235	12744	mh	227.541	sta:5:sta:4.9:24.5,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	15235	12751	mh	238.821	agi:3:agi:0.96:2.88,ap:7:ap:0.5:3.5,sta:6:sta:4.9:29.4,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	15235	12752	mh	238.321	agi:3:agi:0.96:2.88,sta:6:sta:4.9:29.4,str:3:str:1:3,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	15235	12753	mh	235.441	sta:6:sta:4.9:29.4,str:3:str:1:3,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	15235	12754	mh	236.041	sp:3:sp:1.2:3.6,sta:6:sta:4.9:29.4,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	15235	12759	mh	203.041	dps:28.57:dps:7.3:208.561,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	15235	12906	mh	200.36499999999998	int:6:int:0.27:1.62,sta:4:sta:4.9:19.6,sp:38:sp:1.2:45.6,dps:19.05:dps:7.3:139.065,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	15235	12908	mh	185.56499999999997	int:6:int:0.27:1.62,sp:38:sp:1.2:45.6,spi:4:spi:1.2:4.8,dps:19.05:dps:7.3:139.065,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	15235	12910	mh	213.345	sp:38:sp:1.2:45.6,spi:4:spi:1.2:4.8,sta:6:sta:4.9:29.4,dps:19.05:dps:7.3:139.065,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	15235	12912	mh	192.825	spDmg:24:sp:1.2:28.8,int:4:int:0.27:1.08,sta:6:sta:4.9:29.4,dps:19.05:dps:7.3:139.065,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	15235	12913	mh	168.765	int:6:int:0.27:1.62,spDmg:24:sp:1.2:28.8,spi:4:spi:1.2:4.8,dps:19.05:dps:7.3:139.065,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	15235	12916	mh	196.545	spDmg:24:sp:1.2:28.8,spi:4:spi:1.2:4.8,sta:6:sta:4.9:29.4,dps:19.05:dps:7.3:139.065,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	15235	12917	mh	181.30499999999998	sp:38:sp:1.2:45.6,int:8:int:0.27:2.16,dps:19.05:dps:7.3:139.065,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	15235	12920	mh	164.505	int:8:int:0.27:2.16,spDmg:24:sp:1.2:28.8,dps:19.05:dps:7.3:139.065,speed:-0.6:speed:9.2:-5.52
-R	shaman/enhancement	25	15477	0	gear	15.149999999999999	armor:101:armor:0.15:15.15
-R	shaman/enhancement	25	15477	12718	gear	20.32	int:1:int:0.27:0.27,sta:1:sta:4.9:4.9,armor:101:armor:0.15:15.15
-R	shaman/enhancement	25	15477	12719	gear	21.25	spi:1:spi:1.2:1.2,sta:1:sta:4.9:4.9,armor:101:armor:0.15:15.15
-R	shaman/enhancement	25	15477	12720	gear	16.619999999999997	int:1:int:0.27:0.27,spi:1:spi:1.2:1.2,armor:101:armor:0.15:15.15
-R	shaman/enhancement	25	15477	12721	gear	21.009999999999998	agi:1:agi:0.96:0.96,sta:1:sta:4.9:4.9,armor:101:armor:0.15:15.15
-R	shaman/enhancement	25	15477	12722	gear	21.049999999999997	sta:1:sta:4.9:4.9,str:1:str:1:1,armor:101:armor:0.15:15.15
-R	shaman/enhancement	25	15477	12723	gear	16.419999999999998	int:1:int:0.27:0.27,str:1:str:1:1,armor:101:armor:0.15:15.15
-R	shaman/enhancement	25	15477	12724	gear	16.38	agi:1:agi:0.96:0.96,int:1:int:0.27:0.27,armor:101:armor:0.15:15.15
-R	shaman/enhancement	25	15477	12725	gear	17.349999999999998	spi:1:spi:1.2:1.2,str:1:str:1:1,armor:101:armor:0.15:15.15
-R	shaman/enhancement	25	15477	12726	gear	17.31	agi:1:agi:0.96:0.96,spi:1:spi:1.2:1.2,armor:101:armor:0.15:15.15
-R	shaman/enhancement	25	15477	12727	gear	17.11	agi:1:agi:0.96:0.96,str:1:str:1:1,armor:101:armor:0.15:15.15
-R	shaman/enhancement	25	15477	12728	gear	17.07	agi:2:agi:0.96:1.92,armor:101:armor:0.15:15.15
-R	shaman/enhancement	25	15477	12729	gear	15.689999999999998	int:2:int:0.27:0.54,armor:101:armor:0.15:15.15
-R	shaman/enhancement	25	15477	12730	gear	17.549999999999997	spi:2:spi:1.2:2.4,armor:101:armor:0.15:15.15
-R	shaman/enhancement	25	15477	12731	gear	24.95	sta:2:sta:4.9:9.8,armor:101:armor:0.15:15.15
-R	shaman/enhancement	25	15477	12732	gear	17.15	str:2:str:1:2,armor:101:armor:0.15:15.15
-R	shaman/enhancement	25	15477	12733	gear	17.15	ap:4:ap:0.5:2,armor:101:armor:0.15:15.15
-R	shaman/enhancement	25	15477	12734	gear	17.549999999999997	sp:2:sp:1.2:2.4,armor:101:armor:0.15:15.15
-R	shaman/enhancement	25	15477	12735	gear	16.349999999999998	spDmg:1:sp:1.2:1.2,armor:101:armor:0.15:15.15
-R	shaman/enhancement	25	15477	12736	gear	15.149999999999999	armor:101:armor:0.15:15.15
-R	shaman/enhancement	25	15477	12740	gear	20.049999999999997	sta:1:sta:4.9:4.9,armor:101:armor:0.15:15.15
-R	shaman/enhancement	25	15477	12741	gear	20.049999999999997	sta:1:sta:4.9:4.9,armor:101:armor:0.15:15.15
-R	shaman/enhancement	25	15477	12742	gear	20.049999999999997	sta:1:sta:4.9:4.9,armor:101:armor:0.15:15.15
-R	shaman/enhancement	25	15477	12743	gear	20.049999999999997	sta:1:sta:4.9:4.9,armor:101:armor:0.15:15.15
-R	shaman/enhancement	25	15477	12744	gear	20.049999999999997	sta:1:sta:4.9:4.9,armor:101:armor:0.15:15.15
-R	shaman/enhancement	25	15477	12759	gear	15.149999999999999	armor:101:armor:0.15:15.15
-R	shaman/enhancement	25	15945	0	oh	12.200000000000001	sta:2:sta:4.9:9.8,spi:2:spi:1.2:2.4
-R	shaman/enhancement	25	16711	0	gear	83.16	agi:21:agi:0.96:20.16,sta:9:sta:4.9:44.1,hit:0.3:hit:2:0.6,hit:0.3:spellHit:3.5:1.05,armor:115:armor:0.15:17.25
-R	shaman/enhancement	25	18726	0	gear	84.45	sta:15:sta:4.9:73.5,armor:73:armor:0.15:10.95
-R	shaman/enhancement	25	20129	0	gear	64.71000000000001	agi:6:agi:0.96:5.76,str:6:str:1:6,sta:6:sta:4.9:29.4,armor:157:armor:0.15:23.55
+R	shaman/enhancement	25	11994	12738	gear	1.22	mp5:2:mp5:0.61:1.22
+R	shaman/enhancement	25	11994	12739	gear	1.34	agi:2:agi:0.67:1.34
+R	shaman/enhancement	25	11994	12740	gear	6.300000000000001	sta:3:sta:2.1:6.3
+R	shaman/enhancement	25	11994	12741	gear	6.300000000000001	sta:3:sta:2.1:6.3
+R	shaman/enhancement	25	11994	12742	gear	6.300000000000001	sta:3:sta:2.1:6.3
+R	shaman/enhancement	25	11994	12743	gear	6.300000000000001	sta:3:sta:2.1:6.3
+R	shaman/enhancement	25	11994	12744	gear	6.300000000000001	sta:3:sta:2.1:6.3
+R	shaman/enhancement	25	13183	0	mh	287.291	dps:39.47:dps:7.3:288.131,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	14122	0	gear	1.1900000000000002	armor:14:armor:0.085:1.19
+R	shaman/enhancement	25	14122	12718	gear	8.59	int:2:int:1.6:3.2,sta:2:sta:2.1:4.2,armor:14:armor:0.085:1.19
+R	shaman/enhancement	25	14122	12719	gear	8.59	spi:2:spi:1.6:3.2,sta:2:sta:2.1:4.2,armor:14:armor:0.085:1.19
+R	shaman/enhancement	25	14122	12720	gear	7.590000000000001	int:2:int:1.6:3.2,spi:2:spi:1.6:3.2,armor:14:armor:0.085:1.19
+R	shaman/enhancement	25	14122	12729	gear	5.990000000000001	int:3:int:1.6:4.8,armor:14:armor:0.085:1.19
+R	shaman/enhancement	25	14122	12730	gear	5.990000000000001	spi:3:spi:1.6:4.8,armor:14:armor:0.085:1.19
+R	shaman/enhancement	25	14122	12731	gear	7.490000000000001	sta:3:sta:2.1:6.3,armor:14:armor:0.085:1.19
+R	shaman/enhancement	25	14122	12734	gear	7.19	sp:4:sp:1.5:6,armor:14:armor:0.085:1.19
+R	shaman/enhancement	25	14122	12735	gear	4.19	spDmg:2:sp:1.5:3,armor:14:armor:0.085:1.19
+R	shaman/enhancement	25	14122	12740	gear	5.390000000000001	sta:2:sta:2.1:4.2,armor:14:armor:0.085:1.19
+R	shaman/enhancement	25	14122	12741	gear	5.390000000000001	sta:2:sta:2.1:4.2,armor:14:armor:0.085:1.19
+R	shaman/enhancement	25	14122	12742	gear	5.390000000000001	sta:2:sta:2.1:4.2,armor:14:armor:0.085:1.19
+R	shaman/enhancement	25	14122	12743	gear	5.390000000000001	sta:2:sta:2.1:4.2,armor:14:armor:0.085:1.19
+R	shaman/enhancement	25	14122	12744	gear	5.390000000000001	sta:2:sta:2.1:4.2,armor:14:armor:0.085:1.19
+R	shaman/enhancement	25	14122	12745	gear	7.990000000000001	int:2:int:1.6:3.2,sta:1:sta:2.1:2.1,sp:1:sp:1.5:1.5,armor:14:armor:0.085:1.19
+R	shaman/enhancement	25	14122	12756	gear	1.1900000000000002	armor:14:armor:0.085:1.19
+R	shaman/enhancement	25	14122	12757	gear	1.1900000000000002	armor:14:armor:0.085:1.19
+R	shaman/enhancement	25	14122	12758	gear	1.1900000000000002	armor:14:armor:0.085:1.19
+R	shaman/enhancement	25	14122	12759	gear	1.1900000000000002	armor:14:armor:0.085:1.19
+R	shaman/enhancement	25	14122	12761	gear	1.1900000000000002	armor:14:armor:0.085:1.19
+R	shaman/enhancement	25	14340	0	gear	47.379999999999995	sta:19:sta:2.1:39.9,armor:88:armor:0.085:7.48
+R	shaman/enhancement	25	14673	0	gear	22.42	str:3:str:1:3,agi:9:agi:0.67:6.03,sta:5:sta:2.1:10.5,armor:34:armor:0.085:2.89
+R	shaman/enhancement	25	14964	0	oh	146.20000000000002	armor:1720:armor:0.085:146.2
+R	shaman/enhancement	25	14964	12718	oh	179.50000000000003	int:9:int:1.6:14.4,sta:9:sta:2.1:18.9,armor:1720:armor:0.085:146.2
+R	shaman/enhancement	25	14964	12719	oh	179.50000000000003	spi:9:spi:1.6:14.4,sta:9:sta:2.1:18.9,armor:1720:armor:0.085:146.2
+R	shaman/enhancement	25	14964	12720	oh	175.00000000000003	int:9:int:1.6:14.4,spi:9:spi:1.6:14.4,armor:1720:armor:0.085:146.2
+R	shaman/enhancement	25	14964	12721	oh	171.13000000000002	agi:9:agi:0.67:6.03,sta:9:sta:2.1:18.9,armor:1720:armor:0.085:146.2
+R	shaman/enhancement	25	14964	12722	oh	174.10000000000002	sta:9:sta:2.1:18.9,str:9:str:1:9,armor:1720:armor:0.085:146.2
+R	shaman/enhancement	25	14964	12723	oh	169.60000000000002	int:9:int:1.6:14.4,str:9:str:1:9,armor:1720:armor:0.085:146.2
+R	shaman/enhancement	25	14964	12724	oh	166.63000000000002	agi:9:agi:0.67:6.03,int:9:int:1.6:14.4,armor:1720:armor:0.085:146.2
+R	shaman/enhancement	25	14964	12725	oh	169.60000000000002	spi:9:spi:1.6:14.4,str:9:str:1:9,armor:1720:armor:0.085:146.2
+R	shaman/enhancement	25	14964	12726	oh	166.63000000000002	agi:9:agi:0.67:6.03,spi:9:spi:1.6:14.4,armor:1720:armor:0.085:146.2
+R	shaman/enhancement	25	14964	12727	oh	161.23000000000002	agi:9:agi:0.67:6.03,str:9:str:1:9,armor:1720:armor:0.085:146.2
+R	shaman/enhancement	25	14964	12728	oh	155.58	agi:14:agi:0.67:9.38,armor:1720:armor:0.085:146.2
+R	shaman/enhancement	25	14964	12729	oh	168.60000000000002	int:14:int:1.6:22.4,armor:1720:armor:0.085:146.2
+R	shaman/enhancement	25	14964	12730	oh	168.60000000000002	spi:14:spi:1.6:22.4,armor:1720:armor:0.085:146.2
+R	shaman/enhancement	25	14964	12731	oh	175.60000000000002	sta:14:sta:2.1:29.4,armor:1720:armor:0.085:146.2
+R	shaman/enhancement	25	14964	12732	oh	160.20000000000002	str:14:str:1:14,armor:1720:armor:0.085:146.2
+R	shaman/enhancement	25	14964	12733	oh	160.20000000000002	ap:28:ap:0.5:14,armor:1720:armor:0.085:146.2
+R	shaman/enhancement	25	14964	12734	oh	170.20000000000002	sp:16:sp:1.5:24,armor:1720:armor:0.085:146.2
+R	shaman/enhancement	25	14964	12735	oh	161.20000000000002	spDmg:10:sp:1.5:15,armor:1720:armor:0.085:146.2
+R	shaman/enhancement	25	14964	12736	oh	146.20000000000002	armor:1720:armor:0.085:146.2
+R	shaman/enhancement	25	14964	12740	oh	165.10000000000002	sta:9:sta:2.1:18.9,armor:1720:armor:0.085:146.2
+R	shaman/enhancement	25	14964	12741	oh	165.10000000000002	sta:9:sta:2.1:18.9,armor:1720:armor:0.085:146.2
+R	shaman/enhancement	25	14964	12742	oh	165.10000000000002	sta:9:sta:2.1:18.9,armor:1720:armor:0.085:146.2
+R	shaman/enhancement	25	14964	12743	oh	165.10000000000002	sta:9:sta:2.1:18.9,armor:1720:armor:0.085:146.2
+R	shaman/enhancement	25	14964	12744	oh	165.10000000000002	sta:9:sta:2.1:18.9,armor:1720:armor:0.085:146.2
+R	shaman/enhancement	25	14964	12745	oh	182.3	int:10:int:1.6:16,sta:6:sta:2.1:12.6,sp:5:sp:1.5:7.5,armor:1720:armor:0.085:146.2
+R	shaman/enhancement	25	14964	12746	oh	179.3	int:10:int:1.6:16,spi:6:spi:1.6:9.6,sp:5:sp:1.5:7.5,armor:1720:armor:0.085:146.2
+R	shaman/enhancement	25	14964	12747	oh	184.3	spi:6:spi:1.6:9.6,sta:10:sta:2.1:21,sp:5:sp:1.5:7.5,armor:1720:armor:0.085:146.2
+R	shaman/enhancement	25	14964	12748	oh	181.3	int:6:int:1.6:9.6,sta:10:sta:2.1:21,spDmg:3:sp:1.5:4.5,armor:1720:armor:0.085:146.2
+R	shaman/enhancement	25	14964	12749	oh	176.3	int:10:int:1.6:16,spi:6:spi:1.6:9.6,spDmg:3:sp:1.5:4.5,armor:1720:armor:0.085:146.2
+R	shaman/enhancement	25	14964	12750	oh	181.3	spi:6:spi:1.6:9.6,sta:10:sta:2.1:21,spDmg:3:sp:1.5:4.5,armor:1720:armor:0.085:146.2
+R	shaman/enhancement	25	14964	12753	oh	173.20000000000002	sta:10:sta:2.1:21,str:6:str:1:6,armor:1720:armor:0.085:146.2
+R	shaman/enhancement	25	14964	12754	oh	174.70000000000002	sp:5:sp:1.5:7.5,sta:10:sta:2.1:21,armor:1720:armor:0.085:146.2
+R	shaman/enhancement	25	14964	12759	oh	146.20000000000002	armor:1720:armor:0.085:146.2
+R	shaman/enhancement	25	14964	12760	oh	165.8	spNature:20:spNature:0.98:19.6,armor:1720:armor:0.085:146.2
+R	shaman/enhancement	25	15235	0	mh	207.721	dps:28.57:dps:7.3:208.561,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	15235	12718	mh	226.221	int:5:int:1.6:8,sta:5:sta:2.1:10.5,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	15235	12719	mh	226.221	spi:5:spi:1.6:8,sta:5:sta:2.1:10.5,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	15235	12720	mh	223.721	int:5:int:1.6:8,spi:5:spi:1.6:8,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	15235	12721	mh	221.571	agi:5:agi:0.67:3.35,sta:5:sta:2.1:10.5,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	15235	12722	mh	223.221	sta:5:sta:2.1:10.5,str:5:str:1:5,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	15235	12723	mh	220.721	int:5:int:1.6:8,str:5:str:1:5,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	15235	12724	mh	219.071	agi:5:agi:0.67:3.35,int:5:int:1.6:8,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	15235	12725	mh	220.721	spi:5:spi:1.6:8,str:5:str:1:5,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	15235	12726	mh	219.071	agi:5:agi:0.67:3.35,spi:5:spi:1.6:8,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	15235	12727	mh	216.071	agi:5:agi:0.67:3.35,str:5:str:1:5,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	15235	12728	mh	213.08100000000002	agi:8:agi:0.67:5.36,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	15235	12729	mh	220.52100000000002	int:8:int:1.6:12.8,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	15235	12730	mh	220.52100000000002	spi:8:spi:1.6:12.8,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	15235	12731	mh	224.52100000000002	sta:8:sta:2.1:16.8,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	15235	12732	mh	215.721	str:8:str:1:8,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	15235	12733	mh	215.721	ap:16:ap:0.5:8,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	15235	12736	mh	207.721	dps:28.57:dps:7.3:208.561,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	15235	12740	mh	218.221	sta:5:sta:2.1:10.5,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	15235	12741	mh	218.221	sta:5:sta:2.1:10.5,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	15235	12742	mh	218.221	sta:5:sta:2.1:10.5,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	15235	12743	mh	218.221	sta:5:sta:2.1:10.5,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	15235	12744	mh	218.221	sta:5:sta:2.1:10.5,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	15235	12751	mh	225.831	agi:3:agi:0.67:2.01,ap:7:ap:0.5:3.5,sta:6:sta:2.1:12.6,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	15235	12752	mh	225.331	agi:3:agi:0.67:2.01,sta:6:sta:2.1:12.6,str:3:str:1:3,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	15235	12753	mh	223.321	sta:6:sta:2.1:12.6,str:3:str:1:3,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	15235	12754	mh	224.821	sp:3:sp:1.5:4.5,sta:6:sta:2.1:12.6,dps:28.57:dps:7.3:208.561,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	15235	12759	mh	207.721	dps:28.57:dps:7.3:208.561,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	15235	12906	mh	213.225	int:6:int:1.6:9.6,sta:4:sta:2.1:8.4,sp:38:sp:1.5:57,dps:19.05:dps:7.3:139.065,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	15235	12908	mh	211.225	int:6:int:1.6:9.6,sp:38:sp:1.5:57,spi:4:spi:1.6:6.4,dps:19.05:dps:7.3:139.065,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	15235	12910	mh	214.225	sp:38:sp:1.5:57,spi:4:spi:1.6:6.4,sta:6:sta:2.1:12.6,dps:19.05:dps:7.3:139.065,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	15235	12912	mh	193.225	spDmg:24:sp:1.5:36,int:4:int:1.6:6.4,sta:6:sta:2.1:12.6,dps:19.05:dps:7.3:139.065,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	15235	12913	mh	190.225	int:6:int:1.6:9.6,spDmg:24:sp:1.5:36,spi:4:spi:1.6:6.4,dps:19.05:dps:7.3:139.065,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	15235	12916	mh	193.225	spDmg:24:sp:1.5:36,spi:4:spi:1.6:6.4,sta:6:sta:2.1:12.6,dps:19.05:dps:7.3:139.065,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	15235	12917	mh	208.025	sp:38:sp:1.5:57,int:8:int:1.6:12.8,dps:19.05:dps:7.3:139.065,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	15235	12920	mh	187.025	int:8:int:1.6:12.8,spDmg:24:sp:1.5:36,dps:19.05:dps:7.3:139.065,speed:-0.6:speed:1.4:-0.84
+R	shaman/enhancement	25	15477	0	gear	8.585	armor:101:armor:0.085:8.585
+R	shaman/enhancement	25	15477	12718	gear	12.285	int:1:int:1.6:1.6,sta:1:sta:2.1:2.1,armor:101:armor:0.085:8.585
+R	shaman/enhancement	25	15477	12719	gear	12.285	spi:1:spi:1.6:1.6,sta:1:sta:2.1:2.1,armor:101:armor:0.085:8.585
+R	shaman/enhancement	25	15477	12720	gear	11.785	int:1:int:1.6:1.6,spi:1:spi:1.6:1.6,armor:101:armor:0.085:8.585
+R	shaman/enhancement	25	15477	12721	gear	11.355	agi:1:agi:0.67:0.67,sta:1:sta:2.1:2.1,armor:101:armor:0.085:8.585
+R	shaman/enhancement	25	15477	12722	gear	11.685	sta:1:sta:2.1:2.1,str:1:str:1:1,armor:101:armor:0.085:8.585
+R	shaman/enhancement	25	15477	12723	gear	11.185	int:1:int:1.6:1.6,str:1:str:1:1,armor:101:armor:0.085:8.585
+R	shaman/enhancement	25	15477	12724	gear	10.855	agi:1:agi:0.67:0.67,int:1:int:1.6:1.6,armor:101:armor:0.085:8.585
+R	shaman/enhancement	25	15477	12725	gear	11.185	spi:1:spi:1.6:1.6,str:1:str:1:1,armor:101:armor:0.085:8.585
+R	shaman/enhancement	25	15477	12726	gear	10.855	agi:1:agi:0.67:0.67,spi:1:spi:1.6:1.6,armor:101:armor:0.085:8.585
+R	shaman/enhancement	25	15477	12727	gear	10.255	agi:1:agi:0.67:0.67,str:1:str:1:1,armor:101:armor:0.085:8.585
+R	shaman/enhancement	25	15477	12728	gear	9.925	agi:2:agi:0.67:1.34,armor:101:armor:0.085:8.585
+R	shaman/enhancement	25	15477	12729	gear	11.785	int:2:int:1.6:3.2,armor:101:armor:0.085:8.585
+R	shaman/enhancement	25	15477	12730	gear	11.785	spi:2:spi:1.6:3.2,armor:101:armor:0.085:8.585
+R	shaman/enhancement	25	15477	12731	gear	12.785	sta:2:sta:2.1:4.2,armor:101:armor:0.085:8.585
+R	shaman/enhancement	25	15477	12732	gear	10.585	str:2:str:1:2,armor:101:armor:0.085:8.585
+R	shaman/enhancement	25	15477	12733	gear	10.585	ap:4:ap:0.5:2,armor:101:armor:0.085:8.585
+R	shaman/enhancement	25	15477	12734	gear	11.585	sp:2:sp:1.5:3,armor:101:armor:0.085:8.585
+R	shaman/enhancement	25	15477	12735	gear	10.085	spDmg:1:sp:1.5:1.5,armor:101:armor:0.085:8.585
+R	shaman/enhancement	25	15477	12736	gear	8.585	armor:101:armor:0.085:8.585
+R	shaman/enhancement	25	15477	12740	gear	10.685	sta:1:sta:2.1:2.1,armor:101:armor:0.085:8.585
+R	shaman/enhancement	25	15477	12741	gear	10.685	sta:1:sta:2.1:2.1,armor:101:armor:0.085:8.585
+R	shaman/enhancement	25	15477	12742	gear	10.685	sta:1:sta:2.1:2.1,armor:101:armor:0.085:8.585
+R	shaman/enhancement	25	15477	12743	gear	10.685	sta:1:sta:2.1:2.1,armor:101:armor:0.085:8.585
+R	shaman/enhancement	25	15477	12744	gear	10.685	sta:1:sta:2.1:2.1,armor:101:armor:0.085:8.585
+R	shaman/enhancement	25	15477	12759	gear	8.585	armor:101:armor:0.085:8.585
+R	shaman/enhancement	25	15945	0	oh	7.4	sta:2:sta:2.1:4.2,spi:2:spi:1.6:3.2
+R	shaman/enhancement	25	16711	0	gear	44.364999999999995	agi:21:agi:0.67:14.07,sta:9:sta:2.1:18.9,hit:0.3:hit:1.9:0.57,hit:0.3:spellHit:3.5:1.05,armor:115:armor:0.085:9.775
+R	shaman/enhancement	25	18726	0	gear	37.705	sta:15:sta:2.1:31.5,armor:73:armor:0.085:6.205
+R	shaman/enhancement	25	20129	0	gear	35.965	agi:6:agi:0.67:4.02,str:6:str:1:6,sta:6:sta:2.1:12.6,armor:157:armor:0.085:13.345
 R	shaman/enhancement	25	22345	0	ranged	0.0	
-R	shaman/enhancement	25	22967	0	gear	181.45000000000002	sta:25:sta:4.9:122.5,armor:393:armor:0.15:58.95
-R	shaman/enhancement	25	250491	0	gear	54.55	int:5:int:0.27:1.35,sta:4:sta:4.9:19.6,spDmg:5:sp:1.2:6,armor:184:armor:0.15:27.6
-R	shaman/enhancement	25	252507	0	gear	67.60000000000001	sta:10:sta:4.9:49,spDmg:6:sp:1.2:7.2,armor:76:armor:0.15:11.4
-R	shaman/enhancement	25	254111	0	gear	74.23	int:9:int:0.27:2.43,sta:13:sta:4.9:63.7,armor:54:armor:0.15:8.1
-R	shaman/enhancement	25	270033	0	gear	12.69	agi:4:agi:0.96:3.84,str:3:str:1:3,armor:39:armor:0.15:5.85
-R	shaman/enhancement	25	271956	0	gear	135.42000000000002	agi:27:agi:0.96:25.92,sta:12:sta:4.9:58.8,crit:1:crit:2.9:2.9,crit:1:spellCrit:1:1,armor:312:armor:0.15:46.8
-R	shaman/enhancement	25	272958	0	gear	132.09	int:27:int:0.27:7.29,sta:12:sta:4.9:58.8,sp:16:sp:1.2:19.2,armor:312:armor:0.15:46.8
-R	shaman/enhancement	25	280082	0	mh	383.16499999999996	int:15:int:0.27:4.05,hit:1.5:hit:2:3,hit:1.5:spellHit:3.5:5.25,spi:21:spi:1.2:25.2,sp:66:sp:1.2:79.2,dps:36.25:dps:7.3:264.625,speed:0.2:speed:9.2:1.84
-R	shaman/enhancement	25	282560	0	gear	107.95	int:10:int:0.27:2.7,sta:13:sta:4.9:63.7,sp:8:sp:1.2:9.6,armor:213:armor:0.15:31.95
-R	shaman/enhancement	25	286609	0	oh	273.59999999999997	spi:6:spi:1.2:7.2,armor:1776:armor:0.15:266.4
-R	shaman/enhancement	34	1315	0	gear	48.5	sta:10:sta:3.2:32,spi:15:spi:1.1:16.5
-R	shaman/enhancement	34	1808	0	gear	6.882	armor:74:armor:0.093:6.882
-R	shaman/enhancement	34	1990	0	mh	181.76999999999998	dps:24.71:dps:7:172.97,speed:0.4:speed:22:8.8
-R	shaman/enhancement	34	1990	12718	mh	218.49	int:9:int:0.88:7.92,sta:9:sta:3.2:28.8,dps:24.71:dps:7:172.97,speed:0.4:speed:22:8.8
-R	shaman/enhancement	34	1990	12905	mh	192.21999999999997	int:11:int:0.88:9.68,sta:7:sta:3.2:22.4,sp:28:sp:0.81:22.68,dps:18.38:dps:7:128.66,speed:0.4:speed:22:8.8
-R	shaman/enhancement	34	2140	0	mh	28.380000000000006	dps:5.94:dps:7:41.58,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	2140	12718	mh	32.46000000000001	int:1:int:0.88:0.88,sta:1:sta:3.2:3.2,dps:5.94:dps:7:41.58,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	2140	12917	mh	17.98	sp:5:sp:0.81:4.05,int:1:int:0.88:0.88,dps:3.75:dps:7:26.25,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	2225	0	mh	21.8	dps:5:dps:7:35,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	2614	0	gear	2.697	armor:29:armor:0.093:2.697
-R	shaman/enhancement	34	3158	0	gear	2.418	armor:26:armor:0.093:2.418
-R	shaman/enhancement	34	3570	0	mh	45.64	str:2:str:1:2,dps:8.12:dps:7:56.84,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	4023	0	mh	94.32	dps:15.36:dps:7:107.52,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	4068	0	oh	118.359	sta:9:sta:3.2:28.8,armor:963:armor:0.093:89.559
-R	shaman/enhancement	34	4570	0	mh	76.6	dps:10:dps:7:70,speed:0.3:speed:22:6.6
-R	shaman/enhancement	34	4570	12718	mh	88.84	int:3:int:0.88:2.64,sta:3:sta:3.2:9.6,dps:10:dps:7:70,speed:0.3:speed:22:6.6
-R	shaman/enhancement	34	4570	12719	mh	89.5	spi:3:spi:1.1:3.3,sta:3:sta:3.2:9.6,dps:10:dps:7:70,speed:0.3:speed:22:6.6
-R	shaman/enhancement	34	4570	12720	mh	82.53999999999999	int:3:int:0.88:2.64,spi:3:spi:1.1:3.3,dps:10:dps:7:70,speed:0.3:speed:22:6.6
-R	shaman/enhancement	34	4570	12721	mh	88.86999999999999	agi:3:agi:0.89:2.67,sta:3:sta:3.2:9.6,dps:10:dps:7:70,speed:0.3:speed:22:6.6
-R	shaman/enhancement	34	4570	12722	mh	89.19999999999999	sta:3:sta:3.2:9.6,str:3:str:1:3,dps:10:dps:7:70,speed:0.3:speed:22:6.6
-R	shaman/enhancement	34	4570	12723	mh	82.24	int:3:int:0.88:2.64,str:3:str:1:3,dps:10:dps:7:70,speed:0.3:speed:22:6.6
-R	shaman/enhancement	34	4570	12724	mh	81.91	agi:3:agi:0.89:2.67,int:3:int:0.88:2.64,dps:10:dps:7:70,speed:0.3:speed:22:6.6
-R	shaman/enhancement	34	4570	12725	mh	82.89999999999999	spi:3:spi:1.1:3.3,str:3:str:1:3,dps:10:dps:7:70,speed:0.3:speed:22:6.6
-R	shaman/enhancement	34	4570	12726	mh	82.57	agi:3:agi:0.89:2.67,spi:3:spi:1.1:3.3,dps:10:dps:7:70,speed:0.3:speed:22:6.6
-R	shaman/enhancement	34	4570	12727	mh	82.27	agi:3:agi:0.89:2.67,str:3:str:1:3,dps:10:dps:7:70,speed:0.3:speed:22:6.6
-R	shaman/enhancement	34	4570	12728	mh	80.16	agi:4:agi:0.89:3.56,dps:10:dps:7:70,speed:0.3:speed:22:6.6
-R	shaman/enhancement	34	4570	12729	mh	80.11999999999999	int:4:int:0.88:3.52,dps:10:dps:7:70,speed:0.3:speed:22:6.6
-R	shaman/enhancement	34	4570	12730	mh	81.0	spi:4:spi:1.1:4.4,dps:10:dps:7:70,speed:0.3:speed:22:6.6
-R	shaman/enhancement	34	4570	12731	mh	89.39999999999999	sta:4:sta:3.2:12.8,dps:10:dps:7:70,speed:0.3:speed:22:6.6
-R	shaman/enhancement	34	4570	12732	mh	80.6	str:4:str:1:4,dps:10:dps:7:70,speed:0.3:speed:22:6.6
-R	shaman/enhancement	34	4570	12733	mh	80.6	ap:8:ap:0.5:4,dps:10:dps:7:70,speed:0.3:speed:22:6.6
-R	shaman/enhancement	34	4570	12736	mh	76.6	dps:10:dps:7:70,speed:0.3:speed:22:6.6
-R	shaman/enhancement	34	4570	12740	mh	86.19999999999999	sta:3:sta:3.2:9.6,dps:10:dps:7:70,speed:0.3:speed:22:6.6
-R	shaman/enhancement	34	4570	12741	mh	86.19999999999999	sta:3:sta:3.2:9.6,dps:10:dps:7:70,speed:0.3:speed:22:6.6
-R	shaman/enhancement	34	4570	12742	mh	86.19999999999999	sta:3:sta:3.2:9.6,dps:10:dps:7:70,speed:0.3:speed:22:6.6
-R	shaman/enhancement	34	4570	12743	mh	86.19999999999999	sta:3:sta:3.2:9.6,dps:10:dps:7:70,speed:0.3:speed:22:6.6
-R	shaman/enhancement	34	4570	12744	mh	86.19999999999999	sta:3:sta:3.2:9.6,dps:10:dps:7:70,speed:0.3:speed:22:6.6
-R	shaman/enhancement	34	4570	12759	mh	76.6	dps:10:dps:7:70,speed:0.3:speed:22:6.6
-R	shaman/enhancement	34	4570	12918	mh	69.66	sp:8:sp:0.81:6.48,int:4:int:0.88:3.52,dps:7.58:dps:7:53.06,speed:0.3:speed:22:6.6
-R	shaman/enhancement	34	4570	12919	mh	67.23	spDmg:5:sp:0.81:4.05,int:4:int:0.88:3.52,dps:7.58:dps:7:53.06,speed:0.3:speed:22:6.6
+R	shaman/enhancement	25	22967	0	gear	85.905	sta:25:sta:2.1:52.5,armor:393:armor:0.085:33.405
+R	shaman/enhancement	25	250491	0	gear	39.54	int:5:int:1.6:8,sta:4:sta:2.1:8.4,spDmg:5:sp:1.5:7.5,armor:184:armor:0.085:15.64
+R	shaman/enhancement	25	252507	0	gear	36.46	sta:10:sta:2.1:21,spDmg:6:sp:1.5:9,armor:76:armor:0.085:6.46
+R	shaman/enhancement	25	254111	0	gear	46.290000000000006	int:9:int:1.6:14.4,sta:13:sta:2.1:27.3,armor:54:armor:0.085:4.59
+R	shaman/enhancement	25	270033	0	gear	8.995000000000001	agi:4:agi:0.67:2.68,str:3:str:1:3,armor:39:armor:0.085:3.315
+R	shaman/enhancement	25	271956	0	gear	74.11000000000001	agi:27:agi:0.67:18.09,sta:12:sta:2.1:25.2,crit:1:crit:3:3,crit:1:spellCrit:1.3:1.3,armor:312:armor:0.085:26.52
+R	shaman/enhancement	25	272958	0	gear	118.92000000000002	int:27:int:1.6:43.2,sta:12:sta:2.1:25.2,sp:16:sp:1.5:24,armor:312:armor:0.085:26.52
+R	shaman/enhancement	25	280082	0	mh	429.60499999999996	int:15:int:1.6:24,hit:1.5:hit:1.9:2.85,hit:1.5:spellHit:3.5:5.25,spi:21:spi:1.6:33.6,sp:66:sp:1.5:99,dps:36.25:dps:7.3:264.625,speed:0.2:speed:1.4:0.28
+R	shaman/enhancement	25	282560	0	gear	73.405	int:10:int:1.6:16,sta:13:sta:2.1:27.3,sp:8:sp:1.5:12,armor:213:armor:0.085:18.105
+R	shaman/enhancement	25	286609	0	oh	160.56	spi:6:spi:1.6:9.6,armor:1776:armor:0.085:150.96
+R	shaman/enhancement	34	1315	0	gear	38.5	sta:10:sta:2.2:22,spi:15:spi:1.1:16.5
+R	shaman/enhancement	34	1808	0	gear	5.180000000000001	armor:74:armor:0.07:5.18
+R	shaman/enhancement	34	1990	0	mh	180.09900000000002	dps:24.71:dps:6.9:170.499,speed:0.4:speed:24:9.6
+R	shaman/enhancement	34	1990	12718	mh	210.699	int:9:int:1.2:10.8,sta:9:sta:2.2:19.8,dps:24.71:dps:6.9:170.499,speed:0.4:speed:24:9.6
+R	shaman/enhancement	34	1990	12905	mh	188.542	int:11:int:1.2:13.2,sta:7:sta:2.2:15.4,sp:28:sp:0.84:23.52,dps:18.38:dps:6.9:126.822,speed:0.4:speed:24:9.6
+R	shaman/enhancement	34	2140	0	mh	26.586000000000006	dps:5.94:dps:6.9:40.986,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	2140	12718	mh	29.986000000000004	int:1:int:1.2:1.2,sta:1:sta:2.2:2.2,dps:5.94:dps:6.9:40.986,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	2140	12917	mh	16.875	sp:5:sp:0.84:4.2,int:1:int:1.2:1.2,dps:3.75:dps:6.9:25.875,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	2225	0	mh	20.1	dps:5:dps:6.9:34.5,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	2614	0	gear	2.0300000000000002	armor:29:armor:0.07:2.03
+R	shaman/enhancement	34	3158	0	gear	1.8200000000000003	armor:26:armor:0.07:1.82
+R	shaman/enhancement	34	3570	0	mh	43.628	str:2:str:1:2,dps:8.12:dps:6.9:56.028,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	4023	0	mh	91.584	dps:15.36:dps:6.9:105.984,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	4068	0	oh	87.21000000000001	sta:9:sta:2.2:19.8,armor:963:armor:0.07:67.41
+R	shaman/enhancement	34	4570	0	mh	76.19999999999999	dps:10:dps:6.9:69,speed:0.3:speed:24:7.2
+R	shaman/enhancement	34	4570	12718	mh	86.4	int:3:int:1.2:3.6,sta:3:sta:2.2:6.6,dps:10:dps:6.9:69,speed:0.3:speed:24:7.2
+R	shaman/enhancement	34	4570	12719	mh	86.1	spi:3:spi:1.1:3.3,sta:3:sta:2.2:6.6,dps:10:dps:6.9:69,speed:0.3:speed:24:7.2
+R	shaman/enhancement	34	4570	12720	mh	83.1	int:3:int:1.2:3.6,spi:3:spi:1.1:3.3,dps:10:dps:6.9:69,speed:0.3:speed:24:7.2
+R	shaman/enhancement	34	4570	12721	mh	85.16999999999999	agi:3:agi:0.79:2.37,sta:3:sta:2.2:6.6,dps:10:dps:6.9:69,speed:0.3:speed:24:7.2
+R	shaman/enhancement	34	4570	12722	mh	85.79999999999998	sta:3:sta:2.2:6.6,str:3:str:1:3,dps:10:dps:6.9:69,speed:0.3:speed:24:7.2
+R	shaman/enhancement	34	4570	12723	mh	82.79999999999998	int:3:int:1.2:3.6,str:3:str:1:3,dps:10:dps:6.9:69,speed:0.3:speed:24:7.2
+R	shaman/enhancement	34	4570	12724	mh	82.16999999999999	agi:3:agi:0.79:2.37,int:3:int:1.2:3.6,dps:10:dps:6.9:69,speed:0.3:speed:24:7.2
+R	shaman/enhancement	34	4570	12725	mh	82.5	spi:3:spi:1.1:3.3,str:3:str:1:3,dps:10:dps:6.9:69,speed:0.3:speed:24:7.2
+R	shaman/enhancement	34	4570	12726	mh	81.87	agi:3:agi:0.79:2.37,spi:3:spi:1.1:3.3,dps:10:dps:6.9:69,speed:0.3:speed:24:7.2
+R	shaman/enhancement	34	4570	12727	mh	81.57	agi:3:agi:0.79:2.37,str:3:str:1:3,dps:10:dps:6.9:69,speed:0.3:speed:24:7.2
+R	shaman/enhancement	34	4570	12728	mh	79.35999999999999	agi:4:agi:0.79:3.16,dps:10:dps:6.9:69,speed:0.3:speed:24:7.2
+R	shaman/enhancement	34	4570	12729	mh	81.0	int:4:int:1.2:4.8,dps:10:dps:6.9:69,speed:0.3:speed:24:7.2
+R	shaman/enhancement	34	4570	12730	mh	80.6	spi:4:spi:1.1:4.4,dps:10:dps:6.9:69,speed:0.3:speed:24:7.2
+R	shaman/enhancement	34	4570	12731	mh	85.0	sta:4:sta:2.2:8.8,dps:10:dps:6.9:69,speed:0.3:speed:24:7.2
+R	shaman/enhancement	34	4570	12732	mh	80.19999999999999	str:4:str:1:4,dps:10:dps:6.9:69,speed:0.3:speed:24:7.2
+R	shaman/enhancement	34	4570	12733	mh	80.19999999999999	ap:8:ap:0.5:4,dps:10:dps:6.9:69,speed:0.3:speed:24:7.2
+R	shaman/enhancement	34	4570	12736	mh	76.19999999999999	dps:10:dps:6.9:69,speed:0.3:speed:24:7.2
+R	shaman/enhancement	34	4570	12740	mh	82.79999999999998	sta:3:sta:2.2:6.6,dps:10:dps:6.9:69,speed:0.3:speed:24:7.2
+R	shaman/enhancement	34	4570	12741	mh	82.79999999999998	sta:3:sta:2.2:6.6,dps:10:dps:6.9:69,speed:0.3:speed:24:7.2
+R	shaman/enhancement	34	4570	12742	mh	82.79999999999998	sta:3:sta:2.2:6.6,dps:10:dps:6.9:69,speed:0.3:speed:24:7.2
+R	shaman/enhancement	34	4570	12743	mh	82.79999999999998	sta:3:sta:2.2:6.6,dps:10:dps:6.9:69,speed:0.3:speed:24:7.2
+R	shaman/enhancement	34	4570	12744	mh	82.79999999999998	sta:3:sta:2.2:6.6,dps:10:dps:6.9:69,speed:0.3:speed:24:7.2
+R	shaman/enhancement	34	4570	12759	mh	76.19999999999999	dps:10:dps:6.9:69,speed:0.3:speed:24:7.2
+R	shaman/enhancement	34	4570	12918	mh	71.02199999999999	sp:8:sp:0.84:6.72,int:4:int:1.2:4.8,dps:7.58:dps:6.9:52.302,speed:0.3:speed:24:7.2
+R	shaman/enhancement	34	4570	12919	mh	68.50200000000001	spDmg:5:sp:0.84:4.2,int:4:int:1.2:4.8,dps:7.58:dps:6.9:52.302,speed:0.3:speed:24:7.2
 R	shaman/enhancement	34	5079	0	gear	0.0	
-R	shaman/enhancement	34	6063	0	gear	5.115	armor:55:armor:0.093:5.115
-R	shaman/enhancement	34	6540	0	gear	2.604	armor:28:armor:0.093:2.604
-R	shaman/enhancement	34	6540	12718	gear	14.844000000000001	int:3:int:0.88:2.64,sta:3:sta:3.2:9.6,armor:28:armor:0.093:2.604
-R	shaman/enhancement	34	6540	12719	gear	15.504000000000001	spi:3:spi:1.1:3.3,sta:3:sta:3.2:9.6,armor:28:armor:0.093:2.604
-R	shaman/enhancement	34	6540	12720	gear	8.544	int:3:int:0.88:2.64,spi:3:spi:1.1:3.3,armor:28:armor:0.093:2.604
-R	shaman/enhancement	34	6540	12729	gear	7.0040000000000004	int:5:int:0.88:4.4,armor:28:armor:0.093:2.604
-R	shaman/enhancement	34	6540	12730	gear	8.104	spi:5:spi:1.1:5.5,armor:28:armor:0.093:2.604
-R	shaman/enhancement	34	6540	12731	gear	18.604	sta:5:sta:3.2:16,armor:28:armor:0.093:2.604
-R	shaman/enhancement	34	6540	12734	gear	7.464	sp:6:sp:0.81:4.86,armor:28:armor:0.093:2.604
-R	shaman/enhancement	34	6540	12735	gear	5.844	spDmg:4:sp:0.81:3.24,armor:28:armor:0.093:2.604
-R	shaman/enhancement	34	6540	12740	gear	12.204	sta:3:sta:3.2:9.6,armor:28:armor:0.093:2.604
-R	shaman/enhancement	34	6540	12741	gear	12.204	sta:3:sta:3.2:9.6,armor:28:armor:0.093:2.604
-R	shaman/enhancement	34	6540	12742	gear	12.204	sta:3:sta:3.2:9.6,armor:28:armor:0.093:2.604
-R	shaman/enhancement	34	6540	12743	gear	12.204	sta:3:sta:3.2:9.6,armor:28:armor:0.093:2.604
-R	shaman/enhancement	34	6540	12744	gear	12.204	sta:3:sta:3.2:9.6,armor:28:armor:0.093:2.604
-R	shaman/enhancement	34	6540	12745	gear	14.143999999999998	int:4:int:0.88:3.52,sta:2:sta:3.2:6.4,sp:2:sp:0.81:1.62,armor:28:armor:0.093:2.604
-R	shaman/enhancement	34	6540	12756	gear	2.604	armor:28:armor:0.093:2.604
-R	shaman/enhancement	34	6540	12757	gear	2.604	armor:28:armor:0.093:2.604
-R	shaman/enhancement	34	6540	12758	gear	2.604	armor:28:armor:0.093:2.604
-R	shaman/enhancement	34	6540	12759	gear	2.604	armor:28:armor:0.093:2.604
-R	shaman/enhancement	34	6540	12761	gear	2.604	armor:28:armor:0.093:2.604
-R	shaman/enhancement	34	6557	0	gear	4.557	armor:49:armor:0.093:4.557
-R	shaman/enhancement	34	6557	12718	gear	12.717	int:2:int:0.88:1.76,sta:2:sta:3.2:6.4,armor:49:armor:0.093:4.557
-R	shaman/enhancement	34	6557	12719	gear	13.157000000000002	spi:2:spi:1.1:2.2,sta:2:sta:3.2:6.4,armor:49:armor:0.093:4.557
-R	shaman/enhancement	34	6557	12720	gear	8.517	int:2:int:0.88:1.76,spi:2:spi:1.1:2.2,armor:49:armor:0.093:4.557
-R	shaman/enhancement	34	6557	12721	gear	12.737	agi:2:agi:0.89:1.78,sta:2:sta:3.2:6.4,armor:49:armor:0.093:4.557
-R	shaman/enhancement	34	6557	12722	gear	12.957	sta:2:sta:3.2:6.4,str:2:str:1:2,armor:49:armor:0.093:4.557
-R	shaman/enhancement	34	6557	12723	gear	8.317	int:2:int:0.88:1.76,str:2:str:1:2,armor:49:armor:0.093:4.557
-R	shaman/enhancement	34	6557	12724	gear	8.097000000000001	agi:2:agi:0.89:1.78,int:2:int:0.88:1.76,armor:49:armor:0.093:4.557
-R	shaman/enhancement	34	6557	12725	gear	8.757000000000001	spi:2:spi:1.1:2.2,str:2:str:1:2,armor:49:armor:0.093:4.557
-R	shaman/enhancement	34	6557	12726	gear	8.537	agi:2:agi:0.89:1.78,spi:2:spi:1.1:2.2,armor:49:armor:0.093:4.557
-R	shaman/enhancement	34	6557	12727	gear	8.337	agi:2:agi:0.89:1.78,str:2:str:1:2,armor:49:armor:0.093:4.557
-R	shaman/enhancement	34	6557	12728	gear	7.227	agi:3:agi:0.89:2.67,armor:49:armor:0.093:4.557
-R	shaman/enhancement	34	6557	12729	gear	7.197000000000001	int:3:int:0.88:2.64,armor:49:armor:0.093:4.557
-R	shaman/enhancement	34	6557	12730	gear	7.857000000000001	spi:3:spi:1.1:3.3,armor:49:armor:0.093:4.557
-R	shaman/enhancement	34	6557	12731	gear	14.157000000000002	sta:3:sta:3.2:9.6,armor:49:armor:0.093:4.557
-R	shaman/enhancement	34	6557	12732	gear	7.557	str:3:str:1:3,armor:49:armor:0.093:4.557
-R	shaman/enhancement	34	6557	12733	gear	7.557	ap:6:ap:0.5:3,armor:49:armor:0.093:4.557
-R	shaman/enhancement	34	6557	12734	gear	7.797000000000001	sp:4:sp:0.81:3.24,armor:49:armor:0.093:4.557
-R	shaman/enhancement	34	6557	12735	gear	6.1770000000000005	spDmg:2:sp:0.81:1.62,armor:49:armor:0.093:4.557
-R	shaman/enhancement	34	6557	12736	gear	4.557	armor:49:armor:0.093:4.557
-R	shaman/enhancement	34	6557	12740	gear	10.957	sta:2:sta:3.2:6.4,armor:49:armor:0.093:4.557
-R	shaman/enhancement	34	6557	12741	gear	10.957	sta:2:sta:3.2:6.4,armor:49:armor:0.093:4.557
-R	shaman/enhancement	34	6557	12742	gear	10.957	sta:2:sta:3.2:6.4,armor:49:armor:0.093:4.557
-R	shaman/enhancement	34	6557	12743	gear	10.957	sta:2:sta:3.2:6.4,armor:49:armor:0.093:4.557
-R	shaman/enhancement	34	6557	12744	gear	10.957	sta:2:sta:3.2:6.4,armor:49:armor:0.093:4.557
-R	shaman/enhancement	34	6557	12756	gear	4.557	armor:49:armor:0.093:4.557
-R	shaman/enhancement	34	6557	12760	gear	6.797000000000001	spNature:4:spNature:0.56:2.24,armor:49:armor:0.093:4.557
-R	shaman/enhancement	34	7047	0	gear	7.918	spi:5:spi:1.1:5.5,armor:26:armor:0.093:2.418
-R	shaman/enhancement	34	7538	0	gear	24.459	armor:263:armor:0.093:24.459
-R	shaman/enhancement	34	7538	12718	gear	77.499	int:13:int:0.88:11.44,sta:13:sta:3.2:41.6,armor:263:armor:0.093:24.459
-R	shaman/enhancement	34	7538	12719	gear	80.35900000000001	spi:13:spi:1.1:14.3,sta:13:sta:3.2:41.6,armor:263:armor:0.093:24.459
-R	shaman/enhancement	34	7538	12720	gear	50.199	int:13:int:0.88:11.44,spi:13:spi:1.1:14.3,armor:263:armor:0.093:24.459
-R	shaman/enhancement	34	7538	12721	gear	77.629	agi:13:agi:0.89:11.57,sta:13:sta:3.2:41.6,armor:263:armor:0.093:24.459
-R	shaman/enhancement	34	7538	12722	gear	79.059	sta:13:sta:3.2:41.6,str:13:str:1:13,armor:263:armor:0.093:24.459
-R	shaman/enhancement	34	7538	12723	gear	48.899	int:13:int:0.88:11.44,str:13:str:1:13,armor:263:armor:0.093:24.459
-R	shaman/enhancement	34	7538	12724	gear	47.468999999999994	agi:13:agi:0.89:11.57,int:13:int:0.88:11.44,armor:263:armor:0.093:24.459
-R	shaman/enhancement	34	7538	12725	gear	51.759	spi:13:spi:1.1:14.3,str:13:str:1:13,armor:263:armor:0.093:24.459
-R	shaman/enhancement	34	7538	12726	gear	50.329	agi:13:agi:0.89:11.57,spi:13:spi:1.1:14.3,armor:263:armor:0.093:24.459
-R	shaman/enhancement	34	7538	12727	gear	49.028999999999996	agi:13:agi:0.89:11.57,str:13:str:1:13,armor:263:armor:0.093:24.459
-R	shaman/enhancement	34	7538	12728	gear	42.259	agi:20:agi:0.89:17.8,armor:263:armor:0.093:24.459
-R	shaman/enhancement	34	7538	12729	gear	42.059	int:20:int:0.88:17.6,armor:263:armor:0.093:24.459
-R	shaman/enhancement	34	7538	12730	gear	46.459	spi:20:spi:1.1:22,armor:263:armor:0.093:24.459
-R	shaman/enhancement	34	7538	12731	gear	88.459	sta:20:sta:3.2:64,armor:263:armor:0.093:24.459
-R	shaman/enhancement	34	7538	12732	gear	44.459	str:20:str:1:20,armor:263:armor:0.093:24.459
-R	shaman/enhancement	34	7538	12733	gear	44.459	ap:40:ap:0.5:20,armor:263:armor:0.093:24.459
-R	shaman/enhancement	34	7538	12734	gear	43.089	sp:23:sp:0.81:18.63,armor:263:armor:0.093:24.459
-R	shaman/enhancement	34	7538	12735	gear	36.609	spDmg:15:sp:0.81:12.15,armor:263:armor:0.093:24.459
-R	shaman/enhancement	34	7538	12740	gear	66.059	sta:13:sta:3.2:41.6,armor:263:armor:0.093:24.459
-R	shaman/enhancement	34	7538	12741	gear	66.059	sta:13:sta:3.2:41.6,armor:263:armor:0.093:24.459
-R	shaman/enhancement	34	7538	12742	gear	66.059	sta:13:sta:3.2:41.6,armor:263:armor:0.093:24.459
-R	shaman/enhancement	34	7538	12743	gear	66.059	sta:13:sta:3.2:41.6,armor:263:armor:0.093:24.459
-R	shaman/enhancement	34	7538	12744	gear	66.059	sta:13:sta:3.2:41.6,armor:263:armor:0.093:24.459
-R	shaman/enhancement	34	7538	12745	gear	68.929	int:15:int:0.88:13.2,sta:8:sta:3.2:25.6,sp:7:sp:0.81:5.67,armor:263:armor:0.093:24.459
-R	shaman/enhancement	34	7538	12746	gear	52.129000000000005	int:15:int:0.88:13.2,spi:8:spi:1.1:8.8,sp:7:sp:0.81:5.67,armor:263:armor:0.093:24.459
-R	shaman/enhancement	34	7538	12747	gear	86.929	spi:8:spi:1.1:8.8,sta:15:sta:3.2:48,sp:7:sp:0.81:5.67,armor:263:armor:0.093:24.459
-R	shaman/enhancement	34	7538	12748	gear	83.549	int:8:int:0.88:7.04,sta:15:sta:3.2:48,spDmg:5:sp:0.81:4.05,armor:263:armor:0.093:24.459
-R	shaman/enhancement	34	7538	12749	gear	50.509	int:15:int:0.88:13.2,spi:8:spi:1.1:8.8,spDmg:5:sp:0.81:4.05,armor:263:armor:0.093:24.459
-R	shaman/enhancement	34	7538	12750	gear	85.309	spi:8:spi:1.1:8.8,sta:15:sta:3.2:48,spDmg:5:sp:0.81:4.05,armor:263:armor:0.093:24.459
-R	shaman/enhancement	34	7538	12751	gear	85.799	agi:6:agi:0.89:5.34,ap:16:ap:0.5:8,sta:15:sta:3.2:48,armor:263:armor:0.093:24.459
-R	shaman/enhancement	34	7538	12752	gear	85.579	agi:8:agi:0.89:7.12,sta:15:sta:3.2:48,str:6:str:1:6,armor:263:armor:0.093:24.459
-R	shaman/enhancement	34	7538	12755	gear	86.129	sp:7:sp:0.81:5.67,sta:15:sta:3.2:48,str:8:str:1:8,armor:263:armor:0.093:24.459
-R	shaman/enhancement	34	7538	12760	gear	40.699	spNature:29:spNature:0.56:16.24,armor:263:armor:0.093:24.459
-R	shaman/enhancement	34	8192	0	gear	33.788	agi:11:agi:0.89:9.79,sta:5:sta:3.2:16,armor:86:armor:0.093:7.998
-R	shaman/enhancement	34	9458	0	oh	75.468	spi:3:spi:1.1:3.3,armor:776:armor:0.093:72.168
-R	shaman/enhancement	34	9834	0	gear	6.789	armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	9834	12718	gear	31.269000000000005	int:6:int:0.88:5.28,sta:6:sta:3.2:19.2,armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	9834	12719	gear	32.589000000000006	spi:6:spi:1.1:6.6,sta:6:sta:3.2:19.2,armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	9834	12720	gear	18.669	int:6:int:0.88:5.28,spi:6:spi:1.1:6.6,armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	9834	12721	gear	31.329	agi:6:agi:0.89:5.34,sta:6:sta:3.2:19.2,armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	9834	12722	gear	31.989000000000004	sta:6:sta:3.2:19.2,str:6:str:1:6,armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	9834	12723	gear	18.069000000000003	int:6:int:0.88:5.28,str:6:str:1:6,armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	9834	12724	gear	17.409	agi:6:agi:0.89:5.34,int:6:int:0.88:5.28,armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	9834	12725	gear	19.389000000000003	spi:6:spi:1.1:6.6,str:6:str:1:6,armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	9834	12726	gear	18.729	agi:6:agi:0.89:5.34,spi:6:spi:1.1:6.6,armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	9834	12727	gear	18.128999999999998	agi:6:agi:0.89:5.34,str:6:str:1:6,armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	9834	12728	gear	14.799	agi:9:agi:0.89:8.01,armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	9834	12729	gear	14.709	int:9:int:0.88:7.92,armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	9834	12730	gear	16.689	spi:9:spi:1.1:9.9,armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	9834	12731	gear	35.589	sta:9:sta:3.2:28.8,armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	9834	12732	gear	15.789	str:9:str:1:9,armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	9834	12733	gear	15.789	ap:18:ap:0.5:9,armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	9834	12734	gear	15.699	sp:11:sp:0.81:8.91,armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	9834	12735	gear	12.459	spDmg:7:sp:0.81:5.67,armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	9834	12736	gear	6.789	armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	9834	12740	gear	25.989000000000004	sta:6:sta:3.2:19.2,armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	9834	12741	gear	25.989000000000004	sta:6:sta:3.2:19.2,armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	9834	12742	gear	25.989000000000004	sta:6:sta:3.2:19.2,armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	9834	12743	gear	25.989000000000004	sta:6:sta:3.2:19.2,armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	9834	12744	gear	25.989000000000004	sta:6:sta:3.2:19.2,armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	9834	12745	gear	28.179000000000002	int:7:int:0.88:6.16,sta:4:sta:3.2:12.8,sp:3:sp:0.81:2.43,armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	9834	12746	gear	19.779	int:7:int:0.88:6.16,spi:4:spi:1.1:4.4,sp:3:sp:0.81:2.43,armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	9834	12747	gear	36.019000000000005	spi:4:spi:1.1:4.4,sta:7:sta:3.2:22.4,sp:3:sp:0.81:2.43,armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	9834	12748	gear	34.329	int:4:int:0.88:3.52,sta:7:sta:3.2:22.4,spDmg:2:sp:0.81:1.62,armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	9834	12749	gear	18.969	int:7:int:0.88:6.16,spi:4:spi:1.1:4.4,spDmg:2:sp:0.81:1.62,armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	9834	12750	gear	35.209	spi:4:spi:1.1:4.4,sta:7:sta:3.2:22.4,spDmg:2:sp:0.81:1.62,armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	9834	12751	gear	35.359	agi:3:agi:0.89:2.67,ap:7:ap:0.5:3.5,sta:7:sta:3.2:22.4,armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	9834	12752	gear	35.749	agi:4:agi:0.89:3.56,sta:7:sta:3.2:22.4,str:3:str:1:3,armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	9834	12753	gear	33.189	sta:7:sta:3.2:22.4,str:4:str:1:4,armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	9834	12755	gear	35.619	sp:3:sp:0.81:2.43,sta:7:sta:3.2:22.4,str:4:str:1:4,armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	9834	12756	gear	6.789	armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	9834	12760	gear	14.069	spNature:13:spNature:0.56:7.28,armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	11187	0	gear	0.372	armor:4:armor:0.093:0.372
+R	shaman/enhancement	34	6063	0	gear	3.8500000000000005	armor:55:armor:0.07:3.85
+R	shaman/enhancement	34	6540	0	gear	1.9600000000000002	armor:28:armor:0.07:1.96
+R	shaman/enhancement	34	6540	12718	gear	12.16	int:3:int:1.2:3.6,sta:3:sta:2.2:6.6,armor:28:armor:0.07:1.96
+R	shaman/enhancement	34	6540	12719	gear	11.860000000000001	spi:3:spi:1.1:3.3,sta:3:sta:2.2:6.6,armor:28:armor:0.07:1.96
+R	shaman/enhancement	34	6540	12720	gear	8.860000000000001	int:3:int:1.2:3.6,spi:3:spi:1.1:3.3,armor:28:armor:0.07:1.96
+R	shaman/enhancement	34	6540	12729	gear	7.96	int:5:int:1.2:6,armor:28:armor:0.07:1.96
+R	shaman/enhancement	34	6540	12730	gear	7.46	spi:5:spi:1.1:5.5,armor:28:armor:0.07:1.96
+R	shaman/enhancement	34	6540	12731	gear	12.96	sta:5:sta:2.2:11,armor:28:armor:0.07:1.96
+R	shaman/enhancement	34	6540	12734	gear	7.0	sp:6:sp:0.84:5.04,armor:28:armor:0.07:1.96
+R	shaman/enhancement	34	6540	12735	gear	5.32	spDmg:4:sp:0.84:3.36,armor:28:armor:0.07:1.96
+R	shaman/enhancement	34	6540	12740	gear	8.56	sta:3:sta:2.2:6.6,armor:28:armor:0.07:1.96
+R	shaman/enhancement	34	6540	12741	gear	8.56	sta:3:sta:2.2:6.6,armor:28:armor:0.07:1.96
+R	shaman/enhancement	34	6540	12742	gear	8.56	sta:3:sta:2.2:6.6,armor:28:armor:0.07:1.96
+R	shaman/enhancement	34	6540	12743	gear	8.56	sta:3:sta:2.2:6.6,armor:28:armor:0.07:1.96
+R	shaman/enhancement	34	6540	12744	gear	8.56	sta:3:sta:2.2:6.6,armor:28:armor:0.07:1.96
+R	shaman/enhancement	34	6540	12745	gear	12.84	int:4:int:1.2:4.8,sta:2:sta:2.2:4.4,sp:2:sp:0.84:1.68,armor:28:armor:0.07:1.96
+R	shaman/enhancement	34	6540	12756	gear	1.9600000000000002	armor:28:armor:0.07:1.96
+R	shaman/enhancement	34	6540	12757	gear	1.9600000000000002	armor:28:armor:0.07:1.96
+R	shaman/enhancement	34	6540	12758	gear	1.9600000000000002	armor:28:armor:0.07:1.96
+R	shaman/enhancement	34	6540	12759	gear	1.9600000000000002	armor:28:armor:0.07:1.96
+R	shaman/enhancement	34	6540	12761	gear	1.9600000000000002	armor:28:armor:0.07:1.96
+R	shaman/enhancement	34	6557	0	gear	3.43	armor:49:armor:0.07:3.43
+R	shaman/enhancement	34	6557	12718	gear	10.23	int:2:int:1.2:2.4,sta:2:sta:2.2:4.4,armor:49:armor:0.07:3.43
+R	shaman/enhancement	34	6557	12719	gear	10.030000000000001	spi:2:spi:1.1:2.2,sta:2:sta:2.2:4.4,armor:49:armor:0.07:3.43
+R	shaman/enhancement	34	6557	12720	gear	8.03	int:2:int:1.2:2.4,spi:2:spi:1.1:2.2,armor:49:armor:0.07:3.43
+R	shaman/enhancement	34	6557	12721	gear	9.41	agi:2:agi:0.79:1.58,sta:2:sta:2.2:4.4,armor:49:armor:0.07:3.43
+R	shaman/enhancement	34	6557	12722	gear	9.83	sta:2:sta:2.2:4.4,str:2:str:1:2,armor:49:armor:0.07:3.43
+R	shaman/enhancement	34	6557	12723	gear	7.83	int:2:int:1.2:2.4,str:2:str:1:2,armor:49:armor:0.07:3.43
+R	shaman/enhancement	34	6557	12724	gear	7.41	agi:2:agi:0.79:1.58,int:2:int:1.2:2.4,armor:49:armor:0.07:3.43
+R	shaman/enhancement	34	6557	12725	gear	7.630000000000001	spi:2:spi:1.1:2.2,str:2:str:1:2,armor:49:armor:0.07:3.43
+R	shaman/enhancement	34	6557	12726	gear	7.210000000000001	agi:2:agi:0.79:1.58,spi:2:spi:1.1:2.2,armor:49:armor:0.07:3.43
+R	shaman/enhancement	34	6557	12727	gear	7.01	agi:2:agi:0.79:1.58,str:2:str:1:2,armor:49:armor:0.07:3.43
+R	shaman/enhancement	34	6557	12728	gear	5.800000000000001	agi:3:agi:0.79:2.37,armor:49:armor:0.07:3.43
+R	shaman/enhancement	34	6557	12729	gear	7.029999999999999	int:3:int:1.2:3.6,armor:49:armor:0.07:3.43
+R	shaman/enhancement	34	6557	12730	gear	6.73	spi:3:spi:1.1:3.3,armor:49:armor:0.07:3.43
+R	shaman/enhancement	34	6557	12731	gear	10.030000000000001	sta:3:sta:2.2:6.6,armor:49:armor:0.07:3.43
+R	shaman/enhancement	34	6557	12732	gear	6.43	str:3:str:1:3,armor:49:armor:0.07:3.43
+R	shaman/enhancement	34	6557	12733	gear	6.43	ap:6:ap:0.5:3,armor:49:armor:0.07:3.43
+R	shaman/enhancement	34	6557	12734	gear	6.79	sp:4:sp:0.84:3.36,armor:49:armor:0.07:3.43
+R	shaman/enhancement	34	6557	12735	gear	5.11	spDmg:2:sp:0.84:1.68,armor:49:armor:0.07:3.43
+R	shaman/enhancement	34	6557	12736	gear	3.43	armor:49:armor:0.07:3.43
+R	shaman/enhancement	34	6557	12740	gear	7.83	sta:2:sta:2.2:4.4,armor:49:armor:0.07:3.43
+R	shaman/enhancement	34	6557	12741	gear	7.83	sta:2:sta:2.2:4.4,armor:49:armor:0.07:3.43
+R	shaman/enhancement	34	6557	12742	gear	7.83	sta:2:sta:2.2:4.4,armor:49:armor:0.07:3.43
+R	shaman/enhancement	34	6557	12743	gear	7.83	sta:2:sta:2.2:4.4,armor:49:armor:0.07:3.43
+R	shaman/enhancement	34	6557	12744	gear	7.83	sta:2:sta:2.2:4.4,armor:49:armor:0.07:3.43
+R	shaman/enhancement	34	6557	12756	gear	3.43	armor:49:armor:0.07:3.43
+R	shaman/enhancement	34	6557	12760	gear	5.59	spNature:4:spNature:0.54:2.16,armor:49:armor:0.07:3.43
+R	shaman/enhancement	34	7047	0	gear	7.32	spi:5:spi:1.1:5.5,armor:26:armor:0.07:1.82
+R	shaman/enhancement	34	7538	0	gear	18.41	armor:263:armor:0.07:18.41
+R	shaman/enhancement	34	7538	12718	gear	62.61	int:13:int:1.2:15.6,sta:13:sta:2.2:28.6,armor:263:armor:0.07:18.41
+R	shaman/enhancement	34	7538	12719	gear	61.31	spi:13:spi:1.1:14.3,sta:13:sta:2.2:28.6,armor:263:armor:0.07:18.41
+R	shaman/enhancement	34	7538	12720	gear	48.31	int:13:int:1.2:15.6,spi:13:spi:1.1:14.3,armor:263:armor:0.07:18.41
+R	shaman/enhancement	34	7538	12721	gear	57.28	agi:13:agi:0.79:10.27,sta:13:sta:2.2:28.6,armor:263:armor:0.07:18.41
+R	shaman/enhancement	34	7538	12722	gear	60.010000000000005	sta:13:sta:2.2:28.6,str:13:str:1:13,armor:263:armor:0.07:18.41
+R	shaman/enhancement	34	7538	12723	gear	47.010000000000005	int:13:int:1.2:15.6,str:13:str:1:13,armor:263:armor:0.07:18.41
+R	shaman/enhancement	34	7538	12724	gear	44.28	agi:13:agi:0.79:10.27,int:13:int:1.2:15.6,armor:263:armor:0.07:18.41
+R	shaman/enhancement	34	7538	12725	gear	45.71	spi:13:spi:1.1:14.3,str:13:str:1:13,armor:263:armor:0.07:18.41
+R	shaman/enhancement	34	7538	12726	gear	42.980000000000004	agi:13:agi:0.79:10.27,spi:13:spi:1.1:14.3,armor:263:armor:0.07:18.41
+R	shaman/enhancement	34	7538	12727	gear	41.68	agi:13:agi:0.79:10.27,str:13:str:1:13,armor:263:armor:0.07:18.41
+R	shaman/enhancement	34	7538	12728	gear	34.21	agi:20:agi:0.79:15.8,armor:263:armor:0.07:18.41
+R	shaman/enhancement	34	7538	12729	gear	42.41	int:20:int:1.2:24,armor:263:armor:0.07:18.41
+R	shaman/enhancement	34	7538	12730	gear	40.41	spi:20:spi:1.1:22,armor:263:armor:0.07:18.41
+R	shaman/enhancement	34	7538	12731	gear	62.41	sta:20:sta:2.2:44,armor:263:armor:0.07:18.41
+R	shaman/enhancement	34	7538	12732	gear	38.41	str:20:str:1:20,armor:263:armor:0.07:18.41
+R	shaman/enhancement	34	7538	12733	gear	38.41	ap:40:ap:0.5:20,armor:263:armor:0.07:18.41
+R	shaman/enhancement	34	7538	12734	gear	37.730000000000004	sp:23:sp:0.84:19.32,armor:263:armor:0.07:18.41
+R	shaman/enhancement	34	7538	12735	gear	31.009999999999998	spDmg:15:sp:0.84:12.6,armor:263:armor:0.07:18.41
+R	shaman/enhancement	34	7538	12740	gear	47.010000000000005	sta:13:sta:2.2:28.6,armor:263:armor:0.07:18.41
+R	shaman/enhancement	34	7538	12741	gear	47.010000000000005	sta:13:sta:2.2:28.6,armor:263:armor:0.07:18.41
+R	shaman/enhancement	34	7538	12742	gear	47.010000000000005	sta:13:sta:2.2:28.6,armor:263:armor:0.07:18.41
+R	shaman/enhancement	34	7538	12743	gear	47.010000000000005	sta:13:sta:2.2:28.6,armor:263:armor:0.07:18.41
+R	shaman/enhancement	34	7538	12744	gear	47.010000000000005	sta:13:sta:2.2:28.6,armor:263:armor:0.07:18.41
+R	shaman/enhancement	34	7538	12745	gear	59.89	int:15:int:1.2:18,sta:8:sta:2.2:17.6,sp:7:sp:0.84:5.88,armor:263:armor:0.07:18.41
+R	shaman/enhancement	34	7538	12746	gear	51.09	int:15:int:1.2:18,spi:8:spi:1.1:8.8,sp:7:sp:0.84:5.88,armor:263:armor:0.07:18.41
+R	shaman/enhancement	34	7538	12747	gear	66.09	spi:8:spi:1.1:8.8,sta:15:sta:2.2:33,sp:7:sp:0.84:5.88,armor:263:armor:0.07:18.41
+R	shaman/enhancement	34	7538	12748	gear	65.21000000000001	int:8:int:1.2:9.6,sta:15:sta:2.2:33,spDmg:5:sp:0.84:4.2,armor:263:armor:0.07:18.41
+R	shaman/enhancement	34	7538	12749	gear	49.41	int:15:int:1.2:18,spi:8:spi:1.1:8.8,spDmg:5:sp:0.84:4.2,armor:263:armor:0.07:18.41
+R	shaman/enhancement	34	7538	12750	gear	64.41	spi:8:spi:1.1:8.8,sta:15:sta:2.2:33,spDmg:5:sp:0.84:4.2,armor:263:armor:0.07:18.41
+R	shaman/enhancement	34	7538	12751	gear	64.15	agi:6:agi:0.79:4.74,ap:16:ap:0.5:8,sta:15:sta:2.2:33,armor:263:armor:0.07:18.41
+R	shaman/enhancement	34	7538	12752	gear	63.730000000000004	agi:8:agi:0.79:6.32,sta:15:sta:2.2:33,str:6:str:1:6,armor:263:armor:0.07:18.41
+R	shaman/enhancement	34	7538	12755	gear	65.29	sp:7:sp:0.84:5.88,sta:15:sta:2.2:33,str:8:str:1:8,armor:263:armor:0.07:18.41
+R	shaman/enhancement	34	7538	12760	gear	34.07	spNature:29:spNature:0.54:15.66,armor:263:armor:0.07:18.41
+R	shaman/enhancement	34	8192	0	gear	25.71	agi:11:agi:0.79:8.69,sta:5:sta:2.2:11,armor:86:armor:0.07:6.02
+R	shaman/enhancement	34	9458	0	oh	57.620000000000005	spi:3:spi:1.1:3.3,armor:776:armor:0.07:54.32
+R	shaman/enhancement	34	9834	0	gear	5.11	armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	9834	12718	gear	25.509999999999998	int:6:int:1.2:7.2,sta:6:sta:2.2:13.2,armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	9834	12719	gear	24.91	spi:6:spi:1.1:6.6,sta:6:sta:2.2:13.2,armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	9834	12720	gear	18.91	int:6:int:1.2:7.2,spi:6:spi:1.1:6.6,armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	9834	12721	gear	23.05	agi:6:agi:0.79:4.74,sta:6:sta:2.2:13.2,armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	9834	12722	gear	24.310000000000002	sta:6:sta:2.2:13.2,str:6:str:1:6,armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	9834	12723	gear	18.31	int:6:int:1.2:7.2,str:6:str:1:6,armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	9834	12724	gear	17.05	agi:6:agi:0.79:4.74,int:6:int:1.2:7.2,armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	9834	12725	gear	17.71	spi:6:spi:1.1:6.6,str:6:str:1:6,armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	9834	12726	gear	16.45	agi:6:agi:0.79:4.74,spi:6:spi:1.1:6.6,armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	9834	12727	gear	15.850000000000001	agi:6:agi:0.79:4.74,str:6:str:1:6,armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	9834	12728	gear	12.22	agi:9:agi:0.79:7.11,armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	9834	12729	gear	15.91	int:9:int:1.2:10.8,armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	9834	12730	gear	15.010000000000002	spi:9:spi:1.1:9.9,armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	9834	12731	gear	24.91	sta:9:sta:2.2:19.8,armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	9834	12732	gear	14.11	str:9:str:1:9,armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	9834	12733	gear	14.11	ap:18:ap:0.5:9,armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	9834	12734	gear	14.350000000000001	sp:11:sp:0.84:9.24,armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	9834	12735	gear	10.99	spDmg:7:sp:0.84:5.88,armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	9834	12736	gear	5.11	armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	9834	12740	gear	18.310000000000002	sta:6:sta:2.2:13.2,armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	9834	12741	gear	18.310000000000002	sta:6:sta:2.2:13.2,armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	9834	12742	gear	18.310000000000002	sta:6:sta:2.2:13.2,armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	9834	12743	gear	18.310000000000002	sta:6:sta:2.2:13.2,armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	9834	12744	gear	18.310000000000002	sta:6:sta:2.2:13.2,armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	9834	12745	gear	24.830000000000002	int:7:int:1.2:8.4,sta:4:sta:2.2:8.8,sp:3:sp:0.84:2.52,armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	9834	12746	gear	20.43	int:7:int:1.2:8.4,spi:4:spi:1.1:4.4,sp:3:sp:0.84:2.52,armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	9834	12747	gear	27.430000000000003	spi:4:spi:1.1:4.4,sta:7:sta:2.2:15.4,sp:3:sp:0.84:2.52,armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	9834	12748	gear	26.990000000000002	int:4:int:1.2:4.8,sta:7:sta:2.2:15.4,spDmg:2:sp:0.84:1.68,armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	9834	12749	gear	19.59	int:7:int:1.2:8.4,spi:4:spi:1.1:4.4,spDmg:2:sp:0.84:1.68,armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	9834	12750	gear	26.590000000000003	spi:4:spi:1.1:4.4,sta:7:sta:2.2:15.4,spDmg:2:sp:0.84:1.68,armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	9834	12751	gear	26.380000000000003	agi:3:agi:0.79:2.37,ap:7:ap:0.5:3.5,sta:7:sta:2.2:15.4,armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	9834	12752	gear	26.67	agi:4:agi:0.79:3.16,sta:7:sta:2.2:15.4,str:3:str:1:3,armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	9834	12753	gear	24.51	sta:7:sta:2.2:15.4,str:4:str:1:4,armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	9834	12755	gear	27.03	sp:3:sp:0.84:2.52,sta:7:sta:2.2:15.4,str:4:str:1:4,armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	9834	12756	gear	5.11	armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	9834	12760	gear	12.13	spNature:13:spNature:0.54:7.02,armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	11187	0	gear	0.28	armor:4:armor:0.07:0.28
 R	shaman/enhancement	34	11994	0	gear	0.0	
-R	shaman/enhancement	34	11994	12718	gear	12.240000000000002	int:3:int:0.88:2.64,sta:3:sta:3.2:9.6
-R	shaman/enhancement	34	11994	12719	gear	12.900000000000002	spi:3:spi:1.1:3.3,sta:3:sta:3.2:9.6
-R	shaman/enhancement	34	11994	12720	gear	5.94	int:3:int:0.88:2.64,spi:3:spi:1.1:3.3
-R	shaman/enhancement	34	11994	12721	gear	12.270000000000001	agi:3:agi:0.89:2.67,sta:3:sta:3.2:9.6
-R	shaman/enhancement	34	11994	12722	gear	12.600000000000001	sta:3:sta:3.2:9.6,str:3:str:1:3
-R	shaman/enhancement	34	11994	12723	gear	5.640000000000001	int:3:int:0.88:2.64,str:3:str:1:3
-R	shaman/enhancement	34	11994	12724	gear	5.3100000000000005	agi:3:agi:0.89:2.67,int:3:int:0.88:2.64
+R	shaman/enhancement	34	11994	12718	gear	10.2	int:3:int:1.2:3.6,sta:3:sta:2.2:6.6
+R	shaman/enhancement	34	11994	12719	gear	9.9	spi:3:spi:1.1:3.3,sta:3:sta:2.2:6.6
+R	shaman/enhancement	34	11994	12720	gear	6.9	int:3:int:1.2:3.6,spi:3:spi:1.1:3.3
+R	shaman/enhancement	34	11994	12721	gear	8.97	agi:3:agi:0.79:2.37,sta:3:sta:2.2:6.6
+R	shaman/enhancement	34	11994	12722	gear	9.600000000000001	sta:3:sta:2.2:6.6,str:3:str:1:3
+R	shaman/enhancement	34	11994	12723	gear	6.6	int:3:int:1.2:3.6,str:3:str:1:3
+R	shaman/enhancement	34	11994	12724	gear	5.97	agi:3:agi:0.79:2.37,int:3:int:1.2:3.6
 R	shaman/enhancement	34	11994	12725	gear	6.300000000000001	spi:3:spi:1.1:3.3,str:3:str:1:3
-R	shaman/enhancement	34	11994	12726	gear	5.970000000000001	agi:3:agi:0.89:2.67,spi:3:spi:1.1:3.3
-R	shaman/enhancement	34	11994	12727	gear	5.67	agi:3:agi:0.89:2.67,str:3:str:1:3
-R	shaman/enhancement	34	11994	12728	gear	4.45	agi:5:agi:0.89:4.45
-R	shaman/enhancement	34	11994	12729	gear	4.4	int:5:int:0.88:4.4
+R	shaman/enhancement	34	11994	12726	gear	5.67	agi:3:agi:0.79:2.37,spi:3:spi:1.1:3.3
+R	shaman/enhancement	34	11994	12727	gear	5.37	agi:3:agi:0.79:2.37,str:3:str:1:3
+R	shaman/enhancement	34	11994	12728	gear	3.95	agi:5:agi:0.79:3.95
+R	shaman/enhancement	34	11994	12729	gear	6.0	int:5:int:1.2:6
 R	shaman/enhancement	34	11994	12730	gear	5.5	spi:5:spi:1.1:5.5
-R	shaman/enhancement	34	11994	12731	gear	16.0	sta:5:sta:3.2:16
+R	shaman/enhancement	34	11994	12731	gear	11.0	sta:5:sta:2.2:11
 R	shaman/enhancement	34	11994	12732	gear	5.0	str:5:str:1:5
 R	shaman/enhancement	34	11994	12733	gear	5.0	ap:10:ap:0.5:5
 R	shaman/enhancement	34	11994	12737	gear	0.0	
-R	shaman/enhancement	34	11994	12738	gear	0.64	mp5:2:mp5:0.32:0.64
-R	shaman/enhancement	34	11994	12739	gear	1.78	agi:2:agi:0.89:1.78
-R	shaman/enhancement	34	11994	12740	gear	9.600000000000001	sta:3:sta:3.2:9.6
-R	shaman/enhancement	34	11994	12741	gear	9.600000000000001	sta:3:sta:3.2:9.6
-R	shaman/enhancement	34	11994	12742	gear	9.600000000000001	sta:3:sta:3.2:9.6
-R	shaman/enhancement	34	11994	12743	gear	9.600000000000001	sta:3:sta:3.2:9.6
-R	shaman/enhancement	34	11994	12744	gear	9.600000000000001	sta:3:sta:3.2:9.6
-R	shaman/enhancement	34	13183	0	mh	263.09	dps:39.47:dps:7:276.29,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	14122	0	gear	1.302	armor:14:armor:0.093:1.302
-R	shaman/enhancement	34	14122	12718	gear	9.462	int:2:int:0.88:1.76,sta:2:sta:3.2:6.4,armor:14:armor:0.093:1.302
-R	shaman/enhancement	34	14122	12719	gear	9.902000000000001	spi:2:spi:1.1:2.2,sta:2:sta:3.2:6.4,armor:14:armor:0.093:1.302
-R	shaman/enhancement	34	14122	12720	gear	5.2620000000000005	int:2:int:0.88:1.76,spi:2:spi:1.1:2.2,armor:14:armor:0.093:1.302
-R	shaman/enhancement	34	14122	12729	gear	3.942	int:3:int:0.88:2.64,armor:14:armor:0.093:1.302
-R	shaman/enhancement	34	14122	12730	gear	4.602	spi:3:spi:1.1:3.3,armor:14:armor:0.093:1.302
-R	shaman/enhancement	34	14122	12731	gear	10.902000000000001	sta:3:sta:3.2:9.6,armor:14:armor:0.093:1.302
-R	shaman/enhancement	34	14122	12734	gear	4.542	sp:4:sp:0.81:3.24,armor:14:armor:0.093:1.302
-R	shaman/enhancement	34	14122	12735	gear	2.922	spDmg:2:sp:0.81:1.62,armor:14:armor:0.093:1.302
-R	shaman/enhancement	34	14122	12740	gear	7.702	sta:2:sta:3.2:6.4,armor:14:armor:0.093:1.302
-R	shaman/enhancement	34	14122	12741	gear	7.702	sta:2:sta:3.2:6.4,armor:14:armor:0.093:1.302
-R	shaman/enhancement	34	14122	12742	gear	7.702	sta:2:sta:3.2:6.4,armor:14:armor:0.093:1.302
-R	shaman/enhancement	34	14122	12743	gear	7.702	sta:2:sta:3.2:6.4,armor:14:armor:0.093:1.302
-R	shaman/enhancement	34	14122	12744	gear	7.702	sta:2:sta:3.2:6.4,armor:14:armor:0.093:1.302
-R	shaman/enhancement	34	14122	12745	gear	7.071999999999999	int:2:int:0.88:1.76,sta:1:sta:3.2:3.2,sp:1:sp:0.81:0.81,armor:14:armor:0.093:1.302
-R	shaman/enhancement	34	14122	12756	gear	1.302	armor:14:armor:0.093:1.302
-R	shaman/enhancement	34	14122	12757	gear	1.302	armor:14:armor:0.093:1.302
-R	shaman/enhancement	34	14122	12758	gear	1.302	armor:14:armor:0.093:1.302
-R	shaman/enhancement	34	14122	12759	gear	1.302	armor:14:armor:0.093:1.302
-R	shaman/enhancement	34	14122	12761	gear	1.302	armor:14:armor:0.093:1.302
-R	shaman/enhancement	34	14340	0	gear	68.98400000000001	sta:19:sta:3.2:60.8,armor:88:armor:0.093:8.184
-R	shaman/enhancement	34	14673	0	gear	30.171999999999997	str:3:str:1:3,agi:9:agi:0.89:8.01,sta:5:sta:3.2:16,armor:34:armor:0.093:3.162
-R	shaman/enhancement	34	14964	0	oh	159.96	armor:1720:armor:0.093:159.96
-R	shaman/enhancement	34	14964	12718	oh	196.68	int:9:int:0.88:7.92,sta:9:sta:3.2:28.8,armor:1720:armor:0.093:159.96
-R	shaman/enhancement	34	14964	12719	oh	198.66000000000003	spi:9:spi:1.1:9.9,sta:9:sta:3.2:28.8,armor:1720:armor:0.093:159.96
-R	shaman/enhancement	34	14964	12720	oh	177.78	int:9:int:0.88:7.92,spi:9:spi:1.1:9.9,armor:1720:armor:0.093:159.96
-R	shaman/enhancement	34	14964	12721	oh	196.77	agi:9:agi:0.89:8.01,sta:9:sta:3.2:28.8,armor:1720:armor:0.093:159.96
-R	shaman/enhancement	34	14964	12722	oh	197.76	sta:9:sta:3.2:28.8,str:9:str:1:9,armor:1720:armor:0.093:159.96
-R	shaman/enhancement	34	14964	12723	oh	176.88	int:9:int:0.88:7.92,str:9:str:1:9,armor:1720:armor:0.093:159.96
-R	shaman/enhancement	34	14964	12724	oh	175.89000000000001	agi:9:agi:0.89:8.01,int:9:int:0.88:7.92,armor:1720:armor:0.093:159.96
-R	shaman/enhancement	34	14964	12725	oh	178.86	spi:9:spi:1.1:9.9,str:9:str:1:9,armor:1720:armor:0.093:159.96
-R	shaman/enhancement	34	14964	12726	oh	177.87	agi:9:agi:0.89:8.01,spi:9:spi:1.1:9.9,armor:1720:armor:0.093:159.96
-R	shaman/enhancement	34	14964	12727	oh	176.97	agi:9:agi:0.89:8.01,str:9:str:1:9,armor:1720:armor:0.093:159.96
-R	shaman/enhancement	34	14964	12728	oh	172.42000000000002	agi:14:agi:0.89:12.46,armor:1720:armor:0.093:159.96
-R	shaman/enhancement	34	14964	12729	oh	172.28	int:14:int:0.88:12.32,armor:1720:armor:0.093:159.96
-R	shaman/enhancement	34	14964	12730	oh	175.36	spi:14:spi:1.1:15.4,armor:1720:armor:0.093:159.96
-R	shaman/enhancement	34	14964	12731	oh	204.76000000000002	sta:14:sta:3.2:44.8,armor:1720:armor:0.093:159.96
-R	shaman/enhancement	34	14964	12732	oh	173.96	str:14:str:1:14,armor:1720:armor:0.093:159.96
-R	shaman/enhancement	34	14964	12733	oh	173.96	ap:28:ap:0.5:14,armor:1720:armor:0.093:159.96
-R	shaman/enhancement	34	14964	12734	oh	172.92000000000002	sp:16:sp:0.81:12.96,armor:1720:armor:0.093:159.96
-R	shaman/enhancement	34	14964	12735	oh	168.06	spDmg:10:sp:0.81:8.1,armor:1720:armor:0.093:159.96
-R	shaman/enhancement	34	14964	12736	oh	159.96	armor:1720:armor:0.093:159.96
-R	shaman/enhancement	34	14964	12740	oh	188.76000000000002	sta:9:sta:3.2:28.8,armor:1720:armor:0.093:159.96
-R	shaman/enhancement	34	14964	12741	oh	188.76000000000002	sta:9:sta:3.2:28.8,armor:1720:armor:0.093:159.96
-R	shaman/enhancement	34	14964	12742	oh	188.76000000000002	sta:9:sta:3.2:28.8,armor:1720:armor:0.093:159.96
-R	shaman/enhancement	34	14964	12743	oh	188.76000000000002	sta:9:sta:3.2:28.8,armor:1720:armor:0.093:159.96
-R	shaman/enhancement	34	14964	12744	oh	188.76000000000002	sta:9:sta:3.2:28.8,armor:1720:armor:0.093:159.96
-R	shaman/enhancement	34	14964	12745	oh	192.01000000000002	int:10:int:0.88:8.8,sta:6:sta:3.2:19.2,sp:5:sp:0.81:4.05,armor:1720:armor:0.093:159.96
-R	shaman/enhancement	34	14964	12746	oh	179.41000000000003	int:10:int:0.88:8.8,spi:6:spi:1.1:6.6,sp:5:sp:0.81:4.05,armor:1720:armor:0.093:159.96
-R	shaman/enhancement	34	14964	12747	oh	202.61	spi:6:spi:1.1:6.6,sta:10:sta:3.2:32,sp:5:sp:0.81:4.05,armor:1720:armor:0.093:159.96
-R	shaman/enhancement	34	14964	12748	oh	199.67000000000002	int:6:int:0.88:5.28,sta:10:sta:3.2:32,spDmg:3:sp:0.81:2.43,armor:1720:armor:0.093:159.96
-R	shaman/enhancement	34	14964	12749	oh	177.79000000000002	int:10:int:0.88:8.8,spi:6:spi:1.1:6.6,spDmg:3:sp:0.81:2.43,armor:1720:armor:0.093:159.96
-R	shaman/enhancement	34	14964	12750	oh	200.99	spi:6:spi:1.1:6.6,sta:10:sta:3.2:32,spDmg:3:sp:0.81:2.43,armor:1720:armor:0.093:159.96
-R	shaman/enhancement	34	14964	12753	oh	197.96	sta:10:sta:3.2:32,str:6:str:1:6,armor:1720:armor:0.093:159.96
-R	shaman/enhancement	34	14964	12754	oh	196.01	sp:5:sp:0.81:4.05,sta:10:sta:3.2:32,armor:1720:armor:0.093:159.96
-R	shaman/enhancement	34	14964	12759	oh	159.96	armor:1720:armor:0.093:159.96
-R	shaman/enhancement	34	14964	12760	oh	171.16	spNature:20:spNature:0.56:11.2,armor:1720:armor:0.093:159.96
-R	shaman/enhancement	34	15235	0	mh	186.79000000000002	dps:28.57:dps:7:199.99,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	15235	12718	mh	207.19000000000003	int:5:int:0.88:4.4,sta:5:sta:3.2:16,dps:28.57:dps:7:199.99,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	15235	12719	mh	208.29000000000002	spi:5:spi:1.1:5.5,sta:5:sta:3.2:16,dps:28.57:dps:7:199.99,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	15235	12720	mh	196.69000000000003	int:5:int:0.88:4.4,spi:5:spi:1.1:5.5,dps:28.57:dps:7:199.99,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	15235	12721	mh	207.24	agi:5:agi:0.89:4.45,sta:5:sta:3.2:16,dps:28.57:dps:7:199.99,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	15235	12722	mh	207.79000000000002	sta:5:sta:3.2:16,str:5:str:1:5,dps:28.57:dps:7:199.99,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	15235	12723	mh	196.19000000000003	int:5:int:0.88:4.4,str:5:str:1:5,dps:28.57:dps:7:199.99,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	15235	12724	mh	195.64000000000001	agi:5:agi:0.89:4.45,int:5:int:0.88:4.4,dps:28.57:dps:7:199.99,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	15235	12725	mh	197.29000000000002	spi:5:spi:1.1:5.5,str:5:str:1:5,dps:28.57:dps:7:199.99,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	15235	12726	mh	196.74	agi:5:agi:0.89:4.45,spi:5:spi:1.1:5.5,dps:28.57:dps:7:199.99,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	15235	12727	mh	196.24	agi:5:agi:0.89:4.45,str:5:str:1:5,dps:28.57:dps:7:199.99,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	15235	12728	mh	193.91000000000003	agi:8:agi:0.89:7.12,dps:28.57:dps:7:199.99,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	15235	12729	mh	193.83	int:8:int:0.88:7.04,dps:28.57:dps:7:199.99,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	15235	12730	mh	195.59000000000003	spi:8:spi:1.1:8.8,dps:28.57:dps:7:199.99,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	15235	12731	mh	212.39000000000001	sta:8:sta:3.2:25.6,dps:28.57:dps:7:199.99,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	15235	12732	mh	194.79000000000002	str:8:str:1:8,dps:28.57:dps:7:199.99,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	15235	12733	mh	194.79000000000002	ap:16:ap:0.5:8,dps:28.57:dps:7:199.99,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	15235	12736	mh	186.79000000000002	dps:28.57:dps:7:199.99,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	15235	12740	mh	202.79000000000002	sta:5:sta:3.2:16,dps:28.57:dps:7:199.99,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	15235	12741	mh	202.79000000000002	sta:5:sta:3.2:16,dps:28.57:dps:7:199.99,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	15235	12742	mh	202.79000000000002	sta:5:sta:3.2:16,dps:28.57:dps:7:199.99,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	15235	12743	mh	202.79000000000002	sta:5:sta:3.2:16,dps:28.57:dps:7:199.99,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	15235	12744	mh	202.79000000000002	sta:5:sta:3.2:16,dps:28.57:dps:7:199.99,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	15235	12751	mh	212.16000000000003	agi:3:agi:0.89:2.67,ap:7:ap:0.5:3.5,sta:6:sta:3.2:19.2,dps:28.57:dps:7:199.99,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	15235	12752	mh	211.66000000000003	agi:3:agi:0.89:2.67,sta:6:sta:3.2:19.2,str:3:str:1:3,dps:28.57:dps:7:199.99,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	15235	12753	mh	208.99	sta:6:sta:3.2:19.2,str:3:str:1:3,dps:28.57:dps:7:199.99,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	15235	12754	mh	208.42000000000002	sp:3:sp:0.81:2.43,sta:6:sta:3.2:19.2,dps:28.57:dps:7:199.99,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	15235	12759	mh	186.79000000000002	dps:28.57:dps:7:199.99,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	15235	12906	mh	169.01	int:6:int:0.88:5.28,sta:4:sta:3.2:12.8,sp:38:sp:0.81:30.78,dps:19.05:dps:7:133.35,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	15235	12908	mh	160.61	int:6:int:0.88:5.28,sp:38:sp:0.81:30.78,spi:4:spi:1.1:4.4,dps:19.05:dps:7:133.35,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	15235	12910	mh	174.53	sp:38:sp:0.81:30.78,spi:4:spi:1.1:4.4,sta:6:sta:3.2:19.2,dps:19.05:dps:7:133.35,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	15235	12912	mh	162.31	spDmg:24:sp:0.81:19.44,int:4:int:0.88:3.52,sta:6:sta:3.2:19.2,dps:19.05:dps:7:133.35,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	15235	12913	mh	149.27	int:6:int:0.88:5.28,spDmg:24:sp:0.81:19.44,spi:4:spi:1.1:4.4,dps:19.05:dps:7:133.35,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	15235	12916	mh	163.19	spDmg:24:sp:0.81:19.44,spi:4:spi:1.1:4.4,sta:6:sta:3.2:19.2,dps:19.05:dps:7:133.35,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	15235	12917	mh	157.97	sp:38:sp:0.81:30.78,int:8:int:0.88:7.04,dps:19.05:dps:7:133.35,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	15235	12920	mh	146.63	int:8:int:0.88:7.04,spDmg:24:sp:0.81:19.44,dps:19.05:dps:7:133.35,speed:-0.6:speed:22:-13.2
-R	shaman/enhancement	34	15477	0	gear	9.393	armor:101:armor:0.093:9.393
-R	shaman/enhancement	34	15477	12718	gear	13.473	int:1:int:0.88:0.88,sta:1:sta:3.2:3.2,armor:101:armor:0.093:9.393
-R	shaman/enhancement	34	15477	12719	gear	13.693000000000001	spi:1:spi:1.1:1.1,sta:1:sta:3.2:3.2,armor:101:armor:0.093:9.393
-R	shaman/enhancement	34	15477	12720	gear	11.373000000000001	int:1:int:0.88:0.88,spi:1:spi:1.1:1.1,armor:101:armor:0.093:9.393
-R	shaman/enhancement	34	15477	12721	gear	13.483	agi:1:agi:0.89:0.89,sta:1:sta:3.2:3.2,armor:101:armor:0.093:9.393
-R	shaman/enhancement	34	15477	12722	gear	13.593	sta:1:sta:3.2:3.2,str:1:str:1:1,armor:101:armor:0.093:9.393
-R	shaman/enhancement	34	15477	12723	gear	11.273	int:1:int:0.88:0.88,str:1:str:1:1,armor:101:armor:0.093:9.393
-R	shaman/enhancement	34	15477	12724	gear	11.163	agi:1:agi:0.89:0.89,int:1:int:0.88:0.88,armor:101:armor:0.093:9.393
-R	shaman/enhancement	34	15477	12725	gear	11.493	spi:1:spi:1.1:1.1,str:1:str:1:1,armor:101:armor:0.093:9.393
-R	shaman/enhancement	34	15477	12726	gear	11.383000000000001	agi:1:agi:0.89:0.89,spi:1:spi:1.1:1.1,armor:101:armor:0.093:9.393
-R	shaman/enhancement	34	15477	12727	gear	11.283000000000001	agi:1:agi:0.89:0.89,str:1:str:1:1,armor:101:armor:0.093:9.393
-R	shaman/enhancement	34	15477	12728	gear	11.173	agi:2:agi:0.89:1.78,armor:101:armor:0.093:9.393
-R	shaman/enhancement	34	15477	12729	gear	11.153	int:2:int:0.88:1.76,armor:101:armor:0.093:9.393
-R	shaman/enhancement	34	15477	12730	gear	11.593	spi:2:spi:1.1:2.2,armor:101:armor:0.093:9.393
-R	shaman/enhancement	34	15477	12731	gear	15.793000000000001	sta:2:sta:3.2:6.4,armor:101:armor:0.093:9.393
-R	shaman/enhancement	34	15477	12732	gear	11.393	str:2:str:1:2,armor:101:armor:0.093:9.393
-R	shaman/enhancement	34	15477	12733	gear	11.393	ap:4:ap:0.5:2,armor:101:armor:0.093:9.393
-R	shaman/enhancement	34	15477	12734	gear	11.013000000000002	sp:2:sp:0.81:1.62,armor:101:armor:0.093:9.393
-R	shaman/enhancement	34	15477	12735	gear	10.203000000000001	spDmg:1:sp:0.81:0.81,armor:101:armor:0.093:9.393
-R	shaman/enhancement	34	15477	12736	gear	9.393	armor:101:armor:0.093:9.393
-R	shaman/enhancement	34	15477	12740	gear	12.593	sta:1:sta:3.2:3.2,armor:101:armor:0.093:9.393
-R	shaman/enhancement	34	15477	12741	gear	12.593	sta:1:sta:3.2:3.2,armor:101:armor:0.093:9.393
-R	shaman/enhancement	34	15477	12742	gear	12.593	sta:1:sta:3.2:3.2,armor:101:armor:0.093:9.393
-R	shaman/enhancement	34	15477	12743	gear	12.593	sta:1:sta:3.2:3.2,armor:101:armor:0.093:9.393
-R	shaman/enhancement	34	15477	12744	gear	12.593	sta:1:sta:3.2:3.2,armor:101:armor:0.093:9.393
-R	shaman/enhancement	34	15477	12759	gear	9.393	armor:101:armor:0.093:9.393
-R	shaman/enhancement	34	15945	0	oh	8.600000000000001	sta:2:sta:3.2:6.4,spi:2:spi:1.1:2.2
-R	shaman/enhancement	34	16711	0	gear	60.19500000000001	agi:21:agi:0.89:18.69,sta:9:sta:3.2:28.8,hit:0.3:hit:2.7:0.81,hit:0.3:spellHit:4:1.2,armor:115:armor:0.093:10.695
-R	shaman/enhancement	34	18726	0	gear	54.789	sta:15:sta:3.2:48,armor:73:armor:0.093:6.789
-R	shaman/enhancement	34	20129	0	gear	45.141000000000005	agi:6:agi:0.89:5.34,str:6:str:1:6,sta:6:sta:3.2:19.2,armor:157:armor:0.093:14.601
+R	shaman/enhancement	34	11994	12738	gear	1.12	mp5:2:mp5:0.56:1.12
+R	shaman/enhancement	34	11994	12739	gear	1.58	agi:2:agi:0.79:1.58
+R	shaman/enhancement	34	11994	12740	gear	6.6000000000000005	sta:3:sta:2.2:6.6
+R	shaman/enhancement	34	11994	12741	gear	6.6000000000000005	sta:3:sta:2.2:6.6
+R	shaman/enhancement	34	11994	12742	gear	6.6000000000000005	sta:3:sta:2.2:6.6
+R	shaman/enhancement	34	11994	12743	gear	6.6000000000000005	sta:3:sta:2.2:6.6
+R	shaman/enhancement	34	11994	12744	gear	6.6000000000000005	sta:3:sta:2.2:6.6
+R	shaman/enhancement	34	13183	0	mh	257.94300000000004	dps:39.47:dps:6.9:272.343,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	14122	0	gear	0.9800000000000001	armor:14:armor:0.07:0.98
+R	shaman/enhancement	34	14122	12718	gear	7.780000000000001	int:2:int:1.2:2.4,sta:2:sta:2.2:4.4,armor:14:armor:0.07:0.98
+R	shaman/enhancement	34	14122	12719	gear	7.580000000000001	spi:2:spi:1.1:2.2,sta:2:sta:2.2:4.4,armor:14:armor:0.07:0.98
+R	shaman/enhancement	34	14122	12720	gear	5.58	int:2:int:1.2:2.4,spi:2:spi:1.1:2.2,armor:14:armor:0.07:0.98
+R	shaman/enhancement	34	14122	12729	gear	4.58	int:3:int:1.2:3.6,armor:14:armor:0.07:0.98
+R	shaman/enhancement	34	14122	12730	gear	4.28	spi:3:spi:1.1:3.3,armor:14:armor:0.07:0.98
+R	shaman/enhancement	34	14122	12731	gear	7.580000000000001	sta:3:sta:2.2:6.6,armor:14:armor:0.07:0.98
+R	shaman/enhancement	34	14122	12734	gear	4.34	sp:4:sp:0.84:3.36,armor:14:armor:0.07:0.98
+R	shaman/enhancement	34	14122	12735	gear	2.66	spDmg:2:sp:0.84:1.68,armor:14:armor:0.07:0.98
+R	shaman/enhancement	34	14122	12740	gear	5.380000000000001	sta:2:sta:2.2:4.4,armor:14:armor:0.07:0.98
+R	shaman/enhancement	34	14122	12741	gear	5.380000000000001	sta:2:sta:2.2:4.4,armor:14:armor:0.07:0.98
+R	shaman/enhancement	34	14122	12742	gear	5.380000000000001	sta:2:sta:2.2:4.4,armor:14:armor:0.07:0.98
+R	shaman/enhancement	34	14122	12743	gear	5.380000000000001	sta:2:sta:2.2:4.4,armor:14:armor:0.07:0.98
+R	shaman/enhancement	34	14122	12744	gear	5.380000000000001	sta:2:sta:2.2:4.4,armor:14:armor:0.07:0.98
+R	shaman/enhancement	34	14122	12745	gear	6.42	int:2:int:1.2:2.4,sta:1:sta:2.2:2.2,sp:1:sp:0.84:0.84,armor:14:armor:0.07:0.98
+R	shaman/enhancement	34	14122	12756	gear	0.9800000000000001	armor:14:armor:0.07:0.98
+R	shaman/enhancement	34	14122	12757	gear	0.9800000000000001	armor:14:armor:0.07:0.98
+R	shaman/enhancement	34	14122	12758	gear	0.9800000000000001	armor:14:armor:0.07:0.98
+R	shaman/enhancement	34	14122	12759	gear	0.9800000000000001	armor:14:armor:0.07:0.98
+R	shaman/enhancement	34	14122	12761	gear	0.9800000000000001	armor:14:armor:0.07:0.98
+R	shaman/enhancement	34	14340	0	gear	47.96000000000001	sta:19:sta:2.2:41.8,armor:88:armor:0.07:6.16
+R	shaman/enhancement	34	14673	0	gear	23.49	str:3:str:1:3,agi:9:agi:0.79:7.11,sta:5:sta:2.2:11,armor:34:armor:0.07:2.38
+R	shaman/enhancement	34	14964	0	oh	120.4	armor:1720:armor:0.07:120.4
+R	shaman/enhancement	34	14964	12718	oh	151.0	int:9:int:1.2:10.8,sta:9:sta:2.2:19.8,armor:1720:armor:0.07:120.4
+R	shaman/enhancement	34	14964	12719	oh	150.10000000000002	spi:9:spi:1.1:9.9,sta:9:sta:2.2:19.8,armor:1720:armor:0.07:120.4
+R	shaman/enhancement	34	14964	12720	oh	141.1	int:9:int:1.2:10.8,spi:9:spi:1.1:9.9,armor:1720:armor:0.07:120.4
+R	shaman/enhancement	34	14964	12721	oh	147.31	agi:9:agi:0.79:7.11,sta:9:sta:2.2:19.8,armor:1720:armor:0.07:120.4
+R	shaman/enhancement	34	14964	12722	oh	149.20000000000002	sta:9:sta:2.2:19.8,str:9:str:1:9,armor:1720:armor:0.07:120.4
+R	shaman/enhancement	34	14964	12723	oh	140.2	int:9:int:1.2:10.8,str:9:str:1:9,armor:1720:armor:0.07:120.4
+R	shaman/enhancement	34	14964	12724	oh	138.31	agi:9:agi:0.79:7.11,int:9:int:1.2:10.8,armor:1720:armor:0.07:120.4
+R	shaman/enhancement	34	14964	12725	oh	139.3	spi:9:spi:1.1:9.9,str:9:str:1:9,armor:1720:armor:0.07:120.4
+R	shaman/enhancement	34	14964	12726	oh	137.41	agi:9:agi:0.79:7.11,spi:9:spi:1.1:9.9,armor:1720:armor:0.07:120.4
+R	shaman/enhancement	34	14964	12727	oh	136.51	agi:9:agi:0.79:7.11,str:9:str:1:9,armor:1720:armor:0.07:120.4
+R	shaman/enhancement	34	14964	12728	oh	131.46	agi:14:agi:0.79:11.06,armor:1720:armor:0.07:120.4
+R	shaman/enhancement	34	14964	12729	oh	137.20000000000002	int:14:int:1.2:16.8,armor:1720:armor:0.07:120.4
+R	shaman/enhancement	34	14964	12730	oh	135.8	spi:14:spi:1.1:15.4,armor:1720:armor:0.07:120.4
+R	shaman/enhancement	34	14964	12731	oh	151.20000000000002	sta:14:sta:2.2:30.8,armor:1720:armor:0.07:120.4
+R	shaman/enhancement	34	14964	12732	oh	134.4	str:14:str:1:14,armor:1720:armor:0.07:120.4
+R	shaman/enhancement	34	14964	12733	oh	134.4	ap:28:ap:0.5:14,armor:1720:armor:0.07:120.4
+R	shaman/enhancement	34	14964	12734	oh	133.84	sp:16:sp:0.84:13.44,armor:1720:armor:0.07:120.4
+R	shaman/enhancement	34	14964	12735	oh	128.8	spDmg:10:sp:0.84:8.4,armor:1720:armor:0.07:120.4
+R	shaman/enhancement	34	14964	12736	oh	120.4	armor:1720:armor:0.07:120.4
+R	shaman/enhancement	34	14964	12740	oh	140.20000000000002	sta:9:sta:2.2:19.8,armor:1720:armor:0.07:120.4
+R	shaman/enhancement	34	14964	12741	oh	140.20000000000002	sta:9:sta:2.2:19.8,armor:1720:armor:0.07:120.4
+R	shaman/enhancement	34	14964	12742	oh	140.20000000000002	sta:9:sta:2.2:19.8,armor:1720:armor:0.07:120.4
+R	shaman/enhancement	34	14964	12743	oh	140.20000000000002	sta:9:sta:2.2:19.8,armor:1720:armor:0.07:120.4
+R	shaman/enhancement	34	14964	12744	oh	140.20000000000002	sta:9:sta:2.2:19.8,armor:1720:armor:0.07:120.4
+R	shaman/enhancement	34	14964	12745	oh	149.8	int:10:int:1.2:12,sta:6:sta:2.2:13.2,sp:5:sp:0.84:4.2,armor:1720:armor:0.07:120.4
+R	shaman/enhancement	34	14964	12746	oh	143.20000000000002	int:10:int:1.2:12,spi:6:spi:1.1:6.6,sp:5:sp:0.84:4.2,armor:1720:armor:0.07:120.4
+R	shaman/enhancement	34	14964	12747	oh	153.20000000000002	spi:6:spi:1.1:6.6,sta:10:sta:2.2:22,sp:5:sp:0.84:4.2,armor:1720:armor:0.07:120.4
+R	shaman/enhancement	34	14964	12748	oh	152.12	int:6:int:1.2:7.2,sta:10:sta:2.2:22,spDmg:3:sp:0.84:2.52,armor:1720:armor:0.07:120.4
+R	shaman/enhancement	34	14964	12749	oh	141.52	int:10:int:1.2:12,spi:6:spi:1.1:6.6,spDmg:3:sp:0.84:2.52,armor:1720:armor:0.07:120.4
+R	shaman/enhancement	34	14964	12750	oh	151.52	spi:6:spi:1.1:6.6,sta:10:sta:2.2:22,spDmg:3:sp:0.84:2.52,armor:1720:armor:0.07:120.4
+R	shaman/enhancement	34	14964	12753	oh	148.4	sta:10:sta:2.2:22,str:6:str:1:6,armor:1720:armor:0.07:120.4
+R	shaman/enhancement	34	14964	12754	oh	146.6	sp:5:sp:0.84:4.2,sta:10:sta:2.2:22,armor:1720:armor:0.07:120.4
+R	shaman/enhancement	34	14964	12759	oh	120.4	armor:1720:armor:0.07:120.4
+R	shaman/enhancement	34	14964	12760	oh	131.20000000000002	spNature:20:spNature:0.54:10.8,armor:1720:armor:0.07:120.4
+R	shaman/enhancement	34	15235	0	mh	182.733	dps:28.57:dps:6.9:197.133,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	15235	12718	mh	199.733	int:5:int:1.2:6,sta:5:sta:2.2:11,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	15235	12719	mh	199.233	spi:5:spi:1.1:5.5,sta:5:sta:2.2:11,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	15235	12720	mh	194.233	int:5:int:1.2:6,spi:5:spi:1.1:5.5,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	15235	12721	mh	197.683	agi:5:agi:0.79:3.95,sta:5:sta:2.2:11,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	15235	12722	mh	198.733	sta:5:sta:2.2:11,str:5:str:1:5,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	15235	12723	mh	193.733	int:5:int:1.2:6,str:5:str:1:5,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	15235	12724	mh	192.683	agi:5:agi:0.79:3.95,int:5:int:1.2:6,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	15235	12725	mh	193.233	spi:5:spi:1.1:5.5,str:5:str:1:5,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	15235	12726	mh	192.183	agi:5:agi:0.79:3.95,spi:5:spi:1.1:5.5,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	15235	12727	mh	191.683	agi:5:agi:0.79:3.95,str:5:str:1:5,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	15235	12728	mh	189.053	agi:8:agi:0.79:6.32,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	15235	12729	mh	192.333	int:8:int:1.2:9.6,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	15235	12730	mh	191.53300000000002	spi:8:spi:1.1:8.8,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	15235	12731	mh	200.333	sta:8:sta:2.2:17.6,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	15235	12732	mh	190.733	str:8:str:1:8,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	15235	12733	mh	190.733	ap:16:ap:0.5:8,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	15235	12736	mh	182.733	dps:28.57:dps:6.9:197.133,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	15235	12740	mh	193.733	sta:5:sta:2.2:11,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	15235	12741	mh	193.733	sta:5:sta:2.2:11,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	15235	12742	mh	193.733	sta:5:sta:2.2:11,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	15235	12743	mh	193.733	sta:5:sta:2.2:11,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	15235	12744	mh	193.733	sta:5:sta:2.2:11,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	15235	12751	mh	201.803	agi:3:agi:0.79:2.37,ap:7:ap:0.5:3.5,sta:6:sta:2.2:13.2,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	15235	12752	mh	201.303	agi:3:agi:0.79:2.37,sta:6:sta:2.2:13.2,str:3:str:1:3,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	15235	12753	mh	198.93300000000002	sta:6:sta:2.2:13.2,str:3:str:1:3,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	15235	12754	mh	198.453	sp:3:sp:0.84:2.52,sta:6:sta:2.2:13.2,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	15235	12759	mh	182.733	dps:28.57:dps:6.9:197.133,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	15235	12906	mh	164.965	int:6:int:1.2:7.2,sta:4:sta:2.2:8.8,sp:38:sp:0.84:31.92,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	15235	12908	mh	160.56500000000003	int:6:int:1.2:7.2,sp:38:sp:0.84:31.92,spi:4:spi:1.1:4.4,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	15235	12910	mh	166.56500000000003	sp:38:sp:0.84:31.92,spi:4:spi:1.1:4.4,sta:6:sta:2.2:13.2,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	15235	12912	mh	155.205	spDmg:24:sp:0.84:20.16,int:4:int:1.2:4.8,sta:6:sta:2.2:13.2,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	15235	12913	mh	148.805	int:6:int:1.2:7.2,spDmg:24:sp:0.84:20.16,spi:4:spi:1.1:4.4,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	15235	12916	mh	154.80500000000004	spDmg:24:sp:0.84:20.16,spi:4:spi:1.1:4.4,sta:6:sta:2.2:13.2,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	15235	12917	mh	158.56500000000003	sp:38:sp:0.84:31.92,int:8:int:1.2:9.6,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	15235	12920	mh	146.805	int:8:int:1.2:9.6,spDmg:24:sp:0.84:20.16,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:24:-14.4
+R	shaman/enhancement	34	15477	0	gear	7.07	armor:101:armor:0.07:7.07
+R	shaman/enhancement	34	15477	12718	gear	10.47	int:1:int:1.2:1.2,sta:1:sta:2.2:2.2,armor:101:armor:0.07:7.07
+R	shaman/enhancement	34	15477	12719	gear	10.370000000000001	spi:1:spi:1.1:1.1,sta:1:sta:2.2:2.2,armor:101:armor:0.07:7.07
+R	shaman/enhancement	34	15477	12720	gear	9.370000000000001	int:1:int:1.2:1.2,spi:1:spi:1.1:1.1,armor:101:armor:0.07:7.07
+R	shaman/enhancement	34	15477	12721	gear	10.06	agi:1:agi:0.79:0.79,sta:1:sta:2.2:2.2,armor:101:armor:0.07:7.07
+R	shaman/enhancement	34	15477	12722	gear	10.27	sta:1:sta:2.2:2.2,str:1:str:1:1,armor:101:armor:0.07:7.07
+R	shaman/enhancement	34	15477	12723	gear	9.27	int:1:int:1.2:1.2,str:1:str:1:1,armor:101:armor:0.07:7.07
+R	shaman/enhancement	34	15477	12724	gear	9.06	agi:1:agi:0.79:0.79,int:1:int:1.2:1.2,armor:101:armor:0.07:7.07
+R	shaman/enhancement	34	15477	12725	gear	9.17	spi:1:spi:1.1:1.1,str:1:str:1:1,armor:101:armor:0.07:7.07
+R	shaman/enhancement	34	15477	12726	gear	8.96	agi:1:agi:0.79:0.79,spi:1:spi:1.1:1.1,armor:101:armor:0.07:7.07
+R	shaman/enhancement	34	15477	12727	gear	8.86	agi:1:agi:0.79:0.79,str:1:str:1:1,armor:101:armor:0.07:7.07
+R	shaman/enhancement	34	15477	12728	gear	8.65	agi:2:agi:0.79:1.58,armor:101:armor:0.07:7.07
+R	shaman/enhancement	34	15477	12729	gear	9.47	int:2:int:1.2:2.4,armor:101:armor:0.07:7.07
+R	shaman/enhancement	34	15477	12730	gear	9.27	spi:2:spi:1.1:2.2,armor:101:armor:0.07:7.07
+R	shaman/enhancement	34	15477	12731	gear	11.47	sta:2:sta:2.2:4.4,armor:101:armor:0.07:7.07
+R	shaman/enhancement	34	15477	12732	gear	9.07	str:2:str:1:2,armor:101:armor:0.07:7.07
+R	shaman/enhancement	34	15477	12733	gear	9.07	ap:4:ap:0.5:2,armor:101:armor:0.07:7.07
+R	shaman/enhancement	34	15477	12734	gear	8.75	sp:2:sp:0.84:1.68,armor:101:armor:0.07:7.07
+R	shaman/enhancement	34	15477	12735	gear	7.91	spDmg:1:sp:0.84:0.84,armor:101:armor:0.07:7.07
+R	shaman/enhancement	34	15477	12736	gear	7.07	armor:101:armor:0.07:7.07
+R	shaman/enhancement	34	15477	12740	gear	9.27	sta:1:sta:2.2:2.2,armor:101:armor:0.07:7.07
+R	shaman/enhancement	34	15477	12741	gear	9.27	sta:1:sta:2.2:2.2,armor:101:armor:0.07:7.07
+R	shaman/enhancement	34	15477	12742	gear	9.27	sta:1:sta:2.2:2.2,armor:101:armor:0.07:7.07
+R	shaman/enhancement	34	15477	12743	gear	9.27	sta:1:sta:2.2:2.2,armor:101:armor:0.07:7.07
+R	shaman/enhancement	34	15477	12744	gear	9.27	sta:1:sta:2.2:2.2,armor:101:armor:0.07:7.07
+R	shaman/enhancement	34	15477	12759	gear	7.07	armor:101:armor:0.07:7.07
+R	shaman/enhancement	34	15945	0	oh	6.6000000000000005	sta:2:sta:2.2:4.4,spi:2:spi:1.1:2.2
+R	shaman/enhancement	34	16711	0	gear	46.42	agi:21:agi:0.79:16.59,sta:9:sta:2.2:19.8,hit:0.3:hit:2.6:0.78,hit:0.3:spellHit:4:1.2,armor:115:armor:0.07:8.05
+R	shaman/enhancement	34	18726	0	gear	38.11	sta:15:sta:2.2:33,armor:73:armor:0.07:5.11
+R	shaman/enhancement	34	20129	0	gear	34.93	agi:6:agi:0.79:4.74,str:6:str:1:6,sta:6:sta:2.2:13.2,armor:157:armor:0.07:10.99
 R	shaman/enhancement	34	22345	0	ranged	0.0	
-R	shaman/enhancement	34	22967	0	gear	116.549	sta:25:sta:3.2:80,armor:393:armor:0.093:36.549
-R	shaman/enhancement	34	250491	0	gear	38.362	int:5:int:0.88:4.4,sta:4:sta:3.2:12.8,spDmg:5:sp:0.81:4.05,armor:184:armor:0.093:17.112
-R	shaman/enhancement	34	252507	0	gear	43.928	sta:10:sta:3.2:32,spDmg:6:sp:0.81:4.86,armor:76:armor:0.093:7.068
-R	shaman/enhancement	34	254111	0	gear	54.542	int:9:int:0.88:7.92,sta:13:sta:3.2:41.6,armor:54:armor:0.093:5.022
-R	shaman/enhancement	34	270033	0	gear	10.187000000000001	agi:4:agi:0.89:3.56,str:3:str:1:3,armor:39:armor:0.093:3.627
-R	shaman/enhancement	34	271956	0	gear	97.04599999999999	agi:27:agi:0.89:24.03,sta:12:sta:3.2:38.4,crit:1:crit:4.5:4.5,crit:1:spellCrit:1.1:1.1,armor:312:armor:0.093:29.016
-R	shaman/enhancement	34	272958	0	gear	104.136	int:27:int:0.88:23.76,sta:12:sta:3.2:38.4,sp:16:sp:0.81:12.96,armor:312:armor:0.093:29.016
-R	shaman/enhancement	34	280082	0	mh	366.76	int:15:int:0.88:13.2,hit:1.5:hit:2.7:4.05,hit:1.5:spellHit:4:6,spi:21:spi:1.1:23.1,sp:66:sp:0.81:53.46,dps:36.25:dps:7:253.75,speed:0.6:speed:22:13.2
-R	shaman/enhancement	34	282560	0	gear	76.68900000000001	int:10:int:0.88:8.8,sta:13:sta:3.2:41.6,sp:8:sp:0.81:6.48,armor:213:armor:0.093:19.809
-R	shaman/enhancement	34	286609	0	oh	171.768	spi:6:spi:1.1:6.6,armor:1776:armor:0.093:165.168
-R	shaman/enhancement	45	1315	0	gear	41.0	sta:10:sta:2.6:26,spi:15:spi:1:15
-R	shaman/enhancement	45	1808	0	gear	5.401999999999999	armor:74:armor:0.073:5.402
-R	shaman/enhancement	45	1990	0	mh	195.028	dps:24.71:dps:6.8:168.028,speed:0.6:speed:45:27
-R	shaman/enhancement	45	1990	12718	mh	231.028	int:9:int:1.4:12.6,sta:9:sta:2.6:23.4,dps:24.71:dps:6.8:168.028,speed:0.6:speed:45:27
-R	shaman/enhancement	45	1990	12905	mh	210.784	int:11:int:1.4:15.4,sta:7:sta:2.6:18.2,sp:28:sp:0.9:25.2,dps:18.38:dps:6.8:124.984,speed:0.6:speed:45:27
-R	shaman/enhancement	45	2140	0	mh	13.392000000000003	dps:5.94:dps:6.8:40.392,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	2140	12718	mh	17.392000000000003	int:1:int:1.4:1.4,sta:1:sta:2.6:2.6,dps:5.94:dps:6.8:40.392,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	2140	12917	mh	4.399999999999999	sp:5:sp:0.9:4.5,int:1:int:1.4:1.4,dps:3.75:dps:6.8:25.5,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	2225	0	mh	7.0	dps:5:dps:6.8:34,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	2614	0	gear	2.117	armor:29:armor:0.073:2.117
-R	shaman/enhancement	45	3158	0	gear	1.898	armor:26:armor:0.073:1.898
-R	shaman/enhancement	45	3570	0	mh	39.215999999999994	str:2:str:1:2,dps:8.12:dps:6.8:55.216,speed:-0.4:speed:45:-18
-R	shaman/enhancement	45	4023	0	mh	77.448	dps:15.36:dps:6.8:104.448,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	4068	0	oh	93.699	sta:9:sta:2.6:23.4,armor:963:armor:0.073:70.299
-R	shaman/enhancement	45	4570	0	mh	90.5	dps:10:dps:6.8:68,speed:0.5:speed:45:22.5
-R	shaman/enhancement	45	4570	12718	mh	102.5	int:3:int:1.4:4.2,sta:3:sta:2.6:7.8,dps:10:dps:6.8:68,speed:0.5:speed:45:22.5
-R	shaman/enhancement	45	4570	12719	mh	101.3	spi:3:spi:1:3,sta:3:sta:2.6:7.8,dps:10:dps:6.8:68,speed:0.5:speed:45:22.5
-R	shaman/enhancement	45	4570	12720	mh	97.7	int:3:int:1.4:4.2,spi:3:spi:1:3,dps:10:dps:6.8:68,speed:0.5:speed:45:22.5
-R	shaman/enhancement	45	4570	12721	mh	101.3	agi:3:agi:1:3,sta:3:sta:2.6:7.8,dps:10:dps:6.8:68,speed:0.5:speed:45:22.5
-R	shaman/enhancement	45	4570	12722	mh	101.3	sta:3:sta:2.6:7.8,str:3:str:1:3,dps:10:dps:6.8:68,speed:0.5:speed:45:22.5
-R	shaman/enhancement	45	4570	12723	mh	97.7	int:3:int:1.4:4.2,str:3:str:1:3,dps:10:dps:6.8:68,speed:0.5:speed:45:22.5
-R	shaman/enhancement	45	4570	12724	mh	97.7	agi:3:agi:1:3,int:3:int:1.4:4.2,dps:10:dps:6.8:68,speed:0.5:speed:45:22.5
-R	shaman/enhancement	45	4570	12725	mh	96.5	spi:3:spi:1:3,str:3:str:1:3,dps:10:dps:6.8:68,speed:0.5:speed:45:22.5
-R	shaman/enhancement	45	4570	12726	mh	96.5	agi:3:agi:1:3,spi:3:spi:1:3,dps:10:dps:6.8:68,speed:0.5:speed:45:22.5
-R	shaman/enhancement	45	4570	12727	mh	96.5	agi:3:agi:1:3,str:3:str:1:3,dps:10:dps:6.8:68,speed:0.5:speed:45:22.5
-R	shaman/enhancement	45	4570	12728	mh	94.5	agi:4:agi:1:4,dps:10:dps:6.8:68,speed:0.5:speed:45:22.5
-R	shaman/enhancement	45	4570	12729	mh	96.1	int:4:int:1.4:5.6,dps:10:dps:6.8:68,speed:0.5:speed:45:22.5
-R	shaman/enhancement	45	4570	12730	mh	94.5	spi:4:spi:1:4,dps:10:dps:6.8:68,speed:0.5:speed:45:22.5
-R	shaman/enhancement	45	4570	12731	mh	100.9	sta:4:sta:2.6:10.4,dps:10:dps:6.8:68,speed:0.5:speed:45:22.5
-R	shaman/enhancement	45	4570	12732	mh	94.5	str:4:str:1:4,dps:10:dps:6.8:68,speed:0.5:speed:45:22.5
-R	shaman/enhancement	45	4570	12733	mh	94.5	ap:8:ap:0.5:4,dps:10:dps:6.8:68,speed:0.5:speed:45:22.5
-R	shaman/enhancement	45	4570	12736	mh	90.5	dps:10:dps:6.8:68,speed:0.5:speed:45:22.5
-R	shaman/enhancement	45	4570	12740	mh	98.3	sta:3:sta:2.6:7.8,dps:10:dps:6.8:68,speed:0.5:speed:45:22.5
-R	shaman/enhancement	45	4570	12741	mh	98.3	sta:3:sta:2.6:7.8,dps:10:dps:6.8:68,speed:0.5:speed:45:22.5
-R	shaman/enhancement	45	4570	12742	mh	98.3	sta:3:sta:2.6:7.8,dps:10:dps:6.8:68,speed:0.5:speed:45:22.5
-R	shaman/enhancement	45	4570	12743	mh	98.3	sta:3:sta:2.6:7.8,dps:10:dps:6.8:68,speed:0.5:speed:45:22.5
-R	shaman/enhancement	45	4570	12744	mh	98.3	sta:3:sta:2.6:7.8,dps:10:dps:6.8:68,speed:0.5:speed:45:22.5
-R	shaman/enhancement	45	4570	12759	mh	90.5	dps:10:dps:6.8:68,speed:0.5:speed:45:22.5
-R	shaman/enhancement	45	4570	12918	mh	86.844	sp:8:sp:0.9:7.2,int:4:int:1.4:5.6,dps:7.58:dps:6.8:51.544,speed:0.5:speed:45:22.5
-R	shaman/enhancement	45	4570	12919	mh	84.144	spDmg:5:sp:0.9:4.5,int:4:int:1.4:5.6,dps:7.58:dps:6.8:51.544,speed:0.5:speed:45:22.5
+R	shaman/enhancement	34	22967	0	gear	82.51	sta:25:sta:2.2:55,armor:393:armor:0.07:27.51
+R	shaman/enhancement	34	250491	0	gear	31.880000000000003	int:5:int:1.2:6,sta:4:sta:2.2:8.8,spDmg:5:sp:0.84:4.2,armor:184:armor:0.07:12.88
+R	shaman/enhancement	34	252507	0	gear	32.36	sta:10:sta:2.2:22,spDmg:6:sp:0.84:5.04,armor:76:armor:0.07:5.32
+R	shaman/enhancement	34	254111	0	gear	43.18	int:9:int:1.2:10.8,sta:13:sta:2.2:28.6,armor:54:armor:0.07:3.78
+R	shaman/enhancement	34	270033	0	gear	8.89	agi:4:agi:0.79:3.16,str:3:str:1:3,armor:39:armor:0.07:2.73
+R	shaman/enhancement	34	271956	0	gear	75.37	agi:27:agi:0.79:21.33,sta:12:sta:2.2:26.4,crit:1:crit:4.6:4.6,crit:1:spellCrit:1.2:1.2,armor:312:armor:0.07:21.84
+R	shaman/enhancement	34	272958	0	gear	94.08	int:27:int:1.2:32.4,sta:12:sta:2.2:26.4,sp:16:sp:0.84:13.44,armor:312:armor:0.07:21.84
+R	shaman/enhancement	34	280082	0	mh	370.965	int:15:int:1.2:18,hit:1.5:hit:2.6:3.9,hit:1.5:spellHit:4:6,spi:21:spi:1.1:23.1,sp:66:sp:0.84:55.44,dps:36.25:dps:6.9:250.125,speed:0.6:speed:24:14.4
+R	shaman/enhancement	34	282560	0	gear	62.230000000000004	int:10:int:1.2:12,sta:13:sta:2.2:28.6,sp:8:sp:0.84:6.72,armor:213:armor:0.07:14.91
+R	shaman/enhancement	34	286609	0	oh	130.92000000000002	spi:6:spi:1.1:6.6,armor:1776:armor:0.07:124.32
+R	shaman/enhancement	45	1315	0	gear	37.0	sta:10:sta:1.9:19,spi:15:spi:1.2:18
+R	shaman/enhancement	45	1808	0	gear	4.588	armor:74:armor:0.062:4.588
+R	shaman/enhancement	45	1990	0	mh	193.828	dps:24.71:dps:6.8:168.028,speed:0.6:speed:43:25.8
+R	shaman/enhancement	45	1990	12718	mh	227.128	int:9:int:1.8:16.2,sta:9:sta:1.9:17.1,dps:24.71:dps:6.8:168.028,speed:0.6:speed:43:25.8
+R	shaman/enhancement	45	1990	12905	mh	210.484	int:11:int:1.8:19.8,sta:7:sta:1.9:13.3,sp:28:sp:0.95:26.6,dps:18.38:dps:6.8:124.984,speed:0.6:speed:43:25.8
+R	shaman/enhancement	45	2140	0	mh	14.592000000000002	dps:5.94:dps:6.8:40.392,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	2140	12718	mh	18.292000000000005	int:1:int:1.8:1.8,sta:1:sta:1.9:1.9,dps:5.94:dps:6.8:40.392,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	2140	12917	mh	6.2499999999999964	sp:5:sp:0.95:4.75,int:1:int:1.8:1.8,dps:3.75:dps:6.8:25.5,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	2225	0	mh	8.2	dps:5:dps:6.8:34,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	2614	0	gear	1.798	armor:29:armor:0.062:1.798
+R	shaman/enhancement	45	3158	0	gear	1.612	armor:26:armor:0.062:1.612
+R	shaman/enhancement	45	3570	0	mh	40.016	str:2:str:1:2,dps:8.12:dps:6.8:55.216,speed:-0.4:speed:43:-17.2
+R	shaman/enhancement	45	4023	0	mh	78.648	dps:15.36:dps:6.8:104.448,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	4068	0	oh	76.806	sta:9:sta:1.9:17.1,armor:963:armor:0.062:59.706
+R	shaman/enhancement	45	4570	0	mh	89.5	dps:10:dps:6.8:68,speed:0.5:speed:43:21.5
+R	shaman/enhancement	45	4570	12718	mh	100.6	int:3:int:1.8:5.4,sta:3:sta:1.9:5.7,dps:10:dps:6.8:68,speed:0.5:speed:43:21.5
+R	shaman/enhancement	45	4570	12719	mh	98.8	spi:3:spi:1.2:3.6,sta:3:sta:1.9:5.7,dps:10:dps:6.8:68,speed:0.5:speed:43:21.5
+R	shaman/enhancement	45	4570	12720	mh	98.5	int:3:int:1.8:5.4,spi:3:spi:1.2:3.6,dps:10:dps:6.8:68,speed:0.5:speed:43:21.5
+R	shaman/enhancement	45	4570	12721	mh	98.14	agi:3:agi:0.98:2.94,sta:3:sta:1.9:5.7,dps:10:dps:6.8:68,speed:0.5:speed:43:21.5
+R	shaman/enhancement	45	4570	12722	mh	98.2	sta:3:sta:1.9:5.7,str:3:str:1:3,dps:10:dps:6.8:68,speed:0.5:speed:43:21.5
+R	shaman/enhancement	45	4570	12723	mh	97.9	int:3:int:1.8:5.4,str:3:str:1:3,dps:10:dps:6.8:68,speed:0.5:speed:43:21.5
+R	shaman/enhancement	45	4570	12724	mh	97.84	agi:3:agi:0.98:2.94,int:3:int:1.8:5.4,dps:10:dps:6.8:68,speed:0.5:speed:43:21.5
+R	shaman/enhancement	45	4570	12725	mh	96.1	spi:3:spi:1.2:3.6,str:3:str:1:3,dps:10:dps:6.8:68,speed:0.5:speed:43:21.5
+R	shaman/enhancement	45	4570	12726	mh	96.03999999999999	agi:3:agi:0.98:2.94,spi:3:spi:1.2:3.6,dps:10:dps:6.8:68,speed:0.5:speed:43:21.5
+R	shaman/enhancement	45	4570	12727	mh	95.44	agi:3:agi:0.98:2.94,str:3:str:1:3,dps:10:dps:6.8:68,speed:0.5:speed:43:21.5
+R	shaman/enhancement	45	4570	12728	mh	93.42	agi:4:agi:0.98:3.92,dps:10:dps:6.8:68,speed:0.5:speed:43:21.5
+R	shaman/enhancement	45	4570	12729	mh	96.7	int:4:int:1.8:7.2,dps:10:dps:6.8:68,speed:0.5:speed:43:21.5
+R	shaman/enhancement	45	4570	12730	mh	94.3	spi:4:spi:1.2:4.8,dps:10:dps:6.8:68,speed:0.5:speed:43:21.5
+R	shaman/enhancement	45	4570	12731	mh	97.1	sta:4:sta:1.9:7.6,dps:10:dps:6.8:68,speed:0.5:speed:43:21.5
+R	shaman/enhancement	45	4570	12732	mh	93.5	str:4:str:1:4,dps:10:dps:6.8:68,speed:0.5:speed:43:21.5
+R	shaman/enhancement	45	4570	12733	mh	93.5	ap:8:ap:0.5:4,dps:10:dps:6.8:68,speed:0.5:speed:43:21.5
+R	shaman/enhancement	45	4570	12736	mh	89.5	dps:10:dps:6.8:68,speed:0.5:speed:43:21.5
+R	shaman/enhancement	45	4570	12740	mh	95.2	sta:3:sta:1.9:5.7,dps:10:dps:6.8:68,speed:0.5:speed:43:21.5
+R	shaman/enhancement	45	4570	12741	mh	95.2	sta:3:sta:1.9:5.7,dps:10:dps:6.8:68,speed:0.5:speed:43:21.5
+R	shaman/enhancement	45	4570	12742	mh	95.2	sta:3:sta:1.9:5.7,dps:10:dps:6.8:68,speed:0.5:speed:43:21.5
+R	shaman/enhancement	45	4570	12743	mh	95.2	sta:3:sta:1.9:5.7,dps:10:dps:6.8:68,speed:0.5:speed:43:21.5
+R	shaman/enhancement	45	4570	12744	mh	95.2	sta:3:sta:1.9:5.7,dps:10:dps:6.8:68,speed:0.5:speed:43:21.5
+R	shaman/enhancement	45	4570	12759	mh	89.5	dps:10:dps:6.8:68,speed:0.5:speed:43:21.5
+R	shaman/enhancement	45	4570	12918	mh	87.844	sp:8:sp:0.95:7.6,int:4:int:1.8:7.2,dps:7.58:dps:6.8:51.544,speed:0.5:speed:43:21.5
+R	shaman/enhancement	45	4570	12919	mh	84.994	spDmg:5:sp:0.95:4.75,int:4:int:1.8:7.2,dps:7.58:dps:6.8:51.544,speed:0.5:speed:43:21.5
 R	shaman/enhancement	45	5079	0	gear	0.0	
-R	shaman/enhancement	45	6063	0	gear	4.015	armor:55:armor:0.073:4.015
-R	shaman/enhancement	45	6540	0	gear	2.044	armor:28:armor:0.073:2.044
-R	shaman/enhancement	45	6540	12718	gear	14.044	int:3:int:1.4:4.2,sta:3:sta:2.6:7.8,armor:28:armor:0.073:2.044
-R	shaman/enhancement	45	6540	12719	gear	12.844000000000001	spi:3:spi:1:3,sta:3:sta:2.6:7.8,armor:28:armor:0.073:2.044
-R	shaman/enhancement	45	6540	12720	gear	9.244	int:3:int:1.4:4.2,spi:3:spi:1:3,armor:28:armor:0.073:2.044
-R	shaman/enhancement	45	6540	12729	gear	9.044	int:5:int:1.4:7,armor:28:armor:0.073:2.044
-R	shaman/enhancement	45	6540	12730	gear	7.0440000000000005	spi:5:spi:1:5,armor:28:armor:0.073:2.044
-R	shaman/enhancement	45	6540	12731	gear	15.044	sta:5:sta:2.6:13,armor:28:armor:0.073:2.044
-R	shaman/enhancement	45	6540	12734	gear	7.444000000000001	sp:6:sp:0.9:5.4,armor:28:armor:0.073:2.044
-R	shaman/enhancement	45	6540	12735	gear	5.644	spDmg:4:sp:0.9:3.6,armor:28:armor:0.073:2.044
-R	shaman/enhancement	45	6540	12740	gear	9.844000000000001	sta:3:sta:2.6:7.8,armor:28:armor:0.073:2.044
-R	shaman/enhancement	45	6540	12741	gear	9.844000000000001	sta:3:sta:2.6:7.8,armor:28:armor:0.073:2.044
-R	shaman/enhancement	45	6540	12742	gear	9.844000000000001	sta:3:sta:2.6:7.8,armor:28:armor:0.073:2.044
-R	shaman/enhancement	45	6540	12743	gear	9.844000000000001	sta:3:sta:2.6:7.8,armor:28:armor:0.073:2.044
-R	shaman/enhancement	45	6540	12744	gear	9.844000000000001	sta:3:sta:2.6:7.8,armor:28:armor:0.073:2.044
-R	shaman/enhancement	45	6540	12745	gear	14.644000000000002	int:4:int:1.4:5.6,sta:2:sta:2.6:5.2,sp:2:sp:0.9:1.8,armor:28:armor:0.073:2.044
-R	shaman/enhancement	45	6540	12756	gear	2.044	armor:28:armor:0.073:2.044
-R	shaman/enhancement	45	6540	12757	gear	2.044	armor:28:armor:0.073:2.044
-R	shaman/enhancement	45	6540	12758	gear	2.044	armor:28:armor:0.073:2.044
-R	shaman/enhancement	45	6540	12759	gear	2.044	armor:28:armor:0.073:2.044
-R	shaman/enhancement	45	6540	12761	gear	2.044	armor:28:armor:0.073:2.044
-R	shaman/enhancement	45	6557	0	gear	3.577	armor:49:armor:0.073:3.577
-R	shaman/enhancement	45	6557	12718	gear	11.577	int:2:int:1.4:2.8,sta:2:sta:2.6:5.2,armor:49:armor:0.073:3.577
-R	shaman/enhancement	45	6557	12719	gear	10.777000000000001	spi:2:spi:1:2,sta:2:sta:2.6:5.2,armor:49:armor:0.073:3.577
-R	shaman/enhancement	45	6557	12720	gear	8.376999999999999	int:2:int:1.4:2.8,spi:2:spi:1:2,armor:49:armor:0.073:3.577
-R	shaman/enhancement	45	6557	12721	gear	10.777000000000001	agi:2:agi:1:2,sta:2:sta:2.6:5.2,armor:49:armor:0.073:3.577
-R	shaman/enhancement	45	6557	12722	gear	10.777000000000001	sta:2:sta:2.6:5.2,str:2:str:1:2,armor:49:armor:0.073:3.577
-R	shaman/enhancement	45	6557	12723	gear	8.376999999999999	int:2:int:1.4:2.8,str:2:str:1:2,armor:49:armor:0.073:3.577
-R	shaman/enhancement	45	6557	12724	gear	8.376999999999999	agi:2:agi:1:2,int:2:int:1.4:2.8,armor:49:armor:0.073:3.577
-R	shaman/enhancement	45	6557	12725	gear	7.577	spi:2:spi:1:2,str:2:str:1:2,armor:49:armor:0.073:3.577
-R	shaman/enhancement	45	6557	12726	gear	7.577	agi:2:agi:1:2,spi:2:spi:1:2,armor:49:armor:0.073:3.577
-R	shaman/enhancement	45	6557	12727	gear	7.577	agi:2:agi:1:2,str:2:str:1:2,armor:49:armor:0.073:3.577
-R	shaman/enhancement	45	6557	12728	gear	6.577	agi:3:agi:1:3,armor:49:armor:0.073:3.577
-R	shaman/enhancement	45	6557	12729	gear	7.776999999999999	int:3:int:1.4:4.2,armor:49:armor:0.073:3.577
-R	shaman/enhancement	45	6557	12730	gear	6.577	spi:3:spi:1:3,armor:49:armor:0.073:3.577
-R	shaman/enhancement	45	6557	12731	gear	11.377	sta:3:sta:2.6:7.8,armor:49:armor:0.073:3.577
-R	shaman/enhancement	45	6557	12732	gear	6.577	str:3:str:1:3,armor:49:armor:0.073:3.577
-R	shaman/enhancement	45	6557	12733	gear	6.577	ap:6:ap:0.5:3,armor:49:armor:0.073:3.577
-R	shaman/enhancement	45	6557	12734	gear	7.177	sp:4:sp:0.9:3.6,armor:49:armor:0.073:3.577
-R	shaman/enhancement	45	6557	12735	gear	5.377	spDmg:2:sp:0.9:1.8,armor:49:armor:0.073:3.577
-R	shaman/enhancement	45	6557	12736	gear	3.577	armor:49:armor:0.073:3.577
-R	shaman/enhancement	45	6557	12740	gear	8.777000000000001	sta:2:sta:2.6:5.2,armor:49:armor:0.073:3.577
-R	shaman/enhancement	45	6557	12741	gear	8.777000000000001	sta:2:sta:2.6:5.2,armor:49:armor:0.073:3.577
-R	shaman/enhancement	45	6557	12742	gear	8.777000000000001	sta:2:sta:2.6:5.2,armor:49:armor:0.073:3.577
-R	shaman/enhancement	45	6557	12743	gear	8.777000000000001	sta:2:sta:2.6:5.2,armor:49:armor:0.073:3.577
-R	shaman/enhancement	45	6557	12744	gear	8.777000000000001	sta:2:sta:2.6:5.2,armor:49:armor:0.073:3.577
-R	shaman/enhancement	45	6557	12756	gear	3.577	armor:49:armor:0.073:3.577
-R	shaman/enhancement	45	6557	12760	gear	6.297000000000001	spNature:4:spNature:0.68:2.72,armor:49:armor:0.073:3.577
-R	shaman/enhancement	45	7047	0	gear	6.898	spi:5:spi:1:5,armor:26:armor:0.073:1.898
-R	shaman/enhancement	45	7538	0	gear	19.198999999999998	armor:263:armor:0.073:19.199
-R	shaman/enhancement	45	7538	12718	gear	71.199	int:13:int:1.4:18.2,sta:13:sta:2.6:33.8,armor:263:armor:0.073:19.199
-R	shaman/enhancement	45	7538	12719	gear	65.999	spi:13:spi:1:13,sta:13:sta:2.6:33.8,armor:263:armor:0.073:19.199
-R	shaman/enhancement	45	7538	12720	gear	50.399	int:13:int:1.4:18.2,spi:13:spi:1:13,armor:263:armor:0.073:19.199
-R	shaman/enhancement	45	7538	12721	gear	65.999	agi:13:agi:1:13,sta:13:sta:2.6:33.8,armor:263:armor:0.073:19.199
-R	shaman/enhancement	45	7538	12722	gear	65.999	sta:13:sta:2.6:33.8,str:13:str:1:13,armor:263:armor:0.073:19.199
-R	shaman/enhancement	45	7538	12723	gear	50.399	int:13:int:1.4:18.2,str:13:str:1:13,armor:263:armor:0.073:19.199
-R	shaman/enhancement	45	7538	12724	gear	50.399	agi:13:agi:1:13,int:13:int:1.4:18.2,armor:263:armor:0.073:19.199
-R	shaman/enhancement	45	7538	12725	gear	45.199	spi:13:spi:1:13,str:13:str:1:13,armor:263:armor:0.073:19.199
-R	shaman/enhancement	45	7538	12726	gear	45.199	agi:13:agi:1:13,spi:13:spi:1:13,armor:263:armor:0.073:19.199
-R	shaman/enhancement	45	7538	12727	gear	45.199	agi:13:agi:1:13,str:13:str:1:13,armor:263:armor:0.073:19.199
-R	shaman/enhancement	45	7538	12728	gear	39.199	agi:20:agi:1:20,armor:263:armor:0.073:19.199
-R	shaman/enhancement	45	7538	12729	gear	47.199	int:20:int:1.4:28,armor:263:armor:0.073:19.199
-R	shaman/enhancement	45	7538	12730	gear	39.199	spi:20:spi:1:20,armor:263:armor:0.073:19.199
-R	shaman/enhancement	45	7538	12731	gear	71.199	sta:20:sta:2.6:52,armor:263:armor:0.073:19.199
-R	shaman/enhancement	45	7538	12732	gear	39.199	str:20:str:1:20,armor:263:armor:0.073:19.199
-R	shaman/enhancement	45	7538	12733	gear	39.199	ap:40:ap:0.5:20,armor:263:armor:0.073:19.199
-R	shaman/enhancement	45	7538	12734	gear	39.899	sp:23:sp:0.9:20.7,armor:263:armor:0.073:19.199
-R	shaman/enhancement	45	7538	12735	gear	32.699	spDmg:15:sp:0.9:13.5,armor:263:armor:0.073:19.199
-R	shaman/enhancement	45	7538	12740	gear	52.999	sta:13:sta:2.6:33.8,armor:263:armor:0.073:19.199
-R	shaman/enhancement	45	7538	12741	gear	52.999	sta:13:sta:2.6:33.8,armor:263:armor:0.073:19.199
-R	shaman/enhancement	45	7538	12742	gear	52.999	sta:13:sta:2.6:33.8,armor:263:armor:0.073:19.199
-R	shaman/enhancement	45	7538	12743	gear	52.999	sta:13:sta:2.6:33.8,armor:263:armor:0.073:19.199
-R	shaman/enhancement	45	7538	12744	gear	52.999	sta:13:sta:2.6:33.8,armor:263:armor:0.073:19.199
-R	shaman/enhancement	45	7538	12745	gear	67.29899999999999	int:15:int:1.4:21,sta:8:sta:2.6:20.8,sp:7:sp:0.9:6.3,armor:263:armor:0.073:19.199
-R	shaman/enhancement	45	7538	12746	gear	54.498999999999995	int:15:int:1.4:21,spi:8:spi:1:8,sp:7:sp:0.9:6.3,armor:263:armor:0.073:19.199
-R	shaman/enhancement	45	7538	12747	gear	72.499	spi:8:spi:1:8,sta:15:sta:2.6:39,sp:7:sp:0.9:6.3,armor:263:armor:0.073:19.199
-R	shaman/enhancement	45	7538	12748	gear	73.899	int:8:int:1.4:11.2,sta:15:sta:2.6:39,spDmg:5:sp:0.9:4.5,armor:263:armor:0.073:19.199
-R	shaman/enhancement	45	7538	12749	gear	52.699	int:15:int:1.4:21,spi:8:spi:1:8,spDmg:5:sp:0.9:4.5,armor:263:armor:0.073:19.199
-R	shaman/enhancement	45	7538	12750	gear	70.699	spi:8:spi:1:8,sta:15:sta:2.6:39,spDmg:5:sp:0.9:4.5,armor:263:armor:0.073:19.199
-R	shaman/enhancement	45	7538	12751	gear	72.199	agi:6:agi:1:6,ap:16:ap:0.5:8,sta:15:sta:2.6:39,armor:263:armor:0.073:19.199
-R	shaman/enhancement	45	7538	12752	gear	72.199	agi:8:agi:1:8,sta:15:sta:2.6:39,str:6:str:1:6,armor:263:armor:0.073:19.199
-R	shaman/enhancement	45	7538	12755	gear	72.499	sp:7:sp:0.9:6.3,sta:15:sta:2.6:39,str:8:str:1:8,armor:263:armor:0.073:19.199
-R	shaman/enhancement	45	7538	12760	gear	38.919	spNature:29:spNature:0.68:19.72,armor:263:armor:0.073:19.199
-R	shaman/enhancement	45	8192	0	gear	30.278	agi:11:agi:1:11,sta:5:sta:2.6:13,armor:86:armor:0.073:6.278
-R	shaman/enhancement	45	9458	0	oh	59.647999999999996	spi:3:spi:1:3,armor:776:armor:0.073:56.648
-R	shaman/enhancement	45	9834	0	gear	5.329	armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	9834	12718	gear	29.329	int:6:int:1.4:8.4,sta:6:sta:2.6:15.6,armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	9834	12719	gear	26.929000000000002	spi:6:spi:1:6,sta:6:sta:2.6:15.6,armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	9834	12720	gear	19.729	int:6:int:1.4:8.4,spi:6:spi:1:6,armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	9834	12721	gear	26.929000000000002	agi:6:agi:1:6,sta:6:sta:2.6:15.6,armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	9834	12722	gear	26.929000000000002	sta:6:sta:2.6:15.6,str:6:str:1:6,armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	9834	12723	gear	19.729	int:6:int:1.4:8.4,str:6:str:1:6,armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	9834	12724	gear	19.729	agi:6:agi:1:6,int:6:int:1.4:8.4,armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	9834	12725	gear	17.329	spi:6:spi:1:6,str:6:str:1:6,armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	9834	12726	gear	17.329	agi:6:agi:1:6,spi:6:spi:1:6,armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	9834	12727	gear	17.329	agi:6:agi:1:6,str:6:str:1:6,armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	9834	12728	gear	14.329	agi:9:agi:1:9,armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	9834	12729	gear	17.929	int:9:int:1.4:12.6,armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	9834	12730	gear	14.329	spi:9:spi:1:9,armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	9834	12731	gear	28.729000000000003	sta:9:sta:2.6:23.4,armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	9834	12732	gear	14.329	str:9:str:1:9,armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	9834	12733	gear	14.329	ap:18:ap:0.5:9,armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	9834	12734	gear	15.229	sp:11:sp:0.9:9.9,armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	9834	12735	gear	11.629	spDmg:7:sp:0.9:6.3,armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	9834	12736	gear	5.329	armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	9834	12740	gear	20.929000000000002	sta:6:sta:2.6:15.6,armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	9834	12741	gear	20.929000000000002	sta:6:sta:2.6:15.6,armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	9834	12742	gear	20.929000000000002	sta:6:sta:2.6:15.6,armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	9834	12743	gear	20.929000000000002	sta:6:sta:2.6:15.6,armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	9834	12744	gear	20.929000000000002	sta:6:sta:2.6:15.6,armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	9834	12745	gear	28.229	int:7:int:1.4:9.8,sta:4:sta:2.6:10.4,sp:3:sp:0.9:2.7,armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	9834	12746	gear	21.829	int:7:int:1.4:9.8,spi:4:spi:1:4,sp:3:sp:0.9:2.7,armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	9834	12747	gear	30.229	spi:4:spi:1:4,sta:7:sta:2.6:18.2,sp:3:sp:0.9:2.7,armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	9834	12748	gear	30.929	int:4:int:1.4:5.6,sta:7:sta:2.6:18.2,spDmg:2:sp:0.9:1.8,armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	9834	12749	gear	20.929	int:7:int:1.4:9.8,spi:4:spi:1:4,spDmg:2:sp:0.9:1.8,armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	9834	12750	gear	29.329	spi:4:spi:1:4,sta:7:sta:2.6:18.2,spDmg:2:sp:0.9:1.8,armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	9834	12751	gear	30.029	agi:3:agi:1:3,ap:7:ap:0.5:3.5,sta:7:sta:2.6:18.2,armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	9834	12752	gear	30.529	agi:4:agi:1:4,sta:7:sta:2.6:18.2,str:3:str:1:3,armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	9834	12753	gear	27.529	sta:7:sta:2.6:18.2,str:4:str:1:4,armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	9834	12755	gear	30.229	sp:3:sp:0.9:2.7,sta:7:sta:2.6:18.2,str:4:str:1:4,armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	9834	12756	gear	5.329	armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	9834	12760	gear	14.169	spNature:13:spNature:0.68:8.84,armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	11187	0	gear	0.292	armor:4:armor:0.073:0.292
+R	shaman/enhancement	45	6063	0	gear	3.41	armor:55:armor:0.062:3.41
+R	shaman/enhancement	45	6540	0	gear	1.736	armor:28:armor:0.062:1.736
+R	shaman/enhancement	45	6540	12718	gear	12.836	int:3:int:1.8:5.4,sta:3:sta:1.9:5.7,armor:28:armor:0.062:1.736
+R	shaman/enhancement	45	6540	12719	gear	11.036	spi:3:spi:1.2:3.6,sta:3:sta:1.9:5.7,armor:28:armor:0.062:1.736
+R	shaman/enhancement	45	6540	12720	gear	10.736	int:3:int:1.8:5.4,spi:3:spi:1.2:3.6,armor:28:armor:0.062:1.736
+R	shaman/enhancement	45	6540	12729	gear	10.736	int:5:int:1.8:9,armor:28:armor:0.062:1.736
+R	shaman/enhancement	45	6540	12730	gear	7.736	spi:5:spi:1.2:6,armor:28:armor:0.062:1.736
+R	shaman/enhancement	45	6540	12731	gear	11.236	sta:5:sta:1.9:9.5,armor:28:armor:0.062:1.736
+R	shaman/enhancement	45	6540	12734	gear	7.435999999999999	sp:6:sp:0.95:5.7,armor:28:armor:0.062:1.736
+R	shaman/enhancement	45	6540	12735	gear	5.536	spDmg:4:sp:0.95:3.8,armor:28:armor:0.062:1.736
+R	shaman/enhancement	45	6540	12740	gear	7.435999999999999	sta:3:sta:1.9:5.7,armor:28:armor:0.062:1.736
+R	shaman/enhancement	45	6540	12741	gear	7.435999999999999	sta:3:sta:1.9:5.7,armor:28:armor:0.062:1.736
+R	shaman/enhancement	45	6540	12742	gear	7.435999999999999	sta:3:sta:1.9:5.7,armor:28:armor:0.062:1.736
+R	shaman/enhancement	45	6540	12743	gear	7.435999999999999	sta:3:sta:1.9:5.7,armor:28:armor:0.062:1.736
+R	shaman/enhancement	45	6540	12744	gear	7.435999999999999	sta:3:sta:1.9:5.7,armor:28:armor:0.062:1.736
+R	shaman/enhancement	45	6540	12745	gear	14.636000000000001	int:4:int:1.8:7.2,sta:2:sta:1.9:3.8,sp:2:sp:0.95:1.9,armor:28:armor:0.062:1.736
+R	shaman/enhancement	45	6540	12756	gear	1.736	armor:28:armor:0.062:1.736
+R	shaman/enhancement	45	6540	12757	gear	1.736	armor:28:armor:0.062:1.736
+R	shaman/enhancement	45	6540	12758	gear	1.736	armor:28:armor:0.062:1.736
+R	shaman/enhancement	45	6540	12759	gear	1.736	armor:28:armor:0.062:1.736
+R	shaman/enhancement	45	6540	12761	gear	1.736	armor:28:armor:0.062:1.736
+R	shaman/enhancement	45	6557	0	gear	3.038	armor:49:armor:0.062:3.038
+R	shaman/enhancement	45	6557	12718	gear	10.438	int:2:int:1.8:3.6,sta:2:sta:1.9:3.8,armor:49:armor:0.062:3.038
+R	shaman/enhancement	45	6557	12719	gear	9.238	spi:2:spi:1.2:2.4,sta:2:sta:1.9:3.8,armor:49:armor:0.062:3.038
+R	shaman/enhancement	45	6557	12720	gear	9.038	int:2:int:1.8:3.6,spi:2:spi:1.2:2.4,armor:49:armor:0.062:3.038
+R	shaman/enhancement	45	6557	12721	gear	8.798	agi:2:agi:0.98:1.96,sta:2:sta:1.9:3.8,armor:49:armor:0.062:3.038
+R	shaman/enhancement	45	6557	12722	gear	8.838	sta:2:sta:1.9:3.8,str:2:str:1:2,armor:49:armor:0.062:3.038
+R	shaman/enhancement	45	6557	12723	gear	8.638	int:2:int:1.8:3.6,str:2:str:1:2,armor:49:armor:0.062:3.038
+R	shaman/enhancement	45	6557	12724	gear	8.598	agi:2:agi:0.98:1.96,int:2:int:1.8:3.6,armor:49:armor:0.062:3.038
+R	shaman/enhancement	45	6557	12725	gear	7.438000000000001	spi:2:spi:1.2:2.4,str:2:str:1:2,armor:49:armor:0.062:3.038
+R	shaman/enhancement	45	6557	12726	gear	7.398	agi:2:agi:0.98:1.96,spi:2:spi:1.2:2.4,armor:49:armor:0.062:3.038
+R	shaman/enhancement	45	6557	12727	gear	6.997999999999999	agi:2:agi:0.98:1.96,str:2:str:1:2,armor:49:armor:0.062:3.038
+R	shaman/enhancement	45	6557	12728	gear	5.978	agi:3:agi:0.98:2.94,armor:49:armor:0.062:3.038
+R	shaman/enhancement	45	6557	12729	gear	8.438	int:3:int:1.8:5.4,armor:49:armor:0.062:3.038
+R	shaman/enhancement	45	6557	12730	gear	6.638	spi:3:spi:1.2:3.6,armor:49:armor:0.062:3.038
+R	shaman/enhancement	45	6557	12731	gear	8.738	sta:3:sta:1.9:5.7,armor:49:armor:0.062:3.038
+R	shaman/enhancement	45	6557	12732	gear	6.038	str:3:str:1:3,armor:49:armor:0.062:3.038
+R	shaman/enhancement	45	6557	12733	gear	6.038	ap:6:ap:0.5:3,armor:49:armor:0.062:3.038
+R	shaman/enhancement	45	6557	12734	gear	6.837999999999999	sp:4:sp:0.95:3.8,armor:49:armor:0.062:3.038
+R	shaman/enhancement	45	6557	12735	gear	4.938	spDmg:2:sp:0.95:1.9,armor:49:armor:0.062:3.038
+R	shaman/enhancement	45	6557	12736	gear	3.038	armor:49:armor:0.062:3.038
+R	shaman/enhancement	45	6557	12740	gear	6.837999999999999	sta:2:sta:1.9:3.8,armor:49:armor:0.062:3.038
+R	shaman/enhancement	45	6557	12741	gear	6.837999999999999	sta:2:sta:1.9:3.8,armor:49:armor:0.062:3.038
+R	shaman/enhancement	45	6557	12742	gear	6.837999999999999	sta:2:sta:1.9:3.8,armor:49:armor:0.062:3.038
+R	shaman/enhancement	45	6557	12743	gear	6.837999999999999	sta:2:sta:1.9:3.8,armor:49:armor:0.062:3.038
+R	shaman/enhancement	45	6557	12744	gear	6.837999999999999	sta:2:sta:1.9:3.8,armor:49:armor:0.062:3.038
+R	shaman/enhancement	45	6557	12756	gear	3.038	armor:49:armor:0.062:3.038
+R	shaman/enhancement	45	6557	12760	gear	5.798	spNature:4:spNature:0.69:2.76,armor:49:armor:0.062:3.038
+R	shaman/enhancement	45	7047	0	gear	7.612	spi:5:spi:1.2:6,armor:26:armor:0.062:1.612
+R	shaman/enhancement	45	7538	0	gear	16.306	armor:263:armor:0.062:16.306
+R	shaman/enhancement	45	7538	12718	gear	64.406	int:13:int:1.8:23.4,sta:13:sta:1.9:24.7,armor:263:armor:0.062:16.306
+R	shaman/enhancement	45	7538	12719	gear	56.605999999999995	spi:13:spi:1.2:15.6,sta:13:sta:1.9:24.7,armor:263:armor:0.062:16.306
+R	shaman/enhancement	45	7538	12720	gear	55.306	int:13:int:1.8:23.4,spi:13:spi:1.2:15.6,armor:263:armor:0.062:16.306
+R	shaman/enhancement	45	7538	12721	gear	53.745999999999995	agi:13:agi:0.98:12.74,sta:13:sta:1.9:24.7,armor:263:armor:0.062:16.306
+R	shaman/enhancement	45	7538	12722	gear	54.006	sta:13:sta:1.9:24.7,str:13:str:1:13,armor:263:armor:0.062:16.306
+R	shaman/enhancement	45	7538	12723	gear	52.706	int:13:int:1.8:23.4,str:13:str:1:13,armor:263:armor:0.062:16.306
+R	shaman/enhancement	45	7538	12724	gear	52.446	agi:13:agi:0.98:12.74,int:13:int:1.8:23.4,armor:263:armor:0.062:16.306
+R	shaman/enhancement	45	7538	12725	gear	44.906000000000006	spi:13:spi:1.2:15.6,str:13:str:1:13,armor:263:armor:0.062:16.306
+R	shaman/enhancement	45	7538	12726	gear	44.646	agi:13:agi:0.98:12.74,spi:13:spi:1.2:15.6,armor:263:armor:0.062:16.306
+R	shaman/enhancement	45	7538	12727	gear	42.04600000000001	agi:13:agi:0.98:12.74,str:13:str:1:13,armor:263:armor:0.062:16.306
+R	shaman/enhancement	45	7538	12728	gear	35.906000000000006	agi:20:agi:0.98:19.6,armor:263:armor:0.062:16.306
+R	shaman/enhancement	45	7538	12729	gear	52.306	int:20:int:1.8:36,armor:263:armor:0.062:16.306
+R	shaman/enhancement	45	7538	12730	gear	40.306	spi:20:spi:1.2:24,armor:263:armor:0.062:16.306
+R	shaman/enhancement	45	7538	12731	gear	54.306	sta:20:sta:1.9:38,armor:263:armor:0.062:16.306
+R	shaman/enhancement	45	7538	12732	gear	36.306	str:20:str:1:20,armor:263:armor:0.062:16.306
+R	shaman/enhancement	45	7538	12733	gear	36.306	ap:40:ap:0.5:20,armor:263:armor:0.062:16.306
+R	shaman/enhancement	45	7538	12734	gear	38.156	sp:23:sp:0.95:21.85,armor:263:armor:0.062:16.306
+R	shaman/enhancement	45	7538	12735	gear	30.556	spDmg:15:sp:0.95:14.25,armor:263:armor:0.062:16.306
+R	shaman/enhancement	45	7538	12740	gear	41.006	sta:13:sta:1.9:24.7,armor:263:armor:0.062:16.306
+R	shaman/enhancement	45	7538	12741	gear	41.006	sta:13:sta:1.9:24.7,armor:263:armor:0.062:16.306
+R	shaman/enhancement	45	7538	12742	gear	41.006	sta:13:sta:1.9:24.7,armor:263:armor:0.062:16.306
+R	shaman/enhancement	45	7538	12743	gear	41.006	sta:13:sta:1.9:24.7,armor:263:armor:0.062:16.306
+R	shaman/enhancement	45	7538	12744	gear	41.006	sta:13:sta:1.9:24.7,armor:263:armor:0.062:16.306
+R	shaman/enhancement	45	7538	12745	gear	65.156	int:15:int:1.8:27,sta:8:sta:1.9:15.2,sp:7:sp:0.95:6.65,armor:263:armor:0.062:16.306
+R	shaman/enhancement	45	7538	12746	gear	59.556	int:15:int:1.8:27,spi:8:spi:1.2:9.6,sp:7:sp:0.95:6.65,armor:263:armor:0.062:16.306
+R	shaman/enhancement	45	7538	12747	gear	61.056	spi:8:spi:1.2:9.6,sta:15:sta:1.9:28.5,sp:7:sp:0.95:6.65,armor:263:armor:0.062:16.306
+R	shaman/enhancement	45	7538	12748	gear	63.956	int:8:int:1.8:14.4,sta:15:sta:1.9:28.5,spDmg:5:sp:0.95:4.75,armor:263:armor:0.062:16.306
+R	shaman/enhancement	45	7538	12749	gear	57.656000000000006	int:15:int:1.8:27,spi:8:spi:1.2:9.6,spDmg:5:sp:0.95:4.75,armor:263:armor:0.062:16.306
+R	shaman/enhancement	45	7538	12750	gear	59.156000000000006	spi:8:spi:1.2:9.6,sta:15:sta:1.9:28.5,spDmg:5:sp:0.95:4.75,armor:263:armor:0.062:16.306
+R	shaman/enhancement	45	7538	12751	gear	58.68599999999999	agi:6:agi:0.98:5.88,ap:16:ap:0.5:8,sta:15:sta:1.9:28.5,armor:263:armor:0.062:16.306
+R	shaman/enhancement	45	7538	12752	gear	58.646	agi:8:agi:0.98:7.84,sta:15:sta:1.9:28.5,str:6:str:1:6,armor:263:armor:0.062:16.306
+R	shaman/enhancement	45	7538	12755	gear	59.456	sp:7:sp:0.95:6.65,sta:15:sta:1.9:28.5,str:8:str:1:8,armor:263:armor:0.062:16.306
+R	shaman/enhancement	45	7538	12760	gear	36.316	spNature:29:spNature:0.69:20.01,armor:263:armor:0.062:16.306
+R	shaman/enhancement	45	8192	0	gear	25.612000000000002	agi:11:agi:0.98:10.78,sta:5:sta:1.9:9.5,armor:86:armor:0.062:5.332
+R	shaman/enhancement	45	9458	0	oh	51.712	spi:3:spi:1.2:3.6,armor:776:armor:0.062:48.112
+R	shaman/enhancement	45	9834	0	gear	4.526	armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	9834	12718	gear	26.726	int:6:int:1.8:10.8,sta:6:sta:1.9:11.4,armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	9834	12719	gear	23.125999999999998	spi:6:spi:1.2:7.2,sta:6:sta:1.9:11.4,armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	9834	12720	gear	22.526	int:6:int:1.8:10.8,spi:6:spi:1.2:7.2,armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	9834	12721	gear	21.805999999999997	agi:6:agi:0.98:5.88,sta:6:sta:1.9:11.4,armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	9834	12722	gear	21.926	sta:6:sta:1.9:11.4,str:6:str:1:6,armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	9834	12723	gear	21.326	int:6:int:1.8:10.8,str:6:str:1:6,armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	9834	12724	gear	21.206	agi:6:agi:0.98:5.88,int:6:int:1.8:10.8,armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	9834	12725	gear	17.726	spi:6:spi:1.2:7.2,str:6:str:1:6,armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	9834	12726	gear	17.605999999999998	agi:6:agi:0.98:5.88,spi:6:spi:1.2:7.2,armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	9834	12727	gear	16.406	agi:6:agi:0.98:5.88,str:6:str:1:6,armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	9834	12728	gear	13.346	agi:9:agi:0.98:8.82,armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	9834	12729	gear	20.726	int:9:int:1.8:16.2,armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	9834	12730	gear	15.325999999999999	spi:9:spi:1.2:10.8,armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	9834	12731	gear	21.625999999999998	sta:9:sta:1.9:17.1,armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	9834	12732	gear	13.526	str:9:str:1:9,armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	9834	12733	gear	13.526	ap:18:ap:0.5:9,armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	9834	12734	gear	14.975999999999999	sp:11:sp:0.95:10.45,armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	9834	12735	gear	11.175999999999998	spDmg:7:sp:0.95:6.65,armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	9834	12736	gear	4.526	armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	9834	12740	gear	15.925999999999998	sta:6:sta:1.9:11.4,armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	9834	12741	gear	15.925999999999998	sta:6:sta:1.9:11.4,armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	9834	12742	gear	15.925999999999998	sta:6:sta:1.9:11.4,armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	9834	12743	gear	15.925999999999998	sta:6:sta:1.9:11.4,armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	9834	12744	gear	15.925999999999998	sta:6:sta:1.9:11.4,armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	9834	12745	gear	27.575999999999997	int:7:int:1.8:12.6,sta:4:sta:1.9:7.6,sp:3:sp:0.95:2.85,armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	9834	12746	gear	24.776	int:7:int:1.8:12.6,spi:4:spi:1.2:4.8,sp:3:sp:0.95:2.85,armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	9834	12747	gear	25.475999999999996	spi:4:spi:1.2:4.8,sta:7:sta:1.9:13.3,sp:3:sp:0.95:2.85,armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	9834	12748	gear	26.926	int:4:int:1.8:7.2,sta:7:sta:1.9:13.3,spDmg:2:sp:0.95:1.9,armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	9834	12749	gear	23.825999999999997	int:7:int:1.8:12.6,spi:4:spi:1.2:4.8,spDmg:2:sp:0.95:1.9,armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	9834	12750	gear	24.525999999999996	spi:4:spi:1.2:4.8,sta:7:sta:1.9:13.3,spDmg:2:sp:0.95:1.9,armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	9834	12751	gear	24.266	agi:3:agi:0.98:2.94,ap:7:ap:0.5:3.5,sta:7:sta:1.9:13.3,armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	9834	12752	gear	24.746	agi:4:agi:0.98:3.92,sta:7:sta:1.9:13.3,str:3:str:1:3,armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	9834	12753	gear	21.825999999999997	sta:7:sta:1.9:13.3,str:4:str:1:4,armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	9834	12755	gear	24.676	sp:3:sp:0.95:2.85,sta:7:sta:1.9:13.3,str:4:str:1:4,armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	9834	12756	gear	4.526	armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	9834	12760	gear	13.495999999999999	spNature:13:spNature:0.69:8.97,armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	11187	0	gear	0.248	armor:4:armor:0.062:0.248
 R	shaman/enhancement	45	11994	0	gear	0.0	
-R	shaman/enhancement	45	11994	12718	gear	12.0	int:3:int:1.4:4.2,sta:3:sta:2.6:7.8
-R	shaman/enhancement	45	11994	12719	gear	10.8	spi:3:spi:1:3,sta:3:sta:2.6:7.8
-R	shaman/enhancement	45	11994	12720	gear	7.199999999999999	int:3:int:1.4:4.2,spi:3:spi:1:3
-R	shaman/enhancement	45	11994	12721	gear	10.8	agi:3:agi:1:3,sta:3:sta:2.6:7.8
-R	shaman/enhancement	45	11994	12722	gear	10.8	sta:3:sta:2.6:7.8,str:3:str:1:3
-R	shaman/enhancement	45	11994	12723	gear	7.199999999999999	int:3:int:1.4:4.2,str:3:str:1:3
-R	shaman/enhancement	45	11994	12724	gear	7.199999999999999	agi:3:agi:1:3,int:3:int:1.4:4.2
-R	shaman/enhancement	45	11994	12725	gear	6.0	spi:3:spi:1:3,str:3:str:1:3
-R	shaman/enhancement	45	11994	12726	gear	6.0	agi:3:agi:1:3,spi:3:spi:1:3
-R	shaman/enhancement	45	11994	12727	gear	6.0	agi:3:agi:1:3,str:3:str:1:3
-R	shaman/enhancement	45	11994	12728	gear	5.0	agi:5:agi:1:5
-R	shaman/enhancement	45	11994	12729	gear	7.0	int:5:int:1.4:7
-R	shaman/enhancement	45	11994	12730	gear	5.0	spi:5:spi:1:5
-R	shaman/enhancement	45	11994	12731	gear	13.0	sta:5:sta:2.6:13
+R	shaman/enhancement	45	11994	12718	gear	11.1	int:3:int:1.8:5.4,sta:3:sta:1.9:5.7
+R	shaman/enhancement	45	11994	12719	gear	9.299999999999999	spi:3:spi:1.2:3.6,sta:3:sta:1.9:5.7
+R	shaman/enhancement	45	11994	12720	gear	9.0	int:3:int:1.8:5.4,spi:3:spi:1.2:3.6
+R	shaman/enhancement	45	11994	12721	gear	8.639999999999999	agi:3:agi:0.98:2.94,sta:3:sta:1.9:5.7
+R	shaman/enhancement	45	11994	12722	gear	8.7	sta:3:sta:1.9:5.7,str:3:str:1:3
+R	shaman/enhancement	45	11994	12723	gear	8.4	int:3:int:1.8:5.4,str:3:str:1:3
+R	shaman/enhancement	45	11994	12724	gear	8.34	agi:3:agi:0.98:2.94,int:3:int:1.8:5.4
+R	shaman/enhancement	45	11994	12725	gear	6.6	spi:3:spi:1.2:3.6,str:3:str:1:3
+R	shaman/enhancement	45	11994	12726	gear	6.539999999999999	agi:3:agi:0.98:2.94,spi:3:spi:1.2:3.6
+R	shaman/enhancement	45	11994	12727	gear	5.9399999999999995	agi:3:agi:0.98:2.94,str:3:str:1:3
+R	shaman/enhancement	45	11994	12728	gear	4.9	agi:5:agi:0.98:4.9
+R	shaman/enhancement	45	11994	12729	gear	9.0	int:5:int:1.8:9
+R	shaman/enhancement	45	11994	12730	gear	6.0	spi:5:spi:1.2:6
+R	shaman/enhancement	45	11994	12731	gear	9.5	sta:5:sta:1.9:9.5
 R	shaman/enhancement	45	11994	12732	gear	5.0	str:5:str:1:5
 R	shaman/enhancement	45	11994	12733	gear	5.0	ap:10:ap:0.5:5
 R	shaman/enhancement	45	11994	12737	gear	0.0	
-R	shaman/enhancement	45	11994	12738	gear	1.36	mp5:2:mp5:0.68:1.36
-R	shaman/enhancement	45	11994	12739	gear	2.0	agi:2:agi:1:2
-R	shaman/enhancement	45	11994	12740	gear	7.800000000000001	sta:3:sta:2.6:7.8
-R	shaman/enhancement	45	11994	12741	gear	7.800000000000001	sta:3:sta:2.6:7.8
-R	shaman/enhancement	45	11994	12742	gear	7.800000000000001	sta:3:sta:2.6:7.8
-R	shaman/enhancement	45	11994	12743	gear	7.800000000000001	sta:3:sta:2.6:7.8
-R	shaman/enhancement	45	11994	12744	gear	7.800000000000001	sta:3:sta:2.6:7.8
-R	shaman/enhancement	45	13183	0	mh	241.39599999999996	dps:39.47:dps:6.8:268.396,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	14122	0	gear	1.022	armor:14:armor:0.073:1.022
-R	shaman/enhancement	45	14122	12718	gear	9.022	int:2:int:1.4:2.8,sta:2:sta:2.6:5.2,armor:14:armor:0.073:1.022
-R	shaman/enhancement	45	14122	12719	gear	8.222	spi:2:spi:1:2,sta:2:sta:2.6:5.2,armor:14:armor:0.073:1.022
-R	shaman/enhancement	45	14122	12720	gear	5.822	int:2:int:1.4:2.8,spi:2:spi:1:2,armor:14:armor:0.073:1.022
-R	shaman/enhancement	45	14122	12729	gear	5.2219999999999995	int:3:int:1.4:4.2,armor:14:armor:0.073:1.022
-R	shaman/enhancement	45	14122	12730	gear	4.022	spi:3:spi:1:3,armor:14:armor:0.073:1.022
-R	shaman/enhancement	45	14122	12731	gear	8.822000000000001	sta:3:sta:2.6:7.8,armor:14:armor:0.073:1.022
-R	shaman/enhancement	45	14122	12734	gear	4.622	sp:4:sp:0.9:3.6,armor:14:armor:0.073:1.022
-R	shaman/enhancement	45	14122	12735	gear	2.822	spDmg:2:sp:0.9:1.8,armor:14:armor:0.073:1.022
-R	shaman/enhancement	45	14122	12740	gear	6.222	sta:2:sta:2.6:5.2,armor:14:armor:0.073:1.022
-R	shaman/enhancement	45	14122	12741	gear	6.222	sta:2:sta:2.6:5.2,armor:14:armor:0.073:1.022
-R	shaman/enhancement	45	14122	12742	gear	6.222	sta:2:sta:2.6:5.2,armor:14:armor:0.073:1.022
-R	shaman/enhancement	45	14122	12743	gear	6.222	sta:2:sta:2.6:5.2,armor:14:armor:0.073:1.022
-R	shaman/enhancement	45	14122	12744	gear	6.222	sta:2:sta:2.6:5.2,armor:14:armor:0.073:1.022
-R	shaman/enhancement	45	14122	12745	gear	7.322000000000001	int:2:int:1.4:2.8,sta:1:sta:2.6:2.6,sp:1:sp:0.9:0.9,armor:14:armor:0.073:1.022
-R	shaman/enhancement	45	14122	12756	gear	1.022	armor:14:armor:0.073:1.022
-R	shaman/enhancement	45	14122	12757	gear	1.022	armor:14:armor:0.073:1.022
-R	shaman/enhancement	45	14122	12758	gear	1.022	armor:14:armor:0.073:1.022
-R	shaman/enhancement	45	14122	12759	gear	1.022	armor:14:armor:0.073:1.022
-R	shaman/enhancement	45	14122	12761	gear	1.022	armor:14:armor:0.073:1.022
-R	shaman/enhancement	45	14340	0	gear	55.824	sta:19:sta:2.6:49.4,armor:88:armor:0.073:6.424
-R	shaman/enhancement	45	14673	0	gear	27.482	str:3:str:1:3,agi:9:agi:1:9,sta:5:sta:2.6:13,armor:34:armor:0.073:2.482
-R	shaman/enhancement	45	14964	0	oh	125.55999999999999	armor:1720:armor:0.073:125.56
-R	shaman/enhancement	45	14964	12718	oh	161.56	int:9:int:1.4:12.6,sta:9:sta:2.6:23.4,armor:1720:armor:0.073:125.56
-R	shaman/enhancement	45	14964	12719	oh	157.95999999999998	spi:9:spi:1:9,sta:9:sta:2.6:23.4,armor:1720:armor:0.073:125.56
-R	shaman/enhancement	45	14964	12720	oh	147.16	int:9:int:1.4:12.6,spi:9:spi:1:9,armor:1720:armor:0.073:125.56
-R	shaman/enhancement	45	14964	12721	oh	157.95999999999998	agi:9:agi:1:9,sta:9:sta:2.6:23.4,armor:1720:armor:0.073:125.56
-R	shaman/enhancement	45	14964	12722	oh	157.95999999999998	sta:9:sta:2.6:23.4,str:9:str:1:9,armor:1720:armor:0.073:125.56
-R	shaman/enhancement	45	14964	12723	oh	147.16	int:9:int:1.4:12.6,str:9:str:1:9,armor:1720:armor:0.073:125.56
-R	shaman/enhancement	45	14964	12724	oh	147.16	agi:9:agi:1:9,int:9:int:1.4:12.6,armor:1720:armor:0.073:125.56
-R	shaman/enhancement	45	14964	12725	oh	143.56	spi:9:spi:1:9,str:9:str:1:9,armor:1720:armor:0.073:125.56
-R	shaman/enhancement	45	14964	12726	oh	143.56	agi:9:agi:1:9,spi:9:spi:1:9,armor:1720:armor:0.073:125.56
-R	shaman/enhancement	45	14964	12727	oh	143.56	agi:9:agi:1:9,str:9:str:1:9,armor:1720:armor:0.073:125.56
-R	shaman/enhancement	45	14964	12728	oh	139.56	agi:14:agi:1:14,armor:1720:armor:0.073:125.56
-R	shaman/enhancement	45	14964	12729	oh	145.16	int:14:int:1.4:19.6,armor:1720:armor:0.073:125.56
-R	shaman/enhancement	45	14964	12730	oh	139.56	spi:14:spi:1:14,armor:1720:armor:0.073:125.56
-R	shaman/enhancement	45	14964	12731	oh	161.95999999999998	sta:14:sta:2.6:36.4,armor:1720:armor:0.073:125.56
-R	shaman/enhancement	45	14964	12732	oh	139.56	str:14:str:1:14,armor:1720:armor:0.073:125.56
-R	shaman/enhancement	45	14964	12733	oh	139.56	ap:28:ap:0.5:14,armor:1720:armor:0.073:125.56
-R	shaman/enhancement	45	14964	12734	oh	139.95999999999998	sp:16:sp:0.9:14.4,armor:1720:armor:0.073:125.56
-R	shaman/enhancement	45	14964	12735	oh	134.56	spDmg:10:sp:0.9:9,armor:1720:armor:0.073:125.56
-R	shaman/enhancement	45	14964	12736	oh	125.55999999999999	armor:1720:armor:0.073:125.56
-R	shaman/enhancement	45	14964	12740	oh	148.95999999999998	sta:9:sta:2.6:23.4,armor:1720:armor:0.073:125.56
-R	shaman/enhancement	45	14964	12741	oh	148.95999999999998	sta:9:sta:2.6:23.4,armor:1720:armor:0.073:125.56
-R	shaman/enhancement	45	14964	12742	oh	148.95999999999998	sta:9:sta:2.6:23.4,armor:1720:armor:0.073:125.56
-R	shaman/enhancement	45	14964	12743	oh	148.95999999999998	sta:9:sta:2.6:23.4,armor:1720:armor:0.073:125.56
-R	shaman/enhancement	45	14964	12744	oh	148.95999999999998	sta:9:sta:2.6:23.4,armor:1720:armor:0.073:125.56
-R	shaman/enhancement	45	14964	12745	oh	159.66	int:10:int:1.4:14,sta:6:sta:2.6:15.6,sp:5:sp:0.9:4.5,armor:1720:armor:0.073:125.56
-R	shaman/enhancement	45	14964	12746	oh	150.06	int:10:int:1.4:14,spi:6:spi:1:6,sp:5:sp:0.9:4.5,armor:1720:armor:0.073:125.56
-R	shaman/enhancement	45	14964	12747	oh	162.06	spi:6:spi:1:6,sta:10:sta:2.6:26,sp:5:sp:0.9:4.5,armor:1720:armor:0.073:125.56
-R	shaman/enhancement	45	14964	12748	oh	162.66	int:6:int:1.4:8.4,sta:10:sta:2.6:26,spDmg:3:sp:0.9:2.7,armor:1720:armor:0.073:125.56
-R	shaman/enhancement	45	14964	12749	oh	148.26	int:10:int:1.4:14,spi:6:spi:1:6,spDmg:3:sp:0.9:2.7,armor:1720:armor:0.073:125.56
-R	shaman/enhancement	45	14964	12750	oh	160.26	spi:6:spi:1:6,sta:10:sta:2.6:26,spDmg:3:sp:0.9:2.7,armor:1720:armor:0.073:125.56
-R	shaman/enhancement	45	14964	12753	oh	157.56	sta:10:sta:2.6:26,str:6:str:1:6,armor:1720:armor:0.073:125.56
-R	shaman/enhancement	45	14964	12754	oh	156.06	sp:5:sp:0.9:4.5,sta:10:sta:2.6:26,armor:1720:armor:0.073:125.56
-R	shaman/enhancement	45	14964	12759	oh	125.55999999999999	armor:1720:armor:0.073:125.56
-R	shaman/enhancement	45	14964	12760	oh	139.16	spNature:20:spNature:0.68:13.6,armor:1720:armor:0.073:125.56
-R	shaman/enhancement	45	15235	0	mh	167.276	dps:28.57:dps:6.8:194.276,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	15235	12718	mh	187.276	int:5:int:1.4:7,sta:5:sta:2.6:13,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	15235	12719	mh	185.276	spi:5:spi:1:5,sta:5:sta:2.6:13,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	15235	12720	mh	179.276	int:5:int:1.4:7,spi:5:spi:1:5,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	15235	12721	mh	185.276	agi:5:agi:1:5,sta:5:sta:2.6:13,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	15235	12722	mh	185.276	sta:5:sta:2.6:13,str:5:str:1:5,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	15235	12723	mh	179.276	int:5:int:1.4:7,str:5:str:1:5,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	15235	12724	mh	179.276	agi:5:agi:1:5,int:5:int:1.4:7,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	15235	12725	mh	177.276	spi:5:spi:1:5,str:5:str:1:5,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	15235	12726	mh	177.276	agi:5:agi:1:5,spi:5:spi:1:5,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	15235	12727	mh	177.276	agi:5:agi:1:5,str:5:str:1:5,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	15235	12728	mh	175.276	agi:8:agi:1:8,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	15235	12729	mh	178.476	int:8:int:1.4:11.2,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	15235	12730	mh	175.276	spi:8:spi:1:8,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	15235	12731	mh	188.07600000000002	sta:8:sta:2.6:20.8,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	15235	12732	mh	175.276	str:8:str:1:8,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	15235	12733	mh	175.276	ap:16:ap:0.5:8,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	15235	12736	mh	167.276	dps:28.57:dps:6.8:194.276,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	15235	12740	mh	180.276	sta:5:sta:2.6:13,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	15235	12741	mh	180.276	sta:5:sta:2.6:13,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	15235	12742	mh	180.276	sta:5:sta:2.6:13,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	15235	12743	mh	180.276	sta:5:sta:2.6:13,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	15235	12744	mh	180.276	sta:5:sta:2.6:13,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	15235	12751	mh	189.376	agi:3:agi:1:3,ap:7:ap:0.5:3.5,sta:6:sta:2.6:15.6,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	15235	12752	mh	188.876	agi:3:agi:1:3,sta:6:sta:2.6:15.6,str:3:str:1:3,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	15235	12753	mh	185.876	sta:6:sta:2.6:15.6,str:3:str:1:3,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	15235	12754	mh	185.57600000000002	sp:3:sp:0.9:2.7,sta:6:sta:2.6:15.6,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	15235	12759	mh	167.276	dps:28.57:dps:6.8:194.276,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	15235	12906	mh	155.54	int:6:int:1.4:8.4,sta:4:sta:2.6:10.4,sp:38:sp:0.9:34.2,dps:19.05:dps:6.8:129.54,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	15235	12908	mh	149.14	int:6:int:1.4:8.4,sp:38:sp:0.9:34.2,spi:4:spi:1:4,dps:19.05:dps:6.8:129.54,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	15235	12910	mh	156.34	sp:38:sp:0.9:34.2,spi:4:spi:1:4,sta:6:sta:2.6:15.6,dps:19.05:dps:6.8:129.54,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	15235	12912	mh	145.34	spDmg:24:sp:0.9:21.6,int:4:int:1.4:5.6,sta:6:sta:2.6:15.6,dps:19.05:dps:6.8:129.54,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	15235	12913	mh	136.54	int:6:int:1.4:8.4,spDmg:24:sp:0.9:21.6,spi:4:spi:1:4,dps:19.05:dps:6.8:129.54,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	15235	12916	mh	143.74	spDmg:24:sp:0.9:21.6,spi:4:spi:1:4,sta:6:sta:2.6:15.6,dps:19.05:dps:6.8:129.54,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	15235	12917	mh	147.94	sp:38:sp:0.9:34.2,int:8:int:1.4:11.2,dps:19.05:dps:6.8:129.54,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	15235	12920	mh	135.33999999999997	int:8:int:1.4:11.2,spDmg:24:sp:0.9:21.6,dps:19.05:dps:6.8:129.54,speed:-0.6:speed:45:-27
-R	shaman/enhancement	45	15477	0	gear	7.372999999999999	armor:101:armor:0.073:7.373
-R	shaman/enhancement	45	15477	12718	gear	11.373	int:1:int:1.4:1.4,sta:1:sta:2.6:2.6,armor:101:armor:0.073:7.373
-R	shaman/enhancement	45	15477	12719	gear	10.972999999999999	spi:1:spi:1:1,sta:1:sta:2.6:2.6,armor:101:armor:0.073:7.373
-R	shaman/enhancement	45	15477	12720	gear	9.773	int:1:int:1.4:1.4,spi:1:spi:1:1,armor:101:armor:0.073:7.373
-R	shaman/enhancement	45	15477	12721	gear	10.972999999999999	agi:1:agi:1:1,sta:1:sta:2.6:2.6,armor:101:armor:0.073:7.373
-R	shaman/enhancement	45	15477	12722	gear	10.972999999999999	sta:1:sta:2.6:2.6,str:1:str:1:1,armor:101:armor:0.073:7.373
-R	shaman/enhancement	45	15477	12723	gear	9.773	int:1:int:1.4:1.4,str:1:str:1:1,armor:101:armor:0.073:7.373
-R	shaman/enhancement	45	15477	12724	gear	9.773	agi:1:agi:1:1,int:1:int:1.4:1.4,armor:101:armor:0.073:7.373
-R	shaman/enhancement	45	15477	12725	gear	9.373	spi:1:spi:1:1,str:1:str:1:1,armor:101:armor:0.073:7.373
-R	shaman/enhancement	45	15477	12726	gear	9.373	agi:1:agi:1:1,spi:1:spi:1:1,armor:101:armor:0.073:7.373
-R	shaman/enhancement	45	15477	12727	gear	9.373	agi:1:agi:1:1,str:1:str:1:1,armor:101:armor:0.073:7.373
-R	shaman/enhancement	45	15477	12728	gear	9.373	agi:2:agi:1:2,armor:101:armor:0.073:7.373
-R	shaman/enhancement	45	15477	12729	gear	10.172999999999998	int:2:int:1.4:2.8,armor:101:armor:0.073:7.373
-R	shaman/enhancement	45	15477	12730	gear	9.373	spi:2:spi:1:2,armor:101:armor:0.073:7.373
-R	shaman/enhancement	45	15477	12731	gear	12.573	sta:2:sta:2.6:5.2,armor:101:armor:0.073:7.373
-R	shaman/enhancement	45	15477	12732	gear	9.373	str:2:str:1:2,armor:101:armor:0.073:7.373
-R	shaman/enhancement	45	15477	12733	gear	9.373	ap:4:ap:0.5:2,armor:101:armor:0.073:7.373
-R	shaman/enhancement	45	15477	12734	gear	9.173	sp:2:sp:0.9:1.8,armor:101:armor:0.073:7.373
-R	shaman/enhancement	45	15477	12735	gear	8.273	spDmg:1:sp:0.9:0.9,armor:101:armor:0.073:7.373
-R	shaman/enhancement	45	15477	12736	gear	7.372999999999999	armor:101:armor:0.073:7.373
-R	shaman/enhancement	45	15477	12740	gear	9.972999999999999	sta:1:sta:2.6:2.6,armor:101:armor:0.073:7.373
-R	shaman/enhancement	45	15477	12741	gear	9.972999999999999	sta:1:sta:2.6:2.6,armor:101:armor:0.073:7.373
-R	shaman/enhancement	45	15477	12742	gear	9.972999999999999	sta:1:sta:2.6:2.6,armor:101:armor:0.073:7.373
-R	shaman/enhancement	45	15477	12743	gear	9.972999999999999	sta:1:sta:2.6:2.6,armor:101:armor:0.073:7.373
-R	shaman/enhancement	45	15477	12744	gear	9.972999999999999	sta:1:sta:2.6:2.6,armor:101:armor:0.073:7.373
-R	shaman/enhancement	45	15477	12759	gear	7.372999999999999	armor:101:armor:0.073:7.373
-R	shaman/enhancement	45	15945	0	oh	7.2	sta:2:sta:2.6:5.2,spi:2:spi:1:2
-R	shaman/enhancement	45	16711	0	gear	56.035	agi:21:agi:1:21,sta:9:sta:2.6:23.4,hit:0.3:hit:4.2:1.26,hit:0.3:spellHit:6.6:1.98,armor:115:armor:0.073:8.395
-R	shaman/enhancement	45	18726	0	gear	44.329	sta:15:sta:2.6:39,armor:73:armor:0.073:5.329
-R	shaman/enhancement	45	20129	0	gear	39.061	agi:6:agi:1:6,str:6:str:1:6,sta:6:sta:2.6:15.6,armor:157:armor:0.073:11.461
+R	shaman/enhancement	45	11994	12738	gear	1.92	mp5:2:mp5:0.96:1.92
+R	shaman/enhancement	45	11994	12739	gear	1.96	agi:2:agi:0.98:1.96
+R	shaman/enhancement	45	11994	12740	gear	5.699999999999999	sta:3:sta:1.9:5.7
+R	shaman/enhancement	45	11994	12741	gear	5.699999999999999	sta:3:sta:1.9:5.7
+R	shaman/enhancement	45	11994	12742	gear	5.699999999999999	sta:3:sta:1.9:5.7
+R	shaman/enhancement	45	11994	12743	gear	5.699999999999999	sta:3:sta:1.9:5.7
+R	shaman/enhancement	45	11994	12744	gear	5.699999999999999	sta:3:sta:1.9:5.7
+R	shaman/enhancement	45	13183	0	mh	242.59599999999995	dps:39.47:dps:6.8:268.396,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	14122	0	gear	0.868	armor:14:armor:0.062:0.868
+R	shaman/enhancement	45	14122	12718	gear	8.268	int:2:int:1.8:3.6,sta:2:sta:1.9:3.8,armor:14:armor:0.062:0.868
+R	shaman/enhancement	45	14122	12719	gear	7.068	spi:2:spi:1.2:2.4,sta:2:sta:1.9:3.8,armor:14:armor:0.062:0.868
+R	shaman/enhancement	45	14122	12720	gear	6.868	int:2:int:1.8:3.6,spi:2:spi:1.2:2.4,armor:14:armor:0.062:0.868
+R	shaman/enhancement	45	14122	12729	gear	6.268000000000001	int:3:int:1.8:5.4,armor:14:armor:0.062:0.868
+R	shaman/enhancement	45	14122	12730	gear	4.468	spi:3:spi:1.2:3.6,armor:14:armor:0.062:0.868
+R	shaman/enhancement	45	14122	12731	gear	6.568	sta:3:sta:1.9:5.7,armor:14:armor:0.062:0.868
+R	shaman/enhancement	45	14122	12734	gear	4.668	sp:4:sp:0.95:3.8,armor:14:armor:0.062:0.868
+R	shaman/enhancement	45	14122	12735	gear	2.768	spDmg:2:sp:0.95:1.9,armor:14:armor:0.062:0.868
+R	shaman/enhancement	45	14122	12740	gear	4.668	sta:2:sta:1.9:3.8,armor:14:armor:0.062:0.868
+R	shaman/enhancement	45	14122	12741	gear	4.668	sta:2:sta:1.9:3.8,armor:14:armor:0.062:0.868
+R	shaman/enhancement	45	14122	12742	gear	4.668	sta:2:sta:1.9:3.8,armor:14:armor:0.062:0.868
+R	shaman/enhancement	45	14122	12743	gear	4.668	sta:2:sta:1.9:3.8,armor:14:armor:0.062:0.868
+R	shaman/enhancement	45	14122	12744	gear	4.668	sta:2:sta:1.9:3.8,armor:14:armor:0.062:0.868
+R	shaman/enhancement	45	14122	12745	gear	7.3180000000000005	int:2:int:1.8:3.6,sta:1:sta:1.9:1.9,sp:1:sp:0.95:0.95,armor:14:armor:0.062:0.868
+R	shaman/enhancement	45	14122	12756	gear	0.868	armor:14:armor:0.062:0.868
+R	shaman/enhancement	45	14122	12757	gear	0.868	armor:14:armor:0.062:0.868
+R	shaman/enhancement	45	14122	12758	gear	0.868	armor:14:armor:0.062:0.868
+R	shaman/enhancement	45	14122	12759	gear	0.868	armor:14:armor:0.062:0.868
+R	shaman/enhancement	45	14122	12761	gear	0.868	armor:14:armor:0.062:0.868
+R	shaman/enhancement	45	14340	0	gear	41.556	sta:19:sta:1.9:36.1,armor:88:armor:0.062:5.456
+R	shaman/enhancement	45	14673	0	gear	23.428	str:3:str:1:3,agi:9:agi:0.98:8.82,sta:5:sta:1.9:9.5,armor:34:armor:0.062:2.108
+R	shaman/enhancement	45	14964	0	oh	106.64	armor:1720:armor:0.062:106.64
+R	shaman/enhancement	45	14964	12718	oh	139.94	int:9:int:1.8:16.2,sta:9:sta:1.9:17.1,armor:1720:armor:0.062:106.64
+R	shaman/enhancement	45	14964	12719	oh	134.54	spi:9:spi:1.2:10.8,sta:9:sta:1.9:17.1,armor:1720:armor:0.062:106.64
+R	shaman/enhancement	45	14964	12720	oh	133.64	int:9:int:1.8:16.2,spi:9:spi:1.2:10.8,armor:1720:armor:0.062:106.64
+R	shaman/enhancement	45	14964	12721	oh	132.56	agi:9:agi:0.98:8.82,sta:9:sta:1.9:17.1,armor:1720:armor:0.062:106.64
+R	shaman/enhancement	45	14964	12722	oh	132.74	sta:9:sta:1.9:17.1,str:9:str:1:9,armor:1720:armor:0.062:106.64
+R	shaman/enhancement	45	14964	12723	oh	131.84	int:9:int:1.8:16.2,str:9:str:1:9,armor:1720:armor:0.062:106.64
+R	shaman/enhancement	45	14964	12724	oh	131.66	agi:9:agi:0.98:8.82,int:9:int:1.8:16.2,armor:1720:armor:0.062:106.64
+R	shaman/enhancement	45	14964	12725	oh	126.44	spi:9:spi:1.2:10.8,str:9:str:1:9,armor:1720:armor:0.062:106.64
+R	shaman/enhancement	45	14964	12726	oh	126.25999999999999	agi:9:agi:0.98:8.82,spi:9:spi:1.2:10.8,armor:1720:armor:0.062:106.64
+R	shaman/enhancement	45	14964	12727	oh	124.46000000000001	agi:9:agi:0.98:8.82,str:9:str:1:9,armor:1720:armor:0.062:106.64
+R	shaman/enhancement	45	14964	12728	oh	120.36	agi:14:agi:0.98:13.72,armor:1720:armor:0.062:106.64
+R	shaman/enhancement	45	14964	12729	oh	131.84	int:14:int:1.8:25.2,armor:1720:armor:0.062:106.64
+R	shaman/enhancement	45	14964	12730	oh	123.44	spi:14:spi:1.2:16.8,armor:1720:armor:0.062:106.64
+R	shaman/enhancement	45	14964	12731	oh	133.24	sta:14:sta:1.9:26.6,armor:1720:armor:0.062:106.64
+R	shaman/enhancement	45	14964	12732	oh	120.64	str:14:str:1:14,armor:1720:armor:0.062:106.64
+R	shaman/enhancement	45	14964	12733	oh	120.64	ap:28:ap:0.5:14,armor:1720:armor:0.062:106.64
+R	shaman/enhancement	45	14964	12734	oh	121.84	sp:16:sp:0.95:15.2,armor:1720:armor:0.062:106.64
+R	shaman/enhancement	45	14964	12735	oh	116.14	spDmg:10:sp:0.95:9.5,armor:1720:armor:0.062:106.64
+R	shaman/enhancement	45	14964	12736	oh	106.64	armor:1720:armor:0.062:106.64
+R	shaman/enhancement	45	14964	12740	oh	123.74	sta:9:sta:1.9:17.1,armor:1720:armor:0.062:106.64
+R	shaman/enhancement	45	14964	12741	oh	123.74	sta:9:sta:1.9:17.1,armor:1720:armor:0.062:106.64
+R	shaman/enhancement	45	14964	12742	oh	123.74	sta:9:sta:1.9:17.1,armor:1720:armor:0.062:106.64
+R	shaman/enhancement	45	14964	12743	oh	123.74	sta:9:sta:1.9:17.1,armor:1720:armor:0.062:106.64
+R	shaman/enhancement	45	14964	12744	oh	123.74	sta:9:sta:1.9:17.1,armor:1720:armor:0.062:106.64
+R	shaman/enhancement	45	14964	12745	oh	140.79	int:10:int:1.8:18,sta:6:sta:1.9:11.4,sp:5:sp:0.95:4.75,armor:1720:armor:0.062:106.64
+R	shaman/enhancement	45	14964	12746	oh	136.59	int:10:int:1.8:18,spi:6:spi:1.2:7.2,sp:5:sp:0.95:4.75,armor:1720:armor:0.062:106.64
+R	shaman/enhancement	45	14964	12747	oh	137.59	spi:6:spi:1.2:7.2,sta:10:sta:1.9:19,sp:5:sp:0.95:4.75,armor:1720:armor:0.062:106.64
+R	shaman/enhancement	45	14964	12748	oh	139.29	int:6:int:1.8:10.8,sta:10:sta:1.9:19,spDmg:3:sp:0.95:2.85,armor:1720:armor:0.062:106.64
+R	shaman/enhancement	45	14964	12749	oh	134.69	int:10:int:1.8:18,spi:6:spi:1.2:7.2,spDmg:3:sp:0.95:2.85,armor:1720:armor:0.062:106.64
+R	shaman/enhancement	45	14964	12750	oh	135.69	spi:6:spi:1.2:7.2,sta:10:sta:1.9:19,spDmg:3:sp:0.95:2.85,armor:1720:armor:0.062:106.64
+R	shaman/enhancement	45	14964	12753	oh	131.64	sta:10:sta:1.9:19,str:6:str:1:6,armor:1720:armor:0.062:106.64
+R	shaman/enhancement	45	14964	12754	oh	130.39	sp:5:sp:0.95:4.75,sta:10:sta:1.9:19,armor:1720:armor:0.062:106.64
+R	shaman/enhancement	45	14964	12759	oh	106.64	armor:1720:armor:0.062:106.64
+R	shaman/enhancement	45	14964	12760	oh	120.44	spNature:20:spNature:0.69:13.8,armor:1720:armor:0.062:106.64
+R	shaman/enhancement	45	15235	0	mh	168.476	dps:28.57:dps:6.8:194.276,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	15235	12718	mh	186.976	int:5:int:1.8:9,sta:5:sta:1.9:9.5,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	15235	12719	mh	183.976	spi:5:spi:1.2:6,sta:5:sta:1.9:9.5,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	15235	12720	mh	183.476	int:5:int:1.8:9,spi:5:spi:1.2:6,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	15235	12721	mh	182.876	agi:5:agi:0.98:4.9,sta:5:sta:1.9:9.5,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	15235	12722	mh	182.976	sta:5:sta:1.9:9.5,str:5:str:1:5,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	15235	12723	mh	182.476	int:5:int:1.8:9,str:5:str:1:5,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	15235	12724	mh	182.376	agi:5:agi:0.98:4.9,int:5:int:1.8:9,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	15235	12725	mh	179.476	spi:5:spi:1.2:6,str:5:str:1:5,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	15235	12726	mh	179.376	agi:5:agi:0.98:4.9,spi:5:spi:1.2:6,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	15235	12727	mh	178.376	agi:5:agi:0.98:4.9,str:5:str:1:5,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	15235	12728	mh	176.316	agi:8:agi:0.98:7.84,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	15235	12729	mh	182.876	int:8:int:1.8:14.4,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	15235	12730	mh	178.076	spi:8:spi:1.2:9.6,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	15235	12731	mh	183.676	sta:8:sta:1.9:15.2,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	15235	12732	mh	176.476	str:8:str:1:8,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	15235	12733	mh	176.476	ap:16:ap:0.5:8,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	15235	12736	mh	168.476	dps:28.57:dps:6.8:194.276,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	15235	12740	mh	177.976	sta:5:sta:1.9:9.5,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	15235	12741	mh	177.976	sta:5:sta:1.9:9.5,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	15235	12742	mh	177.976	sta:5:sta:1.9:9.5,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	15235	12743	mh	177.976	sta:5:sta:1.9:9.5,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	15235	12744	mh	177.976	sta:5:sta:1.9:9.5,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	15235	12751	mh	186.316	agi:3:agi:0.98:2.94,ap:7:ap:0.5:3.5,sta:6:sta:1.9:11.4,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	15235	12752	mh	185.816	agi:3:agi:0.98:2.94,sta:6:sta:1.9:11.4,str:3:str:1:3,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	15235	12753	mh	182.876	sta:6:sta:1.9:11.4,str:3:str:1:3,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	15235	12754	mh	182.726	sp:3:sp:0.95:2.85,sta:6:sta:1.9:11.4,dps:28.57:dps:6.8:194.276,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	15235	12759	mh	168.476	dps:28.57:dps:6.8:194.276,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	15235	12906	mh	158.23999999999998	int:6:int:1.8:10.8,sta:4:sta:1.9:7.6,sp:38:sp:0.95:36.1,dps:19.05:dps:6.8:129.54,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	15235	12908	mh	155.44	int:6:int:1.8:10.8,sp:38:sp:0.95:36.1,spi:4:spi:1.2:4.8,dps:19.05:dps:6.8:129.54,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	15235	12910	mh	156.03999999999996	sp:38:sp:0.95:36.1,spi:4:spi:1.2:4.8,sta:6:sta:1.9:11.4,dps:19.05:dps:6.8:129.54,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	15235	12912	mh	145.14	spDmg:24:sp:0.95:22.8,int:4:int:1.8:7.2,sta:6:sta:1.9:11.4,dps:19.05:dps:6.8:129.54,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	15235	12913	mh	142.14	int:6:int:1.8:10.8,spDmg:24:sp:0.95:22.8,spi:4:spi:1.2:4.8,dps:19.05:dps:6.8:129.54,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	15235	12916	mh	142.73999999999998	spDmg:24:sp:0.95:22.8,spi:4:spi:1.2:4.8,sta:6:sta:1.9:11.4,dps:19.05:dps:6.8:129.54,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	15235	12917	mh	154.23999999999998	sp:38:sp:0.95:36.1,int:8:int:1.8:14.4,dps:19.05:dps:6.8:129.54,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	15235	12920	mh	140.93999999999997	int:8:int:1.8:14.4,spDmg:24:sp:0.95:22.8,dps:19.05:dps:6.8:129.54,speed:-0.6:speed:43:-25.8
+R	shaman/enhancement	45	15477	0	gear	6.262	armor:101:armor:0.062:6.262
+R	shaman/enhancement	45	15477	12718	gear	9.962	int:1:int:1.8:1.8,sta:1:sta:1.9:1.9,armor:101:armor:0.062:6.262
+R	shaman/enhancement	45	15477	12719	gear	9.361999999999998	spi:1:spi:1.2:1.2,sta:1:sta:1.9:1.9,armor:101:armor:0.062:6.262
+R	shaman/enhancement	45	15477	12720	gear	9.262	int:1:int:1.8:1.8,spi:1:spi:1.2:1.2,armor:101:armor:0.062:6.262
+R	shaman/enhancement	45	15477	12721	gear	9.142	agi:1:agi:0.98:0.98,sta:1:sta:1.9:1.9,armor:101:armor:0.062:6.262
+R	shaman/enhancement	45	15477	12722	gear	9.161999999999999	sta:1:sta:1.9:1.9,str:1:str:1:1,armor:101:armor:0.062:6.262
+R	shaman/enhancement	45	15477	12723	gear	9.062	int:1:int:1.8:1.8,str:1:str:1:1,armor:101:armor:0.062:6.262
+R	shaman/enhancement	45	15477	12724	gear	9.042	agi:1:agi:0.98:0.98,int:1:int:1.8:1.8,armor:101:armor:0.062:6.262
+R	shaman/enhancement	45	15477	12725	gear	8.462	spi:1:spi:1.2:1.2,str:1:str:1:1,armor:101:armor:0.062:6.262
+R	shaman/enhancement	45	15477	12726	gear	8.442	agi:1:agi:0.98:0.98,spi:1:spi:1.2:1.2,armor:101:armor:0.062:6.262
+R	shaman/enhancement	45	15477	12727	gear	8.241999999999999	agi:1:agi:0.98:0.98,str:1:str:1:1,armor:101:armor:0.062:6.262
+R	shaman/enhancement	45	15477	12728	gear	8.222	agi:2:agi:0.98:1.96,armor:101:armor:0.062:6.262
+R	shaman/enhancement	45	15477	12729	gear	9.862	int:2:int:1.8:3.6,armor:101:armor:0.062:6.262
+R	shaman/enhancement	45	15477	12730	gear	8.661999999999999	spi:2:spi:1.2:2.4,armor:101:armor:0.062:6.262
+R	shaman/enhancement	45	15477	12731	gear	10.062	sta:2:sta:1.9:3.8,armor:101:armor:0.062:6.262
+R	shaman/enhancement	45	15477	12732	gear	8.262	str:2:str:1:2,armor:101:armor:0.062:6.262
+R	shaman/enhancement	45	15477	12733	gear	8.262	ap:4:ap:0.5:2,armor:101:armor:0.062:6.262
+R	shaman/enhancement	45	15477	12734	gear	8.161999999999999	sp:2:sp:0.95:1.9,armor:101:armor:0.062:6.262
+R	shaman/enhancement	45	15477	12735	gear	7.212	spDmg:1:sp:0.95:0.95,armor:101:armor:0.062:6.262
+R	shaman/enhancement	45	15477	12736	gear	6.262	armor:101:armor:0.062:6.262
+R	shaman/enhancement	45	15477	12740	gear	8.161999999999999	sta:1:sta:1.9:1.9,armor:101:armor:0.062:6.262
+R	shaman/enhancement	45	15477	12741	gear	8.161999999999999	sta:1:sta:1.9:1.9,armor:101:armor:0.062:6.262
+R	shaman/enhancement	45	15477	12742	gear	8.161999999999999	sta:1:sta:1.9:1.9,armor:101:armor:0.062:6.262
+R	shaman/enhancement	45	15477	12743	gear	8.161999999999999	sta:1:sta:1.9:1.9,armor:101:armor:0.062:6.262
+R	shaman/enhancement	45	15477	12744	gear	8.161999999999999	sta:1:sta:1.9:1.9,armor:101:armor:0.062:6.262
+R	shaman/enhancement	45	15477	12759	gear	6.262	armor:101:armor:0.062:6.262
+R	shaman/enhancement	45	15945	0	oh	6.199999999999999	sta:2:sta:1.9:3.8,spi:2:spi:1.2:2.4
+R	shaman/enhancement	45	16711	0	gear	48.10999999999999	agi:21:agi:0.98:20.58,sta:9:sta:1.9:17.1,hit:0.3:hit:4.3:1.29,hit:0.3:spellHit:6.7:2.01,armor:115:armor:0.062:7.13
+R	shaman/enhancement	45	18726	0	gear	33.025999999999996	sta:15:sta:1.9:28.5,armor:73:armor:0.062:4.526
+R	shaman/enhancement	45	20129	0	gear	33.013999999999996	agi:6:agi:0.98:5.88,str:6:str:1:6,sta:6:sta:1.9:11.4,armor:157:armor:0.062:9.734
 R	shaman/enhancement	45	22345	0	ranged	0.0	
-R	shaman/enhancement	45	22967	0	gear	93.689	sta:25:sta:2.6:65,armor:393:armor:0.073:28.689
-R	shaman/enhancement	45	250491	0	gear	35.331999999999994	int:5:int:1.4:7,sta:4:sta:2.6:10.4,spDmg:5:sp:0.9:4.5,armor:184:armor:0.073:13.432
-R	shaman/enhancement	45	252507	0	gear	36.948	sta:10:sta:2.6:26,spDmg:6:sp:0.9:5.4,armor:76:armor:0.073:5.548
-R	shaman/enhancement	45	254111	0	gear	50.342000000000006	int:9:int:1.4:12.6,sta:13:sta:2.6:33.8,armor:54:armor:0.073:3.942
-R	shaman/enhancement	45	270033	0	gear	9.847	agi:4:agi:1:4,str:3:str:1:3,armor:39:armor:0.073:2.847
-R	shaman/enhancement	45	271956	0	gear	90.57600000000001	agi:27:agi:1:27,sta:12:sta:2.6:31.2,crit:1:crit:7.7:7.7,crit:1:spellCrit:1.9:1.9,armor:312:armor:0.073:22.776
-R	shaman/enhancement	45	272958	0	gear	106.176	int:27:int:1.4:37.8,sta:12:sta:2.6:31.2,sp:16:sp:0.9:14.4,armor:312:armor:0.073:22.776
-R	shaman/enhancement	45	280082	0	mh	391.1	int:15:int:1.4:21,hit:1.5:hit:4.2:6.3,hit:1.5:spellHit:6.6:9.9,spi:21:spi:1:21,sp:66:sp:0.9:59.4,dps:36.25:dps:6.8:246.5,speed:0.6:speed:45:27
-R	shaman/enhancement	45	282560	0	gear	70.549	int:10:int:1.4:14,sta:13:sta:2.6:33.8,sp:8:sp:0.9:7.2,armor:213:armor:0.073:15.549
-R	shaman/enhancement	45	286609	0	oh	135.648	spi:6:spi:1:6,armor:1776:armor:0.073:129.648
-R	shaman/enhancement	55	1315	0	gear	46.4	sta:10:sta:3.2:32,spi:15:spi:0.96:14.4
-R	shaman/enhancement	55	1808	0	gear	8.14	armor:74:armor:0.11:8.14
+R	shaman/enhancement	45	22967	0	gear	71.866	sta:25:sta:1.9:47.5,armor:393:armor:0.062:24.366
+R	shaman/enhancement	45	250491	0	gear	32.758	int:5:int:1.8:9,sta:4:sta:1.9:7.6,spDmg:5:sp:0.95:4.75,armor:184:armor:0.062:11.408
+R	shaman/enhancement	45	252507	0	gear	29.412	sta:10:sta:1.9:19,spDmg:6:sp:0.95:5.7,armor:76:armor:0.062:4.712
+R	shaman/enhancement	45	254111	0	gear	44.248	int:9:int:1.8:16.2,sta:13:sta:1.9:24.7,armor:54:armor:0.062:3.348
+R	shaman/enhancement	45	270033	0	gear	9.338000000000001	agi:4:agi:0.98:3.92,str:3:str:1:3,armor:39:armor:0.062:2.418
+R	shaman/enhancement	45	271956	0	gear	78.904	agi:27:agi:0.98:26.46,sta:12:sta:1.9:22.8,crit:1:crit:8.2:8.2,crit:1:spellCrit:2.1:2.1,armor:312:armor:0.062:19.344
+R	shaman/enhancement	45	272958	0	gear	105.94400000000002	int:27:int:1.8:48.6,sta:12:sta:1.9:22.8,sp:16:sp:0.95:15.2,armor:312:armor:0.062:19.344
+R	shaman/enhancement	45	280082	0	mh	403.7	int:15:int:1.8:27,hit:1.5:hit:4.3:6.45,hit:1.5:spellHit:6.7:10.05,spi:21:spi:1.2:25.2,sp:66:sp:0.95:62.7,dps:36.25:dps:6.8:246.5,speed:0.6:speed:43:25.8
+R	shaman/enhancement	45	282560	0	gear	63.506	int:10:int:1.8:18,sta:13:sta:1.9:24.7,sp:8:sp:0.95:7.6,armor:213:armor:0.062:13.206
+R	shaman/enhancement	45	286609	0	oh	117.312	spi:6:spi:1.2:7.2,armor:1776:armor:0.062:110.112
+R	shaman/enhancement	55	1315	0	gear	40.0	sta:10:sta:2.5:25,spi:15:spi:1:15
+R	shaman/enhancement	55	1808	0	gear	6.364	armor:74:armor:0.086:6.364
 R	shaman/enhancement	55	1990	0	mh	175.59900000000002	dps:24.71:dps:6.9:170.499,speed:0.1:speed:51:5.1
-R	shaman/enhancement	55	1990	12718	mh	223.299	int:9:int:2.1:18.9,sta:9:sta:3.2:28.8,dps:24.71:dps:6.9:170.499,speed:0.1:speed:51:5.1
-R	shaman/enhancement	55	1990	12905	mh	205.422	int:11:int:2.1:23.1,sta:7:sta:3.2:22.4,sp:28:sp:1:28,dps:18.38:dps:6.9:126.822,speed:0.1:speed:51:5.1
+R	shaman/enhancement	55	1990	12718	mh	220.59900000000002	int:9:int:2.5:22.5,sta:9:sta:2.5:22.5,dps:24.71:dps:6.9:170.499,speed:0.1:speed:51:5.1
+R	shaman/enhancement	55	1990	12905	mh	204.922	int:11:int:2.5:27.5,sta:7:sta:2.5:17.5,sp:28:sp:1:28,dps:18.38:dps:6.9:126.822,speed:0.1:speed:51:5.1
 R	shaman/enhancement	55	2140	0	mh	10.386000000000006	dps:5.94:dps:6.9:40.986,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	2140	12718	mh	15.686000000000003	int:1:int:2.1:2.1,sta:1:sta:3.2:3.2,dps:5.94:dps:6.9:40.986,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	2140	12917	mh	2.3750000000000036	sp:5:sp:1:5,int:1:int:2.1:2.1,dps:3.75:dps:6.9:25.875,speed:-0.6:speed:51:-30.6
+R	shaman/enhancement	55	2140	12718	mh	15.386000000000006	int:1:int:2.5:2.5,sta:1:sta:2.5:2.5,dps:5.94:dps:6.9:40.986,speed:-0.6:speed:51:-30.6
+R	shaman/enhancement	55	2140	12917	mh	2.775000000000002	sp:5:sp:1:5,int:1:int:2.5:2.5,dps:3.75:dps:6.9:25.875,speed:-0.6:speed:51:-30.6
 R	shaman/enhancement	55	2225	0	mh	3.900000000000002	dps:5:dps:6.9:34.5,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	2614	0	gear	3.19	armor:29:armor:0.11:3.19
-R	shaman/enhancement	55	3158	0	gear	2.86	armor:26:armor:0.11:2.86
+R	shaman/enhancement	55	2614	0	gear	2.4939999999999998	armor:29:armor:0.086:2.494
+R	shaman/enhancement	55	3158	0	gear	2.2359999999999998	armor:26:armor:0.086:2.236
 R	shaman/enhancement	55	3570	0	mh	27.428	str:2:str:1:2,dps:8.12:dps:6.9:56.028,speed:-0.6:speed:51:-30.6
 R	shaman/enhancement	55	4023	0	mh	75.384	dps:15.36:dps:6.9:105.984,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	4068	0	oh	134.73000000000002	sta:9:sta:3.2:28.8,armor:963:armor:0.11:105.93
+R	shaman/enhancement	55	4068	0	oh	105.318	sta:9:sta:2.5:22.5,armor:963:armor:0.086:82.818
 R	shaman/enhancement	55	4570	0	mh	69.0	dps:10:dps:6.9:69
-R	shaman/enhancement	55	4570	12718	mh	84.9	int:3:int:2.1:6.3,sta:3:sta:3.2:9.6,dps:10:dps:6.9:69
-R	shaman/enhancement	55	4570	12719	mh	81.48	spi:3:spi:0.96:2.88,sta:3:sta:3.2:9.6,dps:10:dps:6.9:69
-R	shaman/enhancement	55	4570	12720	mh	78.18	int:3:int:2.1:6.3,spi:3:spi:0.96:2.88,dps:10:dps:6.9:69
-R	shaman/enhancement	55	4570	12721	mh	82.5	agi:3:agi:1.3:3.9,sta:3:sta:3.2:9.6,dps:10:dps:6.9:69
-R	shaman/enhancement	55	4570	12722	mh	81.6	sta:3:sta:3.2:9.6,str:3:str:1:3,dps:10:dps:6.9:69
-R	shaman/enhancement	55	4570	12723	mh	78.3	int:3:int:2.1:6.3,str:3:str:1:3,dps:10:dps:6.9:69
-R	shaman/enhancement	55	4570	12724	mh	79.2	agi:3:agi:1.3:3.9,int:3:int:2.1:6.3,dps:10:dps:6.9:69
-R	shaman/enhancement	55	4570	12725	mh	74.88	spi:3:spi:0.96:2.88,str:3:str:1:3,dps:10:dps:6.9:69
-R	shaman/enhancement	55	4570	12726	mh	75.78	agi:3:agi:1.3:3.9,spi:3:spi:0.96:2.88,dps:10:dps:6.9:69
-R	shaman/enhancement	55	4570	12727	mh	75.9	agi:3:agi:1.3:3.9,str:3:str:1:3,dps:10:dps:6.9:69
-R	shaman/enhancement	55	4570	12728	mh	74.2	agi:4:agi:1.3:5.2,dps:10:dps:6.9:69
-R	shaman/enhancement	55	4570	12729	mh	77.4	int:4:int:2.1:8.4,dps:10:dps:6.9:69
-R	shaman/enhancement	55	4570	12730	mh	72.84	spi:4:spi:0.96:3.84,dps:10:dps:6.9:69
-R	shaman/enhancement	55	4570	12731	mh	81.8	sta:4:sta:3.2:12.8,dps:10:dps:6.9:69
+R	shaman/enhancement	55	4570	12718	mh	84.0	int:3:int:2.5:7.5,sta:3:sta:2.5:7.5,dps:10:dps:6.9:69
+R	shaman/enhancement	55	4570	12719	mh	79.5	spi:3:spi:1:3,sta:3:sta:2.5:7.5,dps:10:dps:6.9:69
+R	shaman/enhancement	55	4570	12720	mh	79.5	int:3:int:2.5:7.5,spi:3:spi:1:3,dps:10:dps:6.9:69
+R	shaman/enhancement	55	4570	12721	mh	80.1	agi:3:agi:1.2:3.6,sta:3:sta:2.5:7.5,dps:10:dps:6.9:69
+R	shaman/enhancement	55	4570	12722	mh	79.5	sta:3:sta:2.5:7.5,str:3:str:1:3,dps:10:dps:6.9:69
+R	shaman/enhancement	55	4570	12723	mh	79.5	int:3:int:2.5:7.5,str:3:str:1:3,dps:10:dps:6.9:69
+R	shaman/enhancement	55	4570	12724	mh	80.1	agi:3:agi:1.2:3.6,int:3:int:2.5:7.5,dps:10:dps:6.9:69
+R	shaman/enhancement	55	4570	12725	mh	75.0	spi:3:spi:1:3,str:3:str:1:3,dps:10:dps:6.9:69
+R	shaman/enhancement	55	4570	12726	mh	75.6	agi:3:agi:1.2:3.6,spi:3:spi:1:3,dps:10:dps:6.9:69
+R	shaman/enhancement	55	4570	12727	mh	75.6	agi:3:agi:1.2:3.6,str:3:str:1:3,dps:10:dps:6.9:69
+R	shaman/enhancement	55	4570	12728	mh	73.8	agi:4:agi:1.2:4.8,dps:10:dps:6.9:69
+R	shaman/enhancement	55	4570	12729	mh	79.0	int:4:int:2.5:10,dps:10:dps:6.9:69
+R	shaman/enhancement	55	4570	12730	mh	73.0	spi:4:spi:1:4,dps:10:dps:6.9:69
+R	shaman/enhancement	55	4570	12731	mh	79.0	sta:4:sta:2.5:10,dps:10:dps:6.9:69
 R	shaman/enhancement	55	4570	12732	mh	73.0	str:4:str:1:4,dps:10:dps:6.9:69
 R	shaman/enhancement	55	4570	12733	mh	73.0	ap:8:ap:0.5:4,dps:10:dps:6.9:69
 R	shaman/enhancement	55	4570	12736	mh	69.0	dps:10:dps:6.9:69
-R	shaman/enhancement	55	4570	12740	mh	78.6	sta:3:sta:3.2:9.6,dps:10:dps:6.9:69
-R	shaman/enhancement	55	4570	12741	mh	78.6	sta:3:sta:3.2:9.6,dps:10:dps:6.9:69
-R	shaman/enhancement	55	4570	12742	mh	78.6	sta:3:sta:3.2:9.6,dps:10:dps:6.9:69
-R	shaman/enhancement	55	4570	12743	mh	78.6	sta:3:sta:3.2:9.6,dps:10:dps:6.9:69
-R	shaman/enhancement	55	4570	12744	mh	78.6	sta:3:sta:3.2:9.6,dps:10:dps:6.9:69
+R	shaman/enhancement	55	4570	12740	mh	76.5	sta:3:sta:2.5:7.5,dps:10:dps:6.9:69
+R	shaman/enhancement	55	4570	12741	mh	76.5	sta:3:sta:2.5:7.5,dps:10:dps:6.9:69
+R	shaman/enhancement	55	4570	12742	mh	76.5	sta:3:sta:2.5:7.5,dps:10:dps:6.9:69
+R	shaman/enhancement	55	4570	12743	mh	76.5	sta:3:sta:2.5:7.5,dps:10:dps:6.9:69
+R	shaman/enhancement	55	4570	12744	mh	76.5	sta:3:sta:2.5:7.5,dps:10:dps:6.9:69
 R	shaman/enhancement	55	4570	12759	mh	69.0	dps:10:dps:6.9:69
-R	shaman/enhancement	55	4570	12918	mh	68.702	sp:8:sp:1:8,int:4:int:2.1:8.4,dps:7.58:dps:6.9:52.302
-R	shaman/enhancement	55	4570	12919	mh	65.70200000000001	spDmg:5:sp:1:5,int:4:int:2.1:8.4,dps:7.58:dps:6.9:52.302
+R	shaman/enhancement	55	4570	12918	mh	70.302	sp:8:sp:1:8,int:4:int:2.5:10,dps:7.58:dps:6.9:52.302
+R	shaman/enhancement	55	4570	12919	mh	67.302	spDmg:5:sp:1:5,int:4:int:2.5:10,dps:7.58:dps:6.9:52.302
 R	shaman/enhancement	55	5079	0	gear	0.0	
-R	shaman/enhancement	55	6063	0	gear	6.05	armor:55:armor:0.11:6.05
-R	shaman/enhancement	55	6540	0	gear	3.08	armor:28:armor:0.11:3.08
-R	shaman/enhancement	55	6540	12718	gear	18.980000000000004	int:3:int:2.1:6.3,sta:3:sta:3.2:9.6,armor:28:armor:0.11:3.08
-R	shaman/enhancement	55	6540	12719	gear	15.56	spi:3:spi:0.96:2.88,sta:3:sta:3.2:9.6,armor:28:armor:0.11:3.08
-R	shaman/enhancement	55	6540	12720	gear	12.26	int:3:int:2.1:6.3,spi:3:spi:0.96:2.88,armor:28:armor:0.11:3.08
-R	shaman/enhancement	55	6540	12729	gear	13.58	int:5:int:2.1:10.5,armor:28:armor:0.11:3.08
-R	shaman/enhancement	55	6540	12730	gear	7.88	spi:5:spi:0.96:4.8,armor:28:armor:0.11:3.08
-R	shaman/enhancement	55	6540	12731	gear	19.08	sta:5:sta:3.2:16,armor:28:armor:0.11:3.08
-R	shaman/enhancement	55	6540	12734	gear	9.08	sp:6:sp:1:6,armor:28:armor:0.11:3.08
-R	shaman/enhancement	55	6540	12735	gear	7.08	spDmg:4:sp:1:4,armor:28:armor:0.11:3.08
-R	shaman/enhancement	55	6540	12740	gear	12.680000000000001	sta:3:sta:3.2:9.6,armor:28:armor:0.11:3.08
-R	shaman/enhancement	55	6540	12741	gear	12.680000000000001	sta:3:sta:3.2:9.6,armor:28:armor:0.11:3.08
-R	shaman/enhancement	55	6540	12742	gear	12.680000000000001	sta:3:sta:3.2:9.6,armor:28:armor:0.11:3.08
-R	shaman/enhancement	55	6540	12743	gear	12.680000000000001	sta:3:sta:3.2:9.6,armor:28:armor:0.11:3.08
-R	shaman/enhancement	55	6540	12744	gear	12.680000000000001	sta:3:sta:3.2:9.6,armor:28:armor:0.11:3.08
-R	shaman/enhancement	55	6540	12745	gear	19.880000000000003	int:4:int:2.1:8.4,sta:2:sta:3.2:6.4,sp:2:sp:1:2,armor:28:armor:0.11:3.08
-R	shaman/enhancement	55	6540	12756	gear	3.08	armor:28:armor:0.11:3.08
-R	shaman/enhancement	55	6540	12757	gear	3.08	armor:28:armor:0.11:3.08
-R	shaman/enhancement	55	6540	12758	gear	3.08	armor:28:armor:0.11:3.08
-R	shaman/enhancement	55	6540	12759	gear	3.08	armor:28:armor:0.11:3.08
-R	shaman/enhancement	55	6540	12761	gear	3.08	armor:28:armor:0.11:3.08
-R	shaman/enhancement	55	6557	0	gear	5.39	armor:49:armor:0.11:5.39
-R	shaman/enhancement	55	6557	12718	gear	15.990000000000002	int:2:int:2.1:4.2,sta:2:sta:3.2:6.4,armor:49:armor:0.11:5.39
-R	shaman/enhancement	55	6557	12719	gear	13.71	spi:2:spi:0.96:1.92,sta:2:sta:3.2:6.4,armor:49:armor:0.11:5.39
-R	shaman/enhancement	55	6557	12720	gear	11.51	int:2:int:2.1:4.2,spi:2:spi:0.96:1.92,armor:49:armor:0.11:5.39
-R	shaman/enhancement	55	6557	12721	gear	14.39	agi:2:agi:1.3:2.6,sta:2:sta:3.2:6.4,armor:49:armor:0.11:5.39
-R	shaman/enhancement	55	6557	12722	gear	13.79	sta:2:sta:3.2:6.4,str:2:str:1:2,armor:49:armor:0.11:5.39
-R	shaman/enhancement	55	6557	12723	gear	11.59	int:2:int:2.1:4.2,str:2:str:1:2,armor:49:armor:0.11:5.39
-R	shaman/enhancement	55	6557	12724	gear	12.190000000000001	agi:2:agi:1.3:2.6,int:2:int:2.1:4.2,armor:49:armor:0.11:5.39
-R	shaman/enhancement	55	6557	12725	gear	9.309999999999999	spi:2:spi:0.96:1.92,str:2:str:1:2,armor:49:armor:0.11:5.39
-R	shaman/enhancement	55	6557	12726	gear	9.91	agi:2:agi:1.3:2.6,spi:2:spi:0.96:1.92,armor:49:armor:0.11:5.39
-R	shaman/enhancement	55	6557	12727	gear	9.989999999999998	agi:2:agi:1.3:2.6,str:2:str:1:2,armor:49:armor:0.11:5.39
-R	shaman/enhancement	55	6557	12728	gear	9.29	agi:3:agi:1.3:3.9,armor:49:armor:0.11:5.39
-R	shaman/enhancement	55	6557	12729	gear	11.690000000000001	int:3:int:2.1:6.3,armor:49:armor:0.11:5.39
-R	shaman/enhancement	55	6557	12730	gear	8.27	spi:3:spi:0.96:2.88,armor:49:armor:0.11:5.39
-R	shaman/enhancement	55	6557	12731	gear	14.990000000000002	sta:3:sta:3.2:9.6,armor:49:armor:0.11:5.39
-R	shaman/enhancement	55	6557	12732	gear	8.39	str:3:str:1:3,armor:49:armor:0.11:5.39
-R	shaman/enhancement	55	6557	12733	gear	8.39	ap:6:ap:0.5:3,armor:49:armor:0.11:5.39
-R	shaman/enhancement	55	6557	12734	gear	9.39	sp:4:sp:1:4,armor:49:armor:0.11:5.39
-R	shaman/enhancement	55	6557	12735	gear	7.39	spDmg:2:sp:1:2,armor:49:armor:0.11:5.39
-R	shaman/enhancement	55	6557	12736	gear	5.39	armor:49:armor:0.11:5.39
-R	shaman/enhancement	55	6557	12740	gear	11.79	sta:2:sta:3.2:6.4,armor:49:armor:0.11:5.39
-R	shaman/enhancement	55	6557	12741	gear	11.79	sta:2:sta:3.2:6.4,armor:49:armor:0.11:5.39
-R	shaman/enhancement	55	6557	12742	gear	11.79	sta:2:sta:3.2:6.4,armor:49:armor:0.11:5.39
-R	shaman/enhancement	55	6557	12743	gear	11.79	sta:2:sta:3.2:6.4,armor:49:armor:0.11:5.39
-R	shaman/enhancement	55	6557	12744	gear	11.79	sta:2:sta:3.2:6.4,armor:49:armor:0.11:5.39
-R	shaman/enhancement	55	6557	12756	gear	5.39	armor:49:armor:0.11:5.39
-R	shaman/enhancement	55	6557	12760	gear	8.309999999999999	spNature:4:spNature:0.73:2.92,armor:49:armor:0.11:5.39
-R	shaman/enhancement	55	7047	0	gear	7.66	spi:5:spi:0.96:4.8,armor:26:armor:0.11:2.86
-R	shaman/enhancement	55	7538	0	gear	28.93	armor:263:armor:0.11:28.93
-R	shaman/enhancement	55	7538	12718	gear	97.83000000000001	int:13:int:2.1:27.3,sta:13:sta:3.2:41.6,armor:263:armor:0.11:28.93
-R	shaman/enhancement	55	7538	12719	gear	83.00999999999999	spi:13:spi:0.96:12.48,sta:13:sta:3.2:41.6,armor:263:armor:0.11:28.93
-R	shaman/enhancement	55	7538	12720	gear	68.71000000000001	int:13:int:2.1:27.3,spi:13:spi:0.96:12.48,armor:263:armor:0.11:28.93
-R	shaman/enhancement	55	7538	12721	gear	87.43	agi:13:agi:1.3:16.9,sta:13:sta:3.2:41.6,armor:263:armor:0.11:28.93
-R	shaman/enhancement	55	7538	12722	gear	83.53	sta:13:sta:3.2:41.6,str:13:str:1:13,armor:263:armor:0.11:28.93
-R	shaman/enhancement	55	7538	12723	gear	69.22999999999999	int:13:int:2.1:27.3,str:13:str:1:13,armor:263:armor:0.11:28.93
-R	shaman/enhancement	55	7538	12724	gear	73.13	agi:13:agi:1.3:16.9,int:13:int:2.1:27.3,armor:263:armor:0.11:28.93
-R	shaman/enhancement	55	7538	12725	gear	54.41	spi:13:spi:0.96:12.48,str:13:str:1:13,armor:263:armor:0.11:28.93
-R	shaman/enhancement	55	7538	12726	gear	58.31	agi:13:agi:1.3:16.9,spi:13:spi:0.96:12.48,armor:263:armor:0.11:28.93
-R	shaman/enhancement	55	7538	12727	gear	58.83	agi:13:agi:1.3:16.9,str:13:str:1:13,armor:263:armor:0.11:28.93
-R	shaman/enhancement	55	7538	12728	gear	54.93	agi:20:agi:1.3:26,armor:263:armor:0.11:28.93
-R	shaman/enhancement	55	7538	12729	gear	70.93	int:20:int:2.1:42,armor:263:armor:0.11:28.93
-R	shaman/enhancement	55	7538	12730	gear	48.129999999999995	spi:20:spi:0.96:19.2,armor:263:armor:0.11:28.93
-R	shaman/enhancement	55	7538	12731	gear	92.93	sta:20:sta:3.2:64,armor:263:armor:0.11:28.93
-R	shaman/enhancement	55	7538	12732	gear	48.93	str:20:str:1:20,armor:263:armor:0.11:28.93
-R	shaman/enhancement	55	7538	12733	gear	48.93	ap:40:ap:0.5:20,armor:263:armor:0.11:28.93
-R	shaman/enhancement	55	7538	12734	gear	51.93	sp:23:sp:1:23,armor:263:armor:0.11:28.93
-R	shaman/enhancement	55	7538	12735	gear	43.93	spDmg:15:sp:1:15,armor:263:armor:0.11:28.93
-R	shaman/enhancement	55	7538	12740	gear	70.53	sta:13:sta:3.2:41.6,armor:263:armor:0.11:28.93
-R	shaman/enhancement	55	7538	12741	gear	70.53	sta:13:sta:3.2:41.6,armor:263:armor:0.11:28.93
-R	shaman/enhancement	55	7538	12742	gear	70.53	sta:13:sta:3.2:41.6,armor:263:armor:0.11:28.93
-R	shaman/enhancement	55	7538	12743	gear	70.53	sta:13:sta:3.2:41.6,armor:263:armor:0.11:28.93
-R	shaman/enhancement	55	7538	12744	gear	70.53	sta:13:sta:3.2:41.6,armor:263:armor:0.11:28.93
-R	shaman/enhancement	55	7538	12745	gear	93.03	int:15:int:2.1:31.5,sta:8:sta:3.2:25.6,sp:7:sp:1:7,armor:263:armor:0.11:28.93
-R	shaman/enhancement	55	7538	12746	gear	75.11	int:15:int:2.1:31.5,spi:8:spi:0.96:7.68,sp:7:sp:1:7,armor:263:armor:0.11:28.93
-R	shaman/enhancement	55	7538	12747	gear	91.61	spi:8:spi:0.96:7.68,sta:15:sta:3.2:48,sp:7:sp:1:7,armor:263:armor:0.11:28.93
-R	shaman/enhancement	55	7538	12748	gear	98.72999999999999	int:8:int:2.1:16.8,sta:15:sta:3.2:48,spDmg:5:sp:1:5,armor:263:armor:0.11:28.93
-R	shaman/enhancement	55	7538	12749	gear	73.11	int:15:int:2.1:31.5,spi:8:spi:0.96:7.68,spDmg:5:sp:1:5,armor:263:armor:0.11:28.93
-R	shaman/enhancement	55	7538	12750	gear	89.61	spi:8:spi:0.96:7.68,sta:15:sta:3.2:48,spDmg:5:sp:1:5,armor:263:armor:0.11:28.93
-R	shaman/enhancement	55	7538	12751	gear	92.72999999999999	agi:6:agi:1.3:7.8,ap:16:ap:0.5:8,sta:15:sta:3.2:48,armor:263:armor:0.11:28.93
-R	shaman/enhancement	55	7538	12752	gear	93.33000000000001	agi:8:agi:1.3:10.4,sta:15:sta:3.2:48,str:6:str:1:6,armor:263:armor:0.11:28.93
-R	shaman/enhancement	55	7538	12755	gear	91.93	sp:7:sp:1:7,sta:15:sta:3.2:48,str:8:str:1:8,armor:263:armor:0.11:28.93
-R	shaman/enhancement	55	7538	12760	gear	50.099999999999994	spNature:29:spNature:0.73:21.17,armor:263:armor:0.11:28.93
-R	shaman/enhancement	55	8192	0	gear	39.760000000000005	agi:11:agi:1.3:14.3,sta:5:sta:3.2:16,armor:86:armor:0.11:9.46
-R	shaman/enhancement	55	9458	0	oh	88.24	spi:3:spi:0.96:2.88,armor:776:armor:0.11:85.36
-R	shaman/enhancement	55	9834	0	gear	8.03	armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	9834	12718	gear	39.830000000000005	int:6:int:2.1:12.6,sta:6:sta:3.2:19.2,armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	9834	12719	gear	32.99	spi:6:spi:0.96:5.76,sta:6:sta:3.2:19.2,armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	9834	12720	gear	26.39	int:6:int:2.1:12.6,spi:6:spi:0.96:5.76,armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	9834	12721	gear	35.03	agi:6:agi:1.3:7.8,sta:6:sta:3.2:19.2,armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	9834	12722	gear	33.230000000000004	sta:6:sta:3.2:19.2,str:6:str:1:6,armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	9834	12723	gear	26.630000000000003	int:6:int:2.1:12.6,str:6:str:1:6,armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	9834	12724	gear	28.43	agi:6:agi:1.3:7.8,int:6:int:2.1:12.6,armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	9834	12725	gear	19.79	spi:6:spi:0.96:5.76,str:6:str:1:6,armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	9834	12726	gear	21.59	agi:6:agi:1.3:7.8,spi:6:spi:0.96:5.76,armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	9834	12727	gear	21.83	agi:6:agi:1.3:7.8,str:6:str:1:6,armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	9834	12728	gear	19.73	agi:9:agi:1.3:11.7,armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	9834	12729	gear	26.93	int:9:int:2.1:18.9,armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	9834	12730	gear	16.67	spi:9:spi:0.96:8.64,armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	9834	12731	gear	36.83	sta:9:sta:3.2:28.8,armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	9834	12732	gear	17.03	str:9:str:1:9,armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	9834	12733	gear	17.03	ap:18:ap:0.5:9,armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	9834	12734	gear	19.03	sp:11:sp:1:11,armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	9834	12735	gear	15.03	spDmg:7:sp:1:7,armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	9834	12736	gear	8.03	armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	9834	12740	gear	27.230000000000004	sta:6:sta:3.2:19.2,armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	9834	12741	gear	27.230000000000004	sta:6:sta:3.2:19.2,armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	9834	12742	gear	27.230000000000004	sta:6:sta:3.2:19.2,armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	9834	12743	gear	27.230000000000004	sta:6:sta:3.2:19.2,armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	9834	12744	gear	27.230000000000004	sta:6:sta:3.2:19.2,armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	9834	12745	gear	38.53	int:7:int:2.1:14.7,sta:4:sta:3.2:12.8,sp:3:sp:1:3,armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	9834	12746	gear	29.57	int:7:int:2.1:14.7,spi:4:spi:0.96:3.84,sp:3:sp:1:3,armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	9834	12747	gear	37.27	spi:4:spi:0.96:3.84,sta:7:sta:3.2:22.4,sp:3:sp:1:3,armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	9834	12748	gear	40.830000000000005	int:4:int:2.1:8.4,sta:7:sta:3.2:22.4,spDmg:2:sp:1:2,armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	9834	12749	gear	28.57	int:7:int:2.1:14.7,spi:4:spi:0.96:3.84,spDmg:2:sp:1:2,armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	9834	12750	gear	36.27	spi:4:spi:0.96:3.84,sta:7:sta:3.2:22.4,spDmg:2:sp:1:2,armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	9834	12751	gear	37.830000000000005	agi:3:agi:1.3:3.9,ap:7:ap:0.5:3.5,sta:7:sta:3.2:22.4,armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	9834	12752	gear	38.63	agi:4:agi:1.3:5.2,sta:7:sta:3.2:22.4,str:3:str:1:3,armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	9834	12753	gear	34.43	sta:7:sta:3.2:22.4,str:4:str:1:4,armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	9834	12755	gear	37.43	sp:3:sp:1:3,sta:7:sta:3.2:22.4,str:4:str:1:4,armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	9834	12756	gear	8.03	armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	9834	12760	gear	17.52	spNature:13:spNature:0.73:9.49,armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	11187	0	gear	0.44	armor:4:armor:0.11:0.44
+R	shaman/enhancement	55	6063	0	gear	4.7299999999999995	armor:55:armor:0.086:4.73
+R	shaman/enhancement	55	6540	0	gear	2.408	armor:28:armor:0.086:2.408
+R	shaman/enhancement	55	6540	12718	gear	17.408	int:3:int:2.5:7.5,sta:3:sta:2.5:7.5,armor:28:armor:0.086:2.408
+R	shaman/enhancement	55	6540	12719	gear	12.908	spi:3:spi:1:3,sta:3:sta:2.5:7.5,armor:28:armor:0.086:2.408
+R	shaman/enhancement	55	6540	12720	gear	12.908	int:3:int:2.5:7.5,spi:3:spi:1:3,armor:28:armor:0.086:2.408
+R	shaman/enhancement	55	6540	12729	gear	14.908	int:5:int:2.5:12.5,armor:28:armor:0.086:2.408
+R	shaman/enhancement	55	6540	12730	gear	7.4079999999999995	spi:5:spi:1:5,armor:28:armor:0.086:2.408
+R	shaman/enhancement	55	6540	12731	gear	14.908	sta:5:sta:2.5:12.5,armor:28:armor:0.086:2.408
+R	shaman/enhancement	55	6540	12734	gear	8.408	sp:6:sp:1:6,armor:28:armor:0.086:2.408
+R	shaman/enhancement	55	6540	12735	gear	6.4079999999999995	spDmg:4:sp:1:4,armor:28:armor:0.086:2.408
+R	shaman/enhancement	55	6540	12740	gear	9.908	sta:3:sta:2.5:7.5,armor:28:armor:0.086:2.408
+R	shaman/enhancement	55	6540	12741	gear	9.908	sta:3:sta:2.5:7.5,armor:28:armor:0.086:2.408
+R	shaman/enhancement	55	6540	12742	gear	9.908	sta:3:sta:2.5:7.5,armor:28:armor:0.086:2.408
+R	shaman/enhancement	55	6540	12743	gear	9.908	sta:3:sta:2.5:7.5,armor:28:armor:0.086:2.408
+R	shaman/enhancement	55	6540	12744	gear	9.908	sta:3:sta:2.5:7.5,armor:28:armor:0.086:2.408
+R	shaman/enhancement	55	6540	12745	gear	19.408	int:4:int:2.5:10,sta:2:sta:2.5:5,sp:2:sp:1:2,armor:28:armor:0.086:2.408
+R	shaman/enhancement	55	6540	12756	gear	2.408	armor:28:armor:0.086:2.408
+R	shaman/enhancement	55	6540	12757	gear	2.408	armor:28:armor:0.086:2.408
+R	shaman/enhancement	55	6540	12758	gear	2.408	armor:28:armor:0.086:2.408
+R	shaman/enhancement	55	6540	12759	gear	2.408	armor:28:armor:0.086:2.408
+R	shaman/enhancement	55	6540	12761	gear	2.408	armor:28:armor:0.086:2.408
+R	shaman/enhancement	55	6557	0	gear	4.2139999999999995	armor:49:armor:0.086:4.214
+R	shaman/enhancement	55	6557	12718	gear	14.213999999999999	int:2:int:2.5:5,sta:2:sta:2.5:5,armor:49:armor:0.086:4.214
+R	shaman/enhancement	55	6557	12719	gear	11.213999999999999	spi:2:spi:1:2,sta:2:sta:2.5:5,armor:49:armor:0.086:4.214
+R	shaman/enhancement	55	6557	12720	gear	11.213999999999999	int:2:int:2.5:5,spi:2:spi:1:2,armor:49:armor:0.086:4.214
+R	shaman/enhancement	55	6557	12721	gear	11.614	agi:2:agi:1.2:2.4,sta:2:sta:2.5:5,armor:49:armor:0.086:4.214
+R	shaman/enhancement	55	6557	12722	gear	11.213999999999999	sta:2:sta:2.5:5,str:2:str:1:2,armor:49:armor:0.086:4.214
+R	shaman/enhancement	55	6557	12723	gear	11.213999999999999	int:2:int:2.5:5,str:2:str:1:2,armor:49:armor:0.086:4.214
+R	shaman/enhancement	55	6557	12724	gear	11.614	agi:2:agi:1.2:2.4,int:2:int:2.5:5,armor:49:armor:0.086:4.214
+R	shaman/enhancement	55	6557	12725	gear	8.213999999999999	spi:2:spi:1:2,str:2:str:1:2,armor:49:armor:0.086:4.214
+R	shaman/enhancement	55	6557	12726	gear	8.614	agi:2:agi:1.2:2.4,spi:2:spi:1:2,armor:49:armor:0.086:4.214
+R	shaman/enhancement	55	6557	12727	gear	8.614	agi:2:agi:1.2:2.4,str:2:str:1:2,armor:49:armor:0.086:4.214
+R	shaman/enhancement	55	6557	12728	gear	7.813999999999999	agi:3:agi:1.2:3.6,armor:49:armor:0.086:4.214
+R	shaman/enhancement	55	6557	12729	gear	11.713999999999999	int:3:int:2.5:7.5,armor:49:armor:0.086:4.214
+R	shaman/enhancement	55	6557	12730	gear	7.2139999999999995	spi:3:spi:1:3,armor:49:armor:0.086:4.214
+R	shaman/enhancement	55	6557	12731	gear	11.713999999999999	sta:3:sta:2.5:7.5,armor:49:armor:0.086:4.214
+R	shaman/enhancement	55	6557	12732	gear	7.2139999999999995	str:3:str:1:3,armor:49:armor:0.086:4.214
+R	shaman/enhancement	55	6557	12733	gear	7.2139999999999995	ap:6:ap:0.5:3,armor:49:armor:0.086:4.214
+R	shaman/enhancement	55	6557	12734	gear	8.213999999999999	sp:4:sp:1:4,armor:49:armor:0.086:4.214
+R	shaman/enhancement	55	6557	12735	gear	6.2139999999999995	spDmg:2:sp:1:2,armor:49:armor:0.086:4.214
+R	shaman/enhancement	55	6557	12736	gear	4.2139999999999995	armor:49:armor:0.086:4.214
+R	shaman/enhancement	55	6557	12740	gear	9.213999999999999	sta:2:sta:2.5:5,armor:49:armor:0.086:4.214
+R	shaman/enhancement	55	6557	12741	gear	9.213999999999999	sta:2:sta:2.5:5,armor:49:armor:0.086:4.214
+R	shaman/enhancement	55	6557	12742	gear	9.213999999999999	sta:2:sta:2.5:5,armor:49:armor:0.086:4.214
+R	shaman/enhancement	55	6557	12743	gear	9.213999999999999	sta:2:sta:2.5:5,armor:49:armor:0.086:4.214
+R	shaman/enhancement	55	6557	12744	gear	9.213999999999999	sta:2:sta:2.5:5,armor:49:armor:0.086:4.214
+R	shaman/enhancement	55	6557	12756	gear	4.2139999999999995	armor:49:armor:0.086:4.214
+R	shaman/enhancement	55	6557	12760	gear	7.1339999999999995	spNature:4:spNature:0.73:2.92,armor:49:armor:0.086:4.214
+R	shaman/enhancement	55	7047	0	gear	7.236	spi:5:spi:1:5,armor:26:armor:0.086:2.236
+R	shaman/enhancement	55	7538	0	gear	22.618	armor:263:armor:0.086:22.618
+R	shaman/enhancement	55	7538	12718	gear	87.618	int:13:int:2.5:32.5,sta:13:sta:2.5:32.5,armor:263:armor:0.086:22.618
+R	shaman/enhancement	55	7538	12719	gear	68.118	spi:13:spi:1:13,sta:13:sta:2.5:32.5,armor:263:armor:0.086:22.618
+R	shaman/enhancement	55	7538	12720	gear	68.118	int:13:int:2.5:32.5,spi:13:spi:1:13,armor:263:armor:0.086:22.618
+R	shaman/enhancement	55	7538	12721	gear	70.718	agi:13:agi:1.2:15.6,sta:13:sta:2.5:32.5,armor:263:armor:0.086:22.618
+R	shaman/enhancement	55	7538	12722	gear	68.118	sta:13:sta:2.5:32.5,str:13:str:1:13,armor:263:armor:0.086:22.618
+R	shaman/enhancement	55	7538	12723	gear	68.118	int:13:int:2.5:32.5,str:13:str:1:13,armor:263:armor:0.086:22.618
+R	shaman/enhancement	55	7538	12724	gear	70.718	agi:13:agi:1.2:15.6,int:13:int:2.5:32.5,armor:263:armor:0.086:22.618
+R	shaman/enhancement	55	7538	12725	gear	48.617999999999995	spi:13:spi:1:13,str:13:str:1:13,armor:263:armor:0.086:22.618
+R	shaman/enhancement	55	7538	12726	gear	51.218	agi:13:agi:1.2:15.6,spi:13:spi:1:13,armor:263:armor:0.086:22.618
+R	shaman/enhancement	55	7538	12727	gear	51.218	agi:13:agi:1.2:15.6,str:13:str:1:13,armor:263:armor:0.086:22.618
+R	shaman/enhancement	55	7538	12728	gear	46.617999999999995	agi:20:agi:1.2:24,armor:263:armor:0.086:22.618
+R	shaman/enhancement	55	7538	12729	gear	72.618	int:20:int:2.5:50,armor:263:armor:0.086:22.618
+R	shaman/enhancement	55	7538	12730	gear	42.617999999999995	spi:20:spi:1:20,armor:263:armor:0.086:22.618
+R	shaman/enhancement	55	7538	12731	gear	72.618	sta:20:sta:2.5:50,armor:263:armor:0.086:22.618
+R	shaman/enhancement	55	7538	12732	gear	42.617999999999995	str:20:str:1:20,armor:263:armor:0.086:22.618
+R	shaman/enhancement	55	7538	12733	gear	42.617999999999995	ap:40:ap:0.5:20,armor:263:armor:0.086:22.618
+R	shaman/enhancement	55	7538	12734	gear	45.617999999999995	sp:23:sp:1:23,armor:263:armor:0.086:22.618
+R	shaman/enhancement	55	7538	12735	gear	37.617999999999995	spDmg:15:sp:1:15,armor:263:armor:0.086:22.618
+R	shaman/enhancement	55	7538	12740	gear	55.117999999999995	sta:13:sta:2.5:32.5,armor:263:armor:0.086:22.618
+R	shaman/enhancement	55	7538	12741	gear	55.117999999999995	sta:13:sta:2.5:32.5,armor:263:armor:0.086:22.618
+R	shaman/enhancement	55	7538	12742	gear	55.117999999999995	sta:13:sta:2.5:32.5,armor:263:armor:0.086:22.618
+R	shaman/enhancement	55	7538	12743	gear	55.117999999999995	sta:13:sta:2.5:32.5,armor:263:armor:0.086:22.618
+R	shaman/enhancement	55	7538	12744	gear	55.117999999999995	sta:13:sta:2.5:32.5,armor:263:armor:0.086:22.618
+R	shaman/enhancement	55	7538	12745	gear	87.118	int:15:int:2.5:37.5,sta:8:sta:2.5:20,sp:7:sp:1:7,armor:263:armor:0.086:22.618
+R	shaman/enhancement	55	7538	12746	gear	75.118	int:15:int:2.5:37.5,spi:8:spi:1:8,sp:7:sp:1:7,armor:263:armor:0.086:22.618
+R	shaman/enhancement	55	7538	12747	gear	75.118	spi:8:spi:1:8,sta:15:sta:2.5:37.5,sp:7:sp:1:7,armor:263:armor:0.086:22.618
+R	shaman/enhancement	55	7538	12748	gear	85.118	int:8:int:2.5:20,sta:15:sta:2.5:37.5,spDmg:5:sp:1:5,armor:263:armor:0.086:22.618
+R	shaman/enhancement	55	7538	12749	gear	73.118	int:15:int:2.5:37.5,spi:8:spi:1:8,spDmg:5:sp:1:5,armor:263:armor:0.086:22.618
+R	shaman/enhancement	55	7538	12750	gear	73.118	spi:8:spi:1:8,sta:15:sta:2.5:37.5,spDmg:5:sp:1:5,armor:263:armor:0.086:22.618
+R	shaman/enhancement	55	7538	12751	gear	75.318	agi:6:agi:1.2:7.2,ap:16:ap:0.5:8,sta:15:sta:2.5:37.5,armor:263:armor:0.086:22.618
+R	shaman/enhancement	55	7538	12752	gear	75.718	agi:8:agi:1.2:9.6,sta:15:sta:2.5:37.5,str:6:str:1:6,armor:263:armor:0.086:22.618
+R	shaman/enhancement	55	7538	12755	gear	75.118	sp:7:sp:1:7,sta:15:sta:2.5:37.5,str:8:str:1:8,armor:263:armor:0.086:22.618
+R	shaman/enhancement	55	7538	12760	gear	43.788	spNature:29:spNature:0.73:21.17,armor:263:armor:0.086:22.618
+R	shaman/enhancement	55	8192	0	gear	33.096	agi:11:agi:1.2:13.2,sta:5:sta:2.5:12.5,armor:86:armor:0.086:7.396
+R	shaman/enhancement	55	9458	0	oh	69.73599999999999	spi:3:spi:1:3,armor:776:armor:0.086:66.736
+R	shaman/enhancement	55	9834	0	gear	6.278	armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	9834	12718	gear	36.278	int:6:int:2.5:15,sta:6:sta:2.5:15,armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	9834	12719	gear	27.278	spi:6:spi:1:6,sta:6:sta:2.5:15,armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	9834	12720	gear	27.278	int:6:int:2.5:15,spi:6:spi:1:6,armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	9834	12721	gear	28.477999999999998	agi:6:agi:1.2:7.2,sta:6:sta:2.5:15,armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	9834	12722	gear	27.278	sta:6:sta:2.5:15,str:6:str:1:6,armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	9834	12723	gear	27.278	int:6:int:2.5:15,str:6:str:1:6,armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	9834	12724	gear	28.477999999999998	agi:6:agi:1.2:7.2,int:6:int:2.5:15,armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	9834	12725	gear	18.278	spi:6:spi:1:6,str:6:str:1:6,armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	9834	12726	gear	19.477999999999998	agi:6:agi:1.2:7.2,spi:6:spi:1:6,armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	9834	12727	gear	19.477999999999998	agi:6:agi:1.2:7.2,str:6:str:1:6,armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	9834	12728	gear	17.078	agi:9:agi:1.2:10.8,armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	9834	12729	gear	28.778	int:9:int:2.5:22.5,armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	9834	12730	gear	15.277999999999999	spi:9:spi:1:9,armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	9834	12731	gear	28.778	sta:9:sta:2.5:22.5,armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	9834	12732	gear	15.277999999999999	str:9:str:1:9,armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	9834	12733	gear	15.277999999999999	ap:18:ap:0.5:9,armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	9834	12734	gear	17.278	sp:11:sp:1:11,armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	9834	12735	gear	13.277999999999999	spDmg:7:sp:1:7,armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	9834	12736	gear	6.278	armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	9834	12740	gear	21.278	sta:6:sta:2.5:15,armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	9834	12741	gear	21.278	sta:6:sta:2.5:15,armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	9834	12742	gear	21.278	sta:6:sta:2.5:15,armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	9834	12743	gear	21.278	sta:6:sta:2.5:15,armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	9834	12744	gear	21.278	sta:6:sta:2.5:15,armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	9834	12745	gear	36.778	int:7:int:2.5:17.5,sta:4:sta:2.5:10,sp:3:sp:1:3,armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	9834	12746	gear	30.778	int:7:int:2.5:17.5,spi:4:spi:1:4,sp:3:sp:1:3,armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	9834	12747	gear	30.778	spi:4:spi:1:4,sta:7:sta:2.5:17.5,sp:3:sp:1:3,armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	9834	12748	gear	35.778	int:4:int:2.5:10,sta:7:sta:2.5:17.5,spDmg:2:sp:1:2,armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	9834	12749	gear	29.778	int:7:int:2.5:17.5,spi:4:spi:1:4,spDmg:2:sp:1:2,armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	9834	12750	gear	29.778	spi:4:spi:1:4,sta:7:sta:2.5:17.5,spDmg:2:sp:1:2,armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	9834	12751	gear	30.878	agi:3:agi:1.2:3.6,ap:7:ap:0.5:3.5,sta:7:sta:2.5:17.5,armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	9834	12752	gear	31.578	agi:4:agi:1.2:4.8,sta:7:sta:2.5:17.5,str:3:str:1:3,armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	9834	12753	gear	27.778	sta:7:sta:2.5:17.5,str:4:str:1:4,armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	9834	12755	gear	30.778	sp:3:sp:1:3,sta:7:sta:2.5:17.5,str:4:str:1:4,armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	9834	12756	gear	6.278	armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	9834	12760	gear	15.768	spNature:13:spNature:0.73:9.49,armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	11187	0	gear	0.344	armor:4:armor:0.086:0.344
 R	shaman/enhancement	55	11994	0	gear	0.0	
-R	shaman/enhancement	55	11994	12718	gear	15.900000000000002	int:3:int:2.1:6.3,sta:3:sta:3.2:9.6
-R	shaman/enhancement	55	11994	12719	gear	12.48	spi:3:spi:0.96:2.88,sta:3:sta:3.2:9.6
-R	shaman/enhancement	55	11994	12720	gear	9.18	int:3:int:2.1:6.3,spi:3:spi:0.96:2.88
-R	shaman/enhancement	55	11994	12721	gear	13.500000000000002	agi:3:agi:1.3:3.9,sta:3:sta:3.2:9.6
-R	shaman/enhancement	55	11994	12722	gear	12.600000000000001	sta:3:sta:3.2:9.6,str:3:str:1:3
-R	shaman/enhancement	55	11994	12723	gear	9.3	int:3:int:2.1:6.3,str:3:str:1:3
-R	shaman/enhancement	55	11994	12724	gear	10.200000000000001	agi:3:agi:1.3:3.9,int:3:int:2.1:6.3
-R	shaman/enhancement	55	11994	12725	gear	5.88	spi:3:spi:0.96:2.88,str:3:str:1:3
-R	shaman/enhancement	55	11994	12726	gear	6.78	agi:3:agi:1.3:3.9,spi:3:spi:0.96:2.88
-R	shaman/enhancement	55	11994	12727	gear	6.9	agi:3:agi:1.3:3.9,str:3:str:1:3
-R	shaman/enhancement	55	11994	12728	gear	6.5	agi:5:agi:1.3:6.5
-R	shaman/enhancement	55	11994	12729	gear	10.5	int:5:int:2.1:10.5
-R	shaman/enhancement	55	11994	12730	gear	4.8	spi:5:spi:0.96:4.8
-R	shaman/enhancement	55	11994	12731	gear	16.0	sta:5:sta:3.2:16
+R	shaman/enhancement	55	11994	12718	gear	15.0	int:3:int:2.5:7.5,sta:3:sta:2.5:7.5
+R	shaman/enhancement	55	11994	12719	gear	10.5	spi:3:spi:1:3,sta:3:sta:2.5:7.5
+R	shaman/enhancement	55	11994	12720	gear	10.5	int:3:int:2.5:7.5,spi:3:spi:1:3
+R	shaman/enhancement	55	11994	12721	gear	11.1	agi:3:agi:1.2:3.6,sta:3:sta:2.5:7.5
+R	shaman/enhancement	55	11994	12722	gear	10.5	sta:3:sta:2.5:7.5,str:3:str:1:3
+R	shaman/enhancement	55	11994	12723	gear	10.5	int:3:int:2.5:7.5,str:3:str:1:3
+R	shaman/enhancement	55	11994	12724	gear	11.1	agi:3:agi:1.2:3.6,int:3:int:2.5:7.5
+R	shaman/enhancement	55	11994	12725	gear	6.0	spi:3:spi:1:3,str:3:str:1:3
+R	shaman/enhancement	55	11994	12726	gear	6.6	agi:3:agi:1.2:3.6,spi:3:spi:1:3
+R	shaman/enhancement	55	11994	12727	gear	6.6	agi:3:agi:1.2:3.6,str:3:str:1:3
+R	shaman/enhancement	55	11994	12728	gear	6.0	agi:5:agi:1.2:6
+R	shaman/enhancement	55	11994	12729	gear	12.5	int:5:int:2.5:12.5
+R	shaman/enhancement	55	11994	12730	gear	5.0	spi:5:spi:1:5
+R	shaman/enhancement	55	11994	12731	gear	12.5	sta:5:sta:2.5:12.5
 R	shaman/enhancement	55	11994	12732	gear	5.0	str:5:str:1:5
 R	shaman/enhancement	55	11994	12733	gear	5.0	ap:10:ap:0.5:5
 R	shaman/enhancement	55	11994	12737	gear	0.0	
-R	shaman/enhancement	55	11994	12738	gear	1.76	mp5:2:mp5:0.88:1.76
-R	shaman/enhancement	55	11994	12739	gear	2.6	agi:2:agi:1.3:2.6
-R	shaman/enhancement	55	11994	12740	gear	9.600000000000001	sta:3:sta:3.2:9.6
-R	shaman/enhancement	55	11994	12741	gear	9.600000000000001	sta:3:sta:3.2:9.6
-R	shaman/enhancement	55	11994	12742	gear	9.600000000000001	sta:3:sta:3.2:9.6
-R	shaman/enhancement	55	11994	12743	gear	9.600000000000001	sta:3:sta:3.2:9.6
-R	shaman/enhancement	55	11994	12744	gear	9.600000000000001	sta:3:sta:3.2:9.6
+R	shaman/enhancement	55	11994	12738	gear	2.0	mp5:2:mp5:1:2
+R	shaman/enhancement	55	11994	12739	gear	2.4	agi:2:agi:1.2:2.4
+R	shaman/enhancement	55	11994	12740	gear	7.5	sta:3:sta:2.5:7.5
+R	shaman/enhancement	55	11994	12741	gear	7.5	sta:3:sta:2.5:7.5
+R	shaman/enhancement	55	11994	12742	gear	7.5	sta:3:sta:2.5:7.5
+R	shaman/enhancement	55	11994	12743	gear	7.5	sta:3:sta:2.5:7.5
+R	shaman/enhancement	55	11994	12744	gear	7.5	sta:3:sta:2.5:7.5
 R	shaman/enhancement	55	13183	0	mh	241.74300000000002	dps:39.47:dps:6.9:272.343,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	14122	0	gear	1.54	armor:14:armor:0.11:1.54
-R	shaman/enhancement	55	14122	12718	gear	12.14	int:2:int:2.1:4.2,sta:2:sta:3.2:6.4,armor:14:armor:0.11:1.54
-R	shaman/enhancement	55	14122	12719	gear	9.86	spi:2:spi:0.96:1.92,sta:2:sta:3.2:6.4,armor:14:armor:0.11:1.54
-R	shaman/enhancement	55	14122	12720	gear	7.66	int:2:int:2.1:4.2,spi:2:spi:0.96:1.92,armor:14:armor:0.11:1.54
-R	shaman/enhancement	55	14122	12729	gear	7.840000000000001	int:3:int:2.1:6.3,armor:14:armor:0.11:1.54
-R	shaman/enhancement	55	14122	12730	gear	4.42	spi:3:spi:0.96:2.88,armor:14:armor:0.11:1.54
-R	shaman/enhancement	55	14122	12731	gear	11.14	sta:3:sta:3.2:9.6,armor:14:armor:0.11:1.54
-R	shaman/enhancement	55	14122	12734	gear	5.54	sp:4:sp:1:4,armor:14:armor:0.11:1.54
-R	shaman/enhancement	55	14122	12735	gear	3.54	spDmg:2:sp:1:2,armor:14:armor:0.11:1.54
-R	shaman/enhancement	55	14122	12740	gear	7.94	sta:2:sta:3.2:6.4,armor:14:armor:0.11:1.54
-R	shaman/enhancement	55	14122	12741	gear	7.94	sta:2:sta:3.2:6.4,armor:14:armor:0.11:1.54
-R	shaman/enhancement	55	14122	12742	gear	7.94	sta:2:sta:3.2:6.4,armor:14:armor:0.11:1.54
-R	shaman/enhancement	55	14122	12743	gear	7.94	sta:2:sta:3.2:6.4,armor:14:armor:0.11:1.54
-R	shaman/enhancement	55	14122	12744	gear	7.94	sta:2:sta:3.2:6.4,armor:14:armor:0.11:1.54
-R	shaman/enhancement	55	14122	12745	gear	9.940000000000001	int:2:int:2.1:4.2,sta:1:sta:3.2:3.2,sp:1:sp:1:1,armor:14:armor:0.11:1.54
-R	shaman/enhancement	55	14122	12756	gear	1.54	armor:14:armor:0.11:1.54
-R	shaman/enhancement	55	14122	12757	gear	1.54	armor:14:armor:0.11:1.54
-R	shaman/enhancement	55	14122	12758	gear	1.54	armor:14:armor:0.11:1.54
-R	shaman/enhancement	55	14122	12759	gear	1.54	armor:14:armor:0.11:1.54
-R	shaman/enhancement	55	14122	12761	gear	1.54	armor:14:armor:0.11:1.54
-R	shaman/enhancement	55	14340	0	gear	70.48	sta:19:sta:3.2:60.8,armor:88:armor:0.11:9.68
-R	shaman/enhancement	55	14673	0	gear	34.440000000000005	str:3:str:1:3,agi:9:agi:1.3:11.7,sta:5:sta:3.2:16,armor:34:armor:0.11:3.74
-R	shaman/enhancement	55	14964	0	oh	189.2	armor:1720:armor:0.11:189.2
-R	shaman/enhancement	55	14964	12718	oh	236.89999999999998	int:9:int:2.1:18.9,sta:9:sta:3.2:28.8,armor:1720:armor:0.11:189.2
-R	shaman/enhancement	55	14964	12719	oh	226.64	spi:9:spi:0.96:8.64,sta:9:sta:3.2:28.8,armor:1720:armor:0.11:189.2
-R	shaman/enhancement	55	14964	12720	oh	216.73999999999998	int:9:int:2.1:18.9,spi:9:spi:0.96:8.64,armor:1720:armor:0.11:189.2
-R	shaman/enhancement	55	14964	12721	oh	229.7	agi:9:agi:1.3:11.7,sta:9:sta:3.2:28.8,armor:1720:armor:0.11:189.2
-R	shaman/enhancement	55	14964	12722	oh	227.0	sta:9:sta:3.2:28.8,str:9:str:1:9,armor:1720:armor:0.11:189.2
-R	shaman/enhancement	55	14964	12723	oh	217.1	int:9:int:2.1:18.9,str:9:str:1:9,armor:1720:armor:0.11:189.2
-R	shaman/enhancement	55	14964	12724	oh	219.79999999999998	agi:9:agi:1.3:11.7,int:9:int:2.1:18.9,armor:1720:armor:0.11:189.2
-R	shaman/enhancement	55	14964	12725	oh	206.83999999999997	spi:9:spi:0.96:8.64,str:9:str:1:9,armor:1720:armor:0.11:189.2
-R	shaman/enhancement	55	14964	12726	oh	209.54	agi:9:agi:1.3:11.7,spi:9:spi:0.96:8.64,armor:1720:armor:0.11:189.2
-R	shaman/enhancement	55	14964	12727	oh	209.89999999999998	agi:9:agi:1.3:11.7,str:9:str:1:9,armor:1720:armor:0.11:189.2
-R	shaman/enhancement	55	14964	12728	oh	207.39999999999998	agi:14:agi:1.3:18.2,armor:1720:armor:0.11:189.2
-R	shaman/enhancement	55	14964	12729	oh	218.6	int:14:int:2.1:29.4,armor:1720:armor:0.11:189.2
-R	shaman/enhancement	55	14964	12730	oh	202.64	spi:14:spi:0.96:13.44,armor:1720:armor:0.11:189.2
-R	shaman/enhancement	55	14964	12731	oh	234.0	sta:14:sta:3.2:44.8,armor:1720:armor:0.11:189.2
-R	shaman/enhancement	55	14964	12732	oh	203.2	str:14:str:1:14,armor:1720:armor:0.11:189.2
-R	shaman/enhancement	55	14964	12733	oh	203.2	ap:28:ap:0.5:14,armor:1720:armor:0.11:189.2
-R	shaman/enhancement	55	14964	12734	oh	205.2	sp:16:sp:1:16,armor:1720:armor:0.11:189.2
-R	shaman/enhancement	55	14964	12735	oh	199.2	spDmg:10:sp:1:10,armor:1720:armor:0.11:189.2
-R	shaman/enhancement	55	14964	12736	oh	189.2	armor:1720:armor:0.11:189.2
-R	shaman/enhancement	55	14964	12740	oh	218.0	sta:9:sta:3.2:28.8,armor:1720:armor:0.11:189.2
-R	shaman/enhancement	55	14964	12741	oh	218.0	sta:9:sta:3.2:28.8,armor:1720:armor:0.11:189.2
-R	shaman/enhancement	55	14964	12742	oh	218.0	sta:9:sta:3.2:28.8,armor:1720:armor:0.11:189.2
-R	shaman/enhancement	55	14964	12743	oh	218.0	sta:9:sta:3.2:28.8,armor:1720:armor:0.11:189.2
-R	shaman/enhancement	55	14964	12744	oh	218.0	sta:9:sta:3.2:28.8,armor:1720:armor:0.11:189.2
-R	shaman/enhancement	55	14964	12745	oh	234.39999999999998	int:10:int:2.1:21,sta:6:sta:3.2:19.2,sp:5:sp:1:5,armor:1720:armor:0.11:189.2
-R	shaman/enhancement	55	14964	12746	oh	220.95999999999998	int:10:int:2.1:21,spi:6:spi:0.96:5.76,sp:5:sp:1:5,armor:1720:armor:0.11:189.2
-R	shaman/enhancement	55	14964	12747	oh	231.95999999999998	spi:6:spi:0.96:5.76,sta:10:sta:3.2:32,sp:5:sp:1:5,armor:1720:armor:0.11:189.2
-R	shaman/enhancement	55	14964	12748	oh	236.79999999999998	int:6:int:2.1:12.6,sta:10:sta:3.2:32,spDmg:3:sp:1:3,armor:1720:armor:0.11:189.2
-R	shaman/enhancement	55	14964	12749	oh	218.95999999999998	int:10:int:2.1:21,spi:6:spi:0.96:5.76,spDmg:3:sp:1:3,armor:1720:armor:0.11:189.2
-R	shaman/enhancement	55	14964	12750	oh	229.95999999999998	spi:6:spi:0.96:5.76,sta:10:sta:3.2:32,spDmg:3:sp:1:3,armor:1720:armor:0.11:189.2
-R	shaman/enhancement	55	14964	12753	oh	227.2	sta:10:sta:3.2:32,str:6:str:1:6,armor:1720:armor:0.11:189.2
-R	shaman/enhancement	55	14964	12754	oh	226.2	sp:5:sp:1:5,sta:10:sta:3.2:32,armor:1720:armor:0.11:189.2
-R	shaman/enhancement	55	14964	12759	oh	189.2	armor:1720:armor:0.11:189.2
-R	shaman/enhancement	55	14964	12760	oh	203.79999999999998	spNature:20:spNature:0.73:14.6,armor:1720:armor:0.11:189.2
+R	shaman/enhancement	55	14122	0	gear	1.204	armor:14:armor:0.086:1.204
+R	shaman/enhancement	55	14122	12718	gear	11.204	int:2:int:2.5:5,sta:2:sta:2.5:5,armor:14:armor:0.086:1.204
+R	shaman/enhancement	55	14122	12719	gear	8.204	spi:2:spi:1:2,sta:2:sta:2.5:5,armor:14:armor:0.086:1.204
+R	shaman/enhancement	55	14122	12720	gear	8.204	int:2:int:2.5:5,spi:2:spi:1:2,armor:14:armor:0.086:1.204
+R	shaman/enhancement	55	14122	12729	gear	8.704	int:3:int:2.5:7.5,armor:14:armor:0.086:1.204
+R	shaman/enhancement	55	14122	12730	gear	4.204	spi:3:spi:1:3,armor:14:armor:0.086:1.204
+R	shaman/enhancement	55	14122	12731	gear	8.704	sta:3:sta:2.5:7.5,armor:14:armor:0.086:1.204
+R	shaman/enhancement	55	14122	12734	gear	5.204	sp:4:sp:1:4,armor:14:armor:0.086:1.204
+R	shaman/enhancement	55	14122	12735	gear	3.2039999999999997	spDmg:2:sp:1:2,armor:14:armor:0.086:1.204
+R	shaman/enhancement	55	14122	12740	gear	6.204	sta:2:sta:2.5:5,armor:14:armor:0.086:1.204
+R	shaman/enhancement	55	14122	12741	gear	6.204	sta:2:sta:2.5:5,armor:14:armor:0.086:1.204
+R	shaman/enhancement	55	14122	12742	gear	6.204	sta:2:sta:2.5:5,armor:14:armor:0.086:1.204
+R	shaman/enhancement	55	14122	12743	gear	6.204	sta:2:sta:2.5:5,armor:14:armor:0.086:1.204
+R	shaman/enhancement	55	14122	12744	gear	6.204	sta:2:sta:2.5:5,armor:14:armor:0.086:1.204
+R	shaman/enhancement	55	14122	12745	gear	9.704	int:2:int:2.5:5,sta:1:sta:2.5:2.5,sp:1:sp:1:1,armor:14:armor:0.086:1.204
+R	shaman/enhancement	55	14122	12756	gear	1.204	armor:14:armor:0.086:1.204
+R	shaman/enhancement	55	14122	12757	gear	1.204	armor:14:armor:0.086:1.204
+R	shaman/enhancement	55	14122	12758	gear	1.204	armor:14:armor:0.086:1.204
+R	shaman/enhancement	55	14122	12759	gear	1.204	armor:14:armor:0.086:1.204
+R	shaman/enhancement	55	14122	12761	gear	1.204	armor:14:armor:0.086:1.204
+R	shaman/enhancement	55	14340	0	gear	55.068	sta:19:sta:2.5:47.5,armor:88:armor:0.086:7.568
+R	shaman/enhancement	55	14673	0	gear	29.223999999999997	str:3:str:1:3,agi:9:agi:1.2:10.8,sta:5:sta:2.5:12.5,armor:34:armor:0.086:2.924
+R	shaman/enhancement	55	14964	0	oh	147.92	armor:1720:armor:0.086:147.92
+R	shaman/enhancement	55	14964	12718	oh	192.92	int:9:int:2.5:22.5,sta:9:sta:2.5:22.5,armor:1720:armor:0.086:147.92
+R	shaman/enhancement	55	14964	12719	oh	179.42	spi:9:spi:1:9,sta:9:sta:2.5:22.5,armor:1720:armor:0.086:147.92
+R	shaman/enhancement	55	14964	12720	oh	179.42	int:9:int:2.5:22.5,spi:9:spi:1:9,armor:1720:armor:0.086:147.92
+R	shaman/enhancement	55	14964	12721	oh	181.21999999999997	agi:9:agi:1.2:10.8,sta:9:sta:2.5:22.5,armor:1720:armor:0.086:147.92
+R	shaman/enhancement	55	14964	12722	oh	179.42	sta:9:sta:2.5:22.5,str:9:str:1:9,armor:1720:armor:0.086:147.92
+R	shaman/enhancement	55	14964	12723	oh	179.42	int:9:int:2.5:22.5,str:9:str:1:9,armor:1720:armor:0.086:147.92
+R	shaman/enhancement	55	14964	12724	oh	181.21999999999997	agi:9:agi:1.2:10.8,int:9:int:2.5:22.5,armor:1720:armor:0.086:147.92
+R	shaman/enhancement	55	14964	12725	oh	165.92	spi:9:spi:1:9,str:9:str:1:9,armor:1720:armor:0.086:147.92
+R	shaman/enhancement	55	14964	12726	oh	167.71999999999997	agi:9:agi:1.2:10.8,spi:9:spi:1:9,armor:1720:armor:0.086:147.92
+R	shaman/enhancement	55	14964	12727	oh	167.71999999999997	agi:9:agi:1.2:10.8,str:9:str:1:9,armor:1720:armor:0.086:147.92
+R	shaman/enhancement	55	14964	12728	oh	164.72	agi:14:agi:1.2:16.8,armor:1720:armor:0.086:147.92
+R	shaman/enhancement	55	14964	12729	oh	182.92	int:14:int:2.5:35,armor:1720:armor:0.086:147.92
+R	shaman/enhancement	55	14964	12730	oh	161.92	spi:14:spi:1:14,armor:1720:armor:0.086:147.92
+R	shaman/enhancement	55	14964	12731	oh	182.92	sta:14:sta:2.5:35,armor:1720:armor:0.086:147.92
+R	shaman/enhancement	55	14964	12732	oh	161.92	str:14:str:1:14,armor:1720:armor:0.086:147.92
+R	shaman/enhancement	55	14964	12733	oh	161.92	ap:28:ap:0.5:14,armor:1720:armor:0.086:147.92
+R	shaman/enhancement	55	14964	12734	oh	163.92	sp:16:sp:1:16,armor:1720:armor:0.086:147.92
+R	shaman/enhancement	55	14964	12735	oh	157.92	spDmg:10:sp:1:10,armor:1720:armor:0.086:147.92
+R	shaman/enhancement	55	14964	12736	oh	147.92	armor:1720:armor:0.086:147.92
+R	shaman/enhancement	55	14964	12740	oh	170.42	sta:9:sta:2.5:22.5,armor:1720:armor:0.086:147.92
+R	shaman/enhancement	55	14964	12741	oh	170.42	sta:9:sta:2.5:22.5,armor:1720:armor:0.086:147.92
+R	shaman/enhancement	55	14964	12742	oh	170.42	sta:9:sta:2.5:22.5,armor:1720:armor:0.086:147.92
+R	shaman/enhancement	55	14964	12743	oh	170.42	sta:9:sta:2.5:22.5,armor:1720:armor:0.086:147.92
+R	shaman/enhancement	55	14964	12744	oh	170.42	sta:9:sta:2.5:22.5,armor:1720:armor:0.086:147.92
+R	shaman/enhancement	55	14964	12745	oh	192.92	int:10:int:2.5:25,sta:6:sta:2.5:15,sp:5:sp:1:5,armor:1720:armor:0.086:147.92
+R	shaman/enhancement	55	14964	12746	oh	183.92	int:10:int:2.5:25,spi:6:spi:1:6,sp:5:sp:1:5,armor:1720:armor:0.086:147.92
+R	shaman/enhancement	55	14964	12747	oh	183.92	spi:6:spi:1:6,sta:10:sta:2.5:25,sp:5:sp:1:5,armor:1720:armor:0.086:147.92
+R	shaman/enhancement	55	14964	12748	oh	190.92	int:6:int:2.5:15,sta:10:sta:2.5:25,spDmg:3:sp:1:3,armor:1720:armor:0.086:147.92
+R	shaman/enhancement	55	14964	12749	oh	181.92	int:10:int:2.5:25,spi:6:spi:1:6,spDmg:3:sp:1:3,armor:1720:armor:0.086:147.92
+R	shaman/enhancement	55	14964	12750	oh	181.92	spi:6:spi:1:6,sta:10:sta:2.5:25,spDmg:3:sp:1:3,armor:1720:armor:0.086:147.92
+R	shaman/enhancement	55	14964	12753	oh	178.92	sta:10:sta:2.5:25,str:6:str:1:6,armor:1720:armor:0.086:147.92
+R	shaman/enhancement	55	14964	12754	oh	177.92	sp:5:sp:1:5,sta:10:sta:2.5:25,armor:1720:armor:0.086:147.92
+R	shaman/enhancement	55	14964	12759	oh	147.92	armor:1720:armor:0.086:147.92
+R	shaman/enhancement	55	14964	12760	oh	162.51999999999998	spNature:20:spNature:0.73:14.6,armor:1720:armor:0.086:147.92
 R	shaman/enhancement	55	15235	0	mh	166.53300000000002	dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	15235	12718	mh	193.03300000000002	int:5:int:2.1:10.5,sta:5:sta:3.2:16,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	15235	12719	mh	187.33300000000003	spi:5:spi:0.96:4.8,sta:5:sta:3.2:16,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	15235	12720	mh	181.83300000000003	int:5:int:2.1:10.5,spi:5:spi:0.96:4.8,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	15235	12721	mh	189.03300000000002	agi:5:agi:1.3:6.5,sta:5:sta:3.2:16,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	15235	12722	mh	187.53300000000002	sta:5:sta:3.2:16,str:5:str:1:5,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	15235	12723	mh	182.03300000000002	int:5:int:2.1:10.5,str:5:str:1:5,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	15235	12724	mh	183.53300000000002	agi:5:agi:1.3:6.5,int:5:int:2.1:10.5,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	15235	12725	mh	176.33300000000003	spi:5:spi:0.96:4.8,str:5:str:1:5,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	15235	12726	mh	177.83300000000003	agi:5:agi:1.3:6.5,spi:5:spi:0.96:4.8,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	15235	12727	mh	178.03300000000002	agi:5:agi:1.3:6.5,str:5:str:1:5,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	15235	12728	mh	176.93300000000002	agi:8:agi:1.3:10.4,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	15235	12729	mh	183.33300000000003	int:8:int:2.1:16.8,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	15235	12730	mh	174.21300000000002	spi:8:spi:0.96:7.68,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	15235	12731	mh	192.133	sta:8:sta:3.2:25.6,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
+R	shaman/enhancement	55	15235	12718	mh	191.53300000000002	int:5:int:2.5:12.5,sta:5:sta:2.5:12.5,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
+R	shaman/enhancement	55	15235	12719	mh	184.03300000000002	spi:5:spi:1:5,sta:5:sta:2.5:12.5,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
+R	shaman/enhancement	55	15235	12720	mh	184.03300000000002	int:5:int:2.5:12.5,spi:5:spi:1:5,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
+R	shaman/enhancement	55	15235	12721	mh	185.03300000000002	agi:5:agi:1.2:6,sta:5:sta:2.5:12.5,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
+R	shaman/enhancement	55	15235	12722	mh	184.03300000000002	sta:5:sta:2.5:12.5,str:5:str:1:5,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
+R	shaman/enhancement	55	15235	12723	mh	184.03300000000002	int:5:int:2.5:12.5,str:5:str:1:5,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
+R	shaman/enhancement	55	15235	12724	mh	185.03300000000002	agi:5:agi:1.2:6,int:5:int:2.5:12.5,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
+R	shaman/enhancement	55	15235	12725	mh	176.53300000000002	spi:5:spi:1:5,str:5:str:1:5,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
+R	shaman/enhancement	55	15235	12726	mh	177.53300000000002	agi:5:agi:1.2:6,spi:5:spi:1:5,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
+R	shaman/enhancement	55	15235	12727	mh	177.53300000000002	agi:5:agi:1.2:6,str:5:str:1:5,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
+R	shaman/enhancement	55	15235	12728	mh	176.133	agi:8:agi:1.2:9.6,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
+R	shaman/enhancement	55	15235	12729	mh	186.53300000000002	int:8:int:2.5:20,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
+R	shaman/enhancement	55	15235	12730	mh	174.53300000000002	spi:8:spi:1:8,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
+R	shaman/enhancement	55	15235	12731	mh	186.53300000000002	sta:8:sta:2.5:20,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
 R	shaman/enhancement	55	15235	12732	mh	174.53300000000002	str:8:str:1:8,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
 R	shaman/enhancement	55	15235	12733	mh	174.53300000000002	ap:16:ap:0.5:8,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
 R	shaman/enhancement	55	15235	12736	mh	166.53300000000002	dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	15235	12740	mh	182.53300000000002	sta:5:sta:3.2:16,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	15235	12741	mh	182.53300000000002	sta:5:sta:3.2:16,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	15235	12742	mh	182.53300000000002	sta:5:sta:3.2:16,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	15235	12743	mh	182.53300000000002	sta:5:sta:3.2:16,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	15235	12744	mh	182.53300000000002	sta:5:sta:3.2:16,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	15235	12751	mh	193.133	agi:3:agi:1.3:3.9,ap:7:ap:0.5:3.5,sta:6:sta:3.2:19.2,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	15235	12752	mh	192.633	agi:3:agi:1.3:3.9,sta:6:sta:3.2:19.2,str:3:str:1:3,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	15235	12753	mh	188.73300000000003	sta:6:sta:3.2:19.2,str:3:str:1:3,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	15235	12754	mh	188.73300000000003	sp:3:sp:1:3,sta:6:sta:3.2:19.2,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
+R	shaman/enhancement	55	15235	12740	mh	179.03300000000002	sta:5:sta:2.5:12.5,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
+R	shaman/enhancement	55	15235	12741	mh	179.03300000000002	sta:5:sta:2.5:12.5,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
+R	shaman/enhancement	55	15235	12742	mh	179.03300000000002	sta:5:sta:2.5:12.5,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
+R	shaman/enhancement	55	15235	12743	mh	179.03300000000002	sta:5:sta:2.5:12.5,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
+R	shaman/enhancement	55	15235	12744	mh	179.03300000000002	sta:5:sta:2.5:12.5,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
+R	shaman/enhancement	55	15235	12751	mh	188.633	agi:3:agi:1.2:3.6,ap:7:ap:0.5:3.5,sta:6:sta:2.5:15,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
+R	shaman/enhancement	55	15235	12752	mh	188.133	agi:3:agi:1.2:3.6,sta:6:sta:2.5:15,str:3:str:1:3,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
+R	shaman/enhancement	55	15235	12753	mh	184.53300000000002	sta:6:sta:2.5:15,str:3:str:1:3,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
+R	shaman/enhancement	55	15235	12754	mh	184.53300000000002	sp:3:sp:1:3,sta:6:sta:2.5:15,dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
 R	shaman/enhancement	55	15235	12759	mh	166.53300000000002	dps:28.57:dps:6.9:197.133,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	15235	12906	mh	164.24500000000003	int:6:int:2.1:12.6,sta:4:sta:3.2:12.8,sp:38:sp:1:38,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	15235	12908	mh	155.28500000000003	int:6:int:2.1:12.6,sp:38:sp:1:38,spi:4:spi:0.96:3.84,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	15235	12910	mh	161.88500000000002	sp:38:sp:1:38,spi:4:spi:0.96:3.84,sta:6:sta:3.2:19.2,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	15235	12912	mh	152.44500000000002	spDmg:24:sp:1:24,int:4:int:2.1:8.4,sta:6:sta:3.2:19.2,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	15235	12913	mh	141.28500000000003	int:6:int:2.1:12.6,spDmg:24:sp:1:24,spi:4:spi:0.96:3.84,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	15235	12916	mh	147.88500000000002	spDmg:24:sp:1:24,spi:4:spi:0.96:3.84,sta:6:sta:3.2:19.2,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	15235	12917	mh	155.645	sp:38:sp:1:38,int:8:int:2.1:16.8,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	15235	12920	mh	141.645	int:8:int:2.1:16.8,spDmg:24:sp:1:24,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:51:-30.6
-R	shaman/enhancement	55	15477	0	gear	11.11	armor:101:armor:0.11:11.11
-R	shaman/enhancement	55	15477	12718	gear	16.41	int:1:int:2.1:2.1,sta:1:sta:3.2:3.2,armor:101:armor:0.11:11.11
-R	shaman/enhancement	55	15477	12719	gear	15.27	spi:1:spi:0.96:0.96,sta:1:sta:3.2:3.2,armor:101:armor:0.11:11.11
-R	shaman/enhancement	55	15477	12720	gear	14.17	int:1:int:2.1:2.1,spi:1:spi:0.96:0.96,armor:101:armor:0.11:11.11
-R	shaman/enhancement	55	15477	12721	gear	15.61	agi:1:agi:1.3:1.3,sta:1:sta:3.2:3.2,armor:101:armor:0.11:11.11
-R	shaman/enhancement	55	15477	12722	gear	15.309999999999999	sta:1:sta:3.2:3.2,str:1:str:1:1,armor:101:armor:0.11:11.11
-R	shaman/enhancement	55	15477	12723	gear	14.209999999999999	int:1:int:2.1:2.1,str:1:str:1:1,armor:101:armor:0.11:11.11
-R	shaman/enhancement	55	15477	12724	gear	14.51	agi:1:agi:1.3:1.3,int:1:int:2.1:2.1,armor:101:armor:0.11:11.11
-R	shaman/enhancement	55	15477	12725	gear	13.07	spi:1:spi:0.96:0.96,str:1:str:1:1,armor:101:armor:0.11:11.11
-R	shaman/enhancement	55	15477	12726	gear	13.37	agi:1:agi:1.3:1.3,spi:1:spi:0.96:0.96,armor:101:armor:0.11:11.11
-R	shaman/enhancement	55	15477	12727	gear	13.41	agi:1:agi:1.3:1.3,str:1:str:1:1,armor:101:armor:0.11:11.11
-R	shaman/enhancement	55	15477	12728	gear	13.709999999999999	agi:2:agi:1.3:2.6,armor:101:armor:0.11:11.11
-R	shaman/enhancement	55	15477	12729	gear	15.309999999999999	int:2:int:2.1:4.2,armor:101:armor:0.11:11.11
-R	shaman/enhancement	55	15477	12730	gear	13.03	spi:2:spi:0.96:1.92,armor:101:armor:0.11:11.11
-R	shaman/enhancement	55	15477	12731	gear	17.509999999999998	sta:2:sta:3.2:6.4,armor:101:armor:0.11:11.11
-R	shaman/enhancement	55	15477	12732	gear	13.11	str:2:str:1:2,armor:101:armor:0.11:11.11
-R	shaman/enhancement	55	15477	12733	gear	13.11	ap:4:ap:0.5:2,armor:101:armor:0.11:11.11
-R	shaman/enhancement	55	15477	12734	gear	13.11	sp:2:sp:1:2,armor:101:armor:0.11:11.11
-R	shaman/enhancement	55	15477	12735	gear	12.11	spDmg:1:sp:1:1,armor:101:armor:0.11:11.11
-R	shaman/enhancement	55	15477	12736	gear	11.11	armor:101:armor:0.11:11.11
-R	shaman/enhancement	55	15477	12740	gear	14.309999999999999	sta:1:sta:3.2:3.2,armor:101:armor:0.11:11.11
-R	shaman/enhancement	55	15477	12741	gear	14.309999999999999	sta:1:sta:3.2:3.2,armor:101:armor:0.11:11.11
-R	shaman/enhancement	55	15477	12742	gear	14.309999999999999	sta:1:sta:3.2:3.2,armor:101:armor:0.11:11.11
-R	shaman/enhancement	55	15477	12743	gear	14.309999999999999	sta:1:sta:3.2:3.2,armor:101:armor:0.11:11.11
-R	shaman/enhancement	55	15477	12744	gear	14.309999999999999	sta:1:sta:3.2:3.2,armor:101:armor:0.11:11.11
-R	shaman/enhancement	55	15477	12759	gear	11.11	armor:101:armor:0.11:11.11
-R	shaman/enhancement	55	15945	0	oh	8.32	sta:2:sta:3.2:6.4,spi:2:spi:0.96:1.92
-R	shaman/enhancement	55	16711	0	gear	73.82000000000001	agi:21:agi:1.3:27.3,sta:9:sta:3.2:28.8,hit:0.3:hit:5.9:1.77,hit:0.3:spellHit:11:3.3,armor:115:armor:0.11:12.65
-R	shaman/enhancement	55	18726	0	gear	56.03	sta:15:sta:3.2:48,armor:73:armor:0.11:8.03
-R	shaman/enhancement	55	20129	0	gear	50.269999999999996	agi:6:agi:1.3:7.8,str:6:str:1:6,sta:6:sta:3.2:19.2,armor:157:armor:0.11:17.27
+R	shaman/enhancement	55	15235	12906	mh	163.84500000000003	int:6:int:2.5:15,sta:4:sta:2.5:10,sp:38:sp:1:38,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:51:-30.6
+R	shaman/enhancement	55	15235	12908	mh	157.84500000000003	int:6:int:2.5:15,sp:38:sp:1:38,spi:4:spi:1:4,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:51:-30.6
+R	shaman/enhancement	55	15235	12910	mh	157.84500000000003	sp:38:sp:1:38,spi:4:spi:1:4,sta:6:sta:2.5:15,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:51:-30.6
+R	shaman/enhancement	55	15235	12912	mh	149.84500000000003	spDmg:24:sp:1:24,int:4:int:2.5:10,sta:6:sta:2.5:15,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:51:-30.6
+R	shaman/enhancement	55	15235	12913	mh	143.84500000000003	int:6:int:2.5:15,spDmg:24:sp:1:24,spi:4:spi:1:4,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:51:-30.6
+R	shaman/enhancement	55	15235	12916	mh	143.84500000000003	spDmg:24:sp:1:24,spi:4:spi:1:4,sta:6:sta:2.5:15,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:51:-30.6
+R	shaman/enhancement	55	15235	12917	mh	158.84500000000003	sp:38:sp:1:38,int:8:int:2.5:20,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:51:-30.6
+R	shaman/enhancement	55	15235	12920	mh	144.84500000000003	int:8:int:2.5:20,spDmg:24:sp:1:24,dps:19.05:dps:6.9:131.445,speed:-0.6:speed:51:-30.6
+R	shaman/enhancement	55	15477	0	gear	8.686	armor:101:armor:0.086:8.686
+R	shaman/enhancement	55	15477	12718	gear	13.686	int:1:int:2.5:2.5,sta:1:sta:2.5:2.5,armor:101:armor:0.086:8.686
+R	shaman/enhancement	55	15477	12719	gear	12.186	spi:1:spi:1:1,sta:1:sta:2.5:2.5,armor:101:armor:0.086:8.686
+R	shaman/enhancement	55	15477	12720	gear	12.186	int:1:int:2.5:2.5,spi:1:spi:1:1,armor:101:armor:0.086:8.686
+R	shaman/enhancement	55	15477	12721	gear	12.386	agi:1:agi:1.2:1.2,sta:1:sta:2.5:2.5,armor:101:armor:0.086:8.686
+R	shaman/enhancement	55	15477	12722	gear	12.186	sta:1:sta:2.5:2.5,str:1:str:1:1,armor:101:armor:0.086:8.686
+R	shaman/enhancement	55	15477	12723	gear	12.186	int:1:int:2.5:2.5,str:1:str:1:1,armor:101:armor:0.086:8.686
+R	shaman/enhancement	55	15477	12724	gear	12.386	agi:1:agi:1.2:1.2,int:1:int:2.5:2.5,armor:101:armor:0.086:8.686
+R	shaman/enhancement	55	15477	12725	gear	10.686	spi:1:spi:1:1,str:1:str:1:1,armor:101:armor:0.086:8.686
+R	shaman/enhancement	55	15477	12726	gear	10.886	agi:1:agi:1.2:1.2,spi:1:spi:1:1,armor:101:armor:0.086:8.686
+R	shaman/enhancement	55	15477	12727	gear	10.886	agi:1:agi:1.2:1.2,str:1:str:1:1,armor:101:armor:0.086:8.686
+R	shaman/enhancement	55	15477	12728	gear	11.086	agi:2:agi:1.2:2.4,armor:101:armor:0.086:8.686
+R	shaman/enhancement	55	15477	12729	gear	13.686	int:2:int:2.5:5,armor:101:armor:0.086:8.686
+R	shaman/enhancement	55	15477	12730	gear	10.686	spi:2:spi:1:2,armor:101:armor:0.086:8.686
+R	shaman/enhancement	55	15477	12731	gear	13.686	sta:2:sta:2.5:5,armor:101:armor:0.086:8.686
+R	shaman/enhancement	55	15477	12732	gear	10.686	str:2:str:1:2,armor:101:armor:0.086:8.686
+R	shaman/enhancement	55	15477	12733	gear	10.686	ap:4:ap:0.5:2,armor:101:armor:0.086:8.686
+R	shaman/enhancement	55	15477	12734	gear	10.686	sp:2:sp:1:2,armor:101:armor:0.086:8.686
+R	shaman/enhancement	55	15477	12735	gear	9.686	spDmg:1:sp:1:1,armor:101:armor:0.086:8.686
+R	shaman/enhancement	55	15477	12736	gear	8.686	armor:101:armor:0.086:8.686
+R	shaman/enhancement	55	15477	12740	gear	11.186	sta:1:sta:2.5:2.5,armor:101:armor:0.086:8.686
+R	shaman/enhancement	55	15477	12741	gear	11.186	sta:1:sta:2.5:2.5,armor:101:armor:0.086:8.686
+R	shaman/enhancement	55	15477	12742	gear	11.186	sta:1:sta:2.5:2.5,armor:101:armor:0.086:8.686
+R	shaman/enhancement	55	15477	12743	gear	11.186	sta:1:sta:2.5:2.5,armor:101:armor:0.086:8.686
+R	shaman/enhancement	55	15477	12744	gear	11.186	sta:1:sta:2.5:2.5,armor:101:armor:0.086:8.686
+R	shaman/enhancement	55	15477	12759	gear	8.686	armor:101:armor:0.086:8.686
+R	shaman/enhancement	55	15945	0	oh	7.0	sta:2:sta:2.5:5,spi:2:spi:1:2
+R	shaman/enhancement	55	16711	0	gear	62.330000000000005	agi:21:agi:1.2:25.2,sta:9:sta:2.5:22.5,hit:0.3:hit:5.8:1.74,hit:0.3:spellHit:10:3,armor:115:armor:0.086:9.89
+R	shaman/enhancement	55	18726	0	gear	43.778	sta:15:sta:2.5:37.5,armor:73:armor:0.086:6.278
+R	shaman/enhancement	55	20129	0	gear	41.702	agi:6:agi:1.2:7.2,str:6:str:1:6,sta:6:sta:2.5:15,armor:157:armor:0.086:13.502
 R	shaman/enhancement	55	22345	0	ranged	0.0	
-R	shaman/enhancement	55	22967	0	gear	123.22999999999999	sta:25:sta:3.2:80,armor:393:armor:0.11:43.23
-R	shaman/enhancement	55	250491	0	gear	48.54	int:5:int:2.1:10.5,sta:4:sta:3.2:12.8,spDmg:5:sp:1:5,armor:184:armor:0.11:20.24
-R	shaman/enhancement	55	252507	0	gear	46.36	sta:10:sta:3.2:32,spDmg:6:sp:1:6,armor:76:armor:0.11:8.36
-R	shaman/enhancement	55	254111	0	gear	66.44	int:9:int:2.1:18.9,sta:13:sta:3.2:41.6,armor:54:armor:0.11:5.94
-R	shaman/enhancement	55	270033	0	gear	12.489999999999998	agi:4:agi:1.3:5.2,str:3:str:1:3,armor:39:armor:0.11:4.29
-R	shaman/enhancement	55	271956	0	gear	123.02000000000001	agi:27:agi:1.3:35.1,sta:12:sta:3.2:38.4,crit:1:crit:11:11,crit:1:spellCrit:4.2:4.2,armor:312:armor:0.11:34.32
-R	shaman/enhancement	55	272958	0	gear	145.42000000000002	int:27:int:2.1:56.7,sta:12:sta:3.2:38.4,sp:16:sp:1:16,armor:312:armor:0.11:34.32
-R	shaman/enhancement	55	280082	0	mh	408.435	int:15:int:2.1:31.5,hit:1.5:hit:5.9:8.85,hit:1.5:spellHit:11:16.5,spi:21:spi:0.96:20.16,sp:66:sp:1:66,dps:36.25:dps:6.9:250.125,speed:0.3:speed:51:15.3
-R	shaman/enhancement	55	282560	0	gear	94.03	int:10:int:2.1:21,sta:13:sta:3.2:41.6,sp:8:sp:1:8,armor:213:armor:0.11:23.43
-R	shaman/enhancement	55	286609	0	oh	201.12	spi:6:spi:0.96:5.76,armor:1776:armor:0.11:195.36
-R	shaman/enhancement	60	1315	0	gear	50.5	sta:10:sta:3.4:34,spi:15:spi:1.1:16.5
-R	shaman/enhancement	60	1808	0	gear	8.879999999999999	armor:74:armor:0.12:8.88
+R	shaman/enhancement	55	22967	0	gear	96.298	sta:25:sta:2.5:62.5,armor:393:armor:0.086:33.798
+R	shaman/enhancement	55	250491	0	gear	43.324	int:5:int:2.5:12.5,sta:4:sta:2.5:10,spDmg:5:sp:1:5,armor:184:armor:0.086:15.824
+R	shaman/enhancement	55	252507	0	gear	37.536	sta:10:sta:2.5:25,spDmg:6:sp:1:6,armor:76:armor:0.086:6.536
+R	shaman/enhancement	55	254111	0	gear	59.644	int:9:int:2.5:22.5,sta:13:sta:2.5:32.5,armor:54:armor:0.086:4.644
+R	shaman/enhancement	55	270033	0	gear	11.154	agi:4:agi:1.2:4.8,str:3:str:1:3,armor:39:armor:0.086:3.354
+R	shaman/enhancement	55	271956	0	gear	104.532	agi:27:agi:1.2:32.4,sta:12:sta:2.5:30,crit:1:crit:11:11,crit:1:spellCrit:4.3:4.3,armor:312:armor:0.086:26.832
+R	shaman/enhancement	55	272958	0	gear	140.332	int:27:int:2.5:67.5,sta:12:sta:2.5:30,sp:16:sp:1:16,armor:312:armor:0.086:26.832
+R	shaman/enhancement	55	280082	0	mh	413.625	int:15:int:2.5:37.5,hit:1.5:hit:5.8:8.7,hit:1.5:spellHit:10:15,spi:21:spi:1:21,sp:66:sp:1:66,dps:36.25:dps:6.9:250.125,speed:0.3:speed:51:15.3
+R	shaman/enhancement	55	282560	0	gear	83.818	int:10:int:2.5:25,sta:13:sta:2.5:32.5,sp:8:sp:1:8,armor:213:armor:0.086:18.318
+R	shaman/enhancement	55	286609	0	oh	158.736	spi:6:spi:1:6,armor:1776:armor:0.086:152.736
+R	shaman/enhancement	60	1315	0	gear	44.5	sta:10:sta:2.8:28,spi:15:spi:1.1:16.5
+R	shaman/enhancement	60	1808	0	gear	7.252000000000001	armor:74:armor:0.098:7.252
 R	shaman/enhancement	60	1990	0	mh	175.441	dps:24.71:dps:7.1:175.441
-R	shaman/enhancement	60	1990	12718	mh	229.441	int:9:int:2.6:23.4,sta:9:sta:3.4:30.6,dps:24.71:dps:7.1:175.441
-R	shaman/enhancement	60	1990	12905	mh	213.698	int:11:int:2.6:28.6,sta:7:sta:3.4:23.8,sp:28:sp:1.1:30.8,dps:18.38:dps:7.1:130.498
-R	shaman/enhancement	60	2140	0	mh	7.974000000000004	dps:5.94:dps:7.1:42.174,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	2140	12718	mh	13.974000000000004	int:1:int:2.6:2.6,sta:1:sta:3.4:3.4,dps:5.94:dps:7.1:42.174,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	2140	12917	mh	0.5250000000000057	sp:5:sp:1.1:5.5,int:1:int:2.6:2.6,dps:3.75:dps:7.1:26.625,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	2225	0	mh	1.3000000000000043	dps:5:dps:7.1:35.5,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	2614	0	gear	3.48	armor:29:armor:0.12:3.48
-R	shaman/enhancement	60	3158	0	gear	3.12	armor:26:armor:0.12:3.12
-R	shaman/enhancement	60	3570	0	mh	25.451999999999998	str:2:str:1:2,dps:8.12:dps:7.1:57.652,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	4023	0	mh	74.856	dps:15.36:dps:7.1:109.056,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	4068	0	oh	146.16	sta:9:sta:3.4:30.6,armor:963:armor:0.12:115.56
-R	shaman/enhancement	60	4570	0	mh	65.3	dps:10:dps:7.1:71,speed:-0.1:speed:57:-5.7
-R	shaman/enhancement	60	4570	12718	mh	83.3	int:3:int:2.6:7.8,sta:3:sta:3.4:10.2,dps:10:dps:7.1:71,speed:-0.1:speed:57:-5.7
-R	shaman/enhancement	60	4570	12719	mh	78.8	spi:3:spi:1.1:3.3,sta:3:sta:3.4:10.2,dps:10:dps:7.1:71,speed:-0.1:speed:57:-5.7
-R	shaman/enhancement	60	4570	12720	mh	76.39999999999999	int:3:int:2.6:7.8,spi:3:spi:1.1:3.3,dps:10:dps:7.1:71,speed:-0.1:speed:57:-5.7
-R	shaman/enhancement	60	4570	12721	mh	80.0	agi:3:agi:1.5:4.5,sta:3:sta:3.4:10.2,dps:10:dps:7.1:71,speed:-0.1:speed:57:-5.7
-R	shaman/enhancement	60	4570	12722	mh	78.5	sta:3:sta:3.4:10.2,str:3:str:1:3,dps:10:dps:7.1:71,speed:-0.1:speed:57:-5.7
-R	shaman/enhancement	60	4570	12723	mh	76.1	int:3:int:2.6:7.8,str:3:str:1:3,dps:10:dps:7.1:71,speed:-0.1:speed:57:-5.7
-R	shaman/enhancement	60	4570	12724	mh	77.6	agi:3:agi:1.5:4.5,int:3:int:2.6:7.8,dps:10:dps:7.1:71,speed:-0.1:speed:57:-5.7
-R	shaman/enhancement	60	4570	12725	mh	71.6	spi:3:spi:1.1:3.3,str:3:str:1:3,dps:10:dps:7.1:71,speed:-0.1:speed:57:-5.7
-R	shaman/enhancement	60	4570	12726	mh	73.1	agi:3:agi:1.5:4.5,spi:3:spi:1.1:3.3,dps:10:dps:7.1:71,speed:-0.1:speed:57:-5.7
-R	shaman/enhancement	60	4570	12727	mh	72.8	agi:3:agi:1.5:4.5,str:3:str:1:3,dps:10:dps:7.1:71,speed:-0.1:speed:57:-5.7
-R	shaman/enhancement	60	4570	12728	mh	71.3	agi:4:agi:1.5:6,dps:10:dps:7.1:71,speed:-0.1:speed:57:-5.7
-R	shaman/enhancement	60	4570	12729	mh	75.7	int:4:int:2.6:10.4,dps:10:dps:7.1:71,speed:-0.1:speed:57:-5.7
-R	shaman/enhancement	60	4570	12730	mh	69.7	spi:4:spi:1.1:4.4,dps:10:dps:7.1:71,speed:-0.1:speed:57:-5.7
-R	shaman/enhancement	60	4570	12731	mh	78.89999999999999	sta:4:sta:3.4:13.6,dps:10:dps:7.1:71,speed:-0.1:speed:57:-5.7
-R	shaman/enhancement	60	4570	12732	mh	69.3	str:4:str:1:4,dps:10:dps:7.1:71,speed:-0.1:speed:57:-5.7
-R	shaman/enhancement	60	4570	12733	mh	69.3	ap:8:ap:0.5:4,dps:10:dps:7.1:71,speed:-0.1:speed:57:-5.7
-R	shaman/enhancement	60	4570	12736	mh	65.3	dps:10:dps:7.1:71,speed:-0.1:speed:57:-5.7
-R	shaman/enhancement	60	4570	12740	mh	75.5	sta:3:sta:3.4:10.2,dps:10:dps:7.1:71,speed:-0.1:speed:57:-5.7
-R	shaman/enhancement	60	4570	12741	mh	75.5	sta:3:sta:3.4:10.2,dps:10:dps:7.1:71,speed:-0.1:speed:57:-5.7
-R	shaman/enhancement	60	4570	12742	mh	75.5	sta:3:sta:3.4:10.2,dps:10:dps:7.1:71,speed:-0.1:speed:57:-5.7
-R	shaman/enhancement	60	4570	12743	mh	75.5	sta:3:sta:3.4:10.2,dps:10:dps:7.1:71,speed:-0.1:speed:57:-5.7
-R	shaman/enhancement	60	4570	12744	mh	75.5	sta:3:sta:3.4:10.2,dps:10:dps:7.1:71,speed:-0.1:speed:57:-5.7
-R	shaman/enhancement	60	4570	12759	mh	65.3	dps:10:dps:7.1:71,speed:-0.1:speed:57:-5.7
-R	shaman/enhancement	60	4570	12918	mh	67.318	sp:8:sp:1.1:8.8,int:4:int:2.6:10.4,dps:7.58:dps:7.1:53.818,speed:-0.1:speed:57:-5.7
-R	shaman/enhancement	60	4570	12919	mh	64.018	spDmg:5:sp:1.1:5.5,int:4:int:2.6:10.4,dps:7.58:dps:7.1:53.818,speed:-0.1:speed:57:-5.7
+R	shaman/enhancement	60	1990	12718	mh	229.441	int:9:int:3.2:28.8,sta:9:sta:2.8:25.2,dps:24.71:dps:7.1:175.441
+R	shaman/enhancement	60	1990	12905	mh	216.09799999999998	int:11:int:3.2:35.2,sta:7:sta:2.8:19.6,sp:28:sp:1.1:30.8,dps:18.38:dps:7.1:130.498
+R	shaman/enhancement	60	2140	0	mh	8.573999999999998	dps:5.94:dps:7.1:42.174,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	2140	12718	mh	14.573999999999998	int:1:int:3.2:3.2,sta:1:sta:2.8:2.8,dps:5.94:dps:7.1:42.174,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	2140	12917	mh	1.7250000000000014	sp:5:sp:1.1:5.5,int:1:int:3.2:3.2,dps:3.75:dps:7.1:26.625,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	2225	0	mh	1.8999999999999986	dps:5:dps:7.1:35.5,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	2614	0	gear	2.842	armor:29:armor:0.098:2.842
+R	shaman/enhancement	60	3158	0	gear	2.548	armor:26:armor:0.098:2.548
+R	shaman/enhancement	60	3570	0	mh	26.051999999999992	str:2:str:1:2,dps:8.12:dps:7.1:57.652,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	4023	0	mh	75.45599999999999	dps:15.36:dps:7.1:109.056,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	4068	0	oh	119.57400000000001	sta:9:sta:2.8:25.2,armor:963:armor:0.098:94.374
+R	shaman/enhancement	60	4570	0	mh	65.39999999999999	dps:10:dps:7.1:71,speed:-0.1:speed:56:-5.6
+R	shaman/enhancement	60	4570	12718	mh	83.39999999999999	int:3:int:3.2:9.6,sta:3:sta:2.8:8.4,dps:10:dps:7.1:71,speed:-0.1:speed:56:-5.6
+R	shaman/enhancement	60	4570	12719	mh	77.1	spi:3:spi:1.1:3.3,sta:3:sta:2.8:8.4,dps:10:dps:7.1:71,speed:-0.1:speed:56:-5.6
+R	shaman/enhancement	60	4570	12720	mh	78.3	int:3:int:3.2:9.6,spi:3:spi:1.1:3.3,dps:10:dps:7.1:71,speed:-0.1:speed:56:-5.6
+R	shaman/enhancement	60	4570	12721	mh	77.99999999999999	agi:3:agi:1.4:4.2,sta:3:sta:2.8:8.4,dps:10:dps:7.1:71,speed:-0.1:speed:56:-5.6
+R	shaman/enhancement	60	4570	12722	mh	76.8	sta:3:sta:2.8:8.4,str:3:str:1:3,dps:10:dps:7.1:71,speed:-0.1:speed:56:-5.6
+R	shaman/enhancement	60	4570	12723	mh	77.99999999999999	int:3:int:3.2:9.6,str:3:str:1:3,dps:10:dps:7.1:71,speed:-0.1:speed:56:-5.6
+R	shaman/enhancement	60	4570	12724	mh	79.19999999999999	agi:3:agi:1.4:4.2,int:3:int:3.2:9.6,dps:10:dps:7.1:71,speed:-0.1:speed:56:-5.6
+R	shaman/enhancement	60	4570	12725	mh	71.69999999999999	spi:3:spi:1.1:3.3,str:3:str:1:3,dps:10:dps:7.1:71,speed:-0.1:speed:56:-5.6
+R	shaman/enhancement	60	4570	12726	mh	72.89999999999999	agi:3:agi:1.4:4.2,spi:3:spi:1.1:3.3,dps:10:dps:7.1:71,speed:-0.1:speed:56:-5.6
+R	shaman/enhancement	60	4570	12727	mh	72.6	agi:3:agi:1.4:4.2,str:3:str:1:3,dps:10:dps:7.1:71,speed:-0.1:speed:56:-5.6
+R	shaman/enhancement	60	4570	12728	mh	70.99999999999999	agi:4:agi:1.4:5.6,dps:10:dps:7.1:71,speed:-0.1:speed:56:-5.6
+R	shaman/enhancement	60	4570	12729	mh	78.19999999999999	int:4:int:3.2:12.8,dps:10:dps:7.1:71,speed:-0.1:speed:56:-5.6
+R	shaman/enhancement	60	4570	12730	mh	69.8	spi:4:spi:1.1:4.4,dps:10:dps:7.1:71,speed:-0.1:speed:56:-5.6
+R	shaman/enhancement	60	4570	12731	mh	76.6	sta:4:sta:2.8:11.2,dps:10:dps:7.1:71,speed:-0.1:speed:56:-5.6
+R	shaman/enhancement	60	4570	12732	mh	69.39999999999999	str:4:str:1:4,dps:10:dps:7.1:71,speed:-0.1:speed:56:-5.6
+R	shaman/enhancement	60	4570	12733	mh	69.39999999999999	ap:8:ap:0.5:4,dps:10:dps:7.1:71,speed:-0.1:speed:56:-5.6
+R	shaman/enhancement	60	4570	12736	mh	65.39999999999999	dps:10:dps:7.1:71,speed:-0.1:speed:56:-5.6
+R	shaman/enhancement	60	4570	12740	mh	73.8	sta:3:sta:2.8:8.4,dps:10:dps:7.1:71,speed:-0.1:speed:56:-5.6
+R	shaman/enhancement	60	4570	12741	mh	73.8	sta:3:sta:2.8:8.4,dps:10:dps:7.1:71,speed:-0.1:speed:56:-5.6
+R	shaman/enhancement	60	4570	12742	mh	73.8	sta:3:sta:2.8:8.4,dps:10:dps:7.1:71,speed:-0.1:speed:56:-5.6
+R	shaman/enhancement	60	4570	12743	mh	73.8	sta:3:sta:2.8:8.4,dps:10:dps:7.1:71,speed:-0.1:speed:56:-5.6
+R	shaman/enhancement	60	4570	12744	mh	73.8	sta:3:sta:2.8:8.4,dps:10:dps:7.1:71,speed:-0.1:speed:56:-5.6
+R	shaman/enhancement	60	4570	12759	mh	65.39999999999999	dps:10:dps:7.1:71,speed:-0.1:speed:56:-5.6
+R	shaman/enhancement	60	4570	12918	mh	69.818	sp:8:sp:1.1:8.8,int:4:int:3.2:12.8,dps:7.58:dps:7.1:53.818,speed:-0.1:speed:56:-5.6
+R	shaman/enhancement	60	4570	12919	mh	66.51799999999999	spDmg:5:sp:1.1:5.5,int:4:int:3.2:12.8,dps:7.58:dps:7.1:53.818,speed:-0.1:speed:56:-5.6
 R	shaman/enhancement	60	5079	0	gear	0.0	
-R	shaman/enhancement	60	6063	0	gear	6.6	armor:55:armor:0.12:6.6
-R	shaman/enhancement	60	6540	0	gear	3.36	armor:28:armor:0.12:3.36
-R	shaman/enhancement	60	6540	12718	gear	21.36	int:3:int:2.6:7.8,sta:3:sta:3.4:10.2,armor:28:armor:0.12:3.36
-R	shaman/enhancement	60	6540	12719	gear	16.86	spi:3:spi:1.1:3.3,sta:3:sta:3.4:10.2,armor:28:armor:0.12:3.36
-R	shaman/enhancement	60	6540	12720	gear	14.46	int:3:int:2.6:7.8,spi:3:spi:1.1:3.3,armor:28:armor:0.12:3.36
-R	shaman/enhancement	60	6540	12729	gear	16.36	int:5:int:2.6:13,armor:28:armor:0.12:3.36
-R	shaman/enhancement	60	6540	12730	gear	8.86	spi:5:spi:1.1:5.5,armor:28:armor:0.12:3.36
-R	shaman/enhancement	60	6540	12731	gear	20.36	sta:5:sta:3.4:17,armor:28:armor:0.12:3.36
-R	shaman/enhancement	60	6540	12734	gear	9.96	sp:6:sp:1.1:6.6,armor:28:armor:0.12:3.36
-R	shaman/enhancement	60	6540	12735	gear	7.76	spDmg:4:sp:1.1:4.4,armor:28:armor:0.12:3.36
-R	shaman/enhancement	60	6540	12740	gear	13.559999999999999	sta:3:sta:3.4:10.2,armor:28:armor:0.12:3.36
-R	shaman/enhancement	60	6540	12741	gear	13.559999999999999	sta:3:sta:3.4:10.2,armor:28:armor:0.12:3.36
-R	shaman/enhancement	60	6540	12742	gear	13.559999999999999	sta:3:sta:3.4:10.2,armor:28:armor:0.12:3.36
-R	shaman/enhancement	60	6540	12743	gear	13.559999999999999	sta:3:sta:3.4:10.2,armor:28:armor:0.12:3.36
-R	shaman/enhancement	60	6540	12744	gear	13.559999999999999	sta:3:sta:3.4:10.2,armor:28:armor:0.12:3.36
-R	shaman/enhancement	60	6540	12745	gear	22.759999999999998	int:4:int:2.6:10.4,sta:2:sta:3.4:6.8,sp:2:sp:1.1:2.2,armor:28:armor:0.12:3.36
-R	shaman/enhancement	60	6540	12756	gear	3.36	armor:28:armor:0.12:3.36
-R	shaman/enhancement	60	6540	12757	gear	3.36	armor:28:armor:0.12:3.36
-R	shaman/enhancement	60	6540	12758	gear	3.36	armor:28:armor:0.12:3.36
-R	shaman/enhancement	60	6540	12759	gear	3.36	armor:28:armor:0.12:3.36
-R	shaman/enhancement	60	6540	12761	gear	3.36	armor:28:armor:0.12:3.36
-R	shaman/enhancement	60	6557	0	gear	5.88	armor:49:armor:0.12:5.88
-R	shaman/enhancement	60	6557	12718	gear	17.88	int:2:int:2.6:5.2,sta:2:sta:3.4:6.8,armor:49:armor:0.12:5.88
-R	shaman/enhancement	60	6557	12719	gear	14.879999999999999	spi:2:spi:1.1:2.2,sta:2:sta:3.4:6.8,armor:49:armor:0.12:5.88
-R	shaman/enhancement	60	6557	12720	gear	13.280000000000001	int:2:int:2.6:5.2,spi:2:spi:1.1:2.2,armor:49:armor:0.12:5.88
-R	shaman/enhancement	60	6557	12721	gear	15.68	agi:2:agi:1.5:3,sta:2:sta:3.4:6.8,armor:49:armor:0.12:5.88
-R	shaman/enhancement	60	6557	12722	gear	14.68	sta:2:sta:3.4:6.8,str:2:str:1:2,armor:49:armor:0.12:5.88
-R	shaman/enhancement	60	6557	12723	gear	13.08	int:2:int:2.6:5.2,str:2:str:1:2,armor:49:armor:0.12:5.88
-R	shaman/enhancement	60	6557	12724	gear	14.079999999999998	agi:2:agi:1.5:3,int:2:int:2.6:5.2,armor:49:armor:0.12:5.88
-R	shaman/enhancement	60	6557	12725	gear	10.08	spi:2:spi:1.1:2.2,str:2:str:1:2,armor:49:armor:0.12:5.88
-R	shaman/enhancement	60	6557	12726	gear	11.08	agi:2:agi:1.5:3,spi:2:spi:1.1:2.2,armor:49:armor:0.12:5.88
-R	shaman/enhancement	60	6557	12727	gear	10.879999999999999	agi:2:agi:1.5:3,str:2:str:1:2,armor:49:armor:0.12:5.88
-R	shaman/enhancement	60	6557	12728	gear	10.379999999999999	agi:3:agi:1.5:4.5,armor:49:armor:0.12:5.88
-R	shaman/enhancement	60	6557	12729	gear	13.68	int:3:int:2.6:7.8,armor:49:armor:0.12:5.88
-R	shaman/enhancement	60	6557	12730	gear	9.18	spi:3:spi:1.1:3.3,armor:49:armor:0.12:5.88
-R	shaman/enhancement	60	6557	12731	gear	16.08	sta:3:sta:3.4:10.2,armor:49:armor:0.12:5.88
-R	shaman/enhancement	60	6557	12732	gear	8.879999999999999	str:3:str:1:3,armor:49:armor:0.12:5.88
-R	shaman/enhancement	60	6557	12733	gear	8.879999999999999	ap:6:ap:0.5:3,armor:49:armor:0.12:5.88
-R	shaman/enhancement	60	6557	12734	gear	10.280000000000001	sp:4:sp:1.1:4.4,armor:49:armor:0.12:5.88
-R	shaman/enhancement	60	6557	12735	gear	8.08	spDmg:2:sp:1.1:2.2,armor:49:armor:0.12:5.88
-R	shaman/enhancement	60	6557	12736	gear	5.88	armor:49:armor:0.12:5.88
-R	shaman/enhancement	60	6557	12740	gear	12.68	sta:2:sta:3.4:6.8,armor:49:armor:0.12:5.88
-R	shaman/enhancement	60	6557	12741	gear	12.68	sta:2:sta:3.4:6.8,armor:49:armor:0.12:5.88
-R	shaman/enhancement	60	6557	12742	gear	12.68	sta:2:sta:3.4:6.8,armor:49:armor:0.12:5.88
-R	shaman/enhancement	60	6557	12743	gear	12.68	sta:2:sta:3.4:6.8,armor:49:armor:0.12:5.88
-R	shaman/enhancement	60	6557	12744	gear	12.68	sta:2:sta:3.4:6.8,armor:49:armor:0.12:5.88
-R	shaman/enhancement	60	6557	12756	gear	5.88	armor:49:armor:0.12:5.88
-R	shaman/enhancement	60	6557	12760	gear	8.92	spNature:4:spNature:0.76:3.04,armor:49:armor:0.12:5.88
-R	shaman/enhancement	60	7047	0	gear	8.620000000000001	spi:5:spi:1.1:5.5,armor:26:armor:0.12:3.12
-R	shaman/enhancement	60	7538	0	gear	31.56	armor:263:armor:0.12:31.56
-R	shaman/enhancement	60	7538	12718	gear	109.56	int:13:int:2.6:33.8,sta:13:sta:3.4:44.2,armor:263:armor:0.12:31.56
-R	shaman/enhancement	60	7538	12719	gear	90.06	spi:13:spi:1.1:14.3,sta:13:sta:3.4:44.2,armor:263:armor:0.12:31.56
-R	shaman/enhancement	60	7538	12720	gear	79.66000000000001	int:13:int:2.6:33.8,spi:13:spi:1.1:14.3,armor:263:armor:0.12:31.56
-R	shaman/enhancement	60	7538	12721	gear	95.25999999999999	agi:13:agi:1.5:19.5,sta:13:sta:3.4:44.2,armor:263:armor:0.12:31.56
-R	shaman/enhancement	60	7538	12722	gear	88.75999999999999	sta:13:sta:3.4:44.2,str:13:str:1:13,armor:263:armor:0.12:31.56
-R	shaman/enhancement	60	7538	12723	gear	78.36	int:13:int:2.6:33.8,str:13:str:1:13,armor:263:armor:0.12:31.56
-R	shaman/enhancement	60	7538	12724	gear	84.86	agi:13:agi:1.5:19.5,int:13:int:2.6:33.8,armor:263:armor:0.12:31.56
-R	shaman/enhancement	60	7538	12725	gear	58.86	spi:13:spi:1.1:14.3,str:13:str:1:13,armor:263:armor:0.12:31.56
-R	shaman/enhancement	60	7538	12726	gear	65.36	agi:13:agi:1.5:19.5,spi:13:spi:1.1:14.3,armor:263:armor:0.12:31.56
-R	shaman/enhancement	60	7538	12727	gear	64.06	agi:13:agi:1.5:19.5,str:13:str:1:13,armor:263:armor:0.12:31.56
-R	shaman/enhancement	60	7538	12728	gear	61.56	agi:20:agi:1.5:30,armor:263:armor:0.12:31.56
-R	shaman/enhancement	60	7538	12729	gear	83.56	int:20:int:2.6:52,armor:263:armor:0.12:31.56
-R	shaman/enhancement	60	7538	12730	gear	53.56	spi:20:spi:1.1:22,armor:263:armor:0.12:31.56
-R	shaman/enhancement	60	7538	12731	gear	99.56	sta:20:sta:3.4:68,armor:263:armor:0.12:31.56
-R	shaman/enhancement	60	7538	12732	gear	51.56	str:20:str:1:20,armor:263:armor:0.12:31.56
-R	shaman/enhancement	60	7538	12733	gear	51.56	ap:40:ap:0.5:20,armor:263:armor:0.12:31.56
-R	shaman/enhancement	60	7538	12734	gear	56.86	sp:23:sp:1.1:25.3,armor:263:armor:0.12:31.56
-R	shaman/enhancement	60	7538	12735	gear	48.06	spDmg:15:sp:1.1:16.5,armor:263:armor:0.12:31.56
-R	shaman/enhancement	60	7538	12740	gear	75.75999999999999	sta:13:sta:3.4:44.2,armor:263:armor:0.12:31.56
-R	shaman/enhancement	60	7538	12741	gear	75.75999999999999	sta:13:sta:3.4:44.2,armor:263:armor:0.12:31.56
-R	shaman/enhancement	60	7538	12742	gear	75.75999999999999	sta:13:sta:3.4:44.2,armor:263:armor:0.12:31.56
-R	shaman/enhancement	60	7538	12743	gear	75.75999999999999	sta:13:sta:3.4:44.2,armor:263:armor:0.12:31.56
-R	shaman/enhancement	60	7538	12744	gear	75.75999999999999	sta:13:sta:3.4:44.2,armor:263:armor:0.12:31.56
-R	shaman/enhancement	60	7538	12745	gear	105.46000000000001	int:15:int:2.6:39,sta:8:sta:3.4:27.2,sp:7:sp:1.1:7.7,armor:263:armor:0.12:31.56
-R	shaman/enhancement	60	7538	12746	gear	87.06	int:15:int:2.6:39,spi:8:spi:1.1:8.8,sp:7:sp:1.1:7.7,armor:263:armor:0.12:31.56
-R	shaman/enhancement	60	7538	12747	gear	99.06	spi:8:spi:1.1:8.8,sta:15:sta:3.4:51,sp:7:sp:1.1:7.7,armor:263:armor:0.12:31.56
-R	shaman/enhancement	60	7538	12748	gear	108.86	int:8:int:2.6:20.8,sta:15:sta:3.4:51,spDmg:5:sp:1.1:5.5,armor:263:armor:0.12:31.56
-R	shaman/enhancement	60	7538	12749	gear	84.86	int:15:int:2.6:39,spi:8:spi:1.1:8.8,spDmg:5:sp:1.1:5.5,armor:263:armor:0.12:31.56
-R	shaman/enhancement	60	7538	12750	gear	96.86	spi:8:spi:1.1:8.8,sta:15:sta:3.4:51,spDmg:5:sp:1.1:5.5,armor:263:armor:0.12:31.56
-R	shaman/enhancement	60	7538	12751	gear	99.56	agi:6:agi:1.5:9,ap:16:ap:0.5:8,sta:15:sta:3.4:51,armor:263:armor:0.12:31.56
-R	shaman/enhancement	60	7538	12752	gear	100.56	agi:8:agi:1.5:12,sta:15:sta:3.4:51,str:6:str:1:6,armor:263:armor:0.12:31.56
-R	shaman/enhancement	60	7538	12755	gear	98.26	sp:7:sp:1.1:7.7,sta:15:sta:3.4:51,str:8:str:1:8,armor:263:armor:0.12:31.56
-R	shaman/enhancement	60	7538	12760	gear	53.599999999999994	spNature:29:spNature:0.76:22.04,armor:263:armor:0.12:31.56
-R	shaman/enhancement	60	8192	0	gear	43.82	agi:11:agi:1.5:16.5,sta:5:sta:3.4:17,armor:86:armor:0.12:10.32
-R	shaman/enhancement	60	9458	0	oh	96.41999999999999	spi:3:spi:1.1:3.3,armor:776:armor:0.12:93.12
-R	shaman/enhancement	60	9834	0	gear	8.76	armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	9834	12718	gear	44.76	int:6:int:2.6:15.6,sta:6:sta:3.4:20.4,armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	9834	12719	gear	35.76	spi:6:spi:1.1:6.6,sta:6:sta:3.4:20.4,armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	9834	12720	gear	30.96	int:6:int:2.6:15.6,spi:6:spi:1.1:6.6,armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	9834	12721	gear	38.16	agi:6:agi:1.5:9,sta:6:sta:3.4:20.4,armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	9834	12722	gear	35.16	sta:6:sta:3.4:20.4,str:6:str:1:6,armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	9834	12723	gear	30.36	int:6:int:2.6:15.6,str:6:str:1:6,armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	9834	12724	gear	33.36	agi:6:agi:1.5:9,int:6:int:2.6:15.6,armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	9834	12725	gear	21.36	spi:6:spi:1.1:6.6,str:6:str:1:6,armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	9834	12726	gear	24.36	agi:6:agi:1.5:9,spi:6:spi:1.1:6.6,armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	9834	12727	gear	23.759999999999998	agi:6:agi:1.5:9,str:6:str:1:6,armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	9834	12728	gear	22.259999999999998	agi:9:agi:1.5:13.5,armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	9834	12729	gear	32.160000000000004	int:9:int:2.6:23.4,armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	9834	12730	gear	18.66	spi:9:spi:1.1:9.9,armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	9834	12731	gear	39.36	sta:9:sta:3.4:30.6,armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	9834	12732	gear	17.759999999999998	str:9:str:1:9,armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	9834	12733	gear	17.759999999999998	ap:18:ap:0.5:9,armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	9834	12734	gear	20.86	sp:11:sp:1.1:12.1,armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	9834	12735	gear	16.46	spDmg:7:sp:1.1:7.7,armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	9834	12736	gear	8.76	armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	9834	12740	gear	29.159999999999997	sta:6:sta:3.4:20.4,armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	9834	12741	gear	29.159999999999997	sta:6:sta:3.4:20.4,armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	9834	12742	gear	29.159999999999997	sta:6:sta:3.4:20.4,armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	9834	12743	gear	29.159999999999997	sta:6:sta:3.4:20.4,armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	9834	12744	gear	29.159999999999997	sta:6:sta:3.4:20.4,armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	9834	12745	gear	43.85999999999999	int:7:int:2.6:18.2,sta:4:sta:3.4:13.6,sp:3:sp:1.1:3.3,armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	9834	12746	gear	34.660000000000004	int:7:int:2.6:18.2,spi:4:spi:1.1:4.4,sp:3:sp:1.1:3.3,armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	9834	12747	gear	40.260000000000005	spi:4:spi:1.1:4.4,sta:7:sta:3.4:23.8,sp:3:sp:1.1:3.3,armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	9834	12748	gear	45.160000000000004	int:4:int:2.6:10.4,sta:7:sta:3.4:23.8,spDmg:2:sp:1.1:2.2,armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	9834	12749	gear	33.56	int:7:int:2.6:18.2,spi:4:spi:1.1:4.4,spDmg:2:sp:1.1:2.2,armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	9834	12750	gear	39.160000000000004	spi:4:spi:1.1:4.4,sta:7:sta:3.4:23.8,spDmg:2:sp:1.1:2.2,armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	9834	12751	gear	40.56	agi:3:agi:1.5:4.5,ap:7:ap:0.5:3.5,sta:7:sta:3.4:23.8,armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	9834	12752	gear	41.559999999999995	agi:4:agi:1.5:6,sta:7:sta:3.4:23.8,str:3:str:1:3,armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	9834	12753	gear	36.56	sta:7:sta:3.4:23.8,str:4:str:1:4,armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	9834	12755	gear	39.86	sp:3:sp:1.1:3.3,sta:7:sta:3.4:23.8,str:4:str:1:4,armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	9834	12756	gear	8.76	armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	9834	12760	gear	18.64	spNature:13:spNature:0.76:9.88,armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	11187	0	gear	0.48	armor:4:armor:0.12:0.48
+R	shaman/enhancement	60	6063	0	gear	5.390000000000001	armor:55:armor:0.098:5.39
+R	shaman/enhancement	60	6540	0	gear	2.744	armor:28:armor:0.098:2.744
+R	shaman/enhancement	60	6540	12718	gear	20.744	int:3:int:3.2:9.6,sta:3:sta:2.8:8.4,armor:28:armor:0.098:2.744
+R	shaman/enhancement	60	6540	12719	gear	14.443999999999999	spi:3:spi:1.1:3.3,sta:3:sta:2.8:8.4,armor:28:armor:0.098:2.744
+R	shaman/enhancement	60	6540	12720	gear	15.644000000000002	int:3:int:3.2:9.6,spi:3:spi:1.1:3.3,armor:28:armor:0.098:2.744
+R	shaman/enhancement	60	6540	12729	gear	18.744	int:5:int:3.2:16,armor:28:armor:0.098:2.744
+R	shaman/enhancement	60	6540	12730	gear	8.244	spi:5:spi:1.1:5.5,armor:28:armor:0.098:2.744
+R	shaman/enhancement	60	6540	12731	gear	16.744	sta:5:sta:2.8:14,armor:28:armor:0.098:2.744
+R	shaman/enhancement	60	6540	12734	gear	9.344000000000001	sp:6:sp:1.1:6.6,armor:28:armor:0.098:2.744
+R	shaman/enhancement	60	6540	12735	gear	7.144	spDmg:4:sp:1.1:4.4,armor:28:armor:0.098:2.744
+R	shaman/enhancement	60	6540	12740	gear	11.143999999999998	sta:3:sta:2.8:8.4,armor:28:armor:0.098:2.744
+R	shaman/enhancement	60	6540	12741	gear	11.143999999999998	sta:3:sta:2.8:8.4,armor:28:armor:0.098:2.744
+R	shaman/enhancement	60	6540	12742	gear	11.143999999999998	sta:3:sta:2.8:8.4,armor:28:armor:0.098:2.744
+R	shaman/enhancement	60	6540	12743	gear	11.143999999999998	sta:3:sta:2.8:8.4,armor:28:armor:0.098:2.744
+R	shaman/enhancement	60	6540	12744	gear	11.143999999999998	sta:3:sta:2.8:8.4,armor:28:armor:0.098:2.744
+R	shaman/enhancement	60	6540	12745	gear	23.343999999999998	int:4:int:3.2:12.8,sta:2:sta:2.8:5.6,sp:2:sp:1.1:2.2,armor:28:armor:0.098:2.744
+R	shaman/enhancement	60	6540	12756	gear	2.744	armor:28:armor:0.098:2.744
+R	shaman/enhancement	60	6540	12757	gear	2.744	armor:28:armor:0.098:2.744
+R	shaman/enhancement	60	6540	12758	gear	2.744	armor:28:armor:0.098:2.744
+R	shaman/enhancement	60	6540	12759	gear	2.744	armor:28:armor:0.098:2.744
+R	shaman/enhancement	60	6540	12761	gear	2.744	armor:28:armor:0.098:2.744
+R	shaman/enhancement	60	6557	0	gear	4.8020000000000005	armor:49:armor:0.098:4.802
+R	shaman/enhancement	60	6557	12718	gear	16.802	int:2:int:3.2:6.4,sta:2:sta:2.8:5.6,armor:49:armor:0.098:4.802
+R	shaman/enhancement	60	6557	12719	gear	12.602	spi:2:spi:1.1:2.2,sta:2:sta:2.8:5.6,armor:49:armor:0.098:4.802
+R	shaman/enhancement	60	6557	12720	gear	13.402000000000001	int:2:int:3.2:6.4,spi:2:spi:1.1:2.2,armor:49:armor:0.098:4.802
+R	shaman/enhancement	60	6557	12721	gear	13.201999999999998	agi:2:agi:1.4:2.8,sta:2:sta:2.8:5.6,armor:49:armor:0.098:4.802
+R	shaman/enhancement	60	6557	12722	gear	12.402000000000001	sta:2:sta:2.8:5.6,str:2:str:1:2,armor:49:armor:0.098:4.802
+R	shaman/enhancement	60	6557	12723	gear	13.202000000000002	int:2:int:3.2:6.4,str:2:str:1:2,armor:49:armor:0.098:4.802
+R	shaman/enhancement	60	6557	12724	gear	14.001999999999999	agi:2:agi:1.4:2.8,int:2:int:3.2:6.4,armor:49:armor:0.098:4.802
+R	shaman/enhancement	60	6557	12725	gear	9.002	spi:2:spi:1.1:2.2,str:2:str:1:2,armor:49:armor:0.098:4.802
+R	shaman/enhancement	60	6557	12726	gear	9.802	agi:2:agi:1.4:2.8,spi:2:spi:1.1:2.2,armor:49:armor:0.098:4.802
+R	shaman/enhancement	60	6557	12727	gear	9.602	agi:2:agi:1.4:2.8,str:2:str:1:2,armor:49:armor:0.098:4.802
+R	shaman/enhancement	60	6557	12728	gear	9.001999999999999	agi:3:agi:1.4:4.2,armor:49:armor:0.098:4.802
+R	shaman/enhancement	60	6557	12729	gear	14.402000000000001	int:3:int:3.2:9.6,armor:49:armor:0.098:4.802
+R	shaman/enhancement	60	6557	12730	gear	8.102	spi:3:spi:1.1:3.3,armor:49:armor:0.098:4.802
+R	shaman/enhancement	60	6557	12731	gear	13.201999999999998	sta:3:sta:2.8:8.4,armor:49:armor:0.098:4.802
+R	shaman/enhancement	60	6557	12732	gear	7.8020000000000005	str:3:str:1:3,armor:49:armor:0.098:4.802
+R	shaman/enhancement	60	6557	12733	gear	7.8020000000000005	ap:6:ap:0.5:3,armor:49:armor:0.098:4.802
+R	shaman/enhancement	60	6557	12734	gear	9.202000000000002	sp:4:sp:1.1:4.4,armor:49:armor:0.098:4.802
+R	shaman/enhancement	60	6557	12735	gear	7.002000000000001	spDmg:2:sp:1.1:2.2,armor:49:armor:0.098:4.802
+R	shaman/enhancement	60	6557	12736	gear	4.8020000000000005	armor:49:armor:0.098:4.802
+R	shaman/enhancement	60	6557	12740	gear	10.402000000000001	sta:2:sta:2.8:5.6,armor:49:armor:0.098:4.802
+R	shaman/enhancement	60	6557	12741	gear	10.402000000000001	sta:2:sta:2.8:5.6,armor:49:armor:0.098:4.802
+R	shaman/enhancement	60	6557	12742	gear	10.402000000000001	sta:2:sta:2.8:5.6,armor:49:armor:0.098:4.802
+R	shaman/enhancement	60	6557	12743	gear	10.402000000000001	sta:2:sta:2.8:5.6,armor:49:armor:0.098:4.802
+R	shaman/enhancement	60	6557	12744	gear	10.402000000000001	sta:2:sta:2.8:5.6,armor:49:armor:0.098:4.802
+R	shaman/enhancement	60	6557	12756	gear	4.8020000000000005	armor:49:armor:0.098:4.802
+R	shaman/enhancement	60	6557	12760	gear	7.722	spNature:4:spNature:0.73:2.92,armor:49:armor:0.098:4.802
+R	shaman/enhancement	60	7047	0	gear	8.048	spi:5:spi:1.1:5.5,armor:26:armor:0.098:2.548
+R	shaman/enhancement	60	7538	0	gear	25.774	armor:263:armor:0.098:25.774
+R	shaman/enhancement	60	7538	12718	gear	103.774	int:13:int:3.2:41.6,sta:13:sta:2.8:36.4,armor:263:armor:0.098:25.774
+R	shaman/enhancement	60	7538	12719	gear	76.474	spi:13:spi:1.1:14.3,sta:13:sta:2.8:36.4,armor:263:armor:0.098:25.774
+R	shaman/enhancement	60	7538	12720	gear	81.674	int:13:int:3.2:41.6,spi:13:spi:1.1:14.3,armor:263:armor:0.098:25.774
+R	shaman/enhancement	60	7538	12721	gear	80.374	agi:13:agi:1.4:18.2,sta:13:sta:2.8:36.4,armor:263:armor:0.098:25.774
+R	shaman/enhancement	60	7538	12722	gear	75.174	sta:13:sta:2.8:36.4,str:13:str:1:13,armor:263:armor:0.098:25.774
+R	shaman/enhancement	60	7538	12723	gear	80.374	int:13:int:3.2:41.6,str:13:str:1:13,armor:263:armor:0.098:25.774
+R	shaman/enhancement	60	7538	12724	gear	85.574	agi:13:agi:1.4:18.2,int:13:int:3.2:41.6,armor:263:armor:0.098:25.774
+R	shaman/enhancement	60	7538	12725	gear	53.074	spi:13:spi:1.1:14.3,str:13:str:1:13,armor:263:armor:0.098:25.774
+R	shaman/enhancement	60	7538	12726	gear	58.274	agi:13:agi:1.4:18.2,spi:13:spi:1.1:14.3,armor:263:armor:0.098:25.774
+R	shaman/enhancement	60	7538	12727	gear	56.974000000000004	agi:13:agi:1.4:18.2,str:13:str:1:13,armor:263:armor:0.098:25.774
+R	shaman/enhancement	60	7538	12728	gear	53.774	agi:20:agi:1.4:28,armor:263:armor:0.098:25.774
+R	shaman/enhancement	60	7538	12729	gear	89.774	int:20:int:3.2:64,armor:263:armor:0.098:25.774
+R	shaman/enhancement	60	7538	12730	gear	47.774	spi:20:spi:1.1:22,armor:263:armor:0.098:25.774
+R	shaman/enhancement	60	7538	12731	gear	81.774	sta:20:sta:2.8:56,armor:263:armor:0.098:25.774
+R	shaman/enhancement	60	7538	12732	gear	45.774	str:20:str:1:20,armor:263:armor:0.098:25.774
+R	shaman/enhancement	60	7538	12733	gear	45.774	ap:40:ap:0.5:20,armor:263:armor:0.098:25.774
+R	shaman/enhancement	60	7538	12734	gear	51.074	sp:23:sp:1.1:25.3,armor:263:armor:0.098:25.774
+R	shaman/enhancement	60	7538	12735	gear	42.274	spDmg:15:sp:1.1:16.5,armor:263:armor:0.098:25.774
+R	shaman/enhancement	60	7538	12740	gear	62.174	sta:13:sta:2.8:36.4,armor:263:armor:0.098:25.774
+R	shaman/enhancement	60	7538	12741	gear	62.174	sta:13:sta:2.8:36.4,armor:263:armor:0.098:25.774
+R	shaman/enhancement	60	7538	12742	gear	62.174	sta:13:sta:2.8:36.4,armor:263:armor:0.098:25.774
+R	shaman/enhancement	60	7538	12743	gear	62.174	sta:13:sta:2.8:36.4,armor:263:armor:0.098:25.774
+R	shaman/enhancement	60	7538	12744	gear	62.174	sta:13:sta:2.8:36.4,armor:263:armor:0.098:25.774
+R	shaman/enhancement	60	7538	12745	gear	103.87400000000001	int:15:int:3.2:48,sta:8:sta:2.8:22.4,sp:7:sp:1.1:7.7,armor:263:armor:0.098:25.774
+R	shaman/enhancement	60	7538	12746	gear	90.274	int:15:int:3.2:48,spi:8:spi:1.1:8.8,sp:7:sp:1.1:7.7,armor:263:armor:0.098:25.774
+R	shaman/enhancement	60	7538	12747	gear	84.274	spi:8:spi:1.1:8.8,sta:15:sta:2.8:42,sp:7:sp:1.1:7.7,armor:263:armor:0.098:25.774
+R	shaman/enhancement	60	7538	12748	gear	98.874	int:8:int:3.2:25.6,sta:15:sta:2.8:42,spDmg:5:sp:1.1:5.5,armor:263:armor:0.098:25.774
+R	shaman/enhancement	60	7538	12749	gear	88.074	int:15:int:3.2:48,spi:8:spi:1.1:8.8,spDmg:5:sp:1.1:5.5,armor:263:armor:0.098:25.774
+R	shaman/enhancement	60	7538	12750	gear	82.074	spi:8:spi:1.1:8.8,sta:15:sta:2.8:42,spDmg:5:sp:1.1:5.5,armor:263:armor:0.098:25.774
+R	shaman/enhancement	60	7538	12751	gear	84.174	agi:6:agi:1.4:8.4,ap:16:ap:0.5:8,sta:15:sta:2.8:42,armor:263:armor:0.098:25.774
+R	shaman/enhancement	60	7538	12752	gear	84.974	agi:8:agi:1.4:11.2,sta:15:sta:2.8:42,str:6:str:1:6,armor:263:armor:0.098:25.774
+R	shaman/enhancement	60	7538	12755	gear	83.474	sp:7:sp:1.1:7.7,sta:15:sta:2.8:42,str:8:str:1:8,armor:263:armor:0.098:25.774
+R	shaman/enhancement	60	7538	12760	gear	46.944	spNature:29:spNature:0.73:21.17,armor:263:armor:0.098:25.774
+R	shaman/enhancement	60	8192	0	gear	37.828	agi:11:agi:1.4:15.4,sta:5:sta:2.8:14,armor:86:armor:0.098:8.428
+R	shaman/enhancement	60	9458	0	oh	79.348	spi:3:spi:1.1:3.3,armor:776:armor:0.098:76.048
+R	shaman/enhancement	60	9834	0	gear	7.154	armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	9834	12718	gear	43.153999999999996	int:6:int:3.2:19.2,sta:6:sta:2.8:16.8,armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	9834	12719	gear	30.554	spi:6:spi:1.1:6.6,sta:6:sta:2.8:16.8,armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	9834	12720	gear	32.95400000000001	int:6:int:3.2:19.2,spi:6:spi:1.1:6.6,armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	9834	12721	gear	32.354	agi:6:agi:1.4:8.4,sta:6:sta:2.8:16.8,armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	9834	12722	gear	29.953999999999997	sta:6:sta:2.8:16.8,str:6:str:1:6,armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	9834	12723	gear	32.354	int:6:int:3.2:19.2,str:6:str:1:6,armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	9834	12724	gear	34.754000000000005	agi:6:agi:1.4:8.4,int:6:int:3.2:19.2,armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	9834	12725	gear	19.754	spi:6:spi:1.1:6.6,str:6:str:1:6,armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	9834	12726	gear	22.154	agi:6:agi:1.4:8.4,spi:6:spi:1.1:6.6,armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	9834	12727	gear	21.554	agi:6:agi:1.4:8.4,str:6:str:1:6,armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	9834	12728	gear	19.753999999999998	agi:9:agi:1.4:12.6,armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	9834	12729	gear	35.954	int:9:int:3.2:28.8,armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	9834	12730	gear	17.054000000000002	spi:9:spi:1.1:9.9,armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	9834	12731	gear	32.354	sta:9:sta:2.8:25.2,armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	9834	12732	gear	16.154	str:9:str:1:9,armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	9834	12733	gear	16.154	ap:18:ap:0.5:9,armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	9834	12734	gear	19.254	sp:11:sp:1.1:12.1,armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	9834	12735	gear	14.854000000000001	spDmg:7:sp:1.1:7.7,armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	9834	12736	gear	7.154	armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	9834	12740	gear	23.953999999999997	sta:6:sta:2.8:16.8,armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	9834	12741	gear	23.953999999999997	sta:6:sta:2.8:16.8,armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	9834	12742	gear	23.953999999999997	sta:6:sta:2.8:16.8,armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	9834	12743	gear	23.953999999999997	sta:6:sta:2.8:16.8,armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	9834	12744	gear	23.953999999999997	sta:6:sta:2.8:16.8,armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	9834	12745	gear	44.054	int:7:int:3.2:22.4,sta:4:sta:2.8:11.2,sp:3:sp:1.1:3.3,armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	9834	12746	gear	37.254000000000005	int:7:int:3.2:22.4,spi:4:spi:1.1:4.4,sp:3:sp:1.1:3.3,armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	9834	12747	gear	34.454	spi:4:spi:1.1:4.4,sta:7:sta:2.8:19.6,sp:3:sp:1.1:3.3,armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	9834	12748	gear	41.754000000000005	int:4:int:3.2:12.8,sta:7:sta:2.8:19.6,spDmg:2:sp:1.1:2.2,armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	9834	12749	gear	36.154	int:7:int:3.2:22.4,spi:4:spi:1.1:4.4,spDmg:2:sp:1.1:2.2,armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	9834	12750	gear	33.354	spi:4:spi:1.1:4.4,sta:7:sta:2.8:19.6,spDmg:2:sp:1.1:2.2,armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	9834	12751	gear	34.45399999999999	agi:3:agi:1.4:4.2,ap:7:ap:0.5:3.5,sta:7:sta:2.8:19.6,armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	9834	12752	gear	35.354	agi:4:agi:1.4:5.6,sta:7:sta:2.8:19.6,str:3:str:1:3,armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	9834	12753	gear	30.753999999999998	sta:7:sta:2.8:19.6,str:4:str:1:4,armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	9834	12755	gear	34.054	sp:3:sp:1.1:3.3,sta:7:sta:2.8:19.6,str:4:str:1:4,armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	9834	12756	gear	7.154	armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	9834	12760	gear	16.644	spNature:13:spNature:0.73:9.49,armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	11187	0	gear	0.392	armor:4:armor:0.098:0.392
 R	shaman/enhancement	60	11994	0	gear	0.0	
-R	shaman/enhancement	60	11994	12718	gear	18.0	int:3:int:2.6:7.8,sta:3:sta:3.4:10.2
-R	shaman/enhancement	60	11994	12719	gear	13.5	spi:3:spi:1.1:3.3,sta:3:sta:3.4:10.2
-R	shaman/enhancement	60	11994	12720	gear	11.100000000000001	int:3:int:2.6:7.8,spi:3:spi:1.1:3.3
-R	shaman/enhancement	60	11994	12721	gear	14.7	agi:3:agi:1.5:4.5,sta:3:sta:3.4:10.2
-R	shaman/enhancement	60	11994	12722	gear	13.2	sta:3:sta:3.4:10.2,str:3:str:1:3
-R	shaman/enhancement	60	11994	12723	gear	10.8	int:3:int:2.6:7.8,str:3:str:1:3
-R	shaman/enhancement	60	11994	12724	gear	12.3	agi:3:agi:1.5:4.5,int:3:int:2.6:7.8
+R	shaman/enhancement	60	11994	12718	gear	18.0	int:3:int:3.2:9.6,sta:3:sta:2.8:8.4
+R	shaman/enhancement	60	11994	12719	gear	11.7	spi:3:spi:1.1:3.3,sta:3:sta:2.8:8.4
+R	shaman/enhancement	60	11994	12720	gear	12.900000000000002	int:3:int:3.2:9.6,spi:3:spi:1.1:3.3
+R	shaman/enhancement	60	11994	12721	gear	12.599999999999998	agi:3:agi:1.4:4.2,sta:3:sta:2.8:8.4
+R	shaman/enhancement	60	11994	12722	gear	11.399999999999999	sta:3:sta:2.8:8.4,str:3:str:1:3
+R	shaman/enhancement	60	11994	12723	gear	12.600000000000001	int:3:int:3.2:9.6,str:3:str:1:3
+R	shaman/enhancement	60	11994	12724	gear	13.8	agi:3:agi:1.4:4.2,int:3:int:3.2:9.6
 R	shaman/enhancement	60	11994	12725	gear	6.300000000000001	spi:3:spi:1.1:3.3,str:3:str:1:3
-R	shaman/enhancement	60	11994	12726	gear	7.800000000000001	agi:3:agi:1.5:4.5,spi:3:spi:1.1:3.3
-R	shaman/enhancement	60	11994	12727	gear	7.5	agi:3:agi:1.5:4.5,str:3:str:1:3
-R	shaman/enhancement	60	11994	12728	gear	7.5	agi:5:agi:1.5:7.5
-R	shaman/enhancement	60	11994	12729	gear	13.0	int:5:int:2.6:13
+R	shaman/enhancement	60	11994	12726	gear	7.5	agi:3:agi:1.4:4.2,spi:3:spi:1.1:3.3
+R	shaman/enhancement	60	11994	12727	gear	7.199999999999999	agi:3:agi:1.4:4.2,str:3:str:1:3
+R	shaman/enhancement	60	11994	12728	gear	7.0	agi:5:agi:1.4:7
+R	shaman/enhancement	60	11994	12729	gear	16.0	int:5:int:3.2:16
 R	shaman/enhancement	60	11994	12730	gear	5.5	spi:5:spi:1.1:5.5
-R	shaman/enhancement	60	11994	12731	gear	17.0	sta:5:sta:3.4:17
+R	shaman/enhancement	60	11994	12731	gear	14.0	sta:5:sta:2.8:14
 R	shaman/enhancement	60	11994	12732	gear	5.0	str:5:str:1:5
 R	shaman/enhancement	60	11994	12733	gear	5.0	ap:10:ap:0.5:5
 R	shaman/enhancement	60	11994	12737	gear	0.0	
-R	shaman/enhancement	60	11994	12738	gear	2.2	mp5:2:mp5:1.1:2.2
-R	shaman/enhancement	60	11994	12739	gear	3.0	agi:2:agi:1.5:3
-R	shaman/enhancement	60	11994	12740	gear	10.2	sta:3:sta:3.4:10.2
-R	shaman/enhancement	60	11994	12741	gear	10.2	sta:3:sta:3.4:10.2
-R	shaman/enhancement	60	11994	12742	gear	10.2	sta:3:sta:3.4:10.2
-R	shaman/enhancement	60	11994	12743	gear	10.2	sta:3:sta:3.4:10.2
-R	shaman/enhancement	60	11994	12744	gear	10.2	sta:3:sta:3.4:10.2
-R	shaman/enhancement	60	13183	0	mh	246.03699999999998	dps:39.47:dps:7.1:280.237,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	14122	0	gear	1.68	armor:14:armor:0.12:1.68
-R	shaman/enhancement	60	14122	12718	gear	13.68	int:2:int:2.6:5.2,sta:2:sta:3.4:6.8,armor:14:armor:0.12:1.68
-R	shaman/enhancement	60	14122	12719	gear	10.68	spi:2:spi:1.1:2.2,sta:2:sta:3.4:6.8,armor:14:armor:0.12:1.68
-R	shaman/enhancement	60	14122	12720	gear	9.08	int:2:int:2.6:5.2,spi:2:spi:1.1:2.2,armor:14:armor:0.12:1.68
-R	shaman/enhancement	60	14122	12729	gear	9.48	int:3:int:2.6:7.8,armor:14:armor:0.12:1.68
-R	shaman/enhancement	60	14122	12730	gear	4.98	spi:3:spi:1.1:3.3,armor:14:armor:0.12:1.68
-R	shaman/enhancement	60	14122	12731	gear	11.879999999999999	sta:3:sta:3.4:10.2,armor:14:armor:0.12:1.68
-R	shaman/enhancement	60	14122	12734	gear	6.08	sp:4:sp:1.1:4.4,armor:14:armor:0.12:1.68
-R	shaman/enhancement	60	14122	12735	gear	3.88	spDmg:2:sp:1.1:2.2,armor:14:armor:0.12:1.68
-R	shaman/enhancement	60	14122	12740	gear	8.48	sta:2:sta:3.4:6.8,armor:14:armor:0.12:1.68
-R	shaman/enhancement	60	14122	12741	gear	8.48	sta:2:sta:3.4:6.8,armor:14:armor:0.12:1.68
-R	shaman/enhancement	60	14122	12742	gear	8.48	sta:2:sta:3.4:6.8,armor:14:armor:0.12:1.68
-R	shaman/enhancement	60	14122	12743	gear	8.48	sta:2:sta:3.4:6.8,armor:14:armor:0.12:1.68
-R	shaman/enhancement	60	14122	12744	gear	8.48	sta:2:sta:3.4:6.8,armor:14:armor:0.12:1.68
-R	shaman/enhancement	60	14122	12745	gear	11.379999999999999	int:2:int:2.6:5.2,sta:1:sta:3.4:3.4,sp:1:sp:1.1:1.1,armor:14:armor:0.12:1.68
-R	shaman/enhancement	60	14122	12756	gear	1.68	armor:14:armor:0.12:1.68
-R	shaman/enhancement	60	14122	12757	gear	1.68	armor:14:armor:0.12:1.68
-R	shaman/enhancement	60	14122	12758	gear	1.68	armor:14:armor:0.12:1.68
-R	shaman/enhancement	60	14122	12759	gear	1.68	armor:14:armor:0.12:1.68
-R	shaman/enhancement	60	14122	12761	gear	1.68	armor:14:armor:0.12:1.68
-R	shaman/enhancement	60	14340	0	gear	75.16	sta:19:sta:3.4:64.6,armor:88:armor:0.12:10.56
-R	shaman/enhancement	60	14673	0	gear	37.58	str:3:str:1:3,agi:9:agi:1.5:13.5,sta:5:sta:3.4:17,armor:34:armor:0.12:4.08
-R	shaman/enhancement	60	14964	0	oh	206.4	armor:1720:armor:0.12:206.4
-R	shaman/enhancement	60	14964	12718	oh	260.4	int:9:int:2.6:23.4,sta:9:sta:3.4:30.6,armor:1720:armor:0.12:206.4
-R	shaman/enhancement	60	14964	12719	oh	246.9	spi:9:spi:1.1:9.9,sta:9:sta:3.4:30.6,armor:1720:armor:0.12:206.4
-R	shaman/enhancement	60	14964	12720	oh	239.70000000000002	int:9:int:2.6:23.4,spi:9:spi:1.1:9.9,armor:1720:armor:0.12:206.4
-R	shaman/enhancement	60	14964	12721	oh	250.5	agi:9:agi:1.5:13.5,sta:9:sta:3.4:30.6,armor:1720:armor:0.12:206.4
-R	shaman/enhancement	60	14964	12722	oh	246.0	sta:9:sta:3.4:30.6,str:9:str:1:9,armor:1720:armor:0.12:206.4
-R	shaman/enhancement	60	14964	12723	oh	238.8	int:9:int:2.6:23.4,str:9:str:1:9,armor:1720:armor:0.12:206.4
-R	shaman/enhancement	60	14964	12724	oh	243.3	agi:9:agi:1.5:13.5,int:9:int:2.6:23.4,armor:1720:armor:0.12:206.4
-R	shaman/enhancement	60	14964	12725	oh	225.3	spi:9:spi:1.1:9.9,str:9:str:1:9,armor:1720:armor:0.12:206.4
-R	shaman/enhancement	60	14964	12726	oh	229.8	agi:9:agi:1.5:13.5,spi:9:spi:1.1:9.9,armor:1720:armor:0.12:206.4
-R	shaman/enhancement	60	14964	12727	oh	228.9	agi:9:agi:1.5:13.5,str:9:str:1:9,armor:1720:armor:0.12:206.4
-R	shaman/enhancement	60	14964	12728	oh	227.4	agi:14:agi:1.5:21,armor:1720:armor:0.12:206.4
-R	shaman/enhancement	60	14964	12729	oh	242.8	int:14:int:2.6:36.4,armor:1720:armor:0.12:206.4
-R	shaman/enhancement	60	14964	12730	oh	221.8	spi:14:spi:1.1:15.4,armor:1720:armor:0.12:206.4
-R	shaman/enhancement	60	14964	12731	oh	254.0	sta:14:sta:3.4:47.6,armor:1720:armor:0.12:206.4
-R	shaman/enhancement	60	14964	12732	oh	220.4	str:14:str:1:14,armor:1720:armor:0.12:206.4
-R	shaman/enhancement	60	14964	12733	oh	220.4	ap:28:ap:0.5:14,armor:1720:armor:0.12:206.4
-R	shaman/enhancement	60	14964	12734	oh	224.0	sp:16:sp:1.1:17.6,armor:1720:armor:0.12:206.4
-R	shaman/enhancement	60	14964	12735	oh	217.4	spDmg:10:sp:1.1:11,armor:1720:armor:0.12:206.4
-R	shaman/enhancement	60	14964	12736	oh	206.4	armor:1720:armor:0.12:206.4
-R	shaman/enhancement	60	14964	12740	oh	237.0	sta:9:sta:3.4:30.6,armor:1720:armor:0.12:206.4
-R	shaman/enhancement	60	14964	12741	oh	237.0	sta:9:sta:3.4:30.6,armor:1720:armor:0.12:206.4
-R	shaman/enhancement	60	14964	12742	oh	237.0	sta:9:sta:3.4:30.6,armor:1720:armor:0.12:206.4
-R	shaman/enhancement	60	14964	12743	oh	237.0	sta:9:sta:3.4:30.6,armor:1720:armor:0.12:206.4
-R	shaman/enhancement	60	14964	12744	oh	237.0	sta:9:sta:3.4:30.6,armor:1720:armor:0.12:206.4
-R	shaman/enhancement	60	14964	12745	oh	258.3	int:10:int:2.6:26,sta:6:sta:3.4:20.4,sp:5:sp:1.1:5.5,armor:1720:armor:0.12:206.4
-R	shaman/enhancement	60	14964	12746	oh	244.5	int:10:int:2.6:26,spi:6:spi:1.1:6.6,sp:5:sp:1.1:5.5,armor:1720:armor:0.12:206.4
-R	shaman/enhancement	60	14964	12747	oh	252.5	spi:6:spi:1.1:6.6,sta:10:sta:3.4:34,sp:5:sp:1.1:5.5,armor:1720:armor:0.12:206.4
-R	shaman/enhancement	60	14964	12748	oh	259.3	int:6:int:2.6:15.6,sta:10:sta:3.4:34,spDmg:3:sp:1.1:3.3,armor:1720:armor:0.12:206.4
-R	shaman/enhancement	60	14964	12749	oh	242.3	int:10:int:2.6:26,spi:6:spi:1.1:6.6,spDmg:3:sp:1.1:3.3,armor:1720:armor:0.12:206.4
-R	shaman/enhancement	60	14964	12750	oh	250.3	spi:6:spi:1.1:6.6,sta:10:sta:3.4:34,spDmg:3:sp:1.1:3.3,armor:1720:armor:0.12:206.4
-R	shaman/enhancement	60	14964	12753	oh	246.4	sta:10:sta:3.4:34,str:6:str:1:6,armor:1720:armor:0.12:206.4
-R	shaman/enhancement	60	14964	12754	oh	245.9	sp:5:sp:1.1:5.5,sta:10:sta:3.4:34,armor:1720:armor:0.12:206.4
-R	shaman/enhancement	60	14964	12759	oh	206.4	armor:1720:armor:0.12:206.4
-R	shaman/enhancement	60	14964	12760	oh	221.6	spNature:20:spNature:0.76:15.2,armor:1720:armor:0.12:206.4
-R	shaman/enhancement	60	15235	0	mh	168.647	dps:28.57:dps:7.1:202.847,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	15235	12718	mh	198.647	int:5:int:2.6:13,sta:5:sta:3.4:17,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	15235	12719	mh	191.147	spi:5:spi:1.1:5.5,sta:5:sta:3.4:17,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	15235	12720	mh	187.147	int:5:int:2.6:13,spi:5:spi:1.1:5.5,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	15235	12721	mh	193.147	agi:5:agi:1.5:7.5,sta:5:sta:3.4:17,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	15235	12722	mh	190.647	sta:5:sta:3.4:17,str:5:str:1:5,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	15235	12723	mh	186.647	int:5:int:2.6:13,str:5:str:1:5,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	15235	12724	mh	189.147	agi:5:agi:1.5:7.5,int:5:int:2.6:13,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	15235	12725	mh	179.147	spi:5:spi:1.1:5.5,str:5:str:1:5,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	15235	12726	mh	181.647	agi:5:agi:1.5:7.5,spi:5:spi:1.1:5.5,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	15235	12727	mh	181.147	agi:5:agi:1.5:7.5,str:5:str:1:5,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	15235	12728	mh	180.647	agi:8:agi:1.5:12,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	15235	12729	mh	189.447	int:8:int:2.6:20.8,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	15235	12730	mh	177.447	spi:8:spi:1.1:8.8,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	15235	12731	mh	195.84699999999998	sta:8:sta:3.4:27.2,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	15235	12732	mh	176.647	str:8:str:1:8,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	15235	12733	mh	176.647	ap:16:ap:0.5:8,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	15235	12736	mh	168.647	dps:28.57:dps:7.1:202.847,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	15235	12740	mh	185.647	sta:5:sta:3.4:17,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	15235	12741	mh	185.647	sta:5:sta:3.4:17,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	15235	12742	mh	185.647	sta:5:sta:3.4:17,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	15235	12743	mh	185.647	sta:5:sta:3.4:17,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	15235	12744	mh	185.647	sta:5:sta:3.4:17,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	15235	12751	mh	197.047	agi:3:agi:1.5:4.5,ap:7:ap:0.5:3.5,sta:6:sta:3.4:20.4,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	15235	12752	mh	196.547	agi:3:agi:1.5:4.5,sta:6:sta:3.4:20.4,str:3:str:1:3,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	15235	12753	mh	192.047	sta:6:sta:3.4:20.4,str:3:str:1:3,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	15235	12754	mh	192.34699999999998	sp:3:sp:1.1:3.3,sta:6:sta:3.4:20.4,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	15235	12759	mh	168.647	dps:28.57:dps:7.1:202.847,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	15235	12906	mh	172.055	int:6:int:2.6:15.6,sta:4:sta:3.4:13.6,sp:38:sp:1.1:41.8,dps:19.05:dps:7.1:135.255,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	15235	12908	mh	162.85500000000002	int:6:int:2.6:15.6,sp:38:sp:1.1:41.8,spi:4:spi:1.1:4.4,dps:19.05:dps:7.1:135.255,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	15235	12910	mh	167.655	sp:38:sp:1.1:41.8,spi:4:spi:1.1:4.4,sta:6:sta:3.4:20.4,dps:19.05:dps:7.1:135.255,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	15235	12912	mh	158.255	spDmg:24:sp:1.1:26.4,int:4:int:2.6:10.4,sta:6:sta:3.4:20.4,dps:19.05:dps:7.1:135.255,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	15235	12913	mh	147.455	int:6:int:2.6:15.6,spDmg:24:sp:1.1:26.4,spi:4:spi:1.1:4.4,dps:19.05:dps:7.1:135.255,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	15235	12916	mh	152.255	spDmg:24:sp:1.1:26.4,spi:4:spi:1.1:4.4,sta:6:sta:3.4:20.4,dps:19.05:dps:7.1:135.255,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	15235	12917	mh	163.65500000000003	sp:38:sp:1.1:41.8,int:8:int:2.6:20.8,dps:19.05:dps:7.1:135.255,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	15235	12920	mh	148.255	int:8:int:2.6:20.8,spDmg:24:sp:1.1:26.4,dps:19.05:dps:7.1:135.255,speed:-0.6:speed:57:-34.2
-R	shaman/enhancement	60	15477	0	gear	12.12	armor:101:armor:0.12:12.12
-R	shaman/enhancement	60	15477	12718	gear	18.119999999999997	int:1:int:2.6:2.6,sta:1:sta:3.4:3.4,armor:101:armor:0.12:12.12
-R	shaman/enhancement	60	15477	12719	gear	16.619999999999997	spi:1:spi:1.1:1.1,sta:1:sta:3.4:3.4,armor:101:armor:0.12:12.12
-R	shaman/enhancement	60	15477	12720	gear	15.82	int:1:int:2.6:2.6,spi:1:spi:1.1:1.1,armor:101:armor:0.12:12.12
-R	shaman/enhancement	60	15477	12721	gear	17.02	agi:1:agi:1.5:1.5,sta:1:sta:3.4:3.4,armor:101:armor:0.12:12.12
-R	shaman/enhancement	60	15477	12722	gear	16.52	sta:1:sta:3.4:3.4,str:1:str:1:1,armor:101:armor:0.12:12.12
-R	shaman/enhancement	60	15477	12723	gear	15.719999999999999	int:1:int:2.6:2.6,str:1:str:1:1,armor:101:armor:0.12:12.12
-R	shaman/enhancement	60	15477	12724	gear	16.22	agi:1:agi:1.5:1.5,int:1:int:2.6:2.6,armor:101:armor:0.12:12.12
-R	shaman/enhancement	60	15477	12725	gear	14.219999999999999	spi:1:spi:1.1:1.1,str:1:str:1:1,armor:101:armor:0.12:12.12
-R	shaman/enhancement	60	15477	12726	gear	14.719999999999999	agi:1:agi:1.5:1.5,spi:1:spi:1.1:1.1,armor:101:armor:0.12:12.12
-R	shaman/enhancement	60	15477	12727	gear	14.62	agi:1:agi:1.5:1.5,str:1:str:1:1,armor:101:armor:0.12:12.12
-R	shaman/enhancement	60	15477	12728	gear	15.12	agi:2:agi:1.5:3,armor:101:armor:0.12:12.12
-R	shaman/enhancement	60	15477	12729	gear	17.32	int:2:int:2.6:5.2,armor:101:armor:0.12:12.12
-R	shaman/enhancement	60	15477	12730	gear	14.32	spi:2:spi:1.1:2.2,armor:101:armor:0.12:12.12
-R	shaman/enhancement	60	15477	12731	gear	18.919999999999998	sta:2:sta:3.4:6.8,armor:101:armor:0.12:12.12
-R	shaman/enhancement	60	15477	12732	gear	14.12	str:2:str:1:2,armor:101:armor:0.12:12.12
-R	shaman/enhancement	60	15477	12733	gear	14.12	ap:4:ap:0.5:2,armor:101:armor:0.12:12.12
-R	shaman/enhancement	60	15477	12734	gear	14.32	sp:2:sp:1.1:2.2,armor:101:armor:0.12:12.12
-R	shaman/enhancement	60	15477	12735	gear	13.219999999999999	spDmg:1:sp:1.1:1.1,armor:101:armor:0.12:12.12
-R	shaman/enhancement	60	15477	12736	gear	12.12	armor:101:armor:0.12:12.12
-R	shaman/enhancement	60	15477	12740	gear	15.52	sta:1:sta:3.4:3.4,armor:101:armor:0.12:12.12
-R	shaman/enhancement	60	15477	12741	gear	15.52	sta:1:sta:3.4:3.4,armor:101:armor:0.12:12.12
-R	shaman/enhancement	60	15477	12742	gear	15.52	sta:1:sta:3.4:3.4,armor:101:armor:0.12:12.12
-R	shaman/enhancement	60	15477	12743	gear	15.52	sta:1:sta:3.4:3.4,armor:101:armor:0.12:12.12
-R	shaman/enhancement	60	15477	12744	gear	15.52	sta:1:sta:3.4:3.4,armor:101:armor:0.12:12.12
-R	shaman/enhancement	60	15477	12759	gear	12.12	armor:101:armor:0.12:12.12
-R	shaman/enhancement	60	15945	0	oh	9.0	sta:2:sta:3.4:6.8,spi:2:spi:1.1:2.2
-R	shaman/enhancement	60	16711	0	gear	82.02	agi:21:agi:1.5:31.5,sta:9:sta:3.4:30.6,hit:0.3:hit:6.4:1.92,hit:0.3:spellHit:14:4.2,armor:115:armor:0.12:13.8
-R	shaman/enhancement	60	18726	0	gear	59.76	sta:15:sta:3.4:51,armor:73:armor:0.12:8.76
-R	shaman/enhancement	60	20129	0	gear	54.239999999999995	agi:6:agi:1.5:9,str:6:str:1:6,sta:6:sta:3.4:20.4,armor:157:armor:0.12:18.84
+R	shaman/enhancement	60	11994	12738	gear	2.8	mp5:2:mp5:1.4:2.8
+R	shaman/enhancement	60	11994	12739	gear	2.8	agi:2:agi:1.4:2.8
+R	shaman/enhancement	60	11994	12740	gear	8.399999999999999	sta:3:sta:2.8:8.4
+R	shaman/enhancement	60	11994	12741	gear	8.399999999999999	sta:3:sta:2.8:8.4
+R	shaman/enhancement	60	11994	12742	gear	8.399999999999999	sta:3:sta:2.8:8.4
+R	shaman/enhancement	60	11994	12743	gear	8.399999999999999	sta:3:sta:2.8:8.4
+R	shaman/enhancement	60	11994	12744	gear	8.399999999999999	sta:3:sta:2.8:8.4
+R	shaman/enhancement	60	13183	0	mh	246.63699999999997	dps:39.47:dps:7.1:280.237,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	14122	0	gear	1.372	armor:14:armor:0.098:1.372
+R	shaman/enhancement	60	14122	12718	gear	13.372	int:2:int:3.2:6.4,sta:2:sta:2.8:5.6,armor:14:armor:0.098:1.372
+R	shaman/enhancement	60	14122	12719	gear	9.172	spi:2:spi:1.1:2.2,sta:2:sta:2.8:5.6,armor:14:armor:0.098:1.372
+R	shaman/enhancement	60	14122	12720	gear	9.972000000000001	int:2:int:3.2:6.4,spi:2:spi:1.1:2.2,armor:14:armor:0.098:1.372
+R	shaman/enhancement	60	14122	12729	gear	10.972000000000001	int:3:int:3.2:9.6,armor:14:armor:0.098:1.372
+R	shaman/enhancement	60	14122	12730	gear	4.672000000000001	spi:3:spi:1.1:3.3,armor:14:armor:0.098:1.372
+R	shaman/enhancement	60	14122	12731	gear	9.771999999999998	sta:3:sta:2.8:8.4,armor:14:armor:0.098:1.372
+R	shaman/enhancement	60	14122	12734	gear	5.772	sp:4:sp:1.1:4.4,armor:14:armor:0.098:1.372
+R	shaman/enhancement	60	14122	12735	gear	3.572	spDmg:2:sp:1.1:2.2,armor:14:armor:0.098:1.372
+R	shaman/enhancement	60	14122	12740	gear	6.9719999999999995	sta:2:sta:2.8:5.6,armor:14:armor:0.098:1.372
+R	shaman/enhancement	60	14122	12741	gear	6.9719999999999995	sta:2:sta:2.8:5.6,armor:14:armor:0.098:1.372
+R	shaman/enhancement	60	14122	12742	gear	6.9719999999999995	sta:2:sta:2.8:5.6,armor:14:armor:0.098:1.372
+R	shaman/enhancement	60	14122	12743	gear	6.9719999999999995	sta:2:sta:2.8:5.6,armor:14:armor:0.098:1.372
+R	shaman/enhancement	60	14122	12744	gear	6.9719999999999995	sta:2:sta:2.8:5.6,armor:14:armor:0.098:1.372
+R	shaman/enhancement	60	14122	12745	gear	11.671999999999999	int:2:int:3.2:6.4,sta:1:sta:2.8:2.8,sp:1:sp:1.1:1.1,armor:14:armor:0.098:1.372
+R	shaman/enhancement	60	14122	12756	gear	1.372	armor:14:armor:0.098:1.372
+R	shaman/enhancement	60	14122	12757	gear	1.372	armor:14:armor:0.098:1.372
+R	shaman/enhancement	60	14122	12758	gear	1.372	armor:14:armor:0.098:1.372
+R	shaman/enhancement	60	14122	12759	gear	1.372	armor:14:armor:0.098:1.372
+R	shaman/enhancement	60	14122	12761	gear	1.372	armor:14:armor:0.098:1.372
+R	shaman/enhancement	60	14340	0	gear	61.824	sta:19:sta:2.8:53.2,armor:88:armor:0.098:8.624
+R	shaman/enhancement	60	14673	0	gear	32.932	str:3:str:1:3,agi:9:agi:1.4:12.6,sta:5:sta:2.8:14,armor:34:armor:0.098:3.332
+R	shaman/enhancement	60	14964	0	oh	168.56	armor:1720:armor:0.098:168.56
+R	shaman/enhancement	60	14964	12718	oh	222.56	int:9:int:3.2:28.8,sta:9:sta:2.8:25.2,armor:1720:armor:0.098:168.56
+R	shaman/enhancement	60	14964	12719	oh	203.66	spi:9:spi:1.1:9.9,sta:9:sta:2.8:25.2,armor:1720:armor:0.098:168.56
+R	shaman/enhancement	60	14964	12720	oh	207.26	int:9:int:3.2:28.8,spi:9:spi:1.1:9.9,armor:1720:armor:0.098:168.56
+R	shaman/enhancement	60	14964	12721	oh	206.36	agi:9:agi:1.4:12.6,sta:9:sta:2.8:25.2,armor:1720:armor:0.098:168.56
+R	shaman/enhancement	60	14964	12722	oh	202.76	sta:9:sta:2.8:25.2,str:9:str:1:9,armor:1720:armor:0.098:168.56
+R	shaman/enhancement	60	14964	12723	oh	206.36	int:9:int:3.2:28.8,str:9:str:1:9,armor:1720:armor:0.098:168.56
+R	shaman/enhancement	60	14964	12724	oh	209.96	agi:9:agi:1.4:12.6,int:9:int:3.2:28.8,armor:1720:armor:0.098:168.56
+R	shaman/enhancement	60	14964	12725	oh	187.46	spi:9:spi:1.1:9.9,str:9:str:1:9,armor:1720:armor:0.098:168.56
+R	shaman/enhancement	60	14964	12726	oh	191.06	agi:9:agi:1.4:12.6,spi:9:spi:1.1:9.9,armor:1720:armor:0.098:168.56
+R	shaman/enhancement	60	14964	12727	oh	190.16	agi:9:agi:1.4:12.6,str:9:str:1:9,armor:1720:armor:0.098:168.56
+R	shaman/enhancement	60	14964	12728	oh	188.16	agi:14:agi:1.4:19.6,armor:1720:armor:0.098:168.56
+R	shaman/enhancement	60	14964	12729	oh	213.36	int:14:int:3.2:44.8,armor:1720:armor:0.098:168.56
+R	shaman/enhancement	60	14964	12730	oh	183.96	spi:14:spi:1.1:15.4,armor:1720:armor:0.098:168.56
+R	shaman/enhancement	60	14964	12731	oh	207.76	sta:14:sta:2.8:39.2,armor:1720:armor:0.098:168.56
+R	shaman/enhancement	60	14964	12732	oh	182.56	str:14:str:1:14,armor:1720:armor:0.098:168.56
+R	shaman/enhancement	60	14964	12733	oh	182.56	ap:28:ap:0.5:14,armor:1720:armor:0.098:168.56
+R	shaman/enhancement	60	14964	12734	oh	186.16	sp:16:sp:1.1:17.6,armor:1720:armor:0.098:168.56
+R	shaman/enhancement	60	14964	12735	oh	179.56	spDmg:10:sp:1.1:11,armor:1720:armor:0.098:168.56
+R	shaman/enhancement	60	14964	12736	oh	168.56	armor:1720:armor:0.098:168.56
+R	shaman/enhancement	60	14964	12740	oh	193.76	sta:9:sta:2.8:25.2,armor:1720:armor:0.098:168.56
+R	shaman/enhancement	60	14964	12741	oh	193.76	sta:9:sta:2.8:25.2,armor:1720:armor:0.098:168.56
+R	shaman/enhancement	60	14964	12742	oh	193.76	sta:9:sta:2.8:25.2,armor:1720:armor:0.098:168.56
+R	shaman/enhancement	60	14964	12743	oh	193.76	sta:9:sta:2.8:25.2,armor:1720:armor:0.098:168.56
+R	shaman/enhancement	60	14964	12744	oh	193.76	sta:9:sta:2.8:25.2,armor:1720:armor:0.098:168.56
+R	shaman/enhancement	60	14964	12745	oh	222.86	int:10:int:3.2:32,sta:6:sta:2.8:16.8,sp:5:sp:1.1:5.5,armor:1720:armor:0.098:168.56
+R	shaman/enhancement	60	14964	12746	oh	212.66	int:10:int:3.2:32,spi:6:spi:1.1:6.6,sp:5:sp:1.1:5.5,armor:1720:armor:0.098:168.56
+R	shaman/enhancement	60	14964	12747	oh	208.66	spi:6:spi:1.1:6.6,sta:10:sta:2.8:28,sp:5:sp:1.1:5.5,armor:1720:armor:0.098:168.56
+R	shaman/enhancement	60	14964	12748	oh	219.06	int:6:int:3.2:19.2,sta:10:sta:2.8:28,spDmg:3:sp:1.1:3.3,armor:1720:armor:0.098:168.56
+R	shaman/enhancement	60	14964	12749	oh	210.46	int:10:int:3.2:32,spi:6:spi:1.1:6.6,spDmg:3:sp:1.1:3.3,armor:1720:armor:0.098:168.56
+R	shaman/enhancement	60	14964	12750	oh	206.46	spi:6:spi:1.1:6.6,sta:10:sta:2.8:28,spDmg:3:sp:1.1:3.3,armor:1720:armor:0.098:168.56
+R	shaman/enhancement	60	14964	12753	oh	202.56	sta:10:sta:2.8:28,str:6:str:1:6,armor:1720:armor:0.098:168.56
+R	shaman/enhancement	60	14964	12754	oh	202.06	sp:5:sp:1.1:5.5,sta:10:sta:2.8:28,armor:1720:armor:0.098:168.56
+R	shaman/enhancement	60	14964	12759	oh	168.56	armor:1720:armor:0.098:168.56
+R	shaman/enhancement	60	14964	12760	oh	183.16	spNature:20:spNature:0.73:14.6,armor:1720:armor:0.098:168.56
+R	shaman/enhancement	60	15235	0	mh	169.24699999999999	dps:28.57:dps:7.1:202.847,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	15235	12718	mh	199.24699999999999	int:5:int:3.2:16,sta:5:sta:2.8:14,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	15235	12719	mh	188.74699999999999	spi:5:spi:1.1:5.5,sta:5:sta:2.8:14,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	15235	12720	mh	190.74699999999999	int:5:int:3.2:16,spi:5:spi:1.1:5.5,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	15235	12721	mh	190.24699999999999	agi:5:agi:1.4:7,sta:5:sta:2.8:14,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	15235	12722	mh	188.24699999999999	sta:5:sta:2.8:14,str:5:str:1:5,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	15235	12723	mh	190.24699999999999	int:5:int:3.2:16,str:5:str:1:5,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	15235	12724	mh	192.24699999999999	agi:5:agi:1.4:7,int:5:int:3.2:16,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	15235	12725	mh	179.74699999999999	spi:5:spi:1.1:5.5,str:5:str:1:5,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	15235	12726	mh	181.74699999999999	agi:5:agi:1.4:7,spi:5:spi:1.1:5.5,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	15235	12727	mh	181.24699999999999	agi:5:agi:1.4:7,str:5:str:1:5,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	15235	12728	mh	180.44699999999997	agi:8:agi:1.4:11.2,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	15235	12729	mh	194.84699999999998	int:8:int:3.2:25.6,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	15235	12730	mh	178.047	spi:8:spi:1.1:8.8,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	15235	12731	mh	191.647	sta:8:sta:2.8:22.4,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	15235	12732	mh	177.24699999999999	str:8:str:1:8,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	15235	12733	mh	177.24699999999999	ap:16:ap:0.5:8,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	15235	12736	mh	169.24699999999999	dps:28.57:dps:7.1:202.847,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	15235	12740	mh	183.24699999999999	sta:5:sta:2.8:14,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	15235	12741	mh	183.24699999999999	sta:5:sta:2.8:14,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	15235	12742	mh	183.24699999999999	sta:5:sta:2.8:14,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	15235	12743	mh	183.24699999999999	sta:5:sta:2.8:14,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	15235	12744	mh	183.24699999999999	sta:5:sta:2.8:14,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	15235	12751	mh	193.74699999999999	agi:3:agi:1.4:4.2,ap:7:ap:0.5:3.5,sta:6:sta:2.8:16.8,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	15235	12752	mh	193.24699999999999	agi:3:agi:1.4:4.2,sta:6:sta:2.8:16.8,str:3:str:1:3,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	15235	12753	mh	189.047	sta:6:sta:2.8:16.8,str:3:str:1:3,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	15235	12754	mh	189.34699999999998	sp:3:sp:1.1:3.3,sta:6:sta:2.8:16.8,dps:28.57:dps:7.1:202.847,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	15235	12759	mh	169.24699999999999	dps:28.57:dps:7.1:202.847,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	15235	12906	mh	173.855	int:6:int:3.2:19.2,sta:4:sta:2.8:11.2,sp:38:sp:1.1:41.8,dps:19.05:dps:7.1:135.255,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	15235	12908	mh	167.055	int:6:int:3.2:19.2,sp:38:sp:1.1:41.8,spi:4:spi:1.1:4.4,dps:19.05:dps:7.1:135.255,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	15235	12910	mh	164.655	sp:38:sp:1.1:41.8,spi:4:spi:1.1:4.4,sta:6:sta:2.8:16.8,dps:19.05:dps:7.1:135.255,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	15235	12912	mh	157.655	spDmg:24:sp:1.1:26.4,int:4:int:3.2:12.8,sta:6:sta:2.8:16.8,dps:19.05:dps:7.1:135.255,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	15235	12913	mh	151.655	int:6:int:3.2:19.2,spDmg:24:sp:1.1:26.4,spi:4:spi:1.1:4.4,dps:19.05:dps:7.1:135.255,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	15235	12916	mh	149.255	spDmg:24:sp:1.1:26.4,spi:4:spi:1.1:4.4,sta:6:sta:2.8:16.8,dps:19.05:dps:7.1:135.255,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	15235	12917	mh	169.055	sp:38:sp:1.1:41.8,int:8:int:3.2:25.6,dps:19.05:dps:7.1:135.255,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	15235	12920	mh	153.655	int:8:int:3.2:25.6,spDmg:24:sp:1.1:26.4,dps:19.05:dps:7.1:135.255,speed:-0.6:speed:56:-33.6
+R	shaman/enhancement	60	15477	0	gear	9.898	armor:101:armor:0.098:9.898
+R	shaman/enhancement	60	15477	12718	gear	15.898	int:1:int:3.2:3.2,sta:1:sta:2.8:2.8,armor:101:armor:0.098:9.898
+R	shaman/enhancement	60	15477	12719	gear	13.798	spi:1:spi:1.1:1.1,sta:1:sta:2.8:2.8,armor:101:armor:0.098:9.898
+R	shaman/enhancement	60	15477	12720	gear	14.198	int:1:int:3.2:3.2,spi:1:spi:1.1:1.1,armor:101:armor:0.098:9.898
+R	shaman/enhancement	60	15477	12721	gear	14.097999999999999	agi:1:agi:1.4:1.4,sta:1:sta:2.8:2.8,armor:101:armor:0.098:9.898
+R	shaman/enhancement	60	15477	12722	gear	13.698	sta:1:sta:2.8:2.8,str:1:str:1:1,armor:101:armor:0.098:9.898
+R	shaman/enhancement	60	15477	12723	gear	14.097999999999999	int:1:int:3.2:3.2,str:1:str:1:1,armor:101:armor:0.098:9.898
+R	shaman/enhancement	60	15477	12724	gear	14.498	agi:1:agi:1.4:1.4,int:1:int:3.2:3.2,armor:101:armor:0.098:9.898
+R	shaman/enhancement	60	15477	12725	gear	11.998	spi:1:spi:1.1:1.1,str:1:str:1:1,armor:101:armor:0.098:9.898
+R	shaman/enhancement	60	15477	12726	gear	12.398	agi:1:agi:1.4:1.4,spi:1:spi:1.1:1.1,armor:101:armor:0.098:9.898
+R	shaman/enhancement	60	15477	12727	gear	12.298	agi:1:agi:1.4:1.4,str:1:str:1:1,armor:101:armor:0.098:9.898
+R	shaman/enhancement	60	15477	12728	gear	12.698	agi:2:agi:1.4:2.8,armor:101:armor:0.098:9.898
+R	shaman/enhancement	60	15477	12729	gear	16.298000000000002	int:2:int:3.2:6.4,armor:101:armor:0.098:9.898
+R	shaman/enhancement	60	15477	12730	gear	12.097999999999999	spi:2:spi:1.1:2.2,armor:101:armor:0.098:9.898
+R	shaman/enhancement	60	15477	12731	gear	15.498	sta:2:sta:2.8:5.6,armor:101:armor:0.098:9.898
+R	shaman/enhancement	60	15477	12732	gear	11.898	str:2:str:1:2,armor:101:armor:0.098:9.898
+R	shaman/enhancement	60	15477	12733	gear	11.898	ap:4:ap:0.5:2,armor:101:armor:0.098:9.898
+R	shaman/enhancement	60	15477	12734	gear	12.097999999999999	sp:2:sp:1.1:2.2,armor:101:armor:0.098:9.898
+R	shaman/enhancement	60	15477	12735	gear	10.998	spDmg:1:sp:1.1:1.1,armor:101:armor:0.098:9.898
+R	shaman/enhancement	60	15477	12736	gear	9.898	armor:101:armor:0.098:9.898
+R	shaman/enhancement	60	15477	12740	gear	12.698	sta:1:sta:2.8:2.8,armor:101:armor:0.098:9.898
+R	shaman/enhancement	60	15477	12741	gear	12.698	sta:1:sta:2.8:2.8,armor:101:armor:0.098:9.898
+R	shaman/enhancement	60	15477	12742	gear	12.698	sta:1:sta:2.8:2.8,armor:101:armor:0.098:9.898
+R	shaman/enhancement	60	15477	12743	gear	12.698	sta:1:sta:2.8:2.8,armor:101:armor:0.098:9.898
+R	shaman/enhancement	60	15477	12744	gear	12.698	sta:1:sta:2.8:2.8,armor:101:armor:0.098:9.898
+R	shaman/enhancement	60	15477	12759	gear	9.898	armor:101:armor:0.098:9.898
+R	shaman/enhancement	60	15945	0	oh	7.8	sta:2:sta:2.8:5.6,spi:2:spi:1.1:2.2
+R	shaman/enhancement	60	16711	0	gear	72.05	agi:21:agi:1.4:29.4,sta:9:sta:2.8:25.2,hit:0.3:hit:6.6:1.98,hit:0.3:spellHit:14:4.2,armor:115:armor:0.098:11.27
+R	shaman/enhancement	60	18726	0	gear	49.153999999999996	sta:15:sta:2.8:42,armor:73:armor:0.098:7.154
+R	shaman/enhancement	60	20129	0	gear	46.586	agi:6:agi:1.4:8.4,str:6:str:1:6,sta:6:sta:2.8:16.8,armor:157:armor:0.098:15.386
 R	shaman/enhancement	60	22345	0	ranged	0.0	
-R	shaman/enhancement	60	22967	0	gear	132.16	sta:25:sta:3.4:85,armor:393:armor:0.12:47.16
-R	shaman/enhancement	60	250491	0	gear	54.18	int:5:int:2.6:13,sta:4:sta:3.4:13.6,spDmg:5:sp:1.1:5.5,armor:184:armor:0.12:22.08
-R	shaman/enhancement	60	252507	0	gear	49.72	sta:10:sta:3.4:34,spDmg:6:sp:1.1:6.6,armor:76:armor:0.12:9.12
-R	shaman/enhancement	60	254111	0	gear	74.08	int:9:int:2.6:23.4,sta:13:sta:3.4:44.2,armor:54:armor:0.12:6.48
-R	shaman/enhancement	60	270033	0	gear	13.68	agi:4:agi:1.5:6,str:3:str:1:3,armor:39:armor:0.12:4.68
-R	shaman/enhancement	60	271956	0	gear	138.94	agi:27:agi:1.5:40.5,sta:12:sta:3.4:40.8,crit:1:crit:14:14,crit:1:spellCrit:6.2:6.2,armor:312:armor:0.12:37.44
-R	shaman/enhancement	60	272958	0	gear	166.04	int:27:int:2.6:70.2,sta:12:sta:3.4:40.8,sp:16:sp:1.1:17.6,armor:312:armor:0.12:37.44
-R	shaman/enhancement	60	280082	0	mh	434.07500000000005	int:15:int:2.6:39,hit:1.5:hit:6.4:9.6,hit:1.5:spellHit:14:21,spi:21:spi:1.1:23.1,sp:66:sp:1.1:72.6,dps:36.25:dps:7.1:257.375,speed:0.2:speed:57:11.4
-R	shaman/enhancement	60	282560	0	gear	104.55999999999999	int:10:int:2.6:26,sta:13:sta:3.4:44.2,sp:8:sp:1.1:8.8,armor:213:armor:0.12:25.56
-R	shaman/enhancement	60	286609	0	oh	219.72	spi:6:spi:1.1:6.6,armor:1776:armor:0.12:213.12
+R	shaman/enhancement	60	22967	0	gear	108.51400000000001	sta:25:sta:2.8:70,armor:393:armor:0.098:38.514
+R	shaman/enhancement	60	250491	0	gear	50.732	int:5:int:3.2:16,sta:4:sta:2.8:11.2,spDmg:5:sp:1.1:5.5,armor:184:armor:0.098:18.032
+R	shaman/enhancement	60	252507	0	gear	42.048	sta:10:sta:2.8:28,spDmg:6:sp:1.1:6.6,armor:76:armor:0.098:7.448
+R	shaman/enhancement	60	254111	0	gear	70.492	int:9:int:3.2:28.8,sta:13:sta:2.8:36.4,armor:54:armor:0.098:5.292
+R	shaman/enhancement	60	270033	0	gear	12.422	agi:4:agi:1.4:5.6,str:3:str:1:3,armor:39:armor:0.098:3.822
+R	shaman/enhancement	60	271956	0	gear	122.076	agi:27:agi:1.4:37.8,sta:12:sta:2.8:33.6,crit:1:crit:14:14,crit:1:spellCrit:6.1:6.1,armor:312:armor:0.098:30.576
+R	shaman/enhancement	60	272958	0	gear	168.176	int:27:int:3.2:86.4,sta:12:sta:2.8:33.6,sp:16:sp:1.1:17.6,armor:312:armor:0.098:30.576
+R	shaman/enhancement	60	280082	0	mh	443.175	int:15:int:3.2:48,hit:1.5:hit:6.6:9.9,hit:1.5:spellHit:14:21,spi:21:spi:1.1:23.1,sp:66:sp:1.1:72.6,dps:36.25:dps:7.1:257.375,speed:0.2:speed:56:11.2
+R	shaman/enhancement	60	282560	0	gear	98.07400000000001	int:10:int:3.2:32,sta:13:sta:2.8:36.4,sp:8:sp:1.1:8.8,armor:213:armor:0.098:20.874
+R	shaman/enhancement	60	286609	0	oh	180.648	spi:6:spi:1.1:6.6,armor:1776:armor:0.098:174.048
 R	paladin/holy	12	25	0	mh	7.14	dps:1.05:dps:6.8:7.14
 R	paladin/holy	12	1315	0	gear	21.35	sta:10:sta:1.4:14,spi:15:spi:0.49:7.35
 R	paladin/holy	12	1808	0	gear	4.4399999999999995	armor:74:armor:0.06:4.44
@@ -35956,131 +35956,131 @@ B	druid/restoration	60	254111	gear	0	12.914000000000001
 B	druid/restoration	60	270033	gear	0	0.8190000000000001
 B	druid/restoration	60	273892	gear	0	43.962
 B	druid/restoration	60	280082	mh	0	95.37
-B	druid/feral	12	1315	gear	0	18.65
-B	druid/feral	12	1808	gear	0	7.4
+B	druid/feral	12	1315	gear	0	19.4
+B	druid/feral	12	1808	gear	0	7.3260000000000005
 B	druid/feral	12	1990	mh	12722	189.628
 B	druid/feral	12	2140	mh	12722	42.792
 B	druid/feral	12	2225	mh	0	34.0
-B	druid/feral	12	2614	gear	0	2.9000000000000004
-B	druid/feral	12	3158	gear	0	2.6
+B	druid/feral	12	2614	gear	0	2.871
+B	druid/feral	12	3158	gear	0	2.5740000000000003
 B	druid/feral	12	3570	mh	0	57.215999999999994
 B	druid/feral	12	4023	mh	0	104.448
 B	druid/feral	12	4570	mh	12722	75.2
 B	druid/feral	12	5079	gear	0	0.0
-B	druid/feral	12	6540	gear	12731	9.8
-B	druid/feral	12	6557	gear	12722	9.7
-B	druid/feral	12	7047	gear	0	4.15
-B	druid/feral	12	8192	gear	0	18.57
-B	druid/feral	12	9834	gear	12722	21.7
-B	druid/feral	12	11187	gear	0	0.4
+B	druid/feral	12	6540	gear	12731	9.772
+B	druid/feral	12	6557	gear	12722	9.651
+B	druid/feral	12	7047	gear	0	4.3740000000000006
+B	druid/feral	12	8192	gear	0	18.594
+B	druid/feral	12	9834	gear	12722	21.627
+B	druid/feral	12	11187	gear	0	0.396
 B	druid/feral	12	11994	gear	12722	7.199999999999999
 B	druid/feral	12	13183	mh	0	268.39599999999996
-B	druid/feral	12	14122	gear	12731	5.6
-B	druid/feral	12	14340	gear	0	35.4
-B	druid/feral	12	14673	gear	0	15.83
-B	druid/feral	12	15945	oh	0	3.42
-B	druid/feral	12	16711	gear	0	30.052
-B	druid/feral	12	18726	gear	0	28.3
+B	druid/feral	12	14122	gear	12731	5.585999999999999
+B	druid/feral	12	14340	gear	0	35.312
+B	druid/feral	12	14673	gear	0	15.886
+B	druid/feral	12	15945	oh	0	3.5199999999999996
+B	druid/feral	12	16711	gear	0	30.15
+B	druid/feral	12	18726	gear	0	28.227
 B	druid/feral	12	22397	ranged	0	0.0
-B	druid/feral	12	252507	gear	0	21.6
-B	druid/feral	12	254111	gear	0	24.769999999999996
-B	druid/feral	12	270033	gear	0	7.98
-B	druid/feral	12	273892	gear	0	51.629999999999995
-B	druid/feral	12	280082	mh	0	256.37
-B	druid/feral	25	1315	gear	0	28.45
-B	druid/feral	25	1808	gear	0	4.958
-B	druid/feral	25	1990	mh	12752	172.667
-B	druid/feral	25	2140	mh	12722	37.05800000000001
+B	druid/feral	12	252507	gear	0	21.524
+B	druid/feral	12	254111	gear	0	25.346
+B	druid/feral	12	270033	gear	0	7.981
+B	druid/feral	12	273892	gear	0	53.598
+B	druid/feral	12	280082	mh	0	258.485
+B	druid/feral	25	1315	gear	0	19.9
+B	druid/feral	25	1808	gear	0	4.218
+B	druid/feral	25	1990	mh	12752	163.007
+B	druid/feral	25	2140	mh	12722	36.158
 B	druid/feral	25	2225	mh	0	28.5
-B	druid/feral	25	2614	gear	0	1.943
-B	druid/feral	25	3158	gear	0	1.742
+B	druid/feral	25	2614	gear	0	1.653
+B	druid/feral	25	3158	gear	0	1.482
 B	druid/feral	25	3570	mh	0	48.284
 B	druid/feral	25	4023	mh	0	87.55199999999999
-B	druid/feral	25	4570	mh	12722	66.6
+B	druid/feral	25	4570	mh	12722	63.9
 B	druid/feral	25	5079	gear	0	0.0
-B	druid/feral	25	6540	gear	12731	12.876
-B	druid/feral	25	6557	gear	12731	9.883000000000001
-B	druid/feral	25	7047	gear	0	3.892
-B	druid/feral	25	8192	gear	0	27.432000000000002
-B	druid/feral	25	9834	gear	12752	27.171
-B	druid/feral	25	11187	gear	0	0.268
-B	druid/feral	25	11994	gear	12731	11.0
+B	druid/feral	25	6540	gear	12731	8.096
+B	druid/feral	25	6557	gear	12722	7.393
+B	druid/feral	25	7047	gear	0	3.782
+B	druid/feral	25	8192	gear	0	20.862
+B	druid/feral	25	9834	gear	12752	19.701
+B	druid/feral	25	11187	gear	0	0.228
+B	druid/feral	25	11994	gear	12722	6.9
 B	druid/feral	25	13183	mh	0	224.979
-B	druid/feral	25	14122	gear	12731	7.538
-B	druid/feral	25	14340	gear	0	47.696000000000005
-B	druid/feral	25	14673	gear	0	25.008
-B	druid/feral	25	15945	oh	0	5.260000000000001
-B	druid/feral	25	16711	gear	0	48.205
-B	druid/feral	25	18726	gear	0	37.891
+B	druid/feral	25	14122	gear	12731	4.698
+B	druid/feral	25	14340	gear	0	29.716
+B	druid/feral	25	14673	gear	0	19.178
+B	druid/feral	25	15945	oh	0	3.52
+B	druid/feral	25	16711	gear	0	36.644999999999996
+B	druid/feral	25	18726	gear	0	23.661
 B	druid/feral	25	22397	ranged	0	0.0
-B	druid/feral	25	252507	gear	0	27.092
-B	druid/feral	25	254111	gear	0	32.884
-B	druid/feral	25	270033	gear	0	9.493
-B	druid/feral	25	273892	gear	0	63.14
-B	druid/feral	25	280082	mh	0	218.415
-B	druid/feral	34	1315	gear	0	23.1
-B	druid/feral	34	1808	gear	0	4.218
-B	druid/feral	34	1990	mh	12752	154.621
-B	druid/feral	34	2140	mh	12721	33.194
+B	druid/feral	25	252507	gear	0	17.332
+B	druid/feral	25	254111	gear	0	21.058000000000003
+B	druid/feral	25	270033	gear	0	8.663
+B	druid/feral	25	273892	gear	0	44.874
+B	druid/feral	25	280082	mh	0	219.735
+B	druid/feral	34	1315	gear	0	14.7
+B	druid/feral	34	1808	gear	0	3.7
+B	druid/feral	34	1990	mh	12752	145.621
+B	druid/feral	34	2140	mh	12727	32.294
 B	druid/feral	34	2225	mh	0	25.5
-B	druid/feral	34	2614	gear	0	1.653
-B	druid/feral	34	3158	gear	0	1.482
+B	druid/feral	34	2614	gear	0	1.4500000000000002
+B	druid/feral	34	3158	gear	0	1.3
 B	druid/feral	34	3570	mh	0	43.41199999999999
 B	druid/feral	34	4023	mh	0	78.336
-B	druid/feral	34	4570	mh	12721	59.7
+B	druid/feral	34	4570	mh	12727	57.0
 B	druid/feral	34	5079	gear	0	0.0
-B	druid/feral	34	6540	gear	12731	10.596
-B	druid/feral	34	6557	gear	12721	8.593
-B	druid/feral	34	7047	gear	0	3.1820000000000004
-B	druid/feral	34	8192	gear	0	26.002000000000002
-B	druid/feral	34	9834	gear	12752	24.161
-B	druid/feral	34	11187	gear	0	0.228
-B	druid/feral	34	11994	gear	12731	9.0
+B	druid/feral	34	6540	gear	12731	6.2
+B	druid/feral	34	6557	gear	12727	6.45
+B	druid/feral	34	7047	gear	0	3.0
+B	druid/feral	34	8192	gear	0	20.1
+B	druid/feral	34	9834	gear	12752	17.369999999999997
+B	druid/feral	34	11187	gear	0	0.2
+B	druid/feral	34	11994	gear	12727	6.0
 B	druid/feral	34	13183	mh	0	201.29699999999997
-B	druid/feral	34	14122	gear	12731	6.198
-B	druid/feral	34	14340	gear	0	39.216
-B	druid/feral	34	14673	gear	0	23.837999999999997
-B	druid/feral	34	15945	oh	0	4.28
-B	druid/feral	34	16711	gear	0	46.394999999999996
-B	druid/feral	34	18726	gear	0	31.161
+B	druid/feral	34	14122	gear	12731	3.58
+B	druid/feral	34	14340	gear	0	22.64
+B	druid/feral	34	14673	gear	0	18.5
+B	druid/feral	34	15945	oh	0	2.6
+B	druid/feral	34	16711	gear	0	35.93
+B	druid/feral	34	18726	gear	0	18.049999999999997
 B	druid/feral	34	22397	ranged	0	0.0
-B	druid/feral	34	252507	gear	0	22.332
-B	druid/feral	34	254111	gear	0	27.252000000000002
-B	druid/feral	34	270033	gear	0	9.623000000000001
-B	druid/feral	34	273892	gear	0	52.308
-B	druid/feral	34	280082	mh	0	196.005
-B	druid/feral	45	1315	gear	0	28.1
-B	druid/feral	45	1808	gear	0	5.401999999999999
-B	druid/feral	45	1990	mh	12752	151.008
-B	druid/feral	45	2140	mh	12721	31.912
+B	druid/feral	34	252507	gear	0	13.4
+B	druid/feral	34	254111	gear	0	15.612000000000002
+B	druid/feral	34	270033	gear	0	8.95
+B	druid/feral	34	273892	gear	0	33.652
+B	druid/feral	34	280082	mh	0	195.435
+B	druid/feral	45	1315	gear	0	27.25
+B	druid/feral	45	1808	gear	0	5.106000000000001
+B	druid/feral	45	1990	mh	12752	150.008
+B	druid/feral	45	2140	mh	12721	31.812
 B	druid/feral	45	2225	mh	0	24.0
-B	druid/feral	45	2614	gear	0	2.117
-B	druid/feral	45	3158	gear	0	1.898
+B	druid/feral	45	2614	gear	0	2.0010000000000003
+B	druid/feral	45	3158	gear	0	1.794
 B	druid/feral	45	3570	mh	0	40.97599999999999
 B	druid/feral	45	4023	mh	0	73.728
-B	druid/feral	45	4570	mh	12721	58.2
+B	druid/feral	45	4570	mh	12721	57.9
 B	druid/feral	45	5079	gear	0	0.0
-B	druid/feral	45	6540	gear	12731	12.044
-B	druid/feral	45	6557	gear	12721	10.376999999999999
-B	druid/feral	45	7047	gear	0	4.598
-B	druid/feral	45	8192	gear	0	31.677999999999997
-B	druid/feral	45	9834	gear	12752	27.929000000000002
-B	druid/feral	45	11187	gear	0	0.292
-B	druid/feral	45	11994	gear	12721	10.2
+B	druid/feral	45	6540	gear	12731	11.432
+B	druid/feral	45	6557	gear	12721	9.981
+B	druid/feral	45	7047	gear	0	4.5440000000000005
+B	druid/feral	45	8192	gear	0	30.834
+B	druid/feral	45	9834	gear	12752	26.936999999999998
+B	druid/feral	45	11187	gear	0	0.276
+B	druid/feral	45	11994	gear	12721	9.899999999999999
 B	druid/feral	45	13183	mh	0	189.456
-B	druid/feral	45	14122	gear	12731	7.022
-B	druid/feral	45	14340	gear	0	44.424
-B	druid/feral	45	14673	gear	0	28.082
-B	druid/feral	45	15945	oh	0	5.08
-B	druid/feral	45	16711	gear	0	56.485
-B	druid/feral	45	18726	gear	0	35.329
+B	druid/feral	45	14122	gear	12731	6.6659999999999995
+B	druid/feral	45	14340	gear	0	42.172000000000004
+B	druid/feral	45	14673	gear	0	27.446
+B	druid/feral	45	15945	oh	0	4.9
+B	druid/feral	45	16711	gear	0	55.095
+B	druid/feral	45	18726	gear	0	33.537
 B	druid/feral	45	22397	ranged	0	0.0
-B	druid/feral	45	252507	gear	0	25.548000000000002
-B	druid/feral	45	254111	gear	0	31.202
-B	druid/feral	45	270033	gear	0	11.447
-B	druid/feral	45	273892	gear	0	63.126
-B	druid/feral	45	280082	mh	0	190.89
-B	druid/feral	55	1315	gear	0	22.55
+B	druid/feral	45	252507	gear	0	24.244
+B	druid/feral	45	254111	gear	0	29.686
+B	druid/feral	45	270033	gear	0	11.291
+B	druid/feral	45	273892	gear	0	60.63799999999999
+B	druid/feral	45	280082	mh	0	190.95
+B	druid/feral	55	1315	gear	0	22.4
 B	druid/feral	55	1808	gear	0	5.55
 B	druid/feral	55	1990	mh	12752	132.58200000000002
 B	druid/feral	55	2140	mh	12721	27.948000000000004
@@ -36093,7 +36093,7 @@ B	druid/feral	55	4570	mh	12721	51.0
 B	druid/feral	55	5079	gear	0	0.0
 B	druid/feral	55	6540	gear	12731	10.6
 B	druid/feral	55	6557	gear	12721	9.675
-B	druid/feral	55	7047	gear	0	3.8
+B	druid/feral	55	7047	gear	0	3.75
 B	druid/feral	55	8192	gear	0	29.25
 B	druid/feral	55	9834	gear	12752	25.575000000000003
 B	druid/feral	55	11187	gear	0	0.3
@@ -36102,46 +36102,46 @@ B	druid/feral	55	13183	mh	0	165.774
 B	druid/feral	55	14122	gear	12731	6.1499999999999995
 B	druid/feral	55	14340	gear	0	38.9
 B	druid/feral	55	14673	gear	0	25.750000000000004
-B	druid/feral	55	15945	oh	0	4.14
+B	druid/feral	55	15945	oh	0	4.12
 B	druid/feral	55	16711	gear	0	52.005
 B	druid/feral	55	18726	gear	0	30.975
 B	druid/feral	55	22397	ranged	0	0.0
 B	druid/feral	55	252507	gear	0	22.7
-B	druid/feral	55	254111	gear	0	29.119999999999997
+B	druid/feral	55	254111	gear	0	29.209999999999997
 B	druid/feral	55	270033	gear	0	11.125
-B	druid/feral	55	273892	gear	0	58.34
-B	druid/feral	55	280082	mh	0	168.87
+B	druid/feral	55	273892	gear	0	58.37
+B	druid/feral	55	280082	mh	0	168.81
 B	druid/feral	60	1315	gear	0	24.35
-B	druid/feral	60	1808	gear	0	6.142
+B	druid/feral	60	1808	gear	0	6.0680000000000005
 B	druid/feral	60	1990	mh	12752	122.769
 B	druid/feral	60	2140	mh	12721	25.966
 B	druid/feral	60	2225	mh	0	19.5
-B	druid/feral	60	2614	gear	0	2.407
-B	druid/feral	60	3158	gear	0	2.158
+B	druid/feral	60	2614	gear	0	2.378
+B	druid/feral	60	3158	gear	0	2.132
 B	druid/feral	60	3570	mh	0	33.66799999999999
 B	druid/feral	60	4023	mh	0	59.903999999999996
 B	druid/feral	60	4570	mh	12721	47.4
 B	druid/feral	60	5079	gear	0	0.0
-B	druid/feral	60	6540	gear	12731	9.324
-B	druid/feral	60	6557	gear	12721	9.667
-B	druid/feral	60	7047	gear	0	5.608
-B	druid/feral	60	8192	gear	0	29.538
-B	druid/feral	60	9834	gear	12752	24.459
-B	druid/feral	60	11187	gear	0	0.332
+B	druid/feral	60	6540	gear	12731	9.296
+B	druid/feral	60	6557	gear	12721	9.617999999999999
+B	druid/feral	60	7047	gear	0	5.582
+B	druid/feral	60	8192	gear	0	29.451999999999998
+B	druid/feral	60	9834	gear	12752	24.386
+B	druid/feral	60	11187	gear	0	0.328
 B	druid/feral	60	11994	gear	12721	8.399999999999999
 B	druid/feral	60	13183	mh	0	153.933
-B	druid/feral	60	14122	gear	12718	5.402
-B	druid/feral	60	14340	gear	0	33.903999999999996
-B	druid/feral	60	14673	gear	0	25.422
+B	druid/feral	60	14122	gear	12718	5.368
+B	druid/feral	60	14340	gear	0	33.815999999999995
+B	druid/feral	60	14673	gear	0	25.388
 B	druid/feral	60	15945	oh	0	4.18
-B	druid/feral	60	16711	gear	0	52.745000000000005
-B	druid/feral	60	18726	gear	0	27.059
+B	druid/feral	60	16711	gear	0	52.63
+B	druid/feral	60	18726	gear	0	26.986
 B	druid/feral	60	22397	ranged	0	0.0
-B	druid/feral	60	252507	gear	0	20.308
-B	druid/feral	60	254111	gear	0	29.162
-B	druid/feral	60	270033	gear	0	11.837
-B	druid/feral	60	273892	gear	0	66.166
-B	druid/feral	60	280082	mh	0	172.665
+B	druid/feral	60	252507	gear	0	20.232
+B	druid/feral	60	254111	gear	0	29.018
+B	druid/feral	60	270033	gear	0	11.798
+B	druid/feral	60	273892	gear	0	65.814
+B	druid/feral	60	280082	mh	0	172.515
 B	shaman/elemental	12	1315	gear	0	10.95
 B	shaman/elemental	12	1808	gear	0	0.33299999999999996
 B	shaman/elemental	12	1990	mh	12909	55.038
@@ -36670,270 +36670,270 @@ B	shaman/restoration	60	272958	gear	0	112.76000000000002
 B	shaman/restoration	60	280082	mh	0	412.59999999999997
 B	shaman/restoration	60	282560	gear	0	64.44
 B	shaman/restoration	60	286609	oh	0	150.48000000000002
-B	shaman/enhancement	12	1315	gear	0	60.0
-B	shaman/enhancement	12	1808	gear	0	5.327999999999999
-B	shaman/enhancement	12	1990	mh	12719	217.97
-B	shaman/enhancement	12	2140	mh	12719	46.580000000000005
-B	shaman/enhancement	12	2225	mh	0	35.0
-B	shaman/enhancement	12	2614	gear	0	2.0879999999999996
-B	shaman/enhancement	12	3158	gear	0	1.8719999999999999
-B	shaman/enhancement	12	3570	mh	0	58.839999999999996
-B	shaman/enhancement	12	4023	mh	0	107.52
-B	shaman/enhancement	12	4068	oh	0	96.336
-B	shaman/enhancement	12	4570	mh	12719	85.0
+B	shaman/enhancement	12	1315	gear	0	56.5
+B	shaman/enhancement	12	1808	gear	0	4.884
+B	shaman/enhancement	12	1990	mh	12719	215.25
+B	shaman/enhancement	12	2140	mh	12719	44.86000000000001
+B	shaman/enhancement	12	2225	mh	0	33.68
+B	shaman/enhancement	12	2614	gear	0	1.9140000000000001
+B	shaman/enhancement	12	3158	gear	0	1.7160000000000002
+B	shaman/enhancement	12	3570	mh	0	57.519999999999996
+B	shaman/enhancement	12	4023	mh	0	106.2
+B	shaman/enhancement	12	4068	oh	0	86.05799999999999
+B	shaman/enhancement	12	4570	mh	12719	84.46
 B	shaman/enhancement	12	5079	gear	0	0.0
-B	shaman/enhancement	12	6063	gear	0	3.9599999999999995
-B	shaman/enhancement	12	6540	gear	12719	17.016
-B	shaman/enhancement	12	6557	gear	12719	13.527999999999999
-B	shaman/enhancement	12	7047	gear	0	11.872
-B	shaman/enhancement	12	7538	gear	12747	89.73599999999999
-B	shaman/enhancement	12	8192	gear	0	26.692
-B	shaman/enhancement	12	9458	oh	0	61.87199999999999
-B	shaman/enhancement	12	9834	gear	12747	38.456
-B	shaman/enhancement	12	11187	gear	0	0.288
-B	shaman/enhancement	12	11994	gear	12719	15.0
-B	shaman/enhancement	12	13183	mh	0	276.28999999999996
-B	shaman/enhancement	12	14122	gear	12719	11.008
-B	shaman/enhancement	12	14340	gear	0	63.336
-B	shaman/enhancement	12	14673	gear	0	24.948
-B	shaman/enhancement	12	14964	oh	12747	172.83999999999997
-B	shaman/enhancement	12	15235	mh	12719	224.99
-B	shaman/enhancement	12	15477	gear	12731	13.271999999999998
-B	shaman/enhancement	12	15945	oh	0	10.0
-B	shaman/enhancement	12	16711	gear	0	46.8
-B	shaman/enhancement	12	18726	gear	0	50.256
-B	shaman/enhancement	12	20129	gear	0	38.304
+B	shaman/enhancement	12	6063	gear	0	3.6300000000000003
+B	shaman/enhancement	12	6540	gear	12719	15.648000000000001
+B	shaman/enhancement	12	6557	gear	12719	12.434
+B	shaman/enhancement	12	7047	gear	0	12.216000000000001
+B	shaman/enhancement	12	7538	gear	12747	81.458
+B	shaman/enhancement	12	8192	gear	0	23.456000000000003
+B	shaman/enhancement	12	9458	oh	0	57.516000000000005
+B	shaman/enhancement	12	9834	gear	12747	34.918
+B	shaman/enhancement	12	11187	gear	0	0.264
+B	shaman/enhancement	12	11994	gear	12719	13.8
+B	shaman/enhancement	12	13183	mh	0	274.96999999999997
+B	shaman/enhancement	12	14122	gear	12719	10.123999999999999
+B	shaman/enhancement	12	14340	gear	0	53.308
+B	shaman/enhancement	12	14673	gear	0	22.064
+B	shaman/enhancement	12	14964	oh	12747	158.12
+B	shaman/enhancement	12	15235	mh	12719	221.67000000000002
+B	shaman/enhancement	12	15477	gear	12731	11.666
+B	shaman/enhancement	12	15945	oh	0	9.2
+B	shaman/enhancement	12	16711	gear	0	41.19
+B	shaman/enhancement	12	18726	gear	0	42.318
+B	shaman/enhancement	12	20129	gear	0	34.242
 B	shaman/enhancement	12	22345	ranged	0	0.0
-B	shaman/enhancement	12	22967	gear	0	103.29599999999999
-B	shaman/enhancement	12	250491	gear	0	36.498
-B	shaman/enhancement	12	252507	gear	0	43.872
-B	shaman/enhancement	12	254111	gear	0	50.538
-B	shaman/enhancement	12	270033	gear	0	7.808
-B	shaman/enhancement	12	271956	gear	0	74.394
-B	shaman/enhancement	12	272958	gear	0	103.814
-B	shaman/enhancement	12	280082	mh	0	406.0
-B	shaman/enhancement	12	282560	gear	0	74.036
-B	shaman/enhancement	12	286609	oh	0	139.87199999999999
-B	shaman/enhancement	25	1315	gear	0	67.0
-B	shaman/enhancement	25	1808	gear	0	11.1
-B	shaman/enhancement	25	1990	mh	12731	248.983
-B	shaman/enhancement	25	2140	mh	12719	43.94200000000001
-B	shaman/enhancement	25	2225	mh	0	30.98
-B	shaman/enhancement	25	2614	gear	0	4.35
-B	shaman/enhancement	25	3158	gear	0	3.9
-B	shaman/enhancement	25	3570	mh	0	55.756
-B	shaman/enhancement	25	4023	mh	0	106.608
-B	shaman/enhancement	25	4068	oh	0	188.54999999999998
-B	shaman/enhancement	25	4570	mh	12731	91.67999999999999
+B	shaman/enhancement	12	22967	gear	0	88.438
+B	shaman/enhancement	12	250491	gear	0	33.994
+B	shaman/enhancement	12	252507	gear	0	38.416
+B	shaman/enhancement	12	254111	gear	0	44.794000000000004
+B	shaman/enhancement	12	270033	gear	0	7.494
+B	shaman/enhancement	12	271956	gear	0	66.002
+B	shaman/enhancement	12	272958	gear	0	99.182
+B	shaman/enhancement	12	280082	mh	0	411.21999999999997
+B	shaman/enhancement	12	282560	gear	0	67.458
+B	shaman/enhancement	12	286609	oh	0	129.816
+B	shaman/enhancement	25	1315	gear	0	45.0
+B	shaman/enhancement	25	1808	gear	0	6.29
+B	shaman/enhancement	25	1990	mh	12755	214.883
+B	shaman/enhancement	25	2140	mh	12718	46.222
+B	shaman/enhancement	25	2225	mh	0	35.66
+B	shaman/enhancement	25	2614	gear	0	2.4650000000000003
+B	shaman/enhancement	25	3158	gear	0	2.21
+B	shaman/enhancement	25	3570	mh	0	60.43599999999999
+B	shaman/enhancement	25	4023	mh	0	111.288
+B	shaman/enhancement	25	4068	oh	0	100.75500000000001
+B	shaman/enhancement	25	4570	mh	12718	83.96
 B	shaman/enhancement	25	5079	gear	0	0.0
-B	shaman/enhancement	25	6063	gear	0	8.25
-B	shaman/enhancement	25	6540	gear	12731	28.7
-B	shaman/enhancement	25	6557	gear	12731	22.05
-B	shaman/enhancement	25	7047	gear	0	9.9
-B	shaman/enhancement	25	7538	gear	12731	137.45
-B	shaman/enhancement	25	8192	gear	0	47.96
-B	shaman/enhancement	25	9458	oh	0	119.99999999999999
-B	shaman/enhancement	25	9834	gear	12731	55.05
-B	shaman/enhancement	25	11187	gear	0	0.6
-B	shaman/enhancement	25	11994	gear	12731	24.5
-B	shaman/enhancement	25	13183	mh	0	282.611
-B	shaman/enhancement	25	14122	gear	12731	16.8
-B	shaman/enhancement	25	14340	gear	0	106.30000000000001
-B	shaman/enhancement	25	14673	gear	0	41.24
-B	shaman/enhancement	25	14964	oh	12731	326.6
-B	shaman/enhancement	25	15235	mh	12731	242.241
-B	shaman/enhancement	25	15477	gear	12731	24.95
-B	shaman/enhancement	25	15945	oh	0	12.200000000000001
-B	shaman/enhancement	25	16711	gear	0	83.16
-B	shaman/enhancement	25	18726	gear	0	84.45
-B	shaman/enhancement	25	20129	gear	0	64.71000000000001
+B	shaman/enhancement	25	6063	gear	0	4.675000000000001
+B	shaman/enhancement	25	6540	gear	12745	15.980000000000002
+B	shaman/enhancement	25	6557	gear	12718	11.565000000000001
+B	shaman/enhancement	25	7047	gear	0	10.21
+B	shaman/enhancement	25	7538	gear	12747	77.155
+B	shaman/enhancement	25	8192	gear	0	25.18
+B	shaman/enhancement	25	9458	oh	0	70.76
+B	shaman/enhancement	25	9834	gear	12747	31.805
+B	shaman/enhancement	25	11187	gear	0	0.34
+B	shaman/enhancement	25	11994	gear	12718	11.100000000000001
+B	shaman/enhancement	25	13183	mh	0	287.291
+B	shaman/enhancement	25	14122	gear	12718	8.59
+B	shaman/enhancement	25	14340	gear	0	47.379999999999995
+B	shaman/enhancement	25	14673	gear	0	22.42
+B	shaman/enhancement	25	14964	oh	12747	184.3
+B	shaman/enhancement	25	15235	mh	12718	226.221
+B	shaman/enhancement	25	15477	gear	12731	12.785
+B	shaman/enhancement	25	15945	oh	0	7.4
+B	shaman/enhancement	25	16711	gear	0	44.364999999999995
+B	shaman/enhancement	25	18726	gear	0	37.705
+B	shaman/enhancement	25	20129	gear	0	35.965
 B	shaman/enhancement	25	22345	ranged	0	0.0
-B	shaman/enhancement	25	22967	gear	0	181.45000000000002
-B	shaman/enhancement	25	250491	gear	0	54.55
-B	shaman/enhancement	25	252507	gear	0	67.60000000000001
-B	shaman/enhancement	25	254111	gear	0	74.23
-B	shaman/enhancement	25	270033	gear	0	12.69
-B	shaman/enhancement	25	271956	gear	0	135.42000000000002
-B	shaman/enhancement	25	272958	gear	0	132.09
-B	shaman/enhancement	25	280082	mh	0	383.16499999999996
-B	shaman/enhancement	25	282560	gear	0	107.95
-B	shaman/enhancement	25	286609	oh	0	273.59999999999997
-B	shaman/enhancement	34	1315	gear	0	48.5
-B	shaman/enhancement	34	1808	gear	0	6.882
-B	shaman/enhancement	34	1990	mh	12731	226.57
-B	shaman/enhancement	34	2140	mh	12719	32.68000000000001
-B	shaman/enhancement	34	2225	mh	0	21.8
-B	shaman/enhancement	34	2614	gear	0	2.697
-B	shaman/enhancement	34	3158	gear	0	2.418
-B	shaman/enhancement	34	3570	mh	0	45.64
-B	shaman/enhancement	34	4023	mh	0	94.32
-B	shaman/enhancement	34	4068	oh	0	118.359
-B	shaman/enhancement	34	4570	mh	12719	89.5
+B	shaman/enhancement	25	22967	gear	0	85.905
+B	shaman/enhancement	25	250491	gear	0	39.54
+B	shaman/enhancement	25	252507	gear	0	36.46
+B	shaman/enhancement	25	254111	gear	0	46.290000000000006
+B	shaman/enhancement	25	270033	gear	0	8.995000000000001
+B	shaman/enhancement	25	271956	gear	0	74.11000000000001
+B	shaman/enhancement	25	272958	gear	0	118.92000000000002
+B	shaman/enhancement	25	280082	mh	0	429.60499999999996
+B	shaman/enhancement	25	282560	gear	0	73.405
+B	shaman/enhancement	25	286609	oh	0	160.56
+B	shaman/enhancement	34	1315	gear	0	38.5
+B	shaman/enhancement	34	1808	gear	0	5.180000000000001
+B	shaman/enhancement	34	1990	mh	12755	212.299
+B	shaman/enhancement	34	2140	mh	12718	29.986000000000004
+B	shaman/enhancement	34	2225	mh	0	20.1
+B	shaman/enhancement	34	2614	gear	0	2.0300000000000002
+B	shaman/enhancement	34	3158	gear	0	1.8200000000000003
+B	shaman/enhancement	34	3570	mh	0	43.628
+B	shaman/enhancement	34	4023	mh	0	91.584
+B	shaman/enhancement	34	4068	oh	0	87.21000000000001
+B	shaman/enhancement	34	4570	mh	12718	86.4
 B	shaman/enhancement	34	5079	gear	0	0.0
-B	shaman/enhancement	34	6063	gear	0	5.115
-B	shaman/enhancement	34	6540	gear	12731	18.604
-B	shaman/enhancement	34	6557	gear	12731	14.157000000000002
-B	shaman/enhancement	34	7047	gear	0	7.918
-B	shaman/enhancement	34	7538	gear	12731	88.459
-B	shaman/enhancement	34	8192	gear	0	33.788
-B	shaman/enhancement	34	9458	oh	0	75.468
-B	shaman/enhancement	34	9834	gear	12747	36.019000000000005
-B	shaman/enhancement	34	11187	gear	0	0.372
-B	shaman/enhancement	34	11994	gear	12731	16.0
-B	shaman/enhancement	34	13183	mh	0	263.09
-B	shaman/enhancement	34	14122	gear	12731	10.902000000000001
-B	shaman/enhancement	34	14340	gear	0	68.98400000000001
-B	shaman/enhancement	34	14673	gear	0	30.171999999999997
-B	shaman/enhancement	34	14964	oh	12731	204.76000000000002
-B	shaman/enhancement	34	15235	mh	12731	212.39000000000001
-B	shaman/enhancement	34	15477	gear	12731	15.793000000000001
-B	shaman/enhancement	34	15945	oh	0	8.600000000000001
-B	shaman/enhancement	34	16711	gear	0	60.19500000000001
-B	shaman/enhancement	34	18726	gear	0	54.789
-B	shaman/enhancement	34	20129	gear	0	45.141000000000005
+B	shaman/enhancement	34	6063	gear	0	3.8500000000000005
+B	shaman/enhancement	34	6540	gear	12731	12.96
+B	shaman/enhancement	34	6557	gear	12718	10.23
+B	shaman/enhancement	34	7047	gear	0	7.32
+B	shaman/enhancement	34	7538	gear	12747	66.09
+B	shaman/enhancement	34	8192	gear	0	25.71
+B	shaman/enhancement	34	9458	oh	0	57.620000000000005
+B	shaman/enhancement	34	9834	gear	12747	27.430000000000003
+B	shaman/enhancement	34	11187	gear	0	0.28
+B	shaman/enhancement	34	11994	gear	12731	11.0
+B	shaman/enhancement	34	13183	mh	0	257.94300000000004
+B	shaman/enhancement	34	14122	gear	12718	7.780000000000001
+B	shaman/enhancement	34	14340	gear	0	47.96000000000001
+B	shaman/enhancement	34	14673	gear	0	23.49
+B	shaman/enhancement	34	14964	oh	12747	153.20000000000002
+B	shaman/enhancement	34	15235	mh	12751	201.803
+B	shaman/enhancement	34	15477	gear	12731	11.47
+B	shaman/enhancement	34	15945	oh	0	6.6000000000000005
+B	shaman/enhancement	34	16711	gear	0	46.42
+B	shaman/enhancement	34	18726	gear	0	38.11
+B	shaman/enhancement	34	20129	gear	0	34.93
 B	shaman/enhancement	34	22345	ranged	0	0.0
-B	shaman/enhancement	34	22967	gear	0	116.549
-B	shaman/enhancement	34	250491	gear	0	38.362
-B	shaman/enhancement	34	252507	gear	0	43.928
-B	shaman/enhancement	34	254111	gear	0	54.542
-B	shaman/enhancement	34	270033	gear	0	10.187000000000001
-B	shaman/enhancement	34	271956	gear	0	97.04599999999999
-B	shaman/enhancement	34	272958	gear	0	104.136
-B	shaman/enhancement	34	280082	mh	0	366.76
-B	shaman/enhancement	34	282560	gear	0	76.68900000000001
-B	shaman/enhancement	34	286609	oh	0	171.768
-B	shaman/enhancement	45	1315	gear	0	41.0
-B	shaman/enhancement	45	1808	gear	0	5.401999999999999
-B	shaman/enhancement	45	1990	mh	12755	231.528
-B	shaman/enhancement	45	2140	mh	12718	17.392000000000003
-B	shaman/enhancement	45	2225	mh	0	7.0
-B	shaman/enhancement	45	2614	gear	0	2.117
-B	shaman/enhancement	45	3158	gear	0	1.898
-B	shaman/enhancement	45	3570	mh	0	39.215999999999994
-B	shaman/enhancement	45	4023	mh	0	77.448
-B	shaman/enhancement	45	4068	oh	0	93.699
-B	shaman/enhancement	45	4570	mh	12718	102.5
+B	shaman/enhancement	34	22967	gear	0	82.51
+B	shaman/enhancement	34	250491	gear	0	31.880000000000003
+B	shaman/enhancement	34	252507	gear	0	32.36
+B	shaman/enhancement	34	254111	gear	0	43.18
+B	shaman/enhancement	34	270033	gear	0	8.89
+B	shaman/enhancement	34	271956	gear	0	75.37
+B	shaman/enhancement	34	272958	gear	0	94.08
+B	shaman/enhancement	34	280082	mh	0	370.965
+B	shaman/enhancement	34	282560	gear	0	62.230000000000004
+B	shaman/enhancement	34	286609	oh	0	130.92000000000002
+B	shaman/enhancement	45	1315	gear	0	37.0
+B	shaman/enhancement	45	1808	gear	0	4.588
+B	shaman/enhancement	45	1990	mh	12718	227.128
+B	shaman/enhancement	45	2140	mh	12718	18.292000000000005
+B	shaman/enhancement	45	2225	mh	0	8.2
+B	shaman/enhancement	45	2614	gear	0	1.798
+B	shaman/enhancement	45	3158	gear	0	1.612
+B	shaman/enhancement	45	3570	mh	0	40.016
+B	shaman/enhancement	45	4023	mh	0	78.648
+B	shaman/enhancement	45	4068	oh	0	76.806
+B	shaman/enhancement	45	4570	mh	12718	100.6
 B	shaman/enhancement	45	5079	gear	0	0.0
-B	shaman/enhancement	45	6063	gear	0	4.015
-B	shaman/enhancement	45	6540	gear	12731	15.044
-B	shaman/enhancement	45	6557	gear	12718	11.577
-B	shaman/enhancement	45	7047	gear	0	6.898
-B	shaman/enhancement	45	7538	gear	12748	73.899
-B	shaman/enhancement	45	8192	gear	0	30.278
-B	shaman/enhancement	45	9458	oh	0	59.647999999999996
-B	shaman/enhancement	45	9834	gear	12748	30.929
-B	shaman/enhancement	45	11187	gear	0	0.292
-B	shaman/enhancement	45	11994	gear	12731	13.0
-B	shaman/enhancement	45	13183	mh	0	241.39599999999996
-B	shaman/enhancement	45	14122	gear	12718	9.022
-B	shaman/enhancement	45	14340	gear	0	55.824
-B	shaman/enhancement	45	14673	gear	0	27.482
-B	shaman/enhancement	45	14964	oh	12748	162.66
-B	shaman/enhancement	45	15235	mh	12751	189.376
-B	shaman/enhancement	45	15477	gear	12731	12.573
-B	shaman/enhancement	45	15945	oh	0	7.2
-B	shaman/enhancement	45	16711	gear	0	56.035
-B	shaman/enhancement	45	18726	gear	0	44.329
-B	shaman/enhancement	45	20129	gear	0	39.061
+B	shaman/enhancement	45	6063	gear	0	3.41
+B	shaman/enhancement	45	6540	gear	12745	14.636000000000001
+B	shaman/enhancement	45	6557	gear	12718	10.438
+B	shaman/enhancement	45	7047	gear	0	7.612
+B	shaman/enhancement	45	7538	gear	12745	65.156
+B	shaman/enhancement	45	8192	gear	0	25.612000000000002
+B	shaman/enhancement	45	9458	oh	0	51.712
+B	shaman/enhancement	45	9834	gear	12745	27.575999999999997
+B	shaman/enhancement	45	11187	gear	0	0.248
+B	shaman/enhancement	45	11994	gear	12718	11.1
+B	shaman/enhancement	45	13183	mh	0	242.59599999999995
+B	shaman/enhancement	45	14122	gear	12718	8.268
+B	shaman/enhancement	45	14340	gear	0	41.556
+B	shaman/enhancement	45	14673	gear	0	23.428
+B	shaman/enhancement	45	14964	oh	12745	140.79
+B	shaman/enhancement	45	15235	mh	12718	186.976
+B	shaman/enhancement	45	15477	gear	12731	10.062
+B	shaman/enhancement	45	15945	oh	0	6.199999999999999
+B	shaman/enhancement	45	16711	gear	0	48.10999999999999
+B	shaman/enhancement	45	18726	gear	0	33.025999999999996
+B	shaman/enhancement	45	20129	gear	0	33.013999999999996
 B	shaman/enhancement	45	22345	ranged	0	0.0
-B	shaman/enhancement	45	22967	gear	0	93.689
-B	shaman/enhancement	45	250491	gear	0	35.331999999999994
-B	shaman/enhancement	45	252507	gear	0	36.948
-B	shaman/enhancement	45	254111	gear	0	50.342000000000006
-B	shaman/enhancement	45	270033	gear	0	9.847
-B	shaman/enhancement	45	271956	gear	0	90.57600000000001
-B	shaman/enhancement	45	272958	gear	0	106.176
-B	shaman/enhancement	45	280082	mh	0	391.1
-B	shaman/enhancement	45	282560	gear	0	70.549
-B	shaman/enhancement	45	286609	oh	0	135.648
-B	shaman/enhancement	55	1315	gear	0	46.4
-B	shaman/enhancement	55	1808	gear	0	8.14
-B	shaman/enhancement	55	1990	mh	12718	223.299
-B	shaman/enhancement	55	2140	mh	12718	15.686000000000003
+B	shaman/enhancement	45	22967	gear	0	71.866
+B	shaman/enhancement	45	250491	gear	0	32.758
+B	shaman/enhancement	45	252507	gear	0	29.412
+B	shaman/enhancement	45	254111	gear	0	44.248
+B	shaman/enhancement	45	270033	gear	0	9.338000000000001
+B	shaman/enhancement	45	271956	gear	0	78.904
+B	shaman/enhancement	45	272958	gear	0	105.94400000000002
+B	shaman/enhancement	45	280082	mh	0	403.7
+B	shaman/enhancement	45	282560	gear	0	63.506
+B	shaman/enhancement	45	286609	oh	0	117.312
+B	shaman/enhancement	55	1315	gear	0	40.0
+B	shaman/enhancement	55	1808	gear	0	6.364
+B	shaman/enhancement	55	1990	mh	12718	220.59900000000002
+B	shaman/enhancement	55	2140	mh	12718	15.386000000000006
 B	shaman/enhancement	55	2225	mh	0	3.900000000000002
-B	shaman/enhancement	55	2614	gear	0	3.19
-B	shaman/enhancement	55	3158	gear	0	2.86
+B	shaman/enhancement	55	2614	gear	0	2.4939999999999998
+B	shaman/enhancement	55	3158	gear	0	2.2359999999999998
 B	shaman/enhancement	55	3570	mh	0	27.428
 B	shaman/enhancement	55	4023	mh	0	75.384
-B	shaman/enhancement	55	4068	oh	0	134.73000000000002
-B	shaman/enhancement	55	4570	mh	12718	84.9
+B	shaman/enhancement	55	4068	oh	0	105.318
+B	shaman/enhancement	55	4570	mh	12718	84.0
 B	shaman/enhancement	55	5079	gear	0	0.0
-B	shaman/enhancement	55	6063	gear	0	6.05
-B	shaman/enhancement	55	6540	gear	12745	19.880000000000003
-B	shaman/enhancement	55	6557	gear	12718	15.990000000000002
-B	shaman/enhancement	55	7047	gear	0	7.66
-B	shaman/enhancement	55	7538	gear	12748	98.72999999999999
-B	shaman/enhancement	55	8192	gear	0	39.760000000000005
-B	shaman/enhancement	55	9458	oh	0	88.24
-B	shaman/enhancement	55	9834	gear	12748	40.830000000000005
-B	shaman/enhancement	55	11187	gear	0	0.44
-B	shaman/enhancement	55	11994	gear	12731	16.0
+B	shaman/enhancement	55	6063	gear	0	4.7299999999999995
+B	shaman/enhancement	55	6540	gear	12745	19.408
+B	shaman/enhancement	55	6557	gear	12718	14.213999999999999
+B	shaman/enhancement	55	7047	gear	0	7.236
+B	shaman/enhancement	55	7538	gear	12718	87.618
+B	shaman/enhancement	55	8192	gear	0	33.096
+B	shaman/enhancement	55	9458	oh	0	69.73599999999999
+B	shaman/enhancement	55	9834	gear	12745	36.778
+B	shaman/enhancement	55	11187	gear	0	0.344
+B	shaman/enhancement	55	11994	gear	12718	15.0
 B	shaman/enhancement	55	13183	mh	0	241.74300000000002
-B	shaman/enhancement	55	14122	gear	12718	12.14
-B	shaman/enhancement	55	14340	gear	0	70.48
-B	shaman/enhancement	55	14673	gear	0	34.440000000000005
-B	shaman/enhancement	55	14964	oh	12718	236.89999999999998
-B	shaman/enhancement	55	15235	mh	12751	193.133
-B	shaman/enhancement	55	15477	gear	12731	17.509999999999998
-B	shaman/enhancement	55	15945	oh	0	8.32
-B	shaman/enhancement	55	16711	gear	0	73.82000000000001
-B	shaman/enhancement	55	18726	gear	0	56.03
-B	shaman/enhancement	55	20129	gear	0	50.269999999999996
+B	shaman/enhancement	55	14122	gear	12718	11.204
+B	shaman/enhancement	55	14340	gear	0	55.068
+B	shaman/enhancement	55	14673	gear	0	29.223999999999997
+B	shaman/enhancement	55	14964	oh	12718	192.92
+B	shaman/enhancement	55	15235	mh	12718	191.53300000000002
+B	shaman/enhancement	55	15477	gear	12718	13.686
+B	shaman/enhancement	55	15945	oh	0	7.0
+B	shaman/enhancement	55	16711	gear	0	62.330000000000005
+B	shaman/enhancement	55	18726	gear	0	43.778
+B	shaman/enhancement	55	20129	gear	0	41.702
 B	shaman/enhancement	55	22345	ranged	0	0.0
-B	shaman/enhancement	55	22967	gear	0	123.22999999999999
-B	shaman/enhancement	55	250491	gear	0	48.54
-B	shaman/enhancement	55	252507	gear	0	46.36
-B	shaman/enhancement	55	254111	gear	0	66.44
-B	shaman/enhancement	55	270033	gear	0	12.489999999999998
-B	shaman/enhancement	55	271956	gear	0	123.02000000000001
-B	shaman/enhancement	55	272958	gear	0	145.42000000000002
-B	shaman/enhancement	55	280082	mh	0	408.435
-B	shaman/enhancement	55	282560	gear	0	94.03
-B	shaman/enhancement	55	286609	oh	0	201.12
-B	shaman/enhancement	60	1315	gear	0	50.5
-B	shaman/enhancement	60	1808	gear	0	8.879999999999999
+B	shaman/enhancement	55	22967	gear	0	96.298
+B	shaman/enhancement	55	250491	gear	0	43.324
+B	shaman/enhancement	55	252507	gear	0	37.536
+B	shaman/enhancement	55	254111	gear	0	59.644
+B	shaman/enhancement	55	270033	gear	0	11.154
+B	shaman/enhancement	55	271956	gear	0	104.532
+B	shaman/enhancement	55	272958	gear	0	140.332
+B	shaman/enhancement	55	280082	mh	0	413.625
+B	shaman/enhancement	55	282560	gear	0	83.818
+B	shaman/enhancement	55	286609	oh	0	158.736
+B	shaman/enhancement	60	1315	gear	0	44.5
+B	shaman/enhancement	60	1808	gear	0	7.252000000000001
 B	shaman/enhancement	60	1990	mh	12718	229.441
-B	shaman/enhancement	60	2140	mh	12718	13.974000000000004
-B	shaman/enhancement	60	2225	mh	0	1.3000000000000043
-B	shaman/enhancement	60	2614	gear	0	3.48
-B	shaman/enhancement	60	3158	gear	0	3.12
-B	shaman/enhancement	60	3570	mh	0	25.451999999999998
-B	shaman/enhancement	60	4023	mh	0	74.856
-B	shaman/enhancement	60	4068	oh	0	146.16
-B	shaman/enhancement	60	4570	mh	12718	83.3
+B	shaman/enhancement	60	2140	mh	12718	14.573999999999998
+B	shaman/enhancement	60	2225	mh	0	1.8999999999999986
+B	shaman/enhancement	60	2614	gear	0	2.842
+B	shaman/enhancement	60	3158	gear	0	2.548
+B	shaman/enhancement	60	3570	mh	0	26.051999999999992
+B	shaman/enhancement	60	4023	mh	0	75.45599999999999
+B	shaman/enhancement	60	4068	oh	0	119.57400000000001
+B	shaman/enhancement	60	4570	mh	12718	83.39999999999999
 B	shaman/enhancement	60	5079	gear	0	0.0
-B	shaman/enhancement	60	6063	gear	0	6.6
-B	shaman/enhancement	60	6540	gear	12745	22.759999999999998
-B	shaman/enhancement	60	6557	gear	12718	17.88
-B	shaman/enhancement	60	7047	gear	0	8.620000000000001
-B	shaman/enhancement	60	7538	gear	12718	109.56
-B	shaman/enhancement	60	8192	gear	0	43.82
-B	shaman/enhancement	60	9458	oh	0	96.41999999999999
-B	shaman/enhancement	60	9834	gear	12748	45.160000000000004
-B	shaman/enhancement	60	11187	gear	0	0.48
+B	shaman/enhancement	60	6063	gear	0	5.390000000000001
+B	shaman/enhancement	60	6540	gear	12745	23.343999999999998
+B	shaman/enhancement	60	6557	gear	12718	16.802
+B	shaman/enhancement	60	7047	gear	0	8.048
+B	shaman/enhancement	60	7538	gear	12745	103.87400000000001
+B	shaman/enhancement	60	8192	gear	0	37.828
+B	shaman/enhancement	60	9458	oh	0	79.348
+B	shaman/enhancement	60	9834	gear	12745	44.054
+B	shaman/enhancement	60	11187	gear	0	0.392
 B	shaman/enhancement	60	11994	gear	12718	18.0
-B	shaman/enhancement	60	13183	mh	0	246.03699999999998
-B	shaman/enhancement	60	14122	gear	12718	13.68
-B	shaman/enhancement	60	14340	gear	0	75.16
-B	shaman/enhancement	60	14673	gear	0	37.58
-B	shaman/enhancement	60	14964	oh	12718	260.4
-B	shaman/enhancement	60	15235	mh	12718	198.647
-B	shaman/enhancement	60	15477	gear	12731	18.919999999999998
-B	shaman/enhancement	60	15945	oh	0	9.0
-B	shaman/enhancement	60	16711	gear	0	82.02
-B	shaman/enhancement	60	18726	gear	0	59.76
-B	shaman/enhancement	60	20129	gear	0	54.239999999999995
+B	shaman/enhancement	60	13183	mh	0	246.63699999999997
+B	shaman/enhancement	60	14122	gear	12718	13.372
+B	shaman/enhancement	60	14340	gear	0	61.824
+B	shaman/enhancement	60	14673	gear	0	32.932
+B	shaman/enhancement	60	14964	oh	12745	222.86
+B	shaman/enhancement	60	15235	mh	12718	199.24699999999999
+B	shaman/enhancement	60	15477	gear	12729	16.298000000000002
+B	shaman/enhancement	60	15945	oh	0	7.8
+B	shaman/enhancement	60	16711	gear	0	72.05
+B	shaman/enhancement	60	18726	gear	0	49.153999999999996
+B	shaman/enhancement	60	20129	gear	0	46.586
 B	shaman/enhancement	60	22345	ranged	0	0.0
-B	shaman/enhancement	60	22967	gear	0	132.16
-B	shaman/enhancement	60	250491	gear	0	54.18
-B	shaman/enhancement	60	252507	gear	0	49.72
-B	shaman/enhancement	60	254111	gear	0	74.08
-B	shaman/enhancement	60	270033	gear	0	13.68
-B	shaman/enhancement	60	271956	gear	0	138.94
-B	shaman/enhancement	60	272958	gear	0	166.04
-B	shaman/enhancement	60	280082	mh	0	434.07500000000005
-B	shaman/enhancement	60	282560	gear	0	104.55999999999999
-B	shaman/enhancement	60	286609	oh	0	219.72
+B	shaman/enhancement	60	22967	gear	0	108.51400000000001
+B	shaman/enhancement	60	250491	gear	0	50.732
+B	shaman/enhancement	60	252507	gear	0	42.048
+B	shaman/enhancement	60	254111	gear	0	70.492
+B	shaman/enhancement	60	270033	gear	0	12.422
+B	shaman/enhancement	60	271956	gear	0	122.076
+B	shaman/enhancement	60	272958	gear	0	168.176
+B	shaman/enhancement	60	280082	mh	0	443.175
+B	shaman/enhancement	60	282560	gear	0	98.07400000000001
+B	shaman/enhancement	60	286609	oh	0	180.648
 B	paladin/holy	12	25	mh	0	7.14
 B	paladin/holy	12	1315	gear	0	21.35
 B	paladin/holy	12	1808	gear	0	4.4399999999999995

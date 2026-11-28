@@ -1,4 +1,9 @@
-# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution/Protection paladin) — PoleSim Gear 0.7.16 (section W in a dungeon group as a healer)
+# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution/Protection paladin) — PoleSim Gear 0.7.17 (section W in a dungeon group as a healer)
+
+**0.7.17 over 0.7.16:** Enhancement Shaman: the sim now heals mid-pull (Healing Wave), so Stamina drops by
+about half at low levels and Intellect rises. Feral Druid: fixed a sim bug that made Feral run from fights it
+was winning; Stamina drops at 22-34. The data-drift check no longer flags the spell damage of "of ... Wrath"
+suffixes (the game does not report it to addons; the bonus works). No new files: `/reload` is enough.
 
 **0.7.16 over 0.7.15:** Stamina fix part 2: new weights for Fire/Frost/Arcane Mage, Balance and Feral
 Druid, Combat/Assassination/Subtlety Rogue, Arms Warrior, Enhancement Shaman, Survival Hunter, Affliction
