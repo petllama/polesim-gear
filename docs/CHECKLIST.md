@@ -1,4 +1,9 @@
-# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution/Protection paladin) — PoleSim Gear 0.7.17 (section W in a dungeon group as a healer)
+# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution/Protection paladin) — PoleSim Gear 0.7.18 (section W in a dungeon group as a healer)
+
+**0.7.18 over 0.7.17:** PoleSim Gear is now also on CurseForge (releases upload there automatically).
+The zip now holds only the PoleSimGear folder (README, licence and notice moved inside it), so unzipping it
+into AddOns leaves no loose files. The update notice says to update in the CurseForge app or from GitHub.
+No new files: `/reload` is enough.
 
 **0.7.17 over 0.7.16:** Enhancement Shaman: the sim now heals mid-pull (Healing Wave), so Stamina drops by
 about half at low levels and Intellect rises. Feral Druid: fixed a sim bug that made Feral run from fights it

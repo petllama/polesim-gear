@@ -1,6 +1,6 @@
 # PoleSim Gear
 
-Version 0.7.17. WoW: Forever addon: PoleSim's simulated, level-banded gear weights in game. Item scores with a
+Version 0.7.18. WoW: Forever addon: PoleSim's simulated, level-banded gear weights in game. Item scores with a
 "how?" breakdown, upgrade arrows, the best quest reward, and a gear planner window with where to get
 each upgrade. In testing.
 
@@ -178,10 +178,10 @@ best suffix and says "any suffix"; its listings show each one's suffix (with the
 
 Addons can't go online, so PoleSim Gear (0.7.9 and later) hears about a newer release from other
 players' PoleSim Gear. When someone online runs a newer version, you get **one chat line per login**
-("PoleSim Gear: version 0.7.10 is out (you have 0.7.9): download it from
+("PoleSim Gear: version 0.7.10 is out (you have 0.7.9): update it in the CurseForge app or from
 https://github.com/petllama/polesim-gear/releases/latest") and **"Update available: 0.7.10"** under the
-window's title. No popup; in combat the chat line waits until the fight ends. Download from the
-[Releases page](https://github.com/petllama/polesim-gear/releases/latest) (the only download place).
+window's title. No popup; in combat the chat line waits until the fight ends. Update in the CurseForge app or from the
+[Releases page](https://github.com/petllama/polesim-gear/releases/latest).
 
 How it works: about 20 s after login (out of combat, outside instances) PoleSim Gear joins a **hidden
 chat channel** `PoleSimGear` (a temporary one: not saved with your chat settings, added to no chat
