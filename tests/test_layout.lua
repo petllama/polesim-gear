@@ -146,6 +146,26 @@ return {
 		T.eq(rows[2].cur.name:IsVisible(), true, "current item name at the default size")
 		fx.done()
 	end,
+	-- tab buttons: every label fits its button (button labels have no width, so U.overflows misses them;
+	-- "Slot Upgrades" was cut in a 86 px button), no overlap, and the row clears the title at 780 px
+	tab_labels_fit = function()
+		local fx = F.load()
+		local U = fx.U
+		local f = fx.open()
+		resize(f, 780, 500)
+		local prevLeft
+		for i = #fx.ns.Window.TABS, 1, -1 do
+			local b = f.tabs[fx.ns.Window.TABS[i].key]
+			local label = b.label.text
+			T.ok(U.textWidth(label, 12) <= b.w - 12, label .. " fits " .. b.w .. " px")
+			local _, x = b:GetPoint(1)
+			local right = 780 + x -- TOPRIGHT offset from the frame's right edge
+			if prevLeft then T.ok(right <= prevLeft - 4, label .. " leaves a gap to the next tab") end
+			prevLeft = right - b.w
+		end
+		T.ok(prevLeft >= 56 + U.textWidth("PoleSim Gear", 20) + 16, "tabs clear the title: " .. prevLeft)
+		fx.done()
+	end,
 	other_tabs_fit_and_stretch = function()
 		local fx = F.load()
 		local ns, U = fx.ns, fx.U

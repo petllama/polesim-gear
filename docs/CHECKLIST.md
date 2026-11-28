@@ -1,4 +1,7 @@
-# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution/Protection paladin) — PoleSim Gear 0.7.18 (section W in a dungeon group as a healer)
+# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution/Protection paladin) — PoleSim Gear 0.7.19 (section W in a dungeon group as a healer)
+
+**0.7.19 over 0.7.18:** the window's "Slot Upgrades" tab button is wider, so its label is no longer cut
+off (each tab button now fits its label). No new files: `/reload` is enough.
 
 **0.7.18 over 0.7.17:** PoleSim Gear is now also on CurseForge (releases upload there automatically).
 The zip now holds only the PoleSimGear folder (README, licence and notice moved inside it), so unzipping it

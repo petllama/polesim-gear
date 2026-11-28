@@ -246,8 +246,11 @@ local function create()
 	for i = #Win.TABS, 1, -1 do
 		local t = Win.TABS[i]
 		local b = S.Button(bar, t.label, 86, 26, function() Win.SetTab(t.key) end, S.TAB)
+		-- at least 86 px, wider when the label needs it ("Slot Upgrades"), 10 px padding a side
+		local w = math.max(86, math.ceil((b.label:GetStringWidth() or 0) + 20))
+		b:SetWidth(w)
 		b:SetPoint("TOPRIGHT", x, -10)
-		x = x - 92
+		x = x - w - 6
 		frame.tabs[t.key] = b
 	end
 	local A = S.CONTENT
