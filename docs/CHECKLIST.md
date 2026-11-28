@@ -1,4 +1,9 @@
-# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution/Protection paladin) — PoleSim Gear 0.7.15 (section W in a dungeon group as a healer)
+# In-game checklist (one session, on a priest; section M on a mage; section Q on a warlock, druid, shaman or paladin; section S on a warrior, rogue, hunter, Feral druid, Enhancement shaman or Retribution/Protection paladin) — PoleSim Gear 0.7.16 (section W in a dungeon group as a healer)
+
+**0.7.16 over 0.7.15:** Stamina fix part 2: new weights for Fire/Frost/Arcane Mage, Balance and Feral
+Druid, Combat/Assassination/Subtlety Rogue, Arms Warrior, Enhancement Shaman, Survival Hunter, Affliction
+Warlock (escapes from lost bad pulls instead of fighting to the death, Forever mana regen). Remaining specs
+next. No new files: `/reload` is enough.
 
 **0.7.15 over 0.7.14:** new weights for Shadow, Discipline and Holy Priest, Retribution Paladin, Fury
 Warrior and Elemental Shaman. The sim now uses Forever's real mana regeneration (measured from player
